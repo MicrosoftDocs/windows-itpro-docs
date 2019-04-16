@@ -54,7 +54,7 @@ To lower down your threat and vulnerability exposure:
 
 1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
 
->![top security recommendations](images/tvm_security_recommendations.png)
+>>![top security recommendations](images/tvm_security_recommendations.png)
 
 >[!NOTE]
 > There are two types of recommendations: 
@@ -80,13 +80,14 @@ Remediating issues in the security recommendations list will improve your config
 
 1. From the Configuration score widget, select **Security controls**. This opens the **Security recommendations** page showing the list of issues related to security controls.
 
->![configuration score widget](images/tvm_config_score.png)
+>>![configuration score widget](images/tvm_config_score.png)
 
 2. Select the first item on the list. This opens the flyout menu with the description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
 ![security controls related security recommendations](images/tvm_security_controls.png)
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
-![request remediation](images/tvm_request_remediation.png). 
+
+>>![request remediation](images/tvm_request_remediation.png). 
 
 >You will see a confirmation message that the remediation task has been created.
 >![remediation task creation confirmation](images/tvm_remediation_task_created.png)
