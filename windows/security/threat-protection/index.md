@@ -17,6 +17,7 @@ ms.localizationpriority: medium
 <center><h2>Microsoft Defender ATP</center></h2>
 <table>
 <tr>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/NGP_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/EDR_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
@@ -25,15 +26,23 @@ ms.localizationpriority: medium
 <td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
-<td colspan="6">
+<td colspan="7">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
 
+<a name="tvm"></a>
+
+**[Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+- [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [What's in the dashboard and what it means for my organization](windows-defender-atp/tvm-dashboard-insights.md)
+- [Configuration score](windows-defender-atp/configuration-score.md)
+- [Scenarios](windows-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 <a name="asr"></a>
 

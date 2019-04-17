@@ -47,9 +47,8 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <center><h2>Microsoft Defender ATP</center></h2>
 <table>
 <tr>
-<td>
-<a href="#asr">
-<center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
+<td><a href="#asr"><center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
@@ -57,22 +56,26 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
-<td colspan="6">
+<td colspan="7">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
 
 
-<a name="asr"></a>
-
-
 >[!TIP]
 >- Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
+<a name="tvm"></a>
+
+**[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)**<br>
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
+<a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 

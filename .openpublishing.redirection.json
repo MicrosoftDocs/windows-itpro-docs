@@ -6,21 +6,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-security-baselines.md",
-"redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/security-compliance-toolkit-10.md",
-"redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/get-support-for-security-baselines.md",
-"redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/get-support-for-security-baselines",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
 "redirect_document_id": true

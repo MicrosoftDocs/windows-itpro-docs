@@ -11,10 +11,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/11/2019
+ms.date: 04/17/2019
 ---
 
-# Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
+# Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
 
 **Applies to:**
 
@@ -25,17 +25,19 @@ Microsoft Intune has an easy way to create and deploy a Windows Information Prot
 
 ## Differences between MDM and MAM for WIP
 
+You can create an app protection policy in Intune either with device enrollment for MDM or without device enrollment for MAM. The process to create either policy is similar, but there are important differences: 
+
 - If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 - MAM supports only one user per device.  
-- MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md) 
-- MAM has additional **Access** settings for Windows Hello for Business
-- MAM can [selectively wipe company data](https://docs.microsoft.com/intune/apps-selective-wipe) from a user's personal device
-- MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
-- An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
+- MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md).
+- MAM has additional **Access** settings for Windows Hello for Business.
+- MAM can [selectively wipe company data](https://docs.microsoft.com/intune/apps-selective-wipe) from a user's personal device.
+- MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+- An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM.
 
 ## Prerequisites
 
-Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). 
+Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
 
 ## Configure the MDM or MAM provider
 
@@ -608,70 +610,6 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 >[!NOTE]
 >For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
-
-### Configure Windows Hello for Business for MAM
-If you created a WIP policy for MAM, you can turn on Windows Hello for Business, letting your employees use it as a sign-in method for their devices.
-
-**To turn on and configure Windows Hello for Business**
-
-1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
-
-    The **Advanced settings** blade appears.
-
-2.	Choose to turn on and configure the Windows Hello for Business settings:
-
-    ![Microsoft Intune, Choose to use Windows Hello for Business](images/wip-azure-access-options.png)
-
-    - **Use Windows Hello for Business as a method for signing into Windows.** Turns on Windows Hello for Business. The options are:
-    
-        - **On.** Turns on Windows Hello For Business for anyone assigned to this policy.
-     
-        - **Off.** Turns off Windows Hello for Business.
-    
-    - **Set the minimum number of characters required for the PIN.** Enter a numerical value (4-127 characters) for how many characters must be used to create a valid PIN. Default is 4 characters.
-    
-    - **Configure the use of uppercase letters in the Windows Hello for Business PIN.** Lets you decide whether uppercase letters can be used in a valid PIN. The options are:
-
-        - **Allow the use of uppercase letters in PIN.** Lets an employee use uppercase letters in a valid PIN.
-        
-        - **Require the use of at least one uppercase letter in PIN.** Requires an employee to use at least 1 uppercase letter in a valid PIN.
-        
-        - **Do not allow the use of uppercase letters in PIN.** Prevents an employee from using uppercase letters in a valid PIN.
-
-    - **Configure the use of lowercase letters in the Windows Hello for Business PIN.** Lets you decide whether lowercase letters can be used in a valid PIN. The options are:
-        
-        - **Allow the use of lowercase letters in PIN.** Lets an employee use lowercase letters in a valid PIN.
-        
-        - **Require the use of at least one lowercase letter in PIN.** Requires an employee to use at least 1 lowercase letter in a valid PIN.
-        
-        - **Do not allow the use of lowercase letters in PIN.** Prevents an employee from using lowercase letters in a valid PIN.
-
-    - **Configure the use of special characters in the Windows Hello for Business PIN.** Lets you decide whether special characters can be used in a valid PIN. The options are:
-
-        - **Allow the use of special characters in PIN.** Lets an employee use special characters in a valid PIN.
-        
-        - **Require the use of at least one special character in PIN.** Requires an employee to use at least 1 special character in a valid PIN.
-        
-        - **Do not allow the use of special characters in PIN.** Prevents an employee from using special characters in a valid PIN.
-
-    - **Specify the period of time (in days) that a PIN can be used before the system requires the user to change it.** Enter a numerical value (0-730 days) for how many days can pass before a PIN must be changed. If you enter a value of 0, the PIN never expires.
-
-    - **Specify the number of past PINs that can be associated to a user account that can't be reused.** Enter a numerical value (0-50 days) for how many days can pass before an employee can reuse a previous PIN. If you enter a value of 0, a PINs can be reused immediately and past PINs aren't stored.
-        
-        >[!NOTE]
-        >PIN history is not preserved through a PIN reset.
-
-    - **Number of authentication failures allowed before the device will be wiped.** Enter a numerical value for how many times the PIN can be incorrectly entered before wiping the device of corporate data. If you enter a value of 0, the device is never wiped, regardless of the number of incorrect PIN entries.<p>This setting has different behavior for mobile devices and desktops.
-
-        - **On mobile devices.** When an employee reaches the value set here, the device is wiped of corporate data.
-
-        - **On desktop devices.** When an employee reaches the value set here, the desktop is put into BitLocker recovery mode, instead of being wiped. You must have BitLocker installed on the device or this setting is ignored.
-
-    - **Maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.** Enter a numerical value for how many days can pass before a PIN must be changed. If you enter a value of 0, the device never becomes PIN or password locked while idle.
-
-        >[!NOTE]
-        >You can set this value to be anything; however, it can't be longer than the time specified by the **Settings** app. If you exceed the maximum timeout value, this setting is ignored.
-
 
 ## Related topics
 
