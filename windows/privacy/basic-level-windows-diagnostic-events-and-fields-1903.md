@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/16/2019
+ms.date: 04/17/2019
 ---
 
 
@@ -4109,6 +4109,43 @@ The following fields are available:
 - **ServiceName**  The driver or service name that is attached to the device.
 
 
+## Migration events
+
+### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
+
+This event returns data to track the count of the migration objects across various phases during feature update.
+
+The following fields are available:
+
+- **currentSid**  Indicates the user SID for which the migration is being performed.
+- **knownFoldersUsr[i]**  Predefined folder path locations.
+- **migDiagSession->CString**  The phase of the upgrade where migration occurs. (E.g.: Validate tracked content)
+- **objectCount**  The count for the number of objects that are being transferred.
+
+
+### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
+
+This event returns data about the count of the migration objects across various phases during feature update.
+
+The following fields are available:
+
+- **knownFoldersSys[i]**  The predefined folder path locations.
+- **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
+- **objectCount**  The count of the number of objects that are being transferred.
+
+
+### Microsoft.Windows.MigrationCore.MigObjectCountKFUsr
+
+This event returns data to track the count of the migration objects across various phases during feature update.
+
+The following fields are available:
+
+- **currentSid**  Indicates the user SID for which the migration is being performed.
+- **knownFoldersUsr[i]**  No content is currently available.
+- **migDiagSession->CString**  No content is currently available.
+- **objectCount**  No content is currently available.
+
+
 ## Miracast events
 
 ### Microsoft.Windows.Cast.Miracast.MiracastSessionEnd
@@ -4181,43 +4218,6 @@ The following fields are available:
 - **VideoSubtype**  The unique subtype identifier of the video codec (encoding method) used for video encoding.
 - **VideoWidth**  The width of encoded video frames.
 - **WFD2Supported**  Indicates if the Miracast receiver supports WFD2 protocol.
-
-
-## Other events
-
-### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
-
-No content is currently available.
-
-The following fields are available:
-
-- **currentSid**  No content is currently available.
-- **knownFoldersUsr[i]**  No content is currently available.
-- **migDiagSession->CString**  No content is currently available.
-- **objectCount**  No content is currently available.
-
-
-### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
-
-This event returns data about the count of the migration objects across various phases during feature update.
-
-The following fields are available:
-
-- **knownFoldersSys[i]**  The predefined folder path locations.
-- **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
-- **objectCount**  The count of the number of objects that are being transferred.
-
-
-### Microsoft.Windows.MigrationCore.MigObjectCountKFUsr
-
-This event returns data to track the count of the migration objects across various phases during feature update.
-
-The following fields are available:
-
-- **currentSid**  Indicates the user SID for which the migration is being performed.
-- **knownFoldersUsr[i]**  No content is currently available.
-- **migDiagSession->CString**  No content is currently available.
-- **objectCount**  No content is currently available.
 
 
 ## Privacy consent logging events
