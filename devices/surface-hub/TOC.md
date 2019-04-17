@@ -41,6 +41,7 @@
 ### [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
 ### [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md)
 ### [Using a room control system](use-room-control-system-with-surface-hub.md)
+### [Implement Quality of Service on Surface Hub](surface-hub-qos.md)
 ### [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md)
 ### [Surface Hub SSD replacement](surface-hub-ssd-replacement.md)
 ## [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)

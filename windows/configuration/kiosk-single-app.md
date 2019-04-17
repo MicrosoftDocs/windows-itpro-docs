@@ -42,8 +42,6 @@ Method | Description
 
 >[!TIP]
 >You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
->
->Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 
 
@@ -170,8 +168,6 @@ Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867).
 
 [Learn how to get the AppName](https://msdn.microsoft.com/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
-
-[Learn how to get the SID](https://go.microsoft.com/fwlink/p/?LinkId=615517).
 
 To remove assigned access, using PowerShell, run the following cmdlet.
 
