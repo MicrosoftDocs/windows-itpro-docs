@@ -70,17 +70,13 @@ The Diagnostic Data Viewer provides you with the following features to view and 
     >[!Important]
     >Seeing an event does not necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
 
-     ![View your diagnostic events](images/ddv-event-view.png)
+     ![View your diagnostic events](images/ddv-event-view.jpg)
 
 - **Search your diagnostic events.** The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
 
     Selecting an event opens the detailed JSON view, with the matching text highlighted.
 
-- **Filter your diagnostic event categories.** The apps Menu button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
-
-    Selecting a check box lets you filter between the diagnostic event categories.
-    
-     ![Filter your diagnostic event categories](images/ddv-event-view-filter.png)
+- **Filter your diagnostic event categories.** The app's **Menu** button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft. Selecting a check box lets you filter between the diagnostic event categories.
 
 - **Help to make your Windows experience better.** Microsoft only needs diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
 
