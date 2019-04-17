@@ -1,0 +1,38 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Resolved issues in Windows 10, version 1703
+metadata:
+  document_id: 
+  title: Resolved issues in Windows 10, version 1703
+  description: Resolved issues in Windows 10, version 1703
+  keywords: ["Resolved issues in Windows 10", "Windows 10", "Windows 10, version 1703"]
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on resolved issues for Windows 10, version 1703<br><br>
+      <table border='0'><tr>
+      <td bgcolor='#afeeff'><b>Current status</b>:<br>
+      This page lists isses and advisories that are specific to devices running Windows 10, version 1703. You can also review important [release information](index.md) about current and previous versions of Windows.
+      </td></tr></table>
+      "  
+- title: Resolved issues in Windows 10, version 1703
+- items:
+  - type: markdown
+    text: "
+      <table border ='1'><tr bgcolor='#d4d7d8'><td>Summary</td><td>Affected build</td><td>Status</td><td>Last updated</td></tr>
+      <tr><td><b>Internet Explorer 11 authentication issue</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Webpages become unresponsive in Microsoft Edge</b><br>After installing KB4480116, some Microsoft Edge users report that they cannot load webpages using a local IP address or using a VPN connection.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Global DNS outage affects Windows Update customers</b><br>Windows Update customers were recently affected by a network infrastructure event caused by an external DNS service provider's global outage.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>F5 VPN clients losing network connectivity</b><br>After updating to Windows 10 version 1809, F5 VPN clients may lose network connectivity when the VPN service is in a split tunnel configuration. To mitigate this issue, you can manually configure your systems to force all traffic through the VPN tunnel.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Intel display drivers turning on unsupported features in Windows</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      </table>
+      "

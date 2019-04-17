@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows 10, version 1507
+metadata:
+  document_id: 
+  title: Windows 10, version 1507
+  description: View annoucements and review known issues and fixes for Windows 10 version 1507
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues and the status of the rollout for Windows 10, version 1507<br><br>
+      <table border='0'><tr>
+      <td bgcolor='#afeeff'>Current status:<br>
+      We are doing a phased rollout to users via Windows Update, initially offering the update to devices we believe will have the best update experience based on our next-generation machine learning model. Windows 10, version 1507 is fully available for advanced users who manually select 'Check for updates.'
+      </td></tr></table>
+      "  
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: Issue-1
+      html: <p>Learn more ></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_deploy.svg"
+      title: Recent global DNS outage affects Windows Update customers
+    - href: Issue-2
+      html: <p>Read the official announcement ></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_upgrade.svg
+      title: Resuming the rollout of the Windows 10 October 2018 Update
+    - href: Issue-3
+      html: <p>Learn about upcoming changes for Windows Update for Business customers ></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: The retirement of SAC-T
+- items:
+  - type: markdown
+    text: "
+      <table border='0'><tr><td align='right'><a href=''>See all messages ></a></td></tr></table>
+      "
+- items:
+  - type: markdown
+    text: "
+      <h3 id='bkmk1'>H3 style bookmark here</h3>
+      <ul style='list-style-type:square;'>
+      <li>Bullet item: some preformatted inline (code) text - <code>netsh interface ip reset log.txt</code></li>
+      <li>Bullet item: some preformatted non-inline (pre) text (notice that the inline class is ignored here) - <pre class='inline'>netsh interface ip reset log.txt</pre></li>
+      <li>Bullet item: an image with custom sizing - <img src='images/test.png' alt='test' width='213' height='345' /></li>
+      </ul>
+      <a href='#bkmk1'>Link to bookmark here</a>
+      " 
+- title: Known issues
+- items:
+  - type: markdown
+    text: "
+      <table border ='1'><tr bgcolor='#d4d7d8'><td>Summary</td><td>Affected build</td><td>Status</td><td>Last updated</td></tr>
+      <tr><td><b>Internet Explorer 11 authentication issue</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Webpages become unresponsive in Microsoft Edge</b><br>After installing KB4480116, some Microsoft Edge users report that they cannot load webpages using a local IP address or using a VPN connection.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Global DNS outage affects Windows Update customers</b><br>Windows Update customers were recently affected by a network infrastructure event caused by an external DNS service provider's global outage.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>F5 VPN clients losing network connectivity</b><br>After updating to Windows 10 version 1809, F5 VPN clients may lose network connectivity when the VPN service is in a split tunnel configuration. To mitigate this issue, you can manually configure your systems to force all traffic through the VPN tunnel.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <tr><td><b>Intel display drivers turning on unsupported features in Windows</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      </table>
+      "
