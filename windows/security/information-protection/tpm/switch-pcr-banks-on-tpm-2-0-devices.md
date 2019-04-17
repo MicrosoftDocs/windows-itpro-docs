@@ -50,6 +50,22 @@ As a result, if the currently used PCR bank is switched all keys that have been 
 
 Before switching PCR banks you should suspend or disable BitLocker – or have your recovery key ready. For steps on how to switch PCR banks on your PC, you should contact your OEM or UEFI vendor.
 
+## How can I identify which PCR bank is being used?
+
+You can identify which PCR bank is currently used by Windows by looking at the registry.
+
+Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices
+
+DWORD: TPMActivePCRBanks
+
+Defines which PCR banks are currently active.
+
+Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices
+
+DWORD: TPMDigestAlgID
+
+Algorithm ID of the PCR bank that Windows is currently using.
+
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
