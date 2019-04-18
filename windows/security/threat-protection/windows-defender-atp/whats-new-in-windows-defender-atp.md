@@ -23,6 +23,19 @@ ms.topic: conceptual
 
 Here are the new features in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
 
+## April 2019
+### In preview
+The following capability is included in the April 2019 preview release. 
+
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
+## March 2019
+### In preview
+The following capability are included in the March 2019 preview release. 
+
+- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection) <BR> The machine health and compliance report provides high-level information about the devices in your organization. 
+
+
 ## February 2019
 The following capabilities are generally available (GA).
 - [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Windows Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 

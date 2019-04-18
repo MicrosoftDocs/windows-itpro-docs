@@ -43,6 +43,14 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 To enforce processing of the group policy, you can run ```gpupdate /force```.
 
+### Enable Windows Defender Credential Guard by using Intune
+
+1.  From **Home** click **Microsoft Intune**
+2.  Click **Device configuration**
+3.  Click **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
+
+> [!NOTE]
+> It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 ### Enable Windows Defender Credential Guard by using the registry
 
@@ -176,6 +184,9 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 
 > [!NOTE]
 > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Windows Defender Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
+
+> [!NOTE]
+> Credential Guard and Device Guard are not currently supported when using Azure IaaS VMs. These options will be made available with future Gen 2 VMs.
 
 For more info on virtualization-based security and Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 

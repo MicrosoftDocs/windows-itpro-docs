@@ -1,6 +1,12 @@
 # [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 
 ## [Overview](overview.md)
+### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+#### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
+#### [Configuration score](configuration-score.md)
+#### [Scenarios](threat-and-vuln-mgt-scenarios.md)
+
+
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
@@ -32,6 +38,7 @@
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
+
  
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
@@ -70,9 +77,10 @@
 
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
+
+### [Microsoft Threat Experts](microsoft-threat-experts.md)
+
 ### [Threat analytics](threat-analytics.md)
-
-
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
@@ -81,22 +89,15 @@
 #### [Custom detections](overview-custom-detections.md)
 #####[Create custom detections rules](custom-detection-rules.md)
 
-
 ### [Management and APIs](management-apis.md)
 #### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP APIs](apis-intro.md)
 #### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
-
 ### [Microsoft Threat Protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
-
-
-
-### [Microsoft Threat Experts](microsoft-threat-experts.md)
-
 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
@@ -211,6 +212,8 @@
 
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
+
+### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 ### Management and API support
 #### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
@@ -333,6 +336,7 @@
 #### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Threat protection reports](threat-protection-reports-windows-defender-advanced-threat-protection.md)
+##### [Machine health and compliance reports](machine-reports-windows-defender-advanced-threat-protection.md)
 
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
@@ -341,11 +345,6 @@
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
-
-
-
-
-### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
@@ -384,8 +383,6 @@
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
 #### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
- 
-
 
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)

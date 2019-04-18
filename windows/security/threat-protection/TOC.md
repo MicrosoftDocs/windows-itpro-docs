@@ -343,6 +343,7 @@
 ##### Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
+###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
 
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
@@ -1017,10 +1018,17 @@
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
+### [Windows security guidance for enterprises](windows-security-configuration-framework/windows-security-compliance.md)
 
-### [Windows security baselines](windows-security-baselines.md)
-#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-#### [Get support](get-support-for-security-baselines.md)
+#### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
+##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
+##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
+#### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
+##### [Level 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
+##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
+##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
+##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
+##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
