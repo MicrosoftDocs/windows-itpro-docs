@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues and the status of the rollout for Windows 8.1 and Windows Server 2012 R2<br><br>
+      Find information on known issues for Windows 8.1 and Windows Server 2012 R2. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).<br><br>
       
       " 
 

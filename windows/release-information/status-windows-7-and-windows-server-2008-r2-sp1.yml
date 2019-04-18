@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues and the status of the rollout for Windows 7 and Windows Server 2008 R2 SP1<br><br>
+      Find information on known issues for Windows 7 and Windows Server 2008 R2 SP1. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).<br><br>
       
       " 
 
@@ -60,8 +60,6 @@ sections:
   - type: markdown
     text: "
       <table border ='1'><tr bgcolor='#d4d7d8'><td>Summary</td><td>Affected build</td><td>Status</td><td>Last updated</td></tr>
-      <tr><td><div id='176msg'></div><b>Promotions that create non-root domains fail with optional features enabled</b><br>Windows Server 2016 promotions that create non-root domains fail in forests in which optional features like Active Directory recycle have been enabled.<br><br><a href = '#176msgdesc'>See details ></a></td><td><br><br><br><a href ='' target='_blank'></a></td><td>Active<br><a href = '' target='_blank'></a></td><td>April 11, 2019 02:43 PM PT</td></tr>
-      <tr><td><div id='234msg'></div><b></b><br><br><br><a href = '#234msgdesc'>See details ></a></td><td><br><br><br><a href ='' target='_blank'></a></td><td>Acknowledged<br><a href = '' target='_blank'></a></td><td>April 16, 2019 05:02 PM PT</td></tr>
       </table>
       "
 
@@ -72,12 +70,10 @@ sections:
         <div>
         </div> 
       "
-- title: April 2019
+- title: 
 - items:
   - type: markdown
     text: "
       <table border ='1'><tr bgcolor='#d4d7d8'><td>Details</td><td>Affected build</td><td>Status</td><td>History</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='176msgdesc'></div><b>Promotions that create non-root domains fail with optional features enabled</b><div><strong>This </strong>is <em>completely </em>a <u>test </u><s>message</s> checking all rich text features <a href=\"https://material-ui.com/api/button/\" target=\"_blank\">After installing te4st</a></div><div><br></div><div>Impacted platforms</div><div><br></div><ol><li>Windows 10 1503</li><li>Windows 10 1511</li><li>Windows 10 1607</li></ol><div><br></div><p class=\"ql-indent-1\">Other Platforms</div><div><br></div><ul><li>Servers</li><li>Client products</li></ul><div><br></div><br><a href ='#176msg'>Back to top</a></td><td><br><br><br><a href ='' target='_blank'></a></td><td>Active<br><a href = '' target='_blank'></a></td><td>Last updated:<br><br><br>Opened:<br>January 01, 001 12:00 AM PT</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='234msgdesc'></div><b></b><div>&lt;p&gt;test test&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;asdf&lt;/p&gt;</div><br><a href ='#234msg'>Back to top</a></td><td><br><br><br><a href ='' target='_blank'></a></td><td>Acknowledged<br><a href = '' target='_blank'></a></td><td>Last updated:<br><br><br>Opened:<br>January 01, 001 12:00 AM PT</td></tr>
       </table>
       "
