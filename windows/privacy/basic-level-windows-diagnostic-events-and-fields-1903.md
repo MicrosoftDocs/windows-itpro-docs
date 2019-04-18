@@ -2134,13 +2134,12 @@ The following fields are available:
 - **ext_app**  Describes the properties of the running application. This extension could be populated by either a client app or a web app. See [Common Data Extensions.app](#common-data-extensionsapp).
 - **ext_container**  Describes the properties of the container for events logged within a container. See [Common Data Extensions.container](#common-data-extensionscontainer).
 - **ext_device**  Describes the device-related fields. See [Common Data Extensions.device](#common-data-extensionsdevice).
-- **ext_mscv**  No content is currently available. See [Common Data Extensions.mscv](#common-data-extensionsmscv).
+- **ext_mscv**  Describes the correlation vector-related fields. See [Common Data Extensions.mscv](#common-data-extensionsmscv).
 - **ext_os**  Describes the operating system properties that would be populated by the client. See [Common Data Extensions.os](#common-data-extensionsos).
 - **ext_receipts**  Describes the fields related to time as provided by the client for debugging purposes. See [Common Data Extensions.receipts](#common-data-extensionsreceipts).
 - **ext_sdk**  Describes the fields related to a platform library required for a specific SDK. See [Common Data Extensions.sdk](#common-data-extensionssdk).
 - **ext_user**  Describes the fields related to a user. See [Common Data Extensions.user](#common-data-extensionsuser).
 - **ext_utc**  Describes the fields that might be populated by a logging library on Windows. See [Common Data Extensions.utc](#common-data-extensionsutc).
-- **ext_web**  No content is currently available. See [Common Data Extensions.web](#common-data-extensionsweb).
 - **ext_xbl**  Describes the fields related to XBOX Live. See [Common Data Extensions.xbl](#common-data-extensionsxbl).
 - **iKey**  Represents an ID for applications or other logical groupings of events.
 - **name**  Represents the uniquely qualified name for the event.
@@ -2219,28 +2218,19 @@ The following fields are available:
 - **epoch**  Represents the epoch and seqNum fields, which help track how many events were fired and how many events were uploaded, and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **eventFlags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experience and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
 - **flags**  Represents the bitmap that captures various Windows specific flags.
-- **loggingBinary**  No content is currently available.
+- **loggingBinary**  The binary (executable, library, driver, etc.) that fired the event.
 - **mon**  Combined monitor and event sequence numbers in the format: monitor sequence : event sequence
 - **op**  Represents the ETW Op Code.
-- **pgName**  No content is currently available.
+- **pgName**  The short form of the provider group name associated with the event.
 - **popSample**  No content is currently available.
-- **providerGuid**  No content is currently available.
+- **providerGuid**  The ETW provider ID associated with the provider name.
 - **raId**  Represents the ETW Related ActivityId. Logged via TraceLogging or directly via ETW.
 - **seq**  Represents the sequence field used to track absolute order of uploaded events. It is an incrementing identifier for each event added to the upload queue.  The Sequence helps track how many events were fired and how many events were uploaded and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **sqmId**  No content is currently available.
 - **stId**  Represents the Scenario Entry Point ID. This is a unique GUID for each event in a diagnostic scenario. This used to be Scenario Trigger ID.
-- **wcmp**  No content is currently available.
-- **wPId**  No content is currently available.
-- **wsId**  No content is currently available.
-
-
-### Common Data Extensions.web
-
-No content is currently available.
-
-The following fields are available:
-
-- **browserVer**  No content is currently available.
+- **wcmp**  The Windows Shell Composer ID.
+- **wPId**  The Windows Core OS product ID.
+- **wsId**  The Windows Core OS session ID.
 
 
 ### Common Data Extensions.xbl
@@ -7480,6 +7470,17 @@ The following fields are available:
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
 
+### Microsoft.Windows.Update.Orchestrator.UniversalOrchestratorInvalidSignature
+
+No content is currently available.
+
+The following fields are available:
+
+- **updaterCmdLine**  No content is currently available.
+- **updaterId**  No content is currently available.
+- **wuDeviceid**  No content is currently available.
+
+
 ### Microsoft.Windows.Update.Orchestrator.UnstickUpdate
 
 This event is sent when the update service orchestrator (USO) indicates that the update can be superseded by a newer update.
@@ -7503,6 +7504,18 @@ The following fields are available:
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
 
+### Microsoft.Windows.Update.Orchestrator.UpdaterCallbackFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **updaterArgument**  No content is currently available.
+- **updaterCmdLine**  No content is currently available.
+- **updaterId**  No content is currently available.
+- **wuDeviceid**  No content is currently available.
+
+
 ### Microsoft.Windows.Update.Orchestrator.UpdateRebootRequired
 
 This event sends data about whether an update required a reboot to help keep Windows up to date.
@@ -7516,6 +7529,17 @@ The following fields are available:
 - **updateScenarioType**  The update session type.
 - **uxRebootstate**  Indicates the exact state of the user experience at the time the required reboot was initiated to ensure the correct update process and experience is provided to keep Windows up to date.
 - **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdaterMalformedData
+
+No content is currently available.
+
+The following fields are available:
+
+- **malformedRegValue**  No content is currently available.
+- **updaterId**  No content is currently available.
+- **wuDeviceid**  No content is currently available.
 
 
 ### Microsoft.Windows.Update.Orchestrator.updateSettingsFlushFailed
