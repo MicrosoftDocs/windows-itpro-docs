@@ -10,12 +10,17 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 11/07/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## April 2019
+
+New or changed topic | Description
+--- | ---
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added new recommendations for policies to manage updates.
 
 ## February 2019
 

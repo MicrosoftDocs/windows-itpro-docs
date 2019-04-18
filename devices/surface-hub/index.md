@@ -46,7 +46,7 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 | [Top support solutions for Surface Hub](support-solutions-surface-hub.md) | These are the top Microsoft Support solutions for common issues experienced using Surface Hub. |
 | [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md) | Troubleshoot common problems, including setup issues, Exchange ActiveSync errors. |
 | [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md) | Learn how to resolve Miracast issues. |
-| [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | This topic provides links to useful Surface Hub documents, such as product datasheets, the site readiness guide, and user's guide. |
+| [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | This topic provides links to useful Surface Hub documents. |
 | [Change history for Surface Hub](change-history-surface-hub.md) | This topic lists new and updated topics in the Surface Hub documentation library. |
 
 
