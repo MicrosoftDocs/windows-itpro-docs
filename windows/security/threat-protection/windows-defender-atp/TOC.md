@@ -338,6 +338,10 @@
 ##### [Threat protection reports](threat-protection-reports-windows-defender-advanced-threat-protection.md)
 ##### [Machine health and compliance reports](machine-reports-windows-defender-advanced-threat-protection.md)
 
+
+#### Interoperability
+##### [Partner applications](partner-applications.md)
+
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
 ###### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
