@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/17/2019
+ms.date: 04/18/2019
 ---
 
 
@@ -1606,6 +1606,17 @@ The following fields are available:
 - **IEVersion**  The version of Internet Explorer that is running on the device.
 
 
+### Census.Azure
+
+No content is currently available.
+
+The following fields are available:
+
+- **CloudCoreBuildEx**  No content is currently available.
+- **CloudCoreSupportBuildEx**  No content is currently available.
+- **NodeID**  No content is currently available.
+
+
 ### Census.Battery
 
 This event sends type and capacity data about the battery on the device, as well as the number of connected standby devices in use, type to help keep Windows up to date.
@@ -2088,18 +2099,6 @@ The following fields are available:
 - **ver**  Represents the version number of the application. Used to understand errors by Version, Usage by Version across an app.
 
 
-### Common Data Extensions.cloud
-
-Describes the service-related fields populated by the cloud service.
-
-The following fields are available:
-
-- **role**  The role of the service.
-- **roleInstance**  The instance id of the deployed role instance generating the event.
-- **roleVer**  The build version of the role.
-- **ver**  No content is currently available.
-
-
 ### Common Data Extensions.container
 
 Describes the properties of the container for events logged within a container.
@@ -2113,35 +2112,16 @@ The following fields are available:
 - **type**  The container type. Examples: Process or VMHost
 
 
-### Common Data Extensions.cs1
-
-No content is currently available.
-
-The following fields are available:
-
-- **dblp**  A bitfield that is set to a non-zero value if the event in the newer schema has an equivalent event from the 1.0 schema.
-- **esc**  The event sequence clock.
-- **ev**  The version of the event.
-- **locale**  The client language locale on the device.
-- **scid**  The Service Config ID of the running title that sent the event.
-- **users**  A comma-separated list of all users logged into the device when the event was created. The user ID is encoded. Example: x:12345678
-
-
 ### Common Data Extensions.device
 
 Describes the device-related fields.
 
 The following fields are available:
 
-- **authId**  The ID of the device associated with this event. For Microsoft Account tickets, this is expected to be the MSA Global ID.
-- **authSecId**  The secondary ID of the device associated with this event. For Microsoft Account tickets, this is expected to be the MSA Hardware ID.
 - **deviceClass**  The device classification. For example, Desktop, Server, or Mobile.
-- **id**  A unique device ID.
 - **localId**  A locally-defined unique ID for the device. This is not the human-readable device name. Most likely equal to the value stored at HKLM\Software\Microsoft\SQMClient\MachineId
 - **make**  Device manufacturer.
 - **model**  Device model.
-- **orgAuthId**  ID used to authenticate the orgId.
-- **orgId**  Organization ID associated with the event.
 
 
 ### Common Data Extensions.Envelope
@@ -2152,14 +2132,8 @@ The following fields are available:
 
 - **data**  Represents the optional unique diagnostic data for a particular event schema.
 - **ext_app**  Describes the properties of the running application. This extension could be populated by either a client app or a web app. See [Common Data Extensions.app](#common-data-extensionsapp).
-- **ext_cloud**  Describes the service-related fields populated by the cloud service. See [Common Data Extensions.cloud](#common-data-extensionscloud).
 - **ext_container**  Describes the properties of the container for events logged within a container. See [Common Data Extensions.container](#common-data-extensionscontainer).
-- **ext_cs1**  If the field doesn't exist in the newer schema, this contains the fields from an earlier schema. See [Common Data Extensions.cs1](#common-data-extensionscs1).
 - **ext_device**  Describes the device-related fields. See [Common Data Extensions.device](#common-data-extensionsdevice).
-- **ext_ingest**  Describes the fields added dynamically by the service. See [Common Data Extensions.ingest](#common-data-extensionsingest).
-- **ext_intService**  No content is currently available. See [Common Data Extensions.intService](#common-data-extensionsintservice).
-- **ext_intWeb**  No content is currently available. See [Common Data Extensions.intWeb](#common-data-extensionsintweb).
-- **ext_loc**  Describes the location from which the event was logged. See [Common Data Extensions.loc](#common-data-extensionsloc).
 - **ext_mscv**  No content is currently available. See [Common Data Extensions.mscv](#common-data-extensionsmscv).
 - **ext_os**  Describes the operating system properties that would be populated by the client. See [Common Data Extensions.os](#common-data-extensionsos).
 - **ext_receipts**  Describes the fields related to time as provided by the client for debugging purposes. See [Common Data Extensions.receipts](#common-data-extensionsreceipts).
@@ -2174,65 +2148,13 @@ The following fields are available:
 - **ver**  Represents the major and minor version of the extension.
 
 
-### Common Data Extensions.ingest
-
-Describes the fields that are added by the ingestion service.
-
-The following fields are available:
-
-- **auth**  Used to assess the trustworthiness of the data.
-- **client**  The client name.
-- **clientIp**  The IP address seen by the service. This is not necessarily the client IP address, but could be a router or some other device.
-- **processedIngest**  If the event already had an ingest extension and the client was authenticated as a first party, the ingest extension will be inserted as processedIngest.
-- **quality**  A bitfield added by the service to all events coming from a client device.
-- **time**  The time that the event was received by the service.
-- **userAgent**  For events that are not using the CUET component, this is the user agent of the browser.
-
-
-### Common Data Extensions.intService
-
-No content is currently available.
-
-The following fields are available:
-
-- **deploymentUnit**  No content is currently available.
-- **environment**  No content is currently available.
-- **fullEnvName**  No content is currently available.
-- **location**  No content is currently available.
-- **name**  No content is currently available.
-
-
-### Common Data Extensions.intWeb
-
-No content is currently available.
-
-The following fields are available:
-
-- **anid**  No content is currently available.
-- **mc1Id**  No content is currently available.
-- **mscom**  No content is currently available.
-- **msfpc**  No content is currently available.
-- **serviceName**  No content is currently available.
-
-
-### Common Data Extensions.loc
-
-Describes the location from which the event was logged.
-
-The following fields are available:
-
-- **country**  2 letter country code using the codes from the ISO 3166-1 alpha-2 standard.
-- **id**  Location ID based on the client's IP address.
-- **tz**  The time zone of the device.
-
-
 ### Common Data Extensions.mscv
 
-No content is currently available.
+Describes the correlation vector-related fields.
 
 The following fields are available:
 
-- **cV**  No content is currently available.
+- **cV**  Represents the Correlation Vector: A single field for tracking partial order of related events across component boundaries.
 
 
 ### Common Data Extensions.os
@@ -2280,7 +2202,6 @@ Describes the fields related to a user.
 The following fields are available:
 
 - **authId**  This is an ID of the user associated with this event that is deduced from a token such as a Microsoft Account ticket or an XBOX token.
-- **id**  Unique user Id. Example: x:12345678.
 - **locale**  The language and region.
 - **localId**  Represents a unique user identity that is created locally and added by the client. This is not the user's account ID.
 
@@ -2296,7 +2217,7 @@ The following fields are available:
 - **cat**  Represents a bitmask of the ETW Keywords associated with the event.
 - **cpId**  The composer ID, such as Reference, Desktop, Phone, Holographic, Hub, IoT Composer.
 - **epoch**  Represents the epoch and seqNum fields, which help track how many events were fired and how many events were uploaded, and enables identification of data lost during upload and de-duplication of events on the ingress server.
-- **eventFlags**  No content is currently available.
+- **eventFlags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experience and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
 - **flags**  Represents the bitmap that captures various Windows specific flags.
 - **loggingBinary**  No content is currently available.
 - **mon**  Combined monitor and event sequence numbers in the format: monitor sequence : event sequence
@@ -2319,13 +2240,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **browser**  No content is currently available.
-- **browserLang**  No content is currently available.
 - **browserVer**  No content is currently available.
-- **domain**  No content is currently available.
-- **isManual**  No content is currently available.
-- **screenRes**  No content is currently available.
-- **userConsent**  No content is currently available.
 
 
 ### Common Data Extensions.xbl
@@ -4141,9 +4056,9 @@ This event returns data to track the count of the migration objects across vario
 The following fields are available:
 
 - **currentSid**  Indicates the user SID for which the migration is being performed.
-- **knownFoldersUsr[i]**  No content is currently available.
-- **migDiagSession->CString**  No content is currently available.
-- **objectCount**  No content is currently available.
+- **knownFoldersUsr[i]**  Predefined folder path locations.
+- **migDiagSession->CString**  The phase of the upgrade where the migration occurs. (For example, Validate tracked content.)
+- **objectCount**  The number of objects that are being transferred.
 
 
 ## Miracast events
