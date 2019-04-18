@@ -2,7 +2,7 @@
 title: Overview of Configuration score in Microsoft Defender Security Center
 description: Expand your visibility into the overall security configuration posture of your organization
 keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
-search.product: Windows 10
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy

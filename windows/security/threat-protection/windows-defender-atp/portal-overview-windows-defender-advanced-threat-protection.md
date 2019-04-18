@@ -112,7 +112,6 @@ Icon | Description
 ![Possible active alert icon](images\tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert 
 ![Recommendation insights icon](images\tvm_insight_icon.png) | Threat & Vulnerability Management - recommendation insights
 
-
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
 - [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)

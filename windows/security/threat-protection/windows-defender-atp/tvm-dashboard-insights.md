@@ -1,10 +1,10 @@
 ---
 title: What's in the dashboard and what it means for my organization's security posture
-description: 
-keywords: 
-search.product: Windows 10
+description: What's in the Threat & Vulnerability Management dashboard and how it can help SecOps and Security Administrators arrive at informed decisions in addressing cybersecurity threat vulnerabilities and building their organization's security resilience. 
+keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: eADQiWindows 10XVcnh
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
