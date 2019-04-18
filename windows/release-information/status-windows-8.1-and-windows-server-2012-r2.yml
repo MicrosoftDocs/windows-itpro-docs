@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues for Windows 8.1 and Windows Server 2012 R2. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).<br><br>
+      Find information on known issues and the status of the rollout for Windows 8.1 and Windows Server 2012 R2<br><br>
       
       " 
 
@@ -47,7 +47,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border='0'><tr><td align='right'><a href='https://review.docs.microsoft.com/en-us/windows/known-issues/windows-message-center?branch=Prod_Preview_NishaTest'>See all messages ></a></td></tr></table>
+      <table border='0'><tr><td align='right'><a href='https://review.docs.microsoft.com/en-us/windows/release-information/windows-message-center?branch=release-info-preview'>See all messages ></a></td></tr></table>
       "
 - items:
   - type: markdown
