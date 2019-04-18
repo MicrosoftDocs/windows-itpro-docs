@@ -1,6 +1,6 @@
 ---
 title: Partner applications in Microsoft Defender ATP   
-description: View supported partner connections so enhance the detection, investigation, and threat intelligence capabilities of the platform
+description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
