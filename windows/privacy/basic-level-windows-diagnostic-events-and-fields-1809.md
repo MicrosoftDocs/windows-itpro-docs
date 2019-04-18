@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/17/2019
+ms.date: 04/18/2019
 ---
 
 
@@ -1817,6 +1817,17 @@ The following fields are available:
 - **IEVersion**  The version of Internet Explorer that is running on the device.
 
 
+### Census.Azure
+
+No content is currently available.
+
+The following fields are available:
+
+- **CloudCoreBuildEx**  No content is currently available.
+- **CloudCoreSupportBuildEx**  No content is currently available.
+- **NodeID**  No content is currently available.
+
+
 ### Census.Battery
 
 This event sends type and capacity data about the battery on the device, as well as the number of connected standby devices in use, type to help keep Windows up to date.
@@ -2790,12 +2801,10 @@ The following fields are available:
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
-- **T`rottledDroppedCount**  No content is currently available.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
-- **UreviousHeartBeatTime**  No content is currently available.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
@@ -3410,7 +3419,6 @@ The following fields are available:
 - **BrightnessVersionViaDDI**  The version of the Display Brightness Interface.
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
-- **DedicatedVideoMemmryB**  No content is currently available.
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
 - **DisplayAdapterLuid**  The display adapter LUID.
 - **DriverDate**  The date of the display driver.
@@ -3423,14 +3431,11 @@ The following fields are available:
 - **GPUDeviceID**  The GPU device ID.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
 - **GPURevisionID**  The GPU revision ID.
-- **GPUVefdorID**  No content is currently available.
 - **GPUVendorID**  The GPU vendor ID.
 - **InterfaceId**  The GPU interface ID.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
 - **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
-- **IsHy`ridIntegrated**  No content is currently available.
 - **IsHybridDiscrete**  Does the GPU have discrete GPU capabilities in a hybrid device?
-- **IsHybridDiscRete**  No content is currently available.
 - **IsHybridIntegrated**  Does the GPU have integrated GPU capabilities in a hybrid device?
 - **IsLDA**  Is the GPU comprised of Linked Display Adapters?
 - **IsMiracastSupported**  Does the GPU support Miracast?
@@ -3544,16 +3549,12 @@ The following fields are available:
 - **AppVersion**  The version of the app that has crashed.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
 - **ExceptionOffset**  The address where the exception had occurred.
-- **EzceptionCode**  No content is currently available.
 - **Flags**  Flags indicating how reporting is done. For example, queue the report, do not offer JIT debugging, or do not terminate the process after reporting.
 - **FriendlyAppName**  The description of the app that has crashed, if different from the AppName. Otherwise, the process name.
-- **FriendlyArpName**  No content is currently available.
 - **IsFatal**  True/False to indicate whether the crash resulted in process termination.
 - **ModName**  Exception module name (e.g. bar.dll).
 - **ModTimeStamp**  The date/time stamp of the module.
-- **ModVdrsion**  No content is currently available.
 - **ModVersion**  The version of the module that has crashed.
-- **PackageFullNale**  No content is currently available.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
 - **ProcessArchitecture**  Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants: 0: PROCESSOR_ARCHITECTURE_INTEL. 5: PROCESSOR_ARCHITECTURE_ARM. 9: PROCESSOR_ARCHITECTURE_AMD64. 12: PROCESSOR_ARCHITECTURE_ARM64.
@@ -4590,8 +4591,8 @@ The following fields are available:
 
 - **currentSid**  Indicates the user SID for which the migration is being performed.
 - **knownFoldersUsr[i]**  Predefined folder path locations.
-- **migDiagSession->CString**  The phase of the upgrade where migration occurs. (E.g.: Validate tracked content)
-- **objectCount**  The count for the number of objects that are being transferred.
+- **migDiagSession->CString**  The phase of the upgrade where the migration occurs. (For example, Validate tracked content.)
+- **objectCount**  The number of objects that are being transferred.
 
 
 ## Miracast events
@@ -5349,10 +5350,35 @@ This service retrieves events generated by SetupPlatform, the engine that drives
 
 The following fields are available:
 
-- **Fie**  No content is currently available.
 - **FieldName**  Retrieves the event name/data point. Examples: InstallStartTime, InstallEndtime, OverallResult etc.
 - **GroupName**  Retrieves the groupname the event belongs to. Example: Install Information, DU Information, Disk Space Information etc.
 - **Value**  Retrieves the value associated with the corresponding event name (Field Name). For example: For time related events this will include the system time.
+
+
+## SIH events
+
+### SIHEngineTelemetry.EvalApplicability
+
+This event is sent when targeting logic is evaluated to determine if a device is eligible for a given action.
+
+The following fields are available:
+
+- **ActionReasons**  If an action has been assessed as inapplicable, the additional logic prevented it.
+- **AdditionalReasons**  If an action has been assessed as inapplicable, the additional logic prevented it.
+- **CachedEngineVersion**  The engine DLL version that is being used.
+- **EventInstanceID**  A unique identifier for event instance.
+- **EventScenario**  Indicates the purpose of sending this event – whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
+- **HandlerReasons**  If an action has been assessed as inapplicable, the installer technology-specific logic prevented it.
+- **IsExecutingAction**  If the action is presently being executed.
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.)
+- **SihclientVersion**  The client version that is being used.
+- **StandardReasons**  If an action has been assessed as inapplicable, the standard logic the prevented it.
+- **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
+- **UpdateID**  A unique identifier for the action being acted upon.
+- **WuapiVersion**  The Windows Update API version that is currently installed.
+- **WuaucltVersion**  The Windows Update client version that is currently installed.
+- **WuauengVersion**  The Windows Update engine version that is currently installed.
+- **WUDeviceID**  The unique identifier controlled by the software distribution client.
 
 
 ## Software update events
@@ -5382,7 +5408,6 @@ The following fields are available:
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No data is currently reported in this field. Expected value for this field is 0.
 - **Context**  Gives context on where the error has occurred. Example: AutoEnable, GetSLSData, AddService, Misc, or Unknown
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
-- **Deferral@olicySources**  No content is currently available.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
 - **DeferredUpdates**  Update IDs which are currently being deferred until a later time
 - **DeviceModel**  What is the device model.
@@ -5409,7 +5434,6 @@ The following fields are available:
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
-- **Num`erOfNewUpdatesFromServiceSync**  No content is currently available.
 - **NumberOfApplicableUpdates**  The number of updates which were ultimately deemed applicable to the system after the detection process is complete
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
@@ -5481,7 +5505,6 @@ Download process event for target update on Windows Update client. See the Event
 
 The following fields are available:
 
-- **ActiveDownload4ime**  No content is currently available.
 - **ActiveDownloadTime**  How long the download took, in seconds, excluding time where the update wasn't actively being downloaded.
 - **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download of the app payload.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
@@ -5506,7 +5529,6 @@ The following fields are available:
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
-- **Co,76dB4ime**  No content is currently available.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
 - **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
@@ -5520,7 +5542,6 @@ The following fields are available:
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
-- **FlightBu9ldNumber**  No content is currently available.
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -5532,13 +5553,11 @@ The following fields are available:
 - **IsDependentSet**  Indicates whether a driver is a part of a larger System Hardware/Firmware Update
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBEncbled**  No content is currently available.
 - **NetworkCost**  A flag indicating the cost of the network (congested, fixed, variable, over data limit, roaming, etc.) used for downloading the update content.
 - **NetworkCostBitMask**  Indicates what kind of network the device is connected to (roaming, metered, over data cap, etc.)
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be "metered."
 - **PackageFullName**  The package name of the content.
 - **PhonePreviewEnabled**  Indicates whether a phone was opted-in to getting preview builds, prior to flighting (pre-release builds) being introduced.
-- **PostDnld4ime**  No content is currently available.
 - **PostDnldTime**  Time (in seconds) taken to signal download completion after the last job completed downloading the payload.
 - **ProcessName**  The process name of the application that initiated API calls, in the event where CallerApplicationName was not provided.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -5552,7 +5571,6 @@ The following fields are available:
 - **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
 - **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
-- **SizeCalc4ime**  No content is currently available.
 - **SizeCalcTime**  Time (in seconds) taken to calculate the total download size of the payload.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
@@ -5562,7 +5580,6 @@ The following fields are available:
 - **TargetMetadataVersion**  The version of the currently downloading (or most recently downloaded) package.
 - **ThrottlingServiceHResult**  Result code (success/failure) while contacting a web service to determine whether this device should download content yet.
 - **TimeToEstablishConnection**  Time (in milliseconds) it took to establish the connection prior to beginning downloaded.
-- **TotalExp6dBedBytes**  No content is currently available.
 - **TotalExpectedBytes**  The total size (in Bytes) expected to be downloaded.
 - **UpdateId**  An identifier associated with the specific piece of content.
 - **UpdateID**  An identifier associated with the specific piece of content.
@@ -5606,7 +5623,6 @@ The following fields are available:
 - **ClientVersion**  The version number of the software distribution client
 - **ConnectionStatus**  Indicates the connectivity state of the device at the time of heartbeat
 - **CurrentError**  Last (transient) error encountered by the active download
-- **CurrentMrror**  No content is currently available.
 - **DownloadFlags**  Flags indicating if power state is ignored
 - **DownloadState**  Current state of the active download for this content (queued, suspended, or progressing)
 - **EventType**  Possible values are "Child", "Bundle", or "Driver"
@@ -7093,11 +7109,9 @@ The following fields are available:
 - **cdnIp**  The IP address of the source CDN.
 - **cdnUrl**  Url of the source Content Distribution Network (CDN).
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
-- **dileID**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
-- **downlinkUsageFps**  No content is currently available.
 - **downloadMode**  The download mode used for this file download session.
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
@@ -7116,7 +7130,6 @@ The following fields are available:
 - **linkLocalConnectionCount**  The number of connections made to peers in the same Link-local network.
 - **numPeers**  The total number of peers used for this download.
 - **numPeersLocal**  The total number of local peers used for this download.
-- **ppedefinedCallerName**  No content is currently available.
 - **predefinedCallerName**  The name of the API Caller.
 - **restrictedUpload**  Is the upload restricted?
 - **routeToCacheServer**  The cache server setting, source, and value.
@@ -7124,9 +7137,7 @@ The following fields are available:
 - **totalTimeMs**  Duration of the download (in seconds).
 - **updateID**  The ID of the update being downloaded.
 - **uplinkBps**  The maximum measured available upload bandwidth (in bytes per second).
-- **uplinkFps**  No content is currently available.
 - **uplinkUsageBps**  The upload speed (in bytes per second).
-- **uplinkUsageFps**  No content is currently available.
 - **usedMemoryStream**  TRUE if the download is using memory streaming for App downloads.
 
 
@@ -7174,7 +7185,6 @@ The following fields are available:
 - **fileSize**  Total file size of the file that was downloaded.
 - **fileSizeCaller**  Value for total file size provided by our caller.
 - **groupID**  ID for the group.
-- **grOupID**  No content is currently available.
 - **isEncrypted**  Indicates whether the download is encrypted.
 - **isVpn**  Indicates whether the device is connected to a Virtual Private Network.
 - **jobID**  The ID of the Windows Update job.

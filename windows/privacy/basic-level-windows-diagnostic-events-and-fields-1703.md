@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/17/2019
+ms.date: 04/18/2019
 ---
 
 
@@ -4004,7 +4004,7 @@ The following fields are available:
 
 ### SIHEngineTelemetry.EvalApplicability
 
-This event is sent when targeting logic is evaluated to determine if a device is eligible a given action.
+This event is sent when targeting logic is evaluated to determine if a device is eligible for a given action.
 
 
 
