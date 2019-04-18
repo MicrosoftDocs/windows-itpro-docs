@@ -1,11 +1,11 @@
-### YamlMime:YamlDocument
+﻿### YamlMime:YamlDocument
 
 documentType: LandingData
-title: Windows message center
+title: Windows 10 message center
 metadata:
   document_id: 
-  title: Windows message center
-  description: Windows message center
+  title: Windows 10 message center
+  description: Windows 10 message center
   keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
   ms.localizationpriority: high
   author: greg-lindsay
@@ -15,49 +15,44 @@ metadata:
   ms.devlang: na
 
 sections:
-- items:
-  - type: markdown
-    text: "
-      Message center for Windows 10 and Windows Server<br><br>
-      <table border='0'><tr>
-      <td bgcolor='#afeeff'>Current status:<br>
-      </td></tr></table>
-      "   
+
 - items:
   - type: list
     style: cards
     className: cardsM
-    columns: 3
+    columns: 2
     items:
-    - href: Issue-1
-      html: <p>Learn more ></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_deploy.svg"
-      title: Recent global DNS outage affects Windows Update customers
-    - href: Issue-2
-      html: <p>Read the official announcement ></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_upgrade.svg
-      title: Resuming the rollout of the Windows 10 October 2018 Update
+    
+    - href: https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/
+      html: <p>Read Blog ></p>
+      image: 
+        src: https://docs.microsoft.com/media/common/i_blog.svg
+      title: Improving the Windows 10 update experience with control, quality and transparency
     - href: Issue-3
       html: <p>Learn about upcoming changes for Windows Update for Business customers ></p>
-      image:
+      image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
       title: The retirement of SAC-T
+    - href: Issue-2
+      html: <p>Read the official announcement ></p>
+      image: 
+        src: https://docs.microsoft.com/media/common/i_upgrade.svg
+      title: Resuming the rollout of the Windows 10 October 2018 Update
+    - href: Issue-1
+      html: <p>Learn more ></p>
+      image: 
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Recent global DNS outage affects Windows Update customers
+
+- title: Recent announcements
 - items:
   - type: markdown
     text: "
-      <table border='0'><tr><td align='right'><a href=''>See all messages ></a></td></tr></table>
-      " 
-- title: Windows message center
-- items:
-  - type: markdown
-    text: "
-      <table border ='1'><tr bgcolor='#d4d7d8'><td>Summary</td><td>Affected build</td><td>Status</td><td>Last updated</td></tr>
-      <tr><td><b>Internet Explorer 11 authentication issue</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
-      <tr><td><b>Webpages become unresponsive in Microsoft Edge</b><br>After installing KB4480116, some Microsoft Edge users report that they cannot load webpages using a local IP address or using a VPN connection.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
-      <tr><td><b>Global DNS outage affects Windows Update customers</b><br>Windows Update customers were recently affected by a network infrastructure event caused by an external DNS service provider's global outage.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
-      <tr><td><b>F5 VPN clients losing network connectivity</b><br>After updating to Windows 10 version 1809, F5 VPN clients may lose network connectivity when the VPN service is in a split tunnel configuration. To mitigate this issue, you can manually configure your systems to force all traffic through the VPN tunnel.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
-      <tr><td><b>Intel display drivers turning on unsupported features in Windows</b><br>After installing KB4487044, Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><a href=''>See details</a></td><td>OS Build 17763.316<br>February 12, 2019<br><a href=''>KB448704</a></td><td>Mitigated</td><td>February 12, 2019 1:00 PM PT</td></tr>
+      <table border ='1'><tr bgcolor='#d4d7d8'><td>Message</td><td>Date</td></tr>
+      
+      <tr><td><b>Recent global DNS outage affects Windows Update customers</b><br><br>[Comms Team Needs to Provide Description]<br><br><a href = 'Issue-1' target='_blank'><p>Learn more ></p></a></td><td>April 09, 2019 12:00 AM PT</td></tr>
+      <tr><td><b>Resuming the rollout of the Windows 10 October 2018 Update</b><br><br>[Comms Team Needs to Provide Description]<br><br><a href = 'Issue-2' target='_blank'><p>Read the official announcement ></p></a></td><td>April 09, 2019 12:00 AM PT</td></tr>
+      <tr><td><b>Improving the Windows 10 update experience with control, quality and transparency</b><br><br>While regular updates are critical to keeping modern devices secure and running smoothly in a diverse and dynamic ecosystem, we have heard clear feedback that the Windows update process itself can be disruptive, particularly that Windows users would like more control over when updates happen. Today we are excited to announce significant changes in the Windows update process, changes designed to improve the experience, put the user in more control, and improve the quality of Windows updates.<br><br><a href = 'https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/' target='_blank'><p>Read Blog ></p></a></td><td>April 04, 2019 12:00 AM PT</td></tr>
+      <tr><td><b>The retirement of SAC-T</b><br><br>[Comms Team Needs to Provide Description]<br><br><a href = 'Issue-3' target='_blank'><p>Learn about upcoming changes for Windows Update for Business customers ></p></a></td><td>October 09, 2018 12:00 AM PT</td></tr>
       </table>
       "
