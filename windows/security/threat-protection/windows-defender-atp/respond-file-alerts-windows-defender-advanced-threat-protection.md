@@ -260,7 +260,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
 Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 Name: AllowSampleCollection 
 Type: DWORD 
-Value: 
+Hexadecimal value : 
   Value = 0 – block sample collection
   Value = 1 – allow sample collection
 ```
