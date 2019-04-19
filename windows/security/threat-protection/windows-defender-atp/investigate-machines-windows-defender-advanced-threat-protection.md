@@ -38,16 +38,16 @@ You can click on affected machines whenever you see them in the portal to open a
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
-- Machine details, Logged on users, Machine risk, and Machine Reporting
-- Alerts related to this machine
-- Machine timeline
+- Machine details
+- Response actions
+- Cards (active alerts, logged on users, security assessment)
+- Drill downs
 
-![Image of machine view](images/atp-azure-atp-machine.png)
+![Image of machine view](images/specific-machine.png)
 
-The machine details, logged on users, machine risk, and machine reporting sections display various attributes about the machine.
 
 **Machine details**</br>
-The machine details tile provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
+The machine details section provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
 
 For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
