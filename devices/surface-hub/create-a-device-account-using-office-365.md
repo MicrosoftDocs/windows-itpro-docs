@@ -217,6 +217,8 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 ## <a href="" id="create-device-acct-eac"></a>Create a device account using the Exchange Admin Center
 
+>[!NOTE]
+>This method will only work if you have an on-premises Active Directory that you are syncing from.
 
 You can use the Exchange Admin Center to create a device account:
 
