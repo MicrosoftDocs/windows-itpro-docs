@@ -4,7 +4,7 @@
 ### [Resolved issues](resolved-issues-windows-10-1809-and-windows-server-2019.yml)
 ## [Version 1803](status-windows-10-1803.yml)
 ### [Resolved issues](resolved-issues-windows-10-1803.yml)
-## [Version 1709](status-windows-10-1709.yml)
+## [Version 1709 and Windows Server 1709](status-windows-10-1709.yml)
 ### [Resolved issues](resolved-issues-windows-10-1709.yml)
 ## [Version 1703](status-windows-10-1703.yml)
 ### [Resolved issues](resolved-issues-windows-10-1703.yml)
