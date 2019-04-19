@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/18/2019
+ms.date: 04/19/2019
 ---
 
 
@@ -1801,7 +1801,7 @@ The following fields are available:
 
 ### Census.App
 
-Provides information on IE and Census versions running on the device
+This event sends version data about the Apps running on this device, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -1819,13 +1819,13 @@ The following fields are available:
 
 ### Census.Azure
 
-No content is currently available.
+This event returns data from Microsoft-internal Azure server machines (only from Microsoft-internal machines with Server SKUs). All other machines (those outside Microsoft and/or machines that are not part of the “Azure fleet”) return empty data sets.
 
 The following fields are available:
 
-- **CloudCoreBuildEx**  No content is currently available.
-- **CloudCoreSupportBuildEx**  No content is currently available.
-- **NodeID**  No content is currently available.
+- **CloudCoreBuildEx**  The Azure CloudCore build number.
+- **CloudCoreSupportBuildEx**  The Azure CloudCore support build number.
+- **NodeID**  The node identifier on the device that indicates whether the device is part of the Azure fleet.
 
 
 ### Census.Battery
@@ -2070,7 +2070,7 @@ The following fields are available:
 
 ### Census.Processor
 
-Provides information on several important data points about Processor settings
+This event sends data about the processor to help keep Windows up to date.
 
 The following fields are available:
 
@@ -2357,7 +2357,6 @@ The following fields are available:
 - **ext_cs**  Describes properties related to the schema of the event. See [Common Data Extensions.cs](#common-data-extensionscs).
 - **ext_device**  Describes the device-related fields. See [Common Data Extensions.device](#common-data-extensionsdevice).
 - **ext_os**  Describes the operating system properties that would be populated by the client. See [Common Data Extensions.os](#common-data-extensionsos).
-- **ext_receipts**  Describes the fields related to time as provided by the client for debugging purposes. See [Common Data Extensions.receipts](#common-data-extensionsreceipts).
 - **ext_sdk**  Describes the fields related to a platform library required for a specific SDK. See [Common Data Extensions.sdk](#common-data-extensionssdk).
 - **ext_user**  Describes the fields related to a user. See [Common Data Extensions.user](#common-data-extensionsuser).
 - **ext_utc**  Describes the fields that might be populated by a logging library on Windows. See [Common Data Extensions.utc](#common-data-extensionsutc).
@@ -2381,16 +2380,6 @@ The following fields are available:
 - **locale**  Represents the locale of the operating system.
 - **name**  Represents the operating system name.
 - **ver**  Represents the major and minor version of the extension.
-
-
-### Common Data Extensions.receipts
-
-Represents various time information as provided by the client and helps for debugging purposes.
-
-The following fields are available:
-
-- **originalTime**  The original event time.
-- **uploadTime**  The time the event was uploaded.
 
 
 ### Common Data Extensions.sdk
@@ -4509,22 +4498,8 @@ This event indicates the number of bytes read from or read by the OS and written
 
 The following fields are available:
 
-- **BootAttemptCount**  No content is currently available.
-- **BootStatusPolicy**  No content is currently available.
-- **BootType**  No content is currently available.
 - **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
 - **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
-- **FirmwareResetReasonEmbeddedController**  No content is currently available.
-- **FirmwareResetReasonEmbeddedControllerAdditional**  No content is currently available.
-- **FirmwareResetReasonPch**  No content is currently available.
-- **FirmwareResetReasonPchAdditional**  No content is currently available.
-- **FirmwareResetReasonSupplied**  No content is currently available.
-- **LastBootSucceeded**  No content is currently available.
-- **LastShutdownSucceeded**  No content is currently available.
-- **MeasuredLaunchResume**  No content is currently available.
-- **MenuPolicy**  No content is currently available.
-- **RecoveryEnabled**  No content is currently available.
-- **UserInputTime**  No content is currently available.
 
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch

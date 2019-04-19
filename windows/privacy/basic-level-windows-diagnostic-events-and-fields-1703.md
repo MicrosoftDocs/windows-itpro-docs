@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/18/2019
+ms.date: 04/19/2019
 ---
 
 
@@ -1464,7 +1464,7 @@ The following fields are available:
 
 ### Census.Processor
 
-This event sends data about the processor (architecture, speed, number of cores, manufacturer, and model number), to help keep Windows up to date.
+This event sends data about the processor to help keep Windows up to date.
 
 The following fields are available:
 
