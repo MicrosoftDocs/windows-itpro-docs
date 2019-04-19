@@ -1,4 +1,4 @@
-# [Windows 10 release information](index.yml)
+# [Windows 10 release information](index.md)
 ## [Message center](windows-message-center.yml)
 ## [Version 1809 and Windows Server 2019](status-windows-10-1809-and-windows-server-2019.yml)
 ### [Resolved issues](resolved-issues-windows-10-1809-and-windows-server-2019.yml)
