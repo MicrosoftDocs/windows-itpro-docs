@@ -1,7 +1,7 @@
 ---
-title: Onboard machines without internet access to the Windows on Windows Defender ATP service
-description: Onboard machines without internet access so that they can send sensor data to the Windows Defender ATP sensor
-keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, 
+title: Onboard machines without Internet access to Windows Defender ATP
+description: Onboard machines without Internet access so that they can send sensor data to the Windows Defender ATP sensor
+keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
