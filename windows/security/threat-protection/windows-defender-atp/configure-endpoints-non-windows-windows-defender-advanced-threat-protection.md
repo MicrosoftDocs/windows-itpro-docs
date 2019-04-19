@@ -53,18 +53,14 @@ You'll need to take the following steps to onboard non-Windows machines:
 2. Run a detection test by following the instructions of the third-party solution.
 
 ## Offboard non-Windows machines
-To effectively offboard the machine from the service, you'll need to disable the data push on the third-party portal first.
 
+1. Follow the third-party's documentation to disconnect the third-party solution from Windows Defender ATP.
 
-1. Follow the third-party documentation to opt-out on the third-party service side.
-
-2. In the navigation pane, select **Settings** > **Offboarding**.
-   1. For macOS devices, you can choose to offboard through Windows Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac#uninstallation).
-
-    2. For other non-Windows devices choose **Offboard non-Windows machines by disabling third-party integration**.   
-
-
-
+2. Remove permissions for the third-party solution in your Azure AD tenant.
+   1. Sign in to the [Azure portal](https://portal.azure.com).
+   2. Select **Azure Active Directory > Enterprise Applications**.
+   3. Select the application you'd like to offboard.
+   4. Select the **Delete** button.
 
 
 ## Related topics
