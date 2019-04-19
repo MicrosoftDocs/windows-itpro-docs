@@ -17,49 +17,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard machines without internet access the Windows Defender ATP service
+# Onboard machines without Internet access to Windows Defender ATP 
 
 **Applies to:**
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+To onboard machines without Internet access, you'll need to take the following general steps:
 
 
--   *On-Premise Machines:*
+## On-premise machines
 
-    -   Setup OMS Gateway Server to act as proxy / hub
+- Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
+  - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+  - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints-windows-defender-advanced-threat-protection#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-windows-defender-atp) point to Microsoft Defender ATP Workspace key & ID
 
-        -   OMS Gateway Agent
+- Offline machines in the same network of Azure Log Analytics
+  -  Configure MMA to point to:
+     - Azure Log Analytics IP as a proxy
+     - Microsoft Defender ATP workspace key & ID
 
-        -   MMA (Microsoft Monitoring Agent) point to MDATP Workspace key & ID
+## Azure virtual machines
+- Configure and enable [Azure Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
 
-    -   Offline Machines in the Same Network of OMS Gateway
+    - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
+      - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+      - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints-windows-defender-advanced-threat-protection#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-windows-defender-atp) point to Microsoft Defender ATP Workspace key & ID
+    - Offline Azure VMs in the same network of OMS Gateway
+      - Configure Azure Log Analytics IP as a proxy
+      - Azure Log Analytics Workspace Key & ID
 
-        -   MMA point to
+    - Azure Security Center (ASC)
+      - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [Threat Detection \> Allow Windows Defender ATP to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-            -   OMS Gateway IP as a proxy
-
-            -   MDATP Workspace Key & ID
-
--   *Azure VMs Machines:*
-
-    -   Configure and Enable Azure Log Analytics Workspace
-
-    -   Setup OMS Gateway Server to act as a proxy / hub
-
-        -   OMS Gateway Agent
-
-        -   MMA (Microsoft Monitoring Agent) point to Log Analytics Workspace
-            Key & ID
-
-    -   Offline Azure VMs in the same network of OMS Gateway
-
-        -   OMS Gateway IP as a proxy
-
-        -   Log Analytics Workspace Key & ID
-
-    -   Azure Security Center (ASC)
-
-        -   Security Policy \> Log Analytics Workspace
-
-        -   Threat Detection \> Allow Windows Defender ATP to access my data
+        For more information, see [Working with security policies](https://docs.microsoft.com/azure/security-center/tutorial-security-policy).
