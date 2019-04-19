@@ -345,6 +345,10 @@
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
 ###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
 
+##### Interoperability
+###### [Partner applications](windows-defender-atp/partner-applications.md)
+
+
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage roles](windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md)
@@ -389,7 +393,7 @@
 #####Rules
 ###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation allowed/blocked lists](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-###### [Manage allowed/blocked lists](windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage indicators](windows-defender-atp/manage-indicators.md)
 ###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
   
