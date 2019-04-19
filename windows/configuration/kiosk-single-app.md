@@ -171,8 +171,6 @@ Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 
 [Learn how to get the AppName](https://msdn.microsoft.com/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
 
-[Learn how to get the SID](https://go.microsoft.com/fwlink/p/?LinkId=615517).
-
 To remove assigned access, using PowerShell, run the following cmdlet.
 
 ```

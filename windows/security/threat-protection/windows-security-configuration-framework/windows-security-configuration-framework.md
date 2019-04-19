@@ -31,7 +31,7 @@ They can’t justify the investment in that very high level of security with an 
 As such, Microsoft is introducing a new taxonomy for security configurations for Windows 10. 
 This new security configuration framework, which we call the SECCON framework (remember "WarGames"?), organizes devices into one of 5 distinct security configurations.
 
-![SECCON Framework](./../images/seccon-framework.png)
+![SECCON Framework](images/seccon-framework.png)
 
 - [Level 5 Enterprise Security](level-5-enterprise-security.md) – We recommend this configuration as the minimum security configuration for an enterprise device. Recommendations for this level are generally straightforward and are designed to be deployable within 30 days.
 - [Level 4 Enterprise High Security](level-4-enterprise-high-security.md) – We recommend this configuration for devices where users access sensitive or confidential information. Some of the controls may have an impact to app compat, and therefore will often go through an audit-configure-enforce workflow. Recommendations for this level are generally accessible to most organizations and are designed to be deployable within 90 days.
@@ -51,7 +51,7 @@ Level 5 should be considered the minimum baseline for an enterprise device, and 
 
 The recommendations are grouped into three categories.
 
-![Security Control Classifications](./../images/security-control-classification.png)
+![Security Control Classifications](images/security-control-classification.png)
 
 
 ## Security control deployment methodologies
@@ -59,6 +59,6 @@ The recommendations are grouped into three categories.
 The way Microsoft recommends implementing these controls depends on the
 auditability of the control–there are two primary methodologies.
 
-![Security Control Deployment methodologies](./../images/security-control-deployment-methodologies.png) 
+![Security Control Deployment methodologies](images/security-control-deployment-methodologies.png) 
 
 
