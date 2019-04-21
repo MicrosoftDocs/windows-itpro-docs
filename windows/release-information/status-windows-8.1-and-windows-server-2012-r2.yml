@@ -74,6 +74,6 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border ='1'><tr bgcolor='#d4d7d8'><td>Details</td><td>Affected build</td><td>Status</td><td>History</td></tr>
+      <table border ='1'><colgroup><col width='530'><col width='100'><col width='100'><col width='100'></colgroup><tr bgcolor='#d4d7d8'><td>Details</td><td>Affected build</td><td>Status</td><td>History</td></tr>
       </table>
       "
