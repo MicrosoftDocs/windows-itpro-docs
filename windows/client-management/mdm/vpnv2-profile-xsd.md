@@ -132,7 +132,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="NativeProtocolType" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="L2tpPsk" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="DisableClassBasedDefaultRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
-              <xs:element maxOccurs="unbounded" name="CryptographySuite"minOccurs="0" maxOccurs="1">
+              <xs:element name="CryptographySuite" minOccurs="0" maxOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="AuthenticationTransformConstants" type="xs:string" minOccurs="0" maxOccurs="1"/>
