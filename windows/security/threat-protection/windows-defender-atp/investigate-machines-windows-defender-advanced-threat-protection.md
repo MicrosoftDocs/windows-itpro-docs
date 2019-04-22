@@ -83,45 +83,19 @@ The Security assessments tile shows the overall exposure level, security recomme
 
 The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity.
 
-![Image of alerts related to machine](images/alerts-machine.png)
+![Image of alerts related to the machine](images/alerts-machine.png)
 
 A fly out will appear when the circle icon to the left of an alert is selected. From this panel you can manage the alert and view more details such as related machines and. Multiple alerts can be selected at a time.
 
+To see a full page view of an alert including incident graph and process tree, select the title of the alert.
 
-## Machine timeline
+## Timeline
 
-The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
+The **Timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine. This can help you correlate any events, files, and IP addresses in relation to the machine.
 
-This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.  
+Timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.
 
-![Image of machine timeline with events](images/atp-machines-timeline.png)
-
-Windows Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
-
-### Search for specific events
-
-Use the search bar to look for specific timeline events. Harness the power of using the following defined search queries based on type:value pairs and event filter types to sift through the search results:
-
-- **Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. This search supports defined search queries based on type:value pairs.
-
-  You can use any of the following values:
-  - Hash: Sha1 or MD5
-  - File name
-  - File extension
-  - Path
-  - Command line
-  - User
-  - IP
-  - URL
-
-- **Informational level** – Click the drop-down button to filter by the following levels:
-  - Detections mode: displays Windows ATP Alerts and detections
-  - Behaviors mode: displays "detections" and selected events of interest
-  - Verbose mode: displays all raw events without aggregation or filtering
-
-- **Event type** - Click the drop-down button to filter by events such as Windows     - Windows Defender ATP alerts, Windows Defender Application Guard events, registry events, file events, and others.
-
-    Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
+To further control your view, you can filter by event groups or customize the columns.
 
 >[!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
@@ -130,27 +104,14 @@ Use the search bar to look for specific timeline events. Harness the power of us
 >- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 >- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-- **User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
-  - Logon users
-  - System
-  - Network
-  - Local service
+![Image of machine timeline with events](images/timeline-machine.png)
 
-The following example illustrates the use of type:value pair. The events were filtered by searching for the user jonathan.wolcott and network events as the event type:
+Some of the functionality includes:
 
-![Image of events filtered by user and event type](images/atp-machine-timeline-filter.png)
-
-The results in the timeline only show network communication events run in the defined user context.
-
-### Filter events from a specific date
-
-Use the time-based slider to filter events from a specific date. By default, the machine timeline is set to display the events of the current day.
-
-Using the slider updates the listed alerts to the date that you select. Displayed events are filtered from that date and older.
-
-The slider is helpful when you're investigating a particular alert on a machine. You can navigate from the **Alerts view** and click on the machine associated with the alert to jump to the specific date when the alert was observed, enabling you to investigate the events that took place around the alert.
-
-### Export machine timeline events
+- Search for specific events: Use the search bar to look for specific timeline events.
+- Filter events from a specific date
+  - Select the calendar icon in the upper left of the table to display events in the past day, week, 30 days, or custom range. By default, the machine timeline is set to display the events from the past 30 days.
+- Export machine timeline events
 
 You can also export detailed event data from the machine timeline to conduct offline analysis. You can choose to export the machine timeline for the current date or specify a date range. You can export up to seven days of data and specify the specific time between the two dates.
 
