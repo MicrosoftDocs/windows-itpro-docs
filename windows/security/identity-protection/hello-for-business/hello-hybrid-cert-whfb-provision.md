@@ -1,4 +1,4 @@
-﻿---
+---
 title: Hybrid Windows Hello for Business Provisioning (Windows Hello for Business)
 description: Provisioning for Hybrid Windows Hello for Business Deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
+author: mapalko
 ms.author: mstephen
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -18,7 +18,7 @@ ms.date: 08/19/2018
 # Hybrid Windows Hello for Business Provisioning
 
 **Applies to**
--   Windows 10, version 1703 or later
+-   Windows�10, version 1703 or later
 -   Hybrid deployment
 -   Certificate trust
 
@@ -65,7 +65,7 @@ After a successful key registration, Windows creates a certificate request using
   
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
 
-The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user  they can use their PIN to sign-in through the Windows Action Center.
+The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user�s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user  they can use their PIN to sign-in through the Windows Action Center.
 
 <br><br>
 
@@ -77,5 +77,5 @@ The certificate authority validates the certificate was signed by the registrati
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings-policy.md)
-6. Sign-in and Provision(*You are here*) 
+6. Sign-in and Provision(*You are here*) 
 
