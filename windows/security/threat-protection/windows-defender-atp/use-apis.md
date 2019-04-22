@@ -1,5 +1,5 @@
 ---
-title: Windows Defender ATP Public API 
+title: Windows Defender ATP APIs 
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, api, wdatp, open api, windows defender atp api, public api, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
@@ -14,10 +14,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 11/28/2018
 ---
 
-# Windows Defender ATP Public API
+# Windows Defender ATP APIs
 
 **Applies to:** 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
