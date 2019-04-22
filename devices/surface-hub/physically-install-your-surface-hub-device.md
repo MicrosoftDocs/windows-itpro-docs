@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Physically install Microsoft Surface Hub
 
 
-The Microsoft Surface Hub Readiness Guide will help make sure that your site is ready for the installation. You can download the Guide from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=718144). It includes planning information for both the 55" and 84" devices, as well as info on moving the Surface Hub from receiving to the installation location, mounting options, and a list of what's in the box.
+The [Microsoft Surface Hub Readiness Guide](surface-hub-site-readiness-guide.md) will help make sure that your site is ready for the installation. It includes planning information for both the 55" and 84" devices, as well as info on moving the Surface Hub from receiving to the installation location, mounting options, and a list of what's in the box.
 
 You may also want to check out the Unpacking Guide. It will show you how to unpack the devices efficiently and safely. There are two guides, one for the 55" and one for the 84". A printed version of the Unpacking Guide is attached to the outside front of each unit's shipping crate.
 

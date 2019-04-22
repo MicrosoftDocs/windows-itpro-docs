@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 04/01/2019
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
@@ -80,7 +80,7 @@ When the backup and restore function is used, it creates a copy of the file syst
 ### Countermeasure
 
 Enable the **Audit: Audit the use of Backup and Restore privilege** setting. Alternatively, implement automatic log backup by configuring the **AutoBackupLogFiles** registry key. If you enable this option when the [Audit privilege use](../auditing/basic-audit-privilege-use.md) setting is also enabled, an audit event is generated for every file that is backed up or restored. This information could help you to identify an account that was used to accidentally or maliciously restore data in an unauthorized manner.
-For more information about configuring this key, see Microsoft Knowledge Base article [100879](https://go.microsoft.com/fwlink/p/?LinkId=100879).
+For more information about configuring this key, see [Eventlog Key](https://docs.microsoft.com/windows/desktop/EventLog/eventlog-key).
 
 ### Potential impact
 

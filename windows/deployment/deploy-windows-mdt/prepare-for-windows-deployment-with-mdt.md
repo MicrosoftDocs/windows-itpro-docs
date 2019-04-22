@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Prepare for deployment with MDT
@@ -44,7 +45,10 @@ These steps assume that you have the MDT01 member server installed and configure
 3.  On the **Select the features you want to change** page, select the features below and complete the wizard using the default settings:
     1.  Deployment Tools
     2.  Windows Preinstallation Environment (Windows PE)
-    3.  User State Migration Tool (UMST)
+    3.  User State Migration Tool (USMT)
+
+    >[!IMPORTANT]
+    >Starting with Windows 10, version 1809, Windows PE is released separately from the ADK. See [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) for more information.
 
 ## <a href="" id="sec03"></a>Install MDT
 

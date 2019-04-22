@@ -40,7 +40,8 @@ New features and improvements | In update
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
 
-
+>[!TIP]
+>Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
@@ -49,6 +50,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
+<span id="provision" />
 ## Configure a kiosk using a provisioning package
 
 Process:
@@ -155,6 +157,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout). 
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
+- If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both "C:\Program Files\internet explorer\iexplore.exe" and “C:\Program Files (x86)\Internet Explorer\iexplore.exe”. 
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
 
 When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:   
@@ -504,14 +507,12 @@ Provisioning packages can be applied to a device during the first-run experience
 #### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
-2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
 ![add a package option](images/package.png)
-
-
 
 
 
@@ -525,6 +526,7 @@ Multi-app kiosk mode is enabled by the [AssignedAccess configuration service pro
 If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
 
 
 

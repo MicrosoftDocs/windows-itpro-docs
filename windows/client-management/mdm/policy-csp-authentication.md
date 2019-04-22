@@ -296,6 +296,8 @@ Added in Windows 10, version 1607. Allows secondary authentication devices to w
 
 The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
+In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This will only affect users that have not already set up a secondary authentication device.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  

@@ -8,6 +8,7 @@ ms.sitesec: library
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: greg-lindsay
+ms.topic: troubleshooting
 ---
  
 # Advanced troubleshooting 802.1X authentication

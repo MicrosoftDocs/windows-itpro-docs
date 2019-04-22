@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # How to deploy the App-V databases by using SQL scripts
 
@@ -175,9 +176,9 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     ScheduleReportingJob.sql
 ```
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

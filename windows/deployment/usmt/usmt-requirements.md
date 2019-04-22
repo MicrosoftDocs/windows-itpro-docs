@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 05/03/2017
+ms.topic: article
 ---
 
 # USMT Requirements

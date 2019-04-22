@@ -18,11 +18,14 @@ ms.date: 12/10/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
 Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+
+> [!NOTE]
+> Automatic exclusions apply only to Windows Server 2016 and above. 
 
 >[!TIP]
 >The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.

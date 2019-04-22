@@ -1,8 +1,8 @@
 ---
 title: Windows Defender Advanced Threat Protection
 description: Windows Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
-keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, secure score, advanced hunting, microsoft threat protection
-search.product: eADQiWindows 10XVcnh
+keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection
+search.product: Windows 10
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 11/07/2018
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -48,32 +47,35 @@ Windows Defender ATP uses the following combination of technology built into Win
 <center><h2>Windows Defender ATP</center></h2>
 <table>
 <tr>
-<td>
-<a href="#asr">
-<center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
+<td><a href="#asr"><center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
 <td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
-<td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
+<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
-<td colspan="6">
+<td colspan="7">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
 
 
-<a name="asr"></a>
-
-
 >[!TIP]
 >- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Windows Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
+<a name="tvm"></a>
+
+**[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)**<br>
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
+<a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
@@ -87,22 +89,22 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 **[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
 Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+You can also do advanced hunting to create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
 
 <a name="ai"></a>
 
 **[Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
-
 <a name="ss"></a>
 
 **[Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)**<br>
 Windows Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
-<a name="ah"></a>
+<a name="mte"></a>
 
-**[Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)**<br>
-Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
+Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
 
 <a name="apis"></a>
 

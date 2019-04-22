@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
@@ -67,7 +66,15 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
-2.  Select **Create a supression rule**.
+2.  Select **Create a suppression rule**.
+
+    You can create a suppression rule based on the following attributes:
+    
+    * File hash 
+    * File name - wild card supported
+    * File path - wild card supported
+    * IP
+    * URL - wild card supported
 
 3. Select the **Trigerring IOC**.
     

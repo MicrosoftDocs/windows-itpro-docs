@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 30/07/2018
 ---
 
 # Advanced Hunting using Python
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
@@ -65,7 +62,7 @@ aadToken = jsonResponse["access_token"]
 
 where
 - tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
+- appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Windows Defender ATP)
 - appSecret: Secret of your AAD app
 
 ## Run query

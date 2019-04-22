@@ -19,9 +19,7 @@ ms.date: 09/24/2018
 
 # Windows Defender ATP APIs using PowerShell
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Full scenario using multiple APIs from Windows Defender ATP.
@@ -48,7 +46,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 - Run the below
 
 > - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
+> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Windows Defender ATP)
 > - $appSecret: Secret of your AAD app
 > - $suspiciousUrl: The URL
 

@@ -21,7 +21,7 @@ ms.date: 11/20/2018
 # Get started with Windows Defender Advanced Threat Protection
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!TIP]
 >- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
@@ -30,6 +30,9 @@ ms.date: 11/20/2018
 Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
+
+**Threat & Vulnerability Management**<br>
+Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. This infrastructure correlates endpoint detection and response (EDR) insights with endpoint vulnerabilities real-time, thus reducing organizational vulnerability exposure and increasing threat resilience. 
 
 **Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 

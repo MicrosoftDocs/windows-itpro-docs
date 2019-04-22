@@ -9,6 +9,7 @@ ms.pagetype: mobility
 ms.sitesec: library
 author: mtniehaus
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Deployment considerations for Windows To Go

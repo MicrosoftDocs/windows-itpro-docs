@@ -10,7 +10,10 @@ ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot Enrollment Status page
 
@@ -59,7 +62,7 @@ The following types of policies and installations are not tracked:
 ## More information
 
 For more information on configuring the Enrollment Status page, see the [Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).<br>
-For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP docuementation](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).<br>
+For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).<br>
 For more information about blocking for app installation:
 - [Blocking for app installation using Enrollment Status Page](https://blogs.technet.microsoft.com/mniehaus/2018/12/06/blocking-for-app-installation-using-enrollment-status-page/).
 - [Support Tip: Office C2R installation is now tracked during ESP](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Office-C2R-installation-is-now-tracked-during-ESP/ba-p/295514).

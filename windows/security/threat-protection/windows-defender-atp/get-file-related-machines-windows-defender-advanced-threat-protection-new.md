@@ -14,16 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get file related machines API
 
 **Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Retrieves a collection of machines related to a given file hash.
 
@@ -98,7 +94,6 @@ Content-type: application/json
             "healthStatus": "Active",
             "rbacGroupId": 140,
             "riskScore": "Low",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2" ]
         },
@@ -116,7 +111,6 @@ Content-type: application/json
             "healthStatus": "Inactive",
 			"rbacGroupId": 140,
             "riskScore": "Low",
-			"isAadJoined": false,
             "aadDeviceId": null,
 			"machineTags": [ "test tag 1" ]
         }

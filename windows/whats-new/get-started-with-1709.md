@@ -9,6 +9,7 @@ author: DaniHalfin
 ms.author: daniha
 ms.date: 10/16/2017
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # Get started with Windows 10, version 1709

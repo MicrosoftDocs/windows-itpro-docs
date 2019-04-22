@@ -5,13 +5,14 @@ keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, d
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
 ms.topic: article
+search.appverid: met150
 ---
 
 # Top scoring in industry tests
@@ -40,7 +41,11 @@ Windows Defender Antivirus is  part of the  [next generation](https://www.youtub
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- November - December 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) <sup>**Latest**</sup>
+- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2019/microsoft-windows-defender-antivirus-4.18-190611/) <sup>**Latest**</sup>
+
+    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 19,956 malware samples used. This is the fifth consecutive cycle that Windows Defender Antivirus achieved a perfect score.
+
+- November - December 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWusR9)
 
     Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 19,956 malware samples.
 
@@ -113,5 +118,3 @@ It is important to remember that Microsoft sees a wider and broader set of threa
 The capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/windowsforbusiness?ocid=cx-docs-avreports) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into industry tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Windows Defender ATP creates a partial picture of how our security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Windows Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)  that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively our security suite protects customers in the real world.
 
 Using independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection?ocid=cx-docs-avreports).
-
-![ATP](./images/wdatp-pillars2.png)

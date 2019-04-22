@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # User Experience Virtualization (UE-V) for Windows 10 overview
@@ -94,6 +95,6 @@ You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-
 
 -   [Technical Reference for UE-V for Windows 10](uev-technical-reference.md)
 
-## Have a suggestion for UE-V?
+
 
 For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).

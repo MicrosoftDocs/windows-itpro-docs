@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 05/08/2018
 ---
 
 # Create and manage machine groups in Windows Defender ATP
@@ -24,7 +23,7 @@ ms.date: 05/08/2018
 
 - Azure Active Directory
 - Office 365
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -34,6 +33,9 @@ In Windows Defender ATP, you can create machine groups and use them to:
 - Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
 - Configure different auto-remediation settings for different sets of machines
 
+>[!TIP]
+> For a comprehensive look into RBAC application, read: [Is your SOC running flat with RBAC](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Is-your-SOC-running-flat-with-limited-RBAC/ba-p/320015).
+
 As part of the process of creating a machine group, you'll:
 - Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md).
 - Specify the matching rule that determines which machine group belongs to the group based on the machine name, domain, tags, and OS platform. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
@@ -42,6 +44,7 @@ As part of the process of creating a machine group, you'll:
 
 >[!NOTE]
 >A machine group is accessible to all users if you don’t assign any Azure AD groups to it.
+
 
 
 ## Create a machine group

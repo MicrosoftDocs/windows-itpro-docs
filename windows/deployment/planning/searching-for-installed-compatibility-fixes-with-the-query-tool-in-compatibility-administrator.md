@@ -8,6 +8,7 @@ ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator

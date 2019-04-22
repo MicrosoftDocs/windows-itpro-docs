@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/12/2017
 ---
 
 # Take response actions in Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -31,7 +30,7 @@ ms.date: 11/12/2017
 You can take response actions on machines and files to quickly respond to detected attacks so that you can contain or reduce and prevent further damage caused by malicious attackers in your organization.
 
 >[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703 or higher.
+> The machine related response actions are only available for machines on Windows 10 (version 1703 or higher), Windows Server, version 1803 and Windows Server 2019.
 
 ## In this section
 Topic | Description

@@ -8,6 +8,7 @@ ms.sitesec: library
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: mikeblodge
+ms.topic: troubleshooting
 ---
  
 # Data collection for troubleshooting 802.1X authentication

@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: mayam
 ms.date: 08/22/2017
 ROBOTS: noindex,nofollow
+ms.topic: article
 ---
 # Windows Autopilot EULA dismissal – important information
 

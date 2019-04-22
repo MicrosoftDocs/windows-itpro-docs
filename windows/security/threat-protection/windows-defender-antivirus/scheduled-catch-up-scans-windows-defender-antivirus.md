@@ -18,7 +18,7 @@ ms.date: 12/10/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
 > By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
@@ -75,7 +75,7 @@ Location | Setting | Description | Default setting (if not configured)
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
 Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
+Root | Randomize scheduled task times |In Windows Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 

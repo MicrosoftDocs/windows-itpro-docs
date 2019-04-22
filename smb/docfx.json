@@ -36,12 +36,14 @@
 		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "TechNet.smb"
+			  "depot_name": "TechNet.smb",
+			  "folder_relative_path_in_docset": "./"
 			}
 		}
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "smb"
+    "dest": "smb",
+    "markdownEngineName": "dfm"
   }
 }

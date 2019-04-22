@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/07/2018
 ---
 
 #  Run a detection test on a newly onboarded Windows Defender ATP machine 
@@ -26,7 +25,7 @@ ms.date: 09/07/2018
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Run the following PowerShell script on a newly onboarded machine to verify that it is properly reporting to the Windows Defender ATP service.

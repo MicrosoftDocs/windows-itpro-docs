@@ -10,6 +10,7 @@ ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
 author: AMeeus
 ms.date: 01/26/2019
+ms.topic: article
 ---
 
 # Windows 10 Mobile deployment and management guide

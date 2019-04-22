@@ -60,7 +60,7 @@ SDT for Business is supported on Surface 3 and later devices, including:
 To create an SDT package that you can distribute to users in your organization, you first need to install SDT at a command prompt and set a custom flag to install the tool in admin mode. SDT contains the following install option flags:
 
 - `SENDTELEMETRY` sends telemetry data to Microsoft. The flag accepts `0` for disabled or `1` for enabled. The default value is `1` to send telemetry.
-- `ADMINMODE` configures the tool to be installed in admin mode. The flag accepts `0` for Business client mode or `1` for Business Administrator mode. The default value is `0`.
+- `ADMINMODE` configures the tool to be installed in admin mode. The flag accepts `0` for client mode or `1` for IT Administrator mode. The default value is `0`.
 
 **To install SDT in ADMINMODE:**
 

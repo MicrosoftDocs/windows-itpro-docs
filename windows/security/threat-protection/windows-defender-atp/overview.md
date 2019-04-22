@@ -1,7 +1,7 @@
 ---
 title: Overview of Windows Defender ATP 
-description: 
-keywords: 
+description: Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform
+keywords: atp, microsoft defender atp, defender, mdatp, threat protection, platform, threat, vulnerability, asr, attack, surface, reduction, next-gen, protection, edr, endpoint, detection, response, automated, air
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 11/20/2018
 ---
 
 # Overview of Windows Defender ATP capabilities
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 
@@ -33,6 +32,7 @@ Understand the concepts behind the capabilities in Windows Defender ATP so you t
 
 Topic | Description 
 :---|:---
+[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) | Reduce organizational vulnerability exposure and increase threat resilience while seamlessly connecting workflows across security stakeholders—security administrators, security operations, and IT administrators in remediating threats.
 [Attack surface reduction](overview-attack-surface-reduction.md) | Leverage the attack surface reduction capabilities to protect the perimeter of your organization. 
 [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) | Learn about the antivirus capabilities in Windows Defender ATP so you can protect desktops, portable computers, and servers.
 [Endpoint detection and response](overview-endpoint-detection-response.md) | Understand how Windows Defender ATP continuously monitors your organization for possible attacks against systems, networks, or users in your organization and the features you can use to mitigate and remediate threats.

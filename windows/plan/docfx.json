@@ -32,7 +32,8 @@
     "globalMetadata": {
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "MSDN.windows-plan"
+			  "depot_name": "MSDN.windows-plan",
+			  "folder_relative_path_in_docset": "./"
 			}
 		}
 	},

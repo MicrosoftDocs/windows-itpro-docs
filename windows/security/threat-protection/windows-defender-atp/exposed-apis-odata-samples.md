@@ -14,18 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/15/2018
 ---
 
 # OData queries with Windows Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
-- If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
-- Not all properties are filterable.
+If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
+
+Not all properties are filterable.
 
 ### Properties that supports $filter:
 
@@ -64,7 +63,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -149,7 +147,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -191,7 +188,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -233,7 +229,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -276,6 +271,24 @@ Content-type: application/json
 		.
     ]
 }
+```
+
+### Example 7
+
+- Get the count of open alerts for a specific machine:
+
+```
+HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
+```
+
+**Response:**
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+
+4
+
 ```
 
 ## Related topic
