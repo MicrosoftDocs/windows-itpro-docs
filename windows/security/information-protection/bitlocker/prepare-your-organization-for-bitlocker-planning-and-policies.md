@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 04/17/2019
 ---
 
 # Prepare your organization for BitLocker: Planning and policies
@@ -163,9 +163,9 @@ Full drive encryption means that the entire drive will be encrypted, regardless 
 
 ## <a href="" id="bkmk-addscons"></a>Active Directory Domain Services considerations
 
-BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following Group Policy setting to enable backup of BitLocker recovery information:
+BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following Group Policy setting for each drive type to enable backup of BitLocker recovery information:
 
-Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Turn on BitLocker backup to Active Directory Domain Services
+Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\*drive type*\\Choose how BitLocker protected drives can be recovered.
 
 By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](https://blogs.technet.microsoft.com/craigf/2011/01/26/delegating-access-in-ad-to-bitlocker-recovery-information/).
 
