@@ -3692,6 +3692,69 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
+### <a href="" id="bkmk-Device_owners-"></a>Device Owners
+This group is currently unused on Windows. 
+
+Microsoft does not recommend changing the default configuration where this security group has zero members.  Changing the default configuration could hinder future scenarios that rely on this group.
+
+The Device Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Well-Known SID/RID</p></td>
+<td><p>S-1-5-32-583</p></td>
+</tr>
+<tr class="even">
+<td><p>Type</p></td>
+<td><p>BuiltIn Local</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default container</p></td>
+<td><p>CN=BuiltIn, DC=&lt;domain&gt;, DC=</p></td>
+</tr>
+<tr class="even">
+<td><p>Default members</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default member of</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="even">
+<td><p>Protected by ADMINSDHOLDER?</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Safe to move out of default container?</p></td>
+<td><p>Can be moved out but it is not recommended</p></td>
+</tr>
+<tr class="even">
+<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default User Rights</p></td>
+<td><p>[Allow log on locally](/windows/device-security/security-policy-settings/allow-log-on-locally): SeInteractiveLogonRight</p>
+<p>[Access this computer from the network](/windows/device-security/security-policy-settings/access-this-computer-from-the-network): SeNetworkLogonRight</p>
+<p>[Bypass traverse checking](/windows/device-security/security-policy-settings/bypass-traverse-checking): SeChangeNotifyPrivilege</p>
+<p>[Change the time zone](/windows/device-security/security-policy-settings/change-the-time-zone): SeTimeZonePrivilege</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ## See also
 
 - [Security Principals](security-principals.md)
