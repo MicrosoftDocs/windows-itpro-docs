@@ -31,6 +31,19 @@ sections:
 - items:
   - type: markdown
     text: "
+	<table width=\"100%\" cellspacing=\"8\" cellpadding=\"0\" border=\"0\" align=\"center\" bgcolor=\"#999999\">
+<tr bgcolor=\"#ffffff\">
+<td width=\"33%\" height=\"67\">&nbsp;</td>
+<td width=\"34%\">HTML table borders without CSS</td>
+<td width=\"33%\">&nbsp;</td>
+</tr>
+<tr bgcolor=\"#ffffff\">
+<td height=\"67\">cellspacing=\"8\"</td>
+<td>&nbsp;</td>
+<td>bgcolor=\"#999999\"</td>
+</tr>
+</table>
+<br>
       <table border ='1'><tr bgcolor='#d4d7d8'><td>Summary</td><td>Affected build</td><td>Status</td><td>Date resolved</td></tr>
       <tr><td><div id='53msg'></div><b>Internet Explorer may fail to load images</b><br>Internet Explorer may fail to load images with a backslash (\\) in their relative source path.<br><br><a href = '#53msgdesc'>See details ></a></td><td>OS Build 17763.316<br><br>February 12, 2019<br><a href ='https://support.microsoft.com/en-us/help/4487044' target='_blank'>KB4487044</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4482887' target='_blank'>KB4482887</a></td><td>March 01, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='69msg'></div><b>Error 1309 when installing/uninstalling MSI or MSP files</b><br>Users may receive \"Error 1309\" while installing or uninstalling certain types of MSI and MSP files.<br><br><a href = '#69msgdesc'>See details ></a></td><td>OS Build 17763.316<br><br>February 12, 2019<br><a href ='https://support.microsoft.com/en-us/help/4487044' target='_blank'>KB4487044</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4489899' target='_blank'>KB4489899</a></td><td>March 12, 2019 10:00 AM PT</td></tr>
