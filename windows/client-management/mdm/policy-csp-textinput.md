@@ -1502,15 +1502,6 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--StartHoloLens-->
-  
-## <a href="" id="hololenspolicies"></a>TextInput policies supported by Windows Holographic for Business
-
-- [TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)<sup>5</sup>
-
-<!--EndHoloLens-->
-<hr/>
-
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub
 
