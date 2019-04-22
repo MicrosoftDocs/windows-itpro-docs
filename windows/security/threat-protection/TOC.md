@@ -228,6 +228,7 @@
 ####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp/configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ###### [Onboard servers](windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard non-Windows machines](windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines without Internet access](windows-defender-atp/onboard-offline-machines.md)
 ###### [Run a detection test on a newly onboarded machine](windows-defender-atp/run-detection-test-windows-defender-advanced-threat-protection.md)
 ###### [Run simulated attacks on machines](windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection.md)
 ###### [Configure proxy and Internet connectivity settings](windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection.md)
