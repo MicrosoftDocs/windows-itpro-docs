@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 04/18/2019
 ---
 
 # Policy CSP - Wifi
@@ -99,17 +99,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
--   GP name: *WiFiSense*
--   GP path: *Network/WLAN Service/WLAN Settings*
--   GP ADMX file name: *wlansvc.admx*
+- GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
+- GP name: *WiFiSense*
+- GP path: *Network/WLAN Service/WLAN Settings*
+- GP ADMX file name: *wlansvc.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -159,17 +159,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
--   GP name: *NC_ShowSharedAccessUI*
--   GP path: *Network/Network Connections*
--   GP ADMX file name: *NetworkConnections.admx*
+- GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
+- GP name: *NC_ShowSharedAccessUI*
+- GP path: *Network/Network Connections*
+- GP ADMX file name: *NetworkConnections.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow the use of Internet Sharing.
--   1 (default) – Allow the use of Internet Sharing.
+- 0 – Do not allow the use of Internet Sharing.
+- 1 (default) – Allow the use of Internet Sharing.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -223,8 +223,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – No Wi-Fi connection outside of MDM provisioned network is allowed.
--   1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
+- 0 – No Wi-Fi connection outside of MDM provisioned network is allowed.
+- 1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -275,8 +275,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – WiFi connection is not allowed.
--   1 (default) – WiFi connection is allowed.
+- 0 – WiFi connection is not allowed.
+- 1 (default) – WiFi connection is allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -379,36 +379,48 @@ Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Wifi policies that can be set using Exchange Active Sync (EAS)  
 
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic
+
+- [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)<sup>5</sup>
+  
+## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic for Business
+
+- [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)<sup>5</sup>
+  
+<!--EndHoloLens-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Wifi policies supported by IoT Core  
 
--   [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
--   [Wifi/WLANScanMode](#wifi-wlanscanmode)  
+- [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
+- [Wifi/WLANScanMode](#wifi-wlanscanmode)  
 <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Wifi policies supported by Microsoft Surface Hub  
 
--   [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
+- [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
 <!--EndSurfaceHub-->
 
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

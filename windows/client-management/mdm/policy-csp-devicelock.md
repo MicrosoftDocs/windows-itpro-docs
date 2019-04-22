@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - DeviceLock
@@ -127,8 +127,8 @@ Specifies whether the user must input a PIN or password when the device resumes 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -187,8 +187,8 @@ Specifies whether to show a user-configurable setting to control the screen time
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+- 0 (default) – Not allowed.
+- 1 – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -244,8 +244,8 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -306,9 +306,9 @@ Determines the type of PIN required. This policy only applies if the **DeviceLoc
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Password or Alphanumeric PIN required.
--   1 – Password or Numeric PIN required.
--   2 (default) – Password, Numeric PIN, or Alphanumeric PIN required.
+- 0 – Password or Alphanumeric PIN required.
+- 1 – Password or Numeric PIN required.
+- 2 (default) – Password, Numeric PIN, or Alphanumeric PIN required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -363,24 +363,24 @@ Specifies whether device lock is enabled.
 > [!IMPORTANT]
 > The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
 >
-> -   AllowSimpleDevicePassword
-> -   MinDevicePasswordLength
-> -   AlphanumericDevicePasswordRequired
-> -   MaxDevicePasswordFailedAttempts
-> -   MaxInactivityTimeDeviceLock
-> -   MinDevicePasswordComplexCharacters
+> - AllowSimpleDevicePassword
+> - MinDevicePasswordLength
+> - AlphanumericDevicePasswordRequired
+> - MaxDevicePasswordFailedAttempts
+> - MaxInactivityTimeDeviceLock
+> - MinDevicePasswordComplexCharacters
 &nbsp;
 
 > [!IMPORTANT]
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
 >
-> -   MinDevicePasswordLength is set to 4
-> -   MinDevicePasswordComplexCharacters is set to 1
+> - MinDevicePasswordLength is set to 4
+> - MinDevicePasswordComplexCharacters is set to 1
 >
 > If **DevicePasswordEnabled** is set to 1 (device password is disabled), then the following DeviceLock policies are set to 0:
 >
-> -   MinDevicePasswordLength
-> -   MinDevicePasswordComplexCharacters
+> - MinDevicePasswordLength
+> - MinDevicePasswordComplexCharacters
 
 > [!Important]
 > **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
@@ -398,8 +398,8 @@ Specifies whether device lock is enabled.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Enabled
--   1 – Disabled
+- 0 (default) – Enabled
+- 1 – Disabled
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -457,8 +457,8 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 0 &lt;= X &lt;= 730.
--   0 (default) - Passwords do not expire.
+- An integer X where 0 &lt;= X &lt;= 730.
+- 0 (default) - Passwords do not expire.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -516,8 +516,8 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 0 &lt;= X &lt;= 50.
--   0 (default)
+- An integer X where 0 &lt;= X &lt;= 50.
+- 0 (default)
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -666,8 +666,8 @@ The number of authentication failures allowed before the device will be wiped. A
 
 This policy has different behaviors on the mobile device and desktop.
 
--   On a mobile device, when the user reaches the value set by this policy, then the device is wiped.
--   On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced.
+- On a mobile device, when the user reaches the value set by this policy, then the device is wiped.
+- On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced.
 
     Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key.
 
@@ -680,8 +680,8 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 4 &lt;= X &lt;= 16 for desktop and 0 &lt;= X &lt;= 999 for mobile devices.
--   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
+- An integer X where 4 &lt;= X &lt;= 16 for desktop and 0 &lt;= X &lt;= 999 for mobile devices.
+- 0 (default) - The device is never wiped after an incorrect PIN or password is entered.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -740,8 +740,8 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 0 &lt;= X &lt;= 999.
--   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
+- An integer X where 0 &lt;= X &lt;= 999.
+- 0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -793,8 +793,8 @@ Specifies the maximum amount of time (in minutes) allowed after the device is id
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 0 &lt;= X &lt;= 999.
--   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
+- An integer X where 0 &lt;= X &lt;= 999.
+- 0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -846,10 +846,10 @@ The number of complex element types (uppercase and lowercase letters, numbers, a
 
 PIN enforces the following behavior for desktop and mobile devices:
 
--   1 - Digits only
--   2 - Digits and lowercase letters are required
--   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
--   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
+- 1 - Digits only
+- 2 - Digits and lowercase letters are required
+- 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
+- 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
 
 The default value is 1. The following list shows the supported values and actual enforced values:
 
@@ -894,17 +894,17 @@ The default value is 1. The following list shows the supported values and actual
 
 Enforced values for Local and Microsoft Accounts:
 
--   Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
--   Passwords for local accounts must meet the following minimum requirements:
+- Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
+- Passwords for local accounts must meet the following minimum requirements:
 
-    -   Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
-    -   Be at least six characters in length
-    -   Contain characters from three of the following four categories:
+    - Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
+    - Be at least six characters in length
+    - Contain characters from three of the following four categories:
 
-        -   English uppercase characters (A through Z)
-        -   English lowercase characters (a through z)
-        -   Base 10 digits (0 through 9)
-        -   Special characters (!, $, \#, %, etc.)
+        - English uppercase characters (A through Z)
+        - English lowercase characters (a through z)
+        - Base 10 digits (0 through 9)
+        - Special characters (!, $, \#, %, etc.)
 
 The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
@@ -968,9 +968,9 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   An integer X where 4 &lt;= X &lt;= 16 for mobile devices and desktop. However, local accounts will always enforce a minimum password length of 6.
--   Not enforced.
--   The default value is 4 for mobile devices and desktop devices.
+- An integer X where 4 &lt;= X &lt;= 16 for mobile devices and desktop. However, local accounts will always enforce a minimum password length of 6.
+- Not enforced.
+- The default value is 4 for mobile devices and desktop devices.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1022,8 +1022,8 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Minimum password age*
--   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
+- GP English name: *Minimum password age*
+- GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
 
 <!--/DbMapped-->
 <!--/Policy-->
@@ -1082,10 +1082,10 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen camera*
--   GP name: *CPL_Personalization_NoLockScreenCamera*
--   GP path: *Control Panel/Personalization*
--   GP ADMX file name: *ControlPanelDisplay.admx*
+- GP English name: *Prevent enabling lock screen camera*
+- GP name: *CPL_Personalization_NoLockScreenCamera*
+- GP path: *Control Panel/Personalization*
+- GP ADMX file name: *ControlPanelDisplay.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -1144,10 +1144,10 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen slide show*
--   GP name: *CPL_Personalization_NoLockScreenSlideshow*
--   GP path: *Control Panel/Personalization*
--   GP ADMX file name: *ControlPanelDisplay.admx*
+- GP English name: *Prevent enabling lock screen slide show*
+- GP name: *CPL_Personalization_NoLockScreenSlideshow*
+- GP path: *Control Panel/Personalization*
+- GP ADMX file name: *ControlPanelDisplay.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -1205,14 +1205,42 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)<sup>5</sup>
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)<sup>5</sup>
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)<sup>5</sup>
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)<sup>5</sup>
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)<sup>5</sup> 
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)<sup>5</sup>
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)<sup>5</sup>
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)<sup>5</sup>
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)<sup>5</sup>
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)<sup>5</sup>
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)<sup>5</sup>
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)<sup>5</sup>
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)<sup>5</sup>
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)<sup>5</sup>
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)<sup>5</sup>
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)<sup>5</sup>
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)<sup>5</sup>
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)<sup>5</sup>
+
+
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+-  5 - Added in Windows 10, version 1809.

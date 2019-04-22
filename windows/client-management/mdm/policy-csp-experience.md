@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Experience
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -146,10 +146,10 @@ Value type is integer. Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Allow Clipboard History*
--   GP name: *AllowClipboardHistory*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
+- GP English name: *Allow Clipboard History*
+- GP name: *AllowClipboardHistory*
+- GP path: *System/OS Policies*
+- GP ADMX file name: *OSPolicy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -219,8 +219,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -270,17 +270,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Allow Cortana*
--   GP name: *AllowCortana*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow Cortana*
+- GP name: *AllowCortana*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -333,8 +333,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -386,17 +386,17 @@ When Find My Device is off, the device and its location are not registered and t
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn On/Off Find My Device*
--   GP name: *FindMy_AllowFindMyDeviceConfig*
--   GP path: *Windows Components/Find My Device*
--   GP ADMX file name: *FindMy.admx*
+- GP English name: *Turn On/Off Find My Device*
+- GP name: *FindMy_AllowFindMyDeviceConfig*
+- GP path: *Windows Components/Find My Device*
+- GP ADMX file name: *FindMy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -451,8 +451,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -505,8 +505,8 @@ Specifies whether to display dialog prompt when no SIM card is detected.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – SIM card dialog prompt is not displayed.
--   1 (default) – SIM card dialog prompt is displayed.
+- 0 – SIM card dialog prompt is not displayed.
+- 1 (default) – SIM card dialog prompt is displayed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -581,8 +581,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -651,8 +651,8 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Sync settings is not allowed.
--   1 (default) – Sync settings allowed.
+- 0 – Sync settings is not allowed.
+- 1 (default) – Sync settings allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -709,17 +709,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Do not use diagnostic data for tailored experiences*
--   GP name: *DisableTailoredExperiencesWithDiagnosticData*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Do not use diagnostic data for tailored experiences*
+- GP name: *DisableTailoredExperiencesWithDiagnosticData*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -772,8 +772,8 @@ Allows or disallows task switching on the device.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Task switching not allowed.
--   1 (default) – Task switching allowed.
+- 0 – Task switching not allowed.
+- 1 (default) – Task switching allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -825,17 +825,17 @@ Specifies whether to allow app and content suggestions from third-party software
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Do not suggest third-party content in Windows spotlight*
--   GP name: *DisableThirdPartySuggestions*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Do not suggest third-party content in Windows spotlight*
+- GP name: *DisableThirdPartySuggestions*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Third-party suggestions not allowed.
--   1 (default) – Third-party suggestions allowed.
+- 0 – Third-party suggestions not allowed.
+- 1 (default) – Third-party suggestions allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -890,8 +890,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -945,17 +945,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off Microsoft consumer experiences*
--   GP name: *DisableWindowsConsumerFeatures*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Turn off Microsoft consumer experiences*
+- GP name: *DisableWindowsConsumerFeatures*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 – Allowed.
+- 0 – Not allowed.
+- 1 – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1009,17 +1009,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off all Windows spotlight features*
--   GP name: *DisableWindowsSpotlightFeatures*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Turn off all Windows spotlight features*
+- GP name: *DisableWindowsSpotlightFeatures*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1072,17 +1072,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off Windows Spotlight on Action Center*
--   GP name: *DisableWindowsSpotlightOnActionCenter*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Turn off Windows Spotlight on Action Center*
+- GP name: *DisableWindowsSpotlightOnActionCenter*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1134,17 +1134,17 @@ Added in Windows 10, version 1803. This policy allows IT admins to turn off Sugg
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off Windows Spotlight on Settings*
--   GP name: *DisableWindowsSpotlightOnSettings*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Turn off Windows Spotlight on Settings*
+- GP name: *DisableWindowsSpotlightOnSettings*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Not allowed.
--   1 - Allowed.
+- 0 - Not allowed.
+- 1 - Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1198,17 +1198,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off the Windows Welcome Experience*
--   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Turn off the Windows Welcome Experience*
+- GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1256,17 +1256,17 @@ Enables or disables Windows Tips / soft landing.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Do not show Windows tips*
--   GP name: *DisableSoftLanding*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Do not show Windows tips*
+- GP name: *DisableSoftLanding*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disabled.
--   1 (default) – Enabled.
+- 0 – Disabled.
+- 1 (default) – Enabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1318,18 +1318,18 @@ Allows IT admins to specify whether spotlight should be used on the user's lock 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Configure Windows spotlight on lock screen*
--   GP name: *ConfigureWindowsSpotlight*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+- GP English name: *Configure Windows spotlight on lock screen*
+- GP name: *ConfigureWindowsSpotlight*
+- GP path: *Windows Components/Cloud Content*
+- GP ADMX file name: *CloudContent.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – None.
--   1 (default) – Windows spotlight enabled.
--   2 – placeholder only for future extension. Using this value has no effect.
+- 0 – None.
+- 1 (default) – Windows spotlight enabled.
+- 2 – placeholder only for future extension. Using this value has no effect.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1381,17 +1381,17 @@ If you disable or do not configure this policy setting, users can control how of
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Do not show feedback notifications*
--   GP name: *DoNotShowFeedbackNotifications*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *FeedbackNotifications.admx*
+- GP English name: *Do not show feedback notifications*
+- GP name: *DoNotShowFeedbackNotifications*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *FeedbackNotifications.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
--   1 – Feedback notifications are disabled.
+- 0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
+- 1 – Feedback notifications are disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1442,10 +1442,10 @@ Related policy:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Do not sync browser settings*
--   GP name: *DisableWebBrowserSettingSync*
--   GP path: *Windows Components/Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+- GP English name: *Do not sync browser settings*
+- GP name: *DisableWebBrowserSettingSync*
+- GP path: *Windows Components/Sync your settings*
+- GP ADMX file name: *SettingSync.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -1529,10 +1529,10 @@ Related policy:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Prevent users from turning on browser syncing*
--   GP name: *PreventUsersFromTurningOnBrowserSyncing*
--   GP path: *Windows Components/Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+- GP English name: *Prevent users from turning on browser syncing*
+- GP name: *PreventUsersFromTurningOnBrowserSyncing*
+- GP path: *Windows Components/Sync your settings*
+- GP ADMX file name: *SettingSync.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -1569,17 +1569,26 @@ Validation procedure:
 <!--/Validation-->
 <!--/Policy-->
 
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic
+
+- [Experience/AllowCortana](#experience-allowcortana)<sup>5</sup>
+  
+## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business
+
+- [Experience/AllowCortana](#experience-allowcortana)<sup>5</sup>
+  
+ <!--EndHoloLens-->
+
 <hr/>
 
-Footnote:
+Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
-
-<!--/Policies-->
-
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/15/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Bluetooth
@@ -88,8 +88,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral.
--   1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
+- 0 – Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral.
+- 1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -142,8 +142,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device.
--   1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
+- 0 – Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device.
+- 1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -192,8 +192,8 @@ Specifies whether to allow specific bundled Bluetooth peripherals to automatical
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default)– Allowed.
+- 0 – Not allowed.
+- 1 (default)– Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -242,8 +242,8 @@ Added in Windows 10, version 1803. This policy allows the IT admin to block user
 <!--SupportedValues-->
 The following list shows the supported values:  
 
--   0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
--   1 - Allow (default). Allow users on these managed devices to use Swift Pair and other proximity based scenarios
+- 0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
+- 1 - Allow (default). Allow users on these managed devices to use Swift Pair and other proximity based scenarios
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -339,16 +339,32 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)<sup>5</sup>
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)<sup>5</sup>
+- [Bluetooth/Bluetooth/LocalDeviceName](#bluetooth-localdevicename)<sup>5</sup>
+
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)<sup>5</sup>
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)<sup>5</sup>
+- [Bluetooth/Bluetooth/LocalDeviceName](#bluetooth-localdevicename)<sup>5</sup>
+
+<!--EndHoloLens-->
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
 
 ## ServicesAllowedList usage guide
 

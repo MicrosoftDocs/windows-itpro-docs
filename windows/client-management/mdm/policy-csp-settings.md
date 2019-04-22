@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/09/2018
+ms.date: 04/18/2019
 ---
 
 # Policy CSP - Settings
@@ -115,8 +115,8 @@ Allows the user to change Auto Play settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -165,8 +165,8 @@ Allows the user to change Data Sense settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -215,8 +215,8 @@ Allows the user to change date and time settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -265,8 +265,8 @@ Allows editing of the device name.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -319,8 +319,8 @@ Allows the user to change the language settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -370,11 +370,11 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Online Tips*
--   GP name: *AllowOnlineTips*
--   GP element: *CheckBox_AllowOnlineTips*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+- GP English name: *Allow Online Tips*
+- GP name: *AllowOnlineTips*
+- GP element: *CheckBox_AllowOnlineTips*
+- GP path: *Control Panel*
+- GP ADMX file name: *ControlPanel.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -427,8 +427,8 @@ Allows the user to change power and sleep settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -481,8 +481,8 @@ Allows the user to change the region settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -535,8 +535,8 @@ Allows the user to change sign-in options.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -585,8 +585,8 @@ Allows the user to change VPN settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -639,8 +639,8 @@ Allows user to change workplace settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -689,8 +689,8 @@ Allows user to change account settings.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -738,19 +738,19 @@ Added in Windows 10, version 1703.  Allows IT Admins to configure the default se
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show additional calendar*
--   GP name: *ConfigureTaskbarCalendar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+- GP English name: *Show additional calendar*
+- GP name: *ConfigureTaskbarCalendar*
+- GP path: *Start Menu and Taskbar*
+- GP ADMX file name: *Taskbar.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – User will be allowed to configure the setting.
--   1  – Don't show additional calendars.
--   2  - Simplified Chinese (Lunar).
--   3  - Traditional Chinese (Lunar).
+- 0 (default) – User will be allowed to configure the setting.
+- 1  – Don't show additional calendars.
+- 2  - Simplified Chinese (Lunar).
+- 3  - Traditional Chinese (Lunar).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -804,11 +804,11 @@ If the policy is not specified, the behavior will be that no pages are affected.
 
 The format of the PageVisibilityList value is as follows:
 
--   The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
--   There are two variants: one that shows only the given pages and one which hides the given pages.
--   The first variant starts with the string "showonly:" and the second with the string "hide:".
--	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
--   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
+- The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
+- There are two variants: one that shows only the given pages and one which hides the given pages.
+- The first variant starts with the string "showonly:" and the second with the string "hide:".
+- Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
+- Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
 
 The default value for this setting is an empty string, which is interpreted as show everything.
 
@@ -823,32 +823,44 @@ hide:network-wifi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Settings Page Visibility*
--   GP name: *SettingsPageVisibility*
--   GP element: *SettingsPageVisibilityBox*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+- GP English name: *Settings Page Visibility*
+- GP name: *SettingsPageVisibility*
+- GP element: *SettingsPageVisibilityBox*
+- GP path: *Control Panel*
+- GP ADMX file name: *ControlPanel.admx*
 
 <!--/ADMXMapped-->
 <!--Validation-->
 To validate on Desktop, do the following:
 
-1.   Open System Settings and verfiy that the About page is visible and accessible.
-2.   Configure the policy with the following string: "hide:about".
-3.   Open System Settings again and verify that the About page is no longer accessible.
+1. Open System Settings and verfiy that the About page is visible and accessible.
+2. Configure the policy with the following string: "hide:about".
+3. Open System Settings again and verify that the About page is no longer accessible.
 
 <!--/Validation-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Settings policies supported by Windows Holographic
 
+- [Settings/AllowDateTime](#settings-allowdatetime)<sup>5</sup>
+- [Settings/AllowVPN](#settings-allowvpn)<sup>5</sup>
 
+## <a href="" id="hololenspolicies"></a>Settings policies supported by Windows Holographic for Business
+
+- [Settings/AllowDateTime](#settings-allowdatetime)<sup>5</sup>
+- [Settings/AllowVPN](#settings-allowvpn)<sup>5</sup>
+  
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

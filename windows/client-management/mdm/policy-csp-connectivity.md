@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Connectivity
@@ -118,9 +118,9 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
--   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
--   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
+- 0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
+- 1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
+- 2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -169,9 +169,9 @@ Allows the cellular data channel on the device. Device reboot is not required to
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
--   1 (default) – Allow the cellular data channel. The user can turn it off.
--   2 - Allow the cellular data channel. The user cannot turn it off.
+- 0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+- 1 (default) – Allow the cellular data channel. The user can turn it off.
+- 2 - Allow the cellular data channel. The user cannot turn it off.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -221,18 +221,18 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prohibit connection to roaming Mobile Broadband networks*
--   GP name: *WCM_DisableRoaming*
--   GP path: *Network/Windows Connection Manager*
--   GP ADMX file name: *WCM.admx*
+- GP English name: *Prohibit connection to roaming Mobile Broadband networks*
+- GP name: *WCM_DisableRoaming*
+- GP path: *Network/Windows Connection Manager*
+- GP ADMX file name: *WCM.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
--   1 (default) – Allow cellular data roaming.
--   2 - Allow cellular data roaming on. The user cannot turn it off.
+- 0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+- 1 (default) – Allow cellular data roaming.
+- 2 - Allow cellular data roaming on. The user cannot turn it off.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -294,8 +294,8 @@ Added in Windows 10, version 1703. Allows IT Admins the ability to disable the C
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   1 (default) - Allow (CDP service available).
--   0 - Disable (CDP service not available).
+- 1 (default) - Allow (CDP service available).
+- 0 - Disable (CDP service not available).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -350,8 +350,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow NFC capabilities.
--   1 (default) – Allow NFC capabilities.
+- 0 – Do not allow NFC capabilities.
+- 1 (default) – Allow NFC capabilities.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -402,8 +402,8 @@ If you do not configure this policy setting, the default behavior depends on the
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *enableMMX*
--   GP ADMX file name: *grouppolicy.admx*
+- GP name: *enableMMX*
+- GP ADMX file name: *grouppolicy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -475,8 +475,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -527,8 +527,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – VPN is not allowed over cellular.
--   1 (default) – VPN can use any connection, including cellular.
+- 0 – VPN is not allowed over cellular.
+- 1 (default) – VPN can use any connection, including cellular.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -579,8 +579,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -645,10 +645,10 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off printing over HTTP*
--   GP name: *DisableHTTPPrinting_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+- GP English name: *Turn off printing over HTTP*
+- GP name: *DisableHTTPPrinting_2*
+- GP path: *Internet Communication settings*
+- GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -711,10 +711,10 @@ If you disable or do not configure this policy setting, users can download print
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off downloading of print drivers over HTTP*
--   GP name: *DisableWebPnPDownload_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+- GP English name: *Turn off downloading of print drivers over HTTP*
+- GP name: *DisableWebPnPDownload_2*
+- GP path: *Internet Communication settings*
+- GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -777,10 +777,10 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
--   GP name: *ShellPreventWPWDownload_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+- GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
+- GP name: *ShellPreventWPWDownload_2*
+- GP path: *Internet Communication settings*
+- GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -830,10 +830,10 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Windows Network Connectivity Status Indicator active tests*
--   GP name: *NoActiveProbe*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+- GP English name: *Turn off Windows Network Connectivity Status Indicator active tests*
+- GP name: *NoActiveProbe*
+- GP path: *Internet Communication settings*
+- GP ADMX file name: *ICM.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -890,10 +890,10 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hardened UNC Paths*
--   GP name: *Pol_HardenedPaths*
--   GP path: *Network/Network Provider*
--   GP ADMX file name: *networkprovider.admx*
+- GP English name: *Hardened UNC Paths*
+- GP name: *Pol_HardenedPaths*
+- GP path: *Network/Network Provider*
+- GP ADMX file name: *networkprovider.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -954,23 +954,35 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
--   GP name: *NC_AllowNetBridge_NLA*
--   GP path: *Network/Network Connections*
--   GP ADMX file name: *NetworkConnections.admx*
+- GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
+- GP name: *NC_AllowNetBridge_NLA*
+- GP path: *Network/Network Connections*
+- GP ADMX file name: *NetworkConnections.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Connectivity policies supported by Windows Holographic
 
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)<sup>5</sup>
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)<sup>5</sup> 
 
+## <a href="" id="hololenspolicies"></a>Connectivity policies supported by Windows Holographic for Business
+
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)<sup>5</sup>
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)<sup>5</sup>
+  
+ <!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

@@ -1497,18 +1497,19 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
+
+<hr/>
+
+<!--StartHoloLens-->
+  
+## <a href="" id="hololenspolicies"></a>TextInput policies supported by Windows Holographic for Business
+
+- [TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)<sup>5</sup>
+
+<!--EndHoloLens-->
+<hr/>
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub
@@ -1525,3 +1526,14 @@ Footnote:
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
 <!--EndSurfaceHub-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.
