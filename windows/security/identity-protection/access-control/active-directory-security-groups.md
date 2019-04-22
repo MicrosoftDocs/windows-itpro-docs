@@ -1215,7 +1215,7 @@ This security group includes the following changes since Windows Server 2008:
 </tbody>
 </table>
 
-### <a href="" id="bkmk-device-owners-"></a>Device Owners
+### <a href="" id="bkmk-device-owners"></a>Device Owners
 This group is not currently used in Windows. 
 
 Microsoft does not recommend changing the default configuration where this security group has zero members. Changing the default configuration could hinder future scenarios that rely on this group.
