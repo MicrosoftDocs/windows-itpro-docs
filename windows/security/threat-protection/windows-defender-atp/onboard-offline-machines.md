@@ -20,7 +20,6 @@ ms.topic: article
 # Onboard machines without Internet access to Windows Defender ATP 
 
 **Applies to:**
-
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 To onboard machines without Internet access, you'll need to take the following general steps:

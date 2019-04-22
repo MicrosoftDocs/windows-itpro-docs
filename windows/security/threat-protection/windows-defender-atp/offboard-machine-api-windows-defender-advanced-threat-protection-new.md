@@ -20,8 +20,6 @@ ms.topic: article
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 Offboard machine from Windows Defender ATP.
 
 [!include[Machine actions note](machineactionsnote.md)]
