@@ -17,7 +17,6 @@ ms.topic: article
 ---
 
 # List machines API
-
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

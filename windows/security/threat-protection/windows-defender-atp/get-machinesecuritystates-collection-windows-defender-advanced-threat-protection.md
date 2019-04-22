@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article 
-ms.date: 10/07/2018
 ---
 
 # Get Machines security states collection API
