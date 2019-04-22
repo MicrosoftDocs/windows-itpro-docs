@@ -19,14 +19,7 @@ ms.date: 12/08/2017
 
 # Get file statistics API
 **Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
-
-
-
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves the prevalence for the given file.
 

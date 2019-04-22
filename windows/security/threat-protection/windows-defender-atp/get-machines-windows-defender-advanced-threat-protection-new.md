@@ -21,12 +21,14 @@ ms.topic: article
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+
+This API can do the following actions:
 
 - Retrieves a collection of machines that have communicated with  Windows Defender ATP cloud on the last 30 days.
 - Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
 - The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore", "MachineTags" and "RbacGroupId".
-- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
+
+See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 

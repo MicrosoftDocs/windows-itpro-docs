@@ -14,18 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/15/2018
 ---
 
 # OData queries with Windows Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
-- If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
-- Not all properties are filterable.
+If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
+
+Not all properties are filterable.
 
 ### Properties that supports $filter:
 

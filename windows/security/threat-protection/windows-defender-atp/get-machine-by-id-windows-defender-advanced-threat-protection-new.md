@@ -20,12 +20,9 @@ ms.date: 12/08/2017
 # Get machine by ID API
 
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
-
-- Retrieves a machine entity by ID.
+Retrieves a machine entity by ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)

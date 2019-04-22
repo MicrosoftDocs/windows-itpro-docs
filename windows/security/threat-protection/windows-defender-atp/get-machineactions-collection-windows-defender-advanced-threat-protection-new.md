@@ -20,15 +20,16 @@ ms.date: 12/08/2017
 # List MachineActions API
 
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+Gets collection of actions done on machines. 
 
-- Gets collection of actions done on machines. 
-- Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type", "Requestor" and "CreationDateTimeUtc".
-- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
+Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+
+The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type", "Requestor" and "CreationDateTimeUtc".
+
+See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)

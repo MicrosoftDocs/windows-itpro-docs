@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Stop and quarantine file API
-
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 [!include[Prerelease information](prerelease.md)]
 
 - Stop execution of a file on a machine and delete it.

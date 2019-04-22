@@ -19,9 +19,7 @@ ms.date: 12/08/2017
 
 # Get package SAS URI API
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Get a URI that allows downloading of an [investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md).
 

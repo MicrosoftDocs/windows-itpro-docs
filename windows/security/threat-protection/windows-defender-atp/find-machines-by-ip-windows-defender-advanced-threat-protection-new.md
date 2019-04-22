@@ -14,19 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
+
 ---
 
 # Find machines by internal IP API
-
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
 
-- Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
-- The given timestamp must be in the past 30 days.
+The given timestamp must be in the past 30 days.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
