@@ -46,6 +46,6 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border ='1'><tr bgcolor='#d4d7d8'><td width='530px'>Details</td><td width='200px'>Affected build</td><td width='200px'>Status</td><td width='200px'>History</td></tr>
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='60%'>Details</td><td width='10%'>Affected build</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
       </table>
       "
