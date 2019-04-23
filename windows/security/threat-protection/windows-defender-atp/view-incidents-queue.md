@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2018
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Incidents queue
