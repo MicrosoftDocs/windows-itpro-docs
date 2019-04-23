@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -28,6 +28,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 [Azure AD joined provisioning in a Federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)<br>
 [Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)<br>
 [Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-federated-environment)<br>
 [Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-managed-environment)<br>
 [Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)<br>
 [Domain joined provisioning in an On-premises Key Trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)<br>
