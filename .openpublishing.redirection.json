@@ -1356,11 +1356,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-allowed-blocked-list",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/security/threat-protection/windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation",
 "redirect_document_id": true
