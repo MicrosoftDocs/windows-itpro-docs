@@ -26,6 +26,8 @@ Here are the new features in the latest release of Windows Defender ATP as well 
 ## April 2019
 The following capability is generally available (GA).
 
+- [Microsoft Threat Experts Targeted Attack Notification capability](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts#targeted-attack-notification) <BR>Microsoft Threat Experts' Targeted Attack Notification alerts are tailored to organizations to provide as much information as can be quickly delivered thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
+
 - [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. 
 
 
@@ -40,7 +42,7 @@ The following capabilities  are included in the April 2019 preview release.
 ### In preview
 The following capability are included in the March 2019 preview release. 
 
-- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection) <BR> The machine health and compliance report provides high-level information about the devices in your organization. 
+- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-rotection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
 
 ## February 2019
