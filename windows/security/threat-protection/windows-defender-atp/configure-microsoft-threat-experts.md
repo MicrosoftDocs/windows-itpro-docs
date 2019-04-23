@@ -26,13 +26,13 @@ ms.date: 02/28/2019
 [!include[Prerelease information](prerelease.md)]
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a valid Premier customer service and support account. However, Premier charges will not be incurred during the preview.
+To experience the full Microsoft Threat Experts targeted attack notification capability in Windows Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges will not be incurred during for the capability in preview, but for the generally available capability, there will be charges. 
  
 You also need to ensure that you have Windows Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
  
 ## Register to Microsoft Threat Experts managed threat hunting service 
-If you're already a Windows Defender ATP customer, you can apply for preview through the Windows Defender ATP portal. 
+If you're already a Windows Defender ATP customer, you can apply through the Windows Defender ATP portal. 
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Threat Experts**.
 
@@ -42,11 +42,8 @@ If you're already a Windows Defender ATP customer, you can apply for preview thr
 
 4. Enter your name and email address so that Microsoft can get back to you on your application. 
 
-5. Read the privacy statement, then click **Submit** when you're done. 
-
- >[!NOTE]
- >You will receive a welcome email once your application is approved. Then, from the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
-
+5. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved. 
+6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following:  
@@ -68,6 +65,9 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 
 ## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
+>[!NOTE]
+>The Microsoft Threat Experts' experts-on-demand capability is still on preview.
+
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before raising an inquiry. 
