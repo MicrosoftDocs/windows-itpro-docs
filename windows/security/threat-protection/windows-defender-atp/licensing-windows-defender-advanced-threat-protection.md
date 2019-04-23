@@ -16,11 +16,10 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
+
 # Validate licensing provisioning and complete set up for Windows Defender ATP
 
 **Applies to:**
-
-
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 

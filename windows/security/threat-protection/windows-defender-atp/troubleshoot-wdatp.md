@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: troubleshooting
-ms.date: 09/03/2018
 ---
 
 #  Troubleshoot Windows Defender Advanced Threat Protection 
