@@ -143,6 +143,9 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 4. Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following:
     1. Double-click **Allow real-time definition updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     2. Double-click **Allow notifications to disable definitions based reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
+    
+> [!NOTE]  
+> By allowing Microsoft to disable local Defender virus definitions, it has identified as causing false-positive detections, through the client's cloud connection to MAPS. You must configure your computer to join Microsoft MAPS for this functionality to work.
 
 ## Related topics
 
