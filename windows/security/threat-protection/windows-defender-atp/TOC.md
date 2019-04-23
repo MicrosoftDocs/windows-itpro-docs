@@ -351,10 +351,6 @@
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
@@ -392,11 +388,6 @@
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
 #### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> master
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
 ###Troubleshoot sensor state
