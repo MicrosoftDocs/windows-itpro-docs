@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 04/17/2019
 ---
 
 # BitLocker Group Policy settings
@@ -238,11 +238,11 @@ This policy setting is used to control which unlock options are available for op
  
 **Reference**
 
-If you want to use BitLocker on a computer without a TPM, select the **Allow BitLocker without a compatible TPM** check box. In this mode, a USB drive is required for startup. Key information that is used to encrypt the drive is stored on the USB drive, which creates a USB key. When the USB key is inserted, access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable, you need to use one of the BitLocker recovery options to access the drive.
+If you want to use BitLocker on a computer without a TPM, select **Allow BitLocker without a compatible TPM**. In this mode, a password or USB drive is required for startup. The USB drive stores the startup key that is used to encrypt the drive. When the USB drive is inserted, the startup key is authenticated and the operating system drive is accessible. If the USB drive is lost or unavailable, BitLocker recovery is required to access the drive.
 
-On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use:
+On a computer with a compatible TPM, additional authentication methods can be used at startup to improve protection for encrypted data. When the computer starts, it can use:
 
--   only the TPM for authentication
+-   only the TPM
 -   insertion of a USB flash drive containing the startup key
 -   the entry of a 4-digit to 20-digit personal identification number (PIN)
 -   a combination of the PIN and the USB flash drive
@@ -392,7 +392,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 | **Policy description** | This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys. |
 | **Introduced**         | Windows 10, version 1703 |
 | **Drive type**         | Operating system drives  |
-| **Policy path**        | Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives|
+| **Policy path**        | Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption|
 | **Conflicts**          | None                     |
 | **When enabled**       | Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs in again. |
 | **When disabled or not configured** | DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed in.|
