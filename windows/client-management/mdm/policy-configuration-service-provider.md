@@ -4984,7 +4984,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 - [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
-<!--StartHoloLens-->
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
@@ -5031,8 +5031,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+<!--EndHoloLensBusiness-->
 
-
+<!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
@@ -5077,9 +5078,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
-
 <!--EndHoloLens-->
 
+<!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
 
 - [Camera/AllowCamera](#camera-allowcamera)
@@ -5143,6 +5144,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)
 <!--EndSurfaceHub-->
 
+<!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Core
 
 - [Camera/AllowCamera](#camera-allowcamera)
@@ -5154,7 +5156,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
 - [Wifi/WLANScanMode](#wifi-wlanscanmode)
-
 <!--EndIoTCore-->
 
 <!--StartEAS-->

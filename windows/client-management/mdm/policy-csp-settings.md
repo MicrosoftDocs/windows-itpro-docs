@@ -847,13 +847,14 @@ To validate on Desktop, do the following:
 
 - [Settings/AllowDateTime](#settings-allowdatetime)<sup>5</sup>
 - [Settings/AllowVPN](#settings-allowvpn)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Settings policies supported by Windows Holographic for Business
 
 - [Settings/AllowDateTime](#settings-allowdatetime)<sup>5</sup>
 - [Settings/AllowVPN](#settings-allowvpn)<sup>5</sup>
-  
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 

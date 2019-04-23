@@ -1574,12 +1574,13 @@ Validation procedure:
 ## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic
 
 - [Experience/AllowCortana](#experience-allowcortana)<sup>5</sup>
-  
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business
 
 - [Experience/AllowCortana](#experience-allowcortana)<sup>5</sup>
-  
- <!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 
@@ -1591,4 +1592,3 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in the next major release of Windows 10.
-

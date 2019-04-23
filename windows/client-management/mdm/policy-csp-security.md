@@ -746,12 +746,13 @@ The following list shows the supported values:
 ## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic
 
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)<sup>5</sup>
-  
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic for Business
 
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)<sup>5</sup>
-  
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 

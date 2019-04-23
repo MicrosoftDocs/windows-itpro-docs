@@ -3967,7 +3967,6 @@ Most restricted value: 0
 <!--/Policies-->
 
 <!--StartHoloLens-->
-
 ## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic
 
 - [Browser/AllowDoNotTrack](#browser-allowdonottrack)<sup>5</sup>
@@ -3976,7 +3975,9 @@ Most restricted value: 0
 - [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)<sup>5</sup>
 - [Browser/AllowSmartScreen](#browser-allowsmartscreen)<sup>5</sup>
 - [Browser/AllowCookies](#browser-allowcookies)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic for Business
 
 - [Browser/AllowAutofill](#browser-allowautofill)<sup>5</sup>
@@ -3986,8 +3987,7 @@ Most restricted value: 0
 - [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)<sup>5</sup>
 - [Browser/AllowSmartScreen](#browser-allowsmartscreen)<sup>5</sup>
 - [Browser/AllowCookies](#browser-allowcookies)<sup>5</sup>
-  
- <!--EndHoloLens-->
+ <!--EndHoloLensBusiness-->
 
 <hr/>
 

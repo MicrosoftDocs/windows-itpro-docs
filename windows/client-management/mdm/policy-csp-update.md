@@ -3586,7 +3586,9 @@ ADMX Info:
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)<sup>5</sup>
 - [Update/UpdateServiceUrl](#update-updateserviceurl)<sup>5</sup>
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)<sup>5</sup>
@@ -3596,8 +3598,7 @@ ADMX Info:
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)<sup>5</sup>
 - [Update/UpdateServiceUrl](#update-updateserviceurl)<sup>5</sup>
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)<sup>5</sup>
-
- <!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 

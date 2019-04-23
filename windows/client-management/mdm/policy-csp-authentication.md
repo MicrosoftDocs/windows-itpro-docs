@@ -498,13 +498,14 @@ Value type is string.
 ## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)<sup>5</sup>
-  
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic for Business
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)<sup>5</sup>
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)<sup>5</sup>
-
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 <hr/>
 
 Footnotes:

@@ -1220,6 +1220,9 @@ Most restricted value is 0.
 - [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)<sup>5</sup>
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)<sup>5</sup>
 - [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)<sup>5</sup>
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
 
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)<sup>5</sup>
@@ -1231,9 +1234,7 @@ Most restricted value is 0.
 - [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)<sup>5</sup>
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)<sup>5</sup>
 - [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)<sup>5</sup>
-
-
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 

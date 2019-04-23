@@ -4858,12 +4858,13 @@ ADMX Info:
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)<sup>5</sup>
-  
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->  
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)<sup>5</sup>
-  
- <!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 

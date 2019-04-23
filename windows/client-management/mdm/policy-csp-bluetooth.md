@@ -348,14 +348,15 @@ The default value is an empty string. For more information, see [ServicesAllowed
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)<sup>5</sup>
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)<sup>5</sup>
 - [Bluetooth/Bluetooth/LocalDeviceName](#bluetooth-localdevicename)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
 
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)<sup>5</sup>
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)<sup>5</sup>
 - [Bluetooth/Bluetooth/LocalDeviceName](#bluetooth-localdevicename)<sup>5</sup>
-
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 <hr/>
 
 Footnotes:

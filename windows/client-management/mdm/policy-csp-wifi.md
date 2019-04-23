@@ -393,12 +393,13 @@ Supported operations are Add, Delete, Get, and Replace.
 ## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)<sup>5</sup>
+<!--EndHoloLens-->
   
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic for Business
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)<sup>5</sup>
-  
-<!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Wifi policies supported by IoT Core  

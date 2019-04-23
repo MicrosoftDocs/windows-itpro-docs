@@ -89,12 +89,13 @@ The following list shows the supported values:
 ## <a href="" id="hololenspolicies"></a>Speech policies supported by Windows Holographic
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)<sup>5</sup>
-  
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
 ## <a href="" id="hololenspolicies"></a>Speech policies supported by Windows Holographic for Business
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)<sup>5</sup>
-  
- <!--EndHoloLens-->
+<!--EndHoloLensBusiness-->
 
 <hr/>
 
