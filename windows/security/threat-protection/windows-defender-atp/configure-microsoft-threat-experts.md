@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
-author: DulceMV
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,7 +23,7 @@ ms.date: 02/28/2019
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 ## Before you begin 
 To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a valid Premier customer service and support account. However, Premier charges will not be incurred during the preview.

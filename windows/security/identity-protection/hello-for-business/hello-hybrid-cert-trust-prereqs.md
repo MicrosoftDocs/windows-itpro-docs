@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -82,7 +82,7 @@ Organizations using older directory synchronization technology, such as DirSync 
 <br>
 
 ## Federation ##
-Federating your on-premises Active Directory with Azure Active Directory ensures all identities have access to all resources regardless if they reside in cloud or on-premises.  Windows Hello for Business hybrid certificate trust needs Windows Server 2016 Active Directory Federation Services.  All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
+Windows Hello for Business hybrid certificate trust requires Active Directory being federated with Azure Active Directory and needs Windows Server 2016 Active Directory Federation Services or newer. Windows Hello for Business hybrid certificate trust doesn’t support Managed Azure Active Directory using Pass-through authentication or password hash sync. All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
 

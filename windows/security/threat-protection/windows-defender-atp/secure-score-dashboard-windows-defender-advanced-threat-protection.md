@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article 
-ms.date: 10/26/2018
 ---
 
 # Configure the security controls in Secure score

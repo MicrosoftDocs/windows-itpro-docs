@@ -22,6 +22,7 @@ New or changed topic | Description
 [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md) | New; previously available for download and on [Surface Hub Tech Spec](https://support.microsoft.com/help/4483539/surface-hub-tech-spec)
 [Technical information for 84” Microsoft Surface Hub ](surface-hub-technical-84.md) | New; previously available for download and on [Surface Hub Tech Spec](https://support.microsoft.com/help/4483539/surface-hub-tech-spec)
 [Surface Hub SSD replacement](surface-hub-ssd-replacement.md) | New; previously available for download only
+[Implement Quality of Service on Surface Hub](surface-hub-qos.md) | New
 
 ## July 2018
 
