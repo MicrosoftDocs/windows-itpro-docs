@@ -17,10 +17,10 @@ ms.topic: article
 ---
 
 # Advanced Hunting using Python
-**Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 

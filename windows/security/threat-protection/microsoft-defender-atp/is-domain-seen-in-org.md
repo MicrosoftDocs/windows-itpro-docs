@@ -14,15 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Was domain seen in org
+
 **Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
-
-[!include[Prerelease information](prerelease.md)]
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Answers whether a domain was seen in the organization. 
 

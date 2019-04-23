@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/24/2018
 ---
 
 # Schedule Advanced Hunting using Microsoft Flow 

@@ -14,17 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/25/2018
 ---
 
 # Find machine information by internal IP API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
-
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Find a machine by internal IP.
 
@@ -34,10 +30,10 @@ Find a machine by internal IP.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Machine.Read.All |	'Read all machine profiles'
-Application |	Machine.ReadWrite.All |	'Read and write all machine information'
+Application | Machine.Read.All | 'Read all machine profiles'
+Application | Machine.ReadWrite.All | 'Read and write all machine information'
 
 ## HTTP request
 ```

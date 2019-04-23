@@ -1,10 +1,10 @@
 ---
 title: What's in the dashboard and what it means for my organization's security posture
-description: 
-keywords: 
+description: What's in the Threat & Vulnerability Management dashboard and how it can help SecOps and Security Administrators arrive at informed decisions in addressing cybersecurity threat vulnerabilities and building their organization's security resilience. 
+keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: eADQiWindows 10XVcnh
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +21,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 

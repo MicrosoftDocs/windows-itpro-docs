@@ -14,24 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get alert related files information API
-**Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves all files related to a specific alert.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	File.Read.All |	'Read file profiles'
-Delegated (work or school account) | File.Read.All |	'Read file profiles'
+Application | File.Read.All | 'Read file profiles'
+Delegated (work or school account) | File.Read.All | 'Read file profiles'
 
 >[!Note]
 > When obtaining a token using user credentials:
@@ -48,7 +47,6 @@ GET /api/alerts/{id}/files
 Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
-
 
 ## Request body
 Empty

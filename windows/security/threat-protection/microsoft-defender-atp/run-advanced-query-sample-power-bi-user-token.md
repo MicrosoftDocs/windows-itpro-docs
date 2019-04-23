@@ -17,11 +17,12 @@ ms.topic: article
 ---
 
 # Create custom reports using Power BI (user authentication)
+
 **Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
-
 
 Run advanced queries and show results in Microsoft Power BI. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
 

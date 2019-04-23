@@ -14,17 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Use Microsoft Defender ATP APIs
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
-[!include[Prerelease information](prerelease.md)]
-
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP on behalf of a user.
 
@@ -43,10 +40,10 @@ This page explains how to create an AAD application, get an access token to Micr
 
 >[!NOTE]
 > When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
-> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac.md). 
+> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac.md).
 
 >[!TIP]
-> If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
+> If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
 
 ## Create an app
 

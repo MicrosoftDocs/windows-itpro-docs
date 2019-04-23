@@ -14,21 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # List alerts API
+
 **Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-[!include[Prerelease information](prerelease.md)]
+Retrieves a collection of Alerts.
 
+Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-- Retrieves a collection of Alerts.
-- Supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
-- See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
+
+See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)

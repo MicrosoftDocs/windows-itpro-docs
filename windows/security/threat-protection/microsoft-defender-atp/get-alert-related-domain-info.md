@@ -14,24 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get alert related domain information API
-**Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves all domains related to a specific alert.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	URL.Read.All |	'Read URLs'
-Delegated (work or school account) | URL.Read.All |	'Read URLs'
+Application | URL.Read.All | 'Read URLs'
+Delegated (work or school account) | URL.Read.All | 'Read URLs'
 
 >[!Note]
 > When obtaining a token using user credentials:
@@ -56,7 +55,6 @@ Empty
 ## Response
 If successful and alert and domain exist - 200 OK. If alert not found - 404 Not Found.
 
-
 ## Example
 
 **Request**
@@ -65,7 +63,6 @@ Here is an example of the request.
 
 [!include[Improve request performance](improverequestperformance-new.md)]
 
-
 ```
 GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/domains
 ```
@@ -73,7 +70,6 @@ GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/
 **Response**
 
 Here is an example of the response.
-
 
 ```
 HTTP/1.1 200 OK

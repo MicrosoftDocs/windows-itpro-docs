@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 12/01/2017
 ---
 
 # Supported Microsoft Defender ATP query APIs 

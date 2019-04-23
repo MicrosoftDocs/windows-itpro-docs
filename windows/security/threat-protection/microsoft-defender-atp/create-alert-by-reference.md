@@ -14,21 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
-# Create alert from event API 
+# Create alert from event API
+
 **Applies to:**
 
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
-
-
-[!include[Prerelease information](prerelease.md)]
-
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Enables using event data, as obtained from the [Advanced Hunting](run-advanced-query-api.md) for creating a new alert entity.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
@@ -42,6 +39,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
+
 ```
 POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
 ```
@@ -54,6 +52,7 @@ Authorization | String | Bearer {token}. **Required**.
 Content-Type | String | application/json. **Required**.
 
 ## Request body
+
 In the request body, supply the following values (all are required):
 
 Property | Type | Description
@@ -67,10 +66,9 @@ eventTime | DateTime(UTC) | The time of the event, as obtained from the advanced
 reportId | String | The reportId, as obtained from the advanced query. **Required**.
 category| String | Category of the alert. The property values are: 'None', 'SuspiciousActivity', 'Malware', 'CredentialTheft', 'Exploit', 'WebExploit', 'DocumentExploit', 'PrivilegeEscalation', 'Persistence', 'RemoteAccessTool', 'CommandAndControl', 'SuspiciousNetworkTraffic', 'Ransomware', 'MalwareDownload', 'Reconnaissance', 'WebFingerprinting', 'Weaponization', 'Delivery', 'SocialEngineering', 'CredentialStealing', 'Installation', 'Backdoor', 'Trojan', 'TrojanDownloader', 'LateralMovement', 'ExplorationEnumeration', 'NetworkPropagation', 'Exfiltration', 'NotApplicable', 'EnterprisePolicy' and	'General'.
 
-
 ## Response
-If successful, this method returns 200 OK, and a new [alert](alerts.md) object in the response body. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
 
+If successful, this method returns 200 OK, and a new [alert](alerts.md) object in the response body. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
 
 ## Example
 
@@ -93,5 +91,5 @@ Content-Length: application/json
   "eventTime": "2018-08-03T16:45:21.7115183Z",
   "reportId": "20776",
   "category": "None"
-} 
+}
 ```

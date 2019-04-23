@@ -232,6 +232,7 @@
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md)
 ##### [Onboard servers](configure-server-endpoints.md)
 ##### [Onboard non-Windows machines](configure-endpoints-non-windows.md)
+##### [Onboard machines without Internet access](onboard-offline-machines.md)
 ##### [Run a detection test on a newly onboarded machine](run-detection-test.md)
 ##### [Run simulated attacks on machines](attack-simulations.md)
 ##### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
@@ -343,6 +344,10 @@
 ##### [Threat protection reports](threat-protection-reports.md)
 ##### [Machine health and compliance reports](machine-reports.md)
 
+
+#### Interoperability
+##### [Partner applications](partner-applications.md)
+
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac.md)
 ###### [Create and manage roles](user-roles.md)
@@ -379,7 +384,7 @@
 ####Rules
 ##### [Manage suppression rules](manage-suppression-rules.md)
 ##### [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
-##### [Manage allowed/blocked lists](manage-allowed-blocked-list.md)
+##### [Manage indicators](manage-indicators.md)
 ##### [Manage automation file uploads](manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](manage-automation-folder-exclusions.md)
  

@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/12/2017
 ---
 
 # Take response actions in Microsoft Defender ATP

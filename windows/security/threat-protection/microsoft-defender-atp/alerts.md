@@ -20,9 +20,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
-Represents an alert entity in Microsoft Defender ATP.
+Represents an alert entity in Windows Defender ATP.
 
 # Methods
 Method|Return Type |Description

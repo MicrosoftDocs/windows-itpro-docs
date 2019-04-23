@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 11/19/2018
 ---
 
 # Onboard machines to the Microsoft Defender ATP service

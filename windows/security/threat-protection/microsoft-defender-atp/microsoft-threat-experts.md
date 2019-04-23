@@ -22,7 +22,7 @@ ms.date: 02/28/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
   

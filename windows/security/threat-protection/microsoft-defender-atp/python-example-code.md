@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Python code examples for the custom threat intelligence API

@@ -14,15 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get domain statistics API
+
 **Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
-
-
-[!include[Prerelease information](prerelease.md)]
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves the prevalence for the given domain.
 

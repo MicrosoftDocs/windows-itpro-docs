@@ -15,30 +15,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/19/2018
-
 ---
 
-# Configure Microsoft Cloud App Security in Windows
+# Configure Microsoft Cloud App Security in Windows Defender ATP
+
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
-
+[!include[Prerelease information](prerelease.md)]
 
 To benefit from Microsoft Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
 
-
 >[!NOTE]
->This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
 
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select **Microsoft Cloud App Security** and switch the toggle to **On**.
 3. Click **Save preferences**.
- 
-
-
-![Advanced features](images/atp-mcas-settings.png)
 
 Once activated, Microsoft Defender ATP will immediately start forwarding discovery signals to Cloud App Security.
 

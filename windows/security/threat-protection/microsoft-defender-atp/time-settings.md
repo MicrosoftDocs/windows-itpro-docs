@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 02/13/2018
 ---
 
 # Microsoft Defender Security Center time zone settings

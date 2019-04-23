@@ -18,9 +18,9 @@ ms.topic: article
 
 # Indicator resource type
 
-**Applies to:** - Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
+**Applies to:**
 
-[!include[Prerelease information](prerelease.md)]
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Method|Return Type |Description
 :---|:---|:---

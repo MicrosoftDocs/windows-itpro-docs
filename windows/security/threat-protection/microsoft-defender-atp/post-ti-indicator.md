@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Submit or Update Indicator API
@@ -22,7 +21,6 @@ ms.date: 12/08/2017
 **Applies to:** 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 >[!Note]
 > Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)

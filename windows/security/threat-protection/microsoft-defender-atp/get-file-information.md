@@ -14,16 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get file information API
 **Applies to:**
-
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
-
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves a file by identifier Sha1, Sha256, or MD5.
 
@@ -38,7 +33,6 @@ Delegated (work or school account) | File.Read.All |	'Read all file profiles'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-
 
 ## HTTP request
 ```

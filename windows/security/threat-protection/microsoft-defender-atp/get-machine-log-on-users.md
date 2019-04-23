@@ -14,16 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Get machine log on users API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 Retrieves a collection of logged on users.
 
 ## Permissions

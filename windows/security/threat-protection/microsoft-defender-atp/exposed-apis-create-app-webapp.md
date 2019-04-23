@@ -14,20 +14,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Create an app to access Microsoft Defender ATP without a user
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:**
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP without a user.
 
-If you need programmatic access Microsoft Defender ATP on behalf of a user, see [Get access wtih user context](exposed-apis-create-app-nativeapp.md)
+If you need programmatic access Microsoft Defender ATP on behalf of a user, see [Get access with user context](exposed-apis-create-app-nativeapp.md)
 
 If you are not sure which access you need, see [Get started](apis-intro.md).
 
@@ -42,7 +41,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Create an app
 
-1.	Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
+1. Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
 
 2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
 
@@ -55,7 +54,6 @@ This page explains how to create an AAD application, get an access token to Micr
     - **Name:** Choose your own name. 
     - **Application type:** Web app / API
     - **Redirect URI:** `https://127.0.0.1`
-
 
 4.	Click **Settings** > **Required permissions** > **Add**.
 
@@ -133,7 +131,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### Using PowerShell 
+### Using PowerShell
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory

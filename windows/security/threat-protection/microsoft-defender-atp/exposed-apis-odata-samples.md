@@ -14,20 +14,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/15/2018
 ---
 
 # OData queries with Microsoft Defender ATP
+
 **Applies to:**
-- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
+If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
-- Not all properties are filterable.
+Not all properties are filterable.
 
-### Properties that supports $filter:
+## Properties that supports $filter:
 
 - [Alert](alerts.md): Id, IncidentId, AlertCreationTime, Status, Severity and Category.
 - [Machine](machine.md): Id, ComputerDnsName, LastSeen, LastIpAddress, HealthStatus, OsPlatform, RiskScore, MachineTags and RbacGroupId.

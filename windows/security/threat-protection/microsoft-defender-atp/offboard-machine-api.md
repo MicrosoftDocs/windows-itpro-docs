@@ -17,10 +17,10 @@ ms.topic: article
 ---
 
 # Offboard machine API
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Offboard machine from Microsoft Defender ATP.
 

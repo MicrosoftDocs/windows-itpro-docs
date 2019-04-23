@@ -14,17 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Advanced hunting API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
-
-[!include[Prerelease information](prerelease.md)]
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This API allows you to run programmatic queries that you are used to running from [Microsoft Defender ATP Portal](https://securitycenter.windows.com/hunting).
-
 
 ## Limitations
 1. You can only run a query on data from the last 30 days

@@ -1,8 +1,8 @@
 ---
 title: Threat & Vulnerability Management scenarios
-description: 
-keywords: 
-search.product: Windows 10
+description: Learn how to use Threat & Vulnerability Management in the context of scenarios that Security Administrators encounter when collaborating with IT Administrators and SecOps while protecting their organization from cybersecurity threats.    
+keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase configuration score, increase threat & vulnerability configuration score, configuration score, exposure score, security controls 
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 ## Before you begin
 Ensure that your machines:

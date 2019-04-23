@@ -228,6 +228,7 @@
 ####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](microsoft-defender-atp/configure-endpoints-vdi.md)
 ###### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
 ###### [Onboard non-Windows machines](microsoft-defender-atp/configure-endpoints-non-windows.md)
+###### [Onboard machines without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
 ###### [Run a detection test on a newly onboarded machine](microsoft-defender-atp/run-detection-test.md)
 ###### [Run simulated attacks on machines](microsoft-defender-atp/attack-simulations.md)
 ###### [Configure proxy and Internet connectivity settings](microsoft-defender-atp/configure-proxy-internet.md)
@@ -345,6 +346,10 @@
 ###### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ###### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
+##### Interoperability
+###### [Partner applications](windows-defender-atp/partner-applications.md)
+
+
 ##### Role-based access control
 ###### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ####### [Create and manage roles](microsoft-defender-atp/user-roles.md)
@@ -389,7 +394,7 @@
 #####Rules
 ###### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
 ###### [Manage automation allowed/blocked lists](microsoft-defender-atp/manage-automation-allowed-blocked-list.md)
-###### [Manage allowed/blocked lists](microsoft-defender-atp/manage-allowed-blocked-list.md)
+###### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
 ###### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ###### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
   

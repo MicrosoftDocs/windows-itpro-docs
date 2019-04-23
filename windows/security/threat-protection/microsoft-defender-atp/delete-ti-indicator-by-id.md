@@ -21,10 +21,9 @@ ms.topic: article
 **Applies to:**  
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 >[!Note]
-> Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
+> Currently this API is only supported for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
 
 
 - Deletes an Indicator entity by ID.

@@ -21,8 +21,6 @@ ms.date: 09/24/2018
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 
 Full scenario using multiple APIs from Microsoft Defender ATP.
 

@@ -36,12 +36,12 @@ Information collected includes file data (such as file names, sizes, and hashes)
 
 Microsoft stores this data securely in Microsoft Azure and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://go.microsoft.com/fwlink/?linkid=827578).
 
-Microsoft uses this data to:
+This data enables Windows Defender ATP to:
 - Proactively identify indicators of attack (IOAs) in your organization
 - Generate alerts if a possible attack was detected
 - Provide your security operations with a view into machines, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
 
-Microsoft does not use your data for advertising or for any other purpose other than providing you the service.
+Microsoft does not use your data for advertising.
 
 ## Data protection and encryption
 The Microsoft Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 

@@ -18,12 +18,12 @@ ms.date: 12/05/2018
 ---
 
 # Configure information protection in Windows 
+
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
-Learn how you can use Microsoft Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
+Learn how you can use Microsoft Defender ATP to expand the coverage of Microsoft Information Protection (WIP) to protect files based on their label, regardless of their origin.
 
 >[!TIP]
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).

@@ -253,19 +253,19 @@ If you encounter a problem when trying to submit a file, try each of the followi
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
-4. Verify the policy setting enables sample collection and try to submit the file again.
+4. If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-  a. Change the following registry entry and values to change the policy on specific machines:
- ```
-HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-  Value = 0 – block sample collection
-  Value = 1 – allow sample collection
-```
-5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+    ```
+    Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
+    Name: AllowSampleCollection 
+    Type: DWORD 
+    Hexadecimal value : 
+      Value = 0 – block sample collection
+      Value = 1 – allow sample collection
+    ```
+5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-> [!NOTE]
-> If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
 ## Related topic
 - [Take response actions on a machine](respond-machine-alerts.md)
