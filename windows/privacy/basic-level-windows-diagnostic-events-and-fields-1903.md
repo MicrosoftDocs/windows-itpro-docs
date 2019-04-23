@@ -13,16 +13,11 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/19/2019
+ms.date: 04/23/2019
 ---
 
 
 # Windows 10, version 1903 basic level Windows diagnostic events and fields
-
-
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
  **Applies to**
 
@@ -44,8 +39,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
-
-
 
 
 ## AppLocker events
@@ -2213,7 +2206,6 @@ The following fields are available:
 - **providerGuid**  The ETW provider ID associated with the provider name.
 - **raId**  Represents the ETW Related ActivityId. Logged via TraceLogging or directly via ETW.
 - **seq**  Represents the sequence field used to track absolute order of uploaded events. It is an incrementing identifier for each event added to the upload queue.  The Sequence helps track how many events were fired and how many events were uploaded and enables identification of data lost during upload and de-duplication of events on the ingress server.
-- **sqmId**  No content is currently available.
 - **stId**  Represents the Scenario Entry Point ID. This is a unique GUID for each event in a diagnostic scenario. This used to be Scenario Trigger ID.
 - **wcmp**  The Windows Shell Composer ID.
 - **wPId**  The Windows Core OS product ID.
