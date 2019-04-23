@@ -41,7 +41,7 @@ When you investigate a specific machine, you'll see:
 - Machine details
 - Response actions
 - Cards (active alerts, logged on users, security assessment)
-- Drill downs
+- Tabs (alerts, timeline, security recommendations, software inventory)
 
 ![Image of machine view](images/specific-machine.png)
 
@@ -49,9 +49,20 @@ When you investigate a specific machine, you'll see:
 
 The machine details section provides information such as the domain, OS, and health state of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
 
-For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
-
 ## Response actions
+
+Response actions run along the top of the page, and 
+
+- Manage tags
+- Initiate Automated Investigation
+- Initiate Live Response Session
+- Collect investigation package
+- Run antivirus scan
+- Restrict app execution
+- Isolate machine
+- Action center
+
+For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
 ## Cards
 
@@ -77,7 +88,7 @@ The Security assessments tile shows the overall exposure level, security recomme
 
 ![Image of security assessments tile](images/security-assessments.png)
 
-## Drill downs
+## Tabs
 
 ### Alerts
 
@@ -89,7 +100,7 @@ A fly out will appear when the circle icon to the left of an alert is selected. 
 
 To see a full page view of an alert including incident graph and process tree, select the title of the alert.
 
-## Timeline
+### Timeline
 
 The **Timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine. This can help you correlate any events, files, and IP addresses in relation to the machine.
 
@@ -108,30 +119,29 @@ To further control your view, you can filter by event groups or customize the co
 
 Some of the functionality includes:
 
-- Search for specific events: Use the search bar to look for specific timeline events.
+- Search for specific events
+  - Use the search bar to look for specific timeline events.
 - Filter events from a specific date
   - Select the calendar icon in the upper left of the table to display events in the past day, week, 30 days, or custom range. By default, the machine timeline is set to display the events from the past 30 days.
-- Export machine timeline events
-
-You can also export detailed event data from the machine timeline to conduct offline analysis. You can choose to export the machine timeline for the current date or specify a date range. You can export up to seven days of data and specify the specific time between the two dates.
-
-![Image of export machine timeline events](images/atp-machine-timeline-export.png)
-
-### Navigate between pages
-
-Use the events per page drop-down to choose the number of alerts you’d like to see on the page. You can choose to display 20, 50, or 100 events per page. You can also move between pages by clicking **Older** or **Newer**.
-
-From the **Machines list**, you can also navigate to the file, IP, or URL view and the timeline associated with an alert is retained, helping you view the investigation from different angles and retain the context of the event time line.
-
-From the list of events that are displayed in the timeline, you can examine the behaviors or events in to help identify indicators of interests such as files and IP addresses to help determine the scope of a breach. You can then use the information to respond to events and keep your system secure.
-
-![Image of machine timeline details pane](images/atp-machine-timeline-details-panel.png)
+- Export detailed machine timeline events
+  - You can choose to export the machine timeline for the current date or a specified date range up to seven days.
+- Choose the number of items are displayed per page
 
 You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
-Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of meta data on the file or IP address.
+### Security recommendations
 
-The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
+Security recommendations are generated from Microsoft Defender ATP's Threat & Vulnerability Management capability. Learn more about 
+
+![Image of security recommendations tab](images/security-recommendations-machine.png)
+
+### Software inventory
+
+![Image of software inventory tab](images/software-inventory-machine.png)
+
+### Discovered vulnerabilities
+
+![Image of discovered vulnerabilities tab](images/discovered-vulnerabilities-machine.png)
 
 ## Related topics
 
