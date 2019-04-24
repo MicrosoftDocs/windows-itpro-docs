@@ -41,7 +41,7 @@ When you investigate a specific machine, you'll see:
 - Machine details
 - Response actions
 - Cards (active alerts, logged on users, security assessment)
-- Tabs (alerts, timeline, security recommendations, software inventory)
+- Tabs (alerts, timeline, security recommendations, software inventory, discovered vulnerabilities)
 
 ![Image of machine view](images/specific-machine.png)
 
@@ -51,7 +51,7 @@ The machine details section provides information such as the domain, OS, and hea
 
 ## Response actions
 
-Response actions run along the top of the page, and 
+Response actions run along the top of the page, and include:
 
 - Manage tags
 - Initiate Automated Investigation
@@ -60,7 +60,9 @@ Response actions run along the top of the page, and
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
-- Action center
+- Action center (only enabled if there are investigations happening on that machine)
+
+You can take response actions in the action center, in a specific machine page, or in a specific file page.
 
 For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
@@ -90,13 +92,15 @@ The Security assessments tile shows the overall exposure level, security recomme
 
 ## Tabs
 
+The five tabs under the cards section show relevant security and threat prevention information related to the machine.
+
 ### Alerts
 
 The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity.
 
 ![Image of alerts related to the machine](images/alerts-machine.png)
 
-A fly out will appear when the circle icon to the left of an alert is selected. From this panel you can manage the alert and view more details such as related machines and. Multiple alerts can be selected at a time.
+When the circle icon to the left of an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related machines. Multiple alerts can be selected at a time.
 
 To see a full page view of an alert including incident graph and process tree, select the title of the alert.
 
@@ -131,15 +135,19 @@ You can also use the [Artifact timeline](investigate-alerts-windows-defender-adv
 
 ### Security recommendations
 
-Security recommendations are generated from Microsoft Defender ATP's Threat & Vulnerability Management capability. Learn more about 
+**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it.
 
 ![Image of security recommendations tab](images/security-recommendations-machine.png)
 
 ### Software inventory
 
+The **Software inventory** section lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed machines, and version distribution.
+
 ![Image of software inventory tab](images/software-inventory-machine.png)
 
 ### Discovered vulnerabilities
+
+The **Discovered vulnerabilities** section shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
 
 ![Image of discovered vulnerabilities tab](images/discovered-vulnerabilities-machine.png)
 
