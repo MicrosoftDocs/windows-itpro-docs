@@ -79,7 +79,7 @@ The information needed for the following steps can be found using Device Health,
 
 7. Copy the name of the executable (for example, snippingtool.exe) and paste it in **FILE** (required).
 
-8. Go back to OMS one more time and note the version number of the app and type it in **MIN VERSION** in Intune (alternately, you can specify the max version, but one or the other is required), and then select the **ACTION**: **Allow** or **Deny**
+8. Tyoe the version number of the app into **MIN VERSION** in Intune (alternately, you can specify the max version, but one or the other is required), and then select the **ACTION**: **Allow** or **Deny**
 
 When working with WIP-enabled apps and WIP-unknown apps, it is recommended that you start with **Silent** or **Allow overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**. For more information about WIP modes, see: [Protect enterprise data using WIP: WIP-modes](protect-enterprise-data-using-wip.md#bkmk-modes)
 
