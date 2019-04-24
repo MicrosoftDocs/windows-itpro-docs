@@ -15,13 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # View and organize the Windows Defender ATP Machines list
 
 **Applies to:**
-
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -29,7 +27,7 @@ ms.date: 09/03/2018
 
 The **Machines list** shows a list of the machines in your network where alerts were generated. By default, the queue displays machines with alerts seen in the last 30 days.  
 
-At a glance you'll see information such as domain, risk level, OS platform, and other details. 
+At a glance you'll see information such as domain, risk level, OS platform, and other details.
 
 
 There are several options you can choose from to customize the machines list view. 
