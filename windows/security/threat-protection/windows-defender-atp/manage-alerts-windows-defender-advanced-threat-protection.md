@@ -104,7 +104,7 @@ Alternatively, the team leader might assign the alert to the **Resolved** queue 
 
 
 ## Alert classification
-You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality to help tune alerts to be more accurate by using this feedback. The "determination" field defines additional fidelity for a "true positive" classification. The determination contains values for "security testing" to address alerts triggered by intended suspect activity such as pen-testing, which are true positives from a detection perspective, but it's intended.
+You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality, and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification. 
 
 ## Add comments and view the history of an alert
 You can add comments and view historical events about an alert to see previous changes made to the alert.
