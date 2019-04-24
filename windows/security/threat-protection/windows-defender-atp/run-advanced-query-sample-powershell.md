@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/24/2018
 ---
 
 # Advanced Hunting using PowerShell
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-[!include[Prerelease information](prerelease.md)]
 
 
 Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).

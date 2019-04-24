@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure Microsoft Cloud App Security in Windows
+# Configure Microsoft Cloud App Security in Windows Defender ATP
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
