@@ -15,17 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: troubleshooting
-ms.date: 06/25/2018
 ---
 
 # Troubleshoot custom threat intelligence issues
 
 **Applies to:**
-
-
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
 

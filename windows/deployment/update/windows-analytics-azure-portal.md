@@ -29,7 +29,7 @@ Go to the [Azure portal](https://portal.azure.com), select **All services**, and
 
 It's important to understand the difference between Azure Active Directory and an Azure subscription:
 
-**Azure Active Directory** is the directory that Azure uses. Azure Active Directory (AD) is a separate service which sits by itself and is used by all of Azure and also Office 365.
+**Azure Active Directory** is the directory that Azure uses. Azure Active Directory (Azure AD) is a separate service which sits by itself and is used by all of Azure and also Office 365.
  
 An **Azure subscription** is a container for billing, but also acts as a security boundary. Every Azure subscription has a trust relationship with at least one Azure AD instance. This means that a subscription trusts that directory to authenticate users, services, and devices.
 

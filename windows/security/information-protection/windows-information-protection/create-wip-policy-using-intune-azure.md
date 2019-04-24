@@ -11,10 +11,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/25/2019
+ms.date: 04/17/2019
 ---
 
-# Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
+# Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
 
 **Applies to:**
 
@@ -23,8 +23,17 @@ ms.date: 03/25/2019
 
 Microsoft Intune has an easy way to create and deploy a Windows Information Protection (WIP) policy. You can choose which apps to protect, the level of protection, and how to find enterprise data on the network. The devices can be fully managed by Mobile Device Management (MDM), or managed by Mobile Application Management (MAM), where Intune only manages the apps on a user's personal device.
 
->[!NOTE]
->If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**). the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. MAM supports only one user per device.  
+## Differences between MDM and MAM for WIP
+
+You can create an app protection policy in Intune either with device enrollment for MDM or without device enrollment for MAM. The process to create either policy is similar, but there are important differences: 
+
+- If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
+- MAM supports only one user per device.  
+- MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md).
+- MAM has additional **Access** settings for Windows Hello for Business.
+- MAM can [selectively wipe company data](https://docs.microsoft.com/intune/apps-selective-wipe) from a user's personal device.
+- MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+- An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM.
 
 ## Prerequisites
 

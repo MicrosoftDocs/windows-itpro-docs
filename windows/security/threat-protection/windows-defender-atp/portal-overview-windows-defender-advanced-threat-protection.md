@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual 
-ms.date: 04/24/2018
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
@@ -111,7 +110,6 @@ Icon | Description
 ![Threat insights icon](images\tvm_bug_icon.png) | Threat & Vulnerability Management - threat insights
 ![Possible active alert icon](images\tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert 
 ![Recommendation insights icon](images\tvm_insight_icon.png) | Threat & Vulnerability Management - recommendation insights
-
 
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
