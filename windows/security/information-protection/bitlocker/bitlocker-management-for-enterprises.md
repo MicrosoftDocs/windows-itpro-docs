@@ -35,7 +35,7 @@ Starting with Windows 10 version 1703 (also known as the Windows Creators Update
 
 For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if required. For older devices that are not yet encrypted, beginning with Windows 10 version 1703 (the Windows 10 Creators Update), admins can use the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to trigger encryption and store the recovery key in Azure AD.
 
-This is applicable for Azure Hybrid AD as well. 
+This is applicable to Azure Hybrid AD as well. 
 
 
 ## Managing workplace-joined PCs and phones
