@@ -61,7 +61,7 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 
 The information needed for the following steps can be found using Device Health, which you will first have to set up. Learn more about how you can  [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor).
 
-1. In Device Health click the app you want to add to your policy and copy the publisher information.
+1. In **Device Health** click the app you want to add to your policy and copy the publisher information.
 
 2. In Intune, click **App protection policies** and then choose the app policy you want to add an application to.
 
