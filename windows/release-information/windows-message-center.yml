@@ -50,9 +50,9 @@ sections:
     text: "
       <table border ='1'><tr bgcolor='#d4d7d8'><td>Message</td><td>Date</td></tr>
       
-      <tr><td><b>The benefits of Windows 10 Dynamic Update</b><br><br>"Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. 
+      <tr><td><b>The benefits of Windows 10 Dynamic Update</b><br><br>Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. 
 
-Find out which components are updated by Dynamic Update, how Dynamic Update is initiated, and how to enable or disable it."<br><br><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'></a></td><td>April 17, 2019 11: 26 AM PT</td></tr>
+Find out which components are updated by Dynamic Update, how Dynamic Update is initiated, and how to enable or disable it.<br><br><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'></a></td><td>April 17, 2019 11: 26 AM PT</td></tr>
       <tr><td><b>Improvements to the Windows 10 update experience are coming</b><br><br>Find out about the changes coming to the Windows update process that will improve the experience, offer users more control, and improve the quality of Windows updates.<br><br><a href = 'https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency' target='_blank'>Find out more ></a></td><td>April 04, 2019 09: 00 AM PT</td></tr>
       <tr><td><b>Take action: review your Windows Update for Business deferral values</b><br><br>If devices under your management are still running Windows 10 Pro or Windows 10 Pro for Workstations, version 1709, your devices will reach end of service on April 9, 2019 if you have configured both of the following Windows Update for Business policies:
 
