@@ -71,6 +71,7 @@ For more information on how to take action on a machine, see [Take response acti
 ### Active alerts
 
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can view a high level overview of the alerts and risk level. More information is available in the "Alerts" drill down.
+
 ![Image of active alerts tile](images/active-alerts-risk-level.png)
 
 >[!NOTE]
@@ -78,11 +79,9 @@ If you have enabled the Azure ATP feature and there are alerts related to the ma
 
 ### Logged on users
 
-The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the"See all users" hyperlink opens the details pane that displays information such as user and logon type, and first/last seen.
+The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the"See all users" hyperlink opens the details pane that displays information such as user and logon type, and first/last seen. For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ![Image of user details pane](images/logged-on-users.png)
-
- For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ### Security assessments
 
