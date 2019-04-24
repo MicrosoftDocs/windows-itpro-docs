@@ -57,9 +57,6 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 - Reduce disruptive prompts by adding rules to allow data sharing from approved apps.
 - Tune WIP rules by confirming that certain apps are allowed or denied by current policy.
 
->[!NOTE]
-> Until January 2019 it was possible to manage WIP functions using the Microsoft Operations Management Suite (OMS) but OMS has now been retired.
-
 ## Use Device Health and Intune to adjust WIP protection policy
 
 The information needed for the following steps can be found using Device Health, which you will first have to set up. Learn more about how you can  [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor).
