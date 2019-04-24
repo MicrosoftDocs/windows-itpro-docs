@@ -1,10 +1,10 @@
 ﻿### YamlMime:YamlDocument
 
 documentType: LandingData
-title: Windows 10, version 1709 and Windows Server, 1709
+title: Windows 10, version 1709 and Windows Server, version 1709
 metadata:
   document_id: 
-  title: Windows 10, version 1709 and Windows Server, 1709
+  title: Windows 10, version 1709 and Windows Server, version 1709
   description: View annoucements and review known issues and fixes for Windows 10 version 1709 and Windows Server 1709
   keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
   ms.localizationpriority: high
@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues for Windows 10, version 1709 and Windows Server, 1709. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      Find information on known issues for Windows 10, version 1709 and Windows Server, version 1709. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
       " 
 
@@ -52,7 +52,7 @@ sections:
 - items:
   - type: markdown
     text: "
-        <hr>
+        <hr class='cardsM'>
       "
 
 - title: Known issues

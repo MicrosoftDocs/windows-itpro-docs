@@ -57,7 +57,7 @@ sections:
 - items:
   - type: markdown
     text: "
-        <hr>
+        <hr class='cardsM'>
       "
 
 - title: Known issues
