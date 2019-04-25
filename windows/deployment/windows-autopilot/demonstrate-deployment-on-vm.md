@@ -647,7 +647,7 @@ Before we can pull an application into Intune to make it part of our AP profile,
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 
-Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).  Copy the file to a known location, such as C:\Notepad++msi.
+Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then opy the file to a known location, such as C:\Notepad++msi.
 
 Run the IntuneWinAppUtil tool, supplying answers to the three questions, for example:
 
@@ -657,7 +657,8 @@ After the tool finishes running, you should have an .intunewin file in the Outpu
 
 #### Create app in Intune
 
-Log into the Azure portal and select Intune.
+Log into the Azure portal and select **Intune**.
+
 Navigate to **Intune > Clients apps > Apps**, and then click the **Add** button to create a new app package.
 
 ![Add app](images/app02.png) 
@@ -740,8 +741,11 @@ Select **Included Groups** and assign the groups you previously created that wil
 ![Add app](images/app15.png) 
 
 In the **Select groups** pane, click the **Select** button.
+
 In the **Assign group** pane, select **OK**.
+
 In the **Add group** pane, select **OK**.
+
 In the app **Assignments** pane, select **Save**.
 
 ![Add app](images/app16.png) 
@@ -790,7 +794,7 @@ Click **OK** and then click **Add**.
 	
 In the **Intune > Client Apps > Apps** pane, select the Office package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
-![Add app](images/app21.png) 
+![Add app](images/app22.png) 
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
@@ -800,9 +804,9 @@ For our purposes, select **Required** from the **Assignment type** dropdown menu
 
 Select **Included Groups** and assign the groups you previously created that will use this app:
 
-![Add app](images/app22.png) 
-
 ![Add app](images/app23.png) 
+
+![Add app](images/app24.png) 
 
 In the **Select groups** pane, click the **Select** button.
 
@@ -812,7 +816,7 @@ In the **Add group** pane, select **OK**.
 
 In the app **Assignments** pane, select **Save**.
 
-![Add app](images/app24.png) 
+![Add app](images/app25.png) 
 
 At this point, you have completed steps to add Office to Intune.
 
@@ -820,7 +824,7 @@ For more information on adding Office apps to Intune, see [Assign Office 365 app
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 
-![Add app](images/app25.png) 
+![Add app](images/app26.png) 
 
 ## Glossary
 
