@@ -17,3 +17,7 @@
 ####[Resolved issues](resolved-issues-windows-8.1-and-windows-server-2012-r2.yml)
 ### [Windows 7 and Windows Server 2008 R2](status-windows-7-and-windows-server-2008-r2-sp1.yml)
 ####[Resolved issues](resolved-issues-windows-7-and-windows-server-2008-r2-sp1.yml)
+### [Windows Server 2012](status-windows-server-2012.yml)
+####[Resolved issues](resolved-issues-windows-server-2012.yml)
+### [Windows Server 2008 SP2](status-windows-server-2008-sp2.yml)
+####[Resolved issues](resolved-issues-windows-server-2008-sp2.yml)
