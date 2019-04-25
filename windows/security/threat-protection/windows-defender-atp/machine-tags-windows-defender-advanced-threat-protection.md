@@ -19,22 +19,16 @@ ms.topic: article
 
 # Create and manage machine tags
 
-Add tags on machines to create a logical group affiliation.
-
-You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or see information by assigning the machine group(s) to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
-
-You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). In an investigation, you can filter the **Machines list** to just specific machine groups by using the **Group** filter.
-
-Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
+Add tags on machines to create a logical group affiliation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in **Machines list** view, or to group machines. For more information on machine grouping, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
 
 You can add tags on machines using the following ways:
 
 - Setting a registry key value
 - Using the portal
 
-## Add machine tags by setting a registry key value
+To add machine tags using API, see [Add or remove machine tags API](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md).
 
-Add tags on machines which can be used as a filter in **Machines list** view. You can limit the machines in the list by selecting the Tag filter.
+## Add machine tags by setting a registry key value
 
 >[!NOTE]
 > Applicable only on the following machines:
@@ -53,38 +47,27 @@ Use the following registry key entry to add a tag on a machine:
 >[!NOTE]
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
 
-## Add machine tags  using the portal
+## Add and manage machine tags using the portal
 
-Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
+1. Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
 
-1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
-
-    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-    -	**Machines list** - Select the machine name from the list of machines.
-    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+    - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+    - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    - **Machines list** - Select the machine name from the list of machines.
+    - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
     You can also get to the alert page through the file and IP views.
 
-2.	Open the **Actions** menu and select **Manage tags**.
+2. Select **Manage Tags** from the row of Response actions.
 
-    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
+    ![Image of manage tags button](images/manage-tags.png)
 
-3. Enter tags on the machine. To add more tags, click the + icon.
-4. Click **Save and close**. 
+3. Type to find or create tags
 
-    ![Image of adding tags on a machine](images/atp-save-tag.png)
+    ![Image of adding tags on a machine](images/new-tags.png)
 
-    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** filter to see the relevant list of machines.
+Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** filter to see the relevant list of machines.
 
-### Manage machine tags
-You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
+You can also delete tags from this view.
 
-![Image of adding tags on a machine](images/atp-tag-management.png)
-
-## Add machine tags using APIs
-For more information, see [Add or remove machine tags API](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md).
-
-
-
-
+![Image of adding tags on a machine](images/more-manage-tags.png)

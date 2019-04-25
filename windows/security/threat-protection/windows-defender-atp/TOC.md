@@ -42,7 +42,6 @@
  
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-##### [Manage machine group and tags](machine-tags-windows-defender-advanced-threat-protection.md)
 ##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ##### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ###### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
