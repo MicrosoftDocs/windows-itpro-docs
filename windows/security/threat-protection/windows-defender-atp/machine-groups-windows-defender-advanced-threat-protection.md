@@ -18,6 +18,7 @@ ms.topic: article
 ---
 
 # Create and manage machine groups
+
 **Applies to:**
 
 - Azure Active Directory
@@ -28,7 +29,7 @@ In an enterprise scenario, security operation teams are typically assigned a set
 
 In Windows Defender ATP, you can create machine groups and use them to:
 
-- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
+- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md)
 - Configure different auto-remediation settings for different sets of machines
 - Assign specific remediation levels to apply during automated investigations
 - In an investigation, filter the **Machines list** to just specific machine groups by using the **Group** filter.
