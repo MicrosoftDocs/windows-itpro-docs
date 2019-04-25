@@ -18,43 +18,43 @@ ms.topic: article
 ---
 
 # Create and manage machine tags
-Add tags on machines to create a logical group affiliation. Machine group affiliation can represent geographic location, specific activity, importance level and others.
 
-You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or who can see information on a specific machine group or groups by assigning the machine group to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+Add tags on machines to create a logical group affiliation.
 
-You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
+You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or see information by assigning the machine group(s) to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
 
-In an investigation, you can filter the Machines list to just specific machine groups by using the Groups filter. 
+You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). In an investigation, you can filter the **Machines list** to just specific machine groups by using the **Group** filter.
 
-
-Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. 
+Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
 
 You can add tags on machines using the following ways:
-- By setting a registry key value
-- By using the portal
 
-## Add machine tags by setting a registry key value
-Add tags on machines which can be used as a filter in Machines list view. You can limit the machines in the list by selecting the Tag filter on the Machines list.
+- Setting a registry key value
+- Using the portal
+
+## Add machine tags by setting a registry key value
+
+Add tags on machines which can be used as a filter in **Machines list** view. You can limit the machines in the list by selecting the Tag filter.
 
 >[!NOTE]
 > Applicable only on the following machines:
 >- Windows 10, version 1709 or later
 >- Windows Server, version 1803 or later
 >- Windows Server 2016
->- Windows Server 2012 R2 
+>- Windows Server 2012 R2
 
-Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines. 
+Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
 Use the following registry key entry to add a tag on a machine:
 
--	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
--	Registry key value (string): Group
+- Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+- Registry key value (string): Group
 
 >[!NOTE]
->The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report. 
+>The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
 
+## Add machine tags  using the portal
 
-## Add machine tags using the portal
 Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
 
 1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
