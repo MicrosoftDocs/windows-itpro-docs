@@ -1,1 +1,37 @@
-﻿
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows Server 2012
+metadata:
+  document_id: 
+  title: Windows Server 2012
+  description: View annoucements and review known issues and fixes for Windows Server 2012
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues for Windows Server 2012. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      
+      " 
+
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Resolved issues
+- items:
+  - type: markdown
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      </table>
+      "
