@@ -30,7 +30,7 @@ sections:
 - title: Resolved issues
 - items:
   - type: markdown
-    text: "<div></div>
+    text: "
       <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
       <tr><td><div id='233msg'></div><b>End-user-defined characters (EUDC) may cause blue screen at startup</b><br>If you enable per font end-user-defined characters (EUDC), the system may stop working and a blue screen may appear at startup. <br><br><a href = '#233msgdesc'>See details ></a></td><td>OS Build 16299.1059<br><br>March 19, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489890' target='_blank'>KB4489890</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493441' target='_blank'>KB4493441</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='221msg'></div><b>MSXML6 causes applications to stop responding if an exception was thrown</b><br>MSXML6 causes applications to stop responding if an exception was thrown during node operations, such as appendChild(), insertBefore(), and moveNode().<br><br><a href = '#221msgdesc'>See details ></a></td><td>OS Build 16299.904<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480978' target='_blank'>KB4480978</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493441' target='_blank'>KB4493441</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
