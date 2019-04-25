@@ -31,7 +31,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
       <tr><td><div id='235msg'></div><b>End-user-defined characters (EUDC) cause blue screen at startup</b><br>If you enable per font end-user-defined characters (EUDC), the system will stop working and a blue screen may appear at startup. <br><br><a href = '#235msgdesc'>See details ></a></td><td>OS Build 14393.2879<br><br>March 19, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489889' target='_blank'>KB4489889</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493470' target='_blank'>KB4493470</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='241msg'></div><b>Internet Explorer 11 authentication issue with multiple concurrent logons</b><br>Internet Explorer 11 users may encounter issues if two or more people use the same user account for multiple, concurrent login sessions on the same Windows Server machine.<br><br><a href = '#241msgdesc'>See details ></a></td><td>OS Build 14393.2724<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480961' target='_blank'>KB4480961</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493470' target='_blank'>KB4493470</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='223msg'></div><b>MSXML6 may cause applications to stop responding </b><br>MSXML6 may cause applications to stop responding if an exception was thrown during node operations, such as appendChild(), insertBefore(), and moveNode(). <br><br><a href = '#223msgdesc'>See details ></a></td><td>OS Build 14393.2724<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480961' target='_blank'>KB4480961</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493470' target='_blank'>KB4493470</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
@@ -51,7 +51,7 @@ sections:
       </table>
       "
 
-- title: Issue Details
+- title: Issue details
 - items:
   - type: markdown
     text: "

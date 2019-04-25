@@ -59,14 +59,14 @@ sections:
 - items:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
-      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='234msg'></div><b>End-user-defined characters (EUDC) may cause blue screen at startup</b><br>If you enable per font end-user-defined characters (EUDC), the system may stop working and a blue screen may appear at startup. <br><br><a href = '#234msgdesc'>See details ></a></td><td>OS Build 15063.1716<br><br>March 19, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489888' target='_blank'>KB4489888</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493474' target='_blank'>KB4493474</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='222msg'></div><b>MSXML6 may cause applications to stop responding </b><br>MSXML6 may cause applications to stop responding if an exception was thrown during node operations, such as appendChild(), insertBefore(), and moveNode().<br><br><a href = '#222msgdesc'>See details ></a></td><td>OS Build 15063.1563<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480973' target='_blank'>KB4480973</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493474' target='_blank'>KB4493474</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
       <tr><td><div id='190msg'></div><b>Custom URI schemes may not start corresponding application</b><br>Custom URI schemes for application protocol handlers may not start the corresponding application for local intranet and trusted sites in Internet Explorer.<br><br><a href = '#190msgdesc'>See details ></a></td><td>OS Build 15063.1689<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489871' target='_blank'>KB4489871</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>March 19, 2019 10:00 AM PT</td></tr>
       </table>
       "
 
-- title: Issue Details
+- title: Issue details
 - items:
   - type: markdown
     text: "
