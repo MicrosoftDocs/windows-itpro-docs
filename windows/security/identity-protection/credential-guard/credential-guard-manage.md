@@ -21,7 +21,6 @@ ms.date: 03/01/2019
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Windows Defender Credential Guard Deployment](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474) in the Deep Dive into Windows Defender Credential Guard video series.
 
 ## Enable Windows Defender Credential Guard
 Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-credential-guard-by-using-group-policy), the [registry](#enable-credential-guard-by-using-the-registry), or the Windows Defender Device Guard and Windows Defender Credential Guard [hardware readiness tool](#hardware-readiness-tool). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
