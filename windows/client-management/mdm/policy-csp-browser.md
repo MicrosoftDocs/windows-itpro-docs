@@ -3978,7 +3978,7 @@ Most restricted value: 0
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Browser policies supported by Windows Holographic for Business
 
 - [Browser/AllowAutofill](#browser-allowautofill)<sup>5</sup>
 - [Browser/AllowDoNotTrack](#browser-allowdonottrack)<sup>5</sup>

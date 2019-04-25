@@ -396,7 +396,7 @@ Supported operations are Add, Delete, Get, and Replace.
 <!--EndHoloLens-->
   
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Wifi policies supported by Windows Holographic for Business
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)<sup>5</sup>
 <!--EndHoloLensBusiness-->

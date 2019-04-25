@@ -501,7 +501,7 @@ Value type is string.
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)<sup>5</sup>
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)<sup>5</sup>

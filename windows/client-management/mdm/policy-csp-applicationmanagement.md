@@ -1050,7 +1050,7 @@ XSD:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business
 
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)<sup>5</sup>
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)<sup>5</sup>

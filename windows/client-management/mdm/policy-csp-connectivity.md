@@ -972,7 +972,7 @@ ADMX Info:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Connectivity policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Connectivity policies supported by Windows Holographic for Business
 
 - [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)<sup>5</sup>
 - [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)<sup>5</sup>

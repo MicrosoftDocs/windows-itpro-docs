@@ -1223,7 +1223,7 @@ Most restricted value is 0.
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
 
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)<sup>5</sup>
 - [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)<sup>5</sup>

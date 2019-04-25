@@ -1444,7 +1444,7 @@ ADMX Info:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>System policies supported by Windows Holographic for Business
 
 - [System/AllowTelemetry](#system-allowtelemetry)<sup>5</sup>
 - [System/AllowLocation](#system-allowlocation)<sup>5</sup>

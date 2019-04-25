@@ -859,7 +859,7 @@ The following list shows the supported values:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Search policies supported by Windows Holographic for Business
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)<sup>5</sup>
 <!--EndHoloLensBusiness-->

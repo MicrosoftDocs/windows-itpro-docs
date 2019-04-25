@@ -3589,7 +3589,7 @@ ADMX Info:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Update policies supported by Windows Holographic for Business
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)<sup>5</sup>
 - [Update/AllowUpdateService](#update-allowupdateservice)<sup>5</sup>

@@ -1577,7 +1577,7 @@ Validation procedure:
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Experience policies supported by Windows Holographic for Business
 
 - [Experience/AllowCortana](#experience-allowcortana)<sup>5</sup>
 <!--EndHoloLensBusiness-->

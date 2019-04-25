@@ -250,7 +250,7 @@ The default value is an empty string, which allows all email accounts on the dev
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Accounts policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Accounts policies supported by Windows Holographic for Business
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)<sup>5</sup>
 <!--EndHoloLensBusiness-->

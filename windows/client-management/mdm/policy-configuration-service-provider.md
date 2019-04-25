@@ -15,7 +15,7 @@ ms.date: 04/18/2019
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
+The Policy configuration service provider enables the enterprise to configure policies on Windows&nbsp;10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
 
@@ -4985,18 +4985,18 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
+## <a href="" id="hololenbusinessspolicies"></a>Policies supported by Windows Holographic for Business  
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
 - [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-- [Authentication/PreferredAadTenantDomainName​](#authentication-preferredaadtenantdomainname)
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
 - [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-- [Browser/AllowAutofill​](#browser-allowautofill)
+- [Browser/AllowAutofill](#browser-allowautofill)
 - [Browser/AllowCookies](#browser-allowcookies)  
 - [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
 - [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
@@ -5004,7 +5004,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
 - [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
 - [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-- [Connectivity/AllowUSBConnection​](#connectivity-allowusbconnection)
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
 - [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
@@ -5027,7 +5027,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [Update/AllowUpdateService](#update-allowupdateservice)  
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay​](#update-scheduledinstallday)  
+- [Update/ScheduledInstallDay](#update-scheduledinstallday)  
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
