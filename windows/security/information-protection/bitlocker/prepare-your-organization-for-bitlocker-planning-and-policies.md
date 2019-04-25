@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/17/2019
+ms.date: 04/24/2019
 ---
 
 # Prepare your organization for BitLocker: Planning and policies
@@ -201,8 +201,8 @@ However, you cannot use recovery passwords generated on a system in FIPS mode fo
 
 ## More information
 
-- [Trusted Platform Module](/windows/security/hardware-protection/tpm/trusted-platform-module-overview.md)
-- [TPM Group Policy settings](/windows/security/hardware-protection/tpm/trusted-platform-module-services-group-policy-settings.md)
+- [Trusted Platform Module](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-top-node)
+- [TPM Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 - [BitLocker](bitlocker-overview.md)
 - [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
