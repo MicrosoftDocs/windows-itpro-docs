@@ -1,0 +1,91 @@
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows 10, version 1507
+metadata:
+  document_id: 
+  title: Windows 10, version 1507
+  description: View annoucements and review known issues and fixes for Windows 10 version 1507
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues for Windows 10, version 1507. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      
+      " 
+
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540
+      html: Read the announcement >
+      image: 
+        src: https://docs.microsoft.com//media/common/i_deploy.svg
+      title: Windows 10, version 1809 designated for broad deployment
+    - href: https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency
+      html: Find out more >
+      image: 
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: Improvements to the Windows 10 update experience are coming
+    - href: https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience
+      html: Learn about our approach >
+      image: 
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: How do we measure and improve the quality of Windows?
+- items:
+  - type: markdown
+    text: "
+      <table border='0'><tr><td align='right'><a href='https://review.docs.microsoft.com/en-us/windows/release-information/windows-message-center?branch=release-info-preview'>See all messages ></a></td></tr></table>
+      "
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Known issues
+- items:
+  - type: markdown
+    text: "
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='224msg'></div><b>MSXML6 may cause applications to stop responding </b><br>MSXML6 may cause applications to stop responding if an exception was thrown during node operations, such as appendChild(), insertBefore(), and moveNode(). <br><br><a href = '#224msgdesc'>See details ></a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480962' target='_blank'>KB4480962</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493475' target='_blank'>KB4493475</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
+      <tr><td><div id='192msg'></div><b>Custom URI schemes may not start corresponding application</b><br>Custom URI schemes for application protocol handlers may not start the corresponding application for local intranet and trusted sites in Internet Explorer.<br><br><a href = '#192msgdesc'>See details ></a></td><td>OS Build 10240.18158<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489872' target='_blank'>KB4489872</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493475' target='_blank'>KB4493475</a></td><td>April 09, 2019 10:00 AM PT</td></tr>
+      </table>
+      "
+
+- title: Issue Details
+- items:
+  - type: markdown
+    text: "
+        <div>
+        </div> 
+      "
+- title: March 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Details</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='192msgdesc'></div><b>Custom URI schemes may not start corresponding application</b><div>After installing <a href=\"https://support.microsoft.com/en-us/help/4489872\" target=\"_blank\">KB4489872</a>, Custom URI Schemes for Application Protocol handlers may not start the corresponding application for local intranet and trusted sites on Internet Explorer.</div><div><br></div><div>Affected platforms:</div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 8.1; Windows 7, Service Pack 1&nbsp;</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2008 R2 SP1</li></ul><div><br></div><div><strong>Resolution:</strong> This issue was resolved in <a href=\"https://support.microsoft.com/en-us/help/4493475\" target=\"_blank\">KB4493475</a>.</div><br><a href ='#192msg'>Back to top</a></td><td>OS Build 10240.18158<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/en-us/help/4489872' target='_blank'>KB4489872</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493475' target='_blank'>KB4493475</a></td><td>Resolved:<br>April 09, 2019 10:00 AM PT<br><br>Opened:<br>March 12, 2019 10:00 AM PT</td></tr>
+      </table>
+      "
+
+- title: January 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='1'><tr bgcolor='#d4d7d8'><td width='65%'>Details</td><td width='15%'>Affected build</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='224msgdesc'></div><b>MSXML6 may cause applications to stop responding </b><div>After installing <a href=\"https://support.microsoft.com/en-us/help/4480962\" target=\"_blank\">KB4480962</a>, MSXML6 causes applications to stop responding if an exception was thrown during node operations, such as appendChild(), insertBefore(), and moveNode().</div><div><br></div><div>The Group Policy editor may stop responding when editing a Group Policy Object (GPO) that contains Group Policy Preferences (GPP) for Internet Explorer 10 settings.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 8.1</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2</li></ul><div><br></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href=\"https://support.microsoft.com/en-us/help/4493475\" target=\"_blank\">KB4493475</a>.</div><br><a href ='#224msg'>Back to top</a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/en-us/help/4480962' target='_blank'>KB4480962</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/en-us/help/4493475' target='_blank'>KB4493475</a></td><td>Resolved:<br>April 09, 2019 10:00 AM PT<br><br>Opened:<br>January 08, 2019 10:00 AM PT</td></tr>
+      </table>
+      "
