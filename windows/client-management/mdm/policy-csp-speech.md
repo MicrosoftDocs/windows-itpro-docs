@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/09/2018
+ms.date: 04/18/2019
 ---
 
 # Policy CSP - Speech
@@ -68,28 +68,41 @@ Added in Windows 10, version 1607. Specifies whether the device will receive up
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Automatic Update of Speech Data*
--   GP name: *AllowSpeechModelUpdate*
--   GP path: *Windows Components/Speech*
--   GP ADMX file name: *Speech.admx*
+- GP English name: *Allow Automatic Update of Speech Data*
+- GP name: *AllowSpeechModelUpdate*
+- GP path: *Windows Components/Speech*
+- GP ADMX file name: *Speech.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Speech policies supported by Windows Holographic
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)<sup>5</sup>
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenspolicies"></a>Speech policies supported by Windows Holographic for Business
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)<sup>5</sup>
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

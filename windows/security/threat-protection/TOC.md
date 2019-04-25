@@ -228,6 +228,7 @@
 ####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp/configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ###### [Onboard servers](windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard non-Windows machines](windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines without Internet access](windows-defender-atp/onboard-offline-machines.md)
 ###### [Run a detection test on a newly onboarded machine](windows-defender-atp/run-detection-test-windows-defender-advanced-threat-protection.md)
 ###### [Run simulated attacks on machines](windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection.md)
 ###### [Configure proxy and Internet connectivity settings](windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection.md)
@@ -345,6 +346,10 @@
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
 ###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
 
+##### Interoperability
+###### [Partner applications](windows-defender-atp/partner-applications.md)
+
+
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage roles](windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md)
@@ -389,7 +394,7 @@
 #####Rules
 ###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation allowed/blocked lists](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-###### [Manage allowed/blocked lists](windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage indicators](windows-defender-atp/manage-indicators.md)
 ###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
   

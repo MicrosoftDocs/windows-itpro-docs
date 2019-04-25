@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/24/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - System
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -136,18 +136,18 @@ If you enable or do not configure this policy setting, users can download and in
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Toggle user control over Insider builds*
--   GP name: *AllowBuildPreview*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *AllowBuildPreview.admx*
+- GP English name: *Toggle user control over Insider builds*
+- GP name: *AllowBuildPreview*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *AllowBuildPreview.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed. The item "Get Insider builds" is unavailable, users are unable to make their devices available for preview software.
--   1 – Allowed. Users can make their devices available for downloading and installing preview software.
--   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
+- 0 – Not allowed. The item "Get Insider builds" is unavailable, users are unable to make their devices available for preview software.
+- 1 – Allowed. Users can make their devices available for downloading and installing preview software.
+- 2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -195,11 +195,11 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow device name to be sent in Windows diagnostic data*
--   GP name: *AllowDeviceNameInDiagnosticData*
--   GP element: *AllowDeviceNameInDiagnosticData*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Allow device name to be sent in Windows diagnostic data*
+- GP name: *AllowDeviceNameInDiagnosticData*
+- GP element: *AllowDeviceNameInDiagnosticData*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -259,8 +259,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+- 0 (default) – Not allowed.
+- 1 – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -315,9 +315,9 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disabled.
--   1 (default) – Permits Microsoft to configure device settings only.
--   2 – Allows Microsoft to conduct full experimentations.
+- 0 – Disabled.
+- 1 (default) – Permits Microsoft to configure device settings only.
+- 2 – Allows Microsoft to conduct full experimentations.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -372,17 +372,17 @@ This setting is used by lower-level components for text display and fond handlin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable Font Providers*
--   GP name: *EnableFontProviders*
--   GP path: *Network/Fonts*
--   GP ADMX file name: *GroupPolicy.admx*
+- GP English name: *Enable Font Providers*
+- GP name: *EnableFontProviders*
+- GP path: *Network/Fonts*
+- GP ADMX file name: *GroupPolicy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - false - No traffic to fs.microsoft.com and only locally-installed fonts are available.
--   1 - true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
+- 0 - false - No traffic to fs.microsoft.com and only locally-installed fonts are available.
+- 1 - true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -445,18 +445,18 @@ For example, an app's original Location setting is Off. The administrator then s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off location*
--   GP name: *DisableLocation_2*
--   GP path: *Windows Components/Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+- GP English name: *Turn off location*
+- GP name: *DisableLocation_2*
+- GP path: *Windows Components/Location and Sensors*
+- GP ADMX file name: *Sensors.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
--   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
--   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
+- 0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
+- 1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
+- 2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -507,8 +507,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
--   1 (default) – Allow a storage card.
+- 0 – SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
+- 1 (default) – Allow a storage card.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -560,9 +560,9 @@ The following tables describe the supported values:
 
 Windows 8.1 Values:
 
--   0 - Not allowed.
--   1 – Allowed, except for Secondary Data Requests.
--   2 (default) – Allowed.
+- 0 - Not allowed.
+- 1 – Allowed, except for Secondary Data Requests.
+- 2 (default) – Allowed.
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -589,11 +589,11 @@ Windows 8.1 Values:
 
 Windows 10 Values:
 
--   0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+- 0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
     Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
--   1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.
--   2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
--   3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
+- 1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.
+- 2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
+- 3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -634,11 +634,11 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Telemetry*
--   GP name: *AllowTelemetry*
--   GP element: *AllowTelemetry*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Allow Telemetry*
+- GP name: *AllowTelemetry*
+- GP element: *AllowTelemetry*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -692,8 +692,8 @@ Most restricted value is 0.
 The following list shows the supported values:
 orted values:
 
--   0 – Not allowed.
--   1 (default) – Allowed to reset to factory default settings.
+- 0 – Not allowed.
+- 1 (default) – Allowed to reset to factory default settings.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -758,10 +758,10 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Boot-Start Driver Initialization Policy*
--   GP name: *POL_DriverLoadPolicy_Name*
--   GP path: *System/Early Launch Antimalware*
--   GP ADMX file name: *earlylauncham.admx*
+- GP English name: *Boot-Start Driver Initialization Policy*
+- GP name: *POL_DriverLoadPolicy_Name*
+- GP path: *System/Early Launch Antimalware*
+- GP ADMX file name: *earlylauncham.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -814,11 +814,11 @@ Value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
--   GP name: *ConfigureMicrosoft365UploadEndpoint*
--   GP element: *ConfigureMicrosoft365UploadEndpoint*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
+- GP name: *ConfigureMicrosoft365UploadEndpoint*
+- GP element: *ConfigureMicrosoft365UploadEndpoint*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -877,11 +877,11 @@ If you set this policy setting to "Enable telemetry change notifications" or don
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in change notifications.*
--   GP name: *ConfigureTelemetryOptInChangeNotification*
--   GP element: *ConfigureTelemetryOptInChangeNotification*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Configure telemetry opt-in change notifications.*
+- GP name: *ConfigureTelemetryOptInChangeNotification*
+- GP element: *ConfigureTelemetryOptInChangeNotification*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -936,11 +936,11 @@ Set the Allow Telemetry policy setting to prevent people from sending diagnostic
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in setting user interface.*
--   GP name: *ConfigureTelemetryOptInSettingsUx*
--   GP element: *ConfigureTelemetryOptInSettingsUx*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Configure telemetry opt-in setting user interface.*
+- GP name: *ConfigureTelemetryOptInSettingsUx*
+- GP element: *ConfigureTelemetryOptInSettingsUx*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -990,11 +990,11 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data *
--   GP name: *DisableDeviceDelete*
--   GP element: *DisableDeviceDelete*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Disable deleting diagnostic data *
+- GP name: *DisableDeviceDelete*
+- GP element: *DisableDeviceDelete*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -1053,11 +1053,11 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer. *
--   GP name: *DisableDiagnosticDataViewer*
--   GP element: *DisableDiagnosticDataViewer*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Disable diagnostic data viewer. *
+- GP name: *DisableDiagnosticDataViewer*
+- GP element: *DisableDiagnosticDataViewer*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -1114,11 +1114,11 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
--   GP name: *DisableEnterpriseAuthProxy*
--   GP element: *DisableEnterpriseAuthProxy*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
+- GP name: *DisableEnterpriseAuthProxy*
+- GP element: *DisableEnterpriseAuthProxy*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1174,17 +1174,17 @@ If you disable or do not configure this policy setting, apps and features can wo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent the usage of OneDrive for file storage*
--   GP name: *PreventOnedriveFileSync*
--   GP path: *Windows Components/OneDrive*
--   GP ADMX file name: *SkyDrive.admx*
+- GP English name: *Prevent the usage of OneDrive for file storage*
+- GP name: *PreventOnedriveFileSync*
+- GP path: *Windows Components/OneDrive*
+- GP ADMX file name: *SkyDrive.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – False (sync enabled).
--   1 – True (sync disabled).
+- 0 (default) – False (sync enabled).
+- 1 – True (sync disabled).
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -1257,10 +1257,10 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off System Restore*
--   GP name: *SR_DisableSR*
--   GP path: *System/System Restore*
--   GP ADMX file name: *systemrestore.admx*
+- GP English name: *Turn off System Restore*
+- GP name: *SR_DisableSR*
+- GP path: *System/System Restore*
+- GP ADMX file name: *systemrestore.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -1371,11 +1371,11 @@ If you disable or do not configure this policy setting, then the level of diagno
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
--   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
--   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
+- GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
+- GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1425,24 +1425,38 @@ If you disable or do not configure this policy setting, Connected User Experienc
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Connected User Experiences and Telemetry*
--   GP name: *TelemetryProxy*
--   GP element: *TelemetryProxyName*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
+- GP English name: *Configure Connected User Experiences and Telemetry*
+- GP name: *TelemetryProxy*
+- GP element: *TelemetryProxyName*
+- GP path: *Data Collection and Preview Builds*
+- GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic
+
+- [System/AllowTelemetry](#system-allowtelemetry)<sup>5</sup>
+- [System/AllowLocation](#system-allowlocation)<sup>5</sup>
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic for Business
+
+- [System/AllowTelemetry](#system-allowtelemetry)<sup>5</sup>
+- [System/AllowLocation](#system-allowlocation)<sup>5</sup>
+ <!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.

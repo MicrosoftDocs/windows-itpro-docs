@@ -6,14 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/09/2018
+ms.date: 04/17/2019
 ---
 
 # Policy CSP - TextInput
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -99,7 +98,7 @@ ms.date: 08/09/2018
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**  
+<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -111,7 +110,7 @@ ms.date: 08/09/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803.  Placeholder only. Do not use in production environment.
+Added in Windows 10, version 1803. Placeholder only. Do not use in production environment.
 
 <!--/Description-->
 <!--/Policy-->
@@ -166,8 +165,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -175,7 +174,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
+<a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -220,8 +219,8 @@ In Windows 10, version 1803, we introduced new suggestion services in Japanese I
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed. In Windows 10, version 1803, suggestion services are also available in Japanese IME.
+- 0 – Not allowed.
+- 1 (default) – Allowed. In Windows 10, version 1803, suggestion services are also available in Japanese IME.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -229,7 +228,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
+<a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**
 
 <!--SupportedSKUs-->
 <table>
@@ -276,8 +275,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -285,7 +284,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
+<a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**
 
 <!--SupportedSKUs-->
 <table>
@@ -333,8 +332,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -342,7 +341,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
+<a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**
 
 <!--SupportedSKUs-->
 <table>
@@ -389,8 +388,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -398,7 +397,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
+<a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**
 
 <!--SupportedSKUs-->
 <table>
@@ -445,8 +444,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -454,7 +453,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
+<a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**
 
 <!--SupportedSKUs-->
 <table>
@@ -501,8 +500,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -510,8 +509,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**  
-
+<a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -556,16 +554,16 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disabled.
--   1 (default) – Enabled.
+- 0 – Disabled.
+- 1 (default) – Enabled.
 
 <!--/SupportedValues-->
 <!--Validation-->
 To validate that text prediction is disabled on Windows 10 for desktop, do the following:
 
-1.  Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
-2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
-3.  Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
+1. Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
+2. Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
+3. Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -573,7 +571,7 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
+<a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**
 
 <!--Description-->
 This policy has been deprecated.
@@ -584,7 +582,7 @@ This policy has been deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
+<a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**
 
 <!--SupportedSKUs-->
 <table>
@@ -629,18 +627,18 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Uninstallation of Language Features*
--   GP name: *AllowLanguageFeaturesUninstall*
--   GP path: *Windows Components/Text Input*
--   GP ADMX file name: *TextInput.admx*
+ADMX Info:
+- GP English name: *Allow Uninstallation of Language Features*
+- GP name: *AllowLanguageFeaturesUninstall*
+- GP path: *Windows Components/Text Input*
+- GP ADMX file name: *TextInput.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -648,7 +646,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
+<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**
 
 <!--SupportedSKUs-->
 <table>
@@ -688,11 +686,11 @@ This policy setting controls the ability to send inking and typing data to Micro
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Improve inking and typing recognition*
--   GP name: *AllowLinguisticDataCollection*
--   GP path: *Windows Components/Text Input*
--   GP ADMX file name: *TextInput.admx*
+ADMX Info:
+- GP English name: *Improve inking and typing recognition*
+- GP name: *AllowLinguisticDataCollection*
+- GP path: *Windows Components/Text Input*
+- GP ADMX file name: *TextInput.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -704,7 +702,7 @@ This setting supports a range of values between 0 and 1.
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**  
+<a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -739,9 +737,9 @@ This setting supports a range of values between 0 and 1.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
+Added in Windows 10, version 1803. This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode.
 
-The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. 
+The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up.
 But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. 
 When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode.
 
@@ -751,8 +749,8 @@ This policy corresponds to "Show the touch keyboard when not in tablet mode and 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Disabled.
--   1 - Enabled.
+- 0 (default) - Disabled.
+- 1 - Enabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -760,7 +758,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
+<a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**
 
 <!--SupportedSKUs-->
 <table>
@@ -805,8 +803,8 @@ Allows the users to restrict character code range of conversion by setting the c
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – No characters are filtered.
--   1 – All characters except JIS0208 are filtered.
+- 0 (default) – No characters are filtered.
+- 1 – All characters except JIS0208 are filtered.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -814,7 +812,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
+<a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**
 
 <!--SupportedSKUs-->
 <table>
@@ -859,8 +857,8 @@ Allows the users to restrict character code range of conversion by setting the c
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – No characters are filtered.
--   1 – All characters except JIS0208 and EUDC are filtered.
+- 0 (default) – No characters are filtered.
+- 1 – All characters except JIS0208 and EUDC are filtered.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -868,7 +866,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
+<a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**
 
 <!--SupportedSKUs-->
 <table>
@@ -913,8 +911,8 @@ Allows the users to restrict character code range of conversion by setting the c
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – No characters are filtered.
--   1 – All characters except ShiftJIS are filtered.
+- 0 (default) – No characters are filtered.
+- 1 – All characters except ShiftJIS are filtered.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -922,7 +920,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**  
+<a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**
 
 <!--SupportedSKUs-->
 <table>
@@ -963,9 +961,9 @@ Added in Windows 10, version 1803. Specifies the touch keyboard is always docked
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - (default) - The OS determines when it's most appropriate to be available. 
--   1 - Touch keyboard is always docked.
--   2 - Touch keyboard docking can be changed.
+- 0 - (default) - The OS determines when it's most appropriate to be available.
+- 1 - Touch keyboard is always docked.
+- 2 - Touch keyboard docking can be changed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -973,7 +971,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**  
+<a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1014,9 +1012,9 @@ Added in Windows 10, version 1803. Specifies whether the dictation input button 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Dictation button on the keyboard is always available.
--   2 - Dictation button on the keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Dictation button on the keyboard is always available.
+- 2 - Dictation button on the keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1024,7 +1022,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**  
+<a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1065,9 +1063,9 @@ Added in Windows 10, version 1803. Specifies whether the emoji button is enabled
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Emoji button on keyboard is always available.
--   2 - Emoji button on keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Emoji button on keyboard is always available.
+- 2 - Emoji button on keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1075,7 +1073,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**  
+<a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1116,9 +1114,9 @@ Added in Windows 10, version 1803. Specifies whether the full keyboard mode is e
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Full keyboard is always available.
--   2 - Full keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Full keyboard is always available.
+- 2 - Full keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1126,7 +1124,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**  
+<a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1167,9 +1165,9 @@ Added in Windows 10, version 1803. Specifies whether the handwriting input panel
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Handwriting input panel is always available.
--   2 - Handwriting input panel is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Handwriting input panel is always available.
+- 2 - Handwriting input panel is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1177,7 +1175,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**  
+<a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1218,9 +1216,9 @@ Added in Windows 10, version 1803. Specifies whether the narrow keyboard mode is
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Narrow keyboard is always available.
--   2 - Narrow keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Narrow keyboard is always available.
+- 2 - Narrow keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1228,7 +1226,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**  
+<a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1269,9 +1267,9 @@ Added in Windows 10, version 1803. Specifies whether the split keyboard mode is 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Split keyboard is always available.
--   2 - Split keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Split keyboard is always available.
+- 2 - Split keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1279,7 +1277,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**  
+<a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**
 
 <!--SupportedSKUs-->
 <table>
@@ -1320,38 +1318,40 @@ Added in Windows 10, version 1803. Specifies whether the wide keyboard mode is e
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Wide keyboard is always available.
--   2 - Wide keyboard is always disabled.
+- 0 (default) - The OS determines when it's most appropriate to be available.
+- 1 - Wide keyboard is always available.
+- 2 - Wide keyboard is always disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub  
+<hr/>
 
--   [TextInput/AllowIMELogging](#textinput-allowimelogging)  
--   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
--   [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
--   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
--   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
--   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
--   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
--   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
--   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
+<!--StartSurfaceHub-->
+## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub
+
+- [TextInput/AllowIMELogging](#textinput-allowimelogging)
+- [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
+- [TextInput/AllowInputPanel](#textinput-allowinputpanel)
+- [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
+- [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
+- [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
+- [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
+- [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
+- [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
 <!--EndSurfaceHub-->
 
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.

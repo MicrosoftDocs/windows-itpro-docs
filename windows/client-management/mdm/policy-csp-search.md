@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Search
@@ -107,18 +107,18 @@ Added in Windows 10, version 1709. Allow search and Cortana to search cloud sour
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cloud Search*
--   GP name: *AllowCloudSearch*
--   GP element: *AllowCloudSearch_Dropdown*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow Cloud Search*
+- GP name: *AllowCloudSearch*
+- GP element: *AllowCloudSearch_Dropdown*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -166,17 +166,17 @@ Added in Windows 10, version 1803. This specifies whether the Cortana consent pa
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cortana Page in OOBE on an AAD account*
--   GP name: *AllowCortanaInAAD*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow Cortana Page in OOBE on an AAD account*
+- GP name: *AllowCortanaInAAD*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Not allowed. The Cortana consent page will not appear in AAD OOBE during setup.
--   1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
+- 0 (default) - Not allowed. The Cortana consent page will not appear in AAD OOBE during setup.
+- 1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -230,17 +230,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow indexing of encrypted files*
--   GP name: *AllowIndexingEncryptedStoresOrItems*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow indexing of encrypted files*
+- GP name: *AllowIndexingEncryptedStoresOrItems*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -290,17 +290,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow search and Cortana to use location*
--   GP name: *AllowSearchToUseLocation*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow search and Cortana to use location*
+- GP name: *AllowSearchToUseLocation*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -371,17 +371,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow use of diacritics*
--   GP name: *AllowUsingDiacritics*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Allow use of diacritics*
+- GP name: *AllowUsingDiacritics*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -475,17 +475,17 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Always use automatic language detection when indexing content and properties*
--   GP name: *AlwaysUseAutoLangDetection*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Always use automatic language detection when indexing content and properties*
+- GP name: *AlwaysUseAutoLangDetection*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -533,17 +533,17 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable indexer backoff*
--   GP name: *DisableBackoff*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Disable indexer backoff*
+- GP name: *DisableBackoff*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Disable.
--   1 – Enable.
+- 0 (default) – Disable.
+- 1 – Enable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -595,17 +595,17 @@ If you disable or do not configure this policy setting, locations on removable d
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not allow locations on removable drives to be added to libraries*
--   GP name: *DisableRemovableDriveIndexing*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Do not allow locations on removable drives to be added to libraries*
+- GP name: *DisableRemovableDriveIndexing*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Disable.
--   1 – Enable.
+- 0 (default) – Disable.
+- 1 – Enable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -658,10 +658,10 @@ If you disable this policy setting, queries will be performed on the web and web
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Don't search the web or display web results in Search*
--   GP name: *DoNotUseWebResults*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Don't search the web or display web results in Search*
+- GP name: *DoNotUseWebResults*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -720,17 +720,17 @@ When this policy is disabled or not configured, Windows Desktop Search automatic
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Stop indexing in the event of limited hard drive space*
--   GP name: *StopIndexingOnLimitedHardDriveSpace*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Stop indexing in the event of limited hard drive space*
+- GP name: *StopIndexingOnLimitedHardDriveSpace*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disable.
--   1 (default) – Enable.
+- 0 – Disable.
+- 1 (default) – Enable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -778,17 +778,17 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent clients from querying the index remotely*
--   GP name: *PreventRemoteQueries*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- GP English name: *Prevent clients from querying the index remotely*
+- GP name: *PreventRemoteQueries*
+- GP path: *Windows Components/Search*
+- GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disable.
--   1 (default) – Enable.
+- 0 – Disable.
+- 1 (default) – Enable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -844,21 +844,32 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Strict, highest filtering against adult content.
--   1 (default) – Moderate filtering against adult content (valid search results will not be filtered).
+- 0 – Strict, highest filtering against adult content.
+- 1 (default) – Moderate filtering against adult content (valid search results will not be filtered).
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic
 
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic for Business
+
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)<sup>5</sup>
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

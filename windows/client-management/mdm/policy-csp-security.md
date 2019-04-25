@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/09/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Security
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -104,8 +104,8 @@ Specifies whether to allow the runtime configuration agent to install provisioni
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -154,8 +154,8 @@ Specifies whether to allow automatic [device encryption](https://docs.microsoft.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -210,8 +210,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -260,8 +260,8 @@ Specifies whether to allow the runtime configuration agent to remove provisionin
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -314,8 +314,8 @@ Allows or disallow Anti Theft Mode on the device.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Don't allow Anti Theft Mode.
--   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
+- 0 – Don't allow Anti Theft Mode.
+- 1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -366,17 +366,17 @@ Added in Windows 10, version 1709. Admin access is required. The prompt will app
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure the system to clear the TPM if it is not in a ready state.*
--   GP name: *ClearTPMIfNotReady_Name*
--   GP path: *System/Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+- GP English name: *Configure the system to clear the TPM if it is not in a ready state.*
+- GP name: *ClearTPMIfNotReady_Name*
+- GP path: *System/Trusted Platform Module Services*
+- GP ADMX file name: *TPM.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Will not force recovery from a non-ready TPM state.
--   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
+- 0 (default) – Will not force recovery from a non-ready TPM state.
+- 1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -485,8 +485,8 @@ Specifies whether to allow automatic [device encryption](https://docs.microsoft.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Encryption enabled.
--   1 – Encryption disabled.
+- 0 (default) – Encryption enabled.
+- 1 – Encryption disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -622,8 +622,8 @@ Most restricted value is 1.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Encryption is not required.
--   1 – Encryption is required.
+- 0 (default) – Encryption is not required.
+- 1 – Encryption is required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -672,8 +672,8 @@ Specifies whether provisioning packages must have a certificate signed by a devi
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not required.
--   1 – Required.
+- 0 (default) – Not required.
+- 1 – Required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -721,8 +721,8 @@ Specifies whether to retrieve and post TCG Boot logs, and get or cache an encryp
 
 Setting this policy to 1 (Required):
 
--   Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2.0.
--   Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
+- Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2.0.
+- Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
 > [!NOTE]
 > We recommend that this policy is set to Required after MDM enrollment.
@@ -734,23 +734,33 @@ Most restricted value is 1.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not required.
--   1 – Required.
+- 0 (default) – Not required.
+- 1 – Required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic
 
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)<sup>5</sup>
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic for Business
+
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)<sup>5</sup>
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.

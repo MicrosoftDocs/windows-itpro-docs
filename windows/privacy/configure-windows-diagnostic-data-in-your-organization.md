@@ -360,9 +360,9 @@ You can turn on or turn off System Center diagnostic data gathering. The default
 
 The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server 2016 is **Enhanced**.
 
-### Configure the operating system diagnostic data level
+## Configure the operating system diagnostic data level
 
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as **Group Policy, MDM, or Windows Provisioning.** You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
 
 Use the appropriate value in the table below when you configure the management policy.
 
@@ -392,7 +392,7 @@ Use the [Policy Configuration Service Provider (CSP)](https://msdn.microsoft.com
 
 ### Use Registry Editor to set the diagnostic data level
 
-Use Registry Editor to manually set the registry level on each device in your organization or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+Use Registry Editor to manually set the registry level on the devices in your organization, or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, the policy will replace the manually set registry level.
 
 1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
 

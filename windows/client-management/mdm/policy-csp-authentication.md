@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 04/19/2019
 ---
 
 # Policy CSP - Authentication
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -92,8 +92,8 @@ Added in Windows 10, version 1709. Specifies whether password reset is enabled f
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+- 0 (default) – Not allowed.
+- 1 – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -142,8 +142,8 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -194,8 +194,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -248,8 +248,8 @@ Here is an example scenario: At Contoso, there are a lot of shared devices and k
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Do not allow. The FIDO device credential provider disabled. 
--   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
+- 0 - Do not allow. The FIDO device credential provider disabled. 
+- 1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -301,17 +301,17 @@ In the next major release of Windows 10, the default for this policy for consume
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow companion device for secondary authentication*
--   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
--   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
--   GP ADMX file name: *DeviceCredential.admx*
+- GP English name: *Allow companion device for secondary authentication*
+- GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
+- GP path: *Windows Components/Microsoft Secondary Authentication Factor*
+- GP ADMX file name: *DeviceCredential.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 – Allowed.
+- 0 – Not allowed.
+- 1 – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -491,15 +491,28 @@ Value type is string.
 
 <!--/Validation-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)<sup>5</sup>
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic for Business
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)<sup>5</sup>
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)<sup>5</sup>
+<!--EndHoloLensBusiness-->
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.
