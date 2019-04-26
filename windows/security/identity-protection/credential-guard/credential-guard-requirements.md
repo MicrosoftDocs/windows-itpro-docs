@@ -21,9 +21,6 @@ ms.date: 01/12/2018
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See
-[Windows Defender Credential Guard Deployment](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
-in the Deep Dive into Windows Defender Credential Guard video series.
 
 For Windows Defender Credential Guard to provide protection, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Windows Defender Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
 

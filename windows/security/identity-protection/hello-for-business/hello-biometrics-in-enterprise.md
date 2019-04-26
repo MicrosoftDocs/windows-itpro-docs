@@ -71,7 +71,7 @@ To allow fingerprint matching, you must have devices with fingerprint sensors an
 ### Facial recognition sensors
 To allow facial recognition, you must have devices with integrated special infrared (IR) sensors and software. Facial recognition sensors use special cameras that see in IR light, letting them tell the difference between a photo and a living person while scanning an employee’s facial features. These sensors, like the fingerprint sensors, must also include anti-spoofing measures (required) and a way to configure them (optional).
 
--   False Accept Rate (FAR): &lt;0.001
+-   False Accept Rate (FAR): &lt;0.001%
 
 -   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 

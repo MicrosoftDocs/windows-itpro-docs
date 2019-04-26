@@ -63,7 +63,7 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following: 
 
-- Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded.
+- Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Active Directory joined with Azure AD Connect. Workgroup-joined devices are not supported.
 
