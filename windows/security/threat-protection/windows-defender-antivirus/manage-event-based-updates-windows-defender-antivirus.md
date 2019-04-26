@@ -145,7 +145,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
     2. Double-click **Allow notifications to disable definitions based reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     
 > [!NOTE]  
-> By allowing Microsoft to disable local Defender virus definitions, it has identified as causing false-positive detections, through the client's cloud connection to MAPS. You must configure your computer to join Microsoft MAPS for this functionality to work.
+> By allowing Microsoft to disable local Defender virus definitions, it has been identified as causing false-positive detections through the client's cloud connection to MAPS. You must configure your computer to join Microsoft MAPS for this functionality to work.
 
 ## Related topics
 
