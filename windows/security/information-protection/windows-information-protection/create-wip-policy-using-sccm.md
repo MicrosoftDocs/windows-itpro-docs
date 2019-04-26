@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 04/26/2019
 ---
 
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
@@ -479,6 +479,8 @@ After you've decided where your protected apps can access enterprise data on you
         - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
         
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
+
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information, see [Choose to set up Azure Rights Management with WIP](create-wip-policy-using-intune-azure.md#choose-to-set-up-azure-rights-management-with-wip).
 
 2. After you pick all of the settings you want to include, click **Summary**.
 
