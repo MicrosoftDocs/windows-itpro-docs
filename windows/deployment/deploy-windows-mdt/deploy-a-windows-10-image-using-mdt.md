@@ -606,7 +606,7 @@ In these steps, you generate offline media from the MDT Production deployment sh
 
 Offline media has its own rules, its own Bootstrap.ini and CustomSettings.ini files. These files are stored in the Control folder of the offline media; they also can be accessed via properties of the offline media in the Deployment Workbench.
 
-1.  On MDT01, using File Explorer, copy the CustomSettings.ini file from the **E:\\MDTBuildLab\\Control** folder to **E:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
+1.  On MDT01, using File Explorer, copy the CustomSettings.ini file from the **E:\MDTProduction\Control** folder to **E:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
 2.  Using Deployment Workbench, in the **MDT Production / Advanced Configuration / Media** node, right-click the **MEDIA001** media, and select **Properties**.
 3.  In the **General** tab, configure the following:
     1.  Clear the Generate x86 boot image check box.
