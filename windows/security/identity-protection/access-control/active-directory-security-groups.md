@@ -328,7 +328,7 @@ The following tables provide descriptions of the default groups that are located
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Enterprise Key Admins](#bkmk-enterprise-key-admins)</p></td>
+<td><p>[Enterprise Key Admins](#enterprise-key-admins)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
