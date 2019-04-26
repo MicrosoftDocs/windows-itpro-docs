@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 04/26/2019
 ---
 
 # Configuration service provider reference
@@ -926,6 +926,34 @@ Footnotes:
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

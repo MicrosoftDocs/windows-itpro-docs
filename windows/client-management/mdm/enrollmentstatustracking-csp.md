@@ -1,7 +1,6 @@
 ---
 title: EnrollmentStatusTracking CSP
-description: The EnrollmentStatusTracking configuration service provider is used by the blocking Enrollment Status Page (ESP) to track Win32 app installations through Sidecar, SCCM, or any other client agent used to install apps. It sends the installation status of both the provider and the Win32 apps back to the ESP, which is displayed on the ESP UI.
-.
+description: EnrollmentStatusTracking CSP
 ms.author: v-madhi@microsoft.com
 ms.topic: article
 ms.prod: w10
@@ -11,10 +10,13 @@ ms.date: 04/25/2019
 ---
 
 # EnrollmentStatusTracking CSP
+
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user.
+During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user. For more information on ESP, see [Windows Autopilot Enrollment Status page](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/enrollment-status).
+
+This CSP was added in Windows 10, version 1903. In the earlier Windows 10 versions, ESP used the **FirstSyncStatus/*Expected*** nodes in the [DMClient CSP](dmclient-csp.md) to track policy and app installation progress.
 
 The following diagram shows the EnrollmentStatusTracking CSP in tree format.
 
@@ -71,13 +73,13 @@ Scope is permanent. Supported operation is Get.
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName***  
 Optional. This node is supported in both user context and device context.  
-Indicates the provider name responsible for installing the apps and providing status back to the Enrollment Status Page.
+Indicates the provider name responsible for installing the apps and providing status back to ESP.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName***  
 Optional. This node is supported in both user context and device context.  
-Represents a unique name for the app whose progress should be tracked by the ESP. The app name can be arbitrary as it is not used directly by the ESP, so the value can be defined however the policy provider chooses.
+Represents a unique name for the app whose progress should be tracked by the ESP. The policy provider can define any arbitrary app name as ESP does not use the app name directly.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
@@ -88,21 +90,21 @@ Represents the installation state for the app. The policy providers (not the MDM
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 = NotInstalled
-- 2 = InProgress
-- 3 = Completed
-- 4 = Error
+- 1 - NotInstalled
+- 2 - InProgress
+- 3 - Completed
+- 4 - Error
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname-rebootrequired"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName*/RebootRequired**  
 Optional. This node is supported in both user context and device context.  
-Indicates if the app installation requires ESP to issue a reboot. The policy providers installing the app (not the MDM server) must set this node. If the policy providers do not set this node, the ESP will not reboot the device for the app install.
+Indicates if the app installation requires ESP to issue a reboot. The policy providers installing the app (not the MDM server) must set this node. If the policy providers do not set this node, the ESP will not reboot the device for the app installation.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 = NotRequired
-- 2 = SoftReboot
-- 3 = HardReboot
+- 1 - NotRequired
+- 2 - SoftReboot
+- 3 - HardReboot
 
 <a href="" id="enrollmentstatustracking-setup-hasprovisioningcompleted"></a>**EnrollmentStatusTracking/Setup/HasProvisioningCompleted**  
 Required. This node is supported in both user context and device context.  
@@ -111,24 +113,24 @@ ESP sets this node when it completes. Providers can query this node to determine
 Scope is permanent. Supported operation is Get.
 
 Value type is boolean. Expected values are as follows:
-- false: Indicates that ESP is complete. This is the default.
-- true: Indicates that ESP is displayed and provisioning is still going.
+- false - Indicates that ESP is complete. This is the default.
+- true - Indicates that ESP is displayed, and provisioning is still going.
 
 <a href="" id="enrollmentstatustracking-devicepreparation"></a>**EnrollmentStatusTracking/DevicePreparation**  
 Required. This node is supported only in device context.  
-Specifies the settings that ESP reads during the the device preparation phase. These setting are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
+Specifies the settings that ESP reads during the device preparation phase. These setting are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
 
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders**  
 Required. This node is supported only in device context.  
-Indicates to the ESP that it should wait in the device preparation phase until all the policy providers are installed or marked as not required.
+Indicates to the ESP that it should wait in the device preparation phase until all the policy providers have their InstallationState node set as 2 (NotRequired) or 3 (Completed).
 
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName***  
 Optional. This node is supported only in device context.  
-Represents a policy provider for the ESP. The node should be given a unique name for the policy provider. Registration of a policy provider indicates to ESP that it should block in the device preparation phase until the provider sets its InstallationState node to 2 (NotRequired) or 3 (Completed). Once all the registered policy providers are marked as Completed (or NotRequired), the ESP progresses to the device setup phase.
+Represents a policy provider for the ESP. The node should be given a unique name for the policy provider. Registration of a policy provider indicates to ESP that it should block in the device preparation phase until the provider sets its InstallationState node to 2 (NotRequired) or 3 (Completed). Once all the registered policy providers are marked as Completed or NotRequired, the ESP progresses to the device setup phase.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
@@ -139,18 +141,18 @@ Communicates the policy provider installation state back to ESP.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 = NotInstalled
-- 2 = NotRequired
-- 3 = Completed
-- 4 = Error
+- 1 - NotInstalled
+- 2 - NotRequired
+- 3 - Completed
+- 4 - Error
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-lasterror"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/LastError**  
 Required. This node is supported only in device context.  
-Represents the last error code during the application installation process. If a policy provider fails to install, it can optionally set an HRESULT error code that theESP can display in an error message to the user. ESP reads this node only when the provider's InstallationState node is set to 4 (Error). This node must be set only by the policy provider, and not by the MDM server.
+Represents the last error code during the application installation process. If a policy provider fails to install, it can optionally set an HRESULT error code that the ESP can display in an error message to the user. ESP reads this node only when the provider's InstallationState node is set to 4 (Error). This node must be set only by the policy provider, and not by the MDM server.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
-Value type is integer. <what are the expected values?>
+Value type is integer.
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-timeout"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/Timeout**  
 Optional. This node is supported only in device context.  
@@ -173,5 +175,5 @@ This node specifies if the policy provider is registered for app provisioning.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is boolean. Expected values are as follows:
-- true: Indicates that the policy provider is registered for app provisioning.
-- false: Indicates that the policy provider is not registered for app provisioning. This is the default.
+- false - Indicates that the policy provider is not registered for app provisioning. This is the default.
+- true - Indicates that the policy provider is registered for app provisioning.
