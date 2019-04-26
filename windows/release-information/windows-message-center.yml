@@ -48,7 +48,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border ='1'><tr bgcolor='#d4d7d8'><td width='89%'>Message</td><td width='11%'>Date</td></tr>
+      <table border ='0'><tr bgcolor='#d4d7d8'><td width='89%'>Message</td><td width='11%'>Date</td></tr>
       
       <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'><b>The benefits of Windows 10 Dynamic Update</b></a><br><br><div>Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. </div><br>
 
