@@ -22,11 +22,11 @@ ms.date: 08/19/2018
 Windows Hello for Business authentication is passwordless, two-factor authentication.  Authenticating with Windows Hello for Business provides a convenient sign-in experience that authenticates the user to both Azure Active Directory and Active Directory resources.<br>
 Azure Active Directory joined devices authenticate to Azure during sign-in and can optional authenticate to Active Directory.  Hybrid Azure Active Directory joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.<br>
 
-[Azure AD join authentication to Azure Active Directory](#Azure-AD-join-authentication-to-Azure-Active-Directory)<br>
-[Azure AD join authentication to Active Directory using a Key](#Azure-AD-join-authentication-to-Active-Directory-using-a-Key)<br>
-[Azure AD join authentication to Active Directory using a Certificate](#Azure-AD-join-authentication-to-Active-Directory-using-a-Certificate)<br>
-[Hybrid Azure AD join authentication using a Key](#Hybrid-Azure-AD-join-authentication-using-a-Key)<br>
-[Hybrid Azure AD join authentication using a Certificate](#Hybrid-Azure-AD-join-authentication-using-a-Certificate)<br>
+[Azure AD join authentication to Azure Active Directory](#azure-ad-join-authentication-to-azure-active-directory)<br>
+[Azure AD join authentication to Active Directory using a Key](#azure-ad-join-authentication-to-active-directory-using-a-key)<br>
+[Azure AD join authentication to Active Directory using a Certificate](#azure-ad-join-authentication-to-active-directory-using-a-certificate)<br>
+[Hybrid Azure AD join authentication using a Key](#hybrid-azure-ad-join-authentication-using-a-key)<br>
+[Hybrid Azure AD join authentication using a Certificate](#hybrid-azure-ad-join-authentication-using-a-certificate)<br>
 
 
 ## Azure AD join authentication to Azure Active Directory
