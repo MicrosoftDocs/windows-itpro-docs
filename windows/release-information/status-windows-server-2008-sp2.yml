@@ -47,7 +47,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border='0'><tr><td align='right'><a href='https://docs.microsoft.com/windows/release-information/windows-message-center'>See all messages ></a></td></tr></table>
+      <div align='right' style='font-size:0.87rem'><a href='https://docs.microsoft.com/windows/release-information/windows-message-center'>See all messages ></a></div>
       "
 - items:
   - type: markdown
