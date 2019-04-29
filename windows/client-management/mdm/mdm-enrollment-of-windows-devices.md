@@ -296,7 +296,7 @@ The deep link used for connecting your device to work will always use the follow
 
 | Parameter | Description                                                  | Supported Value for Windows 10|
 |-----------|--------------------------------------------------------------|----------------------------------------------|
-| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”, "awa", "aadj"                                        |
+| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| MDM (Mobile Device Management), AWA (Adding Work Account), and AADJ (Azure Active Directory Joined).                                       |
 |username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
 | servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
