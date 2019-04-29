@@ -66,7 +66,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 ## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 >[!NOTE]
->The Microsoft Threat Experts' experts-on-demand capability is still on preview.
+>The Microsoft Threat Experts' experts-on-demand capability is still on preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. 
 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
