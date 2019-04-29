@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/26/2019
+ms.date: 04/29/2019
 ---
 
 # Enable block at first sight
@@ -77,7 +77,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
    - **Advanced**
    - **Cloud Protection Service**
 1. In the left column, click **Real time protection**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
-   ![Enable real-time protection](images/defender/wdav-protection-settings-wdsc.png)
+   ![Enable real-time protection](images/defender/sccm-real-time-protection.png)
 1. Click **Advanced**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
    ![Enable Advanced settings](images/defender/sccm-advanced-settings.png)
 1. Click **Cloud Protection Service**, set **Cloud Protection Service membership type** to **Advanced membership**, set **Level for blocking malicious files** to **High**, and set **Allow extended cloud check to block and scan suspicious files for up to (seconds)** to **50** seconds.
