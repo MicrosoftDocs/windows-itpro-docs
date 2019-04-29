@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/17/2019
+ms.date: 04/29/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
