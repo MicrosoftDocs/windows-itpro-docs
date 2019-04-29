@@ -34,15 +34,17 @@ You also need to ensure that you have Windows Defender ATP deployed in your envi
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Windows Defender ATP customer, you can apply through the Windows Defender ATP portal. 
 
-1. From the navigation pane, go to **Settings > General > Advanced features > Threat Experts**.
+1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts**.
 
 2. Click **Apply**. 
+![Image of Microsoft Threat Experts settings](images/MTE_collaboratewithmte.png)
 
-3. In the **Apply** dialog box, read and make sure you understand the terms of agreement.    
+3. Enter your name and email address so that Microsoft can get back to you on your application. 
+![Image of Microsoft Threat Experts application](images/MTE_apply.png)
 
-4. Enter your name and email address so that Microsoft can get back to you on your application. 
+4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved. 
+![Image of Microsoft Threat Experts application confirmation](images/MTE_applicationconfirmation.png)
 
-5. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved. 
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
