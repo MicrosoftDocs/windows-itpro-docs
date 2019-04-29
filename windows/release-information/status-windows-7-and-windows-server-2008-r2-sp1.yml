@@ -58,7 +58,7 @@ sections:
 - title: Known issues
 - items:
   - type: markdown
-    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='255msg'></div><b>System may be unresponsive after restart if Avira antivirus software installed</b><br>Devices with Avira antivirus software installed may become unresponsive upon restart.<br><br><a href = '#255msgdesc'>See details ></a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493472' target='_blank'>KB4493472</a></td><td>Investigating<br><a href = '' target='_blank'></a></td><td>April 09, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='324msg'></div><b>System may be unresponsive after restart with certain McAfee antivirus products</b><br>Devices with McAfee Endpoint Security Threat Prevention 10.x, Host Intrusion Prevention 8.0, or VirusScan Enterprise 8.8 may be slow or unresponsive at startup.<br><br><a href = '#324msgdesc'>See details ></a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493472' target='_blank'>KB4493472</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 18, 2019 <br>05:00 PM PT</td></tr>

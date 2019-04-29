@@ -58,7 +58,7 @@ sections:
 - title: Known issues
 - items:
   - type: markdown
-    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='321msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\".<br><br><a href = '#321msgdesc'>See details ></a></td><td>OS Build 15063.1746<br><br>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493474' target='_blank'>KB4493474</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 09, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='190msg'></div><b>Custom URI schemes may not start corresponding application</b><br>Custom URI schemes for application protocol handlers may not start the corresponding application for local intranet and trusted sites in Internet Explorer.<br><br><a href = '#190msgdesc'>See details ></a></td><td>OS Build 15063.1689<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489871' target='_blank'>KB4489871</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4493436' target='_blank'>KB4493436</a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>

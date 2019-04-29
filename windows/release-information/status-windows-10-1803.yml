@@ -58,7 +58,7 @@ sections:
 - title: Known issues
 - items:
   - type: markdown
-    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='333msg'></div><b>Zone transfers over TCP may fail</b><br>Zone transfers between primary and secondary DNS servers over the Transmission Control Protocol (TCP) may fail.<br><br><a href = '#333msgdesc'>See details ></a></td><td>OS Build 17134.753<br><br>April 25, 2019<br><a href ='https://support.microsoft.com/help/4493437' target='_blank'>KB4493437</a></td><td>Investigating<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
       <tr><td><div id='237msg'></div><b>Issue using PXE to start a device from WDS</b><br>Using PXE to start a device from a WDS server configured to use Variable Window Extension may cause the connection to the WDS server to terminate prematurely.<br><br><a href = '#237msgdesc'>See details ></a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 09, 2019 <br>10:00 AM PT</td></tr>

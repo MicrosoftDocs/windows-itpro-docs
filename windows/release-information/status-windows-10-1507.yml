@@ -58,7 +58,7 @@ sections:
 - title: Known issues
 - items:
   - type: markdown
-    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div>
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr bgcolor='#d4d7d8'><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='323msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\".<br><br><a href = '#323msgdesc'>See details ></a></td><td>OS Build 10240.18186<br><br>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493475' target='_blank'>KB4493475</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 09, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='331msg'></div><b>Embedded objects may display incorrectly</b><br>Any compound document (OLE) server application that places embedded objects into the Windows Metafile (WMF) using the PatBlt API may display embedded objects incorrectly.<br><br><a href = '#331msgdesc'>See details ></a></td><td>OS Build 10240.18132<br><br>February 12, 2019<br><a href ='https://support.microsoft.com/help/4487018' target='_blank'>KB4487018</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4493475' target='_blank'>KB4493475</a></td><td>April 29, 2019 <br>12:45 AM PT</td></tr>
