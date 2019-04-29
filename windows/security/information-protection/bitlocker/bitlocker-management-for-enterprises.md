@@ -53,7 +53,7 @@ If you are installing a server manually, such as a stand-alone server, then choo
 
  Additionally, lights out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md). 
 
- For more information, see the Bitlocker FAQs article and other useful links in [Related Articles](#articles).
+ For more information, see the Bitlocker FAQs article and other useful links in [Related Articles](#related-articles).
  
 ## PowerShell examples
 
