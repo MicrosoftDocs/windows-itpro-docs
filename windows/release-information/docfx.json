@@ -35,7 +35,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/release-information/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "ms.prod": "w10",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
