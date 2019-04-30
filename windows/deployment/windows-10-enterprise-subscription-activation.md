@@ -65,7 +65,7 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 
 - Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
 - Azure Active Directory (Azure AD) available for identity management.
-- Devices must be Azure AD-joined or Active Directory joined with Azure AD Connect. Workgroup-joined devices are not supported.
+- Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
     >[!NOTE]
     >An issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  To resolve this issue, the user must either sign in with an Azure Active Directory account, or you must disable MFA for this user during the 30-day polling period and renewal.
