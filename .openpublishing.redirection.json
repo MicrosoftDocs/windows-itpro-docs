@@ -13949,5 +13949,10 @@
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/manage-indicators",
 "redirect_document_id": true
 },
+{
+    "source_path": "windows/windows-10/release-information/release-information.md",
+    "redirect_url": "/windows/release-information",
+    "redirect_document_id": true
+}
 ]
 }
