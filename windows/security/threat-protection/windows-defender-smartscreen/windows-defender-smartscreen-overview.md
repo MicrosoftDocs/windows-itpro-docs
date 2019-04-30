@@ -52,7 +52,7 @@ When Windows Defender SmartScreen warns or blocks an employee from a website, it
 
 
 ## Viewing Windows event logs for SmartScreen
-SmartScreen also have it's own events Ids on the "Microsoft-Windows-SmartScreen/Debug"
+SmartScreen has it's own events IDs on the "Microsoft-Windows-SmartScreen/Debug"
 
 
 |EventID | Description |
