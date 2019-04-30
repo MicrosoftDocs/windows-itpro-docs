@@ -49,6 +49,9 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 **Secure score**<br>
 Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 
+**Microsoft Threat Experts**<br>
+Microsoft Threat Experts is the new managed threat hunting service in Windows Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
+
 **Advanced hunting**<br>
 Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Windows Defender Security Center. 
 
