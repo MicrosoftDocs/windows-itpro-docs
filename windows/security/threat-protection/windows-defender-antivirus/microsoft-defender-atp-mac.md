@@ -503,7 +503,4 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
    
 ### Installation issues
-If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
-
- 
-For feedback on the preview, contact: _**mdatpfeedback@microsoft.com**_.
+If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
