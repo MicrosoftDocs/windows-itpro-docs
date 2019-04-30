@@ -42,7 +42,7 @@ If you're already a Windows Defender ATP customer, you can apply through the Win
 3. Enter your name and email address so that Microsoft can get back to you on your application. 
 ![Image of Microsoft Threat Experts application](images/MTE_apply.png)
 
-4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved. 
+4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved.   
 ![Image of Microsoft Threat Experts application confirmation](images/MTE_applicationconfirmation.png)
 
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
