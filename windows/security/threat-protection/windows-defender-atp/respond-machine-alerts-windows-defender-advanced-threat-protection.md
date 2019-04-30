@@ -61,11 +61,11 @@ The package contains the following folders:
    - **Machines list** - Select the heading of the machine name from the machines list.
    - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-2.	Open the **Actions** menu and select **Collect investigation package**.
+2. Open the **Actions** menu and select **Collect investigation package**.
 
     ![Image of collect investigation package action](images/atp-actions-collect-investigation-package.png)
 
-3.  Type a comment and select **Yes, collect package** to take action on the machine.
+3. Type a comment and select **Yes, collect package** to take action on the machine.
   
     ![Image of notification to collect package](images/atp-notification-collect-package.png)
 
@@ -74,9 +74,9 @@ The package contains the following folders:
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
     - **Submission time** - Shows when the action was submitted.
-    -	**Status** - Indicates if the package was successfully collected from the network. When the collection is complete, you can download the package.
+    - **Status** - Indicates if the package was successfully collected from the network. When the collection is complete, you can download the package.
 
-3.	Select **Package available** to download the package. </br>
+4. Select **Package available** to download the package. </br>
     When the package is available a new event will be added to the machine timeline.</br>
     You can download the package from the machine page, or the Action center.
 
@@ -85,27 +85,26 @@ The package contains the following folders:
     You can also search for historical packages in the machine timeline.
 
 ## Run Windows Defender Antivirus scan on machines
+
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
 >[!IMPORTANT]
 >- This action is available for machines on Windows 10, version  1709 or later.
 >- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
+1. Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
 
-1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
+- **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+- **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+- **Machines list** - Select the machine name from the list of machines. - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  - **Machines list** - Select the machine name from the list of machines.
-  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
-2.	Open the **Actions** menu and select **Run antivirus scan**.
+2. Open the **Actions** menu and select **Run antivirus scan**.
 
     ![Image of run antivirus scan](images/atp-actions-run-av.png)
-    
+
 3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
 
     ![Image of notification to select quick scan or full scan and add comment](images/atp-av-scan-notification.png)
-    
 
 4. Type a comment and select **Yes, run scan** to start the scan.<br>
 
@@ -119,13 +118,13 @@ As part of the investigation or response process, you can remotely initiate an a
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Restrict app execution
+
 In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
 > - This action is available for machines on Windows 10, version  1709 or later.
-> - This feature is available if your organization uses Windows Defender Antivirus. 
+> - This feature is available if your organization uses Windows Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
-
 
 The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
 
@@ -134,45 +133,42 @@ The action to restrict an application from running applies a code integrity poli
 
 1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
 
-  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  - **Machines list** - Select the machine name from the list of machines.
-  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
+- **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+- **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+- **Machines list** - Select the machine name from the list of machines.
+- **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-2.	Open the **Actions** menu and select **Restrict app execution**.
+2. Open the **Actions** menu and select **Restrict app execution**.
 
     ![Image of restrict app execution action](images/atp-actions-restrict-app-execution.png)
 
-3. Type a comment and select **Yes, restict app execution** to take action on the file.
+3. Type a comment and select **Yes, restrict app execution** to take action on the file.
 
    ![Image of app restriction notification](images/atp-notification-restrict.png)
 
     The Action center shows the submission information:
     ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
 
-
-  - **Submission time** - Shows when the action was submitted.
-  - **Status** - Indicates any pending actions or the results of completed actions.
+- **Submission time** - Shows when the action was submitted.
+- **Status** - Indicates any pending actions or the results of completed actions.
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
-
 
 **Notification on machine user**:</br>
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-![Image of app restriction](images/atp-app-restriction.png) 
+![Image of app restriction](images/atp-app-restriction.png)
 
 ## Remove app restriction 
 Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 
 1.	Select the machine where you restricted an application from running from.
 
-2.	Open the **Actions** menu and select **Remove app restrictions**. 
+2.	Open the **Actions** menu and select **Remove app restrictions**.
 
     ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
 
 3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
-
 
 ## Isolate machines from the network
 Depending on the severity of the attack and the sensitivity of the machine, you might want to isolate the machine from the network. This action can help prevent the attacker from controlling the compromised machine and performing further activities such as data exfiltration and lateral movement.
