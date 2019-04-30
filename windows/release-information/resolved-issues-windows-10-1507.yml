@@ -53,15 +53,6 @@ sections:
         <div>
         </div> 
       "
-- title: April 2019
-- items:
-  - type: markdown
-    text: "
-      <table border ='0'><tr bgcolor='#d4d7d8'><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='331msgdesc'></div><b>Embedded objects may display incorrectly</b><div>Any compound document (OLE) server application that places embedded objects into the Windows Metafile (WMF) using the PatBlt API may display embedded objects incorrectly.&nbsp;</div><div>&nbsp;</div><div>For example, if you paste a Microsoft Excel worksheet object into a Microsoft Word document, the cells may render with a different background color.&nbsp;</div><div>&nbsp;</div><div><strong>Affected platforms:</strong>&nbsp;&nbsp;</div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 10 Enterprise LTSB 2015; Windows 8.1; Windows 7 SP1&nbsp;</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2&nbsp;</li></ul><div></div><div><strong>Resolution: </strong>This issue is resolved in <a href=\"https://support.microsoft.com/help/4493475\" target=\"_blank\">KB4493475</a>.&nbsp;</div><br><a href ='#331msg'>Back to top</a></td><td>OS Build 10240.18132<br><br>February 12, 2019<br><a href ='https://support.microsoft.com/help/4487018' target='_blank'>KB4487018</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4493475' target='_blank'>KB4493475</a></td><td>Resolved:<br>April 09, 2019 <br>10:00 AM PT<br><br>Opened:<br>April 29, 2019 <br>12:45 AM PT</td></tr>
-      </table>
-      "
-
 - title: March 2019
 - items:
   - type: markdown
