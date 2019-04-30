@@ -71,7 +71,7 @@ The minimum required enterprise certificate authority that can be used with Wind
 ## Directory Synchronization ##
 The two directories used in hybrid deployments must be synchronized.  You need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory.
   
-Organizations using older directory synchronization technology, such as DirSync or Azure AD sync need to upgrade to Azure AD Connect
+Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
  
 ### Section Review 
 > [!div class="checklist"]

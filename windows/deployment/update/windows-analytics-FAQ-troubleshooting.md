@@ -195,6 +195,11 @@ Upgrade Readiness only collects app inventory on devices that are not yet upgrad
 Double-check that IE site discovery opt-in has been configured in the deployment script. (See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.)
 
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
+
+There are two additional configurations to check:
+1. Make sure Flip Ahead with Page Prediction is enabled. It can be configured at Internet Options -> Advanced -> Browsing -> Enable flip ahead with page prediction.
+2. Make sure IE is not running in InPrivate mode. 
+
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
 >[!NOTE]
