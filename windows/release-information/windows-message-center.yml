@@ -48,7 +48,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      <table border ='0'><tr bgcolor='#d4d7d8'><td width='80%'>Message</td><td width='20%'>Date</td></tr>
+      <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
       
       <tr><td><a href = 'https://support.microsoft.com/help/4493730/servicing-stack-update-for-windows-server-2008-sp2' target='_blank'><b>Take action: Install servicing stack update for Windows Server 2008 SP2 for SHA-2 code sign support</b></a><br>A standalone update, KB4493730, that introduce SHA-2 code sign support for the servicing stack (SSU) was released today as a security update.</td><td>April 19, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'><b>The benefits of Windows 10 Dynamic Update</b></a><br><div>Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. </div><br>
