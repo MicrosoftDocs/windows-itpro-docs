@@ -23,9 +23,18 @@ ms.topic: article
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
+
+Response actions run along the top of a specific machine page, which you can find from any of the following views:
+
+- **Security operations dashboard** - Select a machine name from the Machines at risk card.
+- **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+- **Machines list** - Select the heading of the machine name from the machines list.
+- **Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+![Image of response actions](images/response-actions.png)
 
 >[!IMPORTANT]
 > - These response actions are only available for machines on Windows 10, version  1703 or later. 
@@ -35,7 +44,21 @@ Quickly respond to detected attacks by isolating machines or collecting an inves
 
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
 
-You can download the package (Zip file) and investigate the events that occurred on a machine.
+To download the package (Zip file) and investigate the events that occurred on a machine
+
+1. Select **Collect investigation package** from the row of response actions at the top of the machine page.
+2. Specify in the text box why you want to perform this action. Select **Confirm**.
+3. The zip file will download
+
+Alternate way:
+
+1. Select **Action center** from the response actions section of the machine page.
+
+    ![Image of action center button](images/action-center-package-collection.png)
+
+3. In the Action center fly-out, select **Package collection package available** to download the zip file.
+  
+    ![Image of download package button](images/collect-package.png)
 
 The package contains the following folders:
 
@@ -55,23 +78,6 @@ The package contains the following folders:
 | Users and Groups| Provides a list of files that each represent a group and its members.                                                                                                                   |
 |WdSupportLogs| Provides the MpCmdRunLog.txt and MPSupportFiles.cab                                                                                                                   |
 | CollectionSummaryReport.xls| This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code in case of failure. You can use this report to track if the package includes all the expected data and identify if there were any errors. |
-
-### Step by step
-
-1. Select the machine that you want to investigate. You can select or search for a machine from any of the following views:
-
-   - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-   - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-   - **Machines list** - Select the heading of the machine name from the machines list.
-   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-2. Select **Action center** from the response actions section of the machine page.
-
-    ![Image of action center button](images/action-center-package-collection.png)
-
-3. In the Action center fly-out, select **Package collection package available** to download the zip file.
-  
-    ![Image of download package button](images/collect-package.png)
 
 ## Run Windows Defender Antivirus scan on machines
 
