@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/07/2018
 ---
 
 #  Run a detection test on a newly onboarded Windows Defender ATP machine 

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 04/29/2019
 ---
 
 # Enable block at first sight
@@ -67,6 +67,23 @@ Block at first sight requires a number of Group Policy settings to be configured
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
+
+### Enable block at first sight with SCCM
+
+1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
+1. Click **Home** > **Create Antimalware Policy**.
+1. Enter a name and a description, and add these settings:
+   - **Real time protection**
+   - **Advanced**
+   - **Cloud Protection Service**
+1. In the left column, click **Real time protection**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
+   ![Enable real-time protection](images/defender/sccm-real-time-protection.png)
+1. Click **Advanced**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
+   ![Enable Advanced settings](images/defender/sccm-advanced-settings.png)
+1. Click **Cloud Protection Service**, set **Cloud Protection Service membership type** to **Advanced membership**, set **Level for blocking malicious files** to **High**, and set **Allow extended cloud check to block and scan suspicious files for up to (seconds)** to **50** seconds.
+   ![Enable Cloud Protection Service](images/defender/sccm-cloud-protection-service.png)
+1. Click **OK** to create the policy.
+
 
 ### Confirm block at first sight is enabled with Group Policy
 

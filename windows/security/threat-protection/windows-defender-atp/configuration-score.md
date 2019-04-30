@@ -2,7 +2,7 @@
 title: Overview of Configuration score in Microsoft Defender Security Center
 description: Expand your visibility into the overall security configuration posture of your organization
 keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
-search.product: Windows 10
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 >[!NOTE]
 >  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection) page.
