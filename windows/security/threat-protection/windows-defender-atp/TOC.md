@@ -389,7 +389,6 @@
  
 #### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
-
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
 ###Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
