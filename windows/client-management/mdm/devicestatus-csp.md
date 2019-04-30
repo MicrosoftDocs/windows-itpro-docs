@@ -157,11 +157,11 @@ Valid values:
 
 Supported operation is Get.
 
-If more than one antivirus provider is active, the **DeviceStatus/Antivirus/SignatureStatus** node returns:
--   1 – If every active antivirus provider has a valid signature status
--   0 – If any of the active antivirus providers has an invalid signature status
+If more than one antivirus provider is active, this node returns:
+-   1 – If every active antivirus provider has a valid signature status.
+-   0 – If any of the active antivirus providers has an invalid signature status.
 
-The **DeviceStatus/Antivirus/SignatureStatus** node also returns 0 when no antivirus provider is active.
+This node also returns 0 when no antivirus provider is active.
 
 <a href="" id="devicestatus-antivirus-status"></a>**DeviceStatus/Antivirus/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antivirus.
@@ -192,11 +192,11 @@ Valid values:
 
 Supported operation is Get.
 
-If more than one antispyware provider is active, the **DeviceStatus/Antispyware/SignatureStatus** node returns:
--   1 – If every active antispyware provider has a valid signature status
--   0 – If any of the active antispyware providers has an invalid signature status
+If more than one antispyware provider is active, this node returns:
+-   1 – If every active antispyware provider has a valid signature status.
+-   0 – If any of the active antispyware providers has an invalid signature status.
 
-The **DeviceStatus/Antispyware/SignatureStatus** node also returns 0 when no antispyware provider is active.
+This node also returns 0 when no antispyware provider is active.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware.
