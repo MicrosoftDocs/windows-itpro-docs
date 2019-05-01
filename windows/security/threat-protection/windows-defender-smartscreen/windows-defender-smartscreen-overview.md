@@ -52,7 +52,7 @@ When Windows Defender SmartScreen warns or blocks an employee from a website, it
 
 
 ## Viewing Windows event logs for SmartScreen
-SmartScreen also have it's own events Ids on the "Microsoft-Windows-SmartScreen/Debug"
+SmartScreen has it's own events IDs on the "Microsoft-Windows-SmartScreen/Debug"
 
 
 |EventID | Description |
@@ -61,7 +61,6 @@ SmartScreen also have it's own events Ids on the "Microsoft-Windows-SmartScreen/
 |1001 | Uri SmartScreen Event|
 |1002 | User Decision SmartScreen Event|
 
-
 ## Related topics
 - [SmartScreen Frequently Asked Questions (FAQ)](https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx)
 
@@ -69,7 +68,7 @@ SmartScreen also have it's own events Ids on the "Microsoft-Windows-SmartScreen/
 
 - [Threat protection](../index.md)
 
-- [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
+- [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
