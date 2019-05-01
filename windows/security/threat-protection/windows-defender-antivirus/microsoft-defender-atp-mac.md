@@ -31,14 +31,13 @@ You should have beginner-level experience in macOS and BASH scripting. You must 
 You should also have access to Windows Defender Security Center.
 
 ### System Requirements
-Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB
 
 Beta versions are not supported.
 
 > [!CAUTION]
-> Running any additional third party endpoint protection alongside Microsoft Defender ATP for Mac may lead to and performance problems and unpredictable side effects.
+> Running other third-party endpoint protection along with Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
