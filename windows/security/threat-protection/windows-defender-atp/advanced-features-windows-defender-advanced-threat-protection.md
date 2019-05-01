@@ -94,7 +94,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability, while  experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
->Microsoft Threat Expert is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security). 
+>The Microsoft Threat Experts capability in Windows Defender ATP is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security). 
 
 ## Microsoft Cloud App Security
 Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 
