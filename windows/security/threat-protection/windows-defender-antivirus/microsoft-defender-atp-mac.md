@@ -464,12 +464,15 @@ Or, from a command line:
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
 
 ## Known issues
-- Microsoft Defender ATP is not yet optimized for performance or disk space.
-- Centrally managed uninstall using Intune is still in development. To uninstall (as a workaround) a manual uninstall action has to be completed on each client device).
-- Geo preference for telemetry traffic is not yet supported. Cloud traffic (definition updates) routed to US only.
-- Full Windows Defender ATP integration is not yet available
-- Not localized yet
-- There might be accessibility issues 
+
+- Not localized yet.
+- There might be accessibility issues.
+- Not optimized for performance or disk space yet.
+- Full Windows Defender ATP integration is not available yet.
+- Mac devices that switch networks may appear multiple times in the APT portal.
+- Geo preference for telemetry traffic is not supported yet. Cloud traffic is routed to the US only.
+- Centrally managed uninstall is still being developed. As a workaround, a manual uninstall must be performed on each client device.
+
 
 ## Collecting diagnostic information
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
