@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 09/03/2018
 ---
 
 # Overview of Secure score in Windows Defender Security Center

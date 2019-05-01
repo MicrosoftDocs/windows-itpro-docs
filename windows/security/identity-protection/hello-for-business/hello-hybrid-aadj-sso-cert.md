@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -131,9 +131,9 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 5. In the content pane, right-click the **NDES Service Rights** Group Policy object and click **Edit**.
 6. In the navigation pane, expand **Policies** under **Computer Configuration**.
 7. Expand **Windows Settings > Security Settings > Local Policies**. Select **User Rights Assignments**.
-8. In the content pane, double-click **Allow log on locally**. Select **Define these policy settings**. and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **Administrators;Backup Operators;DOMAINNAME\NDESSvc;Users** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** twice.
-9. In the content pane, double-click **Log on as a batch job**. Select **Define these policy settings**. and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **Administrators;Backup Operators;DOMAINNAME\NDESSvc;Performance Log Users** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** twice.
-10. In the content pane, double-click **Log on as a batch job**. Select **Define these policy settings**. and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **NT SERVICE\ALL SERVICES;DOMAINNAME\NDESSvc** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** three times.
+8. In the content pane, double-click **Allow log on locally**. Select **Define these policy settings** and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **Administrators;Backup Operators;DOMAINNAME\NDESSvc;Users** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** twice.
+9. In the content pane, double-click **Log on as a batch job**. Select **Define these policy settings** and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **Administrators;Backup Operators;DOMAINNAME\NDESSvc;Performance Log Users** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** twice.
+10. In the content pane, double-click **Log on as a service**. Select **Define these policy settings** and click **OK**.  Click **Add User or Group...**.  In the **Add User or Group** dialog box, click **Browse**.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, type **NT SERVICE\ALL SERVICES;DOMAINNAME\NDESSvc** where **DOMAINNAME** is the NetBios name of the domain (Example CONTOSO\NDESSvc) in **User and group names**.  Click **OK** three times.
 11. Close the **Group Policy Management Editor**. 
 
 ### Configure security for the NDES Service User Rights Group Policy object

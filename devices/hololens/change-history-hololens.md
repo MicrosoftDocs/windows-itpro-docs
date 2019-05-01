@@ -9,22 +9,27 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/05/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
-## Windows 10 Holographic for Business, version 1809
+## April 2019
 
-The topics in this library have been updated for Windows 10 Holographic for Business, version 1809.
+New or changed topic | Description
+--- | ---
+[Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md) | New
 
 ## November 2018
 
 New or changed topic | Description
 --- | ---
 [How HoloLens stores data for spaces](hololens-spaces.md) | New
+
+## Windows 10 Holographic for Business, version 1809
+
+The topics in this library have been updated for Windows 10 Holographic for Business, version 1809.
 
 
 ## October 2018

@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 30/07/2018
 ---
 
 # Advanced Hunting using Python
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 

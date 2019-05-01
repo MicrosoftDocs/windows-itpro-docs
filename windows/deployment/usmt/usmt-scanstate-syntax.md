@@ -89,7 +89,7 @@ To create an encrypted store using the Config.xml file and the default migration
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>StorePath</em></p></td>
-<td align="left"><p>Indicates a folder where files and settings will be saved. Note that <em>StorePath</em> cannot be <strong>c:\</strong>. You must specify the <em>StorePath</em> option in the <strong>ScanState</strong> command, except when using the <strong>/genconfig</strong> option. You cannot specify more than one <em>StorePath</em> location.</p></td>
+<td align="left"><p>Indicates a folder where files and settings will be saved. Note that <em>StorePath</em> cannot be <strong>C:&#92;</strong>. You must specify the <em>StorePath</em> option in the <strong>ScanState</strong> command, except when using the <strong>/genconfig</strong> option. You cannot specify more than one <em>StorePath</em> location.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/apps</strong></p></td>

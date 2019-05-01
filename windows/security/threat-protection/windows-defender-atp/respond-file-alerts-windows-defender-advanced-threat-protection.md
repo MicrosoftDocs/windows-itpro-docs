@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Take response actions on a file
@@ -109,13 +108,17 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
 >[!IMPORTANT]
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
+>- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+>- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
 >- This response action is available for machines on Windows 10, version 1703 or later.
+>- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
+
+
 
 >[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
-
+>- There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
 
 ### Enable the block file feature
 Before you can block files, you'll need to enable the feature.
@@ -148,6 +151,9 @@ Before you can block files, you'll need to enable the feature.
   - **Status** - Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
+
+>[!NOTE]
+>-If a file was scanned before the action was taken, it may take longer to be effective on the device.
 
 **Notification on machine user**:</br>
 When a file is being blocked on the machine, the following notification is displayed to inform the user that the file was blocked:
@@ -247,19 +253,19 @@ If you encounter a problem when trying to submit a file, try each of the followi
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
-4. Verify the policy setting enables sample collection and try to submit the file again.
+4. If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-  a. Change the following registry entry and values to change the policy on specific machines:
- ```
-HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-  Value = 0 – block sample collection
-  Value = 1 – allow sample collection
-```
+    ```
+    Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
+    Name: AllowSampleCollection 
+    Type: DWORD 
+    Hexadecimal value : 
+      Value = 0 – block sample collection
+      Value = 1 – allow sample collection
+    ```
 5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-> [!NOTE]
-> If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
 ## Related topic
 - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)

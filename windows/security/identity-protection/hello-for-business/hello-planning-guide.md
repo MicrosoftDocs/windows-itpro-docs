@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -75,9 +75,9 @@ It’s fundamentally important to understand which deployment model to use for a
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust. 
   
-The key trust type does not require issuing authentication certificates to end users.  Users authenticate using a hardware-bound key created during an in-box provisioning experience, which requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
-The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the in-box provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers.  Users can authenticate using their certificate to any Windows Server 2008 R2 or later domain controller.
+The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers.  Users can authenticate using their certificate to any Windows Server 2008 R2 or later domain controller.
 
 #### Device registration
 
@@ -85,11 +85,11 @@ All devices included in the Windows Hello for Business deployment must go throug
 
 #### Key registration
 
-The in-box Windows Hello for Business provisioning experience creates a hardware bound asymmetric key pair as their user’s credentials. The private key is protected by the device’s security modules; however, the credential is a user key (not a device key).  The provisioning experience registers the user’s public key with the identity provider.  For cloud only and hybrid deployments, the identity provider is Azure Active Directory.  For on-premises deployments, the identity provider is the on-premises server running Windows Server 2016 Active Directory Federation Services (AD FS) role.
+The built-in Windows Hello for Business provisioning experience creates a hardware bound asymmetric key pair as their user’s credentials. The private key is protected by the device’s security modules; however, the credential is a user key (not a device key).  The provisioning experience registers the user’s public key with the identity provider.  For cloud only and hybrid deployments, the identity provider is Azure Active Directory.  For on-premises deployments, the identity provider is the on-premises server running Windows Server 2016 Active Directory Federation Services (AD FS) role.
 
 #### Multifactor authentication
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The in-box provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
 Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 >[!NOTE]
@@ -105,7 +105,7 @@ Cloud only and hybrid deployments provide many choices for multi-factor authenti
 
 #### Directory synchronization
 
-Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components.
+Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components. On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA Server, which sends data to the Azure MFA cloud service to perform the verification.
 
 ### Management
 

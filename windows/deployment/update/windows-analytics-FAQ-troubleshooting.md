@@ -42,6 +42,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Device names not appearing for Windows 10 devices](#device-names-not-appearing-for-windows-10-devices)
 
+[Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results](#custom-log-queries-using-the-abnormalshutdowncount-field-of-device-health-show-zero-or-lower-than-expected-results)
+
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
 
 [Exporting large data sets](#exporting-large-data-sets)
@@ -51,10 +53,10 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
-Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices within a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/You-can-now-check-on-the-status-of-your-computers-within-hours/ba-p/187213) on the Tech Community Blog.
 
 >[!NOTE]
-> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness.
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
  
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
@@ -193,6 +195,11 @@ Upgrade Readiness only collects app inventory on devices that are not yet upgrad
 Double-check that IE site discovery opt-in has been configured in the deployment script. (See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.)
 
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
+
+There are two additional configurations to check:
+1. Make sure Flip Ahead with Page Prediction is enabled. It can be configured at Internet Options -> Advanced -> Browsing -> Enable flip ahead with page prediction.
+2. Make sure IE is not running in InPrivate mode. 
+
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
 >[!NOTE]
@@ -200,6 +207,20 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 
 ### Device names not appearing for Windows 10 devices
 Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates.
+
+### Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results
+This issue affects custom queries of the Device Health data by using the **Logs > Search page** or API. It does not impact any of the built-in tiles or reports of the Device Health solution. The **AbnormalShutdownCount** field of the **DHOSReliability** data table represents abnormal shutdowns other than crashes, such as sudden power loss or holding down the power button.
+ 
+We have identified an incompatibility between AbnormalShutdownCount and the Limited Enhanced diagnostic data level on Windows 10, versions 1709, 1803, and 1809. Such devices do not send the abnormal shutdown signal to Microsoft. You should not rely on AbnormalShutdownCount in your custom queries unless you use any one of the following workarounds:
+ 
+
+- Upgrade devices to Windows 10, version 1903 when available. Participants in the Windows Insider program can preview this change using Windows Insider builds.
+- Change the diagnostic data setting from devices running Windows 10, versions 1709, 1803, and 1809 normal Enhanced level instead of Limited Enhanced.
+- Use alternative data from devices to track abnormal shutdowns. For example, you can forward abnormal shutdown events from the Windows Event Log to your Log Analytics workspace by using the Log Analytics agent. Suggested events to forward include:
+    - Log: System, ID: 41, Source: Kernel-Power
+    - Log System, ID: 6008, Source: EventLog
+
+
 
 ### Disable Upgrade Readiness
 

@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/16/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -44,7 +43,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 
 ## Block file
-This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
+This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled, see [Block files in your network](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#block-files-in-your-network) for more details.
 
 If your organization satisfies these conditions, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
@@ -95,8 +94,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
->This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
-
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
 
 
 ## Microsoft Cloud App Security

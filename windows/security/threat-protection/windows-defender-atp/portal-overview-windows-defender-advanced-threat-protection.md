@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual 
-ms.date: 04/24/2018
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
@@ -44,7 +43,7 @@ When you open the portal, you’ll see the main areas of the application:
 - (3) Search, Community center, Time settings, Help and support, Feedback
 
 > [!NOTE]
-> Malware related detections will only appear if your machines are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> Malware related detections will only appear if your machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
@@ -108,7 +107,9 @@ Icon | Description
 ![Running icon](images\running.png) | Automated investigation - running
 ![Remediated icon](images\remediated.png) | Automated investigation - remediated 
 ![Partially investigated icon](images\partially_remediated.png) | Automated investigation - partially remediated
-
+![Threat insights icon](images\tvm_bug_icon.png) | Threat & Vulnerability Management - threat insights
+![Possible active alert icon](images\tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert 
+![Recommendation insights icon](images\tvm_insight_icon.png) | Threat & Vulnerability Management - recommendation insights
 
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)

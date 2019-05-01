@@ -1,0 +1,50 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "ms.prod": "w10",
+      "ms.date": "4/30/2019",
+      "titleSuffix": "Windows Release Information",
+      "extendBreadcrumb": true,
+      "feedback_system": "None"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "release-information",
+    "markdownEngineName": "markdig"
+  }
+}

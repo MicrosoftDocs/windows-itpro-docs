@@ -40,7 +40,8 @@ New features and improvements | In update
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
 
-
+>[!TIP]
+>Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
@@ -49,6 +50,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
+<span id="provision" />
 ## Configure a kiosk using a provisioning package
 
 Process:
@@ -511,8 +513,6 @@ Provisioning packages can be applied to a device during the first-run experience
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
 ![add a package option](images/package.png)
-
-
 
 
 

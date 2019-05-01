@@ -151,7 +151,7 @@ If set to True, this DomainName rule will trigger the VPN
 
 By default, this value is false.
 
-Value type is bool. Persistent
+Value type is bool.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-persistent"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/Persistent**  
 Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN is not connected. Value values:
@@ -401,7 +401,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Nodes under the PluginProfile are required when using a Microsoft Store based VPN plugin.
 
 <a href="" id="vpnv2-profilename-pluginprofile-serverurllist"></a>**VPNv2/***ProfileName***/PluginProfile/ServerUrlList**  
-Required for plug-in profiles. Comma separated list of servers in URL, hostname, or IP format.
+Required for plug-in profiles. Semicolon-separated list of servers in URL, hostname, or IP format.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -624,10 +624,10 @@ Profile example
     </Authentication>
     <RoutingPolicyType>SplitTunnel</RoutingPolicyType>
   </NativeProfile>
-  <DomainNameInformation>
+  <DomainNameInformationList>
     <DomainName>.contoso.com</DomainName>
     <DNSServers>10.5.5.5</DNSServers>
-  </DomainNameInformation>
+  </DomainNameInformationList>
  <TrafficFilter>  
     <App>%ProgramFiles%\Internet Explorer\iexplore.exe</App> 
   </TrafficFilter> 

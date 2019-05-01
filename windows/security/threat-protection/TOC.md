@@ -127,10 +127,10 @@
 
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
-####Hardware-based isolation
-##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
-##### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
+#####Hardware-based isolation
+###### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+###### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
+####### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### Device control
 ###### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -139,7 +139,6 @@
 ######## [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ######## [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
-###### [Customize exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
 ###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
@@ -229,6 +228,7 @@
 ####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp/configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ###### [Onboard servers](windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard non-Windows machines](windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines without Internet access](windows-defender-atp/onboard-offline-machines.md)
 ###### [Run a detection test on a newly onboarded machine](windows-defender-atp/run-detection-test-windows-defender-advanced-threat-protection.md)
 ###### [Run simulated attacks on machines](windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection.md)
 ###### [Configure proxy and Internet connectivity settings](windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection.md)
@@ -344,6 +344,11 @@
 ##### Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
+###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
+
+##### Interoperability
+###### [Partner applications](windows-defender-atp/partner-applications.md)
+
 
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
@@ -388,7 +393,8 @@
   
 #####Rules
 ###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-###### [Manage automation allowed/blocked](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage automation allowed/blocked lists](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage indicators](windows-defender-atp/manage-indicators.md)
 ###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
   
@@ -413,6 +419,7 @@
 ####Troubleshoot attack surface reduction
 ##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
 ##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
+##### [Collect diagnostic data for files](windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
  
 #### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
@@ -1016,10 +1023,17 @@
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
+### [Windows security guidance for enterprises](windows-security-configuration-framework/windows-security-compliance.md)
 
-### [Windows security baselines](windows-security-baselines.md)
-#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-#### [Get support](get-support-for-security-baselines.md)
+#### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
+##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
+##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
+#### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
+##### [Level 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
+##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
+##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
+##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
+##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 

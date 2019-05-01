@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 04/30/2019
 ---
 
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
@@ -95,7 +95,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 
-1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
+1.	Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
 
     >[!NOTE]
 
@@ -462,15 +462,6 @@ After you've decided where your protected apps can access enterprise data on you
 **To set your optional settings**
 1.	Choose to set any or all of the optional settings:
 
-    - **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box.** Determines whether users can see the Personal option for files within File Explorer and the **Save As** dialog box. The options are:
-    
-        - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
-	
-        - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
-
-        >[!IMPORTANT]
-        >The **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box** option is only available for Configuration Manager versions 1610 and below.
-
     - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
 	
         - **Yes (recommended).** Turns on the feature and provides the additional protection.
@@ -489,6 +480,8 @@ After you've decided where your protected apps can access enterprise data on you
         
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
 
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Choose to set up Azure Rights Management with WIP](create-wip-policy-using-intune-azure.md#choose-to-set-up-azure-rights-management-with-wip). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell).
+
 2. After you pick all of the settings you want to include, click **Summary**.
 
 ## Review your configuration choices in the Summary screen
@@ -505,16 +498,11 @@ After you've finished configuring your policy, you can review all of your info o
 After you’ve created your WIP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
 - [Operations and Maintenance for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708224)
 
-- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708225)
+- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708225)
 
-- [How to Deploy Configuration Baselines in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708226)
+- [How to Deploy Configuration Baselines in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708226)
 
 ## Related topics
-- [System Center Configuration Manager and Endpoint Protection (Version 1606)](https://go.microsoft.com/fwlink/p/?LinkId=717372)
-
-- [TechNet documentation for Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=691623)
-
-- [Manage mobile devices with Configuration Manager and Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=691624)
 
 - [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
 

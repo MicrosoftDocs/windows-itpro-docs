@@ -141,3 +141,5 @@ There are different identifiers for the same update in different contexts. It’
    - Small integers (especially in Datastore) can be local IDs 
       ![Windows Update inconsisten terminology](images/update-inconsistent.png)
 
+## Windows Setup log files analysis using SetupDiag tool
+SetupDiag is a diagnostic tool that can be used for analysis of logs related to installation of Windows Updates. For detailed information, see [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag).

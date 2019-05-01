@@ -1,6 +1,6 @@
 # [Windows 10 and Windows 10 Mobile](index.md)
 ## [What's new](/windows/whats-new)
-## [Release information](release-information.md)
+## [Release information](/windows/release-information)
 ## [Deployment](/windows/deployment)
 ## [Configuration](/windows/configuration)
 ## [Client management](/windows/client-management)
