@@ -61,8 +61,6 @@ SmartScreen also have it's own events Ids on the "Microsoft-Windows-SmartScreen/
 |1001 | Uri SmartScreen Event|
 |1002 | User Decision SmartScreen Event|
 
->[!IMPORTANT]
-> This log is not enabled by default: Microsoft-Windows-SmartScreen/Debug, an required an MDM Policy to enable it.
 
 ## Related topics
 - [SmartScreen Frequently Asked Questions (FAQ)](https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx)
