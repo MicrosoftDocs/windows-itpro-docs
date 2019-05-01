@@ -20,7 +20,7 @@ ms.date: 12/10/2018
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to the Windows Defender Antivirus Exclusions settings. In other words, Windows Defender Exclusions,however they are created, are not used by ATP.
 
 
