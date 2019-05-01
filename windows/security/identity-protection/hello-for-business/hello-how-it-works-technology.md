@@ -312,7 +312,7 @@ In Windows 10 Enterprise edition, cloud experience host is a component that help
 [Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
 
 ### More information
-- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
+- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
 
 [Return to Top](hello-how-it-works-technology.md)
 
