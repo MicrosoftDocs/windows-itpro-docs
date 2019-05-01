@@ -28,6 +28,9 @@ You can [specify how long the file should be prevented from running](configure-c
 
 You can also [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
+> [!IMPORTANT]
+> Block at first sight is enabled by default when the prerequisite settings are configured correctly. 
+
 >[!TIP]
 >You can also visit the Windows Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
 
