@@ -468,6 +468,32 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
+## What to expect in the ATP portal
+
+- Severity
+- Scan type
+- Antivirus alerts
+- Device information:
+  - Machine identifier
+  - Tenant identifier
+  - App version
+  - Hostname
+  - OS type
+  - OS version
+  - Computer model
+  - Processor architecture
+  - Whether the device is a virtual machine
+- File information:
+  - Hashes
+  - Size
+  - Path
+  - Name
+- Threat information:
+  - Type
+  - State
+  - Name
+
+
 ## Uninstallation
 ### Removing Microsoft Defender ATP from Mac devices
 To remove Microsoft Defender ATP from your macOS devices:
