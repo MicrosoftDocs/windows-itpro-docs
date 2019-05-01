@@ -113,7 +113,7 @@ Windows Defender ATP's new managed threat hunting service provides proactive hun
 
 - [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
 - [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
-- [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
+- [Configure your Microsoft Threat Experts managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 

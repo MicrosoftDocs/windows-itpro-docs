@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 09/12/2018
 ms.author: jdecker
 ms.topic: article
 ---
