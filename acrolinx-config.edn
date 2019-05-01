@@ -1,0 +1,3 @@
+{:allowed-branchname-matches ["master"]
+ :allowed-filename-matches ["windows"]
+ }
