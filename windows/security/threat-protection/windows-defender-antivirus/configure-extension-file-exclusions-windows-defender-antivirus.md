@@ -20,6 +20,10 @@ ms.date: 12/10/2018
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>[!IMPORTANT]
+> [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to the Windows Defender Antivirus Exclusions settings. In other words, Windows Defender Exclusions,however they are created, are not used by ATP.
+
+
 You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
 Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
@@ -46,9 +50,7 @@ This means the exclusion lists have the following characteristics:
 
 >[!IMPORTANT]
 >The use of wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
->
 >You cannot exclude mapped network drives. You must specify the actual network path.
->
 >Folders that are reparse points that are created after the Windows Defender Antivirus service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
 
 To exclude files opened by a specific process, see [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md).
@@ -57,12 +59,12 @@ The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defen
 
 >[!IMPORTANT]
 >Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
->
 >Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in case of conflicts.
 
 You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
+
 
 ## Configure the list of exclusions based on folder name or file extension
 
