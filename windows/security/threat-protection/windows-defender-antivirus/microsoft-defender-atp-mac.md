@@ -34,7 +34,7 @@ You should also have access to Windows Defender Security Center.
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB
 
-Beta versions are not supported.
+Beta versions of macOS are not supported.
 
 > [!CAUTION]
 > Running other third-party endpoint protection along with Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
