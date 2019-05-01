@@ -25,6 +25,21 @@ ms.topic: conceptual
 This topic describes how to install and use Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change. 
 Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. 
 
+## What’s new in the public preview
+
+- Fully accessible
+- Various bug fixes
+- Improved performance
+- Improved user experience
+- Improved threat handling
+- Localized for 37 languages
+- Improved anti-tampering protections
+- Feedback can now be submitted via the Mac Client UI.
+- Product health can now be queried via Jamf or the command line.
+- Reduced delay for Mac devices to appear in the ATP console, following deployment.
+- Admins can now set their cloud geo preference for any location, not just those in the US.
+
+
 ## Prerequisites
 You should have beginner-level experience in macOS and BASH scripting. You must have administrative privileges on the machine.
 
