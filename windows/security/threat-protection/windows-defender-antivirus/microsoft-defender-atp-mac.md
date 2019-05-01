@@ -34,10 +34,10 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 - Improved threat handling
 - Localized for 37 languages
 - Improved anti-tampering protections
-- Feedback can now be submitted via the Mac Client UI.
-- Product health can now be queried via Jamf or the command line.
+- Feedback and samples can be submitted via the GUI.
+- Product health can be queried via Jamf or the command line.
 - Reduced delay for Mac devices to appear in the ATP console, following deployment.
-- Admins can now set their cloud geo preference for any location, not just those in the US.
+- Admins can set their cloud preference for any location, not just those in the US.
 
 
 ## Prerequisites
