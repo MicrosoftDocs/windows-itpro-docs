@@ -64,7 +64,6 @@ By default, local changes made to the lists (by users with administrator privile
 
 You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
 
-
 ## Configure the list of exclusions based on folder name or file extension
 
 **Use Intune to configure file name, folder, or file extension exclusions:**
