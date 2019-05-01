@@ -126,9 +126,9 @@ Some of the functionality includes:
   - Use the search bar to look for specific timeline events.
 - Filter events from a specific date
   - Select the calendar icon in the upper left of the table to display events in the past day, week, 30 days, or custom range. By default, the machine timeline is set to display the events from the past 30 days.
+  - Use the timeline to jump to a specific moment in time by highlighting the section. The arrows on the timelime pinpoint automated investigations
 - Export detailed machine timeline events
   - You can choose to export the machine timeline for the current date or a specified date range up to seven days.
-- Choose the number of items are displayed per page
 
 You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
