@@ -64,6 +64,8 @@ Block at first sight requires a number of Group Policy settings to be configured
    - **Time extension for file scanning by the cloud**: **50**
    - **Prompt users before sample submission**: **Send all data without prompting**
 
+   ![Intune config](images/defender/intune-block-at-first-sight.png)
+
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
