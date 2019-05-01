@@ -306,7 +306,7 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 [Return to Top](hello-how-it-works-technology.md)
 
 ## Cloud Experience Host
-In Windows 10 Enterprise edition, cloud experience host is a component that helps you join the workplace environment or Azure AD using your company provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you(including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
+In Windows 10 Enterprise edition, Cloud Experience Host is an application that helps you join the workplace environment or Azure AD using your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
 
 ### Related topics
 [Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
