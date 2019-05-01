@@ -56,7 +56,7 @@ A TPM can be configured to have multiple PCR banks active. When BIOS is performi
 
 - Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices<br>
 - DWORD: TPMActivePCRBanks<br>
-- Defines which PCR banks are currently active. This is a bitmap defined in the TCG Algorithm Registry.<br>
+- Defines which PCR banks are currently active. (This value should be interpreted as a bitmap for which the bits are defined in the [TCG Algorithm Registry](https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/) Table 21 of Revision 1.27.)<br>
 
 Windows checks which PCR banks are active and supported by the BIOS. Windows also checks if the measured boot log supports measurements for all active PCR banks. Windows will prefer the use of the SHA-256 bank for measurements and will fall back to SHA1 PCR bank if one of the pre-conditions is not met.
 
@@ -64,7 +64,7 @@ You can identify which PCR bank is currently used by Windows by looking at the r
 
 - Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices<br>
 - DWORD: TPMDigestAlgID<br>
-- Algorithm ID of the PCR bank that Windows is currently using. (For the full list of supported algorithms, see the TCG Algorithm Registry.)<br>
+- Algorithm ID of the PCR bank that Windows is currently using. (This value represents an algorithm identifier as defined in the [TCG Algorithm Registry](https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/) Table 3 of Revision 1.27.)<br>
 
 Windows only uses one PCR bank to continue boot measurements. All other active PCR banks will be extended with a separator to indicate that they are not used by Windows and measurements that appear to be from Windows should not be trusted.
 
