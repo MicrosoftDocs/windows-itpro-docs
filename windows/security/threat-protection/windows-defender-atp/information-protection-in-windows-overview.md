@@ -60,7 +60,7 @@ Turn on the Azure Information Protection integration so that when a file that co
 
 The reported signals can be viewed on the Azure Information Protection – Data discovery dashboard. 
 
-### Azure Information Protection - Data discovery dashboard 
+## Azure Information Protection - Data discovery dashboard 
 This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and Azure Information Protection. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
 
 ![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
@@ -68,13 +68,15 @@ This dashboard presents a summarized discovery information of data discovered by
 
 Notice the Device Risk column on the right, this device risk is derived directly from Windows Defender ATP, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Windows Defender ATP.
 
-Clicking the device risk level will redirect you to the device page in Windows Defender ATP, where you can get a comprehensive view of the device security status and its active alerts. 
-
+Click on a device to view a list of files observed on this device, with their sensitivity labels and information types.
 
 >[!NOTE]
->Windows Defender ATP does not currently report the Information Types. 
+>Please allow approximately 15-20 minutes for the Azure Information Protection Dashboard Discovery to reflect discovered files.
 
-### Log Analytics 
+
+
+
+## Log Analytics 
 Data discovery based on Windows Defender ATP is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip). 
