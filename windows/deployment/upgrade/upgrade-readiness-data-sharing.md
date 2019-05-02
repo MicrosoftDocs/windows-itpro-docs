@@ -12,16 +12,7 @@ ms.collection: M365-analytics
 
 # Upgrade Readiness data sharing
 
-To enable data sharing with the Upgrade Readiness solution, the following endpoints must be accessible:
-
-
-| **Endpoint**  | **Function**  |
-|---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experiences and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
-
-Whitelist these endpoints on your network. This might require working with your organizations's network security group.
+To enable data sharing with the Upgrade Readiness solution, double-check the endpoints list in [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md#enable-data-sharing) to be sure they are whitelisted.
 
 ## Connectivity to the Internet
 
