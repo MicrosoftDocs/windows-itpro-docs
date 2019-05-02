@@ -470,7 +470,7 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
 ## Configuring with the command line
 
-Controlling product settings, triggering on-demand scans, and several other important tasks can be done via the following CLI commands:
+Controlling product settings, triggering on-demand scans, and several other important tasks can be done with the following CLI commands:
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
@@ -492,9 +492,12 @@ Controlling product settings, triggering on-demand scans, and several other impo
 
 ## What to expect in the ATP portal
 
-- Severity
-- Scan type
-- Antivirus alerts
+- AV alerts:
+  - Severity 
+  - Scan type
+  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
+  - File information (name, path, size, and hash)
+  - Threat information (name, type, and state)
 - Device information:
   - Machine identifier
   - Tenant identifier
@@ -505,19 +508,11 @@ Controlling product settings, triggering on-demand scans, and several other impo
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
-- File information:
-  - Hashes
-  - Size
-  - Path
-  - Name
-- Threat information:
-  - Type
-  - State
-  - Name
-
 
 ## Uninstallation
+
 ### Removing Microsoft Defender ATP from Mac devices
+
 To remove Microsoft Defender ATP from your macOS devices:
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
