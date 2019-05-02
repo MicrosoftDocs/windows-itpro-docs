@@ -70,6 +70,9 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Remote Desktop
 
+>[!NOTE] 
+>Microsoft Visio and Microsoft Project are not enlightended apps.
+
 ## List of WIP-work only apps from Microsoft
 Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
 
