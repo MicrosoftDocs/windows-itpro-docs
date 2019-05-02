@@ -274,7 +274,7 @@ Public key infrastructure prerequisites already exist in your planning worksheet
 
 If box **1a** on your planning worksheet reads **cloud only**, ignore the public key infrastructure section of your planning worksheet.  Cloud only deployments do not use a public key infrastructure.
 
-If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet.
+If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet. Key trust doesn't require any change in public key infrastructure, skip this part and go to **Cloud** section.
 
 The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
 
