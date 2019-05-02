@@ -77,7 +77,7 @@ A deployment's trust type defines how each Windows Hello for Business client aut
   
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
-The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers.  Users can authenticate using their certificate to any Windows Server 2008 R2 or later domain controller.
+The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can authenticate using their certificate to any Windows Server 2008 R2 or later domain controller.
 
 #### Device registration
 
@@ -101,7 +101,6 @@ Cloud only and hybrid deployments provide many choices for multi-factor authenti
 >    * Azure Active Directory Premium
 >    * Enterprise Mobility Suite
 >    * Enterprise Cloud Suite
->* A per-user and per-authentication consumption-based model that is billed monthly against Azure monetary commitment (Read [Multi-Factor Authentication Pricing](https://azure.microsoft.com/pricing/details/multi-factor-authentication/) for more information)
 
 #### Directory synchronization
 
