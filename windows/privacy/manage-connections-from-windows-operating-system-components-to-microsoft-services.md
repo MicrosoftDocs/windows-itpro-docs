@@ -1863,21 +1863,18 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
 
-  -or-
+-OR-
 
 - Use the registry to set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to **0 (zero)**.
 
-  -or-
+  -and-
 
 - Delete the registry setting **named** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Updates**.
 
-  -or-
+-OR-
 
 - For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-  -and-
-
-    From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0**
 
 You can stop sending file samples back to Microsoft.
 
@@ -2076,7 +2073,7 @@ On Windows Server 2016, this will block Microsoft Store calls from Universal Win
 
 You can turn off apps for websites, preventing customers who visit websites that are registered with their associated app from directly launching the app.
 
-**Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
 
   -or-
 
