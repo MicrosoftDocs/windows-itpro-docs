@@ -27,18 +27,35 @@ ms.topic: article
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
-Response actions run along the top of a specific machine page, which you can find from any of the following views:
+Response actions run along the top of a specific machine page.
+![Image of response actions](images/response-actions.png)
+
+ You can find machine pages from any of the following views:
 
 - **Security operations dashboard** - Select a machine name from the Machines at risk card.
 - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
 - **Machines list** - Select the heading of the machine name from the machines list.
 - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-![Image of response actions](images/response-actions.png)
-
 >[!IMPORTANT]
 > - These response actions are only available for machines on Windows 10, version  1703 or later. 
 > - For non-Windows platforms, response capabilities (such as Machine isolation) are dependent on the third-party capabilities.
+
+## Manage tags
+
+Add or manage tags to create a logical group affiliation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
+
+For more information on machine tagging, see [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection).
+
+## Initiate Automated Investigation
+
+You can start a new general purpose automated investigation on the machine if needed. While an investigation is running, any other alert generated from the machine will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
+
+For more information on automated investigations, see [Overview of Automated investigations](automated-investigations-windows-defender-advanced-threat-protection).
+
+## Initiate Live Response Session
+
+You can start a Live Response session on the machine if needed.
 
 ## Collect investigation package from machines
 
@@ -87,30 +104,11 @@ As part of the investigation or response process, you can remotely initiate an a
 >- This action is available for machines on Windows 10, version  1709 or later.
 >- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
-1. Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
+One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-- **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-- **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-- **Machines list** - Select the machine name from the list of machines. - **Search box** - Select Machine from the drop-down menu and enter the machine name.
+![Image of notification to select quick scan or full scan and add comment](images/run-antivirus.png)
 
-2. Open the **Actions** menu and select **Run antivirus scan**.
-
-    ![Image of run antivirus scan](images/atp-actions-run-av.png)
-
-3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
-
-    ![Image of notification to select quick scan or full scan and add comment](images/atp-av-scan-notification.png)
-
-4. Type a comment and select **Yes, run scan** to start the scan.<br>
-
-    The Action center shows the scan information:
-
-    ![Image of action center with antivirus scan](images/atp-av-scan-action-center.png)
-
-    - **Submission time** - Shows when the action was submitted.
-    - **Status** - Indicates any pending actions or the results of completed actions.
-
-The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+The Action center will show the scan information and the machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Restrict app execution
 
@@ -126,16 +124,6 @@ The action to restrict an application from running applies a code integrity poli
 >[!NOTE]
 >You’ll be able to reverse the restriction of applications from running at any time.
 
-1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
-
-- **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-- **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-- **Machines list** - Select the machine name from the list of machines.
-- **Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-2. Open the **Actions** menu and select **Restrict app execution**.
-
-    ![Image of restrict app execution action](images/atp-actions-restrict-app-execution.png)
 
 3. Type a comment and select **Yes, restrict app execution** to take action on the file.
 
@@ -213,7 +201,7 @@ When a machine is being isolated, the following notification is displayed to inf
 
 ![Image of no network connection](images/atp-notification-isolate.png)
 
-## Release machine from isolation
+### Release machine from isolation
 Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
 
 1.	Select a machine that was previously isolated.
