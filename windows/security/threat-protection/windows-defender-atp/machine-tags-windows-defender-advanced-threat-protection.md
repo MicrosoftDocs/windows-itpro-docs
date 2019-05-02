@@ -23,29 +23,10 @@ Add tags on machines to create a logical group affiliation. Machine tags support
 
 You can add tags on machines using the following ways:
 
-- Setting a registry key value
 - Using the portal
+- Setting a registry key value
 
 To add machine tags using API, see [Add or remove machine tags API](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md).
-
-## Add machine tags by setting a registry key value
-
->[!NOTE]
-> Applicable only on the following machines:
->- Windows 10, version 1709 or later
->- Windows Server, version 1803 or later
->- Windows Server 2016
->- Windows Server 2012 R2
-
-Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
-
-Use the following registry key entry to add a tag on a machine:
-
-- Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
-- Registry key value (string): Group
-
->[!NOTE]
->The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
 
 ## Add and manage machine tags using the portal
 
@@ -71,3 +52,22 @@ Tags are added to the machine view and will also be reflected on the **Machines 
 You can also delete tags from this view.
 
 ![Image of adding tags on a machine](images/more-manage-tags.png)
+
+## Add machine tags by setting a registry key value
+
+>[!NOTE]
+> Applicable only on the following machines:
+>- Windows 10, version 1709 or later
+>- Windows Server, version 1803 or later
+>- Windows Server 2016
+>- Windows Server 2012 R2
+
+Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
+
+Use the following registry key entry to add a tag on a machine:
+
+- Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+- Registry key value (string): Group
+
+>[!NOTE]
+>The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.

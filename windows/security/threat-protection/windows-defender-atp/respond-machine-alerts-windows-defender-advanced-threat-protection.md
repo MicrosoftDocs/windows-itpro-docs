@@ -45,17 +45,19 @@ Response actions run along the top of a specific machine page.
 
 Add or manage tags to create a logical group affiliation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
 
-For more information on machine tagging, see [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection).
+For more information on machine tagging, see [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md).
 
 ## Initiate Automated Investigation
 
 You can start a new general purpose automated investigation on the machine if needed. While an investigation is running, any other alert generated from the machine will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
 
-For more information on automated investigations, see [Overview of Automated investigations](automated-investigations-windows-defender-advanced-threat-protection).
+For more information on automated investigations, see [Overview of Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Initiate Live Response Session
 
 You can start a Live Response session on the machine if needed.
+
+For more info, see [live response](live-response.md)
 
 ## Collect investigation package from machines
 
