@@ -1824,9 +1824,6 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 
 - Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
 
-  -or-
-
-- From an elevated command prompt, run **netsh interface teredo set state disabled**
 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense
 
@@ -1847,13 +1844,6 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
 - Create a new REG_DWORD registry setting named **AutoConnectAllowedOEM** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config** with a **value of 0 (zero)**.
 
-  -or-
-
-- Change the Windows Provisioning setting, WiFISenseAllowed, to **0 (zero)**. For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
-
-  -or-
-
-- Use the Unattended settings to set the value of WiFiSenseAllowed to **0 (zero)**. For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
