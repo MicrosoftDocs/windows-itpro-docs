@@ -66,5 +66,6 @@ After completing these steps Windows Defender ATP will automatically identify la
 
 
 
+
 ## Related topic
 - [Information protection in Windows overview](information-protection-in-windows-overview.md)
