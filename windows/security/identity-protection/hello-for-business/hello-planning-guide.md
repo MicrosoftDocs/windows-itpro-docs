@@ -101,7 +101,6 @@ Cloud only and hybrid deployments provide many choices for multi-factor authenti
 >    * Azure Active Directory Premium
 >    * Enterprise Mobility Suite
 >    * Enterprise Cloud Suite
->* A per-user and per-authentication consumption-based model that is billed monthly against Azure monetary commitment (Read [Multi-Factor Authentication Pricing](https://azure.microsoft.com/pricing/details/multi-factor-authentication/) for more information)
 
 #### Directory synchronization
 
