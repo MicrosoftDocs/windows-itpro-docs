@@ -27,18 +27,15 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 ## What’s new in the public preview
 
-- Fully accessible
-- Various bug fixes
-- Improved performance
-- Improved user experience
-- Improved threat handling
-- Localized for 37 languages
-- Improved anti-tampering protections
-- Feedback and samples can be submitted via the GUI.
-- Product health can be queried via Jamf or the command line.
-- Reduced delay for Mac devices to appear in the ATP console, following deployment.
-- Admins can set their cloud preference for any location, not just those in the US.
+We've been working hard through the private preview period, and we've heard your concerns. We've reduced the delay for when new Mac devices appear in the ATP console after they've been deployed. We've improved threat handling, and enhanced the user experience. We've also made numerous bug fixes. Other updates to Microsoft Defender ATP include:
 
+- Full accessibility
+- Improved performance
+- Localization for 37 languages
+- Improved anti-tampering protections
+- Feedback and samples can now be submitted via the GUI.
+- Product health can be queried with JAMF or the command line.
+- Admins can set their cloud preference for any location, not just for those in the US.
 
 ## Prerequisites
 You should have beginner-level experience in macOS and BASH scripting. You must have administrative privileges on the machine.
