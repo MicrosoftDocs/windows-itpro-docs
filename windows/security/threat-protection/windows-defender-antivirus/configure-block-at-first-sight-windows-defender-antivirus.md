@@ -22,7 +22,7 @@ ms.date: 05/01/2019
 
 Block at first sight is a feature of next gen protection that provides a way to detect and block new malware within seconds.
 
-It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. You can use group policy settings to confirm the feature is enabled.
+It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. 
 
 You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
@@ -45,7 +45,7 @@ In many cases, this process can reduce the response time for new malware from ho
 
 ## Confirm and validate that block at first sight is enabled
 
-Block at first sight requires a number of Group Policy settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Windows Defender Antivirus deployments.
+Block at first sight requires a number of settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Windows Defender Antivirus deployments.
 
 ### Confirm block at first sight is enabled with Intune
 
