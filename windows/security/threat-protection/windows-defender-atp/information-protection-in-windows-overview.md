@@ -31,12 +31,13 @@ Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to 
 > Read our blog post about how [Windows Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 
-Windows Defender ATP applies two methods to discover and protect data:
+Windows Defender ATP applies the following methods to discover, classify, and protect data:
 - **Data discovery** - Identify sensitive data on Windows devices at risk
+- **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
 - **Data protection** - Windows Information Protection (WIP) as outcome of Azure Information Protection label
 
 
-## Data discovery 
+## Data discovery and data classification
 Windows Defender ATP automatically discovers files with sensitivity labels and files that contain sensitive information types. 
 
 Sensitivity labels classify and help protect sensitive content. 
@@ -49,7 +50,6 @@ Sensitive information types in the Office 365 data loss prevention (DLP) impleme
 Default sensitive information types include information such as bank account numbers, social security numbers, or national IDs. For more information, see [What the sensitive information type look for](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for). 
 
 Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-custom-sensitive-information-type).
-
 
 
 When a file is created or edited on a  Windows device, Windows Defender ATP scans the content to evaluate if it contains sensitive information. 
@@ -96,10 +96,15 @@ InformationProtectionLogs_CL
 
 
 ## Data protection 
-For data to be protected, they must first be identified through labels. Sensitivity labels are created in Office Security and Compliance (SCC). Windows Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
 
+### Endpoint data loss prevention
+For data to be protected, they must first be identified through labels. 
 
-When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Windows Defender ATP is the Data loss prevention. You'll need to turn on the Data loss prevention and select Enable Windows end point protection (DLP for devices). 
+Sensitivity labels are created in Office 365 Security & Compliance Center. Windows Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
+
+When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Windows Defender ATP is the Endpoint data loss prevention. 
+
+For the endpoint data loss prevention, you'll need to turn on the Endpoint Data loss prevention and select Enable Windows end point protection (DLP for devices). 
 
 
 ![Image of Office 365 Security and Compliance sensitivity label](images/office-scc-label.png)
@@ -107,6 +112,17 @@ When you create sensitivity labels, you can set the information protection funct
 Once, the policy is set and published, Windows Defender ATP automatically enables WIP for labeled files. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy. 
 
 This functionality expands the coverage of WIP to protect files based on their label, regardless of their origin. 
+
+For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
+
+## Auto labeling
+
+Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. When Windows Defender ATP scans the content of a file in a Windows device and finds that it contains sensitive information, it will automatically apply a label to it even if the user hasn't manually classified it.
+
+> [!NOTE]
+> Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.
+
+
 
 For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
 
