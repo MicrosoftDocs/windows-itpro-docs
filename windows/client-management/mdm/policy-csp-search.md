@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 05/01/2019
 ---
 
 # Policy CSP - Search
@@ -849,16 +849,27 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic
 
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Search policies supported by Windows Holographic for Business
+
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
