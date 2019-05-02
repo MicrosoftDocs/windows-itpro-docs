@@ -91,7 +91,7 @@ To reset the winhttp proxy, enter the following command and press **Enter**
 ```
 netsh winhttp reset proxy
 ```
-To get more details how to use netsh command,[please see help doc](https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh-contexts).
+See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts) to learn more.
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are not blocked by default. Do not disable security monitoring or inspection of these URLs, but allow them as you would other internet traffic. They permit communication with Windows Defender ATP service in port 80 and 443:
