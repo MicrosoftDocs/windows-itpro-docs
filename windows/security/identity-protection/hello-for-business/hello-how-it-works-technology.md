@@ -24,6 +24,7 @@ ms.date: 10/08/2018
 - [Azure AD Registered](#azure-ad-registered)
 - [Certificate Trust](#certificate-trust)
 - [Cloud Deployment](#cloud-deployment)
+- [Cloud Experience Host](#cloud-experience-host)
 - [Deployment Type](#deployment-type)
 - [Endorsement Key](#endorsement-key)
 - [Federated Environment](#federated-environment)
@@ -39,7 +40,6 @@ ms.date: 10/08/2018
 - [Storage Root Key](#storage-root-key)
 - [Trust Type](#trust-type)
 - [Trusted Platform Module](#trusted-platform-module)
-- [Cloud Experience Host](#cloud-experience-host)
 <hr>
 
 ## Attestation Identity Keys
@@ -100,6 +100,17 @@ The Windows Hello for Business Cloud deployment is exclusively for organizations
 [Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Deployment Type](#deployment-type), [Join Type](#join-type)
 
 [Return to Top](hello-how-it-works-technology.md)
+## Cloud Experience Host
+In Windows 10 Enterprise edition, Cloud Experience Host is an application that helps you join the workplace environment or Azure AD using your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
+
+### Related topics
+[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
+
+### More information
+- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
+
+[Return to Top](hello-how-it-works-technology.md)
+
 ## Deployment Type
 Windows Hello for Business has three deployment models to accommodate the needs of different organizations.  The three deployment models include:
 - Cloud
@@ -302,17 +313,6 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 
 ### More information
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
-
-[Return to Top](hello-how-it-works-technology.md)
-
-## Cloud Experience Host
-In Windows 10 Enterprise edition, Cloud Experience Host is an application that helps you join the workplace environment or Azure AD using your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
-
-### Related topics
-[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
-
-### More information
-- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
 
 [Return to Top](hello-how-it-works-technology.md)
 
