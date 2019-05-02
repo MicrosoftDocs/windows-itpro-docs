@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 05/02/2019
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
