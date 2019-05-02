@@ -27,7 +27,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 ## What’s new in the public preview
 
-We've been working hard through the private preview period, and we've heard your concerns. We've reduced the delay for when new Mac devices appear in the ATP console after they've been deployed. We've improved threat handling, and enhanced the user experience. We've also made numerous bug fixes. Other updates to Microsoft Defender ATP include:
+We've been working hard through the private preview period, and we've heard your concerns. We've reduced the delay for when new Mac devices appear in the ATP console after they've been deployed. We've improved threat handling, and enhanced the user experience. We've also made numerous bug fixes. Other updates to Microsoft Defender ATP for Mac include:
 
 - Full accessibility
 - Improved performance
@@ -501,7 +501,7 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
 ## Configuring with the command line
 
-Controlling product settings, triggering on-demand scans, and several other important tasks can be done with the following CLI commands:
+Controlling product settings, triggering on-demand scans, and several other important tasks can be done from the command line with the following commands:
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
@@ -554,12 +554,9 @@ Or, from a command line:
 
 ## Known issues
 
-- Not localized yet.
-- There might be accessibility issues.
-- Not optimized for performance or disk space yet.
+- Not fully optimized for performance or disk space yet.
 - Full Windows Defender ATP integration is not available yet.
 - Mac devices that switch networks may appear multiple times in the APT portal.
-- Geo preference for telemetry traffic is not supported yet. Cloud traffic is routed to the US only.
 - Centrally managed uninstall is still being developed. As a workaround, a manual uninstall must be performed on each client device.
 
 ## Collecting diagnostic information
