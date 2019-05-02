@@ -468,6 +468,28 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
+## Configuring with the command line
+
+Controlling product settings, triggering on-demand scans, and several other important tasks can be done via the following CLI commands:
+
+|Group        |Scenario                                   |Command                                                                |
+|-------------|-------------------------------------------|-----------------------------------------------------------------------|
+|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
+|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
+|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
+|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
+|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
+|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
+|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Health       |Check the product's health                 |`mdatp --health`                                                       |
+|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
+|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
+|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
+|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
+
 ## What to expect in the ATP portal
 
 - Severity
