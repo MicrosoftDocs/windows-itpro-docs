@@ -55,9 +55,11 @@ For more information on automated investigations, see [Overview of Automated inv
 
 ## Initiate Live Response Session
 
-You can start a Live Response session on the machine if needed.
+Live response is a capability that gives you instantaneous access to a machine using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
 
-For more info, see [live response](live-response.md)
+Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
+
+For more information on live response, see [Investigate entities on machines using live response](live-response.md)
 
 ## Collect investigation package from machines
 
@@ -114,54 +116,34 @@ The Action center will show the scan information and the machine timeline will i
 
 ## Restrict app execution
 
-In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
+In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
 > - This action is available for machines on Windows 10, version  1709 or later.
 > - This feature is available if your organization uses Windows Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
-The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
+To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
 
 >[!NOTE]
->You’ll be able to reverse the restriction of applications from running at any time.
+>You’ll be able to reverse the restriction of applications from running at any time. The button on the machine page will change to say **Remove app restrictions**, and then you take the same steps as restricting app execution.
 
+Once you have selected **Restrict app execution** on the machine page, type a comment and select **Confirm**. The Action center will show the scan information and the machine timeline will include a new event.
 
-3. Type a comment and select **Yes, restrict app execution** to take action on the file.
-
-   ![Image of app restriction notification](images/atp-notification-restrict.png)
-
-    The Action center shows the submission information:
-    ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
-
-- **Submission time** - Shows when the action was submitted.
-- **Status** - Indicates any pending actions or the results of completed actions.
-
-When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
+![Image of app restriction notification](images/restrict-app-execution.png)
 
 **Notification on machine user**:</br>
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
 ![Image of app restriction](images/atp-app-restriction.png)
 
-## Remove app restriction 
-Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
-
-1.	Select the machine where you restricted an application from running from.
-
-2.	Open the **Actions** menu and select **Remove app restrictions**.
-
-    ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
-
-3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
-
 ## Isolate machines from the network
+
 Depending on the severity of the attack and the sensitivity of the machine, you might want to isolate the machine from the network. This action can help prevent the attacker from controlling the compromised machine and performing further activities such as data exfiltration and lateral movement.
 
 >[!IMPORTANT]
 >- Full isolation is available for machines on Windows 10, version 1703.
 >- Selective isolation is available for machines on Windows 10, version 1709 or later.
-
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
@@ -170,14 +152,7 @@ On Windows 10, version 1709 or later, you'll have additional control over the ne
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.
 
-1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
-
-  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  - **Machines list** - Select the machine name from the list of machines.
-  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-2.	Open the **Actions** menu and select **Isolate machine**.
+Once you have selected **Isolate machine** on the machine page, type a comment and select **Confirm**. The Action center will show the scan information and the machine timeline will include a new event.
 
     ![Image of isolate machine](images/atp-actions-isolate-machine.png)
 
