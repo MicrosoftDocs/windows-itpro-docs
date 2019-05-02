@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/29/2019
+ms.date: 05/01/2019
 ---
 
 # Enable block at first sight
@@ -22,14 +22,11 @@ ms.date: 04/29/2019
 
 Block at first sight is a feature of next gen protection that provides a way to detect and block new malware within seconds.
 
-It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. You can use group policy settings to confirm the feature is enabled.
+It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. 
 
 You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
 You can also [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
-
-> [!IMPORTANT]
-> There is no specific individual setting in System Center Configuration Manager to enable or disable block at first sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
 
 >[!TIP]
 >You can also visit the Windows Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
@@ -48,7 +45,7 @@ In many cases, this process can reduce the response time for new malware from ho
 
 ## Confirm and validate that block at first sight is enabled
 
-Block at first sight requires a number of Group Policy settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Windows Defender Antivirus deployments.
+Block at first sight requires a number of settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Windows Defender Antivirus deployments.
 
 ### Confirm block at first sight is enabled with Intune
 
@@ -63,6 +60,8 @@ Block at first sight requires a number of Group Policy settings to be configured
    - **File Blocking Level**: **High**
    - **Time extension for file scanning by the cloud**: **50**
    - **Prompt users before sample submission**: **Send all data without prompting**
+
+   ![Intune config](images/defender/intune-block-at-first-sight.png)
 
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
