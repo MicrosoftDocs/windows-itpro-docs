@@ -27,7 +27,20 @@ ms.topic: article
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
-Response actions run along the top of a specific machine page.
+Response actions run along the top of a specific machine page and include:
+
+- Manage tags
+- Initiate Automated Investigation
+- Initiate Live Response Session
+
+Other actions are enabled if there is an investigation happening on that machine:
+
+- Collect investigation package
+- Run antivirus scan
+- Restrict app execution
+- Isolate machine
+- Action center
+
 ![Image of response actions](images/response-actions.png)
 
  You can find machine pages from any of the following views:
@@ -150,47 +163,22 @@ This machine isolation feature disconnects the compromised machine from the netw
 On Windows 10, version 1709 or later, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity (a.k.a 'Selective Isolation').
 
 >[!NOTE]
->You’ll be able to reconnect the machine back to the network at any time.
+>You’ll be able to reconnect the machine back to the network at any time. The button on the machine page will change to say **Release from isolation**, and then you take the same steps as isolating the machine.
 
 Once you have selected **Isolate machine** on the machine page, type a comment and select **Confirm**. The Action center will show the scan information and the machine timeline will include a new event.
 
-    ![Image of isolate machine](images/atp-actions-isolate-machine.png)
+![Image of isolate machine](images/isolate-machine.png)
 
-3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated (a.k.a. 'Selective Isolation').
-
-    ![Image of isolation confirmation](images/atp-confirm-isolate.png)
-
-4. Type a comment and select **Yes, isolate machine** to take action on the machine.
-  
-    >[!NOTE]
-    >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
-
-   The Action center shows the submission information:
-    ![Image of machine isolation](images/atp-machine-isolation.png)
-
-   - **Submission time** - Shows when the action was submitted.
-   - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
-
-When the isolation configuration is applied, a new event is reflected in the machine timeline.
+>[!NOTE]
+>The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
 **Notification on machine user**:</br>
 When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:
 
 ![Image of no network connection](images/atp-notification-isolate.png)
 
-### Release machine from isolation
-Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
-
-1.	Select a machine that was previously isolated.
-
-2.	Open the **Actions** menu and select **Release from isolation**.
-
-    ![Image of release from isolation](images/atp-actions-release-from-isolation.png)
-
-3.	Type a comment and select **Yes, release machine** to take action on the machine. The machine will be reconnected to the network.
-
-
 ## Check activity details in Action center
+
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
 
 - Investigation package collection
@@ -198,9 +186,10 @@ The **Action center** provides information on actions that were taken on a machi
 - App restriction
 - Machine isolation
 
-All other related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
+All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information](images/atp-action-center-with-info.png)
+![Image of action center with information](images/action-center-details.png)
 
 ## Related topic
+
 - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)

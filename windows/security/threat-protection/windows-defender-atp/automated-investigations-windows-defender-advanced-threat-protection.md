@@ -25,12 +25,14 @@ ms.date: 12/04/2018
 The Windows Defender ATP service has a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
 
 
-To address this challenge, Windows Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
+To address this challenge, Windows Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives.
 
-The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
+The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated.
 
 ## Understand the Automated investigation flow
+
 ### How the Automated investigation starts
+
 Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a supported operating system for Automated investigation then an Automated investigation can start.
 
 >[!NOTE]
@@ -40,6 +42,7 @@ Entities are the starting point for Automated investigations. When an alert cont
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
 ### Details of an Automated investigation
+
 As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 In the **Alerts** tab, you'll see the alert that started the investigation. 
@@ -61,11 +64,12 @@ While an investigation is running, any other alert generated from the machine wi
 If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
+
 Depending on how you set up the machine groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
-Automation level | Description 
+Automation level | Description
 :---|:---
 Not protected | Machines will not get any automated investigations run on them.
 Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. 
@@ -80,10 +84,5 @@ The default machine group is configured for semi-automatic remediation. This mea
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 
 ## Related topic
+
 - [Learn about the automated investigations dashboard](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
-
-
-
-
-
-

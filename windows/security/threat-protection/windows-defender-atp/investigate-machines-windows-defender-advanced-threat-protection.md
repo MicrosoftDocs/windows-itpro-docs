@@ -51,16 +51,19 @@ The machine details section provides information such as the domain, OS, and hea
 
 ## Response actions
 
-Response actions run along the top of the page, and include:
+Response actions run along the top of a specific machine page and include:
 
 - Manage tags
 - Initiate Automated Investigation
 - Initiate Live Response Session
+
+Other actions are enabled if there is an investigation happening on that machine:
+
 - Collect investigation package
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
-- Action center (only enabled if there are investigations happening on that machine)
+- Action center
 
 You can take response actions in the action center, in a specific machine page, or in a specific file page.
 
