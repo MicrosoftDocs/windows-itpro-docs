@@ -86,7 +86,7 @@ We used the following methodology to derive these network endpoints:
 |||TLS v1.2|modern.watson.data.microsoft.com*|
 |||HTTPS|watson.telemetry.microsoft.com|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.|HTTPS|*licensing.mp.microsoft.com*|
-|Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|HTTPS|inference.location.live.net|
+|Location|The following endpoints are used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|HTTPS|inference.location.live.net|
 |||HTTP|location-inference-westus.cloudapp.net|
 |Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTPS|*g.akamaiedge.net|
 |||HTTP|*maps.windows.com*|
