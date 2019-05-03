@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/15/2018
+ms.date: 05/01/2019
 ---
 
 # Policy CSP - Bluetooth
@@ -339,16 +339,33 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+<!--EndHoloLensBusiness-->
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
 
 ## ServicesAllowedList usage guide
 
