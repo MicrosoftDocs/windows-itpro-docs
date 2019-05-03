@@ -44,21 +44,15 @@ We used the following methodology to derive these network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
+| Area | Protocol | Destination |
+|----------------|----------|------------|
+| explorer        | HTTP     | tile-service.weather.microsoft.com  |
+
 ## Windows 10 19H1 Enterprise connection endpoints
 
-| Source process | Protocol | Destination |
+
+| Area | Protocol | Destination |
 |----------------|----------|------------|
-| explorer        | HTTP     | tile-service.weather.microsoft.com  |
-|   | HTTP  | blob.weather.microsoft.com |
-
-
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| explorer        | HTTP     | tile-service.weather.microsoft.com  |
-|   | HTTP  | blob.weather.microsoft.com |
-
-
 |Apps|The following endpoints are used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|blob.weather.microsoft.com
 ||The following endpoint is used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|tile-service.weather.microsoft.com
 ||The following endpoint is used for OneNote Live Tile. To turn off traffic for this endpoint, either uninstall OneNote or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
@@ -199,4 +193,3 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 - [Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
 
 
-| Area | Description | Protocol | Destination |
