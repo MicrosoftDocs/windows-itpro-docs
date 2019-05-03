@@ -31,7 +31,7 @@ To run SDT for Business, download the components listed in the following table.
 Mode |	Primary scenarios | Download | Learn more
 --- | --- | --- | ---
 Desktop mode |	Assist users in running SDT on their Surface devices to troubleshoot issues.<br>Create a custom package to deploy on one or more Surface devices allowing users to select specific logs to collect and analyze. | SDT distributable MSI package:<br>Microsoft Surface Diagnostic Toolkit for Business Installer<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Use Surface Diagnostic Toolkit in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
-Command line |	Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager. It includes the following commands:<br>`-DataCollector` collects all log files<br>`-bpa` runs health diagnostics using Best Practice Analyzer.<br>`-windowsupdate` checks Windows update for missing firmware or driver updates.<br><br>**Note:** Support for the ability to confirm warranty information will be available via the  command `-warranty`	| SDT console app:<br>Microsoft Surface Diagnostics App Console<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md)
+Command line |	Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager. It includes the following commands:<br>`-DataCollector` collects all log files<br>`-bpa` runs health diagnostics using Best Practice Analyzer.<br>`-windowsupdate` checks Windows update for missing firmware or driver updates.<br>`-warranty` checks warranty information. <br><br>| SDT console app:<br>Microsoft Surface Diagnostics App Console<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md)
 
 ## Supported devices 
 
@@ -163,11 +163,11 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 - [Use Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
 
 
-# Version history
-## Version 2.36.139.0
-Release date: April 26, 2019 <br>
+## Changes and updates
+### Version 2.36.139.0
+*Release date: April 26, 2019*<br>
 This version of Surface Diagnostic Toolkit for Business adds support for the following: 
-- Advanced Setup option to unlock admin capabilities through the installer UI , without requiring command line configuration.
+- Advanced Setup option to unlock admin capabilities through the installer UI, without requiring command line configuration.
 - Accessibility improvements.
 - Surface brightness control settings included in logs.
 - External monitor compatibility support link in report generator.
