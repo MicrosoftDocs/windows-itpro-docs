@@ -46,7 +46,18 @@ We used the following methodology to derive these network endpoints:
 
 ## Windows 10 19H1 Enterprise connection endpoints
 
+| Source process | Protocol | Destination |
+|----------------|----------|------------|
+| explorer        | HTTP     | tile-service.weather.microsoft.com  |
+|   | HTTP  | blob.weather.microsoft.com |
+
+
+
 | Area | Description | Protocol | Destination |
+|----------------|----------|------------|
+| explorer        | HTTP     | tile-service.weather.microsoft.com  |
+|   | HTTP  | blob.weather.microsoft.com |
+
 
 |Apps|The following endpoints are used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|blob.weather.microsoft.com
 ||The following endpoint is used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|tile-service.weather.microsoft.com
