@@ -557,7 +557,7 @@ Or, from a command line:
 - Not fully optimized for performance or disk space yet.
 - Full Windows Defender ATP integration is not available yet.
 - Mac devices that switch networks may appear multiple times in the APT portal.
-- Centrally managed uninstall is still being developed. As a workaround, a manual uninstall must be performed on each client device.
+- Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.
 
 ## Collecting diagnostic information
 
