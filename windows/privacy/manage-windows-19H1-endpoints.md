@@ -76,7 +76,7 @@ We used the following methodology to derive these network endpoints:
 |||HTTP|spo-ring.msedge.net|
 |Device authentication|
 ||The following endpoint is used to authenticate a device. If you  turn off traffic for this endpoint, the device will not be authenticated.|HTTPS|login.live.com*|
-||The following endpoints are used to retrieve device metadata. If you  turn off traffic for this endpoint, metadata will not be updated for the device.|HTTP|dmd.metaservices.microsoft.com|
+||The following endpoint is used to retrieve device metadata. If you  turn off traffic for this endpoint, metadata will not be updated for the device.|HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.|HTTP|v10.events.data.microsoft.com|
 |||HTTPS|v10.vortex-win.data.microsoft.com/collect/v1|
 |||HTTP|www.microsoft.com|
@@ -88,7 +88,7 @@ We used the following methodology to derive these network endpoints:
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.|HTTPS|*licensing.mp.microsoft.com*|
 |Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|HTTPS|inference.location.live.net|
 |||HTTP|location-inference-westus.cloudapp.net|
-|Maps|The following endpoint is used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTPS|*g.akamaiedge.net|
+|Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTPS|*g.akamaiedge.net|
 |||HTTP|*maps.windows.com*|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |HTTP|login.msa.akadns6.net|
 |||HTTP|us.configsvc1.live.com.akadns.net|
@@ -96,16 +96,16 @@ We used the following methodology to derive these network endpoints:
 |Microsoft forward link redirection service (FWLink)|The following endpoint is used by the Microsoft forward link redirection service (FWLink) to redirect permanent web links to their actual, sometimes transitory, URL. FWlinks are similar to URL shorteners, just longer. If you disable this endpoint, Windows Defender won't be able to update its malware definitions; links from Windows and other Microsoft products to the Web won't work; and PowerShell updateable Help won't update. To disable the traffic, instead disable the traffic that's getting forwarded.|HTTPS|go.microsoft.com|
 |Microsoft Store|The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way. If you turn off traffic for this endpoint, push notifications will no longer work, including MDM device management, mail synchronization, settings synchronization.|HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft Store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTP|storecatalogrevocation.storequality.microsoft.com|
-||The following endpoints are used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTPS|img-prod-cms-rt-microsoft-com*|HTTPS|store-images.microsoft.com|
+||The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTPS|img-prod-cms-rt-microsoft-com*|HTTPS|store-images.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|TLS v1.2|*.md.mp.microsoft.com*|
 |||HTTPS|*displaycatalog.mp.microsoft.com|
 |||HTTP \ HTTPS|pti.store.microsoft.com|
 |||HTTP|storeedgefd.dsx.mp.microsoft.com|
-|| |HTTP|markets.books.microsoft.com|
-|| |HTTP |share.microsoft.com|
+|||HTTP|markets.books.microsoft.com|
+|||HTTP |share.microsoft.com|
 |Network Connection Status Indicator (NCSI)|
 ||Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet. If you turn off traffic for this endpoint, NCSI won't be able to determine if the device is connected to the Internet and the network status tray icon will show a warning.|HTTP|www.msftconnecttest.com*|
-Office|Online. For more info, see Office 365 URLs and IP address ranges. You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps. If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.|HTTP|*.c-msedge.net|
+Office|The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office Online. For more info, see Office 365 URLs and IP address ranges. You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps. If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.|HTTP|*.c-msedge.net|
 |||HTTPS|*.e-msedge.net|
 |||HTTPS|*.s-msedge.net|
 |||HTTPS|nexusrules.officeapps.live.com|
@@ -139,14 +139,15 @@ Office|Online. For more info, see Office 365 URLs and IP address ranges. You can
 |||HTTPS|g.msn.com*|
 |||HTTPS|query.prod.cms.rt.microsoft.com|
 |||HTTPS|ris.api.iris.microsoft.com|
-|Windows Update|The following endpoints are used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.|HTTPS|*.prod.do.dsp.mp.microsoft.com|
+|Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.|HTTPS|*.prod.do.dsp.mp.microsoft.com|
 |||HTTP|cs9.wac.phicdn.net|
 |||HTTP|emdl.ws.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. If you turn off traffic for these endpoints, the device will not be able to download updates for the operating system.|HTTP|*.dl.delivery.mp.microsoft.com|
 |||HTTP|*.windowsupdate.com*|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. If you turn off traffic for these endpoints, the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store.|HTTPS|*.delivery.mp.microsoft.com|
 |||HTTPS|*.update.microsoft.com|
-||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly|HTTPS|tsfe.trafficshaping.dsp.mp.microsoft.com|
+||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly.|HTTPS|tsfe.trafficshaping.dsp.mp.microsoft.com|
+
 
 
 
