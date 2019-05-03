@@ -375,37 +375,6 @@ orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 
 - **orgid effective**: This is the Microsoft Defender ATP org id currently in use. If it does not match the value in the Configuration Profile, then the configuration has not been refreshed.
 
-### Uninstalling Microsoft Defender ATP for Mac
-
-#### Uninstalling with a script
-
-Create a script in **Settings > Computer Management > Scripts**.
-
-![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
-
-For example, this script removes Microsoft Defender ATP from the /Applications directory:
-
-```bash
-echo "Is WDAV installed?"
-ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-echo "Uninstalling WDAV..."
-rm -rf '/Applications/Microsoft Defender ATP.app'
-
-echo "Is WDAV still installed?"
-ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-echo "Done!"
-```
-
-#### Uninstalling with a policy
-
-Your policy should contain a single script:
-
-![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
-
-Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
-
 ### Check onboarding status
 
 You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
@@ -539,18 +508,6 @@ Controlling product settings, triggering on-demand scans, and several other impo
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
-
-## Uninstallation
-
-### Removing Microsoft Defender ATP from Mac devices
-
-To remove Microsoft Defender ATP from your macOS devices:
-
-- Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
-
-Or, from a command line:
-
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
 
 ## Known issues
 
