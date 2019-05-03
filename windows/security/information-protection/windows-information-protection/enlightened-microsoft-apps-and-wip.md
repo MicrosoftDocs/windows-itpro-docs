@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 05/02/2019
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
@@ -69,6 +69,9 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 - Microsoft Messaging
 
 - Microsoft Remote Desktop
+
+>[!NOTE] 
+>Microsoft Visio and Microsoft Project are not enlightended apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioining.
 
 ## List of WIP-work only apps from Microsoft
 Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.

@@ -51,7 +51,7 @@ The following capabilities  are included in the April 2019 preview release.
 ### In preview
 The following capability are included in the March 2019 preview release. 
 
-- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-rotection)  The machine health and compliance report provides high-level information about the devices in your organization. 
+- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
 
 ## February 2019
