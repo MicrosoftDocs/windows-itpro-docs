@@ -1,5 +1,5 @@
 ---
-title: Connection endpoints for Windows 10, version 19H1
+title: Connection endpoints for Windows 10, version 1903
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
@@ -14,11 +14,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 5/3/2019
 ---
-# Manage connection endpoints for Windows 10, version 19H1
+# Manage connection endpoints for Windows 10, version 1903
 
 **Applies to**
 
-- Windows 10, version 19H1
+- Windows 10, version 1903
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
@@ -44,7 +44,7 @@ We used the following methodology to derive these network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 19H1 Enterprise connection endpoints
+## Windows 10 1903 Enterprise connection endpoints
 
 |Area|Description|Protocol|Destination|
 |----------------|----------|----------|------------|
