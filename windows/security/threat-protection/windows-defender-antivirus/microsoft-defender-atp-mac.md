@@ -37,7 +37,7 @@ We've been working hard through the private preview period, and we've heard your
 - Product health can be queried with JAMF or the command line.
 - Admins can set their cloud preference for any location, not just for those in the US.
 
-## Installing and configuring 
+## Installing and configuring
 
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
 In general you'll need to take the following steps:
@@ -81,26 +81,3 @@ To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/ap
 
 We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines.
 SIP is a built-in macOS security feature that prevents low-level tampering with the OS.
-
-
-
-
-
-## What to expect in the ATP portal
-
-- AV alerts:
-  - Severity
-  - Scan type
-  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
-  - File information (name, path, size, and hash)
-  - Threat information (name, type, and state)
-- Device information:
-  - Machine identifier
-  - Tenant identifier
-  - App version
-  - Hostname
-  - OS type
-  - OS version
-  - Computer model
-  - Processor architecture
-  - Whether the device is a virtual machine

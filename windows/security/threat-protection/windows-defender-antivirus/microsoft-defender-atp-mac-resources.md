@@ -104,6 +104,25 @@ If you are running JAMF, your policy should contain a single script:
 
 Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
 
+## What to expect in the ATP portal
+
+- AV alerts:
+  - Severity
+  - Scan type
+  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
+  - File information (name, path, size, and hash)
+  - Threat information (name, type, and state)
+- Device information:
+  - Machine identifier
+  - Tenant identifier
+  - App version
+  - Hostname
+  - OS type
+  - OS version
+  - Computer model
+  - Processor architecture
+  - Whether the device is a virtual machine
+
 ## Known issues
 
 - Not fully optimized for performance or disk space yet.
