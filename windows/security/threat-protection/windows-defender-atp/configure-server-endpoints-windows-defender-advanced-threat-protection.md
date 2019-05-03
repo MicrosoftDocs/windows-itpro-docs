@@ -67,7 +67,8 @@ You'll need to tak the following steps if you choose to onboard servers through 
     >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
 
 - Turn on server monitoring from Windows Defender Security Center.
-- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Windows Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Windows Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Windows Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Windows Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+
 
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
@@ -217,7 +218,7 @@ To offboard the server, you can use either of the following methods:
 
    b. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
     
-        ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
+      ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
