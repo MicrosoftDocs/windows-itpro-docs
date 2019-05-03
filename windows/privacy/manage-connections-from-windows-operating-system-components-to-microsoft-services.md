@@ -1824,9 +1824,6 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 
 - Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
 
-  -or-
-
-- From an elevated command prompt, run **netsh interface teredo set state disabled**
 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense
 
@@ -1847,13 +1844,6 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
 - Create a new REG_DWORD registry setting named **AutoConnectAllowedOEM** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config** with a **value of 0 (zero)**.
 
-  -or-
-
-- Change the Windows Provisioning setting, WiFISenseAllowed, to **0 (zero)**. For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
-
-  -or-
-
-- Use the Unattended settings to set the value of WiFiSenseAllowed to **0 (zero)**. For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
@@ -1863,21 +1853,15 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
 
-  -or-
+-OR-
 
 - Use the registry to set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to **0 (zero)**.
 
-  -or-
 
-- Delete the registry setting **named** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Updates**.
-
-  -or-
+-OR-
 
 - For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-  -and-
-
-    From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0**
 
 You can stop sending file samples back to Microsoft.
 
@@ -2076,7 +2060,7 @@ On Windows Server 2016, this will block Microsoft Store calls from Universal Win
 
 You can turn off apps for websites, preventing customers who visit websites that are registered with their associated app from directly launching the app.
 
-**Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
 
   -or-
 
