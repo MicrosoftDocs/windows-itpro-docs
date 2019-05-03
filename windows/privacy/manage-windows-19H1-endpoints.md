@@ -54,6 +54,7 @@ We used the following methodology to derive these network endpoints:
 
 
 | Area | Description | Protocol | Destination |
+| Source process | Protocol | Destination |
 |----------------|----------|------------|
 | explorer        | HTTP     | tile-service.weather.microsoft.com  |
 |   | HTTP  | blob.weather.microsoft.com |
