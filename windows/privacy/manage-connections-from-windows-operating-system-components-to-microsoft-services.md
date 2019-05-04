@@ -160,7 +160,7 @@ See the following table for a summary of the management settings for Windows Ser
 See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
 
 | Setting | Registry |
-| - | :-: | :-: | 
+| - | :-: |  
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | |
