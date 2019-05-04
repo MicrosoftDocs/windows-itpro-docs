@@ -325,14 +325,6 @@ You can also apply the Group Policies using the following registry keys:
 
 If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
 
-### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana and Search MDM policies
-
-For Windows 10 only, the following Cortana MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-
-| Policy                                               | Description                                                                                         |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
-| Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
 
 ### <a href="" id="bkmk-datetime"></a>3. Date & Time
 
@@ -363,9 +355,6 @@ To prevent Windows from retrieving device metadata from the Internet:
 
 - Create a new REG_DWORD registry setting named **PreventDeviceMetadataFromNetwork** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata** and set it to 1 (one).
 
-  -or -
-
-- Apply the DeviceInstallation/PreventDeviceMetadataFromNetwork MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork).
 
 ### <a href="" id="find-my-device"></a>5. Find My Device
 
@@ -393,13 +382,6 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
 
 - Create a new REG_DWORD registry setting **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\\EnableFontProviders** to **0 (zero)**.
 
-  -or-
-
-- In Windows 10, version 1703, you can apply the System/AllowFontProviders MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
-
-  - **False**. Font streaming is Disabled.
-
-  - **True**. Font streaming is Enabled.
 
 > [!NOTE]
 > After you apply this policy, you must restart the device for it to take effect.
@@ -433,15 +415,6 @@ To turn off Insider Preview builds for Windows 10:
 
 - Create a new REG_DWORD registry setting named **AllowBuildPreview** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds** with a **value of 0 (zero)**
 
-  -or-
-
-- Apply the System/AllowBuildPreview MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
-
-  - **0**. Users cannot make their devices available for downloading and installing preview software.
-
-  - **1**. Users can make their devices available for downloading and installing preview software.
-
-  - **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
 
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
@@ -562,9 +535,6 @@ To turn off mail synchronization for Microsoft Accounts that are configured on a
 
 - Remove any Microsoft Accounts from the Mail app.
 
-  -or-
-
-- Apply the Accounts/AllowMicrosoftAccountConnection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is not allowed and 1 is allowed. This does not apply to Microsoft Accounts that have already been configured on the device.
 
 To turn off the Windows Mail app:
 
@@ -582,8 +552,6 @@ To prevent communication to the Microsoft Account cloud authentication service. 
 
 
 To disable the Microsoft Account Sign-In Assistant:
-
-- Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
 
 - Change the **Start** REG_DWORD registry setting in **HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to a value of **4**.
 
@@ -627,21 +595,6 @@ Alternatively, you can configure the these Registry keys as described:
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
 
-### <a href="" id="bkmk-edge-mdm"></a>13.2 Microsoft Edge MDM policies
-
-The following Microsoft Edge MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-
-| Policy                                               | Description                                                                                         |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Browser/AllowAutoFill                                | Choose whether employees can use autofill on websites. <br /> **Set to: Not Allowed**                      |
-| Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> **Set to: Allowed**                  |
-| Browser/AllowMicrosoftCompatbilityList               | Specify the Microsoft compatibility list in Microsoft Edge. <br /> **Set to: Not Allowed**                 |
-| Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> **Set to: Not Allowed**       |
-| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the Address Bar shows search suggestions.. <br /> **Set to: Not Allowed**                   |
-| Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> **Set to: Not Allowed**                            |
-| Browser/FirstRunURL                                  | Choose the home page for Microsoft Edge on Windows Mobile 10. <br /> **Set to:** blank                 |
-
-
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/available-policies).
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
@@ -654,7 +607,6 @@ You can turn off NCSI by doing one of the following:
 
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
-- In Windows 10, version 1703 and later, apply the Connectivity/DisallowNetworkConnectivityActiveTests MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests) with a value of 1.
 
 > [!NOTE]
 > After you apply this policy, you must restart the device for the policy setting to take effect.
@@ -672,10 +624,6 @@ You can turn off the ability to download and update offline maps.
   -or-
 
 - Create a REG_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a **value of 0 (zero)**.
-
-  -or-
-
-- In Windows 10, version 1607 and later, apply the Maps/EnableOfflineMapsAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-maps#maps-enableofflinemapsautoupdate) with a **value of 0**.
 
   -and-
 
@@ -702,10 +650,6 @@ To turn off OneDrive in your organization:
     -or-
 
 - Create a REG_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OneDrive** with a **value of 1 (one)** 
-
--or-
-
--   Set the System/DisableOneDriveFileSync MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync) to True (value 1) to disable OneDrive File Sync. 
 
 
 ### <a href="" id="bkmk-preinstalledapps"></a>17. Preinstalled apps
@@ -951,14 +895,6 @@ To turn off **Send Microsoft info about how I write to help us improve typing an
 
 - Turn off the feature in the UI.
 
-  -or-
-
-- Apply the TextInput/AllowLinguisticDataCollection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
-
-    - **0**. Not allowed
-
-    - **1**. Allowed (default)
-
 To turn off **Let websites provide locally relevant content by accessing my language list**:
 
 - Turn off the feature in the UI.
@@ -999,18 +935,6 @@ To turn off **Location for this device**:
 
 - Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
-  -or-
-
-- Apply the System/AllowLocation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
-
-    - **0**. Turned off and the employee can't turn it back on.
-
-    - **1**. Turned on, but lets the employee choose whether to use it. (default)
-
-    - **2**. Turned on and the employee can't turn it off.
-
-    > [!NOTE]
-    > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](https://msdn.microsoft.com/library/dn905224.aspx).
 
 To turn off **Location**:
 
@@ -1053,17 +977,6 @@ To turn off **Let apps use my camera**:
 
 - Create a REG_DWORD registry setting named **LetAppsAccessCamera** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
-  -or-
-
-- Apply the Camera/AllowCamera MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
-
-    - **0**. Apps can't use the camera.
-
-    - **1**. Apps can use the camera.
-
-    > [!NOTE]
-    > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](https://msdn.microsoft.com/library/dn905224.aspx).
-
 
 To turn off **Choose apps that can use your camera**:
 
@@ -1085,14 +998,6 @@ To turn off **Let apps use my microphone**:
 
   -or-
 
--  Apply the Privacy/LetAppsAccessMicrophone MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmicrophone), where:
-
-    - **0**. User in control
-    - **1**. Force allow
-    - **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 To turn off **Choose apps that can use your microphone**:
@@ -1100,9 +1005,6 @@ To turn off **Choose apps that can use your microphone**:
 - Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-notifications"></a>18.5 Notifications
-
->[!IMPORTANT]
->Disabling notifications will also disable the ability to manage the device through MDM. If you are using an MDM solution, make sure cloud notifications are enabled through one of the options below.
 
 To turn off notifications network usage:
 
@@ -1114,13 +1016,6 @@ To turn off notifications network usage:
 
 - Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one)
 
-  -or-
-
-
-- Apply the Notifications/DisallowCloudNotification MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification), where:
-
-    - **0**. WNS notifications allowed
-    - **1**. No WNS notifications allowed
 
 In the **Notifications** area, you can also choose which apps have access to notifications.
 
@@ -1133,14 +1028,6 @@ To turn off **Let apps access my notifications**:
 - Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access notifications**
 
   - Set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
--  Apply the Privacy/LetAppsAccessNotifications MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessnotifications), where:
-
-     - **0**. User in control
-     - **1**. Force allow
-     - **2**. Force deny
 
   -or-
 
@@ -1160,10 +1047,6 @@ To turn off streaming audio to Microsoft Speech services,
 
   -or-
 
-- Set the Privacy\AllowInputPersonalization MDM Policy from the Policy CSP to **0 - Not allowed**
-
-  -or-
-
 - Create a REG_DWORD registry setting named **HasAccepted** in **HKEY_CURRENT_USER\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy** with a **value of 0 (zero)**
 
 ### <a href="" id="bkmk-priv-accounts"></a>18.7 Account info
@@ -1179,14 +1062,6 @@ To turn off **Let apps access my name, picture, and other account info**:
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access account information**
 
   - Set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
--  Apply the Privacy/LetAppsAccessAccountInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessaccountinfo), where:
-
-     - **0**. User in control
-     - **1**. Force allow
-     - **2**. Force deny
 
   -or-
 
@@ -1214,14 +1089,6 @@ To turn off **Choose apps that can access contacts**:
 
   -or-
 
--  Apply the Privacy/LetAppsAccessContacts MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscontacts), where:
-
-     - **0**. User in control
-     - **1**. Force allow
-     - **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsAccessContacts** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-calendar"></a>18.9 Calendar
@@ -1237,14 +1104,6 @@ To turn off **Let apps access my calendar**:
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the calendar**
 
   - Set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
--  Apply the Privacy/LetAppsAccessCalendar MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscalendar), where:
-
-    - **0**. User in control
-    - **1**. Force allow
-    - **2**. Force deny
 
   -or-
 
@@ -1270,14 +1129,6 @@ To turn off **Let apps access my call history**:
 
   -or-
 
-  -  Apply the Privacy/LetAppsAccessCallHistory MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscallhistory), where:
-
-    - **0**. User in control
-    - **1**. Force allow
-    - **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-email"></a>18.11 Email
@@ -1296,14 +1147,6 @@ To turn off **Let apps access and send email**:
 
   -or-
 
-  -  Apply the Privacy/LetAppsAccessEmail MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessemail), where:
-
-     - **0**. User in control
-     - **1**. Force allow
-     - **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsAccessEmail** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-messaging"></a>18.12 Messaging
@@ -1319,14 +1162,6 @@ To turn off **Let apps read or send messages (text or MMS)**:
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access messaging**
 
   - Set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
--  Apply the Privacy/LetAppsAccessMessaging MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmessaging), where:
-
-      - **0**. User in control
-      - **1**. Force allow
-      - **2**. Force deny
 
   -or-
 
@@ -1362,14 +1197,6 @@ To turn off **Let apps make phone calls**:
 
   -or-
 
--  Apply the Privacy/LetAppsAccessPhone MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessphone), where:
-
-      - **0**. User in control
-      - **1**. Force allow
-      - **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsAccessPhone** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
@@ -1390,14 +1217,6 @@ To turn off **Let apps control radios**:
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios**
 
   - Set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
--  Apply the Privacy/LetAppsAccessRadios MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessradios), where:
-
-  - **0**. User in control
-  - **1**. Force allow
-  - **2**. Force deny
 
   -or-
 
@@ -1422,10 +1241,6 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
   -or-
 
-- Set the Privacy/LetAppsSyncWithDevices MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappssyncwithdevices) to **2**. Force deny
-
-  -or-
-
 - Create a REG_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
@@ -1440,14 +1255,6 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
 - Create a REG_DWORD registry setting named **LetAppsAccessTrustedDevices** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
-  -or-
-
-- Apply the **Privacy/LetAppsAccessTrustedDevices** MDM policy from the [Policy CSP](/windows/client-management/mdm/policy-csp-privacy.md#privacy-letappsaccesstrusteddevices
-), where:
-
-     - **0**. User in control
-     - **1**. Force allow
-     - **2**. Force deny
 
 ### <a href="" id="bkmk-priv-feedback"></a>18.16 Feedback & diagnostics
 
@@ -1502,19 +1309,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
 > [!NOTE]
 > If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
-
-  -or-
-
-- Apply the System/AllowTelemetry MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
-
-    - **0**. Maps to the **Security** level.
-
-    - **1**. Maps to the **Basic** level.
-
-    - **2**. Maps to the **Enhanced** level.
-
-    - **3**. Maps to the **Full** level.
-    
+  
 
 To turn off tailored experiences with relevant tips and recommendations by using your diagnostics data:
 
@@ -1557,9 +1352,6 @@ To turn off **Let apps run in the background**:
 
 - Create a REG_DWORD registry setting named **LetAppsRunInBackground** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**
 
-  -or-
-
--  Set the Privacy/LetAppsRunInBackground MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessruninbackground) to **2 Force Deny**.
 
 > [!NOTE]
 > Some apps, including Cortana and Search, might not function as expected if you set **Let apps run in the background** to **Force Deny**.
@@ -1580,14 +1372,6 @@ To turn off **Let Windows and your apps use your motion data and collect motion 
 
 - Create a REG_DWORD registry setting named **LetAppsAccessMotion** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
-  -or-
-
--  Apply the Privacy/LetAppsAccessMotion MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmotion), where:
-
-    - **0**. User in control
-    - **1**. Force allow
-    - **2**. Force deny
-
 
 ### <a href="" id="bkmk-priv-tasks"></a>18.19 Tasks
 
@@ -1605,13 +1389,6 @@ To turn this off:
 
 - Create a REG_DWORD registry setting named **LetAppsAccessTasks** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
-  -or-
-
--  Apply the Privacy/LetAppsAccessTasks MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesstasks), where:
-
-    - **0**. User in control
-    - **1**. Force allow
-    - **2**. Force deny
 
 ### <a href="" id="bkmk-priv-diag"></a>18.20 App Diagnostics
 
@@ -1629,10 +1406,6 @@ To turn this off:
 
 - Create a REG_DWORD registry setting named **LetAppsGetDiagnosticInfo** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
-  -or-
-
--  Set the Privacy/LetAppsGetDiagnosticInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsgetdiagnosticinfo) to **2**. Force deny
-
 
 ### <a href="" id="bkmk-priv-ink"></a>18.21 Inking & Typing
 
@@ -1646,11 +1419,6 @@ To turn off Inking & Typing data collection (note: there is no Group Policy for 
 
  - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** to a **value of 1 (one)**
 
-  -or-
-
- - Set the Privacy\AllowInputPersonalization MDM Policy from the Policy CSP. 
-  [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) to **0** (not allowed). This policy setting controls the ability to send inking and typing data to Microsoft to improve the language recognition and suggestion capabilities of apps and services running on Windows. 
-
 
 If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
 
@@ -1659,10 +1427,6 @@ If you're running at least Windows 10, version 1703, you can turn off updates to
   -or-
 
  - Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
-
-  -or-
-
- - Set the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Speech_AllowSpeechModelUpdate) to **0**
 
 
 > [!NOTE]
@@ -1699,10 +1463,6 @@ In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better
   **For Windows 10:**
 
   - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
-
-  -or-
-
-  - Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) and **set the value to 1 (Enabled)**.
 
   -or-
 
@@ -1748,11 +1508,6 @@ You can control if your settings are synchronized:
   -or-
 
 - Create a REG_DWORD registry setting named **DisableSettingSync** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
-
-  -or-
-
-- Apply the Experience/AllowSyncMySettings MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) and **set the value to 0 (not allowed)**.
-
 
 To turn off Messaging cloud sync:
 
@@ -1812,18 +1567,10 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 - Delete the registry setting **named** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Updates**.
 
--OR-
-
-- For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-
 
 You can stop sending file samples back to Microsoft.
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
-
-  -or-
-
-- For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) to **2 (two) for Never Send**.
 
   -or-
 
@@ -1893,10 +1640,6 @@ To disable Windows Defender Smartscreen:
 
 - Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
 
--OR-
-
-- Set the Browser/AllowSmartScreen MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to **0 (turned Off)**.
-
 
 ### <a href="" id="bkmk-spotlight"></a>25. Windows Spotlight
 
@@ -1908,10 +1651,6 @@ If you're running Windows 10, version 1607 or later, you need to:
 
     > [!NOTE]
     > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
-
-   -or-
-
-- For Windows 10 only, apply the Experience/AllowWindowsSpotlight MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), with a value of 0 (zero).
 
    -or-
 
@@ -2056,18 +1795,6 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 - Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **100 (one hundred)**. 
 
-### <a href="" id="bkmk-wudo-mdm"></a>27.4 Delivery Optimization MDM policies
-
-The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-
-| MDM Policy                | Description                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------------------|
-| DeliveryOptimization/DODownloadMode            | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>99</strong>. Simple download mode with no peering.</p></li><li><p><strong>100</strong>. Use BITS instead of Windows Update Delivery Optimization.</p></li></ul>|
-| DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> **Note** This ID must be a GUID.|
-| DeliveryOptimization/DOMaxCacheAge             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
-| DeliveryOptimization/DOMaxCacheSize            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
-| DeliveryOptimization/DOMaxUploadBandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
-
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
@@ -2118,21 +1845,6 @@ You can turn off automatic updates by doing one of the following. This is not re
 
 - Add a REG_DWORD value named **AutoDownload** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
 
-  -or-
-
-- For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), where:
-
-  - **0**. Notify the user before downloading the update.
-
-  - **1**. Auto install the update and then notify the user to schedule a device restart.
-
-  - **2** (default). Auto install and restart.
-
-  - **3**. Auto install and restart at a specified time.
-
-  - **4**. Auto install and restart without end-user control.
-
-  - **5**. Turn off automatic updates.
 
 For China releases of Windows 10 there is one additional Regkey to be set to prevent traffic:
 
