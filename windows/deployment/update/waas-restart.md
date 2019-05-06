@@ -43,7 +43,7 @@ When **Configure Automatic Updates** is enabled in Group Policy, you can enable 
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**.
 
 > [!NOTE]
-> When using Remote Desktop Protocol connections, only active RDP sessions are considered as logged on users. Devices, that do not have locally logged on users, or active RDP sessions, will be restarted. 
+> When using Remote Desktop Protocol connections, only active RDP sessions are considered as logged on users. Devices that do not have locally logged on users, or active RDP sessions, will be restarted. 
 
 You can also use Registry, to prevent automatic restarts when a user is signed in. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4** and enable **NoAutoRebootWithLoggedOnUsers**. As with Group Policy, if a user schedules the restart in the update notification, it will override this setting.
 
