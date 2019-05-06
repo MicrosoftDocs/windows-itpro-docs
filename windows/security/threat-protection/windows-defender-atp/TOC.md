@@ -40,9 +40,7 @@
 ##### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
 
  
-#### Machines list
-##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
+#### [Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
 ##### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ###### [Machine details](investigate-machines-windows-defender-advanced-threat-protection.md#machine-details)
 ###### [Response actions](investigate-machines-windows-defender-advanced-threat-protection.md#response-actions)
