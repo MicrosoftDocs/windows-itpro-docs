@@ -52,12 +52,13 @@
 
 #### [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)
 ##### [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
-###### [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
-###### [Run antivirus scan](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
+###### [Manage tags](respond-machine-alerts-windows-defender-advanced-threat-protection.md#manage-tags)
+###### [Initiate Automated Investigation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#initiate-automated-investigation)
+###### [Initiate Live Response Session](respond-machine-alerts-windows-defender-advanced-threat-protection.md#initiate-live-response-session)
+###### [Collect investigation package from machines](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
+###### [Run Windows Defender Antivirus scan on machines](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
-###### [Remove app restriction](respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
 ###### [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-###### [Release machine from isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
 ###### [Check activity details in Action center](respond-machine-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)
