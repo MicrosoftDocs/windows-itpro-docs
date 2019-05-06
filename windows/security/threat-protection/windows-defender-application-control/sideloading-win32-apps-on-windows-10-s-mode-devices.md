@@ -67,7 +67,7 @@ To allow Win32 apps to run on a Windows 10 device in S mode, admins must ‘unlo
     ```
     Note: PolicyID can be found by inspecting the Supplemental Policy XML. Convert to .bin to sign with DGSS (recommended) or .cip to sign locally.
 5.	To sign using the recommended DGSS option through the Microsoft Store for Business, click **Manage** > **Settings** > **Devices** > **Upload** > **Sign**.
-    To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md)
+    To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md).
 
 ## Creating and Signing an App Catalog
 An admin must generate an app catalog for every deployed app:
@@ -76,14 +76,14 @@ An admin must generate an app catalog for every deployed app:
       ```console
       PackageInspector.exe start C: -path <path to installer>
       ```
-    - Open app installer
+    - Open the app installer.
     - Stop Package Inspector:
       ```console
       PackageInspector.exe stop C: -Name <path\app.cat> -cdfpath <path\app.cdf>
       ```
 2.	To sign using the recommended DGSS option through the Microsoft Store for Business, click **Manage** > **Settings** > **Devices** > **Upload** > **Sign**.
-    To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md)
+    To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md).
 
 ## User experience 
 
-Users will either have apps pushed directly to their devices by their admins, or they can download apps that their admins have made available through Company Portal
+Users will either have apps pushed directly to their devices by their admins, or they can download apps that their admins have made available through the Company Portal.
