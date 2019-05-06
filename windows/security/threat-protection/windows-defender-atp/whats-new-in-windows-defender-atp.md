@@ -19,15 +19,39 @@ ms.topic: conceptual
 
 # What's new in Windows Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Here are the new features in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
 
+## May 2019
+The following capability is generally available (GA).
+
+- [Threat protection reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
+
+
+- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Windows Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
+
+
+## April 2019
+The following capability is generally available (GA).
+
+- [Microsoft Threat Experts Targeted Attack Notification capability](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts#targeted-attack-notification) <BR>Microsoft Threat Experts' Targeted Attack Notification alerts are tailored to organizations to provide as much information as can be quickly delivered thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
+
+- [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. 
+
+
+### In preview
+The following capabilities  are included in the April 2019 preview release. 
+
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
+- [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
+
 ## March 2019
 ### In preview
-The following capability are included in the February 2019 preview release. 
+The following capability are included in the March 2019 preview release. 
 
-- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection) <BR> The machine health and compliance report provides high-level information about the devices in your organization. 
+- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
 
 ## February 2019
@@ -35,13 +59,6 @@ The following capabilities are generally available (GA).
 - [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Windows Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
 
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
-
-### In preview
-The following capability are included in the February 2019 preview release. 
-
-- [Reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
-
-- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Windows Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
 
 
 ## October 2018

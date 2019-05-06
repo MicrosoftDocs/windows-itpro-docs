@@ -18,10 +18,9 @@ ms.topic: article
 ---
 
 # Machine health and compliance report in Windows Defender ATP
- 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
- 
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 [!include[Prerelease information](prerelease.md)]
  
 The machines status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.

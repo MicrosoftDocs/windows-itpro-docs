@@ -31,9 +31,13 @@ You should have beginner-level experience in macOS and BASH scripting. You must 
 You should also have access to Windows Defender Security Center.
 
 ### System Requirements
-Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
-- Disk space during preview: 1GB 
+- Disk space during preview: 1GB
+
+Beta versions of macOS are not supported.
+
+> [!CAUTION]
+> Running other third-party endpoint protection along with Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -56,14 +60,11 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-  - [Register macOS devices](#register-macos-devices) with Windows Defender ATP
-  - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
-  - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
-  - [JAMF based deployment](#jamf-based-deployment)
-  - [Manual deployment](#manual-deployment)
-
-## Deploy Microsoft Defender ATP for Mac
-Use any of the supported methods to deploy Microsoft Defender ATP for Mac
+  - Ensure you have a Windows Defender ATP subscription and have access to the Windows Defender ATP Portal
+  - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
+    * [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
+    * [JAMF based deployment](#jamf-based-deployment)
+    * [Manual deployment](#manual-deployment)
 
 ## Microsoft Intune based deployment
 
@@ -293,7 +294,6 @@ After some time, the machine's User Approved MDM status will change to Yes.
 
 You can enroll additional machines now. Optionally, can do it after system configuration and application packages are provisioned.
 
-
 ### Deployment
 Enrolled client machines periodically poll the JAMF Server and install new configuration profiles and policies as soon as they are detected.
 
@@ -329,7 +329,7 @@ Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
 
 You can also check the onboarding status:
 ```
-mavel-mojave:~ testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
 uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
 orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
@@ -351,13 +351,13 @@ For example, this script removes Microsoft Defender ATP from the /Applications d
 
 ```
 echo "Is WDAV installed?"
-ls -ld '/Applications/Microsoft Defender.app' 2>/dev/null
+ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
 
 echo "Uninstalling WDAV..."
-rm -rf '/Applications/Microsoft Defender.app'
+rm -rf '/Applications/Microsoft Defender ATP.app'
 
 echo "Is WDAV still installed?"
-ls -ld '/Applications/Microsoft Defender.app' 2>/dev/null
+ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
 
 echo "Done!"
 ```
@@ -374,7 +374,7 @@ Configure the appropriate scope in the **Scope** tab to specify the machines tha
 You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
 
 ```
-/Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
+sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
 ```
 
 This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
@@ -435,7 +435,7 @@ The installation will proceed.
     The client machine is not associated with orgId.  Note that the orgid is blank.
 
     ```
-    mavel-mojave:wdavconfig testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid :
     ```
@@ -449,7 +449,7 @@ The installation will proceed.
 3.  Verify that the machine is now associated with orgId:
 
     ```
-    mavel-mojave:wdavconfig testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid : E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
@@ -507,7 +507,4 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
    
 ### Installation issues
-If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
-
- 
-For feedback on the preview, contact: _**mdatpfeedback@microsoft.com**_.
+If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.

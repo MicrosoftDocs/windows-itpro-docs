@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 09/04/2018
 ---
 
 # Windows Defender Security Center Security operations dashboard
