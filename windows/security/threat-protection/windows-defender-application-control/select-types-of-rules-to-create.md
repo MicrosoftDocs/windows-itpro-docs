@@ -108,13 +108,13 @@ They could also choose to create a catalog that captures information about the u
 Beginning with Windows 10 version 1903, WDAC policies can contain path-based rules.
 
 - New-CIPolicy parameters
-  - FilePath: create path rules under path <path to scan> for anything not user-writeable (at the individual file level)
+  - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
     ```console
     New-CIPolicy -f .\mypolicy.xml -l FilePath -s <path to scan> -u
     ```
     Optionally, add -UserWriteablePaths to ignore user writeability
 
-  - FilePathRule: create a rule where filepath string is directly set to value of <any path string>
+  - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
     ```console
     New-CIPolicyRule -FilePathRule <any path string>
     ```
