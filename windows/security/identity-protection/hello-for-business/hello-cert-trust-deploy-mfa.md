@@ -23,7 +23,7 @@ ms.date: 08/19/2018
 -   Certificate trust
 
 
-On-premises deployments must use on-premises MFA Server that provides an AD FS Multifactor authentication adapter. It could be Azure Multi-Factor Authentication Server or third-party MFA solution.
+On-premises deployments must use an on-premises MFA Server that provides an AD FS Multifactor authentication adapter. It can be an Azure Multi-Factor Authentication Server or a third-party MFA solution.
 
 >[!TIP]
 >Please make sure you've read [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md) before proceeding any further.
