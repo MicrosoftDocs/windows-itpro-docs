@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Investigate machines in the Windows Defender ATP Machines list
+# Investigate machines in the Machines list
 
 **Applies to:**
 

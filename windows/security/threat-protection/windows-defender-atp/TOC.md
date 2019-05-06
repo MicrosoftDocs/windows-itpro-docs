@@ -43,11 +43,11 @@
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
 ##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
-##### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
-###### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
-###### [Filter events from a specific date](investigate-machines-windows-defender-advanced-threat-protection.md#filter-events-from-a-specific-date)
-###### [Export machine timeline events](investigate-machines-windows-defender-advanced-threat-protection.md#export-machine-timeline-events)
-###### [Navigate between pages](investigate-machines-windows-defender-advanced-threat-protection.md#navigate-between-pages)
+##### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
+###### [Machine details](investigate-machines-windows-defender-advanced-threat-protection.md#machine-details)
+###### [Response actions](investigate-machines-windows-defender-advanced-threat-protection.md#response-actions)
+###### [Cards](investigate-machines-windows-defender-advanced-threat-protection.md#cards)
+###### [Tabs](investigate-machines-windows-defender-advanced-threat-protection.md#tabs)
 
 
 #### [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)
