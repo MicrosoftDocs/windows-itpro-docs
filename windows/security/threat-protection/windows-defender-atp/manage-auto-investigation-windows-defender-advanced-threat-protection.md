@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 09/03/2018
 ---
 
 # Learn about the automated investigations dashboard
@@ -161,7 +160,7 @@ This tab is only displayed when an investigation is complete and shows all pendi
 ## Pending actions
 If there are pending actions on an Automated investigation, you'll see a pop up similar to the following image. 
 
-![Image of pending actions](images\atp-pending-actions-notification.png)
+![Image of pending actions](images\pending-actions.png)
 
 When you click on the pending actions link, you'll be taken to the pending actions page. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Pending actions**.
 

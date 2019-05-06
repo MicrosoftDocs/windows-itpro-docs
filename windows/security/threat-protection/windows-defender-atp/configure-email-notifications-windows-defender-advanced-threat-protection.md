@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
@@ -70,7 +69,7 @@ You can create rules that determine the machines and alert severities to send em
 
 Here's an example email notification:
 
-![Image of example email notification](images/atp-example-email-notification.png)
+![Image of example email notification](images/email-notification.png)
 
 ## Edit a notification rule
 1. Select the notification rule you'd like to edit.
