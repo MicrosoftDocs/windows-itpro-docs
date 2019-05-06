@@ -82,7 +82,7 @@ If you have enabled the Azure ATP feature and there are alerts related to the ma
 
 ### Logged on users
 
-The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the"See all users" hyperlink opens the details pane that displays information such as user and logon type, and first/last seen. For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
+The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane that displays information such as user type, logon type, and first/last seen. For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ![Image of user details pane](images/logged-on-users.png)
 
@@ -94,11 +94,11 @@ The Security assessments tile shows the overall exposure level, security recomme
 
 ## Tabs
 
-The five tabs under the cards section show relevant security and threat prevention information related to the machine.
+The five tabs under the cards section show relevant security and threat prevention information related to the machine. In every tab, you can customize the columns that are shown.
 
 ### Alerts
 
-The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity.
+The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts and customize the columns.
 
 ![Image of alerts related to the machine](images/alerts-machine.png)
 
@@ -110,9 +110,7 @@ To see a full page view of an alert including incident graph and process tree, s
 
 The **Timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine. This can help you correlate any events, files, and IP addresses in relation to the machine.
 
-Timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.
-
-To further control your view, you can filter by event groups or customize the columns.
+Timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period. To further control your view, you can filter by event groups or customize the columns.
 
 >[!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
@@ -129,9 +127,19 @@ Some of the functionality includes:
   - Use the search bar to look for specific timeline events.
 - Filter events from a specific date
   - Select the calendar icon in the upper left of the table to display events in the past day, week, 30 days, or custom range. By default, the machine timeline is set to display the events from the past 30 days.
-  - Use the timeline to jump to a specific moment in time by highlighting the section. The arrows on the timelime pinpoint automated investigations
+  - Use the timeline to jump to a specific moment in time by highlighting the section. The arrows on the timeline pinpoint automated investigations
 - Export detailed machine timeline events
-  - You can choose to export the machine timeline for the current date or a specified date range up to seven days.
+  - Export the machine timeline for the current date or a specified date range up to seven days.
+
+Along with event time and users, one of the main categories on the timeline is "Details". They describe what happened in the events. The list of possible details are:
+
+- Contained by Application Guard
+- Active threat detected - when the detection happened, the threat was executing (i.e. it was running)
+- Remediation unsuccessful - remediation was invoked but failed
+- Remediation successful - the threat was stopped and cleaned up
+- Warning bypassed by user - SmartScreen warning appeared but the user dismissed it
+- Suspicious script detected
+- Alert category (e.g. lateral movement)- if the event is correlated to an alert, the tag will show the alert category
 
 You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
