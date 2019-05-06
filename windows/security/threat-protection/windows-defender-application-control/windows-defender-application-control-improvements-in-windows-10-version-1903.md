@@ -66,3 +66,9 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
 Beginning with Windows 10 vesion 1903, WDAC supportd multiple code integrity policies for one device. 
 
 
+WDAC – Composable (stacked) code integrity policies for supporting multiple code integrity policies
+### Precedence
+- Multiple base policies: intersection
+  - Only applications allowed by both policies run without generating block events
+- Base + supplemental policy: union
+  - Files that are allowed by the base policy or the supplemental policy are not blocked
