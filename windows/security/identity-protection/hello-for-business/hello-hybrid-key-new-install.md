@@ -80,7 +80,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
 > * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
-> * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based url.
+> * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based URL.
 
 ### Section Review ###
 
@@ -135,7 +135,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 > * Review the overview and uses of Azure Multifactor Authentication.
 > * Review your Azure Active Directory subscription for Azure Multifactor Authentication.
 > * Create an Azure Multifactor Authentication Provider, if necessary.
-> * Configure Azure Multifactor Authentiation features and settings.
+> * Configure Azure Multifactor Authentication features and settings.
 > * Understand the different User States and their effect on Azure Multifactor Authentication.
 > * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server Active Directory Federation Services, if necessary.
 
