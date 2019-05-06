@@ -28,13 +28,13 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
 
 - New-CIPolicy parameters
   - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
-    ```console
+    ```powershell
     New-CIPolicy -f .\mypolicy.xml -l FilePath -s <path to scan> -u
     ```
     Optionally, add -UserWriteablePaths to ignore user writeability
 
   - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
-    ```console
+    ```powershell
     New-CIPolicyRule -FilePathRule <any path string>
     ```
     Useful for wildcards like C:\foo\\*
