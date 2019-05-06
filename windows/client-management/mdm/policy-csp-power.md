@@ -67,7 +67,7 @@ ms.date: 05/03/2019
   </dd>
   <dd>
     <a href="#power-selectsleepbuttonactionpluggedin">Power/SelectSleepButtonActionPluggedIn</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#power-standbytimeoutonbattery">Power/StandbyTimeoutOnBattery</a>
   </dd>
