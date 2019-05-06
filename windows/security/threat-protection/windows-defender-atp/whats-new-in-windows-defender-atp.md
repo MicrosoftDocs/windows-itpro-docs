@@ -31,6 +31,8 @@ The following capability is generally available (GA).
 
 - [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Windows Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
 
+- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new) <BR> APIs for indicators are now generally available. 
+
 
 ## April 2019
 The following capability is generally available (GA).
