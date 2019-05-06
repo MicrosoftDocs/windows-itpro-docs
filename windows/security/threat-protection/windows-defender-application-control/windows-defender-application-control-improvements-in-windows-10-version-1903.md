@@ -17,9 +17,14 @@ ms.date: 05/06/2018
 -   Windows 10
 -   Windows Server 2016
 
+>[!IMPORTANT]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+This topic covers improvements introduced in Windows 10, version 1903.
+
 ## Path-based rules
 
-Beginning with Windows 10 version 1903, WDAC policies can contain path-based rules.
+Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
 
 - New-CIPolicy parameters
   - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
@@ -34,29 +39,25 @@ Beginning with Windows 10 version 1903, WDAC policies can contain path-based rul
     ```
     Useful for wildcards like C:\foo\\*
 
-- Usage: same flow as per-app rules
-  ```xml
+- Usage follows the same flow as per-app rules:
+  ```powershell
   $rules = New-CIPolicyRule …
   $rules += New-CIPolicyRule …
   …
-  ```
-  
-  ```console
   New-CIPolicyRule -f .\mypolicy.xml -u
   ```
 
-- Wildcards supported:
-  Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
-  - One or the other, not both at the same time
-  - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
+- Wildcards supported
+  - Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
+    - One or the other, not both at the same time
+    - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
   - Examples:
     - %WINDIR%\\...
     - %SYSTEM32%\\...
     - %OSDRIVE%\\...
 
-- Disable default FilePath rule protection of enforcing user-writeability
-  For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
-  ```console
+- Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
+  ```powershell
   Set-RuleOption -o 18 .\policy.xml
   ```
 
