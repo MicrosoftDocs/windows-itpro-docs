@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: #conceptual
 ---
 
-## Collecting diagnostic information
+# Resources
 
 **Applies to:**
 
@@ -25,6 +25,11 @@ ms.topic: #conceptual
  
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+This topic describes how to use, and details about, Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
+Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+
+## Collecting diagnostic information
 
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
 
@@ -57,7 +62,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
    Operation succeeded
    ```
 
-### Installation issues
+## Logging installation issues
 
 If an error occurs during installation, the installer will only report a general failure.
 
@@ -65,13 +70,13 @@ The detailed log will be saved to /Library/Logs/Microsoft/wdav.install.log. If y
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available for JAMF, it is not yet available for Intune. 
+There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Within the GUI
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
 
-### From the command line:
+### From the command line
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
 

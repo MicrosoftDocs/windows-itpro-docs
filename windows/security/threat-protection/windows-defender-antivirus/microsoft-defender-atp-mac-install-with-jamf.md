@@ -26,9 +26,14 @@ ms.topic: #conceptual
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-## Prerequsites
+This topic describes how to install Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
+Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
 
-You need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes a properly configured distribution point. JAMF has many alternative ways to complete the same task. These instructions provide you an example for most common processes. Your organization might use a different workflow.
+## Prerequisites and system requirements
+
+Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+
+In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
 ## Download installation and onboarding packages
 
@@ -193,3 +198,11 @@ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | 
 ```
 
 This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
+
+## Logging installation issues
+
+See [Logging installation issues](microsoft-defender-atp-mac-resources#Logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+## Uninstallation
+
+See [Uninstalling](microsoft-defender-atp-mac-resources#Uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.

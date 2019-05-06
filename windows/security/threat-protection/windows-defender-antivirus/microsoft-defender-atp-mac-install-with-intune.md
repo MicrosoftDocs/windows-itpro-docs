@@ -22,9 +22,16 @@ ms.topic: #conceptual
 **Applies to:**
 
 [Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
- 
+
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+This topic describes how to install Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
+Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+
+## Prerequisites and system requirements
+
+Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
@@ -156,3 +163,11 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 5. You should also see the Microsoft Defender icon in the top-right corner:
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+
+## Logging installation issues
+
+See [Logging installation issues](microsoft-defender-atp-mac-resources#Logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+## Uninstallation
+
+See [Uninstalling](microsoft-defender-atp-mac-resources#Uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.
