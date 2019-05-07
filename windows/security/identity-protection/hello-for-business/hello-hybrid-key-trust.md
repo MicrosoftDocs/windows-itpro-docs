@@ -37,7 +37,7 @@ This baseline provides detailed procedures to move your environment from an on-p
 Your next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
 
 > [!div class="nextstepaction"]
-> [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+> [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 
 <br><br>
 
@@ -45,7 +45,7 @@ Your next step is to familiarize yourself with the prerequisites needed for the 
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. Overview (*You are here*)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
