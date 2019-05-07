@@ -38,7 +38,7 @@ Constant: SeIncreaseBasePriorityPrivilege
 
 ### Best practices
 
--   Retain the default value and allow Administrators, and Window Manager/Window Manager Group, as the only accounts responsible for controlling process scheduling priorities.
+-   Retain the default value as the only accounts responsible for controlling process scheduling priorities.
 
 ### Location
 
