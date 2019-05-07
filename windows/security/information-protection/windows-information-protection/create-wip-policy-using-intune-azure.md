@@ -604,7 +604,7 @@ For more info about setting up and using a custom template, see [Configuring cus
 
 ## Encrypted file extensions
 
-You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. When this policy is not specified, the existing auto-encryption behavior is applied. When this policy is configured, only files with the extensions in the list will be encrypted. 
+You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. If this settings is configured, only files with the extensions in the list will be encrypted. If this setting is not specified, the existing auto-encryption behavior is applied. 
 
 ![WIP encrypted file extensions](images/wip-encrypted-file-extensions.png)
 
