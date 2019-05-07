@@ -403,7 +403,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
    ![Add protected domains](images/add-protected-domains.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. Every WIP policy should include policy that defines your enterprise network locations. 
+After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. Every WIP policy should include your enterprise network locations. 
 
 There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
@@ -601,6 +601,12 @@ After you've decided where your protected apps can access enterprise data on you
         - **Off, or not configured.** Stops Windows Search Indexer from indexing encrypted files.
 
 For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates). WIP can also integrate with AZure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
+
+## Encrypted file extensions
+
+You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. When this policy is not specified, the existing auto-encryption behavior is applied. When this policy is configured, only files with the extensions in the list will be encrypted. 
+
+![WIP encrypted file extensions](images/wip-encrypted-file-extensions.png)
 
 ## Related topics
 
