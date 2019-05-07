@@ -34,7 +34,7 @@ ms.date: 05/07/2019
   </dd>
   <dd>
     <a href="#windowslogon-enablefirstlogonanimation">WindowsLogon/EnableFirstLogonAnimation</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
   </dd>
