@@ -590,7 +590,7 @@ After you've decided where your protected apps can access enterprise data on you
         
     - **Use Azure RMS for WIP.** Determines whether WIP encrypts [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) Files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. You must already have Azure Rights Management set up. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
     
-        - **On.** Starts protecting Azure Rights Management files that are copied to a removable drive. You can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. Curly braces -- {} -- are required around the RMS Template ID. The EFS file uses the key from the RMS template’s license to protect the EFS file encryption key. Only users with access to that template will be able to read it off of the USB. If you don’t specify a template, it’s a regular EFS file using a default RMS template that everyone in the tenant will have access to.
+        - **On.** Starts protecting Azure Rights Management files that are copied to a removable drive. You can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. Curly braces -- {} -- are required around the RMS Template ID. The EFS file uses the key from the RMS template’s license to protect the EFS file encryption key. Only users with permission to that template will be able to read it from the USB. If you don’t specify a template, it’s a regular EFS file using a default RMS template that everyone in the tenant will have access to.
         
         - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
@@ -600,7 +600,7 @@ After you've decided where your protected apps can access enterprise data on you
     
         - **Off, or not configured.** Stops Windows Search Indexer from indexing encrypted files.
 
-For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates). WIP can also integrate with AZure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
+For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates). WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
 
 ## Encrypted file extensions
 
