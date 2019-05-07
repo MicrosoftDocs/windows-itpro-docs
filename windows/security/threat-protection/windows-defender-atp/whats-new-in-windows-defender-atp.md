@@ -34,6 +34,9 @@ The following capability is generally available (GA).
 - [Indicators](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new) <BR> APIs for indicators are now generally available. 
 
 
+- [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
+
+
 ## April 2019
 The following capability is generally available (GA).
 
@@ -43,15 +46,15 @@ The following capability is generally available (GA).
 
 
 ### In preview
-The following capabilities  are included in the April 2019 preview release. 
+The following capability is included in the April 2019 preview release. 
 
 - [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
-- [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
+
 
 ## March 2019
 ### In preview
-The following capability are included in the March 2019 preview release. 
+The following capability is included in the March 2019 preview release. 
 
 - [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
