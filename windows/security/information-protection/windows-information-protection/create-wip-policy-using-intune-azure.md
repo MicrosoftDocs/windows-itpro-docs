@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/29/2019
+ms.date: 05/07/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
@@ -586,13 +586,13 @@ After you've decided where your protected apps can access enterprise data on you
     
         - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but protected apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
         
-        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option.
+        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option. 
         
-    - **Use Azure RMS for WIP.** Determines whether to use Azure Rights Management encryption with Windows Information Protection.
+    - **Use Azure RMS for WIP.** Determines whether WIP encrypts [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) Files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. You must already have Azure Rights Management set up. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
     
-        - **On.** Starts using Azure Rights Management encryption with WIP. By turning this option on, you can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. For more info about setting up Azure Rights management and using a template ID with WIP, see the [Choose to set up Azure Rights Management with WIP](#choose-to-set-up-azure-rights-management-with-wip) section of this topic.
+        - **On.** Starts protecting Azure Rights Management files that are copied to a removable drive. You can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. Curly braces -- {} -- are required around the RMS Template ID. The EFS file uses the key from the RMS template’s license to protect the EFS file encryption key. Only users with access to that template will be able to read it off of the USB. If you don’t specify a template, it’s a regular EFS file using a default RMS template that everyone in the tenant will have access to.
         
-        - **Off, or not configured.** Stops using Azure Rights Management encryption with WIP.
+        - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
     - **Allow Windows Search Indexer to search encrypted files.** Determines whether to allow the Windows Search Indexer to index items that are encrypted, such as WIP protected files.
     
@@ -600,18 +600,7 @@ After you've decided where your protected apps can access enterprise data on you
     
         - **Off, or not configured.** Stops Windows Search Indexer from indexing encrypted files.
 
-## Choose to set up Azure Rights Management with WIP
-WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
-
-To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
-
-Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. This template will be applied to the protected data that is copied to a removable drive.
-
->[!IMPORTANT]
->Curly braces -- {} -- are required around the RMS Template ID.
-
->[!NOTE]
->For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
+For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates). WIP can also integrate with AZure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
 
 ## Related topics
 
