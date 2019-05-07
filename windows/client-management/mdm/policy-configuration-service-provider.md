@@ -1324,6 +1324,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode" id="internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar" id="internetexplorer-allowenhancedsuggestionsinaddressbar">InternetExplorer/AllowEnhancedSuggestionsInAddressBar</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu" id="internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a>
   </dd>
   <dd>
@@ -1390,6 +1393,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" id="internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
+  </dd>  
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -1397,6 +1403,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablecompatview" id="internetexplorer-disablecompatview">InternetExplorer/DisableCompatView</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory" id="internetexplorer-disableconfiguringhistory">InternetExplorer/DisableConfiguringHistory</a>
@@ -1417,10 +1426,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport" id="internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync" id="internetexplorer-disablefeedsbackgroundsync">InternetExplorer/DisableFeedsBackgroundSync</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard" id="internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature" id="internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation" id="internetexplorer-disablegeolocation">InternetExplorer/DisableGeolocation</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange" id="internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
@@ -1448,6 +1463,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck" id="internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete" id="internetexplorer-disablewebaddressautocomplete">InternetExplorer/DisableWebAddressAutoComplete</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode" id="internetexplorer-donotallowactivexcontrolsinprotectedmode">InternetExplorer/DoNotAllowActiveXControlsInProtectedMode</a>
@@ -1841,6 +1859,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses">InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage" id="internetexplorer-newtabdefaultpage">InternetExplorer/NewTabDefaultPage</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses" id="internetexplorer-notificationbarinternetexplorerprocesses">InternetExplorer/NotificationBarInternetExplorerProcesses</a>
@@ -3812,6 +3833,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning)
 -   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit)
 -   [InternetExplorer/AllowEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode)
+-   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)
 -   [InternetExplorer/AllowEnterpriseModeFromToolsMenu](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu)
 -   [InternetExplorer/AllowEnterpriseModeSiteList](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist)
 -   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3)
@@ -3834,17 +3856,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
+-   [InternetExplorer/DisableCompatView](./policy-csp-internetexplorer.md#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
 -   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection)
 -   [InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation](./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation)
 -   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites)
 -   [InternetExplorer/DisableEnclosureDownloading](./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading)
 -   [InternetExplorer/DisableEncryptionSupport](./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport)
+-   [InternetExplorer/DisableFeedsBackgroundSync](./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)
 -   [InternetExplorer/DisableFirstRunWizard](./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard)
 -   [InternetExplorer/DisableFlipAheadFeature](./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature)
+-   [InternetExplorer/DisableGeolocation](./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)
 -   [InternetExplorer/DisableHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange)
 -   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors)
 -   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing)
@@ -3854,6 +3880,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/DisableSecondaryHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange)
 -   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck)
 -   [InternetExplorer/DisableUpdateCheck](./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck)
+-   [InternetExplorer/DisableWebAddressAutoComplete](./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)
 -   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode)
 -   [InternetExplorer/DoNotAllowUsersToAddSites](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites)
 -   [InternetExplorer/DoNotAllowUsersToChangePolicies](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstochangepolicies)
@@ -3984,6 +4011,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes)
 -   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses)
 -   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses)
+-   [InternetExplorer/NewTabDefaultPage](./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)
 -   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses)
 -   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter)
 -   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols)
@@ -4373,6 +4401,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning)
 -   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit)
 -   [InternetExplorer/AllowEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode)
+-   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)
 -   [InternetExplorer/AllowEnterpriseModeFromToolsMenu](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu)
 -   [InternetExplorer/AllowEnterpriseModeSiteList](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist)
 -   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3)
@@ -4395,17 +4424,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
+-   [InternetExplorer/DisableCompatView](./policy-csp-internetexplorer.md#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
 -   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection)
 -   [InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation](./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation)
 -   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites)
 -   [InternetExplorer/DisableEnclosureDownloading](./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading)
 -   [InternetExplorer/DisableEncryptionSupport](./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport)
+-   [InternetExplorer/DisableFeedsBackgroundSync](./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)
 -   [InternetExplorer/DisableFirstRunWizard](./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard)
 -   [InternetExplorer/DisableFlipAheadFeature](./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature)
+-   [InternetExplorer/DisableGeolocation](./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)
 -   [InternetExplorer/DisableHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange)
 -   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors)
 -   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing)
@@ -4415,6 +4448,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/DisableSecondaryHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange)
 -   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck)
 -   [InternetExplorer/DisableUpdateCheck](./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck)
+-   [InternetExplorer/DisableWebAddressAutoComplete](./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)
 -   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode)
 -   [InternetExplorer/DoNotAllowUsersToAddSites](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites)
 -   [InternetExplorer/DoNotAllowUsersToChangePolicies](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstochangepolicies)
@@ -4545,6 +4579,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes)
 -   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses)
 -   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses)
+-   [InternetExplorer/NewTabDefaultPage](./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)
 -   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses)
 -   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter)
 -   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols)
@@ -4989,7 +5024,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
 - [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
@@ -5014,7 +5049,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
 - [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
 - [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
-- [Experience/AllowCortana](#experience-allowcortana)  
+- [Experience/AllowCortana](#experience-allowcortana)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
@@ -5062,6 +5100,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
 - [Experience/AllowCortana](#experience-allowcortana)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
@@ -5152,11 +5193,26 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 - [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
 - [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)  
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 - [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
 - [Wifi/WLANScanMode](#wifi-wlanscanmode)
 <!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
+
+- [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
+- [InternetExplorer/DisableWebAddressAutoComplete](#internetexplorer-disablewebaddressautocomplete)
+- [InternetExplorer/NewTabDefaultPage](#internetexplorer-newtabdefaultpage)
+<!--EndIoTEnterprise-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
