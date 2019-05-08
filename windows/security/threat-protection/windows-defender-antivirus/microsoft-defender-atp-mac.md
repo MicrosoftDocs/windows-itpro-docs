@@ -46,6 +46,7 @@ In general you'll need to take the following steps:
 - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
   - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune)
   - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf)
+  - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
   - [Manual deployment](microsoft-defender-atp-mac-install-manually)
 
 ### Prerequisites
