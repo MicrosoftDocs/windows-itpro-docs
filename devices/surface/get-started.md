@@ -13,6 +13,10 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ---
+# Get Started with Surface Devices
+
+Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="  ">
