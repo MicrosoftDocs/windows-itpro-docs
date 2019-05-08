@@ -35,9 +35,10 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             </div>
                                             <div class="cardText">
                                                 <h3>Surface Devices</h3>
-                                                <P><a href="microsoft-surface-deployment-accelerator.md" target="_blank">Plan</a></p>
-                                                <P><a href="deploy.md" target="_blank">Deploy</a></p>
-                                                <P><a href="manage-surface-uefi-settings.md" target="_blank">Manage</a></p>
+                                                <P><a href="get-started.md">Get started</a></p>
+                                                <P><a href="microsoft-surface-deployment-accelerator.md">Plan</a></p>
+                                                <P><a href="deploy.md">Deploy</a></p>
+                                                <P><a href="manage-surface-uefi-settings.md">Manage</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -89,7 +90,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Surface communities</h3>
+                                                <h3>Communities</h3>
                                                 <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
                                                 <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
@@ -127,7 +128,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Surface support solutions</h3>
+                                                <h3>Support solutions</h3>
                                                 <P><a href="https://docs.microsoft.com/surface/support-solutions-surface" target="_blank">Support for Surface devices</a></p>
                                                 <P><a href="https://docs.microsoft.com/surface/support-solutions-surface" target="_blank">Support for Surface Hub</a></p>
                                             </div>
