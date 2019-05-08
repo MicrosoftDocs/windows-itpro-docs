@@ -165,11 +165,11 @@ This policy setting controls the configuration under which an automatic restart,
 
 If you enable this policy setting, you can choose one of the following two options:
 
-- "Enabled if BitLocker is on and not suspended": Specifies that automatic sign on and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
+- Enabled if BitLocker is on and not suspended: Specifies that automatic sign on and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
 BitLocker is suspended during updates if:
     - The device does not have TPM 2.0 and PCR7
     - The device does not use a TPM-only protector
-- "Always Enabled": Specifies that automatic sign on happens even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+- Always Enabled: Specifies that automatic sign on happens even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
 
 If you disable or do not configure this setting, automatic sign on defaults to the “Enabled if BitLocker is on and not suspended” behavior.
 
