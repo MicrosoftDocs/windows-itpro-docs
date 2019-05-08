@@ -35,9 +35,9 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             </div>
                                             <div class="cardText">
                                                 <h3>Surface Devices</h3>
-                                                <P><a href="https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator" target="_blank">Plan</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface/deploy" target="_blank">Deploy</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface/manage-surface-uefi-settings" target="_blank">Manage</a></p>
+                                                <P><a href="microsoft-surface-deployment-accelerator.md" target="_blank">Plan</a></p>
+                                                <P><a href="deploy.md" target="_blank">Deploy</a></p>
+                                                <P><a href="manage-surface-uefi-settings.md" target="_blank">Manage</a></p>
                                             </div>
                                         </div>
                                     </div>
