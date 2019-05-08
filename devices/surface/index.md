@@ -7,7 +7,7 @@ author: robmazz
 ms.topic: hub-page
 keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation
 localization_priority: Normal
-audience: microsoft-business
+audience: ITPro
 ms.prod: microsoft-365-enterprise
 title: Microsoft Surface and Surface Hub documentation and resources
 description: Learn about Microsoft Surface and Surface Hub devices.
@@ -93,7 +93,6 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <h3>Communities</h3>
                                                 <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
                                                 <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
                                             </div>
                                         </div>
                                     </div>

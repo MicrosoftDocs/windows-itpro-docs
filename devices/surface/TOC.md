@@ -1,5 +1,7 @@
 # [Surface](index.md)
 
+## Get started
+
 ## Overview
 ### Surface Pro Tech specs 
 ### Surface Book Tech specs 
