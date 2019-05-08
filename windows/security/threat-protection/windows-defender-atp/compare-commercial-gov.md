@@ -27,8 +27,6 @@ Microsoft Defender ATP for government uses the same underlying techonologies as 
 
 
 
-
-
 ## Threat & Vulnerability Management
 Not supported
 
