@@ -21,7 +21,7 @@ ms.topic: #conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
  
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -31,7 +31,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 

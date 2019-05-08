@@ -21,7 +21,7 @@ ms.topic: #conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
 
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -31,7 +31,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
@@ -47,7 +47,7 @@ Download the installation and onboarding packages from Windows Defender Security
 
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:
-  
+
     ```bash
     mavel-macmini:Downloads test$ ls -l
     total 721688
@@ -167,7 +167,7 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 ## Test alert
 
 Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
-    
+
     ```bash
     curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
     ```

@@ -21,7 +21,7 @@ ms.topic: #conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
  
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -36,25 +36,25 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1) Increase logging level:
 
 ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level verbose
-   Operation succeeded
+    mavel-mojave:~ testuser$ mdatp --log-level verbose
+    Operation succeeded
 ```
 
 2) Reproduce the problem
 
 3) Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
-   ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic --create
-   "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
-   ```
+    ```bash
+    mavel-mojave:~ testuser$ mdatp --diagnostic --create
+    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
+    ```
 
 4) Restore logging level:
 
-   ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level info
-   Operation succeeded
-   ```
+    ```bash
+    mavel-mojave:~ testuser$ mdatp --log-level info
+    Operation succeeded
+    ```
 
 ## Managing from the command line
 

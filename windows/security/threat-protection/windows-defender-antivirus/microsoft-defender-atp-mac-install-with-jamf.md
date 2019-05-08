@@ -21,7 +21,7 @@ ms.topic: #conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
  
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -31,7 +31,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp.md) for a description of prerequisites and system requirements for the current software version.
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
@@ -48,7 +48,7 @@ Download the installation and onboarding packages from Windows Defender Security
 
 5. From a command prompt, verify that you have the two files.
     Extract the contents of the .zip files:
-  
+
     ```bash
     mavel-macmini:Downloads test$ ls -l
     total 721160
@@ -165,24 +165,24 @@ After the policy is applied, you'll see the Microsoft Defender icon in the macOS
 You can monitor policy installation on a machine by following the JAMF's log file:
 
 ```bash
-mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
-Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
-Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
-Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
-Thu Feb 21 11:17:02 mavel-mojave jamf[8051]: Installing Microsoft Defender...
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Successfully installed Microsoft Defender.
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Checking for patches...
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
+    mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
+    Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
+    Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
+    Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
+    Thu Feb 21 11:17:02 mavel-mojave jamf[8051]: Installing Microsoft Defender...
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Successfully installed Microsoft Defender.
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Checking for patches...
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
 ```
 
 You can also check the onboarding status:
 
 ```bash
-mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
-uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
-orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
+    mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+    uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
+    orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
+    orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
+    orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 ```
 
 - **orgid/orgid managed**: This is the Microsoft Defender ATP org id specified in the configuration profile. If this value is blank, then the Configuration Profile was not properly set.
@@ -194,7 +194,7 @@ orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
 
 ```bash
-sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
+    sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
 ```
 
 This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
@@ -202,7 +202,7 @@ This script returns 0 if Microsoft Defender ATP is registered with the Windows D
 ## Test alert
 
 Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
-    
+
     ```bash
     curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
     ```

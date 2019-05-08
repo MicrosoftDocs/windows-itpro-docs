@@ -69,7 +69,7 @@ After you've enabled the service, you may need to configure your network or fire
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
 | Service        | Description                          | URL                                                                  |
-| -------------- |:------------------------------------:| --------------------------------------------------------------------:|
+| -------------- |:------------------------------------:|:--------------------------------------------------------------------:|
 | ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
 
 To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://wu-cdn.x.cp.wd.microsoft.com/` in a browser, or run the following command in Terminal:
@@ -79,7 +79,7 @@ To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/ap
     OK
 ```
 
-We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines.
+We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection) enabled (default setting) on client machines.
 SIP is a built-in macOS security feature that prevents low-level tampering with the OS.
 
 ## Resources
