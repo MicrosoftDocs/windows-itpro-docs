@@ -33,12 +33,30 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Windows Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
 
+- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new) <BR> APIs for indicators are now generally available. 
+
+
+- [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
+
 
 ## April 2019
 - [Microsoft Threat Experts Targeted Attack Notification capability](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts#targeted-attack-notification) <BR>Microsoft Threat Experts' Targeted Attack Notification alerts are tailored to organizations to provide as much information as can be quickly delivered thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
 
 - [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. 
 
+
+### In preview
+The following capability is included in the April 2019 preview release. 
+
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
+
+
+## March 2019
+### In preview
+The following capability is included in the March 2019 preview release. 
+
+- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
 
 ## February 2019
