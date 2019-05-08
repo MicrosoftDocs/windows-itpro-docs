@@ -21,7 +21,7 @@ The Windows Autopilot Enrollment Status page displaying the status of the comple
  
  ![Enrollment status page](images/enrollment-status-page.png)
  
-From Windows 10 version 1803 onwards, you can opt-out of the account setup phase. When it is skipped, the settings will be applied for the users when as they access their desktop for the first time. 
+From Windows 10 version 1803 onwards, you can opt out of the account setup phase. If it is skipped, settings will be applied for users when they access their desktop for the first time. 
 
 ## Available settings
 
