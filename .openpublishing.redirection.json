@@ -13950,9 +13950,14 @@
 "redirect_document_id": true
 },
 {
-    "source_path": "windows/hub/release-information.md",
-    "redirect_url": "/windows/release-information",
-    "redirect_document_id": true
+"source_path": "windows/windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/windows/deployment/windows-10-subscription-activation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/hub/release-information.md",
+"redirect_url": "/windows/release-information",
+"redirect_document_id": true
 }
 ]
 }
