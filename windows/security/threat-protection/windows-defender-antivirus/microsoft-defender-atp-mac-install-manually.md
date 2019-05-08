@@ -114,32 +114,14 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
-## Configuring from the command line
+## Test alert
 
-Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
+Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
+    
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+    ```
 
-|Group        |Scenario                                   |Command                                                                |
-|-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
-|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
-|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
-|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
-|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
-|Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
-|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
-|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
-|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
+You will get a "Threats found" notification, you can inspect threat's details in the Protection history. 
 
-## Logging installation issues
-
-See [Logging installation issues](microsoft-defender-atp-mac-resources#Logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
-
-## Uninstallation
-
-See [Uninstalling](microsoft-defender-atp-mac-resources#Uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.
+Soon after that you'll get an alert in the ATP Portal.
