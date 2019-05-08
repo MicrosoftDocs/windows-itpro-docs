@@ -194,7 +194,7 @@ See the following table for a summary of the management settings for Windows Ser
 See the following table for a summary of the management settings for Windows Server 2016 Server Core.
 
 | Setting | Group Policy | Registry | Command line |
-| - | :-: | :-: | :-: | :-: | :-: |
+| - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [6. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
