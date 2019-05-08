@@ -634,6 +634,8 @@ To disable the Microsoft Account Sign-In Assistant:
 
 - Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
 
+  -or-
+
 - Change the **Start** REG_DWORD registry setting in **HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to a value of **4**.
 
 
