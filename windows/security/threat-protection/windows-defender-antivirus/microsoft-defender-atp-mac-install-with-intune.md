@@ -164,6 +164,18 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
+## Test alert
+
+Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
+    
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+    ```
+
+You will get a "Threats found" notification, you can inspect threat's details in the Protection history. 
+
+Soon after that you'll get an alert in the ATP Portal.
+
 ## Logging installation issues
 
 See [Logging installation issues](microsoft-defender-atp-mac-resources#Logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
