@@ -1,63 +1,207 @@
+--- 
+layout: HubPage
+hide_bc: true
+description: Surface and Surface Hub documentation for admins & IT professionals
+ms.author: robmazz
+author: robmazz
+ms.topic: hub-page
+keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation
+localization_priority: Normal
+audience: microsoft-business
+ms.prod: microsoft-365-enterprise
+title: Microsoft Surface and Surface Hub documentation and resources
+description: Learn about Microsoft Surface and Surface Hub devices.
 ---
-title: Surface (Surface)
-description: 
-ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
-ms.localizationpriority: high
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: surface, devices
-ms.sitesec: library
-author: heatherpoulsen
-ms.author: jdecker
-ms.topic: article
-ms.date: 10/16/2017
----
-
-# Surface
-
-
-This library provides guidance to help you deploy Windows on Microsoft Surface devices, keep those devices up to date, and easily manage and support Surface devices in your organization.
-
-For more information on planning for, deploying, and managing Surface devices in your organization, see the [Surface TechCenter](https://technet.microsoft.com/windows/surface).
-
-## In this section
-
-| Topic | Description |
-| --- | --- |
-| [Deploy Surface devices](deploy.md) | Get deployment guidance for your Surface devices including information about MDT, OOBE customization, Ethernet adaptors, and Surface Deployment Accelerator. |
-| [Surface firmware and driver updates](update.md) | Find out how to download and manage the latest firmware and driver updates for your Surface device. |
-| [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | Get guidance on how to deploy and manage Surface devices with System Center Configuration Manager. |
-| [Deploy Surface app with Microsoft Store for Business](deploy-surface-app-with-windows-store-for-business.md) | Find out how to add and download Surface app with Microsoft Store for Business, as well as install Surface app with PowerShell and MDT. |
-| [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md) | Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device. |
-| [Manage Surface UEFI settings](manage-surface-uefi-settings.md) | Use Surface UEFI settings to enable or disable devices, configure security settings, and adjust Surface device boot settings. |
-| [Surface Enterprise Management Mode](surface-enterprise-management-mode.md) | See how this feature of Surface devices with Surface UEFI allows you to secure and manage firmware settings within your organization. |
-| [Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md) | Learn how to investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices. |
-| [Surface Data Eraser](microsoft-surface-data-eraser.md) | Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices. |
-| [Top support solutions for Surface devices](support-solutions-surface.md) | These are the top Microsoft Support solutions for common issues experienced using Surface devices in an enterprise. |
-| [Change history for Surface documentation](change-history-for-surface.md) | This topic lists new and updated topics in the Surface documentation library. |
-
-
-## Learn more
-
-[Certifying Surface Pro 4 and Surface Book as standard devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/849/Certifying-Surface-Pro-4-and-Surface-Book-as-standard-devices-at-Microsoft)
-
-
-
-
- 
-
-## Related topics
-
-
-[Surface TechCenter](https://technet.microsoft.com/windows/surface)
-
-[Surface for IT pros blog](http://blogs.technet.com/b/surface/)
-
- 
-
- 
-
-
-
-
-
+<div id="main" class="v2">
+    <div class="container">
+        <h1>Microsoft Surface and Surface Hub</h1>
+        <P>Learn how to plan, deploy, and use Microsoft Surface and Surface Hub devices.</p>
+        <P></p>
+        <ul class="pivots">
+            <li>
+                <a href="#home"></a>
+                <ul id="home">
+                    <li>
+                        <a href="#home-all"></a>
+                        <ul id="home-all" class="cardsF">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/blocks-blue.svg" alt="Building blocks" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surface Devices</h3>
+                                                <P><a href="https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator" target="_blank">Plan</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface/deploy" target="_blank">Deploy</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface/manage-surface-uefi-settings" target="_blank">Manage</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surface Hub</h3>
+                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-site-readiness-guide" target="_blank">Site Readiness Guide</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface-hub/set-up-your-surface-hub" target="_blank">Deploy</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface-hub/manage-surface-hub" target="_blank">Manage</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surfaces for business</h3>
+                                                <P><a href="https://www.microsoft.com/surface/business" target="_blank">Surface devices for the modern workplace</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Graduation cap" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surface communities</h3>
+                                                <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
+                                                <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Office.svg" alt="Office logo" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surface something!</h3>
+                                                <P><a href="https://www.microsoft.com/en-us/store/b/surface?icid=CNavDevicesSurface" target="_blank">Surface!</a></p>
+                                                <P><a href="https://www.microsoft.com/en-us/store/b/surface?icid=CNavDevicesSurface" target="_blank">Surface!</a></p>
+                                                <P><a href="https://www.microsoft.com/en-us/store/b/surface?icid=CNavDevicesSurface" target="_blank">Surface!</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Surface support solutions</h3>
+                                                <P><a href="https://docs.microsoft.com/surface/support-solutions-surface" target="_blank">Support for Surface devices</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface/support-solutions-surface" target="_blank">Support for Surface Hub</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                              <hr />
+                              <br>
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Surface Device Tech Specs</h3>
+                                                        <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
+                                                        <P><a href="https://www.microsoft.com/surface/devices/surface-book/tech-specs" target="_blank">Surface Book</a></p>
+                                                        <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a></p>
+                                                        <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
+                                                        <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Surface Hub Tech Specs</h3>
+                                                        <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-55" target="_blank">55" Surface Hub</a></p>
+                                                        <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-84" target="_blank">84" Surface Hub</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Need help?</h3>
+                                                        <P><a href="https://support.microsoft.com/products/surface-devices" target="_blank">Surface Devices</a></p>
+                                                        <P><a href="https://support.microsoft.com/hub/4343507/surface-hub-help" target="_blank">Surface Hub</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                              </ul>
+                            </li>
+                       </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
