@@ -985,9 +985,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure Automatic Maintenance wake up policy.
-
-The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance.
+This policy setting allows you to configure if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance.
 
 > [!Note]
 > If the OS power wake policy is explicitly disabled, then this setting has no effect.
@@ -1324,8 +1322,8 @@ When disabled, if the device has installed the required updates and is outside o
 
 <!--SupportedValues-->
 Supported values:  
--   1 - Enabled. Device does not attempt to automatically reboot outside of active hours until the compliance deadline is reached.
--   0 - Disabled. Device may reboot outside of active hours before the deadline.
+-   1 - Enabled
+-   0 - Disabled
 <!--/SupportedValues-->
 
 <!--ADMXMapped-->
