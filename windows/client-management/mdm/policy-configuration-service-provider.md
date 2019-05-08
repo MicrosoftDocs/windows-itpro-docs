@@ -3337,7 +3337,22 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-autorestartrequirednotificationdismissal" id="update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-automaticmaintenancewakeup" id="update-automaticmaintenancewakeup">Update/AutomaticMaintenanceWakeUp</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-branchreadinesslevel" id="update-branchreadinesslevel">Update/BranchReadinessLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlineforfeatureupdates" id="update-configuredeadlineforfeatureupdates">Update/ConfigureDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlineforqualityupdates" id="update-configuredeadlineforqualityupdates">Update/ConfigureDeadlineForQualityUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinegraceperiod" id="update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinenoautoreboot" id="update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-configurefeatureupdateuninstallperiod" id="update-configurefeatureupdateuninstallperiod">Update/ConfigureFeatureUpdateUninstallPeriod</a>
@@ -4881,7 +4896,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates)
 -   [Update/AutoRestartNotificationSchedule](./policy-csp-update.md#update-autorestartnotificationschedule)
 -   [Update/AutoRestartRequiredNotificationDismissal](./policy-csp-update.md#update-autorestartrequirednotificationdismissal)
+-   [Update/AutomaticMaintenanceWakeUp](./policy-csp-update.md#update-automaticmaintenancewakeup)
 -   [Update/BranchReadinessLevel](./policy-csp-update.md#update-branchreadinesslevel)
+-   [Update/ConfigureDeadlineForFeatureUpdates](./policy-csp-update.md#update-configuredeadlineforfeatureupdates)
+-   [Update/ConfigureDeadlineForQualityUpdates](./policy-csp-update.md#update-configuredeadlineforqualityupdates)
+-   [Update/ConfigureDeadlineGracePeriod](./policy-csp-update.md#update-configuredeadlinegraceperiod)
+-   [Update/ConfigureDeadlineNoAutoReboot](./policy-csp-update.md#update-configuredeadlinenoautoreboot)
 -   [Update/DeferFeatureUpdatesPeriodInDays](./policy-csp-update.md#update-deferfeatureupdatesperiodindays)
 -   [Update/DeferQualityUpdatesPeriodInDays](./policy-csp-update.md#update-deferqualityupdatesperiodindays)
 -   [Update/DeferUpdatePeriod](./policy-csp-update.md#update-deferupdateperiod)
@@ -5025,6 +5045,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [System/AllowTelemetry](#system-allowtelemetry)
 - [Update/AllowAutoUpdate](#update-allowautoupdate)  
 - [Update/AllowUpdateService](#update-allowupdateservice)  
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)  
@@ -5072,6 +5096,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [System/AllowLocation](#system-allowlocation)
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)  
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
@@ -5152,11 +5180,25 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 - [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
 - [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
 - [Wifi/WLANScanMode](#wifi-wlanscanmode)
 <!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
+
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+
+<!--EndIoTCoreEnterprise-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
