@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 05/08/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
@@ -590,7 +590,7 @@ After you've decided where your protected apps can access enterprise data on you
         
     - **Use Azure RMS for WIP.** Determines whether WIP encrypts [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) Files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. You must already have Azure Rights Management set up. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
     
-        - **On.** Starts protecting Azure Rights Management files that are copied to a removable drive. You can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. Curly braces -- {} -- are required around the RMS Template ID. The EFS file uses the key from the RMS template’s license to protect the EFS file encryption key. Only users with permission to that template will be able to read it from the USB. If you don’t specify a template, it’s a regular EFS file using a default RMS template that everyone in the tenant will have access to.
+        - **On.** Protects files that are copied to a removable drive. You can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. Curly braces -- {} -- are required around the RMS Template ID, but they are omitted when you view the saved settings. The EFS file uses the key from the RMS template’s license to protect the EFS file encryption key. Only users with permission to that template will be able to read it from the USB. If you don’t specify a template, it’s a regular EFS file using a default RMS template that everyone in the tenant will have access to.
         
         - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
@@ -604,7 +604,7 @@ For more info about setting up and using a custom template, see [Configuring cus
 
 ## Encrypted file extensions
 
-You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. If this settings is configured, only files with the extensions in the list will be encrypted. If this setting is not specified, the existing auto-encryption behavior is applied. 
+You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. If this setting is configured, only files with the extensions in the list will be encrypted. If this setting is not specified, the existing auto-encryption behavior is applied. 
 
 ![WIP encrypted file extensions](images/wip-encrypted-file-extensions.png)
 
