@@ -997,8 +997,8 @@ If you disable or do not configure this policy setting, the wake setting as spec
 
 <!--SupportedValues-->
 Supported values:  
--   true: Enable
--   false: Disable (Default)
+-   true - Enable
+-   false - Disable (Default)
 <!--/SupportedValues-->
 
 <!--ADMXMapped-->
