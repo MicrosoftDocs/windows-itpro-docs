@@ -21,7 +21,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Here are the new features that are generally available (GA) in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
+The following features are generally available (GA) in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
 
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
@@ -44,19 +44,6 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. 
 
-
-### In preview
-The following capability is included in the April 2019 preview release. 
-
-- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
-
-
-
-## March 2019
-### In preview
-The following capability is included in the March 2019 preview release. 
-
-- [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection)  The machine health and compliance report provides high-level information about the devices in your organization. 
 
 
 ## February 2019
