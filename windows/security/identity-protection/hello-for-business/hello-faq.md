@@ -15,7 +15,7 @@ ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
 ---
-# Windows Hello for Business Frequently Ask Questions
+# Windows Hello for Business Frequently Asked Questions
 
 **Applies to**
 -   Windows 10
