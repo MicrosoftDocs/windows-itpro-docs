@@ -55,7 +55,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             </div>
                                             <div class="cardText">
                                                 <h3>Surface Hub</h3>
-                                                <P><a href="/surface-hub/index.md">Get started</a></p>
+                                                <P><a href="https://docs.microsoft.com/surface-hub/index">Get started</a></p>
                                                 <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-site-readiness-guide" target="_blank">Site Readiness Guide</a></p>
                                                 <P><a href="https://docs.microsoft.com/surface-hub/set-up-your-surface-hub" target="_blank">Deploy</a></p>
                                                 <P><a href="https://docs.microsoft.com/surface-hub/manage-surface-hub" target="_blank">Manage</a></p>
