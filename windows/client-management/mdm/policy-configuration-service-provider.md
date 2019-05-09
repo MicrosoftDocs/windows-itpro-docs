@@ -4123,7 +4123,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
 -   [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
 -   [WindowsLogon/AllowAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)
--   [WindowsLogon/ConfigAutomaticRestartSignOn](./
+-   [WindowsLogon/ConfigAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
 -   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
