@@ -123,27 +123,76 @@ We used the following methodology to derive these network endpoints:
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
-| *.e-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.g.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
-| *.s-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.tlu.dl.delivery.mp.microsoft.com/* | HTTP | Enables connections to Windows Update. |
-| *geo-prod.dodsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update. |
-| arc.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| au.download.windowsupdate.com/* | HTTP | Enables connections to Windows Update. |
-| ctldl.windowsupdate.com/msdownload/update/* | HTTP |	Used to download certificates that are publicly known to be fraudulent. |
-| cy2.licensing.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| cy2.settings.data.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| dm3p.wns.notify.windows.com.akadns.net	| HTTPS |	Used for the Windows Push Notification Services (WNS) |
-| fe3.delivery.dsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| g.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| ipv4.login.msa.akadns6.net	| HTTPS |	Used for Microsoft accounts to sign in. |
-| location-inference-westus.cloudapp.net	| HTTPS |	Used for location data. |
-| modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
-| ocsp.digicert.com\* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
-| ris.api.iris.microsoft.com.akadns.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| tile-service.weather.microsoft.com/* | HTTP |	Used to download updates to the Weather app Live Tile. |
-| tsfe.trafficshaping.dsp.mp.microsoft.com	| HTTPS |	Used for content regulation. |
-| vip5.afdorigin-prod-am02.afdogw.com	| HTTPS |	Used to serve office 365 experimentation traffic |
+|\*.cloudapp.azure.com|HTTPS|Azure 
+|\*.delivery.dsp.mp.microsoft.com.nsatc.net|HTTPS|Windows Update, Microsoft Update, and Microsoft Store services 
+|\*.displaycatalog.md.mp.microsoft.com.akadns.net|HTTPS|Microsoft Store 
+|\*.dl.delivery.mp.microsoft.com*|HTTP|Enables connections to Windows Update
+|\*.e-msedge.net|HTTPS|Used by OfficeHub to get the metadata of Office apps
+|\*.g.akamaiedge.net|HTTPS|Used to check for updates to maps that have been downloaded for offline use
+|\*.s-msedge.net|HTTPS|Used by OfficeHub to get the metadata of Office apps
+|\*.windowsupdate.com*|HTTP|Enables connections to Windows Update
+|\*.wns.notify.windows.com.akadns.net|HTTPS|Used for the Windows Push Notification Services (WNS)
+|\*dsp.mp.microsoft.com.nsatc.net|HTTPS|Enables connections to Windows Update
+|\*c-msedge.net|HTTP|Office
+|a1158.g.akamai.net|HTTP|Maps application 
+|arc.msn.com*|HTTP / HTTPS|Used to retrieve Windows Spotlight metadata
+|blob.mwh01prdstr06a.store.core.windows.net|HTTPS|Microsoft Store 
+|browser.pipe.aria.microsoft.com|HTTPS|Microsoft Office 
+|bubblewitch3mobile.king.com|HTTPS|Bubble Witch application 
+|candycrush.king.com|HTTPS|Candy Crush application 
+|cdn.onenote.net|HTTP|Microsoft OneNote 
+|cds.p9u4n2q3.hwcdn.net|HTTP|Highwinds Content Delivery Network traffic for Windows updates
+|client.wns.windows.com|HTTPS|Winddows Notification System 
+|co4.telecommand.telemetry.microsoft.com.akadns.net|HTTPS|Windows Error Reporting 
+|config.edge.skype.com|HTTPS|Microsoft Skype 
+|cs11.wpc.v0cdn.net|HTTP|Windows Telemetry 
+|cs9.wac.phicdn.net|HTTP|Windows Update 
+|cy2.licensing.md.mp.microsoft.com.akadns.net|HTTPS|Used to communicate with Microsoft Store
+|cy2.purchase.md.mp.microsoft.com.akadns.net|HTTPS|Used to communicate with Microsoft Store
+|cy2.settings.data.microsoft.com.akadns.net|HTTPS|Used to communicate with Microsoft Store
+|dmd.metaservices.microsoft.com.akadns.net|HTTP|Device Authentication 
+|e-0009.e-msedge.net|HTTPS|Microsoft Office 
+|e10198.b.akamaiedge.net|HTTPS|Maps application 
+|fe3.update.microsoft.com|HTTPS|Windows Update 
+|g.live.com|HTTPS|Microsoft OneDrive 
+|g.msn.com.nsatc.net|HTTPS|Used to retrieve Windows Spotlight metadata
+|geo-prod.do.dsp.mp.microsoft.com|HTTPS|Windows Update 
+|go.microsoft.com|HTTP|Windows Defender 
+|iecvlist.microsoft.com|HTTPS|Microsoft Edge 
+|img-prod-cms-rt-microsoft-com.akamaized.net|HTTP / HTTPS|Microsoft Store 
+|ipv4.login.msa.akadns6.net|HTTPS|Used for Microsoft accounts to sign in
+|licensing.mp.microsoft.com|HTTP|Licensing 
+|location-inference-westus.cloudapp.net|HTTPS|Used for location data
+|login.live.com|HTTP|Device Authentication 
+|maps.windows.com|HTTP|Maps application 
+|modern.watson.data.microsoft.com.akadns.net|HTTPS|Used by Windows Error Reporting
+|msagfx.live.com|HTTP|OneDrive 
+|nav.smartscreen.microsoft.com|HTTPS|Windows Defender 
+|ocsp.digicert.com*|HTTP|CRL and OCSP checks to the issuing certificate authorities
+|oneclient.sfx.ms|HTTP|OneDrive 
+|pti.store.microsoft.com|HTTPS|Microsoft Store 
+|ris.api.iris.microsoft.com.akadns.net|HTTPS|Used to retrieve Windows Spotlight metadata
+|ris-prod-atm.trafficmanager.net|HTTPS|Azure 
+|s2s.config.skype.com|HTTP|Microsoft Skype 
+|settings-win.data.microsoft.com|HTTPS|Application settings 
+|share.microsoft.com|HTTPS|Microsoft Store 
+|skypeecs-prod-usw-0.cloudapp.net|HTTPS|Microsoft Skype 
+|slscr.update.microsoft.com|HTTPS|Windows Update 
+|storecatalogrevocation.storequality.microsoft.com|HTTPS|Microsoft Store 
+|store-images.microsoft.com|HTTPS|Microsoft Store 
+|tile-service.weather.microsoft.com/*|HTTP|Used to download updates to the Weather app Live Tile
+|time.windows.com|HTTP|Windows time 
+|tsfe.trafficshaping.dsp.mp.microsoft.com|HTTPS|Used for content regulation
+|v10.events.data.microsoft.com*|HTTPS|Microsoft Office 
+|vip5.afdorigin-prod-am02.afdogw.com|HTTPS|Used to serve office 365 experimentation traffic
+|watson.telemetry.microsoft.com|HTTPS|Telemetry 
+|wdcp.microsoft.com|HTTPS|Windows Defender 
+|wusofficehome.msocdn.com|HTTPS|Microsoft Office 
+|www.bing.com|HTTPS|Cortana and Search 
+|www.microsoft.com|HTTP|Diagnostic 
+|www.msftconnecttest.com|HTTP|Network connection 
+|www.office.com|HTTPS|Microsoft Office
+
 
 
 ## Windows 10 Education
