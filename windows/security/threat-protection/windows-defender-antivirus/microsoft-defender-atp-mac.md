@@ -83,4 +83,4 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 
 ## Resources
 
-For additional information about logging, uninstalling, or known issues, see our [Resources](microsoft-defender-atp-mac-resources) page.
+For additional information about logging, uninstalling, or known issues, see our [Resources](microsoft-defender-atp-mac-resources.md) page.
