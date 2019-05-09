@@ -1,5 +1,5 @@
 ---
-title: Windows 10, version 1809, connection endpoints for non-Enterprise editions
+title: Windows 10, version 1903, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
@@ -7,22 +7,22 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
-manager: dansimp
+author: mikeedgar
+ms.author: v-medgar
+manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/26/2018
+ms.date: 5/9/2019
 ---
-# Windows 10, version 1809, connection endpoints for non-Enterprise editions
+# Windows 10, version 1903, connection endpoints for non-Enterprise editions
 
  **Applies to**
 
-- Windows 10 Home, version 1809
-- Windows 10 Professional, version 1809
-- Windows 10 Education, version 1809
+- Windows 10 Home, version 1903
+- Windows 10 Professional, version 1903
+- Windows 10 Education, version 1903
 
-In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1809-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1809.
+In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1903-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1903.
 
 We used the following methodology to derive these network endpoints:
 
