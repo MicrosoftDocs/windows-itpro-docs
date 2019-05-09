@@ -36,6 +36,6 @@ Your environment needs the following software to run Windows Defender Applicatio
 
 |Software|Description|
 |--------|-----------|
-|Operating system|Windows 10 Enterprise edition, version 1709 or higher<br>Windows 10 Professional edition, version 1803 or higher<br>Windows 10 Professional for Workstations edition, version 1803 or higher<br>Windows 10 Professional Education edition version 1803 or higher<br>Windows 10 Education edition, version 1903 or higher|
+|Operating system|Windows 10 Enterprise edition, version 1709 or higher<br>Windows 10 Professional edition, version 1803 or higher<br>Windows 10 Professional for Workstations edition, version 1803 or higher<br>Windows 10 Professional Education edition version 1803 or higher<br>Windows 10 Education edition, version 1903 or higher<br>Professional editions are only supported for non-managed devices; Intune or any other 3rd party mobile device management (MDM) solutions are not supported with WDAG for Professional editions. |
 |Browser|Microsoft Edge and Internet Explorer|
 |Management system<br> (only for managed devices)|[Microsoft Intune](https://docs.microsoft.com/intune/)<br><br>**-OR-**<br><br>[System Center Configuration Manager](https://docs.microsoft.com/sccm/)<br><br>**-OR-**<br><br>[Group Policy](https://technet.microsoft.com/library/cc753298(v=ws.11).aspx)<br><br>**-OR-**<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product.|
