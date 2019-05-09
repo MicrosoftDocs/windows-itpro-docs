@@ -194,7 +194,7 @@ See the following table for a summary of the management settings for Windows Ser
 See the following table for a summary of the management settings for Windows Server 2016 Server Core.
 
 | Setting | Group Policy | Registry | Command line |
-| - | :-: | :-: | :-: | :-: | :-: |
+| - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [6. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
@@ -209,7 +209,7 @@ See the following table for a summary of the management settings for Windows Ser
 See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
 
 | Setting | Registry | Command line |
-| - | :-: | :-: | :-: | :-: | :-: |
+| - | :-: | :-: | 
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
@@ -633,6 +633,8 @@ To prevent communication to the Microsoft Account cloud authentication service. 
 To disable the Microsoft Account Sign-In Assistant:
 
 - Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
+
+  -or-
 
 - Change the **Start** REG_DWORD registry setting in **HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to a value of **4**.
 
@@ -1856,10 +1858,6 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 -OR-
 
 - Use the registry to set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to **0 (zero)**.
-
-  -and-
-
-- Delete the registry setting **named** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Updates**.
 
 -OR-
 
