@@ -23,7 +23,8 @@ ms.topic: conceptual
 
 [Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
 
->[!IMPORTANT]This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>[!IMPORTANT]
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Collecting diagnostic information
 
@@ -128,6 +129,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Request a definition update                |`mdatp --signature-update`                                             |
 
 ## Microsoft Defender ATP portal information
+
 In the Microsoft Defender ATP portal, you'll see two categories of information:
 
 - AV alerts, including:
