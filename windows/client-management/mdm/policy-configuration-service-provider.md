@@ -3699,10 +3699,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-hidefastuserswitching" id="windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a>
   </dd>
-  <dd>
-    <a href="./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart" id="windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart">WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</a>
-  </dd>
-</dl>
+  </dl>
 
 ### WindowsPowerShell policies
 
@@ -4129,9 +4126,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsLogon/ConfigAutomaticRestartSignOn](./
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
--   [WindowsLogon/EnableFirstLogonAnimation](./policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)
 -   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
--   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
 -   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
 
 
@@ -4994,7 +4989,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsLogon/EnableFirstLogonAnimation](./policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)
 -   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
 -   [WindowsLogon/HideFastUserSwitching](./policy-csp-windowslogon.md#windowslogon-hidefastuserswitching)
--   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
 -   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)

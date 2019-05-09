@@ -41,9 +41,6 @@ ms.date: 05/07/2019
   <dd>
     <a href="#windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a>
   </dd>
-  <dd>
-    <a href="#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart">WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</a>
-  </dd>
 </dl>
 
 <hr/>
@@ -399,21 +396,15 @@ If you do not configure this policy setting, the user who completes the initial 
 > The first sign-in animation is not displayed on Server, so this policy has no effect.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Show first sign-in animation*
 -   GP name: *EnableFirstLogonAnimation*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *Logon.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
 -   false - disabled
@@ -552,68 +543,6 @@ To validate on Desktop, do the following:
 2.   Verify that the Switch account button in Start is hidden.
 
 <!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart"></a>**WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting controls whether a device will automatically sign-in the last interactive user after Windows Update restarts the system.
-
-If you enable or do not configure this policy setting, the device securely saves the user's credentials (including the user name, domain and encrypted password) to configure automatic sign-in after a Windows Update restart. After the Windows Update restart, the user is automatically signed-in and the session is automatically locked with all the lock screen apps configured for that user.
-
-If you disable this policy setting, the device does not store the user's credentials for automatic sign-in after a Windows Update restart. The users' lock screen apps are not restarted after the system restarts.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Sign-in last interactive user automatically after a system-initiated restart*
--   GP name: *AutomaticRestartSignOn*
--   GP path: *Windows Components/Windows Logon Options*
--   GP ADMX file name: *WinLogon.admx*
-
-<!--/ADMXBacked-->
 <!--/Policy-->
 
 <!--/Policies-->
