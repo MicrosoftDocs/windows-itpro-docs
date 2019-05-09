@@ -277,7 +277,7 @@
 ######## [Stop and quarantine file](windows-defender-atp/stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
 ######## [Initiate investigation (preview)](windows-defender-atp/initiate-autoir-investigation-windows-defender-advanced-threat-protection-new.md)
 
-####### [Indicators (preview)](windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Indicators](windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md)
 ######## [Submit Indicator](windows-defender-atp/post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
 ######## [List Indicators](windows-defender-atp/get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
 ######## [Delete Indicator](windows-defender-atp/delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
@@ -322,14 +322,14 @@
 ###### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
  
 
-##### API for custom alerts
-###### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Create custom threat intelligence alerts](windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md)
-###### [PowerShell code examples](windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md)
-###### [Python code examples](windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md)
-###### [Experiment with custom threat intelligence alerts](windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Troubleshoot custom threat intelligence issues](windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+##### API for custom alerts (Deprecated)
+###### [Enable the custom threat intelligence application (Deprecated)](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts (Deprecated)](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Create custom threat intelligence alerts (Deprecated)](windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md)
+###### [PowerShell code examples (Deprecated)](windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md)
+###### [Python code examples (Deprecated)](windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md)
+###### [Experiment with custom threat intelligence alerts (Deprecated)](windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot custom threat intelligence issues (Deprecated)](windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
  
 
 ##### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -388,7 +388,7 @@
 ######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
   
 ##### APIs
-###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Enable Threat intel (Deprecated)](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
   
 #####Rules
