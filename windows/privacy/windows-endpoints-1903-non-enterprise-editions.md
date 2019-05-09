@@ -199,42 +199,73 @@ We used the following methodology to derive these network endpoints:
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
-| *.b.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
-| *.e-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.g.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
-| *.s-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.telecommand.telemetry.microsoft.com.akadns.net | HTTPS | Used by Windows Error Reporting. |
-| *.tlu.dl.delivery.mp.microsoft.com\* | HTTP | Enables connections to Windows Update. |
-| *.windowsupdate.com\* | HTTP | Enables connections to Windows Update. |
-| *geo-prod.do.dsp.mp.microsoft.com	| HTTPS |	Enables connections to Windows Update. |
-| au.download.windowsupdate.com\* | HTTP | Enables connections to Windows Update. |
-| cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
-| config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
-| ctldl.windowsupdate.com/* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
-| cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| cy2.licensing.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| cy2.settings.data.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. | 
-| download.windowsupdate.com/*	| HTTPS |	Enables connections to Windows Update. |
-| emdl.ws.microsoft.com/* | HTTP | Used to download apps from the Microsoft Store. |
-| fe2.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| fe3.delivery.dsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| fe3.delivery.mp.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| g.live.com/odclientsettings/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
-| g.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| ipv4.login.msa.akadns6.net	| HTTPS |	Used for Microsoft accounts to sign in. |
-| licensing.mp.microsoft.com/*	| HTTPS |	Used for online activation and some app licensing. |
-| maps.windows.com/windows-app-web-link	| HTTPS |	Link to Maps application |
-| modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
-| ocos-office365-s2s.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal's shared infrastructure. |
-| ocsp.digicert.com\* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
-| oneclient.sfx.ms/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
-| settings-win.data.microsoft.com/settings/*	| HTTPS |	Used as a way for apps to dynamically update their configuration. |
-| sls.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update. |
-| storecatalogrevocation.storequality.microsoft.com/*	| HTTPS |	Used to revoke licenses for malicious apps on the Microsoft Store. |
-| tile-service.weather.microsoft.com/* | HTTP | Used to download updates to the Weather app Live Tile. |
-| tsfe.trafficshaping.dsp.mp.microsoft.com	| HTTPS |	Used for content regulation. |
-| vip5.afdorigin-prod-ch02.afdogw.com	| HTTPS |	Used to serve office 365 experimentation traffic. |
-| watson.telemetry.microsoft.com/Telemetry.Request	| HTTPS |	Used by Windows Error Reporting. |
-| bing.com/*	| HTTPS |	Used for updates for Cortana, apps, and Live Tiles. |
+|\*.b.akamaiedge.net|HTTPS|Used to check for updates to maps that have been downloaded for offline use
+|\*.c-msedge.net|HTTP|Used by OfficeHub to get the metadata of Office apps
+|\*.dl.delivery.mp.microsoft.com*|HTTP|Windows Update
+|\*.e-msedge.net|HTTPS|Used by OfficeHub to get the metadata of Office apps
+|\*.g.akamaiedge.net|HTTPS|Used to check for updates to Maps that have been downloaded for offline use
+|\*.licensing.md.mp.microsoft.com.akadns.net|HTTPS|Microsoft Store
+|\*.settings.data.microsoft.com.akadns.net|HTTPS|Microsoft Store
+|\*.skype.com*|HTTPS|Used to retrieve Skype configuration values 
+|\*.smartscreen*.microsoft.com|HTTPS|Windows Defender 
+|\*.s-msedge.net|HTTPS|Used by OfficeHub to get the metadata of Office apps
+|\*.telecommand.telemetry.microsoft.com*|HTTPS|Used by Windows Error Reporting
+|\*.wac.phicdn.net|HTTP|Windows Update 
+|\*.windowsupdate.com*|HTTP|Windows Update
+|\*.wns.windows.com|HTTPS|Windows Notifications Service 
+|\*.wpc.*.net|HTTP|Diagnostic Data
+|\*displaycatalog.md.mp.microsoft.com.akadns.net|HTTPS|Microsoft Store
+|\*dsp.mp.microsoft.com|HTTPS|Windows Update
+|a1158.g.akamai.net|HTTP|Maps 
+|a122.dscg3.akamai.net|HTTP|Maps 
+|a767.dscg3.akamai.net|HTTP|Maps 
+|au.download.windowsupdate.com*|HTTP|Windows Update
+|bing.com/*|HTTPS|Used for updates for Cortana, apps, and Live Tiles
+|blob.dz5prdstr01a.store.core.windows.net|HTTPS|Microsoft Store 
+|browser.pipe.aria.microsoft.com|HTTP|Used by OfficeHub to get the metadata of Office apps
+|cdn.onenote.net/livetile/*|HTTPS|Used for OneNote Live Tile
+|cds.p9u4n2q3.hwcdn.net|HTTP|Used by the Highwinds Content Delivery Network to perform Windows updates
+|client-office365-tas.msedge.net/*|HTTPS|Office 365 porta and Office Online
+|ctldl.windowsupdate.com*|HTTP|Used to download certificates that are publicly known to be fraudulent
+|displaycatalog.mp.microsoft.com/*|HTTPS|Microsoft Store
+|dmd.metaservices.microsoft.com*|HTTP|Device Authentication
+|download.windowsupdate.com*|HTTPS|Windows Update
+|emdl.ws.microsoft.com/*|HTTP|Used to download apps from the Microsoft Store
+|evoke-windowsservices-tas.msedge.net|HTTPS|Photo app 
+|fe2.update.microsoft.com*|HTTPS|Windows Update, Microsoft Update, Microsoft Store services 
+|fe3.delivery.dsp.mp.microsoft.com.nsatc.net|HTTPS|Windows Update, Microsoft Update, Microsoft Store services 
+|fe3.delivery.mp.microsoft.com*|HTTPS|Windows Update, Microsoft Update, Microsoft Store services 
+|g.live.com*|HTTPS|Used by OneDrive for Business to download and verify app updates
+|g.msn.com.nsatc.net|HTTPS|Used to retrieve Windows Spotlight metadata
+|go.microsoft.com|HTTP|Windows Defender 
+|iecvlist.microsoft.com|HTTPS|Microsoft Edge browser 
+|ipv4.login.msa.akadns6.net|HTTPS|Used for Microsoft accounts to sign in
+|licensing.mp.microsoft.com*|HTTPS|Used for online activation and some app licensing
+|login.live.com|HTTPS|Device Authentication
+|maps.windows.com/windows-app-web-link|HTTPS|Maps application
+|modern.watson.data.microsoft.com.akadns.net|HTTPS|Used by Windows Error Reporting
+|msagfx.live.com|HTTPS|OneDrive 
+|ocos-office365-s2s.msedge.net/*|HTTPS|Used to connect to the Office 365 portal's shared infrastructure
+|ocsp.digicert.com*|HTTP|CRL and OCSP checks to the issuing certificate authorities
+|oneclient.sfx.ms/*|HTTPS|Used by OneDrive for Business to download and verify app updates
+|onecollector.cloudapp.aria.akadns.net|HTTPS|Microsoft Office 
+|pti.store.microsoft.com|HTTPS|Microsoft Store 
+|settings-win.data.microsoft.com/settings/*|HTTPS|Used as a way for apps to dynamically update their configuration 
+|share.microsoft.com|HTTPS|Microsoft Store 
+|skypeecs-prod-usw-0.cloudapp.net|HTTPS|Skype 
+|sls.update.microsoft.com*|HTTPS|Windows Update
+|storecatalogrevocation.storequality.microsoft.com*|HTTPS|Used to revoke licenses for malicious apps on the Microsoft Store
+|tile-service.weather.microsoft.com*|HTTP|Used to download updates to the Weather app Live Tile
+|tsfe.trafficshaping.dsp.mp.microsoft.com|HTTPS|Windows Update 
+|v10.events.data.microsoft.com*|HTTPS|Diagnostic Data
+|vip5.afdorigin-prod-ch02.afdogw.com|HTTPS|Used to serve Office 365 experimentation traffic
+|watson.telemetry.microsoft.com*|HTTPS|Used by Windows Error Reporting
+|wdcp.microsoft.com|HTTPS|Windows Defender 
+|wd-prod-cp-us-east-1-fe.eastus.cloudapp.azure.com|HTTPS|Azure 
+|wusofficehome.msocdn.com|HTTPS|Microsoft Office 
+|www.bing.com|HTTPS|Cortana and Search 
+|www.microsoft.com|HTTP|Diagnostic Data
+|www.microsoft.com/pkiops/certs/*|HTTP|CRL and OCSP checks to the issuing certificate authorities
+|www.msftconnecttest.com|HTTP|Network Connection 
+|www.office.com|HTTPS|Microsoft Office
+
