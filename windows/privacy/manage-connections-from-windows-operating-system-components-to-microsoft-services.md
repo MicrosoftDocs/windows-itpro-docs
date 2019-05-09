@@ -39,9 +39,6 @@ However, some of the settings reduce the functionality and security configuratio
 Make sure you've chosen the right settings configuration for your environment before applying.
 You should not extract this package to the windows\\system32 folder because it will not apply correctly.
 
->[!IMPORTANT]
-> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionallity is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
-
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article.
 It is recommended that you restart a device after making configuration changes to it.
 Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
@@ -56,8 +53,6 @@ The following sections list the components that make network connections to Micr
 
 The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
 
->[!NOTE]
->For some settings, MDM policies only partly cover capabilities available through Group Policy. See each setting’s section for more details.
 
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: | 
@@ -268,7 +263,7 @@ On Windows Server 2016 Nano Server:
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana and Search
 
-Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730683).
+Use Group Policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730683).
 
 ### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana and Search Group Policies
 
@@ -558,7 +553,7 @@ To disable the Microsoft Account Sign-In Assistant:
 
 ### <a href="" id="bkmk-edge"></a>13. Microsoft Edge
 
-Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
+Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
 
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
@@ -1643,7 +1638,7 @@ To disable Windows Defender Smartscreen:
 
 ### <a href="" id="bkmk-spotlight"></a>25. Windows Spotlight
 
-Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface, MDM policy, or through Group Policy.
+Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or Group Policy.
 
 If you're running Windows 10, version 1607 or later, you need to: 
 
@@ -1765,7 +1760,7 @@ Windows Update Delivery Optimization lets you get Windows updates and Microsoft 
 
 By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
-Use the UI, Group Policy, MDM policies, or Windows Provisioning to set up Delivery Optimization.
+Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
 In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (100), as described below.
 
