@@ -1,27 +1,27 @@
 ---
 title: Microsoft Defender ATP for Mac Resources
-description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, and known issues with the product.
+description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
-search.appverid: #met150
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: #conceptual
+ms.topic: conceptual
 ---
 
 # Resources
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp.md)
  
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -108,6 +108,28 @@ If you are running JAMF, your policy should contain a single script:
 ![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
 
 Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
+
+## Configuring from the command line
+
+Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
+
+|Group        |Scenario                                   |Command                                                                |
+|-------------|-------------------------------------------|-----------------------------------------------------------------------|
+|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
+|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
+|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
+|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
+|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
+|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
+|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Health       |Check the product's health                 |`mdatp --health`                                                       |
+|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
+|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
+|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
+|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
 
 ## What to expect in the ATP portal
 
