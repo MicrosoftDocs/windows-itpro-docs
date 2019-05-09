@@ -3301,7 +3301,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
    <dd>
-    <a href="./policy-csp-timelanguagesettings.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
+    <a href="./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
   </dd>
 </dl>
 
