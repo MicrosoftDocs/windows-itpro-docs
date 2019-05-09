@@ -254,6 +254,7 @@
 #### [TaskScheduler](policy-csp-taskscheduler.md)
 #### [TextInput](policy-csp-textinput.md)
 #### [TimeLanguageSettings](policy-csp-timelanguagesettings.md)
+#### [Troubleshooting](policy-csp-troubleshooting.md)
 #### [Update](policy-csp-update.md)
 #### [UserRights](policy-csp-userrights.md)
 #### [Wifi](policy-csp-wifi.md)
