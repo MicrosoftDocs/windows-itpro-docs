@@ -29,10 +29,10 @@ In order to use the direct connection scenario, set the parameter **ClientProxy=
 This is the first and most simple proxy scenario. The WinHTTP stack was designed for use in services and does not support proxy autodetection, PAC scripts or authentication.
 
 In order to set the WinHTTP proxy system-wide on your computers, you need to
-•Use the command netsh winhttp set proxy \<server\>:\<port\>
-•Set ClientProxy=System in runconfig.bat
+- Use the command netsh winhttp set proxy \<server\>:\<port\>
+- Set ClientProxy=System in runconfig.bat
 
-The WinHTTP scenario is most appropriate for customers who use a single proxy or f. If you have more advanced proxy requirements, refer to Scenario 3.
+The WinHTTP scenario is most appropriate for customers who use a single proxy. If you have more advanced proxy requirements, refer to Scenario 3.
 
 If you want to learn more about proxy considerations on Windows, see [Understanding Web Proxy Configuration](https://blogs.msdn.microsoft.com/ieinternals/2013/10/11/understanding-web-proxy-configuration/).
 
