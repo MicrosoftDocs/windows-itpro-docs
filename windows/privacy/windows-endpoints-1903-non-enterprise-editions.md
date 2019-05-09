@@ -40,56 +40,84 @@ We used the following methodology to derive these network endpoints:
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
-|\*.aria.microsoft.com\*	| HTTPS |	Office Telemetry
-|\*.dl.delivery.mp.microsoft.com\*	| HTTP |	Enables connections to Windows Update.
-|\*.download.windowsupdate.com\*	| HTTP |	Used to download operating system patches and updates.
-|\*.g.akamai.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use.
-|\*.msn.com\*	|TLSv1.2/HTTPS |	Windows Spotlight related traffic
-|\*.Skype.com	| HTTP/HTTPS |	Skype related traffic
-|\*.smartscreen.microsoft.com\*	| HTTPS |	Windows Defender Smartscreen related traffic
-|\*.telecommand.telemetry.microsoft.com\*	| HTTPS |	Used by Windows Error Reporting.
-|\*cdn.onenote.net*	| HTTP |	OneNote related traffic
-|\*displaycatalog.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
-|\*emdl.ws.microsoft.com\*	| HTTP |	Windows Update related traffic
-|\*geo-prod.do.dsp.mp.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
-|\*hwcdn.net*	| HTTP |	Used by the Highwinds Content Delivery Network to perform Windows updates.
-|\*img-prod-cms-rt-microsoft-com.akamaized.net*	| HTTPS |	Used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps).
-|\*maps.windows.com\*	| HTTPS |	Related to Maps application.
-|\*msedge.net*	| HTTPS |	Used by OfficeHub to get the metadata of Office apps.
-|\*nexusrules.officeapps.live.com\*	| HTTPS |	Office Telemetry
-|\*photos.microsoft.com\*	| HTTPS |	Photos App related traffic
-|\*prod.do.dsp.mp.microsoft.com\*	|TLSv1.2/HTTPS |	Used for Windows Update downloads of apps and OS updates.
-|\*wac.phicdn.net*	| HTTP |	Windows Update related traffic
-|\*windowsupdate.com\*	| HTTP |	Windows Update related traffic
-|\*wns.windows.com\*	| HTTPS, TLSv1.2 |	Used for the Windows Push Notification Services (WNS).
-|\*wpc.v0cdn.net*	| |	Windows Telemetry related traffic
-|auth.gfx.ms/16.000.27934.1/OldConvergedLogin_PCore.js	| |	MSA related
-|evoke-windowsservices-tas.msedge*	| HTTPS |	The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
-|fe2.update.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
-|fe3.\*.mp.microsoft.com.\* 	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
-|fs.microsoft.com	| |	Font Streaming (in ENT traffic)
-|g.live.com\*	| HTTPS |	Used by OneDrive
-|iriscoremetadataprod.blob.core.windows.net	| HTTPS |	Windows Telemetry
-|mscrl.microsoft.com	| |	Certificate Revocation List related traffic.
-|ocsp.digicert.com\*	| HTTP |	CRL and OCSP checks to the issuing certificate authorities.
-|officeclient.microsoft.com	| HTTPS |	Office related traffic.
-|oneclient.sfx.ms*	| HTTPS |	Used by OneDrive for Business to download and verify app updates.
-|purchase.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
-|query.prod.cms.rt.microsoft.com\*	| HTTPS |	Used to retrieve Windows Spotlight metadata.
-|ris.api.iris.microsoft.com\*	|TLSv1.2/HTTPS |	Used to retrieve Windows Spotlight metadata.
-|ris-prod-atm.trafficmanager.net	| HTTPS |	Azure traffic manager
-|settings.data.microsoft.com\*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
-|settings-win.data.microsoft.com\*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
-|sls.update.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
-|store*.dsx.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
-|storecatalogrevocation.storequality.microsoft.com\*	| HTTPS |	Used to revoke licenses for malicious apps on the Microsoft Store.
-|store-images.s-microsoft.com\*	| HTTP |	Used to get images that are used for Microsoft Store suggestions.
-|tile-service.weather.microsoft.com\*	| HTTP |	Used to download updates to the Weather app Live Tile.
-|tsfe.trafficshaping.dsp.mp.microsoft.com\*	|TLSv1.2 |	Used for content regulation.
-|v10.events.data.microsoft.com	| HTTPS |	Diagnostic Data
-|wdcp.microsoft.*	|TLSv1.2 |	Used for Windows Defender when Cloud-based Protection is enabled.
-|wd-prod-cp-us-west-1-fe.westus.cloudapp.azure.com	| HTTPS |	Windows Defender related traffic.
-|www.bing.com*	| HTTP |	Used for updates for Cortana, apps, and Live Tiles.
+|\*.aria.microsoft.com*|HTTPS|Microsoft Office Telemetry
+|\*.b.akamai*.net|HTTPS|Used to check for updates to Maps that have been downloaded for offline use
+|\*.c-msedge.net|HTTP|Microsoft Office 
+|\*.dl.delivery.mp.microsoft.com*|HTTP|Enables connections to Windows Update
+|\*.download.windowsupdate.com*|HTTP|Used to download operating system patches and updates
+|\*.g.akamai*.net|HTTPS|Used to check for updates to Maps that have been downloaded for offline use
+|\*.login.msa.*.net|HTTPS|Microsoft Account related
+|\*.msn.com*|TLSv1.2/HTTPS|Windows Spotlight 
+|\*.skype.com|HTTP/HTTPS|Skype 
+|\*.smartscreen.microsoft.com*|HTTPS|Windows Defender Smartscreen 
+|\*.telecommand.telemetry.microsoft.com*|HTTPS|Used by Windows Error Reporting
+|*cdn.onenote.net*|HTTP|OneNote 
+|*displaycatalog.*mp.microsoft.com*|HTTPS|Used to communicate with Microsoft Store 
+|*emdl.ws.microsoft.com*|HTTP|Windows Update 
+|*geo-prod.do.dsp.mp.microsoft.com*|TLSv1.2/HTTPS|Enables connections to Windows Update 
+|*hwcdn.net*|HTTP|Highwinds Content Delivery Network / Windows updates 
+|*img-prod-cms-rt-microsoft-com.*|HTTPS|Microsoft Store or Inbox MSN Apps image download 
+|*licensing.*mp.microsoft.com*|HTTPS|Licensing 
+|*maps.windows.com*|HTTPS|Related to Maps application 
+|*msedge.net*|HTTPS|Used by Microsoft OfficeHub to get the metadata of Microsoft Office apps 
+|*nexusrules.officeapps.live.com*|HTTPS|Microsoft Office Telemetry
+|*photos.microsoft.com*|HTTPS|Photos App 
+|*prod.do.dsp.mp.microsoft.com*|TLSv1.2/HTTPS|Used for Windows Update downloads of apps and OS updates 
+|*purchase.md.mp.microsoft.com.akadns.net|HTTPS|Used to communicate with Microsoft Store 
+|*settings.data.microsoft.com.akadns.net|HTTPS|Used for Windows apps to dynamically update their configuration
+|*wac.phicdn.net*|HTTP|Windows Update 
+|*windowsupdate.com*|HTTP|Windows Update 
+|*wns.*windows.com*|TLSv1.2/HTTPS|Used for the Windows Push Notification Services (WNS)
+|*wpc.v0cdn.net*|HTTP|Windows Telemetry 
+|arc.msn.com|HTTPS|Spotlight  
+|auth.gfx.ms*|HTTPS|MSA related
+|cdn.onenote.net|HTTPS|OneNote Live Tile
+|dmd.metaservices.microsoft.com*|HTTP|Device Authentication 
+|e-0009.e-msedge.net|HTTPS|Microsoft Office 
+|e10198.b.akamaiedge.net|HTTPS|Maps application 
+|evoke-windowsservices-tas.msedge*|HTTPS|Photos app 
+|fe2.update.microsoft.com*|TLSv1.2/HTTPS|Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store
+|fe3.*.mp.microsoft.com.*|TLSv1.2/HTTPS|Windows Update, Microsoft Update, and Microsoft Store services 
+|g.live.com*|HTTPS|OneDrive 
+|go.microsoft.com|HTTP|Windows Defender
+|iriscoremetadataprod.blob.core.windows.net|HTTPS|Windows Telemetry
+|login.live.com|HTTPS|Device Authentication  
+|msagfx.live.com|HTTP|OneDrive 
+|ocsp.digicert.com*|HTTP|CRL and OCSP checks to the issuing certificate authorities
+|officeclient.microsoft.com|HTTPS|Microsoft Office 
+|oneclient.sfx.ms*|HTTPS|Used by OneDrive for Business to download and verify app updates
+|onecollector.cloudapp.aria.akadns.net|HTTPS|Microsoft Office
+|ow1.res.office365.com|HTTP|Microsoft Office
+|pti.store.microsoft.com|HTTPS|Microsoft Store
+|purchase.mp.microsoft.com*|HTTPS|Used to communicate with Microsoft Store
+|query.prod.cms.rt.microsoft.com*|HTTPS|Used to retrieve Windows Spotlight metadata
+|ris.api.iris.microsoft.com*|TLSv1.2/HTTPS|Used to retrieve Windows Spotlight metadata
+|ris-prod-atm.trafficmanager.net|HTTPS|Azure traffic manager
+|s-0001.s-msedge.net|HTTPS|Microsoft Office
+|self.events.data.microsoft.com|HTTPS|Microsoft Office
+|settings.data.microsoft.com*|HTTPS|Used for Windows apps to dynamically update their configuration
+|settings-win.data.microsoft.com*|HTTPS|Used for Windows apps to dynamically update their configuration
+|share.microsoft.com|HTTPS|Microsoft Store
+|skypeecs-prod-usw-0.cloudapp.net|HTTPS|Microsoft Store
+|sls.update.microsoft.com*|TLSv1.2/HTTPS|Enables connections to Windows Update
+|slscr.update.microsoft.com*|HTTPS|Enables connections to Windows Update
+|store*.dsx.mp.microsoft.com*|HTTPS|Used to communicate with Microsoft Store
+|storecatalogrevocation.storequality.microsoft.com|HTTPS|Microsoft Store
+|storecatalogrevocation.storequality.microsoft.com*|HTTPS|Used to revoke licenses for malicious apps on the Microsoft Store
+|store-images.*microsoft.com*|HTTP|Used to get images that are used for Microsoft Store suggestions
+|storesdk.dsx.mp.microsoft.com|HTTP|Microsoft Store
+|tile-service.weather.microsoft.com*|HTTP|Used to download updates to the Weather app Live Tile
+|time.windows.com|HTTP|Microsoft Windows Time related
+|tsfe.trafficshaping.dsp.mp.microsoft.com*|TLSv1.2/HTTPS|Used for content regulation
+|v10.events.data.microsoft.com|HTTPS|Diagnostic Data
+|watson.telemetry.microsoft.com|HTTPS|Diagnostic Data
+|wdcp.microsoft.*|TLSv1.2, HTTPS|Used for Windows Defender when Cloud-based Protection is enabled
+|wd-prod-cp-us-west-1-fe.westus.cloudapp.azure.com|HTTPS|Windows Defender 
+|wusofficehome.msocdn.com|HTTPS|Microsoft Office
+|www.bing.com*|HTTP|Used for updates for Cortana, apps, and Live Tiles
+|www.msftconnecttest.com|HTTP|Network Connection (NCSI)
+|www.office.com|HTTPS|Microsoft Office
+
 
 ## Windows 10 Pro
 
