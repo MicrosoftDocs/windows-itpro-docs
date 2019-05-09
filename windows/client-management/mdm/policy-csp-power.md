@@ -388,14 +388,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Energy Saver Battery Threshold (on battery)*
 -   GP name: *EsBattThresholdDC*
@@ -403,7 +396,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Energy Saver Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values: 0-100. The default is 70.
 <!--/SupportedValues-->
@@ -461,14 +454,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Energy Saver Battery Threshold (plugged in)*
 -   GP name: *EsBattThresholdAC*
@@ -476,7 +462,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Energy Saver Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values: 0-100. The default is 70.
 <!--/SupportedValues-->
@@ -786,14 +772,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the lid switch action (on battery)*
 -   GP name: *DCSystemLidAction_2*
@@ -801,7 +780,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported lid close switch actions (on battery):  
@@ -865,14 +844,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the lid switch action (plugged in)*
 -   GP name: *ACSystemLidAction_2*
@@ -880,7 +852,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported lid close switch actions (plugged in):  
@@ -944,14 +916,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the Power button action (on battery)*
 -   GP name: *DCPowerButtonAction_2*
@@ -959,7 +924,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported Power button actions (on battery):  
@@ -1023,14 +988,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the Power button action (plugged in)*
 -   GP name: *ACPowerButtonAction_2*
@@ -1038,7 +996,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported Power button actions (plugged in):  
@@ -1102,14 +1060,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the Sleep button action (on battery)*
 -   GP name: *DCSleepButtonAction_2*
@@ -1117,7 +1068,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported Sleep button actions (on battery):  
@@ -1181,14 +1132,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Select the Sleep button action (plugged in)*
 -   GP name: *ACSleepButtonAction_2*
@@ -1196,7 +1140,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Button Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported Sleep button actions (plugged in):  
@@ -1388,21 +1332,14 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Turn off hybrid sleep (on battery)*
 -   GP name: *DCStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported values for Hybrid sleep (on battery):
@@ -1464,21 +1401,14 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Turn off hybrid sleep (plugged in)*
 -   GP name: *ACStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 
 The following are the supported values for Hybrid sleep (plugged in):
@@ -1542,14 +1472,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify the unattended sleep timeout (on battery)*
 -   GP name: *UnattendedSleepTimeOutDC*
@@ -1557,7 +1480,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Default value for unattended sleep timeout (on battery):
 300
@@ -1618,14 +1541,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--/Description-->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
+<!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify the unattended sleep timeout (plugged in)*
 -   GP name: *UnattendedSleepTimeOutAC*
@@ -1633,7 +1549,7 @@ ADMX Info:
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMXBacked-->
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Default value for unattended sleep timeout (plugged in):
 300
