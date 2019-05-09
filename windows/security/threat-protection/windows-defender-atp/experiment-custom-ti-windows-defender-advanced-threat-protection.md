@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 11/09/2017
 ---
 
-# Experiment with custom threat intelligence (TI) alerts
+# Experiment with custom threat intelligence (TI) alerts (Deprecated)
 
 **Applies to:**
 
