@@ -33,7 +33,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
 
-1) Increase logging level:
+1. Increase logging level:
 
 ```bash
    mavel-mojave:~ testuser$ mdatp log-level --verbose
@@ -42,9 +42,9 @@ If you can reproduce a problem, please increase the logging level, run the syste
    Operation succeeded
 ```
 
-2) Reproduce the problem
+2. Reproduce the problem
 
-3) Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
    mavel-mojave:~ testuser$ mdatp --diagnostic
@@ -53,7 +53,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
    ```
 
-4) Restore logging level:
+4. Restore logging level:
 
    ```bash
    mavel-mojave:~ testuser$ mdatp log-level --info
@@ -131,15 +131,15 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
 |Protection   |Request a definition update                |`mdatp --signature-update`                                             |
 
-## What to expect in the ATP portal
-
-- AV alerts:
+## Microsoft Defender ATP portal information
+In the Microsoft Defender ATP portal, you'll see two categories of information:
+- AV alerts, including:
   - Severity
   - Scan type
   - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
   - File information (name, path, size, and hash)
   - Threat information (name, type, and state)
-- Device information:
+- Device information, including:
   - Machine identifier
   - Tenant identifier
   - App version
