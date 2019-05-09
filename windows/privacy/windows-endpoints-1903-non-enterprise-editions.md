@@ -56,7 +56,7 @@ We used the following methodology to derive these network endpoints:
 |*emdl.ws.microsoft.com*|HTTP|Windows Update 
 |*geo-prod.do.dsp.mp.microsoft.com*|TLSv1.2/HTTPS|Enables connections to Windows Update 
 |*hwcdn.net*|HTTP|Highwinds Content Delivery Network / Windows updates 
-|*img-prod-cms-rt-microsoft-com.*|HTTPS|Microsoft Store or Inbox MSN Apps image download 
+|*img-prod-cms-rt-microsoft-com*|HTTPS|Microsoft Store or Inbox MSN Apps image download 
 |*licensing.*mp.microsoft.com*|HTTPS|Licensing 
 |*maps.windows.com*|HTTPS|Related to Maps application 
 |*msedge.net*|HTTPS|Used by Microsoft OfficeHub to get the metadata of Microsoft Office apps 
