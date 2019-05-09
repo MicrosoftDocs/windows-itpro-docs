@@ -596,6 +596,9 @@ After you've decided where your protected apps can access enterprise data on you
         
         - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
+        >[!NOTE]
+        >Regardless of this setting, all files in OneDrive for Business will be encrypted, including moved Known Folders.
+
     - **Allow Windows Search Indexer to search encrypted files.** Determines whether to allow the Windows Search Indexer to index items that are encrypted, such as WIP protected files.
     
         - **On.** Starts Windows Search Indexer to index encrypted files.
