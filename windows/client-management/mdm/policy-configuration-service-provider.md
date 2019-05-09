@@ -3112,6 +3112,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowbuildpreview" id="system-allowbuildpreview">System/AllowBuildPreview</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-allowdevicenameindiagnosticdata" id="system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -3170,6 +3173,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-telemetryproxy" id="system-telemetryproxy">System/TelemetryProxy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-turnofffilehistory" id="system-turnofffilehistory">System/TurnOffFileHistory</a>
   </dd>
 </dl>
 
