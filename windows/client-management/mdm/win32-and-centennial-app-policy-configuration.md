@@ -50,6 +50,9 @@ When the ADMX policies are imported, the registry keys to which each policy is w
 > [!Warning]
 > Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined.
 
+> [!NOTE]
+> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script). 
+
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
 The following ADMX file example shows how to ingest a Win32 or Desktop Bridge app ADMX file and set policies from the file. The ADMX file defines eight policies.
