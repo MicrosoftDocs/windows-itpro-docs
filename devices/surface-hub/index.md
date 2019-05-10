@@ -1,76 +1,72 @@
 ---
-title: Content set name
-description: Add a short description
+title: Surface Hub
 services: skype-for-business-online-admin
-author: samanro
-manager: samanro
+author: robmazz
+ms.author: robmazz
+manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: skype-for-business-online-admin
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 12/13/2017
-ms.author: samanro
+description: "Get started with Microsoft Surface Hub."
 ---
 # Get Started with Surface Hub
 
 Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft Teams, Office 365, Microsoft Whiteboard and the intelligent cloud – to unlock the productivity of your team. This new device packs even more performance into a thinner, lighter more versatile design. Forty percent lighter than its predecessor, and with a 60 percent thinner display, Surface Hub 2S fits easily into any space – from a traditional conference room to a compact huddle space.
 
-<ul class="panelContent cardsFTitle">
+<ul class="panelContent cardsF">
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started.svg" alt="Get started" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Overview</h3>
+                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/task-checklist-planning-blue.svg" alt="Plan" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Plan</h3>
+                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Deploy</h3>
+                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        </a>
     </li>
 </ul>
 
@@ -81,11 +77,11 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tools-maintenance.svg" alt="Tools" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow-blue.sv" alt="Manage" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Heading</h3>
+                        <h3>Manage</h3>
                         <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
@@ -98,11 +94,11 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security.svg" alt="Security" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Secure" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Heading</h3>
+                        <h3>Secure</h3>
                         <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
@@ -115,11 +111,11 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks.svg" alt="Tasks" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help-blue.svg" alt="Support" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Heading</h3>
+                        <h3>Support</h3>
                         <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
@@ -137,8 +133,9 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
+                        <h3>Plan for Surface Hub 2S</h3>
+                        <p>Prepare your environment for Surface Hub 2S</p>
+                        <p>Surface Hub 2S Readiness Guide</p>
                     </div>
                 </div>
             </div>
@@ -149,8 +146,9 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
+                        <h3>Manage Surface Hub 2S</h3>
+                        <p>Surface Hub 2S with Microsoft Intune</p>
+                        <p>Surface Hub 2S and PowerShell</p>
                     </div>
                 </div>
             </div>
@@ -161,44 +159,8 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
+                        <h3>Community</h3>
+                        <p>Join the Surface Devices Technical Community</p>
                     </div>
                 </div>
             </div>
