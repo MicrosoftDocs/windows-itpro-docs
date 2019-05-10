@@ -106,7 +106,7 @@ The following table lists management options for each setting, beginning with Wi
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [28. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
