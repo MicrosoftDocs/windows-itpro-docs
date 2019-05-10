@@ -31,7 +31,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/blocks-blue.svg" alt="Building blocks" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -51,7 +51,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -71,7 +71,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/small-business-blue.svg" alt="Business" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -88,7 +88,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Graduation cap" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/list-123-blue.svg" alt="Specs list" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -109,7 +109,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Office.svg" alt="Office logo" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/list-123-blue.svg" alt="Specs list" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -128,7 +128,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/connector-blue.svg" alt="Support solutions" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -150,7 +150,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/blog-site-blue.svg" alt="Communities" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -168,7 +168,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/process-flow-blue.svg" alt="More arrow" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
