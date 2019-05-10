@@ -77,7 +77,7 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow-blue.sv" alt="Manage" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow-blue.svg" alt="Manage" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help-blue.svg" alt="Support" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help.svg" alt="Support" />
                         </div>
                     </div>
                     <div class="cardText">
