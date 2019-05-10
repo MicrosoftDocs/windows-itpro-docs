@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: landing-page
 description: "Get started with Microsoft Surface Hub."
 ---
-# Get Started with Surface Hub
+# Get started with Surface Hub
 
 Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft Teams, Office 365, Microsoft Whiteboard and the intelligent cloud – to unlock the productivity of your team. This new device packs even more performance into a thinner, lighter more versatile design. Forty percent lighter than its predecessor, and with a 60 percent thinner display, Surface Hub 2S fits easily into any space – from a traditional conference room to a compact huddle space.
 
@@ -132,7 +132,7 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Plan for Surface Hub 2S</h3>
+                        <h3>Get ready for Surface Hub 2S</h3>
                         <p>Prepare your environment for Surface Hub 2S</p>
                         <p>Surface Hub 2S Readiness Guide</p>
                     </div>
@@ -145,7 +145,7 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Manage Surface Hub 2S</h3>
+                        <h3>Integrate with Surface Hub 2S</h3>
                         <p>Surface Hub 2S with Microsoft Intune</p>
                         <p>Surface Hub 2S and PowerShell</p>
                     </div>
