@@ -2420,7 +2420,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-power.md#power-energysaverbatterythresholdpluggedin"
     id="power-energysaverbatterythresholdpluggedin">Power/EnergySaverBatteryThresholdPluggedIn</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-power.md#power-hibernatetimeoutonbattery" id="power-hibernatetimeoutonbattery">Power/HibernateTimeoutOnBattery</a>
   </dd>
@@ -2456,7 +2456,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-power.md#power-selectsleepbuttonactionpluggedin"
     id="power-selectsleepbuttonactionpluggedin">Power/SelectSleepButtonActionPluggedIn</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-power.md#power-standbytimeoutonbattery" id="power-standbytimeoutonbattery">Power/StandbyTimeoutOnBattery</a>
   </dd>
