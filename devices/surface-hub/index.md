@@ -126,7 +126,6 @@ Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft T
 
 ---
 
-<h2>Featured Articles</h2>
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
