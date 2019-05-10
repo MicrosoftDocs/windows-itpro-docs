@@ -1,10 +1,10 @@
 ---
 title: Surface Hub
-services: skype-for-business-online-admin
 author: robmazz
 ms.author: robmazz
 manager: laurawi
 layout: LandingPage
+ms.prod: surface-hub
 ms.assetid: 
 ms.service: skype-for-business-online-admin
 ms.tgt_pltfrm: na
