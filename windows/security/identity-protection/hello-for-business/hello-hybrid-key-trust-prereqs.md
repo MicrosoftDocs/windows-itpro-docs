@@ -97,7 +97,7 @@ You can deploy Windows Hello for Business key trust in non-federated and federat
 ## Multifactor Authentication ##
 Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication (MFA) service or they can use MFA provided by AD FS beginning with Windows Server 2012 R2, which includes an adapter model that enables third parties to integrate their MFA into AD FS. The MFA enabled by an Office 365 license is sufficient for Azure AD.
+Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication (MFA) service or they can use multifactor authentication provided by AD FS beginning with Windows Server 2012 R2, which includes an adapter model that enables third parties to integrate their MFA into AD FS. The MFA enabled by an Office 365 license is sufficient for Azure AD.
 
 ### Section Review 
 > [!div class="checklist"]
