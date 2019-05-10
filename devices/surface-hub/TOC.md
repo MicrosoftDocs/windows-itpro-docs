@@ -8,7 +8,7 @@
 ## Secure
 ## Support
 
-#Surface Hub
+# Surface Hub
 ## Overview
 ### [What's new in Windows 10, version 1703 for Surface Hub?](surfacehub-whats-new-1703.md)
 ### [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
