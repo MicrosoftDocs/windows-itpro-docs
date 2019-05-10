@@ -101,7 +101,7 @@ The Windows Hello for Business Cloud deployment is exclusively for organizations
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Cloud Experience Host
-In Windows 10 Enterprise edition, Cloud Experience Host is an application that helps you join the workplace environment or Azure AD using your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
+In Windows 10, Cloud Experience Host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
 
 ### Related topics
 [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
