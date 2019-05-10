@@ -96,7 +96,7 @@ The following table lists management options for each setting, beginning with Wi
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) | 
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) |  |  |
+| [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [23. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | 
@@ -129,7 +129,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [18. Settings > Privacy](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |  |
@@ -1488,7 +1488,7 @@ For Windows 10:
 
   -or-
 
-- Create a REG_DWORD registry setting named **AllowDiskHealthModelUpdates** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\StorageHealth** with a value of 0.
+- Create a REG_DWORD registry setting named **AllowDiskHealthModelUpdates** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\StorageHealth** with a **value of 0**.
 
 ### <a href="" id="bkmk-syncsettings"></a>21. Sync your settings
 
