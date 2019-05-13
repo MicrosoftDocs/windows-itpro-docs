@@ -2414,6 +2414,14 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-power.md#power-displayofftimeoutpluggedin" id="power-displayofftimeoutpluggedin">Power/DisplayOffTimeoutPluggedIn</a>
   </dd>
   <dd>
+    <a href="./policy-csp-power.md#power-energysaverbatterythresholdonbattery"
+    id="power-energysaverbatterythresholdonbattery">Power/EnergySaverBatteryThresholdOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-energysaverbatterythresholdpluggedin"
+    id="power-energysaverbatterythresholdpluggedin">Power/EnergySaverBatteryThresholdPluggedIn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-power.md#power-hibernatetimeoutonbattery" id="power-hibernatetimeoutonbattery">Power/HibernateTimeoutOnBattery</a>
   </dd>
   <dd>
@@ -2426,10 +2434,50 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-power.md#power-requirepasswordwhencomputerwakespluggedin" id="power-requirepasswordwhencomputerwakespluggedin">Power/RequirePasswordWhenComputerWakesPluggedIn</a>
   </dd>
   <dd>
+    <a href="./policy-csp-power.md#power-selectlidcloseactiononbattery"
+    id="power-selectlidcloseactiononbattery">Power/SelectLidCloseActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectlidcloseactionpluggedin"
+    id="power-selectlidcloseactionpluggedin">Power/SelectLidCloseActionPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectpowerbuttonactiononbattery"
+    id="power-selectpowerbuttonactiononbattery">Power/SelectPowerButtonActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectpowerbuttonactionpluggedin"
+    id="power-selectpowerbuttonactionpluggedin">Power/SelectPowerButtonActionPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectsleepbuttonactiononbattery"
+    id="power-selectsleepbuttonactiononbattery">Power/SelectSleepButtonActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectsleepbuttonactionpluggedin"
+    id="power-selectsleepbuttonactionpluggedin">Power/SelectSleepButtonActionPluggedIn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-power.md#power-standbytimeoutonbattery" id="power-standbytimeoutonbattery">Power/StandbyTimeoutOnBattery</a>
   </dd>
   <dd>
     <a href="./policy-csp-power.md#power-standbytimeoutpluggedin" id="power-standbytimeoutpluggedin">Power/StandbyTimeoutPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-turnoffhybridsleeponbattery"
+    id="power-turnoffhybridsleeponbattery">Power/TurnOffHybridSleepOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-turnoffhybridsleeppluggedin"
+    id="power-turnoffhybridsleeppluggedin">Power/TurnOffHybridSleepPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-unattendedsleeptimeoutonbattery"
+    id="power-unattendedsleeptimeoutonbattery">Power/UnattendedSleepTimeoutOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-unattendedsleeptimeoutpluggedin"
+    id="power-unattendedsleeptimeoutpluggedin">Power/UnattendedSleepTimeoutPluggedIn</a>
   </dd>
 </dl>
 
@@ -3679,10 +3727,19 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon" id="windowslogon-allowautomaticrestartsignon">WindowsLogon/AllowAutomaticRestartSignOn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon" id="windowslogon-configautomaticrestartsignon">WindowsLogon/ConfigAutomaticRestartSignOn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications" id="windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui" id="windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation" id="#windowslogon-enablefirstlogonanimation">WindowsLogon/EnableFirstLogonAnimation</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers" id="windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
@@ -3690,10 +3747,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-hidefastuserswitching" id="windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a>
   </dd>
-  <dd>
-    <a href="./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart" id="windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart">WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</a>
-  </dd>
-</dl>
+  </dl>
 
 ### WindowsPowerShell policies
 
@@ -4116,10 +4170,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
 -   [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
+-   [WindowsLogon/AllowAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)
+-   [WindowsLogon/ConfigAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
 -   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
--   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
 -   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
 
 
@@ -4699,12 +4754,24 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Power/AllowStandbyWhenSleepingPluggedIn](./policy-csp-power.md#power-allowstandbywhensleepingpluggedin)
 -   [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
 -   [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
+-   [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery)
+-   [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin)
 -   [Power/HibernateTimeoutOnBattery](./policy-csp-power.md#power-hibernatetimeoutonbattery)
 -   [Power/HibernateTimeoutPluggedIn](./policy-csp-power.md#power-hibernatetimeoutpluggedin)
 -   [Power/RequirePasswordWhenComputerWakesOnBattery](./policy-csp-power.md#power-requirepasswordwhencomputerwakesonbattery)
 -   [Power/RequirePasswordWhenComputerWakesPluggedIn](./policy-csp-power.md#power-requirepasswordwhencomputerwakespluggedin)
+-   [Power/SelectLidCloseActionOnBattery](./policy-csp-power.md#power-selectlidcloseactiononbattery)
+-   [Power/SelectLidCloseActionPluggedIn](./policy-csp-power.md#power-selectlidcloseactionpluggedin)
+-   [Power/SelectPowerButtonActionOnBattery](./policy-csp-power.md#power-selectpowerbuttonactiononbattery)
+-   [Power/SelectPowerButtonActionPluggedIn](./policy-csp-power.md#power-selectpowerbuttonactionpluggedin)
+-   [Power/SelectSleepButtonActionOnBattery](./policy-csp-power.md#power-selectsleepbuttonactiononbattery)
+-   [Power/SelectSleepButtonActionPluggedIn](./policy-csp-power.md#power-selectsleepbuttonactionpluggedin)
 -   [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
 -   [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
+-   [Power/TurnOffHybridSleepOnBattery](./policy-csp-power.md#power-turnoffhybridsleeponbattery)
+-   [Power/TurnOffHybridSleepPluggedIn](./policy-csp-power.md#power-turnoffhybridsleeppluggedin)
+-   [Power/UnattendedSleepTimeoutOnBattery](./policy-csp-power.md#power-unattendedsleeptimeoutonbattery)
+-   [Power/UnattendedSleepTimeoutPluggedIn](./policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)
 -   [Printers/PointAndPrintRestrictions](./policy-csp-printers.md#printers-pointandprintrestrictions)
 -   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions-user)
 -   [Printers/PublishPrinters](./policy-csp-printers.md#printers-publishprinters)
@@ -4975,11 +5042,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsDefenderSecurityCenter/URL](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-url)
 -   [WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace](./policy-csp-windowsinkworkspace.md#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace)
 -   [WindowsInkWorkspace/AllowWindowsInkWorkspace](./policy-csp-windowsinkworkspace.md#windowsinkworkspace-allowwindowsinkworkspace)
+-   [WindowsLogon/AllowAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)
+-   [WindowsLogon/ConfigAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
+-   [WindowsLogon/EnableFirstLogonAnimation](./policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)
 -   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
 -   [WindowsLogon/HideFastUserSwitching](./policy-csp-windowslogon.md#windowslogon-hidefastuserswitching)
--   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
 -   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)

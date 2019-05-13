@@ -22,7 +22,6 @@ ms.topic: article
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
@@ -39,7 +38,7 @@ On the top navigation you can:
 - Apply filters 
 
 ## Create an indicator
-1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Indicators**.  
 
 2. Select the tab of the type of entity you'd like to create an indicator for. You can choose any of the following entities: 
    - File hash
@@ -63,7 +62,7 @@ On the top navigation you can:
 
 
 ## Manage indicators
-1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Indicators**.  
 
 2. Select the tab of the entity type you'd like to manage.  
 
