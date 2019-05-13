@@ -64,7 +64,7 @@ Also in this article:
 
 You probably have on-premises Active Directory Domain Services (AD DS) domains. Users will use their domain-based credentials to sign in to the AD DS domain. Before you start deploying Windows 10 Enterprise E3 or E5 licenses to users, you need to synchronize the identities in the on-premises ADDS domain with Azure AD.
 
-You might ask why you need to synchronize these identities. The answer is that users will have a **single identity** that they can use to access their on-premises apps and cloud services that use Azure AD (**such as Windows 10 Enterprise E3 or E5**). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
+You might ask why you need to synchronize these identities. The answer is so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Enterprise E3 or E5). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
 **Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
