@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot custom threat intelligence issues
+# Troubleshoot custom threat intelligence issues (Deprecated)
 
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

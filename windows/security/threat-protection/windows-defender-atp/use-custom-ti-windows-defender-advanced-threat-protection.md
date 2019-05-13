@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Use the threat intelligence API to create custom alerts
+# Use the threat intelligence API to create custom alerts (Deprecated)
 
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
+>[!TIP]
+>This topic has been deprecated. See [Indicators](ti-indicator-windows-defender-advanced-threat-protection-new.md) for the updated content.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-customti-abovefoldlink) 
 
