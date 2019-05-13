@@ -5,7 +5,7 @@
 ### [Network requirements](windows-autopilot-requirements-network.md)
 ### [Licensing requirements](windows-autopilot-requirements-licensing.md)
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
-### [Pre-provisioning](pre-provisioning.md)
+### [White glove](white-glove.md)
 ### [Support for existing devices](existing-devices.md)
 ### [User-driven mode](user-driven.md)
 #### [Azure Active Directory joined](user-driven-aad.md)
