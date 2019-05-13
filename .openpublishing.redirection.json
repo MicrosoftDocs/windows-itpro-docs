@@ -13950,7 +13950,7 @@
 "redirect_document_id": true
 },
 {
-    "source_path": "windows/windows-10/release-information/release-information.md",
+    "source_path": "windows/hub/release-information.md",
     "redirect_url": "/windows/release-information",
     "redirect_document_id": true
 }
