@@ -17,15 +17,17 @@ ms.topic: article
 
 **Applies to: Windows 10, version 1903**
 
-Windows Autopilot enables organizations to easily provision new devices, leveraging the preinstalled OEM image and drivers resulting in a simple process that can be performed by the end user.
+Windows Autopilot enables organizations to easily provision new devices - leveraging the preinstalled OEM image and drivers with a simple process that can be performed by the end user to help get their device business-ready.
 
  ![OEM](images/wg01.png)
 
-Windows Autopilot can also provide a "white glove" service enabling partners or IT staff to pre-provision a Windows 10 PC to be fully configured and business-ready​. With Windows Autopilot for white glove deployment, the provisioning process is split, with the time-consuming portions performed by IT, partners, or OEMs.  From the end user’s perspective, the process is exactly the same, just faster – the Windows Autopilot user-driven experience is unchanged.
+Windows Autopilot can also provide a <I>white glove</I> service that enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready​. From the end user’s perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
+
+With **Windows Autopilot for white glove deployment**, the provisioning process is split. The time-consuming portions are performed by IT, partners, or OEMs. The end user simply completes a few neceesary settings and polices and then they can begin using their device.
 
  ![OEM](images/wg02.png)
 
-Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting the user-driven [Azure AD join](user-driven-aad.md) and [Hybrid Azure AD](user-driven-hybrid.md) join scenarios.
+Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting both the user-driven [Azure AD join](user-driven-aad.md) and [Hybrid Azure AD](user-driven-hybrid.md) join scenarios.
 
 ## Prerequisites
 
@@ -144,4 +146,4 @@ Depending on your method of participation in the Windows Autopilot for white glo
 
 - If you are participating in the Windows TAP program, please provide feedback via the **Windows 10 TAP** Yammer group.
 - If you are participating via MVP programs, please provide feedback via the MVP distribution list for your specialty.
-- For others, please use the feedback links provided below or your specific Windows Autopilot team contact.
+- For others, please use the feedback link provided below (next to **This product**) or your specific Windows Autopilot team contact.
