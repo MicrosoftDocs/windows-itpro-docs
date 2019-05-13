@@ -58,7 +58,7 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
-The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can use a 3rd Party enterprise certification authority too. The detailed requieriments for the Domain Controller certificate are shown below.
+The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party enterprise certification authority. The detailed requirements for the Domain Controller certificate are shown below.
 
 * The certificate must have a CRL distribution-point extension that points to a valid certificate revocation list (CRL).
 * Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name) 
