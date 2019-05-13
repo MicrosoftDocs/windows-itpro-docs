@@ -1254,7 +1254,7 @@ Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/C
 <!--/Description-->
 
 <!--SupportedValues-->
-Supports a numeric value from 0 - 5, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
+Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
 
 Default value is 2.
 <!--/SupportedValues-->
@@ -1323,7 +1323,7 @@ When disabled, if the device has installed the required updates and is outside o
 <!--SupportedValues-->
 Supported values:  
 -   1 - Enabled
--   0 - Disabled
+-   0 (default) - Disabled
 <!--/SupportedValues-->
 
 <!--ADMXMapped-->
