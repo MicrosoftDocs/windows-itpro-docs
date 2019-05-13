@@ -49,7 +49,7 @@ To ensure that your Intune tenant has been flighted with the needed white glove 
 
  ![AAD](images/wg03.png)
 
-The tenant ID can be found under **Azure Active Directory** and then **Properties**. Click the icon next to the ID to copy to the clipboard.:
+The tenant ID can be found under **Azure Active Directory** and then **Properties**. Click the icon next to the ID to copy to the clipboard.
 
  ![AAD](images/wg04.png)
 
@@ -58,17 +58,19 @@ The tenant ID can be found under **Azure Active Directory** and then **Propertie
 
 Two features will be enabled as part of the flighting process:
 
-- Support for Windows Autopilot for white glove deployment  This will enable devices performing white glove deployment processes to enroll in Intune, and will expose a new Autopilot profile setting that enables white glove deployment for any devices that have been assigned that profile.
-- Support for tracking Intune Management Extensions activities (Win32 apps, PowerShell scripts) in the Enrollment Status Page (ESP).  This is needed to ensure that all Win32 apps are installed before the white glove deployment process completes.
+- Support for Windows Autopilot for white glove deployment.  
+    - This will enable devices performing white glove deployment processes to enroll in Intune, and will expose a new Autopilot profile setting that enables white glove deployment for any devices that have been assigned that profile.
+- Support for tracking Intune Management Extensions activities (Win32 apps, PowerShell scripts) in the Enrollment Status Page (ESP).  
+    - This is needed to ensure that all Win32 apps are installed before the white glove deployment process completes.
 
-Once the flighting is complete, you will be able to enable Windows Autopilot for white glove deployment in any Autopilot profile; all devices with that profile assigned will be able to leverage the "white glove" process.
+Once the flighting is complete, you will be able to enable Windows Autopilot for white glove deployment in any Autopilot profile; all devices with that profile assigned will be able to leverage the white glove deployment process.
 
 >[!TIP]
 >To see the white glove deployment Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
 
  ![OOBE](images/wg05.png)
 
-The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps that are targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  (Note that other user-targeted policies will not apply until the user signs into the device.)  To verify these behaviors, be sure to create appropriate apps and policies, targeted to devices and users.
+The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps that are targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  **Note**: other user-targeted policies will not apply until the user signs into the device.  To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
 
 ## Scenarios
 
@@ -116,11 +118,11 @@ If the pre-provisioning process completed successfully and the device was reseal
 
 ## Fixed issues
 
-Each Windows 10 19H1 Insider Preview build can contain additional fixes for Windows Autopilot and related functionality.  These issues should already be addressed:
-•	Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red "white glove" summary page.  Fixed in build 10.0.18345.  (20355940)
-•	Connectivity to the corporate network is presently required during the Hybrid AAD Join technician flow, even though it is only used to check that an Active Directory domain controller is accessible.  Fixed in build 10.0.18345.  (20301592)
-•	When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that white glove is not enabled.  This is fixed in Intune on March 8th, 2019.
-•	When editing the Autopilot profile to enable white glove deployment, the setting change is not saved properly.  This is fixed in Intune on March 12th, 2019.
+Each Windows 10 19H1 Insider Preview build can contain additional fixes for Windows Autopilot and related functionality.  The following issues should already be addressed:
+- Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red "white glove" summary page.  This is fixed in build 10.0.18345.  (20355940)
+- Connectivity to the corporate network is presently required during the Hybrid AAD Join technician flow, even though it is only used to check that an Active Directory domain controller is accessible.  This is fixed in build 10.0.18345.  (20301592)
+- When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that white glove is not enabled.  This is fixed in Intune on March 8th, 2019.
+- When editing the Autopilot profile to enable white glove deployment, the setting change is not saved properly.  This is fixed in Intune on March 12th, 2019.
 
 ## Known issues
 
