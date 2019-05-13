@@ -79,7 +79,6 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 >[!NOTE]
 >If you are implementing Azure AD, and you already have an on-premises domain, you don't need to integrate with Azure AD, since your main authentication method is your internal AD. If you want to manage all your infrastructure in the cloud, you can safely configure your domain controller remotely to integrate your computers with Azure AD, but you won't be able to apply fine controls using GPO. Azure AD is best suited for the global administration of devices when you don't have any on-premises servers.
->The whole idea of using Azure AD, is mostly when you don't have any on-premises servers, and you want and enterprise administration of devices worldwide.
 
 ## Preparing for deployment: reviewing requirements
 
