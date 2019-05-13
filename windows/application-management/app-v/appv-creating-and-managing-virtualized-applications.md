@@ -93,7 +93,7 @@ The following table lists the supported shell extensions:
 
 Copy on write (CoW) file extensions allow App-V to dynamically write to specific locations contained in the virtual package while it is being used.
 
-The following table displays the file types that can exist in a virtual package under the VFS directory, since App-V 5.1, but cannot be updated on the computer running the App-V client. All other files and directories can be modified.
+The following table displays the file types that can exist in a virtual package under the VFS directory, since App-V 5.1, but which cannot be updated on the computer running the App-V client. All other files and directories can be modified.
 
 | File Type||||||
 |---|---|---|---|---|---|
