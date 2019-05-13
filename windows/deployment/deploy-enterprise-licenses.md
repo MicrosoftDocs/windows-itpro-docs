@@ -41,7 +41,7 @@ If the device has a firmware-embedded activation key, it will be displayed in th
 If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
 
 1.	Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
-    a. 	**AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
+-  **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
 - **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
 2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
 3.	The admin can now assign subscription licenses to users.
