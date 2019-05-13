@@ -159,7 +159,7 @@ Now the device is Azure AD joined to the company’s subscription.
 ### Step 2: Pro edition activation
 
 >[!IMPORTANT]
->If your device is running Windows 10, version 1803 or later, this step not needed. Starting with Windows 10 version 1803 the device will automatically activate Windows 10 Enterprise using the firmware-embedded activation key.
+>If your device is running Windows 10, version 1803 or later, this step is not needed. From Windows 10, version 1803, the device will automatically activate Windows 10 Enterprise using the firmware-embedded activation key.
 >If the device is running Windows 10, version 1703 or 1709, then Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
 
 <span id="win-10-pro-activated"/>
