@@ -17,7 +17,7 @@ ms.topic: article
 # Deploy Windows 10 Enterprise licenses
 
 >[!IMPORTANT]
->Licenses E3 and E5 brings windows 10 license enterprise with them, this tutorial is special for the use and implementation of these licenses in a on-premises Active Directory environment.
+>Office 365 Enterprise E3 and Office 365 Enterprise E5 include a Windows 10 Enterprise license. This article is about the use and implementation of these licenses in a on-premises Active Directory environment.
 
 This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
