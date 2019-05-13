@@ -74,13 +74,13 @@ Root node for the app installations being tracked by the ESP.
 
 Scope is permanent. Supported operation is Get.
 
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName***  
+<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/_ProviderName_**  
 Optional. This node is supported in both user context and device context.  
 Indicates the provider name responsible for installing the apps and providing status back to ESP.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName***  
+<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/_AppName_**  
 Optional. This node is supported in both user context and device context.  
 Represents a unique name for the app whose progress should be tracked by the ESP. The policy provider can define any arbitrary app name as ESP does not use the app name directly.
 
@@ -131,7 +131,7 @@ Indicates to the ESP that it should wait in the device preparation phase until a
 
 Scope is permanent. Supported operation is Get.
 
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName***  
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/_ProviderName_**  
 Optional. This node is supported only in device context.  
 Represents a policy provider for the ESP. The node should be given a unique name for the policy provider. Registration of a policy provider indicates to ESP that it should block in the device preparation phase until the provider sets its InstallationState node to 2 (NotRequired) or 3 (Completed). Once all the registered policy providers are marked as Completed or NotRequired, the ESP progresses to the device setup phase.
 
