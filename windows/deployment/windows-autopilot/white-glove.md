@@ -33,7 +33,7 @@ Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove
 
 In addition to [Windows Autopilot requirements](windows-autopilot-requirements.md), Windows Autopilot for white glove deployment adds the following:
 
-- Windows 10, version 1903 or later is required. Note: If you are a Windows Insider, Windows 10 build 18342 and above is required. The Insider Skip Ahead builds for the Windows 10 20H1 release with build numbers greater than 18800 may work, but 19H1 build numbers in the 18300 range are recommended.
+- Windows 10, version 1903 or later is required.
 - Microsoft Intune subscriptions with additional flighted features that are not yet available publicly.  Attempts to perform white glove deployment without these flighted features will fail with an Intune enrollment error.
 - Physical devices that support TPM 2.0 and device attestation; virtual machines are not supported.  The white glove provisioning process leverages Windows Autopilot self-deploying capabilities, hence the TPM 2.0 requirements.
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
@@ -85,7 +85,7 @@ Each of these scenarios consists of two parts, a technician flow and a user flow
 
 The first part of the Windows Autopilot for white glove deployment process is designed to be carried out by a technician; this could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
 Regardless of the scenario, the process to be performed by the technician is the same:
-- Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, Insider Preview build 18342 or higher).
+- Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
 - From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
 
  ![Autopilot](images/wg05.png)
@@ -120,7 +120,7 @@ If the pre-provisioning process completed successfully and the device was reseal
 
 ## Fixed issues
 
-Each Windows 10 19H1 Insider Preview build can contain additional fixes for Windows Autopilot and related functionality.  The following issues should already be addressed:
+The following issues were fixed in Windows Insider 19H1 builds:
 - Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red "white glove" summary page.  This is fixed in build 10.0.18345.  (20355940)
 - Connectivity to the corporate network is presently required during the Hybrid AAD Join technician flow, even though it is only used to check that an Active Directory domain controller is accessible.  This is fixed in build 10.0.18345.  (20301592)
 - When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that white glove is not enabled.  This is fixed in Intune on March 8th, 2019.
