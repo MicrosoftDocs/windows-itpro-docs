@@ -98,7 +98,7 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 
 ![Add Store app](images\add-a-protected-store-app.png)
 
-To add multiple Store apps, click the elipsis **…**. 
+To add multiple Store apps, click the ellipsis **…**. 
 
 If you don't know the Store app publisher or product name, you can find them by following these steps.
 
@@ -187,7 +187,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
 </table>
 
-To add another Desktop app, click the elipsis **…**. After you’ve entered the info into the fields, click **OK**.
+To add another Desktop app, click the ellipsis **…**. After you’ve entered the info into the fields, click **OK**.
 
 ![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
  
