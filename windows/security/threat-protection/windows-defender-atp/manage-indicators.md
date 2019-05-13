@@ -62,7 +62,7 @@ On the top navigation you can:
 
 
 ## Manage indicators
-1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Indicators**.  
 
 2. Select the tab of the entity type you'd like to manage.  
 
