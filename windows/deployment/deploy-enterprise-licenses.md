@@ -19,7 +19,6 @@ ms.topic: article
 >[!IMPORTANT]
 >Licenses E3 and E5 brings windows 10 license enterprise with them, this tutorial is special for the use and implementation of these licenses in a on-premises Active Directory environment.
 
-
 This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
 >[!NOTE]
@@ -81,9 +80,6 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 >[!NOTE]
 >If you are implementing Azure AD, and have already an on-premises, you don't need to join the computers into Azure AD, since your main authentication method is your internal AD. In case, that you want to manage all your infrastructure on the cloud, then you can safely remote your domain controller and work with the join of the computers into the Azure AD, but you won't be able to apply fine control into the computers using GPO.
 >The whole idea of using Azure AD, is mostly when you don't have any on-premises servers, and you want and enterprise administration of devices worldwide.
-
-
-
 
 ## Preparing for deployment: reviewing requirements
 
@@ -223,7 +219,6 @@ Use the following figures to help you troubleshoot when users experience these c
 - [Figure 11](#subscription-not-active) (below) illustrates a device on which Windows 10 Pro is activated, but the Windows 10 Enterprise subscription is lapsed or removed.
 
 - [Figure 12](#win-10-not-activated-subscription-not-active) (below) illustrates a device on which Windows 10 Pro license is not activated and the Windows 10 Enterprise subscription is lapsed or removed.
-
 
 
 <span id="win-10-not-activated"/>
