@@ -49,56 +49,56 @@ To ensure that your Intune tenant has been flighted with the needed white glove 
 
  ![AAD](images/wg03.png)
 
-The tenant ID can be found under “Azure Active Directory” and then “Properties” (click the icon next to the ID to copy to the clipboard):
+The tenant ID can be found under **Azure Active Directory** and then **Properties**. Click the icon next to the ID to copy to the clipboard.:
 
  ![AAD](images/wg04.png)
 
-Note:  Please use a non-critical tenant for this evaluation process.  If you do not currently have a non-critical tenant, you can create a new Azure Active Directory tenant and then add an EMS trial license to it. 
+>[!NOTE]
+>Please use a non-critical tenant for this evaluation process.  If you do not currently have a non-critical tenant, you can create a new Azure Active Directory tenant and then add an EMS trial license to it. 
 
 Two features will be enabled as part of the flighting process:
 
-•	Support for Windows Autopilot “White Glove.”  This will enable devices performing “White Glove” processes to enroll in Intune, and will expose a new Autopilot profile setting that enables “White Glove” for any devices that have been assigned that profile.
-•	Support for tracking Intune Management Extensions activities (Win32 apps, PowerShell scripts) in the Enrollment Status Page (ESP).  This is needed to ensure that all Win32 apps are installed before the “White Glove” process completes.
+- Support for Windows Autopilot for white glove deployment  This will enable devices performing white glove deployment processes to enroll in Intune, and will expose a new Autopilot profile setting that enables white glove deployment for any devices that have been assigned that profile.
+- Support for tracking Intune Management Extensions activities (Win32 apps, PowerShell scripts) in the Enrollment Status Page (ESP).  This is needed to ensure that all Win32 apps are installed before the white glove deployment process completes.
 
-Once the flighting is complete, you will be able to enable Windows Autopilot “White Glove” in any Autopilot profile; all devices with that profile assigned will be able to leverage the “White Glove” process.
+Once the flighting is complete, you will be able to enable Windows Autopilot for white glove deployment in any Autopilot profile; all devices with that profile assigned will be able to leverage the "white glove" process.
 
-Note:  To see the “White Glove” Autopilot profile setting, use this URL to access the Intune portal:
-https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true
-This is a temporary requirement.
+>[!TIP]
+>To see the “White Glove” Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
 
  ![OOBE](images/wg05.png)
 
-The Windows Autopilot “White Glove” pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps that are targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  (Note that other user-targeted policies will not apply until the user signs into the device.)  To verify these behaviors, be sure to create appropriate apps and policies, targeted to devices and users.
+The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps that are targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  (Note that other user-targeted policies will not apply until the user signs into the device.)  To verify these behaviors, be sure to create appropriate apps and policies, targeted to devices and users.
 
 ## Scenarios
 
-Windows Autopilot “White Glove” supports two distinct scenarios:
+Windows Autopilot for white glove deployment supports two distinct scenarios:
 - User-driven deployments with Azure AD Join.  The device will be joined to an Azure AD tenant.
 - User-driven deployments with Hybrid Azure AD Join.  The device will be joined to an on-premises Active Directory domain, and separately registered with Azure AD.
 Each of these scenarios consists of two parts, a technician flow and a user flow.  At a high level, these parts are the same for Azure AD Join and Hybrid Azure AD join; differences are primarily seen by the end user in the authentication steps.
 
 ### Technican flow
 
-The first part of the Windows Autopilot “White Glove” process is designed to be carried out by a technician; this could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
+The first part of the Windows Autopilot for white glove deployment process is designed to be carried out by a technician; this could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
 Regardless of the scenario, the process to be performed by the technician is the same:
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, Insider Preview build 18342 or higher).
-- From the first OOBE screen (which could be a language selection or locale selection screen), do not click “Next.”  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the “Windows Autopilot provisioning” option and then click “Continue.”
+- From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
 
  ![Autopilot](images/wg05.png)
 
-- On the “Windows Autopilot Configuration” screen, information will be displayed about the device:
+- On the **Windows Autopilot Configuration** screen, information will be displayed about the device:
     - The Autopilot profile assigned to the device.
     - The organization name for the device.
     - The user assigned to the device (if there is one).
     - A QR code containing a unique identifier for the device, useful to look up the device in Intune to make any configuration changes needed (e.g. assigning a user, adding the device to any additional groups needed for app or policy targeting).
-- Validate the information displayed.  If any changes are needed, make these and then click “Refresh” to re-download the updated Autopilot profile details.
+- Validate the information displayed.  If any changes are needed, make these and then click **Refresh** to re-download the updated Autopilot profile details.
 
  ![Autopilot](images/wg06.png)
 
-- Click “Provision” to begin the provisioning process.
+- Click **Provision** to begin the provisioning process.
 If the pre-provisioning process completes successfully:
 - A green status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
-- Click “Reseal” to shut the device down.  At that point, the device can be shipped to the end user.
+- Click **Reseal** to shut the device down.  At that point, the device can be shipped to the end user.
 If the pre-provisioning process fails:
 - A red status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
 - Diagnostic logs can be gathered from the device, and then it can be reset to start the process over again.
@@ -117,25 +117,24 @@ If the pre-provisioning process completed successfully and the device was reseal
 ## Fixed issues
 
 Each Windows 10 19H1 Insider Preview build can contain additional fixes for Windows Autopilot and related functionality.  These issues should already be addressed:
-•	Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red “White Glove” summary page.  Fixed in build 10.0.18345.  (20355940)
+•	Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red "white glove" summary page.  Fixed in build 10.0.18345.  (20355940)
 •	Connectivity to the corporate network is presently required during the Hybrid AAD Join technician flow, even though it is only used to check that an Active Directory domain controller is accessible.  Fixed in build 10.0.18345.  (20301592)
-•	When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that White Glove is not enabled.  Fixed in Intune on March 8th, 2019.
-•	When editing the Autopilot profile to enable White Glove, the setting change is not saved properly.  Fixed in Intune on March 12th, 2019.
-
+•	When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that white glove is not enabled.  This is fixed in Intune on March 8th, 2019.
+•	When editing the Autopilot profile to enable white glove deployment, the setting change is not saved properly.  This is fixed in Intune on March 12th, 2019.
 
 ## Known issues
 
 ### All scenarios
 
-When installing Win32 apps via the Intune Management Extensions, the Enrollment Status Page may time out even though the apps are installed successfully.  In some cases, this may indicate that the detection rules for the app are not correct, but this may happen even with properly configured apps.  (Under investigation.)
+When installing Win32 apps via the Intune Management Extensions, the Enrollment Status Page may time out even though the apps are installed successfully.  In some cases, this may indicate that the detection rules for the app are not correct, but this may happen even with properly configured apps.  This  issue is currently under investigation.
 
 ### Hybrid Azure AD Join
 
-The process of TPM attestation, joining the device to Active Directory, and enrolling in Intune happens when the “Provision” button is clicked from the initial “Windows Autopilot Configuration” screen.  Additional status is being added.  (20212277)
+The process of TPM attestation, joining the device to Active Directory, and enrolling in Intune happens when the **Provision** button is clicked from the initial **Windows Autopilot Configuration** screen.  Additional status is being added.  (20212277)
 
 ### Azure AD Join
 
-There are currently no existing known issues specific to Azure AD Join.
+There are currently no known issues specific to Azure AD Join.
 
 ## Feedback
 
