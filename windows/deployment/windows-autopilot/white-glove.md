@@ -25,7 +25,7 @@ Windows Autopilot can also provide a "white glove" service enabling partners or 
 
  ![OEM](images/wg02.png)
 
-Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting the user-driven [Azure AD join](user-driven-aad) and [Hybrid Azure AD](user-driven-hybrid.md) join scenarios.
+Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting the user-driven [Azure AD join](user-driven-aad.md) and [Hybrid Azure AD](user-driven-hybrid.md) join scenarios.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ Two features will be enabled as part of the flighting process:
 Once the flighting is complete, you will be able to enable Windows Autopilot for white glove deployment in any Autopilot profile; all devices with that profile assigned will be able to leverage the "white glove" process.
 
 >[!TIP]
->To see the “White Glove” Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
+>To see the white glove deployment Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
 
  ![OOBE](images/wg05.png)
 
@@ -136,10 +136,10 @@ The process of TPM attestation, joining the device to Active Directory, and enro
 
 There are currently no known issues specific to Azure AD Join.
 
-## Feedback
+## Questions and comments
 
 Depending on your method of participation in the Windows Autopilot for white glove deployment process, your feedback mechanism may be different.
 
 - If you are participating in the Windows TAP program, please provide feedback via the **Windows 10 TAP** Yammer group.
 - If you are participating via MVP programs, please provide feedback via the MVP distribution list for your specialty.
-- For others, please provide feedback via the [Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n#activetab=pivot:overviewtab) or your specific Windows Autopilot team contact.
+- For others, please use the feedback links provided below or your specific Windows Autopilot team contact.
