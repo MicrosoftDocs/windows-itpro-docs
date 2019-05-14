@@ -14,15 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # MachineAction resource type
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-[!include[Prerelease information](prerelease.md)]
 
 Method|Return Type |Description
 :---|:---|:---
@@ -36,8 +33,9 @@ Method|Return Type |Description
 [Remove app restriction](unrestrict-code-execution.md) | [Machine Action](machineaction.md) | Remove application execution restriction.
 [Run antivirus scan](run-av-scan.md) | [Machine Action](machineaction.md) | Run an AV scan using Windows Defender (when applicable).
 [Offboard machine](offboard-machine-api.md)|[Machine Action](machineaction.md) | Offboard [machine](machine.md) from Microsoft Defender ATP.
+<br>
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 id | Guid | Identity of the [Machine Action](machineaction.md) entity.
@@ -49,4 +47,3 @@ machineId | String | Id of the machine on which the action was executed.
 creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.
 lastUpdateTimeUtc | DateTimeOffset | The last date and time when the action status was updated.
 relatedFileInfo | Class | Contains two Properties. 1) string 'fileIdentifier' 2) Enum 'fileIdentifierType' with the possible values: "Sha1" ,"Sha256" and "Md5".
-

@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/24/2018
 ---
 
 # Offboard machines from the Microsoft Defender ATP service
@@ -26,7 +25,6 @@ ms.date: 04/24/2018
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-offboardmachines-abovefoldlink)
@@ -44,4 +42,3 @@ Follow the corresponding instructions depending on your preferred deployment met
 
 ## Offboard non-Windows machines
   - [Offboard non-Windows machines](configure-endpoints-non-windows.md#offboard-non-windows-machines)
-

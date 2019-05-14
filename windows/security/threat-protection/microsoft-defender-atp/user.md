@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # User resource type
+
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Method|Return Type |Description
 :---|:---|:---
 [List User related alerts](get-user-related-alerts.md) | [alert](alerts.md) collection |  List all the alerts that are associated with a [user](user.md).
 [List User related machines](get-user-related-machines.md) | [machine](machine.md) collection | List all the machines that were logged on by a [user](user.md).
-
-

@@ -25,7 +25,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!TIP]
->This topic has been deprecated. See [Indicators](ti-indicator-windows-defender-advanced-threat-protection-new.md) for the updated content.
+>This topic has been deprecated. See [Indicators](ti-indicator.md) for the updated content.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
 

@@ -29,7 +29,10 @@ ms.date: 11/20/2018
 
 Learn about the minimum requirements and initial steps you need to take to get started with Microsoft Defender ATP.
 
-The following capabilities are available across multiple products that make up the Microsoft Defender ATP platform. 
+The following capabilities are available across multiple products that make up the Microsoft Defender ATP platform.
+
+**Threat & Vulnerability Management**<br>
+Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. This infrastructure correlates endpoint detection and response (EDR) insights with endpoint vulnerabilities real-time, thus reducing organizational vulnerability exposure and increasing threat resilience. 
 
 **Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
@@ -45,6 +48,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 **Secure score**<br>
 Microsoft Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+
+**Microsoft Threat Experts**<br>
+Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
 
 **Advanced hunting**<br>
 Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Microsoft Defender Security Center. 
