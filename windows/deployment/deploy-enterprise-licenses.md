@@ -13,7 +13,6 @@ ms.topic: article
 ---
 
 
-
 # Deploy Windows 10 Enterprise licenses
 
 >[!IMPORTANT]
