@@ -1262,6 +1262,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-experience.md#experience-showlockonusertile" id="experience-showlockonusertile">Experience/ShowLockOnUserTile</a>
+  </dd>
 </dl>
 
 ### ExploitGuard policies
@@ -4432,6 +4435,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
 -   [Experience/DoNotSyncBrowserSettings](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
 -   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
+-   [Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
 -   [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
