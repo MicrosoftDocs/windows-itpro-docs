@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/01/2019
+ms.date: 05/14/2019
 ---
 
 # Policy CSP - Experience
@@ -1629,8 +1629,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
-- false (default) - The lock option is not displayed in the User Tile menu.
-- true  - The lock option is displayed in the User Tile menu.
+- false - The lock option is not displayed in the User Tile menu.
+- true (default) - The lock option is displayed in the User Tile menu.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1664,4 +1664,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.
