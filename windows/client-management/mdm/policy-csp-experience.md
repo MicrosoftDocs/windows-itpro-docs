@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/01/2019
+ms.date: 05/14/2019
 ---
 
 # Policy CSP - Experience
@@ -95,6 +95,9 @@ ms.date: 05/01/2019
   </dd>
   <dd>
     <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
+  </dd>
+  <dd>
+    <a href="#experience-showlockonusertile">Experience/ShowLockOnUserTile</a>
   </dd>
 </dl>
 
@@ -1569,6 +1572,75 @@ Validation procedure:
 <!--/Validation-->
 <!--/Policy-->
 
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Shows or hides lock from the user tile menu.
+
+If you enable this policy setting, the lock option is shown in the User Tile menu.
+
+If you disable this policy setting, the lock option is never shown in the User Tile menu.
+
+If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Show lock in the user tile menu*
+-   GP name: *ShowLockOption*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *WindowsExplorer.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+- false - The lock option is not displayed in the User Tile menu.
+- true (default) - The lock option is displayed in the User Tile menu.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
 <!--/Policies-->
 
 <!--StartHoloLens-->
@@ -1592,4 +1664,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.
