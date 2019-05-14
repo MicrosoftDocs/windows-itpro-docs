@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot custom threat intelligence issues
+# Troubleshoot custom threat intelligence issues (Deprecated)
 
 **Applies to:**
 

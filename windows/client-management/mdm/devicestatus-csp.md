@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/26/2018
+ms.date: 04/30/2019
 ---
 
 # DeviceStatus CSP
@@ -157,6 +157,12 @@ Valid values:
 
 Supported operation is Get.
 
+If more than one antivirus provider is active, this node returns:
+-   1 – If every active antivirus provider has a valid signature status.
+-   0 – If any of the active antivirus providers has an invalid signature status.
+
+This node also returns 0 when no antivirus provider is active.
+
 <a href="" id="devicestatus-antivirus-status"></a>**DeviceStatus/Antivirus/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antivirus.
 
@@ -185,6 +191,12 @@ Valid values:
 -  2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
+
+If more than one antispyware provider is active, this node returns:
+-   1 – If every active antispyware provider has a valid signature status.
+-   0 – If any of the active antispyware providers has an invalid signature status.
+
+This node also returns 0 when no antispyware provider is active.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware.

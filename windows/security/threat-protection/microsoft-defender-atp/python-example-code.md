@@ -17,13 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Python code examples for the custom threat intelligence API
+# Python code examples for the custom threat intelligence API (Deprecated)
 
 **Applies to:**
-
-
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
 
 
 ## Before you begin

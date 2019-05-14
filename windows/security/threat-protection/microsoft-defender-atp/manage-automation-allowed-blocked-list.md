@@ -64,5 +64,5 @@ You can define the conditions for when entities are identified as malicious or s
 
 ## Related topics
 - [Manage automation file uploads](manage-automation-file-uploads.md)
-- [Manage allowed/blocked lists](manage-allowed-blocked-list.md)
+- [Manage indicators](manage-indicators.md)
 - [Manage automation folder exclusions](manage-automation-folder-exclusions.md)

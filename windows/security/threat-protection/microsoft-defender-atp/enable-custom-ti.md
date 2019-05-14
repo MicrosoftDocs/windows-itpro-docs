@@ -15,17 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
-# Enable the custom threat intelligence API in Microsoft Defender ATP
+# Enable the custom threat intelligence API in Microsoft Defender ATP (Deprecated)
 
 **Applies to:**
 
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
+>[!TIP]
+>This topic has been deprecated. See [Indicators](ti-indicator-windows-defender-advanced-threat-protection-new.md) for the updated content.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
 

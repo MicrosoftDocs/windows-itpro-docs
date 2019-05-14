@@ -277,7 +277,7 @@
 ######## [Stop and quarantine file](microsoft-defender-atp/stop-and-quarantine-file.md)
 ######## [Initiate investigation (preview)](microsoft-defender-atp/initiate-autoir-investigation.md)
 
-####### [Indicators (preview)](microsoft-defender-atp/ti-indicator.md)
+####### [Indicators](microsoft-defender-atp/ti-indicator.md)
 ######## [Submit Indicator](microsoft-defender-atp/post-ti-indicator.md)
 ######## [List Indicators](microsoft-defender-atp/get-ti-indicators-collection.md)
 ######## [Delete Indicator](microsoft-defender-atp/delete-ti-indicator-by-id.md)
@@ -322,14 +322,14 @@
 ###### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
  
 
-##### API for custom alerts
-###### [Enable the custom threat intelligence application](microsoft-defender-atp/enable-custom-ti.md)
-###### [Use the threat intelligence API to create custom alerts](microsoft-defender-atp/use-custom-ti.md)
-###### [Create custom threat intelligence alerts](microsoft-defender-atp/custom-ti-api.md)
-###### [PowerShell code examples](microsoft-defender-atp/powershell-example-code.md)
-###### [Python code examples](microsoft-defender-atp/python-example-code.md)
-###### [Experiment with custom threat intelligence alerts](microsoft-defender-atp/experiment-custom-ti.md)
-###### [Troubleshoot custom threat intelligence issues](microsoft-defender-atp/troubleshoot-custom-ti.md)
+##### API for custom alerts (Deprecated)
+###### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
+###### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
+###### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
+###### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
+###### [Python code examples (Deprecated)](microsoft-defender-atp/python-example-code.md)
+###### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
+###### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
  
 
 ##### [Pull alerts to your SIEM tools](microsoft-defender-atp/configure-siem.md)
@@ -347,7 +347,7 @@
 ###### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
 ##### Interoperability
-###### [Partner applications](windows-defender-atp/partner-applications.md)
+###### [Partner applications](microsoft-defender-atp/partner-applications.md)
 
 
 ##### Role-based access control
@@ -388,7 +388,7 @@
 ######## [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
   
 ##### APIs
-###### [Enable Threat intel](microsoft-defender-atp/enable-custom-ti.md)
+###### [Enable Threat intel (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ###### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
   
 #####Rules

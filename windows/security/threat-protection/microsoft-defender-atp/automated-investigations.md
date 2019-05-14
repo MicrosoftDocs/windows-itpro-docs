@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 12/04/2018
 ---
 
 # Overview of Automated investigations
@@ -34,8 +33,10 @@ The Automated investigations list shows all the investigations that have been in
 Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a supported operating system for Automated investigation then an Automated investigation can start.
 
 >[!NOTE]
->Currently, Automated investigation only supports Windows 10, version 1803 or later.
->Some investigation playbooks, like memory investigations, require Windows 10, version 1809 or later.
+>Currently, Automated investigation only supports the following OS versions:
+>- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)) or later
+>- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
+>- Later versions of Windows 10
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
