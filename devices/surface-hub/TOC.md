@@ -1,12 +1,40 @@
 # [Microsoft Surface Hub](index.md)
 
 # Surface Hub 2S
+
 ## Overview
+### What's new in Surface Hub 2S
+
 ## Plan
+### Surface Hub Site Readiness Guide 
+### Unpacking Surface Hub 2S
+### Room considerations for Surface Hub 2S
+### Physically installing and mounting Surface Hub 2S
+### Connecting to Surface Hub 2S
+### Prepare your environment for Microsoft Surface Hub 2S
+
 ## Deploy
+### Create Surface Hub 2S device account 
+### Deploying Surface Hub 2S 
+### Deploying Surface Hub 2S with PowerShell
+### Configure Skype for Business on Surface Hub 2S
+### Configure Microsoft Teams on Surface Hub 2S
+
 ## Manage
+### Managing Surface Hub 2S with Microsoft Intune
+### Managing Surface Hub 2S with Surface app
+### Servicing and updating for Surface Hub 2S
+### Updating pen firmware for Surface Hub 2S
+### Managing settings on Surface Hub 2S via the on screen display
+
 ## Secure
+### Conditional access for Surface Hub 2S
+### Securing Surface Hub 2S with SEMM 
+### Securing Surface Hub 2S with UEFI 
+
 ## Support
+### Recover and reset Surface Hub 2S
+### Change history
 
 # Surface Hub
 ## Overview
