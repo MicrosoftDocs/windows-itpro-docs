@@ -80,7 +80,7 @@ The following services are required:
 
 Update the server using Windows Update until the server has no required or optional updates as the Azure MFA Server software may require one or more of these updates for the installation and software to correctly work.  These procedures install additional components that may need to be updated.
 
-#### Configure the IIS Server’s Certificate
+#### Configure the IIS Server Certificate
 
 The TLS protocol protects all the communication to and from the MFA server. To enable this protection, you must configure the default web site to use the previously enrolled server authentication certificate.
 
@@ -171,9 +171,9 @@ To do this, please follow the instructions mentioned in the previous [Install th
 
 Update the server using Windows Update until the server has no required or optional updates as the Azure MFA Server software may require one or more of these updates for the installation and software to correctly work.  These procedures install additional components that may need to be updated.
 
-#### Configure the IIS Server’s Certificate
+#### Set the IIS Server Certificate
 
-To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server’s-certificate) section.
+To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server-certificate) section.
 
 #### Create WebServices SDK user account
 

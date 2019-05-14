@@ -1398,8 +1398,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
-<li>Authentication/EnableFastFirstSignIn</li>
-<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/EnableFastFirstSignIn (Preview mode only)</li>
+<li>Authentication/EnableWebSignIn (Preview mode only)</li>
 <li>Authentication/PreferredAadTenantDomainName</li>
 <li>Browser/AllowFullScreenMode</li>
 <li>Browser/AllowPrelaunch</li>
@@ -1943,8 +1943,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
-<li>Authentication/EnableFastFirstSignIn</li>
-<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/EnableFastFirstSignIn (Preview mode only)</li>
+<li>Authentication/EnableWebSignIn (Preview mode only)</li>
 <li>Authentication/PreferredAadTenantDomainName</li>
 <li>Defender/CheckForSignaturesBeforeRunningScan</li>
 <li>Defender/DisableCatchupFullScan </li>
