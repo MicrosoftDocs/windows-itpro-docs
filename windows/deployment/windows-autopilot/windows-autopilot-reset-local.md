@@ -25,8 +25,8 @@ IT admins can perform a local Windows Autopilot Reset to quickly remove personal
 
 To enable local Autopilot Reset in Windows 10:
 
-1. [Enable the policy for the feature](#enable-local-autopilot-reset)
-2. [Trigger a reset for each device](#trigger-local-autopilot-reset)
+1. [Enable the policy for the feature](#enable-local-windows-autopilot-reset)
+2. [Trigger a reset for each device](#trigger-local-windows-autopilot-reset)
 
 ## Enable local Windows Autopilot Reset
 
