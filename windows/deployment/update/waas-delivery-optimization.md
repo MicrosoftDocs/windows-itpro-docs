@@ -5,9 +5,9 @@ keywords: oms, operations management suite, wdav, updates, downloads, log analyt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -110,8 +110,40 @@ For the payloads (optional):
 
 **Does Delivery Optimization use multicast?**: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
 
-[//]: # (**What data does Delivery Optimization send to the service?**)
-[//]: # (??????????????? I'm not sure we can avoid sharing this, per GDPR guidelines)
+## Troubleshooting
+
+This section summarizes common problems and some solutions to try.
+
+### If you don't see any bytes from peers
+
+If you don’t see any bytes coming from peers the cause might be one of the following issues:
+
+- Clients aren’t able to reach the Delivery Optimization cloud services.
+- The cloud service doesn’t see other peers on the network. 
+- Clients aren’t able to connect to peers that are offered back from the cloud service.
+
+
+### Clients aren't able to reach the Delivery Optimization cloud services.
+
+To fix this issue, try the following steps:
+
+1. Start a download of an app that is larger than 50 MB from the Store (for example Candy Crush Saga).
+2. Run `Get-DeliveryOptimizationStatus` from an elevated window and share the output (by setting the `DownloadMode` field to **1**).
+
+
+### The cloud service doesn't see other peers on the network.
+
+If you suspect this is the problem, try these steps:
+
+1. Download the same app on another device on the same network.
+2. Run `Get-DeliveryOptimizationPerfSnap` from an elevated window (the `NumberOfPeers` field should be non-zero).
+
+### Clients aren't able to connect to peers offered by the cloud service
+
+If you suspect this is the problem, un a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+
+1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 
 
