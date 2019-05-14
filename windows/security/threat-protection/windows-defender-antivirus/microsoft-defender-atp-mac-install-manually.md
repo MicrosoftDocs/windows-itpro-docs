@@ -1,37 +1,34 @@
 ---
-title: Installing Microsoft Defender ATP for Mac with JAMF
-description: Describes how to install Microsoft Defender ATP for Mac, using JAMF.
+title: Installing Microsoft Defender ATP for Mac manually
+description: Describes how to install Microsoft Defender ATP for Mac manually, from the command line.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
-search.appverid: #met150
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: #conceptual
+ms.topic: conceptual
 ---
 
 # Manual deployment
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
- 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic describes how to install Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
-Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+>[!IMPORTANT]
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
@@ -111,14 +108,10 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
-## Test alert
+## Logging installation issues
 
-Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
-    
-    ```bash
-    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
-    ```
+See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
-You will get a "Threats found" notification, you can inspect threat's details in the Protection history. 
+## Uninstallation
 
-Soon after that you'll get an alert in the ATP Portal.
+See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.

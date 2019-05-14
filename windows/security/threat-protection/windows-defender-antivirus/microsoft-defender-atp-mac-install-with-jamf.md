@@ -3,35 +3,32 @@ title: Installing Microsoft Defender ATP for Mac with JAMF
 description: Describes how to install Microsoft Defender ATP for Mac, using JAMF.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
-search.appverid: #met150
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: #conceptual
+ms.topic: conceptual
 ---
 
 # JAMF-based deployment
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
- 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic describes how to install Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
-Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+>[!IMPORTANT]
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page]((microsoft-defender-atp.md)) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
@@ -48,7 +45,7 @@ Download the installation and onboarding packages from Windows Defender Security
 
 5. From a command prompt, verify that you have the two files.
     Extract the contents of the .zip files:
-  
+
     ```bash
     mavel-macmini:Downloads test$ ls -l
     total 721160
@@ -165,14 +162,14 @@ After the policy is applied, you'll see the Microsoft Defender icon in the macOS
 You can monitor policy installation on a machine by following the JAMF's log file:
 
 ```bash
-mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
-Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
-Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
-Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
-Thu Feb 21 11:17:02 mavel-mojave jamf[8051]: Installing Microsoft Defender...
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Successfully installed Microsoft Defender.
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Checking for patches...
-Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
+    mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
+    Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
+    Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
+    Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
+    Thu Feb 21 11:17:02 mavel-mojave jamf[8051]: Installing Microsoft Defender...
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Successfully installed Microsoft Defender.
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: Checking for patches...
+    Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
 ```
 
 You can also check the onboarding status:
@@ -202,22 +199,10 @@ This script returns:
 - 1 if the machine is not onboarded
 - 3 if the connection to the daemon cannot be established (daemon is not running)
 
-## Test alert
-
-Run in Terminal the following command. It will download [a harmless file](https://en.wikipedia.org/wiki/EICAR_test_file) which will trigger a test detection.
-    
-    ```bash
-    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
-    ```
-
-You will get a "Threats found" notification, you can inspect threat's details in the Protection history. 
-
-Soon after that you'll get an alert in the ATP Portal.
-
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-mac-resources#Logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources#Uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.
+See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.

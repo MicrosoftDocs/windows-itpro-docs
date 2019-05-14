@@ -20,10 +20,9 @@ ms.topic: conceptual
 # Microsoft Defender ATP for Mac
 
 >[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic describes how to install and use Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
-Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+This topic describes how to install and use Microsoft Defender ATP for Mac.
 
 ## What’s new in the public preview
 
@@ -44,10 +43,10 @@ In general you'll need to take the following steps:
 
 - Ensure you have a Windows Defender ATP subscription and have access to the Windows Defender ATP Portal
 - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune)
-  - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf)
+  - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
+  - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
   - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - [Manual deployment](microsoft-defender-atp-mac-install-manually)
+  - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
 
 ### Prerequisites
 
@@ -86,4 +85,4 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 
 ## Resources
 
-For further information on logging, uninstalling, the ATP portal, or known issues, see our [Resources](microsoft-defender-atp-mac-resources) page.
+For additional information about logging, uninstalling, or known issues, see our [Resources](microsoft-defender-atp-mac-resources.md) page.

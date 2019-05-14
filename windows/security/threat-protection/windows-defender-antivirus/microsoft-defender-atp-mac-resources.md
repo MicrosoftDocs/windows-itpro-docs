@@ -1,83 +1,63 @@
 ---
 title: Microsoft Defender ATP for Mac Resources
-description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, and known issues with the product.
+description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
-search.appverid: #met150
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: #conceptual
+ms.topic: conceptual
 ---
 
 # Resources
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](https://go.microsoft.com/fwlink/p/?linkid=???To-Add???)
- 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic describes how to use, and details about, Microsoft Defender ATP for Mac. It supports the preview program and the information here is subject to change.
-Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program.
+>[!IMPORTANT]
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Collecting diagnostic information
 
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
 
-1) Increase logging level:
+1. Increase logging level:
 
 ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level verbose
+   mavel-mojave:~ testuser$ mdatp log-level --verbose
+   Creating connection to daemon
+   Connection established
    Operation succeeded
 ```
 
-2) Reproduce the problem
+2. Reproduce the problem
 
-3) Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic --create
+   mavel-mojave:~ testuser$ mdatp --diagnostic
+   Creating connection to daemon
+   Connection established
    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
    ```
 
-4) Restore logging level:
+4. Restore logging level:
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level info
+   mavel-mojave:~ testuser$ mdatp log-level --info
+   Creating connection to daemon
+   Connection established
    Operation succeeded
    ```
-
-## Managing from the command line
-
-Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
-
-|Group        |Scenario                                   |Command                                                                |
-|-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp --config rtp [true/false]`                                      |
-|Configuration|Turn on/off cloud protection               |`mdatp --config cloud [true/false]`                                    |
-|Configuration|Turn on/off product diagnostics            |`mdatp --config diagnostic [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp --config sample-submission [true/false]`                        |
-|Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
-|Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
-|Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Health       |Prints a single health metric              |`mdatp --health [metric]`                                              |
-|Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
-|Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
-|Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a definition update                |`mdatp --definition-update`                                            |
 
 ## Logging installation issues
 
@@ -126,15 +106,39 @@ If you are running JAMF, your policy should contain a single script:
 
 Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
 
-## What to expect in the ATP portal
+## Configuring from the command line
 
-- AV alerts:
+Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
+
+|Group        |Scenario                                   |Command                                                                |
+|-------------|-------------------------------------------|-----------------------------------------------------------------------|
+|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
+|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
+|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
+|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
+|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
+|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
+|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Health       |Check the product's health                 |`mdatp --health`                                                       |
+|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
+|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
+|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
+|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
+
+## Microsoft Defender ATP portal information
+
+In the Microsoft Defender ATP portal, you'll see two categories of information:
+
+- AV alerts, including:
   - Severity
   - Scan type
   - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
   - File information (name, path, size, and hash)
   - Threat information (name, type, and state)
-- Device information:
+- Device information, including:
   - Machine identifier
   - Tenant identifier
   - App version
