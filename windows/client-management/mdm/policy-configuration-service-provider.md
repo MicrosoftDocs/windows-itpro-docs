@@ -2414,6 +2414,14 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-power.md#power-displayofftimeoutpluggedin" id="power-displayofftimeoutpluggedin">Power/DisplayOffTimeoutPluggedIn</a>
   </dd>
   <dd>
+    <a href="./policy-csp-power.md#power-energysaverbatterythresholdonbattery"
+    id="power-energysaverbatterythresholdonbattery">Power/EnergySaverBatteryThresholdOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-energysaverbatterythresholdpluggedin"
+    id="power-energysaverbatterythresholdpluggedin">Power/EnergySaverBatteryThresholdPluggedIn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-power.md#power-hibernatetimeoutonbattery" id="power-hibernatetimeoutonbattery">Power/HibernateTimeoutOnBattery</a>
   </dd>
   <dd>
@@ -2426,10 +2434,50 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-power.md#power-requirepasswordwhencomputerwakespluggedin" id="power-requirepasswordwhencomputerwakespluggedin">Power/RequirePasswordWhenComputerWakesPluggedIn</a>
   </dd>
   <dd>
+    <a href="./policy-csp-power.md#power-selectlidcloseactiononbattery"
+    id="power-selectlidcloseactiononbattery">Power/SelectLidCloseActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectlidcloseactionpluggedin"
+    id="power-selectlidcloseactionpluggedin">Power/SelectLidCloseActionPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectpowerbuttonactiononbattery"
+    id="power-selectpowerbuttonactiononbattery">Power/SelectPowerButtonActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectpowerbuttonactionpluggedin"
+    id="power-selectpowerbuttonactionpluggedin">Power/SelectPowerButtonActionPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectsleepbuttonactiononbattery"
+    id="power-selectsleepbuttonactiononbattery">Power/SelectSleepButtonActionOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-selectsleepbuttonactionpluggedin"
+    id="power-selectsleepbuttonactionpluggedin">Power/SelectSleepButtonActionPluggedIn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-power.md#power-standbytimeoutonbattery" id="power-standbytimeoutonbattery">Power/StandbyTimeoutOnBattery</a>
   </dd>
   <dd>
     <a href="./policy-csp-power.md#power-standbytimeoutpluggedin" id="power-standbytimeoutpluggedin">Power/StandbyTimeoutPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-turnoffhybridsleeponbattery"
+    id="power-turnoffhybridsleeponbattery">Power/TurnOffHybridSleepOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-turnoffhybridsleeppluggedin"
+    id="power-turnoffhybridsleeppluggedin">Power/TurnOffHybridSleepPluggedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-unattendedsleeptimeoutonbattery"
+    id="power-unattendedsleeptimeoutonbattery">Power/UnattendedSleepTimeoutOnBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-power.md#power-unattendedsleeptimeoutpluggedin"
+    id="power-unattendedsleeptimeoutpluggedin">Power/UnattendedSleepTimeoutPluggedIn</a>
   </dd>
 </dl>
 
@@ -3337,7 +3385,22 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-autorestartrequirednotificationdismissal" id="update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-automaticmaintenancewakeup" id="update-automaticmaintenancewakeup">Update/AutomaticMaintenanceWakeUp</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-branchreadinesslevel" id="update-branchreadinesslevel">Update/BranchReadinessLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlineforfeatureupdates" id="update-configuredeadlineforfeatureupdates">Update/ConfigureDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlineforqualityupdates" id="update-configuredeadlineforqualityupdates">Update/ConfigureDeadlineForQualityUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinegraceperiod" id="update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinenoautoreboot" id="update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-configurefeatureupdateuninstallperiod" id="update-configurefeatureupdateuninstallperiod">Update/ConfigureFeatureUpdateUninstallPeriod</a>
@@ -4706,12 +4769,24 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Power/AllowStandbyWhenSleepingPluggedIn](./policy-csp-power.md#power-allowstandbywhensleepingpluggedin)
 -   [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
 -   [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
+-   [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery)
+-   [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin)
 -   [Power/HibernateTimeoutOnBattery](./policy-csp-power.md#power-hibernatetimeoutonbattery)
 -   [Power/HibernateTimeoutPluggedIn](./policy-csp-power.md#power-hibernatetimeoutpluggedin)
 -   [Power/RequirePasswordWhenComputerWakesOnBattery](./policy-csp-power.md#power-requirepasswordwhencomputerwakesonbattery)
 -   [Power/RequirePasswordWhenComputerWakesPluggedIn](./policy-csp-power.md#power-requirepasswordwhencomputerwakespluggedin)
+-   [Power/SelectLidCloseActionOnBattery](./policy-csp-power.md#power-selectlidcloseactiononbattery)
+-   [Power/SelectLidCloseActionPluggedIn](./policy-csp-power.md#power-selectlidcloseactionpluggedin)
+-   [Power/SelectPowerButtonActionOnBattery](./policy-csp-power.md#power-selectpowerbuttonactiononbattery)
+-   [Power/SelectPowerButtonActionPluggedIn](./policy-csp-power.md#power-selectpowerbuttonactionpluggedin)
+-   [Power/SelectSleepButtonActionOnBattery](./policy-csp-power.md#power-selectsleepbuttonactiononbattery)
+-   [Power/SelectSleepButtonActionPluggedIn](./policy-csp-power.md#power-selectsleepbuttonactionpluggedin)
 -   [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
 -   [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
+-   [Power/TurnOffHybridSleepOnBattery](./policy-csp-power.md#power-turnoffhybridsleeponbattery)
+-   [Power/TurnOffHybridSleepPluggedIn](./policy-csp-power.md#power-turnoffhybridsleeppluggedin)
+-   [Power/UnattendedSleepTimeoutOnBattery](./policy-csp-power.md#power-unattendedsleeptimeoutonbattery)
+-   [Power/UnattendedSleepTimeoutPluggedIn](./policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)
 -   [Printers/PointAndPrintRestrictions](./policy-csp-printers.md#printers-pointandprintrestrictions)
 -   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions-user)
 -   [Printers/PublishPrinters](./policy-csp-printers.md#printers-publishprinters)
@@ -4888,7 +4963,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates)
 -   [Update/AutoRestartNotificationSchedule](./policy-csp-update.md#update-autorestartnotificationschedule)
 -   [Update/AutoRestartRequiredNotificationDismissal](./policy-csp-update.md#update-autorestartrequirednotificationdismissal)
+-   [Update/AutomaticMaintenanceWakeUp](./policy-csp-update.md#update-automaticmaintenancewakeup)
 -   [Update/BranchReadinessLevel](./policy-csp-update.md#update-branchreadinesslevel)
+-   [Update/ConfigureDeadlineForFeatureUpdates](./policy-csp-update.md#update-configuredeadlineforfeatureupdates)
+-   [Update/ConfigureDeadlineForQualityUpdates](./policy-csp-update.md#update-configuredeadlineforqualityupdates)
+-   [Update/ConfigureDeadlineGracePeriod](./policy-csp-update.md#update-configuredeadlinegraceperiod)
+-   [Update/ConfigureDeadlineNoAutoReboot](./policy-csp-update.md#update-configuredeadlinenoautoreboot)
 -   [Update/DeferFeatureUpdatesPeriodInDays](./policy-csp-update.md#update-deferfeatureupdatesperiodindays)
 -   [Update/DeferQualityUpdatesPeriodInDays](./policy-csp-update.md#update-deferqualityupdatesperiodindays)
 -   [Update/DeferUpdatePeriod](./policy-csp-update.md#update-deferupdateperiod)
@@ -5034,6 +5114,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [System/AllowTelemetry](#system-allowtelemetry)
 - [Update/AllowAutoUpdate](#update-allowautoupdate)  
 - [Update/AllowUpdateService](#update-allowupdateservice)  
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)  
@@ -5081,6 +5165,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [System/AllowLocation](#system-allowlocation)
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)  
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
@@ -5161,11 +5249,25 @@ The following diagram shows the Policy configuration service provider in tree fo
 - [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 - [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
 - [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 - [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
 - [Wifi/WLANScanMode](#wifi-wlanscanmode)
 <!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
+
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+
+<!--EndIoTCoreEnterprise-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
