@@ -99,7 +99,7 @@ You may also see CLOSE_WAIT state connections in the same output, however CLOSE_
 >[!Note]
 >Having huge connections in TIME_WAIT state does not always indicate that the server is currently out of ports unless the first two points are verified. Having lot of TIME_WAIT connections does indicate that the process is creating lot of TCP connections and may eventually lead to port exhaustion.
 >
->Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports. Until 2016/10, netstat was inaccurate. Fixes for netstat were backported to 2012 R2.
+>Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports. Until 2016/10, netstat was inaccurate. Fixes for netstat were backported to 2012 R2. Network reporting tools, such as Netstat and PowerShell-based Get-NetTcpConnection don't report Transport Control Protocol (TCP) or User Datagram Protocol (UDP) port usage correctly since Windows Vista because some new TCP/IP features are introduced. This update brings some changes to Netstat.exe and Get-NetTcpConnection so that they can correctly report the TCP or UDP port usage in Windows Server 2012 R2.
  
 4.	Open a command prompt in admin mode and run the below command
 
