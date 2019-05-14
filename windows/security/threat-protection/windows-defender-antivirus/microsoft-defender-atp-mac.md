@@ -71,13 +71,14 @@ The following table lists the services and their associated URLs that your netwo
 
 | Service        | Description                          | URL                                                                  |
 | -------------- |:------------------------------------:| --------------------------------------------------------------------:|
-| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
+| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com`, `https://cdn.x.cp.wd.microsoft.com` |
 
-To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://wu-cdn.x.cp.wd.microsoft.com/` in a browser, or run the following command in Terminal:
+To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://cdn.x.cp.wd.microsoft.com/ping` in a browser, or run the following command in Terminal:
 
 ```bash
-    mavel-mojave:~ testuser$ curl 'https://x.cp.wd.microsoft.com/api/report'
-    OK
+    mavel-mojave:~ testuser$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+    OK https://x.cp.wd.microsoft.com/api/report
+    OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
 
 We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines.
