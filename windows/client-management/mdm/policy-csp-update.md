@@ -1188,12 +1188,6 @@ ADMX Info:
 Added in Windows 10, version 1903. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
 <!--/Description-->
 
-<!--SupportedValues-->
-Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required quality update.
-
-Default value is 7.
-<!--/SupportedValues-->
-
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
@@ -1203,7 +1197,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required quality update.
 
+Default value is 7.
+<!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
@@ -1253,12 +1251,6 @@ ADMX Info:
 Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
 <!--/Description-->
 
-<!--SupportedValues-->
-Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
-
-Default value is 2.
-<!--/SupportedValues-->
-
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
@@ -1268,7 +1260,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
 
+Default value is 2.
+<!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
@@ -1320,12 +1316,6 @@ Added in Windows 10, version 1903. If enabled (when used with [Update/ConfigureD
 When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
 <!--/Description-->
 
-<!--SupportedValues-->
-Supported values:  
--   1 - Enabled
--   0 (default) - Disabled
-<!--/SupportedValues-->
-
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
@@ -1335,7 +1325,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-
+<!--SupportedValues-->
+Supported values:  
+-   1 - Enabled
+-   0 (default) - Disabled
+<!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
