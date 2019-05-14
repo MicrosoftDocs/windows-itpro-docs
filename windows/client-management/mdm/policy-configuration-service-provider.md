@@ -364,10 +364,10 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-authentication.md#authentication-allowsecondaryauthenticationdevice" id="authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
   <dd>
-    <a href="./policy-csp-authentication.md#authentication-enablefastfirstsignin" id="authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
+    <a href="./policy-csp-authentication.md#authentication-enablefastfirstsignin" id="authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a> (Preview mode only)
   </dd>
   <dd>
-    <a href="./policy-csp-authentication.md#authentication-enablewebsignin" id="authentication-enablewebsignin">Authentication/EnableWebSignIn</a>
+    <a href="./policy-csp-authentication.md#authentication-enablewebsignin" id="authentication-enablewebsignin">Authentication/EnableWebSignIn</a> (Preview mode only)
   </dd>
   <dd>
     <a href="./policy-csp-authentication.md#authentication-preferredaadtenantdomainname" id="authentication-preferredaadtenantdomainname">Authentication/PreferredAadTenantDomainName</a>
