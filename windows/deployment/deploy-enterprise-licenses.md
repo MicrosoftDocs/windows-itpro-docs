@@ -229,7 +229,6 @@ Use the following figures to help you troubleshoot when users experience these c
 **Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings**
 
 
-
 <span id="win-10-not-activated-subscription-not-active"/>
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" />
 **Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings**
