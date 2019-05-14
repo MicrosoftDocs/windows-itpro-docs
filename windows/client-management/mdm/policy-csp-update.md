@@ -995,12 +995,6 @@ If you enable this policy setting, Automatic Maintenance attempts to set OS wake
 If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
 <!--/Description-->
 
-<!--SupportedValues-->
-Supported values:  
--   true - Enable
--   false - Disable (Default)
-<!--/SupportedValues-->
-
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Automatic Maintenance WakeUp Policy*
@@ -1010,7 +1004,11 @@ ADMX Info:
 -   GP ADMX file name: *msched.admx*
 
 <!--/ADMXMapped-->
-
+<!--SupportedValues-->
+Supported values:  
+-   true - Enable
+-   false - Disable (Default)
+<!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
