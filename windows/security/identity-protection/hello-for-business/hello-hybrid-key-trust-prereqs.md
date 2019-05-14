@@ -85,7 +85,7 @@ Organizations using older directory synchronization technology, such as DirSync 
 <br>
 
 ## Federation with Azure ##
-You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
+You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) beginning with Windows Server 2012 R2. 
 
 ### Section Review ###
 > [!div class="checklist"]
@@ -97,7 +97,7 @@ You can deploy Windows Hello for Business key trust in non-federated and federat
 ## Multifactor Authentication ##
 Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure’s Multi-factor Authentication service or they can use multi-factor authentication provides by Windows Server 2012 R2 or later Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multi-factor authentication into AD FS.
+Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication (MFA) service or they can use multifactor authentication provided by AD FS beginning with Windows Server 2012 R2, which includes an adapter model that enables third parties to integrate their MFA into AD FS. The MFA enabled by an Office 365 license is sufficient for Azure AD.
 
 ### Section Review 
 > [!div class="checklist"]
