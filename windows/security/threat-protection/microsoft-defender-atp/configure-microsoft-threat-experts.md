@@ -126,7 +126,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 **Threat intelligence details**
 
 - This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you please send me a link?
-- I recently saw a [social media reference e.g. Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Windows Defender ATP provides against this threat actor?
+- I recently saw a [social media reference e.g. Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Microsoft Defender ATP provides against this threat actor?
 
 **Microsoft Threat Experts’ alert communications**
 

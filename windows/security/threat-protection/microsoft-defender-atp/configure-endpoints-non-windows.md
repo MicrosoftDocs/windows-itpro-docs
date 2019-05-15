@@ -38,7 +38,7 @@ You'll need to know the exact Linux distros and macOS versions that are compatib
 You'll need to take the following steps to onboard non-Windows machines:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Windows Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac).
+   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac).
    - For other non-Windows devices choose **Onboard non-Windows machines through third-party integration**.   
        
      1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
@@ -54,7 +54,7 @@ You'll need to take the following steps to onboard non-Windows machines:
 
 ## Offboard non-Windows machines
 
-1. Follow the third-party's documentation to disconnect the third-party solution from Windows Defender ATP.
+1. Follow the third-party's documentation to disconnect the third-party solution from Microsoft Defender ATP.
 
 2. Remove permissions for the third-party solution in your Azure AD tenant.
    1. Sign in to the [Azure portal](https://portal.azure.com).

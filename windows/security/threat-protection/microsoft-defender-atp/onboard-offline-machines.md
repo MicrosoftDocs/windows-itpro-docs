@@ -1,6 +1,6 @@
 ---
-title: Onboard machines without Internet access to Windows Defender ATP
-description: Onboard machines without Internet access so that they can send sensor data to the Windows Defender ATP sensor
+title: Onboard machines without Internet access to Microsoft Defender ATP
+description: Onboard machines without Internet access so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,10 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard machines without Internet access to Windows Defender ATP 
+# Onboard machines without Internet access to Microsoft Defender ATP 
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Windows Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 To onboard machines without Internet access, you'll need to take the following general steps:
 
@@ -47,6 +47,6 @@ To onboard machines without Internet access, you'll need to take the following g
 
     - Azure Security Center (ASC)
       - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Threat Detection \> Allow Windows Defender ATP to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [Threat Detection \> Allow Microsoft Defender ATP to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
         For more information, see [Working with security policies](https://docs.microsoft.com/azure/security-center/tutorial-security-policy).

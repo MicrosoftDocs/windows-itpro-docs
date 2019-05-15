@@ -28,7 +28,7 @@ Get MachineAction collection API supports [OData V4 queries](https://www.odata.o
 
 The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type", "Requestor" and "CreationDateTimeUtc".
 
-See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
+See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)

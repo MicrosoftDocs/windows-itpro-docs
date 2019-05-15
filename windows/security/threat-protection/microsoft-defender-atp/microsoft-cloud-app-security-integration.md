@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.date: 10/18/2018
 ---
 
-# Microsoft Cloud App Security in Windows Defender ATP overview
+# Microsoft Cloud App Security in Microsoft Defender ATP overview
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
