@@ -1550,7 +1550,9 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 ### <a href="" id="bkmk-defender"></a>24. Windows Defender
 
-You can disconnect from the Microsoft Antimalware Protection Service.
+You can disconnect from the Microsoft Antimalware Protection Service. 
+
+On Windows 10 1903 Client operating systems and newer search on "Tamper Protection" from the Windows search button next to the Start button on the desktop commmand bar.  Scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, go to Windows Security Settings -> Virus & threat protection, click on Manage settings and then scroll down to the Tamper Protection toggle and set it to **Off**. 
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
 
