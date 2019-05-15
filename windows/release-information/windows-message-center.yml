@@ -50,6 +50,13 @@ sections:
     text: "
       <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
       
+      <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376' target='_blank'><b>Reminder: Windows 10  update servicing cadence</b></a><br><div>This month we received questions about the cadence of updates we released in April and May 2019. Here's a quick recap of our releases and servicing cadence: <br>
+ <ul>
+<li>	April 9, 2019 was the regular Update Tuesday release for all versions of Windows.</li> 
+<li>	May 1, 2019 was an \"optional,\" out of band non-security update (OOB) for Windows 10, version 1809. It was released to Microsoft Catalog and WSUS, providing a critical fix for our OEM partners. </li>
+<li>	May 3, 2019 was the \"optional\" Windows 10, version 1809 \"C\" release for April. This update contained important <a href='https://support.microsoft.com/help/4470918/updates-for-may-2019-japan-era-change' target='_blank'>Japanese era</a> packages for commercial customers to preview. It was released later than expected and mistakenly targeted as \"required\" (instead of \"optional\") for consumers, which pushed the update out to customers and required a reboot. Within 24 hours of receiving customer reports, we corrected the targeting logic and mitigated the issue.</li>
+ </ul>
+ For more information about the Windows 10  update servicing cadence, please see the <a href='https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376' target='_blank'>Window IT Pro blog</a>.</div></td><td>May 10, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><a href = 'https://support.microsoft.com/help/4493730/servicing-stack-update-for-windows-server-2008-sp2' target='_blank'><b>Take action: Install servicing stack update for Windows Server 2008 SP2 for SHA-2 code sign support</b></a><br>A standalone update, KB4493730, that introduce SHA-2 code sign support for the servicing stack (SSU) was released today as a security update.</td><td>April 19, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'><b>The benefits of Windows 10 Dynamic Update</b></a><br><div>Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. </div><br>
 

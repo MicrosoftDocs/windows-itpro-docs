@@ -28,7 +28,7 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Azure Active Directory](#azure-active-directory)
-* [Multi-factor Authentication Services](#multi-factor-authentication-services)
+* [Multifactor Authentication Services](#multifactor-authentication-services)
 
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
