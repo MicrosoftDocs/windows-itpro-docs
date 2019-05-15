@@ -12,7 +12,7 @@ description: "Get started with Microsoft Surface Hub."
 ---
 # Get started with Surface Hub
 
-Surface Hub 2S harnesses the full power of Microsoft – Windows 10, Microsoft Teams, Office 365, Microsoft Whiteboard and the intelligent cloud – to unlock the productivity of your team. This new device packs even more performance into a thinner, lighter more versatile design. Forty percent lighter than its predecessor, and with a 60 percent thinner display, Surface Hub 2S fits easily into any space – from a traditional conference room to a compact huddle space.
+Surface Hub 2S blah blah blah.
 
 <ul class="panelContent cardsF">
     <li>
