@@ -44,7 +44,7 @@ Note: For legacy operating systems, the Event Name was WinSetupDiag01.
 
 Ten parameters are listed in the event:
 
-| First Header  | 
+| Parameters  | 
 | ------------- | 
 |P1: The Setup Scenario (1=Media,5=WindowsUpdate,7=Media Creation Tool)   | 
 |P2: Setup Mode (x=default,1=Downlevel,5=Rollback)   | 
