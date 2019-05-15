@@ -40,7 +40,7 @@ The federated baseline helps organizations that have completed their federation 
 Regardless of the baseline you choose, you’re next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
 
 > [!div class="nextstepaction"]
-> [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+> [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 
 <br><br>
 
@@ -48,7 +48,7 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. Overview (*You are here*)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

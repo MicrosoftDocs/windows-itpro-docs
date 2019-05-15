@@ -34,7 +34,7 @@ Use this three phased approach for configuring device registration.
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
 > [!NOTE]
-> Before proceeding, you should familiarize yourself with device regisration concepts such as:
+> Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
@@ -514,7 +514,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. Configure Azure Device Registration (*You are here*)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
