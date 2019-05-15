@@ -19,7 +19,7 @@
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Deploy multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
-### [COM whitelisting](com-whitelisting.md)
+### [Allow COM object registration](allow-com-object-registration-in-windows-defender-application-control-policy.md)
 ### [Deploy WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
 ### [Deploy WDAC with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 ### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
@@ -37,7 +37,7 @@
 ### [Sideload Win32 apps on S mode](sideloading-win32-apps-on-windows-10-s-mode-devices.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
-### [Windows Defender Application Control improvements in Windows 10 version 1903](windows-defender-application-control-improvements-in-windows-10-version-1903.md)
+### [FAQs](windows-defender-application-control-frequently-asked-questions.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)
