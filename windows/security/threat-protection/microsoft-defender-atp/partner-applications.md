@@ -31,7 +31,7 @@ The support for third-party solutions help to further streamline, integrate, and
 Microsoft Defender ATP seamlessly integrates with existing security solutions - providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
 
 ## SIEM integration
-Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md).
+Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
 
 ## Ticketing and IT service management 
 Ticketing solution integration helps to implement manual and automatic response processes. Microsoft Defender ATP can help to create tickets automatically when an alert is generated and resolve the alerts when tickets are closed using the alerts API. 
@@ -55,10 +55,3 @@ Microsoft Defender ATP currently supports IOC matching and remediation for file 
 
 ## Support for non-Windows platforms
 Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data giving you a unified experience.
-
-
-
-
-
-
-

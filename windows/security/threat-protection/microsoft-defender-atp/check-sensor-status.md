@@ -23,12 +23,9 @@ ms.date: 04/24/2018
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
 
 The sensor health tile provides information on the individual machine’s ability to provide sensor data and communicate with the Microsoft Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
-
 
 There are two status indicators on the tile that provide information on the number of machines that are not reporting properly to the service:
 - **Misconfigured** - These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.

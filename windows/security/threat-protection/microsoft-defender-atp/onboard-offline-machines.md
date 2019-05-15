@@ -24,12 +24,11 @@ ms.topic: article
 
 To onboard machines without Internet access, you'll need to take the following general steps:
 
-
 ## On-premise machines
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints-windows-defender-advanced-threat-protection.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-windows-defender-atp) point to Microsoft Defender ATP Workspace key & ID
+  - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp) point to Microsoft Defender ATP Workspace key & ID
 
 - Offline machines in the same network of Azure Log Analytics
   -  Configure MMA to point to:
@@ -41,7 +40,7 @@ To onboard machines without Internet access, you'll need to take the following g
 
     - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
       - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints-windows-defender-advanced-threat-protection.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-windows-defender-atp) point to Microsoft Defender ATP Workspace key & ID
+      - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp) point to Microsoft Defender ATP Workspace key & ID
     - Offline Azure VMs in the same network of OMS Gateway
       - Configure Azure Log Analytics IP as a proxy
       - Azure Log Analytics Workspace Key & ID

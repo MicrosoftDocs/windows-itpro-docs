@@ -29,7 +29,9 @@ To address this challenge, Microsoft Defender ATP uses Automated investigations 
 The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
 
 ## Understand the Automated investigation flow
+
 ### How the Automated investigation starts
+
 Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a supported operating system for Automated investigation then an Automated investigation can start.
 
 >[!NOTE]

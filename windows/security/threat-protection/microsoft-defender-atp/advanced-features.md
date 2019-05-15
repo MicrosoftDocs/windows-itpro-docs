@@ -43,7 +43,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 
 ## Block file
-This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled, see [Block files in your network](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#block-files-in-your-network) for more details.
+This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled, see [Block files in your network](respond-file-alerts.md#block-files-in-your-network) for more details.
 
 If your organization satisfies these conditions, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
@@ -94,7 +94,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability, while  experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
->The Microsoft Threat Experts capability in Windows Defender ATP is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security). 
+>The Microsoft Threat Experts capability in Windows Defender ATP is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
 ## Microsoft Cloud App Security
 Enabling this setting forwards Microsoft Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 

@@ -39,10 +39,7 @@ Microsoft Defender ATP supports two ways to manage permissions:
 >- Users that have read-only access (Security Readers) will lose access to the portal until they are assigned a role. Note that only Azure AD user groups can be assigned a role under RBAC.
 >- After switching to RBAC, you will not be able to switch back to using basic permissions management.
 
+## Related topics
 
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)
-
-## Related topic
 - [Use basic permissions to access the portal](basic-permissions.md)
 - [Manage portal access using RBAC](rbac.md)
