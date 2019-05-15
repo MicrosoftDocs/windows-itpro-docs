@@ -27,7 +27,7 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastucture](#public-key-infastructure)
+* [Public Key Infrastructure](#public-key-infastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
 * [MultiFactor Authentication](#multifactor-authentication)
@@ -118,9 +118,9 @@ Organizations wanting to deploy hybrid key trust need their domain joined device
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
+Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
 
-For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Syncrhonization**. 
+For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Synchronization**. 
 
 For federated and non-federated environments, start with **Configure Windows Hello for Business settings**.
 
