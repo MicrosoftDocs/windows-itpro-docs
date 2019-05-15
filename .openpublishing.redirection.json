@@ -13950,6 +13950,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/hub/windows-10-landing.yml",
+"redirect_url": "/windows/hub/windows-10",
+"redirect_document_id": true
+},
+{
     "source_path": "windows/hub/release-information.md",
     "redirect_url": "/windows/release-information",
     "redirect_document_id": true
