@@ -37,7 +37,6 @@
 ### [Sideload Win32 apps on S mode](sideloading-win32-apps-on-windows-10-s-mode-devices.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
-### [FAQs](windows-defender-application-control-frequently-asked-questions.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)
