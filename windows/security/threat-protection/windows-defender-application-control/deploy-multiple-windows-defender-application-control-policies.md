@@ -20,9 +20,18 @@ ms.date: 05/10/2019
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Beginning with Windows 10 version 1903, WDAC supports multiple code integrity policies for one device. 
+The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to light up the following scenarios:
 
-## Precedence
+1.	Enforce and Audit Side-by-Side
+    - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side-by-side with an existing enforcement-mode base policy
+2.	Multiple Base Policies
+    - Users can enforce two or more base policies simultaneously in order to allow simpler policy targeting for policies with different scope/intent
+3.	Supplemental Policies
+    - Users can deploy one or more supplemental policies to expand a base policy
+    - If two base policies exist on a device, an application has to be allowed by both to run
+    - For supplemental policies, applications that are allowed by either the base policy or its supplemental policy/policies are allowed to run
+
+## How do Base and Supplemental Policies Interact?
 
 - Multiple base policies: intersection
   - Only applications allowed by both policies run without generating block events
