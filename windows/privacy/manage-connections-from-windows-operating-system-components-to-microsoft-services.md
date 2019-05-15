@@ -1032,7 +1032,7 @@ To turn off **Let apps access my notifications**:
 
 In the **Speech** area, you can configure the functionality as such: 
 
-To turn off streaming audio to Microsoft Speech services,
+To turn off the functionality to do voice dictation, speaking to Cortana and other apps, or sending voice input to Microsoft Speech services: 
 
 - Toggle the Settings -> Privacy -> Speech -> **Online speech recognition** switch to **Off** 
 
