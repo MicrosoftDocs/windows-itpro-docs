@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-The following features are generally available (GA) in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
+The following features are generally available (GA) in the latest release of Microsoft Defender ATP as well as security features in Windows 10 and Windows Server.
 
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
