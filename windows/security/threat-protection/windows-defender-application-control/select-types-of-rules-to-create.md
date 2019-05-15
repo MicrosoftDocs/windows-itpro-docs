@@ -103,3 +103,42 @@ As part of normal operations, they will eventually install software updates, or 
 
 They could also choose to create a catalog that captures information about the unsigned internal application, then sign and distribute the catalog. Then the internal application could be handled by WDAC policies in the same way as any other signed application. An update to the internal application would only require that the catalog be regenerated, signed, and distributed (no restarts would be required).
 
+## Create path-based rules 
+
+Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
+
+- New-CIPolicy parameters
+  - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
+    ```powershell
+    New-CIPolicy -f .\mypolicy.xml -l FilePath -s <path to scan> -u
+    ```
+    Optionally, add -UserWriteablePaths to ignore user writeability
+
+  - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
+    ```powershell
+    New-CIPolicyRule -FilePathRule <any path string>
+    ```
+    Useful for wildcards like C:\foo\\*
+
+- Usage follows the same flow as per-app rules:
+  ```powershell
+  $rules = New-CIPolicyRule …
+  $rules += New-CIPolicyRule …
+  …
+  New-CIPolicyRule -f .\mypolicy.xml -u
+  ```
+
+- Wildcards supported
+  - Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
+    - One or the other, not both at the same time
+    - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
+  - Examples:
+    - %WINDIR%\\...
+    - %SYSTEM32%\\...
+    - %OSDRIVE%\\...
+
+- Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
+  ```powershell
+  Set-RuleOption -o 18 .\policy.xml
+  ```
+
