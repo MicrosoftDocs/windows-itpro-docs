@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 05/03/2018
+ms.date: 05/14/2019
 ---
 
 # Manage packaged apps with Windows Defender Application Control 
@@ -48,3 +48,46 @@ Just as there are differences in managing each rule collection, you need to mana
 
 3.  Continue to update the WDAC policies as new package apps are introduced into your environment. To do this, see [Merge WDAC policies](merge-windows-defender-application-control-policies.md).
 
+## Blocking packaged apps
+
+You can use `New-CIPolicyRule -Package $Package -Deny` to block packaged apps:
+
+1. Get the info about an installed package.
+   ```powershell
+   $package = Get-AppxPackage -name <netflix>
+   ```
+   Dependencies field in output is full Package object, can be accessed and passed directly to New-CIPolicyRule.
+2. Make a rule.
+   ```powershell   
+   $Rule = New-CIPolicyRule -Package $package -deny
+   ```
+3. Repeat for other packages you want to block using $rule +=…. 
+4. Make a policy for just the blocks you created for packages.   
+   ```powershell
+   New-CIpolicy -rules $rule -f .\policy.xml -u
+   ```
+5. Merge with allow windows policy, or you could also use examplepolicies\AllowAll.xml.
+   ```powershell
+   Merge-CIPolicy -PolicyPaths .\policy.xml,C:\windows\Schemas\codeintegrity\examplepolicies\DefaultWindows_Audit.xml -o allowWindowsDenyPackages.xml
+   ```
+6. Disable audit mode.
+   ```powershell
+   Set-RuleOption -o 3 -Delete .\allowWindowsDenyPackages.xml
+   ```
+7. Enable invalidate EAs on reboot.
+   ```powershell
+   Set-RuleOption -o 15 .\allowWindowsDenyPackages.xml 
+   ```
+8. Compile the policy
+   ```powershell
+   ConvertFrom-CIPolicy .\AllowWindowsDenyPackages.xml C:\compiledpolicy.bin
+   ```
+9. Install the policy withwout restarting.
+   ```powershell
+   Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = "C:\compiledpolicy.bin"}
+   ```
+
+After doing this on the next build of Dev3, for the apps that you blocked, already installed apps should fail to launch, and should you put this policy on another machine that hasn’t yet installed the apps, store should block them from being purchased/installed.
+If you wanted to make a rule for an app that isn’t already installed, first make a rule for an app that is. Then for the app you want to actually block take the store URL (from store page click … then share, then copy link to get something like: https://www.microsoft.com/store/productId/9WZDNCRFJ3TJ) and grab the hash code at the end (in bold) then replace the bolded bit below:
+https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfj3tj/applockerdata
+then grab packagefamilyname and replace the one in the xml you got in step 4 with the PFN from the link above, then run through 5-9 again.
