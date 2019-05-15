@@ -396,7 +396,7 @@
  
 
 
-## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
+## [Troubleshoot Windows Defender ATP](troubleshoot-mdatp.md)
 ###Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status.md)
 #### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
