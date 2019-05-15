@@ -13950,6 +13950,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/threat-analytics.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/threat-analytics",
+"redirect_document_id": true
+},
+{
     "source_path": "windows/hub/release-information.md",
     "redirect_url": "/windows/release-information",
     "redirect_document_id": true
