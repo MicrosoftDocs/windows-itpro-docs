@@ -67,7 +67,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 
 Here is an example of a request that adds machine tag.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
