@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ---
 
-# Windows error reporting
+# Windows Error Reporting
 
 **Applies to**
 -   Windows 10
@@ -25,6 +25,9 @@ ms.topic: article
 When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer to review this event, or you can use Windows PowerShell.
 
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
+
+>[!IMPORTANT]
+>}The following source will be available only if you have done an update from a previous version of windows 10 into a new version. If you installed the current version and have not done any update, the source named **WinSetupDiag02** will be unavailable.
 
 ```Powershell
 $events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
