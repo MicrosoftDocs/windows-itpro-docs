@@ -63,6 +63,8 @@ Detailed Tracking security policy settings and audit events can be used to monit
 -   [Audit Process Termination](audit-process-termination.md)
 -   [Audit RPC Events](audit-rpc-events.md)
 
+> **Note:**  For more information, see [Security Monitoring](https://blogs.technet.microsoft.com/nathangau/2018/01/25/security-monitoring-a-possible-new-way-to-detect-privilege-escalation/)
+
 ## DS Access
 
 DS Access security audit policy settings provide a detailed audit trail of attempts to access and modify objects in Active Directory Domain Services (AD DS). These audit events are logged only on domain controllers. This category includes the following subcategories:
