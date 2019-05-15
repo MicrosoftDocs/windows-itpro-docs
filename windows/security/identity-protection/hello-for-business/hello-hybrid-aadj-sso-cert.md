@@ -425,7 +425,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 3. Under **MANAGE**, click **Application proxy**.
 4. Click **Configure an app**.
 5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Azure AD Application Proxy setting with the on-premises NDES server.  Each NDES server must have its own Azure AD Application Proxy as two NDES servers cannot share the same internal URL.
-6. Next to **Internal Url**, type the internal fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  This must match the internal DNS name of the NDES server and ensure you prefix the Url with **https**.
+6. Next to **Internal Url**, type the internal, fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
 7. Under **Internal Url**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
 ![Azure NDES Application Proxy Configuration](images/aadjcert/azureconsole-appproxyconfig.png)
 8. Select **Passthrough** from the **Pre Authentication** list.
