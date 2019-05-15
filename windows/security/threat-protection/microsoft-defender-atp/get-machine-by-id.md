@@ -66,7 +66,7 @@ If machine with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07

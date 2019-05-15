@@ -64,7 +64,7 @@ If successful and domain exists - 200 OK with list of [alert](alerts.md) entitie
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/domains/client.wns.windows.com/alerts

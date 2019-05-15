@@ -55,7 +55,7 @@ If successful and user exists - 200 OK with [user](user.md) entity in the body. 
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/users/user1

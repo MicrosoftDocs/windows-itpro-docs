@@ -64,7 +64,7 @@ If successful, this method returns 200 OK, and the [alert](alerts.md) entity in 
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/alerts/441688558380765161_2136280442

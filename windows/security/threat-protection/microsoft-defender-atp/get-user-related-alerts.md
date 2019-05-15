@@ -66,7 +66,7 @@ If successful and user exist - 200 OK. If the user do not exist - 404 Not Found.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/users/user1/alerts

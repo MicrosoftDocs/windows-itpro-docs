@@ -43,7 +43,7 @@ Application |	Ti.ReadWrite.All |	'Read and write All Indicators'
 GET https://api.securitycenter.windows.com/api/indicators
 ```
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ## Request headers
 

@@ -61,7 +61,7 @@ If successful, this method returns 200, Ok response code with a [Machine Action]
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba

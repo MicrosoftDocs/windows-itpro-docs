@@ -62,7 +62,7 @@ If successful and alert and a user exists - 200 OK with user in the body. If ale
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 
 ```

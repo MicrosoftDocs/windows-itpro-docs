@@ -62,7 +62,7 @@ If successful and machine exist - 200 OK with list of [user](user.md) entities i
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers

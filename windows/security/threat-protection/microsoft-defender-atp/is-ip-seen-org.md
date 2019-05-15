@@ -69,7 +69,7 @@ GET https://api.securitycenter.windows.com/api/ips/10.209.67.177
 
 Here is an example of the response.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 
 ```

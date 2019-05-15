@@ -62,7 +62,7 @@ If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/ips

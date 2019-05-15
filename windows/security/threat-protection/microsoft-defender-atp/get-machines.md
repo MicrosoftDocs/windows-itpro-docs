@@ -69,7 +69,7 @@ If successful and machines exists - 200 OK with list of [machine](machine.md) en
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines

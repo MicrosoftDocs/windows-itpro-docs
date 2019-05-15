@@ -63,7 +63,7 @@ If successful and alert and machine exist - 200 OK. If alert not found or machin
 
 Here is an example of the request.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 
 ```

@@ -71,7 +71,7 @@ GET https://api.securitycenter.windows.com/api/machineactions/7327b54fd718525cbc
 
 Here is an example of the response.
 
-[!include[Improve request performance](improverequestperformance-new.md)]
+[!include[Improve request performance](improve-request-performance.md)]
 
 
 ```
