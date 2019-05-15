@@ -33,7 +33,7 @@ You can add tags on machines using the following ways:
 - By setting a registry key value
 - By using the portal
 
-## Add machine tags by setting a registry key value
+## Add machine tags by setting a registry key value
 Add tags on machines which can be used as a filter in Machines list view. You can limit the machines in the list by selecting the Tag filter on the Machines list.
 
 >[!NOTE]
