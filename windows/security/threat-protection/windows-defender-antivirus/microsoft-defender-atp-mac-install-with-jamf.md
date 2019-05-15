@@ -182,7 +182,7 @@ orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
 ...
 ```
 
-- **licensed**: This is a confirmation that the machine is licensed for ATP.
+- **licensed**: This confirms that the machine has an ATP license.
 
 - **orgid**: Your ATP org id, it will be the same for your organization.
 
