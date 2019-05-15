@@ -14685,6 +14685,10 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/improverequestperformance-new.md","redirect_url": "windows/security/threat-protection/microsoft-defender-atp/improve-request-performance",
+"redirect_document_id": true
+},
+{
     "source_path": "windows/hub/release-information.md",
     "redirect_url": "/windows/release-information",
     "redirect_document_id": true
