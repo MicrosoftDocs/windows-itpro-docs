@@ -1,7 +1,7 @@
 
 #	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
-## [Windows Defender AV in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md)
+## [Windows Defender AV in the Microsoft Defender Security Center app](windows-defender-security-center-antivirus.md)
 
 ## [Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
 
