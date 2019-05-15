@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -23,7 +23,7 @@ ms.date: 08/19/2018
 -   Certificate trust
 
  
-You're environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
+Your environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment.  
 

@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
@@ -105,8 +104,7 @@ Alternatively, the team leader might assign the alert to the **Resolved** queue 
 
 
 ## Alert classification
-You can choose not to set a classification, or  specify if an alert is a true alert or a false alert.
-
+You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality, and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification. 
 
 ## Add comments and view the history of an alert
 You can add comments and view historical events about an alert to see previous changes made to the alert.

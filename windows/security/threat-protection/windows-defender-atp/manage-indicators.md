@@ -1,5 +1,5 @@
 ---
-title: Manage allowed/blocked lists
+title: Manage indicators 
 description: Create indicators for a file hash, IP address, URLs or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Manage allowed/blocked lists
+# Manage indicators 
 
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
@@ -39,7 +38,7 @@ On the top navigation you can:
 - Apply filters 
 
 ## Create an indicator
-1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Indicators**.  
 
 2. Select the tab of the type of entity you'd like to create an indicator for. You can choose any of the following entities: 
    - File hash
@@ -57,11 +56,13 @@ On the top navigation you can:
 
 
 >[!NOTE]
->Blocking IPs, domains, or URLs is currently available on limited preview only. This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforeced. While the option is not yet generally available, it will only be used when identified during an investigation.
+>Blocking IPs, domains, or URLs is currently available on limited preview only.
+>This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforced which is an option that will be generally available soon. 
+>As it is not yet generally available, when Automated investigations finds this indicator during an investigation it will use the allowed/block list as the basis of its decision to automatically remediate (blocked list) or skip (allowed list) the entity.
 
 
 ## Manage indicators
-1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Indicators**.  
 
 2. Select the tab of the entity type you'd like to manage.  
 

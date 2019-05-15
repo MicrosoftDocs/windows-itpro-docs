@@ -228,6 +228,7 @@
 ####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp/configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ###### [Onboard servers](windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard non-Windows machines](windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines without Internet access](windows-defender-atp/onboard-offline-machines.md)
 ###### [Run a detection test on a newly onboarded machine](windows-defender-atp/run-detection-test-windows-defender-advanced-threat-protection.md)
 ###### [Run simulated attacks on machines](windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection.md)
 ###### [Configure proxy and Internet connectivity settings](windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection.md)
@@ -276,7 +277,7 @@
 ######## [Stop and quarantine file](windows-defender-atp/stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
 ######## [Initiate investigation (preview)](windows-defender-atp/initiate-autoir-investigation-windows-defender-advanced-threat-protection-new.md)
 
-####### [Indicators (preview)](windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Indicators](windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md)
 ######## [Submit Indicator](windows-defender-atp/post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
 ######## [List Indicators](windows-defender-atp/get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
 ######## [Delete Indicator](windows-defender-atp/delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
@@ -321,14 +322,14 @@
 ###### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
  
 
-##### API for custom alerts
-###### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Create custom threat intelligence alerts](windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md)
-###### [PowerShell code examples](windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md)
-###### [Python code examples](windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md)
-###### [Experiment with custom threat intelligence alerts](windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Troubleshoot custom threat intelligence issues](windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+##### API for custom alerts (Deprecated)
+###### [Enable the custom threat intelligence application (Deprecated)](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts (Deprecated)](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Create custom threat intelligence alerts (Deprecated)](windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md)
+###### [PowerShell code examples (Deprecated)](windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md)
+###### [Python code examples (Deprecated)](windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md)
+###### [Experiment with custom threat intelligence alerts (Deprecated)](windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot custom threat intelligence issues (Deprecated)](windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
  
 
 ##### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -343,6 +344,11 @@
 ##### Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
+###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
+
+##### Interoperability
+###### [Partner applications](windows-defender-atp/partner-applications.md)
+
 
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
@@ -382,13 +388,13 @@
 ######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
   
 ##### APIs
-###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Enable Threat intel (Deprecated)](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
   
 #####Rules
 ###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation allowed/blocked lists](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-###### [Manage allowed/blocked lists](windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage indicators](windows-defender-atp/manage-indicators.md)
 ###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
   
@@ -1017,10 +1023,17 @@
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
+### [Windows security guidance for enterprises](windows-security-configuration-framework/windows-security-compliance.md)
 
-### [Windows security baselines](windows-security-baselines.md)
-#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-#### [Get support](get-support-for-security-baselines.md)
+#### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
+##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
+##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
+#### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
+##### [Level 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
+##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
+##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
+##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
+##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 

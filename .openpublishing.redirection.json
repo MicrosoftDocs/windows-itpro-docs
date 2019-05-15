@@ -6,6 +6,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
 "redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
 "redirect_document_id": true
@@ -13939,5 +13944,15 @@
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/threat-analytics",
 "redirect_document_id": true
 },
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/manage-indicators",
+"redirect_document_id": true
+},
+{
+    "source_path": "windows/hub/release-information.md",
+    "redirect_url": "/windows/release-information",
+    "redirect_document_id": true
+}
 ]
 }
