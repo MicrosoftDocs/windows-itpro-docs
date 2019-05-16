@@ -34,10 +34,14 @@ Beginning with Windows 10 version 1903, WDAC supports multiple code integrity po
 With the ability to support multiple CI policies, three new scenarios are supported:
 
 1.	Enforce and Audit Side-by-Side (Intersection)
+
     - To validate policy changes before deploying in enforcement mode, deploy an audit-mode base policy side-by-side with an existing enforcement-mode base policy
+
 2.	Multiple Base Policies (Intersection)
+
     - Enforce two or more base policies simultaneously to allow simpler policy targeting for policies with different scope/intent
     - Ex. Base1 is a corporate standard policy that is relatively loose to accommodate all organizations while forcing minimum corp standards (e.g. Windows works + Managed Installer + path rules). Base2 is a team-specific policy that further restricts what is allowed to run (e.g. Windows works + Managed Installer + corporate signed apps only)
+    
 3.	Supplemental Policies (Union)
     - Deploy a supplemental policy (or policies) to expand a base policy
     - Ex. The Azure host base policy restricts tightly to just allow Windows and hardware drivers. Can add a supplemental policy to allow just the additional signer rules needed to support signed code from the Exchange team.
@@ -83,8 +87,11 @@ New-CiPolicy -MulitplePolicyFormat -foo –bar
 
 - **MultiplePolicyFormat** switch results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base.
   Can optionally choose to make it supplementable:
+
   - Set-RuleOption has a new option **Enabled:Allow Supplemental Policies** to set for base policy
+
 - For signed policies that are being made supplementable, need to ensure that supplemental signers are defined. Use “Add-SignerRule” to provide supplemental signers.
+
   ```powershell
   Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]  [<CommonParameters>]
   ```
@@ -92,18 +99,24 @@ New-CiPolicy -MulitplePolicyFormat -foo –bar
 **Scenario #2: Creating a new supplemental policy**
 
 1. Scan using `New-CiPolicy –MuliplePolicyFormat` to generate a base policy:
+
    ```powershell
    New-CIPolicy -Level PcaCertificate -UserPEs -ScanPath <path> -MultiplePolicyFormat 3> <path\CIPolicyLog.txt> -FilePath <path\SupplementalPolicy.xml>
    ```
+
 2. Change this new base policy to a supplemental policy
+
    - Provide path of base in `Set-CIPolicyIdInfo –BasePolicytoSupplementPath`
    - Provide GUID of base in `Set-CIPolicyIdInfo –SupplementsBasePolicyID`
+
    ```powershell
    Set-CIPolicyIdInfo -BasePolicyToSupplementPath <path\SupplementalPolicy.xml> -SupplementsBasePolicyID <BasePolicyID> -FilePath <path\SupplementalPolicy.xml>
    ```   
+
    - Can revert the policy back to being a base policy using `-ResetPolicyID`
    
 **Scenario #3: Merging policies**
 
 - When merging, the policy type and ID of the leftmost/first policy specified is used
+
   - If the leftmost is a base policy with ID <ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID <ID>

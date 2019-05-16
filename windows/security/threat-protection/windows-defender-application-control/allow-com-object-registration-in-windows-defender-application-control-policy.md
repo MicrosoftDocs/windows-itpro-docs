@@ -32,6 +32,7 @@ Three elements:
 - Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
 - Key: GUID for the program you with to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
+
 One attribute:
 - Value: needs to be “true” for allow and “false” for deny
   Note: without quotation marks
