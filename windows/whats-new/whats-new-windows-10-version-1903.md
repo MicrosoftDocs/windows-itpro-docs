@@ -25,9 +25,9 @@ This article lists new and updated features and content that are of interest to 
 
 The following Windows Autopilot features are available in Windows 10, version 1903 and later:
 
-- Windows Autopilot white glove enables partners or IT staff to pre-provision devices to be fully configured and business ready for your users.
-- The Intune enrollment status page (ESP) now tracks Intune Management Extensions, and System Center Configuration Manager and Office installs​.
-- Cortana voiceover: Cortana voiceover is disabled by default for Windows 10 Pro and above.
+- [Windows Autopilot for white glove deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) enables partners or IT staff to pre-provision devices to be fully configured and business ready for your users.
+- The Intune [enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions, and System Center Configuration Manager and Office installs​.
+- Cortana voiceover: [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) is disabled by default for Windows 10 Pro and above.
 - Self-updating Autopilot: You can enable new Windows Autopilot functionality without updating Windows.​
 
 ### Windows 10 Subscription Activation
