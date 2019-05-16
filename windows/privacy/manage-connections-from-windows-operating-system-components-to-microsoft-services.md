@@ -40,7 +40,7 @@ Make sure you've chosen the right settings configuration for your environment be
 You should not extract this package to the windows\\system32 folder because it will not apply correctly.
 
 >[!IMPORTANT]
-> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionallity is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
+> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionality is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
 
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article.
 It is recommended that you restart a device after making configuration changes to it.
@@ -76,7 +76,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added an MDM policy for Font streaming
 - Added an MDM policy for Network Connection Status Indicator
-- Added an MDM policy for the Micosoft Account Sign-In Assistant
+- Added an MDM policy for the Microsoft Account Sign-In Assistant
 - Added instructions for removing the Sticky Notes app
 - Added registry paths for some Group Policies
 - Added the Find My Device section
@@ -92,7 +92,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
   - Turn off access to all Windows Update features
   - Specify Intranet Microsoft update service location
   - Enable Windows NTP client
-  - Turn off Automatic download of the ActiveX VersionList
+  - Turn off Automatic download of the ActiveX Version List
   - Allow Automatic Update of Speech Data
   - Accounts: Block Microsoft Accounts
   - Do not use diagnostic data for tailored experiences
@@ -495,7 +495,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
-> The following Group Policies and Registry Keys are for user interactive scenarios rather then the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings: 
+> The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings: 
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -1676,7 +1676,7 @@ To turn this off:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access diagnostic information about other apps**
 
   -or-
 
@@ -1855,7 +1855,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
