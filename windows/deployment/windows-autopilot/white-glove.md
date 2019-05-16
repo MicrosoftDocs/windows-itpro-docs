@@ -34,7 +34,7 @@ Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove
 In addition to [Windows Autopilot requirements](windows-autopilot-requirements.md), Windows Autopilot for white glove deployment adds the following:
 
 - Windows 10, version 1903 or later is required.
-- Microsoft Intune subscriptions with additional flighted features that are not yet available publicly.  Attempts to perform white glove deployment without these flighted features will fail with an Intune enrollment error.
+- An Intune subscription with additional flighted features that are not yet available publicly is currently required. Note: This feature will change soon from flighted to preview. Prior to this feature switching to preview status, attempts to perform white glove deployment without t flighted features will fail with an Intune enrollment error.
 - Physical devices that support TPM 2.0 and device attestation; virtual machines are not supported.  The white glove provisioning process leverages Windows Autopilot self-deploying capabilities, hence the TPM 2.0 requirements.
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
 
@@ -47,25 +47,9 @@ To be ready to try out Windows Autopilot for white glove deployment, ensure that
 
 If these scenarios cannot be completed, Windows Autopilot for white glove deployment will also not succeed since it builds on top of these scenarios.
 
-To ensure that your Intune tenant has been flighted with the needed white glove deployment functionality, please provide your Azure AD tenant name and tenant ID to your Microsoft contact for the preview process.  The tenant name can be found from http://portal.microsoft.com, under **Azure Active Directory** and then **Overview**:
+To enable white glove deployment, an additional Autopilot profile setting must be configured:
 
- ![AAD](images/wg03.png)
-
-The tenant ID can be found under **Azure Active Directory** and then **Properties**. Click the icon next to the ID to copy to the clipboard.
-
- ![AAD](images/wg04.png)
-
->[!NOTE]
->Please use a non-critical tenant for this evaluation process.  If you do not currently have a non-critical tenant, you can create a new Azure Active Directory tenant and then add an EMS trial license to it. 
-
-Two features will be enabled as part of the flighting process:
-
-- Support for Windows Autopilot for white glove deployment.  
-    - This will enable devices performing white glove deployment processes to enroll in Intune, and will expose a new Autopilot profile setting that enables white glove deployment for any devices that have been assigned that profile.
-- Support for tracking Intune Management Extensions activities (Win32 apps, PowerShell scripts) in the Enrollment Status Page (ESP).  
-    - This is needed to ensure that all Win32 apps are installed before the white glove deployment process completes.
-
-Once the flighting is complete, you will be able to enable Windows Autopilot for white glove deployment in any Autopilot profile; all devices with that profile assigned will be able to leverage the white glove deployment process.
+---stopped here---
 
 >[!TIP]
 >To see the white glove deployment Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
