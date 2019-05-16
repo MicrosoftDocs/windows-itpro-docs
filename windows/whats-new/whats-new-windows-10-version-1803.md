@@ -230,7 +230,6 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 
 - [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
-
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.
 
 [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
