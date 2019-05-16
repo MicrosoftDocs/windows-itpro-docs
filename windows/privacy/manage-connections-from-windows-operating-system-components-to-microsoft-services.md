@@ -92,7 +92,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
   - Turn off access to all Windows Update features
   - Specify Intranet Microsoft update service location
   - Enable Windows NTP client
-  - Turn off Automatic download of the ActiveX Version List
+  - Turn off Automatic download of the ActiveX VersionList
   - Allow Automatic Update of Speech Data
   - Accounts: Block Microsoft Accounts
   - Do not use diagnostic data for tailored experiences
