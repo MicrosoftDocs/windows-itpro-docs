@@ -16,7 +16,7 @@ ms.date: 3/1/2019
 
 **Applies to**
 
--   Windows 10 Enterprise 1903 version and later
+-   Windows 10 Enterprise 1903 version and newer
 
 You can use Microsoft InTune with MDM CSPs and custom [OMA URIs](https://docs.microsoft.com/en-us/intune/custom-settings-windows-10) to minimize connections from Windows to Microsoft services, or to configure particular privacy settings. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
@@ -30,7 +30,7 @@ For more information on Microsoft InTune please see [Transform IT service delive
 
 For detailed information about managing network connections to Microsoft services using Baseline package/registries/Group policies/UI/Command line, see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
-### Settings for Windows 10 Enterprise edition 1903 and later
+### Settings for Windows 10 Enterprise edition 1903 and newer
 
 The following table lists management options for each setting.
 
@@ -116,7 +116,20 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | | [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)| Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates. Set to **100** - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 | 28. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. <br /> **0**: notify the user before downloading the update <br /> **1**: auto install the update and then notify the user to schedule a device restart <br /> **2**: auto install and restart (default) <br /> **3**: auto install and restart at a specified time <br /> **4**: auto install and restart without end-user control <br /> **5**: turn off automatic updates 
 
-
+### Allowed (aka "Whitelisted") traffic for Microsoft InTune / MDM configurations
+| Endpoint of Allowed traffic | 
+| --- | 
+|ctldl.windowsupdate.com|
+|cdn.onenote.net|
+|r.manage.microsoft.com|
+|tile-service.weather.microsoft.com|
+|settings-win.data.microsoft.com|
+|client.wns.windows.com|
+|dm3p.wns.windows.com|
+|crl.microsoft.com/pki/crl/*|
+|www.microsoft.com/pkiops/crl/*|
+|activation-v2.sls.microsoft.com/*|
+|ocsp.digicert.com/*|
 
 
 
