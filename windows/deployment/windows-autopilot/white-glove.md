@@ -49,14 +49,12 @@ If these scenarios cannot be completed, Windows Autopilot for white glove deploy
 
 To enable white glove deployment, an additional Autopilot profile setting must be configured:
 
----stopped here---
-
 >[!TIP]
 >To see the white glove deployment Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
 
- ![OOBE](images/wg05.png)
+ ![allow white glove](images/allow-white-glove.png)
 
-The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps that are targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  **Note**: other user-targeted policies will not apply until the user signs into the device.  To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
+The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  **Note**: other user-targeted policies will not apply until the user signs into the device.  To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
 
 ## Scenarios
 
@@ -72,7 +70,7 @@ Regardless of the scenario, the process to be performed by the technician is the
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
 - From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
 
- ![Autopilot](images/wg05.png)
+ ![choice](images/choice.png)
 
 - On the **Windows Autopilot Configuration** screen, information will be displayed about the device:
     - The Autopilot profile assigned to the device.
@@ -81,15 +79,18 @@ Regardless of the scenario, the process to be performed by the technician is the
     - A QR code containing a unique identifier for the device, useful to look up the device in Intune to make any configuration changes needed (e.g. assigning a user, adding the device to any additional groups needed for app or policy targeting).
 - Validate the information displayed.  If any changes are needed, make these and then click **Refresh** to re-download the updated Autopilot profile details.
 
- ![Autopilot](images/wg06.png)
+ ![landing](images/landing.png)
 
 - Click **Provision** to begin the provisioning process.
 If the pre-provisioning process completes successfully:
 - A green status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
 - Click **Reseal** to shut the device down.  At that point, the device can be shipped to the end user.
+
 If the pre-provisioning process fails:
 - A red status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
 - Diagnostic logs can be gathered from the device, and then it can be reset to start the process over again.
+
+ ![white-glove-result](images/white-glove-result.png)
 
 ### User flow
 
@@ -102,32 +103,3 @@ If the pre-provisioning process completed successfully and the device was reseal
 - If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user’s Active Directory credentials.
 - Additional policies and apps will be delivered to the device, as tracked by the Enrollment Status Page (ESP).  Once complete, the user will be able to access the desktop.
 
-## Fixed issues
-
-The following issues were fixed in Windows Insider 19H1 builds:
-- Some failures may be displayed on the Enrollment Status Page, instead of advancing to the red "white glove" summary page.  This is fixed in build 10.0.18345.  (20355940)
-- Connectivity to the corporate network is presently required during the Hybrid AAD Join technician flow, even though it is only used to check that an Active Directory domain controller is accessible.  This is fixed in build 10.0.18345.  (20301592)
-- When enrolling a device in Intune during the technician flow, an enrollment error 80180003 is reported, indicating that white glove is not enabled.  This is fixed in Intune on March 8th, 2019.
-- When editing the Autopilot profile to enable white glove deployment, the setting change is not saved properly.  This is fixed in Intune on March 12th, 2019.
-
-## Known issues
-
-### All scenarios
-
-When installing Win32 apps via the Intune Management Extensions, the Enrollment Status Page may time out even though the apps are installed successfully.  In some cases, this may indicate that the detection rules for the app are not correct, but this may happen even with properly configured apps.  This  issue is currently under investigation.
-
-### Hybrid Azure AD Join
-
-The process of TPM attestation, joining the device to Active Directory, and enrolling in Intune happens when the **Provision** button is clicked from the initial **Windows Autopilot Configuration** screen.  Additional status is being added.  (20212277)
-
-### Azure AD Join
-
-There are currently no known issues specific to Azure AD Join.
-
-## Questions and comments
-
-Depending on your method of participation in the Windows Autopilot for white glove deployment process, your feedback mechanism may be different.
-
-- If you are participating in the Windows TAP program, please provide feedback via the **Windows 10 TAP** Yammer group.
-- If you are participating via MVP programs, please provide feedback via the MVP distribution list for your specialty.
-- For others, please use the feedback link provided below (next to **This product**) or your specific Windows Autopilot team contact.

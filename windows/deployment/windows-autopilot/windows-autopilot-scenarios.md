@@ -55,7 +55,7 @@ To change this key value, use WCD tool to create as PPKG as documented [here](ht
 
 ### Bitlocker encryption
 
-See [Setting the BitLocker encryption algorithm for Autopilot devices](bitlocker.md)
+With Windows Autopilot, you can configure the BitLocker encryption settings to be applied before automatic encryption is started. For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](bitlocker.md)
 
 ## Related topics
 
