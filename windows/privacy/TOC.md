@@ -26,4 +26,4 @@
 ### [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
 ### [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-## [Manage connections from Windows operating system components to Microsoft services using MDM](configure-connections-to-microsoft-services-with-mdm.md)
+## [Manage connections from Windows operating system components to Microsoft services using MDM](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md)
