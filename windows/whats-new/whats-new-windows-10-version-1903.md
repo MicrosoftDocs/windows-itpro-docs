@@ -27,12 +27,15 @@ The following Windows Autopilot features are available in Windows 10, version 19
 
 - [Windows Autopilot for white glove deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) enables partners or IT staff to pre-provision devices to be fully configured and business ready for your users.
 - The Intune [enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions, and System Center Configuration Manager and Office installs​.
-- Cortana voiceover: [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) is disabled by default for Windows 10 Pro and above.
+- Cortana voiceover: [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is DISABLED by default for all Windows 10 Pro variants, including Education, Enterprise, & G.
+  
+
 - Self-updating Autopilot: You can enable new Windows Autopilot functionality without updating Windows.​
 
 ### Windows 10 Subscription Activation
 
 Windows 10 Education support has been added to Windows 10 Subscription Activation.
+
 With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation).
 
 ### SetupDiag
