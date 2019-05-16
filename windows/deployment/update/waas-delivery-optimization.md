@@ -129,7 +129,7 @@ If you suspect this is the problem, try these steps:
 
 1.	Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
 2.	Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
-3.	If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly ***.do.dsp.mp.microsoft.com**.
+3.	If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
 
 
 
