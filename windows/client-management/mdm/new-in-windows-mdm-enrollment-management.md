@@ -89,7 +89,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1903:</p>
 <ul>
-<li>[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground</li>
+<li>[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)</li>
 <li>[DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)</li>
 <li>[Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)</li>
 <li>[Power/EnergySaverBatteryThresholdOnBattery](policy-csp-power.md#power-energysaverbatterythresholdonbattery)</li>
@@ -112,9 +112,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[WindowsLogon/ConfigAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)</li>
 <li>[WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)</li>
 </ul>
-</td></tr>
-<tr>
-<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 </tbody>
 </table>
