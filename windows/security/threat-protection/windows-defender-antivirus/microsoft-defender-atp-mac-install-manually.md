@@ -87,9 +87,7 @@ The installation will proceed.
     The client machine is not associated with orgId.  Note that the orgid is blank.
 
     ```bash
-    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
-    uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
-    orgid :
+    mavel-mojave:wdavconfig testuser$ mdatp --health orgId
     ```
 
 2. Install the configuration file on a client machine:
@@ -102,9 +100,8 @@ The installation will proceed.
 3. Verify that the machine is now associated with orgId:
 
     ```bash
-    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
-    uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
-    orgid : E6875323-A6C0-4C60-87AD-114BBE7439B8
+    mavel-mojave:wdavconfig testuser$ mdatp --health orgId
+    E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.

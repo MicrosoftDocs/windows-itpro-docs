@@ -41,10 +41,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic --create` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic
+   mavel-mojave:~ testuser$ mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
@@ -120,7 +120,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
 |Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
 |Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
 |Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
