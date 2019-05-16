@@ -22,7 +22,13 @@ ms.date: 05/16/2019
 
 The [Microsoft Component Object Model (COM)](https://docs.microsoft.com/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
 
-Get GUID of application to allow by either:
+### COM object configurability in WDAC policy
+
+Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
+
+### Get COM object GUID
+
+Get GUID of application to allow in one of the following ways:
 - Finding block event in Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script) and extracting GUID
 - Creating audit policy (using New-CIPolicy –Audit), potentially with specific provider, and use info from block events to get GUID
 
@@ -35,9 +41,8 @@ Three elements:
 
 One attribute:
 - Value: needs to be “true” for allow and “false” for deny
-  Note: without quotation marks
-  Note: deny only works in base policies
-- The setting needs to be placed in the order of ASCII values, first by Provider, then Key, then ValueName
+  - Note that deny only works in base policies, not supplemental
+- The setting needs to be placed in the order of ASCII values (first by Provider, then Key, then ValueName)
 
 ### Examples
 
