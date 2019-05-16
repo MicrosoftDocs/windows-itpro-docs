@@ -228,7 +228,7 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 
 ## See Also
 
-[Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
+- [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
 
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
 
