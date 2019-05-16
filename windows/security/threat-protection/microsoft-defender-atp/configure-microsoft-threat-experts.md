@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 02/28/2019
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities
@@ -26,10 +25,10 @@ ms.date: 02/28/2019
 [!include[Prerelease information](prerelease.md)]
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges will not be incurred during for the capability in preview, but for the generally available capability, there will be charges. 
- 
+To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges will not be incurred during for the capability in preview, but for the generally available capability, there will be charges.
+
 You also need to ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
- 
+
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
 
@@ -54,8 +53,7 @@ You can receive targeted attack notification from Microsoft Threat Experts throu
 To receive targeted attack notifications through email, you need to create an email notification rule.
 
 ### Create an email notification rule 
-You can create rules to send email notifications for notification recipients. See  [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md) to create, edit, delete, or troubleshoot email notification, for details.
-
+You can create rules to send email notifications for notification recipients. See  [Configure alert notifications](configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
 
 ## View the targeted attack notification  
 You'll start receiving targeted attack notification from Microsoft Threat Experts in your email after you have configured your system to receive email notification.  
@@ -67,7 +65,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 ## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 >[!NOTE]
->The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. 
+>The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
@@ -104,6 +102,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
     f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number. <br>
 
 ## Sample questions to ask Microsoft Threat Experts
+
 **Alert information**
 - We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
 - We’ve observed two similar attacks which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious Powershell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
