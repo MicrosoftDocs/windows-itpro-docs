@@ -118,8 +118,6 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 
 ### Allowed (aka "Whitelisted") traffic for Microsoft InTune / MDM configurations
 
-
-
 |**Allowed traffic endpoints** | 
 | --- | 
 |ctldl.windowsupdate.com|
