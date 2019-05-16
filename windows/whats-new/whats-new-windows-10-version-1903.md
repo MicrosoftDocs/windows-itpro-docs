@@ -109,9 +109,9 @@ The draft release of the [security configuration baseline settings](https://blog
 
 ## Microsoft Edge
 
-https://blogs.windows.com/msedgedev/2019/05/06/edge-chromium-build-2019-pwa-ie-mode-devtools/#2QJF4u970WjQ2Sv7.97
-
 Windows 10, version 1903 offers new Group Policies and [MDM policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser) for managing Microsoft Edge. You can silently enable BitLocker for standard Azure Active Directory-joined users. You can also more easily manage the entire Microsoft 365 experience for users with the Microsoft 365 Admin Center.
+
+Several new features are coming in the next version of Edge. See the [news from Build 2019](https://blogs.windows.com/msedgedev/2019/05/06/edge-chromium-build-2019-pwa-ie-mode-devtools/#2QJF4u970WjQ2Sv7.97) for more information.
 
 ## See Also
 
