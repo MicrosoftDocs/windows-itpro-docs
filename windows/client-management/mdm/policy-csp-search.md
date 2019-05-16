@@ -228,7 +228,9 @@ Controls if the user can configure search to Find My Files mode, which will sear
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Allow Find My Files*
 -   GP name: *AllowFindMyFiles*
+-   GP path: *Computer Configuration/Administrative Templates/Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
 
 <!--/ADMXMapped-->
