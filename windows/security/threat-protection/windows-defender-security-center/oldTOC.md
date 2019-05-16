@@ -1,9 +1,9 @@
-# [The Windows Defender Security Center app](windows-defender-security-center.md)
+# [The Microsoft Defender Security Center app](windows-defender-security-center.md)
 
 
-## [Customize the Windows Defender Security Center app for your organization](wdsc-customize-contact-information.md)
-## [Hide Windows Defender Security Center app notifications](wdsc-hide-notifications.md)
-## [Manage Windows Defender Security Center in Windows 10 in S mode](wdsc-windows-10-in-s-mode.md)
+## [Customize the Microsoft Defender Security Center app for your organization](wdsc-customize-contact-information.md)
+## [Hide Microsoft Defender Security Center app notifications](wdsc-hide-notifications.md)
+## [Manage Microsoft Defender Security Center in Windows 10 in S mode](wdsc-windows-10-in-s-mode.md)
 ## [Virus and threat protection](wdsc-virus-threat-protection.md)
 ## [Account protection](wdsc-account-protection.md)
 ## [Firewall and network protection](wdsc-firewall-network-protection.md)

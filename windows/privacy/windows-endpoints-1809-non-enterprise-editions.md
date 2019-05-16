@@ -98,7 +98,7 @@ We used the following methodology to derive these network endpoints:
 | *.e-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
 | *.g.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
 | *.s-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.tlu.dl.delivery.mp.microsoft.com/* | HTTP | Enables connections to Windows Update. |
+| \*.tlu.dl.delivery.mp.microsoft.com/\* | HTTP | Enables connections to Windows Update. |
 | *geo-prod.dodsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update. |
 | arc.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | au.download.windowsupdate.com/* | HTTP | Enables connections to Windows Update. |
