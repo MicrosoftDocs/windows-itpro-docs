@@ -92,7 +92,7 @@ sections:
 
     - href:  https://docs.microsoft.com/microsoft-edge/deploy/group-policies/developer-settings-gp
 
-      html: <p>Learn how configure Microsoft Edge for development and testing.</p>
+      html: <p>Learn how to configure Microsoft Edge for development and testing.</p>
 
       image:
 
