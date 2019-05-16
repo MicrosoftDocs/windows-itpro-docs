@@ -53,36 +53,52 @@ Just as there are differences in managing each rule collection, you need to mana
 You can use `New-CIPolicyRule -Package $Package -Deny` to block packaged apps:
 
 1. Get the info about an installed package.
+
    ```powershell
    $package = Get-AppxPackage -name <netflix>
    ```
+
    Dependencies field in output is full Package object, can be accessed and passed directly to New-CIPolicyRule.
+
 2. Make a rule.
+
    ```powershell   
    $Rule = New-CIPolicyRule -Package $package -deny
    ```
+
 3. Repeat for other packages you want to block using $rule +=…. 
-4. Make a policy for just the blocks you created for packages.   
+4. Make a policy for just the blocks you created for packages.
+
    ```powershell
    New-CIpolicy -rules $rule -f .\policy.xml -u
    ```
+
 5. Merge with allow windows policy, or you could also use examplepolicies\AllowAll.xml.
+
    ```powershell
    Merge-CIPolicy -PolicyPaths .\policy.xml,C:\windows\Schemas\codeintegrity\examplepolicies\DefaultWindows_Audit.xml -o allowWindowsDenyPackages.xml
    ```
+
 6. Disable audit mode.
+
    ```powershell
    Set-RuleOption -o 3 -Delete .\allowWindowsDenyPackages.xml
    ```
+
 7. Enable invalidate EAs on reboot.
+
    ```powershell
    Set-RuleOption -o 15 .\allowWindowsDenyPackages.xml 
    ```
+
 8. Compile the policy
+
    ```powershell
    ConvertFrom-CIPolicy .\AllowWindowsDenyPackages.xml C:\compiledpolicy.bin
    ```
+
 9. Install the policy withwout restarting.
+
    ```powershell
    Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = "C:\compiledpolicy.bin"}
    ```

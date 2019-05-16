@@ -1,16 +1,16 @@
 ---
-title: Windows Defender Application Control path-based rules (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+title: Allow COM object registration in a Windows Defender Application Control policy (Windows 10)
+description: You can allow COM object registration in a Windows Defender Application Control policy.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 05/14/2019
+ms.date: 05/16/2019
 ---
 
-# COM Whitelisting
+# Allow COM object registration in a Windows Defender Application Control policy
 
 **Applies to:**
 

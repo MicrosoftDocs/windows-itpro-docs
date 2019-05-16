@@ -39,8 +39,6 @@ The restriction of only having a single code integrity policy active on a system
 - Base + supplemental policy: union
   - Files that are allowed by the base policy or the supplemental policy are not blocked
 
-## Creating Multiple Base or Supplemental Policies
-
 Note that multiple policies will not work on pre-1903 systems.
 
 ### Allow Multiple Policies
@@ -75,3 +73,4 @@ Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and re
 ### Merging policies
 
 When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID <ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID <ID>.
+
