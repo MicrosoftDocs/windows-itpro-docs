@@ -52,7 +52,7 @@ To enable white glove deployment, an additional Autopilot profile setting must b
 >[!TIP]
 >To see the white glove deployment Autopilot profile setting, use this URL to access the Intune portal: https://portal.azure.com/?microsoft_intune_enrollment_enableWhiteGlove=true. This is a temporary requirement.
 
- ![allow white glove](images/allow-white-glove.png)
+ ![allow white glove](images/allow-white-glove-oobe.png)
 
 The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  **Note**: other user-targeted policies will not apply until the user signs into the device.  To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
 
