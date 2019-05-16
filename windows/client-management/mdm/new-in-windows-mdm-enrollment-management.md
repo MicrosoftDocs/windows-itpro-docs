@@ -1063,8 +1063,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Games/AllowAdvancedGamingServices</li>
 <li>Handwriting/PanelDefaultModeDocked</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
-<li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
-<li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
 <li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li>
 <li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li>
@@ -2676,8 +2674,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ExploitGuard/ExploitProtectionSettings</li>
 <li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
-<li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
-<li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
 <li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li>
 <li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li>
