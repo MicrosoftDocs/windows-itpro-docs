@@ -125,25 +125,31 @@ If you don’t see any bytes coming from peers the cause might be one of the fol
 
 ### Clients aren't able to reach the Delivery Optimization cloud services.
 
-To fix this issue, try the following steps:
+If you suspect this is the problem, try these steps:
 
-1. Start a download of an app that is larger than 50 MB from the Store (for example Candy Crush Saga).
-2. Run `Get-DeliveryOptimizationStatus` from an elevated window and share the output (by setting the `DownloadMode` field to **1**).
+1.	Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
+2.	Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
+3.	If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly ***.do.dsp.mp.microsoft.com**.
+
 
 
 ### The cloud service doesn't see other peers on the network.
 
 If you suspect this is the problem, try these steps:
 
-1. Download the same app on another device on the same network.
-2. Run `Get-DeliveryOptimizationPerfSnap` from an elevated window (the `NumberOfPeers` field should be non-zero).
+1.	Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
+2.	Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
+3.	Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
+4.	If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
+
 
 ### Clients aren't able to connect to peers offered by the cloud service
 
-If you suspect this is the problem, un a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+If you suspect this is the problem, try a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
 
 1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
+
 
 
 
