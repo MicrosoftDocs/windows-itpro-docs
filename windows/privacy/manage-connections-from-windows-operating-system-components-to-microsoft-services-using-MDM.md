@@ -117,7 +117,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 28. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. <br /> **0**: notify the user before downloading the update <br /> **1**: auto install the update and then notify the user to schedule a device restart <br /> **2**: auto install and restart (default) <br /> **3**: auto install and restart at a specified time <br /> **4**: auto install and restart without end-user control <br /> **5**: turn off automatic updates 
 
 ### Allowed (aka "Whitelisted") traffic for Microsoft InTune / MDM configurations
-
+ 
 |**Allowed traffic endpoints** | 
 | --- | 
 |ctldl.windowsupdate.com|
@@ -128,7 +128,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 |client.wns.windows.com|
 |dm3p.wns.windows.com|
 |crl.microsoft.com/pki/crl/*|
-|www.microsoft.com/pkiops/crl/*|
+|*microsoft.com/pkiops/crl/*|
 |activation-v2.sls.microsoft.com/*|
 |ocsp.digicert.com/*|
 
