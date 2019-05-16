@@ -13,7 +13,7 @@ ms.author: daniha
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/04/2018
+ms.date: 04/29/2019
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -23,6 +23,14 @@ ms.date: 04/04/2018
 -   Windows 10 Enterprise
 -   Windows 10 Mobile
 -   Windows Server
+
+This article applies to Windows and Windows Server diagnostic data only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, diagnostic data controls, and so on. This article describes the types of diagnostic data we may gather, the ways you might manage it in your organization, and some examples of how diagnostic data can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
+
+Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. The diagnostic data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
+
+## Overview of Windows diagnostic data
 
 At Microsoft, we use Windows diagnostic data to inform our decisions and focus our efforts in providing the most robust, most valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Diagnostic data gives users a voice in the operating system’s development. This guide describes the importance of Windows diagnostic data and how we protect that data. Additionally, it differentiates between diagnostic data and functional data. It also describes the diagnostic data levels that Windows supports. Of course, you can choose how much diagnostic data is shared with Microsoft, and this guide demonstrates how.
 
@@ -34,14 +42,6 @@ To frame a discussion about diagnostic data, it is important to understand Micro
 -	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
 -	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
 -	**Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
-
-This article applies to Windows and Windows Server diagnostic data only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, diagnostic data controls, and so on. This article describes the types of diagnostic data we may gather, the ways you might manage it in your organization, and some examples of how diagnostic data can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
-
-Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. The diagnostic data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
-
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
-
-## Overview
 
 In previous versions of Windows and Windows Server, Microsoft used diagnostic data to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016, you can control diagnostic data streams by using the Privacy option in Settings, Group Policy, or MDM.
 
@@ -85,7 +85,7 @@ The following are specific examples of functional data:
 
 Windows and Windows Server diagnostic data gives every user a voice in the operating system’s development and ongoing improvement. It helps us understand how Windows 10 and Windows Server 2016 behaves in the real world, focus on user priorities, and make informed decisions that benefit them. For our enterprise customers, representation in the dataset on which we will make future design decisions is a real benefit. The following sections offer real examples of these benefits.
 
-### Drive higher app and driver quality
+### Improve app and driver quality
 
 Our ability to collect diagnostic data that drives improvements to Windows and Windows Server helps raise the bar for app and device driver quality. Diagnostic data helps us to quickly identify and fix critical reliability and security issues with apps and device drivers on given configurations. For example, we can identify an app that hangs on devices using a specific version of a video driver, allowing us to work with the app and device driver vendor to quickly fix the issue. The result is less downtime and reduced costs and increased productivity associated with troubleshooting these issues.
 
@@ -127,7 +127,7 @@ Use Upgrade Readiness to get:
 
 The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
-## How is diagnostic data handled by Microsoft?
+## How Microsoft handles diagnostic data
 
 ### Data collection
 
@@ -155,18 +155,14 @@ The following table defines the endpoints for Connected User Experiences and Tel
 
 Windows release | Endpoint
 --- | ---
-Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| Diagnostics data: v10c.vortex-win.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
-Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | Diagnostics data: v10.events.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
-Windows 10, version 1709 or earlier | Diagnostics data: v10.vortex-win.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
-Windows 7 and Windows 8.1 | vortex-win.data.microsoft.com
+Windows 10, versions 1703 and 1709 | Diagnostics data: v10.vortex-win.data.microsoft.com/collect/v1</br></br>Functional: v20.vortex-win.data.microsoft.com/collect/v1</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com/collect/v1</br>settings-win.data.microsoft.com
+Windows 10, version 1607 | v10.vortex-win.data.microsoft.com</br></br>settings-win.data.microsoft.com
 
 The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
 | [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com | 
-| | umwatsonc.events.data.microsoft.com |
-| | kmwatsonc.events.data.microsoft.com |
 | | ceuswatcab01.blob.core.windows.net |
 | | ceuswatcab02.blob.core.windows.net |
 | | eaus2watcab01.blob.core.windows.net |
@@ -174,7 +170,7 @@ The following table defines the endpoints for other diagnostic data services:
 | | weus2watcab01.blob.core.windows.net |
 | | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
-| OneDrive app for Windows 10 | vortex.data.microsoft.com |
+| OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
 
 ### Data use and access
 
@@ -184,8 +180,97 @@ The principle of least privileged access guides access to diagnostic data. Micro
 
 Microsoft believes in and practices information minimization. We strive to gather only the info we need and to store it only for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Microsoft Store purchase history.
 
+## Manage enterprise diagnostic data level
+
+### Enterprise management
+
+Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
+
+Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
+
+IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a diagnostic data level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016, the Security diagnostic data level is available when managing the policy. Setting the diagnostic data level through policy sets the upper boundary for the users’ choices. To disable user choice after setting the level with the policy, you will need to use the "Configure telemetry opt-in setting user interface" group policy. The remainder of this article describes how to use group policy to configure levels and settings interface.
+
+
+#### Manage your diagnostic data settings
+
+We do not recommend that you turn off diagnostic data in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this article to do so for Windows, Windows Server, and System Center.
+
+> [!IMPORTANT]
+> These diagnostic data levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of Office Telemetry](https://technet.microsoft.com/library/jj863580.aspx).
+
+You can turn on or turn off System Center diagnostic data gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center diagnostic data is turned on. However, setting the operating system diagnostic data level to **Basic** will turn off System Center diagnostic data, even if the System Center diagnostic data switch is turned on.
+
+The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server 2016 is **Enhanced**.
+
+### Configure the operating system diagnostic data level
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level    | Data gathered | Value |
+| - | - | -  |
+| Security | Security data only. | **0** |
+| Basic | Security data, and basic system and quality data. | **1** |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | **2** |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
+
+   > [!NOTE]
+   > When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
+
+### Use Group Policy to set the diagnostic data level
+
+Use a Group Policy object to set your organization’s diagnostic data level.
+
+1.  From the Group Policy Management Console, go to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**.
+
+2.  Double-click **Allow Telemetry**.
+
+3.  In the **Options** box, select the level that you want to configure, and then click **OK**.
+
+### Use MDM to set the diagnostic data level
+
+Use the [Policy Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to apply the System/AllowTelemetry MDM policy.
+
+### Use Registry Editor to set the diagnostic data level
+
+Use Registry Editor to manually set the registry level on each device in your organization or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+
+1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
+
+2.  Right-click **DataCollection**, click New, and then click **DWORD (32-bit) Value**.
+
+3.  Type **AllowTelemetry**, and then press ENTER.
+
+4.  Double-click **AllowTelemetry**, set the desired value from the table above, and then click **OK.**
+
+5.  Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
+
+## Configure System Center 2016 diagnostic data
+
+For System Center 2016 Technical Preview, you can turn off System Center diagnostic data by following these steps:
+
+-   Turn off diagnostic data by using the System Center UI Console settings workspace.
+
+-   For information about turning off diagnostic data for Service Management Automation and Service Provider Foundation, see [How to disable telemetry for Service Management Automation and Service Provider Foundation](https://support.microsoft.com/kb/3096505).
+
+### Additional diagnostic data controls
+
+There are a few more settings that you can turn off that may send diagnostic data information:
+
+-   To turn off Windows Update diagnostic data, you have two choices. Either turn off Windows Update, or set your devices to be managed by an on premises update server, such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) or [System Center Configuration Manager](https://www.microsoft.com/server-cloud/products/system-center-2012-r2-configuration-manager/).
+
+-   Turn off **Windows Defender Cloud-based Protection** and **Automatic sample submission** in **Settings** &gt; **Update & security** &gt; **Windows Defender**.
+
+-   Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
+
+-   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
+
+    > [!NOTE]
+    > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
+
 ## Diagnostic data levels
-This section explains the different diagnostic data levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
+This article explains the different diagnostic data levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
 The diagnostic data is categorized into four levels:
 
@@ -340,92 +425,6 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 
 -   All crash dump types, including heap dumps and full dumps.
 
-## Enterprise management
-
-Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
-
-Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
-
-IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a diagnostic data level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016, the Security diagnostic data level is available when managing the policy. Setting the diagnostic data level through policy sets the upper boundary for the users’ choices. To disable user choice after setting the level with the policy, you will need to use the "Configure telemetry opt-in setting user interface" group policy. The remainder of this section describes how to use group policy to configure levels and settings interface.
-
-
-### Manage your diagnostic data settings
-
-We do not recommend that you turn off diagnostic data in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this section to do so for Windows, Windows Server, and System Center.
-
-> [!IMPORTANT]
-> These diagnostic data levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of Office Telemetry](https://technet.microsoft.com/library/jj863580.aspx).
-
-You can turn on or turn off System Center diagnostic data gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center diagnostic data is turned on. However, setting the operating system diagnostic data level to **Basic** will turn off System Center diagnostic data, even if the System Center diagnostic data switch is turned on.
-
-The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server 2016 is **Enhanced**.
-
-## Configure the operating system diagnostic data level
-
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as **Group Policy, MDM, or Windows Provisioning.** You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
-
-Use the appropriate value in the table below when you configure the management policy.
-
-| Level    | Data gathered | Value |
-| - | - | -  |
-| Security | Security data only. | **0** |
-| Basic | Security data, and basic system and quality data. | **1** |
-| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | **2** |
-| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
-
-   > [!NOTE]
-   > When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
-
-### Use Group Policy to set the diagnostic data level
-
-Use a Group Policy object to set your organization’s diagnostic data level.
-
-1.  From the Group Policy Management Console, go to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**.
-
-2.  Double-click **Allow Telemetry**.
-
-3.  In the **Options** box, select the level that you want to configure, and then click **OK**.
-
-### Use MDM to set the diagnostic data level
-
-Use the [Policy Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to apply the System/AllowTelemetry MDM policy.
-
-### Use Registry Editor to set the diagnostic data level
-
-Use Registry Editor to manually set the registry level on the devices in your organization, or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, the policy will replace the manually set registry level.
-
-1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
-
-2.  Right-click **DataCollection**, click New, and then click **DWORD (32-bit) Value**.
-
-3.  Type **AllowTelemetry**, and then press ENTER.
-
-4.  Double-click **AllowTelemetry**, set the desired value from the table above, and then click **OK.**
-
-5.  Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
-
-### Configure System Center 2016 diagnostic data
-
-For System Center 2016 Technical Preview, you can turn off System Center diagnostic data by following these steps:
-
--   Turn off diagnostic data by using the System Center UI Console settings workspace.
-
--   For information about turning off diagnostic data for Service Management Automation and Service Provider Foundation, see [How to disable telemetry for Service Management Automation and Service Provider Foundation](https://support.microsoft.com/kb/3096505).
-
-### Additional diagnostic data controls
-
-There are a few more settings that you can turn off that may send diagnostic data information:
-
--   To turn off Windows Update diagnostic data, you have two choices. Either turn off Windows Update, or set your devices to be managed by an on premises update server, such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) or [System Center Configuration Manager](https://www.microsoft.com/server-cloud/products/system-center-2012-r2-configuration-manager/).
-
--   Turn off **Windows Defender Cloud-based Protection** and **Automatic sample submission** in **Settings** &gt; **Update & security** &gt; **Windows Defender**.
-
--   Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
-
--   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
-
-    > [!NOTE]
-    > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
 
 ## Additional resources
 
