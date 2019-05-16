@@ -17,7 +17,7 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1903, also known as the Windows 10 May 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1809. 
 
->If you are not an IT Pro, see the following topics for information about what's new in Windows 10 in [hardware](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows), for [developers](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today/#2Lp8FUFQ3Jm8KVcq.97), and for [consumers](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update).
+>Also see the following topic for [developers](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today/#2Lp8FUFQ3Jm8KVcq.97).
 
 ## Deployment
 
@@ -42,27 +42,18 @@ With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to 
 
 SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
-## Windows Update
+## Servicing
 
-[Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) – Improved Peer Efficiency for enterprises and educational institutions with complex networks (via a set of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization)). This now supports Office 365 ProPlus updates and Intune content, and System Center Configuration Manager content will be coming soon! 
-
-Servicing-based Feature Updates – Use instead of media-based to reduce the Feature Update size with Express Updates. Use Unified Update Platform (UUP) for language packs, Features on Demand (FOD), Latest Cumulative Updates (LCU). Feature updates now provide more options for background processing, Active Hours, and deferral notifications. 
-
-Reserved Disk Space – New and wipe-and-load installations of Windows 10 version 1903 will automatically reserve disk space to be used by Feature and Quality Updates, ensuring the updates do not fail for disk space reasons. 
-
-Automatic Restart Sign-on (ARSO)  – Windows will automatically restart and logon as the user and complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
-
-Windows Update for Business – There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
-
-Update rollback improvements – You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
-
-Pause updates - We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
-
-Improved update notifications - When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
-
-Intelligent active hours - To further enhance active hours, users will now have the option to let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
-
-Improved update orchestration to improve system responsiveness - This feature will improve system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
+- [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) – Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization)). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
+- **Servicing-based Feature Updates**: Use instead of media-based to reduce the Feature Update size with Express Updates. Use Unified Update Platform (UUP) for language packs, Features on Demand (FOD), Latest Cumulative Updates (LCU). Feature updates now provide more options for background processing, Active Hours, and deferral notifications. 
+- **Reserved Disk Space**: New and wipe-and-load installations of Windows 10 version 1903 will automatically reserve disk space to be used by Feature and Quality Updates, ensuring the updates do not fail for disk space reasons. 
+- **Automatic Restart Sign-on (ARSO)**: Windows will automatically restart and logon as the user and complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- **Windows Update for Business**: There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
+- **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
+- **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
+- **Improved update notifications**: When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
+- **Intelligent active hours**: To further enhance active hours, users will now have the option to let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
+- **Improved update orchestration to improve system responsiveness**: This feature will improve system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
 
 ## Security
 
@@ -92,10 +83,10 @@ The draft release of the [security configuration baseline settings](https://blog
 
 ### Microsoft Defender ATP next-gen Antivirus technologies:
 
-- Advanced machine learning: Improved with advanced machine learning and AI models that enable it to protect against apex attackers using innovative vulnerability exploit techniques, tools and malware.
-- Emergency outbreak protection: Provides emergency outbreak protection which will automatically update devices with new intelligence when a new outbreak has been detected.
-- Certified ISO 27001 compliance: Ensures that the cloud service has analyzed for threats, vulnerabilities and impacts, and that risk management and security controls are in place.
-- Geolocation support: Support geolocation and sovereignty of sample data as well as configurable retention policies.
+- **Advanced machine learning**: Improved with advanced machine learning and AI models that enable it to protect against apex attackers using innovative vulnerability exploit techniques, tools and malware.
+- **Emergency outbreak protection**: Provides emergency outbreak protection which will automatically update devices with new intelligence when a new outbreak has been detected.
+- **Certified ISO 27001 compliance**: Ensures that the cloud service has analyzed for threats, vulnerabilities and impacts, and that risk management and security controls are in place.
+- **Geolocation support**: Support geolocation and sovereignty of sample data as well as configurable retention policies.
 
 ### Threat Protection
 
@@ -126,4 +117,4 @@ Windows 10, version 1903 offers new Group Policies and [MDM policies](https://do
 
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[What's new in Windows 10, version 1809](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
+[What's new in Windows 10](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
