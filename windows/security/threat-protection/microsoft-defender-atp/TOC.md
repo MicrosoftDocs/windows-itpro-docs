@@ -70,7 +70,10 @@
 ###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
- 
+
+##### [Investigate entities using Live response](live-response.md)
+###### [Live response command examples](live-response-command-examples.md)
+
 ### [Automated investigation and remediation](automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation.md)
 
