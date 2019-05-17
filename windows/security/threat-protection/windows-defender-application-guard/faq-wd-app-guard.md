@@ -14,7 +14,7 @@ ms.date: 03/28/2019
 
 # Frequently asked questions - Windows Defender Application Guard 
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
@@ -69,4 +69,10 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 |---|----------------------------|
 |**Q:** |What is the WDAGUtilityAccount local account?|
 |**A:** |This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.|
+<br>
+
+| | |
+|---|----------------------------|
+|**Q:** |How do I trust a subdomain in my site list?|
+|**A:** |To trust a subdomain, you must precede your domain with two dots, for example: ..contoso.com.|
 <br>

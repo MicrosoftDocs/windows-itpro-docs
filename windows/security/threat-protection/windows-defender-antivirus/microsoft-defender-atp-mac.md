@@ -51,7 +51,7 @@ In general you'll need to take the following steps:
 
 You should have beginner-level experience in macOS and BASH scripting. You must have administrative privileges on the machine.
 
-You should also have access to Windows Defender Security Center.
+You should also have access to Microsoft Defender Security Center.
 
 ### System Requirements
 
