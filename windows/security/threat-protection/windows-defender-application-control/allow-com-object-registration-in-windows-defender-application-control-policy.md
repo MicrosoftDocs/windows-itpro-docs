@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.date: 05/16/2019
+author: mdsakibMSFT
+ms.date: 05/17/2019
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy
@@ -32,7 +32,7 @@ Get GUID of application to allow in one of the following ways:
 - Finding block event in Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script) and extracting GUID
 - Creating audit policy (using New-CIPolicy –Audit), potentially with specific provider, and use info from block events to get GUID
 
-### Author setting
+### Author policy setting to allow or deny COM object GUID
 
 Three elements:
 - Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
@@ -46,21 +46,32 @@ One attribute:
 
 ### Examples
 
+Example 1: Allows registration of all COM object GUIDs in any provider
+
 ```xml
-    <Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
-      <Value>
-        <Boolean>true</Boolean>
-      </Value>
-    </Setting>
-    <Setting Provider="IE" Key="{00000000-4444-4444-1616-161616161616}" ValueName="EnterpriseDefinedClsId">
-      <Value>
-        <Boolean>false</Boolean>
-      </Value>
-    </Setting>
-    <Setting Provider="PowerShell" Key="{33333333-4444-4444-1616-161616161616}" ValueName="EnterpriseDefinedClsId">
-      <Value>
-        <Boolean>true</Boolean>
-      </Value>
-    </Setting>
+<Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
+  <Value>
+    <Boolean>true</Boolean>
+  </Value>
+</Setting>
+```
+
+Example 2: Blocks a specific COM object from being registered via Internet Explorer (IE)
+
+```xml
+<Setting Provider="IE" Key="{00000000-4444-4444-1616-161616161616}" ValueName="EnterpriseDefinedClsId">
+  <Value>
+    <Boolean>false</Boolean>
+  </Value>
+</Setting>
+
+Example 3: Allows a specific COM object to register in PowerShell
+
+```xml
+<Setting Provider="PowerShell" Key="{33333333-4444-4444-1616-161616161616}" ValueName="EnterpriseDefinedClsId">
+  <Value>
+    <Boolean>true</Boolean>
+  </Value>
+</Setting>
 ```
 

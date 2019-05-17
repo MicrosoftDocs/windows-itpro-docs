@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.date: 05/06/2018
+author: mdsakibMSFT
+ms.date: 05/17/2018
 ---
 
 # Sideloading Win32 apps on Windows 10 S mode devices 
@@ -51,24 +51,37 @@ To allow Win32 apps to run on a Windows 10 device in S mode, admins must ‘unlo
 ## Creating and Signing a Supplemental Policy
 
 1.	Create new base policy using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps)
+
     ```powershell
     New-CIPolicy -Level PcaCertificate -UserPEs -ScanPath <path> -MultiplePolicyFormat 3> <path\CIPolicyLog.txt> -FilePath <path\SupplementalPolicy.xml>
     ```
+
 2.	Change it to a supplemental policy using [Set-CIPolicyIdInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo?view=win10-ps)
+
     ```powershell
     Set-CIPolicyIdInfo -BasePolicyToSupplementPath <path\SupplementalPolicy.xml> -SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784 -FilePath <path\SupplementalPolicy.xml>
     ```
-    Note: ‘5951A96A-E0B5-4D3D-8FB8-3E5B61030784' is the S-mode Base Policy ID.
+
+    >[!NOTE]
+    >‘5951A96A-E0B5-4D3D-8FB8-3E5B61030784' is the S-mode Base Policy ID.
+
 3.	Put policy in enforce mode using [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps)
+
     ```powershell
     Set-RuleOption -FilePath <path\SupplementalPolicy.xml> -Option 3 –Delete
     ```
+
     This deletes the ‘audit mode’ qualifier.
+
 4.	Convert to .bin using [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps)
+
     ```powershell
     ConvertFrom-CIPolicy -XmlFilePath <path\SupplementalPolicy.xml> -BinaryFilePath <path\PolicyID>
     ```
-    Note: PolicyID can be found by inspecting the Supplemental Policy XML. Convert to .bin to sign with DGSS (recommended) or .cip to sign locally.
+
+    >[!NOTE]
+    >PolicyID can be found by inspecting the Supplemental Policy XML. Convert to .bin to sign with DGSS (recommended) or .cip to sign locally.
+
 5.	To sign using the recommended DGSS option through the Microsoft Store for Business, click **Manage** > **Settings** > **Devices** > **Upload** > **Sign**.
     To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md).
 
@@ -76,14 +89,18 @@ To allow Win32 apps to run on a Windows 10 device in S mode, admins must ‘unlo
 An admin must generate an app catalog for every deployed app:
 1.	Use Package Inspector to [create a catalog](https://docs.microsoft.com/microsoft-store/add-unsigned-app-to-code-integrity-policy#a-href-idcreate-catalog-filesacreate-catalog-files-for-your-unsigned-app)
     - Start Package Inspector to scan the installer:
+
       ```console
       PackageInspector.exe start C: -path <path to installer>
       ```
+
     - Open the app installer.
     - Stop Package Inspector:
+
       ```console
       PackageInspector.exe stop C: -Name <path\app.cat> -cdfpath <path\app.cdf>
       ```
+     
 2.	To sign using the recommended DGSS option through the Microsoft Store for Business, click **Manage** > **Settings** > **Devices** > **Upload** > **Sign**.
     To sign locally using signtool, see [Signing policies with signtool](signing-policies-with-signtool.md).
 

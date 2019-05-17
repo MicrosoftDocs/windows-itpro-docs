@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.date: 05/14/2019
+author: mdsakibMSFT
+ms.date: 05/17/2019
 ---
 
 # Create Windows Defender Application Control path-based rules 

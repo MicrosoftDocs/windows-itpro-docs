@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.date: 05/10/2019
+author: mdsakibMSFT
+ms.date: 05/17/2019
 ---
 
 # Deploy multiple Windows Defender Application Control Policies 
@@ -44,19 +44,22 @@ Note that multiple policies will not work on pre-1903 systems.
 ### Allow Multiple Policies
 
 In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in New-CIPolicy results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base.
+
 ```powershell
 New-CIPolicy -MultiplePolicyFormat -foo –bar
 ```
 
 Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
+
 ```powershell
 Set-RuleOption -FilePath <string> Enabled:Allow Supplemental Policies
 ```
 
 For signed base policies that are being made supplementable, you need to ensure that supplemental signers are defined. Use the "Supplemental" switch in Add-SignerRule to provide supplemental signers.
-  ```powershell
-  Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]  [<CommonParameters>]
-  ```
+
+```powershell
+Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]  [<CommonParameters>]
+```
 
 ### Supplemental Policy Creation
 
