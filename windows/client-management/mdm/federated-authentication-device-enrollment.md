@@ -553,7 +553,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
    <characteristic type="CertificateStore">
       <characteristic type="Root">
          <characteristic type="System">
-            <characteristic type="031336C933CC7E228B88880D78824FB2909A0A2F">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64 encoded cert insert here" />
             </characteristic>
          </characteristic>
@@ -562,7 +562,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
    <characteristic type="CertificateStore">
       <characteristic type="My" >      
          <characteristic type="User">
-            <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
             <characteristic type="PrivateKeyContainer"/> 

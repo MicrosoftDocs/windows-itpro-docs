@@ -28,8 +28,8 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
 - **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate Microsoft Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from Microsoft Store for Business.
 - **Centralized management** – Microsoft Store provides centralized management for inventory, billing, permissions, and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
-    - **Microsoft Store for Business** – Apps and subscriptions
-    - **Microsoft Store for Education** – Apps and subscriptions
+    - **Microsoft Store for Business** – Apps acquired from Microsoft Store for Business
+    - **Microsoft Store for Education** – Apps acquired from Microsoft Store for Education
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
 - **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 

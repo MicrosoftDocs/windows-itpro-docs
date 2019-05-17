@@ -95,12 +95,12 @@ If your apps require custom prerequisites, such as Microsoft SQL Server, we reco
 2. Open PowerShell as an admin and run the **Connect-AppvSequencerVM** cmdlet, using the following parameters:
 
     ```ps1
-    Connect-AppvSequencerVM -VMName "<name_of_vm>" -ADKPath "<path_to_adk_install_folder>"
+    Connect-AppvSequencerVM -VMName "<name_of_vm>"
     ```
     
     Where ```<name_of_vm>``` is the name of the VM as shown in the Hyper-V Manager tool.
 
-This command creates a new Hyper-V VM file using the provided VHD file and also creates a "clean" checkpoint, from where all sequencing and updating will start.
+This command connects to an existing Hyper-V VM using the provided VM name for auto-sequencing.
 
 ### Review the provisioning log files
 
