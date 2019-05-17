@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -69,8 +69,8 @@ To include the on-premises distinguished name in the certificate's subject, Azur
 ### Verify AAD Connect version
 Sign-in to computer running Azure AD Connect with access equivalent to _local administrator_.
 
-1. Open **Syncrhonization Services** from the **Azure AD Connect** folder.
-2. In the **Syncrhonization Service Manager**, click **Help** and then click **About**.
+1. Open **Synchronization Services** from the **Azure AD Connect** folder.
+2. In the **Synchronization Service Manager**, click **Help** and then click **About**.
 3. If the version number is not **1.1.819** or later, then upgrade Azure AD Connect to the latest version.
 
 ### Verify the onPremisesDistinguishedName attribute is synchronized
@@ -172,7 +172,7 @@ You must prepare the public key infrastructure and the issuing certificate autho
 When deploying certificates using Microsoft Intune, you have the option of providing the validity period in the SCEP certificate profile rather than relying on the validity period in the certificate template.  If you need to issue the same certificate with different validity periods, it may be advantageous to use the SCEP profile, given the limited number of certificates a single NDES server can issue.
 
 > [!NOTE]
-> Skip this step if you do not want to enable Microsoft Intune to specify the validity period of the certificate.  Without this configuiration, the certificate request uses the validity period configured in the certificate template.
+> Skip this step if you do not want to enable Microsoft Intune to specify the validity period of the certificate.  Without this configuration, the certificate request uses the validity period configured in the certificate template.
 
 Sign-in to the issuing certificate authority with access equivalent to _local administrator_.
 
@@ -222,7 +222,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
 > [!Important]
-> Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that cerificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
+> Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that certificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
 
@@ -373,7 +373,7 @@ where **registryValueName** is one of the three value names from the above table
 5. Close the command prompt.
 
 > [!IMPORTANT]
-> Use the **name** of the certificate template; not the **display name**.  The certificate template name does not include spaces.  You can view the certificate names by looking at the **General** tab of the certificate template's properties in the **Certifcates Templates** management console (certtmpl.msc).
+> Use the **name** of the certificate template; not the **display name**.  The certificate template name does not include spaces.  You can view the certificate names by looking at the **General** tab of the certificate template's properties in the **Certificates Templates** management console (certtmpl.msc).
 
 ### Create a Web Application Proxy for the internal NDES URL.
 Certificate enrollment for Azure AD joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
@@ -425,7 +425,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 3. Under **MANAGE**, click **Application proxy**.
 4. Click **Configure an app**.
 5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Azure AD Application Proxy setting with the on-premises NDES server.  Each NDES server must have its own Azure AD Application Proxy as two NDES servers cannot share the same internal URL.
-6. Next to **Internal Url**, type the internal fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  This must match the internal DNS name of the NDES server and ensure you prefix the Url with **https**.
+6. Next to **Internal Url**, type the internal, fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
 7. Under **Internal Url**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
 ![Azure NDES Application Proxy Configuration](images/aadjcert/azureconsole-appproxyconfig.png)
 8. Select **Passthrough** from the **Pre Authentication** list.

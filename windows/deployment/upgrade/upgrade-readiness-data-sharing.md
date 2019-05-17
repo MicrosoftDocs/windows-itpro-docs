@@ -12,16 +12,7 @@ ms.collection: M365-analytics
 
 # Upgrade Readiness data sharing
 
-To enable data sharing with the Upgrade Readiness solution, the following endpoints must be accessible:
-
-
-| **Endpoint**  | **Function**  |
-|---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experiences and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
-
-Whitelist these endpoints on your network. This might require working with your organizations's network security group.
+To enable data sharing with the Upgrade Readiness solution, double-check the endpoints list in [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md#enable-data-sharing) to be sure they are whitelisted.
 
 ## Connectivity to the Internet
 
@@ -38,10 +29,10 @@ In order to use the direct connection scenario, set the parameter **ClientProxy=
 This is the first and most simple proxy scenario. The WinHTTP stack was designed for use in services and does not support proxy autodetection, PAC scripts or authentication.
 
 In order to set the WinHTTP proxy system-wide on your computers, you need to
-•Use the command netsh winhttp set proxy \<server\>:\<port\>
-•Set ClientProxy=System in runconfig.bat
+- Use the command netsh winhttp set proxy \<server\>:\<port\>
+- Set ClientProxy=System in runconfig.bat
 
-The WinHTTP scenario is most appropriate for customers who use a single proxy or f. If you have more advanced proxy requirements, refer to Scenario 3.
+The WinHTTP scenario is most appropriate for customers who use a single proxy. If you have more advanced proxy requirements, refer to Scenario 3.
 
 If you want to learn more about proxy considerations on Windows, see [Understanding Web Proxy Configuration](https://blogs.msdn.microsoft.com/ieinternals/2013/10/11/understanding-web-proxy-configuration/).
 

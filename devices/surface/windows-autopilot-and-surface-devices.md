@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 09/12/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -41,11 +40,16 @@ Support for broad deployments of Surface devices using Windows Autopilot, includ
 
 ### Surface device support
 Surface devices with support for out-of-box deployment with Windows Autopilot, enrolled during the purchase process with a Surface partner, include the following devices, where the devices ship from the factory with Windows 10 Version 1709:
-* Surface Pro (Model 1796)
+
+* Surface Pro (5th gen)
+* Surface Laptop(1st gen)
+* Surface Studio (1st gen)
+* Surface Pro 6
 * Surface Book 2
-* Surface Laptop
-* Surface Studio
+* Surface Laptop 2
+* Surface Studio 2
 * Surface Go
+* Surface Go with LTE Advanced
 
 ## Surface partners enabled for Windows Autopilot
 Enrolling Surface devices in Windows Autopilot at the time of purchase is a capability provided by select Surface partners that are enabled with the capability to identify individual Surface devices during the purchase process and perform enrollment on an organization’s behalf. Devices enrolled by a Surface partner at time of purchase can be shipped directly to users and configured entirely through the zero-touch process of Windows Autopilot, Azure Active Directory, and Mobile Device Management.
