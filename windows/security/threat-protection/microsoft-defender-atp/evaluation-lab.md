@@ -91,6 +91,8 @@ The machine will automatically be onboarded to your tenant with the recommended 
 
 The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
 
+![Image of test machines](images/eval-machines.png)
+
 ## Simulate attack scenarios
 Use the test machines to run attack simulations by connecting to them. 
 
