@@ -1437,15 +1437,15 @@ In the **Activity History** area, you can choose turn Off tracking of your Activ
 
 To turn this Off in the UI:
 
-- Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
+- Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes 
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Enables Activity Feed**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Enables Activity Feed** 
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Allow publishing of User Activities**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Allow publishing of User Activities** 
 
      -and-
 
@@ -1453,15 +1453,15 @@ To turn this Off in the UI:
 
 -OR-
  
-- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
@@ -1469,24 +1469,24 @@ In the **Vocie activation** area, you can choose turn Off apps ability to listen
 
 To turn this Off in the UI:
 
-- Turn **Off** the feature in the UI by going to **Settings -> Privacy -> Voice activation** and toggle **Off** the **Allow apps to use voice activation** AND also toggle **Off** the **Allow apps to use voice activation when this device is locked**. 
+- Turn **Off** the feature in the UI by going to **Settings -> Privacy -> Voice activation** and toggle **Off** the **Allow apps to use voice activation** AND also toggle **Off** the **Allow apps to use voice activation when this device is locked** 
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** 
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** 
 
 
 -OR-
  
-- Create a REG_DWORD registry setting named **LetAppsActivateWithVoice** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **LetAppsActivateWithVoice** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**
 
 
 
