@@ -49,6 +49,10 @@ The private store for your organization is a page in Microsoft Store app that co
 
     ![Private store for Contoso publishing](images/wsfb-privatestoreapps.png)
 
+## Troubleshooting Microsoft Store for Business integration with ConfigMgr
+
+In case of having problems with Microsoft Store for Business integration with ConfigMgr, use the [troubleshooting guide](https://support.microsoft.com/help/4010214/understand-and-troubleshoot-microsoft-store-for-business-integration-w).
+
 ## Still having trouble?
 
 If you are still having trouble using Microsoft Store or installing an app, Admins can sign in and look for topics on our **Support** page.
