@@ -113,7 +113,7 @@ You can use these variables in the .xml files within sections with `context=User
 |CSIDL_INTERNET|A virtual folder for Internet Explorer.|
 |CSIDL_INTERNET_CACHE|The file-system directory that serves as a common repository for temporary Internet files. A typical path is C:\Users\username\AppData\Local\Microsoft\Windows\Temporary Internet Files|
 |CSIDL_LOCAL_APPDATA|The file-system directory that serves as a data repository for local, non-roaming applications. A typical path is C:\Users\username\AppData\Local.|
-|CSIDL_MYDOCUMENTS|The virtual folder representing My Documents.A typical path is C:\Users\Username\Documents.|
+|CSIDL_MYDOCUMENTS|The virtual folder representing My Documents. A typical path is C:\Users\Username\Documents.|
 |CSIDL_MYMUSIC|The file-system directory that serves as a common repository for music files. A typical path is C:\Users\Username\Music.|
 |CSIDL_MYPICTURES|The file-system directory that serves as a common repository for image files. A typical path is C:\Users\Username\Pictures.|
 |CSIDL_MYVIDEO|The file-system directory that serves as a common repository for video files. A typical path is C:\Users\Username\Videos.|
