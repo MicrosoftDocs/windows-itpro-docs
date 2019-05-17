@@ -17,6 +17,8 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1903, also known as the Windows 10 May 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1809. 
 
+Also see [What's New in Windows Server, version 1903](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1903).
+
 >[!NOTE]
 >New disk space requirement for Windows 10, version 1903 applies only to OEMs for the manufacture of new PCs. This new requirement does not apply to existing devices.  PCs that don’t meet new device disk space requirements will continue to receive updates and the 1903 update will require about the same amount of free disk space as previous updates.  There is no change for current devices compared to previous releases.
 
