@@ -1432,8 +1432,6 @@ If you're running at least Windows 10, version 1703, you can turn off updates to
  - Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
 
 
-
-
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History
 In the **Activity History** area, you can choose turn of tracking of your Activity History.  
 
@@ -1445,11 +1443,11 @@ To turn this Off:
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
 
-  -and-
+    -and-
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
 
-  -and-
+    -and-
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
 
