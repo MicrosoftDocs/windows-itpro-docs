@@ -74,13 +74,13 @@ The machine will automatically be onboarded to your tenant with the recommended 
 
 3. Select **Add machine**.
 
-  >[!NOTE]
-  > The evaluation environment can only be provisioned up to three test machines. Each machine will only be available for three days from the day of activation. 
+    >[!NOTE]
+    > The evaluation environment can only be provisioned up to three test machines. Each machine will only be available for three days from the day of activation. 
 
    ![Image of add machine](images/evaluation-add-machine.png)
 
-  >[!NOTE]
-  >If something goes wrong with the machine creation process, you'll be notified and you'll need to submit a new request. If the machine creation fails, it will not be counted against the overall allowed quota. 
+    >[!NOTE]
+    >If something goes wrong with the machine creation process, you'll be notified and you'll need to submit a new request. If the machine creation fails, it will not be counted against the overall allowed quota. 
 
 4. The connection details are displayed. Select **Copy** to save the password for the machine.
 
@@ -90,9 +90,6 @@ The machine will automatically be onboarded to your tenant with the recommended 
 5. The machine will be setup. This may take approximately 30 minutes. 
 
 The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts fired through the simulation.
-
-
-![Image of evaluation lab dashboard](images/evaluation.png)
 
 ## Simulate attack scenarios
 Use the test machines to run attack simulations by connecting to them. 
@@ -140,5 +137,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-![Image of provide feedback](images/provide-feedback.png)
+![Image of provide feedback](images/eval-feedback.png.png)
 
