@@ -23,7 +23,7 @@ When using the XML files MigDocs.xml, MigApp.xml, and MigUser.xml, you can use e
 -   [Variables that are recognized only in the user context](#Variables-that-are-recognized-only-in-the-user-context)
 
 >[!IMPORTANT]
->Onedrive and Sharepoint variables are considered different products that's the reason why are not listed here, on the windows 10 variables.
+>Onedrive and Sharepoint variables are considered different products, that is why they are not listed here as Windows 10 variables.
 
 ## Variables that are processed for the operating system and in the context of each user
 
