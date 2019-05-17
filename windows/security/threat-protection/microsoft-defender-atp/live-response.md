@@ -1,5 +1,5 @@
 ---
-title: Investigate entities on machines using live response in Windows Defender ATP
+title: Investigate entities on machines using live response in Microsoft Defender ATP
 description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real-time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file, 
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.topic: article
 # Investigate entities on machines using live response
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 
 
-Live response is a capability that gives you instantaneous access to a machine using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time. 
+Live response is a capability that gives you instantaneous access to a machine using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats â€“ real-time. 
 
 Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
@@ -75,7 +75,7 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a machine 
 
-1. Log in to Windows Defender Security Center.
+1. Log in to Microsoft Defender Security Center.
 2. Navigate to the machines list page and select a machine to investigate. The machine page opens.
 
     >[!NOTE]
