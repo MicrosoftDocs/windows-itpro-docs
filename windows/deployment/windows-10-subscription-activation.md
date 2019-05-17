@@ -18,7 +18,7 @@ ms.topic: article
 
 Starting with Windows 10, version 1703, Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro to **Windows 10 Enterprise** automatically if they are subscribed to Windows 10 Enterprise E3 or E5.
 
-With Windows 10, version 1903, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro for Education to the Enterprise grade edition for educational institutions – **Windows 10 Education**. 
+With Windows 10, version 1903, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education to the Enterprise grade edition for educational institutions – **Windows 10 Education**. 
 
 The Subscription Activation feature eliminates the need to manually deploy Windows 10 Enterprise or Education images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering GVLKs, and subsequently rebooting client devices.
 
@@ -164,7 +164,7 @@ If you’re running Windows 7, it can be more work.  A wipe-and-load approach w
 
 The following policies apply to acquisition and renewal of licenses on devices:
 - Devices that have been upgraded will attempt to renew licenses about every 30 days, and must be connected to the Internet to successfully acquire or renew a license.
-- If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro for Education. As soon as the device is connected to the Internet again, the license will automatically renew.
+- If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro Education. As soon as the device is connected to the Internet again, the license will automatically renew.
 - Up to five devices can be upgraded for each user license. 
 - If a device the meets requirements and a licensed user signs in on that device, it will be upgraded.
 
