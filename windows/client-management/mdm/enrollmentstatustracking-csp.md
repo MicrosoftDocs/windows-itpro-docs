@@ -23,7 +23,7 @@ The EnrollmentStatusTracking CSP was added in Windows 10, version 1903.
 
 The following diagram shows the EnrollmentStatusTracking CSP in tree format.
 
-![tree diagram for enrollmentstatustracking csp](images/Provisioning_CSP_EnrollmentStatusTracking.png)
+![tree diagram for enrollmentstatustracking csp](images/provisioning_csp_enrollmentstatustracking.png)
 
 <a href="" id="vendor-msft"></a>**./Vendor/MSFT**  
 For device context, use **./Device/Vendor/MSFT** path and for user context, use **./User/Vendor/MSFT** path.
@@ -33,6 +33,68 @@ Required. Root node for the CSP. This node is supported in both user context and
 Provides the settings to communicate what policies the ESP must block on. Using these settings, policy providers register themselves and the set of policies that must be tracked. The ESP includes the counts of these policy settings in the status message that is displayed to the user. It also blocks ESP until all the policies are provisioned. The policy provider is expected to drive the status updates by updating the appropriate node values, which is then reflected in the ESP status message.
 
 Scope is permanent. Supported operation is Get.
+
+<a href="" id="enrollmentstatustracking-devicepreparation"></a>**EnrollmentStatusTracking/DevicePreparation**  
+Required. This node is supported only in device context.  
+Specifies the settings that ESP reads during the device preparation phase. These setting are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
+
+Scope is permanent. Supported operation is Get.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders**  
+Required. This node is supported only in device context.  
+Indicates to the ESP that it should wait in the device preparation phase until all the policy providers have their InstallationState node set as 2 (NotRequired) or 3 (Completed).
+
+Scope is permanent. Supported operation is Get.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/_ProviderName_**  
+Optional. This node is supported only in device context.  
+Represents a policy provider for the ESP. The node should be given a unique name for the policy provider. Registration of a policy provider indicates to ESP that it should block in the device preparation phase until the provider sets its InstallationState node to 2 (NotRequired) or 3 (Completed). Once all the registered policy providers are marked as Completed or NotRequired, the ESP progresses to the device setup phase.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-installationstate"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/InstallationState**  
+Required. This node is supported only in device context.  
+Communicates the policy provider installation state back to ESP.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+Value type is integer. Expected values are as follows:
+- 1 - NotInstalled
+- 2 - NotRequired
+- 3 - Completed
+- 4 - Error
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-lasterror"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/LastError**  
+Required. This node is supported only in device context.  
+Represents the last error code during the application installation process. If a policy provider fails to install, it can optionally set an HRESULT error code that the ESP can display in an error message to the user. ESP reads this node only when the provider's InstallationState node is set to 4 (Error). This node must be set only by the policy provider, and not by the MDM server.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+Value type is integer.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-timeout"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/Timeout**  
+Optional. This node is supported only in device context.  
+Represents the amount of time, in minutes, that the provider installation process can run before the ESP shows an error. Provider installation is complete when the InstallationState node is set to 2 (NotRequired) or 3 (Completed).  If no timeout value is specified, ESP selects the default timeout value of 15 minutes.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+Value type is integer. The default is 15 minutes.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes**  
+Required. This node is supported only in device context.  
+This node's children register which resource types the policy provider supports for provisioning. Only registered providers for a particular resource type will have their policies incorporated with ESP tracking message.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes-Apps"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes/Apps**  
+Required. This node is supported only in device context.  
+This node specifies if the policy provider is registered for app provisioning.
+
+Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+
+Value type is boolean. Expected values are as follows:
+- false - Indicates that the policy provider is not registered for app provisioning. This is the default.
+- true - Indicates that the policy provider is registered for app provisioning.
 
 <a href="" id="enrollmentstatustracking-setup"></a>**EnrollmentStatusTracking/Setup**  
 Required. This node is supported in both user context and device context.  
@@ -116,67 +178,5 @@ ESP sets this node when it completes. Providers can query this node to determine
 Scope is permanent. Supported operation is Get.
 
 Value type is boolean. Expected values are as follows:
-- false - Indicates that ESP is complete. This is the default.
-- true - Indicates that ESP is displayed, and provisioning is still going.
-
-<a href="" id="enrollmentstatustracking-devicepreparation"></a>**EnrollmentStatusTracking/DevicePreparation**  
-Required. This node is supported only in device context.  
-Specifies the settings that ESP reads during the device preparation phase. These setting are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
-
-Scope is permanent. Supported operation is Get.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders**  
-Required. This node is supported only in device context.  
-Indicates to the ESP that it should wait in the device preparation phase until all the policy providers have their InstallationState node set as 2 (NotRequired) or 3 (Completed).
-
-Scope is permanent. Supported operation is Get.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/_ProviderName_**  
-Optional. This node is supported only in device context.  
-Represents a policy provider for the ESP. The node should be given a unique name for the policy provider. Registration of a policy provider indicates to ESP that it should block in the device preparation phase until the provider sets its InstallationState node to 2 (NotRequired) or 3 (Completed). Once all the registered policy providers are marked as Completed or NotRequired, the ESP progresses to the device setup phase.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-installationstate"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/InstallationState**  
-Required. This node is supported only in device context.  
-Communicates the policy provider installation state back to ESP.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is integer. Expected values are as follows:
-- 1 - NotInstalled
-- 2 - NotRequired
-- 3 - Completed
-- 4 - Error
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-lasterror"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/LastError**  
-Required. This node is supported only in device context.  
-Represents the last error code during the application installation process. If a policy provider fails to install, it can optionally set an HRESULT error code that the ESP can display in an error message to the user. ESP reads this node only when the provider's InstallationState node is set to 4 (Error). This node must be set only by the policy provider, and not by the MDM server.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is integer.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-timeout"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/Timeout**  
-Optional. This node is supported only in device context.  
-Represents the amount of time, in minutes, that the provider installation process can run before the ESP shows an error. Provider installation is complete when the InstallationState node is set to 2 (NotRequired) or 3 (Completed).  If no timeout value is specified, ESP selects the default timeout value of 15 minutes.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is integer. The default is 15 minutes.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes**  
-Required. This node is supported only in device context.  
-This node's children register which resource types the policy provider supports for provisioning. Only registered providers for a particular resource type will have their policies incorporated with ESP tracking message.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes-Apps"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes/Apps**  
-Required. This node is supported only in device context.  
-This node specifies if the policy provider is registered for app provisioning.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is boolean. Expected values are as follows:
-- false - Indicates that the policy provider is not registered for app provisioning. This is the default.
-- true - Indicates that the policy provider is registered for app provisioning.
+- true - Indicates that ESP has completed. This is the default.
+- false - Indicates that ESP is displayed, and provisioning is still going.
