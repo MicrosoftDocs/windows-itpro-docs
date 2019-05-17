@@ -1443,11 +1443,11 @@ To turn this Off:
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
 
-    -and-
+  -and-
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
 
-    -and-
+  -and-
 
    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
 
