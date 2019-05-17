@@ -29,7 +29,7 @@ When using the XML files MigDocs.xml, MigApp.xml, and MigUser.xml, you can use e
 
 You can use these variables within sections in the .xml files with `context=UserAndSystem`, `context=User`, and `context=System`.
 
-| Variable  | Explanationr |
+| Variable  | Explanation |
 | :---: | ------------- |
 |ALLUSERSAPPDATA |Same as CSIDL_COMMON_APPDATA.|
 |ALLUSERSPROFILE |Refers to %PROFILESFOLDER%\Public or %PROFILESFOLDER%\all users.|
