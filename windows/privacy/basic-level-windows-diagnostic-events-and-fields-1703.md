@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ---
 
 
@@ -1464,7 +1464,7 @@ The following fields are available:
 
 ### Census.Processor
 
-This event sends data about the processor (architecture, speed, number of cores, manufacturer, and model number), to help keep Windows up to date.
+This event sends data about the processor to help keep Windows up to date.
 
 The following fields are available:
 
@@ -2954,26 +2954,43 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
+## Privacy logging notification events
+
+### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
+
+This event returns data to report the efficacy of a single-use tool to inform users impacted by a known issue and to take corrective action to address the issue.
+
+The following fields are available:
+
+- **cleanupTask**  Indicates whether the task that launched the dialog should be cleaned up.
+- **cleanupTaskResult**  The return code of the attempt to clean up the task used to show the dialog.
+- **deviceEvaluated**  Indicates whether the device was eligible for evaluation of a known issue.
+- **deviceImpacted**  Indicates whether the device was impacted by a known issue.
+- **modalAction**  The action the user took on the dialog that was presented to them.
+- **modalResult**  The return code of the attempt to show a dialog to the user explaining the issue.
+- **resetSettingsResult**  The return code of the action to correct the known issue.
+
+
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates a remedial plug-in is applicable if/when such a plug-in is detected. This is used to ensure Windows is up to date.
+deny
 
 The following fields are available:
 
 - **ActionName**  The name of the action to be taken by the plug-in.
-- **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
+- **AppraiserBinariesValidResult**  Indicates whether the plug-in was appraised as valid.
 - **AppraiserDetectCondition**  Indicates whether the plug-in passed the appraiser's check.
 - **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
 - **AppraiserTaskDisabled**  Indicates the appraiser task is disabled.
 - **AppraiserTaskValidFailed**  Indicates the Appraiser task did not function and requires intervention.
 - **CV**  Correlation vector
 - **DateTimeDifference**  The difference between local and reference clock times.
-- **DateTimeSyncEnabled**  Indicates whether the datetime sync plug-in is enabled.
+- **DateTimeSyncEnabled**  Indicates whether the Datetime Sync plug-in is enabled.
 - **DaysSinceLastSIH**  The number of days since the most recent SIH executed.
 - **DaysToNextSIH**  The number of days until the next scheduled SIH execution.
-- **DetectedCondition**  Indicates whether detect condition is true and the perform action will be run.
+- **DetectedCondition**  Indicates whether detected condition is true and the perform action will be run.
 - **EvalAndReportAppraiserBinariesFailed**  Indicates the EvalAndReportAppraiserBinaries event failed.
 - **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
 - **EvalAndReportAppraiserRegEntriesFailed**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
@@ -2987,12 +3004,12 @@ The following fields are available:
 - **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Reload**  True if SIH reload is required.
-- **RemediationNoisyHammerAcLineStatus**  Event that indicates the AC Line Status of the machine.
+- **RemediationNoisyHammerAcLineStatus**  Indicates the AC Line Status of the device.
 - **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
 - **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
 - **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
 - **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
-- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent hammer task ran.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent Noisy Hammer task ran.
 - **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
 - **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
 - **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
@@ -3042,7 +3059,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Completed
 
-This event enables completion tracking of a process that remediates issues preventing security and quality updates.
+This event is sent when Windows Update sediment remediations have completed on the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
@@ -3058,12 +3075,12 @@ The following fields are available:
 - **CV**  The Correlation Vector.
 - **DateTimeDifference**  The difference between the local and reference clocks.
 - **DaysSinceOsInstallation**  The number of days since the installation of the Operating System.
-- **DiskMbCleaned**  The amount of space cleaned on the hard disk, measured in Megabytes.
+- **DiskMbCleaned**  The amount of space cleaned on the hard disk, measured in megabytes.
 - **DiskMbFreeAfterCleanup**  The amount of free hard disk space after cleanup, measured in Megabytes.
 - **DiskMbFreeBeforeCleanup**  The amount of free hard disk space before cleanup, measured in Megabytes.
 - **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
 - **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
-- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
+- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in megabytes.
 - **HResult**  The result of the event execution.
 - **LatestState**  The final state of the plug-in component.
 - **PackageVersion**  The package version for the current Remediation.
@@ -3118,7 +3135,7 @@ The following fields are available:
 - **usoScanIsNetworkMetered**  TRUE if the device is currently connected to a metered network.
 - **usoScanIsNoAutoUpdateKeyPresent**  TRUE if no Auto Update registry key is set/present.
 - **usoScanIsUserLoggedOn**  TRUE if the user is logged on.
-- **usoScanPastThreshold**  TRUE if the most recent USO (Update Session Orchestrator) scan is past the threshold (late).
+- **usoScanPastThreshold**  TRUE if the most recent Update Session Orchestrator (USO) scan is past the threshold (late).
 - **usoScanType**  The type of USO (Update Session Orchestrator) scan: "Interactive" or "Background".
 - **WindowsHyberFilSysSizeInMegabytes**  The size of the Windows Hibernation file, measured in Megabytes.
 - **WindowsInstallerFolderSizeInMegabytes**  The size of the Windows Installer folder, measured in Megabytes.
@@ -3247,13 +3264,13 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Started
 
-This event reports whether a plug-in started, to help ensure Windows is up to date.
+deny
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of Remediation.
+- **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
@@ -3662,7 +3679,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Applicable
 
-Indicates whether a given plugin is applicable.
+This event is sent when the Windows Update sediment remediations launcher finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3678,7 +3695,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Completed
 
-Indicates whether a given plugin has completed its work.
+This event is sent when the Windows Update sediment remediations launcher finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3724,7 +3741,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Started
 
-This event indicates that a given plug-in has started.
+This event is sent when the Windows Update sediment remediations launcher starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3762,7 +3779,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Applicable
 
-This event indicates whether a given plug-in is applicable.
+This event is sent when the Windows Update sediment remediations service finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3778,7 +3795,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Completed
 
-This event indicates whether a given plug-in has completed its work.
+This event is sent when the Windows Update sediment remediations service finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3831,7 +3848,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Started
 
-This event indicates a specified plug-in has started. This information helps ensure Windows is up to date.
+This event is sent when the Windows Update sediment remediations service starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3987,7 +4004,7 @@ The following fields are available:
 
 ### SIHEngineTelemetry.EvalApplicability
 
-This event is sent when targeting logic is evaluated to determine if a device is eligible a given action.
+This event is sent when targeting logic is evaluated to determine if a device is eligible for a given action.
 
 
 
@@ -4181,7 +4198,7 @@ The following fields are available:
 - **RelatedCV**  The Correlation Vector that was used before the most recent change to a new Correlation Vector.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
-- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
 - **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
