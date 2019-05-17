@@ -8,12 +8,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
-manager: dansimp
+author: medgarmedgar
+ms.author: v-medgar
+manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 06/05/2018
+ms.date: 05/16/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -95,6 +95,8 @@ The following table lists management options for each setting, beginning with Wi
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.22 Activity History](#bkmk-act-history) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.23 Voice Activation](#bkmk-voice-act) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
@@ -205,6 +207,8 @@ See the following table for a summary of the management settings for Windows Ser
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.22 Activity History](#bkmk-act-history) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.23 Voice Activation](#bkmk-voice-act) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)  |
 | [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -812,6 +816,10 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 - [18.20 App Diagnostics](#bkmk-priv-diag)
 
 - [18.21 Inking & Typing](#bkmk-priv-ink)
+
+- [18.22 Activity History](#bkmk-act-history)
+
+- [18.23 Voice Activation(#bkmk-voice-act)
 
 ### <a href="" id="bkmk-general"></a>18.1 General
 
@@ -1422,6 +1430,44 @@ If you're running at least Windows 10, version 1703, you can turn off updates to
   -or-
 
  - Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
+
+
+
+
+### <a href="" id="bkmk-activity-history"></a>18.22 Activity History
+In the **Activity History** area, you can choose turn of tracking of your Activity History.  
+
+To turn this Off:
+
+    - Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
+
+-OR-
+
+    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
+
+  -and-
+
+    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
+
+  -and-
+
+    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
+
+
+-OR-
+ 
+    - Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+
+  -and-
+
+    - Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+
+  -and-
+
+    - Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+    
+
+### <a href="" id="bkmk-voice-activation"></a>18.23 Voice Activation
 
 
 > [!NOTE]
