@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -141,7 +141,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
 2. Right-click the **cdp** folder and click **Properties**.  Click the **Sharing** tab.  Click **Advanced Sharing**.
-3. Select **Share this folder**. Type **cdp$** in **Share name:**. Click **Permissions**.
+3. Select **Share this folder**. Type **cdp$** in **Share name**. Click **Permissions**.
 ![cdp sharing](images/aadj/cdp-sharing.png)
 4. In the **Permissions for cdp$** dialog box, click **Add**.
 5. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, click **Object Types**.  In the **Object Types** dialog box, select **Computers**, and then click **OK**.
@@ -280,10 +280,10 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 1. Sign-in to the [Microsoft Azure Portal](https://portal.azure.com) and select **Microsoft Intune**.
 2. Click **Device configuration**.  In the **Device Configuration** blade, click **Create profile**.
 ![Intune Create Profile](images/aadj/intune-create-device-config-profile.png)
-3. In the **Create profle** blade, type **Enterprise Root Certificate** in **Name**.  Provide a description.  Select **Windows 10 and later** from the **Platform** list.  Select **Trusted certificate** from the **Profile type** list.  Click **Configure**.
+3. In the **Create profile** blade, type **Enterprise Root Certificate** in **Name**.  Provide a description.  Select **Windows 10 and later** from the **Platform** list.  Select **Trusted certificate** from the **Profile type** list.  Click **Configure**.
 4. In the **Trusted Certificate** blade, use the folder icon to browse for the location of the enterprise root certificate file you created in step 8 of [Export Enterprise Root certificate](#export-enterprise-root-certificate).  Click **OK**.  Click **Create**.
 ![Intune Trusted Certificate Profile](images/aadj/intune-create-trusted-certificate-profile.png)
-5. In the **Enterprise Root Certificate** blade, click **Assignmnets**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
+5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
 
