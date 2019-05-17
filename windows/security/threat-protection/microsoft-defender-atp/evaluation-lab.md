@@ -18,7 +18,7 @@ ms.topic: article
 
 # Microsoft Defender ATP evaluation lab
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and machine configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
@@ -64,7 +64,7 @@ The machine will automatically be onboarded to your tenant with the recommended 
 
 
 
-1. Select the help icon > **Windows Defender ATP evaluation lab**.
+1. Select the help icon > **Microsoft Defender ATP evaluation lab**.
 
     ![Image of the help icon with the evaluation lab menu](images/evaluation-lab-menu.png)
 
@@ -87,16 +87,16 @@ The machine will automatically be onboarded to your tenant with the recommended 
     >[!NOTE]
     >The password is only displayed once. Be sure to save it for later use.
 
-5. The machine will be setup. This may take approximately 30 minutes. 
+5. Machine set up begins. This can take up to approximately 30 minutes. 
 
-The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts fired through the simulation.
+The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
 
 ## Simulate attack scenarios
 Use the test machines to run attack simulations by connecting to them. 
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
-You can also use [Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
+You can also use [Advanced hunting](advanced-hunting.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 1. Connect to your machine and run an attack simulation by selecting **Connect**. 
 
@@ -109,6 +109,7 @@ You can also use [Advanced hunting](advanced-hunting-windows-defender-advanced-t
     >[!NOTE]
     >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     > ![Image of reset password](images/reset-password-test-machine.png)
+    > The machine will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the machine creation step. 
 
@@ -123,11 +124,7 @@ Hunt for attack evidence through Advanced hunting by using the rich query langua
 
 
 ## Simulation results
-
-<!---
-Check out the simulation overview appear in your lab, clicking on the incidents, alerts and actions will lead you to our incidents queue, alerts queue, and investigations queue, allowing you to deep-dive into the relevant alerts and investigations and explore the rich context provided on your simulated attack.
-
---->
+Get a full overview of the simulation results, all in one place, allowing you to drill down to the relevant pages with every detail you need.
 
 View the machine details page by selecting the machine from the table. You'll be able to drill down on relevant alerts and investigations by exploring the rich context provided on the attack simulation. 
 
@@ -137,5 +134,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-![Image of provide feedback](images/eval-feedback.png.png)
+![Image of provide feedback](images/eval-feedback.png)
 
