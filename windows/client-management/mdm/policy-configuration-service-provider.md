@@ -3166,6 +3166,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowbuildpreview" id="system-allowbuildpreview">System/AllowBuildPreview</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-allowdevicenameindiagnosticdata" id="system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -3224,6 +3227,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-telemetryproxy" id="system-telemetryproxy">System/TelemetryProxy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-turnofffilehistory" id="system-turnofffilehistory">System/TurnOffFileHistory</a>
   </dd>
 </dl>
 
@@ -4391,6 +4397,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOModifyCacheDrive](./policy-csp-deliveryoptimization.md#deliveryoptimization-domodifycachedrive)
 -   [DeliveryOptimization/DOMonthlyUploadDataCap](./policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 -   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 -   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxforegroundbandwidth)
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](./policy-csp-deliveryoptimization.md#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
@@ -4936,6 +4943,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Storage/AllowDiskHealthModelUpdates](./policy-csp-storage.md#storage-allowdiskhealthmodelupdates)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/AllowBuildPreview](./policy-csp-system.md#system-allowbuildpreview)
+-   [System/AllowCommercialDataPipeline](./policy-csp-system.md#system-allowcommercialdatapipeline)
 -   [System/AllowDeviceNameInDiagnosticData](./policy-csp-system.md#system-allowdevicenameindiagnosticdata)
 -   [System/AllowFontProviders](./policy-csp-system.md#system-allowfontproviders)
 -   [System/AllowLocation](./policy-csp-system.md#system-allowlocation)
@@ -4951,6 +4959,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
 -   [System/LimitEnhancedDiagnosticDataWindowsAnalytics](./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics)
 -   [System/TelemetryProxy](./policy-csp-system.md#system-telemetryproxy)
+-   [System/TurnOffFileHistory](./policy-csp-system.md#system-turnofffilehistory)
 -   [SystemServices/ConfigureHomeGroupListenerServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurehomegrouplistenerservicestartupmode)
 -   [SystemServices/ConfigureHomeGroupProviderServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurehomegroupproviderservicestartupmode)
 -   [SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurexboxaccessorymanagementservicestartupmode)
