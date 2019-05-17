@@ -17,8 +17,6 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1903, also known as the Windows 10 May 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1809. 
 
-Also see [What's New in Windows Server, version 1903](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1903).
-
 >[!NOTE]
 >New disk space requirement for Windows 10, version 1903 applies only to OEMs for the manufacture of new PCs. This new requirement does not apply to existing devices.  PCs that don’t meet new device disk space requirements will continue to receive updates and the 1903 update will require about the same amount of free disk space as previous updates.  There is no change for current devices compared to previous releases.
 
@@ -47,10 +45,10 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 
 ## Servicing
 
-- [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) – Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
-- **Reserved Disk Space**: New and wipe-and-load installations of Windows 10 version 1903 will automatically reserve disk space to be used by Feature and Quality Updates, ensuring the updates do not fail for disk space reasons. 
-- **Automatic Restart Sign-on (ARSO)**: Windows will automatically logon as the user and and lock the device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
-- **Windows Update for Business**: There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
+- [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
+- [**Reserved Disk Space**](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/Windows-10-and-reserved-storage/ba-p/428327): New and wipe-and-load installations of Windows 10 version 1903 will automatically reserve disk space to be used by Feature and Quality Updates, ensuring the updates do not fail for disk space reasons. 
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and and lock the device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
 - **Improved update notifications**: When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
@@ -117,7 +115,8 @@ Several new features are coming in the next version of Edge. See the [news from 
 
 ## See Also
 
+[What's New in Windows Server, version 1903](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1903): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
-[What's new in Windows 10 for developers](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today/#2Lp8FUFQ3Jm8KVcq.97).
+[What's new in Windows 10 for developers](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today/#2Lp8FUFQ3Jm8KVcq.97): New and updated features in Windows 10 that are of interest to developers.
