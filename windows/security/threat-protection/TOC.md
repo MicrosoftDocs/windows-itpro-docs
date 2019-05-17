@@ -67,7 +67,7 @@
 ####### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
  
-###### [Investigate entities using Live response](microsoft-defender-atp/p/live-response.md)
+###### [Investigate entities using Live response](microsoft-defender-atp/live-response.md)
 #######[Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
