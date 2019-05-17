@@ -21,16 +21,12 @@ Each release of Windows 10 adds new features and functionality; occasionally we 
 
 The following features and functionalities are removed from the installed product image for Windows 10, version 1903, or are planned for removal in an upcoming release. Applications or code that depend on these features won't function in this release unless you use another method.   
 
-|Feature	|Status|Details|
+|Feature	|Details|
 |-----------|--------------------|---------
-|Cortana voice commands (VCD). |Pending removal|A new Cortana UWP app is being developed.  After upgrading to 19H1 AND the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. App developers can implement a [Cortana skill](​https://www.microsoft.com/en-us/cortana/skills).|
-|Cortana on Android is removing all Cortana cross-device functionality from it's application in November.  |Removed |This will remove all of the mirrored notifications and Cortana natural language skills for texting or calling a mobile device and finding their phone. The **Your Phone** applicaiton on PC is offering a partial replacement for text notifications from Android phones but not the full spectrum of features. |
-|XDDM-based remote display driver|Pending Removal|Starting with this release the Remote Desktop Services uses a Windows Display Driver Model (WDDM) based Indirect Display Driver (IDD) for a single session remote desktop. The support for Windows 2000 Display Driver Model (XDDM) based remote display drivers will be removed in a future release. Independent Software Vendors that use XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote display indirect display driver ISVs can reach out to [rdsdev@microsoft.com](mailto:rdsdev@microsoft.com).
-|Desktop messaging app doesn't offer messages sync |Removed|The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. We will be removing the messaging app from Desktop devices in a future release.  When sync is removed, you will only be able to access messages from the device that received the message.|
-|Print 3D app|Removed|The Print 3D app will no longer be installed automatically in a future release of Windows. It will remain available for download from the Store. To 3D print objects on a new Windows devices, you must first install the app (1P or 3P app) from the Store.|
-|My People / People|Pending removal|The **My People** experience will be removed in a future release.|
-|UCS log collection tool|Pending removal|The UCS log collection tool is being replaced by the Feedback hub|
-|Wi-Fi WEP and TKIP|Removed|Wi-Fi networks that are secured with passwords using older WEP and TKIP protocals are not as secure as those secured with new protocols such as WPA, WPA2, and soon WPA3. In this release, connecting to WEP or TKIP network will show a warning message that the network is not secure. In a future release any connection to a Wi-Fi network using these old protocols will be disallowed. |
+|Cortana voice commands (VCD). |A new Cortana UWP app is being developed.  After upgrading to 19H1 AND the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. App developers can implement a [Cortana skill](​https://www.microsoft.com/en-us/cortana/skills).|
+|XDDM-based remote display driver|Starting with this release the Remote Desktop Services uses a Windows Display Driver Model (WDDM) based Indirect Display Driver (IDD) for a single session remote desktop. The support for Windows 2000 Display Driver Model (XDDM) based remote display drivers will be removed in a future release. Independent Software Vendors that use XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote display indirect display driver ISVs can reach out to [rdsdev@microsoft.com](mailto:rdsdev@microsoft.com).
+|Print 3D app|The Print 3D app will no longer be installed automatically in a future release of Windows. It will remain available for download from the Store. To 3D print objects on a new Windows devices, you must first install the app (1P or 3P app) from the Store.|
+
 
 ## Features we’re no longer developing
 
@@ -40,5 +36,8 @@ If you have feedback about the proposed replacement of any of these features, yo
 
 |Feature	|Details|
 |-----------|---------------------|
+| Desktop messaging app doesn't offer messages sync| The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. We plan to remove this feature for devices that aren’t cellular enabled in a future release. When sync is removed, you will only be able to access messages from the device that received the message. |
+| Taskbar settings roaming| Roaming of taskbar settings is no longer being developed and we plan to disable this capability in a future release|
+|Wi-Fi WEP and TKIP|Wi-Fi networks that are secured with passwords using older WEP and TKIP protocals are not as secure as those secured with new protocols such as WPA, WPA2, and soon WPA3. In this release, connecting to WEP or TKIP network will show a warning message that the network is not secure. In a future release any connection to a Wi-Fi network using these old protocols will be disallowed. |
 |Windows To Go|Windows To Go is no longer being developed. <br><br>The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.|
 
