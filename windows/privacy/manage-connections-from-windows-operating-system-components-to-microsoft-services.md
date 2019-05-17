@@ -819,7 +819,7 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 - [18.22 Activity History](#bkmk-act-history)
 
-- [18.23 Voice Activation(#bkmk-voice-act)
+- [18.23 Voice Activation](#bkmk-voice-act)
 
 ### <a href="" id="bkmk-general"></a>18.1 General
 
@@ -1434,40 +1434,40 @@ If you're running at least Windows 10, version 1703, you can turn off updates to
 
 
 
-### <a href="" id="bkmk-activity-history"></a>18.22 Activity History
+### <a href="" id="bkmk-act-history"></a>18.22 Activity History
 In the **Activity History** area, you can choose turn of tracking of your Activity History.  
 
 To turn this Off:
 
-    - Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
+   - Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
 
 -OR-
 
-    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
+   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
 
   -and-
 
-    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
+   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
 
   -and-
 
-    - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
+   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
 
 
 -OR-
  
-    - Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+   - Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
   -and-
 
-    - Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+   - Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
   -and-
 
-    - Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+  - Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
     
 
-### <a href="" id="bkmk-voice-activation"></a>18.23 Voice Activation
+### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
 
 > [!NOTE]
