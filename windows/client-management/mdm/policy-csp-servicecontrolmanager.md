@@ -44,7 +44,7 @@ ms.date: 05/10/2019
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
