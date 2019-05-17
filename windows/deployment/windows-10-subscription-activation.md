@@ -129,10 +129,10 @@ Devices running Windows 10 Pro, version 1703 or Windows 10 Pro Education, versio
 
 The following figures summarize how the Subscription Activation model works:
 
-Before Windows 10, version 1903:
+Before Windows 10, version 1903:<br>
 ![1703](images/before.png)
 
-After Windows 10, version 1903:
+After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
 Note: 
