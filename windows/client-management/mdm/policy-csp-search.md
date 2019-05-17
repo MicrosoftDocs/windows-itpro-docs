@@ -223,7 +223,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Controls if the user can configure search to Find My Files mode, which will search files in secondary hard drives and also outside of the user profile.
+Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files does not allow users to search files or locations to which they do not have access.
 
 <!--/Description-->
 <!--ADMXMapped-->
