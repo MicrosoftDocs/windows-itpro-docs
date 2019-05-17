@@ -24,12 +24,12 @@ This article lists new and updated features and content that are of interest to 
 
 ### Windows Autopilot
 
-The following Windows Autopilot features are available in Windows 10, version 1903 and later:
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. The following Windows Autopilot features are available in Windows 10, version 1903 and later:
 
 - [Windows Autopilot for white glove deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) is new in this version of Windows. "White glove" deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
 - The Intune [enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
 - [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is [disabled by default](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-scenarios#capabilities) for all Windows 10 Pro Education, and Enterprise SKUs.
-- Windows Autopilot is [self-updating during OOBE](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-scenarios#capabilities). Starting with the Windows 10, version 1903, Autopilot functionally and critical updates will begin downloading automatically during OOBE.
+- Windows Autopilot is [self-updating during OOBE](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-scenarios#capabilities). Starting with the Windows 10, version 1903, Autopilot functional and critical updates will begin downloading automatically during OOBE.
 
 ### Windows 10 Subscription Activation
 
