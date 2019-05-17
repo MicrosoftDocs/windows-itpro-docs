@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 05/01/2019
 ---
 
 # Policy CSP - DeviceLock
@@ -1205,14 +1205,43 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
