@@ -34,7 +34,7 @@ When you enable this feature, you'll be able to take advantage of the automated 
 ## Live response
 When you enable this feature, users with the appropriate permissions can initiate a live response session on machines. 
 
-For more information on role assignments see, [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md). 
+For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 ## Live response unsigned script execution
 Enabling this feature allows you to run unsigned scripts in a live response session. 
