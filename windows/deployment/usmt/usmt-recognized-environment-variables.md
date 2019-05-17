@@ -96,7 +96,7 @@ You can use these variables in the .xml files within sections with `context=User
 | Variable  | Explanation |
 | :---: | ------------- |
 |APPDATA|Same as CSIDL_APPDATA.|
-|CSIDL_ADMINTOOLS|The file-system directory that is used to store administrative tools for an individual user. The Microsoft® Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
+|CSIDL_ADMINTOOLS|The file-system directory that is used to store administrative tools for an individual user. The Microsoft Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
 |CSIDL_ALTSTARTUP|The file-system directory that corresponds to the user's non-localized Startup program group.|
 |CSIDL_APPDATA|The file-system directory that serves as a common repository for application-specific data. A typical path is C:\Documents and Settings\username\Application Data or C:\Users\username\AppData\Roaming.|
 |CSIDL_BITBUCKET|The virtual folder that contains the objects in the user's Recycle Bin.|
