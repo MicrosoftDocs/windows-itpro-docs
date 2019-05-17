@@ -31,7 +31,7 @@ You can use these variables within sections in the .xml files with `context=User
 
 | Variable  | Explanationr |
 | :---: | ------------- |
-|ALLUSERSAPPDATA |Same as CSIDL_COMMON_APPDATA|
+|ALLUSERSAPPDATA |Same as CSIDL_COMMON_APPDATA.|
 |ALLUSERSPROFILE |Refers to %PROFILESFOLDER%\Public or %PROFILESFOLDER%\all users.|
 |COMMONPROGRAMFILES |Same as CSIDL_PROGRAM_FILES_COMMON.|
 |COMMONPROGRAMFILES(X86)| Refers to the C:\Program Files (x86)\Common Files folder on 64-bit systems.|
