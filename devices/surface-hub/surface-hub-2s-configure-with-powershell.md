@@ -1,6 +1,6 @@
 ---
-title: "What's new in Surface Hub 2S"
-description: "Learn more about new features in Surface Hub 2S."
+title: "Configure Surface Hub 2S accounts via PowerShell"
+description: "Learn how to configure Surface Hub 2S accounts with PowerShell"
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,4 +11,4 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# What's new in Surface Hub 2S
+# Configure Surface Hub 2S accounts via PowerShell
