@@ -119,7 +119,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | | [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)| Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates. Set to **100** - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 | 28. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. <br /> **0**: notify the user before downloading the update <br /> **1**: auto install the update and then notify the user to schedule a device restart <br /> **2**: auto install and restart (default) <br /> **3**: auto install and restart at a specified time <br /> **4**: auto install and restart without end-user control <br /> **5**: turn off automatic updates 
 
-### <a href="" id="bkmk-mdm-whitelist"></a> Allowed (aka "Whitelisted") traffic for Microsoft InTune / MDM configurations
+### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic (aka "Whitelisted") for Microsoft InTune / MDM configurations
 
 |**Allowed traffic endpoints** | 
 | --- | 
