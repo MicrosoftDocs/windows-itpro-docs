@@ -1425,7 +1425,7 @@ To turn off Inking & Typing data collection (note: there is no Group Policy for 
 
 If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
 
- - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data**
+ - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data** 
 
   -or-
 
