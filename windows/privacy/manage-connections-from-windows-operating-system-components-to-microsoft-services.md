@@ -1437,32 +1437,31 @@ In the **Activity History** area, you can choose turn of tracking of your Activi
 
 To turn this Off:
 
-   - Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
+- Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes. 
 
 -OR-
 
-   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Enables Activity Feed**. 
 
-  -and-
+     -and-
 
-   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow publishing of User Activities**. 
 
-  -and-
+     -and-
 
-   - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
-
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **App Privacy** > **OS Policies** named **Allow upload of User Activities** 
 
 -OR-
  
-   - Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
-  -and-
+     -and-
 
-   - Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
-  -and-
+     -and-
 
-  - Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
     
 
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
