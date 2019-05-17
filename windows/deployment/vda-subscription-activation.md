@@ -93,7 +93,7 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 - In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
 - In step 11, during setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in and add the bulk token using your organization's credentials.
 - In step 15, sub-step 2, when entering the PackagePath, use the project name you entered in step 9 (ex: **Desktop Bulk Enrollment Token Pro GVLK.ppkg**)
-- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rpd-settings-for-azure).
+- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rdp-settings-for-azure).
 
 ## Azure Gallery VMs
 
@@ -119,7 +119,7 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 13. On the Finish page, click **Create**.
 14. Copy the .ppkg file to the remote Virtual machine.  Double click to initiate the provisioning package install.  This will reboot the system.
 
-- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described [below](#create-custom-rpd-settings-for-azure).
+- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described [below](#create-custom-rdp-settings-for-azure).
 
 ## Create custom RDP settings for Azure
 
