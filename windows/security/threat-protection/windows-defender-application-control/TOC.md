@@ -34,7 +34,6 @@
 ### [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
-### [Sideload Win32 apps on S mode](sideloading-win32-apps-on-windows-10-s-mode-devices.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
 
