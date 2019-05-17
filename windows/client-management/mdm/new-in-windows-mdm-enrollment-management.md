@@ -89,6 +89,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1903:</p>
 <ul>
+<li>[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)</li>
+<li>[DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)</li>
+<li>[Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)</li>
 <li>[Power/EnergySaverBatteryThresholdOnBattery](policy-csp-power.md#power-energysaverbatterythresholdonbattery)</li>
 <li>[Power/EnergySaverBatteryThresholdPluggedIn](policy-csp-power.md#power-energysaverbatterythresholdpluggedin)</li>
 <li>[Power/SelectLidCloseActionOnBattery](policy-csp-power.md#power-selectlidcloseactiononbattery)</li>

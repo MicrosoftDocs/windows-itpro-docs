@@ -354,6 +354,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+> [!Warning]
+> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
 Value type is integer. Supported values:
@@ -412,9 +415,12 @@ Value type is integer. Supported values:
 
 <!--/Scope-->
 <!--Description-->
+> [!Warning]
+> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
 
-> [!Note]  
+> [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
 
 Value type is integer. Supported values:
@@ -514,4 +520,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.

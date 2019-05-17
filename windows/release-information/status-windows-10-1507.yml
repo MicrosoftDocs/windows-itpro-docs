@@ -60,6 +60,7 @@ sections:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='380msg'></div><b>Unable to access some gov.uk websites</b><br>Access to gov.uk websites that don’t support of “HSTS” may be inoperative<br><br><a href = '#380msgdesc'>See details ></a></td><td>OS Build 10240.18210<br><br>May 14, 2019<br><a href ='https://support.microsoft.com/help/4498353' target='_blank'>KB4498353</a></td><td>Acknowledged<br><a href = '' target='_blank'></a></td><td>May 16, 2019 <br>01:57 PM PT</td></tr>
       <tr><td><div id='323msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\".<br><br><a href = '#323msgdesc'>See details ></a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480962' target='_blank'>KB4480962</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
       </table>
       "
@@ -71,6 +72,15 @@ sections:
         <div>
         </div> 
       "
+- title: May 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='380msgdesc'></div><b>Unable to access some gov.uk websites</b><div>After installing the May 14, 2019 update, some gov.uk websites that don’t support HTTP Strict Transport Security&nbsp;(HSTS)&nbsp;may not be accessible through Internet Explorer 11 or Microsoft Edge.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10, version 1507; Windows 8.1; Windows 7 SP1&nbsp;</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2008 R2 SP1</li></ul><div><strong>&nbsp;</strong></div><div><strong>Next Steps: </strong>Microsoft is working on a resolution and will provide an update as quickly as possible.</div><div>&nbsp;</div><div>&nbsp;</div><br><a href ='#380msg'>Back to top</a></td><td>OS Build 10240.18210<br><br>May 14, 2019<br><a href ='https://support.microsoft.com/help/4498353' target='_blank'>KB4498353</a></td><td>Acknowledged<br><a href = '' target='_blank'></a></td><td>Last updated:<br>May 16, 2019 <br>01:57 PM PT<br><br>Opened:<br>May 16, 2019 <br>01:57 PM PT</td></tr>
+      </table>
+      "
+
 - title: January 2019
 - items:
   - type: markdown
