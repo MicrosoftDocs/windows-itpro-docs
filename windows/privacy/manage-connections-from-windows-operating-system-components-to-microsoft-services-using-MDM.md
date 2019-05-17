@@ -30,7 +30,8 @@ For more information on Microsoft InTune please see [Transform IT service delive
 
 For detailed information about managing network connections to Microsoft services using Registries, Group Policies, or UI see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
-The endpoints for the “whitelisted” traffic are in the [Whitelisted Traffic](#bkmk-mdm-whitelist). 
+
+The endpoints for the MDM “whitelisted” traffic are in the [Whitelisted Traffic](#bkmk-mdm-whitelist). 
 
 
 ### Settings for Windows 10 Enterprise edition 1903 and newer
