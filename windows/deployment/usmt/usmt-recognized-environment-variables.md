@@ -37,7 +37,7 @@ You can use these variables within sections in the .xml files with `context=User
 |COMMONPROGRAMFILES(X86)| Refers to the C:\Program Files (x86)\Common Files folder on 64-bit systems.|
 |CSIDL_COMMON_ADMINTOOLS|Version 10.0. The file-system directory that contains administrative tools for all users of the computer.|
 |CSIDL_COMMON_ALTSTARTUP|The file-system directory that corresponds to the non-localized Startup program group for all users.|
-|CSIDL_COMMON_APPDATA|The file-system directory that contains application data for all users. A typical path Windows is C:\ProgramData.|
+|CSIDL_COMMON_APPDATA|The file-system directory that contains application data for all users. A typical Windows path is C:\ProgramData.|
 |CSIDL_COMMON_DESKTOPDIRECTORY |The file-system directory that contains files and folders that appear on the desktop for all users. A typical Windows® XP path is C:\Documents and Settings\All Users\Desktop. A typical path is C:\Users\Public\Desktop.|
 |CSIDL_COMMON_DOCUMENTS|The file-system directory that contains documents that are common to all users. A typical path in Windows XP is C:\Documents and Settings\All Users\Documents. A typical path is C:\Users\Public\Documents.|
 |CSIDL_COMMON_FAVORITES|The file-system directory that serves as a common repository for favorites common to all users. A typical path is C:\Users\Public\Favorites.|
