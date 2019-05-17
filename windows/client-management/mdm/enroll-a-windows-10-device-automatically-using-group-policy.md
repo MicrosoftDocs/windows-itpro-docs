@@ -118,6 +118,7 @@ Requirements:
 >   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**
 >   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies**.
 >   5. Restart the Primary Domain Controller for the policy to be available.
+>   This procedure will work for any future version as well.
 
 1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 2.	Create a Security Group for the PCs.
@@ -125,8 +126,8 @@ Requirements:
 4.	Filter using Security Groups.
 5.	Enforce  a GPO link
 
->[!IMPORTANT]
-> Version 1903 (March 2019) is actually an Insider and it doesn't contains and Win 10 Adm Templates yet.
+>[!NOTE]
+> Version 1903 (March 2019) is actually on the Insider program and it doesnt contains yet a downloadable version of Templates (version 1903).
 
 ### Related topics
 
