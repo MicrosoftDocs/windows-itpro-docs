@@ -110,7 +110,7 @@ You can also use [Advanced hunting](advanced-hunting.md) to query data and [Thre
 
     >[!NOTE]
     >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
-    > ![Image of reset password](images/reset-password-test-machine.png)
+    > ![Image of reset password](images/reset-password-test-machine.png)<br>
     > The machine will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the machine creation step. 
