@@ -112,9 +112,11 @@
 
 ## [Get started](get-started.md)
 ### [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md)
+### [Preview features](preview.md)
+### [Evaluation lab](evaluation-lab.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Validate licensing and complete setup](licensing.md)
-### [Preview features](preview.md)
+
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Assign user access to the portal](assign-portal-access.md)
 

@@ -68,9 +68,9 @@ The machine will automatically be onboarded to your tenant with the recommended 
 
     ![Image of the help icon with the evaluation lab menu](images/evaluation-lab-menu.png)
 
-2. Select **Submit environment**. 
+2. Select **Prepare lab**. 
 
-     ![Image of welcome page](images/welcome-eval-lab.png)
+     ![Image of welcome page](images/welcome-evaluation-lab.png)
 
 3. Select **Add machine**.
 
