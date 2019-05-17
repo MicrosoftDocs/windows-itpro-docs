@@ -42,7 +42,7 @@ Before you can initiate a session on a machine, make sure you fulfill the follow
 - Machines must be Windows 10, version 18323 (also known as Windows 10 19H1) or later. 
 
 - **Enable live response from the settings page**<br>
-You'll need to enable the live response capability in the [Advanced features settings](advanced-features-windows-defender-advanced-threat-protection.md) page.
+You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
@@ -52,10 +52,10 @@ You'll need to enable the live response capability in the [Advanced features set
     >[!WARNING]
     >Allowing the use of unsigned scripts may increase your exposure to threats.
  
-  Running unsigned scripts is generally not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features-windows-defender-advanced-threat-protection.md) page.
+  Running unsigned scripts is generally not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
 - **Ensure that you have the appropriate permissions**<br>
-	Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md). 
+	Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
     Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permission are controlled by RBAC custom role. 
 
@@ -88,10 +88,10 @@ The dashboard also gives you access to:
 
 
 ## Live response commands
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments see, [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md). 
+Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 ### Basic commands
-The following commands are available for user roles that's been granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md). 
+The following commands are available for user roles that's been granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 Command | Description 
 :---|:---|:---
@@ -113,7 +113,7 @@ trace | Sets the terminal's logging mode to debug.
 
 
 ### Advanced commands
-The following commands are available for user roles that's been granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md). 
+The following commands are available for user roles that's been granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 Command | Description 
 :---|:---
@@ -177,7 +177,7 @@ Before you can run a PowerShell script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
-If you plan to use an unsigned script in the session, you'll need to enable the setting in the [Advanced features settings](advanced-features-windows-defender-advanced-threat-protection.md) page.
+If you plan to use an unsigned script in the session, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
 >[!WARNING]
 >Allowing the use of unsigned scripts may increase your exposure to threats.
