@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 5/3/2019
 ---
-# Manage connection endpoints for Windows 10, version 1903
+# Manage connection endpoints for Windows 10 Enterprise, version 1903
 
 **Applies to**
 
