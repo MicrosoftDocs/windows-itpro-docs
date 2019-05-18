@@ -1052,6 +1052,17 @@ To turn off voice dictation, speaking to Cortana and other apps, or sending voic
 
 - Create a REG_DWORD registry setting named **HasAccepted** in **HKEY_CURRENT_USER\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy** with a **value of 0 (zero)**
 
+
+If you're running at Windows 10, version 1703 up to Windows 10, version 1803, you can turn off updates to the speech recognition and speech synthesis models:
+
+ - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data** 
+
+  -or-
+
+ - Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
+
+
+
 ### <a href="" id="bkmk-priv-accounts"></a>18.7 Account info
 
 In the **Account Info** area, you can choose which apps can access your name, picture, and other account info.
@@ -1419,15 +1430,6 @@ To turn off Inking & Typing data collection (note: there is no Group Policy for 
   -or-
 
  - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** to a **value of 1 (one)**
-
-
-If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
-
- - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data** 
-
-  -or-
-
- - Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
 
 
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History
