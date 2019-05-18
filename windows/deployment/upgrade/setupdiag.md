@@ -410,7 +410,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
-05/10/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
+05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
