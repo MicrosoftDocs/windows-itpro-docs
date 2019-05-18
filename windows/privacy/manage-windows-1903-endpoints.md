@@ -30,16 +30,18 @@ Some Windows components, app, and related services transfer data to Microsoft ne
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
-Where applicable, each endpoint covered in this topic includes a link to specific details about how to control traffic to it. 
+Where applicable, each endpoint covered in this topic includes a link to the specific details on how to control that traffic. 
 
 We used the following methodology to derive these network endpoints:
 
 1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
+2.	Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
 3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4.	Compile reports on traffic going to public IP addresses.
-5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
-6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
+5.  The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
+6.  All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here. 
+7.  These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.
+8.  These tests were conducted for one week, but if you capture traffic for longer you may have different results.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
