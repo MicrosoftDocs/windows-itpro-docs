@@ -7,10 +7,6 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-<<<<<<< HEAD
-=======
-ms.date: 12/18/2018
->>>>>>> f9df450acf6cad167da362ea4cbd1354918f4123
 author: greg-lindsay
 ms.topic: article
 ---
@@ -29,14 +25,10 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Recent additions to this page
 
-<<<<<<< HEAD
-[SetupDiag](#setupdiag) 1.4 is released.<br>
+[SetupDiag](#setupdiag) 1.4.1 is released.<br>
 [MDT](#microsoft-deployment-toolkit-mdt) 8456 is released.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
 The [Microsoft 365](#microsoft-365) section was added.
-=======
-[SetupDiag](#setupdiag) 1.4 is released.
->>>>>>> f9df450acf6cad167da362ea4cbd1354918f4123
 
 ## The Modern Desktop Deployment Center
 
@@ -74,16 +66,13 @@ Windows Autopilot streamlines and automates the process of setting up and config
 
 Windows Autopilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md).
 
-<<<<<<< HEAD
 Recent Autopilot content includes new instructions for CSPs and OEMs on how to [obtain and use customer authorization](windows-autopilot/registration-auth.md) to register Windows Autopilot devices on the customer’s behalf. 
 
-=======
->>>>>>> f9df450acf6cad167da362ea4cbd1354918f4123
 ### SetupDiag
 
 [SetupDiag](upgrade/setupdiag.md) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
-SetupDiag version 1.4 was released on 12/18/2018.
+SetupDiag version 1.4.1 was released on 5/17/2019.
 
 ### Upgrade Readiness
 
