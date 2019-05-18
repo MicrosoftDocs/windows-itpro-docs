@@ -24,7 +24,7 @@ ms.date: 5/9/2019
 
 In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1903-endpoints.md), the following endpoints are available on other non-Enterprise editions of Windows 10, version 1903.
 
-We used the following methodology to derive these network endpoints:
+The following methodology was used to derive the network endpoints:
 
 1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
 2.	Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
