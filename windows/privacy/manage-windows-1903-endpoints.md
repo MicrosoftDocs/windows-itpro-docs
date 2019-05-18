@@ -32,7 +32,7 @@ This article lists different endpoints that are available on a clean installatio
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 Where applicable, each endpoint covered in this topic includes a link to the specific details on how to control that traffic. 
 
-We used the following methodology to derive these network endpoints:
+The following methodology was used to derive these network endpoints:
 
 1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
 2.	Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
