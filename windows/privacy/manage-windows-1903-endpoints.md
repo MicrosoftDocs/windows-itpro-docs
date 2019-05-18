@@ -18,7 +18,7 @@ ms.date: 5/3/2019
 
 **Applies to**
 
-- Windows 10, version 1903
+- Windows 10 Enterprise, version 1903
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
