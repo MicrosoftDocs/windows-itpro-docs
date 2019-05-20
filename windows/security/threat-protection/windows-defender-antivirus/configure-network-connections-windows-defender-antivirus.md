@@ -57,7 +57,7 @@ The following table lists the services and their associated URLs that your netwo
 | *Universal Telemetry Client*	| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   * vortex-win.data.microsoft.com  * settings-win.data.microsoft.com|
 
 >[!IMPORTANT]
-> As a cloud service is required that the computer has access to internet the firewall and traffic can hit the ATP, machine learning services.
+> As a cloud service is required so that the computer has access to internet the firewall and traffic can hit the ATP machine learning services.
 
 ## Validate connections between your network and the cloud
 
