@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/05/2018
 ---
 
 # Configure information protection in Windows 
@@ -34,7 +33,7 @@ Learn how you can use Microsoft Defender ATP to expand the coverage of Microsoft
 - Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.com/azure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
 
 
-## Configuration steps
+## Configure endpoint data loss prevention
 1. Define a WIP policy and assign it to the relevant devices. For more information, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). If WIP is already configured on the relevant devices, skip this step. 
 2. Define which labels need to get WIP protection in Office 365 Security and Compliance. 
     
@@ -51,6 +50,24 @@ After completing these steps Microsoft Defender ATP will automatically identify 
 >[!NOTE]
 >- The Microsoft Defender ATP configuration is pulled every 15 minutes. Allow up to 30 minutes for the new policy to take effect and ensure that the endpoint is online. Otherwise, it will not receive the policy.
 >- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
+
+
+## Configure auto labeling
+1. In Office 365 Security & Compliance, go to **Classifications > Labels**.
+
+2. Create a new label or edit an existing one. 
+
+
+3. Set a policy for Data classification:
+   
+   1. Go through the label creation wizard.
+   2. When you reach the Auto labeling page, turn on auto labeling toggle on.
+   3. Add a new auto-labeling rule with the conditions that you require. 
+   4. Validate that ‘When content matches these conditions’ setting is set to ‘Automatically apply the label’.
+ 
+
+
+
 
 ## Related topic
 - [Information protection in Windows overview](information-protection-in-windows-overview.md)
