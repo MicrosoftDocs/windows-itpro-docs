@@ -9,8 +9,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: justinha
+ms.author: justinha
 ms.date: 04/30/2018
 ---
 
