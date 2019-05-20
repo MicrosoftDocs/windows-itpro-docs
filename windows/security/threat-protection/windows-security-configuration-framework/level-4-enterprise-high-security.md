@@ -23,6 +23,19 @@ ms.date: 04/05/2018
 Level 4 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most enterprise organizations.
 A level 4 configuration should include all the configurations from level 5 and add the following security policies, controls, and organizational behaviors.
 
+## Hardware
+
+Devices targeting Level 4 should support the following hardware features:
+
+- [Virtualization and HVCI Enabled](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs)
+- [Drivers and Apps HVCI-Ready](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard)
+- [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)
+- [DMA I/O Protection](https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) 
+- [Trusted Platform Module (TPM) 2.0](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm)
+- [Bitlocker Drive Encryption](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker)
+- [UEFI Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot)
+- Drivers and Firmware Distributed through Windows Update
+
 ## Policies
 
 The policies enforced in level 4 implement more controls and a more sophisticated security

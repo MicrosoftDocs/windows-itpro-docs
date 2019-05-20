@@ -23,6 +23,15 @@ ms.date: 04/05/2018
 Level 5 is the minimum security configuration for an enterprise device.
 Microsoft recommends the following configuration for level 5 devices.
 
+## Hardware
+
+Devices targeting Level 5 should support the following hardware features:
+
+- [Trusted Platform Module (TPM) 2.0](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm)
+- [Bitlocker Drive Encryption](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker)
+- [UEFI Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot)
+- Drivers and Firmware Distributed through Windows Update
+
 ## Policies
 
 The policies in level 5 enforce a reasonable security level while minimizing the impact to users or to applications. 
