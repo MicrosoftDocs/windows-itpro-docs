@@ -49,8 +49,7 @@ See the following topics for details on network and configuration requirements:
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
 
 >[!IMPORTANT]
-   >It is a notice of awareness to the administrator that’s configuring Windows Autopilot on Windows 10, version 1903 and onwards.
-   <br><br>Windows Autopilot deployed device would set Diagnostics data settings default to Full on Windows 10 version 1903 and onwards during OOBE. [Learn more on Windows Diagnostics Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+   >For Autopilot deployments on Windows 10 version 1903 devices and later, the Diagnostics Data default is automatically set to Full. For more information, see [Windows Diagnostics Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)
 
 ## Related topics
 
