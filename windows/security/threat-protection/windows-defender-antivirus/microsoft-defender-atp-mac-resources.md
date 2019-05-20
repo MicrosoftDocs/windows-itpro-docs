@@ -33,7 +33,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
 ```bash
-   mavel-mojave:~ testuser$ mdatp log-level --verbose
+   mavel-mojave:~ testuser$ mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -41,10 +41,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic --create` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic
+   mavel-mojave:~ testuser$ mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
@@ -53,7 +53,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 4. Restore logging level:
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp log-level --info
+   mavel-mojave:~ testuser$ mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -112,21 +112,21 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
-|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
-|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
-|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
-|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Configuration|Turn on/off real-time protection           |`mdatp --config rtp [true/false]`                                      |
+|Configuration|Turn on/off cloud protection               |`mdatp --config cloud [true/false]`                                    |
+|Configuration|Turn on/off product diagnostics            |`mdatp --config diagnostic [true/false]`                               |
+|Configuration|Turn on/off automatic sample submission    |`mdatp --config sample-submission [true/false]`                        |
+|Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
+|Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
+|Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
-|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
-|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
-|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
+|Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
+|Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
+|Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
+|Protection   |Request a definition update                |`mdatp --definition-update`                                            |
 
 ## Microsoft Defender ATP portal information
 

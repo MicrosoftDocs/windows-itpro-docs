@@ -175,26 +175,29 @@ You can monitor policy installation on a machine by following the JAMF's log fil
 You can also check the onboarding status:
 
 ```bash
-    mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
-    uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
-    orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-    orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-    orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
+mavel-mojave:~ testuser$ mdatp --health
+...
+licensed                                : true
+orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
+...
 ```
 
-- **orgid/orgid managed**: This is the Microsoft Defender ATP org id specified in the configuration profile. If this value is blank, then the Configuration Profile was not properly set.
+- **licensed**: This confirms that the machine has an ATP license.
 
-- **orgid effective**: This is the Microsoft Defender ATP org id currently in use. If it does not match the value in the Configuration Profile, then the configuration has not been refreshed.
+- **orgid**: Your ATP org id, it will be the same for your organization.
 
 ## Check onboarding status
 
 You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
 
 ```bash
-    sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
+mdatp --health healthy
 ```
 
-This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
+This script returns:
+- 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service
+- 1 if the machine is not onboarded
+- 3 if the connection to the daemon cannot be established (daemon is not running)
 
 ## Logging installation issues
 
