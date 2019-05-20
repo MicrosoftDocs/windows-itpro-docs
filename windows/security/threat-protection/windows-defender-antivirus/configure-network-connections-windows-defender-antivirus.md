@@ -46,97 +46,18 @@ After you've enabled the service, you may need to configure your network or fire
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
-<table  style="vertical-align:top">
-<tr style="vertical-align:top">
-<th >Service</th>
-<th>Description</th>
-<th>URL</th>
-</tr>
-<tr style="vertical-align:top">
-<td>
- Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)
-</td>
-<td>
- Used by Windows Defender Antivirus to provide cloud-delivered protection
-</td>
-<td>
-*.wdcp.microsoft.com<br />
-*.wdcpalt.microsoft.com<br />
-*.wd.microsoft.com
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
-Microsoft Update Service (MU)
-</td>
-<td>
-Security intelligence and product updates
-</td>
-<td>
-*.update.microsoft.com
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
- Security intelligence updates alternate download location (ADL)
-</td>
-<td>
- Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence falls out of date (7 or more days behind)
-</td>
-<td>
-*.download.microsoft.com
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
- Malware submission storage 
-</td>
-<td>
- Upload location for files submitted to Microsoft via the <a href="https://www.microsoft.com/en-us/security/portal/submission/submit.aspx">Submission form</a> or automatic sample submission
-</td>
-<td>
-*.blob.core.windows.net
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
-Certificate Revocation List (CRL)
-</td>
-<td>
-Used by Windows when creating the SSL connection to MAPS for updating the CRL
-</td>
-<td>
-http://www.microsoft.com/pkiops/crl/<br />
-http://www.microsoft.com/pkiops/certs<br />
-http://crl.microsoft.com/pki/crl/products<br />
-http://www.microsoft.com/pki/certs
-</ul>
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
-Symbol Store 
-</td>
-<td>
-Used by Windows Defender Antivirus to restore certain critical files during remediation flows
-</td>
-<td>
-https://msdl.microsoft.com/download/symbols
-</td>
-</tr>
-<tr style="vertical-align:top">
-<td>
-Universal Telemetry Client
-</td>
-<td>
-Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes
-</td>
-<td>
-This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
-</tr>
-</table>
+| **Service**| **Description** |**URL** |
+| :--: | :-- | :-- |
+| *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|*.wdcp.microsoft.com  *.wdcpalt.microsoft.com  *.wd.microsoft.com|
+| *Microsoft Update Service (MU)*|	Security intelligence and product updates	|*.update.microsoft.com|
+| *Security intelligence updates alternate download location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence falls out of date (7 or more days behind)|	*.download.microsoft.com|
+| *Malware submission storage	*|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	|*.blob.core.windows.net|
+| *Certificate Revocation List (CRL)*	|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| http://www.microsoft.com/pkiops/crl/   http://www.microsoft.com/pkiops/certs  http://crl.microsoft.com/pki/crl/products   http://www.microsoft.com/pki/certs |
+| *Symbol Store	*|Used by Windows Defender Antivirus to restore certain critical files during remediation flows	| https://msdl.microsoft.com/download/symbols |
+| *Universal Telemetry Client*	| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   * vortex-win.data.microsoft.com  * settings-win.data.microsoft.com|
 
-<a id="validate"></a>
+>[!IMPORTANT]
+> As a cloud service is required that the computer has access to internet the firewall and traffic can hit the ATP, machine learning services.
 
 ## Validate connections between your network and the cloud
 
