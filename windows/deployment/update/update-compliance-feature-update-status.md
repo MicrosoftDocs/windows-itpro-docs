@@ -40,7 +40,7 @@ To learn how compatibility holds are reflected in the experience, see [Update co
 
 ### Opting out of compatibility hold
 
-Microsoft will release a device from a compatibility hold when it has determined it can safely and smoothly install a feature update, but you are ultimately in control of your devices and can opt out if desired. To opt out, set the registry key **HKLM\Software\Microsoft\Windows NT\CurrentVersion\502505fe-762c-4e80-911e-0c3fa4c63fb0** to a name of **DataRequireGatedScanForFeatureUpdates** to a value of **0**.
+Microsoft will release a device from a compatibility hold when it has determined it can safely and smoothly install a feature update, but you are ultimately in control of your devices and can opt out if desired. To opt out, set the registry key **HKLM\Software\Microsoft\Windows NT\CurrentVersion\502505fe-762c-4e80-911e-0c3fa4c63fb0** to a name of **DataRequireGatedScanForFeatureUpdates** and a value of **0**.
 
 
 Setting this registry key to **0** will force the device to opt out from *all* compatibility holds. Any other value, or deleting the key, will resume compatibility protection on the device.  
