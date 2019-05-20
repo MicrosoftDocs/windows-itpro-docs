@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 04/19/2017
+ms.date: 05/20/2019
 ---
 
 # Sideload LOB apps in Windows 10
@@ -49,7 +49,7 @@ And here's what you'll need to do:
 You can sideload apps on managed or unmanaged devices.
 
 >[!IMPORTANT]
-> To install an application on windows 10, beside [these procedures](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web) users can double click any APPX/MSIX package.
+> To install an app on Windows 10, in addition to following [these procedures](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web), users can also double-click any APPX/MSIX package.
 
 
 **To turn on sideloading for managed devices**
