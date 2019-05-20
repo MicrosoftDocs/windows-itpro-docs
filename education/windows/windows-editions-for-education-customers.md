@@ -7,9 +7,9 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
-ms.date: 10/13/2017
+author: lizap
+ms.author: elizpao
+ms.date: 05/21/2019
 ---
 
 # Windows 10 editions for education customers
@@ -61,11 +61,12 @@ Customers who deploy Windows 10 Enterprise are able to configure the product to 
 For any other questions, contact [Microsoft Customer Service and Support](https://support.microsoft.com/en-us).
 
 ## Related topics
-* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)
-* [Windows deployment for education](https://aka.ms/edudeploy)
-* [Windows 10 upgrade paths](https://go.microsoft.com/fwlink/?LinkId=822787)
-* [Volume Activation for Windows 10](https://go.microsoft.com/fwlink/?LinkId=822788)
-* [Plan for volume activation](https://go.microsoft.com/fwlink/?LinkId=822789)
+- [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)
+- [Windows deployment for education](https://aka.ms/edudeploy)
+- [Windows 10 upgrade paths](https://go.microsoft.com/fwlink/?LinkId=822787)
+- [Volume Activation for Windows 10](https://go.microsoft.com/fwlink/?LinkId=822788)
+- [Plan for volume activation](https://go.microsoft.com/fwlink/?LinkId=822789)
+- [Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
 
 
 
