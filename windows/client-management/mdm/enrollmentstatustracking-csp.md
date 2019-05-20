@@ -30,13 +30,13 @@ For device context, use **./Device/Vendor/MSFT** path and for user context, use 
 
 <a href="" id="enrollmentstatustracking"></a>**EnrollmentStatusTracking**  
 Required. Root node for the CSP. This node is supported in both user context and device context.  
-Provides the settings to communicate what policies the ESP must block on. Using these settings, policy providers register themselves and the set of policies that must be tracked. The ESP includes the counts of these policy settings in the status message that is displayed to the user. It also blocks ESP until all the policies are provisioned. The policy provider is expected to drive the status updates by updating the appropriate node values, which is then reflected in the ESP status message.
+Provides the settings to communicate what policies the ESP must block on. Using these settings, policy providers register themselves and the set of policies that must be tracked. The ESP includes the counts of these policy settings in the status message that is displayed to the user. It also blocks ESP until all the policies are provisioned. The policy provider is expected to drive the status updates by updating the appropriate node values, which are then reflected in the ESP status message.
 
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="enrollmentstatustracking-devicepreparation"></a>**EnrollmentStatusTracking/DevicePreparation**  
 Required. This node is supported only in device context.  
-Specifies the settings that ESP reads during the device preparation phase. These setting are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
+Specifies the settings that ESP reads during the device preparation phase. These settings are used to orchestrate any setup activities prior to provisioning the device in the device setup phase of the ESP.
 
 Scope is permanent. Supported operation is Get.
 
