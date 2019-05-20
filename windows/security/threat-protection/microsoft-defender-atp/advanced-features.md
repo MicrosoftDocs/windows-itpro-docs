@@ -31,6 +31,15 @@ Use the following advanced features to get better protected from potentially mal
 ## Automated investigation
 When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations.md).
 
+## Live response
+When you enable this feature, users with the appropriate permissions can initiate a live response session on machines. 
+
+For more information on role assignments see, [Create and manage roles](user-roles.md). 
+
+## Live response unsigned script execution
+Enabling this feature allows you to run unsigned scripts in a live response session. 
+
+
 ## Auto-resolve remediated alerts
 For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
