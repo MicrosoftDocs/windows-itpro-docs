@@ -23,7 +23,7 @@ The EnrollmentStatusTracking CSP was added in Windows 10, version 1903.
 
 The following diagram shows the EnrollmentStatusTracking CSP in tree format.
 
-![tree diagram for enrollmentstatustracking csp](images/provisioning_csp_enrollmentstatustracking.png)
+![tree diagram for enrollmentstatustracking csp](images/provisioning-csp-enrollmentstatustracking.png)
 
 <a href="" id="vendor-msft"></a>**./Vendor/MSFT**  
 For device context, use **./Device/Vendor/MSFT** path and for user context, use **./User/Vendor/MSFT** path.
