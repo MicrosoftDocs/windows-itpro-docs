@@ -37,7 +37,7 @@ The third blade is the **Deployment Status** blade. This defines how many days i
 | Blocked | There is a hard block on the update being completed. This could be that another update must be completed before this one, or some other task is blocking the installation of the update. |
 | Unknown | Devices that do not report detailed information on the status of their updates will report Unknown. This is most likely devices that do not use Windows Update for deployment. |
 | Update paused | These devices have Windows Update for Business pause enabled, preventing this update from being installed. |
-| Failed | {WHAT DESCRIPTION FOR FAILED?} |
+| Failed | A device is unable to install an update. This failure could be linked to a serious error in the update installation process or, in some cases, a [compatibility hold](update-compliance-feature-update-status.md#compatibility-holds).  |
 
 ## Detailed deployment status
 
