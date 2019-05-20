@@ -1258,8 +1258,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2831,8 +2831,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3097,8 +3097,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3557,8 +3557,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3765,8 +3765,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4418,8 +4418,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -13061,8 +13061,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
