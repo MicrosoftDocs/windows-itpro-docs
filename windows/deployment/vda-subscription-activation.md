@@ -88,7 +88,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 ## Azure Active Directory-joined VMs
 
 >[!IMPORTANT]
->Azure Active Directory (Azure AD) provisioning packages have a 30 day limit on bulk token usage. You will need to update the provisioning package and re-inject it into the image after 30 days. Existing virtual machines that are Azure AD-joined and deployed will not need to be recreated.
+>Azure Active Directory (Azure AD) provisioning packages have a 180 day limit on bulk token usage. You will need to update the provisioning package and re-inject it into the image after 180 days. Existing virtual machines that are Azure AD-joined and deployed will not need to be recreated.
 
 For Azure AD-joined VMs, follow the same instructions (above) as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
 - In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
