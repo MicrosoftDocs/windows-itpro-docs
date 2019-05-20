@@ -48,12 +48,15 @@ And here's what you'll need to do:
 ## How do I sideload an app on desktop
 You can sideload apps on managed or unmanaged devices.
 
+>[!IMPORTANT]
+> To install an application on windows 10, beside [these procedures](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web) users can double click any APPX/MSIX package.
+
+
 **To turn on sideloading for managed devices**
 
 -   Deploy an enterprise policy.
 
->[!IMPORTANT]
-> To install an application users can double click any APPX/MSIX package and get the APP installed without using the PowerShell script.
+
 
 **To turn on sideloading for unmanaged devices**
 
