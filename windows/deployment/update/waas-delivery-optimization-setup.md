@@ -48,7 +48,7 @@ Quick-reference table:
 For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
 
-[//]: # (is there a topic on GroupIDSrc we can link to?)
+
 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -113,6 +113,13 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | BytesfromHTTP | Total number of bytes received over HTTP |
 | DownloadDuration | Total download time in seconds |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
+| NumPeers | Indicates the total number of peers returned from the service. |
+| PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
+| ExpireOn | The target expiration date and time for the file. |
+| Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
+
+
+
 
 
  
@@ -131,6 +138,28 @@ Using the `-Verbose` option returns additional information:
 - Bytes from peers (per type) 
 - Bytes from CDN  (the number of bytes received over HTTP)
 - Average number of peer connections per download 
+
+
+**Starting in Windows 10, version 1903:**
+
+`set-DeliveryOptimizationStatus -ExpireOn [date time]` extends the expiration of all files in the cache. You can set the expiration immediately for all files that are in the "caching" state. For files in progress ("downloading"), the expiration is applied once the download is complete. You can set the expiration up to one year from the current date and time.
+
+`set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
+
+You can now "pin" files to keep them persistent in the cache. You can only do this with files that are downloaded in modes 1, 2, or 3.
+
+`set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
+
+`set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are rreached. The file is included in the cache quota calculation.
+
+`delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
+
+- `-FileID` specifies a particular file to delete.
+- `-IncludePinnedFiles` deletes all files that are pinned.
+- `-Force` deletes the cache with no prompts.
+
+`get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
+
 
 
 **Starting in Windows 10, version 1803:**
