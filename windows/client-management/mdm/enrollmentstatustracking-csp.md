@@ -59,10 +59,10 @@ Communicates the policy provider installation state back to ESP.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 - NotInstalled
-- 2 - NotRequired
-- 3 - Completed
-- 4 - Error
+- 1 — NotInstalled
+- 2 — NotRequired
+- 3 — Completed
+- 4 — Error
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-lasterror"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/LastError**  
 Required. This node is supported only in device context.  
@@ -93,8 +93,8 @@ This node specifies if the policy provider is registered for app provisioning.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is boolean. Expected values are as follows:
-- false - Indicates that the policy provider is not registered for app provisioning. This is the default.
-- true - Indicates that the policy provider is registered for app provisioning.
+- false — Indicates that the policy provider is not registered for app provisioning. This is the default.
+- true — Indicates that the policy provider is registered for app provisioning.
 
 <a href="" id="enrollmentstatustracking-setup"></a>**EnrollmentStatusTracking/Setup**  
 Required. This node is supported in both user context and device context.  
@@ -127,8 +127,8 @@ Indicates if the provider has created the required policies for the ESP to use f
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is boolean. The expected values are as follows:
-- true - Indicates that the provider has created the required policies.
-- false - Indicates that the provider has not created the required policies. This is the default.
+- true — Indicates that the provider has created the required policies.
+- false — Indicates that the provider has not created the required policies. This is the default.
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking**  
 Required. This node is supported in both user context and device context.  
@@ -155,10 +155,10 @@ Represents the installation state for the app. The policy providers (not the MDM
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 - NotInstalled
-- 2 - InProgress
-- 3 - Completed
-- 4 - Error
+- 1 — NotInstalled
+- 2 — InProgress
+- 3 — Completed
+- 4 — Error
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname-rebootrequired"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName*/RebootRequired**  
 Optional. This node is supported in both user context and device context.  
@@ -167,9 +167,9 @@ Indicates if the app installation requires ESP to issue a reboot. The policy pro
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 - NotRequired
-- 2 - SoftReboot
-- 3 - HardReboot
+- 1 — NotRequired
+- 2 — SoftReboot
+- 3 — HardReboot
 
 <a href="" id="enrollmentstatustracking-setup-hasprovisioningcompleted"></a>**EnrollmentStatusTracking/Setup/HasProvisioningCompleted**  
 Required. This node is supported in both user context and device context.  
@@ -178,5 +178,5 @@ ESP sets this node when it completes. Providers can query this node to determine
 Scope is permanent. Supported operation is Get.
 
 Value type is boolean. Expected values are as follows:
-- true - Indicates that ESP has completed. This is the default.
-- false - Indicates that ESP is displayed, and provisioning is still going.
+- true — Indicates that ESP has completed. This is the default.
+- false — Indicates that ESP is displayed, and provisioning is still going.
