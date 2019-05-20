@@ -52,6 +52,9 @@ You can sideload apps on managed or unmanaged devices.
 
 -   Deploy an enterprise policy.
 
+>[!IMPORTANT]
+> To install an application users can double click any APPX/MSIX package and get the APP installed without using the PowerShell script.
+
 **To turn on sideloading for unmanaged devices**
 
 1.  Open **Settings**.
