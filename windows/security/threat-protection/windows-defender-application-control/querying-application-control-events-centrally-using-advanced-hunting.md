@@ -16,12 +16,12 @@ ms.date: 12/06/2018
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. 
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge the impact across many systems. 
 
-In November 2018, we added functionality in Windows Defender Advanced Threat Protection (Windows Defender ATP) that makes it easy to view WDAC events centrally from all systems that are connected to Windows Defender ATP. 
+In November 2018, we added functionality in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that makes it easy to view WDAC events centrally from all systems that are connected to Microsoft Defender ATP. 
 
-Advanced hunting in Windows Defender ATP allows customers to query data using a rich set of capabilities. WDAC events can be queried with using an ActionType that starts with “AppControl”. 
+Advanced hunting in Microsoft Defender ATP allows customers to query data using a rich set of capabilities. WDAC events can be queried with using an ActionType that starts with “AppControl”. 
 This capability is supported beginning with Windows version 1607.
 
-Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Windows Defender ATP:
+Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender ATP:
 
 ```
 MiscEvents

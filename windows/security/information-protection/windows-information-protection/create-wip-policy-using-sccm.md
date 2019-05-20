@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 05/13/2019
 ---
 
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
@@ -474,13 +474,13 @@ After you've decided where your protected apps can access enterprise data on you
 
 	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
 
-    - **Revoke local encryption keys during the unerollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
+    - **Revoke local encryption keys during the unenrollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
         - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
         
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
 
-    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Choose to set up Azure Rights Management with WIP](create-wip-policy-using-intune-azure.md#choose-to-set-up-azure-rights-management-with-wip). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell).
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell). If you don’t specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
 
 2. After you pick all of the settings you want to include, click **Summary**.
 

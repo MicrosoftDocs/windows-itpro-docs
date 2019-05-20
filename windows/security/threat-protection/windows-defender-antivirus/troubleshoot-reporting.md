@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
+author: justinha
 ms.author: v-anbic
 ms.date: 09/03/2018
 ---
@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
 

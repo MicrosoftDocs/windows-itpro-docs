@@ -86,7 +86,7 @@ If you have devices that appear in other solutions, but not Device Health (the D
 3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
 4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
 5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-6. Remove the Device Health (appears as DeviceHealthProd on some pages) from your Log Analytics workspace
+6. Add the Device Health solution back to your Log Analytics workspace.
 7. Wait 48 hours for activity to appear in the reports.
 8. If you need additional troubleshooting, contact Microsoft Support.
 

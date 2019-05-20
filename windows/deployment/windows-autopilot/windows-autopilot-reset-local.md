@@ -19,12 +19,14 @@ ms.topic: article
 
 **Applies to: Windows 10, version 1709 and above
 
+The Intune Service Administrator role is required to perform this task.  Learn more about how to [Assign Azure Active Directory roles](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+
 IT admins can perform a local Windows Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With a local Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
 To enable local Autopilot Reset in Windows 10:
 
-1. [Enable the policy for the feature](#enable-autopilot-reset)
-2. [Trigger a reset for each device](#trigger-autopilot-reset)
+1. [Enable the policy for the feature](#enable-local-windows-autopilot-reset)
+2. [Trigger a reset for each device](#trigger-local-windows-autopilot-reset)
 
 ## Enable local Windows Autopilot Reset
 
