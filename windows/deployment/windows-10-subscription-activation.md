@@ -16,17 +16,17 @@ ms.topic: article
 
 # Windows 10 Subscription Activation
 
-Starting with Windows 10, version 1703, Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro to **Windows 10 Enterprise** automatically if they are subscribed to Windows 10 Enterprise E3 or E5.
+Starting with Windows 10, version 1703 Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro to **Windows 10 Enterprise** automatically if they are subscribed to Windows 10 Enterprise E3 or E5.
 
-With Windows 10, version 1903, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education to the Enterprise grade edition for educational institutions – **Windows 10 Education**. 
+With Windows 10, version 1903 the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education to the Enterprise grade edition for educational institutions – **Windows 10 Education**. 
 
 The Subscription Activation feature eliminates the need to manually deploy Windows 10 Enterprise or Education images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering GVLKs, and subsequently rebooting client devices.
 
 ## Subscription Activation for Windows 10 Enterprise
 
-With Windows 10 version 1703, both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise](planning/windows-10-enterprise-faq-itpro.md) in your organization can now be accomplished with no keys and no reboots.
+With Windows 10, version 1703 both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise](planning/windows-10-enterprise-faq-itpro.md) in your organization can now be accomplished with no keys and no reboots.
 
- If you are running Windows 10 version 1703 or later:
+ If you are running Windows 10, version 1703 or later:
 
 - Devices with a current Windows 10 Pro license can be seamlessly upgraded to Windows 10 Enterprise.
 - Product key-based Windows 10 Enterprise software licenses can be transitioned to Windows 10 Enterprise subscriptions.
@@ -35,7 +35,7 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 
 ## Subscription Activation for Windows 10 Education
 
-Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with an Windows 10 Enterprise license. For more information, see the [requirements](#windows-10-education-requirements) section.
+Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise license. For more information, see the [requirements](#windows-10-education-requirements) section.
 
 ## In this article
 
@@ -71,7 +71,7 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 - **Windows 10, version 1703** made this “step-up” from Windows 10 Pro to Windows 10 Enterprise automatic for those that subscribed to Windows 10 Enterprise E3 or E5 via the CSP program.<br>
 - **Windows 10, version 1709** adds support for Windows 10 Subscription Activation, very similar to the CSP support but for large enterprises, enabling the use of Azure AD for assigning licenses to users. When those users sign in on an AD or Azure AD-joined machine, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.<br>
 - **Windows 10, version 1803** updates Windows 10 Subscription Activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It is no longer necessary to run a script to perform the activation step on Windows 10 Pro prior to activating Enterprise. For virtual machines and hosts running Windows 10, version 1803 [Inherited Activation](#inherited-activation) is also enabled.<br>
-- **Windows 10, version 1903** updates Windows 10 Subscription Activation to enable step up from Windows 10 Pro Education to Windows 10 Education.
+- **Windows 10, version 1903** updates Windows 10 Subscription Activation to enable step up from Windows 10 Pro Education to Windows 10 Education for those with a qualifying Windows 10 or Microsoft 365 subscription.
 
 ## Requirements
 
@@ -97,12 +97,12 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 3.	The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription. 
 4.	Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
->If Windows 10 Professional is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.  
+>If Windows 10 Pro is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.  
 
 
 ## Benefits
 
-With Windows 10 Enterprise or Windows 10 Education, businesses and institutions can benefit from enterprise-level security and control. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Education or Windows 10 Enterprise E3/E5 or A3/A5 to their users. Now, with Windows 10 Enterprise E3 and E5 being available as a true online service, it is available in select channels thus allowing all organizations to take advantage of enterprise grade Windows 10 features. To compare Windows 10 editions and review pricing, see the following:
+With Windows 10 Enterprise or Windows 10 Education, businesses and institutions can benefit from enterprise-level security and control. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Education or Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 or A3 and E5 or A5 being available as a true online service, it is available in select channels thus allowing all organizations to take advantage of enterprise-grade Windows 10 features. To compare Windows 10 editions and review pricing, see the following:
 
 - [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)
 - [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security-pricing)
@@ -123,7 +123,7 @@ The IT administrator assigns Windows 10 Enterprise to a user. See the following 
 
 ![Windows 10 Enterprise](images/ent.png)
 
-When a licensed user signs in to a device that meets requirements using their Azure AD credentials, the operating system steps up from Windows 10 Professional to Windows 10 Enterprise (or Windows 10 Pro Education to Windows 10 Education) and all the appropriate Windows 10 Enterprise/Education features are unlocked. When a user’s subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro / Windows 10 Pro Education edition, once current subscription validity expires.
+When a licensed user signs in to a device that meets requirements using their Azure AD credentials, the operating system steps up from Windows 10 Pro to Windows 10 Enterprise (or Windows 10 Pro Education to Windows 10 Education) and all the appropriate Windows 10 Enterprise/Education features are unlocked. When a user’s subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro / Windows 10 Pro Education edition, once current subscription validity expires.
 
 Devices running Windows 10 Pro, version 1703 or Windows 10 Pro Education, version 1903 or later can get Windows 10 Enterprise or Education Semi-Annual Channel on up to five devices for each user covered by the license. This benefit does not include Long Term Servicing Channel.
 
@@ -136,8 +136,8 @@ After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
 Note: 
-1.	A Windows 10 Pro Education will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-2.	A Windows 10 Pro will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+1.	A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+2.	A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios
 
