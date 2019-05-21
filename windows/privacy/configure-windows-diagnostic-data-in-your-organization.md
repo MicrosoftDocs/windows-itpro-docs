@@ -26,7 +26,7 @@ ms.date: 04/29/2019
 
 This article applies to Windows and Windows Server diagnostic data only. It describes the types of diagnostic data we may gather, the ways you might manage it in your organization, and some examples of how diagnostic data can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. The diagnostic data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. Microsoft uses diagnostic data to keep Windows secure and up to date, troubleshoot problems, and make product improvements.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
@@ -193,7 +193,7 @@ IT pros can use various methods, including Group Policy and Mobile Device Manage
 
 #### Manage your diagnostic data settings
 
-We do not recommend that you turn off diagnostic data in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this article to do so for Windows and Windows Server.
+Use the steps in this article to set and/or adjust the diagnostic data settings for Windows and Windows Server in your organization.
 
 > [!IMPORTANT]
 > These diagnostic data levels only apply to Windows and Windows Server components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of Office Telemetry](https://technet.microsoft.com/library/jj863580.aspx).
@@ -254,7 +254,7 @@ There are a few more settings that you can turn off that may send diagnostic dat
 
 -   Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
 
--   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
+-   Turn off **Improve inking and typing** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
 
     > [!NOTE]
     > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
