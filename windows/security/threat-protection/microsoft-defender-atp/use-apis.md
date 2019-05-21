@@ -4,6 +4,7 @@ description: Use the exposed data and actions using a set of progammatic APIs th
 keywords: apis, api, wdatp, open api, windows defender atp api, public api, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
+search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
