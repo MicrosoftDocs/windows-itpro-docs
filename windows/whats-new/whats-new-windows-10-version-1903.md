@@ -102,11 +102,11 @@ The draft release of the [security configuration baseline settings](https://blog
     - WDAG is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend WDAG’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the WDAG extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigations to the WDAG Edge browser. There is also a companion app to enable this feature in the Microsoft Store. Users can quickly launch WDAG from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
     To try this extension: 
-    1.	Configure WDAG policies on your device.
-    2.	Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
-    3.	Follow any additional configuration steps on the extension setup page.
-    4.	Reboot the device.
-    5.	Navigate to an untrusted site in Chrome and Firefox.
+     1.	Configure WDAG policies on your device.
+     2.	Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
+     3.	Follow any additional configuration steps on the extension setup page.
+     4.	Reboot the device.
+     5.	Navigate to an untrusted site in Chrome and Firefox.
 
     - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
