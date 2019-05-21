@@ -124,7 +124,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[EnrollmentStatusTracking  CSP](enrollmentstatustracking-csp.md)</td>
+<td style="vertical-align:top">[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 </tbody>
@@ -1838,10 +1838,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 ## Frequently Asked Questions
 
 
-###**Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
+### **Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
 No. Only one MDM is allowed.
 
-###**How do I set the maximum number of Azure Active Directory joined devices per user?**
+### **How do I set the maximum number of Azure Active Directory joined devices per user?**
 1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
@@ -1851,7 +1851,7 @@ No. Only one MDM is allowed.
     ![aad maximum joined devices](images/faq-max-devices.png)
  
 
-###**What is dmwappushsvc?**
+### **What is dmwappushsvc?**
 
 Entry | Description
 --------------- | --------------------
@@ -1860,6 +1860,35 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### May 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)|Added new CSP in Windows 10, version 1903.|
+|[Policy CSP - DeliveryOptimization](policy-csp-deliveryoptimization.md)|Added the following new policies: DODelayCacheServerFallbackBackground, DODelayCacheServerFallbackForeground<br><br>Updated description of the following policies: DOMinRAMAllowedToPeer, DOMinFileSizeToCache, DOMinDiskSizeAllowedToPeer|
+|[Policy CSP - Experience](policy-csp-experience.md)|Added the following new policy: ShowLockOnUserTile|
+|[Policy CSP - InternetExplorer](policy-csp-internetexplorer.md)|Added the following new policies: AllowEnhancedSuggestionsInAddressBar, DisableActiveXVersionListAutoDownload, DisableCompatView, DisableFeedsBackgroundSync, DisableGeolocation, DisableWebAddressAutoComplete, NewTabDefaultPage|
+|[Policy CSP - Power](policy-csp-power.md)|Added the following new policies: EnergySaverBatteryThresholdOnBattery, EnergySaverBatteryThresholdPluggedIn, SelectLidCloseActionOnBattery, SelectLidCloseActionPluggedIn, SelectPowerButtonActionOnBattery, SelectPowerButtonActionPluggedIn, SelectSleepButtonActionOnBattery, SelectSleepButtonActionPluggedIn, TurnOffHybridSleepOnBattery, TurnOffHybridSleepPluggedIn, UnattendedSleepTimeoutOnBattery, UnattendedSleepTimeoutPluggedIn|
+|[Policy CSP - Search](policy-csp-search.md)|Added the following new policy: AllowFindMyFiles|
+|[Policy CSP - System](policy-csp-system.md)|Added the following new policies: AllowCommercialDataPipeline, TurnOffFileHistory|
+|[Policy CSP - Update](policy-csp-update.md)|Added the following new policies: AutomaticMaintenanceWakeUp, ConfigureDeadlineForFeatureUpdates, ConfigureDeadlineForQualityUpdates, ConfigureDeadlineGracePeriod, ConfigureDeadlineNoAutoReboot|
+|[Policy CSP - WindowsLogon](policy-csp-windowslogon.md)|Added the following new policies: AllowAutomaticRestartSignOn, ConfigAutomaticRestartSignOn, EnableFirstLogonAnimation|
+|[DeviceStatus CSP](devicestatus-csp.md)|Updated description of the following nodes: DeviceStatus/Antivirus/SignatureStatus, DeviceStatus/Antispyware/SignatureStatus|
+
+### April 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)|Added the following warning at the end of the Overview section: Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined.|
+|[Policy CSP - UserRights](policy-csp-userrights.md)|Added a note stating if you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (<![CDATA[...]]>) to wrap the data fields.|
+
+### March 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Storage](policy-csp-storage.md)|Updated ADMX Info of the following policies: AllowStorageSenseGlobal, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseCloudContentDehydrationThreshold, ConfigStorageSenseDownloadsCleanupThreshold, ConfigStorageSenseGlobalCadence, ConfigStorageSenseRecycleBinCleanupThreshold|
+|[Policy CSP - Storage](policy-csp-storage.md)|Updated description of ConfigStorageSenseDownloadsCleanupThreshold|
+
 
 ### February 2019
 
@@ -1915,7 +1944,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
