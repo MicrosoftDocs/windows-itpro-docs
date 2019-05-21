@@ -7,7 +7,6 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 07/27/2017
 ms.topic: article
 ---
 

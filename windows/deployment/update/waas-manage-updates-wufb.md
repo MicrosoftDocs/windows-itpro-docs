@@ -16,111 +16,134 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+- Windows 10 Mobile {DID YOU WANT TO REMOVE MOBILE?}
 - Windows Server 2016
 - Windows Server 2019
+
+Windows Update for Business is a free service that is available for Windows Pro, Enterprise, Pro for Workstation, and Education editions. 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 
 
-Windows Update for Business enables information technology administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined devices. Windows Update for Business leverages diagnostic data to provide reporting and insights into an organization's Windows 10 devices. 
-
-Specifically, Windows Update for Business allows for: 
-
-- The creation of deployment rings, where administrators can specify which devices go first in an update wave, and which ones will come later (to allow for reliability and performance testing on a subset of systems before rolling out updates across the organization).
-- Selectively including or excluding drivers as part of Microsoft-provided updates
-- Integration with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, and Microsoft Intune.
-- Peer-to-peer delivery for Microsoft updates, which optimizes bandwidth efficiency and reduces the need for an on-site server caching solution.
-- Control over diagnostic data level to provide reporting and insights in Windows Analytics.
-
-Windows Update for Business is a free service that is available for Windows Pro, Enterprise, Pro Education, and Education editions.
+Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
+  
+Specifically, Windows Update for Business allows for control over update offering and experience to allow for reliability and performance testing on a subset of systems before rolling out updates across the organization as well as a positive update experience for those within your organization. 
+ 
+>[!NOTE] In order to use Windows Update for Business, you must allow access to the Windows Update service. 
 
 >[!NOTE]
 >See [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) to learn more about deployment rings in Windows 10.
 
-## Update types
+## Update types managed by Windows Update for Business
 
-Windows Update for Business provides three types of updates to Windows 10 devices:
-
-- **Feature Updates**: previously referred to as *upgrades*, Feature Updates contain not only security and quality revisions, but also significant feature additions and changes; they are released semi-annually.
-- **Quality Updates**: these are traditional operating system updates, typically released the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as Quality Updates. These non-Windows Updates are known as *Microsoft Updates* and devices can be optionally configured to receive such updates along with their Windows Updates.
-- **Non-deferrable updates**: Currently, antimalware and antispyware Definition Updates from Windows Update cannot be deferred.
+Windows Update for Business provides management policies for multiple types of updates to Windows 10 devices:
  
-Both Feature and Quality Updates can be deferred from deploying to client devices by a Windows Update for Business administrator within a bounded range of time from when those updates are first made available on the Windows Update Service. This deferral capability allows administrators to validate deployments as they are pushed to all client devices configured for Windows Update for Business. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device (if you set a deferral period of 365 days, the update will not be offered until 365 days after that update was released).
+- **Feature updates:** previously referred to as *upgrades*, feature updates contain not only security and quality revisions, but also significant feature additions and changes; they are released semi-annually in the fall and in the spring. 
+- **Quality updates:** these are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as quality updates. These non-Windows updates are known as "Microsoft updates" and devices can be configured to receive or not receive such updates along with their Windows updates. 
+- **Driver updates:** These are non-Microsoft drivers that are applicable to your devices. Driver updates can be turned off via Windows Update for Business policies.  
+- Microsoft product updates: these are updates for other Microsoft products, such as Office. These updates can be enabled or disabled via Windows Update for Business policy.
 
-| Category | Maximum deferral | Deferral increments | Example | WSUS classification GUID |
-| --- | --- | --- | --- | --- |
-| Feature Updates | 365 days | Days | From Windows 10, version 1511 to version 1607 maximum was 180 days.</br>From Windows 10, version 1703 to version 1809, the maximum is 365 days. | 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5 |
-| Quality Updates | 30 days | Days | Security updates</br>Drivers (optional)</br>Non-security updates</br>Microsoft updates (Office,Visual Studio, etc.) | 0FA1201D-4330-4FA8-8AE9-B877473B6441</br></br>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</br></br>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</br></br>varies |
-| Non-deferrable | No deferral | No deferral | Definition updates | E0789628-CE08-4437-BE74-2495B842F43B |
+## Offering
 
->[!NOTE]
->For information about classification GUIDs, see [WSUS Classification GUIDs](https://msdn.microsoft.com/library/ff357803.aspx).
+You can control when updates are applied, for example by deferring when an update is installed on a device or by pausing updates for a certain period of time.
 
-## Windows Update for Business in various Windows 10 versions
+### Manage which updates are offered
 
-Windows Update for Business was first available in Windows 10, version 1511. This diagram lists new or changed capabilities and updated behavior in subsequent versions.
+Windows Update for Business, offers you the ability to turn on or off both driver and Microsoft product updates.   
 
+- Drivers (on/off) 
+- Microsoft product updates (on/off) 
 
-| Windows 10, version 1511 | 1607 | 1703 | 1709 | 1803 | 1809 |
-| --- | --- | --- | --- | --- | --- |
-| Defer quality updates</br>Defer feature updates</br>Pause updates | All 1511 features, plus: **WSUS integration** | All 1607 features, plus **Settings controls** | All 1703 features, plus **Ability to set slow vs. fast Insider Preview branch** | All 1709 features, plus **Uninstall updates remotely** | All 1803 features, plus **Option to use default automatic updates**</br>**Ability to set separate deadlines for feature vs. quality updates**</br>**Admins can prevent users from pausing updates**
-## Managing Windows Update for Business with Group Policy
+### Manage when updates are offered
 
-The group policy path for Windows Update for Business has changed to correctly reflect its association to Windows Update for Business and provide the ability to easily manage pre-release Windows Insider Preview builds in Windows 10, version 1709. 
+#### Defer an update
 
-| Action | Windows 10 versions prior to 1709 | Windows 10 versions after 1709 |
-| --- | --- | --- |
-| Set Windows Update for Business Policies | Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Update | Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business |
-| Manage Windows Insider Preview builds | Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Toggle user control over Insider builds |	Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business - *Manage preview builds* |
-| Manage when updates are received | Select when Feature Updates are received | Select when Preview Builds and Feature Updates are received </br> (Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business - **Select when Preview Builds and Feature Updates are received**) |
-
-## Managing Windows Update for Business with MDM
-
-Starting with Windows 10, version 1709, the Windows Update for Business settings in MDM were changed to correctly reflect the associations with Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
-
-| Action | Windows 10 versions prior to 1709 | Windows 10 versions after 1709 |
-| --- | --- | --- |
-| Manage Windows Insider Preview builds | System/AllowBuildPreview | Update/ManagePreviewBuilds |
-| Manage when updates are received | Select when Feature Updates are received |	Select when Preview Builds and Feature Updates are received (Update/BranchReadinessLevel) |
-
-## Managing Windows Update for Business with System Center Configuration Manager
-
-Starting with Windows 10, version 1709, you can assign a collection of devices to have dual scan enabled and manage that collection with Windows Update for Business policies. Starting with Windows 10, version 1809, you can set a collection of devices to receive the Windows Insider Preview Feature Updates from Windows Update from within System Center Configuration Manager.
-
-| Action | Windows 10 versions between 1709 and 1809 | Windows 10 versions after 1809 |
-| --- | --- | --- |
-| Manage Windows Update for Business in Configuration Manager | Manage Feature or Quality Updates with Windows Update for Business via Dual Scan | Manage Insider pre-release builds with Windows Update for Business within System Center Configuration Manager |
-
-## Managing Windows Update for Business with Windows Settings options
-Windows Settings includes options to control certain Windows Update for Business features:
-
-- [Configure the readiness level](waas-configure-wufb.md#configure-devices-for-the-appropriate-service-channel) for a branch by using **Settings > Update & security > Windows Update > Advanced options**
-- [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) by using Settings > Update & security > Window Update > Advanced options
-
-## Other changes in Windows Update for Business in Windows 10, version 1703 and later releases
+A Windows Update for Business administrator can defer both feature and quality updates from deploying to client devices within a bounded range of time from when those updates are first made available on the Windows Update service. This deferral allows you time to validate deployments as they are pushed to client devices configured for Windows Update for Business. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device (if you set a feature update deferral period of 365 days, the client will not take a feature update that has been released for less than 365 days). 
 
 
-### Pause and deferral periods
+| Category | Maximum deferral |
+| --- | ----- |
+| Feature updates | 365 days |
+| Quality updates | 30 days  |
+| Non-deferrable | No deferral |
 
-The maximum pause time period is 35 days for both quality and feature updates. The maximum deferral period for feature updates is 365 days.
+#### Pause an update
 
-Also, the pause period is calculated from the set start date. For more details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). As a result, certain policy keys have different names; see the "Comparing keys in Windows 10, version 1607 to Windows 10, version 1703" section in [Configure Windows Update for Business](waas-configure-wufb.md) for details.
+If you discover a problem while deploying a feature or quality Update, an IT Administrator has the ability to pause the update for 35 days to prevent other devices from taking the problematic update until the issue is mitigated. If feature updates are paused, quality updates will still be offered to devices to ensure they stay in a secure state. The pause period for both feature and quality updates is calculated from the set start date. For more details, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
+
+#### Select branch readiness level for feature updates
+ 
+Branch readiness level enables administrators to specify which channel of feature updates they would like to receive. Today there are branch readiness level options for both pre-release and released updates:
+ 
+- Windows Insider Program for Business pre-release updates 
+    - Windows Insider Fast  
+    - Windows Insider Slow  
+    - Windows Insider Release Preview  
+- The Semi-Annual Channel, released updates 
+  
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel (Targeted) and Semi-Annual Channel. Deferral days are calculated against the release date of the chosen channel (either a release’s Semi-Annual Channel (Targeted) release date or the release’s Semi-Annual Channel release date). Starting with Windows 10, version 1903 there is only one release channel, the Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. To see release dates go to the [Windows Release Information Page](NEEDLINK).  
+
+## Experience
+
+### Manage end-user update controls 
+
+When certain policies such as deferral policies, branch readiness level options, or turning on or off Microsoft product updates are set by an IT Administrator the corresponding settings in the **Update Settings Advanced Options** user interface on a managed end-users device will be greyed out. 
+ 
+Additionally, there is a policy that enables IT Administrators to remove the end-user option to set pauses, by greying it out in the **Update Settings Advanced Options** user interface. When an IT administrator has set policy on a device, there will be an asterisk with red text in the end-user’s interface stating that some settings are managed by their organization.
+  
+### Manage update experience (scan, download, install, restart controls) 
+   
+#### Scan controls 
+ 
+The "Automatic Updates detection frequency" policy allows you to set the frequency of scans for automatic update detection. This policy allows the admin to specify the hours that Windows will use to determine how long to wait before checking for available updates. If no value is set or the policy is not configured, Windows will check for available updates at the default interval of 22 hours. 
+
+#### Download and install controls  
+
+##### Metered network control
+  
+This policy enables devices to automatically download updates, even over metered data connections (charges may apply). 
+
+##### Notification controls
+  
+This policy allows administrators to set the display options for update notifications. There are three options: the default operating system Windows Update notifications, disable all notifications excluding restart notifications, and disable all notifications including restart notifications.
+ 
+We have two policies related to the “Install Updates and Shut Down” option that enable the IT Administrator to either fully remove this option from the Shut Down Windows dialog box or to remove “Install Updates and Shut Down” option as the default selection in the Windows dialog box. 
+ 
+##### Automatic Update notification controls 
+
+The "configure automatic updates policy" enables administrators to specify whether devices will receive security updates and other important downloads through the Windows Automatic Updating service. This policy also enables the ability to schedule when installation occurs. 
+
+Additionally, there is the ability to specify whether automatic updates should automatically install certain updates that neither interrupt Windows services nor restart windows. There is also the ability to allow non-administrators to receive update notifications based off of the configure automatic updates policy discussed above. 
+ 
+##### Scheduling  
+As an administrator, you can enable Windows to automatically wake up systems to install scheduled updates.  
+
+#### Restart controls 
+ 
+##### Restart controls for if schedule install has been utilized {not sure I understand what this is trying to say?} 
+
+The administrator can re-prompt for restart with scheduled installations. Specify the amount of time for Automatic Updates to wait before prompting again with a schedule restart; the default is 10 minutes. Additionally, administrators can delay restart for scheduled installations or specify that to complete a scheduled installation. Automatic Updates will wait for the computer to be restarted by any user who is logged on, instead of causing the computer to restart automatically.
+  
+##### Auto-restart and deadline for auto-restart 
+
+There are a variety of policies that enable control over the restart experience of end users. When these policies are not configured, the user's active hours will be in effect. This enables the IT admin to turn off auto-restart for updates during active hours, set the maximum active hours range for auto-restarts, always automatically restart at the schedule time instead of notifying for two or more days prior, specify deadline before the device tries to auto-restart outside of active hours (this deadline can be set to varying days for feature and quality updates with a default at 7 days), and configure auto-restart reminder notifications or turn them off completely. 
+ 
+##### Engaged restart and deadline for engaged restart 
+
+The engaged restart policy allows the administrator to control the timing before transitioning from an auto-restart scheduled outside of active hours to engaged restart, which requires the user to schedule the restart. You can schedule the transition (the time before transitioning from auto to engaged), the snooze (how many days the user can snooze a restart reminder), and deadline (the deadline before a pending restart will automatically be executed outside of active hours).
+  
 
 
 
 ## Monitor Windows Updates by using Update Compliance
 
-Update Compliance provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
+Update Compliance provides a holistic view of operating system update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This  service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
 
 ![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 
 For more information about Update Compliance, see [Monitor Windows Updates using Update Compliance](update-compliance-monitor.md).
 
-## Manage Windows Update for Business with Intune
-
-Microsoft Intune provides the ability to configure Windows Update for Business settings on devices. Intune doesn’t store the updates, but only the update policy assignment. For more information, see [Manage software updates](https://docs.microsoft.com/intune/windows-update-for-business-configure).
 
 ## Steps to manage updates for Windows 10
 
