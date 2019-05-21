@@ -22,10 +22,7 @@ This article lists new and updated features and content that are of interest to 
 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-&nbsp;
-
 > [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
-
 
 ## Deployment
 
@@ -135,7 +132,7 @@ Portions of the work done during the offline phases of a Windows update have bee
 
 ### Co-management
 
-Intune and System Center Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+**Intune** and **System Center Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -231,8 +228,8 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 
 ## See Also
 
-[Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
-[What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
-[Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
+- [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
+- [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
+- [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.
+- [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
 
