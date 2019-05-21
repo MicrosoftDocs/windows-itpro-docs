@@ -22,7 +22,7 @@ sections:
       
  <table border = '0' class='box-info'><tr>
 <td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status</b>:<br>
-      <div>Windows 10, version 1903 is available by manually by selecting “Check for updates” via Windows Update. (Note: We are slowly throttling up this availability while we carefully monitor data and feedback). The recommended servicing status is Semi-Annual Channel.</div>
+      <div>Windows 10, version 1903 is available by manually selecting “Check for updates” via Windows Update. (<b>Note</b> We are slowly throttling up this availability while we carefully monitor data and feedback.) The recommended servicing status is Semi-Annual Channel.</div>
 </td></tr></table>
 
       " 
