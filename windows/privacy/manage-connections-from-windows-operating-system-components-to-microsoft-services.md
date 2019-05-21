@@ -461,7 +461,7 @@ To turn off the home page:
 
 - **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**
 
-  -or -
+  -or-
 
 - Create a new REG_SZ registry setting named **Start Page** in **HKEY_Current_User\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Main** with a **about:blank**
 
@@ -474,7 +474,7 @@ To configure the First Run Wizard:
 
 - **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Prevent running First Run wizard**, and set it to **Go directly to home page**
 
-  -or -
+  -or-
 
 - Create a new REG_DWORD registry setting named **DisableFirstRunCustomize** in **HKEY_Current_User\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Main** with a **1 (one)**
 
@@ -483,7 +483,7 @@ To configure the behavior for a new tab:
 
 - **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Specify default behavior for a new tab**, and set it to **about:blank**
 
-  -or -
+  -or-
 
 - Create a new REG_DWORD registry setting named **NewTabPageShow** in **HKEY_Current_User\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\TabbedBrowsing** with a **0 (zero)**
 
@@ -496,7 +496,7 @@ You can turn this off by:
 
 -  **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Security Features** > **Add-on Management** > **Turn off Automatic download of the ActiveX VersionList**
 
-  -or -
+  -or-
 
 -  Changing the REG_DWORD registry setting **HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to **0 (zero)**.
 
