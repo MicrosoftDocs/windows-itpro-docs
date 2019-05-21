@@ -30,9 +30,6 @@ Threat & Vulnerability Management is a component of Microsoft Defender ATP, and 
 - Invaluable machine vulnerability context during incident investigations
 - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)  
   
-   >[!NOTE]
-   > Microsoft Intune integration is currently in preview and Microsoft System Center Configuration Manager (SCCM) integration will be available in the coming weeks.  
-
 You can use the Threat & Vulnerability Management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 - View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
 - Correlate EDR insights with endpoint vulnerabilities and process them 
@@ -54,9 +51,9 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Menu | Select menu to expand the navigation pane and see the names of the Threat & Vulnerability Management capabilities.
-(2) Threat & Vulnerability Management navigation pane | Use the navigation pane to move across the **Threat and Vulnerability Management Dashboard**, **Security recommendations**, **Remediation**, and **Software inventory**. 
+(2) Threat & Vulnerability Management navigation pane | Use the navigation pane to move across the **Threat and Vulnerability Management Dashboard**, **Security recommendations**, **Remediation**, **Software inventory**, and **Weaknesses**.
 **Dashboards**	| Get a high-level view of the organization exposure score, MDATP configuration score, top remediation activities, top security recommendations, top vulnerable software, and top exposed machines data.
-**Security recommendations** | See the list of security recommendations, their related components, insights, number or exposed devices, impact, and request for remediation. You can click each item on the list and it will open a flyout pane where you will see vulnerability details, and have the option to open the software page, and see the remediation options.
+**Security recommendations** | See the list of security recommendations, their related components, insights, number or exposed devices, impact, and request for remediation. You can click each item on the list and it will open a flyout pane where you will see vulnerability details, open the software page, see the remediation options, and create exceptions. You can also open a ticket in Intune if your machines are joined through Azure Active Directory and you have enabled your Intune connections in Microsoft Defender ATP.
 **Remediation** | See the remediation activity, related component, remediation type, status, due date, exceptions, and option to export the remediation and process data to CSV. 
 **Software inventory** | See the list of applications, versions, weaknesses, whether there’s an exploit found on the application, prevalence in the organization, how many were installed, how many exposed devices are there, and the numerical value of the impact. You can select each item in the list and opt to open the software page which shows the associated vulnerabilities, misconfigurations, affected machine, version distribution details, and missing KBs.
 (3) Threat & Vulnerability Management dashboard | Access the **Exposure score**, **Configuration score**, **Exposure distribution**, **Top security recommendations**, **Top vulnerable software**, **Top remediation activities**, **Top exposed machines**, and **Threat campaigns**.
