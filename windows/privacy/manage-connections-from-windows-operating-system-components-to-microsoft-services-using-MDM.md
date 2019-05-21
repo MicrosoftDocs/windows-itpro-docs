@@ -104,7 +104,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 23. Windows Defender | [Defender/AllowCloudProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) | Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
 | | [Defender/SubmitSamplesConsent](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Stop sending file samples back to Microsoft. **Set to 2 (two)** 
 |   23.1 Windows Defender Smartscreen | [Browser/AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | Disable Windows Defender Smartscreen. **Set to 0 (zero)** 
-|   23.2 Windows Defender Smartscreen EnableAppInstallControl | [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol) | Controls whether users are allowed to install apps from places other than the Microsoft Store **Set to 0 (zero)** 
+|   23.2 Windows Defender Smartscreen EnableAppInstallControl | [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol) | Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
 | 24. Windows Media Player | N/A | N/A 
 | 25. Windows Spotlight | [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight) | Disable Windows Spotlight. **Set to 0 (zero)** 
 | 26. Microsoft Store | [ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)| Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)** 
@@ -112,7 +112,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 26.1 Apps for websites | [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers) | This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
 | 27. Windows Update Delivery Optimization | | The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). 
 | | [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)| Lets you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)** 
-| 28. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates**Set to 5 (five)** 
+| 28. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. **Set to 5 (five)** 
 
 
 ### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic (aka "Whitelisted") for Microsoft InTune / MDM configurations
