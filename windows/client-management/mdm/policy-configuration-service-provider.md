@@ -1402,6 +1402,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" id="internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
+  </dd>  
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -3931,6 +3934,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
@@ -4503,6 +4507,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
@@ -5174,6 +5179,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
 -   [Experience/AllowCortana](#experience-allowcortana)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
@@ -5254,6 +5260,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Experience/AllowCortana](#experience-allowcortana)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
@@ -5350,6 +5357,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)
 -   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
 -   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
@@ -5393,6 +5401,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
 
 -   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
 -   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)

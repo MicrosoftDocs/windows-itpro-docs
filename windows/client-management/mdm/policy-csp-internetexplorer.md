@@ -111,6 +111,9 @@ ms.date: 05/06/2019
     <a href="#internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -2804,6 +2807,81 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
+
+> [!Caution]
+> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+
+If you disable or do not configure this setting, IE continues to download updated versions of VersionList.XML.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off automatic download of the ActiveX VersionList*
+-   GP name: *VersionListAutomaticDownloadDisable*
+-   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   0 - Enabled
+-   1 - Disabled (Default)
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -17356,6 +17434,7 @@ ADMX Info:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>InternetExplorer policies supported by Windows Holographic
 
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 - [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 - [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 <!--EndHoloLens-->
@@ -17363,6 +17442,7 @@ ADMX Info:
 <!--StartHoloLensBusiness-->
 ## <a href="" id="hololenbusinessspolicies"></a>InternetExplorer policies supported by Windows Holographic for Business
 
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 - [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 - [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 <!--EndHoloLensBusiness-->
@@ -17370,6 +17450,7 @@ ADMX Info:
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Core  
 
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)  
 - [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 - [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 <!--EndIoTCore-->
@@ -17378,6 +17459,7 @@ ADMX Info:
 ## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Enterprise  
 
 - [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
 - [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
 - [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
 - [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
