@@ -727,7 +727,7 @@ To remove the XBOX app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage**
 
 To remove the Sway app:
 
@@ -739,7 +739,7 @@ To remove the Sway app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage**
 
 To remove the OneNote app:
 
@@ -747,7 +747,7 @@ To remove the OneNote app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage**
 
 To remove the Get Office app:
 
@@ -759,7 +759,7 @@ To remove the Get Office app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage**
 
 To remove the Get Skype app:
 
@@ -771,7 +771,7 @@ To remove the Get Skype app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
 
 To remove the Sticky notes app:
 
@@ -779,7 +779,7 @@ To remove the Sticky notes app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
 ### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy
 
@@ -955,9 +955,7 @@ To turn off **Location**:
   
   -or-
   
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1211,9 +1209,7 @@ To turn off **Let apps make phone calls**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1234,9 +1230,7 @@ To turn off **Let apps control radios**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1500,7 +1494,7 @@ To turn this Off in the UI:
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
-  Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
+Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
   **For Windows 10:**
 
