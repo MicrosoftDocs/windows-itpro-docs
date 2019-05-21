@@ -1660,7 +1660,9 @@ You can turn off **Enhanced Notifications** as follows:
 
 To disable Windows Defender Smartscreen:
 
-- In Group Policy, configure - **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure Windows Defender SmartScreen** to be **Disabled**
+In Group Policy, configure: 
+
+- **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure Windows Defender SmartScreen** to be **Disabled**
 
    -and-
 
