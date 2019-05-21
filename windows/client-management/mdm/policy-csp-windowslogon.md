@@ -407,8 +407,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   false - disabled
--   true  - enabled
+-   0 - disabled
+-   1 - enabled
 <!--/SupportedValues-->
 <!--Example-->
 
