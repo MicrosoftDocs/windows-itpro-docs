@@ -2842,7 +2842,6 @@ ADMX Info:
 
 > [!div class = "checklist"]
 > * User
-> * Device
 
 <hr/>
 
