@@ -27,7 +27,7 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-1809"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-1903"> 
         <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a><br>
     </td>
