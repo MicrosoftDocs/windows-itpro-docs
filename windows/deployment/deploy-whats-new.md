@@ -25,7 +25,7 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Recent additions to this page
 
-[SetupDiag](#setupdiag) 1.4 is released.<br>
+[SetupDiag](#setupdiag) 1.4.1 is released.<br>
 [MDT](#microsoft-deployment-toolkit-mdt) 8456 is released.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
 The [Microsoft 365](#microsoft-365) section was added.
@@ -51,7 +51,7 @@ Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/20
 
 ## Windows 10 Enterprise upgrade
 
-Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA). These customers can now subscribe users to Windows 10 Enterprise E3 or E5 and activate their subscriptions on up to five devices. Virtual machines can also be activated. For more information, see [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md).
+Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA). These customers can now subscribe users to Windows 10 Enterprise E3 or E5 and activate their subscriptions on up to five devices. Virtual machines can also be activated. For more information, see [Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md).
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
 
@@ -72,7 +72,7 @@ Recent Autopilot content includes new instructions for CSPs and OEMs on how to [
 
 [SetupDiag](upgrade/setupdiag.md) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
-SetupDiag version 1.4 was released on 12/18/2018.
+SetupDiag version 1.4.1 was released on 5/17/2019.
 
 ### Upgrade Readiness
 
