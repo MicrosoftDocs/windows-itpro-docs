@@ -99,8 +99,8 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 18. Software Protection Platform | [Licensing/DisallowKMSClientOnlineAVSValidation](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-licensing#licensing-disallowkmsclientonlineavsvalidation) | Opt out of sending KMS client activation data to Microsoft automatically. **Set to 1 (one)**  
 | 19. Storage Health | [Storage/AllowDiskHealthModelUpdates](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowdiskhealthmodelupdates) | Allows disk health model updates. **Set to 0 (zero)** 
 | 20. Sync your settings | [Experience/AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings) | Control whether your settings are synchronized. **Set to 0 (zero)** 
-| 21. Teredo | No MDM needed or required|No MDM needed or required
-| 22. Wi-Fi Sense | No MDM needed or required|No MDM needed or required
+| 21. Teredo | No MDM needed | Teredo is **Off by default**. Delivery Optimization (DO) can turn on Teredo, but DO itself is turned Off via MDM. 
+| 22. Wi-Fi Sense | No MDM needed | Wi-Fi Sense is no longer available from Windows 10 version 1803 and newer. 
 | 23. Windows Defender | [Defender/AllowCloudProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) | Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
 | | [Defender/SubmitSamplesConsent](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Stop sending file samples back to Microsoft. **Set to 2 (two)** 
 |   23.1 Windows Defender Smartscreen | [Browser/AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | Disable Windows Defender Smartscreen. **Set to 0 (zero)** 
