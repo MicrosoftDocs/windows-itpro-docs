@@ -1,5 +1,5 @@
 ---
-title: Use sensitivity labels to investigate incidents
+title: Use sensitivity labels to prioriize incident response
 description: Learn how to use sensitivity labels to prioritize and investigate incidents
 keywords: information, protection, data, loss, prevention,labels, dlp, incident, investigate, investigation
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Use sensitivity labels to investigate incidents  
+# Use sensitivity labels to prioritize incident response  
 
 **Applies to:**
 

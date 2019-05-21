@@ -63,7 +63,7 @@ After completing these steps Microsoft Defender ATP will automatically identify 
    1. Go through the label creation wizard.
    2. When you reach the Auto labeling page, turn on auto labeling toggle on.
    3. Add a new auto-labeling rule with the conditions that you require. 
-   4. Validate that ‘When content matches these conditions’ setting is set to ‘Automatically apply the label’.
+   4. Validate that "When content matches these conditions" setting is set to "Automatically apply the label".
  
 
 

@@ -101,6 +101,7 @@
 ####  [Protect users, data, and devices with conditional access](conditional-access.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
+##### [Use sensitivity labels to prioritize incident response ](information-protection-investigation.md)
 
 
 
