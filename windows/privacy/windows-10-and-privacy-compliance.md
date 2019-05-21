@@ -21,9 +21,6 @@ ms.date: 05/21/2019
 Applies to:
 - Windows 10, version 1903
 - Windows 10, version 1809
-- Windows 10, version 1803
-- Windows 10, version 1709
-- Windows 10, version 1703
 - Windows 10 Team Edition, version 1703 for Surface Hub
 - Windows Server 2019
 - Windows Server 2016
