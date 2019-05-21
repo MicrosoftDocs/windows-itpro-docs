@@ -43,7 +43,7 @@ Use this three-phased approach for configuring device registration.
 
 
 >[!IMPORTANT]
-> To use Hybrid Identity with Azure Active Directory (HIAAD) and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect.](https://www.microsoft.com/download/details.aspx?id=47594) 
+> To use Hybrid Identity with Azure Active Directory (HIAAD) and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
