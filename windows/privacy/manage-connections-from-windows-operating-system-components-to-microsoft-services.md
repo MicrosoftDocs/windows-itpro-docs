@@ -1885,7 +1885,7 @@ You can turn off Windows Update by setting the following registry entries:
 - Set the Group Policy **User Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.  
 
 
-You can turn off automatic updates by doing one of the following. This is not recommended.
+You can turn off automatic updates by doing the following. This is not recommended.
 
 - Add a REG_DWORD value named **AutoDownload** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
 
