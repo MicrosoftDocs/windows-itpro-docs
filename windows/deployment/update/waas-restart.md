@@ -42,6 +42,9 @@ When **Configure Automatic Updates** is enabled in Group Policy, you can enable 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**.
 
+> [!NOTE]
+> When using Remote Desktop Protocol connections, only active RDP sessions are considered as logged on users. Devices that do not have locally logged on users, or active RDP sessions, will be restarted. 
+
 You can also use Registry, to prevent automatic restarts when a user is signed in. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4** and enable **NoAutoRebootWithLoggedOnUsers**. As with Group Policy, if a user schedules the restart in the update notification, it will override this setting.
 
 For a detailed description of these registry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
@@ -159,8 +162,9 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 
 >[!NOTE]
 >You can only choose one path for restart behavior.
->
 >If you set conflicting restart policies, the actual restart behavior may not be what you expected.
+>When using RDP, only active RDP sessions are considered as logged on users.
+
 
 ## Registry keys used to manage restart
 The following tables list registry values that correspond to the Group Policy settings for controlling restarts after updates in Windows 10.

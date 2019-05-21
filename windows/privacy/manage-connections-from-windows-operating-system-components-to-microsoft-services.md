@@ -433,11 +433,11 @@ To turn off Insider Preview builds for Windows 10:
 
 | Registry Key                                         | Registry path                                                                                       |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Turn on Suggested Sites| HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Suggested Sites<br/>REG_DWORD: Enabled <br />**Set Value to: 0**|
-| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br />REG_DWORD: AllowServicePoweredQSA <br />**Set Value to: 0**|
-| Turn off the auto-complete feature for web addresses | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\CurrentVersion\\Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest <br />Set Value to: **no** |
-| Turn off browser geolocation | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />**Set Value to: 1** |
-| Prevent managing SmartScreen filter | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
+| Turn on Suggested Sites| HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Suggested Sites<br/>REG_DWORD: Enabled <br />**Set Value to: 0**|
+| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br />REG_DWORD: AllowServicePoweredQSA <br />**Set Value to: 0**|
+| Turn off the auto-complete feature for web addresses |HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\CurrentVersion\\Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest <br />Set Value to: **no** |
+| Turn off browser geolocation | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />**Set Value to: 1** |
+| Prevent managing SmartScreen filter | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
 
 There are more Group Policy objects that are used by Internet Explorer:
 
@@ -452,10 +452,10 @@ You can also use Registry keys to set these policies.
 
 | Registry Key                                         | Registry path                                                                                       |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\BrowserEmulation<br/>REG_DWORD: DisableSiteListEditing <br /> **Set Value to 1**|
-| Turn off the flip ahead with page prediction feature | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead<br/>REG_DWORD: Enabled <br /> **Set Value to 0**|
-| Turn off background synchronization for feeds and Web Slices | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds<br/>REG_DWORD: BackgroundSyncStatus <br/> **Set Value to 0**|
-| Allow Online Tips | HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer<br/>REG_DWORD: AllowOnlineTips <br/> **Set Value to 0  (zero)**|
+| Choose whether employees can configure Compatibility View. | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\BrowserEmulation<br/>REG_DWORD: DisableSiteListEditing <br /> **Set Value to 1**|
+| Turn off the flip ahead with page prediction feature | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead<br/>REG_DWORD: Enabled <br /> **Set Value to 0**|
+| Turn off background synchronization for feeds and Web Slices | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds<br/>REG_DWORD: BackgroundSyncStatus <br/> **Set Value to 0**|
+| Allow Online Tips | HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer<br/>REG_DWORD: AllowOnlineTips <br/> **Set Value to 0**|
 
 To turn off the home page:
 
@@ -668,7 +668,9 @@ To remove the News app:
 - Right-click the app in Start, and then click **Uninstall**.
 
   -or-
-
+>[!IMPORTANT]
+> If you have any issues with these commands, do a system reboot and try the scripts again.
+>
 - Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
   -and-

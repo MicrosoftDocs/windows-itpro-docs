@@ -1,0 +1,36 @@
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Resolved issues in Windows 10, version 1903 and Windows Server, vesion 1903
+metadata:
+  document_id: 
+  title: Resolved issues in Windows 10, version 1903 and Windows Server, vesion 1903
+  description: Resolved issues in Windows 10, version 1903 and Windows Server 1903
+  keywords: ["Resolved issues in Windows 10", "Windows 10", "Windows 10, version 1903"]
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      See a list of known issues that have been resolved for Windows 10, version 1903 and Windows Server, version 1903 over the last six months. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s) to search the page.
+      
+      " 
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Resolved issues
+- items:
+  - type: markdown
+    text: "
+      <div>There are no recently resolved issues at this time. 
+        </div> 
+     "

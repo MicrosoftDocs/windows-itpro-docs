@@ -28,6 +28,9 @@ Windows Easy Transfer is a software wizard for transferring files and settings 
 
 With Windows Easy Transfer, files and settings can be transferred using a network share, a USB flash drive (UFD), or the Easy Transfer cable. However, you cannot use a regular universal serial bus (USB) cable to transfer files and settings with Windows Easy Transfer. An Easy Transfer cable can be purchased on the Web, from your computer manufacturer, or at an electronics store.
 
+> [!NOTE]
+> Windows Easy Transfer [is not available in Windows 10](https://support.microsoft.com/help/4026265/windows-windows-easy-transfer-is-not-available-in-windows-10).
+
 ### Migrate with the User State Migration Tool
 You can use USMT to automate migration during large deployments of the Windows operating system. USMT uses configurable migration rule (.xml) files to control exactly which user accounts, user files, operating system settings, and application settings are migrated and how they are migrated. You can use USMT for both *side-by-side* migrations, where one piece of hardware is being replaced, or *wipe-and-load* (or *refresh*) migrations, when only the operating system is being upgraded.
 

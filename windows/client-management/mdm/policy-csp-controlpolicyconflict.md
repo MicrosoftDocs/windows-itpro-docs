@@ -67,7 +67,7 @@ Added in Windows 10, version 1803. This policy allows the IT admin to control wh
 > [!Note]  
 > MDMWinsOverGP only applies to policies in Policy CSP. It does not apply to other MDM settings with equivalent GP settings that are defined on other configuration service providers.
 
-This policy is used to ensure that MDM policy wins over GP when same setting is set by both GP and MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
+This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 Note: This policy doesn’t support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1. Windows 10 version 1809 will support using the Delete command to set the value to 0 again, if it was previously set to 1.
 
 The following list shows the supported values:

@@ -7,6 +7,7 @@
 ### [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
 ### [Diagnostic Data Viewer for PowerShell Overview](Microsoft-DiagnosticDataViewer.md)
 ## Basic level Windows diagnostic data events and fields
+### [Windows 10, version 1903 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 ### [Windows 10, version 1809 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 ### [Windows 10, version 1803 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 ### [Windows 10, version 1709 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)

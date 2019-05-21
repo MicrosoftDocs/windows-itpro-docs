@@ -149,7 +149,7 @@ Any user who accesses the system through a sign-in process has the Authenticated
 </tr>
 <tr class="odd">
 <td><p>Default Location in Active Directory</p></td>
-<td><p>cn=WellKnown Security Principals, cn=Configuration, dc=&lt;forestRootDomain&gt;</p></td>
+<td><p>cn=System,cn=WellKnown Security Principals, cn=Configuration, dc=&lt;forestRootDomain&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>

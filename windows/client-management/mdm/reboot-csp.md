@@ -30,7 +30,7 @@ The following diagram shows the Reboot configuration service provider management
 > [!Note]  
 > If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
-<p style="margin-left: 20px">The supported operations are Execute and Get.
+<p style="margin-left: 20px">The supported operations are Execute and Get.</p>
 
 <a href="" id="schedule"></a>**Schedule**  
 <p style="margin-left: 20px">The supported operation is Get.</p>
