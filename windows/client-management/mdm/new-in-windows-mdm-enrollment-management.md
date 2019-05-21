@@ -115,6 +115,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)</li>
 </ul>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[EnrollmentStatusTracking  CSP](enrollmentstatustracking-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
+</td></tr>
 </tbody>
 </table>
 
