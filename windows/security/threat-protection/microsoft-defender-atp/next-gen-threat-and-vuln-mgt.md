@@ -57,7 +57,7 @@ Threat & Vulnerability Management helps customers prioritize and focus on those 
 ### Seamless remediation
  
 Microsoft Defender ATP’s Threat & Vulnerability Management allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
-- One-click remediation requests to IT. Through Microsoft Defender ATP’s integration with Microsoft Intune and System Center Configuration Manager (SCCM), security administrators can create a remediation task in Microsoft Intune with one click. We plan to expand this capability to other IT security management platforms. 
+- Remediation requests to IT. Through Microsoft Defender ATP’s integration with Microsoft Intune and System Center Configuration Manager (SCCM), security administrators can create a remediation task in Microsoft Intune from the Security recommendation pages. We plan to expand this capability to other IT security management platforms. 
 - Alternate mitigations. Threat & Vulnerability Management provides insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
 - Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
 
