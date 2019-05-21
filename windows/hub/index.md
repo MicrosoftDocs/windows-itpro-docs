@@ -15,14 +15,9 @@ ms.date: 10/02/2018
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
-
 &nbsp;
 
-
-> [!video https://www.youtube.com/embed/hAva4B-wsVA]
-
-
-## Check out [what's new in Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809).
+## Check out [what's new in Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
