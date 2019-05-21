@@ -998,7 +998,6 @@ If you disable or do not configure this policy setting, the wake setting as spec
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Automatic Maintenance WakeUp Policy*
--   GP category English path: *Windows Components/Maintenance Scheduler*
 -   GP name: *WakeUpPolicy*
 -   GP path: *Windows Components/Maintenance Scheduler*
 -   GP ADMX file name: *msched.admx*
@@ -1130,9 +1129,9 @@ Default value is 7.
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineForFeatureUpdates*
 -   GP element: *ConfigureDeadlineForFeatureUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1189,9 +1188,9 @@ Added in Windows 10, version 1903. Allows IT admins to specify the number of day
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineForQualityUpdates*
 -   GP element: *ConfigureDeadlineForQualityUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1252,9 +1251,9 @@ Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/C
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineGracePeriod*
 -   GP element: *ConfigureDeadlineGracePeriod*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1317,9 +1316,9 @@ When disabled, if the device has installed the required updates and is outside o
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineNoAutoReboot*
 -   GP element: *ConfigureDeadlineNoAutoReboot*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
