@@ -1061,7 +1061,7 @@ To turn off voice dictation, speaking to Cortana and other apps, or sending voic
 - Create a REG_DWORD registry setting named **HasAccepted** in **HKEY_CURRENT_USER\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy** with a **value of 0 (zero)**
 
 
-If you're running at Windows 10, version 1703 up to Windows 10, version 1803, you can turn off updates to the speech recognition and speech synthesis models:
+If you're running at Windows 10, version 1703 up to and including Windows 10, version 1803, you can turn off updates to the speech recognition and speech synthesis models:
 
  - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data** 
 
