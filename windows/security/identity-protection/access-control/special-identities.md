@@ -36,21 +36,21 @@ For information about security groups and group scope, see [Active Directory Sec
 
 The special identity groups are described in the following tables. 
 
--   [Anonymous Logon](#Anonymous-Logon)
+-   [Anonymous Logon](#anonymous-logon)
 
--   [Authenticated User](#Authenticated-Users)
+-   [Authenticated User](#authenticated-users)
 
 -   [Batch](#batch)
 
--   [Creator Group](#Creator-Group)
+-   [Creator Group](#creator-group)
 
--   [Creator Owner](#Creator-Owner)
+-   [Creator Owner](#creator-owner)
 
--   [Dialup](#Dialup)
+-   [Dialup](#dialup)
 
--   [Digest Authentication](#Digest-Authentication)
+-   [Digest Authentication](#digest-authentication)
 
--   [Enterprise Domain Controllers](#Enterprise-Domain-Controllers)
+-   [Enterprise Domain Controllers](#enterprise-domain-controllers)
 
 -   [Everyone](#everyone)
 
@@ -58,31 +58,31 @@ The special identity groups are described in the following tables.
 
 -   [Local Service](#local-service)
 
--   [LocalSystem](#LocalSystem)
+-   [LocalSystem](#localsystem)
 
 -   [Network](#network)
 
--   [Network Service](#Network-Service)
+-   [Network Service](#network-service)
 
--   [NTLM Authentication](#NTLM-Authentication)
+-   [NTLM Authentication](#ntlm-authentication)
 
--   [Other Organization](#Other-Organization)
+-   [Other Organization](#other-organization)
 
--   [Principal Self](#Principal-Self)
+-   [Principal Self](#principal-self)
 
--   [Remote Interactive Logon](#Remote-Interactive-Logon)
+-   [Remote Interactive Logon](#remote-interactive-logon)
 
--   [Restricted](#Restricted)
+-   [Restricted](#restricted)
 
--   [SChannel Authentication](#SChannel-Authentication)
+-   [SChannel Authentication](#schannel-authentication)
 
--   [Service](#Service)
+-   [Service](#service)
 
--   [Terminal Server User](#Terminal-Server-User)
+-   [Terminal Server User](#terminal-server-user)
 
--   [This Organization](#This-Organization)
+-   [This Organization](#this-organization)
 
--   [Window Manager\\Window Manager Group](#Window-Manager\\Window-Manager-Group)
+-   [Window Manager\\Window Manager Group](#window-manager\\window-manager-group)
 
 ## Anonymous Logon
 
