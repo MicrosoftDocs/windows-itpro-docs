@@ -28,13 +28,13 @@ Your environment is federated and you are ready to configure device registration
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
-Use this three phased approach for configuring device registration.
+Use this three-phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-syncrhonization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
 > [!NOTE]
-> Before proceeding, you should familiarize yourself with device regisration concepts such as:
+> Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
@@ -100,7 +100,7 @@ Federation server proxies are computers that run AD FS software that have been c
 Use the [Setting of a Federation Proxy](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
 
 ### Deploy Azure AD Connect
-Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
+Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
 
 When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
 
@@ -514,7 +514,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. Configure Azure Device Registration (*You are here*)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

@@ -29,7 +29,7 @@ The **Reclaim seat from user** operation returns reclaimed seats for a user in t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>POST</p></td>
+<td><p>DELETE</p></td>
 <td><p>https://bspmts.mp.microsoft.com/V1/Inventory/{productId}/{skuId}/Seats/{username}</p></td>
 </tr>
 </tbody>

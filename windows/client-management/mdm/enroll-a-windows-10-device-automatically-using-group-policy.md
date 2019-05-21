@@ -108,6 +108,15 @@ Requirements:
 - Ensure that PCs belong to same computer group.
 
 1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
+    >[!Note] 
+    >If you do not see the policy, it may be caused because you don’t have the ADMX installed for Windows 10, version 1803. To fix the issue, follow these steps:        
+    >   1. Download [Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)
+](https://www.microsoft.com/en-us/download/details.aspx?id=56880).
+    >   2. Install the package on the Primary Domain Controller.
+    >   3. Navigate to the folder **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**.
+    >   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies**.
+    >   5. Restart the Primary Domain Controller for the policy to be available.
+
 2.	Create a Security Group for the PCs.
 3.	Link the GPO.
 4.	Filter using Security Groups.

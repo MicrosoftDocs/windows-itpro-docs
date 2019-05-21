@@ -133,11 +133,9 @@ If you have already established a KMS infrastructure in your organization for an
 1.  Download and install the correct update for your current KMS host operating system. Restart the computer as directed.
 2.  Request a new KMS host key from the Volume Licensing Service Center.
 3.  Install the new KMS host key on your KMS host.
-4.  Activate the new KMS host key by running the slmrg.vbs script.
+4.  Activate the new KMS host key by running the slmgr.vbs script.
 
 For detailed instructions, see [Update that enables Windows 8.1 and Windows 8 KMS hosts to activate a later version of Windows](https://go.microsoft.com/fwlink/p/?LinkId=618265) and [Update that enables Windows 7 and Windows Server 2008 R2 KMS hosts to activate Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=626590).
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
-
