@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 05/13/2019
 ---
 
 # Configuration service provider reference
 
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
@@ -22,14 +24,6 @@ Additional lists:
 - [List of CSPs supported in Windows Holographic](#hololens)
 - [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
-
-The following tables show the configuration service providers support in Windows 10.
-Footnotes:
-- 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703
-- 3 - Added in Windows 10, version 1709
-- 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, version 1809
 
 <!--StartCSPs-->
 <hr/>
@@ -926,6 +920,34 @@ Footnotes:
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2646,14 +2668,6 @@ Footnotes:
 <hr/>
 <!--EndCSPs-->
 
-
- Footnotes:
-- 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703
-- 3 - Added in Windows 10, version 1709
-- 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, version 1809
-
 ## CSP DDF files download
 
 You can download the DDF files for various CSPs from the links below:
@@ -2696,13 +2710,7 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
- Footnotes:
-- 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703
-- 3 - Added in Windows 10, version 1709
-- 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, version 1809
-
+ 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
 -   [AccountManagement CSP](accountmanagement-csp.md)
@@ -2750,12 +2758,19 @@ The following list shows the configuration service providers supported in Window
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
 - [Reboot CSP](reboot-csp.md)
-- [RemoteWipe CSP](remotewipe-csp.md) 1
+- [RemoteWipe CSP](remotewipe-csp.md)<sup>5<sup>
 - [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 - [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 - [Update CSP](update-csp.md)
 - [VPNv2 CSP](vpnv2-csp.md)
 - [WiFi CSP](wifi-csp.md)
 
+<hr>
+
  Footnotes:
-- 1 - Added in Windows 10, version 1809
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.
