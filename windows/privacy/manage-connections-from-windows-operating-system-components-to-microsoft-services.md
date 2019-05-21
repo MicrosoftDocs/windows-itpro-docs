@@ -457,7 +457,9 @@ You can also use Registry keys to set these policies.
 | Turn off background synchronization for feeds and Web Slices | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds<br/>REG_DWORD: BackgroundSyncStatus <br/> **Set Value to 0**|
 | Allow Online Tips | HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer<br/>REG_DWORD: AllowOnlineTips <br/> **Set Value to 0  (zero)**|
 
-To turn off the home page, **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**.
+To turn off the home page:
+
+- **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**
 
   -or -
 
@@ -468,14 +470,18 @@ To turn off the home page, **Enable** the Group Policy: **User Configuration** >
 - Create a new REG_DWORD registry setting named **HomePage** in **HKEY_Current_User\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Control Panel** with a **1 (one)**
 
 
-To configure the First Run Wizard, **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Prevent running First Run wizard**, and set it to **Go directly to home page**.
+To configure the First Run Wizard:
+
+- **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Prevent running First Run wizard**, and set it to **Go directly to home page**
 
   -or -
 
 - Create a new REG_DWORD registry setting named **DisableFirstRunCustomize** in **HKEY_Current_User\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Main** with a **1 (one)**
 
 
-To configure the behavior for a new tab, **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Specify default behavior for a new tab**, and set it to **about:blank**.
+To configure the behavior for a new tab:
+
+- **Enable** the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Specify default behavior for a new tab**, and set it to **about:blank**
 
   -or -
 
