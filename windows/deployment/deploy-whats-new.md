@@ -25,7 +25,7 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Recent additions to this page
 
-[SetupDiag](#setupdiag) 1.4 is released.<br>
+[SetupDiag](#setupdiag) 1.4.1 is released.<br>
 [MDT](#microsoft-deployment-toolkit-mdt) 8456 is released.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
 The [Microsoft 365](#microsoft-365) section was added.
@@ -72,7 +72,7 @@ Recent Autopilot content includes new instructions for CSPs and OEMs on how to [
 
 [SetupDiag](upgrade/setupdiag.md) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
-SetupDiag version 1.4 was released on 12/18/2018.
+SetupDiag version 1.4.1 was released on 5/17/2019.
 
 ### Upgrade Readiness
 
