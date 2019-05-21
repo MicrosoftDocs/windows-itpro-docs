@@ -26,7 +26,7 @@ ms.date: 06/05/2018
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
-Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+Learn about the network connections that Windows components make to Microsoft in addition to the privacy settings that affect the data which is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
@@ -40,7 +40,7 @@ Make sure you've chosen the right settings configuration for your environment be
 You should not extract this package to the windows\\system32 folder because it will not apply correctly.
 
 >[!IMPORTANT]
-> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionallity is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
+> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionality is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
 
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article.
 It is recommended that you restart a device after making configuration changes to it.
@@ -76,7 +76,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added an MDM policy for Font streaming
 - Added an MDM policy for Network Connection Status Indicator
-- Added an MDM policy for the Micosoft Account Sign-In Assistant
+- Added an MDM policy for the Microsoft Account Sign-In Assistant
 - Added instructions for removing the Sticky Notes app
 - Added registry paths for some Group Policies
 - Added the Find My Device section
@@ -283,7 +283,7 @@ For more information, see [Automatic Root Certificates Update Configuration](htt
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
-> By not automatically downloading the root certificates, the device might have not be able to connect to some websites.
+> By not automatically downloading the root certificates, the device might have not been able to connect to some websites.
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
@@ -495,7 +495,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
-> The following Group Policies and Registry Keys are for user interactive scenarios rather then the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings: 
+> The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings: 
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -661,7 +661,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
 | Allow Microsoft Compatibility List                       | Choose whether to use the Microsoft Compatibility List in Microsoft Edge. <br /> **Set to: Disabled**        |
 
-Alternatively, you can configure the these Registry keys as described:
+Alternatively, you can configure the following Registry keys as described:
 
 | Registry Key | Registry path |
 | - | - |
@@ -688,7 +688,7 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> **Set to: Allowed**                  |
 | Browser/AllowMicrosoftCompatbilityList               | Specify the Microsoft compatibility list in Microsoft Edge. <br /> **Set to: Not Allowed**                 |
 | Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> **Set to: Not Allowed**       |
-| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the Address Bar shows search suggestions.. <br /> **Set to: Not Allowed**                   |
+| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the Address Bar shows search suggestions. <br /> **Set to: Not Allowed**                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> **Set to: Not Allowed**                            |
 | Browser/FirstRunURL                                  | Choose the home page for Microsoft Edge on Windows Mobile 10. <br /> **Set to:** blank                 |
 
@@ -1020,7 +1020,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
 - Create a new REG_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY_CURRENT_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
-To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
+To turn off **Let apps on my other devices open apps and continue experiences on this device**:
 
 - Turn off the feature in the UI.
 
@@ -1676,7 +1676,7 @@ To turn this off:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access diagnostic information about other apps**
 
   -or-
 
@@ -1855,7 +1855,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
