@@ -114,6 +114,10 @@
 #### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 #### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
 
+
+#### [Compare commercial and government Microsoft Defender ATP](microsoft-defender-atp/compare-commercial-gov.md)
+
+
 #### [Evaluate Microsoft Defender ATP](microsoft-defender-atp/evaluate-atp.md)
 #####Evaluate attack surface reduction
 ###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)

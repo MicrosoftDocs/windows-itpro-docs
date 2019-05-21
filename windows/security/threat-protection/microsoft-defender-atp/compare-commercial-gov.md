@@ -21,40 +21,39 @@ ms.topic: conceptual
 # Compare commercial and government Microsoft Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender ATP for government uses the same underlying techonologies as commercial Microsoft Defender ATP. The government SKU/version is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for the government version. 
+Microsoft Defender ATP for government uses the same underlying technologies as commercial Microsoft Defender ATP. The government SKU/version is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for the government version. 
 
+
+## Endpoint versions
+The following OS versions are supported:
+
+- Windows 10, version 1709 or later
+
+
+The following OS versions are not supported:
+- Windows Server
+- Windows 7, 8, 8.1
 
 
 ## Threat & Vulnerability Management
 Not supported
 
-## Attack surface reduction
-Not supported
-
-## Next generation protection
-
-
-## Endpoint detection and response
-Not supported
-
 
 ## Automated investigation and remediation
-Supported
+Response to Office 365 alerts are not supported
 
->[!NOTE]
->Response to Office 365 alerts are not supported.
 
-## Secure score
-
+## Live response
+ADDED, BUT NOT SURE IF SUPPORTED.
 
 ## Microsoft Threat Experts
-
+Not supported
 
 
 ## Management and APIs
-Not supported
+NOT SURE WHAT IS SUPPORTED AND NOT. 
 
 ## Product integrations
 
@@ -68,18 +67,6 @@ Integrations with the following products are not supported:
 - Intune
 
 
-## Endpoint versions
-The following OS versions are supported:
 
-- Windows 10, version 1709 or later
-
-
-The following OS versions are not supported:
-- Windows Server
-- Windows 7, 8, 8.1
-- Linux
-- macOS
-- iOS
-- Android
 
 
