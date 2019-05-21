@@ -115,7 +115,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 27. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. **Set to 5 (five)** 
 
 
-### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic (aka "Whitelisted") for Microsoft InTune / MDM configurations
+### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
 
 |**Allowed traffic endpoints** | 
 | --- | 
