@@ -20,7 +20,7 @@ We recommend that you begin deployment of each SAC release immediately as a targ
 Starting with Windows 10, version 1809, feature updates for Windows 10 Enterprise and Education editions are serviced for 30 months from their release date. For information about servicing timelines, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).
 
 >[!NOTE]
->Beginning with Windows 10, version 1903, this page will no longer list SAC-T information for version 1903 and future feature updates. Instead, you will find a single entry for each SAC release. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+>Beginning with Windows 10, version 1903, this page will no longer list Semi-Annual Channel (Targeted) information for version 1903 and future feature updates. Instead, you will find a single entry for each Semi-Annual Channel release. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
 
 
 <div class="m-rich-content-block" data-grid="col-12">
