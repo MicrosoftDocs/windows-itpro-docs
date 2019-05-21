@@ -104,6 +104,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[Power/TurnOffHybridSleepPluggedIn](policy-csp-power.md#power-turnoffhybridsleeppluggedin)</li>
 <li>[Power/UnattendedSleepTimeoutOnBattery](policy-csp-power.md#power-unattendedsleeptimeoutonbattery)</li>
 <li>[Power/UnattendedSleepTimeoutPluggedIn](policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)</li>
+<li>[Search/AllowFindMyFiles](policy-csp-search.md#search-allowfindmyfiles)</li>
 <li>[System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)</li>
 <li>[System/TurnOffFileHistory](policy-csp-system.md#system-turnofffilehistory)</li>
 <li>[Update/AutomaticMaintenanceWakeUp](policy-csp-update.md#update-automaticmaintenancewakeup)</li>

@@ -2900,6 +2900,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-search.md#search-allowcortanainaad" id="search-allowcortanainaad">Search/AllowCortanaInAAD</a>
   </dd>
   <dd>
+    <a href="./policy-csp-search.md#search-allowfindmyfiles" id="search-allowfindmyfiles">Search/AllowFindMyFiles</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-search.md#search-allowindexingencryptedstoresoritems" id="search-allowindexingencryptedstoresoritems">Search/AllowIndexingEncryptedStoresOrItems</a>
   </dd>
   <dd>
@@ -4916,6 +4919,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
 -   [Search/AllowCloudSearch](./policy-csp-search.md#search-allowcloudsearch)
 -   [Search/AllowCortanaInAAD](./policy-csp-search.md#search-allowcortanainaad)
+-   [Search/AllowFindMyFiles](./policy-csp-search.md#search-allowfindmyfiles)
 -   [Search/AllowIndexingEncryptedStoresOrItems](./policy-csp-search.md#search-allowindexingencryptedstoresoritems)
 -   [Search/AllowSearchToUseLocation](./policy-csp-search.md#search-allowsearchtouselocation)
 -   [Search/AllowUsingDiacritics](./policy-csp-search.md#search-allowusingdiacritics)
