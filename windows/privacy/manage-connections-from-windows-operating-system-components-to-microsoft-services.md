@@ -1019,9 +1019,7 @@ To turn off **Choose apps that can use your microphone**:
 
 To turn off notifications network usage:
 
-- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
-
-  - Set to **Enabled**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
 
   -or-
 
