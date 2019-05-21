@@ -27,7 +27,7 @@ ms.topic: conceptual
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Approach
 
