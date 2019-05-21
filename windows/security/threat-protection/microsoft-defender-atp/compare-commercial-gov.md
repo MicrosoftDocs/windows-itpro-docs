@@ -46,14 +46,14 @@ Response to Office 365 alerts are not supported
 
 
 ## Live response
-ADDED, BUT NOT SURE IF SUPPORTED.
+NOTE: ADDED, BUT NEED TO CHECK IF SUPPORTED.
 
 ## Microsoft Threat Experts
 Not supported
 
 
 ## Management and APIs
-NOT SURE WHAT IS SUPPORTED AND NOT. 
+NOTE: NOT SURE WHAT IS SUPPORTED AND NOT. Keeping here for now.
 
 ## Product integrations
 
