@@ -13,7 +13,7 @@ ms.topic: article
 
 > Applies to: Windows 10, version 1903
 
-Each release of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, usually because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10, version 1903. **The list below is subject to change and might not include every affected feature or functionality.** 
+Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10, version 1903. **The list below is subject to change and might not include every affected feature or functionality.** 
 
 **Note**: Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
