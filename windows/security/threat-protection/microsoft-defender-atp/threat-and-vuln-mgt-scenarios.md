@@ -27,9 +27,12 @@ ms.topic: article
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Running with Windows 10 1709 (Fall Creators Update) or later
+>[!NOTE]
+>Threat & Vulnerability Management can also scan machines running on Windows 7 operating systems and detects vulnerabilities coming from patch Tuesday.
 - Have the following mandatory updates installed:
 - (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
 - (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
+- Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are using SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
@@ -99,6 +102,24 @@ Remediating issues in the security recommendations list will improve your config
 
 6. Review the machine **Configuration score** widget again. The number of the security controls issues will decrease. When you click **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be be listed there anymore, and your configuration score should increase.
 
+## Request a remediation 
+>[!NOTE]
+>To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+
+The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
+This capability allows you, the Security Administrator, to request for the IT Administrator to remediate a vulnerability or misconfiguration from the **Security recommendation** pages to Intune.
+
+1. Click on a security recommendation you would like to request remediation for, and then click **Remediation options**.
+
+2. Select **Open a ticket in Intune (for AAD joined devices)**, select a due date, and add optional notes for the IT Administrator. Click **Submit request**.
+
+3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+4. Go to the **Remediation** page to view the status of your remediation request.
+
+
+>[!NOTE]
+>If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune at a time. Create another remediation request for the remaining machines up to 10,000.
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
