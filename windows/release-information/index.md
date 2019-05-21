@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ---
 # Windows 10 release information
 
-Feature updates for Windows 10 are released twice a year, around March and September, via the Semi-Annual Channel (SAC) and will be serviced with monthly quality updates for 18 months from the date of the release.
+Feature updates for Windows 10 are released twice a year, around March and September, via the Semi-Annual Channel and will be serviced with monthly quality updates for 18 months from the date of the release.
 
 We recommend that you begin deployment of each SAC release immediately as a targeted deployment to devices selected for early adoption and ramp up to full deployment at your discretion. This will enable you to gain access to new features, experiences, and integrated security as soon as possible.
 
