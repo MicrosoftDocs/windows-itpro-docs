@@ -46,7 +46,7 @@ It's a good idea to read the guide before starting the evaluation process so tha
 ## Evaluation setup 
 When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. The machine will be configured with the most up to date version of Windows 10 and Office 2019 Standard. 
 
-The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side.
+The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
    The following security components are pre-configured in the test machines:
 
@@ -57,11 +57,13 @@ The machine will automatically be onboarded to your tenant with the recommended 
   - [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
   - [Potentially unwanted application detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)
   - [Cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus)
-  - [Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+
+
 
   >[!NOTE]
   > Windows Defender Antivirus will be on (not in audit). If Windows Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the machine through the Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
 
+Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
 
 1. Select the help icon > **Microsoft Defender ATP evaluation lab**.
