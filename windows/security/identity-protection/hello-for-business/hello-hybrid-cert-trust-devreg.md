@@ -280,7 +280,7 @@ The definition helps you to verify whether the values are present or if you need
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
-	@RuleName = "Issue account type with the value User when its not a computer"
+	@RuleName = "Issue account type with the value User when it's not a computer"
 	NOT EXISTS(
 	[
 		Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
