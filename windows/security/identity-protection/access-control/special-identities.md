@@ -34,7 +34,7 @@ Although the special identity groups can be assigned rights and permissions to r
 
 For information about security groups and group scope, see [Active Directory Security Groups](active-directory-security-groups.md).
 
-The special identity groups are described in the following tables. 
+The special identity groups are described in the following tables:
 
 -   [Anonymous Logon](#anonymous-logon)
 
