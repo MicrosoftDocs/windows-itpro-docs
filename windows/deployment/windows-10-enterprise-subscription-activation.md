@@ -154,6 +154,8 @@ changepk.exe /ProductKey %ProductKey%
 )
 </pre>
 
+If a firmware-embedded Windows 10 activation key is not present, the license will escalate to Windows 10 Enterprise using Subscription Activation directly.
+
 ### Obtaining an Azure AD licence
 
 Enterprise Agreement/Software Assurance (EA/SA):
