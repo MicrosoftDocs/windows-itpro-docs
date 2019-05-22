@@ -92,6 +92,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)</li>
 <li>[DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)</li>
 <li>[Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)</li>
+<li>[InternetExplorer/AllowEnhancedSuggestionsInAddressBar]((policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)</li>
+<li>[InternetExplorer/DisableActiveXVersionListAutoDownload](policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)</li>
+<li>[InternetExplorer/DisableCompatView](policy-csp-internetexplorer.md#internetexplorer-disablecompatview)</li>
+<li>[InternetExplorer/DisableFeedsBackgroundSync](policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)</li>
+<li>[InternetExplorer/DisableGeolocation](policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)</li>
+<li>[InternetExplorer/DisableWebAddressAutoComplete](policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)</li>
+<li>[InternetExplorer/NewTabDefaultPage](policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)</li>
 <li>[Power/EnergySaverBatteryThresholdOnBattery](policy-csp-power.md#power-energysaverbatterythresholdonbattery)</li>
 <li>[Power/EnergySaverBatteryThresholdPluggedIn](policy-csp-power.md#power-energysaverbatterythresholdpluggedin)</li>
 <li>[Power/SelectLidCloseActionOnBattery](policy-csp-power.md#power-selectlidcloseactiononbattery)</li>
@@ -104,6 +111,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[Power/TurnOffHybridSleepPluggedIn](policy-csp-power.md#power-turnoffhybridsleeppluggedin)</li>
 <li>[Power/UnattendedSleepTimeoutOnBattery](policy-csp-power.md#power-unattendedsleeptimeoutonbattery)</li>
 <li>[Power/UnattendedSleepTimeoutPluggedIn](policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)</li>
+<li>[Search/AllowFindMyFiles](policy-csp-search.md#search-allowfindmyfiles)</li>
 <li>[System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)</li>
 <li>[System/TurnOffFileHistory](policy-csp-system.md#system-turnofffilehistory)</li>
 <li>[Update/AutomaticMaintenanceWakeUp](policy-csp-update.md#update-automaticmaintenancewakeup)</li>
@@ -114,6 +122,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[WindowsLogon/ConfigAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)</li>
 <li>[WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnrollmentStatusTracking  CSP](enrollmentstatustracking-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 </tbody>
 </table>
