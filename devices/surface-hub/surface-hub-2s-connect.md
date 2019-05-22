@@ -38,8 +38,8 @@ In general, it’s recommended to use native cable connections whenever possible
 | ---- | ---------- | ------------ | -------- |
 | Wired “Connect” Application | USB-C (via underside compute module) | Video, audio, TouchBack/InkBack into Surface Hub 2S.| Provides display port video, audio, and TouchBack/InkBack on a single cable. |
 | | HDMI + USB-C | HDMI-in for Audio/Video <br> USB-C for TouchBack/InkBack | USB-C supports TouchBack/InkBack with the  HDMI A/V connection <br> <br>Use USB-C to USB-A to connect to legacy computers <br> <br> NOTE: For best results, connect HDMI before connecting USB-C cable. If the computer you are using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
-| “Source” selection experience <br> (bypasses the OS, full screen requires source selection with keypad button) | USB-C (port in compute module) | Video, Audio into Surface Hub 2S | - Single cable needed for A/V <br> - Touchback not supported< <br> - HDCP enabled |
-| | HDMI (in port) | Video, Audio into Surface Hub 2S | - Single cable needed for A/V <br> - TouchBack not supported <br> - HDCP enabled |
+| “Source” selection experience <br> (bypasses the OS, full screen requires source selection with keypad button) | USB-C (port in compute module) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> Touchback not supported <br> HDCP enabled |
+| | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> TouchBack not supported <br> HDCP enabled |
 
 When you connect a guest computer to Surface Hub 2S via the wired connect USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in Table 3, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices.
 
@@ -77,7 +77,7 @@ Surface Hub 2S includes a Video Out port for mirroring visual content from Surfa
 
 | MODE | Connection | Functionality | Comments |
 | ---- | ---------- | ------------- | -------- |
-| Display out | MiniDP output port | Display and audio out (support for duplicate mode only) | - Requires external keyboard <br> - Win+P and select Duplicate mode <br> - Supports audio out (configurable via settings) |
+| Display out | MiniDP output port | Display and audio out (support for duplicate mode only) | Requires external keyboard <br> Win+P and select Duplicate mode <br> Supports audio out (configurable via settings) |
 
 ### Selecting cables
 
