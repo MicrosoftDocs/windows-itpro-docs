@@ -1590,7 +1590,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service. 
 
-**Required Steps BEFORE setting the windows Defender Group Policy or RegKey on Windows 10 version 1903**
+**Required Steps BEFORE setting the Windows Defender Group Policy or RegKey on Windows 10 version 1903**
 1. Ensure Windows and Windows Defender are fully up to date.
 2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
