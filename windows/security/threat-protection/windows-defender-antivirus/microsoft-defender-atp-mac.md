@@ -22,7 +22,7 @@ ms.topic: conceptual
 >[!IMPORTANT]
 >This topic relates to the pre-release version of Microsoft Defender Advanced Threat Protection (ATP) for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic describes how to install and use Microsoft Defender Advanced Threat Protection ATP for Mac.
+This topic describes how to install and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac.
 
 ## What’s new in the public preview
 
@@ -39,7 +39,7 @@ Since opening the limited preview, we've been working non-stop to enhance the pr
 
 ## Installing and configuring
 
-There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
 In general you'll need to take the following steps:
 
 - Ensure you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
