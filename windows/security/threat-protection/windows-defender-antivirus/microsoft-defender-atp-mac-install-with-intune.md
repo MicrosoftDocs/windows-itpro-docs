@@ -94,7 +94,7 @@ Select **Open System Preferences**, locate **Management Profile** on the list an
 
 2. Select **Continue** and complete the enrollment.
 
-You can enroll additional devices. Optionally, you can enroll them later, after you have finished provisioning system configuration and application packages.
+You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
 
 3. In Intune, open **Manage** > **Devices** > **All devices**. You'll see your device among those listed:
 

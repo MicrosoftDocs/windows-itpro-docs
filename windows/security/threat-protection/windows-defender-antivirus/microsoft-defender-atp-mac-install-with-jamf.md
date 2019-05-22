@@ -129,11 +129,11 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 ![MDM approve button screenshot](images/MDATP_21_MDMProfile1.png)
 ![MDM screenshot](images/MDATP_22_MDMProfileApproved.png)
 
-After some time, the device's User Approved MDM status will change to **Yes**.
+After a moment, the device's User Approved MDM status will change to **Yes**.
 
 ![MDM status screenshot](images/MDATP_23_MDMStatus.png)
 
-You can enroll additional devices at this point. Optionally, you can enroll them later, after you have finished provisioning system configuration and application packages.
+You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 
@@ -196,7 +196,7 @@ mdatp --health healthy
 This script returns:
 - 0 if Microsoft Defender ATP is registered with the Microsoft Defender ATP service
 - 1 if the device is not yet onboarded
-- 3 if the connection to the daemon cannot be established—for example, if daemon is not running
+- 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
 
 ## Logging installation issues
 
