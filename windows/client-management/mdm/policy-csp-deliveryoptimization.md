@@ -1705,13 +1705,6 @@ This policy allows an IT Admin to define the following:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>DeliveryOptimization policies supported by Windows Holographic
 
--   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
--   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
--   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
--   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
--   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
 -   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
 -   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
 -   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
@@ -1737,13 +1730,6 @@ This policy allows an IT Admin to define the following:
 <!--StartHoloLensBusiness-->
 ## <a href="" id="hololenbusinessspolicies"></a>DeliveryOptimization policies supported by Windows Holographic for Business
 
--   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
--   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
--   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
--   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
--   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
 -   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
 -   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
 -   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
