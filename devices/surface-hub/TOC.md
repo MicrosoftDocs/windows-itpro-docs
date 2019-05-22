@@ -6,7 +6,7 @@
 ### [What's new in Surface Hub 2S](surface-hub-2s-whats-new.md)
 
 ## Plan
-### Surface Hub Site Readiness Guide 
+### Surface Hub 2S Site Readiness Guide 
 ### [Unpacking Surface Hub 2S](surface-hub-2s-unpack.md)
 ### [Room considerations for Surface Hub 2S](surface-hub-2s-room-considerations.md)
 ### [Physically installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
