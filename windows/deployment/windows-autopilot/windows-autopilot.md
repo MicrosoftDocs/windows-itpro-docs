@@ -64,7 +64,7 @@ Windows Autopilot enables you to pre-register devices to your organization so th
 
 Windows Autopilot enables you to:
 * Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
-* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](#prerequisites)).
+* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](windows-autopilot-requirements-configuration.md)).
 * Restrict the Administrator account creation.
 * Create and auto-assign devices to configuration groups based on a device's profile.
 * Customize OOBE content specific to the organization.

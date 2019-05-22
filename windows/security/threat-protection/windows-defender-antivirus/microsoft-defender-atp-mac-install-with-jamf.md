@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
 >This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -36,15 +36,14 @@ In addition, for JAMF deployment, you need to be familiar with JAMF administrati
 
 Download the installation and onboarding packages from Windows Defender Security Center:
 
-1. In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
-3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
-4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+1. In Windows Defender Security Center, go to **Settings > device Management > Onboarding**.
+2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android** and deployment method to **Mobile Device Management / Microsoft Intune**.
+3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
     ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
-5. From a command prompt, verify that you have the two files.
-    Extract the contents of the .zip files:
+5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash
     mavel-macmini:Downloads test$ ls -l
@@ -62,19 +61,19 @@ Download the installation and onboarding packages from Windows Defender Security
 
 ## Create JAMF Policies
 
-You need to create a configuration profile and a policy to start deploying Microsoft Defender ATP for Mac to client machines.
+You need to create a configuration profile and a policy to start deploying Microsoft Defender ATP for Mac to client devices.
 
 ### Configuration Profile
 
-The configuration profile contains one custom settings payload that includes:
+The configuration profile contains a custom settings payload that includes:
 
 - Microsoft Defender ATP for Mac onboarding information
-- Approved Kernel Extensions payload to enable the Microsoft kernel driver to run
+- Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
 
-1. Upload jamf/WindowsDefenderATPOnboarding.plist as the Property List File.
+To set the onboarding information, upload a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_.
 
-    >[!NOTE]
-    > You must use exactly "com.microsoft.wdav.atp" as the Preference Domain.
+  >[!IMPORTANT]
+  > You must set the the Preference Domain as "com.microsoft.wdav.atp"
 
     ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 
@@ -89,15 +88,15 @@ To approve the kernel extension:
 
 #### Configuration Profile's Scope
 
-Configure the appropriate scope to specify the machines that will receive this configuration profile.
+Configure the appropriate scope to specify the devices that will receive the configuration profile.
 
-Open Computers -> Configuration Profiles, select **Scope > Targets**. Select the appropriate Target computers.
+Open **Computers** > **Configuration Profiles**, and select **Scope > Targets**. From there, select the devices you want to target.
 
 ![Configuration profile scope screenshot](images/MDATP_18_ConfigurationProfilesScope.png)
 
 Save the **Configuration Profile**.
 
-Use the **Logs** tab to monitor deployment status for each enrolled machine.
+Use the **Logs** tab to monitor deployment status for each enrolled device.
 
 ### Package
 
@@ -116,50 +115,50 @@ Your policy should contain a single package for Microsoft Defender.
 
 Configure the appropriate scope to specify the computers that will receive this policy.
 
-After you save the Configuration Profile, you can use the Logs tab to monitor the deployment status for each enrolled machine.
+After you save the Configuration Profile, you can use the Logs tab to monitor the deployment status for each enrolled device.
 
-## Client machine setup
+## Client device setup
 
-You need no special provisioning for a macOS computer beyond the standard JAMF Enrollment.
+You'll need no special provisioning for a macOS computer, beyond the standard JAMF Enrollment.
 
 > [!NOTE]
 > After a computer is enrolled, it will show up in the Computers inventory (All Computers).
 
-1. Open the machine details, from **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
+1. Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
 ![MDM approve button screenshot](images/MDATP_21_MDMProfile1.png)
 ![MDM screenshot](images/MDATP_22_MDMProfileApproved.png)
 
-After some time, the machine's User Approved MDM status will change to Yes.
+After a moment, the device's User Approved MDM status will change to **Yes**.
 
 ![MDM status screenshot](images/MDATP_23_MDMStatus.png)
 
-You can enroll additional machines now. Optionally, can do it after system configuration and application packages are provisioned.
+You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 
-Enrolled client machines periodically poll the JAMF Server and install new configuration profiles and policies as soon as they are detected.
+Enrolled client devices periodically poll the JAMF Server, and install new configuration profiles and policies as soon as they are detected.
 
-### Status on server
+### Status on the server
 
-You can monitor the deployment status in the Logs tab:
+You can monitor deployment status in the **Logs** tab:
 
 - **Pending** means that the deployment is scheduled but has not yet happened
 - **Completed** means that the deployment succeeded and is no longer scheduled
 
 ![Status on server screenshot](images/MDATP_24_StatusOnServer.png)
 
-### Status on client machine
+### Status on client device
 
-After the Configuration Profile is deployed, you'll see the profile on the machine in the **System Preferences > Profiles >** Name of Configuration Profile.
+After the Configuration Profile is deployed, you'll see the profile on the device in  **System Preferences > Profiles >**, under the name of the configuration profile.
 
 ![Status on client screenshot](images/MDATP_25_StatusOnClient.png)
 
-After the policy is applied, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+After the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
 
 ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
-You can monitor policy installation on a machine by following the JAMF's log file:
+You can monitor policy installation on a device by following the JAMF log file:
 
 ```bash
     mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
@@ -175,26 +174,29 @@ You can monitor policy installation on a machine by following the JAMF's log fil
 You can also check the onboarding status:
 
 ```bash
-    mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
-    uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
-    orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-    orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
-    orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
+mavel-mojave:~ testuser$ mdatp --health
+...
+licensed                                : true
+orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
+...
 ```
 
-- **orgid/orgid managed**: This is the Microsoft Defender ATP org id specified in the configuration profile. If this value is blank, then the Configuration Profile was not properly set.
+- **licensed**: This confirms that the device has an ATP license.
 
-- **orgid effective**: This is the Microsoft Defender ATP org id currently in use. If it does not match the value in the Configuration Profile, then the configuration has not been refreshed.
+- **orgid**: Your Microsoft Defender ATP org id; it will be the same for your organization.
 
 ## Check onboarding status
 
-You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
+You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-    sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
+mdatp --health healthy
 ```
 
-This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
+This script returns:
+- 0 if Microsoft Defender ATP is registered with the Microsoft Defender ATP service
+- 1 if the device is not yet onboarded
+- 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
 
 ## Logging installation issues
 
@@ -202,4 +204,4 @@ See [Logging installation issues](microsoft-defender-atp-mac-resources.md#loggin
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.
+See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
