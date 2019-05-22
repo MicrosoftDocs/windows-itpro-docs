@@ -35,7 +35,7 @@ If you have feedback about the proposed replacement of any of these features, yo
 |Feature	|Details|
 |-----------|---------------------|
 | Taskbar settings roaming| Roaming of taskbar settings is no longer being developed and we plan to disable this capability in a future release|
-|Wi-Fi WEP and TKIP|Wi-Fi networks that are secured with passwords using older WEP and TKIP protocols are not as secure as those secured with new protocols such as WPA, WPA2, and soon WPA3. In this release a warning message will appear when connecting to Wi-Fi networks secured with WEP or TKIP, which are not as secure as those using WPA2 or WPA3. In a future release, any connection to a Wi-Fi network using these old ciphers will be disallowed. Wi-Fi routers should be updated to use AES ciphers, available with WPA2 or WPA3. |
+|Wi-Fi WEP and TKIP|In this release a warning message will appear when connecting to Wi-Fi networks secured with WEP or TKIP, which are not as secure as those using WPA2 or WPA3. In a future release, any connection to a Wi-Fi network using these old ciphers will be disallowed. Wi-Fi routers should be updated to use AES ciphers, available with WPA2 or WPA3. |
 |Windows To Go|Windows To Go is no longer being developed. <br><br>The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.|
 |Print 3D app|Going forward, 3D Builder is the recommended 3D printing app. To 3D print objects on new Windows devices, customers must first install 3D Builder from the Store.|
 
