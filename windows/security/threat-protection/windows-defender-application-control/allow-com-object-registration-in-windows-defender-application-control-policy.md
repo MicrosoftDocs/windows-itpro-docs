@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: mdsakibMSFT
-ms.date: 05/17/2019
+ms.date: 05/21/2019
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy
@@ -64,6 +64,7 @@ Example 2: Blocks a specific COM object from being registered via Internet Explo
     <Boolean>false</Boolean>
   </Value>
 </Setting>
+```
 
 Example 3: Allows a specific COM object to register in PowerShell
 
