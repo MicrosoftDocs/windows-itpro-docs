@@ -30,7 +30,7 @@ In hybrid deployments, users register the public portion of their Windows Hello 
 
 ### Group Memberships for the Azure AD Connect Service Account
 >[!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your domain, you can skip Configure Permissions for Key Synchronization. For more please check [Configure Hybrid Windows Hello for Business: Directory Synchronization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync)
+> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. For more detail see [Configure Hybrid Windows Hello for Business: Directory Synchronization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync).
 
 The KeyAdmins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.  
 
