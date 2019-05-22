@@ -1,6 +1,6 @@
 ---
-title: "What's new in Surface Hub 2S"
-description: "Learn more about new features in Surface Hub 2S."
+title: "Deploy Surface Hub 2S"
+description: "This page describes how to deploy Surface Hub 2S using provisioning packages and other tools."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,4 +11,4 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# What's new in Surface Hub 2S
+# Deploy Surface Hub 2S

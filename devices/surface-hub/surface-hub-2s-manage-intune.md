@@ -1,6 +1,6 @@
 ---
-title: "What's new in Surface Hub 2S"
-description: "Learn more about new features in Surface Hub 2S."
+title: "Manage Surface Hub 2S with Intune"
+description: "Learn how you can update and manage Surface Hub 2S using Intune."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,4 +11,4 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# What's new in Surface Hub 2S
+# Manage Surface Hub 2S with Intune

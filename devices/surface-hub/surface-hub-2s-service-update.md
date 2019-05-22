@@ -1,6 +1,6 @@
 ---
-title: "What's new in Surface Hub 2S"
-description: "Learn more about new features in Surface Hub 2S."
+title: "Servicing and updating Surface Hub 2S"
+description: "Learn more about servicing and updating in Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,4 +11,4 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# What's new in Surface Hub 2S
+# Servicing and updating Surface Hub 2S
