@@ -97,8 +97,11 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 ## Monitor Delivery Optimization
 [//]: # (How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
 
-### Windows PowerShell cmdlets for analyzing usage
-**Starting in Windows 10, version 1703**, you can use two new PowerShell cmdlets to check the performance of Delivery Optimization:
+### Windows PowerShell cmdlets
+
+**Starting in Windows 10, version 1703**, you can use new PowerShell cmdlets to check the performance of Delivery Optimization.
+
+#### Analyze usage
 
 `Get-DeliveryOptimizationStatus` returns a real-time snapshot of all current Delivery Optimization jobs.
 
@@ -117,11 +120,6 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
-
-
-
-
-
  
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
@@ -136,9 +134,14 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 Using the `-Verbose` option returns additional information:
 
 - Bytes from peers (per type) 
-- Bytes from CDN  (the number of bytes received over HTTP)
+- Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
+Starting in Window 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
+
+Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
+
+#### Manage the Delivery Optimization cache
 
 **Starting in Windows 10, version 1903:**
 
@@ -158,9 +161,8 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 - `-IncludePinnedFiles` deletes all files that are pinned.
 - `-Force` deletes the cache with no prompts.
 
-`get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
 
-
+#### Work with Delivery Optimization logs
 
 **Starting in Windows 10, version 1803:**
 
@@ -172,9 +174,7 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 
 [//]: # (section on what to look for in logs, list of peers, connection failures)
 
-`Get-DeliveryOptimizationPerfSnapThisMonth`
 
-Returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
 [//]: # (possibly move to Troubleshooting)
 
