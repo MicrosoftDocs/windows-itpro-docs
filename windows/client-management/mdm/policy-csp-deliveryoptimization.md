@@ -1703,53 +1703,10 @@ This policy allows an IT Admin to define the following:
 <!--/Policies-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>DeliveryOptimization policies supported by Windows Holographic
 
--   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
--   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
--   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
--   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
--   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
--   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
--   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
--   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
--   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
--   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
--   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
--   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
--   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
--   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
--   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
--   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
--   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
--   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
--   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 <!--EndHoloLens-->
   
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>DeliveryOptimization policies supported by Windows Holographic for Business
-
--   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
--   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
--   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
--   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
--   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
--   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
--   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
--   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
--   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
--   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
--   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
--   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
--   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
--   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
--   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
--   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
--   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
--   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
--   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 <!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
