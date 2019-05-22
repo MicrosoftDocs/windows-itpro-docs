@@ -102,7 +102,7 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     <div class="cardText">
                         <h3>Secure</h3>
                         <p><a href="surface-hub-2s-secure-with-semm.md">Surface Hub 2S with SEMM</a></p>
-                        <p><a href="surface-hub-2s-secure-with-uefi">Surface Hub 2S with UEFI</a></p>
+                        <p><a href="surface-hub-2s-secure-with-uefi.md">Surface Hub 2S with UEFI</a></p>
                         <p><a href="surface-hub-2s-conditional-access.md">Surface Hub 2S conditional access</a></p>
                     </div>
                 </div>
