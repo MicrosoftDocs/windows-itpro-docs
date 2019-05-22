@@ -769,7 +769,7 @@ To remove the News app:
 
   -or-
 >[!IMPORTANT]
-> If you have any issues with these commands, restart the PC and try the scripts again.
+> If you have any issues with these commands, restart the system and try the scripts again.
 >
 - Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
