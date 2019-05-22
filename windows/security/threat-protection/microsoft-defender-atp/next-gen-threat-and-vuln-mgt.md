@@ -31,8 +31,6 @@ It helps organizations discover vulnerabilities and misconfigurations in real-ti
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
 It is the first solution in the industry to automate the remediation process through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) for patching, configuration changes, or upgrades.
->[!Note]
-> Microsoft Intune integration is currently in private preview.
 
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
