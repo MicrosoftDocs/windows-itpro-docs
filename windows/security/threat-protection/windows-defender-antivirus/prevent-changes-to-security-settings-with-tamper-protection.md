@@ -49,4 +49,8 @@ Tamper protection is On by default. If you set tamper protection to **Off**, you
 3. Set **Tamper Protection** to **On** or **Off**.
 
 >[!NOTE]
->If your computer is running Windows 10 Enterprise E5, you can't change the tamper protection settings from within Windows Security App.
+>Tamper Protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
+>
+>To help ensure that Tamper Protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. 
+>
+>Once you’ve made this update, Tamper Protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
