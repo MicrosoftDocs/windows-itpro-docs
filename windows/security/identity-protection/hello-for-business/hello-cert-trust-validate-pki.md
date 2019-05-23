@@ -168,11 +168,11 @@ You want to confirm your domain controllers enroll the correct certificates and 
 
 #### Use the Event Logs
 
-Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServices-Lifecycle-System** event log under **Application and Services/Microsoft/Windows**.
+Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServicesClient-Lifecycle-System** event log under **Application and Services/Microsoft/Windows**.
 
 Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template. 
 
-Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServices-Lifecycle-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
+Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServicesClient-Lifecycle-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
 
 
 #### Certificate Manager
