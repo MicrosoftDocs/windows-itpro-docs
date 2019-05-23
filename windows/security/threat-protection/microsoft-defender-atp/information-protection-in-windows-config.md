@@ -27,6 +27,10 @@ Learn how you can use Microsoft Defender ATP to expand the coverage of Microsoft
 >[!TIP]
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
+If a file meets the criteria set in the policy settings is  and endpoint data loss prevention setting is also configured, WIP will be enabled for that file.
+
+
+
 ## Prerequisites
 - Endpoints need to be on Windows 10, version 1809 or later
 - You'll need the appropriate license to leverage the Microsoft Defender ATP and Azure Information Protection integration
@@ -41,7 +45,7 @@ Learn how you can use Microsoft Defender ATP to expand the coverage of Microsoft
     2. Create a new label or edit an existing one. 
     3. In the configuration wizard, go to 'Data loss prevention' tab and enable WIP.
 
-    ![Image of Office 365 Security and Compliance sensitivity label](images/office-scc-label.png)
+    ![Image of Office 365 Security and Compliance sensitivity label](images/endpoint-data-loss-protection.png)
 
     4. Repeat for every label that you want to get WIP applied to in Windows. 
 
@@ -63,8 +67,12 @@ After completing these steps Microsoft Defender ATP will automatically identify 
    1. Go through the label creation wizard.
    2. When you reach the Auto labeling page, turn on auto labeling toggle on.
    3. Add a new auto-labeling rule with the conditions that you require. 
+    
+    ![Image of auto labeling in Office 365 Security and Compliance center](images/auto-labeling.png)    
+
    4. Validate that "When content matches these conditions" setting is set to "Automatically apply the label".
  
+
 
 
 
