@@ -6,13 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/08/2019
+ms.date: 05/21/2019
 ---
 
 # Policy CSP - Update
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -3964,15 +3961,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
@@ -3980,15 +3974,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
