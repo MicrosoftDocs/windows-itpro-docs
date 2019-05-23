@@ -3961,15 +3961,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
@@ -3977,15 +3974,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
