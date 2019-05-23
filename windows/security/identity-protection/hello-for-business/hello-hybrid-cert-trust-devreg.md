@@ -43,7 +43,8 @@ Use this three-phased approach for configuring device registration.
 
 
 >[!IMPORTANT]
-> To use Hybrid Identity with Azure Active Directory (HIAAD) and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
+> To use hybrid identity with Azure Active Directory and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
+
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
@@ -68,7 +69,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ![Netdom example output](images/hello-cmd-netdom.png)
 
-The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
+The command should return the name of the domain controller where you need to run adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
 #### Updating the Schema
 
