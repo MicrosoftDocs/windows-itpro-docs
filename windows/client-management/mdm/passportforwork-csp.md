@@ -36,7 +36,7 @@ The following diagram shows the PassportForWork configuration service provider i
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management.
+A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get the GUID, use the [Get-AzureAccount](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azureaccount) PowerShell cmdlet. For more information please see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.
