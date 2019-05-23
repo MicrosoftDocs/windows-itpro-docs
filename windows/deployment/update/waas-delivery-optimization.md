@@ -53,9 +53,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Win32 apps for Intune | 1709 |
 | SCCM Express Updates | 1709 + Configuration Manager version 1711 |
 
-### Network requirements
+<!-- ### Network requirements
 
-{can you share with me what the network requirements are?}
+{can you share with me what the network requirements are?}-->
 
 
 
