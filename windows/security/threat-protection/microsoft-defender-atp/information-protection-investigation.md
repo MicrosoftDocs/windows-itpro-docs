@@ -35,6 +35,10 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
     ![Image of data sensitivity column](images/data-sensitivity-column.png)
 
+    You can also filter based on **Data sensitivity** 
+
+    ![Image of data sensitivity filter](images/data-sensitivity-filter.png)
+
 3. Open the incident page to further investigate.
 
     ![Image of incident page details](images/incident-page.png)
@@ -42,8 +46,13 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 4. Select the **Machines** tab to identify machines storing files with sensitivity labels.
 
     ![Image of machine tab](images/investigate-machines-tab.png)
+   
 
 5. Select the machines that store sensitive data and search through the timeline to identify which files may be impacted then take appropriate action to ensure that data is protected. 
+
+   You can narrow down the events shown on the machine timeline by searching for data sensitivity labels. Doing this will show only events associated with files that have said label name.
+
+    ![Image of machine timeline with narrowed down search results based on label](images/machine-timeline-labels.png)
 
 >[!NOTE] 
 > The event side pane now provides additional insight to the WIP and AIP protection status.  
