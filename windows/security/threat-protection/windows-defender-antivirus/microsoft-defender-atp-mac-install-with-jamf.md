@@ -41,7 +41,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
 
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
@@ -204,4 +204,33 @@ See [Logging installation issues](microsoft-defender-atp-mac-resources.md#loggin
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+This method is based on the script described in [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling).
+
+### Script
+
+Create a script in **Settings > Computer Management > Scripts**.
+
+This script removes Microsoft Defender ATP from the /Applications directory:
+
+```bash
+   echo "Is WDAV installed?"
+   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
+
+   echo "Uninstalling WDAV..."
+   rm -rf '/Applications/Microsoft Defender ATP.app'
+
+   echo "Is WDAV still installed?"
+   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
+
+   echo "Done!"
+```
+
+![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
+
+### Policy
+
+Your policy should contain a single script:
+
+![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
+
+Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
