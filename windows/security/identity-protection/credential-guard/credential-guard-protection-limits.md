@@ -21,8 +21,9 @@ ms.date: 08/17/2017
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-in the Deep Dive into Windows Defender Credential Guard video series.
+Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection)
+in the Microsoft Cybersecurity Stack: Advanced Identity and Endpoint Protection
+ video series.
 
 Some ways to store credentials are not protected by Windows Defender Credential Guard, including:
 
