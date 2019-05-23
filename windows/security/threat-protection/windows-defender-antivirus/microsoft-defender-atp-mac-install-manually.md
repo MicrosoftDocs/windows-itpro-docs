@@ -39,7 +39,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
+    ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_page.png)
 
 5. From a command prompt, verify that you have the two files.
     Extract the contents of the .zip files:
