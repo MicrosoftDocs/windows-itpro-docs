@@ -1,5 +1,5 @@
 ---
-title: Walkthrough use Group Policy to configure Windows Update for Business (Windows 10)
+title: Walkthrough: use Group Policy to configure Windows Update for Business (Windows 10)
 description: Configure Windows Update for Business settings using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,6 +18,92 @@ ms.topic: article
 - Windows 10
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
+
+## Overview 
+Windows Update for Business policies can be set via Group Policies either locally or by an IT administrator. All of these group policies can be found under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
+
+## Offering
+
+### Manage which updates are offered
+
+There are group policies that allow you to disable drivers and to turn on or off updates from other Microsoft products.
+
+- Disable drivers:	**Computer configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates**
+
+   ![UI for do not include drivers](images/waas-wufb-gp-disable-drivers.png)
+
+- Turn on or off Microsoft product updates: **Computer configuration > Administrative Templates > Windows Components > Windows Update > Get updates for other Microsoft Products**
+
+### Manage when updates are offered
+
+#### Defer or pause feature and quality updates
+You can both defer or pause feature and quality updates from the "Slect when preview builds and feature updates are received" policy. Feature updates can be set for 365 days while Pause for feature or quality updates can be set for a maximum of 35 days with a set start date.
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and Feature Updates are Received**
+
+![UI for defer or pause feature updates](images/waas-wufb-gp-defer-pause-feature.png)
+
+
+For quality updates:
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Quality Updates are Received**
+
+![UI for defer or pause quality updates](images/waas-wufb-gp-defer-pause-quality.png)
+
+#### Set branch readiness level for feature updates
+
+This policy only applies to feature updates. To enable preview builds for devices in your organization, set the "Enable preview builds" policy and then use the "Select when preview builds and feature updates are received" policy.
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Manage Preview Builds**
+
+ ![UI for manage preview builds](images/waas-wufb-gp-manage-preview-builds.png)
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and Feature Updates are Received**
+
+![UI for select branch readiness](images/waas-wufb-gp-select-branch.png)
+
+## Experience
+
+### Manage update controls available to end users
+
+Deferral policies and branch readiness level options are automatically removed for end users when the device is managed and has deferrals set by an administrator. Additionally, opting into update for other Microsoft products setting is greyed out when set by an IT administrator. This behavior is paired with red text in the end-users' **Advanced options** user interface stating that some settings are managed by their organization.
+
+There is also a policy that enables IT Administrators to remove the end-user option to set pause, by greying it out in the Update Settings **Advanced options** user interface. When an IT administrator has set this policy on a device, there will be an asterisk with red text in the end-user’s interface stating that some settings are managed by their organization.
+
+![Advanced options UI showing "some settings are managed by your organization"](images/waas-wufb-advanced-options-UI.png)
+
+To remove the option for end users to pause updates, use this policy:
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Remove access to “Pause updates” feature**
+
+![GP UI for removing pause option](images/waas-wufb-gp-remove-pause.png)
+
+### Manage scan, download, install, and restart controls
+
+#### Scan controls
+
+The "Automatic Updates detection frequency" that allows you to set the frequency of scans for automatic update detection. This policy allows the admin to specify the hours that Windows will use to determine how long to wait before checking for available updates. If no value is set or the policy is not configured, Windows will check for available updates at the default interval of 22 hours.
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Automatic Updates detection frequency**
+
+![UI for automatic updates detection frequency](images/waas-wufb-gp-AU-freq.png)
+
+
+#### Download and install controls
+
+##### Metered network control
+
+This policy enables devices to automatically download updates, even over metered data connections (charges may apply).
+
+**Computer configuration > Administrative Templates > Windows Components > Windows Update > Allow updates to be downloaded automatically over metered connections**
+
+![UI for metered network control](images/waas-wufb-gp-metered-network.png)
+
+
+
+
+-------------------------------------------------
 
 >[!IMPORTANT]
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
