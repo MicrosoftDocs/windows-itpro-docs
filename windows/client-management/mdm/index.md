@@ -44,7 +44,7 @@ The MDM security baseline includes policies that cover the following areas:
 For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see:
 - [MDM Security baseline for Windows 10, version 1903](http://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1903-MDM-SecurityBaseLine-Document.zip)
 
-- [MDM Security baseline for Windows 10, version 1809](http://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip).
+- [MDM Security baseline for Windows 10, version 1809](http://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip)
 
 For information about the MDM policies defined in the Intune security baseline public preview, see [Windows security baseline settings for Intune](https://docs.microsoft.com/en-us/intune/security-baseline-settings-windows)
 
