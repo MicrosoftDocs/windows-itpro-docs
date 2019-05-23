@@ -17429,19 +17429,11 @@ ADMX Info:
 <!--/Policies-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>InternetExplorer policies supported by Windows Holographic
 
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>InternetExplorer policies supported by Windows Holographic for Business
 
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 <!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
