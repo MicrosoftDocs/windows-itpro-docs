@@ -7,18 +7,17 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/29/2018
+ms.date: 05/21/2019
 ---
 
 # Policy DDF file
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 You can download the DDF files from the links below:
 
+- [Download the Policy DDF file for Windows 10, version 1809](http://download.microsoft.com/download/7/3/5/735B8537-82F4-4CD1-B059-93984F9FAAC5/PolicyDDF_all_1809.xml)
 - [Download the Policy DDF file for Windows 10, version 1803](https://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1803 release C](http://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all_1809C_release.xml)
 - [Download the Policy DDF file for Windows 10, version 1709](https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
@@ -27,7 +26,7 @@ You can download the DDF files from the links below:
 - [Download the Policy DDF file for Windows 10, version 1607 release 8C](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
 
-The XML below is the DDF for Windows 10, version 1809.
+The XML below is the DDF for Windows 10, version 1903.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -53,7 +52,7 @@ The XML below is the DDF for Windows 10, version 1809.
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/8.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/9.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -1420,12 +1419,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      <support.contoso.com><support.microsoft.com>
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -1653,11 +1652,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -2734,6 +2733,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowEnhancedSuggestionsInAddressBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowEnterpriseModeFromToolsMenu</NodeName>
           <DFProperties>
             <AccessType>
@@ -3238,6 +3261,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableAdobeFlash</NodeName>
           <DFProperties>
             <AccessType>
@@ -3287,6 +3334,30 @@ Related policy:
         </Node>
         <Node>
           <NodeName>DisableBypassOfSmartScreenWarningsAboutUncommonFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCompatView</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -3454,6 +3525,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableFeedsBackgroundSync</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableFirstRunWizard</NodeName>
           <DFProperties>
             <AccessType>
@@ -3479,6 +3574,30 @@ Related policy:
         </Node>
         <Node>
           <NodeName>DisableFlipAheadFeature</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableGeolocation</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -3671,6 +3790,30 @@ Related policy:
         </Node>
         <Node>
           <NodeName>DisableSecuritySettingsCheck</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableWebAddressAutoComplete</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6743,6 +6886,30 @@ Related policy:
         </Node>
         <Node>
           <NodeName>MKProtocolSecurityRestrictionInternetExplorerProcesses</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NewTabDefaultPage</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -10235,7 +10402,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue></DefaultValue>
+            <DefaultValue>0</DefaultValue>
             <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
 
 If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
@@ -10603,12 +10770,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      <support.contoso.com><support.microsoft.com>
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -10862,11 +11029,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -12023,6 +12190,33 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowEnhancedSuggestionsInAddressBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowServicePoweredQSA</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowEnterpriseModeFromToolsMenu</NodeName>
           <DFProperties>
             <AccessType>
@@ -12590,6 +12784,33 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VersionListAutomaticDownloadDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableAdobeFlash</NodeName>
           <DFProperties>
             <AccessType>
@@ -12667,6 +12888,33 @@ Related policy:
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableSafetyFilterOverrideForAppRepUnknown</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCompatView</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_DisableList</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -12833,6 +13081,33 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableFeedsBackgroundSync</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Background_Syncing</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableFirstRunWizard</NodeName>
           <DFProperties>
             <AccessType>
@@ -12883,6 +13158,33 @@ Related policy:
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableGeolocation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>GeolocationDisable</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -13099,6 +13401,33 @@ Related policy:
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Disable_Security_Settings_Check</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableWebAddressAutoComplete</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RestrictWebAddressSuggest</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16559,6 +16888,33 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NewTabDefaultPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NewTabAction</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NotificationBarInternetExplorerProcesses</NodeName>
           <DFProperties>
             <AccessType>
@@ -19148,7 +19504,7 @@ Related policy:
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/8.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/9.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -20831,6 +21187,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureWebcamAccessDomainNames</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies a list of domains that are allowed to access the webcam in CXH-based authentication scenarios.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableFastFirstSignIn</NodeName>
           <DFProperties>
             <AccessType>
@@ -22414,12 +22794,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      <support.contoso.com><support.microsoft.com>
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -22647,11 +23027,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -23525,6 +23905,7 @@ Related policy:
         <DFProperties>
           <AccessType>
             <Add />
+            <Delete />
             <Get />
           </AccessType>
           <DFFormat>
@@ -24871,6 +25252,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SecurityIntelligenceLocation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>SignatureUpdateFallbackOrder</NodeName>
           <DFProperties>
             <AccessType>
@@ -25086,6 +25491,54 @@ Related policy:
         </Node>
         <Node>
           <NodeName>DODelayBackgroundDownloadFromHttp</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DODelayCacheServerFallbackBackground</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DODelayCacheServerFallbackForeground</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25718,6 +26171,100 @@ Related policy:
             <Description>Select Platform Security Level: 1 - Turns on VBS with Secure Boot, 3 - Turns on VBS with Secure Boot and DMA. DMA requires hardware support.</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>DeviceHealthMonitoring</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowDeviceHealthMonitoring</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enable/disable 4Nines device health monitoring on devices.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigDeviceHealthMonitoringScope</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigDeviceHealthMonitoringUploadDestination</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.</Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -27260,6 +27807,35 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>ShowLockOnUserTile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Shows or hides lock from the user tile menu.
+If you enable this policy setting, the lock option will be shown in the User Tile menu.
+
+If you disable this policy setting, the lock option will never be shown in the User Tile menu.
+
+If you do not configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>ExploitGuard</NodeName>
@@ -27612,6 +28188,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>AllowEnhancedProtectedMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowEnhancedSuggestionsInAddressBar</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28163,6 +28763,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableAdobeFlash</NodeName>
           <DFProperties>
             <AccessType>
@@ -28212,6 +28836,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>DisableBypassOfSmartScreenWarningsAboutUncommonFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCompatView</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28379,6 +29027,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableFeedsBackgroundSync</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableFirstRunWizard</NodeName>
           <DFProperties>
             <AccessType>
@@ -28404,6 +29076,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>DisableFlipAheadFeature</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableGeolocation</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28596,6 +29292,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>DisableUpdateCheck</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableWebAddressAutoComplete</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -31739,6 +32459,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NewTabDefaultPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NotificationBarInternetExplorerProcesses</NodeName>
           <DFProperties>
             <AccessType>
@@ -34140,7 +34884,8 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
             <Description>Interactive Logon:Display user information when the session is locked
 User display name, domain and user names (1)
 User display name only (2)
-Do not display user information (3)</Description>
+Do not display user information (3)
+Domain and user names only (4)</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -35489,52 +36234,6 @@ The options are:
         </Node>
       </Node>
       <Node>
-        <NodeName>Location</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <ZeroOrOne />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>EnableLocation</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
-      <Node>
         <NodeName>LockDown</NodeName>
         <DFProperties>
           <AccessType>
@@ -36406,6 +37105,62 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnergySaverBatteryThresholdOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
+If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
+If you disable or do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnergySaverBatteryThresholdPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
+If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
+If you disable or do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HibernateTimeoutOnBattery</NodeName>
           <DFProperties>
             <AccessType>
@@ -36502,6 +37257,210 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SelectLidCloseActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectLidCloseActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectPowerButtonActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the power button. 
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectPowerButtonActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the power button. 
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectSleepButtonActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectSleepButtonActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>StandbyTimeoutOnBattery</NodeName>
           <DFProperties>
             <AccessType>
@@ -36537,6 +37496,122 @@ The options are:
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffHybridSleepOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to turn off hybrid sleep.
+
+If you set this to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+
+If you do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffHybridSleepPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to turn off hybrid sleep.
+
+If you set this to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+
+If you do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnattendedSleepTimeoutOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended.  If you specify 0 seconds, Windows does not automatically transition to sleep.
+
+If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The &quot;Prevent enabling lock screen slide show&quot; policy setting can be used to disable the slide show feature.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnattendedSleepTimeoutPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended.  If you specify 0 seconds, Windows does not automatically transition to sleep.
+
+If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The &quot;Prevent enabling lock screen slide show&quot; policy setting can be used to disable the slide show feature.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -38322,6 +39397,54 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>LetAppsActivateWithVoice</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies whether Windows apps can be activated by voice.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsActivateWithVoiceAboveLock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies whether Windows apps can be activated by voice while the system is locked.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>LetAppsGetDiagnosticInfo</NodeName>
           <DFProperties>
             <AccessType>
@@ -39701,6 +40824,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFindMyFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This feature allows you to disable find my files completely on the machine</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowIndexingEncryptedStoresOrItems</NodeName>
           <DFProperties>
             <AccessType>
@@ -40262,6 +41409,52 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>ServiceControlManager</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>SvchostProcessMitigation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -41513,6 +42706,150 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowStorageSenseGlobal</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowStorageSenseTemporaryFilesCleanup</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseCloudContentDehydrationThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseDownloadsCleanupThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseGlobalCadence</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseRecycleBinCleanupThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnhancedStorageDevices</NodeName>
           <DFProperties>
             <AccessType>
@@ -41584,6 +42921,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
         </DFProperties>
         <Node>
           <NodeName>AllowBuildPreview</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCommercialDataPipeline</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -41943,6 +43304,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableDirectXDatabaseUpdate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This group policy allows control over whether the DirectX Database Updater task will be run on the system.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableEnterpriseAuthProxy</NodeName>
           <DFProperties>
             <AccessType>
@@ -42074,6 +43459,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffFileHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to turn off File History.
+
+If you enable this policy setting, File History cannot be activated to create regular, automatic backups.
+
+If you disable or do not configure this policy setting, File History can be activated to create regular, automatic backups.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -42964,6 +44377,85 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>ConfigureTimeZone</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies the time zone to be applied to the device.  This is the standard Windows name for the target time zone.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Troubleshooting</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowRecommendations</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting applies recommended troubleshooting for known problems on the device and lets administrators configure how it&apos;s applied to their domains/IT environments.
+Not configuring this policy setting will allow the user to configure if and how recommended troubleshooting is applied.
+
+Enabling this policy allows you to configure how recommended troubleshooting is applied on the user&apos;s device. You can select from one of the following values:
+0 = Turn this feature off.
+1 = Turn this feature off but still apply critical troubleshooting.
+2 = Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
+3 = Run recommended troubleshooting automatically and notify the user after it&apos;s been successfully run.
+4 = Run recommended troubleshooting automatically without notifying the user.
+5 = Allow the user to choose their own recommended troubleshooting settings.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>Update</NodeName>
@@ -43179,6 +44671,36 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AutomaticMaintenanceWakeUp</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to configure Automatic Maintenance wake up policy.
+
+The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance. Note, that if the OS power wake policy is explicitly disabled, then this setting has no effect.
+
+If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
+
+If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AutoRestartDeadlinePeriodInDays</NodeName>
           <DFProperties>
             <AccessType>
@@ -43276,6 +44798,102 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
         </Node>
         <Node>
           <NodeName>BranchReadinessLevel</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineForQualityUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineGracePeriod</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineNoAutoReboot</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -45883,6 +47501,54 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowAutomaticRestartSignOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigAutomaticRestartSignOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableLockScreenAppNotifications</NodeName>
           <DFProperties>
             <AccessType>
@@ -45931,6 +47597,38 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableFirstLogonAnimation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time.  This applies to both the first user of the computer who completes the initial setup and users who are added to the computer later.  It also controls if Microsoft account users will be offered the opt-in prompt for services during their first sign-in.
+
+If you enable this policy setting, Microsoft account users will see the opt-in prompt for services, and users with other accounts will see the sign-in animation.
+
+If you disable this policy setting, users will not see the animation and Microsoft account users will not see the opt-in prompt for services.
+
+If you do not configure this policy setting, the user who completes the initial Windows setup will see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer will not see the animation.
+
+Note: The first sign-in animation will not be shown on Server, so this policy will have no effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnumerateLocalUsersOnDomainJoinedComputers</NodeName>
           <DFProperties>
             <AccessType>
@@ -45966,30 +47664,6 @@ Because of these factors, users do not usually need this user right. Warning: If
             <Description>This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.</Description>
             <DFFormat>
               <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -47994,6 +49668,30 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureWebcamAccessDomainNames</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>Specifies a list of domains that are allowed to access the webcam in CXH-based authentication scenarios.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableFastFirstSignIn</NodeName>
           <DFProperties>
             <AccessType>
@@ -49356,7 +51054,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue></DefaultValue>
+            <DefaultValue>0</DefaultValue>
             <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
 
 If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
@@ -49724,12 +51422,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      <support.contoso.com><support.microsoft.com>
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -49983,11 +51681,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -52449,6 +54147,34 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SecurityIntelligenceLocation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SignatureUpdate_SharedSignaturesLocation</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~SignatureUpdate</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SignatureUpdate_SharedSignaturesLocation</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>SignatureUpdateFallbackOrder</NodeName>
           <DFProperties>
             <AccessType>
@@ -52722,6 +54448,62 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DODelayCacheServerFallbackBackground</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2592000"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DelayCacheServerFallbackBackground</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DelayCacheServerFallbackBackground</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DODelayCacheServerFallbackForeground</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2592000"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DelayCacheServerFallbackForeground</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DelayCacheServerFallbackForeground</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DODelayForegroundDownloadFromHttp</NodeName>
           <DFProperties>
             <AccessType>
@@ -52824,7 +54606,7 @@ Related policy:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="4"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="5"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>GroupIdSource</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
@@ -53272,9 +55054,6 @@ Related policy:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ADMXBacked>DeliveryOptimization.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SetHoursToLimitBackgroundDownloadBandwidth</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
             <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <xs:simpleType name="hours">
@@ -53307,7 +55086,7 @@ Related policy:
                             <xs:element
                                 name="PercentageMaxDownloadBandwidthOut"
                                 type="percent"
-                        />
+                            />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -53334,9 +55113,6 @@ Related policy:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ADMXBacked>DeliveryOptimization.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SetHoursToLimitForegroundDownloadBandwidth</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
             <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <xs:simpleType name="hours">
@@ -53369,7 +55145,7 @@ Related policy:
                             <xs:element
                                 name="PercentageMaxDownloadBandwidthOut"
                                 type="percent"
-                        />
+                            />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -53509,6 +55285,96 @@ Related policy:
             <MSFT:ADMXCategory>DeviceGuard~AT~System~DeviceGuardCategory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VirtualizationBasedSecurity</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>DeviceHealthMonitoring</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowDeviceHealthMonitoring</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enable/disable 4Nines device health monitoring on devices.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigDeviceHealthMonitoringScope</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigDeviceHealthMonitoringUploadDestination</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -55136,6 +57002,38 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>ShowLockOnUserTile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Shows or hides lock from the user tile menu.
+If you enable this policy setting, the lock option will be shown in the User Tile menu.
+
+If you disable this policy setting, the lock option will never be shown in the User Tile menu.
+
+If you do not configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsExplorer.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsExplorer~AT~WindowsExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ShowLockOption</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>ExploitGuard</NodeName>
@@ -55528,6 +57426,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowEnhancedSuggestionsInAddressBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowServicePoweredQSA</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56126,6 +58051,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VersionListAutomaticDownloadDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableAdobeFlash</NodeName>
           <DFProperties>
             <AccessType>
@@ -56203,6 +58155,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableSafetyFilterOverrideForAppRepUnknown</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCompatView</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_DisableList</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56369,6 +58348,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableFeedsBackgroundSync</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Background_Syncing</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableFirstRunWizard</NodeName>
           <DFProperties>
             <AccessType>
@@ -56419,6 +58425,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableGeolocation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>GeolocationDisable</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56635,6 +58668,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoUpdateCheck</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableWebAddressAutoComplete</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RestrictWebAddressSuggest</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60149,6 +62209,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NewTabDefaultPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NewTabAction</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NotificationBarInternetExplorerProcesses</NodeName>
           <DFProperties>
             <AccessType>
@@ -62109,6 +64196,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>0xF000</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
       </Node>
@@ -62792,7 +64880,8 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
             <Description>Interactive Logon:Display user information when the session is locked
 User display name, domain and user names (1)
 User display name only (2)
-Do not display user information (3)</Description>
+Do not display user information (3)
+Domain and user names only (4)</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -62805,7 +64894,7 @@ Do not display user information (3)</Description>
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="1" high="3"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="1" high="4"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Interactive logon: Display user information when the session is locked</MSFT:GPRegistryMappedName>
@@ -64256,53 +66345,6 @@ The options are:
         </Node>
       </Node>
       <Node>
-        <NodeName>Location</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>EnableLocation</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:ADMXMapped>LocationProviderAdm.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXCategory>LocationProviderAdm~AT~LocationAndSensors~WindowsLocationProvider</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>DisableWindowsLocationProvider_1</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-      </Node>
-      <Node>
         <NodeName>LockDown</NodeName>
         <DFProperties>
           <AccessType>
@@ -65235,6 +67277,70 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnergySaverBatteryThresholdOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
+If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
+If you disable or do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="100"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EnterEsBattThreshold</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~EnergySaverSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EsBattThresholdDC</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnergySaverBatteryThresholdPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
+If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
+If you disable or do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="100"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EnterEsBattThreshold</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~EnergySaverSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EsBattThresholdAC</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HibernateTimeoutOnBattery</NodeName>
           <DFProperties>
             <AccessType>
@@ -65343,6 +67449,234 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SelectLidCloseActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectDCSystemLidAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DCSystemLidAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectLidCloseActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectACSystemLidAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ACSystemLidAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectPowerButtonActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the power button. 
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectDCPowerButtonAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DCPowerButtonAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectPowerButtonActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the power button. 
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectACPowerButtonAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ACPowerButtonAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectSleepButtonActionOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectDCSleepButtonAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DCSleepButtonAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SelectSleepButtonActionPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+0 - Take no action
+1 - Sleep
+2 - Hibernate
+3 - Shut down
+
+If you enable this policy setting, you must select the desired action.
+
+If you disable this policy setting or do not configure it, users can see and change this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SelectACSleepButtonAction</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerButtonActionSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ACSleepButtonAction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>StandbyTimeoutOnBattery</NodeName>
           <DFProperties>
             <AccessType>
@@ -65393,6 +67727,136 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ACStandbyTimeOut_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffHybridSleepOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to turn off hybrid sleep.
+
+If you set this to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+
+If you do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DCStandbyWithHiberfileEnable_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffHybridSleepPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to turn off hybrid sleep.
+
+If you set this to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+
+If you do not configure this policy setting, users control this setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ACStandbyWithHiberfileEnable_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnattendedSleepTimeoutOnBattery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended.  If you specify 0 seconds, Windows does not automatically transition to sleep.
+
+If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The &quot;Prevent enabling lock screen slide show&quot; policy setting can be used to disable the slide show feature.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="4294967295"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EnterUnattendedSleepTimeOut</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UnattendedSleepTimeOutDC</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnattendedSleepTimeoutPluggedIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended.  If you specify 0 seconds, Windows does not automatically transition to sleep.
+
+If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The &quot;Prevent enabling lock screen slide show&quot; policy setting can be used to disable the slide show feature.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="4294967295"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Power.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EnterUnattendedSleepTimeOut</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UnattendedSleepTimeOutAC</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -67428,6 +69892,62 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>LetAppsActivateWithVoice</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting specifies whether Windows apps can be activated by voice.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>AppPrivacy.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>LetAppsActivateWithVoice_Enum</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>AppPrivacy~AT~WindowsComponents~AppPrivacy</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>LetAppsActivateWithVoice</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsActivateWithVoiceAboveLock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting specifies whether Windows apps can be activated by voice while the system is locked.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>AppPrivacy.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>LetAppsActivateWithVoiceAboveLock_Enum</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>AppPrivacy~AT~WindowsComponents~AppPrivacy</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>LetAppsActivateWithVoiceAboveLock</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>LetAppsGetDiagnosticInfo</NodeName>
           <DFProperties>
             <AccessType>
@@ -68990,6 +71510,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFindMyFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This feature allows you to disable find my files completely on the machine</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>Search.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>Search~AT~WindowsComponents~Search</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowFindMyFiles</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowIndexingEncryptedStoresOrItems</NodeName>
           <DFProperties>
             <AccessType>
@@ -69595,6 +72143,53 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>ServiceControlManager</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>SvchostProcessMitigation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>ServiceControlManager.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>ServiceControlManager~AT~System~ServiceControlManagerCat~ServiceControlManagerSecurityCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SvchostProcessMitigationEnable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -70894,6 +73489,174 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowStorageSenseGlobal</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_AllowStorageSenseGlobal</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowStorageSenseTemporaryFilesCleanup</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_AllowStorageSenseTemporaryFilesCleanup</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseCloudContentDehydrationThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="365"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_ConfigStorageSenseCloudContentDehydrationThreshold</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseDownloadsCleanupThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="365"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_ConfigStorageSenseDownloadsCleanupThreshold</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseGlobalCadence</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,7,30"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_ConfigStorageSenseGlobalCadence</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigStorageSenseRecycleBinCleanupThreshold</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>30</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="365"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StorageSense.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StorageSense~AT~System~StorageSense</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SS_ConfigStorageSenseRecycleBinCleanupThreshold</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnhancedStorageDevices</NodeName>
           <DFProperties>
             <AccessType>
@@ -70993,6 +73756,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXCategory>AllowBuildPreview~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowBuildPreview</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCommercialDataPipeline</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DataCollection.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>AllowCommercialDataPipeline</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowCommercialDataPipeline</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -71368,6 +74159,33 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableDirectXDatabaseUpdate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This group policy allows control over whether the DirectX Database Updater task will be run on the system.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>GroupPolicy.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>GroupPolicy~AT~Network~DirectXDatabase</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableDirectXDatabaseUpdate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableEnterpriseAuthProxy</NodeName>
           <DFProperties>
             <AccessType>
@@ -71526,6 +74344,37 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TelemetryProxy</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOffFileHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to turn off File History.
+
+If you enable this policy setting, File History cannot be activated to create regular, automatic backups.
+
+If you disable or do not configure this policy setting, File History can be activated to create regular, automatic backups.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>FileHistory.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>FileHistory~AT~WindowsComponents~FileHistory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableFileHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -72432,6 +75281,87 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>ConfigureTimeZone</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>Specifies the time zone to be applied to the device.  This is the standard Windows name for the target time zone.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Troubleshooting</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowRecommendations</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting applies recommended troubleshooting for known problems on the device and lets administrators configure how it&apos;s applied to their domains/IT environments.
+Not configuring this policy setting will allow the user to configure if and how recommended troubleshooting is applied.
+
+Enabling this policy allows you to configure how recommended troubleshooting is applied on the user&apos;s device. You can select from one of the following values:
+0 = Turn this feature off.
+1 = Turn this feature off but still apply critical troubleshooting.
+2 = Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
+3 = Run recommended troubleshooting automatically and notify the user after it&apos;s been successfully run.
+4 = Run recommended troubleshooting automatically without notifying the user.
+5 = Allow the user to choose their own recommended troubleshooting settings.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="5"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MSDT.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MSDT~AT~System~Troubleshooting~WdiScenarioCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TroubleshootingAllowRecommendations</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>Update</NodeName>
@@ -72672,6 +75602,39 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AutomaticMaintenanceWakeUp</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to configure Automatic Maintenance wake up policy.
+
+The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance. Note, that if the OS power wake policy is explicitly disabled, then this setting has no effect.
+
+If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
+
+If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>msched.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>msched~AT~WindowsComponents~MaintenanceScheduler</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>WakeUpPolicy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AutoRestartDeadlinePeriodInDays</NodeName>
           <DFProperties>
             <AccessType>
@@ -72803,12 +75766,124 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues AllowedValues="2,4,8,16,32"></MSFT:SupportedValues>
+            <MSFT:SupportedValues AllowedValues="2,4,8,16"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>BranchReadinessLevelId</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat~DeferUpdateCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DeferFeatureUpdates</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>7</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureDeadlineForFeatureUpdates</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureDeadlineForFeatureUpdates</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineForQualityUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>7</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureDeadlineForQualityUpdates</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureDeadlineForQualityUpdates</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineGracePeriod</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>2</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="7"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureDeadlineGracePeriod</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureDeadlineGracePeriod</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureDeadlineNoAutoReboot</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureDeadlineNoAutoReboot</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureDeadlineNoAutoReboot</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -75716,6 +78791,60 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowAutomaticRestartSignOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>WinLogon.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>WinLogon~AT~WindowsComponents~Logon</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AutomaticRestartSignOn</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigAutomaticRestartSignOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>WinLogon.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>WinLogon~AT~WindowsComponents~Logon</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigAutomaticRestartSignOn</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableLockScreenAppNotifications</NodeName>
           <DFProperties>
             <AccessType>
@@ -75770,6 +78899,41 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableFirstLogonAnimation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time.  This applies to both the first user of the computer who completes the initial setup and users who are added to the computer later.  It also controls if Microsoft account users will be offered the opt-in prompt for services during their first sign-in.
+
+If you enable this policy setting, Microsoft account users will see the opt-in prompt for services, and users with other accounts will see the sign-in animation.
+
+If you disable this policy setting, users will not see the animation and Microsoft account users will not see the opt-in prompt for services.
+
+If you do not configure this policy setting, the user who completes the initial Windows setup will see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer will not see the animation.
+
+Note: The first sign-in animation will not be shown on Server, so this policy will have no effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Logon.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>Logon~AT~System~Logon</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EnableFirstLogonAnimation</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnumerateLocalUsersOnDomainJoinedComputers</NodeName>
           <DFProperties>
             <AccessType>
@@ -75821,33 +78985,6 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ADMXCategory>Logon~AT~System~Logon</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>HideFastUserSwitching</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue></DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>WinLogon.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>WinLogon~AT~WindowsComponents~Logon</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AutomaticRestartSignOn</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -76131,4 +79268,5 @@ Because of these factors, users do not usually need this user right. Warning: If
     </Node>
   </Node>
 </MgmtTree>
+
 ```
