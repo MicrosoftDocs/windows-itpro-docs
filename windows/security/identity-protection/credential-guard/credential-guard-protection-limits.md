@@ -21,7 +21,7 @@ ms.date: 08/17/2017
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection)
+Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection/manage-credential-guard?u=3322)
 in the Microsoft Cybersecurity Stack: Advanced Identity and Endpoint Protection
  video series.
 
