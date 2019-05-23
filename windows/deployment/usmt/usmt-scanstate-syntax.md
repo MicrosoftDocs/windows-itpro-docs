@@ -455,9 +455,9 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p>USMT migrates all user accounts on the computer, unless you specifically exclude an account with either the /<strong>ue</strong> or /<strong>uel</strong> options. For this reason, you do not need to specify this option on the command line. However, if you choose to specify the /<strong>all</strong> option, you cannot also use the /<strong>ui</strong>, /<strong>ue</strong> or /<strong>uel</strong> options.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>/<strong>ui</strong>:<em>&lt;DomainName&gt;</em>\<em>&lt;UserName&gt;</em></p>
+<td align="left"><p>/<strong>ui</strong>:<em>&lt;DomainName&gt;</em>&#92;<em>&lt;UserName&gt;</em></p>
 <p>or</p>
-<p>/<strong>ui</strong>:<em>&lt;ComputerName&gt;</em>\<em>&lt;LocalUserName&gt;</em></p></td>
+<p>/<strong>ui</strong>:<em>&lt;ComputerName&gt;</em>&#92;<em>&lt;LocalUserName&gt;</em></p></td>
 <td align="left"><p><strong>(User include)</strong></p>
 <p>Migrates the specified users. By default, all users are included in the migration. Therefore, this option is helpful only when used with the /<strong>ue</strong> or /<strong>uel</strong> options. You can specify multiple /<strong>ui</strong> options, but you cannot use the /<strong>ui</strong> option with the /<strong>all</strong> option. <em>DomainName</em> and <em>UserName</em> can contain the asterisk (*) wildcard character. When you specify a user name that contains spaces, you will need to surround it with quotation marks.</p>
 <div class="alert">
@@ -469,10 +469,10 @@ By default, all users are migrated. The only way to specify which users to inclu
 </div>
 <p>For example:</p>
 <ul>
-<li><p>To include only User2 from the Fabrikam domain, type:</p>
-<p><code>/ue:*\* /ui:fabrikam\user2</code></p></li>
-<li><p>To migrate all users from the Fabrikam domain, and only the user accounts from other domains that have been active or otherwise modified in the last 30 days, type:</p>
-<p><code>/uel:30 /ui:fabrikam\*</code></p>
+<p>To include only User2 from the Fabrikam domain, type:</p>
+<p><code>/ue:&#42;&#92;&#42; /ui:fabrikam\user2</code></p>
+<p>To migrate all users from the Fabrikam domain, and only the user accounts from other domains that have been active or otherwise modified in the last 30 days, type:</p>
+<p><code>/uel:30 /ui:fabrikam&#92;&#42;</code></p>
 <p>In this example, a user account from the Contoso domain that was last modified 2 months ago will not be migrated.</p></li>
 </ul>
 <p>For more examples, see the descriptions of the /<strong>ue</strong> and /<strong>ui</strong> options in this table.</p></td>
@@ -500,17 +500,17 @@ By default, all users are migrated. The only way to specify which users to inclu
 <li><p><strong>/uel:2002/1/15</strong> migrates users who have logged on or been modified January 15, 2002 or afterwards.</p></li>
 </ul>
 <p>For example:</p>
-<p><code>scanstate /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore /uel:0</code></p></td>
+<p><code>scanstate /i:migapp.xml /i:migdocs.xml &#92;&#92;server\share\migration\mystore /uel:0</code></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>/<strong>ue</strong>:<em>&lt;DomainName&gt;</em>\<em>&lt;UserName&gt;</em></p>
+<td align="left"><p>/<strong>ue</strong>:<em>&lt;DomainName&gt;</em>&#92;<em>&lt;UserName&gt;</em></p>
 <p>-or-</p>
 <p></p>
-<p>/<strong>ue</strong>:<em>&lt;ComputerName&gt;</em>\<em>&lt;LocalUserName&gt;</em></p></td>
+<p>/<strong>ue</strong>:<em>&lt;ComputerName&gt;</em>&#92;<em>&lt;LocalUserName&gt;</em></p></td>
 <td align="left"><p><strong>(User exclude)</strong></p>
 <p>Excludes the specified users from the migration. You can specify multiple /<strong>ue</strong> options. You cannot use this option with the /<strong>all</strong> option. <em>&lt;DomainName&gt;</em> and <em>&lt;UserName&gt;</em> can contain the asterisk (*) wildcard character. When you specify a user name that contains spaces, you need to surround it with quotation marks.</p>
 <p>For example:</p>
-<p><code>scanstate /i:migdocs.xml /i:migapp.xml \\server\share\migration\mystore /ue:contoso\user1</code></p></td>
+<p><code>scanstate /i:migdocs.xml /i:migapp.xml &#92;&#92;server\share\migration\mystore /ue:contoso\user1</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -548,15 +548,15 @@ The following examples apply to both the /**ui** and /**ue** options. You can re
 </tr>
 <tr class="even">
 <td align="left"><p>Exclude all domain users.</p></td>
-<td align="left"><p><code>/ue:Domain\*</code></p></td>
+<td align="left"><p><code>/ue:Domain&#92;&#42;</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Exclude all local users.</p></td>
-<td align="left"><p><code>/ue:%computername%\*</code></p></td>
+<td align="left"><p><code>/ue:%computername%&#92;&#42;</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Exclude users in all domains named User1, User2, and so on.</p></td>
-<td align="left"><p><code>/ue:*\user*</code></p></td>
+<td align="left"><p><code>/ue:&#42;&#92;user&#42;</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -586,23 +586,23 @@ The /**uel** option takes precedence over the /**ue** option. If a user has logg
 <tbody>
 <tr class="odd">
 <td align="left"><p>Include only User2 from the Fabrikam domain and exclude all other users.</p></td>
-<td align="left"><p><code>/ue:*\* /ui:fabrikam\user2</code></p></td>
+<td align="left"><p><code>/ue:&#42;&#92;&#42; /ui:fabrikam\user2</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Include only the local user named User1 and exclude all other users.</p></td>
-<td align="left"><p><code>/ue:*\* /ui:user1</code></p></td>
+<td align="left"><p><code>/ue:&#42;&#92;&#42; /ui:user1</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Include only the domain users from Contoso, except Contoso\User1.</p></td>
 <td align="left"><p>This behavior cannot be completed using a single command. Instead, to migrate this set of users, you will need to specify the following:</p>
 <ul>
-<li><p>On the <strong>ScanState</strong> command line, type: <code>/ue:*\* /ui:contoso\*</code></p></li>
+<li><p>On the <strong>ScanState</strong> command line, type: <code>/ue:&#42;&#92;&#42; /ui:contoso&#92;&#42;</code></p></li>
 <li><p>On the <strong>LoadState</strong> command line, type: <code>/ue:contoso\user1</code></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Include only local (non-domain) users.</p></td>
-<td align="left"><p><code>/ue:*\* /ui:%computername%\*</code></p></td>
+<td align="left"><p><code>/ue:&#42;&#92;&#42; /ui:%computername%&#92;&#42;</code></p></td>
 </tr>
 </tbody>
 </table>

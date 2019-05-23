@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
 >This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -33,7 +33,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
 ```bash
-   mavel-mojave:~ testuser$ mdatp log-level --verbose
+   mavel-mojave:~ testuser$ mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -41,10 +41,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic
+   mavel-mojave:~ testuser$ mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
@@ -53,7 +53,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 4. Restore logging level:
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp log-level --info
+   mavel-mojave:~ testuser$ mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -112,21 +112,21 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config --rtp [true/false]`                                      |
-|Configuration|Turn on/off cloud protection               |`mdatp config --cloud [true/false]`                                    |
-|Configuration|Turn on/off product diagnostics            |`mdatp config --diagnostic [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp config --sample-submission [true/false]`                        |
-|Configuration|Turn on PUA protection                     |`mdatp threat --type-handling --potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp threat --type-handling --potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp threat --type-handling --potentially_unwanted_application audit`|
-|Diagnostics  |Change the log level                       |`mdatp log-level --[error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Configuration|Turn on/off real-time protection           |`mdatp --config rtp [true/false]`                                      |
+|Configuration|Turn on/off cloud protection               |`mdatp --config cloud [true/false]`                                    |
+|Configuration|Turn on/off product diagnostics            |`mdatp --config diagnostic [true/false]`                               |
+|Configuration|Turn on/off automatic sample submission    |`mdatp --config sample-submission [true/false]`                        |
+|Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
+|Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
+|Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Protection   |Scan a path                                |`mdatp scan --path [path]`                                             |
-|Protection   |Do a quick scan                            |`mdatp scan --quick`                                                   |
-|Protection   |Do a full scan                             |`mdatp scan --full`                                                    |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan --cancel`                                                  |
-|Protection   |Request a definition update                |`mdatp --signature-update`                                             |
+|Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
+|Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
+|Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
+|Protection   |Request a definition update                |`mdatp --definition-update`                                            |
 
 ## Microsoft Defender ATP portal information
 
@@ -152,6 +152,6 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 ## Known issues
 
 - Not fully optimized for performance or disk space yet.
-- Full Windows Defender ATP integration is not available yet.
-- Mac devices that switch networks may appear multiple times in the APT portal.
+- Full Microsoft Defender ATP integration is not available yet.
+- Mac devices that switch networks may appear multiple times in the Microsoft Defender ATP portal.
 - Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.

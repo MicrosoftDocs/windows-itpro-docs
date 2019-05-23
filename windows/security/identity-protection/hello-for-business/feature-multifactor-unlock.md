@@ -252,7 +252,7 @@ Contains numeric value ranging from 0 to 100 to represent the wireless network's
 <sig_quality>80</sig_quality>
 ```
  
-### Sample Trusted Signal Congfigurations
+### Sample Trusted Signal Configurations
 
 These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
 
