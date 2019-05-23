@@ -42,6 +42,8 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
+
 - [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
