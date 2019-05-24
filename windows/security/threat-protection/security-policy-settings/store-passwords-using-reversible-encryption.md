@@ -70,8 +70,7 @@ Enabling this policy setting allows the operating system to store passwords in a
 Disable the **Store password using reversible encryption** policy setting.
 
 >[!Note]
-> After disabling the policy settings, only the new passwords will be forced to be stored using one-way encryption. Existing passwords will be stored using reversible encryption until the password is changed.
-
+> When policy settings are disabled, only new passwords will be stored using one-way encryption by default. Existing passwords will be stored using reversible encryption until they are changed.
 
 ### Potential impact
 
