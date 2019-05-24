@@ -385,6 +385,6 @@ If the dump file shows an error that is related to a driver (for example, window
 
         1. Start WinRE, and open a Command Prompt window.
         2. Start a text editor, such as Notepad.
-        3. Navigate to C\Windows\System32\Config\.
+        3. Navigate to C:\Windows\System32\Config\.
         4. Rename the all five hives by appending ".old" to the name.
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.
