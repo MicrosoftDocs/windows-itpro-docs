@@ -70,7 +70,7 @@ The configuration profile contains a custom settings payload that includes:
 - Microsoft Defender ATP for Mac onboarding information
 - Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
 
-To set the onboarding information, upload a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_.
+To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
   > You must set the the Preference Domain as "com.microsoft.wdav.atp"
@@ -104,8 +104,8 @@ Use the **Logs** tab to monitor deployment status for each enrolled device.
 
     ![Computer management packages screenshot](images/MDATP_19_MicrosoftDefenderWDAVPKG.png)
 
-2. Upload wdav.pkg to the Distribution Point.
-3. In the **filename** field, enter the name of the package. For example, wdav.pkg.
+2. Upload the package to the Distribution Point.
+3. In the **filename** field, enter the name of the package. For example, _wdav.pkg_.
 
 ### Policy
 
@@ -133,7 +133,7 @@ After a moment, the device's User Approved MDM status will change to **Yes**.
 
 ![MDM status screenshot](images/MDATP_23_MDMStatus.png)
 
-You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
+You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 
@@ -150,11 +150,11 @@ You can monitor deployment status in the **Logs** tab:
 
 ### Status on client device
 
-After the Configuration Profile is deployed, you'll see the profile on the device in  **System Preferences > Profiles >**, under the name of the configuration profile.
+After the Configuration Profile is deployed, you'll see the profile for the device in  **System Preferences** > **Profiles >**.
 
 ![Status on client screenshot](images/MDATP_25_StatusOnClient.png)
 
-After the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
+Once the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
 
 ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
