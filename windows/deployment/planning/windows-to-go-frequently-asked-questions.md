@@ -7,8 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility
 ms.sitesec: library
-author: mtniehaus
-ms.date: 04/19/2017
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -18,6 +17,9 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
+
+>[!IMPORTANT]
+>Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following list identifies some commonly asked questions about Windows To Go.
 
