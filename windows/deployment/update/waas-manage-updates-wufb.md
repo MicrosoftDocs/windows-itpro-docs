@@ -42,7 +42,7 @@ Windows Update for Business provides management policies for multiple types of u
 - **Feature updates:** previously referred to as *upgrades*, feature updates contain not only security and quality revisions, but also significant feature additions and changes; they are released semi-annually in the fall and in the spring. 
 - **Quality updates:** these are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as quality updates. These non-Windows updates are known as "Microsoft updates" and devices can be configured to receive or not receive such updates along with their Windows updates. 
 - **Driver updates:** These are non-Microsoft drivers that are applicable to your devices. Driver updates can be turned off via Windows Update for Business policies.  
-- Microsoft product updates: these are updates for other Microsoft products, such as Office. These updates can be enabled or disabled via Windows Update for Business policy.
+- **Microsoft product updates:** these are updates for other Microsoft products, such as Office. These updates can be enabled or disabled via Windows Update for Business policy.
 
 ## Offering
 
