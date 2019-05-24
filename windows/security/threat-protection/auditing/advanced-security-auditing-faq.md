@@ -83,7 +83,7 @@ The rules that govern how Group Policy settings are applied propagate to the sub
 | - | - | - | -|
 | Detailed File Share Auditing | Success | Failure | Success |
 | Process Creation Auditing | Disabled | Success | Disabled |
-| Logon Auditing | Success | Failure | Success |
+| Logon Auditing | Failure | Success | Failure |
 
 ## <a href="" id="bkmk-14"></a>What is the difference between an object DACL and an object SACL?
 
