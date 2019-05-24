@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
 >This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -32,16 +32,16 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 1. Increase logging level:
 
-```bash
+   ```bash
    mavel-mojave:~ testuser$ mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
-```
+   ```
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic --create` to backup Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The command will print out location with generated zip file.
 
    ```bash
    mavel-mojave:~ testuser$ mdatp --diagnostic --create
@@ -76,35 +76,6 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 ### From the command line
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
-
-### With a script
-
-Create a script in **Settings > Computer Management > Scripts**.
-
-![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
-
-For example, this script removes Microsoft Defender ATP from the /Applications directory:
-
-```bash
-   echo "Is WDAV installed?"
-   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-   echo "Uninstalling WDAV..."
-   rm -rf '/Applications/Microsoft Defender ATP.app'
-
-   echo "Is WDAV still installed?"
-   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-   echo "Done!"
-```
-
-### With a JAMF policy
-
-If you are running JAMF, your policy should contain a single script:
-
-![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
-
-Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
 
 ## Configuring from the command line
 
@@ -152,6 +123,6 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 ## Known issues
 
 - Not fully optimized for performance or disk space yet.
-- Full Windows Defender ATP integration is not available yet.
-- Mac devices that switch networks may appear multiple times in the APT portal.
+- Full Microsoft Defender ATP integration is not available yet.
+- Mac devices that switch networks may appear multiple times in the Microsoft Defender ATP portal.
 - Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.
