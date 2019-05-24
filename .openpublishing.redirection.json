@@ -14257,7 +14257,7 @@
 },
 {
 "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
-"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1903",
 "redirect_document_id": true
 },
 {
@@ -14933,6 +14933,13 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/user-alert-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/user",
+"source_path": "windows/deployment/planning/windows-10-fall-creators-deprecation.md",
+"redirect_url": "/windows/deployment/planning/windows-10-1709-removed-features",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/planning/windows-10-creators-update-deprecation.md",
+"redirect_url": "/windows/deployment/planning/windows-10-1703-removed-features",
 "redirect_document_id": true
 },
 {
@@ -14951,12 +14958,17 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/windows/deployment/windows-10-subscription-activation",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/manage-indicators.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/hub/windows-10-landing.yml",
+"source_path": "windows/windows-10/windows-10-landing.yml",
 "redirect_url": "/windows/hub/windows-10",
 "redirect_document_id": true
 },

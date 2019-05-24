@@ -6,6 +6,7 @@
 ### [Licensing requirements](windows-autopilot-requirements-licensing.md)
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
 ### [Support for existing devices](existing-devices.md)
+### [White glove](white-glove.md)
 ### [User-driven mode](user-driven.md)
 #### [Azure Active Directory joined](user-driven-aad.md)
 #### [Hybrid Azure Active Directory joined](user-driven-hybrid.md)

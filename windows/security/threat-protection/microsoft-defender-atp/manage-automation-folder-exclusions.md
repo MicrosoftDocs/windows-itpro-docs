@@ -39,8 +39,10 @@ You can control the following attributes about the folder that you'd like to be 
 **Folders**<br>
 You can specify a folder and its subfolders to be skipped. 
 
-> [!NOTE]
-> Wild cards are not yet supported.
+
+>[!NOTE]
+>At this time, use of wild cards as a way to exclude files under a directory is not yet supported. 
+
 
 **Extensions**<br>
 You can specify the extensions to exclude in a specific directory. The extensions are a way to prevent an attacker from using an excluded folder to hide an exploit. The extensions explicitly define which files to ignore. 

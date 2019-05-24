@@ -69,6 +69,9 @@ Enabling this policy setting allows the operating system to store passwords in a
 
 Disable the **Store password using reversible encryption** policy setting.
 
+>[!Note]
+> When policy settings are disabled, only new passwords will be stored using one-way encryption by default. Existing passwords will be stored using reversible encryption until they are changed.
+
 ### Potential impact
 
 If your organization uses CHAP through remote access or IAS, or Digest Authentication in IIS, you must configure this policy setting to Enabled. This presents a security risk when you apply the setting through Group Policy on a user-by-user basis because it requires the appropriate user account object to be opened in Active Directory Users and Computers.
