@@ -34,10 +34,12 @@ With Surface Hub 2S meetings sound and look crystal clear because of improved di
 
 - **Display.** A 50” 4K plus PixelSense anti-glare display with a 3:2 aspect ratio enables image clarity with high-quality pen and touch feel.
 - **Camera.** The 4K camera delivers a 90-degree horizontal field of view designed to integrate natural colors and uniform lighting to enable a cognitively comfortable  meeting experience. It includes an internal lens rotation  mechanism that allows you to setup the field of view for either portrait or landscape. In the event of an accidental impact to the camera, resiliency in the form of a breakaway foot and integrated tether allow the camera to detach and bounce back without dropping to the floor. 
+- 
 - **Audio.** For enhanced audio clarity, even in noisy environments, sound is delivered using a pair of  2-way front facing, super wideband stereo speakers and a discrete bass module designed  to faithfully reproduce the human voice.  An integrated 8-microphone full band array uses spatial filtering (more commonly known as beamforming) to focus on people speaking in front of the device and ignore sounds from the sides or back of the room. New capabilities such as “smart voice automatic gain control” further minimize background noise to improve voice clarity. 
+- 
 ## Microsoft Teams
 
-Calling and meeting capabilites support coexistence of cloud and on premises solutions with side-by-side compatibility with Skype for Business. Microsoft Teams for Surface Hub enables “one-touch join” and up to four incoming video streams.
+Calling and meeting capabilities support coexistence of cloud and on premises solutions with side-by-side compatibility with Skype for Business. Microsoft Teams for Surface Hub enables “one-touch join” and up to four incoming video streams.
 
 ## Microsoft Whiteboard
 
@@ -57,7 +59,7 @@ Like the original Surface Hub, when Surface Hub 2S detects that someone has ente
 
 ## New Surface Hub pen
 
-The new Surface Hub 2 pen is powered with AAA batteries and comes with firmware that can be updated. 
+The new Surface Hub 2 pen includes a projective capacitance optically bonded sensor (PCOS) ative pen technology that facilitates real time writing without lag. The pen is powered with AAA batteries and comes with firmware that can be updated. 
 
 ## Surface Hub 2S compared with Surface Hub
 
