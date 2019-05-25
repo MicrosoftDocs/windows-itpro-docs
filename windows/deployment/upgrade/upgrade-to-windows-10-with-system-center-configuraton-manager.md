@@ -6,8 +6,7 @@ keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

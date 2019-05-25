@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
-ms.date: 07/31/2018
 ms.topic: article
 ---
 
