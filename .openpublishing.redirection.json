@@ -14968,7 +14968,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/hub/windows-10-landing.yml",
+"source_path": "windows/windows-10/windows-10-landing.yml",
 "redirect_url": "/windows/hub/windows-10",
 "redirect_document_id": true
 },
