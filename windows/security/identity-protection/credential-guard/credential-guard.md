@@ -23,8 +23,6 @@ ms.date: 08/17/2017
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Credential Theft and Lateral Traversal](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474) in the Deep Dive into Windows Defender Credential Guard video series.
-
 Introduced in Windows 10 Enterprise and Windows Server 2016, Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
 
 By enabling Windows Defender Credential Guard, the following features and solutions are provided:
@@ -47,8 +45,3 @@ By enabling Windows Defender Credential Guard, the following features and soluti
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
  
 
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
