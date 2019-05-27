@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Level 5 enterprise basic security configuration 
+# Level 5 Enterprise Basic Security configuration 
 
 **Applies to**  
 

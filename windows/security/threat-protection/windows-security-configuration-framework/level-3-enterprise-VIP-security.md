@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Level 3 enterprise high security configuration
+# Level 3 Enterprise High Security configuration
 
 **Applies to**  
 

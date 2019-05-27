@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Level 4 enterprise standard security configuration
+# Level 4 Enterprise Enhanced Security configuration
 
 **Applies to**  
 
