@@ -169,7 +169,7 @@ You can collect audit logs using Azure Monitor. See [Windows event log data sour
 **To view the WIP events in Azure Monitor**
 1.  Use an existing or create a new Log Analytics workspace.
 
-2.  In Log Analytics->Advanced Settings, go to Data, in Windows Event Logs, add logs to receive:
+2.  In **Log Analytics** > **Advanced Settings**, select **Data**. In Windows Event Logs, add logs to receive:
 ```
 Microsoft-Windows-EDP-Application-Learning/Admin
 Microsoft-Windows-EDP-Audit-TCB/Admin
