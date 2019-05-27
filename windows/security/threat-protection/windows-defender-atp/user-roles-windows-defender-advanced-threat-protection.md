@@ -60,7 +60,7 @@ After creating roles, you'll need to create a machine group and provide access t
 
 
 >[!NOTE]
->The Windows Defender ATP administrator (default) role has administrator permissions. The administrator permissions cannot be assigned to any other role. On groups assigned the Windows Defender ATP administrator role have access to all machine groups.
+>The Windows Defender ATP administrator (default) role has administrator permissions. The administrator permissions cannot be assigned to any other role. On groups assigned, the Windows Defender ATP administrator role has access to all machine groups.
 
 
 ## Edit roles
