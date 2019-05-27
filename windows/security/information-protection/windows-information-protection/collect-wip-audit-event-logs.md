@@ -187,7 +187,7 @@ Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary
 >[!NOTE]
 >Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
 
-6.  After agent deployed, data will be received within some 10 minutes.
+6.  After the agent is deployed, data will be received within approximately 10 minutes.
 
 7.  To search for logs, go to Log Analytics Workspace->Logs, in search type: Event
 
