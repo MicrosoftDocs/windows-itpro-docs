@@ -74,4 +74,4 @@ The table shows the minimum requirements for each deployment.
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
 >[!IMPORTANT]
-> On windows on-premises deployment, the Windows Server Domain Controller **must be** at least 2016 and once per domain.
+>For Windows on-premises deployment, the Windows Server Domain Controller **must be** version 2016 or later, and must be deployed once per domain.
