@@ -50,14 +50,14 @@ The following table lists the services and their associated URLs that your netwo
 | :--: | :-- | :-- |
 | *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|*.wdcp.microsoft.com  *.wdcpalt.microsoft.com  *.wd.microsoft.com|
 | *Microsoft Update Service (MU)*|	Security intelligence and product updates	|*.update.microsoft.com|
-| *Security intelligence updates alternate download location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence falls out of date (7 or more days behind)|	*.download.microsoft.com|
+| *Security intelligence updates Alternate Download Location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	*.download.microsoft.com|
 | *Malware submission storage	*|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	|*.blob.core.windows.net|
 | *Certificate Revocation List (CRL)*	|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| http://www.microsoft.com/pkiops/crl/   http://www.microsoft.com/pkiops/certs  http://crl.microsoft.com/pki/crl/products   http://www.microsoft.com/pki/certs |
 | *Symbol Store	*|Used by Windows Defender Antivirus to restore certain critical files during remediation flows	| https://msdl.microsoft.com/download/symbols |
 | *Universal Telemetry Client*	| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   * vortex-win.data.microsoft.com  * settings-win.data.microsoft.com|
 
 >[!IMPORTANT]
-> As a cloud service, it is required that computers have access to the internet and that the ATP machine learning services are reachable. The following table lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an allow rule specifically for them.
+> As a cloud service is required that the computer has access to internet the firewall and traffic can hit the ATP, machine learning services.
 
 ## Validate connections between your network and the cloud
 
