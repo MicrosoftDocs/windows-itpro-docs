@@ -189,7 +189,7 @@ Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary
 
 6.  After the agent is deployed, data will be received within approximately 10 minutes.
 
-7.  To search for logs, go to Log Analytics Workspace->Logs, in search type: Event
+7.  To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
 
 ***Example***
 ```
