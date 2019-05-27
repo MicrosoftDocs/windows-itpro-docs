@@ -180,7 +180,7 @@ Microsoft-Windows-EDP-Audit-TCB/Admin
 3.  Download Microsoft [Monitoring Agent.](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation)
 
 4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: MMASetup-.exe /c /t:
-Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. Workspace ID and Primary key info can be received from "Log Analytics->Advanced Settings"
+Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
 
 5.  To deploy MSI via Intune, in installation parameters add: /q /norestart NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID=<WORKSPACE_ID> OPINSIGHTS_WORKSPACE_KEY=<WORKSPACE_KEY> AcceptEndUserLicenseAgreement=1
 
