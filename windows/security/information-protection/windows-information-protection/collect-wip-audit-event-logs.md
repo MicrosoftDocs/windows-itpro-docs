@@ -167,7 +167,7 @@ Use Windows Event Forwarding to collect and aggregate your WIP audit events. You
 You can collect audit logs using Azure Monitor. See [Windows event log data sources in Azure Monitor.](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)
 
 **To view the WIP events in Azure Monitor**
-1.  Use existing or create new Log Analytics Workspace.
+1.  Use an existing or create a new Log Analytics workspace.
 
 2.  In Log Analytics->Advanced Settings, go to Data, in Windows Event Logs, add logs to receive:
 ```
