@@ -72,3 +72,6 @@ The table shows the minimum requirements for each deployment.
 | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) |
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
+
+>[!IMPORTANT]
+> On windows on-premises deployment, the Windows Server Domain Controller **must be** at least 2016 and once per domain.
