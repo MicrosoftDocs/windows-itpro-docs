@@ -175,7 +175,7 @@ Microsoft-Windows-EDP-Application-Learning/Admin
 Microsoft-Windows-EDP-Audit-TCB/Admin
 ```
 >[!NOTE]
->The Event logs names can be found if using "Windows Events", go to Events folder and go to Properties of the event (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB)
+>If using Windows Events Logs, the event logs names can be found under Properties of the event in the Events folder (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB)
 
 3.  Download Microsoft [Monitoring Agent.](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation)
 
