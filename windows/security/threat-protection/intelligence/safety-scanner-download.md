@@ -26,7 +26,7 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
 
-> **NOTE:** This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/en-us/windows/windows-defender) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection).
+> **NOTE:** This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection).
 
 > **NOTE:** Safety scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.
 
@@ -51,4 +51,4 @@ For more information about the Safety Scanner, see the support article on [how t
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
 - [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
 - [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)
-- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
