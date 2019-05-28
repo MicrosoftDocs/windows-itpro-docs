@@ -1,7 +1,7 @@
 ---
 title: Fileless threats
 description: Learn about fileless threats, its categories, and how it runs
-keywords: fileless, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV
+keywords: fileless, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -95,6 +95,6 @@ Having described the broad categories, we can now dig into the details and provi
 
 ## Defeating fileless malware
 
-At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions that continuously enhance Windows security and mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Windows Defender Advanced Threat Protection [(Windows Defender ATP)](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
+At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions that continuously enhance Windows security and mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender Advanced Threat Protection [(Microsoft Defender ATP)](https://www.microsoft.com/en-us/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
 
 To learn more, read: [Out of sight but not invisible: Defeating fileless malware with behavior monitoring, AMSI, and next-gen AV](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/)
