@@ -65,17 +65,9 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
      Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 5,790 malware samples.
 
-- March - April 2018 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)
-
-     Windows Defender Antivirus achieved an overall Protection score of 5.5/6.0, missing 2 out of 5,680 malware samples (0.035% miss rate).
-
-- January - February 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2018/microsoft-windows-defender-antivirus-4.12-180674/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)
-
-    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 5,105 malware samples tested.
-
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/RealWorld18.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware18.png)|
+|![Graph describing Real-World detection rate](./images/real-world-small.png)|![Graph describing Prevalent Malware](./images/prevalent-malware-small.png)|
 
 ### AV-Comparatives: Protection rating of 99.6% in the latest test
 
