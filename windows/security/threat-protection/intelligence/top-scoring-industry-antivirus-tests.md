@@ -69,7 +69,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 |---|---|
 |![Graph describing Real-World detection rate](./images/real-world-small.png)|![Graph describing Prevalent Malware](./images/prevalent-malware-small.png)|
 
-### AV-Comparatives: Protection rating of 99.6% in the latest test
+### AV-Comparatives: Protection rating of 99.7% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
