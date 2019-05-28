@@ -110,7 +110,21 @@ The following diagram shows the BitLocker configuration service provider in tree
 </tr>
 </table> 
 
-<p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
+<p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1.</p>
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete.</p>
+<p style="margin-left: 20px">RequireDeviceEncryption must be set to 1 to check the device's enforcement status. If the value is not set or is set to 0, the device's enforcement status will not be checked.</p>
+
+<p style="margin-left: 20px">An OS volume's protection status is checked with a Get operation. Typically, BitLocker/Device Encryption will follow whichever value EncryptionMethodByDriveType policy is set to. However, if the OS drive is a self-encrypting drive, this policy setting will be ignored.</p>
+
+<p style="margin-left: 20px">Encryptable fixed data volumes are treated similarly to OS volumes. However, fixed data volumes must meet additional criteria to be considered encryptable:</p>
+
+* The fixed data volume must have supported firmware (BIOS or UEFI).
+* It must not be a dynamic volume.
+* It must not be a recovery partition.
+* It must not be a hidden volume.
+* It must not be a system partition.
+* It must not be backed by virtual storage.
+* It must not have a reference in the BCD store.
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
@@ -132,8 +146,6 @@ The following diagram shows the BitLocker configuration service provider in tree
     </SyncBody>
 </SyncML>        
 ```
-
-<p style="margin-left: 20px">Data type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType** 
 <p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)". </p>
