@@ -20,9 +20,9 @@ ms.topic: conceptual
 # Microsoft Defender Advanced Threat Protection for Mac
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender Advanced Threat Protection (ATP) for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic describes how to install and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac.
+This topic describes how to install and use Microsoft Defender ATP for Mac.
 
 ## What’s new in the public preview
 
@@ -67,7 +67,7 @@ You should also have access to Microsoft Defender Security Center.
 Beta versions of macOS are not supported.
 
 > [!CAUTION]
-> Running other third-party endpoint protection along with Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection alongside Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -77,13 +77,20 @@ The following table lists the services and their associated URLs that your netwo
 | -------------- | ------------------------------------ | -------------------------------------------------------------------- |
 | ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com`, `https://cdn.x.cp.wd.microsoft.com` |
 
-To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://cdn.x.cp.wd.microsoft.com/ping` in a browser, or run the following command in Terminal:
+To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://cdn.x.cp.wd.microsoft.com/ping` in a browser.
+
+If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-    mavel-mojave:~ testuser$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
-    OK https://x.cp.wd.microsoft.com/api/report
-    OK https://cdn.x.cp.wd.microsoft.com/ping
+testuser$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
+
+The output from this command should look like this:
+
+> `OK https://x.cp.wd.microsoft.com/api/report`
+>
+> `OK https://cdn.x.cp.wd.microsoft.com/ping`
+
 
 We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
