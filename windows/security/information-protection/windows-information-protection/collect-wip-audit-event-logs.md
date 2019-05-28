@@ -170,14 +170,15 @@ You can collect audit logs using Azure Monitor. See [Windows event log data sour
 1.  Use an existing or create a new Log Analytics workspace.
 
 2.  In **Log Analytics** > **Advanced Settings**, select **Data**. In Windows Event Logs, add logs to receive:
-```
-Microsoft-Windows-EDP-Application-Learning/Admin
-Microsoft-Windows-EDP-Audit-TCB/Admin
-```
->[!NOTE]
->If using Windows Events Logs, the event logs names can be found under Properties of the event in the Events folder (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB)
 
-3.  Download Microsoft [Monitoring Agent.](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation)
+    ```
+    Microsoft-Windows-EDP-Application-Learning/Admin
+    Microsoft-Windows-EDP-Audit-TCB/Admin
+    ```
+    >[!NOTE]
+    >If using Windows Events Logs, the event log names can be found under Properties of the event in the Events folder (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB).
+
+3.  Download Microsoft [Monitoring Agent](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation).
 
 4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: MMASetup-.exe /c /t:
 Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
