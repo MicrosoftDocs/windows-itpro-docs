@@ -88,4 +88,6 @@ The following table details the differences between Surface Hub and Surface Hub 
 > [!NOTE]
 > The NFC reader available Surface Hub v1 is discontinued in Surface Hub 2S and is no longer available.
 
+## Learn more
+
 To learn more about what’s new in Surface Hub 2S, see [Behind the design: Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099).
