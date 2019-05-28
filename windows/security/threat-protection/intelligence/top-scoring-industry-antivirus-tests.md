@@ -1,6 +1,6 @@
 ---
 title: Top scoring in industry tests
-description: Windows Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
+description: Microsoft Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
 keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores, endpoint detection and response, next generation protection, MITRE, WDATP
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -73,9 +73,13 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-- Real-World Protection Test Enterprise August - November 2018: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/) <sup>**Latest**</sup>
+- Real-World Protection Test Enterprise March - April 2019: [Protection Rate 99.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-april-2019-testresult/) <sup>**Latest**</sup>
 
-    This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online. The test set contained 1207 test cases (such as malicious URLs).
+    This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online. The test set contained 389 test cases (such as malicious URLs).
+
+- Real-World Protection Test Enterprise August - November 2018: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/)
+
+   The test set contained 1,207 test cases (such as malicious URLs).
 
 - Malware Protection Test Enterprise August 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
 
@@ -84,12 +88,6 @@ AV-Comparatives is an independent organization offering systematic testing for s
 - Real-World Protection Test Enterprise March - June 2018: [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
     The test set contained 1,163 test cases (such as malicious URLs).
-
-- Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
-
-    For this test, 1,470 recent malware samples were used.
-
-[Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 
 ### SE Labs: Total accuracy rating of AAA in the latest test
 
@@ -111,6 +109,6 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 It is important to remember that Microsoft sees a wider and broader set of threats beyond what’s tested in the evaluations highlighted above. For example, in an average month, we identify over 100 million new threats.  Even if an independent tester can acquire and test 1% of those threats, that is a million tests across 20 or 30 products. In other words, the vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats.
 
-The capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/windowsforbusiness?ocid=cx-docs-avreports) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into industry tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Windows Defender ATP creates a partial picture of how our security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Windows Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)  that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively our security suite protects customers in the real world.
+The capabilities within [Microsoft Defender ATP](https://www.microsoft.com/en-us/windowsforbusiness?ocid=cx-docs-avreports) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into industry tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Microsoft Defender ATP creates a partial picture of how our security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Microsoft Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports) that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively our security suite protects customers in the real world.
 
-Using independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection?ocid=cx-docs-avreports).
+Using independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Microsoft Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Microsoft Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection?ocid=cx-docs-avreports).
