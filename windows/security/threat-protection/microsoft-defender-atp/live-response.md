@@ -20,7 +20,7 @@ ms.topic: article
 # Investigate entities on machines using live response
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -107,7 +107,7 @@ help | Provides help information for live response commands.
 persistence | Shows all known persistence methods on the machine.
 processes | Shows all processes running on the machine.
 registry | Shows registry values.
-sheduledtasks| Shows all scheduled tasks on the machine. 
+scheduledtasks| Shows all scheduled tasks on the machine. 
 services | Shows all services on the machine. 
 trace | Sets the terminal's logging mode to debug.
 

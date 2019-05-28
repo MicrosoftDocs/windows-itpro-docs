@@ -6,11 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 05/21/2019
 ---
 
 # Policy CSP - InternetExplorer
-
 
 
 <hr/>
@@ -39,6 +38,9 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-allowenhancedsuggestionsinaddressbar">InternetExplorer/AllowEnhancedSuggestionsInAddressBar</a>
   </dd>
   <dd>
     <a href="#internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a>
@@ -107,6 +109,9 @@ ms.date: 05/14/2018
     <a href="#internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -114,6 +119,9 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-disablecompatview">InternetExplorer/DisableCompatView</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disableconfiguringhistory">InternetExplorer/DisableConfiguringHistory</a>
@@ -134,10 +142,16 @@ ms.date: 05/14/2018
     <a href="#internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-disablefeedsbackgroundsync">InternetExplorer/DisableFeedsBackgroundSync</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-disablegeolocation">InternetExplorer/DisableGeolocation</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
@@ -165,6 +179,9 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-disablewebaddressautocomplete">InternetExplorer/DisableWebAddressAutoComplete</a>
   </dd>
   <dd>
     <a href="#internetexplorer-donotallowactivexcontrolsinprotectedmode">InternetExplorer/DoNotAllowActiveXControlsInProtectedMode</a>
@@ -558,6 +575,9 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses">InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-newtabdefaultpage">InternetExplorer/NewTabDefaultPage</a>
   </dd>
   <dd>
     <a href="#internetexplorer-notificationbarinternetexplorerprocesses">InternetExplorer/NotificationBarInternetExplorerProcesses</a>
@@ -1212,6 +1232,82 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-allowenhancedsuggestionsinaddressbar"></a>**InternetExplorer/AllowEnhancedSuggestionsInAddressBar**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows Internet Explorer to provide enhanced suggestions as the user types in the Address bar. To provide enhanced suggestions, the user's keystrokes are sent to Microsoft through Microsoft services.
+
+If you enable this policy setting, users receive enhanced suggestions while typing in the Address bar. In addition, users cannot change the Suggestions setting on the Settings charm.
+
+If you disable this policy setting, users do not receive enhanced suggestions while typing in the Address bar. In addition, users cannot change the Suggestions setting on the Settings charm.
+
+If you do not configure this policy setting, users can change the Suggestions setting on the Settings charm.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow Microsoft services to provide enhanced suggestions as the user types in the Address bar*
+-   GP name: *AllowServicePoweredQSA*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:
+-   0 - Disabled
+-   1 - Enabled (Default)
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2714,6 +2810,80 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
+
+> [!Caution]
+> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+
+If you disable or do not configure this setting, IE continues to download updated versions of VersionList.XML.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off automatic download of the ActiveX VersionList*
+-   GP name: *VersionListAutomaticDownloadDisable*
+-   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   0 - Enabled
+-   1 - Disabled (Default)
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**  
 
 <!--SupportedSKUs-->
@@ -2900,6 +3070,80 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-disablecompatview"></a>**InternetExplorer/DisableCompatView**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting controls the Compatibility View feature, which allows users to fix website display problems that they may encounter while browsing.
+
+If you enable this policy setting, the user cannot use the Compatibility View button or manage the Compatibility View sites list.
+
+If you disable or do not configure this policy setting, the user can use the Compatibility View button and manage the Compatibility View sites list.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off Compatibility View*
+-   GP name: *CompatView_DisableList*
+-   GP path: *Windows Components/Internet Explorer/Compatibility View*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   0 - Disabled (Default)
+-   1 - Enabled
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3291,6 +3535,80 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="internetexplorer-disablefeedsbackgroundsync"></a>**InternetExplorer/DisableFeedsBackgroundSync**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to choose whether or not to have background synchronization for feeds and Web Slices.
+
+If you enable this policy setting, the ability to synchronize feeds and Web Slices in the background is turned off.
+
+If you disable or do not configure this policy setting, the user can synchronize feeds and Web Slices in the background.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off background synchronization for feeds and Web Slices*
+-   GP name: *Disable_Background_Syncing*
+-   GP path: *Windows Components/RSS Feeds*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   0 - Enabled (Default)
+-   1 - Disabled
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**  
 
 <!--SupportedSKUs-->
@@ -3420,6 +3738,82 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-disablegeolocation"></a>**InternetExplorer/DisableGeolocation**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to disable browser geolocation support. This prevents websites from requesting location data about the user.
+
+If you enable this policy setting, browser geolocation support is turned off.
+
+If you disable this policy setting, browser geolocation support is turned on.
+
+If you do not configure this policy setting, browser geolocation support can be turned on or off in Internet Options on the Privacy tab.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off browser geolocation*
+-   GP name: *GeolocationDisable*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   0 - Disabled (Default)
+-   1 - Enabled
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3997,6 +4391,82 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-disablewebaddressautocomplete"></a>**InternetExplorer/DisableWebAddressAutoComplete**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This AutoComplete feature suggests possible matches when users are entering Web addresses in the browser address bar.
+
+If you enable this policy setting, users are not suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+
+If you disable this policy setting, users are suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+
+If you do not configure this policy setting, users can choose to turn the auto-complete setting for web-addresses on or off.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the auto-complete feature for web addresses*
+-   GP name: *RestrictWebAddressSuggest*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+Supported values:  
+-   yes - Disabled (Default)
+-   no  - Enabled
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -12569,6 +13039,83 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="internetexplorer-newtabdefaultpage"></a>**InternetExplorer/NewTabDefaultPage**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to specify what is displayed when the user opens a new tab.
+
+If you enable this policy setting, you can choose which page to display when the user opens a new tab: blank page (about:blank), the first home page, the new tab page or the new tab page with my news feed.
+
+If you disable or do not configure this policy setting, users can select their preference for this behavior.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Specify default behavior for a new tab*
+-   GP name: *NewTabAction*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+
+Supported values:  
+-   0 - NewTab_AboutBlank (about:blank)
+-   1 - NewTab_Homepage (Home page)
+-   2 - NewTab_AboutTabs (New tab page)
+-   3 - NewTab_AboutNewsFeed (New tab page with my news feed) (Default)
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -16878,14 +17425,45 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<!--/Policies-->
+
+<!--StartHoloLens-->
+
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+
+<!--EndHoloLensBusiness-->
+
+<!--StartIoTCore-->
+## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Core  
+
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)  
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
+<!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Enterprise  
+
+- [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
+- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+- [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
+- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
+- [InternetExplorer/DisableWebAddressAutoComplete](#internetexplorer-disablewebaddressautocomplete)
+- [InternetExplorer/NewTabDefaultPage](#internetexplorer-newtabdefaultpage)
+<!--EndIoTEnterprise-->
+
+
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
-
-<!--/Policies-->
-
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.

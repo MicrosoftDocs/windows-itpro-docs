@@ -6,13 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/07/2019
+ms.date: 05/21/2019
 ---
 
 # Policy CSP - WindowsLogon
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -407,8 +405,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   false - disabled
--   true  - enabled
+-   0 - disabled
+-   1 - enabled
 <!--/SupportedValues-->
 <!--Example-->
 
