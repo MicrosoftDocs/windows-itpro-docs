@@ -40,6 +40,7 @@ Since opening the limited preview, we've been working non-stop to enhance the pr
 ## Installing and configuring
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+
 In general you'll need to take the following steps:
 
 - Ensure you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
@@ -75,9 +76,9 @@ The following table lists the services and their associated URLs that your netwo
 
 | Service        | Description                          | URL                                                                  |
 | -------------- | ------------------------------------ | -------------------------------------------------------------------- |
-| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com`, `https://cdn.x.cp.wd.microsoft.com` |
+| ATP            | Advanced threat protection service   | [https://x.cp.wd.microsoft.com](https://x.cp.wd.microsoft.com), [https://cdn.x.cp.wd.microsoft.com](https://cdn.x.cp.wd.microsoft.com) |
 
-To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://cdn.x.cp.wd.microsoft.com/ping` in a browser.
+To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
