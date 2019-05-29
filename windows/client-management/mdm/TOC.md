@@ -127,6 +127,8 @@
 #### [DynamicManagement DDF file](dynamicmanagement-ddf.md)
 ### [EMAIL2 CSP](email2-csp.md)
 #### [EMAIL2 DDF file](email2-ddf-file.md)
+### [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)
+#### [EnrollmentStatusTracking DDF file](enrollmentstatustracking-csp-ddf.md)
 ### [EnterpriseAPN CSP](enterpriseapn-csp.md)
 #### [EnterpriseAPN DDF](enterpriseapn-ddf.md)
 ### [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)

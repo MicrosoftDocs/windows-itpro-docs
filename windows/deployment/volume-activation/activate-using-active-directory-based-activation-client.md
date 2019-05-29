@@ -20,6 +20,7 @@ ms.topic: article
 -   Windows 8
 -   Windows Server 2012 R2
 -   Windows Server 2012
+-   Windows Server 2016
 
 **Looking for retail activation?**
 -   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)

@@ -5,7 +5,7 @@ keywords: oms, operations management suite, wdav, updates, downloads, log analyt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: JaimeO
+author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection: M365-modern-desktop
@@ -37,7 +37,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | --- | --- | --- |
 | [Download mode](#download-mode) | DODownloadMode | 1511 |
 | [Group ID](#group-id)  | DOGroupID | 1511 |
-| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
+| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
 | [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 |
 | [Max Cache Age](#max-cache-age) | DOMaxCacheAge | 1511 |
 | [Max Cache Size](#max-cache-size)  | DOMaxCacheSize | 1511 |
@@ -59,6 +59,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
 | [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
+| [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
+| [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
 
 ### More detail on Delivery Optimization settings:
 
@@ -70,7 +72,7 @@ Delivery Optimization uses locally cached updates. In cases where devices have a
 - The system drive is the default location for the Delivery Optimization cache. [Modify Cache Drive](#modify-cache-drive) allows administrators to change that location.
 
 >[!NOTE]
->It is possible to configure preferred cache devices. For more information, see [Set “preferred” cache devices for Delivery Optimization](#set-preferred-cache-devices).
+>It is possible to configure preferred cache devices. For more information, see [Group ID](#group-id).
 
 All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services, but when local storage is sufficient and the network isn't strained or congested, administrators might choose to change it to obtain increased performance. You can set the minimum size of files to cache by adjusting [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size).
 
@@ -89,7 +91,7 @@ Additional options available that control the impact Delivery Optimization has o
 - [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
-- [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
+- [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
 - [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) sets the minimum disk size required for peer caching to be enabled.
 - [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) allows clients connected through VPN to use peer caching.
 - [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur. You must enable this policy to allow upload while on battery.
@@ -198,6 +200,12 @@ Starting in Windows 10, version 1803, this allows you to delay the use of an HTT
 ### Delay foreground download from http (in secs)
 Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
 
+### Delay Foreground Download Cache Server Fallback (in secs)
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If you set the policy to delay foreground download from http, it will apply first (to allow downloads from peers first).
+
+### Delay Background Download Cache Server Fallback (in secs)
+Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If you set the policy to delay background download from http, it will apply first (to allow downloads from peers first).
+
 ### Minimum Background QoS
 
 This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
@@ -221,3 +229,5 @@ The device can download from peers while on battery regardless of this policy.
 
 >[!IMPORTANT]
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
+
+
