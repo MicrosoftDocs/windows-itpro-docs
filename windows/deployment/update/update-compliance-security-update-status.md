@@ -21,6 +21,27 @@ The **Overall Security Update Status** blade provides a visualization of devices
  
 The **Latest Security Update Status** and **Previous Security Update Status** tiles are stacked to form one blade. The **Latest Security Update Status** provides a visualization of the different deployment states devices are in regarding the latest update for each build (or version) of Windows 10, along with the revision of that update. The **Previous Security Update Status** blade provides the same information without the accompanying visualization. 
 
+The deployment and detailed states of an update, are described as follows:
+
+**Deployment States**
+* **Unknown:** Occurs when devices are not scanned for an update in some time.
+* **In Progress:** When an update is applying to a specific device.
+* **Progress Stalled:** When for any reason, the progress of an update stops, for example caused by netowork problems.
+* **Failed:** When an update, failed to apply to a specific device.
+* **Update Completed:** When an update applies to a device without problems.
+* **Deferred:** When the application of an update for a device, it is deferred for another time. For example postponing the application one day after planned. 
+* **Cancelled:** When the applying of an update is cancelled by the user.
+
+**Detailed States**
+* **Dowload Started:** Indicates that downloading the contents of a specific update started.
+* **Download Succeeded:** Indicates that downloading the content of a specific update ended successfully.
+* **Download Hand Off:** Indicates that you can continue downloading an update at a point in time where it was stopped.
+* **Install Hand Off:** Indicates that you can continue installing an update at a point in time where it was stopped.
+* **Reboot Pending:** Indicates that an update needs a reboot to finish applying.
+* **Service Stack Downloaded:** Indicates that the Service Stack Update (The component that installs Windows update) is downloading.
+* **Update Offered:** Indicates that an update is offered, being optional the application of the same.
+* **Update Detected:** Indicates that a needed update is detected to apply.
+ 
 The various deployment states reported by devices are as follows:
 * **Installed** devices are devices that have completed installation for the given update.
 * When a device is counted as **In Progress or Deferred**, it has either begun the installation process for the given update or has been intentionally deferred or paused using Windows Update for Business Settings.
