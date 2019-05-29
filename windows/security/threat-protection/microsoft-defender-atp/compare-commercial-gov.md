@@ -29,8 +29,12 @@ Microsoft Defender ATP for government uses the same underlying technologies as c
 ## Endpoint versions
 The following OS versions are supported:
 
-- Windows 10, version 1709 or later
+- Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
+- Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
+- Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
 
+>[!NOTE]
+>If the patches are not implemented, telemetry is sent to the default public geolocation. If public IPs are blocked then the data will not be sent back to Microsoft Defender ATP. Detection and hunting experience will not be available. If public IPs are allowed, then data will reach non-compliant data centers and will then be forwarded to appropriate data centers.
 
 The following OS versions are not supported:
 - Windows Server
