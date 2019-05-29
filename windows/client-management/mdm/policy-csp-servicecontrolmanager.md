@@ -11,9 +11,6 @@ ms.date: 05/21/2019
 
 # Policy CSP - ServiceControlManager
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
