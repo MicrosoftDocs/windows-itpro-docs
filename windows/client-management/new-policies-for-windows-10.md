@@ -254,6 +254,7 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 ## Related topics
 
+[Group Policy Settings Reference Spreadsheet Windows 1803](https://www.microsoft.com/download/details.aspx?id=56946)
 
 [Manage corporate devices](manage-corporate-devices.md)
 
