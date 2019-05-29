@@ -74,4 +74,4 @@ The table shows the minimum requirements for each deployment.
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
 >[!IMPORTANT]
->For Windows-hello deployment, at least one Windows Server Domain Controller 2016 is required for each domain in case you have several domains. For more information, please visit this [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).
+> For Windows Hello for Business deployment, if you have several domains, at least one Windows Server Domain Controller 2016 is required for each domain. For more information, see the [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).
