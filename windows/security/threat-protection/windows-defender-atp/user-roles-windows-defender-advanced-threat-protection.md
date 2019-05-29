@@ -83,4 +83,4 @@ After creating roles, you'll need to create a machine group and provide access t
 
 ## Related topics
 - [User basic permissions to access the portal](basic-permissions.md)
-- [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
+- [Create and manage machine groups](machine-groups.md)
