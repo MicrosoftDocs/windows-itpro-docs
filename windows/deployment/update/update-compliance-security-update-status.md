@@ -30,7 +30,7 @@ The deployment and detailed states of an update, are described as follows:
 * **Failed**: Indicates that the update process for a specific device has not been successful.
 * **Update Completed**: Indicates that a device has been updated successfully.
 * **Deferred**: Indicates that an update has been postponed to a later time. 
-* **Cancelled:** When the applying of an update is cancelled by the user.
+* **Cancelled**: Indicates that an update has been cancelled by the user.
 
 **Detailed States**
 * **Dowload Started:** Indicates that downloading the contents of a specific update started.
