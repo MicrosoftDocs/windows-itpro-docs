@@ -1,6 +1,6 @@
 ---
-title: Enable conditional access to better protect users, devices, and data
-description: Enable conditional access to prevent applications from running if a device is considered at risk and an application is determined to be non-compliant.
+title: Enable Conditional Access to better protect users, devices, and data
+description: Enable Conditional Access to prevent applications from running if a device is considered at risk and an application is determined to be non-compliant.
 keywords: conditional access, block applications, security level, intune,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Enable conditional access to better protect users, devices, and data 
+# Enable Conditional Access to better protect users, devices, and data 
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
