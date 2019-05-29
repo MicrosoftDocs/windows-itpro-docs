@@ -7,8 +7,7 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

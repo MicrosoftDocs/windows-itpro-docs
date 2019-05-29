@@ -17,36 +17,42 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP for Mac
+# Microsoft Defender Advanced Threat Protection for Mac
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic describes how to install and use Microsoft Defender ATP for Mac.
 
 ## What’s new in the public preview
 
-We've been working hard through the private preview period, and we've heard your concerns. We've reduced the delay for when new Mac devices appear in the ATP console after they've been deployed. We've improved threat handling, and enhanced the user experience. We've also made numerous bug fixes. Other updates to Microsoft Defender ATP for Mac include:
+Since opening the limited preview, we've been working non-stop to enhance the product, by listening to customer feedback. We've reduced the time it takes for devices to appear in Microsoft Defender Security Center, immediately following deployment. We've improved threat handling, enhanced the user experience, and fixed bugs. Other updates to Microsoft Defender ATP for Mac include:
 
-- Full accessibility
+- Enhanced accessibility
 - Improved performance
-- Localization for 37 languages
+- improved client product health monitoring
+- Localization into 37 languages
 - Improved anti-tampering protections
-- Feedback and samples can now be submitted via the GUI.
+- Feedback and samples can now be submitted via the interface.
 - Product health can be queried with JAMF or the command line.
 - Admins can set their cloud preference for any location, not just for those in the US.
 
 ## Installing and configuring
 
-There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+
 In general you'll need to take the following steps:
 
-- Ensure you have a Windows Defender ATP subscription and have access to the Windows Defender ATP Portal
+- Ensure you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
 - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
-  - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
-  - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
+  - Via the command line tool:
+    - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
+  - Via third party tools:
+    - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
+    - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
+    - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
+
+Whichever method you choose, you will first need to visit the onboarding page in the Microsoft Defender ATP portal.
 
 ### Prerequisites
 
@@ -62,26 +68,32 @@ You should also have access to Microsoft Defender Security Center.
 Beta versions of macOS are not supported.
 
 > [!CAUTION]
-> Running other third-party endpoint protection along with Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection alongside Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
 | Service        | Description                          | URL                                                                  |
-| -------------- |:------------------------------------:| --------------------------------------------------------------------:|
-| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com`, `https://cdn.x.cp.wd.microsoft.com` |
+| -------------- | ------------------------------------ | -------------------------------------------------------------------- |
+| ATP            | Advanced threat protection service   | [https://x.cp.wd.microsoft.com](https://x.cp.wd.microsoft.com), [https://cdn.x.cp.wd.microsoft.com](https://cdn.x.cp.wd.microsoft.com) |
 
-To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://cdn.x.cp.wd.microsoft.com/ping` in a browser, or run the following command in Terminal:
+To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
+
+If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-    mavel-mojave:~ testuser$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
-    OK https://x.cp.wd.microsoft.com/api/report
-    OK https://cdn.x.cp.wd.microsoft.com/ping
+testuser$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines.
-SIP is a built-in macOS security feature that prevents low-level tampering with the OS.
+The output from this command should look like this:
+
+> `OK https://x.cp.wd.microsoft.com/api/report`
+>
+> `OK https://cdn.x.cp.wd.microsoft.com/ping`
+
+
+We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
 ## Resources
 

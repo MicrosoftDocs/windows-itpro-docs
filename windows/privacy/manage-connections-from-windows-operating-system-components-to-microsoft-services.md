@@ -32,11 +32,8 @@ If you want to minimize connections from Windows to Microsoft services, or confi
 
 You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887).
-This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state.
-Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document.
-However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended.
-Make sure you've chosen the right settings configuration for your environment before applying.
+To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), but **before application please ensure that Windows and Windows Defender are fully up to date**.  Failure to do so may result in errors. This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state.
+Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure you've chosen the right settings configuration for your environment before applying.
 You should not extract this package to the windows\\system32 folder because it will not apply correctly.
 
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article.
@@ -669,13 +666,13 @@ To remove the News app:
 
   -or-
 >[!IMPORTANT]
-> If you have any issues with these commands, do a system reboot and try the scripts again.
+> If you have any issues with these commands, restart the system and try the scripts again.
 >
 - Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingNews | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingNews | Remove-AppxPackage**
 
 To remove the Weather app:
 
@@ -683,7 +680,7 @@ To remove the Weather app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage**
 
 To remove the Money app:
 
@@ -695,7 +692,7 @@ To remove the Money app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingFinance | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingFinance | Remove-AppxPackage**
 
 To remove the Sports app:
 
@@ -707,7 +704,7 @@ To remove the Sports app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingSports | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingSports | Remove-AppxPackage**
 
 To remove the Twitter app:
 
@@ -719,7 +716,7 @@ To remove the Twitter app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage \*.Twitter | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage \*.Twitter | Remove-AppxPackage**
 
 To remove the XBOX app:
 
@@ -727,7 +724,7 @@ To remove the XBOX app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage**
 
 To remove the Sway app:
 
@@ -739,7 +736,7 @@ To remove the Sway app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage**
 
 To remove the OneNote app:
 
@@ -747,7 +744,7 @@ To remove the OneNote app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage**
 
 To remove the Get Office app:
 
@@ -759,7 +756,7 @@ To remove the Get Office app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage**
 
 To remove the Get Skype app:
 
@@ -771,7 +768,7 @@ To remove the Get Skype app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
 
 To remove the Sticky notes app:
 
@@ -779,7 +776,7 @@ To remove the Sticky notes app:
 
   -and-
 
-    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
+- Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
 ### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy
 
@@ -955,9 +952,7 @@ To turn off **Location**:
   
   -or-
   
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1211,9 +1206,7 @@ To turn off **Let apps make phone calls**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1234,9 +1227,7 @@ To turn off **Let apps control radios**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios**
-
-  - Set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1500,7 +1491,7 @@ To turn this Off in the UI:
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
-  Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
+Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
   **For Windows 10:**
 
@@ -1599,7 +1590,10 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service. 
 
-On Windows 10 1903 Client operating systems and newer search on "Tamper Protection" from the Windows search button next to the Start button on the desktop commmand bar.  Scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, go to Windows Security Settings -> Virus & threat protection, click on Manage settings and then scroll down to the Tamper Protection toggle and set it to **Off**. 
+>[!IMPORTANT]
+>**Required Steps BEFORE setting the Windows Defender Group Policy or RegKey on Windows 10 version 1903**
+>1. Ensure Windows and Windows Defender are fully up to date.
+>2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to >the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make >the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link >and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
 
