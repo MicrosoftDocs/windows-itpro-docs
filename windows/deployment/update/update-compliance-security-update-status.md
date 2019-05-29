@@ -21,7 +21,7 @@ The **Overall Security Update Status** blade provides a visualization of devices
  
 The **Latest Security Update Status** and **Previous Security Update Status** tiles are stacked to form one blade. The **Latest Security Update Status** provides a visualization of the different deployment states devices are in regarding the latest update for each build (or version) of Windows 10, along with the revision of that update. The **Previous Security Update Status** blade provides the same information without the accompanying visualization. 
 
-The deployment and detailed states of an update, are described as follows:
+The deployment and detailed states of an update are described as follows:
 
 **Deployment States**
 * **Unknown**: Indicates a device that has not been scanned for an update for some time.
