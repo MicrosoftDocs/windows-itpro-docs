@@ -156,7 +156,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 >
 >* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
 >
->* 3 additional shortcuts are pinned to the start menu after the export; which are of locations %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\
+>* Three additional shortcuts are pinned to the start menu after the export. These are shortcuts to %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs, and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\.
 
 
 ## Configure a partial Start layout
