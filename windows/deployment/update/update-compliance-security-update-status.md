@@ -29,7 +29,7 @@ The deployment and detailed states of an update, are described as follows:
 * **Progress Stalled**: Indicates that an update has stopped for some reason, such as network failure.
 * **Failed**: Indicates that the update process for a specific device has not been successful.
 * **Update Completed**: Indicates that a device has been updated successfully.
-* **Deferred:** When the application of an update for a device, it is deferred for another time. For example postponing the application one day after planned. 
+* **Deferred**: Indicates that an update has been postponed to a later time. 
 * **Cancelled:** When the applying of an update is cancelled by the user.
 
 **Detailed States**
