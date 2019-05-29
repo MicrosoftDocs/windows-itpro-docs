@@ -26,7 +26,7 @@ You can manage and configure Windows Defender Antivirus with the following tools
 - System Center Configuration Manager
 - Group Policy
 - PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Management Instrumentation (WMI)
 - The mpcmdrun.exe utility
 
 The topics in this section provide further information, links, and resources for using these tools to manage and configure Windows Defender Antivirus.

@@ -45,7 +45,7 @@ Semi-Annual Channel is the default servicing channel for all Windows 10 devices 
 >The LTSB edition of Windows 10 is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 >[!NOTE]
->Semi-Annual Channel (Targeted) should be used only by the customers that are using [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb). For those, who don't use Windows Update for Business, Semi-Annual Channel (Targeted) would be the same as Semi-Annual Channel.
+>Semi-Annual Channel (Targeted) should be used only by the customers that are using [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb). For those who don't use Windows Update for Business, Semi-Annual Channel (Targeted) would be the same as Semi-Annual Channel.
 
 ## Assign devices to Semi-Annual Channel
 
