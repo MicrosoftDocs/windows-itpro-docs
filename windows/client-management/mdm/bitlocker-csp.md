@@ -112,7 +112,6 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1.</p>
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete.</p>
-<p style="margin-left: 20px">RequireDeviceEncryption must be set to 1 to check the device's enforcement status. If the value is not set or is set to 0, the device's enforcement status will not be checked.</p>
 
 <p style="margin-left: 20px">An OS volume's protection status is checked with a Get operation. Typically, BitLocker/Device Encryption will follow whichever value EncryptionMethodByDriveType policy is set to. However, if the OS drive is a self-encrypting drive, this policy setting will be ignored.</p>
 
@@ -125,6 +124,11 @@ The following diagram shows the BitLocker configuration service provider in tree
 * It must not be a system partition.
 * It must not be backed by virtual storage.
 * It must not have a reference in the BCD store.
+
+<p style="margin-left: 20px">The following list shows the supported values:</p>
+
+-   0 – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked, but the device encryption will still be on.
+-   1 (default) – Enable. The device's enforcement status will be checked.
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
