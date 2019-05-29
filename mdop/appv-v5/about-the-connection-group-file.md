@@ -154,13 +154,55 @@ In the &lt;Packages&gt; section of the connection group XML file, you list the m
 
 The following example connection group XML file shows examples of the fields in the previous tables and highlights the items that are new for App-V 5.0 SP3.
 
-`<?xml version="1.0" encoding="UTF-16"?>``<appv:AppConnectionGroup``xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"``xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"``  AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"``  VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"``  Priority="0"``  DisplayName="Sample Connection Group">``  <appv:Packages>``    <appv:Package``      PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"``      VersionId="*"``      IsOptional=”true”``    />``    <appv:Package``      PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"``      VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"``      IsOptional=”false”``    />``  </appv:Packages>`
+```XML
+<?xml version="1.0" encoding="UTF-16"?>
+<appv:AppConnectionGroup 
+   xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+   xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
+   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"  
+   Priority="0"  
+   DisplayName="Sample Connection Group">
+   <appv:Packages>
+      <appv:Package      
+         PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"
+         VersionId="*"
+         IsOptional=”true”
+      />    
+     <appv:Package
+        PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"
+        VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"
+        IsOptional="false"
+     />  
+   </appv:Packages>
+</appv:AppConnectionGroup>
+```
 
 ### <a href="" id="bkmk-50thru50sp2-exp-cg-xm"></a>App-V 5.0 through App-V 5.0 SP2 example connection group XML file
 
 The following example connection group XML file applies to App-V 5.0 through App-V 5.0 SP2. It shows examples of the fields in the previous table, but it excludes the changes described above for App-V 5.0 SP3.
 
-`<?xml version="1.0" encoding="UTF-16"?>``<appv:AppConnectionGroup``xmlns="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"``xmlns:appv="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"``  AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"``  VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"``  Priority="0"``  DisplayName="Sample Connection Group">``  <appv:Packages>``    <appv:Package``      PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"``      VersionId="C7DF4F63-5288-439C-ACEF-EF06BF401EC5"``    />``    <appv:Package``      PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"``      VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"``    />``  </appv:Packages>`
+```XML
+<?xml version="1.0" encoding="UTF-16"?>
+<appv:AppConnectionGroup
+   xmlns="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+   xmlns:appv="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
+   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"
+   Priority="0"
+   DisplayName="Sample Connection Group">
+   <appv:Packages>
+      <appv:Package``      
+         PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"
+         VersionId="C7DF4F63-5288-439C-ACEF-EF06BF401EC5"
+      />
+      <appv:Package
+         PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"
+         VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"
+      />
+   </appv:Packages>
+</appv:AppConnectionGroup
+ ```
 
 ## <a href="" id="bkmk-config-pkg-priority-incg"></a>Configuring the priority of packages in a connection group
 
