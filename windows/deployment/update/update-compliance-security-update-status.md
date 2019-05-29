@@ -25,7 +25,7 @@ The deployment and detailed states of an update, are described as follows:
 
 **Deployment States**
 * **Unknown**: Indicates a device that has not been scanned for an update for some time.
-* **In Progress:** When an update is applying to a specific device.
+* **In Progress**: Indicates that an update is currently being applied to a specific device.
 * **Progress Stalled:** When for any reason, the progress of an update stops, for example caused by netowork problems.
 * **Failed:** When an update, failed to apply to a specific device.
 * **Update Completed:** When an update applies to a device without problems.
