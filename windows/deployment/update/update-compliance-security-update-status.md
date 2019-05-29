@@ -40,7 +40,7 @@ The deployment and detailed states of an update, are described as follows:
 * **Reboot Pending**: Indicates that you need reboot the device to complete the update process.
 * **Service Stack Downloaded**: Indicates that the Servicing Stack Update (the component that installs the Windows update) is downloading.
 * **Update Offered**: Indicates that an optional update is available.
-* **Update Detected:** Indicates that a needed update is detected to apply.
+* **Update Detected**: Indicates that a necessary update is available.
  
 The various deployment states reported by devices are as follows:
 * **Installed** devices are devices that have completed installation for the given update.
