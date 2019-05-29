@@ -24,7 +24,7 @@ The **Latest Security Update Status** and **Previous Security Update Status** ti
 The deployment and detailed states of an update, are described as follows:
 
 **Deployment States**
-* **Unknown:** Occurs when devices are not scanned for an update in some time.
+* **Unknown**: Indicates a device that has not been scanned for an update for some time.
 * **In Progress:** When an update is applying to a specific device.
 * **Progress Stalled:** When for any reason, the progress of an update stops, for example caused by netowork problems.
 * **Failed:** When an update, failed to apply to a specific device.
