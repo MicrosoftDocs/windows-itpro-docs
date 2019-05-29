@@ -39,7 +39,7 @@ The deployment and detailed states of an update, are described as follows:
 * **Install Hand Off**: Indicates that you can continue installing an update at the point where it was stopped.
 * **Reboot Pending**: Indicates that you need reboot the device to complete the update process.
 * **Service Stack Downloaded**: Indicates that the Servicing Stack Update (the component that installs the Windows update) is downloading.
-* **Update Offered:** Indicates that an update is offered, being optional the application of the same.
+* **Update Offered**: Indicates that an optional update is available.
 * **Update Detected:** Indicates that a needed update is detected to apply.
  
 The various deployment states reported by devices are as follows:
