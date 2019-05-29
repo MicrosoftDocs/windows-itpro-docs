@@ -29,7 +29,6 @@ Devices targeting Level 3 should support all Level 5 and Level 4 features, and a
 
 - [System Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 - [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby)
-- [Discrete TPM](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-recommendations)
 
 ## Policies
 
