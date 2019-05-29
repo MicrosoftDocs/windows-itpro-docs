@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
 >This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_page.png)
 
 5. From a command prompt, verify that you have the two files.
     Extract the contents of the .zip files:
@@ -114,4 +114,4 @@ See [Logging installation issues](microsoft-defender-atp-mac-resources.md#loggin
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Windows Defender ATP for Mac from client devices.
+See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.

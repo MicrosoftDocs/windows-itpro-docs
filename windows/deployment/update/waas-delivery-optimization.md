@@ -53,7 +53,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Win32 apps for Intune | 1709 |
 | SCCM Express Updates | 1709 + Configuration Manager version 1711 |
 
-[//]: # (**Network requirements**)
+<!-- ### Network requirements
+
+{can you share with me what the network requirements are?}-->
 
 
 
@@ -72,7 +74,9 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-[//]: # (Starting with Windows Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see {LINK}.)
+Starting with Windows Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
+
+**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Reference
 
@@ -109,6 +113,9 @@ For the payloads (optional):
 - *.windowsupdate.com
 
 **Does Delivery Optimization use multicast?**: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
+
+**How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?**: Starting in Windows 10, version 1903, Delivery Optimizatio uses LEDBAT to relieve such congestion. For more details see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
+
 
 ## Troubleshooting
 

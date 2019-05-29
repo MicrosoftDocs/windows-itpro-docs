@@ -6,8 +6,7 @@ keywords: deploy, volume activation, BitLocker, recovery, install, installation,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/12/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

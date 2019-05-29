@@ -97,7 +97,7 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/830/Implementing-Windows-Hello-for-Business-at-Microsoft)
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 

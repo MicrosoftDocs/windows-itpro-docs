@@ -46,6 +46,7 @@ After you've enabled the service, you may need to configure your network or fire
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
+
 | **Service**| **Description** |**URL** |
 | :--: | :-- | :-- |
 | *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|*.wdcp.microsoft.com  *.wdcpalt.microsoft.com  *.wd.microsoft.com|
