@@ -34,7 +34,7 @@ The deployment and detailed states of an update, are described as follows:
 
 **Detailed States**
 * **Download Started**: Indicates that a specific update has started to download.
-* **Download Succeeded:** Indicates that downloading the content of a specific update ended successfully.
+* **Download Succeeded**: Indicates that the download of a specific update has been successful.
 * **Download Hand Off:** Indicates that you can continue downloading an update at a point in time where it was stopped.
 * **Install Hand Off:** Indicates that you can continue installing an update at a point in time where it was stopped.
 * **Reboot Pending:** Indicates that an update needs a reboot to finish applying.
