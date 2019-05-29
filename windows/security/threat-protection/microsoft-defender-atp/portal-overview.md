@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual 
 ---
 
-# Microsoft Defender Advanced Threat Protection portal overview
+# Microsoft Defender Security Center portal overview
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
