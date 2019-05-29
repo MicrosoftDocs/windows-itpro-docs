@@ -67,7 +67,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 >[!IMPORTANT]
->If you don't find options in GPO, you have to load "[policy definition folders](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)". 
+>If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra). 
 
 ### Windows Hello for Business Group Policy
 
