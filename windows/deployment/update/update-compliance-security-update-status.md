@@ -33,7 +33,7 @@ The deployment and detailed states of an update, are described as follows:
 * **Cancelled**: Indicates that an update has been cancelled by the user.
 
 **Detailed States**
-* **Dowload Started:** Indicates that downloading the contents of a specific update started.
+* **Download Started**: Indicates that a specific update has started to download.
 * **Download Succeeded:** Indicates that downloading the content of a specific update ended successfully.
 * **Download Hand Off:** Indicates that you can continue downloading an update at a point in time where it was stopped.
 * **Install Hand Off:** Indicates that you can continue installing an update at a point in time where it was stopped.
