@@ -66,6 +66,9 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO�**
 3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
+>[!IMPORTANT]
+>If you don't find options in GPO, you have to load "[policy definition folders](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)". 
+
 ### Windows Hello for Business Group Policy
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
