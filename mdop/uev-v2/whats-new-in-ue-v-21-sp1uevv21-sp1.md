@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.1 SP1
 description: What's New in UE-V 2.1 SP1
-author: jamiejdt
+author: levinec
 ms.assetid: 9a40c737-ad9a-4ec1-b42b-31bfabe0f170
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

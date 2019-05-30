@@ -2,12 +2,14 @@
 title: DCOM Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the DCOM Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax security policy setting.
 ms.assetid: 4b95d45f-dd62-4c34-ba32-43954528dabe
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

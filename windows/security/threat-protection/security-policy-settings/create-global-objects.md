@@ -2,12 +2,14 @@
 title: Create global objects (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create global objects security policy setting.
 ms.assetid: 9cb6247b-44fc-4815-86f2-cb59b6f0221e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

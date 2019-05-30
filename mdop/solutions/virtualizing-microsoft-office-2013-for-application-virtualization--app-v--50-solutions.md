@@ -1,8 +1,11 @@
 ---
 title: Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0
 description: Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0
-author: jamiejdt
+author: levinec
 ms.assetid: 742e64de-6ace-4eb4-901a-7a282ca7ae85
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop
 ms.mktglfcycl: deploy
 ms.sitesec: library

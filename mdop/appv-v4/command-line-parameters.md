@@ -1,8 +1,11 @@
 ---
 title: Command-Line Parameters
 description: Command-Line Parameters
-author: jamiejdt
+author: dansimp
 ms.assetid: d90a0591-f1ce-4cb8-b244-85cc70461922
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,11 +2,13 @@
 title: Online deployment with Office 365 (Surface Hub)
 description: This topic has instructions for adding a device account for your Microsoft Surface Hub when you have a pure, online deployment.
 ms.assetid: D325CA68-A03F-43DF-8520-EACF7C3EDEC1
+ms.reviewer: 
+manager: dansimp
 keywords: device account for Surface Hub, online deployment
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 02/21/2018
 ms.localizationpriority: medium

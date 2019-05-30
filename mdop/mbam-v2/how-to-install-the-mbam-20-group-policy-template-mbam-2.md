@@ -1,8 +1,11 @@
 ---
 title: How to Install the MBAM 2.0 Group Policy Template
 description: How to Install the MBAM 2.0 Group Policy Template
-author: jamiejdt
+author: msfttracyp
 ms.assetid: bc193232-d060-4285-842e-d194a74dd3c9
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

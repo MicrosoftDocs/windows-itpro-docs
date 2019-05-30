@@ -8,9 +8,11 @@ ms.sitesec: library
 ms.localizationpriority: medium
 searchScope:
   - Store
-author: trudyha
-ms.author: trudyha
+author: levinec
+ms.author: ellevin
 ms.date: 03/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with Microsoft Store for Education

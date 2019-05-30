@@ -1,8 +1,11 @@
 ---
 title: How to Configure the File Server
 description: How to Configure the File Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 0977554c-1741-411b-85e7-7e1cd017542f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,11 +2,13 @@
 title: SecureAssessment CSP
 description: SecureAssessment CSP
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

@@ -2,11 +2,13 @@
 title: Update CSP
 description: Update CSP
 ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 02/23/2018
 ---
 

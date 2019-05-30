@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 05/15/2019
 ---
 

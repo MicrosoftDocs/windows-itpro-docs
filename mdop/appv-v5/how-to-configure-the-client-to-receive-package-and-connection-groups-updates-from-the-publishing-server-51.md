@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 description: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 23b2d03a-20ce-4973-99ee-748f3b682207
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

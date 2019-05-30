@@ -1,8 +1,11 @@
 ---
 title: How to Install MED-V Client and MED-V Management Console
 description: How to Install MED-V Client and MED-V Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 8a5f3010-3a50-487e-99d8-e352e5cb51c6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

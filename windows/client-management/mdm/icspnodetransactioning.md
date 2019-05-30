@@ -2,11 +2,13 @@
 title: ICSPNodeTransactioning
 description: ICSPNodeTransactioning
 ms.assetid: 24dc518a-4a8d-41fe-9bc6-217bbbdf6a3f
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

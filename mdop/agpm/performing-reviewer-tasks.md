@@ -1,8 +1,11 @@
 ---
 title: Performing Reviewer Tasks
 description: Performing Reviewer Tasks
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 4bdd43fa-5c73-4900-8947-b45906f47f60
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -2,6 +2,9 @@
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
 description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: replication, replicate, deploy, configure, remote
 ms.prod: w10
 ms.mktglfcycl: deploy

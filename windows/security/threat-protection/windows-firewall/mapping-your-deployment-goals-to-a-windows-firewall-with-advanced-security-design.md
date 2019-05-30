@@ -2,12 +2,14 @@
 title: Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design (Windows 10)
 description: Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design
 ms.assetid: 7e68c59e-ba40-49c4-8e47-5de5d6b5eb22
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

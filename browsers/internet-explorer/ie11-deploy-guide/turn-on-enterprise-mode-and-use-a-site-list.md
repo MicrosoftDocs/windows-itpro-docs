@@ -2,12 +2,14 @@
 title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
 description: How to turn on Enterprise Mode and specify a site list.
 ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
+ms.reviewer: 
+manager: dansimp
 ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 

@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface
 ms.sitesec: library
-author: Scottmca
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 #  Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit

@@ -1,8 +1,11 @@
 ---
 title: DELETE SERVER
 description: DELETE SERVER
-author: jamiejdt
+author: dansimp
 ms.assetid: 4c929639-1c1d-47c3-9225-cc4d7a8736f0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: How to Install the Sequencer (App-V 4.6 SP1)
 description: How to Install the Sequencer (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: fe8eb876-28fb-46ae-b592-da055107e639
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

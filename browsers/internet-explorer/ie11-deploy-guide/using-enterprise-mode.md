@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use this section to learn about how to turn on and use IE7 Enterprise Mode or IE8 Enterprise Mode.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

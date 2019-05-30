@@ -1,8 +1,11 @@
 ---
 title: Deploying UE-V 1.0
 description: Deploying UE-V 1.0
-author: jamiejdt
+author: levinec
 ms.assetid: 519598bb-8c81-4af7-bee7-357696bff880
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

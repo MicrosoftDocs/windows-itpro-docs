@@ -2,12 +2,14 @@
 title: Copy a GPO to Create a New GPO (Windows 10)
 description: Copy a GPO to Create a New GPO
 ms.assetid: 7f6a23e5-4b3f-40d6-bf6d-7895558b1406
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

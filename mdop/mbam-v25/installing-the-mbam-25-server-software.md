@@ -1,8 +1,11 @@
 ---
 title: Installing the MBAM 2.5 Server Software
 description: Installing the MBAM 2.5 Server Software
-author: jamiejdt
+author: dansimp
 ms.assetid: b9dbe697-5400-4bac-acfb-ee6dc6586c30
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

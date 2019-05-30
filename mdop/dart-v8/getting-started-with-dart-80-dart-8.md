@@ -1,8 +1,11 @@
 ---
 title: Getting Started with DaRT 8.0
 description: Getting Started with DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 579d18c5-7434-4a0e-9725-fb81ca5e3c6d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: ADD APP
 description: ADD APP
-author: jamiejdt
+author: dansimp
 ms.assetid: 329fd0c8-a795-49be-b0fd-1367c5b4a34b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

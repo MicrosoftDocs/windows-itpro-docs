@@ -1,8 +1,11 @@
 ---
 title: App-V Postinstallation Checklist
 description: App-V Postinstallation Checklist
-author: jamiejdt
+author: dansimp
 ms.assetid: 74db297e-a744-4287-bcc6-0e096ca8b57a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

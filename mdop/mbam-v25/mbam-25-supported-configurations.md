@@ -1,8 +1,11 @@
 ---
 title: MBAM 2.5 Supported Configurations
 description: MBAM 2.5 Supported Configurations
-author: shortpatti
+author: dansimp
 ms.assetid: ce689aff-9a55-4ae7-a968-23c7bda9b4d6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

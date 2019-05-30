@@ -1,8 +1,11 @@
 ---
 title: How to Upgrade a Package
 description: How to Upgrade a Package
-author: jamiejdt
+author: eavena
 ms.assetid: 831c7556-6f6c-4b3a-aefb-26889094dc1a
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

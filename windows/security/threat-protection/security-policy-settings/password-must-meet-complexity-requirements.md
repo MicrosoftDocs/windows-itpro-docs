@@ -2,12 +2,14 @@
 title: Password must meet complexity requirements (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Password must meet complexity requirements security policy setting.
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

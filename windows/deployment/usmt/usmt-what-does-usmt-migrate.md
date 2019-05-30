@@ -2,6 +2,9 @@
 title: What does USMT migrate (Windows 10)
 description: What does USMT migrate
 ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

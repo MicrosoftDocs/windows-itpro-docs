@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 10/08/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate Windows Defender Antivirus network connections

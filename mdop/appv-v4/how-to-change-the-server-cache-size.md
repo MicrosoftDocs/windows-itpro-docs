@@ -1,8 +1,11 @@
 ---
 title: How to Change the Server Cache Size
 description: How to Change the Server Cache Size
-author: jamiejdt
+author: dansimp
 ms.assetid: 24e63744-21c3-458e-b137-9592f4fe785c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

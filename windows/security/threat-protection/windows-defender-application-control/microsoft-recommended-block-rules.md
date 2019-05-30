@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 04/09/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Microsoft recommended block rules

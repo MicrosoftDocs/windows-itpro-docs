@@ -2,12 +2,14 @@
 title: Understanding the publisher rule condition in AppLocker (Windows 10)
 description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 ms.assetid: df61ed8f-a97e-4644-9d0a-2169f18c1c4f
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

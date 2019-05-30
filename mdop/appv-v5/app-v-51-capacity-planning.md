@@ -1,8 +1,11 @@
 ---
 title: App-V 5.1 Capacity Planning
 description: App-V 5.1 Capacity Planning
-author: jamiejdt
+author: v-madhi
 ms.assetid: 7a98062f-5a60-49d6-ab40-dc6057e1dd5a
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

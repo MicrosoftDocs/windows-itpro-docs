@@ -1,13 +1,15 @@
 ---
 title: Get started with Upgrade Readiness (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: Explains how to get started with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
