@@ -35,7 +35,7 @@ The auto-enrollment relies of the presence of an MDM service and the Azure Activ
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure  Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
-In Windows 10, version 1709, when the same policy is configured in GP and MDM, the GP policy wins (GP policy is take precedence over MDM). In the future release of Windows 10, we are considering a feature that allows the admin to control which policy takes precedence.
+In Windows 10, version 1709, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. See [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) to learn more.
 
 For this policy to work, you must verify that the MDM service provider allows the GP triggered MDM enrollment for domain joined devices.
 
@@ -107,20 +107,27 @@ Requirements:
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
 
-1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
-    >[!Note] 
-    >If you do not see the policy, it may be caused because you don’t have the ADMX installed for Windows 10, version 1803. To fix the issue, follow these steps:        
-    >   1. Download [Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)
-](https://www.microsoft.com/en-us/download/details.aspx?id=56880).
-    >   2. Install the package on the Primary Domain Controller.
-    >   3. Navigate to the folder **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**.
-    >   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies**.
-    >   5. Restart the Primary Domain Controller for the policy to be available.
+>[!IMPORTANT] 
+>If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803 or version 1809. To fix the issue, follow these steps:        
+>   1. Download:  
+>   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/en-us/download/details.aspx?id=56880) or  
+>   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/en-us/download/details.aspx?id=57576).
+>   2. Install the package on the Primary Domain Controller (PDC).
+>   3. Navigate, depending on the version to the folder:
+>   1803 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**, or  
+>   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**
+>   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies**.
+>   5. Restart the Primary Domain Controller for the policy to be available.
+>   This procedure will work for any future version as well.
 
+1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 2.	Create a Security Group for the PCs.
 3.	Link the GPO.
 4.	Filter using Security Groups.
-5.	Enforce  a GPO link
+5.	Enforce a GPO link.
+
+>[!NOTE]
+> Version 1903 (March 2019) is actually on the Insider program and doesn't yet contain a downloadable version of Templates (version 1903).
 
 ### Related topics
 
@@ -129,3 +136,8 @@ Requirements:
 - [Link a Group Policy Object](https://technet.microsoft.com/library/cc732979(v=ws.11).aspx)
 - [Filter Using Security Groups](https://technet.microsoft.com/library/cc752992(v=ws.11).aspx)
 - [Enforce a Group Policy Object Link](https://technet.microsoft.com/library/cc753909(v=ws.11).aspx)
+
+### Useful Links
+- [Windows 10 Administrative Templates for Windows 10 April 2018 Update 1803](https://www.microsoft.com/download/details.aspx?id=56880)
+- [Windows 10 Administrative Templates for Windows 10 October 2018 Update 1809](https://www.microsoft.com/download/details.aspx?id=57576)
+ 

@@ -19,7 +19,7 @@ ms.topic: article
 # Add or Remove Machine Tags API
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This API adds or remove tag to a specific machine.
 

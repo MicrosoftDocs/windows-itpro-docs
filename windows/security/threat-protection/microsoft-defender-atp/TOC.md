@@ -70,7 +70,10 @@
 ###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
- 
+
+##### [Investigate entities using Live response](live-response.md)
+###### [Live response command examples](live-response-command-examples.md)
+
 ### [Automated investigation and remediation](automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation.md)
 
@@ -95,7 +98,7 @@
 #### [Managed security service provider support](mssp-support.md)
 
 ### [Microsoft Threat Protection](threat-protection-integration.md)
-####  [Protect users, data, and devices with conditional access](conditional-access.md)
+####  [Protect users, data, and devices with Conditional Access](conditional-access.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
 
@@ -357,7 +360,7 @@
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support.md)
 
 ### Configure Microsoft Threat Protection integration
-#### [Configure conditional access](configure-conditional-access.md)
+#### [Configure Conditional Access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
 ####[Configure information protection in Windows](information-protection-in-windows-config.md)
 
@@ -396,7 +399,7 @@
  
 
 
-## [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
+## [Troubleshoot Microsoft Defender ATP](troubleshoot-overview.md)
 ###Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status.md)
 #### [Fix unhealthy sensors](fix-unhealthy-sensors.md)

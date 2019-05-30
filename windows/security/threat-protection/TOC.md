@@ -1,6 +1,6 @@
 # [Threat protection](index.md)
 
-## [Windows Defender Advanced Threat Protection](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
+## [Microsoft Defender Advanced Threat Protection](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 
 ### [Overview](microsoft-defender-atp/overview.md)
 #### [Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
@@ -67,6 +67,8 @@
 ####### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
  
+###### [Investigate entities using Live response](microsoft-defender-atp/live-response.md)
+#######[Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 ##### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
@@ -86,7 +88,7 @@
 
 #### [Management and APIs](microsoft-defender-atp/management-apis.md)
 ##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Windows Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
+##### [Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ##### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
 #### [Microsoft threat protection](microsoft-defender-atp/threat-protection-integration.md)
@@ -105,14 +107,14 @@
 
 
 ### [Get started](microsoft-defender-atp/get-started.md)
-#### [What's new in Windows Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
+#### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 #### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 #### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
 #### [Preview features](microsoft-defender-atp/preview.md)
 #### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 #### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
 
-#### [Evaluate Windows Defender ATP](microsoft-defender-atp/evaluate-atp.md)
+#### [Evaluate Microsoft Defender ATP](microsoft-defender-atp/evaluate-atp.md)
 #####Evaluate attack surface reduction
 ###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ###### [Application control](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
@@ -235,8 +237,8 @@
 ###### [Troubleshoot onboarding issues](microsoft-defender-atp/troubleshoot-onboarding.md)
 ####### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
    
-##### [Windows Defender ATP API](microsoft-defender-atp/use-apis.md)
-###### [Get started with Windows Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
+##### [Microsoft Defender ATP API](microsoft-defender-atp/use-apis.md)
+###### [Get started with Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ####### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ####### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
 ####### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
@@ -336,13 +338,13 @@
 ###### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 ###### [Configure Splunk to pull alerts](microsoft-defender-atp/configure-splunk.md)
 ###### [Configure HP ArcSight to pull alerts](microsoft-defender-atp/configure-arcsight.md)
-###### [Windows Defender ATP SIEM alert API fields](microsoft-defender-atp/api-portal-mapping.md)
+###### [Microsoft Defender ATP SIEM alert API fields](microsoft-defender-atp/api-portal-mapping.md)
 ###### [Pull alerts using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ###### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 
 ##### Reporting
-###### [Create and build Power BI reports using Windows Defender ATP data](microsoft-defender-atp/powerbi-reports.md)
+###### [Create and build Power BI reports using Microsoft Defender ATP data](microsoft-defender-atp/powerbi-reports.md)
 ###### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ###### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
@@ -405,7 +407,7 @@
 ##### [Configure Windows Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
   
 
-### [Troubleshoot Windows Defender ATP](microsoft-defender-atp/troubleshoot-overview.md)
+### [Troubleshoot Microsoft Defender ATP](microsoft-defender-atp/troubleshoot-overview.md)
 ####Troubleshoot sensor state
 ##### [Check sensor state](microsoft-defender-atp/check-sensor-status.md)
 ##### [Fix unhealthy sensors](microsoft-defender-atp/fix-unhealthy-sensors.md)
@@ -413,7 +415,7 @@
 ##### [Misconfigured machines](microsoft-defender-atp/fix-unhealthy-sensors.md#misconfigured-machines)
 ##### [Review sensor events and errors on machines with Event Viewer](microsoft-defender-atp/event-error-codes.md)
 
-#### [Troubleshoot Windows Defender ATP service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
+#### [Troubleshoot Microsoft Defender ATP service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
 
 ####Troubleshoot attack surface reduction

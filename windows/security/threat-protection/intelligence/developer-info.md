@@ -25,6 +25,4 @@ Learn about the common questions we receive from software developers and get oth
 Topic | Description
 :---|:---
 [Software developer FAQ](developer-faq.md) | Provides answers to common questions we receive from software developers.
-[Developer resources](developer-resources.md) | Provides information about how to submit files, detection criteria, and how to check your software against the latest Security intelligence and cloud protection from Microsoft.
-
-
+[Developer resources](developer-resources.md) | Provides information about how to submit files, detection criteria, and how to check your software against the latest security intelligence and cloud protection from Microsoft.
