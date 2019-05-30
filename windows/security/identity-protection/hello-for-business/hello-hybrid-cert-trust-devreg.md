@@ -447,7 +447,6 @@ The following script helps you with the creation of the issuance transform rules
         Value = "http://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
     );'
     }
-    
     $rule5 = ''
     if ($immutableIDAlreadyIssuedforUsers -eq $true) {
     $rule5 = '@RuleName = "Issue ImmutableID for computers"
