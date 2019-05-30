@@ -469,7 +469,6 @@ The following script helps you with the creation of the issuance transform rules
     );'
     }
     $existingRules = (Get-ADFSRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline).IssuanceTransformRules 
-    
     $updatedRules = $existingRules + $rule1 + $rule2 + $rule3 + $rule4 + $rule5
     $crSet = New-ADFSClaimRuleSet -ClaimRule $updatedRules 
     Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $crSet.ClaimRulesString 
