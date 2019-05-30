@@ -66,7 +66,7 @@ Other actions are enabled if there is an investigation happening on that machine
 
 You can take response actions in the action center, in a specific machine page, or in a specific file page.
 
-For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts.md).
 
  For more information, see [Investigate user entities](investigate-user.md).
 ## Cards
@@ -82,7 +82,7 @@ If you have enabled the Azure ATP feature and there are alerts related to the ma
 
 ### Logged on users
 
-The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane that displays information such as user type, logon type, and first/last seen. For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
+The "Logged on users" tile shows the amount of users who have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane that displays information such as user type, logon type, and first/last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 ![Image of user details pane](images/logged-on-users.png)
 
@@ -98,7 +98,7 @@ The five tabs under the cards section show relevant security and threat preventi
 
 ### Alerts
 
-The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts and customize the columns.
+The **Alerts** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts and customize the columns.
 
 ![Image of alerts related to the machine](images/alerts-machine.png)
 
@@ -141,7 +141,7 @@ Along with event time and users, one of the main categories on the timeline is "
 - Suspicious script detected
 - Alert category (e.g. lateral movement)- if the event is correlated to an alert, the tag will show the alert category
 
-You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
+You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
 ### Security recommendations
 
