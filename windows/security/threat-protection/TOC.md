@@ -95,6 +95,7 @@
 #####  [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 ##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 ##### [Information protection in Windows overview](microsoft-defender-atp/information-protection-in-windows-overview.md)
+###### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 
 
