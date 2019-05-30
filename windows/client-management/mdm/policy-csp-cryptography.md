@@ -11,19 +11,19 @@ ms.date: 05/14/2018
 
 # Policy CSP - Cryptography
 
-
-
 <hr/>
 
 <!--Policies-->
 ## Cryptography policies  
 
+
+
 <dl>
   <dd>
-    <a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+	<a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
-    <a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
+	<a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
   </dd>
 </dl>
 
@@ -34,26 +34,11 @@ ms.date: 05/14/2018
 <a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
+
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -90,26 +75,10 @@ The following list shows the supported values:
 <a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+|Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
+
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -144,3 +113,7 @@ Footnote:
 -   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
 <!--EndSurfaceHub-->
 
+
+
+[check]: images/checkmark.png "Check"
+[x]: images/crossmark.png "X"
