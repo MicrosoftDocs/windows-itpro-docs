@@ -85,13 +85,13 @@ Starting with Windows 10, version 1709, the Windows Update for Business settings
 | Manage Windows Insider Preview builds | System/AllowBuildPreview | Update/ManagePreviewBuilds |
 | Manage when updates are received | Select when Feature Updates are received |	Select when Preview Builds and Feature Updates are received (Update/BranchReadinessLevel) |
 
-## Managing Windows Update for Business with Software Center Configuration Manager
+## Managing Windows Update for Business with System Center Configuration Manager
 
-Starting with Windows 10, version 1709, you can assign a collection of devices to have dual scan enabled and manage that collection with Windows Update for Business policies. Starting with Windows 10, version 1809, you can set a collection of devices to receive the Windows Insider Preview Feature Updates from Windows Update from within Software Center Configuration Manager.
+Starting with Windows 10, version 1709, you can assign a collection of devices to have dual scan enabled and manage that collection with Windows Update for Business policies. Starting with Windows 10, version 1809, you can set a collection of devices to receive the Windows Insider Preview Feature Updates from Windows Update from within System Center Configuration Manager.
 
 | Action | Windows 10 versions between 1709 and 1809 | Windows 10 versions after 1809 |
 | --- | --- | --- |
-| Manage Windows Update for Business in Configuration Manager | Manage Feature or Quality Updates with Windows Update for Business via Dual Scan | Manage Insider pre-release builds with Windows Update for Business within Software Center Configuration Manager |
+| Manage Windows Update for Business in Configuration Manager | Manage Feature or Quality Updates with Windows Update for Business via Dual Scan | Manage Insider pre-release builds with Windows Update for Business within System Center Configuration Manager |
 
 ## Managing Windows Update for Business with Windows Settings options
 Windows Settings includes options to control certain Windows Update for Business features:

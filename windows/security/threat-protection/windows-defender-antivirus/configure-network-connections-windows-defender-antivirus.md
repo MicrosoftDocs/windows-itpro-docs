@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
+author: justinha
 ms.author: v-anbic
 ms.date: 10/08/2018
 ---
@@ -18,7 +18,7 @@ ms.date: 10/08/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
@@ -27,7 +27,7 @@ This topic lists the connections that must be allowed, such as by using firewall
 See the Enterprise Mobility and Security blog post [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) for some details about network connectivity.
 
 >[!TIP]
->You can also visit the Windows Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+>You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >
 >- Cloud-delivered protection
 >- Fast learning (including block at first sight)
@@ -95,7 +95,16 @@ Security intelligence and product updates
  Upload location for files submitted to Microsoft via the <a href="https://www.microsoft.com/en-us/security/portal/submission/submit.aspx">Submission form</a> or automatic sample submission
 </td>
 <td>
-*.blob.core.windows.net
+ussus1eastprod.blob.core.windows.net<br />
+ussus1westprod.blob.core.windows.net<br />
+usseu1northprod.blob.core.windows.net<br />
+usseu1westprod.blob.core.windows.net<br />
+ussuk1southprod.blob.core.windows.net<br />
+ussuk1westprod.blob.core.windows.net<br />
+ussas1eastprod.blob.core.windows.net<br />
+ussas1southeastprod.blob.core.windows.net<br />
+ussau1eastprod.blob.core.windows.net<br />
+ussau1southeastprod.blob.core.windows.net<br />
 </td>
 </tr>
 <tr style="vertical-align:top">

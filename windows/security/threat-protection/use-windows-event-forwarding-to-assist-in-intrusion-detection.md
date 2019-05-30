@@ -14,7 +14,8 @@ ms.localizationpriority: medium
 # Use Windows Event Forwarding to help with intrusion detection
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 

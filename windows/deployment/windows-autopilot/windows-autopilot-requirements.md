@@ -22,16 +22,26 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
 
 - Windows 10 version 1703 (semi-annual channel) or higher is required. 
 - The following editions are supported:
-    -   Pro
-    -   Pro Education
-    -   Pro for Workstations
-    -   Enterprise
-    -   Education
+    -   Windows 10 Pro
+    -   Windows 10 Pro Education
+    -   Windows 10 Pro for Workstations
+    -   Windows 10 Enterprise
+    -   Windows 10 Education
+    -   Windows 10 Enterprise 2019 LTSC
+    
+ - If you're using Autopilot for Surface devices, note that only the following Surface devices support Autopilot:
+    - Surface Go
+    - Surface Go with LTE Advanced
+    - Surface Pro (5th gen) 
+    - Surface Pro with LTE Advanced (5th gen) 
+    - Surface Pro 6
+    - Surface Laptop (1st gen)
+    - Surface Laptop 2
+    - Surface Studio (1st gen)
+    - Surface Studio 2
+    - Surface Book 2
 
-- Windows 10 Enterprise 2019 LTSC is also supported.
-
-See the following topics for details on licensing, network, and configuration requirements:
-- [Licensing requirements](windows-autopilot-requirements-licensing.md)
+See the following topics for details on network and configuration requirements:
 - [Networking requirements](windows-autopilot-requirements-network.md)
 - [Configuration requirements](windows-autopilot-requirements-configuration.md)
     - For details about specific configuration requirements to enable user-driven Hybrid Azure Active Directory join for Windows Autopilot, see [Intune Connector (preview) language requirements](intune-connector.md). This requirement is a temporary workaround, and will be removed in the next release of Intune Connector. 

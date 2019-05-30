@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 04/05/2019
 ms.localizationpriority: medium
 ---
 
@@ -124,7 +124,16 @@ This table provides info about the most common problems you might encounter whil
         <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
+    <tr>
+        <td>By design, files in the Windows directory (%windir% or C:/Windows) cannot be encrypted because they need to be accessed by any user. If a file in the Windows directory gets encypted by one user, other users can't access it.  
+        </td>
+        <td>Any attempt to encrypt a file in the Windows directory will return a file access denied error. But if you copy or drag and drop an encrypted file to the Windows directory, it will retain encryption to honor the intent of the owner. 
+        </td>
+        <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
+        </td>
+    </tr>
 </table>
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+

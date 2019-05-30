@@ -6,14 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 05/21/2019
 ---
 
 # Policy CSP - Experience
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -95,6 +91,9 @@ ms.date: 07/30/2018
   </dd>
   <dd>
     <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
+  </dd>
+  <dd>
+    <a href="#experience-showlockonusertile">Experience/ShowLockOnUserTile</a>
   </dd>
 </dl>
 
@@ -1571,15 +1570,94 @@ Validation procedure:
 
 <hr/>
 
-Footnote:
+<!--Policy-->
+<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Shows or hides lock from the user tile menu.
+
+If you enable this policy setting, the lock option is shown in the User Tile menu.
+
+If you disable this policy setting, the lock option is never shown in the User Tile menu.
+
+If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Show lock in the user tile menu*
+-   GP name: *ShowLockOption*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *WindowsExplorer.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+- false - The lock option is not displayed in the User Tile menu.
+- true (default) - The lock option is displayed in the User Tile menu.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic
 
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Experience policies supported by Windows Holographic for Business
+
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

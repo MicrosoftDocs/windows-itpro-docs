@@ -4,7 +4,7 @@
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Windows Autopilot](windows-autopilot/windows-autopilot.md)
-## [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
+## [Windows 10 Subscription Activation](windows-10-subscription-activation.md)
 ### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
@@ -73,7 +73,6 @@
 ###### [Using the Sdbinst.exe Command-Line Tool](planning/using-the-sdbinstexe-command-line-tool.md)
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 
-#### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
@@ -211,7 +210,6 @@
 ####### [XML Elements Library](usmt/usmt-xml-elements-library.md)
 ###### [Offline Migration Reference](usmt/offline-migration-reference.md)
 ### [Install fonts in Windows 10](windows-10-missing-fonts.md)
-### [Change history for deploy Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Update Windows 10](update/index.md)
 ### [Windows as a service](update/windows-as-a-service.md)
@@ -250,7 +248,6 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
 ### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)

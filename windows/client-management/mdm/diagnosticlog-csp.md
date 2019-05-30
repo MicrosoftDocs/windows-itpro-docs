@@ -338,7 +338,7 @@ Delete a provider
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-tracelevel"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/TraceLevel**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-tracelevel"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/TraceLevel**  
 Specifies the level of detail included in the trace log.
 
 The data type is an integer.
@@ -407,7 +407,7 @@ Set provider **TraceLevel**
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-keywords"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/Keywords**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-keywords"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/Keywords**  
 Specifies the provider keywords to be used as MatchAnyKeyword for this provider.
 
 the data type is a string.
@@ -461,7 +461,7 @@ Set provider **Keywords**
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-state"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/State**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-state"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/State**  
 Specifies if this provider is enabled in the trace session.
 
 The data type is a boolean.

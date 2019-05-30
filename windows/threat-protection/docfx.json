@@ -39,7 +39,8 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "MSDN.win-threat-protection"
+			  "depot_name": "MSDN.win-threat-protection",
+                          "folder_relative_path_in_docset": "./"
 			}
 		}
 	},

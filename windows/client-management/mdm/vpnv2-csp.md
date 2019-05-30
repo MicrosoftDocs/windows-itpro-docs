@@ -401,7 +401,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Nodes under the PluginProfile are required when using a Microsoft Store based VPN plugin.
 
 <a href="" id="vpnv2-profilename-pluginprofile-serverurllist"></a>**VPNv2/***ProfileName***/PluginProfile/ServerUrlList**  
-Required for plug-in profiles. Comma separated list of servers in URL, hostname, or IP format.
+Required for plug-in profiles. Semicolon-separated list of servers in URL, hostname, or IP format.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 

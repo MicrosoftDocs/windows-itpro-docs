@@ -20,7 +20,8 @@ If you run into problems when using Windows Update, start with the following ste
 1. Run the built-in Windows Update troubleshooter to fix common issues. Navigate to **Settings > Update & Security > Troubleshoot > Windows Update**. 
 2. Install the most recent Servicing Stack Update (SSU) that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on SSU. 
 3. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system: 
-   
+
+   - [Windows 10, version 1809 and Windows Server 2019](https://support.microsoft.com/help/4464619/windows-10-update-history)
    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479/windows-10-update-history) 
    - [Windows 10, version 1709](https://support.microsoft.com/help/4043454) 
    - [Windows 10, version 1703](https://support.microsoft.com/help/4018124)  

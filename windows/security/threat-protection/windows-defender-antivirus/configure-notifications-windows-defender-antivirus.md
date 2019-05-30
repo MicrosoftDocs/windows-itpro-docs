@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
+author: justinha
 ms.author: v-anbic
 ms.date: 09/03/2018
 ---
@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 In Windows 10, application notifications about malware detection and remediation are more robust, consistent, and concise.
 
@@ -73,7 +73,7 @@ Hiding notifications can be useful in situations where you can't hide the entire
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/sccm/protect/deploy-use/monitor-endpoint-protection).
 
-See [Customize the Windows Security app for your organization](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
+See [Customize the Windows Security app for your organization](../windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
 
 **Use Group Policy to hide notifications:**
 

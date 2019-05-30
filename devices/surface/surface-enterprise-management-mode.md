@@ -154,7 +154,7 @@ Packages created with the Microsoft Surface UEFI Configurator tool are signed wi
 * **Key Length** – 2048
 * **Hash Algorithm** – SHA-256
 * **Type** – SSL Server Authentication
-* **Key Usage** – Key Encipherment
+* **Key Usage** – Digital signature, Key Encipherment
 * **Provider** – Microsoft Enhanced RSA and AES Cryptographic Provider
 * **Expiration Date** – 15 Months from certificate creation
 * **Key Export Policy** – Exportable

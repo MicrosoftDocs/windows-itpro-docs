@@ -36,7 +36,6 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 >Microsoft Intune supports LTSC 2019 and later. 
 
 
-
 ## Security
 
 This version of Window 10 includes security improvements for threat protection, information protection, and identity protection.
@@ -58,30 +57,6 @@ Attack surface reduction includes host-based intrusion prevention systems such a
 ###### Windows Defender Firewall 
 
 Windows Defender Firewall now supports Windows Subsystem for Linux (WSL) processes. You can add specific rules for a WSL process just as you would for any Windows process. Also, Windows Defender Firewall now supports notifications for WSL processes. For example, when a Linux tool wants to allow access to a port from the outside (like SSH or a web server like nginx), Windows Defender Firewall will prompt to allow access just like it would for a Windows process when the port starts accepting connections. This was first introduced in [Build 17627](https://docs.microsoft.com/windows/wsl/release-notes#build-17618-skip-ahead).
-
-###### Windows Defender Application Guard
-
-Windows Defender Application Guard hardens a favorite attacker entry-point by isolating malware and other threats away from your data, apps, and infrastructure. For more information, see [Windows Defender Application Guard overview](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
-
-Windows Defender Application Guard has support for Edge and has extensions for Chrome and Firefox. For more information, see [System requirements for Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements)
-
-Windows Defender Application Guard (WDAG) introduced a new user interface inside **Windows Security** in this release. Standalone users can now install and configure their Windows Defender Application Guard settings in Windows Security Center. 
-
-Additionally, users who are managed by enterprise policies will be able to check their settings to see what their administrators have configured for their machines to better understand the behavior of Windows Defender Application Guard. This new UI improves the overall experience for users while managing and checking their Windows Defender Application Guard settings. As long as devices meet the minimum requirements, these settings will appear in Windows Security. For more information, see [Windows Defender Application Guard inside Windows Security App](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/test/m-p/214102#M1709).
-
-To try this:
-
-1. Go to **Windows Security** and select **App & browser control**.
-2. Under **Isolated browsing**, select **Install Windows Defender Application Guard**, then install and restart the device.
-3. Select **Change Application Guard** settings.
-4. Configure or check Application Guard settings.
-
-See the following example:
-
-![Security at a glance](../images/1_AppBrowser.png "app and browser control")
-![Isolated browser](../images/2_InstallWDAG.png "isolated browsing")
-![change WDAG settings](../images/3_ChangeSettings.png "change settings")
-![view WDAG settings](../images/4_ViewSettings.jpg "view settings")
 
 ##### Windows Defender Device Guard
 
@@ -305,7 +280,7 @@ IT Pros can use Autopilot Reset to quickly remove personal files, apps, and sett
 
 ### Faster sign-in to a Windows 10 shared pc
 
-If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](/windows/configuration/set-up-shared-or-guest-pc.md) in a flash!
+If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
 
 **To enable fast sign-in:**
 1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.

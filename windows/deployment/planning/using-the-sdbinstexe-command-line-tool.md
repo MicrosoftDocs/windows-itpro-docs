@@ -20,6 +20,7 @@ ms.topic: article
 -   Windows 8.1
 -   Windows 8
 -   Windows 7
+-   Windows Server 2016
 -   Windows Server 2012
 -   Windows Server 2008 R2
 
@@ -29,10 +30,28 @@ After you deploy and store the customized databases on each of your local comput
 
 ## Command-Line Options for Deploying Customized Database Files
 
+Sample output from the command `Sdbinst.exe /?` in an elevated CMD window:
 
-The command-line options use the following conventions.
+```
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
 
-Sdbinst.exe \[-q\] \[-?\] \[-u\] \[-g\] \[-p\] \[-u filepath\] \[-g *GUID*\] \[-n *"name"*\]
+C:\Windows\system32>Sdbinst.exe /?
+Usage: Sdbinst.exe [-?] [-q] [-u] [-g] [-p] [-n[:WIN32|WIN64]] myfile.sdb | {guid} | "name"
+
+    -? - print this help text.
+    -p - Allow SDBs containing patches.
+    -q - Quiet mode: prompts are auto-accepted.
+    -u - Uninstall.
+    -g {guid} - GUID of file (uninstall only).
+    -n "name" - Internal name of file (uninstall only).
+
+C:\Windows\system32>_
+```
+
+The command-line options use the following conventions:
+
+Sdbinst.exe \[-?\] \[-p\] \[-q\] \[-u\] \[-g\] \[-u filepath\] \[-g *GUID*\] \[-n *"name"*\]
 
 The following table describes the available command-line options.
 
@@ -48,6 +67,18 @@ The following table describes the available command-line options.
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>-?</p></td>
+<td align="left"><p>Displays the Help for the Sdbinst.exe tool.</p>
+<p>For example,</p>
+<p><code>sdbinst.exe -?</code></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>-p</p></td>
+<td align="left"><p>Allows SDBs installation with Patches</p>
+<p>For example,</p>
+<p><code>sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb</code></p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>-q</p></td>
 <td align="left"><p>Performs a silent installation with no visible window, status, or warning information. Fatal errors appear only in Event Viewer (Eventvwr.exe).</p>
@@ -71,18 +102,6 @@ The following table describes the available command-line options.
 <td align="left"><p>Specifies the customized database to uninstall by file name.</p>
 <p>For example,</p>
 <p><code>sdbinst.exe -n &quot;My_Database&quot;</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>-?</p></td>
-<td align="left"><p>Displays the Help for the Sdbinst.exe tool.</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -?</code></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>-p</p></td>
-<td align="left"><p>Allows SDBs installation with Patches</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb</code></p></td>
 </tr>
 </tbody>
 </table>

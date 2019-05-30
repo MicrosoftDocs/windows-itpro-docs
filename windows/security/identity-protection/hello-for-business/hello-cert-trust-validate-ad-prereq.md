@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -66,7 +66,7 @@ Sign-in a domain controller or management workstation with domain administrator 
 
 The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides them the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
-Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
+Sign into a domain controller or management workstation with domain administrator equivalent credentials.
 
 1.	Open **Active Directory Users and Computers**.
 2.	Click **View** and click **Advanced Features**.

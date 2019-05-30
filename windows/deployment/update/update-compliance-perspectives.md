@@ -23,6 +23,8 @@ The first blade is the **Build Summary** blade. This blade summarizes the most i
 
 The second blade is the **Deferral Configurations** blade, breaking down Windows Update for Business deferral settings (if any). 
 
+## Deployment status
+
 The third blade is the **Deployment Status** blade. This defines how many days it has been since the queried version has been released, and breaks down the various states in the update funnel each device has reported to be in. The possible states are as follows:
 
 | State | Description |
@@ -35,6 +37,9 @@ The third blade is the **Deployment Status** blade. This defines how many days i
 | Blocked | There is a hard block on the update being completed. This could be that another update must be completed before this one, or some other task is blocking the installation of the update. |
 | Unknown | Devices that do not report detailed information on the status of their updates will report Unknown. This is most likely devices that do not use Windows Update for deployment. |
 | Update paused | These devices have Windows Update for Business pause enabled, preventing this update from being installed. |
+| Failed | A device is unable to install an update. This failure could be linked to a serious error in the update installation process or, in some cases, a [compatibility hold](update-compliance-feature-update-status.md#compatibility-holds).  |
+
+## Detailed deployment status
 
 The final blade is the **Detailed Deployment Status** blade. This blade breaks down the detailed stage of deployment a device is in, beyond the generalized terms defined in Deployment Status. The following are the possible stages a device can report:
 
@@ -44,6 +49,7 @@ The final blade is the **Detailed Deployment Status** blade. This blade breaks d
 | Update paused | The device’s Windows Update for Business policy dictates the update is paused from being offered. |
 | Update offered | The device has been offered the update, but has not begun downloading it. |
 | Pre-Download tasks passed | The device has finished all necessary tasks prior to downloading the update. |
+| Compatibility hold | The device has been placed under a *compatibility hold* to ensure a smooth feature update experience and will not resume the update until the hold has been cleared. For more information see [Feature Update Status report](update-compliance-feature-update-status.md#compatibility-holds) |
 | Download Started | The update has begun downloading on the device. |
 | Download Succeeded | The update has successfully completed downloading. |
 | Pre-Install Tasks Passed | Tasks that must be completed prior to installing the update have been completed. |

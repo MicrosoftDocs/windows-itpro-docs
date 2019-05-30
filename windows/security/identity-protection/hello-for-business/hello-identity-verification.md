@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -50,7 +50,7 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).</br>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later | Windows 10, version 1511 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema |
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level| Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
-| Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
+| Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
 | N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) (hybrid Azure AD joined clients),<br> and</br>Windows Server 2012 or later Network Device Enrollment Service (Azure AD joined) | N/A | Windows Server 2012 or later Network Device Enrollment Service |
 | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter |
@@ -67,7 +67,7 @@ The table shows the minimum requirements for each deployment.
 | Windows 10, version 1703 or later | Windows 10, version 1703 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema|
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
-| Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
+| Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
 | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) |
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |

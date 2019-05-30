@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 05/01/2019
 ---
 
 # Policy CSP - Connectivity
@@ -961,16 +961,32 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Connectivity policies supported by Windows Holographic
+
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Connectivity policies supported by Windows Holographic for Business
+
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
 
 
 

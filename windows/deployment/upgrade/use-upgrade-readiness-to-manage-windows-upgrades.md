@@ -6,11 +6,13 @@ ms.localizationpriority: medium
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
-ms.date: 07/31/2018
 ms.topic: article
 ---
 
 # Use Upgrade Readiness to manage Windows upgrades
+
+>[!IMPORTANT]
+>>**The OMS portal has been deprecated, so you need to switch to the [Azure portal](https://portal.azure.com) now.** The two portals offer the same experience, with some key differences. Learn how to use [Windows Analytics in the Azure Portal](../update/windows-analytics-azure-portal.md). Find out more about the [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition), or jump right in and [Get started with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started).
 
 You can use Upgrade Readiness to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. Upgrade Readiness enables you to deploy Windows with confidence, knowing that you’ve addressed potential blocking issues.
 

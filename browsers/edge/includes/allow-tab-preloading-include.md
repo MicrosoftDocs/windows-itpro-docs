@@ -35,8 +35,9 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader
-- **Value name:** AllowTabPreloading
+- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
+- **Create Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
+- **DWORD Value:** 1
 
 <hr>

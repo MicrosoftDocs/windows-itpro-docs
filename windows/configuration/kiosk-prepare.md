@@ -8,7 +8,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 01/09/2019
 ms.topic: article
 ---
 
@@ -31,12 +30,14 @@ ms.topic: article
 
 ## Configuration recommendations
 
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
+For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk: 
 
 Recommendation | How to
 --- | ---
-Hide update notifications<br>(New in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as DWORD (32-bit) type:</br>`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\SetUpdateNotificationLevel` with a value of `1`, and `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\UpdateNotificationLevel` with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings.
-Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>`HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled`
+Hide update notifications<br>(New in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as type DWORD (32-bit) in the path of **HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate**:<br>**\SetUpdateNotificationLevel** with a value of `1`, and **\UpdateNotificationLevel** with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings.
+Enable and schedule automatic updates | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Configure Automatic Updates**, and select `option 4 (Auto download and schedule the install)`<br>-or-<br>Use the MDM setting **Update/AllowAutoUpdate** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate), and select `option 3 (Auto install and restart at a specified time)`<br><br>**Note:** Installations can take from between 30 minutes and 2 hours, depending on the device, so you should schedule updates to occur when a block of 3-4 hours is available.<br><br>To schedule the automatic update, configure **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**.
+Enable automatic restart at the scheduled time | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Always automatically restart at the scheduled time**
+Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>**HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled**
 Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Do not turn on this setting if users will not interact with the kiosk, such as for a digital sign.
 Hide **Ease of access** feature on the sign-in screen. |     See [how to disable the Ease of Access button in the registry.](https://docs.microsoft.com/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 Disable the hardware power button. |     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
@@ -56,6 +57,9 @@ Logs can help you [troubleshoot issues](multi-app-kiosk-troubleshoot.md) kiosk i
 
 In addition to the settings in the table, you may want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, whether from an update or power outage, you can sign in the assigned access account manually or you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device do not prevent automatic sign in.
 
+>[!NOTE]
+>If you are using a Windows 10 and later device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
+
 >[!TIP]
 >If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML. 
 
@@ -67,7 +71,7 @@ In addition to the settings in the table, you may want to set up **automatic log
     >[!NOTE]  
     >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
-
+ 
 2.  Go to
 
     **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\WindowsNT\CurrentVersion\Winlogon**

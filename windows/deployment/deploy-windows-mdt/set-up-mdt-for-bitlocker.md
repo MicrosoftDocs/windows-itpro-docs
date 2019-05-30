@@ -26,8 +26,8 @@ To configure your environment for BitLocker, you will need to do the following:
 3.  Configure the operating system deployment task sequence for BitLocker.
 4.  Configure the rules (CustomSettings.ini) for BitLocker.
 
-**Note**  
-Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
+>[!NOTE]
+>Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
  
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
@@ -35,8 +35,8 @@ For the purposes of this topic, we will use DC01, a domain controller that is a 
 
 To enable BitLocker to store the recovery key and TPM information in Active Directory, you need to create a Group Policy for it in Active Directory. For this section, we are running Windows Server 2012 R2, so you do not need to extend the Schema. You do, however, need to set the appropriate permissions in Active Directory.
 
-**Note**  
-Depending on the Active Directory Schema version, you might need to update the Schema before you can store BitLocker information in Active Directory.
+>[!NOTE]
+>Depending on the Active Directory Schema version, you might need to update the Schema before you can store BitLocker information in Active Directory.
  
 In Windows Server 2012 R2 (as well as in Windows Server 2008 R2 and Windows Server 2012), you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
 
@@ -79,8 +79,8 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
         Computer Configuration / Policies / Administrative Templates / System / Trusted Platform Module Services
     4.  Enable the **Turn on TPM backup to Active Directory Domain Services** policy.
 
-**Note**  
-If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.
+>[!NOTE]
+>If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.
  
 ### Set permissions in Active Directory for BitLocker
 

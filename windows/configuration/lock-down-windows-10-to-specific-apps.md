@@ -40,7 +40,8 @@ New features and improvements | In update
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
 
-
+>[!TIP]
+>Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
@@ -512,8 +513,6 @@ Provisioning packages can be applied to a device during the first-run experience
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
 ![add a package option](images/package.png)
-
-
 
 
 

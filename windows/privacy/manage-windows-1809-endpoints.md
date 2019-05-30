@@ -440,53 +440,21 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | svchost  | HTTPS   | *.prod.do.dsp.mp.microsoft.com  |
 
-The following endpoints are used to download operating system patches and updates. 
+The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to download updates for the operating system.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | svchost | HTTP  | *.windowsupdate.com |
-|         | HTTP   | fg.download.windowsupdate.com.c.footprint.net |
-
-The following endpoint is used by the Highwinds Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |            | cds.d2s7q6s2.hwcdn.net |
-
-The following endpoints are used by the Verizon Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |  HTTP          | *wac.phicdn.net |
-|  |                | *wac.edgecastcdn.net |
-
-The following endpoint is used to download apps and Windows Insider Preview builds from the Microsoft Store. Time Limited URL (TLU) is a mechanism for protecting the content. For example, it prevents someone from copying the URL and then getting access to the app that the person has not acquired).
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the updating functionality on this device is essentially in a disabled state, resulting in user unable to get apps from the Store, get latest version of Windows, and so on.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | *.tlu.dl.delivery.mp.microsoft.com.c.footprint.net |
-
-The following endpoint is used to download apps from the Microsoft Store. It's used as part of calculating the right ranges for apps.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), users of the device will not able to get apps from the Microsoft Store.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | emdl.ws.microsoft.com  |
+| svchost | HTTP  | *.dl.delivery.mp.microsoft.com |
 
 The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| svchost | HTTPS   | fe2.update.microsoft.com |
-| svchost |    | fe3.delivery.mp.microsoft.com  |
-|       |      | fe3.delivery.dsp.mp.microsoft.com.nsatc.net |
-| svchost | HTTPS   | sls.update.microsoft.com |
-|   | HTTP | *.dl.delivery.mp.microsoft.com |
+| svchost | HTTPS   | *.update.microsoft.com |
+| svchost | HTTPS   | *.delivery.mp.microsoft.com  |
 
 The following endpoint is used for content regulation.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
@@ -495,13 +463,6 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | svchost | HTTPS   | tsfe.trafficshaping.dsp.mp.microsoft.com |
 
-The following endpoints are used to download content.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), you will block any content from being downloaded.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |    | a122.dscd.akamai.net  |
-|  |    | a1621.g.akamai.net   |
 
 ## Microsoft forward link redirection service (FWLink)
 

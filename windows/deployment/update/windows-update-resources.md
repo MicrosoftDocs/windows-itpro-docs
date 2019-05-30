@@ -106,7 +106,7 @@ The following resources provide additional information about using Windows Updat
    - regsvr32.exe wuwebv.dll 
 7. Reset Winsock. To do this, type the following command at a command prompt, and then press ENTER:  
    ```
-   netsh reset winsock 
+   netsh winsock reset 
    ```
 8. If you are running Windows XP or Windows Server 2003, you have to set the proxy settings. To do this, type the following command at a command prompt, and then press ENTER:  
    ```

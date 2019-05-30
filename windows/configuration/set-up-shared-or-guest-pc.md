@@ -109,7 +109,7 @@ $sharedPC.KioskModeAUMID = ""
 $sharedPC.KioskModeUserTileDisplayText = ""
 $sharedPC.InactiveThreshold = 0
 Set-CimInstance -CimInstance $sharedPC
-Get-CimInstance -Namespace $namespaceName -ClassName MDM_SharedPC
+Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
 ```
 
 ### Create a provisioning package for shared use

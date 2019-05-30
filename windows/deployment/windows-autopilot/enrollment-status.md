@@ -20,6 +20,8 @@ ms.topic: article
 The Windows Autopilot Enrollment Status page displaying the status of the complete device configuration process.  Incorporating feedback from customers, this provides information to the user to show that the device is being set up and can be configured to prevent access to the desktop until the configuration is complete. 
  
  ![Enrollment status page](images/enrollment-status-page.png)
+ 
+From Windows 10 version 1803 onwards, you can opt out of the account setup phase. If it is skipped, settings will be applied for users when they access their desktop for the first time. 
 
 ## Available settings
 

@@ -44,7 +44,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 ### Default values
 
-By default this setting is Administrators on domain controllers and on stand-alone servers.
+By default, this setting is Administrators and NT SERVICE\WdiServiceHost on domain controllers and on stand-alone servers.
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 

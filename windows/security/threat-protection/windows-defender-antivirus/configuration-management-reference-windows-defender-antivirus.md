@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
+author: justinha
 ms.author: v-anbic
 ms.date: 09/03/2018
 ---
@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can manage and configure Windows Defender Antivirus with the following tools:
 
@@ -26,7 +26,7 @@ You can manage and configure Windows Defender Antivirus with the following tools
 - System Center Configuration Manager
 - Group Policy
 - PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Management Instrumentation (WMI)
 - The mpcmdrun.exe utility
 
 The topics in this section provide further information, links, and resources for using these tools to manage and configure Windows Defender Antivirus.

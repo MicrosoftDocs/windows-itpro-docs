@@ -43,7 +43,8 @@
 		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "MSDN.store-for-business"
+			  "depot_name": "MSDN.store-for-business",
+                          "folder_relative_path_in_docset": "./"
 			}
 		}
 	},

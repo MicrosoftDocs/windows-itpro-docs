@@ -5,10 +5,9 @@ ms.assetid: 1D44723B-1162-4DF6-99A2-8A3F24443442
 keywords: Accessibility settings, Settings app, Ease of Access
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: robmazz
+ms.author: robmazz
 ms.topic: article
-ms.date: 08/16/2017
 ms.localizationpriority: medium
 ---
 

@@ -53,7 +53,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
-Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices within a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/You-can-now-check-on-the-status-of-your-computers-within-hours/ba-p/187213) on the Tech Community Blog.
 
 >[!NOTE]
 > If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
@@ -84,11 +84,13 @@ If you have devices that appear in other solutions, but not Device Health (the D
 1. Using the Azure portal, remove the Device Health (appears as DeviceHealthProd on some pages) solution from your Log Analytics workspace. After completing this, add the Device Health solution to you workspace again.
 2. Confirm that the devices are running Windows 10.
 3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
-4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+4. Confirm that devices are opted in to send diagnostic data by checking in the registry that **AllowTelemetry** is set to either 2 (Enhanced) or 3 (Full). 
+    - **AllowTelemetry** under **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is the location set by Group Policy or MDM
+    - **AllowTelemetry** under **HKLM\Software\Policies\Microsoft\Windows\DataCollection** is the location set by local tools such as the Settings app.
+    - By convention the Group Policy location would take precedence if both are set. Starting with Windows 10, version 1803, the default precedence is modified to enable a device user to lower the diagnostic data level from that set by IT. For organizations which have no requirement to allow the user to override IT, the conventional (IT wins) behavior can be re-enabled using **DisableTelemetryOptInSettingsUx**. This policy can be set via Group Policy as  **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in setting user interface**.
 5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-6. Remove the Device Health (appears as DeviceHealthProd on some pages) from your Log Analytics workspace
-7. Wait 48 hours for activity to appear in the reports.
-8. If you need additional troubleshooting, contact Microsoft Support.
+6. Wait 48 hours for activity to appear in the reports.
+7. If you need additional troubleshooting, contact Microsoft Support.
 
 
 ### Device crashes not appearing in Device Health Device Reliability
@@ -195,6 +197,11 @@ Upgrade Readiness only collects app inventory on devices that are not yet upgrad
 Double-check that IE site discovery opt-in has been configured in the deployment script. (See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.)
 
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
+
+There are two additional configurations to check:
+1. Make sure Flip Ahead with Page Prediction is enabled. It can be configured at Internet Options -> Advanced -> Browsing -> Enable flip ahead with page prediction.
+2. Make sure IE is not running in InPrivate mode. 
+
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
 >[!NOTE]

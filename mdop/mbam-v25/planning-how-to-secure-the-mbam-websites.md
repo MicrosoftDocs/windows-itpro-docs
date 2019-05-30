@@ -311,7 +311,9 @@ If you already registered SPNs on the machine account rather than in an applicat
 </tbody>
 </table>
 
- 
+## Required Request Filtering Settings
+ 
+ 'Allow unlisted file name extensions' is required for the application to operate as expected.  This can be found by navigating to the 'Microsoft BitLocker Administration and Monitoring' -> Request Filtering -> Edit Feature Settings.
 
 
 ## Related topics

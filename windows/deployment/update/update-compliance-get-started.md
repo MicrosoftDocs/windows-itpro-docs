@@ -53,7 +53,7 @@ Update Compliance is offered as a solution which is linked to a new or existing 
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
         - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
-        - For the pricing tier select **Free**.
+        - For the pricing tier select **per GB**.
 
 ![Update Compliance workspace creation](images/UC_02_workspace_create.png)
 

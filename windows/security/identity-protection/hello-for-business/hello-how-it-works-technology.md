@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -24,6 +24,7 @@ ms.date: 10/08/2018
 - [Azure AD Registered](#azure-ad-registered)
 - [Certificate Trust](#certificate-trust)
 - [Cloud Deployment](#cloud-deployment)
+- [Cloud Experience Host](#cloud-experience-host)
 - [Deployment Type](#deployment-type)
 - [Endorsement Key](#endorsement-key)
 - [Federated Environment](#federated-environment)
@@ -99,6 +100,17 @@ The Windows Hello for Business Cloud deployment is exclusively for organizations
 [Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Deployment Type](#deployment-type), [Join Type](#join-type)
 
 [Return to Top](hello-how-it-works-technology.md)
+## Cloud Experience Host
+In Windows 10, Cloud Experience Host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
+
+### Related topics
+[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
+
+### More information
+- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
+
+[Return to Top](hello-how-it-works-technology.md)
+
 ## Deployment Type
 Windows Hello for Business has three deployment models to accommodate the needs of different organizations.  The three deployment models include:
 - Cloud
@@ -272,9 +284,9 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows�10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
+Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-Windows�10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows�10 supports only TPM 2.0. 
+Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
 
 TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 
@@ -304,18 +316,3 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 
 [Return to Top](hello-how-it-works-technology.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
