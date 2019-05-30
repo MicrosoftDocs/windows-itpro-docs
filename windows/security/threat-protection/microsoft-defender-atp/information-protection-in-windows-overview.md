@@ -119,7 +119,9 @@ For more information, see [Configure information protection in Windows](informat
 
 ## Auto labeling
 
-Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. When Microsoft Defender ATP scans the content of a file in a Windows device and finds that it contains sensitive information, the file is protected with Endpoint data loss prevention.
+Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
+
+Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
 
 > [!NOTE]
 > Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.
