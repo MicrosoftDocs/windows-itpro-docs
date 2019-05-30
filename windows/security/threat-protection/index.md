@@ -75,7 +75,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 - [Alerts](microsoft-defender-atp/alerts-queue.md)
-- [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#machine-timeline)
+- [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#timeline)
 - [Response orchestration](microsoft-defender-atp/response-actions.md)
 - [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
 - [Threat intelligence](microsoft-defender-atp/threat-indicator-concepts.md)
