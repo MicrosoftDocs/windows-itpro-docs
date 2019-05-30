@@ -1,7 +1,7 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V
 description: Manage Administrative Backup and Restore in UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

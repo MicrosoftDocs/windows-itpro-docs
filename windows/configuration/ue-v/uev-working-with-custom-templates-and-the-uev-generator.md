@@ -1,7 +1,7 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Template Generator
 description: Working with Custom UE-V Templates and the UE-V Template Generator
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

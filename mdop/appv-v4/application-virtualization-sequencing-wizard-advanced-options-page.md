@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencing Wizard Advanced Options Page
 description: Application Virtualization Sequencing Wizard Advanced Options Page
-author: jamiejdt
+author: dansimp
 ms.assetid: 2c4c5d95-d55e-463d-a851-8486f6a724f2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

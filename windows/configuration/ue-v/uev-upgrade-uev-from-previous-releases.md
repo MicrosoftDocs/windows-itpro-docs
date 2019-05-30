@@ -1,7 +1,7 @@
 ---
 title: Upgrade to UE-V for Windows 10
 description: Explains how to upgrade to the latest version of UE-V.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

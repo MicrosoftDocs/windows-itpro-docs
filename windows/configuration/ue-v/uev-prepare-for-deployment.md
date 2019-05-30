@@ -1,7 +1,7 @@
 ---
 title: Prepare a UE-V Deployment
 description: Prepare a UE-V Deployment
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

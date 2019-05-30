@@ -4,9 +4,9 @@ description: The world’s first personal digital assistant helps users get thin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+author: dansimp
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: dansimp
 ---
 
 # Cortana integration in your business or enterprise

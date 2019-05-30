@@ -2,12 +2,14 @@
 title: Documenting the Zones (Windows 10)
 description: Documenting the Zones
 ms.assetid: ebd7a650-4d36-42d4-aac0-428617f5a32d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

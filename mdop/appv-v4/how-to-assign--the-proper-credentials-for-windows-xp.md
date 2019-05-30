@@ -1,8 +1,11 @@
 ---
 title: How to Assign the Proper Credentials for Windows XP
 description: How to Assign the Proper Credentials for Windows XP
-author: jamiejdt
+author: dansimp
 ms.assetid: cddbd556-d8f9-4981-a947-6e8e3f552b70
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -4,8 +4,8 @@ description: Provisioning packages can be applied to a device during the first-r
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/22/2017

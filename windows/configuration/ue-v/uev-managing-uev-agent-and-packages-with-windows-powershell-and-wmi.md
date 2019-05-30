@@ -1,7 +1,7 @@
 ---
 title: Managing the UE-V Service and Packages with Windows PowerShell and WMI
 description: Managing the UE-V service and packages with Windows PowerShell and WMI
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

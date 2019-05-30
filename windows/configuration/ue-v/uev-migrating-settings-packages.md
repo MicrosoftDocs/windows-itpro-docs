@@ -1,7 +1,7 @@
 ---
 title: Migrating UE-V settings packages
 description: Migrating UE-V settings packages
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

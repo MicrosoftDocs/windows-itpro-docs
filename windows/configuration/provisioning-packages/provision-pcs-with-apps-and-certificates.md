@@ -5,8 +5,8 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017

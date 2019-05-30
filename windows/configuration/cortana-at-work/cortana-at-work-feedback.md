@@ -4,9 +4,9 @@ description: How to send feedback to Microsoft about Cortana at work.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
 ---
 

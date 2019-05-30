@@ -4,9 +4,9 @@ description: A test scenario about how to set a location-based reminder using Co
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
 ---
 

@@ -5,8 +5,8 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: appcompatguy
-author: appcompatguy
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

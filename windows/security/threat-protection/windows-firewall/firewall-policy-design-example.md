@@ -2,12 +2,14 @@
 title: Firewall Policy Design Example (Windows 10)
 description: Firewall Policy Design Example
 ms.assetid: 0dc3bcfe-7a4d-4a15-93a9-64b13bd775a7
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

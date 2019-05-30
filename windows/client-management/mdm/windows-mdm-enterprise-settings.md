@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
 - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
 ms.assetid: 92711D65-3022-4789-924B-602BE3187E23
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

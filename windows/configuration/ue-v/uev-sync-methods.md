@@ -1,7 +1,7 @@
 ---
 title: Sync Methods for UE-V
 description: Sync Methods for UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: User Experience Virtualization (UE-V) Release Notes
 description: User Experience Virtualization (UE-V) Release Notes
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

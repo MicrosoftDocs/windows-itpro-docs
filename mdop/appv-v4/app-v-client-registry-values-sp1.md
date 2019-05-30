@@ -1,8 +1,11 @@
 ---
 title: App-V Client Registry Values
 description: App-V Client Registry Values
-author: jamiejdt
+author: dansimp
 ms.assetid: 46af5209-9762-47b9-afdb-9a2947e013f7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

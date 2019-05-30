@@ -1,7 +1,7 @@
 ---
 title: Administering UE-V
 description: Administering UE-V
-author: MaggiePucciEvans
+author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

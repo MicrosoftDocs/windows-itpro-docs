@@ -1,7 +1,7 @@
 ---
 title: Administering UE-V with Windows PowerShell and WMI
 description: Administering UE-V with Windows PowerShell and WMI
-author: MaggiePucciEvans
+author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: What's New in UE-V for Windows 10, version 1607
 description: What's New in UE-V for Windows 10, version 1607
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

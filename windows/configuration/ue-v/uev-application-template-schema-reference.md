@@ -1,7 +1,7 @@
 ---
 title: Application Template Schema Reference for UE-V
 description: Application Template Schema Reference for UE-V
-author: MaggiePucciEvans
+author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

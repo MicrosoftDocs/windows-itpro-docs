@@ -1,7 +1,7 @@
 ---
 title: Synchronizing Microsoft Office with UE-V
 description: Synchronizing Office with UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

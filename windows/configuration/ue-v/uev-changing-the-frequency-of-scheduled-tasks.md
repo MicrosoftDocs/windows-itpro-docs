@@ -1,7 +1,7 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Changing the Frequency of UE-V Scheduled Tasks
-author: MaggiePucciEvans
+author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

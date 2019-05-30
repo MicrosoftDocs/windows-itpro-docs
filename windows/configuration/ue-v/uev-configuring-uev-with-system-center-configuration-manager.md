@@ -1,7 +1,7 @@
 ---
 title: Configuring UE-V with System Center Configuration Manager
 description: Configuring UE-V with System Center Configuration Manager 
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

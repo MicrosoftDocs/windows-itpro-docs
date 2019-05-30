@@ -1,7 +1,7 @@
 ---
 title: Use UE-V with custom applications
 description: Use UE-V with custom applications
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
