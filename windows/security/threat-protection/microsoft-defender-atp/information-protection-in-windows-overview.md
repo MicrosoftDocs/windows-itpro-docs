@@ -31,14 +31,14 @@ Microsoft Defender ATP is seamlessly integrated in Microsoft Threat Protection t
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 
-Windows Defender ATP applies the following methods to discover, classify, and protect data:
+Microsoft Defender ATP applies the following methods to discover, classify, and protect data:
 - **Data discovery** - Identify sensitive data on Windows devices at risk
 - **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
 - **Data protection** - Windows Information Protection (WIP) as outcome of Azure Information Protection label
 
 
 ## Data discovery and data classification
-Windows Defender ATP automatically discovers files with sensitivity labels and files that contain sensitive information types. 
+Microsoft Defender ATP automatically discovers files with sensitivity labels and files that contain sensitive information types. 
 
 Sensitivity labels classify and help protect sensitive content. 
 
@@ -54,14 +54,14 @@ Custom types are ones that you define and is designed to protect a different typ
 
 When a file is created or edited on a  Windows device, Windows Defender ATP scans the content to evaluate if it contains sensitive information. 
 
-Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Windows Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
+Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Microsoft Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
 The reported signals can be viewed on the Azure Information Protection – Data discovery dashboard. 
 
 ## Azure Information Protection - Data discovery dashboard 
-This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and Azure Information Protection. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
+This dashboard presents a summarized discovery information of data discovered by bothMicrosoft Defender ATP and Azure Information Protection. Data from Microsoft Defender ATP is marked with Location Type - Endpoint. 
 
 ![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
 
@@ -77,7 +77,7 @@ Click on a device to view a list of files observed on this device, with their se
 
 
 ## Log Analytics 
-Data discovery based on Windows Defender ATP is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
+Data discovery based on Microsoft Defender ATP is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip). 
 
@@ -102,9 +102,9 @@ InformationProtectionLogs_CL
 ### Endpoint data loss prevention
 For data to be protected, they must first be identified through labels. 
 
-Sensitivity labels are created in Office 365 Security & Compliance Center. Windows Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
+Sensitivity labels are created in Office 365 Security & Compliance Center. Microsoft Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
 
-When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Windows Defender ATP is the Endpoint data loss prevention. 
+When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Microsoft Defender ATP is the Endpoint data loss prevention. 
 
 For the endpoint data loss prevention, you'll need to turn on the Endpoint Data loss prevention and select Enable Windows end point protection (DLP for devices). 
 
@@ -119,7 +119,7 @@ For more information, see [Configure information protection in Windows](informat
 
 ## Auto labeling
 
-Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. When Windows Defender ATP scans the content of a file in a Windows device and finds that it contains sensitive information, it will automatically apply a label to it even if the user hasn't manually classified it.
+Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. When Microsoft Defender ATP scans the content of a file in a Windows device and finds that it contains sensitive information, it will automatically apply a label to it even if the user hasn't manually classified it.
 
 > [!NOTE]
 > Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.
