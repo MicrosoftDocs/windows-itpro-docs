@@ -4,9 +4,9 @@ description: Configure Microsoft Edge to either show or hide the favorites bar o
 services: 
 keywords: 
 ms.localizationpriority: medium
-manager: dougkim
-author: shortpatti
-ms.author: pashort
+manager: dansimp
+author: eavena
+ms.author: eravena
 ms.date: 10/02/2018
 ms.topic: reference
 ms.prod: edge

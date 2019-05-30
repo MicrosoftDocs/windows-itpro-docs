@@ -1,7 +1,7 @@
 ---
 title: How to delete a connection group (Windows 10)
 description: How to delete a connection group.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

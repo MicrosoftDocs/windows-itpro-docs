@@ -1,8 +1,11 @@
 ---
 title: OSD Tab
 description: OSD Tab
-author: jamiejdt
+author: eavena
 ms.assetid: e66f1384-1753-4216-b9ee-77e99af93c74
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

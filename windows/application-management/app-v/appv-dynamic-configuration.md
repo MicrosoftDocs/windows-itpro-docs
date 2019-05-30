@@ -1,7 +1,7 @@
 ---
 title: About App-V Dynamic Configuration (Windows 10)
 description: About App-V Dynamic Configuration
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

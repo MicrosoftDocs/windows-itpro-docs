@@ -1,7 +1,7 @@
 ---
 title: App-V Deployment Checklist (Windows 10)
 description: App-V Deployment Checklist
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

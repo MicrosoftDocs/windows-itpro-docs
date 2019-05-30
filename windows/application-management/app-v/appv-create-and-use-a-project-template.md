@@ -1,7 +1,7 @@
 ---
 title: Create and apply an App-V project template to a sequenced App-V package (Windows 10)
 description: Steps for how to create and apply an App-V project template (.appvt) to a sequenced App-V package.
-author: jdeckerms
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

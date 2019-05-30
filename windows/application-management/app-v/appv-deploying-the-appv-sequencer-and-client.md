@@ -1,7 +1,7 @@
 ---
 title: Deploying the App-V Sequencer and configuring the client (Windows 10)
 description: Deploying the App-V Sequencer and configuring the client
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

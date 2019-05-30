@@ -5,11 +5,11 @@ keywords: smb, full cloud IT solution, small to medium business, deploy, setup, 
 ms.prod: w10
 ms.technology: smb-windows
 ms.topic: hero-article
-ms.author: celested
+ms.author: eravena
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
-author: CelesteDG
+author: eavena
 ms.date: 10/30/2017
 ms.localizationpriority: medium
 ---

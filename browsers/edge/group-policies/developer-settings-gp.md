@@ -5,8 +5,8 @@ services:
 keywords: 
 ms.localizationpriority: medium
 managre: dougkim
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date: 10/02/2018
 ms.topic: reference
 ms.prod: edge

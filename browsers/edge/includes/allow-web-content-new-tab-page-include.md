@@ -1,6 +1,6 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  11/02/2018
 ms.prod: edge
 ms:topic: include

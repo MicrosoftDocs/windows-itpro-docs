@@ -1,7 +1,7 @@
 ---
 title: How to create a custom configuration file by using the App-V Management Console (Windows 10)
 description: How to create a custom configuration file by using the App-V Management Console.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

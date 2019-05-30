@@ -1,7 +1,7 @@
 ---
 title: High-level architecture for App-V (Windows 10)
 description: High-level Architecture for App-V.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

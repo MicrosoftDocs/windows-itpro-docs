@@ -1,7 +1,7 @@
 ---
 title: How to create a package accelerator by using Windows PowerShell (Windows 10)
 description: How to create a package accelerator with Windows PowerShell.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

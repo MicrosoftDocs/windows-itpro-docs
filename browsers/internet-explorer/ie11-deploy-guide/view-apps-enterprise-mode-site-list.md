@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to view the active Enterprise Mode Site List from the Enterprise Mode Site List Portal.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 title: View the apps included in the active Enterprise Mode Site List from the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

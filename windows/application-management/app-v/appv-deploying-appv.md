@@ -1,7 +1,7 @@
 ---
 title: Deploying App-V (Windows 10)
 description: Deploying App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

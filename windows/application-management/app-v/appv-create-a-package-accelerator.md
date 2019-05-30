@@ -1,7 +1,7 @@
 ---
 title: How to create a package accelerator (Windows 10)
 description: How to create a package accelerator.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

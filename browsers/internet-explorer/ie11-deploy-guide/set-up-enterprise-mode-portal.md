@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to set up the Enterprise Mode Site List Portal for your organization.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 title: Set up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

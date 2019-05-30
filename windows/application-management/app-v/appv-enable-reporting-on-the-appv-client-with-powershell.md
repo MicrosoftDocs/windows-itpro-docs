@@ -1,7 +1,7 @@
 ---
 title: How to Enable Reporting on the App-V Client by Using Windows PowerShell (Windows 10)
 description: How to Enable Reporting on the App-V Client by Using Windows PowerShell
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

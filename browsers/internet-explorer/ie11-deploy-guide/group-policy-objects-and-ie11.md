@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview of the available Group Policy management tools
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Group Policy management tools (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

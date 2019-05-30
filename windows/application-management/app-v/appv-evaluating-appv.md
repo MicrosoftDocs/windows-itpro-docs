@@ -1,7 +1,7 @@
 ---
 title: Evaluating App-V (Windows 10)
 description: Evaluating App-V for Windows 10
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

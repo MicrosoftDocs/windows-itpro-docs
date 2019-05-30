@@ -1,7 +1,7 @@
 ---
 title: Diagnostics and Recovery Toolset 6.5
 description: Diagnostics and Recovery Toolset 6.5
-author: jamiejdt
+author: eavena
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

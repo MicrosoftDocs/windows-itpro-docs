@@ -3,7 +3,7 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how Administrators can schedule approved change requests for production in the Enterprise Mode Site List Portal.
-author: jdeckerms
+author: eavena
 ms.prod: ie11
 title: Schedule approved change requests for production using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

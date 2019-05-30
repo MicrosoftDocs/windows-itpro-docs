@@ -3,11 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
 description:
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid:
+ms.reviewer: 
+manager: dansimp
 title: Internet Explorer 11 delivery through automatic updates
 ms.sitesec: library
 ms.date: 05/22/2018

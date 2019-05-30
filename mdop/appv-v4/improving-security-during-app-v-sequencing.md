@@ -1,8 +1,11 @@
 ---
 title: Improving Security During App-V Sequencing
 description: Improving Security During App-V Sequencing
-author: jamiejdt
+author: eavena
 ms.assetid: f30206dd-5749-4a27-bbaf-61fc21b9c663
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: How to Deploy the App-V Databases by Using SQL Scripts (Windows 10)
 description: How to Deploy the App-V Databases by Using SQL Scripts
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

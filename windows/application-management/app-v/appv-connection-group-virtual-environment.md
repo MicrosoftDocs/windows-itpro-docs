@@ -1,7 +1,7 @@
 ---
 title: About the connection group virtual environment (Windows 10)
 description: Overview of how the connection group virtual environment works.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

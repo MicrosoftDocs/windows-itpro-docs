@@ -4,8 +4,8 @@ description: Learn how to use the web application compatibility toolkit for Micr
 ms.prod: edge
 ms.topic: article
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: eavena
+ms.author: eravena
 ms.localizationpriority: high
 ---
 
