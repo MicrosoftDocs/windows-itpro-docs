@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdm
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 

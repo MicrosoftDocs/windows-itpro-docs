@@ -1,7 +1,7 @@
 ---
 title: About App-V Reporting (Windows 10)
 description: About App-V Reporting
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

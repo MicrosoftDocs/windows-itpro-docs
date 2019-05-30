@@ -1,7 +1,7 @@
 ---
 title: App-V Security Considerations (Windows 10)
 description: App-V Security Considerations
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

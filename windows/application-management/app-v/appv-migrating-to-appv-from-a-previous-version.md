@@ -1,7 +1,7 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
 description: Migrating to App-V for Windows 10 from a previous version
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

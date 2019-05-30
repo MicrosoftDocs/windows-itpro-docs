@@ -1,11 +1,11 @@
 ---
 title: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new Portal
 description: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new Portal
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 01/17/2018
 ---
 

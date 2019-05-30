@@ -1,8 +1,11 @@
 ---
 title: Import a GPO from a File
 description: Import a GPO from a File
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 2cbcda72-4de3-47ad-aaf8-4fc7341d5a00
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

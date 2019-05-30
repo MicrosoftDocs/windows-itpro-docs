@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2015
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: mjcaparas
 ms.localizationpriority: low
 ms.topic: article
 ---

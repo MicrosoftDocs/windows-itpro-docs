@@ -1,8 +1,8 @@
-﻿---
+---
 title: Upgrade Readiness architecture (Windows 10)
 description: Describes Upgrade Readiness architecture.
 ms.prod: w10
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---

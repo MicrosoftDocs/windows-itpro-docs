@@ -1,7 +1,7 @@
 ---
 title: Preparing Your Environment for App-V (Windows 10)
 description: Preparing Your Environment for App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

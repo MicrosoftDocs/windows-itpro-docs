@@ -1,7 +1,7 @@
 ---
 title: Technical Reference for App-V (Windows 10)
 description: Technical Reference for App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

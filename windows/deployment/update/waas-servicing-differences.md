@@ -5,9 +5,9 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: KarenSimWindows
+author: lomayor
 ms.localizationpriority: medium
-ms.author: karensim
+ms.author: lomayor
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

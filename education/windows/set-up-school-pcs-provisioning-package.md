@@ -7,8 +7,8 @@ ms.mktglfcycl: plan
 ms.sitesec: library  
 ms.pagetype: edu  
 ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/17/2018  
 ---  
 

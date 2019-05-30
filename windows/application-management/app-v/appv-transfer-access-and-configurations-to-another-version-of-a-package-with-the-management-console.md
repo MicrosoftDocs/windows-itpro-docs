@@ -1,7 +1,7 @@
 ---
 title: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console (Windows 10)
 description: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

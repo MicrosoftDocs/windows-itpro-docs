@@ -1,11 +1,11 @@
 ---
 title: AccountManagement CSP
 description: Used to configure settings in the Account Manager service
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 03/23/2018
 ---
 

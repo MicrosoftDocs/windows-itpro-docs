@@ -1,7 +1,7 @@
 ---
 title: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell (Windows 10)
 description: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: Planning to Use Folder Redirection with App-V (Windows 10)
 description: Planning to Use Folder Redirection with App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

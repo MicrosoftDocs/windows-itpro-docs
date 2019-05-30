@@ -4,8 +4,8 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: lomayor
+ms.author: lomayor
 ms.date: 01/24/2019
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop

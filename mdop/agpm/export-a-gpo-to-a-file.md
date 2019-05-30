@@ -1,8 +1,11 @@
 ---
 title: Export a GPO to a File
 description: Export a GPO to a File
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 0d01b1f7-a6a4-4d0d-9aa7-2d6f1ae93d9d
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

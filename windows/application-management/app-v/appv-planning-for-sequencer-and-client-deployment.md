@@ -1,7 +1,7 @@
 ---
 title: Planning for the App-V Sequencer and Client Deployment (Windows 10)
 description: Planning for the App-V Sequencer and Client Deployment
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

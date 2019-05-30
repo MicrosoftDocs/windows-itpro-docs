@@ -1,7 +1,7 @@
 ---
 title: Planning for the App-V Server Deployment (Windows 10)
 description: Planning for the App-V 5.1 Server Deployment
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -4,9 +4,9 @@ description: Learn how to manage drivers, dual managed environments, and bandwid
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+author: lomayor
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: lomayor
 ms.date: 06/21/2018
 ms.topic: article
 ---

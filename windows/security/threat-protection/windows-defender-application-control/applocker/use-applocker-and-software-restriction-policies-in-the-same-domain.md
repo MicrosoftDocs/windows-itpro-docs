@@ -2,12 +2,14 @@
 title: Use AppLocker and Software Restriction Policies in the same domain (Windows 10)
 description: This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

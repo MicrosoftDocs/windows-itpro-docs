@@ -1,7 +1,7 @@
 ---
 title: App-V Planning Checklist (Windows 10)
 description: App-V Planning Checklist
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

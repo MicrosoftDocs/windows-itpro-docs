@@ -1,7 +1,7 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
-author: jdeckerms
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

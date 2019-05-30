@@ -1,7 +1,7 @@
 ---
 title: App-V Prerequisites (Windows 10)
 description: App-V Prerequisites
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

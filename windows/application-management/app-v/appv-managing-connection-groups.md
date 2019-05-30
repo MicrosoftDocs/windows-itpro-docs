@@ -1,7 +1,7 @@
 ---
 title: Managing Connection Groups (Windows 10)
 description: Managing Connection Groups
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

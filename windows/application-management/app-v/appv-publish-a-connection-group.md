@@ -1,7 +1,7 @@
 ---
 title: How to Publish a Connection Group (Windows 10)
 description: How to Publish a Connection Group
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

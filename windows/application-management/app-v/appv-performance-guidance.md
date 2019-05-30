@@ -1,7 +1,7 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10)
 description: Performance Guidance for Application Virtualization
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

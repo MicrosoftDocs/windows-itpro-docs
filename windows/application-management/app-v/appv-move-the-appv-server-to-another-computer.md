@@ -1,7 +1,7 @@
 ---
 title: How to Move the App-V Server to Another Computer (Windows 10)
 description: How to Move the App-V Server to Another Computer
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

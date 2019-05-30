@@ -1,7 +1,7 @@
 ---
 title: Planning to Deploy App-V with an Electronic Software Distribution System (Windows 10)
 description: Planning to Deploy App-V with an Electronic Software Distribution System
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

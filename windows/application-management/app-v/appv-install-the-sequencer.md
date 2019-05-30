@@ -1,7 +1,7 @@
 ---
 title: Install the App-V Sequencer (Windows 10)
 description: Install the App-V Sequencer
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

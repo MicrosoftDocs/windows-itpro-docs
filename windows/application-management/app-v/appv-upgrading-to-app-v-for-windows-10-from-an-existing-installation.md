@@ -1,7 +1,7 @@
 ---
 title: Upgrading to App-V for Windows 10 from an existing installation (Windows 10)
 description: Upgrading to App-V for Windows 10 from an existing installation
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

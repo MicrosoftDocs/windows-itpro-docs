@@ -1,7 +1,7 @@
 ---
 title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console (Windows 10)
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: Planning for High Availability with App-V Server
 description: Planning for High Availability with App-V Server
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

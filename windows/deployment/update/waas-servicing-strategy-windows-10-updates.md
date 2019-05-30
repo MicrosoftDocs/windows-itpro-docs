@@ -4,9 +4,9 @@ description: A strong Windows 10 deployment strategy begins with establishing a 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: Jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 11/02/2018
 ms.topic: article
 ---
