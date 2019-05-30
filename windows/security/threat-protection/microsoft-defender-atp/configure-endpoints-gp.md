@@ -54,7 +54,7 @@ ms.date: 04/24/2018
 
 5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6. In the  **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
