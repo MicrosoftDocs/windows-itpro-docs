@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 in a school

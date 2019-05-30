@@ -11,6 +11,8 @@ searchScope:
   - Store
 ms.author: ellevin
 ms.date: 01/30/2019
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 

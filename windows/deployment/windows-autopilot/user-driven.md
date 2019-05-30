@@ -9,6 +9,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: dulcemontemayor
 ms.date: 11/07/2018
+ms.reviewer: 
+manager: dansimp
 ms.author: dolmont
 ms.collection: M365-modern-desktop
 ms.topic: article

@@ -7,6 +7,9 @@ ms.sitesec: library
 ms.pagetype: security
 author: dulcemontemayor
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ---
 
 # How to use single sign on (SSO) over VPN and Wi-Fi connections

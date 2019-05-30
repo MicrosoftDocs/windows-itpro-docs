@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 07/19/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows Configuration Designer provisioning settings (reference)

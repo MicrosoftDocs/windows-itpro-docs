@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.reviewer: 
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs

@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 08/31/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows 10 configuration recommendations for education customers

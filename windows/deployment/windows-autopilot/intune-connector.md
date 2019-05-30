@@ -10,6 +10,8 @@ ms.pagetype: deploy
 author: dulcemontemayor
 ms.author: dolmont
 ms.date: 11/26/2018
+ms.reviewer: 
+manager: dansimp
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

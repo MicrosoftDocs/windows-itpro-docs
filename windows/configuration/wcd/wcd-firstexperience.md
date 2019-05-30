@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/08/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # FirstExperience (Windows Configuration Designer reference)

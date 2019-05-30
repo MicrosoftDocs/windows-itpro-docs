@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 07/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Go for Education - Enabling S mode

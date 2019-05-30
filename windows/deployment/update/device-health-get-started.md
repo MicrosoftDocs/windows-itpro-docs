@@ -6,6 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 10/29/2018
+ms.reviewer: 
+manager: laurawi
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin

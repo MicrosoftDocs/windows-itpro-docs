@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # KioskBrowser (Windows Configuration Designer reference)

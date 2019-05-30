@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/26/2019
+ms.reviewer: 
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 

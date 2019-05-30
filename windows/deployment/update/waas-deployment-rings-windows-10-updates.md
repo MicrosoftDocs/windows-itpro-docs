@@ -8,6 +8,8 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 07/11/2018
+ms.reviewer: 
+manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

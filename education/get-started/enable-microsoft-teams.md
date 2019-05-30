@@ -11,6 +11,8 @@ ms.pagetype: edu
 author: levinec
 ms.author: ellevin
 ms.date: 07/28/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable Microsoft Teams for your school

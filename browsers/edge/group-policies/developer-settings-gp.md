@@ -8,6 +8,8 @@ managre: dougkim
 author: eavena
 ms.author: eravena
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore

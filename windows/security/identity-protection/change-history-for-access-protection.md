@@ -13,6 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/11/2017
+ms.reviewer: 
 ---
 
 # Change history for access protection

@@ -8,6 +8,8 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Testing scenarios using Cortana in your business or organization

@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.reviewer: 
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune

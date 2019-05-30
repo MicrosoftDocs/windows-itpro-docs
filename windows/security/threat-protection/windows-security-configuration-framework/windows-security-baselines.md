@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
+ms.reviewer: 
 ---
 
 # Windows security baselines

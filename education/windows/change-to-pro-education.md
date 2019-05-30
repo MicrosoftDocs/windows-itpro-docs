@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro

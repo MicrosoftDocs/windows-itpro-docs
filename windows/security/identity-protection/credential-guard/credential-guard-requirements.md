@@ -13,6 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 01/12/2018
+ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Requirements

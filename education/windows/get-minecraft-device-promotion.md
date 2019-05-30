@@ -11,6 +11,8 @@ searchScope:
   - Store
 ms.author: ellevin
 ms.date: 06/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Get Minecraft: Education Edition with Windows 10 device promotion

@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/18/2018
+ms.reviewer: 
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
 

@@ -8,6 +8,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ---
 

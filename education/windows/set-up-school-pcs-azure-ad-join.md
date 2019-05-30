@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 01/11/2019
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # Azure AD Join for school PCs  

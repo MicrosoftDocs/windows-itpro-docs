@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 

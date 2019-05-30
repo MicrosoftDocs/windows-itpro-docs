@@ -7,6 +7,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ---
 
 # Diagnostics and Recovery Toolset 6.5

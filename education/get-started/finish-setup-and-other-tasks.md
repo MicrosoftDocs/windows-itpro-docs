@@ -11,6 +11,8 @@ ms.pagetype: edu
 author: levinec
 ms.author: ellevin
 ms.date: 10/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Finish Windows 10 device setup and other tasks

@@ -8,6 +8,8 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 

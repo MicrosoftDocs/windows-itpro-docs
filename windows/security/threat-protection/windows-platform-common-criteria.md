@@ -10,6 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 3/20/2019
+ms.reviewer: 
 ---
 
 # Common Criteria Certifications

@@ -12,6 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Securing End-to-End IPsec connections by using IKEv2

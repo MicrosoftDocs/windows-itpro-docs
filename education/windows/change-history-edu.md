@@ -9,6 +9,8 @@ ms.pagetype: edu
 author: levinec
 ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Windows 10 for Education

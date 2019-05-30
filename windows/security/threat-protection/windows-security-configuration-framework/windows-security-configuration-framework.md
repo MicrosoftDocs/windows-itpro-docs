@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/05/2018
+ms.reviewer: 
 ---
 
 # Introducing the security configuration framework

@@ -13,6 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 10/08/2018
+ms.reviewer: 
 ---
 # Technology and Terms
 

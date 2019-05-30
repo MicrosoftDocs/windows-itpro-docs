@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/21/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # CallAndMessagingEnhancement (Windows Configuration Designer reference)

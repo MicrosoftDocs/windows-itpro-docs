@@ -15,6 +15,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
 ---
 
 # Enterprise Certificate Pinning

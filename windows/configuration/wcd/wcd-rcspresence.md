@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # RcsPresence (Windows Configuration Designer reference)

@@ -8,6 +8,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ---
 
 # Mitigate threats by using Windows 10 security features

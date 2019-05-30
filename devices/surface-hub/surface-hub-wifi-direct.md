@@ -8,6 +8,8 @@ author: levinec
 ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 

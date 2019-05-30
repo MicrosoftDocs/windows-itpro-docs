@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: dulcemontemayor
 ms.date: 03/02/2018
+ms.reviewer: 
+manager: dansimp
 keywords: insider, trial, enterprise, lab, corporation, test
 ---
 

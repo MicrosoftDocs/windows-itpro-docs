@@ -11,6 +11,8 @@ ms.pagetype: edu
 author: levinec
 ms.author: ellevin
 ms.date: 10/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education

@@ -12,6 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Isolating Microsoft Store Apps on Your Network

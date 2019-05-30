@@ -13,6 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/31/2017
+ms.reviewer: 
 ---
 
 # Considerations when using Windows Defender Credential Guard

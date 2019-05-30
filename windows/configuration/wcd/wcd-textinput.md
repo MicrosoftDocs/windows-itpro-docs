@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/15/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TextInput (Windows Configuration Designer reference)

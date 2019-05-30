@@ -8,6 +8,8 @@ ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.author: eravena
 author: eavena
 ---

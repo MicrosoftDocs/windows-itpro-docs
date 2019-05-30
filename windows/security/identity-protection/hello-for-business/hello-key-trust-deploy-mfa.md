@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure or Deploy Multifactor Authentication Services
 

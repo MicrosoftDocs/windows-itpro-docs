@@ -10,6 +10,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Start layout XML for mobile editions of Windows 10 (reference)

@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
 

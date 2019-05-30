@@ -9,6 +9,8 @@ author: dulcemontemayor
 ms.localizationpriority: high
 ms.author: dolmont
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # How Windows Hello for Business works

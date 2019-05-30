@@ -12,6 +12,8 @@ ROBOTS: noindex,nofollow
 author: levinec
 ms.author: ellevin
 ms.date: 03/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Educator Trial in a Box Guide

@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/08/2017
+ms.reviewer: 
 ---
 # Hybrid Azure AD joined Certificate Trust Deployment
 

@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 12/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # HotSpot (Windows Configuration Designer reference)

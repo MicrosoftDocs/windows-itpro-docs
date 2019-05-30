@@ -8,6 +8,8 @@ ms.localizationpriority: medium
 ms.author: dolmont
 author: dulcemontemayor
 ms.date: 10/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
  
 # What is Microsoft Baseline Security Analyzer and its uses?

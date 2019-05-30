@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # SharedPC (Windows Configuration Designer reference)

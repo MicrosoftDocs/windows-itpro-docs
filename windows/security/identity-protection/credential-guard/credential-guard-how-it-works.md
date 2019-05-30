@@ -13,6 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
 # How Windows Defender Credential Guard works

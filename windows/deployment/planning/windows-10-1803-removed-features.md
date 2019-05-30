@@ -8,6 +8,8 @@ ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
 ms.date: 08/16/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10, version 1803

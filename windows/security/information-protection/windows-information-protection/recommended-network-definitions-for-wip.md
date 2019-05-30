@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/25/2019
+ms.reviewer: 
 ---
 
 # Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)

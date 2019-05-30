@@ -11,6 +11,8 @@ ms.pagetype: edu
 author: levinec
 ms.author: ellevin
 ms.date: 07/10/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use School Data Sync to import student data

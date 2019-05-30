@@ -9,6 +9,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/22/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Apply a provisioning package

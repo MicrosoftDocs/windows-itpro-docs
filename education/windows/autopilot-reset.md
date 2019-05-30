@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
 ms.date: 06/27/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Reset devices with Autopilot Reset 
