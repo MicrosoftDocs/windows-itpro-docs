@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - DeviceInstallation
 description: Policy CSP - DeviceInstallation
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ---
 
 # Policy CSP - DeviceInstallation

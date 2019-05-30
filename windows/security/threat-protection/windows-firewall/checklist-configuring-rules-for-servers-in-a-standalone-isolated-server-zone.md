@@ -2,12 +2,14 @@
 title: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone (Windows 10)
 description: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone
 ms.assetid: ccc09d06-ef75-43b0-9c77-db06f2940955
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

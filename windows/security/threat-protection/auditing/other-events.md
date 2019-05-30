@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
 ---
 

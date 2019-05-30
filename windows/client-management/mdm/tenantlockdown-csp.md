@@ -1,11 +1,11 @@
 ---
 title: TenantLockdown CSP
 description: 
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 08/13/2018
 ---
 

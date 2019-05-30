@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: levinec
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

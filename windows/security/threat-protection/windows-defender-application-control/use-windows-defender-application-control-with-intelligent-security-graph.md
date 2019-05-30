@@ -4,7 +4,7 @@ description: Automatically authorize applications that Microsoft’s ISG recogni
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 06/14/2018
 ---
 

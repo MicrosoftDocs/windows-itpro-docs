@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 09/07/2018
 ---
 

@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: levinec
+author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
