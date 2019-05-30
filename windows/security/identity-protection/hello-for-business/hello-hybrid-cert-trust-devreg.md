@@ -374,7 +374,6 @@ The following script helps you with the creation of the issuance transform rules
         Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "DJ"
     );'
-    
     $rule2 = '@RuleName = "Issue object GUID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
