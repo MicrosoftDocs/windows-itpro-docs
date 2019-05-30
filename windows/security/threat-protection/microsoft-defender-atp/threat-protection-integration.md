@@ -41,8 +41,8 @@ Microsoft Defender ATP provides a comprehensive server protection solution, incl
 ## Azure Information Protection
 Keep sensitive data secure while enabling productivity in the workplace through data data discovery and data protection.
 
-## Conditional access
-Microsoft Defender ATP's dynamic machine risk score is integrated into the conditional access evaluation, ensuring that only secure devices have access to resources. 
+## Conditional Access
+Microsoft Defender ATP's dynamic machine risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
 
 
 ## Microsoft Cloud App Security
@@ -57,7 +57,7 @@ The Skype for Business integration provides s a way for analysts to communicate 
 
 
 ## Related topic
-- [Protect users, data, and devices with conditional access](conditional-access.md)
+- [Protect users, data, and devices with Conditional Access](conditional-access.md)
 
 
 

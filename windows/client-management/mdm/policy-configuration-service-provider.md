@@ -3002,6 +3002,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ServiceControlManager policies
+<dl>
+  <dd>
+    <a href="./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" id="servicecontrolmanager-svchostprocessmitigation">ServiceControlManager/SvchostProcessMitigation</a>
+  </dd>
+</dl>
+
 ### Settings policies
 
 <dl>
@@ -4221,6 +4228,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses)
 -   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4965,6 +4973,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Search/PreventIndexingLowDiskSpaceMB](./policy-csp-search.md#search-preventindexinglowdiskspacemb)
 -   [Search/PreventRemoteQueries](./policy-csp-search.md#search-preventremotequeries)
 -   [Security/ClearTPMIfNotReady](./policy-csp-security.md#security-cleartpmifnotready)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Settings/AllowOnlineTips](./policy-csp-settings.md#settings-allowonlinetips)
 -   [Settings/ConfigureTaskbarCalendar](./policy-csp-settings.md#settings-configuretaskbarcalendar)
 -   [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist)
