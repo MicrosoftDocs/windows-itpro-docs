@@ -29,7 +29,7 @@ Go to the [VIA program page](virus-information-alliance-criteria.md) for more in
 
 MVI is open to organizations who build and own a Real Time Protection (RTP) antimalware product of their own design, or one developed using a third-party antivirus SDK.
 
-Members get access to Microsoft client APIs for the Windows Defender Security Center, IOAV, AMSI, and Cloud Files, along with health data and other telemetry to help their customers stay protected. Antimalware products are submitted to Microsoft for performance testing on a regular basis.
+Members get access to Microsoft client APIs for the Microsoft Defender Security Center, IOAV, AMSI, and Cloud Files, along with health data and other telemetry to help their customers stay protected. Antimalware products are submitted to Microsoft for performance testing on a regular basis.
 
 Go to the [MVI program page](virus-initiative-criteria.md) for more information.
 
