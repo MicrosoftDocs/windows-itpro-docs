@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 # How to make a connection group ignore the package version

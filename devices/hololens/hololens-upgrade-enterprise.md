@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/09/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Unlock Windows Holographic for Business features

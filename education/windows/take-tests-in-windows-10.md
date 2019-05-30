@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Take tests in Windows 10

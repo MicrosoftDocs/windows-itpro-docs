@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 11/28/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Take a Test app technical reference 

@@ -7,6 +7,8 @@ ms.pagetype: surface, devices
 ms.sitesec: library
 author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ---

@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 03/20/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # System SKU reference

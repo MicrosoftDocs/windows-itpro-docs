@@ -5,6 +5,8 @@ ms.prod: w10
 ms.author: dansimp
 author: dansimp
 ms.date: 09/28/2017
+ms.reviewer: 
+manager: dansimp
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.localizationpriority: medium

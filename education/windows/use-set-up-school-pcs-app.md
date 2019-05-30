@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use the Set up School PCs app  

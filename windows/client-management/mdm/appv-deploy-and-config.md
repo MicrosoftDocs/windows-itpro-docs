@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy and configure App-V apps using MDM

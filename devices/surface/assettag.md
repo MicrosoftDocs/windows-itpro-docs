@@ -8,6 +8,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Asset Tag Tool

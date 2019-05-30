@@ -7,6 +7,8 @@ ms.sitesec: library
 ms.author: tracyp
 author: msfttracyp
 ms.date: 05/25/2018
+ms.reviewer: 
+manager: dansimp
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 

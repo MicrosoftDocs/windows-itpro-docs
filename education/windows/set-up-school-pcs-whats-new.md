@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 01/11/2019 
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # What's new in Set up School PCs

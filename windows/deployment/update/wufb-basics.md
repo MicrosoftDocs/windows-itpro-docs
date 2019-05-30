@@ -8,6 +8,8 @@ author: lomayor
 ms.localizationpriority: medium
 ms.author: lomayor
 ms.date: 06/20/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # Configure the Basic group policy for Windows Update for Business

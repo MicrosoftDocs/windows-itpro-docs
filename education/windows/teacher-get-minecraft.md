@@ -11,6 +11,8 @@ searchScope:
   - Store
 ms.author: macapara
 ms.date: 01/05/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 

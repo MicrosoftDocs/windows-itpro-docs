@@ -8,6 +8,9 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, sccm
 ms.localizationpriority: medium
 ms.date: 10/11/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 author: dansimp
 ms.topic: article
 ---

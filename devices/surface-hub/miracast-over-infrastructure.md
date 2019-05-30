@@ -7,6 +7,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/03/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 

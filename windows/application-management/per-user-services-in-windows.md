@@ -8,6 +8,8 @@ ms.pagetype: mobile
 ms.author: tracyp
 author: msfttracyp
 ms.date: 09/14/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Per-user services in Windows 10 and Windows Server 

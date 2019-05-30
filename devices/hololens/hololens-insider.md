@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Insider preview for Microsoft HoloLens

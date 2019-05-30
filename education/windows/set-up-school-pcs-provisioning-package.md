@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 10/17/2018  
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # What's in my provisioning package?

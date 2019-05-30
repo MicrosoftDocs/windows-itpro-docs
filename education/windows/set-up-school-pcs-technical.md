@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 07/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 What is Set up School PCs?

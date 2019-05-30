@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Create and apply an App-V project template to a sequenced App-V package

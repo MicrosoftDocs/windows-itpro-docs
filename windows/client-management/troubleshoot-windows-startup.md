@@ -8,6 +8,8 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Advanced troubleshooting for Windows start-up issues

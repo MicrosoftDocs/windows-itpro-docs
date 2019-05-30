@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 01/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Wake On LAN for Surface devices

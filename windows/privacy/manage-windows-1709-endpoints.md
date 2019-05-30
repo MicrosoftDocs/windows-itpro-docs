@@ -13,6 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Manage connection endpoints for Windows 10, version 1709
 

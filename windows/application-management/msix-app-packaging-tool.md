@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 ms.author: tracyp
 ms.topic: article
 ms.date: 12/03/2018
+ms.reviewer: 
+manager: dansimp
+author: msfttracyp
 ---
 
 # Repackage existing win32 applications to the MSIX format

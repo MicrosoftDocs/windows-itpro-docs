@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 06/04/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft HoloLens in the enterprise: requirements and FAQ

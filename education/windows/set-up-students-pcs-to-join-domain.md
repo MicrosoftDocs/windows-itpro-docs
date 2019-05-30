@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up student PCs to join domain

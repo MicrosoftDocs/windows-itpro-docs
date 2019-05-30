@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices

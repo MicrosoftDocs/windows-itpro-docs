@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/21/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 #Deploy Surface app with Microsoft Store for Business and Education

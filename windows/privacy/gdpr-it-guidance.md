@@ -14,6 +14,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/11/2018
+ms.reviewer: 
 ---
 # Windows and the GDPR: Information for IT Administrators and Decision Makers
 

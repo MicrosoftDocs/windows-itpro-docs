@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.date: 05/02/2019
+ms.reviewer: 
+manager: dansimp
 ---
 # BitLocker CSP
 

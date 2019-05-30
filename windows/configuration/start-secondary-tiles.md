@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 06/27/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Add image for secondary Microsoft Edge tiles 

@@ -8,6 +8,8 @@ ms.pagetype: mobile
 ms.author: tracyp
 author: msfttracyp
 ms.date: 07/20/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Changes to Service Host grouping in Windows 10

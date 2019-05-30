@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit

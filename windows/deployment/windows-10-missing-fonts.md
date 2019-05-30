@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/31/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # How to install fonts that are missing after upgrading to Windows 10

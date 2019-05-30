@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 # Available Mobile Device Management (MDM) settings for App-V

@@ -9,6 +9,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 1/15/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Brightness Control

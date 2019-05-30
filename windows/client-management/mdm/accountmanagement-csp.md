@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # AccountManagement CSP 

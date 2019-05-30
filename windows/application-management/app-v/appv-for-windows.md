@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Application Virtualization (App-V) for Windows 10 overview

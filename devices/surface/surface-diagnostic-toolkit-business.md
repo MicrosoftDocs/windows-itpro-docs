@@ -8,6 +8,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 11/15/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Diagnostic Toolkit for Business

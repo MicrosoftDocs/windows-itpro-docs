@@ -8,6 +8,8 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---

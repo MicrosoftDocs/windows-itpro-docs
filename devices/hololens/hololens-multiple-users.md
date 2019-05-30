@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Share HoloLens with multiple people

@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 #  Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit

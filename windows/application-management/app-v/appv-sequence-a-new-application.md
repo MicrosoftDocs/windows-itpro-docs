@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)

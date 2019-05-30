@@ -10,6 +10,8 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin
 ms.date: 10/31/2018
+ms.reviewer: 
+manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

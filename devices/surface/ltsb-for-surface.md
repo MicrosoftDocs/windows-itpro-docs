@@ -9,6 +9,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/25/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Long-Term Servicing Branch (LTSB) for Surface devices

@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # How HoloLens stores data for spaces

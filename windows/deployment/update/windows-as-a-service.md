@@ -7,6 +7,8 @@ ms.manager: elizapo
 author: lomayor
 ms.author: lomayor
 ms.date: 01/24/2019
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---

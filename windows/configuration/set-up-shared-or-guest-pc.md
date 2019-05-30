@@ -10,6 +10,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up a shared or guest PC with Windows 10

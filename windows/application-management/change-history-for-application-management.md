@@ -11,6 +11,8 @@ author: msfttracyp
 ms.author: tracyp
 ms.topic: article
 ms.date: 10/24/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Application management in Windows 10

@@ -14,6 +14,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/17/2018
+ms.reviewer: 
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview

@@ -9,6 +9,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable encryption for HoloLens

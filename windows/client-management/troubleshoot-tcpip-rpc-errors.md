@@ -8,6 +8,8 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Troubleshoot Remote Procedure Call (RPC) errors

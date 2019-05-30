@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 01/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Unenroll Surface devices from SEMM

@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services

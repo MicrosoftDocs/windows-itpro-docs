@@ -11,6 +11,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 #Manage Surface UEFI settings

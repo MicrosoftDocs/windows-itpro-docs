@@ -9,6 +9,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface firmware and driver updates

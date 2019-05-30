@@ -8,6 +8,8 @@ ms.pagetype: mobile
 ms.author: tracyp
 author: msfttracyp
 ms.date: 07/21/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # Deploy application upgrades on Windows 10 Mobile

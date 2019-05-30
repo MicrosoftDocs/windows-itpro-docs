@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 author: mjcaparas
 ms.author: macapara
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Provision student PCs with apps

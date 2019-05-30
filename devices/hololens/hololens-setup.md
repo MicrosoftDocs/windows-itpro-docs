@@ -8,6 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up HoloLens

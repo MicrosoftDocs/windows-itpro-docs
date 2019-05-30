@@ -8,6 +8,8 @@ author: lomayor
 ms.localizationpriority: medium
 ms.author: lomayor
 ms.date: 06/21/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # Managing drivers, dual-managed environments, and Delivery Optimization with group policies

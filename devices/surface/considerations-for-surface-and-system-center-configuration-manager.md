@@ -10,6 +10,8 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Considerations for Surface and System Center Configuration Manager
