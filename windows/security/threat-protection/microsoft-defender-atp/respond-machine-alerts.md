@@ -57,13 +57,13 @@ Other actions are enabled if there is an investigation happening on that machine
 
 Add or manage tags to create a logical group affiliation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
 
-For more information on machine tagging, see [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md).
+For more information on machine tagging, see [Create and manage machine tags](machine-tags.md).
 
 ## Initiate Automated Investigation
 
 You can start a new general purpose automated investigation on the machine if needed. While an investigation is running, any other alert generated from the machine will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
 
-For more information on automated investigations, see [Overview of Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
+For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
 ## Initiate Live Response Session
 
@@ -169,7 +169,7 @@ Once you have selected **Isolate machine** on the machine page, type a comment a
 ![Image of isolate machine](images/isolate-machine.png)
 
 >[!NOTE]
->The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
+>The machine will remain connected to the Microsoft Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
 **Notification on machine user**:</br>
 When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:

@@ -73,9 +73,9 @@ Filter by the following machine health states:
 
 ### Security state
 
-Filter by machines that are well configured or require attention based on the Windows Defender security controls that are enabled in your organization. Applies to active Windows 10 machines only.
+Filter by machines that are well configured or require attention based on the security controls that are enabled in your organization. Applies to active Windows 10 machines only.
 
-- **Well configured** - Machines have the Windows Defender security controls well configured.
+- **Well configured** - Machines have the security controls well configured.
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
 For more information, see [View the Secure Score dashboard](secure-score-dashboard.md).
@@ -96,4 +96,4 @@ Filter the list based on the grouping and tagging that you've added to individua
 
 ## Related topics
 
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
