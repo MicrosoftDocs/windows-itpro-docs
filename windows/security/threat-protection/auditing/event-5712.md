@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5712(S): A Remote Procedure Call (RPC) was attempted.

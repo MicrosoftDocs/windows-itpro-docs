@@ -9,6 +9,9 @@ ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: mjcaparas
 ---
 
 # Set up and use Windows Defender SmartScreen on individual devices

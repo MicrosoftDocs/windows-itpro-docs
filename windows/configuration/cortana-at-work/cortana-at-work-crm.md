@@ -8,6 +8,8 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization

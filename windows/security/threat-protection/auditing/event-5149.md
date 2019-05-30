@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 05/29/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5149(F): The DoS attack has subsided and normal processing is being resumed.

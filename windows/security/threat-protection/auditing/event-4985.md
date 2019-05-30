@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4985(S): The state of a transaction has changed.

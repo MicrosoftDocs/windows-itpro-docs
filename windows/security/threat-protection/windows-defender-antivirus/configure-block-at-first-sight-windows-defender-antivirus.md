@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable block at first sight

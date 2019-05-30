@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Prevent or allow users to locally modify Windows Defender Antivirus policy settings

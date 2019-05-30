@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 06/13/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Deploy Managed Installer for Windows Defender Application Control

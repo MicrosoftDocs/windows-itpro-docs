@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4774(S, F): An account was mapped for logon.

@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4953(F): Windows Firewall ignored a rule because it could not be parsed.

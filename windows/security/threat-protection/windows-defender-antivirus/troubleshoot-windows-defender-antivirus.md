@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 09/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus

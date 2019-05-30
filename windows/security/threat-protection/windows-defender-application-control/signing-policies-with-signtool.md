@@ -8,6 +8,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 02/21/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Signing Windows Defender Application Control policies with SignTool.exe 

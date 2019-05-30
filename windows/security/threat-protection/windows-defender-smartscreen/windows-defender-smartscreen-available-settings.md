@@ -9,6 +9,9 @@ ms.pagetype: security
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 1/26/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**

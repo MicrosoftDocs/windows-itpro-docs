@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 11/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # System requirements for Windows Defender Application Guard

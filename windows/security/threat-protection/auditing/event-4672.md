@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 12/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4672(S): Special privileges assigned to new logon.

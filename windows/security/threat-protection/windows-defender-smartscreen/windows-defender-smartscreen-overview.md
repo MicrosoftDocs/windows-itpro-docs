@@ -9,6 +9,9 @@ ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: mjcaparas
 ---
 
 # Windows Defender SmartScreen

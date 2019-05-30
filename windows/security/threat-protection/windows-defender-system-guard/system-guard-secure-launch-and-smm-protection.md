@@ -9,6 +9,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 03/01/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # System Guard Secure Launch and SMM protection

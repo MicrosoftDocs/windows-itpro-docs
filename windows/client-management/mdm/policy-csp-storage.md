@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 01/14/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Storage

@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 04/09/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Microsoft recommended block rules

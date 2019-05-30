@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 09/17/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

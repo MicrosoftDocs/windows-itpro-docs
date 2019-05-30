@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 03/15/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Application Guard testing scenarios

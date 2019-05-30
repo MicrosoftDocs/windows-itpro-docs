@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 07/19/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 #  Win32CompatibilityAppraiser CSP 

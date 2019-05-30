@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate exclusions based on file extension and folder location

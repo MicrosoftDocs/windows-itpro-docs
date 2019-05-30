@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/08/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate Windows Defender Antivirus network connections

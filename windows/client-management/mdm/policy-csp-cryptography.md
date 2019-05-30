@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 05/14/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Cryptography

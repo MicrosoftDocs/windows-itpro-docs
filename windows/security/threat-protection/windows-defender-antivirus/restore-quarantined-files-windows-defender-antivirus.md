@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 11/16/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Restore quarantined files in Windows Defender AV

@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate exclusions for Windows Defender Antivirus scans

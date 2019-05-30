@@ -8,6 +8,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 04/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Deploy Windows Defender Application Control policy rules and file rules

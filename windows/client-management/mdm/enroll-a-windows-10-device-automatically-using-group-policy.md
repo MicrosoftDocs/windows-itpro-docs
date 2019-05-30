@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 10/04/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy

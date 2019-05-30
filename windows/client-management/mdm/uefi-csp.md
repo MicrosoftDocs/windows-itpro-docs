@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # UEFI CSP

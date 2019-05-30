@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 02/19/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Prepare to install Windows Defender Application Guard

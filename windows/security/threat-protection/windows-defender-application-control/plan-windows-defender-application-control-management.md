@@ -8,6 +8,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 02/21/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Plan for Windows Defender Application Control policy management 

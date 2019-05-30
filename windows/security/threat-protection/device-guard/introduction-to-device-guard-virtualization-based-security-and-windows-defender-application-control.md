@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 09/07/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity

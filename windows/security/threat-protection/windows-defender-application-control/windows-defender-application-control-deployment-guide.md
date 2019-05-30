@@ -7,6 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 05/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Planning and getting started on the Windows Defender Application Control deployment process

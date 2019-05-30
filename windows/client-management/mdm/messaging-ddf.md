@@ -7,6 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: v-madhi
 ms.date: 12/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Messaging DDF file

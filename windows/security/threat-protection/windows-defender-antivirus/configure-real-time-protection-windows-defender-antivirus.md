@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable and configure antivirus always-on protection and monitoring

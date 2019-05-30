@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/17/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Windows Defender Application Guard policy settings
