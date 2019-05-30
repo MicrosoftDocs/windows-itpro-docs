@@ -66,7 +66,7 @@ Machines with similar tags can be handy when you need to apply contextual action
 
 Use the following registry key entry to add a tag on a machine:
 
-- Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+- Registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
 - Registry key value (string): Group
 
 >[!NOTE]

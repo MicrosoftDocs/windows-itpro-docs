@@ -145,7 +145,7 @@ You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline
 
 ### Security recommendations
 
-**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it.
+**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it.
 
 ![Image of security recommendations tab](images/security-recommendations-machine.png)
 

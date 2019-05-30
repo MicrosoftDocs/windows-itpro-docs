@@ -33,7 +33,7 @@ In Microsoft Defender ATP, you can create machine groups and use them to:
 - Assign specific remediation levels to apply during automated investigations
 - In an investigation, filter the **Machines list** to just specific machine groups by using the **Group** filter.
 
-You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or see information by assigning the machine group(s) to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or see information by assigning the machine group(s) to a user group. For more information, see [Manage portal access using role-based access control](rbac.md).
 
 >[!TIP]
 > For a comprehensive look into RBAC application, read: [Is your SOC running flat with RBAC](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Is-your-SOC-running-flat-with-limited-RBAC/ba-p/320015).
@@ -56,7 +56,7 @@ As part of the process of creating a machine group, you'll:
 3. Enter the group name and automation settings and specify the matching rule that determines which machines belong to the group. For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations.md#understand-the-automated-investigation-flow).
 
     >[!TIP]
-    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md).
+    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage machine tags](machine-tags.md).
 
 4. Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **User access** tab.
 
