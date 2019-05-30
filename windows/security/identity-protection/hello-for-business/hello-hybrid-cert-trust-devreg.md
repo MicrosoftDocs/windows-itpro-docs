@@ -44,7 +44,6 @@ Use this three-phased approach for configuring device registration.
 >
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
-
 >[!IMPORTANT]
 > To use hybrid identity with Azure Active Directory and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
 
