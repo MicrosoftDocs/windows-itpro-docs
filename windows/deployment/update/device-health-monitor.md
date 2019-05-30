@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-analytics
 ms.topic: article
 ---

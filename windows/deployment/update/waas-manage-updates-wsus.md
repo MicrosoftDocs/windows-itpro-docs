@@ -4,9 +4,9 @@ description: WSUS allows companies to defer, selectively approve, choose when de
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.date: 10/16/2017
 ms.topic: article
 ---

@@ -1,8 +1,11 @@
 ---
 title: How to Use the Administration and Monitoring Website
 description: How to Use the Administration and Monitoring Website
-author: jamiejdt
+author: dansimp
 ms.assetid: bb96a4e8-d4f4-4e6f-b7db-82d96998bfa6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

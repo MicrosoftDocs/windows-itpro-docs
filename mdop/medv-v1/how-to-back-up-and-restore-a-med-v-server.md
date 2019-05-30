@@ -1,8 +1,11 @@
 ---
 title: How to Back Up and Restore a MED-V Server
 description: How to Back Up and Restore a MED-V Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 8d05e3a4-279b-4ce6-a319-8a09e7a30c60
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

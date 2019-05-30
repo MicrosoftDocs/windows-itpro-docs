@@ -4,8 +4,8 @@ description: Get access to training and demonstrations for Microsoft Edge.
 ms.prod: edge
 ms.topic: article
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: msdmaguire
+ms.author: dmaguire
 ms.localizationpriority: high
 ---
 

@@ -2,6 +2,9 @@
 title: Deployment considerations for Windows To Go (Windows 10)
 description: Deployment considerations for Windows To Go
 ms.assetid: dcfc5d96-b96b-44cd-ab65-416b5611c65e
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, mobile, device, USB, boot, image, workspace, driver
 ms.prod: w10
 ms.mktglfcycl: plan

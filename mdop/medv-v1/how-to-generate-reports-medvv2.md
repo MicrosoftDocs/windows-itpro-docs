@@ -1,8 +1,11 @@
 ---
 title: How to Generate Reports
 description: How to Generate Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: 9f8ba28e-1993-4c11-a28a-493718051e5d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

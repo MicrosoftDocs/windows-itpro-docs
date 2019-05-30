@@ -4,9 +4,9 @@ description: You can use Group Policy or your mobile device management (MDM) ser
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.topic: article
 ---
 

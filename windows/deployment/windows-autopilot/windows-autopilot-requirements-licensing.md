@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greg-lindsay
+author: dulcemontemayor
+ms.author: dolmont
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

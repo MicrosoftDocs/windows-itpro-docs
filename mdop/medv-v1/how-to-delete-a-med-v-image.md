@@ -1,8 +1,11 @@
 ---
 title: How to Delete a MED-V Image
 description: How to Delete a MED-V Image
-author: jamiejdt
+author: dansimp
 ms.assetid: 974a493a-7627-4c64-9294-89441f127916
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -5,8 +5,8 @@ keywords: MBSA, security, removal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: astoica
-author: andreiztm
+ms.author: dolmont
+author: dulcemontemayor
 ms.date: 10/05/2018
 ---
  

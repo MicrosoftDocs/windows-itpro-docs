@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

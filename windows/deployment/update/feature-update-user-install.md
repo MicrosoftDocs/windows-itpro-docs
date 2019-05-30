@@ -4,9 +4,9 @@ description: Learn how to manually deploy feature updates
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: mcureton
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: mikecure
+ms.author: greglin
 ms.date: 07/10/2018
 ms.collection: M365-modern-desktop
 ms.topic: article

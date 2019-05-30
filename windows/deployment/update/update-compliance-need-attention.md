@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: Jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-analytics
 ms.topic: article
 ---

@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: elizapo
-author: lizap
+ms.author: greglin
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 03/13/2019
 ms.topic: article
