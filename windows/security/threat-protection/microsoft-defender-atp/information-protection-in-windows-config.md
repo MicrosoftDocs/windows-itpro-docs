@@ -1,5 +1,6 @@
 ---
 title: Configure information protection in Windows 
+ms.reviewer: 
 description: Learn how to expand the coverage of WIP to protect files based on their label, regardless of their origin.
 keywords: information, protection, data, loss, prevention, wip, policy, scc, compliance, labels, dlp
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

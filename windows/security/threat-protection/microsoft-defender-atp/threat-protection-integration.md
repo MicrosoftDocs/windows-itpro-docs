@@ -1,5 +1,6 @@
 ---
 title: Microsoft Defender ATP in Microsoft Threat Protection
+ms.reviewer: 
 description: Learn about the capabilities within the Microsoft Threat Protection 
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
@@ -8,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
