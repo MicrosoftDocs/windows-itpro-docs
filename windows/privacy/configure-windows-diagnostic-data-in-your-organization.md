@@ -129,6 +129,18 @@ The Upgrade Readiness workflow steps you through the discovery and rationalizati
 
 ## How Microsoft handles diagnostic data
 
+The diagnostic data is categorized into four levels:
+
+-   [**Security**](#security-level). Information that’s required to help keep Windows and Windows Server secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+
+-   [**Basic**](#basic-level). Basic device info, including: quality-related data, app compatibility, and data from the **Security** level.
+
+-   [**Enhanced**](#enhanced-level). Additional insights, including: how Windows, Windows Server, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
+
+-   [**Full**](#full-level). Includes information about the websites you browse, how you use apps and features, plus additional information about device health, device activity (sometimes referred to as usage), and enhanced error reporting. At Full, Microsoft also collects the memory state of your device when a system or app crash occurs, plus data from the **Security**, **Basic**, and **Enhanced** levels.
+
+Diagnostic data levels are cumulative, meaning each subsequent level includes data collected through lower levels. For more information see the [Diagnostic data levels](#diagnostic-data-levels) section.
+
 ### Data collection
 
 Windows 10 and Windows Server includes the Connected User Experiences and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores diagnostic data events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
@@ -145,7 +157,6 @@ Info collected at the Enhanced and Full levels of diagnostic data is typically g
 All diagnostic data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
 The data transmitted at the Basic and Enhanced data diagnostic levels is quite small; typically less than 1 MB per device per day,  but occasionally up to 2 MB per device per day).
-
 
 ### Endpoints
 
@@ -200,18 +211,18 @@ Use the steps in this article to set and/or adjust the diagnostic data settings 
 
 The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server is **Enhanced**.
 
-### Configure the operating system diagnostic data level
+### Configure the diagnostic data level
 
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
+You can configure your device's diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
 
 Use the appropriate value in the table below when you configure the management policy.
 
-| Level    | Data gathered | Value |
-| - | - | -  |
-| Security | Security data only. | **0** |
-| Basic | Security data, and basic system and quality data. | **1** |
-| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | **2** |
-| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
+| Level | Value |
+| - | - |
+| Security | **0** |
+| Basic | **1** |
+| Enhanced | **2** |
+| Full | **3** |
 
    > [!NOTE]
    > When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
@@ -260,21 +271,8 @@ There are a few more settings that you can turn off that may send diagnostic dat
     > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
 
 ## Diagnostic data levels
-This article explains the different diagnostic data levels in Windows 10, Windows Server. These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
-The diagnostic data is categorized into four levels:
-
--   **Security**. Information that’s required to help keep Windows and Windows Server secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
-
--   **Basic**. Basic device info, including: quality-related data, app compatibility, and data from the **Security** level.
-
--   **Enhanced**. Additional insights, including: how Windows, Windows Server, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
-
--   **Full**. All data necessary to identify and help to fix problems, plus data from the **Security**, **Basic**, and **Enhanced** levels.
-
-The levels are cumulative and are illustrated in the following diagram. Also, these levels apply to all editions of Windows Server 2016.
-
-![breakdown of diagnostic data levels and types of administrative controls](images/priv-telemetry-levels.png)
+These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server.
 
 ### Security level
 
@@ -401,7 +399,7 @@ In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data t
 
 ### Full level
 
-The **Full** level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the **Basic**, **Enhanced**, and **Security** levels. This is the default level for Windows 10 Pro.
+The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the Basic, Enhanced, and Security levels. This is the default level for Windows 10 Pro.
 
 Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
 
@@ -414,7 +412,6 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 -   Ability to get registry keys.
 
 -   All crash dump types, including heap dumps and full dumps.
-
 
 ## Additional resources
 
@@ -445,5 +442,3 @@ TechNet
 Web Pages
 
 - [Privacy at Microsoft](https://privacy.microsoft.com)
-
-
