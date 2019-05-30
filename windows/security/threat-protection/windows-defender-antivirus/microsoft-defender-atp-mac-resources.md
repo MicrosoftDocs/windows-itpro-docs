@@ -32,12 +32,12 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 1. Increase logging level:
 
-```bash
+   ```bash
    mavel-mojave:~ testuser$ mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
-```
+   ```
 
 2. Reproduce the problem
 
@@ -76,35 +76,6 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 ### From the command line
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
-
-### With a script
-
-Create a script in **Settings > Computer Management > Scripts**.
-
-![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
-
-For example, this script removes Microsoft Defender ATP from the /Applications directory:
-
-```bash
-   echo "Is WDAV installed?"
-   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-   echo "Uninstalling WDAV..."
-   rm -rf '/Applications/Microsoft Defender ATP.app'
-
-   echo "Is WDAV still installed?"
-   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
-
-   echo "Done!"
-```
-
-### With a JAMF policy
-
-If you are running JAMF, your policy should contain a single script:
-
-![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
-
-Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
 
 ## Configuring from the command line
 

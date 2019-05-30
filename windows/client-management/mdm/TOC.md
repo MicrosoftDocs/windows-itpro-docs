@@ -245,6 +245,7 @@
 #### [RestrictedGroups](policy-csp-restrictedgroups.md)
 #### [Search](policy-csp-search.md)
 #### [Security](policy-csp-security.md)
+#### [ServiceControlManager](policy-csp-servicecontrolmanager.md)
 #### [Settings](policy-csp-settings.md)
 #### [SmartScreen](policy-csp-smartscreen.md)
 #### [Speech](policy-csp-speech.md)
