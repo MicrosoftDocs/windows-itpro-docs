@@ -102,10 +102,9 @@ Windows diagnostic data also helps Microsoft better understand how customers use
 
 **These examples show how the use of diagnostic data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 
-
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use. The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 #### Upgrade Readiness
 
@@ -137,7 +136,7 @@ The diagnostic data is categorized into four levels:
 
 -   [**Enhanced**](#enhanced-level). Additional insights, including: how Windows, Windows Server, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
 
--   [**Full**](#full-level). Includes information about the websites you browse, how you use apps and features, plus additional information about device health, device activity (sometimes referred to as usage), and enhanced error reporting. At Full, Microsoft also collects the memory state of your device when a system or app crash occurs, plus data from the **Security**, **Basic**, and **Enhanced** levels.
+-   [**Full**](#full-level). Includes information about the websites you browse, how you use apps and features, plus additional information about device health, device activity (sometimes referred to as usage), and enhanced error reporting. At Full, Microsoft also collects the memory state of your device when a system or app crash occurs. It includes data from the **Security**, **Basic**, and **Enhanced** levels.
 
 Diagnostic data levels are cumulative, meaning each subsequent level includes data collected through lower levels. For more information see the [Diagnostic data levels](#diagnostic-data-levels) section.
 
@@ -166,8 +165,9 @@ The following table defines the endpoints for Connected User Experiences and Tel
 
 Windows release | Endpoint
 --- | ---
-Windows 10, versions 1703 and 1709 | Diagnostics data: v10.vortex-win.data.microsoft.com/collect/v1</br></br>Functional: v20.vortex-win.data.microsoft.com/collect/v1</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com/collect/v1</br>settings-win.data.microsoft.com
-Windows 10, version 1607 | v10.vortex-win.data.microsoft.com</br></br>settings-win.data.microsoft.com
+Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| **Diagnostics data** - v10c.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
+Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data** - v10.events.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
+Windows 10, version 1709 or earlier | **Diagnostics data** - v10.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
 
 The following table defines the endpoints for other diagnostic data services:
 
@@ -182,6 +182,7 @@ The following table defines the endpoints for other diagnostic data services:
 | | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
+| Microsoft Defender Advanced Threat Protection |  https://wdcp.microsoft.com</br>https://wdcpalt.microsoft.com |
 
 ### Data use and access
 
@@ -369,6 +370,7 @@ The data gathered at this level includes:
 If the Connected User Experiences and Telemetry component detects a problem on Windows 10 that requires gathering more detailed instrumentation, the Connected User Experiences and Telemetry component at the **Enhanced** diagnostic data level will only gather data about the events associated with the specific issue.
 
 #### Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+
 Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
 
 In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
