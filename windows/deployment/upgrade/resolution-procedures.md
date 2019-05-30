@@ -536,7 +536,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <tr>
 <td>0x80244018</td>
 <td>Your machine is connected through a proxy server.</td>
-<td>Make sure Automatically Detect Settings is checked in internet options. (Control Panel - Internet Options - Connections - LAN Settings)
+<td>Make sure Automatically Detect Settings is selected in internet options. (Control Panel > Internet Options > Connections > LAN Settings).
 </td>
 </tr>
 <tr>
