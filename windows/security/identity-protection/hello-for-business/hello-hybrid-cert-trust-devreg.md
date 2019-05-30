@@ -403,7 +403,6 @@ The following script helps you with the creation of the issuance transform rules
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);'
-    
     $rule4 = ''
     if ($multipleVerifiedDomainNames -eq $true) {
     $rule4 = '@RuleName = "Issue account type with the value User when it is not a computer"
