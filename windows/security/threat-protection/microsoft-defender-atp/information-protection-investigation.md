@@ -1,5 +1,5 @@
 ---
-title: Use sensitivity labels to prioriize incident response
+title: Use sensitivity labels to prioritize incident response
 description: Learn how to use sensitivity labels to prioritize and investigate incidents
 keywords: information, protection, data, loss, prevention,labels, dlp, incident, investigate, investigation
 search.product: eADQiWindows 10XVcnh
@@ -24,10 +24,13 @@ ms.topic: article
 
 A typical advanced persistent threat lifecycle involves data exfiltration. In a security incident, it's important to have the ability to prioritize investigations where sensitive files may be jeopardy so that corporate data and information are protected.
 
-Microsoft Defender ATP helps to make the prioritization of security incidents much simplier with the use of sensitivity labels. Sensitivity labels quickly identify incidents that may involve machines with sensitive information such as confidential information. 
+Microsoft Defender ATP helps to make the prioritization of security incidents much simpler with the use of sensitivity labels. Sensitivity labels quickly identify incidents that may involve machines with sensitive information such as confidential information. 
 
 ## Investigate incidents that involve sensitive data
 Learn how to use data sensitivity labels to prioritize incident investigation.
+
+>[!NOTE]
+>Labels are detected for Windows 10, version 1809 or later.
 
 1. In Microsoft Defender Security Center, select **Incidents**. 
 

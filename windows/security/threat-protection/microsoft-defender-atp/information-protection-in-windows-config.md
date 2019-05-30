@@ -22,12 +22,12 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Learn how you can use Microsoft Defender ATP to expand the coverage of Microsoft Information Protection (WIP) to protect files based on their label, regardless of their origin.
+Learn how you can use Microsoft Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
 
 >[!TIP]
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
-If a file meets the criteria set in the policy settings is  and endpoint data loss prevention setting is also configured, WIP will be enabled for that file.
+If a file meets the criteria set in the policy settings and endpoint data loss prevention setting is also configured, WIP will be enabled for that file.
 
 
 
@@ -57,6 +57,15 @@ After completing these steps Microsoft Defender ATP will automatically identify 
 
 
 ## Configure auto labeling
+
+Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
+
+Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
+
+>[!NOTE]
+> Auto-labeling requires Windows 10, version 1903.
+
+
 1. In Office 365 Security & Compliance, go to **Classifications > Labels**.
 
 2. Create a new label or edit an existing one. 
