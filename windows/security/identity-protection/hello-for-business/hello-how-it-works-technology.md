@@ -229,7 +229,7 @@ The Windows Hello for Business on-premises deployment is for organizations that 
 Provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Allows your users to sign in to both on-premises and Office 365 resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Office 365. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
 ### Related topics
-[Federated Environment](#federated-environment), [Managed Environment](#managed-environment), [Password Hash Synchronization](#password-hash-synchronization)
+[Federated Environment](#federated-environment), [Managed Environment](#managed-environment), [Password Hash Synchronization](#password-hash-sync)
 
 
 ### More information
