@@ -373,7 +373,6 @@ The following script helps you with the creation of the issuance transform rules
         Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "DJ"
     );'
-    
     $rule2 = '@RuleName = "Issue object GUID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -391,7 +390,6 @@ The following script helps you with the creation of the issuance transform rules
         query = ";objectguid;{0}", 
         param = c2.Value
     );'
-    
     $rule3 = '@RuleName = "Issue objectSID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -404,7 +402,6 @@ The following script helps you with the creation of the issuance transform rules
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);'
-    
     $rule4 = ''
     if ($multipleVerifiedDomainNames -eq $true) {
     $rule4 = '@RuleName = "Issue account type with the value User when it is not a computer"
@@ -448,7 +445,6 @@ The following script helps you with the creation of the issuance transform rules
         Value = "http://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
     );'
     }
-    
     $rule5 = ''
     if ($immutableIDAlreadyIssuedforUsers -eq $true) {
     $rule5 = '@RuleName = "Issue ImmutableID for computers"
@@ -469,13 +465,9 @@ The following script helps you with the creation of the issuance transform rules
         param = c2.Value
     );'
     }
-    
     $existingRules = (Get-ADFSRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline).IssuanceTransformRules 
-    
     $updatedRules = $existingRules + $rule1 + $rule2 + $rule3 + $rule4 + $rule5
-    
     $crSet = New-ADFSClaimRuleSet -ClaimRule $updatedRules 
-    
     Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $crSet.ClaimRulesString 
 
 #### Remarks 
