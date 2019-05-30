@@ -34,7 +34,7 @@ The following OS versions are supported:
 - Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
 
 >[!NOTE]
->If the patches are not implemented, telemetry is sent to the default public geolocation. If public IPs are blocked then the data will not be sent back to Microsoft Defender ATP. Detection and hunting experience will not be available. If public IPs are allowed, then data will reach non-compliant data centers and will then be forwarded to appropriate data centers.
+>If patches are not implemented after the machine onboarding, some Microsoft Defender ATP telemetry might be sent to the Microsoft Defender ATP Commercial Cloud.
 
 The following OS versions are not supported:
 - Windows Server
