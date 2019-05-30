@@ -1,6 +1,6 @@
 ---
-title: Level 4 enterprise high security configuration
-description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 4 enterprise security configuration.
+title: Level 2 enterprise enhanced security configuration
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 2 enterprise security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,21 +11,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/05/2018
+ms.date: 05/29/2019
 ---
 
-# Level 4 Enterprise Enhanced Security configuration
+# Level 2 enterprise enhanced security configuration
 
 **Applies to**  
 
 -   Windows 10
 
-Level 4 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most enterprise organizations.
-A level 4 configuration should include all the configurations from level 5 and add the following security policies, controls, and organizational behaviors.
+Level 2 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most enterprise organizations.
+A level 2 configuration should include all the configurations from level 1 and add the following security policies, controls, and organizational behaviors.
 
 ## Hardware
 
-Devices targeting Level 4 should support all Level 5 features, and add the following hardware features:
+Devices targeting level 2 should support all level 1 features, and add the following hardware features:
 
 - [Virtualization and HVCI Enabled](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs)
 - [Drivers and Apps HVCI-Ready](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard)
@@ -34,14 +34,14 @@ Devices targeting Level 4 should support all Level 5 features, and add the follo
 
 ## Policies
 
-The policies enforced in level 4 include all of the policies recommended for level 5 and adds the
+The policies enforced in level 2 include all of the policies recommended for level 1 and adds the
 below policies to implement more controls and a more sophisticated security
-configuration than level 5. While they may have a slightly higher impact to
+configuration than level 1. While they may have a slightly higher impact to
 users or to applications, they enforce a level of security more commensurate
 with the risks facing users with access to sensitive information. Microsoft
 recommends using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for these security configurations and
 controls, with a moderate timeline that is anticipated to be slightly longer
-than the process in level 5.
+than the process in level 1.
 
 ### Security Template Policies
 
@@ -100,13 +100,13 @@ Microsoft recommends disabling the following services when their use is not requ
 
 ## Controls
 
-The controls enforced in level 4 implement more controls and a more sophisticated security
-configuration than level 5. While they may have a slightly higher impact to
+The controls enforced in level 2 implement more controls and a more sophisticated security
+configuration than level 1. While they may have a slightly higher impact to
 users or to applications, they enforce a level of security more commensurate
 with the risks facing users with access to sensitive information. Microsoft
 recommends using the Audit/Enforce methodology for controls with an Audit mode,
 and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do not, with a moderate timeline that
-is anticipated to be slightly longer than the process in level 5.
+is anticipated to be slightly longer than the process in level 1.
 
 | Feature Set                                                 | Feature                                               | Description    |
 |-------------------------------------------------------------|-------------------------------------------------------|----------------|
@@ -118,7 +118,7 @@ is anticipated to be slightly longer than the process in level 5.
 
 ## Behaviors
 
-The behaviors recommended in level 4 implement a more sophisticated security process. While they may require a more sophisticated organization, they enforce
+The behaviors recommended in level 2 implement a more sophisticated security process. While they may require a more sophisticated organization, they enforce
 a level of security more commensurate with the risks facing users with access to
 sensitive information.
 

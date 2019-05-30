@@ -1,5 +1,5 @@
 ---
-title: Level 3 enterprise VIP security configuration
+title: Level 3 enterprise high security configuration
 description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 3 enterprise VIP security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -11,28 +11,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/05/2018
+ms.date: 05/29/2019
 ---
 
-# Level 3 Enterprise High Security configuration
+# Level 3 enterprise high security configuration
 
 **Applies to**  
 
 -   Windows 10
 
 Level 3 is the security configuration recommended as a standard for organizations with large and sophisticated security organizations, or for specific users and groups who will be uniquely targeted by adversaries. Such organizations are typically targeted by well-funded and sophisticated adversaries, and as such merit the additional constraints and controls described here.
-A level 3 configuration should include all the configurations from level 5 and level 4 and add the following security policies, controls, and organizational behaviors.
+A level 3 configuration should include all the configurations from level 2 and level 1 and add the following security policies, controls, and organizational behaviors.
 
 ## Hardware
 
-Devices targeting Level 3 should support all Level 5 and Level 4 features, and add the following hardware features:
+Devices targeting Level 3 should support all Level 2 and Level 1 features, and add the following hardware features:
 
 - [System Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 - [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby)
 
 ## Policies
 
-The policies enforced in level 3 include all of the policies recommended for levels 5 and 4, and adds the below policies to
+The policies enforced in level 3 include all of the policies recommended for levels 2 and 1, and adds the below policies to
 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing
 a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using
 [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).

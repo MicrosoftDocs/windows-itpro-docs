@@ -1,6 +1,6 @@
 ---
-title: Level 5 enterprise security configuration
-description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 5 enterprise security configuration.
+title: Level 1 enterprise basic security configuration
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 1 enterprise security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,21 +11,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/05/2018
+ms.date: 05/29/2019
 ---
 
-# Level 5 Enterprise Basic Security configuration 
+# Level 1 Enterprise Basic Security configuration 
 
 **Applies to**  
 
 -   Windows 10
 
-Level 5 is the minimum security configuration for an enterprise device.
-Microsoft recommends the following configuration for level 5 devices.
+Level 1 is the minimum security configuration for an enterprise device.
+Microsoft recommends the following configuration for level 1 devices.
 
 ## Hardware
 
-Devices targeting Level 5 should support the following hardware features:
+Devices targeting Level 1 should support the following hardware features:
 
 - [Trusted Platform Module (TPM) 2.0](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm)
 - [Bitlocker Drive Encryption](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker)
@@ -34,7 +34,7 @@ Devices targeting Level 5 should support the following hardware features:
 
 ## Policies
 
-The policies in level 5 enforce a reasonable security level while minimizing the impact to users or to applications. 
+The policies in level 1 enforce a reasonable security level while minimizing the impact to users or to applications. 
 Microsoft recommends using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for these security configurations and controls, noting that the timeline can generally be short given the limited potential impact of the security controls.
 
 ### Security Template Policies
@@ -336,7 +336,7 @@ Microsoft recommends using [the rings methodology](https://docs.microsoft.com/wi
 
 ## Controls
 
-The controls enabled in level 5 enforce a reasonable security level while minimizing the impact to users and applications. 
+The controls enabled in level 1 enforce a reasonable security level while minimizing the impact to users and applications. 
 
 | Feature                           | Config                              | Description        |
 |-----------------------------------|-------------------------------------|--------------------|
@@ -350,7 +350,7 @@ The controls enabled in level 5 enforce a reasonable security level while minimi
 
 ## Behaviors
 
-The behaviors recommended in level 5 enforce a reasonable security level while minimizing the impact to users or to applications.
+The behaviors recommended in level 1 enforce a reasonable security level while minimizing the impact to users or to applications.
 
 | Feature | Config            | Description |
 |---------|-------------------|-------------|
