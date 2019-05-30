@@ -82,5 +82,5 @@ After creating roles, you'll need to create a machine group and provide access t
 
 
 ## Related topics
-- [User basic permissions to access the portal](basic-permissions.md)
-- [Create and manage machine groups](machine-groups.md)
+- [User basic permissions to access the portal](../microsoft-defender-atp/basic-permissions.md)
+- [Create and manage machine groups](../microsoft-defender-atp/machine-groups.md)

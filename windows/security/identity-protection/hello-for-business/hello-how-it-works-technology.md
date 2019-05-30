@@ -34,8 +34,8 @@ ms.date: 10/08/2018
 - [Key Trust](#key-trust)
 - [Managed Environment](#managed-environment)
 - [On-premises Deployment](#on-premises-deployment)
-- [Pass-through Authentication](#passthrough-authentication)
-- [Password Hash Synchronization](#password-hash-synchronization)
+- [Pass-through Authentication](#pass-through-authentication)
+- [Password Hash Synchronization](#password-hash-sync)
 - [Primary Refresh Token](#primary-refresh-token) 
 - [Storage Root Key](#storage-root-key)
 - [Trust Type](#trust-type)
@@ -212,9 +212,9 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 Managed environments are for non-federated environments where Azure Active Directory manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services. 
 
 ### Related topics
-[Federated Environment](#federated-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Synchronization](#password-hash-synchronization)
+[Federated Environment](#federated-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Synchronization](#password-hash-sync)
 
-[Return to Top](#Technology-and-Terms)
+[Return to Top](#technology-and-terms)
 ## On-premises Deployment 
 The Windows Hello for Business on-premises deployment is for organizations that exclusively have on-premises resources that are accessed using Active Directory identities.  On-premises deployments support domain joined devices.  The on-premises deployment model supports two authentication trust types, key trust and certificate trust.
 
@@ -235,7 +235,7 @@ Provides a simple password validation for Azure AD authentication services using
 ### More information
 - [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
 
-[Return to Top](#hello-how-it-works-technology.md)
+[Return to Top](hello-how-it-works-technology.md)
 ## Password Hash Sync
 The simplest way to enable authentication for on-premises directory objects in Azure AD. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Azure AD so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
@@ -253,7 +253,7 @@ The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a si
 
 The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
 
-[Return to Top](#Technology-and-Terms)
+[Return to Top](#technology-and-terms)
 ## Storage Root Key
 The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of 2048 bits length). The SRK has a major role and is used to protect TPM keys, so that these keys cannot be used without the TPM. The SRK key is created when the ownership of the TPM is taken.
 
