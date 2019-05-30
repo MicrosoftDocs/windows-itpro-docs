@@ -2,12 +2,14 @@
 title: Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings security policy setting.
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -2,6 +2,9 @@
 title: Plan Your Migration (Windows 10)
 description: Plan Your Migration
 ms.assetid: c951f7df-850e-47ad-b31b-87f902955e3e
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

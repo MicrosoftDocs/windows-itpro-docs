@@ -1,8 +1,8 @@
 ---
-author: TylerMSFT
+author: msfttracyp
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
-ms.author: twhitney
+ms.author: tracyp
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod: w10

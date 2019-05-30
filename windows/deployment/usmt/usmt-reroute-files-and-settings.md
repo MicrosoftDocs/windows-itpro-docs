@@ -2,6 +2,9 @@
 title: Reroute Files and Settings (Windows 10)
 description: Reroute Files and Settings
 ms.assetid: 905e6a24-922c-4549-9732-60fa11862a6c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
