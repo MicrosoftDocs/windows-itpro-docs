@@ -941,7 +941,7 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>

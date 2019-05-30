@@ -40,7 +40,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/en-us/intune/lob-apps-macos](https://docs.microsoft.com/en-us/intune/lob-apps-macos).
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
 
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:
