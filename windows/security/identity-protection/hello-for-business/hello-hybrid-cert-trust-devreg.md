@@ -391,7 +391,6 @@ The following script helps you with the creation of the issuance transform rules
         query = ";objectguid;{0}", 
         param = c2.Value
     );'
-    
     $rule3 = '@RuleName = "Issue objectSID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
