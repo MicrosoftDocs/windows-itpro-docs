@@ -1,5 +1,6 @@
 ---
 title: Software developer FAQ
+ms.reviewer: 
 description: This page provides answers to common questions we receive from software developers
 keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
 search.product: eADQiWindows 10XVcnh

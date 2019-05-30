@@ -1,5 +1,7 @@
 ---
 title: Update Compliance - Security Update Status report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Security Update Status report
 ms.prod: w10
 ms.mktglfcycl: deploy

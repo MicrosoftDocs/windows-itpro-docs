@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot customer consent
+ms.reviewer: 
+manager: dansimp
 description: Support information for Windows Autopilot
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, csp, OEM
 ms.prod: w10

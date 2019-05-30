@@ -1,5 +1,7 @@
 ---
 title: Policy CSP - DeviceInstallation
+ms.reviewer: 
+manager: dansimp
 description: Policy CSP - DeviceInstallation
 ms.author: v-madhi
 ms.topic: article

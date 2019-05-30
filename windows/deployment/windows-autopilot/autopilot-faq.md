@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot support
+ms.reviewer: 
+manager: laurawi
 description: Support information for Windows Autopilot
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10

@@ -1,5 +1,7 @@
 ---
 title: Surface Hub Site Readiness Guide  
+ms.reviewer: 
+manager: dansimp
 description: Use this Site Readiness Guide to help plan your Surface Hub installation. 
 ms.prod: surface-hub
 ms.sitesec: library

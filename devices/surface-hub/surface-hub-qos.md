@@ -1,5 +1,7 @@
 ---
 title: Implement Quality of Service on Surface Hub   
+ms.reviewer: 
+manager: dansimp
 description: Learn how to configure QoS on Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library

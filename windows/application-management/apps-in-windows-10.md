@@ -1,5 +1,7 @@
 ---
 title: Windows 10 - Apps
+ms.reviewer: 
+manager: dansimp
 description: What are Windows, UWP, and Win32 apps
 ms.prod: w10
 ms.mktglfcycl: deploy

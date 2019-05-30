@@ -1,5 +1,7 @@
 ---
 title: Advanced Troubleshooting 802.1X Authentication
+ms.reviewer: 
+manager: dansimp
 description: Learn how 802.1X Authentication works
 keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10

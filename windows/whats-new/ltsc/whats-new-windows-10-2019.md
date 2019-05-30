@@ -1,5 +1,8 @@
 ---
 title: What's new in Windows 10 Enterprise 2019 LTSC
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2019 LTSC (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019 LTSC"]
 ms.prod: w10

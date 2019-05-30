@@ -1,5 +1,8 @@
 ---
 title: Windows 10 upgrade paths (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: You can upgrade to Windows 10 from a previous version of Windows if the upgrade path is supported.
 ms.prod: w10
 ms.mktglfcycl: deploy

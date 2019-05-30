@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot scenarios and capabilities
+ms.reviewer: 
+manager: dansimp
 description: Listing of Autopilot scenarios
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10

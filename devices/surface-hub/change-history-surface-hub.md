@@ -1,5 +1,7 @@
 ---
 title: Change history for Surface Hub
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
 ms.prod: surface-hub

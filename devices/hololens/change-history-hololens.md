@@ -1,5 +1,7 @@
 ---
 title: Change history for Microsoft HoloLens documentation
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics for HoloLens.
 keywords: change history
 ms.prod: hololens

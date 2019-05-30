@@ -1,5 +1,8 @@
 ---
 title: 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network. (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Describes security event 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network.
 ms.pagetype: security
 ms.prod: w10

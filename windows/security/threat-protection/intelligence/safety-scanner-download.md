@@ -1,5 +1,6 @@
 ---
 title: Microsoft Safety Scanner Download
+ms.reviewer: 
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
 ms.prod: w10

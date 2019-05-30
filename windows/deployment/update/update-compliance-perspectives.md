@@ -1,5 +1,7 @@
 ---
 title: Update Compliance - Perspectives
+ms.reviewer: 
+manager: laurawi
 description: an overview of Update Compliance Perspectives
 ms.prod: w10
 ms.mktglfcycl: deploy

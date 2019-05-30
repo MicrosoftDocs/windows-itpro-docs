@@ -1,5 +1,7 @@
 ---
 title: Forrester Total Economic Impact - Microsoft Edge
+ms.reviewer: 
+manager: dansimp
 description: Review the results of the Microsoft Edge study carried out by Forrester Research
 ms.prod: edge
 ms.topic: article

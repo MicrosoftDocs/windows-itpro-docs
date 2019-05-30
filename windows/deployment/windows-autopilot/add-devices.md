@@ -1,5 +1,7 @@
 ---
 title: Adding devices
+ms.reviewer: 
+manager: laurawi
 description: How to add devices to Windows Autopilot
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10

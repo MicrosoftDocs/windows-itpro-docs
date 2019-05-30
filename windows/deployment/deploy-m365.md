@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Concepts about deploying Windows 10 for M365
 ms.prod: w10
 ms.mktglfcycl: deploy

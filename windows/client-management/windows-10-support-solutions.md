@@ -1,5 +1,7 @@
 ---
 title: Top support solutions for Windows 10
+ms.reviewer: 
+manager: dansimp
 description: Get links to solutions for Windows 10 issues
 ms.prod: w10
 ms.mktglfcycl: manage

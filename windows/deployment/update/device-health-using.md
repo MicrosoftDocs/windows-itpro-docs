@@ -1,5 +1,7 @@
 ---
 title: Using Device Health
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,5 +1,7 @@
 ---
 title: Delivery Optimization reference
+ms.reviewer: 
+manager: laurawi
 description: Reference of all Delivery Optimization settings and descriptions of same
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10

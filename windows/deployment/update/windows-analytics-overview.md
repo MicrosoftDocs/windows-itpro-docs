@@ -1,5 +1,7 @@
 ---
 title: Windows Analytics
+ms.reviewer: 
+manager: dansimp
 description: Introduction and overview of Windows Analytics
 keywords: Device Health, Upgrade Readiness, Update Compliance, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
 ms.prod: w10

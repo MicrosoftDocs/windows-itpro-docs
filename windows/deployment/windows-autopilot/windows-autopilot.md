@@ -1,5 +1,7 @@
 ---
 title: Overview of Windows Autopilot
+ms.reviewer: 
+manager: dansimp
 description: This topic goes over Windows Autopilot and how it helps setup OOBE Windows 10 devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, msfb, intune
 ms.prod: w10

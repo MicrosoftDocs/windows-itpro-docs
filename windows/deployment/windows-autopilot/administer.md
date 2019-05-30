@@ -1,5 +1,7 @@
 ---
 title: Administering Autopilot
+ms.reviewer: 
+manager: laurawi
 description: A short description of methods for configuring Autopilot
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10

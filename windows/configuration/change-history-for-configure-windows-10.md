@@ -1,5 +1,7 @@
 ---
 title: Change history for Configure Windows 10 (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists changes to documentation for configuring Windows 10.
 keywords: 
 ms.prod: w10

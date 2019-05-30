@@ -1,5 +1,7 @@
 ---
 title: Restore HoloLens 2 using Advanced Recovery Companion 
+ms.reviewer: 
+manager: dansimp
 description: How to use Advanced Recovery Companion to flash an image to HoloLens 2.
 ms.prod: hololens
 ms.sitesec: library

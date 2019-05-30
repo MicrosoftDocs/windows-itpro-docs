@@ -1,5 +1,7 @@
 ---
 title: Technical information for 55" Surface Hub   
+ms.reviewer: 
+manager: dansimp
 description: Specifications for the 55" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library

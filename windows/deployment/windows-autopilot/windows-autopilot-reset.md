@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot Reset
+ms.reviewer: 
+manager: dansimp
 description: Gives an overview of Remote Autopilot Reset and how to use it.
 keywords: Autopilot Reset, Windows 10
 ms.prod: w10

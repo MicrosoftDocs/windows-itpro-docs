@@ -1,5 +1,7 @@
 --- 
 title: Advanced troubleshooting for Windows-based computer freeze issues 
+ms.reviewer: 
+manager: dansimp
 description: Learn how to troubleshoot computer freeze issues. 
 ms.prod: w10 
 ms.mktglfcycl: 

@@ -1,5 +1,7 @@
 ---
 title: Windows Analytics in the Azure Portal
+ms.reviewer: 
+manager: dansimp
 description: Use the Azure Portal to add and configure Windows Analytics solutions 
 keywords: Device Health, oms, Azure, portal, operations management suite, add, manage, configure, Upgrade Readiness, Update Compliance
 ms.prod: w10

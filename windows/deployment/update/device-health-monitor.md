@@ -1,5 +1,7 @@
 ---
 title: Monitor the health of devices with Device Health
+ms.reviewer: 
+manager: laurawi
 description: You can use Device Health in Azure Portal to monitor the frequency and causes of crashes and misbehaving apps on devices in your network.
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10

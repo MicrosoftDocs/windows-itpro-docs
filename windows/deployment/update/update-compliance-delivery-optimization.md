@@ -1,5 +1,7 @@
 ---
 title: Delivery Optimization in Update Compliance (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: new Delivery Optimization data displayed in Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy

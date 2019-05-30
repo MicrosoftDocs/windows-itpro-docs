@@ -1,5 +1,7 @@
 ---
 title: Demonstrate Autopilot deployment on a VM
+ms.reviewer: 
+manager: laurawi
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10

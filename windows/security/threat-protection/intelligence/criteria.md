@@ -1,5 +1,6 @@
 ---
 title: How Microsoft identifies malware and potentially unwanted applications
+ms.reviewer: 
 description: Learn how Microsoft reviews software for unwanted behavior, advertising, privacy violations, and negative consumer opinion to determine if it is malware (malicious software) or potentially unwanted applications.
 keywords: security, malware, virus research threats, research malware, pc protection, computer infection, virus infection, descriptions, remediation, latest threats, MMPC, Microsoft Malware Protection Center, PUA, potentially unwanted applications
 ms.prod: w10

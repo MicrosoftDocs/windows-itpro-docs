@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot Enrollment Status page 
+ms.reviewer: 
+manager: laurawi
 description: Gives an overview of the enrollment status page capabilities, configuration
 keywords: Autopilot Plug and Forget, Windows 10
 ms.prod: w10

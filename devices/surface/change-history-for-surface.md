@@ -1,5 +1,7 @@
 ---
 title: Change history for Surface documentation (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics in the Surface documentation library.
 ms.prod: w10
 ms.mktglfcycl: manage

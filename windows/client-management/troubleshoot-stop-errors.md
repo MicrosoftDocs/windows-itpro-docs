@@ -1,5 +1,7 @@
 ---
 title: Advanced troubleshooting for Stop error or blue screen error issue
+ms.reviewer: 
+manager: dansimp
 description: Learn how to troubleshoot Stop error or blue screen issues.
 ms.prod: w10
 ms.mktglfcycl:

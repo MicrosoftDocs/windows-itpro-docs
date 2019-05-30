@@ -1,5 +1,7 @@
 ---
 title: Policies (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This section describes the Policies settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy

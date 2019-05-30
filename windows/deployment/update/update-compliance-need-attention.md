@@ -1,5 +1,7 @@
 ---
 title: Update Compliance - Need Attention! report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Update Compliance Need Attention! report
 ms.prod: w10
 ms.mktglfcycl: deploy

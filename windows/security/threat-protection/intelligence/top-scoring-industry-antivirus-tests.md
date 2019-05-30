@@ -1,5 +1,6 @@
 ---
 title: Top scoring in industry tests
+ms.reviewer: 
 description: Microsoft Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
 keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores, endpoint detection and response, next generation protection, MITRE, WDATP
 ms.prod: w10

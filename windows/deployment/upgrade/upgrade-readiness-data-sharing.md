@@ -1,5 +1,8 @@
 ---
 title: Upgrade Readiness data sharing
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Connectivity scenarios for data sharing with Upgrade Readiness
 ms.prod: w10
 ms.mktglfcycl: deploy

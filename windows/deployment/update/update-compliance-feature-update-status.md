@@ -1,5 +1,7 @@
 ---
 title: Update Compliance - Feature Update Status report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Feature Update Status report
 ms.prod: w10
 ms.mktglfcycl: deploy

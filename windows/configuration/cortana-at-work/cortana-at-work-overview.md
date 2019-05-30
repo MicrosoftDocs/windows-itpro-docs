@@ -1,5 +1,7 @@
 ---
 title: Cortana integration in your business or enterprise (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
 ms.prod: w10
 ms.mktglfcycl: manage
