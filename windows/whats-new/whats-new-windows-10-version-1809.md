@@ -78,6 +78,8 @@ To achieve this:
 3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
     - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
 
+For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/bitlocker).
+
 ### Windows Defender Application Guard Improvements
 
 Windows Defender Application Guard (WDAG) introduced a new user interface inside **Windows Security** in this release. Standalone users can now install and configure their Windows Defender Application Guard settings in Windows Security without needing to change registry key settings. 
@@ -173,7 +175,7 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
 >[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>The following Microsoft Edge kiosk mode types cannot be set up using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 

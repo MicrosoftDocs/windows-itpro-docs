@@ -8,8 +8,7 @@ ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

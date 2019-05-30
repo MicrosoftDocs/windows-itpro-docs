@@ -7,8 +7,7 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -111,7 +110,7 @@ In either of these scenarios, you can make a variety of configuration changes to
 ## Stay up to date
 
 
-For computers already running Windows 10 on the Current Branch or Current Branch for Business, new upgrades will periodically be deployed, approximately two to three times per year. You can deploy these upgrades by using a variety of methods:
+For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will periodically be deployed, approximately two to three times per year. You can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
 
