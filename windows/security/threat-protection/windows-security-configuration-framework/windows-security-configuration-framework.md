@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/05/2018
+ms.date: 05/29/2019
 ---
 
 # Introducing the security configuration framework
@@ -30,19 +30,19 @@ This new security configuration framework, which we affectionately nickname the 
 
 ![SECCON Framework](images/seccon-framework.png)
 
-- [Level 5 Enterprise Basic Security](level-5-enterprise-security.md) – We recommend this configuration as the minimum security configuration for an enterprise device. Recommendations for this level are generally straightforward and are designed to be deployable within 30 days.
-- [Level 4 Enterprise Enhanced Security](level-4-enterprise-high-security.md) – We recommend this configuration for devices where users access sensitive or confidential information. Some of the controls may have an impact to app compat, and therefore will often go through an audit-configure-enforce workflow. Recommendations for this level are generally accessible to most organizations and are designed to be deployable within 90 days.
-- [Level 3 Enterprise High Security](level-3-enterprise-vip-security.md) – We recommend this configuration for devices run by an organization with a larger or more sophisticated security team, or for specific users or groups who are at uniquely high risk (as one example, one organization identified users who handle data whose theft would directly and seriously impact their stock price). An organization likely to be targeted by well-funded and sophisticated adversaries should aspire to this configuration. Recommendations for this level can be complex (for example, removing local admin rights for some organizations can be a long project in and of itself) and can often go beyond 90 days.
-- [Level 2 DevOps Workstation](level-2-enterprise-devops-security.md) – We recommend this configuration for developers and testers, who are an attractive target both for supply chain attacks and access to servers and systems containing high value data or where critical business functions could be disrupted. Level 2 guidance is coming soon!
-- [Level 1 Administrator Workstation](level-1-enterprise-administrator-security.md) – Administrators (particularly of identity or security systems) present the highest risk to the organization, through data theft, data alteration, or service disruption. Level 1 guidance is coming soon!
+- [Level 1 enterprise basic security](level-1-enterprise-basic-security.md) – We recommend this configuration as the minimum security configuration for an enterprise device. Recommendations for this level are generally straightforward and are designed to be deployable within 30 days.
+- [Level 2 enterprise enhanced security](level-2-enterprise-enhanced-security.md) – We recommend this configuration for devices where users access sensitive or confidential information. Some of the controls may have an impact to app compat, and therefore will often go through an audit-configure-enforce workflow. Recommendations for this level are generally accessible to most organizations and are designed to be deployable within 90 days.
+- [Level 3 enterprise high security](level-3-enterprise-high-security.md) – We recommend this configuration for devices run by an organization with a larger or more sophisticated security team, or for specific users or groups who are at uniquely high risk (as one example, one organization identified users who handle data whose theft would directly and seriously impact their stock price). An organization likely to be targeted by well-funded and sophisticated adversaries should aspire to this configuration. Recommendations for this level can be complex (for example, removing local admin rights for some organizations can be a long project in and of itself) and can often go beyond 90 days.
+- [Level 4 DevOps workstation](level-4-enterprise-devops-security.md) – We recommend this configuration for developers and testers, who are an attractive target both for supply chain attacks and access to servers and systems containing high value data or where critical business functions could be disrupted. Level 4 guidance is coming soon!
+- [Level 1 administrator workstation](level-5-enterprise-administrator-security.md) – Administrators (particularly of identity or security systems) present the highest risk to the organization, through data theft, data alteration, or service disruption. Level 5 guidance is coming soon!
 
 
 The security configuration framework divides configuration into Productivity Devices and Privileged Access Workstations. This document will focus on Productivity Devices
-(Levels 5, 4, and 3). 
+(Levels 1, 2, and 3). 
 Microsoft’s current guidance on [Privileged Access Workstations](http://aka.ms/privsec) are part of the [Securing Privileged Access roadmap](http://aka.ms/privsec).
 
 Microsoft recommends reviewing and categorizing your devices, and then configuring them using the prescriptive guidance for that level. 
-Level 5 should be considered the minimum baseline for an enterprise device, and Microsoft recommends increasing the protection based on both threat environment and risk appetite.
+Level 1 should be considered the minimum baseline for an enterprise device, and Microsoft recommends increasing the protection based on both threat environment and risk appetite.
 
 ## Security control classification
 
