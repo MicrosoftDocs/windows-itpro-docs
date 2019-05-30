@@ -12,8 +12,6 @@ ms.date: 05/01/2019
 
 # Policy CSP
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -3002,6 +3000,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ServiceControlManager policies
+<dl>
+  <dd>
+    <a href="./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" id="servicecontrolmanager-svchostprocessmitigation">ServiceControlManager/SvchostProcessMitigation</a>
+  </dd>
+</dl>
+
 ### Settings policies
 
 <dl>
@@ -4221,6 +4226,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses)
 -   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4965,6 +4971,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Search/PreventIndexingLowDiskSpaceMB](./policy-csp-search.md#search-preventindexinglowdiskspacemb)
 -   [Search/PreventRemoteQueries](./policy-csp-search.md#search-preventremotequeries)
 -   [Security/ClearTPMIfNotReady](./policy-csp-security.md#security-cleartpmifnotready)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Settings/AllowOnlineTips](./policy-csp-settings.md#settings-allowonlinetips)
 -   [Settings/ConfigureTaskbarCalendar](./policy-csp-settings.md#settings-configuretaskbarcalendar)
 -   [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist)
@@ -5146,33 +5153,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
 -   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
--   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
--   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
--   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
--   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
--   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
--   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
--   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
--   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
--   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
--   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
--   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
--   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
--   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
--   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
--   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
--   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
--   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
--   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
--   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
--   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
--   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
--   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
--   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
--   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 -   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
 -   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
@@ -5183,9 +5163,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
 -   [Experience/AllowCortana](#experience-allowcortana)
--   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
--   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
--   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
@@ -5196,10 +5173,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/AllowTelemetry](#system-allowtelemetry)
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)
 -   [Update/AllowUpdateService](#update-allowupdateservice)
--   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
--   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
--   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
--   [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)
 -   [Update/ScheduledInstallDay](#update-scheduledinstallday)
@@ -5236,37 +5209,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
 -   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 -   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
--   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
--   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
--   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
--   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
--   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
--   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
--   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
--   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
--   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
--   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
--   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
--   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
--   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
--   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
--   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
--   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
--   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
--   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
--   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
--   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
--   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
--   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
--   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
--   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
--   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Experience/AllowCortana](#experience-allowcortana)
--   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
--   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
--   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
@@ -5277,10 +5220,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/AllowLocation](#system-allowlocation)
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)
 -   [Update/AllowUpdateService](#update-allowupdateservice)
--   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
--   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
--   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
--   [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)
 -   [Update/ScheduledInstallDay](#update-scheduledinstallday)
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
