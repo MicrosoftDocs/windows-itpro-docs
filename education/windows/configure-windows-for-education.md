@@ -7,8 +7,8 @@ ms.sitesec: library
 ms.prod: w10
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 08/31/2017
 ---
 

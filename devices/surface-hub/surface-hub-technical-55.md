@@ -3,8 +3,8 @@ title: Technical information for 55" Surface Hub
 description: Specifications for the 55" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.localizationpriority: medium
 ---

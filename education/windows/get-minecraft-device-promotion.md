@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: levinec
 searchScope:
   - Store
-ms.author: trudyha
+ms.author: ellevin
 ms.date: 06/05/2018
 ---
 

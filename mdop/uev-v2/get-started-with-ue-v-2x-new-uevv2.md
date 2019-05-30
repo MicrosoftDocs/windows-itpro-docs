@@ -1,8 +1,11 @@
 ---
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

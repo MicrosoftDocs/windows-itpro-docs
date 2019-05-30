@@ -4,8 +4,8 @@ description: This topic explains how to enable Skype for Business Cloud PBX with
 keywords: hybrid deployment, Skype Hybrid Voice 
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium

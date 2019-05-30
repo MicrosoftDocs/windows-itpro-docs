@@ -7,8 +7,8 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: craigash
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 10/30/2017
 ---
 

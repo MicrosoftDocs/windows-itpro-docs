@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,7 +18,7 @@ ms.date: 08/20/2018
 # Hybrid Windows Hello for Business Provisioning
 
 **Applies to**
--   Windows 10, version 1703 or later
+-   Windowsï¿½10, version 1703 or later
 -   Hybrid deployment
 -   Key trust
 

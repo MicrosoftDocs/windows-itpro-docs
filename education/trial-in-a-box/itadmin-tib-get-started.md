@@ -9,8 +9,8 @@ ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 03/18/2018
 ---
 

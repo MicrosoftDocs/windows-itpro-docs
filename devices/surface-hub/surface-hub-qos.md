@@ -3,8 +3,8 @@ title: Implement Quality of Service on Surface Hub
 description: Learn how to configure QoS on Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: jdeckerms
+author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---

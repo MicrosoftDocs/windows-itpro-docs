@@ -4,7 +4,7 @@ description: Use this guide to configure VPN deployment for Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
+author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---

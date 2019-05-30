@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
+author: dulcemontemayor
 ms.localizationpriority: high
-ms.author: daniha
+ms.author: dolmont
 ms.date: 10/16/2017
 ms.topic: article
 ---

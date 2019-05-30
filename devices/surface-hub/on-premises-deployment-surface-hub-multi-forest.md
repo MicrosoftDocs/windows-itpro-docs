@@ -4,8 +4,8 @@ description: This topic explains how you add a device account for your Microsoft
 keywords: multi forest deployment, on prem deployment, device account, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---
