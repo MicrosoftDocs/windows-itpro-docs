@@ -2,12 +2,14 @@
 title: Customize and export Start layout (Windows 10)
 description: The easiest method for creating a customized Start layout is to set up the Start screen and export the layout.
 ms.assetid: CA8DF327-5DD4-452F-9FE5-F17C514B6236
+ms.reviewer: 
+manager: dansimp
 keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/18/2018

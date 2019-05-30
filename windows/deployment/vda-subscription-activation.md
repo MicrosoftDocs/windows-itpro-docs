@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

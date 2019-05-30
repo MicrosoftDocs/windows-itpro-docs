@@ -4,8 +4,8 @@ description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---

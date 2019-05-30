@@ -1,7 +1,7 @@
 ---
 title: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
 description: How to automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
-author: jdeckerms
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

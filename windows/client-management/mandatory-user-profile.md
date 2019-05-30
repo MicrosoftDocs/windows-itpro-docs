@@ -5,8 +5,8 @@ keywords: [".man","ntuser"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
 ms.topic: article
 ---

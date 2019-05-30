@@ -4,7 +4,7 @@ description: Use this topic to learn about Group Policy settings that apply only
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/13/2017
 ms.topic: troubleshooting

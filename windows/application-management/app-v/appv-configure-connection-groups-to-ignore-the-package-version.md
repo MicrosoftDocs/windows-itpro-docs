@@ -1,7 +1,7 @@
 ---
 title: How to make a connection group ignore the package version (Windows 10)
 description: How to make a connection group ignore the package version.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

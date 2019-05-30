@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article

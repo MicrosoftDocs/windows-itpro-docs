@@ -5,8 +5,8 @@ keywords: ["get started", "windows 10", "fall creators update", "1709"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 ms.date: 10/16/2017
 ms.localizationpriority: high
 ms.topic: article

@@ -4,8 +4,8 @@ description: How to run Surface Diagnostic Toolkit in a command console
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 11/15/2018
 ---

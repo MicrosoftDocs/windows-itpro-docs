@@ -5,9 +5,9 @@ keywords: troubleshooting, data collection, data, 802.1X authentication, authent
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: mikeblodge
+ms.author: dansimp
 ms.topic: troubleshooting
 ---
  

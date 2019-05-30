@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.date: 01/24/2018
 ms.localizationpriority: high
 ms.topic: article

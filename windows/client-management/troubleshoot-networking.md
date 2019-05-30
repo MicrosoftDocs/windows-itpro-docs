@@ -4,9 +4,9 @@ description: Learn how to troubleshoot networking
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ---
 
 # Advanced troubleshooting for Windows networking

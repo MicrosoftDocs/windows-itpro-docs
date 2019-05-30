@@ -4,8 +4,8 @@ description: This section lists topics for managing Surface Hub settings.
 keywords: Surface Hub accessibility settings, device account, device reset, windows updates, wireless network management
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium

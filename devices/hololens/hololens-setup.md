@@ -3,8 +3,8 @@ title: Set up HoloLens (HoloLens)
 description: The first time you set up HoloLens, you'll need a Wi-Fi network and either a Microsoft or Azure Active Directory account.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017

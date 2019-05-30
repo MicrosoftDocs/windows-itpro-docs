@@ -4,8 +4,8 @@ description: Get links to solutions for Windows 10 issues
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: elizapo
-author: kaushika-msft
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.topic: troubleshooting
 ---

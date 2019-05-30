@@ -1,8 +1,11 @@
 ---
 title: Deploying the DaRT Recovery Image
 description: Deploying the DaRT Recovery Image
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 2b859da6-e31a-4240-8868-93a754328cf2
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
 description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
-author: jdeckerms
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

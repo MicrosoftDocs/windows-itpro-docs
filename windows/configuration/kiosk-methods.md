@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
+author: dansimp
 ms.topic: article
 ---
 

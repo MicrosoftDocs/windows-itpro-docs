@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/20/2017

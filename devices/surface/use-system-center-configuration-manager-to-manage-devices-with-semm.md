@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: KiranDavane
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2017
 ---

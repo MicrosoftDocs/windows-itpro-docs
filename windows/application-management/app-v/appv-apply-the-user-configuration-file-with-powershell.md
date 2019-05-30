@@ -1,7 +1,7 @@
 ---
 title: How to apply the user configuration file by using Windows PowerShell (Windows 10)
 description: How to apply the user configuration file by using Windows PowerShell (Windows 10).
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

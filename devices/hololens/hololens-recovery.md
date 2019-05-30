@@ -3,8 +3,8 @@ title: Restore HoloLens 2 using Advanced Recovery Companion
 description: How to use Advanced Recovery Companion to flash an image to HoloLens 2.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: dansimp
 ms.localizationpriority: high
 ms.date: 10/16/2017
 ms.topic: article

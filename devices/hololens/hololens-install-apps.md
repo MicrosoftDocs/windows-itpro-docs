@@ -4,8 +4,8 @@ description: The recommended way to install apps on HoloLens is to use Microsoft
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/23/2018

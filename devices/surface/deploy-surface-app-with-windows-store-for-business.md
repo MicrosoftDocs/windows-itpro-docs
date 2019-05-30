@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, store
 ms.sitesec: library
-author: miladCA
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/21/2017
 ---

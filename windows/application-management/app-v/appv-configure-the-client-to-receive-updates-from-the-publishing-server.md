@@ -1,7 +1,7 @@
 ---
 title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10)
 description: How to configure the client to receive package and connection groups updates from the publishing server.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

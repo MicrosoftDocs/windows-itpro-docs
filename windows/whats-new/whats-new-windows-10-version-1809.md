@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Up
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---

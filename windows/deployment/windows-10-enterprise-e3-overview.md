@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
-author: greg-lindsay
+author: dansimp
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

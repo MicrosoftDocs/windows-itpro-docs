@@ -4,8 +4,8 @@ description: This topic explains the differences between Windows 10 Team and Win
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
-author: isaiahng
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 11/01/2017
 ms.localizationpriority: medium

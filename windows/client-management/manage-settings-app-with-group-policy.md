@@ -4,7 +4,7 @@ description: Find out how to manage the Settings app with Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: dansimp
 ms.date: 04/19/2017
 ms.topic: article
 ---

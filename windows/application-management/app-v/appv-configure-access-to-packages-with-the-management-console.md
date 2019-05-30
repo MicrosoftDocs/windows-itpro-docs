@@ -1,7 +1,7 @@
 ---
 title: How to configure access to packages by using the Management Console (Windows 10)
 description: How to configure access to packages by using the App-V Management Console.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,8 +2,8 @@
 title: Deploy Windows 10 - architectural posters
 description: Provides architural planning posters for Windows 10 in the enterprise
 ms.prod: w10
-ms.author: elizapo
-author: lizap
+ms.author: dansimp
+author: dansimp
 ms.date: 09/28/2017
 ms.tgt_pltfrm: na
 ms.topic: article

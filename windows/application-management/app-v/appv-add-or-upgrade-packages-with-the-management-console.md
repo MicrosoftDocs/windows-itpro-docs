@@ -1,7 +1,7 @@
 ---
 title: How to Add or Upgrade Packages by Using the Management Console (Windows 10)
 description: How to add or upgrade packages by using the Management Console
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,8 +3,8 @@ title: Insider preview for Microsoft HoloLens (HoloLens)
 description: It’s simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/23/2018

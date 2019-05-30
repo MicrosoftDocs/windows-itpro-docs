@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

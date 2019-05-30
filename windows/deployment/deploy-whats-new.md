@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

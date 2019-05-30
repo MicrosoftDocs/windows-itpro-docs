@@ -7,8 +7,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article

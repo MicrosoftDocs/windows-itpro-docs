@@ -3,8 +3,8 @@ title: How HoloLens stores data for spaces (HoloLens)
 description: 
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/05/2018

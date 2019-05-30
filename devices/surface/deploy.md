@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: brecords
+author: dansimp
 ms.date: 10/02/2018
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: App-V Capacity Planning (Windows 10)
 description: App-V Capacity Planning
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

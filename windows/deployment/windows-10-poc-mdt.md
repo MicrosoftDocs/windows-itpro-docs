@@ -8,7 +8,7 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

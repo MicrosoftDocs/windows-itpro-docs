@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
+author: dansimp
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

@@ -1,7 +1,7 @@
 ---
 title: About the connection group file (Windows 10)
 description: A summary of what the connection group file is and how to configure it.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
