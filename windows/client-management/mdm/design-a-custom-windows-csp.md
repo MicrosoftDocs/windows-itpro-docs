@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phDeviceMgmt.designing\_a\_custom\_configuration\_service\_provider'
 - 'p\_phDeviceMgmt.design\_a\_custom\_windows\_csp'
 ms.assetid: 0fff9516-a71a-4036-a57b-503ef1a81a37
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

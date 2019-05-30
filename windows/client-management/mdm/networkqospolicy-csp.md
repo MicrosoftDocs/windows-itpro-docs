@@ -1,11 +1,11 @@
 ---
 title: NetworkQoSPolicy CSP
 description: he NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

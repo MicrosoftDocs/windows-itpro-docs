@@ -2,11 +2,13 @@
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

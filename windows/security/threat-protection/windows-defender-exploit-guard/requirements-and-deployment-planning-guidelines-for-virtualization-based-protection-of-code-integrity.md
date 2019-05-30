@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

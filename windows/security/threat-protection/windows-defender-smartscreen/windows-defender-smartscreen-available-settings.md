@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: jasongerend
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 1/26/2018
 ---

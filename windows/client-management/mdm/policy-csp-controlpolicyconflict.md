@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - ControlPolicyConflict
 description: Policy CSP - ControlPolicyConflict
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 03/12/2018
 ---
 

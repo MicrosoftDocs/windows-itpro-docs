@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - AppRuntime
 description: Policy CSP - AppRuntime
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 04/16/2018
 ---
 
