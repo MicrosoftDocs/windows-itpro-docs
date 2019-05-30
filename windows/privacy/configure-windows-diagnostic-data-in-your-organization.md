@@ -277,7 +277,7 @@ These levels are available on all desktop and mobile editions of Windows 10, ex
 
 ### Security level
 
-The Security level gathers only the diagnostic data info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windows IoT Core editions.
+The Security level gathers only the diagnostic data info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windows IoT Core editions.
 
 > [!NOTE]
 > If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
@@ -369,17 +369,36 @@ The data gathered at this level includes:
 
 If the Connected User Experiences and Telemetry component detects a problem on Windows 10 that requires gathering more detailed instrumentation, the Connected User Experiences and Telemetry component at the **Enhanced** diagnostic data level will only gather data about the events associated with the specific issue.
 
-#### Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+### Full level
+
+The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the Basic, Enhanced, and Security levels. This is the default level for Windows 10 Pro.
+
+Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
+
+If a device experiences problems that are difficult to identify or repeat using Microsoft’s internal testing, additional data becomes necessary. This data can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the **Full** diagnostic data level and have exhibited the problem.
+
+However, before more data is gathered, Microsoft’s privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
+
+-   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
+
+-   Ability to get registry keys.
+
+-   All crash dump types, including heap dumps and full dumps.
+
+## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
 
 Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
 
-In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
+In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
 
 - **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
 
-- **Some crash dump types.** All crash dump types, except for heap and full dumps.
+- **Some crash dump types.** Triage dumps for user mode and mini dumps for kernel mode.
 
-**To turn on this behavior for devices**
+>[!NOTE]
+> Triage dumps are dumps is a stack level dump that has most user-sensitive information removed. However, it is still possible that some metadata may contain user-sensitive information.
+
+### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
 
 1.	Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
@@ -398,22 +417,6 @@ In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data t
     -OR-
 
     b. Using MDM, use the Policy CSP to set the **System/LimitEnhancedDiagnosticDataWindowsAnalytics** value to **1**.
-
-### Full level
-
-The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the Basic, Enhanced, and Security levels. This is the default level for Windows 10 Pro.
-
-Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
-
-If a device experiences problems that are difficult to identify or repeat using Microsoft’s internal testing, additional data becomes necessary. This data can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the **Full** diagnostic data level and have exhibited the problem.
-
-However, before more data is gathered, Microsoft’s privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
-
--   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
-
--   Ability to get registry keys.
-
--   All crash dump types, including heap dumps and full dumps.
 
 ## Additional resources
 
