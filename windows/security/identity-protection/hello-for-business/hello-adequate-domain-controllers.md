@@ -40,7 +40,7 @@ Consider a controlled environment where there are 1000 client computers and the 
 ![dc-chart1](images/plan/dc-chart1.png)
 
 
-The environment changes.  The first change includes DC1 upgraded to Windows Server 2019 to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment.   Given all other factors stay constant, the authentication would now look like the following.
+The environment changes.  The first change includes DC1 upgraded to Windows Server 2019 to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment.   Given all other factors stay constant, the authentication would now look like the following:
 
 ![dc-chart2](images/plan/dc-chart2.png)
 
