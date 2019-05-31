@@ -35,8 +35,8 @@ Regardless of whether performing user-driven or self-deploying device deployment
 
 For troubleshooting, key activities to perform are:
 
--   Configuration.  Has Azure Active Directory and Microsoft Intune (or an equivalent MDM service) been configured as specified in [Windows Autopilot configuration requirements](windows-autopilot-requirements-configuration.md)?
--   Network connectivity.  Can the device access the services described in [Windows Autopilot networking requirements](windows-autopilot-requirements-network.md)?
+-   Configuration.  Has Azure Active Directory and Microsoft Intune (or an equivalent MDM service) been configured as specified in [Windows Autopilot configuration requirements](windows-autopilot-requirements.md)?
+-   Network connectivity.  Can the device access the services described in [Windows Autopilot networking requirements](windows-autopilot-requirements.md)?
 -   Autopilot OOBE behavior.  Were only the expected out-of-box experience screens displayed?  Was the Azure AD credentials page customized with organization-specific details as expected?
 -   Azure AD join issues.  Was the device able to join Azure Active Directory?
 -   MDM enrollment issues.  Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
@@ -85,7 +85,7 @@ On Windows 10 version 1703 and above, ETW tracing can be used to capture detaile
 
 ### Troubleshooting Azure AD Join issues
 
-The most common issue joining a device to Azure AD is related to Azure AD permissions.  Ensure [the correct configuration is in place](windows-autopilot-requirements-configuration.md) to allow users to join devices to Azure AD.  Errors can also happen if the user has exceeded the number of devices that they are allowed to join, as configured in Azure AD.
+The most common issue joining a device to Azure AD is related to Azure AD permissions.  Ensure [the correct configuration is in place](windows-autopilot-requirements.md) to allow users to join devices to Azure AD.  Errors can also happen if the user has exceeded the number of devices that they are allowed to join, as configured in Azure AD.
 
 Error code 801C0003 will typically be reported on an error page titled "Something went wrong".  This error means that the Azure AD join failed.
 

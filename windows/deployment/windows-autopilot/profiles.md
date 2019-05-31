@@ -62,4 +62,4 @@ The following profile settings are available:
 
 ## Related topics
 
-[Configure Autopilot deployment](configure-autopilot.md)
+[Registering devices](add-devices.md)
