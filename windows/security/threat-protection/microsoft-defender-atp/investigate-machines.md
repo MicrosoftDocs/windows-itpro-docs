@@ -72,7 +72,7 @@ For more information on how to take action on a machine, see [Take response acti
 
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can view a high level overview of the alerts and risk level. More information is available in the "Alerts" drill down.
 
-![Image of active alerts tile](images/active-alerts-risk-level.png)
+![Image of active alerts tile](images/risk-level-small.png)
 
 >[!NOTE]
 >You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
