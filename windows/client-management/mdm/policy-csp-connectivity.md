@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Connectivity
 description: Policy CSP - Connectivity
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Connectivity

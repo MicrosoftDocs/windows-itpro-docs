@@ -1,8 +1,11 @@
 ---
 title: DaRT 10 Supported Configurations
 description: DaRT 10 Supported Configurations
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a07d6562-1fa9-499f-829c-9cc487ede0b7
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

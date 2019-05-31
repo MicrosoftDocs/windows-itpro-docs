@@ -1,14 +1,16 @@
 ---
 title: Microsoft Defender ATP APIs
+ms.reviewer: 
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, api, wdatp, open api, windows defender atp api, public api, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
+search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

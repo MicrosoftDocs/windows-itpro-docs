@@ -1,8 +1,11 @@
 ---
 title: Provider Policies Results Pane
 description: Provider Policies Results Pane
-author: jamiejdt
+author: eavena
 ms.assetid: 17ea0836-bfb5-4966-8778-155444d81e64
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

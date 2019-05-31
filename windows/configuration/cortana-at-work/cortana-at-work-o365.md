@@ -4,10 +4,12 @@ description: How to connect Cortana to Office 365 so your employees are notified
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up and test Cortana with Office 365 in your organization

@@ -1,11 +1,14 @@
 ---
 title: Upgrade Readiness deployment script (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Deployment script for Upgrade Readiness.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---

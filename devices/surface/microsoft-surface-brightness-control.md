@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: coveminer
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 1/15/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Brightness Control

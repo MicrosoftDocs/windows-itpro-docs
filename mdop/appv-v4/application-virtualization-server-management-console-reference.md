@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Server Management Console Reference
 description: Application Virtualization Server Management Console Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: 7c9890f4-7230-44dd-bbe8-95a4b65dc796
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

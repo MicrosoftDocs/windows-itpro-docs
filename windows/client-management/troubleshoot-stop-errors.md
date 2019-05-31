@@ -1,13 +1,15 @@
 ---
 title: Advanced troubleshooting for Stop error or blue screen error issue
+ms.reviewer: 
+manager: dansimp
 description: Learn how to troubleshoot Stop error or blue screen issues.
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ---
 
 # Advanced troubleshooting for Stop error or blue screen error issue

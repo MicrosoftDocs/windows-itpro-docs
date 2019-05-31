@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enterprise E3 or E5 Subscription Activation, or for Windows 10 Enterprise E3 in CSP
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -7,17 +10,13 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 05/25/2018
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 
 # Deploy Windows 10 Enterprise licenses
 
->[!IMPORTANT]
->Office 365 Enterprise E3 and Office 365 Enterprise E5 include a Windows 10 Enterprise license. This article is about the use and implementation of these licenses in a on-premises Active Directory environment.
-
-This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
+This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
 >[!NOTE]
 >* Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.

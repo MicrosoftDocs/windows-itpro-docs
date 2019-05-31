@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: craigash
-ms.author: celested
-ms.date: 10/30/2017
+author: levinec
+ms.author: ellevin
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 in a school
@@ -598,6 +600,7 @@ Depending on your school’s requirements, you may need any combination of the f
 - **Windows 10 Education**. Use this operating system to:
  - Upgrade institution-owned devices to Windows 10 Education.
  - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
+- **Windows 10 Pro Education**. Use this operating system to upgrade existing eligible institution-owned devices running Windows 10 Pro Education, version 1903 or later, to Windows 10 Education using [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation).
 
 **Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features are not available in Windows 10 Home.
 

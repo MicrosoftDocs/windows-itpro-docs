@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy MBAM 2.5
 description: Planning to Deploy MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 1343b80c-d87a-42e7-b912-e84ba997d7e3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

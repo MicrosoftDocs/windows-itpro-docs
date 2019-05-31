@@ -1,8 +1,11 @@
 ---
 title: Using Your PIN or Password
 description: Using Your PIN or Password
-author: jamiejdt
+author: dansimp
 ms.assetid: 7fe2aef4-d3e0-49c8-877d-7fee13dc5b7b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

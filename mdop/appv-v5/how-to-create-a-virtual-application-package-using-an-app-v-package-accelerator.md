@@ -1,8 +1,11 @@
 ---
 title: How to Create a Virtual Application Package Using an App-V Package Accelerator
 description: How to Create a Virtual Application Package Using an App-V Package Accelerator
-author: jamiejdt
+author: dansimp
 ms.assetid: 715e7526-e100-419c-8fc1-75cbfe433835
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: Planning for Migration from Previous Versions
 description: Planning for Migration from Previous Versions
-author: jamiejdt
+author: eavena
 ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

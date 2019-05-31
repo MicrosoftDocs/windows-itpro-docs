@@ -1,8 +1,11 @@
 ---
 title: Configuring Advanced Group Policy Management
 description: Configuring Advanced Group Policy Management
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 836f4a49-2c77-4f6b-8727-9df7ef443141
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

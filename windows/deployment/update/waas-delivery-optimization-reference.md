@@ -1,5 +1,7 @@
 ---
 title: Delivery Optimization reference
+ms.reviewer: 
+manager: laurawi
 description: Reference of all Delivery Optimization settings and descriptions of same
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
@@ -59,6 +61,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
 | [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
+| [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
+| [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
 
 ### More detail on Delivery Optimization settings:
 
@@ -198,6 +202,12 @@ Starting in Windows 10, version 1803, this allows you to delay the use of an HTT
 ### Delay foreground download from http (in secs)
 Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
 
+### Delay Foreground Download Cache Server Fallback (in secs)
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If you set the policy to delay foreground download from http, it will apply first (to allow downloads from peers first).
+
+### Delay Background Download Cache Server Fallback (in secs)
+Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If you set the policy to delay background download from http, it will apply first (to allow downloads from peers first).
+
 ### Minimum Background QoS
 
 This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
@@ -221,3 +231,5 @@ The device can download from peers while on battery regardless of this policy.
 
 >[!IMPORTANT]
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
+
+

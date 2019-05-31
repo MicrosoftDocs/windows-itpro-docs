@@ -4,10 +4,12 @@ description: Troubleshoot common errors related to Start menu in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: kaushika
-author: kaushika-msft
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 12/03/18
+ms.reviewer: 
+manager: dansimp
 ms.topic: troubleshooting
 ---
 

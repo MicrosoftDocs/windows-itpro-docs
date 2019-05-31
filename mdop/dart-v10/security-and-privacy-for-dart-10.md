@@ -1,8 +1,11 @@
 ---
 title: Security and Privacy for DaRT 10
 description: Security and Privacy for DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 9ce5d555-c4e9-4482-a147-27b26579c935
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

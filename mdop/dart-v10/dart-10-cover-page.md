@@ -1,8 +1,11 @@
 ---
 title: DaRT 10
 description: DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 875f6dc4-13f4-4625-8c6a-38215c2daf01
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

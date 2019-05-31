@@ -6,8 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 02/21/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Signing Windows Defender Application Control policies with SignTool.exe 

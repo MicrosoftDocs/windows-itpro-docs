@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: MikeBlodge
-ms.author: jaimeo
-ms.date: 04/30/2018
+author: levinec
+ms.author: ellevin
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro
@@ -19,6 +21,9 @@ If you have an education tenant and use devices with Windows 10 Pro, global admi
 - [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](https://docs.microsoft.com/education/windows/s-mode-switch-to-edu)
 
 To take advantage of this offering, make sure you meet the [requirements for changing](#requirements-for-changing). For academic customers who are eligible to change to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assistance.
+
+>[!IMPORTANT]
+>If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation) won't work.
 
 ## Requirements for changing
 Before you change to Windows 10 Pro Education, make sure you meet these requirements:
@@ -307,6 +312,8 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ## Related topics
 
-[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
-[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)<BR> 
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  
+[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)  
+[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)  
+[Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
+

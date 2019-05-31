@@ -1,8 +1,11 @@
 ---
 title: How to Manage Application Licenses in the Server Management Console
 description: How to Manage Application Licenses in the Server Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 48503b04-0de7-48de-98ee-4623a712a341
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

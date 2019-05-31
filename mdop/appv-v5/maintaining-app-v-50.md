@@ -1,8 +1,11 @@
 ---
 title: Maintaining App-V 5.0
 description: Maintaining App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 66851ec3-c674-493b-ad6d-db8fcbf1956c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

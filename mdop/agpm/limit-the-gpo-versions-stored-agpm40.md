@@ -1,8 +1,11 @@
 ---
 title: Limit the GPO Versions Stored
 description: Limit the GPO Versions Stored
-author: jamiejdt
+author: mjcaparas
 ms.assetid: d802c7b6-f303-4b23-aefd-f19f1300b0ff
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

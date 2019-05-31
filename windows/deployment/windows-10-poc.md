@@ -1,5 +1,8 @@
 ---
 title: Configure a test lab to deploy Windows 10
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,8 +10,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
-ms.date: 11/16/2017
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 
@@ -57,7 +59,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <tr><td>[Convert PC to VM](#convert-pc-to-vm)<td>Convert a physical computer on your network to a VM hosted in Hyper-V.<td>30 minutes
 <tr><td>[Resize VHD](#resize-vhd)<td>Increase the storage capacity for one of the Windows Server VMs.<td>5 minutes
 <tr><td>[Configure Hyper-V](#configure-hyper-v)<td>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<td>15 minutes
-<tr><td>[Configure service and user accounts](#configure-service-and-user-accounts)<td>Start virtual machines and configure all services and settings.<td>60 minutes
+<tr><td>[Configure service and user accounts](#configure-vms)<td>Start virtual machines and configure all services and settings.<td>60 minutes
 <tr><td>[Configure VMs](#configure-vms)<td>Start virtual machines and configure all services and settings.<td>60 minutes
 <tr><td>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<td>Verify and troubleshoot network connectivity and services in the PoC environment.<td>30 minutes
 <tr><td>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<td>Terms used in this guide.<td>Informational

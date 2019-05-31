@@ -1,8 +1,11 @@
 ---
 title: How to Delete a Report
 description: How to Delete a Report
-author: jamiejdt
+author: dansimp
 ms.assetid: 53350b71-1fb5-4f7e-a684-9ea1116c5c3f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

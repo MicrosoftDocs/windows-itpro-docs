@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.0 Server Deployment
 description: Planning for MBAM 2.0 Server Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: b57f1a42-134f-4997-8697-7fbed08e2fc4
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

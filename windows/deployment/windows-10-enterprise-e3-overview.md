@@ -8,7 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
-author: greg-lindsay
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -249,7 +252,7 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 ## Related topics
 
-[Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
+[Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md)
 <BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
 <BR>[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)
 <BR>[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)

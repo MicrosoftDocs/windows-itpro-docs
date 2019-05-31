@@ -1,8 +1,11 @@
 ---
 title: Delete a Controlled GPO
 description: Delete a Controlled GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 2a461018-aa0b-4ae3-b079-efc554ca4a3d
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

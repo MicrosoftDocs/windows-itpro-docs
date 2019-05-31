@@ -6,9 +6,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 03/28/2019
+ms.reviewer: 
+manager: dansimp
 
 ---
 
@@ -57,6 +59,12 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 |---|----------------------------|
 |**Q:** |How do I configure WDAG to work with my network proxy (IP-Literal Addresses)?|
 |**A:** |WDAG requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as “192.168.1.4:81” can be annotated as “itproxy:81” or using a record such as “P19216810010” for a proxy with an IP address of 192.168.100.10. This applies to Windows 10 Enterprise edition, 1709 or higher.|
+<br>
+
+| | |
+|---|----------------------------|
+|**Q:** |Which Input Method Editors (IME) in 19H1 are not supported?|
+|**A:** |The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in WDAG.<br>Vietnam Telex keyboard<br>Vietnam number key-based keyboard<br>Hindi phonetic keyboard<br>Bangla phonetic keyboard<br>Marathi phonetic keyboard<br>Telugu phonetic keyboard<br>Tamil phonetic keyboard<br>Kannada phonetic keyboard<br>Malayalam phonetic keyboard<br>Gujarati phonetic keyboard<br>Odia phonetic keyboard<br>Punjabi phonetic keyboard|
 <br>
 
 | | |

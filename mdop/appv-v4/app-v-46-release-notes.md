@@ -1,8 +1,11 @@
 ---
 title: App-V 4.6 Release Notes
 description: App-V 4.6 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: a3eba129-edac-48bf-a933-3bf43a9873e5
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

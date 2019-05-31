@@ -1,8 +1,11 @@
 ---
 title: How to Import an Application
 description: How to Import an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 85aaf5d8-489c-4929-996f-f15d2dab1ad8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

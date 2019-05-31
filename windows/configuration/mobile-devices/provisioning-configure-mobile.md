@@ -7,10 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use Windows Configuration Designer to configure Windows 10 Mobile devices 
@@ -44,7 +46,7 @@ The **Provision Windows mobile devices** wizard lets you configure common settin
 <table>
 <tr><td style="width:45%" valign="top">![step one](../images/one.png)![set up device](../images/set-up-device-mobile.png)</br></br>Enter a device name.</br></br> Optionally, you can enter a product key to upgrade the device from Windows 10 Mobile to Windows 10 Mobile Enterprise. </td><td>![device name, upgrade license](../images/set-up-device-details-mobile.png)</td></tr>
 <tr><td style="width:45%" valign="top">![step two](../images/two.png)  ![set up network](../images/set-up-network-mobile.png)</br></br>Toggle **On** or **Off** for wireless network connectivity. </br></br>If you select **On**, enter the SSID, network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](../images/set-up-network-details-mobile.png)</td></tr>
-<tr><td style="width:45%" valign="top">![step three](../images/three.png)  ![bulk enrollment in Azure Active Directory](../images/bulk-enroll-mobile.png)</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup). The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. </br></br> Set an expiration date for the token (maximum is 30 days from the date you get the token). Click **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Click **Accept** to give Windows Configuration Designer the necessary permissions.</br></br>**Warning:** You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards. </td><td>![Enter expiration and get bulk token](../images/bulk-enroll-mobile-details.png)</td></tr>
+<tr><td style="width:45%" valign="top">![step three](../images/three.png)  ![bulk enrollment in Azure Active Directory](../images/bulk-enroll-mobile.png)</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup). The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. </br></br> Set an expiration date for the token (maximum is 180 days from the date you get the token). Click **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Click **Accept** to give Windows Configuration Designer the necessary permissions.</br></br>**Warning:** You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards. </td><td>![Enter expiration and get bulk token](../images/bulk-enroll-mobile-details.png)</td></tr>
 <tr><td style="width:45%" valign="top">![step four](../images/four.png) ![finish](../images/finish-mobile.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](../images/finish-details-mobile.png)</td></tr>
 </table>
 

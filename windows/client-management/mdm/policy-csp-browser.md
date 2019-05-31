@@ -4,9 +4,11 @@ description: Policy CSP - Browser
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
-ms.author: pashort
+author: v-madhi
+ms.author: v-madhi
 ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Browser

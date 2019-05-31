@@ -1,8 +1,11 @@
 ---
 title: How to Localize the Self-Service Portal “HelpdeskURL”
 description: How to Localize the Self-Service Portal “HelpdeskURL”
-author: jamiejdt
+author: dansimp
 ms.assetid: 86798460-077b-459b-8d54-4b605e07d2f1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

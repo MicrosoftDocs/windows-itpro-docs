@@ -1,8 +1,11 @@
 ---
 title: Operations for MED-V
 description: Operations for MED-V
-author: jamiejdt
+author: levinec
 ms.assetid: 8f3f367d-fa9d-4468-814a-f0495adfaea4
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

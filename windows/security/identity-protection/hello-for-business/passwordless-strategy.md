@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Password-less Strategy
 
@@ -117,7 +118,7 @@ You will want to balance testing in a lab with providing results to management q
 
 ## The Process
 
-The journey to password-less is to take each work persona through each password-less step. In the begging, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
+The journey to password-less is to take each work persona through each password-less step. In the beginning, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
 
 1. Password-less replacement offering (Step 1) 
    1. Identify test users that represent the targeted work persona.

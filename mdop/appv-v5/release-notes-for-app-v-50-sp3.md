@@ -1,8 +1,11 @@
 ---
 title: Release Notes for App-V 5.0 SP3
 description: Release Notes for App-V 5.0 SP3
-author: jamiejdt
+author: msfttracyp
 ms.assetid: bc4806e0-2aba-4c7b-9ecc-1b2cc54af1d0
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

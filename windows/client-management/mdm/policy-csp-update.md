@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/08/2019
+author: v-madhi
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Update
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -998,7 +997,6 @@ If you disable or do not configure this policy setting, the wake setting as spec
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Automatic Maintenance WakeUp Policy*
--   GP category English path: *Windows Components/Maintenance Scheduler*
 -   GP name: *WakeUpPolicy*
 -   GP path: *Windows Components/Maintenance Scheduler*
 -   GP ADMX file name: *msched.admx*
@@ -1130,9 +1128,9 @@ Default value is 7.
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineForFeatureUpdates*
 -   GP element: *ConfigureDeadlineForFeatureUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1189,9 +1187,9 @@ Added in Windows 10, version 1903. Allows IT admins to specify the number of day
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineForQualityUpdates*
 -   GP element: *ConfigureDeadlineForQualityUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1252,9 +1250,9 @@ Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/C
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineGracePeriod*
 -   GP element: *ConfigureDeadlineGracePeriod*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -1317,9 +1315,9 @@ When disabled, if the device has installed the required updates and is outside o
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP category English path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP name: *ConfigureDeadlineNoAutoReboot*
 -   GP element: *ConfigureDeadlineNoAutoReboot*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
@@ -3965,15 +3963,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
@@ -3981,15 +3976,12 @@ ADMX Info:
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 - [Update/RequireUpdateApproval](#update-requireupdateapproval)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+
 <!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->

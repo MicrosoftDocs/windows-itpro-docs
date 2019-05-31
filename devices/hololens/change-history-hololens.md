@@ -1,12 +1,14 @@
 ---
 title: Change history for Microsoft HoloLens documentation
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics for HoloLens.
 keywords: change history
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---

@@ -2,6 +2,9 @@
 title: Assign applications using roles in MDT (Windows 10)
 description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
 ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: settings, database, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy

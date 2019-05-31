@@ -1,8 +1,11 @@
 ---
 title: How to Remove an Application License Group
 description: How to Remove an Application License Group
-author: jamiejdt
+author: eavena
 ms.assetid: 35830916-7015-44cd-829b-23599a5029a7
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

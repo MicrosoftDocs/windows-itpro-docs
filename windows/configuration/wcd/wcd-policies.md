@@ -1,14 +1,15 @@
 ---
 title: Policies (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This section describes the Policies settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
-ms.date: 10/02/2018
 ---
 
 # Policies (Windows Configuration Designer reference)
@@ -154,7 +155,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X | X |  |
+| [AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X |  |  |
 
 
 ## Connectivity
@@ -337,12 +338,46 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 5. Open the project again in Windows Configuration Designer.
 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
 
+## LocalPoliciesSecurityOptions
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| [InteractiveLogon_DoNotDisplayLastSignedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin) | Specify whether the Windows sign-in screen will show the username of the last person who signed in. | X |  |  |  |  |
+| [Shutdown_AllowSystemtobeShutDownWithoutHavingToLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon) | Specify whether a computer can be shut down without signing in. | X |  |  |  |  |
+| [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers) | Configure how an elevation prompt should behave for standard users. | X |  |  |  |  |
+
 ## Location
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
 | [EnableLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#location-enablelocation) | Do not use. |  |  |  |  |  |
 
+## Power
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| [AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingonbattery) | Specify whether Windows can use standby states when putting the computer in a sleep state while on battery. | X |  |  |  |  |
+| [AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingpluggedin) | Specify whether Windows can use standby states when putting the computer in a sleep state while plugged in. | X |  |  |  |  |
+| [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutonbattery) | Specify the period of inactivity before Windows turns off the display while on battery. | X |  |  |  |  |
+| [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | Specify the period of inactivity before Windows turns off the display while plugged in. | X |  |  |  |  |
+| [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#energysaverbatterythresholdonbattery) | Specify the battery charge level at which Energy Saver is turned on while on battery.  | X |  |  |  |  |
+| [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#EnergySaverBatteryThresholdPluggedIn) | Specify the battery charge level at which Energy Saver is turned on while plugged in. | X |  |  |  |  |
+| [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutonbattery) | Specify the period of inactivity before Windows transitions the system to hibernate while on battery. | X |  |  |  |  |
+| [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to hibernate while plugged in.   | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakesonbattery) | Specify whether the user is prompted for a password when the system resumes from sleep while on battery. | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakespluggedin) | Specify whether the user is prompted for a password when the system resumes from sleep while plugged in. | X |  |  |  |  |
+| [SelectLidCloseActionBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) | Select the action to be taken when a user closes the lid on a mobile device while on battery. | X |  |  |  |  |
+| [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) | Select the action to be taken when a user closes the lid on a mobile device while on plugged in. | X |  |  |  |  |
+| [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactiononbattery) | Select the action to be taken when the user presses the power button while on battery.  | X |  |  |  |  |
+| [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | Select the action to be taken when the user presses the power button while on plugged in. | X |  |  |  |  |
+| [SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactiononbattery) | Select the action to be taken when the user presses the sleep button while on battery. | X |  |  |  |  |
+| [SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactionpluggedin) | Select the action to be taken when the user presses the sleep button while plugged in. | X |  |  |  |  |
+| [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#StandbyTimeoutOnBattery) | Specify the period of inactivity before Windows transitions the system to sleep while on battery. | X |  |  |  |  |
+| [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to sleep while plugged in. | X |  |  |  |  |
+| [TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeponbattery) | Turn off hybrid sleep while on battery. | X |  |  |  |  |
+| [TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeppluggedin) | Turn off hybrid sleep while plugged in. | X |  |  |  |  |
+| [UnattendedSleepTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutonbattery) | Specify the period of inactivity before Windows transitions the system to sleep automatically when a user is not present while on battery. | X |  |  |  |  |
+| [UnattendedSleepTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to sleep automatically when a user is not present while plugged in.  | X |  |  |  |  |
 
 ## Privacy
 
@@ -534,7 +569,7 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [AllowInternetSharing](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowinternetsharing) | Allow Internet sharing. | X | X |  |  |  |
 | [AllowManualWiFiConfiguration](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowmanualwificonfiguration) | Allow connecting to Wi-Fi outside of MDM server-installed networks. |  | X |  |  |  |
 | [AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowwifi) | Allow Wi-Fi connections. |  | X |  |  |  |
-| [WLANScanMode](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-wlanscanmode) | Configure the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. | X | X | X | X | X |
+| [WLANScanMode](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-wlanscanmode) | Configure the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. | X | X | X |  | X |
 
 ## WindowsInkWorkspace
 

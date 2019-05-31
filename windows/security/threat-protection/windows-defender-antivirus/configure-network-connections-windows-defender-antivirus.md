@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 10/08/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate Windows Defender Antivirus network connections
@@ -95,7 +97,16 @@ Security intelligence and product updates
  Upload location for files submitted to Microsoft via the <a href="https://www.microsoft.com/en-us/security/portal/submission/submit.aspx">Submission form</a> or automatic sample submission
 </td>
 <td>
-*.blob.core.windows.net
+ussus1eastprod.blob.core.windows.net<br />
+ussus1westprod.blob.core.windows.net<br />
+usseu1northprod.blob.core.windows.net<br />
+usseu1westprod.blob.core.windows.net<br />
+ussuk1southprod.blob.core.windows.net<br />
+ussuk1westprod.blob.core.windows.net<br />
+ussas1eastprod.blob.core.windows.net<br />
+ussas1southeastprod.blob.core.windows.net<br />
+ussau1eastprod.blob.core.windows.net<br />
+ussau1southeastprod.blob.core.windows.net<br />
 </td>
 </tr>
 <tr style="vertical-align:top">

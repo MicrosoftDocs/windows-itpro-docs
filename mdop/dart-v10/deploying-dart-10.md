@@ -1,8 +1,11 @@
 ---
 title: Deploying DaRT 10
 description: Deploying DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 92cf70fd-006f-4fdc-9fb3-78d9d223148d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

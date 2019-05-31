@@ -1,8 +1,11 @@
-﻿---
+---
 title: Upgrade Readiness - Get a list of computers that are upgrade ready (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Readiness.
 ms.prod: w10
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---

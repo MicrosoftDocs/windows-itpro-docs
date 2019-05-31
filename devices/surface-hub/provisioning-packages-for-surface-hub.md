@@ -2,11 +2,13 @@
 title: Create provisioning packages (Surface Hub)
 description: For Windows 10, settings that use the registry or a configuration service provider (CSP) can be configured using provisioning packages. 
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
+ms.reviewer: 
+manager: dansimp
 keywords: add certificate, provisioning package
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium

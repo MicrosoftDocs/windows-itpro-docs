@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Server to be Trusted for Delegation
 description: How to Configure the Server to be Trusted for Delegation
-author: jamiejdt
+author: dansimp
 ms.assetid: d8d11588-17c0-4bcb-a7e6-86b5e4ba7e1c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

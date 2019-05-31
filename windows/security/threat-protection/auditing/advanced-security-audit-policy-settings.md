@@ -2,12 +2,14 @@
 title: Advanced security audit policy settings (Windows 10)
 description: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 93b28b92-796f-4036-a53b-8b9e80f9f171
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: justinha
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -62,7 +64,7 @@ Detailed Tracking security policy settings and audit events can be used to monit
 -   [Audit Process Creation](audit-process-creation.md)
 -   [Audit Process Termination](audit-process-termination.md)
 -   [Audit RPC Events](audit-rpc-events.md)
-
+-   [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
 > **Note:**  For more information, see [Security Monitoring](https://blogs.technet.microsoft.com/nathangau/2018/01/25/security-monitoring-a-possible-new-way-to-detect-privilege-escalation/)
 
 ## DS Access

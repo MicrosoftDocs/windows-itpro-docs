@@ -2,12 +2,14 @@
 title: Network security LDAP client signing requirements (Windows 10)
 description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.
 ms.assetid: 38b35489-eb5b-4035-bc87-df63de50509c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
