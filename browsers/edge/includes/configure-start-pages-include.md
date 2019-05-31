@@ -44,7 +44,7 @@ ms:topic: include
 
 ### Related policies
 
-- [Disable Lockdown of Start Pages](#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
+- [Disable Lockdown of Start Pages](../available-policies.md#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
 
 - [Configure Open Microsoft Edge With](../available-policies.md#configure-open-microsoft-edge-with): [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
