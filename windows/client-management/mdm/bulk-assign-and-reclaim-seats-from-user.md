@@ -2,11 +2,13 @@
 title: Bulk assign and reclaim seats from users
 description: The Bulk assign and reclaim seats from users operation returns reclaimed or assigned seats in the Microsoft Store for Business.
 ms.assetid: 99E2F37D-1FF3-4511-8969-19571656780A
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 09/18/2017
 ---
 

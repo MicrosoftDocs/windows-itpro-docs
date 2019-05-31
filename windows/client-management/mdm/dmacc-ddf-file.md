@@ -2,11 +2,13 @@
 title: DMAcc DDF file
 description: DMAcc DDF file
 ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 12/05/2017
 ---
 

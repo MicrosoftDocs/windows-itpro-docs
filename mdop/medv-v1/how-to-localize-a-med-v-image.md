@@ -1,8 +1,11 @@
 ---
 title: How to Localize a MED-V Image
 description: How to Localize a MED-V Image
-author: jamiejdt
+author: dansimp
 ms.assetid: adc148b3-8cfe-42a0-8847-be6b689a673a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

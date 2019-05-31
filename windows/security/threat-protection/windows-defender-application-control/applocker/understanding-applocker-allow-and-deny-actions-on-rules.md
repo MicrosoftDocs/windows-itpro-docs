@@ -2,12 +2,14 @@
 title: Understanding AppLocker allow and deny actions on rules (Windows 10)
 description: This topic explains the differences between allow and deny actions on AppLocker rules.
 ms.assetid: ea0370fa-2086-46b5-a0a4-4a7ead8cbed9
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

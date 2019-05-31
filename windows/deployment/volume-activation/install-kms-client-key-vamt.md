@@ -2,11 +2,14 @@
 title: Install a KMS Client Key (Windows 10)
 description: Install a KMS Client Key
 ms.assetid: d234468e-7917-4cf5-b0a8-4968454f7759
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article

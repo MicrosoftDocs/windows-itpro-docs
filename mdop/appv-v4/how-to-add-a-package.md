@@ -1,8 +1,11 @@
 ---
 title: How to Add a Package
 description: How to Add a Package
-author: jamiejdt
+author: dansimp
 ms.assetid: 5407fdbe-e658-44f6-a9b8-a566b81dedce
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

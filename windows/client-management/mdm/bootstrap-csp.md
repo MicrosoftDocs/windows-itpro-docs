@@ -2,11 +2,13 @@
 title: BOOTSTRAP CSP
 description: BOOTSTRAP CSP
 ms.assetid: b8acbddc-347f-4543-a45b-ad2ffae3ffd0
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 

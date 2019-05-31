@@ -1,8 +1,11 @@
 ---
 title: How to Move the MBAM 2.5 Websites
 description: How to Move the MBAM 2.5 Websites
-author: jamiejdt
+author: dansimp
 ms.assetid: 71af9a54-c27b-408f-9d75-37c0d02e730e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

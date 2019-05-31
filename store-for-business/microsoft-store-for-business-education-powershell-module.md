@@ -11,6 +11,8 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author:
 ms.date: 10/22/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft Store for Business and Education PowerShell module - preview

@@ -1,8 +1,11 @@
 ---
 title: Best Practices for the Application Virtualization Sequencer
 description: Best Practices for the Application Virtualization Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: 95e5e216-864f-41a1-90d4-b8d7e1eb42a0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

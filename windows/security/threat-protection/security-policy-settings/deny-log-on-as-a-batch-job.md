@@ -2,12 +2,14 @@
 title: Deny log on as a batch job (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a batch job security policy setting.
 ms.assetid: 0ac36ebd-5e28-4b6a-9b4e-8924c6ecf44b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

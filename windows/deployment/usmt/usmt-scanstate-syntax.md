@@ -2,6 +2,9 @@
 title: ScanState Syntax (Windows 10)
 description: ScanState Syntax
 ms.assetid: 004c755f-33db-49e4-8a3b-37beec1480ea
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

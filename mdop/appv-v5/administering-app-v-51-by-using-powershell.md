@@ -1,8 +1,11 @@
 ---
 title: Administering App-V 5.1 by Using PowerShell
 description: Administering App-V 5.1 by Using PowerShell
-author: jamiejdt
+author: v-madhi
 ms.assetid: 9e10ff07-2cd9-4dc1-9e99-582f90c36081
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

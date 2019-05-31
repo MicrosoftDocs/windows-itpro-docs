@@ -1,8 +1,11 @@
 ---
 title: Removing MBAM Server Features or Software
 description: Removing MBAM Server Features or Software
-author: jamiejdt
+author: dansimp
 ms.assetid: 5212ba3f-124d-43c5-824a-608e9a192e86
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

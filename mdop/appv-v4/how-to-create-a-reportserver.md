@@ -1,8 +1,11 @@
 ---
 title: How to Create a Report
 description: How to Create a Report
-author: jamiejdt
+author: dansimp
 ms.assetid: 70938167-d3b9-45ce-b459-a953c93769b0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

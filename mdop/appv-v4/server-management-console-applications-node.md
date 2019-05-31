@@ -1,8 +1,11 @@
 ---
 title: Server Management Console Applications Node
 description: Server Management Console Applications Node
-author: jamiejdt
+author: eavena
 ms.assetid: e465f816-032d-4824-9924-f2dcf30f2a2c
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

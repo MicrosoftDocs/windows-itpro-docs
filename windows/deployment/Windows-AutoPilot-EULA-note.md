@@ -6,8 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
-ms.author: mayam
+ms.author: dansimp
 ms.date: 08/22/2017
+ms.reviewer: 
+manager: dansimp
+author: dansimp
 ROBOTS: noindex,nofollow
 ms.topic: article
 ---

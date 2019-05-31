@@ -1,8 +1,11 @@
 ---
 title: High Level Architecture for App-V 5.0
 description: High Level Architecture for App-V 5.0
-author: jamiejdt
+author: dansimp
 ms.assetid: fdf8b841-918f-4672-b352-0f2b9519581b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,12 +2,14 @@
 title: Script rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the script rule collection.
 ms.assetid: fee24ca4-935a-4c5e-8a92-8cf1d134d35f
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

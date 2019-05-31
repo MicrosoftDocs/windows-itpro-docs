@@ -3,9 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn how to set up and use Enterprise Mode, Enterprise Mode Site List Manager, and the Enterprise Mode Site List Portal for your company.
-author: jdeckerms
+author: eavena
 ms.prod: ie11
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -2,6 +2,9 @@
 title: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager (Windows 10)
 description: This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: configure, deploy, upgrade
 ms.prod: w10
 ms.localizationpriority: medium

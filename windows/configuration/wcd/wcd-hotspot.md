@@ -4,11 +4,13 @@ description: This section describes the HotSpot settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 12/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # HotSpot (Windows Configuration Designer reference)

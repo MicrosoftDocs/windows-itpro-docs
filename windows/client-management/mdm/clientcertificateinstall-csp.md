@@ -2,11 +2,13 @@
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: pashort
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
+author: v-madhi
 ms.date: 10/16/2018
 ---
 

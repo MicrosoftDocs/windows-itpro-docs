@@ -1,8 +1,11 @@
 ---
 title: How to Configure the App-V System for Package Upgrade
 description: How to Configure the App-V System for Package Upgrade
-author: jamiejdt
+author: dansimp
 ms.assetid: de133898-f887-46c1-9bc9-fbb03feac66a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

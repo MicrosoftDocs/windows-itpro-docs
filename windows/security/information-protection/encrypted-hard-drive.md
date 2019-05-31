@@ -2,11 +2,14 @@
 title: Encrypted Hard Drive (Windows 10)
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: dulcemontemayor
 ms.date: 04/02/2019
 ---
 

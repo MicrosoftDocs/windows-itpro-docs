@@ -1,8 +1,11 @@
 ---
 title: Recycle Bin Commands
 description: Recycle Bin Commands
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 347a101f-0ba0-4afc-bd59-752cc06bb904
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

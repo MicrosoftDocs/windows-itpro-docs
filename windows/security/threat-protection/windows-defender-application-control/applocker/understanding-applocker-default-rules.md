@@ -2,12 +2,14 @@
 title: Understanding AppLocker default rules (Windows 10)
 description: This topic for IT professional describes the set of rules that can be used to ensure that required Windows system files are allowed to run when the policy is applied.
 ms.assetid: bdb03d71-05b7-41fb-96e3-a289ce1866e1
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

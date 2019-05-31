@@ -8,9 +8,11 @@ ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 08/29/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Microsoft Store for Education
