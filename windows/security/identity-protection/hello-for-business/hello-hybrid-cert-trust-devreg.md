@@ -29,8 +29,8 @@ Your environment is federated and you are ready to configure device registration
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
->[!IMPORTANT]
-> The identity team has simpolified the join flow for Azure AD device registration, the tutorial can be found [here](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-federated-domains).
+>[!TIP]
+>Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
 
 Use this three-phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
@@ -500,7 +500,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 ![Device Registration](images/hybridct/device8.png) 
  
 - object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
-- read/write access to the specified AD connector account name on the new object 
+  - read/write access to the specified AD connector account name on the new object 
 - object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - object of type msDS-DeviceRegistrationService in the above container
 
