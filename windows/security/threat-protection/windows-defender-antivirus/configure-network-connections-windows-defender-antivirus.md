@@ -44,7 +44,7 @@ See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
+As a cloud service, it is required that computers have access to the internet and that the ATP machine learning services are reachable. The following table lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an allow rule specifically for them:
 
 
 | **Service**| **Description** |**URL** |
@@ -56,9 +56,6 @@ The following table lists the services and their associated URLs that your netwo
 | *Certificate Revocation List (CRL)*	|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| http://www.microsoft.com/pkiops/crl/   http://www.microsoft.com/pkiops/certs  http://crl.microsoft.com/pki/crl/products   http://www.microsoft.com/pki/certs |
 | *Symbol Store	*|Used by Windows Defender Antivirus to restore certain critical files during remediation flows	| https://msdl.microsoft.com/download/symbols |
 | *Universal Telemetry Client*	| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   * vortex-win.data.microsoft.com  * settings-win.data.microsoft.com|
-
->[!IMPORTANT]
-> As a cloud service is required that the computer has access to internet the firewall and traffic can hit the ATP, machine learning services.
 
 ## Validate connections between your network and the cloud
 
