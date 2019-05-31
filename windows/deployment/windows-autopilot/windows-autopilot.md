@@ -71,7 +71,7 @@ Windows Autopilot enables you to:
 * Create and auto-assign devices to configuration groups based on a device's profile.
 * Customize OOBE content specific to the organization.
 
-See [Windows Autopilot scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-scenarios) for more information about scenarios for using Windows Autopilot.
+See [Windows Autopilot scenarios](windows-autopilot-scenarios.md) for more information about scenarios for using Windows Autopilot.
 
 ## Related topics
 
