@@ -1,10 +1,11 @@
 ---
 title: Microsoft Edge - Security and privacy group policies
 description: Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. 
-manager: dougkim
-ms.author: pashort
-author: shortpatti
+manager: dansimp
+ms.author: eravena
+author: eavena
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: reference
 ---

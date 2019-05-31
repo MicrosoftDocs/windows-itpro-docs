@@ -1,8 +1,11 @@
 ---
 title: Creating the DaRT 10 Recovery Image
 description: Creating the DaRT 10 Recovery Image
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 173556de-2f20-4ea6-9e29-fc5ccc71ebd7
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

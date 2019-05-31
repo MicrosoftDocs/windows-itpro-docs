@@ -2,12 +2,14 @@
 title: SMB v1 Microsoft network server Digitally sign communications (always) (Windows 10)
 description: For SMB v1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (always) security policy setting.
 ms.assetid: 2007b622-7bc2-44e8-9cf1-d34b62117ea8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

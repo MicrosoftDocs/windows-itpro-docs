@@ -1,8 +1,11 @@
 ---
 title: App-V 4.5 SP2 Release Notes
 description: App-V 4.5 SP2 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: 1b3a8a83-4523-4634-9f75-29bc22ca5815
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

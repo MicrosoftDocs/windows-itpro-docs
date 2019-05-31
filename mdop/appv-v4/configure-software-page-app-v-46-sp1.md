@@ -1,8 +1,11 @@
 ---
 title: Configure Software Page
 description: Configure Software Page
-author: jamiejdt
+author: dansimp
 ms.assetid: 50596eba-ce20-4d36-8e57-bd4b6c6cf92e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

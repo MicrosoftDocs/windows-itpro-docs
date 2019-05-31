@@ -8,7 +8,10 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
-author: jaimeo
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.topic: article
 ---
 

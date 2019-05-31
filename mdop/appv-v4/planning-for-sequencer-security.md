@@ -1,8 +1,11 @@
 ---
 title: Planning for Sequencer Security
 description: Planning for Sequencer Security
-author: jamiejdt
+author: eavena
 ms.assetid: 8043cb02-476d-4c28-a850-903a8ac5b2d3
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,9 +3,11 @@ title: Windows as a service
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: greg-lindsay
+ms.author: greglin
 ms.date: 12/19/2018
+ms.reviewer: 
+manager: laurawi
 ms.localizationpriority: high
 ms.topic: article
 ---

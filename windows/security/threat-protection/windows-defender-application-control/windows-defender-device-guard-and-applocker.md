@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 05/03/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Windows Defender Device Guard with AppLocker

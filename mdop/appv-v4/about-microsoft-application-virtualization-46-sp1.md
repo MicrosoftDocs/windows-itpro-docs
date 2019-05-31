@@ -1,8 +1,11 @@
 ---
 title: About Microsoft Application Virtualization 4.6 SP1
 description: About Microsoft Application Virtualization 4.6 SP1
-author: jamiejdt
+author: dansimp
 ms.assetid: 20917eb6-c998-43f8-aefa-307eb322dc8d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

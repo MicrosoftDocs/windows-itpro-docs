@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: MariciaAlforque
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/26/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 

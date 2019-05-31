@@ -2,6 +2,9 @@
 title: How USMT Works (Windows 10)
 description: How USMT Works
 ms.assetid: 5c8bd669-9e1e-473d-81e6-652f40b24171
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

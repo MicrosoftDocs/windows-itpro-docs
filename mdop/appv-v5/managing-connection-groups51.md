@@ -1,8 +1,11 @@
 ---
 title: Managing Connection Groups
 description: Managing Connection Groups
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 22c9d3cb-7246-4173-9742-4ba1c24b0a6a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

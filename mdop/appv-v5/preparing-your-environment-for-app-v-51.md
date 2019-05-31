@@ -1,8 +1,11 @@
 ---
 title: Preparing Your Environment for App-V 5.1
 description: Preparing Your Environment for App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 64b2e1ac-1561-4c99-9815-b4688a0ff48a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

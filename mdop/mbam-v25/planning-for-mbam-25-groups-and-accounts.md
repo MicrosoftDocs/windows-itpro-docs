@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5 Groups and Accounts
 description: Planning for MBAM 2.5 Groups and Accounts
-author: jamiejdt
+author: dansimp
 ms.assetid: 73bb9fe5-5900-4b6f-b271-ade62991fca1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: lizap
-ms.author: elizapo
+author: greg-lindsay
+ms.author: greglin
 ms.date: 11/16/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10, version 1809

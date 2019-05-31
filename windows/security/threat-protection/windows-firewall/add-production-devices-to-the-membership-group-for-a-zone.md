@@ -2,12 +2,14 @@
 title: Add Production Devices to the Membership Group for a Zone (Windows 10)
 description: Add Production Devices to the Membership Group for a Zone
 ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

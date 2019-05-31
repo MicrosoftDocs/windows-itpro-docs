@@ -2,11 +2,13 @@
 title: CMPolicyEnterprise CSP
 description: CMPolicyEnterprise CSP
 ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

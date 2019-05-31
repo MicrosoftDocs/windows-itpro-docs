@@ -1,8 +1,11 @@
 ---
 title: Getting Started with App-V 5.0
 description: Getting Started with App-V 5.0
-author: jamiejdt
+author: dansimp
 ms.assetid: 3e16eafb-ce95-4d06-b214-fe0f4b1b495f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

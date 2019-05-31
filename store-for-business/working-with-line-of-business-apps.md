@@ -2,6 +2,8 @@
 title: Working with line-of-business apps (Windows 10)
 description: Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your organization – they might be internal business apps, or apps specific to your school, business, or industry.
 ms.assetid: 95EB7085-335A-447B-84BA-39C26AEB5AC7
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

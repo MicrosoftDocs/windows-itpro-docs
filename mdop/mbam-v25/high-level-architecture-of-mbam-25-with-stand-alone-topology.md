@@ -1,8 +1,11 @@
 ---
 title: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
 description: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
-author: jamiejdt
+author: dansimp
 ms.assetid: 35f8c5f6-8be3-443d-baf0-56d68b08f3bc
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

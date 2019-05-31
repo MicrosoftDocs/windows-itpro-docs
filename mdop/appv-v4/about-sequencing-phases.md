@@ -1,8 +1,11 @@
 ---
 title: About Sequencing Phases
 description: About Sequencing Phases
-author: jamiejdt
+author: dansimp
 ms.assetid: c1cb7b6c-204c-48f2-848c-4bd5a3d5ecb6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

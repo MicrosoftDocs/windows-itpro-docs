@@ -1,11 +1,14 @@
 ---
 title: What's new in Windows 10, version 1809
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: New and updated features in Windows 10, version 1809
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---

@@ -1,8 +1,11 @@
 ---
 title: Recovering Computers Using DaRT 7.0
 description: Recovering Computers Using DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: bcded7ca-237b-4971-ac34-4394b05cbc50
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

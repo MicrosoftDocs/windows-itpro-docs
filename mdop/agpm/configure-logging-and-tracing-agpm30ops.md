@@ -1,8 +1,11 @@
 ---
 title: Configure Logging and Tracing
 description: Configure Logging and Tracing
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 4f89552f-e949-48b0-9325-23746034eaa4
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

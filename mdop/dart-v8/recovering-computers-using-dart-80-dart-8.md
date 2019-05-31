@@ -1,8 +1,11 @@
 ---
 title: Recovering Computers Using DaRT 8.0
 description: Recovering Computers Using DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 0caeb7d9-c1e6-4f32-bc27-157b91630989
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

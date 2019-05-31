@@ -1,8 +1,11 @@
 ---
 title: Create Package Page
 description: Create Package Page
-author: jamiejdt
+author: dansimp
 ms.assetid: dd7a8709-74cc-459a-88ac-b63d8dcf2ddf
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

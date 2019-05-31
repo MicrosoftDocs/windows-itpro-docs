@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 09/07/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity

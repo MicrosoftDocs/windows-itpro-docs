@@ -1,8 +1,11 @@
 ---
 title: How to Uninstall the App-V 5.1 Client
 description: How to Uninstall the App-V 5.1 Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 21f2d946-fc9f-4cd3-899b-ac52b3fbc306
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

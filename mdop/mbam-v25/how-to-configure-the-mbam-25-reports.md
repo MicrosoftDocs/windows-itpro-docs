@@ -1,8 +1,11 @@
 ---
 title: How to Configure the MBAM 2.5 Reports
 description: How to Configure the MBAM 2.5 Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: ec462879-0253-4d9c-83c7-a9bcad479725
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

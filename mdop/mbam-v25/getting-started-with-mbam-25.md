@@ -1,8 +1,11 @@
 ---
 title: Getting Started with MBAM 2.5
 description: Getting Started with MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 23d0cfbb-e2ef-4c34-bf29-1b7ab4c48f00
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

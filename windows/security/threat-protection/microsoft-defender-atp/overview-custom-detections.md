@@ -1,5 +1,6 @@
 ---
 title: Custom detections overview
+ms.reviewer: 
 description: Understand how how you can leverage the power of advanced hunting to create custom detections
 keywords: custom detections, detections, advanced hunting, hunt, detect, query
 search.product: eADQiWindows 10XVcnh
@@ -8,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

@@ -2,12 +2,14 @@
 title: Audit Audit the use of Backup and Restore privilege (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Audit the use of Backup and Restore privilege security policy setting.
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

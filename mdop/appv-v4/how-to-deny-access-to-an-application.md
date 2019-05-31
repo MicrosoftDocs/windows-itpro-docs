@@ -1,8 +1,11 @@
 ---
 title: How to Deny Access to an Application
 description: How to Deny Access to an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 14f5e201-7265-462c-b738-57938dc3fc30
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

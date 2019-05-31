@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Lists the minimum system requirements and supported languages for Internet Explorer 11.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 27185e3d-c486-4e4a-9c51-5cb317c0006d
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: System requirements and language support for Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

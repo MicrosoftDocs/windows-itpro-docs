@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.get\_seatblock'
 - 'p\_phDeviceMgmt.get\_inventory'
 ms.assetid: C5485722-FC49-4358-A097-74169B204E74
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 09/18/2017
 ---
 
