@@ -9,11 +9,36 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 01/11/2019 
+ms.date: 05/30/2019 
 ---  
 
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, and see updated screenshots. You'll also find information about past releases.   
+
+## Week of May 23, 2019   
+
+### Suspended support for Windows 10, version 1903 and later
+Due to a provisioning problem, Set up School PCs will temporarily stop support for Windows 10, version 1903 and later. When the problem is resolved, we'll update this page with an announcement.  
+
+### Mandatory device rename for Azure AD joined devices
+If you configure Azure AD Join, you'll be required to rename your devices during setup. Set up School PCs will not let you keep existing device names.    
+
+## Week of April 15, 2019  
+
+## Support for Minecraft Education Edition upgrade
+ Set up School PCs will only add apps to the provisioning package that meet the minimum supported version for Windows 10. For example, Minecraft was the most recent store app to upgrade, and when selected, can only be installed on devices running Windows 10, version 1709 and later. If you select a Windows version that's earlier than that, Set up School PCs will not add Minecraft to the provisioning package.  
+
+## Week of April 8, 2019  
+
+### Apps configured as non-removeable  
+All apps that are deployed by Set up School PCs are configured on the device as non-removable apps. This feature ensures that students don't unpin or uninstall the apps they need.  
+
+### Domain name automatically added during sign-in  
+Specify your preferred Azure Active Directory tenant domain name to automatically append it to the username on the sign-in screen. With this setting, students will no longer need to type long school domain names. They can sign in by typing only their unique usernames.  
+
+### Set up devices with hidden Wi-Fi network
+Set up devices so that they connect to a hidden Wi-Fi network. To configure a hidden network, open Set up School PCs. When you get to **Wireless network**, choose **Add a Wi-Fi network**. Enter in your Wi-Fi information and select **Hidden network**.  
+
 
 ## Week of December 31, 2019
 
