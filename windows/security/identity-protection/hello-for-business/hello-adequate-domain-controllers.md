@@ -26,7 +26,7 @@ ms.date: 08/20/2018
 ## How many is adequate
 
  
-How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2019 includes the KDC AS Requests performance counter.  You can use these counters to determine how much of a domain controllers load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication--it remains unchanged.
+How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2019 includes the KDC AS Requests performance counter.  You can use this counter to determine how much of a domain controllers load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
 
 
 Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2019 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2019 domain controller.
