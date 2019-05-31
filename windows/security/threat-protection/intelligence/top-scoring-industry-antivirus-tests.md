@@ -37,9 +37,9 @@ MITRE tested the ability of products to detect techniques commonly used by the t
 [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
-<br>
+<br><br>
 
-![Graph describing Real-World detection rate](./images/transparency-report-small60.png) Download the latest transparency report: [Examining industry test results, May 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
+![Graph describing Real-World detection rate](./images/transparency-report-small60.png) Download the latest transparency report: [**Examining industry test results, May 2019**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
 
 ### AV-TEST: Protection score of 6.0/6.0 in the latest test
 
