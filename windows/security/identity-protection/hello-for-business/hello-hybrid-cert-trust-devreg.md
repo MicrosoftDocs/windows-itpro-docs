@@ -28,7 +28,7 @@ Your environment is federated and you are ready to configure device registration
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
->[!IMPORTANT]
+>[!TIP]
 >Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
 
 Use this three-phased approach for configuring device registration.
