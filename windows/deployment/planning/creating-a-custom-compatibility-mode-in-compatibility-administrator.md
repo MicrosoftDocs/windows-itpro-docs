@@ -2,11 +2,14 @@
 title: Creating a Custom Compatibility Mode in Compatibility Administrator (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
 ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

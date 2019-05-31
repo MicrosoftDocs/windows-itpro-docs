@@ -1,8 +1,11 @@
 ---
 title: Delegate Access to the Production Environment
 description: Delegate Access to the Production Environment
-author: jamiejdt
+author: mjcaparas
 ms.assetid: c1ebae2e-909b-4e64-b368-b7d3cc67b1eb
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

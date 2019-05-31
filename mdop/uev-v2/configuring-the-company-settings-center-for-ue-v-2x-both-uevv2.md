@@ -1,8 +1,11 @@
 ---
 title: Configuring the Company Settings Center for UE-V 2.x
 description: Configuring the Company Settings Center for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 48fadb0a-c0dc-4287-9474-f94ce1417003
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: App-V 5.1 Prerequisites
 description: App-V 5.1 Prerequisites
-author: jamiejdt
+author: v-madhi
 ms.assetid: 1bfa03c1-a4ae-45ec-8a2b-b10c2b94bfb0
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

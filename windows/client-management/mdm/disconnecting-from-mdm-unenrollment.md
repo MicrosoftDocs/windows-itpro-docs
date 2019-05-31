@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

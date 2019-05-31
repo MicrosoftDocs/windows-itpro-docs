@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy DaRT 7.0
 description: Planning to Deploy DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 05e97cdb-a8c2-46e4-9c75-a7d12fe26fe8
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: Design the MED-V Image Repositories
 description: Design the MED-V Image Repositories
-author: jamiejdt
+author: dansimp
 ms.assetid: e153154d-2751-4990-b94d-a2d76242c15f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

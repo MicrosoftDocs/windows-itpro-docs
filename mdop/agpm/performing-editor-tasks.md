@@ -1,8 +1,11 @@
 ---
 title: Performing Editor Tasks
 description: Performing Editor Tasks
-author: jamiejdt
+author: mjcaparas
 ms.assetid: b1e62615-2e02-460e-81d1-4a3fbe59f62d
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

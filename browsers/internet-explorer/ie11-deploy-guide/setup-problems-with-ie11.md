@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: appcompat
 description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

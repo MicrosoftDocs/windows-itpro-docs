@@ -1,8 +1,11 @@
 ---
 title: How to Change Package Properties
 description: How to Change Package Properties
-author: jamiejdt
+author: dansimp
 ms.assetid: 6050916a-d4fe-4dac-8f2a-47308dbbf481
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

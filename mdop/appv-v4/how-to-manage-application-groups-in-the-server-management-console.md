@@ -1,8 +1,11 @@
 ---
 title: How to Manage Application Groups in the Server Management Console
 description: How to Manage Application Groups in the Server Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 46997971-bdc8-4565-aefd-f47e90d6d7a6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

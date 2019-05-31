@@ -2,12 +2,14 @@
 title: Synchronize directory service data (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Synchronize directory service data security policy setting.
 ms.assetid: 97b0aaa4-674f-40f4-8974-b4bfb12c232c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

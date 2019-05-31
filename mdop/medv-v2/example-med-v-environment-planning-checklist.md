@@ -1,8 +1,11 @@
 ---
 title: Example MED-V Environment Planning Checklist
 description: Example MED-V Environment Planning Checklist
-author: jamiejdt
+author: levinec
 ms.assetid: 877d1660-abef-4e81-ab3a-a8a3ec181d26
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

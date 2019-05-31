@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
@@ -208,7 +208,7 @@ IT pros can use various methods, including Group Policy and Mobile Device Manage
 Use the steps in this article to set and/or adjust the diagnostic data settings for Windows and Windows Server in your organization.
 
 > [!IMPORTANT]
-> These diagnostic data levels only apply to Windows and Windows Server components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of Office Telemetry](https://technet.microsoft.com/library/jj863580.aspx).
+> These diagnostic data levels only apply to Windows and Windows Server components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](/deployoffice/privacy/overview-privacy-controls).
 
 The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server is **Enhanced**.
 
@@ -384,6 +384,9 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 -   Ability to get registry keys.
 
 -   All crash dump types, including heap dumps and full dumps.
+
+> [!NOTE]
+> Crash dumps collected at this diagnostic data level may unintentionally contain personally identifiable information (PII), such as portions of memory from a documents, a web page, etc.
 
 ## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
 

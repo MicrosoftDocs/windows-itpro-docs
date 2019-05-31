@@ -1,8 +1,11 @@
 ---
 title: SFTTRAY Command Reference
 description: SFTTRAY Command Reference
-author: jamiejdt
+author: v-madhi
 ms.assetid: 6fa3a939-b047-4d6c-bd1d-dfb93e065eb2
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

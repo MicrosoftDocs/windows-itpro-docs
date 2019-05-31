@@ -4,10 +4,12 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 

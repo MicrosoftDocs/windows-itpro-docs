@@ -2,11 +2,13 @@
 title: Win32AppInventory CSP
 description: Win32AppInventory CSP
 ms.assetid: C0DEDD51-4EAD-4F8E-AEE2-CBE9658BCA22
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

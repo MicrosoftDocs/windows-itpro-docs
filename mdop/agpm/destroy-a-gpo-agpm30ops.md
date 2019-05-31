@@ -1,8 +1,11 @@
 ---
 title: Destroy a GPO
 description: Destroy a GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: bfabd71a-47f3-462e-b86f-5f15762b9e28
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

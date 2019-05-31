@@ -1,8 +1,11 @@
 ---
 title: MED-V 1.0 SP1 Upgrade Checklist
 description: MED-V 1.0 SP1 Upgrade Checklist
-author: jamiejdt
+author: dansimp
 ms.assetid: 1a462b37-8c7a-4826-9175-0b1b701d345b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

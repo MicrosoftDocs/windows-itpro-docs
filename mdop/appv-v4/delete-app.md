@@ -1,8 +1,11 @@
 ---
 title: DELETE APP
 description: DELETE APP
-author: jamiejdt
+author: dansimp
 ms.assetid: 2f89c0c0-373b-4389-a26d-67b3f9712957
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

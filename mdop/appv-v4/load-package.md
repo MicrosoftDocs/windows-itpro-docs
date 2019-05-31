@@ -1,8 +1,11 @@
 ---
 title: LOAD PACKAGE
 description: LOAD PACKAGE
-author: jamiejdt
+author: eavena
 ms.assetid: eb19116d-e5d0-445c-b2f0-3116a09384d7
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

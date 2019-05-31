@@ -1,8 +1,11 @@
 ---
 title: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
 description: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: d41d64a0-0333-4951-ab27-db595bf0f634
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

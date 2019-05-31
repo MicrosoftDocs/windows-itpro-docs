@@ -1,8 +1,11 @@
 ---
 title: Overview of the Tools in DaRT 7.0
 description: Overview of the Tools in DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 67c5991e-cbe6-4ce9-9fe5-f1761369d1fe
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

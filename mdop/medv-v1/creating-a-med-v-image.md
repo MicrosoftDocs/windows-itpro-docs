@@ -1,8 +1,11 @@
 ---
 title: Creating a MED-V Image
 description: Creating a MED-V Image
-author: jamiejdt
+author: dansimp
 ms.assetid: 7cbbcd22-83f5-4b60-825f-781b4c6a2d36
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

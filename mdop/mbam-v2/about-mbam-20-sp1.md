@@ -1,8 +1,11 @@
 ---
 title: About MBAM 2.0 SP1
 description: About MBAM 2.0 SP1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5ba89ed8-bb6e-407b-82c2-e2e36dd1078e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

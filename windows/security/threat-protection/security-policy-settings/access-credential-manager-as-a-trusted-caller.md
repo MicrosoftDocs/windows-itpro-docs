@@ -2,12 +2,14 @@
 title: Access Credential Manager as a trusted caller (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Access Credential Manager as a trusted caller security policy setting.
 ms.assetid: a51820d2-ca5b-47dd-8e9b-d7008603db88
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -1,8 +1,11 @@
 ---
 title: How to Apply an App-V Project Template (App-V 4.6 SP1)
 description: How to Apply an App-V Project Template (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: 8ef120ab-8cfb-438c-8136-671167b7bd9d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

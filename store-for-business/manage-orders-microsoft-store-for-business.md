@@ -10,6 +10,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/10/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage app orders in Microsoft Store for Business and Education

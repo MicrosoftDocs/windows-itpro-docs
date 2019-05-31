@@ -2,6 +2,9 @@
 title: Extract Files from a Compressed USMT Migration Store (Windows 10)
 description: Extract Files from a Compressed USMT Migration Store
 ms.assetid: ad9fbd6e-f89e-4444-8538-9b11566b1f33
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

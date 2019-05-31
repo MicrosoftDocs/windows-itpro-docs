@@ -3,11 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
 description: The Internet Explorer Administration Kit (IEAK) simplifies the creation, deployment, and management of customized Internet Explorer packages. Use the IEAK to configure the out-of-box Internet Explorer experience or to manage user settings after Internet Explorer deployment.
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.manager: dougkim
 ms.prod: ie11
 ms.assetid:
+ms.reviewer: 
+manager: dansimp
 title: Internet Explorer Administration Kit (IEAK) information and downloads
 ms.sitesec: library
 ms.date: 05/10/2018

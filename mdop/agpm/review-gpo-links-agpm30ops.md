@@ -1,8 +1,11 @@
 ---
 title: Review GPO Links
 description: Review GPO Links
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 5ae95afc-2b89-45cf-916c-efe2d43b2211
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

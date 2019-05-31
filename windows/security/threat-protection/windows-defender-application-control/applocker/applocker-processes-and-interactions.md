@@ -2,12 +2,14 @@
 title: AppLocker processes and interactions (Windows 10)
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

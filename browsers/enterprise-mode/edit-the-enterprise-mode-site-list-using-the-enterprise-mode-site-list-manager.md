@@ -3,9 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can use Internet Explorer 11 and the Enterprise Mode Site List Manager to change whether page rendering should use Enterprise Mode or the default Internet Explorer browser configuration. You can also add, remove, or delete associated comments.
-author: jdeckerms
+author: eavena
 ms.prod: ie11
 ms.assetid: 76aa9a85-6190-4c3a-bc25-0f914de228ea
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 title: Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

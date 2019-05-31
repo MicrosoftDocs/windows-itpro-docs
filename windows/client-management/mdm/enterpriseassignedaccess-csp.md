@@ -2,11 +2,13 @@
 title: EnterpriseAssignedAccess CSP
 description: EnterpriseAssignedAccess CSP
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 07/12/2017
 ---
 

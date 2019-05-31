@@ -2,11 +2,13 @@
 title: Reporting DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the Reporting configuration service provider. This CSP was added in Windows 10, version 1511. Support for desktop security auditing was added for the desktop in Windows 10, version 1607.
 ms.assetid: 7A5B79DB-9571-4F7C-ABED-D79CD08C1E35
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 12/05/2017
 ---
 

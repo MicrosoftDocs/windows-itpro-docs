@@ -2,6 +2,8 @@
 title: Manage products and services in Microsoft Store for Business (Windows 10)
 description: Manage apps, software, devices, products and services in Microsoft Store for Business.
 ms.assetid: 2F65D4C3-B02C-41CC-92F0-5D9937228202
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

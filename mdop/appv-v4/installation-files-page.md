@@ -1,8 +1,11 @@
 ---
 title: Installation Files Page
 description: Installation Files Page
-author: jamiejdt
+author: eavena
 ms.assetid: b0aad26f-b143-4f09-87a1-9f016a23cb62
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

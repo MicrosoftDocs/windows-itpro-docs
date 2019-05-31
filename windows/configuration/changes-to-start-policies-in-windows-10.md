@@ -2,12 +2,14 @@
 title: Changes to Group Policy settings for Windows 10 Start menu (Windows 10)
 description: Windows 10 has a brand new Start experience.
 ms.assetid: 612FB68A-3832-451F-AA97-E73791FEAA9F
+ms.reviewer: 
+manager: dansimp
 keywords: ["group policy", "start menu", "start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: coreyp-at-msft
-ms.author: coreyp
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/28/2017

@@ -1,8 +1,8 @@
----
+ms.reviewer: 
 title: How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User
 description: How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User
 ms.assetid: f1d2ab1f-0831-4976-b49f-169511d3382a
-author: jamiejdt
+author: dansimp
 ms.assetid: f1d2ab1f-0831-4976-b49f-169511d3382a
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -44,6 +44,9 @@ Use the following procedure to revert an App-V 5.0 package to the App-V file for
  
 
  
+
+
+
 
 
 

@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 06/27/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Reset devices with Autopilot Reset 

@@ -9,9 +9,11 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Detect and block potentially unwanted applications

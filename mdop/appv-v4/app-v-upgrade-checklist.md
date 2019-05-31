@@ -1,8 +1,11 @@
 ---
 title: App-V Upgrade Checklist
 description: App-V Upgrade Checklist
-author: jamiejdt
+author: dansimp
 ms.assetid: 64e317d2-d260-4b67-8a49-ba9ac513087a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
