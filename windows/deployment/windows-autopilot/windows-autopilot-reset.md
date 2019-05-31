@@ -1,17 +1,16 @@
 ---
 title: Windows Autopilot Reset
-ms.reviewer: 
-manager: dansimp
-description: Gives an overview of Remote Autopilot Reset and how to use it.
-keywords: Autopilot Reset, Windows 10
+description: Windows Autopilot deployment
+keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype:
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+ms.sitesec: library
+ms.pagetype: deploy
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

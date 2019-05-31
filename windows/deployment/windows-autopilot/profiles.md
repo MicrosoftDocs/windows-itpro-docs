@@ -1,16 +1,16 @@
 ---
 title: Configure Autopilot profiles
-ms.reviewer: 
-manager: dansimp
-description: How to configure Windows Autopilot deployment
+description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: dulcemontemayor
-ms.author: dolmont
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

@@ -1,16 +1,16 @@
 ---
 title: Overview of Windows Autopilot
-ms.reviewer: 
-manager: dansimp
-description: This topic goes over Windows Autopilot and how it helps setup OOBE Windows 10 devices.
-keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, msfb, intune
+description: Windows Autopilot deployment
+keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: dulcemontemayor
-ms.author: dolmont
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
