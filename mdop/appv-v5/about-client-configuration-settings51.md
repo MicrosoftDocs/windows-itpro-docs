@@ -1,8 +1,11 @@
 ---
 title: About Client Configuration Settings
 description: About Client Configuration Settings
-author: jamiejdt
+author: v-madhi
 ms.assetid: 18bb307a-7eda-4dd6-a83e-6afaefd99470
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

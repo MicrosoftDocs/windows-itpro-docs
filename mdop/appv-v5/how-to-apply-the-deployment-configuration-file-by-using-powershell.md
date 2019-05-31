@@ -1,8 +1,11 @@
 ---
 title: How to Apply the Deployment Configuration File by Using PowerShell
 description: How to Apply the Deployment Configuration File by Using PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: 5df5d5bc-6c72-4087-8b93-d6d4b502a1f4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

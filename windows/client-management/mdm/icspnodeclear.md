@@ -2,11 +2,13 @@
 title: ICSPNode Clear
 description: ICSPNode Clear
 ms.assetid: b414498b-110a-472d-95c0-2d5b38cd78a6
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

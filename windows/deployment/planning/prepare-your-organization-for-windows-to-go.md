@@ -2,6 +2,9 @@
 title: Prepare your organization for Windows To Go (Windows 10)
 description: Prepare your organization for Windows To Go
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: ["mobile, device, USB, deploy"]
 ms.prod: w10
 ms.mktglfcycl: plan

@@ -1,8 +1,11 @@
 ---
 title: Example MED-V Image Preparation Checklist
 description: Example MED-V Image Preparation Checklist
-author: jamiejdt
+author: levinec
 ms.assetid: d69f252f-624b-439e-814b-b68cdaf7d582
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

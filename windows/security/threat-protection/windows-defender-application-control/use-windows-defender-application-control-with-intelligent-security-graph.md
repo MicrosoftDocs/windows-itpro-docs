@@ -4,8 +4,11 @@ description: Automatically authorize applications that Microsoft’s ISG recogni
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 06/14/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 

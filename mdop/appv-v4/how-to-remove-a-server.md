@@ -1,8 +1,11 @@
 ---
 title: How to Remove a Server
 description: How to Remove a Server
-author: jamiejdt
+author: eavena
 ms.assetid: afb2a889-733c-4058-9a50-caa2ca10bd58
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

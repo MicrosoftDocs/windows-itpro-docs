@@ -1,8 +1,11 @@
 ---
 title: How to Configure VM Computer Name Pattern Properties
 description: How to Configure VM Computer Name Pattern Properties
-author: jamiejdt
+author: dansimp
 ms.assetid: ddf79ace-8cc3-4ee6-be5a-5940b4df5c36
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

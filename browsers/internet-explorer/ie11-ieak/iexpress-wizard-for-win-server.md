@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the IExpress Wizard on Windows Server 2008 R2 with SP1 to create self-extracting files to run your custom Internet Explorer Setup program.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 5100886d-ec88-4c1c-8cd7-be00da874c57
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: IExpress Wizard for Windows Server 2008 R2 with SP1 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

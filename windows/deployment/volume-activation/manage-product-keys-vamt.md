@@ -2,11 +2,14 @@
 title: Manage Product Keys (Windows 10)
 description: Manage Product Keys
 ms.assetid: 4c6c4216-b4b7-437c-904e-4cb257f913cd
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

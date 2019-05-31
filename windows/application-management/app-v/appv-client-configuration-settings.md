@@ -1,12 +1,15 @@
-﻿---
+---
 title: About Client Configuration Settings (Windows 10)
 description: About Client Configuration Settings
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 # About Client Configuration Settings

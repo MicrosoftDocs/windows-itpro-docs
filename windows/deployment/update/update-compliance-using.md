@@ -1,13 +1,15 @@
 ---
 title: Using Update Compliance (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Update Compliance.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

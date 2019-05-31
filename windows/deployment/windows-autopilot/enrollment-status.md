@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot Enrollment Status page 
+ms.reviewer: 
+manager: laurawi
 description: Gives an overview of the enrollment status page capabilities, configuration
 keywords: Autopilot Plug and Forget, Windows 10
 ms.prod: w10
@@ -9,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
-ms.author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

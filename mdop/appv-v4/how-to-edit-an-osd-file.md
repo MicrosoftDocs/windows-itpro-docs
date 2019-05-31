@@ -1,8 +1,11 @@
 ---
 title: How to Edit an OSD File
 description: How to Edit an OSD File
-author: jamiejdt
+author: dansimp
 ms.assetid: 0d126ba7-72fb-42ce-982e-90ed01a852c8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

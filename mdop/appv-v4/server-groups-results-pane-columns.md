@@ -1,8 +1,11 @@
 ---
 title: Server Groups Results Pane Columns
 description: Server Groups Results Pane Columns
-author: jamiejdt
+author: eavena
 ms.assetid: e91b1b9b-e58c-4274-ad18-8b157936b9be
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

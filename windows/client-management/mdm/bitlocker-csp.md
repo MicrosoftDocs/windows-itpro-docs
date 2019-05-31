@@ -1,12 +1,14 @@
 ---
 title: BitLocker CSP
 description: BitLocker CSP
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 05/02/2019
+ms.reviewer: 
+manager: dansimp
 ---
 # BitLocker CSP
 

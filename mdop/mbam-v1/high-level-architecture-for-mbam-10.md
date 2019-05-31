@@ -1,8 +1,11 @@
 ---
 title: High Level Architecture for MBAM 1.0
 description: High Level Architecture for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: b1349196-88ed-4d6c-8a1d-998f18127b6b
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

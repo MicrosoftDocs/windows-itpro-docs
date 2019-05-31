@@ -5,13 +5,14 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: sagaudre
-author: justinha
+ms.author: dolmont
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/26/2018
+ms.reviewer: 
 ---
 
 # Microsoft Security Compliance Toolkit 1.0

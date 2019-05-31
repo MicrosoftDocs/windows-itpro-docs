@@ -1,8 +1,11 @@
 ---
 title: How to Configure Published Applications
 description: How to Configure Published Applications
-author: jamiejdt
+author: dansimp
 ms.assetid: 43a59ff7-5d4e-49dc-84e5-1082bc4dd8f4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

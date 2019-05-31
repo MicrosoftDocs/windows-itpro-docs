@@ -1,8 +1,11 @@
 ---
 title: How to Install and Configure the Default Application
 description: How to Install and Configure the Default Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 5c5d5ad1-af40-4f83-8234-39e972f2c29a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

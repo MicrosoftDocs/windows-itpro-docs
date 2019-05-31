@@ -2,12 +2,14 @@
 title: Gathering Information about Your Current Network Infrastructure (Windows 10)
 description: Gathering Information about Your Current Network Infrastructure
 ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

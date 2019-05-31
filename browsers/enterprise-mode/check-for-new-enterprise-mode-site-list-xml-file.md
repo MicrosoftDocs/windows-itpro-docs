@@ -2,12 +2,14 @@
 title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
 description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.
 ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
+ms.reviewer: 
+manager: dansimp
 ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
-author: jdeckerms
-ms.author: dougkim
+author: eavena
+ms.author: eravena
 ms.date: 08/14/2017
 ms.localizationpriority: low
 ---

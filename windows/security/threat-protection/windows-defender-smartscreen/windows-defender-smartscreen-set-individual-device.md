@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: mjcaparas
 ---
 
 # Set up and use Windows Defender SmartScreen on individual devices

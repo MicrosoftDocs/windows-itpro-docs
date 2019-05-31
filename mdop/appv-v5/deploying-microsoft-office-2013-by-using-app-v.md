@@ -1,8 +1,11 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V
 description: Deploying Microsoft Office 2013 by Using App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 02df5dc8-79e2-4c5c-8398-dbfb23344ab3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

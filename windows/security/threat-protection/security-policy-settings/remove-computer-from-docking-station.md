@@ -2,12 +2,14 @@
 title: Remove computer from docking station - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Remove computer from docking station security policy setting.
 ms.assetid: 229a385a-a862-4973-899a-413b1b5b6c30
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

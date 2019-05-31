@@ -1,8 +1,11 @@
 ---
 title: Using a Test Environment
 description: Using a Test Environment
-author: jamiejdt
+author: mjcaparas
 ms.assetid: fc5fcc7c-1ac8-483a-a6bd-2279ae2ee3fb
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

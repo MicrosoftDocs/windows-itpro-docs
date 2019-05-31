@@ -1,8 +1,11 @@
 ---
 title: How to Configure a Read-only Cache on the App-V Client (RDS)
 description: How to Configure a Read-only Cache on the App-V Client (RDS)
-author: jamiejdt
+author: dansimp
 ms.assetid: b6607fe2-6f92-4567-99f1-d8e3c8a591e0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

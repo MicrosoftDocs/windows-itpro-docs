@@ -1,10 +1,12 @@
 ---
 title: Forrester Total Economic Impact - Microsoft Edge
+ms.reviewer: 
+manager: dansimp
 description: Review the results of the Microsoft Edge study carried out by Forrester Research
 ms.prod: edge
 ms.topic: article
-author: lizap
-ms.author: elizapo  
+author: msdmaguire
+ms.author: dmaguire
 ms.localizationpriority: high
 ---
 # Measuring the impact of Microsoft Edge - Total Economic Impact (TEI) of Microsoft Edge

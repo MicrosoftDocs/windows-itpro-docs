@@ -1,8 +1,11 @@
 ---
 title: How to Verify First Time Setup Settings
 description: How to Verify First Time Setup Settings
-author: jamiejdt
+author: levinec
 ms.assetid: e8a07d4c-5786-4455-ac43-2deac4042efd
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

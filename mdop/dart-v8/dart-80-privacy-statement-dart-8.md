@@ -1,8 +1,11 @@
 ---
 title: DaRT 8.0 Privacy Statement
 description: DaRT 8.0 Privacy Statement
-author: jamiejdt
+author: msfttracyp
 ms.assetid: db474241-e44e-4bca-9be4-3557a3614c2a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

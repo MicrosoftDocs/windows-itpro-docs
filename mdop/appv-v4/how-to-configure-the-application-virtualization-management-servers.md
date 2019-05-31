@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Application Virtualization Management Servers
 description: How to Configure the Application Virtualization Management Servers
-author: jamiejdt
+author: dansimp
 ms.assetid: a9f96148-bf2d-486f-98c2-23409bfb0935
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

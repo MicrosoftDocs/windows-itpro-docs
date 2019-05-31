@@ -1,8 +1,11 @@
 ---
 title: Upgrade Readiness - Additional insights
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---

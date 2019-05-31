@@ -1,8 +1,11 @@
 ---
 title: Internet-Facing Considerations for App-V Clients
 description: Internet-Facing Considerations for App-V Clients
-author: jamiejdt
+author: eavena
 ms.assetid: 261acde3-7112-492e-8b11-934ae45adc5f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: How to Move the MBAM 2.5 Reports
 description: How to Move the MBAM 2.5 Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: c8223656-ca9d-41c8-94a3-64d07a6b99e9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

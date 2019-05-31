@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the topics in this section to learn about Group Policy and how to use it to manage Internet Explorer.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 50383d3f-9ac9-4a30-8852-354b6eb9434a
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Group Policy and Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

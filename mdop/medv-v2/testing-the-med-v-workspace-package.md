@@ -1,8 +1,11 @@
 ---
 title: Testing the MED-V Workspace Package
 description: Testing the MED-V Workspace Package
-author: jamiejdt
+author: levinec
 ms.assetid: 83edcb6e-9615-4d18-96b8-f085a647294e
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

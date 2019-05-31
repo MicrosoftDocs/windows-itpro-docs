@@ -2,12 +2,14 @@
 title: Interactive logon Display user information when the session is locked (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Display user information when the session is locked security policy setting.
 ms.assetid: 9146aa3d-9b2f-47ba-ac03-ff43efb10530
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

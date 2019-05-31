@@ -1,8 +1,11 @@
 ---
 title: About the Virtual Registry Tab
 description: About the Virtual Registry Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: ca8d837f-8218-4f86-95fd-13a44dccd022
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

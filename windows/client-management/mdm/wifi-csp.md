@@ -2,11 +2,13 @@
 title: WiFi CSP
 description: WiFi CSP
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 10/24/2018
 ---
 
