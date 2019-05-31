@@ -90,7 +90,7 @@ Review the distribution of authentication.  Hopefully, none of these are above 7
   
 ## Monitoring Authentication
 
-Using the same methods previously described above, monitor the Kerberos authentication after upgrading a domain controller and your first phase of Windows Hello for Business deployments.  Make note of the delta of authentication before and after upgrading the domain controller to Windows Server 2019.  This delta is representative of authentication resulting from the first phase of your Windows Hello for Business clients.  This gives you a baseline for your environment to where you can form a statement such as 
+Using the same methods described above, monitor the Kerberos authentication after upgrading a domain controller and your first phase of Windows Hello for Business deployments.  Make note of the delta of authentication before and after upgrading the domain controller to Windows Server 2019.  This delta is representative of authentication resulting from the first phase of your Windows Hello for Business clients.  It gives you a baseline for your environment to where you can form a statement such as:
 
 
 ```"Every n Windows Hello for Business clients results in x percentage of key-trust authentication."```
