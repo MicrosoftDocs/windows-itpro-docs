@@ -55,9 +55,6 @@ Response actions run along the top of a specific machine page and include:
 - Manage tags
 - Initiate Automated Investigation
 - Initiate Live Response Session
-
-Other actions are enabled if there is an investigation happening on that machine:
-
 - Collect investigation package
 - Run antivirus scan
 - Restrict app execution
