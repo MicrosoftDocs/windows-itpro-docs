@@ -92,9 +92,21 @@ The commands can also be run remotely, as long as WMI permissions are in place a
 Once the hardware IDs have been captured from existing devices, they can be uploaded through a variety of means. See the detailed documentation for each available mechanism:
 
 -   [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot).  This is the preferred mechanism for all customers.
-
 -   [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).  This is used by CSP partners to register devices on behalf of customers.
-
 -   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
-
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  
+
+<img src="./images/image2.png" width="511" height="249" />
+
+## Summary
+
+When deploying new devices using Windows Autopilot, the following steps are required:
+
+1.  [Register devices](#registering-devices). Ideally, this step is performed by the OEM, reseller, or distributor from which the devices were purchased, but this can also be done by the organization by collecting the hardware identity and uploading it manually.
+2.  [Configure device profiles](profiles.md), specifying how the device should be deployed and what user experience should be presented.
+3.  Boot the device. When the device is connected to a network with internet access, it will contact the Windows Autopilot deployment service to see if the device is registered, and if it is, it will download profile settings such as the [Enrollment Status page](enrollment-status.md), which are used to customize the end user experience.
+
+## Other configuration settings
+
+- [Bitlocker encryption settings](bitlocker.md): You can configure the BitLocker encryption settings to be applied before automatic encryption is started.
+- [Cortana voiceover and speech recognition](windows-autopilot-scenarios.md): In Windows 10, version 1903 and later Cortana voiceover and speech recognition during OOBE is DISABLED by default for all Windows 10 Pro, Education and Enterprise SKUs.
