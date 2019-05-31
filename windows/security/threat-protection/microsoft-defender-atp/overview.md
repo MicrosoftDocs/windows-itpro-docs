@@ -1,5 +1,6 @@
 ---
 title: Overview of Microsoft Defender ATP 
+ms.reviewer: 
 description: Understand the concepts behind the capabilities in Microsoft Defender ATP so you take full advantage of the complete threat protection platform
 keywords: atp, microsoft defender atp, defender, mdatp, threat protection, platform, threat, vulnerability, asr, attack, surface, reduction, next-gen, protection, edr, endpoint, detection, response, automated, air
 search.product: eADQiWindows 10XVcnh
@@ -8,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

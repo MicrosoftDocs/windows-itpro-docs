@@ -1,8 +1,11 @@
 ---
 title: Deploying the MBAM 2.5 Client
 description: Deploying the MBAM 2.5 Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 0a96a0ee-f280-49d9-a244-88f4147fe9fd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

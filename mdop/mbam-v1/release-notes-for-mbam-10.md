@@ -1,8 +1,11 @@
 ---
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

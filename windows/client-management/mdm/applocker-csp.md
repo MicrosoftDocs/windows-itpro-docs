@@ -2,11 +2,13 @@
 title: AppLocker CSP
 description: AppLocker CSP
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 04/30/2018
 ---
 

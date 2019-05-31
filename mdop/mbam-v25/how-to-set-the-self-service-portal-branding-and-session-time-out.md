@@ -1,8 +1,11 @@
 ---
 title: How to Set the Self-Service Portal Branding and Session Time-out
 description: How to Set the Self-Service Portal Branding and Session Time-out
-author: jamiejdt
+author: dansimp
 ms.assetid: 031eedfc-fade-4d2f-8771-b329e1d38c0d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencing Wizard Monitor Installation Page
 description: Application Virtualization Sequencing Wizard Monitor Installation Page
-author: jamiejdt
+author: dansimp
 ms.assetid: b54b8145-a57e-4d0d-b776-b5319aadb78e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

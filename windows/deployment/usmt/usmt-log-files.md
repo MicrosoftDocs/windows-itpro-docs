@@ -2,6 +2,9 @@
 title: Log Files (Windows 10)
 description: Log Files
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

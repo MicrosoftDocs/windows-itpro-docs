@@ -1,8 +1,11 @@
 ---
 title: How to Branch a Package
 description: How to Branch a Package
-author: jamiejdt
+author: dansimp
 ms.assetid: bfe46a8a-f0ee-4a71-9e9c-64ac08aac9c1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

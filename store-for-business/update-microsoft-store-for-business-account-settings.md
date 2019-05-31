@@ -11,6 +11,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/18/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Update Billing account settings

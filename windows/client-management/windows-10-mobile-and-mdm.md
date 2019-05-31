@@ -2,13 +2,16 @@
 title: Windows 10 Mobile deployment and management guide (Windows 10)
 description: This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: Mobile, diagnostic data, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
-author: AMeeus
+author: dansimp
 ms.date: 01/26/2019
 ms.topic: article
 ---

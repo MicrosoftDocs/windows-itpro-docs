@@ -2,13 +2,16 @@
 title: Windows 10 Mobile security guide (Windows 10)
 description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: medium
-author: AMeeus
+author: dulcemontemayor
 ms.date: 10/13/2017
 ---
 # Windows 10 Mobile security guide

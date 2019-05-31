@@ -1,8 +1,11 @@
 ---
 title: How to Load or Unload an Application
 description: How to Load or Unload an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 8c149761-c591-433f-972b-91793a69c654
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

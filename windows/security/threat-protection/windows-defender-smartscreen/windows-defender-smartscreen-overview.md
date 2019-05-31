@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: mjcaparas
 ---
 
 # Windows Defender SmartScreen

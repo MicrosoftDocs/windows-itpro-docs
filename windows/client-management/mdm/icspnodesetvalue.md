@@ -2,11 +2,13 @@
 title: ICSPNode SetValue
 description: ICSPNode SetValue
 ms.assetid: b218636d-fe8b-4a0f-b4e8-a621f65619d3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

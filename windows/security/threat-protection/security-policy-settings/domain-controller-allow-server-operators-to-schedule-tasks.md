@@ -2,12 +2,14 @@
 title: Domain controller Allow server operators to schedule tasks (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain controller Allow server operators to schedule tasks security policy setting.
 ms.assetid: 198b12a4-8a5d-48e8-a752-2073b8a2cb0d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

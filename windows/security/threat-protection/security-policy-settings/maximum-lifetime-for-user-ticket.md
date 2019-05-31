@@ -2,12 +2,14 @@
 title: Maximum lifetime for user ticket (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for user ticket policy setting.
 ms.assetid: bcb4ff59-334d-4c2f-99af-eca2b64011dc
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

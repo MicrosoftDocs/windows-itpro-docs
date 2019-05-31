@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable and configure antivirus always-on protection and monitoring

@@ -1,12 +1,15 @@
 ---
 title: Compatibility Fix Database Management Strategies and Deployment (Windows 10)
 ms.assetid: fdfbf02f-c4c4-4739-a400-782204fd3c6c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: 
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

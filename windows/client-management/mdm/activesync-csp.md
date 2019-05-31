@@ -2,11 +2,13 @@
 title: ActiveSync CSP
 description: ActiveSync CSP
 ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 

@@ -2,11 +2,13 @@
 title: Manage settings with an MDM provider (Surface Hub)
 description: Microsoft Surface Hub provides an enterprise management solution to help IT administrators manage policies and business applications on these devices using a mobile device management (MDM) solution.
 ms.assetid: 18EB8464-6E22-479D-B0C3-21C4ADD168FE
+ms.reviewer: 
+manager: dansimp
 keywords: mobile device management, MDM, manage policies
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 03/07/2018
 ms.localizationpriority: medium

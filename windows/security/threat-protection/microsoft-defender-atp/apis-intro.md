@@ -1,5 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection API overview  
+ms.reviewer: 
 description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender ATP capabilities
 keywords: apis, api, wdatp, open api, windows defender atp api, public api, supported apis, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

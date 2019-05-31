@@ -2,6 +2,9 @@
 title: Migrate EFS Files and Certificates (Windows 10)
 description: Migrate EFS Files and Certificates
 ms.assetid: 7f19a753-ec45-4433-b297-cc30f16fdee1
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

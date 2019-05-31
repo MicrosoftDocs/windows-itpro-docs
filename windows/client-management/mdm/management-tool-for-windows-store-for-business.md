@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
 - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
 ms.assetid: 0E39AE85-1703-4B24-9A7F-831C6455068F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 10/27/2017
 ---
 

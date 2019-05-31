@@ -1,8 +1,11 @@
 ---
 title: Understanding MBAM 2.5 Stand-alone Reports
 description: Understanding MBAM 2.5 Stand-alone Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: 78b5aaf4-8257-4722-8eb9-e0de48db6a11
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

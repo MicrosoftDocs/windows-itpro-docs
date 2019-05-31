@@ -1,8 +1,11 @@
 ---
 title: Server Event Logs
 description: Server Event Logs
-author: jamiejdt
+author: dansimp
 ms.assetid: 04e724d2-28cc-4fa8-86a1-0d4ab0234b11
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

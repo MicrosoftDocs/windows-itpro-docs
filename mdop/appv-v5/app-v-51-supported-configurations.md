@@ -1,8 +1,11 @@
 ---
 title: App-V 5.1 Supported Configurations
 description: App-V 5.1 Supported Configurations
-author: jamiejdt
+author: v-madhi
 ms.assetid: 8b8db63b-f71c-4ae9-80e7-a6752334e1f6
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

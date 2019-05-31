@@ -1,8 +1,11 @@
 ---
 title: Configuring Certificates to Support the App-V Web Management Service
 description: Configuring Certificates to Support the App-V Web Management Service
-author: jamiejdt
+author: dansimp
 ms.assetid: b7960161-2c19-4cbf-a98a-d4b06f547dce
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

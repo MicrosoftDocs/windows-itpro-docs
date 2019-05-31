@@ -2,12 +2,14 @@
 title: Configure the Application Identity service (Windows 10)
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
+ms.reviewer: 
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

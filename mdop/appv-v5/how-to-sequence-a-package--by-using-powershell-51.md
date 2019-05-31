@@ -1,8 +1,11 @@
 ---
 title: How to Sequence a Package by Using PowerShell
 description: How to Sequence a Package by Using PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: 6134c6be-937d-4609-a516-92d49154b290
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

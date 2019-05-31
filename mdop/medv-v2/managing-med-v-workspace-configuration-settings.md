@@ -1,8 +1,11 @@
 ---
 title: Managing MED-V Workspace Configuration Settings
 description: Managing MED-V Workspace Configuration Settings
-author: jamiejdt
+author: levinec
 ms.assetid: 517d04de-c31f-4b50-b2b3-5f8c312ed37b
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: mjcaparas
+ms.author: macapara
 ms.date: 11/08/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up Take a Test on a single PC

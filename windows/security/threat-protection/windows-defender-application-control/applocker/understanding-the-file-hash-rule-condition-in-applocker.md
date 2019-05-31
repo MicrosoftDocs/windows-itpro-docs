@@ -2,12 +2,14 @@
 title: Understanding the file hash rule condition in AppLocker (Windows 10)
 description: This topic explains the AppLocker file hash rule condition, the advantages and disadvantages, and how it is applied.
 ms.assetid: 4c6d9af4-2b1a-40f4-8758-1a6f9f147756
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

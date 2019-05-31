@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - DmaGuard
 description: Policy CSP - DmaGuard
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 12/17/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - DmaGuard

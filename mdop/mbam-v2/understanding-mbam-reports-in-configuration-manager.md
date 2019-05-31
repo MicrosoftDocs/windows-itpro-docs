@@ -1,8 +1,11 @@
 ---
 title: Understanding MBAM Reports in Configuration Manager
 description: Understanding MBAM Reports in Configuration Manager
-author: jamiejdt
+author: dansimp
 ms.assetid: b2582190-c9de-4e64-bd5a-f31ac1916f53
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

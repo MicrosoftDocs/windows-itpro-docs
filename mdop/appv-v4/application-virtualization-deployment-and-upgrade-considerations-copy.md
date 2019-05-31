@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Deployment and Upgrade Considerations
 description: Application Virtualization Deployment and Upgrade Considerations
-author: jamiejdt
+author: dansimp
 ms.assetid: c3c38930-0da3-43e6-b240-945edfd00a01
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
