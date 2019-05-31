@@ -18,7 +18,7 @@ Learn what’s new with the Set up School PCs app each week. Find out about new 
 ## Week of May 23, 2019   
 
 ### Suspended support for Windows 10, version 1903 and later
-Due to a provisioning problem, Set up School PCs has temporarily stopped support for Windows 10, version 1903 and later. When the problem is resolved, support will resume again.  
+Due to a provisioning problem, Set up School PCs has temporarily stopped support for Windows 10, version 1903 and later. All settings in the app that were for Windows 10, version 1903 and later have been removed. When the problem is resolved, support will resume again.  
 
 ### Mandatory device rename for Azure AD joined devices
 If you configure Azure AD Join, you are now required to rename your devices during setup. Set up School PCs will not let you keep existing device names.    
