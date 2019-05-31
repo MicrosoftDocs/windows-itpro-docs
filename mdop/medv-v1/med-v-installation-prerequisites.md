@@ -1,8 +1,11 @@
 ---
 title: MED-V Installation Prerequisites
 description: MED-V Installation Prerequisites
-author: jamiejdt
+author: dansimp
 ms.assetid: cf3c0906-23eb-4c4a-8951-a65741720f95
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

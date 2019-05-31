@@ -1,8 +1,11 @@
 ---
 title: Microsoft Application Virtualization Management System Release Notes
 description: Microsoft Application Virtualization Management System Release Notes
-author: jamiejdt
+author: eavena
 ms.assetid: e1a4d5ee-53c7-4b48-814c-a34ce0e698dc
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

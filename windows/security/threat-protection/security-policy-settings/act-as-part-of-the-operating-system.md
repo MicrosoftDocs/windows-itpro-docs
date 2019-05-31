@@ -2,12 +2,14 @@
 title: Act as part of the operating system (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Act as part of the operating system security policy setting.
 ms.assetid: c1b7e084-a9f7-4377-b678-07cc913c8b0c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

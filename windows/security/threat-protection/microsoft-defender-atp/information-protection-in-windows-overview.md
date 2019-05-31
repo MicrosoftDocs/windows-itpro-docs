@@ -1,5 +1,6 @@
 ---
 title: Information protection in Windows overview
+ms.reviewer: 
 description: Learn about how information protection works in Windows to identify and protect sensitive information
 keywords: information, protection, dlp, wip, data, loss, prevention, protect
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -119,7 +120,9 @@ For more information, see [Configure information protection in Windows](informat
 
 ## Auto labeling
 
-Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. When Microsoft Defender ATP scans the content of a file in a Windows device and finds that it contains sensitive information, it will automatically apply a label to it even if the user hasn't manually classified it.
+Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
+
+Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
 
 > [!NOTE]
 > Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.

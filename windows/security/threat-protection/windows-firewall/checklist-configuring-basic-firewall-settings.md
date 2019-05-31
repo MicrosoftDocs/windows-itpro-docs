@@ -2,12 +2,14 @@
 title: Checklist Configuring Basic Firewall Settings (Windows 10)
 description: Checklist Configuring Basic Firewall Settings
 ms.assetid: 0d10cdae-da3d-4a33-b8a4-6b6656b6d1f9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -2,6 +2,8 @@
 title: Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage

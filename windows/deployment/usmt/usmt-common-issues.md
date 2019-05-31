@@ -2,11 +2,14 @@
 title: Common Issues (Windows 10)
 description: Common Issues
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 09/19/2017
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 

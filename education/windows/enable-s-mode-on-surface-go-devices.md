@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: kaushika-msft
-ms.author: kaushik
+author: levinec
+ms.author: ellevin
 ms.date: 07/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Go for Education - Enabling S mode

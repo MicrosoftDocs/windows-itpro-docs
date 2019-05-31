@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - WindowsConnectionManager
 description: Policy CSP - WindowsConnectionManager
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - WindowsConnectionManager

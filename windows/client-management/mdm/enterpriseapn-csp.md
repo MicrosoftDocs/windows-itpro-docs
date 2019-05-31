@@ -2,11 +2,13 @@
 title: EnterpriseAPN CSP
 description: The EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
 ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 09/22/2017
 ---
 

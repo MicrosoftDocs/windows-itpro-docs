@@ -5,11 +5,13 @@ keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)

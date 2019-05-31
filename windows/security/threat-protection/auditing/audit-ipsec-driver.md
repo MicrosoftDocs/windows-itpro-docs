@@ -2,12 +2,15 @@
 title: Audit IPsec Driver (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit IPsec Driver, which determines whether the operating system generates audit events for the activities of the IPsec driver.
 ms.assetid: c8b8c02f-5ad0-4ee5-9123-ea8cdae356a5
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dulcemontemayor
 ms.date: 10/02/2018
 ---
 

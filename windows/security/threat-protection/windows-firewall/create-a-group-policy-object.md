@@ -2,12 +2,14 @@
 title: Create a Group Policy Object (Windows 10)
 description: Create a Group Policy Object
 ms.assetid: 72a50dd7-5033-4d97-a5eb-0aff8a35cced
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

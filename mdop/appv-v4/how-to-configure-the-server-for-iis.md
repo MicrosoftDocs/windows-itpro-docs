@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Server for IIS
 description: How to Configure the Server for IIS
-author: jamiejdt
+author: dansimp
 ms.assetid: 1fcfc583-322f-4a38-90d0-e64bfa9ee3d8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

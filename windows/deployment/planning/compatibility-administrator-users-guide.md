@@ -1,12 +1,15 @@
 ---
 title: Compatibility Administrator User's Guide (Windows 10)
 ms.assetid: 0ce05f66-9009-4739-a789-60f3ce380e76
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: 
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

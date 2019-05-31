@@ -2,12 +2,14 @@
 title: Audit object access (Windows 10)
 description: Determines whether to audit the event of a user accessing an object--for example, a file, folder, registry key, printer, and so forth--that has its own system access control list (SACL) specified.
 ms.assetid: D15B6D67-7886-44C2-9972-3F192D5407EA
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: justinha
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -2,12 +2,15 @@
 title: Deploy Windows To Go in your organization (Windows 10)
 description: This topic helps you to deploy Windows To Go in your organization.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

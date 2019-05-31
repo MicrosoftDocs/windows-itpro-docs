@@ -2,11 +2,14 @@
 title: Prepare a device for kiosk configuration (Windows 10)
 description: Some tips for device settings on kiosks.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ---

@@ -9,9 +9,11 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: alhughes
-ms.author: alhughes
+author: levinec
+ms.author: ellevin
 ms.date: 06/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Inclusive Classroom IT Admin Guide

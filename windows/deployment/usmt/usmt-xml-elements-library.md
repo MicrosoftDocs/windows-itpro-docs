@@ -2,6 +2,9 @@
 title: XML Elements Library (Windows 10)
 description: XML Elements Library
 ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

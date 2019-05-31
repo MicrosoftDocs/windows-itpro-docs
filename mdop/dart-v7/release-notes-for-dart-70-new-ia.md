@@ -1,8 +1,11 @@
 ---
 title: Release Notes for DaRT 7.0
 description: Release Notes for DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: fad227d0-5c22-4efd-9187-0e5922f7250b
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

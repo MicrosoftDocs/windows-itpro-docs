@@ -1,8 +1,11 @@
 ---
 title: How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer
 description: How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer
-author: jamiejdt
+author: dansimp
 ms.assetid: 64640b8e-de6b-4006-a33e-353d285af15e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

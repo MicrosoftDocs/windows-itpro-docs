@@ -1,13 +1,15 @@
 ---
 title: Windows Analytics and privacy
+ms.reviewer: 
+manager: dansimp
 description: How Windows Analytics uses data
 keywords: windows analytics, oms, privacy, data, diagnostic, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: high
 ms.collection: M365-analytics
 ms.topic: article

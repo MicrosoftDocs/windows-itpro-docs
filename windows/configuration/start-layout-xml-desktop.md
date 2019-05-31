@@ -5,10 +5,12 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 

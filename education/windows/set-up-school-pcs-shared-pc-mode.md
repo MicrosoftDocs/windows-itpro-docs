@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.sitesec: library  
 ms.pagetype: edu  
 ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
+author: mjcaparas
+ms.author: macapara
 ms.date: 07/13/2018  
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # Shared PC mode for school devices

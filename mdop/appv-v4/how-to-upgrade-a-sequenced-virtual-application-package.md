@@ -1,8 +1,11 @@
 ---
 title: How to Upgrade a Sequenced Virtual Application Package
 description: How to Upgrade a Sequenced Virtual Application Package
-author: jamiejdt
+author: eavena
 ms.assetid: ffa989f3-6621-4c59-9599-e3c3b3332f67
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

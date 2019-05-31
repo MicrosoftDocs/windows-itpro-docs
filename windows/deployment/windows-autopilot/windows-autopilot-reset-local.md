@@ -1,5 +1,7 @@
 ---
 title: Reset devices using local Windows Autopilot Reset
+ms.reviewer: 
+manager: dansimp
 description: Gives an overview of Local Autopilot Reset and how to use it.
 keywords: Autopilot Reset, Windows 10
 ms.prod: w10
@@ -8,8 +10,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: greg-lindsay
+author: dulcemontemayor
+ms.author: dolmont
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

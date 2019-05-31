@@ -1,8 +1,11 @@
 ---
 title: How to Change the Server Port
 description: How to Change the Server Port
-author: jamiejdt
+author: dansimp
 ms.assetid: 0b4a262c-4816-48d0-b7c6-e496bb0d7370
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

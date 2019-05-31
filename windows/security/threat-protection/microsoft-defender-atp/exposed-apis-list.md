@@ -1,5 +1,6 @@
 ---
 title: Supported Microsoft Defender Advanced Threat Protection query APIs  
+ms.reviewer: 
 description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, supported apis, actor, alerts, machine, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

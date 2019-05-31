@@ -1,8 +1,11 @@
 ---
 title: How to Load Virtual Applications from the Desktop Notification Area
 description: How to Load Virtual Applications from the Desktop Notification Area
-author: jamiejdt
+author: dansimp
 ms.assetid: f52758eb-8b81-4b3c-9bc3-adcf7c00c238
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

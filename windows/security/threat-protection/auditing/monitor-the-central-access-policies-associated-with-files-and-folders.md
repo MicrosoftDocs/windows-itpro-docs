@@ -2,12 +2,14 @@
 title: Monitor the central access policies associated with files and folders (Windows 10)
 description: This topic for the IT professional describes how to monitor changes to the central access policies that are associated with files and folders when you are using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: 2ea8fc23-b3ac-432f-87b0-6a16506e8eed
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

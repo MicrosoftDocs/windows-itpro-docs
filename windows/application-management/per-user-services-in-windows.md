@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.date: 09/14/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Per-user services in Windows 10 and Windows Server 

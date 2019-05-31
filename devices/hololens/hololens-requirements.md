@@ -3,11 +3,13 @@ title: HoloLens in the enterprise requirements and FAQ (HoloLens)
 description: Requirements and FAQ for general use, Wi-Fi, and device management for HoloLens in the enterprise.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 06/04/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft HoloLens in the enterprise: requirements and FAQ

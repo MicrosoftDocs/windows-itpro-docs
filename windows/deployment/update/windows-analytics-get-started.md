@@ -1,13 +1,15 @@
 ---
 title: Enrolling devices in Windows Analytics (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: Enroll devices to enable use of Update Compliance, Upgrade Readiness, and Device Health in Windows Analytics.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
