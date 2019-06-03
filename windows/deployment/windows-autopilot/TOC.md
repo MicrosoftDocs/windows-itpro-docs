@@ -15,7 +15,7 @@
 ## [White glove](white-glove.md)
 ## [Support for existing devices](existing-devices.md)
 
-# Administering Autopilot
+# Administering Windows Autopilot
 ## [Registering devices](add-devices.md)
 ## [Configuring device profiles](profiles.md)
 ## [Enrollment status page](enrollment-status.md)

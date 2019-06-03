@@ -24,11 +24,11 @@ ms.topic: article
 
 Windows Autopilot modernizes Windows deployment with a zero-touch, self-service process that runs immediately after powering on a new computer for the first time. With Windows Autopilot, and employee can receive a new device and configure it to be business-ready with just a few clicks.  
 
-## In this guide
-
 This guide is intended for use by an IT-specialist, system architect, or business decision maker. The guide provides an overview of how Windows Autopilot deployment works, including detailed requirements, deployment scenarios, and platform capabilities. The document highlights options that are available to you when planning a modern, cloud-joined Windows 10 deployment strategy. Before you read this guide, you should have a good understanding of your organizational requirements.
 
 When you are ready to deploy client devices with Windows Autopilot, see the detailed configuration procedures documented for your chosen [platform](windows-autopilot-platforms.md) (recommended platform: [Intune](https://docs.microsoft.com/en-us/intune/enrollment-autopilot)).
+
+## In this guide
 
 The following topics are available in this guide:
 
@@ -37,10 +37,10 @@ The following topics are available in this guide:
 <table>
 <tr><td>[Overview of Windows Autopilot](windows-autopilot.md)<td>A review of Windows Autopilot is provided with a video walkthrough. Benefits and general requirements are discussed.<br>
 <tr><td>[Requirements](windows-autopilot-requirements.md)<td> Detailed software, network, licensiing, and configuration requirments are provided.<br>
-<tr><td>[What's new](windows-autopilot-whats-new.md)<td> Information is provided about new features of Windows Autopilot.<br>
-<tr><td>[Platforms](windows-autopilot-platforms.md)<td> The platforms available for registering Windows Autopilot devices are summarized.<br>
-<tr><td>[Scenarios and Capabilities](windows-autopilot-scenarios.md)<td> A summary is provided of Windows Autopilot deployment scenarios and capabilities.<br>
-<tr><td>[Get started](demonstrate-deployment-on-vm.md)<td> A step-by-step walkthrough is provided for testing Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account. <br>
+<tr><td>[What's new](windows-autopilot-whats-new.md)<td> Windows Autopilot is always being updated with new features! Read about the latest new capabilities here.<br>
+<tr><td>[Platforms](windows-autopilot-platforms.md)<td> A summary of platforms available for registering Windows Autopilot devices.<br>
+<tr><td>[Scenarios and Capabilities](windows-autopilot-scenarios.md)<td> A summary of Windows Autopilot deployment scenarios and capabilities.<br>
+<tr><td>[Get started](demonstrate-deployment-on-vm.md)<td> Interested in trying out Autopilot? A step-by-step walkthrough is provided for testing Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account. <br>
 </table>
 
 ### Deployment scenarios
