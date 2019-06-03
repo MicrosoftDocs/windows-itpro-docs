@@ -79,5 +79,4 @@ Regardless which tool you're using to edit your Group Policy settings, you'll ne
 ## Related topics
 - [Administrative templates (.admx) for Windows 10 April 2018 Update](https://www.microsoft.com/en-us/download/details.aspx?id=56880)
 - [Administrative templates (.admx) for Windows 10 October 2018 Update](https://www.microsoft.com/en-us/download/details.aspx?id=57576)
-)
 - [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580)
