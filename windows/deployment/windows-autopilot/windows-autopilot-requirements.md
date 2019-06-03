@@ -94,7 +94,6 @@ In environments that have more restrictive Internet access, or for those that re
 
 **Certificate revocation lists (CRLs)**: Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl) and [Office 365 Certificate Chains](https://aka.ms/o365chains).
 
-
 ## Licensing requirements
 
 Windows Autopilot depends on specific capabilities available in Windows 10 and Azure Active Directory; it also requires an MDM service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs:
@@ -132,46 +131,7 @@ For a walkthrough for some of these and related steps, see this video:
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
-
-- For details about specific configuration requirements to enable user-driven Hybrid Azure Active Directory join for Windows Autopilot, see [Intune Connector (preview) language requirements](intune-connector.md). This requirement is a temporary workaround, and will be removed in the next release of Intune Connector. 
-
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
-
-## Intune Connector (preview) language requirements
-
-**Applies to: Windows 10**
-
-Microsoft has released a [preview for Intune connector for Active Directory](https://docs.microsoft.com/intune/windows-autopilot-hybrid) that enables user-driven [Hybrid Azure Active Directory join](user-driven-hybrid.md) for Windows Autopilot.
-
-In this preview version of the Intune Connector, you might receive an error message indicating a setup failure with the following error code and message:
-
-**0x80070658 - Error applying transforms. Verify that the specified transform paths are valid.**
-
-An [example](#example) of the error message is displayed at the bottom of this topic. 
-
-This error can be resolved by ensuring that the member server where Intune Connector is running has one of the following language packs installed and configured to be the default keyboard layout:
-
-|  |  |  |  |  |  |  |  |  |  |  | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| en-US | cs-CZ | da-DK | de-DE | el-GR | es-ES | fi-FI | fr-FR | hu-HU | it-IT | ja-JP |
-| ko-KR | nb-NO | nl-NL | pl-PL | pt-BR | ro-RO | ru-RU | sv-SE | tr-TR | zh-CN | zh-TW |
-
->[!NOTE]
->After installing the Intune Connector, you can restore the keyboard layout to its previous settings.<br>
->This solution is a workaround and will be fully resolved in a future release of the Intune Connector.
-
-To change the default keyboard layout:
-
-1. Click **Settings > Time & language > Region and language** 
-2. Select one of the languages listed above and choose **Set as default**.
-
-If the language you need isn't listed, you can add additional languages by selecting **Add a language**.
-
-### Example
-
-The following is an example of the error message that can be displayed if one of the listed languages is not used during setup:
-
-![Connector error](images/connector-fail.png)
 
 ## Related topics
 
