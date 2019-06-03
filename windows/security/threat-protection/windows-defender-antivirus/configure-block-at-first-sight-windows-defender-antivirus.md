@@ -135,7 +135,7 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 ### Validate block at first sight is working
 
-You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate).
+You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Disable block at first sight
 
