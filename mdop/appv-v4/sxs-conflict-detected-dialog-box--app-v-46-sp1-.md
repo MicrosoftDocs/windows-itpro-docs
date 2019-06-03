@@ -1,11 +1,11 @@
 ---
 title: SXS Conflict Detected Dialog Box (App-V 4.6 SP1)
 description: SXS Conflict Detected Dialog Box (App-V 4.6 SP1)
-author: v-madhi
+author: dansimp
 ms.assetid: 7cbb67ba-cc11-4f10-b903-4a6af233eacb
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,11 +1,11 @@
 ---
 title: UNPUBLISH PACKAGE
 description: UNPUBLISH PACKAGE
-author: v-madhi
+author: dansimp
 ms.assetid: 1651427c-72a5-4701-bb57-71e14a7a3803
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
