@@ -26,6 +26,7 @@ New-Mailbox -MicrosoftOnlineServicesID account@YourDomain.com -Alias SurfaceHub2
 ```
 
 ## Set Calendar Auto processing
+
    ```PowerShell
    Set-CalendarProcessing -Identity "account@YourDomain.com" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This room is equipped with a Surface Hub"
 ```
@@ -92,6 +93,7 @@ Enable-CsMeetingRoom -Identity Contoso\HUB01 -SipAddressType emailaddress -Regis
 You may need to create a new Mobile Device Mailbox Policy (also known as ActiveSync Policy) to allow your Surface Hub to connect to your online or on-premises environment.
 
 ### Create a Surface Hub mobile device mailbox policy
+
 ```PowerShell
 New-MobileDeviceMailboxPolicy -Name “Surface Hubs” -PasswordEnabled $false
 ```

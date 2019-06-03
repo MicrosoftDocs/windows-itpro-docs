@@ -26,8 +26,6 @@ You can display content from your devices to Surface Hub 2S. If the source devic
 
 In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work.
 
-*Table 2. Connecting external devices*
-
 | Mode | Connection | Functionality| Comments |
 | ---- | ---------- | ------------ | -------- |
 | Wired “Connect” Application | USB-C (via underside compute module) | Video, audio, TouchBack/InkBack into Surface Hub 2S.| Provides display port video, audio, and TouchBack/InkBack on a single cable. |
@@ -35,9 +33,7 @@ In general, it’s recommended to use native cable connections whenever possible
 | “Source” selection experience <br> (bypasses the OS, full screen requires source selection with keypad button) | USB-C (port in compute module) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> Touchback not supported <br> HDCP enabled |
 | | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> TouchBack not supported <br> HDCP enabled |
 
-When you connect a guest computer to Surface Hub 2S via the wired connect USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in Table 3, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices.
-
-*Table 3. Viewing peripherals in Device Manager*
+When you connect a guest computer to Surface Hub 2S via the wired connect USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in the table below, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices.
 
 | Peripheral | Listing in Device Manager |
 | ---------- | ------------------------- |
@@ -49,8 +45,6 @@ When you connect a guest computer to Surface Hub 2S via the wired connect USB-C 
 ### Connecting video-in to Surface Hub 2S
 
 Your choice of video cable will be determined by what is available from your source input. Surface Hub 2S has two choices of video input: USB-C and HDMI. See the following chart for available resolutions.
-
-*Table 4. Display parameters*
 
 | Signal Type | Resolution  | Frame rate | HDMI | USB-C |
 | ----------- | ----------- | ---------- | ---- | ----- |
@@ -66,8 +60,6 @@ Your choice of video cable will be determined by what is available from your sou
 ## Mirroring Surface Hub 2S display on another device
 
 Surface Hub 2S includes a Video Out port for mirroring visual content from Surface Hub 2S to another display.
-
-*Table 5. Mirroring Surface Hub 2S via video out mode*
 
 | MODE | Connection | Functionality | Comments |
 | ---- | ---------- | ------------- | -------- |
