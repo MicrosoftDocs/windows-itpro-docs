@@ -386,7 +386,7 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 -   All crash dump types, including heap dumps and full dumps.
 
 > [!NOTE]
-> Crash dumps collected at this diagnostic data level may unintentionally contain personally identifiable information (PII), such as portions of memory from a documents, a web page, etc.
+> Crash dumps collected at this diagnostic data level may unintentionally contain personal data, such as portions of memory from a documents, a web page, etc.
 
 ## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
 
