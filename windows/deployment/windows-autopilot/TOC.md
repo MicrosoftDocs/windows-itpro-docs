@@ -1,6 +1,6 @@
-# [Windows Autopilot](index.md)
+# [Windows Autopilot deployment](index.md)
 
-# Windows Autopilot deployment
+# Understanding Windows Autopilot
 ## [Overview](windows-autopilot.md)
 ## [Requirements](windows-autopilot-requirements.md)
 ## [What's new](windows-autopilot-whats-new.md)

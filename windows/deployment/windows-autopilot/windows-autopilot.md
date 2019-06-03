@@ -32,6 +32,13 @@ When initially deploying new Windows devices, Windows Autopilot leverages the OE
 
 Once deployed, Windows 10 devices can be managed by tools such as Microsoft Intune, Windows Update for Business, System Center Configuration Manager, and other similar tools. Windows Autopilot can also be used to re-purpose a device by leveraging Windows Autopilot Reset to quickly prepare a device for a new user, or in break/fix scenarios to enable a device to quickly be brought back to a business-ready state.
 
+Windows Autopilot enables you to:
+* Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
+* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](windows-autopilot-requirements-configuration.md)).
+* Restrict the Administrator account creation.
+* Create and auto-assign devices to configuration groups based on a device's profile.
+* Customize OOBE content specific to the organization.
+
 ## Windows Autopilot walkthrough
 
 The following video shows the process of setting up Windows Autopilot:
@@ -59,19 +66,7 @@ Windows 10 version 1703 or higher is required to use Windows Autopilot. The foll
 
 See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on configuration, network, and licensing requirements.
 
-## Windows Autopilot Scenarios
-
-Windows Autopilot enables you to pre-register devices to your organization so that they will be fully configured with no additional intervention required by the user.
-
-Windows Autopilot enables you to:
-* Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
-* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](windows-autopilot-requirements-configuration.md)).
-* Restrict the Administrator account creation.
-* Create and auto-assign devices to configuration groups based on a device's profile.
-* Customize OOBE content specific to the organization.
-
-See [Windows Autopilot scenarios](windows-autopilot-scenarios.md) for more information.
-
 ## Related topics
 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/en-us/intune/enrollment-autopilot)
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/en-us/intune/enrollment-autopilot)<br>
+[Windows Autopilot scenarios and capabilities](windows-autopilot-scenarios.md)
