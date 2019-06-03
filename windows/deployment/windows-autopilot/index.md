@@ -32,13 +32,15 @@ When you are ready to deploy client devices with Windows Autopilot, see the deta
 
 The following topics are available in this guide:
 
-**Understanding Windows Autopilot**<br>
-[Overview of Windows Autopilot](windows-autopilot.md): A review of Windows Autopilot is provided with a video walkthrough. Benefits and general requirements are discussed.<br>
-[Requirements](windows-autopilot-requirements.md): Detailed software, network, licensiing, and configuration requirments are provided.<br>
-[What's new](windows-autopilot-whats-new.md): Information is provided about new features of Windows Autopilot.<br>
-[Platforms](windows-autopilot-platforms.md): The platforms available for registering Windows Autopilot devices are summarized.<br>
-[Scenarios and Capabilities](windows-autopilot-scenarios.md): A summary is provided of Windows Autopilot deployment scenarios and capabilities.<br>
-[Get started](demonstrate-deployment-on-vm.md): A step-by-step walkthrough is provided for testing Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account. <br>
+<table><tr><td colspan=2><center>**Understanding Windows Autopilot**</center></td></tr>
+
+<tr><td>[Overview of Windows Autopilot](windows-autopilot.md)<td>A review of Windows Autopilot is provided with a video walkthrough. Benefits and general requirements are discussed.<br>
+<tr><td>[Requirements](windows-autopilot-requirements.md)<td> Detailed software, network, licensiing, and configuration requirments are provided.<br>
+<tr><td>[What's new](windows-autopilot-whats-new.md)<td> Information is provided about new features of Windows Autopilot.<br>
+<tr><td>[Platforms](windows-autopilot-platforms.md)<td> The platforms available for registering Windows Autopilot devices are summarized.<br>
+<tr><td>[Scenarios and Capabilities](windows-autopilot-scenarios.md)<td> A summary is provided of Windows Autopilot deployment scenarios and capabilities.<br>
+<tr><td>[Get started](demonstrate-deployment-on-vm.md)<td> A step-by-step walkthrough is provided for testing Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account. <br>
+</table>
 
 **Deployment scenarios**<br>
 [User-driven mode](user-driven.md): Requirements and validation steps for deploying a new Azure Active Directory (AAD) joined or hybrid AAD-joined Windows 10 device are provided.<br>
