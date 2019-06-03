@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 05/30/2019 
+ms.date: 06/03/2019 
 ---  
 
 # What's new in Set up School PCs
@@ -25,7 +25,7 @@ If you configure Azure AD Join, you are now required to rename your devices duri
 
 ## Week of April 15, 2019  
 
-## Support for Minecraft Education Edition upgrade
+### Support for Minecraft Education Edition upgrade
  Set up School PCs will only add apps to the provisioning package that meet the minimum supported version for Windows 10. For example, Minecraft was the most recent store app to upgrade, and when selected, can only be installed on devices running Windows 10, version 1709 and later. If you select an earlier Windows version, Minecraft won't be added to the provisioning package.  
 
 ## Week of April 8, 2019  
@@ -40,7 +40,7 @@ Specify your preferred Azure Active Directory tenant domain name to automaticall
 Set up devices so that they connect to a hidden Wi-Fi network. To configure a hidden network, open Set up School PCs. When you get to **Wireless network**, choose **Add a Wi-Fi network**. Enter in your Wi-Fi information and select **Hidden network**.  
 
 
-## Week of December 31, 2019
+## Week of December 31, 2018
 
 ### Add Microsoft Whiteboard to provisioning package  
 Microsoft Whiteboard has been added to the list of Microsoft-recommended apps for schools. Whiteboard is a freeform digital canvas where ideas, content, and people come together so students can create and collaborate in real time in the classroom. You can add Whiteboard to your provisioning package in Set up School PCs, on the **Add apps** page. For more information see [Use Set up School PCs app](use-set-up-school-pcs-app.md#create-the-provisioning-package).  
