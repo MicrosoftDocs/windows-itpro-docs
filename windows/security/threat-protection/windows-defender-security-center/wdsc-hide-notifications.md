@@ -30,6 +30,9 @@ manager: dansimp
 
 - Group Policy
 
+>[!NOTE]
+>In Windows 10, version 1803 and above, the Security app is referred to as **Windows Defender Security Center** and has two new areas, **Account protection** and **Device security**. 
+
 The Windows Security app is used by a number of Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 
 In some cases, it may not be appropriate to show these notifications, for example, if you want to hide regular status updates, or if you want to hide all notifications to the employees in your organization.
