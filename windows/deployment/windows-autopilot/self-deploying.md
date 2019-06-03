@@ -19,7 +19,7 @@ ms.topic: article
 
 # Windows Autopilot Self-Deploying mode (Preview)
 
-**Applies to: Windows 10, version 1809 or later**
+**Applies to: Windows 10, version 1903 or later**
 
 Windows Autopilot self-deploying mode enables a device to be deployed with little to no user interaction. For devices with an Ethernet connection, no user interaction is required; for devices connected via Wi-fi, no interaction is required after making the Wi-fi connection (choosing the language, locale, and keyboard, then making a network connection).  
 
@@ -68,5 +68,9 @@ When performing a self-deploying mode deployment using Windows Autopilot, the fo
 -   Depending on the device settings deployed, the device will either:
     -   Remain at the logon screen, where any member of the organization can log on by specifying their Azure AD credentials.
     -   Automatically sign in as a local account, for devices configured as a kiosk or digital signage.
+
+
+>[!NOTE]
+>Deploying EAS policies using self-deploying mode for kiosk deployments will cause auto-logon functionality to fail. 
 
 In case the observed results do not match these expectations, consult the [Windows Autopilot Troubleshooting](troubleshooting.md) documentation.
