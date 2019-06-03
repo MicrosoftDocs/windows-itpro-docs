@@ -2,11 +2,13 @@
 title: Assign seat
 description: The Assign seat operation assigns seat for a specified user in the Microsoft Store for Business.
 ms.assetid: B42BF490-35C9-405C-B5D6-0D9F0E377552
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 09/18/2017
 ---
 

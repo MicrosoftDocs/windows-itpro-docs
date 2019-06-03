@@ -2,12 +2,14 @@
 title: Create Windows Firewall rules in Intune (Windows 10)
 description: Explains how to create Windows Firewall rules in Intune
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: tewchen
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

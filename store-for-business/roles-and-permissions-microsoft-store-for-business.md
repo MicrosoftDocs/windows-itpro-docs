@@ -3,6 +3,8 @@ title: Roles and permissions in Microsoft Store for Business and Education (Wind
 description: The first person to sign in to Microsoft Store for Business or Microsoft Store for Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 keywords: roles, permissions
 ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

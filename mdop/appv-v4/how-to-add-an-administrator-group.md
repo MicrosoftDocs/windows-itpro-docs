@@ -1,8 +1,11 @@
 ---
 title: How to Add an Administrator Group
 description: How to Add an Administrator Group
-author: jamiejdt
+author: dansimp
 ms.assetid: 2611f33e-6082-4269-b0ba-394174701492
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

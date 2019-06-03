@@ -2,11 +2,13 @@
 title: On-premises deployment single forest (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
+ms.reviewer: 
+manager: dansimp
 keywords: single forest deployment, on prem deployment, device account, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---

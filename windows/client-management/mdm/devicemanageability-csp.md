@@ -2,11 +2,13 @@
 title: DeviceManageability CSP
 description: The DeviceManageability configuration service provider (CSP) is used retrieve the general information about MDM configuration capabilities on the device. This CSP was added in Windows 10, version 1607.
 ms.assetid: FE563221-D5B5-4EFD-9B60-44FE4066B0D2
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 11/01/2017
 ---
 

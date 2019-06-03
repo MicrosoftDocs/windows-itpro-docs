@@ -1,8 +1,11 @@
 ---
 title: Command-Line Errors
 description: Command-Line Errors
-author: jamiejdt
+author: dansimp
 ms.assetid: eea62568-4e90-4877-9cc7-e27ef5c05068
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

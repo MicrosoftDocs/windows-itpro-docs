@@ -2,6 +2,8 @@
 title: Distribute apps with a management tool (Windows 10)
 description: You can configure a mobile device management (MDM) tool to synchronize your Microsoft Store for Business or Microsoft Store for Education inventory. Microsoft Store management tool services work with MDM tools to manage content.
 ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

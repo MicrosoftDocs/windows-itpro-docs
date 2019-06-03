@@ -1,8 +1,11 @@
 ---
 title: What's New in App-V 5.0
 description: What's New in App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 79ff6e02-e926-4803-87d8-248a6b28099d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

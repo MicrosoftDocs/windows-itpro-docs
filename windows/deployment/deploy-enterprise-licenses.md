@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enterprise E3 or E5 Subscription Activation, or for Windows 10 Enterprise E3 in CSP
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -7,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

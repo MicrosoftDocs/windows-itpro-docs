@@ -1,12 +1,15 @@
 ---
 title: Enable the App-V in-box client (Windows 10)
 description: How to enable the App-V in-box client installed with Windows 10.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Enable the App-V in-box client

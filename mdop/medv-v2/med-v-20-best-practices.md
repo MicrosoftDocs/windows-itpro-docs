@@ -1,8 +1,11 @@
 ---
 title: MED-V 2.0 Best Practices
 description: MED-V 2.0 Best Practices
-author: jamiejdt
+author: levinec
 ms.assetid: 47ba2dd1-6c6e-4d6e-8e18-b42291f8e02a
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,11 +2,13 @@
 title: DeviceInstanceService CSP
 description: DeviceInstanceService CSP
 ms.assetid: f113b6bb-6ce1-45ad-b725-1b6610721e2d
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

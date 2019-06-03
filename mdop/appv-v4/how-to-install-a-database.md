@@ -1,8 +1,11 @@
 ---
 title: How to Install a Database
 description: How to Install a Database
-author: jamiejdt
+author: dansimp
 ms.assetid: 52e3a19d-b7cf-4f2c-8268-0f8361cc9766
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

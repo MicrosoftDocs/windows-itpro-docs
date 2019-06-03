@@ -2,11 +2,14 @@
 title: Use VAMT in Windows PowerShell (Windows 10)
 description: Use VAMT in Windows PowerShell
 ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

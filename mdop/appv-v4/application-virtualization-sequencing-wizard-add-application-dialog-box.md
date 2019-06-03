@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencing Wizard-Add Application Dialog Box
 description: Application Virtualization Sequencing Wizard-Add Application Dialog Box
-author: jamiejdt
+author: dansimp
 ms.assetid: 247eac0e-830d-4d72-be48-af7d1525eefd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

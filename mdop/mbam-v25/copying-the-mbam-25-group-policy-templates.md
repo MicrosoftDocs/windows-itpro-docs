@@ -1,8 +1,11 @@
 ---
 title: Copying the MBAM 2.5 Group Policy Templates
 description: Copying the MBAM 2.5 Group Policy Templates
-author: jamiejdt
+author: dansimp
 ms.assetid: e526ecec-07ff-435e-bc90-3084b617b84b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

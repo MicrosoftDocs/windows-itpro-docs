@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.sitesec: library  
 ms.pagetype: edu  
 ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
+author: mjcaparas
+ms.author: macapara
 ms.date: 06/03/2019 
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # What's new in Set up School PCs

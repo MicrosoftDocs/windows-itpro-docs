@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5 Group Policy Requirements
 description: Planning for MBAM 2.5 Group Policy Requirements
-author: jamiejdt
+author: dansimp
 ms.assetid: 82d545dc-3fbf-4b46-b62f-47fe178a7c44
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

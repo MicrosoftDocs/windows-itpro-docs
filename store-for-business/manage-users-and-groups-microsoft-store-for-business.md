@@ -2,6 +2,8 @@
 title: Manage user accounts in Microsoft Store for Business and Microsoft Store for Education (Windows 10)
 description: Microsoft Store for Business and Microsoft Store for Education manages permissions with a set of roles. Currently, you can assign these roles to individuals in your organization, but not to groups.
 ms.assetid: 5E7FA071-CABD-4ACA-8AAE-F549EFCE922F
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

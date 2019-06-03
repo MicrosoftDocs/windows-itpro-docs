@@ -1,14 +1,16 @@
 ---
 title: About App-V 5.1 dynamic configuration
 description: You can use the dynamic configuration to customize an App-V 5.1 package for a user. Use the following information to create or edit an existing dynamic configuration file.
-author: jamiejdt
+author: v-madhi
 ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
+ms.reviewer: 
+manager: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 08/28/2018
-ms.author: pashort
+ms.author: v-madhi
 ---
 
 # About App-V 5.1 dynamic configuration 

@@ -10,6 +10,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 3/20/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business

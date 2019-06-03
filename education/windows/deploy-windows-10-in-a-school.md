@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: lizap
-ms.author: elizapo
+author: levinec
+ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 in a school

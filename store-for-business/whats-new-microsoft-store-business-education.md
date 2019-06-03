@@ -9,6 +9,8 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 10/31/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # What's new in Microsoft Store for Business and Education

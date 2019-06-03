@@ -1,5 +1,7 @@
 ---
 title: Prevent security settings changes with Tamper Protection
+ms.reviewer: 
+manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
 search.product: eADQiWindows 10XVcnh
@@ -9,8 +11,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ---
 
 # Prevent security settings changes with tamper protection

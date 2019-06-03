@@ -2,11 +2,14 @@
 title: More kiosk methods and reference information (Windows 10)
 description: Find more information for configuring, validating, and troubleshooting kiosk configuration.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.topic: reference
 ---

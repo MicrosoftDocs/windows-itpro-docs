@@ -1,11 +1,14 @@
 ---
 title: Upgrade Readiness data sharing
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Connectivity scenarios for data sharing with Upgrade Readiness
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---

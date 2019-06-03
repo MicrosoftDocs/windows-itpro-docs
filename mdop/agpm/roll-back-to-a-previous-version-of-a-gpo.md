@@ -1,8 +1,11 @@
 ---
 title: Roll Back to a Previous Version of a GPO
 description: Roll Back to a Previous Version of a GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 028631c0-4cb9-4642-90ad-04cd813051b7
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

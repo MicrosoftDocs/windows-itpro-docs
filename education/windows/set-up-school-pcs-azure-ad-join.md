@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.sitesec: library  
 ms.pagetype: edu  
 ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
+author: levinec
+ms.author: ellevin
 ms.date: 01/11/2019
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # Azure AD Join for school PCs  

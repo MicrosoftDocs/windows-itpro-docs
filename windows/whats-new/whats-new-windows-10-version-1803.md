@@ -5,8 +5,11 @@ keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.date: 07/07/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---

@@ -4,10 +4,12 @@ description: This topic explains how to use the Surface Asset Tag Tool.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: coveminer
-ms.author: v-jokai
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Asset Tag Tool

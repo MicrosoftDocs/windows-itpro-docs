@@ -1,8 +1,11 @@
 ---
 title: Deployment Troubleshooting
 description: Deployment Troubleshooting
-author: jamiejdt
+author: levinec
 ms.assetid: 9ee980f2-4e77-4020-9f0e-8c2ffdc390ad
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
