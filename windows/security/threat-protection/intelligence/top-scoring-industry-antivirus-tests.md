@@ -37,9 +37,9 @@ MITRE tested the ability of products to detect techniques commonly used by the t
 [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
+<br><br>
 
-- **Transparency report**: [Examining industry test results, May 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
-
+![Graph describing Real-World detection rate](./images/transparency-report-small60.png) Download the latest transparency report: [**Examining industry test results, May 2019**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
 
 ### AV-TEST: Protection score of 6.0/6.0 in the latest test
 
@@ -49,7 +49,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
     Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 6,849 malware samples used. This is the sixth consecutive cycle that Windows Defender Antivirus achieved a perfect Protection score.
 
-- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2019/microsoft-windows-defender-antivirus-4.18-190611/)
+- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2019/microsoft-windows-defender-antivirus-4.18-190611/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
 
     Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 13,977 malware samples used.
 
@@ -77,7 +77,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-- Real-World Protection Test Enterprise March - April 2019: [Protection Rate 99.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-april-2019-testresult/) <sup>**Latest**</sup>
+- Real-World Protection Test Enterprise March - April 2019: [Protection Rate 99.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-april-2019-testresult/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd) <sup>**Latest**</sup>
 
     This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online. The test set contained 389 test cases (such as malicious URLs).
 
@@ -97,7 +97,7 @@ AV-Comparatives is an independent organization offering systematic testing for s
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup>
+- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
 
      Microsoft's next-gen protection was named as one of the leading products, stopping all of the public and targeted attacks.
 
