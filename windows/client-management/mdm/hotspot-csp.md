@@ -4,11 +4,11 @@ description: HotSpot CSP
 ms.assetid: ec49dec1-fa79-420a-a9a7-e86668b3eebf
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

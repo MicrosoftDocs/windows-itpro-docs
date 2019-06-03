@@ -4,11 +4,11 @@ description: ICSPNode SetProperty
 ms.assetid: e235c38f-ea04-4cd8-adec-3c6c0ce7172d
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

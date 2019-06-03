@@ -4,11 +4,11 @@ description: EnterpriseExtFileSystem CSP
 ms.assetid: F773AD72-A800-481A-A9E2-899BA56F4426
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

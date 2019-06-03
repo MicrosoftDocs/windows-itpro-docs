@@ -1,11 +1,11 @@
 ---
 title: TenantLockdown DDF file
 description: XML file containing the device description framework
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 08/13/2018
 ms.reviewer: 
 manager: dansimp

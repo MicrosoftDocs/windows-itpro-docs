@@ -4,11 +4,11 @@ description: Like any Windows devices, Windows 10 Mobile devices use Microsoft 
 ms.assetid: ED3DAF80-847C-462B-BDB1-486577906772
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

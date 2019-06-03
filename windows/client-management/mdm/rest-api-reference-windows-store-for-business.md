@@ -7,11 +7,11 @@ MS-HAID:
 ms.assetid: 8C48A879-525A-471F-B0FD-506E743A7D2F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 09/18/2017
 ---
 

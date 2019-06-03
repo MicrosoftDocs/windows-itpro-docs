@@ -1,11 +1,11 @@
 ---
 title: Messaging DDF file
 description: Messaging DDF file
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 12/05/2017
 ms.reviewer: 
 manager: dansimp

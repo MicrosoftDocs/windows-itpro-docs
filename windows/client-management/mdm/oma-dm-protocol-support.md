@@ -4,11 +4,11 @@ description: OMA DM protocol support
 ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

@@ -4,11 +4,11 @@ description: EnterpriseAssignedAccess CSP
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 07/12/2017
 ---
 

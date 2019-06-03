@@ -1,11 +1,11 @@
 ---
 title: App-V 5.0 Security Considerations
 description: App-V 5.0 Security Considerations
-author: v-madhi
+author: dansimp
 ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

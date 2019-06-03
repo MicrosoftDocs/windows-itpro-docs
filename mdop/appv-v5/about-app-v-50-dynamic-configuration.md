@@ -1,11 +1,11 @@
 ---
 title: About App-V 5.0 Dynamic Configuration
 description: About App-V 5.0 Dynamic Configuration
-author: v-madhi
+author: dansimp
 ms.assetid: 88afaca1-68c5-45c4-a074-9371c56b5804
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

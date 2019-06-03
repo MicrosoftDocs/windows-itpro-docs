@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - TaskManager
 description: Policy CSP - TaskManager
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 07/05/2018
 ms.reviewer: 
 manager: dansimp

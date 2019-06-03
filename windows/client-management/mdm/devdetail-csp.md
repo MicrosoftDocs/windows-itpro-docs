@@ -4,11 +4,11 @@ description: DevDetail CSP
 ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 07/11/2018
 ---
 

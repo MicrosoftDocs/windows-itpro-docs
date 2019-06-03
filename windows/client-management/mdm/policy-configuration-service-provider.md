@@ -4,11 +4,11 @@ description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 05/01/2019
 ---
 

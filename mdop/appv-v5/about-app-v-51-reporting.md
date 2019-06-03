@@ -1,11 +1,11 @@
 ---
 title: About App-V 5.1 Reporting
 description: About App-V 5.1 Reporting
-author: v-madhi
+author: dansimp
 ms.assetid: 385dca00-7178-4e35-8d86-c58867ebd65c
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

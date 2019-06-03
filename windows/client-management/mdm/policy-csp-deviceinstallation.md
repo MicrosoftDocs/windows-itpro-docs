@@ -3,11 +3,11 @@ title: Policy CSP - DeviceInstallation
 ms.reviewer: 
 manager: dansimp
 description: Policy CSP - DeviceInstallation
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ---
 
 # Policy CSP - DeviceInstallation

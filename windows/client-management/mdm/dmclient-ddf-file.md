@@ -4,11 +4,11 @@ description: DMClient DDF file
 ms.assetid: A21B33AF-DB76-4059-8170-FADF2CB898A0
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 12/05/2017
 ---
 

@@ -4,11 +4,11 @@ description: ICSPNode Move
 ms.assetid: efb359c3-5c86-4975-bf6f-a1c33922442a
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

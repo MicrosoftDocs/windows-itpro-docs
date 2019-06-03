@@ -1,11 +1,11 @@
 ---
 title: Understanding ADMX-backed policies
 description: Starting in Windows 10, version 1703, you can use ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 03/02/2018
 ms.reviewer: 
 manager: dansimp

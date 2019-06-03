@@ -4,11 +4,11 @@ description: The Get localized product details operation retrieves the localizat
 ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 09/18/2017
 ---
 

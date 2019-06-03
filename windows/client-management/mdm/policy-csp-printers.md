@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Printers
 description: Policy CSP - Printers
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 03/12/2018
 ms.reviewer: 
 manager: dansimp

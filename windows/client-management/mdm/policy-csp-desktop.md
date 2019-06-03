@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Desktop
 description: Policy CSP - Desktop
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 08/08/2018
 ms.reviewer: 
 manager: dansimp

@@ -4,11 +4,11 @@ description: This topic shows the OMA DM device description framework (DDF) for 
 ms.assetid: EF22DBB6-0578-4FD0-B8A6-19DC03288FAF
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 12/05/2017
 ---
 

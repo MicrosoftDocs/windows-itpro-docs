@@ -4,11 +4,11 @@ description: DevInfo CSP
 ms.assetid: d3eb70db-1ce9-4c72-a13d-651137c1713c
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

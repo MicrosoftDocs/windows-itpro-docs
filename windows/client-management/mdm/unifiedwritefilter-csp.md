@@ -4,11 +4,11 @@ description: The UnifiedWriteFilter (UWF) configuration service provider enables
 ms.assetid: F4716AC6-0AA5-4A67-AECE-E0F200BA95EB
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/26/2017
 ---
 

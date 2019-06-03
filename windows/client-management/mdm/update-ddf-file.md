@@ -4,11 +4,11 @@ description: Update DDF file
 ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 02/23/2018
 ---
 

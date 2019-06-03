@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Defender
 description: Policy CSP - Defender
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 01/26/2019
 ms.reviewer: 
 manager: dansimp

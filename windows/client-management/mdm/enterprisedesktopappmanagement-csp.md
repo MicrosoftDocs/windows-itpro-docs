@@ -4,11 +4,11 @@ description: The EnterpriseDesktopAppManagement configuration service provider i
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 07/11/2017
 ---
 

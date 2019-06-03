@@ -1,11 +1,11 @@
 ---
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
-author: v-madhi
+author: dansimp
 ms.assetid: 36a4bf6f-a917-41a6-9856-6248686df352
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

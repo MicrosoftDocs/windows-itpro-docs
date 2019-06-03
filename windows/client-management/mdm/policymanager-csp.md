@@ -4,11 +4,11 @@ description: PolicyManager CSP
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 06/28/2017
 ---
 

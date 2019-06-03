@@ -1,11 +1,11 @@
 ---
 title: eUICCs CSP
 description: eUICCs CSP
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: dansimp
 ms.date: 03/02/2018
 ms.reviewer: 
 manager: dansimp
