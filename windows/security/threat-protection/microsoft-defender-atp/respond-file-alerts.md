@@ -32,6 +32,7 @@ Quickly respond to detected attacks by stopping and quarantining files or blocki
 You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file.
 
 ## Stop and quarantine files in your network
+
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.
 
 >[!IMPORTANT]
@@ -48,12 +49,13 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
 >You’ll be able to restore the file from quarantine at any time.
 
 ### Stop and quarantine files
-1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-  - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
-  - **Search box** - select File from the drop–down menu and enter the file name
+1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-2.	Open the **Actions menu** and select **Stop and Quarantine File**.
+    - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+    - **Search box** - select File from the drop–down menu and enter the file name
+
+2. Open the **Actions menu** and select **Stop and Quarantine File**.
 
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
 
@@ -86,15 +88,16 @@ In the machine timeline, a new event is added for each machine where a file was 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
 ## Remove file from quarantine
+
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
 
-1.	Open an elevated command–line prompt on the machine:
+1. Open an elevated command–line prompt on the machine:
 
-    a.	Go to **Start** and type cmd.
+    a. Go to **Start** and type cmd.
 
-    b.	Right–click **Command prompt** and select **Run as administrator**.
+    b. Right–click **Command prompt** and select **Run as administrator**.
 
-2.	Enter the following command, and press **Enter**:
+2. Enter the following command, and press **Enter**:
   ```
   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
   ```
@@ -103,6 +106,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
+
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
 >[!IMPORTANT]
@@ -112,40 +116,40 @@ You can prevent further propagation of an attack in your organization by banning
 >- This response action is available for machines on Windows 10, version 1703 or later.
 >- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
 
-
-
 >[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
 >- There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
 
 ### Enable the block file feature
+
 Before you can block files, you'll need to enable the feature.
 
-1.	In the navigation pane, select **Settings** > **Advanced features** > **Block file**.
+1. In the navigation pane, select **Settings** > **Advanced features** > **Block file**.
 
-2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
-    
+2. Toggle the setting between **On** and **Off** and select **Save preferences**.
+
     ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
   
 ### Block a file
-1.	Select the file you want to block. You can select a file from any of the following views or use the Search box:
 
-  - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
-  - **Search box** - select File from the drop–down menu and enter the file name
+1. Select the file you want to block. You can select a file from any of the following views or use the Search box:
 
-2.	Open the **Actions menu** and select **Block**. 
-    
+    - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+    - **Search box** - select File from the drop–down menu and enter the file name
+
+2. Open the **Actions menu** and select **Block**. 
+
     ![Image of block action](images/atp-action-block-file.png)
 
 3. Specify a reason and select **Yes, block file** to take action on the file.
-    
+
     ![Image of block file action](images/atp-block-file.png)
 
     The Action center shows the submission information:
     ![Image of block file](images/atp-blockfile.png)
 
-  - **Submission time** - Shows when the action was submitted. <br>
-  - **Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon. <br>
+  - **Submission time** - Shows when the action was submitted.
+  - **Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
   - **Status** - Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
@@ -166,24 +170,24 @@ When a file is being blocked on the machine, the following notification is displ
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
 ## Remove file from blocked list
-1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
-  - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
-  - **Search box** - Select File from the drop–down menu and enter the file name
+1. Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
-2.	Open the **Actions** menu and select **Remove file from blocked list**.
+    - **Alerts** - Click the file links from the Description or Details in the Artifact timeline
+    - **Search box** - Select File from the drop–down menu and enter the file name
+
+2. Open the **Actions** menu and select **Remove file from blocked list**.
 
   ![Image of remove file from blocked list](images/atp-remove-blocked-file.png)
 
 3. Type a comment and select **Yes** to take action on the file. The file will be allowed to run in the organization.
 
-
 ## Check activity details in Action center
+
 The  **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the details on the last action that were taken on a file such as stopped and quarantined files or blocked files.
 
-![Image of action center with information](images/atp-action-center-with-info.png)
-
 ## Deep analysis
+
 Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data related to the file, you can submit the file for deep analysis.
 
 The deep analysis feature executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IPs.
@@ -211,10 +215,12 @@ When the sample is collected, Microsoft Defender ATP runs the file in is a secur
 
 **Submit files for deep analysis:**
 
-1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views: <br>
-  - Alerts - click the file links from the **Description** or **Details** in the Artifact timeline <br>
-  - **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section <br>
-  - Search box - select **File** from the drop–down menu and enter the file name <br>
+1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
+
+    - Alerts - click the file links from the **Description** or **Details** in the Artifact timeline
+    - **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section
+    - Search box - select **File** from the drop–down menu and enter the file name
+
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
@@ -237,7 +243,6 @@ You can view the comprehensive report that provides details on the following sec
 
 The details provided can help you investigate if there are indications of a potential attack.
 
-
 1. Select the file you submitted for deep analysis.
 2. Click **See the report below**. Information on the analysis is displayed.
 
@@ -247,7 +252,6 @@ The details provided can help you investigate if there are indications of a pote
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
-
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
@@ -255,15 +259,14 @@ If you encounter a problem when trying to submit a file, try each of the followi
 
     ```
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-    Name: AllowSampleCollection 
+    Name: AllowSampleCollection
     Type: DWORD 
-    Hexadecimal value : 
+    Hexadecimal value :
       Value = 0 – block sample collection
       Value = 1 – allow sample collection
     ```
 5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
-
 
 ## Related topic
 - [Take response actions on a machine](respond-machine-alerts.md)
