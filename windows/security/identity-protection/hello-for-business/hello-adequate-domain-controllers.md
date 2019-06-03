@@ -1,6 +1,6 @@
 ---
-title: Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
-description: Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
+title: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
+description: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
