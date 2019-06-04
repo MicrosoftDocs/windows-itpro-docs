@@ -22,6 +22,10 @@ ms.topic: article
 
 Windows Autopilot depends on specific capabilities available in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune.  In order to use Windows Autopilot and leverage these capabilities, some requirements must be met.
 
+**Note**: For a list of OEMs that currently support Windows Autopilot, see the Participant device manufacturers section at [Windows Autopilot](https://aka.ms/windowsautopilot).
+
+## Software requirements
+
 - Windows 10 version 1703 (semi-annual channel) or higher is required. 
 - The following editions are supported:
     -   Windows 10 Pro
@@ -30,18 +34,6 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
     -   Windows 10 Enterprise
     -   Windows 10 Education
     -   Windows 10 Enterprise 2019 LTSC
-    
-- If you're using Autopilot for Surface devices, note that only the following Surface devices support Autopilot:
-    - Surface Go
-    - Surface Go with LTE Advanced
-    - Surface Pro (5th gen) 
-    - Surface Pro with LTE Advanced (5th gen) 
-    - Surface Pro 6
-    - Surface Laptop (1st gen)
-    - Surface Laptop 2
-    - Surface Studio (1st gen)
-    - Surface Studio 2
-    - Surface Book 2
 
 ## Networking requirements
 
@@ -50,49 +42,41 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 -   Ensure DNS name resolution for internet DNS names
 -   Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP)
 
+## Restricted access environments
+
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to whitelist access to the required services. For additional details about each of these services and their specific requirements, review the following details:
 
-**Windows Autopilot Deployment Service (and Windows Activation)**:  After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used:
-- https://ztd.dds.microsoft.com
-- https://cs.dds.microsoft.com
+<table><th>Service<th>Information
+<tr><td>**Windows Autopilot Deployment Service and Windows Activation**<td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used: https://ztd.dds.microsoft.com, https://cs.dds.microsoft.com
     
-    For all supported Windows 10 releases, Windows Autopilot also uses Windows Activation services. See the following link for details about problems that might occur when you connect to the Internet through a proxy server: [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33).
+For all supported Windows 10 releases, Windows Autopilot also uses Windows Activation services. See [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33) for details about problems that might occur when you connect to the Internet through a proxy server.
+<tr><td>**Azure Active Directory**<td>User credentials are validated by Azure Active Directory, and the device can also be joined to Azure Active Directory. See [Office 365 IP Address and URL Web service](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) for more information.
+<tr><td>**Intune**<td>Once authenticated, Azure Active Directory will trigger enrollment of the device into the Intune MDM service. See the following link for details about network communication requirements: [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements).
+<tr><td>**Windows Update**<td>During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates. If there are problems connecting to Windows Update, see [How to solve connection problems concerning Windows Update or Microsoft Update](https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof).
 
-**Azure Active Directory**: User credentials are validated by Azure Active Directory, and the device can also be joined to Azure Active Directory. See [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) for more information.
+If Windows Update is inaccessible, the AutoPilot process will still continue.
 
-**Intune**: Once authenticated, Azure Active Directory will trigger enrollment of the device into the Intune MDM service. See the following link for details about network communication requirements: [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements).
+<tr><td>**Delivery Optimization**<td>When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.
 
-**Windows Update**: During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates. If there are problems connecting to Windows Update, see [How to solve connection problems concerning Windows Update or Microsoft Update](https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof).
+If the Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
 
-   - NOTE: If Windows Update is inaccessible, the AutoPilot process will still continue.
+<tr><td>**Network Time Protocol (NTP) Sync**<td>When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate. Ensure that UDP port 123 to time.windows.com is accessible.
+<tr><td>**Domain Name Services (DNS)**<td>To resolve DNS names for all services, the device communicates with a DNS server, typically provided via DHCP.  This DNS server must be able to resolve internet names.
+<tr><td>**Diagnostics data**<td>To enable Windows Analytics and related diagnostics capabilities, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
-**Delivery Optimization**: When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.
+If diagnostic data cannot be sent, the Autopilot process will still continue.
+<tr><td>**Network Connection Status Indicator (NCSI)**<td>Windows must be able to tell that the device is able to access the internet. For more information, see [Network Connection Status Indicator (NCSI)](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1709-endpoints#network-connection-status-indicator-ncsi).
 
-   - NOTE: If the Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
+[www.msftconnecttest.com](http://www.msftconnecttest.com) must be resolvable via DNS and accessible via HTTP.
+<tr><td>**Windows Notification Services (WNS)**<td>This service is used to enable Windows to receive notifications from apps and services. See [Microsoft Store](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints#microsoft-store) for more information.
 
-**Network Time Protocol (NTP) Sync**: When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate. Ensure that UDP port 123 to time.windows.com is accessible.
+If the WNS services are not available, the Autopilot process will still continue.
+<tr><td>**Microsoft Store, Microsoft Store for Business**<td>Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)(also includes Azure AD and Windows Notification Services).
 
-**Domain Name Services (DNS)**: To resolve DNS names for all services, the device communicates with a DNS server, typically provided via DHCP.  This DNS server must be able to resolve internet names.
-
-**Diagnostics data**: To enable Windows Analytics and related diagnostics capabilities, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
-
-   - NOTE: If diagnostic data cannot be sent, the Autopilot process will still continue.
-
-**Network Connection Status Indicator (NCSI)**: Windows must be able to tell that the device is able to access the internet. For more information, see [Network Connection Status Indicator (NCSI)](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1709-endpoints#network-connection-status-indicator-ncsi).
-
-   - [www.msftconnecttest.com](http://www.msftconnecttest.com) must be resolvable via DNS and accessible via HTTP)
-
-**Windows Notification Services (WNS)**: This service is used to enable Windows to receive notifications from apps and services. See [Microsoft Store](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints#microsoft-store) for more information.
-
-   - NOTE: If the WNS services are not available, the Autopilot process will still continue.
-
-**Microsoft Store, Microsoft Store for Business**: Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)(also includes Azure AD and Windows Notification Services).
-
-   - NOTE: If the Microsoft Store is not accessible, the AutoPilot process will still continue.
-
-**Office 365**: As part of the Intune device configuration, installation of Office 365 ProPlus may be required. For more information, see [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)(includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
-
-**Certificate revocation lists (CRLs)**: Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl) and [Office 365 Certificate Chains](https://aka.ms/o365chains).
+If the Microsoft Store is not accessible, the AutoPilot process will still continue.
+<tr><td>**Office 365**<td>As part of the Intune device configuration, installation of Office 365 ProPlus may be required. For more information, see [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)(includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
+<tr><td>**Certificate revocation lists (CRLs)**<td>Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl) and [Office 365 Certificate Chains](https://aka.ms/o365chains).
+</table>
 
 ## Licensing requirements
 
@@ -128,7 +112,7 @@ Specific scenarios will then have additional requirements.  Generally, there are
 See [Windows Autopilot Scenarios](windows-autopilot-scenarios.md) for additional details.
 
 For a walkthrough for some of these and related steps, see this video:
-</br>
+<br>&nbsp;<br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
