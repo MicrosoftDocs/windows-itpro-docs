@@ -23,7 +23,7 @@ The **Latest Security Update Status** and **Previous Security Update Status** ti
 
 The deployment and detailed states of an update are described as follows:
 
-**Deployment States**
+**Deployment states**
 * **Unknown**: Indicates a device that has not been scanned for an update for some time.
 * **In Progress**: Indicates that an update is currently being applied to a specific device.
 * **Progress Stalled**: Indicates that an update has stopped for some reason, such as network failure.
@@ -32,7 +32,7 @@ The deployment and detailed states of an update are described as follows:
 * **Deferred**: Indicates that an update has been postponed to a later time. 
 * **Cancelled**: Indicates that an update has been cancelled by the user.
 
-**Detailed States**
+**Detailed states**
 * **Download Started**: Indicates that a specific update has started to download.
 * **Download Succeeded**: Indicates that the download of a specific update has been successful.
 * **Download Hand Off**: Indicates that you can continue downloading an update at the point where it was stopped.
