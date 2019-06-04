@@ -51,8 +51,6 @@ This guide will show you how to configure your VMs for optimal protection and pe
 
 In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines.
 
-For more information about how this works, see the whitepaper [Windows Defender Antivirus on Virtual Desktop Infrastructure](URL). This whitepaper also looks at performance testing and provides guidance on how you can test antivirus performance on your own VDI.
-
 You can set this feature with Intune, Group Policy, or PowerShell.
 
 Open the Intune management portal either by searching for Intune on https://portal.azure.com or going to https://devicemanagement.microsoft.com and logging in.
