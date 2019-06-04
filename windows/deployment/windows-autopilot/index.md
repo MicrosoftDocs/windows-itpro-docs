@@ -28,10 +28,9 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 
 ## In this guide
 
-<br>&nbsp;
-
 <table>
 <tr><td>[What's new](windows-autopilot-whats-new.md)<td>Windows Autopilot is always being updated with new features! Check this topic to read about the latests capabilities.
+<tr><td>&nbsp;<td>&nbsp;
 </table>
 
 ### Understanding Windows Autopilot
