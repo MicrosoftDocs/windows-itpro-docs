@@ -42,36 +42,34 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 -   Ensure DNS name resolution for internet DNS names
 -   Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP)
 
-## Restricted access environments
-
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to whitelist access to the required services. For additional details about each of these services and their specific requirements, review the following details:
 
 <table><th>Service<th>Information
-<tr><td>**Windows Autopilot Deployment Service and Windows Activation**<td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used: https://ztd.dds.microsoft.com, https://cs.dds.microsoft.com
+<tr><td>**Windows Autopilot Deployment Service and Windows Activation**<td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used: https://ztd.dds.microsoft.com, https://cs.dds.microsoft.com. <br>
     
 For all supported Windows 10 releases, Windows Autopilot also uses Windows Activation services. See [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33) for details about problems that might occur when you connect to the Internet through a proxy server.
 <tr><td>**Azure Active Directory**<td>User credentials are validated by Azure Active Directory, and the device can also be joined to Azure Active Directory. See [Office 365 IP Address and URL Web service](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) for more information.
 <tr><td>**Intune**<td>Once authenticated, Azure Active Directory will trigger enrollment of the device into the Intune MDM service. See the following link for details about network communication requirements: [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements).
-<tr><td>**Windows Update**<td>During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates. If there are problems connecting to Windows Update, see [How to solve connection problems concerning Windows Update or Microsoft Update](https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof).
+<tr><td>**Windows Update**<td>During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates. If there are problems connecting to Windows Update, see [How to solve connection problems concerning Windows Update or Microsoft Update](https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof).<br>
 
 If Windows Update is inaccessible, the AutoPilot process will still continue but critical updates will not be available.
 
-<tr><td>**Delivery Optimization**<td>When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.
+<tr><td>**Delivery Optimization**<td>When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.<br>
 
 If the Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
 
 <tr><td>**Network Time Protocol (NTP) Sync**<td>When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate. Ensure that UDP port 123 to time.windows.com is accessible.
 <tr><td>**Domain Name Services (DNS)**<td>To resolve DNS names for all services, the device communicates with a DNS server, typically provided via DHCP.  This DNS server must be able to resolve internet names.
-<tr><td>**Diagnostics data**<td>To enable Windows Analytics and related diagnostics capabilities, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
+<tr><td>**Diagnostics data**<td>To enable Windows Analytics and related diagnostics capabilities, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).<br>
 
 If diagnostic data cannot be sent, the Autopilot process will still continue, but services that depend on diagnostic data, such as Windows Analytics, will not work.
 <tr><td>**Network Connection Status Indicator (NCSI)**<td>Windows must be able to tell that the device is able to access the internet. For more information, see [Network Connection Status Indicator (NCSI)](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1709-endpoints#network-connection-status-indicator-ncsi).
 
 [www.msftconnecttest.com](http://www.msftconnecttest.com) must be resolvable via DNS and accessible via HTTP.
-<tr><td>**Windows Notification Services (WNS)**<td>This service is used to enable Windows to receive notifications from apps and services. See [Microsoft Store](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints#microsoft-store) for more information.
+<tr><td>**Windows Notification Services (WNS)**<td>This service is used to enable Windows to receive notifications from apps and services. See [Microsoft Store](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints#microsoft-store) for more information.<br>
 
 If the WNS services are not available, the Autopilot process will still continue without notifications.
-<tr><td>**Microsoft Store, Microsoft Store for Business**<td>Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)(also includes Azure AD and Windows Notification Services).
+<tr><td>**Microsoft Store, Microsoft Store for Business**<td>Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)(also includes Azure AD and Windows Notification Services).<br>
 
 If the Microsoft Store is not accessible, the AutoPilot process will still continue without Microsoft Store apps.
 
