@@ -77,6 +77,6 @@ Regardless which tool you're using to edit your Group Policy settings, you'll ne
 -   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](https://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
 
 ## Related topics
-- [Administrative templates (.admx) for Windows 10 April 2018 Update](https://www.microsoft.com/en-us/download/details.aspx?id=56880)
+- [Administrative templates (.admx) for Windows 10 April 2018 Update](https://www.microsoft.com/download/details.aspx?id=56880)
 - [Administrative templates (.admx) for Windows 10 October 2018 Update](https://www.microsoft.com/en-us/download/details.aspx?id=57576)
 - [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580)
