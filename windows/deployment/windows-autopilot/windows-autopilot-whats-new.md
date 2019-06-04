@@ -32,8 +32,8 @@ ms.topic: article
 
 Also new in this version of Windows:
 - The Intune enrollment status page (ESP) now tracks Intune Management Extensions.
-- Cortana voiceover and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
-- Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
+- [Cortana voiceover and speech recognition during OOBE](windows-autopilot-scenarios.md#cortana-voiceover-and-speech-recognition-during-oobe) is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
+- [Windows Autopilot is self-updating during OOBE](windows-autopilot-scenarios.md#windows-autopilot-is-self-updating-during-oobe). Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
 - Windows Autopilot will set the diagnostics data level to Full on Windows 10 version 1903 and later during OOBE. 
 
 ## New in Windows 10, version 1809

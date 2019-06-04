@@ -57,14 +57,7 @@ From the IT pro's perspective, the only interaction required from the end user i
 
 ## Requirements
 
-Windows 10 version 1703 or higher is required to use Windows Autopilot. The following editions are supported:
-- Pro
-- Pro Education
-- Pro for Workstations
-- Enterprise
-- Education
-
-See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on configuration, network, and licensing requirements.
+Windows 10 version 1703 or higher is required to use Windows Autopilot. See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on software, configuration, network, and licensing requirements.
 
 ## Related topics
 

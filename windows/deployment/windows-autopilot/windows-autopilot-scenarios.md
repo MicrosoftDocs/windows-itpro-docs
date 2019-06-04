@@ -37,7 +37,7 @@ The following Windows Autopilot scenarios are described in this guide:
 
 ## Windows Autopilot capabilities
 
-### Windows Autopilot is self-updating during OOBE:
+### Windows Autopilot is self-updating during OOBE
 
 Starting with the Windows 10, version 1903, Autopilot functional and critical updates will begin downloading automatically during OOBE after a device gets connected to a network and the [critical driver and Windows zero-day patch (ZDP) updates](https://docs.microsoft.com/windows-hardware/customize/desktop/windows-updates-during-oobe) have completed. The user or IT admin cannot opt-out of these Autopilot updates; they are required for Windows Autopilot deployment to operate properly.  Windows will alert the user that the device is checking for, downloading and installing the updates.
 

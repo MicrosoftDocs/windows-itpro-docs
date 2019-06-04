@@ -109,4 +109,4 @@ When deploying new devices using Windows Autopilot, the following steps are requ
 ## Other configuration settings
 
 - [Bitlocker encryption settings](bitlocker.md): You can configure the BitLocker encryption settings to be applied before automatic encryption is started.
-- [Cortana voiceover and speech recognition](windows-autopilot-scenarios.md): In Windows 10, version 1903 and later Cortana voiceover and speech recognition during OOBE is DISABLED by default for all Windows 10 Pro, Education and Enterprise SKUs.
+

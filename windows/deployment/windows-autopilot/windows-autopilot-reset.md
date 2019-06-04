@@ -18,7 +18,8 @@ ms.topic: article
 
 # Windows Autopilot Reset
 
-**Applies to: Windows 10** 
+- Applies to: Windows 10, version 1709 and later (local reset)
+- Applies to: Windows 10, version 1809 and later (remote reset)
 
 Windows Autopilot Reset removes personal files, apps, and settings and reapplies a device’s original settings, maintaining its identity connection to Azure AD and its management connection to Intune so that the device is once again ready for use. Windows Autopilot Reset takes the device back to a business-ready state, allowing the next user to sign in and get productive quickly and simply. 
 
@@ -30,9 +31,6 @@ The Windows Autopilot Reset process automatically retains information from the e
 -   Azure Active Directory device membership and MDM enrollment information.
 
 Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  
-
->[!IMPORTANT] 
->To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
 
 >[!NOTE]
 >The Autopilot Reset does not support Hybrid Azure AD joined devices.
@@ -50,7 +48,7 @@ Additional requirements and configuration details apply with each scenario; see 
 
 **Applies to: Windows 10, version 1709 and above**
 
-The Intune Service Administrator role is required to perform this task.  Learn more about how to [Assign Azure Active Directory roles](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+The Intune Service Administrator role is required to perform this task.  For more information, see [Add users and grant administrative permission to Intune](https://docs.microsoft.com/en-us/intune/users-add).
 
 IT admins can perform a local Windows Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With a local Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
@@ -98,9 +96,9 @@ Performing a local Windows Autopilot Reset is a two-step process: trigger it and
 
     Once the local Autopilot Reset is triggered, the reset process starts. Once provisioning is complete, the device is again ready for use.
 
-## Reset devices with remote Windows Autopilot Reset (Preview)
+## Reset devices with remote Windows Autopilot Reset
 
-**Applies to: Windows 10, build 17672 or later**
+**Applies to: Windows 10, version 1809 or later**
 
 When performing a remote Windows Autopilot Reset, an MDM service such an Microsoft Intune can be used to initiate the reset process, avoiding the need for IT staff or other administrators to visit each machine to initiate the process.
 
