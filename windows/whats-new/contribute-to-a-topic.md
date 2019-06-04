@@ -6,6 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
+ms.topic: tutorial
 ---
 
 # Editing existing Windows IT professional documentation

@@ -2,12 +2,18 @@
 title: Server Isolation Policy Design (Windows 10)
 description: Server Isolation Policy Design
 ms.assetid: f93f65cd-b863-461e-ab5d-a620fd962c9a
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

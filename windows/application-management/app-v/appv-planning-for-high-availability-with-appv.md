@@ -1,12 +1,16 @@
 ---
 title: Planning for High Availability with App-V Server
 description: Planning for High Availability with App-V Server
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Planning for high availability with App-V Server
 
@@ -77,7 +81,7 @@ The connection string on the management server can be modified to include ```fai
 Use the following steps to modify the connection string to include ```failover partner = <server2>```:
 
 >[!IMPORTANT]
->This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before chagning the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
+>This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before changing the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
 
 1. Log in to the management server and open **regedit**.
 2. Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.
@@ -96,9 +100,9 @@ Click any of the following links for more information:
 
 The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -1,12 +1,16 @@
 ---
 title: Creating and managing App-V virtualized applications (Windows 10)
 description: Creating and managing App-V virtualized applications
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Creating and managing App-V virtualized applications
 
@@ -92,20 +96,11 @@ The following table lists the supported shell extensions:
 
 Copy on write (CoW) file extensions allow App-V to dynamically write to specific locations contained in the virtual package while it is being used.
 
-The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V client. All other files and directories can be modified.
+The following table displays the file types that can exist in a virtual package under the VFS directory, since App-V 5.1, but which cannot be updated on the computer running the App-V client. All other files and directories can be modified.
 
 | File Type||||||
 |---|---|---|---|---|---|
-| .acm | .asa | .asp | .aspx | .ax | .bat |
-| .cer  | .chm  | .clb | .cmd  | .cnt  | .cnv  |
-| .com | .cpl | .cpx  | .crt | .dll | .drv |
-| .esc | .exe  | .fon  | .grp | .hlp | .hta |
-| .ime | .inf  | .ins  | .isp | .its | .js |
-| .jse | .lnk | .msc | .msi | .msp | .mst |
-| .mui | .nls | .ocx  | .pal | .pcd | .pif |
-| .reg  | .scf | .scr | .sct | .shb | .shs  |
-| .sys  | .tlb  | .tsp | .url | .vb | .vbe |
-| .vbs  | .vsmacros | .ws  | .wsf | .wsh  |  |
+| .com | .exe | .dll | .ocx |  |
 
 ## Modifying an existing virtual application package
 
@@ -152,9 +147,9 @@ The App-V Sequencer can detect common sequencing issues during sequencing. The *
 
 You can also find additional information about sequencing errors using the Windows Event Viewer.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

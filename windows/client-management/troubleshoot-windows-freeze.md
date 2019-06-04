@@ -1,14 +1,15 @@
 --- 
 title: Advanced troubleshooting for Windows-based computer freeze issues 
+ms.reviewer: 
+manager: dansimp
 description: Learn how to troubleshoot computer freeze issues. 
 ms.prod: w10 
 ms.mktglfcycl: 
 ms.sitesec: library 
 ms.topic: troubleshooting 
-author: kaushika-msft 
+author: dansimp
 ms.localizationpriority: medium 
-ms.author: kaushika 
-ms.date: 11/26/2018 
+ms.author: dansimp
 --- 
 
 # Advanced troubleshooting for Windows-based computer freeze issues 
@@ -60,9 +61,8 @@ If the physical computer or virtual machine froze but is now running in a good s
 *   Generate a System Diagnostics report by running the perfmon /report command. 
 *   Check history in virtual management monitoring tools. 
 
-## More Information 
 
-### Collect data for the freeze issues 
+## Collect data for the freeze issues 
 
 To collect data for a server freeze, check the following table, and use one or more of the suggested methods. 
 
@@ -74,7 +74,7 @@ To collect data for a server freeze, check the following table, and use one or m
 |A virtual machine that is no longer frozen|Use method 1, 2, 3, or 4. These methods are listed later in this section.| 
 
 
-#### Method 1: Memory dump 
+### Method 1: Memory dump 
 
 > [!Note] 
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.   
@@ -107,7 +107,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
         Additionally, you can use the workaround for [space limitations on the system drive in Windows Server 2008](#space-limitations-on-the-system-drive-in-windows-server-2008). 
 
-    6.  Make sure that there's more freed-up space on the hard disk drives than there is physical RAM. 
+    6.  Make sure that there's more available space on the system drive than there is physical RAM. 
 
 2.  Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this, follow these steps: 
 
@@ -141,7 +141,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
     > %SystemRoot%\MEMORY.DMP 
 
 
-#### Method 2: Data sanity check 
+### Method 2: Data sanity check 
 
 Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. 
 
@@ -153,7 +153,7 @@ Learn how to use Dumpchk.exe to check your dump files:
 > [!video https://www.youtube-nocookie.com/embed/xN7tOfgNKag] 
 
 
-#### Method 3: Performance Monitor 
+### Method 3: Performance Monitor 
 
 You can use Windows Performance Monitor to examine how programs that you run affect your computer's performance, both in real time and by collecting log data for later analysis. To create performance counter and event trace log collections on local and remote systems, run the following commands in a command prompt as administrator: 
 
@@ -174,7 +174,7 @@ logman stop LOGNAME_Long / LOGNAME_Short
 
 The Performance Monitor log is located in the path: C:\PERFLOGS   
 
-#### Method 4: Microsoft Support Diagnostics 
+### Method 4: Microsoft Support Diagnostics 
 
 1.  In the search box of the [Microsoft Support Diagnostics Self-Help Portal](https://home.diagnostics.support.microsoft.com/selfhelp), type Windows Performance Diagnostic. 
 
@@ -247,17 +247,17 @@ If the physical computer is still running in a frozen state, follow these steps 
     > [!Note] 
     > By default, the dump file is located in the path: %SystemRoot%\MEMORY.DMP 
 
-#### Use Pool Monitor to collect data for the physical computer that is no longer frozen 
+### Use Pool Monitor to collect data for the physical computer that is no longer frozen 
 
 Pool Monitor shows you the number of allocations and outstanding bytes of allocation by type of pool and the tag that is passed into calls of ExAllocatePoolWithTag.   
 
 Learn [how to use Pool Monitor](https://support.microsoft.com/help/177415) and how to [use the data to troubleshoot pool leaks](http://blogs.technet.com/b/markrussinovich/archive/2009/03/26/3211216.aspx). 
 
-#### Use memory dump to collect data for the virtual machine that's running in a frozen state 
+### Use memory dump to collect data for the virtual machine that's running in a frozen state 
 
 Use the one of the following methods for the application on which the virtual machine is running.   
 
-##### Microsoft Hyper-V 
+#### Microsoft Hyper-V 
 
 If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](https://docs.microsoft.com/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.   
 
@@ -270,11 +270,11 @@ Debug-VM -Name "VM Name" -InjectNonMaskableInterrupt -ComputerName Hostname
 > [!Note] 
 > This method is applicable only to Windows 8, Windows Server 2012, and later versions of Windows virtual machines. For the earlier versions of Windows, see methods 1 through 4 that are described earlier in this section.  
 
-##### VMware 
+#### VMware 
 
 You can use VMware Snapshots or suspend state and extract a memory dump file equivalent to a complete memory dump file. By using [Checkpoint To Core Tool (vmss2core)](https://labs.vmware.com/flings/vmss2core), you can convert both suspend (.vmss) and snapshot (.vmsn) state files to a dump file and then analyze the file by using the standard Windows debugging tools.   
 
-##### Citrix XenServer 
+#### Citrix XenServer 
 
 The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL LOCK keyboard combination that's described in Method 1 and on [the Citrix site](http://support.citrix.com/article/ctx123177).   
 

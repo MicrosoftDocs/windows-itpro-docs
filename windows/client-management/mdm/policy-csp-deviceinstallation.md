@@ -1,12 +1,13 @@
 ---
 title: Policy CSP - DeviceInstallation
+ms.reviewer: 
+manager: dansimp
 description: Policy CSP - DeviceInstallation
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 12/14/2018
+author: v-madhi
 ---
 
 # Policy CSP - DeviceInstallation
@@ -139,7 +140,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -256,7 +257,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 
 ```txt
@@ -339,6 +340,8 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
+
+
 <hr/>
 
 <!--Policy-->
@@ -410,6 +413,42 @@ ADMX Info:
 
 <!--/Validation-->
 <!--/Policy-->
+
+To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
+
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data><enabled/><data id="DenyUnspecified" value="1"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
+```txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
+
+You can also block installation by using a custom profile in Intune. 
+
+![Custom profile](images/custom-profile-prevent-other-devices.png)
+
 
 <hr/>
 
@@ -499,7 +538,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -507,6 +546,13 @@ To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.l
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+
+For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
+
+![Custom profile](images/custom-profile-prevent-device-ids.png)
+
 
 <!--Policy-->
 <a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**  
@@ -599,7 +645,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]

@@ -1,8 +1,11 @@
 ---
 title: App-V 5.0 SP3 Prerequisites
 description: App-V 5.0 SP3 Prerequisites
-author: jamiejdt
+author: v-madhi
 ms.assetid: fa8d5578-3a53-4e8a-95c7-e7a5f6e4a31c
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -635,10 +638,10 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

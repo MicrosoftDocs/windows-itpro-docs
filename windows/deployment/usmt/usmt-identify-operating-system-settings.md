@@ -2,11 +2,15 @@
 title: Identify Operating System Settings (Windows 10)
 description: Identify Operating System Settings
 ms.assetid: 1704ab18-1765-41fb-a27c-3aa3128fa242
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Identify Operating System Settings

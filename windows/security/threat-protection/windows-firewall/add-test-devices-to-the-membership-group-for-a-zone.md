@@ -2,12 +2,18 @@
 title: Add Test Devices to the Membership Group for a Zone (Windows 10)
 description: Add Test Devices to the Membership Group for a Zone
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

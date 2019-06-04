@@ -2,11 +2,13 @@
 title: Reclaim seat from user
 description: The Reclaim seat from user operation returns reclaimed seats for a user in the Micosoft Store for Business.
 ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 09/18/2017
 ---
 
@@ -29,7 +31,7 @@ The **Reclaim seat from user** operation returns reclaimed seats for a user in t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>POST</p></td>
+<td><p>DELETE</p></td>
 <td><p>https://bspmts.mp.microsoft.com/V1/Inventory/{productId}/{skuId}/Seats/{username}</p></td>
 </tr>
 </tbody>

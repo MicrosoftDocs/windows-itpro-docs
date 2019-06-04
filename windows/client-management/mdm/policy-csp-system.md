@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - System
 description: Policy CSP - System
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/24/2018
+author: v-madhi
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - System
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -23,6 +22,9 @@ ms.date: 08/24/2018
 <dl>
   <dd>
     <a href="#system-allowbuildpreview">System/AllowBuildPreview</a>
+  </dd>
+  <dd>
+    <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
@@ -84,6 +86,9 @@ ms.date: 08/24/2018
   <dd>
     <a href="#system-telemetryproxy">System/TelemetryProxy</a>
   </dd>
+  <dd>
+    <a href="#system-turnofffilehistory">System/TurnOffFileHistory</a>
+  </dd>
 </dl>
 
 
@@ -128,7 +133,6 @@ ms.date: 08/24/2018
 > [!NOTE]
 > This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
 
-
 This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
 
 If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices. If you disable this policy setting, the item "Get Insider builds" will be unavailable.
@@ -150,6 +154,80 @@ The following list shows the supported values:
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowcommercialdatapipeline"></a>**System/AllowCommercialDataPipeline**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> This policy setting applies only to the Windows operating system and apps included with Windows, it does not apply to third-party apps or services running on Windows 10.
+
+This policy setting opts the device into the Windows enterprise data pipeline.
+
+If you enable this setting, data collected from the device is opted into the Windows enterprise data pipeline.
+
+If you disable or do not configure this setting, all data from the device is collected and processed in accordance with the policies for the Windows standard data pipeline.
+
+Configuring this setting does not change the telemetry collection level or the ability of the user to change the level.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow commercial data pipeline*
+-   GP name: *AllowCommercialDataPipeline*
+-   GP element: *AllowCommercialDataPipeline*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Do not use the Windows Commercial Data Pipeline
+-   1 - Use the Windows Commercial Data Pipeline
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -552,7 +630,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allow the device to send diagnostic and usage telemetry data, such as Watson.
+Allow the device to send diagnostic and usage telemetry data, such as Watson. 
+
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following tables describe the supported values:
 
@@ -679,11 +759,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
+Specifies whether to allow the user to factory reset the device by using control panel and hardware key combination.
 
 Most restricted value is 0.
 
 <!--/Description-->
+> [!TIP]
+> This policy is also applicable to Windows 10 and not exclusive to phone.
 <!--SupportedValues-->
 The following list shows the supported values:
 orted values:
@@ -1429,16 +1511,97 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
+
 <hr/>
 
-Footnote:
+<!--Policy-->
+<a href="" id="system-turnofffilehistory"></a>**System/TurnOffFileHistory**  
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to turn off File History.
+
+If you enable this policy setting, File History cannot be activated to create regular, automatic backups.
+
+If you disable or do not configure this policy setting, File History can be activated to create regular, automatic backups.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off File History*
+-   GP name: *DisableFileHistory*
+-   GP path: *Windows Components/File History*
+-   GP ADMX file name: *FileHistory.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   false (default) - allow File History
+-   true  - turn off File History
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic
+
+- [System/AllowTelemetry](#system-allowtelemetry)
+- [System/AllowLocation](#system-allowlocation)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>System policies supported by Windows Holographic for Business
+
+- [System/AllowTelemetry](#system-allowtelemetry)
+- [System/AllowLocation](#system-allowlocation)
+ <!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

@@ -1,8 +1,11 @@
 ---
 title: Deploy Required Features for UE-V 2.x
 description: Deploy Required Features for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 10399bb3-cc7b-4578-bc0c-2f6b597abe4d
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -436,10 +439,10 @@ msiexec.exe /f "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInst
 
 You can then retry the uninstall process or upgrade by installing the newer version of the UE-V Agent.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

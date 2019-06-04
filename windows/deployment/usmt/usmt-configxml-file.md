@@ -2,11 +2,15 @@
 title: Config.xml File (Windows 10)
 description: Config.xml File
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: lomayor
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Config.xml File

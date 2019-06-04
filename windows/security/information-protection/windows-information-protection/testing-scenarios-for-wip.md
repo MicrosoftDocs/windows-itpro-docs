@@ -2,14 +2,20 @@
 title: Testing scenarios for Windows Information Protection (WIP) (Windows 10)
 description: A list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b3962ca2
+ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
 ms.localizationpriority: medium
-ms.date: 09/11/2017
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 03/05/2019
 ---
 
 # Testing scenarios for Windows Information Protection (WIP)
@@ -50,7 +56,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Create work documents in enterprise-allowed apps.</td>
         <td><strong>For desktop:</strong><br><br>
             <ul>
-                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<br><br><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<br><br>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
+                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<br><br><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<br><br>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
             </ul>
             <strong>For mobile:</strong><br><br>
             <ol>
@@ -145,7 +151,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Verify your Virtual Private Network (VPN) can be auto-triggered.</td>
         <td>
             <ol>
-                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md) topic.</li>
+                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune-azure.md) topic.</li>
                 <li>Start an app from your allowed apps list.<br>The VPN network should automatically start.</li>
                 <li>Disconnect from your network and then start an app that isn't on your allowed apps list.<br>The VPN shouldn't start and the app shouldn't be able to access your enterprise network.</li>
             </ol>

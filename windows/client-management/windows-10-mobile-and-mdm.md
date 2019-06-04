@@ -2,14 +2,18 @@
 title: Windows 10 Mobile deployment and management guide (Windows 10)
 description: This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: Mobile, diagnostic data, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
-author: AMeeus
-ms.date: 09/21/2017
+author: dansimp
+ms.date: 01/26/2019
+ms.topic: article
 ---
 
 # Windows 10 Mobile deployment and management guide
@@ -460,7 +464,7 @@ Some device-wide settings for managing VPN connections can help you manage VPNs 
 
 *Applies to: Corporate and personal devices*
 
-Protecting the apps and data stored on a device is critical to device security. One method for helping protect your apps and data is to encrypt internal device storage. The device encryption in Windows 10 Mobile helps protect corporate data against unauthorized access, even when an unauthorized user has physical possession of the device.
+Protecting the apps and data stored on a device is critical to device security. One method for helping protect your apps and data is to encrypt internal device storage. The [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) in Windows 10 Mobile helps protect corporate data against unauthorized access, even when an unauthorized user has physical possession of the device.
 
 Windows 10 Mobile also has the ability to install apps on a secure digital (SD) card. The operating system stores apps on a partition specifically designated for that purpose. This feature is always on so you don’t need to set a policy explicitly to enable it.
 

@@ -2,12 +2,16 @@
 title: Add and Manage Products (Windows 10)
 description: Add and Manage Products
 ms.assetid: a48fbc23-917d-40f7-985c-e49702c05e51
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Add and Manage Products

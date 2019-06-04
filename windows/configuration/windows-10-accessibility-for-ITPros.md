@@ -5,10 +5,13 @@ keywords: accessibility, settings, vision, hearing, physical, cognition, assisti
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: jaimeo
-author: jaimeo
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 01/12/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: reference
 ---
 
 # Accessibility information for IT Professionals 

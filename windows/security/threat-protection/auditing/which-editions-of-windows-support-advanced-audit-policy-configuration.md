@@ -2,12 +2,18 @@
 title: Which editions of Windows support advanced audit policy configuration (Windows 10)
 description: This reference topic for the IT professional describes which versions of the Windows operating systems support advanced security auditing policies.
 ms.assetid: 87c71cc5-522d-4771-ac78-34a2a0825f31
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

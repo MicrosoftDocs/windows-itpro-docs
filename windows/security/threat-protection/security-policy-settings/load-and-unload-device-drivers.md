@@ -2,12 +2,18 @@
 title: Load and unload device drivers (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Load and unload device drivers security policy setting.
 ms.assetid: 66262532-c610-470c-9792-35ff4389430f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

@@ -2,12 +2,18 @@
 title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows 10)
 description: This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 ms.assetid: c1c5a3d3-540a-4698-83b5-0dab5d27d871
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: mjcaparas
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

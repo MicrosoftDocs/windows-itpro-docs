@@ -1,8 +1,11 @@
 ---
 title: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
 description: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
-author: jamiejdt
+author: levinec
 ms.assetid: 56e6780b-8b2c-4717-91c8-2af63062ab75
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -4,10 +4,12 @@ description: How to integrate Cortana with Power BI to help your employees get a
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: eross-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: lizross
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up and test Cortana for Power BI in your organization

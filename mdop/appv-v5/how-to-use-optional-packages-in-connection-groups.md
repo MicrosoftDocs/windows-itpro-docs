@@ -1,8 +1,11 @@
 ---
 title: How to Use Optional Packages in Connection Groups
 description: How to Use Optional Packages in Connection Groups
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -278,10 +281,10 @@ Review the following requirements before using optional packages in connection g
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

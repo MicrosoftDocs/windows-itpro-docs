@@ -1,12 +1,15 @@
 ---
 title: Upgrade Readiness requirements (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: Provides requirements for Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
-author: jaimeo
-ms.author:
-ms.date: 06/12/2018
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness requirements
@@ -25,7 +28,8 @@ The compatibility update that sends diagnostic data from user computers to Micro
 
 If you need to update user computers to Windows 7 SP1 or Windows 8.1, use Windows Update or download and deploy the applicable package from the Microsoft Download Center.
 
-Note: Upgrade Readiness is designed to best support in-place upgrades. In-place upgrades do not support migrations from BIOS to UEFI or from 32-bit to 64-bit architecture. If you need to migrate computers in these scenarios, use the wipe-and-reload method. Upgrade Readiness insights are still valuable in this scenario, however, you can ignore in-place upgrade specific guidance.
+> [!NOTE] 
+> Upgrade Readiness is designed to best support in-place upgrades. In-place upgrades do not support migrations from BIOS to UEFI or from 32-bit to 64-bit architecture. If you need to migrate computers in these scenarios, use the wipe-and-reload method. Upgrade Readiness insights are still valuable in this scenario, however, you can ignore in-place upgrade specific guidance.
 
 See [Windows 10 Specifications](https://www.microsoft.com/en-US/windows/windows-10-specifications) for additional information about computer system requirements.
 
@@ -38,14 +42,14 @@ While Upgrade Readiness can be used to assist with updating devices from Windows
 
 ## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Upgrade Readiness is offered as a solution in Azure Portal and Azure Log Analytics, a collection of cloud-based services for managing on premises and cloud computing environments. For more information about Azure Portal, see [Windows Analytics in the Azure Portal](../update/windows-analytics-azure-portal.md) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
-If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace.
+If you’re already using Azure Portal or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 
-If you are not using OMS or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
+If you are not using Azure Portal or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
 
 >[!IMPORTANT]
->You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
+>You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to Azure Portal. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in Azure Portal. You also need an Azure subscription to link to your Azure Portal workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
 
 ## System Center Configuration Manager integration
 
@@ -59,13 +63,13 @@ Before you get started configuring Upgrade Anatlyics, review the following tips 
 
 **Upgrade Readiness does not support on-premises Windows deployments.** Upgrade Readiness is built as a cloud service, which allows Upgrade Readiness to provide you with insights based on the data from user computers and other Microsoft compatibility services. Cloud services are easy to get up and running and are cost-effective because there is no requirement to physically implement and maintain services on-premises.
 
-**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in the Microsoft Operations Management Suite (OMS) portal. Upgrade Readiness is supported in all OMS regions; however, selecting an international OMS region does not prevent diagnostic data from being sent to and processed in Microsoft's secure data centers in the US.
+**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in Azure Portal. Upgrade Readiness is supported in all Azure regions; however, selecting an international Azure region does not prevent diagnostic data from being sent to and processed in Microsoft's secure data centers in the US.
 
 ### Tips
 
 - When viewing inventory items in table view, the maximum number of rows that can be viewed and exported is limited to 5,000. If you need to view or export more than 5,000 items, reduce the scope of the query so you can export a list with fewer items.
 
-- Sorting data by clicking a column heading may not sort your complete list of items. For information about how to sort data in OMS, see [Sorting DocumentDB data using Order By](https://azure.microsoft.com/documentation/articles/documentdb-orderby).
+- Sorting data by clicking a column heading may not sort your complete list of items. For information about how to sort data in Azure Portal, see [Sorting DocumentDB data using Order By](https://azure.microsoft.com/documentation/articles/documentdb-orderby).
 
 ## Get started
 

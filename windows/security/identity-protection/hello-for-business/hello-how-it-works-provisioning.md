@@ -5,13 +5,18 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Provisioning
-
+<span id="windows-hello-for-business-provisioning" />
 **Applies to:**
 -   Windows 10
 
@@ -20,13 +25,15 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 - The Windows Hello for Business deployment type
 - If the environment is managed or federated
 
-[Azure AD joined provisioning in a Managed environment](#Azure-AD-joined-provisioning-in-a-Managed-environment)<br>
-[Azure AD joined provisioning in a Federated environment](#Azure-AD-joined-provisioning-in-a-Federated-environment)<br>
-[Hybrid Azure AD joined provisioning in a Key Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-Key-Trust-deployment)<br>
-[Hybrid Azure AD joined provisioning in a Certificate Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-Certificate-Trust-deployment)<br>
-[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-synchronous-Certificate-Trust-deployment)<br>
-[Domain joined provisioning in an On-premises Key Trust deployment](#Domain-joined-provisioning-in-an-Onpremises-Key-Trust-deployment)<br>
-[Domain joined provisioning in an On-premises Certificate Trust deployment](#Domain-joined-provisioning-in-an-Onpremises-Certificate-Trust-deployment)<br>
+[Azure AD joined provisioning in a Managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)<br>
+[Azure AD joined provisioning in a Federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)<br>
+[Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)<br>
+[Domain joined provisioning in an On-premises Key Trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)<br>
+[Domain joined provisioning in an On-premises Certificate Trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)<br>
 
 
 
@@ -40,7 +47,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |C | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration.  Azure DRS validates the MFA claim remains current.  On successful validation, Azure DRS locates the user's object in Azure Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Azure Active Directory returns a key ID to the application which signals the end of user provisioning and the application exits.|
 
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)
 ## Azure AD joined provisioning in a Federated environment
 ![Azure AD joined provisioning in a Managed environment](images/howitworks/prov-aadj-federated.png)
 
@@ -50,8 +57,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |B | After receiving a ADRS access token, the application detects if the device has a Windows Hello biometric compatible sensor.  If the application detects a biometric sensor, it gives the user the choice to enroll biometrics.  After completing or skipping biometric enrollment, the application requires the user to create a PIN and the default (and fall-back gesture when used with biometrics).  The user provides and confirms their PIN.  Next, the application requests a Windows Hello for Business key pair from the key pre-generation pool, which includes attestation data.  This is the user key (ukpub/ukpriv).|
 |C | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration.  Azure DRS validates MFA claim remains current.  On successful validation, Azure DRS locates the user's object in Azure Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Azure Active Directory returns key ID to the application which signals the end of user provisioning and the application exits.|
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
-## Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed envrionment
+[Return to top](#windows-hello-for-business-provisioning)
+## Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment
 ![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed ennvironment](images/howitworks/prov-haadj-keytrust-managed.png)
 
 | Phase  | Description  |
@@ -61,12 +68,12 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |C | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration.  Azure DRS validates the MFA claim remains current.  On successful validation, Azure DRS locates the user's object in Azure Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Azure Active Directory returns a key ID to the application which signals the end of user provisioning and the application exits.|
 |D | Azure AD Connect requests updates on its next synchronization cycle.  Azure Active Directory sends the user's public key that was securely registered through provisioning.  AAD Connect receives the public key and writes it to user's msDS-KeyCredentialLink attribute in Active Directory.|
 > [!IMPORTANT]
-> The newly provisionied user will not be able to sign in using Windows Hello for Business until Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory.
+> The newly provisioned user will not be able to sign in using Windows Hello for Business until Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory.
 
 
 
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)
 ## Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment
 ![Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](images/howitworks/prov-haadj-certtrust-managed.png)
 
@@ -81,11 +88,11 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |H | The application receives the newly issued certificate and installs the it into the Personal store of the user.  This signals the end of provisioning.|    
 |F | Azure AD Connect requests updates on its next synchronization cycle.  Azure Active Directory sends the user's public key that was securely registered through provisioning.  AAD Connect receives the public key and writes it to user's msDS-KeyCredentialLink attribute in Active Directory.|
 > [!IMPORTANT]
-> The newly provisionied user will not be able to sign in using Windows Hello for Business until Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory.
+> The newly provisioned user will not be able to sign in using Windows Hello for Business until Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory.
 
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
-## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environmnet
+[Return to top](#windows-hello-for-business-provisioning)
+## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment
 ![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](images/howitworks/prov-haadj-instant-certtrust-managed.png)
 
 | Phase  | Description  |
@@ -98,12 +105,12 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |F |The registration authority sends the certificate request to the enterprise issuing certificate authority. The certificate authority validates the certificate request is signed by a valid enrollment agent and, on success, issues a certificate and returns it to the registration authority that then returns the certificate to the application.|
 |G | The application receives the newly issued certificate and installs the it into the Personal store of the user.  This signals the end of provisioning.|    
 > [!IMPORTANT]
-> Synchronous certificate enrollment does not depend on Azure AD Connect to syncrhonize the user's public key to issue the Windows Hello for Business authentication certificate.  Users can sign-in using the certificate immediately after provisioning completes.  Azure AD Connect continues to synchronize the public key to Active Directory, but is not show in this flow.
+> Synchronous certificate enrollment does not depend on Azure AD Connect to synchronize the user's public key to issue the Windows Hello for Business authentication certificate.  Users can sign-in using the certificate immediately after provisioning completes.  Azure AD Connect continues to synchronize the public key to Active Directory, but is not shown in this flow.
 
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)
 ## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment
-![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Fedeerated environment](images/howitworks/prov-haadj-instant-certtrust-federated.png)
+![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](images/howitworks/prov-haadj-instant-certtrust-federated.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -115,9 +122,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |F |The registration authority sends the certificate request to the enterprise issuing certificate authority. The certificate authority validates the certificate request is signed by a valid enrollment agent and, on success, issues a certificate and returns it to the registration authority that then returns the certificate to the application.|
 |G | The application receives the newly issued certificate and installs the it into the Personal store of the user.  This signals the end of provisioning.| 
 > [!IMPORTANT]
-> Synchronous certificate enrollment does not depend on Azure AD Connect to syncrhonize the user's public key to issue the Windows Hello for Business authentication certificate.  Users can sign-in using the certificate immediately after provisioning completes.  Azure AD Connect continues to synchronize the public key to Active Directory, but is not show in this flow.
+> Synchronous certificate enrollment does not depend on Azure AD Connect to synchronize the user's public key to issue the Windows Hello for Business authentication certificate.  Users can sign-in using the certificate immediately after provisioning completes.  Azure AD Connect continues to synchronize the public key to Active Directory, but is not shown in this flow.
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)
 ## Domain joined provisioning in an On-premises Key Trust deployment
 ![Domain joined provisioning in an On-premises Key Trust deployment](images/howitworks/prov-onprem-keytrust.png)
 
@@ -128,7 +135,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |C | The application sends the EDRS token, ukpub, attestation data, and device information to the Enterprise DRS for user key registration.  Enterprise DRS validates the MFA claim remains current.  On successful validation, the Enterprise DRS locates the user's object in Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. The Enterprise DRS returns a key ID to the application, which represents the end of user key registration.|
 
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)
 ## Domain joined provisioning in an On-premises Certificate Trust deployment
 ![Domain joined provisioning in an On-premises Certificate Trust deployment](images/howitworks/prov-onprem-certtrust.png)
 
@@ -140,6 +147,6 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |D | The certificate request portion of provisioning begins after the application receives a successful response from key registration.  The application creates a PKCS#10 certificate request.  The key used in the certificate request is the same key that was securely provisioned.<br> The application sends the certificate request, which includes the public key, to the certificate registration authority hosted on the Active Directory Federation Services (AD FS) farm.<br>  After receiving the certificate request, the certificate registration authority queries Active Directory for the msDS-KeyCredentailsLink for a list of registered public keys.|
 |E | The registration authority validates the public key in the certificate request matches a registered key for the user.<br>  After validating the  public key, the registration authority signs the certificate request using its enrollment agent certificate.|
 |F |The registration authority sends the certificate request to the enterprise issuing certificate authority. The certificate authority validates the certificate request is signed by a valid enrollment agent and, on success, issues a certificate and returns it to the registration authority that then returns the certificate to the application.|
-|G | The application receives the newly issued certificate and installs the it into the Personal store of the user.  This signals the end of provisioning.|
+|G | The application receives the newly issued certificate and installs it into the Personal store of the user.  This signals the end of provisioning.|
 
-[Return to top](#Windows-Hello-for-Business-Provisioning)
+[Return to top](#windows-hello-for-business-provisioning)

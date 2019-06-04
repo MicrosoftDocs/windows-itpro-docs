@@ -1,8 +1,11 @@
 ---
 title: Best Practices for the Application Virtualization Sequencer
 description: Best Practices for the Application Virtualization Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: 95e5e216-864f-41a1-90d4-b8d7e1eb42a0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -67,7 +70,7 @@ The following best practices should be considered when sequencing a new applicat
 
      
 
-    **Sequence to a unique directory that follows the 8.3 naming convention.**
+-   **Sequence to a unique directory that follows the 8.3 naming convention.**
 
     You should sequence all applications to a directory that follows the 8.3 naming convention. The specified directory name cannot contain more than eight characters, followed by a three-character file name extension—for example, **Q:\\MYAPP.ABC**.
 

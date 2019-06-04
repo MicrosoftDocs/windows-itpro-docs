@@ -1,8 +1,11 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
-author: jamiejdt
+author: levinec
 ms.assetid: 561988c4-cc5c-4e15-970b-16e942c8f2ef
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -226,10 +229,10 @@ This section contains hotfixes and KB articles for UE-V 2.1 SP1.
 
  
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

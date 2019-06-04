@@ -6,9 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
-author: eross-msft
-ms.author: lizross
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 11/28/2017
+ms.reviewer: 
 ---
 
 # Windows 10 diagnostic data for the Full diagnostic data level

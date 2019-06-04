@@ -1,8 +1,11 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V 2.x
 description: Manage Administrative Backup and Restore in UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -160,10 +163,10 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
 
      
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

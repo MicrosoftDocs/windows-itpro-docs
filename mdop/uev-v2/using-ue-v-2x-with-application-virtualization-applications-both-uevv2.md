@@ -1,8 +1,11 @@
 ---
 title: Using UE-V 2.x with Application Virtualization Applications
 description: Using UE-V 2.x with Application Virtualization Applications
-author: jamiejdt
+author: levinec
 ms.assetid: 4644b810-fc48-4fd0-96e4-2fc6cd64d8ad
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,10 +39,10 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
 4.  Start the App-V package.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

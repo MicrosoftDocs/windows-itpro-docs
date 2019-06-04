@@ -3,10 +3,13 @@ title: Advanced troubleshooting for Windows boot problems
 description: Learn how to troubleshoot when Windows is unable to boot 
 ms.prod: w10
 ms.sitesec: library
-author: kaushika-msft
+author: msfttracyp
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: tracyp
 ms.date: 11/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: troubleshooting
 ---
 
 # Advanced troubleshooting for Windows boot problems
@@ -384,6 +387,6 @@ If the dump file shows an error that is related to a driver (for example, window
 
         1. Start WinRE, and open a Command Prompt window.
         2. Start a text editor, such as Notepad.
-        3. Navigate to C\Windows\System32\Config\.
+        3. Navigate to C:\Windows\System32\Config\.
         4. Rename the all five hives by appending ".old" to the name.
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.

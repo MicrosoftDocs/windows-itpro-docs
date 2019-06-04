@@ -2,6 +2,9 @@
 title: Deploy a Windows 10 image using MDT (Windows 10)
 description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,6 +13,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Deploy a Windows 10 image using MDT
@@ -21,12 +25,13 @@ This topic will show you how to take your reference image for Windows 10, and d
 
 For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 standard server, and PC0005 is a blank machine to which you deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.
 
-**Note**  
-For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
- 
 ![figure 1](../images/mdt-07-fig01.png)
 
 Figure 1. The machines used in this topic.
+
+>[!NOTE]
+>For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+ 
 
 ## <a href="" id="sec01"></a>Step 1: Configure Active Directory permissions
 
@@ -40,11 +45,10 @@ These steps will show you how to configure an Active Directory account with the 
     5.  User cannot change password: Select
     6.  Password never expires: Select
 3.  In an elevated Windows PowerShell prompt (run as Administrator), run the following commands and press **Enter** after each command:
-    ``` syntax
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
     Set-Location C:\Setup\Scripts
-    .\Set-OUPermissions.ps1 -Account MDT_JD 
-    -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
+    .\Set-OUPermissions.ps1 -Account MDT_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
     ```
 4.  The Set-OUPermissions.ps1 script allows the MDT\_JD user account permissions to manage computer accounts in the Contoso / Computers OU. Below you find a list of the permissions being granted:
     1.  Scope: This object and all descendant objects
@@ -91,9 +95,10 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
 7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to match the following: **Windows 10 Enterprise x64 RTM Custom Image**.
 
-**Note**  
-The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
+>[!NOTE]  
+>The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
+
 ![figure 2](../images/fig2-importedos.png)
 
 Figure 2. The imported operating system after renaming it.
@@ -127,8 +132,8 @@ In order to deploy Windows 10 with MDT successfully, you need drivers for the b
 -   Microsoft Surface Pro
 For boot images, you need to have storage and network drivers; for the operating system, you need to have the full suite of drivers.
 
-**Note**  
-You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
+>[!NOTE]
+>You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
  
 ### Create the driver source structure in the file system
 
@@ -149,8 +154,8 @@ The key to successful management of drivers for MDT, as well as for any other de
     -   Microsoft Corporation
         -   Surface Pro 3
 
-**Note**  
-Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
+>[!NOTE]
+>Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
  
 ### Create the logical driver structure in MDT
 
@@ -284,8 +289,9 @@ This section will show you how to create the task sequence used to deploy your p
     2.  Configure the **Inject Drivers** action with the following settings:
         1.  Choose a selection profile: Nothing
         2.  Install all drivers from the selection profile
-            **Note**  
-            The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
+
+            >[!NOTE]  
+            >The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
              
     3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.
     4.  State Restore. Enable the **Windows Update (Post-Application Installation)** action.
@@ -358,8 +364,10 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
     -   In the **Lite Touch Boot Image Settings** area:
         1.  Image description: MDT Production x86
         2.  ISO file name: MDT Production x86.iso
-        **Note**  
-        Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
+        
+        >[!NOTE]
+        
+        >Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
          
 7.  In the **Drivers and Patches** sub tab, select the **WinPE x86** selection profile and select the **Include all drivers from the selection profile** option.
 8.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
@@ -371,8 +379,8 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
 11. In the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box.
 12. Click **OK**.
 
-**Note**  
-It will take a while for the Deployment Workbench to create the monitoring database and web service.
+>[!NOTE]
+>It will take a while for the Deployment Workbench to create the monitoring database and web service.
  
 
 ![figure 8](../images/mdt-07-fig08.png)
@@ -478,12 +486,12 @@ Like the MDT Build Lab deployment share, the MDT Production deployment share nee
 1.  Right-click the **MDT Production** deployment share and select **Update Deployment Share**.
 2.  Use the default options for the Update Deployment Share Wizard.
 
-**Note**  
-The update process will take 5 to 10 minutes.
+>[!NOTE]
+>The update process will take 5 to 10 minutes.
  
 ## <a href="" id="sec08"></a>Step 8: Deploy the Windows 10 client image
 
-These steps will walk you throug the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
+These steps will walk you through the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
 
 ### Configure Windows Deployment Services
 
@@ -587,8 +595,9 @@ To filter what is being added to the media, you create a selection profile. When
 In these steps, you generate offline media from the MDT Production deployment share. To filter what is being added to the media, you use the previously created selection profile.
 
 1.  On MDT01, using File Explorer, create the **E:\\MDTOfflineMedia** folder.
-    **Note**  
-    When creating offline media, you need to create the target folder first. It is crucial that you do not create a subfolder inside the deployment share folder because it will break the offline media.
+
+      >[!NOTE]
+    >When creating offline media, you need to create the target folder first. It is crucial that you do not create a subfolder inside the deployment share folder because it will break the offline media.
      
 2.  Using Deployment Workbench, in the **MDT Production / Advanced Configuration** node, right-click the **Media** node, and select **New Media**.
 3.  Use the following settings for the New Media Wizard:
@@ -600,7 +609,7 @@ In these steps, you generate offline media from the MDT Production deployment sh
 
 Offline media has its own rules, its own Bootstrap.ini and CustomSettings.ini files. These files are stored in the Control folder of the offline media; they also can be accessed via properties of the offline media in the Deployment Workbench.
 
-1.  On MDT01, using File Explorer, copy the CustomSettings.ini file from the **E:\\MDTBuildLab\\Control** folder to **E:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
+1.  On MDT01, using File Explorer, copy the CustomSettings.ini file from the **E:\MDTProduction\Control** folder to **E:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
 2.  Using Deployment Workbench, in the **MDT Production / Advanced Configuration / Media** node, right-click the **MEDIA001** media, and select **Properties**.
 3.  In the **General** tab, configure the following:
     1.  Clear the Generate x86 boot image check box.

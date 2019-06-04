@@ -1,8 +1,11 @@
 ---
 title: Manage Configurations for UE-V 2.x
 description: Manage Configurations for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: e2332eca-a9cd-4446-8f7c-d17058b03466
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -71,10 +74,10 @@ Here are some examples of UE-V configuration settings:
 
 -   **Custom Contact IT Hyperlink:** Defines the path, text, and description for the **Contact IT** hyperlink in the Company Settings Center.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

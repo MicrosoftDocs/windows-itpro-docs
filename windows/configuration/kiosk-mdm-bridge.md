@@ -2,13 +2,17 @@
 title: Use MDM Bridge WMI Provider to create a Windows 10 kiosk (Windows 10)
 description: Environments that use Windows Management Instrumentation (WMI)can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/07/2018
+ms.topic: article
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows 10 kiosk

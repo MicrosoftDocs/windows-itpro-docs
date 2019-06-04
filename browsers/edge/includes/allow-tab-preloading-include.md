@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -35,8 +37,9 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader
-- **Value name:** AllowTabPreloading
+- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
+- **Create Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
+- **DWORD Value:** 1
 
 <hr>

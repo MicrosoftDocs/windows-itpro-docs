@@ -4,10 +4,13 @@ description: Learn about some common issues you might experience with Windows Up
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: kaushika-msft
+author: lomayor
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: lomayor
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Windows Update common errors and mitigation

@@ -1,8 +1,11 @@
 ---
 title: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
 description: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
-author: jamiejdt
+author: levinec
 ms.assetid: f0bb4920-0132-472c-a564-abf06a884275
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -150,10 +153,10 @@ Before you share a settings location template on the UE-V template gallery, ensu
 
 Before you deploy any settings location template that you have downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

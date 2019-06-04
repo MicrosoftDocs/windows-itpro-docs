@@ -2,12 +2,18 @@
 title: Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals (Windows 10)
 description: Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals
 ms.assetid: 598cf45e-2e1c-4947-970f-361dfa264bba
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

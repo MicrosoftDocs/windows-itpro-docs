@@ -2,8 +2,10 @@
 title: Deploy Microsoft Edge kiosk mode
 description: Microsoft Edge kiosk mode works with assigned access to allow IT admins to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
+ms.reviewer: 
+manager: dansimp
+author: eavena
+ms.author: eravena
 ms.prod: edge
 ms.sitesec: library
 ms.topic: get-started-article
@@ -236,7 +238,7 @@ In the following table, we show you the features available in both Microsoft Edg
 |---------------|:----------------:|:---------------:|
 | Print support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Multi-tab support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Allow/Block URL support   | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
+| Allow/Block URL support   | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* Windows Defender Firewall*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
 | Configure Home Button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)    |
 | Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
 | Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |

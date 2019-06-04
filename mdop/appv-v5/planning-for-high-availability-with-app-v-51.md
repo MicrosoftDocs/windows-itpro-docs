@@ -1,8 +1,11 @@
 ---
 title: Planning for High Availability with App-V 5.1
 description: Planning for High Availability with App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 1f190a0e-10ee-4fbe-a602-7e807e943033
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -138,10 +141,10 @@ Click any of the following links for more information:
 
 The App-V 5.1 management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

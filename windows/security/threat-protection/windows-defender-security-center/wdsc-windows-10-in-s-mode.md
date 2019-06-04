@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage Windows Security in Windows 10 in S mode

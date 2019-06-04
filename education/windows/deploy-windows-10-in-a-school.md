@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: craigash
-ms.author: celested
-ms.date: 10/30/2017
+author: levinec
+ms.author: ellevin
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 in a school
@@ -598,6 +600,7 @@ Depending on your school’s requirements, you may need any combination of the f
 - **Windows 10 Education**. Use this operating system to:
  - Upgrade institution-owned devices to Windows 10 Education.
  - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
+- **Windows 10 Pro Education**. Use this operating system to upgrade existing eligible institution-owned devices running Windows 10 Pro Education, version 1903 or later, to Windows 10 Education using [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation).
 
 **Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features are not available in Windows 10 Home.
 
@@ -1077,7 +1080,7 @@ As a final quality control step, verify the device configuration to ensure that 
 
 - The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
 - Windows Update is active and current with software updates.
-- Windows Defender is active and current with malware signatures.
+- Windows Defender is active and current with malware Security intelligence.
 - The SmartScreen Filter is active.
 - All Microsoft Store apps are properly installed and updated.
 - All Windows desktop apps are properly installed and updated.
@@ -1135,7 +1138,7 @@ For more information about completing this task when you have:
 </tr>
 
 <tr>
-<td>Verify that Windows Defender is active and current with malware signatures.<br/><br/>
+<td>Verify that Windows Defender is active and current with malware Security intelligence.<br/><br/>
 For more information about completing this task, see [Turn Windows Defender on or off](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01) and [Updating Windows Defender](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03). </td>
 <td>X</td>
 <td>X</td>

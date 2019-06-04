@@ -2,12 +2,16 @@
 title: Import and Export VAMT Data (Windows 10)
 description: Import and Export VAMT Data
 ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Import and Export VAMT Data

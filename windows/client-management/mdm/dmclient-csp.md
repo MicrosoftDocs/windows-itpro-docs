@@ -2,11 +2,13 @@
 title: DMClient CSP
 description: The DMClient configuration service provider is used to specify additional enterprise-specific mobile device management configuration settings for identifying the device in the enterprise domain, security mitigation for certificate renewal, and server-triggered enterprise unenrollment.
 ms.assetid: a5cf35d9-ced0-4087-a247-225f102f2544
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 11/01/2017
 ---
 
@@ -725,12 +727,12 @@ Required. Added in Windows 10, version 1803. This node allows the MDM to set cus
 Supported operations are Add, Get, Delete, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
+Required. Device only. Added in Windows 10, version 1803. This node decides whether or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
 
 Supported operations are Get and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
+Required. Device only. Added in Windows 10, version 1803. This node decides whether or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
 
 Supported operations are Get and Replace. Value type is bool.
 

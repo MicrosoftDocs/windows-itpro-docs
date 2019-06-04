@@ -2,12 +2,18 @@
 title: Devices Prevent users from installing printer drivers (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Prevent users from installing printer drivers security policy setting.
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

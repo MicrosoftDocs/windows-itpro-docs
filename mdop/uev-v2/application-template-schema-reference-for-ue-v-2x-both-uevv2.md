@@ -1,8 +1,11 @@
 ---
 title: Application Template Schema Reference for UE-V 2.x
 description: Application Template Schema Reference for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -1865,10 +1868,10 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
 </xs:schema>
 ```
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

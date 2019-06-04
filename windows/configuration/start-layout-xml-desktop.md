@@ -5,10 +5,12 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
@@ -156,6 +158,7 @@ The following table describes the attributes that you must use to specify the si
 
 For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
+<span id="start-tile" />
 #### start:Tile
 
 You can use the **start:Tile** tag to pin any of the following apps to Start:
@@ -178,6 +181,7 @@ The following example shows how to pin the Microsoft Edge Universal Windows app:
           Column="0"/>
  ```
 
+<span id="start-desktopapplicationtile" />
 #### start:DesktopApplicationTile
 
 You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application: 
@@ -238,6 +242,7 @@ The following example shows how to create a tile of the Web site's URL, which yo
 >[!NOTE]
 >In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL.
 
+<span id="start-secondarytile" />
 #### start:SecondaryTile
 
 You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require any additional action compared to the method of using legacy .url shortcuts (through the start:DesktopApplicationTile tag).

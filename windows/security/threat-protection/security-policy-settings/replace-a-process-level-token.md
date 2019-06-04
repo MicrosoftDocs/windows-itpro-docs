@@ -2,12 +2,18 @@
 title: Replace a process level token (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Replace a process level token security policy setting.
 ms.assetid: 5add02db-6339-489e-ba21-ccc3ccbe8745
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

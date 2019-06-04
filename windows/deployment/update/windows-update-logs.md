@@ -4,10 +4,13 @@ description: Learn about the Windows Update log files
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: kaushika-msft
+author: lomayor
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: lomayor
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Windows Update log files
@@ -140,3 +143,5 @@ There are different identifiers for the same update in different contexts. It’
    - Small integers (especially in Datastore) can be local IDs 
       ![Windows Update inconsisten terminology](images/update-inconsistent.png)
 
+## Windows Setup log files analysis using SetupDiag tool
+SetupDiag is a diagnostic tool that can be used for analysis of logs related to installation of Windows Updates. For detailed information, see [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag).

@@ -2,12 +2,18 @@
 title: Enable Predefined Outbound Rules (Windows 10)
 description: Enable Predefined Outbound Rules
 ms.assetid: 71cc4157-a1ed-41d9-91e4-b3140c67c1be
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

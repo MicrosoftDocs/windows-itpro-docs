@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: brecords
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Wake On LAN for Surface devices
@@ -23,17 +25,22 @@ Surface devices that run Windows 10, version 1607 (also known as Windows 10 Anni
 
 The following devices are supported for WOL:
 
-* Surface Book 2
-* Surface Pro with LTE Advanced (Model 1807)
-* Surface Pro (Model 1796)
-* Surface Laptop
-* Surface Book
-* Surface Pro 4
-* Surface 3
-* Surface Pro 3
 * Surface Ethernet adapter
+* Surface USB-C to Ethernet and USB Adapter
 * Surface Dock
 * Surface Docking Station for Surface Pro 3
+* Surface 3
+* Surface Pro 3
+* Surface Pro 4
+* Surface Pro (5th Gen)
+* Surface Pro (5th Gen) with LTE Advanced
+* Surface Book
+* Surface Laptop (1st Gen)
+* Surface Pro 6
+* Surface Book 2
+* Surface Laptop 2
+* Surface Go
+* Surface Go with LTE Advanced
 
 ## WOL driver
 

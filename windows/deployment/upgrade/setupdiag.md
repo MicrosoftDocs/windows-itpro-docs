@@ -1,14 +1,17 @@
 ---
 title: SetupDiag
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: How to use the SetupDiag tool to diagnose Windows Setup errors
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.date: 12/18/2018
+author: lomayor
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # SetupDiag
@@ -24,7 +27,7 @@ ms.localizationpriority: medium
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.4.0.0</I>
+<I>Current version of SetupDiag: 1.4.1.0</I>
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -42,7 +45,7 @@ To quickly use SetupDiag on your current computer:
 8. Use Notepad to open the log file: **SetupDiagResults.log**.
 9. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
-For instructions on how to run the tool in offline more and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
+For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
 The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool. 
 
@@ -63,8 +66,9 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
-| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
+| /Scenario:\[Recovery\] | This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.|
+| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
@@ -95,6 +99,19 @@ The following example specifies that SetupDiag is to run in offline mode, and to
 ```
 SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
 ```
+
+The following example sets recovery scenario in offline mode. In the example, SetupDiag will search for reset/recovery logs in the specified LogsPath location and output the resuts to the directory specified by the /Output parameter.
+
+```
+SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
+```
+
+The following example sets recovery scenario in online mode. In the example, SetupDiag will search for reset/recovery logs on the current system and output results in XML format.
+
+```
+SetupDiag.exe /Scenario:Recovery /Format:xml
+```
+
 
 ## Log files
 
@@ -140,7 +157,7 @@ The output also provides an error code 0xC1900208 - 0x4000C which corresponds to
 ```
 C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
 
-SetupDiag v1.4.0.0
+SetupDiag v1.4.1.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
@@ -395,6 +412,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
 
 ## Release notes
+
+05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
+   - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!

@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure or Deploy Multifactor Authentication Services
 
@@ -19,7 +24,7 @@ ms.date: 08/19/2018
 -   Certificate trust
 
 
-On-premises deployments must use the On-premises Azure MFA Server using the AD FS adapter model  Optionally, you can use a third-party MFA server that provides an AD FS Multifactor authentication adapter.  
+On-premises deployments must use an on-premises MFA Server that provides an AD FS Multifactor authentication adapter. It can be an Azure Multi-Factor Authentication Server or a third-party MFA solution.
 
 >[!TIP]
 >Please make sure you've read [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md) before proceeding any further.
@@ -76,7 +81,7 @@ The following services are required:
 
 Update the server using Windows Update until the server has no required or optional updates as the Azure MFA Server software may require one or more of these updates for the installation and software to correctly work.  These procedures install additional components that may need to be updated.
 
-#### Configure the IIS Server’s Certificate
+#### Configure the IIS Server Certificate
 
 The TLS protocol protects all the communication to and from the MFA server. To enable this protection, you must configure the default web site to use the previously enrolled server authentication certificate.
 
@@ -104,7 +109,7 @@ Sign in the domain controller with _domain administrator_ equivalent credentials
 ##### Add accounts to the Phonefactor Admins group
 
 1. Open **Active Directory Users and Computers**.
-2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactors Admin** security group and select **Properties**.
+2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactor Admins** security group and select **Properties**.
 3. Click the **Members** tab.
 4. Click **Add**. Click **Object Types..** In the **Object Types** dialog box, select **Computers** and click **OK**. Enter the following user and/or computers accounts in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
@@ -167,9 +172,9 @@ To do this, please follow the instructions mentioned in the previous [Install th
 
 Update the server using Windows Update until the server has no required or optional updates as the Azure MFA Server software may require one or more of these updates for the installation and software to correctly work.  These procedures install additional components that may need to be updated.
 
-#### Configure the IIS Server’s Certificate
+#### Set the IIS Server Certificate
 
-To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server’s-certificate) section.
+To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server-certificate) section.
 
 #### Create WebServices SDK user account
 
@@ -185,7 +190,7 @@ The User Portal and Mobile Application web services need to communicate with the
 Adding the WebServices SDK user account to the Phonefactor Admins group provides the user account with the proper authorization needed to access the configuration data on the primary MFA server using the WebServices SDK.
 
 1. Open **Active Directory Users and Computers**.
-2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactors Admin** security group and select Properties.
+2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactor Admins** security group and select Properties.
 3. Click the Members tab.
 4. Click **Add**. Click **Object Types..** Type the PFWSDK_<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server

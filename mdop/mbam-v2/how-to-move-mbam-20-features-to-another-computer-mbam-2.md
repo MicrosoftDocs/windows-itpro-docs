@@ -1,8 +1,11 @@
 ---
 title: How to Move MBAM 2.0 Features to Another Computer
 description: How to Move MBAM 2.0 Features to Another Computer
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 49bc0792-60a4-473f-89cc-ada30191e04a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: Release Notes for App-V 5.0 SP2
 description: Release Notes for App-V 5.0 SP2
-author: jamiejdt
+author: msfttracyp
 ms.assetid: fe73139d-240c-4ed5-8e59-6ae76ee8e80c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -147,10 +150,10 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

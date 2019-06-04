@@ -2,12 +2,18 @@
 title: Configure S/MIME for Windows 10 and Windows 10 Mobile (Windows 10)
 description: In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them.
 ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
+ms.reviewer: 
 keywords: encrypt, digital signature
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerms
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---

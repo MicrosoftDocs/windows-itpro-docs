@@ -4,10 +4,12 @@ description: Learn how to troubleshoot port exhaustion issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Troubleshoot port exhaustion issues
@@ -99,7 +101,9 @@ You may also see CLOSE_WAIT state connections in the same output, however CLOSE_
 >[!Note]
 >Having huge connections in TIME_WAIT state does not always indicate that the server is currently out of ports unless the first two points are verified. Having lot of TIME_WAIT connections does indicate that the process is creating lot of TCP connections and may eventually lead to port exhaustion.
 >
->Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports.
+>Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012 R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports.
+>
+>Until 10/2016, netstat was inaccurate. Fixes for netstat, back-ported to 2012 R2, allowed Netstat.exe and Get-NetTcpConnection to correctly report TCP or UDP port usage in Windows Server 2012 R2. See [Windows Server 2012 R2: Ephemeral ports hotfixes](https://support.microsoft.com/help/3123245/update-improves-port-exhaustion-identification-in-windows-server-2012) to learn more.
  
 4.	Open a command prompt in admin mode and run the below command
 
@@ -192,5 +196,5 @@ goto loop
 
 - [Port Exhaustion and You!](https://blogs.technet.microsoft.com/askds/2008/10/29/port-exhaustion-and-you-or-why-the-netstat-tool-is-your-friend/) - this article gives a detail on netstat states and how you can use netstat output to determine the port status
 
-- [Detecting ephemeral port exhaustion](https://blogs.technet.microsoft.com/clinth/2013/08/09/detecting-ephemeral-port-exhaustion/): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10)
+- [Detecting ephemeral port exhaustion](https://blogs.technet.microsoft.com/yongrhee/2018/01/09/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes/): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10)
 

@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - DeviceLock
 description: Policy CSP - DeviceLock
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/08/2018
+author: v-madhi
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - DeviceLock
@@ -288,7 +290,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
+Determines the type of PIN required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -306,9 +308,9 @@ Determines the type of PIN or password required. This policy only applies if the
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Alphanumeric PIN or password required.
--   1 – Numeric PIN or password required.
--   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
+-   0 – Password or Alphanumeric PIN required.
+-   1 – Password or Numeric PIN required.
+-   2 (default) – Password, Numeric PIN, or Alphanumeric PIN required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -724,7 +726,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
+
+* On Mobile, the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
+* On HoloLens, this timeout is controlled by the device's system sleep timeout, regardless of the value set by this policy.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -1202,14 +1207,43 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

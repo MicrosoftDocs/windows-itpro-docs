@@ -1,12 +1,14 @@
 ---
 title: NetworkProxy CSP
 description: NetworkProxy CSP
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 08/29/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # NetworkProxy CSP
@@ -76,8 +78,8 @@ The data type is string. Supported operations are Get and Replace. Starting in W
 Specifies whether the proxy server should be used for local (intranet) addresses. 
 Valid values:
 <ul>
-<li>0 (default) - Do not use proxy server for local addresses</li>
-<li>1 - Use proxy server for local addresses</li>
+<li>0 (default) - Use proxy server for local addresses</li>
+<li>1 - Do not use proxy server for local addresses</li>
 </ul>
 
 The data type is int. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.

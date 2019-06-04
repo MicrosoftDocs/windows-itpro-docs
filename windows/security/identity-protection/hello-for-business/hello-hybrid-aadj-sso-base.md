@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 
@@ -62,14 +67,20 @@ If you are interested in configuring your environment to use the Windows Hello f
 
 Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD joined devices authenticating to Active Directory
 
-#### Why does Windows need to validate the domain controller certifcate?
+#### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature, which enforces a more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
 - The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**. 
+- Use the **Kerberos Authentication certificate template** instead of any other older template.
 - The domain controller's certificate has the **KDC Authentication** enhanced key usage.
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
+
+
+> [!Tip]
+> If you are using Windows Server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing or re-issuing the certificate.
+ 
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
 
@@ -131,7 +142,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
 2. Right-click the **cdp** folder and click **Properties**.  Click the **Sharing** tab.  Click **Advanced Sharing**.
-3. Select **Share this folder**. Type **cdp$** in **Share name:**. Click **Permissions**.
+3. Select **Share this folder**. Type **cdp$** in **Share name**. Click **Permissions**.
 ![cdp sharing](images/aadj/cdp-sharing.png)
 4. In the **Permissions for cdp$** dialog box, click **Add**.
 5. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, click **Object Types**.  In the **Object Types** dialog box, select **Computers**, and then click **OK**.
@@ -160,7 +171,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 9. Click **Close** in the **cdp Properties** dialog box.
 
 
-### Configure the new CRL distribution point and Publishing location in the issuing certifcate authority
+### Configure the new CRL distribution point and Publishing location in the issuing certificate authority
 
 The web server is ready to host the CRL distribution point.  Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point
 
@@ -270,10 +281,10 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 1. Sign-in to the [Microsoft Azure Portal](https://portal.azure.com) and select **Microsoft Intune**.
 2. Click **Device configuration**.  In the **Device Configuration** blade, click **Create profile**.
 ![Intune Create Profile](images/aadj/intune-create-device-config-profile.png)
-3. In the **Create profle** blade, type **Enterprise Root Certificate** in **Name**.  Provide a description.  Select **Windows 10 and later** from the **Platform** list.  Select **Trusted certificate** from the **Profile type** list.  Click **Configure**.
+3. In the **Create profile** blade, type **Enterprise Root Certificate** in **Name**.  Provide a description.  Select **Windows 10 and later** from the **Platform** list.  Select **Trusted certificate** from the **Profile type** list.  Click **Configure**.
 4. In the **Trusted Certificate** blade, use the folder icon to browse for the location of the enterprise root certificate file you created in step 8 of [Export Enterprise Root certificate](#export-enterprise-root-certificate).  Click **OK**.  Click **Create**.
 ![Intune Trusted Certificate Profile](images/aadj/intune-create-trusted-certificate-profile.png)
-5. In the **Enterprise Root Certificate** blade, click **Assignmnets**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
+5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
 

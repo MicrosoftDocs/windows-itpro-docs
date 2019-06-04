@@ -5,8 +5,14 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 02/20/2018
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Windows Defender Application Control design guide

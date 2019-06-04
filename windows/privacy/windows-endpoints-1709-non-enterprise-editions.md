@@ -6,9 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
-author: danihalfin
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Windows 10, version 1709, connection endpoints for non-Enterprise editions
 

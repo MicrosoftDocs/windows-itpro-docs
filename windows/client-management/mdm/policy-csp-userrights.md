@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - UserRights
 description: Policy CSP - UserRights
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 10/31/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - UserRights
@@ -66,6 +68,15 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
     ```
     <Data></Data>
     ```
+If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
+
+> [!Note]
+> `&#xF000;` is the entity encoding of 0xF000.
+
+For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
+```
+<![CDATA[Authenticated Users&#xF000;Replicator]]>
+```
 
 <hr/>
 

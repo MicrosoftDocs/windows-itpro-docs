@@ -2,12 +2,18 @@
 title: GPO\_DOMISO\_Boundary (Windows 10)
 description: GPO\_DOMISO\_Boundary
 ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

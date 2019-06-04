@@ -2,12 +2,18 @@
 title: Configure Key Exchange (Main Mode) Settings (Windows 10)
 description: Configure Key Exchange (Main Mode) Settings
 ms.assetid: 5c593b6b-2cd9-43de-9b4e-95943fe82f52
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

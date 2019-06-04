@@ -36,10 +36,10 @@
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.author": "justinha",
-		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "MSDN.win-access-protection"
+			  "depot_name": "MSDN.win-access-protection",
+                          "folder_relative_path_in_docset": "./"
 			}
 		}
 	},

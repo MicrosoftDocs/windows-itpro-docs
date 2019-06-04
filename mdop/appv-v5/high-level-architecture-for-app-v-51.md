@@ -1,8 +1,11 @@
 ---
 title: High Level Architecture for App-V 5.1
 description: High Level Architecture for App-V 5.1
-author: jamiejdt
+author: dansimp
 ms.assetid: 90406361-55b8-40b7-85c0-449436789d4c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -68,10 +71,10 @@ If you are using App-V 5.1 with Electronic Software Distribution (ESD) you are n
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -2,12 +2,16 @@
 title: Manage Activations (Windows 10)
 description: Manage Activations
 ms.assetid: 53bad9ed-9430-4f64-a8de-80613870862c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Manage Activations

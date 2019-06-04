@@ -91,7 +91,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-pro-usb.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-usb.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -110,7 +110,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-ms-teams.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-ms-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

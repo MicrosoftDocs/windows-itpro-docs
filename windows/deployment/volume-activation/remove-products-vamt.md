@@ -2,12 +2,16 @@
 title: Remove Products (Windows 10)
 description: Remove Products
 ms.assetid: 4d44379e-dda1-4a8f-8ebf-395b6c0dad8e
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Remove Products

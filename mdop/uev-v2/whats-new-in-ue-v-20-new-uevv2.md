@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.0
 description: What's New in UE-V 2.0
-author: jamiejdt
+author: levinec
 ms.assetid: 5d852beb-f293-4e3a-a33b-c40df59a7515
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -61,10 +64,10 @@ You can provide your users with some control over which settings are synchronize
 
 Company Settings Center displays which settings are synchronized and lets users see the synchronization status of UE-V. If you let them, users can use Company Settings Center to select which settings to synchronize. They can also click the **Sync Now** button to synchronize all settings immediately.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

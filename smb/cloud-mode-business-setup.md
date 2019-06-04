@@ -5,12 +5,14 @@ keywords: smb, full cloud IT solution, small to medium business, deploy, setup, 
 ms.prod: w10
 ms.technology: smb-windows
 ms.topic: hero-article
-ms.author: celested
+ms.author: eravena
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
-author: CelesteDG
+author: eavena
 ms.date: 10/30/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
@@ -167,7 +169,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
-Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-windows-store-for-business-for-app-distribution).
+Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-microsoft-store-for-business-for-app-distribution).
 
 ### 1.4 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 

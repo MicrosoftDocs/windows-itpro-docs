@@ -1,8 +1,11 @@
 ---
 title: How to Create and Use a Project Template
 description: How to Create and Use a Project Template
-author: jamiejdt
+author: dansimp
 ms.assetid: e5ac1dc8-a88f-4b16-8e3c-df07ef5e4c3b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

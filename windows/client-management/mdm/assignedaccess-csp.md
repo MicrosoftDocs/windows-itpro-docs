@@ -2,11 +2,13 @@
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
 ms.assetid: 421CC07D-6000-48D9-B6A3-C638AAF83984
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 09/18/2018
 ---
 
@@ -21,6 +23,9 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
 
 > [!Warning]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
+
+> [!Note]
+> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a convenience PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again. 
 
 > [!Note]
 > The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
@@ -895,6 +900,7 @@ Status Get
             <xs:enumeration value="RestartShell" />
             <xs:enumeration value="RestartDevice" />
             <xs:enumeration value="ShutdownDevice" />
+            <xs:enumeration value="DoNothing" />
         </xs:restriction>
     </xs:simpleType>
 

@@ -2,12 +2,18 @@
 title: DLL rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the DLL rule collection.
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

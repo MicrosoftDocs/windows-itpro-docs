@@ -29,13 +29,15 @@
 		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "Win.surface-hub"
+			  "depot_name": "Win.surface-hub",
+			  "folder_relative_path_in_docset": "./"
 			}
 		}
     },
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "devices/surface-hub"
+    "dest": "devices/surface-hub",
+    "markdownEngineName": "dfm"
   }
 }

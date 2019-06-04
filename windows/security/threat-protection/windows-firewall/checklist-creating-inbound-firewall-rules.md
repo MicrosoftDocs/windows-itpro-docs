@@ -2,12 +2,18 @@
 title: Checklist Creating Inbound Firewall Rules (Windows 10)
 description: Checklist Creating Inbound Firewall Rules
 ms.assetid: 0520e14e-5c82-48da-8fbf-87cef36ce02f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

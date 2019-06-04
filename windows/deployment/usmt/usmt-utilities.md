@@ -2,11 +2,15 @@
 title: UsmtUtils Syntax (Windows 10)
 description: UsmtUtils Syntax
 ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # UsmtUtils Syntax

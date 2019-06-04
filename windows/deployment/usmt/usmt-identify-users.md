@@ -2,11 +2,15 @@
 title: Identify Users (Windows 10)
 description: Identify Users
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Identify Users

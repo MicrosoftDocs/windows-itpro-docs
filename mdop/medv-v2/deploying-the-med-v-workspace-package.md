@@ -1,8 +1,11 @@
 ---
 title: Deploying the MED-V Workspace Package
 description: Deploying the MED-V Workspace Package
-author: jamiejdt
+author: levinec
 ms.assetid: f314425a-d60f-4b8d-b71f-d13d1da9297f
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

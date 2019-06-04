@@ -1,12 +1,16 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V (Windows 10)
 description: Deploying Microsoft Office 2013 by Using App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
 
@@ -33,7 +37,7 @@ Before you deploy Office with App-V, review the following requirements.
 
 |Task|Requirement|
 |---|---|
-|Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project).|
+|Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#deploying-visio-2013-and-project-2013-with-office).|
 |Publishing|You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user.|
 |Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).<br>You don’t need to use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
 
@@ -44,7 +48,7 @@ The following table describes the recommended methods for excluding specific Off
 |Task|Details|
 |---|---|
 |Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool.|Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.<br>For more information, see [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool?ui=en-US&rs=en-US&ad=US#excludeapp-element).|
-|Modify the **DeploymentConfig.xml** file|Modify the **DeploymentConfig.xml** file after creating the package. This file contains the default package settings for all users on a computer running the App-V Client.<br>For more information, see [Disabling Office 2013 applications](#bkmk-disable-office-apps).|
+|Modify the **DeploymentConfig.xml** file|Modify the **DeploymentConfig.xml** file after creating the package. This file contains the default package settings for all users on a computer running the App-V Client.<br>For more information, see [Disabling Office 2013 applications](#disabling-office-2013-applications).|
 
 ## Creating an Office 2013 package for App-V with the Office Deployment Tool
 
@@ -255,7 +259,7 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 
 ### How to publish an Office package
 
-Run the following command to publish an Office package globally, wtih the bracketed value replaced by the path to the App-V package:
+Run the following command to publish an Office package globally, with the bracketed value replaced by the path to the App-V package:
 
 ```PowerShell
 Add-AppvClientPackage <Path_to_AppV_Package> | Publish-AppvClientPackage –global
@@ -267,12 +271,12 @@ Add-AppvClientPackage <Path_to_AppV_Package> | Publish-AppvClientPackage –glob
 
 To manage your Office App-V packages, use the same operations as you would for any other package, but there are a few exceptions, as outlined in the following sections.
 
-* [Enabling Office plug-ins by using connection groups](#bkmk-enable-office-plugins)
-* [Disabling Office 2013 applications](#bkmk-disable-office-apps)
-* [Disabling Office 2013 shortcuts](#bkmk-disable-shortcuts)
-* [Managing Office 2013 package upgrades](#bkmk-manage-office-pkg-upgrd)
-* [Managing Office 2013 licensing upgrades](#bkmk-manage-office-lic-upgrd)
-* [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project)
+* [Enabling Office plug-ins by using connection groups](#enabling-office-plug-ins-by-using-connection-groups)
+* [Disabling Office 2013 applications](#disabling-office-2013-applications)
+* [Disabling Office 2013 shortcuts](#disabling-office-2013-shortcuts)
+* [Managing Office 2013 package upgrades](#managing-office-2013-package-upgrades)
+* [Managing Office 2013 licensing upgrades](#managing-office-2013-licensing-upgrades)
+* [Deploying Visio 2013 and Project 2013 with Office](#deploying-visio-2013-and-project-2013-with-office)
 
 ### Enabling Office plug-ins by using connection groups
 
@@ -432,6 +436,5 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

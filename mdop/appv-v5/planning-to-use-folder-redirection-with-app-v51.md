@@ -1,8 +1,11 @@
 ---
 title: Planning to Use Folder Redirection with App-V
 description: Planning to Use Folder Redirection with App-V
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 6bea9a8f-a915-4d7d-be67-ef1cca1398ed
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -176,10 +179,10 @@ The following table describes how folder redirection works when %AppData% is red
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

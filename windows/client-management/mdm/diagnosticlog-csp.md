@@ -2,11 +2,13 @@
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 
@@ -338,7 +340,7 @@ Delete a provider
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-tracelevel"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/TraceLevel**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-tracelevel"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/TraceLevel**  
 Specifies the level of detail included in the trace log.
 
 The data type is an integer.
@@ -407,7 +409,7 @@ Set provider **TraceLevel**
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-keywords"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/Keywords**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-keywords"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/Keywords**  
 Specifies the provider keywords to be used as MatchAnyKeyword for this provider.
 
 the data type is a string.
@@ -461,7 +463,7 @@ Set provider **Keywords**
 </SyncML>
 ```
 
-<a href="" id="etwlog-collectors-collectorname-providers-provderguid-state"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProvderGUID*/State**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid-state"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*/State**  
 Specifies if this provider is enabled in the trace session.
 
 The data type is a boolean.

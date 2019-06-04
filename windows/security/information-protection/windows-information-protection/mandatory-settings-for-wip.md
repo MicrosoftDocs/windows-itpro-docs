@@ -6,9 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.author: justinha
-ms.date: 05/30/2018
 ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 03/05/2019
+ms.reviewer: 
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)
@@ -19,13 +25,10 @@ ms.localizationpriority: medium
 
 This list provides all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise.
 
->[!IMPORTANT]
->All sections provided for more info appear in either the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md), based on the tool you're using in your organization.
-
 |Task|Description|
 |----|-----------|
 |Add at least one app to the **Protected apps** list in your WIP policy.|You must have at least one app added to your **Protected apps** list. For more info about where this area is and how to add apps, see the **Add apps to your Protected apps list** section of the policy creation topics.|
-|Choose your WIP protection level.|You must choose the level of protection you want to apply to your WIP-protected content, including **Allow Overrides**, **Silent**, or **Hide Overrides**. For more info about where this area is and how to decide on your protection level, see the **Manage the WIP protection mode for your enterprise data** section of the policy creation topics. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
+|Choose your WIP protection level.|You must choose the level of protection you want to apply to your WIP-protected content, including **Allow Overrides**, **Silent**, or **Block**. For more info about where this area is and how to decide on your protection level, see the **Manage the WIP protection mode for your enterprise data** section of the policy creation topics. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
 |Specify your corporate identity.|This field is automatically filled out for you by Microsoft Intune. However, you must manually correct it if it’s incorrect or if you need to add additional domains. For more info about where this area is and what it means, see the **Define your enterprise-managed corporate identity** section of the policy creation topics.
 |Specify your network domain names.|Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected. For more info about where this area is and how to add your suffixes, see the table that appears in the **Choose where apps can access enterprise data** section of the policy creation topics.|
 |Specify your enterprise IPv4 or IPv6 ranges.|Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the addresses for a valid IPv4 or IPv6 value range within your intranet. These addresses, used with your Network domain names, define your corporate network boundaries. For more info about where this area is and what it means, see the table that appears in the **Define your enterprise-managed corporate identity** section of the policy creation topics.|

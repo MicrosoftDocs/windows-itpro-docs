@@ -1,5 +1,7 @@
 ---
 title: Reset devices using local Windows Autopilot Reset
+ms.reviewer: 
+manager: dansimp
 description: Gives an overview of Local Autopilot Reset and how to use it.
 keywords: Autopilot Reset, Windows 10
 ms.prod: w10
@@ -8,21 +10,25 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 10/02/2018
+author: dulcemontemayor
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Reset devices with local Windows Autopilot Reset 
 
 **Applies to: Windows 10, version 1709 and above
 
+The Intune Service Administrator role is required to perform this task.  Learn more about how to [Assign Azure Active Directory roles](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+
 IT admins can perform a local Windows Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With a local Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
 To enable local Autopilot Reset in Windows 10:
 
-1. [Enable the policy for the feature](#enable-autopilot-reset)
-2. [Trigger a reset for each device](#trigger-autopilot-reset)
+1. [Enable the policy for the feature](#enable-local-windows-autopilot-reset)
+2. [Trigger a reset for each device](#trigger-local-windows-autopilot-reset)
 
 ## Enable local Windows Autopilot Reset
 

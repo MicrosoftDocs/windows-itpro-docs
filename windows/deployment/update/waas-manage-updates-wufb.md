@@ -1,13 +1,15 @@
 ---
 title: Deploy updates using Windows Update for Business (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Windows Update for Business lets you manage when devices received updates from Windows Update.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.date: 11/16/2018
+ms.author: greglin
+ms.topic: article
 ---
 
 # Deploy updates using Windows Update for Business
@@ -17,6 +19,8 @@ ms.date: 11/16/2018
 
 - Windows 10
 - Windows 10 Mobile
+- Windows Server 2016
+- Windows Server 2019
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -76,20 +80,20 @@ The group policy path for Windows Update for Business has changed to correctly r
 
 ## Managing Windows Update for Business with MDM
 
-Starting with Windows 10, version 1709, Windows Update for Business was changed to correctly reflect its association to Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
+Starting with Windows 10, version 1709, the Windows Update for Business settings in MDM were changed to correctly reflect the associations with Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
 
 | Action | Windows 10 versions prior to 1709 | Windows 10 versions after 1709 |
 | --- | --- | --- |
 | Manage Windows Insider Preview builds | System/AllowBuildPreview | Update/ManagePreviewBuilds |
 | Manage when updates are received | Select when Feature Updates are received |	Select when Preview Builds and Feature Updates are received (Update/BranchReadinessLevel) |
 
-## Managing Windows Update for Business with Software Center Configuration Manager
+## Managing Windows Update for Business with System Center Configuration Manager
 
-Starting with Windows 10, version 1709, you can assign a collection of devices to have dual scan enabled and manage that collection with Windows Update for Business policies. Starting with Windows 10, version 1809, you can set a collection of devices to receive the Windows Insider Preview Feature Updates from Windows Update from within Software Center Configuration Manager.
+Starting with Windows 10, version 1709, you can assign a collection of devices to have dual scan enabled and manage that collection with Windows Update for Business policies. Starting with Windows 10, version 1809, you can set a collection of devices to receive the Windows Insider Preview Feature Updates from Windows Update from within System Center Configuration Manager.
 
 | Action | Windows 10 versions between 1709 and 1809 | Windows 10 versions after 1809 |
 | --- | --- | --- |
-| Manage Windows Update for Business in Configuration Manager | Manage Feature or Quality Updates with Windows Update for Business via Dual Scan | Manage Insider pre-release builds with Windows Update for Business within Software Center Configuration Manager |
+| Manage Windows Update for Business in Configuration Manager | Manage Feature or Quality Updates with Windows Update for Business via Dual Scan | Manage Insider pre-release builds with Windows Update for Business within System Center Configuration Manager |
 
 ## Managing Windows Update for Business with Windows Settings options
 Windows Settings includes options to control certain Windows Update for Business features:
@@ -110,7 +114,7 @@ Also, the pause period is calculated from the set start date. For more details, 
 
 ## Monitor Windows Updates by using Update Compliance
 
-Update Compliance, now **available in public preview**, provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
+Update Compliance provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
 
 ![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 

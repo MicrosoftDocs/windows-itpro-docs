@@ -2,12 +2,18 @@
 title: Domain member Digitally sign secure channel data (when possible) (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Digitally sign secure channel data (when possible) security policy setting.
 ms.assetid: a643e491-4f45-40ea-b12c-4dbe47e54f34
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

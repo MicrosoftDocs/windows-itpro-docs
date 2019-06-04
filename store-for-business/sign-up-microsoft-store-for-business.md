@@ -2,6 +2,8 @@
 title: Sign up for Microsoft Store for Business or Microsoft Store for Education (Windows 10)
 description: Before you sign up for Microsoft Store for Business or Microsoft Store for Education, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
 ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

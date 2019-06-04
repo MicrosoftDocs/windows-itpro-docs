@@ -1,8 +1,11 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V
 description: Deploying Microsoft Office 2013 by Using App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 02df5dc8-79e2-4c5c-8398-dbfb23344ab3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -875,10 +878,10 @@ The following table describes the requirements and options for deploying Visio 2
 
 [About App-V 5.0 Dynamic Configuration](about-app-v-50-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

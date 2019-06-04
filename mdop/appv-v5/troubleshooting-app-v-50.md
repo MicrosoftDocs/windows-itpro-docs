@@ -1,8 +1,11 @@
 ---
 title: Troubleshooting App-V 5.0
 description: Troubleshooting App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a713b345-25b7-4cdf-ba55-66df672a1f3a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -79,10 +82,10 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 -   [Operations for App-V 5.0](operations-for-app-v-50.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

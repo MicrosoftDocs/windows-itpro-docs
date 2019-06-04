@@ -4,10 +4,13 @@ description: Learn how to get started using Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+author: lomayor
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: lomayor
 ms.date: 06/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Manage feature and quality updates with group policies

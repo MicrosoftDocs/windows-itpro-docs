@@ -1,12 +1,15 @@
 ---
 title: Upgrading to App-V for Windows 10 from an existing installation (Windows 10)
 description: Upgrading to App-V for Windows 10 from an existing installation
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 # Upgrading to App-V for Windows 10 from an existing installation
@@ -94,6 +97,6 @@ Type the following cmdlet in a Windows PowerShell window:
 
     `Unpublish-AppvClientPackage "ContosoApplication"`
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

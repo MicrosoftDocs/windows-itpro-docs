@@ -40,6 +40,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "bcs-vsts"
+    "dest": "bcs-vsts",
+    "markdownEngineName": "dfm"
   }
 }

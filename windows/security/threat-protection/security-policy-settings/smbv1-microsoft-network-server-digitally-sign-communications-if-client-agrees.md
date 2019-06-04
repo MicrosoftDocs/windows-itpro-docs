@@ -2,13 +2,19 @@
 title: SMBv1 Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
 description: For SMBv1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (if client agrees) security policy setting.
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 06/19/2018
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 01/04/2019
 ---
 
 # SMBv1 Microsoft network server: Digitally sign communications (if client agrees)
@@ -31,7 +37,7 @@ If server-side SMB signing is required, a client device will not be able to esta
 
 If server-side SMB signing is enabled, SMB packet signing will be negotiated with client computers that have SMB signing enabled.
 
-Using SMB packet signing can impose up to a 15 percent performance degradation on file service transactions.
+[!INCLUDE [smb1-perf-note](includes/smb1-perf-note.md)]
 
 There are three other policy settings that relate to packet-signing requirements for Server Message Block (SMB) communications:
 

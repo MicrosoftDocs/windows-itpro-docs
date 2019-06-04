@@ -1,15 +1,18 @@
 ---
 title: Monitor the health of devices with Device Health
-description: You can use Device Health in OMS to monitor the frequency and causes of crashes and misbehaving apps on devices in your network.
+ms.reviewer: 
+manager: laurawi
+description: You can use Device Health in Azure Portal to monitor the frequency and causes of crashes and misbehaving apps on devices in your network.
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 11/14/2017
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Monitor the health of devices with Device Health
@@ -18,9 +21,9 @@ ms.author: jaimeo
 
 Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by providing IT with reports on some common problems the end users might experience so they can be proactively remediated, thus saving support calls and improving end-user productivity.
 
-Like Upgrade Readiness and Update Compliance, Device Health is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service that has a flexible servicing subscription based on data usage and retention. This release is free for customers to try and will not incur charges on your OMS workspace for its use. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Like Upgrade Readiness and Update Compliance, Device Health is a solution built in Azure Portal, a cloud-based monitoring and automation service that has a flexible servicing subscription based on data usage and retention. This release is free for customers to try and will not incur charges on your Azure Portal workspace for its use. For more information about Azure Portal, see [Windows Analytics in the Azure Portal](windows-analytics-azure-portal.md) .
 
-Device Health uses Windows diagnostic data that is part of all Windows 10 devices. If you have already employed Upgrade Readiness or Update Compliance solutions, all you need to do is select Device Health from the OMS solution gallery and add it to your OMS workspace. Device Health requires enhanced diagnostic data, so you might need to implement this policy if you've not already done so.
+Device Health uses Windows diagnostic data that is part of all Windows 10 devices. If you have already employed Upgrade Readiness or Update Compliance solutions, all you need to do is select Device Health from the Azure Portal solution gallery and add it to your Azure Portal workspace. Device Health requires enhanced diagnostic data, so you might need to implement this policy if you've not already done so.
 
 
 Device Health provides the following:
@@ -58,7 +61,7 @@ The Device Health architecture and data flow is summarized by the following five
 
 **(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
 **(2)** Diagnostic data is analyzed by the Microsoft Telemetry Service.<BR>
-**(3)** Diagnostic data is pushed from the Microsoft Telemetry Service to your OMS workspace.<BR>
+**(3)** Diagnostic data is pushed from the Microsoft Telemetry Service to your Azure Portal workspace.<BR>
 **(4)** Diagnostic data is available in the Device Health solution.<BR>
 **(5)** You are now able to proactively monitor Device Health issues in your environment.<BR>
 

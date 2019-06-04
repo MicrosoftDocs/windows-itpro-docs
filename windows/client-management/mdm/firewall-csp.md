@@ -1,12 +1,14 @@
 ---
 title: Firewall CSP
 description: Firewall CSP
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 01/26/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Firewall CSP
@@ -277,6 +279,7 @@ Sample syncxml to provision the firewall settings to evaluate
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+<p style="margin-left: 20px">The tokens "Intranet", "RmtIntranet", "Internet" and "Ply2Renders" are supported on Windows 10, version 1809, and later.</p>
 
 <a href="" id="description"></a>**FirewallRules/_FirewallRuleName_/Description**
 <p style="margin-left: 20px">Specifies the description of the rule.</p>
@@ -306,7 +309,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
 
 <a href="" id="direction"></a>**FirewallRules/_FirewallRuleName_/Direction**
-<p style="margin-left: 20px">Comma separated list. The rule is enabled based on the traffic direction as following. Supported values:</p>
+<p style="margin-left: 20px">The rule is enabled based on the traffic direction as following. Supported values:</p>
 <ul>
 <li>IN - the rule applies to inbound traffic.</li>
 <li>OUT - the rule applies to outbound traffic.</li>
@@ -320,7 +323,6 @@ Sample syncxml to provision the firewall settings to evaluate
 <li>RemoteAccess</li>
 <li>Wireless</li>
 <li>Lan</li>
-<li>MobileBroadband</li>
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>

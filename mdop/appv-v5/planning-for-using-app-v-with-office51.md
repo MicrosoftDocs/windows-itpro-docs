@@ -1,8 +1,11 @@
 ---
 title: Planning for Using App-V with Office
 description: Planning for Using App-V with Office
-author: jamiejdt
+author: msfttracyp
 ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -317,10 +320,10 @@ The Office 2013 App-V package supports the following integration points with the
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

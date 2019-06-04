@@ -1,12 +1,16 @@
 ---
 title: How to Publish a Connection Group (Windows 10)
 description: How to Publish a Connection Group
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to Publish a Connection Group
 
@@ -20,9 +24,9 @@ After you create a connection group, you must publish it to computers that run t
 
 2. Right-click the connection group to be published, and select **publish**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -1,12 +1,16 @@
 ---
 title: Maintaining App-V (Windows 10)
 description: Maintaining App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Maintaining App-V
 
@@ -26,9 +30,9 @@ For example, let's say the process ID is 4052. If you can successfully open a na
 
 Additionally, ISVs who want to explicitly virtualize or not virtualize calls on specific APIs with App-V 5.1 and later can use the **VirtualizeCurrentThread()** and **CurrentThreadIsVirtualized()** functions implemented in the AppEntSubsystems32.dll module to hint to a downstream component whether the call should be virtualized or not.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Other resources for maintaining App-V
 

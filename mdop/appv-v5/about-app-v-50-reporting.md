@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.0 Reporting
 description: About App-V 5.0 Reporting
-author: jamiejdt
+author: v-madhi
 ms.assetid: 27c33dda-f017-41e3-8a78-1b681543ec4f
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -302,10 +305,10 @@ To retrieve report information and create reports using App-V 5.0 you must use o
 
 You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server will be able to manage without impacting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

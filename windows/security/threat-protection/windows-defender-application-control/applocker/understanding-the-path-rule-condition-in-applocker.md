@@ -2,12 +2,18 @@
 title: Understanding the path rule condition in AppLocker (Windows 10)
 description: This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it is applied.
 ms.assetid: 3fa54ded-4466-4f72-bea4-2612031cad43
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: mjcaparas
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 
@@ -57,7 +63,7 @@ AppLocker uses path variables for well-known directories in Windows. Path variab
 | Windows directory or drive | AppLocker path variable | Windows environment variable |
 | - | - | - |
 | Windows | %WINDIR% | %SystemRoot% | 
-| System32 | %SYSTEM32%| %SystemDirectory%| 
+| System32 and sysWOW64 | %SYSTEM32%| %SystemDirectory%| 
 | Windows installation directory | %OSDRIVE%|%SystemDrive%| 
 | Program Files | %PROGRAMFILES%| %ProgramFiles% and %ProgramFiles(x86)%| 
 | Removable media (for example, CD or DVD) | %REMOVABLE%| |

@@ -1,12 +1,16 @@
-﻿---
+---
 title: About Client Configuration Settings (Windows 10)
 description: About Client Configuration Settings
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # About Client Configuration Settings
 
@@ -14,7 +18,7 @@ ms.date: 04/18/2018
 
 The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. Understanding how the register's format for data works can help you better understand the client, as you can configure many client actions by changing registry entries. This topic lists the App-V client configuration settings and explains their uses. You can use Windows PowerShell to modify the client configuration settings. For more information about using Windows PowerShell and App-V see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).
 
-You can use Group Policy to configure App-V client settings by navigating to the **Group Policy managment console** at **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
+You can use Group Policy to configure App-V client settings by navigating to the **Group Policy management console** at **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
 ## App-V Client Configuration Settings: Windows PowerShell
 
@@ -104,9 +108,9 @@ The following table provides information about App-V client configuration settin
 | **HidePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | | |
 | **ProcessesUsingVirtualComponents**<br>String  | Virtualization\\ProcessesUsingVirtualComponents  | Empty string. |
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

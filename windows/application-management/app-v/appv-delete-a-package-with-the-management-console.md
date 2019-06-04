@@ -1,12 +1,16 @@
 ---
 title: How to delete a package in the Management Console (Windows 10)
 description: How to delete a package in the Management Console.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to delete a package in the Management Console
 
@@ -20,9 +24,9 @@ Use the following procedure to delete an App-V package.
 
 2. Select or right-click the package, then select **Delete** to remove the package.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -2,12 +2,18 @@
 title: Create an Outbound Program or Service Rule (Windows 10)
 description: Create an Outbound Program or Service Rule
 ms.assetid: f71db4fb-0228-4df2-a95d-b9c056aa9311
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

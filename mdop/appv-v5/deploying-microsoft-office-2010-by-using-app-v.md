@@ -1,8 +1,11 @@
 ---
 title: Deploying Microsoft Office 2010 by Using App-V
 description: Deploying Microsoft Office 2010 by Using App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 0a9e496e-82a1-4dc0-a496-7b21eaa00f53
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -297,10 +300,10 @@ The following table provides a full list of supported integration points for Off
 
 [About App-V 5.0 Dynamic Configuration](about-app-v-50-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

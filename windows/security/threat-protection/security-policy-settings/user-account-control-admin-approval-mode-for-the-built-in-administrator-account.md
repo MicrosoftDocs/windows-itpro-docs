@@ -2,12 +2,18 @@
 title: User Account Control Admin Approval Mode for the Built-in Administrator account (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Admin Approval Mode for the Built-in Administrator account security policy setting.
 ms.assetid: d465fc27-1cd2-498b-9cf6-7ad2276e5998
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/08/2017
 ---
 

@@ -2,12 +2,18 @@
 title: Import an AppLocker policy from another computer (Windows 10)
 description: This topic for IT professionals describes how to import an AppLocker policy.
 ms.assetid: b48cb2b2-8ef8-4cc0-89bd-309d0b1832f6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

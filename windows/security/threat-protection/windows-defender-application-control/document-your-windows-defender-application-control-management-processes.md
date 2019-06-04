@@ -2,12 +2,18 @@
 title: Document your application control management processes (Windows 10)
 description: This planning topic describes the WDAC policy maintenance information to record for your design document.
 ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

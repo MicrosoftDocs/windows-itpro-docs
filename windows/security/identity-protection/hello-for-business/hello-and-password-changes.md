@@ -2,13 +2,18 @@
 title: Windows Hello and password changes (Windows 10)
 description: When you change your password on a device, you may need to sign in with a password on other devices to reset Hello.
 ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.localizationpriority: medium
-ms.author: daniha
 ms.date: 07/27/2017
 ---
 # Windows Hello and password changes

@@ -1,8 +1,11 @@
 ---
 title: Viewing App-V Server Publishing Metadata
 description: Viewing App-V Server Publishing Metadata
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d5fa9eb5-647c-478d-8a4d-0ecda018bce6
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -246,10 +249,10 @@ The Publishing server communicates with the Management server to determine which
 
 You can view the metadata for each request in an Internet browser by using a query that is in the context of the specific user or computer.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

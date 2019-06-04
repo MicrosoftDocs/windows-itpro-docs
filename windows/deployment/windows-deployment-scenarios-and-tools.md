@@ -2,12 +2,15 @@
 title: Windows 10 deployment tools (Windows 10)
 description: To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process.
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/12/2017
+author: dansimp
+ms.topic: article
 ---
 
 # Windows 10 deployment scenarios and tools

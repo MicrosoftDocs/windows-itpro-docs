@@ -2,13 +2,16 @@
 title: Windows To Go feature overview (Windows 10)
 description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 ms.assetid: 9df82b03-acba-442c-801d-56db241f8d42
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: workspace, mobile, installation, image, USB, device, image, edu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility, edu
 ms.sitesec: library
-author: mtniehaus
-ms.date: 04/19/2017
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows To Go: feature overview
@@ -18,16 +21,16 @@ ms.date: 04/19/2017
 
 -   Windows 10
 
+>[!IMPORTANT]
+>Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+
 Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
 PCs that meet the Windows 7 or later [certification requirements](https://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
 -   [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
-
 -   [Roaming with Windows To Go](#bkmk-wtgroam)
-
 -   [Prepare for Windows To Go](#wtg-prep-intro)
-
 -   [Hardware considerations for Windows To Go](#wtg-hardware)
 
 **Note**  

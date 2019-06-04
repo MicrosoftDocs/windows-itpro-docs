@@ -1,8 +1,11 @@
 ---
 title: App-V 5.0 SP3 Supported Configurations
 description: App-V 5.0 SP3 Supported Configurations
-author: jamiejdt
+author: v-madhi
 ms.assetid: 08ced79a-0ed3-43c3-82e7-de01c1f33e81
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -442,10 +445,10 @@ The App-V client supports the following versions of System Center Configuration 
 
 For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -2,11 +2,13 @@
 title: CM\_CellularEntries CSP
 description: CM\_CellularEntries CSP
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 08/02/2017
 ---
 
@@ -183,6 +185,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <p style="margin-left: 20px"> Required. Type: String. Specifies the purposes of the connection by a comma-separated list of GUIDs representing purpose values. The following purpose values are available:
 
 -   Internet - 3E5545D2-1137-4DC8-A198-33F1C657515F
+-   LTE attach - 11A6FE68-5B47-4859-9CB6-1EAC96A8F0BD
 -   MMS - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8
 -   IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13
 -   SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD

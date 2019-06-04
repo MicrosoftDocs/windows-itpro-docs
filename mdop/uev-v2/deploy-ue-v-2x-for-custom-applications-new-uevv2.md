@@ -1,8 +1,11 @@
 ---
 title: Deploy UE-V 2.x for Custom Applications
 description: Deploy UE-V 2.x for Custom Applications
-author: jamiejdt
+author: levinec
 ms.assetid: f7cb089f-d764-4a93-82b6-926fe0385a23
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -319,10 +322,10 @@ Templates that are deployed by using an ESD system or Group Policy Objects must 
 
      
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

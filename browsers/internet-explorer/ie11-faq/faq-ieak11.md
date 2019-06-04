@@ -3,11 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
 description: Internet Explorer Administration Kit (IEAK) helps corporations, Internet service providers (ISPs), Internet content providers (ICPs), and independent software vendors (ISVs) to deploy and manage web-based solutions.
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid:
+ms.reviewer: 
+manager: dansimp
 title: IEAK 11 - Frequently Asked Questions
 ms.sitesec: library
 ms.date: 05/10/2018

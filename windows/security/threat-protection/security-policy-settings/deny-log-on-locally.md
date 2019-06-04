@@ -2,12 +2,18 @@
 title: Deny log on locally (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on locally security policy setting.
 ms.assetid: 00150e88-ec9c-43e1-a70d-33bfe10434db
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

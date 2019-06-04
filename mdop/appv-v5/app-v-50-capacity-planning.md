@@ -1,8 +1,11 @@
 ---
 title: App-V 5.0 Capacity Planning
 description: App-V 5.0 Capacity Planning
-author: jamiejdt
+author: v-madhi
 ms.assetid: 56f48b00-cd91-4280-9481-5372a0e2e792
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -936,10 +939,10 @@ Ignoring scaling requirements, the minimum number of servers necessary to provid
 
 Although there are a number of fault-tolerance strategies and technologies available, not all are applicable to a given service. Additionally, if App-V 5.0 roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

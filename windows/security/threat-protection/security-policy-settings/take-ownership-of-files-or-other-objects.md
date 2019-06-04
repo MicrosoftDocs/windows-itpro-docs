@@ -2,12 +2,18 @@
 title: Take ownership of files or other objects (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Take ownership of files or other objects security policy setting.
 ms.assetid: cb8595d1-74cc-4176-bb15-d97663eebb2d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

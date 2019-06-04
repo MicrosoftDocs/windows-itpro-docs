@@ -1,8 +1,11 @@
 ---
 title: Administering UE-V 2.x
 description: Administering UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 996e4797-8383-4627-b714-24a84c907798
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -71,10 +74,10 @@ You can use UE-V with Microsoft Application Virtualization (App-V) to share sett
 
 -   [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

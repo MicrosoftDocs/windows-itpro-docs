@@ -1,8 +1,11 @@
 ---
 title: MED-V 1.0 Supported Configurations
 description: MED-V 1.0 Supported Configurations
-author: jamiejdt
+author: dansimp
 ms.assetid: 74643de6-549e-4177-a559-6407e156ed3a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

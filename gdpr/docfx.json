@@ -38,6 +38,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "gdpr"
+    "dest": "gdpr",
+    "markdownEngineName": "dfm"
   }
 }

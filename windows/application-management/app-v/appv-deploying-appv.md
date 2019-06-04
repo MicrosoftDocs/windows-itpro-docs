@@ -1,12 +1,16 @@
 ---
 title: Deploying App-V (Windows 10)
 description: Deploying App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Deploying App-V for Windows 10
 
@@ -41,6 +45,6 @@ The following sections describe how to use App-V to deliver Microsoft Office as 
 * [Troubleshooting App-V](appv-troubleshooting.md)
 * [Technical reference for App-V](appv-technical-reference.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+

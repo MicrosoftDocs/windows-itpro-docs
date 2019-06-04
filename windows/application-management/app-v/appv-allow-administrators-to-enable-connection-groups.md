@@ -1,12 +1,16 @@
 ---
 title: How to Allow Only Administrators to Enable Connection Groups (Windows 10)
 description: How to Allow Only Administrators to Enable Connection Groups
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # How to allow only administrators to enable connection groups
 
@@ -24,9 +28,9 @@ Use one of the following methods to allow only administrators to enable or disab
 |Group Policy setting|Enable the “Require publish as administrator” Group Policy setting, which is located in the following Group Policy Object node:<br><br>**Computer Configuration** > **Administrative Templates** > **System** > **App-V** > **Publishing**|
 |Windows PowerShell cmdlet|Run the **Set-AppvClientConfiguration** cmdlet with the *-RequirePublishAsAdmin* parameter. <br><br>Parameter values:<br>- **0** – False<br>- **1** – True<br><br>Example: ```Set-AppvClientConfiguration -RequirePublishAsAdmin 1```|
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

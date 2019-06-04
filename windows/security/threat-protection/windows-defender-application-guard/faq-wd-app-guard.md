@@ -6,14 +6,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
-ms.date: 11/07/2017
+author: dansimp
+ms.author: dansimp
+ms.date: 03/28/2019
+ms.reviewer: 
+manager: dansimp
+
 ---
 
 # Frequently asked questions - Windows Defender Application Guard 
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
@@ -22,7 +25,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Can I enable Application Guard on machines equipped with 4GB RAM?|
-|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
+|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount       - Default is 4 cores. |
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredMemoryInGB            - Default is 8GB.|
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredFreeDiskSpaceInGB - Default is 5GB.|
@@ -60,6 +63,12 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 
 | | |
 |---|----------------------------|
+|**Q:** |Which Input Method Editors (IME) in 19H1 are not supported?|
+|**A:** |The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in WDAG.<br>Vietnam Telex keyboard<br>Vietnam number key-based keyboard<br>Hindi phonetic keyboard<br>Bangla phonetic keyboard<br>Marathi phonetic keyboard<br>Telugu phonetic keyboard<br>Tamil phonetic keyboard<br>Kannada phonetic keyboard<br>Malayalam phonetic keyboard<br>Gujarati phonetic keyboard<br>Odia phonetic keyboard<br>Punjabi phonetic keyboard|
+<br>
+
+| | |
+|---|----------------------------|
 |**Q:** |I enabled the hardware acceleration policy on my Windows 10 Enterprise, version 1803 deployment. Why are my users still only getting CPU rendering?|
 |**A:** |This feature is currently experimental-only and is not functional without an additional regkey provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, please contact Microsoft and we’ll work with you to enable the feature.|
 <br>
@@ -68,4 +77,10 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 |---|----------------------------|
 |**Q:** |What is the WDAGUtilityAccount local account?|
 |**A:** |This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.|
+<br>
+
+| | |
+|---|----------------------------|
+|**Q:** |How do I trust a subdomain in my site list?|
+|**A:** |To trust a subdomain, you must precede your domain with two dots, for example: ..contoso.com.|
 <br>

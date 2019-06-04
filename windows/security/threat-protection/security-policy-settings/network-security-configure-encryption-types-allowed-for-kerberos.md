@@ -2,21 +2,27 @@
 title: Network security Configure encryption types allowed for Kerberos Win7 only (Windows 10)
 description: Describes the best practices, location, values and security considerations for the Network security Configure encryption types allowed for Kerberos Win7 only security policy setting.
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
-# Network security: Configure encryption types allowed for Kerberos Win7 only
+# Network security: Configure encryption types allowed for Kerberos
 
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values and security considerations for the **Network security: Configure encryption types allowed for Kerberos Win7 only** security policy setting.
+Describes the best practices, location, values and security considerations for the **Network security: Configure encryption types allowed for Kerberos** security policy setting.
 
 ## Reference
 
@@ -63,9 +69,9 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Default domain policy| Not defined|
 | Default domain controller policy| Not defined|
 | Stand-alone server default settings | Not defined|
-| Domain controller effective default settings | None of these encryption types that are available in this policy are allowed.|
-| Member server effective default settings | None of these encryption types that are available in this policy are allowed.|
-| Effective GPO default settings on client computers | None of these encryption types that are available in this policy are allowed.|
+| Domain controller effective default settings | The default OS setting applies, DES suites are not supported by default.|
+| Member server effective default settings | The default OS setting applies, DES suites are not supported by default.|
+| Effective GPO default settings on client computers | The default OS setting applies, DES suites are not supported by default.|
  
 ## Security considerations
 

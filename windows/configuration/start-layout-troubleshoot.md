@@ -4,10 +4,13 @@ description: Troubleshoot common errors related to Start menu in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: kaushika
-author: kaushika-msft
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 12/03/18
+ms.reviewer: 
+manager: dansimp
+ms.topic: troubleshooting
 ---
 
 # Troubleshoot Start Menu errors
@@ -279,7 +282,7 @@ Additionally, users may see blank tiles if logon was attempted without network c
 
 ### Symptom: Start Menu issues with Tile Data Layer corruption 
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)). 
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
@@ -299,6 +302,33 @@ C:\Windows\System32\tdlrecover.exe -reregister -resetlayout -resetcache
 ```
 
 Although a reboot is not required, it may help clear up any residual issues after the command is run.
+
+### Symptoms: Start Menu and Apps cannot start after upgrade to Windows 10 version 1809 when Symantec Endpoint Protection is installed
+
+**Description** Start Menu, Search and Apps do not start after you upgrade a Windows 7-based computer that has Symantec Endpoint Protection installed to Windows 10 version 1809.
+
+**Cause** This occurs because of a failure to load sysfer.dll.  During upgrade, the setup process does not set the privilege group "All Application Packages" on sysfer.dll and other Symantec modules.
+
+**Resolution** This issue was fixed by the Windows Cumulative Update that were released on December 5, 2018—KB4469342 (OS Build 17763.168).
+
+If you have already encountered this issue, use one of the following two options to fix the issue:
+
+**Option 1** Remove sysfer.dll from system32 folder and copy it back. Windows will set privilege automatically.
+
+**Option 2** 
+
+1. Locate the directory C:\Windows\system32.
+
+2. Right-click on sysfer.dll and choose **Properties**.
+
+3. Switch to the **Security** tab.
+
+4. Confirm that **All Application Packages** group is missing.
+
+5. Click **Edit**, and then click **Add** to add the group.
+
+6. Test Start and other Apps.
+
 
 
 

@@ -2,12 +2,16 @@
 title: Perform Proxy Activation (Windows 10)
 description: Perform Proxy Activation
 ms.assetid: 35a919ed-f1cc-4d10-9c88-9bd634549dc3
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Perform Proxy Activation

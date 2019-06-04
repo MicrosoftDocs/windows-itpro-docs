@@ -4,16 +4,18 @@ description: Enable Bitlocker device encryption to protect files stored on the H
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 12/20/2017
+ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable encryption for HoloLens
 
-You can enable [Bitlocker device encryption](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) to protect files and information stored on the HoloLens. Device encryption helps protect your data by encrypting it using AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Only someone with the right encryption key (such as a password) can decrypt it or perform a data recovery.
+You can enable [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) to protect files and information stored on the HoloLens. Device encryption helps protect your data by encrypting it using AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Only someone with the right encryption key (such as a password) can decrypt it or perform a data recovery.
 
 
 
@@ -100,6 +102,6 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 Encryption is silent on HoloLens. To verify the device encryption status:
  
--	On HoloLens, go to **Settings** > **System** > **About**. **Bitlocker** is **enabled** if the device is encrypted. 
+-	On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
 
-![About screen showing Bitlocker enabled](images/about-encryption.png)
+![About screen showing BitLocker enabled](images/about-encryption.png)

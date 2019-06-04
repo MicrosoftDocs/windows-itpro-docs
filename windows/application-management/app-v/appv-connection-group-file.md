@@ -1,12 +1,16 @@
 ---
 title: About the connection group file (Windows 10)
 description: A summary of what the connection group file is and how to configure it.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # About the connection group file
 
@@ -95,7 +99,7 @@ You can use the connection group file to configure each connection group by usin
 
 The priority field is required when a running virtual application initiates from a native application request, such as Microsoft Windows Explorer. The App-V client uses the priority to determine which connection group virtual environment the application should run in. This situation occurs if a virtual application is part of multiple connection groups.
 
-If a virtual application is opened using another virtual application, the client will use the orignal virtual application's virtual environment. The priority field is not used in this case.
+If a virtual application is opened using another virtual application, the client will use the original virtual application's virtual environment. The priority field is not used in this case.
 
 The following is an example of priority configuration:
 
@@ -133,9 +137,9 @@ App-V supports the following application connection configurations.
   
   After deployment, you can either create a single new Microsoft Office 2010 + Microsoft Lync 2010 package or keep and maintain them as separate packages and deploy them with a connection group.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

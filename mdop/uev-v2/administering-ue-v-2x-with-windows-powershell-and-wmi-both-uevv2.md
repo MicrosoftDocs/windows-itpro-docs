@@ -1,8 +1,11 @@
 ---
 title: Administering UE-V 2.x with Windows PowerShell and WMI
 description: Administering UE-V 2.x with Windows PowerShell and WMI
-author: jamiejdt
+author: levinec
 ms.assetid: e749ac03-0adf-475a-a4f2-5cc023549b12
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,10 +38,10 @@ After you create and deploy UE-V settings location templates, you can manage tho
 
 [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](managing-ue-v-2x-settings-location-templates-using-windows-powershell-and-wmi-both-uevv2.md)
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

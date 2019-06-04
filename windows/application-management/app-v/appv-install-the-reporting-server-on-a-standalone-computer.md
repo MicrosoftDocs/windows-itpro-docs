@@ -1,12 +1,16 @@
 ---
 title: How to install the Reporting Server on a standalone computer and connect it to the database (Windows 10)
 description: How to install the App-V Reporting Server on a Standalone Computer and Connect it to the Database
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to install the reporting server on a standalone computer and connect it to the database
 
@@ -34,9 +38,9 @@ Use the following procedure to install the reporting server on a standalone comp
     * For the **Port binding**, specify a unique, five-digit port number for App-V to use, such as **55555**. Make sure that the specified port isn't being used by another website.
 8. Select **Install**.
 
-## Have a suggestion for App-V? 
+ 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
 
 ## Related topics
 

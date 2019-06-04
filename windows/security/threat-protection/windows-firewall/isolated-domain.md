@@ -2,12 +2,18 @@
 title: Isolated Domain (Windows 10)
 description: Isolated Domain
 ms.assetid: d6fa8d67-0078-49f6-9bcc-db1f24816c5e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

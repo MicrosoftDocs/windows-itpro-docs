@@ -9,21 +9,23 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Specify the cloud-delivered protection level
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
 
 >[!NOTE] 
->The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
+>The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 
 
@@ -62,9 +64,14 @@ For more information about Intune device profiles, including how to create and c
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
 
 1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
-    1.  Setting to **Default Windows Defender Antivirus blocking level** will provide strong detection without increasing the risk of detecting legitimate files.  
-    2.  Setting to **High blocking level** will apply a strong level of detection. While unlikely, some legitimate files may be detected (although you will have the option to unblock or dispute that detection). 
- 
+    1.  Setting to **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
+    2.  Setting to **High blocking level** applies a strong level of detection. 
+    3. **High + blocking level** applies additional protection measures.
+    4. **Zero tolerance blocking level** blocks all unknown executables.
+
+        > [!WARNING]
+        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection). The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
+
 1. Click **OK**.
 
   

@@ -2,14 +2,18 @@
 title: Volume Activation for Windows 10 (Windows 10)
 description: This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows 10, including organizations that have used volume activation for earlier versions of Windows.
 ms.assetid: 6e8cffae-7322-4fd3-882a-cde68187aef2
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Volume Activation for Windows 10

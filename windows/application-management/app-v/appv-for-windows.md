@@ -1,12 +1,16 @@
 ---
 title: Application Virtualization (App-V) (Windows 10)
 description: Application Virtualization (App-V)
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Application Virtualization (App-V) for Windows 10 overview
 
@@ -61,6 +65,5 @@ The topics in this section provide information and instructions to help you admi
 - [Viewing App-V Server publishing metadata](appv-viewing-appv-server-publishing-metadata.md)
 - [Running a locally installed application inside a virtual environment with virtualized applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

@@ -2,13 +2,15 @@
 title: Create provisioning packages (Surface Hub)
 description: For Windows 10, settings that use the registry or a configuration service provider (CSP) can be configured using provisioning packages. 
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
+ms.reviewer: 
+manager: dansimp
 keywords: add certificate, provisioning package
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 03/16/2019
 ms.localizationpriority: medium
 ---
 
@@ -267,13 +269,13 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply a provisioning package to Surface Hub
 
-There are two options for deploying provisioning packages to a Surface Hub. You can apply a provisioning packing [during the first run wizard](#apply-a-provisioning-package-during-first-run), or using [Settings](#apply-a-package-using-settings). 
+There are two options for deploying provisioning packages to a Surface Hub. [During the first run wizard](#apply-a-provisioning-package-during-first-run), you can apply a provisioning package that installs certificates, or after the first-run program is complete, you can apply a provisioning package that configures settings, apps, and certificates by using [Settings](#apply-a-package-using-settings). 
 
 
 ### Apply a provisioning package during first run
 
 > [!IMPORTANT]
-> Only use provisioning packages to install certificates during first run. Use the **Settings** app to install apps and apply other settings.
+> During the first-run program, you can only use provisioning packages to install certificates. Use the **Settings** app to install apps and apply other settings.
 
 1. When you turn on the Surface Hub for the first time, the first-run program will display the [**Hi there page**](first-run-program-surface-hub.md#first-page). Make sure that the settings are properly configured before proceeding.
 

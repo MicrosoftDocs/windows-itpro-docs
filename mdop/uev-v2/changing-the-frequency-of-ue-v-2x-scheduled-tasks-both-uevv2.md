@@ -1,8 +1,11 @@
 ---
 title: Changing the Frequency of UE-V 2.x Scheduled Tasks
 description: Changing the Frequency of UE-V 2.x Scheduled Tasks
-author: jamiejdt
+author: levinec
 ms.assetid: ee486570-c6cf-4fd9-ba48-0059ba877c10
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -312,10 +315,10 @@ The following additional information applies to UE-V scheduled tasks:
 
 -   The Monitor Application Settings scheduled task will update Windows app (AppX) settings in real time, based on Windows app program setting triggers built into each app.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

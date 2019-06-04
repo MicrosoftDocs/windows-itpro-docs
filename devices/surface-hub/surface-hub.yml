@@ -1,0 +1,62 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Surface Hub
+metadata:
+  document_id: 
+  title: Surface Hub
+  description: Find tools and resources to help you install, set up, and manage a Surface Hub in your organization. 
+  keywords: Surface Hub, Windows 10
+  ms.localizationpriority: medium
+  author: lizap
+  ms.author: elizapo
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find tools and resources to help you install, set up, and manage a Surface Hub in your organization. 
+      "  
+- title: Explore
+- items:
+  - type: markdown
+    text: "
+      Discover how this all-in-one productivity device enables teams to better brainstorm, collaborate, and share ideas.<br> 
+      <img src='images/getstarted.png'><br>
+      <table><tr><td><a href='https://www.microsoft.com/microsoft-surface-hub/product-specs#tech-specs'>Explore the key features and product specifications of Surface Hub.</a><br><a href='https://www.microsoft.com/microsoft-surface-hub/case-studies'>Get real-world examples of how you can increase productivity and improve collaboration.</a></td><td><a href='https://docs.microsoft.com/surface-hub/differences-between-surface-hub-and-windows-10-enterprise'>Differences between Surface Hub and Windows 10 Enterprise</a><br><a href='https://www.microsoft.com/microsoft-surface-hub/faq'>Surface Hub FAQ'</a></td></tr>
+      </table>
+      "
+- title: Plan
+- items:
+  - type: markdown
+    text: "
+      Prepare to deploy Surface Hub in your organization. Explore site readiness, assembly, configuration, and Exchange and ActiveSync policies. <br> 
+      <table><tr><td><img src='images/plan1.png' width='192' height='192'><br>**Get ready for Surface Hub**<br>Explore the steps you'll need to take to set up Surface Hub.<br><a href='https://docs.microsoft.com/surface-hub/surface-hub-site-readiness.guide'>Surface Hub Site Readiness Guide</a> (PDF, 1.48 MB)<br><a href='https://docs.microsoft.com/surface-hub/surface-hub-downloads'>Unpacking guides</a></td><td><img src='images/plan2.png' width='192' height='192'><br>**Assembly for Surface Hub**<br>Learn how to assemble your Surface Hub.<br><a href='https://download.microsoft.com/download/0/1/6/016363A4-8602-4F01-8281-9BE5C814DC78/Setup-Guide_EN-FR-SP.pdf'>Surface Hub Setup Guide</a> (PDF, 1.43 MB)<br><a href='https://docs.microsoft.com/surface-hub/surface-hub-downloads'>Mounting and assembling guides</a></td><td><img src='images/plan3.png' width='192' height='192'><br>**Prepare your environment**<br>Learn about setup dependencies and account requirements.<br><a href='https://docs.microsoft.com/surface-hub/prepare-your-environment-for-surface-hub'>Prepare your environment</a><br><a href='https://docs.microsoft.com/surface-hub/create-and-test-a-device-account-surface-hub'>Create and test a device account</a></td></tr>
+      </table>
+      "
+- title: Deploy
+- items:
+  - type: markdown
+    text: "
+      Get information for setup, app management and installation, and network management of your Surface Hub.<br> 
+      <table><tr><td><img src='images/deploy1.png' width='192' height='192'><br>**Set up your Surface Hub**<br>Review info needed to prepare for using the out-of-box experience to set up your Surface Hub.<br><a href='https://docs.microsoft.com/surface-hub/setup-worksheet-surface-hub'>Setup worksheet</a><br><a href='https://docs.microsoft.com/surface-hub/first-run-program-surface-hub'>First-run program</a><br><a href='https://docs.microsoft.com/surface-hub/appendix-a-powershell-scripts-for-surface-hub'>PowerShell scripts</a></td><td><img src='images/deploy2.png' width='192' height='192'><br>**Install apps**<br>Options for installing and managing apps on your Surface Hub.<br><a href='https://docs.microsoft.com/surface-hub/install-apps-on-surface-hub'>Install apps</a><br><a href='https://docs.microsoft.com/surface-hub/whiteboard-collaboration'>Whiteboard to Whiteboard collaboration</a><br><a href='https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub'>Create provisioning packages</a></td><td><img src='images/deploy3.png' width='192' height='192'><br>**Network your Surface Hub**<br>Network scenarios for your Surface Hub.<br><a href='https://docs.microsoft.com/surface-hub/wireless-network-management-for-surface-hub'>Wireless network management</a><br><a href='https://docs.microsoft.com/surface-hub/use-room-control-system-with-surface-hub'>Using a room control system</a><br><a href='https://docs.microsoft.com/surface-hub/connect-and-display-with-surface-hub'>Connect other devices with Surface Hub.</a></td></tr>
+      </table>
+      "
+- title: Manage
+- items:
+  - type: markdown
+    text: "
+      Learn how to manage Surface Hub updates and maintain the security and integrity of corporate devices.<br> 
+      <table><tr><td><img src='images/manage1.png' width='192' height='192'><br>**Manage the device**<br>Monitoring for Surface Hub is performed through Microsoft Operations Management Suite (OMS).<br><a href='https://docs.microsoft.com/surface-hub/monitor-surface-hub'>Monitor your Surface Hub</a><br><a href='https://docs.microsoft.com/surface-hub/accessibility-surface-hub'>Accessibility and Surface Hub</a></td><td><img src='images/manage2.png' width='192' height='192'><br>**Manage account**<br>Learn about options for managing accounts used with Surface Hub.<br><a href='https://docs.microsoft.com/surface-hub/change-surface-hub-device-account'>Change the Surface Hub device account</a><br><a href='https://docs.microsoft.com/surface-hub/admin-group-management-for-surface-hub'>Admin account management</a></td><td><img src='images/manage3.png' width='192' height='192'><br>**Stay secure and up to date**<br>Learn how Surface Hub stays current.<br><a href='https://docs.microsoft.com/surface-hub/manage-windows-updates-for-surface-hub'>Manage Windows updates</a><br><a href='https://support.microsoft.com/help/4037666/surface-surface-hub-update-history'>Surface Hub update history</a><br><a href='https://docs.microsoft.com/surface-hub/save-bitlocker-key-surface-hub'>Save your BitLocker key</a></td><td><img src='images/manage4.png' width='192' height='192'><br>**Training for your employees**<br>Find resources to help employees be productive with Surface Hub.<br><a href='https://download.microsoft.com/download/3/6/B/36B6331E-0C63-4E71-A05D-EE88D05081F8/surface-hub-user-guide-en-us.pdf'>Surface Hub User Guide</a> (PDF, 1.69 MB)<br><a href='https://support.microsoft.com/help/20431'>How-to videos</a></td></tr>
+      </table>
+      "
+- title: Stay informed
+- items:
+  - type: markdown
+    text: "
+      <table><tr><td><img src='images/surfaceblog.png' width='192' height='192'><br>**Surface IT Pro Blog**<br>Get insight into new Surface products plus tips and tricks for IT professionals.<br><a href='https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro'>Learn more</a></td><td><img src='images/surfacemechanics.png' width='192' height='192'><br>**Surface on Microsoft Mechanics**<br>View technical demos and walkthroughs of Surface devices, features, and functionality.<br><a href='https://technet.microsoft.com/windows/mt697546'>Get started</a></td><td><img src='images/twitter.png' width='192' height='192'><br>**Follow us on Twitter**<br>Keep up with the latest news and see the latest product demonstrations.<br><a href='https://twitter.com/surface'>Visit Twitter</a></td></tr>
+      </table>
+      "

@@ -1,8 +1,11 @@
 ---
 title: Overview of the Tools in DaRT 10
 description: Overview of the Tools in DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 752467dd-b646-4335-82ce-9090d4651f65
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -1,12 +1,14 @@
 ---
 title: Win32 and Desktop Bridge app policy configuration
 description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Desktop Bridge apps.
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Win32 and Desktop Bridge app policy configuration
@@ -46,6 +48,12 @@ When the ADMX policies are imported, the registry keys to which each policy is w
 - software\microsoft\exchange\
 - software\policies\microsoft\vba\security\
 - software\microsoft\onedrive 
+
+> [!Warning]
+> Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined.
+
+> [!NOTE]
+> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script). 
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 

@@ -1,12 +1,19 @@
-﻿---
+---
 title: Smart Cards Debugging Information (Windows 10)
 description: This topic explains tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: Justinha
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 04/19/2017
+ms.reviewer: 
 ---
 
 # Smart Cards Debugging Information

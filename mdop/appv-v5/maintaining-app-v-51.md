@@ -1,8 +1,11 @@
 ---
 title: Maintaining App-V 5.1
 description: Maintaining App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5abd17d3-e8af-4261-b914-741ae116b0e7
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,10 +33,10 @@ Independent software vendors (ISV) who want to determine if an application is ru
 
 Additionally, ISV’s who want to explicitly virtualize or not virtualize calls on specific API’s with App-V 5.1 and above, can use the **VirtualizeCurrentThread()** and **CurrentThreadIsVirtualized()** functions implemented in the AppEntSubsystems32.dll module. These provide a way of hinting at a downstream component that the call should or should not be virtualized.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Other resources for maintaining App-V 5.1
 

@@ -2,12 +2,18 @@
 title: Gathering Information about Your Devices (Windows 10)
 description: Gathering Information about Your Devices
 ms.assetid: 7f7cd3b9-de8e-4fbf-89c6-3d1a47bc2beb
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

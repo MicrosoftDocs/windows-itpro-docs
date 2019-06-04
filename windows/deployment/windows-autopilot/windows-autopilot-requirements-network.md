@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot networking requirements
+ms.reviewer: 
+manager: dansimp
 description: This topic goes over Windows Autopilot and how it helps setup OOBE Windows 10 devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -7,10 +9,12 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 10/02/2018
+author: dulcemontemayor
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot networking requirements
 
@@ -24,7 +28,12 @@ Windows Autopilot depends on a variety of internet-based services; access to the
 
 In environments that have more restrictive internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to whitelist access to the needed services. For additional details about each of these services and their specific requirements, review the following details:
 
--   **Windows Autopilot Deployment Service (and Windows Activation).**  After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service using the same services used for Windows Activation. See the following link for details:
+-   **Windows Autopilot Deployment Service (and Windows Activation).**  After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used:
+
+    -   https://ztd.dds.microsoft.com
+    -   https://cs.dds.microsoft.com
+    
+    For all supported Windows 10 releases, Windows Autopilot also uses Windows Activation services. See the following link for details:
 
     -   <https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33>
 
@@ -42,11 +51,11 @@ In environments that have more restrictive internet access, or for those that re
 
     -   NOTE:  If Windows Update is inaccessible, the AutoPilot process will still continue.
 
--   **Delivery Optimization.**  When downloading Windows Updates and Microsoft Store apps and app updates (with additional content types expected in the future), the Delivery Optimization service is contacted to enable peer-to-peer sharing of content, so that all devices don’t need to download it from the internet.
+-   **Delivery Optimization.**  When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the Delivery Optimization service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.
 
     -   <https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization>
 
-    -   NOTE: If Delivery Optimization is inaccessible, the AutoPilot process will still continue.
+    -   NOTE: If Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
 
 -   **Network Time Protocol (NTP) Sync.**  When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate.
 

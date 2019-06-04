@@ -2,12 +2,18 @@
 title: Checklist Configuring Rules for the Boundary Zone (Windows 10)
 description: Checklist Configuring Rules for the Boundary Zone
 ms.assetid: 25fe0197-de5a-4b4c-bc44-c6f0620ea94b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

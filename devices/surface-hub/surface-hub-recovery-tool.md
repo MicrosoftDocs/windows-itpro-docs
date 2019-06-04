@@ -2,11 +2,13 @@
 title: Using the Surface Hub Recovery Tool
 description: How to use the Surface Hub Recovery Tool to re-image the SSD.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
+ms.reviewer: 
+manager: dansimp
 keywords: manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 05/22/2018
 ms.localizationpriority: medium
@@ -16,7 +18,7 @@ ms.localizationpriority: medium
 
 The [Microsoft Surface Hub Recovery Tool](https://www.microsoft.com/download/details.aspx?id=52210) helps you re-image your Surface Hub Solid State Drive (SSD) using a Windows 10 desktop device, without calling support or replacing the SSD. With this tool, you can reimage an SSD that has an unknown Administrator password, boot errors, was unable to complete a cloud recovery, or for a device that has an older version of the operating system. The tool will not fix physically damaged SSDs.
 
-To re-image the Surface Hub SSD using the Recovery Tool, you'll need to remove the SSD from the Surface Hub, connect the drive to the USB-to-SATA cable, and then connect the cable to the desktop PC on which the Recovery Tool is installed. For more information on how to remove the existing drive from your Surface Hub, please refer to the [Surface Hub SSD Replacement Guide (PDF)](https://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf).
+To re-image the Surface Hub SSD using the Recovery Tool, you'll need to remove the SSD from the Surface Hub, connect the drive to the USB-to-SATA cable, and then connect the cable to the desktop PC on which the Recovery Tool is installed. For more information on how to remove the existing drive from your Surface Hub, see [Surface Hub SSD replacement](surface-hub-ssd-replacement.md).
 
 >[!IMPORTANT]
 >Do not let the device go to sleep or interrupt the download of the image file.
@@ -46,9 +48,9 @@ If the tool is unsuccessful in reimaging your drive, please contact [Surface Hub
 
 ## Download Surface Hub Recovery Tool
 
-Surface Hub Recovery Tool is available for download from [Surface Hub Tools for IT](https://www.microsoft.com/download/details.aspx?id=52210)  under the file name **SurfaceHub_Recovery_v1.4.137.0.msi**.
+Surface Hub Recovery Tool is available for download from [Surface Hub Tools for IT](https://www.microsoft.com/download/details.aspx?id=52210)  under the file name **SurfaceHub_Recovery_v1.14.137.0.msi**.
 
-To start the download, click **Download**, choose **SurfaceHub_Recovery_v1.4.137.0.msi** from the list, and click **Next**. From the pop-up, choose one of the following:
+To start the download, click **Download**, choose **SurfaceHub_Recovery_v1.14.137.0.msi** from the list, and click **Next**. From the pop-up, choose one of the following:
 
 - Click **Run** to start the installation immediately.
 - Click **Save** to copy the download to your computer for later installation.
@@ -73,7 +75,8 @@ Install Surface Hub Recovery Tool on the host PC.
 
     ![Download the image?](images/shrt-download.png)
 
-5. When the download is complete, the tool instructs you to connect an SSD drive. If the tool is unable to locate the attached drive, there is a good chance that the cable being used is not reporting the name of the SSD to Windows.  The imaging tool must find the name of the drive as "LITEON L CH-128V2S USB Device" before it can continue.  For more information on how to remove the existing drive from your Surface Hub, please refer to the [Surface Hub SSD Replacement Guide (PDF)](https://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf).
+5. When the download is complete, the tool instructs you to connect an SSD drive. If the tool is unable to locate the attached drive, there is a good chance that the cable being used is not reporting the name of the SSD to Windows.  The imaging tool must find the name of the drive as "LITEON L CH-128V2S USB Device" before it can continue.  For more information on how to remove the existing drive from your Surface Hub, see [Surface Hub SSD replacement](surface-hub-ssd-replacement.md).
+
 
     ![Connect SSD](images/shrt-drive.png)
 

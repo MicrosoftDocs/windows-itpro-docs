@@ -4,10 +4,12 @@ description: The list of Group Policy and mobile device management (MDM) policy 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: eross-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: lizross
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
@@ -22,7 +24,7 @@ ms.date: 10/05/2017
 |Group policy |MDM policy |Description |
 |-------------|-----------|------------|
 |Computer Configuration\Administrative Templates\Windows Components\Search\AllowCortanaAboveLock|AboveLock/AllowCortanaAboveLock|Specifies whether an employee can interact with Cortana using voice commands when the system is locked.<p>**Note**<br>This setting only applies to Windows 10 for desktop devices. |
-|Computer Configuration\Administrative Templates\Control Panel\Regional and Language Options\Allow input personalization|Privacy/AllowInputPersonalization|Specifies whether an employee can use voice commands with Cortana in your organization.<p>**In Windows 10, version 1511**<br>Cortana won’t work if this setting is turned off (disabled).<p>**In Windows 10, version 1607 and later**<br>Cortana still works if this setting is turned off (disabled).|
+|Computer Configuration\Administrative Templates\Control Panel\Regional and Language Options\Allow users to enable online speech recognition services|Privacy/AllowInputPersonalization|Specifies whether an employee can use voice commands with Cortana in your organization.<p>**In Windows 10, version 1511**<br>Cortana won’t work if this setting is turned off (disabled).<p>**In Windows 10, version 1607 and later**<br>Cortana still works if this setting is turned off (disabled).|
 |None|System/AllowLocation|Specifies whether to allow app access to the Location service.<p>**In Windows 10, version 1511**<br>Cortana won’t work if this setting is turned off (disabled).<p>**In Windows 10, version 1607 and later**<br>Cortana still works if this setting is turned off (disabled).|
 |None|Accounts/AllowMicrosoftAccountConnection|Specifies whether to allow employees to sign in using a Microsoft account (MSA) from Windows apps.<p>Use this setting if you only want to support Azure AD in your organization.|
 |Computer Configuration\Administrative Templates\Windows Components\Search\Allow search and Cortana to use location|Search/AllowSearchToUseLocation|Specifies whether Cortana can use your current location during searches and for location reminders.|

@@ -2,12 +2,18 @@
 title: Verify That Network Traffic Is Authenticated (Windows 10)
 description: Verify That Network Traffic Is Authenticated
 ms.assetid: cc1fb973-aedf-4074-ad4a-7376b24f03d2
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

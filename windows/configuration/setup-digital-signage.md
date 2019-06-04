@@ -2,13 +2,17 @@
 title: Set up digital signs on Windows 10  (Windows 10)
 description: A single-use device such as a digital sign is easy to set up in Windows 10 (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage", "kiosk browser", "browser"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.topic: article
 ---
 
 # Set up digital signs on Windows 10

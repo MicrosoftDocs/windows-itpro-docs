@@ -2,12 +2,18 @@
 title: Optimize AppLocker performance (Windows 10)
 description: This topic for IT professionals describes how to optimize AppLocker policy enforcement.
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

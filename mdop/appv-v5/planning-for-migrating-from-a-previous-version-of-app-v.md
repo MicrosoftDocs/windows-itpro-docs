@@ -1,8 +1,11 @@
 ---
 title: Planning for Migrating from a Previous Version of App-V
 description: Planning for Migrating from a Previous Version of App-V
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d4ca8f09-86fd-456f-8ec2-242ff94ae9a0
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -122,10 +125,10 @@ Before migrating a package, created using App-V 4.6 SP3 or earlier, to App-V 5
 
 For more information about using the package converter to convert a package, see [How to Convert a Package Created in a Previous Version of App-V](how-to-convert-a-package-created-in-a-previous-version-of-app-v.md). After you convert the file, you can deploy it to target computers that run the App-V 5.0 client.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

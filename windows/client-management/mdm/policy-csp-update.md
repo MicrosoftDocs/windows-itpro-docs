@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/29/2018
+author: v-madhi
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Update
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -58,7 +57,22 @@ ms.date: 08/29/2018
     <a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a>
   </dd>
   <dd>
+    <a href="#update-automaticmaintenancewakeup">Update/AutomaticMaintenanceWakeUp</a>
+  </dd>
+  <dd>
     <a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a>
+  </dd>
+  <dd>
+    <a href="#update-configuredeadlineforfeatureupdates">Update/ConfigureDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
+    <a href="#update-configuredeadlineforqualityupdates">Update/ConfigureDeadlineForQualityUpdates</a>
+  </dd>
+  <dd>
+    <a href="#update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
+  </dd>
+  <dd>
+    <a href="#update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
     <a href="#update-configurefeatureupdateuninstallperiod">Update/ConfigureFeatureUpdateUninstallPeriod</a>
@@ -188,6 +202,10 @@ ms.date: 08/29/2018
   </dd>
 </dl>
 
+<hr/>
+
+> [!NOTE]
+> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -931,6 +949,75 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="update-automaticmaintenancewakeup"></a>**Update/AutomaticMaintenanceWakeUp**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to configure if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance.
+
+> [!Note]
+> If the OS power wake policy is explicitly disabled, then this setting has no effect.
+
+If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if required.
+
+If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Automatic Maintenance WakeUp Policy*
+-   GP name: *WakeUpPolicy*
+-   GP path: *Windows Components/Maintenance Scheduler*
+-   GP ADMX file name: *msched.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+-   true - Enable
+-   false - Disable (Default)
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
 <!--SupportedSKUs-->
@@ -988,6 +1075,306 @@ The following list shows the supported values:
 -  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlineforfeatureupdates"></a>**Update/ConfigureDeadlineForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+
+<!--/Description-->
+
+<!--SupportedValues-->
+Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required feature update.
+
+Default value is 7.
+<!--/SupportedValues-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP name: *ConfigureDeadlineForFeatureUpdates*
+-   GP element: *ConfigureDeadlineForFeatureUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlineforqualityupdates"></a>**Update/ConfigureDeadlineForQualityUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP name: *ConfigureDeadlineForQualityUpdates*
+-   GP element: *ConfigureDeadlineForQualityUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required quality update.
+
+Default value is 7.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlinegraceperiod"></a>**Update/ConfigureDeadlineGracePeriod**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP name: *ConfigureDeadlineGracePeriod*
+-   GP element: *ConfigureDeadlineGracePeriod*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
+
+Default value is 2.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlinenoautoreboot"></a>**Update/ConfigureDeadlineNoAutoReboot**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. If enabled (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will not automatically restart outside of active hours until the deadline is reached, even if applicable updates are already installed and pending a restart.
+
+When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP name: *ConfigureDeadlineNoAutoReboot*
+-   GP element: *ConfigureDeadlineNoAutoReboot*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+-   1 - Enabled
+-   0 (default) - Disabled
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
+
+<!--/Description-->
 <!--/Policy-->
 
 <hr/>
@@ -3568,15 +3955,59 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic
+
+- [Update/AllowAutoUpdate](#update-allowautoupdate)
+- [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/ScheduledInstallDay](#update-scheduledinstallday)
+- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+- [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Update policies supported by Windows Holographic for Business
+
+- [Update/AllowAutoUpdate](#update-allowautoupdate)
+- [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/ScheduledInstallDay](#update-scheduledinstallday)
+- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+- [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+<!--EndHoloLensBusiness-->
+
+<!--StartIoTCore-->
+## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
+
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+<!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>Update policies supported by IoT Enterprise  
+
+- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+<!--EndIoTEnterprise-->
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

@@ -1,8 +1,11 @@
 ---
 title: Configuring UE-V 2.x with System Center Configuration Manager 2012
 description: Configuring UE-V 2.x with System Center Configuration Manager 2012
-author: jamiejdt
+author: levinec
 ms.assetid: 9a4e2a74-7646-4a77-b58f-2b4456487295
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -225,10 +228,10 @@ To distribute a new Notepad template, you would perform these steps:
 
 The UE-V Configuration Pack for Configuration Manager 2012 SP1 or later can be downloaded [here](https://go.microsoft.com/fwlink/?LinkId=317263).
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

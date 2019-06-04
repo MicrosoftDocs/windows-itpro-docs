@@ -8,6 +8,7 @@ author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
 ms.date: 04/06/2018
+ms.topic: article
 ---
 
 # Update Windows 10 in enterprise deployments

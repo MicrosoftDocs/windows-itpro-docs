@@ -1,8 +1,11 @@
 ---
 title: How to Access the Client Management Console
 description: How to Access the Client Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 3f6303c7-f953-4623-8211-c20d1faa846b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

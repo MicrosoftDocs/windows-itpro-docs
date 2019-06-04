@@ -2,12 +2,18 @@
 title: Create an Authentication Exemption List Rule (Windows 10)
 description: Create an Authentication Exemption List Rule
 ms.assetid: 8f6493f3-8527-462a-82c0-fd91a6cb5dd8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

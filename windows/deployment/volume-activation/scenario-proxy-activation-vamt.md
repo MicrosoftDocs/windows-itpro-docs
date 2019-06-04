@@ -2,12 +2,16 @@
 title: Scenario 2 Proxy Activation (Windows 10)
 description: Scenario 2 Proxy Activation
 ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Scenario 2: Proxy Activation

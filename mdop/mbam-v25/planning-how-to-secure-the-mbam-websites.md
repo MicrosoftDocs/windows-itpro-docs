@@ -1,8 +1,11 @@
 ---
 title: Planning How to Secure the MBAM Websites
 description: Planning How to Secure the MBAM Websites
-author: jamiejdt
+author: dansimp
 ms.assetid: aea1d137-62cf-4da4-9989-541e0b5ad8d8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -311,7 +314,9 @@ If you already registered SPNs on the machine account rather than in an applicat
 </tbody>
 </table>
 
- 
+## Required Request Filtering Settings
+ 
+ 'Allow unlisted file name extensions' is required for the application to operate as expected.  This can be found by navigating to the 'Microsoft BitLocker Administration and Monitoring' -> Request Filtering -> Edit Feature Settings.
 
 
 ## Related topics

@@ -2,12 +2,18 @@
 title: DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax policy setting.
 ms.assetid: 0fe3521a-5252-44df-8a47-8d92cf936e7c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

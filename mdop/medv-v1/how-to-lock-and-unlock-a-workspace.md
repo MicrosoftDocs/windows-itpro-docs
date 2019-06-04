@@ -1,8 +1,11 @@
 ---
 title: How to Lock and Unlock a Workspace
 description: How to Lock and Unlock a Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: 027166b9-0e06-4a4e-a8ac-a4d5f429656f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

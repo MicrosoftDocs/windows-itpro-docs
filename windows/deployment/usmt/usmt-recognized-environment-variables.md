@@ -2,11 +2,15 @@
 title: Recognized Environment Variables (Windows 10)
 description: Recognized Environment Variables
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Recognized Environment Variables

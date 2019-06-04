@@ -1,8 +1,11 @@
 ---
 title: How to Convert a Package Created in a Previous Version of App-V
 description: How to Convert a Package Created in a Previous Version of App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: b092a5f8-cc5f-4df8-a5a2-0a68fd7bd5b2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -34,7 +37,13 @@ You must configure the package converter to always save the package ingredients 
 
 1.  Install the App-V Sequencer on a computer in your environment. For information about how to install the Sequencer, see [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).
 
-2.  
+2. Import the required Powershell Module
+
+```powershell
+Import-Module AppVPkgConverter
+```
+
+3.  
 
     The following cmdlets are available:
 

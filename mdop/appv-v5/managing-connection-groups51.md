@@ -1,8 +1,11 @@
 ---
 title: Managing Connection Groups
 description: Managing Connection Groups
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 22c9d3cb-7246-4173-9742-4ba1c24b0a6a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -58,10 +61,10 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Other resources for App-V 5.1 connection groups
 

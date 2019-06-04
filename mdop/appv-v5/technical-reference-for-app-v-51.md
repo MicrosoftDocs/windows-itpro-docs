@@ -1,8 +1,11 @@
 ---
 title: Technical Reference for App-V 5.1
 description: Technical Reference for App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 2b9e8b2b-4cd1-46f3-ba08-e3bc8d5c6127
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,10 +30,10 @@ This section provides reference information related to managing App-V 5.1.
 
     Describes how the following App-V client operations affect the local operating system: App-V files and data storage locations, package registry, package store behavior, roaming registry and data, client application lifecycle management, integration of App-V packages, dynamic configuration, side-by-side assemblies, and client logging.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -8,16 +8,22 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 4/26/2018
+ms.date: 3/2/2019
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
 # Change history for Microsoft Store for Business and Microsoft Store for Education  
 
-**Applies to**
-
--   Windows 10
--   Windows 10 Mobile
+## March 2019
+| New or changed topic | Description |
+| --- | --- |
+| [Understand your Microsoft Customer Agreement invoice](billing-understand-your-invoice-msfb.md) | New topic |
+| [Understand billing profiles](billing-profile.md) | New topic |
+| [Payment methods](payment-methods.md) | New topic |
+| [Update Microsoft Store for Business and Microsoft Store for Education account settings](update-microsoft-store-for-business-account-settings.md) | Update with information on billing accounts. |
+| [Roles and permissions in Microsoft Store for Business and Education](roles-and-permissions-microsoft-store-for-business.md) | Add info for purchasing roles and permissions. |
 
 ## April 2018
 | New or changed topic | Description |

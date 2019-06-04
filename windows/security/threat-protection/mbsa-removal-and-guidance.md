@@ -5,9 +5,11 @@ keywords: MBSA, security, removal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: astoica
-author: andreiztm
+ms.author: dolmont
+author: dulcemontemayor
 ms.date: 10/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
  
 # What is Microsoft Baseline Security Analyzer and its uses?
@@ -19,12 +21,12 @@ MBSA was largely used in situations where neither Microsoft Update nor a local W
 ## The Solution 
 A script can help you with an alternative to MBSA’s patch-compliance checking:
  
-- [Using WUA to Scan for Updates Offline](https://docs.microsoft.com/previous-versions/windows/desktop/aa387290(v=vs.85)), which includes a sample .vbs script. 
+- [Using WUA to Scan for Updates Offline](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
 For a PowerShell alternative, see [Using WUA to Scan for Updates Offline with PowerShell](https://gallery.technet.microsoft.com/Using-WUA-to-Scan-for-f7e5e0be).
  
 For example:
  
-[![VBS script](images/vbs-example.png)](https://docs.microsoft.com/previous-versions/windows/desktop/aa387290(v=vs.85)) 
+[![VBS script](images/vbs-example.png)](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
 [![PowerShell script](images/powershell-example.png)](https://gallery.technet.microsoft.com/Using-WUA-to-Scan-for-f7e5e0be) 
   
 The preceding scripts leverage the [WSUS offline scan file](https://support.microsoft.com/help/927745/detailed-information-for-developers-who-use-the-windows-update-offline) (wsusscn2.cab) to perform a scan and get the same information on missing updates as MBSA supplied. MBSA also relied on the wsusscn2.cab to determine which updates were missing from a given system without connecting to any online service or server. The wsusscn2.cab file is still available and there are currently no plans to remove or replace it.

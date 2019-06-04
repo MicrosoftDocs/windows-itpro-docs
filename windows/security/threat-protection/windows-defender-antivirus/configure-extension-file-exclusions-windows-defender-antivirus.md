@@ -9,20 +9,28 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate exclusions based on file extension and folder location
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+> [!IMPORTANT]
+> [Windows Defender Advanced Threat Protection ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to Windows Defender Antivirus exclusion settings. This means that any Windows Defender exclusions, no matter how you created them, are not applied by Windows Defender ATP.
 
 You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
 Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+
+> [!NOTE]
+> Automatic exclusions apply only to Windows Server 2016 and above. 
 
 >[!TIP]
 >The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.

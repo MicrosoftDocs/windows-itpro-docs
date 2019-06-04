@@ -2,12 +2,18 @@
 title: Enable Predefined Inbound Rules (Windows 10)
 description: Enable Predefined Inbound Rules
 ms.assetid: a4fff086-ae81-4c09-b828-18c6c9a937a7
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

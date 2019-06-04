@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.1
 description: What's New in UE-V 2.1
-author: jamiejdt
+author: levinec
 ms.assetid: 7f385183-7d97-4602-b19a-baa710334ade
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -87,10 +90,10 @@ You can restore additional settings when a user adopts a new device by putting a
 
 UE-V now synchronizes touch keyboard personalization, the spelling dictionary, and enables the App Switching for recent apps and screen edge settings to synchronize between Windows 8 and Windows 8.1 devices.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

@@ -2,11 +2,15 @@
 title: User State Migration Tool (USMT) Overview Topics (Windows 10)
 description: User State Migration Tool (USMT) Overview Topics
 ms.assetid: 23170271-130b-416f-a7a7-c2f6adc32eee
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # User State Migration Tool (USMT) Overview Topics

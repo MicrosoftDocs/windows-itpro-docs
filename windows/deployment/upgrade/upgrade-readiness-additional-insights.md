@@ -1,16 +1,20 @@
 ---
 title: Upgrade Readiness - Additional insights
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-author: jaimeo
-ms.date: 07/02/2018
+author: lomayor
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Additional insights
 
 This topic provides information on additional features that are available in Upgrade Readiness to provide insights into your environment. These include:
 
-- [Spectre and Meltdown protections](#spectre-meltdown-protection-status): Status of devices with respect to their anti-virus, security update, and firmware updates related to protection from the "Spectre" and "Meltdown" vulnerabilities.
+- [Spectre and Meltdown protections](#spectre-and-meltdown-protection-status): Status of devices with respect to their anti-virus, security update, and firmware updates related to protection from the "Spectre" and "Meltdown" vulnerabilities.
 - [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7, Windows 8.1, or Windows 10 using Internet Explorer.
 - [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
 

@@ -1,8 +1,11 @@
 ---
 title: About the Connection Group File
 description: About the Connection Group File
-author: jamiejdt
+author: v-madhi
 ms.assetid: 1f4df515-f5f6-4b58-91a8-c71598cb3ea4
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -273,10 +276,10 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

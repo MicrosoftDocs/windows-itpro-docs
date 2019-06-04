@@ -2,11 +2,15 @@
 title: Migrate User Accounts (Windows 10)
 description: Migrate User Accounts
 ms.assetid: a3668361-43c8-4fd2-b26e-9a2deaeaeb09
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Migrate User Accounts
@@ -24,7 +28,7 @@ By default, all users are migrated. The only way to specify which users to inclu
 -   [To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain](#bkmk-migratemoveuserone)
 
 ## <a href="" id="bkmk-migrateall"></a>To migrate all user accounts and user settings
-
+Links to detailed explanations of commands are available in the Related Topics section.
 
 1.  Log on to the source computer as an administrator, and specify the following in a **Command-Prompt** window:
 
@@ -48,7 +52,7 @@ By default, all users are migrated. The only way to specify which users to inclu
          
 
 ## <a href="" id="bkmk-migratetwo"></a>To migrate two domain accounts (User1 and User2)
-
+Links to detailed explanations of commands are available in the Related Topics section.
 
 1.  Log on to the source computer as an administrator, and specify:
 
@@ -61,7 +65,7 @@ By default, all users are migrated. The only way to specify which users to inclu
     `loadstate \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml`
 
 ## <a href="" id="bkmk-migratemoveuserone"></a>To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
-
+Links to detailed explanations of commands are available in the Related Topics section.
 
 1.  Log on to the source computer as an administrator, and type the following at the command-line prompt:
 

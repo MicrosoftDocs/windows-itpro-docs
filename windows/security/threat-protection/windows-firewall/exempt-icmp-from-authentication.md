@@ -2,12 +2,18 @@
 title: Exempt ICMP from Authentication (Windows 10)
 description: Exempt ICMP from Authentication
 ms.assetid: c086c715-8d0c-4eb5-9ea7-2f7635a55548
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

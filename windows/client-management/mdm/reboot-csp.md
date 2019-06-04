@@ -2,11 +2,13 @@
 title: Reboot CSP
 description: Reboot CSP
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 
@@ -30,7 +32,7 @@ The following diagram shows the Reboot configuration service provider management
 > [!Note]  
 > If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
-<p style="margin-left: 20px">The supported operations are Execute and Get.
+<p style="margin-left: 20px">The supported operations are Execute and Get.</p>
 
 <a href="" id="schedule"></a>**Schedule**  
 <p style="margin-left: 20px">The supported operation is Get.</p>

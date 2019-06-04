@@ -2,12 +2,18 @@
 title: Account Policies (Windows 10)
 description: An overview of account policies in Windows and provides links to policy descriptions.
 ms.assetid: 711b3797-b87a-4cd9-a2e3-1f8ef18688fb
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

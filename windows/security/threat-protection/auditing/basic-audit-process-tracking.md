@@ -2,12 +2,18 @@
 title: Audit process tracking (Windows 10)
 description: Determines whether to audit detailed tracking information for events such as program activation, process exit, handle duplication, and indirect object access.
 ms.assetid: 91AC5C1E-F4DA-4B16-BEE2-C92D66E4CEEA
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: brianlic-msft
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

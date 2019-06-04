@@ -1,8 +1,11 @@
 ---
 title: App-V 5.0 Security Considerations
 description: App-V 5.0 Security Considerations
-author: jamiejdt
+author: v-madhi
 ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -145,10 +148,10 @@ During App-V 5.0 Setup, setup log files are created in the **%temp%** folder of 
 
 []()  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

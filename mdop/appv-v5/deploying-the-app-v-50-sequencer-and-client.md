@@ -1,8 +1,11 @@
 ---
 title: Deploying the App-V 5.0 Sequencer and Client
 description: Deploying the App-V 5.0 Sequencer and Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 84cc84bd-5bc0-41aa-9519-0ded2932c078
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -107,10 +110,10 @@ In App-V 5.0 SP3, some logs have been consolidated. See [About App-V 5.0 SP3](ab
 
 [Planning for App-V 5.0](planning-for-app-v-50-rc.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

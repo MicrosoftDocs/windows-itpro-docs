@@ -2,11 +2,13 @@
 title: Create a device account using UI (Surface Hub)
 description: If you prefer to use a graphical user interface, you can create a device account for your Microsoft Surface Hub with either the Office 365 UI or the Exchange Admin Center.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
+ms.reviewer: 
+manager: dansimp
 keywords: create device account, Office 365 UI, Exchange Admin center, Office 365 admin center, Skype for Business, mobile device mailbox policy
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
@@ -190,15 +192,15 @@ Enable the device account with Skype for Business.
 
 In order to enable Skype for Business, your environment will need to meet the following prerequisites:
 
--   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
--   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
+-   You'll need to have Skype for Business Online Standalone Plan 2 or higher in your O365 plan. The plan needs to support conferencing capability.
+-   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Skype for Business Online Standalone Plan 3.
 -   Your tenant users must have Exchange mailboxes.
--   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+-   Your Surface Hub account does require a Skype for Business Online Standalone Plan 2 or Skype for Business Online Standalone Plan 3 license, but it does not require an Exchange Online license.
 
 1.  Start by creating a remote PowerShell session from a PC.
 
     ```PowerShell
-    Import-Module LyncOnlineConnector
+    Import-Module SkypeOnlineConnector
     $cssess=New-CsOnlineSession -Credential $cred
     Import-PSSession $cssess -AllowClobber
     ```
@@ -217,6 +219,8 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 ## <a href="" id="create-device-acct-eac"></a>Create a device account using the Exchange Admin Center
 
+>[!NOTE]
+>This method will only work if you are syncing from an on-premises Active Directory.
 
 You can use the Exchange Admin Center to create a device account:
 
@@ -348,15 +352,15 @@ Enable the device account with Skype for Business.
 
 In order to enable Skype for Business, your environment will need to meet the following prerequisites:
 
--   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
--   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
+-   You'll need to have Skype for Business Online Standalone Plan 2 or higher in your O365 plan. The plan needs to support conferencing capability.
+-   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Skype for Business Online Standalone Plan 3.
 -   Your tenant users must have Exchange mailboxes.
--   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+-   Your Surface Hub account does require a Skype for Business Online Standalone Plan 2 or Skype for Business Online Standalone Plan 3 license, but it does not require an Exchange Online license.
 
 1.  Start by creating a remote PowerShell session from a PC.
 
     ```PowerShell
-    Import-Module LyncOnlineConnector
+    Import-Module SkypeOnlineConnector
     $cssess=New-CsOnlineSession -Credential $cred
     Import-PSSession $cssess -AllowClobber
     ```
@@ -372,8 +376,7 @@ If you aren't sure what value to use for the `RegistrarPool` parameter in your e
 3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool
-    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
     

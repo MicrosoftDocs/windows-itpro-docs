@@ -6,8 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Windows Defender Firewall with Advanced Security Administration with Windows PowerShell

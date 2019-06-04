@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: levinec
 searchScope:
   - Store
-ms.author: trudyha
-ms.date: 01/05/2018
+ms.author: ellevin
+ms.date: 01/30/2019
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 
@@ -24,6 +26,19 @@ When you sign up for a [Minecraft: Education Edition](https://education.minecraf
 
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
+
+## Settings for Office 365 A3 or Office 365 A5 customers
+
+Schools that purchased these products have an extra option for making Minecraft: Education Edition available to their students:
+- Office 365 A3 or Office 365 A5
+- Enterprise Mobility + Security E3 or Enterprise Mobility + Security E5
+- Minecraft: Education Edition
+
+If your school has these products in your tenant, admins can choose to enable Minecraft: Education Edition for students using Office 365 A3 or Office 365 A5. On your Office 365 A3 or Office 365 A5 details page in **Microsoft Store for Education**, under **Settings & actions**, you can select **Allow access to Minecraft: Education Edition for users of Office 365 A3 or Office 365 A5**. 
+
+When this setting is selected, students in your tenant can use Minecraft: Education Edition even if they do not have a trial or a direct license assigned to them. 
+
+If you turn off this setting after students have been using Minecraft: Education Edition, they will have 25 more days to use Minecraft: Education Edition before they do not have access. 
 
 ## Add Minecraft to your Microsoft Store for Education 
 

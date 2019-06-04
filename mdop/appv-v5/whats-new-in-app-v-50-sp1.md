@@ -1,8 +1,11 @@
 ---
 title: What's new in App-V 5.0 SP1
 description: What's new in App-V 5.0 SP1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: e97c2dbb-7b40-46a0-8137-9ee4fc2bd071
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -40,10 +43,10 @@ The following list contains more information about the new Language Packs:
 
 **Microsoft Office 2010 Sequencing Kit for Application Virtualization 5.0** – helps provide users with a consistent experience using a virtualized version of Microsoft Office 2010. The **Microsoft Office 2010 Sequencing Kit for Application Virtualization 5.0** is used in conjunction with the **Microsoft Office 2010 Deployment Kit for App-V** and also provides the required Microsoft Office 2010 licensing service.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

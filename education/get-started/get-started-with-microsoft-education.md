@@ -8,9 +8,11 @@ ms.sitesec: library
 ms.topic: hero-article
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 10/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education
@@ -32,7 +34,7 @@ Hello, IT administrators! In this walkthrough, we'll show you how you can quickl
 - **Microsoft Teams** to bring conversations, content, and apps together in one place and create collaborate classrooms, connect in professional learning communities, and communicate with school staff 
 - **Learning Tools** are moving beyond the OneNote desktop app and is now available in Office Lens, OneNote Online, Word Online, and Word desktop
 - **Whiteboard** to create interactive lessons on the big screen, share and collaborate real-time by connecting to Class Notebook and Classroom
-- **Windows 10, version 1703 (Creators Update)** which brings 3D for everyone and other new and updated Windows features
+- **Windows 10, version 1703 or later** which brings 3D for everyone and other new and updated Windows features
 - **Minecraft: Education Edition** which provides an open and immersive environment to promote creativity, collaboration, and problem-solving 
 
 With Microsoft Education, schools can:
@@ -60,11 +62,11 @@ Click the link to watch the video or follow the step-by-step guidance for each.
 
 ## Prerequisites
 Complete these tasks before you start the walkthrough:
-- Make sure all the devices that you want to configure, such as student PCs, have the latest Windows 10, version 1703 image installed.
+- Make sure all the devices that you want to configure, such as student PCs, have Windows 10 (version 1703 or later) image installed.
 
-  We recommend Windows 10, version 1703 to take advantage of all the new features and functionality that Windows supports. This version of Windows is also compatible with the latest version of the Set up School PCs app and the versions must match in order for Set up School PCs to provision the devices. 
+  We recommend Windows 10, version 1703 or later, to take advantage of all the new features and functionality that Windows supports. This version of Windows is also compatible with the latest version of the Set up School PCs app and the versions must match in order for Set up School PCs to provision the devices. 
 
-  If you don't have Windows 10, version 1703 installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough. 
+  If you don't have Windows 10, version 1703 or later, installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough. 
 
 - Have an education-verified tenant to qualify for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync and Intune for Education.
 

@@ -3,11 +3,14 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to create a change request within the Enterprise Mode Site List Portal.
-author: eross-msft
+author: eavena
 ms.prod: ie11
 title: Create a change request using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ---
 
 # Create a change request using the Enterprise Mode Site List Portal

@@ -1,12 +1,16 @@
 ---
 title: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell (Windows 10)
 description: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/24/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to manage App-V packages running on a stand-alone computer by using Windows PowerShell
 
@@ -161,9 +165,9 @@ The pending task will run later, according to the following rules:
 
 For more information about pending tasks, see [Upgrading an in-use App-V package](appv-application-publishing-and-client-interaction.md#upgrading-an-in-use-app-v-package).
 
-## Have a suggestion for App-V? 
+ 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
 
 ## Related topics
 

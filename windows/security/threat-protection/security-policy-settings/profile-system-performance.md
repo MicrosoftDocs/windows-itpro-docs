@@ -2,12 +2,18 @@
 title: Profile system performance (Windows 10)
 description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management, and security considerations for the Profile system performance security policy setting.
 ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -40,7 +46,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 ### Default values
 
-By default this setting is Administrators on domain controllers and on stand-alone servers.
+By default, this setting is Administrators and NT SERVICE\WdiServiceHost on domain controllers and on stand-alone servers.
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 

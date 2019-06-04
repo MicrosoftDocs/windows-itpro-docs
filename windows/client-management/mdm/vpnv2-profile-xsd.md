@@ -2,11 +2,13 @@
 title: ProfileXML XSD
 description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
 ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 02/05/2018
 ---
 
@@ -132,7 +134,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="NativeProtocolType" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="L2tpPsk" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="DisableClassBasedDefaultRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
-              <xs:element maxOccurs="unbounded" name="CryptographySuite"minOccurs="0" maxOccurs="1">
+              <xs:element name="CryptographySuite" minOccurs="0" maxOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="AuthenticationTransformConstants" type="xs:string" minOccurs="0" maxOccurs="1"/>

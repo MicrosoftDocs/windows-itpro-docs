@@ -7,9 +7,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: danihalfin
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 05/11/2018
+ms.reviewer: 
 ---
 # Windows and the GDPR: Information for IT Administrators and Decision Makers
 

@@ -7,9 +7,13 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greg-lindsay
+author: dulcemontemayor
+ms.author: dolmont
 ms.date: 11/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Windows Autopilot for existing devices
@@ -18,7 +22,7 @@ ms.date: 11/05/2018
 
 Modern desktop management with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices. The apps you need for work can be automatically installed. Your work profile is synchronized, so you can resume working right away.
 
-This topic describes how to convert Windows 7 domain-joined computers to Azure Active Directory-joined computers running Windows 10 by using Windows Autopilot.
+This topic describes how to convert Windows 7 or Windows 8.1 domain-joined computers to Azure Active Directory-joined computers running Windows 10 by using Windows Autopilot.
 
 ## Prerequisites
 
@@ -276,7 +280,7 @@ Next, ensure that all content required for the task sequence is deployed to dist
 
 ### Complete the client installation process
 
-1. Open the Software Center on the target Windows 7 client computer. You can do this by clicking Start and then typing **software** in the search box, or by typing the following at a Windows PowerShell or command prompt:
+1. Open the Software Center on the target Windows 7 or Windows 8.1 client computer. You can do this by clicking Start and then typing **software** in the search box, or by typing the following at a Windows PowerShell or command prompt:
 
     ```
     C:\Windows\CCM\SCClient.exe

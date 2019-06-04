@@ -1,8 +1,11 @@
 ---
 title: Getting Started with App-V 5.0
 description: Getting Started with App-V 5.0
-author: jamiejdt
+author: dansimp
 ms.assetid: 3e16eafb-ce95-4d06-b214-fe0f4b1b495f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -132,10 +135,10 @@ This section of the App-V 5.0 Administrator’s Guide includes high-level inform
 
 -   [Troubleshooting App-V 5.0](troubleshooting-app-v-50.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

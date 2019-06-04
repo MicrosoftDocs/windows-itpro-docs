@@ -2,11 +2,13 @@
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
 ms.assetid: 049ECA6E-1AF5-4CB2-8F1C-A5F22D722DAA
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 07/28/2017
 ---
 
@@ -553,7 +555,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
    <characteristic type="CertificateStore">
       <characteristic type="Root">
          <characteristic type="System">
-            <characteristic type="031336C933CC7E228B88880D78824FB2909A0A2F">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64 encoded cert insert here" />
             </characteristic>
          </characteristic>
@@ -562,7 +564,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
    <characteristic type="CertificateStore">
       <characteristic type="My" >      
          <characteristic type="User">
-            <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
             <characteristic type="PrivateKeyContainer"/> 

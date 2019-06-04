@@ -1,12 +1,14 @@
 ---
 title: Accounts CSP
 description: The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and joint it to a local user group.
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 04/17/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Accounts CSP 
@@ -26,9 +28,13 @@ Root node.
 Interior node for the account domain information.
 
 <a href="" id="domain-computername"></a>**Domain/ComputerName**  
-This node specifies the name for a device.  This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution:  %RAND:<# of digits>% and %SERIAL%.  
+This node specifies the DNS hostname for a device. This setting can be managed remotely, but note that this not supported for devices hybrid joined to Azure Active Directory and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
 
-Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. The server must explicitly reboot the device for this value to take effect.
+Available naming macros:
+|Macro|Description|Example|Generated Name|
+|:---|:---|:---|:---|
+|%RAND:<# of digits>|Generates the specified number of random digits.|Test%RAND:6%|Test123456|
+|%SERIAL%|Generates the serial number derived from the device. If the serial number causes the new name to exceed the 15 character limit, the serial number will be truncated from the beginning of the sequence.|Test-Device-%SERIAL%|Test-Device-456|
 
 Supported operation is Add.
 

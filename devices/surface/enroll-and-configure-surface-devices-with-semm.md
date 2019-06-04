@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: jobotto
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enroll and configure Surface devices with SEMM
@@ -35,13 +37,13 @@ To create a Surface UEFI configuration package, follow these steps:
 2. Click **Start**.
 3. Click **Configuration Package**, as shown in Figure 1.
 
-   ![Create a package for SEMM enrollment](images\surface-semm-enroll-fig1.png "Create a package for SEMM enrollment")
+   ![Create a package for SEMM enrollment](images\surface-ent-mgmt-fig1-uefi-configurator.png "Create a package for SEMM enrollment")
 
    *Figure 1. Select Configuration Package to create a package for SEMM enrollment and configuration*
 
 4. Click **Certificate Protection** to add your exported certificate file with private key (.pfx), as shown in Figure 2. Browse to the location of your certificate file, select the file, and then click **OK**.
 
-   ![Add the SEM certificate and Surface UEFI password to configuration package](images\surface-semm-enrollment-fig2.png "Add the SEM certificate and Surface UEFI password to configuration package")
+   ![Add the SEM certificate and Surface UEFI password to configuration package](images\surface-ent-mgmt-fig2-securepackage.png "Add the SEM certificate and Surface UEFI password to configuration package")
 
    *Figure 2. Add the SEMM certificate and Surface UEFI password to a Surface UEFI configuration package*
 
@@ -57,14 +59,14 @@ To create a Surface UEFI configuration package, follow these steps:
 9. Click **Next**.
 10. If you want to deactivate a component on managed Surface devices, on the **Choose which components you want to activate or deactivate** page, click the slider next to any device or group of devices you want to deactivate so that the slider is in the **Off** position. (Shown in Figure 4.) The default configuration for each device is **On**. Click the **Reset** button if you want to return all sliders to the default position.
 
-   ![Disable or enable Surface components](images\surface-semm-enroll-fig4.png "Disable or enable Surface components")
+   ![Disable or enable Surface components](images\surface-ent-mgmt-fig3-enabledisable.png "Disable or enable Surface components")
 
    *Figure 4. Disable or enable individual Surface components*
 
 11.	Click **Next**.
 12.	To enable or disable advanced options in Surface UEFI or the display of Surface UEFI pages, on the **Choose the advanced settings for your devices** page, click the slider beside the desired setting to configure that option to **On** or **Off** (shown in Figure 5). In the **UEFI Front Page** section, you can use the sliders for **Security**, **Devices**, and **Boot** to control what pages are available to users who boot into Surface UEFI. (For more information about Surface UEFI settings, see [Manage Surface UEFI settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).) Click **Build** when you have finished selecting options to generate and save the package.
 
-   ![Control advanced Surface UEFI settings and Surface UEFI pages](images\surface-semm-enroll-fig5.png "Control advanced Surface UEFI settings and Surface UEFI pages")
+   ![Control advanced Surface UEFI settings and Surface UEFI pages](images\surface-ent-mgmt-fig4-advancedsettings.png "Control advanced Surface UEFI settings and Surface UEFI pages")
 
    *Figure 5. Control advanced Surface UEFI settings and Surface UEFI pages with SEMM*
 
@@ -74,7 +76,7 @@ To create a Surface UEFI configuration package, follow these steps:
 >[!NOTE]
 >Record the certificate thumbprint characters that are displayed on this page, as shown in Figure 6. You will need these characters to confirm enrollment of new Surface devices in SEMM. Click **End** to complete package creation and close Microsoft Surface UEFI Configurator.
 
-![Display of certificate thumbprint characters](images\surface-semm-enroll-fig6.png "Display of certificate thumbprint characters")
+![Display of certificate thumbprint characters](images\surface-ent-mgmt-fig5-success.png "Display of certificate thumbprint characters")
 
 *Figure 6. The last two characters of the certificate thumbprint are displayed on the Successful page*
 

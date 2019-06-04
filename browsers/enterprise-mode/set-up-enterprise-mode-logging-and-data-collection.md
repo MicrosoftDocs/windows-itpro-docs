@@ -3,9 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Set up and turn on Enterprise Mode logging and data collection in your organization.
-author: eross-msft
+author: eavena
 ms.prod: ie11
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

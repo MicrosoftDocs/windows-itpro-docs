@@ -8,7 +8,11 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
-author: jaimeo
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
+ms.topic: article
 ---
 
 # Windows 10 in S mode - What is it?
@@ -38,7 +42,7 @@ Windows 10 in S mode is built for [modern management](https://docs.microsoft.com
 
 ## Keep line of business apps functioning with Desktop Bridge
 
-Worried about your line of business apps not working in S mode? [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) enables you to convert your line of buisness apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Microsoft Store, making it ideal for Windows 10 in S mode. 
+Worried about your line of business apps not working in S mode? [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) enables you to convert your line of business apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Microsoft Store, making it ideal for Windows 10 in S mode. 
 
 ## Repackage Win32 apps into the MSIX format
 

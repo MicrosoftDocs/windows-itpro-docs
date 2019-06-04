@@ -2,11 +2,15 @@
 title: Include Files and Settings (Windows 10)
 description: Include Files and Settings
 ms.assetid: 9009c6a5-0612-4478-8742-abe5eb6cbac8
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Include Files and Settings

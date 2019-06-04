@@ -2,14 +2,16 @@
 title: Microsoft Surface Data Eraser (Surface)
 description: Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 keywords: tool, USB, data, erase
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: brecords
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 05/15/2018
 ---
@@ -56,6 +58,9 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
 >[!NOTE]
 >Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
+
+>[!NOTE]
+>Surface Data Eraser on Surface Studio and Surface Studio 2 can take up to 6 minutes to boot into WinPE before disk erasure can occur.
 
 
 ## How to create a Microsoft Surface Data Eraser USB stick

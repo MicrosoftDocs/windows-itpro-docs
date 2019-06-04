@@ -1,14 +1,17 @@
 ---
 title: Log files - Windows IT Pro
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.date: 03/30/2018
+author: lomayor
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Log files
@@ -54,7 +57,7 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 
 ## Log entry structure
 
-A setupact.log or setuperr.log entry includes the following elements:
+A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
 <ol>
 <LI><B>The date and time</B> - 2016-09-08 09:20:05.

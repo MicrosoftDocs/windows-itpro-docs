@@ -1,27 +1,31 @@
 ---
-title: Set up and use Whiteboard to Whiteboard collaboration 
+title: Set up and use Microsoft Whiteboard  
 description: Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
-ms.date: 07/12/2018
+ms.date: 03/18/2019
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
-# Set up and use Whiteboard to Whiteboard collaboration (Surface Hub)
+# Set up and use Microsoft Whiteboard 
 
-The Microsoft Whiteboard app includes the capability for two Surface Hubs to collaborate in real time on the same board. 
+
 
 >[!IMPORTANT]
->A new Microsoft Whiteboard app was released on July 12, 2018. The existing Whiteboard app that comes installed on Surface Hub and is pinned to the Welcome screen cannot collaborate with the new version that can be installed on the PC. If people in your organization install the new Whiteboard on their PCs, you must install the new Whiteboard on Surface Hub to enable collaboration. To learn more about installing the new Whiteboard on your Surface Hub, see [Whiteboard on Surface Hub opt-in](https://go.microsoft.com/fwlink/p/?LinkId=2004277).
+>A new Microsoft Whiteboard app was released on July 12, 2018. The existing Whiteboard app that comes installed on Surface Hub and is pinned to the Welcome screen has been renamed **Microsoft Whiteboard 2016**. Microsoft Whiteboard 2016 will be automatically upgraded by May 21, 2019, and the collaboration service for the legacy app will stop functioning after June 7, 2019. For more details, see [Enable Microsoft Whiteboard on Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627?ui=en-US&rs=en-US&ad=US).
+
+The Microsoft Whiteboard app includes the capability for two Surface Hubs to collaborate in real time on the same board. 
 
 By ensuring that your organization meets the prerequisites, users can then ink, collaborate, and ideate together. 
 
 ![example of a whiteboard with collaborative inking](images/wb-collab-example.png)
 
-## Prerequisites for Whiteboard to Whiteboard collaboration
+## Prerequisites for Whiteboard to Whiteboard collaboration (Microsoft Whiteboard 2016)
 
 To get Whiteboard to Whiteboard collaboration up and running, you’ll need to make sure your organization meets the following requirements:
 
@@ -36,7 +40,7 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 >[!NOTE]
 >Collaborative sessions can only take place between users within the same tenant, so users outside of your organization won’t be able to join even if they have a Surface Hub.
 
-## Using Whiteboard to Whiteboard collaboration
+## Using Whiteboard to Whiteboard collaboration (Microsoft Whiteboard 2016)
 
 To start a collaboration session:
 

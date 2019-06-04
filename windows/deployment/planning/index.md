@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: TrudyHa
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Plan for Windows 10 deployment

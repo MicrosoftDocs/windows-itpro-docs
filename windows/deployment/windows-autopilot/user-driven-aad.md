@@ -1,5 +1,7 @@
 ---
 title: User-driven mode for AAD
+ms.reviewer: 
+manager: dansimp
 description: Listing of Autopilot scenarios
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -7,10 +9,12 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 11/07/2018
+author: dulcemontemayor
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot user-driven mode for Azure Active Directory join
 
@@ -32,4 +36,4 @@ For each device that will be deployed using user-driven deployment, these additi
     -   If using Intune and Azure Active Directory static device groups, manually add the device to the device group.
     -   If using other methods (e.g. Microsoft Store for Business or Partner Center), manually assign an Autopilot profile to the device.
 
-Also see the **Validation** section in the [Windows Autopilot user-driven mode](user-driven.md) topic. 
+Also see the **Validation** section in the [Windows Autopilot user-driven mode](user-driven.md) topic.

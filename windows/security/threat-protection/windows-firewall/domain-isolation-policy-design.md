@@ -2,12 +2,18 @@
 title: Domain Isolation Policy Design (Windows 10)
 description: Domain Isolation Policy Design
 ms.assetid: 7475084e-f231-473a-9357-5e1d39861d66
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

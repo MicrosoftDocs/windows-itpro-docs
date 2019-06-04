@@ -8,14 +8,19 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
-author: greg-lindsay
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Windows 10 Enterprise E3 in CSP
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
 
--   Windows 10 Pro, version 1607 (also known as Windows 10 Anniversary Update) or later installed on the devices to be upgraded
+-   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later, installed and activated, on the devices to be upgraded
 -   Azure Active Directory (Azure AD) available for identity management
 
 Starting with Windows 10, version 1607 (Windows 10 Anniversary Update), you can move from Windows 10 Pro to Windows 10 Enterprise more easily than ever before—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise and all the appropriate Windows 10 Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly steps back down to Windows 10 Pro.
@@ -247,7 +252,7 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 ## Related topics
 
-[Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
+[Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md)
 <BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
-<BR>[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
-<BR>[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)
+<BR>[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)
+<BR>[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)

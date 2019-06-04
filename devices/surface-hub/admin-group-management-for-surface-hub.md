@@ -2,11 +2,13 @@
 title: Admin group management (Surface Hub)
 description: Every Microsoft Surface Hub can be configured individually by opening the Settings app on the device.
 ms.assetid: FA67209E-B355-4333-B903-482C4A3BDCCE
+ms.reviewer: 
+manager: dansimp
 keywords: admin group management, Settings app, configure Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
@@ -64,8 +66,11 @@ Surface Hubs use Azure AD join to:
 - Grant admin rights to the appropriate users in your Azure AD tenant.
 - Backup the device's BitLocker recovery key by storing it under the account that was used to Azure AD join the device. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
 
-> [!IMPORTANT]
-> Surface Hub does not currently support automatic enrollment to Microsoft Intune through Azure AD join. If your organization automatically enrolls Azure AD joined devices into Intune, you must disable this policy for Surface Hub before joining the device to Azure AD.
+### Automatic enrollment via Azure Active Directory join
+
+Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
+
+For more information, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
 
 ### Which should I choose?
 

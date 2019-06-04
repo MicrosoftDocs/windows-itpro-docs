@@ -1,12 +1,14 @@
 ---
 title: Personalization CSP
 description: Personalization CSP
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Personalization CSP
@@ -64,7 +66,7 @@ The following diagram shows the Personalization configuration service provider i
 <p style="margin-left: 20px">Supporter operation is Get.</p>
 
 > [!Note]
-> This setting is only used to query status. To set the image, use the LockScreenImageStatus setting.
+> This setting is only used to query status. To set the image, use the LockScreenImageUrl setting.
 
 
 ## Example SyncML

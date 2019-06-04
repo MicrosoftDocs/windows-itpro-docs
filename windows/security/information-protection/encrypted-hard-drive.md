@@ -2,32 +2,36 @@
 title: Encrypted Hard Drive (Windows 10)
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+author: dulcemontemayor
+ms.date: 04/02/2019
 ---
 
 # Encrypted Hard Drive
 
 **Applies to**
 - Windows 10
+- Windows Server 2019
 - Windows Server 2016
 
 Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 
 By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand BitLocker deployment with minimal impact on productivity.
 
-Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. In Windows 8, Windows Server 2012, and later you can install to these devices without additional modification.
+Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. You can install Windows to Encrypted Hard Drives without additional modification beginning with Windows 8 and Windows Server 2012.
 
-Some of the benefits of Encrypted Hard Drives include:
+Encrypted Hard Drives provide:
 
 -   **Better performance**: Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
 -   **Strong security based in hardware**: Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system
--   **Ease of use**: Encryption is transparent to the user because it is on by default. There is no user interaction needed to enable encryption. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
--   **Lower cost of ownership**: There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your Active Directory Domain Services infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
+-   **Ease of use**: Encryption is transparent to the user, and the user doesn't need to enable it. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
+-   **Lower cost of ownership**: There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
 
 Encrypted Hard Drives are supported natively in the operating system through the following mechanisms:
 
@@ -37,20 +41,21 @@ Encrypted Hard Drives are supported natively in the operating system through the
 -   **API**: API support for applications to manage Encrypted Hard Drives independently of BitLocker Drive Encryption (BDE)
 -   **BitLocker support**: Integration with the BitLocker Control Panel provides a seamless BitLocker end user experience.
 
->**Warning:**  Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
+>[!WARNING]  
+>Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
  
 If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](https://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
 
 ## System Requirements
 
-To use Encrypted Hard Drive, the following system requirements apply:
+To use Encrypted Hard Drives, the following system requirements apply:
 
-For Encrypted Hard Drives used as **data drives**:
+For an Encrypted Hard Drive used as a **data drive**:
 
 -   The drive must be in an uninitialized state.
 -   The drive must be in a security inactive state.
 
-For Encrypted Hard Drives used as **startup drives**:
+For an Encrypted Hard Drive used as a **startup drive**:
 
 -   The drive must be in an uninitialized state.
 -   The drive must be in a security inactive state.
@@ -58,11 +63,12 @@ For Encrypted Hard Drives used as **startup drives**:
 -   The computer must have the Compatibility Support Module (CSM) disabled in UEFI.
 -   The computer must always boot natively from UEFI.
 
->**Warning:**  All Encrypted Hard Drives must be attached to non-RAID controllers to function properly.
+>[!WARNING]  
+>All Encrypted Hard Drives must be attached to non-RAID controllers to function properly.
  
 ## Technical overview
 
-Rapid encryption in BitLocker directly addresses the security needs of enterprises while offering significantly improved performance. In versions of Windows earlier than Windows Server 2012, BitLocker required a two-step process to complete read/write requests. In Windows Server 2012, Windows 8, or later, Encrypted Hard Drives offload the cryptographic operations to the drive controller for much greater efficiency. When the operating system an Encrypted Hard Drive, it activates the security mode. This activation lets the drive controller generate a media key for every volume that the host computer creates. This media key, which is never exposed outside the disk, is used to rapidly encrypt or decrypt every byte of data that is sent or received from the disk.
+Rapid encryption in BitLocker directly addresses the security needs of enterprises while offering significantly improved performance. In versions of Windows earlier than Windows Server 2012, BitLocker required a two-step process to complete read/write requests. In Windows Server 2012, Windows 8, or later, Encrypted Hard Drives offload the cryptographic operations to the drive controller for much greater efficiency. When the operating system identifies an Encrypted Hard Drive, it activates the security mode. This activation lets the drive controller generate a media key for every volume that the host computer creates. This media key, which is never exposed outside the disk, is used to rapidly encrypt or decrypt every byte of data that is sent or received from the disk.
 
 ## Configuring Encrypted Hard Drives as Startup drives
 
@@ -73,7 +79,15 @@ Configuration of Encrypted Hard Drives as startup drives is done using the same 
 -   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](https://msdn.microsoft.com/library/windows/hardware/dn923247.aspx) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
 -   **Disk Duplication**: This deployment method involves use of a previously configured device and disk duplication tools to apply a Windows image to an Encrypted Hard Drive. Disks must be partitioned using at least Windows 8 or Windows Server 2012 for this configuration to work. Images made using disk duplicators will not work.
 
-### Encrypted Hard Drive Architecture
+## Configuring hardware-based encryption with Group Policy
+
+There are three related Group Policy settings that help you manage how BitLocker uses hardware-based envryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
+
+- [Configure use of hardware-based encryption for fixed data drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hdefxdaconfigure-use-of-hardware-based-encryption-for-fixed-data-drives)  
+- [Configure use of hardware-based encryption for removable data drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hderddaconfigure-use-of-hardware-based-encryption-for-removable-data-drives)
+- [Configure use of hardware-based encryption for operating system drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hdeosdaconfigure-use-of-hardware-based-encryption-for-operating-system-drives)
+
+## Encrypted Hard Drive Architecture
 
 Encrypted Hard Drives utilize two encryption keys on the device to control the locking and unlocking of data on the drive. These are the Data Encryption Key (DEK) and the Authentication Key (AK).
 

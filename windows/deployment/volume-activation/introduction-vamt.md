@@ -2,12 +2,16 @@
 title: Introduction to VAMT (Windows 10)
 description: Introduction to VAMT
 ms.assetid: 0439685e-0bae-4967-b0d4-dd84ca6d7fa7
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Introduction to VAMT

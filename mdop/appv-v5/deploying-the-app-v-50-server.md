@@ -1,8 +1,11 @@
 ---
 title: Deploying the App-V 5.0 Server
 description: Deploying the App-V 5.0 Server
-author: jamiejdt
+author: dansimp
 ms.assetid: a47f0dc8-2971-4e4d-8d57-6b69bbed4b63
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -111,10 +114,10 @@ Use the following link for more information [About App-V 5.0 Reporting](about-ap
 
 [Deploying App-V 5.0](deploying-app-v-50.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

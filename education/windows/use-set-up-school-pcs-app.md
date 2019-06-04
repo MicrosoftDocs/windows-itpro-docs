@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: lenewsad
-ms.author: lanewsad
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use the Set up School PCs app  
@@ -122,7 +124,7 @@ To change an existing package's name, right-click the package folder on your dev
 
 1. Select how you want to sign in.  
     a. (Recommended) To enable student PCs to automatically be connect to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**. Then go to step 3.  
-    b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](use-set-up-school-pcs-app.md#Wireless-network).  
+    b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](#wireless-network).  
 2. In the new window, select the account you want to use throughout setup.  
 
     ![Sign-in screen showing the option to "Use this account" or use a different "Work or school account."](images/1810_choose_account_suspc.png)  
@@ -212,22 +214,25 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  
 4. Click **Next**. 
 
-### Recommended apps  
-Choose from a list of recommended Microsoft Store apps to install on student PCs. Then click **Next**. After they're assigned, apps are pinned to the student's Start menu.  
+### Add apps  
+Choose from Microsoft recommended apps and your school's own Microsoft Store inventory. The apps you select here are added to the provisioning package and installed on student PCs. After they're assigned, apps are pinned to the device's Start menu.  
 
-  ![Example screenshots of the Add recommended apps screen with recommended app icons and selection boxes. Some apps selected for example purposes.](images/1810_SUSPC_add_apps.png)  
+If there aren't any apps in your Microsoft Store inventory, or you don't have the permissions to add apps, you'll need to contact your school admin for help. If you receive a message that you can't add the selected apps, click **Continue without apps**. Contact your school admin to get these apps later.  
+
+After you've made your selections, click **Next**.  
+
+
+  ![Example screenshots of the Add apps screen with selection of recommended apps and school inventory apps.](images/1812_Add_Apps_SUSPC.png)  
 
 The following table lists the recommended apps you'll see.  
 
 |App |Note |
 |---------|---------|
 |Office 365 for Windows 10 in S mode (Education Preview) | Setup is only successful on student PCs that run Windows 10 in S mode. The PC you running the Set up School PCs app is not required to have Windows 10 in S mode.        |
+|Microsoft Whiteboard | None|
 |Minecraft: Education Edition | Free trial|
-|Other apps fit for the classroom |Select from WeDo 2.0 LEGO®, Arduino IDE, Ohbot, Sesavis Visual, and EV3 Programming|   
 
-If you receive an error and are unable to add the selected apps, click **Continue without apps**. Contact your IT admin to get these apps later.  
 
-  ![Example screenshots of the Add recommended apps screen with message that selected apps could not be added. Red rectangles highlight the message and Continue without apps button.](images/1810_SUSPC_app_error.png)  
 
 ### Personalization  
 Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.  

@@ -4,10 +4,13 @@ description: Use Windows Update for Business deployments with management tools s
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: greglin
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
 ---
 
 # Integrate Windows Update for Business with management solutions

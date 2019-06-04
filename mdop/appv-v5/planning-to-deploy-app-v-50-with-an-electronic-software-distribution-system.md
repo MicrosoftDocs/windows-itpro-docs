@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy App-V 5.0 with an Electronic Software Distribution System
 description: Planning to Deploy App-V 5.0 with an Electronic Software Distribution System
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 8cd3f1fb-b84e-4260-9e72-a14d01e7cadf
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,10 +47,10 @@ Review the following component and architecture requirements options that apply 
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

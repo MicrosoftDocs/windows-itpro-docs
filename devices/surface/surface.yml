@@ -1,0 +1,61 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Surface devices
+metadata:
+  document_id: 
+  title: Surface devices
+  description: Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization. 
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: medium
+  author: lizap
+  ms.author: elizapo
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization. 
+      "  
+- title: Explore
+- items:
+  - type: markdown
+    text: "
+      Evaluate the Surface device portfolio, review the tools and technologies for management of your Surface devices, and learn about Surface technologies and devices with engineering walkthroughs.<br> 
+      <table><tr><td><img src='images/surfacepro.png' width='192' height='192'><br>**Surface Pro**<br>Light enough to take anywhere. Powerful enough to use as a full desktop workstation.<br><a href='https://go.microsoft.com/fwlink/p/?linkid=860415'>See spec</a></td><td><img src='images/surfacebook.png' width='192' height='192'><br>**Surface Book**<br>Built for extreme performance. Lightning fast access to apps. Up to 16 hours of battery life.<br><a href='https://go.microsoft.com/fwlink/p/?linkid=860416'>See spec</a></td><td><img src='images/surfacestudio.png' width='192' height='192'><br>**Surface Studio**<br>Professional-grade power and performance. Use it upright or draw on it like a drafting table.<br><a href='https://go.microsoft.com/fwlink/p/?linkid=860457'>See spec</a></td></tr>
+      </table>
+      "
+- title: Plan
+- items:
+  - type: markdown
+    text: "
+      Explore essential concepts for the deployment of Windows 10 to Surface devices.<br> 
+      <table><tr><td><img src='images/windows10.png' width='192' height='192'><br>**Try Windows 10 Enterprise free for 90 days**<br>Try the latest features. Test your apps, hardware, and deployment strategies.<br><a href='https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise'>Get started</a></td><td><img src='images/windows10upgradepath.png' width='192' height='192'><br>**Windows 10 upgrade paths**<br>Upgrade to Windows 10 from a previous version, or from one edition to another.<br><a href='https://docs.microsoft.com/windows/deployment/upgrade/windows-10-upgrade-paths'>Explore paths</a></td><td><img src='images/preparewindowsdeployment.png' width='192' height='192'><br>**Prepare for Windows 10 deployment**<br>Get familiar with current deployment options and best practices.<br><a href='https://docs.microsoft.com/windows/deployment/planning/index'>Review options</a></td></tr>
+      </table>
+      "
+- title: Deploy
+- items:
+  - type: markdown
+    text: "
+      Download deployment tools and get step-by-step guidance on how to upgrade a Surface device or deploy a new image.<br> 
+      <table><tr><td><img src='images/mdt.png' width='192' height='192'><br>**Microsoft Deployment Toolkit (MDT)**<br>Automate Windows 10 deployment, and more easily manage security and configurations.<br><a href='https://technet.microsoft.com/windows/dn475741'>Download the toolkit</a></td><td><img src='images/sccm.png' width='192' height='192'><br>**System Center Configuration Manager**<br>Use in tandem with MDT to deploy Windows 10 and manage PCs and devices moving forward.<br><a href='https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection'>Download an eval</a></td><td><img src='images/sda.png' width='192' height='192'><br>**Surface Deployment Accelerator**<br>Automate the creation and configuration of Windows images for Surface devices.<br><a href='https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator'>Download the accelerator</a></td></tr>
+      </table>
+      "
+- title: Manage
+- items:
+  - type: markdown
+    text: "
+      Learn how to more easily manage and secure Surface devices in your organization.<br> 
+      <table><tr><td><img src='images/managefirmware.png' width='192' height='192'><br>**Manage Surface firmware and driver updates**<br><a href='https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices'>Download the latest firmware and drivers for Surface devices.</a><br><a href='https://docs.microsoft.com/surface/surface-dock-updater'>Manage Surface Dock Updater.</a><br><a href='https://www.microsoft.com/surface/support/install-update-activate/surface-update-history'>Surface update history</a></td><td><img src='images/discovertools.png' width='192' height='192'><br>**Discover Surface tools for IT**<br><a href='https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business'>Surface Diagnostic Toolkit</a><br><a href='https://docs.microsoft.com/surface/microsoft-surface-data-eraser'>Surface Data Eraser</a><br><a href='https://docs.microsoft.com/surface/surface-enterprise-management-mode'>Surface Enterprise Management Mode</a><br><a href='https://blogs.technet.com/b/askcore/archive/2014/10/20/asset-tag-tool-for-surface-pro-3.aspx'>Surface Pro 3 Asset Tag CLI Utility</a></td><td><img src='images/managesettings.png' width='192' height='192'><br>**Manage settings and devices**<br><a href='https://docs.microsoft.com/windows/client-management/index'>Manage Windows corporate devices</a><br><a href='https://docs.microsoft.com/surface/manage-surface-uefi-settings'>Manage Surface UEFI Settings</a><br><a href='https://blogs.technet.microsoft.com/askpfeplat/2014/07/13/bitlocker-pin-on-surface-pro-3-and-other-tablets/'>Bitlocker PIN on Surface Pro 3 and other tablets</a><br><a href='https://docs.microsoft.com/surface/enroll-and-configure-surface-devices-with-semm'>Enroll and configure Surface devices with SEMM</a></td></tr>
+      </table>
+      "
+- title: Stay informed
+- items:
+  - type: markdown
+    text: "
+      <table><tr><td><img src='images/surfaceblog.png' width='192' height='192'><br>**Surface IT Pro Blog**<br>Get insight into new Surface products plus tips and tricks for IT professionals.<br><a href='https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro'>Learn more</a></td><td><img src='images/surfacemechanics.png' width='192' height='192'><br>**Surface on Microsoft Mechanics**<br>View technical demos and walkthroughs of Surface devices, features, and functionality.<br><a href='https://technet.microsoft.com/windows/mt697546'>Get started</a></td><td><img src='images/twitter.png' width='192' height='192'><br>**Follow us on Twitter**<br>Keep up with the latest news and see the latest product demonstrations.<br><a href='https://twitter.com/surface'>Visit Twitter</a></td></tr>
+      </table>
+      "

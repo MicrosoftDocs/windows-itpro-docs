@@ -1,8 +1,11 @@
 ---
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -251,10 +254,10 @@ You can change the settings in Computer B back to the original Computer A settin
 
 -   [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

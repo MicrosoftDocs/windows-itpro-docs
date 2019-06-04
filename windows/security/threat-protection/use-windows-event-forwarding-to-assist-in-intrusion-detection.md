@@ -2,19 +2,23 @@
 title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: tedhardyMSFT
-ms.date: 02/16/2018
+author: dulcemontemayor
+ms.date: 02/28/2019
 ms.localizationpriority: medium
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
@@ -338,7 +342,7 @@ If your organizational audit policy enables additional auditing to meet its need
 | Category           | Subcategory                     | Audit settings      |
 |--------------------|---------------------------------|---------------------|
 | Account Logon      | Credential Validation           | Success and Failure |
-| Account Management | Security Group Management       | Success and Failure |
+| Account Management | Security Group Management       | Success  |
 | Account Management | User Account Management         | Success and Failure |
 | Account Management | Computer Account Management     | Success and Failure |
 | Account Management | Other Account Management Events | Success and Failure |

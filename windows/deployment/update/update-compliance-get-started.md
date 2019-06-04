@@ -1,15 +1,18 @@
 ---
 title: Get started with Update Compliance (Windows 10)
-description: Configure Update Compliance in OMS to see the status of updates and antimalware protection on devices in your network.
+ms.reviewer: 
+manager: laurawi
+description: Configure Update Compliance in Azure Portal to see the status of updates and antimalware protection on devices in your network.
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: Jaimeo
-ms.author: jaimeo
-ms.date: 10/04/2018
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Get started with Update Compliance
@@ -52,7 +55,7 @@ Update Compliance is offered as a solution which is linked to a new or existing 
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
         - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
-        - For the pricing tier select **Free**.
+        - For the pricing tier select **per GB**.
 
 ![Update Compliance workspace creation](images/UC_02_workspace_create.png)
 

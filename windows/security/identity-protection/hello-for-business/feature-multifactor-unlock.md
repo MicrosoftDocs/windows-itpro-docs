@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 03/20/2018
+ms.reviewer: 
 ---
 # Multifactor Unlock
 
@@ -248,7 +253,7 @@ Contains numeric value ranging from 0 to 100 to represent the wireless network's
 <sig_quality>80</sig_quality>
 ```
  
-### Sample Trusted Signal Congfigurations
+### Sample Trusted Signal Configurations
 
 These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
 

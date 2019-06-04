@@ -7,9 +7,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 01/17/2018
+ms.reviewer: 
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
@@ -148,6 +153,9 @@ By default, the tool will show you up to 1GB or 30 days of data (whichever comes
    >[!IMPORTANT]
    >Modifying the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
 
+   >[!IMPORTANT]
+   >If you modify the maximum data history size from a larger value to a lower value, you must turn off data viewing and turn it back on in order to reclaim disk space. 
+
 You can change the maximum data history size (in megabytes) that you can view. For example, to set the maximum data history size to 2048MB (2GB), you can run the following command. 
 
 ```powershell
@@ -174,6 +182,7 @@ To reset the maximum data history size back to its original 1GB default value, r
 PS C:\> Set-DiagnosticStoreCapacity -Size 1024 -Time 720 
 ```
 
+When resetting the size of your data history to a lower value, be sure to turn off data viewing and turn it back on in order to reclaim disk space.
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)

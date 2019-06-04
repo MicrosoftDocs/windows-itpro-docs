@@ -2,12 +2,18 @@
 title: Network security LAN Manager authentication level (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network security LAN Manager authentication level security policy setting.
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

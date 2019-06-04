@@ -1,5 +1,7 @@
 ---
 title: Change history for Configure Windows 10 (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists changes to documentation for configuring Windows 10.
 keywords: 
 ms.prod: w10
@@ -7,17 +9,36 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 11/07/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
-## Novermber 2018
+## April 2019
+
+New or changed topic | Description
+--- | ---
+[Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) | Added information for Shell Launcher v2, coming in the next feature update to Windows 10.
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added new recommendations for policies to manage updates.
+
+## February 2019
+
+New or changed topic | Description
+--- | ---
+[Set up a single-app kiosk](kiosk-single-app.md) | Replaced instructions for Microsoft Intune with a link to the Intune documentation.
+[Set up a multi-app kiosk](lock-down-windows-10-to-specific-apps.md) | Replaced instructions for Intune with a link to the Intune documentation.
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added how to connect to a single-app kiosk in a virtual machine (VM) for testing.
+
+## November 2018
 
 New or changed topic | Description
 --- | ---

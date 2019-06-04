@@ -4,10 +4,12 @@ description: How to create voice commands that use Cortana to perform voice-enab
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: eross-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: lizross
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up and test custom voice commands in Cortana for your organization

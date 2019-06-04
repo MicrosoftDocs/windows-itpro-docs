@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot Reset
+ms.reviewer: 
+manager: dansimp
 description: Gives an overview of Remote Autopilot Reset and how to use it.
 keywords: Autopilot Reset, Windows 10
 ms.prod: w10
@@ -8,10 +10,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 10/02/2018
+author: dulcemontemayor
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot Reset
 
@@ -26,10 +30,13 @@ The Windows Autopilot Reset process automatically retains information from the e
 -   Provisioning packages previously applied to the device, as well as a provisioning package present on a USB drive when the reset process is initiated. 
 -   Azure Active Directory device membership and MDM enrollment information.
 
-Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  This requires configuring the device to use the [enrollment status page](enrollment-status.md).
+Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  
 
 >[!IMPORTANT] 
 >To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
+
+>[!NOTE]
+>The Autopilot Reset does not support Hybrid Azure AD joined devices.
 
 ## Scenarios
 

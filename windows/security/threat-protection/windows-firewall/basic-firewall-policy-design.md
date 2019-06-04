@@ -2,12 +2,18 @@
 title: Basic Firewall Policy Design (Windows 10)
 description: Basic Firewall Policy Design
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

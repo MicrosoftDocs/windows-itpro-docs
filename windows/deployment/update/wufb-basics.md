@@ -4,10 +4,13 @@ description: Learn how to get started using the Basic GPO in Windows Update for 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+author: lomayor
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: lomayor
 ms.date: 06/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 # Configure the Basic group policy for Windows Update for Business
 

@@ -2,12 +2,18 @@
 title: GPO\_DOMISO\_Firewall (Windows 10)
 description: GPO\_DOMISO\_Firewall
 ms.assetid: 318467d2-5698-4c5d-8000-7f56f5314c42
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

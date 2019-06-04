@@ -1,15 +1,18 @@
 ---
 title: Using Device Health
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.sitesec: library
-ms.date: 03/30/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Using Device Health
@@ -29,13 +32,13 @@ Device Health provides the following benefits:
 >[!NOTE]
 >Information is refreshed daily so that health status can be monitored. Changes will be displayed about 24-48 hours after their occurrence, so you always have a recent snapshot of your devices.
 
-In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
+In Azure Portal, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
 
 
 ## Device Reliability
 
-- [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver-Induced OS Crashes](#driver--induced-OS-crashes)
+- [Frequently crashing devices](#frequently-crashing-devices)
+- [Driver-induced OS crashes](#driver-induced-crashes)
 
 
 
@@ -78,7 +81,7 @@ This displays device records sorted by date and crash details by failure ID, als
 
  
  
-### Driver-Induced OS Crashes
+### Driver-induced crashes
 
 This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 
@@ -260,16 +263,16 @@ In this chart view, you can click a particular app listing, which will open addi
 
 Here you can copy the WipAppid and use that for adjusting the WIP policy.
 
-## Data model and OMS built-in extensibility
+## Data model and built-in extensibility
 
 All of the views and blades display slices of the most useful data by using pre-formed queries. You have access to the full set of data collected by Device Health, which means you can construct your own queries to expose any data that is of interest to you. For documentation on working with log searches, see [Find data using log searches](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches). This topic section provides information about the data types being populated specifically by Device Health.
 
 ### Example queries
 
-You can run these queries from the OMS **Log Search** interface (available at several points in the Device Health interface) by just typing them in. There are few details to be aware of:
+You can run these queries from the Azure Portal **Log Search** interface (available at several points in the Device Health interface) by just typing them in. There are few details to be aware of:
 
 - After running a query, make sure to set the date range (which appears upper left after running initial query) to "7 days" to ensure you get data back.
-- If you see the search tutorial dialog appearing frequently, it's likely because you are have read-only access to the OMS workspace. Ask a workspace administrator to grant you "contributor" permissions (which is required for the "completed tutorial" state to persist).
+- If you see the search tutorial dialog appearing frequently, it's likely because you are have read-only access to the Azure Portal workspace. Ask a workspace administrator to grant you "contributor" permissions (which is required for the "completed tutorial" state to persist).
 - If you use the search filters in the left pane, you might notice there is no control to undo a filter selection. To undo a selection, delete the (FilterName="FilterValue") element that is appended to the search query and then click the search button again. For example, after you run a base query of *Type = DHOSReliability KernelModeCrashCount > 0*, a number of filter options appear on the left. If you then filter on **Manufacturer** (for example, by setting *Manufacturer="Microsoft Corporation"* and then clicking **Apply**), the query will change to *Type = DHOSReliability KernelModeCrashCount > 0 (Manufacturer="Microsoft Corporation")*. Delete *(Manufacturer="Microsoft Corporation")* and then click the **search** button again to re-run the query without that filter.
 
 ### Device reliability query examples
@@ -300,7 +303,7 @@ You can run these queries from the OMS **Log Search** interface (available at se
 
 ### Exporting data and configuring alerts
 
-OMS enables you to export data to other tools. To do this, in any view that shows **Log Search** just click the **Export** button. Similarly, clicking the **Alert** button will enable you to run a query automaticlaly on a schedule and receive email alerts for particular query results that you set. If you have a PowerBI account, then you will also see a **PowerBI** button that enables you to run a query on a schedule and have the results automatically saved as a PowerBI data set.
+Azure Portal enables you to export data to other tools. To do this, in any view that shows **Log Search** just click the **Export** button. Similarly, clicking the **Alert** button will enable you to run a query automaticlaly on a schedule and receive email alerts for particular query results that you set. If you have a PowerBI account, then you will also see a **PowerBI** button that enables you to run a query on a schedule and have the results automatically saved as a PowerBI data set.
 
 
 

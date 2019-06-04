@@ -2,12 +2,19 @@
 title: BitLocker basic deployment (Windows 10)
 description: This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 ms.assetid: 97c646cb-9e53-4236-9678-354af41151c4
+ms.reviewer: 
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # BitLocker basic deployment
@@ -523,7 +530,7 @@ Disable-BitLocker -MountPoint E:,F:,G:
 ```
 ## See also
 
-- [Prepare your organization for BitLocker: Planning and p\\olicies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
+- [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker recovery guide](bitlocker-recovery-guide-plan.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [BitLocker overview](bitlocker-overview.md)

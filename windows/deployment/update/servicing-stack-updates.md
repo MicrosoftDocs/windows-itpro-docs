@@ -4,10 +4,14 @@ description: Servicing stack updates improve the code that installs the other up
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: Jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.date: 11/29/2018
+ms.reviewer: 
+manager: laurawi
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Servicing stack updates
@@ -26,7 +30,7 @@ Servicing stack updates improve the reliability of the update process to mitigat
 
 ## When are they released?
 
-Servicing stack update are scheduled to release simultaneously with the monthly quality updates. In rare occasions a servicing stack update may need to be released on demand to address an issue impacting systems installing the monthly security update. Starting in November 2018 new servicing stack updates will be classified as "Security" with a severity rating of "Critical."
+Servicing stack update are released depending on new issues or vulnerabilities. In rare occasions a servicing stack update may need to be released on demand to address an issue impacting systems installing the monthly security update. Starting in November 2018 new servicing stack updates will be classified as "Security" with a severity rating of "Critical."
 
 >[!NOTE]
 >You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).

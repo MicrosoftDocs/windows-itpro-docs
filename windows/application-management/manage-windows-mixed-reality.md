@@ -1,15 +1,16 @@
 ---
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: Learn how to enable or block Windows Mixed Reality apps.
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: jdeckerms
-ms.author: jdecker
+author: msfttracyp
+ms.author: tracyp
 ms.topic: article
-ms.date: 10/02/2018
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
@@ -34,7 +35,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-  a. Download the FOD .cab file for [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
+  a. Download the FOD .cab file for [Windows 10, version 1903](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab), [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
 
   >[!NOTE]
   >You must download the FOD .cab file that matches your operating system version.

@@ -1,12 +1,16 @@
 ---
 title: Planning for the App-V Sequencer and Client Deployment (Windows 10)
 description: Planning for the App-V Sequencer and Client Deployment
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Planning for the App-V Sequencer and Client Deployment
 
@@ -30,7 +34,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 3. Take a “snapshot” of the environment.
 
 >[!IMPORTANT]
->Your corporate security team should review and approve the sequencing process plan before implementing it. For security reasons, it's a good idea to keep sequencer operations in a lab separate from the production environment. The sequencing computers must be capapble of connecting to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they shouldn't remail on the corporate network unprotected. You can protect your sequencing computers by operating them on an isolated network, behind a firewall, or by using virtual machines on an isolated virtual network. Make sure your solution follows your company's corporate security policies.
+>Your corporate security team should review and approve the sequencing process plan before implementing it. For security reasons, it's a good idea to keep sequencer operations in a lab separate from the production environment. The sequencing computers must be capable of connecting to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they shouldn't remain on the corporate network unprotected. You can protect your sequencing computers by operating them on an isolated network, behind a firewall, or by using virtual machines on an isolated virtual network. Make sure your solution follows your company's corporate security policies.
 
 ## Planning for App-V client deployment
 
@@ -46,9 +50,9 @@ The following list displays some of the benefits of using App-V SCS:
 * Reduced deployment risk accelerates application deployment
 * Simplified profile management
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Other App-V deployment resources
 

@@ -2,6 +2,8 @@
 title: Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage
@@ -28,8 +30,8 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
 - **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate Microsoft Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from Microsoft Store for Business.
 - **Centralized management** – Microsoft Store provides centralized management for inventory, billing, permissions, and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
-    - **Microsoft Store for Business** – Apps and subscriptions
-    - **Microsoft Store for Education** – Apps and subscriptions
+    - **Microsoft Store for Business** – Apps acquired from Microsoft Store for Business
+    - **Microsoft Store for Education** – Apps acquired from Microsoft Store for Education
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
 - **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
@@ -360,7 +362,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Ukraine 
 
 ### Support to only manage products
-Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purhcase apps directly from Microsoft Store for Business and Education. 
+Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purchase apps directly from Microsoft Store for Business and Education. 
 - Puerto Rico
 
 This table summarize what customers can purchase, depending on which Microsoft Store they are using. 

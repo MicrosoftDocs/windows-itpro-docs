@@ -2,12 +2,18 @@
 title: Manage auditing and security log (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Manage auditing and security log security policy setting.
 ms.assetid: 4b946c0d-f904-43db-b2d5-7f0917575347
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

@@ -4,10 +4,13 @@ description: System Center Configuration Manager provides maximum control over q
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: greglin
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
 ---
 
 # Deploy Windows 10 updates using System Center Configuration Manager

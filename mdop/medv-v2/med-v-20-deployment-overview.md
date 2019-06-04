@@ -1,8 +1,11 @@
 ---
 title: MED-V 2.0 Deployment Overview
 description: MED-V 2.0 Deployment Overview
-author: jamiejdt
+author: levinec
 ms.assetid: 0b8998ea-c46f-4c81-a304-f380b2ed7cf8
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

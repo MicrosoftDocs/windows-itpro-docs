@@ -1,8 +1,11 @@
 ---
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
-author: jamiejdt
+author: v-madhi
 ms.assetid: c69a724a-85d1-4e2d-94a2-7ffe0b47d971
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -1617,10 +1620,10 @@ There are three specific categories of events recorded described below.
 
 **Virtual Application**: Logs virtual application launches and use of virtualization subsystems.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

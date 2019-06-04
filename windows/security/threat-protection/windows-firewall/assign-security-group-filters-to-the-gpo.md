@@ -2,13 +2,19 @@
 title: Assign Security Group Filters to the GPO (Windows 10)
 description: Assign Security Group Filters to the GPO
 ms.assetid: bcbe3299-8d87-4ec1-9e86-8e4a680fd7c8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 04/19/2017
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 04/02/2019
 ---
 
 # Assign Security Group Filters to the GPO
@@ -19,7 +25,8 @@ ms.date: 04/19/2017
 
 To make sure that your GPO is applied to the correct computers, use the Group Policy Management MMC snap-in to assign security group filters to the GPO.
 
->**Important:**  This deployment guide uses the method of adding the Domain Computers group to the membership group for the main isolated domain after testing is complete and you are ready to go live in production. To make this method work, you must prevent any computer that is a member of either the boundary or encryption zone from applying the GPO for the main isolated domain. For example, on the GPOs for the main isolated domain, deny Read and Apply Group Policy permissions to the membership groups for the boundary and encryption zones.
+>[!IMPORTANT]
+>This deployment guide uses the method of adding the Domain Computers group to the membership group for the main isolated domain after testing is complete and you are ready to go live in production. To make this method work, you must prevent any computer that is a member of either the boundary or encryption zone from applying the GPO for the main isolated domain. For example, on the GPOs for the main isolated domain, deny Read and Apply Group Policy permissions to the membership groups for the boundary and encryption zones.
 
  
 
@@ -43,7 +50,8 @@ Use the following procedure to add a group to the security filter on the GPO tha
 
 3.  In the details pane, under **Security Filtering**, click **Authenticated Users**, and then click **Remove**.
 
-    >**Note:**  You must remove the default permission granted to all authenticated users and computers to restrict the GPO to only the groups you specify.
+    >[!NOTE]
+    >You must remove the default permission granted to all authenticated users and computers to restrict the GPO to only the groups you specify. If the GPO contains User settings, and the **Authenticated Users** group is removed, and new security filtering is added using a security group that only contains user accounts, the GPO can fail to apply. Details and various workarounds are mentioned in this [Microsoft blog](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/Who-broke-my-user-GPOs/ba-p/258781). 
 
 4.  Click **Add**.
 

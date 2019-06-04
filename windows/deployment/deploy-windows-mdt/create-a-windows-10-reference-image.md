@@ -2,6 +2,9 @@
 title: Create a Windows 10 reference image (Windows 10)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,6 +13,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 04/18/2018
+ms.topic: article
 ---
 
 # Create a Windows 10 reference image
@@ -76,7 +80,7 @@ This section will show you how to populate the MDT deployment share with the Win
 
 MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
 
->[!OTE]  
+>[!NOTE]  
 >Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
  
 ### Add Windows 10 Enterprise x64 (full source)
@@ -134,8 +138,8 @@ You also can customize the Office installation using a Config.xml file. But we r
 
     Figure 5. The Install - Microsoft Office 2013 Pro Plus - x86 application properties.
 
-    **Note**  
-    If you don't see the Office Products tab, verify that you are using a volume license version of Office. If you are deploying Office 365, you need to download the Admin folder from Microsoft.
+    >[!NOTE] 
+    >If you don't see the Office Products tab, verify that you are using a volume license version of Office. If you are deploying Office 365, you need to download the Admin folder from Microsoft.
      
 3.  In the Office Customization Tool dialog box, select the Create a new Setup customization file for the following product option, select the Microsoft Office Professional Plus 2013 (32-bit) product, and click OK.
 4.  Use the following settings to configure the Office 2013 setup to be fully unattended:
@@ -156,8 +160,8 @@ You also can customize the Office installation using a Config.xml file. But we r
         -   In the **Microsoft Office 2013** node, expand **Privacy**, select **Trust Center**, and enable the Disable Opt-in Wizard on first run setting.
 5.  From the **File** menu, select **Save**, and save the configuration as 0\_Office2013ProPlusx86.msp in the **E:\\MDTBuildLab\\Applications\\Install - Microsoft Office 2013 Pro Plus - x86\\Updates** folder.
 
-    **Note**  
-    The reason for naming the file with a 0 (zero) at the beginning is that the Updates folder also handles Microsoft Office updates, and they are installed in alphabetical order. The Office 2013 setup works best if the customization file is installed before any updates.
+    >[!NOTE] 
+    >The reason for naming the file with a 0 (zero) at the beginning is that the Updates folder also handles Microsoft Office updates,          and they are installed in alphabetical order. The Office 2013 setup works best if the customization file is installed before any updates.
      
 6.  Close the Office Customization Tool, click Yes in the dialog box, and in the **Install - Microsoft Office 2013 Pro Plus - x86 Properties** window, click **OK**.
 
@@ -333,8 +337,8 @@ The steps below walk you through the process of editing the Windows 10 referenc
         2.  Select the operating system for which roles are to be installed: Windows 10
         3.  Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
         
-        **Important**  
-        This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
+        >[!IMPORTANT]
+        >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
          
         ![figure 7](../images/fig8-cust-tasks.png)
 
@@ -456,8 +460,8 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 
     Figure 12. The boot image rules for the MDT Build Lab deployment share.
 
-    **Note**  
-    For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation.
+    >[!NOTE]  
+    >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation.
      
 4.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
 5.  In the **Lite Touch Boot Image Settings** area, configure the following settings:
@@ -514,8 +518,8 @@ So, what are these settings?
 -   **DeployRoot.** This is the location of the deployment share. Normally, this value is set by MDT, but you need to update the DeployRoot value if you move to another server or other share. If you don't specify a value, the Windows Deployment Wizard prompts you for a location.
 -   **UserDomain, UserID, and UserPassword.** These values are used for automatic log on to the deployment share. Again, if they are not specified, the wizard prompts you.
 
-    **Note**  
-    Caution is advised. These values are stored in clear text on the boot image. Use them only for the MDT Build Lab deployment share and not for the MDT Production deployment share that you learn to create in the next topic.
+    >[!WARNING]  
+    >Caution is advised. These values are stored in clear text on the boot image. Use them only for the MDT Build Lab deployment share and not for the MDT Production deployment share that you learn to create in the next topic.
      
 -   **SkipBDDWelcome.** Even if it is nice to be welcomed every time we start a deployment, we prefer to skip the initial welcome page of the Windows Deployment Wizard.
 

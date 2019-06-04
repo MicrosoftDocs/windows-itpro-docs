@@ -7,11 +7,15 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: dulcemontemayor
 ms.date: 11/07/2018
-ms.author: greg-lindsay
-ms.date: 11/07/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot user-driven mode
 

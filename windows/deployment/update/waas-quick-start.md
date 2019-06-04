@@ -5,10 +5,13 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: Jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 10/17/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Quick guide to Windows as a service
@@ -68,8 +71,8 @@ Click the following Microsoft Mechanics video for an overview of the updated rel
  
 ## Learn more
 
-[Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-
+- [Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
+- [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 ## Related topics
 

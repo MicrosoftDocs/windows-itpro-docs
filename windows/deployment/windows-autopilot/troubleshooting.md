@@ -1,5 +1,7 @@
-﻿---
+---
 title: Troubleshooting Windows Autopilot
+ms.reviewer: 
+manager: dansimp
 description: This topic goes over Windows Autopilot and how it helps setup OOBE Windows 10 devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -7,10 +9,12 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 10/02/2018
+author: dulcemontemayor
+ms.author: dolmont
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Troubleshooting Windows Autopilot
 
@@ -83,10 +87,12 @@ On Windows 10 version 1703 and above, ETW tracing can be used to capture detaile
 
 The most common issue joining a device to Azure AD is related to Azure AD permissions.  Ensure [the correct configuration is in place](windows-autopilot-requirements-configuration.md) to allow users to join devices to Azure AD.  Errors can also happen if the user has exceeded the number of devices that they are allowed to join, as configured in Azure AD.
 
-Error code 801C0003 will typically be reported on an error page titled "Something went wrong."  This error means that the Azure AD join failed.
+Error code 801C0003 will typically be reported on an error page titled "Something went wrong".  This error means that the Azure AD join failed.
 
 ### Troubleshooting Intune enrollment issues
 
 See [this knowledge base article](https://support.microsoft.com/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
-Error code 80180018 will typiclaly be reported on an error page titled "Something went wrong."  This error means that the MDM enrollment failed.
+Error code 80180018 will typically be reported on an error page titled "Something went wrong".  This error means that the MDM enrollment failed.
+
+If Autopilot Reset fails immediately with an error "Ran into trouble. Please sign in with an administrator account to see why and reset manually," see [Troubleshoot Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset#troubleshoot-autopilot-reset) for more help.

@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: explore
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/16/2017

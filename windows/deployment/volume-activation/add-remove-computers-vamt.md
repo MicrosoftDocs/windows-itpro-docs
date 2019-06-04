@@ -2,12 +2,16 @@
 title: Add and Remove Computers (Windows 10)
 description: Add and Remove Computers
 ms.assetid: cb6f3a78-ece0-4dc7-b086-cb003d82cd52
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
+author: greg-lindsay
 ms.pagetype: activation
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Add and Remove Computers

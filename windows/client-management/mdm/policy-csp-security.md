@@ -1,18 +1,20 @@
 ---
 title: Policy CSP - Security
 description: Policy CSP - Security
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/09/2018
+author: v-madhi
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Security
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -148,7 +150,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+Specifies whether to allow automatic [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -479,7 +481,7 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1607 to replace the deprecated policy **Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**.
 
-Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+Specifies whether to allow automatic [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -739,18 +741,28 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic
 
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+<!--EndHoloLens-->
 
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Security policies supported by Windows Holographic for Business
+
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.

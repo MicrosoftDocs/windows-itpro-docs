@@ -32,7 +32,8 @@
     "globalMetadata": {
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depot_name": "MSDN.windows-update"
+			  "depot_name": "MSDN.windows-update",
+                          "folder_relative_path_in_docset": "./"
 			}
 		}
 	},

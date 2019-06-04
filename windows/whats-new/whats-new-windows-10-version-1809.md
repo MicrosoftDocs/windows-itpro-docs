@@ -1,18 +1,21 @@
 ---
 title: What's new in Windows 10, version 1809
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: New and updated features in Windows 10, version 1809
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.date: 12/31/2018
+author: dansimp
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10, version 1809 for IT Pros
 
->Applies To: Windows 10, version 1809, also known as Windows 10 October 2018 Update
+>Applies To: Windows 10, version 1809
 
 In this article we describe new and updated features of interest to IT Pros for Windows 10, version 1809. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1803. 
 
@@ -36,13 +39,13 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 ### SetupDiag
 
-[SetupDiag](/windows/deployment/upgrade/setupdiag.md) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
+[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
 
 ## Security
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
+   ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 With controlled folder access you can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 
@@ -53,8 +56,6 @@ We added a new assessment for the Windows time service to the **Device performan
 We’re continuing to work on how other security apps you’ve installed show up in the **Windows Security** app. There’s a new page called **Security providers** that you can find in the **Settings** section of the app. Click **Manage providers** to see a list of all the other security providers (including antivirus, firewall, and web protection) that are running on your device. Here you can easily open the providers’ apps or get more information on how to resolve issues reported to you through **Windows Security**.
 
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
-
-<pre>HKLM\SOFTWARE\Microsoft\Security Center\Feature DisableAvCheck (DWORD) = 1 </pre>
 
 ### BitLocker
 
@@ -68,9 +69,19 @@ This feature will soon be enabled on Olympia Corp as an optional feature.
 
 ####  Delivering BitLocker policy to AutoPilot devices during OOBE 
 
-You can choose which encryption algorithm to apply automatic BitLocker encryption to capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before automatic BitLocker encryption begins. 
+You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
 For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
+
+To achieve this:
+
+1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
+    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
+    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/bitlocker).
 
 ### Windows Defender Application Guard Improvements
 
@@ -167,7 +178,7 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
 >[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>The following Microsoft Edge kiosk mode types cannot be set up using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 
@@ -196,6 +207,9 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
 
     ![fast sign-in](images/fastsignin.png "fast sign-in")
 
+>[!NOTE]
+>This is a preview feature and therefore not meant or recommended for production purposes.
+
 ## Web sign-in to Windows 10
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
@@ -207,6 +221,9 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 4. Click the “Sign in” button to continue.
 
     ![Web sign-in](images/websignin.png "web sign-in")
+
+>[!NOTE]
+>This is a preview feature and therefore not meant or recommended for production purposes.
 
 ## Your Phone app
 

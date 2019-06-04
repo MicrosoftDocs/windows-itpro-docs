@@ -4,15 +4,17 @@ description: Policy CSP - Browser
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
-ms.author: pashort
-ms.date: 10/02/2018
+author: v-madhi
+ms.author: v-madhi
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Browser
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -2785,7 +2787,7 @@ ADMX Info:
 Supported values:
 
 - Blank (default) - Load the pages specified in App settings as the default Start pages.
-- String - Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>&nbsp;\<support.microsoft.com\>
+- String - Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets and comma:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>&comma;\<support.microsoft.com\>
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3963,15 +3965,38 @@ Supported values:
 Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Supported versions, version 1607.
--   2 - Supported versions, version 1703.
--   3 - Supported versions, version 1709.
--   4 - Supported versions, version 1803.
--   5 - Supported versions, version 1809.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic
+
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+- [Browser/AllowCookies](#browser-allowcookies)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Browser policies supported by Windows Holographic for Business
+
+- [Browser/AllowAutofill](#browser-allowautofill)
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+- [Browser/AllowCookies](#browser-allowcookies)
+ <!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

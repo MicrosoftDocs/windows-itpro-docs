@@ -1,20 +1,24 @@
 ---
 title: Windows Hello for Business (Windows 10)
+ms.reviewer: 
 description: An overview of Windows Hello for Business 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: high
-ms.date: 05/05/2018
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: conceptual
+localizationpriority: medium
 ---
 # Windows Hello for Business Overview
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
 
@@ -94,7 +98,7 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/830/Implementing-Windows-Hello-for-Business-at-Microsoft)
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 

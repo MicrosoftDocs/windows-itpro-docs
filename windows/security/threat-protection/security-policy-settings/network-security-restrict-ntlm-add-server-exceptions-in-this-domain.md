@@ -2,12 +2,18 @@
 title: Network security Restrict NTLM Add server exceptions in this domain (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network security Restrict NTLM Add server exceptions in this domain security policy setting.
 ms.assetid: 2f981b68-6aa7-4dd9-b53d-d88551277cc0
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

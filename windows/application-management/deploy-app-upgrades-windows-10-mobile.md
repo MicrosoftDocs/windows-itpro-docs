@@ -5,9 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: kaushika-ainapure
-author: kaushika-msft
+ms.author: tracyp
+author: msfttracyp
 ms.date: 07/21/2017
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 # Deploy application upgrades on Windows 10 Mobile
 
@@ -20,7 +23,7 @@ There are two steps to deploy an app upgrade:
 1. [Define the supersedence](#define-app-supersedence) - this lets Configuration Manager know that the old version should be replaced by the new version.
 2. [Deploy the upgrade](#deploy-the-app-upgrade) to your users.
 
-The following steps walk you through the upgrade deployment process - we have an upgraded version of the Walking Scorer app (moving from version 12.23.2.0 to 12.23.3.0). Becasuse we previously used Configuration Manager to deploy the existing version, we'll use it now to upgrade the app. 
+The following steps walk you through the upgrade deployment process - we have an upgraded version of the Walking Scorer app (moving from version 12.23.2.0 to 12.23.3.0). Because we previously used Configuration Manager to deploy the existing version, we'll use it now to upgrade the app. 
 
 Before you can deploy the upgrade, make sure you import the new version of the app and distribute it to your manage.microsoft.com distribution point.
 
@@ -42,7 +45,7 @@ Before you can deploy the upgrade, make sure you import the new version of the a
    > Do **NOT** select **Uninstall**. This tells Configuration Manager to uninstall the old version, but it does **NOT** then install the new version.
 
 6. Click **OK**.
-7. If you have other versions of the same app, repeate steps 4-6 for each version. Click **OK** when you're done.
+7. If you have other versions of the same app, repeat steps 4-6 for each version. Click **OK** when you're done.
 
 > [!NOTE]
 > Need to remove a supersedence? (Maybe the new version turned out to be flaky and you don't want users to get it yet.) On the **Supersedence** tab for the *new* version of the app, double-click the older version in the list of supersedence rules, and then change the **New Deployment Type** to **Do not replace**.

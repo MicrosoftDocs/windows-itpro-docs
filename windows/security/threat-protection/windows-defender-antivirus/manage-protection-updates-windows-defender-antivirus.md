@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -42,7 +44,7 @@ You can use the following sources:
 -   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
 -   System Center Configuration Manager
 -   A network file share
--   The [Microsoft Malware Protection Center definitions page (MMPC)](https://www.microsoft.com/security/portal/definitions/adl.aspx)
+-   The [Microsoft Malware Protection Center Security intelligence page (MMPC)](https://www.microsoft.com/security/portal/definitions/adl.aspx)
 
 
 When updates are published, some logic will be applied to minimize the size of the update. In most cases, only the "delta" (or the differences between the latest update and the update that is currently installed on the endpoint) will be downloaded and applied. However, the size of the delta depends on:
@@ -108,7 +110,7 @@ The procedures in this article first describe how to set the order, and then how
 
 **Use Configuration Manager to manage the update location:**
 
-See [Configure Definition Updates for Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definition-updates) for details on configuring System Center Configuration Manager (current branch).
+See [Configure Security intelligence Updates for Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definition-updates) for details on configuring System Center Configuration Manager (current branch).
 
 
 **Use PowerShell cmdlets to manage the update location:**

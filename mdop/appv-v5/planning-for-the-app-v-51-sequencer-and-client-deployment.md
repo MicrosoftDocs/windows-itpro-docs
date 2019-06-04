@@ -1,8 +1,11 @@
 ---
 title: Planning for the App-V 5.1 Sequencer and Client Deployment
 description: Planning for the App-V 5.1 Sequencer and Client Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d92f8773-fa7d-4926-978a-433978f91202
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -76,10 +79,10 @@ The following list displays some of the benefits of using the App-V 5.1 shared c
 
 -   Simplified profile management
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-the-app-v-5-1-deployment-"></a>Other resources for the App-V 5.1 deployment
 

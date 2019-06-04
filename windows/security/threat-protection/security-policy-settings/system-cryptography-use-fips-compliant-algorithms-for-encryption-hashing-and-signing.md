@@ -2,12 +2,18 @@
 title: System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing (Windows 10)
 description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.
 ms.assetid: 83988865-dc0f-45eb-90d1-ee33495eb045
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 11/16/2018
 ---
 

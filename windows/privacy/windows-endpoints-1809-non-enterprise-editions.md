@@ -6,9 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
-author: danihalfin
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Windows 10, version 1809, connection endpoints for non-Enterprise editions
 
@@ -36,52 +41,52 @@ We used the following methodology to derive these network endpoints:
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
-|*.aria.microsoft.com*	| HTTPS |	Office Telemetry
-|*.dl.delivery.mp.microsoft.com*	| HTTP |	Enables connections to Windows Update.
-|*.download.windowsupdate.com*	| HTTP |	Used to download operating system patches and updates.
-|*.g.akamai.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use.
-|*.msn.com*	|TLSv1.2/HTTPS |	Windows Spotlight related traffic
-|*.Skype.com	| HTTP/HTTPS |	Skype related traffic
-|*.smartscreen.microsoft.com*	| HTTPS |	Windows Defender Smartscreen related traffic
-|*.telecommand.telemetry.microsoft.com*	| HTTPS |	Used by Windows Error Reporting.
-|*cdn.onenote.net*	| HTTP |	OneNote related traffic
-|*displaycatalog.mp.microsoft.com*	| HTTPS |	Used to communicate with Microsoft Store.
-|*emdl.ws.microsoft.com*	| HTTP |	Windows Update related traffic
-|*geo-prod.do.dsp.mp.microsoft.com*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
-|*hwcdn.net*	| HTTP |	Used by the Highwinds Content Delivery Network to perform Windows updates.
-|*img-prod-cms-rt-microsoft-com.akamaized.net*	| HTTPS |	Used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps).
-|*maps.windows.com*	| HTTPS |	Related to Maps application.
-|*msedge.net*	| HTTPS |	Used by OfficeHub to get the metadata of Office apps.
-|*nexusrules.officeapps.live.com*	| HTTPS |	Office Telemetry
-|*photos.microsoft.com*	| HTTPS |	Photos App related traffic
-|*prod.do.dsp.mp.microsoft.com*	|TLSv1.2/HTTPS |	Used for Windows Update downloads of apps and OS updates.
-|*wac.phicdn.net*	| HTTP |	Windows Update related traffic
-|*windowsupdate.com*	| HTTP |	Windows Update related traffic
-|*wns.windows.com*	| HTTPS, TLSv1.2 |	Used for the Windows Push Notification Services (WNS).
-|*wpc.v0cdn.net*	| |	Windows Telemetry related traffic
+|\*.aria.microsoft.com\*	| HTTPS |	Office Telemetry
+|\*.dl.delivery.mp.microsoft.com\*	| HTTP |	Enables connections to Windows Update.
+|\*.download.windowsupdate.com\*	| HTTP |	Used to download operating system patches and updates.
+|\*.g.akamai.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use.
+|\*.msn.com\*	|TLSv1.2/HTTPS |	Windows Spotlight related traffic
+|\*.Skype.com	| HTTP/HTTPS |	Skype related traffic
+|\*.smartscreen.microsoft.com\*	| HTTPS |	Windows Defender Smartscreen related traffic
+|\*.telecommand.telemetry.microsoft.com\*	| HTTPS |	Used by Windows Error Reporting.
+|\*cdn.onenote.net*	| HTTP |	OneNote related traffic
+|\*displaycatalog.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
+|\*emdl.ws.microsoft.com\*	| HTTP |	Windows Update related traffic
+|\*geo-prod.do.dsp.mp.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
+|\*hwcdn.net*	| HTTP |	Used by the Highwinds Content Delivery Network to perform Windows updates.
+|\*img-prod-cms-rt-microsoft-com.akamaized.net*	| HTTPS |	Used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps).
+|\*maps.windows.com\*	| HTTPS |	Related to Maps application.
+|\*msedge.net*	| HTTPS |	Used by OfficeHub to get the metadata of Office apps.
+|\*nexusrules.officeapps.live.com\*	| HTTPS |	Office Telemetry
+|\*photos.microsoft.com\*	| HTTPS |	Photos App related traffic
+|\*prod.do.dsp.mp.microsoft.com\*	|TLSv1.2/HTTPS |	Used for Windows Update downloads of apps and OS updates.
+|\*wac.phicdn.net*	| HTTP |	Windows Update related traffic
+|\*windowsupdate.com\*	| HTTP |	Windows Update related traffic
+|\*wns.windows.com\*	| HTTPS, TLSv1.2 |	Used for the Windows Push Notification Services (WNS).
+|\*wpc.v0cdn.net*	| |	Windows Telemetry related traffic
 |auth.gfx.ms/16.000.27934.1/OldConvergedLogin_PCore.js	| |	MSA related
 |evoke-windowsservices-tas.msedge*	| HTTPS |	The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
-|fe2.update.microsoft.com*	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
-|fe3.*.mp.microsoft.com.* 	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
+|fe2.update.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
+|fe3.\*.mp.microsoft.com.\* 	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
 |fs.microsoft.com	| |	Font Streaming (in ENT traffic)
-|g.live.com*	| HTTPS |	Used by OneDrive
+|g.live.com\*	| HTTPS |	Used by OneDrive
 |iriscoremetadataprod.blob.core.windows.net	| HTTPS |	Windows Telemetry
-|mscrl.micorosoft.com	| |	Certificate Revocation List related traffic.
-|ocsp.digicert.com*	| HTTP |	CRL and OCSP checks to the issuing certificate authorities.
+|mscrl.microsoft.com	| |	Certificate Revocation List related traffic.
+|ocsp.digicert.com\*	| HTTP |	CRL and OCSP checks to the issuing certificate authorities.
 |officeclient.microsoft.com	| HTTPS |	Office related traffic.
 |oneclient.sfx.ms*	| HTTPS |	Used by OneDrive for Business to download and verify app updates.
-|purchase.mp.microsoft.com*	| HTTPS |	Used to communicate with Microsoft Store.
-|query.prod.cms.rt.microsoft.com*	| HTTPS |	Used to retrieve Windows Spotlight metadata.
-|ris.api.iris.microsoft.com*	|TLSv1.2/HTTPS |	Used to retrieve Windows Spotlight metadata.
+|purchase.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
+|query.prod.cms.rt.microsoft.com\*	| HTTPS |	Used to retrieve Windows Spotlight metadata.
+|ris.api.iris.microsoft.com\*	|TLSv1.2/HTTPS |	Used to retrieve Windows Spotlight metadata.
 |ris-prod-atm.trafficmanager.net	| HTTPS |	Azure traffic manager
-|settings.data.microsoft.com*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
-|settings-win.data.microsoft.com*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
-|sls.update.microsoft.com*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
-|store*.dsx.mp.microsoft.com*	| HTTPS |	Used to communicate with Microsoft Store.
-|storecatalogrevocation.storequality.microsoft.com*	| HTTPS |	Used to revoke licenses for malicious apps on the Microsoft Store.
-|store-images.s-microsoft.com*	| HTTP |	Used to get images that are used for Microsoft Store suggestions.
-|tile-service.weather.microsoft.com*	| HTTP |	Used to download updates to the Weather app Live Tile.
-|tsfe.trafficshaping.dsp.mp.microsoft.com*	|TLSv1.2 |	Used for content regulation.
+|settings.data.microsoft.com\*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
+|settings-win.data.microsoft.com\*	| HTTPS |	Used for Windows apps to dynamically update their configuration.
+|sls.update.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
+|store*.dsx.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
+|storecatalogrevocation.storequality.microsoft.com\*	| HTTPS |	Used to revoke licenses for malicious apps on the Microsoft Store.
+|store-images.s-microsoft.com\*	| HTTP |	Used to get images that are used for Microsoft Store suggestions.
+|tile-service.weather.microsoft.com\*	| HTTP |	Used to download updates to the Weather app Live Tile.
+|tsfe.trafficshaping.dsp.mp.microsoft.com\*	|TLSv1.2 |	Used for content regulation.
 |v10.events.data.microsoft.com	| HTTPS |	Diagnostic Data
 |wdcp.microsoft.*	|TLSv1.2 |	Used for Windows Defender when Cloud-based Protection is enabled.
 |wd-prod-cp-us-west-1-fe.westus.cloudapp.azure.com	| HTTPS |	Windows Defender related traffic.
@@ -94,7 +99,7 @@ We used the following methodology to derive these network endpoints:
 | *.e-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
 | *.g.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
 | *.s-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
-| *.tlu.dl.delivery.mp.microsoft.com/* | HTTP | Enables connections to Windows Update. |
+| \*.tlu.dl.delivery.mp.microsoft.com/\* | HTTP | Enables connections to Windows Update. |
 | *geo-prod.dodsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update. |
 | arc.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | au.download.windowsupdate.com/* | HTTP | Enables connections to Windows Update. |
@@ -107,7 +112,7 @@ We used the following methodology to derive these network endpoints:
 | ipv4.login.msa.akadns6.net	| HTTPS |	Used for Microsoft accounts to sign in. |
 | location-inference-westus.cloudapp.net	| HTTPS |	Used for location data. |
 | modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
-| ocsp.digicert.com* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
+| ocsp.digicert.com\* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
 | ris.api.iris.microsoft.com.akadns.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | tile-service.weather.microsoft.com/* | HTTP |	Used to download updates to the Weather app Live Tile. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com	| HTTPS |	Used for content regulation. |
@@ -123,10 +128,10 @@ We used the following methodology to derive these network endpoints:
 | *.g.akamaiedge.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use. |
 | *.s-msedge.net	| HTTPS |	Used by OfficeHub to get the metadata of Office apps. |
 | *.telecommand.telemetry.microsoft.com.akadns.net | HTTPS | Used by Windows Error Reporting. |
-| *.tlu.dl.delivery.mp.microsoft.com* | HTTP | Enables connections to Windows Update. |
-| *.windowsupdate.com* | HTTP | Enables connections to Windows Update. |
+| *.tlu.dl.delivery.mp.microsoft.com\* | HTTP | Enables connections to Windows Update. |
+| *.windowsupdate.com\* | HTTP | Enables connections to Windows Update. |
 | *geo-prod.do.dsp.mp.microsoft.com	| HTTPS |	Enables connections to Windows Update. |
-| au.download.windowsupdate.com* | HTTP | Enables connections to Windows Update. |
+| au.download.windowsupdate.com\* | HTTP | Enables connections to Windows Update. |
 | cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
 | client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
 | config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
@@ -147,7 +152,7 @@ We used the following methodology to derive these network endpoints:
 | maps.windows.com/windows-app-web-link	| HTTPS |	Link to Maps application |
 | modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
 | ocos-office365-s2s.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal's shared infrastructure. |
-| ocsp.digicert.com* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
+| ocsp.digicert.com\* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
 | oneclient.sfx.ms/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
 | settings-win.data.microsoft.com/settings/*	| HTTPS |	Used as a way for apps to dynamically update their configuration. |
 | sls.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update. |

@@ -1,18 +1,43 @@
 ---
 title: Top support solutions for Windows 10
+ms.reviewer: 
+manager: dansimp
 description: Get links to solutions for Windows 10 issues
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: elizapo
-author: kaushika-msft
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/08/2018
+ms.topic: troubleshooting
 ---
-# Top support solutions for Windows 10
+
+# Troubleshoot Windows 10 clients
+
+This section contains advanced troubleshooting topics and links to help you resolve issues with Windows 10 clients. Additional topics will be added as they become available.
+
+## Troubleshooting support topics
+
+- [Advanced troubleshooting for Windows networking](troubleshoot-networking.md)<br>
+    - [Advanced troubleshooting wireless network connectivity](advanced-troubleshooting-wireless-network-connectivity.md)<br>
+    - [Advanced troubleshooting 802.1X authentication](advanced-troubleshooting-802-authentication.md)<br>
+        - [Data collection for troubleshooting 802.1X authentication](data-collection-for-802-authentication.md)<br>
+    - [Advanced troubleshooting for TCP/IP](troubleshoot-tcpip.md)<br>
+    - [Collect data using Network Monitor](troubleshoot-tcpip-netmon.md)<br>
+    - [Troubleshoot TCP/IP connectivity](troubleshoot-tcpip-connectivity.md)<br>
+    - [Troubleshoot port exhaustion](troubleshoot-tcpip-port-exhaust.md)<br>
+    - [Troubleshoot Remote Procedure Call (RPC) errors](troubleshoot-tcpip-rpc-errors.md)<br>
+- [Advanced troubleshooting for Windows startup](troubleshoot-windows-startup.md)<br>
+    - [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)<br>
+    - [Advanced troubleshooting for Windows-based computer issues](troubleshoot-windows-freeze.md)<br>
+    - [Advanced troubleshooting for stop errors or blue screen errors](troubleshoot-stop-errors.md)<br>
+    - [Advanced troubleshooting for stop error 7B or Inaccessible_Boot_Device](troubleshoot-inaccessible-boot-device.md)<br>
+
+## Windows 10 update history
 
 Microsoft regularly releases both updates and solutions for Windows 10. To ensure your computers can receive future updates, including security updates, it's important to keep them updated. Check out the following links for a complete list of released updates:
 
+- [Windows 10 version 1809 update history](https://support.microsoft.com/help/4464619)
 - [Windows 10 version 1803 update history](https://support.microsoft.com/help/4099479)
 - [Windows 10 version 1709 update history](https://support.microsoft.com/help/4043454)
 - [Windows 10 Version 1703 update history](https://support.microsoft.com/help/4018124)
@@ -23,6 +48,7 @@ Microsoft regularly releases both updates and solutions for Windows 10. To ensur
 These are the top Microsoft Support solutions for the most common issues experienced when using Windows 10 in an enterprise or IT pro environment. The links below include links to KB articles, updates, and library articles.
 
 ## Solutions related to installing Windows Updates
+
 - [How does Windows Update work](https://docs.microsoft.com/en-us/windows/deployment/update/how-windows-update-works)
 - [Windows Update log files](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-logs)
 - [Windows Update troubleshooting](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-troubleshooting)
@@ -34,7 +60,7 @@ These are the top Microsoft Support solutions for the most common issues experie
 - [Quick Fixes](https://docs.microsoft.com/en-us/windows/deployment/upgrade/quick-fixes)
 - [Troubleshooting upgrade errors](https://docs.microsoft.com/en-us/windows/deployment/upgrade/troubleshoot-upgrade-errors)
 - [Resolution procedures](https://docs.microsoft.com/en-us/windows/deployment/upgrade/resolution-procedures)
-- ["0xc1800118" error when you push Windows 10 Version 1607 by using WSUS](https://support.microsoft.com/en-in/help/3194588/0xc1800118-error-when-you-push-windows-10-version-1607-by-using-wsus)
+- [0xc1800118 error when you push Windows 10 Version 1607 by using WSUS](https://support.microsoft.com/en-in/help/3194588/0xc1800118-error-when-you-push-windows-10-version-1607-by-using-wsus)
 - [0xC1900101 error when Windows 10 upgrade fails after the second system restart](https://support.microsoft.com/en-in/help/3208485/0xc1900101-error-when-windows-10-upgrade-fails-after-the-second-system)
 
 ## Solutions related to BitLocker

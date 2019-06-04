@@ -1,8 +1,11 @@
 ---
 title: Deploying the App-V 5.1 Sequencer and Client
 description: Deploying the App-V 5.1 Sequencer and Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 74f32794-4c76-436f-a542-f9e95d89063d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -105,10 +108,10 @@ You can use the App-V 5.1 Sequencer log information to help troubleshoot the Seq
 
 [Planning for App-V 5.1](planning-for-app-v-51.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

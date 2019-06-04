@@ -1,8 +1,11 @@
 ---
 title: Migrating from a Previous Version
 description: Migrating from a Previous Version
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a13cd353-b22a-48f7-af1e-5d54ede2a7e5
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -174,10 +177,10 @@ You can also perform additional migration tasks such as reconfiguring end points
 [How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-package-for-a-specific-user.md)
 
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Other resources for performing App-V migration tasks
 

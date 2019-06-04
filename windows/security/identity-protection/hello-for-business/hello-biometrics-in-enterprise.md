@@ -2,14 +2,19 @@
 title: Windows Hello biometrics in the enterprise (Windows 10)
 description: Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
 ms.assetid: d3f27d94-2226-4547-86c0-65c84d6df8Bc
+ms.reviewer: 
 keywords: Windows Hello, enterprise biometrics
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 
@@ -67,7 +72,7 @@ To allow fingerprint matching, you must have devices with fingerprint sensors an
 ### Facial recognition sensors
 To allow facial recognition, you must have devices with integrated special infrared (IR) sensors and software. Facial recognition sensors use special cameras that see in IR light, letting them tell the difference between a photo and a living person while scanning an employee’s facial features. These sensors, like the fingerprint sensors, must also include anti-spoofing measures (required) and a way to configure them (optional).
 
--   False Accept Rate (FAR): &lt;0.001
+-   False Accept Rate (FAR): &lt;0.001%
 
 -   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 

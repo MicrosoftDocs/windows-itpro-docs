@@ -1,8 +1,11 @@
 ---
 title: Planning for the App-V 5.1 Server Deployment
 description: Planning for the App-V 5.1 Server Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: eedd97c9-bee0-4749-9d1e-ab9528fba398
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -96,10 +99,10 @@ The following displays information about server-related protocols used by the Ap
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

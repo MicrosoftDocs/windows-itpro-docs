@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/18/2018
+ms.reviewer: 
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
 
@@ -24,13 +29,13 @@ Your environment is federated and you are ready to configure device registration
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
-Use this three phased approach for configuring device registration.
+Use this three-phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
-2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-syncrhonization)
+2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-synchronization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
 > [!NOTE]
-> Before proceeding, you should familiarize yourself with device regisration concepts such as:
+> Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
@@ -96,7 +101,7 @@ Federation server proxies are computers that run AD FS software that have been c
 Use the [Setting of a Federation Proxy](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
 
 ### Deploy Azure AD Connect
-Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
+Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
 
 When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
 
@@ -113,8 +118,8 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 ![Device Registration](images/hybridct/device2.png)
   
 2.  On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
-    
-    `Import-module activedirectory`  
+	
+	`Import-module activedirectory`  
 	`PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
 3.  On the pop-up window click **Yes**.
 
@@ -139,7 +144,7 @@ The above PSH creates the following objects:
 ### Create Service Connection Point (SCP) in Active Directory  
 If you plan to use Windows 10 domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
 1.  Open Windows PowerShell and execute the following:
-    
+	
 	`PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1" ` 
 
 > [!NOTE]
@@ -155,7 +160,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 3.  Run the following PowerShell command 
 
-    `PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred ` 
+	`PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred ` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
   
@@ -166,7 +171,7 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
 1.  Open Windows PowerShell and execute the following:  
 
-    `PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name] ` 
+	`PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name] ` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format  
 
@@ -219,100 +224,100 @@ The definition helps you to verify whether the values are present or if you need
 
 **`http://schemas.microsoft.com/ws/2012/01/accounttype`** - This claim must contain a value of **DJ**, which identifies the device as a domain-joined computer. In AD FS, you can add an issuance transform rule that looks like this:
 
-    @RuleName = "Issue account type for domain-joined computers"
-    c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value = "DJ"
-    );
+	@RuleName = "Issue account type for domain-joined computers"
+	c:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value = "DJ"
+	);
 
 #### Issue objectGUID of the computer account on-premises
 
 **`http://schemas.microsoft.com/identity/claims/onpremobjectguid`** - This claim must contain the **objectGUID** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
-    @RuleName = "Issue object GUID for domain-joined computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
-        query = ";objectguid;{0}", 
-        param = c2.Value
-    );
+	@RuleName = "Issue object GUID for domain-joined computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		store = "Active Directory", 
+		types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
+		query = ";objectguid;{0}", 
+		param = c2.Value
+	);
  
 #### Issue objectSID of the computer account on-premises
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
-    @RuleName = "Issue objectSID for domain-joined computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(claim = c2);
+	@RuleName = "Issue objectSID for domain-joined computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(claim = c2);
 
 #### Issue issuerID for computer when multiple verified domain names in Azure AD
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
-    @RuleName = "Issue account type with the value User when its not a computer"
-    NOT EXISTS(
-    [
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value == "DJ"
-    ]
-    )
-    => add(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value = "User"
-    );
-    
-    @RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
-    c1:[
-        Type == "http://schemas.xmlsoap.org/claims/UPN"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value == "User"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = regexreplace(
-        c1.Value, 
-        ".+@(?<domain>.+)", 
-        "http://${domain}/adfs/services/trust/"
-        )
-    );
-    
-    @RuleName = "Issue issuerID for domain-joined computers"
-    c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = "http://<verified-domain-name>/adfs/services/trust/"
-    );
+	@RuleName = "Issue account type with the value User when its not a computer"
+	NOT EXISTS(
+	[
+		Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value == "DJ"
+	]
+	)
+	=> add(
+		Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value = "User"
+	);
+	
+	@RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
+	c1:[
+		Type == "http://schemas.xmlsoap.org/claims/UPN"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value == "User"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+		Value = regexreplace(
+		c1.Value, 
+		".+@(?<domain>.+)", 
+		"http://${domain}/adfs/services/trust/"
+		)
+	);
+	
+	@RuleName = "Issue issuerID for domain-joined computers"
+	c:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+		Value = "http://<verified-domain-name>/adfs/services/trust/"
+	);
 
 
 In the claim above,
@@ -327,138 +332,138 @@ To get a list of your verified company domains, you can use the [Get-MsolDomain]
 
 **`http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
 
-    @RuleName = "Issue ImmutableID for computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ] 
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
-        query = ";objectguid;{0}", 
-        param = c2.Value
-    );
+	@RuleName = "Issue ImmutableID for computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	] 
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		store = "Active Directory", 
+		types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
+		query = ";objectguid;{0}", 
+		param = c2.Value
+	);
 
 #### Helper script to create the AD FS issuance transform rules
 
 The following script helps you with the creation of the issuance transform rules described above.
 
 	$multipleVerifiedDomainNames = $false
-    $immutableIDAlreadyIssuedforUsers = $false
-    $oneOfVerifiedDomainNames = 'example.com'   # Replace example.com with one of your verified domains
-    
-    $rule1 = '@RuleName = "Issue account type for domain-joined computers"
-    c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value = "DJ"
-    );'
+	$immutableIDAlreadyIssuedforUsers = $false
+	$oneOfVerifiedDomainNames = 'example.com'   # Replace example.com with one of your verified domains
+	
+	$rule1 = '@RuleName = "Issue account type for domain-joined computers"
+	c:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value = "DJ"
+	);'
 
-    $rule2 = '@RuleName = "Issue object GUID for domain-joined computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
-        query = ";objectguid;{0}", 
-        param = c2.Value
-    );'
+	$rule2 = '@RuleName = "Issue object GUID for domain-joined computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		store = "Active Directory", 
+		types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
+		query = ";objectguid;{0}", 
+		param = c2.Value
+	);'
 
-    $rule3 = '@RuleName = "Issue objectSID for domain-joined computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(claim = c2);'
+	$rule3 = '@RuleName = "Issue objectSID for domain-joined computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(claim = c2);'
 
-    $rule4 = ''
-    if ($multipleVerifiedDomainNames -eq $true) {
-    $rule4 = '@RuleName = "Issue account type with the value User when it is not a computer"
-    NOT EXISTS(
-    [
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value == "DJ"
-    ]
-    )
-    => add(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value = "User"
-    );
-    
-    @RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
-    c1:[
-        Type == "http://schemas.xmlsoap.org/claims/UPN"
-    ]
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
-        Value == "User"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = regexreplace(
-        c1.Value, 
-        ".+@(?<domain>.+)", 
-        "http://${domain}/adfs/services/trust/"
-        )
-    );
-    
-    @RuleName = "Issue issuerID for domain-joined computers"
-    c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = "http://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
-    );'
-    }
+	$rule4 = ''
+	if ($multipleVerifiedDomainNames -eq $true) {
+	$rule4 = '@RuleName = "Issue account type with the value User when it is not a computer"
+	NOT EXISTS(
+	[
+		Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value == "DJ"
+	]
+	)
+	=> add(
+		Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value = "User"
+	);
+	
+	@RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
+	c1:[
+		Type == "http://schemas.xmlsoap.org/claims/UPN"
+	]
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+		Value == "User"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+		Value = regexreplace(
+		c1.Value, 
+		".+@(?<domain>.+)", 
+		"http://${domain}/adfs/services/trust/"
+		)
+	);
+	
+	@RuleName = "Issue issuerID for domain-joined computers"
+	c:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+		Value = "http://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
+	);'
+	}
 
-    $rule5 = ''
-    if ($immutableIDAlreadyIssuedforUsers -eq $true) {
-    $rule5 = '@RuleName = "Issue ImmutableID for computers"
-    c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
-        Value =~ "-515$", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ] 
-    && 
-    c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
-        Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
-    ]
-    => issue(
-        store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
-        query = ";objectguid;{0}", 
-        param = c2.Value
-    );'
-    }
+	$rule5 = ''
+	if ($immutableIDAlreadyIssuedforUsers -eq $true) {
+	$rule5 = '@RuleName = "Issue ImmutableID for computers"
+	c1:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+		Value =~ "-515$", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	] 
+	&& 
+	c2:[
+		Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+		Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
+	]
+	=> issue(
+		store = "Active Directory", 
+		types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
+		query = ";objectguid;{0}", 
+		param = c2.Value
+	);'
+	}
 
 	$existingRules = (Get-ADFSRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline).IssuanceTransformRules 
 
@@ -475,8 +480,8 @@ The following script helps you with the creation of the issuance transform rules
 - If you have multiple verified domain names (as shown in the Azure AD portal or via the Get-MsolDomains cmdlet), set the value of **$multipleVerifiedDomainNames** in the script to **$true**. Also make sure that you remove any existing issuerid claim that might have been created by Azure AD Connect or via other means. Here is an example for this rule:
 
 
-        c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
-        => issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/")); 
+		c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
+		=> issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/")); 
 
 - If you have already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.
 
@@ -504,13 +509,13 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 >[!div class="nextstepaction"]
 [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
 
-<br><br>
+<br>
 
 <hr>
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. Configure Azure Device Registration (*You are here*)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

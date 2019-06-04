@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - RestrictedGroups
 description: Policy CSP - RestrictedGroups
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 03/15/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - RestrictedGroups
@@ -50,6 +52,12 @@ ms.date: 03/15/2018
 	<td></td>
 </tr>
 </table>
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -113,10 +121,15 @@ Here is an example:
 
 ```
 <groupmembership>
- <accessgroup desc="Administrators">
-    <member name="Contoso\Alice">
-    <member name = "S-188-5-5666-5-688">
-  </accessgroup>
+    <accessgroup desc="Administrators">
+        <member name="AzureAD\CSPTest@contoso.com" />
+        <member name="CSPTest22306\administrator" />
+        <member name = "AzureAD\patlewis@contoso.com" />
+    </accessgroup>
+    <accessgroup desc = "testcsplocal">
+        <member name = "CSPTEST22306\patlewis" />
+        <member name = "AzureAD\CSPTest@contoso.com" />
+    </accessgroup>
 </groupmembership>
 ```
 <!--/Example-->
@@ -126,12 +139,8 @@ Here is an example:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Take note:
+* You should include the local administrator while modifying the administrators group to prevent accidental loss of access
+* Include the entire UPN after AzureAD
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
-
-<!--/Policies-->
 

@@ -1,8 +1,11 @@
 ---
 title: Performance Guidance for Application Virtualization 5.1
 description: Performance Guidance for Application Virtualization 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5f2643c7-5cf7-4a29-adb7-45bf9f5b0364
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -743,10 +746,10 @@ The following terms are used when describing concepts and actions related to App
 
 -   **User Profile Management** – The controlled and structured approach to managing user components associated with the environment. For example, user profiles, preference and policy management, application control and application deployment. You can use scripting or third-party solutions configure the environment as needed.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

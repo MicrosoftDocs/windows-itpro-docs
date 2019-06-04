@@ -2,15 +2,17 @@
 title: Set up a multi-app kiosk  (Windows 10)
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
+ms.reviewer: 
+manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/04/2019
-ms.author: jdecker
+ms.date: 01/09/2019
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -39,36 +41,18 @@ New features and improvements | In update
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
+
+>[!TIP]
+>Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
+
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
 
 
-1. [Generate the Start layout for the kiosk device.](#startlayout)
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Kiosk (Preview)** for the profile type.
-9. Select **Kiosk - 1 setting available**.
-10. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
-12. Enter a friendly name for the configuration.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-13. Select an app type.
-  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
-  - For **Add managed apps**, select an app that you manage through Intune.
-  - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
-14. Select whether to enable the taskbar.
-15. Browse to and select the Start layout XML file that you generated in step 1.
-16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
-17. Select **OK**. You can add additional configurations or finish.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
-
->[!NOTE]
->Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
+To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
+<span id="provision" />
 ## Configure a kiosk using a provisioning package
 
 Process:
@@ -175,7 +159,8 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout). 
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
-- To configure the app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
+- If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both "C:\Program Files\internet explorer\iexplore.exe" and “C:\Program Files (x86)\Internet Explorer\iexplore.exe”. 
+- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
 
 When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:   
 
@@ -524,14 +509,12 @@ Provisioning packages can be applied to a device during the first-run experience
 #### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
-2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
 ![add a package option](images/package.png)
-
-
 
 
 
@@ -545,6 +528,7 @@ Multi-app kiosk mode is enabled by the [AssignedAccess configuration service pro
 If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
 
 
 
