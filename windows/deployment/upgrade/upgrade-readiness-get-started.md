@@ -33,7 +33,7 @@ Before you begin, consider reviewing the following helpful information:<BR>
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-Azure-subscription).
+2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-azure-subscription).
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
 4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 

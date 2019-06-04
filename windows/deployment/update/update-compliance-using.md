@@ -53,7 +53,7 @@ Update Compliance’s overview blade summarizes all the data Update Compliance p
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
 * AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Windows Defender Antivirus. 
 
-The blade also provides the time at which your Update Compliance workspace was [refreshed](#data-latency). 
+The blade also provides the time at which your Update Compliance workspace was [refreshed](#update-compliance-data-latency). 
 
 The following is a breakdown of the different sections available in Update Compliance:
 * [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It provides a summary of the different issues devices are facing relative to Windows 10 updates.
