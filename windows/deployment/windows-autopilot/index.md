@@ -22,11 +22,9 @@ ms.topic: article
 
 -   Windows 10
 
-Windows Autopilot modernizes Windows deployment with a zero-touch, self-service process that runs immediately after powering on a new computer for the first time. With Windows Autopilot, and employee can receive a new device and configure it to be business-ready with just a few clicks.  
+Windows Autopilot is a zero-touch, self-service Windows deployment platform introduced with Windows 10, version 1703. The Windows Autopilot process runs immediately after powering on a new computer for the first time, enabling employees to configure new devices to be business-ready with just a few clicks.  
 
-This guide is intended for use by an IT-specialist, system architect, or business decision maker. The guide provides an overview of how Windows Autopilot deployment works, including detailed requirements, deployment scenarios, and platform capabilities. The document highlights options that are available to you when planning a modern, cloud-joined Windows 10 deployment strategy. Before you read this guide, you should have a good understanding of your organizational requirements.
-
-When you are ready to deploy client devices with Windows Autopilot, see the detailed configuration procedures documented for your chosen [platform](windows-autopilot-platforms.md) (recommended platform: [Intune](https://docs.microsoft.com/en-us/intune/enrollment-autopilot)).
+This guide is intended for use by an IT-specialist, system architect, or business decision maker. The guide provides information about how Windows Autopilot deployment works, including detailed requirements, deployment scenarios, and platform capabilities. The document highlights options that are available to you when planning a modern, cloud-joined Windows 10 deployment strategy. Links are provided to detailed step by step configuration procedures which depend on the Windows Autopilot [platform](windows-autopilot-platforms.md) that you have chosen.
 
 ## In this guide
 
