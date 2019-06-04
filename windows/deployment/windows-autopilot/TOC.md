@@ -1,12 +1,12 @@
 # [Windows Autopilot deployment](index.md)
-
+# [What's new](windows-autopilot-whats-new.md)
 # Understanding Windows Autopilot
 ## [Overview](windows-autopilot.md)
 ## [Requirements](windows-autopilot-requirements.md)
 ## [Platforms](windows-autopilot-platforms.md)
 ## [Scenarios and capabilities](windows-autopilot-scenarios.md)
 ## [Get started](demonstrate-deployment-on-vm.md)
-## [What's new](windows-autopilot-whats-new.md)
+
 
 # Deployment scenarios
 ## [User-driven mode](user-driven.md)

@@ -30,6 +30,10 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 
 The following topics are available in this guide:
 
+### What's new
+
+Windows Autopilot is always being updated with [new features](windows-autopilot-whats-new.md)!
+
 ### Understanding Windows Autopilot
 
 <table>
@@ -38,7 +42,6 @@ The following topics are available in this guide:
 <tr><td>[Platforms](windows-autopilot-platforms.md)<td>A summary of platforms available for registering Windows Autopilot devices.
 <tr><td>[Scenarios and Capabilities](windows-autopilot-scenarios.md)<td>A summary of Windows Autopilot deployment scenarios and capabilities.
 <tr><td>[Get started](demonstrate-deployment-on-vm.md)<td>Interested in trying out Autopilot? See this step-by-step walkthrough to test Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account.
-<tr><td>[What's new](windows-autopilot-whats-new.md)<td>Windows Autopilot is always being updated with new features! Read about the latest new capabilities here.
 </table>
 
 ### Deployment scenarios
