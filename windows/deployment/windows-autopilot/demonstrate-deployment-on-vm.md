@@ -1,5 +1,5 @@
 ---
-title: Demonstrate Autopilot deployment on a VM
+title: Demonstrate Autopilot deployment
 ms.reviewer: 
 manager: laurawi
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
@@ -17,13 +17,17 @@ ms.custom: autopilot
 ---
 
 
-# Demonstrate Autopilot deployment on a VM
+# Demonstrate Autopilot deployment
 
 **Applies to**
 
 -   Windows 10
 
-In this topic you'll learn how to set-up a Windows Autopilot deployment for a virtual machine (VM) using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
+
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+
+>Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
 The following video provides an overview of the process:
 

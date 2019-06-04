@@ -44,4 +44,5 @@ You can utilize Windows Autopilot self-deploying mode to register the device to 
 
 ## Related topics
 
+[What's new in Microsoft Intune](https://docs.microsoft.com/intune/whats-new)<br>
 [What's new in Windows 10](https://docs.microsoft.com/windows/whats-new/)
