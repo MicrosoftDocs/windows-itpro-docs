@@ -21,7 +21,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Office*
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is for Windows 10, version 1903.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
