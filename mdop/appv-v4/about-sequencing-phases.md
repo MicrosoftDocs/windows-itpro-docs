@@ -26,7 +26,7 @@ The four phases to sequencing an application and creating a virtual application 
     **Important**  
     To view the advanced options select **Show Advanced Monitoring Options** on the **Package Information** page.
 
-     
+     
 
 2.  **Launch phase**—During the launch phase, you can specify any required file associations and security descriptors that should be configured with the package. You should open the application as many times as necessary to ensure application functionality and stability.
 
@@ -39,9 +39,9 @@ The four phases to sequencing an application and creating a virtual application 
 
 [Application Virtualization Sequencer](application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

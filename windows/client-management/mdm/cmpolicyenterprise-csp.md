@@ -20,7 +20,7 @@ The CMPolicyEnterprise configuration service provider is used by the enterprise 
 > **Note**  
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
 
@@ -63,7 +63,7 @@ Specifies whether the list of connections is in preference order.
 
 A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
-<a href="" id="connxxx"></a>**Conn****_XXX_**  
+<a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
@@ -112,7 +112,7 @@ For `CMST_CONNECTION_TYPE`, specify the GUID for the desired connection type. Th
 </tbody>
 </table>
 
- 
+ 
 
 For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network type. The curly brackets {} around the GUID are required. The following network types are available:
 
@@ -187,7 +187,7 @@ For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network typ
 </tbody>
 </table>
 
- 
+ 
 
 For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type. The curly brackets {} around the GUID are required. The following device types are available:
 
@@ -222,7 +222,7 @@ For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type.
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="type"></a>**Type**  
 Specifies the type of connection being referenced. The following list describes the available connection types:
@@ -498,16 +498,16 @@ Adding a host-based mapping policy:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

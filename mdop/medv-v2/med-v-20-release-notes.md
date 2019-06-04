@@ -41,7 +41,7 @@ This section provides the most up-to-date information about issues with the Micr
 **Note**  
 There are currently no known issues with MED-V 2.0.
 
- 
+ 
 
 ## Release Notes Copyright Information
 
@@ -58,9 +58,9 @@ Microsoft, Active Directory, ActiveSync, MS-DOS, Windows, Windows Server, and W
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

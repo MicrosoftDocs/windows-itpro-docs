@@ -19,7 +19,7 @@ The Maps configuration service provider (CSP) is used to configure the maps to d
 
 > **Note**  The Maps CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the Maps configuration service provider in tree format.
 
@@ -31,7 +31,7 @@ Root node.
 <a href="" id="packages"></a>**Packages**  
 Represents the map packages installed on the device.
 
-<a href="" id="packages-package"></a>**Packages/****_Package_**  
+<a href="" id="packages-package"></a>**Packages/**<strong>*Package*</strong>  
 A GUID that represents a map package. When you add a *Package* node, Windows adds it to the queue for download to the device. See the table below for the list of various maps and corresponding GUIDS.
 
 <a href="" id="packages-package-status"></a>**Packages/*Package*/Status**  
@@ -122,7 +122,7 @@ Here is a list of GUIDs of the most downloaded reqions.
 | Wisconsin                     | 0b5a98f7-489d-4a07-859b-4e01fe9e1b32 |
 | Wyoming                       | 360e0c25-a3bb-4e29-939a-3631eae46e9a |
 
- 
+ 
 
 Here is an example queuing a map package of New York for download.
 
@@ -160,9 +160,9 @@ Here is an example that gets the status of the New York map package on the devic
 </SyncML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

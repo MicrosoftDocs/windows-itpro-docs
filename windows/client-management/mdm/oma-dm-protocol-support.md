@@ -64,7 +64,7 @@ The following table shows the OMA DM standards that Windows uses.
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>DM protocol commands</p></td>
-<td style="vertical-align:top"><p>The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see &quot;SyncML Representation Protocol Device Management Usage (OMA-SyncML-DMRepPro-V1_1_2-20030613-A)&quot; available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).</p>
+<td style="vertical-align:top"><p>The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see &quot;SyncML Representation Protocol Device Management Usage (OMA-SyncML-DMRepPro-V1_1_2-20030613-A)&quot; available from the <a href="https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/" data-raw-source="[OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/)">OMA website</a>.</p>
 <ul>
 <li><p>Add (Implicit Add supported)</p></li>
 <li><p>Alert (DM alert): Generic alert (1226) is used by enterprise management client when the user triggers an MDM unenrollment action from the device or when a CSP finishes some asynchronous actions. Device alert (1224) is used to notify the server some device triggered event.</p></li>
@@ -123,23 +123,22 @@ The following table shows the OMA DM standards that Windows uses.
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>Provisioning Files</p></td>
-<td style="vertical-align:top"><p>Provisioning XML must be well formed and follow the definition in [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.</p>
+<td style="vertical-align:top"><p>Provisioning XML must be well formed and follow the definition in <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p>
 <p>If an XML element that is not a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</p>
+<strong>Note</strong><br/><p>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>WBXML support</p></td>
-<td style="vertical-align:top"><p>Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.</p></td>
+<td style="vertical-align:top"><p>Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>Handling of large objects</p></td>
-<td style="vertical-align:top"><p>In Windows 10, version 1511, client support for uploading large objects to the server was added.</p></td>
+<td style="vertical-align:top"><p>In Windows 10, version 1511, client support for uploading large objects to the server was added.</p></td>
 </tr>
 </tbody>
 </table>
@@ -210,10 +209,10 @@ Common elements are used by other OMA DM element types. The following table list
 <td style="vertical-align:top"><p>SessionID</p></td>
 <td style="vertical-align:top"><p>Specifies the identifier of the OMA DM session associated with the containing message.</p>
 <div class="alert">
-<strong>Note</strong>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.
+<strong>Note</strong>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -373,13 +372,13 @@ When using SyncML in OMA DM, there are standard response status codes that are r
 | 507         | `Atomic` failed. One of the operations in an `Atomic` block failed.                                                                                                                                                               |
 | 516         | `Atomic` roll back failed. An `Atomic` operation failed and the command was not rolled back successfully.                                                                                                                         |
 
- 
+
 
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+
 
 
 

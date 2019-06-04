@@ -358,8 +358,8 @@ The default value is an empty string. For more information, see [ServicesAllowed
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
 - [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-<!--EndHoloLensBusiness-->
-<hr/>
+  <!--EndHoloLensBusiness-->
+  <hr/>
 
 Footnotes:
 

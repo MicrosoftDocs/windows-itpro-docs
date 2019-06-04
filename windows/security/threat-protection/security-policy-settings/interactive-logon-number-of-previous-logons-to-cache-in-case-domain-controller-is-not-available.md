@@ -66,7 +66,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | No effect| 
 | Member Server Effective Default Settings | 10 logons| 
 | Client Computer Effective Default Settings| 10 logons| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

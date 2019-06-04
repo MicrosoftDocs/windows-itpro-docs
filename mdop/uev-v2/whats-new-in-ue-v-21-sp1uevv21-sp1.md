@@ -56,7 +56,7 @@ Printer roaming in UE-V requires one of these scenarios:
 **Note**  
 The UE-V printer roaming feature does **not** roam printer settings or preferences, such as printing double-sided.
 
- 
+ 
 
 ## Office 2013 Settings Location Template
 
@@ -66,7 +66,7 @@ UE-V 2.1 and 2.1 SP1 include the Microsoft Office 2013 settings location templat
 **Note**  
 An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
- 
+ 
 
 Previously UE-V included Microsoft Office 2010 settings location templates that were automatically distributed and registered with the UE-V Agent. UE-V 2.1 works with Office 365 to determine whether Office 2013 settings are roamed by Office 365. If settings are roamed by Office 365 they are not roamed by UE-V. [Overview of user and roaming settings for Office 2013](https://go.microsoft.com/fwlink/p/?LinkID=391220) provides more information.
 
@@ -92,9 +92,9 @@ UE-V 2.1 ships [Office 2013 and Office 2010 templates](https://technet.microsoft
 
 [Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-sp1-release-notes.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ Follow the steps in this guide to quickly deploy Microsoft User Experience Virtu
 **Note**  
 The information in this section is repeated in greater detail throughout the rest of the documentation. So if you already know that UE-V 2 is the right solution and you don’t need to evaluate it, you can just go right to [Prepare a UE-V 2.x Deployment](prepare-a-ue-v-2x-deployment-new-uevv2.md).
 
- 
+ 
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows app settings. Make sure your test environment includes two or more user computers that share network access and you’ll be evaluating UE-V in just a short time.
 
@@ -160,7 +160,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
         </tbody>
         </table>
 
-         
+         
 
     2.  Set the following NTFS file system permissions for the settings storage location folder.
 
@@ -191,7 +191,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
         </tbody>
         </table>
 
-         
+         
 
 **Security Note:  **
 
@@ -259,9 +259,9 @@ You can change the settings in Computer B back to the original Computer A settin
 
 
 
- 
+ 
 
- 
+ 
 
 
 

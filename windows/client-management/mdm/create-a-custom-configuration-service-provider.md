@@ -45,11 +45,11 @@ This code must be compiled into a single .dll file and added to a package by usi
 <tbody>
 <tr class="odd">
 <td><p><strong>File location</strong></p></td>
-<td><p>%DataDrive%\SharedData\OEM\CSP\</p></td>
+<td><p>%DataDrive%\SharedData\OEM\CSP&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p><strong>Registry location</strong></p></td>
-<td><p>$(HKLM.SOFTWARE)\OEM\CSP\</p></td>
+<td><p>$(HKLM.SOFTWARE)\OEM\CSP&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -88,7 +88,7 @@ To make the configuration service provider accessible from WAP XML, you must reg
 </RegKeys>
 ```
 
- 
+ 
 
 
 

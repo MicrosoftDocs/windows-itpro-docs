@@ -233,9 +233,9 @@ The following list describes the characteristics and parameters.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

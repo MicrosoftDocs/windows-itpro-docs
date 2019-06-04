@@ -87,9 +87,9 @@ The following is an example of what your XML file should look like when you’re
 ```
 In the above example, the following is true:
 
--   www.cpandl.com, as the main domain, must use IE8 Enterprise Mode. However, www.cpandl.com/images must use IE7 Enterprise Mode.
+- www.cpandl.com, as the main domain, must use IE8 Enterprise Mode. However, www.cpandl.com/images must use IE7 Enterprise Mode.
 
--   contoso.com, and all of its domain paths, can use the default compatibility mode for the site.
+- contoso.com, and all of its domain paths, can use the default compatibility mode for the site.
 
 To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file. <p>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Enterprise Mode Site List Manager (schema v.2).
 
@@ -114,9 +114,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
- 
+ 
 
- 
+ 
 
 
 

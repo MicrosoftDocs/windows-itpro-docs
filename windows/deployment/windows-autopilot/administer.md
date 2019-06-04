@@ -40,7 +40,7 @@ Several platforms are available to register devices with Windows Autopilot. A su
 
 <tr>
 <td><a href="https://docs.microsoft.com/en-us/partner-center/autopilot">Partner Center</a></td>
-<td>YES - 1000 at a time max<b>\*</b></td>
+<td>YES - 1000 at a time max<b><em></b></td>
 <td>YES</td>
 <td>Tuple or PKID or 4K HH</td>
 </tr>
@@ -48,7 +48,7 @@ Several platforms are available to register devices with Windows Autopilot. A su
 <tr>
 <td><a href="https://docs.microsoft.com/en-us/intune/enrollment-autopilot">Intune</a></td>
 <td>YES - 175 at a time max</td>
-<td>YES<b>\*</b></td>
+<td>YES<b></em></b></td>
 <td>4K HH</td>
 </tr>
 

@@ -33,28 +33,28 @@ The following checklist provides a high-level list of items to consider and outl
 <tbody>
 <tr class="odd">
 <td align="left"><p>Review the components of a MED-V deployment.</p></td>
-<td align="left"><p>[High-Level Architecture](high-level-architecturemedv2.md)</p></td>
+<td align="left"><p><a href="high-level-architecturemedv2.md" data-raw-source="[High-Level Architecture](high-level-architecturemedv2.md)">High-Level Architecture</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ensure that your computing environment meets the supported configurations required for installing MED-V 2.0.</p></td>
-<td align="left"><p>[MED-V 2.0 Supported Configurations](med-v-20-supported-configurations.md)</p></td>
+<td align="left"><p><a href="med-v-20-supported-configurations.md" data-raw-source="[MED-V 2.0 Supported Configurations](med-v-20-supported-configurations.md)">MED-V 2.0 Supported Configurations</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Determine how you want to design your MED-V deployment.</p></td>
-<td align="left"><p>[Define and Plan your MED-V Deployment](define-and-plan-your-med-v-deployment.md)</p></td>
+<td align="left"><p><a href="define-and-plan-your-med-v-deployment.md" data-raw-source="[Define and Plan your MED-V Deployment](define-and-plan-your-med-v-deployment.md)">Define and Plan your MED-V Deployment</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Review the list of best practices for ensuring that your MED-V deployment environment is more secure.</p></td>
-<td align="left"><p>[Security and Protection for MED-V](security-and-protection-for-med-v.md)</p></td>
+<td align="left"><p><a href="security-and-protection-for-med-v.md" data-raw-source="[Security and Protection for MED-V](security-and-protection-for-med-v.md)">Security and Protection for MED-V</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

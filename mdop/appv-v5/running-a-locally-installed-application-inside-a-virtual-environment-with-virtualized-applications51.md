@@ -67,7 +67,7 @@ There is no Group Policy setting available to manage this registry key, so you h
 </tbody>
 </table>
 
- 
+ 
 
 ### Steps to create the subkey
 
@@ -112,7 +112,7 @@ There is no Group Policy setting available to manage this registry key, so you h
     </tbody>
     </table>
 
-     
+     
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 
@@ -141,7 +141,7 @@ Use the following example syntax, and substitute the name of your package for **
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\\**<em>, where **executable</em>* is the name of the application, for example: Get-AppvClientPackage \*Word\*.
 
 ## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
 
@@ -171,7 +171,7 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\\**<em>, where **executable</em>* is the name of the application, for example: Get-AppvClientPackage \*Word\*.
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
@@ -185,9 +185,9 @@ This method lets you launch any command within the context of an App-V package, 
 
 [Technical Reference for App-V 5.1](technical-reference-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

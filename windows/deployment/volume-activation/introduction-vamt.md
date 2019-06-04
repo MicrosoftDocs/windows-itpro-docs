@@ -62,5 +62,5 @@ VAMT provides a single, graphical user interface for managing activations, and f
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+ 
+ 

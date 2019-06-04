@@ -38,28 +38,28 @@ You can customize the Self-Service Portal in the following ways:
 <tbody>
 <tr class="odd">
 <td align="left"><p>You can brand the Self-Service Portal with your company name, Help Desk URL, and can change the Session Time-out setting to make the end user’s session expire after a specified period of inactivity.</p></td>
-<td align="left"><p>[How to Set the Self-Service Portal Branding and Session Time-out](how-to-set-the-self-service-portal-branding-and-session-time-out.md)</p></td>
+<td align="left"><p><a href="how-to-set-the-self-service-portal-branding-and-session-time-out.md" data-raw-source="[How to Set the Self-Service Portal Branding and Session Time-out](how-to-set-the-self-service-portal-branding-and-session-time-out.md)">How to Set the Self-Service Portal Branding and Session Time-out</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>You can turn the Self-Service Portal notice text on or off.</p></td>
-<td align="left"><p>[How to Turn the Self-Service Portal Notice Text On or Off](how-to-turn-the-self-service-portal-notice-text-on-or-off.md)</p></td>
+<td align="left"><p><a href="how-to-turn-the-self-service-portal-notice-text-on-or-off.md" data-raw-source="[How to Turn the Self-Service Portal Notice Text On or Off](how-to-turn-the-self-service-portal-notice-text-on-or-off.md)">How to Turn the Self-Service Portal Notice Text On or Off</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>You can configure a localized version of the Self-Service Portal &quot;HelpdeskText&quot; statement, which tells end users how to get additional help when they are using the Self-Service Portal.</p></td>
-<td align="left"><p>[How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information](how-to-localize-the-helpdesktext-statement-that-points-users-to-more-self-service-portal-information.md)</p></td>
+<td align="left"><p><a href="how-to-localize-the-helpdesktext-statement-that-points-users-to-more-self-service-portal-information.md" data-raw-source="[How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information](how-to-localize-the-helpdesktext-statement-that-points-users-to-more-self-service-portal-information.md)">How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>You can configure a localized version of the Self-Service Portal &quot;HelpdeskURL&quot; to display to end users by default.</p></td>
-<td align="left"><p>[How to Localize the Self-Service Portal “HelpdeskURL”](how-to-localize-the-self-service-portal-helpdeskurl.md)</p></td>
+<td align="left"><p><a href="how-to-localize-the-self-service-portal-helpdeskurl.md" data-raw-source="[How to Localize the Self-Service Portal “HelpdeskURL”](how-to-localize-the-self-service-portal-helpdeskurl.md)">How to Localize the Self-Service Portal “HelpdeskURL”</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>You can configure localized notice text to display to end users by default in the Self-Service Portal.</p></td>
-<td align="left"><p>[How to Localize the Self-Service Portal Notice Text](how-to-localize-the-self-service-portal-notice-text.md)</p></td>
+<td align="left"><p><a href="how-to-localize-the-self-service-portal-notice-text.md" data-raw-source="[How to Localize the Self-Service Portal Notice Text](how-to-localize-the-self-service-portal-notice-text.md)">How to Localize the Self-Service Portal Notice Text</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -68,7 +68,7 @@ You can customize the Self-Service Portal in the following ways:
 
 [How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

@@ -22,7 +22,7 @@ Creating a template enables you to save all of the settings of a particular vers
 **Note**  
 A template is an uneditable, static version of a GPO for use as a starting point for creating new, editable GPOs.
 
- 
+ 
 
 A user account with the Editor or AGPM Administrator (Full Control) role or necessary permissions in Advanced Group Policy Management (AGPM) is required to complete this procedure. Review the details in "Additional considerations" in this topic.
 
@@ -52,9 +52,9 @@ A user account with the Editor or AGPM Administrator (Full Control) role or nece
 
 -   [Request the Creation of a New Controlled GPO](request-the-creation-of-a-new-controlled-gpo-agpm30ops.md)
 
- 
+ 
 
- 
+ 
 
 
 

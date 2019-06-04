@@ -32,23 +32,23 @@ The following table shows the methods defined by this interface that OEMs must i
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IConfigServiceProvider2::ConfigManagerNotification](iconfigserviceprovider2configmanagernotification.md)</p></td>
+<td><p><a href="iconfigserviceprovider2configmanagernotification.md" data-raw-source="[IConfigServiceProvider2::ConfigManagerNotification](iconfigserviceprovider2configmanagernotification.md)">IConfigServiceProvider2::ConfigManagerNotification</a></p></td>
 <td><p>Enables ConfigManager2 to send notifications to a configuration service provider of events such as when the configuration service provider is loaded or unloaded, when rollbacks are performed, and when actions are called on nodes.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IConfigServiceProvider2::GetNode](iconfigserviceprovider2getnode.md)</p></td>
+<td><p><a href="iconfigserviceprovider2getnode.md" data-raw-source="[IConfigServiceProvider2::GetNode](iconfigserviceprovider2getnode.md)">IConfigServiceProvider2::GetNode</a></p></td>
 <td><p>Returns a node from the configuration service provider based on the path relative to the root node.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

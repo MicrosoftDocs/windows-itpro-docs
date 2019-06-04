@@ -62,7 +62,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Network Service<br/>Local Service| 
 | Member Server Effective Default Settings | Network Service<br/>Local Service| 
 | Client Computer Effective Default Settings | Network Service<br/>Local Service| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -131,7 +131,7 @@ For details on Touchback and Inkback, see the user guide at http://www.microsoft
 
 ## See also
 
-[Watch the video (opens in a pop-up media player)][http://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  
+[Watch the video (opens in a pop-up media player)][<http://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov>)  
 
 
 

@@ -64,7 +64,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ### Operating system version differences
 
 The default value of this setting has changed between operating systems as follows:

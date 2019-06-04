@@ -33,32 +33,32 @@ To deploy the Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 Serve
 <tbody>
 <tr class="odd">
 <td align="left"><p>Install the MBAM 2.5 Server software on each server where you want to configure an MBAM Server feature.</p></td>
-<td align="left"><p>[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)</p></td>
+<td align="left"><p><a href="installing-the-mbam-25-server-software.md" data-raw-source="[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)">Installing the MBAM 2.5 Server Software</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure the databases, reports, web applications, and the optional System Center Configuration Manager Integration topology.</p>
 <p>You can use the MBAM Server Configuration wizard or Windows PowerShell cmdlets to do the configuration.</p></td>
-<td align="left"><p>[Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)</p></td>
+<td align="left"><p><a href="configuring-the-mbam-25-server-features.md" data-raw-source="[Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)">Configuring the MBAM 2.5 Server Features</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Validate the MBAM Server configuration.</p></td>
-<td align="left"><p>[Validating the MBAM 2.5 Server Feature Configuration](validating-the-mbam-25-server-feature-configuration.md)</p></td>
+<td align="left"><p><a href="validating-the-mbam-25-server-feature-configuration.md" data-raw-source="[Validating the MBAM 2.5 Server Feature Configuration](validating-the-mbam-25-server-feature-configuration.md)">Validating the MBAM 2.5 Server Feature Configuration</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Deploying MBAM 2.5](deploying-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

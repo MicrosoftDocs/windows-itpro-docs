@@ -49,7 +49,7 @@ Use the following Windows PowerShell cmdlets to recover computers or drives that
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="---------mbam-cmdlet-help"></a> MBAM cmdlet Help
 
@@ -70,24 +70,24 @@ Windows PowerShell Help for MBAM cmdlets is available in the following formats:
 <tbody>
 <tr class="odd">
 <td align="left"><p>At a Windows PowerShell command prompt, type <strong>Get-Help</strong> &lt;<em>cmdlet</em>&gt;</p></td>
-<td align="left"><p>To upload the latest Windows PowerShell cmdlets, follow the instructions in [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)</p></td>
+<td align="left"><p>To upload the latest Windows PowerShell cmdlets, follow the instructions in <a href="configuring-mbam-25-server-features-by-using-windows-powershell.md" data-raw-source="[Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)">Configuring MBAM 2.5 Server Features by Using Windows PowerShell</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393498" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393498">https://go.microsoft.com/fwlink/?LinkId=393498</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393497" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393497">https://go.microsoft.com/fwlink/?LinkId=393497</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393499" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393499">https://go.microsoft.com/fwlink/?LinkId=393499</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -98,7 +98,7 @@ Windows PowerShell Help for MBAM cmdlets is available in the following formats:
 
 [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

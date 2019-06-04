@@ -22,7 +22,7 @@ You can use the following procedure to change the cache size for any server dire
 **Note**  
 Although you can change the cache size, unless your configuration specifically requires you to change the size, it is recommended that you leave the cache size set to the default values.
 
- 
+ 
 
 **To change the server cache size**
 
@@ -47,9 +47,9 @@ Although you can change the cache size, unless your configuration specifically r
 
 [How to Manage Servers in the Server Management Console](how-to-manage-servers-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ Although it is optional, you can compact the virtual hard disk (VHD) to reclaim 
 **Important**  
 Before you proceed, create a backup copy of your Windows XP image.
 
- 
+ 
 
 **Preparing the Virtual Hard Disk**
 
@@ -113,9 +113,9 @@ Create a backup copy of your compacted virtual hard disk.
 
 [Technical Reference for MED-V](technical-reference-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

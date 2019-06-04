@@ -22,7 +22,7 @@ After you request access to additional applications and permission is granted by
 **Note**  
 By default, publishing information is refreshed on user log in.
 
- 
+ 
 
 **To refresh the publishing information**
 
@@ -37,7 +37,7 @@ By default, publishing information is refreshed on user log in.
 
     -   Right-click the server in the **Results** pane, and then select **Properties** from the pop-up menu. Select the **Refresh** tab, and then click the **Refresh** button.
 
-     
+     
 
 ## Related topics
 
@@ -46,9 +46,9 @@ By default, publishing information is refreshed on user log in.
 
 [How to Set Up Publishing Refresh on Login](how-to-set-up-publishing-refresh-on-login.md)
 
- 
+ 
 
- 
+ 
 
 
 

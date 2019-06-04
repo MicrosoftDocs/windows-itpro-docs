@@ -18,7 +18,7 @@ ms.topic: article
 
 # Windows Autopilot for existing devices
 
-**Applies to: Windows 10**
+**Applies to: Windows 10**
 
 Modern desktop management with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices. The apps you need for work can be automatically installed. Your work profile is synchronized, so you can resume working right away.
 
@@ -67,19 +67,19 @@ See the following examples.
     ```
 
 3. Enter the following lines and provide Intune administrative credentials
-    - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
+   - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
 
-    ```
-    Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
-    ```
-    The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
-    <br>See the following example:
+     ```
+     Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
+     ```
+     The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
+     <br>See the following example:
 
-    ![Azure AD authentication](images/pwd.png)
+     ![Azure AD authentication](images/pwd.png)
 
-    If this is the first time you’ve used the Intune Graph APIs, you’ll also be prompted to enable read and write permissions for Microsoft Intune PowerShell. To enable these permissions:
-    - Select **Consent on behalf or your organization**
-    - Click **Accept**
+     If this is the first time you’ve used the Intune Graph APIs, you’ll also be prompted to enable read and write permissions for Microsoft Intune PowerShell. To enable these permissions:
+   - Select **Consent on behalf or your organization**
+   - Click **Accept**
 
 4. Next, retrieve and display all the Autopilot profiles available in the specified Intune tenant in JSON format:
 
@@ -108,17 +108,19 @@ See the following examples.
 
     See the following table for a description of properties used in the JSON file.
 
-    | Property | Description |
-    | --- | --- |
-    | Version (number, optional) | The version number that identifies the format of the JSON file.  For Windows 10 1809, the version specified must be 2049. |
-    | CloudAssignedTenantId (guid, required) | The Azure Active Directory tenant ID that should be used.  This is the GUID for the tenant, and can be found in properties of the tenant.  The value should not include braces. |
-    | CloudAssignedTenantDomain (string, required) | The Azure Active Directory tenant name that should be used, e.g. tenant.onmicrosoft.com. |
-    | CloudAssignedOobeConfig (number, required) | This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16 |
-    | CloudAssignedDomainJoinMethod (number, required) | This property should be set to 0 and specifies that the device should join Azure AD. |
-    | CloudAssignedForcedEnrollment (number, required) | Specifies that the device should require AAD Join and MDM enrollment.  <br>0 = not required, 1 = required.   |
-    | ZtdCorrelationId (guid, required) | A unique GUID (without braces) that will be provided to Intune as part of the registration process. ZtdCorrelationId will be included in enrollment message as “OfflineAutoPilotEnrollmentCorrelator”. This attribute will be present only if the enrollment is taking place on a device registered with Zero Touch Provisioning via offline registration.|
-    | CloudAssignedAadServerData (encoded JSON string, required) | An embedded JSON string used for branding. It requires AAD corp branding enabled. <br> Example value: "CloudAssignedAadServerData":  "{\"ZeroTouchConfig\":{\"CloudAssignedTenantUpn\":\"\",\"CloudAssignedTenantDomain\":\"tenant.onmicrosoft.com\"}}"|
-    | CloudAssignedDeviceName (string, optional) | The name automatically assigned to the computer.  This follows the naming pattern convention that can be configured in Intune as part of the Autopilot profile, or can specify an explicit name to use. |
+
+   |                          Property                          |                                                                                                                                                                        Description                                                                                                                                                                         |
+   |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |                 Version (number, optional)                 |                                                                                                                 The version number that identifies the format of the JSON file.  For Windows 10 1809, the version specified must be 2049.                                                                                                                  |
+   |           CloudAssignedTenantId (guid, required)           |                                                                                      The Azure Active Directory tenant ID that should be used.  This is the GUID for the tenant, and can be found in properties of the tenant.  The value should not include braces.                                                                                       |
+   |        CloudAssignedTenantDomain (string, required)        |                                                                                                                                  The Azure Active Directory tenant name that should be used, e.g. tenant.onmicrosoft.com.                                                                                                                                  |
+   |         CloudAssignedOobeConfig (number, required)         |                                                                           This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16                                                                           |
+   |      CloudAssignedDomainJoinMethod (number, required)      |                                                                                                                                    This property should be set to 0 and specifies that the device should join Azure AD.                                                                                                                                    |
+   |      CloudAssignedForcedEnrollment (number, required)      |                                                                                                                         Specifies that the device should require AAD Join and MDM enrollment.  <br>0 = not required, 1 = required.                                                                                                                         |
+   |             ZtdCorrelationId (guid, required)              | A unique GUID (without braces) that will be provided to Intune as part of the registration process. ZtdCorrelationId will be included in enrollment message as “OfflineAutoPilotEnrollmentCorrelator”. This attribute will be present only if the enrollment is taking place on a device registered with Zero Touch Provisioning via offline registration. |
+   | CloudAssignedAadServerData (encoded JSON string, required) |                                                  An embedded JSON string used for branding. It requires AAD corp branding enabled. <br> Example value: "CloudAssignedAadServerData":  "{\"ZeroTouchConfig\":{\"CloudAssignedTenantUpn\":\"\",\"CloudAssignedTenantDomain\":\"tenant.onmicrosoft.com\"}}"                                                   |
+   |         CloudAssignedDeviceName (string, optional)         |                                                                          The name automatically assigned to the computer.  This follows the naming pattern convention that can be configured in Intune as part of the Autopilot profile, or can specify an explicit name to use.                                                                           |
+
 
 5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below:
 
@@ -159,19 +161,19 @@ See the following examples.
 1. Navigate to **\Assets and Compliance\Overview\Device Collections**
 2. On the ribbon, click **Create** and then click **Create Device Collection**
 3. In the **Create Device Collection Wizard** enter the following **General** details:
-    - <u>Name</u>: **Autopilot for existing devices collection**
-    - Comment: (optional)
-    - <u>Limiting collection</u>: Click **Browse** and select **All Systems**
+   - <u>Name</u>: **Autopilot for existing devices collection**
+   - Comment: (optional)
+   - <u>Limiting collection</u>: Click **Browse** and select **All Systems**
 
-    >[!NOTE]
-    >You can optionally choose to use an alternative collection for the limiting collection. The device to be upgraded must be running the ConfigMgr agent in the collection that you select.
+     >[!NOTE]
+     >You can optionally choose to use an alternative collection for the limiting collection. The device to be upgraded must be running the ConfigMgr agent in the collection that you select.
 
 4. Click **Next**, then enter the following **Membership Rules** details:
-    - Click **Add Rule** and specify either a direct or query based collection rule to add the target test Windows 7 devices to the new collection.
-    - For example, if the hostname of the computer to be wiped and reloaded is PC-01 and you wish to use Name as the attribute, click **Add Rule > Direct Rule > (wizard opens) > Next** and then enter **PC-01** next to **Value**. Click **Next** and then choose **PC-01** under **Resources**. See the following examples.
+   - Click **Add Rule** and specify either a direct or query based collection rule to add the target test Windows 7 devices to the new collection.
+   - For example, if the hostname of the computer to be wiped and reloaded is PC-01 and you wish to use Name as the attribute, click **Add Rule > Direct Rule > (wizard opens) > Next** and then enter **PC-01** next to **Value**. Click **Next** and then choose **PC-01** under **Resources**. See the following examples.
 
-    ![Named resource1](images/pc-01a.png)
-    ![Named resource2](images/pc-01b.png)
+     ![Named resource1](images/pc-01a.png)
+     ![Named resource2](images/pc-01b.png)
 
 5. Continue creating the device collection with the default settings:
     - Use incremental updates for this collection: not selected
@@ -187,28 +189,28 @@ See the following examples.
 2. On the Home ribbon, click **Create Task Sequence**
 3. Select **Install an existing image package** and then click **Next**
 4. In the Create Task Sequence Wizard enter the following details:
-    - <u>Task sequence name</u>: **Autopilot for existing devices**
-    - <u>Boot Image</u>: Click **Browse** and select a Windows 10 boot image (1803 or later)
-    - Click **Next**, and then on the Install Windows page click **Browse** and select a Windows 10 **Image package** and **Image Index**, version 1803 or later.
-    - Select the **Partition and format the target computer before installing the operating system** checkbox.
-    - Select or clear **Configure task sequence for use with Bitlocker** checkbox. This is optional.
-    - <u>Product Key</u> and <u>Server licensing mode</u>: Optionally enter a product key and server licencing mode.
-    - <u>Randomly generate the local administrator password and disable the account on all support platforms (recommended)</u>: Optional.
-    - <u>Enable the account and specify the local administrator password</u>: Optional.
-    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
+   - <u>Task sequence name</u>: **Autopilot for existing devices**
+   - <u>Boot Image</u>: Click **Browse** and select a Windows 10 boot image (1803 or later)
+   - Click **Next**, and then on the Install Windows page click **Browse** and select a Windows 10 **Image package** and **Image Index**, version 1803 or later.
+   - Select the **Partition and format the target computer before installing the operating system** checkbox.
+   - Select or clear **Configure task sequence for use with Bitlocker** checkbox. This is optional.
+   - <u>Product Key</u> and <u>Server licensing mode</u>: Optionally enter a product key and server licencing mode.
+   - <u>Randomly generate the local administrator password and disable the account on all support platforms (recommended)</u>: Optional.
+   - <u>Enable the account and specify the local administrator password</u>: Optional.
+   - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
 
-    >[!IMPORTANT]
-    >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (syeprep). This action will fail if the target machine is joined to a domain.
+     >[!IMPORTANT]
+     >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (syeprep). This action will fail if the target machine is joined to a domain.
 
 5. Click **Next** and then click **Next** again to accept the default settings on the Install Configuration Manager page.
 6. On the State Migration page, enter the following details:
-    - Clear the **Capture user settings and files** checkbox.
-    - Clear the **Capture network settings** checkbox.
-    - Clear the **Capture Microsoft Windows settings** checkbox.
-    - Click **Next**.
+   - Clear the **Capture user settings and files** checkbox.
+   - Clear the **Capture network settings** checkbox.
+   - Clear the **Capture Microsoft Windows settings** checkbox.
+   - Click **Next**.
 
-    >[!NOTE]
-    >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined devices.
+     >[!NOTE]
+     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined devices.
 
 7. On the Include Updates page, choose one of the three available options. This selection is optional.
 8. On the Install applications page, add applications if desired. This is optional.

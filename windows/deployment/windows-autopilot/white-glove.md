@@ -70,7 +70,7 @@ Regardless of the scenario, the process to be performed by the technician is the
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
 - From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
 
- ![choice](images/choice.png)
+  ![choice](images/choice.png)
 
 - On the **Windows Autopilot Configuration** screen, information will be displayed about the device:
     - The Autopilot profile assigned to the device.
@@ -79,7 +79,7 @@ Regardless of the scenario, the process to be performed by the technician is the
     - A QR code containing a unique identifier for the device, useful to look up the device in Intune to make any configuration changes needed (e.g. assigning a user, adding the device to any additional groups needed for app or policy targeting).
 - Validate the information displayed.  If any changes are needed, make these and then click **Refresh** to re-download the updated Autopilot profile details.
 
- ![landing](images/landing.png)
+  ![landing](images/landing.png)
 
 - Click **Provision** to begin the provisioning process.
 

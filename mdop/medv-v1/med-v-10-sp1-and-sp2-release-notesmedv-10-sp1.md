@@ -22,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Note**  
 Read these Release Notes thoroughly before you install the Microsoft Enterprise Desktop Virtualization (MED-V) platform. These Release Notes contain information that you must have to successfully install the MED-V platform. This document contains information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other MED-V platform documentation, the latest change should be considered authoritative. These Release Notes supersede the content included with this product.
 
- 
+ 
 
 ## About the Product Documentation
 
@@ -71,9 +71,9 @@ Microsoft, Microsoft Enterprise Desktop Virtualization, MS-DOS, Windows, Windows
 
 The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

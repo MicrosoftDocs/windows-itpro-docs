@@ -509,8 +509,8 @@ Value type is string.
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-<!--EndHoloLensBusiness-->
-<hr/>
+  <!--EndHoloLensBusiness-->
+  <hr/>
 
 Footnotes:
 

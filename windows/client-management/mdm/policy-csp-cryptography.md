@@ -142,7 +142,7 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Cryptography policies supported by Microsoft Surface Hub  
 
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
-<!--EndSurfaceHub-->
+- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
+- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
+  <!--EndSurfaceHub-->
 

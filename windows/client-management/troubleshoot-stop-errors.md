@@ -44,18 +44,18 @@ To troubleshoot Stop error messages, follow these general steps:
 
     a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
     
-    - [Windows 10, version 1809](https://support.microsoft.com/help/4464619)
-    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
-    - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
-    - [Windows 10, version 1703](https://support.microsoft.com/help/4018124)
-    - [Windows Server 2016 and Windows 10, version 1607](https://support.microsoft.com/help/4000825)
-    - [Windows 10, version 1511](https://support.microsoft.com/help/4000824)
-    - [Windows Server 2012 R2 and Windows 8.1](https://support.microsoft.com/help/4009470)
-    - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)
+   - [Windows 10, version 1809](https://support.microsoft.com/help/4464619)
+   - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
+   - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
+   - [Windows 10, version 1703](https://support.microsoft.com/help/4018124)
+   - [Windows Server 2016 and Windows 10, version 1607](https://support.microsoft.com/help/4000825)
+   - [Windows 10, version 1511](https://support.microsoft.com/help/4000824)
+   - [Windows Server 2012 R2 and Windows 8.1](https://support.microsoft.com/help/4009470)
+   - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)
 
-    b. Make sure that the BIOS and firmware are up-to-date.
+     b. Make sure that the BIOS and firmware are up-to-date.
 
-    c. Run any relevant hardware and memory tests.
+     c. Run any relevant hardware and memory tests.
 
 3. Run the [Machine Memory Dump Collector](https://home.diagnostics.support.microsoft.com/selfhelp?knowledgebasearticlefilter=2027760&wa=wsignin1.0) Windows diagnostic package. This diagnostic tool is used to collect machine memory dump files and check for known solutions.
 
@@ -65,18 +65,18 @@ To troubleshoot Stop error messages, follow these general steps:
 
 6. Contact the respective hardware or software vendor to update the drivers and applications in the following scenarios:
   
-    - The error message indicates that a specific driver is causing the problem.
-    - You are seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
-    - You have made any software or hardware changes.
+   - The error message indicates that a specific driver is causing the problem.
+   - You are seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
+   - You have made any software or hardware changes.
 
-    >[!NOTE]
-    >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
-    >
-    >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
-    >
-    >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
-    >
-    >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
+     >[!NOTE]
+     >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
+     >
+     >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
+     >
+     >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
+     >
+     >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
 
 ### Memory dump collection
 

@@ -29,7 +29,7 @@ The following diagram displays the MBAM architecture. The single-server MBAM dep
 **Note**  
 At least a three-computer MBAM deployment topology is recommended for a production deployment. For more information about MBAM deployment topologies, see [Deploying the MBAM 1.0 Server Infrastructure](deploying-the-mbam-10-server-infrastructure.md).
 
- 
+ 
 
 ![mbam single server deployment topology](images/mbam-1-server.jpg)
 
@@ -58,9 +58,9 @@ At least a three-computer MBAM deployment topology is recommended for a producti
 
 [Getting Started with MBAM 1.0](getting-started-with-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 
