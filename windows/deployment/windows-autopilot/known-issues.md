@@ -33,3 +33,4 @@ ms.topic: article
 
 ## Related topics
 
+[Troubleshooting Windows Autopilot](troubleshooting.md)
