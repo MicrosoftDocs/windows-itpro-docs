@@ -28,7 +28,7 @@ ms.topic: article
 
 <br>
 
-<iframe width="560" height="315" src="https://youtu.be/nE5XSOBV0rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!video https://youtu.be/nE5XSOBV0rI?autoplay=false]
 
 Also new in this version of Windows:
 - The Intune enrollment status page (ESP) now tracks Intune Management Extensions.
