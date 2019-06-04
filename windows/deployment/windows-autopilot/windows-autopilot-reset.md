@@ -40,7 +40,7 @@ Windows Autopilot Reset will block the user from accessing the desktop until thi
 Windows Autopilot Reset supports two scenarios:
 
 -   [Local reset](#reset-devices-with-local-windows-autopilot-reset) initiated by IT personnel or other administrators from the organization.
--   [Remote reset](#reset-devices-with-remote-windows-autopilot-reset-preview) initiated remotely by IT personnel via an MDM service such as Microsoft Intune.
+-   [Remote reset](#reset-devices-with-remote-windows-autopilot-reset) initiated remotely by IT personnel via an MDM service such as Microsoft Intune.
 
 Additional requirements and configuration details apply with each scenario; see the detailed links above for more information.
 
@@ -116,7 +116,7 @@ To trigger a remote Windows Autopilot Reset via Intune, follow these steps:
 >The Autopilot Reset option will not be enabled in Microsoft Intune for devices not running Windows 10 build 17672 or higher.
 
 >[!IMPORTANT]
->The feature for Autopilot Reset (preview) will stay grayed out, **unless** you reset the device using Autopilot (either using Fresh Reset or manually sysprep the device).
+>The feature for Autopilot Reset will stay grayed out, **unless** you reset the device using Autopilot (either using Fresh Reset or manually sysprep the device).
 
 Once the reset is complete, the device is again ready for use.
  
