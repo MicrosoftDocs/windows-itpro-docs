@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greglin
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -37,8 +37,8 @@ In Azure Portal, the aspects of a solution's dashboard are usually divided into 
 
 ## Device Reliability
 
-- [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver-Induced OS Crashes](#driver--induced-OS-crashes)
+- [Frequently crashing devices](#frequently-crashing-devices)
+- [Driver-induced OS crashes](#driver-induced-crashes)
 
 
 
@@ -81,7 +81,7 @@ This displays device records sorted by date and crash details by failure ID, als
 
  
  
-### Driver-Induced OS Crashes
+### Driver-induced crashes
 
 This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 
