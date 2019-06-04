@@ -15,7 +15,7 @@ ms.topic: article
 
 # Windows Autopilot for white glove deployment
 
-**Applies to: Windows 10, version 1903** (preview)
+**Applies to: Windows 10, version 1903** 
 
 Windows Autopilot enables organizations to easily provision new devices - leveraging the preinstalled OEM image and drivers with a simple process that can be performed by the end user to help get their device business-ready.
 
@@ -23,7 +23,7 @@ Windows Autopilot enables organizations to easily provision new devices - levera
 
 Windows Autopilot can also provide a <I>white glove</I> service that enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready. From the end user’s perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
 
-With **Windows Autopilot for white glove deployment**, the provisioning process is split. The time-consuming portions are performed by IT, partners, or OEMs. The end user simply completes a few neceesary settings and polices and then they can begin using their device.
+With **Windows Autopilot for white glove deployment**, the provisioning process is split. The time-consuming portions are performed by IT, partners, or OEMs. The end user simply completes a few necessary settings and polices and then they can begin using their device.
 
  ![OEM](images/wg02.png)
 
@@ -103,3 +103,6 @@ If the pre-provisioning process completed successfully and the device was reseal
 - If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user’s Active Directory credentials.
 - Additional policies and apps will be delivered to the device, as tracked by the Enrollment Status Page (ESP).  Once complete, the user will be able to access the desktop.
 
+## Related topics
+
+[White glove video](https://youtu.be/nE5XSOBV0rI)

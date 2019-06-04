@@ -30,9 +30,7 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 
 The following topics are available in this guide:
 
-### What's new
-
-Windows Autopilot is always being updated with [new features](windows-autopilot-whats-new.md)!
+[What's new](windows-autopilot-whats-new.md): Windows Autopilot is always being updated with new features! Check this topic to read about the latests capabilities.
 
 ### Understanding Windows Autopilot
 
