@@ -32,12 +32,12 @@ Set-CalendarProcessing -Identity "account@YourDomain.com" -AutomateProcessing Au
 
 ## Assign a license
 
-
 ```
 Connect-MsolService
 Set-Msoluser -UserPrincipalName account@YourDomain.com -UsageLocation IE
 Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "contoso:MEETING_ROOM"
-```	 
+```
+
 # Connect to Skype for Business Online using PowerShell
 
 **Install prerequisites**
@@ -52,4 +52,3 @@ Import-PSSession $SfBSession -AllowClobber
 Enable the Skype for Business meeting room
 Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPoo(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
 ```
-	 
