@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: v-madhi@microsoft.com
 ms.date: 08/15/2018
 ---
 
