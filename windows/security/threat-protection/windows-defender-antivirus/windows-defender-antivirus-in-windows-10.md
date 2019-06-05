@@ -22,7 +22,7 @@ manager: dansimp
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Besides traditional security measures, we also provide next-gen protection, which harnesses the power of the cloud and of machine learning to keep your servers and personal devices safe.
+Besides traditional security measures, we also provide next-gen protection to keep your servers and personal devices safe.
 
 Next-gen protection includes:
 
@@ -48,7 +48,7 @@ It has the same hardware requirements as Windows 10. For more information, see:
 
 ## Configuring next-gen services
 
-You can use the following to configure and manage next-gen services in Win 10 Windows Defender Antivirus:
+You can use the following to configure and manage next-gen services in Windows 10, while running Windows Defender Antivirus:
 
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP)
 - Microsoft Intune
@@ -56,7 +56,7 @@ You can use the following to configure and manage next-gen services in Win 10 Wi
 - Windows Management Instrumentation (WMI)
 - Group Policy
 
-Functionality, configuration, and management is largely the same when using Windows Defender Antivirus on Windows Server 2016; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+Configuration and management is largely the same in Windows Server 2016, while running  Windows Defender Antivirus; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
 
 ## Related topics
 
