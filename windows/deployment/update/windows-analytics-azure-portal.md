@@ -17,7 +17,7 @@ ms.topic: article
 
 # Windows Analytics in the Azure Portal
 
-Windows Analytics uses Azure Log Analytics workspaces (formerly known as Operations Management Suite or OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments.
+Windows Analytics uses Azure Log Analytics workspaces (formerly known as Operations Management Suite or OMS), a collection of cloud-based services for monitoring and automating your on-premises and cloud environments.
 
 **The OMS portal has been deprecated; you should start using the [Azure portal](https://portal.azure.com) instead as soon as possible.** Many experiences are the same in the two portals, but there are some key differences, which this topic will explain. For much more information about the transition from OMS to Azure, see [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition).
 
