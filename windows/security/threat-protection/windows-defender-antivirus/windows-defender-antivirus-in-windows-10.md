@@ -22,13 +22,13 @@ manager: dansimp
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Alongside traditional security measures, we also provide next-gen protection. Next-gen protection uses machine learning and the cloud to keep your servers and personal devices safe.
+We provide next-gen protection alongside more traditional security measures. Our next-gen protection uses machine learning and the cloud to keep your servers and personal devices safe.
 
-Next-gen security services include:
+Next-gen protection services include:
 
-- [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), also known as "real-time protection", for advanced file and process behavior monitoring, and other heuristics
+- [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), also known as "real-time protection", for advanced file and process behavior monitoring
 - [Cloud-based delivery](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats
-- [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) powered by machine-learning, human and automated big-data analysis, and in-depth threat resistance research
+- [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) powered by machine-learning, big-data analysis, and in-depth threat resistance research
 
 We've also pumped up our endpoint security for Windows 10.
 
@@ -60,15 +60,11 @@ You can use the following to configure and manage next-gen services in Windows 1
 
 Configuration and management is largely the same in Windows Server 2016, while running  Windows Defender Antivirus; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
 
+## What's new
+
+TKTK
+
 ## Related topics
 
-- [What's new in Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
-- [Windows Defender Antivirus in the Windows Security app](windows-defender-security-center-antivirus.md)
-- [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
-- [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md)
-- [Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md)
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Configure Windows Defender Antivirus features](configure-windows-defender-antivirus-features.md)
-- [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Review event logs and error codes to troubleshoot issues](troubleshoot-windows-defender-antivirus.md)
+- [Version history for Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
