@@ -16,7 +16,7 @@ ms.topic: article
 ---
 
 
-# Windows Autopilot Self-Deploying mode (Preview)
+# Windows Autopilot Self-Deploying mode
 
 **Applies to: Windows 10, version 1809 or later**
 
