@@ -29,10 +29,10 @@ Find out more about new and improved features of Microsoft Edge, and how you can
 
 Get a behind the scenes look at Microsoft Edge and the improvements we've made to make it faster and more efficient.
 
-![VIDEO <https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es14>]
+> [!VIDEO <https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es14>]
 
 ### Building a safer browser: Four guards to keep users safe
 
 Learn about our security strategy and how we use the Four Guards to keep your users safe while they browse the Internet.
 
-![VIDEO <https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es03>]
+> [!VIDEO <https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es03>]
