@@ -63,7 +63,7 @@ Several platforms are available to register devices with Windows Autopilot. A su
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles?redirectSourcePath=%252farticle%252fCreate-and-edit-Autopilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa">Microsoft Business 365</a></td>
+<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft Business 365</a></td>
 <td>YES - 1000 at a time max</td>
 <td>YES</td>
 <td>4K HH</td>
