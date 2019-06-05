@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi@microsoft.com
+author: v-madhi
 ms.date: 06/04/2019
 ms.reviewer: 
 manager: dansimp
