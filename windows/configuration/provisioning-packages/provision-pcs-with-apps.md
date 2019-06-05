@@ -63,6 +63,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 
 <span id="adv" />
+
 ## Add a Windows desktop application using advanced editor in Windows Configuration Designer
 
 
@@ -72,7 +73,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
     ![enter name for first app](../images/wcd-app-name.png)
 
-3. [Configure the settings for the appropriate installer type.](#settings-for-classic-windows-apps)
+3. Configure the settings for the appropriate installer type.
 
     ![enter settings for first app](../images/wcd-app-commands.png)
 
