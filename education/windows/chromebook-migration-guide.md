@@ -75,9 +75,9 @@ Table 1. Google App replacements
 
 | If you use this Google app on a Chromebook | Use this app on a Windows device     |
 |--------------------------------------------|--------------------------------------|
-| Google Docs                                | Word 2016 or Word Online             |
-| Google Sheets                              | Excel 2016 or Excel Online           |
-| Google Slides                              | PowerPoint 2016 or PowerPoint Online |
+| Google Docs                                | Word 2016 or Word for the web             |
+| Google Sheets                              | Excel 2016 or Excel for the web           |
+| Google Slides                              | PowerPoint 2016 or PowerPoint for the web |
 | Google Apps Gmail                          | Outlook 2016 or Outlook Web App      |
 | Google Hangouts                            | Microsoft Skype for Business         |
 | Chrome                                     | Microsoft Edge                       |
@@ -351,7 +351,7 @@ Here is a list of reasons that describe why you might want to migrate from an ex
 
 -   **Better integration with Office 365.** If your long-term strategy is to migrate to Office 365 apps (such as Word 2016 or Excel 2016) then a migration to Microsoft cloud services will provide better integration with these apps. The use of existing cloud services may not be as intuitive for users. For example, Office 365 apps will integrate better with OneDrive for Business compared to Google Drive.
 
--   **Online apps offer better document compatibility.** Microsoft Office online apps (such as Word Online and Excel Online) provide the highest level of compatibility with Microsoft Office documents. The Office online apps allow you to open and edit documents directly from SharePoint or OneDrive for Business. Users can access the Office online app from any device with Internet connectivity.
+-   **Online apps offer better document compatibility.** Microsoft Office apps (such as Word and Excel for the web) provide the highest level of compatibility with Microsoft Office documents. The Office apps allow you to open and edit documents directly from SharePoint or OneDrive for Business. Users can access the Office app from any device with Internet connectivity.
 
 -   **Reduce licensing costs.** If you pay for Office 365 licenses, then Office 365 apps and cloud storage are included in those licenses. Although you could keep existing cloud services, you probably would pay more to keep those services.
 
