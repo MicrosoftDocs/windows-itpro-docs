@@ -22,13 +22,15 @@ manager: dansimp
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Besides traditional security measures, we also provide next-gen protection to keep your servers and personal devices safe.
+Alongside traditional security measures, we also provide next-gen protection. Next-gen protection uses machine learning and the cloud to keep your servers and personal devices safe.
 
-Next-gen protection includes:
+Next-gen security services include:
 
-- [Cloud-based delivery](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats.
 - [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), also known as "real-time protection", for advanced file and process behavior monitoring, and other heuristics
+- [Cloud-based delivery](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats
 - [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) powered by machine-learning, human and automated big-data analysis, and in-depth threat resistance research
+
+We've also pumped up our endpoint security for Windows 10.
 
 >[!TIP]
 >You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
@@ -60,7 +62,7 @@ Configuration and management is largely the same in Windows Server 2016, while r
 
 ## Related topics
 
-- [What's new in Microsoft Defender Advanced Threat Protection](./)
+- [What's new in Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 - [Windows Defender Antivirus in the Windows Security app](windows-defender-security-center-antivirus.md)
 - [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
 - [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md)
