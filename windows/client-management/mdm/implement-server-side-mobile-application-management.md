@@ -155,7 +155,7 @@ We have updated Skype for Business to work with MAM. The following table explain
 <td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
 <td>March 9 2017</td>
 <td><p>Visio Pro for Office 365</p>
-<p>Project Online Desktop Client</p>
+<p>Project Desktop Client</p>
 <p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
 </tr>
 <tr>
