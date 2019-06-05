@@ -50,7 +50,7 @@ Several platforms are available to register devices with Windows Autopilot. A su
 
 <tr>
 <td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
-<td>YES - 175 at a time max</td>
+<td>YES - 500 at a time max</td>
 <td>YES<b>\*</b></td>
 <td>4K HH</td>
 </tr>

@@ -96,6 +96,8 @@ Once the hardware IDs have been captured from existing devices, they can be uplo
 -   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  
 
+For a summary of platform capabilities, see [Windows Autopilot platforms](windows-autopilot-platforms.md).
+
 <img src="./images/image2.png" width="511" height="249" />
 
 ## Summary
