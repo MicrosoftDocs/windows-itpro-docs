@@ -67,10 +67,10 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#textinput-configurekoreanimeversion">TextInput/ConfigureKoreanIMEVersion</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#textinput-enabletouchkeyboardautoinvokeindesktopmode">TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</a>
   </dd>
@@ -753,7 +753,7 @@ This setting supports a range of values between 0 and 1.
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTES]
+> [!NOTE]
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
@@ -808,7 +808,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTES]
+> [!NOTE]
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
@@ -863,8 +863,8 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTES]
-> - This policy is enforced only in Windows 10 for desktop.  
+> [!NOTE]
+> - The policy is only enforced in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
 Added in 20H1. Allows IT admins to configure the Microsoft Japanese IME version in the desktop.
@@ -918,7 +918,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTES]
+> [!NOTE]
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
