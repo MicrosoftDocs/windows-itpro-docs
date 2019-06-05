@@ -65,7 +65,7 @@ We used the following methodology to derive these network endpoints:
 | candycrushsoda.king.com | TLSv1.2 | Used for Candy Crush Saga updates. |
 | cdn.content.prod.cms.msn.com | HTTP | Used to retrieve Windows Spotlight metadata. |
 | cdn.onenote.net | HTTP | Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net | HTTP | Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| client-office365-tas.msedge.net | HTTP | Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | config.edge.skype.com | HTTP | Used to retrieve Skype configuration values. |
 | ctldl.windowsupdate.com | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net | TLSv1.2 | Used to communicate with Microsoft Store. |
@@ -157,7 +157,7 @@ We used the following methodology to derive these network endpoints:
 | candycrushsoda.king.com | HTTPS | Used for Candy Crush Saga updates. |
 | cdn.content.prod.cms.msn.com | HTTP | Used to retrieve Windows Spotlight metadata. |
 | cdn.onenote.net | HTTPS | Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net | HTTPS | Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| client-office365-tas.msedge.net | HTTPS | Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | config.edge.skype.com | HTTPS | Used to retrieve Skype configuration values. |
 | ctldl.windowsupdate.com | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cs12.<span class="anchor" id="_Hlk500262422"></span>wpc.v0cdn.net | HTTP | Used by the Verizon Content Delivery Network to download content for Windows upgrades with Wireless Planning and Coordination (WPC). |
@@ -167,7 +167,7 @@ We used the following methodology to derive these network endpoints:
 | definitionupdates.microsoft.com | HTTPS | Used for Windows Defender definition updates. |
 | displaycatalog.mp.microsoft.com | HTTPS | Used to communicate with Microsoft Store. |
 | download.windowsupdate.com | HTTP | Enables connections to Windows Update. |
-| evoke-windowsservices-tas.msedge.net | HTTPS | Used by the Photos app to download configuration files, and to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| evoke-windowsservices-tas.msedge.net | HTTPS | Used by the Photos app to download configuration files, and to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | fe2.update.microsoft.com | HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe2.update.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2\/HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
@@ -255,7 +255,7 @@ We used the following methodology to derive these network endpoints:
 | cy2.vortex.data.microsoft.com.akadns.net | TLSv1.2 | Used to retrieve Windows Insider Preview builds. |
 | dl.delivery.mp.microsoft.com | HTTPS | Enables connections to Windows Update. |
 | download.windowsupdate.com | HTTP | Enables connections to Windows Update. |
-| evoke-windowsservices-tas.msedge.net/ab | HTTPS | Used by the Photos app to download configuration files, and to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| evoke-windowsservices-tas.msedge.net/ab | HTTPS | Used by the Photos app to download configuration files, and to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | fe2.update.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update. |
 | fg.download.windowsupdate.com.c.footprint.net | HTTP | Used to download operating system patches and updates. |
