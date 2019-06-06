@@ -91,7 +91,7 @@ AppLocker rules can be created on domain controllers.
 AppLocker is included with enterprise-level editions of Windows. You can author AppLocker rules for a single computer or for a group of computers. For a single computer, you can author the rules by using the Local Security Policy editor (secpol.msc). For a group of computers, you can author the rules within a Group Policy Object by using the Group Policy Management Console (GPMC).
 
 > **Note:**  The GPMC is available in client computers running Windows only by installing the Remote Server Administration Tools. On computer running Windows Server, you must install the Group Policy Management feature.
- 
+ 
 ### Using AppLocker on Server Core
 
 AppLocker on Server Core installations is not supported.
@@ -132,7 +132,7 @@ For reference in your security planning, the following table identifies the base
 | Security Policies | None required. AppLocker creates security policies. | 
 | System Services required |Application Identity service (appidsvc) runs under LocalServiceAndNoImpersonation. |
 | Storage of credentials | None | 
- 
+ 
 ## In this section
 
 | Topic | Description |

@@ -74,7 +74,6 @@ You will get one 4662 for each operation type which was performed.
  <Data Name="AdditionalInfo2" /> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -128,15 +127,15 @@ You will get one 4662 for each operation type which was performed.
 -   **Object Name** \[Type = UnicodeString\]: distinguished name of the object that was accessed.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4661](event-4661.md): A handle to an object was requested.” This parameter might not be captured in the event, and in that case appears as “0x0”.

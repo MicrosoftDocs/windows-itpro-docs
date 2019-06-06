@@ -25,7 +25,7 @@ App-V 5.1 packages are exactly the same as App-V 5.0 packages. There has been no
 
 For more information about the differences between App-V 4.6 and App-V 5.1, see the **Differences between App-V 4.6 and App-V 5.0 section** of [About App-V 5.0](about-app-v-50.md).
 
- 
+ 
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V 5.1 Package Converter
 
@@ -62,7 +62,7 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </tbody>
 </table>
 
- 
+ 
 
 ### Example conversion statement
 
@@ -168,7 +168,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 </tbody>
 </table>
 
- 
+ 
 
 ## Converting packages created using a prior version of App-V
 
@@ -178,7 +178,7 @@ Use the package converter utility to upgrade virtual application packages create
 **Important**  
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
 
- 
+ 
 
 **What to know before you convert existing packages**
 
@@ -196,7 +196,7 @@ After you convert an existing package you should test the package prior to deplo
 <tbody>
 <tr class="odd">
 <td align="left"><p>Virtual packages using DSC are not linked after conversion.</p></td>
-<td align="left"><p>Link the packages using connection groups. See [Managing Connection Groups](managing-connection-groups51.md).</p></td>
+<td align="left"><p>Link the packages using connection groups. See <a href="managing-connection-groups51.md" data-raw-source="[Managing Connection Groups](managing-connection-groups51.md)">Managing Connection Groups</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Environment variable conflicts are detected during conversion.</p></td>
@@ -209,7 +209,7 @@ After you convert an existing package you should test the package prior to deplo
 </tbody>
 </table>
 
- 
+ 
 
 When converting a package check for failing files or shortcuts. Locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
@@ -218,7 +218,7 @@ It is recommended that you use the App-V 5.1 sequencer for converting critical a
 
 If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V 5.1 sequencer.
 
- 
+ 
 
 [How to Convert a Package Created in a Previous Version of App-V](how-to-convert-a-package-created-in-a-previous-version-of-app-v51.md)
 
@@ -241,25 +241,25 @@ The following table displays the recommended method for upgrading clients.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Upgrade your environment to the latest version of App-V 4.6</p></td>
-<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md).</p></td>
+<td align="left"><p><a href="../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md" data-raw-source="[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md)">Application Virtualization Deployment and Upgrade Considerations</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Install the App-V 5.1 client with co-existence enabled.</p></td>
-<td align="left"><p>[How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md).</p></td>
+<td align="left"><p><a href="how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md" data-raw-source="[How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md)">How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sequence and roll out App-V 5.1 packages. As needed, unpublish App-V 4.6 packages.</p></td>
-<td align="left"><p>[How to Sequence a New Application with App-V 5.1](how-to-sequence-a-new-application-with-app-v-51-beta-gb18030.md).</p></td>
+<td align="left"><p><a href="how-to-sequence-a-new-application-with-app-v-51-beta-gb18030.md" data-raw-source="[How to Sequence a New Application with App-V 5.1](how-to-sequence-a-new-application-with-app-v-51-beta-gb18030.md)">How to Sequence a New Application with App-V 5.1</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 You must be running the latest version of App-V 4.6 to use coexistence mode. Additionally, when you sequence a package, you must configure the Managing Authority setting, which is in the **User Configuration** is located in the **User Configuration** section.
 
- 
+ 
 
 ## Migrating the App-V 5.1 Server Full Infrastructure
 
@@ -280,15 +280,15 @@ There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the
 <tbody>
 <tr class="odd">
 <td align="left"><p>Upgrade your environment to the latest version of App-V 4.6.</p></td>
-<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md).</p></td>
+<td align="left"><p><a href="../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md" data-raw-source="[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md)">Application Virtualization Deployment and Upgrade Considerations</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Deploy App-V 5.1 version of the client.</p></td>
-<td align="left"><p>[How to Deploy the App-V Client](how-to-deploy-the-app-v-client-51gb18030.md).</p></td>
+<td align="left"><p><a href="how-to-deploy-the-app-v-client-51gb18030.md" data-raw-source="[How to Deploy the App-V Client](how-to-deploy-the-app-v-client-51gb18030.md)">How to Deploy the App-V Client</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Install App-V 5.1 server.</p></td>
-<td align="left"><p>[How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md).</p></td>
+<td align="left"><p><a href="how-to-deploy-the-app-v-51-server.md" data-raw-source="[How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)">How to Deploy the App-V 5.1 Server</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
@@ -297,7 +297,7 @@ There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the
 </tbody>
 </table>
 
- 
+ 
 
 ## Additional Migration tasks
 
@@ -325,9 +325,9 @@ You can also perform additional migration tasks such as reconfiguring end points
 
 [A simplified Microsoft App-V 5.1 Management Server upgrade procedure](https://go.microsoft.com/fwlink/p/?LinkId=786330)
 
- 
+ 
 
- 
+ 
 
 
 

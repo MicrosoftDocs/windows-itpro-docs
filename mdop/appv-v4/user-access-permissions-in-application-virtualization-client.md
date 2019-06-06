@@ -22,7 +22,7 @@ On the **Permissions** tab on the **Properties** dialog box, accessible by right
 **Note**  
 Before changing users permissions, ensure that any permissions changes are consistent with the organization's guidelines for granting user permissions.
 
- 
+ 
 
 The following table lists and describes the permissions that can be granted to users.
 
@@ -117,16 +117,16 @@ The following table lists and describes the permissions that can be granted to u
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [How to Change User Access Permissions](how-to-change-user-access-permissions.md)
 
- 
+ 
 
- 
+ 
 
 
 

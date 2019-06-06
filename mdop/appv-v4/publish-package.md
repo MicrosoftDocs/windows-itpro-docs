@@ -60,7 +60,7 @@ Publishes the contents of an entire package.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -77,7 +77,7 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 The package must already have been added to the Application Virtualization Client, and the manifest file is required.
@@ -90,16 +90,16 @@ Publishing with the **GLOBAL** parameter adds the file types and shortcuts liste
 
 If the package is not global before the call and the **GLOBAL** parameter is used, the package is made global and available to all users.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

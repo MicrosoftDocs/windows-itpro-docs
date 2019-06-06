@@ -73,7 +73,7 @@ In this topic, we assume that you have a Windows 7 SP1 client named PC0003 with 
     >[!NOTE] 
     >It may take a short while for the collection to refresh; you can view progress via the Colleval.log file. If you want to speed up the process, you can manually update membership on the Install Windows 10 Enterprise x64 collection by right-clicking the collection and selecting Update Membership.
 
- 
+ 
 
 ## <a href="" id="sec02"></a>Create a new deployment
 
@@ -93,7 +93,7 @@ Using the Configuration Manager console, in the Software Library workspace, sele
     >[!NOTE]  
     >It is not necessary to make the deployment available to media and Pre-Boot Execution Environment (PXE) for a computer refresh, but you will use the same deployment for bare-metal deployments later on and you will need it at that point.
 
-     
+     
 
 -   Scheduling
 

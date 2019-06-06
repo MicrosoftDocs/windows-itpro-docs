@@ -24,31 +24,31 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
 **To convert a package**
 
-1.  Locate the user configuration file for the package you want to convert. To set the policy, perform the following updates in the **userConfiguration** section: **ManagingAuthority TakeoverExtensionPointsFrom46="true" PackageName=&lt;Package ID&gt;**.
+1. Locate the user configuration file for the package you want to convert. To set the policy, perform the following updates in the **userConfiguration** section: **ManagingAuthority TakeoverExtensionPointsFrom46="true" PackageName=&lt;Package ID&gt;**.
 
-    The following is an example of a user configuration file:
+   The following is an example of a user configuration file:
 
-    &lt;?xml version="1.0" ?&gt;
+   &lt;?xml version="1.0" ?&gt;
 
-    &lt;UserConfiguration PackageId=&lt;Package ID&gt; DisplayName=&lt;Name of the Package&gt;
+   &lt;UserConfiguration PackageId=&lt;Package ID&gt; DisplayName=&lt;Name of the Package&gt;
 
-    xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration"&gt; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
+   xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
 
-    PackageName=&lt;Package ID&gt;
+   PackageName=&lt;Package ID&gt;
 
-    &lt;/UserConfiguration&gt;
+   &lt;/UserConfiguration&gt;
 
-2.  To add the App-V 5.1 package, type the following in an elevated PowerShell command prompt window:
+2. To add the App-V 5.1 package, type the following in an elevated PowerShell command prompt window:
 
-    PS&gt;**$pkg= Add-AppvClientPackage –Path** &lt;Path to package location&gt;
+   PS&gt;**$pkg= Add-AppvClientPackage –Path** &lt;Path to package location&gt;
 
-    PS&gt;**Publish-AppVClientPackage $pkg -DynamicUserConfiguration** &lt;Path to the user configuration file&gt;
+   PS&gt;**Publish-AppVClientPackage $pkg -DynamicUserConfiguration** &lt;Path to the user configuration file&gt;
 
-3.  Open the application using FTAs or shortcuts now. The application should open using App-V 5.1.
+3. Open the application using FTAs or shortcuts now. The application should open using App-V 5.1.
 
-    The App-V 4.6 package and the converted App-V 5.1 package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V 5.1 package.
+   The App-V 4.6 package and the converted App-V 5.1 package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V 5.1 package.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+   **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
@@ -57,9 +57,9 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
 [How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-package-for-a-specific-user.md)
 
- 
+ 
 
- 
+ 
 
 
 

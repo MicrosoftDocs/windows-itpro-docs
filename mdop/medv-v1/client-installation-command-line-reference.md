@@ -93,11 +93,10 @@ ms.date: 06/16/2016
 <p>Default: <strong>1</strong></p></td>
 <td align="left"><p>Starts MED-V at the completion of the MED-V installation.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>It is recommended to set START_MEDV=0 in case MED-V is installed by the system.</p>
+<strong>Note</strong><br/><p>It is recommended to set START_MEDV=0 in case MED-V is installed by the system.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -119,11 +118,11 @@ ms.date: 06/16/2016
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

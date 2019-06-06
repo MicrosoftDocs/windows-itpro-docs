@@ -22,7 +22,7 @@ An Editor is a person authorized by an AGPM Administrator (Full Control) to make
 **Important**  
 Ensure that you are connecting to the central archive for GPOs. For more information, see [Configure an AGPM Server Connection](configure-an-agpm-server-connection-reviewer-agpm30ops.md).
 
- 
+ 
 
 -   [Creating, Controlling, or Importing a GPO](creating-controlling-or-importing-a-gpo-agpm30ops.md)
 
@@ -35,7 +35,7 @@ Ensure that you are connecting to the central archive for GPOs. For more informa
 **Note**  
 Because the Editor role includes the permissions for the Reviewer role, an Editor can also review settings and compare GPOs. See [Performing Reviewer Tasks](performing-reviewer-tasks-agpm30ops.md) for more information.
 
- 
+ 
 
 ### Additional considerations
 
@@ -49,9 +49,9 @@ By default, the following permissions are provided for the Editor role:
 
 -   Create Template
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,7 +26,7 @@ The following diagram shows the MBAM recommended architecture for a production e
 **Note**  
 A single-server architecture should be used only in test environments.
 
- 
+ 
 
 ![mbam 2 two-server deployment topology](images/mbam2-3-servers.gif)
 
@@ -73,9 +73,9 @@ The MBAM Client is installed on a Windows computer and has the following charact
 
 [Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -69,7 +69,7 @@ The following table shows the supported App-V coexistence scenarios. We recommen
 </tbody>
 </table>
 
- 
+ 
 
 ### Requirements for running coexisting clients
 
@@ -82,7 +82,7 @@ To run coexisting clients, you must:
 **Note**  
 App-V 5.1 packages can run side by side with App-V 4.6 packages if you have coexisting installations of App-V 5.1 and 4.6. However, App-V 5.1 packages cannot interact with App-V 4.6 packages in the same virtual environment.
 
- 
+ 
 
 ### Client downloads and documentation
 
@@ -102,16 +102,16 @@ The following table provides links to the App-V 4.6 client downloads and to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>App-V 4.6 SP3</p></td>
-<td align="left"><p>[About Microsoft Application Virtualization 4.6 SP3](https://technet.microsoft.com/library/dn511019.aspx)</p></td>
+<td align="left"><p><a href="https://technet.microsoft.com/library/dn511019.aspx" data-raw-source="[About Microsoft Application Virtualization 4.6 SP3](https://technet.microsoft.com/library/dn511019.aspx)">About Microsoft Application Virtualization 4.6 SP3</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.6 SP3</p></td>
-<td align="left"><p>[About Microsoft Application Virtualization 5.1](about-app-v-51.md)</p></td>
+<td align="left"><p><a href="about-app-v-51.md" data-raw-source="[About Microsoft Application Virtualization 5.1](about-app-v-51.md)">About Microsoft Application Virtualization 5.1</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to configure App-V 5.1 client coexistence, see:
 
@@ -140,9 +140,9 @@ For more information about using the package converter to convert a package, see
 
 [Planning to Deploy App-V](planning-to-deploy-app-v51.md)
 
- 
+ 
 
- 
+ 
 
 
 

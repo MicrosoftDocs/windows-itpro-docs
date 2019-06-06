@@ -24,9 +24,9 @@ You can also choose to ignore the hosting system’s keys by selecting **Overrid
 The changes to the virtual registry **Settings** tab affect applications that are part of the specific sequenced application package, but they do not affect the operation of other applications that are streamed to or locally installed on the Application Virtualization Desktop Client.
 
 **Note**  
-  Exercise caution when changing virtual registry keys and values. Changing these keys and values might render your sequenced application package inoperable.
+  Exercise caution when changing virtual registry keys and values. Changing these keys and values might render your sequenced application package inoperable.
 
- 
+ 
 
 The left pane of the **Virtual Registry** tab displays the full list of virtual registries created during the sequencing of an application.
 
@@ -52,9 +52,9 @@ Displays the file attributes.
 
 [Sequencer Console](sequencer-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,7 +24,7 @@ The supported options include using a file server, an IIS server, or an Applicat
 **Note**  
 The active upgrade feature enables a new version of an application to be added to an App-V Management Server or Streaming Server without affecting users currently running the application. The App-V clients will automatically receive the latest version of the application from the App-V Management Server or Streaming Server the next time the user starts the application. Use of the RTSP(S) protocol is required for this feature.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -53,7 +53,7 @@ The active upgrade feature enables a new version of an application to be added t
 <td align="left"><ul>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the File Server](how-to-configure-the-file-server.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-file-server.md" data-raw-source="[How to Configure the File Server](how-to-configure-the-file-server.md)">How to Configure the File Server</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IIS server</p></td>
@@ -69,7 +69,7 @@ The active upgrade feature enables a new version of an application to be added t
 <li><p>Need to manage IIS</p></li>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-server-for-iis.md" data-raw-source="[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)">How to Configure the Server for IIS</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Application Virtualization Streaming Server</p></td>
@@ -83,7 +83,7 @@ The active upgrade feature enables a new version of an application to be added t
 <li><p>Dual infrastructure</p></li>
 <li><p>Server administration requirement</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Application Virtualization Streaming Servers](how-to-configure-the-application-virtualization-streaming-servers.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-application-virtualization-streaming-servers.md" data-raw-source="[How to Configure the Application Virtualization Streaming Servers](how-to-configure-the-application-virtualization-streaming-servers.md)">How to Configure the Application Virtualization Streaming Servers</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Application Virtualization Management Server</p></td>
@@ -97,12 +97,12 @@ The active upgrade feature enables a new version of an application to be added t
 <li><p>Dual infrastructure</p></li>
 <li><p>Server administration requirement</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-application-virtualization-management-servers.md" data-raw-source="[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)">How to Configure the Application Virtualization Management Servers</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -113,9 +113,9 @@ The active upgrade feature enables a new version of an application to be added t
 
 [Publishing Virtual Applications Using Application Virtualization Management Servers](publishing-virtual-applications-using-application-virtualization-management-servers.md)
 
- 
+ 
 
- 
+ 
 
 
 

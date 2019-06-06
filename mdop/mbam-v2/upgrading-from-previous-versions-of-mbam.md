@@ -83,7 +83,7 @@ Use the following instructions to upgrade from a previous version of MBAM when y
     **Note**  
     The certificate must be created before this step to enable you to select it on this page.
 
-     
+     
 
 8.  On the **Configure the location of the Compliance Status database** page, specify the SQL Server instance name and the name of the database that stores the compliance and audit data. You must also specify where the database files and log information will be located.
 
@@ -102,7 +102,7 @@ Use the following instructions to upgrade from a previous version of MBAM when y
     **Note**  
     The port number that you specify must be an unused port number on the Administration and Monitoring Server unless you specify a unique host header name.
 
-     
+     
 
 15. On the **Configure the Administration and Monitoring Server** page, specify the desired virtual directory for the Help Desk website.
 
@@ -130,9 +130,9 @@ To validate the Client upgrade, do the following:
 
 [Deploying MBAM 2.0](deploying-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

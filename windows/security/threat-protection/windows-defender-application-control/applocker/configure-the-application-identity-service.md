@@ -28,7 +28,7 @@ This topic for IT professionals shows how to configure the Application Identity 
 The Application Identity service determines and verifies the identity of an app. Stopping this service will prevent AppLocker policies from being enforced.
 
 >**Important:**  When using Group Policy, you must configure it to start automatically in at least one Group Policy Object (GPO) that applies AppLocker rules. This is because AppLocker uses this service to verify the attributes of a file.
- 
+ 
 **To start the Application Identity service automatically using Group Policy**
 
 1.  On the **Start** screen, type **gpmc.msc** to open the Group Policy Management Console (GPMC).

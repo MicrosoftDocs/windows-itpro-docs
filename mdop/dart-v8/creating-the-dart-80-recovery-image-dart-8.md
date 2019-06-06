@@ -92,7 +92,7 @@ On the Drivers tab of the Advanced Options page, you can add additional device d
 **Important**  
 When you select drivers to include, be aware that wireless connectivity (such as Bluetooth or 802.11a/b/g/n) is not supported in DaRT.
 
- 
+ 
 
 **To add drivers to the recovery image**
 
@@ -105,7 +105,7 @@ When you select drivers to include, be aware that wireless connectivity (such as
     **Note**  
     The driver file is provided by the manufacturer of the storage or network controller.
 
-     
+     
 
 4.  Repeat Steps 2 and 3 for every driver that you want to include.
 
@@ -144,7 +144,7 @@ The DaRT wizard checks for the tools in the `HKLM\Software\Microsoft\Windows Kit
 
 `%ProgramFilesX86%\Windows Kits\8.0\Debuggers\x86`
 
- 
+ 
 
 **To add the debugging tools for Crash Analyzer**
 
@@ -180,7 +180,7 @@ On the Defender tab of the Advanced Options page, you add definitions, which are
         **Important**  
         You cannot scan if there are no definitions.
 
-         
+         
 
 3.  Click **Next**.
 
@@ -206,7 +206,7 @@ If you select the Edit Image check box on this page, you can customize the recov
     **Note**  
     The size of the image will vary, depending on the tools that you select and the files that you add in the wizard.
 
-     
+     
 
 2.  In the **Image name** box, enter a name for the DaRT recovery image, or accept the default name, which is DaRT8.
 
@@ -256,7 +256,7 @@ On the Create Bootable Media page, you can optionally copy the image file to a C
 **Note**  
 The Preboot execution environment (PXE) and local image deployment are not supported natively by this tool since they require additional enterprise tools, such as System Center Configuration Manager server and Microsoft Development Toolkit.
 
- 
+ 
 
 **To copy the recovery image to a CD, DVD, or USB**
 
@@ -267,7 +267,7 @@ The Preboot execution environment (PXE) and local image deployment are not suppo
     **Note**  
     If a drive is not recognized and you install a new drive, you can click **Refresh** to force the wizard to update the list of available drives.
 
-     
+     
 
 3.  Click the **Create Bootable Media** button.
 
@@ -280,9 +280,9 @@ The Preboot execution environment (PXE) and local image deployment are not suppo
 
 [Deploying DaRT 8.0](deploying-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

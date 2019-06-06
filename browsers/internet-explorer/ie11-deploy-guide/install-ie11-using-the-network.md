@@ -21,22 +21,22 @@ You can install Internet Explorer 11 (IE11) over your network by putting your c
 
  **To manually create the folder structure**
 
--   Copy your custom IE11 installation file into a folder on your network, making sure it's available to your employees.
+- Copy your custom IE11 installation file into a folder on your network, making sure it's available to your employees.
 
- **To create the folder structure using IEAK 11**
+  **To create the folder structure using IEAK 11**
 
--   Run the Internet Explorer Customization Wizard 11 in IEAK 11, using the **Full Installation Package** option.<p>
-The wizard automatically puts your custom installation files in your `\<build_directory>\Flat` folder. Where the `<build_directory>` is the location of your other build files.
+- Run the Internet Explorer Customization Wizard 11 in IEAK 11, using the **Full Installation Package** option.<p>
+  The wizard automatically puts your custom installation files in your `\<build_directory>\Flat` folder. Where the `<build_directory>` is the location of your other build files.
 
 **Note**<br>Use the localized versions of the IE Customization Wizard 11 to create localized IE11 installation packages.
 
 ## Related topics
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md)
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -89,7 +89,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -163,7 +163,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -243,7 +243,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -327,7 +327,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -338,7 +338,7 @@ The following list includes the minimum recommended hardware and software requir
     **Important**  
     The minimum requirement is .NET Framework 2.0 SP2 if you must install App-V hotfix KB980850 or subsequent App-V hotfixes on the computer that is running the App-V Management Console.
 
-     
+     
 
 ## Related topics
 
@@ -353,9 +353,9 @@ The following list includes the minimum recommended hardware and software requir
 
 [How to Upgrade the Servers and System Components](how-to-upgrade-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

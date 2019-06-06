@@ -543,9 +543,9 @@ Once you have created the LayoutModification.xml file and it is present in the d
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 - [Start layout XML for mobile editions of Windows 10 (reference)](mobile-devices/start-layout-xml-mobile.md)
 
- 
+ 
 
- 
+ 
 
 
 

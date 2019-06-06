@@ -23,10 +23,10 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 
 -   Upgrade the App-V databases to a later version
 
-**Note**  
+**Note**  
 If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not required to upgrade to App-V 5.1.
 
- 
+
 
 **How to install the App-V databases by using SQL scripts**
 
@@ -63,19 +63,21 @@ If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not
     </tbody>
     </table>
 
-     
 
-    **Caution**  
-    The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
 
-     
+~~~
+**Caution**  
+The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
 
-    **Important**  
-    The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
 
-    The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
 
-     
+**Important**  
+The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
+
+The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
+~~~
+
+
 
 **Updated management database README file content**
 
@@ -209,7 +211,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
  2. Run the following scripts against the "AppVReporting" database using the 
     same account as above in order.
-    
+
     CreateTables.sql
     CreateReportingStoredProcs.sql
     CreateStoredProcs.sql
@@ -229,9 +231,9 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
 [How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)
 
- 
 
- 
+
+
 
 
 

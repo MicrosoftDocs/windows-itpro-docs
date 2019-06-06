@@ -28,7 +28,7 @@ The **Applications Licenses** node is one level below the Application Virtualiza
 **Note**  
 You can combine concurrent and named licenses for the same application.
 
- 
+ 
 
 Right-click the **Applications Licenses** node to display a pop-up menu that contains the following elements.
 
@@ -116,9 +116,9 @@ Displays the help system for the Application Virtualization Server Management Co
 
 [Server Management Console: Application Licenses Node](server-management-console-application-licenses-node.md)
 
- 
+ 
 
- 
+ 
 
 
 

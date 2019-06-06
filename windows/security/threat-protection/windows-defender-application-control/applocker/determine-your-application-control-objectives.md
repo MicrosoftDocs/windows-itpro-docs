@@ -48,7 +48,7 @@ Use the following table to develop your own objectives and determine which appli
 <tr class="odd">
 <td align="left"><p>Scope</p></td>
 <td align="left"><p>SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.</p></td>
-<td align="left"><p>AppLocker policies apply only to the support versions of Windows listed in [Requirements to use AppLocker](requirements-to-use-applocker.md).</p></td>
+<td align="left"><p>AppLocker policies apply only to the support versions of Windows listed in <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Policy creation</p></td>
@@ -163,5 +163,5 @@ Use the following table to develop your own objectives and determine which appli
 </tr>
 </tbody>
 </table>
- 
-For more general info, see [AppLocker](applocker-overview.md).
+ 
+For more general info, see <a href="applocker-overview.md" data-raw-source="[AppLocker](applocker-overview.md)">AppLocker</a>.
