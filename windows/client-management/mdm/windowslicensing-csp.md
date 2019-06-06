@@ -4,11 +4,11 @@ description: WindowsLicensing CSP
 ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 08/15/2018
 ---
 

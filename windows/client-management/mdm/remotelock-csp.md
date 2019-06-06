@@ -4,11 +4,11 @@ description: RemoteLock CSP
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

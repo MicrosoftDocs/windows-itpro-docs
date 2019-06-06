@@ -4,11 +4,11 @@ description: The Reporting configuration service provider is used to retrieve Wi
 ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

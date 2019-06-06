@@ -1,11 +1,11 @@
 ---
 title: DMSessionActions DDF file
 description: DMSessionActions DDF file
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ms.reviewer: 
 manager: dansimp

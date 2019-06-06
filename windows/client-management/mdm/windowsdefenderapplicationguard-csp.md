@@ -1,11 +1,11 @@
 ---
 title: WindowsDefenderApplicationGuard CSP
 description: WindowsDefenderApplicationGuard CSP
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/10/2018
 ms.reviewer: 
 manager: dansimp

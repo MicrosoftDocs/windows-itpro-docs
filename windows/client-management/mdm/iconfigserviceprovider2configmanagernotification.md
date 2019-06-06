@@ -4,11 +4,11 @@ description: IConfigServiceProvider2 ConfigManagerNotification
 ms.assetid: b1f0fe0f-afbe-4b36-a75d-34239a86a75c
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

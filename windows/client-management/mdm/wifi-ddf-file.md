@@ -4,11 +4,11 @@ description: WiFi DDF file
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/28/2018
 ---
 

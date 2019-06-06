@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Settings
 description: Policy CSP - Settings
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp

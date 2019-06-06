@@ -4,11 +4,11 @@ description: Win32AppInventory CSP
 ms.assetid: C0DEDD51-4EAD-4F8E-AEE2-CBE9658BCA22
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

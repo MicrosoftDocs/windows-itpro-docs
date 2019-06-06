@@ -4,11 +4,11 @@ description: DeviceLock DDF file
 ms.assetid: 46a691b9-6350-4987-bfc7-f8b1eece3ad9
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

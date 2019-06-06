@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - InternetExplorer
 description: Policy CSP - InternetExplorer
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp

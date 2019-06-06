@@ -4,11 +4,11 @@ description: To help diagnose enrollment or device management issues in WindowsÂ
 ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/25/2018
 ---
 

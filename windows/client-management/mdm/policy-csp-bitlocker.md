@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Bitlocker
 description: Policy CSP - Bitlocker
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/22/2018
 ms.reviewer: 
 manager: dansimp

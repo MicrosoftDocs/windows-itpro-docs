@@ -4,11 +4,11 @@ description: Registry CSP
 ms.assetid: 2307e3fd-7b61-4f00-94e1-a639571f2c9d
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

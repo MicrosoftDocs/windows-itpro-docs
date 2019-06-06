@@ -4,11 +4,11 @@ description: The Maps configuration service provider (CSP) is used to configure 
 ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

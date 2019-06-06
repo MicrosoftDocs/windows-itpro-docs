@@ -4,11 +4,11 @@ description: The Get product details operation retrieves the product information
 ms.assetid: BC432EBA-CE5E-43BD-BD54-942774767286
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

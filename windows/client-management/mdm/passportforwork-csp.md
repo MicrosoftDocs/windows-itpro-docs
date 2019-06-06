@@ -4,11 +4,11 @@ description: The PassportForWork configuration service provider is used to provi
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 10/31/2018
 ---
 

@@ -4,11 +4,11 @@ description: NAP CSP
 ms.assetid: 82f04492-88a6-4afd-af10-a62b8d444d21
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

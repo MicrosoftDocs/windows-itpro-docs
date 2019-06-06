@@ -4,11 +4,11 @@ description: DynamicManagement DDF file
 ms.assetid: 7e266db0-2fd9-4412-b428-4550f41a1738
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

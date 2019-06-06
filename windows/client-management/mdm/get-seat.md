@@ -4,11 +4,11 @@ description: The Get seat operation retrieves the information about an active se
 ms.assetid: 715BAEB2-79FD-4945-A57F-482F9E7D07C6
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

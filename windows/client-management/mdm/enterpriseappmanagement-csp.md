@@ -4,11 +4,11 @@ description: EnterpriseAppManagement CSP
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

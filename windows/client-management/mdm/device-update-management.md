@@ -5,11 +5,11 @@ ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ms.reviewer: 
 manager: dansimp
 keywords: mdm,management,administrator
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 11/15/2017
 ---
 

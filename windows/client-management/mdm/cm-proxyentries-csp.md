@@ -4,11 +4,11 @@ description: CM\_ProxyEntries CSP
 ms.assetid: f4c3dc71-c85a-4c68-9ce9-19f408ff7a0a
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

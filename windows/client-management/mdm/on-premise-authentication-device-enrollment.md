@@ -4,11 +4,11 @@ description: This section provides an example of the mobile device enrollment pr
 ms.assetid: 626AC8B4-7575-4C41-8D59-185D607E3A47
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
