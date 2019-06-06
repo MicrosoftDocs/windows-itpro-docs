@@ -16,7 +16,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile {DID YOU WANT TO REMOVE MOBILE?}
 - Windows Server 2016
 - Windows Server 2019
 
@@ -26,7 +25,7 @@ Windows Update for Business is a free service that is available for Windows Pro,
 
 
 
-Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
+Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
   
 Specifically, Windows Update for Business allows for control over update offering and experience to allow for reliability and performance testing on a subset of systems before rolling out updates across the organization as well as a positive update experience for those within your organization. 
  
@@ -59,7 +58,7 @@ Windows Update for Business, offers you the ability to turn on or off both drive
 
 #### Defer an update
 
-A Windows Update for Business administrator can defer both feature and quality updates from deploying to client devices within a bounded range of time from when those updates are first made available on the Windows Update service. This deferral allows you time to validate deployments as they are pushed to client devices configured for Windows Update for Business. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device (if you set a feature update deferral period of 365 days, the client will not take a feature update that has been released for less than 365 days). 
+A Windows Update for Business administrator can defer both feature and quality updates from deploying to client devices within a bounded range of time from when those updates are first made available on the Windows Update service. This deferral allows you time to validate deployments as they are pushed to client devices configured for Windows Update for Business. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device (if you set a feature update deferral period of 365 days, the device will not take a feature update that has been released for less than 365 days). 
 
 
 | Category | Maximum deferral |
@@ -70,11 +69,11 @@ A Windows Update for Business administrator can defer both feature and quality u
 
 #### Pause an update
 
-If you discover a problem while deploying a feature or quality Update, an IT Administrator has the ability to pause the update for 35 days to prevent other devices from taking the problematic update until the issue is mitigated. If feature updates are paused, quality updates will still be offered to devices to ensure they stay in a secure state. The pause period for both feature and quality updates is calculated from the set start date. For more details, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
+If you discover a problem while deploying a feature or quality Update, an IT Administrator has the ability to pause the update for **35 days** to prevent other devices from taking the problematic update until the issue is mitigated. If feature updates are paused, quality updates will still be offered to devices to ensure they stay in a secure state. The pause period for both feature and quality updates is calculated from the set start date. For more details, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
 
 #### Select branch readiness level for feature updates
  
-Branch readiness level enables administrators to specify which channel of feature updates they would like to receive. Today there are branch readiness level options for both pre-release and released updates:
+The branch readiness level enables administrators to specify which channel of feature updates they would like to receive. Today there are branch readiness level options for both pre-release and released updates:
  
 - Windows Insider Program for Business pre-release updates 
     - Windows Insider Fast  
@@ -82,7 +81,7 @@ Branch readiness level enables administrators to specify which channel of featur
     - Windows Insider Release Preview  
 - The Semi-Annual Channel, released updates 
   
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel (Targeted) and Semi-Annual Channel. Deferral days are calculated against the release date of the chosen channel (either a release’s Semi-Annual Channel (Targeted) release date or the release’s Semi-Annual Channel release date). Starting with Windows 10, version 1903 there is only one release channel, the Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. To see release dates go to the [Windows Release Information Page](NEEDLINK).  
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel (Targeted) and Semi-Annual Channel. Deferral days are calculated against the release date of the chosen channel (either a release’s Semi-Annual Channel (Targeted) release date or the release’s Semi-Annual Channel release date). Starting with Windows 10, version 1903 there is only one release channel, the Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. To see release dates go to the [Windows Release Information Page](https://docs.microsoft.com/windows/release-information/).  
 
 ## Experience
 

@@ -21,7 +21,12 @@ ms.topic: article
 
 
 ## Overview 
-Windows Update for Business policies can be set via Group Policies either locally or by an IT administrator. All of these group policies can be found under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
+
+You can use Group Policy, through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. See 
+
+An IT administrator can set policies for Windows Update for Business by using Group Policy, or they can be set locally (per device). All of the relevant policies are under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
+
+
 
 ## Offering
 
