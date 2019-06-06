@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # General Data Privacy Regulation and Surface Hub
 
-In May 2018, a European privacy law, the General Data Protection Regulation (GDPR), is due to take effect. The GDPR imposes new rules on companies, government agencies, non-profits, and other organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data tied to EU residents.
+In May 2018, a European privacy law, the General Data Protection Regulation (GDPR), took effect. The GDPR imposes new rules on companies, government agencies, non-profits, and other organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data tied to EU residents.
 
 Surface Hub customers concerned about privacy under the new GDPR regulations can manage their device privacy with the following options that are provided by Microsoft:
 
