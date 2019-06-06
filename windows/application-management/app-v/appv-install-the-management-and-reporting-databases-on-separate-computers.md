@@ -29,8 +29,8 @@ Use the following procedure to install the database server and management server
 4. On the **Feature selection** page, select the components you want to install by first selecting the **Management Server Database** checkbox, then selecting **Next**.
 5. On the **Installation location** page, accept the default location and select **Next**.
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
-  * If you are using a custom SQL Server instance, select **Use a custom instance** and enter the name of the instance.
-  * If you are using a custom database name, select **Custom configuration** and enter the database name.
+   * If you are using a custom SQL Server instance, select **Use a custom instance** and enter the name of the instance.
+   * If you are using a custom database name, select **Custom configuration** and enter the database name.
 7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
     >[!NOTE]
@@ -45,8 +45,8 @@ Use the following procedure to install the database server and management server
 4. On the **Feature selection** page, select the components you want to install by first selecting the **Reporting Server Database** checkbox, then selecting **Next**.
 5. On the **Installation Location** page, accept the default location and select **Next**.
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
- * If you're using a custom SQL Server instance, select **Use a custom instance** and enter the instance name.
- * If you're using a custom database name, select **Custom configuration** and enter the database name.
+   * If you're using a custom SQL Server instance, select **Use a custom instance** and enter the instance name.
+   * If you're using a custom database name, select **Custom configuration** and enter the database name.
 7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
     >[!NOTE]
@@ -58,18 +58,18 @@ Use the following procedure to install the database server and management server
 1. Copy the App-V server installation files to the computer on which you want to install it on.
 2. To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
 
-  ```SQL
+   ```SQL
     appv\_server\_setup.exe /LAYOUT /LAYOUTDIR=”InstallationExtractionLocation”
-  ```
+   ```
   
 3. After the extraction has been completed, to access the App-V database scripts and instructions readme file:
 
- * The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
- * The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
+   * The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
+   * The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
 4. For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
- >[!NOTE]
- >For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
+   >[!NOTE]
+   >For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
 5. Run the scripts on the computer running Microsoft SQL Server.
 
 

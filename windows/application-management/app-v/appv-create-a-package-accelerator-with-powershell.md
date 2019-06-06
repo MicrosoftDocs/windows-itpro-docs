@@ -27,20 +27,20 @@ App-V Package Accelerators automatically sequence large, complex applications. A
 
     The following parameters are required to use the package accelerator cmdlet:
 
-    - *InstalledFilesPath* specifies the application installation path.
-    - *Installer* specifies the path to the application installer media.
-    - *InputPackagePath* specifies the path to the .appv package.
-    - *Path* specifies the output directory for the package.
+   - *InstalledFilesPath* specifies the application installation path.
+   - *Installer* specifies the path to the application installer media.
+   - *InputPackagePath* specifies the path to the .appv package.
+   - *Path* specifies the output directory for the package.
 
-    The following example cmdlet shows how you can create a package accelerator with an .appv package and the installation media:
+     The following example cmdlet shows how you can create a package accelerator with an .appv package and the installation media:
 
-    ```PowerShell
-    New-AppvPackageAccelerator -InputPackagePath <path to the .appv file> -Installer <path to the installer executable> -Path <directory of the output path>
-    ```
+     ```PowerShell
+     New-AppvPackageAccelerator -InputPackagePath <path to the .appv file> -Installer <path to the installer executable> -Path <directory of the output path>
+     ```
 
-    You can also use the following optional parameter with the **New-AppvPackageAccelerator** cmdlet:
+     You can also use the following optional parameter with the **New-AppvPackageAccelerator** cmdlet:
 
-    - *AcceleratorDescriptionFile* specifies the path to user-created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be included in the package created by the package accelerator.
+   - *AcceleratorDescriptionFile* specifies the path to user-created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be included in the package created by the package accelerator.
 
 
 

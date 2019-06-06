@@ -20,7 +20,7 @@ ms.date: 09/21/2017
 # Understanding the path rule condition in AppLocker
 
 **Applies to**
- -   Windows 10 
+ -   Windows 10 
  -   Windows Server
 
 This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it is applied.
@@ -53,22 +53,23 @@ When creating a rule that uses a deny action, path conditions are less secure th
 </tr>
 </tbody>
 </table>
- 
+
 AppLocker does not enforce rules that specify paths with short names. You should always specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.
 
 The asterisk (\*) wildcard character can be used within **Path** field. The asterisk (\*) character used by itself represents any path. When combined with any string value, the rule is limited to the path of the file and all the files under that path. For example, %ProgramFiles%\\Internet Explorer\\\* indicates that all files and subfolders within the Internet Explorer folder will be affected by the rule.
 
 AppLocker uses path variables for well-known directories in Windows. Path variables are not environment variables. The AppLocker engine can only interpret AppLocker path variables. The following table details these path variables.
 
-| Windows directory or drive | AppLocker path variable | Windows environment variable |
-| - | - | - |
-| Windows | %WINDIR% | %SystemRoot% | 
-| System32 and sysWOW64 | %SYSTEM32%| %SystemDirectory%| 
-| Windows installation directory | %OSDRIVE%|%SystemDrive%| 
-| Program Files | %PROGRAMFILES%| %ProgramFiles% and %ProgramFiles(x86)%| 
-| Removable media (for example, CD or DVD) | %REMOVABLE%| |
-| Removable storage device (for example, USB flash drive)| %HOT%|||  
- 
+
+|               Windows directory or drive                | AppLocker path variable |      Windows environment variable      |
+|---------------------------------------------------------|-------------------------|----------------------------------------|
+|                         Windows                         |        %WINDIR%         |              %SystemRoot%              |
+|                  System32 and sysWOW64                  |       %SYSTEM32%        |           %SystemDirectory%            |
+|             Windows installation directory              |        %OSDRIVE%        |             %SystemDrive%              |
+|                      Program Files                      |     %PROGRAMFILES%      | %ProgramFiles% and %ProgramFiles(x86)% |
+|        Removable media (for example, CD or DVD)         |       %REMOVABLE%       |                                        |
+| Removable storage device (for example, USB flash drive) |          %HOT%          |                                        |
+
 For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
 ## Related topics

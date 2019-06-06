@@ -22,7 +22,7 @@ Use the **Exclusion Item** dialog box to assign or change a mapping rule and to 
 **Important**  
 Adding files from an excluded directory to the virtual files system is not supported.
 
- 
+ 
 
 <a href="" id="exclude-path"></a>**Exclude Path**  
 Use to specify variable name that the Application Virtualization Sequencer will exclude if encountered while parsing virtual file system items or virtual registry items.
@@ -41,9 +41,9 @@ Use to select the mapping rules the Application Virtualization Sequencer will ap
 
 [Sequencer Dialog Boxes](sequencer-dialog-boxes.md)
 
- 
+ 
 
- 
+ 
 
 
 

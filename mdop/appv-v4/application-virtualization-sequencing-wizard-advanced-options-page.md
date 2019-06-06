@@ -41,16 +41,15 @@ Use the **Advanced Options** page of the Application Virtualization (App-V) Sequ
 <li><p><strong>64 KB</strong></p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>When you select a block size, consider the size of the SFT file and your network bandwidth. A file with a smaller block size takes longer to stream over the network but is less bandwidth-intensive. Files with larger block sizes might stream faster, but they use more network bandwidth. Through experimentation, you can discover the optimum block size for streaming applications on your network.</p>
+<strong>Note</strong><br/><p>When you select a block size, consider the size of the SFT file and your network bandwidth. A file with a smaller block size takes longer to stream over the network but is less bandwidth-intensive. Files with larger block sizes might stream faster, but they use more network bandwidth. Through experimentation, you can discover the optimum block size for streaming applications on your network.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Enable Microsoft Update During Monitoring</strong></p></td>
-<td align="left"><p>Enables installation of Microsoft Updates during the Sequencing Wizard's monitoring phase.</p></td>
+<td align="left"><p>Enables installation of Microsoft Updates during the Sequencing Wizard&#39;s monitoring phase.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Rebase DLLs</strong></p></td>
@@ -58,11 +57,11 @@ Use the **Advanced Options** page of the Application Virtualization (App-V) Sequ
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Back</strong></p></td>
-<td align="left"><p>Accesses the Sequencing Wizard's previous page.</p></td>
+<td align="left"><p>Accesses the Sequencing Wizard&#39;s previous page.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Next</strong></p></td>
-<td align="left"><p>Accesses the Sequencing Wizard's next page.</p></td>
+<td align="left"><p>Accesses the Sequencing Wizard&#39;s next page.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Cancel</strong></p></td>
@@ -71,7 +70,7 @@ Use the **Advanced Options** page of the Application Virtualization (App-V) Sequ
 </tbody>
 </table>
 
- 
+
 
 \[Template Token Value\]
 
@@ -112,7 +111,7 @@ Use the **Advanced Options** page of the App-V Sequencing Wizard to specify adva
 </tbody>
 </table>
 
- 
+
 
 \[Template Token Value\]
 
@@ -121,9 +120,9 @@ Use the **Advanced Options** page of the App-V Sequencing Wizard to specify adva
 
 [Sequencing Wizard](sequencing-wizard.md)
 
- 
 
- 
+
+
 
 
 

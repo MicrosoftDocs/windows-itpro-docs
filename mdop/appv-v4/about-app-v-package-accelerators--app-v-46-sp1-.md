@@ -22,14 +22,14 @@ You can use App-V Package Accelerators to automatically sequence large, complex 
 **Note**  
 In some cases, you are prompted to install an application locally to the computer running the App-V Sequencer before you can use the Package Accelerator. If you have to install an application, you must install the application to the application’s default location. This installation is not monitored by App-V Sequencer. When the App-V Package Accelerator is created, the author of the Package Accelerator determines whether to install an application locally is required.
 
- 
+ 
 
 App-V Sequencer extracts the required files from the App-V Package Accelerator and associated installation media to create a virtual package without having to monitor the installation of the application.
 
 **Important**  
 Disclaimer: The Microsoft Application Virtualization Sequencer does not give you any license rights to the software application you are using to create a Package Accelerator. You must abide by all end user license terms for such application. It is your responsibility to make sure the software application’s license terms allow you to create a Package Accelerator using Application Virtualization Sequencer.
 
- 
+ 
 
 App-V Package Accelerators and project templates differ from each other. Package Accelerators are application-specific. Project templates enable users to save commonly used settings specific to an organization and apply them to multiple applications. You can also create project templates at the command prompt, while in contrast, you must use the App-V Sequencer console to create Package Accelerators. Additionally, creating a package by using a Package Accelerator and applying a project template is not supported.
 
@@ -60,9 +60,9 @@ Always save App-V Package Accelerators and any associated installation media in 
 
 [How to Apply a Package Accelerator to Create a Virtual Application Package (App-V 4.6 SP1)](how-to-apply-a-package-accelerator-to-create-a-virtual-application-package---app-v-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

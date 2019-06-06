@@ -21,13 +21,14 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Not configured |Blank |Blank |If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page. |
-|Enabled |0 |0 |Load the Start page. |
-|Enabled |1 |1 |Load the New Tab page. |
-|Enabled |2 |2 |Load the previous pages. |
-|Enabled<br>**(default)** |3 |3 |Load a specific page or pages. |
+|       Group Policy       |  MDM  | Registry |                                                                 Description                                                                 |
+|--------------------------|:-----:|:--------:|---------------------------------------------------------------------------------------------------------------------------------------------|
+|      Not configured      | Blank |  Blank   | If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page. |
+|         Enabled          |   0   |    0     |                                                            Load the Start page.                                                             |
+|         Enabled          |   1   |    1     |                                                           Load the New Tab page.                                                            |
+|         Enabled          |   2   |    2     |                                                          Load the previous pages.                                                           |
+| Enabled<br>**(default)** |   3   |    3     |                                                       Load a specific page or pages.                                                        |
+
 ---
 
 

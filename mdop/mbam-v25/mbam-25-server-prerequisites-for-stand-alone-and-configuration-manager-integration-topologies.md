@@ -23,10 +23,10 @@ If you are deploying MBAM with System Center Configuration Manager, you must com
 
 For a list of the supported hardware and operating systems for MBAM, see [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md).
 
-**Important**  
+**Important**  
 If BitLocker was used without MBAM, you must decrypt the drive and then clear TPM using tpm.msc. MBAM cannot take ownership of TPM if the client PC is already encrypted and the TPM owner password created.
 
- 
+
 
 ## Required MBAM roles and accounts
 
@@ -45,12 +45,12 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 <tbody>
 <tr class="odd">
 <td align="left"><p>Groups created in Active Directory Domain Services (AD DS)</p></td>
-<td align="left"><p>See [Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md) for a description of these groups and accounts.</p></td>
+<td align="left"><p>See <a href="planning-for-mbam-25-groups-and-accounts.md" data-raw-source="[Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md)">Planning for MBAM 2.5 Groups and Accounts</a> for a description of these groups and accounts.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for the Recovery Database
 
@@ -70,7 +70,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
 <td align="left"><p>Install Microsoft SQL Server with SQL_Latin1_General_CP1_CI_AS collation.</p>
-<p>See [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md) for supported versions.</p></td>
+<p>See <a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a> for supported versions.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required SQL Server permissions</p></td>
@@ -90,13 +90,12 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional - Install the Transparent Data Encryption (TDE) feature available in SQL Server</p></td>
-<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with laws, regulations, and guidelines that apply to various industries.</p>
+<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with laws, regulations, and guidelines that apply to various industries.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>TDE performs real-time decryption of database information. This means that, if you are viewing recovery key information in the SQL Server database and you are logged on under an account that has permissions to the database, the recovery key information is visible. To read more about TDE, see [MBAM 2.5 Security Considerations](mbam-25-security-considerations.md).</p>
+<strong>Note</strong><br/><p>TDE performs real-time decryption of database information. This means that, if you are viewing recovery key information in the SQL Server database and you are logged on under an account that has permissions to the database, the recovery key information is visible. To read more about TDE, see <a href="mbam-25-security-considerations.md" data-raw-source="[MBAM 2.5 Security Considerations](mbam-25-security-considerations.md)">MBAM 2.5 Security Considerations</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -110,7 +109,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for the Compliance and Audit Database
 
@@ -130,7 +129,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
 <td align="left"><p>Install SQL Server with SQL_Latin1_General_CP1_CI_AS collation.</p>
-<p>See [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md) for supported versions.</p></td>
+<p>See <a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a> for supported versions.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required SQL Server permissions</p></td>
@@ -150,8 +149,8 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional - Install the Transparent Data Encryption (TDE) feature in SQL Server</p></td>
-<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with laws, regulations, and guidelines that apply to various industries.</p>
-<p>TDE performs real-time decryption of database information. This means that, if you are viewing recovery key information in the SQL Server database and you are logged on under an account that has permissions to the database, the recovery key information is visible. To read more about TDE, see [MBAM 2.5 Security Considerations](mbam-25-security-considerations.md).</p></td>
+<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with laws, regulations, and guidelines that apply to various industries.</p>
+<p>TDE performs real-time decryption of database information. This means that, if you are viewing recovery key information in the SQL Server database and you are logged on under an account that has permissions to the database, the recovery key information is visible. To read more about TDE, see <a href="mbam-25-security-considerations.md" data-raw-source="[MBAM 2.5 Security Considerations](mbam-25-security-considerations.md)">MBAM 2.5 Security Considerations</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SQL Server Database Engine Services</p></td>
@@ -164,7 +163,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for the Reports
 
@@ -184,7 +183,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
 <td align="left"><p>Install SQL Server with SQL_Latin1_General_CP1_CI_AS collation.</p>
-<p>See [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md) for supported versions.</p></td>
+<p>See <a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a> for supported versions.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SQL Server Reporting Services (SSRS)</p></td>
@@ -206,7 +205,7 @@ If BitLocker was used without MBAM, you must decrypt the drive and then clear TP
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-prereqsams"></a>Prerequisites for the Administration and Monitoring Server
 
@@ -264,13 +263,12 @@ The following table lists the installation prerequisites for the MBAM Administra
 <li><p><strong>.NET Framework 4.5</strong></p>
 <ul>
 <li><p><strong>Windows Server 2012 or Windows Server 2012 R2</strong> - .NET Framework 4.5 is already installed for these versions of Windows Server, but you must enable it.</p></li>
-<li><p><strong>Windows Server 2008 R2</strong> - .NET Framework 4.5 is not included with Windows Server 2008 R2, so you must [download Microsoft .NET Framework 4.5](https://go.microsoft.com/fwlink/?LinkId=392318) and install it separately.</p>
+<li><p><strong>Windows Server 2008 R2</strong> - .NET Framework 4.5 is not included with Windows Server 2008 R2, so you must <a href="https://go.microsoft.com/fwlink/?LinkId=392318" data-raw-source="[download Microsoft .NET Framework 4.5](https://go.microsoft.com/fwlink/?LinkId=392318)">download Microsoft .NET Framework 4.5</a> and install it separately.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are upgrading from MBAM 2.0 or MBAM 2.0 SP1 and need to install .NET Framework 4.5, see [Release Notes for MBAM 2.5](release-notes-for-mbam-25.md) for an additional required step to make the websites work.</p>
+<strong>Note</strong><br/><p>If you are upgrading from MBAM 2.0 or MBAM 2.0 SP1 and need to install .NET Framework 4.5, see <a href="release-notes-for-mbam-25.md" data-raw-source="[Release Notes for MBAM 2.5](release-notes-for-mbam-25.md)">Release Notes for MBAM 2.5</a> for an additional required step to make the websites work.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul></li>
 <li><p><strong>WCF Activation</strong></p>
@@ -289,30 +287,29 @@ The following table lists the installation prerequisites for the MBAM Administra
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>ASP.NET MVC 4.0</p></td>
-<td align="left"><p>[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)</p></td>
+<td align="left"><p>ASP.NET MVC 4.0</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=392271" data-raw-source="[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)">ASP.NET MVC 4 download</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Service Principal Name (SPN)</p></td>
 <td align="left"><p>The web applications require an SPN for the virtual host name under the domain account that you use for the web application pools.</p>
-<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](https://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
+<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See <a href="https://technet.microsoft.com/library/cc731241.aspx" data-raw-source="[Setspn](https://technet.microsoft.com/library/cc731241.aspx)">Setspn</a> for information about the rights required to create SPNs.</p>
 <p>If you do not have administrative rights to create SPNs, you must ask the Active Directory administrators in your organization to create the SPN for you by using the following command.</p>
 <pre class="syntax" space="preserve"><code>Setspn -s http/mbamvirtual contoso\mbamapppooluser
 Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <p>In the code example, the virtual host name is mbamvirtual.contoso.com, and the domain account used for the web application pools is contoso\mbamapppooluser.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are setting up Load Balancing, use the same application pool account on all servers.</p>
+<strong>Note</strong><br/><p>If you are setting up Load Balancing, use the same application pool account on all servers.</p>
 </div>
 <div>
- 
+
 </div>
-<p>For more information about registering SPNs for fully qualified, NetBIOS, and custom host names, see [Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md).</p></td>
+<p>For more information about registering SPNs for fully qualified, NetBIOS, and custom host names, see <a href="planning-how-to-secure-the-mbam-websites.md" data-raw-source="[Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md)">Planning How to Secure the MBAM Websites</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for the Self-Service Portal
 
@@ -331,11 +328,11 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of Windows Server</p></td>
-<td align="left"><p>See [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md) for supported versions.</p></td>
+<td align="left"><p>See <a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a> for supported versions.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>ASP.NET MVC 4.0</p></td>
-<td align="left"><p>[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)</p></td>
+<td align="left"><p>ASP.NET MVC 4.0</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=392271" data-raw-source="[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)">ASP.NET MVC 4 download</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Web Service IIS Management Tools</p></td>
@@ -344,24 +341,23 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <tr class="even">
 <td align="left"><p>Service Principal Name (SPN)</p></td>
 <td align="left"><p>The web applications require an SPN for the virtual host name under the domain account that you use for the web application pools.</p>
-<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](https://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
+<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See <a href="https://technet.microsoft.com/library/cc731241.aspx" data-raw-source="[Setspn](https://technet.microsoft.com/library/cc731241.aspx)">Setspn</a> for information about the rights required to create SPNs.</p>
 <p>If you do not have administrative rights to create SPNs, you must ask the Active Directory administrators in your organization administrators in your organization to create the SPN for you by using the following command.</p>
 <pre class="syntax" space="preserve"><code>Setspn -s http/mbamvirtual contoso\mbamapppooluser
 Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <p>In the code example, the virtual host name is mbamvirtual.contoso.com, and the domain account used for the web application pools is contoso\mbamapppooluser.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are setting up Load Balancing, use the same application pool account on all servers.</p>
+<strong>Note</strong><br/><p>If you are setting up Load Balancing, use the same application pool account on all servers.</p>
 </div>
 <div>
- 
+
 </div>
-<p>For more information about registering SPNs for fully qualified, NetBIOS, and custom host names, see [Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md).</p></td>
+<p>For more information about registering SPNs for fully qualified, NetBIOS, and custom host names, see <a href="planning-how-to-secure-the-mbam-websites.md" data-raw-source="[Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md)">Planning How to Secure the MBAM Websites</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for the Management Workstation
 
@@ -379,7 +375,7 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Before installing the MBAM Client, download the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and configure them with the settings that you want to implement in your enterprise for BitLocker Drive Encryption.</p></td>
+<td align="left"><p>Before installing the MBAM Client, download the MBAM Group Policy Templates from <a href="https://go.microsoft.com/fwlink/p/?LinkId=393941" data-raw-source="[How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941)">How to Get MDOP Group Policy (.admx) Templates</a> and configure them with the settings that you want to implement in your enterprise for BitLocker Drive Encryption.</p></td>
 <td align="left"><p>Before installing the MBAM Client, do the following:</p>
 <table>
 <colgroup>
@@ -395,20 +391,20 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <tbody>
 <tr class="odd">
 <td align="left"><p>Copy the MBAM Group Policy Templates</p></td>
-<td align="left"><p>[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)</p></td>
+<td align="left"><p><a href="copying-the-mbam-25-group-policy-templates.md" data-raw-source="[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)">Copying the MBAM 2.5 Group Policy Templates</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Edit the Group Policy settings</p></td>
-<td align="left"><p>[Editing the MBAM 2.5 Group Policy Settings](editing-the-mbam-25-group-policy-settings.md)</p></td>
+<td align="left"><p><a href="editing-the-mbam-25-group-policy-settings.md" data-raw-source="[Editing the MBAM 2.5 Group Policy Settings](editing-the-mbam-25-group-policy-settings.md)">Editing the MBAM 2.5 Group Policy Settings</a></p></td>
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 
 
@@ -421,9 +417,9 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 
 [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)
 
- 
 
- 
+
+
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

@@ -33,16 +33,16 @@ Select the **Compress Package** check box to compress the package, which can hel
 **Note**  
 If the original package size is more than 4 GB and compressed, by default, the checkbox is checked and cannot be changed. If the original package is compressed and less than 4 GB, the check box is checked, but can be cleared.
 
- 
+ 
 
 ## Related topics
 
 
 [Sequencer Wizard - Package Accelerator (AppV 4.6 SP1)](sequencer-wizard---package-accelerator--appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

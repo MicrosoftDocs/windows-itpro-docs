@@ -43,7 +43,7 @@ Azure AD Join also enables company owned devices to be automatically enrolled in
 
 > **Important**  Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](https://msdn.microsoft.com/library/azure/dn499825.aspx) license.
 
- 
+ 
 ### BYOD scenario
 
 Windows 10 also introduces a simpler way to configure personal devices to access work apps and resources. Users can add their Microsoft work account to Windows and enjoy simpler and safer access to the apps and resources of the organization. During this process, Azure AD detects if the organization has configured an MDM. If that’s the case, Windows attempts to enroll the device in MDM as part of the “add account” flow. It’s important to note that in the BYOD case, users can reject the MDM Terms of Use—in which case the device is not enrolled in MDM and access to corporate resources is typically restricted.
@@ -66,7 +66,7 @@ Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, th
 
 > **Note**  Users cannot remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
 
- 
+ 
 ### MDM endpoints involved in Azure AD integrated enrollment
 
 Azure AD MDM enrollment is a two-step process:
@@ -109,7 +109,7 @@ The MDM vendor must first register the application in their home tenant and mark
 
 > **Note**  For the MDM provider, if you don't have an existing Azure AD tentant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
 
- 
+ 
 The keys used by the MDM application to request access tokens from Azure AD are managed within the tenant of the MDM vendor and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, regardless of the customer tenent to which the device being managed belongs.
 
 Use the following steps to register a cloud-based MDM application with Azure AD. At this time, you need to work with the Azure AD engineering team to expose this application through the Azure AD app gallery.
@@ -204,7 +204,7 @@ You should work with the Azure AD engineering team if your MDM application is cl
 </tbody>
 </table>
 
- 
+ 
 ### Add on-premises MDM to the app gallery
 
 There are no special requirements for adding on-premises MDM to the app gallery.There is a generic entry for administrator to add an app to their tenant.
@@ -265,7 +265,7 @@ An MDM page must adhere to a predefined theme depending on the scenario that is 
 </tbody>
 </table>
 
- 
+ 
 ## Terms of Use protocol semantics
 
 The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join protocol flow, Windows performs a full-page redirect to this endpoint. This enables the MDM to display the terms and conditions that apply and allows the user to accept or reject the terms associated with enrollment. After the user accepts the terms, the MDM redirects back to Windows for the enrollment process to continue.
@@ -307,7 +307,7 @@ The following parameters are passed in the query string:
 </tbody>
 </table>
 
- 
+ 
 ### Access token
 
 A bearer access token is issued by Azure AD is passed in the authorization header of the HTTP request. Here is a typical format:
@@ -338,7 +338,7 @@ The following claims are expected in the access token passed by Windows to the T
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>TID</p></td>
-<td style="vertical-align:top"><p>A claim representing the tenant ID of the tenant. In the example above, it's Fabrikam.</p></td>
+<td style="vertical-align:top"><p>A claim representing the tenant ID of the tenant. In the example above, it&#39;s Fabrikam.</p></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>Resource</p></td>
@@ -346,10 +346,10 @@ The following claims are expected in the access token passed by Windows to the T
 </tr>
 </tbody>
 </table>
- 
-> **Note**  There is no device ID claim in the access token because the device may not yet be enrolled at this time.
+ 
+&gt; <strong>Note</strong>  There is no device ID claim in the access token because the device may not yet be enrolled at this time.
 
- 
+ 
 To retrieve the list of group memberships for the user, you can use the [Azure AD Graph API](https://go.microsoft.com/fwlink/p/?LinkID=613654).
 
 Here's an example URL.
@@ -450,7 +450,7 @@ The following table shows the error codes.
 </tbody>
 </table>
 
- 
+ 
 ## Enrollment protocol with Azure AD
 
 With Azure integrated MDM enrollment, there is no discovery phase and the discovery URL is directly passed down to the system from Azure. The following table shows the comparison between the traditional and Azure enrollments.
@@ -590,7 +590,7 @@ With Azure integrated MDM enrollment, there is no discovery phase and the discov
 </tbody>
 </table>
 
- 
+ 
 
 ## Management protocol with Azure AD
 
@@ -918,9 +918,9 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

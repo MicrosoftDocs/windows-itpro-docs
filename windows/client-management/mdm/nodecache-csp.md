@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -59,7 +59,7 @@ Required. Root node for cached nodes. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-nodes-nodeid"></a>**/Nodes/****_NodeID_**  
+<a href="" id="-nodes-nodeid"></a>**/Nodes/**<strong>*NodeID*</strong>  
 Optional. Information about each cached node is stored under *NodeID* as specified by the server. This value must not contain a comma. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
@@ -357,9 +357,9 @@ The value inside of the node tag is the actual value returned by the Uri, which 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

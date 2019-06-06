@@ -29,7 +29,7 @@ You can write the ISO to a recordable CD or DVD, save it to a USB flash drive, o
 **Note**  
 If your computer includes a CD-RW drive, the wizard offers to burn the ISO image to a blank CD or DVD. If your computer does not include a drive that is supported by the wizard, you can burn the ISO image onto a CD or DVD by using most programs that can burn a CD or DVD.
 
- 
+ 
 
 To create a bootable CD or DVD from the ISO image, you must have:
 
@@ -42,7 +42,7 @@ To create a bootable CD or DVD from the ISO image, you must have:
     **Important**  
     Test the CD or DVD that you create on all the different kinds of computers that you intend to support because some computers cannot start from all kinds of recordable media.
 
-     
+     
 
 To save the ISO image to a USB flash drive (UFD), you must have:
 
@@ -64,9 +64,9 @@ You can create a DaRT recovery image that can only be used for a certain number 
 
 -   [Deploying DaRT 7.0](deploying-dart-70-new-ia.md)
 
- 
+ 
 
- 
+ 
 
 
 

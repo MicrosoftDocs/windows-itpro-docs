@@ -34,12 +34,12 @@ The MED-V Host and Guest agents and the MED-V Workspace Packager require the Mic
 **Important**  
 You must also install the update [KB959209](https://go.microsoft.com/fwlink/?LinkId=204950) (https://go.microsoft.com/fwlink/?LinkId=204950), which addresses several known application compatibility issues.
 
- 
+ 
 
 **Note**  
 You must manually install the .NET Framework 3.5 SP1 and the update KB959209 into the Windows Virtual PC image that you prepare for use with MED-V. However, by default, the Microsoft .NET Framework 3.5 SP1 and the update are included when you install Windows 7 on the host computer.
 
- 
+ 
 
 **An Active Directory Infrastructure**
 
@@ -54,9 +54,9 @@ Group Policy provides the centralized management and configuration of operating 
 
 [MED-V 2.0 Supported Configurations](med-v-20-supported-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

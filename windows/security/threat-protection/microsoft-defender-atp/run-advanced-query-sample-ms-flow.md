@@ -43,21 +43,21 @@ Use the following basic flow as an example.
 
 	![Image of MsFlow choose an action](images/ms-flow-choose-action.png)
 
-	- Set method to be POST
-	- Uri is https://api.securitycenter.windows.com/api/advancedqueries/run or one of the region specific locations
-		- US: https://api-us.securitycenter.windows.com/api/advancedqueries/run
-		- Europe: https://api-eu.securitycenter.windows.com/api/advancedqueries/run
-		- United Kingdom: https://api-uk.securitycenter.windows.com/api/advancedqueries/run
-	- Add the Header: Content-Type              application/json
-	- In the body write your query surrounded by single quotation mark (')
-	- In the Advanced options select Authentication to be Active Directory OAuth
-	- Set the Tenant with proper AAD Tenant Id
-	- Audience is https://api.securitycenter.windows.com
-	- Client ID is your application ID
-	- Credential Type should be Secret
-	- Secret is the application secret generated in the Azure Active directory.
+   - Set method to be POST
+   - Uri is https://api.securitycenter.windows.com/api/advancedqueries/run or one of the region specific locations
+       - US: https://api-us.securitycenter.windows.com/api/advancedqueries/run
+       - Europe: https://api-eu.securitycenter.windows.com/api/advancedqueries/run
+       - United Kingdom: https://api-uk.securitycenter.windows.com/api/advancedqueries/run
+   - Add the Header: Content-Type              application/json
+   - In the body write your query surrounded by single quotation mark (')
+   - In the Advanced options select Authentication to be Active Directory OAuth
+   - Set the Tenant with proper AAD Tenant Id
+   - Audience is https://api.securitycenter.windows.com
+   - Client ID is your application ID
+   - Credential Type should be Secret
+   - Secret is the application secret generated in the Azure Active directory.
 
-	![Image of MsFlow define action](images/ms-flow-define-action.png)
+     ![Image of MsFlow define action](images/ms-flow-define-action.png)
 
 3. You can use the "Parse JSON" action to get the schema of data – just "use sample payload to generate schema" and copy an output from of the expected result.
 

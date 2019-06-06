@@ -20,9 +20,9 @@ ms.date: 06/16/2016
 The Application Virtualization Server Management Console lets you enable or disable Windows authentication, which lets you to define who has access to the system. You can use the following procedures to set up and disable authentication from the **Provider Policies Results** pane of the console.
 
 **Note**  
-  Normally, you set up authentication when you add a provider policy through the New Provider Policy Wizard.
+  Normally, you set up authentication when you add a provider policy through the New Provider Policy Wizard.
 
- 
+ 
 
 **To set up authentication**
 
@@ -53,9 +53,9 @@ The Application Virtualization Server Management Console lets you enable or disa
 
 [How to Customize an Application Virtualization System in the Server Management Console](how-to-customize-an-application-virtualization-system-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

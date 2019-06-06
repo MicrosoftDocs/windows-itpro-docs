@@ -22,7 +22,7 @@ Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 provide Wi
 **Note**  
 Administering UE-V 2 with Windows PowerShell requires Windows PowerShell 3.0 or higher. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://go.microsoft.com/fwlink/p/?LinkId=393495).
 
- 
+ 
 
 ## Managing the UE-V 2.x Agent and packages by using Windows PowerShell and WMI
 
@@ -48,9 +48,9 @@ After you create and deploy UE-V settings location templates, you can manage tho
 
 [Administering UE-V 2.x](administering-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

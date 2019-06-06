@@ -37,21 +37,21 @@ Before you turn on your Microsoft Surface Hub for the first time, make sure you'
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Setup worksheet](setup-worksheet-surface-hub.md)</p></td>
-<td align="left"><p>When you've finished pre-setup and are ready to start first-time setup for your Surface Hub, make sure you have all the information listed in this section.</p></td>
+<td align="left"><p><a href="setup-worksheet-surface-hub.md" data-raw-source="[Setup worksheet](setup-worksheet-surface-hub.md)">Setup worksheet</a></p></td>
+<td align="left"><p>When you&#39;ve finished pre-setup and are ready to start first-time setup for your Surface Hub, make sure you have all the information listed in this section.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[First-run program](first-run-program-surface-hub.md)</p></td>
-<td align="left"><p>The term &quot;first run&quot; refers to the series of steps you'll go through the first time you power up your Surface Hub, and means the same thing as &quot;out-of-box experience&quot; (OOBE). This section will walk you through the process.</p></td>
+<td align="left"><p><a href="first-run-program-surface-hub.md" data-raw-source="[First-run program](first-run-program-surface-hub.md)">First-run program</a></p></td>
+<td align="left"><p>The term &quot;first run&quot; refers to the series of steps you&#39;ll go through the first time you power up your Surface Hub, and means the same thing as &quot;out-of-box experience&quot; (OOBE). This section will walk you through the process.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ Use the following list to help identify errors that are related to sequencing ap
 **Note**  
 Multiple errors can occur during sequencing, and if this happens, the error code that is displayed might be the sum of two error codes. For example, if the */InstallPath* and */OutputFile* parameters are missing, the App-V Sequencer will return **96**—the sum of the two error codes.
 
- 
+ 
 
 <a href="" id="01"></a>01  
 There is an unspecified error.
@@ -91,9 +91,9 @@ The package name is not specified.
 
 [Sequencer Command-Line Parameters](sequencer-command-line-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,7 +68,7 @@ The remainder of this document will address the following specific features:
 **Note**  
 This section is divided into two parts: (1) features in all versions of App-V and (2) features in App-V 4.6 SP1 and later.
 
- 
+ 
 
 ### Microsoft Error Reporting
 
@@ -217,9 +217,9 @@ No information is sent to Microsoft through customers’ use of the Application 
 
 [About Microsoft Application Virtualization 4.6 SP2](about-microsoft-application-virtualization-46-sp2.md)
 
- 
+ 
 
- 
+ 
 
 
 

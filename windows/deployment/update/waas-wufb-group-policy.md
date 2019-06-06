@@ -31,12 +31,12 @@ Using Group Policy to manage Windows Update for Business is simple and familiar:
 
 In Windows 10 version 1511, only Current Branch for Business (CBB) upgrades could be delayed, restricting the Current Branch (CB) builds to a single deployment ring. Windows 10 version 1607, however, has a new Group Policy setting that allows you to delay feature updates for both CB and CBB, broadening the use of the CB servicing branch.
 
->[!NOTES]
->The terms *feature updates* and *quality updates* in Windows 10, version 1607, correspond to the terms *upgrades* and *updates* in version 1511.
-
->To follow the instructions in this article, you will need to download and install the relevant ADMX templates for your Windows 10 version.
->See the following articles for instructions on the ADMX templates in your environment.
-
+> [!NOTES]
+> The terms *feature updates* and *quality updates* in Windows 10, version 1607, correspond to the terms *upgrades* and *updates* in version 1511.
+> 
+> To follow the instructions in this article, you will need to download and install the relevant ADMX templates for your Windows 10 version.
+> See the following articles for instructions on the ADMX templates in your environment.
+> 
 > - [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759)
 > - [Step-By-Step: Managing Windows 10 with Administrative templates](https://blogs.technet.microsoft.com/canitpro/2015/10/20/step-by-step-managing-windows-10-with-administrative-templates/)
 
@@ -83,55 +83,55 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
     ![UI to edit Defer Upgrades and Updates](images/waas-wufb-gp-edit-defer.png)
     
     In the **Defer Upgrades and Updates** Group Policy setting configuration, you see several options:
-    - **Enable/Disable Deferred Updates**. Enabling this policy setting sets the receiving client to the CBB servicing branch. Specifically disabling this policy forces the client into the CB servicing branch, making it impossible for users to change it.
-    - **Defer upgrades for the following**. This option allows you to delay feature updates up to 8 months, a number added to the default CBB delay (approximately 4 months from CB). By using Windows Update for Business, you can use this option to stagger CBB feature updates, making the total offset up to 12 months from CB.
-    - **Defer updates for the following**. This option allows you to delay the installation of quality updates on a Windows 10 device for up to 4 weeks, allowing for phased rollouts of updates in your enterprise, but not all quality updates are deferrable with this option. Table 1 shows the deferment capabilities by update type.
-    - **Pause Upgrades and Updates**. Should an issue arise with a feature update, this option allows a one-time skip of the current month’s quality and feature update. Quality updates will resume after 35 days, and feature updates will resume after 60 days. For example, deploy this setting as a stand-alone policy to the entire organization in an emergency.
+   - **Enable/Disable Deferred Updates**. Enabling this policy setting sets the receiving client to the CBB servicing branch. Specifically disabling this policy forces the client into the CB servicing branch, making it impossible for users to change it.
+   - **Defer upgrades for the following**. This option allows you to delay feature updates up to 8 months, a number added to the default CBB delay (approximately 4 months from CB). By using Windows Update for Business, you can use this option to stagger CBB feature updates, making the total offset up to 12 months from CB.
+   - **Defer updates for the following**. This option allows you to delay the installation of quality updates on a Windows 10 device for up to 4 weeks, allowing for phased rollouts of updates in your enterprise, but not all quality updates are deferrable with this option. Table 1 shows the deferment capabilities by update type.
+   - **Pause Upgrades and Updates**. Should an issue arise with a feature update, this option allows a one-time skip of the current month’s quality and feature update. Quality updates will resume after 35 days, and feature updates will resume after 60 days. For example, deploy this setting as a stand-alone policy to the entire organization in an emergency.
     
-    Table 1 summarizes the category of update in Windows 10 and how long Windows Update for Business can defer its installation.
+     Table 1 summarizes the category of update in Windows 10 and how long Windows Update for Business can defer its installation.
     
-    **Table 1**
+     **Table 1**
     
-    <table>
-    <tr>
-    <th>Category</th>
-    <th>Maximum deferral</th>
-    <th>Deferral increments</th>
-    <th>Classification type</th>
-    <th>Classification GUID</th>
-    </tr>
-    <tr>
-    <td>OS upgrades</td>
-    <td>8 months</td>
-    <td>1 month</td>
-    <td>Upgrade</td>
-    <td>3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</td>
-    </tr>
-    <tr>
-    <td rowspan="3">OS updates</td>
-    <td rowspan="3">4 weeks</td>
-    <td rowspan="3">1 week</td>
-    <td>Security updates</td>
-    <td>0FA1201D-4330-4FA8-8AE9-B877473B6441</td>
-    </tr>
-    <tr>
-    <td>Drivers</td>
-    <td>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</td>
-    </tr>
-    <tr>
-    <td>Updates</td>
-    <td>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</td>
-    </tr>
-    <tr>
-    <td>Other/non-deferrable</td>
-    <td>No deferral</td>
-    <td>No deferral</td>
-    <td>Definition updates</td>
-    <td>E0789628-CE08-4437-BE74-2495B842F43B</td>
-    </tr>
-    </table> 
+     <table>
+     <tr>
+     <th>Category</th>
+     <th>Maximum deferral</th>
+     <th>Deferral increments</th>
+     <th>Classification type</th>
+     <th>Classification GUID</th>
+     </tr>
+     <tr>
+     <td>OS upgrades</td>
+     <td>8 months</td>
+     <td>1 month</td>
+     <td>Upgrade</td>
+     <td>3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</td>
+     </tr>
+     <tr>
+     <td rowspan="3">OS updates</td>
+     <td rowspan="3">4 weeks</td>
+     <td rowspan="3">1 week</td>
+     <td>Security updates</td>
+     <td>0FA1201D-4330-4FA8-8AE9-B877473B6441</td>
+     </tr>
+     <tr>
+     <td>Drivers</td>
+     <td>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</td>
+     </tr>
+     <tr>
+     <td>Updates</td>
+     <td>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</td>
+     </tr>
+     <tr>
+     <td>Other/non-deferrable</td>
+     <td>No deferral</td>
+     <td>No deferral</td>
+     <td>Definition updates</td>
+     <td>E0789628-CE08-4437-BE74-2495B842F43B</td>
+     </tr>
+     </table> 
 
-    Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 4 Broad business users**.
+     Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 4 Broad business users**.
     
 8. Enable the **Defer Updates and Upgrades** setting, and then click **OK**.
 

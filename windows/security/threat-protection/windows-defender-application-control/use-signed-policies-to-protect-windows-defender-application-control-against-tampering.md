@@ -43,47 +43,47 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 
 If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
-1.  Initialize the variables that will be used:
+1. Initialize the variables that will be used:
 
-    ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
+   ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
     
-    ` $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
+   ` $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
     
-    ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
+   ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
    > [!Note] 
    > This example uses the WDAC policy that you created in the [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
 
-2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+2. Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
 
-3.  Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
+3. Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
 
-4.  Navigate to your desktop as the working directory:
+4. Navigate to your desktop as the working directory:
 
-    ` cd $env:USERPROFILE\Desktop `
+   ` cd $env:USERPROFILE\Desktop `
 
-5.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add an update signer certificate to the WDAC policy:
+5. Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add an update signer certificate to the WDAC policy:
 
-    ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
+   ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
    > [!Note] 
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
-    Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see [Disable signed Windows Defender Application Control policies within Windows](disable-windows-defender-application-control-policies.md#disable-signed-windows-defender-application-control-policies-within-windows).
+   Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see [Disable signed Windows Defender Application Control policies within Windows](disable-windows-defender-application-control-policies.md#disable-signed-windows-defender-application-control-policies-within-windows).
 
-6.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
+6. Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
 
-    ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
+   ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
-7.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the policy to binary format:
+7. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the policy to binary format:
 
-    ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
+   ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
-8.  Sign the WDAC policy by using SignTool.exe:
+8. Sign the WDAC policy by using SignTool.exe:
 
-    ` <Path to signtool.exe> sign -v /n "ContosoDGSigningCert" -p7 . -p7co 1.3.6.1.4.1.311.79.1 -fd sha256 $CIPolicyBin`
+   ` <Path to signtool.exe> sign -v /n "ContosoDGSigningCert" -p7 . -p7co 1.3.6.1.4.1.311.79.1 -fd sha256 $CIPolicyBin`
 
    > [!Note] 
    > The *&lt;Path to signtool.exe&gt;* variable should be the full path to the SignTool.exe utility. **ContosoDGSigningCert** is the subject name of the certificate that will be used to sign the WDAC policy. You should import this certificate to your personal certificate store on the computer you use to sign the policy.
 
-9.  Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy WDAC policies, see [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md).
+9. Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy WDAC policies, see [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md).
 

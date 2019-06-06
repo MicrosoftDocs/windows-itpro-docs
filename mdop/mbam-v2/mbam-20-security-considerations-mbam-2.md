@@ -82,7 +82,7 @@ No Active Directory groups are created automatically during the MBAM setup proce
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="-------------mbam-server-local-groups"></a> MBAM Server Local Groups
 
@@ -127,7 +127,7 @@ MBAM Setup creates local groups to support MBAM operations. You should add the A
 </tbody>
 </table>
 
- 
+ 
 
 ### SSRS Reports Service Account
 
@@ -138,7 +138,7 @@ When you configure the SSRS Reports service account, specify a domain user accou
 **Note**  
 If you change the name of the service account after you deploy MBAM, you must reconfigure the reporting data source to use the new service account credentials. Otherwise, you will not be able to access the Help Desk Portal.
 
- 
+ 
 
 ## <a href="" id="---------mbam-log-files"></a> MBAM Log Files
 
@@ -147,7 +147,7 @@ The following MBAM Setup log files are created in the installing user’s %temp%
 
 **MBAM Server Setup log files**
 
-<a href="" id="msi-five-random-characters--log"></a>MSI*&lt;five random characters&gt;*.log  
+<a href="" id="msi-five-random-characters--log"></a>MSI<em>&lt;five random characters&gt;</em>.log  
 Logs the actions taken during MBAM Setup and MBAM Server Feature installation.
 
 <a href="" id="installcompliancedatabase-log"></a>InstallComplianceDatabase.log  
@@ -171,11 +171,11 @@ Logs actions taken to authorize web services to the MBAM Recovery database for k
 **Note**  
 In order to obtain additional MBAM Setup log files, you have to install MBAM by using the msiexec package and the /L &lt;location&gt; option. Log files are created in the location specified.
 
- 
+ 
 
 **MBAM Client Setup log files**
 
-<a href="" id="msi-five-random-characters--log"></a>MSI*&lt;five random characters&gt;*.log  
+<a href="" id="msi-five-random-characters--log"></a>MSI<em>&lt;five random characters&gt;</em>.log  
 Logs the actions taken during MBAM Client installation.
 
 ## <a href="" id="---------mbam-database-tde-considerations"></a> MBAM Database TDE Considerations
@@ -196,9 +196,9 @@ For more information about TDE in SQL Server 2008, see [SQL Server Encryption](
 
 [Security and Privacy for MBAM 2.0](security-and-privacy-for-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

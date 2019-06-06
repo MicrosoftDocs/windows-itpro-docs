@@ -31,7 +31,7 @@ The Compatibility Administrator tool uses the term *fix* to describe the combina
 **Important**  
 Fixes apply to a single application only; therefore, you must create multiple fixes if you need to fix the same issue in multiple applications.
 
- 
+ 
 
 ## What is a Compatibility Fix?
 
@@ -46,7 +46,7 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 **Important**  
 Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
- 
+ 
 
 **To search for an existing application**
 
@@ -76,9 +76,9 @@ If you are unable to find a preloaded compatibility fix for your application, yo
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

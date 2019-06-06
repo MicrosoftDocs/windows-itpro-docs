@@ -22,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Application Virtualization Management System. These Release Notes contain information that you need to successfully install the Application Virtualization Management System. These Release Notes contain information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other Application Virtualization Management System documentation, the latest change should be considered authoritative.
 
- 
+ 
 
 For updated information about known issues, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=122918>.
 
@@ -75,16 +75,16 @@ When this has been completed, install the App-V 4.5 SP1 client by using setup.ms
 
 When installing Microsoft Application Error Reporting, use the following command if you are installing or upgrading to the App-V 4.5 SP1 Desktop client:
 
-    msiexec /i dw20shared.msi APPGUID={93468B43-C19D-44F9-8BCC-114076DB0443}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
+    msiexec /i dw20shared.msi APPGUID={93468B43-C19D-44F9-8BCC-114076DB0443}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
 
 Alternatively, if you are installing or upgrading to the App-V 4.5 SP1 Client for Remote Desktop Services (formerly Terminal Services), use the following command:
 
-    msiexec /i dw20shared.msi APPGUID={0042AD3C-99A4-4E58-B5F0-744D5AD96E1C} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
+    msiexec /i dw20shared.msi APPGUID={0042AD3C-99A4-4E58-B5F0-744D5AD96E1C} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
 
 **Note**  
 The APPGUID parameter references the product code of the App-V client that you install or upgrade. The product code is unique for each setup.msi. You can use the Orca database editor or a similar tool to examine Windows Installer files and determine the product code. This step is required for all installations or upgrades to App-V 4.5 SP1.
 
- 
+ 
 
 ### Improving performance when sequencing the .NET Framework
 
@@ -211,9 +211,9 @@ Microsoft, Active Directory, ActiveSync, MS-DOS, Windows, Windows Server, and W
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

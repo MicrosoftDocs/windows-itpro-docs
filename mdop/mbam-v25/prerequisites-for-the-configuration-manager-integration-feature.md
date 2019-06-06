@@ -19,10 +19,10 @@ ms.date: 08/30/2016
 
 If you deploy MBAM with the System Center Configuration Manager Integration topology, we recommend a three-server architecture, as described in [High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology](high-level-architecture-of-mbam-25-with-configuration-manager-integration-topology.md). This architecture can support 500,000 client computers.
 
-**Important**  
+**Important**  
 Windows To Go is not supported for the Configuration Manager Integration topology installation when you are using Configuration Manager 2007.
 
- 
+
 
 ## General prerequisites for the Configuration Manager Integration feature
 
@@ -47,38 +47,37 @@ When you install MBAM with Configuration Manager, the following additional prere
 </tr>
 <tr class="even">
 <td align="left"><p>The Hardware Inventory Client Agent is on the Configuration Manager Server.</p></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [How to Configure Hardware Inventory in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301685).</p>
-<p>For Configuration Manager 2007, see [How to Configure Hardware Inventory for a Site](https://go.microsoft.com/fwlink/?LinkId=301656).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301685" data-raw-source="[How to Configure Hardware Inventory in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301685)">How to Configure Hardware Inventory in Configuration Manager</a>.</p>
+<p>For Configuration Manager 2007, see <a href="https://go.microsoft.com/fwlink/?LinkId=301656" data-raw-source="[How to Configure Hardware Inventory for a Site](https://go.microsoft.com/fwlink/?LinkId=301656)">How to Configure Hardware Inventory for a Site</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>One of the following is enabled, depending on the version of Configuration Manager that you are using:</p>
 <ul>
-<li><p>Compliance Settings - (System Center 2012 Configuration Manager)</p></li>
+<li><p>Compliance Settings - (System Center 2012 Configuration Manager)</p></li>
 <li><p>Desired Configuration Management (DCM) Client Agent – (Configuration Manager 2007)</p></li>
 </ul></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [Configuring Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301687).</p>
-<p>For Configuration Manager 2007, see [Desired Configuration Management Client Agent Properties](https://go.microsoft.com/fwlink/?LinkId=301686).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301687" data-raw-source="[Configuring Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301687)">Configuring Compliance Settings in Configuration Manager</a>.</p>
+<p>For Configuration Manager 2007, see <a href="https://go.microsoft.com/fwlink/?LinkId=301686" data-raw-source="[Desired Configuration Management Client Agent Properties](https://go.microsoft.com/fwlink/?LinkId=301686)">Desired Configuration Management Client Agent Properties</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>A reporting services point is defined in Configuration Manager. Required for SQL Server Reporting Services (SSRS).</p></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [Prerequisites for Reporting in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301689).</p>
-<p>For Configuration Manager 2007, see [How to Create a Reporting Services Point for SQL Reporting Services](https://go.microsoft.com/fwlink/?LinkId=301688).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301689" data-raw-source="[Prerequisites for Reporting in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301689)">Prerequisites for Reporting in Configuration Manager</a>.</p>
+<p>For Configuration Manager 2007, see <a href="https://go.microsoft.com/fwlink/?LinkId=301688" data-raw-source="[How to Create a Reporting Services Point for SQL Reporting Services](https://go.microsoft.com/fwlink/?LinkId=301688)">How to Create a Reporting Services Point for SQL Reporting Services</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configuration Manager 2007 requires Microsoft .NET Framework 2.0</p></td>
 <td align="left"><p>The Desired Configuration Management (DCM) Client Agent in Configuration Manager 2007 requires .NET Framework 2.0 to report compliance.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Installing .NET Framework 3.5 automatically installs .NET Framework 2.0.</p>
+<strong>Note</strong><br/><p>Installing .NET Framework 3.5 automatically installs .NET Framework 2.0.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Required permissions to install MBAM with Configuration Manager
 
@@ -110,9 +109,9 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
 
-**System Center 2012 Configuration Manager**
+
+**System Center 2012 Configuration Manager**
 
 <table>
 <colgroup>
@@ -141,7 +140,7 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
+
 
 **Configuration Manager 2007**
 
@@ -172,12 +171,12 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
+
 
 ## Required changes for the .mof files
 
 
-To enable the client computers to report BitLocker compliance details through the MBAM Configuration Manager reports, you have to edit the Configuration.mof file and Sms\_def.mof file for System Center 2012 Configuration Manager and Microsoft System Center Configuration Manager 2007. For instructions, see [MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md).
+To enable the client computers to report BitLocker compliance details through the MBAM Configuration Manager reports, you have to edit the Configuration.mof file and Sms\_def.mof file for System Center 2012 Configuration Manager and Microsoft System Center Configuration Manager 2007. For instructions, see [MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md).
 
 
 
@@ -188,11 +187,11 @@ To enable the client computers to report BitLocker compliance details through th
 
 [MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md)
 
- 
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

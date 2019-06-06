@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -30,7 +30,7 @@ AppID string value is the default appid/AUMID to launch during startup. The supp
 <a href="" id="BackgroundTasksToLaunch"></a>**BackgroundTasksToLaunch**  
 List of package names of background tasks that need to be launched on device startup. The supported operation is Get.
 
-<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/****_BackgroundTaskPackageName_**  
+<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/**<strong>*BackgroundTaskPackageName*</strong>  
 Package Full Name of the App that needs be launched in the background. This can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.
 
 ## SyncML examples
@@ -98,9 +98,9 @@ Package Full Name of the App that needs be launched in the background. This can 
 </SyncML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 
