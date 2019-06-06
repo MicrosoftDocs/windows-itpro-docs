@@ -68,4 +68,4 @@ Configuration and management is largely the same in Windows Server 2016, while r
 - [Enable cloud protection](enable-cloud-protection-windows-defender-antivirus.md)
 - [Configure real-time protection](configure-real-time-protection-windows-defender-antivirus.md)
 - [Configure cloud block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [Create and deploy cloud-protected antimalware policies](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [Create and deploy cloud-protected antimalware policies](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service.md)
