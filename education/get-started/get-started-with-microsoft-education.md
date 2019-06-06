@@ -32,7 +32,7 @@ Hello, IT administrators! In this walkthrough, we'll show you how you can quickl
   - **School Data Sync** to help automate the process for importing and integrating School Information System (SIS) data that you can use with Office 365
   - **OneNote Class Notebook** to organize course content, create and deliver interactive lessons to some or all students, collaborate and provide private feedback to individual students, and connect with major LMS and SIS partners for assignment workflow
 - **Microsoft Teams** to bring conversations, content, and apps together in one place and create collaborate classrooms, connect in professional learning communities, and communicate with school staff 
-- **Learning Tools** are moving beyond the OneNote desktop app and is now available in Office Lens, OneNote Online, Word Online, and Word desktop
+- **Learning Tools** are moving beyond the OneNote desktop app and is now available in Office Lens, OneNote, and Word 
 - **Whiteboard** to create interactive lessons on the big screen, share and collaborate real-time by connecting to Class Notebook and Classroom
 - **Windows 10, version 1703 or later** which brings 3D for everyone and other new and updated Windows features
 - **Minecraft: Education Edition** which provides an open and immersive environment to promote creativity, collaboration, and problem-solving 

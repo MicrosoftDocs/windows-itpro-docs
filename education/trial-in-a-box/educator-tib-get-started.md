@@ -269,7 +269,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 ![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png)
 ## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
-The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
+The **Math Assistant** and **Ink Replay** features available in the OneNote app give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
 
 **Let's solve 3x+4=7 in OneNote using the pen!**
 To get started:

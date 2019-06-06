@@ -124,8 +124,7 @@ Agent Resource    |    Ports
 |    winatp-gw-weu.microsoft.com    |    443    |
 |winatp-gw-uks.microsoft.com | 443 |
 |winatp-gw-ukw.microsoft.com | 443 | 
-| winatp-gw-aus.microsoft.com | 443| 
-| winatp-gw-aue.microsoft.com |443 | 
+
 
 ## Windows Server, version 1803 and Windows Server 2019
 To onboard Windows Server, version 1803 or Windows Server 2019, use the same method used when onboarding Windows 10 machines.

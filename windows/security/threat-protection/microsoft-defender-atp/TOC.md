@@ -244,6 +244,7 @@
   
 
 #### [Microsoft Defender ATP API](use-apis.md)
+##### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)

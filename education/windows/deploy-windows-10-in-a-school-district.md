@@ -77,7 +77,7 @@ Use these characteristics at a minimum as you deploy your schools. If your distr
 
 Office 365 Education allows:
 
-* Students and faculty to use Microsoft Office Online to create and edit Microsoft Word, OneNote, PowerPoint, and Excel documents in a browser.
+* Students and faculty to use Microsoft Office to create and edit Microsoft Word, OneNote, PowerPoint, and Excel documents in a browser.
 * Teachers to use the [OneNote Class Notebook app](https://www.onenote.com/classnotebook) to share content and collaborate with students.
 * Faculty to use the [OneNote Staff Notebooks app](https://www.onenote.com/staffnotebookedu) to collaborate with other teachers, the administration, and faculty.
 * Teachers to employ Sway to create interactive educational digital storytelling.
