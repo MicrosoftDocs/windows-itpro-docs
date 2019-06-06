@@ -2,11 +2,13 @@
 title: AllJoynManagement DDF
 description: AllJoynManagement DDF
 ms.assetid: 540C2E60-A041-4749-A027-BBAF0BB046E4
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 12/05/2017
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: How to Delete an Application
 description: How to Delete an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 421e7df0-fea3-4cb2-a884-3d04f2223da7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

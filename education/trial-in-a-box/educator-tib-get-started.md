@@ -9,9 +9,11 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 03/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Educator Trial in a Box Guide
@@ -76,7 +78,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 4. Select the **Immersive Reader** button.
 
-  ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
+  ![Word's Immersive Reader](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
 
@@ -84,7 +86,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
   | :------------: | :--------------: | :-------------: | :--------: |
-  | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
+  | ![Word Text to Speech](images/wordonline_tts.png) | ![Word Text Preferences](images/wordonline_text_preferences.png) | ![Word Grammar Options](images/wordonline_grammar_options.png) | ![Word Line Focus](images/wordonline_line_focus.png) |
 
 </br>
 </br>
@@ -267,7 +269,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 ![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png)
 ## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
-The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
+The **Math Assistant** and **Ink Replay** features available in the OneNote app give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
 
 **Let's solve 3x+4=7 in OneNote using the pen!**
 To get started:

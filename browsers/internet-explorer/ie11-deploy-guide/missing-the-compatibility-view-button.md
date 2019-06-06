@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Internet Explorer 11 uses the latest standards mode, which simplifies web page compatibility for users by removing the **Compatibility View** button and reducing the number of compatibility options in the F12 developer tools for developers.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 501c96c9-9f03-4913-9f4b-f67bd9edbb61
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Missing the Compatibility View Button (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

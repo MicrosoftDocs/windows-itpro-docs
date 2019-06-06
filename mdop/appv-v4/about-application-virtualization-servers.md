@@ -1,8 +1,11 @@
 ---
 title: About Application Virtualization Servers
 description: About Application Virtualization Servers
-author: jamiejdt
+author: dansimp
 ms.assetid: 60a45509-2112-44ca-8e28-c73b0c2ff85e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

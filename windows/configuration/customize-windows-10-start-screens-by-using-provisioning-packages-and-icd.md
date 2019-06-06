@@ -2,12 +2,14 @@
 title: Customize Windows 10 Start and tasbkar with provisioning packages (Windows 10)
 description: In Windows 10, you can use a provisioning package to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
+ms.reviewer: 
+manager: dansimp
 keywords: ["Start layout", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/15/2017

@@ -8,6 +8,8 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---

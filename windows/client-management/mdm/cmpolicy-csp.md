@@ -2,11 +2,13 @@
 title: CMPolicy CSP
 description: CMPolicy CSP
 ms.assetid: 62623915-9747-4eb1-8027-449827b85e6b
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

@@ -2,11 +2,13 @@
 title: Samples for writing a custom configuration service provider
 description: Samples for writing a custom configuration service provider
 ms.assetid: ccda4d62-7ce1-483b-912f-25d50c974270
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

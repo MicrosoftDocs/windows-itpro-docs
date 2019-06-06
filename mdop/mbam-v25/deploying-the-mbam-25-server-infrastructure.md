@@ -1,8 +1,11 @@
 ---
 title: Deploying the MBAM 2.5 Server Infrastructure
 description: Deploying the MBAM 2.5 Server Infrastructure
-author: jamiejdt
+author: dansimp
 ms.assetid: e85a60cf-4cc1-4906-8da3-442232c374af
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: How to Manage the App-V Client Cache Using Performance Counters
 description: How to Manage the App-V Client Cache Using Performance Counters
-author: jamiejdt
+author: dansimp
 ms.assetid: 49d6c3f2-68b8-4c69-befa-7598a8737d05
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,12 +1,14 @@
 ---
 title: Implement server-side support for mobile application management on Windows 
 description: The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP).
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: dansimp
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 
@@ -153,7 +155,7 @@ We have updated Skype for Business to work with MAM. The following table explain
 <td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
 <td>March 9 2017</td>
 <td><p>Visio Pro for Office 365</p>
-<p>Project Online Desktop Client</p>
+<p>Project Desktop Client</p>
 <p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
 </tr>
 <tr>

@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus

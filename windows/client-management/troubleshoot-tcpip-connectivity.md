@@ -4,10 +4,12 @@ description: Learn how to troubleshoot TCP/IP connectivity.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Troubleshoot TCP/IP connectivity

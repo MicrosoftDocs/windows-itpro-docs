@@ -2,11 +2,14 @@
 title: Install VAMT (Windows 10)
 description: Install VAMT
 ms.assetid: 2eabd3e2-0a68-43a5-8189-2947e46482fc
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 03/11/2019
 ms.topic: article

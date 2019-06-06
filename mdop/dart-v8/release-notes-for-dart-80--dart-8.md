@@ -1,8 +1,11 @@
 ---
 title: Release Notes for DaRT 8.0
 description: Release Notes for DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: e8b373c8-7aa5-4930-a8f9-743d26145dad
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

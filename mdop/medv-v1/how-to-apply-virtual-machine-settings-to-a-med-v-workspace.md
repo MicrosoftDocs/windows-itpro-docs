@@ -1,8 +1,11 @@
 ---
 title: How to Apply Virtual Machine Settings to a MED-V Workspace
 description: How to Apply Virtual Machine Settings to a MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: b50d0dfb-8d61-4543-9607-a29bbb1ed45f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

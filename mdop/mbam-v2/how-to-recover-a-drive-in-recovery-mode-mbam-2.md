@@ -1,8 +1,11 @@
 ---
 title: How to Recover a Drive in Recovery Mode
 description: How to Recover a Drive in Recovery Mode
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 8b792bc8-b671-4345-9d37-0208db3e5b03
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

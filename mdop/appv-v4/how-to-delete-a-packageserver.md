@@ -1,8 +1,11 @@
 ---
 title: How to Delete a Package
 description: How to Delete a Package
-author: jamiejdt
+author: dansimp
 ms.assetid: 23f9c0e9-8910-47df-9fc0-7bbb5bbf2dc9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

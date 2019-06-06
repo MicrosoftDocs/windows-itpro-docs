@@ -2,11 +2,13 @@
 title: Policy CSP
 description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 05/01/2019
 ---
 
@@ -3383,6 +3385,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Troubleshooting policies
+
+<dl>
+   <dd>
+    <a href="./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
+  </dd>
+</dl>
+
 ### Update policies
 
 <dl>
@@ -5011,6 +5021,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode)
 -   [TextInput/AllowLanguageFeaturesUninstall](./policy-csp-textinput.md#textinput-allowlanguagefeaturesuninstall)
 -   [TextInput/AllowLinguisticDataCollection](./policy-csp-textinput.md#textinput-allowlinguisticdatacollection)
+-   [Troubleshooting/AllowRecommendations](./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)
 -   [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
 -   [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
 -   [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)

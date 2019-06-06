@@ -1,8 +1,11 @@
 ---
 title: App-V 4.6 SP2 Release Notes
 description: App-V 4.6 SP2 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: abb536f0-e187-4c5b-952a-f837abd10ad2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: ADD SERVER
 description: ADD SERVER
-author: jamiejdt
+author: dansimp
 ms.assetid: 4be2ac2e-a410-4711-9f84-f305393c8fa7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

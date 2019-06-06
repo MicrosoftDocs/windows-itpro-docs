@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.0 Reporting
 description: About App-V 5.0 Reporting
-author: jamiejdt
+author: v-madhi
 ms.assetid: 27c33dda-f017-41e3-8a78-1b681543ec4f
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,6 +2,8 @@
 title: Apps in Microsoft Store for Business and Education (Windows 10)
 description: Microsoft Store for Business has thousands of apps from many different categories.
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

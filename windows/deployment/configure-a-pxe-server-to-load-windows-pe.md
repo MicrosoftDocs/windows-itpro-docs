@@ -7,8 +7,11 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: dansimp
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 

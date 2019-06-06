@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.date: 10/20/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 

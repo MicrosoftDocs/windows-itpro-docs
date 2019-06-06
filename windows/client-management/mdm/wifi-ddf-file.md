@@ -2,11 +2,13 @@
 title: WiFi DDF file
 description: WiFi DDF file
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/28/2018
 ---
 

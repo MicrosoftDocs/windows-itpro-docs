@@ -4,10 +4,12 @@ description: Configure Windows Update for Business settings using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 

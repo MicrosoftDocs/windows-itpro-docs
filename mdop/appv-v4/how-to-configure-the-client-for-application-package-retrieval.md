@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client for Application Package Retrieval
 description: How to Configure the Client for Application Package Retrieval
-author: jamiejdt
+author: dansimp
 ms.assetid: 891f2739-da7a-46da-b452-b8c0af075525
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

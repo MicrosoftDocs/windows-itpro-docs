@@ -2,10 +2,13 @@
 title: Offline Migration Reference (Windows 10)
 description: Offline Migration Reference
 ms.assetid: f347547c-d601-4c3e-8f2d-0138edeacfda
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: lomayor
 ms.date: 04/19/2017
 ms.topic: article
 ---

@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the App-V 5.0 Server
 description: How to Deploy the App-V 5.0 Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 4f8f16af-7d74-42b4-84b8-b04ce668225d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

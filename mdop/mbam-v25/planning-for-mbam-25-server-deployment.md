@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5 Server Deployment
 description: Planning for MBAM 2.5 Server Deployment
-author: jamiejdt
+author: dansimp
 ms.assetid: 88774c89-31c8-4eb8-a845-a00bbec8c870
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

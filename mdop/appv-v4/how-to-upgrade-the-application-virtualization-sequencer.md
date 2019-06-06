@@ -1,8 +1,11 @@
 ---
 title: How to Upgrade the Application Virtualization Sequencer
 description: How to Upgrade the Application Virtualization Sequencer
-author: jamiejdt
+author: eavena
 ms.assetid: 7f85f140-5034-4227-85ef-81f205e722ef
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

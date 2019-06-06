@@ -5,11 +5,13 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Provision PCs with apps 
@@ -25,7 +27,7 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 >[!IMPORTANT]
->If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Online Desktop Cilent, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Cilent, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## Settings for UWP apps
 
@@ -61,6 +63,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 
 <span id="adv" />
+
 ## Add a Windows desktop application using advanced editor in Windows Configuration Designer
 
 
@@ -70,7 +73,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
     ![enter name for first app](../images/wcd-app-name.png)
 
-3. [Configure the settings for the appropriate installer type.](#settings-for-classic-windows-apps)
+3. Configure the settings for the appropriate installer type.
 
     ![enter settings for first app](../images/wcd-app-commands.png)
 

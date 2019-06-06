@@ -3,11 +3,14 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how Approvers can approve open change requests in the Enterprise Mode Site List Portal.
-author: shortpatti
+author: dansimp
 ms.prod: ie11
 title: Approve a change request using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Approve a change request using the Enterprise Mode Site List Portal

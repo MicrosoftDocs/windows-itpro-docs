@@ -6,9 +6,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Querying Application Control events centrally using Advanced hunting  

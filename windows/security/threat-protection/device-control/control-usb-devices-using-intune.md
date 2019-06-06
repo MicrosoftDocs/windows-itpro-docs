@@ -6,9 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: justinha
-author: justinha
+ms.author: dansimp
+author: dansimp
 ms.date: 02/22/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP

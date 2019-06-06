@@ -2,13 +2,14 @@
 title: User Account Control security policy settings (Windows 10)
 description: You can use security policies to configure how User Account Control works in your organization. They can be configured locally by using the Local Security Policy snap-in (secpol.msc) or configured for the domain, OU, or specific groups by Group Policy.
 ms.assetid: 3D75A9AC-69BB-4EF2-ACB3-1769791E1B98
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

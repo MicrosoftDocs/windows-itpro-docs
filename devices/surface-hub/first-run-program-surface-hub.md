@@ -2,11 +2,13 @@
 title: First-run program (Surface Hub)
 description: The term \ 0034;first run \ 0034; refers to the series of steps you'll go through the first time you power up your Microsoft Surface Hub, and means the same thing as \ 0034;out-of-box experience \ 0034; (OOBE). This section will walk you through the process.
 ms.assetid: 07C9E84C-1245-4511-B3B3-75939AD57C49
+ms.reviewer: 
+manager: dansimp
 keywords: first run, Surface Hub, out-of-box experience, OOBE
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium

@@ -2,14 +2,15 @@
 title: Windows Hello for Business (Windows 10)
 description: Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. 
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
+ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

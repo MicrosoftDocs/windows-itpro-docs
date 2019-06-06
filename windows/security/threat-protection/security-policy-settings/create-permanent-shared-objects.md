@@ -2,12 +2,14 @@
 title: Create permanent shared objects (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create permanent shared objects security policy setting.
 ms.assetid: 6a58438d-65ca-4c4a-a584-450eed976649
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

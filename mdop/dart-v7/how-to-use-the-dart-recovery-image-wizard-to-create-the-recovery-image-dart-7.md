@@ -1,8 +1,11 @@
 ---
 title: How to Use the DaRT Recovery Image Wizard to Create the Recovery Image
 description: How to Use the DaRT Recovery Image Wizard to Create the Recovery Image
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 1b8ef983-fff9-4d75-a2f6-53120c5c00c9
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

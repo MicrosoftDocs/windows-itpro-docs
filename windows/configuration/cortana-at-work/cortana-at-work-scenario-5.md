@@ -4,10 +4,12 @@ description: A test scenario about how to use Cortana at work to send email to a
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 5 - Use Cortana to send email to a co-worker

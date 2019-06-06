@@ -2,6 +2,9 @@
 title: LoadState Syntax (Windows 10)
 description: LoadState Syntax
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

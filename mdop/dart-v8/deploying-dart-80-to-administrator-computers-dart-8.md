@@ -1,8 +1,11 @@
 ---
 title: Deploying DaRT 8.0 to Administrator Computers
 description: Deploying DaRT 8.0 to Administrator Computers
-author: jamiejdt
+author: msfttracyp
 ms.assetid: f918ead8-742e-464a-8bf6-1fcedde66cae
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

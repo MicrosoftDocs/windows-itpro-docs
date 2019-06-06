@@ -2,12 +2,14 @@
 title: Open the Group Policy Management Console to Windows Firewall with Advanced Security (Windows 10)
 description: Open the Group Policy Management Console to Windows Firewall with Advanced Security
 ms.assetid: 28afab36-8768-4938-9ff2-9d6dab702e98
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -1,5 +1,7 @@
 ---
 title: Using Device Health
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,8 +37,8 @@ In Azure Portal, the aspects of a solution's dashboard are usually divided into 
 
 ## Device Reliability
 
-- [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver-Induced OS Crashes](#driver--induced-OS-crashes)
+- [Frequently crashing devices](#frequently-crashing-devices)
+- [Driver-induced OS crashes](#driver-induced-crashes)
 
 
 
@@ -79,7 +81,7 @@ This displays device records sorted by date and crash details by failure ID, als
 
  
  
-### Driver-Induced OS Crashes
+### Driver-induced crashes
 
 This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 

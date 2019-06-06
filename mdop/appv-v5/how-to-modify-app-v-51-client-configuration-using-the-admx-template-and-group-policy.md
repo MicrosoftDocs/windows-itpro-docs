@@ -1,8 +1,11 @@
 ---
 title: How to Modify App-V 5.1 Client Configuration Using the ADMX Template and Group Policy
 description: How to Modify App-V 5.1 Client Configuration Using the ADMX Template and Group Policy
-author: jamiejdt
+author: dansimp
 ms.assetid: 0d9cf13a-b29c-4c87-a776-15fea34027dd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
