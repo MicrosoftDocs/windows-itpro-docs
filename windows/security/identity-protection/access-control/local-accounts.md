@@ -121,15 +121,15 @@ In addition, the guest user in the Guest account should not be able to view the 
 ### DefaultAccount
 
 The DefaultAccount, also known as the Default System Managed Account (DSMA), is a built-in account introduced in Windows 10 version 1607 and Windows Server 2016. 
-The DMSA is a well-known user account type. 
+The DSMA is a well-known user account type. 
 It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
-The DMSA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
+The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
 
-The DMSA has a well-known RID of 503. The security identifier (SID) of the DMSA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
+The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
 
-The DMSA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
+The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
 
-The DMSA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
+The DSMA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
 
 #### How Windows uses the DefaultAccount
 From a permission perspective, the DefaultAccount is a standard user account. 
