@@ -64,9 +64,8 @@ Configuration and management is largely the same in Windows Server 2016, while r
 
 - [Full version history for Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 - [Windows Defender Antivirus management and configuration](configuration-management-reference-windows-defender-antivirus.md)
+- [Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md)
 - [Enable cloud protection](enable-cloud-protection-windows-defender-antivirus.md)
 - [Configure real-time protection](configure-real-time-protection-windows-defender-antivirus.md)
-- [Create and deploy cloud-protected antimalware policies](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Allow connections to Windows Defender Antivirus cloud service](configure-network-connections-windows-defender-antivirus)
 - [Configure cloud block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [Modify the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md)
+- [Create and deploy cloud-protected antimalware policies](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
