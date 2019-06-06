@@ -37,8 +37,8 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
-- **Create Value name:** AllowPrelaunch
+- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader
+- **Create Value name:** AllowTabPreloading
 - **Value type:** REG_DWORD
 - **DWORD Value:** 1
 
