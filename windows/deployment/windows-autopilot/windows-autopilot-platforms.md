@@ -24,8 +24,6 @@ ms.topic: article
 
 Several platforms are available to register devices with Windows Autopilot. A summary of each platform's capabilities is provided below.
 
->Microsoft recommends **Intune** to register Autopilot devices and configure settings.
-
 <br><table>
 <tr>
 <td BGCOLOR="#a0e4fa"><B>Platform/Portal</th>
