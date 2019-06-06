@@ -47,8 +47,8 @@ With Windows 10, there is no hard requirement to create reference images; howev
 -   Use the following settings for the New Deployment Share Wizard:
 -   Deployment share path: E:\\MDTBuildLab
 -   Share name: MDTBuildLab$
--   Deployment share description: MDT Build Lab
--   &lt;default&gt;
+-   Deployment share description: MDT Build Lab &lt;default&gt;
+-   Ensure that the MDT Build account (MDT_BA), has at least read permissions at share level on the deployment share.
 -   Verify that you can access the \\\\MDT01\\MDTBuildLab$ share.
 
 ![figure 2](../images/mdt-08-fig02.png)
