@@ -44,17 +44,17 @@ In addition to the product documentation available online, supplemental product 
 <tbody>
 <tr class="even">
 <td align="left"><p><strong>MDOP Virtual Labs</strong></p></td>
-<td align="left"><p>For a list of available MDOP virtual labs, go to [Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](https://go.microsoft.com/fwlink/?LinkId=234276) (https://go.microsoft.com/fwlink/?LinkId=234276).</p></td>
+<td align="left"><p>For a list of available MDOP virtual labs, go to <a href="https://go.microsoft.com/fwlink/?LinkId=234276" data-raw-source="[Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](https://go.microsoft.com/fwlink/?LinkId=234276)">Microsoft Desktop Optimization Pack (MDOP) Virtual Labs</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=234276" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=234276">https://go.microsoft.com/fwlink/?LinkId=234276</a>).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MDOP TechCenter</strong></p></td>
-<td align="left"><p>For technical whitepapers, evaluation materials, blogs, and additional MDOP resources, go to [MDOP TechCenter](https://go.microsoft.com/fwlink/?LinkId=225286) (https://go.microsoft.com/fwlink/?LinkId=225286)</p>
+<td align="left"><p>For technical whitepapers, evaluation materials, blogs, and additional MDOP resources, go to <a href="https://go.microsoft.com/fwlink/?LinkId=225286" data-raw-source="[MDOP TechCenter](https://go.microsoft.com/fwlink/?LinkId=225286)">MDOP TechCenter</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=225286" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=225286">https://go.microsoft.com/fwlink/?LinkId=225286</a>)</p>
 <p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-getmdop"></a>How to Get MDOP
 
@@ -70,9 +70,9 @@ MDOP subscribers can download the software at the [Microsoft Volume Licensing we
 <a href="" id="purchase-mdop"></a>**Purchase MDOP**
 Visit the enterprise [Purchase Windows Enterprise Licensing](https://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.
 
- 
+ 
 
- 
+ 
 
 
 

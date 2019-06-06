@@ -36,7 +36,7 @@ The following logging levels are available:
 **Note**  
 Because of the size of the log file produced when you use **Verbose** mode, the recommendation is that you do not run production servers with this level of logging set.
 
- 
+ 
 
 The database logging parameters determine the database driver type, access credentials, and location of the logging database.
 
@@ -103,7 +103,7 @@ The database logging parameters determine the database driver type, access crede
     </tbody>
     </table>
 
-     
+     
 
 **To change database log parameters**
 
@@ -132,9 +132,9 @@ The database logging parameters determine the database driver type, access crede
 
 [How to Customize an Application Virtualization System in the Server Management Console](how-to-customize-an-application-virtualization-system-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

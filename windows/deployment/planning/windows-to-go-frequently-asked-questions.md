@@ -183,7 +183,7 @@ In the **Windows To Go Startup Options** dialog box select **Yes** and then clic
 **Note**  
 Your IT department can use Group Policy to configure Windows To Go Startup Options in your organization.
 
- 
+ 
 
 If the host computer is running an earlier version of the Windows operating system need to configure the computer to boot from USB manually.
 
@@ -198,7 +198,7 @@ For more detailed instructions, see the wiki article, [Tips for configuring your
 **Warning**  
 Configuring a computer to boot from USB will cause your computer to attempt to boot from any bootable USB device connected to your computer. This potentially includes malicious devices. Users should be informed of this risk and instructed to not have any bootable USB storage devices plugged in to their computers except for their Windows To Go drive.
 
- 
+ 
 
 ## <a href="" id="wtg-faq-noboot"></a>Why isn’t my computer booting from USB?
 
@@ -221,7 +221,7 @@ If the Windows To Go drive is removed, the computer will freeze and the user wil
 **Warning**  
 You should never remove your Windows To Go drive when your workspace is running. The computer freeze is a safety measure to help mitigate the risk of accidental removal. Removing the Windows To Go drive without shutting down the Windows To Go workspace could result in corruption of the Windows To Go drive.
 
- 
+ 
 
 ## <a href="" id="wtg-faq-bitlocker"></a>Can I use BitLocker to protect my Windows To Go drive?
 
@@ -279,7 +279,7 @@ Windows To Go Creator and the recommended deployment steps for Windows To Go set
 **Warning**  
 It is strongly recommended that you do not plug your Windows To Go drive into a running computer. If the computer is compromised, your Windows To Go workspace can also be compromised.
 
- 
+ 
 
 ## <a href="" id="wtg-faq-san4"></a>I’m booted into Windows To Go, but I can’t browse to the internal hard drive of the host computer. Why not?
 
@@ -289,7 +289,7 @@ Windows To Go Creator and the recommended deployment steps for Windows To Go set
 **Warning**  
 It is strongly recommended that you do not mount internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 or later operating system, mounting the drive will lead to loss of hibernation state and therefor user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
 
- 
+ 
 
 ## <a href="" id="wtg-faq-fatmbr"></a>Why does my Windows To Go drive have an MBR disk format with a FAT32 system partition?
 
@@ -403,7 +403,7 @@ The host computer will now be able to be booted from a USB drive without trigger
 **Note**  
 The default BitLocker protection profile in Windows 8 or later does not monitor the boot order.
 
- 
+ 
 
 ## <a href="" id="wtg-faq-reformat"></a>I decided to stop using a drive for Windows To Go and reformatted it – why doesn’t it have a drive letter assigned and how can I fix it?
 
@@ -415,7 +415,7 @@ Reformatting the drive erases the data on the drive, but doesn’t reconfigure t
     **Note**  
     If your user account is a member of the Administrators group, but is not the Administrator account itself, then, by default, the programs that you run only have standard user permissions unless you explicitly choose to elevate them.
 
-     
+     
 
 2.  Start the [diskpart](https://go.microsoft.com/fwlink/p/?LinkId=619070) command interpreter, by typing `diskpart` at the command prompt.
 
@@ -452,9 +452,9 @@ There is no support in Windows for upgrading a Windows To Go drive. Deployed Win
 
 -   [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
 
- 
+ 
 
- 
+ 
 
 
 

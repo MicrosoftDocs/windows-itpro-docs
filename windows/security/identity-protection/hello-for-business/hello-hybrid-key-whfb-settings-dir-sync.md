@@ -45,10 +45,10 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 > [!div class="checklist"]
 > * Configure group membership for Azure AD Connect
-
->[!div class="step-by-step"]
-[< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
-[Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)
 
 <br><br>
 

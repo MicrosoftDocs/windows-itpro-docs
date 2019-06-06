@@ -29,7 +29,7 @@ The password is used to unlock drives on your computer that do not contain the o
 **Note**  
 Your Help Desk may set drives to unlock automatically. This eliminates the need to provide a PIN or password to view the information on the drives.
 
- 
+ 
 
 ## Unlocking Your Computer if You Forget Your PIN or Password
 
@@ -71,9 +71,9 @@ Before you can change the password on a BitLocker protected drive, you must unlo
 
     -   To change your password, select **Manage Your Password**. Enter your new password into both fields and select **Reset Password**.
 
- 
+ 
 
- 
+ 
 
 
 

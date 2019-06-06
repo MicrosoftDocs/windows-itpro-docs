@@ -27,7 +27,7 @@ This topic for IT professionals describes concepts and lists procedures to help 
 
 Packaged apps, also known as Universal Windows apps, are based on a model that ensures all the files within an app package share the same identity. With classic Windows apps, each file within the app could have a unique identity. 
 With packaged apps, it is possible to control the entire app by using a single WDAC rule.
- 
+ 
 Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, these components don't always share common attributes such as the software’s publisher name, product name, and product version. Therefore, WDAC controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
 
 ### <a href="" id="bkmk-compareclassicmetro"></a>Comparing classic Windows Apps and Packaged Apps
@@ -106,30 +106,30 @@ Below are the list of steps you can follow to block one or more packaged apps in
    ```powershell
    Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = "C:\compiledpolicy.bin"}
    ```
-### Blocking Packaged Apps Which Are Not Installed on the System
+   ### Blocking Packaged Apps Which Are Not Installed on the System
 
 If the app you intend to block is not installed on the system you are using the WDAC PowerShell cmdlets on, then follow the steps below:
 
-1.	Create a dummy rule using Steps 1-5 in the Blocking Packaged Apps Which Are Installed on the System section above
+1. Create a dummy rule using Steps 1-5 in the Blocking Packaged Apps Which Are Installed on the System section above
 
-2.	Navigate to the app you want to block on the Store website
+2. Navigate to the app you want to block on the Store website
 
 3. Copy the GUID in the URL for the app
     - Example: the GUID for the Microsoft To-Do app is 9nblggh5r558
     - https://www.microsoft.com/en-us/p/microsoft-to-do-list-task-reminder/9nblggh5r558?activetab=pivot:overviewtab 
-4.	Use the GUID in the following REST query URL to retrieve the identifiers for the app
-    - Example: for the Microsoft To-Do app, the URL would be https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblggh5r558/applockerdata
-    - The URL will return:
+4. Use the GUID in the following REST query URL to retrieve the identifiers for the app
+   - Example: for the Microsoft To-Do app, the URL would be https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblggh5r558/applockerdata
+   - The URL will return:
    
    ```
    { "packageFamilyName": "Microsoft.Todos_8wekyb3d8bbwe", 
-     "packageIdentityName": "Microsoft.Todos", 
-     "windowsPhoneLegacyId": "6088f001-776c-462e-984d-25b6399c6607", 
-     "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" 
+    "packageIdentityName": "Microsoft.Todos", 
+    "windowsPhoneLegacyId": "6088f001-776c-462e-984d-25b6399c6607", 
+    "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" 
    }
    ```
 
-5.	Use the value returned by the query URL for the packageFamilyName to replace the package name generated earlier in the dummy rule from Step 1. 
+5. Use the value returned by the query URL for the packageFamilyName to replace the package name generated earlier in the dummy rule from Step 1. 
 
 ## Allowing Packaged Apps
 The method for allowing specific packaged apps is similar to the method outlined above for blocking packaged apps, with the only difference being the parameter to the New-CIPolicyRule cmdlet.

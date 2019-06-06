@@ -53,7 +53,7 @@ Content-type: application/json
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+            "lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
             "lastIpAddress": "172.17.230.209",
@@ -62,14 +62,14 @@ Content-type: application/json
             "osBuild": 18209,
             "healthStatus": "Active",
             "rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
+            "rbacGroupName": "The-A-Team",
             "riskScore": "High",
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -92,27 +92,27 @@ Content-type: application/json
     "value": [
         {
             "id": "121688558380765161_2136280442",
-			"incidentId": 7696,
-			"assignedTo": "secop@contoso.com",
-			"severity": "High",
-			"status": "New",
-			"classification": "TruePositive",
-			"determination": "Malware",
-			"investigationState": "Running",
-			"category": "MalwareDownload",
-			"detectionSource": "WindowsDefenderAv",
-			"threatFamilyName": "Mikatz",
-			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description",
-			"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
-			"firstEventTime": "2018-11-26T16:17:50.0948658Z",
-			"lastEventTime": "2018-11-26T16:18:01.809871Z",
-			"resolvedTime": null,
-			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
+            "incidentId": 7696,
+            "assignedTo": "secop@contoso.com",
+            "severity": "High",
+            "status": "New",
+            "classification": "TruePositive",
+            "determination": "Malware",
+            "investigationState": "Running",
+            "category": "MalwareDownload",
+            "detectionSource": "WindowsDefenderAv",
+            "threatFamilyName": "Mikatz",
+            "title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+            "description": "Some description",
+            "alertCreationTime": "2018-11-26T16:19:21.8409809Z",
+            "firstEventTime": "2018-11-26T16:17:50.0948658Z",
+            "lastEventTime": "2018-11-26T16:18:01.809871Z",
+            "resolvedTime": null,
+            "machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -137,7 +137,7 @@ Content-type: application/json
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+            "lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
             "lastIpAddress": "172.17.230.209",
@@ -146,14 +146,14 @@ Content-type: application/json
             "osBuild": 18209,
             "healthStatus": "Active",
             "rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
+            "rbacGroupName": "The-A-Team",
             "riskScore": "High",
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -178,7 +178,7 @@ Content-type: application/json
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+            "lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
             "lastIpAddress": "172.17.230.209",
@@ -187,14 +187,14 @@ Content-type: application/json
             "osBuild": 18209,
             "healthStatus": "Active",
             "rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
+            "rbacGroupName": "The-A-Team",
             "riskScore": "High",
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -219,7 +219,7 @@ Content-type: application/json
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+            "lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
             "lastIpAddress": "172.17.230.209",
@@ -228,14 +228,14 @@ Content-type: application/json
             "osBuild": 18209,
             "healthStatus": "Active",
             "rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
+            "rbacGroupName": "The-A-Team",
             "riskScore": "High",
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -267,9 +267,9 @@ Content-type: application/json
             "lastUpdateDateTimeUtc": "2018-11-12T13:34:32.0319826Z",
             "relatedFileInfo": null
         },
-		.
-		.
-		.
+        .
+        .
+        .
     ]
 }
 ```
@@ -289,7 +289,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 4
-
 ```
 
 ## Related topic

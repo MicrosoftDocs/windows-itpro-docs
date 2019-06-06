@@ -22,7 +22,7 @@ You can clear an application from the console directly from the **Results** pane
 **Note**  
 When you clear an application from the console, you can no longer use that application. However, the application remains in cache and is still available to other users on the same system. After a publishing refresh, the cleared applications will again become available to you. If there are multiple applications in a package, the user's settings are not removed until all of the applications are cleared.
 
- 
+ 
 
 **To clear an application from the console**
 
@@ -30,9 +30,9 @@ When you clear an application from the console, you can no longer use that appli
 
 2.  At the confirmation prompt, click **Yes** to remove the application or click **No** to cancel the operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -83,9 +83,9 @@ When an organization wants to move to MDM to manage devices, they should prepare
 -   [Using PowerShell scripting with the WMI Bridge Provider](using-powershell-scripting-with-the-wmi-bridge-provider.md)
 -   [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)
 
- 
+ 
 
- 
+ 
 
 
 

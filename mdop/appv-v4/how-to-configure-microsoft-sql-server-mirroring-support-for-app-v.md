@@ -19,18 +19,18 @@ ms.date: 08/30/2016
 
 You can use the following procedure to configure your Microsoft Application Virtualization (App-V) environment to use Microsoft SQL Server database mirroring. Configuring database mirroring can help with disaster recovery and failover scenarios. App-V 4.5 SP2 supports all modes of database mirroring currently available for Microsoft SQL Server 2005 and SQL Server 2008.
 
-**Note**  
+**Note**  
 This procedure is written for administrators who are familiar with setting up and configuring SQL Server databases and database mirroring with Microsoft SQL Server, and therefore covers only the specific configuration settings that are unique to App-V.
 
- 
+
 
 **To configure your App-V environment to use Microsoft SQL Server database mirroring**
 
 1.  Set up SQL Server database mirroring of the App-V database following your standard business practices for database mirroring. Use the following links for general information about implementing Microsoft SQL Server database mirroring:
 
-    -   **Microsoft SQL 2005**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187478) (https://go.microsoft.com/fwlink/?LinkId=187478)
+    -   **Microsoft SQL 2005**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187478) (https://go.microsoft.com/fwlink/?LinkId=187478)
 
-    -   **Microsoft SQL 2008**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187477) (https://go.microsoft.com/fwlink/?LinkId=187477)
+    -   **Microsoft SQL 2008**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187477) (https://go.microsoft.com/fwlink/?LinkId=187477)
 
     In addition, you can find Best Practices information in [Database Mirroring Best Practices and Performance Considerations](https://go.microsoft.com/fwlink/?LinkId=190270) (https://go.microsoft.com/fwlink/?LinkId=190270).
 
@@ -42,10 +42,10 @@ This procedure is written for administrators who are familiar with setting up an
 
 5.  Check the registry key **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Softgrid\\4.5\\Server\\SQLServerName** and make sure that it contains only the host name of the SQL Server. If it includes an instance name, for example *serverhostname\\instancename*, the instance name must be removed.
 
-    **Important**  
+    **Important**  
     The App-V Management Server uses the TCP/IP networking library to communicate with the SQL Server when database mirroring is enabled, and therefore instance names cannot be used. The port numbers must be specified in the registry keys instead.
 
-     
+
 
 6.  Check the registry key **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Softgrid\\4.5\\Server\\SQLServerPort** and make sure that it contains the port number that is used for SQL on the SQL Server computer. If you are using a named instance this key value must be set to the port that is used for the named instance.
 
@@ -61,28 +61,30 @@ This procedure is written for administrators who are familiar with setting up an
 
     -   Click the **All** tab, and then select the entry **Failover Partner**. Click **Edit Value**, and then enter the server name of the failover SQL Server. Click **OK**.
 
-    **Important**  
+    **Important**  
     The App-V system uses Kerberos authentication. Therefore, when you configure SQL mirroring where Kerberos Authentication is enabled on the SQL Server and the SQL Server service runs under a domain user account, you must manually configure an SPN. For more information, see “When SQL Service Uses Domain-Based Account” in the article [Configuring App-V Administration for a Distributed Environment](https://go.microsoft.com/fwlink/?LinkId=203186) (https://go.microsoft.com/fwlink/?LinkId=203186).
 
-     
+
 
 10. To verify that database mirroring is running correctly, test the failover and confirm that the App-V Management Server continues to function correctly.
 
-    **Important**  
+    **Important**  
     Proceed with care, and follow your standard business practices to ensure that system operations are not disrupted in the event of a failure.
 
-     
 
-    After the failover has occurred successfully, as verified by using the SQL Server status monitoring information, right-click the **Applications** node in the App-V Management Console, and then select **Refresh**. The list of applications should display normally if the system is working correctly.
+
+~~~
+After the failover has occurred successfully, as verified by using the SQL Server status monitoring information, right-click the **Applications** node in the App-V Management Console, and then select **Refresh**. The list of applications should display normally if the system is working correctly.
+~~~
 
 ## Related topics
 
 
 [How to Perform Administrative Tasks in the Application Virtualization Server Management Console](how-to-perform-administrative-tasks-in-the-application-virtualization-server-management-console.md)
 
- 
 
- 
+
+
 
 
 

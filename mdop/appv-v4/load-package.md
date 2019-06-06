@@ -56,7 +56,7 @@ Loads the specified package into the file system cache.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -73,23 +73,23 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If no SFTPATH is specified, the client will load the package by using the path it has been configured to use, based on the OSD file, the ApplicationSourceRoot registry key value, or the OverrideURL setting.
 
 The **LOAD PACKAGE** command performs a synchronous load and will not be complete until the package is fully loaded or until it encounters an error condition.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

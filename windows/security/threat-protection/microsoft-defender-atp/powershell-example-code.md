@@ -52,7 +52,6 @@ $tokenPayload = @{
 
 $response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
 $token = $response.access_token
-
 ```
 
 <span id="headers" />
@@ -171,7 +170,6 @@ $iocPayload = @{
 $ioc =
     Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) `
          -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
-
 ```
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-psexample-belowfoldlink) 

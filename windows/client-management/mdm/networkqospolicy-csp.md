@@ -41,10 +41,10 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The only supported operation is Get.
 
-<a href="" id="name"></a>**_Name_**  
+<a href="" id="name"></a>***Name***  
 <p style="margin-left: 20px">Node for the QoS policy name.
 
-<a href="" id="name-ipprotocolmatchcondition"></a>**_Name_/IPProtocolMatchCondition**  
+<a href="" id="name-ipprotocolmatchcondition"></a>***Name*/IPProtocolMatchCondition**  
 <p style="margin-left: 20px">Specifies the IP protocol used to match the network traffic. 
 
 <p style="margin-left: 20px">Valid values are:
@@ -57,14 +57,14 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="name-apppathnamematchcondition"></a>**_Name_/AppPathNameMatchCondition**  
+<a href="" id="name-apppathnamematchcondition"></a>***Name*/AppPathNameMatchCondition**  
 <p style="margin-left: 20px">Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
 
 <p style="margin-left: 20px">The data type is char. 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="name-sourceportmatchcondition"></a>**_Name_/SourcePortMatchCondition**  
+<a href="" id="name-sourceportmatchcondition"></a>***Name*/SourcePortMatchCondition**  
 <p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic source. 
 
 <p style="margin-left: 20px">Valid values are: 
@@ -76,7 +76,7 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="name-destinationportmatchcondition"></a>**_Name_/DestinationPortMatchCondition**  
+<a href="" id="name-destinationportmatchcondition"></a>***Name*/DestinationPortMatchCondition**  
 <p style="margin-left: 20px">Specifies a single source port or a range of ports to be used to match the network traffic destination.
 
 <p style="margin-left: 20px">Valid values are: 
@@ -88,7 +88,7 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="name-priorityvalue8021action"></a>**_Name_/PriorityValue8021Action**  
+<a href="" id="name-priorityvalue8021action"></a>***Name*/PriorityValue8021Action**  
 <p style="margin-left: 20px">Specifies the IEEE 802.1p priority value to apply to matching network traffic.
 
 <p style="margin-left: 20px">Valid values are 0-7.
@@ -97,7 +97,7 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="name-dscpaction"></a>**_Name_/DSCPAction**  
+<a href="" id="name-dscpaction"></a>***Name*/DSCPAction**  
 <p style="margin-left: 20px">The differentiated services code point (DSCP) value to apply to matching network traffic.
 
 <p style="margin-left: 20px">Valid values are 0-63.

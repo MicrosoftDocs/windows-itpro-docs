@@ -53,6 +53,6 @@ The product keys that are installed on the client products must have a sufficien
 
     **Note**  
     You can use proxy activation to select products that have different key types and activate the products at the same time.
- 
- 
- 
+ 
+ 
+ 

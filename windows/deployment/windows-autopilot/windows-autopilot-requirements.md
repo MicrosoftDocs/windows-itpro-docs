@@ -31,7 +31,7 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
     -   Windows 10 Education
     -   Windows 10 Enterprise 2019 LTSC
     
- - If you're using Autopilot for Surface devices, note that only the following Surface devices support Autopilot:
+  - If you're using Autopilot for Surface devices, note that only the following Surface devices support Autopilot:
     - Surface Go
     - Surface Go with LTE Advanced
     - Surface Pro (5th gen) 

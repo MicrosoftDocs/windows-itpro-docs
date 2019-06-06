@@ -36,7 +36,7 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
         **Note**  
         Editor and Approver include Reviewer permissions.
 
-         
+         
 
 ### Additional considerations
 
@@ -52,9 +52,9 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
 
 -   [Managing the Archive](managing-the-archive.md)
 
- 
+ 
 
- 
+ 
 
 
 

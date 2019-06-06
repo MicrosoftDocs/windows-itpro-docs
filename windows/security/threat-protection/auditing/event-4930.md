@@ -64,7 +64,6 @@ It is not possible to understand what exactly was modified from this event.
  <Data Name="StatusCode">0</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -82,15 +81,15 @@ It is not possible to understand what exactly was modified from this event.
 -   **Source DRA** \[Type = UnicodeString\]: source directory replication agent distinguished name. Typically equals “**-**“ for this event.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 -   **Source Address** \[Type = UnicodeString\]: DNS record of computer from which the modification request was received.

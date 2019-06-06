@@ -37,7 +37,7 @@ The **Bulk assign and reclaim seats from users** operation returns reclaimed or 
 </tbody>
 </table>
 
- 
+ 
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -73,13 +73,13 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="even">
 <td><p>seatAction</p></td>
-<td><p>[SeatAction](data-structures-windows-store-for-business.md#seataction)</p></td>
+<td><p><a href="data-structures-windows-store-for-business.md#seataction" data-raw-source="[SeatAction](data-structures-windows-store-for-business.md#seataction)">SeatAction</a></p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 ## Response
 
 ### Response body
@@ -112,9 +112,9 @@ The response body contains [BulkSeatOperationResultSet](data-structures-windows-
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

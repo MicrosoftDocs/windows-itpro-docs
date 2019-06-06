@@ -80,7 +80,7 @@ Both fixed and removable data drives can be locked by using the Manage-bde comma
 
 > [!NOTE]  
 > Ensure all data is saved to the drive before locking it. Once locked, the drive will become inaccessible.
- 
+ 
 The syntax of this command is:
 
 <code>manage-bde <i>driveletter</i> -lock</code>

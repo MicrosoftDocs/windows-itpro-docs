@@ -34,7 +34,7 @@ The following are some steps and instructions to help you create a test environm
         **Important**  
         The VHD and Setup executable program must be in the same folder as the MED-V workspace installer. Then, install the MED-V workspace installer by running setup.exe.
 
-         
+         
 
 2.  After all of the components are installed on the test computer, run the MED-V Host Agent to start first time setup.
 
@@ -43,7 +43,7 @@ The following are some steps and instructions to help you create a test environm
     **Note**  
     If you cannot physically run the MED-V Host Agent on the test computer, first time setup starts automatically the next time that the computer restarts.
 
-     
+     
 
 First time setup starts and can take ten minutes or more to finish.
 
@@ -58,7 +58,7 @@ For information about testing your configuration settings when first time setup 
     **Important**  
     The VHD and Setup executable program must be in the same folder on your test environment as the MED-V workspace installer.
 
-     
+     
 
 3.  Install the MED-V workspace by running setup.exe.
 
@@ -73,7 +73,7 @@ You are now ready to test the different settings for configuration, application 
 **Note**  
 By default, MED-V overrides the screen lock policy in the guest. However, this does not pose a security problem because the host computer still honors the screen lock policy.
 
- 
+ 
 
 ## Related topics
 
@@ -84,9 +84,9 @@ By default, MED-V overrides the screen lock policy in the guest. However, this d
 
 [How to Test URL Redirection](how-to-test-url-redirection.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -101,7 +101,7 @@ Use the UE-V template generator to edit settings location templates. When the re
     >**Note**  
     A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
 
-     
+     
 2.  Open the settings location template file with an XML editor.
 
 3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](uev-application-template-schema-reference.md). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
@@ -157,9 +157,9 @@ Before you deploy any settings location template that you have downloaded from t
 
 [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

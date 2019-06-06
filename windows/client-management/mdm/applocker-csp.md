@@ -17,10 +17,10 @@ ms.date: 04/30/2018
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-> **Note**  
+> **Note**  
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 >
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
@@ -35,10 +35,10 @@ Defines the root node for the AppLocker configuration service provider.
 <a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**
 Defines restrictions for applications.
 
-> [!NOTE]  
+> [!NOTE]  
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 
 Additional information:
 
@@ -64,7 +64,7 @@ Exempt examples:
 
 Additional information:
 
-- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 Each of the previously listed nodes contains a **Grouping** node.
 
@@ -89,7 +89,7 @@ Each of the previously listed nodes contains a **Grouping** node.
 </tbody>
 </table>
 
- 
+
 
 In addition, each **Grouping** node contains one or more of the following nodes:
 
@@ -137,7 +137,7 @@ In addition, each **Grouping** node contains one or more of the following nodes:
 </tbody>
 </table>
 
- 
+
 
 Each of the previous nodes contains one or more of the following leaf nodes:
 
@@ -157,7 +157,7 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
 <p>Policy nodes are a Base64-encoded blob of the binary policy representation. The binary policy may be signed or unsigned.</p>
-<p>For CodeIntegrity/Policy, you can use the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool to encode the data to base-64.</p>
+<p>For CodeIntegrity/Policy, you can use the <a href="https://go.microsoft.com/fwlink/p/?LinkId=724364" data-raw-source="[certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364)">certutil -encode</a> command line tool to encode the data to base-64.</p>
 <p>Here is a sample certutil invocation:</p>
 
 ```
@@ -186,16 +186,16 @@ certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
 
 
-You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
+You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
 
 If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
 
-**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
+**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
 
 1.  On your Windows Phone, go to **Settings**. Choose **Update & security**. Then choose **For developers**.
 2.  Choose **Developer mode**.
@@ -255,7 +255,7 @@ The following table show the mapping of information to the AppLocker publisher r
 </tbody>
 </table>
 
- 
+
 
 Here is an example AppLocker publisher rule:
 
@@ -289,26 +289,28 @@ You can get the publisher name and product name of apps using a web API.
     </tbody>
     </table>
 
-     
 
-    Here is the example for Microsoft OneNote:
 
-    Request
+~~~
+Here is the example for Microsoft OneNote:
 
-    ``` syntax
-    https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
-    ```
+Request
 
-    Result
+``` syntax
+https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
+```
 
-    ``` syntax
-    {
-      "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
-      "packageIdentityName": "Microsoft.Office.OneNote",
-      "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-      "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-    }
-    ```
+Result
+
+``` syntax
+{
+  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
+  "packageIdentityName": "Microsoft.Office.OneNote",
+  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+}
+```
+~~~
 
 <table>
 <colgroup>
@@ -339,12 +341,12 @@ You can get the publisher name and product name of apps using a web API.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
+When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -366,16 +368,16 @@ The product name is first part of the PackageFullName followed by the version nu
 | SettingsPageAppsCorner             | 5b04b775-356b-4aa0-aaf8-6491ffea580a\_1.0.0.0\_neutral\_\_4vefaa8deck74 | 5b04b775-356b-4aa0-aaf8-6491ffea580a |
 | SettingsPagePhoneNfc               | b0894dfd-4671-4bb9-bc17-a8b39947ffb6\_1.0.0.0\_neutral\_\_1prqnbg33c1tj | b0894dfd-4671-4bb9-bc17-a8b39947ffb6 |
 
- 
+
 
 ## <a href="" id="inboxappsandcomponents"></a>Inbox apps and components
 
 
 The following list shows the apps that may be included in the inbox.
 
-> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 
- 
+
 
 <table>
 <colgroup>
@@ -589,7 +591,7 @@ The following list shows the apps that may be included in the inbox.
 <tr class="even">
 <td>Microsoft Frameworks</td>
 <td>ProductID = 00000000-0000-0000-0000-000000000000
-<p>PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"</p></td>
+<p>PublisherName=&quot;CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot;</p></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -834,7 +836,7 @@ The following list shows the apps that may be included in the inbox.
 </tbody>
 </table>
 
- 
+
 
 ## Whitelist examples
 
@@ -941,7 +943,7 @@ The following example disables the Mixed Reality Portal. In the example, the **I
 </SyncML>
 ```
 
-The following example for Windows 10 Mobile denies all apps and allows the following apps:
+The following example for Windows 10 Mobile denies all apps and allows the following apps:
 
 -   [settings app that rely on splash apps](#settingssplashapps)
 -   most of the [inbox apps](#inboxappsandcomponents), but not all.
@@ -1657,7 +1659,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
 ```
 
 ## Recommended deny list for Windows Information Protection
-The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
@@ -1817,9 +1819,9 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

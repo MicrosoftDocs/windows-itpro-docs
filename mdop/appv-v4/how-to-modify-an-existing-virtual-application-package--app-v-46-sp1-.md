@@ -42,7 +42,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Important**  
     If you are required to disable virus scanning software, scan the computer running the sequencer to ensure that no unwanted or malicious files are added to the package.
 
-     
+     
 
 6.  On the **Select Installer** page, click **Browse** and specify the update installation file for the application. If the update does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
@@ -51,7 +51,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Note**  
     The sequencer monitors all changes and installations to the computer running the sequencer, including the changes and installations that are performed outside of the sequencing wizard.
 
-     
+     
 
 8.  On the **Installation Report** page, you can review information about the virtual application you just updated. For a more detailed explanation about the information displayed in **Additional Information**, double-click the event. After you have reviewed the information, click **Next**.
 
@@ -60,7 +60,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Note**  
     If you want to stop an application from loading during this step, in the **Application Launch** dialog box, click **Stop**, and then click one of the following options, **Stop all applications** or **Stop this application only**, depending on what you want.
 
-     
+     
 
 10. On the **Create Package** page, to modify the package without saving it, select the **Continue to modify package without saving using the package editor** check box. When you select this option, the package in the Sequencer console opens so that you can modify the package before it is saved. Click **Next**.
 
@@ -121,7 +121,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Important**  
     If you are required to disable virus scanning software, scan the computer running the sequencer to ensure that no unwanted or malicious files can be added to the package.
 
-     
+     
 
 6.  On the **Select Installer** page, click **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
@@ -130,7 +130,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Note**  
     All changes and installations to the computer running the sequencer are monitored by the sequencer, including the changes and installations that are performed outside of the sequencing wizard.
 
-     
+     
 
 8.  On the **Configure Software** page, optionally run the programs contained in the package. This step helps complete any associated license or configuration tasks that are required to run the application before you deploy and run the package on target computers. To run all the programs at the same time, select at least one program, and then click **Run All**. To run specific programs, select the program or programs you want to run, and then click **Run Selected**. Complete the required configuration tasks and then close the applications. It can take several minutes for all programs to run. Click **Next**.
 
@@ -151,7 +151,7 @@ You must have the App-V Sequencer installed to modify a virtual application pack
     **Note**  
     If you want to stop an application from loading during this step, in the **Application Launch** dialog box, click **Stop** and select either the **Stop all applications** or the **Stop this application only** check box, depending on what you want.
 
-     
+     
 
 13. On the **Create Package** page, select the **Continue to modify package without saving using the package editor** check box, to modify the package without saving it. When you select this option, the package in the sequencer console opens so that you can modify the package before it is saved. Click **Next**.
 
@@ -164,9 +164,9 @@ You must have the App-V Sequencer installed to modify a virtual application pack
 
 [Tasks for the Application Virtualization Sequencer (App-V 4.6 SP1)](tasks-for-the-application-virtualization-sequencer--app-v-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,18 +30,18 @@ You can use the following procedure to remove an application from its assigned l
 4.  Click **OK**.
 
     **Note**  
-      You can alter the **Properties** tab of one application at a time.
+      You can alter the **Properties** tab of one application at a time.
 
-     
+     
 
 ## Related topics
 
 
 [How to Associate an Application with a License Group](how-to-associate-an-application-with-a-license-group.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -69,7 +69,6 @@ This event is not generated if “Do not require Kerberos preauthentication” o
  <Data Name="CertThumbprint" /> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.

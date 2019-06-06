@@ -43,7 +43,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 
 Supported operation is Get.
 
-<a href="" id="-ssid-"></a>***<SSID>***
+<a href="" id="-ssid-"></a>**<em><SSID></em>**
 Specifies the name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. The SSID is added when the WlanXML node is added. When the SSID node is deleted, then all the subnodes are also deleted.
 
 SSID is the name of network you are connecting to, while Profile name is the name of the Profile which contains the WiFi settings information. If the Profile name is not set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, <LocURI>./Vendor/MSFT/WiFi/Profile/<*MUST BE NAME OF PROFILE AS PER WIFI XML*>/WlanXml</LocURI>.
@@ -228,9 +228,9 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

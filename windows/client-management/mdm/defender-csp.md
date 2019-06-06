@@ -28,7 +28,7 @@ An interior node to group all threats detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid"></a>**Detections/****_ThreatId_**  
+<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>  
 The ID of a threat that has been detected by Windows Defender.
 
 Supported operation is Get.
@@ -122,7 +122,7 @@ The following table describes the supported values:
 | 50    | Ransomware                  |
 | 51    | ASR Rule                    |
 
- 
+ 
 
 Supported operation is Get.
 

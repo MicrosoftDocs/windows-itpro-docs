@@ -70,5 +70,5 @@ To uninstall VAMT using the **Programs and Features** Control Panel:
 2.  Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
 
 
- 
- 
+ 
+ 
