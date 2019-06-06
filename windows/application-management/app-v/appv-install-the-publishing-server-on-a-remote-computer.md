@@ -27,16 +27,16 @@ Use the following procedure to install the publishing server on a separate compu
 5. On the **Installation location** page, accept the default location, then select **Next**.
 6. On the **Configure publishing server configuration** page, specify the following items:
 
- * The URL for the management service that the publishing server will connect to. For example, **http:<span></span>//ManagementServerName:12345**.
- * Specify the website name that you want to use for the publishing service. If you don't have a custom name, then use the default name.
- * For the **Port binding**, specify a unique port number that will be used by App-V. For example, **54321**.
+   * The URL for the management service that the publishing server will connect to. For example, **http:<span></span>//ManagementServerName:12345**.
+   * Specify the website name that you want to use for the publishing service. If you don't have a custom name, then use the default name.
+   * For the **Port binding**, specify a unique port number that will be used by App-V. For example, **54321**.
 7. On the **Ready to install** page, select **Install**.
 8. After the installation is complete, the publishing server must be registered with the management server. In the App-V management console, use the following steps to register the server:
 
     1. Open the App-V management server console.
     2. In the left pane, select **Servers**, then select **Register New Server**.
     3. Enter the server name and a description (if required), then select **Add**.
-9. To verify that the publishing server is running correctly, you should import a package to the management server, entitle that package to an AD group, then publish it. Using an internet browser, open the following URL: **https://publishingserver:pubport**. If the server is running correctly, information like the following example should appear.
+9. To verify that the publishing server is running correctly, you should import a package to the management server, entitle that package to an AD group, then publish it. Using an internet browser, open the following URL: <strong>https://publishingserver:pubport</strong>. If the server is running correctly, information like the following example should appear.
 
     ```SQL
     <Publishing Protocol="1.0">

@@ -73,9 +73,9 @@ This is the only option to configure this setting by using a user interface (UI)
 On computers that run earlier versions of Windows, you need to edit the registry setting directly or use Group Policy Preferences. 
 To avoid setting it manually in this case, you can configure the GPO itself on a computer that runs Windows Server 2016 or Windows 10, version 1607 or later and have it apply to all computers within the scope of the GPO because the same registry key exists on every computer after the corresponding KB is installed. 
 
-> [!NOTE] 
+> [!NOTE]
 > This policy is implemented similarly to other "Network access" policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. 
-
+> 
 > For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
 
 ## Default values

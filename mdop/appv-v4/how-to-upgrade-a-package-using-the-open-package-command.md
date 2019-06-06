@@ -30,16 +30,16 @@ Use the Open Package command to upgrade or apply an update to a sequenced applic
     **Important**  
     Updating the file name with the package version is essential to successfully completing the upgrade.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Virtual Applications Using the Command Line](how-to-manage-virtual-applications-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

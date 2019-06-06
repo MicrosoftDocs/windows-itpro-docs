@@ -48,13 +48,13 @@ Topics and procedures in this guide are summarized in the following table. An es
 <table border="1" cellspacing="0" cellpadding="0">
 <tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
 
-<tr><td>[About MDT](#about-mdt)<td>A high-level overview of the Microsoft Deployment Toolkit (MDT).<td>Informational
-<tr><td>[Install MDT](#install-mdt)<td>Download and install MDT.<td>40 minutes
-<tr><td>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<td>A reference image is created to serve as the template for deploying new images.<td>90 minutes
-<tr><td>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<td>The reference image is deployed in the PoC environment.<td>60 minutes
-<tr><td>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<td>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<td>60 minutes
-<tr><td>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<td>Back up an existing client computer, then restore this backup to a new computer.<td>60 minutes
-<tr><td>[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)<td>Log locations and troubleshooting hints.<td>Informational
+<tr><td><a href="#about-mdt" data-raw-source="[About MDT](#about-mdt)">About MDT</a><td>A high-level overview of the Microsoft Deployment Toolkit (MDT).<td>Informational
+<tr><td><a href="#install-mdt" data-raw-source="[Install MDT](#install-mdt)">Install MDT</a><td>Download and install MDT.<td>40 minutes
+<tr><td><a href="#create-a-deployment-share-and-reference-image" data-raw-source="[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)">Create a deployment share and reference image</a><td>A reference image is created to serve as the template for deploying new images.<td>90 minutes
+<tr><td><a href="#deploy-a-windows-10-image-using-mdt" data-raw-source="[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)">Deploy a Windows 10 image using MDT</a><td>The reference image is deployed in the PoC environment.<td>60 minutes
+<tr><td><a href="#refresh-a-computer-with-windows-10" data-raw-source="[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)">Refresh a computer with Windows 10</a><td>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<td>60 minutes
+<tr><td><a href="#replace-a-computer-with-windows-10" data-raw-source="[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)">Replace a computer with Windows 10</a><td>Back up an existing client computer, then restore this backup to a new computer.<td>60 minutes
+<tr><td><a href="#troubleshooting-logs-events-and-utilities" data-raw-source="[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)">Troubleshooting logs, events, and utilities</a><td>Log locations and troubleshooting hints.<td>Informational
 </TABLE>
 
 </div>
@@ -497,12 +497,12 @@ This section will demonstrate how to export user data from an existing client co
     **Note**: The USMT will still back up the computer.
 
 7. Lite Touch Installation will perform the following actions:
-    - Back up user settings and data using USMT.
-    - Install the Windows 10 Enterprise X64 operating system.
-    - Update the operating system via Windows Update.
-    - Restore user settings and data using USMT.
+   - Back up user settings and data using USMT.
+   - Install the Windows 10 Enterprise X64 operating system.
+   - Update the operating system via Windows Update.
+   - Restore user settings and data using USMT.
 
-    You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings.
+     You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings.
 
 8. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system, or other user accounts as specified [previously](#configure-the-mdt-production-deployment-share).
 
@@ -563,18 +563,18 @@ At a high level, the computer replace process consists of:<BR>
     Remove-Item c:\_SMSTaskSequence -recurse
     Restart-Computer
     ```
-2. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
+3. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
 
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
-3. Complete the deployment wizard using the following:
+4. Complete the deployment wizard using the following:
     - **Task Sequence**: Backup Only Task Sequence
     - **User Data**: Specify a location: **\\\\SRV1\MigData$\PC1**
     - **Computer Backup**: Do not back up the existing computer.
-4. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
-5. On PC1, verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
-6. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
+5. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
+6. On PC1, verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
+7. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
 
     ```
     PS C:\> dir C:\MigData\PC1\USMT
@@ -585,15 +585,15 @@ At a high level, the computer replace process consists of:<BR>
     ----                -------------     ------ ----
     -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
     ```
-### Deploy PC3 
+   ### Deploy PC3 
 
-1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
+8. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
 
     ```
     New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     ```
-2. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
+9. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
@@ -602,32 +602,32 @@ At a high level, the computer replace process consists of:<BR>
     >As mentioned previously, ensure that you disable the **external** network adapter, and wait for the command to complete before proceeding.
 
 
-3. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+10. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    ```
-    Start-VM PC3
-    vmconnect localhost PC3
-    ```
+     ```
+     Start-VM PC3
+     vmconnect localhost PC3
+     ```
 
-4. When prompted, press ENTER for network boot.
+11. When prompted, press ENTER for network boot.
 
-6. On PC3, use the following settings for the Windows Deployment Wizard:
-    - **Task Sequence**: Windows 10 Enterprise x64 Custom Image
-    - **Move Data and Settings**: Do not move user data and settings
-    - **User Data (Restore)**: Specify a location: **\\\\SRV1\MigData$\PC1**
+12. On PC3, use the following settings for the Windows Deployment Wizard:
+     - **Task Sequence**: Windows 10 Enterprise x64 Custom Image
+     - **Move Data and Settings**: Do not move user data and settings
+     - **User Data (Restore)**: Specify a location: **\\\\SRV1\MigData$\PC1**
 
-5. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
+13. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
 
-    ```
-    Enable-NetAdapter "Ethernet 2"
-    ```
-7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
+     ```
+     Enable-NetAdapter "Ethernet 2"
+     ```
+14. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-8. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
+15. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
 
-9. Verify that settings have been migrated from PC1. This completes demonstration of the replace procedure.
+16. Verify that settings have been migrated from PC1. This completes demonstration of the replace procedure.
 
-10. Shut down PC3 in preparation for the [next](windows-10-poc-sc-config-mgr.md) procedure.
+17. Shut down PC3 in preparation for the [next](windows-10-poc-sc-config-mgr.md) procedure.
 
 ## Troubleshooting logs, events, and utilities
 
@@ -647,7 +647,7 @@ Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-
 [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741)<BR>
 [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 
- 
+ 
 
 
 

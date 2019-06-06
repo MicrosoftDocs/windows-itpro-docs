@@ -22,7 +22,7 @@ Use the following procedure to create a new App-V 5.0 package using PowerShell.
 **Note**  
 Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V 5.0 Sequencer and Client Deployment](planning-for-the-app-v-50-sequencer-and-client-deployment.md).
 
- 
+ 
 
 **To create a new virtual application using PowerShell**
 
@@ -67,9 +67,9 @@ Before you use this procedure you must copy the associated installer files to th
 
 [Administering App-V by Using PowerShell](administering-app-v-by-using-powershell.md)
 
- 
+ 
 
- 
+ 
 
 
 

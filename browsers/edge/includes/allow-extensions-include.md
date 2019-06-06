@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented | 
-|Enabled or not configured<br>**(default)** |1 |1 |Allowed | 
+|                Group Policy                | MDM | Registry | Description |
+|--------------------------------------------|:---:|:--------:|-------------|
+|                  Disabled                  |  0  |    0     |  Prevented  |
+| Enabled or not configured<br>**(default)** |  1  |    1     |   Allowed   |
+
 ---
 
 ### ADMX info and settings

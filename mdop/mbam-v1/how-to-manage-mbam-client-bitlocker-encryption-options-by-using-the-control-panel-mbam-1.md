@@ -22,7 +22,7 @@ A Microsoft BitLocker Administration and Monitoring (MBAM) control panel applica
 **Note**  
 For the BitLocker client, the Admin and Operational log files are located in Event Viewer, under **Application and Services Logs** / **Microsoft** / **Windows** / **BitLockerManagement**.
 
- 
+ 
 
 **To use the MBAM Client Control Panel**
 
@@ -41,9 +41,9 @@ For the BitLocker client, the Admin and Operational log files are located in Eve
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

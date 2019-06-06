@@ -42,4 +42,4 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 
 > [!NOTE]  
 > If you have suspended BitLocker, you can resume BitLocker protection after you have installed the upgrade or update. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, your computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
- 
+ 

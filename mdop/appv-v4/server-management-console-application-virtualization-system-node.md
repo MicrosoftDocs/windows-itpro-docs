@@ -24,19 +24,19 @@ You can right-click the Application Virtualization System node to display the fo
 <a href="" id="configure-connection"></a>**Configure Connection**  
 In this dialog box, you can modify the following settings:
 
--   **Web Service Host Name**—Enables you to enter the name of the Application Virtualization System to which you want to connect, or you can enter **localhost** to connect to the local computer.
+- **Web Service Host Name**—Enables you to enter the name of the Application Virtualization System to which you want to connect, or you can enter **localhost** to connect to the local computer.
 
--   **Use Secure Connection**—Select if you want to connect to the server with a secure connection.
+- **Use Secure Connection**—Select if you want to connect to the server with a secure connection.
 
--   **Port**—Enables you to enter the port number you want to use for the connection. 80 is the default regular port number, and 443 is default secure port number.
+- **Port**—Enables you to enter the port number you want to use for the connection. 80 is the default regular port number, and 443 is default secure port number.
 
--   **Use Current Windows Account**—Select to use the current Windows account credentials.
+- **Use Current Windows Account**—Select to use the current Windows account credentials.
 
--   **Specify Windows Account**—Select when you want to connect to the server as a different user.
+- **Specify Windows Account**—Select when you want to connect to the server as a different user.
 
--   **Name**—Enables you to enter the name of the new user by using either the *DOMAIN\\username* or the *username@domain* format.
+- **Name**—Enables you to enter the name of the new user by using either the *DOMAIN\\username* or the <em>username@domain</em> format.
 
--   **Password**—Enables you to enter the password that corresponds to the new user.
+- **Password**—Enables you to enter the password that corresponds to the new user.
 
 <a href="" id="system-options"></a>**System Options**  
 On the following tabs on this dialog box, you can modify the associated settings:
@@ -62,9 +62,9 @@ Starts the management console help file.
 
 [Application Virtualization Server Management Console Reference](application-virtualization-server-management-console-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

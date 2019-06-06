@@ -109,7 +109,7 @@ The following table includes the sample data that was collected when you determi
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -126,11 +126,11 @@ The following table includes the sample data that was collected when you determi
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Next steps
 
 After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
 
- 
- 
+ 
+ 

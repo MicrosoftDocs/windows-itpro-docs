@@ -18,12 +18,13 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Load the Start page. |
-|Enabled |1 |1 |Load the New Tab page. |
-|Enabled |2 |2 |Load the custom URL defined in the Set Home Button URL policy. |
-|Enabled |3 |3 |Hide the home button. |
+|                Group Policy                 | MDM | Registry |                          Description                           |
+|---------------------------------------------|:---:|:--------:|----------------------------------------------------------------|
+| Disabled or not configured<br>**(default)** |  0  |    0     |                      Load the Start page.                      |
+|                   Enabled                   |  1  |    1     |                     Load the New Tab page.                     |
+|                   Enabled                   |  2  |    2     | Load the custom URL defined in the Set Home Button URL policy. |
+|                   Enabled                   |  3  |    3     |                     Hide the home button.                      |
+
 ---
 
 
@@ -53,7 +54,7 @@ ms:topic: include
 ### Related policies
 
 - [Set Home Button URL](../available-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
- 
+
 - [Unlock Home Button](../available-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)] 
 
 

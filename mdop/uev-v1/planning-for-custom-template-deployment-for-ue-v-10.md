@@ -40,7 +40,7 @@ When you use Group Policy to configure the settings template catalog path, you c
 **Note**  
 If you disable this policy setting after it has been enabled, the UE-V agent will not restore the default Microsoft templates.
 
- 
+ 
 
 If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, and the UE-V agent is not configured to replace the default Microsoft templates, the Microsoft templates in the catalog will be ignored.
 
@@ -49,7 +49,7 @@ You can also replace the default templates by using the UE-V PowerShell features
 **Note**  
 Old settings packages remain in the settings storage location even if new settings templates are deployed for an application. These packages are not read by the agent, but neither are they automatically deleted.
 
- 
+ 
 
 ## Related topics
 
@@ -61,9 +61,9 @@ Old settings packages remain in the settings storage location even if new settin
 [Planning for UE-V Configuration Methods](planning-for-ue-v-configuration-methods.md)
 
 Planning for Custom Template Deployment
- 
+ 
 
- 
+ 
 
 
 

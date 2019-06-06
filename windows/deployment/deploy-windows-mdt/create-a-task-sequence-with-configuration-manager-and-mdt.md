@@ -156,7 +156,7 @@ After you create the task sequence, we recommend that you configure the task seq
 >[!NOTE]  
 >The Request State Store and Release State Store actions need to be added for common computer replace scenarios.
 
- 
+ 
 
 ## <a href="" id="sec03"></a>Move the packages
 

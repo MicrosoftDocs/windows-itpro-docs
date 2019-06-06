@@ -32,7 +32,7 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
     **Note**  
     Editor and Approver include Reviewer permissions.
 
-     
+     
 
 4.  In the **Advanced Security Settings** dialog box, select a Group Policy administrator, and then click **Edit**.
 
@@ -56,9 +56,9 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
 
 -   [Performing AGPM Administrator Tasks](performing-agpm-administrator-tasks.md)
 
- 
+ 
 
- 
+ 
 
 
 

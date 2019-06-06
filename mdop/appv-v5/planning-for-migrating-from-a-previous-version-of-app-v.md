@@ -69,7 +69,7 @@ The following table shows the supported App-V coexistence scenarios. We recommen
 </tbody>
 </table>
 
- 
+ 
 
 ### Requirements for running coexisting clients
 
@@ -97,16 +97,16 @@ The following table provides link to the TechNet documentation about the release
 <tbody>
 <tr class="odd">
 <td align="left"><p>App-V 4.6 SP3</p></td>
-<td align="left"><p>[About Microsoft Application Virtualization 4.6 SP3](https://technet.microsoft.com/library/dn511019.aspx)</p></td>
+<td align="left"><p><a href="https://technet.microsoft.com/library/dn511019.aspx" data-raw-source="[About Microsoft Application Virtualization 4.6 SP3](https://technet.microsoft.com/library/dn511019.aspx)">About Microsoft Application Virtualization 4.6 SP3</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 5.0 SP3</p></td>
-<td align="left"><p>[About Microsoft Application Virtualization 5.0 SP3](about-app-v-50-sp3.md)</p></td>
+<td align="left"><p><a href="about-app-v-50-sp3.md" data-raw-source="[About Microsoft Application Virtualization 5.0 SP3](about-app-v-50-sp3.md)">About Microsoft Application Virtualization 5.0 SP3</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to configure App-V 5.0 client coexistence, see:
 
@@ -135,9 +135,9 @@ For more information about using the package converter to convert a package, see
 
 [Planning to Deploy App-V](planning-to-deploy-app-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,7 +30,7 @@ Before completing this procedure, you should have exported an AppLocker policy. 
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 
 >**Caution:**  Importing a policy will overwrite the existing policy on that computer.
- 
+ 
 **To import an AppLocker policy**
 
 1.  From the AppLocker console, right-click **AppLocker**, and then click **Import Policy**.

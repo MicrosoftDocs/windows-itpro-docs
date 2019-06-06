@@ -24,7 +24,7 @@ When the size of the stored data reaches 95% (the high watermark) of the specifi
 **Note**  
 The **No Size Limit** and **Keep All Usage** options are provided so that you can disable usage reporting and database cleanup. Selecting these items will clean up the database transaction log as well. (All committed Microsoft SQL Server transactions will be removed from the database log.)
 
- 
+ 
 
 **To set up database size**
 
@@ -55,9 +55,9 @@ The **No Size Limit** and **Keep All Usage** options are provided so that you ca
 
 [How to Set Up or Disable Usage Reporting](how-to-set-up-or-disable-usage-reporting.md)
 
- 
+ 
 
- 
+ 
 
 
 

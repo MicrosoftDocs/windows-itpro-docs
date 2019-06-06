@@ -57,130 +57,132 @@ Because settings packages may contain personal information, you should take care
         </tbody>
         </table>
 
-         
 
-    2.  Set the following NTFS permissions for the settings storage location folder:
 
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommended permissions</th>
-        <th align="left">Folder</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Creator/Owner</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain Admins</p></td>
-        <td align="left"><p>Full Control</p></td>
-        <td align="left"><p>This Folder, Subfolders and Files</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Security group of UE-V users</p></td>
-        <td align="left"><p>List Folder/Read Data, Create Folders/Append Data</p></td>
-        <td align="left"><p>This Folder Only</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>Remove all Permissions</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        </tr>
-        </tbody>
-        </table>
+~~~
+2.  Set the following NTFS permissions for the settings storage location folder:
 
-         
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommended permissions</th>
+    <th align="left">Folder</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Creator/Owner</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain Admins</p></td>
+    <td align="left"><p>Full Control</p></td>
+    <td align="left"><p>This Folder, Subfolders and Files</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Security group of UE-V users</p></td>
+    <td align="left"><p>List Folder/Read Data, Create Folders/Append Data</p></td>
+    <td align="left"><p>This Folder Only</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>Remove all Permissions</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-    3.  Set the following share-level (SMB) permissions for the settings template catalog folder.
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommend permissions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain Computers</p></td>
-        <td align="left"><p>Read Permission Levels</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Administrators</p></td>
-        <td align="left"><p>Read/Write Permission Levels</p></td>
-        </tr>
-        </tbody>
-        </table>
 
-         
+3.  Set the following share-level (SMB) permissions for the settings template catalog folder.
 
-    4.  Set the following NTFS permissions for the settings template catalog folder.
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommend permissions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain Computers</p></td>
+    <td align="left"><p>Read Permission Levels</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Administrators</p></td>
+    <td align="left"><p>Read/Write Permission Levels</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommended permissions</th>
-        <th align="left">Apply to</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Creator/Owner</p></td>
-        <td align="left"><p>Full Control</p></td>
-        <td align="left"><p>This Folder, Subfolders and Files</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain Computers</p></td>
-        <td align="left"><p>List Folder Contents and Read</p></td>
-        <td align="left"><p>This Folder, Subfolders and Files</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        <td align="left"><p>No Permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Administrators</p></td>
-        <td align="left"><p>Full Control</p></td>
-        <td align="left"><p>This Folder, Subfolders and Files</p></td>
-        </tr>
-        </tbody>
-        </table>
 
-         
 
-### Use Windows Server 2003 or later servers to host redirected file shares
+4.  Set the following NTFS permissions for the settings template catalog folder.
+
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommended permissions</th>
+    <th align="left">Apply to</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Creator/Owner</p></td>
+    <td align="left"><p>Full Control</p></td>
+    <td align="left"><p>This Folder, Subfolders and Files</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain Computers</p></td>
+    <td align="left"><p>List Folder Contents and Read</p></td>
+    <td align="left"><p>This Folder, Subfolders and Files</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    <td align="left"><p>No Permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Administrators</p></td>
+    <td align="left"><p>Full Control</p></td>
+    <td align="left"><p>This Folder, Subfolders and Files</p></td>
+    </tr>
+    </tbody>
+    </table>
+~~~
+
+
+
+### Use Windows Server 2003 or later servers to host redirected file shares
 
 User settings package files contain personal information that is transferred between the client computer and the server that stores the settings packages. Because of this, you should ensure that the data is protected while it travels over the network.
 
 User settings data is vulnerable to these potential threats: interception of the data as it passes over the network; tampering with the data as it passes over the network; and spoofing of the server that hosts the data.
 
-Several features of Windows Server 2003 and above can help to secure user data:
+Several features of Windows Server 2003 and above can help to secure user data:
 
--   **Kerberos** - Kerberos is standard on all versions of Windows 2000 and Windows Server 2003 and later. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client does not know whether the server is valid. This is particularly important if the client is exchanging personal files with the server, as is the case with Roaming Profiles. Kerberos provides better security than NTLM. Kerberos is not available on Windows NT version 4.0 or earlier operating systems.
+-   **Kerberos** - Kerberos is standard on all versions of Windows 2000 and Windows Server 2003 and later. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client does not know whether the server is valid. This is particularly important if the client is exchanging personal files with the server, as is the case with Roaming Profiles. Kerberos provides better security than NTLM. Kerberos is not available on Windows NT version 4.0 or earlier operating systems.
 
 -   **IPsec** - The IP Security Protocol (IPsec) provides network-level authentication, data integrity, and encryption. IPsec ensures the following:
 
@@ -220,7 +222,7 @@ To ensure that UE-V works optimally, create only the root share on the server, a
 
 This permission configuration allows users to create folders for settings storage. The UE-V agent creates and secures a settingspackage folder while running in the context of the user. The user receives full control to their settingspackage folder. Other users do not inherit access to this folder. You do not need to create and secure individual user directories. This will be done automatically by the agent that runs in the context of the user.
 
-**Note**  
+**Note**  
 Additional security can be configured when a Windows server is utilized for the settings storage share. UE-V can be configured to verify that either the local administrator's group or the current user is the owner of the folder where settings packages are stored. To enable additional security use the following command:
 
 1.  Add a REG\_DWORD registry key named "RepositoryOwnerCheckEnabled" to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
@@ -229,7 +231,7 @@ Additional security can be configured when a Windows server is utilized for the 
 
 When this configuration setting is in place, the UE-V agent verifies that the local administrator’s group or current user is the owner of the settingspackage folder. If not, then the UE-V agent will not allow access to the folder.
 
- 
+
 
 If you must create folders for the users and ensure that you have the correct permissions set.
 
@@ -244,9 +246,9 @@ If you redirect UE-V settings to a user’s home directory, be sure that the per
 
 [Security and Privacy for UE-V 1.0](security-and-privacy-for-ue-v-10.md)
 
- 
 
- 
+
+
 
 
 

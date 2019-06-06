@@ -155,29 +155,29 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 
 
 
->[!NOTE]
->**Additional steps to follow if you receive exit code 33**
-
->Check the exit code for any of these messages:
->
->- CompatTelRunner.exe exited with last error code: 0x800703F1 
->- CompatTelRunner.exe exited with last error code: 0x80070005 
->- CompatTelRunner.exe exited with last error code: 0x80080005
+> [!NOTE]
+> **Additional steps to follow if you receive exit code 33**
+> 
+> Check the exit code for any of these messages:
+> 
+> - CompatTelRunner.exe exited with last error code: 0x800703F1 
+> - CompatTelRunner.exe exited with last error code: 0x80070005 
+> - CompatTelRunner.exe exited with last error code: 0x80080005
 > 
->
->If the exit code includes any of those messages, then run these commands from an elevated command prompt:
->
->1. Net stop diagtrack
->2. Net stop pcasvc
->3. Net stop dps
->4. Del %windir%\appcompat\programs\amcache.hve
->5. reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v AmiHivePermissionsCorrect /f
->6. reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v LogFlags /t REG_DWORD /d 4 /f
->7. Net start diagtrack
->8. Net start pcasvc
->9. Net start dps
->
->Then run the Enterprise Config script (RunConfig.bat) again. 
->
->If the script still fails, then send mail to **uasupport@microsoft.com** including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
+> 
+> If the exit code includes any of those messages, then run these commands from an elevated command prompt:
+> 
+> 1. Net stop diagtrack
+> 2. Net stop pcasvc
+> 3. Net stop dps
+> 4. Del %windir%\appcompat\programs\amcache.hve
+> 5. reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v AmiHivePermissionsCorrect /f
+> 6. reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v LogFlags /t REG_DWORD /d 4 /f
+> 7. Net start diagtrack
+> 8. Net start pcasvc
+> 9. Net start dps
+> 
+> Then run the Enterprise Config script (RunConfig.bat) again. 
+> 
+> If the script still fails, then send mail to <strong>uasupport@microsoft.com</strong> including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
 

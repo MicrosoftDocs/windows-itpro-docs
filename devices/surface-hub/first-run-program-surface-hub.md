@@ -40,7 +40,7 @@ Each of these sections also contains information about paths you might take when
 >[!NOTE]
 >You should have the separate keyboard that came with your Surface Hub set up and ready before beginning. See the Surface Hub Setup Guide for details.
 
- 
+ 
 
 ## <a href="" id="first-page"></a>Hi there page
 
@@ -50,7 +50,7 @@ This is the first screen you'll see when you power up the Surface Hub for the fi
 >[!NOTE]
 >This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
 
- Select a language and the initial setup options are displayed.
+ Select a language and the initial setup options are displayed.
 
 ![Image showing ICD options checklist.](images/setuplocale.png)
 
@@ -68,7 +68,7 @@ If the default values shown are correct, then you can click **Next** to go on. O
 >[!NOTE]
 > Once the settings on this page are entered, you can't come back to this screen unless you reset the device (see [Device reset](device-reset-surface-hub.md)). Make sure that the settings are properly configured before proceeding.
 
- 
+ 
 
 When the settings are accepted, the device will check for a wired network connection. If the connection is fine, it will display the [Set up for you page](#set-up-for-you). If there is a problem with the wired connection, the device will display the [Network setup page](#network-setup).
 
@@ -90,7 +90,7 @@ This screen is shown only if the device fails to detect a wired network. If you 
     >[!NOTE]
     >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
-     
+     
 
 -   You can plug in a network cable while this screen is visible. The device will detect it, and will add **Next** to the screen. Click **Next** to continue with making the wired connection.
 
@@ -125,7 +125,7 @@ This page will be shown when the device detects a wired connection with limited 
 -   You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
     **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
-     
+     
 
 -   You can select **Enter proxy settings** which will allow you to specify how to use the network proxy. You'll be taken to the next screen.
 
@@ -151,7 +151,7 @@ You can skip connecting to a network by selecting **Skip this step**. You'll be 
 >[!NOTE]
 >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
- 
+ 
 
 ## <a href="" id="set-up-for-you"></a>Set up for you page
 
@@ -185,12 +185,12 @@ On this page, the Surface Hub will ask for credentials for the device account th
 
 Use either a **user principal name (UPN)** or a **domain\\user name** as the account identifier in the first entry field. Use the format that matches your environment, and enter the password.
 
-| Environment  | Required format for device account|
-| ------------ | ----------------------------------|
-| Device account is hosted only online.  | username@domain.com|
-| Device account is hosted only on-prem.  | DOMAIN\username|
-| Device account is hosted online and on-prem (hybrid).  |  DOMAIN\username|
 
+|                      Environment                      | Required format for device account |
+|-------------------------------------------------------|------------------------------------|
+|         Device account is hosted only online.         |        username@domain.com         |
+|        Device account is hosted only on-prem.         |          DOMAIN\username           |
+| Device account is hosted online and on-prem (hybrid). |          DOMAIN\username           |
 
 Click **Skip setting up a device account** to skip setting up a device account. However, if you don't set up a device account, the device will not be fully integrated into your infrastructure. For example, people won't be able to:
 
@@ -319,7 +319,7 @@ Because every Surface Hub can be used by any number of authenticated employees, 
 >[!NOTE]
 >The purpose of this page is primarily to determine who can configure the device from the device’s UI; that is, who can actually visit a device, log in, open up the Settings app, and make changes to the Settings.
 
- 
+ 
 
 ![Image showing Set up admins for this device page.](images/setupsetupadmins.png)
 
@@ -357,7 +357,7 @@ This is what happens when you choose an option.
 >[!NOTE]
 >After you finish this process, you won't be able to change the device's admin option unless you reset the device.
 
- 
+ 
 
 ### <a href="" id="use-microsoft-azure"></a>Use Microsoft Azure Active Directory
 
@@ -416,7 +416,7 @@ If the join is successful, you'll see the **Enter a security group** page. When 
 >[!NOTE]
 >If you domain join the Surface Hub, you can't unjoin the device without resetting it.
 
- 
+ 
 
 ### Use a local admin
 
@@ -442,7 +442,7 @@ This page will attempt to create a new admin account using the credentials that 
 >[!IMPORTANT]
 >Before you do the updates, make sure you read [Save your BitLocker key](save-bitlocker-key-surface-hub.md) in order to make sure you have a backup of the key.
 
- 
+ 
 
 In order to get the latest features and fixes, you should update your Surface Hub as soon as you finish all of the preceding first-run steps.
 
@@ -451,9 +451,9 @@ In order to get the latest features and fixes, you should update your Surface Hu
 3.  If updates are available, they will be downloaded. Once downloading is complete, click the **Update now** button to install the updates.
 4.  Follow the onscreen prompts after the updates are installed. You may need to restart the device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ The MED-V software contained in the MED-V host that provides a channel to commun
 **Note**  
 After MED-V and its required components are installed MED-V must be configured. The configuration of MED-V is referred to as first time setup.
 
- 
+ 
 
 <a href="" id="esd-system"></a>**ESD System**  
 Your existing software distribution method that lets you deploy and install the MED-V workspace package files that MED-V creates.
@@ -59,7 +59,7 @@ The MED-V software contained in the MED-V guest that provides a channel to commu
 **Note**  
 The MED-V Guest Agent is installed automatically during first time setup.
 
- 
+ 
 
 <a href="" id="esd-client"></a>**ESD Client**  
 An optional part of your ESD system that installs software packages and reports status to the ESD system.
@@ -71,9 +71,9 @@ An optional part of your ESD system that installs software packages and reports 
 
 [Prepare the Deployment Environment for MED-V](prepare-the-deployment-environment-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

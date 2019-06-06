@@ -22,7 +22,7 @@ Use the **Streaming** page to optimize the virtual application package. During t
 **Note**  
 You only have to perform the following tasks if you plan to stream the package across the network.
 
- 
+ 
 
 This page contains the following elements:
 
@@ -37,9 +37,9 @@ Runs all the programs saved in the virtual application package.
 
 [Create New Package Wizard (AppV 4.6 SP1)](create-new-package-wizard---appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

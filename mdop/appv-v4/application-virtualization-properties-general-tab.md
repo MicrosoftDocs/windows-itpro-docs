@@ -40,7 +40,7 @@ Select the level from the drop-down list. The default level is **Warning**.
 **Note**  
 The **System Log Level** setting controls the level of messages sent to the system event log. The logged messages are identical to the messages that get logged to the client event log, but they are stored in a different location that does not have the space limitations of the client event log. Because the system event log does not have space limitations, it is ideally suited for situations where verbose logging is necessary.
 
- 
+ 
 
 <a href="" id="global-data-directory"></a>**Global Data Directory**  
 Enter or browse to the location of the directory of the log file. The default locations are as follows:
@@ -57,9 +57,9 @@ Enter or browse to the location of the directory where user-specific data is sto
 
 [Client Management Console: Application Virtualization Properties](client-management-console-application-virtualization-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

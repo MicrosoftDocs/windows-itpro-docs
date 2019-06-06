@@ -24,7 +24,7 @@ The following diagram shows the Messaging configuration service provider in tree
 <p style="margin-left: 20px">Root node for the Messaging configuration service provider.</p>
 
 <a href="" id="auditinglevel"></a>**AuditingLevel**  
-<p style="margin-left: 20px">Turns on the "Text" auditing feature.</p>
+<p style="margin-left: 20px">Turns on the &quot;Text&quot; auditing feature.</p>
 <p style="margin-left: 20px">The following list shows the supported values:</p>
 <ul>
 <li>0 (Default) - Off</li>

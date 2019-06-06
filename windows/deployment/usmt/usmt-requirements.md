@@ -82,7 +82,7 @@ The following table lists the operating systems supported in USMT.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
@@ -151,9 +151,9 @@ This documentation assumes that IT professionals using USMT understand command-l
 [Estimate Migration Store Size](usmt-estimate-migration-store-size.md)<BR>
 [User State Migration Tool (USMT) Overview Topics](usmt-topics.md)<BR>
 
- 
+ 
 
- 
+ 
 
 
 

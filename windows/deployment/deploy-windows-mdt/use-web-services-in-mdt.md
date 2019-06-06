@@ -92,28 +92,28 @@ Figure 20. The result from the MDT Sample web service.
 
 After verifying the web service using Internet Explorer, you are ready to do the same test in the MDT simulation environment.
 
-1.  On PC0001, edit the CustomSettings.ini file in the **C:\\MDT** folder to look like the following:
-    ``` syntax
-    [Settings]
-    Priority=Default, GetComputerName
-    [Default]
-    OSInstall=YES
-    [GetComputerName]
-    WebService=http://mdt01/MDTSample/mdtsample.asmx/GetComputerName
-    Parameters=Model,SerialNumber
-    OSDComputerName=string
-    ```
-    ![figure 21](../images/mdt-09-fig21.png)
+1. On PC0001, edit the CustomSettings.ini file in the **C:\\MDT** folder to look like the following:
+   ``` syntax
+   [Settings]
+   Priority=Default, GetComputerName
+   [Default]
+   OSInstall=YES
+   [GetComputerName]
+   WebService=http://mdt01/MDTSample/mdtsample.asmx/GetComputerName
+   Parameters=Model,SerialNumber
+   OSDComputerName=string
+   ```
+   ![figure 21](../images/mdt-09-fig21.png)
 
-    Figure 21. The updated CustomSettings.ini file.
+   Figure 21. The updated CustomSettings.ini file.
 
-2.  Save the CustomSettings.ini file.
-3.  Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
-    ``` syntax
-    Set-Location C:\MDT
-    .\Gather.ps1
-    ```
-4.  Review the ZTIGather.log in the **C:\\MININT\\SMSOSD\\OSDLOGS** folder.
+2. Save the CustomSettings.ini file.
+3. Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
+   ``` syntax
+   Set-Location C:\MDT
+   .\Gather.ps1
+   ```
+4. Review the ZTIGather.log in the **C:\\MININT\\SMSOSD\\OSDLOGS** folder.
 
 ![figure 22](../images/mdt-09-fig22.png)
 
@@ -134,4 +134,4 @@ Figure 22. The OSDCOMPUTERNAME value obtained from the web service.
 [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
 
 [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
- 
+ 

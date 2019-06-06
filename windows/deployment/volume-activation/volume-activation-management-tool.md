@@ -40,4 +40,4 @@ VAMT is only available in an EN-US (x86) package.
 |[Manage VAMT Data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
 |[VAMT Step-by-Step Scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
 |[VAMT Known Issues](vamt-known-issues.md) |Lists known issues in VAMT. |
- 
+ 

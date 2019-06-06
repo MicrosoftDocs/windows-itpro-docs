@@ -33,28 +33,28 @@ The following checklist provides a high-level list of items to consider and outl
 <tbody>
 <tr class="odd">
 <td align="left"><p>Determine how you can use MED-V to help solve your application compatibility issues.</p></td>
-<td align="left"><p>[Planning for Application Operating System Compatibility](planning-for-application-operating-system-compatibility.md)</p></td>
+<td align="left"><p><a href="planning-for-application-operating-system-compatibility.md" data-raw-source="[Planning for Application Operating System Compatibility](planning-for-application-operating-system-compatibility.md)">Planning for Application Operating System Compatibility</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Plan an end-to-end deployment scenario for your organization.</p></td>
-<td align="left"><p>[End-to-End Planning Scenario for MED-V 2.0](end-to-end-planning-scenario-for-med-v-20.md)</p></td>
+<td align="left"><p><a href="end-to-end-planning-scenario-for-med-v-20.md" data-raw-source="[End-to-End Planning Scenario for MED-V 2.0](end-to-end-planning-scenario-for-med-v-20.md)">End-to-End Planning Scenario for MED-V 2.0</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Define the project scope by defining the end users and determining the MED-V images to be managed.</p></td>
-<td align="left"><p>[Define and Plan your MED-V Deployment](define-and-plan-your-med-v-deployment.md)</p></td>
+<td align="left"><p><a href="define-and-plan-your-med-v-deployment.md" data-raw-source="[Define and Plan your MED-V Deployment](define-and-plan-your-med-v-deployment.md)">Define and Plan your MED-V Deployment</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Review the list of best practices for ensuring that your MED-V deployment is more secure.</p></td>
-<td align="left"><p>[Security and Protection for MED-V](security-and-protection-for-med-v.md)</p></td>
+<td align="left"><p><a href="security-and-protection-for-med-v.md" data-raw-source="[Security and Protection for MED-V](security-and-protection-for-med-v.md)">Security and Protection for MED-V</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 
