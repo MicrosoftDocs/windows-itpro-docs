@@ -248,7 +248,7 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they’re available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it.
+>WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
 
 **To configure an Automatic Approval rule for Windows 10 feature updates and approve them for the Ring 3 Broad IT deployment ring**
 
