@@ -4,7 +4,7 @@ description: The following topic shows the OMA DM device description framework (
 ms.assetid: C6427C52-76F9-4EE0-98F9-DE278529D459
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

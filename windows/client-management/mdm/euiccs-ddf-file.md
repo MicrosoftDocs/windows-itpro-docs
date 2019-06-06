@@ -4,7 +4,7 @@ description: eUICCs DDF file
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -4,7 +4,7 @@ description: HealthAttestation DDF
 ms.assetid: D20AC78D-D2D4-434B-B9FD-294BCD9D1DDE
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

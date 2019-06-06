@@ -4,7 +4,7 @@ description: The DeveloperSetup configuration service provider (CSP) is used to 
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

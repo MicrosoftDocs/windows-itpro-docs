@@ -4,7 +4,7 @@ description: DevDetail DDF file
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

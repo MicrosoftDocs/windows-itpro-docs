@@ -14,7 +14,7 @@ api_location:
 - dmprocessxmlfiltered.dll
 api_type:
 - DllExport
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

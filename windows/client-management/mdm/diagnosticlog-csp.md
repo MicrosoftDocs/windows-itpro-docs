@@ -4,7 +4,7 @@ description: DiagnosticLog CSP
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

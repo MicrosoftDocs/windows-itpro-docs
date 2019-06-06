@@ -4,7 +4,7 @@ description: Mobile device enrollment is the first phase of enterprise managemen
 ms.assetid: 08C8B3DB-3263-414B-A368-F47B94F47A11
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

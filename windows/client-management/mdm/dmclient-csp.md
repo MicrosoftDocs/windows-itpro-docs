@@ -4,7 +4,7 @@ description: The DMClient configuration service provider is used to specify addi
 ms.assetid: a5cf35d9-ced0-4087-a247-225f102f2544
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

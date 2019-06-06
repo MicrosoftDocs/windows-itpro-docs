@@ -4,7 +4,7 @@ description: SecureAssessment CSP
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

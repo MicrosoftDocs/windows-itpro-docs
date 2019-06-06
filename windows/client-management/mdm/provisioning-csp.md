@@ -4,7 +4,7 @@ description: The Provisioning configuration service provider is used for bulk us
 ms.assetid: 5D6C17BE-727A-4AFA-9F30-B34C1EA1D2AE
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

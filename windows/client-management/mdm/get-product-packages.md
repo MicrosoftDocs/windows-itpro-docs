@@ -4,7 +4,7 @@ description: The Get product packages operation retrieves the information about 
 ms.assetid: 039468BF-B9EE-4E1C-810C-9ACDD55C0835
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

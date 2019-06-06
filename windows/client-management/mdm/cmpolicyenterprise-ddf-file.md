@@ -4,7 +4,7 @@ description: CMPolicyEnterprise DDF file
 ms.assetid: 065EF07A-0CF3-4EE5-B620-3464A75B7EED
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

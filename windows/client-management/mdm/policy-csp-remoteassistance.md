@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - RemoteAssistance
 description: Policy CSP - RemoteAssistance
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

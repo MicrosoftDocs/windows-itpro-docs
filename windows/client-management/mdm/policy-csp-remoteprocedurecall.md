@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - RemoteProcedureCall
 description: Policy CSP - RemoteProcedureCall
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

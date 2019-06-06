@@ -4,7 +4,7 @@ description: SharedPC CSP
 ms.assetid: 31273166-1A1E-4F96-B176-CB42ECB80957
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

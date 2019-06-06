@@ -4,7 +4,7 @@ description: ClientCertificateInstall DDF file
 ms.assetid: 7F65D045-A750-4CDE-A1CE-7D152AA060CA
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

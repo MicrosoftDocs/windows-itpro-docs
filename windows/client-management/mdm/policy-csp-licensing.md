@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Licensing
 description: Policy CSP - Licensing
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

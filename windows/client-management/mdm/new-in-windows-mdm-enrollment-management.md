@@ -7,7 +7,7 @@ MS-HAID:
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

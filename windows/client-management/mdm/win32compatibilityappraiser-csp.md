@@ -1,7 +1,7 @@
 ---
 title: Win32CompatibilityAppraiser  CSP
 description: 
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

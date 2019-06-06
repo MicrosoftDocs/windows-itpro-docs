@@ -4,7 +4,7 @@ description: ICSPNode GetValue
 ms.assetid: c684036d-98be-4659-8ce8-f72436a39b90
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

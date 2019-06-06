@@ -4,7 +4,7 @@ description: NodeCache CSP
 ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - CredentialsUI
 description: Policy CSP - CredentialsUI
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

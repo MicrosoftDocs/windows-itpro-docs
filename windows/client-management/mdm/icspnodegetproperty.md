@@ -4,7 +4,7 @@ description: ICSPNode GetProperty
 ms.assetid: a2bdc158-72e0-4cdb-97ce-f5cf1a44b7db
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

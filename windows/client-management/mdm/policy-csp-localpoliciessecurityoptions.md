@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - LocalPoliciesSecurityOptions
 description: Policy CSP - LocalPoliciesSecurityOptions
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

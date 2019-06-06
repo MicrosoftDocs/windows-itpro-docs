@@ -4,7 +4,7 @@ description: VPN DDF file
 ms.assetid: 728FCD9C-0B8E-413B-B54A-CD72C9F2B9EE
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

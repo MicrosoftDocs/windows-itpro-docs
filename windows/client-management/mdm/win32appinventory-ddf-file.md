@@ -4,7 +4,7 @@ description: Win32AppInventory DDF file
 ms.assetid: F6BCC10B-BFE4-40AB-AEEE-34679A4E15B0
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

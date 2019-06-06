@@ -1,7 +1,7 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
 description: Enroll a Windows 10 device automatically using Group Policy
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

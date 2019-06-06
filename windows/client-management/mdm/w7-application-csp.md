@@ -4,7 +4,7 @@ description: w7 APPLICATION CSP
 ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
