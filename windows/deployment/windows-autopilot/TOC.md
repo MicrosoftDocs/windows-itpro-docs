@@ -7,7 +7,6 @@
 ## [Scenarios and capabilities](windows-autopilot-scenarios.md)
 ## [Get started](demonstrate-deployment-on-vm.md)
 
-
 # Deployment scenarios
 ## [User-driven mode](user-driven.md)
 ## [Self-deploying mode](self-deploying.md)
@@ -27,3 +26,4 @@
 ## [FAQ](autopilot-faq.md)
 ## [Contacts](autopilot-support.md)
 ## [Registration authorization](registration-auth.md)
+## [Device guidelines](autopilot-device-guidelines.md)
