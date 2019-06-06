@@ -77,7 +77,7 @@ If you discover a problem while deploying a feature or quality update, the IT ad
 
 If you pause a feature update, quality updates are still offered to devices to ensure they stay secure. The pause period for both feature and quality updates is calculated from a start date that you set.
 
-To pause feature updates use the **Select when Preview Builds and Feature Updates are Received** policy and to pause quality updates use the **Select when Quality Updates are Received** policy. For more information, see [Pause feature updates](waas-configure-wufb#pause-feature-updates.md) and [Pause quality updates](waas-configure-wufb#pause-quality-updates.md).
+To pause feature updates use the **Select when Preview Builds and Feature Updates are Received** policy and to pause quality updates use the **Select when Quality Updates are Received** policy. For more information, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
 
 ### Select branch readiness level for feature updates
 
