@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.date: 08/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: How to Set Up Publishing Refresh on Login
 description: How to Set Up Publishing Refresh on Login
-author: jamiejdt
+author: eavena
 ms.assetid: 196448db-7645-4fd5-a854-ef6405b15db4
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

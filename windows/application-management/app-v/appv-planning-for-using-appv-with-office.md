@@ -1,12 +1,15 @@
 ---
 title: Planning for Deploying App-V with Office (Windows 10)
 description: Planning for Using App-V with Office
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Planning for deploying App-V with Office

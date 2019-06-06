@@ -2,11 +2,13 @@
 title: Top support solutions for Microsoft Surface Hub
 description: Find top solutions for common issues using Surface Hub.
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
+ms.reviewer: 
+manager: dansimp
 keywords: Troubleshoot common problems, setup issues
 ms.prod: surface-hub
 ms.sitesec: library
-author: kaushika-msft
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 10/24/2017
 ms.localizationpriority: medium

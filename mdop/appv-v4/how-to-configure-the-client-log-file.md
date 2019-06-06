@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client Log File
 description: How to Configure the Client Log File
-author: jamiejdt
+author: dansimp
 ms.assetid: dd79f8ce-61e2-4dc8-af03-2a353554a1b2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

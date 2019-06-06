@@ -1,13 +1,15 @@
 ---
 title: Frequently asked questions and troubleshooting Windows Analytics
+ms.reviewer: 
+manager: dansimp
 description: Frequently asked questions about Windows Analytics and steps to take when things go wrong
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -84,11 +86,13 @@ If you have devices that appear in other solutions, but not Device Health (the D
 1. Using the Azure portal, remove the Device Health (appears as DeviceHealthProd on some pages) solution from your Log Analytics workspace. After completing this, add the Device Health solution to you workspace again.
 2. Confirm that the devices are running Windows 10.
 3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
-4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+4. Confirm that devices are opted in to send diagnostic data by checking in the registry that **AllowTelemetry** is set to either 2 (Enhanced) or 3 (Full). 
+    - **AllowTelemetry** under **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is the location set by Group Policy or MDM
+    - **AllowTelemetry** under **HKLM\Software\Policies\Microsoft\Windows\DataCollection** is the location set by local tools such as the Settings app.
+    - By convention the Group Policy location would take precedence if both are set. Starting with Windows 10, version 1803, the default precedence is modified to enable a device user to lower the diagnostic data level from that set by IT. For organizations which have no requirement to allow the user to override IT, the conventional (IT wins) behavior can be re-enabled using **DisableTelemetryOptInSettingsUx**. This policy can be set via Group Policy as  **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in setting user interface**.
 5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-6. Add the Device Health solution back to your Log Analytics workspace.
-7. Wait 48 hours for activity to appear in the reports.
-8. If you need additional troubleshooting, contact Microsoft Support.
+6. Wait 48 hours for activity to appear in the reports.
+7. If you need additional troubleshooting, contact Microsoft Support.
 
 
 ### Device crashes not appearing in Device Health Device Reliability

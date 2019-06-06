@@ -1,4 +1,4 @@
-﻿---
+---
 title: Considerations when using Windows Defender Credential Guard (Windows 10)
 description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows 10.
 ms.prod: w10
@@ -7,12 +7,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/31/2017
+ms.reviewer: 
 ---
 
 # Considerations when using Windows Defender Credential Guard

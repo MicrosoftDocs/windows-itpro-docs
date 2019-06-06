@@ -1,12 +1,14 @@
 ---
 title: Deploy updates using Windows Update for Business (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Windows Update for Business lets you manage when devices received updates from Windows Update.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.topic: article
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: How to Configure Web Settings for a MED-V Workspace
 description: How to Configure Web Settings for a MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: 9a6cd28f-7e4f-468f-830a-7b1d9abd3af3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

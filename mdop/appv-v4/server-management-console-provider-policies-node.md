@@ -1,8 +1,11 @@
 ---
 title: Server Management Console Provider Policies Node
 description: Server Management Console Provider Policies Node
-author: jamiejdt
+author: eavena
 ms.assetid: a5b99158-9af8-45bb-b3b8-61e220529e14
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

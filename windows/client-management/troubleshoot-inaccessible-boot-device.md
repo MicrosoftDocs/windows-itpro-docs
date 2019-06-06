@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 12/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device

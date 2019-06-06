@@ -4,9 +4,11 @@ description: Policy CSP - Browser
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
-ms.author: pashort
+author: dansimp
+ms.author: dansimp
 ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Browser
@@ -3282,7 +3284,7 @@ Supported values:
 
 - Blank (default) - Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.
 
-- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper and Office Online extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe;Microsoft.OfficeOnline8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
 
 <!--/SupportedValues-->
 <!--Example-->

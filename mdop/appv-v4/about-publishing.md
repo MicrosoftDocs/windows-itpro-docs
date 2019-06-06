@@ -1,8 +1,11 @@
 ---
 title: About Publishing
 description: About Publishing
-author: jamiejdt
+author: dansimp
 ms.assetid: 295074d7-123f-4740-b938-e4a371ee72fd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -2,11 +2,13 @@
 title: Provisioning CSP
 description: The Provisioning configuration service provider is used for bulk user enrollment to an MDM service.
 ms.assetid: 5D6C17BE-727A-4AFA-9F30-B34C1EA1D2AE
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

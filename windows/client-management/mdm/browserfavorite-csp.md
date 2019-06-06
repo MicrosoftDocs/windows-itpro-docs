@@ -2,11 +2,13 @@
 title: BrowserFavorite CSP
 description: BrowserFavorite CSP
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 

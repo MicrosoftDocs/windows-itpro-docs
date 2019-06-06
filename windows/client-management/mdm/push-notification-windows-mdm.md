@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.push\_notification\_support\_for\_device\_management'
 - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
 ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 09/22/2017
 ---
 

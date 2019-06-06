@@ -2,12 +2,14 @@
 title: Deploy AppLocker policies by using the enforce rules setting (Windows 10)
 description: This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 ms.assetid: fd3a3d25-ff3b-4060-8390-6262a90749ba
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -2,11 +2,13 @@
 title: Configuration service provider reference
 description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
 ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 05/13/2019
 ---
 
@@ -941,7 +943,7 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>

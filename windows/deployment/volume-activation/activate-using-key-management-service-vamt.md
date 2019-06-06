@@ -1,13 +1,16 @@
 ---
 title: Activate using Key Management Service (Windows 10)
 ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: 
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article

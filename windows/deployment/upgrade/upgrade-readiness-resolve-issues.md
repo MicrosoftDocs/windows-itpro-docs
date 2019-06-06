@@ -1,10 +1,12 @@
-﻿---
+---
 title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.prod: w10
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
@@ -19,7 +21,7 @@ This section of the Upgrade Readiness workflow reports application and driver in
 The blades in the **Step 2: Resolve issues** section are:
 
 - [Review applications with known issues](#review-applications-with-known-issues)
-- [Review known driver issues](#review-known-driver-issues)
+- [Review known driver issues](#review-drivers-with-known-issues)
 - [Review low-risk apps and drivers](#review-low-risk-apps-and-drivers)
 - [Prioritize app and driver testing](#prioritize-app-and-driver-testing)
 

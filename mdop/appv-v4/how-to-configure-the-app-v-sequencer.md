@@ -1,8 +1,11 @@
 ---
 title: How to Configure the App-V Sequencer
 description: How to Configure the App-V Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: 0f43f618-80b0-4715-af17-90f5c673d838
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

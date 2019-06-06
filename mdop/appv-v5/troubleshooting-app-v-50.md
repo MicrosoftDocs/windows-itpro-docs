@@ -1,8 +1,11 @@
 ---
 title: Troubleshooting App-V 5.0
 description: Troubleshooting App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a713b345-25b7-4cdf-ba55-66df672a1f3a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

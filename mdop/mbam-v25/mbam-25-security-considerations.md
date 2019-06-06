@@ -1,8 +1,11 @@
 ---
 title: MBAM 2.5 Security Considerations
 description: MBAM 2.5 Security Considerations
-author: jamiejdt
+author: dansimp
 ms.assetid: f6613c63-b32b-45fb-a6e8-673d6dae7d16
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -1,12 +1,14 @@
 ---
 title: Firewall DDF file
 description: Firewall DDF file
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 12/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Firewall CSP

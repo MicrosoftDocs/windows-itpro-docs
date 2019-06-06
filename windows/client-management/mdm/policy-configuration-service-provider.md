@@ -2,11 +2,13 @@
 title: Policy CSP
 description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 05/01/2019
 ---
 
@@ -3000,6 +3002,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ServiceControlManager policies
+<dl>
+  <dd>
+    <a href="./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" id="servicecontrolmanager-svchostprocessmitigation">ServiceControlManager/SvchostProcessMitigation</a>
+  </dd>
+</dl>
+
 ### Settings policies
 
 <dl>
@@ -3373,6 +3382,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-allowset24hourclock" id="timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a>
+  </dd>
+</dl>
+
+### Troubleshooting policies
+
+<dl>
+   <dd>
+    <a href="./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
   </dd>
 </dl>
 
@@ -4219,6 +4236,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses)
 -   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4963,6 +4981,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Search/PreventIndexingLowDiskSpaceMB](./policy-csp-search.md#search-preventindexinglowdiskspacemb)
 -   [Search/PreventRemoteQueries](./policy-csp-search.md#search-preventremotequeries)
 -   [Security/ClearTPMIfNotReady](./policy-csp-security.md#security-cleartpmifnotready)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Settings/AllowOnlineTips](./policy-csp-settings.md#settings-allowonlinetips)
 -   [Settings/ConfigureTaskbarCalendar](./policy-csp-settings.md#settings-configuretaskbarcalendar)
 -   [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist)
@@ -5002,6 +5021,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode)
 -   [TextInput/AllowLanguageFeaturesUninstall](./policy-csp-textinput.md#textinput-allowlanguagefeaturesuninstall)
 -   [TextInput/AllowLinguisticDataCollection](./policy-csp-textinput.md#textinput-allowlinguisticdatacollection)
+-   [Troubleshooting/AllowRecommendations](./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)
 -   [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
 -   [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
 -   [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)

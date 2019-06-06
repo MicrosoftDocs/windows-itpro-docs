@@ -1,8 +1,11 @@
 ---
 title: MED-V 1.0 Installation Checklist
 description: MED-V 1.0 Installation Checklist
-author: jamiejdt
+author: dansimp
 ms.assetid: a81fd5b0-29b3-4ddc-8f60-7d44c2be9794
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

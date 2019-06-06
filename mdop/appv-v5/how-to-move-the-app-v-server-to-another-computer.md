@@ -1,8 +1,11 @@
 ---
 title: How to Move the App-V Server to Another Computer
 description: How to Move the App-V Server to Another Computer
-author: jamiejdt
+author: dansimp
 ms.assetid: 4fda21be-4d6b-499c-a38a-5afd57b34a47
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

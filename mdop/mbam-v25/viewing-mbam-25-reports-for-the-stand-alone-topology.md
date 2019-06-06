@@ -1,8 +1,11 @@
 ---
 title: Viewing MBAM 2.5 Reports for the Stand-alone Topology
 description: Viewing MBAM 2.5 Reports for the Stand-alone Topology
-author: jamiejdt
+author: dansimp
 ms.assetid: 50e93c3a-baf1-4378-8fc0-74dd65d76306
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

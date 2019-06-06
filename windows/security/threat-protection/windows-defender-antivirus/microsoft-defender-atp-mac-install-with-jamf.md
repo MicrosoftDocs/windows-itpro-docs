@@ -1,5 +1,6 @@
 ---
 title: Installing Microsoft Defender ATP for Mac with JAMF
+ms.reviewer: 
 description: Describes how to install Microsoft Defender ATP for Mac, using JAMF.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
-author: martyav
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -41,7 +42,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
 
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
@@ -70,7 +71,7 @@ The configuration profile contains a custom settings payload that includes:
 - Microsoft Defender ATP for Mac onboarding information
 - Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
 
-To set the onboarding information, upload a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_.
+To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
   > You must set the the Preference Domain as "com.microsoft.wdav.atp"
@@ -104,8 +105,8 @@ Use the **Logs** tab to monitor deployment status for each enrolled device.
 
     ![Computer management packages screenshot](images/MDATP_19_MicrosoftDefenderWDAVPKG.png)
 
-2. Upload wdav.pkg to the Distribution Point.
-3. In the **filename** field, enter the name of the package. For example, wdav.pkg.
+2. Upload the package to the Distribution Point.
+3. In the **filename** field, enter the name of the package. For example, _wdav.pkg_.
 
 ### Policy
 
@@ -133,7 +134,7 @@ After a moment, the device's User Approved MDM status will change to **Yes**.
 
 ![MDM status screenshot](images/MDATP_23_MDMStatus.png)
 
-You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
+You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 
@@ -150,11 +151,11 @@ You can monitor deployment status in the **Logs** tab:
 
 ### Status on client device
 
-After the Configuration Profile is deployed, you'll see the profile on the device in  **System Preferences > Profiles >**, under the name of the configuration profile.
+After the Configuration Profile is deployed, you'll see the profile for the device in  **System Preferences** > **Profiles >**.
 
 ![Status on client screenshot](images/MDATP_25_StatusOnClient.png)
 
-After the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
+Once the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
 
 ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
@@ -204,4 +205,33 @@ See [Logging installation issues](microsoft-defender-atp-mac-resources.md#loggin
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+This method is based on the script described in [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling).
+
+### Script
+
+Create a script in **Settings > Computer Management > Scripts**.
+
+This script removes Microsoft Defender ATP from the /Applications directory:
+
+```bash
+   echo "Is WDAV installed?"
+   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
+
+   echo "Uninstalling WDAV..."
+   rm -rf '/Applications/Microsoft Defender ATP.app'
+
+   echo "Is WDAV still installed?"
+   ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
+
+   echo "Done!"
+```
+
+![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
+
+### Policy
+
+Your policy should contain a single script:
+
+![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
+
+Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.

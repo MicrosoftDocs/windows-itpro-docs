@@ -2,12 +2,14 @@
 title: Microsoft network server Amount of idle time required before suspending session (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Microsoft network server Amount of idle time required before suspending session security policy setting.
 ms.assetid: 8227842a-569d-480f-b43c-43450bbaa722
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

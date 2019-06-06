@@ -1,8 +1,11 @@
 ---
 title: Preparing your Environment for MBAM 1.0
 description: Preparing your Environment for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 915f7c3c-70ad-4a90-a434-73e7fba97ecb
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

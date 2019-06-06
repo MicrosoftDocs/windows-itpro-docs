@@ -2,11 +2,13 @@
 title: Structure of OMA DM provisioning files
 description: Structure of OMA DM provisioning files
 ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

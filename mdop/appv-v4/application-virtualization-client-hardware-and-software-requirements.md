@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Client Hardware and Software Requirements
 description: Application Virtualization Client Hardware and Software Requirements
-author: jamiejdt
+author: dansimp
 ms.assetid: 8b877a2c-5721-4b22-a47f-e2838d58ab12
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

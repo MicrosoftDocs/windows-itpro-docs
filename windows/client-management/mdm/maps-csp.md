@@ -2,11 +2,13 @@
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

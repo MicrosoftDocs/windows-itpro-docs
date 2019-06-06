@@ -1,8 +1,11 @@
 ---
 title: About MED-V 2.0
 description: About MED-V 2.0
-author: jamiejdt
+author: dansimp
 ms.assetid: 7ec53f2c-db6e-4a6b-a069-99d0c25cd101
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

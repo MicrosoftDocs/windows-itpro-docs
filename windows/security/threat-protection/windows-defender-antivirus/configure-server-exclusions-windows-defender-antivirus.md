@@ -1,5 +1,7 @@
 ---
 title: Configure Windows Defender Antivirus exclusions on Windows Server 2016
+ms.reviewer: 
+manager: dansimp
 description: Windows Server 2016 includes automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Windows Defender Antivirus
 search.product: eADQiWindows 10XVcnh
@@ -9,8 +11,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ---
 
 # Configure Windows Defender Antivirus exclusions on Windows Server

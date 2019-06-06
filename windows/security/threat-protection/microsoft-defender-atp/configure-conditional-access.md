@@ -1,5 +1,5 @@
 ---
-title: Configure conditional access in Microsoft Defender ATP
+title: Configure Conditional Access in Microsoft Defender ATP
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 09/03/2018
 ---
 
-# Configure conditional access in Microsoft Defender ATP
+# Configure Conditional Access in Microsoft Defender ATP
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This section guides you through all the steps you need to take to properly implement conditional access.
+This section guides you through all the steps you need to take to properly implement Conditional Access.
 
 ### Before you begin
 >[!WARNING] 
@@ -43,12 +43,12 @@ There are steps you'll need to take in Microsoft Defender Security Center, the I
 > [!NOTE] 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
-Take the following steps to enable conditional access:
+Take the following steps to enable Conditional Access:
 - Step 1: Turn on the Microsoft Intune connection from Microsoft Defender Security Center
 - Step 2: Turn on the Microsoft Defender ATP integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 
-- Step 5: Create an Azure AD conditional access policy
+- Step 5: Create an Azure AD Conditional Access policy
 
 
 ### Step 1: Turn on the Microsoft Intune connection
@@ -85,17 +85,17 @@ Take the following steps to enable conditional access:
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
-### Step 5: Create an Azure AD conditional access policy
-1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** > **Conditional access** > **New policy**.
+### Step 5: Create an Azure AD Conditional Access policy
+1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** > **Conditional Access** > **New policy**.
 2. Enter a policy **Name**, and select **Users and groups**. Use the Include or Exclude options to add your groups for the policy, and select **Done**.
 3. Select **Cloud apps**, and choose which apps to protect. For example, choose **Select apps**, and select **Office 365 SharePoint Online** and **Office 365 Exchange Online**. Select **Done** to save your changes.
 
 4. Select **Conditions** > **Client apps** to apply the policy to apps and browsers. For example, select **Yes**, and then enable **Browser** and **Mobile apps and desktop clients**. Select **Done** to save your changes.
 
-5. Select **Grant** to apply conditional access based on device compliance. For example, select **Grant access** > **Require device to be marked as compliant**. Choose **Select** to save your changes.
+5. Select **Grant** to apply Conditional Access based on device compliance. For example, select **Grant access** > **Require device to be marked as compliant**. Choose **Select** to save your changes.
 
 6. Select **Enable policy**, and then **Create** to save your changes.
 
-For more information, see [Enable Microsoft Defender ATP with conditional access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+For more information, see [Enable Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

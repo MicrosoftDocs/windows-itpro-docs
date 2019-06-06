@@ -1,8 +1,11 @@
 ---
 title: How to Configure a Domain User or Group
 description: How to Configure a Domain User or Group
-author: jamiejdt
+author: dansimp
 ms.assetid: 055aba81-a9c9-4b98-969d-775e603becf3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

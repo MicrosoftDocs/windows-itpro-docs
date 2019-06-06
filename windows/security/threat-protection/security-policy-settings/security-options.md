@@ -2,12 +2,15 @@
 title: Security Options (Windows 10)
 description: Provides an introduction to the settings under Security Options of the local security policies and links to information about each setting.
 ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 ms.date: 06/28/2018
 ---
 

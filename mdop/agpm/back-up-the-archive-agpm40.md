@@ -1,8 +1,11 @@
 ---
 title: Back Up the Archive
 description: Back Up the Archive
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 538d85eb-3596-4c1d-bbd7-26bc28857c28
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -2,11 +2,13 @@
 title: Reboot CSP
 description: Reboot CSP
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: What's new in Windows 10 deployment
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Changes and new features related to Windows 10 deployment
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
@@ -7,7 +10,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ---
 
@@ -26,9 +29,9 @@ This topic provides an overview of new solutions and online content related to d
 ## Recent additions to this page
 
 [SetupDiag](#setupdiag) 1.4.1 is released.<br>
-[MDT](#microsoft-deployment-toolkit-mdt) 8456 is released.<br>
+The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) is available.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
-The [Microsoft 365](#microsoft-365) section was added.
+[Windows 10 Subscription Activation](#windows-10-subscription-activation) now supports Windows 10 Education.
 
 ## The Modern Desktop Deployment Center
 
@@ -45,7 +48,16 @@ See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, whic
 
 ## Windows 10 servicing and support
 
-Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
+- [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
+- **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
+- **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
+- **Improved update notifications**: When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
+- **Intelligent active hours**: To further enhance active hours, users will now have the option to let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
+- **Improved update orchestration to improve system responsiveness**: This feature will improve system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
+
+Microsoft previously announced that we are [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
 
 ![Support lifecycle](images/support-cycle.png)
 
@@ -62,11 +74,21 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 
 ### Windows Autopilot
 
-Windows Autopilot streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices.
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices. 
 
-Windows Autopilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md).
+The following Windows Autopilot features are available in Windows 10, version 1903 and later:
 
-Recent Autopilot content includes new instructions for CSPs and OEMs on how to [obtain and use customer authorization](windows-autopilot/registration-auth.md) to register Windows Autopilot devices on the customer’s behalf. 
+- [Windows Autopilot for white glove deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) is new in Windows 10, version 1903. "White glove" deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
+- The Intune [enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
+- [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
+- Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
+- Windows Autopilot will set the [diagnostics data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE. 
+
+### Windows 10 Subscription Activation
+
+Windows 10 Education support has been added to Windows 10 Subscription Activation.
+
+With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation).
 
 ### SetupDiag
 

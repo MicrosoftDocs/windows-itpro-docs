@@ -2,12 +2,14 @@
 title: Create a basic audit policy for an event category (Windows 10)
 description: By defining auditing settings for specific event categories, you can create an auditing policy that suits the security needs of your organization.
 ms.assetid: C9F52751-B40D-482E-BE9D-2C61098249D3
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: justinha
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

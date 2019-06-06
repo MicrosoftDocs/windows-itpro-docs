@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Technical Publications
 description: Application Virtualization Technical Publications
-author: jamiejdt
+author: dansimp
 ms.assetid: 86606647-3b9b-4459-9638-64626051ac94
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

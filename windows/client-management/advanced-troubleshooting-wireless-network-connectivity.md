@@ -1,13 +1,15 @@
 ---
 title: Advanced Troubleshooting Wireless Network Connectivity
+ms.reviewer: 
+manager: dansimp
 description: Learn how troubleshooting of establishing Wi-Fi connections
 keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: msfttracyp
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.author: tracyp
 ms.topic: troubleshooting
 ---
 

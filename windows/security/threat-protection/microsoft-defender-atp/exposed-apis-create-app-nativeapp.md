@@ -1,5 +1,6 @@
 ---
 title: Use Microsoft Defender Advanced Threat Protection APIs  
+ms.reviewer: 
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp

@@ -1,8 +1,11 @@
 ---
 title: Upgrading from Previous Versions of MBAM
 description: Upgrading from Previous Versions of MBAM
-author: jamiejdt
+author: dansimp
 ms.assetid: 73b425cf-9cd9-4ebc-a35e-1b3bf18596ce
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

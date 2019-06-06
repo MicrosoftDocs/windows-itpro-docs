@@ -1,8 +1,11 @@
 ---
 title: DaRT 10 Deployment Checklist
 description: DaRT 10 Deployment Checklist
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a6b7ba27-a969-4da9-bef0-d019739413cc
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

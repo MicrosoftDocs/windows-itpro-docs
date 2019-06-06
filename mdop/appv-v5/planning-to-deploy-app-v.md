@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy App-V
 description: Planning to Deploy App-V
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 28d3035c-3805-4339-90fc-6c3fd3b1123e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

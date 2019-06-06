@@ -2,11 +2,13 @@
 title: NAPDEF CSP
 description: NAPDEF CSP
 ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 06/26/2017
 ---
 

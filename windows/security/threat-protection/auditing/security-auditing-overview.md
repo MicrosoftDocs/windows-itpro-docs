@@ -2,12 +2,14 @@
 title: Security auditing (Windows 10)
 description: Topics in this section are for IT professionals and describes the security auditing features in Windows and how your organization can benefit from using these technologies to enhance the security and manageability of your network.
 ms.assetid: 2d9b8142-49bd-4a33-b246-3f0c2a5f32d4
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

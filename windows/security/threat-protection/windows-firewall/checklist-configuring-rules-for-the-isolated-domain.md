@@ -2,12 +2,14 @@
 title: Checklist Configuring Rules for the Isolated Domain (Windows 10)
 description: Checklist Configuring Rules for the Isolated Domain
 ms.assetid: bfd2d29e-4011-40ec-a52e-a67d4af9748e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

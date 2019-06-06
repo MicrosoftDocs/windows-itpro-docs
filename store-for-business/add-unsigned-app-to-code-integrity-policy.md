@@ -2,6 +2,8 @@
 title: Add unsigned app to code integrity policy (Windows 10)
 description: When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device.
 ms.assetid: 580E18B1-2FFD-4EE4-8CC5-6F375BE224EA
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

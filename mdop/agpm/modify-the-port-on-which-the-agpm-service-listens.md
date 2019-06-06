@@ -1,8 +1,11 @@
 ---
 title: Modify the Port on Which the AGPM Service Listens
 description: Modify the Port on Which the AGPM Service Listens
-author: jamiejdt
+author: mjcaparas
 ms.assetid: a82c6873-e916-4a04-b263-aa612cd6956b
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

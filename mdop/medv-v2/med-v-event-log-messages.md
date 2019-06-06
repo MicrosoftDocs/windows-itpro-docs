@@ -1,8 +1,11 @@
 ---
 title: MED-V Event Log Messages
 description: MED-V Event Log Messages
-author: jamiejdt
+author: levinec
 ms.assetid: 7ba7344d-153b-4cc4-a00a-5d42aee9986b
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

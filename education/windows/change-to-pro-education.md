@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: lizap
-ms.author: elizapo
+author: levinec
+ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro

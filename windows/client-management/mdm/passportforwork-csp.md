@@ -2,11 +2,13 @@
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: v-madhi
 ms.date: 10/31/2018
 ---
 
@@ -36,7 +38,7 @@ The following diagram shows the PassportForWork configuration service provider i
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management.
+A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azureaccount). For more information see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.

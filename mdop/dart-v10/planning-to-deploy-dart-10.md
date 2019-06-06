@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy DaRT 10
 description: Planning to Deploy DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 32a39e97-a889-4aae-982c-b85cdc3d9134
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

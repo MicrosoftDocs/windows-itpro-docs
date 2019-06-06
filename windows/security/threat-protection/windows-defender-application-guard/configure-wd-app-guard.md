@@ -6,9 +6,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 10/17/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Windows Defender Application Guard policy settings
