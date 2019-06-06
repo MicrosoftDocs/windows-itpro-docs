@@ -68,6 +68,9 @@ There are several conclusions here:
 
 The preceding was an example to show why it's unrealistic to have a "one-size-fits-all" number to describe what "an adequate amount" means.  In the real world, authentication is not evenly distributed across domain controllers.
 
+> [!NOTE]
+>There was an issue with key trust on Windows Server 2019, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) in order to fix it.
+
 ## Determining total AS Request load
 
 Each organization needs to have a baseline of the AS request load that occurs in their environment. Windows Server provides the KDC AS Requests performance counter that helps you determine this.
