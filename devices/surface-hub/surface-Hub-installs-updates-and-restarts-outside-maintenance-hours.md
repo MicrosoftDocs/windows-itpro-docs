@@ -33,11 +33,11 @@ One option that you can use to control the availability of updates is Windows Se
 
 ## References 
  
-[Update the Surface Hub](https://docs.microsoft.com/en-us/surface-hub/first-run-program-surface-hub#a-href-idupdate-surface-hubaupdate-the-surface-hub
+[Update the Surface Hub](first-run-program-surface-hub.md#a-href-idupdate-surface-hubaupdate-the-surface-hub
 ) 
 
-[Maintenance window](manage-windows-updates-for-surface-hub#maintenance-window) 
+[Maintenance window](manage-windows-updates-for-surface-hub.md#maintenance-window) 
 
-[Deploy Windows 10 updates using Windows Server Update Services (WSUS)](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wsus) 
+[Deploy Windows 10 updates using Windows Server Update Services (WSUS)](/windows/deployment/update/waas-manage-updates-wsus) 
 
 
