@@ -33,10 +33,7 @@ You'll have full access to all the powerful capabilities of the platform such as
 
 
 ## Get started with the lab
-
-You can access the lab through the Help icon.
-
-![Image of the help icon with the evaluation lab menu](images/evaluation-lab-menu.png)
+You can access the lab from the menu by navigating to **Evaluation and tutorials > Evaluation lab**.
 
 When you access the evaluation lab for the first time, you'll find an introduction page with a link to the evaluation guide. The guide contains tips and recommendations to keep in mind when evaluating an advanced threat protection product. 
 
@@ -60,14 +57,12 @@ The machine will automatically be onboarded to your tenant with the recommended 
   - [Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
   >[!NOTE]
-  > Windows Defender Antivirus will be on (not in audit). If Windows Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the machine through the Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+  > Windows Defender Antivirus will be on (not in audit). If Windows Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the machine through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
 
 Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
 
-1. Select the help icon > **Microsoft Defender ATP evaluation lab**.
-
-    ![Image of the help icon with the evaluation lab menu](images/evaluation-lab-menu.png)
+1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**.
 
 2. Select **Prepare lab**. 
 
