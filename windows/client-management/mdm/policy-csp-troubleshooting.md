@@ -32,22 +32,22 @@ ms.date: 05/21/2019
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td></td>
+    <td></td>
 </tr>
 </table>
 
@@ -81,43 +81,42 @@ By default, this policy is not configured and the SKU based defaults are used fo
 <table>
 <tr>
     <th>SKU</th>
-	<th>Unmanaged Default</th>
-	<th>Managed Default</th>
+    <th>Unmanaged Default</th>
+    <th>Managed Default</th>
 </tr>
 <tr>
-	<td>Home</td>
-	<td>Prompt (OOBE)</td>
-	<td>Off</td>
+    <td>Home</td>
+    <td>Prompt (OOBE)</td>
+    <td>Off</td>
 </tr>
 <tr>
-	<td>Pro</td>
-	<td>Prompt (OOBE)</td>
-	<td>Off</td>
+    <td>Pro</td>
+    <td>Prompt (OOBE)</td>
+    <td>Off</td>
 </tr>
 <tr>
-	<td>Education</td>
-	<td>On (auto)</td>
-	<td>Off</td>
+    <td>Education</td>
+    <td>On (auto)</td>
+    <td>Off</td>
 </tr>
 <tr>
-	<td>Enterprise</td>
-	<td>Off</td>
-	<td>Off</td>
+    <td>Enterprise</td>
+    <td>Off</td>
+    <td>Off</td>
 </tr>
 <tr>
-	<td>Government</td>
-	<td>Off</td>
-	<td>Off</td>
+    <td>Government</td>
+    <td>Off</td>
+    <td>Off</td>
 </tr>
 </table>
- 
+
 <!--/SupportedValues-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
--   GP name: *TroubleshootingAllowRecommendations*
--   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
--   GP ADMX file name: *MSDT.admx*
+ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access recommended troubleshooting for known problems</em>
+-   GP name: <em>TroubleshootingAllowRecommendations</em>
+-   GP path: <em>Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool</em>
+-   GP ADMX file name: <em>MSDT.admx</em>
 
 <!--/ADMXMapped-->
 

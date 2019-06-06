@@ -52,22 +52,24 @@ A virtual machine computer name pattern can be assigned both for revertible and 
 
     -   **Random characters**—Enter “\#” for each random character to include in the pattern. Each computer using the MED-V workspace will have a suffix of the length specified, which is generated randomly.
 
-    **Note**  
+    **Note**  
     The computer name has a limit of 15 characters. If the pattern exceeds the limit, it will be truncated.
 
-     
+
 
 4.  On the **Policy** menu, select **Commit**.
 
-    **Note**  
+    **Note**  
     A revertible VM computer name pattern can be assigned only when **Rename the VM based on the computer name patterns** (in the **Revertible VM Setup** section) is checked.
 
-     
 
-    **Note**  
-    A unique computer name can be assigned only if it is configured prior to MED-V workspace setup. Changing the name will not affect MED-V workspaces that were already set up.
 
-     
+~~~
+**Note**  
+A unique computer name can be assigned only if it is configured prior to MED-V workspace setup. Changing the name will not affect MED-V workspaces that were already set up.
+~~~
+
+
 
 ## How to Assign a Virtual Machine Computer Name Pattern to a Persistent MED-V Workspace
 
@@ -102,17 +104,17 @@ A virtual machine computer name pattern can be assigned both for revertible and 
 
     -   **Random characters**— Enter “\#” for each random character to include in the pattern. The computer will have a suffix of the length specified, which is generated randomly.
 
-    **Note**  
+    **Note**  
     The computer name has a limit of 15 characters. If the pattern exceeds the limit, it will be truncated.
 
-     
+
 
 6.  On the **Policy** menu, select **Commit**.
 
-    **Note**  
+    **Note**  
     The computer will be renamed only if it is set as an action in the **Script Actions** dialog box. For detailed information, see [How to Set Up Script Actions](how-to-set-up-script-actions.md).
 
-     
+
 
 ## Related topics
 
@@ -125,9 +127,9 @@ A virtual machine computer name pattern can be assigned both for revertible and 
 
 [Examples of Virtual Machine Configurations](examples-of-virtual-machine-configurationsv2.md)
 
- 
 
- 
+
+
 
 
 

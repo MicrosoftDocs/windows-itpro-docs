@@ -32,7 +32,7 @@ Microsoft Application Virtualization (App-V) 4.6 provides the following enhancem
 **Note**  
 The App-V Management Server and Streaming Server have not been updated to version 4.6. Until they are updated, use App-V Management Server and Streaming Server 4.5 with the most recent service pack.
 
- 
+ 
 
 ## In This Section
 
@@ -40,9 +40,9 @@ The App-V Management Server and Streaming Server have not been updated to versio
 <a href="" id="app-v-4-6-release-notes"></a>[App-V 4.6 Release Notes](app-v-46-release-notes.md)  
 Provides the most up-to-date information about known issues with Microsoft Application Virtualization (App-V) 4.6.
 
- 
+ 
 
- 
+ 
 
 
 

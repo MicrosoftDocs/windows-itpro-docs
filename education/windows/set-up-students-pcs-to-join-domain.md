@@ -38,31 +38,31 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 3. Find the **SharedPC** settings group.
     - Set **EnableSharedPCMode** to **TRUE** to configure the PC for shared use.
 4. (Optional) To configure the PC for secure testing, follow these steps.
-  1. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
-  2. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
+   1. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
+   2. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
 
-    **Figure 7** - Add the account to use for test-taking
+      **Figure 7** - Add the account to use for test-taking
 
-    ![Add the account to use for test-taking](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking](images/wcd_settings_assignedaccess.png)
 
-    The account can be in one of the following formats:
-    - username
-    - domain\username
-    - computer name\\username
-    - username@tenant.com
+      The account can be in one of the following formats:
+      - username
+      - domain\username
+      - computer name\\username
+      - username@tenant.com
 
-  3. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
-    1. In **LaunchURI**, enter the assessment URL.
-    2. In **TesterAccount**, enter the test account you entered in the previous step.
+   3. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
+      1. In **LaunchURI**, enter the assessment URL.
+      2. In **TesterAccount**, enter the test account you entered in the previous step.
 
 5. To configure other settings to make Windows education ready, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) and follow the guidance on what settings you can set using Windows Configuration Designer.
 
 6. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
-    - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username*\Windows Imaging and Configuration Designer (WICD)\*Project name*). 
-    - Copy the provisioning package to a USB drive.
+   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+   - Copy the provisioning package to a USB drive.
 
-    > [!IMPORTANT]
-    > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+     > [!IMPORTANT]
+     > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 
 ## Apply package

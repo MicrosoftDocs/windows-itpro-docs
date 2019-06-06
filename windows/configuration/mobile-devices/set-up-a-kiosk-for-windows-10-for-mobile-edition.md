@@ -36,7 +36,7 @@ Enterprise Assigned Access allows you to put your Windows 10 Mobile or Windows�
 >[!NOTE]
 >The app can be a Universal Windows app, Universal Windows Phone 8 app, or a legacy Silverlight app.
 
- 
+ 
 
 ### Set up Enterprise Assigned Access in MDM
 
@@ -186,7 +186,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
     >[!TIP]  
     >Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
-  
+  
 2.  Give the device to someone else, so they can use the device and only the one app you chose.
 
 3.  When they're done and you get the device back, press and hold Power ![power](../images/powericon.png), and then swipe right to exit Apps Corner.
@@ -200,7 +200,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ BitLocker provides full volume encryption (FVE) for operating system volumes, as
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
 > **Note:**  For more info about using this tool, see [Bdehdcfg](https://technet.microsoft.com/library/ee732026.aspx) in the Command-Line Reference.
- 
+ 
 BitLocker encryption can be done using the following methods:
 
 -   BitLocker control panel
@@ -92,7 +92,7 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 </tr>
 </tbody>
 </table>
- 
+ 
 Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
 Once a strong password has been created for the volume, a recovery key will be generated. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
 
@@ -106,7 +106,7 @@ When the recovery key has been properly stored, the BitLocker Drive Encryption W
 It is recommended that drives with little to no data utilize the **used disk space only** encryption option and that drives with data or an operating system utilize the **encrypt entire drive** option.
 
 > **Note:**  Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
- 
+ 
 Selecting an encryption type and choosing **Next** will give the user the option of running a BitLocker system check (selected by default) which will ensure that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. It is recommended to run this system check before starting the encryption process. If the system check is not run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
 
 After completing the system check (if selected), the BitLocker Drive Encryption Wizard will restart the computer to begin encryption. Upon reboot, users are required to enter the password chosen to boot into the operating system volume. Users can check encryption status by checking the system notification area or the BitLocker control panel.
@@ -371,13 +371,13 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 </tr>
 </tbody>
 </table>
- 
+ 
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
-A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the `Get-BitLocker` volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
-Occasionally, all protectors may not be shown when using **Get-BitLockerVolume** due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
+A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLocker</code> volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
+Occasionally, all protectors may not be shown when using <strong>Get-BitLockerVolume</strong> due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
 
 > **Note:**  In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
- 
+ 
 `Get-BitLockerVolume C: | fl`
 
 If you wanted to remove the existing protectors prior to provisioning BitLocker on the volume, you can utilize the `Remove-BitLockerKeyProtector` cmdlet. Accomplishing this requires the GUID associated with the protector to be removed.
@@ -392,7 +392,7 @@ Using this information, we can then remove the key protector for a specific volu
 Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 ```
 > **Note:**  The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
- 
+ 
 ### Operating system volume
 
 Using the BitLocker Windows PowerShell cmdlets is similar to working with the manage-bde tool for encrypting operating system volumes. Windows PowerShell offers users a lot of flexibility. For example, users can add the desired protector as part command for encrypting the volume. Below are examples of common user scenarios and steps to accomplish them using the BitLocker cmdlets for Windows PowerShell.
@@ -420,7 +420,7 @@ Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 The ADAccountOrGroup protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it does not unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and be unlocked to any member computer of the cluster.
 
 >**Warning:**  The SID-based protector requires the use of an additional protector (such as TPM, PIN, recovery key, etc.) when used on operating system volumes.
- 
+ 
 To add an ADAccountOrGroup protector to a volume requires either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
 
 ``` syntax
@@ -432,16 +432,16 @@ For users who wish to use the SID for the account or group, the first step is to
 get-aduser -filter {samaccountname -eq "administrator"}
 ```
 > **Note:**  Use of this command requires the RSAT-AD-PowerShell feature.
- 
+> 
 > **Tip:**  In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
- 
+ 
 In the example below, the user wishes to add a domain SID based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
 ``` syntax
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
 > **Note:**  Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
- 
+ 
 ## <a href="" id="bkmk-dep5"></a> Checking BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, manage-bde command line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We will look at each of the available methods in the following section.
@@ -456,7 +456,7 @@ Checking BitLocker status with the control panel is the most common method used 
 | **Off**| BitLocker is not enabled for the volume |
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
- 
+ 
 If a drive is pre-provisioned with BitLocker, a status of "Waiting for Activation" displays with a yellow exclamation icon on volume E. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume is not in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the control panel, manage-bde tool, or WMI APIs to add an appropriate key protector. Once complete, the control panel will update to reflect the new status.
 Using the control panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
 The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
@@ -473,7 +473,7 @@ To check the status of a volume using manage-bde, use the following command:
 manage-bde -status <volume>
 ```
 > **Note:**  If no volume letter is associated with the -status command, all volumes on the computer display their status.
- 
+ 
 ### Checking BitLocker status with Windows PowerShell
 
 Windows PowerShell commands offer another way to query BitLocker status for volumes. Like manage-bde, Windows PowerShell includes the advantage of being able to check the status of a volume on a remote computer.
@@ -534,5 +534,5 @@ Disable-BitLocker -MountPoint E:,F:,G:
 - [BitLocker recovery guide](bitlocker-recovery-guide-plan.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [BitLocker overview](bitlocker-overview.md)
- 
- 
+ 
+ 

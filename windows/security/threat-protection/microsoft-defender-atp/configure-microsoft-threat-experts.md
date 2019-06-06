@@ -123,8 +123,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 - I received this targeted attack notification from Microsoft Threat Experts. We don’t have our own incident response team. What can we do now, and how can we contain the incident?
 - I received a targeted attack notification from Microsoft Threat Experts. What data can you provide to us that we can pass on to our incident response team?
 
- >[!NOTE]
- >Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, the experts can seamlessly transition the investigation to Microsoft Cybersecurity Solutions Group (CSG)'s  Detection and Response Team (DART) services, when necessary. You can also opt to engage with your own incident response team to address issues that requires an incident response. 
+  >[!NOTE]
+  >Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, the experts can seamlessly transition the investigation to Microsoft Cybersecurity Solutions Group (CSG)'s  Detection and Response Team (DART) services, when necessary. You can also opt to engage with your own incident response team to address issues that requires an incident response. 
 
 ## Scenario
 

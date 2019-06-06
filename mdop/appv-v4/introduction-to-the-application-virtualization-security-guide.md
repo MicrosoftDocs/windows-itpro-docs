@@ -22,7 +22,7 @@ This Microsoft Application Virtualization (App-V) security guide provides instru
 **Note**  
 This documentation does not provide guidance for choosing the specific security options. That information is provided in the App-V Security Best Practices white paper available at <https://go.microsoft.com/fwlink/?LinkId=127120>.
 
- 
+ 
 
 As an App-V administrator using this guide, you should be familiar with the following security-related technologies:
 
@@ -48,7 +48,7 @@ For more information about App-V infrastructure models, see the following docume
 
 -   [Infrastructure Planning and Design Guide Series](https://go.microsoft.com/fwlink/?LinkId=151986)
 
- 
+ 
 
 These models utilize some but possibly not all of the App-V components depicted in the following illustration.
 
@@ -75,9 +75,9 @@ The App-V Sequencer monitors and captures the installation of applications and c
 <a href="" id="application-virtualization--app-v--client"></a>Application Virtualization (App-V) Client  
 The App-V Client is installed on the App-V Desktop Client computer or on the App-V Terminal Services Client computer. It provides the virtual environment for the virtual application packages. The App-V Client manages the package streaming to the cache, virtual application publishing refresh, and interaction with the Application Virtualization Servers.
 
- 
+ 
 
- 
+ 
 
 
 

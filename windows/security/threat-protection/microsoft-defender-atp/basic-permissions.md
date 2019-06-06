@@ -58,13 +58,13 @@ Assigning read only access rights requires adding the users to the "Security Rea
 Use the following steps to assign security roles:
 
 - For **read and write** access, assign users to the security administrator role by using the following command:
-```text
-Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
-```
+  ```text
+  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
+  ```
 - For **read only** access, assign users to the security reader role by using the following command:
-```text
-Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
-```
+  ```text
+  Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
+  ```
 
 For more information see, [Add or remove group memberships](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 

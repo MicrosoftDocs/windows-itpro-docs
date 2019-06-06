@@ -22,7 +22,7 @@ You can use the following procedure to delete a package, including all versions 
 **Important**  
 When you choose to delete a package, a confirmation box reminds you that this action deletes all its versions. The server will no longer be able to stream the application.
 
- 
+ 
 
 **To delete a package**
 
@@ -39,9 +39,9 @@ When you choose to delete a package, a confirmation box reminds you that this ac
 
 [How to Manage Packages in the Server Management Console](how-to-manage-packages-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

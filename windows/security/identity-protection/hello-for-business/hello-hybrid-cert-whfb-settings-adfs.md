@@ -62,11 +62,11 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure the registration authority
 > * Update group memberships for the AD FS service account
-
-
->[!div class="step-by-step"]
-[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
-[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
+> 
+> 
+> [!div class="step-by-step"]
+> [< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+> [Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
 
 <br><br>
 

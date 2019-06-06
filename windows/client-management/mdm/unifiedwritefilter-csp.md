@@ -19,7 +19,7 @@ The UnifiedWriteFilter (UWF) configuration service provider enables the IT admin
 
 > **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
 
- 
+ 
 
 The following diagram shows the UWF configuration service provider in tree format.
 
@@ -76,7 +76,7 @@ The only supported operation is Get.
 <a href="" id="currentsession-registryexclusions"></a>**CurrentSession/RegistryExclusions**  
 Required. The root node that contains all registry exclusions.
 
-<a href="" id="currentsession-registryexclusions-excludedregistry"></a>**CurrentSession/RegistryExclusions/****_ExcludedRegistry_**  
+<a href="" id="currentsession-registryexclusions-excludedregistry"></a>**CurrentSession/RegistryExclusions/**<strong>*ExcludedRegistry*</strong>  
 Optional. A registry key in the registry exclusion list for UWF in the current session.
 
 The only supported operation is Get.
@@ -89,7 +89,7 @@ The only supported operation is Get.
 <a href="" id="currentsession-volume"></a>**CurrentSession/Volume**  
 Required. The root node to contain all volumes protected by UWF in the current session.
 
-<a href="" id="currentsession-volume-volume"></a>**CurrentSession/Volume/****_Volume_**  
+<a href="" id="currentsession-volume-volume"></a>**CurrentSession/Volume/**<strong>*Volume*</strong>  
 Optional. Represents a specific volume in the current session.
 
 <a href="" id="currentsession-volume-volume-protected"></a>**CurrentSession/Volume/*Volume*/Protected**  
@@ -110,7 +110,7 @@ The only supported operation is Get.
 <a href="" id="currentsession-volume-volume-exclusions"></a>**CurrentSession/Volume/*Volume*/Exclusions**  
 Required. The root node that contains all file exclusions for the volume.
 
-<a href="" id="currentsession-volume-volume-exclusions-exclusionpath"></a>**CurrentSession/Volume/*Volume*/Exclusions/****_ExclusionPath_**  
+<a href="" id="currentsession-volume-volume-exclusions-exclusionpath"></a>**CurrentSession/Volume/*Volume*/Exclusions/**<strong>*ExclusionPath*</strong>  
 Optional. A string that contains the full path of the file or folder relative to the volume.
 
 The only supported operation is Get.
@@ -180,7 +180,7 @@ Required. The root node that contains all registry exclusions for the next sessi
 
 Supported operations are Add, Delete, and Replace.
 
-<a href="" id="nextsession-registryexclusions-excludedregistry"></a>**NextSession/RegistryExclusions/****_ExcludedRegistry_**  
+<a href="" id="nextsession-registryexclusions-excludedregistry"></a>**NextSession/RegistryExclusions/**<strong>*ExcludedRegistry*</strong>  
 Optional. A registry key in the registry exclusion list for UWF.
 
 Supported operations are Add, Delete, Get, and Replace.
@@ -193,7 +193,7 @@ Supported operations are Get and Replace.
 <a href="" id="nextsession-volume"></a>**NextSession/Volume**  
 Required. The root node that contains all volumes protected by UWF for the next session.
 
-<a href="" id="nextsession-volume-volume"></a>**NextSession/Volume/****_Volume_**  
+<a href="" id="nextsession-volume-volume"></a>**NextSession/Volume/**<strong>*Volume*</strong>  
 Optional. Represents a specific volume in the next session.
 
 Supported operations are Add, Delete, and Replace.
@@ -216,7 +216,7 @@ The only supported operation is Get.
 <a href="" id="nextsession-volume-volume-exclusions"></a>**NextSession/Volume/*Volume*/Exclusions**  
 Required. The root node that contains all file exclusions for this volume in the next session.
 
-<a href="" id="nextsession-volume-volume-exclusionsexclusionpath"></a>**NextSession/Volume/*Volume*/Exclusions/****_ExclusionPath_**  
+<a href="" id="nextsession-volume-volume-exclusionsexclusionpath"></a>**NextSession/Volume/*Volume*/Exclusions/**<strong>*ExclusionPath*</strong>  
 Optional. A string that contains the full path of the file or folder relative to the volume.
 
 Supported operations are Add, Delete, Get, and Replace.
@@ -241,9 +241,9 @@ Supported operations are Get and Execute.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

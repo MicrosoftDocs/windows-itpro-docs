@@ -28,7 +28,7 @@ In almost any isolated server or isolated domain scenario, there are some device
 **Important**  
 Adding devices to the exemption list for a zone reduces security because it permits devices in the zone to send network traffic that is unprotected by IPsec to the devices on the list. As discussed in the Windows Defender Firewall with Advanced Security Design Guide, you must add only managed and trusted devices to the exemption list.
 
- 
+ 
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.

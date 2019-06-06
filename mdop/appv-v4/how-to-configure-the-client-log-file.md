@@ -40,7 +40,7 @@ You can use the following procedures to configure the Application Virtualization
     **Caution**  
     This registry key value must be set to a value greater than zero to ensure the log file does get reset.
 
-     
+     
 
 **To change the number of backup copies**
 
@@ -93,16 +93,16 @@ You can use the following procedures to configure the Application Virtualization
     </tbody>
     </table>
 
-     
+     
 
 ## Related topics
 
 
 [How to Configure the App-V Client Registry Settings by Using the Command Line](how-to-configure-the-app-v-client-registry-settings-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

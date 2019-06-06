@@ -47,7 +47,7 @@ The Windows 10 Mobile certificate installer supports .cer, .p7b, .pem, and .pfx
 Windows 10 Mobile supports root, CA, and client certificate to be configured via MDM. Using MDM, an administrator can directly add, delete, or query root and CA certificates, and configure the device to enroll a client certificate with a certificate enrollment server that supports Simple Certificate Enrollment Protocol (SCEP). SCEP enrolled client certificates are used by Wi-Fi, VPN, email, and browser for certificate-based client authentication. An MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
 >[!WARNING]
 >Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=718216).
- 
+ 
 **Process of installing certificates using MDM**
 
 1.  The MDM server generates the initial cert enroll request including challenge password, SCEP server URL, and other enrollment related parameters.
@@ -64,13 +64,13 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
     >- A certificate is successfully received from the server
     >- The server returns an error
     >- The number of retries reaches the preconfigured limit
-     
+     
 8.  The cert is installed in the device. Browser, Wi-Fi, VPN, email, and other first party applications have access to this certificate.
 
     >[!NOTE]
     >If MDM requested private key stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Windows Hello for Business Key Storage Provider (KSP), it is guarded by the Hello PIN.
-     
+     
 ## Related topics
 
 [Configure S/MIME](configure-s-mime.md)
- 
+ 

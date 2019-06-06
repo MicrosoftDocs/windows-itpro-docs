@@ -85,7 +85,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
 <br>Contact your hardware vendor to obtain updated device drivers.
-<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
+<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.
 </table>
 </td>
 </tr>
@@ -114,7 +114,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Ensure that all that drivers are updated.<br>
 Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
-<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/library/ee851579.aspx).
+<br>For more information, see <a href="https://technet.microsoft.com/library/ee851579.aspx" data-raw-source="[Understanding Failures and Log Files](https://technet.microsoft.com/library/ee851579.aspx)">Understanding Failures and Log Files</a>.
 <br>Update or uninstall the problem drivers.
 </table>
 </td>
@@ -140,7 +140,7 @@ Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, 
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
 <br>Contact your hardware vendor to obtain updated device drivers.
-<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
+<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.
 </table>
 </td>
 </tr>
@@ -195,7 +195,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 <br>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.
 <br>Review the rollback log and determine the stop code.
-<br>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  An example analysis is shown below. This example is not representative of all cases:
+<br>The rollback log is located in the <strong>C:$Windows.~BT\Sources\Panther</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
 <br>Info SP     Crash 0x0000007E detected
 <br>Info SP       Module name           :
 <br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
@@ -498,13 +498,13 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr>
 <td>0xC1800118</td>
 <td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
-<td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
+<td>See <a href="https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/" data-raw-source="[Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/)">Steps to resolve error 0xC1800118</a> for information.</td>
 </tr>
 
 <tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
-<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
+<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/en-us/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)">Windows 10 specifications</a>  for information.</td>
 </tr>
 
 
@@ -512,28 +512,28 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <td>0x80090011</td>
 <td>A device driver error occurred during user data migration.</td>
 <td>Contact your hardware vendor and get all the device drivers updated. It is recommended to have an active internet connection during upgrade process.
-<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
+<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.</td>
 </tr>
 <tr>
 <td>0xC7700112</td>
 <td>Failure to complete writing data to the system drive, possibly due to write access failure on the hard disk.</td>
 <td>This issue is resolved in the latest version of Upgrade Assistant.
-<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
+<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.</td>
 </tr>
 
 <tr>
 <td>0x80190001</td>
 <td>An unexpected error was encountered while attempting to download files required for upgrade.</td>
-<td>To resolve this issue, download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10).
+<td>To resolve this issue, download and run the media creation tool. See <a href="https://www.microsoft.com/en-us/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/en-us/software-download/windows10)">Download windows 10</a>.
 </td>
 </tr>
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
 <td>Attempt other methods of upgrading the operating system.<br>
-Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10).
+Download and run the media creation tool. See <a href="https://www.microsoft.com/en-us/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/en-us/software-download/windows10)">Download windows 10</a>.
 <br>Attempt to upgrade using .ISO or USB.<br>
-**Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).
+<strong>Note</strong>: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
 </td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <tr>
 <td>0x80070020</td>
 <td>The existing process cannot access the file because it is being used by another process.</td>
-<td>Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).</td>
+<td>Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see <a href="https://support.microsoft.com/kb/929135" data-raw-source="[How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135)">How to perform a clean boot in Windows</a>.</td>
 </tr>
 <tr>
 <td>0x80070522</td>
@@ -561,12 +561,12 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <td>0xC1900107</td>
 <td>A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.
 </td>
-<td>Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see [Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10).</td>
+<td>Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see <a href="https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10" data-raw-source="[Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10)">Disk cleanup in Windows 10</a>.</td>
 </tr>
 <tr>
 <td>0xC1900209</td>
 <td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
-<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See [Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/) for more information.
+<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
 
 <br>You can also download the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740) and install Application Compatibility Tools.
 </td>
@@ -576,7 +576,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <tr>
 <td>0x8007002 </td>
 <td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
-<td>Analyze the SMSTS.log and verify that the upgrade is failing on "Apply Operating system" Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
+<td>Analyze the SMSTS.log and verify that the upgrade is failing on &quot;Apply Operating system&quot; Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
 
 <br>The error 80072efe means that the connection with the server was terminated abnormally.
 
@@ -586,7 +586,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 
 <tr>
 <td>0x80240FFF </td>
-<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn't recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
+<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
 <td> You can prevent this by installing <a href="http://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 
 <ol>
@@ -629,49 +629,49 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <tr><td>0x80070003- 0x20007
 <td>This is a failure during SafeOS phase driver installation.
 
-<td>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](log-files.md#analyze-log-files) to determine the problem driver.
+<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 </td></tr>
 <tr><td>0x8007025D - 0x2000C
-<td>This error occurs if the ISO file's metadata is corrupt.<td>"Re-download the ISO/Media and re-attempt the upgrade.
+<td>This error occurs if the ISO file&#39;s metadata is corrupt.<td>&quot;Re-download the ISO/Media and re-attempt the upgrade.
 
 Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
 
 </td></tr>
 <tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
 
-<td>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](log-files.md#analyze-log-files) to determine the problem driver.
+<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 
 </td></tr>
 <tr><td>0xC1900101 - 0x2000c
 <td>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
-<td>Run checkdisk to repair the file system. For more information, see the [quick fixes](quick-fixes.md) section in this guide.
-<br>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</td></tr>
+<td>Run checkdisk to repair the file system. For more information, see the <a href="quick-fixes.md" data-raw-source="[quick fixes](quick-fixes.md)">quick fixes</a> section in this guide.
+<br>Update drivers on the computer, and select &quot;Download and install updates (recommended)&quot; during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</td></tr>
 <tr><td>0xC1900200 - 0x20008
 
 <td>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
 
-<td>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
+<td>See <a href="https://www.microsoft.com/en-us/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
 
 <br>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
 <tr><td>0x80070004 - 0x3000D
 <td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
-<td>[Analyze log files](log-files.md#analyze-log-files) to determine the issue.</td></tr>
+<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the issue.</td></tr>
 <tr><td>0xC1900101 - 0x4001E
 <td>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<td>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</td></tr>
+<td>This is a generic error that occurs during the OOBE phase of setup. See the <a href="#0xc1900101" data-raw-source="[0xC1900101](#0xc1900101)">0xC1900101</a> section of this guide and review general troubleshooting procedures described in that section.</td></tr>
 <tr><td>0x80070005 - 0x4000D
 <td>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
-<td>[Analyze log files](log-files.md#analyze-log-files) to determine the data point that is reporting access denied.</td></tr>
+<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the data point that is reporting access denied.</td></tr>
 <tr><td>0x80070004 - 0x50012
 <td>Windows Setup failed to open a file.
-<td>[Analyze log files](log-files.md#analyze-log-files) to determine the data point that is reporting access problems.</td></tr>
+<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the data point that is reporting access problems.</td></tr>
 <tr><td>0xC190020e
 <br>0x80070070 - 0x50011
 <br>0x80070070 - 0x50012
 <br>0x80070070 - 0x60000
 <td>These errors indicate the computer does not have enough free space available to install the upgrade.
-<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
+<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to <a href="https://support.microsoft.com/help/17421/windows-free-up-drive-space" data-raw-source="[free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space)">free up drive space</a> before proceeding with the upgrade.
 
 <br>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
 </td></tr>

@@ -60,7 +60,7 @@ Enables you to remove the shortcuts and file types for an entire package.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -77,7 +77,7 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 Before you can run the **UNPUBLISH PACKAGE** command, the package must already have been added to the Application Virtualization Client.
@@ -92,16 +92,16 @@ Using **UNPUBLISH PACKAGE** without **GLOBAL** removes the user shortcuts and fi
 
 **UNPUBLISH PACKAGE** always clears all the user settings, shortcuts, and file types regardless of the use of the /CLEAR switch.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

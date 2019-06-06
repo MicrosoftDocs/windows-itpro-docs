@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured |0 |0 |Prevented. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, you must enable the **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** group policy, which you can find:<p>**Computer Configuration\\Administrative Templates\\Windows Components\\App Package Deployment\\**<p>For the MDM setting, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled). |![Most restricted value](../images/check-gn.png) |
-|Enabled<br>**(default)** |1 |1 |Allowed. | |
+|        Group Policy        | MDM | Registry |                                                                                                                                                                                                                                               Description                                                                                                                                                                                                                                                |                 Most restricted                  |
+|----------------------------|:---:|:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured |  0  |    0     | Prevented. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, you must enable the **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** group policy, which you can find:<p>**Computer Configuration\\Administrative Templates\\Windows Components\\App Package Deployment\\**<p>For the MDM setting, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled). | ![Most restricted value](../images/check-gn.png) |
+|  Enabled<br>**(default)**  |  1  |    1     |                                                                                                                                                                                                                                                 Allowed.                                                                                                                                                                                                                                                 |                                                  |
+
 ---
 
 ### ADMX info and settings

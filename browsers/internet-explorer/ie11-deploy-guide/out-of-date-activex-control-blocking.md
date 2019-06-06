@@ -191,15 +191,15 @@ Before running the PowerShell script, you must copy both the .ps1 and .mof file 
 
  **To configure IE to use WMI logging**
 
-1.  Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
+1. Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
 
-2.  On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
-```
-powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
-``` 
-For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+2. On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
+   ```
+   powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
+   ``` 
+   For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
-3.  **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
+3. **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 
 The inventory info appears in the WMI class, `IEAXControlBlockingAuditInfo`, located in the WMI namespace, *root\\cimv2\\IETelemetry*. To collect the inventory info from your client computers, we recommend using System Center 2012 R2 Configuration Manager or any agent that can access the WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 
