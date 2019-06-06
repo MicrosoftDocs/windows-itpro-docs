@@ -37,7 +37,6 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 <table>
 <tr><td>[Overview of Windows Autopilot](windows-autopilot.md)<td>A review of Windows Autopilot is provided with a video walkthrough. Benefits and general requirements are discussed.
 <tr><td>[Requirements](windows-autopilot-requirements.md)<td>Detailed software, network, licensiing, and configuration requirments are provided.
-<tr><td>[Platforms](windows-autopilot-platforms.md)<td>A summary of platforms available for registering Windows Autopilot devices.
 <tr><td>[Scenarios and Capabilities](windows-autopilot-scenarios.md)<td>A summary of Windows Autopilot deployment scenarios and capabilities.
 <tr><td>[Get started](demonstrate-deployment-on-vm.md)<td>Interested in trying out Autopilot? See this step-by-step walkthrough to test Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account.
 </table>

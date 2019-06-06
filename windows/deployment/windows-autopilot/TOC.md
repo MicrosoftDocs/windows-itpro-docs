@@ -3,7 +3,6 @@
 # Understanding Windows Autopilot
 ## [Overview](windows-autopilot.md)
 ## [Requirements](windows-autopilot-requirements.md)
-## [Platforms](windows-autopilot-platforms.md)
 ## [Scenarios and capabilities](windows-autopilot-scenarios.md)
 ## [Get started](demonstrate-deployment-on-vm.md)
 
