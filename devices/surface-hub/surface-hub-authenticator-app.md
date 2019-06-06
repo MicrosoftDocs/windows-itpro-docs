@@ -28,7 +28,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
     ![multi-factor authentication options](images/mfa-options.png)
 
-- Enable content hosting on Azure AD services such as Office online, SharePoint, etc. 
+- Enable content hosting on Azure AD services such as Office, SharePoint, etc. 
 
 - Surface Hub must be running Windows 10, version 1703 or later.
 
