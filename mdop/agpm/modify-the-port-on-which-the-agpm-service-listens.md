@@ -22,7 +22,7 @@ The AGPM Service is a Windows service that acts as a security proxy, managing cl
 **Note**  
 Before modifying the port on which the AGPM Service listens, it is recommended that you back up the AGPM archive index file (gpostate.xml). This file is located in the folder entered as the archive path during the installation of Advanced Group Policy Management - Server. By default, this location of this file is %CommonAppData%\\Microsoft\\AGPM\\gpostate.xml on the AGPM Server. If you do not know which computer hosts the archive, you can follow the procedure for modifying the archive path to display the current archive path. For more information, see [Modify the Archive Path](modify-the-archive-path.md).
 
- 
+ 
 
 A user account with access to the AGPM Server (the computer on which the AGPM Service is installed) and the archive index file is required to complete this procedure.
 
@@ -44,9 +44,9 @@ A user account with access to the AGPM Server (the computer on which the AGPM Se
 
 -   [Managing the AGPM Service](managing-the-agpm-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,4 +41,4 @@ Most operating systems use a shared memory space and rely on the operating syste
 
 > [!NOTE]  
 > Configuring BitLocker with an additional factor of authentication provides even more protection against TPM hardware attacks.
- 
+ 

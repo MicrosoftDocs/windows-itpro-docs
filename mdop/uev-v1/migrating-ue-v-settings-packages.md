@@ -40,7 +40,7 @@ Simply copying the files and folders will not preserve the security settings and
     **Note**  
     To monitor the copy progress, open MySettings.txt with a log file reader such as Trace32.
 
-     
+     
 
 4.  Grant share-level permissions to the new share. Leave the NTFS permissions as they were set by Robocopy.
 
@@ -53,9 +53,9 @@ Simply copying the files and folders will not preserve the security settings and
 
 [Operations for UE-V 1.0](operations-for-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

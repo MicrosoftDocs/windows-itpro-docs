@@ -43,7 +43,7 @@ You can enable BitLocker while using the Windows To Go Creator wizard as part of
 **Tip**  
 If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.md#wtg-faq-blfail)
 
- 
+ 
 
 If you are using a host computer running Windows 7 that has BitLocker enabled, you should suspend BitLocker before changing the BIOS settings to boot from USB and then resume BitLocker protection. If BitLocker is not suspended first, the next time the computer is started it will boot into recovery mode.
 
@@ -76,9 +76,9 @@ Windows to Go is a core capability of Windows when it is deployed on the drive a
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

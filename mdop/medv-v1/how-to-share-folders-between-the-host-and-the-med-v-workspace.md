@@ -42,7 +42,7 @@ The following procedures demonstrate how to share folders between the host and t
         **Note**  
         Ensure that the same drive letter is not in use on both computers.
 
-         
+         
 
     4.  Click **Browse**.
 
@@ -63,11 +63,11 @@ The following procedures demonstrate how to share folders between the host and t
 **Note**  
 Ensure that both the host and MED-V workspace computers are in the same domain or workgroup.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

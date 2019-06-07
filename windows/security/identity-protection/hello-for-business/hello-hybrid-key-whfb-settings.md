@@ -38,7 +38,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
 
 <br><br>
 

@@ -22,7 +22,7 @@ You can use an App-V project template to apply common settings associated with a
 **Note**  
 You can only apply an App-V project template when you are creating a new virtual application package. Applying project templates to existing virtual application packages is not supported. Additionally, you cannot use a project template in conjunction with a Package Accelerator.
 
- 
+ 
 
 For more information about creating App-V project templates, see [How to Create an App-V Project Template (App-V 4.6 SP1)](how-to-create-an-app-v-project-template--app-v-46-sp1-.md).
 
@@ -43,9 +43,9 @@ For more information about creating App-V project templates, see [How to Create 
 
 [How to Create an App-V Project Template (App-V 4.6 SP1)](how-to-create-an-app-v-project-template--app-v-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

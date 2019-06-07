@@ -24,24 +24,24 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->[!TIP]
->This topic has been deprecated. See [Indicators](ti-indicator.md) for the updated content.
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
+> [!TIP]
+> This topic has been deprecated. See [Indicators](ti-indicator.md) for the updated content.
+> 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
 
 Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application through Microsoft Defender Security Center.
 
 1. In the navigation pane, select **Settings** >  **Threat intel**.
 
-  ![Image of threat intel API menu](images/atp-threat-intel-api.png)
+   ![Image of threat intel API menu](images/atp-threat-intel-api.png)
 
 2. Select **Enable threat intel API**. This activates the **Azure Active Directory application** setup sections with pre-populated values.
 
 3. Copy the individual values or select **Save details to file** to download a file that contains all the values.
 
-  >[!WARNING]
-  >The client secret is only displayed once. Make sure you keep a copy of it in a safe place. <br>
-  For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
+   >[!WARNING]
+   >The client secret is only displayed once. Make sure you keep a copy of it in a safe place. <br>
+   For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
 
 4. Select **Generate tokens** to get an access and refresh token.
 

@@ -43,7 +43,7 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 **Important**  
 Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
- 
+ 
 
 **To search for an existing application**
 

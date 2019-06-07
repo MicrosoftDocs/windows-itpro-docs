@@ -36,7 +36,7 @@ For information about how to open the MED-V Administration Toolkit, see [Trouble
     **Warning**  
     Resetting the MED-V workspace causes first time setup to run again, and thus reloads the original virtual hard disk. All data that is stored in the MED-V workspace since first time setup was originally run will be deleted.
 
-     
+     
 
 2.  Click **Reset**.
 
@@ -49,9 +49,9 @@ For information about how to open the MED-V Administration Toolkit, see [Trouble
 
 [Viewing MED-V Workspace Configurations](viewing-med-v-workspace-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,7 +56,7 @@ If you need to synchronize applications other than the default applications in t
 **Note**  
 Deploying custom templates requires a settings template catalog. The default Microsoft application templates are deployed with the UE-V Agent.
 
- 
+ 
 
 ## Topics for this product
 
@@ -71,9 +71,9 @@ Deploying custom templates requires a settings template catalog. The default Mic
 
 [Troubleshooting UE-V 1.0](troubleshooting-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

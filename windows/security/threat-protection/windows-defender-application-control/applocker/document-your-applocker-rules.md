@@ -103,7 +103,7 @@ The following table details sample data for documenting rule type and rule condi
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -118,7 +118,7 @@ The following table details sample data for documenting rule type and rule condi
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Next steps
 
 For each rule, determine whether to use the allow or deny option. Then, three tasks remain:

@@ -29,7 +29,7 @@ Device claims are associated with the system that is used to access resources th
 Use the following procedures to monitor changes to user claims and device claims in the user’s sign-on token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+ 
 **To monitor user and device claims in user logon token**
 
 1.  Sign in to your domain controller by using domain administrator credentials.

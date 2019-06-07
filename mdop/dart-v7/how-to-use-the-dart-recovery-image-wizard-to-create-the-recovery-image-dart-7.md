@@ -42,7 +42,7 @@ The **DaRT Recovery Image Wizard** requires the following information:
 **Note**  
 The ISO image size can vary, depending on the tools that were selected in the **DaRT Recovery Image Wizard**.
 
- 
+ 
 
 ## To create the recovery image using the DaRT Recovery Image Wizard
 
@@ -74,7 +74,7 @@ You can either specify the location of the debugging tools on the computer where
 **Note**  
 If you include the **Crash Analyzer** in the ISO image, we recommend that you also include the Debugging Tools for Windows.
 
- 
+ 
 
 Follow these steps to add the Debugging Tools for Windows:
 
@@ -101,7 +101,7 @@ If you decide not to include the latest definitions on the recovery image, or if
 **Important**  
 You cannot scan if there are no definitions.
 
- 
+ 
 
 After you have finished, click **Next**.
 
@@ -110,14 +110,14 @@ After you have finished, click **Next**.
 **Caution**  
 By default, when you add a driver to the DaRT recovery image, all additional files and subfolders that are located in that folder are added into the recovery image. For more information, see [Troubleshooting DaRT 7.0](troubleshooting-dart-70-new-ia.md).
 
- 
+ 
 
 You should include additional drivers on the recovery image for DaRT 7 that you may need when repairing a computer. These may typically include storage or network controllers that are not included on the Windows DVD.
 
 **Important**  
 When you select drivers to include, be aware that wireless connectivity (such as Bluetooth or 802.11a/b/g/n) is not supported in DaRT.
 
- 
+ 
 
 **To add a storage or network controller driver to the recovery image**
 
@@ -128,7 +128,7 @@ When you select drivers to include, be aware that wireless connectivity (such as
     **Note**  
     The **driver** file is provided by the manufacturer of the storage or network controller.
 
-     
+     
 
 3.  Repeat Steps 1 and 2 for every driver that you want to include.
 
@@ -171,7 +171,7 @@ If the **DaRT Recovery Image Wizard** detects a compatible CD-RW drive on your c
     **Note**  
     If a drive is not recognized and you install a new drive, you can click **Refresh Drive List** to force the wizard to update the list of available drives.
 
-     
+     
 
 3.  Click **Next**.
 
@@ -180,9 +180,9 @@ If the **DaRT Recovery Image Wizard** detects a compatible CD-RW drive on your c
 
 [Creating the DaRT 7.0 Recovery Image](creating-the-dart-70-recovery-image-dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

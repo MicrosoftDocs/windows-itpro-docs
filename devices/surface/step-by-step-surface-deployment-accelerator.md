@@ -52,9 +52,9 @@ The following steps show you how to create a deployment share for Windows 10 tha
 >[!NOTE]
 >SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
 
-1.  Open the SDA wizard by double-clicking the icon in the **Surface Deployment Accelerator** program group on the Start screen.
+1. Open the SDA wizard by double-clicking the icon in the **Surface Deployment Accelerator** program group on the Start screen.
 
-2.  On the **Welcome** page, click **Next** to continue.
+2. On the **Welcome** page, click **Next** to continue.
 
 3.  On the **Verify System** page, the SDA wizard verifies the prerequisites required for an SDA deployment share. This process also checks for the presence of the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10 and the Microsoft Deployment Toolkit (MDT) 2013 Update 2. If these tools are not detected, they are downloaded and installed automatically. Click **Next** to continue.
 
@@ -64,8 +64,8 @@ The following steps show you how to create a deployment share for Windows 10 tha
   >  * User State Migration Tool (USMT)
   >  * Windows Preinstallation Environment (WinPE)
 
-  >[!NOTE]
-  >As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
+  > [!NOTE]
+  > As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
 
 4.  On the **Windows 8.1** page, to create a Windows 10 deployment share, do not select the **Would you like to support Windows 8.1** check box. Click **Next** to continue.
 
@@ -75,11 +75,11 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
         -   **Local Path** – Specify or browse to a location on the local storage device where you would like to store the deployment share files for the Windows 10 SDA deployment share. For example, **E:\\SDAWin10\\** is the location specified in Figure 3.
 
-        -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
+       -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
 
     -   **Windows 10 Deployment Services**
 
-        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
+       -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
 
     -   **Windows 10 Source Files**
 
@@ -91,34 +91,34 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
 6.  On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface 3 and Surface Pro 3 and cannot be selected unless Surface 3 or Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
 
-    ![Firmware tool selection](images/sdasteps-fig4-select.png "Firmware tool selection")
+   ![Firmware tool selection](images/sdasteps-fig4-select.png "Firmware tool selection")
 
-    *Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers*
+   *Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers*
 
-    >[!NOTE]
-    >You cannot select both Surface 3 and Surface 3 LTE models at the same time.
+   >[!NOTE]
+   >You cannot select both Surface 3 and Surface 3 LTE models at the same time.
 
 7.  On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
 
-    -   Download of Windows ADK
+   -   Download of Windows ADK
 
-    -   Installation of Windows ADK
+   -   Installation of Windows ADK
 
-    -   Download of MDT
+   -   Download of MDT
 
-    -   Installation of MDT
+   -   Installation of MDT
 
-    -   Download of Surface apps and drivers
+   -   Download of Surface apps and drivers
 
-    -   Creation of the deployment share
+   -   Creation of the deployment share
 
-    -   Import of Windows installation files into the deployment share
+   -   Import of Windows installation files into the deployment share
 
-    -   Import of the apps and drivers into the deployment share
+   -   Import of the apps and drivers into the deployment share
 
-    -   Creation of rules and task sequences for Windows deployment
+   -   Creation of rules and task sequences for Windows deployment
 
-    ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
+   ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
     *Figure 5. The Installation Progress window*
     

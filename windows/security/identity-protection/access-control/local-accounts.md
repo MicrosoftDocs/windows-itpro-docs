@@ -96,12 +96,12 @@ In this case, Group Policy can be used to enable secure settings that can contro
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
 
- 
+ 
 
 **Important**  
 Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled.
 
- 
+ 
 
 ### <a href="" id="sec-guest"></a>Guest account
 
@@ -205,7 +205,7 @@ Each of these approaches is described in the following sections.
 **Note**  
 These approaches do not apply if all administrative local accounts are disabled.
 
- 
+ 
 
 ### <a href="" id="sec-enforce-account-restrictions"></a>Enforce local account restrictions for remote access
 
@@ -241,7 +241,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -256,7 +256,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -289,7 +289,7 @@ The following table shows the Group Policy and registry settings that are used t
 
 >[!NOTE]
 >You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
- 
+ 
 
 **To enforce local account restrictions for remote access**
 
@@ -364,7 +364,7 @@ Denying local accounts the ability to perform network logons can help prevent a 
 **Note**  
 In order to perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
 
- 
+ 
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
@@ -388,7 +388,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network" data-raw-source="[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)">Deny access to this computer from the network</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -404,7 +404,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services" data-raw-source="[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)">Deny log on through Remote Desktop Services</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -415,7 +415,7 @@ The following table shows the Group Policy settings that are used to deny networ
 </tbody>
 </table>
 
- 
+ 
 
 **To deny network logon to all local administrator accounts**
 

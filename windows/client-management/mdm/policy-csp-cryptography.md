@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/14/2018
 ms.reviewer: 
 manager: dansimp
@@ -105,9 +105,9 @@ Footnote:
 <!--StartSurfaceHub-->
 #  Cryptography policies supported by Microsoft Surface Hub  
 
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
-<!--EndSurfaceHub-->
+- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
+- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
+  <!--EndSurfaceHub-->
 
 
 

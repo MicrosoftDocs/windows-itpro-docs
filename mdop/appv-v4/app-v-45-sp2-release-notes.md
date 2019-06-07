@@ -22,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Microsoft Application Virtualization Management System. These Release Notes contain information that you need to successfully install the Application Virtualization Management System. These Release Notes contain information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other Application Virtualization Management System documentation, the latest change should be considered authoritative.
 
- 
+ 
 
 For updated information about known issues, please visit the Microsoft TechNet Library at [App-V 4.5 SP2 Release Notes](https://go.microsoft.com/fwlink/?LinkId=184640) (https://go.microsoft.com/fwlink/?LinkId=184640).
 
@@ -84,7 +84,7 @@ Alternatively, if you are installing or upgrading to the App-V 4.5 SP2 Client fo
 
 -   This step is not required if you are upgrading and have previously installed Dw20shared.msi.
 
- 
+ 
 
 ### Improving performance when sequencing the .NET Framework
 
@@ -212,9 +212,9 @@ Microsoft, Active Directory, ActiveSync, MS-DOS, Windows, Windows Server, and W
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

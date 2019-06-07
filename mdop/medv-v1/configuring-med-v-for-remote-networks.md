@@ -49,7 +49,7 @@ You can configure MED-V to work from inside a network, remotely, or both from in
 **Note**  
 When applying new settings, the service must be restarted.
 
- 
+ 
 
 -   You can change the IIS authentication scheme to one of the following: BASIC, DIGEST, NTLM, or NEGOTIATE. The default is NEGOTIATE and uses the following entry:
 
@@ -72,9 +72,9 @@ When applying new settings, the service must be restarted.
 
 [MED-V Infrastructure Planning and Design](med-v-infrastructure-planning-and-design.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ This topic describes the process for upgrading the Microsoft BitLocker Administr
 **Note**  
 You can upgrade directly to MBAM 2.5 or MBAM 2.5 SP1 from any previous version of MBAM.
 
- 
+ 
 
 ## Before you start the upgrade
 
@@ -52,7 +52,7 @@ Review the following information before you start the upgrade.
 <td align="left"><p><strong>To resolve this issue:</strong></p>
 <p>Run <strong>aspnet_regiis –i</strong> from the following location:</p>
 <p>C:\windows\microsoft.net\Framework\v4.0.30319</p>
-<p>For more information, see: [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=393272).</p></td>
+<p>For more information, see: <a href="https://go.microsoft.com/fwlink/?LinkId=393272" data-raw-source="[ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=393272)">ASP.NET IIS Registration Tool</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Register an SPN on the application pool account if all of the following are true:</p>
@@ -60,7 +60,7 @@ Review the following information before you start the upgrade.
 <li><p>You are upgrading from a previous version of MBAM.</p></li>
 <li><p>Currently, you are not running the MBAM websites in a load-balanced or distributed configuration, but you would like to do so when you upgrade to MBAM 2.5 or 2.5 SP1.</p></li>
 </ul></td>
-<td align="left"><p>For instructions, see [Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md#bkmk-registerspn).</p>
+<td align="left"><p>For instructions, see <a href="planning-how-to-secure-the-mbam-websites.md#bkmk-registerspn" data-raw-source="[Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md#bkmk-registerspn)">Planning How to Secure the MBAM Websites</a>.</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -86,7 +86,7 @@ Review the following information before you start the upgrade.
 </tbody>
 </table>
 
- 
+ 
 
 ## Steps to upgrade the MBAM Server infrastructure
 
@@ -104,7 +104,7 @@ Use the steps in the following sections to upgrade MBAM for the Stand-alone topo
     **Note**  
     The databases will not be removed, and all compliance and recovery data is maintained in the database.
 
-     
+     
 
 4.  Install and configure the MBAM 2.5 or 2.5 SP1 databases, reports, and web applications, in that order. The databases are upgraded in place.
 
@@ -127,7 +127,7 @@ Use the steps in the following sections to upgrade MBAM for the Stand-alone topo
     **Note**  
     The databases and the Configuration Manager objects (baseline, MBAM supported computers collection, and Reports) will not be removed, and all compliance and recovery data is maintained in the database.
 
-     
+     
 
 5.  Update the .mof files.
 
@@ -161,7 +161,7 @@ MBAM supports upgrades to the MBAM 2.5 Client from any earlier version of the M
 
 [Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).

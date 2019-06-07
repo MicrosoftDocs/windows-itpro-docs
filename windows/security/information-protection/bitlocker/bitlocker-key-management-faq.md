@@ -60,7 +60,7 @@ BitLocker is designed to make the encrypted drive unrecoverable without the requ
 
 > [!IMPORTANT]  
 > Store the recovery information in AD DS, along with your Microsoft Account, or another safe location.
- 
+ 
 ## Can the USB flash drive that is used as the startup key also be used to store the recovery key?
 
 While this is technically possible, it is not a best practice to use one USB flash drive to store both keys. If the USB flash drive that contains your startup key is lost or stolen, you also lose access to your recovery key. In addition, inserting this key would cause your computer to automatically boot from the recovery key even if TPM-measured files have changed, which circumvents the TPM's system integrity check.

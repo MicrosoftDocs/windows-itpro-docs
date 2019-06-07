@@ -24,7 +24,7 @@ The Hardware Compatibility feature is helpful when your organization has older c
 **Note**  
 By default, MBAM Hardware Compatibility feature is not enabled. To enable it, select the **Hardware Compatibility** feature under the **Administration and Monitoring Server** feature during setup. For more information about how to set up and configure Hardware Compatibility, see [Deploying the MBAM 1.0 Server Infrastructure](deploying-the-mbam-10-server-infrastructure.md).
 
- 
+ 
 
 The Hardware Compatibility feature works in the following way.
 
@@ -47,7 +47,7 @@ The Hardware Compatibility feature works in the following way.
 **Warning**  
 If the MBAM client agent tries to encrypt a computer that does not support BitLocker drive encryption, there is a possibility that the computer will become corrupted. Ensure that the hardware compatibility feature is correctly configured when your organization has older hardware that does not support BitLocker.
 
- 
+ 
 
 **To manage hardware compatibility**
 
@@ -62,7 +62,7 @@ If the MBAM client agent tries to encrypt a computer that does not support BitLo
     **Note**  
     After you set a computer model as compatible, it can take more than twenty-four hours for the MBAM Client to begin BitLocker encryption on the computers matching that hardware model.
 
-     
+     
 
 5.  Administrators should regularly monitor the hardware compatibility list to review new models that are discovered by the MBAM agent, and then update their compatibility setting to **Compatible** or **Incompatible** as appropriate.
 
@@ -71,9 +71,9 @@ If the MBAM client agent tries to encrypt a computer that does not support BitLo
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

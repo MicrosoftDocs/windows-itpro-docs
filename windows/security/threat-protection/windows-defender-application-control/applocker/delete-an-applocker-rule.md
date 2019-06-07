@@ -48,10 +48,10 @@ When this procedure is performed on the local device, the AppLocker policy takes
 Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML file that contains the following contents:
 
     <AppLockerPolicy Version="1">
-      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
       <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
     </AppLockerPolicy>
 
