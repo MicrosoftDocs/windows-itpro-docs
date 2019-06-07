@@ -158,10 +158,10 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Create Windows Hello for Business Group Policy object.
 > * Enable the Use Windows Hello for Business policy setting.
 > * Add users or groups to the Windows Hello for Business group
-
-
+> 
+> 
 > [!div class="nextstepaction"]
-[Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
+> [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
 
 <br><br>
 

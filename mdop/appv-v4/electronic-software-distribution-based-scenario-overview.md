@@ -22,7 +22,7 @@ If you plan to use an electronic software distribution (ESD) solution to deploy 
 **Important**  
 Whichever ESD solution you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or later, see the System Center Configuration Manager documentation at <https://go.microsoft.com/fwlink/?LinkId=66999>.
 
- 
+ 
 
 Using an existing ESD system provides you with the following benefits:
 
@@ -75,9 +75,9 @@ For more detailed information about the preceding streaming methods, see [Determ
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

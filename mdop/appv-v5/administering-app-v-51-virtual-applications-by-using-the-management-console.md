@@ -89,12 +89,12 @@ The main elements of the App-V 5.1 Management Console are:
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 JavaScript must be enabled on the browser that opens the Web Management Console.
 
- 
+ 
 
 
 
@@ -108,9 +108,9 @@ JavaScript must be enabled on the browser that opens the Web Management Console.
 
 -   [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

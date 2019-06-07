@@ -340,15 +340,15 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 5. In the content pane, right-click the **Multifactor Unlock** Group Policy object and click **Edit**.
 6. In the navigation pane, expand **Policies** under **Computer Configuration**.
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.<br>
-![Group Policy Editor](images/multifactorUnlock/gpme.png)
+   ![Group Policy Editor](images/multifactorUnlock/gpme.png)
 8. In the content pane, double-click **Configure device unlock factors**. Click **Enable**.  The **Options** section populates the policy setting with default values.<br>
-![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
+   ![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
 9. Configure first and second unlock factors using the information in the [Configure Unlock Factors](#configuring-unlock-factors) section.
 10. If using trusted signals, configure the trusted signals used by the unlock factor using the information in the [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider) section.
 11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
- ## Troubleshooting
-Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
+    ## Troubleshooting
+    Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
 
 ### Events
 

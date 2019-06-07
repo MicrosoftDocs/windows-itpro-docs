@@ -41,7 +41,7 @@ Information Services (IIS) also requires that you enable this policy setting.
 Set the value for **Store password using reversible encryption** to Disabled. If you use CHAP through remote access or IAS, or Digest Authentication in IIS, you must set this value to **Enabled**. This presents a security risk when you apply the setting by using Group Policy on a user-by-user basis because it requires opening the appropriate user account object in Active Directory Users and Computers.
 
 >**Note:**  Do not enable this policy setting unless business requirements outweigh the need to protect password information.
- 
+ 
 ### Location
 
 **Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy\\**
@@ -58,7 +58,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Disabled| 
 | Member server effective default settings | Disabled| 
 | Effective GPO default settings on client computers | Disabled| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

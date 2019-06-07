@@ -34,7 +34,7 @@ You can the following procedure to add or upgrade a package to the App-V 5.0 Man
     **Important**  
     You must select a package with the **.appv** file name extension.
 
-     
+     
 
 4.  The page displays the status message **Adding &lt;Packagename&gt;**. Click **IMPORT STATUS** to check the status of a package that you have imported.
 
@@ -49,9 +49,9 @@ You can the following procedure to add or upgrade a package to the App-V 5.0 Man
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

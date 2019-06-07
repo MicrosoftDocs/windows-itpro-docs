@@ -24,7 +24,7 @@ This section provides general information for administrators who are evaluating 
 **Note**  
 A downloadable version of this document and the DaRT 7 Evaluation Guide can be downloaded from <https://go.microsoft.com/fwlink/?LinkId=232274>.
 
- 
+ 
 
 ## Getting Started With DaRT 7
 
@@ -54,9 +54,9 @@ A downloadable version of this document and the DaRT 7 Evaluation Guide can be d
 
 -   [Troubleshooting DaRT 7.0](troubleshooting-dart-70-new-ia.md)
 
- 
+ 
 
- 
+ 
 
 
 

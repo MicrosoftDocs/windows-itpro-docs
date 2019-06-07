@@ -40,33 +40,33 @@ When you turn logging on, you need a valid URL that points to a server that can 
 
  **To set up an endpoint server**
 
-1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](https://go.microsoft.com/fwlink/p/?LinkId=507609).
+1. Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](https://go.microsoft.com/fwlink/p/?LinkId=507609).
 
-2.  Open Internet Information Services (IIS) and turn on the ASP components from the **Add Roles and Features Wizard**, **Server Roles** page.<p>
-This lets you create an ASP form that accepts the incoming POST messages.
+2. Open Internet Information Services (IIS) and turn on the ASP components from the **Add Roles and Features Wizard**, **Server Roles** page.<p>
+   This lets you create an ASP form that accepts the incoming POST messages.
 
-3.  Open the Internet Information Services (IIS) Manager, click **Bindings**, highlight **Port 81**, click **Edit**, and then change the website information to point to Port 81 so it matches your custom-created port.
+3. Open the Internet Information Services (IIS) Manager, click **Bindings**, highlight **Port 81**, click **Edit**, and then change the website information to point to Port 81 so it matches your custom-created port.
 
-    ![IIS Manager, editing website bindings](images/ie-emie-editbindings.png)
+   ![IIS Manager, editing website bindings](images/ie-emie-editbindings.png)
 
-4.  Open the **Logging** feature, pick **W3C** for the format, and click **Select Fields** to open the **W3C Logging Fields** box.
+4. Open the **Logging** feature, pick **W3C** for the format, and click **Select Fields** to open the **W3C Logging Fields** box.
 
-    ![IIS Manager, setting logging options](images/ie-emie-logging.png)
+   ![IIS Manager, setting logging options](images/ie-emie-logging.png)
 
-5.  Change the WC3 logging fields to include only the **Date**, **Client IP**, **User Name**, and **URI Query** standard fields, and then click **OK**.<p>
-Using only these fields keeps the log file simple, giving you the date, client IP address, and the website URI information for any site changed by your users.
+5. Change the WC3 logging fields to include only the **Date**, **Client IP**, **User Name**, and **URI Query** standard fields, and then click **OK**.<p>
+   Using only these fields keeps the log file simple, giving you the date, client IP address, and the website URI information for any site changed by your users.
 
-6.  Apply these changes to your default website and close the IIS Manager.
+6. Apply these changes to your default website and close the IIS Manager.
 
-7.  Put your EmIE.asp file into the root of the web server, using this command:
+7. Put your EmIE.asp file into the root of the web server, using this command:
 
    ``` 
-    <% @ LANGUAGE=javascript %>
-    <%
-    Response.AppendToLog(" ;" + Request.Form("URL") + " ;" + Request.Form("EnterpriseMode"));
-    %>
-    ```
-This code logs your POST fields to your IIS log file, where you can review all of the collected data.
+   <% @ LANGUAGE=javascript %>
+   <%
+   Response.AppendToLog(" ;" + Request.Form("URL") + " ;" + Request.Form("EnterpriseMode"));
+   %>
+   ```
+   This code logs your POST fields to your IIS log file, where you can review all of the collected data.
 
 
 ### IIS log file information
@@ -86,47 +86,47 @@ For logging, you’re going to need a valid URL that points to a server that can
 
  **To set up the sample**
 
-1.  Set up a server to collect your Enterprise Mode information from your users.
+1. Set up a server to collect your Enterprise Mode information from your users.
 
-2.  Go to the Internet Explorer/[EMIE-Data_Collection_Sample](https://go.microsoft.com/fwlink/p/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
+2. Go to the Internet Explorer/[EMIE-Data_Collection_Sample](https://go.microsoft.com/fwlink/p/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
 
-3.  Open Microsoft Visual Studio 2013 with Update 2, and then open the PhoneHomeSample.sln file.
+3. Open Microsoft Visual Studio 2013 with Update 2, and then open the PhoneHomeSample.sln file.
 
-4.  On the **Build** menu, tap or click **Build Solution**.<p>
-The required packages are automatically downloaded and included in the solution.
+4. On the **Build** menu, tap or click **Build Solution**.<p>
+   The required packages are automatically downloaded and included in the solution.
 
- **To set up your endpoint server**
+   **To set up your endpoint server**
 
-1.  Right-click on the name, PhoneHomeSample, and click **Publish**.
+5. Right-click on the name, PhoneHomeSample, and click **Publish**.
 
-    ![Visual Studio, Publish menu](images/ie-emie-publishsolution.png)
+   ![Visual Studio, Publish menu](images/ie-emie-publishsolution.png)
 
-2.  In the **Publish Web** wizard, pick the publishing target and options that work for your organization.
+6. In the **Publish Web** wizard, pick the publishing target and options that work for your organization.
 
    **Important**<br>
    Make sure you have a database associated with your publishing target. Otherwise, your reports won’t be collected and you’ll have problems deploying the website. 
 
-    ![Visual Studio, Publish Web wizard](images/ie-emie-publishweb.png)
+   ![Visual Studio, Publish Web wizard](images/ie-emie-publishweb.png)
 
    After you finish the publishing process, you need to test to make sure the app deployed successfully.
 
- **To test, deploy, and use the app**
+   **To test, deploy, and use the app**
 
-1.  Open a registry editor on the computer where you deployed the app, go to the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode` key, and change the **Enable** string to:
+7. Open a registry editor on the computer where you deployed the app, go to the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode` key, and change the **Enable** string to:
 
-    ``` "Enable"="https://<deploy_URL>/api/records/"
-    ```
- Where `<deploy_URL>` points to your deployment URL.
+   ``` "Enable"="https://<deploy_URL>/api/records/"
+   ```
+   Where `<deploy_URL>` points to your deployment URL.
 
-2.  After you’re sure your deployment works, you can deploy it to your users using one of the following:
+8. After you’re sure your deployment works, you can deploy it to your users using one of the following:
 
-    -   Turn on the **Let users turn on and use Enterprise Mode from the Tools menu** Group Policy setting, putting your `<deploy_URL>` information into the **Options** box.
+   -   Turn on the **Let users turn on and use Enterprise Mode from the Tools menu** Group Policy setting, putting your `<deploy_URL>` information into the **Options** box.
 
-    -   Deploy the registry key in Step 3 using System Center or other management software.
+   -   Deploy the registry key in Step 3 using System Center or other management software.
 
-3.  Get your users to visit websites, turning Enterprise Mode on or off locally, as necessary.
+9. Get your users to visit websites, turning Enterprise Mode on or off locally, as necessary.
 
- **To view the report results**
+   **To view the report results**
 
 -   Go to `https://<deploy_URL>/List` to see the report results.<p>
 If you’re already on the webpage, you’ll need to refresh the page to see the results.
@@ -152,9 +152,9 @@ You may need to do some additional package cleanup to remove older package versi
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
- 
+ 
 
- 
+ 
 
 
 

@@ -43,38 +43,37 @@ The instructions are based on the recommended architecture in [High-Level Archit
 <tbody>
 <tr class="odd">
 <td align="left"><p>Review the recommended architecture for MBAM.</p></td>
-<td align="left"><p>[High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology](high-level-architecture-of-mbam-25-with-configuration-manager-integration-topology.md)</p></td>
+<td align="left"><p><a href="high-level-architecture-of-mbam-25-with-configuration-manager-integration-topology.md" data-raw-source="[High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology](high-level-architecture-of-mbam-25-with-configuration-manager-integration-topology.md)">High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Review the supported configurations for MBAM.</p></td>
-<td align="left"><p>[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)</p></td>
+<td align="left"><p><a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Complete the required prerequisites on each server.</p></td>
 <td align="left"><ul>
-<li><p>[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)</p></li>
-<li><p>[MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md)</p></li>
+<li><p><a href="mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md" data-raw-source="[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)">MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies</a></p></li>
+<li><p><a href="mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md" data-raw-source="[MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md)">MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Install the MBAM Server software on each server where you will configure an MBAM Server feature.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>For this topology, you must install the Configuration Manager console on the computer where you are installing the MBAM Server software.</p>
+<strong>Note</strong><br/><p>For this topology, you must install the Configuration Manager console on the computer where you are installing the MBAM Server software.</p>
 </div>
 <div>
- 
+
 </div></td>
-<td align="left"><p>[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)</p></td>
+<td align="left"><p><a href="installing-the-mbam-25-server-software.md" data-raw-source="[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)">Installing the MBAM 2.5 Server Software</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Review Windows PowerShell prerequisites (applicable only if you are going to use Windows PowerShell cmdlets to configure MBAM).</p></td>
-<td align="left"><p>[Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)</p></td>
+<td align="left"><p><a href="configuring-mbam-25-server-features-by-using-windows-powershell.md" data-raw-source="[Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)">Configuring MBAM 2.5 Server Features by Using Windows PowerShell</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 **To configure Configuration Manager Integration by using Windows PowerShell**
 
@@ -119,14 +118,14 @@ The instructions are based on the recommended architecture in [High-Level Archit
     </tbody>
     </table>
 
-     
+
 
 5.  On the **Summary** page, review the features that will be added.
 
-    **Note**  
+    **Note**  
     To create a Windows PowerShell script of the entries you just made, click **Export PowerShell Script** and save the script.
 
-     
+
 
 6.  Click **Add** to add the Configuration Manager Integration feature to the server, and then click **Close**.
 
@@ -139,11 +138,11 @@ The instructions are based on the recommended architecture in [High-Level Archit
 
 [Validating the MBAM 2.5 Server Feature Configuration](validating-the-mbam-25-server-feature-configuration.md)
 
- 
+
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+
 
 
 

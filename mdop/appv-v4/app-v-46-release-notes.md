@@ -22,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Microsoft Application Virtualization (App-V) Management System. These Release Notes contain information that you need to successfully install Application Virtualization (App-V) 4.6. This document contains information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other App-V documentation, the latest change should be considered authoritative.
 
- 
+ 
 
 ## Protect Against Security Vulnerabilities and Viruses
 
@@ -43,7 +43,7 @@ WORKAROUND   Open the old package with either the App-V 4.5 SP1 Sequencer or 
 **Note**  
 Alternatively, at the command prompt, the App-V Sequencer can generate the new .msi file by using the */OPEN* and */MSI* parameters, for example, `SFTSequencer /Open:”package.sprj” /MSI`. For more information, see [How to Upgrade a Virtual Application by Using the Command Line](how-to-upgrade-a-virtual-application-by-using-the-command-line.md).
 
- 
+ 
 
 ### Release Notes Copyright Information
 
@@ -59,9 +59,9 @@ Microsoft, Active Directory, ActiveSync, ActiveX, Excel, SQL Server, Windows, Wi
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

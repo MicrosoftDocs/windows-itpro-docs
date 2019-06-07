@@ -75,11 +75,11 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
     
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
-    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
-    - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images. 
+   - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
+   - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images. 
     
-    >[!TIP]
-    >A quick method for getting appropriately sized images for each tile size is to upload your image at [BuildMyPinnedSite](http://www.buildmypinnedsite.com/) and then download the resized tile images.
+     >[!TIP]
+     >A quick method for getting appropriately sized images for each tile size is to upload your image at [BuildMyPinnedSite](http://www.buildmypinnedsite.com/) and then download the resized tile images.
         
 4. In Windows PowerShell, enter the following command:
  
@@ -136,7 +136,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1.  Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
 2. Choose **Advanced provisioning**.
 
@@ -157,56 +157,56 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 9. Enter **assets.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the assets.xml file in a later step.
 
-7. Save your project and close Windows Configuration Designer.
+10. Save your project and close Windows Configuration Designer.
 
-7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
+11. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
 
-7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
+12. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start-edge.png)
+     ![Customizations file with the placeholder text to replace highlighted](images/customization-start-edge.png)
 
-7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
+13. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 
-8. Replace **assets.xml** with the text from the assets.xml file, [with markup characters replaced with escape characters](#escape).
+14. Replace **assets.xml** with the text from the assets.xml file, [with markup characters replaced with escape characters](#escape).
 
-8. Save and close the customizations.xml file.
+15. Save and close the customizations.xml file.
 
-8. Open Windows Configuration Designer and open your project.
+16. Open Windows Configuration Designer and open your project.
 
-8.  On the **File** menu, select **Save.**
+17. On the **File** menu, select **Save.**
 
-9.  On the **Export** menu, select **Provisioning package**.
+18. On the **Export** menu, select **Provisioning package**.
 
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+19. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+20. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
+21. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
     Optionally, you can click **Browse** to change the default output location.
 
-13. Click **Next**.
+22. Click **Next**.
 
-14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+23. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
 
     If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+24. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
 
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-16. Copy the provisioning package to the target device.
+25. Copy the provisioning package to the target device.
 
-17. Double-click the ppkg file and allow it to install.
+26. Double-click the ppkg file and allow it to install.
 
- ## Related topics
+    ## Related topics
  
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)

@@ -36,7 +36,7 @@ We are interested in your feedback on App-V 5.0. You can send your feedback to <
 **Note**  
 This email address is not a support channel, but your feedback will help us to plan for future changes in our documentation and product releases.
 
- 
+ 
 
 For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
@@ -64,9 +64,9 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 [About App-V 5.0](about-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ The following topics provide a discussion of password policy implementation and 
 | [Minimum password length](minimum-password-length.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.| 
 | [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) | Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.|
 | [Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md) | Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.| 
- 
+ 
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
- 
+ 
+ 

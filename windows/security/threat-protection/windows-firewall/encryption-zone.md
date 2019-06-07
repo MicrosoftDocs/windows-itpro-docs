@@ -57,7 +57,7 @@ The GPO for devices that are running at least Windows Server 2008 should includ
         **Important**  
         Be sure to begin operations by using request in and request out behavior until you are sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the GPO to require in, request out.
 
-         
+         
 
 -   A registry policy that includes the following values:
 

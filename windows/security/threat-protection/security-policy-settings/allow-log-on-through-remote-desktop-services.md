@@ -94,7 +94,7 @@ Any account with the **Allow log on through Remote Desktop Services** user right
 For domain controllers, assign the **Allow log on through Remote Desktop Services** user right only to the Administrators group. For other server roles and devices, add the Remote Desktop Users group. For servers that have the Remote Desktop (RD) Session Host role service enabled and do not run in Application Server mode, ensure that only authorized IT personnel who must manage the computers remotely belong to these groups.
 
 > **Caution:**  For RD Session Host servers that run in Application Server mode, ensure that only users who require access to the server have accounts that belong to the Remote Desktop Users group because this built-in group has this logon right by default.
- 
+ 
 Alternatively, you can assign the **Deny log on through Remote Desktop Services** user right to groups such as Account Operators, Server Operators, and Guests. However, be careful when you use this method because you could block access to legitimate administrators who also belong to a group that has the **Deny log on through Remote Desktop Services** user right.
 
 ### Potential impact
@@ -104,5 +104,5 @@ Removal of the **Allow log on through Remote Desktop Services** user right from 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

@@ -60,7 +60,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled | 
 | Member Server Effective Default Settings | Disabled | 
 | Client Computer Effective Default Settings | Disabled | 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -90,7 +90,7 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 4660 | An object was deleted. |  
 | 4661 | A handle to an object was requested. |  
 | 4663 | An attempt was made to access an object. |  
- 
+ 
 If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is configured, the following events are generated:
 
 | Event ID | Event message |

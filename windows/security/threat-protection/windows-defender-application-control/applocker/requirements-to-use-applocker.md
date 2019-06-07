@@ -34,7 +34,7 @@ To use AppLocker, you need:
 -   Devices running a supported operating system to enforce the AppLocker rules that you create.
 
 >**Note:**  You can use Software Restriction Policies with AppLocker, but with some limitations. For more info, see [Use AppLocker and Software Restriction Policies in the same domain](use-applocker-and-software-restriction-policies-in-the-same-domain.md).
- 
+ 
 ## Operating system requirements
 
 The following table show the on which operating systems AppLocker features are supported.
@@ -56,7 +56,7 @@ The following table show the on which operating systems AppLocker features are s
 | Windows 7 Ultimate| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
 | Windows 7 Enterprise| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
 | Windows 7 Professional| Yes| No| Executable<br/>Windows Installer<br/>Script<br/>DLL| No AppLocker rules are enforced.|
- 
+ 
 
 AppLocker is not supported on versions of the Windows operating system not listed above. Software Restriction Policies can be used with those versions. However, the SRP Basic User feature is not supported on the above operating systems.
 

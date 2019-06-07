@@ -147,7 +147,7 @@ To better understand each component, review the table below:
 <p>Application Information service</p>
 </td>
 <td>
-<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.</p>
+<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user&#39;s full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.</p>
 </td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ To better understand each component, review the table below:
 <p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</p>
 </li>
 <li>
-<p>If the secure desktop is not enabled, all elevation requests go to the interactive user's desktop, and the per-user settings for administrators and standard users are used.</p>
+<p>If the secure desktop is not enabled, all elevation requests go to the interactive user&#39;s desktop, and the per-user settings for administrators and standard users are used.</p>
 </li>
 </ul>
 </td>
@@ -244,7 +244,7 @@ To better understand each component, review the table below:
 <p>Installer detection</p>
 </td>
 <td>
-<p>Installer detection detects setup files, which helps prevent installations from being run without the user's knowledge and consent.</p>
+<p>Installer detection detects setup files, which helps prevent installations from being run without the user&#39;s knowledge and consent.</p>
 </td>
 </tr>
 <tr>
@@ -269,17 +269,17 @@ To better understand each component, review the table below:
 </td>
 </tr>
 </table>
- 
-The slider will never turn UAC completely off. If you set it to **Never notify**, it will:
+ 
+The slider will never turn UAC completely off. If you set it to <strong>Never notify</strong>, it will:
 
 -   Keep the UAC service running.
 -   Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt.
 -   Automatically deny all elevation requests for standard users.
 
->**Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
- 
->**Warning:**  Universal Windows apps will not work when UAC is disabled.
- 
+> **Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
+> 
+> **Warning:**  Universal Windows apps will not work when UAC is disabled.
+ 
 ### Virtualization
 
 Because system administrators in enterprise environments attempt to secure systems, many line-of-business (LOB) applications are designed to use only a standard user access token. As a result, you do not need to replace the majority of apps when UAC is turned on.
@@ -319,6 +319,6 @@ Before a 32-bit process is created, the following attributes are checked to dete
 -   Key attributes in the resource script data are linked in the executable file.
 -   There are targeted sequences of bytes within the executable file.
 
->**Note:**  The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
- 
->**Note:**  The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
+> **Note:**  The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
+> 
+> **Note:**  The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).

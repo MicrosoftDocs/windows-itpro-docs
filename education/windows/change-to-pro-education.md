@@ -101,8 +101,8 @@ When you change to Windows 10 Pro Education, you get the following benefits:
 - **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 or higher, or Windows 10 S mode, version 1703, can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
 - **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
 - **Roll back options to Windows 10 Pro**
-    - When a user leaves the domain or you turn off the setting to automatically change to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
-    - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
+  - When a user leaves the domain or you turn off the setting to automatically change to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
+  - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
 
     See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro) for more info.
 
@@ -114,7 +114,7 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your work or school account.
 
-  If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
+   If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
 3. In the **Benefits** tile, look for the **Change to Windows 10 Pro Education for free** link and then click it.

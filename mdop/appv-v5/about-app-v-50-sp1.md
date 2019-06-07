@@ -32,7 +32,7 @@ This service pack contains the following changes:
 
     -   Reporting - **HKEY\_LOCAL\_MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ReportingService** \\ **REPORTING\_DB\_NAME**
 
-     
+     
 
 ## How to Get MDOP Technologies
 
@@ -51,9 +51,9 @@ App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is p
 
 [Release Notes for App-V 5.0 SP1](release-notes-for-app-v-50-sp1.md)
 
- 
+ 
 
- 
+ 
 
 
 

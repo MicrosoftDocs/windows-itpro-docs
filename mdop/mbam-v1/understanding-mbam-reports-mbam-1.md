@@ -73,7 +73,7 @@ An Enterprise Compliance Report provides information on overall BitLocker compli
 </tbody>
 </table>
 
- 
+ 
 
 **Enterprise Compliance Report Compliance states**
 
@@ -120,7 +120,7 @@ An Enterprise Compliance Report provides information on overall BitLocker compli
 </tbody>
 </table>
 
- 
+ 
 
 ### Computer Compliance Report
 
@@ -131,7 +131,7 @@ The Computer Compliance Report provides detailed encryption information and appl
 **Note**  
 This report does not provide encryption status for Removable Data Volumes.
 
- 
+ 
 
 **Computer Compliance Report fields**
 
@@ -210,7 +210,7 @@ This report does not provide encryption status for Removable Data Volumes.
 </tbody>
 </table>
 
- 
+ 
 
 **Computer Compliance Report Drive fields**
 
@@ -261,7 +261,7 @@ This report does not provide encryption status for Removable Data Volumes.
 </tbody>
 </table>
 
- 
+ 
 
 ### Hardware Audit Report
 
@@ -304,7 +304,7 @@ This report can help you audit changes to the Hardware Compatibility status of s
 </tbody>
 </table>
 
- 
+ 
 
 ### Recovery Audit Report
 
@@ -367,21 +367,21 @@ The Recovery Audit Report can help you audit users who have requested access to 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 To save report results to a file, click the **Export** button on the reports menu bar.
 
- 
+ 
 
 ## Related topics
 
 
 [Monitoring and Reporting BitLocker Compliance with MBAM 1.0](monitoring-and-reporting-bitlocker-compliance-with-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

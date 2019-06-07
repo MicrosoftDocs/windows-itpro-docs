@@ -49,12 +49,12 @@ The following procedure describes how to use Group Policy to override individual
 
     **Important**<br>For each app you want to include, you must include:
     
-    - **Value name.** The app file name, including the extension. For example, iexplore.exe.
-    - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to 0 (where the setting is forced off), 1 (where the setting is forced on), or ? (where the setting retains the previous, existing value).
+   - **Value name.** The app file name, including the extension. For example, iexplore.exe.
+   - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to 0 (where the setting is forced off), 1 (where the setting is forced on), or ? (where the setting retains the previous, existing value).
     
-        **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
+       **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
 
-    ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
+     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
 Here’s a visual representation of the bit flag locations for the various Process Mitigation Options settings:

@@ -30,7 +30,7 @@ File hash rules use a system-computed cryptographic hash of the identified file.
 | File hash condition advantages | File hash condition disadvantages |
 | - | - |
 | Because each file has a unique hash, a file hash condition applies to only one file. | Each time that the file is updated (such as a security update or upgrade), the file's hash will change. As a result, you must manually update file hash rules.|
- 
+ 
 For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
 ## Related topics

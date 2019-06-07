@@ -26,28 +26,28 @@ By default, the icon is displayed whenever a virtual application is started, alt
 
 The list of commands and command-line switches can be displayed by running the following command from a command window.
 
-**Note**  
+**Note**  
 There is only one Application Virtualization Client Tray instance for each user context, so if you start a new SFTTRAY command, it will be passed to the program that is already running.
 
- 
 
-`     Sfttray.exe /?`
+
+`     Sfttray.exe /?`
 
 ### Command Usage
 
-`     Sfttray.exe [/HIDE | /SHOW]`
+`     Sfttray.exe [/HIDE | /SHOW]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] [/EXE alternate-exe] /LAUNCH app [args]`
+`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] [/EXE alternate-exe] /LAUNCH app [args]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOAD app [/SFTFILE sft]`
+`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOAD app [/SFTFILE sft]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOADALL`
+`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOADALL`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /REFRESHALL`
+`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /REFRESHALL`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LAUNCHRESULT <UNIQUE ID>  /LAUNCH app [args]`
+`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LAUNCHRESULT <UNIQUE ID>  /LAUNCH app [args]`
 
-`     Sfttray.exe /EXIT`
+`     Sfttray.exe /EXIT`
 
 ### Command-Line Switches
 
@@ -81,22 +81,20 @@ The SFTTRAY command-line switches are described in the following table.
 <td align="left"><p>/EXE &lt;alternate-exe&gt;</p></td>
 <td align="left"><p>Used with /LAUNCH to specify that an executable program is to be started in the virtual environment when a virtual application is started in place of the target file specified in the OSD.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>For example, use “SFTTRAY.EXE /EXE REGEDIT.EXE /LAUNCH &lt;app&gt;” to enable you to examine the registry of the virtual environment in which the application is running.</p>
+<strong>Note</strong><br/><p>For example, use “SFTTRAY.EXE /EXE REGEDIT.EXE /LAUNCH &lt;app&gt;” to enable you to examine the registry of the virtual environment in which the application is running.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>/LAUNCH &lt;app&gt; [&lt;args&gt;]</p></td>
 <td align="left"><p>Starts a virtual application. Specify the name and version of an application or the path to an OSD file. Optionally, command-line arguments can be passed to the virtual application.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Use the command “SFTMIME.EXE /QUERY OBJ:APP /SHORT” to obtain a list of the names and versions of available virtual applications.</p>
+<strong>Note</strong><br/><p>Use the command “SFTMIME.EXE /QUERY OBJ:APP /SHORT” to obtain a list of the names and versions of available virtual applications.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -126,20 +124,20 @@ The SFTTRAY command-line switches are described in the following table.
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 ¹ The */LAUNCHRESULT* command line parameter provides a means for the process that launches sfttray.exe to specify the root name for a global event and a memory mapped file that are used to return the launch result code to the process. The unique identifier name should start with “SFT-” to prevent the event name from getting virtualized when the launching process is invoked within a virtual environment. The memory mapped region will be 64 bits in size.
 
 To use this parameter, the launching process creates an event with the name “&lt;UNIQUE ID&gt;-result\_event”, a memory mapped file with the name “&lt;UNIQUE ID&gt;-result\_value”, and optionally an event with the name “&lt;UNIQUE ID&gt;-shutdown\_event”, and then the launching process launches sfttray.exe and waits on the event to be signaled. After the event “&lt;UNIQUE ID&gt;-result\_event” is signaled, the launching process retrieves the 64-bit return code from the memory mapped region.
 
 If the optional event “&lt;UNIQUE ID&gt;-shutdown\_event” exists when the virtual application exits, sfttray.exe opens and signals the event. The launching process waits on this shutdown event if it needs to determine when the virtual application exits.
 
- 
 
- 
 
- 
+
+
+
 
 
 

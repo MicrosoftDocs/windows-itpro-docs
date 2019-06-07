@@ -35,7 +35,9 @@ You will receive a notification if a webpage tries to load one of the following 
 
 **Silverlight**
 
+
 | Everything below (but not including) Silverlight 5.1.50907.0 |
 |--------------------------------------------------------------|
+|                                                              |
 
 For more information, see [Out-of-date ActiveX control blocking](out-of-date-activex-control-blocking.md) and [Internet Explorer begins blocking out-of-date ActiveX controls](https://blogs.msdn.com/b/ie/archive/2014/08/06/internet-explorer-begins-blocking-out-of-date-activex-controls.aspx).  You can also view Microsoft's complete list of out-of-date ActiveX controls in the XML-based [version list](https://go.microsoft.com/fwlink/?LinkId=403864).

@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
@@ -358,8 +358,8 @@ The default value is an empty string. For more information, see [ServicesAllowed
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
 - [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-<!--EndHoloLensBusiness-->
-<hr/>
+  <!--EndHoloLensBusiness-->
+  <hr/>
 
 Footnotes:
 

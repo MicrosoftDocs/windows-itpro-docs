@@ -20,9 +20,9 @@ ms.date: 06/16/2016
 The process for creating a report from the Application Virtualization Server Management Console is the same regardless of the report type. When you select a report type, the window displays a brief description of the selected report.
 
 **Note**  
-  When you create a report, you specify the parameters that are used for collecting the data when the report is run. Until you run a report, no data is collected.
+  When you create a report, you specify the parameters that are used for collecting the data when the report is run. Until you run a report, no data is collected.
 
- 
+ 
 
 **To create a report**
 
@@ -51,9 +51,9 @@ The process for creating a report from the Application Virtualization Server Man
 
 [How to Run a Report](how-to-run-a-reportserver.md)
 
- 
+ 
 
- 
+ 
 
 
 
