@@ -5,7 +5,7 @@ author: manikadhiman
 ms.assetid: a076eb5a-ce3d-49e4-ac7a-4d4df10e3477
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
