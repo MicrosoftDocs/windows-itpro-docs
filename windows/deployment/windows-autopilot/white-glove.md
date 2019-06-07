@@ -37,6 +37,7 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 - An Intune subscription.
 - Physical devices that support TPM 2.0 and device attestation; virtual machines are not supported.  The white glove provisioning process leverages Windows Autopilot self-deploying capabilities, hence the TPM 2.0 requirements.
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
+- Devices slated for WG provisioning are registered for Autopilot via the normal registration process.
 
 ## Preparation
 
@@ -47,9 +48,12 @@ To be ready to try out Windows Autopilot for white glove deployment, ensure that
 
 If these scenarios cannot be completed, Windows Autopilot for white glove deployment will also not succeed since it builds on top of these scenarios.
 
-To enable white glove deployment, an additional Autopilot profile setting must be configured:
+To enable white glove deployment, an additional Autopilot profile setting must be configured by the customer or IT Admin via their Intune account (before WG is ever launched in the provisioning service facility):
 
  ![allow white glove](images/allow-white-glove-oobe.png)
+
+>[!NOTE]
+>Presently, Configuration Manager does not support WG provisioning, so Intune must be used.
 
 The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  
 
@@ -65,7 +69,7 @@ Each of these scenarios consists of two parts, a technician flow and a user flow
 
 ### Technican flow
 
-The first part of the Windows Autopilot for white glove deployment process is designed to be carried out by a technician; this could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
+After the customer or IT Admin has targeted all the apps and settings they want for their devices through Intune, the WG technician can begin the WG process.  The technician could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
 Regardless of the scenario, the process to be performed by the technician is the same:
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
 - From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
@@ -77,6 +81,10 @@ Regardless of the scenario, the process to be performed by the technician is the
     - The organization name for the device.
     - The user assigned to the device (if there is one).
     - A QR code containing a unique identifier for the device, useful to look up the device in Intune to make any configuration changes needed (e.g. assigning a user, adding the device to any additional groups needed for app or policy targeting).
+    
+>[!NOTE]
+>The QR codes can be scanned using a companion app, which will also configure the device (e.g. to specify who it belongs to) just in time.  An open-source sample of the companion app that integrates with Intune via the Graph API will be published to GitHub by the Autopilot team.
+
 - Validate the information displayed.  If any changes are needed, make these and then click **Refresh** to re-download the updated Autopilot profile details.
 
   ![landing](images/landing.png)
