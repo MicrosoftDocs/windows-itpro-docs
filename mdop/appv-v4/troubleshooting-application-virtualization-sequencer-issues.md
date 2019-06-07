@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Application Virtualization Sequencer Issues
 description: Troubleshooting Application Virtualization Sequencer Issues
-author: v-madhi
+author: manikadhiman
 ms.assetid: 2712094b-a0bc-4643-aced-5415535f3fec
 ms.reviewer: 
 manager: dansimp

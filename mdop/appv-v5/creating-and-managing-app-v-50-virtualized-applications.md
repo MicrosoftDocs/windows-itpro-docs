@@ -1,7 +1,7 @@
 ---
 title: Creating and Managing App-V 5.0 Virtualized Applications
 description: Creating and Managing App-V 5.0 Virtualized Applications
-author: v-madhi
+author: manikadhiman
 ms.assetid: 66bab403-d7e0-4e7b-bc8f-a29a98a7160a
 ms.reviewer: 
 manager: dansimp

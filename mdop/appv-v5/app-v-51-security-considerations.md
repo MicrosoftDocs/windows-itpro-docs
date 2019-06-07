@@ -1,7 +1,7 @@
 ---
 title: App-V 5.1 Security Considerations
 description: App-V 5.1 Security Considerations
-author: v-madhi
+author: manikadhiman
 ms.assetid: 6bc6c1fc-f813-47d4-b763-06fd4faf6a72
 ms.reviewer: 
 manager: dansimp
