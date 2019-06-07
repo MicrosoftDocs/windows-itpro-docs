@@ -4,6 +4,7 @@
 
 ## Overview
 ### [What's new in Surface Hub 2S](surface-hub-2s-whats-new.md)
+### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
 
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 
@@ -17,6 +18,8 @@
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
+### [Configure Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
+
 
 
 ## Manage
@@ -25,7 +28,7 @@
 ### [Servicing and updating for Surface Hub 2S](surface-hub-2s-service-update.md)
 
 ## Secure
-### [Conditional access for Surface Hub 2S](surface-hub-2s-conditional-access.md)
+
 ### [Securing Surface Hub 2S with SEMM](surface-hub-2s-secure-with-semm.md)
 ### [Securing Surface Hub 2S with UEFI](surface-hub-2s-secure-with-uefi.md)
 
