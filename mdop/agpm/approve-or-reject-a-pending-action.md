@@ -42,7 +42,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
     **Note**  
     If an Approver's e-mail address is included in the **To** field on the **Domain** **Delegation** tab, the Approver will receive e-mail from the AGPM alias when an Editor or Reviewer submits a request.
 
-     
+     
 
 ### Additional considerations
 
@@ -52,9 +52,9 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 
 -   [Performing Approver Tasks](performing-approver-tasks.md)
 
- 
+ 
 
- 
+ 
 
 
 

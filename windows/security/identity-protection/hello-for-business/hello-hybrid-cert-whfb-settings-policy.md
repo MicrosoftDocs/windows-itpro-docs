@@ -187,10 +187,10 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Enable the Use certificate for on-premises authentication policy setting.
 > * Enable user automatic certificate enrollment.
 > * Add users or groups to the Windows Hello for Business group
-
-
+> 
+> 
 > [!div class="nextstepaction"]
-[Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+> [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 
 <br><br>
 

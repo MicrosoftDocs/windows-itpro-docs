@@ -55,7 +55,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled |
 | Member Server Effective Default Settings | Disabled |
 | Client Computer Effective Default Settings | Disabled |
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
@@ -75,5 +75,5 @@ All network users must be authenticated before they can access shared resources.
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

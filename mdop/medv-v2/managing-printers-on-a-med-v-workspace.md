@@ -29,14 +29,14 @@ In most cases, MED-V handles printer redirection automatically. After first time
 **Note**  
 If applications are running on the MED-V workspace, the end user is prompted to let the restart continue or postpone it until later. If no applications are running, the restart is automatic and not shown to the end user.
 
- 
+ 
 
 Every time MED-V is re-started, it checks whether any new printers are installed on the host and, if found, retrieves the corresponding drivers from the network print server and installs them on the guest. MED-V then restarts the MED-V workspace just as when first time setup was completed.
 
 **Important**  
 After the relevant drivers are installed on the guest, the printers only become visible on the guest after the restart occurs.
 
- 
+ 
 
 If at any time a driver cannot be located or installed, it must be manually installed on the guest for the network printer to be available to the end user.
 
@@ -51,16 +51,16 @@ The following list offers some additional guidance:
 **Warning**  
 If a printer is manually installed on the guest, and the same printer is later installed on the host, the result is that the printer is installed two times in the guest. To avoid this situation, a MED-V best practice is to manage printer redirection in one manner only: either disable redirection and install printers manually on the guest, or enable redirection and do not install printers manually on the guest.
 
- 
+ 
 
 ## Related topics
 
 
 [Manage MED-V Workspace Settings](manage-med-v-workspace-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

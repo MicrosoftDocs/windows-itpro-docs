@@ -19,10 +19,10 @@ ms.date: 06/16/2016
 
 In a deployment package-based scenario, the MED-V client installation is included in the deployment package and installed directly from the package.
 
-**Important**  
+**Important**  
 When using a deployment package that does not include an image, ensure that the image is uploaded to the Web or pushed to the pre-stage folder prior to installing the deployment package.
 
- 
+
 
 **To install a deployment package**
 
@@ -36,27 +36,29 @@ When using a deployment package that does not include an image, ensure that the 
 
     A dialog box appears listing the components that are already installed and those that are currently being installed.
 
-    **Note**  
+    **Note**  
     If a version of the Microsoft Virtual PC that is not supported exists on the host computer, a message will appear telling you to uninstall the existing version and run the installer again.
 
-     
 
-    **Note**  
-    If an older version of the MED-V client exists, it will prompt you asking whether you want to upgrade.
 
-     
+~~~
+**Note**  
+If an older version of the MED-V client exists, it will prompt you asking whether you want to upgrade.
 
-    Depending on the components that have been installed, you might need to reboot. If rebooting is necessary, a message appears notifying you that you must reboot.
 
-3.  If necessary, reboot the computer.
 
-    When the installation is complete, MED-V starts and a message appears notifying you that the installation is complete.
+Depending on the components that have been installed, you might need to reboot. If rebooting is necessary, a message appears notifying you that you must reboot.
+~~~
 
-4.  Log in to MED-V using the following user name and password:
+3. If necessary, reboot the computer.
 
-    -   Type in the domain name and user name followed by the password of the domain user who is permitted to work with MED-V.
+   When the installation is complete, MED-V starts and a message appears notifying you that the installation is complete.
 
-        Example: "domain\_name\\user\_name", "password"
+4. Log in to MED-V using the following user name and password:
+
+   -   Type in the domain name and user name followed by the password of the domain user who is permitted to work with MED-V.
+
+       Example: "domain\_name\\user\_name", "password"
 
 ## Related topics
 
@@ -67,9 +69,9 @@ When using a deployment package that does not include an image, ensure that the 
 
 [Client Installation Command Line Reference](client-installation-command-line-reference.md)
 
- 
 
- 
+
+
 
 
 

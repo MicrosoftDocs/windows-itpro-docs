@@ -22,7 +22,7 @@ The scratch directory is used by the App-V Sequencer to save temporary files dur
 **Important**  
 The specified scratch directory location should be located on the computer running the App-V Sequencer.
 
- 
+ 
 
 Use the following procedure to modify the scratch directory location.
 
@@ -43,9 +43,9 @@ Use the following procedure to modify the scratch directory location.
 
 [How to Modify the Log Directory Location](how-to-modify-the-log-directory-location.md)
 
- 
+ 
 
- 
+ 
 
 
 

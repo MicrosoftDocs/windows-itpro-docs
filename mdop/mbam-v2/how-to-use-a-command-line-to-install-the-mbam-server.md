@@ -91,7 +91,7 @@ The following table describes the command line parameters for deploying the MBAM
 </tr>
 <tr class="even">
 <td align="left"><p>REPORTS_USERACCOUNT</p></td>
-<td align="left"><p>[UserDomain]\[UserName1]</p></td>
+<td align="left"><p>[UserDomain][UserName1]</p></td>
 <td align="left"><p>Domain and user account of the Reporting Services service account that will access the Compliance and Audit database</p></td>
 </tr>
 <tr class="odd">
@@ -127,7 +127,7 @@ The following table describes the command line parameters for deploying the MBAM
 </tbody>
 </table>
 
- 
+ 
 
 ## Command Line for Deploying the MBAM 2.0 Server with the Configuration Manager Topology
 
@@ -181,7 +181,7 @@ The following table describes the command line parameters for installing the MBA
 </tr>
 <tr class="even">
 <td align="left"><p>REPORTS_USERACCOUNT</p></td>
-<td align="left"><p>[UserDomain]\[UserName1]</p></td>
+<td align="left"><p>[UserDomain][UserName1]</p></td>
 <td align="left"><p>Domain and user account of the Reporting Services service account that will access the Compliance and Audit database</p></td>
 </tr>
 <tr class="odd">
@@ -202,16 +202,16 @@ The following table describes the command line parameters for installing the MBA
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Deploying the MBAM 2.0 Server Infrastructure](deploying-the-mbam-20-server-infrastructure-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

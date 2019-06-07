@@ -47,12 +47,12 @@ ms.date: 06/16/2016
 </tr>
 <tr class="odd">
 <td align="left"><p>Example file path</p></td>
-<td align="left"><p>%APPDATA%\Microsoft\AppV\Client\Catalog\PackageGroups\{6CCC7575-162E-4152-9407-ED411DA138F4}\{4D1E16E1-8EF8-41ED-92D5-8910A8527F96}.</p></td>
+<td align="left"><p>%APPDATA%\Microsoft\AppV\Client\Catalog\PackageGroups{6CCC7575-162E-4152-9407-ED411DA138F4}{4D1E16E1-8EF8-41ED-92D5-8910A8527F96}.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-define-cg-5-0sp3"></a>Structure of the connection group XML file
 
@@ -87,7 +87,7 @@ The following table describes the parameters in the XML file that define the con
 <td align="left"><p>Schema name</p></td>
 <td align="left"><p>Name of the schema.</p>
 <p><strong>Applicable starting in App-V 5.0 SP3</strong>: If you want to use the new “optional packages” and “use any version” features that are described in this table, you must specify the following schema in the XML file:</p>
-<p><code>xmlns=&quot;http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot;</code></p></td>
+<p><code>xmlns=&quot;<a href="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AppConnectionGroupId</p></td>
@@ -112,7 +112,7 @@ The following table describes the parameters in the XML file that define the con
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-params-define-pkgs-incg"></a>Parameters that define the packages in the connection group
 
@@ -146,12 +146,12 @@ In the &lt;Packages&gt; section of the connection group XML file, you list the m
 <li><p><strong>“true”</strong> – package is optional in the connection group</p></li>
 <li><p><strong>“false”</strong> – package is required in the connection group</p></li>
 </ul>
-<p>See [How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md).</p></td>
+<p>See <a href="how-to-use-optional-packages-in-connection-groups.md" data-raw-source="[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md)">How to Use Optional Packages in Connection Groups</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-50sp3-exp-cg-xml"></a>App-V 5.0 SP3 example connection group XML file
 
@@ -221,7 +221,7 @@ You can use the connection group file to configure each connection group by usin
     **Note**  
     Priority is required only if the package is associated with more than one connection group.
 
-     
+     
 
 -   Specify package precedence within the connection group.
 
@@ -316,7 +316,7 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -328,9 +328,9 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,6 +67,7 @@ The following is a breakdown of the different sections available in Update Compl
 Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear. The  process that follows is as follows:
 
 Update Compliance is refreshed every 12 hours. This means that every 12 hours all data that has been gathered over the last 12-hour interval is pushed to Log Analytics. However, the rate that each data type is sent and how long it takes to be ready for Update Compliance varies, roughly outlined below.
+
 | Data Type | Refresh Rate | Data Latency |
 |--|--|--|
 |WaaSUpdateStatus | Once per day |4 hours |

@@ -26,7 +26,7 @@ After installing Microsoft BitLocker Administration and Monitoring (MBAM) with C
     **Note**  
     To validate the installation, you must use a domain account that has local computer administrative credentials on each server.
 
-     
+     
 
 2.  Use the Configuration Manager console to confirm that a new collection, called “MBAM Supported Computers,” is displayed.
 
@@ -69,9 +69,9 @@ After installing Microsoft BitLocker Administration and Monitoring (MBAM) with C
 
 [Deploying MBAM with Configuration Manager](deploying-mbam-with-configuration-manager-mbam2.md)
 
- 
+ 
 
- 
+ 
 
 
 

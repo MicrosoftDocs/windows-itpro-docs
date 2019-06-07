@@ -90,11 +90,11 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 1. Exit Word 2010.
 2. Start the Registry Editor by doing the following:
 
-    * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
+   * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
 
-    * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
+   * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
 
-    If you're prompted for an administrator password, enter the password. If you're prompted for a confirmation, select **Continue**.
+     If you're prompted for an administrator password, enter the password. If you're prompted for a confirmation, select **Continue**.
 3. Locate and then select the following registry subkey:
 
     ``` syntax

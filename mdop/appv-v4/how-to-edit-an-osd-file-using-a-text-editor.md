@@ -26,7 +26,7 @@ Use the following procedure to edit an Open Software Descriptor (OSD) file by us
     **Note**  
     Before modifying the OSD file, read the schema prescribed by the XSD file in the install directory. Failing to follow this schema might introduce errors that prevent a sequenced application from starting successfully.
 
-     
+     
 
 2.  Edit the OSD file using your XML or ASCII text editor of choice, adhering to the prescribed schema and the following guidelines:
 
@@ -47,9 +47,9 @@ Use the following procedure to edit an Open Software Descriptor (OSD) file by us
 
 [OSD File Elements](osd-file-elements.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,7 +67,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Not defined| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -96,7 +96,7 @@ Users often do not understand the importance of security practices. However, the
 Configure the [Interactive logon: Message text for users attempting to log on](interactive-logon-message-text-for-users-attempting-to-log-on.md) and **Interactive logon: Message title for users attempting to log on** settings to an appropriate value for your organization.
 
 >**Note:**  Any warning message that displays should be approved by your organization's legal and human resources representatives.
- 
+ 
 ### Potential impact
 
 Users see a message in a dialog box before they can log on to the server console.

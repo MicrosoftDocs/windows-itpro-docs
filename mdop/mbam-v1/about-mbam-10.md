@@ -24,7 +24,7 @@ With Microsoft BitLocker Administration and Monitoring, you can select the BitLo
 **Note**  
 BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
- 
+ 
 
 The following groups might be interested in using MBAM to manage BitLocker:
 
@@ -46,9 +46,9 @@ For more information and for latest updates, see [Release Notes for MBAM 1.0](re
 
 [Getting Started with MBAM 1.0](getting-started-with-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ You can access most commands by using two keystrokes. To use an access key:
 **Note**  
 To cancel the action that you are taking and hide the keyboard shortcuts, press ALT.
 
- 
+ 
 
 ### Documentation in alternative formats
 
@@ -66,13 +66,13 @@ For information about the availability of Microsoft product documentation and bo
 <td align="left"><p>(609) 987-8116</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[http://www.learningally.org/](https://go.microsoft.com/fwlink/p/?linkid=239)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=239" data-raw-source="[http://www.learningally.org/](https://go.microsoft.com/fwlink/p/?linkid=239)">http://www.learningally.org/</a></p></td>
 <td align="left"><p>Web addresses can change, so you might be unable to connect to the website or sites that are mentioned here.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Customer service for people with hearing impairments
 
@@ -94,9 +94,9 @@ For more information about how accessible technology for computers can help to i
 
 [Getting Started With User Experience Virtualization 1.0](getting-started-with-user-experience-virtualization-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

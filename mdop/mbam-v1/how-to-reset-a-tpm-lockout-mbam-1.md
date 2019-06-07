@@ -38,7 +38,7 @@ A TPM lockout can occur if a user enters an incorrect PIN too many times. The nu
     **Note**  
     If you are an Advanced Helpdesk User, the user domain and user ID fields are not required.
 
-     
+     
 
 5.  Upon retrieval, the owner password is displayed. To save this password to a .tpm file, click the **Save** button.
 
@@ -49,9 +49,9 @@ A TPM lockout can occur if a user enters an incorrect PIN too many times. The nu
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam.md)
 
- 
+ 
 
- 
+ 
 
 
 

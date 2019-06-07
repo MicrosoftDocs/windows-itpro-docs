@@ -22,7 +22,7 @@ When you install Microsoft BitLocker Administration and Monitoring (MBAM), you c
 **Important**  
 Windows To Go is not supported when you install the integrated topology of MBAM with Configuration Manager 2007.
 
- 
+ 
 
 ## Using MBAM with Configuration Manager
 
@@ -97,9 +97,9 @@ A description of the servers, databases, and features of this architecture follo
 
 [Using MBAM with Configuration Manager](using-mbam-with-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

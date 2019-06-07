@@ -37,9 +37,9 @@ Basic security audit policy settings are found under Computer Configuration\\Win
 | [Audit privilege use](basic-audit-privilege-use.md) | Determines whether to audit each instance of a user exercising a user right. |
 | [Audit process tracking](basic-audit-process-tracking.md) | Determines whether to audit detailed tracking information for events such as program activation, process exit, handle duplication, and indirect object access.| 
 | [Audit system events](basic-audit-system-events.md) | Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log. |
- 
+ 
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+ 
+ 

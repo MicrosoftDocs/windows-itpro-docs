@@ -30,7 +30,7 @@ The default installation of the App-V Management Console includes support for se
     **Important**  
     The name provided in the Web Service Host Name must match the common name on the certificate, or the connection will fail.
 
-     
+     
 
 4.  Select the appropriate login credentials, and click **OK**.
 
@@ -39,9 +39,9 @@ The default installation of the App-V Management Console includes support for se
 
 [Configuring Certificates to Support the App-V Web Management Service](configuring-certificates-to-support-the-app-v-web-management-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

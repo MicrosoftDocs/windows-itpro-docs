@@ -26,7 +26,7 @@ If the Management Server is configured to use RTSP, repeat this procedure to add
 
 The App-V Streaming Server requires the program exception `sglwdsptr.exe` for RTSPS communication. An App-V Streaming Server that uses RTSP for communication also requires a program exception for `sglwsvr.exe`.
 
- 
+ 
 
 **To configure Windows Server 2008 firewall for App-V**
 
@@ -49,9 +49,9 @@ The App-V Streaming Server requires the program exception `sglwdsptr.exe` for RT
 
 [How to Configure Windows Server 2003 Firewall for App-V](how-to-configure-windows-server-2003-firewall-for-app-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

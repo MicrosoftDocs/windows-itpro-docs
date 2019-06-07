@@ -59,5 +59,5 @@ You can delete a computer by clicking on it in the product list view, and then c
 ## Related topics
 
 - [Add and Manage Products](add-manage-products-vamt.md)
- 
- 
+ 
+ 

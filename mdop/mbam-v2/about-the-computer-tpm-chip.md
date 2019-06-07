@@ -29,7 +29,7 @@ After BitLocker is configured, you can access additional information about the T
 **Note**  
 You must have administrative credentials on your computer to access this tool.
 
- 
+ 
 
 In a TPM failure, a change in the BIOS, or certain Windows Updates, BitLocker will lock your computer and require you to contact your Help Desk to unlock it. You have to provide the name of your computer as well as your computer’s domain. Help Desk can give you a password file that can be used to unlock your computer.
 
@@ -45,9 +45,9 @@ If a TPM failure, change in the BIOS, or certain Windows Updates occur, BitLocke
 
 [Using Your PIN or Password](using-your-pin-or-password.md)
 
- 
+ 
 
- 
+ 
 
 
 

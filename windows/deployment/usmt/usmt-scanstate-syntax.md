@@ -16,7 +16,7 @@ ms.topic: article
 # ScanState Syntax
 
 
-The ScanState command is used with the User State Migration Tool (USMT) 10.0 to scan the source computer, collect the files and settings, and create a store.
+The ScanState command is used with the User State Migration Tool (USMT) 10.0 to scan the source computer, collect the files and settings, and create a store.
 
 ## In This Topic
 
@@ -122,32 +122,31 @@ To create an encrypted store using the Config.xml file and the default migration
 <li><p><strong>/key:</strong><em>KeyString</em> specifies the encryption key. If there is a space in <em>KeyString</em>, you will need to surround <em>KeyString</em> with quotation marks.</p></li>
 <li><p><strong>/keyfile:</strong><em>FilePathAndName</em> specifies a text (.txt) file that contains the encryption key.</p></li>
 </ul>
-<p>We recommend that <em>KeyString</em> be at least eight characters long, but it cannot exceed 256 characters. The <strong>/key</strong> and <strong>/keyfile</strong> options cannot be used on the same command line. The <strong>/encrypt</strong> and <strong>/nocompress</strong> options cannot be used on the same command line.</p>
+<p>We recommend that <em>KeyString</em> be at least eight characters long, but it cannot exceed 256 characters. The <strong>/key</strong> and <strong>/keyfile</strong> options cannot be used on the same command line. The <strong>/encrypt</strong> and <strong>/nocompress</strong> options cannot be used on the same command line.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>You should use caution with this option, because anyone who has access to the <strong>ScanState</strong> command-line script will also have access to the encryption key.</p>
+<strong>Important</strong><br/><p>You should use caution with this option, because anyone who has access to the <strong>ScanState</strong> command-line script will also have access to the encryption key.</p>
 </div>
 <div>
- 
+
 </div>
 <p>The following example shows the ScanState command and the <strong>/key</strong> option:</p>
-<p><code>scanstate /i:migdocs.xml /i:migapp.xml \\server\share\migration\mystore /encrypt /key:mykey</code></p></td>
+<p><code>scanstate /i:migdocs.xml /i:migapp.xml \server\share\migration\mystore /encrypt /key:mykey</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/encrypt</strong>:<em>&lt;EncryptionStrength&gt;</em></p></td>
-<td align="left"><p>The <strong>/encrypt</strong> option accepts a command-line parameter to define the encryption strength to be used for encryption of the migration store. For more information about supported encryption algorithms, see [Migration Store Encryption](usmt-migration-store-encryption.md).</p></td>
+<td align="left"><p>The <strong>/encrypt</strong> option accepts a command-line parameter to define the encryption strength to be used for encryption of the migration store. For more information about supported encryption algorithms, see <a href="usmt-migration-store-encryption.md" data-raw-source="[Migration Store Encryption](usmt-migration-store-encryption.md)">Migration Store Encryption</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/nocompress</strong></p></td>
 <td align="left"><p>Disables compression of data and saves the files to a hidden folder named &quot;File&quot; at <em>StorePath</em>\USMT. Compression is enabled by default. Combining the <strong>/nocompress</strong> option with the <strong>/hardlink</strong> option generates a hard-link migration store. You can use the uncompressed store to view what USMT stored, troubleshoot a problem, or run an antivirus utility against the files. You should use this option only in testing environments, because we recommend that you use a compressed store during your actual migration, unless you are combining the <strong>/nocompress</strong> option with the <strong>/hardlink</strong> option.</p>
 <p>The <strong>/nocompress</strong> and <strong>/encrypt</strong> options cannot be used together in one statement on the command line. However, if you do choose to migrate an uncompressed store, the <strong>LoadState</strong> command will migrate each file directly from the store to the correct location on the destination computer without a temporary location.</p>
 <p>For example:</p>
-<p><code>scanstate /i:migdocs.xml /i:migapp.xml \\server\share\migration\mystore /nocompress</code></p></td>
+<p><code>scanstate /i:migdocs.xml /i:migapp.xml \server\share\migration\mystore /nocompress</code></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="run-the-scanstate-command-on-an-offline-windows-system-"></a>Run the ScanState Command on an Offline Windows System
 
@@ -202,7 +201,7 @@ There are several benefits to running the **ScanState** command on an offline Wi
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-migrationruleoptions"></a>Migration Rule Options
 
@@ -222,12 +221,12 @@ USMT provides the following options to specify what files you want to migrate.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>/i:</strong>[<em>Path</em>\]<em>FileName</em></p></td>
+<td align="left"><p><strong>/i:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p><strong>(include)</strong></p>
-<p>Specifies an .xml file that contains rules that define what user, application or system state to migrate. You can specify this option multiple times to include all of your .xml files (MigApp.xml, MigDocs.xml, and any custom .xml files that you create). <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory. For more information about which files to specify, see the &quot;XML Files&quot; section of the [Frequently Asked Questions](usmt-faq.md) topic.</p></td>
+<p>Specifies an .xml file that contains rules that define what user, application or system state to migrate. You can specify this option multiple times to include all of your .xml files (MigApp.xml, MigDocs.xml, and any custom .xml files that you create). <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory. For more information about which files to specify, see the &quot;XML Files&quot; section of the <a href="usmt-faq.md" data-raw-source="[Frequently Asked Questions](usmt-faq.md)">Frequently Asked Questions</a> topic.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/genconfig:</strong>[<em>Path</em>\]<em>FileName</em></p></td>
+<td align="left"><p><strong>/genconfig:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p>(Generate <strong>Config.xml</strong>)</p>
 <p>Generates the optional Config.xml file, but does not create a migration store. To ensure that this file contains every component, application and setting that can be migrated, you should create this file on a source computer that contains all the components, applications and settings that will be present on the destination computers. In addition, you should specify the other migration .xml files, using the <strong>/i</strong> option, when you specify this option.</p>
 <p>After you create this file, you will need to make use of it with the <strong>ScanState</strong> command using the <strong>/config</strong> option.</p>
@@ -239,12 +238,12 @@ USMT provides the following options to specify what files you want to migrate.
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>/config:</strong>[<em>Path\</em>]<em>FileName</em></p></td>
+<td align="left"><p><strong>/config:</strong>[<em>Path&lt;/em&gt;]<em>FileName</em></p></td>
 <td align="left"><p>Specifies the Config.xml file that the <strong>ScanState</strong> command should use to create the store. You cannot use this option more than once on the command line. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory.</p>
 <p>The following example creates a store using the Config.xml file, MigDocs.xml, and MigApp.xml files:</p>
-<p><code>scanstate \\server\share\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:scan.log</code></p>
+<p><code>scanstate \server\share\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:scan.log</code></p>
 <p>The following example migrates the files and settings to the destination computer using the <strong>Config.xml</strong>, <strong>MigDocs.xml</strong>, and <strong>MigApp.xml</strong> files:</p>
-<p><code>loadstate \\server\share\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:load.log</code></p></td>
+<p><code>loadstate \server\share\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:load.log</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/auto:</strong><em>path to script files</em></p></td>
@@ -256,24 +255,24 @@ USMT provides the following options to specify what files you want to migrate.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/targetwindows8</strong></p></td>
-<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 8 or Windows 8.1 instead of Windows 10. You should use this command line option in the following scenarios:</p>
+<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 8 or Windows 8.1 instead of Windows 10. You should use this command line option in the following scenarios:</p>
 <ul>
-<li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows8</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 8 or Windows 8.1.</p></li>
+<li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows8</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 8 or Windows 8.1.</p></li>
 <li><p><strong>To create a migration store.</strong> Using the <strong>/targetwindows8</strong> option ensures that the ScanState tool gathers the correct set of operating system settings. Without the <strong>/targetwindows8</strong> command-line option, some settings can be lost during the migration.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/targetwindows7</strong></p></td>
-<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 7 instead of Windows 10. You should use this command line option in the following scenarios:</p>
+<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 7 instead of Windows 10. You should use this command line option in the following scenarios:</p>
 <ul>
-<li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows7</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 7.</p></li>
+<li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows7</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 7.</p></li>
 <li><p><strong>To create a migration store.</strong> Using the <strong>/targetwindows7</strong> option ensures that the ScanState tool gathers the correct set of operating system settings. Without the <strong>/targetwindows7</strong> command-line option, some settings can be lost during the migration.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/localonly</strong></p></td>
 <td align="left"><p>Migrates only files that are stored on the local computer, regardless of the rules in the .xml files that you specify on the command line. You should use this option when you want to exclude the data from removable drives on the source computer, such as USB flash drives (UFDs), some external hard drives, and so on, and when there are network drives mapped on the source computer. If the <strong>/localonly</strong> option is not specified, then the <strong>ScanState</strong> command will copy files from these removable or network drives into the store.</p>
-<p>Anything that is not considered a fixed drive by the OS will be excluded by <strong>/localonly</strong>. In some cases large external hard drives are considered fixed drives. These drives can be explicitly excluded from migration by using a custom.xml file. For more information about how to exclude all files on a specific drive, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md).</p>
+<p>Anything that is not considered a fixed drive by the OS will be excluded by <strong>/localonly</strong>. In some cases large external hard drives are considered fixed drives. These drives can be explicitly excluded from migration by using a custom.xml file. For more information about how to exclude all files on a specific drive, see <a href="usmt-exclude-files-and-settings.md" data-raw-source="[Exclude Files and Settings](usmt-exclude-files-and-settings.md)">Exclude Files and Settings</a>.</p>
 <p>The <strong>/localonly</strong> command-line option includes or excludes data in the migration as identified in the following table:</p>
 <table>
 <colgroup>
@@ -301,22 +300,22 @@ USMT provides the following options to specify what files you want to migrate.
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-monitoringoptions"></a>Monitoring Options
 
 
 USMT provides several options that you can use to analyze problems that occur during migration.
 
-**Note**  
+**Note**  
 The ScanState log is created by default, but you can specify the name and location of the log with the **/l** option.
 
- 
+
 
 <table>
 <colgroup>
@@ -335,7 +334,7 @@ The ScanState log is created by default, but you can specify the name and locati
 <td align="left"><p>You can use the <strong>/listfiles</strong> command-line option with the <strong>ScanState</strong> command to generate a text file that lists all of the files included in the migration.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/l:</strong>[<em>Path</em>\]<em>FileName</em></p></td>
+<td align="left"><p><strong>/l:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p>Specifies the location and name of the ScanState log.</p>
 <p>You cannot store any of the log files in <em>StorePath</em>. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then the log will be created in the current directory. You can use the <strong>/v</strong> option to adjust the amount of output.</p>
 <p>If you run the <strong>ScanState</strong> or <strong>LoadState</strong> commands from a shared network resource, you must specify this option or USMT will fail with the following error: &quot;USMT was unable to create the log file(s)&quot;. To fix this issue, use the /<strong>l:scan.log</strong> command.</p></td>
@@ -391,16 +390,16 @@ The ScanState log is created by default, but you can specify the name and locati
 </tr>
 </tbody>
 </table>
-<p> </p>
+<p> </p>
 <p>For example:</p>
-<p><code>scanstate \\server\share\migration\mystore /v:13 /i:migdocs.xml /i:migapp.xml</code></p>
+<p><code>scanstate \server\share\migration\mystore /v:13 /i:migdocs.xml /i:migapp.xml</code></p>
 <p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>/<strong>progress</strong>:[<em>Path\</em>]<em>FileName</em></p></td>
+<td align="left"><p>/<strong>progress</strong>:[<em>Path&lt;/em&gt;]<em>FileName</em></p></td>
 <td align="left"><p>Creates the optional progress log. You cannot store any of the log files in <em>StorePath</em>. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> will be created in the current directory.</p>
 <p>For example:</p>
-<p><code>scanstate /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore /progress:prog.log /l:scanlog.log</code></p></td>
+<p><code>scanstate /i:migapp.xml /i:migdocs.xml \server\share\migration\mystore /progress:prog.log /l:scanlog.log</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/c</strong></p></td>
@@ -416,14 +415,14 @@ The ScanState log is created by default, but you can specify the name and locati
 <tr class="odd">
 <td align="left"><p><strong>/w:</strong><em>&lt;SecondsBeforeRetry&gt;</em></p></td>
 <td align="left"><p><strong>(Wait)</strong></p>
-<p>Specifies the time to wait, in seconds, before retrying a network file operation. The default is 1 second.</p></td>
+<p>Specifies the time to wait, in seconds, before retrying a network file operation. The default is 1 second.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/p:</strong><em>&lt;pathToFile&gt;</em></p></td>
 <td align="left"><p>When the <strong>ScanState</strong> command runs, it will create an .xml file in the path specified. This .xml file includes improved space estimations for the migration store. The following example shows how to create this .xml file:</p>
 <p><code>Scanstate.exe C:\MigrationLocation [additional parameters]</code></p>
 <p><code>/p:&quot;C:\MigrationStoreSize.xml&quot;</code></p>
-<p>For more information, see [Estimate Migration Store Size](usmt-estimate-migration-store-size.md).</p>
+<p>For more information, see <a href="usmt-estimate-migration-store-size.md" data-raw-source="[Estimate Migration Store Size](usmt-estimate-migration-store-size.md)">Estimate Migration Store Size</a>.</p>
 <p>To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, you can use the <strong>/p</strong> option, without specifying <em>&quot;pathtoafile&quot;</em>, in USMT. If you specify only the <strong>/p</strong> option, the storage space estimations are created in the same manner as with USMT3.x releases.</p></td>
 </tr>
 <tr class="odd">
@@ -433,7 +432,7 @@ The ScanState log is created by default, but you can specify the name and locati
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-useroptions"></a>User Options
 
@@ -462,21 +461,20 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p>or</p>
 <p>/<strong>ui</strong>:<em>&lt;ComputerName&gt;</em>&#92;<em>&lt;LocalUserName&gt;</em></p></td>
 <td align="left"><p><strong>(User include)</strong></p>
-<p>Migrates the specified users. By default, all users are included in the migration. Therefore, this option is helpful only when used with the /<strong>ue</strong> or /<strong>uel</strong> options. You can specify multiple /<strong>ui</strong> options, but you cannot use the /<strong>ui</strong> option with the /<strong>all</strong> option. <em>DomainName</em> and <em>UserName</em> can contain the asterisk (*) wildcard character. When you specify a user name that contains spaces, you will need to surround it with quotation marks.</p>
+<p>Migrates the specified users. By default, all users are included in the migration. Therefore, this option is helpful only when used with the /<strong>ue</strong> or /<strong>uel</strong> options. You can specify multiple /<strong>ui</strong> options, but you cannot use the /<strong>ui</strong> option with the /<strong>all</strong> option. <em>DomainName</em> and <em>UserName</em> can contain the asterisk (<em>) wildcard character. When you specify a user name that contains spaces, you will need to surround it with quotation marks.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If a user is specified for inclusion with the /<strong>ui</strong> option, and also is specified to be excluded with either the /<strong>ue</strong> or /<strong>uel</strong> options, the user will be included in the migration.</p>
+<strong>Note</strong><br/><p>If a user is specified for inclusion with the /<strong>ui</strong> option, and also is specified to be excluded with either the /<strong>ue</strong> or /<strong>uel</strong> options, the user will be included in the migration.</p>
 </div>
 <div>
- 
+
 </div>
 <p>For example:</p>
 <ul>
 <p>To include only User2 from the Fabrikam domain, type:</p>
 <p><code>/ue:&#42;&#92;&#42; /ui:fabrikam\user2</code></p>
-<p>To migrate all users from the Fabrikam domain, and only the user accounts from other domains that have been active or otherwise modified in the last 30 days, type:</p>
+<p>To migrate all users from the Fabrikam domain, and only the user accounts from other domains that have been active or otherwise modified in the last 30 days, type:</p>
 <p><code>/uel:30 /ui:fabrikam&#92;&#42;</code></p>
-<p>In this example, a user account from the Contoso domain that was last modified 2 months ago will not be migrated.</p></li>
+<p>In this example, a user account from the Contoso domain that was last modified 2 months ago will not be migrated.</p></li>
 </ul>
 <p>For more examples, see the descriptions of the /<strong>ue</strong> and /<strong>ui</strong> options in this table.</p></td>
 </tr>
@@ -487,19 +485,18 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p>or</p>
 <p><strong>/uel:0</strong></p></td>
 <td align="left"><p><strong>(User exclude based on last logon)</strong></p>
-<p>Migrates the users that logged onto the source computer within the specified time period, based on the <strong>Last Modified</strong> date of the Ntuser.dat file on the source computer. The /<strong>uel</strong> option acts as an include rule. For example, the <strong>/uel:30</strong> option migrates users who logged on, or whose account was modified, within the last 30 days from the date when the ScanState command is run.</p>
+<p>Migrates the users that logged onto the source computer within the specified time period, based on the <strong>Last Modified</strong> date of the Ntuser.dat file on the source computer. The /<strong>uel</strong> option acts as an include rule. For example, the <strong>/uel:30</strong> option migrates users who logged on, or whose account was modified, within the last 30 days from the date when the ScanState command is run.</p>
 <p>You can specify a number of days or you can specify a date. You cannot use this option with the /<strong>all</strong> option. USMT retrieves the last logon information from the local computer, so the computer does not need to be connected to the network when you run this option. In addition, if a domain user has logged onto another computer, that logon instance is not considered by USMT.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The /<strong>uel</strong> option is not valid in offline migrations.</p>
+<strong>Note</strong><br/><p>The /<strong>uel</strong> option is not valid in offline migrations.</p>
 </div>
 <div>
- 
+
 </div>
 <ul>
 <li><p><strong>/uel:0</strong> migrates any users who are currently logged on.</p></li>
-<li><p><strong>/uel:90</strong> migrates users who have logged on, or whose accounts have been otherwise modified, within the last 90 days.</p></li>
-<li><p><strong>/uel:1</strong> migrates users whose account has been modified within the last 24 hours.</p></li>
+<li><p><strong>/uel:90</strong> migrates users who have logged on, or whose accounts have been otherwise modified, within the last 90 days.</p></li>
+<li><p><strong>/uel:1</strong> migrates users whose account has been modified within the last 24 hours.</p></li>
 <li><p><strong>/uel:2002/1/15</strong> migrates users who have logged on or been modified January 15, 2002 or afterwards.</p></li>
 </ul>
 <p>For example:</p>
@@ -511,14 +508,14 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p></p>
 <p>/<strong>ue</strong>:<em>&lt;ComputerName&gt;</em>&#92;<em>&lt;LocalUserName&gt;</em></p></td>
 <td align="left"><p><strong>(User exclude)</strong></p>
-<p>Excludes the specified users from the migration. You can specify multiple /<strong>ue</strong> options. You cannot use this option with the /<strong>all</strong> option. <em>&lt;DomainName&gt;</em> and <em>&lt;UserName&gt;</em> can contain the asterisk (*) wildcard character. When you specify a user name that contains spaces, you need to surround it with quotation marks.</p>
+<p>Excludes the specified users from the migration. You can specify multiple /<strong>ue</strong> options. You cannot use this option with the /<strong>all</strong> option. <em>&lt;DomainName&gt;</em> and <em>&lt;UserName&gt;</em> can contain the asterisk (</em>) wildcard character. When you specify a user name that contains spaces, you need to surround it with quotation marks.</p>
 <p>For example:</p>
 <p><code>scanstate /i:migdocs.xml /i:migapp.xml &#92;&#92;server\share\migration\mystore /ue:contoso\user1</code></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## How to Use /ui and /ue
 
@@ -564,7 +561,7 @@ The following examples apply to both the /**ui** and /**ue** options. You can re
 </tbody>
 </table>
 
- 
+
 
 ## Using the Options Together
 
@@ -573,7 +570,7 @@ You can use the /**uel**, /**ue** and /**ui** options together to migrate only t
 
 The /**ui** option has precedence over the /**ue** and /**uel** options. If a user is specified to be included using the /**ui** option, and also specified to be excluded using either the /**ue** or /**uel** options, the user will be included in the migration. For example, if you specify `/ui:contoso\* /ue:contoso\user1`, then User1 will be migrated, because the /**ui** option takes precedence over the /**ue** option.
 
-The /**uel** option takes precedence over the /**ue** option. If a user has logged on within the specified time period set by the /**uel** option, that user’s profile will be migrated even if they are excluded by using the /**ue** option. For example, if you specify `/ue:fixed\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
+The /**uel** option takes precedence over the /**ue** option. If a user has logged on within the specified time period set by the /**uel** option, that user’s profile will be migrated even if they are excluded by using the /**ue** option. For example, if you specify `/ue:fixed\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
 
 <table>
 <colgroup>
@@ -610,7 +607,7 @@ The /**uel** option takes precedence over the /**ue** option. If a user has logg
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-efs"></a>Encrypted File Options
 
@@ -619,15 +616,15 @@ You can use the following options to migrate encrypted files. In all cases, by d
 
 For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
 
-**Note**  
-EFS certificates will be migrated automatically when migrating to Windows 7, Windows 8 or Windows 10. Therefore, you should specify the /**efs:copyraw** option with the **ScanState** command to migrate the encrypted files
+**Note**  
+EFS certificates will be migrated automatically when migrating to Windows 7, Windows 8 or Windows 10. Therefore, you should specify the /**efs:copyraw** option with the **ScanState** command to migrate the encrypted files
 
- 
 
-**Caution**  
+
+**Caution**  
 Take caution when migrating encrypted files. If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
 
- 
+
 
 <table>
 <colgroup>
@@ -661,19 +658,18 @@ Take caution when migrating encrypted files. If you migrate an encrypted file wi
 <td align="left"><p><strong>/efs:copyraw</strong></p></td>
 <td align="left"><p>Causes the <strong>ScanState</strong> command to copy the files in the encrypted format. The files will be inaccessible on the destination computer until the EFS certificates are migrated. EFS certificates will be automatically migrated; however, by default USMT fails if an encrypted file is found, unless you specify an <strong>/efs</strong> option. Therefore you should specify the <strong>/efs:copyraw</strong> option with the <strong>ScanState</strong> command to migrate the encrypted file. Then, when you run the <strong>LoadState</strong> command, the encrypted file and the EFS certificate will be automatically migrated.</p>
 <p>For example:</p>
-<p><code>ScanState /i:migdocs.xml /i:migapp.xml \\server\share\migration\mystore /efs:copyraw</code></p>
+<p><code>ScanState /i:migdocs.xml /i:migapp.xml \server\share\migration\mystore /efs:copyraw</code></p>
 <div class="alert">
-<strong>Important</strong>  
-<p>All files must be encrypted if the parent folder is encrypted. If the encryption attribute on a file inside an encrypted folder has been removed, the file will be encrypted during the migration using the credentials of the account used to run the LoadState tool. For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).</p>
+<strong>Important</strong><br/><p>All files must be encrypted if the parent folder is encrypted. If the encryption attribute on a file inside an encrypted folder has been removed, the file will be encrypted during the migration using the credentials of the account used to run the LoadState tool. For more information, see <a href="usmt-migrate-efs-files-and-certificates.md" data-raw-source="[Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md)">Migrate EFS Files and Certificates</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-iclo"></a>Incompatible Command-Line Options
 
@@ -855,21 +851,21 @@ The following table indicates which command-line options are not compatible with
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 You must specify either the /**key** or /**keyfile** option with the /**encrypt** option.
 
- 
+
 
 ## Related topics
 
 
 [XML Elements Library](usmt-xml-elements-library.md)
 
- 
 
- 
+
+
 
 
 

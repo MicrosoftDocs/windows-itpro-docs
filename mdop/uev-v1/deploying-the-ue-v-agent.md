@@ -91,7 +91,7 @@ The Microsoft User Experience Virtualization (UE-V) agent must run on each compu
 </tbody>
 </table>
 
- 
+ 
 
 During installation, the SettingsStoragePath command-line parameter specifies the settings storage location for the settings values. A settings storage location can be defined before deploying the UE-V Agent. If no settings storage location is defined, then UE-V uses the Active Directory user Home Directory as the settings storage location. When you specify the SettingsStoragePath configuration during setup and use the %username% as part of the value, this will roam the same user settings experience on all computers or sessions that a user logs into. If you specify the %username%\\%computername% variables as part of the SettingsStoragePath value, this will preserve the settings experience for each computer.
 
@@ -100,7 +100,7 @@ Architecture-specific Windows Installer (.msi) files are provided for the UE-V a
 **Note**  
 During UE-V agent installation or uninstallation you can either use the AgentSetup.exe file or the AgentSetup&lt;arch&gt;.msi file, but not both. The same file must be used to uninstall the UE-V Agent as it was used to install the UE-V Agent.
 
- 
+ 
 
 Be sure to use the correct variable format when you install the UE-V agent. The following table provides examples of deployment options for using the AgentSetup.exe or the Windows Installer (.msi) installation files.
 
@@ -122,42 +122,42 @@ Be sure to use the correct variable format when you install the UE-V agent. The 
 <td align="left"><p>Command prompt</p></td>
 <td align="left"><p>When you install the UE-V agent from a command prompt, use the %^username% variable format. If quotation marks are needed because of spaces in the settings storage path, use a batch script file for deployment.</p>
 <p></p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%^username%</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%^username%</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%^username%</code></p></td>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l<em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%^username%</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Batch script</p></td>
 <td align="left"><p>When you install the UE-V Agent from a batch script file, use the %%username%% variable format. If you use this install method, you must escape the variable with the %% characters. Without this character, the script expands the username variable at install time, rather than at run time, causing UE-V to use a single settings storage location for all users.</p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\\server\settingsshare\%%username%%&quot;</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\server\settingsshare%%username%%&quot;</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\\server\settingsshare\%%username%%&quot;</code></p>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l</em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\server\settingsshare%%username%%&quot;</code></p>
 <p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PowerShell</p></td>
 <td align="left"><p>When you install the UE-V agent from a PowerShell prompt or PowerShell script, use the %username% variable format.</p></td>
-<td align="left"><p><code>&amp; AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%username%</code></p>
+<td align="left"><p><code>&amp; AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%username%</code></p>
 <p></p>
-<p><code>&amp; msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%username%</code></p>
+<p><code>&amp; msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l<em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%username%</code></p>
 <p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Electronic software distribution, such as deployment of Configuration Manager Software Deployment)</p></td>
 <td align="left"><p>When you install the UE-V Agent with Configuration Manager, use the ^%username^% variable format.</p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\^%username^%</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare^%username^%</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\^%username^%</code></p></td>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l</em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare^%username^%</code></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The installation of the U-EV Agent requires Administrator rights and the computer will require a restart before the UE-V agent can run.
 
- 
+ 
 
 ## UE-V Agent deployment methods from a network share
 
@@ -194,9 +194,9 @@ Updates for the UE-V agent software will be provided through Microsoft Update. D
 [Installing the UE-V Generator](installing-the-ue-v-generator.md)
 
 Deploy the User Experience Virtualization Agent
- 
+ 
 
- 
+ 
 
 
 

@@ -56,7 +56,7 @@ This section describes the migration .xml files that are included with USMT. Eac
 **Note**  
 You can use the asterisk (\*) wildcard character in each of these files. However, you cannot use a question mark (?) as a wildcard character.
 
- 
+ 
 
 -   **The MigApp.xml file.** Specify this file with both the **ScanState** and **LoadState** commands to migrate application settings.
 
@@ -67,7 +67,7 @@ You can use the asterisk (\*) wildcard character in each of these files. However
     **Note**  
     Do not use the MigUser.xml and MigDocs.xml files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices.md) topics.
 
-     
+     
 
 ## <a href="" id="bkmk-customxmlfiles"></a>Custom .xml Files
 
@@ -96,7 +96,7 @@ In addition, note the following functionality with the Config.xml file:
 **Note**  
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
- 
+ 
 
 ### <a href="" id="bkmk-examples"></a>Examples
 
@@ -128,9 +128,9 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
 [USMT Resources](usmt-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

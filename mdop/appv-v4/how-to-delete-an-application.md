@@ -24,7 +24,7 @@ When you delete an application, the selected application will no longer be avail
 
 After a publishing refresh, the deleted applications will again become available to you.
 
- 
+ 
 
 **To delete an application**
 
@@ -32,9 +32,9 @@ After a publishing refresh, the deleted applications will again become available
 
 2.  At the confirmation prompt, click **Yes** to remove the application or click **No** to cancel the operation.
 
- 
+ 
 
- 
+ 
 
 
 
