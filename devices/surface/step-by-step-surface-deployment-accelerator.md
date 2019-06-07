@@ -121,10 +121,12 @@ The following steps show you how to create a deployment share for Windows 10 tha
     ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
     *Figure 5. The Installation Progress window*
-    >[!NOTE]
-    >The following error message may be hit while Installing the latest ADK or MDT: "An exception occurred during a WebClient request.". This is due to incompatibility between SDA and BITS. Here is the workaround for this:
+    
+    ### Optional: Workaround for Webclient exception
+    
+    You may see this error message while installing the latest version of ADK or MDT: _An exception occurred during a WebClient request._ This is due to incompatibility between the Surface Deployment Accelerator (SDA) and Background Intelligent Transfer Service  (BITS). To work around this issue, do the following.
 
-    In the following two PowerShell scripts:
+    In the two PowerShell scripts:
 
     ```PowerShell
     %ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
