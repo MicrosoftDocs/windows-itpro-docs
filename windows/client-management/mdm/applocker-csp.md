@@ -35,7 +35,7 @@ Defines the root node for the AppLocker configuration service provider.
 <a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**
 Defines restrictions for applications.
 
-> [!NOTE]  
+> [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.

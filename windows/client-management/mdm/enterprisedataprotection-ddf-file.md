@@ -16,7 +16,7 @@ ms.date: 12/05/2017
 
 The following topic shows the OMA DM device description framework (DDF) for the EnterpriseDataProtection configuration service provider.
 
-> [!Important]  
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).

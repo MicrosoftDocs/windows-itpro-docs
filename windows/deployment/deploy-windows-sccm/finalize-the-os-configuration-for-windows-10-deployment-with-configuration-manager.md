@@ -96,7 +96,7 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
 
 3. Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
 
-   >[!NOTE]  
+   >[!NOTE]
    >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
 
  

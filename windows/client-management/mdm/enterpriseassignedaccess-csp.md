@@ -41,7 +41,7 @@ Supported operations are Add, Delete, Get and Replace.
 
 The Apps and Settings sections of lockdown XML constitute an Allow list. Any app or setting that is not specified in AssignedAccessXML will not be available on the device to users. The following table describes the entries in lockdown XML.
 
-> [!IMPORTANT]    
+> [!IMPORTANT]  
 > When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an MDM, the XML must use escaped characters, such as \< instead of < because it is embedded in an XML. The examples provided in the topic are formatted for readability.
 
 When using the AssignedAccessXml in a provisioning package using the Windows Configuration Designer tool, do not use escaped characters.

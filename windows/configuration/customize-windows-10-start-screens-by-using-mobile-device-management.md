@@ -44,7 +44,7 @@ Two features enable Start layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    >[!NOTE]  
+    >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
 
      

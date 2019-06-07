@@ -456,7 +456,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the number of days a pending BITS job can remain inactive before the job is considered abandoned. By default BITS will wait 90 days before considering an inactive job abandoned. After a job is determined to be abandoned, the job is deleted from BITS and any downloaded files for the job are deleted from the disk.
 
-> [!Note]  
+> [!NOTE]
 > Any property changes to the job or any successful download action will reset this timeout.
 
 Value type is integer. Default is 90 days.

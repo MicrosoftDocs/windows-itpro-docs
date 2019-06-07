@@ -50,7 +50,7 @@ The diagrams show:
 
 IT admins can provision the Start layout by creating a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles.
 
->[!NOTE]  
+>[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when writing your LayoutModification.xml file:
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.

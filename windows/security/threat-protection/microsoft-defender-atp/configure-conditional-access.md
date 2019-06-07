@@ -40,7 +40,7 @@ You need to make sure that all your devices are enrolled in Intune. You can use 
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
 
-> [!NOTE] 
+> [!NOTE]
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:

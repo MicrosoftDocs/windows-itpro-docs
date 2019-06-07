@@ -18,7 +18,7 @@ ms.topic: article
 
 You can use the package converter utility to upgrade virtual application packages created by previous versions of App-V. This section will tell you how to convert existing virtual application packages for upgrade.
 
->[!NOTE]  
+>[!NOTE]
 >If you are running a computer with a 64-bit architecture, you must use the x86 version of Windows PowerShell.
 
 The package converter can only directly convert packages created by an App-V sequencer version 4.5 or later. Packages created with an App-V version earlier than 4.5 must be upgraded to at least App-V 4.5 before conversion.

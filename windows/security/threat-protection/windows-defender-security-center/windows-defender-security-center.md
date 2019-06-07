@@ -108,7 +108,7 @@ It acts as a collector or single place to see the status and perform some config
 
 Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.
 
 For example, [using a third-party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.

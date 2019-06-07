@@ -26,7 +26,7 @@ In Windows 10, version 1703 and later, the Windows Defender app is part of the W
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
 
 > [!WARNING] 

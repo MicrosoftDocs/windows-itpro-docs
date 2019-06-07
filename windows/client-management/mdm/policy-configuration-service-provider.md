@@ -741,7 +741,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="CryptographyAllowFipsAlgorithmPolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptography-tlsciphersuites" id="cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
+    <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
   </dd>
 </dl>
 
@@ -5244,7 +5244,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Camera/AllowCamera](#camera-allowcamera)
 -   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
 -   [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
+-   [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
 -   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
 -   [Defender/AllowCloudProtection](#defender-allowcloudprotection)

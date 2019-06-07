@@ -185,7 +185,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 **Resolution**: This issue was resolved in the June 2017 updates. Please update Windows 10, version 1607 to the latest cumulative or feature updates.
 
->[!Note] 
+>[!NOTE]
 >When the Group Policy is enabled, the desired behavior also needs to be selected. By default, it is set to **None**.
 
 

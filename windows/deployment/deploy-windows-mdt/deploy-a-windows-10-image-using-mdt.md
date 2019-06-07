@@ -290,7 +290,7 @@ This section will show you how to create the task sequence used to deploy your p
        1.  Choose a selection profile: Nothing
        2.  Install all drivers from the selection profile
 
-           >[!NOTE]  
+           >[!NOTE]
            >The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
              
    3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.

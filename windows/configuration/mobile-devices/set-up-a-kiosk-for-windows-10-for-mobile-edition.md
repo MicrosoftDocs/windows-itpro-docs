@@ -46,7 +46,7 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
 
 ### Set up assigned access using Windows Configuration Designer
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 #### Create the *AssignedAccess*.xml file
