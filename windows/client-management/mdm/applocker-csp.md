@@ -43,7 +43,7 @@ Defines restrictions for applications.
 Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-example) - example for Windows 10 Mobile that denies all apps except the ones listed.
+- [Whitelist examples](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
 <a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
