@@ -2,13 +2,14 @@
 title: Using BitLocker with other programs FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -79,7 +80,7 @@ Both fixed and removable data drives can be locked by using the Manage-bde comma
 
 > [!NOTE]  
 > Ensure all data is saved to the drive before locking it. Once locked, the drive will become inaccessible.
- 
+ 
 The syntax of this command is:
 
 <code>manage-bde <i>driveletter</i> -lock</code>

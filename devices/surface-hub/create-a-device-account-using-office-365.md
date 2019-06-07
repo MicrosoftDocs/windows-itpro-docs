@@ -2,11 +2,13 @@
 title: Create a device account using UI (Surface Hub)
 description: If you prefer to use a graphical user interface, you can create a device account for your Microsoft Surface Hub with either the Office 365 UI or the Exchange Admin Center.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
+ms.reviewer: 
+manager: dansimp
 keywords: create device account, Office 365 UI, Exchange Admin center, Office 365 admin center, Skype for Business, mobile device mailbox policy
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
@@ -243,7 +245,7 @@ You can use the Exchange Admin Center to create a device account:
 >[!NOTE]
 >If you want to create and assign a policy to the account you created, and are using Exchange 2010, look up the corresponding information regarding policy creation and policy assignment when using the EMC (Exchange management console).
 
- 
+ 
 
 1.  Go to the Exchange Admin Center.
 
@@ -371,11 +373,11 @@ If you aren't sure what value to use for the `RegistrarPool` parameter in your e
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
     
-3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+3. To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-    ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
-    ```
+   ```PowerShell
+   Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+   ```
 
     
 

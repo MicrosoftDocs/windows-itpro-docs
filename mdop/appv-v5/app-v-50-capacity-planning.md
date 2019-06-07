@@ -1,8 +1,11 @@
 ---
 title: App-V 5.0 Capacity Planning
 description: App-V 5.0 Capacity Planning
-author: jamiejdt
+author: v-madhi
 ms.assetid: 56f48b00-cd91-4280-9481-5372a0e2e792
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ The following recommendations can be used as a baseline to help determine capaci
 **Important**  
 Use the information in this section only as a general guide for planning your App-V 5.0 deployment. Your system capacity requirements will depend on the specific details of your hardware and application environment. Additionally, the performance numbers displayed in this document are examples and your results may vary.
 
- 
+ 
 
 ## Determine the Project Scope
 
@@ -49,7 +52,7 @@ Before you design the App-V 5.0 infrastructure, you must determine the project�
 </tbody>
 </table>
 
- 
+ 
 
 ## Determine Which App-V 5.0 Infrastructure is Required
 
@@ -59,7 +62,7 @@ Both of the following models require the App-V 5.0 client to be installed on the
 
 You can also manage your App-V 5.0 environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [Deploying App-V 5.0 Packages by Using Electronic Software Distribution (ESD)](deploying-app-v-50-packages-by-using-electronic-software-distribution--esd-.md).
 
- 
+ 
 
 -   **Standalone Model** - The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V 5.0 in Standalone Mode consists of the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information see, [Planning for the App-V 5.0 Sequencer and Client Deployment](planning-for-the-app-v-50-sequencer-and-client-deployment.md). The stand-alone model is recommended for the following scenarios:
 
@@ -74,7 +77,7 @@ You can also manage your App-V 5.0 environment using an Electronic Software Dist
     **Important**  
     The App-V 5.0 full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V 5.0 Supported Configurations](app-v-50-supported-configurations.md).
 
-     
+     
 
     -   When you want to use the Management Server to publish the application to target computers.
 
@@ -90,7 +93,7 @@ The following section provides information about end-to-end App-V 5.0 sizing and
 **Note**  
 Round trip response time on the client is the time taken by the computer running the App-V 5.0 client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
 
- 
+ 
 
 -   20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (&lt;3 seconds)
 
@@ -104,7 +107,7 @@ The App-V 5.0 publishing servers require the management server for package refre
 **Note**  
 The default refresh time on the App-V 5.0 publishing server is ten minutes.
 
- 
+ 
 
 When multiple simultaneous publishing servers contact a single management server for package metadata refreshes, the following three factors influence the round trip response time on the publishing server:
 
@@ -119,7 +122,7 @@ The following table displays more information about each factor that impacts rou
 **Note**  
 Round trip response time is the time taken by the computer running the App-V 5.0 publishing server to receive a successful package metadata update from the management server.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -163,7 +166,7 @@ Round trip response time is the time taken by the computer running the App-V 5.0
 </tbody>
 </table>
 
- 
+ 
 
 The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V 5.0management server.
 
@@ -356,7 +359,7 @@ The following table displays sample values for each of the previous factors. In 
 </tbody>
 </table>
 
- 
+ 
 
 The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example: Transactions/sec is ~30, batch requests ~200, and user connects ~6.
 
@@ -457,7 +460,7 @@ Using a geographically distributed deployment, where the management server & pub
 </tbody>
 </table>
 
- 
+ 
 
 Whether the management server and publishing servers are connected over a slow link network, or a high speed network, the management server can handle approximately 15,000 package refresh requests in 30 minutes.
 
@@ -469,7 +472,7 @@ App-V 5.0 clients send reporting data to the reporting server. The reporting ser
 **Note**  
 Round trip response time is the time taken by the computer running the App-V 5.0 client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -515,7 +518,7 @@ Round trip response time is the time taken by the computer running the App-V 5.0
 </tbody>
 </table>
 
- 
+ 
 
 **Calculating random delay**:
 
@@ -539,7 +542,7 @@ The following list displays the main factors to consider when setting up the App
 
 -   The available network bandwidth in your environment between the client and the App-V 5.0 publishing server.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -582,12 +585,12 @@ The following list displays the main factors to consider when setting up the App
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The publishing server CPU usage is always high during the time interval when it has to process simultaneous requests (&gt;90% in most cases). The publishing server can handle ~1500 client requests in 1 second.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -729,7 +732,7 @@ The publishing server CPU usage is always high during the time interval when it 
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="---------app-v-5-0-streaming-capacity-planning-recommendations"></a> App-V 5.0 Streaming Capacity Planning Recommendations
 
@@ -745,7 +748,7 @@ The following list identifies the main factors to consider when setting up the A
 
 -   The available network bandwidth in your environment between the client and the streaming server.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -785,7 +788,7 @@ The following list identifies the main factors to consider when setting up the A
 </tbody>
 </table>
 
- 
+ 
 
 The following table displays sample values for each of the factors in the previous list:
 
@@ -914,14 +917,14 @@ The following table displays sample values for each of the factors in the previo
 </tbody>
 </table>
 
- 
+ 
 
 Each App-V 5.0 streaming server should be able to handle a minimum of 200 clients concurrently streaming virtualized applications.
 
 **Note**  
 The actual time to it will take to stream is determined primarily by the number of clients streaming simultaneously, number of packages, package size, the server’s network activity, and network conditions.
 
- 
+ 
 
 For example, an average user can stream a 100 MB package in less than 2 minutes, when 100 simultaneous clients are streaming from the server. However, a package of size 1 GB could take up to 30 minutes. In most real world environments streaming demand is not uniformly distributed, you will need to understand the approximate peak streaming requirements present in your environment in order to properly size the number of required streaming servers.
 
@@ -950,9 +953,9 @@ Although there are a number of fault-tolerance strategies and technologies avail
 
 [Planning to Deploy App-V](planning-to-deploy-app-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

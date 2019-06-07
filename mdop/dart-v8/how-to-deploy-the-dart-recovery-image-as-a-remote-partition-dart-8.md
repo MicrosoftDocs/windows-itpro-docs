@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the DaRT Recovery Image as a Remote Partition
 description: How to Deploy the DaRT Recovery Image as a Remote Partition
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 58f4a6c6-6193-42bd-a095-0de868711af9
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -27,7 +30,7 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
         **Note**  
         If you burned a CD or DVD of the recovery image, you can open the files on the CD or DVD and copy the boot.wim file from the \\sources folder. This lets you skip the need to mount the image.
 
-         
+         
 
 2.  Deploy the boot.wim file to a WDS server that can be accessed from end-user computers in your enterprise.
 
@@ -44,9 +47,9 @@ For more information about how to deploy DaRT as a remote partition, see [Walkth
 
 [Planning for DaRT 8.0](planning-for-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

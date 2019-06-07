@@ -1,8 +1,11 @@
 ---
 title: Select Task Page (Learn More)
 description: Select Task Page (Learn More)
-author: jamiejdt
+author: eavena
 ms.assetid: 09534c40-bf6c-4b3f-be9a-8624965c9c18
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

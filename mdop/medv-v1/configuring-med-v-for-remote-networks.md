@@ -1,8 +1,11 @@
 ---
 title: Configuring MED-V for Remote Networks
 description: Configuring MED-V for Remote Networks
-author: jamiejdt
+author: dansimp
 ms.assetid: 4d2f0081-622f-4a6f-8d73-f8c2108036e0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -46,7 +49,7 @@ You can configure MED-V to work from inside a network, remotely, or both from in
 **Note**  
 When applying new settings, the service must be restarted.
 
- 
+ 
 
 -   You can change the IIS authentication scheme to one of the following: BASIC, DIGEST, NTLM, or NEGOTIATE. The default is NEGOTIATE and uses the following entry:
 
@@ -69,9 +72,9 @@ When applying new settings, the service must be restarted.
 
 [MED-V Infrastructure Planning and Design](med-v-infrastructure-planning-and-design.md)
 
- 
+ 
 
- 
+ 
 
 
 

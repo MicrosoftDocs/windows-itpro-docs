@@ -2,14 +2,15 @@
 title: Windows Hello errors during PIN creation (Windows 10)
 description: When you set up Windows Hello in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
+ms.reviewer: 
 keywords: PIN, error, create a work PIN
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: troubleshooting
@@ -84,12 +85,12 @@ If the error occurs again, check the error code against the following table to s
 </tr><tr class="even">
 <td align="left">0x80090029</td>
 <td align="left">TPM is not set up.</td>
-<td align="left">Sign on with an administrator account. Click **Start**, type "tpm.msc", and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. </td>
+<td align="left">Sign on with an administrator account. Click <strong>Start</strong>, type &quot;tpm.msc&quot;, and select <strong>tpm.msc Microsoft Common Console Document</strong>. In the <strong>Actions</strong> pane, select <strong>Prepare the TPM</strong>. </td>
 </tr>
 <tr class="even">
 <td align="left">0x80090031</td>
 <td align="left">NTE_AUTHENTICATION_IGNORED</td>
-<td align="left">Reboot the device. If the error occurs again after rebooting, [reset the TPM]( https://go.microsoft.com/fwlink/p/?LinkId=619969) or run [Clear-TPM](https://go.microsoft.com/fwlink/p/?LinkId=629650)</td>
+<td align="left">Reboot the device. If the error occurs again after rebooting, <a href="https://go.microsoft.com/fwlink/p/?LinkId=619969" data-raw-source="[reset the TPM]( https://go.microsoft.com/fwlink/p/?LinkId=619969)">reset the TPM</a> or run <a href="https://go.microsoft.com/fwlink/p/?LinkId=629650" data-raw-source="[Clear-TPM](https://go.microsoft.com/fwlink/p/?LinkId=629650)">Clear-TPM</a></td>
 </tr>
 <tr class="odd">
 <td align="left">0x80090035</td>
@@ -104,7 +105,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C000E</td>
 <td align="left">Registration quota reached</td>
-<td align="left"><p>Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](https://go.microsoft.com/fwlink/p/?LinkId=626933).</p></td>
+<td align="left"><p>Unjoin some other device that is currently joined using the same account or <a href="https://go.microsoft.com/fwlink/p/?LinkId=626933" data-raw-source="[increase the maximum number of devices per user](https://go.microsoft.com/fwlink/p/?LinkId=626933)">increase the maximum number of devices per user</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">0x801C000F</td>
@@ -134,17 +135,17 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C0016</td>
 <td align="left">The federation provider configuration is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the file is not empty.</td>
+<td align="left">Go to <a href="http://clientconfig.microsoftonline-p.net/FPURL.xml" data-raw-source="[http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml)">http://clientconfig.microsoftonline-p.net/FPURL.xml</a> and verify that the file is not empty.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C0017</td>
 <td align="left">​The federation provider domain is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the FPDOMAINNAME element is not empty.</td>
+<td align="left">Go to <a href="http://clientconfig.microsoftonline-p.net/FPURL.xml" data-raw-source="[http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml)">http://clientconfig.microsoftonline-p.net/FPURL.xml</a> and verify that the FPDOMAINNAME element is not empty.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C0018</td>
 <td align="left">The federation provider client configuration URL is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the CLIENTCONFIG element contains a valid URL.</td>
+<td align="left">Go to <a href="http://clientconfig.microsoftonline-p.net/FPURL.xml" data-raw-source="[http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml)">http://clientconfig.microsoftonline-p.net/FPURL.xml</a> and verify that the CLIENTCONFIG element contains a valid URL.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C03E9</td>
@@ -168,13 +169,13 @@ If the error occurs again, check the error code against the following table to s
 </tr>
 <tr class="even">
 <td align="left">0x801C03ED</td>
-<td align="left"><p>Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed</p>
+<td align="left"><p>Multi-factor authentication is required for a &#39;ProvisionKey&#39; operation, but was not performed</p>
 <p>-or-</p>
 <p>Token was not found in the Authorization header</p>
 <p>-or-</p>
 <p>Failed to read one or more objects</p>
 <p>-or-</p><p>The request sent to the server was invalid.</p></td>
-<td align="left">Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.</td>
+<td align="left">Sign out and then sign in again. If that doesn&#39;t resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C03EE</td>
@@ -198,7 +199,7 @@ If the error occurs again, check the error code against the following table to s
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Errors with unknown mitigation
 For errors listed in this table, contact Microsoft Support for assistance.
 
@@ -223,7 +224,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F0  | ​There is no key registered for the user   |
 | 0x801C03F1  | ​There is no UPN in the token          |
 | ​0x801C044C | There is no core window for the current thread     |
- 
+ 
 
 ## Related topics
 

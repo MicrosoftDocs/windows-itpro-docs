@@ -8,9 +8,11 @@ ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 07/28/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up Windows 10 devices using Windows OOBE
@@ -28,15 +30,15 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired or Ethernet connection.
 2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's start with region. Is this right?** screen.
 
-  **Figure 1** - Let's start with region
+   **Figure 1** - Let's start with region
 
-  ![Let's start with region](images/win10_letsstartwithregion.png)
+   ![Let's start with region](images/win10_letsstartwithregion.png)
 
 3. Continue with setup. In the **How would you like to set up?** screen, select **Set up for an organization**.
 
-  **Figure 2** - Select setup for an organization
+   **Figure 2** - Select setup for an organization
 
-  ![Select setup for an organization](images/win10_setupforanorg.png)
+   ![Select setup for an organization](images/win10_setupforanorg.png)
 
 4. Sign in using the user's account and password. Depending on the user password setting, you may be prompted to update the password.
 5. Choose privacy settings for the device. Location, speech recognition, diagnostics, and other settings are all on by default. Configure the settings based on the school's policies. 

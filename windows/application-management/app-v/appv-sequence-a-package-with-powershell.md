@@ -1,12 +1,15 @@
 ---
 title: How to sequence a package by using Windows PowerShell (Windows 10)
 description: How to sequence a package by using Windows PowerShell
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -20,7 +23,7 @@ Use the following procedure to create a new App-V package using Windows PowerShe
 > [!NOTE]   
 > Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md).
 
- 
+ 
 **To create a new virtual application by using Windows PowerShell**
 
 1.  Install the App-V sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).

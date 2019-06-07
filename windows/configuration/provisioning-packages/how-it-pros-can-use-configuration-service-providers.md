@@ -2,11 +2,13 @@
 title: Introduction to configuration service providers (CSPs) for IT pros (Windows 10)
 description: Configuration service providers (CSPs) expose device configuration settings in Windows 10. 
 ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -27,7 +29,7 @@ The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fw
 >[!NOTE]  
 >The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
- [See what's new for CSPs in Windows 10, version 1809.](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1809)
+ [See what's new for CSPs in Windows 10, version 1809.](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1809)
 
 ## What is a CSP?
 
@@ -218,9 +220,9 @@ Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile E
 -   [WindowsSecurityAuditing CSP](https://go.microsoft.com/fwlink/p/?LinkId=723415)
 
 
- 
+ 
 
- 
+ 
 
 
 

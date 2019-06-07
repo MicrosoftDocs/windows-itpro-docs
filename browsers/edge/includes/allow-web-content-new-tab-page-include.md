@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  11/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -16,10 +18,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from making changes. | 
-|Enabled or not configured **(default)** |1 |1 |Load the default New Tab page and the users make changes. | 
+|              Group Policy               | MDM | Registry |                                         Description                                          |
+|-----------------------------------------|:---:|:--------:|----------------------------------------------------------------------------------------------|
+|                Disabled                 |  0  |    0     | Load a blank page instead of the default New Tab page and prevent users from making changes. |
+| Enabled or not configured **(default)** |  1  |    1     |                  Load the default New Tab page and the users make changes.                   |
+
 ---
 
 ### ADMX info and settings

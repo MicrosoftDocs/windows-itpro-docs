@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Info about how to use Internet Settings (.ins) files and the IEAK 11 to configure your custom browser package.
-author: shortpatti
+author: dansimp
 ms.prod: ie11
 ms.assetid: a24a7cdb-681e-4f34-a53c-6d8383c5f977
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 title: Using Internet Settings (.INS) files with IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

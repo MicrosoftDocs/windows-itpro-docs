@@ -1,12 +1,14 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
 description: Enroll a Windows 10 device automatically using Group Policy
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 10/04/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy
@@ -35,7 +37,7 @@ The auto-enrollment relies of the presence of an MDM service and the Azure Activ
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure  Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
-In Windows 10, version 1709, when the same policy is configured in GP and MDM, the GP policy wins (GP policy is take precedence over MDM). In the future release of Windows 10, we are considering a feature that allows the admin to control which policy takes precedence.
+In Windows 10, version 1709, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. See [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) to learn more.
 
 For this policy to work, you must verify that the MDM service provider allows the GP triggered MDM enrollment for domain joined devices.
 

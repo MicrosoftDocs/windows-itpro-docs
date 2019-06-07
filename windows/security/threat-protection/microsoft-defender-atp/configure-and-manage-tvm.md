@@ -1,5 +1,6 @@
 ---
 title: Configure Threat & Vulnerability Management in Microsoft Defender ATP
+ms.reviewer: 
 description: Configure your Threat & Vulnerability Management to allow security administrators and IT administrators to collaborate seamlessly to remediate issues via Microsoft intune and Microsoft System Center Configuration Manager (SCCM) integrations.
 keywords: RBAC, Threat & Vulnerability Management configuration, Threat & Vulnerability Management integrations, Microsft Intune integration with TVM, SCCM integration with TVM  
 search.product: Windows 10
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: mjcaparas
+author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,8 +26,8 @@ ms.topic: article
 This section guides you through the steps you need to take to configure Threat & Vulnerability Management's integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) for a seamless collaboration of issue remediation.
 
 ### Before you begin
->[!IMPORTANT] 
-Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
+> [!IMPORTANT]
+> Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM).   
 

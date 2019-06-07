@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented. Use the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, all previously configured search engines get removed. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. Add up to five additional search engines and set any one of them as the default.<p><p>For each search engine added you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).  |  |
+|                Group Policy                 | MDM | Registry |                                                                                                                                                                                                                                            Description                                                                                                                                                                                                                                            |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                                                                                                                                           Prevented. Use the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, all previously configured search engines get removed.                                                                                                                                                           | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     | Allowed. Add up to five additional search engines and set any one of them as the default.<p><p>For each search engine added you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/). |                                                  |
+
 ---
 
 ### ADMX info and settings

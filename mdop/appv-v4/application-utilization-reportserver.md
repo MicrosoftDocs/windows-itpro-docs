@@ -1,8 +1,11 @@
 ---
 title: Application Utilization Report
 description: Application Utilization Report
-author: jamiejdt
+author: dansimp
 ms.assetid: cb961969-c9a3-4d46-8303-121d737d76d8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

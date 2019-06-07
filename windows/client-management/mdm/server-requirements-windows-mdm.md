@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phDeviceMgmt.server\_requirements\_for\_oma\_dm'
 - 'p\_phDeviceMgmt.server\_requirements\_windows\_mdm'
 ms.assetid: 5b90b631-62a6-4949-b53a-01275fd304b2
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

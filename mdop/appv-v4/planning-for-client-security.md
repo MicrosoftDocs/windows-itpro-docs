@@ -1,8 +1,11 @@
 ---
 title: Planning for Client Security
 description: Planning for Client Security
-author: jamiejdt
+author: eavena
 ms.assetid: 4840a60f-4c91-489c-ad0b-6671882abf9b
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,9 +38,9 @@ By default, the installation of the client registers file type associations (FTA
 
 Starting with App-V version 4.6, the file type association is no longer created for OSD files during a new installation of the client, although the existing settings will be maintained during an upgrade from version 4.2 or 4.5 of the App-V client. If for any reason it is essential to create the file type association, you can create the following registry keys and set their values as shown:
 
-    Create HKEY\_CLASSES\_ROOT\\.osd with a default value of SoftGrid.osd.File
+    Create HKEY\_CLASSES\_ROOT\\.osd with a default value of SoftGrid.osd.File
 
-    Under HKEY\_LOCAL\_MACHINE\\software\\classes\\Softgrid.osd.file, create a string value named AppUserModelID with a data value of Microsoft.AppV.Client.Tray
+    Under HKEY\_LOCAL\_MACHINE\\software\\classes\\Softgrid.osd.file, create a string value named AppUserModelID with a data value of Microsoft.AppV.Client.Tray
 
 ### Authorization
 
@@ -63,7 +66,7 @@ When the client communicates with the server to perform a publishing refresh, it
 **Note**  
 If you are using IIS to publish the ICO and OSD files, configure a MIME type for OSD=TXT; otherwise, IIS will refuse to serve the ICO and OSD files to clients.
 
- 
+ 
 
 ### Package Streaming
 
@@ -72,7 +75,7 @@ When a user launches an application for the first time, or if auto-loading param
 **Note**  
 If you are using IIS to publish packages (SFT files), configure a MIME type for SFT=Binary; otherwise, IIS will refuse to serve the SFT files to clients.
 
- 
+ 
 
 ### Roaming Profiles and Folder Redirection
 
@@ -96,9 +99,9 @@ If a user is home-based and the computer is not joined to the company domain, Ap
 
 [Planning for Security and Protection](planning-for-security-and-protection.md)
 
- 
+ 
 
- 
+ 
 
 
 

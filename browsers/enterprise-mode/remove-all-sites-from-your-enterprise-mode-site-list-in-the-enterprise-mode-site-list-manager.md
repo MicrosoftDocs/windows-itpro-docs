@@ -3,9 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to clear all of the sites from your global Enterprise Mode site list.
-author: jdeckerms
+author: eavena
 ms.prod: ie11
 ms.assetid: 90f38a6c-e0e2-4c93-9a9e-c425eca99e97
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 title: Remove all sites from your Enterprise Mode site list using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

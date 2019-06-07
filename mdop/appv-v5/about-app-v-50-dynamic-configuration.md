@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.0 Dynamic Configuration
 description: About App-V 5.0 Dynamic Configuration
-author: jamiejdt
+author: v-madhi
 ms.assetid: 88afaca1-68c5-45c4-a074-9371c56b5804
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,7 +35,7 @@ The previous .xml files specify package settings and allow for packages to be cu
 **Note**  
 The following information can only be used to modify sequencer generated configuration files to customize packages to meet specific user or group requirements.
 
- 
+ 
 
 ### Dynamic Configuration file contents
 
@@ -55,7 +58,7 @@ All of the additions, deletions, and updates in the configuration files need to 
 </tbody>
 </table>
 
- 
+ 
 
 The previous table represents how the files will be read. The first entry represents what will be read last, therefore, its content takes precedence. Therefore, all packages inherently contain and provide default settings from the package manifest. If a deployment configuration .xml file with customized settings is applied, it will override the package manifest defaults. If a user configuration .xml file with customized settings is applied prior to that, it will override both the deployment configuration and the package manifest defaults.
 
@@ -99,477 +102,477 @@ The structure of the App-V 5.0 Dynamic Configuration file is explained in the fo
 
 **Header** - the header of a dynamic user configuration file is as follows:
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration"&gt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
 The **PackageId** is the same value as exists in the Manifest file.
 
 **Body** - the body of the Dynamic User Configuration file can include all the app extension points that are defined in the Manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
 
-1.  **Applications** - All app-extensions that are contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
+1. **Applications** - All app-extensions that are contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
 
-    &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration"&gt;
+   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
-    &lt;Applications&gt;
+   &lt;Applications&gt;
 
-    &lt;!-- No new application can be defined in policy. AppV Client will ignore any application ID that is not also in the Manifest file --&gt;
+   &lt;!-- No new application can be defined in policy. AppV Client will ignore any application ID that is not also in the Manifest file --&gt;
 
-    &lt;Application Id="{a56fa627-c35f-4a01-9e79-7d36aed8225a}" Enabled="false"&gt;
+   &lt;Application Id="{a56fa627-c35f-4a01-9e79-7d36aed8225a}" Enabled="false"&gt;
 
-    &lt;/Application&gt;
+   &lt;/Application&gt;
 
-    &lt;/Applications&gt;
+   &lt;/Applications&gt;
 
-    …
+   …
 
-    &lt;/UserConfiguration&gt;
+   &lt;/UserConfiguration&gt;
 
-2.  **Subsystems** - AppExtensions and other subsystems are arranged as subnodes under the &lt;Subsystems&gt;:
+2. **Subsystems** - AppExtensions and other subsystems are arranged as subnodes under the &lt;Subsystems&gt;:
 
-    &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration"&gt;
+   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
-    &lt;Subsystems&gt;
+   &lt;Subsystems&gt;
 
-    ..
+   ..
 
-    &lt;/Subsystems&gt;
+   &lt;/Subsystems&gt;
 
-    ..
+   ..
 
-    &lt;/UserConfiguration&gt;
+   &lt;/UserConfiguration&gt;
 
-    Each subsystem can be enabled/disabled using the “**Enabled**” attribute. Below are the various subsystems and usage samples.
+   Each subsystem can be enabled/disabled using the “**Enabled**” attribute. Below are the various subsystems and usage samples.
 
-    **Extensions:**
+   **Extensions:**
 
-    Some subsystems (Extension Subsystems) control Extensions. Those subsystems are:- shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients and COM
+   Some subsystems (Extension Subsystems) control Extensions. Those subsystems are:- shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients and COM
 
-    Extension Subsystems can be enabled and disabled independently of the content.  Thus if Shortcuts are enabled, The client will use the shortcuts contained within the manifest by default. Each Extension Subsystem can contain an &lt;Extensions&gt; node. If this child element is present, the client will ignore the content in the Manifest file for that subsystem and only use the content in the configuration file.
+   Extension Subsystems can be enabled and disabled independently of the content.  Thus if Shortcuts are enabled, The client will use the shortcuts contained within the manifest by default. Each Extension Subsystem can contain an &lt;Extensions&gt; node. If this child element is present, the client will ignore the content in the Manifest file for that subsystem and only use the content in the configuration file.
 
-    Example using the shortcuts subsystem:
+   Example using the shortcuts subsystem:
 
-    1.  If the user defined this in either the dynamic or deployment config file:
+   1.  If the user defined this in either the dynamic or deployment config file:
 
-                                     **&lt;Shortcuts  Enabled="true"&gt;**
+                                    **&lt;Shortcuts  Enabled="true"&gt;**
 
-                                                 **&lt;Extensions&gt;**
+                                                **&lt;Extensions&gt;**
 
-                                                  ...
+                                                 ...
 
-                                                 **&lt;/Extensions&gt;**
+                                                **&lt;/Extensions&gt;**
 
-                                     **&lt;/Shortcuts&gt;**
+                                    **&lt;/Shortcuts&gt;**
 
-                          Content in the manifest will be ignored.   
+                         Content in the manifest will be ignored.   
 
-    2.  If the user defined only the following:
+   2.  If the user defined only the following:
 
-                                    **&lt;Shortcuts  Enabled="true"/&gt;**
+                                   **&lt;Shortcuts  Enabled="true"/&gt;**
 
-                          Then the content in the Manifest will be integrated during publishing.
+                         Then the content in the Manifest will be integrated during publishing.
 
-    3.  If the user defines the following
+   3.  If the user defines the following
 
-                                   **&lt;Shortcuts  Enabled="true"&gt;**
+                                  **&lt;Shortcuts  Enabled="true"&gt;**
 
-                                                 **&lt;Extensions/&gt;**
+                                                **&lt;Extensions/&gt;**
 
-                                     **&lt;/Shortcuts&gt;**
+                                    **&lt;/Shortcuts&gt;**
 
-    Then all the shortcuts within the manifest will still be ignored. There will be no shortcuts integrated.
+   Then all the shortcuts within the manifest will still be ignored. There will be no shortcuts integrated.
 
-    The supported Extension Subsystems are:
+   The supported Extension Subsystems are:
 
-    **Shortcuts:** This controls shortcuts that will be integrated into the local system. Below is a sample with 2 shortcuts:
+   **Shortcuts:** This controls shortcuts that will be integrated into the local system. Below is a sample with 2 shortcuts:
 
-    &lt;Subsystems&gt;
+   &lt;Subsystems&gt;
 
-    &lt;Shortcuts Enabled="true"&gt;
+   &lt;Shortcuts Enabled="true"&gt;
 
-      &lt;Extensions&gt;
+     &lt;Extensions&gt;
 
-        &lt;Extension Category="AppV.Shortcut"&gt;
+       &lt;Extension Category="AppV.Shortcut"&gt;
 
-          &lt;Shortcut&gt;
+         &lt;Shortcut&gt;
 
-            &lt;File&gt;\[{Common Programs}\]\\Microsoft Contoso\\Microsoft ContosoApp Filler 2010.lnk&lt;/File&gt;
+           &lt;File&gt;\[{Common Programs}\]\\Microsoft Contoso\\Microsoft ContosoApp Filler 2010.lnk&lt;/File&gt;
 
-            &lt;Target&gt;\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE&lt;/Target&gt;
+           &lt;Target&gt;\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE&lt;/Target&gt;
 
-            &lt;Icon&gt;\[{Windows}\]\\Installer\\{90140000-0011-0000-0000-0000000FF1CE}\\inficon.exe&lt;/Icon&gt;
+           &lt;Icon&gt;\[{Windows}\]\\Installer\\{90140000-0011-0000-0000-0000000FF1CE}\\inficon.exe&lt;/Icon&gt;
 
-            &lt;Arguments /&gt;
+           &lt;Arguments /&gt;
 
-            &lt;WorkingDirectory /&gt;
+           &lt;WorkingDirectory /&gt;
 
-            &lt;AppUserModelId&gt;ContosoApp.Filler.3&lt;/AppUserModelId&gt;
+           &lt;AppUserModelId&gt;ContosoApp.Filler.3&lt;/AppUserModelId&gt;
 
-            &lt;Description&gt;Fill out dynamic forms to gather and reuse information throughout the organization using Microsoft ContosoApp.&lt;/Description&gt;
+           &lt;Description&gt;Fill out dynamic forms to gather and reuse information throughout the organization using Microsoft ContosoApp.&lt;/Description&gt;
 
-            &lt;Hotkey&gt;0&lt;/Hotkey&gt;
+           &lt;Hotkey&gt;0&lt;/Hotkey&gt;
 
-            &lt;ShowCommand&gt;1&lt;/ShowCommand&gt;
+           &lt;ShowCommand&gt;1&lt;/ShowCommand&gt;
 
-            &lt;ApplicationId&gt;\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE&lt;/ApplicationId&gt;
+           &lt;ApplicationId&gt;\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE&lt;/ApplicationId&gt;
 
-          &lt;/Shortcut&gt;
+         &lt;/Shortcut&gt;
 
-      &lt;/Extension&gt;
+     &lt;/Extension&gt;
 
-      &lt;Extension Category="AppV.Shortcut"&gt;
+     &lt;Extension Category="AppV.Shortcut"&gt;
 
-        &lt;Shortcut&gt;
+       &lt;Shortcut&gt;
 
-          &lt;File&gt;\[{AppData}\]\\Microsoft\\Contoso\\Recent\\Templates.LNK&lt;/File&gt;
+         &lt;File&gt;\[{AppData}\]\\Microsoft\\Contoso\\Recent\\Templates.LNK&lt;/File&gt;
 
-          &lt;Target&gt;\[{AppData}\]\\Microsoft\\Templates&lt;/Target&gt;
+         &lt;Target&gt;\[{AppData}\]\\Microsoft\\Templates&lt;/Target&gt;
 
-          &lt;Icon /&gt;
+         &lt;Icon /&gt;
 
-          &lt;Arguments /&gt;
+         &lt;Arguments /&gt;
 
-          &lt;WorkingDirectory /&gt;
+         &lt;WorkingDirectory /&gt;
 
-          &lt;AppUserModelId /&gt;
+         &lt;AppUserModelId /&gt;
 
-          &lt;Description /&gt;
+         &lt;Description /&gt;
 
-          &lt;Hotkey&gt;0&lt;/Hotkey&gt;
+         &lt;Hotkey&gt;0&lt;/Hotkey&gt;
 
-          &lt;ShowCommand&gt;1&lt;/ShowCommand&gt;
+         &lt;ShowCommand&gt;1&lt;/ShowCommand&gt;
 
-          &lt;!-- Note the ApplicationId is optional --&gt;
+         &lt;!-- Note the ApplicationId is optional --&gt;
 
-        &lt;/Shortcut&gt;
+       &lt;/Shortcut&gt;
 
-      &lt;/Extension&gt;
-
-     &lt;/Extensions&gt;
-
-    &lt;/Shortcuts&gt;
-
-    **File-Type Associations:** Associates File-types with programs to open by default as well as setup the context menu. (MIME types can also be setup using this susbsystem). Sample File-type Association is below:
-
-    &lt;FileTypeAssociations Enabled="true"&gt;
-
-    &lt;Extensions&gt;
-
-      &lt;Extension Category="AppV.FileTypeAssociation"&gt;
-
-        &lt;FileTypeAssociation&gt;
-
-          &lt;FileExtension MimeAssociation="true"&gt;
-
-          &lt;Name&gt;.docm&lt;/Name&gt;
-
-          &lt;ProgId&gt;contosowordpad.DocumentMacroEnabled.12&lt;/ProgId&gt;
-
-          &lt;PerceivedType&gt;document&lt;/PerceivedType&gt;
-
-          &lt;ContentType&gt;application/vnd.ms-contosowordpad.document.macroEnabled.12&lt;/ContentType&gt;
-
-          &lt;OpenWithList&gt;
-
-            &lt;ApplicationName&gt;wincontosowordpad.exe&lt;/ApplicationName&gt;
-
-          &lt;/OpenWithList&gt;
-
-         &lt;OpenWithProgIds&gt;
-
-            &lt;ProgId&gt;contosowordpad.8&lt;/ProgId&gt;
-
-          &lt;/OpenWithProgIds&gt;
-
-          &lt;ShellNew&gt;
-
-            &lt;Command /&gt;
-
-            &lt;DataBinary /&gt;
-
-            &lt;DataText /&gt;
-
-            &lt;FileName /&gt;
-
-            &lt;NullFile&gt;true&lt;/NullFile&gt;
-
-            &lt;ItemName /&gt;
-
-            &lt;IconPath /&gt;
-
-            &lt;MenuText /&gt;
-
-            &lt;Handler /&gt;
-
-          &lt;/ShellNew&gt;
-
-        &lt;/FileExtension&gt;
-
-        &lt;ProgId&gt;
-
-           &lt;Name&gt;contosowordpad.DocumentMacroEnabled.12&lt;/Name&gt;
-
-            &lt;DefaultIcon&gt;\[{Windows}\]\\Installer\\{90140000-0011-0000-0000-0000000FF1CE}\\contosowordpadicon.exe,15&lt;/DefaultIcon&gt;
-
-            &lt;Description&gt;Blah Blah Blah&lt;/Description&gt;
-
-            &lt;FriendlyTypeName&gt;\[{FOLDERID\_ProgramFilesX86}\]\\Microsoft Contoso 14\\res.dll,9182&lt;/FriendlyTypeName&gt;
-
-            &lt;InfoTip&gt;\[{FOLDERID\_ProgramFilesX86}\]\\Microsoft Contoso 14\\res.dll,1424&lt;/InfoTip&gt;
-
-            &lt;EditFlags&gt;0&lt;/EditFlags&gt;
-
-            &lt;ShellCommands&gt;
-
-              &lt;DefaultCommand&gt;Open&lt;/DefaultCommand&gt;
-
-              &lt;ShellCommand&gt;
-
-                 &lt;ApplicationId&gt;{e56fa627-c35f-4a01-9e79-7d36aed8225a}&lt;/ApplicationId&gt;
-
-                 &lt;Name&gt;Edit&lt;/Name&gt;
-
-                 &lt;FriendlyName&gt;&Edit&lt;/FriendlyName&gt;
-
-                 &lt;CommandLine&gt;"\[{PackageRoot}\]\\Contoso\\WINcontosowordpad.EXE" /vu "%1"&lt;/CommandLine&gt;
-
-              &lt;/ShellCommand&gt;
-
-              &lt;/ShellCommand&gt;
-
-                &lt;ApplicationId&gt;{e56fa627-c35f-4a01-9e79-7d36aed8225a}&lt;/ApplicationId&gt;
-
-                &lt;Name&gt;Open&lt;/Name&gt;
-
-                &lt;FriendlyName&gt;&Open&lt;/FriendlyName&gt;
-
-                &lt;CommandLine&gt;"\[{PackageRoot}\]\\Contoso\\WINcontosowordpad.EXE" /n "%1"&lt;/CommandLine&gt;
-
-                &lt;DropTargetClassId /&gt;
-
-                &lt;DdeExec&gt;
-
-                  &lt;Application&gt;mscontosowordpad&lt;/Application&gt;
-
-                  &lt;Topic&gt;ShellSystem&lt;/Topic&gt;
-
-                  &lt;IfExec&gt;\[SHELLNOOP\]&lt;/IfExec&gt;
-
-                  &lt;DdeCommand&gt;\[SetForeground\]\[ShellNewDatabase "%1"\]&lt;/DdeCommand&gt;
-
-                &lt;/DdeExec&gt;
-
-              &lt;/ShellCommand&gt;
-
-            &lt;/ShellCommands&gt;
-
-          &lt;/ProgId&gt;
-
-         &lt;/FileTypeAssociation&gt;
-
-       &lt;/Extension&gt;
-
-      &lt;/Extensions&gt;
-
-      &lt;/FileTypeAssociations&gt;
-
-    **URL Protocols**: This controls the URL Protocols that are integrated into the local registry of the client machine e.g. “mailto:”.
-
-    &lt;URLProtocols Enabled="true"&gt;
-
-    &lt;Extensions&gt;
-
-    &lt;Extension Category="AppV.URLProtocol"&gt;
-
-    &lt;URLProtocol&gt;
-
-      &lt;Name&gt;mailto&lt;/Name&gt;
-
-      &lt;ApplicationURLProtocol&gt;
-
-      &lt;DefaultIcon&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE,-9403&lt;/DefaultIcon&gt;
-
-      &lt;EditFlags&gt;2&lt;/EditFlags&gt;
-
-      &lt;Description /&gt;
-
-      &lt;AppUserModelId /&gt;
-
-      &lt;FriendlyTypeName /&gt;
-
-      &lt;InfoTip /&gt;
-
-    &lt;SourceFilter /&gt;
-
-      &lt;ShellFolder /&gt;
-
-      &lt;WebNavigableCLSID /&gt;
-
-      &lt;ExplorerFlags&gt;2&lt;/ExplorerFlags&gt;
-
-      &lt;CLSID /&gt;
-
-      &lt;ShellCommands&gt;
-
-      &lt;DefaultCommand&gt;open&lt;/DefaultCommand&gt;
-
-      &lt;ShellCommand&gt;
-
-      &lt;ApplicationId&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationId&gt;
-
-      &lt;Name&gt;open&lt;/Name&gt;
-
-      &lt;CommandLine&gt;\[{ProgramFilesX86}\\Microsoft Contoso\\Contoso\\contosomail.EXE" -c OEP.Note /m "%1"&lt;/CommandLine&gt;
-
-      &lt;DropTargetClassId /&gt;
-
-      &lt;FriendlyName /&gt;
-
-      &lt;Extended&gt;0&lt;/Extended&gt;
-
-      &lt;LegacyDisable&gt;0&lt;/LegacyDisable&gt;
-
-      &lt;SuppressionPolicy&gt;2&lt;/SuppressionPolicy&gt;
-
-       &lt;DdeExec&gt;
-
-      &lt;NoActivateHandler /&gt;
-
-      &lt;Application&gt;contosomail&lt;/Application&gt;
-
-      &lt;Topic&gt;ShellSystem&lt;/Topic&gt;
-
-      &lt;IfExec&gt;\[SHELLNOOP\]&lt;/IfExec&gt;
-
-      &lt;DdeCommand&gt;\[SetForeground\]\[ShellNewDatabase "%1"\]&lt;/DdeCommand&gt;
-
-      &lt;/DdeExec&gt;
-
-      &lt;/ShellCommand&gt;
-
-      &lt;/ShellCommands&gt;
-
-      &lt;/ApplicationURLProtocol&gt;
-
-      &lt;/URLProtocol&gt;
-
-      &lt;/Extension&gt;
-
-      &lt;/Extension&gt;
-
-      &lt;/URLProtocols&gt;
-
-    **Software Clients**: Allows the app to register as an Email client, news reader, media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases you should only need to enable and disable it. There is also a control to enable and disable the email client specifically if you want the other clients still enabled except for that client.
-
-    &lt;SoftwareClients Enabled="true"&gt;
-
-      &lt;ClientConfiguration EmailEnabled="false" /&gt;
-
-    &lt;/SoftwareClients&gt;
-
-    AppPaths:- If an application for example contoso.exe is registered with an apppath name of “myapp”, it allows you type “myapp” under the run menu and it will open contoso.exe.
-
-    &lt;AppPaths Enabled="true"&gt;
-
-    &lt;Extensions&gt;
-
-    &lt;Extension Category="AppV.AppPath"&gt;
-
-    &lt;AppPath&gt;
-
-      &lt;ApplicationId&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationId&gt;
-
-      &lt;Name&gt;contosomail.exe&lt;/Name&gt;
-
-      &lt;ApplicationPath&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationPath&gt;
-
-      &lt;PATHEnvironmentVariablePrefix /&gt;
-
-      &lt;CanAcceptUrl&gt;false&lt;/CanAcceptUrl&gt;
-
-      &lt;SaveUrl /&gt;
-
-    &lt;/AppPath&gt;
-
-    &lt;/Extension&gt;
+     &lt;/Extension&gt;
 
     &lt;/Extensions&gt;
 
-    &lt;/AppPaths&gt;
+   &lt;/Shortcuts&gt;
 
-    **COM**: Allows an Application register Local COM servers. Mode can be Integration, Isolated or Off. When Isol.
+   **File-Type Associations:** Associates File-types with programs to open by default as well as setup the context menu. (MIME types can also be setup using this susbsystem). Sample File-type Association is below:
 
-    &lt;COM Mode="Isolated"/&gt;
+   &lt;FileTypeAssociations Enabled="true"&gt;
 
-    **Other Settings**:
+   &lt;Extensions&gt;
 
-    In addition to Extensions, other subsystems can be enabled/disabled and edited:
+     &lt;Extension Category="AppV.FileTypeAssociation"&gt;
 
-    **Virtual Kernel Objects**:
+       &lt;FileTypeAssociation&gt;
 
-    &lt;Objects Enabled="false" /&gt;
+         &lt;FileExtension MimeAssociation="true"&gt;
 
-    **Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU
+         &lt;Name&gt;.docm&lt;/Name&gt;
 
-    &lt;Registry Enabled="true"&gt;
+         &lt;ProgId&gt;contosowordpad.DocumentMacroEnabled.12&lt;/ProgId&gt;
 
-    &lt;Include&gt;
+         &lt;PerceivedType&gt;document&lt;/PerceivedType&gt;
 
-    &lt;Key Path="\\REGISTRY\\USER\\\[{AppVCurrentUserSID}\]\\Software\\ABC"&gt;
+         &lt;ContentType&gt;application/vnd.ms-contosowordpad.document.macroEnabled.12&lt;/ContentType&gt;
 
-    &lt;Value Type="REG\_SZ" Name="Bar" Data="NewValue" /&gt;
+         &lt;OpenWithList&gt;
 
-     &lt;/Key&gt;
+           &lt;ApplicationName&gt;wincontosowordpad.exe&lt;/ApplicationName&gt;
 
-      &lt;Key Path="\\REGISTRY\\USER\\\[{AppVCurrentUserSID}\]\\Software\\EmptyKey" /&gt;
+         &lt;/OpenWithList&gt;
 
-     &lt;/Include&gt;
+        &lt;OpenWithProgIds&gt;
 
-    &lt;Delete&gt;
+           &lt;ProgId&gt;contosowordpad.8&lt;/ProgId&gt;
 
-      &lt;/Registry&gt;
+         &lt;/OpenWithProgIds&gt;
 
-    **Virtual File System**
+         &lt;ShellNew&gt;
 
-          &lt;FileSystem Enabled="true" /&gt;
+           &lt;Command /&gt;
 
-    **Virtual Fonts**
+           &lt;DataBinary /&gt;
 
-          &lt;Fonts Enabled="false" /&gt;
+           &lt;DataText /&gt;
 
-    **Virtual Environment Variables**
+           &lt;FileName /&gt;
 
-    &lt;EnvironmentVariables Enabled="true"&gt;
+           &lt;NullFile&gt;true&lt;/NullFile&gt;
 
-    &lt;Include&gt;
+           &lt;ItemName /&gt;
 
-           &lt;Variable Name="UserPath" Value="%path%;%UserProfile%" /&gt;
+           &lt;IconPath /&gt;
 
-           &lt;Variable Name="UserLib" Value="%UserProfile%\\ABC" /&gt;
+           &lt;MenuText /&gt;
 
-           &lt;/Include&gt;
+           &lt;Handler /&gt;
 
-          &lt;Delete&gt;
+         &lt;/ShellNew&gt;
 
-           &lt;Variable Name="lib" /&gt;
+       &lt;/FileExtension&gt;
 
-            &lt;/Delete&gt;
+       &lt;ProgId&gt;
 
-            &lt;/EnvironmentVariables&gt;
+          &lt;Name&gt;contosowordpad.DocumentMacroEnabled.12&lt;/Name&gt;
 
-    **Virtual services**
+           &lt;DefaultIcon&gt;\[{Windows}\]\\Installer\\{90140000-0011-0000-0000-0000000FF1CE}\\contosowordpadicon.exe,15&lt;/DefaultIcon&gt;
 
-          &lt;Services Enabled="false" /&gt;
+           &lt;Description&gt;Blah Blah Blah&lt;/Description&gt;
 
-3.  **UserScripts** – Scripts can be used to setup or alter the virtual environment as well as execute scripts at time of deployment or removal, before an application executes, or they can be used to “clean up” the environment after the application terminates. Please reference a sample User configuration file that is output by the sequencer to see a sample script. The Scripts section below provides more information on the various triggers that can be used.
+           &lt;FriendlyTypeName&gt;\[{FOLDERID\_ProgramFilesX86}\]\\Microsoft Contoso 14\\res.dll,9182&lt;/FriendlyTypeName&gt;
 
-4.  **ManagingAuthority** – Can be used when 2 versions of your package are co-existing on the same machine, one deployed to App-V 4.6 and the other deployed on App-V 5.0. To Allow App-V vNext to take over App-V 4.6 extension points for the named package enter the following in the UserConfig file (where PackageName is the Package GUID in App-V 4.6:
+           &lt;InfoTip&gt;\[{FOLDERID\_ProgramFilesX86}\]\\Microsoft Contoso 14\\res.dll,1424&lt;/InfoTip&gt;
 
-    &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true" PackageName="032630c0-b8e2-417c-acef-76fc5297fe81" /&gt;
+           &lt;EditFlags&gt;0&lt;/EditFlags&gt;
+
+           &lt;ShellCommands&gt;
+
+             &lt;DefaultCommand&gt;Open&lt;/DefaultCommand&gt;
+
+             &lt;ShellCommand&gt;
+
+                &lt;ApplicationId&gt;{e56fa627-c35f-4a01-9e79-7d36aed8225a}&lt;/ApplicationId&gt;
+
+                &lt;Name&gt;Edit&lt;/Name&gt;
+
+                &lt;FriendlyName&gt;&Edit&lt;/FriendlyName&gt;
+
+                &lt;CommandLine&gt;"\[{PackageRoot}\]\\Contoso\\WINcontosowordpad.EXE" /vu "%1"&lt;/CommandLine&gt;
+
+             &lt;/ShellCommand&gt;
+
+             &lt;/ShellCommand&gt;
+
+               &lt;ApplicationId&gt;{e56fa627-c35f-4a01-9e79-7d36aed8225a}&lt;/ApplicationId&gt;
+
+               &lt;Name&gt;Open&lt;/Name&gt;
+
+               &lt;FriendlyName&gt;&Open&lt;/FriendlyName&gt;
+
+               &lt;CommandLine&gt;"\[{PackageRoot}\]\\Contoso\\WINcontosowordpad.EXE" /n "%1"&lt;/CommandLine&gt;
+
+               &lt;DropTargetClassId /&gt;
+
+               &lt;DdeExec&gt;
+
+                 &lt;Application&gt;mscontosowordpad&lt;/Application&gt;
+
+                 &lt;Topic&gt;ShellSystem&lt;/Topic&gt;
+
+                 &lt;IfExec&gt;\[SHELLNOOP\]&lt;/IfExec&gt;
+
+                 &lt;DdeCommand&gt;\[SetForeground\]\[ShellNewDatabase "%1"\]&lt;/DdeCommand&gt;
+
+               &lt;/DdeExec&gt;
+
+             &lt;/ShellCommand&gt;
+
+           &lt;/ShellCommands&gt;
+
+         &lt;/ProgId&gt;
+
+        &lt;/FileTypeAssociation&gt;
+
+      &lt;/Extension&gt;
+
+     &lt;/Extensions&gt;
+
+     &lt;/FileTypeAssociations&gt;
+
+   **URL Protocols**: This controls the URL Protocols that are integrated into the local registry of the client machine e.g. “mailto:”.
+
+   &lt;URLProtocols Enabled="true"&gt;
+
+   &lt;Extensions&gt;
+
+   &lt;Extension Category="AppV.URLProtocol"&gt;
+
+   &lt;URLProtocol&gt;
+
+     &lt;Name&gt;mailto&lt;/Name&gt;
+
+     &lt;ApplicationURLProtocol&gt;
+
+     &lt;DefaultIcon&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE,-9403&lt;/DefaultIcon&gt;
+
+     &lt;EditFlags&gt;2&lt;/EditFlags&gt;
+
+     &lt;Description /&gt;
+
+     &lt;AppUserModelId /&gt;
+
+     &lt;FriendlyTypeName /&gt;
+
+     &lt;InfoTip /&gt;
+
+   &lt;SourceFilter /&gt;
+
+     &lt;ShellFolder /&gt;
+
+     &lt;WebNavigableCLSID /&gt;
+
+     &lt;ExplorerFlags&gt;2&lt;/ExplorerFlags&gt;
+
+     &lt;CLSID /&gt;
+
+     &lt;ShellCommands&gt;
+
+     &lt;DefaultCommand&gt;open&lt;/DefaultCommand&gt;
+
+     &lt;ShellCommand&gt;
+
+     &lt;ApplicationId&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationId&gt;
+
+     &lt;Name&gt;open&lt;/Name&gt;
+
+     &lt;CommandLine&gt;\[{ProgramFilesX86}\\Microsoft Contoso\\Contoso\\contosomail.EXE" -c OEP.Note /m "%1"&lt;/CommandLine&gt;
+
+     &lt;DropTargetClassId /&gt;
+
+     &lt;FriendlyName /&gt;
+
+     &lt;Extended&gt;0&lt;/Extended&gt;
+
+     &lt;LegacyDisable&gt;0&lt;/LegacyDisable&gt;
+
+     &lt;SuppressionPolicy&gt;2&lt;/SuppressionPolicy&gt;
+
+      &lt;DdeExec&gt;
+
+     &lt;NoActivateHandler /&gt;
+
+     &lt;Application&gt;contosomail&lt;/Application&gt;
+
+     &lt;Topic&gt;ShellSystem&lt;/Topic&gt;
+
+     &lt;IfExec&gt;\[SHELLNOOP\]&lt;/IfExec&gt;
+
+     &lt;DdeCommand&gt;\[SetForeground\]\[ShellNewDatabase "%1"\]&lt;/DdeCommand&gt;
+
+     &lt;/DdeExec&gt;
+
+     &lt;/ShellCommand&gt;
+
+     &lt;/ShellCommands&gt;
+
+     &lt;/ApplicationURLProtocol&gt;
+
+     &lt;/URLProtocol&gt;
+
+     &lt;/Extension&gt;
+
+     &lt;/Extension&gt;
+
+     &lt;/URLProtocols&gt;
+
+   **Software Clients**: Allows the app to register as an Email client, news reader, media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases you should only need to enable and disable it. There is also a control to enable and disable the email client specifically if you want the other clients still enabled except for that client.
+
+   &lt;SoftwareClients Enabled="true"&gt;
+
+     &lt;ClientConfiguration EmailEnabled="false" /&gt;
+
+   &lt;/SoftwareClients&gt;
+
+   AppPaths:- If an application for example contoso.exe is registered with an apppath name of “myapp”, it allows you type “myapp” under the run menu and it will open contoso.exe.
+
+   &lt;AppPaths Enabled="true"&gt;
+
+   &lt;Extensions&gt;
+
+   &lt;Extension Category="AppV.AppPath"&gt;
+
+   &lt;AppPath&gt;
+
+     &lt;ApplicationId&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationId&gt;
+
+     &lt;Name&gt;contosomail.exe&lt;/Name&gt;
+
+     &lt;ApplicationPath&gt;\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE&lt;/ApplicationPath&gt;
+
+     &lt;PATHEnvironmentVariablePrefix /&gt;
+
+     &lt;CanAcceptUrl&gt;false&lt;/CanAcceptUrl&gt;
+
+     &lt;SaveUrl /&gt;
+
+   &lt;/AppPath&gt;
+
+   &lt;/Extension&gt;
+
+   &lt;/Extensions&gt;
+
+   &lt;/AppPaths&gt;
+
+   **COM**: Allows an Application register Local COM servers. Mode can be Integration, Isolated or Off. When Isol.
+
+   &lt;COM Mode="Isolated"/&gt;
+
+   **Other Settings**:
+
+   In addition to Extensions, other subsystems can be enabled/disabled and edited:
+
+   **Virtual Kernel Objects**:
+
+   &lt;Objects Enabled="false" /&gt;
+
+   **Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU
+
+   &lt;Registry Enabled="true"&gt;
+
+   &lt;Include&gt;
+
+   &lt;Key Path="\\REGISTRY\\USER\\\[{AppVCurrentUserSID}\]\\Software\\ABC"&gt;
+
+   &lt;Value Type="REG\_SZ" Name="Bar" Data="NewValue" /&gt;
+
+    &lt;/Key&gt;
+
+     &lt;Key Path="\\REGISTRY\\USER\\\[{AppVCurrentUserSID}\]\\Software\\EmptyKey" /&gt;
+
+    &lt;/Include&gt;
+
+   &lt;Delete&gt;
+
+     &lt;/Registry&gt;
+
+   **Virtual File System**
+
+         &lt;FileSystem Enabled="true" /&gt;
+
+   **Virtual Fonts**
+
+         &lt;Fonts Enabled="false" /&gt;
+
+   **Virtual Environment Variables**
+
+   &lt;EnvironmentVariables Enabled="true"&gt;
+
+   &lt;Include&gt;
+
+          &lt;Variable Name="UserPath" Value="%path%;%UserProfile%" /&gt;
+
+          &lt;Variable Name="UserLib" Value="%UserProfile%\\ABC" /&gt;
+
+          &lt;/Include&gt;
+
+         &lt;Delete&gt;
+
+          &lt;Variable Name="lib" /&gt;
+
+           &lt;/Delete&gt;
+
+           &lt;/EnvironmentVariables&gt;
+
+   **Virtual services**
+
+         &lt;Services Enabled="false" /&gt;
+
+3. **UserScripts** – Scripts can be used to setup or alter the virtual environment as well as execute scripts at time of deployment or removal, before an application executes, or they can be used to “clean up” the environment after the application terminates. Please reference a sample User configuration file that is output by the sequencer to see a sample script. The Scripts section below provides more information on the various triggers that can be used.
+
+4. **ManagingAuthority** – Can be used when 2 versions of your package are co-existing on the same machine, one deployed to App-V 4.6 and the other deployed on App-V 5.0. To Allow App-V vNext to take over App-V 4.6 extension points for the named package enter the following in the UserConfig file (where PackageName is the Package GUID in App-V 4.6:
+
+   &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true" PackageName="032630c0-b8e2-417c-acef-76fc5297fe81" /&gt;
 
 ### Dynamic Deployment Configuration file
 
 **Header** - The header of a Deployment Configuration file is as follows:
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
 
 The **PackageId** is the same value as exists in the manifest file.
 
@@ -579,11 +582,11 @@ The **PackageId** is the same value as exists in the manifest file.
 
 -   Machine Configuration section–contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
-&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt;
+&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
 
 &lt;UserConfiguration&gt;
 
-  ..
+  ..
 
 &lt;/UserConfiguration&gt;
 
@@ -607,11 +610,11 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;MachineConfiguration&gt;
 
-      &lt;Subsystems&gt;
+      &lt;Subsystems&gt;
 
-      ..
+      ..
 
-      &lt;/Subsystems&gt;
+      &lt;/Subsystems&gt;
 
     ..
 
@@ -627,65 +630,65 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;ApplicationCapabilities Enabled="true"&gt;
 
-      &lt;Extensions&gt;
+      &lt;Extensions&gt;
 
-       &lt;Extension Category="AppV.ApplicationCapabilities"&gt;
+       &lt;Extension Category="AppV.ApplicationCapabilities"&gt;
 
-        &lt;ApplicationCapabilities&gt;
+        &lt;ApplicationCapabilities&gt;
 
-         &lt;ApplicationId&gt;\[{PackageRoot}\]\\LitView\\LitViewBrowser.exe&lt;/ApplicationId&gt;
+         &lt;ApplicationId&gt;\[{PackageRoot}\]\\LitView\\LitViewBrowser.exe&lt;/ApplicationId&gt;
 
-         &lt;Reference&gt;
+         &lt;Reference&gt;
 
-          &lt;Name&gt;LitView Browser&lt;/Name&gt;
+          &lt;Name&gt;LitView Browser&lt;/Name&gt;
 
-          &lt;Path&gt;SOFTWARE\\LitView\\Browser\\Capabilities&lt;/Path&gt;
+          &lt;Path&gt;SOFTWARE\\LitView\\Browser\\Capabilities&lt;/Path&gt;
 
-         &lt;/Reference&gt;
+         &lt;/Reference&gt;
 
-       &lt;CapabilityGroup&gt;
+       &lt;CapabilityGroup&gt;
 
-        &lt;Capabilities&gt;
+        &lt;Capabilities&gt;
 
-         &lt;Name&gt;@\[{ProgramFilesX86}\]\\LitView\\LitViewBrowser.exe,-12345&lt;/Name&gt;
+         &lt;Name&gt;@\[{ProgramFilesX86}\]\\LitView\\LitViewBrowser.exe,-12345&lt;/Name&gt;
 
-         &lt;Description&gt;@\[{ProgramFilesX86}\]\\LitView\\LitViewBrowser.exe,-12346&lt;/Description&gt;
+         &lt;Description&gt;@\[{ProgramFilesX86}\]\\LitView\\LitViewBrowser.exe,-12346&lt;/Description&gt;
 
-         &lt;Hidden&gt;0&lt;/Hidden&gt;
+         &lt;Hidden&gt;0&lt;/Hidden&gt;
 
-         &lt;EMailSoftwareClient&gt;Lit View E-Mail Client&lt;/EMailSoftwareClient&gt;
+         &lt;EMailSoftwareClient&gt;Lit View E-Mail Client&lt;/EMailSoftwareClient&gt;
 
-         &lt;FileAssociationList&gt;
+         &lt;FileAssociationList&gt;
 
-          &lt;FileAssociation Extension=".htm" ProgID="LitViewHTML" /&gt;
+          &lt;FileAssociation Extension=".htm" ProgID="LitViewHTML" /&gt;
 
-          &lt;FileAssociation Extension=".html" ProgID="LitViewHTML" /&gt;
+          &lt;FileAssociation Extension=".html" ProgID="LitViewHTML" /&gt;
 
-          &lt;FileAssociation Extension=".shtml" ProgID="LitViewHTML" /&gt;
+          &lt;FileAssociation Extension=".shtml" ProgID="LitViewHTML" /&gt;
 
-         &lt;/FileAssociationList&gt;
+         &lt;/FileAssociationList&gt;
 
-         &lt;MIMEAssociationList&gt;
+         &lt;MIMEAssociationList&gt;
 
-          &lt;MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" /&gt;
+          &lt;MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" /&gt;
 
-          &lt;MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" /&gt;
+          &lt;MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" /&gt;
 
-         &lt;/MIMEAssociationList&gt;
+         &lt;/MIMEAssociationList&gt;
 
-        &lt;URLAssociationList&gt;
+        &lt;URLAssociationList&gt;
 
-          &lt;URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" /&gt;
+          &lt;URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" /&gt;
 
-         &lt;/URLAssociationList&gt;
+         &lt;/URLAssociationList&gt;
 
-         &lt;/Capabilities&gt;
+         &lt;/Capabilities&gt;
 
-      &lt;/CapabilityGroup&gt;
+      &lt;/CapabilityGroup&gt;
 
-       &lt;/ApplicationCapabilities&gt;
+       &lt;/ApplicationCapabilities&gt;
 
-      &lt;/Extension&gt;
+      &lt;/Extension&gt;
 
     &lt;/Extensions&gt;
 
@@ -701,15 +704,15 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;Include&gt;
 
-      &lt;Key Path="\\REGISTRY\\Machine\\Software\\ABC"&gt;
+      &lt;Key Path="\\REGISTRY\\Machine\\Software\\ABC"&gt;
 
-        &lt;Value Type="REG\_SZ" Name="Bar" Data="Baz" /&gt;
+        &lt;Value Type="REG\_SZ" Name="Bar" Data="Baz" /&gt;
 
-       &lt;/Key&gt;
+       &lt;/Key&gt;
 
-      &lt;Key Path="\\REGISTRY\\Machine\\Software\\EmptyKey" /&gt;
+      &lt;Key Path="\\REGISTRY\\Machine\\Software\\EmptyKey" /&gt;
 
-     &lt;/Include&gt;
+     &lt;/Include&gt;
 
     &lt;Delete&gt;
 
@@ -721,9 +724,9 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;NotIsolate&gt;
 
-       &lt;Object Name="testObject" /&gt;
+       &lt;Object Name="testObject" /&gt;
 
-     &lt;/NotIsolate&gt;
+     &lt;/NotIsolate&gt;
 
     &lt;/Objects&gt;
 
@@ -731,11 +734,11 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;MachineConfiguration&gt;
 
-      .. 
+      .. 
 
-      &lt;ProductSourceURLOptOut Enabled="true" /&gt;
+      &lt;ProductSourceURLOptOut Enabled="true" /&gt;
 
-      ..
+      ..
 
     &lt;/MachineConfiguration&gt;
 
@@ -745,19 +748,19 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
     &lt;MachineConfiguration&gt;
 
-      ..   
+      ..   
 
-      &lt;TerminateChildProcesses&gt;
+      &lt;TerminateChildProcesses&gt;
 
-        &lt;Application Path="\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE" /&gt;
+        &lt;Application Path="\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE" /&gt;
 
-        &lt;Application Path="\[{PackageRoot}\]\\LitView\\LitViewBrowser.exe" /&gt;
+        &lt;Application Path="\[{PackageRoot}\]\\LitView\\LitViewBrowser.exe" /&gt;
 
-        &lt;Application Path="\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE" /&gt;
+        &lt;Application Path="\[{ProgramFilesX86}\]\\Microsoft Contoso\\Contoso\\contosomail.EXE" /&gt;
 
-      &lt;/TerminateChildProcesses&gt;
+      &lt;/TerminateChildProcesses&gt;
 
-      ..
+      ..
 
     &lt;/MachineConfiguration&gt;
 
@@ -852,7 +855,7 @@ The following table describes the various script events and the context under wh
 </tbody>
 </table>
 
- 
+ 
 
 ### Create a Dynamic Configuration file using an App-V 5.0 Manifest file
 
@@ -876,9 +879,9 @@ To create the file manually, the information above in previous sections can be c
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

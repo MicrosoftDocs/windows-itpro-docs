@@ -50,19 +50,19 @@ Enable security information and event management (SIEM) integration so you can p
 
 3. Choose the SIEM type you use in your organization.
 
-  > [!NOTE]
-  > If you select HP ArcSight, you'll need to save these two configuration files:<br>
-  - WDATP-connector.jsonparser.properties
-  - WDATP-connector.properties <br>
+   > [!NOTE]
+   > If you select HP ArcSight, you'll need to save these two configuration files:<br>
+   > - WDATP-connector.jsonparser.properties
+   > - WDATP-connector.properties <br>
 
-  If you want to connect directly to the alerts REST API through programmatic access, choose **Generic API**.
+   If you want to connect directly to the alerts REST API through programmatic access, choose **Generic API**.
 
 4. Copy the individual values or select **Save details to file** to download a file that contains all the values.
 
 5. Select **Generate tokens** to get an access and refresh token.
   
-  > [!NOTE]
-  > You'll need to generate a new Refresh token every 90 days. 
+   > [!NOTE]
+   > You'll need to generate a new Refresh token every 90 days. 
 
 You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from Microsoft Defender Security Center.
 

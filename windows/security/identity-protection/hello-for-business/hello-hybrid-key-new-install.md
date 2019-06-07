@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Key Trust New Installation
 
@@ -110,11 +111,11 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 
 ### Azure Multi-Factor Authentication (MFA) Cloud ###
 > [!IMPORTANT]
-As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
+> As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
 > * Azure Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
->
+> 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
 #### Azure MFA Provider #### 

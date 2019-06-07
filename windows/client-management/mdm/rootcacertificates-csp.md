@@ -2,11 +2,13 @@
 title: RootCATrustedCertificates CSP
 description: RootCATrustedCertificates CSP
 ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/06/2018
 ---
 

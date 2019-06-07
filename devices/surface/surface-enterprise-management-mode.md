@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: jobotto
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -212,9 +214,7 @@ valid.
 machines that have it?**
 
 If you want SEMM reset or recovery to work, the certificate needs to be
-valid and not expired. You can use the current valid ownership
-certificate to sign a package that updates to a new certificate for
-ownership. You do not need to create a reset package. 
+valid and not expired. 
 
 **Can bulk reset packages be created for each surface that we order? Can
 one be built that resets all machines in our environment?**

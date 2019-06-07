@@ -1,5 +1,8 @@
 ---
 title: Configure VDA for Windows 10 Subscription Activation
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -7,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+author: dansimp
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -82,7 +85,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
     3. Right-click the mounted image in file explorer and click **Eject**.
-1. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+16. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 

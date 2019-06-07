@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: dansimp
 ms.date: 02/13/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -15,7 +18,7 @@ ms.topic: article
 # MBR2GPT.EXE
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 ## Summary
 
@@ -59,7 +62,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 ## Syntax
 
 <table style="font-family:consolas;font-size:12px" >
-<TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
+<TR><TD>MBR2GPT /validate|convert [/disk:&lt;diskNumber>] [/logs:&lt;logDirectory>] [/map:&lt;source>=&lt;destination>] [/allowFullOS]
 </TABLE>
 
 ### Options
@@ -217,7 +220,6 @@ Offset in Bytes: 524288000
   Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
   ----------  ---  -----------  -----  ----------  -------  ---------  --------
 * Volume 1     D   Windows      NTFS   Partition     58 GB  Healthy
-
 ```
 
 ## Specifications
@@ -267,7 +269,7 @@ For more information about partition types, see:
 - [MBR partition types](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx)
 
 
-###	Persisting drive letter assignments
+### Persisting drive letter assignments
 
 The conversion tool will attempt to remap all drive letter assignment information contained in the registry that correspond to the volumes of the converted disk. If a drive letter assignment cannot be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. **Important**: this code runs after the layout conversion has taken place, so the operation cannot be undone at this stage. 
 
@@ -335,7 +337,6 @@ Where:
          - Allows the tool to be used from the full Windows
            environment. By default, this tool can only be used
            from the Windows Preinstallation Environment.
-
 ```
 
 ### Return codes

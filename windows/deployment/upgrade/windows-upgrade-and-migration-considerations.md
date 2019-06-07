@@ -2,10 +2,13 @@
 title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Windows Upgrade and Migration Considerations
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 

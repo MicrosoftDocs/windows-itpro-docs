@@ -1,16 +1,18 @@
 ---
 title: Set up a multi-app kiosk  (Windows 10)
-description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
+description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
+ms.reviewer: 
+manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 01/09/2019
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -19,20 +21,18 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+-   Windows 10 Pro, Enterprise, and Education
 
 
 A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
 The following table lists changes to multi-app kiosk in recent updates. 
 
-New features and improvements | In update
---- | ---
-- Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)  | Windows 10, version 1803
-- Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`.
 
-
-
+|                                                                                                                            New features and improvements                                                                                                                             |                                                                                                           In update                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                     - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)                     |                                                                                                   Windows 10, version 1803                                                                                                    |
+| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
 >[!WARNING]
 >The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -85,7 +85,7 @@ Let's start by looking at the basic structure of the XML file.
 - A profile has no effect if it’s not associated to a config section. 
 
     ![profile = app and config = account](images/profile-config.png)
-    
+
 You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this topic. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
 
 ```xml
@@ -162,8 +162,8 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:   
 
-1.	Default rule is to allow all users to launch the signed package apps. 
-2.	The package app deny list is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This deny list will be used to prevent the user from accessing the apps which are currently available for the user but not in the allowed list. 
+1.  Default rule is to allow all users to launch the signed package apps. 
+2.  The package app deny list is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This deny list will be used to prevent the user from accessing the apps which are currently available for the user but not in the allowed list. 
 
     >[!NOTE]
     >You cannot manage AppLocker rules that are generated by the multi-app kiosk configuration in [MMC snap-ins](https://technet.microsoft.com/library/hh994629.aspx#BKMK_Using_Snapins). Avoid creating AppLocker rules that conflict with AppLocker rules that are generated by the multi-app kiosk configuration.
@@ -172,26 +172,25 @@ When the mult-app kiosk configuration is applied to a device, AppLocker rules wi
 
 Here are the predefined assigned access AppLocker rules for **desktop apps**:
 
-1.	Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs. 
-2.	There is a predefined inbox desktop app deny list for the assigned access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration. 
-3.	Enterprise-defined allowed desktop apps are added in the AppLocker allow list. 
+1.  Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs. 
+2.  There is a predefined inbox desktop app deny list for the assigned access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration. 
+3.  Enterprise-defined allowed desktop apps are added in the AppLocker allow list. 
 
 The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
 
 <span id="apps-sample" />
-```xml
-<AllAppsList>
-        <AllowedApps>
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt"/>
-        </AllowedApps>
-</AllAppsList>
-```
+<code>xml
+&lt;AllAppsList&gt;
+        &lt;AllowedApps&gt;
+          &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
+          &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
+          &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
+          &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+          &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
+          &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
+          &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; rs5:AutoLaunch=&quot;true&quot; rs5:AutoLaunchArguments=&quot;123.txt&quot;/&gt;
+        &lt;/AllowedApps&gt;
+&lt;/AllAppsList&gt;</code>
 
 ##### FileExplorerNamespaceRestrictions
 
@@ -279,13 +278,13 @@ The following example exposes the taskbar to the end user:
 ```xml
 <Taskbar ShowTaskbar="true"/>
 ```
-      
+
 The following example hides the taskbar:
 
 ```xml
 <Taskbar ShowTaskbar="false"/>
 ```
-      
+
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
@@ -355,14 +354,14 @@ Individual accounts are specified using `<Account>`.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
-- Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
+- Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. <strong>AzureAD\someone@contoso.onmicrosoft.com</strong>.
 
 >[!WARNING]
 >Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
 
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
- 
+
 >[!NOTE]
 >For both domain and Azure AD accounts, it’s not required that target account is explicitly added to the device. As long as the device is AD-joined or Azure AD-joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
@@ -388,15 +387,15 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
   <Config> 
     <UserGroup Type="LocalGroup" Name="mygroup" /> 
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-</Config> 
+  </Config> 
   ```
-- Domain group: Both security and distribution groups are supported. Specify the group type as **ActiveDirectoryGroup**. Use the domain name as the prefix in the name attribute.
+- Domain group: Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
 
   ```xml
   <Config> 
     <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" /> 
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-</Config> 
+  </Config> 
   ```
 
 - Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign in.
@@ -405,7 +404,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
   <Config> 
     <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" /> 
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-</Config> 
+  </Config> 
   ```
 
   >[!NOTE]
@@ -421,7 +420,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1.  Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
 2. Choose **Advanced provisioning**.
 
@@ -435,42 +434,42 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. In the center pane, click **Browse** to locate and select the assigned access configuration XML file that you created.
 
-  ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
 
 8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.   
 
-8. (**Optional**: If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
+9. (**Optional**: If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
 
-8.  On the **File** menu, select **Save.**
+10. On the **File** menu, select **Save.**
 
-9.  On the **Export** menu, select **Provisioning package**.
+11. On the **Export** menu, select **Provisioning package**.
 
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+12. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+13. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
 
-12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
+14. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
     Optionally, you can click **Browse** to change the default output location.
 
-13. Click **Next**.
+15. Click **Next**.
 
-14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+16. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
 
     If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+17. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
 
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-    
-15. Copy the provisioning package to the root directory of a USB drive.
+
+18. Copy the provisioning package to the root directory of a USB drive.
 
 <span id="apply-ppkg" />
 ### Apply provisioning package to device
@@ -493,7 +492,7 @@ Provisioning packages can be applied to a device during the first-run experience
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
     ![Provision this device](images/prov.jpg)
-    
+
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
     ![Choose a package](images/choose-package.png)
@@ -501,9 +500,9 @@ Provisioning packages can be applied to a device during the first-run experience
 5. Select **Yes, add it**.
 
     ![Do you trust this package?](images/trust-package.png)
-    
 
-    
+
+
 #### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
@@ -571,34 +570,34 @@ When the multi-app assigned access configuration is applied on the device, certa
 
 The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  This includes local users, domain users, and Azure Active Directory users.
 
-| Setting |	Value |
+| Setting | Value |
 | --- | --- |
-Remove access to the context menus for the task bar	| Enabled
-Clear history of recently opened documents on exit |	Enabled
-Prevent users from customizing their Start Screen |	Enabled
-Prevent users from uninstalling applications from Start |		Enabled
-Remove All Programs list from the Start menu |		Enabled
-Remove Run menu from Start Menu	 |	Enabled
-Disable showing balloon notifications as toast |		Enabled
-Do not allow pinning items in Jump Lists |		Enabled
-Do not allow pinning programs to the Taskbar |		Enabled
-Do not display or track items in Jump Lists from remote locations |		Enabled
-Remove Notifications and Action Center |		Enabled
-Lock all taskbar settings |		Enabled
-Lock the Taskbar	 |	Enabled
-Prevent users from adding or removing toolbars |		Enabled
-Prevent users from resizing the taskbar	 |	Enabled
-Remove frequent programs list from the Start Menu |		Enabled
+Remove access to the context menus for the task bar | Enabled
+Clear history of recently opened documents on exit |    Enabled
+Prevent users from customizing their Start Screen | Enabled
+Prevent users from uninstalling applications from Start |       Enabled
+Remove All Programs list from the Start menu |      Enabled
+Remove Run menu from Start Menu  |  Enabled
+Disable showing balloon notifications as toast |        Enabled
+Do not allow pinning items in Jump Lists |      Enabled
+Do not allow pinning programs to the Taskbar |      Enabled
+Do not display or track items in Jump Lists from remote locations |     Enabled
+Remove Notifications and Action Center |        Enabled
+Lock all taskbar settings |     Enabled
+Lock the Taskbar     |  Enabled
+Prevent users from adding or removing toolbars |        Enabled
+Prevent users from resizing the taskbar  |  Enabled
+Remove frequent programs list from the Start Menu |     Enabled
 Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
-Remove the Security and Maintenance icon	 |	Enabled
-Turn off all balloon notifications |		Enabled
-Turn off feature advertisement balloon notifications	 |	Enabled
-Turn off toast notifications |		Enabled
-Remove Task Manager |		Enabled
-Remove Change Password option in Security Options UI |		Enabled
-Remove Sign Out option in Security Options UI	 |	Enabled
-Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable setting
-Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
+Remove the Security and Maintenance icon     |  Enabled
+Turn off all balloon notifications |        Enabled
+Turn off feature advertisement balloon notifications     |  Enabled
+Turn off toast notifications |      Enabled
+Remove Task Manager |       Enabled
+Remove Change Password option in Security Options UI |      Enabled
+Remove Sign Out option in Security Options UI    |  Enabled
+Remove All Programs list from the Start Menu     |  Enabled – Remove and disable setting
+Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
 >[!NOTE]
 >When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
@@ -610,25 +609,25 @@ Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 
 Some of the MDM policies based on the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
 
-Setting	| 	Value	| System-wide
+Setting |   Value   | System-wide
  --- | --- | ---
-[Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
-[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)       | 0 - Not allowed   |   Yes
+[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)    |   0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
 Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
-[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)		| 1 - True (hide)	| 	No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
-[WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
-[Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
-[WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes
+[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)        | 1 - True (hide)   |   No
+[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)        | 1 - True (hide) | Yes
+[WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)    |   0 - Access to ink workspace is disabled and the feature is turned off   |   Yes
+[Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
+[WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
 
 <span id="lnk-files" />
 ## Provision .lnk files using Windows Configuration Designer

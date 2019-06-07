@@ -1,8 +1,11 @@
 ---
 title: File Type Associations Results Pane
 description: File Type Associations Results Pane
-author: jamiejdt
+author: dansimp
 ms.assetid: 881d7fa7-ecde-4a05-b6ee-132fe2c09900
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

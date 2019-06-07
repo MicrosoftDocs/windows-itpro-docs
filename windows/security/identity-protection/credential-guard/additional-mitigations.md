@@ -7,12 +7,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
 ## Additional mitigations
@@ -610,9 +611,3 @@ write-host $tmp -Foreground Red
 
 > [!NOTE]  
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
-
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

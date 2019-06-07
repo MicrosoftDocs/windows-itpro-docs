@@ -4,10 +4,12 @@ description: Learn how to troubleshoot port exhaustion issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Troubleshoot port exhaustion issues
@@ -103,13 +105,13 @@ You may also see CLOSE_WAIT state connections in the same output, however CLOSE_
 >
 >Until 10/2016, netstat was inaccurate. Fixes for netstat, back-ported to 2012 R2, allowed Netstat.exe and Get-NetTcpConnection to correctly report TCP or UDP port usage in Windows Server 2012 R2. See [Windows Server 2012 R2: Ephemeral ports hotfixes](https://support.microsoft.com/help/3123245/update-improves-port-exhaustion-identification-in-windows-server-2012) to learn more.
  
-4.	Open a command prompt in admin mode and run the below command
+4. Open a command prompt in admin mode and run the below command
 
-    ```cmd
-    Netsh trace start scenario=netconnection capture=yes tracefile=c:\Server.etl
-    ```
+   ```cmd
+   Netsh trace start scenario=netconnection capture=yes tracefile=c:\Server.etl
+   ```
 
-5.	Open the server.etl file with [Network Monitor](troubleshoot-tcpip-netmon.md) and in the filter section, apply the filter **Wscore_MicrosoftWindowsWinsockAFD.AFD_EVENT_BIND.Status.LENTStatus.Code == 0x209**. You should see entries which say **STATUS_TOO_MANY_ADDRESSES**. If you do not find any entries, then the server is still not out of ports. If you find them, then you can confirm that the server is under port exhaustion.
+5. Open the server.etl file with [Network Monitor](troubleshoot-tcpip-netmon.md) and in the filter section, apply the filter **Wscore_MicrosoftWindowsWinsockAFD.AFD_EVENT_BIND.Status.LENTStatus.Code == 0x209**. You should see entries which say **STATUS_TOO_MANY_ADDRESSES**. If you do not find any entries, then the server is still not out of ports. If you find them, then you can confirm that the server is under port exhaustion.
  
 ## Troubleshoot Port exhaustion
  

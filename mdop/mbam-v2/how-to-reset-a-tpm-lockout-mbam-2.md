@@ -1,8 +1,11 @@
 ---
 title: How to Reset a TPM Lockout
 description: How to Reset a TPM Lockout
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 20719ab2-18ae-4d3b-989a-539341909816
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -36,30 +39,32 @@ You can reset a TPM lockout only if MBAM owns the TPM.
 
     -   The TPM owner password file for the submitted computer
 
-    **Note**  
+    **Note**  
     If you are an Advanced Helpdesk user, the user domain and user ID fields are not required.
 
-     
 
-    After the TPM owner password is retrieved, the owner password is displayed.
 
-5.  To save the password to a .tpm file, click the **Save** button.
+~~~
+After the TPM owner password is retrieved, the owner password is displayed.
+~~~
 
-    The user will run the TPM management console, select the **Reset TPM lockout** option, and provide the TPM owner password file to reset the TPM lockout.
+5. To save the password to a .tpm file, click the **Save** button.
 
-    **Important**  
-    Help Desk administrators should not give the TPM hash value or TPM owner password file to end users. The TPM information does not change, so it could pose a security risk if the file is given to end users.
+   The user will run the TPM management console, select the **Reset TPM lockout** option, and provide the TPM owner password file to reset the TPM lockout.
 
-     
+   **Important**  
+   Help Desk administrators should not give the TPM hash value or TPM owner password file to end users. The TPM information does not change, so it could pose a security risk if the file is given to end users.
+
+
 
 ## Related topics
 
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam-mbam-2.md)
 
- 
 
- 
+
+
 
 
 

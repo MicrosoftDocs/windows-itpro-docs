@@ -1,8 +1,11 @@
 ---
 title: Deployment Tab
 description: Deployment Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: 4510188b-eade-445d-a90f-b9127dd479a7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

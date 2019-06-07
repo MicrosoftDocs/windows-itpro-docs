@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 
@@ -61,11 +62,11 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure the registration authority
 > * Update group memberships for the AD FS service account
-
-
->[!div class="step-by-step"]
-[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
-[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
+> 
+> 
+> [!div class="step-by-step"]
+> [< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+> [Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
 
 <br><br>
 

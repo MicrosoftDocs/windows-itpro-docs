@@ -95,6 +95,7 @@
 #####  [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 ##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 ##### [Information protection in Windows overview](microsoft-defender-atp/information-protection-in-windows-overview.md)
+###### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 
 
@@ -238,6 +239,7 @@
 ####### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
    
 ##### [Microsoft Defender ATP API](microsoft-defender-atp/use-apis.md)
+###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Get started with Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ####### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ####### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)

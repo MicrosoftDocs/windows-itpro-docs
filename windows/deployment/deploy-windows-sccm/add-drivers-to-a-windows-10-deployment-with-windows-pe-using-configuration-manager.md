@@ -2,12 +2,15 @@
 title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager (Windows 10)
 description: In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines.
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, task sequence
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ms.topic: article
 ---
@@ -48,7 +51,7 @@ This section will show you how to import some network and storage drivers for Wi
 
 >[!NOTE]  
 >The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
- 
+ 
 
 ## <a href="" id="sec02"></a>Add drivers for Windows 10
 
@@ -73,7 +76,7 @@ This section illustrates how to add drivers for Windows 10 through an example in
 
     >[!NOTE]  
     >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
-     
+     
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 

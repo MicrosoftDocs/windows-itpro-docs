@@ -1,8 +1,11 @@
 ---
 title: Getting Started with DaRT 10
 description: Getting Started with DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 593dd317-4fba-4d51-8a80-951590acede6
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -20,7 +23,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 10 requires thorough planning 
 >A downloadable version of this administrator’s guide is not available. However, you can click **Download PDF** at the bottom of the Table of Contents pane to get a PDF version of this guide.
 >
 >Additional information about this product can also be found on the [Diagnostics and Recovery Toolset documentation download page.](https://www.microsoft.com/download/details.aspx?id=27754)
- 
+ 
 
 ## Getting started with DaRT 10
 
@@ -55,9 +58,9 @@ DaRT 10 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is par
 
 [Troubleshooting DaRT 10](troubleshooting-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

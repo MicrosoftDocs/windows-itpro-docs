@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.0
 description: What's New in UE-V 2.0
-author: jamiejdt
+author: levinec
 ms.assetid: 5d852beb-f293-4e3a-a33b-c40df59a7515
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,7 +46,7 @@ By default, UE-V synchronizes the settings of many of the Windows apps included 
 **Note**  
 UE-V does not synchronize Windows app settings if the domain users link their sign-in credentials to their Microsoft account. This linking synchronizes settings to Microsoft OneDrive so UE-V only synchronizes the desktop applications.
 
- 
+ 
 
 ## Microsoft account linking
 
@@ -75,9 +78,9 @@ Company Settings Center displays which settings are synchronized and lets users 
 
 [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

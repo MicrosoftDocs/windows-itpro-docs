@@ -3,13 +3,14 @@ title: FIPS 140 Validation
 description: This topic provides information on how Microsoft products and cryptographic modules comply with the U.S. Federal government standard FIPS 140.
 ms.prod: w10
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/03/2018
+ms.reviewer: 
 ---
 
 
@@ -28,7 +29,7 @@ On this page
 
 Updated: March 2018
 
- 
+ 
 
 ## Introduction
 
@@ -155,31 +156,31 @@ The following list details some of the Microsoft components that use the cryptog
 
 When setting the FIPS local/group security policy flag, the behavior of several Microsoft components and products are affected. The most noticeable difference will be that the components enforcing this setting will only use those algorithms approved or allowed in FIPS mode. The specific changes to the products listed above are:
 
-  - Schannel Security Package forced to negotiate sessions using TLS. The following supported Cipher Suites are disabled:
+- Schannel Security Package forced to negotiate sessions using TLS. The following supported Cipher Suites are disabled:
 
-  -  - TLS\_RSA\_WITH\_RC4\_128\_SHA
-      - TLS\_RSA\_WITH\_RC4\_128\_MD5
-      - SSL\_CK\_RC4\_128\_WITH\_MD5
-      - SSL\_CK\_DES\_192\_EDE3\_CBC\_WITH\_MD5
-      - TLS\_RSA\_WITH\_NULL\_MD5
-      - TLS\_RSA\_WITH\_NULL\_SHA
+- - TLS\_RSA\_WITH\_RC4\_128\_SHA
+    - TLS\_RSA\_WITH\_RC4\_128\_MD5
+    - SSL\_CK\_RC4\_128\_WITH\_MD5
+    - SSL\_CK\_DES\_192\_EDE3\_CBC\_WITH\_MD5
+    - TLS\_RSA\_WITH\_NULL\_MD5
+    - TLS\_RSA\_WITH\_NULL\_SHA
 
-  - The set of cryptographic algorithms that a Remote Desktop Protocol (RDP) server will use is scoped to:
+- The set of cryptographic algorithms that a Remote Desktop Protocol (RDP) server will use is scoped to:
 
-  -  - CALG\_RSA\_KEYX - RSA public key exchange algorithm
-      - CALG\_3DES - Triple DES encryption algorithm
-      - CALG\_AES\_128 - 128 bit AES
-      - CALG\_AES\_256 - 256 bit AES
-      - CALG\_SHA1 - SHA hashing algorithm
-      - CALG\_SHA\_256 - 256 bit SHA hashing algorithm
-      - CALG\_SHA\_384 - 384 bit SHA hashing algorithm
-      - CALG\_SHA\_512 - 512 bit SHA hashing algorithm
+- - CALG\_RSA\_KEYX - RSA public key exchange algorithm
+    - CALG\_3DES - Triple DES encryption algorithm
+    - CALG\_AES\_128 - 128 bit AES
+    - CALG\_AES\_256 - 256 bit AES
+    - CALG\_SHA1 - SHA hashing algorithm
+    - CALG\_SHA\_256 - 256 bit SHA hashing algorithm
+    - CALG\_SHA\_384 - 384 bit SHA hashing algorithm
+    - CALG\_SHA\_512 - 512 bit SHA hashing algorithm
 
-  - Any Microsoft .NET Framework applications, such as Microsoft ASP.NET or Windows Communication Foundation (WCF), only allow algorithm implementations that are validated to FIPS 140, meaning only classes that end in "CryptoServiceProvider" or "Cng" can be used. Any attempt to create an instance of other cryptographic algorithm classes or create instances that use non-allowed algorithms will cause an InvalidOperationException exception.
+- Any Microsoft .NET Framework applications, such as Microsoft ASP.NET or Windows Communication Foundation (WCF), only allow algorithm implementations that are validated to FIPS 140, meaning only classes that end in "CryptoServiceProvider" or "Cng" can be used. Any attempt to create an instance of other cryptographic algorithm classes or create instances that use non-allowed algorithms will cause an InvalidOperationException exception.
 
-  - Verification of ClickOnce applications fails unless the client computer has .NET Framework 2.0 SP1 or later service pack installed or .NET Framework 3.5 or later installed.
+- Verification of ClickOnce applications fails unless the client computer has .NET Framework 2.0 SP1 or later service pack installed or .NET Framework 3.5 or later installed.
 
-  - On Windows Vista and Windows Server 2008 and later, BitLocker Drive Encryption switches from AES-128 using the elephant diffuser to using the approved AES-256 encryption. Recovery passwords are not created or backed up. Instead, backup a recovery key on a local drive or on a network share. To use the recovery key, put the key on a USB device and plug the device into the computer.
+- On Windows Vista and Windows Server 2008 and later, BitLocker Drive Encryption switches from AES-128 using the elephant diffuser to using the approved AES-256 encryption. Recovery passwords are not created or backed up. Instead, backup a recovery key on a local drive or on a network share. To use the recovery key, put the key on a USB device and plug the device into the computer.
 
 Please be aware that selection of FIPS mode can limit product functionality (See <http://support.microsoft.com/kb/811833>).
 
@@ -1978,7 +1979,7 @@ Validated Editions: Server, Storage Server
 </tbody>
 </table>
 
- 
+ 
 
 ### Cryptographic Algorithms
 
@@ -5818,7 +5819,7 @@ SIG(Ver) (1024 SHA( 1 , 256 , 384 , 512 )) (2048 SHA( 1 , 256 , 384 , 512 )) (30
 <tr class="odd">
 <td><p><strong>FIPS186-4:<br />
 [RSASSA-PSS]:</strong> Sig(Gen): (2048 SHA( 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))<br />
- Sig(Ver): (1024 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 62 ) )) (2048 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))</p>
+ Sig(Ver): (1024 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 62 ) )) (2048 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))</p>
 <p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry and Microsoft StorSimple 8100 Cryptography Next Generation Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a></p>
 <p>Version 6.3.9600</p></td>

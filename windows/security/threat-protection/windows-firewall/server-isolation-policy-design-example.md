@@ -2,12 +2,14 @@
 title: Server Isolation Policy Design Example (Windows 10)
 description: Server Isolation Policy Design Example
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

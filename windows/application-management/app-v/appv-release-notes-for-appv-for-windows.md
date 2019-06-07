@@ -1,12 +1,15 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
-author: jdeckerms
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 # Release Notes for App-V for Windows 10, version 1607
@@ -33,7 +36,7 @@ MSI packages that were generated using an App-V sequencer from previous versions
 
 4. From an elevated Windows PowerShell prompt, navigate to the following folder:
  
-    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\** 
+    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\\** 
 
     By default, this path will be:<br>**C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer** 
 

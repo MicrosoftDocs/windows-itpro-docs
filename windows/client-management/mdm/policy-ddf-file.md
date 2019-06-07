@@ -2,11 +2,13 @@
 title: Policy DDF file
 description: Policy DDF file
 ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/21/2019
 ---
 
@@ -17,6 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Policy*
 
 You can download the DDF files from the links below:
 
+- [Download the Policy DDF file for Windows 10, version 1903](http://download.microsoft.com/download/0/C/D/0CD61812-8B9C-4846-AC4A-1545BFD201EE/PolicyDDF_all_1903.xml)
 - [Download the Policy DDF file for Windows 10, version 1809](http://download.microsoft.com/download/7/3/5/735B8537-82F4-4CD1-B059-93984F9FAAC5/PolicyDDF_all_1809.xml)
 - [Download the Policy DDF file for Windows 10, version 1803](https://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1803 release C](http://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all_1809C_release.xml)
@@ -1641,7 +1644,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -11018,7 +11021,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -23016,7 +23019,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -51670,7 +51673,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 

@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Camera
 description: Policy CSP - Camera
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/14/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Camera
@@ -98,18 +100,18 @@ Footnote:
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Camera policies that can be set using Exchange Active Sync (EAS)  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndEAS-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndEAS-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Camera policies supported by IoT Core  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndIoTCore-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Camera policies supported by Microsoft Surface Hub  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndSurfaceHub-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndSurfaceHub-->
 

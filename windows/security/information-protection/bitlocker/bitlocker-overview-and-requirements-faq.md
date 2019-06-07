@@ -2,13 +2,14 @@
 title: BitLocker overview and requirements FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,7 +42,7 @@ For requirements, see [System requirements](bitlocker-overview.md#system-require
 
 > [!NOTE]  
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
- 
+ 
 ## Why are two partitions required? Why does the system drive have to be so large?
 
 Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.

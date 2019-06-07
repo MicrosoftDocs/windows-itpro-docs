@@ -6,13 +6,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.reviewer: 
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs
@@ -188,9 +189,9 @@ Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary
 >[!NOTE]
 >Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
 
-6.  After the agent is deployed, data will be received within approximately 10 minutes.
+6. After the agent is deployed, data will be received within approximately 10 minutes.
 
-7.  To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
+7. To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
 
 ***Example***
 ```

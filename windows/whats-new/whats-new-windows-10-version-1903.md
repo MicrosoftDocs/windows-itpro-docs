@@ -98,17 +98,17 @@ The draft release of the [security configuration baseline settings](https://blog
 - [Microphone privacy settings](https://support.microsoft.com/en-us/help/4468232/windows-10-camera-microphone-and-privacy-microsoft-privacy): A microphone icon appears in the notification area letting you see which apps are using your microphone.
 
 - [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) enhancements: 
-    - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change Registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
-    - WDAG is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend WDAG’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the WDAG extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigations to the WDAG Edge browser. There is also a companion app to enable this feature in the Microsoft Store. Users can quickly launch WDAG from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
+  - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change Registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
+  - WDAG is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend WDAG’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the WDAG extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigations to the WDAG Edge browser. There is also a companion app to enable this feature in the Microsoft Store. Users can quickly launch WDAG from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
     To try this extension: 
-     1.	Configure WDAG policies on your device.
-     2.	Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
-     3.	Follow any additional configuration steps on the extension setup page.
-     4.	Reboot the device.
-     5.	Navigate to an untrusted site in Chrome and Firefox.
+    1. Configure WDAG policies on your device.
+    2. Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
+    3. Follow any additional configuration steps on the extension setup page.
+    4. Reboot the device.
+    5. Navigate to an untrusted site in Chrome and Firefox.
 
-    - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
+  - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
 - [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC has a number of new features that light up key scenarios and provide feature parity with AppLocker.
     - [Multiple Policies](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): WDAC now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.

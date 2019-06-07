@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -191,11 +192,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Mark the certificate template as Windows Hello for Business sign-in template
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
-[Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
+> [< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+> [Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
 <br><br>
 

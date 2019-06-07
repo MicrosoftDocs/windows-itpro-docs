@@ -2,6 +2,9 @@
 title: Create an application to deploy with Windows 10 using Configuration Manager (Windows 10)
 description: Microsoft System Center 2012 R2 Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, task sequence, custom, customize
 ms.prod: w10
 ms.localizationpriority: medium
@@ -94,9 +97,9 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

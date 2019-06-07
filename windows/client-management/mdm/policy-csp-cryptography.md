@@ -1,59 +1,39 @@
 ---
 title: Policy CSP - Cryptography
 description: Policy CSP - Cryptography
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/14/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Cryptography
-
-
 
 <hr/>
 
 <!--Policies-->
 ## Cryptography policies  
 
-<dl>
-  <dd>
-    <a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
-  </dd>
-  <dd>
-    <a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
-  </dd>
-</dl>
 
-
+* [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
+* [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
+* [Cryptography/Microsoft Surface Hub](#Cryptography-policies-supported-by-Microsoft-Surface-Hub)
 <hr/>
 
 <!--Policy-->
-<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
+
+# Cryptography/AllowFipsAlgorithmPolicy
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
+
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -87,29 +67,14 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
+
+# Cryptography/TLSCipherSuites
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+|Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
+
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -138,9 +103,13 @@ Footnote:
 <!--/Policies-->
 
 <!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Cryptography policies supported by Microsoft Surface Hub  
+#  Cryptography policies supported by Microsoft Surface Hub  
 
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
-<!--EndSurfaceHub-->
+- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
+- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
+  <!--EndSurfaceHub-->
 
+
+
+[check]: images/checkmark.png "Check"
+[x]: images/crossmark.png "X"

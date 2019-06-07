@@ -2,11 +2,13 @@
 title: ClientCertificateInstall DDF file
 description: ClientCertificateInstall DDF file
 ms.assetid: 7F65D045-A750-4CDE-A1CE-7D152AA060CA
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

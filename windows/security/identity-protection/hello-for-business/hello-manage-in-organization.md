@@ -2,14 +2,15 @@
 title: Manage Windows Hello in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
+ms.reviewer: 
 keywords: identity, PIN, biometric, Hello
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -30,7 +31,7 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 >Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 >
 >Use **PIN Complexity** policy settings to manage PINs for Windows Hello for Business.
- 
+ 
 ## Group Policy settings for Windows Hello for Business
 
 The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
@@ -113,7 +114,7 @@ The following table lists the Group Policy settings that you can configure for W
 <td>History</td>
 <td>
 <p><b>Not configured</b>: Previous PINs are not stored.</p>
-<p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can't be reused.</p>
+<p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can&#39;t be reused.</p>
 <p><b>Disabled</b>: Previous PINs are not stored.</p>
 <div class="alert"><b>Note</b>  Current PIN is included in PIN history.</div>
 <div> </div>
@@ -136,7 +137,7 @@ The following table lists the Group Policy settings that you can configure for W
 </td>
 </tr>
 <tr>
-<td>>Phone Sign-in</td>
+<td>&gt;Phone Sign-in</td>
 <td>
 <p>Use Phone Sign-in</p>
 </td>
@@ -295,7 +296,7 @@ The following table lists the MDM policy settings that you can configure for Win
 
 >[!NOTE]  
 > If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
- 
+ 
 
 ## How to use Windows Hello for Business with Azure Active Directory
 

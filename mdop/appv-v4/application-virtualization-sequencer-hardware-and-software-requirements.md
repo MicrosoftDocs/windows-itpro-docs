@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencer Hardware and Software Requirements
 description: Application Virtualization Sequencer Hardware and Software Requirements
-author: jamiejdt
+author: dansimp
 ms.assetid: c88a1b5b-23e1-4460-afa9-a5f37e32eb05
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ This topic describes the minimum recommended hardware and software requirements 
 **Important**  
 You must run the App-V sequencer (**SFTSequencer.exe**) using an account that has administrator privileges because of the changes the sequencer makes to the local system. These changes can include writing files to the **C:\\Program Files** directory, making registry changes, starting and stopping services, updating security descriptors for files, and changing permissions.
 
- 
+ 
 
 Before you install the Sequencer and after you sequence each application, you must restore a clean operating system image to the sequencing computer. You can use one of the following methods to restore the computer running the Sequencer:
 
@@ -44,7 +47,7 @@ The requirements are listed first for Microsoft Application Virtualization (App-
     **Note**  
     Sequencing requires heavy disk usage. A fast disk speed can decrease the sequencing time.
 
-     
+     
 
 ### Software Requirements for App-V 4.6 SP2
 
@@ -93,12 +96,12 @@ The following list outlines the supported operating systems for running the App-
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The Application Virtualization (App-V) 4.6 SP2 Sequencer supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 You should configure computers running the Sequencer with the same applications that are installed on targeted computers.
 
@@ -143,14 +146,14 @@ The following list outlines the supported operating systems for running the Sequ
 </tbody>
 </table>
 
- 
+ 
 
 ¹Supported for App-V 4.5 with SP1 or SP2, and App-V 4.6 only
 
 **Note**  
 The Application Virtualization (App-V) 4.6 Sequencer supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 You should configure computers running the Sequencer with the same applications that are installed on targeted computers.
 
@@ -199,12 +202,12 @@ You should configure computers running the Sequencer with the same applications 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Application Virtualization (App-V) 4.6 SP2 for Remote Desktop Services supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 ### Software Requirements for Remote Desktop Services for Versions that Precede App-V 4.6 SP2
 
@@ -251,12 +254,12 @@ Application Virtualization (App-V) 4.6 SP2 for Remote Desktop Services supports 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Application Virtualization (App-V) 4.6 SP2 for Remote Desktop Services supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 ## Related topics
 
@@ -269,9 +272,9 @@ Application Virtualization (App-V) 4.6 SP2 for Remote Desktop Services supports 
 
 [How to Upgrade the Application Virtualization Sequencer](how-to-upgrade-the-application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

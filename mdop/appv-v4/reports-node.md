@@ -1,8 +1,11 @@
 ---
 title: Reports Node
 description: Reports Node
-author: jamiejdt
+author: eavena
 ms.assetid: b7fdc52d-f112-4a65-af25-134398810e9b
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

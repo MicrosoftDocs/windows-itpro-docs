@@ -2,13 +2,15 @@
 title: Customize Windows 10 Start and tasbkar with Group Policy (Windows 10)
 description: In Windows 10, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
 ms.assetid: F4A47B36-F1EF-41CD-9CBA-04C83E960545
+ms.reviewer: 
+manager: dansimp
 keywords: ["Start layout", "start menu", "layout", "group policy"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 11/15/2017
 ---
@@ -29,7 +31,7 @@ This topic describes how to update Group Policy settings to display a customized
 >[!WARNING]  
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
 
- 
+ 
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
@@ -57,7 +59,7 @@ Three features enable Start and taskbar layout control:
 >[!NOTE]  
 >To learn how customize Start to include your line-of-business apps when you deploy Windows 10, see [Customize the Windows 10 Start layout]( https://go.microsoft.com/fwlink/p/?LinkId=620863).
 
- 
+ 
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Use Group Policy to apply a customized Start layout in a domain
 
@@ -87,32 +89,32 @@ This procedure adds the customized Start and taskbar layout to the user configur
 
 **To configure Start Layout policy settings in Local Group Policy Editor**
 
-1.  On the test computer, press the Windows key, type **gpedit**, and then select **Edit group policy (Control panel)**.
+1. On the test computer, press the Windows key, type **gpedit**, and then select **Edit group policy (Control panel)**.
 
-2.  Go to **User Configuration** or **Computer Configuration** &gt; **Administrative Templates** &gt;**Start Menu and Taskbar**.
+2. Go to **User Configuration** or **Computer Configuration** &gt; **Administrative Templates** &gt;**Start Menu and Taskbar**.
 
-    ![start screen layout policy settings](images/starttemplate.jpg)
+   ![start screen layout policy settings](images/starttemplate.jpg)
 
-3.  Right-click **Start Layout** in the right pane, and click **Edit**.
+3. Right-click **Start Layout** in the right pane, and click **Edit**.
 
-    This opens the **Start Layout** policy settings.
+   This opens the **Start Layout** policy settings.
 
-    ![policy settings for start screen layout](images/startlayoutpolicy.jpg)
+   ![policy settings for start screen layout](images/startlayoutpolicy.jpg)
 
-4.  Enter the following settings, and then click **OK**:
+4. Enter the following settings, and then click **OK**:
 
-    1.  Select **Enabled**.
+   1.  Select **Enabled**.
 
-    2.  Under **Options**, specify the path to the .xml file that contains the Start and taskbar layout. For example, type **C:\\Users\\Test01\\StartScreenMarketing.xml**.
+   2.  Under **Options**, specify the path to the .xml file that contains the Start and taskbar layout. For example, type **C:\\Users\\Test01\\StartScreenMarketing.xml**.
 
-    3.  Optionally, enter a comment to identify the Start and taskbar layout.
+   3.  Optionally, enter a comment to identify the Start and taskbar layout.
 
-    >[!IMPORTANT]  
-    >If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
+   > [!IMPORTANT]
+   > If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
+   > 
+   > `(ls <path>).LastWriteTime = Get-Date`
 
-    >`(ls <path>).LastWriteTime = Get-Date`
-
-     
+     
 
 ## <a href="" id="bkmk-updatestartscreenlayout"></a>Update a customized Start layout
 
@@ -130,8 +132,8 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
- 
- 
+ 
+ 
 
 
 

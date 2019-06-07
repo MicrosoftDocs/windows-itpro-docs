@@ -1,12 +1,14 @@
 ---
 title: Messaging DDF file
 description: Messaging DDF file
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Messaging DDF file

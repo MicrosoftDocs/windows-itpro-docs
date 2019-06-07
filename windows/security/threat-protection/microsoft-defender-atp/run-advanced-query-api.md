@@ -1,5 +1,6 @@
-﻿---
+---
 title: Advanced Hunting API
+ms.reviewer: 
 description: Use this API to run advanced queries
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -123,23 +124,23 @@ Content-Type: application/json​
 		"InitiatingProcessFileName": "powershell.exe"
 	}]
 }
-
-
 ```
 
-## T​roubl​eshoot issues
+## Troubleshoot issues
 
 - Error: (403) Forbidden / (401) Unauthorized
-	
-	
-    If you get this error when calling Microsoft Defender ATP API, your token might not include the necessary permission.
 
-	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
-	
-    If the 'roles' section in the token does not include the necessary permission: 
 
-	- The necessary permission to your app might not have been granted. For more information, see [Access Microsoft Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Microsoft Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
-    - The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
+~~~
+If you get this error when calling Microsoft Defender ATP API, your token might not include the necessary permission.
+
+Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
+
+If the 'roles' section in the token does not include the necessary permission: 
+
+- The necessary permission to your app might not have been granted. For more information, see [Access Microsoft Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Microsoft Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
+- The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
+~~~
 
 
 ## Related topic

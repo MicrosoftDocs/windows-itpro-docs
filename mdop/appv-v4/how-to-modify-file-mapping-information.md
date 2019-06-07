@@ -1,8 +1,11 @@
 ---
 title: How to Modify File-Mapping Information
 description: How to Modify File-Mapping Information
-author: jamiejdt
+author: eavena
 ms.assetid: d3a9d10a-6cc8-4399-9479-b20f729c4dd9
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

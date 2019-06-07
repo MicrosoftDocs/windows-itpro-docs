@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5143(S): A network share object was modified.
@@ -66,7 +69,6 @@ This event generates every time network share object was modified.
  <Data Name="NewSD">O:BAG:DAD:(D;;FA;;;S-1-5-21-3457937927-2839227994-823803824-1104)(A;OICI;FA;;;WD)(A;OICI;FA;;;BA)</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -140,11 +142,11 @@ This event generates every time network share object was modified.
 -   **New SD** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for network share security descriptor.
 
 > **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-
+> 
 > Example:
-
+> 
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-
+> 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
 > See the list of possible values in the table below:
 
@@ -257,5 +259,5 @@ For 5143(S): A network share object was modified.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event**.** For example, you could monitor all changes to the SYSVOL share on domain controllers.
+- If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event<strong>.</strong> For example, you could monitor all changes to the SYSVOL share on domain controllers.
 

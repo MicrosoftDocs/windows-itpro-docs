@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the App-V 5.0 Server Using a Script
 description: How to Deploy the App-V 5.0 Server Using a Script
-author: jamiejdt
+author: dansimp
 ms.assetid: b91a35c8-df9e-4065-9187-abafbe565b84
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -66,7 +69,7 @@ Use the following tables for more information about installing the App-V 5.0 ser
     </tr>
     </tbody>
     </table>
-     
+     
 <table>
     <colgroup>
     <col width="50%" />
@@ -148,7 +151,7 @@ Use the following tables for more information about installing the App-V 5.0 ser
     </tr>
     </tbody>
     </table>
-    
+    
 <table>
     <colgroup>
     <col width="50%" />
@@ -620,7 +623,7 @@ Use the following tables for more information about installing the App-V 5.0 ser
     </tbody>
     </table>
 
-     
+     
 
 ### Parameters for using an Existing Reporting Server Database
 
@@ -645,11 +648,11 @@ Use the following tables for more information about installing the App-V 5.0 ser
     <td align="left"><p>Specifies the name of the remote computer that SQL Server is installed on. Takes a string. E.g. /EXISTING_REPORTING_DB_ REMOTE_SQL_SERVER_NAME=&quot;mycomputer1&quot;</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p>/EXISTING_ REPORTING _DB_SQLINSTANCE_USE_DEFAULT</p></td>
+    <td align="left"><p>/EXISTING_ REPORTING <em>DB_SQLINSTANCE_USE_DEFAULT</p></td>
     <td align="left"><p>Indicates that the default SQL instance is to be used. Switch parameter so no value is expected.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p>/EXISTING_ REPORTING_DB_CUSTOM_SQLINSTANCE</p></td>
+    <td align="left"><p>/EXISTING</em> REPORTING_DB_CUSTOM_SQLINSTANCE</p></td>
     <td align="left"><p>Specifies the name of the custom SQL instance that should be used. Takes a string. E.g. /EXISTING_REPORTING_DB_ CUSTOM_SQLINSTANCE=&quot;MYSQLSERVER&quot;</p></td>
     </tr>
     <tr class="odd">
@@ -734,19 +737,19 @@ Use the following tables for more information about installing the App-V 5.0 ser
     <td align="left"><p>/EXISTING_MANAGEMENT_DB_NAME</p></td>
     <td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
     <p></p>
-    <p><strong>Got a suggestion for App-V</strong>? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <strong>Got an App-V issu</strong>e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).</p></td>
+    <p><strong>Got a suggestion for App-V</strong>? Add or vote on suggestions <a href="http://appv.uservoice.com/forums/280448-microsoft-application-virtualization" data-raw-source="[here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization)">here</a>. <strong>Got an App-V issu</strong>e? Use the <a href="https://social.technet.microsoft.com/Forums/home?forum=mdopappv" data-raw-source="[App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv)">App-V TechNet Forum</a>.</p></td>
 </tr>
 </tbody>
 </table>
-  
+  
 
 ## Related topics
 
 [Deploying the App-V 5.0 Server](deploying-the-app-v-50-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -15,10 +17,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
-|Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
+|                Group Policy                | MDM | Registry | Description |                 Most restricted                  |
+|--------------------------------------------|:---:|:--------:|-------------|:------------------------------------------------:|
+|                  Disabled                  |  0  |    0     |  Prevented  | ![Most restricted value](../images/check-gn.png) |
+| Enabled or not configured<br>**(default)** |  1  |    1     |   Allowed   |                                                  |
+
 ---
 
 ### ADMX info and settings

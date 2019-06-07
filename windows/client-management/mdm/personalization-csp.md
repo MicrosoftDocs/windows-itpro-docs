@@ -1,12 +1,14 @@
 ---
 title: Personalization CSP
 description: Personalization CSP
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Personalization CSP

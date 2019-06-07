@@ -1,8 +1,11 @@
 ---
 title: Select Installation Files Page
 description: Select Installation Files Page
-author: jamiejdt
+author: eavena
 ms.assetid: 4c8cd49e-ba39-4918-9863-5b3c315d14a5
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

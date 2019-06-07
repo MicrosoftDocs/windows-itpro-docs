@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: conceptual
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
 
@@ -152,13 +153,13 @@ If your organization does not have on-premises resources, write **Cloud Only** i
 If your organization is federated with Azure or uses any online service, such as Office365 or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
->[!NOTE]
->If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
->```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
->* If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
->* If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
->    * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
- >   * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
+> [!NOTE]
+> If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
+> ```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
+> * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
+> * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
+>   * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
+>     * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
 
 ### Trust type
 
@@ -253,7 +254,7 @@ Write **1511 or later** in box **3a** on your planning worksheet if any of the f
 * Box **2a** on your planning worksheet read **modern management**. 
     * Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 * Box **1a** on your planning worksheet reads **hybrid**, box **1b** reads **key trust**, and box **2a** reads **GP**.
-    *Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
+    <em>Optionally, you may write **1511 or later</em>* in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 
 Write **1703 or later** in box **3a** on your planning worksheet if any of the following are true.
 * Box **1a** on your planning worksheet reads **on-premises**.  

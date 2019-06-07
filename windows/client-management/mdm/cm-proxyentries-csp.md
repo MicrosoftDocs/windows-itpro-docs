@@ -2,11 +2,13 @@
 title: CM\_ProxyEntries CSP
 description: CM\_ProxyEntries CSP
 ms.assetid: f4c3dc71-c85a-4c68-9ce9-19f408ff7a0a
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -16,12 +18,12 @@ ms.date: 06/26/2017
 The CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 
 > **Note**  CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
-
- 
-
+> 
+> 
+> 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 The following diagram shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
 
@@ -133,16 +135,16 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

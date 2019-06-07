@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - CredentialProviders
 description: Policy CSP - CredentialProviders
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - CredentialProviders
@@ -82,9 +84,9 @@ To configure Windows Hello for Business, use the Administrative Template policie
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -146,9 +148,9 @@ Note that the user's domain password will be cached in the system vault when usi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -226,7 +228,7 @@ Footnote:
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>CredentialProviders policies supported by IoT Core  
 
--   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
--   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
-<!--EndIoTCore-->
+- [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
+- [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
+  <!--EndIoTCore-->
 

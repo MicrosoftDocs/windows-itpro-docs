@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Update
@@ -424,7 +426,7 @@ Supported operations are Get and Replace.
 
 > [!IMPORTANT]
 > This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
+ 
 
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
@@ -1587,31 +1589,31 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 OS upgrade:
--   Maximum deferral: 8 months
--   Deferral increment: 1 month
--   Update type/notes:
-   - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
+- Maximum deferral: 8 months
+- Deferral increment: 1 month
+- Update type/notes:
+  - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
 
 Update:
--   Maximum deferral: 1 month
--   Deferral increment: 1 week
--   Update type/notes:
-    If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-        - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
-        - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
-        - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
-        - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
-        - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
-        - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
-        - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-        - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+- Maximum deferral: 1 month
+- Deferral increment: 1 week
+- Update type/notes:
+  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+      - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+      - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+      - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+      - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+      - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+      - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+      - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+      - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
 Other/cannot defer:
--   Maximum deferral: No deferral
--   Deferral increment: No deferral
--   Update type/notes:
-    Any update category not specifically enumerated above falls into this category.
-        - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
+- Maximum deferral: No deferral
+- Deferral increment: No deferral
+- Update type/notes:
+  Any update category not specifically enumerated above falls into this category.
+      - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -2473,7 +2475,7 @@ Added in Windows 10, version 1703. Specifies whether to ignore the MO download 
 
       - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
 
-3.   Verify that any downloads that are above the download size limit will complete without being paused.
+3. Verify that any downloads that are above the download size limit will complete without being paused.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -3998,8 +4000,8 @@ ADMX Info:
 - [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-<!--EndIoTEnterprise-->
-<hr/>
+  <!--EndIoTEnterprise-->
+  <hr/>
 
 Footnotes:
 

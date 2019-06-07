@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the MBAM Client by Using a Command Line
 description: How to Deploy the MBAM Client by Using a Command Line
-author: jamiejdt
+author: dansimp
 ms.assetid: ac1d4ffe-c26d-41c9-9737-a4f2b37fde24
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -26,7 +29,7 @@ Type the following command at the command prompt to automatically accept the end
 **Note**  
 The **/ju** and **/jm** command-line options are not supported and cannot be used to install the MBAM Client software.
 
- 
+ 
 
 Type the following command at the command prompt to extract and install the MSP:
 
@@ -39,7 +42,7 @@ Then, install the MSI silently by running the following command:
 **Note**  
 Beginning in MBAM 2.5 SP1, a separate MSI is no longer included with the MBAM product. However, you can extract the MSI from the executable file (.exe) that is included with the product, after accepting the EULA.
 
- 
+ 
 
 ## <a href="" id="optin-for-microsoft-updates-1-command-line-option"></a>OPTIN\_FOR\_MICROSOFT\_UPDATES=1 command-line option
 
@@ -71,7 +74,7 @@ You can use this command-line option with either of the following installation m
 </tbody>
 </table>
 
- 
+ 
 
 
 ## Related topics
@@ -79,9 +82,9 @@ You can use this command-line option with either of the following installation m
 
 [Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)
 
- 
+ 
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

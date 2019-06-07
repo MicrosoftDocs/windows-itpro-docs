@@ -109,7 +109,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 <span id="server-proxy"/>
 ### Configure server proxy and Internet connectivity settings
  
-- Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway" data-raw-source="[OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)">OMS Gateway</a>.
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Microsoft Defender ATP service:
 
 Agent Resource    |    Ports 
@@ -124,8 +124,7 @@ Agent Resource    |    Ports
 |    winatp-gw-weu.microsoft.com    |    443    |
 |winatp-gw-uks.microsoft.com | 443 |
 |winatp-gw-ukw.microsoft.com | 443 | 
-| winatp-gw-aus.microsoft.com | 443| 
-| winatp-gw-aue.microsoft.com |443 | 
+
 
 ## Windows Server, version 1803 and Windows Server 2019
 To onboard Windows Server, version 1803 or Windows Server 2019, use the same method used when onboarding Windows 10 machines.
@@ -136,7 +135,7 @@ Supported tools include:
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
- For more information, see  [Onboard Windows 10 machines](configure-endpoints.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+  For more information, see  [Onboard Windows 10 machines](configure-endpoints.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
 

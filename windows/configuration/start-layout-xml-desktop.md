@@ -5,10 +5,12 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
@@ -541,9 +543,9 @@ Once you have created the LayoutModification.xml file and it is present in the d
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 - [Start layout XML for mobile editions of Windows 10 (reference)](mobile-devices/start-layout-xml-mobile.md)
 
- 
+ 
 
- 
+ 
 
 
 

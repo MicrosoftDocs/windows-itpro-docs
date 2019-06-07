@@ -1,8 +1,11 @@
 ---
 title: Start and Stop the AGPM Service
 description: Start and Stop the AGPM Service
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 769aa0ce-224a-446f-9958-9518af4ad159
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,7 +22,7 @@ The AGPM Service is a Windows service that acts as a security proxy, managing cl
 **Important**  
 Stopping or disabling the AGPM Service will prevent AGPM clients from performing any operations (such as listing or editing GPOs) through the server.
 
- 
+ 
 
 A user account with access to the AGPM Server (the computer on which the AGPM Service is installed) is required to complete this procedure.
 
@@ -32,15 +35,15 @@ A user account with access to the AGPM Server (the computer on which the AGPM Se
     **Caution**  
     Do not modify settings for the AGPM Service through **Administrative Tools** and **Services** in the operating system. Doing so can prevent the AGPM Service from starting. To modify settings for the service, see [Managing the AGPM Service](managing-the-agpm-service.md).
 
-     
+     
 
 ### Additional references
 
 -   [Managing the AGPM Service](managing-the-agpm-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

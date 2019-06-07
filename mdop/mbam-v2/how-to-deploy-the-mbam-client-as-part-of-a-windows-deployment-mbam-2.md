@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the MBAM Client as Part of a Windows Deployment
 description: How to Deploy the MBAM Client as Part of a Windows Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 67387de7-8b02-4412-9850-3b8d8e5c18af
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,26 +19,26 @@ ms.date: 06/16/2016
 
 The Microsoft BitLocker Administration and Monitoring (MBAM) Client enables administrators to enforce and monitor BitLocker drive encryption on computers in the enterprise. If computers that have a Trusted Platform Module (TPM) chip, the BitLocker client can be integrated into an organization by enabling BitLocker management and encryption on client computers as part of the imaging and Windows deployment process.
 
-**Note**  
+**Note**  
 To review the Microsoft BitLocker Administration and Monitoring Client system requirements, see [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md).
 
- 
+
 
 Encrypting client computers with BitLocker during the initial imaging stage of a Windows deployment can lower the administrative overhead necessary for implementing MBAM in an organization. It also ensures that every computer that is deployed already has BitLocker running and is configured correctly.
 
-**Note**  
+**Note**  
 The procedure in this topic describes modifying the Windows registry. Using Registry Editor incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk.
 
- 
+
 
 **To encrypt a computer as part of Windows deployment**
 
 1.  If your organization is planning to use the Trusted Platform Module (TPM) protector or the TPM + PIN protector options in BitLocker, you must activate the TPM chip before the initial deployment of MBAM. When you activate the TPM chip, you avoid a reboot later in the process, and you ensure that the TPM chips are correctly configured according to the requirements of your organization. You must activate the TPM chip manually in the BIOS of the computer.
 
-    **Note**  
+    **Note**  
     Some vendors provide tools to turn on and activate the TPM chip in the BIOS from within the operating system. Refer to the manufacturer documentation for more details about how to configure the TPM chip.
 
-     
+
 
 2.  Install the Microsoft BitLocker Administration and Monitoring client agent.
 
@@ -83,24 +86,26 @@ The procedure in this topic describes modifying the Windows registry. Using Regi
 
     Set this value to the URL for the Key Recovery web server, for example, http://&lt;computer name&gt;/MBAMRecoveryAndHardwareService/CoreService.svc.
 
-     
 
-    **Note**  
-    MBAM policy or registry values can be set here to override previously set values.
 
-     
+~~~
+**Note**  
+MBAM policy or registry values can be set here to override previously set values.
+~~~
 
-7.  The MBAM agent restarts the system during MBAM client deployment. When you are ready for this reboot, run the following command at a command prompt as an administrator:
 
-    **net start mbamagent**
 
-8.  When the computers restarts, and the BIOS prompts you to accept a TPM change, accept the change.
+7. The MBAM agent restarts the system during MBAM client deployment. When you are ready for this reboot, run the following command at a command prompt as an administrator:
 
-9.  During the Windows client operating system imaging process, when you are ready to start encryption, restart the MBAM agent service, and set start to **automatic** by running a command prompt as an administrator and typing the following commands:
+   **net start mbamagent**
 
-    **sc config mbamagent start= auto**
+8. When the computers restarts, and the BIOS prompts you to accept a TPM change, accept the change.
 
-    **net start mbamagent**
+9. During the Windows client operating system imaging process, when you are ready to start encryption, restart the MBAM agent service, and set start to **automatic** by running a command prompt as an administrator and typing the following commands:
+
+   **sc config mbamagent start= auto**
+
+   **net start mbamagent**
 
 10. Remove the bypass registry values by running Regedit and going to the HKLM\\SOFTWARE\\Microsoft registry entry. To delete the **MBAM** node, right-click the node and click **Delete**.
 
@@ -109,9 +114,9 @@ The procedure in this topic describes modifying the Windows registry. Using Regi
 
 [Deploying the MBAM 2.0 Client](deploying-the-mbam-20-client-mbam-2.md)
 
- 
 
- 
+
+
 
 
 
