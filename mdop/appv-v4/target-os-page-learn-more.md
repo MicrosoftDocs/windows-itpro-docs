@@ -1,11 +1,11 @@
 ---
 title: Target OS Page
 description: Target OS Page
-author: v-madhi
+author: manikadhiman
 ms.assetid: 003fd992-0a7e-494e-9e75-4dd5e0927e15
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

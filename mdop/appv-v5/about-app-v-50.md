@@ -1,11 +1,11 @@
 ---
 title: About App-V 5.0
 description: About App-V 5.0
-author: v-madhi
+author: manikadhiman
 ms.assetid: 5799141b-44bc-4033-afcc-212235e15f00
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,11 +1,11 @@
 ---
 title: About the Connection Group File
 description: About the Connection Group File
-author: v-madhi
+author: manikadhiman
 ms.assetid: 1f4df515-f5f6-4b58-91a8-c71598cb3ea4
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: manikadhiman
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
