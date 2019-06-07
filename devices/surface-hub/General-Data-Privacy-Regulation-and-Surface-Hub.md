@@ -1,7 +1,7 @@
 ---
 title: General Data Privacy Regulation and Surface Hub
 description: Informs users who are subject to EU data protection laws of their options regarding how to delete or restrict diagnostic data produced by Surface Hub.
-ms.assetid: (ASSET-ID, generate at https://www.guidgenerator.com/online-guid-generator.aspx)
+ms.assetid: 
 ms.reviewer: 
 manager: 
 keywords: GDPR
