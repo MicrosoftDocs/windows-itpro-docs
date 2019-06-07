@@ -1,7 +1,7 @@
 ---
 title: About Client Configuration Settings
 description: About Client Configuration Settings
-author: v-madhi
+author: manikadhiman
 ms.assetid: cc7ae28c-b2ac-4f68-b992-5ccdbd5316a4
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: App-V 5.0 Deployment Checklist
 description: App-V 5.0 Deployment Checklist
-author: v-madhi
+author: manikadhiman
 ms.assetid: d6d93152-82b4-4b02-8b11-ed21d3331f00
 ms.reviewer: 
 manager: dansimp
