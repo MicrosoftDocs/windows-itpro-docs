@@ -79,7 +79,7 @@ If you pause a feature update, quality updates are still offered to devices to e
 
 To pause feature updates use the **Select when Preview Builds and Feature Updates are Received** policy and to pause quality updates use the **Select when Quality Updates are Received** policy. For more information, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
 
-### Select branch readiness level for feature updates
+#### Select branch readiness level for feature updates
 
 The branch readiness level enables administrators to specify which channel of feature updates they want to receive. Today there are branch readiness level options for both pre-release and released updates:
 
