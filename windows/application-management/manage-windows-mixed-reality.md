@@ -74,22 +74,22 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
                     <Type xmlns="syncml:metinf">text/plain</Type>
                 </Meta>
                 <Data>
-                  &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
-                   &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
-                    &lt;Conditions&gt;
-                      &lt;FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*"&gt;
-                        &lt;BinaryVersionRange LowSection="0.0.0.0" HighSection="*" /&gt;
-                      &lt;/FilePublisherCondition&gt;
-                    &lt;/Conditions&gt;
-                  &lt;/FilePublisherRule&gt;
-                  &lt;FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"&gt;
-                   &lt;Conditions&gt;
-                     &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*"&gt;
-                      &lt;BinaryVersionRange LowSection="*" HighSection="*" /&gt;
-                      &lt;/FilePublisherCondition&gt;
-                    &lt;/Conditions&gt;
-                  &lt;/FilePublisherRule&gt;
-                 &lt;/RuleCollection&gt;&gt;
+                  <RuleCollection Type="Appx" EnforcementMode="Enabled">
+                   <FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow">
+                    <Conditions>
+                      <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+                        <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+                      </FilePublisherCondition>
+                    </Conditions>
+                  </FilePublisherRule>
+                  <FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+                   <Conditions>
+                     <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*">
+                      <BinaryVersionRange LowSection="*" HighSection="*" />
+                      </FilePublisherCondition>
+                    </Conditions>
+                  </FilePublisherRule>
+                 </RuleCollection>>
                 </Data>
             </Item>
         </Add>
