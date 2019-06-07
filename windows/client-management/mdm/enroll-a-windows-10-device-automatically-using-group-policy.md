@@ -128,7 +128,7 @@ Requirements:
 4.	Filter using Security Groups.
 5.	Enforce a GPO link.
 
->[!NOTE]
+> [!NOTE]
 > Version 1903 (March 2019) is actually on the Insider program and doesn't yet contain a downloadable version of Templates (version 1903).
 
 ### Related topics

@@ -842,7 +842,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
->[!NOTE]
+> [!NOTE]
 >When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
 >
 >The endpoint for a fixed data drive's backup is chosen in the following order:
