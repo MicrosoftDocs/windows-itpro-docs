@@ -32,7 +32,7 @@ Users must be in an application's **Access Permissions** list to load and use th
     **Note**  
     To control access to applications, you can also limit the application licenses. Setting up the proper user groups in Active Directory Domain Services provides the easiest way to grant and deny access to specific sets of users.
 
-     
+     
 
 ## Related topics
 
@@ -43,9 +43,9 @@ Users must be in an application's **Access Permissions** list to load and use th
 
 [How to Manage Applications in the Server Management Console](how-to-manage-applications-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

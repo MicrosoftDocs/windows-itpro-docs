@@ -34,15 +34,15 @@ Some potential uses for a template include the following:
 **Note**  
 A template is a static version of a GPO that cannot be edited, yet can be used as a starting point for creating new, editable GPOs. Renaming or deleting a template does not affect GPOs created from that template.
 
- 
+ 
 
 -   [Create a Template](create-a-template-agpm40.md)
 
 -   [Set a Default Template](set-a-default-template-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

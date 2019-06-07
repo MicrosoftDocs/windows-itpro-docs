@@ -28,7 +28,7 @@ For more information about upgrading a package, see “How to Upgrade an Existin
 **Note**  
 As a prerequisite, all user computers being targeted by the ESD must have the V1.sft file fully loaded into their local cache, and file streaming must be enabled on all computers.
 
- 
+ 
 
 **To use the Differential SFT file**
 
@@ -55,16 +55,16 @@ As a prerequisite, all user computers being targeted by the ESD must have the V1
 
 -   The **Generate Microsoft Windows Installer (MSI) Package** capability in the Sequencer cannot be used with the Differential SFT file.
 
- 
+ 
 
 ## Related topics
 
 
 [How to Create or Upgrade Virtual Applications Using the App-V Sequencer](how-to-create-or-upgrade-virtual-applications-using--the-app-v-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

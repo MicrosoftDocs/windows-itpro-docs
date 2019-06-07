@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 
@@ -233,9 +233,9 @@ The following list describes the characteristics and parameters.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

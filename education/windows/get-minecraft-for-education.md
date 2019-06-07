@@ -35,9 +35,9 @@ Teachers and IT administrators can now get early access to **Minecraft: Educatio
  
 - **Minecraft: Education Edition** requires Windows 10.
 - Trials or subscriptions of **Minecraft: Education Edition** are offered to education tenants that are managed by Azure Active Directory (Azure AD).
-    - If your school doesn't have an Azure AD tenant, the [IT administrator can set one up](school-get-minecraft.md) as part of the process of getting **Minecraft: Education Edition**.
-    * Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://products.office.com/academic/office-365-education-plan)
-    * If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](https://msdn.microsoft.com/library/windows/hardware/mt703369%28v=vs.85%29.aspx)
+  - If your school doesn't have an Azure AD tenant, the [IT administrator can set one up](school-get-minecraft.md) as part of the process of getting **Minecraft: Education Edition**.
+  - Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://products.office.com/academic/office-365-education-plan)
+  - If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](https://msdn.microsoft.com/library/windows/hardware/mt703369%28v=vs.85%29.aspx)
 
 <!-- ![teacher](images/teacher.png) --> 
 

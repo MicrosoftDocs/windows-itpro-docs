@@ -65,7 +65,6 @@ Separate events will be generated for “Registry” and “File system” polic
  <Data Name="NewSd">S:(AU;SA;RC;;;S-1-5-21-3457937927-2839227994-823803824-1104)</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -130,11 +129,11 @@ Separate events will be generated for “Registry” and “File system” polic
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the Global Object Access Auditing policy.
 
 > **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-
+> 
 > Example:
-
+> 
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-
+> 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
 > See the list of possible values in the table below:
 

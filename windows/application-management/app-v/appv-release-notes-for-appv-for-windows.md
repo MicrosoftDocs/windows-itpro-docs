@@ -36,7 +36,7 @@ MSI packages that were generated using an App-V sequencer from previous versions
 
 4. From an elevated Windows PowerShell prompt, navigate to the following folder:
  
-    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\** 
+    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\\** 
 
     By default, this path will be:<br>**C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer** 
 

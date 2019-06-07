@@ -35,7 +35,7 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can us
 >[!WARNING] 
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
- 
+ 
 
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
@@ -47,7 +47,7 @@ Two features enable Start layout control:
     >[!NOTE]  
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
 
-     
+     
 
 -   In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile. 
 
@@ -92,9 +92,9 @@ For other MDM solutions, you may need to use an OMA-URI setting for Start layout
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
- 
+ 
 
- 
+ 
 
 
 

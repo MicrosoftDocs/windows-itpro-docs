@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button, load the Start pages, and lock down the home button to prevent users from changing what page loads. |
-|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>For this policy to work, you must also enable the [Configure Home Button](../available-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.  |
+|                Group Policy                 |  MDM   | Registry |                                                                                                                            Description                                                                                                                             |
+|---------------------------------------------|:------:|:--------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Disabled or not configured<br>**(default)** | Blank  |  Blank   |                                                                     Show the home button, load the Start pages, and lock down the home button to prevent users from changing what page loads.                                                                      |
+|              Enabled - String               | String |  String  | Enter a URL in string format, for example, https://www.msn.com.<p>For this policy to work, you must also enable the [Configure Home Button](../available-policies.md#configure-home-button) policy and select the *Show home button & set a specific page* option. |
+
 ---
 
 

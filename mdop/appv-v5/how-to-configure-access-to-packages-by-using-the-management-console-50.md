@@ -38,7 +38,7 @@ Use the following procedure to configure access to virtualized packages.
         **Note**  
         Ensure that you provide an associated domain name for the group that you are searching for.
 
-         
+         
 
 3.  To grant access to the package, select the desired group and click **Grant Access**. The newly added group is displayed in the **AD ENTITIES WITH ACCESS** pane.
 
@@ -67,9 +67,9 @@ Use the following procedure to configure access to virtualized packages.
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

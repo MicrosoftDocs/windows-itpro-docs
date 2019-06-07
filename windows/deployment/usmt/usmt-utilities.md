@@ -73,17 +73,17 @@ usmtutils \[/ec | /rd *&lt;storeDir&gt;* | /verify *&lt;filepath&gt;* \[options\
 <tr class="even">
 <td align="left"><p><strong>/verify</strong></p></td>
 <td align="left"><p>Returns information on whether the compressed migration store is intact or whether it contains corrupted files or a corrupted catalog.</p>
-<p>See [Verify Options](#bkmk-verifyoptions) for syntax and options to use with <strong>/verify</strong>.</p></td>
+<p>See <a href="#bkmk-verifyoptions" data-raw-source="[Verify Options](#bkmk-verifyoptions)">Verify Options</a> for syntax and options to use with <strong>/verify</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/extract</strong></p></td>
 <td align="left"><p>Recovers files from a compressed USMT migration store.</p>
-<p>See [Extract Options](#bkmk-extractoptions) for syntax and options to use with <strong>/extract</strong>.</p></td>
+<p>See <a href="#bkmk-extractoptions" data-raw-source="[Extract Options](#bkmk-extractoptions)">Extract Options</a> for syntax and options to use with <strong>/extract</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-verifyoptions"></a>Verify Options
 
@@ -187,12 +187,12 @@ usmtutils /verify\[:*&lt;reportType&gt;*\] *&lt;filePath&gt;* \[/l:*&lt;logfile&
 <li><p><strong>/key:</strong><em>&lt;KeyString&gt;</em> specifies the encryption key. If there is a space in <em>&lt;KeyString&gt;</em>, you must surround the argument with quotation marks.</p></li>
 <li><p><strong>/keyfile</strong>: <em>&lt;FileName&gt;</em> specifies the location and name of a text (.txt) file that contains the encryption key.</p></li>
 </ul>
-<p>For more information about supported encryption algorithms, see [Migration Store Encryption](usmt-migration-store-encryption.md)</p></td>
+<p>For more information about supported encryption algorithms, see <a href="usmt-migration-store-encryption.md" data-raw-source="[Migration Store Encryption](usmt-migration-store-encryption.md)">Migration Store Encryption</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Some examples of **/verify** commands:
 
@@ -313,7 +313,7 @@ The syntax for **/extract** is:
 <li><p><strong>/key</strong>: <em>&lt;KeyString&gt;</em> specifies the encryption key. If there is a space in <em>&lt;KeyString&gt;</em>, you must surround the argument with quotation marks.</p></li>
 <li><p><strong>/keyfile</strong>:<em>&lt;FileName&gt;</em> specifies a text (.txt) file that contains the encryption key</p></li>
 </ul>
-<p>For more information about supported encryption algorithms, see [Migration Store Encryption](usmt-migration-store-encryption.md).</p></td>
+<p>For more information about supported encryption algorithms, see <a href="usmt-migration-store-encryption.md" data-raw-source="[Migration Store Encryption](usmt-migration-store-encryption.md)">Migration Store Encryption</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/o</strong></p></td>
@@ -322,7 +322,7 @@ The syntax for **/extract** is:
 </tbody>
 </table>
 
- 
+ 
 
 Some examples of **/extract** commands:
 
@@ -341,9 +341,9 @@ Some examples of **/extract** commands:
 
 [Return Codes](usmt-return-codes.md)
 
- 
+ 
 
- 
+ 
 
 
 

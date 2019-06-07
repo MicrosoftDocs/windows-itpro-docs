@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 
@@ -37,7 +37,7 @@ Required. The root node for all settings that belong to a single management serv
 
 Supported operation is Get.
 
-<a href="" id="provider-providerid"></a>**Provider/****_ProviderID_**  
+<a href="" id="provider-providerid"></a>**Provider/**<strong>*ProviderID*</strong>  
 Required. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.
 
 For Intune, use **MS DM Server** for Windows desktop or **SCConfigMgr** for Windows mobile for the _ProviderID_.
@@ -57,14 +57,14 @@ Supported operations are Get and Add.
 > **Note**   Although hardware device IDs are guaranteed to be unique, there is a concern that this is not ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION configuration service provider’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
 This node is required and must be set by the server before the client certificate renewal is triggered.
 
- 
+ 
 
 <a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
 Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that is managed by exchange and natively managed by a dedicated management server.
 
 > **Note**  In some cases for the desktop, this node will return "not found" until the user sets up their email.
 
- 
+ 
 
 Supported operation is Get.
 
@@ -101,7 +101,7 @@ Required. The character string that contains the device management server addres
 
 > **Note**  When the ManagementServerAddressList value is set, the device ignores the value in ManagementServiceAddress.
 
- 
+ 
 
 The DMClient configuration service provider will save the address to the same location as the w7 and DMS configuration service providers to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION configuration service provider](w7-application-csp.md).
 
@@ -148,7 +148,7 @@ This node is only supported in Windows 10 and later.
 
 Once you set the value to 2.0, it will not go back to 1.0.
 
- 
+ 
 
 Supported operations are Get, Replace, and Delete.
 
@@ -227,7 +227,7 @@ Added in Windows 10, version 1607. The list of management server URLs in the fo
 
 > **Note**  The &lt; and &gt; should be escaped.
 
- 
+ 
 
 ``` syntax
    <Replace>
@@ -322,7 +322,7 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 </tbody>
 </table>
 
- 
+ 
 
 **Valid poll schedule: initial enrollment only \[no infinite schedule\]**
 
@@ -373,13 +373,13 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 </tbody>
 </table>
 
- 
+ 
 
 **Invalid poll schedule: disable all poll schedules**
 
 > **Note**   Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -428,7 +428,7 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 </tbody>
 </table>
 
- 
+ 
 
 **Invalid poll schedule: two infinite schedules**
 
@@ -487,7 +487,7 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 </tbody>
 </table>
 
- 
+ 
 
 If the device was previously enrolled in MDM with polling schedule configured via registry key values directly, the MDM server that supports using DMClient CSP to update polling schedule must first send an Add command to add a **./Vendor/MSFT/DMClient/Enrollment/&lt;ProviderID&gt;/Poll** node before it sends a Get/Replace command to query or update polling parameters via DMClient CSP
 
@@ -624,7 +624,7 @@ The status error mapping is listed below.
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="provider-providerid-customenrollmentcompletepage"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage**  
 Optional. Added in Windows 10, version 1703.
@@ -791,9 +791,9 @@ The following SyncML shows how to remotely unenroll the device. Note that this c
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

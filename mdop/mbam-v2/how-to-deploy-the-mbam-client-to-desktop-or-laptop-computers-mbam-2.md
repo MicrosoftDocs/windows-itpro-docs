@@ -22,7 +22,7 @@ The Microsoft BitLocker Administration and Monitoring (MBAM) client enables admi
 **Note**  
 To review the Microsoft BitLocker Administration and Monitoring Client system requirements, see [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md).
 
- 
+ 
 
 **To deploy the MBAM Client to desktop or laptop computers**
 
@@ -35,16 +35,16 @@ To review the Microsoft BitLocker Administration and Monitoring Client system re
     **Important**  
     The MBAM Client will not start BitLocker encryption actions if a remote desktop protocol connection is active. All remote console connections must be closed before BitLocker encryption will begin.
 
-     
+     
 
 ## Related topics
 
 
 [Deploying the MBAM 2.0 Client](deploying-the-mbam-20-client-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

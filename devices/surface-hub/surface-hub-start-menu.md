@@ -102,7 +102,6 @@ There are a few key differences between Start menu customization for Surface Hub
     </StartLayoutCollection>
   </DefaultLayoutOverride>
 </LayoutModificationTemplate>
-
 ```
 
 <span id="edge" />
@@ -179,7 +178,6 @@ This example shows a link to a website and a link to a .pdf file.
     </StartLayoutCollection>
   </DefaultLayoutOverride>
 </LayoutModificationTemplate>
-
 ```
 
 >[!NOTE]

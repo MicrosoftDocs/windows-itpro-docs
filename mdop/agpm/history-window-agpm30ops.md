@@ -49,7 +49,7 @@ The tabs within the **History** window filter the states in the history of the G
 </tbody>
 </table>
 
- 
+
 
 ## Event information
 
@@ -88,11 +88,10 @@ Information is provided for each state in the history of the GPO.
 <td align="left"><p><strong>Deletable</strong></p></td>
 <td align="left"><p>Whether this version of the GPO can be deleted if the number of unique versions of each GPO retained in the archive is limited.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You can modify whether a version of a GPO is deletable by right-clicking it and then clicking <strong>Do Not Allow Deletion</strong> or <strong>Allow Deletion</strong>.</p>
+<strong>Note</strong><br/><p>You can modify whether a version of a GPO is deletable by right-clicking it and then clicking <strong>Do Not Allow Deletion</strong> or <strong>Allow Deletion</strong>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -114,7 +113,7 @@ Information is provided for each state in the history of the GPO.
 </tbody>
 </table>
 
- 
+
 
 ## Reports
 
@@ -144,7 +143,7 @@ The **Settings** and **Differences** buttons display reports about GPO settings 
 </tbody>
 </table>
 
- 
+
 
 ### Key to difference reports
 
@@ -185,7 +184,7 @@ The **Settings** and **Differences** buttons display reports about GPO settings 
 </tbody>
 </table>
 
- 
+
 
 -   For items with changed settings, the changed settings are identified when the item is expanded. The value for the attribute in each GPO is displayed in the same order that the GPOs are displayed in the report.
 
@@ -195,9 +194,9 @@ The **Settings** and **Differences** buttons display reports about GPO settings 
 
 -   [Contents Tab](contents-tab-agpm30ops.md)
 
- 
 
- 
+
+
 
 
 

@@ -34,11 +34,11 @@ Use the topics in this section to learn how to customize your Internet Explorer 
 |[Choose how to install Internet Explorer 11 (IE11)](choose-how-to-install-ie11.md) |Guidance for the different ways you can install IE, including using System Center 2012 R2 Configuration Manager, Windows Server Update Services (WSUS), Microsoft Intune, your network, the operating system deployment system, or third-party tools. |
 |[Choose how to deploy Internet Explorer 11 (IE11)](choose-how-to-deploy-ie11.md) |Guidance about how to deploy your custom version of IE using Automatic Version Synchronization (AVS) or using your software distribution tools. |
 |[Virtualization and compatibility with Internet Explorer 11](virtualization-and-compatibility-with-ie11.md) |Info about the Microsoft-supported options for virtualizing web apps. |
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

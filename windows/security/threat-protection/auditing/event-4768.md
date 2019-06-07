@@ -74,7 +74,6 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
  <Data Name="CertThumbprint">564DFAEE99C71D62ABC553E695BD8DBC46669413</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -186,7 +185,7 @@ The most common values:
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 > Table 2. Kerberos ticket flags.
-
+> 
 > **Note**&nbsp;&nbsp;[KILE](https://msdn.microsoft.com/library/cc233855.aspx) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
 
 -   **Result Code** \[Type = HexInt32\]**:** hexadecimal result code of TGT issue operation. The “Table 3. TGT/TGS issue error codes.” contains the list of the most common error codes for this event.
@@ -256,7 +255,7 @@ The most common values:
 
 -   **Ticket Encryption Type** \[Type = HexInt32\]: the cryptographic suite that was used for issued TGT.
 
- 
+
 <span id="kerberos-encryption-types" />
 ## Table 4. Kerberos encryption types
 

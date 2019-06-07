@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/12/2017
 ---
 
@@ -596,7 +596,7 @@ The following sample file contains configuration for enabling tile manipulation.
 Entry | Description
 ----------- | ------------
 CSP Runner | Allows CSPs to be executed on the device per user role. You can use this to implement role specific policies, such as changing the color scheme when an admin logs on the device, or to set configurations per role.
- 
+ 
 
 <a href="" id="lockscreenwallpaper-"></a>**LockscreenWallpaper/**
 The parent node of the lock screen-related parameters that let administrators query and manage the lock screen image on devices. Supported operations are Add, Delete, Get and Replace.
@@ -722,7 +722,7 @@ The accent color to apply as the foreground color for tiles, controls, and other
 </tbody>
 </table>
 
- 
+ 
 
 Supported operations are Get and Replace.
 
@@ -1168,7 +1168,7 @@ Supported operations are Get and Replace.
 </tr>
 <tr class="odd">
 <td><p><strong>2500</strong></p></td>
-<td><p>UTC+13 Nuku'alofa</p></td>
+<td><p>UTC+13 Nuku&#39;alofa</p></td>
 </tr>
 </tbody>
 </table>
@@ -1190,7 +1190,7 @@ The XML examples in this section show how to perform various tasks by using OMA 
 
 > **Note**  These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
 
- 
+ 
 
 ### Assigned Access settings
 
@@ -1198,12 +1198,12 @@ The following example shows how to add a new policy.
 
 ``` syntax
 <wap-provisioningdoc>
-  <characteristic type="EnterpriseAssignedAccess">
-    <characteristic type="AssignedAccess">
-      <parm name=" AssignedAccessXml" datatype="string"
-            value="<?xml version="1.0" encoding="utf-8"?><HandheldLockdown version="1.0"><Default><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5615}" pinToStart="1"/><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5612}" pinToStart="0"/></Apps><Settings><System name="Microsoft.Themes" /><System name="Microsoft.About" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Camera"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Search"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Default><RoleList><Role guid="{76C01983-A872-4C4E-B4C6-321EAC709CEA}" name="Associate"><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5615}" pinToStart="1"/></Apps><Settings><System name="Microsoft.Themes" /><System name="Microsoft.About" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Camera"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Role><Role guid="{8ABB8A10-4418-4467-9E18-99D11FA54E30}" name="Manager"><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5612}" pinToStart="1"/></Apps><Settings><System name="Microsoft.Themes" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Role></RoleList></HandheldLockdown>"/>
-    </characteristic>
-  </characteristic>
+  <characteristic type="EnterpriseAssignedAccess">
+    <characteristic type="AssignedAccess">
+      <parm name=" AssignedAccessXml" datatype="string"
+            value="<?xml version="1.0" encoding="utf-8"?><HandheldLockdown version="1.0"><Default><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5615}" pinToStart="1"/><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5612}" pinToStart="0"/></Apps><Settings><System name="Microsoft.Themes" /><System name="Microsoft.About" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Camera"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Search"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Default><RoleList><Role guid="{76C01983-A872-4C4E-B4C6-321EAC709CEA}" name="Associate"><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5615}" pinToStart="1"/></Apps><Settings><System name="Microsoft.Themes" /><System name="Microsoft.About" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button><Button name="Camera"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Role><Role guid="{8ABB8A10-4418-4467-9E18-99D11FA54E30}" name="Manager"><Apps><Application productId="{5B04B775-356B-4AA0-AAF8-6491FFEA5612}" pinToStart="1"/></Apps><Settings><System name="Microsoft.Themes" /></Settings><Buttons><ButtonLockdownList><Button name="Start"><ButtonEvent name="Press" /><ButtonEvent name="PressAndHold" /></Button></ButtonLockdownList><ButtonRemapList/></Buttons><MenuItems><DisableMenuItems/></MenuItems></Role></RoleList></HandheldLockdown>"/>
+    </characteristic>
+  </characteristic>
 </wap-provisioningdoc>
 ```
 
@@ -1213,11 +1213,11 @@ The following example shows how to specify the language to display on the device
 
 ``` syntax
 <wap-provisioningdoc>
-   <characteristic type="EnterpriseAssignedAccess">
-  <characteristic type="Language">
-      <parm name="Language" datatype="string"
+   <characteristic type="EnterpriseAssignedAccess">
+  <characteristic type="Language">
+      <parm name="Language" datatype="string"
    <parm name="Language" value="1033" />
-   </characteristic>
+   </characteristic>
 </wap-provisioningdoc>
 ```
 
@@ -1253,22 +1253,22 @@ The following example shows how to change the accent color to one of the standar
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-      <Replace>
-         <CmdID>1</CmdID>
-         <Item>
-            <Target>
-             <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
-            </Target>
-            <Meta>
-               <Format xmlns="syncml:metinf">int</Format>
-            </Meta>
-            <!-- zero based index of available theme colors -->
-            <Data>7</Data>
-         </Item>
-      </Replace>
-      <Final/>
-   </SyncBody>
+   <SyncBody>
+      <Replace>
+         <CmdID>1</CmdID>
+         <Item>
+            <Target>
+             <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
+            </Target>
+            <Meta>
+               <Format xmlns="syncml:metinf">int</Format>
+            </Meta>
+            <!-- zero based index of available theme colors -->
+            <Data>7</Data>
+         </Item>
+      </Replace>
+      <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1276,22 +1276,22 @@ The following example shows how to change the theme.
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-       <Replace>
-           <CmdID>1</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeBackground</LocURI>
-               </Target>
-               <Meta>
-                   <Format xmlns="syncml:metinf">int</Format>
-               </Meta>
-               <!-- 0 for "light", 1 for "dark" -->
-               <Data>1</Data>
-           </Item>
-       </Replace>
-       <Final/>
-   </SyncBody>
+   <SyncBody>
+       <Replace>
+           <CmdID>1</CmdID>
+           <Item>
+               <Target>
+                   <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeBackground</LocURI>
+               </Target>
+               <Meta>
+                   <Format xmlns="syncml:metinf">int</Format>
+               </Meta>
+               <!-- 0 for "light", 1 for "dark" -->
+               <Data>1</Data>
+           </Item>
+       </Replace>
+       <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1299,19 +1299,19 @@ The following example shows how to set a custom theme accent color for the enter
 
 ``` syntax
 <SyncBody>
-   <Replace>
-      <CmdID>1</CmdID>
-      <Item>
-         <Target>
-             <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
-         </Target>
-         <Meta>
-            <Format xmlns="syncml:metinf">int</Format>
-         </Meta>
-         <!—set to Enterprise custom -->
-         <Data>151</Data>
-      </Item>
-   </Replace>
+   <Replace>
+      <CmdID>1</CmdID>
+      <Item>
+         <Target>
+             <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
+         </Target>
+         <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+         </Meta>
+         <!—set to Enterprise custom -->
+         <Data>151</Data>
+      </Item>
+   </Replace>
    <Replace>
       <CmdID>2</CmdID>
       <Item>
@@ -1335,17 +1335,17 @@ Use the examples in this section to set a new lock screen and manage the lock sc
 
 ``` syntax
 <Add>
-  <CmdID>2</CmdID>
-  <Item>
-    <Target>
-      <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
-    <Meta>
-      <Format xmlns="syncml:metinf">chr</Format>
-      <Type xmlns="syncml:metinf">text/plain</Type>
-    </Meta>
-    <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_015.jpg </Data>
-    </Target>
-  </Item>
+  <CmdID>2</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+      <Type xmlns="syncml:metinf">text/plain</Type>
+    </Meta>
+    <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_015.jpg </Data>
+    </Target>
+  </Item>
 </Add>
 ```
 
@@ -1353,12 +1353,12 @@ The following example shows how to query the device for the file being used as t
 
 ``` syntax
 <Get>
-  <CmdID>2</CmdID>
-  <Item>
-    <Target>
-      <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
-    </Target>
-  </Item>
+  <CmdID>2</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+    </Target>
+  </Item>
 </Get>
 ```
 
@@ -1366,22 +1366,22 @@ The following example shows how to change the existing lock screen image to one 
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-      <Replace>
-         <CmdID>2</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
-            </Target>
-            <Meta>
-               <Format xmlns="syncml:metinf">chr</Format>
-               <Type xmlns="syncml:metinf">text/plain</Type>
-            </Meta>
-            <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_015.jpg</Data>
-         </Item>
-      </Replace>
-      <Final/>
-   </SyncBody>
+   <SyncBody>
+      <Replace>
+         <CmdID>2</CmdID>
+         <Item>
+            <Target>
+               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+            </Target>
+            <Meta>
+               <Format xmlns="syncml:metinf">chr</Format>
+               <Type xmlns="syncml:metinf">text/plain</Type>
+            </Meta>
+            <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_015.jpg</Data>
+         </Item>
+      </Replace>
+      <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1391,21 +1391,21 @@ The following example shows how to set the time zone to UTC-07 Mountain Time (US
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-      <Replace>
-         <CmdID>2</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Clock/TimeZone</LocURI>
-            </Target>
-            <Meta>
-               <Format xmlns="syncml:metinf">int</Format>
-            </Meta>
-            <Data>500</Data>
-         </Item>
-      </Replace>
-      <Final/>
-   </SyncBody>
+   <SyncBody>
+      <Replace>
+         <CmdID>2</CmdID>
+         <Item>
+            <Target>
+               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Clock/TimeZone</LocURI>
+            </Target>
+            <Meta>
+               <Format xmlns="syncml:metinf">int</Format>
+            </Meta>
+            <Data>500</Data>
+         </Item>
+      </Replace>
+      <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1413,21 +1413,21 @@ The following example shows how to set the time zone to Pacific Standard Time (U
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-      <Replace>
-         <CmdID>2</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Clock/TimeZone</LocURI>
-            </Target>
-            <Meta>
-               <Format xmlns="syncml:metinf">int</Format>
-            </Meta>
-            <Data>400 </Data>
-         </Item>
-      </Replace>
-      <Final/>
-   </SyncBody>
+   <SyncBody>
+      <Replace>
+         <CmdID>2</CmdID>
+         <Item>
+            <Target>
+               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Clock/TimeZone</LocURI>
+            </Target>
+            <Meta>
+               <Format xmlns="syncml:metinf">int</Format>
+            </Meta>
+            <Data>400 </Data>
+         </Item>
+      </Replace>
+      <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1437,21 +1437,21 @@ The following example shows how to set the language.
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncBody>
-      <Replace>
-         <CmdID>1</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Locale/Language</LocURI>
-            </Target>
-            <Meta>
-               <Format xmlns="syncml:metinf">int</Format>
-            </Meta>
-            <Data>1033</Data>
-         </Item>
-      </Replace>
-      <Final/>
-   </SyncBody>
+   <SyncBody>
+      <Replace>
+         <CmdID>1</CmdID>
+         <Item>
+            <Target>
+               <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Locale/Language</LocURI>
+            </Target>
+            <Meta>
+               <Format xmlns="syncml:metinf">int</Format>
+            </Meta>
+            <Data>1033</Data>
+         </Item>
+      </Replace>
+      <Final/>
+   </SyncBody>
 </SyncML>
 ```
 
@@ -1667,11 +1667,11 @@ The following table lists the product ID and AUMID for each app that is included
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

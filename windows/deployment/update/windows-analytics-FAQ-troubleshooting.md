@@ -59,7 +59,7 @@ Even though devices can take 2-3 days after enrollment to show up due to latency
 
 >[!NOTE]
 > If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
- 
+
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
 1. Download and extract the [Upgrade Readiness Deployment Script](https://www.microsoft.com/download/details.aspx?id=53327). Ensure that the **Pilot/Diagnostics** folder is included.
@@ -113,7 +113,7 @@ If you know that devices are experiencing stop error crashes that do not seem to
 5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
 
    [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
- 
+
    You can use the following Windows PowerShell snippet to summarize recent occurrences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
    ```powershell
@@ -214,9 +214,9 @@ Starting with Windows 10, version 1803, the device name is no longer collected b
 
 ### Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results
 This issue affects custom queries of the Device Health data by using the **Logs > Search page** or API. It does not impact any of the built-in tiles or reports of the Device Health solution. The **AbnormalShutdownCount** field of the **DHOSReliability** data table represents abnormal shutdowns other than crashes, such as sudden power loss or holding down the power button.
- 
+
 We have identified an incompatibility between AbnormalShutdownCount and the Limited Enhanced diagnostic data level on Windows 10, versions 1709, 1803, and 1809. Such devices do not send the abnormal shutdown signal to Microsoft. You should not rely on AbnormalShutdownCount in your custom queries unless you use any one of the following workarounds:
- 
+
 
 - Upgrade devices to Windows 10, version 1903 when available. Participants in the Windows Insider program can preview this change using Windows Insider builds.
 - Change the diagnostic data setting from devices running Windows 10, versions 1709, 1803, and 1809 normal Enhanced level instead of Limited Enhanced.
@@ -230,18 +230,18 @@ We have identified an incompatibility between AbnormalShutdownCount and the Limi
 
 If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
-1.  Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
+1. Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
-  ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
+   ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
 
-2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
+2. Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
-  **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
+   **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
 
-  **Windows 10**: Follow the instructions in [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+   **Windows 10**: Follow the instructions in [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
-3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
-4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
+3. If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
+4. **Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
 
 ### Exporting large data sets
 
@@ -251,7 +251,7 @@ Azure Log Analytics is optimized for advanced analytics of large data sets and c
 let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
 let pageSize = 100000;
 let pageNumber = 0;
- 
+
 UAApp
 | where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
 | order by AppName, AppVendor, AppVersion desc
@@ -260,11 +260,12 @@ UAApp
 | take pageSize
 ```
 
- 
+
 
 ## Other common questions
 
 ### What are the requirements and costs for Windows Analytics solutions?
+
 | Windows Analytics solution| Windows license requirements | Windows version requirements | Minimum diagnostic data requirements |
 |----------------------|-----------------------------------|------------------------------|------------------------------|
 | Upgrade Readiness | No additional requirements  |  Windows 7 with Service Pack 1, Windows 8.1, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
@@ -283,7 +284,7 @@ Note that different Azure Log Analytics plans have different data retention peri
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
 System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.
- 
+
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
 - To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.

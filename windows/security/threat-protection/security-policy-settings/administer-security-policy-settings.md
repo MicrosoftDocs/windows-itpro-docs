@@ -57,49 +57,49 @@ Over time, new ways to manage security policy settings have been introduced, whi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Security Policy snap-in](#bkmk-secpol)</p></td>
+<td align="left"><p><a href="#bkmk-secpol" data-raw-source="[Security Policy snap-in](#bkmk-secpol)">Security Policy snap-in</a></p></td>
 <td align="left"><p>Secpol.msc</p>
 <p>MMC snap-in designed to manage only security policy settings.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security editor command line tool](#bkmk-secedit)</p></td>
+<td align="left"><p><a href="#bkmk-secedit" data-raw-source="[Security editor command line tool](#bkmk-secedit)">Security editor command line tool</a></p></td>
 <td align="left"><p>Secedit.exe</p>
 <p>Configures and analyzes system security by comparing your current configuration to specified security templates.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Compliance Manager](#bkmk-scm)</p></td>
+<td align="left"><p><a href="#bkmk-scm" data-raw-source="[Security Compliance Manager](#bkmk-scm)">Security Compliance Manager</a></p></td>
 <td align="left"><p>Tool download</p>
 <p>A Solution Accelerator that helps you plan, deploy, operate, and manage your security baselines for Windows client and server operating systems, and Microsoft applications.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security Configuration Wizard](#bkmk-scw)</p></td>
+<td align="left"><p><a href="#bkmk-scw" data-raw-source="[Security Configuration Wizard](#bkmk-scw)">Security Configuration Wizard</a></p></td>
 <td align="left"><p>Scw.exe</p>
 <p>SCW is a role-based tool available on servers only: You can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Configuration Manager tool](#bkmk-scmtool)</p></td>
+<td align="left"><p><a href="#bkmk-scmtool" data-raw-source="[Security Configuration Manager tool](#bkmk-scmtool)">Security Configuration Manager tool</a></p></td>
 <td align="left"><p>This tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Group Policy](#bkmk-grouppolicy)</p></td>
+<td align="left"><p><a href="#bkmk-grouppolicy" data-raw-source="[Group Policy](#bkmk-grouppolicy)">Group Policy</a></p></td>
 <td align="left"><p>Gpmc.msc and Gpedit.msc</p>
 <p>The Group Policy Management Console uses the Group Policy Object editor to expose the local Security options, which can then be incorporated into Group Policy Objects for distribution throughout the domain. The Local Group Policy Editor performs similar functions on the local device.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Software Restriction Policies</p>
-<p>See [Administer Software Restriction Policies](https://technet.microsoft.com/library/hh994606.aspx).</p></td>
+<p>See <a href="https://technet.microsoft.com/library/hh994606.aspx" data-raw-source="[Administer Software Restriction Policies](https://technet.microsoft.com/library/hh994606.aspx)">Administer Software Restriction Policies</a>.</p></td>
 <td align="left"><p>Gpedit.msc</p>
 <p>Software Restriction Policies (SRP) is a Group Policy-based feature that identifies software programs running on computers in a domain, and it controls the ability of those programs to run.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AppLocker</p>
-<p>See [Administer AppLocker](/windows/device-security/applocker/administer-applocker).</p></td>
+<p>See <a href="/windows/device-security/applocker/administer-applocker" data-raw-source="[Administer AppLocker](/windows/device-security/applocker/administer-applocker)">Administer AppLocker</a>.</p></td>
 <td align="left"><p>Gpedit.msc</p>
 <p>Prevents malicious software (malware) and unsupported applications from affecting computers in your environment, and it prevents users in your organization from installing and using unauthorized applications.</p></td>
 </tr>
 </tbody>
 </table>
- 
+ 
 ## <a href="" id="bkmk-secpol"></a>Using the Local Security Policy snap-in
 
 The Local Security Policy snap-in (Secpol.msc) restricts the view of local policy objects to the following policies and features:
@@ -147,15 +147,15 @@ SCW is a role-based tool: You can use it to create a policy that enables service
 
 The following are considerations for using SCW:
 
--   SCW disables unnecessary services and provides Windows Firewall with Advanced Security support.
--   Security policies that are created with SCW are not the same as security templates, which are files with an .inf extension. Security templates contain more security settings than those that can be set with SCW. However, it is possible to include a security template in an SCW security policy file.
--   You can deploy security policies that you create with SCW by using Group Policy.
--   SCW does not install or uninstall the features necessary for the server to perform a role. You can install server role-specific features through Server Manager.
--   SCW detects server role dependencies. If you select a server role, it automatically selects dependent server roles.
--   All apps that use the IP protocol and ports must be running on the server when you run SCW.
--   In some cases, you must be connected to the Internet to use the links in the SCW help.
-> **Note**  The SCW is available only on Windows Server and only applicable to server installations.
- 
+- SCW disables unnecessary services and provides Windows Firewall with Advanced Security support.
+- Security policies that are created with SCW are not the same as security templates, which are files with an .inf extension. Security templates contain more security settings than those that can be set with SCW. However, it is possible to include a security template in an SCW security policy file.
+- You can deploy security policies that you create with SCW by using Group Policy.
+- SCW does not install or uninstall the features necessary for the server to perform a role. You can install server role-specific features through Server Manager.
+- SCW detects server role dependencies. If you select a server role, it automatically selects dependent server roles.
+- All apps that use the IP protocol and ports must be running on the server when you run SCW.
+- In some cases, you must be connected to the Internet to use the links in the SCW help.
+  > **Note**  The SCW is available only on Windows Server and only applicable to server installations.
+ 
 The SCW can be accessed through Server Manager or by running scw.exe. The wizard steps you through server security configuration to:
 
 -   Create a security policy that can be applied to any server on your network.
@@ -187,19 +187,19 @@ The following table lists the features of the Security Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Security Configuration and Analysis](#bkmk-seccfgana)</p></td>
+<td align="left"><p><a href="#bkmk-seccfgana" data-raw-source="[Security Configuration and Analysis](#bkmk-seccfgana)">Security Configuration and Analysis</a></p></td>
 <td align="left"><p>Defines a security policy in a template. These templates can be applied to Group Policy or to your local computer.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security templates](#bkmk-sectmpl)</p></td>
+<td align="left"><p><a href="#bkmk-sectmpl" data-raw-source="[Security templates](#bkmk-sectmpl)">Security templates</a></p></td>
 <td align="left"><p>Defines a security policy in a template. These templates can be applied to Group Policy or to your local computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Settings extension to Group Policy](#bkmk-secextensions)</p></td>
+<td align="left"><p><a href="#bkmk-secextensions" data-raw-source="[Security Settings extension to Group Policy](#bkmk-secextensions)">Security Settings extension to Group Policy</a></p></td>
 <td align="left"><p>Edits individual security settings on a domain, site, or organizational unit.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Local Security Policy](#bkmk-localsecpol)</p></td>
+<td align="left"><p><a href="#bkmk-localsecpol" data-raw-source="[Local Security Policy](#bkmk-localsecpol)">Local Security Policy</a></p></td>
 <td align="left"><p>Edits individual security settings on your local computer.</p></td>
 </tr>
 <tr class="odd">
@@ -208,7 +208,7 @@ The following table lists the features of the Security Configuration Manager.
 </tr>
 </tbody>
 </table>
- 
+ 
 ### <a href="" id="bkmk-seccfgana"></a>Security Configuration and Analysis
 
 Security Configuration and Analysis is an MMC snap-in for analyzing and configuring local system security.
@@ -317,7 +317,7 @@ For example, a workstation that is joined to a domain will have its local securi
 both the domain and local settings. If the workstation is a member of more than one Organizational Unit, then the Organizational Unit that immediately contains the workstation has the highest order of precedence.
 > **Note**  Use gpresult.exe to find out what policies are applied to a device and in what order.
 For domain accounts, there can be only one account policy that includes password policies, account lockout policies, and Kerberos policies.
- 
+ 
 **Persistence in security settings**
 
 Security settings may still persist even if a setting is no longer defined in the policy that originally applied it.
@@ -383,7 +383,7 @@ Security Configuration and Analysis displays the analysis results by security ar
 </tr>
 </tbody>
 </table>
- 
+ 
 If you choose to accept the current settings, the corresponding value in the base configuration is modified to match them. If you change the system setting to match the base configuration, the change will be reflected when you configure the system with Security Configuration and Analysis.
 
 To avoid continued flagging of settings that you have investigated and determined to be reasonable, you can modify the base configuration. The changes are made to a copy of the template.

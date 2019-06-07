@@ -22,7 +22,7 @@ The following are examples of typical virtual machine configurations: one in a p
 **Note**  
 These examples are not intended for use in all environments. Adjust the configuration according to your environment.
 
- 
+ 
 
 **To configure a typical domain setup in a persistent MED-V workspace**
 
@@ -65,9 +65,9 @@ These examples are not intended for use in all environments. Adjust the configur
 
 [How to Set Up Script Actions](how-to-set-up-script-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

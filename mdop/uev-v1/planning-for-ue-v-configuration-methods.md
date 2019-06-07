@@ -39,7 +39,7 @@ You can configure UE-V before, during, or after agent installation, depending on
 **Note**  
 Registry modification can result in data loss or the computer becoming unresponsive. We recommend that you use other configuration methods.
 
- 
+ 
 
 ### UE-V configuration settings
 
@@ -66,9 +66,9 @@ The following are examples of UE-V configuration settings:
 
 [Planning for UE-V Configuration](planning-for-ue-v-configuration.md)
 
- 
+ 
 
- 
+ 
 
 
 

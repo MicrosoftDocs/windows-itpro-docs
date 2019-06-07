@@ -79,7 +79,7 @@ The UE-V Configuration Pack includes tools to perform the following tasks:
     </tbody>
     </table>
 
-     
+     
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -238,9 +238,9 @@ The UE-V Configuration Pack for Configuration Manager 2012 SP1 or later can be d
 
 [Manage Configurations for UE-V 2.x](manage-configurations-for-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

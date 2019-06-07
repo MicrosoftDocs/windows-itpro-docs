@@ -22,7 +22,7 @@ You can use the following procedures to load or unload an application from the c
 **Note**  
 When you load or unload a package, all the applications in the package are loaded into or removed from cache. When loading a package, if you do not have adequate space in cache to load the applications, increase your cache size. For more information about cache size, see [How to Change the Cache Size and the Drive Letter Designation](how-to-change-the-cache-size-and-the-drive-letter-designation.md).
 
- 
+ 
 
 **To load an application**
 
@@ -41,9 +41,9 @@ When you load or unload a package, all the applications in the package are loade
 
 [How to Change the Cache Size and the Drive Letter Designation](how-to-change-the-cache-size-and-the-drive-letter-designation.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ Use the following procedure to change user access permissions in the Application
 **Note**  
 Before changing users access permissions, ensure that any permissions changes are consistent with the organization's guidelines for granting user access.
 
- 
+ 
 
 **To change user access permissions**
 
@@ -39,9 +39,9 @@ Before changing users access permissions, ensure that any permissions changes ar
 
 [User Access Permissions in Application Virtualization Client](user-access-permissions-in-application-virtualization-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

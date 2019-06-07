@@ -25,10 +25,10 @@ ms.topic: article
 
 [!include[Prerelease information](prerelease.md)]
 
->[!TIP]
->Go to **Advanced features** in the **Settings** page to turn on the preview features.
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+> [!TIP]
+> Go to **Advanced features** in the **Settings** page to turn on the preview features.
+> 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
@@ -47,23 +47,23 @@ Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing
 
 1. In the navigation pane, select **Settings** > **Power BI reports**.
 
-2.	Click **Create dashboard**.
+2. Click **Create dashboard**.
 
-    ![Image of create dashboard](images/atp-create-dashboard.png)
+   ![Image of create dashboard](images/atp-create-dashboard.png)
     
-    You'll see a notification that things are being loaded. 
+   You'll see a notification that things are being loaded. 
 
-    ![Image of loading](images/atp-loading.png)
+   ![Image of loading](images/atp-loading.png)
 
-    >[!NOTE]
-    >Loading your data in the Power BI service can take a few minutes.
+   >[!NOTE]
+   >Loading your data in the Power BI service can take a few minutes.
 
 3. Specify the following details:
-    - **extensionDataSourceKind**: WDATPConnector
-    - **extensionDataSourcePath**: WDATPConnector
-    - **Authentication method**: OAuth2
+   - **extensionDataSourceKind**: WDATPConnector
+   - **extensionDataSourcePath**: WDATPConnector
+   - **Authentication method**: OAuth2
 
-    ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
+     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
 4. Click **Sign in**. If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
@@ -102,26 +102,26 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 5. Click **Get it now**.
 
 6. Specify the following details:
-    - **extensionDataSourceKind**: WDATPConnector
-    - **extensionDataSourcePath**: WDATPConnector
-    - **Authentication method**: OAuth2
+   - **extensionDataSourceKind**: WDATPConnector
+   - **extensionDataSourcePath**: WDATPConnector
+   - **Authentication method**: OAuth2
 
-    ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
+     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
 7. Click **Sign in**. If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
       ![Consent image](images/atp-powerbi-accept.png)
 
-8.	Click **Accept**. Power BI service will start downloading your Microsoft Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
+8. Click **Accept**. Power BI service will start downloading your Microsoft Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
 
-    ![Image of importing data](images/atp-powerbi-importing.png)
+   ![Image of importing data](images/atp-powerbi-importing.png)
     
-    >[!NOTE]
-    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
+   >[!NOTE]
+   >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
 
-    When importing data is completed and the dataset is ready, you’ll the following notification:
+   When importing data is completed and the dataset is ready, you’ll the following notification:
 
-    ![Image of dataset is ready](images/atp-data-ready.png)
+   ![Image of dataset is ready](images/atp-data-ready.png)
 
 9. Click **View dataset** to explore your data.
 

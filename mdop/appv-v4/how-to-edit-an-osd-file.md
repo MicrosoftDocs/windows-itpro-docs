@@ -20,14 +20,14 @@ ms.date: 06/16/2016
 Use the following procedures to modify a sequenced application package's Open Software Descriptor (OSD) file by adding or deleting an element or an attribute.
 
 **Note**  
-  Some elements do not have an attribute, so it is not possible to add an attribute to every element.
+  Some elements do not have an attribute, so it is not possible to add an attribute to every element.
 
- 
+ 
 
 **Important**  
 If you use the OSD editor to change the .sft file name, the HREF attribute of the CODEBASE element in the OSD file, you must use the **Save As** command to save the change to the project files.
 
- 
+ 
 
 **To add an element**
 
@@ -82,9 +82,9 @@ If you use the OSD editor to change the .sft file name, the HREF attribute of th
 
 [Sequencer Console](sequencer-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

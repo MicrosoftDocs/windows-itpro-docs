@@ -38,11 +38,11 @@ Use the topics in this section to learn about Group Policy and how to use it to 
 |[Group policy preferences and Internet Explorer 11](group-policy-preferences-and-ie11.md) |Info about Group Policy preferences, as compared to Group Policy settings. |
 |[Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md) |Info about Administrative Templates, including where to store them and the related Group Policy settings. | 
 |[Enable and disable add\-ons using administrative templates and group policy](enable-and-disable-add-ons-using-administrative-templates-and-group-policy.md) |Guidance about how to use your local Group Policy editor or the CLSID and Administrative Templates to manage your Group Policy objects.
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 
