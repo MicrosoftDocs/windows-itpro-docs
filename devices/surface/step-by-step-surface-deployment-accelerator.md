@@ -211,7 +211,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
     3.  Expand the folder **Advanced Configuration** and select the **Media** folder.
 
-    4.  Right-click the **Media** folder and click **New Media** as shown in Figure 8 to start the New Media Wizard.
+4.  Right-click the **Media** folder and click **New Media** as shown in Figure 8 to start the New Media Wizard.
 
     ![The Media folder of the SDA deployment share](images/sdasteps-fig8-mediafolder.png "The Media folder of the SDA deployment share")
 
