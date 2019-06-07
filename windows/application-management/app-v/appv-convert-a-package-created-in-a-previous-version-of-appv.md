@@ -54,8 +54,8 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 
      Additionally, the package converter optimizes performance of packages in App-V for Windows 10 by setting the package to stream fault the App-V package.  This is more performant than the primary feature block and fully downloading the package. The flag **DownloadFullPackageOnFirstLaunch** allows you to convert the package and set the package to be fully downloaded by default.
 
-    > [!NOTE]  
-     >Before you specify the output directory, you must create the output directory.
+> [!NOTE]
+    >Before you specify the output directory, you must create the output directory.
 
 ### Advanced Conversion Tips
 

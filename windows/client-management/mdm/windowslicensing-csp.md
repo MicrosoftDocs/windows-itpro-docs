@@ -31,7 +31,7 @@ The supported operation is Get.
 <a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**  
 Enters a product key for an edition upgrade of Windows 10 desktop devices.
 
-> [!NOTE]   
+> [!NOTE] 
 > This upgrade process requires a system restart.
 
  
@@ -97,7 +97,7 @@ The supported operation is Get.
 <a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**  
 Provides a license for an edition upgrade of Windows 10 mobile devices.
 
-> [!NOTE]   
+> [!NOTE] 
 > This upgrade process does not require a system restart.
 
  
@@ -216,7 +216,7 @@ Values:
 </SyncML>
 ```
 
-> [!NOTE]   
+> [!NOTE] 
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
  
@@ -297,7 +297,7 @@ Values:
 </SyncML>
 ```
 
-> [!NOTE]   
+> [!NOTE] 
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
  

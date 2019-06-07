@@ -59,7 +59,7 @@ Publish-AppvClientPackage "ContosoApplication" -Global
 
 ## Publish a package to a specific user
 
-> [!NOTE]  
+> [!NOTE]
 > You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
 An administrator can publish a package to a specific user by specifying the optional *–UserSID* parameter with the **Publish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).

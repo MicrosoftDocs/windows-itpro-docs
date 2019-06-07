@@ -18,7 +18,7 @@ ms.topic: article
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers running the App-V client can access and run the applications in that package.
 
-> [!NOTE]  
+> [!NOTE]
 > The ability to enable only administrators to publish or unpublish packages (described below) is supported starting in App-V 5.0 SP3.
 
 ## Publish an App-V package

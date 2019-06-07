@@ -20,7 +20,7 @@ ms.author: lomayor
 
 Use the following procedure to create a new App-V package using Windows PowerShell.
 
-> [!NOTE]   
+> [!NOTE]
 > Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md).
 
  
