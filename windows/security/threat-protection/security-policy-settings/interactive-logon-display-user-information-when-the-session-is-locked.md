@@ -35,7 +35,7 @@ Beginning with Windows 10 version 1607, new functionality was added to Windows 1
 This functionality is controlled by a new **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 The Privacy setting is off by default, which hides the details.
 
-![Privacy setting](images\privacy-setting-in-sign-in-options.png)
+![Privacy setting](images/privacy-setting-in-sign-in-options.png)
 
 The **Interactive logon: Display user information when the session is locked** Group Policy setting controls the same functionality.
 
