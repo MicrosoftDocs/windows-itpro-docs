@@ -255,7 +255,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
     19. Delete the following lines from the Bootstrap.ini as shown in Figure 11, and then save the file:
 
-        ```powershell
+        ```PowerShell
         UserID=
         UserDomain=
         UserPassword=
