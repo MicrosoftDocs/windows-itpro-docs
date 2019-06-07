@@ -148,7 +148,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
     ### Optional: Create a deployment share without an Internet connection
 
-    If you are unable to connect to the Internet with your deployment server, or if you want to download the Surface drivers and apps separately, you can specify a local source for the driver an app files at the time of deployment share creation. On the **Configure** page of the SDA wizard, select the **Copy from a Local Directory** check box, as shown in Figure 6. The **Download from the Internet** check box will be automatically deselected. Enter the folder location where you have placed the driver and app files in the **Local Path** field, as shown in Figure 6.
+    If you are unable to connect to the Internet with your deployment server, or if you want to download the Surface drivers and apps separately, you can specify a local source for the driver and app files at the time of deployment share creation. On the **Configure** page of the SDA wizard, select the **Copy from a Local Directory** check box, as shown in Figure 6. The **Download from the Internet** check box will be automatically deselected. Enter the folder location where you have placed the driver and app files in the **Local Path** field, as shown in Figure 6.
 
     >[!NOTE]
     >All of the downloaded driver and applications files must be located in the same folder. If a required driver or application file is missing from the selected folder when you click **Next**, a warning is displayed and the wizard will not proceed to the next step.
