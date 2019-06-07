@@ -1,7 +1,7 @@
 ---
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
-author: v-madhi
+author: manikadhiman
 ms.assetid: 36a4bf6f-a917-41a6-9856-6248686df352
 ms.reviewer: 
 manager: dansimp
