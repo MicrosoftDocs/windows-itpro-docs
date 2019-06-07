@@ -126,7 +126,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
     In the following two PowerShell scripts:
 
-    ```powershell
+    ```PowerShell
     %ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
     %ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\INSTALL-WindowsADK.ps1
     ```
