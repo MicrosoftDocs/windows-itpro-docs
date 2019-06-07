@@ -33,8 +33,7 @@ One option that you can use to control the availability of updates is Windows Se
 
 ## References 
  
-[Update the Surface Hub](first-run-program-surface-hub.md#a-href-idupdate-surface-hubaupdate-the-surface-hub
-) 
+[Update the Surface Hub](first-run-program-surface-hub.md#update-the-surface-hub) 
 
 [Maintenance window](manage-windows-updates-for-surface-hub.md#maintenance-window) 
 
