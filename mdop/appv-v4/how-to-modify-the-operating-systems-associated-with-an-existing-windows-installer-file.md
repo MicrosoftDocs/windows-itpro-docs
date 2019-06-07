@@ -36,7 +36,7 @@ Use the following procedure to modify the operating system versions associated w
     **Note**  
     If you select **Tools** / **Create MSI** to create a new Windows Installer file, you can skip **Step 6** of this procedure.
 
-     
+     
 
 6.  To save the virtual application package, select **Package** / **Save**.
 
@@ -45,9 +45,9 @@ Use the following procedure to modify the operating system versions associated w
 
 [Tasks for the Application Virtualization Sequencer](tasks-for-the-application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -44,7 +44,7 @@ Specifically, the process modifies the address of the affected Windows function 
 **Note**  
 For statically linked DLLs, the code redirection occurs as the application loads. You can also fix dynamically linked DLLs by hooking into the GetProcAddress API.
 
- 
+ 
 
 ## Design Implications of the Compatibility Fix Infrastructure
 
@@ -60,7 +60,7 @@ There are important considerations to keep in mind when determining your applica
     **Note**  
     Some antivirus, firewall, and anti-spyware code runs in kernel mode.
 
-     
+     
 
 ## Determining When to Use a Compatibility Fix
 

@@ -20,7 +20,7 @@ You might encounter an **RPC server unavailable** error when connecting to Windo
 
 This is a commonly encountered error message in the networking world and one can lose hope very fast without trying to understand much, as to what is happening ‘under the hood’. 
 
-Before getting in to troubleshooting the **RPC server unavailable*- error, let’s first understand basics about the error. There are a few important terms to understand:
+Before getting in to troubleshooting the <em>*RPC server unavailable</em>- error, let’s first understand basics about the error. There are a few important terms to understand:
 
 - Endpoint mapper – a service listening on the server, which guides client apps to server apps by port and UUID.
 - Tower – describes the RPC protocol, to allow the client and server to negotiate a connection.
@@ -113,24 +113,24 @@ The best thing to always troubleshoot RPC issues before even getting in to trace
 Portqry.exe -n <ServerIP> -e 135
 ``` 
  
-This would give you a lot of output to look for, but you should be looking for **ip_tcp*- and the port number in the brackets, which tells whether you were successfully able to get a dynamic port from EPM and also make a connection to it. If the above fails, you can typically start collecting simultaneous network traces. Something like this from the output of “PortQry”:
+This would give you a lot of output to look for, but you should be looking for <em>*ip_tcp</em>- and the port number in the brackets, which tells whether you were successfully able to get a dynamic port from EPM and also make a connection to it. If the above fails, you can typically start collecting simultaneous network traces. Something like this from the output of “PortQry”:
 
 ```cmd 
 Portqry.exe -n 169.254.0.2 -e 135
 ```
 Partial output below:
  
->Querying target system called:
->169.254.0.2
->Attempting to resolve IP address to a name...
->IP address resolved to RPCServer.contoso.com
->querying...
->TCP port 135 (epmap service): LISTENING
->Using ephemeral source port
->Querying Endpoint Mapper Database...
->Server's response:
->UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d
->ncacn_ip_tcp:169.254.0.10**[49664]**
+> Querying target system called:
+> 169.254.0.2
+> Attempting to resolve IP address to a name...
+> IP address resolved to RPCServer.contoso.com
+> querying...
+> TCP port 135 (epmap service): LISTENING
+> Using ephemeral source port
+> Querying Endpoint Mapper Database...
+> Server's response:
+> UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d
+> ncacn_ip_tcp:169.254.0.10<strong>[49664]</strong>
 
  
 The one in bold is the ephemeral port number that you made a connection to successfully. 
@@ -140,14 +140,14 @@ The one in bold is the ephemeral port number that you made a connection to succe
 You can run the commands below to leverage Windows inbuilt netsh captures, to collect a simultaneous trace. Remember to execute the below on an “Admin CMD”, it requires elevation.
  
 - On the client
-```cmd
-Netsh trace start scenario=netconnection capture=yes tracefile=c:\client_nettrace.etl maxsize=512 overwrite=yes report=yes
-```
+  ```cmd
+  Netsh trace start scenario=netconnection capture=yes tracefile=c:\client_nettrace.etl maxsize=512 overwrite=yes report=yes
+  ```
  
 - On the Server
-```cmd
-Netsh trace start scenario=netconnection capture=yes tracefile=c:\server_nettrace.etl maxsize=512 overwrite=yes report=yes
-```
+  ```cmd
+  Netsh trace start scenario=netconnection capture=yes tracefile=c:\server_nettrace.etl maxsize=512 overwrite=yes report=yes
+  ```
 
 Now try to reproduce your issue from the client machine and as soon as you feel the issue has been reproduced, go ahead and stop the traces using the command
 ```cmd

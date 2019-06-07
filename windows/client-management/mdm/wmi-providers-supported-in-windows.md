@@ -21,7 +21,7 @@ Windows Management Infrastructure (WMI) providers (and the classes they support)
 
 > **Note**  Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
- 
+ 
 
 The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here is an example query.
 
@@ -69,55 +69,55 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>MDM_AppInstallJob</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610368)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610368" data-raw-source="[&lt;strong&gt;MDM_AppInstallJob&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610368)"><strong>MDM_AppInstallJob</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_Application</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610369)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610369" data-raw-source="[&lt;strong&gt;MDM_Application&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610369)"><strong>MDM_Application</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_ApplicationFramework</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610370)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610370" data-raw-source="[&lt;strong&gt;MDM_ApplicationFramework&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610370)"><strong>MDM_ApplicationFramework</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_ApplicationSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610382)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610382" data-raw-source="[&lt;strong&gt;MDM_ApplicationSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610382)"><strong>MDM_ApplicationSetting</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_BrowserSecurityZones</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610383)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610383" data-raw-source="[&lt;strong&gt;MDM_BrowserSecurityZones&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610383)"><strong>MDM_BrowserSecurityZones</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_BrowserSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610384)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610384" data-raw-source="[&lt;strong&gt;MDM_BrowserSettings&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610384)"><strong>MDM_BrowserSettings</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_Certificate</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610385)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610385" data-raw-source="[&lt;strong&gt;MDM_Certificate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610385)"><strong>MDM_Certificate</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_CertificateEnrollment</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610386)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610386" data-raw-source="[&lt;strong&gt;MDM_CertificateEnrollment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610386)"><strong>MDM_CertificateEnrollment</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_Client</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610387)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610387" data-raw-source="[&lt;strong&gt;MDM_Client&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610387)"><strong>MDM_Client</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_ConfigSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610388)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610388" data-raw-source="[&lt;strong&gt;MDM_ConfigSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610388)"><strong>MDM_ConfigSetting</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_DeviceRegistrationInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610389)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610389" data-raw-source="[&lt;strong&gt;MDM_DeviceRegistrationInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610389)"><strong>MDM_DeviceRegistrationInfo</strong></a></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_EASPolicy</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610390)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610390" data-raw-source="[&lt;strong&gt;MDM_EASPolicy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610390)"><strong>MDM_EASPolicy</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_MgMtAuthority</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610391)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610391" data-raw-source="[&lt;strong&gt;MDM_MgMtAuthority&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610391)"><strong>MDM_MgMtAuthority</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
@@ -129,39 +129,39 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_RemoteApplication</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610371)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610371" data-raw-source="[&lt;strong&gt;MDM_RemoteApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610371)"><strong>MDM_RemoteApplication</strong></a></td>
 <td><p>Test not started.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_RemoteAppUseCookie</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610372)</td>
-<td><p>Test not started.</p></td>
-</tr>
-<tr class="even">
-<td>[<strong>MDM_Restrictions</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610392)</td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td>[<strong>MDM_RestrictionsUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610393)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610372" data-raw-source="[&lt;strong&gt;MDM_RemoteAppUseCookie&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610372)"><strong>MDM_RemoteAppUseCookie</strong></a></td>
 <td><p>Test not started.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_SecurityStatus</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610394)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610392" data-raw-source="[&lt;strong&gt;MDM_Restrictions&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610392)"><strong>MDM_Restrictions</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_SideLoader</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610395)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610393" data-raw-source="[&lt;strong&gt;MDM_RestrictionsUser&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610393)"><strong>MDM_RestrictionsUser</strong></a></td>
+<td><p>Test not started.</p></td>
+</tr>
+<tr class="even">
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610394" data-raw-source="[&lt;strong&gt;MDM_SecurityStatus&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610394)"><strong>MDM_SecurityStatus</strong></a></td>
+<td><img src="images/checkmark.png" alt="cross mark" /></td>
+</tr>
+<tr class="odd">
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610395" data-raw-source="[&lt;strong&gt;MDM_SideLoader&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610395)"><strong>MDM_SideLoader</strong></a></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_SecurityStatusUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn920104)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn920104" data-raw-source="[&lt;strong&gt;MDM_SecurityStatusUser&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn920104)"><strong>MDM_SecurityStatusUser</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_Updates</strong>](https://msdn.microsoft.com/library/windows/hardware/dn920105)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn920105" data-raw-source="[&lt;strong&gt;MDM_Updates&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn920105)"><strong>MDM_Updates</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_VpnApplicationTrigger</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610396)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610396" data-raw-source="[&lt;strong&gt;MDM_VpnApplicationTrigger&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610396)"><strong>MDM_VpnApplicationTrigger</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
@@ -169,45 +169,45 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_WebApplication</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610373)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610373" data-raw-source="[&lt;strong&gt;MDM_WebApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610373)"><strong>MDM_WebApplication</strong></a></td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_WirelessProfile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610397)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610397" data-raw-source="[&lt;strong&gt;MDM_WirelessProfile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610397)"><strong>MDM_WirelessProfile</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_WirelesssProfileXML</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610398)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610398" data-raw-source="[&lt;strong&gt;MDM_WirelesssProfileXML&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610398)"><strong>MDM_WirelesssProfileXML</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_WNSChannel</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610399)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610399" data-raw-source="[&lt;strong&gt;MDM_WNSChannel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610399)"><strong>MDM_WNSChannel</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_WNSConfiguration</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610400)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610400" data-raw-source="[&lt;strong&gt;MDM_WNSConfiguration&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610400)"><strong>MDM_WNSConfiguration</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MSFT_NetFirewallProfile</strong>](https://msdn.microsoft.com/library/windows/hardware/jj676842)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/jj676842" data-raw-source="[&lt;strong&gt;MSFT_NetFirewallProfile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj676842)"><strong>MSFT_NetFirewallProfile</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MSFT_VpnConnection</strong>](https://msdn.microsoft.com/library/windows/hardware/jj206647)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/jj206647" data-raw-source="[&lt;strong&gt;MSFT_VpnConnection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj206647)"><strong>MSFT_VpnConnection</strong></a></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>SoftwareLicensingProduct</strong>](https://msdn.microsoft.com/library/windows/hardware/cc534596)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/cc534596" data-raw-source="[&lt;strong&gt;SoftwareLicensingProduct&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/cc534596)"><strong>SoftwareLicensingProduct</strong></a></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>[<strong>SoftwareLicensingService</strong>](https://msdn.microsoft.com/library/windows/hardware/cc534597)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/cc534597" data-raw-source="[&lt;strong&gt;SoftwareLicensingService&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/cc534597)"><strong>SoftwareLicensingService</strong></a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Parental control WMI classes
 
@@ -224,7 +224,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 | [**wpcusersettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
 | [**wpcwebsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
 
- 
+ 
 
 ### Win32 WMI classes
 
@@ -298,16 +298,16 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
 [**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394505) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 10/10/2016
 

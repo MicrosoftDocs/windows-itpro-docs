@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-		  "**/**.yml"
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,26 +31,28 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"ms.author": "trudyha",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.date": "05/09/2017",
-		"searchScope": ["Store"],
-		"feedback_system": "GitHub",
-		"feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.store-for-business",
-                          "folder_relative_path_in_docset": "./"
-			}
-		}
-	},
+      "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-WindowsIT",
+      "ms.author": "trudyha",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "ms.date": "05/09/2017",
+      "searchScope": [
+        "Store"
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.store-for-business",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "store-for-business",
-    "markdownEngineName": "dfm"
+    "markdownEngineName": "markdig"
   }
 }

@@ -24,7 +24,7 @@ More than one package is deleted if necessary. Packages that are locked are not 
 **Note**  
 To ensure that the cache has sufficient space allocated for all packages that might be deployed, use the **Use free disk space threshold** setting when you configure the client so that the cache can grow as needed. Alternatively, determine in advance how much disk space will be needed for the App-V cache, and at installation time, set the cache size accordingly.
 
- 
+ 
 
 The cache space management feature is controlled by the UnloadLeastRecentlyUsed registry value. A value of 1 enables the feature, and a value of 0 (zero) disables it.
 
@@ -43,16 +43,16 @@ The cache space management feature is controlled by the UnloadLeastRecentlyUsed 
     **Caution**  
     The maximum value for this registry key is 0x00011111. Larger values will prevent the correct operation of the cache space management feature.
 
-     
+     
 
 ## Related topics
 
 
 [How to Configure the App-V Client Registry Settings by Using the Command Line](how-to-configure-the-app-v-client-registry-settings-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

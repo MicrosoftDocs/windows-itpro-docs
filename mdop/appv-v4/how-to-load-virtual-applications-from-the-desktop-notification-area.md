@@ -24,7 +24,7 @@ The applications are loaded one application at a time. The progress bar shows yo
 **Note**  
 If your system encounters an error while loading an application, it reports the error to you. You must dismiss the error dialog before it will load the next application.
 
- 
+ 
 
 **To load all applications**
 
@@ -49,9 +49,9 @@ If your system encounters an error while loading an application, it reports the 
 
 [How to Use the Desktop Notification Area for Application Virtualization Client Management](how-to-use-the-desktop-notification-area-for-application-virtualization-client-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

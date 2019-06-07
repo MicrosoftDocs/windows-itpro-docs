@@ -74,7 +74,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not configured| 
 | Member server effective default settings | Not configured | 
 | Client computer effective default settings | Not configured| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

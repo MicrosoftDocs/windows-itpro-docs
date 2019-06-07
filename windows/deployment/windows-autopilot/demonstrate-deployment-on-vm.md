@@ -35,8 +35,8 @@ The following video provides an overview of the process:
 ## Prerequisites
 
 These are the things you'll need to complete this lab:
-<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file), version 1703 or later is required. If you do not already have an ISO to use, a link is provided to download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</td></tr>
-<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed [networking requirements](windows-autopilot-requirements-network.md). Otherwise, just ensure that you have a connection to the Internet.</td></tr>
+<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file), version 1703 or later is required. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.</td></tr>
+<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="windows-autopilot-requirements-network.md" data-raw-source="[networking requirements](windows-autopilot-requirements-network.md)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
 <tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
 <tr><td>A Premium Intune account</td><td>This guide will describe how to obtain a free 30-day trial premium account that can be used to complete the lab.</td></tr></table>
 
@@ -107,7 +107,7 @@ When you are prompted to restart the computer, choose **Yes**. The computer migh
 
    ![hyper-v](../images/svr_mgr2.png)
 
-<P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under **Role Administration Tools\Hyper-V Management Tools**.
+<P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under <strong>Role Administration Tools\Hyper-V Management Tools</strong>.
 
 After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt, or by typing **Hyper-V** in the Start menu search box.
 
@@ -168,7 +168,7 @@ After entering these commands, connect to the VM that you just created and wait 
 See the sample output below. In this sample, the VM is created under the **c:\autopilot** directory and the vmconnect.exe command is used (which is only available on Windows Server). If you installed Hyper-V on Windows 10, use Hyper-V Manager to connect to your VM.
 
 <pre style="overflow-y: visible">
-PS C:\autopilot> dir c:\iso
+PS C:\autopilot&gt; dir c:\iso
 
 
     Directory: C:\iso
@@ -178,24 +178,24 @@ Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        3/12/2019   2:46 PM     4627343360 win10-eval.iso
 
-PS C:\autopilot> (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+PS C:\autopilot&gt; (Get-NetAdapter |?{$<em>.Status -eq &quot;Up&quot; -and !$</em>.Virtual}).Name
 Ethernet
-PS C:\autopilot> New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+PS C:\autopilot&gt; New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$<em>.Status -eq &quot;Up&quot; -and !$</em>.Virtual}).Name
 
 Name              SwitchType NetAdapterInterfaceDescription
 ----              ---------- ------------------------------
 AutopilotExternal External   Intel(R) Ethernet Connection (2) I218-LM
 
-PS C:\autopilot> New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+PS C:\autopilot&gt; New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
 
 Name             State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----             ----- ----------- ----------------- ------   ------             -------
 WindowsAutopilot Off   0           0                 00:00:00 Operating normally 8.0
 
-PS C:\autopilot> Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
-PS C:\autopilot> Start-VM -VMName WindowsAutopilot
-PS C:\autopilot> vmconnect.exe localhost WindowsAutopilot
-PS C:\autopilot> dir
+PS C:\autopilot&gt; Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
+PS C:\autopilot&gt; Start-VM -VMName WindowsAutopilot
+PS C:\autopilot&gt; vmconnect.exe localhost WindowsAutopilot
+PS C:\autopilot&gt; dir
 
     Directory: C:\autopilot
 
@@ -204,7 +204,7 @@ Mode                LastWriteTime         Length Name
 d-----        3/12/2019   3:15 PM                VMData
 d-----        3/12/2019   3:42 PM                VMs
 
-PS C:\autopilot>
+PS C:\autopilot&gt;
 </pre>
 
 ### Install Windows 10
@@ -603,7 +603,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, scroll down, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
 <pre style="overflow-y: visible">
-C:\>systeminfo
+C:>systeminfo
 
 ...
 Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
@@ -619,7 +619,7 @@ In this example, the computer supports SLAT and Hyper-V.
 You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
 
 <pre style="overflow-y: visible">
-C:\>coreinfo -v
+C:>coreinfo -v
 
 Coreinfo v3.31 - Dump information on system CPU and memory topology
 Copyright (C) 2008-2014 Mark Russinovich

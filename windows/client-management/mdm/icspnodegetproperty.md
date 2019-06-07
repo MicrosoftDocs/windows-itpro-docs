@@ -49,7 +49,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

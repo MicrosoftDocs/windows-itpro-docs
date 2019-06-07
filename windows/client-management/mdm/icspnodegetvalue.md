@@ -25,7 +25,7 @@ HRESULT GetValue([in,out] VARIANT* pvarValue);
 ## Parameters
 
 <a href="" id="pvarvalue"></a>*pvarValue*  
-<p style="margin-left: 25px">Data value to return. A node containing a password value returns 16 asterisks (‘\*’) for this method. A leaf node whose value has not been set returns a variant whose type is `VT_NULL`.
+<p style="margin-left: 25px">Data value to return. A node containing a password value returns 16 asterisks (‘*’) for this method. A leaf node whose value has not been set returns a variant whose type is <code>VT_NULL</code>.
 </p>
 
 ## Return Value
@@ -44,7 +44,7 @@ For externally–transactioned nodes, this node is not required to implement any
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

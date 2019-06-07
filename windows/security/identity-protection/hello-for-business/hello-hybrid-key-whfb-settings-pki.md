@@ -113,11 +113,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Configure superseded domain controller certificate templates
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
-[Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
+> [< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
+> [Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
 
 <br><br>
 

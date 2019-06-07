@@ -141,12 +141,12 @@ UE-V 1.0 Service Pack 1 provides updates for both the UE-V Agent and the UE-V Ge
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 While the UE-V Agent installation program (AgentSetup.exe) and UE-V Generator installation program (ToolSetup.exe) are translated into the languages above, the Windows Installer (.msi) files are only available in English.
 
- 
+ 
 
 ## Office 2007 Settings Location Templates
 
@@ -261,11 +261,11 @@ When running the UE-V setup for UE-V Agent (AgentSetup.exe), the following retur
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

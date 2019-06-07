@@ -53,7 +53,7 @@ When a device joins a domain, a machine account is created. After joining the do
     The domain member will not attempt to negotiate secure channel encryption.
 
     >**Note:**  If the security policy setting [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) is enabled, this setting will be overwritten.
-     
+     
 -   Not defined
 
 ### Best practices
@@ -78,7 +78,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

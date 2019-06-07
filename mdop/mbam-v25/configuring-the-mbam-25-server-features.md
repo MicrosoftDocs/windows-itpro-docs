@@ -42,31 +42,31 @@ Review and complete the following steps before you start configuring the MBAM Se
 <tbody>
 <tr class="odd">
 <td align="left"><p>Review the recommended architecture for MBAM.</p></td>
-<td align="left"><p>[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)</p></td>
+<td align="left"><p><a href="high-level-architecture-for-mbam-25.md" data-raw-source="[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)">High-Level Architecture for MBAM 2.5</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Review the supported configurations for MBAM.</p></td>
-<td align="left"><p>[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)</p></td>
+<td align="left"><p><a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Complete the required prerequisites on each server.</p></td>
 <td align="left"><ul>
-<li><p>[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)</p></li>
-<li><p>[MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md)</p></li>
+<li><p><a href="mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md" data-raw-source="[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)">MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies</a></p></li>
+<li><p><a href="mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md" data-raw-source="[MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology](mbam-25-server-prerequisites-that-apply-only-to-the-configuration-manager-integration-topology.md)">MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Install the MBAM Server software on each server where you will configure an MBAM Server feature.</p></td>
-<td align="left"><p>[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)</p></td>
+<td align="left"><p><a href="installing-the-mbam-25-server-software.md" data-raw-source="[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)">Installing the MBAM 2.5 Server Software</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Review the prerequisites for using Windows PowerShell to configure MBAM Server features (if you are using this method to configure MBAM Server features).</p></td>
-<td align="left"><p>[Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)</p></td>
+<td align="left"><p><a href="configuring-mbam-25-server-features-by-using-windows-powershell.md" data-raw-source="[Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)">Configuring MBAM 2.5 Server Features by Using Windows PowerShell</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Steps for configuring MBAM Server features
 
@@ -87,24 +87,24 @@ Each row in the following table describes the features that you will configure o
 <tbody>
 <tr class="odd">
 <td align="left"><p>Configure the databases.</p></td>
-<td align="left"><p>[How to Configure the MBAM 2.5 Databases](how-to-configure-the-mbam-25-databases.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-mbam-25-databases.md" data-raw-source="[How to Configure the MBAM 2.5 Databases](how-to-configure-the-mbam-25-databases.md)">How to Configure the MBAM 2.5 Databases</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure the reports.</p></td>
-<td align="left"><p>[How to Configure the MBAM 2.5 Reports](how-to-configure-the-mbam-25-reports.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-mbam-25-reports.md" data-raw-source="[How to Configure the MBAM 2.5 Reports](how-to-configure-the-mbam-25-reports.md)">How to Configure the MBAM 2.5 Reports</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure the web applications.</p></td>
-<td align="left"><p>[How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-mbam-25-web-applications.md" data-raw-source="[How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)">How to Configure the MBAM 2.5 Web Applications</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure the System Center Configuration Manager Integration (if applicable).</p></td>
-<td align="left"><p>[How to Configure the MBAM 2.5 System Center Configuration Manager Integration](how-to-configure-the-mbam-25-system-center-configuration-manager-integration.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-mbam-25-system-center-configuration-manager-integration.md" data-raw-source="[How to Configure the MBAM 2.5 System Center Configuration Manager Integration](how-to-configure-the-mbam-25-system-center-configuration-manager-integration.md)">How to Configure the MBAM 2.5 System Center Configuration Manager Integration</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For a list of events about MBAM Server feature configuration, see [Server Event Logs](server-event-logs.md).
 
@@ -114,9 +114,9 @@ For a list of events about MBAM Server feature configuration, see [Server Event 
 
 
 Configuring the MBAM 2.5 Server Features
- 
+ 
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

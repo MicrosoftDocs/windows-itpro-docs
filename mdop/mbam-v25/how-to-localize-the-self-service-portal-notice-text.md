@@ -28,7 +28,7 @@ To display localized notice text, you create a localized Notice.txt file, and th
 **Note**  
 You can configure the path by using the **NoticeTextPath** item in **Application Settings**.
 
- 
+ 
 
 MBAM displays the notice text, based on the following rules:
 
@@ -43,7 +43,7 @@ If an end user’s browser is set to a language that does not have a correspondi
 
 &lt;*MBAM Self-Service Install Directory*&gt;\\Self Service Website\\
 
- 
+ 
 
 **To create a localized Notice.txt file**
 
@@ -54,7 +54,7 @@ If an end user’s browser is set to a language that does not have a correspondi
     **Note**  
     Some language folders already exist, so you might not have to create a folder. If you do have to create a language folder, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*Language*&gt; folder.
 
-     
+     
 
 2.  Create a Notice.txt file that contains the localized notice text.
 
@@ -71,7 +71,7 @@ If an end user’s browser is set to a language that does not have a correspondi
 
 [Customizing the Self-Service Portal for Your Organization](customizing-the-self-service-portal-for-your-organization.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

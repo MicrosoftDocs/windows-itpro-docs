@@ -58,7 +58,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br/>Authenticated Users<br/>Everyone<br/>Local Service<br/>Network Service<br/>Pre-Windows 2000 Compatible Access| 
 | Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service| 
 | Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service| 
- 
+ 
 ## Policy management
 
 Permissions to files and folders are controlled though the appropriate configuration of file system access control lists (ACLs).The ability to traverse the folder does not provide any Read or Write permissions to the user.
@@ -97,5 +97,5 @@ The Windows operating systems and many applications were designed with the expec
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

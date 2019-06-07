@@ -51,7 +51,7 @@ This section will show you how to import some network and storage drivers for Wi
 
 >[!NOTE]  
 >The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
- 
+ 
 
 ## <a href="" id="sec02"></a>Add drivers for Windows 10
 
@@ -76,7 +76,7 @@ This section illustrates how to add drivers for Windows 10 through an example in
 
     >[!NOTE]  
     >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
-     
+     
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 

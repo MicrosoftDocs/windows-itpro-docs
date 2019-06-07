@@ -29,8 +29,8 @@ This planning topic describes the Windows Defender Application Control (WDAC) po
 
 To complete this planning document, you should first complete the following steps:
 
-3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
-5.  [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
+3. [Select the types of rules to create](select-types-of-rules-to-create.md)
+4. [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
 
 The three key areas to determine for WDAC policy management are:
 
@@ -124,7 +124,7 @@ The following table contains the added sample data that was collected when deter
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -144,7 +144,7 @@ The following table contains the added sample data that was collected when deter
 </tr>
 </tbody>
 </table>
- 
+ 
 The following two tables illustrate examples of documenting considerations to maintain and manage WDAC policies.
 
 **Event processing policy**
@@ -187,8 +187,8 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance policy**
+ 
+<strong>Policy maintenance policy</strong>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
 <table>
@@ -233,7 +233,7 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Next steps
 
 After you determine your application control management strategy for each business group, [create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md).

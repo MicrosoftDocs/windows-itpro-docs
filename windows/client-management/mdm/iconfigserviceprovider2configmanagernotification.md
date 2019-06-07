@@ -99,7 +99,7 @@ The following events are supported by all configuration service providers.
 <a href="" id="lpparam"></a>*lpParam*
 <ul style="list-style-type:none">
 <li>
-Normally NULL, but contains a pointer to an IConfigSession2 instance if *cmnfState* is CFGMGR\_NOTIFICATION\_SETSESSIONOBJ.
+Normally NULL, but contains a pointer to an IConfigSession2 instance if <em>cmnfState</em> is CFGMGR_NOTIFICATION_SETSESSIONOBJ.
 </li>
 </ul>
 <br>
@@ -137,7 +137,7 @@ Each configuration service provider will receive the relevant BEGIN/END notifica
 
 **Header:** None
 
- 
+ 
 
 
 

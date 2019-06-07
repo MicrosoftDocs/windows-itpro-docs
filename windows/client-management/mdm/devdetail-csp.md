@@ -39,9 +39,9 @@ The following diagram shows the DevDetail configuration service provider managem
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="fwv"></a>**FwV**  
-<p style="margin-left: 20px">Required. Returns the firmware version, as defined in the registry key HKEY\_LOCAL\_MACHINE\\System\\Platform\\DeviceTargetingInfo\\PhoneFirmwareRevision.
+<p style="margin-left: 20px">Required. Returns the firmware version, as defined in the registry key HKEY_LOCAL_MACHINE\System\Platform\DeviceTargetingInfo\PhoneFirmwareRevision.
 
-<p style="margin-left: 20px">For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), it returns the BIOS version as defined in the registry key HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\BIOSVersion.
+<p style="margin-left: 20px">For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), it returns the BIOS version as defined in the registry key HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS\BIOSVersion.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -51,9 +51,9 @@ The following diagram shows the DevDetail configuration service provider managem
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="hwv"></a>**HwV**  
-<p style="margin-left: 20px">Required. Returns the hardware version, as defined in the registry key HKEY\_LOCAL\_MACHINE\\System\\Platform\\DeviceTargetingInfo\\PhoneRadioHardwareRevision.
+<p style="margin-left: 20px">Required. Returns the hardware version, as defined in the registry key HKEY_LOCAL_MACHINE\System\Platform\DeviceTargetingInfo\PhoneRadioHardwareRevision.
 
-<p style="margin-left: 20px">For Windows 10 for desktop editions, it returns the BIOS version as defined in the registry key HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\BIOSVersion.
+<p style="margin-left: 20px">For Windows 10 for desktop editions, it returns the BIOS version as defined in the registry key HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS\BIOSVersion.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -96,12 +96,12 @@ The following diagram shows the DevDetail configuration service provider managem
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="ext-microsoft-osplatform"></a>**Ext/Microsoft/OSPlatform**  
-<p style="margin-left: 20px">Required. Returns the OS platform of the device. For Windows 10 for desktop editions, it returns the ProductName as defined in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProductName.
+<p style="margin-left: 20px">Required. Returns the OS platform of the device. For Windows 10 for desktop editions, it returns the ProductName as defined in HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductName.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="ext-microsoft-processortype"></a>**Ext/Microsoft/ProcessorType**  
-<p style="margin-left: 20px">Required. Returns the processor type of the device as documented in SYSTEM\_INFO.
+<p style="margin-left: 20px">Required. Returns the processor type of the device as documented in SYSTEM_INFO.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -111,7 +111,7 @@ The following diagram shows the DevDetail configuration service provider managem
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="ext-microsoft-resolution"></a>**Ext/Microsoft/Resolution**  
-<p style="margin-left: 20px">Required. Returns the UI screen resolution of the device (example: "480x800").
+<p style="margin-left: 20px">Required. Returns the UI screen resolution of the device (example: &quot;480x800&quot;).
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -121,7 +121,7 @@ The following diagram shows the DevDetail configuration service provider managem
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="ext-microsoft-processorarchitecture"></a>**Ext/Microsoft/ProcessorArchitecture**  
-<p style="margin-left: 20px">Required. Returns the processor architecture of the device as "arm" or "x86".
+<p style="margin-left: 20px">Required. Returns the processor architecture of the device as &quot;arm&quot; or &quot;x86&quot;.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -197,9 +197,9 @@ Value type is string. Supported operation is Get.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

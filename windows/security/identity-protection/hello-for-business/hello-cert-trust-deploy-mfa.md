@@ -412,11 +412,11 @@ Sign in the User Portal server with _local administrator_ equivalent credentials
 ### Edit MFA User Portal config file
 
 Sign in the User Portal server with _local administrator_ equivalent credentials.
-1.	Open Windows Explorer and browse to C:\inetpub\wwwroot\MultiFactorAuth (or appropriate directory based on the virtual directory name) and edit the **web.config** file.
-2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
-3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
-4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“http://localhost:4898/PfWsSdk.asmx”** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
+1. Open Windows Explorer and browse to C:\inetpub\wwwroot\MultiFactorAuth (or appropriate directory based on the virtual directory name) and edit the **web.config** file.
+2. Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
+3. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
+4. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
+5. Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“<http://localhost:4898/PfWsSdk.asmx”>** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. <https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx>). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
 
 ### Create a DNS entry for the User Portal web site
 
@@ -497,11 +497,11 @@ Follow [Install a standalone instance of the AD FS adapter by using the Web Serv
 ### Edit the MFA AD FS Adapter config file on all ADFS Servers
 
 Sign in the primary AD FS server with _local administrator_ equivalent credentials.
-1.	Open Windows Explorer and browse to **C:\inetpub\wwwroot\MultiFactorAuth** (or appropriate directory based on the virtual directory name) and edit the **MultiFactorAuthenticationAdfsAdapter.config** file.
-2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
-3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
-4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “http://localhost:4898/PfWsSdk.asmx” to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
+1. Open Windows Explorer and browse to **C:\inetpub\wwwroot\MultiFactorAuth** (or appropriate directory based on the virtual directory name) and edit the **MultiFactorAuthenticationAdfsAdapter.config** file.
+2. Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
+3. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
+4. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
+5. Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “<http://localhost:4898/PfWsSdk.asmx”> to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. <https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx>). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
 
 ### Edit the AD FS Adapter Windows PowerShell cmdlet
 

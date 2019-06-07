@@ -100,18 +100,18 @@ Footnote:
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Camera policies that can be set using Exchange Active Sync (EAS)  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndEAS-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndEAS-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Camera policies supported by IoT Core  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndIoTCore-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Camera policies supported by Microsoft Surface Hub  
 
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndSurfaceHub-->
+- [Camera/AllowCamera](#camera-allowcamera)  
+  <!--EndSurfaceHub-->
 

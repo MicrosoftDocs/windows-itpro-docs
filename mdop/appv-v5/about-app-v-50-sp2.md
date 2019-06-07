@@ -61,7 +61,7 @@ Tasks that have been placed in a pending state will be performed according to th
 </tbody>
 </table>
 
- 
+ 
 
 When a task is placed in a pending state, the App-V client also generates a registry key for the pending task, as follows:
 
@@ -88,7 +88,7 @@ When a task is placed in a pending state, the App-V client also generates a regi
 </tbody>
 </table>
 
- 
+ 
 
 ### Virtualizing Microsoft Office 2013 and Microsoft Office 2010 using App-V 5.0
 
@@ -99,7 +99,7 @@ Use the following link for more information about App-V 5.0 supported Microsoft 
 **Note**  
 This document focuses on creating a Microsoft Office 2013 App-V 5.0 Package. However, it also provides information about scenarios for Microsoft Office 2010 with App-V 5.0.
 
- 
+ 
 
 ### <a href="" id="-------------app-v-5-0-client-management-user-interface-application"></a> App-V 5.0 Client Management User Interface Application
 
@@ -173,9 +173,9 @@ App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is p
 
 [Release Notes for App-V 5.0 SP2](release-notes-for-app-v-50-sp2.md)
 
- 
+ 
 
- 
+ 
 
 
 

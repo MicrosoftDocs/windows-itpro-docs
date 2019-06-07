@@ -22,7 +22,7 @@ You can use the following procedure to delete all virtual applications from a sp
 **Note**  
 When all applications are deleted from a package, the Application Virtualization (App-V) Client also deletes the package.
 
- 
+ 
 
 **To delete all applications**
 
@@ -33,7 +33,7 @@ When all applications are deleted from a package, the Application Virtualization
     **Note**  
     When all applications are deleted from a package, the Application Virtualization (App-V) Client also deletes the package.
 
-     
+     
 
 ## Related topics
 
@@ -42,9 +42,9 @@ When all applications are deleted from a package, the Application Virtualization
 
 [How to Remove a Package by Using the Command Line](how-to-remove-a-package-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

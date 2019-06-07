@@ -48,11 +48,11 @@ This topic contains the following sections:
 <ul>
 <li><p>Files under %appdata%\Microsoft\AppV\Client\Catalog</p></li>
 <li><p>Registry settings under HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages</p>
-<p>For more detail, see [Application Publishing and Client Interaction](application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs).</p></li>
+<p>For more detail, see <a href="application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs" data-raw-source="[Application Publishing and Client Interaction](application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs)">Application Publishing and Client Interaction</a>.</p></li>
 </ul></li>
 <li><p>Ensure that the following folders are available to each user who logs into the computer that is running the App-V 5.0 SP2 or later client:</p>
 <ul>
-<li><p>%AppData% is configured to the desired network location (with or without [Offline Files](https://technet.microsoft.com/library/cc780552.aspx) support).</p></li>
+<li><p>%AppData% is configured to the desired network location (with or without <a href="https://technet.microsoft.com/library/cc780552.aspx" data-raw-source="[Offline Files](https://technet.microsoft.com/library/cc780552.aspx)">Offline Files</a> support).</p></li>
 <li><p>%LocalAppData% is configured to the desired local folder.</p></li>
 </ul></li>
 </ul></td>
@@ -85,13 +85,13 @@ This topic contains the following sections:
 </tr>
 </tbody>
 </table>
-<p> </p></li>
+<p> </p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-folder-redir-cfg"></a>How to configure folder redirection for use with App-V
 
@@ -126,23 +126,22 @@ The following table describes how folder redirection works when %AppData% is red
 <li><p>Entries to the AppData folder are made using the user context, not the system context.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>The App-V client folder redirection sometimes fails to move files from %AppData% to %LocalAppData%. See [Release Notes for App-V 5.0 SP2](release-notes-for-app-v-50-sp2.md#bkmk-folderredirection).</p>
+<strong>Note</strong><br/><p>The App-V client folder redirection sometimes fails to move files from %AppData% to %LocalAppData%. See <a href="release-notes-for-app-v-50-sp2.md#bkmk-folderredirection" data-raw-source="[Release Notes for App-V 5.0 SP2](release-notes-for-app-v-50-sp2.md#bkmk-folderredirection)">Release Notes for App-V 5.0 SP2</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p>When the virtual environment shuts down</p></td>
 <td align="left"><p>The local cached data in AppData (roaming) is zipped up and copied to the “real” roaming AppData folder in %AppData%. A time stamp, which indicates the last known upload, is simultaneously saved as a registry key under:</p>
-<p><code>HKCU\Software\Microsoft\AppV\Client\Packages\&lt;PACKAGE_GUID&gt;\AppDataTime</code></p>
+<p><code>HKCU\Software\Microsoft\AppV\Client\Packages&amp;lt;PACKAGE_GUID&gt;\AppDataTime</code></p>
 <p>To provide redundancy, App-V 5.0 keeps the three most recent copies of the compressed data under %AppData%.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-folder-redir-overview"></a>Overview of folder redirection
 
@@ -168,25 +167,25 @@ The following table describes how folder redirection works when %AppData% is red
 </tr>
 <tr class="odd">
 <td align="left"><p>Usage example</p></td>
-<td align="left"><p>You can redirect the Documents folder, which is usually stored on the computer's local hard disk, to a network location. The user can access the documents in the folder from any computer on the network.</p></td>
+<td align="left"><p>You can redirect the Documents folder, which is usually stored on the computer&#39;s local hard disk, to a network location. The user can access the documents in the folder from any computer on the network.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>More resources</p></td>
-<td align="left"><p>[Folder redirection overview](https://technet.microsoft.com/library/cc778976.aspx)</p></td>
+<td align="left"><p><a href="https://technet.microsoft.com/library/cc778976.aspx" data-raw-source="[Folder redirection overview](https://technet.microsoft.com/library/cc778976.aspx)">Folder redirection overview</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 
 
 
 
 
- 
 
- 
+
+
+
 
 
 

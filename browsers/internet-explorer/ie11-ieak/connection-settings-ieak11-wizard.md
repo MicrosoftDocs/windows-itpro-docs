@@ -27,15 +27,15 @@ The **Connection Settings** page of the Internet Explorer Administration Kit (IE
 
 **To use the Connection Settings page**
 
-1.  Decide if you want to customize your connection settings. You can pick:
+1. Decide if you want to customize your connection settings. You can pick:
 
-    -   **Do not customize Connection Settings.** Pick this option if you don’t want to preset your employee’s connection settings.
+   -   **Do not customize Connection Settings.** Pick this option if you don’t want to preset your employee’s connection settings.
 
-    -   **Import the current Connection Settings from this machine.** Pick this option to import your connection settings from your computer and use them as the preset for your employee’s connection settings.
+   -   **Import the current Connection Settings from this machine.** Pick this option to import your connection settings from your computer and use them as the preset for your employee’s connection settings.
  
- **Note**<br>If you want to change any of your settings later, you can click **Modify Settings** to open the **Internet Properties** box, click the **Connection Settings** tab, and make your changes.
+   **Note**<br>If you want to change any of your settings later, you can click **Modify Settings** to open the **Internet Properties** box, click the **Connection Settings** tab, and make your changes.
 
-2.  Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
+2. Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
 
-3.  Click **Next** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page or **Back** to go to the [Connection Manager](connection-mgr-ieak11-wizard.md) page.
+3. Click **Next** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page or **Back** to go to the [Connection Manager](connection-mgr-ieak11-wizard.md) page.
 

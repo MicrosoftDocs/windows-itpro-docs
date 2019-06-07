@@ -611,9 +611,3 @@ write-host $tmp -Foreground Red
 
 > [!NOTE]  
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
-
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
