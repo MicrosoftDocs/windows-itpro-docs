@@ -1,7 +1,7 @@
 ---
 title: About the Connection Group File
 description: About the Connection Group File
-author: v-madhi
+author: manikadhiman
 ms.assetid: bfeb6013-a7ca-4e36-9fe3-229702e83f0d
 ms.reviewer: 
 manager: dansimp
