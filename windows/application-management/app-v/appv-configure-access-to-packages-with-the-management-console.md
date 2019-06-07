@@ -35,7 +35,7 @@ Use the following procedure to configure access to virtualized packages.
     1. Using the format **mydomain** \\ **groupname**, enter the name or part of the name of an Active Directory group object, then select **Check**.
 
        > [!NOTE]  
-        >Ensure that you provide an associated domain name for the group that you are searching for.
+       > Ensure that you provide an associated domain name for the group that you are searching for.
 
 3. Grant access to the package by first selecting the desired group, then selecting **Grant Access**. The newly added group is displayed in the **AD entities with access** pane.
 

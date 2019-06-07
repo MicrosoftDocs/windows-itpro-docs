@@ -65,8 +65,8 @@ The following list displays additional optional parameters that can be used with
 
 In Windows 10, version 1703, running the new-appvsequencerpackage or the update-appvsequencepackage cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. 
 
->[!IMPORTANT]
->If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
+> [!IMPORTANT]
+> If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
 
 ## Related topics
 

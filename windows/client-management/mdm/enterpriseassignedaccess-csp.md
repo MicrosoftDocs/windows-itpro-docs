@@ -41,7 +41,7 @@ Supported operations are Add, Delete, Get and Replace.
 
 The Apps and Settings sections of lockdown XML constitute an Allow list. Any app or setting that is not specified in AssignedAccessXML will not be available on the device to users. The following table describes the entries in lockdown XML.
 
-> [!Important]    
+> [!IMPORTANT]    
 > When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an MDM, the XML must use escaped characters, such as \< instead of < because it is embedded in an XML. The examples provided in the topic are formatted for readability.
 
 When using the AssignedAccessXml in a provisioning package using the Windows Configuration Designer tool, do not use escaped characters.
@@ -268,7 +268,7 @@ Here is an example for Windows 10, version 1703.
 
 Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page).
 
-> [!Note]
+> [!NOTE]
 > Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. In Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page.
 
 <ul>
@@ -376,7 +376,7 @@ Buttons | The following list identifies the hardware buttons on the device that 
 <li><p>Custom3</p></li>
 </ul>
 
-> [!Note]
+> [!NOTE]
 > Lock down of the Start button only prevents the press and hold event.
 >
 > Custom buttons are hardware buttons that can be added to devices by OEMs.
@@ -400,7 +400,7 @@ Buttons example:
 ```
 The Search and custom buttons can be <em>remapped</em> or configured to open a specific application. Button remapping takes effect for the device and applies to all users.
 
-> [!Note]
+> [!NOTE]
 > The lockdown settings for a button, per user role, will apply regardless of the button mapping.
 >
 > Button remapping can enable a user to open an application that is not in the Allow list. Use button lock down to prevent application access for a user role.
@@ -498,7 +498,7 @@ Entry | Description
 ----------- | ------------
 MenuItems | Use **DisableMenuItems** to prevent use of the context menu, which is displayed when a user presses and holds an application in the All Programs list. You can include this entry in the default profile and in any additional user role profiles that you create.
 
-> [!Important]
+> [!IMPORTANT]
 > If **DisableMenuItems** is not included in a profile, users of that profile can uninstall apps.
 
 MenuItems example:
@@ -513,12 +513,12 @@ Entry | Description
 ----------- | ------------
 Tiles | **Turning-on tile manipulation** - By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile.
 
-> [!Important]
+> [!IMPORTANT]
 >  If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile.
 
 The following sample file contains configuration for enabling tile manipulation.
 
-> [!Note]
+> [!NOTE
 > Tile manipulation is disabled when you don’t have a `<Tiles>` node in lockdown XML, or if you have a `<Tiles>` node but don’t have the `<EnableTileManipulation>` node.
 
 ``` syntax
