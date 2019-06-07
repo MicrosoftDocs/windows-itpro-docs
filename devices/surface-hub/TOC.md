@@ -14,18 +14,15 @@
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
 
 ## Deploy
-### Create Surface Hub 2S device account
-### [Deploying Surface Hub 2S](surface-hub-2s-deploy.md)
-### [Deploying Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
-### [Configure Skype for Business on Surface Hub 2S](surface-hub-2s-configure-skype.md)
-### [Configure Microsoft Teams on Surface Hub 2S](surface-hub-2s-configure-teams.md)
+### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
+### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
+### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
+
 
 ## Manage
 ### [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Managing Surface Hub 2S with Surface app](surface-hub-2s-manage-surface-app.md)
 ### [Servicing and updating for Surface Hub 2S](surface-hub-2s-service-update.md)
-### [Updating pen firmware for Surface Hub 2S](surface-hub-2s-pen-firmware.md)
-### [Managing settings on Surface Hub 2S via the on screen display](surface-hub-2s-manage-settings.md)
 
 ## Secure
 ### [Conditional access for Surface Hub 2S](surface-hub-2s-conditional-access.md)
