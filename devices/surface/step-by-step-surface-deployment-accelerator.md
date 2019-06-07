@@ -133,7 +133,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
     Edit the $BITSTransfer variable in the input parameters to $False as shown below:
 
-    ```powershell
+    ```PowerShell
     Param(
         [Parameter(
             Position=0,
