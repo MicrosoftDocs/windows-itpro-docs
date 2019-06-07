@@ -236,7 +236,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Welcome/AutoWakeScreen**  
 <p style="margin-left: 20px">Automatically turn on the screen using motion sensors.
 
-<p style="margin-left: 20px">The data type is booleab. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**  
 <p style="margin-left: 20px">Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
