@@ -45,29 +45,29 @@ If you notice that CPU usage is running higher than normal, or that IE is freque
 
  **To check your browser add-ons**
 
-1.  Start IE11 in **No Add-ons mode** by running the **Run** command from the **Start** menu, and then typing `iexplore.exe -extoff` into the box.
+1. Start IE11 in **No Add-ons mode** by running the **Run** command from the **Start** menu, and then typing `iexplore.exe -extoff` into the box.
 
-2.  Check if IE still crashes.<p>
-If the browser doesn't crash, open Internet Explorer for the desktop, click the **Tools** menu, and click **Manage Add-ons**.
+2. Check if IE still crashes.<p>
+   If the browser doesn't crash, open Internet Explorer for the desktop, click the **Tools** menu, and click **Manage Add-ons**.
 
-3.  Click **Toolbars and Extensions**, click each toolbar or extension, clicking **Disable** to turn off all of the browser extensions and toolbars.
+3. Click **Toolbars and Extensions**, click each toolbar or extension, clicking **Disable** to turn off all of the browser extensions and toolbars.
 
-4.  Restart IE11. Go back to the **Manage Add-Ons** window and turn on each item, one-by-one.<p>
-After you turn each item back on, see if IE crashes or slows down. Doing it this way will help you identify the add-on that's causing IE to crash. After you've figured out which add-on was causing the problem, turn it off until you have an update from the manufacturer.
+4. Restart IE11. Go back to the **Manage Add-Ons** window and turn on each item, one-by-one.<p>
+   After you turn each item back on, see if IE crashes or slows down. Doing it this way will help you identify the add-on that's causing IE to crash. After you've figured out which add-on was causing the problem, turn it off until you have an update from the manufacturer.
 
- **To check for Software Rendering mode**
+   **To check for Software Rendering mode**
 
-1.  Open Internet Explorer for the desktop, click the **Tools** menu, and then click **Internet Options**.
+5. Open Internet Explorer for the desktop, click the **Tools** menu, and then click **Internet Options**.
 
-2.  On the **Advanced** tab, go to the **Accelerated graphics** section, and then turn on Software Rendering mode by choosing the **Use software rendering instead of GPU rendering** box.<p>
-If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Windows 10 Support](https://go.microsoft.com/fwlink/?LinkId=746588).
+6. On the **Advanced** tab, go to the **Accelerated graphics** section, and then turn on Software Rendering mode by choosing the **Use software rendering instead of GPU rendering** box.<p>
+   If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Windows 10 Support](https://go.microsoft.com/fwlink/?LinkId=746588).
 
 ## Adaptive streaming and DRM playback don’t work with Windows Server 2012 R2
 IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Microsoft Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
 
- 
+ 
 
- 
+ 
 
 
 

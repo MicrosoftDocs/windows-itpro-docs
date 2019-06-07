@@ -22,7 +22,7 @@ To help you manage your Application Virtualization Management Servers more effic
 **Note**  
 All servers in a server group must be connected to the same data store.
 
- 
+ 
 
 **To add a server to a group**
 
@@ -51,9 +51,9 @@ All servers in a server group must be connected to the same data store.
 
 [How to Remove a Server](how-to-remove-a-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

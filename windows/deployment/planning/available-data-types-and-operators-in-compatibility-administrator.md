@@ -19,12 +19,12 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 The Compatibility Administrator tool provides a way to query your custom-compatibility databases.
 
@@ -136,7 +136,7 @@ The following table shows the attributes you can use for querying your customize
 </tbody>
 </table>
 
- 
+
 
 ## Available Operators
 
@@ -200,11 +200,10 @@ The following table shows the operators that you can use for querying your custo
 <td align="left"><p>A special SQL operator used to check if the left-hand operand contains a substring specified by the right-hand operand.</p></td>
 <td align="left"><p><strong>Left-hand operand</strong>. MATCHFILE_NAME, MODE_NAME, FIX_NAME</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Only the HAS operator can be applied to the MATCHFILE_NAME, MODE_NAME, and FIX_NAME attributes.</p>
+<strong>Note</strong><br/><p>Only the HAS operator can be applied to the MATCHFILE_NAME, MODE_NAME, and FIX_NAME attributes.</p>
 </div>
 <div>
- 
+
 </div>
 <p><strong>Right-hand operand</strong>. String</p></td>
 <td align="left"><p>1</p></td>
@@ -224,14 +223,14 @@ The following table shows the operators that you can use for querying your custo
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
 
- 
 
- 
+
+
 
 
 

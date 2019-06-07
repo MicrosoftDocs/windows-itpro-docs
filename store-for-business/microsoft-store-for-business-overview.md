@@ -92,7 +92,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 
 > [!NOTE]
 > Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](https://docs.microsoft.com/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json#manage-domain-settings).
- 
+
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with Store for Business and Education.
@@ -197,7 +197,7 @@ Store for Business and Education is currently available in these markets.
             <li>Colombia</li>
             <li>Comoros</li>
             <li>Costa Rica</li>
-            <li>C&ocirc;te D'ivoire</li>
+            <li>C&ocirc;te D&#39;ivoire</li>
             <li>Croatia</li>
             <li>Cur&ccedil;ao</li>
             <li>Cyprus</li>
@@ -332,8 +332,7 @@ Store for Business and Education is currently available in these markets.
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li>         
-        </ul>
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li><br/>        </ul>
     </td>
    </tr>
 </table>
@@ -374,9 +373,9 @@ This table summarize what customers can purchase, depending on which Microsoft S
 
 > [!NOTE]
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
-- Admins can acquire free apps from **Microsoft Store for Education**.
-- Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-- Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
+> - Admins can acquire free apps from **Microsoft Store for Education**.
+> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+> - Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 
@@ -384,7 +383,7 @@ Store for Business and Education services get names and email addresses of peopl
 - Granting and managing permissions
 - Managing app licenses 
 - Distributing apps to people (names appear in a list that admins can select from)
- 
+
 Store for Business and Education does not save names, or email addresses.
 
 Your use of Store for Business and Education is also governed by the [Microsoft Store for Business and Education Services Agreement](https://businessstore.microsoft.com/servicesagreement). 

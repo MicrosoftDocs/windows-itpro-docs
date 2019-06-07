@@ -69,7 +69,6 @@ This event generates every time network share object (file or folder) was access
  <Data Name="AccessReason">%%1541: %%1801 D:(A;;FA;;;WD) %%4416: %%1801 D:(A;;FA;;;WD) %%4423: %%1801 D:(A;;FA;;;WD)</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -179,11 +178,11 @@ REQUESTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
 -   ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS: the Security Descriptor Definition Language (SDDL) value for Access Control Entry (ACE), which granted or denied access.
 
 > **Note**&nbsp;&nbsp;The ** <span id="SDDL" class="anchor"></span>Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-
+> 
 > Example:
-
+> 
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-
+> 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
 > See the list of possible values in the table below.
 

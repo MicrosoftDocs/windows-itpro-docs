@@ -20,13 +20,13 @@ When you add or set a package to a computer running the App-V client before it's
 
 ## Apply the deployment configuration file with Windows PowerShell
 
->[!NOTE]
->The following example cmdlet uses the following two file paths for the package and configuration files:
-    >
-    >* C:\\Packages\\Contoso\\MyApp.appv
-    >* C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
-    >
->If your package and configuration files use different file paths than the example, feel free to replace them as needed.
+> [!NOTE]
+> The following example cmdlet uses the following two file paths for the package and configuration files:
+> 
+> * C:\\Packages\\Contoso\\MyApp.appv
+> * C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
+> 
+> If your package and configuration files use different file paths than the example, feel free to replace them as needed.
 
 To specify a new default set of configurations for all users who will run the package on a specific computer, in a Windows PowerShell console, enter the following cmdlet:
 

@@ -43,7 +43,7 @@ Before you can do any analysis or make decisions about which apps to migrate or 
 > [!NOTE]  
 > The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
- 
+ 
 
 You can divide the apps into the following categories:
 
@@ -75,15 +75,15 @@ Table 1. Google App replacements
 
 | If you use this Google app on a Chromebook | Use this app on a Windows device     |
 |--------------------------------------------|--------------------------------------|
-| Google Docs                                | Word 2016 or Word Online             |
-| Google Sheets                              | Excel 2016 or Excel Online           |
-| Google Slides                              | PowerPoint 2016 or PowerPoint Online |
+| Google Docs                                | Word 2016 or Word for the web             |
+| Google Sheets                              | Excel 2016 or Excel for the web           |
+| Google Slides                              | PowerPoint 2016 or PowerPoint for the web |
 | Google Apps Gmail                          | Outlook 2016 or Outlook Web App      |
 | Google Hangouts                            | Microsoft Skype for Business         |
 | Chrome                                     | Microsoft Edge                       |
 | Google Drive                               | Microsoft OneDrive for Business      |
 
- 
+ 
 
 It may be that you will decide to replace Google Apps after you deploy Windows devices. For more information on making this decision, see the [Select cloud services migration strategy](#select-cs-migrationstrat) section of this guide.
 
@@ -164,7 +164,7 @@ Table 2. Settings in the Device Management node in the Google Admin Console
 <td align="left"><p>These settings configure and manage companion devices (such as smartphones or tablets) that are used in conjunction with the Chromebook devices and include the following settings categories:</p>
 <ul>
 <li><p><strong>User settings.</strong> Configures user-based settings for the Chrome browser and Chromebook devices. Most of these Chromebook user-based settings can be mapped to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.</p></li>
-<li><p><strong>Public session settings.</strong> Configures Public Sessions for Chrome devices that are used as kiosks, loaner devices, shared computers, or for any other work or school-related purpose for which users don't need to sign in with their credentials. You can configure Windows devices similarly by using Assigned Access. Record the settings and apps that are available in Public Sessions so that you can provide similar configuration in Assigned Access.</p></li>
+<li><p><strong>Public session settings.</strong> Configures Public Sessions for Chrome devices that are used as kiosks, loaner devices, shared computers, or for any other work or school-related purpose for which users don&#39;t need to sign in with their credentials. You can configure Windows devices similarly by using Assigned Access. Record the settings and apps that are available in Public Sessions so that you can provide similar configuration in Assigned Access.</p></li>
 <li><p><strong>Device settings.</strong> Configures device-based settings for the Chrome browser and Chromebook devices. You can map most of these Chromebook device-based settings to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.</p></li>
 <li><p><strong>Devices.</strong> Manages Chrome device management licenses. The number of licenses recorded here should correspond to the number of licenses you will need for your new management system, such as Intune. Record the number of licenses and use those to determine how many licenses you will need to manage your Windows devices.</p></li>
 <li><p><strong>App Management.</strong> Provides configuration settings for Chrome apps. Record the settings for any apps that you have identified that will run on Windows devices.</p></li>
@@ -173,7 +173,7 @@ Table 2. Settings in the Device Management node in the Google Admin Console
 </tbody>
 </table>
 
- 
+ 
 
 Table 3 lists the settings in the Security node in the Google Admin Console. Review the settings and determine which settings you will migrate to Windows.
 
@@ -215,7 +215,7 @@ Table 3. Settings in the Security node in the Google Admin Console
 </tbody>
 </table>
 
- 
+ 
 
 **Identify locally-configured settings to migrate**
 
@@ -248,7 +248,7 @@ Table 4. Locally-configured settings
 | Powerwash              | This action removes all user accounts and resets the Chromebook device back to factory settings. You don’t have to migrate any settings in this section.                                                                                                                                                                                                                                                                                                                                                                     |
 | Reset settings         | This action retains all user accounts, but restores all settings back to their default values. You don’t have to migrate any settings in this section.                                                                                                                                                                                                                                                                                                                                                                       |
 
- 
+ 
 
 Determine how many users have similar settings and then consider managing those settings centrally. For example, a large number of users may have many of the same Chrome web browser settings. You can centrally manage these settings in Windows after migration.
 
@@ -351,7 +351,7 @@ Here is a list of reasons that describe why you might want to migrate from an ex
 
 -   **Better integration with Office 365.** If your long-term strategy is to migrate to Office 365 apps (such as Word 2016 or Excel 2016) then a migration to Microsoft cloud services will provide better integration with these apps. The use of existing cloud services may not be as intuitive for users. For example, Office 365 apps will integrate better with OneDrive for Business compared to Google Drive.
 
--   **Online apps offer better document compatibility.** Microsoft Office online apps (such as Word Online and Excel Online) provide the highest level of compatibility with Microsoft Office documents. The Office online apps allow you to open and edit documents directly from SharePoint or OneDrive for Business. Users can access the Office online app from any device with Internet connectivity.
+-   **Online apps offer better document compatibility.** Microsoft Office apps (such as Word and Excel for the web) provide the highest level of compatibility with Microsoft Office documents. The Office apps allow you to open and edit documents directly from SharePoint or OneDrive for Business. Users can access the Office app from any device with Internet connectivity.
 
 -   **Reduce licensing costs.** If you pay for Office 365 licenses, then Office 365 apps and cloud storage are included in those licenses. Although you could keep existing cloud services, you probably would pay more to keep those services.
 
@@ -483,7 +483,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="plan-userdevapp-manage"></a>
 
@@ -603,7 +603,7 @@ Table 6. Device, user, and app management products and technologies
 </tbody>
 </table>
 
- 
+ 
 
 You can use Configuration Manager and Intune in conjunction with each other to provide features from both products and technologies. In some instances you may need only one of these products or technologies. In other instances, you may need two or more to meet the device, user, and app management needs for your institution.
 
@@ -680,21 +680,21 @@ Table 7. Network infrastructure products and technologies and deployment resourc
 <tr class="odd">
 <td align="left">DHCP</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[DHCP Deployment Guide](https://go.microsoft.com/fwlink/p/?LinkId=734021)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734021" data-raw-source="[DHCP Deployment Guide](https://go.microsoft.com/fwlink/p/?LinkId=734021)">DHCP Deployment Guide</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">DNS</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[Deploying Domain Name System (DNS)](https://go.microsoft.com/fwlink/p/?LinkId=734022)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734022" data-raw-source="[Deploying Domain Name System (DNS)](https://go.microsoft.com/fwlink/p/?LinkId=734022)">Deploying Domain Name System (DNS)</a></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If you use network infrastructure products and technologies from other vendors, refer to the vendor documentation on how to perform the necessary remediation. If you determined that no remediation is necessary, you can skip this section.
 
@@ -722,22 +722,22 @@ Table 8. AD DS, Azure AD and deployment resources
 <tr class="odd">
 <td align="left">AD DS</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=733909)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733909" data-raw-source="[Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=733909)">Active Directory Domain Services Overview</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Azure AD</td>
 <td align="left"><ul>
-<li><p>[Azure Active Directory documentation](https://go.microsoft.com/fwlink/p/?LinkId=690258)</p></li>
-<li><p>[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259)</p></li>
-<li><p>[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=690260)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690258" data-raw-source="[Azure Active Directory documentation](https://go.microsoft.com/fwlink/p/?LinkId=690258)">Azure Active Directory documentation</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690259" data-raw-source="[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259)">Manage and support Azure Active Directory Premium</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690260" data-raw-source="[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=690260)">Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines</a></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If you decided not to migrate to AD DS or Azure AD as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -765,44 +765,44 @@ Table 9. Management systems and deployment resources
 <tr class="odd">
 <td align="left">Windows provisioning packages</td>
 <td align="left"><ul>
-<li><p>[Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)</p></li>
-<li><p>[Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)</p></li>
-<li><p>[Step-By-Step: Building Windows 10 Provisioning Packages](https://go.microsoft.com/fwlink/p/?LinkId=690261)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733918" data-raw-source="[Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)">Build and apply a provisioning package</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733911" data-raw-source="[Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)">Windows Imaging and Configuration Designer</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690261" data-raw-source="[Step-By-Step: Building Windows 10 Provisioning Packages](https://go.microsoft.com/fwlink/p/?LinkId=690261)">Step-By-Step: Building Windows 10 Provisioning Packages</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p>[Core Network Companion Guide: Group Policy Deployment](https://go.microsoft.com/fwlink/p/?LinkId=733915)</p></li>
-<li><p>[Deploying Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=734024)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733915" data-raw-source="[Core Network Companion Guide: Group Policy Deployment](https://go.microsoft.com/fwlink/p/?LinkId=733915)">Core Network Companion Guide: Group Policy Deployment</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734024" data-raw-source="[Deploying Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=734024)">Deploying Group Policy</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p>[Site Administration for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733914)</p></li>
-<li><p>[Deploying Clients for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733919)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733914" data-raw-source="[Site Administration for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733914)">Site Administration for System Center 2012 Configuration Manager</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733919" data-raw-source="[Deploying Clients for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733919)">Deploying Clients for System Center 2012 Configuration Manager</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Intune</td>
 <td align="left"><ul>
-<li><p>[Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262)</p></li>
-<li><p>[Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263)</p></li>
-<li><p>[System Center 2012 R2 Configuration Manager &amp; Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690264)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690262" data-raw-source="[Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262)">Set up and manage devices with Microsoft Intune</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690263" data-raw-source="[Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263)">Smoother Management Of Office 365 Deployments with Windows Intune</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690264" data-raw-source="[System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690264)">System Center 2012 R2 Configuration Manager &amp; Windows Intune</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">MDT</td>
 <td align="left"><ul>
-<li><p>[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)</p></li>
-<li><p>[Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690324" data-raw-source="[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)">MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690265" data-raw-source="[Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)">Step-By-Step: Installing Windows 8.1 From A USB Key</a></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -830,29 +830,29 @@ Table 10. Management systems and app deployment resources
 <tr class="odd">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p>[Editing an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=734025)</p></li>
-<li><p>[Group Policy Software Deployment Background](https://go.microsoft.com/fwlink/p/?LinkId=734026)</p></li>
-<li><p>[Assigning and Publishing Software](https://go.microsoft.com/fwlink/p/?LinkId=734027)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734025" data-raw-source="[Editing an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=734025)">Editing an AppLocker Policy</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734026" data-raw-source="[Group Policy Software Deployment Background](https://go.microsoft.com/fwlink/p/?LinkId=734026)">Group Policy Software Deployment Background</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734027" data-raw-source="[Assigning and Publishing Software](https://go.microsoft.com/fwlink/p/?LinkId=734027)">Assigning and Publishing Software</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p>[How to Deploy Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733917)</p></li>
-<li><p>[Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733907)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733917" data-raw-source="[How to Deploy Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733917)">How to Deploy Applications in Configuration Manager</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733907" data-raw-source="[Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733907)">Application Management in Configuration Manager</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Intune</td>
 <td align="left"><ul>
-<li><p>[Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913)</p></li>
-<li><p>[Manage apps with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733910)</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733913" data-raw-source="[Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913)">Deploy apps to mobile devices in Microsoft Intune</a></p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733910" data-raw-source="[Manage apps with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733910)">Manage apps with Microsoft Intune</a></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -958,9 +958,9 @@ After you complete these steps, your management system should take over the day-
 
 [Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)
 
- 
+ 
 
- 
+ 
 
 
 

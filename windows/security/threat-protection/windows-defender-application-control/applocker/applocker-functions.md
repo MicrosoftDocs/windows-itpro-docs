@@ -49,11 +49,11 @@ AppLocker and SRP use the security level IDs to stipulate the access requirement
 | SAFER_LEVELID_CONSTRAINED | Supported | Not supported |
 | SAFER_LEVELID_UNTRUSTED | Supported | Not supported |
 | SAFER_LEVELID_DISALLOWED | Supported | Supported | 
- 
+ 
 In addition, URL zone ID is not supported in AppLocker.
 
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
+ 
+ 

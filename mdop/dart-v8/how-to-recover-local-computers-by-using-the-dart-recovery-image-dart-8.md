@@ -39,18 +39,20 @@ Use these instructions to recover a computer when you are physically present at 
 
 6.  Select the installation that you want to repair or diagnose, and then click **Next**.
 
-    **Note**  
+    **Note**  
     If the Windows Recovery Environment (WinRE) detects or suspects that Windows 8 did not start correctly the last time that it was tried, **Startup Repair** might start to run automatically.
 
-     
 
-    If any of the registry hives are corrupted or missing, Registry Editor and several other DaRT utilities will have limited functionality. If no operating system is selected, some tools will not be available.
 
-    The **System Recovery Options** window appears and lists various recovery tools.
+~~~
+If any of the registry hives are corrupted or missing, Registry Editor and several other DaRT utilities will have limited functionality. If no operating system is selected, some tools will not be available.
 
-7.  On the **System Recovery Options** window, click **Microsoft Diagnostics and Recovery Toolset**.
+The **System Recovery Options** window appears and lists various recovery tools.
+~~~
 
-    The **Diagnostics and Recovery Toolset** window opens. You can now run any of the individual tools or wizards that were included when the DaRT recovery image was created.
+7. On the **System Recovery Options** window, click **Microsoft Diagnostics and Recovery Toolset**.
+
+   The **Diagnostics and Recovery Toolset** window opens. You can now run any of the individual tools or wizards that were included when the DaRT recovery image was created.
 
 You can click **Help** on the **Diagnostics and Recovery Toolset** window to open the client Help file that provides detailed instruction and information needed to run the individual DaRT tools. You can also click the **Solution Wizard** on the **Diagnostics and Recovery Toolset** window to choose the best tool for the situation, based on a brief interview that the wizard provides.
 
@@ -58,41 +60,40 @@ For general information about any of the DaRT tools, see [Overview of the Tools 
 
 **How to run DaRT at the command prompt**
 
--   To run DaRT at the command prompt, specify the **netstart.exe** command then use any of the following parameters:
+- To run DaRT at the command prompt, specify the **netstart.exe** command then use any of the following parameters:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>Parameter</strong></p></td>
-    <td align="left"><p><strong>Description</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>-network</p></td>
-    <td align="left"><p>Initializes the network services.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>-remount</p></td>
-    <td align="left"><p>Remaps the drive letters.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>-prompt</p></td>
-    <td align="left"><p>Displays messages that ask the end user to specify whether to initialize the network and remap the drives.</p>
-    <div class="alert">
-    <strong>Warning</strong>  
-    <p>The end user’s response to the prompt overrides the –network and –remount switches.</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><strong>Parameter</strong></p></td>
+  <td align="left"><p><strong>Description</strong></p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>-network</p></td>
+  <td align="left"><p>Initializes the network services.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p>-remount</p></td>
+  <td align="left"><p>Remaps the drive letters.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>-prompt</p></td>
+  <td align="left"><p>Displays messages that ask the end user to specify whether to initialize the network and remap the drives.</p>
+  <div class="alert">
+  <strong>Warning</strong><br/><p>The end user’s response to the prompt overrides the –network and –remount switches.</p>
+  </div>
+  <div>
 
-     
+  </div></td>
+  </tr>
+  </tbody>
+  </table>
+
+
 
 ## Related topics
 
@@ -101,9 +102,9 @@ For general information about any of the DaRT tools, see [Overview of the Tools 
 
 [Recovering Computers Using DaRT 8.0](recovering-computers-using-dart-80-dart-8.md)
 
- 
 
- 
+
+
 
 
 

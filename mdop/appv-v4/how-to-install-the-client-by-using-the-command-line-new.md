@@ -24,21 +24,21 @@ You can use optional command-line parameters to apply specific configuration set
 **Note**  
 When you install the App-V client to use with a read-only cache, for example with a VDI server implementation, you must set the *AUTOLOADTARGET* parameter to NONE to prevent the client from trying to update applications when the cache is read-only.
 
- 
+ 
 
 For more information about setting these parameter values after installation, see [How to Configure the App-V Client Registry Settings by Using the Command Line](https://go.microsoft.com/fwlink/?LinkId=169355) (https://go.microsoft.com/fwlink/?LinkId=169355) in the Application Virtualization (App-V) Operations Guide.
 
 **Note**  
 If a configuration setting on the user’s computer depends on the client installation path, note that the Application Virtualization (App-V) 4.5 client copies its installation files to a different folder than previous versions did. By default, a new installation of the App-V 4.5 client will copy its installation files to the \\Program Files\\Microsoft Application Virtualization Client folder. If an earlier version of the client is already installed, running the App-V 4.5 client installer will perform an upgrade of the existing client using the existing installation folder.
 
- 
+ 
 
 \[Template Token Value\]
 
 **Note**  
 For App-V version 4.6 and later, when the App-V client is installed, SFTLDR.DLL is copied to the Windows\\system32 directory. If the App-V client is installed on a 64-bit system, SFTLDR\_WOW64.DLL is copied to the Windows\\SysWOW64 directory.
 
- 
+ 
 
 \[Template Token Value\]
 
@@ -64,9 +64,9 @@ Provides step-by-step procedures for installing any prerequisite software and al
 
 [How to Uninstall the App-V Client](how-to-uninstall-the-app-v-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

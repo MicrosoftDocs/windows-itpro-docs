@@ -11,7 +11,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 
@@ -41,7 +41,7 @@ The **Get Inventory** operation retrieves information from the Microsoft Store f
 </table>
 
 
- 
+ 
 
 ### URI parameters
 
@@ -77,7 +77,7 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="odd">
 <td><p>licenseTypes</p></td>
-<td><p>collection of [LicenseType](data-structures-windows-store-for-business.md#licensetype)</p></td>
+<td><p>collection of <a href="data-structures-windows-store-for-business.md#licensetype" data-raw-source="[LicenseType](data-structures-windows-store-for-business.md#licensetype)">LicenseType</a></p></td>
 <td><p>{online,offline}</p></td>
 <td><p>Optional. A collection of license types</p></td>
 </tr>
@@ -165,7 +165,7 @@ Here are some examples.
 
 The response contains [InventoryResultSet](data-structures-windows-store-for-business.md#inventoryresultset).
 
- 
+ 
 
 
 

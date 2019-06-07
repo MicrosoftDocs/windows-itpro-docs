@@ -37,16 +37,16 @@ Administrators in this role have increased access to the Help Desk features from
 **Important**  
 To view reports, an administrative user must be a member of the **MBAM Report Users** security group on the Administration and Monitoring Server, Compliance and Audit Database, and on the server that hosts the Compliance and Audit Reports feature. As a best practice, create a security group in Active Directory Domain Services with rights on the local **MBAM Report Users** security group on both the Administration and Monitoring Server and the server that hosts the Compliance and Audit Reports.
 
- 
+ 
 
 ## Related topics
 
 
 [Preparing your Environment for MBAM 2.0](preparing-your-environment-for-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ When you deploy Application Virtualization by using an electronic software distr
     **Important**  
     For OVERRIDEURL all backslash characters must be escaped using a preceding backslash, or the OVERRIDEURL path will not be parsed correctly. Also, properties and values must be entered as uppercase except where the value is a path to a file.
 
-     
+     
 
 **To publish a package using SFTMIME**
 
@@ -61,9 +61,9 @@ When you deploy Application Virtualization by using an electronic software distr
 
 [Stand-Alone Delivery Scenario for Application Virtualization Clients](stand-alone-delivery-scenario-for-application-virtualization-clients.md)
 
- 
+ 
 
- 
+ 
 
 
 

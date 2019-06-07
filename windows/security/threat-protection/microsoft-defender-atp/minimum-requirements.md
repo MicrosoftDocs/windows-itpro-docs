@@ -89,21 +89,21 @@ When you run the onboarding wizard for the first time, you must choose where you
 <span id="telemetry-and-diagnostics-settings" />
 ### Diagnostic data settings
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
+By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
-1.  Open an elevated command-line prompt on the machine:
+1. Open an elevated command-line prompt on the machine:
 
-  a.  Go to **Start** and type **cmd**.
+   a.  Go to **Start** and type **cmd**.
 
-  b.  Right-click **Command prompt** and select **Run as administrator**.
+   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command, and press **Enter**:
+2. Enter the following command, and press **Enter**:
 
-    ```text
-    sc qc diagtrack
-    ```
+   ```text
+   sc qc diagtrack
+   ```
 
 If the service is enabled, then the result should look like the following screenshot:
 

@@ -34,7 +34,7 @@ You can create a group, place it where you would like in the console's **Applica
 **Note**  
 Moving applications into groups does not affect the locations of their files (SFT, OSD, or SPRJ) on the server's file system.
 
- 
+ 
 
 ## In This Section
 
@@ -58,9 +58,9 @@ Provides step-by-step instructions for removing or deleting an application group
 
 [How to Perform Administrative Tasks in the Application Virtualization Server Management Console](how-to-perform-administrative-tasks-in-the-application-virtualization-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

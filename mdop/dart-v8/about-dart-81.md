@@ -36,10 +36,10 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 
     You can create DaRT images by using Windows Server 2012 R2 or Windows 8.1.
 
-    **Note**  
+    **Note**  
     For earlier versions of the Windows Server and Windows operating systems, continue to use the earlier versions of DaRT.
 
-     
+
 
 -   **Customer feedback**
 
@@ -52,16 +52,18 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 ## Requirements
 
 
--   **Windows Assessment and Development Kit 8.1**
+-   **Windows Assessment and Development Kit 8.1**
 
-    Windows Assessment and Development Kit (ADK) 8.1 is a required prerequisite for the DaRT Recovery Image Wizard. Windows ADK 8.1 contains deployment tools that are used to customize, deploy, and service Windows images. It also contains the Windows Preinstallation Environment (Windows PE).
+    Windows Assessment and Development Kit (ADK) 8.1 is a required prerequisite for the DaRT Recovery Image Wizard. Windows ADK 8.1 contains deployment tools that are used to customize, deploy, and service Windows images. It also contains the Windows Preinstallation Environment (Windows PE).
 
-    **Note**  
-    Windows ADK 8.1 is not required if you are installing only Remote Connection Viewer or Crash Analyzer.
+    **Note**  
+    Windows ADK 8.1 is not required if you are installing only Remote Connection Viewer or Crash Analyzer.
 
-     
 
-    To download Windows ADK 8.1, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 8.1](https://www.microsoft.com/download/details.aspx?id=39982) in the Microsoft Download Center.
+
+~~~
+To download Windows ADK 8.1, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 8.1](https://www.microsoft.com/download/details.aspx?id=39982) in the Microsoft Download Center.
+~~~
 
 -   **Microsoft .NET Framework 4.5.1**
 
@@ -110,9 +112,9 @@ DaRT 8.1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is pa
 
 [Release Notes for DaRT 8.1](release-notes-for-dart-81.md)
 
- 
 
- 
+
+
 
 
 

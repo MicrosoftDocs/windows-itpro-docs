@@ -43,16 +43,16 @@ For more information about how to change the operating-system settings that are 
 
 For information about the operating-system settings that USMT migrates, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
- 
+ 
 
 ## Related topics
 
 
 [Determine What to Migrate](usmt-determine-what-to-migrate.md)
 
- 
+ 
 
- 
+ 
 
 
 

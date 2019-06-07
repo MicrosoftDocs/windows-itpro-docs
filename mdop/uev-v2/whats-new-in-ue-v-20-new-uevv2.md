@@ -46,7 +46,7 @@ By default, UE-V synchronizes the settings of many of the Windows apps included 
 **Note**  
 UE-V does not synchronize Windows app settings if the domain users link their sign-in credentials to their Microsoft account. This linking synchronizes settings to Microsoft OneDrive so UE-V only synchronizes the desktop applications.
 
- 
+ 
 
 ## Microsoft account linking
 
@@ -78,9 +78,9 @@ Company Settings Center displays which settings are synchronized and lets users 
 
 [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -46,16 +46,16 @@ Microsoft recommends that this function is not used to configure the following t
 
 > **Note**  The **DMProcessConfigXMLFiltered** function has full functionality in Windows 10 Mobile and Windows Phone 8.1, but it has a read-only functionality in Windows 10 desktop.
 
- 
+ 
 
 ## Syntax
 
 ```C++
 HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
-         LPCWSTR pszXmlIn,
-   const WCHAR   **rgszAllowedCspNode,
-   const DWORD   dwNumAllowedCspNodes,
-         BSTR    *pbstrXmlOut
+         LPCWSTR pszXmlIn,
+   const WCHAR   **rgszAllowedCspNode,
+   const DWORD   dwNumAllowedCspNodes,
+         BSTR    *pbstrXmlOut
 );
 ```
 
@@ -63,25 +63,25 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 
 *pszXmlIn*
 <ul style="list-style-type:none">
-<li>\[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).</li>
+<li>[in] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. <strong>DMProcessConfigXMLFiltered</strong> accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).</li>
 </ul>
 <br>
 
 *rgszAllowedCspNode*
 <ul style="list-style-type:none">
-<li>\[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.</li>
+<li>[in] Array of <strong>WCHAR\</strong>* that specify which configuration service provider nodes are allowed to be invoked.</li>
 </ul>
 <br>
 
 *dwNumAllowedCspNodes*
 <ul style="list-style-type:none">
-<li>\[in\] Number of elements passed in *rgszAllowedCspNode*.</li>
+<li>[in] Number of elements passed in <em>rgszAllowedCspNode</em>.</li>
 </ul>
 <br> 
 
 *pbstrXmlOut*
 <ul style="list-style-type:none">
-<li>\[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.</li>
+<li>[out] The resulting null–terminated XML from configuration. The caller of <strong>DMProcessConfigXMLFiltered</strong> is responsible for cleanup of the output buffer that the <em>pbstrXmlOut</em> parameter references. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ms221481" data-raw-source="[**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)"><strong>SysFreeString</strong></a> to free the memory.</li>
 </ul>
 <br>
 
@@ -126,7 +126,7 @@ Returns the standard **HRESULT** value **S\_OK** to indicate success. The follow
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -136,20 +136,20 @@ The usage of **DMProcessConfigXMLFiltered** depends on the configuration service
 
 ``` XML
 <wap-provisioningdoc>
-    <characteristic type="NAPDEF">
-        <characteristic type="Internet" mwid="1">
-            <parm name="NAME" value="Contoso Internet APN"/>
-            <parm name="BEARER" value="GSM-GPRS"/>
-            <parm name="NAP-ADDRESS" value="wap.contoso"/>
-            <parm name="NAP-ADDRTYPE" value="APN"/>
-            <parm name="INTERNET" value="1"/>
-        </characteristic>
-    </characteristic>
-    <characteristic type="BrowserFavorite">
-        <characteristic type="Contoso">
-            <parm name="URL" value="http://www.contoso.com"/>
-        </characteristic>
-    </characteristic>
+    <characteristic type="NAPDEF">
+        <characteristic type="Internet" mwid="1">
+            <parm name="NAME" value="Contoso Internet APN"/>
+            <parm name="BEARER" value="GSM-GPRS"/>
+            <parm name="NAP-ADDRESS" value="wap.contoso"/>
+            <parm name="NAP-ADDRTYPE" value="APN"/>
+            <parm name="INTERNET" value="1"/>
+        </characteristic>
+    </characteristic>
+    <characteristic type="BrowserFavorite">
+        <characteristic type="Contoso">
+            <parm name="URL" value="http://www.contoso.com"/>
+        </characteristic>
+    </characteristic>
 </wap-provisioningdoc>
 ```
 
@@ -158,8 +158,8 @@ Then, the second parameter in the call to **DMProcessConfigXMLFiltered** would h
 ``` C++
 LPCWSTR rgszAllowedCspNodes[] =
 {
-    L"NAPDEF",
-    L"BrowserFavorite"
+    L"NAPDEF",
+    L"BrowserFavorite"
 };
 ```
 
@@ -172,18 +172,18 @@ WCHAR szProvxmlContent[] = L"<wap-provisioningdoc>...</wap-provisioningdoc>";
 BSTR bstr = NULL;
 
 HRESULT hr = DMProcessConfigXMLFiltered(
-                szProvxmlContent,
-                rgszAllowedCspNodes,
-                _countof(rgszAllowedCspNodes),
-                &bstr
-                );
+                szProvxmlContent,
+                rgszAllowedCspNodes,
+                _countof(rgszAllowedCspNodes),
+                &bstr
+                );
 
 /* check error */
 
 if ( bstr != NULL )
 {
-    SysFreeString( bstr );
-    bstr = NULL;
+    SysFreeString( bstr );
+    bstr = NULL;
 }
 ```
 
@@ -226,7 +226,7 @@ if ( bstr != NULL )
 
 [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)
 
- 
+ 
 
 
 

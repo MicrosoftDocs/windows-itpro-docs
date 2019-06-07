@@ -21,7 +21,7 @@ Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get
 <span id="get-insider" />
 ## How do I install the Insider builds? 
  
-On a device running the Windows 10 April 2018 Update, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. 
+On a device running the Windows 10 April 2018 Update, go to <strong>Settings -&gt; Update &amp; Security -&gt; Windows Insider Program</strong> and select <strong>Get started</strong>. Link the account you used to register as a Windows Insider. 
 
 Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. 
 

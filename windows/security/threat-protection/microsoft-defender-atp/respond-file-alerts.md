@@ -98,9 +98,9 @@ You can roll back and remove a file from quarantine if you’ve determined that 
     b. Right–click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
-  ```
-  “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
-  ```
+   ```
+   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```
 
 > [!NOTE]
 > Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
@@ -148,9 +148,9 @@ Before you can block files, you'll need to enable the feature.
     The Action center shows the submission information:
     ![Image of block file](images/atp-blockfile.png)
 
-  - **Submission time** - Shows when the action was submitted.
-  - **Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
-  - **Status** - Indicates whether the file was added to or removed from the blacklist.
+   - **Submission time** - Shows when the action was submitted.
+   - **Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
+   - **Status** - Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
 
@@ -178,7 +178,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 
 2. Open the **Actions** menu and select **Remove file from blocked list**.
 
-  ![Image of remove file from blocked list](images/atp-remove-blocked-file.png)
+   ![Image of remove file from blocked list](images/atp-remove-blocked-file.png)
 
 3. Type a comment and select **Yes** to take action on the file. The file will be allowed to run in the organization.
 

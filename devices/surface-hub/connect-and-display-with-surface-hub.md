@@ -109,7 +109,7 @@ Use these ports on the Surface Hub for Guest Mode.
 </tbody>
 </table>
 
- 
+ 
 
 ### Port locations
 
@@ -224,7 +224,7 @@ Your choice of video cable will be determined by what is available from your sou
 </tbody>
 </table>
 
- 
+ 
 
 Source audio is provided by DisplayPort and HDMI cables. If you must use VGA, Surface Hub has an audio input port that uses a 3.5 mm plug. Surface Hub also uses a USB cable that provides Touchback and Inkback from the Surface Hub to compatible Windows 10 devices. The USB cable can be used with any video input that is already connected with a cable.
 
@@ -275,20 +275,20 @@ Check directly with graphics card vendors for the latest drivers.
 <tbody>
 <tr class="odd">
 <td><p>NVIDIA</p></td>
-<td><p>[http://nvidia.com/Download/index.aspx](http://nvidia.com/Download/index.aspx)</p></td>
+<td><p><a href="http://nvidia.com/Download/index.aspx" data-raw-source="[http://nvidia.com/Download/index.aspx](http://nvidia.com/Download/index.aspx)">http://nvidia.com/Download/index.aspx</a></p></td>
 </tr>
 <tr class="even">
 <td><p>AMD</p></td>
-<td><p>[http://support.amd.com/en-us/download](http://support.amd.com/en-us/download)</p></td>
+<td><p><a href="http://support.amd.com/en-us/download" data-raw-source="[http://support.amd.com/en-us/download](http://support.amd.com/en-us/download)">http://support.amd.com/en-us/download</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Intel</p></td>
-<td><p>[https://downloadcenter.intel.com/](https://downloadcenter.intel.com/)</p></td>
+<td><p><a href="https://downloadcenter.intel.com/" data-raw-source="[https://downloadcenter.intel.com/](https://downloadcenter.intel.com/)">https://downloadcenter.intel.com/</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Ports
 
@@ -347,7 +347,7 @@ Replacement PC ports on 55" Surface Hub
 </tbody>
 </table>
 
- 
+ 
 
 Replacement PC ports on 84" Surface Hub
 
@@ -404,7 +404,7 @@ Replacement PC ports on 84" Surface Hub
 </tbody>
 </table>
 
- 
+ 
 
 ### Replacement PC setup instructions
 
@@ -439,9 +439,9 @@ You can switch the Surface Hub to use the internal PC.
 
 3.  Turn on the Surface Hub using the power switch next to the power cable.
 
- 
+ 
 ## Video Out
- 
+ 
 The Surface Hub includes a Video Out port for mirroring visual content from the Surface Hub to another display.
 
 ### Ports

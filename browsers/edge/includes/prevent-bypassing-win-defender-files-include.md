@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned off. Users can ignore the warning and continue to download the unverified file(s). | |
-|Enabled |1 |1 |Prevented/turned on.  |![Most restricted value](../images/check-gn.png) |
+|                Group Policy                 | MDM | Registry |                                            Description                                            |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|---------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Allowed/turned off. Users can ignore the warning and continue to download the unverified file(s). |                                                  |
+|                   Enabled                   |  1  |    1     |                                       Prevented/turned on.                                        | ![Most restricted value](../images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings

@@ -97,9 +97,9 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

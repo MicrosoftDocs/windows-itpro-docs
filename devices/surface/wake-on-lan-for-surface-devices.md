@@ -48,10 +48,10 @@ To enable WOL support on Surface devices, a specific driver for the Surface Ethe
 
 You can run this Microsoft Windows Installer (.msi) file on a Surface device to install the Surface WOL driver, or you can distribute it to Surface devices with an application deployment solution, such as System Center Configuration Manager. To include the Surface WOL driver during deployment, you can install the .msi file as an application during the deployment process. You can also extract the Surface WOL driver files to include them in the deployment process. For example, you can include them in your Microsoft Deployment Toolkit (MDT) deployment share. You can read more about Surface deployment with MDT in [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt).
 
->[!NOTE]
->During the installation of SurfaceWOL.msi, the following registry key is set to a value of 1, which allows easy identification of systems where the WOL driver has been installed. If you chose to extract and install these drivers separately during deployment, this registry key will not be configured and must be configured manually or with a script.
-
->**HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
+> [!NOTE]
+> During the installation of SurfaceWOL.msi, the following registry key is set to a value of 1, which allows easy identification of systems where the WOL driver has been installed. If you chose to extract and install these drivers separately during deployment, this registry key will not be configured and must be configured manually or with a script.
+> 
+> **HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
 
 To extract the contents of SurfaceWOL.msi, use the MSIExec administrative installation option (**/a**), as shown in the following example, to extract the contents to the C:\WOL\ folder:
 

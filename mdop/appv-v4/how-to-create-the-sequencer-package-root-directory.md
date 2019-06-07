@@ -30,7 +30,7 @@ After you have created the package root directory, you can begin sequencing appl
     **Important**  
     The name you assign to virtual application files that will be saved in the package root directory should use the 8.3 naming format. The file names should be no longer than 8 characters with a three-character file name extension.
 
-     
+     
 
 ## Related topics
 
@@ -41,9 +41,9 @@ After you have created the package root directory, you can begin sequencing appl
 
 [How to Modify the Scratch Directory Location](how-to-modify-the-scratch-directory-location.md)
 
- 
+ 
 
- 
+ 
 
 
 

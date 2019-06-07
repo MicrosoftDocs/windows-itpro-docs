@@ -22,7 +22,7 @@ If you plan to be disconnected from the network for an extended period of time, 
 **Note**  
 By default, **Work Offline** is disabled for the Client for Remote Desktop Services (formerly Terminal Services). Your system administrator must change your user permissions to allow you to use this setting on a Client for Remote Desktop Services.
 
- 
+ 
 
 **To work offline**
 
@@ -37,9 +37,9 @@ By default, **Work Offline** is disabled for the Client for Remote Desktop Servi
 
 [How to Use the Desktop Notification Area for Application Virtualization Client Management](how-to-use-the-desktop-notification-area-for-application-virtualization-client-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

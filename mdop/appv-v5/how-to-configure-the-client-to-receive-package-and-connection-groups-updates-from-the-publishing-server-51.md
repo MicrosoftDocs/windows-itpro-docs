@@ -24,7 +24,7 @@ Use the following steps to configure the App-V 5.1 client to receive updates fro
 **Note**  
 For the following procedures the management server was installed on a computer named **MyMgmtSrv**, and the publishing server was installed on a computer named **MyPubSrv**.
 
- 
+ 
 
 **To configure the App-V 5.1 client to receive updates from the publishing server**
 
@@ -77,9 +77,9 @@ For the following procedures the management server was installed on a computer n
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

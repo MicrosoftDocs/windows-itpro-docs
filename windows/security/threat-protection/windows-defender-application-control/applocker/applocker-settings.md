@@ -36,7 +36,7 @@ The following table describes the settings and values used by AppLocker.
 | Network ports | Not applicable | 
 | Service accounts | Not applicable | 
 | Performance counters | Not applicable | 
- 
+ 
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)

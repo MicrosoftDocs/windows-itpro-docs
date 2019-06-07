@@ -22,7 +22,7 @@ Connection groups enable the applications within a package to interact with each
 **Note**  
 In some previous versions of App-V, connection groups were referred to as Dynamic Suite Composition.
 
- 
+ 
 
 **In this topic:**
 
@@ -33,33 +33,33 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment51.md)</p></td>
+<td align="left"><p><a href="about-the-connection-group-virtual-environment51.md" data-raw-source="[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment51.md)">About the Connection Group Virtual Environment</a></p></td>
 <td align="left"><p>Describes the connection group virtual environment.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[About the Connection Group File](about-the-connection-group-file51.md)</p></td>
+<td align="left"><p><a href="about-the-connection-group-file51.md" data-raw-source="[About the Connection Group File](about-the-connection-group-file51.md)">About the Connection Group File</a></p></td>
 <td align="left"><p>Describes the connection group file.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to Create a Connection Group](how-to-create-a-connection-group51.md)</p></td>
+<td align="left"><p><a href="how-to-create-a-connection-group51.md" data-raw-source="[How to Create a Connection Group](how-to-create-a-connection-group51.md)">How to Create a Connection Group</a></p></td>
 <td align="left"><p>Explains how to create a new connection group.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages51.md)</p></td>
+<td align="left"><p><a href="how-to-create-a-connection-group-with-user-published-and-globally-published-packages51.md" data-raw-source="[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages51.md)">How to Create a Connection Group with User-Published and Globally Published Packages</a></p></td>
 <td align="left"><p>Explains how to create a new connection group that contains a mix of packages that are published to the user and published globally.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to Delete a Connection Group](how-to-delete-a-connection-group51.md)</p></td>
+<td align="left"><p><a href="how-to-delete-a-connection-group51.md" data-raw-source="[How to Delete a Connection Group](how-to-delete-a-connection-group51.md)">How to Delete a Connection Group</a></p></td>
 <td align="left"><p>Explains how to delete a connection group.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to Publish a Connection Group](how-to-publish-a-connection-group51.md)</p></td>
+<td align="left"><p><a href="how-to-publish-a-connection-group51.md" data-raw-source="[How to Publish a Connection Group](how-to-publish-a-connection-group51.md)">How to Publish a Connection Group</a></p></td>
 <td align="left"><p>Explains how to publish a connection group.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -71,9 +71,9 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 
 -   [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

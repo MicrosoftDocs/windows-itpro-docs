@@ -29,7 +29,7 @@ To ensure successful installation of MBAM Clients and MBAM Server features, you 
 **Note**  
 MBAM Setup verifies if all prerequisites are met before installation starts. If they are not met, Setup will fail.
 
- 
+ 
 
 [MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md)
 
@@ -41,7 +41,7 @@ Before MBAM can manage clients in the enterprise, you must define the Group Poli
 **Important**  
 MBAM will not work with policies for stand-alone BitLocker drive encryption. Group Policy must be defined for MBAM; otherwise, the BitLocker encryption and enforcement will fail.
 
- 
+ 
 
 [Planning for MBAM 1.0 Group Policy Requirements](planning-for-mbam-10-group-policy-requirements.md)
 
@@ -59,9 +59,9 @@ The membership of MBAM roles can be managed more effectively if you create secur
 
 [Planning for MBAM 1.0](planning-for-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 
