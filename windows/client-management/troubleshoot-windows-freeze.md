@@ -97,7 +97,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
    3.  In the **Write Debugging Information** section, select **Complete Memory Dump**. 
 
-       > [!NOTE]  
+       > [!NOTE]
        > For Windows versions that are earlier than Windows 8 or Windows Server 2012, the Complete Memory Dump type isn't available in the GUI. You have to change it in Registry Editor. To do this, change the value of the following **CrashDumpEnabled** registry entry to **1** (REG_DWORD):
        >**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled**   
 

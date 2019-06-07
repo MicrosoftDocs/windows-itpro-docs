@@ -364,7 +364,8 @@ Starting in Windows 10, version 1709, clicking the **Info** button will show a l
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
-> [Note] Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
+> [NOTE]
+> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 

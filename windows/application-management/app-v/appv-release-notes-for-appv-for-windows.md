@@ -137,7 +137,7 @@ The InsertVersionInfo.sql script is not required for versions of the App-V manag
 
 The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340).
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > **Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
 
 ## Microsoft Visual Studio 2012 not supported

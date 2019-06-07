@@ -139,7 +139,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <a href="" id="iptype"></a>**IPType**  
 <p style="margin-left: 20px"> Optional. Type: String. Specifies the network protocol of the connection. Available values are &quot;IPv4&quot;, &quot;IPv6&quot;, &quot;IPv4v6&quot;, and &quot;IPv4v6xlat&quot;. If a value is not specified, the default value is &quot;IPv4&quot;.
 
-> [!WARNING]  
+> [!WARNING]
 > Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
 
  
@@ -149,7 +149,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 <p style="margin-left: 20px"> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to &quot;1&quot;. This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Do not set ExemptFromDisablePolicy to "1", ExemptFromRoaming to "1", or UseRequiresMappingsPolicy to "1" for general purpose connections.
 
 <p style="margin-left: 20px"> To avoid UX inconsistency with certain value combinations of ExemptFromDisablePolicy and AllowMmsIfDataIsOff, when you do not set ExemptFromDisablePolicy to 1 (default is 0), you should:
