@@ -19,9 +19,9 @@ manager: dansimp
 ## Cryptography policies  
 
 
-* [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
-* [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
-* [Cryptography/Microsoft Surface Hub](#Cryptography-policies-supported-by-Microsoft-Surface-Hub)
+* [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)  
+* [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
+* [Cryptography/Microsoft Surface Hub](#cryptography-policies-supported-by-microsoft-surface-hub)
 <hr/>
 
 <!--Policy-->

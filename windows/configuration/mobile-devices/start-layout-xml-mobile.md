@@ -36,7 +36,7 @@ On Windows 10 Mobile, the customized Start works by:
 
 The following diagrams show the default Windows 10, version 1607 Start layouts for single SIM and dual SIM devices with Cortana support, and single SIM and dual SIM devices with no Cortana support. 
 
-![Start layout for Windows 10 Mobile](..\images\mobile-start-layout.png)
+![Start layout for Windows 10 Mobile](../images/mobile-start-layout.png)
 
 The diagrams show:
 
