@@ -13,10 +13,7 @@ ms.localizationpriority: Normal
 
 # Manage Surface Hub 2S with Intune
 
-
-
 ## Register Surface Hub 2S with Intune
-
 Surface Hub 2S allows IT administrators to manage settings and policies using a mobile device management (MDM) provider. Surface Hub 2S has a built-in management component to communicate with the management server, so there is no need to install additional clients on the device.
 
 **Manual registration**
@@ -24,10 +21,9 @@ Surface Hub 2S allows IT administrators to manage settings and policies using a 
 1. Sign in as a local administrator on Surface Hub 2S and open the **Settings** app. Click **Surface Hub** > **Device management** and then click **+** to add.
 2. After authenticating, the device will automatically register with Intune.
 
- 
-*Figure 1. Register Surface Hub 2S with Intune*
- ![Register Surface Hub 2S with Intune](images/sh2-set-intune1.png)
 
+ ![Register Surface Hub 2S with Intune](images/sh2-set-intune1.png)<br>
+*Figure 1. Register Surface Hub 2S with Intune*<br> <br>
 **Auto registration — Azure Active Directory Affiliated**
 When affiliating Surface Hub 2S with a tenant that has Intune auto enrollment enabled, the device will automatically enroll with Intune.
 
@@ -35,9 +31,9 @@ When affiliating Surface Hub 2S with a tenant that has Intune auto enrollment en
 
 Select Windows 10 Team for preset device restriction settings for Surface Hub and Surface Hub 2S.
  
-*Figure 2. Set device restriction settings Surface Hub 2S*
- ![ preset device restriction settings for Surface Hub and Surface Hub 2S.](images/sh2-set-intune3.png)
- 
+
+ ![Set device restrictions for Surface Hub 2S.](images/sh2-set-intune3.png) <br>
+*Figure 2. Set device restrictions for Surface Hub 2S* <br> <br>
 These settings include user experience and app behavior, Azure Log Analytics registration, Maintenance windows configuration, Session settings and Miracast settings.
 
 ## Additional supported configuration service providers
@@ -53,9 +49,8 @@ To ensure optimal video and audio quality on Surface Hub 2S, add the following Q
 | Audio DSCP  | Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction               | Integer | 46          |
 | Video Ports | Video Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
 | Video DSCP  | Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction               | Integer | 34          |
-
- 
-NOTE: These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
+> [!NOTE]
+> These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
 
 **Microsoft Teams Mode settings**
 You can set the Microsoft Teams app mode using Intune. Surface Hub 2S comes installed with Microsoft Teams in mode 0, which supports both Microsoft Teams and Skype for Business. You can adjust the modes as shown below.
