@@ -1078,7 +1078,7 @@ Specifies the properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
-<td><p>collection of <a href="#productarchitecture" data-raw-source="[ProductArchitecture](#productarchitecture)">ProductArchitecture</a></p></td>
+<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
 </tr>
 </tbody>
 </table>

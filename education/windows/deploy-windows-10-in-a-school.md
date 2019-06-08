@@ -1055,6 +1055,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 |      |                Notify the students and faculty about the deployment.                 |
 
 <p>
+
 ### Perform the deployment
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 

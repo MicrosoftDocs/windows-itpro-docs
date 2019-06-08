@@ -44,7 +44,7 @@ When a product key is pushed from an MDM server to a user's device, **changepk.e
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
 
-> [!IMPORTANT]   
+> [!IMPORTANT]
 > If another policy requires a system reboot that occurs when **changepk.exe** is running, the edition upgrade will fail.
 
  
@@ -55,7 +55,7 @@ After the device restarts, the edition upgrade process completes. The user will 
 
 This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key does not require a reboot and is a silent process for the user.
 
-> [!IMPORTANT]   
+> [!IMPORTANT]
 > The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
  
@@ -106,7 +106,7 @@ The date type is XML.
 
 The supported operation is Execute.
 
-> [!IMPORTANT]   
+> [!IMPORTANT]
 > The XML license file contents must be properly escaped (that is, it should not simply be a copied XML), otherwise the edition upgrade on Windows 10 mobile devices will fail. For more information on proper escaping of the XML license file, see Section 2.4 of the [W3C XML spec](http://www.w3.org/TR/xml/) . The XML license file is acquired from the Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
  
