@@ -61,7 +61,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
     In this example you configure **Enable App-V Client** to **Enabled**.
 
-> [!Note]  
+> [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
      
 ``` syntax
@@ -223,7 +223,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       Here is the example for **AppVirtualization/PublishingAllowServer2**:
         
-> [!Note]  
+> [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
     
     ``` syntax

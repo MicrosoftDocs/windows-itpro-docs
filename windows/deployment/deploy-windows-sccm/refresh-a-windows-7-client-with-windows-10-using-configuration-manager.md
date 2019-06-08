@@ -70,7 +70,7 @@ In this topic, we assume that you have a Windows 7 SP1 client named PC0003 with 
 
 2.  Review the Install Windows 10 Enterprise x64 collection. Do not continue until you see the PC0003 machine in the collection.
 
-    >[!NOTE] 
+    >[!NOTE]
     >It may take a short while for the collection to refresh; you can view progress via the Colleval.log file. If you want to speed up the process, you can manually update membership on the Install Windows 10 Enterprise x64 collection by right-clicking the collection and selecting Update Membership.
 
  
@@ -90,7 +90,7 @@ Using the Configuration Manager console, in the Software Library workspace, sele
 
     -   Make available to the following: Configuration Manager clients, media and PXE
 
-    >[!NOTE]  
+    >[!NOTE]
     >It is not necessary to make the deployment available to media and Pre-Boot Execution Environment (PXE) for a computer refresh, but you will use the same deployment for bare-metal deployments later on and you will need it at that point.
 
      
@@ -118,7 +118,7 @@ Now you can start the computer refresh on PC0003.
 
 1.  Using the Configuration Manager console, in the Asset and Compliance workspace, in the Install Windows 10 Enterprise x64 collection, right-click **PC0003** and select **Client Notification / Download Computer Policy**. Click **OK**.
 
-    >[!NOTE]  
+    >[!NOTE]
     >The Client Notification feature is new in Configuration Manager.
 
 2.  On PC0003, using the Software Center (begin using the Start screen, or click the **New software is available** balloon in the system tray), select the **Windows 10 Enterprise x64 RTM** deployment and click **INSTALL**.

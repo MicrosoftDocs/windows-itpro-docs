@@ -738,10 +738,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy" id="cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="CryptographyAllowFipsAlgorithmPolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptography-tlsciphersuites" id="cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
+    <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
   </dd>
 </dl>
 
@@ -4378,7 +4378,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
--   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
 -   [Defender/AllowArchiveScanning](./policy-csp-defender.md#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](./policy-csp-defender.md#defender-allowbehaviormonitoring)
@@ -5243,8 +5243,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   [Camera/AllowCamera](#camera-allowcamera)
 -   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
 -   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
 -   [Defender/AllowCloudProtection](#defender-allowcloudprotection)

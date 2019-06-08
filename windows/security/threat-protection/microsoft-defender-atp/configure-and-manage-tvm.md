@@ -31,7 +31,7 @@ This section guides you through the steps you need to take to configure Threat &
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM).   
 
->[!WARNING] 
+>[!WARNING]
 >Only Intune and SCCM enrolled devices are supported in this scenario.</br>
 >Use any of the following options to enroll devices in Intune:
 >- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)

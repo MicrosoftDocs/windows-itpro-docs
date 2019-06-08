@@ -14,8 +14,11 @@
     "resource": [
       {
         "files": [
-          "**/images/**"
-        ],
+            "**/images/**",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.gif"
+          ],
         "exclude": [
           "**/obj/**"
         ]

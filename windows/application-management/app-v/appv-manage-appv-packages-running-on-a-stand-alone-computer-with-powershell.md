@@ -32,8 +32,8 @@ Get-AppvClientPackage –Name "ContosoApplication" -Version 2
 
 Use the **Add-AppvClientPackage** cmdlet to add a package to a computer.
 
->[!IMPORTANT]
->This example only adds a package. It does not publish the package to the user or the computer.
+> [!IMPORTANT]
+> This example only adds a package. It does not publish the package to the user or the computer.
 
 For example:
 
@@ -59,8 +59,8 @@ Publish-AppvClientPackage "ContosoApplication" -Global
 
 ## Publish a package to a specific user
 
->[!NOTE]  
->You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
+> [!NOTE]
+> You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
 An administrator can publish a package to a specific user by specifying the optional *–UserSID* parameter with the **Publish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
@@ -99,8 +99,8 @@ Unpublish-AppvClientPackage "ContosoApplication"
 
 ## Unpublish a package for a specific user
 
->[!NOTE]
->You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
+> [!NOTE]
+> You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
 An administrator can unpublish a package for a specific user by using the optional *-UserSID* parameter with the **Unpublish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
@@ -127,8 +127,8 @@ For example:
 Remove-AppvClientPackage "ContosoApplication"
 ```
 
->[!NOTE]
->App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
+> [!NOTE]
+> App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
 
 ## Enable only administrators to publish or unpublish packages
 

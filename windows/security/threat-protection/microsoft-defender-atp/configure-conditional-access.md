@@ -25,7 +25,7 @@ ms.date: 09/03/2018
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
 ### Before you begin
->[!WARNING] 
+>[!WARNING]
 >It's important to note that Azure AD registered devices is not supported in this scenario.</br>
 >Only Intune enrolled devices are supported.
 
@@ -40,7 +40,7 @@ You need to make sure that all your devices are enrolled in Intune. You can use 
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
 
-> [!NOTE] 
+> [!NOTE]
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:

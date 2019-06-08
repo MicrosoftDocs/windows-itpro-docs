@@ -692,7 +692,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt or sign secure channel data (always)
@@ -762,7 +762,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt secure channel data (when possible)
@@ -829,7 +829,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Disable machine account password changes

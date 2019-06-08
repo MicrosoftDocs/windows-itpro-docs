@@ -168,7 +168,7 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 2.  In the **Actions** tab, select the **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, and click **OK**.
 
-    >[!NOTE]  
+    >[!NOTE]
     >You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
 3.  Using the Software Center, select the **Replace Task Sequence** deployment and click **INSTALL**.
@@ -181,7 +181,7 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 7.  Using the Configuration Manager console, in the Asset and Compliance workspace, select the **User State Migration** node, right-click the **PC0004/PC0006** association, and select **View Recovery Information**. Note that the object now also has a user state store location.
 
-    >[!NOTE]  
+    >[!NOTE]
     >It may take a few minutes for the user state store location to be populated.
 
  

@@ -32,7 +32,7 @@ The Windows Autopilot Reset process automatically retains information from the e
 
 Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
 
 >[!NOTE]
