@@ -25,7 +25,7 @@ ms.date: 09/03/2018
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
 ### Before you begin
->[!WARNING] 
+>[!WARNING]
 >It's important to note that Azure AD registered devices is not supported in this scenario.</br>
 >Only Intune enrolled devices are supported.
 

@@ -184,7 +184,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 1.  On Start ![start](../images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](../images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner** &gt; launch ![launch](../images/launchicon.png).
 
-    >[!TIP]  
+    >[!TIP]
     >Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
   
 2.  Give the device to someone else, so they can use the device and only the one app you chose.

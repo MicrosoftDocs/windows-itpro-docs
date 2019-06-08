@@ -160,7 +160,7 @@ This section provides steps to help you configure the All Unknown Computers coll
 
 3. Click **OK**.
 
-   >[!NOTE]  
+   >[!NOTE]
    >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
    
    ![Configure a collection variable](../images/mdt-06-fig35.png)

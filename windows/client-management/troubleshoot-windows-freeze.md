@@ -187,7 +187,7 @@ The Performance Monitor log is located in the path: C:\PERFLOGS
 
 #### Use memory dump to collect data for the physical computer that's running in a frozen state 
 
-> [!Warning] 
+> [!WARNING]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.   
 
 If the physical computer is still running in a frozen state, follow these steps to enable and collect memory dump: 

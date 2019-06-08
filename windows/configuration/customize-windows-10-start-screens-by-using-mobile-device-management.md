@@ -32,7 +32,7 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can us
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions.
 
->[!WARNING] 
+>[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
  

@@ -181,7 +181,7 @@ After you determine which feature updates you intend to deploy, you can manually
 
    - **Use Wake-on-LAN to wake up clients for required deployments**: Specify whether to enable Wake On LAN at the deadline to send wake-up packets to computers that require one or more software updates in the deployment. Any computers that are in sleep mode at the installation deadline time will be awakened so the software update installation can initiate. Clients that are in sleep mode that do not require any software updates in the deployment are not started. By default, this setting is not enabled and is available only when **Type of deployment** is set to **Required**. 
 
-     >[!WARNING] 
+     >[!WARNING]
      >Before you can use this option, computers and networks must be configured for Wake On LAN. 
 
    - **Detail level**: Specify the level of detail for the state messages that are reported by client computers. 
