@@ -41,7 +41,7 @@ Encrypted Hard Drives are supported natively in the operating system through the
 -   **API**: API support for applications to manage Encrypted Hard Drives independently of BitLocker Drive Encryption (BDE)
 -   **BitLocker support**: Integration with the BitLocker Control Panel provides a seamless BitLocker end user experience.
 
->[!WARNING]  
+>[!WARNING]
 >Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
  
 If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](https://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
@@ -63,7 +63,7 @@ For an Encrypted Hard Drive used as a **startup drive**:
 -   The computer must have the Compatibility Support Module (CSM) disabled in UEFI.
 -   The computer must always boot natively from UEFI.
 
->[!WARNING]  
+>[!WARNING]
 >All Encrypted Hard Drives must be attached to non-RAID controllers to function properly.
  
 ## Technical overview
