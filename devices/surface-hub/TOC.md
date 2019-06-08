@@ -13,13 +13,14 @@
 ### [Physically installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
 ### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
+### [Configure phone authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
+### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 
 ## Deploy
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
 ### [Configure Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
-
 
 
 ## Manage
