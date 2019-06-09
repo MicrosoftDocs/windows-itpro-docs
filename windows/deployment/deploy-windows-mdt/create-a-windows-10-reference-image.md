@@ -607,7 +607,7 @@ This steps below outline the process used to boot a virtual machine using an ISO
 2.  Create a virtual machine with the following settings:
     1.  Name: REFW10X64-001
     2.  Location: C:\\VMs
-    3.  Memory: 1024 MB
+    3.  Memory: 1 GB for 32-bit or 2 GB for 64-bit (minimum) 
     4.  Network: External (The network that is connected to the same infrastructure as MDT01 is)
     5.  Hard disk: 60 GB (dynamic disk)
     6.  Image file: C:\\ISO\\MDT Build Lab x86.iso
