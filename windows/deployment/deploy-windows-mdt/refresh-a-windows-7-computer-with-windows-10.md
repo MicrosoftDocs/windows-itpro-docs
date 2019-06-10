@@ -46,7 +46,7 @@ For a computer refresh with MDT, you use the User State Migration Tool (USMT), w
 
 During the computer refresh, USMT uses a feature called Hard-Link Migration Store. When you use this feature, the files are simply linked in the file system, which allows for fast migration, even when there is a lot of data.
 
->[!NOTE] 
+>[!NOTE]
 >In addition to the USMT backup, you can enable an optional full Windows Imaging (WIM) backup of the machine by configuring the MDT rules. If you do this, a .wim file is created in addition to the USMT backup. The .wim file will contain the entire volume from the computer, and helpdesk personnel can extract content from it if needed. Please note that this is a data WIM backup only. Using this backup to restore the entire machine is not a supported scenario.
  
 ### Multi-user migration
@@ -56,7 +56,7 @@ by configuring command-line switches to ScanState (added as rules in MDT).
 
 As an example, the following line configures USMT to migrate only domain user profiles and not profiles from the local SAM account database: ScanStateArgs=/ue:\*\\\* /ui:CONTOSO\\\*
 
->[!NOTE] 
+>[!NOTE]
 >You also can combine the preceding switches with the /uel switch, which excludes profiles that have not been accessed within a specific number of days. For example, adding /uel:60 will configure ScanState (or LoadState) not to include profiles that haven't been accessed for more than 60 days.
  
 ### Support for additional settings
@@ -91,7 +91,7 @@ In order to use the custom MigContosoData.xml USMT template, you need to copy it
 
 After adding the additional USMT template and configuring the CustomSettings.ini file to use it, you are now ready to refresh a Windows 7 SP1 client to Windows 10. In these steps, we assume you have a Windows 7 SP1 client named PC0001 in your environment that is ready for a refresh to Windows 10.
 
->[!NOTE]   
+>[!NOTE]
 >MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property in the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
  
 ### Upgrade (refresh) a Windows 7 SP1 client

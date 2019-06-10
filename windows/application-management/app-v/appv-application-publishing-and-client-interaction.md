@@ -411,14 +411,14 @@ The process then configures the client for package or connection group additions
 
 5. Remove objects that are not published to the target (user or machine).
 
-    >[!NOTE]
+   > [!NOTE]
     >This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
 
 6. Invoke background load mounting based on client configuration.
 
 7. Packages that already have publishing information for the machine or user are immediately restored.
 
-    >[!NOTE]
+   > [!NOTE]
     >This condition occurs as a product of removal without unpublishing with background addition of the package.
 
 This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
@@ -447,7 +447,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
     2. Store backup information in the user’s registry and roaming profile (Shortcut Backups).
 
-        >[!NOTE]
+       > [!NOTE]
         >This enables restore extension points if the package is unpublished.
 
     3. Run scripts targeted for publishing timing.

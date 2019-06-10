@@ -46,7 +46,7 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
-> [!NOTE] 
+> [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 **Table 2. Windows Defender Application Control policy - policy rule options**

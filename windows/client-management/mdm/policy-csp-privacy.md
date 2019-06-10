@@ -318,7 +318,7 @@ manager: dansimp
 <!--Description-->
 Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 
-> [!Note]  
+> [!NOTE]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 

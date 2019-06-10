@@ -95,7 +95,7 @@ SMB is the resource-sharing protocol that is supported by many Windows operating
 
 Enable **Microsoft network server: Digitally sign communications (always)**.
 
->[!NOTE]  
+>[!NOTE]
 >An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
 
 ### Potential impact

@@ -17,7 +17,7 @@ manager: dansimp
 
 In order to switch to the Chinese or Japanese version of HoloLens, you’ll need to download the build for the language on a PC and then install it on your HoloLens using the Windows Device Recovery Tool (WDRT). 
  
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Installing the Chinese or Japanese builds of HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. 
  
    

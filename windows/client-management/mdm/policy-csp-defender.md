@@ -1244,7 +1244,7 @@ If this setting is on, Windows Defender Antivirus will be more aggressive when i
 
 For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
       
-> [!Note]  
+> [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
@@ -1315,7 +1315,7 @@ The typical cloud check timeout is 10 seconds. To enable the extended cloud chec
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
-> [!Note]  
+> [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->

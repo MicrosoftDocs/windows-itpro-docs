@@ -247,7 +247,7 @@ If you use modern management for both domain and non-domain joined devices, writ
 Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
->[!NOTE] 
+>[!NOTE]
 >Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 

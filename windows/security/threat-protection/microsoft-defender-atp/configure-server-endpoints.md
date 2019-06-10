@@ -93,6 +93,7 @@ The following steps are required to enable this integration:
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
 <span id="server-mma"/>
+
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP 
 
 1.	Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
@@ -107,6 +108,7 @@ The following steps are required to enable this integration:
 Once completed, you should see onboarded servers in the portal within an hour.
 
 <span id="server-proxy"/>
+
 ### Configure server proxy and Internet connectivity settings
  
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway" data-raw-source="[OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)">OMS Gateway</a>.
