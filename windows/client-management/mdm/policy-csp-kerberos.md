@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Kerberos
 description: Policy CSP - Kerberos
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

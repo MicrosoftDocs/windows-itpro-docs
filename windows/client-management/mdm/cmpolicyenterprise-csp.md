@@ -4,7 +4,7 @@ description: CMPolicyEnterprise CSP
 ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

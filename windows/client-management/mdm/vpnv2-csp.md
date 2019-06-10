@@ -4,7 +4,7 @@ description: VPNv2 CSP
 ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

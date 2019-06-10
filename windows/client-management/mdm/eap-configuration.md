@@ -4,7 +4,7 @@ description: The topic provides a step-by-step guide for creating an Extensible 
 ms.assetid: DD3F2292-4B4C-4430-A57F-922FED2A8FAE
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
