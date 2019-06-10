@@ -176,11 +176,11 @@ If this setting is set to *Not Configured*, an administrator can still configure
 > ![Note]
 > Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require you to reinstall the operating system. Microsoft cannot guarantee that these problems can be resolved. Modify the registry at your own risk.
 
-In an environment that do not have Active Directory deployed, you can edit registry settings to configure group policies for Automatic Update.
+In an environment that does not have Active Directory deployed, you can edit registry settings to configure group policies for Automatic Update.
 
 To do this, follow these steps:
 
-1. Click Start, search for regedit, and then open Registry Editor.
+1. Select **Start**, search for "regedit", and then open Registry Editor.
 
 2. Open the following registry key:
 
