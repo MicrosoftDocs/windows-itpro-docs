@@ -4,7 +4,7 @@ description: Policy DDF file
 ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

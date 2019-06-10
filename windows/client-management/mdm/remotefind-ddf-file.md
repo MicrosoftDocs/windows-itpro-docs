@@ -4,7 +4,7 @@ description: This topic shows the OMA DM device description framework (DDF) for 
 ms.assetid: 5864CBB8-2030-459E-BCF6-9ACB69206FEA
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

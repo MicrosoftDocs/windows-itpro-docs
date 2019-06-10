@@ -4,7 +4,7 @@ description: CM\_CellularEntries CSP
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

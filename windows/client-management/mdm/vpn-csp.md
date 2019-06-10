@@ -4,7 +4,7 @@ description: VPN CSP
 ms.assetid: 05ca946a-1c0b-4e11-8d7e-854e14740707
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
