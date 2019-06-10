@@ -51,74 +51,74 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP alert
 
 3. Click **REST** under **Local inputs**.
 
-  NOTE:
-  This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
+   NOTE:
+   This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
 
 4. Click **New**.
 
 5. Type the following values in the required fields, then click **Save**:
 
-  NOTE:
-  All other values in the form are optional and can be left blank.
+   NOTE:
+   All other values in the form are optional and can be left blank.
 
-  <table>
-  <tbody style="vertical-align:top;">
-  <tr>
-  <th>Field</th>
-  <th>Value</th>
-  </tr>
-  <tr>
-  <td>Endpoint URL</td>
-  <td>Depending on the location of your datacenter, select any of the following URL: </br></br> **For EU**:  `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts`<br></br>**For US:**` https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts` <br><br> **For UK:**` https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts`
-  </tr>
-  <tr>
-  <td>HTTP Method</td>
-  <td>GET</td>
-  </tr>
-  <td>Authentication Type</td>
-  <td>oauth2</td>
-  <tr>
-  <td>OAuth 2 Access token</td>
-  <td>Use the value that you generated when you enabled the SIEM integration feature. </br></br> NOTE: The access token expires after an hour. </td>
-  </tr>
-  <tr>
-  <td>OAuth 2 Refresh Token</td>
-  <td>Use the value that you generated when you enabled the **SIEM integration** feature.</td>
-  </tr>
-  <tr>
-  <td>OAuth 2 Token Refresh URL</td>
-  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
-  </tr>
-  <tr>
-  <td>OAuth 2 Client ID</td>
-  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
-  </tr>
-  <tr>
-  <td>OAuth 2 Client Secret</td>
-  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
-  </tr>
-  <tr>
-  <td>Response type</td>
-  <td>Json</td>
-  </tr>
-  <tr>
-  <td>Response Handler</td>
-  <td>JSONArrayHandler</td>
-  </tr>
-  <tr>
-  <td>Polling Interval</td>
-  <td>Number of seconds that Splunk will ping the Microsoft Defender ATP machine. Accepted values are in seconds.</td>
-  </tr>
-  <tr>
-  <td>Set sourcetype</td>
-  <td>Manual</td>
-  </tr>
-  <tr>
-  <td>Source type</td>
-  <td>\_json</td>
-  </tr>
-  </tr>
-  </table>
+   <table>
+   <tbody style="vertical-align:top;">
+   <tr>
+   <th>Field</th>
+   <th>Value</th>
+   </tr>
+   <tr>
+   <td>Endpoint URL</td>
+   <td>Depending on the location of your datacenter, select any of the following URL: </br></br> <strong>For EU</strong>:  <code>https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts</code><br></br><strong>For US:</strong><code>https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</code> <br><br> <strong>For UK:</strong><code>https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts</code>
+   </tr>
+   <tr>
+   <td>HTTP Method</td>
+   <td>GET</td>
+   </tr>
+   <td>Authentication Type</td>
+   <td>oauth2</td>
+   <tr>
+   <td>OAuth 2 Access token</td>
+   <td>Use the value that you generated when you enabled the SIEM integration feature. </br></br> NOTE: The access token expires after an hour. </td>
+   </tr>
+   <tr>
+   <td>OAuth 2 Refresh Token</td>
+   <td>Use the value that you generated when you enabled the <strong>SIEM integration</strong> feature.</td>
+   </tr>
+   <tr>
+   <td>OAuth 2 Token Refresh URL</td>
+   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
+   </tr>
+   <tr>
+   <td>OAuth 2 Client ID</td>
+   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
+   </tr>
+   <tr>
+   <td>OAuth 2 Client Secret</td>
+   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
+   </tr>
+   <tr>
+   <td>Response type</td>
+   <td>Json</td>
+   </tr>
+   <tr>
+   <td>Response Handler</td>
+   <td>JSONArrayHandler</td>
+   </tr>
+   <tr>
+   <td>Polling Interval</td>
+   <td>Number of seconds that Splunk will ping the Microsoft Defender ATP machine. Accepted values are in seconds.</td>
+   </tr>
+   <tr>
+   <td>Set sourcetype</td>
+   <td>Manual</td>
+   </tr>
+   <tr>
+   <td>Source type</td>
+   <td>_json</td>
+   </tr>
+   </tr>
+   </table>
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
@@ -130,12 +130,12 @@ Use the solution explorer to view alerts in Splunk.
 2. Select **New**.
 
 3. Enter the following details:
-  - Destination app: Select Search & Reporting (search)
-  - Search name: Enter a name for the query
-  - Search: Enter a query, for example:</br>
-    `source="rest://windows atp alerts"|spath|table*`
+   - Destination app: Select Search & Reporting (search)
+   - Search name: Enter a name for the query
+   - Search: Enter a query, for example:</br>
+     `source="rest://windows atp alerts"|spath|table*`
 
-    Other values are optional and can be left with the default values.
+     Other values are optional and can be left with the default values.
 4. Click **Save**. The query is saved in the list of searches.
 
 5. Find the query you saved in the list and click **Run**. The results are displayed based on your query.

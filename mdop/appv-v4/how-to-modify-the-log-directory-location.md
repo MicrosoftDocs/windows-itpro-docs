@@ -22,7 +22,7 @@ The log directory location is where the Application Virtualization (App-V) Seque
 **Important**  
 The log location directory must be located on the computer running the App-V Sequencer.
 
- 
+ 
 
 Use the following procedure to change the location of the directory where the App-V Sequencer will save associated logs.
 
@@ -41,9 +41,9 @@ Use the following procedure to change the location of the directory where the Ap
 
 [How to Configure the App-V Sequencer](how-to-configure-the-app-v-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

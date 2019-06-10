@@ -1,7 +1,7 @@
 ---
 title: About App-V 5.1 dynamic configuration
 description: You can use the dynamic configuration to customize an App-V 5.1 package for a user. Use the following information to create or edit an existing dynamic configuration file.
-author: v-madhi
+author: manikadhiman
 ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
 ms.reviewer: 
 manager: dansimp
@@ -50,10 +50,10 @@ The **PackageId** is the same value as exists in the manifest file.
 
 The body of the dynamic user configuration file can include all the app extension points defined in the manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
 
-1.	**[Applications](#applications)** 
-2.	**[Subsystems](#subsystems)**
-3.	**[UserScripts](#userscripts)**
-4.	**[ManagingAuthority](#managingauthority)**
+1.  **[Applications](#applications)** 
+2.  **[Subsystems](#subsystems)**
+3.  **[UserScripts](#userscripts)**
+4.  **[ManagingAuthority](#managingauthority)**
 
 #### Applications
 
@@ -75,7 +75,6 @@ All app-extensions contained in the manifest file within a package have an Appli
 ..
 
 </UserConfiguration>
-
 ```
 
 #### Subsystems
@@ -94,7 +93,6 @@ AppExtensions and other subsystems arranged as subnodes.
 ..
 
 </UserConfiguration>
-
 ```
 
 You can enable or disable each subsystem using the **Enabled** attribute.
@@ -107,40 +105,37 @@ Extension subsystems can be enabled and disabled independently of the content. F
 
 _**Examples:**_ 
 
--	If you define this in either the user or deployment config file, the content in the manifest gets ignored.
+- If you define this in either the user or deployment config file, the content in the manifest gets ignored.
 
-   ```XML
+  ```XML
 
-   <Shortcuts  Enabled="true"\>
+  <Shortcuts  Enabled="true"\>
 
-   <Extensions>
+  <Extensions>
 
-   ...
+  ...
 
-   </Extensions>
+  </Extensions>
 
-   </Shortcuts>
+  </Shortcuts>
+  ```
+- If you define only the following, the content in the manifest gets integrated during publishing.
 
-   ```
--	If you define only the following, the content in the manifest gets integrated during publishing.
-   
-   ```XML
+  ```XML
 
-   <Shortcuts  Enabled="true"/>
+  <Shortcuts  Enabled="true"/>
+  ```
 
-   ```
+- If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
 
--	If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
+  ```XML
 
-   ```XML
+  <Shortcuts  Enabled="true">
 
-   <Shortcuts  Enabled="true">
+     <Extensions/>
 
-       <Extensions/>
-
-   </Shortcuts>
-
-   ```
+  </Shortcuts>
+  ```
 
 _**Supported extension subsystems:**_ 
 
@@ -162,7 +157,7 @@ _**Supported extension subsystems:**_
 
         <Target>[{PackageRoot}]\Contoso\ContosoApp.EXE</Target>
 
- 
+
       <Icon>[{Windows}]\Installer\{90140000-0011-0000-0000-0000000FF1CE}\inficon.exe</Icon>
 
         <Arguments />
@@ -176,7 +171,7 @@ _**Supported extension subsystems:**_
         <Hotkey>0</Hotkey>
 
         <ShowCommand>1</ShowCommand>
- 
+
       <ApplicationId>[{PackageRoot}]\Contoso\ContosoApp.EXE</ApplicationId>
 
       </Shortcut>
@@ -186,7 +181,7 @@ _**Supported extension subsystems:**_
   <Extension Category="AppV.Shortcut">
 
     <Shortcut>
- 
+
     <File>[{AppData}]\Microsoft\Contoso\Recent\Templates.LNK</File>
 
       <Target>[{AppData}]\Microsoft\Templates</Target>
@@ -214,7 +209,6 @@ _**Supported extension subsystems:**_
  </Extensions>
 
 </Shortcuts>
-
 ```
 
 **File-Type Associates** extension subsystem associates file types with programs to open by default as well as set up the context menu. 
@@ -239,7 +233,7 @@ _**Supported extension subsystems:**_
       <ProgId>contosowordpad.DocumentMacroEnabled.12</ProgId>
 
       <PerceivedType>document</PerceivedType>
- 
+
     <ContentType>application/vnd.ms-contosowordpad.document.macroEnabled.12</ContentType>
 
       <OpenWithList>
@@ -281,7 +275,7 @@ _**Supported extension subsystems:**_
     <ProgId>
 
        <Name>contosowordpad.DocumentMacroEnabled.12</Name>
- 
+
       <DefaultIcon\>[{Windows}]\Installer\{90140000-0011-0000-0000-000000FF1CE}\contosowordpadicon.exe,15</DefaultIcon>
 
         <Description>Blah Blah Blah</Description>
@@ -297,19 +291,19 @@ _**Supported extension subsystems:**_
           <DefaultCommand>Open</DefaultCommand>
 
           <ShellCommand>
- 
+
            <ApplicationId>{e56fa627-c35f-4a01-9e79-7d36aed8225a}</ApplicationId>
 
              <Name>Edit</Name>
 
              <FriendlyName>&Edit</FriendlyName>
- 
+
            <CommandLine>"[{PackageRoot}]\Contoso\WINcontosowordpad.EXE" /vu "%1"</CommandLine>
 
           </ShellCommand>
 
           </ShellCommand>
- 
+
           <ApplicationId>{e56fa627-c35f-4a01-9e79-7d36aed8225a}</ApplicationId>
 
             <Name>Open</Name>
@@ -345,7 +339,6 @@ _**Supported extension subsystems:**_
   </Extensions>
 
   </FileTypeAssociations>
-
 ```
 
 **URL Protocols** extension subsystem controls the URL protocols integrated into the local registry of the client machine, for example, _mailto:_. 
@@ -435,7 +428,6 @@ _**Supported extension subsystems:**_
   </Extension>
 
   </URLProtocols>
-
 ```
 
 **Software Clients** extension subsystem allows the app to register as an email client, news reader, media player and makes the app visible in the Set program access and Computer defaults UI. In most cases, you should only need to enable and disable it. There is also a control to enable and disable the email client specifically if you want the other clients still enabled except for that client.
@@ -447,7 +439,6 @@ _**Supported extension subsystems:**_
   <ClientConfiguration EmailEnabled="false" />
 
 </SoftwareClients>
-
 ```
 
 **AppPaths** extension subsystem opens apps registered with an application path. For example, if contoso.exe has an apppath name of _myapp_, users can type _myapp_ from the run menu, opening contoso.exe.
@@ -481,19 +472,17 @@ _**Supported extension subsystems:**_
 </Extensions>
 
 </AppPaths>
-
 ```
 
 **COM** extensions subsystem allows an application registered to local COM servers. The mode can be:
 
--	Integration
--	Isolated 
--	Off
+-   Integration
+-   Isolated 
+-   Off
 
 ```XML
 
 <COM Mode="Isolated"/>
-
 ```
 
 **Virtual Kernel Objects**
@@ -501,7 +490,6 @@ _**Supported extension subsystems:**_
 ```XML
 
 <Objects Enabled="false" />
-
 ```
 
 **Virtual Registry** sets a registry in the virtual registry within HKCU.
@@ -525,7 +513,6 @@ _**Supported extension subsystems:**_
 <Delete>
 
 </Registry>
-
 ```
 
 **Virtual File System**
@@ -533,7 +520,6 @@ _**Supported extension subsystems:**_
 ```XML
 
     <FileSystem Enabled="true" />
-
 ```
 
 **Virtual Fonts**
@@ -541,7 +527,6 @@ _**Supported extension subsystems:**_
 ```XML
 
       <Fonts Enabled="false" />
-
 ```
 
 **Virtual Environment Variables**
@@ -565,7 +550,6 @@ _**Supported extension subsystems:**_
         </Delete>
 
         </EnvironmentVariables>
-
 ```
 
 **Virtual services**
@@ -573,7 +557,6 @@ _**Supported extension subsystems:**_
 ```XML
 
       <Services Enabled="false" />
-
 ```
 
 #### UserScripts
@@ -588,7 +571,6 @@ Use ManagingAuthority when two versions of your package co-exist on the same mac
 ```XML
 
 <ManagingAuthority TakeoverExtensionPointsFrom46="true" PackageName="032630c0-b8e2-417c-acef-76fc5297fe81" />
-
 ```
 
 ## Deployment configuration file (DeploymentConfig.xml)
@@ -643,7 +625,6 @@ The body of the dynamic deployment configuration file includes two sections:
 </MachineConfiguration>
 
 </DeploymentConfiguration>
-
 ```
 
 ### UserConfiguration
@@ -654,10 +635,10 @@ Refer to [User configuration file contents (UserConfig.xml)](#user-configuration
 
 Use the MachineConfiguration section to configure information for an entire machine; not for a specific user on the computer. For example, HKEY_LOCAL_MACHINE registry keys in the virtual registry. There are four subsections allowed in under this element:
 
-1.	**[Subsystems](#subsystems-1)**
-2.	**[ProductSourceURLOptOut](#productsourceurloptout)**
-3.	**[MachineScripts](#machinescripts)**
-4.	**[TerminateChildProcess](#terminatechildprocess)**
+1.  **[Subsystems](#subsystems-1)**
+2.  **[ProductSourceURLOptOut](#productsourceurloptout)**
+3.  **[MachineScripts](#machinescripts)**
+4.  **[TerminateChildProcess](#terminatechildprocess)**
 
 #### Subsystems
 
@@ -676,7 +657,6 @@ AppExtensions and other subsystems arranged as subnodes.
 …
 
 </MachineConfiguration>
-
 ```
 
 You can enable or disable each subsystem using the **Enabled** attribute.
@@ -703,7 +683,7 @@ This extension also makes the virtual application visible in the Set default pro
 
     <ApplicationCapabilities>
 
- 
+
    <ApplicationId>[{PackageRoot}]\LitView\LitViewBrowser.exe</ApplicationId>
 
      <Reference>
@@ -718,10 +698,10 @@ This extension also makes the virtual application visible in the Set default pro
 
     <Capabilities>
 
- 
+
    <Name>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12345</Name>
 
- 
+
    <Description>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12346</Description>
 
      <Hidden>0</Hidden>
@@ -763,7 +743,6 @@ This extension also makes the virtual application visible in the Set default pro
 </Extensions>
 
 </ApplicationCapabilities>
-
 ```
 
 _**Supported extension subsystems:**_ 
@@ -789,7 +768,6 @@ _**Supported extension subsystems:**_
 <Delete>
 
 </Registry>
-
 ```
 
 **Machine Wide Virtual Kernel Objects**
@@ -805,7 +783,6 @@ _**Supported extension subsystems:**_
  </NotIsolate>
 
 </Objects>
-
 ```
 
 #### ProductSourceURLOptOut
@@ -823,7 +800,6 @@ Use ProductSourceURLOptOut to indicate that the URL for the package can be modif
   ...
 
 </MachineConfiguration>
-
 ```
 
 #### MachineScripts
@@ -855,7 +831,6 @@ An application executable can be specified, whose child processes get terminated
   ...
 
 </MachineConfiguration>
-
 ```
 
 
@@ -890,11 +865,11 @@ ScriptRunner.exe application. The application then runs each script separately,
 along with the arguments that you specify for each script. Use only one script
 (ScriptRunner.exe) per trigger.
 
->[!NOTE]
-
->We recommended that you run the multi-script line from a command prompt
-first to make sure that all arguments are built correctly before adding them to
-the deployment configuration file.
+> [!NOTE]
+> 
+> We recommended that you run the multi-script line from a command prompt
+> first to make sure that all arguments are built correctly before adding them to
+> the deployment configuration file.
 
 ### Example script and parameter descriptions
 
@@ -926,9 +901,9 @@ Name of the event trigger for which you are running a script, such as adding a p
 
 The script launcher application that is installed as part of the App-V client installation.
 
->[!NOTE]
-
->Although ScriptRunner.exe is installed as part of the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:FilesApplication Virtualizationfolder.
+> [!NOTE]
+> 
+> Although ScriptRunner.exe is installed as part of the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:FilesApplication Virtualizationfolder.
 
 #### \<Arguments\>
 

@@ -35,7 +35,7 @@ Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version o
 
 In addition, you must deploy your databases to your organization’s computers before the included fixes will have any effect on the application issue. For more information about deploying your database, see [Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md).
 
- 
+ 
 
 ## Installing a Custom Database
 

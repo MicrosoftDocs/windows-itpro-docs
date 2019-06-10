@@ -93,7 +93,7 @@ You can use the connection group file to configure each connection group by usin
 
 - Specify runtime priorities for connection groups. To edit priority by using the App-V Management Console, select the connection group and then select **Edit**.
 
-    >[!NOTE]
+   > [!NOTE]
     >A package only requires priority if it's associated with more than one connection group.
 - Specify package precedence within the connection group.
 

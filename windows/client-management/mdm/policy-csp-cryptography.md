@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/14/2018
 ms.reviewer: 
 manager: dansimp
@@ -19,14 +19,14 @@ manager: dansimp
 ## Cryptography policies  
 
 
-* [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
-* [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
-* [Cryptography/Microsoft Surface Hub](#Cryptography-policies-supported-by-Microsoft-Surface-Hub)
+* [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)  
+* [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
+* [Cryptography/Microsoft Surface Hub](#cryptography-policies-supported-by-microsoft-surface-hub)
 <hr/>
 
 <!--Policy-->
 
-# Cryptography/AllowFipsAlgorithmPolicy
+## Cryptography/AllowFipsAlgorithmPolicy
 
 <!--SupportedSKUs-->
 
@@ -68,7 +68,7 @@ The following list shows the supported values:
 
 <!--Policy-->
 
-# Cryptography/TLSCipherSuites
+## Cryptography/TLSCipherSuites
 
 <!--SupportedSKUs-->
 |Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
@@ -103,11 +103,11 @@ Footnote:
 <!--/Policies-->
 
 <!--StartSurfaceHub-->
-#  Cryptography policies supported by Microsoft Surface Hub  
+##  Cryptography policies supported by Microsoft Surface Hub  
 
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
--   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
-<!--EndSurfaceHub-->
+- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
+- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
+  <!--EndSurfaceHub-->
 
 
 

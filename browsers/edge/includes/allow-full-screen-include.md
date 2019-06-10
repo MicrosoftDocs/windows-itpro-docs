@@ -18,10 +18,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
-|Enabled<br>**(default)** |1 |1 |Allowed | |
+|       Group Policy       | MDM | Registry | Description |                 Most restricted                  |
+|--------------------------|:---:|:--------:|-------------|:------------------------------------------------:|
+|         Disabled         |  0  |    0     |  Prevented  | ![Most restricted value](/images/check-gn.png) |
+| Enabled<br>**(default)** |  1  |    1     |   Allowed   |                                                  |
+
 ---
 
 ### ADMX info and settings

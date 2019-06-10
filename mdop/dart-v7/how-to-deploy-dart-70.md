@@ -22,7 +22,7 @@ This topic provides instructions to deploy Microsoft Diagnostics and Recovery To
 **Important**  
 Before you install DaRT, ensure that the computer meets the minimum system requirements listed in [DaRT 7.0 Supported Configurations](dart-70-supported-configurations-dart-7.md).
 
- 
+ 
 
 **To install DaRT on an administrator computer**
 
@@ -77,16 +77,16 @@ Before you install DaRT, ensure that the computer meets the minimum system requi
 **Note**  
 You can add /qn or /qb to any of the DaRT installation command prompt options to perform a silent installation.
 
- 
+ 
 
 ## Related topics
 
 
 [Deploying DaRT 7.0 to Administrator Computers](deploying-dart-70-to-administrator-computers-dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

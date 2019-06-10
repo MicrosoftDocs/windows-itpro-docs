@@ -34,7 +34,7 @@ MBAM provides a custom control panel, called BitLocker Encryption Options, that 
 **Note**  
 This customized control panel does not replace the default Windows BitLocker control panel.
 
- 
+ 
 
 [Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel](understanding-the-bitlocker-encryption-options-and-bitlocker-drive-encryption-items-in-control-panel.md)
 
@@ -47,9 +47,9 @@ This customized control panel does not replace the default Windows BitLocker con
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
- 
+ 
 
- 
+ 
 
 
 

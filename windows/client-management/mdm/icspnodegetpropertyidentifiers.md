@@ -8,7 +8,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -29,7 +29,7 @@ HRESULT GetPropertyIdentifiers([out] ULONG* pulCount,
 <p style="margin-left: 25px">The number of non-standard properties to return.</p>
 
 <a href="" id="pguidproperties"></a>*pguidProperties*  
-<p style="margin-left: 25px">The array of property GUIDs to return. This array must be allocated with `CoTaskMemAlloc`.</p>
+<p style="margin-left: 25px">The array of property GUIDs to return. This array must be allocated with <code>CoTaskMemAlloc</code>.</p>
 
 ## Return Value
 
@@ -47,7 +47,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

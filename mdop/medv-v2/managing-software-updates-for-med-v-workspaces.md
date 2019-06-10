@@ -22,7 +22,7 @@ You have several different options available to you for providing software updat
 **Note**  
 For information about how to specify the configuration settings that define how MED-V receives automatic updates, see [Managing Automatic Updates for MED-V Workspaces](managing-automatic-updates-for-med-v-workspaces.md).
 
- 
+ 
 
 **Updating Software in a MED-V Workspace**
 
@@ -45,7 +45,7 @@ For information about how to specify the configuration settings that define how 
     **Important**  
     We do not recommend this method of managing software updates. In addition, if you update software in the core image and redeploy the MED-V workspace back out to your enterprise, first time setup must run again, and any data saved in the virtual machine is lost.
 
-     
+     
 
 ## Related topics
 
@@ -56,9 +56,9 @@ For information about how to specify the configuration settings that define how 
 
 [How to Publish and Unpublish an Application on the MED-V Workspace](how-to-publish-and-unpublish-an-application-on-the-med-v-workspace.md)
 
- 
+ 
 
- 
+ 
 
 
 

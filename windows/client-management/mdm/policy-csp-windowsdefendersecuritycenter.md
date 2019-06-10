@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 08/09/2018
 ms.reviewer: 
 manager: dansimp
@@ -436,7 +436,7 @@ Valid values:
 <!--Description-->
 Added in Windows 10, version 1709. Use this policy if you want Windows Defender Security Center to only display notifications which are considered critical. If you disable or do not configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
 
-> [!Note]  
+> [!NOTE]
 > If Suppress notification is enabled then users will not see critical or non-critical messages.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.

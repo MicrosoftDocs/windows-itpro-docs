@@ -1,7 +1,7 @@
 ---
 title: About the Connection Group File
 description: About the Connection Group File
-author: v-madhi
+author: manikadhiman
 ms.assetid: bfeb6013-a7ca-4e36-9fe3-229702e83f0d
 ms.reviewer: 
 manager: dansimp
@@ -47,12 +47,12 @@ ms.date: 06/16/2016
 </tr>
 <tr class="odd">
 <td align="left"><p>Example file path</p></td>
-<td align="left"><p>%APPDATA%\Microsoft\AppV\Client\Catalog\PackageGroups\{6CCC7575-162E-4152-9407-ED411DA138F4}\{4D1E16E1-8EF8-41ED-92D5-8910A8527F96}.</p></td>
+<td align="left"><p>%APPDATA%\Microsoft\AppV\Client\Catalog\PackageGroups{6CCC7575-162E-4152-9407-ED411DA138F4}{4D1E16E1-8EF8-41ED-92D5-8910A8527F96}.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-define-cg-5-0sp3"></a>Structure of the connection group XML file
 
@@ -87,7 +87,7 @@ The following table describes the parameters in the XML file that define the con
 <td align="left"><p>Schema name</p></td>
 <td align="left"><p>Name of the schema.</p>
 <p><strong>Applicable starting in App-V 5.0 SP3</strong>: If you want to use the new “optional packages” and “use any version” features that are described in this table, you must specify the following schema in the XML file:</p>
-<p><code>xmlns=&quot;http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot;</code></p></td>
+<p><code>xmlns=&quot;<a href="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AppConnectionGroupId</p></td>
@@ -112,7 +112,7 @@ The following table describes the parameters in the XML file that define the con
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-params-define-pkgs-incg"></a>Parameters that define the packages in the connection group
 
@@ -146,24 +146,66 @@ In the &lt;Packages&gt; section of the connection group XML file, you list the m
 <li><p><strong>“true”</strong> – package is optional in the connection group</p></li>
 <li><p><strong>“false”</strong> – package is required in the connection group</p></li>
 </ul>
-<p>See [How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md).</p></td>
+<p>See <a href="how-to-use-optional-packages-in-connection-groups.md" data-raw-source="[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md)">How to Use Optional Packages in Connection Groups</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-50sp3-exp-cg-xml"></a>App-V 5.0 SP3 example connection group XML file
 
 The following example connection group XML file shows examples of the fields in the previous tables and highlights the items that are new for App-V 5.0 SP3.
 
-`<?xml version="1.0" encoding="UTF-16"?>``<appv:AppConnectionGroup``xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"``xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"``  AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"``  VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"``  Priority="0"``  DisplayName="Sample Connection Group">``  <appv:Packages>``    <appv:Package``      PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"``      VersionId="*"``      IsOptional=”true”``    />``    <appv:Package``      PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"``      VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"``      IsOptional=”false”``    />``  </appv:Packages>`
+```XML
+<?xml version="1.0" encoding="UTF-16"?>
+<appv:AppConnectionGroup 
+   xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+   xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
+   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"  
+   Priority="0"  
+   DisplayName="Sample Connection Group">
+   <appv:Packages>
+      <appv:Package      
+         PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"
+         VersionId="*"
+         IsOptional=”true”
+      />    
+     <appv:Package
+        PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"
+        VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"
+        IsOptional="false"
+     />  
+   </appv:Packages>
+</appv:AppConnectionGroup>
+```
 
 ### <a href="" id="bkmk-50thru50sp2-exp-cg-xm"></a>App-V 5.0 through App-V 5.0 SP2 example connection group XML file
 
 The following example connection group XML file applies to App-V 5.0 through App-V 5.0 SP2. It shows examples of the fields in the previous table, but it excludes the changes described above for App-V 5.0 SP3.
 
-`<?xml version="1.0" encoding="UTF-16"?>``<appv:AppConnectionGroup``xmlns="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"``xmlns:appv="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"``  AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"``  VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"``  Priority="0"``  DisplayName="Sample Connection Group">``  <appv:Packages>``    <appv:Package``      PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"``      VersionId="C7DF4F63-5288-439C-ACEF-EF06BF401EC5"``    />``    <appv:Package``      PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"``      VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"``    />``  </appv:Packages>`
+```XML
+<?xml version="1.0" encoding="UTF-16"?>
+<appv:AppConnectionGroup
+   xmlns="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+   xmlns:appv="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
+   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"
+   Priority="0"
+   DisplayName="Sample Connection Group">
+   <appv:Packages>
+      <appv:Package``      
+         PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"
+         VersionId="C7DF4F63-5288-439C-ACEF-EF06BF401EC5"
+      />
+      <appv:Package
+         PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"
+         VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"
+      />
+   </appv:Packages>
+</appv:AppConnectionGroup
+ ```
 
 ## <a href="" id="bkmk-config-pkg-priority-incg"></a>Configuring the priority of packages in a connection group
 
@@ -179,7 +221,7 @@ You can use the connection group file to configure each connection group by usin
     **Note**  
     Priority is required only if the package is associated with more than one connection group.
 
-     
+     
 
 -   Specify package precedence within the connection group.
 
@@ -274,7 +316,7 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -286,9 +328,9 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
@@ -600,7 +600,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 </desktop:Extension>
 ```
 
-> [!Note]  
+> [!NOTE]
 > This policy only works on modern apps.
 
 <!--/Description-->

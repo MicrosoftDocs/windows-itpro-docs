@@ -46,7 +46,7 @@ A packed image can be unpacked to the local repository by extracting it. It then
     **Note**  
     The downloaded image will not appear in the **Local Images** pane until you refresh the page. Click Refresh to see the downloaded image in the **Local Images** pane.
 
-     
+     
 
 ## Related topics
 
@@ -57,9 +57,9 @@ A packed image can be unpacked to the local repository by extracting it. It then
 
 [How to Upload a MED-V Image to the Server](how-to-upload-a-med-v-image-to-the-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

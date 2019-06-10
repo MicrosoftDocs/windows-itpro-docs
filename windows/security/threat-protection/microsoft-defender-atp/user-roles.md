@@ -88,6 +88,6 @@ After creating roles, you'll need to create a machine group and provide access t
 2.	Click the drop-down button and select **Delete role**.
 
 
-##Related topic
+## Related topic
 - [User basic permissions to access the portal](basic-permissions.md)
 - [Create and manage machine groups](machine-groups.md)

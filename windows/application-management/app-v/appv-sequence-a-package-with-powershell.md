@@ -20,10 +20,10 @@ ms.author: lomayor
 
 Use the following procedure to create a new App-V package using Windows PowerShell.
 
-> [!NOTE]   
+> [!NOTE]
 > Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md).
 
- 
+ 
 **To create a new virtual application by using Windows PowerShell**
 
 1.  Install the App-V sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
@@ -65,8 +65,8 @@ The following list displays additional optional parameters that can be used with
 
 In Windows 10, version 1703, running the new-appvsequencerpackage or the update-appvsequencepackage cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. 
 
->[!IMPORTANT]
->If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
+> [!IMPORTANT]
+> If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
 
 ## Related topics
 

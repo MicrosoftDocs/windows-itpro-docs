@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/14/2018
 ms.reviewer: 
 manager: dansimp
@@ -88,7 +88,7 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
 <!--Description-->
 Added in Windows 10, version 1803. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
@@ -134,7 +134,7 @@ Added in Windows 10, version 1803. List of exceptions to the blocked website URL
 <!--Description-->
 Added in Windows 10, version 1803. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
@@ -180,7 +180,7 @@ Added in Windows 10, version 1803. List of blocked website URLs (with wildcard s
 <!--Description-->
 Added in Windows 10, version 1803. Configures the default URL kiosk browsers to navigate on launch and restart.
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
@@ -269,7 +269,7 @@ Shows the Kiosk Browser's end session button. When the policy is enabled, the Ki
 <!--Description-->
 Added in Windows 10, version 1803. Enable/disable kiosk browser's home button.
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
@@ -315,7 +315,7 @@ Added in Windows 10, version 1803. Enable/disable kiosk browser's home button.
 <!--Description-->
 Added in Windows 10, version 1803. Enable/disable kiosk browser's navigation buttons (forward/back).
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
@@ -363,7 +363,7 @@ Added in Windows 10, version 1803. Amount of time in minutes the session is idle
 
 The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
 
-> [!Note]  
+> [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->

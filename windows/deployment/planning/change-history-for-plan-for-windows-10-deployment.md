@@ -25,6 +25,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 - [Windows 10 Enterprise - FAQ for IT Professionals](windows-10-enterprise-faq-itpro.md)
 
 ## January 2017
+
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Windows 10 Infrastructure Requirements](windows-10-infrastructure-requirements.md) | Added link for Windows Server 2008 R2 and Windows 7 activation and a link to Windows Server 2016 Volume Activation Tips | 
@@ -64,7 +65,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) | New         |
- 
+
 
 ## November 2015
 
@@ -75,7 +76,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Windows Update for Business](../update/waas-manage-updates-wufb.md) (multiple topics)                 | New         |
 | [Windows To Go: feature overview](windows-to-go-overview.md) (multiple topics) | Updated     |
 
- 
+
 
 ## Related topics
 
@@ -85,9 +86,9 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 [Change history for Deploy Windows 10](../change-history-for-deploy-windows-10.md)
 
 
- 
 
- 
+
+
 
 
 

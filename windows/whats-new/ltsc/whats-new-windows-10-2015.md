@@ -244,10 +244,10 @@ Enterprises have the following identity and management choices.
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
+ > **Note**  
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
- 
+ 
 ### Device lockdown
 
 

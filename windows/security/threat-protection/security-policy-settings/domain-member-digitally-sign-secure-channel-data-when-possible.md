@@ -55,11 +55,11 @@ When a device joins a domain, a machine account is created. After joining the do
 
 ### Best practices
 
--   Set [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) to **Enabled**.
--   Set [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) to **Enabled**.
--   Set **Domain member: Digitally sign secure channel data (when possible)** to **Enabled**.
->**Note:**  You can enable the other two policy settings, Domain member: [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) and **Domain member: Digitally sign secure channel data (when possible)**, on all devices joined to the domain that support these policy settings without affecting earlier-version clients and applications.
- 
+- Set [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) to **Enabled**.
+- Set [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) to **Enabled**.
+- Set **Domain member: Digitally sign secure channel data (when possible)** to **Enabled**.
+  >**Note:**  You can enable the other two policy settings, Domain member: [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) and **Domain member: Digitally sign secure channel data (when possible)**, on all devices joined to the domain that support these policy settings without affecting earlier-version clients and applications.
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -76,7 +76,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

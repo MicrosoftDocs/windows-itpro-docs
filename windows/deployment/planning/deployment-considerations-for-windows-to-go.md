@@ -29,7 +29,7 @@ From the start, Windows To Go was designed to minimize differences between the u
 **Note**  
 Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
 
- 
+ 
 
 The following sections discuss the boot experience, deployment methods, and tools that you can use with Windows To Go.
 
@@ -65,7 +65,7 @@ When the Windows To Go workspace is going to be used first on an off-premises co
 **Tip**  
 Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](https://go.microsoft.com/fwlink/p/?LinkId=619076).
 
- 
+ 
 
 DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](https://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
@@ -80,7 +80,7 @@ The simplest way to provision a Windows To Go drive is to use the Windows To Go 
 **Tip**  
 When you create your Windows To Go image use sysprep /generalize, just as you do when you deploy Windows 10 to a standard PC. In fact, if appropriate, use the same image for both deployments.
 
- 
+ 
 
 **Driver considerations**
 
@@ -162,28 +162,28 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 <td align="left"><p>Marvell</p></td>
 <td align="left"><p>Yukon 88E8001/8003/8010 PCI Gigabit Ethernet</p></td>
 <td align="left"><p>pci\ven_11ab&amp;dev_4320&amp;subsys_811a1043</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619080)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619082)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619080" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619080)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619082" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619082)">64-bit driver</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Marvell</p></td>
 <td align="left"><p>Libertas 802.11b/g Wireless</p></td>
 <td align="left"><p>pci\ven_11ab&amp;dev_1faa&amp;subsys_6b001385&amp;rev_03</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619128)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619129)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619128" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619128)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619129" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619129)">64-bit driver</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR6004 Wireless LAN Adapter</p></td>
 <td align="left"><p>sd\vid_0271&amp;pid_0401</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619086)</p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619086" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619086)">32-bit driver</a></p>
 <p>64-bit driver not available</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR5BWB222 Wireless Network Adapter</p></td>
 <td align="left"><p>pci\ven_168c&amp;dev_0034&amp;subsys_20031a56</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619348)</p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619348" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619348)">32-bit driver</a></p>
 <p>64-bit driver not available</p></td>
 </tr>
 <tr class="odd">
@@ -196,41 +196,41 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR5005G Wireless Network Adapter</p></td>
 <td align="left"><p>pci\ven_168c&amp;dev_001a&amp;subsys_04181468&amp;rev_01</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619349)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619091)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619349" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619349)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619091" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619091)">64-bit driver</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Wireless-G PCI Adapter</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_00551737&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619092)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619093)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619092" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619092)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619093" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619093)">64-bit driver</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Turbo Wireless LAN Card</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_25611814&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619094)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619095)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619094" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619094)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619095" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619095)">64-bit driver</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Wireless LAN Card V1</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3a711186&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619097)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619098)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619097" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619097)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619098" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619098)">64-bit driver</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>D-Link AirPlus G DWL-G510 Wireless PCI Adapter(rev.C)</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3c091186&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619099)</p>
-<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619100)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619099" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619099)">32-bit driver</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619100" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619100)">64-bit driver</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=619079).
 
@@ -253,7 +253,7 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
     **Important**  
     For the host-PC to resume correctly when hibernation is enabled the Windows To Go workspace must continue to use the same USB port.
 
-     
+     
 
 -   **Disallow standby sleep states (S1-S3) when starting from a Windows To Go workspace**
 
@@ -268,7 +268,7 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
     **Important**  
     Enabling this policy setting will cause PCs running Windows to attempt to boot from any USB device that is inserted into the PC before it is started.
 
-     
+     
 
 ## <a href="" id="wtg-bootusb"></a>Supporting booting from USB
 
@@ -278,7 +278,7 @@ The biggest hurdle for a user wanting to use Windows To Go is configuring their 
 **Note**  
 Enabling a system to always boot from USB first has implications that you should consider. For example, a USB device that includes malware could be booted inadvertently to compromise the system, or multiple USB drives could be plugged in to cause a boot conflict. For this reason, the Windows To Go startup options are disabled by default. In addition, administrator privileges are required to configure Windows To Go startup options.
 
- 
+ 
 
 If you are going to be using a Windows 7 computer as a host-PC, see the wiki article [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkID=618951).
 
@@ -311,7 +311,7 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs th
     **Tip**  
     If your computer is part of a domain, the Group Policy setting can be used to enable the startup options instead of the dialog.
 
-     
+     
 
 3.  Click **Save Changes**. If the User Account Control dialog box is displayed, confirm that the action it displays is what you want, and then click **Yes**.
 
@@ -330,9 +330,9 @@ If you choose to not use the Windows To Go startup options or are using a PC run
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

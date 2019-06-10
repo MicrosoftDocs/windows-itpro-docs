@@ -1,7 +1,7 @@
 ---
 title: App-V 5.0 Supported Configurations
 description: App-V 5.0 Supported Configurations
-author: v-madhi
+author: manikadhiman
 ms.assetid: 3787ff63-7ce7-45a8-8f01-81b4b6dced34
 ms.reviewer: 
 manager: dansimp
@@ -19,7 +19,7 @@ ms.date: 08/30/2016
 
 This topic specifies the requirements that are necessary to install and run Microsoft Application Virtualization (App-V) 5.0 in your environment.
 
-**Important**  
+**Important**  
 **The supported configurations in this article apply only to App-V 5.0**. For supported configurations that apply to App-V 5.0 Service Packs, see the following web pages:
 
 -   [What's new in App-V 5.0 SP1](whats-new-in-app-v-50-sp1.md)
@@ -28,24 +28,24 @@ This topic specifies the requirements that are necessary to install and run Micr
 
 -   [App-V 5.0 SP3 Supported Configurations](app-v-50-sp3-supported-configurations.md)
 
- 
+
 
 ## <a href="" id="---------app-v-5-0-server-system-requirements"></a> App-V 5.0 server system requirements
 
 
-**Important**  
+**Important**  
 The App-V 5.0 server does not support the following scenarios:
 
- 
+
 
 -   Deployment to a computer that runs Microsoft Windows Server Core.
 
 -   Deployment to a computer that runs a previous version of App-V 5.0 server components.
 
-    **Note**  
-    You can install App-V 5.0 side-by-side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V 5.0 side-by-side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
+    **Note**  
+    You can install App-V 5.0 side-by-side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V 5.0 side-by-side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
 
-     
+
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 
@@ -59,10 +59,10 @@ The App-V 5.0 server does not support the following scenarios:
 
 The following table lists the operating systems that are supported for the App-V 5.0 management server installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -81,19 +81,19 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
+<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"><p>SP1 and higher</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p></p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -101,12 +101,12 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
 
-**Important**  
+
+**Important**  
 Deployment of the management server role to a computer with Remote Desktop Sharing (RDS) enabled is not supported.
 
- 
+
 
 ### <a href="" id="management-server-hardware-requirements-"></a>Management Server hardware requirements
 
@@ -120,10 +120,10 @@ Deployment of the management server role to a computer with Remote Desktop Shari
 
 The following table lists the operating systems that are supported for the App-V 5.0 publishing server installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -142,19 +142,19 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
+<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p></p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -162,7 +162,7 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="publishing-server-hardware-requirements-"></a>Publishing Server hardware requirements
 
@@ -176,10 +176,10 @@ Microsoft provides support for the current service pack and, in some cases, the 
 
 The following table lists the operating systems that are supported for the App-V 5.0 reporting server installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -198,19 +198,19 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
+<td align="left"><p>Microsoft Windows Server 2008 (Standard, Enterprise, Datacenter, or Web Server)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p></p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 (Standard, Datacenter)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -218,7 +218,7 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="reporting-server-hardware-requirements-"></a>Reporting Server hardware requirements
 
@@ -228,9 +228,9 @@ Microsoft provides support for the current service pack and, in some cases, the 
 
 -   Disk space—200 MB available hard disk space
 
-### <a href="" id="sql-server-database-requirements-"></a>SQL Server database requirements
+### <a href="" id="sql-server-database-requirements-"></a>SQL Server database requirements
 
-The following table lists the SQL Server versions that are supported for the App-V 5.0 database and server installation.
+The following table lists the SQL Server versions that are supported for the App-V 5.0 database and server installation.
 
 <table>
 <colgroup>
@@ -252,7 +252,7 @@ The following table lists the SQL Server versions that are supported for the Ap
 <tbody>
 <tr class="odd">
 <td align="left"><p>Management / Reporting</p></td>
-<td align="left"><p>Microsoft SQL Server 2008</p>
+<td align="left"><p>Microsoft SQL Server 2008</p>
 <p>(Standard, Enterprise, Datacenter, or the Developer Edition with the following feature: <strong>Database Engine Services</strong>.)</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
@@ -260,7 +260,7 @@ The following table lists the SQL Server versions that are supported for the Ap
 </tr>
 <tr class="even">
 <td align="left"><p>Management / Reporting</p></td>
-<td align="left"><p>Microsoft SQL Server 2008 </p>
+<td align="left"><p>Microsoft SQL Server 2008 </p>
 <p>(Standard, Enterprise, Datacenter, or the Developer Edition with the following feature: <strong>Database Engine Services</strong>.)</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"><p>SP2</p></td>
@@ -268,7 +268,7 @@ The following table lists the SQL Server versions that are supported for the Ap
 </tr>
 <tr class="odd">
 <td align="left"><p>Management / Reporting</p></td>
-<td align="left"><p>Microsoft SQL Server 2012</p>
+<td align="left"><p>Microsoft SQL Server 2012</p>
 <p>(Standard, Enterprise, Datacenter, or the Developer Edition with the following feature: <strong>Database Engine Services</strong>.)</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
@@ -277,17 +277,17 @@ The following table lists the SQL Server versions that are supported for the Ap
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-client-supp-cfgs"></a> App-V 5.0 client system requirements
 
 
 The following table lists the operating systems that are supported for the App-V 5.0 client installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -304,22 +304,21 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 7</p></td>
+<td align="left"><p>Microsoft Windows 7</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows 8</p></td>
+<td align="left"><p>Microsoft Windows 8</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>Windows 8.1 is only supported by App-V 5.0 SP2</p>
+<strong>Important</strong><br/><p>Windows 8.1 is only supported by App-V 5.0 SP2</p>
 </div>
 <div>
- 
+
 </div>
 <p>Windows 8.1</p></td>
 <td align="left"><p></p></td>
@@ -328,13 +327,13 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+
 
 The following App-V client installation scenarios are not supported, except as noted:
 
 -   Computers that run Windows Server
 
--   Computers that run App-V 4.6 SP1 or earlier versions
+-   Computers that run App-V 4.6 SP1 or earlier versions
 
 -   The App-V 5.0 Remote Desktop services client is supported only for RDS-enabled servers
 
@@ -353,34 +352,34 @@ The following list displays the supported hardware configuration for the App-V 5
 
 The following table lists the operating systems that are supported for App-V 5.0 Remote Desktop client installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 Operating system
 Edition
 Service pack
-Microsoft Windows Server 2008
+Microsoft Windows Server 2008
 
 R2
 
 SP1
 
-Microsoft Windows Server 2012
+Microsoft Windows Server 2012
 
-**Important**  
-Windows Server 2012 R2 is only supported by App-V 5.0 SP2
+**Important**  
+Windows Server 2012 R2 is only supported by App-V 5.0 SP2
 
- 
 
-Microsoft Windows Server 2012 (Standard, Datacenter)
+
+Microsoft Windows Server 2012 (Standard, Datacenter)
 
 R2
 
 64-bit
 
- 
+
 
 ### <a href="" id="remote-desktop-client-hardware-requirements-"></a>Remote Desktop client hardware requirements
 
@@ -397,10 +396,10 @@ The following list displays the supported hardware configuration for the App-V 5
 
 The following table lists the operating systems that are supported for App-V 5.0 Sequencer installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -419,24 +418,23 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 7</p></td>
+<td align="left"><p>Microsoft Windows 7</p></td>
 <td align="left"></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows 8</p></td>
+<td align="left"><p>Microsoft Windows 8</p></td>
 <td align="left"></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>Windows 8.1 is only supported by App-V 5.0 SP2</p>
+<strong>Important</strong><br/><p>Windows 8.1 is only supported by App-V 5.0 SP2</p>
 </div>
 <div>
- 
+
 </div>
 <p>Windows 8.1</p></td>
 <td align="left"></td>
@@ -444,26 +442,25 @@ Microsoft provides support for the current service pack and, in some cases, the 
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008</p></td>
+<td align="left"><p>Microsoft Windows Server 2008</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p>Microsoft Windows Server 2012</p></td>
 <td align="left"></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>
 <tr class="even">
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>Windows Server 2012 R2 is only supported by App-V 5.0 SP2</p>
+<strong>Important</strong><br/><p>Windows Server 2012 R2 is only supported by App-V 5.0 SP2</p>
 </div>
 <div>
- 
+
 </div>
-<p>Microsoft Windows Server 2012</p></td>
+<p>Microsoft Windows Server 2012</p></td>
 <td align="left"><p>R2</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -471,12 +468,12 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-supp-ver-sccm"></a>Supported versions of System Center Configuration Manager
 
 
-You can use Microsoft System Center 2012 Configuration Manager or System Center 2012 R2 Configuration Manager to manage App-V virtual applications, reporting, and other functions. The following table lists the supported versions of Configuration Manager for each applicable version of App-V.
+You can use Microsoft System Center 2012 Configuration Manager or System Center 2012 R2 Configuration Manager to manage App-V virtual applications, reporting, and other functions. The following table lists the supported versions of Configuration Manager for each applicable version of App-V.
 
 <table>
 <colgroup>
@@ -491,7 +488,7 @@ You can use Microsoft System Center 2012 Configuration Manager or System Cen
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
+<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><ul>
 <li><p>App-V 5.0</p></li>
 <li><p>App-V 5.0 SP1</p></li>
@@ -509,7 +506,7 @@ You can use Microsoft System Center 2012 Configuration Manager or System Cen
 </tbody>
 </table>
 
- 
+
 
 For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
@@ -525,9 +522,9 @@ For more information about how Configuration Manager integrates with App-V, see 
 
 [App-V 5.0 Prerequisites](app-v-50-prerequisites.md)
 
- 
 
- 
+
+
 
 
 

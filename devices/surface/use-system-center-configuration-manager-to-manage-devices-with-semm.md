@@ -33,10 +33,10 @@ Before you begin the process outlined in this article, it is expected that you a
 * [System Center Configuration Manager application deployment](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications)
 * Certificate management
 
->[!Note]
->You will also need access to the certificate that you intend to use to secure SEMM. For details about the requirements for this certificate, see [Surface Enterprise Management Mode certificate requirements](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements).
-
->It is very important that this certificate be kept in a safe location and properly backed up. If this certificate becomes lost or unusable, it is not possible to reset Surface UEFI, change managed Surface UEFI settings, or remove SEMM from an enrolled Surface device.
+> [!Note]
+> You will also need access to the certificate that you intend to use to secure SEMM. For details about the requirements for this certificate, see [Surface Enterprise Management Mode certificate requirements](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements).
+> 
+> It is very important that this certificate be kept in a safe location and properly backed up. If this certificate becomes lost or unusable, it is not possible to reset Surface UEFI, change managed Surface UEFI settings, or remove SEMM from an enrolled Surface device.
 
 #### Download Microsoft Surface UEFI Manager
 
@@ -395,7 +395,7 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
 
           - Click **Microsoft Surface UEFI Manager** from the list of **Available Applications** and the MSI deployment type, and then click **OK** to close the **Specify Required Application** window.
           
-        *	Keep the **Auto Install** check box selected if you want Microsoft Surface UEFI Manager installed automatically on devices when you attempt to enable SEMM with the Configuration Manager scripts. Click **OK** to close the **Add Dependency** window.
+         *   Keep the **Auto Install** check box selected if you want Microsoft Surface UEFI Manager installed automatically on devices when you attempt to enable SEMM with the Configuration Manager scripts. Click **OK** to close the **Add Dependency** window.
 
      * Click **Next** to proceed.
      
@@ -405,11 +405,11 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
      
      * **Completion** – Confirmation of the deployment type creation is displayed when the process is complete. Click **Close** to finish the Create Deployment Type Wizard.
 
-   * **Summary** – The information that you entered throughout the Create Application Wizard is displayed. Click **Next** to create the application.
+   - **Summary** – The information that you entered throughout the Create Application Wizard is displayed. Click **Next** to create the application.
 
-   * **Progress** – A progress bar and status as the application is added to the Software Library is displayed on this page.
+   - **Progress** – A progress bar and status as the application is added to the Software Library is displayed on this page.
 
-   * **Completion** – Confirmation of the successful application creation is displayed when the application creation process is complete. Click **Close** to finish the Create Application Wizard.
+   - **Completion** – Confirmation of the successful application creation is displayed when the application creation process is complete. Click **Close** to finish the Create Application Wizard.
 
 After the script application is available in the Software Library of Configuration Manager, you can distribute and deploy SEMM using the scripts you prepared to devices or collections. If you have configured the Microsoft Surface UEFI Manager assemblies as a dependency that will be automatically installed, you can deploy SEMM in a single step. If you have not configured the assemblies as a dependency, they must be installed on the devices you intend to manage before you enable SEMM.
 
@@ -419,11 +419,11 @@ Alternatively, you can configure the application installation to reboot automati
 
 Removal of SEMM from a device deployed with Configuration Manager using these scripts is as easy as uninstalling the application with Configuration Manager. This action starts the ResetSEMM.ps1 script and properly unenrolls the device with the same certificate file that was used during the deployment of SEMM.
 
->[!NOTE]
->Microsoft Surface recommends that you create reset packages only when you need to unenroll a device. These reset packages are typically valid for only one device, identified by its serial number. You can, however, create a universal reset package that would work for any device enrolled in SEMM with this certificate.
-
->We strongly recommend that you protect your universal reset package as carefully as the certificate you used to enroll devices in SEMM. Please remember that – just like the certificate itself – this universal reset package can be used to unenroll any of your organization’s Surface devices from SEMM.
-
->When you install a reset package, the Lowest Supported Value (LSV) is reset to a value of 1. You can reenroll a device by using an existing configuration package – the device will prompt for the certificate thumbprint before ownership is taken.
-
->For this reason, the reenrollment of a device in SEMM would require a new package to be created and installed on that device. Because this action is a new enrollment and not a change in configuration on a device already enrolled in SEMM, the device will prompt for the certificate thumbprint before ownership is taken.
+> [!NOTE]
+> Microsoft Surface recommends that you create reset packages only when you need to unenroll a device. These reset packages are typically valid for only one device, identified by its serial number. You can, however, create a universal reset package that would work for any device enrolled in SEMM with this certificate.
+> 
+> We strongly recommend that you protect your universal reset package as carefully as the certificate you used to enroll devices in SEMM. Please remember that – just like the certificate itself – this universal reset package can be used to unenroll any of your organization’s Surface devices from SEMM.
+> 
+> When you install a reset package, the Lowest Supported Value (LSV) is reset to a value of 1. You can reenroll a device by using an existing configuration package – the device will prompt for the certificate thumbprint before ownership is taken.
+> 
+> For this reason, the reenrollment of a device in SEMM would require a new package to be created and installed on that device. Because this action is a new enrollment and not a change in configuration on a device already enrolled in SEMM, the device will prompt for the certificate thumbprint before ownership is taken.

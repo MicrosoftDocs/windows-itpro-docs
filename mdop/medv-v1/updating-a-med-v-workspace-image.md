@@ -67,7 +67,7 @@ An image can be updated in one of the following ways:
     **Note**  
     If you name the image a different name than the existing version, a new image will be created rather than a new version of the existing image.
 
-     
+     
 
 6.  Upload the new version to the server, push it to the image pre-stage folder, or distribute it via a deployment package.
 
@@ -82,9 +82,9 @@ An image can be updated in one of the following ways:
 
 [How to Configure the Image Web Distribution Server](how-to-configure-the-image-web-distribution-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

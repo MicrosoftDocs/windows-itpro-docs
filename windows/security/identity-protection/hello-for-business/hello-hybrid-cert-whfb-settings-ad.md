@@ -64,10 +64,10 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 > [!div class="checklist"]
 > * Create the KeyCredential Admins Security group (optional)
 > * Create the Windows Hello for Business Users group
-
->[!div class="step-by-step"]
-[< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[Configure Azure AD Connect >](hello-hybrid-cert-whfb-settings-dir-sync.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
+> [Configure Azure AD Connect >](hello-hybrid-cert-whfb-settings-dir-sync.md)
 
 <br><br>
 

@@ -1,7 +1,7 @@
 ---
 title: Stand-Alone Delivery Scenario for Application Virtualization Clients
 description: Stand-Alone Delivery Scenario for Application Virtualization Clients
-author: v-madhi
+author: manikadhiman
 ms.assetid: 7545b468-f58a-4504-a6d5-3c2d303731c4
 ms.reviewer: 
 manager: dansimp
@@ -22,7 +22,7 @@ The Stand-Alone Delivery Scenario enables you to realize the benefits of Microso
 **Note**  
 It is assumed that you have already installed the Application Virtualization Sequencer in preparation for the stand-alone scenario. For more information, see [How to Install the Application Virtualization Sequencer](how-to-install-the-application-virtualization-sequencer.md).
 
- 
+ 
 
 ## In This Section
 
@@ -48,9 +48,9 @@ Provides command-line procedures for publishing an application package, using ei
 
 [How to Install the Application Virtualization Sequencer](how-to-install-the-application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

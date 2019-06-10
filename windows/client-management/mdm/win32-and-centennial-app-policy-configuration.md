@@ -5,7 +5,7 @@ ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ms.reviewer: 
 manager: dansimp
@@ -399,10 +399,10 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 {CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. In this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3.
 
 Therefore, from the example:
-   - Class: User
-   - Policy name: L_PolicyPreventRun_1
-   - Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
-   - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
+- Class: User
+- Policy name: L_PolicyPreventRun_1
+- Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
+- URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
 ## <a href="" id="admx-backed-app-policy-examples"></a>ADMX-backed app policy examples
 

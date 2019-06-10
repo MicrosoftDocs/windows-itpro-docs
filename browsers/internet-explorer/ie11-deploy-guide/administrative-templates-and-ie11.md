@@ -38,11 +38,11 @@ Administrative Templates are XML-based, multi-language files that define the reg
 
 ## How do I store Administrative Templates?
 As an admin, you can create a central store folder on your SYSVOL directory, named **PolicyDefinitions**. For example, %*SystemRoot*%\\PolicyDefinitions. This folder provides a single, centralized storage location for your Administrative Templates (both ADMX and ADML) files, so they can be used by your domain-based Group Policy Objects (GPOs).
-<p>**Important**<br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see [Scenario 1: Editing the Local GPO Using ADMX Files](https://go.microsoft.com/fwlink/p/?LinkId=276810).
+<p><strong>Important</strong><br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=276810" data-raw-source="[Scenario 1: Editing the Local GPO Using ADMX Files](https://go.microsoft.com/fwlink/p/?LinkId=276810)">Scenario 1: Editing the Local GPO Using ADMX Files</a>.
 
 ## Administrative Templates-related Group Policy settings
 When you install Internet Explorer 11, it updates the local administrative files, Inetres.admx and Inetres.adml, both located in the **PolicyDefinitions** folder.
-<p>**Note**<br>You won't see the new policy settings if you try to view or edit your policy settings on a computer that isn't running IE11. To fix this, you can either install IE11, or you can copy the updated Inetres.admx and Inetres.adml files from another computer to the **PolicyDefinitions** folder on this computer.
+<p><strong>Note</strong><br>You won&#39;t see the new policy settings if you try to view or edit your policy settings on a computer that isn&#39;t running IE11. To fix this, you can either install IE11, or you can copy the updated Inetres.admx and Inetres.adml files from another computer to the <strong>PolicyDefinitions</strong> folder on this computer.
 
 IE11 provides these new policy settings, which are editable in the Local Group Policy Editor, and appear in the following policy paths:
 
@@ -77,6 +77,6 @@ Regardless which tool you're using to edit your Group Policy settings, you'll ne
 -   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](https://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
 
 ## Related topics
-- [Administrative templates (.admx) for Windows 10 download](https://go.microsoft.com/fwlink/p/?LinkId=746579)
+- [Administrative templates (.admx) for Windows 10 April 2018 Update](https://www.microsoft.com/download/details.aspx?id=56880)
+- [Administrative templates (.admx) for Windows 10 October 2018 Update](https://www.microsoft.com/download/details.aspx?id=57576)
 - [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580)
-

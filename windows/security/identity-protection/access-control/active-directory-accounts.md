@@ -61,7 +61,7 @@ This topic describes the following:
 
 Default local accounts are built-in accounts that are created automatically when a Windows Server domain controller is installed and the domain is created. These default local accounts have counterparts in Active Directory. These accounts also have domain-wide access and are completely separate from the default local user accounts for a member or standalone server.
 
-You can assign rights and permissions to default local accounts on a particular domain controller, and only on that domain controller. These accounts are local to the domain. After the default local accounts are installed, they are stored in the Users container in Active Directory Users and Computers. It is a best practice to keep the default local accounts in the User container and not attempt to move these accounts, for example, to a different organizational unit (OU).
+You can assign rights and permissions to default local accounts on a particular domain controller, and only on that domain controller. These accounts are local to the domain. After the default local accounts are installed, they are stored in the Users container in Active Directory Users and Computers. It is a best practice to keep the default local accounts in the User container and not attempt to move these accounts, for example, to a different organizational unit (OU).
 
 The default local accounts in the Users container include: Administrator, Guest, and KRBTGT. The HelpAssistant account is installed when a Remote Assistance session is established. The following sections describe the default local accounts and their use in Active Directory.
 
@@ -73,7 +73,7 @@ Primarily, default local accounts do the following:
 
 -   Audit the actions that are carried out on a user account.
 
-In Active Directory, default local accounts are used by administrators to manage domain and member servers directly and from dedicated administrative workstations. Active Directory accounts provide access to network resources. Active Directory User accounts and Computer accounts can represent a physical entity, such as a computer or person, or act as dedicated service accounts for some applications.
+In Active Directory, default local accounts are used by administrators to manage domain and member servers directly and from dedicated administrative workstations. Active Directory accounts provide access to network resources. Active Directory User accounts and Computer accounts can represent a physical entity, such as a computer or person, or act as dedicated service accounts for some applications.
 
 Each default local account is automatically assigned to a security group that is preconfigured with the appropriate rights and permissions to perform specific tasks. Active Directory security groups collect user accounts, computer accounts, and other groups into manageable units. For more information, see [Active Directory Security Groups](active-directory-security-groups.md).
 
@@ -106,10 +106,10 @@ The Administrator account can also be disabled when it is not required. Renaming
 
 On a domain controller, the Administrator account becomes the Domain Admin account. The Domain Admin account is used to sign in to the domain controller and this account requires a strong password. The Domain Admin account gives you access to domain resources.
 
-**Note**  
+**Note**  
 When the domain controller is initially installed, you can sign in and use Server Manager to set up a local Administrator account, with the rights and permissions you want to assign. For example, you can use a local Administrator account to manage the operating system when you first install it. By using this approach, you can set up the operating system without getting locked out. Generally, you do not need to use the account after installation. You can only create local user accounts on the domain controller, before Active Directory Domain Services is installed, and not afterwards.
 
- 
+
 
 When Active Directory is installed on the first domain controller in the domain, the Administrator account is created for Active Directory. The Administrator account is the most powerful account in the domain. It is given domain-wide access and administrative rights to administer the computer and the domain, and it has the most extensive rights and permissions over the domain. The person who installs Active Directory Domain Services on the computer creates the password for this account during the installation.
 
@@ -164,7 +164,7 @@ When Active Directory is installed on the first domain controller in the domain,
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="sec-guest"></a>Guest account
 
@@ -246,7 +246,7 @@ For details about the Guest account attributes, see the following table.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="sec-helpassistant"></a>HelpAssistant account (installed with a Remote Assistance session)
 
@@ -317,7 +317,7 @@ For details about the HelpAssistant account attributes, see the following table.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="sec-krbtgt"></a>KRBTGT account
 
@@ -334,9 +334,9 @@ A strong password is assigned to the KRBTGT account automatically. Be sure that 
 
 On occasion, the KRBTGT account password requires a reset, for example, when an attempt to change the password on the KRBTGT account fails. In order to resolve this issue, you reset the KRBTGT user account password twice by using Active Directory Users and Computers. You must reset the password twice because the KRBTGT account stores only two of the most recent passwords in the password history. By resetting the password twice, you effectively clear all passwords from the password history.
 
-Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
+Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
 
-After you reset the KRBTGT password, ensure that event ID 6 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
+After you reset the KRBTGT password, ensure that event ID 6 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
 
 ### Security considerations
 
@@ -356,14 +356,14 @@ For all account types (users, computers, and services)
 
 Because it is impossible to predict the specific errors that will occur for any given user in a production operating environment, you must assume all computers and users will be affected.
 
-**Important**  
+**Important**  
 Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
 
 For information about how to help mitigate the risks associated with a potentially compromised KRBTGT account, see [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/cybertrust/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/).
 
 ### Read-only domain controllers and the KRBTGT account
 
-Windows Server 2008 introduced the read-only domain controller (RODC). The RODC is advertised as the Key Distribution Center (KDC) for the branch office. The RODC uses a different KRBTGT account and password than the KDC on a writable domain controller when it signs or encrypts ticket-granting ticket (TGT) requests. After an account is successfully authenticated, the RODC determines if a user's credentials or a computer's credentials can be replicated from the writable domain controller to the RODC by using the Password Replication Policy.
+Windows Server 2008 introduced the read-only domain controller (RODC). The RODC is advertised as the Key Distribution Center (KDC) for the branch office. The RODC uses a different KRBTGT account and password than the KDC on a writable domain controller when it signs or encrypts ticket-granting ticket (TGT) requests. After an account is successfully authenticated, the RODC determines if a user's credentials or a computer's credentials can be replicated from the writable domain controller to the RODC by using the Password Replication Policy.
 
 After the credentials are cached on the RODC, the RODC can accept that user's sign-in requests until the credentials change. When a TGT is signed with the KRBTGT account of the RODC, the RODC recognizes that it has a cached copy of the credentials. If another domain controller signs the TGT, the RODC forwards requests to a writable domain controller.
 
@@ -418,7 +418,7 @@ For details about the KRBTGT account attributes, see the following table.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="sec-account-settings"></a>Settings for default local accounts in Active Directory
 
@@ -454,7 +454,7 @@ Each default local account in Active Directory has a number of account settings 
 <tr class="even">
 <td><p>Store passwords using reversible encryption</p></td>
 <td><p>Provides support for applications that use protocols requiring knowledge of the plaintext form of the user’s password for authentication purposes.</p>
-<p>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).</p></td>
+<p>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Account is disabled</p></td>
@@ -472,7 +472,7 @@ Each default local account in Active Directory has a number of account settings 
 </tr>
 <tr class="odd">
 <td><p>Account is trusted for delegation</p></td>
-<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <strong>Delegation</strong> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <strong>setspn</strong> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
+<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <strong>Delegation</strong> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <strong>setspn</strong> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
 </tr>
 <tr class="even">
 <td><p>Account is sensitive and cannot be delegated</p></td>
@@ -482,26 +482,25 @@ Each default local account in Active Directory has a number of account settings 
 <td><p>Use DES encryption types for this account</p></td>
 <td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see [Hunting down DES in order to securely deploy Kerberos](http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx).</p>
+<strong>Note</strong><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td><p>Do not require Kerberos preauthentication</p></td>
-<td><p>Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.</p></td>
+<td><p>Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="sec-manage-local-accounts"></a>Manage default local accounts in Active Directory
 
 
-After the default local accounts are installed, these accounts reside in the Users container in Active Directory Users and Computers. Default local accounts can be created, disabled, reset, and deleted by using the Active Directory Users and Computers Microsoft Management Console (MMC) and by using command-line tools.
+After the default local accounts are installed, these accounts reside in the Users container in Active Directory Users and Computers. Default local accounts can be created, disabled, reset, and deleted by using the Active Directory Users and Computers Microsoft Management Console (MMC) and by using command-line tools.
 
 You can use Active Directory Users and Computers to assign rights and permissions on a given local domain controller, and that domain controller only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a computer, such as backing up files and folders or shutting down a computer. In contrast, an access permission is a rule that is associated with an object, usually a file, folder, or printer, that regulates which users can have access to the object and in what manner.
 
@@ -554,19 +553,19 @@ Restrict Domain Admins accounts and other sensitive accounts to prevent them fro
 
 -   **Standard user account**. Grant standard user rights for standard user tasks, such as email, web browsing, and using line-of-business (LOB) applications. These accounts should not be granted administrator rights.
 
-**Important**  
+**Important**  
 Ensure that sensitive administrator accounts cannot access email or browse the Internet as described in the following section.
 
- 
+
 
 ### <a href="" id="task2-admin-workstations"></a>Create dedicated workstation hosts without Internet and email access
 
 Administrators need to manage job responsibilities that require sensitive administrator rights from a dedicated workstation because they do not have easy physical access to the servers. A workstation that is connected to the Internet and has email and web browsing access is regularly exposed to compromise through phishing, downloading, and other types of Internet attacks. Because of these threats, it is a best practice to set these administrators up by using workstations that are dedicated to administrative duties only, and not provide access to the Internet, including email and web browsing. For more information, see [Separate administrator accounts from user accounts](#task1-separate-admin-accounts).
 
-**Note**  
+**Note**  
 If the administrators in your environment can sign in locally to managed servers and perform all tasks without elevated rights or domain rights from their workstation, you can skip this task.
 
- 
+
 
 -   **Minimum**. Build dedicated administrative workstations and block Internet access on those workstations including web browsing and email. Use the following ways to block Internet access:
 
@@ -584,7 +583,7 @@ If the administrators in your environment can sign in locally to managed servers
 
 The following procedure describes how to block Internet access by creating a Group Policy Object (GPO) that configures an invalid proxy address on administrative workstations. These instructions apply only to computers running Internet Explorer and other Windows components that use these proxy settings.
 
-**Note**  
+**Note**  
 In this procedure, the workstations are dedicated to domain administrators. By simply modifying the administrator accounts to grant permission to administrators to sign in locally, you can create additional OUs to manage administrators that have fewer administrative rights to use the instructions described in the following procedure.
 
 **To install administrative workstations in a domain and block Internet and email access (minimum)**
@@ -621,10 +620,10 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     4.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        **Important**  
+        **Important**  
         These instructions assume that the workstation is to be dedicated to domain administrators.
 
-         
+
 
     5.  Click **Add User or Group**, type **Administrators**, and &gt; **OK**.
 
@@ -715,10 +714,10 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 It is a best practice to restrict administrators from using sensitive administrator accounts to sign in to lower-trust servers and workstations. This restriction prevents administrators from inadvertently increasing the risk of credential theft by signing in to a lower-trust computer.
 
-**Important**  
+**Important**  
 Ensure that you either have local access to the domain controller or that you have built at least one dedicated administrative workstation.
 
- 
+
 
 Restrict logon access to lower-trust servers and workstations by using the following guidelines:
 
@@ -728,10 +727,10 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
 -   **Ideal**. Restrict server administrators from signing in to workstations, in addition to domain administrators.
 
-**Note**  
+**Note**  
 For this procedure, do not link accounts to the OU that contain workstations for administrators that perform administration duties only, and do not provide Internet or email access. For more information, see [Create dedicated workstation hosts for administrators](#task2-admin-workstations)
 
- 
+
 
 **To restrict domain administrators from workstations (minimum)**
 
@@ -761,19 +760,19 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
         ![Active Directory local accounts](images/adlocalaccounts-proc2-sample3.png)
 
-        **Note**  
+        **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
-         
+
 
     4.  Click **OK** to complete the configuration.
 
 8.  Configure the user rights to deny batch and service logon rights for domain administrators as follows:
 
-    **Note**  
+    **Note**  
     Completing this step might cause issues with administrator tasks that run as scheduled tasks or services with accounts in the Domain Admins group. The practice of using domain administrator accounts to run services and tasks on workstations creates a significant risk of credential theft attacks and therefore should be replaced with alternative means to run scheduled tasks or services.
 
-     
+
 
     1.  Double-click **Deny logon as a batch job**, and &gt; **Define these policy settings**.
 
@@ -783,10 +782,10 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
         ![Active Directory local accounts](images/adlocalaccounts-proc2-sample4.png)
 
-        **Note**  
+        **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
-         
+
 
     4.  Double-click **Deny logon as a service**, and &gt; **Define these policy settings**.
 
@@ -796,10 +795,10 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
         ![Active Directory local accounts](images/adlocalaccounts-proc2-sample5.png)
 
-        **Note**  
+        **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
-         
+
 
 9.  Link the GPO to the first Workstations OU.
 
@@ -819,10 +818,10 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     However, do not create a link to the Administrative Workstation OU if it is created for administrative workstations that are dedicated to administration duties only, and that are without Internet or email access. For more information, see [Create dedicated workstation hosts for administrators](#task2-admin-workstations).
 
-    **Important**  
+    **Important**  
     If you later extend this solution, do not deny logon rights for the **Domain Users** group. The **Domain Users** group includes all user accounts in the domain, including Users, Domain Administrators, and Enterprise Administrators.
 
-     
+
 
 ### <a href="" id="task4-disable-account-delegation"></a>Disable the account delegation right for sensitive administrator accounts
 

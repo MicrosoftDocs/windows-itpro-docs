@@ -21,10 +21,10 @@ You can run Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 in a St
 
 For additional configurations that are specific to the Configuration Manager Integration topology, see [Versions of Configuration Manager that MBAM supports](#bkmk-cm-ramreqs).
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 ## MBAM Supported Languages
 
@@ -87,7 +87,7 @@ The following tables show the languages that are supported for the MBAM Client (
 </tbody>
 </table>
 
- 
+
 
 **Supported Languages in MBAM 2.5:**
 
@@ -134,14 +134,14 @@ The following tables show the languages that are supported for the MBAM Client (
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="---------mbam-server-system-requirements"></a> MBAM Server system requirements
 
 
 ### MBAM Server operating system requirements
 
-We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
+We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
 
 The following table lists the operating systems that are supported for the MBAM Server installation.
 
@@ -162,7 +162,7 @@ The following table lists the operating systems that are supported for the MBAM 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Windows Server 2016</p></td>
 <td align="left"><p>Standard or Datacenter</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -180,7 +180,7 @@ The following table lists the operating systems that are supported for the MBAM 
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2008 R2</p></td>
+<td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -188,7 +188,7 @@ The following table lists the operating systems that are supported for the MBAM 
 </tbody>
 </table>
 
- 
+
 
 The enterprise domain must contain at least one Windows Server 2008 (or later) domain controller.
 
@@ -228,7 +228,7 @@ These requirements are for the MBAM Stand-alone topology. For the requirements f
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-cm-ramreqs"></a>MBAM Server processor, RAM, and disk space requirements - Configuration Manager Integration topology
 
@@ -266,7 +266,7 @@ The following table lists the server processor, RAM, and disk space requirements
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-cmversions"></a>Versions of Configuration Manager that MBAM supports
 
@@ -303,7 +303,7 @@ MBAM supports the following versions of Configuration Manager.
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
+<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
@@ -312,21 +312,21 @@ MBAM supports the following versions of Configuration Manager.
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p>
 
->**Note** Although Configuration Manager 2007 R2 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.
+&gt;<strong>Note</strong> Although Configuration Manager 2007 R2 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.
 </td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For a list of supported configurations for the Configuration Manager Server, see the appropriate TechNet documentation for the version of Configuration Manager that you are using. MBAM has no additional system requirements for the Configuration Manager Server.
 
-### <a href="" id="sql-server-database-requirements-"></a>SQL Server database requirements
+### <a href="" id="sql-server-database-requirements-"></a>SQL Server database requirements
 
 The following table lists the Microsoft SQL Server versions that are supported for the MBAM Server features, which include the Recovery Database, Compliance and Audit Database, and the Reports feature. The required versions apply to the Stand-alone or the Configuration Manager Integration topologies.
 
-You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** collation.
+You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** collation.
 
 <table>
 <colgroup>
@@ -348,24 +348,23 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 <td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>    
-<tr class="even">
+<td align="left"><p>64-bit</p></td><br/><tr class="even">
 <td align="left"><p>Microsoft SQL Server 2016</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
-https://www.microsoft.com/en-us/download/details.aspx?id=54967<td align="left"><p>64-bit</p></td>
+<a href="https://www.microsoft.com/en-us/download/details.aspx?id=54967" data-raw-source="https://www.microsoft.com/en-us/download/details.aspx?id=54967">https://www.microsoft.com/en-us/download/details.aspx?id=54967</a><td align="left"><p>64-bit</p></td>
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2014</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1, SP2</p></td>
 <td align="left"><p>64-bit</p></td>
 <tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2012</p></td>
+<td align="left"><p>Microsoft SQL Server 2012</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP3</p></td>
 <td align="left"><p>64-bit</p></td>
 <tr class="even">
-<td align="left"><p>Microsoft SQL Server 2008 R2</p></td>
+<td align="left"><p>Microsoft SQL Server 2008 R2</p></td>
 <td align="left"><p>Standard or Enterprise</p></td>
 <td align="left"><p>SP3</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -375,7 +374,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=54967<td align="left"><
 
 **Note**  
 In order to support SQL 2016 you must install the March 2017 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=54967  and to support SQL 2017 you must install the July 2018 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=57157. In general stay current by always using the most recent servicing update as it also includes all bugfixes and new features.
- 
+
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>SQL Server processor, RAM, and disk space requirements – Stand-alone topology
 
@@ -413,7 +412,7 @@ The following table lists the recommended server processor, RAM, and disk space 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-cm-sql-ramreqs"></a>SQL Server processor, RAM, and disk space requirements - Configuration Manager Integration topology
 
@@ -451,14 +450,14 @@ The following table lists the server processor, RAM, and disk space requirements
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="---------mbam-client-system-requirements"></a> MBAM Client system requirements
 
 
 ### Client operating system requirements
 
-We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
+We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
 
 The following table lists the operating systems that are supported for MBAM Client installation. The same requirements apply to the Stand-alone and the Configuration Manager Integration topologies.
 
@@ -483,8 +482,7 @@ The following table lists the operating systems that are supported for MBAM Clie
     <td align="left"><p>Enterprise</p></td>
     <td align="left"><p></p></td>
     <td align="left"><p>32-bit or 64-bit</p></td>
-</tr>  
-<tr class="odd">
+</tr><br/><tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>
 <td align="left"><p></p></td>
@@ -497,7 +495,7 @@ The following table lists the operating systems that are supported for MBAM Clie
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Enterprise or Ultimate</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -511,7 +509,7 @@ The following table lists the operating systems that are supported for MBAM Clie
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="client-ram-requirements-"></a>Client RAM requirements
 
@@ -557,7 +555,7 @@ The following table lists the operating systems that are supported for MBAM Grou
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Enterprise, or Ultimate</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -575,7 +573,7 @@ The following table lists the operating systems that are supported for MBAM Grou
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2008 R2</p></td>
+<td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -608,9 +606,9 @@ The MBAM client is not supported on virtual machines and is also not supported o
 
 [Preparing your Environment for MBAM 2.5](preparing-your-environment-for-mbam-25.md)
 
- 
 
- 
+
+
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
