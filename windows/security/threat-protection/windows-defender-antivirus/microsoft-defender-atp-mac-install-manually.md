@@ -85,7 +85,7 @@ The installation will proceed.
 
 If you did not enable Microsoft's driver during the installation, then Defender's application will display a banner prompting you to enable it:
 
-    ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
+   ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
 
 You can also run ```mdatp --health```, that would report that the Real Time Protection is enabled but not available:
 
@@ -102,7 +102,7 @@ You can enable it by performting the following steps:
 
 Note, that if you won't complete this step [during 30 minutes](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) after the installation, the prompt will disappear:
 
-    ![Security and privacy window after prompt expired screenshot](MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+   ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
