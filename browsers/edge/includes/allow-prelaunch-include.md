@@ -40,7 +40,7 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\ 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
 
