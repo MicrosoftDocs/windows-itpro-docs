@@ -83,6 +83,9 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
+> [!NOTE]
+> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
+
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
