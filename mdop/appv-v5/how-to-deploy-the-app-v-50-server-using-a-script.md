@@ -21,8 +21,8 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 
 Use the following tables for more information about installing the App-V 5.0 server using the command line.
 
->[!NOTE]  
->The information in the following tables can also be accessed using the command line by typing the following command:
+>[!NOTE]
+> The information in the following tables can also be accessed using the command line by typing the following command:
 >```
 > appv\_server\_setup.exe /?
 >```

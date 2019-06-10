@@ -71,7 +71,7 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Remote Desktop
 
->[!NOTE] 
+>[!NOTE]
 >Microsoft Visio and Microsoft Project are not enlightended apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioining.
 
 ## List of WIP-work only apps from Microsoft

@@ -15,7 +15,7 @@ manager: dansimp
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10 Mobile, the NetworkProxy CSP only works in ethernet connections. Use the WiFi CSP to configure per-network proxy for Wi-Fi connections in mobile devices.  
 
 How the settings work:  
@@ -40,7 +40,7 @@ Added in Windows 10, version 1803. When set to 0, it enables proxy configuration
 
 Supported operations are Add, Get, Replace, and Delete.
 
-> [!Note]  
+> [!NOTE]
 > Per user proxy configuration setting is not supported.
 
 <a href="" id="autodetect"></a>**AutoDetect**  

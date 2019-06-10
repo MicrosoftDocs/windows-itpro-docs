@@ -382,7 +382,7 @@ $deSCP.Properties["keywords"].Add("enterpriseDrsName:" + $enrollmentService)
 $deSCP.CommitChanges()
 ```
 
->[!NOTE] 
+>[!NOTE]
 > You can save the modified script in notepad and save them as "add-scpadfs.ps1" and the way to run it is just navigating into the script path folder and running .\add-scpAdfs.ps1.
 >
 

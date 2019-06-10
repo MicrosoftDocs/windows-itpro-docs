@@ -444,7 +444,7 @@ This MDM setting corresponds to the EnableFontProviders Group Policy setting. If
 
 This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
 
-> [!Note]  
+> [!NOTE]
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
 <!--/Description-->

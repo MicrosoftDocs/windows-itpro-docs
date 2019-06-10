@@ -97,7 +97,7 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
 - **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-![Add Store app](images\add-a-protected-store-app.png)
+![Add Store app](images/add-a-protected-store-app.png)
 
 To add multiple Store apps, click the ellipsis **…**. 
 

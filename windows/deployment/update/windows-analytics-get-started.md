@@ -73,7 +73,7 @@ To enable data sharing, configure your proxy server to whitelist the following e
 >[!NOTE]
 >Proxy authentication and SSL inspections are frequent challenges for enterprises. See the following sections for configuration options.
 
-> [!Important] 
+> [!IMPORTANT]
 > For privacy and data integrity, Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. SSL interception and inspection aren't possible. To use Desktop Analytics, exclude these endpoints from SSL inspection.<!-- BUG 4647542 --> 
 
 
