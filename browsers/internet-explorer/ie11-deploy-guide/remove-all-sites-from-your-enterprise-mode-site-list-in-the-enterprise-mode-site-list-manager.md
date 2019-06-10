@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to clear all of the sites from your global Enterprise Mode site list.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 90f38a6c-e0e2-4c93-9a9e-c425eca99e97
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Remove all sites from your Enterprise Mode site list using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -37,9 +40,9 @@ This is a permanent removal and erases everything. However, if you determine it 
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
+ 
 
- 
+ 
 
 
 

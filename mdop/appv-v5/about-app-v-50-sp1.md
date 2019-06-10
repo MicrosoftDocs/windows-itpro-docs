@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.0 SP1
 description: About App-V 5.0 SP1
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 2848a51b-452e-4c70-b465-f6717cfa667f
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +32,7 @@ This service pack contains the following changes:
 
     -   Reporting - **HKEY\_LOCAL\_MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ReportingService** \\ **REPORTING\_DB\_NAME**
 
-     
+     
 
 ## How to Get MDOP Technologies
 
@@ -48,9 +51,9 @@ App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is p
 
 [Release Notes for App-V 5.0 SP1](release-notes-for-app-v-50-sp1.md)
 
- 
+ 
 
- 
+ 
 
 
 

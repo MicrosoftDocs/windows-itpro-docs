@@ -2,11 +2,13 @@
 title: NetworkQoSPolicy DDF
 description: This topic shows the OMA DM device description framework (DDF) for the NetworkQoSPolicy configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid:
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

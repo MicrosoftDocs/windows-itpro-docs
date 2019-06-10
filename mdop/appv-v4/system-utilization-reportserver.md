@@ -1,8 +1,11 @@
 ---
 title: System Utilization Report
 description: System Utilization Report
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 4d490d15-2d1f-4f2c-99bb-0685447c0672
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +42,7 @@ After you run a report and the output is displayed in the Application Virtualiza
 **Note**  
 The App-V server name reported from the clients must be part of the Default Server Group in order for the System Utilization report to show data. For example, if you are using multiple servers with a Network Load Balancer (NLB), you must add the NLB cluster name to the Default Server Group.
 
- 
+ 
 
 ## Related topics
 
@@ -54,9 +57,9 @@ The App-V server name reported from the clients must be part of the Default Serv
 
 [How to Run a Report](how-to-run-a-reportserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

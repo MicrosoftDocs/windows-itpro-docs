@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Games
 description: Policy CSP - Games
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Games

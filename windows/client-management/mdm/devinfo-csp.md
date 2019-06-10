@@ -2,11 +2,13 @@
 title: DevInfo CSP
 description: DevInfo CSP
 ms.assetid: d3eb70db-1ce9-4c72-a13d-651137c1713c
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

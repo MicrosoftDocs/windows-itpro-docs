@@ -1,8 +1,11 @@
 ---
 title: Step-by-Step Guide for Microsoft Advanced Group Policy Management 3.0
 description: Step-by-Step Guide for Microsoft Advanced Group Policy Management 3.0
-author: jamiejdt
+author: mjcaparas
 ms.assetid: d067f465-d7c8-4f6d-b311-66b9b06874f7
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -53,7 +56,7 @@ Computers on which you want to install AGPM must meet the following requirements
 **Note**  
 If you have AGPM 2.5 installed and are upgrading from Windows Server® 2003 to Windows Server 2008 or Windows Vista® with no service packs installed to Windows Vista with Service Pack 1, you must upgrade the operating system before you can upgrade to AGPM 3.0.
 
- 
+ 
 
 ### AGPM Server requirements
 
@@ -102,7 +105,7 @@ Before you begin this scenario, create four user accounts. During the scenario, 
 **Note**  
 **Link GPOs** permission is assigned to members of Domain Administrators and Enterprise Administrators by default. To assign **Link GPOs** permission to additional users or groups (such as accounts with the roles of AGPM Administrator or Approver), click the node for the domain and then click the **Delegation** tab, select **Link GPOs**, click **Add**, and select users or groups to which to assign the permission.
 
- 
+ 
 
 ## Steps for installing and configuring AGPM
 
@@ -150,7 +153,7 @@ In this step, you install AGPM Server on the member server or domain controller 
     **Caution**  
     Do not modify settings for the AGPM Service through **Administrative Tools** and **Services** in the operating system. Doing so can prevent the AGPM Service from starting. For information on how to modify settings for the service, see Help for Advanced Group Policy Management.
 
-     
+     
 
 ### <a href="" id="bkmk-config2"></a>Step 2: Install AGPM Client
 
@@ -217,12 +220,12 @@ As an AGPM Administrator (Full Control), you delegate domain-level access to GPO
 **Note**  
 You can also delegate access at the GPO level rather than the domain level. For details, see Help for Advanced Group Policy Management.
 
- 
+ 
 
 **Important**  
 You should restrict membership in the Group Policy Creator Owners group, so it cannot be used to circumvent AGPM management of access to GPOs. (In the **Group Policy Management Console**, click **Group Policy Objects** in the forest and domain in which you want to manage GPOs, click **Delegation**, and then configure the settings to meet the needs of your organization.)
 
- 
+ 
 
 **To delegate access to all GPOs throughout a domain**
 
@@ -345,31 +348,31 @@ In this step, you act as an Approver, creating reports and analyzing the setting
 
 **To review settings in the GPO**
 
-1.  On a computer on which you have installed AGPM Client, log on with a user account that has been assigned the role of Approver in AGPM. (Any Group Policy administrator with the Reviewer role, which is included in all of the other roles, can review the settings in a GPO.)
+1. On a computer on which you have installed AGPM Client, log on with a user account that has been assigned the role of Approver in AGPM. (Any Group Policy administrator with the Reviewer role, which is included in all of the other roles, can review the settings in a GPO.)
 
-2.  Open the e-mail inbox for the account and note that you have received an e-mail message from the AGPM alias with an Editor's request to deploy a GPO.
+2. Open the e-mail inbox for the account and note that you have received an e-mail message from the AGPM alias with an Editor's request to deploy a GPO.
 
-3.  In the **Group Policy Management Console** tree, click **Change Control** in the forest and domain in which you want to manage GPOs.
+3. In the **Group Policy Management Console** tree, click **Change Control** in the forest and domain in which you want to manage GPOs.
 
-4.  On the **Contents** tab in the details pane, click the **Pending** tab.
+4. On the **Contents** tab in the details pane, click the **Pending** tab.
 
-5.  Double-click **MyGPO** to display its history.
+5. Double-click **MyGPO** to display its history.
 
-6.  Review the settings in the most recent version of MyGPO:
+6. Review the settings in the most recent version of MyGPO:
 
-    1.  In the **History** window, right-click the GPO version with the most recent timestamp, click **Settings**, and then click **HTML Report** to display a summary of the GPO's settings.
+   1.  In the **History** window, right-click the GPO version with the most recent timestamp, click **Settings**, and then click **HTML Report** to display a summary of the GPO's settings.
 
-    2.  In the Web browser, click **show all** to display all of the settings in the GPO. Close the browser.
+   2.  In the Web browser, click **show all** to display all of the settings in the GPO. Close the browser.
 
-7.  Compare the most recent version of MyGPO to the first version checked in to the archive:
+7. Compare the most recent version of MyGPO to the first version checked in to the archive:
 
-    1.  In the **History** window, click the GPO version with the most recent time stamp. Press CTRL and click the oldest GPO version for which the **Computer Version** is not **\***.
+   1. In the **History** window, click the GPO version with the most recent time stamp. Press CTRL and click the oldest GPO version for which the **Computer Version** is not **\\***.
 
-    2.  Click the **Differences** button. The **Account Policies/Password Policy** section is highlighted in green and preceded by **\[+\]**, indicating that this setting is configured only in the latter version of the GPO.
+   2. Click the **Differences** button. The **Account Policies/Password Policy** section is highlighted in green and preceded by **\[+\]**, indicating that this setting is configured only in the latter version of the GPO.
 
-    3.  Click **Account Policies/Password Policy**. The **Minimum password length** setting is also highlighted in green and preceded by **\[+\]**, indicating that it is configured only in the latter version of the GPO.
+   3. Click **Account Policies/Password Policy**. The **Minimum password length** setting is also highlighted in green and preceded by **\[+\]**, indicating that it is configured only in the latter version of the GPO.
 
-    4.  Close the Web browser.
+   4. Close the Web browser.
 
 **To deploy the GPO to the production environment**
 
@@ -498,7 +501,7 @@ Occasionally you may discover after deleting a GPO that it is still needed. In t
     **Note**  
     Restoring a GPO to the archive does not automatically redeploy it to the production environment. To return the GPO to the production environment, deploy the GPO as in [Step 3: Review and deploy a GPO](#bkmk-manage3).
 
-     
+     
 
 After editing and deploying a GPO, you may discover that recent changes to the GPO are causing a problem. In this step, you act as an Approver to roll back to a previous version of the GPO. You can roll back to any version in the history of the GPO. You can use comments and labels to identify known good versions and when specific changes were made.
 
@@ -515,11 +518,11 @@ After editing and deploying a GPO, you may discover that recent changes to the G
     **Note**  
     To verify that the version that has been redeployed is the version intended, examine a difference report for the two versions. In the **History** window for the GPO, select the two versions, right-click them, point to **Difference**, and then click either **HTML Report** or **XML Report**.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: Identifying the Number and Types of MED-V Workspaces
 description: Identifying the Number and Types of MED-V Workspaces
-author: jamiejdt
+author: levinec
 ms.assetid: 11642253-6b1f-4c4a-a11e-48d8a360e1ea
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,7 +45,7 @@ To calculate the required disk space, determine the following:
     **Important**  
     Do not use the .medv file size for your calculation because the .medv file is compressed.
 
-     
+     
 
 -   **Users per computer** – MED-V creates a MED-V workspace for each user on a computer; the MED-V workspace consumes disk space as each user logs on and the MED-V workspace is created.
 
@@ -57,7 +60,7 @@ The following example shows a calculation based on three users of a MED-V worksp
 **Note**  
 A MED-V best practice is to calculate the required space by using a lab deployment to validate the requirements.
 
- 
+ 
 
 ### Locate the Files to Determine File Size
 
@@ -95,7 +98,7 @@ The following locations contain the files for the computer and user settings:
 </tbody>
 </table>
 
- 
+ 
 
 ### Calculate the Disk Space Requirements for Shared MED-V Workspaces
 
@@ -110,9 +113,9 @@ You can find the differencing disk and the saved state file for shared MED-V wor
 
 [Planning for MED-V](planning-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

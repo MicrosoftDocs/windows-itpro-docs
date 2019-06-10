@@ -1,5 +1,6 @@
 ---
 title: Microsoft Defender ATP for Mac
+ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

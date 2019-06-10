@@ -1,8 +1,11 @@
 ---
 title: How to Install and Configure the App-V Management Console for a More Secure Environment
 description: How to Install and Configure the App-V Management Console for a More Secure Environment
-author: jamiejdt
+author: dansimp
 ms.assetid: 9d89ef09-cdbf-48fc-99da-b24fc987ef8f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,7 +30,7 @@ The default installation of the App-V Management Console includes support for se
     **Important**  
     The name provided in the Web Service Host Name must match the common name on the certificate, or the connection will fail.
 
-     
+     
 
 4.  Select the appropriate login credentials, and click **OK**.
 
@@ -36,9 +39,9 @@ The default installation of the App-V Management Console includes support for se
 
 [Configuring Certificates to Support the App-V Web Management Service](configuring-certificates-to-support-the-app-v-web-management-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

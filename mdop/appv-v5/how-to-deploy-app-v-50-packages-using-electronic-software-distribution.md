@@ -1,8 +1,11 @@
 ---
 title: How to deploy App-V 5.0 Packages Using Electronic Software Distribution
 description: How to deploy App-V 5.0 Packages Using Electronic Software Distribution
-author: jamiejdt
+author: dansimp
 ms.assetid: 08e5e05b-dbb8-4be7-b2d8-721ef627da81
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,12 +45,12 @@ Use one of the following methods to publish packages to App-V client computers w
 </tr>
 <tr class="odd">
 <td align="left"><p>PowerShell</p></td>
-<td align="left"><p>Use PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V 5.0, see [Administering App-V by Using PowerShell](administering-app-v-by-using-powershell.md).</p></td>
+<td align="left"><p>Use PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V 5.0, see <a href="administering-app-v-by-using-powershell.md" data-raw-source="[Administering App-V by Using PowerShell](administering-app-v-by-using-powershell.md)">Administering App-V by Using PowerShell</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To deploy App-V 5.0 packages by using an ESD**
 
@@ -66,9 +69,9 @@ Use one of the following methods to publish packages to App-V client computers w
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

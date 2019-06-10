@@ -1,8 +1,11 @@
 ---
 title: How to Refresh the Publishing Servers
 description: How to Refresh the Publishing Servers
-author: jamiejdt
+author: eavena
 ms.assetid: 92e1d7b0-10ee-4531-9049-1056b44934e2
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ After you request access to additional applications and permission is granted by
 **Note**  
 By default, publishing information is refreshed on user log in.
 
- 
+ 
 
 **To refresh the publishing information**
 
@@ -34,7 +37,7 @@ By default, publishing information is refreshed on user log in.
 
     -   Right-click the server in the **Results** pane, and then select **Properties** from the pop-up menu. Select the **Refresh** tab, and then click the **Refresh** button.
 
-     
+     
 
 ## Related topics
 
@@ -43,9 +46,9 @@ By default, publishing information is refreshed on user log in.
 
 [How to Set Up Publishing Refresh on Login](how-to-set-up-publishing-refresh-on-login.md)
 
- 
+ 
 
- 
+ 
 
 
 

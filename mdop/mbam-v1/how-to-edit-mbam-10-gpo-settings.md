@@ -1,8 +1,11 @@
 ---
 title: How to Edit MBAM 1.0 GPO Settings
 description: How to Edit MBAM 1.0 GPO Settings
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 03d12fbc-4302-43fc-9b38-440607d778a1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -64,21 +67,23 @@ The following steps describe how to configure the basic, recommended Group Polic
 
     Set **Choose how BitLocker-protected drives can be recovered** and **Allow data recovery agent**.
 
-     
 
-    **Important**  
-    Depending on the policies that your organization decides to deploy, you may have to configure additional policies. See [Planning for MBAM 1.0 Group Policy Requirements](planning-for-mbam-10-group-policy-requirements.md) for Group Policy configuration details for all of the available MBAM GPO policy options.
 
-     
+~~~
+**Important**  
+Depending on the policies that your organization decides to deploy, you may have to configure additional policies. See [Planning for MBAM 1.0 Group Policy Requirements](planning-for-mbam-10-group-policy-requirements.md) for Group Policy configuration details for all of the available MBAM GPO policy options.
+~~~
+
+
 
 ## Related topics
 
 
 [Deploying MBAM 1.0 Group Policy Objects](deploying-mbam-10-group-policy-objects.md)
 
- 
 
- 
+
+
 
 
 

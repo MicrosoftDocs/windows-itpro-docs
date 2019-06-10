@@ -2,12 +2,14 @@
 title: Interactive logon Message title for users attempting to log on (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Message title for users attempting to log on security policy setting.
 ms.assetid: f2596470-4cc0-4ef1-849c-bef9dc3533c6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -65,7 +67,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Not defined| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -94,7 +96,7 @@ Users often do not understand the importance of security practices. However, the
 Configure the [Interactive logon: Message text for users attempting to log on](interactive-logon-message-text-for-users-attempting-to-log-on.md) and **Interactive logon: Message title for users attempting to log on** settings to an appropriate value for your organization.
 
 >**Note:**  Any warning message that displays should be approved by your organization's legal and human resources representatives.
- 
+ 
 ### Potential impact
 
 Users see a message in a dialog box before they can log on to the server console.

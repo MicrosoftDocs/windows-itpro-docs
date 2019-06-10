@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5 Groups and Accounts
 description: Planning for MBAM 2.5 Groups and Accounts
-author: jamiejdt
+author: dansimp
 ms.assetid: 73bb9fe5-5900-4b6f-b271-ade62991fca1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,12 +17,12 @@ ms.date: 11/02/2016
 # Planning for MBAM 2.5 Groups and Accounts
 
 
-This topic lists the roles and accounts that you must create in Active Directory Domain Services (AD DS) to provide security and access rights for the Microsoft BitLocker Administration and Monitoring (MBAM) databases, reports, and web applications. For each role and account, the corresponding field in the MBAM Server Configuration wizard is provided. For a list of Windows PowerShell cmdlets and parameters that correspond to these accounts, see [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md#bkmk-reqd-posh-accts).
+This topic lists the roles and accounts that you must create in Active Directory Domain Services (AD DS) to provide security and access rights for the Microsoft BitLocker Administration and Monitoring (MBAM) databases, reports, and web applications. For each role and account, the corresponding field in the MBAM Server Configuration wizard is provided. For a list of Windows PowerShell cmdlets and parameters that correspond to these accounts, see [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md#bkmk-reqd-posh-accts).
 
-**Note**  
+**Note**  
 MBAM does not support the use of managed service accounts.
 
- 
+
 
 ## Database accounts
 
@@ -61,7 +64,7 @@ Create the following accounts for the Compliance and Audit Database and the Reco
 </tbody>
 </table>
 
- 
+
 
 ## Reporting accounts
 
@@ -102,7 +105,7 @@ Create the following accounts for the Reports feature.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-helpdesk-roles"></a>Administration and Monitoring Website (Help Desk) accounts
 
@@ -134,11 +137,10 @@ Create the following accounts for the Administration and Monitoring Website.
 <p>If you enter a group name in the <strong>Read/write access domain user or group</strong> field on the <strong>Configure Databases</strong> page, the value you enter in this field must be a member of that group.</p>
 <p>If you do not specify credentials, the credentials that were specified for any previously enabled web application will be used. All web applications must use the same application pool credentials. If you specify different credentials for different web applications, the most recently specified value will be used.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>For improved security, set the account that is specified in the credentials to have limited user rights.</p>
+<strong>Important</strong><br/><p>For improved security, set the account that is specified in the credentials to have limited user rights.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -165,12 +167,12 @@ Create the following accounts for the Administration and Monitoring Website.
 <td align="left"><p>Group</p></td>
 <td align="left"><p>MBAM Data Migration Users</p></td>
 <td align="left"><p>Optional domain user group whose members have permissions to write data to MBAM by using the MBAM Recovery and Hardware Service running on the MBAM server. This account is generally used with the Write-Mbam* cmdlets to write recovery and TPM data from Active Directory into the MBAM database.</p>
-<p>For more information, see [MBAM 2.5 Security Considerations](mbam-25-security-considerations.md).</p></td>
+<p>For more information, see <a href="mbam-25-security-considerations.md" data-raw-source="[MBAM 2.5 Security Considerations](mbam-25-security-considerations.md)">MBAM 2.5 Security Considerations</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 
 ## Related topics
@@ -180,11 +182,11 @@ Create the following accounts for the Administration and Monitoring Website.
 
 [MBAM 2.5 Deployment Prerequisites](mbam-25-deployment-prerequisites.md)
 
- 
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

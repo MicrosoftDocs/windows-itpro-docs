@@ -1,8 +1,11 @@
 ---
 title: Managing Connection Groups
 description: Managing Connection Groups
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 1a9c8f26-f421-4b70-b7e2-da8118e8198c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Connection groups enable the applications within a package to interact with each
 **Note**  
 In previous versions of App-V 5.0, connection groups were referred to as Dynamic Suite Composition.
 
- 
+ 
 
 **In this topic:**
 
@@ -30,33 +33,33 @@ In previous versions of App-V 5.0, connection groups were referred to as Dynamic
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment.md)</p></td>
+<td align="left"><p><a href="about-the-connection-group-virtual-environment.md" data-raw-source="[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment.md)">About the Connection Group Virtual Environment</a></p></td>
 <td align="left"><p>Describes the connection group virtual environment.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[About the Connection Group File](about-the-connection-group-file.md)</p></td>
+<td align="left"><p><a href="about-the-connection-group-file.md" data-raw-source="[About the Connection Group File](about-the-connection-group-file.md)">About the Connection Group File</a></p></td>
 <td align="left"><p>Describes the connection group file.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to Create a Connection Group](how-to-create-a-connection-group.md)</p></td>
+<td align="left"><p><a href="how-to-create-a-connection-group.md" data-raw-source="[How to Create a Connection Group](how-to-create-a-connection-group.md)">How to Create a Connection Group</a></p></td>
 <td align="left"><p>Explains how to create a new connection group.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md)</p></td>
+<td align="left"><p><a href="how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md" data-raw-source="[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md)">How to Create a Connection Group with User-Published and Globally Published Packages</a></p></td>
 <td align="left"><p>Explains how to create a new connection group that contains a mix of packages that are published to the user and published globally.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to Delete a Connection Group](how-to-delete-a-connection-group.md)</p></td>
+<td align="left"><p><a href="how-to-delete-a-connection-group.md" data-raw-source="[How to Delete a Connection Group](how-to-delete-a-connection-group.md)">How to Delete a Connection Group</a></p></td>
 <td align="left"><p>Explains how to delete a connection group.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to Publish a Connection Group](how-to-publish-a-connection-group.md)</p></td>
+<td align="left"><p><a href="how-to-publish-a-connection-group.md" data-raw-source="[How to Publish a Connection Group](how-to-publish-a-connection-group.md)">How to Publish a Connection Group</a></p></td>
 <td align="left"><p>Explains how to publish a connection group.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -68,9 +71,9 @@ In previous versions of App-V 5.0, connection groups were referred to as Dynamic
 
 -   [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

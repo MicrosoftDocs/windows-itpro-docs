@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Defender
 description: Policy CSP - Defender
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Defender
@@ -250,7 +252,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <!--/Description-->
@@ -561,7 +563,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
 <!--/Description-->
@@ -801,7 +803,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows a scanning of network files.
 
 <!--/Description-->
@@ -1097,7 +1099,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Represents the average CPU load factor for the Windows Defender scan (in percent).
 
 
@@ -1241,8 +1243,8 @@ Added in Windows 10, version 1709. This policy setting determines how aggressive
 If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
 For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
-      
-> [!Note]  
+      
+> [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
@@ -1313,7 +1315,7 @@ The typical cloud check timeout is 10 seconds. To enable the extended cloud chec
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
-> [!Note]  
+> [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
@@ -1479,7 +1481,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Time period (in days) that quarantine items will be stored on the system.
 
 
@@ -1888,7 +1890,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
@@ -2006,7 +2008,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 > [!IMPORTANT]
 > The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
- 
+ 
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
@@ -2247,13 +2249,13 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Selects the time of day that the Windows Defender quick scan should run.
 
 > [!NOTE]
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
- 
+ 
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
@@ -2605,7 +2607,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
 
@@ -2672,7 +2674,7 @@ Valid values: 0–24.
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
 <!--/Description-->
@@ -2736,11 +2738,11 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
- 
+ 
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
-This value is a list of threat severity level IDs and corresponding actions, separated by a**|** using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
+This value is a list of threat severity level IDs and corresponding actions, separated by a<strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
 
 The following list shows the supported values for threat severity levels:
 
@@ -2785,32 +2787,32 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  
 
--   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
--   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
--   [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
--   [Defender/AllowEmailScanning](#defender-allowemailscanning)  
--   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
--   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
--   [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
--   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
--   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
--   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
--   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
--   [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
--   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
--   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
--   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
--   [Defender/ExcludedExtensions](#defender-excludedextensions)  
--   [Defender/ExcludedPaths](#defender-excludedpaths)  
--   [Defender/ExcludedProcesses](#defender-excludedprocesses)  
--   [Defender/PUAProtection](#defender-puaprotection)  
--   [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
--   [Defender/ScanParameter](#defender-scanparameter)  
--   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
--   [Defender/ScheduleScanDay](#defender-schedulescanday)  
--   [Defender/ScheduleScanTime](#defender-schedulescantime)  
--   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
--   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
--   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
-<!--EndSurfaceHub-->
+- [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
+- [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
+- [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
+- [Defender/AllowEmailScanning](#defender-allowemailscanning)  
+- [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
+- [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
+- [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
+- [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
+- [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
+- [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
+- [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
+- [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
+- [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
+- [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
+- [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
+- [Defender/ExcludedExtensions](#defender-excludedextensions)  
+- [Defender/ExcludedPaths](#defender-excludedpaths)  
+- [Defender/ExcludedProcesses](#defender-excludedprocesses)  
+- [Defender/PUAProtection](#defender-puaprotection)  
+- [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
+- [Defender/ScanParameter](#defender-scanparameter)  
+- [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
+- [Defender/ScheduleScanDay](#defender-schedulescanday)  
+- [Defender/ScheduleScanTime](#defender-schedulescantime)  
+- [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
+- [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
+- [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
+  <!--EndSurfaceHub-->
 

@@ -1,8 +1,11 @@
 ---
 title: UNLOAD APP
 description: UNLOAD APP
-author: jamiejdt
+author: manikadhiman
 ms.assetid: f0d729ae-8772-498b-be11-1a4b35499c53
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

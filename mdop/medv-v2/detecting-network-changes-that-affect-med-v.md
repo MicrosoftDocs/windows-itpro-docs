@@ -1,8 +1,11 @@
 ---
 title: Detecting Network Changes that Affect MED-V
 description: Detecting Network Changes that Affect MED-V
-author: jamiejdt
+author: levinec
 ms.assetid: fd29b95a-cda2-464d-b86d-50b6bd64b4ca
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +24,7 @@ The feature includes a component running in the guest operating system that is n
 **Note**  
 This feature is only available if the virtual machine is configured for network address translation (NAT) mode. If the virtual machine is configured for BRIDGED mode, no change indications are generated.
 
- 
+ 
 
 This section provides information and instruction to assist you in monitoring those network changes that can affect MED-V.
 
@@ -30,37 +33,37 @@ This section provides information and instruction to assist you in monitoring th
 
 After you have deployed your MED-V workspaces, you can monitor changes to certain network configurations by preforming the following tasks:
 
-1.  Create a Managed Object Format (MOF) file that will look for the network configuration changes that you want to monitor. The following code shows an example of the MOF file that you can create.
+1. Create a Managed Object Format (MOF) file that will look for the network configuration changes that you want to monitor. The following code shows an example of the MOF file that you can create.
 
-    ``` syntax
-#pragma namespace ("\\\\.\\root\\ccm\\NetworkConfig")
+   ``` syntax
+   #pragma namespace ("\\\\.\\root\\ccm\\NetworkConfig")
 
-    class CCM_IPConfig
-    {
-        [NotNull: ToInstance ToSubClass] uint32 AddressFamily; // AF_INET, AF_INET6
-        [Key, NotNull: ToInstance ToSubClass] string IPAddress; // IPv4 or IPv6 address
-        [NotNull: ToInstance ToSubClass] string SubnetMask; // IPv4 subnet mask
-    };
+   class CCM_IPConfig
+   {
+       [NotNull: ToInstance ToSubClass] uint32 AddressFamily; // AF_INET, AF_INET6
+       [Key, NotNull: ToInstance ToSubClass] string IPAddress; // IPv4 or IPv6 address
+       [NotNull: ToInstance ToSubClass] string SubnetMask; // IPv4 subnet mask
+   };
 
-    class CCM_NetworkAdapter
-    {
-        [Key, NotNull: ToInstance ToSubClass] string Name;
-        [NotNull: ToInstance ToSubClass] uint32 DHCPEnabled = 0; 
-        [NotNull: ToInstance ToSubClass] uint32 Quarantined = 0; // To check if it is quarantined.
-        CCM_IPConfig IPConfigInfo[];
-    };
+   class CCM_NetworkAdapter
+   {
+       [Key, NotNull: ToInstance ToSubClass] string Name;
+       [NotNull: ToInstance ToSubClass] uint32 DHCPEnabled = 0; 
+       [NotNull: ToInstance ToSubClass] uint32 Quarantined = 0; // To check if it is quarantined.
+       CCM_IPConfig IPConfigInfo[];
+   };
 
-    [singleton]
-    class CCM_NetworkAdapters
-    {
-        [NotNull: ToInstance ToSubClass] String ProviderName; // MED-V or other provider
-        CCM_NetworkAdapter AdaptersInfo[];
-    };
-    ```
+   [singleton]
+   class CCM_NetworkAdapters
+   {
+       [NotNull: ToInstance ToSubClass] String ProviderName; // MED-V or other provider
+       CCM_NetworkAdapter AdaptersInfo[];
+   };
+   ```
 
-2.  Compile the MOF file.
+2. Compile the MOF file.
 
-3.  Install the MOF file in the guest.
+3. Install the MOF file in the guest.
 
 After you have installed the MOF file, you can create an event subscription that subscribes to Windows Management Instrumentation (WMI) creation, modification, or deletion events for the **CCM\_NetworkAdapters** class. This detects the following changes to the host:
 
@@ -83,9 +86,9 @@ The event subscription you created provides notification through the WMI system 
 
 [Manage MED-V Workspace Settings](manage-med-v-workspace-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

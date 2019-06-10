@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -13,24 +15,25 @@ ms:topic: include
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
 
->[!IMPORTANT]
->For this policy to work, enable the **Allow Telemetry** group policy with the _Enhanced_ option and enable the **Configure the Commercial ID** group policy by providing the Commercial ID.
->
->You can find these policies in the following location of the Group Policy Editor:
+> [!IMPORTANT]
+> For this policy to work, enable the **Allow Telemetry** group policy with the _Enhanced_ option and enable the **Configure the Commercial ID** group policy by providing the Commercial ID.
 > 
->**Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\**
-><ul><li>Allow Telemetry = Enabled and set to _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = _Enabled_</li></ul> 
+> You can find these policies in the following location of the Group Policy Editor:
+> 
+> **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\**
+> <ul><li>Allow Telemetry = Enabled and set to <em>Enhanced</em></li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = <em>Enabled</em></li></ul> 
 
 
 ### Supported values
 
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |No data collected or sent |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Send intranet history only | |
-|Enabled |2 |2 |Send Internet history only | |
-|Enabled |3 |3 |Send both intranet and Internet history | |
+|                Group Policy                 | MDM | Registry |               Description               |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|-----------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     |        No data collected or sent        | ![Most restricted value](/images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |       Send intranet history only        |                                                  |
+|                   Enabled                   |  2  |    2     |       Send Internet history only        |                                                  |
+|                   Enabled                   |  3  |    3     | Send both intranet and Internet history |                                                  |
+
 ---
 
 

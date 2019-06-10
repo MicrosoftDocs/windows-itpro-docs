@@ -2,11 +2,13 @@
 title: Provisioning CSP
 description: The Provisioning configuration service provider is used for bulk user enrollment to an MDM service.
 ms.assetid: 5D6C17BE-727A-4AFA-9F30-B34C1EA1D2AE
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +19,7 @@ The Provisioning configuration service provider is used for bulk user enrollment
 
 > **Note**  Bulk enrollment does not work when two factor authentication is enabled.
 
- 
+ 
 
 For bulk enrollment step-by-step guide, see [Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md).
 
@@ -31,7 +33,7 @@ Root node for Provisioning CSP.
 <a href="" id="provisioning-enrollments"></a>**Provisioning/Enrollments**  
 Node for defining bulk enrollment of users into an MDM service.
 
-<a href="" id="provisioning-enrollments-upn"></a>**Provisioning/Enrollments/****_UPN_**  
+<a href="" id="provisioning-enrollments-upn"></a>**Provisioning/Enrollments/**<strong>*UPN*</strong>  
 Unique identifier for the enrollment. For bulk enrollment, this must a service account that is allowed to enroll multiple users. Example, "generic-device@contoso.com"
 
 <a href="" id="provisioning-enrollments-upn-discoveryservicefullurl"></a>**Provisioning/Enrollments/*UPN*/DiscoveryServiceFullURL**  
@@ -56,9 +58,9 @@ Specifies the policy service URL.
 <a href="" id="provisioning-enrollments-upn-enrollmentservicefullurl"></a>**Provisioning/Enrollments/*UPN*/EnrollmentServiceFullURL**  
 Specifies the enrollment service URL.
 
- 
+ 
 
- 
+ 
 
 
 

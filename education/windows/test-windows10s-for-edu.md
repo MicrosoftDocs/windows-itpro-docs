@@ -7,9 +7,11 @@ ms.prod: w10
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: MikeBlodge
-ms.author: MikeBlodge
+author: mjcaparas
+ms.author: macapara
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices
@@ -240,7 +242,7 @@ For help with activation issues, click on the appropriate link below for support
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying <strong><a href="https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies" data-raw-source="[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)">SetEduPolicies</a></strong> using the Set up School PCs app.</small><br/>
 
 </p>
 

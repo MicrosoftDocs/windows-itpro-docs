@@ -2,11 +2,13 @@
 title: Get product package
 description: The Get product package operation retrieves the information about a specific application in the Micosoft Store for Business.
 ms.assetid: 4314C65E-6DDC-405C-A591-D66F799A341F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

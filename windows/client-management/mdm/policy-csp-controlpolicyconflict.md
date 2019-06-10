@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - ControlPolicyConflict
 description: Policy CSP - ControlPolicyConflict
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - ControlPolicyConflict
@@ -64,7 +66,7 @@ ms.date: 03/12/2018
 <!--Description-->
 Added in Windows 10, version 1803. This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
 
-> [!Note]  
+> [!NOTE]
 > MDMWinsOverGP only applies to policies in Policy CSP. It does not apply to other MDM settings with equivalent GP settings that are defined on other configuration service providers.
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.

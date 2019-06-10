@@ -2,11 +2,13 @@
 title: WindowsAdvancedThreatProtection CSP
 description: WindowsAdvancedThreatProtection CSP
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 
@@ -231,9 +233,9 @@ The following list describes the characteristics and parameters.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

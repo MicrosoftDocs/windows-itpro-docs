@@ -4,10 +4,12 @@ description: Troubleshoot common errors related to Start menu in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: kaushika
-author: kaushika-msft
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 12/03/18
+ms.reviewer: 
+manager: dansimp
 ms.topic: troubleshooting
 ---
 
@@ -183,7 +185,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 **Resolution**: This issue was resolved in the June 2017 updates. Please update Windows 10, version 1607 to the latest cumulative or feature updates.
 
->[!Note] 
+>[!NOTE]
 >When the Group Policy is enabled, the desired behavior also needs to be selected. By default, it is set to **None**.
 
 
@@ -287,7 +289,7 @@ Additionally, users may see blank tiles if logon was attempted without network c
 1. The App or Apps work fine when you click on the tiles.
 2. The tiles are blank, have a generic placeholder icon, have the wrong or strange title information.
 3. The app is missing, but listed as installed via Powershell and works if you launch via URI.
-  - Example: `windows-feedback://`
+   - Example: `windows-feedback://`
 4. In some cases, Start can be blank, and Action Center and Cortana do not launch.
 
 >[!Note]

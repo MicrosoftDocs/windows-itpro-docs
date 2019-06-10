@@ -2,12 +2,15 @@
 title: Windows To Go feature overview (Windows 10)
 description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 ms.assetid: 9df82b03-acba-442c-801d-56db241f8d42
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: workspace, mobile, installation, image, USB, device, image, edu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility, edu
 ms.sitesec: library
-author: greglin
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -33,7 +36,7 @@ PCs that meet the Windows 7 or later [certification requirements](https://go.mi
 **Note**  
 Windows To Go is not supported on Windows RT.
 
- 
+ 
 
 ## <a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows
 
@@ -69,7 +72,7 @@ These same tools can be used to provision Windows To Go drive, just as you would
 **Important**  
 Make sure you use the versions of the deployment tools provided for the version of Windows you are deploying. There have been many enhancements made to support Windows To Go. Using versions of the deployment tools released for earlier versions of Windows to provision a Windows To Go drive is not supported.
 
- 
+ 
 
 As you decide what to include in your Windows To Go image, be sure to consider the following questions:
 
@@ -103,7 +106,7 @@ As of the date of publication, the following are the USB drives currently certif
 **Warning**  
 Using a USB drive that has not been certified is not supported
 
- 
+ 
 
 -   IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
 
@@ -122,14 +125,14 @@ Using a USB drive that has not been certified is not supported
     **Important**  
     You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
-     
+     
 
 -   Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     **Tip**  
     This device contains an embedded smart card.
 
-     
+     
 
 -   Super Talent Express RC4 for Windows To Go
 
@@ -202,7 +205,7 @@ The following table details the characteristics that the host computer must have
 </tbody>
 </table>
 
- 
+ 
 
 **Checking for architectural compatibility between the host PC and the Windows To Go drive**
 
@@ -245,7 +248,7 @@ In addition to the USB boot support in the BIOS, the Windows 10 image on your W
 </tbody>
 </table>
 
- 
+ 
 
 ## Additional resources
 
@@ -271,9 +274,9 @@ In addition to the USB boot support in the BIOS, the Windows 10 image on your W
 
 -   [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
 
- 
+ 
 
- 
+ 
 
 
 

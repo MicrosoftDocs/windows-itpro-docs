@@ -1,13 +1,15 @@
 ---
 title: Set up Delivery Optimization
+ms.reviewer: 
+manager: laurawi
 description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: JaimeO
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -120,7 +122,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
- 
+ 
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
 - Number of files downloaded 

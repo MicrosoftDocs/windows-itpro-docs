@@ -4,11 +4,13 @@ description: Enable Bitlocker device encryption to protect files stored on the H
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable encryption for HoloLens

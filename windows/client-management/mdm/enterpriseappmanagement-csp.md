@@ -2,11 +2,13 @@
 title: EnterpriseAppManagement CSP
 description: EnterpriseAppManagement CSP
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +19,7 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
 > **Note**   The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
 
@@ -55,7 +57,7 @@ Supported operations are Get and Add.
 
 > **Note**   Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
 
- 
+ 
 
 <a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**
 Required. The integer value that indicates the current status of the application enrollment. Valid values are 0 (ENABLED), 1 (INSTALL\_DISABLED), 2 (REVOKED), and 3 (INVALID). Scope is dynamic.
@@ -77,7 +79,7 @@ Required. The root node for individual enterprise application inventory settings
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid"></a>**/Inventory/****_ProductID_**
+<a href="" id="-inventory-productid"></a>**/Inventory/**<strong>*ProductID*</strong>
 Optional. A node that contains s single enterprise application product ID in GUID format. Scope is dynamic.
 
 Supported operation is Get.
@@ -107,7 +109,7 @@ Required. This node groups application download-related parameters. The enterpri
 
 Supported operation is Get.
 
-<a href="" id="-download-productid"></a>**/Download/****_ProductID_**
+<a href="" id="-download-productid"></a>**/Download/**<strong>*ProductID*</strong>
 Optional. This node contains the GUID for the installed enterprise application. Each installed application has a unique ID. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
@@ -166,12 +168,12 @@ Required. The integer value that indicates the status of the current download pr
 </tr>
 <tr class="even">
 <td><p>7:DOWNLOAD_FAILED</p></td>
-<td><p>Unable to connect to server, file doesn't exist, etc.</p></td>
+<td><p>Unable to connect to server, file doesn&#39;t exist, etc.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
@@ -436,11 +438,11 @@ Install or update the installed app with the product ID “{B316008A-141D-4A79-8
 To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application does not exist, the application will be silently installed without any user interaction. If the application cannot be installed, the user will be notified with an Alert dialog.
 
 > **Note**  
-1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
+> 1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
 
-2.  The application product ID curly braces need to be escaped where { is %7B and } is %7D.
+2. The application product ID curly braces need to be escaped where { is %7B and } is %7D.
 
- 
+ 
 
 ``` syntax
 <Atomic>
@@ -533,9 +535,9 @@ Uninstall an installed enterprise application with product ID “{7BB316008A-141
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: How to View MED-V Settings and General Information
 description: How to View MED-V Settings and General Information
-author: jamiejdt
+author: dansimp
 ms.assetid: c14e3f30-c4e5-47a3-8ad1-0570fc62d991
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

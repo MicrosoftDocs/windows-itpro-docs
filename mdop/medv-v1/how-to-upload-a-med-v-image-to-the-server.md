@@ -1,8 +1,11 @@
 ---
 title: How to Upload a MED-V Image to the Server
 description: How to Upload a MED-V Image to the Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 0e70dfdf-3e3a-4860-970c-535806caa907
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,10 +21,10 @@ After a MED-V image has been tested, it can be packed and then uploaded to the s
 
 Once a MED-V image is packed and uploaded to the server, it can be distributed to users by using an enterprise software distribution center, or it can be downloaded by users using a deployment package. For information on deployment using an enterprise software distribution center, see [Deploying a MED-V Workspace Using an Enterprise Software Distribution System](deploying-a-med-v-workspace-using-an-enterprise-software-distribution-system.md). For information on deployment using a package, see [Deploying a MED-V Workspace Using a Deployment Package](deploying-a-med-v-workspace-using-a-deployment-package.md).
 
-**Note**  
+**Note**  
 Before uploading an image, verify that a Web proxy is not defined in your browser settings and that Windows Update is not currently running.
 
- 
+
 
 **To upload a MED-V image to the server**
 
@@ -55,11 +58,10 @@ Before uploading an image, verify that a Web proxy is not defined in your browse
 <td align="left"><p>Version</p></td>
 <td align="left"><p>The version of the displayed image.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>All previous versions are kept unless deleted.</p>
+<strong>Note</strong><br/><p>All previous versions are kept unless deleted.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -73,7 +75,7 @@ Before uploading an image, verify that a Web proxy is not defined in your browse
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -86,9 +88,9 @@ Before uploading an image, verify that a Web proxy is not defined in your browse
 
 [How to Pack a MED-V Image](how-to-pack-a-med-v-image.md)
 
- 
 
- 
+
+
 
 
 

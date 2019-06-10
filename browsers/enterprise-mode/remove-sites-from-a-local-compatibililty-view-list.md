@@ -3,9 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to remove sites from a local compatibility view list.
-author: jdeckerms
+author: eavena
 ms.prod: ie11
 ms.assetid: f6ecaa75-ebcb-4f8d-8721-4cd6e73c0ac9
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 title: Remove sites from a local compatibility view list (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

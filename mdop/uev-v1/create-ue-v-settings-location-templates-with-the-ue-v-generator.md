@@ -1,8 +1,11 @@
 ---
 title: Create UE-V Settings Location Templates with the UE-V Generator
 description: Create UE-V Settings Location Templates with the UE-V Generator
-author: jamiejdt
+author: levinec
 ms.assetid: b8e50e2f-0cc6-4f74-bb48-c471fefdc7d8
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +32,7 @@ The UE-V Generator monitors an application to discover and capture the locations
 **Note**  
 UE-V templates cannot be created from virtualized applications or terminal services applications. However, settings synchronized using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and terminal services applications, open a Windows Installer File (.msi) version of the application with UE-V Generator.
 
- 
+ 
 
 **Excluded Locations**
 
@@ -65,7 +68,7 @@ Use the UE-V Generator to create settings location templates for line-of-busines
     **Note**  
     Before the application is started, the system displays a prompt for **User Account Control**. Permission is required to monitor the registry and file locations that the application uses to store settings.
 
-     
+     
 
 4.  After the application starts, close the application. The UE-V Generator records the locations where the application stores its settings.
 
@@ -112,9 +115,9 @@ Use the UE-V Generator to create settings location templates for line-of-busines
 
 [Operations for UE-V 1.0](operations-for-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

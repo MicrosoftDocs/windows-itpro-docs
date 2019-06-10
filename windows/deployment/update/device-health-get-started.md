@@ -6,9 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 10/29/2018
+ms.reviewer: 
+manager: laurawi
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -32,7 +34,7 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
-    >[!NOTE] 
+    >[!NOTE]
     > Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
 
 2. In the Azure portal select **Create a resource**, search for "Device Health", and then select **Create** on the **Device Health** solution.

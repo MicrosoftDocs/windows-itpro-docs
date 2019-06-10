@@ -2,11 +2,14 @@
 title: Perform an in-place upgrade to Windows 10 using Configuration Manager (Windows 10)
 description: The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. Use a System Center Configuration Manager task sequence to completely automate the process.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 
@@ -115,7 +118,7 @@ With System Center Configuration Manager Current Branch, new built-in functional
 **Note**  
 For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
- 
+ 
 
 ### Create the OS upgrade package
 
@@ -203,9 +206,9 @@ After the task sequence completes, the computer will be fully upgraded to Window
 
 [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
 
- 
+ 
 
- 
+ 
 
 
 

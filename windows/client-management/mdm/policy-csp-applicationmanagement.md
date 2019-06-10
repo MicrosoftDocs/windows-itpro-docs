@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - ApplicationManagement
 description: Policy CSP - ApplicationManagement
-ms.author: maricia
+ms.author: v-madhi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - ApplicationManagement
@@ -598,7 +600,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 </desktop:Extension>
 ```
 
-> [!Note]  
+> [!NOTE]
 > This policy only works on modern apps.
 
 <!--/Description-->

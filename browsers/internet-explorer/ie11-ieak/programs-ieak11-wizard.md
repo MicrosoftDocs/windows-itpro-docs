@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Programs page in the IEAK 11 Customization Wizard to pick the default programs to use for Internet services.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: f715668f-a50d-4db0-b578-e6526fbfa1fc
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Use the Programs page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

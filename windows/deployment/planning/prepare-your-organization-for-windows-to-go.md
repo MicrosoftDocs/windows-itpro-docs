@@ -2,6 +2,9 @@
 title: Prepare your organization for Windows To Go (Windows 10)
 description: Prepare your organization for Windows To Go
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: ["mobile, device, USB, deploy"]
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -58,7 +61,7 @@ The following scenarios are examples of situations in which Windows To Go worksp
 **Note**  
 If the employee wants to work offline for the majority of the time, but still maintain the ability to use the drive on the enterprise network, they should be informed of how often the Windows To Go workspace needs to be connected to the enterprise network. Doing so will ensure that the drive retains its access privileges and the workspace’s computer object is not potentially deleted from Active Directory Domain Services (AD DS).
 
- 
+ 
 
 ## Infrastructure considerations
 
@@ -77,7 +80,7 @@ You should investigate other software manufacturer’s licensing requirements to
 **Note**  
 Using Multiple Activation Key (MAK) activation is not a supported activation method for Windows To Go as each different PC-host would require separate activation. MAK activation should not be used for activating Windows, Office, or any other application on a Windows To Go drive.
 
- 
+ 
 
 See [Plan for Volume Activation](https://go.microsoft.com/fwlink/p/?LinkId=618923) for more information about these activation methods and how they can be used in your organization.
 
@@ -118,9 +121,9 @@ If you want Windows To Go to be able to connect back to organizational resources
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

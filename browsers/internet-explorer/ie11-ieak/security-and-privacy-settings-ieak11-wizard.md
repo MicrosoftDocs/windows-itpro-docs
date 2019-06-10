@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Security and Privacy Settings page in the IEAK 11 Customization Wizard to manage your security zones, privacy settings, and content ratings.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: cb7cd1df-6a79-42f6-b3a1-8ae467053f82
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Use the Security and Privacy Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

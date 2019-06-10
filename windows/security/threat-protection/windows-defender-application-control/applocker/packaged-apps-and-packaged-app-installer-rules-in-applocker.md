@@ -2,12 +2,14 @@
 title: Packaged apps and packaged app installer rules in AppLocker (Windows 10)
 description: This topic explains the AppLocker rule collection for packaged app installers and packaged apps.
 ms.assetid: 8fd44d08-a0c2-4c5b-a91f-5cb9989f971d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

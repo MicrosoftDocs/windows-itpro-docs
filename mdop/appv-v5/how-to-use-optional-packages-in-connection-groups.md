@@ -1,8 +1,11 @@
 ---
 title: How to Use Optional Packages in Connection Groups
 description: How to Use Optional Packages in Connection Groups
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Starting in Microsoft Application Virtualization (App-V) 5.0 SP3, you can add op
 **Note**  
 **Optional packages are supported only in App-V 5.0 SP3.**
 
- 
+ 
 
 Before using optional packages, see [Requirements for using optional packages in connection groups](#bkmk-reqs-using-cg).
 
@@ -36,19 +39,19 @@ Before using optional packages, see [Requirements for using optional packages in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Use one connection group, with optional packages, for multiple users who have different packages entitled to them](#bkmk-apps-plugs-optional)</p></td>
+<td align="left"><p><a href="#bkmk-apps-plugs-optional" data-raw-source="[Use one connection group, with optional packages, for multiple users who have different packages entitled to them](#bkmk-apps-plugs-optional)">Use one connection group, with optional packages, for multiple users who have different packages entitled to them</a></p></td>
 <td align="left"><p>Use a single connection group to make different groups of applications and plug-ins available to different end users.</p>
 <p>For example, you want to distribute Microsoft Office to all end users, but distribute different plug-ins to different subsets of users.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Unpublish or delete an optional package, or unpublish an optional package and republish it later, without changing the connection group](#bkmk-unpub-del-optl-pkg)</p></td>
+<td align="left"><p><a href="#bkmk-unpub-del-optl-pkg" data-raw-source="[Unpublish or delete an optional package, or unpublish an optional package and republish it later, without changing the connection group](#bkmk-unpub-del-optl-pkg)">Unpublish or delete an optional package, or unpublish an optional package and republish it later, without changing the connection group</a></p></td>
 <td align="left"><p>Unpublish, delete, or republish an optional package without having to disable, remove, edit, add, and re-enable the connection group on the App-V Client.</p>
 <p>You can also unpublish the optional package and republish it later without having to disable or republish the connection group.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-apps-plugs-optional"></a>Use one connection group, with optional packages, for multiple users with different packages entitled to them
 
@@ -116,7 +119,7 @@ Before using optional packages, see [Requirements for using optional packages in
 <p><strong>Example connection group XML document with optional packages:</strong></p>
 <pre class="syntax" space="preserve"><code>&lt;?xml version=&quot;1.0&quot; ?&gt;
 &lt;AppConnectionGroup
-   xmlns=&quot;http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot;
+   xmlns=&quot;<a href="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;
    AppConnectionGroupId=&quot;8105CCD5-244B-4BA1-8888-E321E688D2CB&quot;
    VersionId=&quot;84CE3797-F1CB-4475-A223-757918929EB4&quot;
    DisplayName=&quot;Contoso Software Connection Group&quot; &gt;
@@ -162,7 +165,7 @@ Before using optional packages, see [Requirements for using optional packages in
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-unpub-del-optl-pkg"></a>Unpublish or delete an optional package, or unpublish an optional package and republish it later, without changing the connection group
 
@@ -210,7 +213,7 @@ Before using optional packages, see [Requirements for using optional packages in
 <li><p>Unpublish-AppvClientPackage</p></li>
 <li><p>Remove-AppvClientPackage</p></li>
 </ul>
-<p>For more information, see [How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md).</p></td>
+<p>For more information, see <a href="how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md" data-raw-source="[How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md)">How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -229,7 +232,7 @@ Before using optional packages, see [Requirements for using optional packages in
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-reqs-using-cg"></a>Requirements for using optional packages in connection groups
 
@@ -276,7 +279,7 @@ Review the following requirements before using optional packages in connection g
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -288,9 +291,9 @@ Review the following requirements before using optional packages in connection g
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 
