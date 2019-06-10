@@ -38,9 +38,9 @@ Set-Msoluser -UserPrincipalName account@YourDomain.com -UsageLocation IE
 Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "contoso:MEETING_ROOM"
 ```
 
-# Connect to Skype for Business Online using PowerShell
+## Connect to Skype for Business Online using PowerShell
 
-**Install prerequisites**
+### Install prerequisites
 
 - [Visual C++ 2017 Redistributable](https://aka.ms/vs/15/release/vc_redist.x64.exe)
 - [Skype for Business Online PowerShell Module](https://www.microsoft.com/en-us/download/confirmation.aspx?id=39366)

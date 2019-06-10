@@ -13,7 +13,7 @@ ms.localizationpriority: Normal
 
 # Create Surface Hub 2S device account
 
-Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve or decline meeting requests as well as join meetings using Microsoft Teams or Skype for Business. Configure the device account during OOBE setup. If needed you can changed it later (without going through OOBE setup).
+Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests as well as join meetings using Microsoft Teams or Skype for Business. Configure the device account during OOBE setup. If needed you can changed it later (without going through OOBE setup).
 
 Unlike standard Room mailboxes that remain disabled by default, you’ll need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
 
@@ -30,17 +30,22 @@ For more information, see [Configure Surface Hub 2S accounts via PowerShell].
 1. In the Office 365 Admin portal, go to Resources and choose Rooms & Equipment.
 
 2. Provide a name and email address for the device account. Leave remaining settings unchanged in the default state.
+
 ![Provide a name and email address](images/sh2-account2.png)
+
 ![Leave remaining settings unchanged in the default state](images/sh2-account3.png)
 
 3. Set the password for the device account. Ensure you **do not** select the option **Make this user change their password when they first sign in.**
+
 ![Set the password for the device account](images/sh2-account4.png)
 
 4. Assign the room with an Office 365 license. It’s recommended to assign the Office 365 **Meeting Room** license, a new option that automatically enables the account for Skype for Business Online and Microsoft Teams.
 ![Assign Office 365 license](images/sh2-account5.png)
 
 ## Finalize setup via PowerShell
-- **Skype for Business.** If you did not choose an Office 365 Meeting Room license, you can enable the Skype for Business object by running Enable-CsMeetingRoom.
-- **Calling features.** Regardless of your Office 365 licensing configuration, run Enable-CsMeetingRoom to enable features such as **Meeting room prompt for audio** and **Lobby hold**.
-- **Calendar.** Set **Calendar Auto processing** for this account.<br><br>
+
+- **Skype for Business:** If you did not choose an Office 365 Meeting Room license, you can enable the Skype for Business object by running *Enable-CsMeetingRoom*.
+- **Calling features:** Regardless of your Office 365 licensing configuration, run *Enable-CsMeetingRoom* to enable features such as **Meeting room prompt for audio** and **Lobby hold**.
+- **Calendar:** Set **Calendar Auto processing** for this account.
+
 For more information, see [Configure Surface Hub 2S accounts via PowerShell.](devices\surface-hub\surface-hub-2s-configure-using-o365.md)
