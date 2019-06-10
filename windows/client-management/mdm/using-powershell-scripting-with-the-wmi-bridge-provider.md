@@ -4,7 +4,7 @@ description: This topic covers using PowerShell Cmdlet scripts to configure per-
 ms.assetid: 238D45AD-3FD8-46F9-B7FB-6AEE42BE4C08
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

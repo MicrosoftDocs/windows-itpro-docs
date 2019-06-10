@@ -4,7 +4,7 @@ description: EMAIL2 CSP
 ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

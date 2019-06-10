@@ -4,7 +4,7 @@ description: ICSPValidate
 ms.assetid: b0993f2d-6269-412f-a329-af25fff34ca2
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
