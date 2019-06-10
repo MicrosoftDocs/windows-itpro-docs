@@ -102,7 +102,7 @@ You can enable it by performting the following steps:
 
 Note, that if you won't complete this step [during 30 minutes](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) after the installation, the prompt will disappear:
 
-    ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+    ![Security and privacy window after prompt expired screenshot](MDATP_33_SecurityPrivacySettings_NoPrompt.png)
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
@@ -120,6 +120,16 @@ Note, that if you won't complete this step [during 30 minutes](https://developer
 
     ```bash
     mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+    ```
+
+The banner would disappear from the Defender application, and ```mdatp --health``` would now report that Real Time Protection is both enabled and available:
+
+    ```bash
+    mavel-mojave:~ testuser$ mdatp --health
+    ...
+    realTimeProtectionAvailable             : true
+    realTimeProtectionEnabled               : true
+    ...
     ```
 
 ## Client configuration
