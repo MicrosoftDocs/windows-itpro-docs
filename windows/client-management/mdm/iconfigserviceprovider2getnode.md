@@ -4,7 +4,7 @@ description: IConfigServiceProvider2 GetNode
 ms.assetid: 4dc10a59-f6a2-45c0-927c-d594afc9bb91
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

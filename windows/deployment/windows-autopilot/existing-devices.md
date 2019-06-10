@@ -1,17 +1,16 @@
 ---
 title: Windows Autopilot for existing devices
-description: Listing of Autopilot scenarios
+description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: dulcemontemayor
-ms.author: dolmont
-ms.date: 11/05/2018
-ms.reviewer: 
-manager: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -23,6 +22,9 @@ ms.topic: article
 Modern desktop management with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices. The apps you need for work can be automatically installed. Your work profile is synchronized, so you can resume working right away.
 
 This topic describes how to convert Windows 7 or Windows 8.1 domain-joined computers to Azure Active Directory-joined computers running Windows 10 by using Windows Autopilot.
+
+>[NOTE!]
+>Windows Autopilot for existing devices only supports user-driven Azure Active Directory profiles. Hybrid AAD joined devices and self-deploying profiles are not supported.
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ description: Defender DDF file
 ms.assetid: 39B9E6CF-4857-4199-B3C3-EC740A439F65
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

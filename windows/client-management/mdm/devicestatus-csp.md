@@ -4,7 +4,7 @@ description: The DeviceStatus configuration service provider is used by the ente
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -89,12 +89,74 @@ The commands can also be run remotely, as long as WMI permissions are in place a
 
 ## Registering devices
 
-Once the hardware IDs have been captured from existing devices, they can be uploaded through a variety of means. See the detailed documentation for each available mechanism:
+<img src="./images/image2.png" width="511" height="249" />
+
+
+Once the hardware IDs have been captured from existing devices, they can be uploaded through a variety of means. See the detailed documentation for each available mechanism.
 
 -   [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot).  This is the preferred mechanism for all customers.
-
 -   [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).  This is used by CSP partners to register devices on behalf of customers.
-
 -   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
+-   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
--   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  
+A summary of each platform's capabilities is provided below.
+
+<table>
+<tr>
+<td BGCOLOR="#a0e4fa"><B>Platform/Portal</th>
+<td BGCOLOR="#a0e4fa"><B>Register devices?</th>
+<td BGCOLOR="#a0e4fa"><B>Create/Assign profile</th>
+<td BGCOLOR="#a0e4fa"><B>Acceptable DeviceID</th>
+</tr>
+
+<tr>
+<td>OEM Direct API</td>
+<td>YES - 1000 at a time max</td>
+<td>NO</td>
+<td>Tuple or PKID</td>
+</tr>
+
+<tr>
+<td><a href="https://docs.microsoft.com/partner-center/autopilot">Partner Center</a></td>
+<td>YES - 1000 at a time max</td>
+<td>YES</td>
+<td>Tuple or PKID or 4K HH</td>
+</tr>
+
+<tr>
+<td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
+<td>YES - 500 at a time max<b>\*</b></td>
+<td>YES<b>\*</b></td>
+<td>4K HH</td>
+</tr>
+
+<tr>
+<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a></td>
+<td>YES - 1000 at a time max</td>
+<td>YES</td>
+<td>4K HH</td>
+</tr>
+
+<tr>
+<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft Business 365</a></td>
+<td>YES - 1000 at a time max</td>
+<td>YES</td>
+<td>4K HH</td>
+</tr>
+
+</table>
+
+><b>*</b>Microsoft recommended platform to use
+
+## Summary
+
+When deploying new devices using Windows Autopilot, the following steps are required:
+
+1.  [Register devices](#registering-devices). Ideally, this step is performed by the OEM, reseller, or distributor from which the devices were purchased, but this can also be done by the organization by collecting the hardware identity and uploading it manually.
+2.  [Configure device profiles](profiles.md), specifying how the device should be deployed and what user experience should be presented.
+3.  Boot the device. When the device is connected to a network with internet access, it will contact the Windows Autopilot deployment service to see if the device is registered, and if it is, it will download profile settings such as the [Enrollment Status page](enrollment-status.md), which are used to customize the end user experience.
+
+## Other configuration settings
+
+- [Bitlocker encryption settings](bitlocker.md): You can configure the BitLocker encryption settings to be applied before automatic encryption is started.
+

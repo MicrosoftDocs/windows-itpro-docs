@@ -4,7 +4,7 @@ description: The Get seats operation retrieves the information about active seat
 ms.assetid: 32945788-47AC-4259-B616-F359D48F4F2F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -4,7 +4,7 @@ description: The EnterpriseDataProtection configuration service provider (CSP) i
 ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

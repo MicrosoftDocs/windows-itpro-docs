@@ -4,7 +4,7 @@ description: ICSPNode Copy
 ms.assetid: cd5ce0bc-a08b-4f82-802d-c7ff8701b41f
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
