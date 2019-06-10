@@ -96,7 +96,7 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
 
 3. Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
 
-   >[!NOTE]  
+   >[!NOTE]
    >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
 
  
@@ -160,7 +160,7 @@ This section provides steps to help you configure the All Unknown Computers coll
 
 3. Click **OK**.
 
-   >[!NOTE]  
+   >[!NOTE]
    >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
    
    ![Configure a collection variable](../images/mdt-06-fig35.png)

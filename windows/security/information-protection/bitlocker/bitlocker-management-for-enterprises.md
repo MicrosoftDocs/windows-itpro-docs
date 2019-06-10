@@ -46,7 +46,7 @@ For Windows PCs and Windows Phones that enroll using **Connect to work or school
 
 ##  Managing servers
 
-Servers are often installed, configured, and deployed using PowerShell, so the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#a-href-idbkmk-blcmdletsabitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server, so follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC. 
+Servers are often installed, configured, and deployed using PowerShell, so the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server, so follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC. 
 
 The Minimal Server Interface is a prerequisite for some of the BitLocker administration tools. On a [Server Core](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-core) installation, you must add the necessary GUI components first. The steps to add shell components to Server Core are described in [Using Features on Demand with Updated Systems and Patched Images](https://blogs.technet.microsoft.com/server_core/2012/11/05/using-features-on-demand-with-updated-systems-and-patched-images/) and [How to update local source media to add roles and features](https://blogs.technet.microsoft.com/joscon/2012/11/14/how-to-update-local-source-media-to-add-roles-and-features/).  
 
@@ -135,6 +135,6 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 <a id="powershell"></a>
 **Powershell**
 
-[BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#a-href-idbkmk-blcmdletsabitlocker-cmdlets-for-windows-powershell) 
+[BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell) 
 
 [Surface Pro Specifications](https://www.microsoft.com/surface/support/surface-pro-specs)

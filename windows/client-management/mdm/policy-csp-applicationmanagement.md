@@ -600,7 +600,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 </desktop:Extension>
 ```
 
-> [!Note]  
+> [!NOTE]
 > This policy only works on modern apps.
 
 <!--/Description-->
