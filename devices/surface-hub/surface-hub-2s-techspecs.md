@@ -16,7 +16,7 @@ ms.localizationpriority: Normal
 ## General specs
 
 | Item | Details |
-| ---- | ------- |
+|:---- |:------- |
 | **Size** | 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
 | **Weight** | 61.6 lbs. (28 kg) |
 | **Resolution** | 3840 x 2560 |
@@ -37,7 +37,7 @@ ms.localizationpriority: Normal
 ## Pen tech specs
 
 | Item | Details |
-| ---- | ------- |
+|:---- |:------- |
 | **Dimensions** | 5.94" x 0.64" x 0.56” (151 mm x 16.3 mm x 14.3 mm) |
 | **Weight** | 0.09 lbs. (41g) |
 | **Buttons** | Barrel button and tail eraser |
@@ -49,7 +49,7 @@ ms.localizationpriority: Normal
 ## Camera tech specs
 
 | Item | Specification Details |
-| ---- | --------------------- |
+|:---- |:--------------------- |
 |**Dimensions** | 2.26" x 2.18" x 1.65” (57.5 mm x 55.3 mm x 42 mm) |
 |**Weight** | 0.19 lbs. (88.01 g) |
 | **Connection** | USB-C (with magnetic attach) |
@@ -63,7 +63,7 @@ ms.localizationpriority: Normal
 > The optional mobile battery is sold separately. For more information, see [APC Charge Mobile Battery](https://www.apc.com/us/en/campaign/apc-charge-mobile-battery-for-microsoft-surface-hub-2.jsp).
 
 | Item | Details |
-| ---- | ------- |
+|:---- |:------- |
 | **Dimensions** | 11 x 17 x 5 inches (282 x 432 x 127 mm) |
 | **Weight** | ~30 lbs. (13.6 kg) |
 | **Connection** | AC input/DC output & USB-A |
