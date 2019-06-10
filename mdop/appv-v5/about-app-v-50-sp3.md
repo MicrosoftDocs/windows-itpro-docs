@@ -1,7 +1,7 @@
 ---
 title: About App-V 5.0 SP3
 description: About App-V 5.0 SP3
-author: dansimp
+author: manikadhiman
 ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
 ms.reviewer: 
 manager: dansimp
@@ -59,17 +59,17 @@ See the following links for the App-V 5.0 SP3 software prerequisites and support
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[App-V 5.0 SP3 Prerequisites](app-v-50-sp3-prerequisites.md)</p></td>
+<td align="left"><p><a href="app-v-50-sp3-prerequisites.md" data-raw-source="[App-V 5.0 SP3 Prerequisites](app-v-50-sp3-prerequisites.md)">App-V 5.0 SP3 Prerequisites</a></p></td>
 <td align="left"><p>Prerequisite software that you must install before starting the App-V 5.0 SP3 installation</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[App-V 5.0 SP3 Supported Configurations](app-v-50-sp3-supported-configurations.md)</p></td>
+<td align="left"><p><a href="app-v-50-sp3-supported-configurations.md" data-raw-source="[App-V 5.0 SP3 Supported Configurations](app-v-50-sp3-supported-configurations.md)">App-V 5.0 SP3 Supported Configurations</a></p></td>
 <td align="left"><p>Supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client components</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-migrate-to-50sp3"></a>Migrating to App-V 5.0 SP3
 
@@ -101,11 +101,10 @@ Review the following information before you start the upgrade:
 <li><p>Connection groups</p></li>
 </ol>
 <div class="alert">
-<strong>Note</strong>  
-<p>To use the App-V client user interface, download the existing version from [Microsoft Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186).</p>
+<strong>Note</strong><br/><p>To use the App-V client user interface, download the existing version from <a href="https://www.microsoft.com/download/details.aspx?id=41186" data-raw-source="[Microsoft Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186)">Microsoft Application Virtualization 5.0 Client UI Application</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -113,8 +112,8 @@ Review the following information before you start the upgrade:
 <td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.0 SP3.</p>
 <p>For more information, see:</p>
 <ul>
-<li><p>[About App-V 5.0](about-app-v-50.md) </p></li>
-<li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
+<li><p><a href="about-app-v-50.md" data-raw-source="[About App-V 5.0](about-app-v-50.md)">About App-V 5.0</a> </p></li>
+<li><p><a href="planning-for-migrating-from-a-previous-version-of-app-v.md" data-raw-source="[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)">Planning for Migrating from a Previous Version of App-V</a></p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -135,7 +134,7 @@ Review the following information before you start the upgrade:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-steps-upgrd-infrastruc"></a>Steps to upgrade the App-V infrastructure
 
@@ -157,15 +156,14 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <td align="left"><p>Step 1: Upgrade the App-V Server.</p>
 <p>If you are not using the App-V Server, skip this step and go to the next step.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The App-V 5.0 SP3 client is compatible with the App-V 5.0 SP1 Server.</p>
+<strong>Note</strong><br/><p>The App-V 5.0 SP3 client is compatible with the App-V 5.0 SP1 Server.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Follow these steps:</p>
 <ol>
-<li><p>Review the [Release Notes for App-V 5.0 SP3](release-notes-for-app-v-50-sp3.md) for issues that may affect the App-V Server installation.</p></li>
+<li><p>Review the <a href="release-notes-for-app-v-50-sp3.md" data-raw-source="[Release Notes for App-V 5.0 SP3](release-notes-for-app-v-50-sp3.md)">Release Notes for App-V 5.0 SP3</a> for issues that may affect the App-V Server installation.</p></li>
 <li><p>Do one of the following, depending on the method you are using to upgrade the Management database and/or Reporting database:</p>
 <table>
 <colgroup>
@@ -193,35 +191,35 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Management database</strong></p></td>
-<td align="left"><p>To install or upgrade, see [SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](https://support.microsoft.com/kb/3031340).</p></td>
+<td align="left"><p>To install or upgrade, see <a href="https://support.microsoft.com/kb/3031340" data-raw-source="[SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](https://support.microsoft.com/kb/3031340)">SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Reporting database</strong></p></td>
-<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md).</p></td>
+<td align="left"><p>Follow the steps in <a href="how-to-deploy-the-app-v-databases-by-using-sql-scripts.md" data-raw-source="[How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md)">How to Deploy the App-V Databases by Using SQL Scripts</a>.</p></td>
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 </tbody>
 </table>
-<p> </p></li>
-<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](#bkmk-check-reg-key-svr).</p></li>
-<li><p>Follow the steps in [How to Deploy the App-V 5.0 Server](how-to-deploy-the-app-v-50-server-50sp3.md).</p></li>
+<p> </p></li>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section <a href="#bkmk-check-reg-key-svr" data-raw-source="[Check registry keys after installing the App-V 5.0 SP3 Server](#bkmk-check-reg-key-svr)">Check registry keys after installing the App-V 5.0 SP3 Server</a>.</p></li>
+<li><p>Follow the steps in <a href="how-to-deploy-the-app-v-50-server-50sp3.md" data-raw-source="[How to Deploy the App-V 5.0 Server](how-to-deploy-the-app-v-50-server-50sp3.md)">How to Deploy the App-V 5.0 Server</a>.</p></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Step 2: Upgrade the App-V Sequencer.</p></td>
-<td align="left"><p>See [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).</p></td>
+<td align="left"><p>See <a href="how-to-install-the-sequencer-beta-gb18030.md" data-raw-source="[How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md)">How to Install the Sequencer</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Step 3: Upgrade the App-V client or App-V RDS client.</p></td>
-<td align="left"><p>See [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md).</p></td>
+<td align="left"><p>See <a href="how-to-deploy-the-app-v-client-gb18030.md" data-raw-source="[How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md)">How to Deploy the App-V Client</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-check-reg-key-svr"></a>Check registry keys before installing the App-V 5.0 SP3 Server
 
@@ -252,7 +250,7 @@ This is step 3 from the previous table.
 </tbody>
 </table>
 
- 
+
 
 **ManagementDatabase key**
 
@@ -320,7 +318,7 @@ If you are installing the Management database, set these registry keys under `HK
 </tbody>
 </table>
 
- 
+
 
 **ManagementService key**
 
@@ -355,7 +353,7 @@ If you are installing the Management server, set these registry keys under `HKLM
 </tbody>
 </table>
 
- 
+
 
 **ReportingDatabase key**
 
@@ -423,7 +421,7 @@ If you are installing the Reporting database, set these registry keys under `HKL
 </tbody>
 </table>
 
- 
+
 
 **ReportingService key**
 
@@ -454,7 +452,7 @@ If you are installing the Reporting server, set these registry keys under `HKLM\
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-update-schema-cg"></a>Manually created connection group xml file requires update to schema
 
@@ -489,27 +487,27 @@ You can manage connection groups more easily by using optional packages and othe
 <td align="left"><p>Including optional packages in a connection group enables you to dynamically determine which applications will be included in the connection group’s virtual environment, based on the applications that users are entitled to.</p>
 <p>You don’t need to manage as many connection groups because you can mix optional and non-optional packages in the same connection group. Mixing packages allows different groups of users to use the same connection group, even though users might have only one package in common.</p>
 <p><strong>Example</strong>: You can enable a package with Microsoft Office for all users, but enable different optional packages, which contain different Office plug-ins, to different subsets of users.</p></td>
-<td align="left"><p>[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)</p></td>
+<td align="left"><p><a href="how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional" data-raw-source="[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)">How to Use Optional Packages in Connection Groups</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Unpublish or delete an optional package without changing the connection group</p></td>
 <td align="left"><p>Unpublish or delete, or unpublish and republish an optional package, which is in a connection group, without having to disable or re-enable the connection group on the App-V client.</p></td>
-<td align="left"><p>[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)</p></td>
+<td align="left"><p><a href="how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional" data-raw-source="[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)">How to Use Optional Packages in Connection Groups</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Publish connection groups that contain user-published and globally published packages</p></td>
 <td align="left"><p>Create a user-published connection group that contains user-published and globally published packages.</p></td>
-<td align="left"><p>[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md)</p></td>
+<td align="left"><p><a href="how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md" data-raw-source="[How to Create a Connection Group with User-Published and Globally Published Packages](how-to-create-a-connection-group-with-user-published-and-globally-published-packages.md)">How to Create a Connection Group with User-Published and Globally Published Packages</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Make a connection group ignore the package version</p></td>
 <td align="left"><p>Configure a connection group to accept any version of a package, which enables you to upgrade a package without having to disable the connection group. In addition, if there is an optional package with an incorrect version in the connection group, the package is ignored and won’t block the connection group’s virtual environment from being created.</p></td>
-<td align="left"><p>[How to Make a Connection Group Ignore the Package Version](how-to-make-a-connection-group-ignore-the-package-version.md)</p></td>
+<td align="left"><p><a href="how-to-make-a-connection-group-ignore-the-package-version.md" data-raw-source="[How to Make a Connection Group Ignore the Package Version](how-to-make-a-connection-group-ignore-the-package-version.md)">How to Make a Connection Group Ignore the Package Version</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Limit end users’ publishing capabilities</p></td>
 <td align="left"><p>Enable only administrators (not end users) to publish packages and to enable connection groups.</p></td>
-<td align="left"><p>For information about connection groups, see [How to Allow Only Administrators to Enable Connection Groups](how-to-allow-only-administrators-to-enable-connection-groups.md)</p>
+<td align="left"><p>For information about connection groups, see <a href="how-to-allow-only-administrators-to-enable-connection-groups.md" data-raw-source="[How to Allow Only Administrators to Enable Connection Groups](how-to-allow-only-administrators-to-enable-connection-groups.md)">How to Allow Only Administrators to Enable Connection Groups</a></p>
 <p>For information about packages, see the following articles:</p>
 <table>
 <colgroup>
@@ -525,19 +523,19 @@ You can manage connection groups more easily by using optional packages and othe
 <tbody>
 <tr class="odd">
 <td align="left"><p>Management console</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md)</p></td>
+<td align="left"><p><a href="how-to-publish-a-package-by-using-the-management-console-50.md" data-raw-source="[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md)">How to Publish a Package by Using the Management Console</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PowerShell</p></td>
-<td align="left"><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admin-only-posh-topic-cg)</p></td>
+<td align="left"><p><a href="how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admin-only-posh-topic-cg" data-raw-source="[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admin-only-posh-topic-cg)">How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Third-party electronic software delivery system</p></td>
-<td align="left"><p>[How to Enable Only Administrators to Publish Packages by Using an ESD](how-to-enable-only-administrators-to-publish-packages-by-using-an-esd.md)</p></td>
+<td align="left"><p><a href="how-to-enable-only-administrators-to-publish-packages-by-using-an-esd.md" data-raw-source="[How to Enable Only Administrators to Publish Packages by Using an ESD](how-to-enable-only-administrators-to-publish-packages-by-using-an-esd.md)">How to Enable Only Administrators to Publish Packages by Using an ESD</a></p></td>
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enable or disable a connection group for a specific user</p></td>
@@ -546,18 +544,18 @@ You can manage connection groups more easily by using optional packages and othe
 <li><p>Enable-AppVClientConnectionGroup</p></li>
 <li><p>Disable-AppVClientConnectionGroup</p></li>
 </ul></td>
-<td align="left"><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-enable-cg-for-user-poshtopic)</p></td>
+<td align="left"><p><a href="how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-enable-cg-for-user-poshtopic" data-raw-source="[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md#bkmk-enable-cg-for-user-poshtopic)">How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Merging identical package paths into one virtual directory in connection groups</p></td>
 <td align="left"><p>If two or more packages in a connection group contain identical directory paths, the paths are merged into a single virtual directory inside the connection group virtual environment.</p>
 <p>This merging of paths allows an application in one package to access files that are in a different package.</p></td>
-<td align="left"><p>[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment.md#bkmk-merged-root-ve-exp)</p></td>
+<td align="left"><p><a href="about-the-connection-group-virtual-environment.md#bkmk-merged-root-ve-exp" data-raw-source="[About the Connection Group Virtual Environment](about-the-connection-group-virtual-environment.md#bkmk-merged-root-ve-exp)">About the Connection Group Virtual Environment</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-usersid-pub-pkgs-specf-user"></a>Administrators can publish and unpublish packages for a specific user
 
@@ -591,7 +589,7 @@ Administrators can use the following cmdlets to publish or unpublish packages fo
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-admins-only-pub-unpub-pkgs"></a>Enable only administrators to publish and unpublish packages
 
@@ -618,12 +616,12 @@ You can enable only administrators (not end users) to publish and unpublish pack
 </tr>
 <tr class="even">
 <td align="left"><p>PowerShell</p></td>
-<td align="left"><p>[How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admins-pub-pkgs)</p></td>
+<td align="left"><p><a href="how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admins-pub-pkgs" data-raw-source="[How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admins-pub-pkgs)">How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-runvirtual-reg-key"></a>RunVirtual registry key supports packages that are published to the user
 
@@ -655,7 +653,7 @@ New Windows PowerShell cmdlets for the App-V Server have been added to help you 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Add-AppvServerConnectionGroupPackage</p></td>
-<td align="left"><p>Appends a package to the end of a connection group's package list and enables you to configure the package as optional and/or with no version within the connection group.</p></td>
+<td align="left"><p>Appends a package to the end of a connection group&#39;s package list and enables you to configure the package as optional and/or with no version within the connection group.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Set-AppvServerConnectionGroupPackage</p></td>
@@ -668,7 +666,7 @@ New Windows PowerShell cmdlets for the App-V Server have been added to help you 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the PowerShell cmdlets
 
@@ -719,16 +717,16 @@ Cmdlet help is available in the following formats:
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as web pages</p></td>
-<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).</p></td>
+<td align="left"><p>See the App-V node under <a href="https://technet.microsoft.com/library/dn520245.aspx" data-raw-source="[Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx)">Microsoft Desktop Optimization Pack Automation with Windows PowerShell</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For more information, see [How to Load the PowerShell Cmdlets and Get Cmdlet Help](how-to-load-the-powershell-cmdlets-and-get-cmdlet-help-50-sp3.md).
 
@@ -758,11 +756,10 @@ The primary virtual application directory (PVAD) is hidden in App-V 5.0 SP3, but
 <td align="left"><ol>
 <li><p>In the Registry Editor, navigate to: <code>HKLM\SOFTWARE\Microsoft\AppV\Sequencer\Compatibility</code></p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the <code>Compatability</code> subkey doesn’t exist, you must create it.</p>
+<strong>Note</strong><br/><p>If the <code>Compatability</code> subkey doesn’t exist, you must create it.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Create a DWORD Value named <strong>EnablePVADControl</strong>, and set the value to <strong>1</strong>.</p>
 <p>A value of <strong>0</strong> means that PVAD is hidden.</p></li>
@@ -771,7 +768,7 @@ The primary virtual application directory (PVAD) is hidden in App-V 5.0 SP3, but
 </tbody>
 </table>
 
- 
+
 
 **More about PVAD:** When you use the Sequencer to create a package, you can enter any installation path for the package. In past versions of App-V, you were required to specify the primary virtual application directory (PVAD) of the application as the path. PVAD is the directory to which you would typically install an application on your local computer if you weren’t using App-V. For example, if you were installing Office on a computer, the PVAD typically would be C:\\Program Files\\Microsoft Office\\.
 
@@ -804,7 +801,7 @@ In App-V 5.0 SP3, you must provide the following values in the address when you 
 </tbody>
 </table>
 
- 
+
 
 For syntax and examples of this query, see [Viewing App-V Server Publishing Metadata](viewing-app-v-server-publishing-metadata.md).
 
@@ -832,9 +829,9 @@ App-V is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part 
 
 [Release Notes for App-V 5.0 SP3](release-notes-for-app-v-50-sp3.md)
 
- 
 
- 
+
+
 
 
 

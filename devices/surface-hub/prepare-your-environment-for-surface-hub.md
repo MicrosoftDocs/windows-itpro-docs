@@ -102,15 +102,15 @@ When you go through the first-run program for your Surface Hub, there's some inf
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Create and test a device account](create-and-test-a-device-account-surface-hub.md)</p></td>
+<td align="left"><p><a href="create-and-test-a-device-account-surface-hub.md" data-raw-source="[Create and test a device account](create-and-test-a-device-account-surface-hub.md)">Create and test a device account</a></p></td>
 <td align="left"><p>This topic introduces how to create and test the device account that Surface Hub uses to communicate with and Skype.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md)</p></td>
+<td align="left"><p><a href="provisioning-packages-for-certificates-surface-hub.md" data-raw-source="[Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md)">Create provisioning packages</a></p></td>
 <td align="left"><p>For Windows 10, settings that use the registry or a content services platform (CSP) can be configured using provisioning packages. You can also add certificates during first run using provisioning.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Admin group management](admin-group-management-for-surface-hub.md)</p></td>
+<td align="left"><p><a href="admin-group-management-for-surface-hub.md" data-raw-source="[Admin group management](admin-group-management-for-surface-hub.md)">Admin group management</a></p></td>
 <td align="left"><p>Every Surface Hub can be configured individually by opening the Settings app on the device. However, to prevent people who are not administrators from changing the settings, the Settings app requires administrator credentials to open the app and change settings.</p>
 <p>The Settings app requires local administrator credentials to open the app.</p></td>
 </tr>
@@ -123,9 +123,9 @@ When you go through the first-run program for your Surface Hub, there's some inf
 - [Blog post: Surface Hub in a Multi-Domain Environment](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
 - [Blog post: Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
 
- 
+ 
 
- 
+ 
 
 
 

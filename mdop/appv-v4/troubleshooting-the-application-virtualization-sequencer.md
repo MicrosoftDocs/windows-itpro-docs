@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting the Application Virtualization Sequencer
 description: Troubleshooting the Application Virtualization Sequencer
-author: dansimp
+author: manikadhiman
 ms.assetid: 12ea8367-0b84-44e1-a885-e0539486556b
 ms.reviewer: 
 manager: dansimp

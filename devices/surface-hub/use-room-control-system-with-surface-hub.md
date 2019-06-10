@@ -33,7 +33,7 @@ To connect to a room control system control panel, you don't need to configure a
 | Parity | none |
 | Flow control | none |
 | Line feed | every carriage return |
- 
+ 
 
 ## Wiring diagram
 
@@ -55,7 +55,7 @@ The following command modifiers are available. Commands terminate with a new lin
 | - | Decrease a value |
 | = | Set a discrete value |
 | ? | Queries for a current value |
- 
+ 
 
 ## Power
 
@@ -112,7 +112,7 @@ Changes to volume levels can be sent by a room control system, or other system.
 | Volume- |  SMC sends the volume down command.</br></br>PC service notifies SMC of new volume level. |  Volume = 50 |
 
 
- 
+ 
 
 ## Mute for audio
 
@@ -123,7 +123,7 @@ Audio can be muted.
 | AudioMute+ |  SMC sends the audio mute command.</br></br>PC service notifies SMC that audio is muted. |  none |
 
 
- 
+ 
 
 ## Video source
 
@@ -137,7 +137,7 @@ Several display sources can be used.
 | 3 |  VGA |
 
 
- 
+ 
 
 Changes to display source can be sent by a room control system, or other system.
 
@@ -160,7 +160,7 @@ Errors are returned following the format in this table.
 | Error: Command not available when off '&lt;input&gt;'. |  When the Surface Hub is off, commands other than Power return this error. For example, &quot;Volume+&quot; would be invalid and return &quot; Error: Command not available when off 'Volume'&quot;. |
 
 
- 
+ 
 
 ## Related topics
 
@@ -169,9 +169,9 @@ Errors are returned following the format in this table.
 
 [Microsoft Surface Hub administrator's guide](surface-hub-administrators-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

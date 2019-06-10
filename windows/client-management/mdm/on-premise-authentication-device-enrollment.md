@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -30,7 +30,7 @@ For the list of enrollment scenarios not supported in Windows 10, see [Enrollme
 
 The discovery web service provides the configuration information necessary for a user to enroll a device with a management service. The service is a restful web service over HTTPS (server authentication only).
 
->[!NOTE]
+> [!NOTE]
 >The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
 The device’s automatic discovery flow uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
@@ -129,7 +129,7 @@ The discovery response is in the XML format and includes the following fields:
 -   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
 -   Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
->[!NOTE]
+> [!NOTE]
 >The HTTP server response must not be chunked; it must be sent as one message.
 
 The following example shows a response received from the discovery web service for OnPremise authentication:
@@ -214,7 +214,7 @@ After the user is authenticated, the web service retrieves the certificate templ
 
 MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. We will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
->[!NOTE]
+> [!NOTE]
 >The HTTP server response must not be chunked; it must be sent as one message.
 
 The following snippet shows the policy web service response.
@@ -306,7 +306,7 @@ The RequestSecurityToken will use a custom TokenType (http:<span></span>//schema
 
 The RST may also specify a number of AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
->[!NOTE]
+> [!NOTE]
 >The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
 
 The following example shows the enrollment web service request for OnPremise authentication.

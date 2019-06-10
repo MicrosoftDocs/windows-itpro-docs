@@ -26,7 +26,7 @@ If you are installing Microsoft BitLocker Administration and Monitoring (MBAM) 2
 
 -   For an upgrade to MBAM 2.0 SP1, see **Update the configuration.mof file if you upgrade to MBAM 2.0 SP1 and you are using MBAM with Configuration Manager 2007**.
 
- 
+ 
 
 **To create the configuration.mof file if you are using MBAM 2.0 SP1 with Configuration Manager**
 
@@ -379,9 +379,9 @@ If you are installing Microsoft BitLocker Administration and Monitoring (MBAM) 2
 
 [Deploying MBAM with Configuration Manager](deploying-mbam-with-configuration-manager-mbam2.md)
 
- 
+ 
 
- 
+ 
 
 
 

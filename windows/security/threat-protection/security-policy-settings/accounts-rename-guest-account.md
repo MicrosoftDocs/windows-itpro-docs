@@ -54,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Guest |
 | Member Server Effective Default Settings | Guest |
 | Client Computer Effective Default Settings | *User-defined text* |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -91,5 +91,5 @@ There should be little impact because the Guest account is disabled by default i
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

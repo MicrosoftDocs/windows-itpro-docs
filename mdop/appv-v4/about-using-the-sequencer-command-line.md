@@ -26,7 +26,7 @@ You can use the command line to create sequenced application packages. Using the
 **Important**  
 Sequencing at the command prompt allows for default sequencing only. If you need to change default sequencing parameters, you must either manually modify a sequenced application package or re-sequence the application.
 
- 
+ 
 
 All subsequent modifications to existing sequenced application packages must be made using the sequencing wizard.
 
@@ -48,9 +48,9 @@ To sequence an application by using the command prompt, the following conditions
 
 [How to Manage Virtual Applications Using the Command Line](how-to-manage-virtual-applications-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -49,7 +49,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

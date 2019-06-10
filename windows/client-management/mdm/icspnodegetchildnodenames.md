@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -29,7 +29,7 @@ HRESULT GetChildNodeNames([out] ULONG* pulCount,
 <p style="margin-left: 25px">The number of child nodes to return.</p>
 
 <a href="" id="pbstrnodenames"></a>*pbstrNodeNames*
-<p style="margin-left: 25px">The array of child node names. The returned array must be allocated with `CoTaskMemAlloc`. Each element of the array must be a valid, non-NULL `BSTR`, allocated by `SysAllocString` or `SysAllocStringLen`. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.</p>
+<p style="margin-left: 25px">The array of child node names. The returned array must be allocated with <code>CoTaskMemAlloc</code>. Each element of the array must be a valid, non-NULL <code>BSTR</code>, allocated by <code>SysAllocString</code> or <code>SysAllocStringLen</code>. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.</p>
 
 ## Return Value
 
@@ -47,7 +47,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

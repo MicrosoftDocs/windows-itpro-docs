@@ -95,7 +95,7 @@ You can find more information about each section, including options for configur
 >  
 >Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security).  
 
-> [!WARNING] 
+> [!WARNING]
 > If you disable the Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.  
 >  
 >It may also prevent Windows Defender AV from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed. 
@@ -108,7 +108,7 @@ It acts as a collector or single place to see the status and perform some config
 
 Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.
 
 For example, [using a third-party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.

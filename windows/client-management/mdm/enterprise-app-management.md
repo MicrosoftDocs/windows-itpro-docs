@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 09/22/2017
 ---
 
@@ -51,7 +51,7 @@ Inventory is specific to the package full name and lists bundled packs and resou
 
 > **Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
 
- 
+ 
 Here are the nodes for each package full name:
 
 -   Name
@@ -303,14 +303,14 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
--   The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
--   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
--   The user must be logged in, but association with AAD identity is not required.
+- The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
+- The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
+- The user must be logged in, but association with AAD identity is not required.
 
 > **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
- 
+ 
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 Here is an example of a line-of-business app installation.
@@ -420,18 +420,18 @@ Provisioning allows you to stage the app to the device and all users of the devi
 
 Here are the requirements for this scenario:
 
--   The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
--   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Microsoft Store, or store services enabled.
--   The device does not need any AAD identity or domain membership.
--   For nonStore app, your device must be unlocked.
--   For Store offline apps, the required licenses must be deployed prior to deploying the apps.
+- The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
+- The device does not need to have connectivity to the Microsoft Store, or store services enabled.
+- The device does not need any AAD identity or domain membership.
+- For nonStore app, your device must be unlocked.
+- For Store offline apps, the required licenses must be deployed prior to deploying the apps.
 
 To provision app for all users of a device from a hosted location, the management server performs an Add and Exec command on the AppInstallation node in the device context. The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 > **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
- 
+ 
 
 Here is an example of app installation.
 
@@ -626,7 +626,7 @@ You can remove provisioned apps from a device for a specific version or for all 
 
 > **Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
 
- 
+ 
 Removing provisioned app occurs in the device context.
 
 Here is an example for removing a provisioned app from a device.
@@ -827,7 +827,7 @@ In Windows 10 Mobile IT administrators can set a policy to restrict user applic
 
 > **Note**  The feature is only for Windows 10 Mobile.
 
- 
+ 
 The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-service-provider.md) enables you to restrict all user application data to stay on the system volume. When the policy is not configured or if it is disabled, and you move a package or when it is installed to a difference volume, then the user application data will moved to the same volume. You can set this policy to 0 (off, default) or 1.
 
 Here is an example.
@@ -899,7 +899,7 @@ Here is an example.
 </Replace>
 ```
 
- 
+ 
 
 
 

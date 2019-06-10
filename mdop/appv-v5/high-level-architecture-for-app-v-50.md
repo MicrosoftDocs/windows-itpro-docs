@@ -64,12 +64,12 @@ A typical App-V 5.0 implementation consists of the following elements.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you are using App-V 5.0 with Electronic Software Distribution (ESD) you are not required to use the App-V 5.0 Management server, however you can still utilize the reporting and streaming functionality of App-V 5.0.
 
- 
+ 
 
 
 
@@ -81,9 +81,9 @@ If you are using App-V 5.0 with Electronic Software Distribution (ESD) you are n
 
 [Getting Started with App-V 5.0](getting-started-with-app-v-50--rtm.md)
 
- 
+ 
 
- 
+ 
 
 
 

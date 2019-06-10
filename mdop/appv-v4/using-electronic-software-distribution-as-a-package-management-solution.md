@@ -1,7 +1,7 @@
 ---
 title: Using Electronic Software Distribution as a Package Management Solution
 description: Using Electronic Software Distribution as a Package Management Solution
-author: dansimp
+author: manikadhiman
 ms.assetid: 7d96ea70-3e7e-49fa-89cc-586804a10657
 ms.reviewer: 
 manager: dansimp

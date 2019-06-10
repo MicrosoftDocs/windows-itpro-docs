@@ -19,10 +19,10 @@ ms.date: 06/16/2016
 
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 
-**Important**  
+**Important**  
 Before performing the following procedure you should read and understand [About App-V 5.0 Reporting](about-app-v-50-reporting.md).
 
- 
+
 
 **To install the reporting server on a standalone computer and connect it to the database**
 
@@ -38,24 +38,26 @@ Before performing the following procedure you should read and understand [About 
 
 6.  On the **Configure Existing Reporting Database** page, select **Use a remote SQL Server**, and type the machine name of the computer running Microsoft SQL Server, for example **SqlServerMachine**.
 
-    **Note**  
+    **Note**  
     If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**.
 
-     
 
-    For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance.
 
-    Specify the **SQL Server Database name** that this reporting server will use, for example **AppvReporting**.
+~~~
+For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance.
 
-7.  On the **Configure Reporting Server Configuration** page.
+Specify the **SQL Server Database name** that this reporting server will use, for example **AppvReporting**.
+~~~
 
-    -   Specify the Website Name that you want to use for the Reporting Service. Leave the default unchanged if you do not have a custom name.
+7. On the **Configure Reporting Server Configuration** page.
 
-    -   For the **Port binding**, specify a unique port number that will be used by App-V 5.0, for example **55555**. You should also ensure that the port specified is not being used by another website.
+   -   Specify the Website Name that you want to use for the Reporting Service. Leave the default unchanged if you do not have a custom name.
 
-8.  Click **Install**.
+   -   For the **Port binding**, specify a unique port number that will be used by App-V 5.0, for example **55555**. You should also ensure that the port specified is not being used by another website.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+8. Click **Install**.
+
+   **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
@@ -66,9 +68,9 @@ Before performing the following procedure you should read and understand [About 
 
 [How to Enable Reporting on the App-V 5.0 Client by Using PowerShell](how-to-enable-reporting-on-the-app-v-50-client-by-using-powershell.md)
 
- 
 
- 
+
+
 
 
 

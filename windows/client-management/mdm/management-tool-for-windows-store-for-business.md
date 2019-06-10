@@ -11,7 +11,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 10/27/2017
 ---
 
@@ -53,7 +53,7 @@ The Store for Business provides services that enable a management tool to synchr
 </tbody>
 </table>
 
- 
+ 
 
 ### Offline-licensed application distribution
 
@@ -83,39 +83,39 @@ For code samples, see [Microsoft Azure Active Directory Samples and Documentatio
 
 Here are the steps to configure your Azure AD app. For additional information, see [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021):
 
-1.  Log into Microsoft Azure Management Portal (https:manage.windowsazure.com)
-2.  Go to the Active Directory module.
-3.  Select your directory.
-4.  Click the **Applications** tab.
+1. Log into Microsoft Azure Management Portal (https:manage.windowsazure.com)
+2. Go to the Active Directory module.
+3. Select your directory.
+4. Click the **Applications** tab.
 
-    ![business store management tool](images/businessstoreportalservices8.png)
+   ![business store management tool](images/businessstoreportalservices8.png)
 
-5.  Click **Add**.
+5. Click **Add**.
 
-    ![business store management tool](images/businessstoreportalservices9.png)
+   ![business store management tool](images/businessstoreportalservices9.png)
 
-6.  Select **Add an application that my organization is developing**.
+6. Select **Add an application that my organization is developing**.
 
-    ![business store management tool](images/businessstoreportalservices10.png)
+   ![business store management tool](images/businessstoreportalservices10.png)
 
-7.  Specify a name and then select **WEB APPLICATION AND/OR WEB API**.
+7. Specify a name and then select **WEB APPLICATION AND/OR WEB API**.
 
-    ![business store management tool](images/businessstoreportalservices11.png)
+   ![business store management tool](images/businessstoreportalservices11.png)
 
-8.  Specify the **SIGN-ON URL** to your application.
+8. Specify the **SIGN-ON URL** to your application.
 
-    ![business store management tool](images/businessstoreportalservices12.png)
+   ![business store management tool](images/businessstoreportalservices12.png)
 
-9.  Specify whether your app is multi-tenant or single tenant. For more information, see [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021).
+9. Specify whether your app is multi-tenant or single tenant. For more information, see [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021).
 
-    ![business store management tool](images/businessstoreportalservices13.png)
+   ![business store management tool](images/businessstoreportalservices13.png)
 
 10. Create a client key.
 
     ![business store management tool](images/businessstoreportalservices14.png)
 
-   > **Note**  In the prior version of the tool, an update to the app manifest was required to authorize the application. This is no longer necessary.
-     
+    > **Note**  In the prior version of the tool, an update to the app manifest was required to authorize the application. This is no longer necessary.
+     
 11. Login to Store for Business and enable your application. For step-by-step guide, see [Configure an MDM provider](https://technet.microsoft.com/library/mt606939.aspx).
 
 
@@ -158,7 +158,7 @@ The diagram below shows the call patterns for acquiring a new or updated applica
 -   [Bulk assign and reclaim seats for users](bulk-assign-and-reclaim-seats-from-user.md)
 -   [Get seats assigned to a user](get-seats-assigned-to-a-user.md)
 
- 
+ 
 
 
 

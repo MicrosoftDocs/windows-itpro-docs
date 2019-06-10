@@ -29,7 +29,7 @@ This flow only enforces the deadline where the device will attempt to silently r
 
 Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to reboot the device. 
 
->[!NOTE] 
+>[!NOTE]
 >Deadlines are enforced from pending restart state (for example, when the device has completed the installation and download from Windows Update).
 
 ### Policy overview

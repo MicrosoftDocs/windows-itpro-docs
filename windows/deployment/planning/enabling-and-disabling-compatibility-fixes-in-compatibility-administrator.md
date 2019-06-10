@@ -36,7 +36,7 @@ Customized compatibility databases can become quite complex as you add your fixe
 **Important**  
 Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to work with custom databases for 32-bit applications and the 64-bit version to work with custom databases for 64-bit applications.
 
- 
+ 
 
 **To disable a compatibility fix within a database**
 
@@ -49,7 +49,7 @@ Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version o
     **Important**  
     When you disable an entry, it will remain disabled even if you do not save the database file.
 
-     
+     
 
 ## Enabling Compatibility Fixes
 

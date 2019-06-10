@@ -34,7 +34,7 @@ In the Application Virtualization Server Management Console, you can use the fol
     **Note**  
     You can select and move multiple application groups simultaneously. In the right pane, use the **CTRL**-click or **Shift**-click key combinations to select more than one group.
 
-     
+     
 
 ## Related topics
 
@@ -45,9 +45,9 @@ In the Application Virtualization Server Management Console, you can use the fol
 
 [How to Manage Applications in the Server Management Console](how-to-manage-applications-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

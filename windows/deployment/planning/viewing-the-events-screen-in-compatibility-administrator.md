@@ -31,7 +31,7 @@ The **Events** screen enables you to record and to view your activities in the C
 **Important**  
 The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
 
- 
+ 
 
 **To open the Events screen**
 
@@ -49,9 +49,9 @@ If you open the **Events** screen and then perform the copy operation, you can s
 
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

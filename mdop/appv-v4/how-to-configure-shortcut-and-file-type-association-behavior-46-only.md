@@ -63,16 +63,16 @@ There are four policy values defined in the following table and these apply to b
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The text values refer to the values for the XML attributes in the publishing XML file.  You can set these values manually if you have implemented a custom HTTP publishing solution.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

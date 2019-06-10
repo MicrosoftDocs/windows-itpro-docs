@@ -26,7 +26,7 @@ To obtain the setup log files, you must install MBAM by using the **msiexec** pa
 
 Additional setup log files are created in the %temp% folder of the user who is installing MBAM.
 
- 
+ 
 
 ## To install MBAM Server features on a single server
 
@@ -36,7 +36,7 @@ The following steps describe how to install general MBAM features.
 **Note**  
 Make sure that you use the 32-bit setup on 32-bit servers and the 64-bit setup on 64-bit servers.
 
- 
+ 
 
 **To start MBAM Server features installation**
 
@@ -59,7 +59,7 @@ Make sure that you use the 32-bit setup on 32-bit servers and the 64-bit setup o
     **Note**  
     The installation wizard checks the prerequisites for your installation and displays the prerequisites that are missing. If all the prerequisites are met, the installation continues. If a missing prerequisite is detected, you must resolve the missing prerequisites, and then click **Check prerequisites again**. After all prerequisites are met, the installation resumes.
 
-     
+     
 
 4.  You are prompted to configure the network communication security. MBAM can encrypt the communication between the Recovery and Hardware Database, the Administration and Monitoring Server, and the clients. If you decide to encrypt the communication, you are asked to select the authority-provisioned certificate that will be used for encryption.
 
@@ -86,7 +86,7 @@ Make sure that you use the 32-bit setup on 32-bit servers and the 64-bit setup o
     **Warning**  
     The port number that you specify must be an unused port number on the Administration and Monitoring server, unless a unique host header name is specified.
 
-     
+     
 
 8.  Click **Next** to continue.
 
@@ -117,7 +117,7 @@ Make sure that you use the 32-bit setup on 32-bit servers and the 64-bit setup o
 
     To maintain identical memberships on all computers, you should create a domain security group and add that domain group to each local MBAM Report Users group. When you do this, you can manage the group memberships by using the domain group.
 
-     
+     
 
 ## Validating the MBAM Server feature installation
 
@@ -126,57 +126,57 @@ When the MBAM installation is complete, validate that the installation has succe
 
 **To validate MBAM Server feature installation**
 
-1.  On each server where an MBAM feature is deployed, open **Control Panel**. Click **Programs**, and then click **Programs and Features**. Verify that **Microsoft BitLocker Administration and Monitoring** appears in the **Programs and Features** list.
+1. On each server where an MBAM feature is deployed, open **Control Panel**. Click **Programs**, and then click **Programs and Features**. Verify that **Microsoft BitLocker Administration and Monitoring** appears in the **Programs and Features** list.
 
-    **Note**  
-    To validate the installation, you must use a Domain Account that has local computer administrative credentials on each server.
+   **Note**  
+   To validate the installation, you must use a Domain Account that has local computer administrative credentials on each server.
 
-     
+     
 
-2.  On the server where the Recovery and Hardware Database is installed, open SQL Server Management Studio and verify that the **MBAM Recovery and Hardware** database is installed.
+2. On the server where the Recovery and Hardware Database is installed, open SQL Server Management Studio and verify that the **MBAM Recovery and Hardware** database is installed.
 
-3.  On the server where the Compliance and Audit Database is installed, open SQL Server Management Studio and verify that the **MBAM Compliance and Audit Database** is installed.
+3. On the server where the Compliance and Audit Database is installed, open SQL Server Management Studio and verify that the **MBAM Compliance and Audit Database** is installed.
 
-4.  On the server where the Compliance and Audit Reports are installed, open a web browser with administrative privileges and browse to the “Home” of the SQL Server Reporting Services site.
+4. On the server where the Compliance and Audit Reports are installed, open a web browser with administrative privileges and browse to the “Home” of the SQL Server Reporting Services site.
 
-    The default Home location of a SQL Server Reporting Services site instance is at http://*&lt;NameofMBAMReportsServer&gt;*/Reports. To find the actual URL, use the Reporting Services Configuration Manager tool and select the instances specified during setup.
+   The default Home location of a SQL Server Reporting Services site instance is at http://<em>&lt;NameofMBAMReportsServer&gt;</em>/Reports. To find the actual URL, use the Reporting Services Configuration Manager tool and select the instances specified during setup.
 
-    Confirm that a folder named **Malta Compliance Reports** is listed and that it contains five reports and one data source.
+   Confirm that a folder named **Malta Compliance Reports** is listed and that it contains five reports and one data source.
 
-    **Note**  
-    If SQL Server Reporting Services was configured as a named instance, the URL should resemble the following:http://*&lt;NameofMBAMReportsServer&gt;*/Reports\_*&lt;SRSInstanceName&gt;*
+   **Note**  
+   If SQL Server Reporting Services was configured as a named instance, the URL should resemble the following:http://*&lt;NameofMBAMReportsServer&gt;*/Reports\_*&lt;SRSInstanceName&gt;*
 
-     
+     
 
-5.  On the server where the Administration and Monitoring feature is installed, run **Server Manager** and browse to **Roles**, select **Web Server (IIS)**, and click **Internet Information Services (IIS) Manager**
+5. On the server where the Administration and Monitoring feature is installed, run **Server Manager** and browse to **Roles**, select **Web Server (IIS)**, and click **Internet Information Services (IIS) Manager**
 
-6.  In **Connections**, browse to *&lt;computername&gt;*, select **Sites**, and select **Microsoft BitLocker Administration and Monitoring**. Verify that **MBAMAdministrationService**, **MBAMComplianceStatusService**, and **MBAMRecoveryAndHardwareService** are listed.
+6. In **Connections**, browse to *&lt;computername&gt;*, select **Sites**, and select **Microsoft BitLocker Administration and Monitoring**. Verify that **MBAMAdministrationService**, **MBAMComplianceStatusService**, and **MBAMRecoveryAndHardwareService** are listed.
 
-7.  On the server where the Administration and Monitoring feature is installed, open a web browser with administrative privileges, and then browse to the following locations in the MBAM website to verify that they load successfully:
+7. On the server where the Administration and Monitoring feature is installed, open a web browser with administrative privileges, and then browse to the following locations in the MBAM website to verify that they load successfully:
 
-    -   *http://&lt;computername&gt;/default.aspx* and confirm each of the links for navigation and reports
+   -   *http://&lt;computername&gt;/default.aspx* and confirm each of the links for navigation and reports
 
-    -   *http://&lt;computername&gt;/MBAMAdministrationService/AdministrationService.svc*
+   -   *http://&lt;computername&gt;/MBAMAdministrationService/AdministrationService.svc*
 
-    -   *http://&lt;computername&gt;/MBAMComplianceStatusService/StatusReportingService.svc*
+   -   *http://&lt;computername&gt;/MBAMComplianceStatusService/StatusReportingService.svc*
 
-    -   *http://&lt;computername&gt;/MBAMRecoveryAndHardwareService/CoreService.svc*
+   -   *http://&lt;computername&gt;/MBAMRecoveryAndHardwareService/CoreService.svc*
 
-    **Note**  
-    Typically, the services are installed on the default port 80 without network encryption. If the services are installed on a different port, change the URLs to include the appropriate port. For example, http://*&lt;computername&gt;:&lt;port&gt;*/default.aspx or http://*&lt;hostheadername&gt;/*default.aspx.
+   **Note**  
+   Typically, the services are installed on the default port 80 without network encryption. If the services are installed on a different port, change the URLs to include the appropriate port. For example, http://*&lt;computername&gt;:&lt;port&gt;*/default.aspx or http://<em>&lt;hostheadername&gt;/</em>default.aspx.
 
-    If the services are installed with network encryption, change http:// to https://.
+   If the services are installed with network encryption, change http:// to https://.
 
-     
+     
 
 ## Related topics
 
 
 [Deploying the MBAM 1.0 Server Infrastructure](deploying-the-mbam-10-server-infrastructure.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,7 +36,7 @@ As the administrator, you can use the Application Virtualization Server Manageme
     **Note**  
     You must set up your groups in Active Directory Domain Services before you attempt to grant access to applications.
 
-     
+     
 
 ## Related topics
 
@@ -49,9 +49,9 @@ As the administrator, you can use the Application Virtualization Server Manageme
 
 [How to Manually Add an Application](how-to-manually-add-an-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

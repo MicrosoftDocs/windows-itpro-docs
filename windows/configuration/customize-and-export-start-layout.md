@@ -35,7 +35,7 @@ When [a partial Start layout](#configure-a-partial-start-layout) is applied, the
 >[!NOTE]
 >Partial Start layout is only supported on Windows 10, version 1511 and later.
 
- 
+ 
 
 You can deploy the resulting .xml file to devices using one of the following methods:
 

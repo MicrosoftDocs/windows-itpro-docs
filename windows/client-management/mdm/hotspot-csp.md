@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -18,12 +18,12 @@ ms.date: 06/26/2017
 The HotSpot configuration service provider is used to configure and enable Internet sharing on the device, in which the device can be configured to share its cellular connection over Wi-Fi with up to eight client devices or computers.
 
 > **Note**  HotSpot CSP is only supported in Windows 10 Mobile.
-
- 
-
+> 
+> 
+> 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
- 
+ 
 
 The following diagram shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
 
@@ -47,7 +47,7 @@ Specified connections will be mapped, by policy, to the Internet sharing service
 
 > **Note**   The mapping policy will also include the connection specified in the **TetheringNAIConnection** value as well.
 
- 
+ 
 
 If the specified connections do not exist, Internet sharing will not start because it will not have any cellular connections available to share
 
@@ -62,7 +62,7 @@ Specified connections will be mapped, by policy, to the Internet sharing service
 
 > **Note**   The mapping policy will also include the connections specified in the **DedicatedConnections** as well.
 
- 
+ 
 
 If the specified connections do not exist, Internet sharing will not start because it will not have any cellular connections available to share
 
@@ -94,7 +94,7 @@ Where `<path_to_res_dll>` is the path to the resource dll that contains the stri
 
 > **Note**  MOAppLink is required to use the MOHelpMessage setting.
 
- 
+ 
 
 <a href="" id="entitlementrequired"></a>**EntitlementRequired**
 Optional. Specifies whether the device requires an entitlement check to determine if Internet sharing should be enabled. This node is set to a Boolean value. The default value is **True**.
@@ -122,12 +122,12 @@ Changes to this node require a reboot.
 <a href="" id="minwifikeylength"></a>**MinWifiKeyLength**
 > **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi key is 8.
 
- 
+ 
 
 <a href="" id="minwifissidlength"></a>**MinWifiSSIDLength**
 > **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi SSID is 1.
 
- 
+ 
 
 ## Additional requirements for CDMA networks
 
@@ -154,7 +154,7 @@ For CDMA networks that use a separate Network Access Identity (NAI) for Internet
 
 > **Note**  CDMA devices are limited to one active data connection at a time. This means any application or service (such as email or MMS) that is bound to another connection may not work while Internet sharing is turned on.
 
- 
+ 
 
 ## <a href="" id="creating-entitlement-dll"></a>Creating an Entitlement DLL
 
@@ -196,7 +196,7 @@ During an entitlement check the Internet Sharing service loads the specified DLL
 </tbody>
 </table>
 
- 
+ 
 
 The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEntitlementh`, which ships with the Windows Adaptation Kit.
 
@@ -205,9 +205,9 @@ The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEn
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

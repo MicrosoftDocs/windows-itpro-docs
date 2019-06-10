@@ -19,11 +19,12 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |No additional message displays. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Show an additional message stating that a site has opened in IE11. | |
-|Enabled |2 |2 |Show an additional message with a _Keep going in Microsoft Edge_ link to allow users to open the site in Microsoft Edge. | |
+|                Group Policy                 | MDM | Registry |                                                       Description                                                        |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|--------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                             No additional message displays.                                              | ![Most restricted value](/images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |                            Show an additional message stating that a site has opened in IE11.                            |                                                  |
+|                   Enabled                   |  2  |    2     | Show an additional message with a *Keep going in Microsoft Edge* link to allow users to open the site in Microsoft Edge. |                                                  |
+
 ---
 
 ### ADMX info and settings

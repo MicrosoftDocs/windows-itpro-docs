@@ -1,7 +1,7 @@
 ---
 title: Tasks for the Application Virtualization Sequencer
 description: Tasks for the Application Virtualization Sequencer
-author: dansimp
+author: manikadhiman
 ms.assetid: 398018f4-297a-440d-b614-23f0ab03e7bd
 ms.reviewer: 
 manager: dansimp

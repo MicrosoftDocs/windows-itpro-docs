@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
@@ -389,7 +389,7 @@ Supported operations are Add, Delete, Get, and Replace.
 
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
-<!--EndEAS-->
+  <!--EndEAS-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic
@@ -410,13 +410,13 @@ Supported operations are Add, Delete, Get, and Replace.
 - [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 - [Wifi/AllowWiFi](#wifi-allowwifi)  
 - [Wifi/WLANScanMode](#wifi-wlanscanmode)  
-<!--EndIoTCore-->
+  <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Wifi policies supported by Microsoft Surface Hub  
 
 - [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
-<!--EndSurfaceHub-->
+  <!--EndSurfaceHub-->
 
 <hr/>
 

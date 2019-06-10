@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Certificate Permission Issues
 description: Troubleshooting Certificate Permission Issues
-author: dansimp
+author: manikadhiman
 ms.assetid: 06b8cbbc-93fd-44aa-af39-2d780792d3c3
 ms.reviewer: 
 manager: dansimp

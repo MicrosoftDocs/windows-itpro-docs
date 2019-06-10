@@ -33,7 +33,7 @@ For information about the Search feature, see [Searching for Fixed Applications 
 **Important**  
 You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
- 
+ 
 
 ## Querying by Using the Program Properties Tab
 
@@ -65,7 +65,7 @@ You can use the **Program Properties** tab of the Query tool to search for any c
     **Important**  
     If you do not select any of the check boxes, the search will look for all types of compatibility fixes. Do not select multiple check boxes because only applications that match all of the requirements will appear.
 
-     
+     
 
 6.  Click **Find Now**.
 
@@ -89,14 +89,14 @@ You can use the **Fix Properties** tab of the Query tool to search for any appli
     **Note**  
     You can use the percent (%) symbol as a wildcard in your fix-properties query, as a substitute for any string of zero or more characters.
 
-     
+     
 
 5.  Select the check box for either **Search in Compatibility Fixes** or **Search in Compatibility Modes**.
 
     **Important**  
     Your text must match the type of compatibility fix or mode for which you are performing the query. For example, entering the name of a compatibility fix and selecting the compatibility mode check box will not return any results. Additionally, if you select both check boxes, the query will search for the fix by compatibility mode and compatibility fix. Only applications that match both requirements appear.
 
-     
+     
 
 6.  Click **Find Now**.
 
@@ -120,7 +120,7 @@ You can use the **Fix Description** tab of the Query tool to add parameters that
     **Important**  
     You cannot use wildcards as part of the Fix Description search query because the default behavior is to search for any entry that meets your search criteria.
 
-     
+     
 
 5.  Refine your search by selecting **Match any word** or **Match all words** from the drop-down list.
 
@@ -173,9 +173,9 @@ You can export any of your search results into a tab-delimited text (.txt) file 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

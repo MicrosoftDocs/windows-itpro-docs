@@ -27,7 +27,7 @@ In this configuration, all MBAM features are installed on a single server. This 
 **Important**  
 This configuration is supported, but we recommend it for testing only.
 
- 
+ 
 
 The procedures in this section describe the full installation of the MBAM features on a single server.
 
@@ -93,9 +93,9 @@ In this configuration, MBAM features are installed in the following configuratio
 
 [Deploying MBAM 1.0](deploying-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

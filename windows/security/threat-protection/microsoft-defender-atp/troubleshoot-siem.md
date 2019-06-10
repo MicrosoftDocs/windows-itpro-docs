@@ -64,9 +64,9 @@ If you encounter an error when trying to get a refresh token when using the thre
     - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
 
 5. Add the following URL:
-  - For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
-  - For the United Kingdom: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
-  - For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
+   - For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
+   - For the United Kingdom: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
+   - For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
  
 6. Click **Save**.
 

@@ -1,7 +1,7 @@
 ---
 title: About App-V 5.1 Reporting
 description: About App-V 5.1 Reporting
-author: dansimp
+author: manikadhiman
 ms.assetid: 385dca00-7178-4e35-8d86-c58867ebd65c
 ms.reviewer: 
 manager: dansimp
@@ -41,7 +41,7 @@ The following list displays the end–to-end high-level workflow for reporting i
     **Note**  
     If you are using the Configuration Manager integration with App-V 5.1, most reports are generated from Configuration Manager rather than from App-V 5.1.
 
-     
+     
 
 4.  After importing the App-V 5.1 PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V 5.1 client. This sample PowerShell cmdlet enables App-V 5.1 reporting:
 
@@ -60,9 +60,11 @@ The following list displays the end–to-end high-level workflow for reporting i
     **Note**  
     By default the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
 
-     
+     
 
-    If the App-V 5.1 client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
+~~~
+If the App-V 5.1 client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
+~~~
 
 ### <a href="" id="-------------app-v-5-1-reporting-server-frequently-asked-questions"></a> App-V 5.1 reporting server frequently asked questions
 
@@ -110,24 +112,23 @@ The following table displays answers to common questions about App-V 5.1 reporti
 <td align="left"><p>Yes. Besides manually sending reporting using PowerShell Cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
 <ol>
 <li><p>Using PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
-<p>Set-AppvClientConfiguration -ReportingEnabled 1 - ReportingServerURL http://any.com/appv-reporting</p>
+<p>Set-AppvClientConfiguration -ReportingEnabled 1 - ReportingServerURL <a href="http://any.com/appv-reporting" data-raw-source="http://any.com/appv-reporting">http://any.com/appv-reporting</a></p>
 <p></p>
-<p>For a complete list of client configuration settings see [About Client Configuration Settings](about-client-configuration-settings51.md) and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
+<p>For a complete list of client configuration settings see <a href="about-client-configuration-settings51.md" data-raw-source="[About Client Configuration Settings](about-client-configuration-settings51.md)">About Client Configuration Settings</a> and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
 <p></p></li>
 <li><p>By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Group Policy settings override local settings configured using PowerShell.</p>
+<strong>Note</strong><br/><p>Group Policy settings override local settings configured using PowerShell.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
+ 
 
- 
 
 ## <a href="" id="---------app-v-5-1-client-reporting"></a> App-V 5.1 Client Reporting
 
@@ -138,10 +139,10 @@ To use App-V 5.1 reporting you must install and configure the App-V 5.1 client. 
 
 The following examples show how PowerShell parameters can configure the reporting features of the App-V 5.1 client.
 
-**Note**  
+**Note**  
 The following configuration task can also be configured using Group Policy settings in the App-V 5.1 ADMX template. For more information about using the ADMX template, see [How to Modify App-V 5.1 Client Configuration Using the ADMX Template and Group Policy](how-to-modify-app-v-51-client-configuration-using-the-admx-template-and-group-policy.md).
+ 
 
- 
 
 **To enable reporting and to initiate data collection on the computer running the App-V 5.1 client**:
 
@@ -155,7 +156,7 @@ Set-AppVClientConfiguration –ReportingServerURL http://MyReportingServer:MyPor
 
 `-ReportingInterval 1 -ReportingRandomDelay 30`
 
-This example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
+This example configures the client to automatically send the reporting data to the reporting server URL <strong>http://MyReportingServer:MyPort/</strong>. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
 
 **To limit the size of the data cache on the client**:
 
@@ -224,8 +225,8 @@ The following table displays the types of information you can collect by using A
 </tr>
 </tbody>
 </table>
+ 
 
- 
 
 The client collects and saves this data in an **.xml** format. The data cache is hidden by default and requires administrator rights to open the XML file.
 
@@ -270,20 +271,19 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 <tr class="odd">
 <td align="left"><p>If you have an existing App-V 5.1 reporting Server, create a customized scheduled task or script. Specify that the client send the data to the specified location with the desired frequency.</p></td>
 <td align="left"><p>If you do not have an existing App-V 5.1 reporting Server, use the <strong>–URL</strong> parameter to send the data to a specified share. For example:</p>
-<p><code>Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess</code></p>
-<p>The previous example will send the reporting data to <strong>\\MyShare\MyData\</strong> location indicated by the <strong>-URL</strong> parameter. After the data has been sent, the cache is cleared.</p>
+<p><code>Send-AppVClientReport –URL \Myshare\MyData\ -DeleteOnSuccess</code></p>
+<p>The previous example will send the reporting data to <strong>\MyShare\MyData&lt;/strong&gt; location indicated by the <strong>-URL</strong> parameter. After the data has been sent, the cache is cleared.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If a location other than the Reporting Server is specified, the data is sent using <strong>.xml</strong> format with no additional processing.</p>
+<strong>Note</strong><br/><p>If a location other than the Reporting Server is specified, the data is sent using <strong>.xml</strong> format with no additional processing.</p>
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Creating Reports
 
@@ -317,9 +317,9 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 
 [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](how-to-install-the-reporting-server-on-a-standalone-computer-and-connect-it-to-the-database51.md)
 
- 
+ 
 
- 
+ 
 
 
 

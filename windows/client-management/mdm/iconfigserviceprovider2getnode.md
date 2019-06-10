@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -31,18 +31,18 @@ HRESULT GetNode([in] IConfigManager2URI* pURI,
 <a href="" id="puri"></a>*pUri*
 <ul style="list-style-type:none">
 <li>
-URI of the child node, relative to the root node. For example, to access the "./Vendor/Contoso/SampleCSP/ContainerA/UserName" node, ConfigManager2 calls the configuration service provider's `GetNode` method and passes in an IConfigManager2URI instance representing the URI “SampleCSP/ContainerA/UserName”.
+URI of the child node, relative to the root node. For example, to access the &quot;./Vendor/Contoso/SampleCSP/ContainerA/UserName&quot; node, ConfigManager2 calls the configuration service provider&#39;s <code>GetNode</code> method and passes in an IConfigManager2URI instance representing the URI “SampleCSP/ContainerA/UserName”.
 </li>
 </ul>
 <br>
-<a href="" id="ppnode"></a>*ppNode*
+<a href="" id="ppnode"></a><em>ppNode</em>
 <ul style="list-style-type:none">
 <li>
-If the query is successful, this returns the ICSPNode instance at the *pUri* location in the configuration service provider's tree.
+If the query is successful, this returns the ICSPNode instance at the <em>pUri</em> location in the configuration service provider&#39;s tree.
 </li>
 </ul>
 <br>
-<a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*
+<a href="" id="pgrfnodeoptions"></a><em>pgrfNodeOptions</em>
 <ul style="list-style-type:none">
 <li>
 Nodes support the following features.
@@ -69,7 +69,7 @@ Nodes support the following features.
 <tr class="even">
 <td><p><code>CSPNODE_OPTION_INTERNALTRANSACTION</code></p></td>
 <td><p>0x02</p></td>
-<td><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the [ICSPNodeTransactioning](icspnodetransactioning.md).</p></td>
+<td><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the <a href="icspnodetransactioning.md" data-raw-source="[ICSPNodeTransactioning](icspnodetransactioning.md)">ICSPNodeTransactioning</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>CSPNODE_OPTION_HANDLEALLPROPERTIES</code></p></td>
@@ -97,7 +97,7 @@ A value of S\_OK indicates that a node was successfully found. CFGMGR\_E\_NODENO
 
 **Header:** None
 
- 
+ 
 
 
 

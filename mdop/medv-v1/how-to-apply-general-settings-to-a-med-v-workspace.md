@@ -42,7 +42,7 @@ The name of the MED-V workspace.
 **Warning**  
 Do not rename an existing MED-V workspace while it is running on a client computer.
 
- 
+ 
 
 Description
 
@@ -51,7 +51,7 @@ Description of the MED-V workspace, which can include the content or status of t
 **Note**  
 The description is for administrator use and has no impact on the policy.
 
- 
+ 
 
 Support contact info
 
@@ -81,7 +81,7 @@ Do not start the Workspace if the verification fails (exit code is not '0')
 
 Select this check box if you are using a command line and want to start the MED-V workspace only if the script is completed successfully.
 
- 
+ 
 
 A command line can be run on the host prior to starting the MED-V workspace.
 
@@ -98,9 +98,9 @@ A command line can be run on the host prior to starting the MED-V workspace.
 
 [Creating a MED-V Workspace](creating-a-med-v-workspacemedv-10-sp1.md)
 
- 
+ 
 
- 
+ 
 
 
 

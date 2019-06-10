@@ -17,13 +17,13 @@ ms.date: 07/27/2017
 # Create packages for multiple operating systems or languages
 You'll create multiple versions of your custom browser package if:
 
--   You support more than 1 version of Windows®.
+- You support more than 1 version of Windows®.
 
--   You support more than 1 language.
+- You support more than 1 language.
 
--   You have custom installation packages with only minor differences. Like, having a different phone number.
+- You have custom installation packages with only minor differences. Like, having a different phone number.
 
- **To create a new package**
+  **To create a new package**
 
 1.  Create an installation package using the Internet Explorer Customization Wizard 11, as described in the [Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](../ie11-ieak/ieak11-wizard-custom-options.md) topic.
 
@@ -33,11 +33,11 @@ You'll create multiple versions of your custom browser package if:
 **Important**<br>
 Except for the **Title bar** text, **Favorites**, **Links bar**, **Home page**, and **Search bar**, keep all of your wizard settings the same for all of your build computers.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

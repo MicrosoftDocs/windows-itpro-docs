@@ -48,19 +48,19 @@ ms.topic: article
 ## Manage existing custom detection rules
 View existing rules in your network, see the last results of each rule, navigate to view all alerts that were created by each rule. You can also modify existing rules.
 
-1.	In the navigation pane, select **Settings** > **Custom detections**. You'll see all the detections  created in the system.
+1. In the navigation pane, select **Settings** > **Custom detections**. You'll see all the detections  created in the system.
 
-2.	Select one of the rules to take any of the following actions:
+2. Select one of the rules to take any of the following actions:
    - Open related alerts - See all the alerts that were raised based to this rule
    - Run - Run the selected detection immediately. 
 
    > [!NOTE]
    > The next run for the query will be in 24 hours after the last run.
     
-  - Edit - Modify the settings of the rule.
-  - Modify query - View and edit the query itself. 
-  - Turn off - Stop the query from running.
-  - Delete
+   - Edit - Modify the settings of the rule.
+   - Modify query - View and edit the query itself. 
+   - Turn off - Stop the query from running.
+   - Delete
 
 
 ## Related topic

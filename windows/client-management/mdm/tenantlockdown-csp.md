@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 08/13/2018
 ms.reviewer: 
 manager: dansimp
@@ -18,7 +18,7 @@ manager: dansimp
 
 The TenantLockdown configuration service provider is used by the IT admin to lock a device to a tenant, which ensures that the device remains bound to the tenant in case of accidental or intentional resets or wipes.
 
-> [!Note]  
+> [!NOTE]
 > The forced network connection is only applicable to devices after reset (not new).
 
 The following diagram shows the TenantLockdown configuration service provider in tree format.

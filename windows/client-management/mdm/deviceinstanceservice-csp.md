@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -22,7 +22,7 @@ Stop using DeviceInstanceService CSP and use the updated [DeviceStatus CSP](devi
 
 The DeviceInstance CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the DeviceInstanceService configuration service provider in tree format.
 
@@ -110,9 +110,9 @@ Response from the phone.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

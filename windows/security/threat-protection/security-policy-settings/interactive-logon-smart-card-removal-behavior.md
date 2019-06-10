@@ -69,7 +69,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | No Action| 
 | Member Server Effective Default Settings | No Action| 
 | Client Computer Effective Default Settings | No Action| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

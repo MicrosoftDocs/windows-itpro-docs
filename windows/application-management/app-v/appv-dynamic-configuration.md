@@ -428,7 +428,7 @@ The body of the deployment configuration file includes two sections:
 </DeploymentConfiguration>
 ```
 
-User Configuration: see [Dynamic User Configuration](appv-dynamic-configuration.md#dynamic-user-configuration) for more information about this section.
+User Configuration: see [Dynamic User Configuration](#dynamic-user-configuration-file) for more information about this section.
 
 Machine Configuration: The Machine Configuration section of the Deployment Configuration File configures information that can only be set for an entire machine, not a specific user on the computer, like the HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. This element can have the following four subsections.
 
