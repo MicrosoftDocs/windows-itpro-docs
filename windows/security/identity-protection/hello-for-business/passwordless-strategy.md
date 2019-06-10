@@ -18,10 +18,10 @@ ms.reviewer:
 ---
 # Passwordless Strategy
 
-## Four steps to Password-less
+## Four steps to password freedom
 
 Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password-less.
-![Password-less approach](images/four-steps-passwordless.png)
+![Passwordless approach](images/four-steps-passwordless.png)
 
 
 ### 1. Develop a password replacement offering
