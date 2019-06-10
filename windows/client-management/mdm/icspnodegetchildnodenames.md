@@ -4,7 +4,7 @@ description: ICSPNode GetChildNodeNames
 ms.assetid: dc057f2b-282b-49ac-91c4-bb83bd3ca4dc
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

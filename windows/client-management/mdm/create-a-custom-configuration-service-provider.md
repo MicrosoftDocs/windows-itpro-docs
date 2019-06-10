@@ -4,7 +4,7 @@ description: Create a custom configuration service provider
 ms.assetid: 0cb37f03-5bf2-4451-8276-23f4a1dee33f
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

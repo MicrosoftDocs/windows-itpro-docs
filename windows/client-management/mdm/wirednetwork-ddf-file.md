@@ -1,7 +1,7 @@
 ---
 title: WiredNetwork DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider. 
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

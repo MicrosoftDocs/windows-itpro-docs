@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Notifications
 description: Policy CSP - Notifications
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

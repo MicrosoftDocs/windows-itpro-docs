@@ -7,7 +7,7 @@ MS-HAID:
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

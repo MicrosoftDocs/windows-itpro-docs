@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Start
 description: Policy CSP - Start
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

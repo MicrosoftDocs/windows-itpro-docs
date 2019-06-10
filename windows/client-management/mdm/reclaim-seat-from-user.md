@@ -4,7 +4,7 @@ description: The Reclaim seat from user operation returns reclaimed seats for a 
 ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
