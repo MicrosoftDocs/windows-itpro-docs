@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/20/2018
 ms.reviewer:
 ---
-# Password-less Strategy
+# Passwordless Strategy
 
 ## Four steps to Password-less
 
