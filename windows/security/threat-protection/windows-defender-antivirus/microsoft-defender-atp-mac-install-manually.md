@@ -79,7 +79,48 @@ To complete this process, you must have admin privileges on the machine.
 The installation will proceed.
 
 > [!NOTE]
-> If you don't select **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
+> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but reat time protection will be disabled.
+
+### Fixing disabled Real Time Protection
+
+If you did not enable Microsoft's driver during the installation, then Defender's application will display a banner prompting you to enable it:
+
+    ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
+
+You can also run ```mdatp --health```, that would report that the Real Time Protection is enabled but not available:
+
+    ```bash
+    mavel-mojave:~ testuser$ mdatp --health
+    ...
+    realTimeProtectionAvailable             : false
+    realTimeProtectionEnabled               : true
+    ...
+    ```
+
+To resolve it, click on the Fix button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation". 
+You can enable it by performting the following steps:
+
+Note, that if you won't complete this step [during 30 minutes](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) after the installation, the prompt will disappear:
+
+    ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+
+1. In Terminal, attempt to install the driver. (The operation will fail)
+    ```bash
+    mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+    Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
+    Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
+    Diagnostics for /Library/Extensions/wdavkext.kext:
+    ```
+
+2. Open **System Preferences...** => **Security & Privacy** from the menu. (Close it first, if it's opened.)
+
+3. **Allow** system software from developers "Microsoft Corporation"
+
+4. In Terminal, install the driver again. This time the operation will succeed:
+
+    ```bash
+    mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+    ```
 
 ## Client configuration
 
