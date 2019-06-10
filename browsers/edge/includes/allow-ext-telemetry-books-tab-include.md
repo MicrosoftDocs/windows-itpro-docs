@@ -18,7 +18,7 @@ ms:topic: include
 
 |                Group Policy                 | MDM | Registry |                                                                     Description                                                                     |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|-----------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
-| Disabled or not configured<br>**(default)** |  0  |    0     |                                                     Gather and send only basic diagnostic data.                                                     | ![Most restricted value](../images/check-gn.png) |
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                                     Gather and send only basic diagnostic data.                                                     | ![Most restricted value](/images/check-gn.png) |
 |                   Enabled                   |  1  |    1     | Gather all diagnostic data. For this policy to work correctly, you must set the diagnostic data in *Settings > Diagnostics & feedback* to **Full**. |                                                  |
 
 ---

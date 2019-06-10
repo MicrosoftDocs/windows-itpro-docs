@@ -81,7 +81,7 @@ The following procedure describes how to configure a security policy setting for
      
 4.  Modify the security policy setting, and then click **OK**.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > -   Always test a newly created policy in a test organizational unit before you apply it to your network.
 > -   When you change a security setting through a GPO and click **OK**, that setting will take effect the next time you refresh the settings.
  

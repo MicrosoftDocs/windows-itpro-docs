@@ -33,7 +33,7 @@ The data covered in this article is grouped into the following categories:
 -   Browsing History data
 -   Inking, Typing, and Speech Utterance data
 
-> [!NOTE]  
+> [!NOTE]
 > The majority of diagnostic data falls into the first four categories.
 
 ## Common data

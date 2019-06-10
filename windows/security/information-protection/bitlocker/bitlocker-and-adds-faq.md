@@ -39,7 +39,7 @@ For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-sett
 
 The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the C: drive to AD DS, you would use the following command from an elevated command prompt: **manage-bde -protectors -adbackup C:**.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled in Group Policy).
  
 ## Is there an event log entry recorded on the client computer to indicate the success or failure of the Active Directory backup?

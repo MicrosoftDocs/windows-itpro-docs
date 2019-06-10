@@ -59,7 +59,7 @@ Comments are not supported in the `LayoutModification.xml` file.
 
 ### Supported elements and attributes
 
->[!NOTE]  
+>[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.
