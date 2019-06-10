@@ -17,7 +17,14 @@ ms.localizationpriority: Normal
 > [!NOTE]
 > It is important that you know the FQDN of the Client Access service of the on-premises Exchange server.
 
+```PowerShell
+   $ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
+$ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
+Import-PSSession $ExchSession
 ```
+   
+
+```PowerShell
 $ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
 $ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
 Import-PSSession $ExchSession
@@ -25,13 +32,13 @@ Import-PSSession $ExchSession
 
 ## Create the device account
 
-```
+```PowerShell
 New-Mailbox -UserPrincipalName Hub01@contoso.com -Alias Hub01 -Name "Hub 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
 ```
 
 ## Set automatic calendar processing
 
-```
+```PowerShell
 Set-CalendarProcessing -Identity "HUB01@contoso.com" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This room is equipped with a Surface Hub"
 ```
 
@@ -40,7 +47,7 @@ Set-CalendarProcessing -Identity "HUB01@contoso.com" -AutomateProcessing AutoAcc
 > [!NOTE]
 > It is important that you know the FQDN of the Skype for Business Registrar Pool.
 
-```
+```PowerShell
 Enable-CsMeetingRoom -Identity Contoso\HUB01 -SipAddressType emailaddress -RegistrarPool SfbIEFE01.contoso.local
 ```
 
@@ -50,7 +57,7 @@ You may need to create a new Mobile Device Mailbox Policy (also known as ActiveS
 
 ## Create a Surface Hub mobile device mailbox policy
 
-```
+```PowerShell
 New-MobileDeviceMailboxPolicy -Name “Surface Hubs” -PasswordEnabled $false
 ```
 
@@ -58,6 +65,6 @@ New-MobileDeviceMailboxPolicy -Name “Surface Hubs” -PasswordEnabled $false
 
 It is recommended to add a MailTip to Surface Hub rooms so users remember to make the meeting a Skype for Business or Teams meeting:
 
-```
+```PowerShell
 Set-Mailbox "Surface Hub 2S" -MailTip "This is a Surface Hub room. Please make sure this is a Microsoft Teams meeting."
 ```
