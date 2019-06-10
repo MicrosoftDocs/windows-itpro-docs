@@ -40,6 +40,8 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 
 ## Preparation
 
+Devices slated for WG provisioning are registered for Autopilot via the normal registration process. 
+
 To be ready to try out Windows Autopilot for white glove deployment, ensure that you can first successfully use existing Windows Autopilot user-driven scenarios:
 
 - User-driven Azure AD join.  Devices can be deployed using Windows Autopilot and joined to an Azure Active Directory tenant.
@@ -47,7 +49,7 @@ To be ready to try out Windows Autopilot for white glove deployment, ensure that
 
 If these scenarios cannot be completed, Windows Autopilot for white glove deployment will also not succeed since it builds on top of these scenarios.
 
-To enable white glove deployment, an additional Autopilot profile setting must be configured:
+To enable white glove deployment, an additional Autopilot profile setting must be configured by the customer or IT Admin via their Intune account, prior to beginning the white glove process in the provisioning service facility:
 
  ![allow white glove](images/allow-white-glove-oobe.png)
 
@@ -65,8 +67,7 @@ Each of these scenarios consists of two parts, a technician flow and a user flow
 
 ### Technican flow
 
-The first part of the Windows Autopilot for white glove deployment process is designed to be carried out by a technician; this could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities.
-Regardless of the scenario, the process to be performed by the technician is the same:
+After the customer or IT Admin has targeted all the apps and settings they want for their devices through Intune, the white glove technician can begin the white glove process.  The technician could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities. Regardless of the scenario, the process to be performed by the technician is the same:
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
 - From the first OOBE screen (which could be a language selection or locale selection screen), do not click **Next**.  Instead, press the Windows key five times to view an additional options dialog.  From that screen, choose the **Windows Autopilot provisioning** option and then click **Continue**.
 
@@ -77,6 +78,7 @@ Regardless of the scenario, the process to be performed by the technician is the
     - The organization name for the device.
     - The user assigned to the device (if there is one).
     - A QR code containing a unique identifier for the device, useful to look up the device in Intune to make any configuration changes needed (e.g. assigning a user, adding the device to any additional groups needed for app or policy targeting).
+    - **Note**: The QR codes can be scanned using a companion app, which will also configure the device to specify who it belongs to.  An [open-source sample of the companion app](https://github.com/Microsoft/WindowsAutopilotCompanion) that integrates with Intune via the Graph API has been published to GitHub by the Autopilot team.
 - Validate the information displayed.  If any changes are needed, make these and then click **Refresh** to re-download the updated Autopilot profile details.
 
   ![landing](images/landing.png)
