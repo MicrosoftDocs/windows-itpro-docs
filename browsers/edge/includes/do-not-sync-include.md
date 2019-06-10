@@ -19,7 +19,7 @@ ms:topic: include
 |                Group Policy                 | MDM | Registry |                                     Description                                      |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|--------------------------------------------------------------------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     |          Allowed/turned on. Users can choose what to sync to their device.           |                                                  |
-|                   Enabled                   |  2  |    2     | Prevented/turned off. Disables the *Sync your Settings* toggle and prevents syncing. | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  2  |    2     | Prevented/turned off. Disables the *Sync your Settings* toggle and prevents syncing. | ![Most restricted value](/images/check-gn.png) |
 
 ---
 

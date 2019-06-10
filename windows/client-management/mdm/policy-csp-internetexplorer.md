@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - InternetExplorer
 description: Policy CSP - InternetExplorer
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -2227,7 +2227,7 @@ Value - A number indicating the zone with which this site should be associated f
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
-> [!Note]  
+> [!NOTE]
 > This policy is a list that contains the site and index value.
 
 The list is a set of pairs of strings. Each string is seperated by F000. Each pair of strings is stored as a registry name and value. The registry name is the site and the value is an index. The index has to be sequential. See an example below.

@@ -23,7 +23,7 @@ ms.date: 05/03/2018
 
 Because each computer running Windows 10 can have only one WDAC policy, you will occasionally need to merge two or more policies. For example, after a WDAC policy is created and audited, you might want to merge audit events from another WDAC policy.
 
-> [!NOTE] 
+> [!NOTE]
 > Because only one SiPolicy.p7b file can be active on a system, the last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then amanaged installer using System Center Configuration Manager (SCCM) targeted the same device, the SCCM policy would overwrite the SiPolicy.p7b file.
 
 To merge two WDAC policies, complete the following steps in an elevated Windows PowerShell session:
@@ -40,7 +40,7 @@ To merge two WDAC policies, complete the following steps in an elevated Windows 
 
    ` $CIPolicyBin=$CIPolicyPath+"NewDeviceGuardPolicy.bin"`
 
-   > [!Note] 
+   > [!NOTE]
    > The variables in this section specifically expect to find an initial policy on your desktop called **InitialScan.xml** and an audit WDAC policy called **DeviceGuardAuditPolicy.xml**. If you want to merge other WDAC policies, update the variables accordingly.
 
 2. Use [Merge-CIPolicy](https://docs.microsoft.com/powershell/module/configci/merge-cipolicy) to merge two policies and create a new WDAC policy:

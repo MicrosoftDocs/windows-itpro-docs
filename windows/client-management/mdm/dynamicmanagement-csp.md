@@ -1,7 +1,7 @@
 ---
 title: DynamicManagement CSP
 description: DynamicManagement CSP
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

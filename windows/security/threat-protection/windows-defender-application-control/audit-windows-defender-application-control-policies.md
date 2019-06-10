@@ -85,7 +85,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
    ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
-   > [!Note] 
+   > [!NOTE]
    > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
 
 4. Find and review the WDAC audit policy .xml file that you created. If you used the example variables as shown, the filename will be **DeviceGuardAuditPolicy.xml**, and it will be on your desktop. Look for the following:
@@ -96,5 +96,5 @@ Use the following procedure after you have been running a computer with a WDAC p
 
 You can now use this file to update the existing WDAC policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing WDAC policy, see the next section, [Merge Windows Defender Application Control policies](#merge-windows-defender-application-control-policies).
 
-> [!Note] 
+> [!NOTE]
 > You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](#create-a-windows-defender-application-control-policy-from-a-reference-computer). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.

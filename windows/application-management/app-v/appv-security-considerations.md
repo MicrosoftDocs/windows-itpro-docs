@@ -56,7 +56,7 @@ No groups are created automatically during App-V setup. You should create the fo
 Consider the following additional information:
 
 * Access to the package shares: If a share exists on the same computer as the management Server, the **Network** service requires read access to the share. In addition, each App-V client computer must have read access to the package share.
-  >[!NOTE]
+ > [!NOTE]
   >In previous versions of App-V, package share was referred to as content share.
 * Registering publishing servers with Management Server: A publishing server must be registered with the Management server. For example, it must be added to the database, so that the Publishing server machine accounts are able to call into the Management service API.
 

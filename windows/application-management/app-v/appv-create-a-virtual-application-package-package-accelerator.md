@@ -40,7 +40,7 @@ Use the following procedure to create a virtual application package with the App
 
     Alternatively, if you have already copied the installation files to a directory on this computer, select **Make New Folder**, browse to the folder that contains the installation files, then select **Next**.
 
-    >[!NOTE]
+   > [!NOTE]
     >You can specify the following types of supported installation files:
     > - Windows Installer files (**.msi**)
     > - Cabinet files (.cab)

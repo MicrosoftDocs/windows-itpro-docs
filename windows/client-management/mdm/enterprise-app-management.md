@@ -4,7 +4,7 @@ description: This topic covers one of the key mobile device management (MDM) fea
 ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

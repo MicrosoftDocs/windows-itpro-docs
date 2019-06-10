@@ -4,7 +4,7 @@ description: CM\_CellularEntries CSP
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -139,7 +139,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <a href="" id="iptype"></a>**IPType**  
 <p style="margin-left: 20px"> Optional. Type: String. Specifies the network protocol of the connection. Available values are &quot;IPv4&quot;, &quot;IPv6&quot;, &quot;IPv4v6&quot;, and &quot;IPv4v6xlat&quot;. If a value is not specified, the default value is &quot;IPv4&quot;.
 
-> [!Warning]  
+> [!WARNING]
 > Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
 
  
@@ -149,7 +149,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 <p style="margin-left: 20px"> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to &quot;1&quot;. This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
 
-> [!Important]  
+> [!IMPORTANT]
 > Do not set ExemptFromDisablePolicy to "1", ExemptFromRoaming to "1", or UseRequiresMappingsPolicy to "1" for general purpose connections.
 
 <p style="margin-left: 20px"> To avoid UX inconsistency with certain value combinations of ExemptFromDisablePolicy and AllowMmsIfDataIsOff, when you do not set ExemptFromDisablePolicy to 1 (default is 0), you should:
@@ -168,12 +168,11 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <a href="" id="idledisconnecttimeout"></a>**IdleDisconnectTimeout**  
 <p style="margin-left: 20px"> Optional. Type: Int. Specifies how long an on-demand connection can be unused before Connection Manager tears the connection down. This value is specified in seconds. Valid value range is 5 to 60 seconds. If not specified, the default is 30 seconds.
 
-> [!Important]
+> [!IMPORTANT]
 > <p style="margin-left: 20px"> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
-> 
-> 
-> 
-> [!Note]
+
+
+> [!NOTE]
 > If tear-down/activation requests occur too frequently, this value should be set to greater than 5 seconds.
 
  

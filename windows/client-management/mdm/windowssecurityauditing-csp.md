@@ -4,7 +4,7 @@ description: The WindowsSecurityAuditing configuration service provider (CSP) is
 ms.assetid: 611DF7FF-21CE-476C-AAB5-3D09C1CDF08A
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

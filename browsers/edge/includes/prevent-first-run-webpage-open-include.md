@@ -19,7 +19,7 @@ ms:topic: include
 |                Group Policy                 | MDM | Registry |             Description              |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|--------------------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     | Allowed. Load the First Run webpage. |                                                  |
-|                   Enabled                   |  1  |    1     |              Prevented.              | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |              Prevented.              | ![Most restricted value](/images/check-gn.png) |
 
 ---
 
