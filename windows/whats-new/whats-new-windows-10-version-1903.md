@@ -116,6 +116,14 @@ The draft release of the [security configuration baseline settings](https://blog
     This brings WDAC to functionality parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that is not available with AppLocker.
     - [Allow COM Object Registration](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy): Previously, WDAC enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
+#### System Guard
+
+[System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) has added a new feature in this version of Windows called **SMM Firmware Measurement**. This feature is built on top of [System Guard Secure Launch](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to check that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, OS memory and secrets are protected from SMM. There are currently no devices out there with compatible hardware, but they will be coming out in the next few months.
+
+This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
+
+![System Guard](images/system-guard.png "SMM Firmware Measurement")
+
 ### Identity Protection
 
 - [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less login for websites supporting FIDO2 authentication, such as Microsoft account and Azure AD.
@@ -130,8 +138,6 @@ The draft release of the [security configuration baseline settings](https://blog
 - [Tamper Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) lets you prevent others from tampering with important security features.
 
 ## Microsoft Edge
-
-Windows 10, version 1903 offers new Group Policies and [MDM policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser) for managing Microsoft Edge. You can silently enable BitLocker for standard Azure Active Directory-joined users. You can also more easily manage the entire Microsoft 365 experience for users with the Microsoft 365 Admin Center.
 
 Several new features are coming in the next version of Edge. See the [news from Build 2019](https://blogs.windows.com/msedgedev/2019/05/06/edge-chromium-build-2019-pwa-ie-mode-devtools/#2QJF4u970WjQ2Sv7.97) for more information.
 
