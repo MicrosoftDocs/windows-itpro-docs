@@ -289,7 +289,7 @@ In this configuration, passwords for SCRIL-configured users expire based on Acti
 ![Rotate Password 2016](images/passwordless/02-rotate-scril-2016.png)
 
 > [!NOTE]
-> Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability with while reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.
+> Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.
 
 ## The Road Ahead
 The information presented here is just the beginning. We will update this guide with improved tool and methods and scenarios, like Azure AD joined and MDM managed environments, As we continue to invest in password-less, we would love to hear from you. Your feedback is important. Send us an email at [pwdless@microsoft.com](mailto:pwdless@microsoft.com?subject=Passwordless%20Feedback).
