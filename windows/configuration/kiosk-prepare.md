@@ -71,7 +71,7 @@ In addition to the settings in the table, you may want to set up **automatic log
 
 1. Open Registry Editor (regedit.exe).
 
-   >[!NOTE]  
+   >[!NOTE]
    >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
  

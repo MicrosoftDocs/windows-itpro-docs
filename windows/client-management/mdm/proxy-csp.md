@@ -4,7 +4,7 @@ description: PROXY CSP
 ms.assetid: 9904d44c-4a1e-4ae7-a6c7-5dba06cb16ce
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

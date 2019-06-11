@@ -132,7 +132,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 5. Set a value for **Package Version**.
 
-   > [!TIP]  
+   > [!TIP]
    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 6. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.

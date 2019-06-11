@@ -29,7 +29,7 @@ Third-party MDM servers can manage Windows 10 by using the MDM protocol. The bu
 
 With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM security baseline that functions like the Microsoft GP-based security baseline. You can easily integrate this baseline into any MDM to support IT pros’ operational needs, addressing security concerns for modern cloud-managed devices.
 
->[!NOTE]
+> [!NOTE]
 >Intune support for the MDM security baseline is coming soon.
 
 The MDM security baseline includes policies that cover the following areas:

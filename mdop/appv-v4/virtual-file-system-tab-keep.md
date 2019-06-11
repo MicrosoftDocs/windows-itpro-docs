@@ -1,11 +1,11 @@
 ---
 title: Virtual File System Tab
 description: Virtual File System Tab
-author: v-madhi
+author: manikadhiman
 ms.assetid: 9d084e2a-720d-4a25-9cd5-d0d70868b413
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

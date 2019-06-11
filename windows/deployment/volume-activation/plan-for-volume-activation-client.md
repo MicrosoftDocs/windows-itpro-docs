@@ -35,7 +35,7 @@ ms.topic: article
 
 During the activation process, information about the specific installation is examined. In the case of online activations, this information is sent to a server at Microsoft. This information may include the software version, the product key, the IP address of the computer, and information about the device. The activation methods that Microsoft uses are designed to help protect user privacy, and they cannot be used to track back to the computer or user. The gathered data confirms that the software is a legally licensed copy, and this data is used for statistical analysis. Microsoft does not use this information to identify or contact the user or the organization.
 
->[!NOTE] 
+>[!NOTE]
 >The IP address is used only to verify the location of the request, because some editions of Windows (such as “Starter” editions) can only be activated within certain geographical target markets.
 
 ## Distribution channels and activation

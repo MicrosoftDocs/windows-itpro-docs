@@ -25,7 +25,7 @@ To install the management server on a standalone computer and connect it to the 
 5. On the **Installation Location** page, accept the default location, then select **Next**.
 6. On the **Configure Existing Management Database** page, select **Use a remote SQL Server**, then enter the computer running Microsoft SQL's machine name, such as ```SqlServerMachine```.
 
-   >[!NOTE]
+  > [!NOTE]
    >If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance**, then enter the instance's name. Specify the **SQL Server Database name** that this management server will use, such as ```AppvManagement```.
 7. On the **Configure management server configuration** page, specify the following items:
    * The AD group or account that will connect to the management console for administrative purposes for example **MyDomain\\MyUser** or **MyDomain\\AdminGroup**. The account or AD group you specify will be enabled to manage the server through the management console. You can add additional users or groups using the management console after installation

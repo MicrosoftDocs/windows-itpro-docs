@@ -58,7 +58,7 @@ For older hardware, where a PIN may be needed, it’s recommended to enable [enh
 
 BitLocker is designed to make the encrypted drive unrecoverable without the required authentication. When in recovery mode, the user needs the recovery password or recovery key to unlock the encrypted drive.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Store the recovery information in AD DS, along with your Microsoft Account, or another safe location.
  
 ## Can the USB flash drive that is used as the startup key also be used to store the recovery key?

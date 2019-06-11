@@ -252,7 +252,7 @@ Now that you have Azure AD Premium and have it properly configured, you can conf
 
 You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/" target="_blank">this blog post</a> to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > We will use the classic Azure portal instead of the new portal to configure automatic MDM enrollment with Intune.
 
 **To enable automatic MDM enrollment**

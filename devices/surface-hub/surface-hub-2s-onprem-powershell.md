@@ -10,6 +10,7 @@ audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
 ---
+
 # Configure Surface Hub 2S on-premises accounts with PowerShell
 
 ## Connect to Exchange Server PowerShell
@@ -22,7 +23,6 @@ ms.localizationpriority: Normal
 $ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
 Import-PSSession $ExchSession
 ```
-   
 
 ```PowerShell
 $ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
@@ -51,7 +51,7 @@ Set-CalendarProcessing -Identity "HUB01@contoso.com" -AutomateProcessing AutoAcc
 Enable-CsMeetingRoom -Identity Contoso\HUB01 -SipAddressType emailaddress -RegistrarPool SfbIEFE01.contoso.local
 ```
 
-# Mobile Device Mailbox Policy
+## Mobile Device Mailbox Policy
 
 You may need to create a new Mobile Device Mailbox Policy (also known as ActiveSync Policy) to allow your Surface Hub to connect to your online or on-premises environment.
 

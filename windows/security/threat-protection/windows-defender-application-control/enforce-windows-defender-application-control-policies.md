@@ -23,7 +23,7 @@ ms.date: 05/03/2018
 
 Every WDAC policy is created with audit mode enabled. After you have successfully deployed and tested a WDAC policy in audit mode and are ready to test the policy in enforced mode, complete the following steps in an elevated Windows PowerShell session:
 
-> [!Note] 
+> [!NOTE]
 > Every WDAC policy should be tested in audit mode first. For information about how to audit WDAC policies, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md), earlier in this topic.
 
 1. Initialize the variables that will be used:
@@ -36,7 +36,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
    ` $CIPolicyBin=$CIPolicyPath+"EnforcedDeviceGuardPolicy.bin"`
 
-   > [!Note] 
+   > [!NOTE]
    > The initial WDAC policy that this section refers to was created in the [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) section. If you are using a different WDAC policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
 
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the WDAC policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
@@ -55,7 +55,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
    ` Set-RuleOption -FilePath $EnforcedCIPolicy -Option 3 -Delete`
 
-   > [!Note] 
+   > [!NOTE]
    > To enforce a WDAC policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a WDAC policy.
 
 5. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the new WDAC policy to binary format:

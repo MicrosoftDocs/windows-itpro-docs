@@ -19,7 +19,7 @@ ms:topic: include
 |                Group Policy                 | MDM | Registry |                                    Description                                    |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|-----------------------------------------------------------------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     | Allowed/unlocked.  Users can add, import, and make changes to the Favorites list. |                                                  |
-|                   Enabled                   |  1  |    1     |                              Prevented/locked down.                               | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |                              Prevented/locked down.                               | ![Most restricted value](/images/check-gn.png) |
 
 ---
 

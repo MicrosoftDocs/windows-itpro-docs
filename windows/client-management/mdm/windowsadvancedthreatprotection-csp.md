@@ -4,7 +4,7 @@ description: WindowsAdvancedThreatProtection CSP
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

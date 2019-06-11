@@ -4,7 +4,7 @@ description: DMAcc CSP
 ms.assetid: 43e73d8a-6617-44e7-8459-5c96f4422e63
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

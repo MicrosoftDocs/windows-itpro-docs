@@ -7,7 +7,7 @@ MS-HAID:
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -364,7 +364,8 @@ Starting in Windows 10, version 1709, clicking the **Info** button will show a l
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
-> [Note] Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
+> [NOTE]
+> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 
