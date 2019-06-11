@@ -285,7 +285,7 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 ##### Automatic password change for SCRIL configured users
 Domains configured for Windows Server 2016 domain functional level can further secure the unknown password for SCRIL-enabled users by configuring the domain to automatically change the password for SCRIL users.
 
-In this configuration, passwords for SCRIL configured users expired based on Active Directory password policy settings. When the SCRIL user authentication from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128 bit password for the user as part of the authentication. What is great about this feature is your users do not experience any change password notifications or experience any authentication outages.
+In this configuration, passwords for SCRIL-configured users expire based on Active Directory password policy settings. When the SCRIL user authenticates from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128 bit password for the user as part of the authentication. What is great about this feature is your users do not experience any change password notifications or any authentication outages.
 ![Rotate Password 2016](images/passwordless/02-rotate-scril-2016.png)
 
 > [!NOTE]
