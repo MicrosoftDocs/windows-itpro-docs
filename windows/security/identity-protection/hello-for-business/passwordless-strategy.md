@@ -179,7 +179,7 @@ Your test users have provided you valuable information that describes the how, w
 
 Create a master list of the scenarios. Each scenario should have a clear problem statement. Name the scenario with a one-sentence summary of the problem statement. Include in the scenario the results of your team's investigation as to why the user is prompted by a password. Include relevant, but accurate details. If its policy or procedure driven, then include the name and section of the policy that dictates why the workflow uses a password.
 
-Keep in mind your test users will not uncover all scenarios. Some scenarios you will need to force on your users because they low percentage scenarios. Remember to include scenarios like:
+Keep in mind your test users will not uncover all scenarios. Some scenarios you will need to force on your users because they are low percentage scenarios. Remember to include scenarios like:
 - Provisioning a new brand new user without a password.
 - Users who forget the PIN or other remediation flows when the strong credential is unusable.
 
