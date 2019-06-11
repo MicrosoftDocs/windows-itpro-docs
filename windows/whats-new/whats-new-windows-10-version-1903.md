@@ -118,7 +118,7 @@ The draft release of the [security configuration baseline settings](https://blog
 
 #### System Guard
 
-System Guard has added a new feature in this version of Windows called **SMM Firmware Measurement**. This feature is built on top of [System Guard Secure Launch](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to check that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, OS memory and secrets are protected from SMM. There are currently no devices out there with compatible hardware, but they will be coming out in the next few months.
+[System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) has added a new feature in this version of Windows called **SMM Firmware Measurement**. This feature is built on top of [System Guard Secure Launch](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to check that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, OS memory and secrets are protected from SMM. There are currently no devices out there with compatible hardware, but they will be coming out in the next few months.
 
 This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
 
