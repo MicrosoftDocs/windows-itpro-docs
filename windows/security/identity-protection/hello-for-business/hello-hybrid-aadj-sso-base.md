@@ -90,7 +90,7 @@ Steps you will perform include:
 
 - [Configure Internet Information Services to host CRL distribution point](#configure-internet-information-services-to-host-crl-distribution-point) 
 - [Prepare a file share to host the certificate revocation list](#prepare-a-file-share-to-host-the-certificate-revocation-list)
-- [Configure the new CRL distribution point in the issuing certificate authority](#Configure-the-new-crl-distribution-point-in-the-issuing-certificate-authority)
+- [Configure the new CRL distribution point in the issuing certificate authority](#configure-the-new-crl-distribution-point-in-the-issuing-certificate-authority)
 - [Publish CRL](#publish-a-new-crl)
 - [Reissue domain controller certificates](#reissue-domain-controller-certificates)
 
