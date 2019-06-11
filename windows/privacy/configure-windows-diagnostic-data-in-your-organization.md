@@ -401,7 +401,7 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 - **Some crash dump types.** Triage dumps for user mode and mini dumps for kernel mode.
 
 >[!NOTE]
-> Triage dumps are small minidumps in which a filtering algorithm has overwritten user-sensitive information. However, it is still possible that some user-sensitive information may remain.
+> Triage dumps are a type of [minidumps](https://docs.microsoft.com/windows/desktop/debug/minidump-files) that go through a process of user-sensitive information scrubbing. Some user-sensitive information may be missed in the process, and will therefore be sent with the dump.
 
 ### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
 
