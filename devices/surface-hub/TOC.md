@@ -9,7 +9,7 @@
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 
 ### [Unpacking Surface Hub 2S](surface-hub-2s-unpack.md)
-### [Room considerations for Surface Hub 2S](surface-hub-2s-room-considerations.md)
+### [Site planning for Surface Hub 2S](surface-hub-2s-site-planning.md)
 ### [Physically installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
 ### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
