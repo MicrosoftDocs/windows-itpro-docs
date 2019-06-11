@@ -228,7 +228,7 @@ Excluding the password credential provider hides the password credential provide
 This is the big moment. You have identified password usage, developed solutions to mitigate password usage, and have removed or disabled password usage from Windows. In this configuration, your users will not be able to use a password. Users will be blocked if any of their workflows ask them for a password. Ideally, your test users should be able to complete all the work flows of the targeted work persona without any password usage. Do not forget those low percentage work flows, such as provisioning a new user or a user that forgot their PIN or cannot use their strong credential. Ensure those scenarios are validated as well.
 
 ### Transition into a password-less deployment (Step 3)
-Congratulations!  You are ready to transition one or more portions of your organization to a password-less deployment. You have validated the targeted work-persona is ready to go where the user no longer needs to know or use their password. You are just few steps away from declaring success.
+Congratulations!  You are ready to transition one or more portions of your organization to a password-less deployment. You have validated that the targeted work persona is ready to go where the user no longer needs to know or use their password. You are just a few steps away from declaring success.
 
 #### Awareness and user education
 In this last step, you are going to include the remaining users that fit the targeted work persona to the wonderful world of password-less. Before you do this, you want to invest in an awareness campaign.
