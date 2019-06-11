@@ -233,7 +233,7 @@ Congratulations!  You are ready to transition one or more portions of your organ
 #### Awareness and user education
 In this last step, you are going to include the remaining users that fit the targeted work persona to the wonderful world of password-less. Before you do this, you want to invest in an awareness campaign.
 
-An awareness campaign is introduces the users to the new way of authenticating to their device, such as using Windows Hello for Business. The idea of the campaign is to positively promote the change to the users in advance. Explain  the value and why your company is changing. The campaign should provide dates and encourage questions and feedback. This campaign can coincide user education, where you can show the users the changes and, if your environment allows, enable the users to try the experience out.
+An awareness campaign introduces the users to the new way of authenticating to their device, such as using Windows Hello for Business. The idea of the campaign is to positively promote the change to the users in advance. Explain  the value and why your company is changing. The campaign should provide dates and encourage questions and feedback. This campaign can coincide with user education, where you can show the users the changes and, if your environment allows, enable the users to try out the experience.
 
 #### Including remaining users that fit the work persona
 You have implemented the awareness campaign for the targeted users. These users are informed and ready to transition to password-less. Add the remaining users that match the targeted work persona to your deployment.
