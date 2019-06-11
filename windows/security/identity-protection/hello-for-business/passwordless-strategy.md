@@ -249,7 +249,7 @@ Track all reported issues. Set priority and severity to each reported issue and 
 
 Each organization's priority and severity will differ however most organizations consider work stoppages fairly significant. Your team should pre-define levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it and less time on process.
 
-Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating.
+Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
 
 #### Configure user accounts to disallow password authentication.
 You transitioned all the users for the targeted work persona to a password-less environment and you have successfully validated all their workflows. The last step to complete the password-less transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
