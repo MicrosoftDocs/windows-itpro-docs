@@ -213,7 +213,7 @@ The policy name for these operating systems is **Interactive logon: Require smar
 The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
 ![securityPolicyRSAT](images/passwordless/00-updatedsecuritypolicytext.png)
 
-When you enables this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
+When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
 #### Excluding the password credential provider
 You can use Group Policy to deploy an administrative template policy settings to the computer. This policy settings is found under **Computer Configuration > Policies > Administrative Templates > Logon**
