@@ -75,7 +75,7 @@ Capturing the number of applications used is easier once you have the department
 #### Number of work personas
 Work personas is where the three previous efforts converge. You know the departments, the organizational levels within each department, the numbers of applications used by each, respectively, and the type of application. From this you want to create a work persona.
 
-A work persona classifies a category of user, title or role (individual contributor, manager, middle manager, etc), within a specific department to a collection of applications used. There is a high possibility and probability that you will have many work personas. These work personas will become units of work an you will refer to them in documentation and in meetings. You need to give them a name.
+A work persona classifies a category of user, title or role (individual contributor, manager, middle manager, etc.), within a specific department to a collection of applications used. There is a high possibility and probability that you will have many work personas. These work personas will become units of work an you will refer to them in documentation and in meetings. You need to give them a name.
 
 Give your personas easy and intuitive name like Abby Accounting, Mark Marketing, or Sue Sales. If the organization levels are common across departments then decide on a first name that represents the common levels in a department. For example, Abby could be the first name of an individual contributor in any given department, while the first name Sue could represent someone from middle management in any given department. Additionally, you can use suffixes such as (I, II, Senior, etc.) to further define departmental structure for a given persona.
 
