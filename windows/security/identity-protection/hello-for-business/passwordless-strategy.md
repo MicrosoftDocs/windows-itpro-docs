@@ -132,7 +132,7 @@ The journey to password-less is to take each work persona through each password-
    5. Validate that **none of the workflows** need passwords.
 3. Transition into a password-less (Step 3)
    1. Awareness campaign and user education.
-   2. Including remaining users that fit the work persona.
+   2. Include remaining users that fit the work persona.
    3. Validate that **none of the users** of the work personas need passwords.
    4. Configure user accounts to disallow password authentication.
 
