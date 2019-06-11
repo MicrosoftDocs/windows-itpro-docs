@@ -114,7 +114,7 @@ Review your collection of work personas. Early in your password-less journey, id
 
 Most organizations host their proof of concept in a test lab or environment. To do that with password-less may be more challenging and take more time. To test in a lab, you must first duplicate the environment of the targeted persona. This could be a few days or several weeks depending on the complexity of targeted work persona.
 
-You will want to balance testing in a lab with providing results to management quickly. Continuing to show forward progress on your password-less journey is always good thing. If there are ways you can test in production with low or now risk, that may be advantageous to your time line.
+You will want to balance testing in a lab with providing results to management quickly. Continuing to show forward progress on your password-less journey is always a good thing. If there are ways you can test in production with low or now risk, that may be advantageous to your timeline.
 
 ## The Process
 
