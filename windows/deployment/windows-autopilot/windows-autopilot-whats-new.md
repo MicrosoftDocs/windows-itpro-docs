@@ -27,7 +27,8 @@ ms.topic: article
 [Windows Autopilot for white glove deployment](white-glove.md) is new in Windows 10, version 1903. See the following video:
 
 <br>
->[!VIDEO https://www.youtube.com/embed/nE5XSOBV0rI]
+
+> [!VIDEO https://www.youtube.com/embed/nE5XSOBV0rI]
 
 Also new in this version of Windows:
 - The Intune enrollment status page (ESP) now tracks Intune Management Extensions.
