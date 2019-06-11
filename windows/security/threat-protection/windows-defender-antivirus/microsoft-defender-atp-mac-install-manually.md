@@ -89,13 +89,13 @@ If you did not enable Microsoft's driver during the installation, then Defender'
 
 You can also run ```mdatp --health```, that would report that the Real Time Protection is enabled but not available:
 
-    ```bash
-    mavel-mojave:~ testuser$ mdatp --health
-    ...
-    realTimeProtectionAvailable             : false
-    realTimeProtectionEnabled               : true
-    ...
-    ```
+```bash
+mavel-mojave:~ testuser$ mdatp --health
+...
+realTimeProtectionAvailable             : false
+realTimeProtectionEnabled               : true
+...
+```
 
 To resolve it, click on the Fix button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation". 
 You can enable it by performting the following steps:
@@ -118,19 +118,19 @@ Note, that if you won't complete this step [during 30 minutes](https://developer
 
 4. In Terminal, install the driver again. This time the operation will succeed:
 
-    ```bash
-    mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
-    ```
+```bash
+mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+```
 
 The banner would disappear from the Defender application, and ```mdatp --health``` would now report that Real Time Protection is both enabled and available:
 
-    ```bash
-    mavel-mojave:~ testuser$ mdatp --health
-    ...
-    realTimeProtectionAvailable             : true
-    realTimeProtectionEnabled               : true
-    ...
-    ```
+```bash
+mavel-mojave:~ testuser$ mdatp --health
+...
+realTimeProtectionAvailable             : true
+realTimeProtectionEnabled               : true
+...
+```
 
 ## Client configuration
 
