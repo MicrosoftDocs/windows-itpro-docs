@@ -4,11 +4,11 @@ description: ICSPNode Move
 ms.assetid: efb359c3-5c86-4975-bf6f-a1c33922442a
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -25,7 +25,7 @@ HRESULT Move([in] IConfigManager2URI* puriDestination);
 ## Parameters
 
 <a href="" id="puridestination"></a>*puriDestination*  
-<p style="margin-left: 25px">Path and name of the node's new location, relative to the configuration service provider's root node.</p>
+<p style="margin-left: 25px">Path and name of the node&#39;s new location, relative to the configuration service provider&#39;s root node.</p>
 
 ## Return Value
 
@@ -43,7 +43,7 @@ For externally–transactioned nodes, if this method is implemented, then [ICSPN
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

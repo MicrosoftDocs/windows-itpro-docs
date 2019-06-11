@@ -16,7 +16,7 @@ manager: dansimp
 
 AccountManagement CSP is used to configure setting in the Account Manager service in Windows Holographic for Business edition. Added in Windows 10, version 1803.
 
-> [!Note]  
+> [!NOTE]
 > The AccountManagement CSP is only supported in Windows Holographic for Business edition.
 
 

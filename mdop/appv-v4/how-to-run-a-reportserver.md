@@ -22,7 +22,7 @@ The process for running a report is the same regardless of the report type. When
 **Note**  
 Reports are not run automatically; you must run them explicitly to generate output data. The length of time it takes to run a report is determined by the amount of data collected in the data store.
 
- 
+ 
 
 **To run a report**
 
@@ -55,9 +55,9 @@ Reports are not run automatically; you must run them explicitly to generate outp
 
 [How to Print a Report](how-to-print-a-reportserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

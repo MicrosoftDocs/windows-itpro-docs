@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - LocalPoliciesSecurityOptions
 description: Policy CSP - LocalPoliciesSecurityOptions
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2018
 ms.reviewer: 
 manager: dansimp
@@ -692,7 +692,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt or sign secure channel data (always)
@@ -762,7 +762,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt secure channel data (when possible)
@@ -829,7 +829,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Disable machine account password changes

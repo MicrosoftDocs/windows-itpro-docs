@@ -35,7 +35,7 @@ The Company Settings Center desktop application provides users with information 
 
     -   Configuration item in the UE-V Configuration Pack for System Center 2012 Configuration Manager: `Tray icon enabled`
 
-     
+     
 
 -   Control Panel application – In Control Panel, browse to **Appearance and Personalization**, and then click **Company Settings Center**.
 
@@ -83,9 +83,9 @@ The Company Settings Center can include a hyperlink that users can click to get 
 
 
 
- 
+ 
 
- 
+ 
 
 
 

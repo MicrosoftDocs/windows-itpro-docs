@@ -84,7 +84,7 @@ A managed service account is dependent on encryption types supported by Kerberos
 **Note**  
 Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](https://technet.microsoft.com/library/dd560670(WS.10).aspx).
 
- 
+ 
 
 Group managed service accounts are not applicable in Windows operating systems prior to Windows Server 2012.
 

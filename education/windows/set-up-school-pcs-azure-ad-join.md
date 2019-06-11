@@ -16,7 +16,7 @@ manager: dansimp
 
 # Azure AD Join for school PCs  
 
->   [!NOTE]  
+> [!NOTE]
 >   Set up School PCs app uses Azure AD Join to configure PCs. The app is helpful if you use the cloud based directory, Azure Active Directory (AD). If your organization uses Active Directory or requires no account to connect, install and use [Windows Configuration
 >   Designer](set-up-students-pcs-to-join-domain.md) to 
 >   join your PCs to your school's domain.

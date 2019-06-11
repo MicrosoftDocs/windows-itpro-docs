@@ -55,7 +55,7 @@ of the publisher condition.
 </tr>
 </tbody>
 </table>
- 
+ 
 Wildcard characters can be used as values in the publisher rule fields according to the following specifications:
 
 -   **Publisher**
@@ -90,7 +90,7 @@ The following table describes how a publisher condition is applied.
 | **Publisher, product name, file name, and file version** | **And above**<br/>The specified version of the named file and any new releases for the product that are signed by the publisher.| 
 | **Publisher, product name, file name, and file version**| **And below**<br/>The specified version of the named file and any older versions for the product that are signed by the publisher.| 
 | **Custom** | You can edit the **Publisher**, **Product name**, **File name**, and **Version** fields to create a custom rule.| 
- 
+ 
 For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
 ## Related topics

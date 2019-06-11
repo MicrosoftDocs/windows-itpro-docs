@@ -83,9 +83,9 @@ It creates the following files in the malware's working directory:
 - *00000000.pky*
 - *00000000.res*
 - *274901494632976.bat*
-- *@Please_Read_Me@.txt*
-- *@WanaDecryptor@.bmp*
-- *@WanaDecryptor@.exe*
+- <em>@Please_Read_Me@.txt</em>
+- <em>@WanaDecryptor@.bmp</em>
+- <em>@WanaDecryptor@.exe</em>
 - *b.wnry*
 - *c.wnry*
 - *f.wnry*
@@ -147,7 +147,7 @@ It then searches the whole computer for any file with any of the following file 
 
 WannaCrypt encrypts all files it finds and renames them by appending *.WNCRY* to the file name. For example, if a file is named *picture.jpg*, the ransomware encrypts and renames the file to *picture.jpg.WNCRY*.
 
-This ransomware also creates the file *@Please_Read_Me@.txt* in every folder where files are encrypted. The file contains the same ransom message shown in the replaced wallpaper image (see screenshot below).
+This ransomware also creates the file <em>@Please_Read_Me@.txt</em> in every folder where files are encrypted. The file contains the same ransom message shown in the replaced wallpaper image (see screenshot below).
 
 After completing the encryption process, the malware deletes the volume shadow copies by running the following command:
 `cmd.exe /c vssadmin delete shadows /all /quiet & wmic shadowcopy delete & bcdedit /set {default} bootstatuspolicy ignoreallfailures & bcdedit /set {default} recoveryenabled no & wbadmin delete catalog -quiet`

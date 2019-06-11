@@ -4,11 +4,11 @@ description: EnterpriseExtFileSystem DDF
 ms.assetid: 2D292E4B-15EE-4AEB-8884-6FEE8B92D2D1
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

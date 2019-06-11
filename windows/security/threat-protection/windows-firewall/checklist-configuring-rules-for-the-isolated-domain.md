@@ -40,6 +40,6 @@ The following checklists include tasks for configuring connection security rules
 | Link the GPO to the domain level of the AD DS organizational unit hierarchy. | [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)| 
 | Add your test computers to the membership group for the isolated domain. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Devices to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)| 
 | Verify that the connection security rules are protecting network traffic to and from the test computers. | [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)| 
- 
+ 
 
 Do not change the rules for any of your zones to require authentication until all of the zones have been set up and are operating correctly.

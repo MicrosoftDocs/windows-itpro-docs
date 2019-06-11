@@ -86,7 +86,7 @@ No groups are created automatically during MBAM Setup. However, you should creat
 </tbody>
 </table>
 
- 
+ 
 
 ### MBAM Server Local Groups
 
@@ -135,7 +135,7 @@ MBAM Setup creates local groups to support MBAM operations. You should add the A
 </tbody>
 </table>
 
- 
+ 
 
 ### SSRS Reports Access Account
 
@@ -148,7 +148,7 @@ During MBAM Setup, the following MBAM Setup log files are created in the %temp% 
 
 **MBAM Server Setup log files**
 
-<a href="" id="msi-five-random-characters--log"></a>MSI*&lt;five random characters&gt;*.log  
+<a href="" id="msi-five-random-characters--log"></a>MSI<em>&lt;five random characters&gt;</em>.log  
 Logs the actions taken during MBAM Setup and MBAM Server Feature installation.
 
 <a href="" id="installcompliancedatabase-log"></a>InstallComplianceDatabase.log  
@@ -172,11 +172,11 @@ Logs the actions taken to authorize web services to MBAM Recovery and Hardware d
 **Note**  
 In order to obtain additional MBAM Setup log files, you must install Microsoft BitLocker Administration and Monitoring by using the **msiexec** package and the **/l** &lt;location&gt; option. Log files are created in the location specified.
 
- 
+ 
 
 **MBAM Client Setup log files**
 
-<a href="" id="msi-five-random-characters--log"></a>MSI*&lt;five random characters&gt;*.log  
+<a href="" id="msi-five-random-characters--log"></a>MSI<em>&lt;five random characters&gt;</em>.log  
 Logs the actions taken during MBAM Client installation.
 
 ## MBAM Database TDE considerations
@@ -197,9 +197,9 @@ For more information about TDE in SQL Server 2008, see [Database Encryption in 
 
 [Security and Privacy for MBAM 1.0](security-and-privacy-for-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

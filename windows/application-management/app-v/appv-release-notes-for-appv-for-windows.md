@@ -36,7 +36,7 @@ MSI packages that were generated using an App-V sequencer from previous versions
 
 4. From an elevated Windows PowerShell prompt, navigate to the following folder:
  
-    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\** 
+    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\\** 
 
     By default, this path will be:<br>**C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer** 
 
@@ -137,8 +137,8 @@ The InsertVersionInfo.sql script is not required for versions of the App-V manag
 
 The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340).
 
->[!IMPORTANT] 
->**Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
+> [!IMPORTANT]
+> **Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
 
 ## Microsoft Visual Studio 2012 not supported
 App-V doesn't support Visual Studio 2012.

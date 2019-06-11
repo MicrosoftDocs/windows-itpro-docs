@@ -146,7 +146,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
     1. Double-click **Allow real-time definition updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     2. Double-click **Allow notifications to disable definitions based reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     
-> [!NOTE]  
+> [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 
 ## Related topics

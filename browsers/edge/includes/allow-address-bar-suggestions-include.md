@@ -18,10 +18,11 @@ ms:topic: include
 ### Supported values
 
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented. Hide the Address bar drop-down list and disable the _Show search and site suggestions as I type_ toggle in Settings.  |![Most restricted value](../images/check-gn.png) |
-|Enabled or not configured **(default)** |1 |1 |Allowed. Show the Address bar drop-down list and make it available. | |
+|              Group Policy               | MDM | Registry |                                                           Description                                                           |                 Most restricted                  |
+|-----------------------------------------|:---:|:--------:|---------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+|                Disabled                 |  0  |    0     | Prevented. Hide the Address bar drop-down list and disable the *Show search and site suggestions as I type* toggle in Settings. | ![Most restricted value](/images/check-gn.png) |
+| Enabled or not configured **(default)** |  1  |    1     |                               Allowed. Show the Address bar drop-down list and make it available.                               |                                                  |
+
 ---
 
 ### ADMX info and settings

@@ -23,15 +23,15 @@ However, you might find that many intranet sites need you to use Windows Graphic
 
 -   Add the following HTTP header to each site: `X-UA-TextLayoutMetrics: gdi`
 
-<p>**-OR-**<p>
+<p><strong>-OR-</strong><p>
 
 - Add the following &lt;meta&gt; tag to each site: `<meta http-equiv="X-UA-TextLayoutMetrics" content="gdi" />`
 
 Turning off natural metrics automatically turns on GDI metrics.
 
- 
+ 
 
- 
+ 
 
 
 

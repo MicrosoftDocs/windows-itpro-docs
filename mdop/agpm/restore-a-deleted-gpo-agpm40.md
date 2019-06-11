@@ -36,7 +36,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 **Note**  
 If a GPO was deleted from the production environment, restoring it to the archive will not automatically redeploy it to the production environment. To return the GPO to the production environment, deploy the GPO. For information, see [Deploy a GPO](deploy-a-gpo-agpm40.md).
 
- 
+ 
 
 ### Additional considerations
 
@@ -46,9 +46,9 @@ If a GPO was deleted from the production environment, restoring it to the archiv
 
 -   [Deleting, Restoring, or Destroying a GPO](deleting-restoring-or-destroying-a-gpo-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

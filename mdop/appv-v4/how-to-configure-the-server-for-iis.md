@@ -34,7 +34,7 @@ Before virtual applications can be streamed to the Application Virtualization De
 **Note**  
 If you are using IIS to publish the ICO and OSD files, you must configure a MIME type for OSD=TXT; otherwise, IIS will not serve the ICO and OSD files to clients. If you are using IIS to publish packages (SFT files), you must configure a MIME type for SFT=Binary; otherwise, IIS will not serve the SFT files to clients.
 
- 
+ 
 
 ## Related topics
 
@@ -49,9 +49,9 @@ If you are using IIS to publish the ICO and OSD files, you must configure a MIME
 
 [How to Configure the File Server](how-to-configure-the-file-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

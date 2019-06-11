@@ -4,11 +4,11 @@ description: ICSPNode DeleteChild
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

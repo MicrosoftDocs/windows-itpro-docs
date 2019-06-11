@@ -40,31 +40,31 @@ When preparing for the computer replace, you need to create a folder in which to
 
 ### Create and share the MigData folder
 
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
+1. On MDT01, log on as **CONTOSO\\Administrator**.
 
-2.  Create and share the **E:\\MigData** folder by running the following three commands in an elevated Windows PowerShell prompt:
-    ``` syntax
-    New-Item -Path E:\MigData -ItemType directory
-    New-SmbShare ?Name MigData$ ?Path E:\MigData 
-    -ChangeAccess EVERYONE
-    icacls E:\MigData /grant '"MDT_BA":(OI)(CI)(M)'
-    ```
-### Create a backup only (replace) task sequence
+2. Create and share the **E:\\MigData** folder by running the following three commands in an elevated Windows PowerShell prompt:
+   ``` syntax
+   New-Item -Path E:\MigData -ItemType directory
+   New-SmbShare ?Name MigData$ ?Path E:\MigData 
+   -ChangeAccess EVERYONE
+   icacls E:\MigData /grant '"MDT_BA":(OI)(CI)(M)'
+   ```
+   ### Create a backup only (replace) task sequence
 
-1.  On MDT01, using the Deployment Workbench, in the MDT Production deployment share, select the **Task Sequences** node and create a new folder named **Other**.
+3. On MDT01, using the Deployment Workbench, in the MDT Production deployment share, select the **Task Sequences** node and create a new folder named **Other**.
 
-2.  Right-click the **Other** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+4. Right-click the **Other** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
 
-    * Task sequence ID: REPLACE-001
-    * Task sequence name: Backup Only Task Sequence
-    * Task sequence comments: Run USMT to backup user data and settings
-    * Template: Standard Client Replace Task Sequence
+   * Task sequence ID: REPLACE-001
+   * Task sequence name: Backup Only Task Sequence
+   * Task sequence comments: Run USMT to backup user data and settings
+   * Template: Standard Client Replace Task Sequence
 
-3.  In the **Other** folder, double-click **Backup Only Task Sequence**, and then in the **Task Sequence** tab, review the sequence. Notice that it only contains a subset of the normal client task sequence actions.
+5. In the **Other** folder, double-click **Backup Only Task Sequence**, and then in the **Task Sequence** tab, review the sequence. Notice that it only contains a subset of the normal client task sequence actions.
 
-    ![The Backup Only Task Sequence action list](../images/mdt-03-fig02.png "The Backup Only Task Sequence action list")
+   ![The Backup Only Task Sequence action list](../images/mdt-03-fig02.png "The Backup Only Task Sequence action list")
 
-    Figure 2. The Backup Only Task Sequence action list.
+   Figure 2. The Backup Only Task Sequence action list.
 
 ## <a href="" id="sec02"></a>Perform the computer replace
 
@@ -88,9 +88,9 @@ During a computer replace, these are the high-level steps that occur:
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
         
-        >[!NOTE]  
+        >[!NOTE]
         >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
-         
+         
     2.  Specify where to save a complete computer backup: Do not back up the existing computer
     3.  Password: P@ssw0rd
 

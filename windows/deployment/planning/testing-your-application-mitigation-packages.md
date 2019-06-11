@@ -74,7 +74,7 @@ At this point, you probably cannot resolve any unresolved application compatibil
     **Note**  
     For more information about using Compatibility Administrator to apply compatibility fixes and compatibility modes, see [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md).
 
-     
+     
 
 -   Run the application in a virtual environment.
 

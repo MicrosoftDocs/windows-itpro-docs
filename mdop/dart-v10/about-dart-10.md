@@ -29,7 +29,7 @@ DaRT 10 includes the following enhancements and changes as described in this top
     **Note**  
     For earlier versions of the Windows operating systems, continue to use the earlier versions of DaRT.
 
-     
+     
 
 -   **Windows Defender**
 
@@ -45,7 +45,7 @@ DaRT 10 includes the following enhancements and changes as described in this top
     **Note**  
     Windows ADK 10.0 is not required if you are installing only Remote Connection Viewer or Crash Analyzer.
 
-     
+     
 
 -   **Windows 10 Debugging Tools**
 
@@ -88,9 +88,9 @@ DaRT 10 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is par
 
 [Release Notes for DaRT 10](release-notes-for-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

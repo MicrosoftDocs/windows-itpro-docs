@@ -52,7 +52,7 @@ Removes a package record and the applications associated with it.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -69,23 +69,23 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 The DELETE PACKAGE command always performs a global delete of the package and deletes only global file types and shortcuts.
 
 If the package is global, this command must be run as local Administrator; otherwise, only **DeleteApp** permission is needed.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

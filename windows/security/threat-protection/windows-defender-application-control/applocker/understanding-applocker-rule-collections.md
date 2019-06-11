@@ -36,7 +36,7 @@ An AppLocker rule collection is a set of rules that apply to one of five types:
 If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps.
 
 >**Important:**  Each app can load several DLLs, and AppLocker must check each DLL before it is allowed to run. Therefore, creating DLL rules might cause performance problems on some computers. Denying some DLLs from running can also create app compatibility problems. As a result, the DLL rule collection is not enabled by default.
- 
+ 
 For info about how to enable the DLL rule collection, see [Enable the DLL rule collection](enable-the-dll-rule-collection.md).
 
 ## Related topics

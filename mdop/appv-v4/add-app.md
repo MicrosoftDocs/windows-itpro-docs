@@ -60,7 +60,7 @@ Adds an application record.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -77,21 +77,21 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The resulting name of the application will be taken from the OSD file and not from the name provided in APP:&lt;application&gt;.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

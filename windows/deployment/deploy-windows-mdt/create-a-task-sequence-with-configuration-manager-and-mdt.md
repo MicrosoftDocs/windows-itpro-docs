@@ -95,7 +95,7 @@ After you create the task sequence, we recommend that you configure the task seq
 
     * OSDPreserveDriveLetter: True
     
-    >[!NOTE]  
+    >[!NOTE]
     >If you don't change this value, your Windows installation will end up in E:\\Windows.
 
 3.  In the **Post Install** group, select **Apply Network Settings**, and configure the Domain OU value to use the **Contoso / Workstations** OU (browse for values).
@@ -112,7 +112,7 @@ After you create the task sequence, we recommend that you configure the task seq
 
     * Options: Task Sequence Variable: Model equals HP EliteBook 8560w
     
-    >[!NOTE]  
+    >[!NOTE]
     >You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
     
     ![Driver package options](../images/fig27-driverpackage.png "Driver package options")
@@ -153,10 +153,10 @@ After you create the task sequence, we recommend that you configure the task seq
 
 11. Click **OK**.
 
->[!NOTE]  
+>[!NOTE]
 >The Request State Store and Release State Store actions need to be added for common computer replace scenarios.
 
- 
+ 
 
 ## <a href="" id="sec03"></a>Move the packages
 

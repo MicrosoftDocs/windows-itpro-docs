@@ -24,10 +24,10 @@ This section provides general information and instructions about how to install 
 
 MED-V 2.0 is based on an application model, where the same methods that you use to deploy applications can be used to deploy and manage MED-V. A deployed MED-V solution includes two components: the MED-V Host Agent and Guest Agent. The MED-V Host Agent is installed on the Windows 7 desktop and the MED-V Guest Agent is installed on Windows XP inside the MED-V workspace. MED-V also includes a MED-V Workspace Packager that provides the information and tools necessary for creating and configuring MED-V workspaces.
 
-**Important**  
+**Important**  
 MED-V only supports the installation of the MED-V Workspace Packager, the MED-V Host Agent, and the MED-V workspace for all users. Installing MED-V for the current user only by selecting **ALLUSERS=””** causes failures in the installation of the components and in the setup of the MED-V workspace.
 
- 
+
 
 ### The MED-V Installation Files
 
@@ -41,10 +41,10 @@ The Host Agent installation file is named MED-V\_HostAgent\_Setup.exe. This file
 
 The MED-V Workspace Packager installation file is named MED-V\_WorkspacePackager\_Setup.exe. Use this file to install the MED-V Workspace Packager on a computer where you have administrator rights and permissions. The desktop administrator uses the MED-V Workspace Packager to create and manage MED-V workspaces.
 
-**Note**  
+**Note**  
 The MED-V Guest Agent is installed automatically during first time setup.
 
- 
+
 
 ### The MED-V Deployment Process
 
@@ -56,10 +56,10 @@ The following is a high-level overview of the MED-V installation and deployment 
 
 3.  Deploy the required MED-V components throughout your enterprise. The required components of MED-V are Windows Virtual PC, the MED-V Host Agent, and the MED-V workspace.
 
-**Important**  
+**Important**  
 Installation of the MED-V components requires administrative credentials. If an end user is installing MED-V, they are prompted to enter administrative credentials. Alternately, administrative credentials can be provided in context if you are installing by using an electronic software distribution (ESD) system.
 
- 
+
 
 ### The MED-V Components
 
@@ -89,10 +89,10 @@ To deploy MED-V, copy all the required installation files to the host computer o
 
 You can perform the installation manually. However, we recommend that you use an electronic software distribution method to automate the deployment of the components. For more information, see [How to Deploy a MED-V Workspace Through an Electronic Software Distribution System](how-to-deploy-a-med-v-workspace-through-an-electronic-software-distribution-system.md).
 
-**Note**  
+**Note**  
 For information about available command-line arguments to control install options, see [Command-Line Options for MED-V Installation Files](command-line-options-for-med-v-installation-files.md).
 
- 
+
 
 ## Deployment Steps
 
@@ -105,29 +105,33 @@ When you deploy MED-V throughout your enterprise, there are two main considerati
 
     You can install these as part of the Windows 7 installations before you install MED-V, or you can install them as part of the MED-V distribution. However, MED-V does not include a mechanism for their deployment; they must be deployed by using an electronic software distribution (ESD) system or as part of the Windows 7 image.
 
-    **Important**  
+    **Important**  
     When you install the MED-V components by using a batch file, a best practice is to specify that Windows Virtual PC and the Windows Virtual PC hotfix are installed after the MED-V Host Agent and the MED-V workspace package files. This means that Windows Update will not cause any interference with the installation process by requiring a restart.
 
-     
 
-    **Note**  
-    After you install Windows Virtual PC, the computer must be restarted.
 
-     
+~~~
+**Note**  
+After you install Windows Virtual PC, the computer must be restarted.
+~~~
 
-2.  **MED-V Host Agent** – Install the MED-V Host Agent on the Windows 7 computer where MED-V will be run. This must be installed before installing the MED-V workspace and checks to make sure that Windows Virtual PC is installed.
 
-3.  **MED-V workspace** – You create the files that are required in this installation by using the MED-V Workspace Packager: the setup.exe, .medv, and .msi files. To install the MED-V workspace, run setup.exe; this triggers the other files as required. The installation places an entry in the registry under the local machine run key to start the MED-V Host Agent, which always runs MED-V when Windows is started.
 
-    **Important**  
-    The installation of the MED-V workspace can be run interactively by the end user or silently through an electronic software distribution system. Installation of the MED-V workspace requires administrative credentials, so end users must be administrators of their computers to install the MED-V workspace. Alternately, an electronic software distribution system typically runs in the system context and has sufficient permissions.
+2. **MED-V Host Agent** – Install the MED-V Host Agent on the Windows 7 computer where MED-V will be run. This must be installed before installing the MED-V workspace and checks to make sure that Windows Virtual PC is installed.
 
-     
+3. **MED-V workspace** – You create the files that are required in this installation by using the MED-V Workspace Packager: the setup.exe, .medv, and .msi files. To install the MED-V workspace, run setup.exe; this triggers the other files as required. The installation places an entry in the registry under the local machine run key to start the MED-V Host Agent, which always runs MED-V when Windows is started.
 
-    **Tip**  
-    Because of problems that can occur when you install MED-V from a network location, we recommend that you copy the MED-V workspace setup files locally and then run setup.exe.
+   **Important**  
+   The installation of the MED-V workspace can be run interactively by the end user or silently through an electronic software distribution system. Installation of the MED-V workspace requires administrative credentials, so end users must be administrators of their computers to install the MED-V workspace. Alternately, an electronic software distribution system typically runs in the system context and has sufficient permissions.
 
-     
+
+
+~~~
+**Tip**  
+Because of problems that can occur when you install MED-V from a network location, we recommend that you copy the MED-V workspace setup files locally and then run setup.exe.
+~~~
+
+
 
 ### First Time Setup
 
@@ -152,9 +156,9 @@ After first time setup is complete, the end user is notified that the published 
 
 [Deployment of MED-V](deployment-of-med-v.md)
 
- 
 
- 
+
+
 
 
 

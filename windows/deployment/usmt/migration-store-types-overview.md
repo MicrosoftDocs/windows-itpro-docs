@@ -60,7 +60,7 @@ If there is not enough local disk space, or if you are moving the user state to 
 **Important**  
 If possible, have users store their data within their %UserProfile%\\My Documents and %UserProfile%\\Application Data folders. This will reduce the chance of USMT missing critical user data that is located in a directory that USMT is not configured to check.
 
- 
+ 
 
 ### <a href="" id="bkmk-localonly"></a>The /localonly Command-Line Option
 
@@ -71,9 +71,9 @@ You should use this option to exclude the data from removable drives and network
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

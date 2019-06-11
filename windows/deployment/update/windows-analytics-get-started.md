@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
-ms.author: lomayor
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -73,6 +73,10 @@ To enable data sharing, configure your proxy server to whitelist the following e
 >[!NOTE]
 >Proxy authentication and SSL inspections are frequent challenges for enterprises. See the following sections for configuration options.
 
+> [!IMPORTANT]
+> For privacy and data integrity, Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. SSL interception and inspection aren't possible. To use Desktop Analytics, exclude these endpoints from SSL inspection.<!-- BUG 4647542 --> 
+
+
 ### Configuring endpoint access with SSL inspection
 To ensure privacy and data integrity Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. Accordingly SSL interception and inspection is not possible. To use Windows Analytics services you should exclude the above endpoints from SSL inspection.
 
@@ -94,6 +98,15 @@ The compatibility update scans your devices and enables application usage tracki
 | Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
 We also recommend installing the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup) on Windows 7 and Windows 8.1 devices.
+
+### Connected User Experiences and Telemetry service
+With Windows diagnostic data enabled, the Connected User Experience and Telemetry service (DiagTrack) collects system, application, and driver data. Microsoft analyzes this data, and shares it back to you through Windows Analytics. For the best experience, install these updates depending upon the operating system version.
+
+- For Windows 10, install the latest Windows 10 cumulative update.
+- For Windows 8.1, nstall the October 2018 monthly rollup, [KB4462926](https://support.microsoft.com/help/4462926)
+- For Windows 7, install the October 2018 monthly rollup, [KB4462923](https://support.microsoft.com/help/4462923)
+
+
 
 >[!IMPORTANT]
 >Restart devices after you install the compatibility updates for the first time.

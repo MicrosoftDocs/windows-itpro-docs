@@ -47,43 +47,43 @@ Even though you are setting up a non-production instance of MBAM to evaluate in 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Review the Getting Started information about MBAM to gain a basic understanding of the product before beginning deployment planning.</p></td>
-<td align="left"><p>[Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)</p></td>
+<td align="left"><p><a href="getting-started-with-mbam-20-mbam-2.md" data-raw-source="[Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)">Getting Started with MBAM 2.0</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for MBAM 2.0 Deployment Prerequisites and prepare your computing environment.</p></td>
-<td align="left"><p>[MBAM 2.0 Deployment Prerequisites](mbam-20-deployment-prerequisites-mbam-2.md)</p></td>
+<td align="left"><p><a href="mbam-20-deployment-prerequisites-mbam-2.md" data-raw-source="[MBAM 2.0 Deployment Prerequisites](mbam-20-deployment-prerequisites-mbam-2.md)">MBAM 2.0 Deployment Prerequisites</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for and configure MBAM Group Policy requirements.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Group Policy Requirements](planning-for-mbam-20-group-policy-requirements-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-group-policy-requirements-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Group Policy Requirements](planning-for-mbam-20-group-policy-requirements-mbam-2.md)">Planning for MBAM 2.0 Group Policy Requirements</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for and create necessary Active Directory Domain Services security groups, and plan for MBAM local security group membership requirements.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-administrator-roles-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md)">Planning for MBAM 2.0 Administrator Roles</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for deploying MBAM Server feature deployment.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Server Deployment](planning-for-mbam-20-server-deployment-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-server-deployment-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Server Deployment](planning-for-mbam-20-server-deployment-mbam-2.md)">Planning for MBAM 2.0 Server Deployment</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for deploying MBAM Client deployment.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Client Deployment](planning-for-mbam-20-client-deployment-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-client-deployment-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Client Deployment](planning-for-mbam-20-client-deployment-mbam-2.md)">Planning for MBAM 2.0 Client Deployment</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Perform an MBAM Evaluation Deployment
 
@@ -100,37 +100,37 @@ After completing the necessary planning and software prerequisite installations 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Review the MBAM supported configurations information to make sure that selected client and server computers are supported for MBAM feature installation.</p></td>
-<td align="left"><p>[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)</p></td>
+<td align="left"><p><a href="mbam-20-supported-configurations-mbam-2.md" data-raw-source="[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)">MBAM 2.0 Supported Configurations</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Run MBAM Setup to deploy MBAM Server features on a single server for evaluation purposes.</p></td>
-<td align="left"><p>[How to Install and Configure MBAM on a Single Server](how-to-install-and-configure-mbam-on-a-single-server-mbam-2.md)</p></td>
+<td align="left"><p><a href="how-to-install-and-configure-mbam-on-a-single-server-mbam-2.md" data-raw-source="[How to Install and Configure MBAM on a Single Server](how-to-install-and-configure-mbam-on-a-single-server-mbam-2.md)">How to Install and Configure MBAM on a Single Server</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Add Active Directory Domain Services security groups, that you created during the planning phase, to the appropriate local MBAM Server feature local groups on the new MBAM Server.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md) and [How to Manage MBAM Administrator Roles](how-to-manage-mbam-administrator-roles-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-administrator-roles-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md)">Planning for MBAM 2.0 Administrator Roles</a> and <a href="how-to-manage-mbam-administrator-roles-mbam-2.md" data-raw-source="[How to Manage MBAM Administrator Roles](how-to-manage-mbam-administrator-roles-mbam-2.md)">How to Manage MBAM Administrator Roles</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Create and deploy required MBAM Group Policy Objects.</p></td>
-<td align="left"><p>[Deploying MBAM 2.0 Group Policy Objects](deploying-mbam-20-group-policy-objects-mbam-2.md)</p></td>
+<td align="left"><p><a href="deploying-mbam-20-group-policy-objects-mbam-2.md" data-raw-source="[Deploying MBAM 2.0 Group Policy Objects](deploying-mbam-20-group-policy-objects-mbam-2.md)">Deploying MBAM 2.0 Group Policy Objects</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Deploy the MBAM Client software.</p></td>
-<td align="left"><p>[Deploying the MBAM 2.0 Client](deploying-the-mbam-20-client-mbam-2.md)</p></td>
+<td align="left"><p><a href="deploying-the-mbam-20-client-mbam-2.md" data-raw-source="[Deploying the MBAM 2.0 Client](deploying-the-mbam-20-client-mbam-2.md)">Deploying the MBAM 2.0 Client</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Configure Lab Computers for MBAM Evaluation
 
@@ -140,7 +140,7 @@ This section contains information that can be used to speed up the MBAM Client s
 **Note**  
 The information in following section describes how to modify the Windows registry. Using Registry Editor incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk.
 
- 
+ 
 
 ### Modify MBAM Client Status Reporting Frequency Settings
 
@@ -157,7 +157,7 @@ To modify the MBAM Client status reporting frequency settings:
 **Note**  
 To set values that are this low, you must set them in the registry manually.
 
- 
+ 
 
 ### Modify MBAM Client Service Startup Delay
 
@@ -168,9 +168,9 @@ In addition to the MBAM Client wakeup and status reporting frequencies, there is
 
 [Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

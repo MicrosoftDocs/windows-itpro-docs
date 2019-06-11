@@ -30,7 +30,7 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
         **Note**  
         If you burned a CD or DVD of the recovery image, you can open the files on the CD or DVD and copy the boot.wim file from the \\sources folder. This lets you skip the need to mount the image.
 
-         
+         
 
 2.  Deploy the boot.wim file to a WDS server that can be accessed from end-user computers in your enterprise.
 
@@ -47,9 +47,9 @@ For more information about how to deploy DaRT as a remote partition, see [Walkth
 
 [Planning for DaRT 10](planning-for-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

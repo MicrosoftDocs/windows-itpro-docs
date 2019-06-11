@@ -269,9 +269,9 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 - [Customize USMT XML Files](usmt-customize-xml-files.md)
 - [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

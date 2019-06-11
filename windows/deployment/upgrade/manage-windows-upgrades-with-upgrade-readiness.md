@@ -38,7 +38,7 @@ The Upgrade Readiness workflow steps you through the discovery and rationalizati
 - [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
-##**Related topics**
+## **Related topics**
 
 [Upgrade Readiness architecture](upgrade-readiness-architecture.md)<BR>
 [Upgrade Readiness requirements](upgrade-readiness-requirements.md)<BR>

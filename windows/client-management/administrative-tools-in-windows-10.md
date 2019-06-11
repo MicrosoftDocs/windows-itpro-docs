@@ -31,7 +31,7 @@ The tools in the folder might vary depending on which edition of Windows you are
 
 These tools were included in previous versions of Windows and the associated documentation for each tool should help you use these tools in Windows 10. The following list links to documentation for each tool.
 
- 
+ 
 
 -   [Component Services]( https://go.microsoft.com/fwlink/p/?LinkId=708489)
 -   [Computer Management](https://support.microsoft.com/kb/308423)
@@ -51,14 +51,14 @@ These tools were included in previous versions of Windows and the associated doc
 -   [Windows Firewall with Advanced Security](https://go.microsoft.com/fwlink/p/?LinkId=708503)
 -   [Windows Memory Diagnostic]( https://go.microsoft.com/fwlink/p/?LinkId=708507)
 
->[!TIP]  
->If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** page. Details about the information you want for a tool will help us plan future content. 
+> [!TIP]
+> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** page. Details about the information you want for a tool will help us plan future content. 
 
 ## Related topics
 
 [Diagnostic Data Viewer](https://docs.microsoft.com/windows/privacy/diagnostic-data-viewer-overview)
 
- 
+ 
 
 
 

@@ -70,7 +70,7 @@ The following table shows the App-V versions, methods of Office package creation
 </tbody>
 </table>
 
- 
+ 
 
 ## Creating Office 2010 App-V 5.0 using the sequencer
 
@@ -182,7 +182,7 @@ The following table provides a full list of supported integration points for Off
 </tr>
 <tr class="even">
 <td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to <a href="https://go.microsoft.com/fwlink/p/?LinkId=331361" data-raw-source="[ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361)">ActiveX Control API Reference</a>.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -273,7 +273,7 @@ The following table provides a full list of supported integration points for Off
 </tbody>
 </table>
 
- 
+ 
 
 ## Additional resources
 
@@ -305,9 +305,9 @@ The following table provides a full list of supported integration points for Off
 
 
 
- 
+ 
 
- 
+ 
 
 
 

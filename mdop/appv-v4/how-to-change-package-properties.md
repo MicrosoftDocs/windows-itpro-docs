@@ -24,7 +24,7 @@ If this is the first time the package has been created, you can also change the 
 **Note**  
 When selecting a block size, consider the size of the SFT file and your network bandwidth. A file with a smaller block size takes longer to stream over the network, but it is less bandwidth intensive. Files with larger block sizes might stream faster, but they use more network bandwidth. Through experimentation, you can discover the optimum block size for streaming applications on your network.
 
- 
+ 
 
 The remainder of the package properties on the **Properties** tab is automatically generated and cannot be modified on this tab.
 
@@ -53,9 +53,9 @@ The remainder of the package properties on the **Properties** tab is automatical
 
 [Sequencer Console](sequencer-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

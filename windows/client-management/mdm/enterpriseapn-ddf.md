@@ -4,11 +4,11 @@ description: EnterpriseAPN DDF
 ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

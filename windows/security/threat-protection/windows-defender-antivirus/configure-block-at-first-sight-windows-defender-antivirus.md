@@ -94,17 +94,17 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 3. Expand the tree to **Windows components > Windows Defender Antivirus > MAPS** and configure the following Group Policies:
 
-    1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
+   1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
 
-    2. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either of the following:
+   2. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either of the following:
 
-        - Send safe samples (1)
-        - Send all samples (3)
+      - Send safe samples (1)
+      - Send all samples (3)
 
         > [!WARNING]
         > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means block at first sight will not function.
 
-    3. Click **OK**.
+   3. Click **OK**.
 
 4. In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender Antivirus > Real-time Protection**:
 
@@ -126,7 +126,7 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Manage Settings** under **Virus & threat protection settings**:
 
- ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+   ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
@@ -135,7 +135,7 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 ### Validate block at first sight is working
 
-You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate).
+You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Disable block at first sight
 

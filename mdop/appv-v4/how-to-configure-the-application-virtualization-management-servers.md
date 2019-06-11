@@ -22,7 +22,7 @@ Before virtualized applications can be streamed to the Application Virtualizatio
 **Important**  
 Application Virtualization Servers stream SFT files to the Desktop Client and the Client for Remote Desktop Services using only RTSP or RTSPS protocols. The ICO (icon) file and the OSD (open software descriptor) file can be configured to stream from a different file or HTTP server.
 
- 
+ 
 
 **To configure the Application Virtualization Management Server**
 
@@ -33,7 +33,7 @@ Application Virtualization Servers stream SFT files to the Desktop Client and th
     **Note**  
     During the installation procedure, you specify the location of the \\Content directory on the **Content Path** screen.
 
-     
+     
 
 2.  Navigate to the location that you specified for the \\Content directory, and if necessary, create the directory.
 
@@ -50,9 +50,9 @@ Application Virtualization Servers stream SFT files to the Desktop Client and th
 
 [How to Configure Servers for Server-Based Deployment](how-to-configure-servers-for-server-based-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

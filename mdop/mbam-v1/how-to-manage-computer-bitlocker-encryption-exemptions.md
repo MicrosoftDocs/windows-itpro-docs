@@ -24,7 +24,7 @@ To exempt a computer from BitLocker encryption, you must add the computer to a s
 **Note**  
 If the computer is already BitLocker-protected, the computer exemption policy has no effect.
 
- 
+ 
 
 **To exempt a computer from BitLocker encryption**
 
@@ -39,9 +39,9 @@ If the computer is already BitLocker-protected, the computer exemption policy ha
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

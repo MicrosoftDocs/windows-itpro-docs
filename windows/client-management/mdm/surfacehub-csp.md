@@ -4,11 +4,11 @@ description: The SurfaceHub configuration service provider (CSP) is used to conf
 ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/28/2017
 ---
 
@@ -36,8 +36,8 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 > [!NOTE]
 > If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
- 
-<p style="margin-left: 20px">Here's a SyncML example.
+ 
+<p style="margin-left: 20px">Here&#39;s a SyncML example.
 
 ``` syntax
  <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -203,7 +203,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tr>
 </tbody>
 </table>
- 
+ 
 <p style="margin-left: 20px">The data type is int. Supported operation is Get.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
@@ -226,7 +226,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 <a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see <a href="https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users" data-raw-source="[Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users)">Set up Skype for Business Online</a>.
 
 <p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
@@ -290,8 +290,8 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
 
- 
-<p style="margin-left: 20px">The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won't be looking for).
+ 
+<p style="margin-left: 20px">The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won&#39;t be looking for).
 
 <p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
@@ -477,7 +477,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the ability to resume a session when the session times out. 
 
-<p style="margin-left: 20px">If this setting is true, the "Resume Session" feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session" feature was initiated. 
+<p style="margin-left: 20px">If this setting is true, the &quot;Resume Session&quot; feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session&quot; feature was initiated. 
 
 <p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
@@ -496,7 +496,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="properties-donotshowmymeetingsandfiles"></a>**Properties/DoNotShowMyMeetingsAndFiles**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable the &quot;My meetings and files&quot; feature in the Start menu, which shows the signed-in user&#39;s meetings and files from Office 365.
 
 <p style="margin-left: 20px">If this setting is true, the “My meetings and files” feature will not be shown. When false, the “My meetings and files” feature will be shown.
 
@@ -515,9 +515,9 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
 
- 
+ 
 
- 
+ 
 
 
 

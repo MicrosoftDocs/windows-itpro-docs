@@ -4,11 +4,11 @@ description: The DeviceStatus configuration service provider is used by the ente
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 04/30/2019
 ---
 
@@ -38,9 +38,9 @@ Required. Node for queries on the SIM cards.
 
 > **Note**  Multiple SIMs are supported.
 
- 
+ 
 
-<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/****_IMEI_**  
+<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
 
 <a href="" id="devicestatus-cellularidentities-imei-imsi"></a>**DeviceStatus/CellularIdentities/*IMEI*/IMSI**  
@@ -76,7 +76,7 @@ Supported operation is Get.
 <a href="" id="devicestatus-networkidentifiers"></a>**DeviceStatus/NetworkIdentifiers**  
 Node for queries on network and device properties.
 
-<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/****_MacAddress_**  
+<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/**<strong>*MacAddress*</strong>  
 MAC address of the wireless network card. A MAC address is present for each network card on the device.
 
 <a href="" id="devicestatus-networkidentifiers-macaddress-ipaddressv4"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/IPAddressV4**  

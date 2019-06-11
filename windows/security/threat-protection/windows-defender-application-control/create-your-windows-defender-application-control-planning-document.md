@@ -88,8 +88,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Rules**
+ 
+<strong>Rules</strong>
 
 <table style="width:100%;">
 <colgroup>
@@ -130,8 +130,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Event processing**
+ 
+<strong>Event processing</strong>
 
 <table>
 <colgroup>
@@ -160,8 +160,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance**
+ 
+<strong>Policy maintenance</strong>
 
 <table>
 <colgroup>
@@ -191,7 +191,7 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
+ 
 ### Example of a WDAC planning document
 
 **Rules**
@@ -272,7 +272,7 @@ You can use the following form to construct your own WDAC planning document.
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -292,8 +292,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Event processing**
+ 
+<strong>Event processing</strong>
 
 <table>
 <colgroup>
@@ -329,8 +329,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance**
+ 
+<strong>Policy maintenance</strong>
 
 <table>
 <colgroup>
@@ -374,9 +374,9 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
+ 
 ### Additional resources
 
 -   [Windows Defender Application Control](windows-defender-application-control.md)
- 
- 
+ 
+ 
