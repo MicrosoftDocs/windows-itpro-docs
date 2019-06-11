@@ -238,7 +238,7 @@ An awareness campaign introduces the users to the new way of authenticating to t
 #### Including remaining users that fit the work persona
 You have implemented the awareness campaign for the targeted users. These users are informed and ready to transition to password-less. Add the remaining users that match the targeted work persona to your deployment.
 
-#### Validate that none of the users of the work personas need passwords
+#### Validate that none of the users of the work personas needs passwords
 You have successfully transitioned all users for the targeted work persona to password-less. Monitor the users within the work persona to ensure they do not encounter any issues while working in a password-less environment.
 
 Track all reported issues. Set priority and severity to each reported issue and have your team triage the issues appropriately. As you triage issues, some things to consider are:
