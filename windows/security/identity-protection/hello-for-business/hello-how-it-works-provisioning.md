@@ -28,7 +28,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 [Azure AD joined provisioning in a Managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)<br>
 [Azure AD joined provisioning in a Federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)<br>
 [Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)<br>
-[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-federated-environment)<br>
 [Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-certificate-trust-deployment-in-a-managed-environment)<br>
 [Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-managed-environment)<br>
 [Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)<br>
@@ -76,8 +76,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 
 [Return to top](#windows-hello-for-business-provisioning)
-## Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment
-![Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](images/howitworks/prov-haadj-certtrust-managed.png)
+## Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment
+![Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Federated environment](images/howitworks/prov-haadj-certtrust-managed.png)
 
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
