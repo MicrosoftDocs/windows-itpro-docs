@@ -308,6 +308,8 @@ No user content, such as user files or communications, is gathered at the **Secu
 
 The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version. The Connected User Experiences and Telemetry component does not gather diagnostic data about System Center, but it can transmit diagnostic data for other non-Windows applications if they have user consent.
 
+This is the default level for Windows 10 Education editions, as well as all desktop editions starting with Windows 10, version 1903.
+
 The normal upload range for the Basic diagnostic data level is between 109 KB - 159 KB per day, per device.
 
 The data gathered at this level includes:
@@ -353,7 +355,7 @@ The data gathered at this level includes:
 
 The Enhanced level gathers data about how Windows and apps are used and how they perform. This level also includes data from both the **Basic** and **Security** levels. This level helps to improve the user experience with the operating system and apps. Data from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
 
-This is the default level for Windows 10 Enterprise and Windows 10 Education editions, and the minimum level needed to quickly identify and address Windows and Windows Server quality issues.
+This level is needed to quickly identify and address Windows and Windows Server quality issues.
 
 The normal upload range for the Enhanced diagnostic data level is between 239 KB - 348 KB per day, per device.
 
@@ -371,7 +373,7 @@ If the Connected User Experiences and Telemetry component detects a problem on W
 
 ### Full level
 
-The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the Basic, Enhanced, and Security levels. This is the default level for Windows 10 Pro.
+The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the Basic, Enhanced, and Security levels.
 
 Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
 
