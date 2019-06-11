@@ -2,12 +2,14 @@
 title: Microsoft network server Amount of idle time required before suspending session (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Microsoft network server Amount of idle time required before suspending session security policy setting.
 ms.assetid: 8227842a-569d-480f-b43c-43450bbaa722
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,7 +20,7 @@ ms.date: 04/19/2017
 # Microsoft network server: Amount of idle time required before suspending session
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Microsoft network server: Amount of idle time required before suspending session** security policy setting.
 
@@ -48,15 +50,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-| Server type or GPO Default value |
-| - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined |
-| Stand-Alone Server Default Settings | 15 minutes| 
-| DC Effective Default Settings | 15 minutes| 
-| Member Server Effective Default Settings | 15 minutes| 
-| Client Computer Effective Default Settings | 15 minutes| 
- 
+
+|      Server type or GPO Default value      |
+|--------------------------------------------|
+|           Default Domain Policy            |
+|      Default Domain Controller Policy      |
+|    Stand-Alone Server Default Settings     |
+|       DC Effective Default Settings        |
+|  Member Server Effective Default Settings  |
+| Client Computer Effective Default Settings |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

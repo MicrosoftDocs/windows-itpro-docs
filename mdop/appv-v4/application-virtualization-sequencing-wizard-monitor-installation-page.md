@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencing Wizard Monitor Installation Page
 description: Application Virtualization Sequencing Wizard Monitor Installation Page
-author: jamiejdt
+author: dansimp
 ms.assetid: b54b8145-a57e-4d0d-b776-b5319aadb78e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,31 +35,29 @@ Use the **Monitor Installation** page of the Application Virtualization Sequenci
 <td align="left"><p><strong>Begin Monitoring</strong></p></td>
 <td align="left"><p>Starts the monitoring of the sequencing process.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The Sequencer will minimize so that you can run your application's installer, except on Vista.</p>
+<strong>Note</strong><br/><p>The Sequencer will minimize so that you can run your application&#39;s installer, except on Vista.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Stop Monitoring</strong></p></td>
 <td align="left"><p>Stops the monitoring of the sequencing process.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The <strong>Stop Monitoring</strong> button is displayed only after the monitoring process starts.</p>
+<strong>Note</strong><br/><p>The <strong>Stop Monitoring</strong> button is displayed only after the monitoring process starts.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Back</strong></p></td>
-<td align="left"><p>Accesses the Sequencing Wizard's previous page.</p></td>
+<td align="left"><p>Accesses the Sequencing Wizard&#39;s previous page.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Next</strong></p></td>
-<td align="left"><p>Accesses the Sequencing Wizard's next page.</p></td>
+<td align="left"><p>Accesses the Sequencing Wizard&#39;s next page.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Cancel</strong></p></td>
@@ -65,7 +66,7 @@ Use the **Monitor Installation** page of the Application Virtualization Sequenci
 </tbody>
 </table>
 
- 
+
 
 \[Template Token Value\]
 
@@ -106,7 +107,7 @@ Use the **Monitor Installation** page of the App-V sequencing wizard to monitor 
 </tbody>
 </table>
 
- 
+
 
 \[Template Token Value\]
 
@@ -115,9 +116,9 @@ Use the **Monitor Installation** page of the App-V sequencing wizard to monitor 
 
 [Sequencing Wizard](sequencing-wizard.md)
 
- 
 
- 
+
+
 
 
 

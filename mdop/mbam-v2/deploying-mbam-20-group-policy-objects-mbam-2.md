@@ -1,8 +1,11 @@
 ---
 title: Deploying MBAM 2.0 Group Policy Objects
 description: Deploying MBAM 2.0 Group Policy Objects
-author: jamiejdt
+author: msfttracyp
 ms.assetid: f17f3897-73ab-431b-a6ec-5a6cff9f279a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

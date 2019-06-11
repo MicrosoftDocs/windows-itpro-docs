@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: levinec
 searchScope:
   - Store
-ms.author: trudyha
+ms.author: ellevin
 ms.date: 01/30/2019
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 
@@ -115,7 +117,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 
 4. On **Invoice Bills**, click the invoice number to view and download your invoice. It downloads as a .pdf.
 
-  ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
+   ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
 
 The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
 
@@ -154,7 +156,7 @@ For Minecraft: Education Edition, you can use auto assign subscription to contro
      
     ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-legacy.png)
  
- -Or-
+   -Or-
  
     ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-bd.png)
     

@@ -5,13 +5,14 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: appcompatguy
-author: appcompatguy
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 06/11/2019
+ms.reviewer: 
 ---
 
 # Level 5 enterprise administrator workstation security configuration

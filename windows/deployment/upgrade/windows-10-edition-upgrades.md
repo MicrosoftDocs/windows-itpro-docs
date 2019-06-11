@@ -2,12 +2,15 @@
 title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 
@@ -234,9 +237,9 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
->**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
-
->**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
+> **Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+> 
+> **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
 Some slightly more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 

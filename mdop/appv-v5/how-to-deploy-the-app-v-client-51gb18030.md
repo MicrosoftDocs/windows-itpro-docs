@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the App-V Client
 description: How to Deploy the App-V Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 981f57c9-56c3-45da-8261-0972bfad3e5b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,36 +21,36 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
 <a href="" id="bkmk-clt-install-prereqs"></a>**What to do before you start**
 
-1.  Review and install the software prerequisites:
+1. Review and install the software prerequisites:
 
-    Install the prerequisite software that corresponds to the version of App-V that you are installing:
+   Install the prerequisite software that corresponds to the version of App-V that you are installing:
 
-    -   [About App-V 5.1](about-app-v-51.md)
+   -   [About App-V 5.1](about-app-v-51.md)
 
-    -   [App-V 5.1 Prerequisites](app-v-51-prerequisites.md)
+   -   [App-V 5.1 Prerequisites](app-v-51-prerequisites.md)
 
-2.  Review the client coexistence and unsupported scenarios, as applicable to your installation:
+2. Review the client coexistence and unsupported scenarios, as applicable to your installation:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Deploying coexisting App-V clients</p></td>
-    <td align="left"><p>[Planning for the App-V 5.1 Sequencer and Client Deployment](planning-for-the-app-v-51-sequencer-and-client-deployment.md)</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Unsupported or limited installation scenarios</p></td>
-    <td align="left"><p>See the client section in [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md)</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p>Deploying coexisting App-V clients</p></td>
+   <td align="left"><p><a href="planning-for-the-app-v-51-sequencer-and-client-deployment.md" data-raw-source="[Planning for the App-V 5.1 Sequencer and Client Deployment](planning-for-the-app-v-51-sequencer-and-client-deployment.md)">Planning for the App-V 5.1 Sequencer and Client Deployment</a></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>Unsupported or limited installation scenarios</p></td>
+   <td align="left"><p>See the client section in <a href="app-v-51-supported-configurations.md" data-raw-source="[App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md)">App-V 5.1 Supported Configurations</a></p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
 
-3.  Review the locations for client registry, log, and troubleshooting information:
+
+3. Review the locations for client registry, log, and troubleshooting information:
 
 <table>
 <colgroup>
@@ -73,9 +76,9 @@ Use the following procedure to install the Microsoft Application Virtualization 
 <p><strong>Event logs / Applications and Services Logs / Microsoft / AppV</strong></p></li>
 <li><p>In App-V 5.0 SP3, some logs were consolidated and moved to the following location:</p>
 <p><strong>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</strong></p>
-<p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</p></li>
+<p>For a list of the moved logs, see <a href="about-app-v-50-sp3.md#bkmk-event-logs-moved" data-raw-source="[About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved)">About App-V 5.0 SP3</a>.</p></li>
 <li><p>Packages that are currently stored on computers that run the App-V 5.1 Client are saved to the following location:</p>
-<p><strong>C:\ProgramData\App-V\&lt;package id&gt;\&lt;version id&gt;</strong></p></li>
+<p><strong>C:\ProgramData\App-V&amp;lt;package id&gt;&amp;lt;version id&gt;</strong></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -85,7 +88,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
 </tbody>
 </table>
 
- 
+
 
 **To install the App-V 5.1 Client**
 
@@ -114,7 +117,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
+
 
 2.  Double-click the installation file, and click **Install**. Before the installation begins, the installer checks the computer for any missing [App-V 5.1 Prerequisites](app-v-51-prerequisites.md).
 
@@ -130,151 +133,151 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
     -   **language pack**
 
-        **Note**  
+        **Note**  
         After the installation, only the .exe file can be uninstalled.
 
-         
+
 
 **To install the App-V 5.1 client using a script**
 
-1.  Install all of the required prerequisite software on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If you install the client by using an .msi file, the installation will fail if any prerequisites are missing.
+1. Install all of the required prerequisite software on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If you install the client by using an .msi file, the installation will fail if any prerequisites are missing.
 
-2.  To use a script to install the App-V 5.1 client, use the following parameters with **appv\_client\_setup.exe**.
+2. To use a script to install the App-V 5.1 client, use the following parameters with **appv\_client\_setup.exe**.
 
-    **Note**  
-    The client Windows Installer (.msi) supports the same set of switches, except for the **/LOG** parameter.
+   **Note**  
+   The client Windows Installer (.msi) supports the same set of switches, except for the **/LOG** parameter.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>/INSTALLDIR</p></td>
-    <td align="left"><p>Specifies the installation directory. Example usage: <strong>/INSTALLDIR=C:\Program Files\AppV Client</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/CEIPOPTIN</p></td>
-    <td align="left"><p>Enables participation in the Customer Experience Improvement Program. Example usage: <strong>/CEIPOPTIN=[0|1]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/MUOPTIN</p></td>
-    <td align="left"><p>Enables Microsoft Update. Example usage: <strong>/MUOPTIN=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/PACKAGEINSTALLATIONROOT</p></td>
-    <td align="left"><p>Specifies the directory in which to install all new applications and updates. Example usage: <strong>/PACKAGEINSTALLATIONROOT='C:\App-V Packages'</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/PACKAGESOURCEROOT</p></td>
-    <td align="left"><p>Overrides the source location for downloading package content. Example usage: <strong>/PACKAGESOURCEROOT='http://packageStore'</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/AUTOLOAD</p></td>
-    <td align="left"><p>Specifies how new packages will be loaded by App-V 5.1 on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0].<strong>Example usage: /AUTOLOAD=[0|1|2]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/SHAREDCONTENTSTOREMODE</p></td>
-    <td align="left"><p>Specifies that streamed package contents will be not be saved to the local hard disk. Example usage: <strong>/SHAREDCONTENTSTOREMODE=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/MIGRATIONMODE</p></td>
-    <td align="left"><p>Allows the App-V 5.1 client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage: <strong>/MIGRATIONMODE=[0|1]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/ENABLEPACKAGESCRIPTS</p></td>
-    <td align="left"><p>Enables the scripts that are defined in the package manifest file or configuration files that should run. Example usage: <strong>/ENABLEPACKAGESCRIPTS=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/ROAMINGREGISTRYEXCLUSIONS</p></td>
-    <td align="left"><p>Specifies the registry paths that will not roam with a user profile. Example usage: <strong>/ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/ROAMINGFILEEXCLUSIONS</p></td>
-    <td align="left"><p>Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: <strong>/ROAMINGFILEEXCLUSIONS 'desktop;my pictures'</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/S[1-5]PUBLISHINGSERVERNAME</p></td>
-    <td align="left"><p>Displays the name of the publishing server. Example usage: <strong>/S2PUBLISHINGSERVERNAME=MyPublishingServer</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/S[1-5]PUBLISHINGSERVERURL</p></td>
-    <td align="left"><p>Displays the URL of the publishing server. Example usage: <strong>/S2PUBLISHINGSERVERURL=\\pubserver</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/S[1-5]GLOBALREFRESHENABLED -</p></td>
-    <td align="left"><p>Enables a global publishing refresh. Example usage: <strong>/S2GLOBALREFRESHENABLED=[0|1]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/S[1-5]GLOBALREFRESHONLOGON</p></td>
-    <td align="left"><p>Initiates a global publishing refresh when a user logs on. Example usage: <strong>/S2LOGONREFRESH=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/S[1-5]GLOBALREFRESHINTERVAL -</p></td>
-    <td align="left"><p>Specifies the publishing refresh interval, where <strong>0</strong> indicates do not periodically refresh. Example usage: <strong>/S2PERIODICREFRESHINTERVAL=[0-744]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/S[1-5]GLOBALREFRESHINTERVALUNIT</p></td>
-    <td align="left"><p>Specifies the interval unit (Hours[0], Days[1]). Example usage: <strong>/S2GLOBALREFRESHINTERVALUNIT=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/S[1-5]USERREFRESHENABLED</p></td>
-    <td align="left"><p>Enables user publishing refresh. Example usage: <strong>/S2USERREFRESHENABLED=[0|1]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/S[1-5]USERREFRESHONLOGON</p></td>
-    <td align="left"><p>Initiates a user publishing refresh when a user logs on. Example usage: <strong>/S2LOGONREFRESH=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/S[1-5]USERREFRESHINTERVAL -</p></td>
-    <td align="left"><p>Specifies the publishing refresh interval, where <strong>0</strong> indicates do not periodically refresh. Example usage: <strong>/S2PERIODICREFRESHINTERVAL=[0-744]</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/S[1-5]USERREFRESHINTERVALUNIT</p></td>
-    <td align="left"><p>Specifies the interval unit (Hours[0], Days[1]). Example usage: <strong>/S2USERREFRESHINTERVALUNIT=[0|1]</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/Log</p></td>
-    <td align="left"><p>Specifies a location where the log information is saved. The default location is %Temp%. Example usage: <strong>/log C:\logs\log.log</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/q</p></td>
-    <td align="left"><p>Specifies an unattended installation.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/REPAIR</p></td>
-    <td align="left"><p>Repairs a previous client installation.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/NORESTART</p></td>
-    <td align="left"><p>Prevents the computer from rebooting after the client installation.</p>
-    <p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.1 and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/UNINSTALL</p></td>
-    <td align="left"><p>Uninstalls the client.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/ACCEPTEULA</p></td>
-    <td align="left"><p>Accepts the license agreement. This is required for an unattended installation. Example usage: <strong>/ACCEPTEULA</strong> or <strong>/ACCEPTEULA=1</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/LAYOUT</p></td>
-    <td align="left"><p>Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.1. No value is expected.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>/LAYOUTDIR</p></td>
-    <td align="left"><p>Specifies the layout directory. Requires a string value. Example usage: <strong>/LAYOUTDIR=”C:\Application Virtualization Client”</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>/?, /h, /help</p></td>
-    <td align="left"><p>Requests help about the previous installation parameters.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p>/INSTALLDIR</p></td>
+   <td align="left"><p>Specifies the installation directory. Example usage: <strong>/INSTALLDIR=C:\Program Files\AppV Client</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/CEIPOPTIN</p></td>
+   <td align="left"><p>Enables participation in the Customer Experience Improvement Program. Example usage: <strong>/CEIPOPTIN=[0|1]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/MUOPTIN</p></td>
+   <td align="left"><p>Enables Microsoft Update. Example usage: <strong>/MUOPTIN=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/PACKAGEINSTALLATIONROOT</p></td>
+   <td align="left"><p>Specifies the directory in which to install all new applications and updates. Example usage: <strong>/PACKAGEINSTALLATIONROOT=&#39;C:\App-V Packages&#39;</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/PACKAGESOURCEROOT</p></td>
+   <td align="left"><p>Overrides the source location for downloading package content. Example usage: <strong>/PACKAGESOURCEROOT=&#39;<a href="http://packageStore" data-raw-source="http://packageStore">http://packageStore</a>&#39;</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/AUTOLOAD</p></td>
+   <td align="left"><p>Specifies how new packages will be loaded by App-V 5.1 on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0].<strong>Example usage: /AUTOLOAD=[0|1|2]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/SHAREDCONTENTSTOREMODE</p></td>
+   <td align="left"><p>Specifies that streamed package contents will be not be saved to the local hard disk. Example usage: <strong>/SHAREDCONTENTSTOREMODE=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/MIGRATIONMODE</p></td>
+   <td align="left"><p>Allows the App-V 5.1 client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage: <strong>/MIGRATIONMODE=[0|1]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/ENABLEPACKAGESCRIPTS</p></td>
+   <td align="left"><p>Enables the scripts that are defined in the package manifest file or configuration files that should run. Example usage: <strong>/ENABLEPACKAGESCRIPTS=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/ROAMINGREGISTRYEXCLUSIONS</p></td>
+   <td align="left"><p>Specifies the registry paths that will not roam with a user profile. Example usage: <strong>/ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/ROAMINGFILEEXCLUSIONS</p></td>
+   <td align="left"><p>Specifies the file paths relative to %userprofile% that do not roam with a user&#39;s profile. Example usage: <strong>/ROAMINGFILEEXCLUSIONS &#39;desktop;my pictures&#39;</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/S[1-5]PUBLISHINGSERVERNAME</p></td>
+   <td align="left"><p>Displays the name of the publishing server. Example usage: <strong>/S2PUBLISHINGSERVERNAME=MyPublishingServer</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/S[1-5]PUBLISHINGSERVERURL</p></td>
+   <td align="left"><p>Displays the URL of the publishing server. Example usage: <strong>/S2PUBLISHINGSERVERURL=\pubserver</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/S[1-5]GLOBALREFRESHENABLED -</p></td>
+   <td align="left"><p>Enables a global publishing refresh. Example usage: <strong>/S2GLOBALREFRESHENABLED=[0|1]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/S[1-5]GLOBALREFRESHONLOGON</p></td>
+   <td align="left"><p>Initiates a global publishing refresh when a user logs on. Example usage: <strong>/S2LOGONREFRESH=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/S[1-5]GLOBALREFRESHINTERVAL -</p></td>
+   <td align="left"><p>Specifies the publishing refresh interval, where <strong>0</strong> indicates do not periodically refresh. Example usage: <strong>/S2PERIODICREFRESHINTERVAL=[0-744]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/S[1-5]GLOBALREFRESHINTERVALUNIT</p></td>
+   <td align="left"><p>Specifies the interval unit (Hours[0], Days[1]). Example usage: <strong>/S2GLOBALREFRESHINTERVALUNIT=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/S[1-5]USERREFRESHENABLED</p></td>
+   <td align="left"><p>Enables user publishing refresh. Example usage: <strong>/S2USERREFRESHENABLED=[0|1]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/S[1-5]USERREFRESHONLOGON</p></td>
+   <td align="left"><p>Initiates a user publishing refresh when a user logs on. Example usage: <strong>/S2LOGONREFRESH=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/S[1-5]USERREFRESHINTERVAL -</p></td>
+   <td align="left"><p>Specifies the publishing refresh interval, where <strong>0</strong> indicates do not periodically refresh. Example usage: <strong>/S2PERIODICREFRESHINTERVAL=[0-744]</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/S[1-5]USERREFRESHINTERVALUNIT</p></td>
+   <td align="left"><p>Specifies the interval unit (Hours[0], Days[1]). Example usage: <strong>/S2USERREFRESHINTERVALUNIT=[0|1]</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/Log</p></td>
+   <td align="left"><p>Specifies a location where the log information is saved. The default location is %Temp%. Example usage: <strong>/log C:\logs\log.log</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/q</p></td>
+   <td align="left"><p>Specifies an unattended installation.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/REPAIR</p></td>
+   <td align="left"><p>Repairs a previous client installation.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/NORESTART</p></td>
+   <td align="left"><p>Prevents the computer from rebooting after the client installation.</p>
+   <p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.1 and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/UNINSTALL</p></td>
+   <td align="left"><p>Uninstalls the client.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/ACCEPTEULA</p></td>
+   <td align="left"><p>Accepts the license agreement. This is required for an unattended installation. Example usage: <strong>/ACCEPTEULA</strong> or <strong>/ACCEPTEULA=1</strong>.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/LAYOUT</p></td>
+   <td align="left"><p>Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.1. No value is expected.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>/LAYOUTDIR</p></td>
+   <td align="left"><p>Specifies the layout directory. Requires a string value. Example usage: <strong>/LAYOUTDIR=”C:\Application Virtualization Client”</strong>.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>/?, /h, /help</p></td>
+   <td align="left"><p>Requests help about the previous installation parameters.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+
 
 **To install the App-V 5.1 client by using the Windows Installer (.msi) file**
 
@@ -311,7 +314,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
+
 
 4.  Using the information in the following table, select the appropriate language pack **.msi** to install, based on the desired language for the target computer. The **xxxx** in the table refers to the target locale of the language pack.
 
@@ -346,9 +349,11 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+~~~
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+~~~
 
 ## Related topics
 
@@ -359,9 +364,9 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
 [How to Uninstall the App-V 5.1 Client](how-to-uninstall-the-app-v-51-client.md)
 
- 
 
- 
+
+
 
 
 

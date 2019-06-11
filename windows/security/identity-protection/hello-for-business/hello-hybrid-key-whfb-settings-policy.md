@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
 
@@ -157,10 +158,10 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Create Windows Hello for Business Group Policy object.
 > * Enable the Use Windows Hello for Business policy setting.
 > * Add users or groups to the Windows Hello for Business group
-
-
+> 
+> 
 > [!div class="nextstepaction"]
-[Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
+> [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
 
 <br><br>
 

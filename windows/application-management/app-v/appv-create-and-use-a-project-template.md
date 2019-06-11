@@ -1,12 +1,15 @@
 ---
 title: Create and apply an App-V project template to a sequenced App-V package (Windows 10)
 description: Steps for how to create and apply an App-V project template (.appvt) to a sequenced App-V package.
-author: jdeckerms
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Create and apply an App-V project template to a sequenced App-V package
@@ -24,7 +27,7 @@ You must first create and save a project template, including a virtual app packa
 
 1. On the device running the App-V Sequencer, select **Start**, select **All Programs**, select **Microsoft Application Virtualization**, and then select **Microsoft Application Virtualization Sequencer**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If the virtual app package is currently open in the App-V Sequencer console, skip to Step 3 of this procedure.
 
 2. On the **File** menu, select **Open**, select **Edit Package**, browse for the virtual app package that includes the settings you want to save with the App-V Project Template, and then select **Edit** to change any of the settings or info included in the file.

@@ -1,8 +1,11 @@
 ---
 title: Administrators Results Pane
 description: Administrators Results Pane
-author: jamiejdt
+author: dansimp
 ms.assetid: 92f4f924-c73b-45d6-8905-26f0f30aa189
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

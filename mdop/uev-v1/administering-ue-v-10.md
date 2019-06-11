@@ -1,8 +1,11 @@
 ---
 title: Administering UE-V 1.0
 description: Administering UE-V 1.0
-author: jamiejdt
+author: levinec
 ms.assetid: c399ae8d-c839-4f84-9bfc-adacd8f89f34
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

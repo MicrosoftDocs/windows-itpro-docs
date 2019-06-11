@@ -1,8 +1,11 @@
 ---
 title: How to Deploy DaRT 10
 description: How to Deploy DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 13e8ba20-21c3-4870-94ed-6d3106d69f21
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -19,7 +22,7 @@ The following instructions explain how to deploy Microsoft Diagnostics and Recov
 **Important**  
 Before you install DaRT, see [DaRT 10 Supported Configurations](dart-10-supported-configurations.md) to ensure that you have installed all of the prerequisite software and that the computer meets the minimum system requirements. The computer onto which you install DaRT must be running Windows 10.
 
- 
+ 
 
 You can install DaRT using one of two different configurations:
 
@@ -83,7 +86,7 @@ msiexec.exe /i MSDaRT.msi /l*v log.txt
 **Note**  
 You can add /qn or /qb to perform a silent installation.
 
- 
+ 
 
 **To validate the DaRT installation**
 
@@ -98,9 +101,9 @@ You can add /qn or /qb to perform a silent installation.
 
 [Deploying DaRT 10 to Administrator Computers](deploying-dart-10-to-administrator-computers.md)
 
- 
+ 
 
- 
+ 
 
 
 

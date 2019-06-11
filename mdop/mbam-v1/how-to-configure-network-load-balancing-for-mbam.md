@@ -1,8 +1,11 @@
 ---
 title: How to Configure Network Load Balancing for MBAM
 description: How to Configure Network Load Balancing for MBAM
-author: jamiejdt
+author: msfttracyp
 ms.assetid: df2208c3-352b-4a48-9722-237b0c8cd6a5
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ To obtain the setup log files, you must install Microsoft BitLocker Administrati
 
 Additional setup log files are created in the %temp% folder of the user who installs MBAM.
 
- 
+ 
 
 The Network Load Balancing (NLB) clusters for the Administration and Monitoring Server feature provides scalability in MBAM and it should support more than 55,000 MBAM client computers.
 
@@ -38,7 +41,7 @@ All computers that will be part of a NLB cluster have the following requirements
 
 -   The NLB cluster requires a static IP address, and a host record must be manually created in the domain name system (DNS).
 
- 
+ 
 
 ## Configuring Network Load Balancing for MBAM Administration and Monitoring Servers
 
@@ -50,7 +53,7 @@ Before you begin the procedures described in this topic, you must have the MBAM 
 **Note**  
 This topic describes the basic process of using Network Load Balancing Manager to create an NLB Cluster. The exact steps to configure a Windows Server as part of an NLB cluster depend on the Windows Server version in use.. For more information about how to create NLBs on Windows Server 2008, see [Creating Network Load Balancing Clusters](https://go.microsoft.com/fwlink/?LinkId=197176) in the Windows Server 2008 TechNet library.
 
- 
+ 
 
 **To configure an NLB Cluster Virtual Name and IP address for two MBAM Administration and Monitoring Servers**
 
@@ -59,7 +62,7 @@ This topic describes the basic process of using Network Load Balancing Manager t
     **Note**  
     If the NLB Manager is not present, you can install it as a Windows Server feature. You must install this feature on both MBAM Administration and Monitoring servers if you want to configure it into the NLB cluster.
 
-     
+     
 
 2.  On the menu bar, click **Cluster**, and then click **New** to open the **Cluster Parameters** dialog box.
 
@@ -80,7 +83,7 @@ This topic describes the basic process of using Network Load Balancing Manager t
     **Note**  
     Ensure that **Affinity** is set to **Single**.
 
-     
+     
 
 7.  On the **Connect** page, enter an MBAM Administration and Monitoring server instance host name that will be part of the NLB cluster in **Host**, and then click **Connect**.
 
@@ -91,7 +94,7 @@ This topic describes the basic process of using Network Load Balancing Manager t
     **Note**  
     The **Host Parameters** page also displays the NLB cluster host priority, which is 1 through 32. As new hosts are added to the NLB cluster, the host priority must differ from the previously added hosts. The priority is automatically incremented when you use the Network Load Balancing Manager.
 
-     
+     
 
 10. Click **&lt;NLB cluster name&gt;** and ensure that the NLB host interface **Status** displays **Converged** before you continue. This step might require that you refresh the NLB cluster display as the host TCP/IP configuration that is being modified by the NLB Manager.
 
@@ -106,9 +109,9 @@ This topic describes the basic process of using Network Load Balancing Manager t
 
 [Deploying the MBAM 1.0 Server Infrastructure](deploying-the-mbam-10-server-infrastructure.md)
 
- 
+ 
 
- 
+ 
 
 
 

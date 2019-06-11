@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 12/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device
@@ -61,7 +63,7 @@ A list of the physical disks that are attached to the computer should be display
   Disk 0    Online         **size*  GB      0 B        *
 ``` 
 
-If the computer uses a Unified Extensible Firmware Interface (UEFI) startup interface, there will be an asterisk (*) in the **GPT**  column.
+If the computer uses a Unified Extensible Firmware Interface (UEFI) startup interface, there will be an asterisk (<em>) in the **GPT</em>*  column.
 
 If the computer uses a basic input/output system (BIOS) interface, there will not be an asterisk in the **Dyn**  column.
 
@@ -92,28 +94,28 @@ Check whether the Boot Configuration Database (BCD) has all the correct entries.
 
 To verify the BCD entries:
 
-1.	Examine the **Windows Boot Manager**  section that has the **{bootmgr}** identifier. Make sure that the **device**  and **path**  entries point to the correct device and boot loader file.
+1. Examine the **Windows Boot Manager**  section that has the **{bootmgr}** identifier. Make sure that the **device**  and **path**  entries point to the correct device and boot loader file.
  
-    An example output if the computer is UEFI-based:
+   An example output if the computer is UEFI-based:
     
-    ```
-    device                  partition=\Device\HarddiskVolume2
-    path                    \EFI\Microsoft\Boot\bootmgfw.efi
-    ```
+   ```
+   device                  partition=\Device\HarddiskVolume2
+   path                    \EFI\Microsoft\Boot\bootmgfw.efi
+   ```
 
-    An example output if the machine is BIOS based:
-    ```
-    Device                partition=C:
-    ```
-    >[!NOTE]
-    >This output may not contain a path.
+   An example output if the machine is BIOS based:
+   ```
+   Device                partition=C:
+   ```
+   >[!NOTE]
+   >This output may not contain a path.
 
-2.	In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
+2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
  
-    >[!NOTE]
-    >If the computer is UEFI-based, the **bootmgr**  and **winload**  entires under **{default}**  will contain an **.efi**  extension.
+   >[!NOTE]
+   >If the computer is UEFI-based, the **bootmgr**  and **winload**  entires under **{default}**  will contain an **.efi**  extension.
 
- ![bcdedit](images/screenshot1.png)
+   ![bcdedit](images/screenshot1.png)
 
 If any of the information is wrong or missing, we recommend that you create a backup of the BCD store. To do this, run `bcdedit /export C:\temp\bcdbackup`. This command creates a backup in **C:\\temp\\** that is named **bcdbackup** . To restore the backup, run `bcdedit /import C:\temp\bcdbackup`. This command overwrites all BCD settings by using the settings in **bcdbackup** .
 
@@ -136,20 +138,20 @@ D:\> Mkdir  BootBackup
 R:\> Copy *.* D:\BootBackup 
 ```
 
-2.	If you are using Windows 10, or if you are troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot**  command to re-create the boot files, as follows:
+2. If you are using Windows 10, or if you are troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot**  command to re-create the boot files, as follows:
 
-    ```cmd
-    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
-    ```
+   ```cmd
+   Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
+   ```
 
-    For example: if we assign the ,System Drive> (WinRE drive) the letter R and the <OSdrive> is the letter D, this command would be the following:
+   For example: if we assign the ,System Drive> (WinRE drive) the letter R and the <OSdrive> is the letter D, this command would be the following:
 
-    ```cmd
-    Bcdboot D:\windows /s R: /f ALL
-    ```
+   ```cmd
+   Bcdboot D:\windows /s R: /f ALL
+   ```
 
-    >[!NOTE]
-    >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
+   >[!NOTE]
+   >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
 
 If you do not have a Windows 10 ISO, you must format the partition and copy **bootmgr**  from another working computer that has a similar Windows build. To do this, follow these steps:
 
@@ -237,14 +239,14 @@ copy OSdrive:\Windows\System32\config\RegBack\SYSTEM OSdrive:\Windows\System32\c
 
 Check whether there are any non-Microsoft upper and lower filter drivers on the computer and that they do not exist on another, similar working computer. if they do exist, remove the upper and lower filter drivers:
 
-1.  Expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001\Control**.
+1. Expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001\Control**.
 
-2.	Look for any **UpperFilters** or **LowerFilters**  entries.
+2. Look for any **UpperFilters** or **LowerFilters**  entries.
 
-    >[!NOTE]
-    >These filters are mainly related to storage. After you expand the **Control** key in the registry, you can search for **UpperFilters** and **LowerFilters**.
+   >[!NOTE]
+   >These filters are mainly related to storage. After you expand the **Control** key in the registry, you can search for **UpperFilters** and **LowerFilters**.
 
- The following are some of the different registry entries in which you may find these filter drivers. These entries are located under **ControlSet**  and are designated as **Default** :
+   The following are some of the different registry entries in which you may find these filter drivers. These entries are located under **ControlSet**  and are designated as **Default** :
 
 \Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318} 
 

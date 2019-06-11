@@ -2,11 +2,14 @@
 title: Working with AppLocker rules (Windows 10)
 description: This topic for IT professionals describes AppLocker rule types and how to work with them for your application control policies.
 ms.assetid: 3966b35b-f2da-4371-8b5f-aec031db6bc9
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: andreabichsel
+author: mjcaparas
 ms.localizationpriority: medium
 msauthor: v-anbic
 ms.date: 08/27/2018
@@ -35,7 +38,7 @@ This topic for IT professionals describes AppLocker rule types and how to work w
 | [Enable the DLL rule collection](enable-the-dll-rule-collection.md) | This topic for IT professionals describes the steps to enable the DLL rule collection feature for AppLocker.| 
 | [Enforce AppLocker rules](enforce-applocker-rules.md) | This topic for IT professionals describes how to enforce application control rules by using AppLocker.| 
 | [Run the Automatically Generate Rules wizard](run-the-automatically-generate-rules-wizard.md) | This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.| 
- 
+ 
 The three AppLocker enforcement modes are described in the following table. The enforcement mode setting defined here can be overwritten by the setting derived from a linked Group Policy Object (GPO) with a higher precedence.
 
 | Enforcement mode | Description |
@@ -56,7 +59,7 @@ The AppLocker console is organized into rule collections, which are executable f
 | Windows Installer files | .msi<br/>.msp<br/>.mst| 
 | Packaged apps and packaged app installers | .appx| 
 | DLL files | .dll<br/>.ocx| 
- 
+ 
 >**Important:**  If you use DLL rules, you need to create an allow rule for each DLL that is used by all of the allowed apps.
 
 When DLL rules are used, AppLocker must check each DLL that an application loads. Therefore, users may experience a reduction in performance if DLL rules are used.
@@ -64,7 +67,7 @@ When DLL rules are used, AppLocker must check each DLL that an application loads
 The DLL rule collection is not enabled by default. To learn how to enable the DLL rule collection, see [DLL rule collections](#bkmk-dllrulecollections).
 
 EXE rules apply to portable executable (PE) files. AppLocker checks whether a file is a valid PE file, rather than just applying rules based on file extension, which attackers can easily change. Regardless of the file extension, the AppLocker EXE rule collection will work on a file as long as it is a valid PE file.
- 
+ 
 ## Rule conditions
 
 Rule conditions are criteria that help AppLocker identify the apps to which the rule applies. The three primary rule conditions are publisher, path, and file hash.
@@ -77,14 +80,14 @@ Rule conditions are criteria that help AppLocker identify the apps to which the 
 
 This condition identifies an app based on its digital signature and extended attributes when available. The digital signature contains info about the company that created the app (the publisher). Executable files, dlls, Windows installers, packaged apps and packaged app installers also have extended attributes, which are obtained from the binary resource. In case of executable files, dlls and Windows installers, these attributes contain the name of the product that the file is a part of, the original name of the file as supplied by the publisher, and the version number of the file. In case of packaged apps and packaged app installers, these extended attributes contain the name and the version of the app package.
 
->**Note:**  Rules created in the packaged apps and packaged app installers rule collection can only have publisher conditions since Windows does not support unsigned packaged apps and packaged app installers.
- 
->**Note:**  Use a publisher rule condition when possible because they can survive app updates as well as a change in the location of files.
- 
+> **Note:**  Rules created in the packaged apps and packaged app installers rule collection can only have publisher conditions since Windows does not support unsigned packaged apps and packaged app installers.
+> 
+> **Note:**  Use a publisher rule condition when possible because they can survive app updates as well as a change in the location of files.
+ 
 When you select a reference file for a publisher condition, the wizard creates a rule that specifies the publisher, product, file name, and version number. You can make the rule more generic by moving the slider up or by using a wildcard character (\*) in the product, file name, or version number fields.
 
 >**Note:**  To enter custom values for any of the fields of a publisher rule condition in the Create Rules Wizard, you must select the **Use custom values** check box. When this check box is selected, you cannot use the slider.
- 
+ 
 The **File version** and **Package version** control whether a user can run a specific version, earlier versions, or later versions of the app. You can choose a version number and then configure the following options:
 
 -   **Exactly.** The rule applies only to this version of the app
@@ -121,9 +124,9 @@ The following table details these path variables.
 | Program Files| %PROGRAMFILES%| %ProgramFiles% and %ProgramFiles(x86)% | 
 | Removable media (for example, a CD or DVD)| %REMOVABLE%| |
 | Removable storage device (for example, a USB flash drive)| %HOT% | |
- 
+ 
 >**Important:**  Because a path rule condition can be configured to include a large number of folders and files, path conditions should be carefully planned. For example, if an allow rule with a path condition includes a folder location that non-administrators are allowed to write data into, a user can copy unapproved files into that location and run the files. For this reason, it is a best practice to not create path conditions for standard user writable locations, such as a user profile.
- 
+ 
 ### <a href="" id="bkmk-filehash"></a>File hash
 
 When you choose the file hash rule condition, the system computes a cryptographic hash of the identified file. The advantage of this rule condition is that because each file has a unique hash, a file hash rule condition applies to only one file. The disadvantage is that each time the file is updated (such as a security update or upgrade) the file's hash will change. As a result, you must manually update file hash rules.
@@ -169,10 +172,10 @@ A rule can be configured to use allow or deny actions:
 -   **Allow.** You can specify which files are allowed to run in your environment, and for which users or groups of users. You can also configure exceptions to identify files that are excluded from the rule.
 -   **Deny.** You can specify which files are *not* allowed to run in your environment, and for which users or groups of users. You can also configure exceptions to identify files that are excluded from the rule.
 
->**Important:**  For a best practice, use allow actions with exceptions. You can use a combination of allow and deny actions but understand that deny actions override allow actions in all cases, and can be circumvented.
- 
->**Important:**  If you join a computer running at least Windows Server 2012 or Windows 8 to a domain that already enforces AppLocker rules for executable files, users will not be able to run any packaged apps unless you also create rules for packaged apps. If you want to allow any packaged apps in your environment while continuing to control executable files, you should create the default rules for packaged apps and set the enforcement mode to Audit-only for the packaged apps rule collection.
- 
+> **Important:**  For a best practice, use allow actions with exceptions. You can use a combination of allow and deny actions but understand that deny actions override allow actions in all cases, and can be circumvented.
+> 
+> **Important:**  If you join a computer running at least Windows Server 2012 or Windows 8 to a domain that already enforces AppLocker rules for executable files, users will not be able to run any packaged apps unless you also create rules for packaged apps. If you want to allow any packaged apps in your environment while continuing to control executable files, you should create the default rules for packaged apps and set the enforcement mode to Audit-only for the packaged apps rule collection.
+ 
 ## Rule exceptions
 
 You can apply AppLocker rules to individual users or to a group of users. If you apply a rule to a group of users, all users in that group are affected by that rule. If you need to allow a subset of a user group to use an app, you can create a special rule for that subset. For example, the rule "Allow everyone to run Windows except Registry Editor" allows everyone in the organization to run the Windows operating system, but it does not allow anyone to run Registry Editor.
@@ -193,7 +196,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 4.  Click the **Advanced** tab, select the **Enable the DLL rule collection** check box, and then click **OK**.
 
     >**Important:**  Before you enforce DLL rules, make sure that there are allow rules for each DLL that is used by any of the allowed apps.
-     
+     
 ## AppLocker wizards
 
 You can create rules by using two AppLocker wizards:

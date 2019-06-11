@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 02/28/2019
+ms.reviewer: 
 ---
 
 # Local Accounts
@@ -95,12 +96,12 @@ In this case, Group Policy can be used to enable secure settings that can contro
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
 
- 
+ 
 
 **Important**  
 Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled.
 
- 
+ 
 
 ### <a href="" id="sec-guest"></a>Guest account
 
@@ -120,15 +121,15 @@ In addition, the guest user in the Guest account should not be able to view the 
 ### DefaultAccount
 
 The DefaultAccount, also known as the Default System Managed Account (DSMA), is a built-in account introduced in Windows 10 version 1607 and Windows Server 2016. 
-The DMSA is a well-known user account type. 
+The DSMA is a well-known user account type. 
 It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
-The DMSA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
+The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
 
-The DMSA has a well-known RID of 503. The security identifier (SID) of the DMSA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
+The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
 
-The DMSA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
+The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
 
-The DMSA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
+The DSMA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
 
 #### How Windows uses the DefaultAccount
 From a permission perspective, the DefaultAccount is a standard user account. 
@@ -204,7 +205,7 @@ Each of these approaches is described in the following sections.
 **Note**  
 These approaches do not apply if all administrative local accounts are disabled.
 
- 
+ 
 
 ### <a href="" id="sec-enforce-account-restrictions"></a>Enforce local account restrictions for remote access
 
@@ -240,7 +241,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -255,7 +256,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -288,7 +289,7 @@ The following table shows the Group Policy and registry settings that are used t
 
 >[!NOTE]
 >You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
- 
+ 
 
 **To enforce local account restrictions for remote access**
 
@@ -363,7 +364,7 @@ Denying local accounts the ability to perform network logons can help prevent a 
 **Note**  
 In order to perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
 
- 
+ 
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
@@ -387,7 +388,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network" data-raw-source="[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)">Deny access to this computer from the network</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -403,7 +404,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)</p></td>
+<td><p><a href="/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services" data-raw-source="[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)">Deny log on through Remote Desktop Services</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -414,7 +415,7 @@ The following table shows the Group Policy settings that are used to deny networ
 </tbody>
 </table>
 
- 
+ 
 
 **To deny network logon to all local administrator accounts**
 

@@ -1,8 +1,11 @@
 ---
 title: Edit Shortcuts
 description: Edit Shortcuts
-author: jamiejdt
+author: dansimp
 ms.assetid: a0ca75aa-1059-4d0c-894c-2e3474e9f519
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

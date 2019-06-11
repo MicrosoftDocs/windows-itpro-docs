@@ -1,8 +1,11 @@
 ---
 title: Helping End Users Manage BitLocker
 description: Helping End Users Manage BitLocker
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 47776fb3-2d94-4970-b687-c35ec3dd6c64
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -36,7 +39,7 @@ You can turn off BitLocker, either temporarily, by suspending it, or permanently
 **Note**  
 Because BitLocker encrypts the whole drive and not just the individual files themselves, be careful when you move sensitive data between drives. If you move a file from a BitLocker-protected drive to a nonencrypted drive, the file will no longer be encrypted.
 
- 
+ 
 
 ## About the BitLocker Encryption Options Application
 
@@ -78,9 +81,9 @@ In this section, you can view information about external drives (such as a USB t
 
 -   **Disk Management** -open the Disk Management tool. From here you can view the information for all hard drives connected to the computer and configure partitions and drive options. You must have administrative rights on your computer to access this tool.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,10 +4,12 @@ description: To end a Surface Hub meeting, tap End session. Surface Hub cleans u
 keywords: I am Done, end Surface Hub meeting, finish Surface Hub meeting, clean up Surface Hub meeting
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 

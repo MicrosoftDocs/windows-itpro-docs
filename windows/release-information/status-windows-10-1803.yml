@@ -5,7 +5,7 @@ title: Windows 10, version 1803
 metadata:
   document_id: 
   title: Windows 10, version 1803
-  description: View annoucements and review known issues and fixes for Windows 10 version 1803
+  description: View announcements and review known issues and fixes for Windows 10 version 1803
   keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
   ms.localizationpriority: high
   author: greg-lindsay
@@ -29,21 +29,21 @@ sections:
     columns: 3
     items:
     
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540
-      html: Read the announcement >
+    - href: https://blogs.windows.com/windowsexperience/
+      html: Get the update >
       image: 
-        src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: Windows 10, version 1809 designated for broad deployment
-    - href: https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency
-      html: Find out more >
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Windows 10, version 1903 rollout begins
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+      html: Read about the latest enhancements > 
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Improvements to the Windows 10 update experience are coming
-    - href: https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience
-      html: Learn about our approach >
+      title: What’s new in Windows Update for Business
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+      html: Get an overview > 
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
-      title: How do we measure and improve the quality of Windows?
+      title: What’s new for businesses and IT pros in Windows 10
 - items:
   - type: markdown
     text: "
@@ -60,12 +60,12 @@ sections:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
-      <tr><td><div id='237msg'></div><b>Issue using PXE to start a device from WDS</b><br>Using PXE to start a device from a WDS server configured to use Variable Window Extension may cause the connection to the WDS server to terminate prematurely.<br><br><a href = '#237msgdesc'>See details ></a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
       <tr><td><div id='319msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\".<br><br><a href = '#319msgdesc'>See details ></a></td><td>OS Build 17134.523<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480966' target='_blank'>KB4480966</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
+      <tr><td><div id='488msg'></div><b>Opening Internet Explorer 11 may fail</b><br>Internet Explorer 11 may fail to open if Default Search Provider is not set or is malformed.<br><br><a href = '#488msgdesc'>See details ></a></td><td>OS Build 17134.799<br><br>May 21, 2019<br><a href ='https://support.microsoft.com/help/4499183' target='_blank'>KB4499183</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a></td><td>June 11, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><div id='483msg'></div><b>Issue using PXE to start a device from WDS</b><br>Using PXE to start a device from a WDS server configured to use Variable Window Extension may cause the connection to the WDS server to terminate prematurely.<br><br><a href = '#483msgdesc'>See details ></a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a></td><td>June 11, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='422msg'></div><b>Unable to access some gov.uk websites</b><br>gov.uk websites that don’t support “HSTS” may not be accessible<br><br><a href = '#422msgdesc'>See details ></a></td><td>OS Build 17134.765<br><br>May 14, 2019<br><a href ='https://support.microsoft.com/help/4499167' target='_blank'>KB4499167</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4505064' target='_blank'>KB4505064</a></td><td>May 19, 2019 <br>02:00 PM PT</td></tr>
       <tr><td><div id='379msg'></div><b>Layout and cell size of Excel sheets may change when using MS UI Gothic </b><br>When using the MS UI Gothic or MS PGothic fonts, the text, layout, or cell size may become narrower or wider than expected in Microsoft Excel. <br><br><a href = '#379msgdesc'>See details ></a></td><td>OS Build 17134.753<br><br>April 25, 2019<br><a href ='https://support.microsoft.com/help/4493437' target='_blank'>KB4493437</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4499167' target='_blank'>KB4499167</a></td><td>May 14, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='362msg'></div><b>Zone transfers over TCP may fail</b><br>Zone transfers between primary and secondary DNS servers over the Transmission Control Protocol (TCP) may fail.<br><br><a href = '#362msgdesc'>See details ></a></td><td>OS Build 17134.753<br><br>April 25, 2019<br><a href ='https://support.microsoft.com/help/4493437' target='_blank'>KB4493437</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4499167' target='_blank'>KB4499167</a></td><td>May 14, 2019 <br>10:00 AM PT</td></tr>
-      <tr><td><div id='188msg'></div><b>Custom URI schemes may not start corresponding application</b><br>Custom URI schemes for application protocol handlers may not start the corresponding application for local intranet and trusted sites in Internet Explorer.<br><br><a href = '#188msgdesc'>See details ></a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4493437' target='_blank'>KB4493437</a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
       </table>
       "
 
@@ -76,6 +76,15 @@ sections:
         <div>
         </div> 
       "
+- title: June 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='488msgdesc'></div><b>Opening Internet Explorer 11 may fail</b><div>Internet Explorer 11 may fail to open if <strong>Default Search Provider</strong> is not set or is malformed.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10 Enterprise LTSC 2016; Windows 10, version 1607</li><li>Server: Windows Server 2019; Windows Server 2016</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href='https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a>.</div><br><a href ='#488msg'>Back to top</a></td><td>OS Build 17134.799<br><br>May 21, 2019<br><a href ='https://support.microsoft.com/help/4499183' target='_blank'>KB4499183</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a></td><td>Resolved:<br>June 11, 2019 <br>10:00 AM PT<br><br>Opened:<br>June 05, 2019 <br>05:49 PM PT</td></tr>
+      </table>
+      "
+
 - title: May 2019
 - items:
   - type: markdown
@@ -100,9 +109,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='237msgdesc'></div><b>Issue using PXE to start a device from WDS</b><div>After installing <a href=\"https://support.microsoft.com/help/4489868\" target=\"_blank\">KB4489868</a>, there may be issues using the Preboot Execution Environment (PXE) to start a device from a Windows Deployment Services (WDS) server configured to use Variable Window Extension. This may cause the connection to the WDS server to terminate prematurely while downloading the image. This issue does not affect clients or devices that are not using Variable Window Extension.&nbsp;</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 8.1</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Workaround:</strong> To mitigate the issue, disable the Variable Window Extension on WDS server using one of the following options:</div><div><br></div><div><strong>Option 1:</strong>&nbsp;</div><div>Open an Administrator Command prompt and type the following:&nbsp;&nbsp;</div><pre class=\"ql-syntax\" spellcheck=\"false\">Wdsutil /Set-TransportServer /EnableTftpVariableWindowExtension:No
-</pre><div><br></div><div>&nbsp;<strong>Option 2:</strong>&nbsp;</div><div>Use the Windows Deployment Services UI to make the following adjustment:&nbsp;&nbsp;</div><ol><li>Open Windows Deployment Services from Windows Administrative Tools.&nbsp;</li><li>Expand Servers and right-click a WDS server.&nbsp;</li><li>Open its properties and clear the <strong>Enable Variable Window Extension </strong>box on the TFTP tab.&nbsp;&nbsp;</li></ol><div><strong>Option 3:</strong>&nbsp;</div><div>Set the following registry value to 0:</div><div>HKLM\\System\\CurrentControlSet\\Services\\WDSServer\\Providers\\WDSTFTP\\EnableVariableWindowExtension&nbsp;&nbsp;</div><div><br></div><div>Restart the WDSServer service after disabling the Variable Window Extension.&nbsp;</div><div>&nbsp;</div><div><strong>Next steps:</strong> Microsoft is working on a resolution and will provide an update in an upcoming release.&nbsp;</div><br><a href ='#237msg'>Back to top</a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>April 25, 2019 <br>02:00 PM PT<br><br>Opened:<br>March 12, 2019 <br>10:00 AM PT</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='188msgdesc'></div><b>Custom URI schemes may not start corresponding application</b><div>After installing <a href=\"https://support.microsoft.com/help/4489868\" target=\"_blank\">KB4489868</a>, custom URI schemes for application protocol handlers may not start the corresponding application for local intranet and trusted sites security zones on Internet Explorer.&nbsp;</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 10 Enterprise LTSB 2015; Windows 8.1; Windows 7 SP1&nbsp;</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2008 R2 SP1</li></ul><div></div><div><strong>Resolution:</strong> This issue is resolved in <a href=\"https://support.microsoft.com/help/4493437\" target=\"_blank\">KB4493437</a>.&nbsp;</div><br><a href ='#188msg'>Back to top</a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4493437' target='_blank'>KB4493437</a></td><td>Resolved:<br>April 25, 2019 <br>02:00 PM PT<br><br>Opened:<br>March 12, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='483msgdesc'></div><b>Issue using PXE to start a device from WDS</b><div>After installing <a href=\"https://support.microsoft.com/help/4489868\" target=\"_blank\">KB4489868</a>, there may be issues using the Preboot Execution Environment (PXE) to start a device from a Windows Deployment Services (WDS) server configured to use Variable Window Extension. This may cause the connection to the WDS server to terminate prematurely while downloading the image. This issue does not affect clients or devices that are not using Variable Window Extension.&nbsp;</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 8.1</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href='https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a>.</div><br><a href ='#483msg'>Back to top</a></td><td>OS Build 17134.648<br><br>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489868' target='_blank'>KB4489868</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503286' target='_blank'>KB4503286</a></td><td>Resolved:<br>June 11, 2019 <br>10:00 AM PT<br><br>Opened:<br>March 12, 2019 <br>10:00 AM PT</td></tr>
       </table>
       "
 

@@ -1,8 +1,11 @@
 ---
 title: Managing the AGPM Service
 description: Managing the AGPM Service
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 331f64d2-1236-4711-81b4-1b92f019bfa5
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,7 +22,7 @@ The AGPM Service is a Windows service that acts as a security proxy, managing cl
 **Caution**  
 Do not modify settings for the AGPM Service through **Administrative Tools** and **Services** in the operating system. Doing so can prevent the AGPM Service from starting.
 
- 
+ 
 
 -   [Start and Stop the AGPM Service](start-and-stop-the-agpm-service.md)
 
@@ -29,9 +32,9 @@ Do not modify settings for the AGPM Service through **Administrative Tools** and
 
 -   [Modify the Port on Which the AGPM Service Listens](modify-the-port-on-which-the-agpm-service-listens.md)
 
- 
+ 
 
- 
+ 
 
 
 

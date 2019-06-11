@@ -14,7 +14,7 @@ ms.date: 07/27/2018
 
 
 <table><tbody>
-<tr><td style="border: 0px;width: 75%;valign= top"><p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p><p> Microsoft HoloLens is available in the **Development Edition**, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the **Commercial Suite**, which runs Windows Holographic for Business when you apply the Enterprise license file to the device.</p></td><td align="left" style="border: 0px">![Hololens](images/hololens.png)</td></tr>
+<tr><td style="border: 0px;width: 75%;valign= top"><p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p><p> Microsoft HoloLens is available in the <strong>Development Edition</strong>, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the <strong>Commercial Suite</strong>, which runs Windows Holographic for Business when you apply the Enterprise license file to the device.</p></td><td align="left" style="border: 0px"><img src="images/hololens.png" alt="Hololens"/></td></tr>
 </tbody></table>
 
 ## In this section

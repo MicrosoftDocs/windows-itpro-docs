@@ -2,12 +2,14 @@
 title: BitLocker (Windows 10)
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

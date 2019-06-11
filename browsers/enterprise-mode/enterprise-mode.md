@@ -3,10 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use this section to learn about how to turn on Enterprise Mode.
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.prod: edge, ie11
 ms.assetid: 
+ms.reviewer: 
+manager: dansimp
 title: Enterprise Mode for Microsoft Edge
 ms.sitesec: library
 ms.date: ''

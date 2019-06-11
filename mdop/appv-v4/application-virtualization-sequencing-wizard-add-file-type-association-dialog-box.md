@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencing Wizard-Add File Type Association Dialog Box
 description: Application Virtualization Sequencing Wizard-Add File Type Association Dialog Box
-author: jamiejdt
+author: dansimp
 ms.assetid: f7656053-3d92-448e-8759-b6b09cef6025
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information
 description: How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information
-author: jamiejdt
+author: dansimp
 ms.assetid: 09ba2a07-3186-45d9-adef-4034c70ae7cf
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,7 +22,7 @@ You can configure a localized version of the Self-Service Portal "HelpdeskText" 
 **Note**  
 In the following instructions, *SelfService* is the default virtual directory name for the Self-Service Portal. You might have used a different name when you configured the Self-Service Portal.
 
- 
+ 
 
 **To display a localized version of the HelpdeskText statement**
 
@@ -44,9 +47,9 @@ In the following instructions, *SelfService* is the default virtual directory na
 
 [Customizing the Self-Service Portal for Your Organization](customizing-the-self-service-portal-for-your-organization.md)
 
- 
+ 
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

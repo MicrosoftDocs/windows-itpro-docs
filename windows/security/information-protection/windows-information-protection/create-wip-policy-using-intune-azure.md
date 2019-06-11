@@ -5,13 +5,14 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/13/2019
+ms.reviewer: 
 ---
 
 # Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
@@ -96,7 +97,7 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
 - **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-![Add Store app](images\add-a-protected-store-app.png)
+![Add Store app](images/add-a-protected-store-app.png)
 
 To add multiple Store apps, click the ellipsis **…**. 
 

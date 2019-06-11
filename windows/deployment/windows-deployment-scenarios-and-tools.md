@@ -2,12 +2,14 @@
 title: Windows 10 deployment tools (Windows 10)
 description: To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process.
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/12/2017
+author: dansimp
 ms.topic: article
 ---
 
@@ -59,7 +61,7 @@ USMT is a backup and restore tool that allows you to migrate user state, data, a
 **Note**  
 Occasionally, we find that customers are wary of USMT because they believe it requires significant configuration, but, as you will learn below, using USMT is not difficult. If you use MDT and Lite Touch to deploy your machines, the USMT feature is automatically configured and extended so that it is easy to use. With MDT, you do nothing at all and USMT just works.
 
- 
+ 
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
@@ -92,7 +94,7 @@ By default USMT migrates many settings, most of which are related to the user pr
     **Note**  
     The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
 
-     
+     
 
 -   Operating system component settings
 
@@ -196,7 +198,7 @@ MDT has two main parts: the first is Lite Touch, which is a stand-alone deployme
 **Note**  
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
- 
+ 
 
 ![figure 11](images/mdt-11-fig13.png)
 
@@ -338,9 +340,9 @@ For more information on UEFI, see the [UEFI firmware](https://go.microsoft.com/f
 
 [Windows ADK for Windows 10 scenarios for IT pros](windows-adk-scenarios-for-it-pros.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: How to Move the MBAM 2.5 Reports
 description: How to Move the MBAM 2.5 Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: c8223656-ca9d-41c8-94a3-64d07a6b99e9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -29,7 +32,7 @@ The high-level steps for moving the Reports feature are:
 **Note**  
 To run the example Windows PowerShell scripts in this topic, you must update the Windows PowerShell execution policy to enable scripts to be run. See [Running Windows PowerShell Scripts](https://technet.microsoft.com/library/ee176949.aspx) for instructions.
 
- 
+ 
 
 **Stop the MBAM Administration and Monitoring Website**
 
@@ -100,7 +103,7 @@ To run the example Windows PowerShell scripts in this topic, you must update the
     </tbody>
     </table>
 
-     
+     
 
 **Resume the instance of the Administration and Monitoring Website**
 
@@ -115,7 +118,7 @@ To run the example Windows PowerShell scripts in this topic, you must update the
     **Note**  
     To run this command, you must add the IIS module for Windows PowerShell to the current instance of Windows PowerShell.
 
-     
+     
 
 
 
@@ -128,11 +131,11 @@ To run the example Windows PowerShell scripts in this topic, you must update the
 
 [Moving MBAM 2.5 Features to Another Server](moving-mbam-25-features-to-another-server.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

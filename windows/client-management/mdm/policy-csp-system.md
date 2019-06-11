@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - System
 description: Policy CSP - System
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/09/2019
+author: manikadhiman
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - System
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -445,7 +444,7 @@ This MDM setting corresponds to the EnableFontProviders Group Policy setting. If
 
 This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
 
-> [!Note]  
+> [!NOTE]
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
 <!--/Description-->
@@ -767,9 +766,9 @@ Most restricted value is 0.
 <!--/Description-->
 > [!TIP]
 > This policy is also applicable to Windows 10 and not exclusive to phone.
-<!--SupportedValues-->
-The following list shows the supported values:
-orted values:
+> <!--SupportedValues-->
+> The following list shows the supported values:
+> orted values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed to reset to factory default settings.
@@ -830,9 +829,9 @@ If your malware detection application does not include an Early Launch Antimalwa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1329,9 +1328,9 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1441,7 +1440,7 @@ To enable this behavior you must complete two steps:
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
  
-When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594).
+When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="https://go.microsoft.com/fwlink/?linkid=847594" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
 Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
    

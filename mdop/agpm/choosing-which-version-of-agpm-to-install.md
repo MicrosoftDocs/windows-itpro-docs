@@ -1,8 +1,11 @@
 ---
 title: Choosing Which Version of AGPM to Install
 description: Choosing Which Version of AGPM to Install
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 31357d2a-bc23-4e15-93f4-0beda8ab7a7b
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -53,7 +56,7 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 <tr class="even">
 <td align="left"><p>Windows Server 2012 R2</p></td>
 <td align="left"><p>Windows 10</p></td>
-<td align="left"><p>Supported with the caveats outlined in [KB 4015786](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
+<td align="left"><p>Supported with the caveats outlined in <a href="https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv" data-raw-source="[KB 4015786](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)">KB 4015786</a>
 </p></td>
 </tr>
 <tr class="odd">
@@ -89,7 +92,7 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 </tbody>
 </table>
 
- 
+ 
 
 ## AGPM 4.0 SP2
 
@@ -147,7 +150,7 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP2, and 
 </tbody>
 </table>
 
- 
+ 
 
 ## AGPM 4.0 SP1
 
@@ -198,7 +201,7 @@ Table 2 lists the operating systems on which you can install AGPM 4.0 SP1, and t
 </tbody>
 </table>
 
- 
+ 
 
 ## AGPM 4.0
 
@@ -244,7 +247,7 @@ Table 3 lists the operating systems on which you can install AGPM 4.0, and the p
 </tbody>
 </table>
 
- 
+ 
 
 ## Versions of AGPM that precede AGPM 4.0
 
@@ -284,7 +287,7 @@ Table 4 lists the operating systems on which you can install the versions of AGP
 </tbody>
 </table>
 
- 
+ 
 
 ## How to Get MDOP Technologies
 
@@ -296,9 +299,9 @@ AGPM 4.0 SP2 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP i
 
 [Advanced Group Policy Management](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

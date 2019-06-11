@@ -1,8 +1,11 @@
 ---
 title: Approve or Reject a Pending Action
 description: Approve or Reject a Pending Action
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 078ea8b5-9ac5-45fc-9ac1-a1aa629c10b4
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -39,7 +42,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
     **Note**  
     If an Approver's e-mail address is included in the **To e-mail address** field on the **Domain** **Delegation** tab, the Approver will receive e-mail from the AGPM alias when an Editor or Reviewer submits a request.
 
-     
+     
 
 ### Additional considerations
 
@@ -49,9 +52,9 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 
 -   [Performing Approver Tasks](performing-approver-tasks-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

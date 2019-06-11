@@ -61,7 +61,7 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 
 ## Grant the MSSP access to the portal
 
->[!NOTE] 
+>[!NOTE]
 > These set of steps are directed towards the MSSP customer. <br>
 > Access to the portal can only be done by the MSSP customer.
 
@@ -96,7 +96,7 @@ As a MSSP customer, you can always remove or modify the permissions granted to t
 
 ##  Access the Microsoft Defender Security Center MSSP customer portal
 
->[!NOTE] 
+>[!NOTE]
 >These set of steps are directed towards the MSSP. 
 
 By default, MSSP customers access their Microsoft Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.

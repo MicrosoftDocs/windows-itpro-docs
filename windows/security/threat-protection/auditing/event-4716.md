@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/04/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4716(S): Trusted domain information was modified.

@@ -2,12 +2,14 @@
 title: Confirm That Certificates Are Deployed Correctly (Windows 10)
 description: Confirm That Certificates Are Deployed Correctly
 ms.assetid: de0c8dfe-16b0-4d3b-8e8f-9282f6a65eee
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: securit
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

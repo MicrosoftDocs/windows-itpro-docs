@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 05/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Planning and getting started on the Windows Defender Application Control deployment process
@@ -25,24 +28,24 @@ This topic provides a roadmap for planning and getting started on the Windows De
 
 3. Review how much variety in software and hardware is needed by roles or departments. The following questions can help you clarify how many WDAC policies to create:
 
-    - How standardized is the hardware?<br>This can be relevant because of drivers. You could create a WDAC policy on hardware that uses a particular set of drivers, and if other drivers in your environment use the same signature, they would also be allowed to run. However, you might need to create several WDAC policies on different "reference" hardware, then merge the policies together, to ensure that the resulting policy recognizes all the drivers in your environment.
+   - How standardized is the hardware?<br>This can be relevant because of drivers. You could create a WDAC policy on hardware that uses a particular set of drivers, and if other drivers in your environment use the same signature, they would also be allowed to run. However, you might need to create several WDAC policies on different "reference" hardware, then merge the policies together, to ensure that the resulting policy recognizes all the drivers in your environment.
 
-    - What software does each department or role need? Should they be able to install and run other departments’ software?<br>If multiple departments are allowed to run the same list of software, you might be able to merge several WDAC policies to simplify management.
+   - What software does each department or role need? Should they be able to install and run other departments’ software?<br>If multiple departments are allowed to run the same list of software, you might be able to merge several WDAC policies to simplify management.
          
-    - Are there departments or roles where unique, restricted software is used?<br>If one department needs to run an application that no other department is allowed, it might require a separate WDAC policy. Similarly, if only one department must run an old version of an application (while other departments allow only the newer version), it might require a separate WDAC policy.
+   - Are there departments or roles where unique, restricted software is used?<br>If one department needs to run an application that no other department is allowed, it might require a separate WDAC policy. Similarly, if only one department must run an old version of an application (while other departments allow only the newer version), it might require a separate WDAC policy.
 
-    - Is there already a list of accepted applications?<br>A list of accepted applications can be used to help create a baseline WDAC policy.<br>As of Windows 10, version 1703, it might also be useful to have a list of plug-ins, add-ins, or modules that you want to allow only in a specific app (such as a line-of-business app). Similarly, it might be useful to have a list of plug-ins, add-ins, or modules that you want to block in a specific app (such as a browser).
+   - Is there already a list of accepted applications?<br>A list of accepted applications can be used to help create a baseline WDAC policy.<br>As of Windows 10, version 1703, it might also be useful to have a list of plug-ins, add-ins, or modules that you want to allow only in a specific app (such as a line-of-business app). Similarly, it might be useful to have a list of plug-ins, add-ins, or modules that you want to block in a specific app (such as a browser).
 
-    - As part of a threat review process, have you reviewed systems for software that can load arbitrary DLLs or run code or scripts? 
-    In day-to-day operations, your organization’s security policy may allow certain applications, code, or scripts to run on your systems depending on their role and the context. However, if your security policy requires that you run only trusted applications, code, and scripts on your systems, you may decide to lock these systems down securely with Windows Defender Application Control policies. 
+   - As part of a threat review process, have you reviewed systems for software that can load arbitrary DLLs or run code or scripts? 
+     In day-to-day operations, your organization’s security policy may allow certain applications, code, or scripts to run on your systems depending on their role and the context. However, if your security policy requires that you run only trusted applications, code, and scripts on your systems, you may decide to lock these systems down securely with Windows Defender Application Control policies. 
     
-    Legitimate applications from trusted vendors provide valid functionality. However, an attacker could also potentially use that same functionality to run malicious executable code that could bypass WDAC.
+     Legitimate applications from trusted vendors provide valid functionality. However, an attacker could also potentially use that same functionality to run malicious executable code that could bypass WDAC.
 
-    For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your WDAC policies. Other applications where older versions of the application had vulnerabilities also represent a risk. Therefore, you may want to deny or block such applications from your WDAC policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
+     For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your WDAC policies. Other applications where older versions of the application had vulnerabilities also represent a risk. Therefore, you may want to deny or block such applications from your WDAC policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
 
-    Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Windows Defender Application Control. Depending on the context, you may want to block these applications. To view this list of applications and for use case examples, such as disabling msbuild.exe, see [Microsoft recommended block rules](microsoft-recommended-block-rules.md).
+     Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Windows Defender Application Control. Depending on the context, you may want to block these applications. To view this list of applications and for use case examples, such as disabling msbuild.exe, see [Microsoft recommended block rules](microsoft-recommended-block-rules.md).
 
-4.  Identify LOB applications that are currently unsigned. Although requiring signed code (through WDAC) protects against many threats, your organization might use unsigned LOB applications, for which the process of signing might be difficult. You might also have applications that are signed, but you want to add a secondary signature to them. If so, identify these applications, because you will need to create a catalog file for them.
+4. Identify LOB applications that are currently unsigned. Although requiring signed code (through WDAC) protects against many threats, your organization might use unsigned LOB applications, for which the process of signing might be difficult. You might also have applications that are signed, but you want to add a secondary signature to them. If so, identify these applications, because you will need to create a catalog file for them.
 
 ## Getting started on the deployment process
 

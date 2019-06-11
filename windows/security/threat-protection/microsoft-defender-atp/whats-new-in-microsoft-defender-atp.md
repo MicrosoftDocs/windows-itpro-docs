@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender ATP
 description: Lists the new features and functionality in Microsoft Defender ATP
-keywords: what's new in windows defender atp
+keywords: what's new in microsoft defender atp, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -100,7 +100,7 @@ Query data using Advanced hunting in Microsoft Defender ATP.
     >[!NOTE]
     >Available from Windows 10, version 1803 or later.
 
-- [Conditional access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> Enable conditional access to better protect users, devices, and data.
+- [Conditional Access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> Enable conditional access to better protect users, devices, and data.
 
 - [Microsoft Defender ATP Community center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
     The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
