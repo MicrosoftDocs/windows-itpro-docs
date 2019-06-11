@@ -197,7 +197,7 @@ Each scenario on your master list should now have a problem statement, an invest
 Some or all of your mitigations are in place. You need to validate that your solutions have solved their problem statements. This is where you rely on your test users. You want to keep a good portion of your first test users, but this is a good opportunity to replace a few or add a few. Survey test users workflow for password usage. If all goes well, you have closed most or all of the gaps. A few are likely to remain. Evaluate your solutions and what went wrong, change your solution as needed until you reach a solution that removes your user's need to type a password. If you are stuck, others might be too. Use the forums from various sources or your network of IT colleagues to describe your problem and see how others are solving it. If you are out of options, contact Microsoft for assistance.
 
 #### Remove password capabilities from Windows
-You believe you have mitigates all the password usage for the targeted work persona. Now comes the true test-- configure Windows so the user cannot use a password.
+You believe you have mitigated all the password usage for the targeted work persona. Now comes the true test - configure Windows so the user cannot use a password.
 
 Windows provides two ways to prevent your users from using passwords. You can use an interactive logon security policy to only allow Windows Hello for Business sign-in and unlocks, or you can exclude the password credential provider.
 
