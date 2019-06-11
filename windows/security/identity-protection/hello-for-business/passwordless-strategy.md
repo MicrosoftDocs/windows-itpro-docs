@@ -247,7 +247,7 @@ Track all reported issues. Set priority and severity to each reported issue and 
 - Is the outage a result of a misconfiguration?
 - Is the outage a overlooked gap from step 2?
 
-Each organization's priority and severity will differ however most organizations consider work stoppages fairly significant. Your team should pre-define levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it and less time on process.
+Each organization's priority and severity will differ. However, most organizations consider work stoppages to be fairly significant. Your team should predefine levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority, and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it, and less time on the process.
 
 Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
 
