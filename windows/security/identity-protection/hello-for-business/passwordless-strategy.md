@@ -252,7 +252,7 @@ Each organization's priority and severity will differ. However, most organizatio
 Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
 
 #### Configure user accounts to disallow password authentication.
-You transitioned all the users for the targeted work persona to a password-less environment and you have successfully validated all their workflows. The last step to complete the password-less transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
+You transitioned all the users for the targeted work persona to a passwordless environment and you have successfully validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
 
 You can change the user's password to random data and prevent domain controllers from allowing users to use passwords for interactive sign-ins using an account configuration on the user object.
 
