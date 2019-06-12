@@ -56,6 +56,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [June 2019](#june-2019)
     - [May 2019](#may-2019)
     - [April 2019](#april-2019)
     - [March 2019](#march-2019)
@@ -120,6 +121,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" data-raw-source="[ServiceControlManager/SvchostProcessMitigation](policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)">ServiceControlManager/SvchostProcessMitigation</a></li>
 <li><a href="policy-csp-system.md#system-allowcommercialdatapipeline" data-raw-source="[System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)">System/AllowCommercialDataPipeline</a></li>
 <li><a href="policy-csp-system.md#system-turnofffilehistory" data-raw-source="[System/TurnOffFileHistory](policy-csp-system.md#system-turnofffilehistory)">System/TurnOffFileHistory</a></li>
+<li><a href="policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" data-raw-source="[TimeLanguageSettings/ConfigureTimeZone](policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)">TimeLanguageSettings/ConfigureTimeZone</a></li>
 <li><a href="policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" data-raw-source="[Troubleshooting/AllowRecommendations](policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)">Troubleshooting/AllowRecommendations</a></li>
 <li><a href="policy-csp-update.md#update-automaticmaintenancewakeup" data-raw-source="[Update/AutomaticMaintenanceWakeUp](policy-csp-update.md#update-automaticmaintenancewakeup)">Update/AutomaticMaintenanceWakeUp</a></li>
 <li><a href="policy-csp-update.md#update-configuredeadlineforfeatureupdates" data-raw-source="[Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates)">Update/ConfigureDeadlineForFeatureUpdates</a></li>
@@ -1867,6 +1869,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### June 2019
+New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - TimeLanguageSettings](policy-csp-timelanguagesettings.md)|Added the following new policy:<br>ConfigureTimeZone.|
+
 
 ### May 2019
 
