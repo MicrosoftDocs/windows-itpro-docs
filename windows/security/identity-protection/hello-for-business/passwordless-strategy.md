@@ -32,7 +32,7 @@ Deploying Windows Hello for Business is the first step towards a passwordless en
 ### 2. Reduce user-visible password surface area
 With Windows Hello for Business and passwords coexisting in your environment, the next step is to reduce the password surface. The environment and workflows need to stop asking for passwords. The goal of this step is to achieve a state where the user knows they have a password, but they never use it. This state helps decondition users from providing a password any time a password prompt shows on their computer. This is how passwords are phished. Users who rarely, if at all, use their password are unlikely to provide it. Password prompts are no longer the norm.
 
-### 3. Transition into a password-less deployment
+### 3. Transition into a passwordless deployment
 Once the user-visible password surface has been eliminated, your organization can begin to transition those users into a password-less world. A world where:
   - the user never types their password
   - the user never changes their password
