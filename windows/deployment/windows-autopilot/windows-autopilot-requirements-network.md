@@ -91,4 +91,4 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Certificate revocation lists (CRLs).**  Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented in the Office documentation at <https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl> and <https://aka.ms/o365chains>.
 
--   **Hybrid AAD Join.**  Hybrid AAD can be join, the machine should on corporate network for hybrid ADD join to work. See documentation at <https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-hybrid>
+-   **Hybrid AAD Join.**  Hybrid AAD can be join, the machine should on corporate network for hybrid ADD join to work. See details at <https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-hybrid>
