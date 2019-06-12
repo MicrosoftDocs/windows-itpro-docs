@@ -4,13 +4,14 @@ description: Provides guidance on downloading and testing Windows 10 in S mode f
 keywords: Windows 10 in S mode, try, download, school, education, Windows 10 in S mode installer, existing Windows 10 education devices
 ms.mktglfcycl: deploy
 ms.prod: w10
-ms.technology: Windows
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: MikeBlodge
-ms.author: MikeBlodge
+author: mjcaparas
+ms.author: macapara
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices
@@ -80,21 +81,21 @@ Check with your device manufacturer before trying Windows 10 in S mode on your d
 
 |   |   |   |
 | - | - | - |
-| <a href="https://www.acer.com/ac/en/US/content/windows10s-compatible-list" target="_blank">Acer</a> | <a href="http://www.51cube.com/ch/win10s-help.php" target="_blank">Alldocube</a> | <a href="https://www.ibuypower.com/site/computer/windows-10-s" target="_blank">American Future Tech</a> | 
-| <a href="http://www.prestigio.com/support/compatibility-with-windows-10-s/" target="_blank">ASBISC</a> | <a href="https://www.asus.com/event/2017/win10S/" target="_blank">Asus</a> | <a href="http://www.atec.kr/contents/ms_info.html" target="_blank">Atec</a> | 
-| <a href="https://www.odys.de/web/web_lan_en_hmp_1_win10s_ja.html" target="_blank">Axdia</a> | <a href="http://www.casper.com.tr/window10sdestegi" target="_blank">Casper</a> | <a href="https://www.cyberpowerpc.com/page/Windows-10-S/" target="_blank">Cyberpower</a> | 
-| <a href="http://www.lucoms.com/v2/cs/cs_windows10.asp" target="_blank">Daewoo</a> | <a href="http://www.daten.com.br/suportes/windows10s/" target="_blank">Daten</a> | <a href="http://www.dell.com/support/article/us/en/19/sln307174/dell-computers-tested-for-windows-10-s?lang=en" target="_blank">Dell</a> | 
-| <a href="http://www.epson.jp/support/misc/windows10s.htm" target="_blank">Epson</a> | <a href="http://exo.com.ar/actualizaciones-de-windows-10" target="_blank">EXO</a> | <a href="http://www.fujitsu.com/au/products/computing/pc/microsoft/s-compatible/" target="_blank">Fujitsu</a> |
-| <a href="http://apac.getac.com/support/windows10s.html" target="_blank">Getac</a> | <a href="http://compaq.com.br/sistemas-compativeis-com-windows-10-s.html" target="_blank">Global K</a> | <a href="http://www.onda.cn/SearchDetails.aspx?id=1654" target="_blank">Guangzhou</a> |
-| <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP</a> | <a href="http://consumer.huawei.com/cn/support/notice/detail/index.htm?id=1541" target="_blank">Huawei</a> | <a href="https://www.i-life.us/not-available/" target="_blank">I Life</a> |
-| <a href="http://www.inet-tek.com/en/product-qadetail-86.html" target="_blank">iNET</a> | <a href="https://www.intel.com/content/www/us/en/support/boards-and-kits/000025096.html" target="_blank">Intel</a> | <a href="http://irbis-digital.ru/support/podderzhka-windows-10-s/" target="_blank">LANIT Trading</a> |
-| <a href="https://support.lenovo.com/us/en/solutions/ht504589" target="_blank">Lenovo</a> | <a href="http://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html" target="_blank">LG</a> | <a href="https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361" target="_blank">MCJ</a> | 
-| <a href="http://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis</a> | <a href="https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s" target="_blank">Microsoft</a> | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI</a> | 
-| <a href="https://panasonic.net/cns/pc/Windows10S/" target="_blank">Panasonic</a> | <a href="http://www.bangho.com.ar/windows10s" target="_blank">PC Arts</a> | <a href="http://www.positivoinformatica.com.br/atualizacao-windows-10" target="_blank">Positivo SA</a> | 
-| <a href="http://www.br.vaio.com/atualizacao-windows-10/" target="_blank">Positivo da Bahia</a> | <a href="http://www.samsung.com/us/support/windows10s/" target="_blank">Samsung</a> | <a href="http://www.teclast.com/zt/aboutwin10s/" target="_blank">Teclast</a> | 
-| <a href="http://www.dospara.co.jp/support/share.php?contents=about_windows10s" target="_blank">Thirdwave</a> | <a href="http://www.tongfangpc.com/service/win10.aspx" target="_blank">Tongfang</a> | <a href="http://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en" target="_blank">Toshiba</a> | 
-| <a href="http://www.trekstor.de/windows-10-s-en.html" target="_blank">Trekstor</a> | <a href="http://www.trigem.co.kr/windows/win10S.html" target="_blank">Trigem</a> | <a href="http://us.vaio.com/support/knowledge-base/windows-10-s-compatibility-information/" target="_blank">Vaio</a> | 
-| <a href="https://www.wortmann.de/en-gb/content/+windows-10-s-supportinformation/windows-10-s-supportinformation.aspx" target="_blank">Wortmann</a> | <a href="http://www.yifangdigital.com/Customerservice/win10s.aspx" target="_blank">Yifang</a> |  | 
+| <a href="https://www.acer.com/ac/en/US/content/windows10s-compatible-list" target="_blank">Acer</a> | <a href="https://www.51cube.com/ch/win10s-help.php" target="_blank">Alldocube</a> | <a href="https://www.ibuypower.com/site/computer/windows-10-s" target="_blank">American Future Tech</a> | 
+| <a href="https://www.prestigio.com/support/compatibility-with-windows-10-s/" target="_blank">ASBISC</a> | <a href="https://www.asus.com/event/2017/win10S/" target="_blank">Asus</a> | <a href="https://www.atec.kr/contents/ms_info.html" target="_blank">Atec</a> | 
+| <a href="https://www.odys.de/web/web_lan_en_hmp_1_win10s_ja.html" target="_blank">Axdia</a> | <a href="https://www.casper.com.tr/window10sdestegi" target="_blank">Casper</a> | <a href="https://www.cyberpowerpc.com/page/Windows-10-S/" target="_blank">Cyberpower</a> | 
+| <a href="https://www.lucoms.com/v2/cs/cs_windows10.asp" target="_blank">Daewoo</a> | <a href="https://www.daten.com.br/suportes/windows10s/" target="_blank">Daten</a> | <a href="https://www.dell.com/support/article/us/en/19/sln307174/dell-computers-tested-for-windows-10-s?lang=en" target="_blank">Dell</a> | 
+| <a href="https://www.epson.jp/support/misc/windows10s.htm" target="_blank">Epson</a> | <a href="https://exo.com.ar/actualizaciones-de-windows-10" target="_blank">EXO</a> | <a href="https://www.fujitsu.com/au/products/computing/pc/microsoft/s-compatible/" target="_blank">Fujitsu</a> |
+| <a href="https://apac.getac.com/support/windows10s.html" target="_blank">Getac</a> | <a href="https://compaq.com.br/sistemas-compativeis-com-windows-10-s.html" target="_blank">Global K</a> | <a href="https://www.onda.cn/SearchDetails.aspx?id=1654" target="_blank">Guangzhou</a> |
+| <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP</a> | <a href="https://consumer.huawei.com/cn/support/notice/detail/index.htm?id=1541" target="_blank">Huawei</a> | <a href="https://www.i-life.us/not-available/" target="_blank">I Life</a> |
+| <a href="https://www.inet-tek.com/en/product-qadetail-86.html" target="_blank">iNET</a> | <a href="https://www.intel.com/content/www/us/en/support/boards-and-kits/000025096.html" target="_blank">Intel</a> | <a href="https://irbis-digital.ru/support/podderzhka-windows-10-s/" target="_blank">LANIT Trading</a> |
+| <a href="https://support.lenovo.com/us/en/solutions/ht504589" target="_blank">Lenovo</a> | <a href="https://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html" target="_blank">LG</a> | <a href="https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361" target="_blank">MCJ</a> | 
+| <a href="https://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis</a> | <a href="https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s" target="_blank">Microsoft</a> | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI</a> | 
+| <a href="https://panasonic.net/cns/pc/Windows10S/" target="_blank">Panasonic</a> | <a href="https://www.bangho.com.ar/windows10s" target="_blank">PC Arts</a> | <a href="https://www.positivoinformatica.com.br/atualizacao-windows-10" target="_blank">Positivo SA</a> | 
+| <a href="https://www.br.vaio.com/atualizacao-windows-10/" target="_blank">Positivo da Bahia</a> | <a href="https://www.samsung.com/us/support/windows10s/" target="_blank">Samsung</a> | <a href="https://www.teclast.com/zt/aboutwin10s/" target="_blank">Teclast</a> | 
+| <a href="https://www.dospara.co.jp/support/share.php?contents=about_windows10s" target="_blank">Thirdwave</a> | <a href="https://www.tongfangpc.com/service/win10.aspx" target="_blank">Tongfang</a> | <a href="https://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en" target="_blank">Toshiba</a> | 
+| <a href="https://www.trekstor.de/windows-10-s-en.html" target="_blank">Trekstor</a> | <a href="https://www.trigem.co.kr/windows/win10S.html" target="_blank">Trigem</a> | <a href="https://us.vaio.com/support/knowledge-base/windows-10-s-compatibility-information/" target="_blank">Vaio</a> | 
+| <a href="https://www.wortmann.de/en-gb/content/+windows-10-s-supportinformation/windows-10-s-supportinformation.aspx" target="_blank">Wortmann</a> | <a href="https://www.yifangdigital.com/Customerservice/win10s.aspx" target="_blank">Yifang</a> |  | 
 
 > [!NOTE]
 > If you don't see any device listed on the manufacturer's web site, check back again later as more devices get added in the future.
@@ -241,7 +242,7 @@ For help with activation issues, click on the appropriate link below for support
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying <strong><a href="https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies" data-raw-source="[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)">SetEduPolicies</a></strong> using the Set up School PCs app.</small><br/>
 
 </p>
 

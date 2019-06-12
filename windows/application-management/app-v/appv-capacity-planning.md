@@ -1,12 +1,16 @@
 ---
 title: App-V Capacity Planning (Windows 10)
 description: App-V Capacity Planning
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # App-V Capacity Planning
 
@@ -122,11 +126,11 @@ Example: Random delay for 500 clients with 120 requests per second is *4 × 500/
 
 Computers running the App-V client connect to the App-V publishing server to send a publishing refresh request and receive a response. Round trip response time is measured on the computer running the App-V client, while processor time is measured on the publishing server. For more information about App-V Publishing Server supported configurations, see [App-V supported configurations](appv-supported-configurations.md).
 
->[!IMPORTANT]
->The following list displays the main factors to consider when setting up the App-V publishing server:
-  * The number of clients connecting simultaneously to a single publishing server.
-  * The number of packages in each refresh.
-  * The available network bandwidth in your environment between the client and the App-V publishing server.
+> [!IMPORTANT]
+> The following list displays the main factors to consider when setting up the App-V publishing server:
+>   * The number of clients connecting simultaneously to a single publishing server.
+>   * The number of packages in each refresh.
+>   * The available network bandwidth in your environment between the client and the App-V publishing server.
 
 |Scenario|Summary|
 |---|---|
@@ -147,11 +151,11 @@ Computers running the App-V client connect to the App-V publishing server to sen
 
 Computers running the App-V client stream the virtual application package from the streaming server. Round trip response time is measured on the computer running the App-V client, and is the time taken to stream the entire package.
 
->[!IMPORTANT]
->The following list identifies the main factors to consider when setting up the App-V streaming server:
-  * The number of clients streaming application packages simultaneously from a single streaming server.
-  * The size of the package being streamed.
-  * The available network bandwidth in your environment between the client and the streaming server.
+> [!IMPORTANT]
+> The following list identifies the main factors to consider when setting up the App-V streaming server:
+>   * The number of clients streaming application packages simultaneously from a single streaming server.
+>   * The size of the package being streamed.
+>   * The available network bandwidth in your environment between the client and the streaming server.
 
 |Scenario|Summary|
 |---|---|
@@ -182,11 +186,11 @@ Discounting scaling and fault-tolerance requirements, the minimum number of serv
 
 Ignoring scaling requirements, the minimum number of servers that a fault-tolerant implementation needs to function is four. The management server and Microsoft SQL Server roles support placement in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
 
-Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatabilities could cause certain fault-tolerance options to stop working.
+Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatibilities could cause certain fault-tolerance options to stop working.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

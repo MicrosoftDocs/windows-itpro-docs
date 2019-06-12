@@ -1,12 +1,16 @@
 ---
 title: How to apply the deployment configuration file by using Windows PowerShell (Windows 10)
 description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # How to apply the deployment configuration file by using Windows PowerShell
 
@@ -16,13 +20,13 @@ When you add or set a package to a computer running the App-V client before it's
 
 ## Apply the deployment configuration file with Windows PowerShell
 
->[!NOTE]
->The following example cmdlet uses the following two file paths for the package and configuration files:
-    >
-    >* C:\\Packages\\Contoso\\MyApp.appv
-    >* C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
-    >
->If your package and configuration files use different file paths than the example, feel free to replace them as needed.
+> [!NOTE]
+> The following example cmdlet uses the following two file paths for the package and configuration files:
+> 
+> * C:\\Packages\\Contoso\\MyApp.appv
+> * C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
+> 
+> If your package and configuration files use different file paths than the example, feel free to replace them as needed.
 
 To specify a new default set of configurations for all users who will run the package on a specific computer, in a Windows PowerShell console, enter the following cmdlet:
 
@@ -37,9 +41,9 @@ Add-AppVClientPackage -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentCon
 >  Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
 >  ```
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -1,8 +1,11 @@
 ---
 title: Deploying Microsoft Office 2010 by Using App-V
 description: Deploying Microsoft Office 2010 by Using App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: ae0b0459-c0d6-4946-b62d-ff153f52d1fb
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -68,7 +71,7 @@ The following table shows the App-V versions, methods of Office package creation
 </tbody>
 </table>
 
- 
+ 
 
 ## Creating Office 2010 App-V 5.1 using the sequencer
 
@@ -180,7 +183,7 @@ The following table provides a full list of supported integration points for Off
 </tr>
 <tr class="even">
 <td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to <a href="https://go.microsoft.com/fwlink/p/?LinkId=331361" data-raw-source="[ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361)">ActiveX Control API Reference</a>.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -271,7 +274,7 @@ The following table provides a full list of supported integration points for Off
 </tbody>
 </table>
 
- 
+ 
 
 ## Additional resources
 
@@ -298,14 +301,14 @@ The following table provides a full list of supported integration points for Off
 
 [About App-V 5.1 Dynamic Configuration](about-app-v-51-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
- 
 
- 
+
+ 
+
+ 
 
 
 

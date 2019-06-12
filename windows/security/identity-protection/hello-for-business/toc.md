@@ -1,6 +1,14 @@
 ﻿# [Windows Hello for Business](hello-identity-verification.md)
 
+##[Password-less Strategy](passwordless-strategy.md)
+
 ## [Windows Hello for Business Overview](hello-overview.md)
+## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+## [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+
+## [Windows Hello for Business Features](hello-features.md)
+### [Multifactor Unlock](feature-multifactor-unlock.md)
+
 ## [How Windows Hello for Business works](hello-how-it-works.md)
 ### [Technical Deep Dive](hello-how-it-works.md#technical-deep-dive)
 #### [Technology and Terminology](hello-how-it-works-technology.md)
@@ -8,17 +16,12 @@
 #### [Provisioning](hello-how-it-works-provisioning.md)
 #### [Authentication](hello-how-it-works-authentication.md)
 
-## [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
-## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
-## [Windows Hello and password changes](hello-and-password-changes.md)
-## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-## [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
-## [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
-
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
+## [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
+
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
+
 ### [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
 #### [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-key-new-install.md)
@@ -53,10 +56,11 @@
 ##### [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md)
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
 
-## [Windows Hello for Business Features](hello-features.md)
-### [Multifactor Unlock](feature-multifactor-unlock.md)
+## [Windows Hello and password changes](hello-and-password-changes.md)
+## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 
 ## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
 ### [Windows Hello for Business Videos](hello-videos.md)
 
-##[Password-less Strategy](passwordless-strategy.md)
+## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+## [Event ID 300 - Windows Hello successfully created](hello-event-300.md)

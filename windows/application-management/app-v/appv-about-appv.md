@@ -1,12 +1,16 @@
 ---
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
 description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
-author: eross-msft
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier
 
@@ -47,8 +51,8 @@ The changes in App-V for Windows 10, version 1607 impact existing implementation
 * The App-V client is installed on user devices automatically with Windows 10, version 1607, and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the App-V client.
 * In previous releases of App-V, the application sequencer was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new application sequencer to create new virtualized applications, existing virtualized applications will continue to work. The App-V application sequencer is available from the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
- >[!NOTE]
- >If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release.
+ > [!NOTE]
+  >If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release.
 
 For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](../app-v/appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md) and [Migrating to App-V for Windows 10 from a previous version](../app-v/appv-migrating-to-appv-from-a-previous-version.md).
 
@@ -59,9 +63,9 @@ For more information about how to configure an existing App-V installation after
 
 App-V supports System Center 2016 and System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) to learn more about how to integrate your App-V environment with Configuration Manager.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

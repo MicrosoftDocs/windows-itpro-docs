@@ -2,12 +2,18 @@
 title: Monitor user and device claims during sign-in (Windows 10)
 description: This topic for the IT professional describes how to monitor user and device claims that are associated with a user’s security token when you are using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: 71796ea9-5fe4-4183-8475-805c3c1f319f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -23,7 +29,7 @@ Device claims are associated with the system that is used to access resources th
 Use the following procedures to monitor changes to user claims and device claims in the user’s sign-on token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+ 
 **To monitor user and device claims in user logon token**
 
 1.  Sign in to your domain controller by using domain administrator credentials.

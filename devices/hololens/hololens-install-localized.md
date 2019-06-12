@@ -4,18 +4,20 @@ description: Learn how to install the Chinese or Japanese versions of HoloLens
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Install localized versions of HoloLens
 
 In order to switch to the Chinese or Japanese version of HoloLens, you’ll need to download the build for the language on a PC and then install it on your HoloLens using the Windows Device Recovery Tool (WDRT). 
  
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Installing the Chinese or Japanese builds of HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. 
  
    
@@ -28,6 +30,7 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 8. Select **Install software** and follow the instructions to finish installing. 
 9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions. 
  
+When you’re done with setup, go to **Settings -> Update & Security -> Windows Insider Program** and check that you’re configured to receive the latest preview builds.  The Chinese/Japanese version of HoloLens will be kept up-to-date with the latest preview builds via the Windows Insider Program the same way the English version is. 
 
 ## Note for language support
 

@@ -1,14 +1,19 @@
 ---
 title: Phishing
+ms.reviewer: 
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
+ms.author: levinec
 author: levinec
-ms.date: 08/17/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
+search.appverid: met150
 ---
 
 # Phishing
@@ -80,6 +85,7 @@ Enterprises should educate and train their employees to be wary of any communica
 Here are several telltale signs of a phishing scam:
 
 * The links or URLs provided in emails are **not pointing to the correct location** or are attempting to have you access a third-party site that is not affiliated with the sender of the email. For example, in the image below the URL provided does not match the URL that you will be taken to.
+
     ![example of how exploit kits work](./images/URLhover.png)
 
 * There is a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
@@ -130,7 +136,7 @@ Send an email with the phishing scam to **The Anti-Phishing Working Group**: rep
 
 ## Where to find more information about phishing attacks
 
-For information on the latest Phishing attacks, techniques, and trends, you can read these entries on the [Windows Security blog](https://cloudblogs.microsoft.com/microsoftsecure/?product=windows,windows-defender-advanced-threat-protection):
+For information on the latest phishing attacks, techniques, and trends, you can read these entries on the [Microsoft Security blog](https://www.microsoft.com/security/blog/product/windows/):
 
 * [Phishers unleash simple but effective social engineering techniques using PDF attachments](https://cloudblogs.microsoft.com/microsoftsecure/2017/01/26/phishers-unleash-simple-but-effective-social-engineering-techniques-using-pdf-attachments/?source=mmpc)
 

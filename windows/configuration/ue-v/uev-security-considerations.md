@@ -1,12 +1,16 @@
 ---
 title: Security Considerations for UE-V
 description: Security Considerations for UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -230,10 +234,10 @@ If you plan to share settings location templates with anyone outside your organi
 
 To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
 
-## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

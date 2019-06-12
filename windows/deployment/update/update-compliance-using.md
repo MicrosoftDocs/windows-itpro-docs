@@ -1,15 +1,18 @@
 ---
 title: Using Update Compliance (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Update Compliance.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
-ms.date: 10/04/2018
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Use Update Compliance
@@ -50,7 +53,7 @@ Update Compliance’s overview blade summarizes all the data Update Compliance p
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
 * AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Windows Defender Antivirus. 
 
-The blade also provides the time at which your Update Compliance workspace was [refreshed](#data-latency). 
+The blade also provides the time at which your Update Compliance workspace was [refreshed](#update-compliance-data-latency). 
 
 The following is a breakdown of the different sections available in Update Compliance:
 * [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It provides a summary of the different issues devices are facing relative to Windows 10 updates.
@@ -64,6 +67,7 @@ The following is a breakdown of the different sections available in Update Compl
 Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear. The  process that follows is as follows:
 
 Update Compliance is refreshed every 12 hours. This means that every 12 hours all data that has been gathered over the last 12-hour interval is pushed to Log Analytics. However, the rate that each data type is sent and how long it takes to be ready for Update Compliance varies, roughly outlined below.
+
 | Data Type | Refresh Rate | Data Latency |
 |--|--|--|
 |WaaSUpdateStatus | Once per day |4 hours |
@@ -78,7 +82,7 @@ This means you should generally expect to see new data every 24-36 hours, except
 
 ## Using Log Analytics
 
-Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within OMS, can deeply enhance your experience and complement Update Compliance. 
+Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within Azure Portal, can deeply enhance your experience and complement Update Compliance. 
 
 See below for a few topics related to Log Analytics: 
 * Learn how to effectively execute custom Log Searches by referring to Microsoft Azure’s excellent documentation on [querying data in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches).

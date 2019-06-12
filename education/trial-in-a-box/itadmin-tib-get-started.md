@@ -3,16 +3,17 @@ title: IT Admin Trial in a Box Guide
 description: Try out Microsoft 365 Education to implement a full cloud infrastructure for your school, manage devices and apps, and configure and deploy policies to your Windows 10 devices.
 keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 03/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # IT Admin Trial in a Box Guide
@@ -31,7 +32,7 @@ ms.date: 03/18/2018
 |  |  |
 
 </br>
-To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
+To get the most out of Microsoft Education, we&#39;ve pre-configured your tenant for you so you don&#39;t need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We&#39;ve also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
 If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Trial in a Box Support](support-options.md).
 
@@ -96,26 +97,26 @@ If you've previously used Set up School PCs to provision student devices, you ca
 
     ![Configure student PC settings](images/suspc_configure_pcsettings_selected.png)
 
-  - **Remove apps pre-installed by the device manufacturer** - If you select this option, this will reset the machine and the provisioning process will take longer (about 30 minutes).
-  - **Allow local storage (not recommended for shared devices)** lets students save files to the **Desktop** and **Documents** folder on the student PC.
-  - **Optimize device for a single student, instead of a shared cart or lab** optimizes the device for use by a single student (1:1). 
-    - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
-    - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data or if the student doesn't use the PC over a prolonged period.
-  - **Let guests sign-in to these PCs** allows guests to use student PCs without a school account. If you select this option, a **Guest** account button will be added in the PC's sign-in screen to allow anyone to use the PC.
-  - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
-  - **Lock screen background** shows the default backgroudn used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
+   - **Remove apps pre-installed by the device manufacturer** - If you select this option, this will reset the machine and the provisioning process will take longer (about 30 minutes).
+   - **Allow local storage (not recommended for shared devices)** lets students save files to the **Desktop** and **Documents** folder on the student PC.
+   - **Optimize device for a single student, instead of a shared cart or lab** optimizes the device for use by a single student (1:1). 
+     - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
+     - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data or if the student doesn't use the PC over a prolonged period.
+   - **Let guests sign-in to these PCs** allows guests to use student PCs without a school account. If you select this option, a **Guest** account button will be added in the PC's sign-in screen to allow anyone to use the PC.
+   - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
+   - **Lock screen background** shows the default backgroudn used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
 
 7. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
 
     ![Configure the Take a Test app](images/suspc_takeatest.png)
 
-  1. Specify if you want to create a Take a Test button on the students' sign-in screens.
-  2. Select **Advanced settings** to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
+   1. Specify if you want to create a Take a Test button on the students' sign-in screens.
+   2. Select **Advanced settings** to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
 
-    > [!NOTE]
-    > The Take a Test app doesn't provide monitoring capabilities, but it allows tools like AssistX ClassPolicy to see what is going on in the app.
+      > [!NOTE]
+      > The Take a Test app doesn't provide monitoring capabilities, but it allows tools like AssistX ClassPolicy to see what is going on in the app.
 
-  3. Enter the assessment URL. 
+   3. Enter the assessment URL. 
 
 8. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. 
 
@@ -138,7 +139,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
     The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
     
     > [!NOTE]
-    > If you selected **Office 365 for Windows 10 S (Education Preview)**, this step will take about 30-45 minutes. You can jump ahead to task 3, [Express configure Intune for Education to manage devices, users, and policies](#task3), and then finish the rest of task 2 afterwards.
+    > If you selected **Office 365 for Windows 10 S (Education Preview)**, this step will take about 30-45 minutes. You can jump ahead to task 3, [Express configure Intune for Education to manage devices, users, and policies](#it-task3), and then finish the rest of task 2 afterwards.
 
 12. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
 13. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).

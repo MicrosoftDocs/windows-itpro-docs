@@ -1,8 +1,11 @@
 ---
 title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a8affa46-f1f7-416c-8125-9595cfbfdbc7
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -64,7 +67,7 @@ There is no Group Policy setting available to manage this registry key, so you h
 </tbody>
 </table>
 
- 
+ 
 
 ### Steps to create the subkey
 
@@ -109,7 +112,7 @@ There is no Group Policy setting available to manage this registry key, so you h
     </tbody>
     </table>
 
-     
+     
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 
@@ -138,7 +141,7 @@ Use the following example syntax, and substitute the name of your package for **
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\\**<em>, where **executable</em>* is the name of the application, for example: Get-AppvClientPackage \*Word\*.
 
 ## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
 
@@ -168,23 +171,23 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\\**<em>, where **executable</em>* is the name of the application, for example: Get-AppvClientPackage \*Word\*.
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 
 
 [Technical Reference for App-V 5.0](technical-reference-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

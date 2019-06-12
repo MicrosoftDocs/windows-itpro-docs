@@ -4,10 +4,13 @@ description: Use BranchCache to optimize network bandwidth during update deploym
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: greglin
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
 ---
 
 # Configure BranchCache for Windows 10 updates

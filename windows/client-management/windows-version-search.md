@@ -5,9 +5,12 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, Semi-Annual Channel, SAC, Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: kaushika-msft
-ms.author: MikeBlodge
+author: dansimp
+ms.author: dansimp
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: troubleshooting
 ---
 
 # What version of Windows am I running?
@@ -15,7 +18,7 @@ ms.date: 04/30/2018
 To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them. 
 
 ## System Properties
-Click **Start** > **Settings** > **Settings** > click **About** from the bottom of the left-hand menu
+Click **Start** > **Settings** > **System** > click **About** from the bottom of the left-hand menu
 
 You'll now see **Edition**, **Version**, and **OS Build** information. Something like this:
 

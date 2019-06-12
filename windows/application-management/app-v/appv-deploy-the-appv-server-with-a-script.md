@@ -1,12 +1,16 @@
-﻿---
+---
 title: How to Deploy the App-V Server Using a Script (Windows 10)
 description: How to Deploy the App-V  Server Using a Script
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to deploy the App-V server using a script
 
@@ -413,12 +417,11 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 ### Example for using a custom instance of Microsoft SQL Server for installing the Reporting database on a different computer than the Reporting server
 
 ```SQL
-Using a custom instance of Microsoft SQL Server example:<br>
-/appv_server_setup.exe /QUIET<br>
-/DB_PREDEPLOY_REPORTING<br>
-/REPORTING_DB_CUSTOM_SQLINSTANCE="SqlInstanceName"<br>
-/REPORTING_DB_NAME="AppVReporting"<br>
-/REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT="Domain\MachineAccount"<br>
+/appv_server_setup.exe /QUIET
+/DB_PREDEPLOY_REPORTING
+/REPORTING_DB_CUSTOM_SQLINSTANCE="SqlInstanceName"
+/REPORTING_DB_NAME="AppVReporting"
+/REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT="Domain\MachineAccount"
 /REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT="Domain\InstallAdminAccount"
 ```
 
@@ -514,9 +517,9 @@ Using a custom instance of Microsoft SQL Server example:<br>
 | */EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE* | Specifies the name of the custom SQL instance that will be used. For example, ```/EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE="AppVManagement"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
 | */EXISTING_MANAGEMENT_DB_NAME* | Specifies the name of the existing management database that should be used. For example, ```/EXISTING_MANAGEMENT_DB_NAME="AppVMgmtDB"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

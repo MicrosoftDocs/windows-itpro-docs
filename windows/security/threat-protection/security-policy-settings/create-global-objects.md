@@ -2,12 +2,18 @@
 title: Create global objects (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create global objects security policy setting.
 ms.assetid: 9cb6247b-44fc-4815-86f2-cb59b6f0221e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -53,7 +59,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
 | Member Server Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
 | Client Computer Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to take effect.
@@ -84,16 +90,6 @@ By default, members of the **Administrators** group, the System account, and ser
 ### Countermeasure
 
 When non-administrators need to access a server using Remote Desktop, add the users to the **Remote Desktop Users** group rather than assining them this user right.
-
-### Vulnerability
-
->**Caution:**  A user account that is given this user right has complete control over the system, and it can lead to the system being compromised. We highly recommend that you do not assign this right to any user accounts.
- 
-Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users log on to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change is not reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any currently logged on account. They could escalate their privileges or create a denial-of-service (DoS) condition.
-
-### Countermeasure
-
-Do not assign the **Create a token object** user right to any users. Processes that require this user right should use the Local System account, which already includes it, instead of a separate user account with this user right assigned.
 
 ### Potential impact
 

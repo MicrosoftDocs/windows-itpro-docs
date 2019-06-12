@@ -1,14 +1,19 @@
 ---
-title: Connection endpoints for Windows 10, version 1803
+title: Connection endpoints for Windows 10, version 1809
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
-author: danihalfin
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Manage connection endpoints for Windows 10, version 1809
 
@@ -34,7 +39,8 @@ We used the following methodology to derive these network endpoints:
 2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
 3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4.	Compile reports on traffic going to public IP addresses.
-5. The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
+5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
+6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -79,7 +85,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 |----------------|----------|------------|
 |  |    | star-mini.c10r.facebook.com |
 
-The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. 
+The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office. 
 To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
 Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
@@ -303,7 +309,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Office
 
-The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office Online. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -317,7 +323,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 |   | HTTPS | nexusrules.officeapps.live.com |
 |   | HTTPS | officeclient.microsoft.com |
 
-The following endpoint is used to connect to the Office 365 portal's shared infrastructure, including Office Online. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoint is used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -435,53 +441,21 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | svchost  | HTTPS   | *.prod.do.dsp.mp.microsoft.com  |
 
-The following endpoints are used to download operating system patches and updates. 
+The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to download updates for the operating system.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | svchost | HTTP  | *.windowsupdate.com |
-|         | HTTP   | fg.download.windowsupdate.com.c.footprint.net |
-
-The following endpoint is used by the Highwinds Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |            | cds.d2s7q6s2.hwcdn.net |
-
-The following endpoints are used by the Verizon Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |  HTTP          | *wac.phicdn.net |
-|  |                | *wac.edgecastcdn.net |
-
-The following endpoint is used to download apps and Windows Insider Preview builds from the Microsoft Store. Time Limited URL (TLU) is a mechanism for protecting the content. For example, it prevents someone from copying the URL and then getting access to the app that the person has not acquired).
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the updating functionality on this device is essentially in a disabled state, resulting in user unable to get apps from the Store, get latest version of Windows, and so on.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | *.tlu.dl.delivery.mp.microsoft.com.c.footprint.net |
-
-The following endpoint is used to download apps from the Microsoft Store. It's used as part of calculating the right ranges for apps.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), users of the device will not able to get apps from the Microsoft Store.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | emdl.ws.microsoft.com  |
+| svchost | HTTP  | *.dl.delivery.mp.microsoft.com |
 
 The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| svchost | HTTPS   | fe2.update.microsoft.com |
-| svchost |    | fe3.delivery.mp.microsoft.com  |
-|       |      | fe3.delivery.dsp.mp.microsoft.com.nsatc.net |
-| svchost | HTTPS   | sls.update.microsoft.com |
-|   | HTTP | *.dl.delivery.mp.microsoft.com |
+| svchost | HTTPS   | *.update.microsoft.com |
+| svchost | HTTPS   | *.delivery.mp.microsoft.com  |
 
 The following endpoint is used for content regulation.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
@@ -490,13 +464,6 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | svchost | HTTPS   | tsfe.trafficshaping.dsp.mp.microsoft.com |
 
-The following endpoints are used to download content.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), you will block any content from being downloaded.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |    | a122.dscd.akamai.net  |
-|  |    | a1621.g.akamai.net   |
 
 ## Microsoft forward link redirection service (FWLink)
 
@@ -510,13 +477,15 @@ If you disable this endpoint, Windows Defender won't be able to update its malwa
 
 ## Other Windows 10 editions
 
-To view endpoints for other versions of Windows 10 enterprise, see:
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
+To view endpoints for other versions of Windows 10 Enterprise, see:
 - [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
+- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
 - [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
+- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
+
 
 ## Related links
 

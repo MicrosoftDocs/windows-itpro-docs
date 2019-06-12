@@ -2,12 +2,18 @@
 title: Require Encryption When Accessing Sensitive Network Resources (Windows 10)
 description: Require Encryption When Accessing Sensitive Network Resources
 ms.assetid: da980d30-a68b-4e2a-ba63-94726355ce6f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

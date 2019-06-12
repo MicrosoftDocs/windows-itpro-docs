@@ -1,13 +1,16 @@
 ---
 title: Update Compliance - Need Attention! report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Update Compliance Need Attention! report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: Jaimeo
-ms.author: jaimeo
-ms.date: 10/04/2018
+author: greg-lindsay
+ms.author: greglin
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Needs attention!

@@ -1,8 +1,11 @@
 ---
 title: Prepare a UE-V 2.x Deployment
 description: Prepare a UE-V 2.x Deployment
-author: jamiejdt
+author: levinec
 ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -83,10 +86,10 @@ See [User Experience Virtualization (UE-V) settings templates for Microsoft Offi
 
 When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of settings location templates that capture settings values for these common Microsoft applications.
 
-**Tip**  
+**Tip**  
 **Microsoft Office 2007 Settings Synchronization** – In UE-V 2.1 and 2.1 SP1, a settings location template is no longer included by default for Office 2007 applications. However, you can still use Office 2007 templates from UE-V 2.0 or earlier and can get the templates from the [UE-V template gallery](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
- 
+
 
 <table>
 <colgroup>
@@ -102,7 +105,7 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Microsoft Office 2010 applications</p>
-<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>(<a href="https://www.microsoft.com/download/details.aspx?id=46367" data-raw-source="[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367)">Download a list of all settings synced</a>)</p></td>
 <td align="left"><p>Microsoft Word 2010</p>
 <p>Microsoft Excel 2010</p>
 <p>Microsoft Outlook 2010</p>
@@ -119,7 +122,7 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft Office 2013 applications</p>
-<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>(<a href="https://www.microsoft.com/download/details.aspx?id=46367" data-raw-source="[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367)">Download a list of all settings synced</a>)</p></td>
 <td align="left"><p>Microsoft Word 2013</p>
 <p>Microsoft Excel 2013</p>
 <p>Microsoft Outlook 2013</p>
@@ -136,22 +139,20 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 <p>Microsoft OneDrive for Business 2013</p>
 <p>The UE-V 2.1 and 2.1 SP1 Microsoft Office 2013 settings location templates include improved Outlook signature support. We’ve added synchronization of default signature settings for new, reply, and forwarded emails.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.</p>
+<strong>Note</strong><br/><p>An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Browser options: Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11</p></td>
 <td align="left"><p>Favorites, home page, tabs, and toolbars.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>UE-V does not roam settings for Internet Explorer cookies.</p>
+<strong>Note</strong><br/><p>UE-V does not roam settings for Internet Explorer cookies.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -161,21 +162,21 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 UE-V 2.1 SP1 does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous operating systems.
 
- 
+
 
 ### Desktop applications synchronized by default in UE-V 2.0
 
 When you install the UE-V 2.0 Agent, it registers a default group of settings location templates that capture settings values for these common Microsoft applications.
 
-**Tip**  
+**Tip**  
 **Microsoft Office 2013 Settings Synchronization** – In UE-V 2.0, a settings location template is not included by default for Office 2013 applications, but is available for download from the [UE-V template gallery](https://go.microsoft.com/fwlink/p/?LinkID=246589). [Synchronizing Office 2013 with UE-V 2.0](synchronizing-office-2013-with-ue-v-20-both-uevv2.md) provides details about the supported templates that synchronize Office 2013 settings.
 
- 
+
 
 <table>
 <colgroup>
@@ -191,7 +192,7 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 <tbody>
 <tr class="odd">
 <td align="left"><p>Microsoft Office 2007 applications</p>
-<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>(<a href="https://www.microsoft.com/download/details.aspx?id=46367" data-raw-source="[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367)">Download a list of all settings synced</a>)</p></td>
 <td align="left"><p>Microsoft Access 2007</p>
 <p>Microsoft Communicator 2007</p>
 <p>Microsoft Excel 2007</p>
@@ -207,7 +208,7 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft Office 2010 applications</p>
-<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>(<a href="https://www.microsoft.com/download/details.aspx?id=46367" data-raw-source="[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367)">Download a list of all settings synced</a>)</p></td>
 <td align="left"><p>Microsoft Word 2010</p>
 <p>Microsoft Excel 2010</p>
 <p>Microsoft Outlook 2010</p>
@@ -226,11 +227,10 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 <td align="left"><p>Browser options: Internet Explorer 8, Internet Explorer 9, and Internet Explorer 10</p></td>
 <td align="left"><p>Favorites, home page, tabs, and toolbars.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>UE-V does not roam settings for Internet Explorer cookies.</p>
+<strong>Note</strong><br/><p>UE-V does not roam settings for Internet Explorer cookies.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -240,7 +240,7 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="autosyncsettings2"></a>Windows settings synchronized by default
 
@@ -288,17 +288,17 @@ UE-V includes settings location templates that capture settings values for these
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 Starting in Windows 8, UE-V does not roam settings related to the Start screen, such as items and locations. In addition, UE-V does not support synchronization of pinned taskbar items or Windows file shortcuts.
 
- 
 
-**Important**  
+
+**Important**  
 UE-V 2.1 SP1 roams taskbar settings between Windows 10 devices. However, UE-V does not synchronize taskbar settings between Windows 10 devices and devices running previous operating systems.
 
- 
+
 
 <table>
 <colgroup>
@@ -359,7 +359,7 @@ UE-V 2.1 SP1 roams taskbar settings between Windows 10 devices. However, UE-V do
 </tbody>
 </table>
 
- 
+
 
 ### UE-V-support for Windows Apps
 
@@ -367,10 +367,10 @@ For Windows apps, the app developer specifies the settings that are synchronized
 
 To display a list of Windows apps that can synchronize settings on a computer with their package family name, enabled status, and enabled source, at a Windows PowerShell command prompt, enter: `Get-UevAppxPackage`
 
-**Note**  
+**Note**  
 As of Windows 8, UE-V does not synchronize Windows app settings if the domain user links their sign-in credentials to their Microsoft Account. This linking synchronizes settings to Microsoft OneDrive so UE-V, which disables synchronization of Windows app settings.
 
- 
+
 
 ### UE-V-support for Roaming Printers
 
@@ -384,10 +384,10 @@ Printer roaming in UE-V requires one of these scenarios:
 
 -   The printer driver can be obtained from Windows Update.
 
-**Note**  
+**Note**  
 The UE-V printer roaming feature does **not** roam printer settings or preferences, such as printing double-sided.
 
- 
+
 
 ### <a href="" id="determinesettingssync"></a>Determine whether you need settings synchronized for other applications
 
@@ -437,7 +437,7 @@ If you’ve decided that you need settings synchronized for other applications, 
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Does the application store settings in the Program Files directory or in the file directory that is located in the <strong>Users</strong>\[User name]\<strong>AppData</strong>\<strong>LocalLow</strong> directory? Application data that is stored in either of these locations usually should not synchronize with the user, because this data is specific to the computer or because the data is too large to synchronize.</p></td>
+<td align="left"><p>Does the application store settings in the Program Files directory or in the file directory that is located in the <strong>Users</strong>[User name]&lt;strong&gt;AppData</strong>&lt;strong&gt;LocalLow</strong> directory? Application data that is stored in either of these locations usually should not synchronize with the user, because this data is specific to the computer or because the data is too large to synchronize.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
@@ -450,7 +450,7 @@ If you’ve decided that you need settings synchronized for other applications, 
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="considerations"></a>Other Considerations when Preparing a UE-V Deployment
 
@@ -475,10 +475,10 @@ You should also consider these things when you are preparing to deploy UE-V:
 
 Many enterprise applications, including Microsoft Outlook and Lync, prompt users for their domain credentials at login. Users have the option of saving their credentials to disk to prevent having to enter them every time they open these applications. Enabling roaming credentials synchronization lets users save their credentials on one computer and avoid re-entering them on every computer they use in their environment. Users can synchronize some domain credentials with UE-V 2.1 and 2.1 SP1.
 
-**Important**  
+**Important**  
 Credentials synchronization is disabled by default. You must explicitly enable credentials synchronization during deployment to implement this feature.
 
- 
+
 
 UE-V 2.1 and 2.1 SP1 can synchronize enterprise credentials, but do not roam credentials intended only for use on the local computer.
 
@@ -486,10 +486,10 @@ Credentials are synchronous settings, meaning they are applied to your profile t
 
 Credentials synchronization is managed by its own settings location template, which is disabled by default. You can enable or disable this template through the same methods used for other templates. The template identifier for this feature is RoamingCredentialSettings.
 
-**Important**  
+**Important**  
 If you are using Active Directory Credential Roaming in your environment, we recommend that you don’t enable the UE-V credential roaming template.
 
- 
+
 
 Use one of these methods to enable credentials synchronization:
 
@@ -499,10 +499,10 @@ Use one of these methods to enable credentials synchronization:
 
 -   Group Policy
 
-**Note**  
+**Note**  
 Credentials are encrypted during synchronization.
 
- 
+
 
 [Company Settings Center](https://technet.microsoft.com/library/dn458903.aspx)**:** Check the Roaming Credential Settings check box under Windows Settings to enable credential synchronization. Uncheck the box to disable it. This check box only appears in Company Settings Center if your account is not configured to synchronize settings using a Microsoft Account.
 
@@ -642,7 +642,7 @@ Before you proceed, make sure your environment includes these requirements for r
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Ultimate, Enterprise, or Professional Edition</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -651,7 +651,7 @@ Before you proceed, make sure your environment includes these requirements for r
 <p>.NET Framework 4 or higher for UE-V 2.0.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2008 R2</p></td>
+<td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>Standard, Enterprise, Datacenter, or Web Server</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -670,11 +670,10 @@ Before you proceed, make sure your environment includes these requirements for r
 <tr class="even">
 <td align="left"><p>Windows 10, pre-1607 version</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Only UE-V 2.1 SP1 supports Windows 10, pre-1607 version</p>
+<strong>Note</strong><br/><p>Only UE-V 2.1 SP1 supports Windows 10, pre-1607 version</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Enterprise or Pro</p></td>
 <td align="left"><p>None</p></td>
@@ -701,7 +700,7 @@ Before you proceed, make sure your environment includes these requirements for r
 </tbody>
 </table>
 
- 
+
 
 Also…
 
@@ -709,16 +708,16 @@ Also…
 
 -   **Administrative Credentials** for any computer on which you’ll be installing
 
-**Note**  
+**Note**  
 
 -   Starting with WIndows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
 
 -   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](https://go.microsoft.com/fwlink/?LinkId=309609).
 
--   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
+-   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
 -   The “Delete Roaming Cache” policy for Mandatory profiles is not supported with UE-V and should not be used.
 
- 
+
 
 There are no special random access memory (RAM) requirements specific to UE-V.
 
@@ -744,30 +743,30 @@ Enable this configuration through one of these methods:
 
 -   During UE-V installation, at the command prompt or in a batch file, set the AgentSetup.exe parameter *SyncMethod = None*. [Deploying the UE-V 2.x Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) provides more information.
 
--   After the UE-V installation, use the Settings Management feature in System Center 2012 Configuration Manager or the MDOP ADMX templates to push the *SyncMethod = None* configuration.
+-   After the UE-V installation, use the Settings Management feature in System Center 2012 Configuration Manager or the MDOP ADMX templates to push the *SyncMethod = None* configuration.
 
 -   Use Windows PowerShell or Windows Management Instrumentation (WMI) to set the *SyncMethod = None* configuration.
 
-    **Note**  
+    **Note**  
     These last two methods do not work for pooled virtual desktop infrastructure (VDI) environments.
 
-     
+
 
 You must restart the computer before the settings start to synchronize.
 
-**Note**  
+**Note**  
 If you set *SyncMethod = None*, any settings changes are saved directly to the server. If the network connection to the settings storage path is not found, then the settings changes are cached on the device and are synchronized the next time that the sync provider runs. If the settings storage path is not found and the user profile is removed from a pooled VDI environment on logoff, settings changes are lost and the user must reapply the change when the computer is reconnected to the settings storage path.
 
- 
+
 
 **Synchronization for external sync engines:** The *SyncMethod=External* parameter specifies that if UE-V settings are written to a local folder on the user computer, then any external sync engine (such as OneDrive for Business, Work Folders, Sharepoint, or Dropbox) can be used to apply these settings to the different computers that users access.
 
 **Support for shared VDI sessions:** UE-V 2.1 and 2.1 SP1 provide support for VDI sessions that are shared among end users. You can register and configure a special VDI template, which ensures that UE-V keeps all of its functionality intact for non-persistent VDI sessions.
 
-**Note**  
+**Note**  
 If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as [back-up/restore and last known good (LKG)](https://technet.microsoft.com/library/dn878331.aspx).
 
- 
+
 
 The VDI template is provided with UE-V 2.1 and 2.1 SP1 and is typically available here after installation: C:\\Program Files\\Microsoft User Experience Virtualization\\Templates\\VdiState.xml
 
@@ -775,7 +774,7 @@ The VDI template is provided with UE-V 2.1 and 2.1 SP1 and is typically availabl
 
 Install the UE-V Generator on the computer that is used to create custom settings location templates. This computer should be able to run the applications whose settings are synchronized. You must be a member of the Administrators group on the computer that runs the UE-V Generator software.
 
-The UE-V Generator must be installed on a computer that uses an NTFS file system. The UE-V Generator software requires .NET Framework 4. For more information, see [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md).
+The UE-V Generator must be installed on a computer that uses an NTFS file system. The UE-V Generator software requires .NET Framework 4. For more information, see [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md).
 
 ## Other resources for this product
 
@@ -790,14 +789,14 @@ The UE-V Generator must be installed on a computer that uses an NTFS file system
 
 -   [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
 
- 
 
- 
+
+
+
+
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: Deploy UE-V 2.x for Custom Applications
 description: Deploy UE-V 2.x for Custom Applications
-author: jamiejdt
+author: levinec
 ms.assetid: f7cb089f-d764-4a93-82b6-926fe0385a23
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -43,7 +46,7 @@ Once you have read through the planning material in [Prepare a UE-V 2.x Deployme
     **Note**  
     Templates that are deployed by using ESD or Group Policy must be registered with UE-V Windows Management Instrumentation (WMI) or Windows PowerShell.
 
-     
+     
 
 ## Prepare to Deploy UE-V 2.x for Custom Applications
 
@@ -65,7 +68,7 @@ The UE-V Generator monitors an application to discover and capture the locations
 **Note**  
 UE-V settings location templates cannot be created from virtualized applications or Terminal Services applications. However, settings that are synchronized by using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and Terminal Services applications, open a version of the Windows Installer (.msi) package of the application by using the UE-V Generator. For more information about synchronizing settings for virtual applications, see [Using UE-V 2.x with Application Virtualization Applications](using-ue-v-2x-with-application-virtualization-applications-both-uevv2.md).
 
- 
+ 
 
 **Excluded Locations:** The discovery process excludes locations that commonly store application software files that do not synchronize settings well between user computers or computing environments. By default, these are excluded:
 
@@ -95,7 +98,7 @@ When you use Group Policy to configure the settings template catalog path, you c
 **Note**  
 If you disable this policy setting after it has been enabled, the UE-V Agent does not restore the default Microsoft templates.
 
- 
+ 
 
 If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, and the UE-V Agent is not configured to replace the default Microsoft templates, the Microsoft templates are ignored.
 
@@ -104,7 +107,7 @@ You can also replace the default templates by using the UE-V Windows PowerShell 
 **Note**  
 Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the agent, but neither are they automatically deleted.
 
- 
+ 
 
 ## <a href="" id="uevgen"></a>Install the UEV 2.x Generator
 
@@ -128,7 +131,7 @@ Install the Microsoft User Experience Virtualization (UE-V) 2.0 Generator on a c
     **Note**  
     A prompt for **User Account Control** appears before the application is installed. Permission is required to install the UE-V Generator.
 
-     
+     
 
 7.  Click **Finish** to close the wizard after the installation is finished. You must restart your computer before you can run the UE-V Generator.
 
@@ -137,7 +140,7 @@ Install the Microsoft User Experience Virtualization (UE-V) 2.0 Generator on a c
     **Note**  
     The UE-V 2 Generator can only be used to create templates for UE-V 2 Agents. In a mixed deployment of UE-V 1.0 Agents and UE-V 2 Agents, you should continue to use the UE-V 1.0 Generator until you have upgraded all UE-V Agents.
 
-     
+     
 
 ## <a href="" id="deploycatalogue"></a>Deploy a Settings Template Catalog
 
@@ -181,7 +184,7 @@ You can configure the settings template catalog path by using the installation c
     </tbody>
     </table>
 
-     
+     
 
 3.  Set the following NTFS file system permissions for the settings template catalog folder.
 
@@ -222,7 +225,7 @@ You can configure the settings template catalog path by using the installation c
     </tbody>
     </table>
 
-     
+     
 
 4.  Click **OK** to close the dialog boxes.
 
@@ -244,7 +247,7 @@ Use the UE-V Generator to create settings location templates for line-of-busines
     **Note**  
     Before the application is started, the system displays a prompt for **User Account Control**. Permission is required to monitor the registry and file locations that the application uses to store settings.
 
-     
+     
 
 4.  After the application starts, close the application. The UE-V Generator records the locations where the application stores its settings.
 
@@ -310,19 +313,19 @@ Templates that are deployed by using an ESD system or Group Policy Objects must 
     **Note**  
     Templates on computers are updated daily. The update is based on changes to the settings template catalog.
 
-     
+     
 
 3.  To manually update templates on a computer that runs the UE-V Agent, open an elevated command prompt, and browse to **%Program Files%\\Microsoft User Experience Virtualization \\ Agent \\ &lt;x86 or x64 &gt;**, and then run **ApplySettingsTemplateCatalog.exe**.
 
     **Note**  
     This program runs automatically during computer startup and daily at 3:30 A. M. to gather any new templates that were recently added to the catalog.
 
-     
-
-## Got a suggestion for UE-V?
+     
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
+
 
 ## Related topics
 
@@ -331,9 +334,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Deploy Required Features for UE-V 2.x](deploy-required-features-for-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

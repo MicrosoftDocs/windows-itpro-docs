@@ -1,8 +1,11 @@
 ---
 title: Planning for Using App-V with Office
 description: Planning for Using App-V with Office
-author: jamiejdt
+author: msfttracyp
 ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,14 +35,14 @@ You can use the App-V 5.1 Sequencer to create plug-in packages for Language Pack
 >**Note**  
 Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
 
- 
+ 
 
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
 
 See [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click) for a list of supported Office products.
 >**Note**&nbsp;&nbsp;You must use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. You cannot use the App-V Sequencer.
 
- 
+ 
 
 ## <a href="" id="bkmk-plan-coexisting"></a>Planning for using App-V with coexisting versions of Office
 
@@ -66,16 +69,16 @@ Before implementing Office coexistence, review the following Office documentatio
 <tbody>
 <tr class="odd">
 <td align="left"><p>Office 2013</p></td>
-<td align="left"><p>[Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office](https://support.microsoft.com/kb/2784668)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2784668" data-raw-source="[Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office](https://support.microsoft.com/kb/2784668)">Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Office 2010</p></td>
-<td align="left"><p>[Information about how to use Office 2010 suites and programs on a computer that is running another version of Office](https://support.microsoft.com/kb/2121447)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2121447" data-raw-source="[Information about how to use Office 2010 suites and programs on a computer that is running another version of Office](https://support.microsoft.com/kb/2121447)">Information about how to use Office 2010 suites and programs on a computer that is running another version of Office</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The Office documentation provides extensive guidance on coexistence for Windows Installer-based (MSi) and Click-to-Run installations of Office. This App-V topic on coexistence supplements the Office guidance with information that is more specific to App-V deployments.
 
@@ -86,7 +89,7 @@ The following tables summarize the supported coexistence scenarios. They are org
 >**Note**  
 Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
 
- 
+ 
 
 ### Windows integrations & Office coexistence
 
@@ -119,7 +122,7 @@ The Windows Installer-based and Click-to-Run Office installation methods integra
 </tbody>
 </table>
 
- 
+ 
 
 Microsoft recommends that you deploy Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
 
@@ -230,7 +233,7 @@ The Office 2013 App-V package supports the following integration points with the
 </tr>
 <tr class="even">
 <td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to <a href="https://go.microsoft.com/fwlink/p/?LinkId=331361" data-raw-source="[ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361)">ActiveX Control API Reference</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>   Groove.SiteClient</p></td>
@@ -315,16 +318,16 @@ The Office 2013 App-V package supports the following integration points with the
 </tbody>
 </table>
 
- 
-
-## Got a suggestion for App-V?
+ 
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
- 
 
- 
+
+
+ 
+
+ 
 
 
 

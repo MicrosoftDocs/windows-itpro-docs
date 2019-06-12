@@ -1,16 +1,20 @@
 ---
 title: Windows 10 - Apps
+ms.reviewer: 
+manager: dansimp
 description: What are Windows, UWP, and Win32 apps
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/23/2018
+ms.topic: article
 ---
 # Understand the different apps included in Windows 10
+
+>Applies to: Windows 10
 
 The following types of apps run on Windows 10:
 - Windows apps - introduced in Windows 8, primarily installed from the Store app.
@@ -23,7 +27,7 @@ Digging into the Windows apps, there are two categories:
    - Installed: Installed as part of the OS.
 - System apps - Apps that are installed in the C:\Windows\* directory. These apps are integral to the OS.
 
-The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1607, 1703, and 1709, and indicate whether an app can be uninstalled through the UI.
+The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1709, 1803, and 1809 and indicate whether an app can be uninstalled through the UI.
 
 Some of the apps show up in multiple tables - that's because their status changed between versions. Make sure to check the version column for the version you are currently running.
 
@@ -37,6 +41,8 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 > ```
 > Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 > ```
+
+<br>
 
 | Package name                           | App name                                                                                                           | 1703 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
@@ -57,7 +63,7 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 | Microsoft.OneConnect                   | [Paid Wi-Fi & Cellular](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            | x    | x    | x    | x    | No                    |
 | Microsoft.People                       | [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe)                                     | x    | x    | x    | x    | No                    |
 | Microsoft.Print3D                      | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |      | x    | x    | x    | No                    |
-| Microsoft.SkreenSketch                 | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |      |      | x    | No                    |
+| Microsoft.ScreenSketch                 | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |      |      | x    | No                    |
 | Microsoft.SkypeApp                     | [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                                              | x    | x    | x    | x    | No                    |
 | Microsoft.StorePurchaseApp             | [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)                         | x    | x    | x    | x    | No                    |
 | Microsoft.VP9VideoExtensions           |                                                                                                                    |      |      |      | x    | No                    |
@@ -83,14 +89,13 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 | Microsoft.ZuneMusic                    | [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe)                                      | x    | x    | x    | x    | No                    |
 | Microsoft.ZuneVideo                    | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       | x    | x    | x    | x    | No                    |
 
----
+
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
----
 
 ## System apps
 
-System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1703, 1709, and 1803.
+System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1709, 1803, and 1809.
 
 > [!TIP]
 > You can list all system apps with this PowerShell command:
@@ -98,57 +103,49 @@ System apps are integral to the operating system. Here are the typical system ap
 > Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
 > ```
 
-| Name                             | Package Name                                | 1703  | 1709 | 1803 | Uninstall through UI? |
+<br>
+
+| Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
-| File Picker                      | 1527c705-839a-4832-9118-54d4Bd6a0c89        |       |      | x    | No                    |
-| File Explorer                    | c5e2524a-ea46-4f67-841f-6a9465d9d515        |       |      | x    | No                    |
-| App Resolver UX                  | E2A4F912-2574-4A75-9BB0-0D023378592B        |       |      | x    | No                    |
-| Add Suggested Folders To Library | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE        |       |      | x    | No                    |
-|                                  | InputApp                                    |       | x    | x    | No                    |
-| Cortana UI                       | CortanaListenUIApp                          | x     |      |      | No                    |
-|                                  | Desktop Learning                            | x     |      |      | No                    |
-|                                  | DesktopView                                 | x     |      |      | No                    |
-|                                  | EnvironmentsApp                             | x     |      |      | No                    |
-| Mixed Reality +                  | HoloCamera                                  | x     |      |      | No                    |
-| Mixed Reality +                  | HoloItemPlayerApp                           | x     |      |      | No                    |
-| Mixed Reality +                  | HoloShell                                   | x     |      |      | No                    |
-|                                  | Microsoft.AAD.Broker.Plugin                 | x     | x    | x    | No                    |
-|                                  | Microsoft.AccountsControl                   | x     | x    | x    | No                    |
-|                                  | Microsoft.AsyncTextService                  |       |      | x    | No                    |
+| File Picker                      | 1527c705-839a-4832-9118-54d4Bd6a0c89        |       | x    | x    | No                    |
+| File Explorer                    | c5e2524a-ea46-4f67-841f-6a9465d9d515        |       | x    | x    | No                    |
+| App Resolver UX                  | E2A4F912-2574-4A75-9BB0-0D023378592B        |       | x    | x    | No                    |
+| Add Suggested Folders To Library | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE        |       | x    | x    | No                    |
+|                                  | InputApp                                    | x     | x    | x    | No                    |
+| Microsoft.AAD.Broker.Plugin      | Microsoft.AAD.Broker.Plugin                 | x     | x    | x    | No                    |
+| Microsoft.AccountsControl        | Microsoft.AccountsControl                   | x     | x    | x    | No                    |
+| Microsoft.AsyncTextService       | Microsoft.AsyncTextService                  |       | x    | x    | No                    |
 | Hello setup UI                   | Microsoft.BioEnrollment                     | x     | x    | x    | No                    |
 |                                  | Microsoft.CredDialogHost                    | x     | x    | x    | No                    |
-|                                  | Microsoft.ECApp                             |       | x    | x    | No                    |
+|                                  | Microsoft.ECApp                             | x     | x    | x    | No                    |
 |                                  | Microsoft.LockApp                           | x     | x    | x    | No                    |
 | Microsoft Edge                   | Microsoft.MicrosoftEdge                     | x     | x    | x    | No                    |
-|                                  | Microsoft.MicrosoftEdgeDevToolsClient       |       |      | x    | No                    |
-|                                  | Microsoft.PPIProjection                     | x     | x    |      | No                    |
-|                                  | Microsoft.Win32WebViewHost                  |       |      | x    | No                    |
+|                                  | Microsoft.MicrosoftEdgeDevToolsClient       |       | x    | x    | No                    |
+|                                  | Microsoft.PPIProjection                     | x     | x    | x     | No                    |
+|                                  | Microsoft.Win32WebViewHost                  |       | x    | x    | No                    |
 |                                  | Microsoft.Windows.Apprep.ChxApp             | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.AssignedAccessLockApp     | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.CapturePicker             |       |      | x    | No                    |
+|                                  | Microsoft.Windows.CapturePicker             |       | x    | x    | No                    |
 |                                  | Microsoft.Windows.CloudExperienceHost       | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.ContentDeliveryManager    | x     | x    | x    | No                    |
 | Cortana                          | Microsoft.Windows.Cortana                   | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.Holographic.FirstRun      | x     | x    |      | No                    |
-|                                  | Microsoft.Windows.ModalSharePickerHost      | x     |      |      | No                    |
 |                                  | Microsoft.Windows.OOBENetworkCaptivePort    | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.OOBENetworkConnectionFlow | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.ParentalControls          | x     | x    | x    | No                    |
-| People Hub                       | Microsoft.Windows.PeopleExperienceHost      |       | x    | x    | No                    |
-|                                  | Microsoft.Windows.PinningConfirmationDialog |       | x    | x    | No                    |
+| People Hub                       | Microsoft.Windows.PeopleExperienceHost      | x     | x    | x    | No                    |
+|                                  | Microsoft.Windows.PinningConfirmationDialog | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.SecHealthUI               | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.SecondaryTileExperience   | x     | x    |      | No                    |
+|                                  | Microsoft.Windows.SecondaryTileExperience   | x     |      |      | No                    |
 |                                  | Microsoft.Windows.SecureAssessmentBrowser   | x     | x    | x    | No                    |
 | Start                            | Microsoft.Windows.ShellExperienceHost       | x     | x    | x    | No                    |
-| Windows Feedback                 | Microsoft.WindowsFeedback                   | *     | *    |      | No                    |
+| Windows Feedback                 | Microsoft.WindowsFeedback                   | *     |      |      | No                    |
 |                                  | Microsoft.XboxGameCallableUI                | x     | x    | x    | No                    |
-|                                  | Windows.CBSPreview                          |       |      | x    | No                    |
-| Contact Support*                 | Windows.ContactSupport                      | x     | *    |      | Via Settings App      |
+|                                  | Windows.CBSPreview                          |       | x    | x    | No                    |
+| Contact Support*                 | Windows.ContactSupport                      | *     |      |      | Via Settings App      |
 | Settings                         | Windows.immersivecontrolpanel               | x     | x    | x    | No                    |
-| Connect                          | Windows.MiracastView                        | x     |      |      | No                    |
-| Print 3D                         | Windows.Print3D                             |       | x    |      | Yes                   |
+| Print 3D                         | Windows.Print3D                             |       | x    | x    | Yes                   |
 | Print UI                         | Windows.PrintDialog                         | x     | x    | x    | No                    |
-| Purchase UI                      | Windows.PurchaseDialog                      |       |      |      | No                    |
 
 
 > [!NOTE]
@@ -156,36 +153,36 @@ System apps are integral to the operating system. Here are the typical system ap
 
 ## Installed Windows apps
 
-Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
+Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
 
-| Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
-|--------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
-| Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
-| PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
-| Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
-| Eclipse Manager    | 46928bounde.EclipseManager               | x    | x    | x    | Yes                  |
-| Pandora            | PandoraMediaInc.29680B314EFC2            | x    | x    | x    | Yes                  |
-| Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
-| Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
-| Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
-| News               | Microsoft.BingNews                       | x    | x    | x    | Yes                  |
-| Flipboard          |                                          |      |      |      | Yes                  |
-|                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.3       | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.6       |      | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.7       |      |      | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.2.0       |      | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.1         |      | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.3         | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.4         | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.6         |      | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.7         |      |      | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.2.0         |      | x    | x    | Yes                  |
-|                    | Microsoft.Services.Store.Engagement      |      | x    | x    | Yes                  |
-|                    | Microsoft.VCLibs.120.00                  | x    | x    | x    | Yes                  |
-|                    | Microsoft.VCLibs.140.00                  | x    | x    | x    | Yes                  |
-|                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
-|                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
-|                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+
+|         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
+|-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
+|    Remote Desktop     |         Microsoft.RemoteDesktop          |  x   |      |  x   |          Yes          |
+|      Code Writer      |     ActiproSoftwareLLC.562882FEEB491     |  x   |  x   |      |          Yes          |
+|    Eclipse Manager    |        46928bounde.EclipseManager        |  x   |  x   |      |          Yes          |
+|        Pandora        |      PandoraMediaInc.29680B314EFC2       |  x   |  x   |      |          Yes          |
+|   Photoshop Express   | AdobeSystemIncorporated. AdobePhotoshop  |  x   |  x   |      |          Yes          |
+|       Duolingo        | D5EA27B7.Duolingo- LearnLanguagesforFree |  x   |  x   |      |          Yes          |
+|  Network Speed Test   |        Microsoft.NetworkSpeedTest        |  x   |  x   |  x   |          Yes          |
+|         News          |            Microsoft.BingNews            |  x   |  x   |  x   |          Yes          |
+|         Sway          |          Microsoft.Office.Sway           |  x   |  x   |  x   |          Yes          |
+| Microsoft.Advertising |        Microsoft.Advertising.Xaml        |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.2    |  x   |  x   |      |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.3    |  x   |  x   |      |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.6    |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.7    |      |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.2.0    |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.1     |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.3     |  x   |      |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.4     |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.6     |  x   |  x   |  x   |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.7     |  x   |  x   |  x   |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.2.0     |  x   |  x   |      |          Yes          |
+|                       |   Microsoft.Services.Store.Engagement    |  x   |  x   |      |          Yes          |
+|                       |         Microsoft.VCLibs.120.00          |  x   |  x   |      |          Yes          |
+|                       |         Microsoft.VCLibs.140.00          |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.VCLibs.120.00.Universal     |  x   |      |      |          Yes          |
+|                       |    Microsoft.VCLibs.140.00.UWPDesktop    |      |  x   |      |          Yes          |
+
 ---

@@ -1,8 +1,11 @@
 ---
 title: Generating MBAM 2.5 Stand-alone Reports
 description: Generating MBAM 2.5 Stand-alone Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: 0ec623ff-5155-4906-aef2-20cdc0f84667
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -29,7 +32,7 @@ For descriptions of the Stand-alone reports, see [Understanding MBAM 2.5 Stand-a
 **Note**  
 To run the reports, you must be a member of the **MBAM Report Users** group, which you configure in Active Directory Domain Services. For more information, see [Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md).
 
- 
+ 
 
 <a href="" id="bkmk-openadmin"></a>**To open the Administration and Monitoring Website**
 
@@ -46,7 +49,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
     **Note**  
     Configure SQL Server Reporting Services (SSRS) to use Secure Sockets Layer (SSL) before configuring the Administration and Monitoring Website. If, for any reason, SSRS is not configured to use SSL, the URL for the Reports will be set to HTTP instead of to HTTPS when you configure the Administration and Monitoring Website. If you then go to the Administration and Monitoring Website and select a report, the following message displays: “Only Secure Content is Displayed.” To show the report, click **Show All Content**.
 
-     
+     
 
 <a href="" id="bkmk-enterprise"></a>**To generate an Enterprise Compliance Report**
 
@@ -102,7 +105,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
 
 [Understanding MBAM 2.5 Stand-alone Reports](understanding-mbam-25-stand-alone-reports.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

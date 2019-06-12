@@ -2,12 +2,18 @@
 title: Enforce password history (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Enforce password history security policy setting.
 ms.assetid: 8b2ab871-3e52-4dd1-9776-68bb1e935442
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -52,7 +58,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | 24 passwords remembered| 
 | Member server effective default settings | 24 passwords remembered| 
 | Effective GPO default settings on client computers | 24 passwords remembered| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -72,7 +78,7 @@ The longer a user uses the same password, the greater the chance that an attacke
 If you specify a low number for this policy setting, users can use the same small number of passwords repeatedly. If you do not also configure the [Minimum password age](minimum-password-age.md) policy setting, users might repeatedly change their passwords until they can reuse their original password.
 
 >**Note:**  After an account has been compromised, a simple password reset might not be enough to restrict a malicious user because the malicious user might have modified the user's environment so that the password is changed back to a known value automatically at a certain time. If an account has been compromised, it is best to delete the account and assign the user a new account after all affected systems have been restored to normal operations and verified that they are no longer compromised.
- 
+ 
 ### Countermeasure
 
 Configure the **Enforce password history** policy setting to 24 (the maximum setting) to help minimize the number of vulnerabilities that are caused by password reuse.

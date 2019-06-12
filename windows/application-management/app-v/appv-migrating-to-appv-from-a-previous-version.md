@@ -1,12 +1,15 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
 description: Migrating to App-V for Windows 10 from a previous version
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -52,7 +55,7 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </tbody>
 </table>
 
- 
+ 
 
 ### Example conversion statement
 
@@ -158,7 +161,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 </tbody>
 </table>
 
- 
+ 
 
 ## Converting packages created using a prior version of App-V
 
@@ -169,7 +172,7 @@ Use the package converter utility to upgrade virtual application packages create
 **Important**  
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
 
- 
+ 
 
 **What to know before you convert existing packages**
 
@@ -187,7 +190,7 @@ After you convert an existing package you should test the package prior to deplo
 <tbody>
 <tr class="odd">
 <td align="left"><p>Virtual packages using DSC are not linked after conversion.</p></td>
-<td align="left"><p>Link the packages using connection groups. See [Managing Connection Groups](appv-managing-connection-groups.md).</p></td>
+<td align="left"><p>Link the packages using connection groups. See <a href="appv-managing-connection-groups.md" data-raw-source="[Managing Connection Groups](appv-managing-connection-groups.md)">Managing Connection Groups</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Environment variable conflicts are detected during conversion.</p></td>
@@ -200,7 +203,7 @@ After you convert an existing package you should test the package prior to deplo
 </tbody>
 </table>
 
- 
+ 
 
 When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
@@ -230,27 +233,27 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 <tbody>
 <tr class="odd">
 <td align="left"><p>Review prerequisites.</p></td>
-<td align="left"><p>[App-V Server prerequisite software](appv-prerequisites.md#app-v-server-prerequisite-software).</p></td>
+<td align="left"><p><a href="appv-prerequisites.md#app-v-server-prerequisite-software" data-raw-source="[App-V Server prerequisite software](appv-prerequisites.md#app-v-server-prerequisite-software)">App-V Server prerequisite software</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enable the App-V client.</p></td>
-<td align="left"><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
+<td align="left"><p><a href="appv-enable-the-app-v-desktop-client.md" data-raw-source="[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)">Enable the App-V desktop client</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Install App-V Server.</p></td>
-<td align="left"><p>[How to Deploy the App-V Server](appv-deploy-the-appv-server.md).</p></td>
+<td align="left"><p><a href="appv-deploy-the-appv-server.md" data-raw-source="[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)">How to Deploy the App-V Server</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
-<td align="left"><p>See [Converting packages created using a prior version of App-V](#converting-packages-created-using-a-prior-version-of-app-v) earlier in this topic.</p></td>
+<td align="left"><p>See <a href="#converting-packages-created-using-a-prior-version-of-app-v" data-raw-source="[Converting packages created using a prior version of App-V](#converting-packages-created-using-a-prior-version-of-app-v)">Converting packages created using a prior version of App-V</a> earlier in this topic.</p></td>
 </tr>
 </tbody>
 </table>
 
-## Have a suggestion for App-V?
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for performing App-V migration tasks
 

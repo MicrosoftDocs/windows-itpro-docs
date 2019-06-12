@@ -2,12 +2,18 @@
 title: Advanced security audit policy settings (Windows 10)
 description: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 93b28b92-796f-4036-a53b-8b9e80f9f171
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: brianlic-msft
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -53,11 +59,13 @@ The security audit policy settings in this category can be used to monitor chang
 
 Detailed Tracking security policy settings and audit events can be used to monitor the activities of individual applications and users on that computer, and to understand how a computer is being used. This category includes the following subcategories:
 
--   [Audit DPAPI Activity](audit-dpapi-activity.md)
--   [Audit PNP activity](audit-pnp-activity.md)
--   [Audit Process Creation](audit-process-creation.md)
--   [Audit Process Termination](audit-process-termination.md)
--   [Audit RPC Events](audit-rpc-events.md)
+- [Audit DPAPI Activity](audit-dpapi-activity.md)
+- [Audit PNP activity](audit-pnp-activity.md)
+- [Audit Process Creation](audit-process-creation.md)
+- [Audit Process Termination](audit-process-termination.md)
+- [Audit RPC Events](audit-rpc-events.md)
+- [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
+  > **Note:**  For more information, see [Security Monitoring](https://blogs.technet.microsoft.com/nathangau/2018/01/25/security-monitoring-a-possible-new-way-to-detect-privilege-escalation/)
 
 ## DS Access
 
@@ -86,7 +94,7 @@ Logon/Logoff security policy settings and audit events allow you to track attemp
 
 ## Object Access
 
-Object Access policy settings and audit events allow you to track attempts to access specific objects or types of objects on a network or computer. To audit attempts to access a file, directory, registry key, or any other object, you must enable the appropriate object Aaccess auditing subcategory for success and/or failure events. For example, the file system subcategory needs to be enabled to audit file operations, and the Registry subcategory needs to be enabled to audit registry accesses.
+Object Access policy settings and audit events allow you to track attempts to access specific objects or types of objects on a network or computer. To audit attempts to access a file, directory, registry key, or any other object, you must enable the appropriate Object Access auditing subcategory for success and/or failure events. For example, the file system subcategory needs to be enabled to audit file operations, and the Registry subcategory needs to be enabled to audit registry accesses.
 
 Proving that these audit policies are in effect to an external auditor is more difficult. There is no easy way to verify that the proper SACLs are set on all inherited objects. To address this issue, see [Global Object Access Auditing](#global-object-access-auditing).
 
@@ -145,7 +153,7 @@ Resource SACLs are also useful for diagnostic scenarios. For example, setting th
 
 > **Note:**  If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object 
 Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
- 
+ 
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
 -   [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md)

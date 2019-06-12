@@ -1,16 +1,20 @@
 ---
 title: Configure Autopilot profiles
-description: How to configure Windows Autopilot deployment
+description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greg-lindsay
-ms.date: 10/02/2018
+ms.author: greglin
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Configure Autopilot profiles
 
@@ -18,7 +22,11 @@ ms.date: 10/02/2018
 
 -   Windows 10
 
-For each device that has been defined to the Windows Autopilot deployment service, a profile of settings needs to be applied to specify the exact behavior of that device when it is deployed. The following profile settings are available:
+For each device that has been defined to the Windows Autopilot deployment service, a profile of settings needs to be applied that specifies the exact behavior of that device when it is deployed. For detailed procedures on how to configure profile settings and register devices, see [Registering devices](add-devices.md#registering-devices).
+
+## Profile settings
+
+The following profile settings are available:
 
 -   **Skip Cortana, OneDrive and OEM registration setup pages**. All devices registered with Autopilot will automatically skip these pages during the out-of-box experience (OOBE) process.
 
@@ -33,3 +41,8 @@ For each device that has been defined to the Windows Autopilot deployment servic
 -   **Skip End User License Agreement (EULA)**. Starting in Windows 10 version 1709, organizations can decide to skip the EULA page presented during the OOBE process. This means that organizations accept the EULA terms on behalf of their users.
 
 -   **Disable Windows consumer features**. Starting in Windows 10 version 1803, organizations can disable Windows consumer features so that the device does not automatically install any additional Microsoft Store apps when the user first signs into the device. See the [MDM documentation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsconsumerfeatures) for more details.
+
+## Related topics
+
+[Profile download](troubleshooting.md#profile-download)
+[Registering devices](add-devices.md)

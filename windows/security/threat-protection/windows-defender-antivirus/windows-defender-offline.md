@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Run and review the results of a Windows Defender Offline scan
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
@@ -48,7 +50,7 @@ Windows Defender Offline uses the most recent protection updates available on th
 > [!NOTE]
 > Before running an offline scan, you should attempt to update Windows Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-See the [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md) topic for more information.
+See the [Manage Windows Defender Antivirus Security intelligence  updates](manage-protection-updates-windows-defender-antivirus.md) topic for more information.
 
 ## Usage scenarios
 

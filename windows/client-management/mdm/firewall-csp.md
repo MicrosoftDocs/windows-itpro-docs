@@ -1,12 +1,14 @@
 ---
 title: Firewall CSP
 description: Firewall CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 01/26/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Firewall CSP
@@ -38,11 +40,11 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type in integer. Supported operation is Get.</p>
 
 <a href="" id="currentprofiles"></a>**MdmStore/Global/CurrentProfiles**
-<p style="margin-left: 20px">Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See [FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx) for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.</p>
+<p style="margin-left: 20px">Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See <a href="https://msdn.microsoft.com/library/cc231559.aspx" data-raw-source="[FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.</p>
 <p style="margin-left: 20px">Value type in integer. Supported operation is Get.</p>
 
 <a href="" id="disablestatefulftp"></a>**MdmStore/Global/DisableStatefulFtp**
-<p style="margin-left: 20px">Boolean value. If false, the firewall performs stateful File Transfer Protocol (FTP) filtering to allow secondary connections. True means stateful FTP is disabled. The merge law for this option is to let "true" values win.</p>
+<p style="margin-left: 20px">Boolean value. If false, the firewall performs stateful File Transfer Protocol (FTP) filtering to allow secondary connections. True means stateful FTP is disabled. The merge law for this option is to let &quot;true&quot; values win.</p>
 <p style="margin-left: 20px">Default value is false.</p>
 <p style="margin-left: 20px">Data type is bool. Supported operations are Add, Get, Replace, and Delete. </p>
 
@@ -52,12 +54,12 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="presharedkeyencoding"></a>**MdmStore/Global/PresharedKeyEncoding**
-<p style="margin-left: 20px">Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES enumeration](https://msdn.microsoft.com/library/cc231525.aspx). The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
+<p style="margin-left: 20px">Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the <a href="https://msdn.microsoft.com/library/cc231525.aspx" data-raw-source="[PRESHARED_KEY_ENCODING_VALUES enumeration](https://msdn.microsoft.com/library/cc231525.aspx)">PRESHARED_KEY_ENCODING_VALUES enumeration</a>. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
 <p style="margin-left: 20px">Default value is 1.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="ipsecexempt"></a>**MdmStore/Global/IPsecExempt**
-<p style="margin-left: 20px">This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](https://msdn.microsoft.com/library/cc231523.aspx); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
+<p style="margin-left: 20px">This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in <a href="https://msdn.microsoft.com/library/cc231523.aspx" data-raw-source="[IPSEC_EXEMPT_VALUES](https://msdn.microsoft.com/library/cc231523.aspx)">IPSEC_EXEMPT_VALUES</a>; therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
 <p style="margin-left: 20px">Default value is 0.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
@@ -76,7 +78,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="binaryversionsupported"></a>**MdmStore/Global/BinaryVersionSupported**
-<p style="margin-left: 20px">This value contains the binary version of the structures and data types that are supported by the server. This value is not merged. In addition, this value is always a fixed value for a specific firewall and advanced security component's software build. This value identifies a policy configuration option that is supported only on servers that have a schema version of 0x0201.</p>
+<p style="margin-left: 20px">This value contains the binary version of the structures and data types that are supported by the server. This value is not merged. In addition, this value is always a fixed value for a specific firewall and advanced security component&#39;s software build. This value identifies a policy configuration option that is supported only on servers that have a schema version of 0x0201.</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="opportunisticallymatchauthsetperkm"></a>**MdmStore/Global/OpportunisticallyMatchAuthSetPerKM**
@@ -115,7 +117,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get and Replace.</p>
 
 <a href="" id="shielded"></a>**/Shielded**
-<p style="margin-left: 20px">Boolean value. If this value is true and EnableFirewall is on, the server MUST block all incoming traffic regardless of other policy settings. The merge law for this option is to let "true" values win.</p>
+<p style="margin-left: 20px">Boolean value. If this value is true and EnableFirewall is on, the server MUST block all incoming traffic regardless of other policy settings. The merge law for this option is to let &quot;true&quot; values win.</p>
 <p style="margin-left: 20px">Default value is false.</p>
 <p style="margin-left: 20px">Value type is bool. Supported operations are Get and Replace.</p>
 
@@ -192,12 +194,12 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get and Replace.</p>
 
 <a href="" id="disablestealthmodeipsecsecuredpacketexemption"></a>**/DisableStealthModeIpsecSecuredPacketExemption**
-<p style="margin-left: 20px">Boolean value. This option is ignored if DisableStealthMode is true. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.</p>
+<p style="margin-left: 20px">Boolean value. This option is ignored if DisableStealthMode is true. Otherwise, when this option is true, the firewall&#39;s stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.</p>
 <p style="margin-left: 20px">Default value is true.</p>
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get and Replace.</p>
 
 <a href="" id="firewallrules"></a>**FirewallRules**
-<p style="margin-left: 20px">A list of rules controlling traffic through the Windows Firewall.  Each Rule ID is OR'ed.  Within each rule ID each Filter type is AND'ed.</p>
+<p style="margin-left: 20px">A list of rules controlling traffic through the Windows Firewall.  Each Rule ID is OR&#39;ed.  Within each rule ID each Filter type is AND&#39;ed.</p>
 
 <a href="" id="firewallrulename"></a>**FirewallRules/_FirewallRuleName_**
 <p style="margin-left: 20px">Unique alpha numeric identifier for the rule.  The rule name must not include a forward slash (/).</p>
@@ -245,38 +247,39 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="localaddressranges"></a>**FirewallRules/_FirewallRuleName_/LocalAddressRanges**
-<p style="margin-left: 20px">Comma separated list of local addresses covered by the rule. The default value is "\*". Valid tokens include:</p>
+<a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
+<p style="margin-left: 20px">Comma separated list of local addresses covered by the rule. The default value is &quot;<em>&quot;. Valid tokens include:</p>
 <ul>
-<li>"\*" indicates any local address. If present, this must be the only token included.</li>
+<li>&quot;</em>&quot; indicates any local address. If present, this must be the only token included.</li>
 <li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
 <li>A valid IPv6 address.</li>
-<li>An IPv4 address range in the format of "start address - end address" with no spaces included.</li>
-<li>An IPv6 address range in the format of "start address - end address" with no spaces included.</li>
+<li>An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
+<li>An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="remoteaddressranges"></a>**FirewallRules/_FirewallRuleName_/RemoteAddressRanges**
-<p style="margin-left: 20px">List of comma separated tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:</p>
+<a href="" id="remoteaddressranges"></a>**FirewallRules/*FirewallRuleName*/RemoteAddressRanges**
+<p style="margin-left: 20px">List of comma separated tokens specifying the remote addresses covered by the rule. The default value is &quot;<em>&quot;. Valid tokens include:</p>
 <ul>
-<li>"\*" indicates any remote address. If present, this must be the only token included.</li>
-<li>"Defaultgateway"</li>
-<li>"DHCP"</li>
-<li>"DNS"</li>
-<li>"WINS"</li>
-<li>"Intranet"</li>
-<li>"RmtIntranet"</li>
-<li>"Internet"</li>
-<li>"Ply2Renders"</li>
-<li>"LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.</li>
+<li>&quot;</em>&quot; indicates any remote address. If present, this must be the only token included.</li>
+<li>&quot;Defaultgateway&quot;</li>
+<li>&quot;DHCP&quot;</li>
+<li>&quot;DNS&quot;</li>
+<li>&quot;WINS&quot;</li>
+<li>&quot;Intranet&quot;</li>
+<li>&quot;RmtIntranet&quot;</li>
+<li>&quot;Internet&quot;</li>
+<li>&quot;Ply2Renders&quot;</li>
+<li>&quot;LocalSubnet&quot; indicates any local address on the local subnet. This token is not case-sensitive.</li>
 <li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
 <li>A valid IPv6 address.</li>
-<li>An IPv4 address range in the format of "start address - end address" with no spaces included.</li>
-<li>An IPv6 address range in the format of "start address - end address" with no spaces included.</li>
+<li>An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
+<li>An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+<p style="margin-left: 20px">The tokens &quot;Intranet&quot;, &quot;RmtIntranet&quot;, &quot;Internet&quot; and &quot;Ply2Renders&quot; are supported on Windows 10, version 1809, and later.</p>
 
 <a href="" id="description"></a>**FirewallRules/_FirewallRuleName_/Description**
 <p style="margin-left: 20px">Specifies the description of the rule.</p>
@@ -288,7 +291,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
 <a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
-<p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See [FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx) for the bitmasks that are used to identify profile types.</p>
+<p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See <a href="https://msdn.microsoft.com/library/cc231559.aspx" data-raw-source="[FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types.</p>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
 
@@ -306,7 +309,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
 
 <a href="" id="direction"></a>**FirewallRules/_FirewallRuleName_/Direction**
-<p style="margin-left: 20px">Comma separated list. The rule is enabled based on the traffic direction as following. Supported values:</p>
+<p style="margin-left: 20px">The rule is enabled based on the traffic direction as following. Supported values:</p>
 <ul>
 <li>IN - the rule applies to inbound traffic.</li>
 <li>OUT - the rule applies to outbound traffic.</li>
@@ -320,7 +323,6 @@ Sample syncxml to provision the firewall settings to evaluate
 <li>RemoteAccess</li>
 <li>Wireless</li>
 <li>Lan</li>
-<li>MobileBroadband</li>
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>

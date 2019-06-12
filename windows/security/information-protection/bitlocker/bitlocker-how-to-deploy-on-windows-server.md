@@ -1,30 +1,29 @@
 ---
-title: BitLocker How to deploy on Windows Server 2012 and later (Windows 10)
-description: This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later.
+title: BitLocker How to deploy on Windows Server 2012 and later
+description: This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later
 ms.assetid: 91c18e9e-6ab4-4607-8c75-d983bbe2542f
+ms.reviewer: 
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # BitLocker: How to deploy on Windows Server 2012 and later
 
-**Applies to**
--   Windows 10
+> Applies to: Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
 
-This topic for the IT professional explains how to deploy BitLocker on Windows Server 2012 and later.
-
-For all Windows Server editions, BitLocker must be installed using Server Manager. However, you can still provision BitLocker before the server operating system is installed as part of your deployment.
+This topic for the IT professional explains how to deploy BitLocker on Windows Server 2012 and later. For all Windows Server editions, BitLocker can be installed using Server Manager or Windows PowerShell cmdlets. BitLocker requires administrator privileges on the server to install.
 
 ## <a href="" id="installing-bitlocker-"></a>Installing BitLocker
-
-BitLocker requires administrator privileges on the server to install. You can install BitLocker either by using Server Manager or Windows PowerShell cmdlets.
-
--   To install BitLocker using Server Manager
--   To install BitLocker using Windows PowerShell
 
 ### <a href="" id="bkmk-blinstallsrvmgr"></a>To install BitLocker using Server Manager
 
@@ -49,12 +48,7 @@ Windows PowerShell offers administrators another option for BitLocker feature in
  
 ### Using the servermanager module to install BitLocker
 
-The `servermanager` Windows PowerShell module can use either the `Install-WindowsFeature` or `Add-WindowsFeature` to install the BitLocker feature. The `Add-WindowsFeature` cmdlet is merely a stub to the `Install-WindowsFeature`. This example uses the `Install-WindowsFeature` cmdlet. The feature name for BitLocker in the `servermanager` module is `BitLocker`. This can be determined using the `Get-WindowsFeature` cmdlet with a query such as:
-
-``` syntax
-Get-WindowsFeature Bit 
-```
-The results of this command displays a table of all of the feature names beginning with “Bit” as their prefix. This allows you to confirm that the feature name is `BitLocker` for the BitLocker feature.
+The `servermanager` Windows PowerShell module can use either the `Install-WindowsFeature` or `Add-WindowsFeature` to install the BitLocker feature. The `Add-WindowsFeature` cmdlet is merely a stub to the `Install-WindowsFeature`. This example uses the `Install-WindowsFeature` cmdlet. The feature name for BitLocker in the `servermanager` module is `BitLocker`. 
 
 By default, installation of features in Windows PowerShell does not include optional sub-features or management tools as part of the install process. This can be seen using the `-WhatIf` option in Windows PowerShell.
 

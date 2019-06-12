@@ -2,6 +2,9 @@
 title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, image, feature, install, tools
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,6 +13,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Get started with the Microsoft Deployment Toolkit (MDT)

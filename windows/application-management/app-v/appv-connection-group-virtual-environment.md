@@ -1,12 +1,16 @@
 ---
 title: About the connection group virtual environment (Windows 10)
 description: Overview of how the connection group virtual environment works.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # About the connection group virtual environment
 
@@ -26,7 +30,20 @@ The connection group that is used is based on the order in which a package appea
 Consider the following example section:
 
 ```XML
-<appv:Packages><appv:PackagePackageId="A8731008-4523-4713-83A4-CD1363907160"VersionId="E889951B-7F30-418B-A69C-B37283BC0DB9"/><appv:PackagePackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"VersionId="01F1943B-C778-40AD-BFAD-AC34A695DF3C"/><appv:PackagePackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"/></appv:Packages>
+<appv:Packages>
+  <appv:Package
+    PackageId="A8731008-4523-4713-83A4-CD1363907160"
+    VersionId="E889951B-7F30-418B-A69C-B37283BC0DB9"
+  />
+  <appv:Package
+    PackageId="1DC709C8-309F-4AB4-BD47-F75926D04276"
+    VersionId="01F1943B-C778-40AD-BFAD-AC34A695DF3C"
+  />
+  <appv:Package
+    PackageId="04220DCA-EE77-42BE-A9F5-96FD8E8593F2"
+    VersionId="E15EFFE9-043D-4C01-BC52-AD2BD1E8BAFA"
+  />
+</appv:Packages>
 ```
 
 Assume that same DWORD value ABC (HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region) is defined in the first and third package.
@@ -60,9 +77,9 @@ When a virtualized application tries to find a specific file, App-V will first f
 - If a file named **test.txt** exists in the same virtual folder hierarchy in both application packages, App-V will use the first matching file.
 - If a file named **bar.txt** exists in the virtual folder hierarchy of one application package, but not in the other, App-V will use the first matching file.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

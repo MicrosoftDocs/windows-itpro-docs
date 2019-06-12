@@ -5,9 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: lizap
-ms.author: elizapo
+author: greg-lindsay
+ms.author: greglin
 ms.date: 08/16/2018
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10, version 1803
 
@@ -50,4 +53,4 @@ If you have feedback about the proposed replacement of any of these features, yo
 |Phone Companion|Use the **Phone** page in the Settings app. In Windows 10, version 1709, we added the new **Phone** page to help you sync your mobile phone with your PC. It includes all the Phone Companion features.|
 |IPv4/6 Transition Technologies (6to4, ISATAP, and Direct Tunnels)|6to4 has been disabled by default since Windows 10, version 1607 (the Anniversary Update), ISATAP has been disabled by default since Windows 10, version 1703 (the Creators Update), and Direct Tunnels has always been disabled by default. Please use native IPv6 support instead.|
 |[Layered Service Providers](https://msdn.microsoft.com/library/windows/desktop/bb513664)|Layered Service Providers have been deprecated since Windows 8 and Windows Server 2012. Use the [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510) instead. When you upgrade from an older version of Windows, any layered service providers you're using aren't migrated; you'll need to re-install them after upgrading.|
-|Business Scanning, also called Distributed Scan Management (DSM) **(Added 05/03/2018)**|The [Scan Management functionality](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759124\(vs.11\)) was introduced in Windows 7 and enabled secure scanning and the management of scanners in an enterprise. We're no longer investing in this feature, and there are no devices available that support it.|
+|Business Scanning, also called Distributed Scan Management (DSM) **(Added 05/03/2018)**|The [Scan Management functionality](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759124(v=ws.11)) was introduced in Windows 7 and enabled secure scanning and the management of scanners in an enterprise. We're no longer investing in this feature, and there are no devices available that support it.|

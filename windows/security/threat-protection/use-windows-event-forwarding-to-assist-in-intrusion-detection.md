@@ -2,19 +2,23 @@
 title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: tedhardyMSFT
-ms.date: 02/16/2018
+author: dulcemontemayor
+ms.date: 02/28/2019
 ms.localizationpriority: medium
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
@@ -36,13 +40,13 @@ Here's an approximate scaling guide for WEF events:
 | 0 - 5,000           | SQL or SEM                 |
 | 5,000 - 50,000      | SEM                        |
 | 50,000+             | Hadoop/HDInsight/Data Lake |
- 
+ 
 Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
 
 For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
 >**Note:**  These are only minimum values need to meet what the WEF subscription selects.
- 
+ 
 From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts’ direction. All devices should have access to the Baseline subscription.
 
 This means you would create two base subscriptions:
@@ -118,7 +122,7 @@ This table outlines the built-in delivery options:
 | Normal | This option ensures reliable delivery of events and does not attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
- 
+ 
 For more info about delivery options, see [Configure Advanced Subscription Settings](https://technet.microsoft.com/library/cc749167.aspx).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
@@ -178,100 +182,100 @@ To gain the most value out of the baseline subscription we recommend to have the
 
 The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Suspect Subscription Event Query](#bkmk-appendixf).
 
--   Anti-malware events from Microsoft Antimalware or Windows Defender. This can be configured for any given anti-malware product easily if it writes to the Windows event log.
--   Security event log Process Create events.
--   AppLocker Process Create events (EXE, script, packaged App installation and execution).
--   Registry modification events. For more info, see [Appendix B – Recommended minimum Registry System ACL Policy](#bkmk-appendixb).
--   OS startup and shutdown
+- Anti-malware events from Microsoft Antimalware or Windows Defender. This can be configured for any given anti-malware product easily if it writes to the Windows event log.
+- Security event log Process Create events.
+- AppLocker Process Create events (EXE, script, packaged App installation and execution).
+- Registry modification events. For more info, see [Appendix B – Recommended minimum Registry System ACL Policy](#bkmk-appendixb).
+- OS startup and shutdown
 
-    -   Startup event include operating system version, service pack level, QFE version, and boot mode.
+  -   Startup event include operating system version, service pack level, QFE version, and boot mode.
 
--   Service install
+- Service install
 
-    -   Includes what the name of the service, the image path, and who installed the service.
+  -   Includes what the name of the service, the image path, and who installed the service.
 
--   Certificate Authority audit events
+- Certificate Authority audit events
 
-    -   This is only applicable on systems with the Certificate Authority role installed.
-    -   Logs certificate requests and responses.
+  -   This is only applicable on systems with the Certificate Authority role installed.
+  -   Logs certificate requests and responses.
 
--   User profile events
+- User profile events
 
-    -   Use of a temporary profile or unable to create a user profile may indicate an intruder is interactively logging into a device but not wanting to leave a persistent profile behind.
+  -   Use of a temporary profile or unable to create a user profile may indicate an intruder is interactively logging into a device but not wanting to leave a persistent profile behind.
 
--   Service start failure
+- Service start failure
 
-    -   Failure codes are localized, so you have to check the message DLL for values.
+  -   Failure codes are localized, so you have to check the message DLL for values.
 
--   Network share access events
+- Network share access events
 
-    -   Filter out IPC$ and /NetLogon file shares, which are expected and noisy.
+  -   Filter out IPC$ and /NetLogon file shares, which are expected and noisy.
 
--   System shutdown initiate requests
+- System shutdown initiate requests
 
-    -   Find out what initiated the restart of a device.
+  -   Find out what initiated the restart of a device.
 
--   User initiated interactive logoff event
--   Remote Desktop Services session connect, reconnect, or disconnect.
--   EMET events, if EMET is installed.
--   Event forwarding plugin events
+- User initiated interactive logoff event
+- Remote Desktop Services session connect, reconnect, or disconnect.
+- EMET events, if EMET is installed.
+- Event forwarding plugin events
 
-    -   For monitoring WEF subscription operations, particularly Partial Success events. This is useful for diagnosing deployment issues.
+  -   For monitoring WEF subscription operations, particularly Partial Success events. This is useful for diagnosing deployment issues.
 
--   Network share create and delete
+- Network share create and delete
 
-    -   Enables detection of unauthorized share creation.
-        >**Note:**  All shares are re-created when the device starts.
-         
--   Logon sessions
+  - Enables detection of unauthorized share creation.
+    >**Note:**  All shares are re-created when the device starts.
+         
+- Logon sessions
 
-    -   Logon success for interactive (local and Remote Interactive/Remote Desktop)
-    -   Logon success for services for non-built-in accounts, such as LocalSystem, LocalNetwork, and so on.
-    -   Logon success for batch sessions
-    -   Logon session close, which are logoff events for non-network sessions.
+  -   Logon success for interactive (local and Remote Interactive/Remote Desktop)
+  -   Logon success for services for non-built-in accounts, such as LocalSystem, LocalNetwork, and so on.
+  -   Logon success for batch sessions
+  -   Logon session close, which are logoff events for non-network sessions.
 
--   Windows Error Reporting (Application crash events only)
+- Windows Error Reporting (Application crash events only)
 
-    -   This can help detect early signs of intruder not familiar with enterprise environment using targeted malware.
+  -   This can help detect early signs of intruder not familiar with enterprise environment using targeted malware.
 
--   Event log service events
+- Event log service events
 
-    -   Errors, start events, and stop events for the Windows Event Log service.
+  -   Errors, start events, and stop events for the Windows Event Log service.
 
--   Event log cleared (including the Security Event Log)
+- Event log cleared (including the Security Event Log)
 
-    -   This could indicate an intruder that are covering their tracks.
+  -   This could indicate an intruder that are covering their tracks.
 
--   Special privileges assigned to new logon
+- Special privileges assigned to new logon
 
-    -   This indicates that at the time of logon a user is either an Administrator or has the sufficient access to make themselves Administrator.
+  -   This indicates that at the time of logon a user is either an Administrator or has the sufficient access to make themselves Administrator.
 
--   Outbound Remote Desktop Services session attempts
+- Outbound Remote Desktop Services session attempts
 
-    -   Visibility into potential beachhead for intruder
+  -   Visibility into potential beachhead for intruder
 
--   System time changed
--   SMB Client (mapped drive connections)
--   Account credential validation
+- System time changed
+- SMB Client (mapped drive connections)
+- Account credential validation
 
-    -   Local accounts or domain accounts on domain controllers
+  -   Local accounts or domain accounts on domain controllers
 
--   A user was added or removed from the local Administrators security group.
--   Crypto API private key accessed
+- A user was added or removed from the local Administrators security group.
+- Crypto API private key accessed
 
-    -   Associated with signing objects using the locally stored private key.
+  -   Associated with signing objects using the locally stored private key.
 
--   Task Scheduler task creation and delete
+- Task Scheduler task creation and delete
 
-    -   Task Scheduler allows intruders to run code at specified times as LocalSystem.
+  -   Task Scheduler allows intruders to run code at specified times as LocalSystem.
 
--   Logon with explicit credentials
+- Logon with explicit credentials
 
-    -   Detect credential use changes by intruders to access additional resources.
+  -   Detect credential use changes by intruders to access additional resources.
 
--   Smartcard card holder verification events
+- Smartcard card holder verification events
 
-    -   This detects when a smartcard is being used.
+  -   This detects when a smartcard is being used.
 
 ### Suspect subscription
 
@@ -338,7 +342,7 @@ If your organizational audit policy enables additional auditing to meet its need
 | Category           | Subcategory                     | Audit settings      |
 |--------------------|---------------------------------|---------------------|
 | Account Logon      | Credential Validation           | Success and Failure |
-| Account Management | Security Group Management       | Success and Failure |
+| Account Management | Security Group Management       | Success  |
 | Account Management | User Account Management         | Success and Failure |
 | Account Management | Computer Account Management     | Success and Failure |
 | Account Management | Other Account Management Events | Success and Failure |
@@ -367,7 +371,7 @@ If your organizational audit policy enables additional auditing to meet its need
 | System             | Security State Change           | Success and Failure |
 | System             | Security System Extension       | Success and Failure |
 | System             | System Integrity                | Success and Failure |
- 
+ 
 ## <a href="" id="bkmk-appendixb"></a>Appendix B - Recommended minimum registry system ACL policy
 
 The Run and RunOnce keys are useful for intruders and malware persistence. It allows code to be run (or run only once then removed, respectively) when a user logs into the system.

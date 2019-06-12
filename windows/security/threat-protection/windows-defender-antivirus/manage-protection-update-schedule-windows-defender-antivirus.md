@@ -5,20 +5,23 @@ keywords: updates, security baselines, schedule updates
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
+search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus lets you determine when it should look for and download updates.
 

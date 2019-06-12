@@ -1,8 +1,11 @@
 ---
 title: Configuring the Company Settings Center for UE-V 2.x
 description: Configuring the Company Settings Center for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 48fadb0a-c0dc-4287-9474-f94ce1417003
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,7 +35,7 @@ The Company Settings Center desktop application provides users with information 
 
     -   Configuration item in the UE-V Configuration Pack for System Center 2012 Configuration Manager: `Tray icon enabled`
 
-     
+     
 
 -   Control Panel application – In Control Panel, browse to **Appearance and Personalization**, and then click **Company Settings Center**.
 
@@ -75,14 +78,14 @@ The Company Settings Center can include a hyperlink that users can click to get 
 
 3.  Deploy settings to users’ computers by using the management tool.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
 
- 
 
- 
+
+ 
+
+ 
 
 
 

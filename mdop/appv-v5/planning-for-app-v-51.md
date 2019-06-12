@@ -1,8 +1,11 @@
 ---
 title: Planning for App-V 5.1
 description: Planning for App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 8d84e679-0bd3-4864-976b-a3cbe6eafba6
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,10 +34,10 @@ Use this information to plan how to deploy Microsoft Application Virtualization 
 
     Planning checklist that can be used to assist in App-V 5.1 deployment planning.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-app-v-5-1-planning-"></a>Other resources for App-V 5.1 Planning
 

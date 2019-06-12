@@ -1,8 +1,11 @@
 ---
 title: How to Configure Access to Packages by Using the Management Console
 description: How to Configure Access to Packages by Using the Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 4fd39bc2-d814-46de-a108-1c21fa404e8a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,7 +38,7 @@ Use the following procedure to configure access to virtualized packages.
         **Note**  
         Ensure that you provide an associated domain name for the group that you are searching for.
 
-         
+         
 
 3.  To grant access to the package, select the desired group and click **Grant Access**. The newly added group is displayed in the **AD ENTITIES WITH ACCESS** pane.
 
@@ -64,9 +67,9 @@ Use the following procedure to configure access to virtualized packages.
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Open the Group Policy Management Console to Windows Defender Firewall (Windows 10)
 description: Open the Group Policy Management Console to Windows Defender Firewall with Advanced Security
 ms.assetid: 5090b2c8-e038-4905-b238-19ecf8227760
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/02/2017
 ---
 

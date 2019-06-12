@@ -9,25 +9,27 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows Defender Antivirus in the Windows Security app
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
 
-> [!WARNING] 
+> [!WARNING]
 > If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
 >It may also prevent Windows Defender AV from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed. 
 >This will significantly lower the protection of your device and could lead to malware infection.
@@ -36,7 +38,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 See the [Windows Security topic](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
 >[!NOTE]
->The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
+>The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 **Review virus and threat protection settings in the Windows Security app:**
 
@@ -58,7 +60,7 @@ The following diagrams compare the location of settings and functions between th
 
 Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description
 ---|---|---|---
-1 | **Update** tab | **Protection updates** | Update the protection ("definition updates")
+1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence)
 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
@@ -90,7 +92,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
 
-![Definition version number information](images/defender/wdav-wdsc-defs.png)
+![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 

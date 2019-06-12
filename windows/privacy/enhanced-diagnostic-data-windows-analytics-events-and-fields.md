@@ -7,9 +7,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/16/2017
-author: danihalfin    
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.date: 11/9/2018
+ms.reviewer: 
 ---
 
 
@@ -309,33 +314,6 @@ The following fields are available:
 - **isTrustletRunning:** Indicates whether an enhanced security component is currently running
 - **isVsmCfg:** Flag indicating whether virtual secure mode is configured or not
 
-## Microsoft.Windows.Security.Certificates.PinRulesCaCertUsedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint
-
-## Microsoft.Windows.Security.Certificates.PinRulesCheckedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **caThumbprints:** Intermediate certificate thumbprints
-- **rootThumbprint:** Root certificate thumbprint
-- **serverName:** Server name associated with the certificate
-- **serverThumbprint:** Server certificate thumbprint
-- **statusBits:** Certificate status
-
-## Microsoft.Windows.Security.Certificates.PinRulesServerCertUsedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint
-
 ## Microsoft.Windows.Security.Winlogon.SystemBootStop
 System boot has completed.
 
@@ -436,6 +414,9 @@ A previous revision of this list stated that a field named PartA_UserSid was a m
 
 ### Office events added
 In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 16 events were added, describing Office app launch and availability. These events were added to improve the precision of Office data in Windows Analytics.
+
+### CertAnalytics events removed
+In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 3 "CertAnalytics" events were removed, as they are no longer required for Windows Analytics.
 
 >[!NOTE]
 >You can use the Windows Diagnostic Data Viewer to observe and review events and their fields as described in this topic.

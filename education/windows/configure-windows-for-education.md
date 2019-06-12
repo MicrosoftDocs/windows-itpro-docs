@@ -5,12 +5,13 @@ keywords: Windows 10 deployment, recommendations, privacy settings, school, educ
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.prod: w10
-ms.technology: Windows
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 08/31/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows 10 configuration recommendations for education customers
@@ -47,16 +48,16 @@ It is easy to be education ready when using Microsoft products. We recommend the
     You can [sign up to learn more about Intune for Education](https://info.microsoft.com/US-WNDWS-CNTNT-FY17-01Jan-17-IntuneforEducationlandingpageandnurture292531_01Registration-ForminBody.html).
 
 3. On PCs running Windows 10, version 1703:
-  1. Provision the PC using one of these methods:
-    * [Provision PCs with the Set up School PCs app](use-set-up-school-pcs-app.md) - This will automatically set both **SetEduPolicies** to True and **AllowCortana** to False.
-    * [Provision PCs with a custom package created with Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
-  2. Join the PC to Azure Active Directory.
-    * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Azure AD.
-    * Manually Azure AD join the PC during the Windows device setup experience.
-  3. Enroll the PCs in MDM.
-    * If you have activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
-  4. Ensure that needed assistive technology apps can be used.
-    * If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
+   1. Provision the PC using one of these methods:
+      * [Provision PCs with the Set up School PCs app](use-set-up-school-pcs-app.md) - This will automatically set both **SetEduPolicies** to True and **AllowCortana** to False.
+      * [Provision PCs with a custom package created with Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
+   2. Join the PC to Azure Active Directory.
+      * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Azure AD.
+      * Manually Azure AD join the PC during the Windows device setup experience.
+   3. Enroll the PCs in MDM.
+      * If you have activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
+   4. Ensure that needed assistive technology apps can be used.
+      * If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 4. Distribute the PCs to students.
 
@@ -86,14 +87,14 @@ Use one of these methods to set this policy.
 ### MDM
 - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
 - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy.
-    - If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
+  - If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
-        For example, in Intune, create a new configuration policy and add an OMA-URI. 
-        - OMA-URI:  ./Vendor/MSFT/Policy/Config/Experience/AllowCortana
-        - Data type:  Integer
-        - Value:  0
+      For example, in Intune, create a new configuration policy and add an OMA-URI. 
+    - OMA-URI:  ./Vendor/MSFT/Policy/Config/Experience/AllowCortana
+    - Data type:  Integer
+    - Value:  0
 
-        ![Create an OMA URI for AllowCortana](images/allowcortana_omauri.png)
+      ![Create an OMA URI for AllowCortana](images/allowcortana_omauri.png)
 
 ### Group Policy
 Set **Computer Configuration > Administrative Templates > Windows Components > Search > AllowCortana** to **Disabled**.
@@ -115,14 +116,14 @@ Use one of these methods to set this policy.
 ### MDM
 - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
 - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy.
-    - If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
+  - If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
-        For example, in Intune, create a new configuration policy and add an OMA-URI.
-        - OMA-URI:  ./Vendor/MSFT/SharedPC/SetEduPolicies
-        - Data type:  Boolean
-        - Value:  true
+      For example, in Intune, create a new configuration policy and add an OMA-URI.
+    - OMA-URI:  ./Vendor/MSFT/SharedPC/SetEduPolicies
+    - Data type:  Boolean
+    - Value:  true
 
-        ![Create an OMA URI for SetEduPolices](images/setedupolicies_omauri.png)
+      ![Create an OMA URI for SetEduPolices](images/setedupolicies_omauri.png)
 
 ### Group Policy
 **SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/library/windows/desktop/mt779129(v=vs.85).aspx). 
@@ -149,7 +150,7 @@ For example:
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)
 
 ## Ad-free search with Bing
-Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at http://www.bing.com/classroom/about-us.
+Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at https://www.bing.com/classroom/about-us.
 
 > [!NOTE]  
 > If you enable the guest account in shared PC mode, students using the guest account will not have an ad-free experience searching with Bing in Microsoft Edge unless the PC is connected to your school network and your school network has been configured as described in [IP registration for entire school network using Microsoft Edge](#ip-registration-for-entire-school-network-using-microsoft-edge).

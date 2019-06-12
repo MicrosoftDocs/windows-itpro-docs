@@ -2,12 +2,18 @@
 title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows 10)
 description: GPO\_DOMISO\_IsolatedDomain\_Servers
 ms.assetid: 33aed8f3-fdc3-4f96-985c-e9d2720015d3
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

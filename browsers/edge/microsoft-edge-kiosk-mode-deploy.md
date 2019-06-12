@@ -2,8 +2,10 @@
 title: Deploy Microsoft Edge kiosk mode
 description: Microsoft Edge kiosk mode works with assigned access to allow IT admins to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
+ms.reviewer: 
+manager: dansimp
+author: eavena
+ms.author: eravena
 ms.prod: edge
 ms.sitesec: library
 ms.topic: get-started-article
@@ -232,21 +234,21 @@ Make sure to check with your provider for instructions.
 ## Feature comparison of kiosk mode and kiosk browser app
 In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
-| **Feature**   | **Microsoft Edge kiosk mode**  | **Microsoft Kiosk browser app**   |
-|---------------|:----------------:|:---------------:|
-| Print support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Multi-tab support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Allow/Block URL support   | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
-| Configure Home Button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)    |
-| Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
-| Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Favorites management   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png) |
-| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration introduced in version 1808.* |
-| Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
-| Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
-| Available in Microsoft Store | ![Not supported](images/148766.png)  | ![Supported](images/148767.png) |
-|SKU availability | Windows 10 October 2018 Update<br>Professional, Enterprise, and Education  | Windows 10 April 2018 Update<br>Professional, Enterprise, and Education |
 
+|                        **Feature**                        |                                                                  **Microsoft Edge kiosk mode**                                                                  |                                                             **Microsoft Kiosk browser app**                                                             |
+|-----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                       Print support                       |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
+|                     Multi-tab support                     |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
+|                  Allow/Block URL support                  | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* Windows Defender Firewall<em>. Microsoft kiosk browser has custom policy support.</em> |                                                             ![Supported](images/148767.png)                                                             |
+|                   Configure Home Button                   |                                                                 ![Supported](images/148767.png)                                                                 |                                                             ![Supported](images/148767.png)                                                             |
+|                   Set Start page(s) URL                   |                                                                 ![Supported](images/148767.png)                                                                 |                                              ![Supported](images/148767.png) <p>*Same as Home button URL*                                               |
+|                   Set New Tab page URL                    |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
+|                   Favorites management                    |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
+|                    End session button                     |                                                                 ![Supported](images/148767.png)                                                                 | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration introduced in version 1808.* |
+|                    Reset on inactivity                    |                                                                 ![Supported](images/148767.png)                                                                 |                                                             ![Supported](images/148767.png)                                                             |
+| Internet Explorer integration (Enterprise Mode site list) |                                                     ![Supported](images/148767.png)<p>*Multi-app mode only*                                                     |                                                           ![Not supported](images/148766.png)                                                           |
+|               Available in Microsoft Store                |                                                               ![Not supported](images/148766.png)                                                               |                                                             ![Supported](images/148767.png)                                                             |
+|                     SKU availability                      |                                            Windows 10 October 2018 Update<br>Professional, Enterprise, and Education                                            |                                         Windows 10 April 2018 Update<br>Professional, Enterprise, and Education                                         |
 
 **\*Windows Defender Firewall**<p>
 To prevent access to unwanted websites on your kiosk device, use Windows Defender Firewall to configure a list of allowed websites, blocked websites or both.  For more details, see [Windows Defender Firewall with Advanced Security Deployment](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide).

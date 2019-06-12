@@ -1,12 +1,16 @@
 ---
 title: Administering App-V by using Windows PowerShell (Windows 10)
 description: Administering App-V by Using Windows PowerShell
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # Administering App-V by using Windows PowerShell
 
@@ -44,9 +48,9 @@ The following table describes Windows PowerShell error handling for App-V.
 |Using the **RollbackOnError** attribute with embedded scripts|When you use the **RollbackOnError** attribute with embedded scripts, the attribute is ignored for the following events:<br>- Removing a package<br>- Unpublishing a package<br>- Terminating a virtual environment<br>- Terminating a process|
 |Package name contains **$**|If a package name contains the character \$\, you must use a single-quote ( **'** ). <br>For example:<br>```Add-AppvClientPackage 'Contoso$App.appv'```|
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

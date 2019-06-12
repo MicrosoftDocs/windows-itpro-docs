@@ -1,12 +1,16 @@
 ---
 title: Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
 description: How to manually sequence a new app using the App-V Sequencer
-author: eross-msft
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -51,7 +55,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 5. On the **Select Installer** page, select **Browse** and specify the installation file for the application.
 
-    >[!NOTE]
+   > [!NOTE]
     >If the specified application installer modifies security access to a file or directory, existing or new, the associated changes will not be captured into the package.
 
     If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Perform a Custom Installation** check box, and then select **Next**.
@@ -69,7 +73,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 9. On the **Configure Software** page, optionally run the programs contained in the package. This step allows you to complete any necessary license or configuration tasks before you deploy and run the package on target computers. To run all the programs at one time, select at least one program, and then select **Run All**. To run specific programs, select the program or programs, and then select **Run Selected**. Complete the required configuration tasks and then close the applications. You may need to wait several minutes for all programs to run.
 
-    >[!NOTE]
+   > [!NOTE]
     >To run first-use tasks for any application that is not available in the list, open the application. The associated information will be captured during this step.
 
     Select **Next**.
@@ -85,7 +89,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 12. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. It can take several minutes for all the applications to run. After all applications have run, close each of the applications, and then select **Next**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If you do not open any applications during this step, the default streaming method is on-demand streaming delivery. This means applications will be downloaded bit by bit until it can be opened. After that, depending on how the background loading is configured, it will load the rest of the application.
 
 13. On the **Target OS** page, specify the operating systems that can run this package. To allow all supported operating systems in your environment to run this package, select **Allow this package to run on any operating system**. To configure this package to run only on specific operating systems, select **Allow this package to run only on the following operating systems** and select the operating systems that can run this package. After that, select **Next**.
@@ -149,7 +153,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 13. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. Streaming improves the experience when the virtual application package is run on target computers on high-latency networks. It can take several minutes for all applications to run. After all applications have run, close each application. You can also configure the package to be required to be fully downloaded before opening by selecting the **Force applications to be downloaded** check-box. Select **Next**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If necessary, you can stop an application from loading during this step. In the **Application Launch** dialog box, select **Stop** and select one of the check boxes: **Stop all applications** or **Stop this application only**.
 
 14. On the **Target OS** page, specify the operating systems that can run this package. To allow all supported operating systems in your environment to run this package, select the **Allow this package to run on any operating system** check box. To configure this package to run only on specific operating systems, select the **Allow this package to run only on the following operating systems** check box, and then select the operating systems that can run this package. Select **Next**.
@@ -206,9 +210,9 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
     >[!IMPORTANT]
     >After you have successfully created a virtual application package, you can't run the virtual application package on the computer that is running the sequencer.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

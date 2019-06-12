@@ -2,12 +2,18 @@
 title: Access Credential Manager as a trusted caller (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Access Credential Manager as a trusted caller security policy setting.
 ms.assetid: a51820d2-ca5b-47dd-8e9b-d7008603db88
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -47,7 +53,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not defined |
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -84,4 +90,4 @@ None. Not defined is the default configuration.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
+ 

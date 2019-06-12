@@ -3,14 +3,15 @@ title: Enable S mode on Surface Go devices for Education
 description: Steps that an education customer can perform to enable S mode on Surface Go devices
 keywords: Surface Go for Education, S mode
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: kaushika-msft
-ms.author:
+author: levinec
+ms.author: ellevin
 ms.date: 07/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Go for Education - Enabling S mode
@@ -35,30 +36,30 @@ Here are some things you’ll need before attempting any of these procedures:
 Like enterprise administrators performing large-scale deployment of customized Windows images, education customers can create their own customized Windows images for deployment to multiple classroom devices. An education customer who plans to follow [a traditional image-based deployment
 process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios#traditional-deployment) using a Windows 10 Pro (1803) image for Surface Go devices can enable S mode as follows:
 
-1.  Use DISM to mount your offline Windows 10 Pro (1803) image.
+1. Use DISM to mount your offline Windows 10 Pro (1803) image.
 
    ```
    dism /Mount-image /imagefile:\<path_to_Image_file\> {/Index:\<image_index\> | /Name:\<image_name\>} /MountDir:\<local_target_directory\>
    ```
 
-2.  Create an unattend.xml answer file, adding the
-    amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
-    and setting amd64_Microsoft_Windows_CodeIntegrity\\SkuPolicyRequired to “1”.
-    The resulting xml should look like this…
+2. Create an unattend.xml answer file, adding the
+   amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
+   and setting amd64_Microsoft_Windows_CodeIntegrity\\SkuPolicyRequired to “1”.
+   The resulting xml should look like this…
 
    Copy
    ```
-    <settings pass="offlineServicing">
-     <component name="Microsoft-Windows-CodeIntegrity"
-              processorArchitecture="amd64"
-              publicKeyToken="31bf3856ad364e35"
-              language="neutral"
-              versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-         <SkuPolicyRequired>1</SkuPolicyRequired>
-      </component>
-     </settings>
+   <settings pass="offlineServicing">
+    <component name="Microsoft-Windows-CodeIntegrity"
+             processorArchitecture="amd64"
+             publicKeyToken="31bf3856ad364e35"
+             language="neutral"
+             versionScope="nonSxS"
+             xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
+        <SkuPolicyRequired>1</SkuPolicyRequired>
+     </component>
+    </settings>
    ```
 3. Save the answer file in the **Windows\Panther** folder of your mounted image as unattend.xml.
 4. Use DISM to apply the unattend.xml file and enable S Mode:
@@ -76,7 +77,7 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
       ```
          dism /Unmount-image /MountDir:C:\\mount /Commit
       ```
->Note: don’t forget the /Commit parameter to ensure you don’t lose your
+   >Note: don’t forget the /Commit parameter to ensure you don’t lose your
     changes.
 
 Your Windows 10 Pro (1803) image now has S mode enabled and is ready to deploy to Surface Go devices.
@@ -100,8 +101,8 @@ Education customers who wish to avoid the additional overhead associated with Wi
               publicKeyToken="31bf3856ad364e35"
               language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
          <SkuPolicyRequired>1</SkuPolicyRequired>
      </component>
    </settings>

@@ -1,0 +1,44 @@
+---
+title: 
+ms.reviewer: 
+description: 
+keywords: 
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: mjcaparas
+author: mjcaparas
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
+ms.date: 07/01/2018
+---
+
+# Configure attack surface reduction
+
+You can configure attack surface reduction with a number of tools, including:
+
+- Microsoft Intune
+- System Center Configuration Manager
+- Group Policy
+- PowerShell cmdlets
+
+
+The topics in this section describe how to configure attack surface reduction. Each topic includes instructions for the applicable configuration tool (or tools).
+
+## In this section
+Topic | Description
+:---|:---
+[Enable hardware-based isolation for Microsoft Edge](../windows-defender-application-guard/install-wd-app-guard.md) | How to preprare for and install Application Guard, including hardware and softeware requirements
+[Enable application control](../windows-defender-application-control/windows-defender-application-control.md)|How to control applications run by users and potect kernel mode processes
+[Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
+[Network protection](../windows-defender-exploit-guard/enable-network-protection.md)|How to prevent users from using any apps to acces dangerous domains
+[Controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)|How to protect valuable data from malicious apps
+[Attack surface reduction](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used for by exploit-seeking malware
+[Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)|How to protect devices and data across a network
+

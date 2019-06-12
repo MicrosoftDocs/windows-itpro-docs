@@ -1,8 +1,11 @@
 ---
 title: About the Connection Group Virtual Environment
 description: About the Connection Group Virtual Environment
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 535fa640-cbd9-425e-8437-94650a70c264
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -91,10 +94,10 @@ In the example above, when a virtualized application tries to find a specific fi
 
 -   If a file named **bar.txt** exists in the virtual folder hierarchy of one application package, but not in the other, the first matching file is used.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

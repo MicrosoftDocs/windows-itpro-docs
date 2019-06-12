@@ -2,12 +2,18 @@
 title: Requirements for deploying AppLocker policies (Windows 10)
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: mjcaparas
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 
@@ -105,7 +111,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -124,8 +130,8 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
- 
-**Event processing policy**
+ 
+<strong>Event processing policy</strong>
 
 <table>
 <colgroup>
@@ -162,8 +168,8 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance policy**
+ 
+<strong>Policy maintenance policy</strong>
 
 <table>
 <colgroup>
@@ -204,7 +210,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
- 
+ 
 ### <a href="" id="bkmk-reqsupportedos"></a>Supported operating systems
 
 AppLocker is supported only on certain operating systems. Some features are not available on all operating systems. For more information, see [Requirements to use AppLocker](requirements-to-use-applocker.md).

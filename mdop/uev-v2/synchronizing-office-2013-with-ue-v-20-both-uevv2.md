@@ -1,8 +1,11 @@
 ---
 title: Synchronizing Office 2013 with UE-V 2.0
 description: Synchronizing Office 2013 with UE-V 2.0
-author: jamiejdt
+author: levinec
 ms.assetid: c46feb6d-28a8-4799-888d-053531dc5842
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -115,10 +118,10 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](https://go.microsoft.com/fwlink/?LinkId=317263).
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

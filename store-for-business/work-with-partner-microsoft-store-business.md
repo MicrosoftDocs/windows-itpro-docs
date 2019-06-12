@@ -10,6 +10,8 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 10/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with solution providers in Microsoft Store for Business
@@ -59,12 +61,11 @@ The solution provider will get in touch with you. You'll have a chance to learn 
 Once you've found a solution provider and decided to work with them, they'll send you an invitation to work together from Partner Center. In Microsoft Store for Business or Education, you'll need to accept the invitation. After that, you can manage their permissions.
 
 **To accept a solution provider invitation**
-1. **Follow email link** - You'll receive an email with a link accept the solution provider invitation from your solution provider. The link will take you to Microsoft Store for Business or Education.
+1. **Follow email link** - You'll receive an email with a link to accept the solution provider invitation from your solution provider. The link will take you to Microsoft Store for Business or Education.
 2. **Accept invitation** - On **Accept Partner Invitation**, select **Authorize** to accept the invitation, accept terms of the Microsoft Cloud Agreement, and start working with the solution provider. 
 
 ![Image shows accepting an invitation from a solution provider in Microsoft Store for Business.](images/msft-accept-partner.png)
-
-  
+ 
 ## Delegate admin privileges
 
 Depending on the request made by the solution provider, part of accepting the invitation will include agreeing to give delegated admin privileges to the solution provider. This will happen when the solution provider request includes acting as a delegated administrator. For more information, see [Delegated admin privileges in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). 

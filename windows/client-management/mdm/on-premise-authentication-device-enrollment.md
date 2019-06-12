@@ -1,25 +1,28 @@
 ---
-title: On-premise authentication device enrollment
-description: This section provides an example of the mobile device enrollment protocol using on-premise authentication policy.
+title: On-premises authentication device enrollment
+description: This section provides an example of the mobile device enrollment protocol using on-premises authentication policy.
 ms.assetid: 626AC8B4-7575-4C41-8D59-185D607E3A47
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
-# On-premise authentication device enrollment
+# On-premises authentication device enrollment
 
-
-This section provides an example of the mobile device enrollment protocol using on-premise authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this topic
 
--   [Discovery service](#discovery-service)
--   [Enrollment policy web service](#enrollment-policy-web-service)
--   [Enrollment web service](#enrollment-web-service)
+- [On-premises authentication device enrollment](#on-premises-authentication-device-enrollment)
+  - [In this topic](#in-this-topic)
+  - [Discovery service](#discovery-service)
+  - [Enrollment policy web service](#enrollment-policy-web-service)
+  - [Enrollment web service](#enrollment-web-service)
 
 For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
@@ -27,9 +30,9 @@ For the list of enrollment scenarios not supported in Windows 10, see [Enrollme
 
 The discovery web service provides the configuration information necessary for a user to enroll a device with a management service. The service is a restful web service over HTTPS (server authentication only).
 
-> **Note**  The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
+> [!NOTE]
+>The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
- 
 The device’s automatic discovery flow uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
 
 The first request is a standard HTTP GET request.
@@ -126,9 +129,9 @@ The discovery response is in the XML format and includes the following fields:
 -   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
 -   Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
-> **Note**  The HTTP server response must not be chunked; it must be sent as one message.
+> [!NOTE]
+>The HTTP server response must not be chunked; it must be sent as one message.
 
- 
 The following example shows a response received from the discovery web service for OnPremise authentication:
 
 ``` syntax
@@ -211,9 +214,9 @@ After the user is authenticated, the web service retrieves the certificate templ
 
 MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. We will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
-> **Note**  The HTTP server response must not be chunked; it must be sent as one message.
+> [!NOTE]
+>The HTTP server response must not be chunked; it must be sent as one message.
 
- 
 The following snippet shows the policy web service response.
 
 ``` syntax
@@ -303,9 +306,9 @@ The RequestSecurityToken will use a custom TokenType (http:<span></span>//schema
 
 The RST may also specify a number of AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
-> **Note**  The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
+> [!NOTE]
+>The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
 
- 
 The following example shows the enrollment web service request for OnPremise authentication.
 
 ``` syntax
@@ -515,11 +518,3 @@ The following example shows the encoded provisioning XML.
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```
-
- 
-
-
-
-
-
-

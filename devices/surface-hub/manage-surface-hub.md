@@ -2,11 +2,13 @@
 title: Manage Microsoft Surface Hub
 description: How to manage your Surface Hub after finishing the first-run program.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
+ms.reviewer: 
+manager: dansimp
 keywords: manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
@@ -32,7 +34,7 @@ Learn about managing and updating Surface Hub.
 | [Manage Surface Hub settings](manage-surface-hub-settings.md) |Topics related to managing Surface Hub settings: accessibility, device account, device reset, fully qualified domain name, Windows Update settings, and wireless network |
 | [Install apps on your Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.|
 [Configure Surface Hub Start menu](surface-hub-start-menu.md) | Use MDM to customize the Start menu for Surface Hub.
-| [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md)  | Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.   |
+| [Set up and use Microsoft Whiteboard](whiteboard-collaboration.md)  | Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.   |
 | [End a meeting with End session](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | At the end of a meeting, users can tap **End session** to clean up any sensitive data and prepare the device for the next meeting.|
 | [Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | You can sign in to a Surface Hub without a password using the Microsoft Authenticator app, available on Android and iOS.   |
 | [Save your BitLocker key](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | Every Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.|
@@ -41,6 +43,7 @@ Learn about managing and updating Surface Hub.
  [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | 802.1x Wired Authentication MDM policies have been enabled on Surface Hub devices. 
 | [Using a room control system](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
 [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | Use the Surface Hub Recovery Tool to re-image the Surface Hub SSD.
+[Surface Hub SSD replacement](surface-hub-ssd-replacement.md) | Learn how to remove and replace the solid state drive in your Surface Hub.
 
 ## Related topics
 

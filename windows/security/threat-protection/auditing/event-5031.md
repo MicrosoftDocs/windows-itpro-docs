@@ -1,13 +1,15 @@
 ---
 title: 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network. (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Describes security event 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
-ms.date: 04/19/2017
+author: dansimp
 ---
 
 # 5031(F): The Windows Firewall Service blocked an application from accepting incoming connections on the network.
@@ -15,6 +17,8 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2012 R2
+-   Windows Server 2012
 
 
 <img src="images/event-5031.png" alt="Event 5031 illustration" width="449" height="317" hspace="10" align="left" />

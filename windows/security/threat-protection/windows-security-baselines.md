@@ -5,9 +5,14 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: sagaudre
-author: brianlic-msft
+ms.author: dolmont
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 06/25/2018
+ms.reviewer: 
 ---
 
 # Windows security baselines

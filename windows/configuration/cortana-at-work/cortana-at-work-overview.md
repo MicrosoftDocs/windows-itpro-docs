@@ -1,13 +1,14 @@
 ---
 title: Cortana integration in your business or enterprise (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: eross-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: lizross
-ms.date: 10/05/2017
+ms.author: dansimp
 ---
 
 # Cortana integration in your business or enterprise
@@ -56,8 +57,6 @@ Cortana is covered under the [Microsoft Privacy Statement](https://privacy.micro
 
 ## See also
 - [What is Cortana?](https://go.microsoft.com/fwlink/p/?LinkId=746818)
-
-- [Cortana and Windows](https://go.microsoft.com/fwlink/?LinkId=717384)
 
 - [Known issues for Windows Desktop Search and Cortana in Windows 10](https://support.microsoft.com/help/3206883/known-issues-for-windows-desktop-search-and-cortana-in-windows-10)
 

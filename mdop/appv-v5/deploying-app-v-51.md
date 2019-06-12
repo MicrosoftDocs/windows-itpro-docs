@@ -1,8 +1,11 @@
 ---
 title: Deploying App-V 5.1
 description: Deploying App-V 5.1
-author: jamiejdt
+author: dansimp
 ms.assetid: af8742bf-e24b-402a-bcf4-0f2297f26bc4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -46,10 +49,10 @@ Microsoft Application Virtualization (App-V) 5.1 supports a number of different 
 
 -   [Technical Reference for App-V 5.1](technical-reference-for-app-v-51.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

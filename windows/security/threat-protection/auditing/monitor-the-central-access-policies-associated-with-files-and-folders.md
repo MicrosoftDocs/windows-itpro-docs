@@ -2,12 +2,18 @@
 title: Monitor the central access policies associated with files and folders (Windows 10)
 description: This topic for the IT professional describes how to monitor changes to the central access policies that are associated with files and folders when you are using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: 2ea8fc23-b3ac-432f-87b0-6a16506e8eed
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -25,7 +31,7 @@ For info about monitoring potential central access policy changes for an entire 
 Use the following procedures to configure settings to monitor central access policies that are associated with files. These procedures assume that you have configured and deployed Dynamic Access Control in your network. For more information about how to configure and deploy Dynamic Access Control, see [Dynamic Access Control: Scenario Overview](https://technet.microsoft.com/library/hh831717.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+ 
 **To configure settings to monitor central access policies associated with files or folders**
 
 1.  Sign in to your domain controller by using domain administrator credentials.
@@ -60,7 +66,7 @@ After you configure settings to monitor changes to the central access policies t
 3.  Right-click the file or folder, click **Properties**, click the **Security** tab, and then click **Advanced**.
 4.  Click the **Central Policy** tab, click **Change**, and select a different central access policy (if one is available) or select **No Central Access Policy**, and then click **OK** twice.
     >**Note:**  You must select a setting that is different than your original setting to generate the audit event.
-     
+     
 5.  In Server Manager, click **Tools**, and then click **Event Viewer**.
 6.  Expand **Windows Logs**, and then click **Security**.
 7.  Look for event 4913, which is generated when the central access policy that is associated with a file or folder is changed. This event includes the security identifiers (SIDs) of the old and new central access policies.

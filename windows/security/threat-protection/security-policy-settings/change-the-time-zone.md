@@ -2,12 +2,18 @@
 title: Change the time zone - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Change the time zone security policy setting.
 ms.assetid: 3b1afae4-68bb-472f-a43e-49e300d73e50
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -49,7 +55,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators<br/>Users| 
 | Member Server Effective Default Settings | Administrators<br/>Users| 
 | Client Computer Effective Default Settings | Administrators<br/>Users| 
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.

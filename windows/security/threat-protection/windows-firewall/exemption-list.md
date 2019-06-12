@@ -2,12 +2,18 @@
 title: Exemption List (Windows 10)
 description: Exemption List
 ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

@@ -1,12 +1,16 @@
 ---
 title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10)
 description: How to configure the client to receive package and connection groups updates from the publishing server.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # How to configure the client to receive package and connection groups updates from the publishing server
 
@@ -54,9 +58,9 @@ This article will tell you how to configure the App-V client to receive updates 
 
     This cmdlet will query the publishing server for which packages and connection groups need to be added or removed for this particular client based on your configured entitlements for the packages and connection groups on the management server.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

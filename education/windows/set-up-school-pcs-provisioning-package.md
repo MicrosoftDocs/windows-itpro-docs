@@ -3,14 +3,15 @@ title: What's in Set up School PCs provisioning package
 description: Lists the provisioning package settings that are configured in the Set up School PCs app.  
 keywords: shared cart, shared PC, school, set up school pcs  
 ms.prod: w10  
-ms.technology: Windows  
 ms.mktglfcycl: plan  
 ms.sitesec: library  
 ms.pagetype: edu  
 ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/17/2018  
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # What's in my provisioning package?
@@ -53,53 +54,51 @@ This section lists only the MDM and local group policies that are configured uni
 For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
 
 
-|Policy name  |Default value |Description |
-|---------|---------|---------|
-|Authority|User-defined  | Authenticates the admin user. Value is set automatically when signed in to Azure AD.
-|BPRT|User-defined| Value is set automatically when signed in to Azure AD. Allows you to create the provisioning package. |
-|WLAN Setting| XML is generated from the Wi-Fi profile in the Set up School PCs app.| Configures settings for wireless connectivity.| 
-|Hide OOBE for desktop| True | Hides the interactive OOBE flow for Windows 10.|
-|Download Mode|1 - HTTP blended with peering behind the same NAT|Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps, and App updates|
-|Select when Preview Builds and Feature Updates are received | 32 - Semi-annual Channel. Device gets feature updates from Semi-annual Channel| Specifies how frequently devices receive preview builds and feature updates.|  
-|Allow auto update   | 4 - Auto-installs and restarts without device-user control    |  When an auto update is available, it auto-installs and restarts the device without any input or action from the device user.|
-|Configure automatic updates  | 3 - Set to install at 3am    |  Scheduled time to install updates.|
-|Update power policy for cart restarts   | 1 - Configured| Skips all restart checks to ensure that the reboot will happen at the scheduled install time. |  
-|Select when Preview Builds and Feature Updates are received   | 365 days | Defers Feature Updates for the specified number of days. When not specified, defaults to 365 days.|  
-|Allow all trusted apps |   Disabled      | Prevents untrusted apps from being installed to device        |
-|Allow developer unlock  |   Disabled     | Students cannot unlock the PC and use it in developer mode          |
-|Allow Cortana | Disabled | Cortana is not allowed on the device.
-|Allow manual MDM unenrollment   | Disabled          |   Students cannot remove the mobile device manager from their device.     |
-|Settings page visibility|Enabled |Specific pages in the System Settings app are not visible or accessible to students.|
-|Allow add provisioning package  |  Disabled         | Students cannot add and upload new provisioning packages to their device.        |
-|Allow remove provisioning package   | Disabled       | Students cannot remove packages that you've uploaded to their device, including the Set up School PCs app        |
-|Start Layout|Enabled |Lets you specify the Start layout for users and prevents them from changing the configuration.|
-|Import Edge Assets| Enabled| Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files.|  
-|Allow pinned folder downloads|1 - The shortcut is visible and disables the setting in the Settings app |Makes the Downloads shortcut on the Start menu visible to students.|
-|Allow pinned folder File Explorer|1 - The shortcut is visible and disables the setting in the Settings app |Makes the File Explorer shortcut on the Start menu visible to students.|
-|Personalization  |     Deploy lock screen image  | Set to the image you picked when you customized the lock screen during device setup. If you didn't customize the image, the computer will show the default.     | Deploys a jpg, jpeg, or png image to be used as lock screen image on the device.
-|Personalization| Lock screen image URL| Image filename| You can specify a jpg, jpeg, or png image to be used as the device lock screen image. This setting can take an http or https URL to a remote image to be downloaded, or a file URLto an existing local image. 
-|Update|Active hours end    | 5 PM       | There will be no update reboots before this time.        |
-|Update|Active hours start     |  7 AM     |  There will be no update reboots after this time.      |    
-|Updates Windows    |  Nightly       |  Sets Windows to update on a nightly basis.       |  
+|                         Policy name                         |                                 Default value                                  |                                                                                     Description                                                                                     |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                          Authority                          |                                  User-defined                                  |                                                Authenticates the admin user. Value is set automatically when signed in to Azure AD.                                                 |
+|                            BPRT                             |                                  User-defined                                  |                                        Value is set automatically when signed in to Azure AD. Allows you to create the provisioning package.                                        |
+|                        WLAN Setting                         |     XML is generated from the Wi-Fi profile in the Set up School PCs app.      |                                                                   Configures settings for wireless connectivity.                                                                    |
+|                    Hide OOBE for desktop                    |                                      True                                      |                                                                   Hides the interactive OOBE flow for Windows 10.                                                                   |
+|                        Download Mode                        |               1 - HTTP blended with peering behind the same NAT                |                               Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps, and App updates                               |
+| Select when Preview Builds and Feature Updates are received | 32 - Semi-annual Channel. Device gets feature updates from Semi-annual Channel |                                                    Specifies how frequently devices receive preview builds and feature updates.                                                     |
+|                      Allow auto update                      |           4 - Auto-installs and restarts without device-user control           |                            When an auto update is available, it auto-installs and restarts the device without any input or action from the device user.                             |
+|                 Configure automatic updates                 |                           3 - Set to install at 3am                            |                                                                         Scheduled time to install updates.                                                                          |
+|            Update power policy for cart restarts            |                                 1 - Configured                                 |                                            Skips all restart checks to ensure that the reboot will happen at the scheduled install time.                                            |
+| Select when Preview Builds and Feature Updates are received |                                    365 days                                    |                                         Defers Feature Updates for the specified number of days. When not specified, defaults to 365 days.                                          |
+|                   Allow all trusted apps                    |                                    Disabled                                    |                                                               Prevents untrusted apps from being installed to device                                                                |
+|                   Allow developer unlock                    |                                    Disabled                                    |                                                             Students cannot unlock the PC and use it in developer mode                                                              |
+|                        Allow Cortana                        |                                    Disabled                                    |                                                                        Cortana is not allowed on the device.                                                                        |
+|                Allow manual MDM unenrollment                |                                    Disabled                                    |                                                         Students cannot remove the mobile device manager from their device.                                                         |
+|                  Settings page visibility                   |                                    Enabled                                     |                                                Specific pages in the System Settings app are not visible or accessible to students.                                                 |
+|               Allow add provisioning package                |                                    Disabled                                    |                                                      Students cannot add and upload new provisioning packages to their device.                                                      |
+|              Allow remove provisioning package              |                                    Disabled                                    |                                      Students cannot remove packages that you've uploaded to their device, including the Set up School PCs app                                      |
+|                        Start Layout                         |                                    Enabled                                     |                                           Lets you specify the Start layout for users and prevents them from changing the configuration.                                            |
+|                     Import Edge Assets                      |                                    Enabled                                     | Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files. |
+|                Allow pinned folder downloads                |    1 - The shortcut is visible and disables the setting in the Settings app    |                                                         Makes the Downloads shortcut on the Start menu visible to students.                                                         |
+|              Allow pinned folder File Explorer              |    1 - The shortcut is visible and disables the setting in the Settings app    |                                                       Makes the File Explorer shortcut on the Start menu visible to students.                                                       |
+|                       Personalization                       |                            Deploy lock screen image                            |             Set to the image you picked when you customized the lock screen during device setup. If you didn't customize the image, the computer will show the default.             |
+|                       Personalization                       |                             Lock screen image URL                              |                                                                                   Image filename                                                                                    |
+|                           Update                            |                                Active hours end                                |                                                                                        5 PM                                                                                         |
+|                           Update                            |                               Active hours start                               |                                                                                        7 AM                                                                                         |
+|                       Updates Windows                       |                                    Nightly                                     |                                                                     Sets Windows to update on a nightly basis.                                                                      |
 
 ## Apps uninstalled from Windows 10 devices
-Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  The following table lists all apps uninstalled from Windows 10 devices.  
+Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  ALl apps uninstalled from Windows 10 devices include:  
 
 
-|App name |Application User Model ID |
-|---------|---------|
-|3D Builder | Microsoft.3DBuilder_8wekyb3d8bbwe | 
-|Bing Weather  | Microsoft.BingWeather_8wekyb3d8bbwe  | 
-|Desktop App Installer|Microsoft.DesktopAppInstaller_8wekyb3d8bbwe|
-|Get Started | Microsoft.Getstarted_8wekyb3d8bbw |  
-|Messaging|Microsoft.Messaging_8wekyb3d8bbwe  
-|Microsoft Office Hub| Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe |  
-|Microsoft Solitaire Collection | Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe |   
-|One Connect|Microsoft.OneConnect_8wekyb3d8bbwe|
-|Paid Wi-Fi & Cellular   | Microsoft.OneConnect_8wekyb3d8bbwe | 
-|Feedback Hub   |  Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe  |    
-|Xbox | Microsoft.XboxApp_8wekyb3d8bbwe |  
-|Mail/Calendar | microsoft.windowscommunicationsapps_8wekyb3d8bbwe|  
+* Mixed Reality Viewer 
+* Weather  
+* Desktop App Installer
+* Tips 
+* Messaging
+* My Office
+* Microsoft Solitaire Collection   
+* Mobile Plans
+* Feedback Hub     
+* Xbox 
+* Mail/Calendar 
+* Skype 
 
 ## Apps installed on Windows 10 devices  
 Set up School PCs uses the Universal app install policy to install school-relevant apps on  all Windows 10 devices. Apps that are installed include:

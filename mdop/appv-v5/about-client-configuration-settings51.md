@@ -1,8 +1,11 @@
 ---
 title: About Client Configuration Settings
 description: About Client Configuration Settings
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 18bb307a-7eda-4dd6-a83e-6afaefd99470
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -62,10 +65,10 @@ The following table displays information about the App-V 5.1 client configuratio
 | HideUI<br>**Important**  This setting is available only with App-V 5.0 SP2.| Not available. | Hides the publishing refresh progress bar. | 1 (Enabled), 0 (Disabled) | | |
 | ProcessesUsingVirtualComponents | Not available. | Specifies a list of process paths (that may contain wildcards), which are candidates for using dynamic virtualization (supported shell extensions, browser helper objects, and ActiveX controls). Only processes whose full path matches one of these items can use dynamic virtualization. | String | Virtualization\ProcessesUsingVirtualComponents | Empty string. |
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

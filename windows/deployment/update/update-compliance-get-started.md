@@ -1,15 +1,18 @@
 ---
 title: Get started with Update Compliance (Windows 10)
-description: Configure Update Compliance in OMS to see the status of updates and antimalware protection on devices in your network.
+ms.reviewer: 
+manager: laurawi
+description: Configure Update Compliance in Azure Portal to see the status of updates and antimalware protection on devices in your network.
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: Jaimeo
-ms.author: jaimeo
-ms.date: 10/04/2018
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Get started with Update Compliance
@@ -38,29 +41,29 @@ Update Compliance is offered as a solution which is linked to a new or existing 
 > [!NOTE]
 > Update Compliance is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Update Compliance, but no Azure charges are expected to accrue to the subscription as a result of using Update Compliance. 
 
-2.	In the Azure portal select **+ Create a resource**, and search for “Update Compliance". You should see it in the results below. 
+2. In the Azure portal select **+ Create a resource**, and search for “Update Compliance". You should see it in the results below. 
 
 ![Update Compliance marketplace search results](images/UC_00_marketplace_search.png)
 
-3.	Select **Update Compliance** and a blade will appear summarizing the solution’s offerings. At the bottom, select **Create** to begin adding the solution to Azure.
+3. Select **Update Compliance** and a blade will appear summarizing the solution’s offerings. At the bottom, select **Create** to begin adding the solution to Azure.
 
 ![Update Compliance solution creation](images/UC_01_marketplace_create.png)
 
-4.	Choose an existing workspace or create a new workspace that will be assigned to the Update Compliance solution. 
-    - If you already have another Windows Analytics solution, you should use the same workspace. 
-    - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
-        - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
-        - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
-        - For the location setting, choose the Azure region where you would prefer the data to be stored.
-        - For the pricing tier select **Free**.
+4. Choose an existing workspace or create a new workspace that will be assigned to the Update Compliance solution. 
+   - If you already have another Windows Analytics solution, you should use the same workspace. 
+   - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
+       - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
+       - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
+       - For the location setting, choose the Azure region where you would prefer the data to be stored.
+       - For the pricing tier select **per GB**.
 
 ![Update Compliance workspace creation](images/UC_02_workspace_create.png)
 
-5.	The resource group and workspace creation process could take a few minutes. After this, you are able to use that workspace for Update Compliance. Select **Create**.
+5. The resource group and workspace creation process could take a few minutes. After this, you are able to use that workspace for Update Compliance. Select **Create**.
 
 ![Update Compliance workspace selection](images/UC_03_workspace_select.png)
 
-6.	Watch for a notification in the Azure portal that your deployment has been successful. This might take a few minutes. Then, select **Go to resource**. 
+6. Watch for a notification in the Azure portal that your deployment has been successful. This might take a few minutes. Then, select **Go to resource**. 
 
 ![Update Compliance deployment successful](images/UC_04_resourcegrp_deployment_successful.png)
 

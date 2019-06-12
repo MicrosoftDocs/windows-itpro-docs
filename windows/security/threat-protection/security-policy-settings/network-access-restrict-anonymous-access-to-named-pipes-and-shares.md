@@ -2,12 +2,18 @@
 title: Network access Restrict anonymous access to Named Pipes and Shares (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network access Restrict anonymous access to Named Pipes and Shares security policy setting.
 ms.assetid: e66cd708-7322-4d49-9b57-1bf8ec7a4c10
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -51,7 +57,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings | Enabled| 
 | Client Computer Effective Default Settings| Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

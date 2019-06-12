@@ -1,15 +1,20 @@
 ---
 title: Microsoft-compatible security key 
-description: Windows 10 enables users to sign in to their device using a security key. How is  a Microsoft-compatible security key different (and better) than any other FIDO2 security key
+description: Windows 10 enables users to sign in to their device using a security key. How is  a Microsoft-compatible security key different (and better) than any other FIDO2 security key
 keywords: FIDO2, security key, CTAP, Hello, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: aabhathipsay
-ms.author: aathipsa
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 11/14/2018
+ms.reviewer: 
 ---
 # What is a Microsoft-compatible security key? 
 > [!Warning]

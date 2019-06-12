@@ -2,12 +2,18 @@
 title: Deny log on as a service (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a service security policy setting.
 ms.assetid: f1114964-df86-4278-9b11-e35c66949794
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -52,7 +58,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Not defined | 
 | Member Server Effective Default Settings | Not defined | 
 | Client Computer Effective Default Settings | Not defined | 
- 
+ 
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.

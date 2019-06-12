@@ -2,12 +2,18 @@
 title: Basic security audit policy settings (Windows 10)
 description: Basic security audit policy settings are found under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
 ms.assetid: 31C2C453-2CFC-4D9E-BC88-8CE1C1A8F900
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: brianlic-msft
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -31,9 +37,9 @@ Basic security audit policy settings are found under Computer Configuration\\Win
 | [Audit privilege use](basic-audit-privilege-use.md) | Determines whether to audit each instance of a user exercising a user right. |
 | [Audit process tracking](basic-audit-process-tracking.md) | Determines whether to audit detailed tracking information for events such as program activation, process exit, handle duplication, and indirect object access.| 
 | [Audit system events](basic-audit-system-events.md) | Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log. |
- 
+ 
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+ 
+ 

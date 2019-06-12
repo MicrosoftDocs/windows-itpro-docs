@@ -1,12 +1,16 @@
 ---
 title: How to create a package accelerator (Windows 10)
 description: How to create a package accelerator.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to create a package accelerator
 
@@ -49,7 +53,7 @@ Use the following procedure to create a package accelerator.
 
 6. On the **Gathering Information** page, review the files that you couldn't find in the location specified by the **Installation Files** page. If the files displayed are not required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
 
-    >[!NOTE]
+   > [!NOTE]
     >You must either remove the unrequired files or select **Previous** and locate the required files to advance to the next page of this wizard.
 
 7. On the **Select Files** page, carefully review the detected files. Clear any file the package accelerator doesn't need to run successfully and select only the files that the application requires. When you're done, select **Next**.
@@ -67,9 +71,9 @@ Use the following procedure to create a package accelerator.
     >[!IMPORTANT]
     >You should always digitally sign the package accelerator to ensure that it is secure and can be verified by a publisher during application.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

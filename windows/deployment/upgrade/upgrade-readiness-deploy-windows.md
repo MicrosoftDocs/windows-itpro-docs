@@ -1,9 +1,13 @@
-﻿---
+---
 title: Upgrade Readiness - Get a list of computers that are upgrade ready (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Readiness.
 ms.prod: w10
-author: jaimeo
-ms.date: 04/19/2017
+author: lomayor
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 3: Deploy Windows
@@ -35,7 +39,7 @@ Select **Export computers** for more details, including computer name, manufactu
 
 ## Computer groups
 
-Computer groups allow you to segment your environment by creating device groups based on OMS log search results, or by importing groups from Active Directory, WSUS or System Center Configuration Manager. Computer groups are an OMS feature. For more information, see [Computer groups in OMS](https://blogs.technet.microsoft.com/msoms/2016/04/04/computer-groups-in-oms/).
+Computer groups allow you to segment your environment by creating device groups based on log search results, or by importing groups from Active Directory, WSUS or System Center Configuration Manager. Computer groups are an OMS feature. For more information, see [Computer groups in OMS](https://blogs.technet.microsoft.com/msoms/2016/04/04/computer-groups-in-oms/).
 
 Query based computer groups are recommended in the initial release of this feature. A feature known as **Configuration Manager Upgrade Readiness Connector** is anticipated in a future release that will enable synchronization of **ConfigMgr Collections** with computer groups in OMS.
 

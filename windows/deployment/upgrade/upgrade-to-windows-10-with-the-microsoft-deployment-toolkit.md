@@ -2,14 +2,17 @@
 title: Perform an in-place upgrade to Windows 10 with MDT (Windows 10)
 description: The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
 ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
-ms.date: 07/27/2017
+author: lomayor
+ms.topic: article
 ---
 
 # Perform an in-place upgrade to Windows 10 with MDT
@@ -35,13 +38,13 @@ MDT adds support for Windows 10 deployment, including a new in-place upgrade ta
 
 The steps to create the deployment share for production are the same as when you created the deployment share to create the custom reference image:
 
-1.  On MDT01, log on as Administrator in the CONTOSO domain with a password of **P@ssw0rd**.
-2.  Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
-3.  On the **Path** page, in the **Deployment share path** text box, type **E:\\MDTProduction**, and then click **Next**.
-4.  On the **Share** page, in the **Share name** text box, type **MDTProduction$**, and then click **Next**.
-5.  On the **Descriptive Name** page, in the **Deployment share** description text box, type **MDT Production**, and then click **Next**.
-6.  On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
-7.  Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
+1. On MDT01, log on as Administrator in the CONTOSO domain with a password of <strong>P@ssw0rd</strong>.
+2. Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
+3. On the **Path** page, in the **Deployment share path** text box, type **E:\\MDTProduction**, and then click **Next**.
+4. On the **Share** page, in the **Share name** text box, type **MDTProduction$**, and then click **Next**.
+5. On the **Descriptive Name** page, in the **Deployment share** description text box, type **MDT Production**, and then click **Next**.
+6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
+7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
 ## Add Windows 10 Enterprise x64 (full source)
 
@@ -81,16 +84,16 @@ Figure 3. The task sequence to upgrade to Windows 10.
 
 To initiate the in-place upgrade, perform the following steps on PC0003 (currently running Windows 7 SP1).
 
-1.  Start the MDT deployment wizard by running the following command: **\\\\MDT01\\MDTProduction$\\Scripts\\LiteTouch.vbs**
-2.  Select the **Windows 10 Enterprise x64 RTM Upgrade** task sequence, and then click **Next**.
+1. Start the MDT deployment wizard by running the following command: **\\\\MDT01\\MDTProduction$\\Scripts\\LiteTouch.vbs**
+2. Select the **Windows 10 Enterprise x64 RTM Upgrade** task sequence, and then click **Next**.
 
-    ![figure 4](../images/upgrademdt-fig4-selecttask.png)
+   ![figure 4](../images/upgrademdt-fig4-selecttask.png)
 
-    Figure 4. Upgrade task sequence.
+   Figure 4. Upgrade task sequence.
     
-3.  On the **Credentials** tab, specify the **MDT\_BA** account, **P@ssw0rd** password, and **CONTOSO** for the domain. (Some or all of these values can be specified in Bootstrap.ini so they are automatically populated.)
-4.  On the **Ready** tab, click **Begin** to start the task sequence.
-When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
+3. On the **Credentials** tab, specify the **MDT\_BA** account, <strong>P@ssw0rd</strong> password, and **CONTOSO** for the domain. (Some or all of these values can be specified in Bootstrap.ini so they are automatically populated.)
+4. On the **Ready** tab, click **Begin** to start the task sequence.
+   When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 
 ![figure 5](../images/upgrademdt-fig5-winupgrade.png)
 
@@ -103,4 +106,4 @@ After the task sequence completes, the computer will be fully upgraded to Window
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)
 
 [Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
- 
+ 

@@ -2,13 +2,19 @@
 title: Audit Audit the use of Backup and Restore privilege (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Audit the use of Backup and Restore privilege security policy setting.
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 04/19/2017
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 04/01/2019
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
@@ -48,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled | 
 | Member Server Effective Default Settings | Disabled | 
 | Client Computer Effective Default Settings | Disabled | 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -76,7 +82,7 @@ When the backup and restore function is used, it creates a copy of the file syst
 ### Countermeasure
 
 Enable the **Audit: Audit the use of Backup and Restore privilege** setting. Alternatively, implement automatic log backup by configuring the **AutoBackupLogFiles** registry key. If you enable this option when the [Audit privilege use](../auditing/basic-audit-privilege-use.md) setting is also enabled, an audit event is generated for every file that is backed up or restored. This information could help you to identify an account that was used to accidentally or maliciously restore data in an unauthorized manner.
-For more information about configuring this key, see Microsoft Knowledge Base article [100879](https://go.microsoft.com/fwlink/p/?LinkId=100879).
+For more information about configuring this key, see [Eventlog Key](https://docs.microsoft.com/windows/desktop/EventLog/eventlog-key).
 
 ### Potential impact
 
@@ -85,5 +91,5 @@ If you enable this policy setting, a large number of security events could be ge
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+ 
+ 

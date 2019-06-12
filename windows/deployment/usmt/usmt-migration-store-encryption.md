@@ -2,11 +2,15 @@
 title: Migration Store Encryption (Windows 10)
 description: Migration Store Encryption
 ms.assetid: b28c2657-b986-4487-bd38-cb81500b831d
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Migration Store Encryption
@@ -50,21 +54,21 @@ The following table describes the command-line encryption options in USMT.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the UsmtUtils command with the **/ec** option. For more information see [UsmtUtils Syntax](usmt-utilities.md)
 
- 
+ 
 
 ## Related topics
 
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

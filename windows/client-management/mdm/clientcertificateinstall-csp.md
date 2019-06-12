@@ -2,11 +2,13 @@
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: pashort
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
+author: manikadhiman
 ms.date: 10/16/2018
 ---
 
@@ -28,7 +30,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 ![clientcertificateinstall csp](images/provisioning-csp-clientcertificateinstall.png)
 
 <a href="" id="device-or-user"></a>**Device or User**
-<p style="margin-left: 20px">For device certificates, use **./Device/Vendor/MSFT** path and for user certificates use **./User/Vendor/MSFT** path.
+<p style="margin-left: 20px">For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
 <a href="" id="clientcertificateinstall"></a>**ClientCertificateInstall**
 <p style="margin-left: 20px">The root node for the ClientCertificateInstaller configuration service provider.
@@ -38,7 +40,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/****_UniqueID_**
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/**<strong>*UniqueID*</strong>
 <p style="margin-left: 20px">Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
 
 <p style="margin-left: 20px">The data type format is node.
@@ -70,7 +72,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 <p style="margin-left: 20px">Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**
-<p style="margin-left: 20px">CRYPT\_DATA\_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before this is called. This also sets the Status node to the current Status of the operation.
+<p style="margin-left: 20px">CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before this is called. This also sets the Status node to the current Status of the operation.
 
 <p style="margin-left: 20px">The data type format is binary.
 
@@ -80,7 +82,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 <p style="margin-left: 20px">If Add is called on this node for a new PFX, the certificate will be added. When a certificate does not exist, Replace operation on this node will fail.
 
-<p style="margin-left: 20px">In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT\_DATA\_BLOB, which can be found in [CRYPT\_INTEGER\_BLOB](https://go.microsoft.com/fwlink/p/?LinkId=523871).
+<p style="margin-left: 20px">In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="https://go.microsoft.com/fwlink/p/?LinkId=523871" data-raw-source="[CRYPT\_INTEGER\_BLOB](https://go.microsoft.com/fwlink/p/?LinkId=523871)">CRYPT_INTEGER_BLOB</a>.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**
 <p style="margin-left: 20px">Password that protects the PFX blob. This is required if the PFX is password protected.
@@ -107,7 +109,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 > **Note**  You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
- 
+ 
 <p style="margin-left: 20px">The data type bool.
 
 <p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
@@ -138,8 +140,8 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 > **Note**  An alert is sent after the SCEP certificate is installed.
 
- 
-<a href="" id="clientcertificateinstall-scep-uniqueid"></a>**ClientCertificateInstall/SCEP/****_UniqueID_**
+ 
+<a href="" id="clientcertificateinstall-scep-uniqueid"></a>**ClientCertificateInstall/SCEP/**<strong>*UniqueID*</strong>
 <p style="margin-left: 20px">A unique ID to differentiate different certificate installation requests.
 
 
@@ -150,7 +152,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 > **Note**  Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
 
- 
+ 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-serverurl"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ServerURL**
 <p style="margin-left: 20px">Required for SCEP certificate enrollment. Specifies the certificate enrollment server. Multiple server URLs can be listed, separated by semicolons.
 
@@ -166,7 +168,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**
-<p style="margin-left: 20px">Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus **+**. For example, *OID1*+*OID2*+*OID3*.
+<p style="margin-left: 20px">Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
 <p style="margin-left: 20px">Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have the second (0x20), fourth (0x80) or both bits set. If the value doesn’t have those bits set, the configuration will fail.
@@ -187,7 +189,7 @@ Data type is string.
 
 > **Note**  Even if the private key is protected by TPM, it is not protected with a TPM PIN.
 
- 
+ 
 <p style="margin-left: 20px">The data type is an integer corresponding to one of the following values:
 
 | Value | Description                                                                                                                                                                                           |
@@ -197,7 +199,7 @@ Data type is string.
 | 3     | (Default) Private key saved in software KSP.                                                                                                                                                          |
 | 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specifed, otherwise enrollment will fail. |
 
- 
+ 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**
@@ -234,7 +236,7 @@ Data type is string.
 
 > **Note**  This name is typically ignored by the SCEP server; therefore the MDM server typically doesn’t need to provide it.
 
- 
+ 
 <p style="margin-left: 20px">Data type is string.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
@@ -251,7 +253,7 @@ Data type is string.
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-hashalgorithm"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/HashAlgorithm**
-<p style="margin-left: 20px">Required. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated with **+**.
+<p style="margin-left: 20px">Required. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated with <strong>+</strong>.
 
 <p style="margin-left: 20px">For Windows Hello for Business, only SHA256 is the supported algorithm.
 
@@ -269,7 +271,7 @@ Data type is string.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectalternativenames"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectAlternativeNames**
 <p style="margin-left: 20px">Optional. Specifies subject alternative names (SAN). Multiple alternative names can be specified by this node. Each name is the combination of name format+actual name. Refer to the name type definitions in MSDN for more information.
 
-<p style="margin-left: 20px">Each pair is separated by semicolon. For example, multiple SANs are presented in the format of *\[name format1\]*+*\[actual name1\]*;*\[name format 2\]*+*\[actual name2\]*.
+<p style="margin-left: 20px">Each pair is separated by semicolon. For example, multiple SANs are presented in the format of <em>[name format1]</em>+<em>[actual name1]</em>;<em>[name format 2]</em>+<em>[actual name2]</em>.
 
 <p style="margin-left: 20px">Data type is string.
 
@@ -288,7 +290,7 @@ Data type is string.
 
 > **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
- 
+ 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**
@@ -298,7 +300,7 @@ Data type is string.
 
 >**Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
- 
+ 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-containername"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ContainerName**
@@ -352,7 +354,7 @@ Data type is string.
 | 16    | Action failed                                                                                     |
 | 32    | Unknown                                                                                           |
 
- 
+ 
 <a href="" id="clientcertificateinstall-scep-uniqueid-errorcode"></a>**ClientCertificateInstall/SCEP/*UniqueID*/ErrorCode**
 <p style="margin-left: 20px">Optional. An integer value that indicates the HRESULT of the last enrollment error code.
 
@@ -666,9 +668,9 @@ Add a PFX certificate. The PFX certificate password is encrypted with a custom c
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Accounts Rename administrator account (Windows 10)
 description: This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
 ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -48,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Administrator |
 | Member Server Effective Default Settings | Administrator |
 | Client Computer Effective Default Settings | Administrator |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -86,5 +92,5 @@ You must provide users who are authorized to use this account with the new accou
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

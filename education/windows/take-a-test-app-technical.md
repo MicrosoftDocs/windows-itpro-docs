@@ -3,14 +3,15 @@ title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
 keywords: take a test, test taking, school, policies
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: mjcaparas
+ms.author: macapara
 ms.date: 11/28/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Take a Test app technical reference 
@@ -24,7 +25,7 @@ Take a Test is an app that locks down the PC and displays an online assessment w
 
 Whether you are a teacher or IT administrator, you can easily configure Take a Test to meet your testing needs. For high-stakes tests, the app creates a browser-based, locked-down environment for more secure online assessments. This means that students taking the tests that don’t have copy/paste privileges, can’t access to files and applications, and are free from distractions. For simple tests and quizzes, Take a Test can be configured to use the teacher’s preferred assessment website to deliver digital assessments
 
-Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. For more information, see [Take a Test Javascript API](https://docs.microsoft.com/windows/uwp/apps-for-education/take-a-test-api).
+Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](https://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. For more information, see [Take a Test Javascript API](https://docs.microsoft.com/windows/uwp/apps-for-education/take-a-test-api).
 
 ## PC lockdown for assessment
 

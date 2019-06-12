@@ -2,14 +2,19 @@
 title: Why a PIN is better than a password (Windows 10)
 description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password .
 ms.assetid: A6FC0520-01E6-4E90-B53D-6C4C4E780212
+ms.reviewer: 
 keywords: pin, security, password, hello
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.localizationpriority: medium
-ms.author: daniha
 ms.date: 10/23/2017
 ---
 
@@ -39,7 +44,7 @@ When the PIN is created, it establishes a trusted relationship with the identity
 
 The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. All Windows 10 Mobile phones and many modern laptops have TPM.
 
-User key material is generated and available within the Trusted Platform Module (TPM) of the user device, which protects it from attackers who want to capture the key material and reuse it. Because Hello uses asymmetrical key pairs, users credentials can’t be stolen in cases where the identity provider or websites the user accesses have been compromised.
+User key material is generated and available within the Trusted Platform Module (TPM) of the user device, which protects it from attackers who want to capture the key material and reuse it. Because Hello uses asymmetric key pairs, users credentials can’t be stolen in cases where the identity provider or websites the user accesses have been compromised.
 
 The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. After too many incorrect guesses, the device is locked.
 

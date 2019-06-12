@@ -3,14 +3,15 @@ title: Take tests in Windows 10
 description: Learn how to set up and use the Take a Test app.
 keywords: take a test, test taking, school, how to, use Take a Test
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Take tests in Windows 10
@@ -40,22 +41,22 @@ There are several ways to configure devices for assessments. You can:
 
     There are different methods to configure the assessment URL and a dedicated testing account depending on whether you're setting up Take a Test on a single PC or multiple PCs.
 
-    - **For a single PC**
+  - **For a single PC**
         
-        You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
+      You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
 
-    - **For multiple PCs**
+  - **For multiple PCs**
     
-        You can use any of these methods:
-            - Mobile device management (MDM) or Microsoft System Center Configuration Manager
-            - A provisioning package created in Windows Configuration Designer
-            - Group Policy to deploy a scheduled task that runs a Powershell script
+      You can use any of these methods:
+    - Mobile device management (MDM) or Microsoft System Center Configuration Manager
+    - A provisioning package created in Windows Configuration Designer
+    - Group Policy to deploy a scheduled task that runs a Powershell script
 
-        Beginning with Windows 10 Creators Update (version 1703), you can also configure Take a Test using these options:
-            - Set up School PCs app
-            - Intune for Education
+      Beginning with Windows 10 Creators Update (version 1703), you can also configure Take a Test using these options:
+    - Set up School PCs app
+    - Intune for Education
 
-        For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
+      For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
 
 - **Distribute the assessment URL through the web, email, OneNote, or any other method of your choosing. You can also create shortcuts to distribute the link**
 

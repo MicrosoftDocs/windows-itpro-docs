@@ -3,10 +3,12 @@ title: Sign in to Surface Hub with Microsoft Authenticator
 description: Use Microsoft Authenticator on your mobile device to sign in to Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 08/28/2017
+ms.reviewer: 
+manager: dansimp
 localizationpriority: medium
 ---
 
@@ -27,7 +29,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
     ![multi-factor authentication options](images/mfa-options.png)
 
-- Enable content hosting on Azure AD services such as Office online, SharePoint, etc. 
+- Enable content hosting on Azure AD services such as Office, SharePoint, etc. 
 
 - Surface Hub must be running Windows 10, version 1703 or later.
 

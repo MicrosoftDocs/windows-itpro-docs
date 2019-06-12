@@ -7,14 +7,34 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerMS
-ms.author: jdecker
-ms.date: 09/12/2017
+author: msfttracyp
+ms.author: tracyp
+ms.date: 12/06/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Change history for Client management
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## December 2018
+
+New or changed topic | Description
+--- | ---
+[Advanced troubleshooting for TCP/IP](troubleshoot-tcpip.md) | New
+[Collect data using Network Monitor](troubleshoot-tcpip-netmon.md) | New
+[Troubleshoot TCP/IP connectivity](troubleshoot-tcpip-connectivity.md) | New
+[Troubleshoot port exhaustion issues](troubleshoot-tcpip-port-exhaust.md) | New
+[Troubleshoot Remote Procedure Call (RPC) errors](troubleshoot-tcpip-rpc-errors.md) | New
+
+## November 2018
+
+New or changed topic | Description
+--- | ---
+ [Advanced troubleshooting for Windows-based computer freeze issues](troubleshoot-windows-freeze.md) | New
+ [Advanced troubleshooting for Stop error or blue screen error issue](troubleshoot-stop-errors.md) | New
 
 ## RELEASE: Windows 10, version 1709
 

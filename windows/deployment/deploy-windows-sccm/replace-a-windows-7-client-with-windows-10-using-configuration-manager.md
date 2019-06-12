@@ -2,13 +2,16 @@
 title: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager (Windows 10)
 description: In this topic, you will learn how to replacing a Windows 7 SP1 computer using Microsoft System Center 2012 R2 Configuration Manager.
 ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: upgrade, install, installation, replace computer, setup
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
@@ -31,31 +34,31 @@ In this topic, you will create a backup-only task sequence that you run on PC000
 ## <a href="" id="sec01"></a>Create a replace task sequence
 
 
-1.  On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
+1. On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
 
-2.  On the **Choose Template** page, select the **Client Replace Task Sequence** template and click **Next**.
+2. On the **Choose Template** page, select the **Client Replace Task Sequence** template and click **Next**.
 
-3.  On the **General** page, assign the following settings and click **Next**:
+3. On the **General** page, assign the following settings and click **Next**:
 
-    * Task sequence name: Replace Task Sequence
+   * Task sequence name: Replace Task Sequence
 
-    * Task sequence comments: USMT backup only
+   * Task sequence comments: USMT backup only
 
-4.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
+4. On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
 
-5.  On the **MDT Package** page, browse and select the **OSD / MDT** package. Then click **Next**.
+5. On the **MDT Package** page, browse and select the **OSD / MDT** package. Then click **Next**.
 
-6.  On the **USMT Package** page, browse and select the O**SD / Microsoft Corporation User State Migration Tool for Windows 8 10.0.10240.16384** package. Then click **Next**.
+6. On the **USMT Package** page, browse and select the O**SD / Microsoft Corporation User State Migration Tool for Windows 8 10.0.10240.16384** package. Then click **Next**.
 
-7.  On the **Settings Package** page, browse and select the **OSD / Windows 10 x64 Settings** package. Then click **Next**.
+7. On the **Settings Package** page, browse and select the **OSD / Windows 10 x64 Settings** package. Then click **Next**.
 
-8.  On the **Summary** page, review the details and then click **Next**.
+8. On the **Summary** page, review the details and then click **Next**.
 
-9.  On the **Confirmation** page, click **Finish**.
+9. On the **Confirmation** page, click **Finish**.
 
 10. Review the Replace Task Sequence. 
->[!NOTE]
->This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the Client Replace Task Sequence template when creating the task sequence.
+    >[!NOTE]
+    >This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the Client Replace Task Sequence template when creating the task sequence.
 
 ![The back-up only task sequence](../images/mdt-06-fig42.png "The back-up only task sequence")
 
@@ -165,7 +168,7 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 2.  In the **Actions** tab, select the **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, and click **OK**.
 
-    >[!NOTE]  
+    >[!NOTE]
     >You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
 3.  Using the Software Center, select the **Replace Task Sequence** deployment and click **INSTALL**.
@@ -178,10 +181,10 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 7.  Using the Configuration Manager console, in the Asset and Compliance workspace, select the **User State Migration** node, right-click the **PC0004/PC0006** association, and select **View Recovery Information**. Note that the object now also has a user state store location.
 
-    >[!NOTE]  
+    >[!NOTE]
     >It may take a few minutes for the user state store location to be populated.
 
- 
+ 
 
 ## <a href="" id="sec06"></a>Deploy the new computer
 
@@ -227,9 +230,9 @@ When the process is complete, you will have a new Windows 10 machine in your dom
 
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

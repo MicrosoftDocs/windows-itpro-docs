@@ -2,12 +2,18 @@
 title: Create symbolic links (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create symbolic links security policy setting.
 ms.assetid: 882922b9-0ff8-4ee9-8afc-4475515ee3fd
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -54,7 +60,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators| 
 | Member Server Effective Default Settings | Administrators| 
 | Client Computer Effective Default Settings | Administrators| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

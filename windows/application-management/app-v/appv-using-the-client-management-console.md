@@ -1,12 +1,15 @@
 ---
 title: Using the App-V Client Management Console (Windows 10)
 description: Using the App-V Client Management Console
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -21,8 +24,8 @@ This topic provides information about using the Application Virtualization (App-
 
 The client management console is separate from the App-V client itself. You can download the client management console from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=41186).
 
-> [!NOTE]  
-To perform all of the actions available using the client management console, you must have administrative access on the computer running the App-V client.
+> [!NOTE]
+> To perform all of the actions available using the client management console, you must have administrative access on the computer running the App-V client.
 
 ## Options for managing the App-V client
 
@@ -79,10 +82,10 @@ The client management console contains the following described main tabs.
 </tbody>
 </table>
 
-## Have a suggestion for App-V?
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -1,8 +1,11 @@
 ---
 title: DELETE TYPE
 description: DELETE TYPE
-author: jamiejdt
+author: dansimp
 ms.assetid: f2852723-c894-49f3-a3c5-56f9648bb9ca
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

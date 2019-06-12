@@ -3,14 +3,15 @@ title: Set up School PCs app technical reference overview
 description: Describes the purpose of the Set up School PCs app for Windows 10 devices.
 keywords: shared cart, shared PC, school, set up school pcs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: lenewsad
-ms.author: lanewsad
+author: mjcaparas
+ms.author: macapara
 ms.date: 07/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 What is Set up School PCs?
@@ -57,7 +58,7 @@ The following table describes the Set up School PCs app features and lists each 
 | [Settings roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) **via Azure AD**                                                                                                             |             |          |            | X                |
 | Synchronize student and application data across devices for a personalized experience.                                                                                                                                                          |             |          |            |                  |
 
->   [!NOTE]  
+> [!NOTE]
 >   If your school uses Active Directory, use [Windows Configuration
 >   Designer](set-up-students-pcs-to-join-domain.md) 
 >   to configure your PCs to join the domain. You can only use the Set up School

@@ -5,10 +5,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 05/05/2018
+ms.reviewer: 
 ---
 # How Windows Hello for Business works
 

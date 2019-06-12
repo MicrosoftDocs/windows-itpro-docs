@@ -2,11 +2,13 @@
 title: ICSPNode Execute
 description: ICSPNode Execute
 ms.assetid: 5916e7b7-256d-49fd-82b6-db0547a215ec
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

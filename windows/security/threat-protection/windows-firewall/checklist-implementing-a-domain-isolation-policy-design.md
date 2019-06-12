@@ -2,12 +2,18 @@
 title: Checklist Implementing a Domain Isolation Policy Design (Windows 10)
 description: Checklist Implementing a Domain Isolation Policy Design
 ms.assetid: 76586eb3-c13c-4d71-812f-76bff200fc20
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

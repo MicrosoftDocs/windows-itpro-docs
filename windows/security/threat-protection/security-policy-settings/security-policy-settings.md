@@ -2,12 +2,18 @@
 title: Security policy settings (Windows 10)
 description: This reference topic describes the common scenarios, architecture, and processes for security settings.
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -47,7 +53,7 @@ The Security Settings extension of the Local Group Policy Editor includes the fo
     -   **Audit Policy.** Specify security settings that control the logging of security events into the Security log on the computer, and specifies what types of security events to log (success, failure, or both).
         
         >**Note:**  For devices running Windows 7 and later, we recommend to use the settings under Advanced Audit Policy Configuration rather than the Audit Policy settings under Local Policies.
-         
+         
     -   **User Rights Assignment.** Specify the users or groups that have logon rights or privileges on a device
     -   **Security Options.** Specify security settings for the computer, such as Administrator and Guest Account names; access to floppy disk drives and CD-ROM drives; installation of drivers; logon prompts; and so on.
 
@@ -78,7 +84,7 @@ Importing a security template to a GPO ensures that any accounts to which the GP
 offset of at most 30 minutes), and, on a domain controller, this process occurs every few minutes if changes have occurred in any of the GPO settings that apply. The settings are also refreshed every 16 hours, whether or not any changes have occurred.
 
 >**Note:**  These refresh settings vary between versions of the operating system and can be configured.
- 
+ 
 By using Group Policy−based security configurations in conjunction with the delegation of administration, you can ensure that specific security settings, rights, and behavior are applied to all servers and computers within an OU. This approach makes it simple to update a number of servers with any additional changes required in the future.
 
 ### Dependencies on other operating system technologies
@@ -372,7 +378,7 @@ Both Apply Group Policy and Read permissions are required to have the settings f
 By default, all GPOs have Read and Apply Group Policy both Allowed for the Authenticated Users group. The Authenticated Users group includes both users and computers. Security settings policies are computer-based. To specify which client computers will or will not have a Group Policy Object applied to them, you can deny them either the Apply Group Policy or Read permission on that Group Policy Object. Changing these permissions allows you to limit the scope of the GPO to a specific set of computers within a site, domain, or OU.
 
 **Note:**  Do not use security policy filtering on a domain controller as this would prevent security policy from applying to it.
- 
+ 
 ### Migration of GPOs containing security settings
 
 In some situations, you might want to migrate GPOs from one domain environment to another environment. The two most common scenarios are test-to-production migration, and production-to-production migration. The GPO copying process has implications for some types of security settings.

@@ -2,12 +2,18 @@
 title: Checklist Creating Group Policy Objects (Windows 10)
 description: Checklist Creating Group Policy Objects
 ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

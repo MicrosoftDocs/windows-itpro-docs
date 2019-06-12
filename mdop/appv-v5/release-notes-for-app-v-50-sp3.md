@@ -1,8 +1,11 @@
 ---
 title: Release Notes for App-V 5.0 SP3
 description: Release Notes for App-V 5.0 SP3
-author: jamiejdt
+author: msfttracyp
 ms.assetid: bc4806e0-2aba-4c7b-9ecc-1b2cc54af1d0
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,10 +39,10 @@ When you receive updated packages by querying Active Directory Domain Services f
 
 **Workaround**: Wait until the user logs off and then logs back on before you query for updated group memberships. Do not use the registry key, described in [Hotfix Package 2 for Microsoft Application Virtualization 5.0 Service Pack 1](https://support.microsoft.com/kb/2897087), to query for updated group memberships.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -2,12 +2,18 @@
 title: Open Windows Defender Firewall with Advanced Security (Windows 10)
 description: Open Windows Defender Firewall with Advanced Security
 ms.assetid: 788faff2-0f50-4e43-91f2-3e2595c0b6a1
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

@@ -2,13 +2,16 @@
 title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
-author: greg-lindsay
-ms.date: 10/25/2018
+author: lomayor
+ms.topic: article
 ---
 
 # Windows 10 edition upgrade
@@ -24,7 +27,7 @@ For a list of operating systems that qualify for the Windows 10 Pro Upgrade or W
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
 
-Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuratio Manager.
+Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuration Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
@@ -59,7 +62,6 @@ X = unsupported <BR>
 | **Pro for Workstations > Enterprise** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(1703 - PC)<br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) |
 | **Pro Education > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Enterprise > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **Enterprise LTSC > Enterprise** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]
@@ -235,9 +237,9 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
->**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
-
->**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
+> **Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+> 
+> **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
 Some slightly more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 

@@ -1,8 +1,11 @@
 ---
 title: Request Control of an Uncontrolled GPO
 description: Request Control of an Uncontrolled GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: a34e0aeb-33a1-4c9f-b187-1d08493a785c
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

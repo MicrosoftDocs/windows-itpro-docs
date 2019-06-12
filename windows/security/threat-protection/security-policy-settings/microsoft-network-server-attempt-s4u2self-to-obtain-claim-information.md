@@ -2,12 +2,18 @@
 title: Microsoft network server Attempt S4U2Self to obtain claim information (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Microsoft network server Attempt S4U2Self to obtain claim information security policy setting.
 ms.assetid: e4508387-35ed-4a3f-a47c-27f8396adbba
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -63,7 +69,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled| 
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings| Disabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

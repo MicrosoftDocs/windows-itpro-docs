@@ -2,11 +2,15 @@
 title: Log Files (Windows 10)
 description: Log Files
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Log Files
@@ -44,22 +48,22 @@ The following table describes each command-line option related to logs, and it p
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>/l</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/l</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Scanstate.log or LoadState.log</p></td>
 <td align="left"><p>Specifies the path and file name of the ScanState.log or LoadState log.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/progress</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/progress</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Specifies the path and file name of the Progress log.</p></td>
 <td align="left"><p>Provides information about the status of the migration, by percentage complete.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/v</strong><em>[VerbosityLevel]</em></p></td>
 <td align="left"><p>Not applicable</p></td>
-<td align="left"><p>See the &quot;Monitoring Options&quot; section in [ScanState Syntax](usmt-scanstate-syntax.md).</p></td>
+<td align="left"><p>See the &quot;Monitoring Options&quot; section in <a href="usmt-scanstate-syntax.md" data-raw-source="[ScanState Syntax](usmt-scanstate-syntax.md)">ScanState Syntax</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/listfiles</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/listfiles</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Specifies the path and file name of the Listfiles log.</p></td>
 <td align="left"><p>Provides a list of the files that were migrated.</p></td>
 </tr>
@@ -71,12 +75,12 @@ The following table describes each command-line option related to logs, and it p
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
 
- 
+ 
 
 ## <a href="" id="bkmk-scanloadstatelogs"></a>ScanState and LoadState Logs
 
@@ -217,7 +221,7 @@ The remaining fields are key/value pairs as indicated in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-listfileslog"></a>List Files Log
 
@@ -479,9 +483,9 @@ Your revised migration XML script excludes the files from migrating, as confirme
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

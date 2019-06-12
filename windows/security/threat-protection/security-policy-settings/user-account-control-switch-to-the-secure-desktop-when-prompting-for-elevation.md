@@ -2,12 +2,18 @@
 title: User Account Control Switch to the secure desktop when prompting for elevation (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Switch to the secure desktop when prompting for elevation security policy setting.
 ms.assetid: 77a067db-c70d-4b02-9861-027503311b8b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -57,7 +63,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

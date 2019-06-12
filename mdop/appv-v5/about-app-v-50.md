@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.0
 description: About App-V 5.0
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 5799141b-44bc-4033-afcc-212235e15f00
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -53,7 +56,7 @@ The following table displays some of the differences between App-V 4.6 and App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Must Use a dedicated drive letter (<strong>Q:\</strong>).</p></td>
+<td align="left"><p>Must Use a dedicated drive letter (<strong>Q:&lt;/strong&gt;).</p></td>
 <td align="left"><p>No dedicated drive letter required.</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +69,7 @@ The following table displays some of the differences between App-V 4.6 and App-V
 </tr>
 <tr class="even">
 <td align="left"><p>Dynamic Suite Composition enabled interaction with middleware applications.</p></td>
-<td align="left"><p>Peer applications are shared using connection groups. For more information about connection groups see, [Managing Connection Groups](managing-connection-groups.md).</p></td>
+<td align="left"><p>Peer applications are shared using connection groups. For more information about connection groups see, <a href="managing-connection-groups.md" data-raw-source="[Managing Connection Groups](managing-connection-groups.md)">Managing Connection Groups</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VDI/RDS environments required a read-only shared cache.</p></td>
@@ -83,26 +86,26 @@ The following table displays some of the differences between App-V 4.6 and App-V
 </tbody>
 </table>
 
- 
+ 
 
 ## How to Get MDOP Technologies
 
 
 App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 
 
 [Getting Started with App-V 5.0](getting-started-with-app-v-50--rtm.md)
 
- 
+ 
 
- 
+ 
 
 
 

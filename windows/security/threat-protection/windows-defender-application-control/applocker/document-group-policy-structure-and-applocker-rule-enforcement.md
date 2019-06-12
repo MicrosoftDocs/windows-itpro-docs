@@ -2,11 +2,17 @@
 title: Document the Group Policy structure and AppLocker rule enforcement (Windows 10)
 description: This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
 ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.pagetype: security
 ms.date: 09/21/2017
 ---
@@ -103,7 +109,7 @@ The following table includes the sample data that was collected when you determi
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -120,11 +126,11 @@ The following table includes the sample data that was collected when you determi
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Next steps
 
 After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
 
- 
- 
+ 
+ 

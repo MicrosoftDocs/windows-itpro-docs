@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-ms.localizationpriority: medium
-author: mikestephens-MS
-ms.author: mstephen
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -46,7 +51,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
     **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-6.	On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
+6.	On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8.	Close the console.
 
@@ -108,11 +113,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Configure superseded domain controller certificate templates
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
-[Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
+> [< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
+> [Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
 
 <br><br>
 

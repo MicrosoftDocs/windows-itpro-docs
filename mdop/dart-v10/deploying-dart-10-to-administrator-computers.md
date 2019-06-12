@@ -1,8 +1,11 @@
 ---
 title: Deploying DaRT 10 to Administrator Computers
 description: Deploying DaRT 10 to Administrator Computers
-author: jamiejdt
+author: msfttracyp
 ms.assetid: c1981cbe-10f8-41f6-8989-bcc9d57a2aa8
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

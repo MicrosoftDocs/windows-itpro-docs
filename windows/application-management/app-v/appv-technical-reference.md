@@ -1,12 +1,15 @@
 ---
 title: Technical Reference for App-V (Windows 10)
 description: Technical Reference for App-V
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -36,10 +39,10 @@ This section provides reference information related to managing App-V.
 
     Describes reasons and methods for running a locally installed application in a virtual environment, alongside applications that have been virtualized by using Application Virtualization (App-V).
 
-## Have a suggestion for App-V?
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

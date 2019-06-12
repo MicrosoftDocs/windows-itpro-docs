@@ -1,12 +1,14 @@
 ---
 title: Win32 and Desktop Bridge app policy configuration
 description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Desktop Bridge apps.
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Win32 and Desktop Bridge app policy configuration
@@ -46,6 +48,12 @@ When the ADMX policies are imported, the registry keys to which each policy is w
 - software\microsoft\exchange\
 - software\policies\microsoft\vba\security\
 - software\microsoft\onedrive 
+
+> [!Warning]
+> Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined.
+
+> [!NOTE]
+> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script). 
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
@@ -391,10 +399,10 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 {CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. In this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3.
 
 Therefore, from the example:
-   - Class: User
-   - Policy name: L_PolicyPreventRun_1
-   - Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
-   - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
+- Class: User
+- Policy name: L_PolicyPreventRun_1
+- Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
+- URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
 ## <a href="" id="admx-backed-app-policy-examples"></a>ADMX-backed app policy examples
 

@@ -2,12 +2,18 @@
 title: Using advanced security auditing options to monitor dynamic access control objects (Windows 10)
 description: This guide explains the process of setting up advanced security auditing capabilities that are made possible through settings and events that were introduced in Windows 8 and Windows Server 2012.
 ms.assetid: 0d2c28ea-bdaf-47fd-bca2-a07dce5fed37
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -36,9 +42,9 @@ Domain administrators can create and deploy expression-based security audit poli
 | [Monitor the resource attributes on files and folders](monitor-the-resource-attributes-on-files-and-folders.md)| This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects. |
 | [Monitor the central access policies associated with files and folders](monitor-the-central-access-policies-associated-with-files-and-folders.md)| This topic for the IT professional describes how to monitor changes to the central access policies that are associated with files and folders when you are using advanced security auditing options to monitor dynamic access control objects. |
 | [Monitor claim types](monitor-claim-types.md) | This topic for the IT professional describes how to monitor changes to claim types that are associated with dynamic access control when you are using advanced security auditing options.|
- 
+ 
 >**Important:**  This procedure can be configured on computers running any of the supported Windows operating systems. The other monitoring procedures can be configured only as part of a functioning dynamic access control deployment.
- 
+ 
 ## Related topics
 
 - [Security auditing](security-auditing-overview.md)

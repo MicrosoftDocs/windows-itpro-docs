@@ -1,8 +1,11 @@
 ---
 title: About Application Virtualization Servers
 description: About Application Virtualization Servers
-author: jamiejdt
+author: dansimp
 ms.assetid: 60a45509-2112-44ca-8e28-c73b0c2ff85e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +24,7 @@ You can also stream applications to clients from Application Virtualization Stre
 
 You can stream applications to the client directly from a file or disk. Some application virtualization deployment scenarios, which are characterized by low or unreliable connectivity or where bandwidth is limited, are ideally suited for streaming from file or disk.
 
- 
+ 
 
 One or more Application Virtualization Management Servers that share a single data store make up an *Application Virtualization system*.
 
@@ -34,9 +37,9 @@ One or more Application Virtualization Management Servers that share a single da
 
 [How to Set Up Publishing Servers](how-to-set-up-publishing-servers.md)
 
- 
+ 
 
- 
+ 
 
 
 

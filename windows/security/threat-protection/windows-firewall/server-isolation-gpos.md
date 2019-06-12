@@ -2,12 +2,18 @@
 title: Server Isolation GPOs (Windows 10)
 description: Server Isolation GPOs
 ms.assetid: c97b1f2f-51d8-4596-b38a-8a3f6f706be4
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

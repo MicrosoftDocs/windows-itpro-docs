@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows Defender Antivirus on Windows Server 2016
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus is available on Windows Server 2016. In some instances it is referred to as Endpoint Protection - however, the protection engine is the same.
 
@@ -33,7 +35,7 @@ This topic includes the following instructions for setting up and running Window
 
 -   [Verify Windows Defender AV is running](#BKMK_DefRun)
 
--   [Update antimalware definitions](#BKMK_UpdateDef)
+-   [Update antimalware Security intelligence](#BKMK_UpdateDef)
 
 -   [Submit Samples](#BKMK_DefSamples)
 
@@ -112,24 +114,24 @@ sc query Windefend
 The `sc query` command returns information about the Windows Defender service. If Windows Defender is running, the `STATE` value displays `RUNNING`.
 
 <a name="BKMK_UpdateDef"></a>
-## Update antimalware definitions
-In order to get updated antimalware definitions, you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Windows Defender AV definitions are approved for the computers you manage.
+## Update antimalware Security intelligence 
+In order to get updated antimalware Security intelligence , you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Windows Defender Antivirus Security intelligence are approved for the computers you manage.
 
 By default, Windows Update does not download and install updates automatically on Windows Server 2016. You can change this configuration by using one of the following methods:
 
 -   **Windows Update** in Control Panel.
 
-    -   **Install updates automatically** results in all updates being automatically installed, including Windows Defender definition updates.
+    -   **Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates.
 
-    -   **Download updates but let me choose whether to install them** allows Windows Defender to download and install definition updates automatically, but other updates are not automatically installed.
+    -   **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.
 
 -   **Group Policy**. You can set up and manage Windows Update by using the settings available in Group Policy, in the following path: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**
 
--   The **AUOptions** registry key. The following two values allow Windows Update to automatically download and install definition updates.
+-   The **AUOptions** registry key. The following two values allow Windows Update to automatically download and install Security intelligence updates.
 
-    -   **4** Install updates automatically. This value results in all updates being automatically installed, including Windows Defender definition updates.
+    -   **4** Install updates automatically. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates.
 
-    -   **3** Download updates but let me choose whether to install them.  This value allows Windows Defender to download and install definition updates automatically, but other updates are not automatically installed.
+    -   **3** Download updates but let me choose whether to install them.  This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
@@ -144,13 +146,13 @@ The following table lists the services for Windows Defender and the dependent se
 |Windows Defender Service (Windefend)|C:\Program Files\Windows Defender\MsMpEng.exe|This is the main Windows Defender Antivirus service that needs to be running at all times.|
 |Windows Error Reporting Service (Wersvc)|C:\WINDOWS\System32\svchost.exe -k WerSvcGroup|This service sends error reports back to Microsoft.|
 |Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
-|Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get definition updates and antimalware engine updates|
+|Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
 
 
 <a name="BKMK_DefSamples"></a>
 ## Submit Samples
-Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware definitions.
+Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence.
 
 We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
 

@@ -1,12 +1,16 @@
 ---
 title: Planning for Deploying App-V with Office (Windows 10)
 description: Planning for Using App-V with Office
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Planning for deploying App-V with Office
 
@@ -26,7 +30,7 @@ You can use the App-V Sequencer to create plug-in packages for language packs, l
 For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
 
 >[!NOTE]
->You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744).
+>You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
 
 ## Using App-V with coexisting versions of Office
 
@@ -86,11 +90,11 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 1. Exit Word 2010.
 2. Start the Registry Editor by doing the following:
 
-    * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
+   * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
 
-    * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
+   * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
 
-    If you're prompted for an administrator password, enter the password. If you're propmted for a confirmation, select **Continue**.
+     If you're prompted for an administrator password, enter the password. If you're prompted for a confirmation, select **Continue**.
 3. Locate and then select the following registry subkey:
 
     ``` syntax
@@ -127,9 +131,9 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 |Shortcuts||
 |Windows Search||
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

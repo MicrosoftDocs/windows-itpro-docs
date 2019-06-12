@@ -1,8 +1,11 @@
 ---
 title: Technical Reference for UE-V 2.x
 description: Technical Reference for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 303cff9a-a96d-4e83-9e94-19b0d3744e1e
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -56,10 +59,10 @@ This technical reference section includes additional technical documentation abo
 
 -   [Troubleshooting UE-V 2.x](troubleshooting-ue-v-2x-both-uevv2.md)
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

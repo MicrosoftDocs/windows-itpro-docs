@@ -4,10 +4,14 @@ description: Learn how to deploy feature updates to your mission critical device
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: mcureton
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: mikecure
+ms.author: greglin
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: laurawi
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Best practices and recommendations for deploying Windows 10 Feature updates to mission critical devices
@@ -25,7 +29,7 @@ Devices and shared workstations that are online and available 24 hours a day, 7 
 
 You can use Configuration Manager to deploy feature updates to Windows 10 devices in two ways. The first option is to use the software updates feature. The second option is to use a task sequence to deploy feature updates. There are times when deploying a Windows 10 feature update requires the use of a task sequence—for example:
 
-- **LTSC feature updates.** With the LTSC servicing branch, feature updates are never provided to the Windows clients themselves. Instead, feature updates must be installed like a traditional in-place upgrade.
+- **Upgrade to the next LTSC release.** With the LTSC servicing branch, feature updates are never provided to the Windows clients themselves. Instead, feature updates must be installed like a traditional in-place upgrade.
 - **Additional required tasks.** When deploying a feature update requires additional steps (e.g., suspending disk encryption, updating applications), you can use task sequences to orchestrate the additional steps. Software updates do not have the ability to add steps to their deployments.
 - **Language pack installs.** When deploying a feature update requires the installation of additional language packs, you can use task sequences to orchestrate the installation. Software updates do not have the ability to natively install language packs.
 

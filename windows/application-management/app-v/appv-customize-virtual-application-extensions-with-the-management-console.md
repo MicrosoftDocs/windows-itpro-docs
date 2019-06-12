@@ -1,12 +1,16 @@
 ---
 title: How to customize virtual application extensions for a specific AD group by using the Management Console (Windows 10)
 description: How to customize virtual application extensions for a specific AD group by using the Management Console.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to customize virtual applications extensions for a specific AD group by using the Management Console
 
@@ -28,9 +32,9 @@ Use the following procedure to customize the virtual application extensions for 
 
 5. To edit additional application extensions, modify the configuration file and select **Import and Overwrite this Configuration**. Select the modified file and select **Open**. In the dialog, select **Overwrite** to complete the process.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

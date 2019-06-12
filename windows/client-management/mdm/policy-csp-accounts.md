@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Accounts
 description: Policy CSP - Accounts
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/30/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Accounts
@@ -181,6 +183,9 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
 
+> [!NOTE]
+> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
+
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -237,15 +242,28 @@ The default value is an empty string, which allows all email accounts on the dev
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Accounts policies supported by Windows Holographic
+
+- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Accounts policies supported by Windows Holographic for Business
+
+- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
 

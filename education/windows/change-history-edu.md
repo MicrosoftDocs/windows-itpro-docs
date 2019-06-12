@@ -3,18 +3,25 @@ title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
 keywords: Windows 10 education documentation, change history
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: MikeBlodge
-ms.author: MikeBlodge
-ms.date: 05/07/2018
+author: levinec
+ms.author: ellevin
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+
+## May 2019
+
+|New or changed topic | Description|
+|-----------|-------------|
+|[Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)|Subscription activation support for Windows 10 Pro Education to Windows 10 Education|
 
 ## April 2018
 New or changed topic | Description

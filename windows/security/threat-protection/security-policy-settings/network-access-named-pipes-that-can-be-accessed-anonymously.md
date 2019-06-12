@@ -2,12 +2,18 @@
 title: Network access Named Pipes that can be accessed anonymously (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network access Named Pipes that can be accessed anonymously security policy setting.
 ms.assetid: 8897d2a4-813e-4d2b-8518-fcee71e1cf2c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -49,7 +55,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Netlogon, samr, lsarpc| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -80,7 +86,7 @@ You can restrict access over named pipes such as COMNAP and LOCATOR to help prev
 | LOCATOR | Remote Procedure Call Locator service named pipe.| 
 | TrlWks | Distributed Link Tracking Client named pipe.| 
 | TrkSvr | Distributed Link Tracking Server named pipe.| 
- 
+ 
 ### Countermeasure
 
 Configure the **Network access: Named Pipes that can be accessed anonymously** setting to a null value (enable the setting but do not specify named pipes in the text box).

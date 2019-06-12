@@ -2,12 +2,18 @@
 title: Working with AppLocker policies (Windows 10)
 description: This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 ms.assetid: 7062d2e0-9cbb-4cb8-aa8c-b24945c3771d
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: mjcaparas
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

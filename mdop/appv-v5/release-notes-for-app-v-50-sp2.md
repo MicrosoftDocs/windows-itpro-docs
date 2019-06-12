@@ -1,8 +1,11 @@
 ---
 title: Release Notes for App-V 5.0 SP2
 description: Release Notes for App-V 5.0 SP2
-author: jamiejdt
+author: msfttracyp
 ms.assetid: fe73139d-240c-4ed5-8e59-6ae76ee8e80c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,7 +36,7 @@ We are interested in your feedback on App-V 5.0. You can send your feedback to <
 **Note**  
 This email address is not a support channel, but your feedback will help us to plan for future changes in our documentation and product releases.
 
- 
+ 
 
 For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
@@ -55,7 +58,7 @@ If the following folder exists, then you must delete it:
 **Note**  
 You must have elevated privileges to delete this folder.
 
- 
+ 
 
 To use a script, for each user account on the computer and for each package id that was published after installing Hotfix Package 4 for Application Virtualization 5.0 SP2:
 
@@ -147,19 +150,19 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 
 
 [About App-V 5.0 SP2](about-app-v-50-sp2.md)
 
- 
+ 
 
- 
+ 
 
 
 

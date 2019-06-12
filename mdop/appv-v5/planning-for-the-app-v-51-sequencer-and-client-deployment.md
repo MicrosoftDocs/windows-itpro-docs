@@ -1,8 +1,11 @@
 ---
 title: Planning for the App-V 5.1 Sequencer and Client Deployment
 description: Planning for the App-V 5.1 Sequencer and Client Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d92f8773-fa7d-4926-978a-433978f91202
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +27,7 @@ App-V 5.1 uses a process called sequencing to create virtualized applications an
 **Note**  
 For information about the new functionality of App-V 5.1 sequencer, see the **Sequencer Improvements** section of [About App-V 5.1](about-app-v-51.md).
 
- 
+ 
 
 The computer that runs the App-V 5.1 sequencer must meet the minimum system requirements. For a list of these requirements, see [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md).
 
@@ -39,7 +42,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 **Important**  
 You should have your corporate security team review and approve the sequencing process plan. For security reasons, you should keep the sequencer operations in a lab that is separate from the production environment. The separation arrangement can be as simple or as comprehensive as necessary, based on your business requirements. The sequencing computers must be able to connect to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they must not be on the corporate network unprotected. For example, you might be able to operate behind a firewall or on an isolated network segment. You might also be able to use virtual machines that are configured to share an isolated virtual network. Follow your corporate security policies to safely address these concerns.
 
- 
+ 
 
 ## Planning for App-V 5.1 client deployment
 
@@ -76,10 +79,10 @@ The following list displays some of the benefits of using the App-V 5.1 shared c
 
 -   Simplified profile management
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-the-app-v-5-1-deployment-"></a>Other resources for the App-V 5.1 deployment
 
@@ -97,9 +100,9 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [How to Install the App-V 5.1 Client for Shared Content Store Mode](how-to-install-the-app-v-51-client-for-shared-content-store-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

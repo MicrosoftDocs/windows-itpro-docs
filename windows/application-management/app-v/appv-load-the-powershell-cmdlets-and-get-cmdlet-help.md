@@ -1,12 +1,16 @@
 ---
 title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10)
 description: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to load the Windows PowerShell cmdlets for App-V and get cmdlet help
 
@@ -90,6 +94,5 @@ To display help for a specific Windows PowerShell cmdlet:
    Get-Help Publish-AppvClientPackage
    ```
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

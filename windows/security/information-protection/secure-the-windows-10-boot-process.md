@@ -7,8 +7,14 @@ ms.mktglfcycl: Explore
 ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 11/16/2018
+ms.reviewer: 
+ms.author: dolmont
 ---
 
 # Secure the Windows 10 boot process
@@ -74,7 +80,7 @@ All x86-based Certified For Windows 10 PCs must meet several requirements relat
 
 These requirements help protect you from rootkits while allowing you to run any operating system you want. You have three options for running non-Microsoft operating systems:
 
--  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](http://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <http://sysdev.microsoft.com>.
+-  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](http://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <http://partner.microsoft.com/dashboard>.
 -  **Configure UEFI to trust your custom bootloader.** All Certified For Windows 10 PCs allow you to trust a non-certified bootloader by adding a signature to the UEFI database, allowing you to run any operating system, including homemade operating systems.
 -  **Turn off Secure Boot.** All Certified For Windows 10 PCs allow you to turn off Secure Boot so that you can run any software. This does not help protect you from bootkits, however.
 

@@ -2,12 +2,18 @@
 title: Restrict Access to Only Specified Users or Devices (Windows 10)
 description: Restrict Access to Only Specified Users or Devices
 ms.assetid: a6106a07-f9e5-430f-8dbd-06d3bf7406df
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

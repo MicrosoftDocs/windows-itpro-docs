@@ -2,11 +2,17 @@
 title: Manage TPM lockout (Windows 10)
 description: This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 05/02/2017
 ---
 # Manage TPM lockout
@@ -44,18 +50,18 @@ The following procedure explains the steps to reset the TPM lockout by using the
 
 **To reset the TPM lockout**
 
-1.  Open the TPM MMC (tpm.msc).
+1. Open the TPM MMC (tpm.msc).
 
-2.  In the **Action** pane, click **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
+2. In the **Action** pane, click **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
 
-3.  Choose one of the following methods to enter the TPM owner password:
+3. Choose one of the following methods to enter the TPM owner password:
 
-  -   If you saved your TPM owner password to a .tpm file, click **I have the owner password file**, and then type the path to the file, or click **Browse** to navigate to the file location.
+   -   If you saved your TPM owner password to a .tpm file, click **I have the owner password file**, and then type the path to the file, or click **Browse** to navigate to the file location.
 
-  -   If you want to manually enter your TPM owner password, click **I want to enter the owner password**, and then type the password in the text box provided.
+   -   If you want to manually enter your TPM owner password, click **I want to enter the owner password**, and then type the password in the text box provided.
 
-    > [!NOTE]
-    > If you enabled BitLocker and your TPM at the same time, and you printed your BitLocker recovery password when you turned on BitLocker, your TPM owner password may have printed with it.
+   > [!NOTE]
+   > If you enabled BitLocker and your TPM at the same time, and you printed your BitLocker recovery password when you turned on BitLocker, your TPM owner password may have printed with it.
 
 ## Use Group Policy to manage TPM lockout settings
 
@@ -79,7 +85,7 @@ For information about mitigating dictionary attacks that use the lockout setting
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/).
 
 ## Related topics
 

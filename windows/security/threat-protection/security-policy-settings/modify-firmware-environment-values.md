@@ -2,12 +2,18 @@
 title: Modify firmware environment values (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Modify firmware environment values security policy setting.
 ms.assetid: 80bad5c4-d9eb-4e3a-a5dc-dcb742b83fca
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -60,7 +66,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Adminstrators| 
 | Member Server Effective Default Settings | Adminstrators| 
 | Client Computer Effective Default Settings | Adminstrators| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -1,12 +1,15 @@
 ---
 title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications (Windows 10)
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 03/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -152,10 +155,10 @@ If you don’t know the exact name of your package, use the command line <strong
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
-## Have a suggestion for App-V?
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

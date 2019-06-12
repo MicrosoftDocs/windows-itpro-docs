@@ -1,14 +1,19 @@
 ---
 title: BitLocker Upgrading FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
-ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 05/03/2018
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
+ms.reviewer: 
 ---
 
 # BitLocker Upgrading FAQ
@@ -35,6 +40,6 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 - TPM firmware updates
 - Non-Microsoft application updates that modify boot components
 
-> [!NOTE]  
+> [!NOTE]
 > If you have suspended BitLocker, you can resume BitLocker protection after you have installed the upgrade or update. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, your computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
- 
+ 

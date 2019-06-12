@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: heatherpoulsen
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface firmware and driver updates
@@ -23,7 +25,7 @@ Find out how to download and manage the latest firmware and driver updates for y
 | [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)| Get a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.| 
 | [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)| Explore the available options to manage firmware and driver updates for Surface devices.|
 | [Surface Dock Updater](surface-dock-updater.md)| Get a detailed walkthrough of Microsoft Surface Dock Updater.|
- 
+ 
 
 ## Related topics
 
@@ -31,9 +33,9 @@ Find out how to download and manage the latest firmware and driver updates for y
 
 [Surface for IT pros blog](http://blogs.technet.com/b/surface/)
 
- 
+ 
 
- 
+ 
 
 
 

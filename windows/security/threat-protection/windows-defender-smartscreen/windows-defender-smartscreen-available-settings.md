@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: jasongerend
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 1/26/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
@@ -16,7 +19,10 @@ ms.date: 1/26/2018
 - Windows 10
 - Windows 10 Mobile
 
-Windows Defender SmartScreen works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
+Windows Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
+
+See [Windows 10 (and later) settings to protect devices using Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
+
 
 ## Group Policy settings
 SmartScreen uses registry-based Administrative Template policy settings. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.

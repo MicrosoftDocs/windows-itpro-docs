@@ -2,7 +2,10 @@
 title: How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer
 description: How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer
 ms.assetid: 5b7e27e4-4360-464c-b832-f1c7939e5485
-author: jamiejdt
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.date: 06/21/2016
 ---
 

@@ -2,12 +2,18 @@
 title: Merge AppLocker policies by using Set-ApplockerPolicy (Windows 10)
 description: This topic for IT professionals describes the steps to merge AppLocker policies by using Windows PowerShell.
 ms.assetid: f1c7d5c0-463e-4fe2-a410-844a404f18d0
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 

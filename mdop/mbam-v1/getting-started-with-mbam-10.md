@@ -1,8 +1,11 @@
 ---
 title: Getting Started with MBAM 1.0
 description: Getting Started with MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 4fab4e4a-d25e-4661-b235-2b45bf5ac3e4
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ If you are new to this product, we recommend that you read the documentation tho
 **Note**  
 You can find a downloadable version of this documentation and the MBAM Evaluation Guide at <https://go.microsoft.com/fwlink/p/?LinkId=225356>.
 
- 
+ 
 
 This section of the MBAM Administrator’s Guide includes high-level information about MBAM to provide you with a basic understanding of the product before you begin the deployment planning. Additional MBAM documentation can be found on the MBAM Documentation Resources Download page at <https://go.microsoft.com/fwlink/p/?LinkId=258391>.
 
@@ -57,9 +60,9 @@ This section of the MBAM Administrator’s Guide includes high-level information
 
 -   [Troubleshooting MBAM 1.0](troubleshooting-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

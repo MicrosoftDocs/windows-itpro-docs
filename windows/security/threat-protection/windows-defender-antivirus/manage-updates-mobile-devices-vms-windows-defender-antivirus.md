@@ -9,23 +9,25 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage updates for mobile devices and virtual machines (VMs)
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Mobile devices and VMs may require additional configuration to ensure performance is not impacted by updates.
 
 There are two settings that are particularly useful for these devices:
 
 - Opt-in to Microsoft Update on mobile computers without a WSUS connection
-- Prevent definition updates when running on battery power
+- Prevent Security intelligence updates when running on battery power
 
 The following topics may also be useful in these situations:
 - [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
@@ -34,7 +36,7 @@ The following topics may also be useful in these situations:
 
 ## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
-You can use Microsoft Update to keep definitions on mobile devices running Windows Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
+You can use Microsoft Update to keep Security intelligence on mobile devices running Windows Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
@@ -69,7 +71,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 2.  Click **Advanced** options.
 3.  Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
 
-## Prevent definition updates when running on battery power
+## Prevent Security intelligence updates when running on battery power
 
 You can configure Windows Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
 

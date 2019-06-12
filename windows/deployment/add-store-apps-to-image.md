@@ -7,9 +7,12 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Add Microsoft Store for Business applications to a Windows 10 image

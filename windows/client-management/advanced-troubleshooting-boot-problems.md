@@ -3,10 +3,13 @@ title: Advanced troubleshooting for Windows boot problems
 description: Learn how to troubleshoot when Windows is unable to boot 
 ms.prod: w10
 ms.sitesec: library
-author: kaushika-msft
+author: msfttracyp
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: tracyp
 ms.date: 11/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: troubleshooting
 ---
 
 # Advanced troubleshooting for Windows boot problems
@@ -18,13 +21,13 @@ ms.date: 11/16/2018
 
 There are several reasons why a Windows-based computer may have problems during startup. To troubleshoot boot problems, first determine in which of the following phases the computer gets stuck:
 
-| **Phase** | **Boot Process**     | **BIOS**       | **UEFI**              |
-|--------|----------------------|------------------------------|  |
-| 1      | PreBoot              | MBR/PBR (Bootstrap Code)             | UEFI Firmware                        |
-| 2      | Windows Boot Manager | %SystemDrive%\bootmgr                | \EFI\Microsoft\Boot\bootmgfw.efi     |
-| 3      | Windows OS Loader    | %SystemRoot%\system32\winload.exe    | %SystemRoot%\system32\winload.efi    |
-| 4      | Windows NT OS Kernel | %SystemRoot%\system32\ntoskrnl.exe     |                                     |
 
+| **Phase** |   **Boot Process**   |              **BIOS**              |             **UEFI**              |
+|-----------|----------------------|------------------------------------|-----------------------------------|
+|     1     |       PreBoot        |      MBR/PBR (Bootstrap Code)      |           UEFI Firmware           |
+|     2     | Windows Boot Manager |       %SystemDrive%\bootmgr        | \EFI\Microsoft\Boot\bootmgfw.efi  |
+|     3     |  Windows OS Loader   | %SystemRoot%\system32\winload.exe  | %SystemRoot%\system32\winload.efi |
+|     4     | Windows NT OS Kernel | %SystemRoot%\system32\ntoskrnl.exe |                                   |
 
 **1. PreBoot**
 
@@ -174,7 +177,7 @@ After you run the command, you receive the following output:
     Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 1{D}:\Windows  
 Add installation to boot list? Yes/No/All: Y
 
-5.  Try again to start the system.
+5. Try again to start the system.
 
 ### Method 4: Replace Bootmgr
 
@@ -384,6 +387,6 @@ If the dump file shows an error that is related to a driver (for example, window
 
         1. Start WinRE, and open a Command Prompt window.
         2. Start a text editor, such as Notepad.
-        3. Navigate to C\Windows\System32\Config\.
+        3. Navigate to C:\Windows\System32\Config\.
         4. Rename the all five hives by appending ".old" to the name.
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.

@@ -2,12 +2,18 @@
 title: Merge AppLocker policies manually (Windows 10)
 description: This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
 ms.assetid: 3605f293-e5f2-481d-8efd-775f9f23c30f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 
@@ -30,7 +36,7 @@ The AppLocker policy is saved in XML format, and the exported policy can be edit
 | Script rules | Script| 
 | DLL rules | Dll| 
 | Packaged apps and packaged app installers|Appx| 
- 
+ 
 Rule enforcement is specified with the **EnforcementMode** element. The three enforcement modes in the XML correspond to the three enforcement modes in the AppLocker console, as shown in the following table:
 
 | XML enforcement mode |Enforcement mode in Group Policy |
@@ -38,7 +44,7 @@ Rule enforcement is specified with the **EnforcementMode** element. The three en
 | NotConfigured | Not configured (rules are enforced)| 
 | AuditOnly | Audit only| 
 | Enabled | Enforce rules| 
- 
+ 
 Each of the three condition types use specific elements. For XML examples of the different rule types, see Merge AppLocker policies manually.
 
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.

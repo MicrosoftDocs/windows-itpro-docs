@@ -2,18 +2,20 @@
 title: OMA DM protocol support
 description: OMA DM protocol support
 ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
 
 # OMA DM protocol support
 
-The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This topic describes the OMA DM functionality that the DM client supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=267526).
+The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This topic describes the OMA DM functionality that the DM client supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/OMA-TS-DM_Protocol-V1_2-20070209-A.pdf).
 
 
 ## In this topic
@@ -62,7 +64,7 @@ The following table shows the OMA DM standards that Windows uses.
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>DM protocol commands</p></td>
-<td style="vertical-align:top"><p>The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see &quot;SyncML Representation Protocol Device Management Usage (OMA-SyncML-DMRepPro-V1_1_2-20030613-A)&quot; available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=267526).</p>
+<td style="vertical-align:top"><p>The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see &quot;SyncML Representation Protocol Device Management Usage (OMA-SyncML-DMRepPro-V1_1_2-20030613-A)&quot; available from the <a href="https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/" data-raw-source="[OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/)">OMA website</a>.</p>
 <ul>
 <li><p>Add (Implicit Add supported)</p></li>
 <li><p>Alert (DM alert): Generic alert (1226) is used by enterprise management client when the user triggers an MDM unenrollment action from the device or when a CSP finishes some asynchronous actions. Device alert (1224) is used to notify the server some device triggered event.</p></li>
@@ -121,23 +123,22 @@ The following table shows the OMA DM standards that Windows uses.
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>Provisioning Files</p></td>
-<td style="vertical-align:top"><p>Provisioning XML must be well formed and follow the definition in [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.</p>
+<td style="vertical-align:top"><p>Provisioning XML must be well formed and follow the definition in <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p>
 <p>If an XML element that is not a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</p>
+<strong>Note</strong><br/><p>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>WBXML support</p></td>
-<td style="vertical-align:top"><p>Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.</p></td>
+<td style="vertical-align:top"><p>Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>Handling of large objects</p></td>
-<td style="vertical-align:top"><p>In Windows 10, version 1511, client support for uploading large objects to the server was added.</p></td>
+<td style="vertical-align:top"><p>In Windows 10, version 1511, client support for uploading large objects to the server was added.</p></td>
 </tr>
 </tbody>
 </table>
@@ -146,7 +147,7 @@ The following table shows the OMA DM standards that Windows uses.
 <a href="" id="protocol-common-elements"></a>
 ## OMA DM protocol common elements
 
-Common elements are used by other OMA DM element types. The following table lists the OMA DM common elements used to configure the devices. For more information about OMA DM common elements, see "SyncML Representation Protocol Device Management Usage" (OMA-SyncML-DMRepPro-V1\_1\_2-20030613-A) available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
+Common elements are used by other OMA DM element types. The following table lists the OMA DM common elements used to configure the devices. For more information about OMA DM common elements, see "SyncML Representation Protocol Device Management Usage" (OMA-SyncML-DMRepPro-V1_1_2-20030613-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
 <table>
 <colgroup>
@@ -208,10 +209,10 @@ Common elements are used by other OMA DM element types. The following table list
 <td style="vertical-align:top"><p>SessionID</p></td>
 <td style="vertical-align:top"><p>Specifies the identifier of the OMA DM session associated with the containing message.</p>
 <div class="alert">
-<strong>Note</strong>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.
+<strong>Note</strong>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -301,26 +302,26 @@ The following table shows the sequence of events during a typical DM session.
 </tbody>
 </table>
 
- 
 
-The step numbers in the table do not represent message identification numbers (MsgID). All messages from the server must have a MsgID that is unique within the session, starting at 1 for the first message, and increasing by an increment of 1 for each additional message. For more information about MsgID and OMA SyncML protocol, see "OMA Device Management Representation Protocol" (OMA-TS-DM\_RepPro-V1\_2-20070209-A) available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
+
+The step numbers in the table do not represent message identification numbers (MsgID). All messages from the server must have a MsgID that is unique within the session, starting at 1 for the first message, and increasing by an increment of 1 for each additional message. For more information about MsgID and OMA SyncML protocol, see "OMA Device Management Representation Protocol" (DM_RepPro-V1_2-20070209-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/).
 
 During OMA DM application level mutual authentication, if the device response code to Cred element in the server request is 212, no further authentication is needed for the remainder of the DM session. In the case of the MD5 authentication, the Chal element can be returned. Then the next nonce in Chal must be used for the MD5 digest when the next DM session is started.
 
 If a request includes credentials and the response code to the request is 200, the same credential must be sent within the next request. If the Chal element is included and the MD5 authentication is required, a new digest is created by using the next nonce via the Chal element for next request.
 
-For more information about Basic or MD5 client authentication, MD5 server authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM\_Security-V1\_2\_1-20080617-A), authentication response code handling and step-by-step samples in OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
+For more information about Basic or MD5 client authentication, MD5 server authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM_Security-V1_2_1-20080617-A), authentication response code handling and step-by-step samples in OMA Device Management Protocol specification (OMA-TS-DM_Protocol-V1_2_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/).
 
 
 ## User targeted vs. Device targeted configuration
 
-For CSPs and policies that supports per user configuration, MDM server could send user targeted setting values to the device the user that enrolled MDM is actively logged in. The device notifies the server the login status via a device alert (1224) with Alert type = in DM pkg\#1.
+For CSPs and policies that support per user configuration, the MDM server can send user targeted setting values to the device that a MDM-enrolled user is actively logged into. The device notifies the server of the login status via a device alert (1224) with Alert type = in DM pkg\#1.
 
 The data part of this alert could be one of following strings:
 
--   user – the user that enrolled the device is actively login. The MDM server could send user specific configuration for CSPs/policies that support per user configuration
+-   user – the user that enrolled the device is actively logged in. The MDM server could send user specific configuration for CSPs/policies that support per user configuration
 -   others – another user login but that user does not have an MDM account. The server can only apply device wide configuration, e.g. configuration applies to all users in the device.
--   none – no active user login. The server can only apply device wide configuration and available configuration is restricted to the device environment (no active user login
+-   none – no active user login. The server can only apply device wide configuration and available configuration is restricted to the device environment (no active user login).
 
 Below is an alert example:
 
@@ -371,13 +372,13 @@ When using SyncML in OMA DM, there are standard response status codes that are r
 | 507         | `Atomic` failed. One of the operations in an `Atomic` block failed.                                                                                                                                                               |
 | 516         | `Atomic` roll back failed. An `Atomic` operation failed and the command was not rolled back successfully.                                                                                                                         |
 
- 
+
 
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+
 
 
 

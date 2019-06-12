@@ -2,14 +2,18 @@
 title: Manage Wi-Fi Sense in your company (Windows 10)
 description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places.
 ms.assetid: 1845e00d-c4ee-4a8f-a5e5-d00f2735a271
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["WiFi Sense", "automatically connect to wi-fi", "wi-fi hotspot connection"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: eross-msft
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/02/2018
+ms.topic: article
 ---
 
 # Manage Wi-Fi Sense in your company
@@ -18,7 +22,7 @@ ms.date: 05/02/2018
 -   Windows 10
 -   Windows 10 Mobile
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Beginning with Windows 10, version 1803, Wifi-Sense is no longer available. The following information only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://privacy.microsoft.com/windows-10-open-wi-fi-hotspots) for more details.
 
 Wi-Fi Sense learns about open Wi-Fi hotspots your Windows PC or Windows phone connects to by collecting information about the network, like whether the open Wi-Fi network has a high-quality connection to the Internet. By using that information from your device and from other Wi-Fi Sense customers' devices too, Wi-Fi Sense builds a database of these high-quality networks. When you’re in range of one of these Wi-Fi hotspots, you automatically get connected to it.
@@ -51,28 +55,28 @@ You can manage your Wi-Fi Sense settings by using registry keys and the Registry
 
 **To set up Wi-Fi Sense using the Registry Editor**
 
-1.  Open your Registry Editor and go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config\`
+1. Open your Registry Editor and go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config\`
 
-2.  Create and set a new **DWORD (32-bit) Value** named, **AutoConnectAllowedOEM**, with a **Value data** of **0 (zero)**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see [How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959).
+2. Create and set a new **DWORD (32-bit) Value** named, **AutoConnectAllowedOEM**, with a **Value data** of **0 (zero)**.
+   <p>Setting this value to <strong>0</strong> turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the <strong>Wi-Fi Settings</strong> screen, but can&#39;t be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=620959" data-raw-source="[How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959)">How to configure Wi-Fi Sense on Windows 10 in an enterprise</a>.
 
-    ![Registry Editor, showing the creation of a new DWORD value](images/wifisense-registry.png)
+   ![Registry Editor, showing the creation of a new DWORD value](images/wifisense-registry.png)
 
 ### Using the Windows Provisioning settings
 You can manage your Wi-Fi Sense settings by changing the Windows provisioning setting, **WiFISenseAllowed**.
 
 **To set up Wi-Fi Sense using WiFISenseAllowed**
 
--   Change the Windows Provisioning setting, **WiFISenseAllowed**, to **0**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Windows Provisioning settings reference topic, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
+- Change the Windows Provisioning setting, **WiFISenseAllowed**, to **0**.
+  <p>Setting this value to <strong>0</strong> turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the <strong>Wi-Fi Settings</strong> screen, but can&#39;t be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Windows Provisioning settings reference topic, <a href="https://go.microsoft.com/fwlink/p/?LinkId=620909" data-raw-source="[WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909)">WiFiSenseAllowed</a>.
 
 ### Using Unattended Windows Setup settings
 If your company still uses Unattend, you can manage your Wi-Fi Sense settings by changing the Unattended Windows Setup setting, **WiFiSenseAllowed**.
 
 **To set up Wi-Fi Sense using WiFISenseAllowed**
 
--   Change the Unattended Windows Setup setting, **WiFISenseAllowed**, to **0**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Unattended Windows Setup Reference topic, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
+- Change the Unattended Windows Setup setting, **WiFISenseAllowed**, to **0**.
+  <p>Setting this value to <strong>0</strong> turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the <strong>Wi-Fi Settings</strong> screen, but can&#39;t be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Unattended Windows Setup Reference topic, <a href="https://go.microsoft.com/fwlink/p/?LinkId=620910" data-raw-source="[WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910)">WiFiSenseAllowed</a>.
 
 ### How employees can change their own Wi-Fi Sense settings
 If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
@@ -91,9 +95,9 @@ If you select the **Share network with my contacts** check box the first time yo
 - [Wi-Fi Sense and Privacy](https://go.microsoft.com/fwlink/p/?LinkId=620911)
 - [How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959)
 
- 
+ 
 
- 
+ 
 
 
 

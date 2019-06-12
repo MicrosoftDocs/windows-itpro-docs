@@ -1,12 +1,16 @@
 ---
 title: Planning for the App-V Server Deployment (Windows 10)
 description: Planning for the App-V 5.1 Server Deployment
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Planning for the App-V server deployment
 
@@ -49,9 +53,9 @@ The following table lists server-related protocols used by the App-V servers, an
 |IIS server|HTTP<br>HTTPS|This server-protocol combination requires a mechanism to synchronize content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.|Internal|
 |File|SMB|This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer that's capable of file sharing or streaming.|Internal|
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

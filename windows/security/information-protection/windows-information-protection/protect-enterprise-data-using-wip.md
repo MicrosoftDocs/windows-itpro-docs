@@ -2,14 +2,20 @@
 title: Protect your enterprise data using Windows Information Protection (WIP) (Windows 10)
 description: With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
+ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.author: justinha
-ms.date: 11/08/2018
 ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 03/05/2019
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)
@@ -23,6 +29,9 @@ ms.localizationpriority: medium
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
 Windows Information Protection (WIP), previously known as enterprise data protection (EDP), helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside WIP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
+
+>[!IMPORTANT]
+>While WIP can stop accidental data leaks from honest employees, it is not intended to stop malicious insiders from removing enterprise data. For more details about the benefits WIP provides, see [Why use WIP?](#why-use-wip) later in this topic.
 
 ## Video: Protect enterprise data from being accidentally copied to the wrong place
 
@@ -73,28 +82,28 @@ WIP provides:
 - Integration with your existing management system (Microsoft Intune, System Center Configuration Manager, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
 
 ## Why use WIP?
-WIP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
+WIP is the mobile application management (MAM) mechanism on Windows 10. WIP gives you a new way to manage data policy enforcement for apps and documents on Windows 10 desktop operating systems, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
 
--   **Change the way you think about data policy enforcement.** As an enterprise admin, you need to maintain compliance in your data policy and data access. WIP helps make sure that your enterprise data is protected on both corporate and employee-owned devices, even when the employee isn’t using the device. When employees create content on an enterprise-protected device, they can choose to save it as a work document. If it's a work document, it becomes locally-maintained as enterprise data.
+-   **Change the way you think about data policy enforcement.** As an enterprise admin, you need to maintain compliance in your data policy and data access. WIP helps protect enterprise on both corporate and employee-owned devices, even when the employee isn’t using the device. When employees create content on an enterprise-protected device, they can choose to save it as a work document. If it's a work document, it becomes locally-maintained as enterprise data.
 
 -   **Manage your enterprise documents, apps, and encryption modes.**
 
     -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using a WIP-protected device, WIP encrypts the data on the device.
 
-    - **Using allowed apps.** Managed apps (apps that you've included on the **Protected apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another allowed app, but not to personal apps. Imagine an HR person wants to copy a job description from an allowed app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
+    - **Using protected apps.** Managed apps (apps that you've included on the **Protected apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
-    -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your allowed apps list, the app is trusted with enterprise data. All apps not on this list are stopped from accessing your enterprise data, depending on your WIP management-mode.
+    -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your protected apps list, the app is trusted with enterprise data. All apps not on this list are stopped from accessing your enterprise data, depending on your WIP management-mode.
     
-        You don’t have to modify line-of-business apps that never touch personal data to list them as allowed apps; just include them in the allowed apps list.
+        You don’t have to modify line-of-business apps that never touch personal data to list them as protected apps; just include them in the protected apps list.
 
-    -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Hiding overrides stops the action immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without stopping anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
+    -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Hiding overrides stops the action immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without stopping anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your protected apps list. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
 
     -   **Data encryption at rest.** WIP helps protect enterprise data on local files and on removable media.
     
         Apps such as Microsoft Word work with WIP to help continue your data protection across local files and removable media. These apps are being referred to as, enterprise aware. For example, if an employee opens WIP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies WIP to the new document.
 
-    -   **Helping prevent accidental data disclosure to public spaces.** WIP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, if Dropbox™ isn’t on your allowed apps list, employees won’t be able to sync encrypted files to their personal cloud storage. Instead, if the employee stores the content to an app on your allowed apps list, like Microsoft OneDrive for Business, the encrypted files can sync freely to the business cloud, while maintaining the encryption locally.
+    -   **Helping prevent accidental data disclosure to public spaces.** WIP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, if Dropbox™ isn’t on your protected apps list, employees won’t be able to sync encrypted files to their personal cloud storage. Instead, if the employee stores the content to an app on your protected apps list, like Microsoft OneDrive for Business, the encrypted files can sync freely to the business cloud, while maintaining the encryption locally.
 
     -   **Helping prevent accidental data disclosure to removable media.** WIP helps prevent enterprise data from leaking when it's copied or transferred to removable media. For example, if an employee puts enterprise data on a Universal Serial Bus (USB) drive that also has personal data, the enterprise data remains encrypted while the personal data doesn’t.
 
@@ -120,14 +129,14 @@ WIP currently addresses these enterprise scenarios:
 
 - You can remotely wipe enterprise data off managed computers, including employee-owned computers, without affecting the personal data.
 
-- You can select specific apps that can access enterprise data, called "allowed apps" that are clearly recognizable to employees. You can also stop non-protected apps from accessing enterprise data.
+- You can protect specific apps that can access enterprise data that are clearly recognizable to employees. You can also stop non-protected apps from accessing enterprise data.
 
 - Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
 
 ### <a href="" id="bkmk-modes"></a>WIP-protection modes
 Enterprise data is automatically encrypted after it’s loaded on a device from an enterprise source or if an employee marks the data as corporate. Then, when the enterprise data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity.
 
-Your WIP policy includes a list of trusted apps that are allowed to access and process corporate data. This list of apps is implemented through the [AppLocker](/windows/device-security/applocker/applocker-overview) functionality, controlling what apps are allowed to run and letting the Windows operating system know that the apps can edit corporate data. Apps included on this list don’t have to be modified to open corporate data because their presence on the list allows Windows to determine whether to grant them access. However, new for Windows 10, app developers can use a new set of application programming interfaces (APIs) to create *enlightened* apps that can use and edit both enterprise and personal data. A huge benefit to working with enlightened apps is that dual-use apps, like Microsoft Word, can be used with less concern about encrypting personal data by mistake because the APIs allow the app to determine whether data is owned by the enterprise or if it’s personally owned.
+Your WIP policy includes a list of trusted apps that are protected to access and process corporate data. This list of apps is implemented through the [AppLocker](/windows/device-security/applocker/applocker-overview) functionality, controlling what apps are allowed to run and letting the Windows operating system know that the apps can edit corporate data. Apps included on this list don’t have to be modified to open corporate data because their presence on the list allows Windows to determine whether to grant them access. However, new for Windows 10, app developers can use a new set of application programming interfaces (APIs) to create *enlightened* apps that can use and edit both enterprise and personal data. A huge benefit to working with enlightened apps is that dual-use apps, like Microsoft Word, can be used with less concern about encrypting personal data by mistake because the APIs allow the app to determine whether data is owned by the enterprise or if it’s personally owned.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
@@ -139,7 +148,7 @@ You can set your WIP policy to use 1 of 4 protection and management modes:
 |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
 |Allow overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log.|
 |Silent |WIP runs silently, logging inappropriate data sharing, without stopping anything that would’ve been prompted for employee interaction while in Allow overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
-|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution. |
+|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on. |
 
 ## Turn off WIP
 You can turn off all Windows Information Protection and restrictions, decrypting all devices managed by WIP and reverting to where you were pre-WIP, with no data loss. However, this isn’t recommended. If you choose to turn WIP off, you can always turn it back on, but your decryption and policy info won’t be automatically reapplied.

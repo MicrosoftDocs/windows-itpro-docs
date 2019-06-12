@@ -1,20 +1,23 @@
 ---
 title: Windows Analytics
+ms.reviewer: 
+manager: dansimp
 description: Introduction and overview of Windows Analytics
 keywords: Device Health, Upgrade Readiness, Update Compliance, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 03/09/2018
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: lomayor
+ms.author: lomayor
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Windows Analytics overview
 
-Windows Analytics is a set of solutions for Microsoft Operations Management Suite (OMS) that provide you with extensive data about the state of devices in your deployment. There are currently three solutions which you can use singly or in any combination:
+Windows Analytics is a set of solutions for Azure Portal that provide you with extensive data about the state of devices in your deployment. There are currently three solutions which you can use singly or in any combination:
 
 ## Device Health
 
@@ -38,7 +41,7 @@ Windows Analytics is a set of solutions for Microsoft Operations Management Suit
 
 ## Upgrade Readiness
 
-[Upgrade Readiness](../upgrade/upgrade-readiness-get-started.md) offers a set of tools to plan and manage the upgrade process end to end, allowing you to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released. Upgrade Readiness not only supports upgrade management from Windows 7 and Windows 8.1 to Windows 10, but also Windows 10 upgrades in the Windows as a Service model.
+[Upgrade Readiness](../upgrade/upgrade-readiness-get-started.md) offers a set of tools to plan and manage the upgrade process end to end, allowing you to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released. Upgrade Readiness not only supports upgrade management from Windows 7 and Windows 8.1 to Windows 10, but also Windows 10 upgrades in the Windows as a service model.
 
 Use Upgrade Readiness to get:
 
@@ -50,4 +53,7 @@ Use Upgrade Readiness to get:
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
 - Data export to commonly used software deployment tools, including System Center Configuration Manager 
 
-To get started with any of these solutions, visit the links for instructions to add it to OMS.
+To get started with any of these solutions, visit the links for instructions to add it to Azure Portal.
+
+>[!NOTE]
+> For details about licensing requirements and costs associated with using Windows Analytics solutions, see [What are the requirements and costs for Windows Analytics solutions?](windows-analytics-FAQ-troubleshooting.md#what-are-the-requirements-and-costs-for-windows-analytics-solutions).

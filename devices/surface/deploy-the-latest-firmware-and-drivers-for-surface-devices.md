@@ -2,32 +2,41 @@
 title: Download the latest firmware and drivers for Surface devices (Surface)
 description: This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.
 ms.assetid: 7662BF68-8BF7-43F7-81F5-3580A770294A
+ms.reviewer: 
+manager: dansimp
 keywords: update Surface, newest, latest, download, firmware, driver, tablet, hardware, device
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: brecords
+author: dansimp
 ms.date: 11/15/2018
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ---
 
 # Deploying the latest firmware and drivers for Surface devices
-Although Surface devices are typically automatically updated with the latest device drivers and firmware via Windows Update, sometimes it's necessary to download and install updates manually, such as during a Windows deployment. If you need to install drivers and firmware separately from Windows Update, you can find the requisite files on the Microsoft Download Center. Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices.
+Although Surface devices are typically automatically updated with the latest device drivers and firmware via Windows Update, sometimes it's necessary to download and install updates manually, such as during a Windows deployment. 
+
+## Downloading MSI files
+To download MSI files, refer to the following Microsoft Support page:
+ 
+- [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface)<br>
+Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices.
 
 ## Deploying MSI files
-Driver and firmware updates for Surface devices containing all required cumulative updates are available as separate MSI files packaged for specific versions of Windows 10. For example, for Surface Pro 6, there are separate MSI files for Windows 10 versions 16299, 17134, and 17763.
-When deploying updates to Surface devices in your organization, you need to first determine the appropriate .MSI file for the Windows version running on your target devices.
+Driver and firmware updates for Surface devices containing all required cumulative updates are packaged in separate MSI files for specific versions of Windows 10. 
+In the name of each of these files you will find a Windows build number, this number indicates the minimum supported build required to install the drivers and firmware contained within. Refer to [Windows 10 release information](https://docs.microsoft.com/windows/windows-10/release-information) for a list of the build numbers for each version. For example, to install the drivers contained in SurfacePro6_Win10_16299_1900307_0.msi file you must have Windows 10 Fall Creators Update version 1709, or newer installed on your Surface Pro 6.
 
-### Naming convention for Surface MSI files
-Each .MSI file is named in accordance with a formula that begins with the product and Windows release  information, followed by the Windows OS floor number and version number, and ending with the revision of version number:
 
-#### Example:
+### Surface MSI naming convention
+Each .MSI file is named in accordance with a formula that begins with the product and Windows release information, followed by the Windows build  number and version number, and ending with the revision of version number.  SurfacePro6_Win10_16299_1900307_0.msi is classified as follows:
+
+**Example:**
 SurfacePro6_Win10_16299_1900307_0.msi :
 
-| Product     | Windows release | OS floor | Version |                                                                                 | Revision of version |
+| Product     | Windows release | Build | Version |  Revision of version |
 | --- | --- | --- | --- | --- |
 | SurfacePro6 | Win10  | 16299  | 1900307 | 0  |
 |       |      |       | Indicates key date and sequence information  | Indicates release history of the MSI file   |
@@ -42,31 +51,9 @@ Look to the **version** number to determine the latest files that contain the mo
 
 The first file —  SurfacePro6_Win10_16299_1900307_0.msi  —  is the newest because its VERSION field has the newest build in 2019; the other files are from 2018.
 
-### Downloading MSI files
-To download MSI files, refer to the following Microsoft Support page:
- 
-- [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface)
+## Supported devices
+Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. 
 
- 
-The following MSI files are available:
-
-- Surface Laptop 2
-- Surface Pro 6
-- Surface Go
-- Surface Go with LTE Advanced
-- Surface Book 2
-- Surface Laptop
-- Surface Pro
-- Surface Pro with LTE Advanced
-- Surface Pro 6
-- Surface Studio
-- Surface Studio 2
-- Surface Book
-- Surface Pro 4
-- Surface Pro 3
-- Surface 3
-- Surface 3 LTE
-- Surface Pro 2
 
 [!NOTE]
 There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.

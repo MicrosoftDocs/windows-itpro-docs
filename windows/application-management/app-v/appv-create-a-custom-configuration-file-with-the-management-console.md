@@ -1,12 +1,16 @@
 ---
 title: How to create a custom configuration file by using the App-V Management Console (Windows 10)
 description: How to create a custom configuration file by using the App-V Management Console.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to create a custom configuration file by using the App-V Management Console
 
@@ -26,12 +30,9 @@ You can create a dynamic user configuration file with the App-V Management Conso
 
 4. Select **Advanced**, and then select **Export Configuration**. Enter a file name and select **Save**. Now you can edit the file to configure a package for a user.
 
-    >[!NOTE]  
-    >If you want to export a configuration while running on Windows Server, make sure to disable the IE Enhanced Security Configuration setting. If this setting is enabled and set to block downloads, you won't be able to download anything from the App-V Server.
+   > [!NOTE]
+   > If you want to export a configuration while running on Windows Server, make sure to disable the IE Enhanced Security Configuration setting. If this setting is enalbed and set to block downloads, you won't be able to download anything from the App-V Server.
 
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

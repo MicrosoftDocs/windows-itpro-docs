@@ -5,8 +5,14 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: aadake
-ms.date: 10/03/2018
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 03/26/2019
+ms.reviewer: 
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -38,17 +44,17 @@ A simple example would be a PC owner leaves the PC for a quick coffee break, and
 
 ## How Windows protects against DMA drive-by attacks
 
-Windows leverages the system Input/Output Memory Management Unit (IOMMU) to block external devices from starting and performing DMA unless the drivers for these devices support memory isolation (such as DMA-remapping). 
-Devices with compatible drivers will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
-Devices with incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen.
+Windows leverages the system Input/Output Memory Management Unit (IOMMU) to block external peripherals from starting and performing DMA unless the drivers for these peripherals support memory isolation (such as DMA-remapping). 
+Peripherals with compatible drivers will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
+By default, peripherals with incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen.
 
 ## User experience
 
 ![Kernel DMA protection user experience](images/kernel-dma-protection-user-experience.png)
 
-A device that is incompatible with DMA-remapping will be blocked from starting if the device was plugged in before an authorized user logs in, or while the screen is locked. 
-Once the system is unlocked, the device driver will be started by the OS, and the device will continue to function normally until the system is rebooted, or the device is unplugged. 
-The devices will continue to function normally if the user locks the screen or logs out of the system.
+A peripheral that is incompatible with DMA-remapping will be blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. 
+Once the system is unlocked, the peripheral driver will be started by the OS, and the peripheral will continue to function normally until the system is rebooted, or the peripheral is unplugged. 
+The peripheral will continue to function normally if the user locks the screen or logs out of the system.
 
 ## System compatibility
 
@@ -65,11 +71,17 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 
 Systems running Windows 10 version 1803 that do support Kernel DMA Protection do have this security feature enabled automatically by the OS with no user or IT admin configuration required.
 
-**To check if a device supports Kernel DMA Protection**
+### Using Security Center
+
+Beginning with Wndows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details** > **Memory access protection**.
+
+![Kernel DMA protection in Security Center](bitlocker/images/kernel-dma-protection-security-center.png)
+
+### Using System information
 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
 2. Check the value of **Kernel DMA Protection**.
-   ![Kernel DMA protection](bitlocker/images/kernel-dma-protection.png)
+   ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
 3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
@@ -82,19 +94,21 @@ For systems that do not support Kernel DMA Protection, please refer to the [BitL
 ## Frequently asked questions
 
 ### Do in-market systems support Kernel DMA Protection for Thunderbolt™ 3?
-In market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA Protection for Thunderbolt™ 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees. For these systems, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+In-market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA Protection for Thunderbolt™ 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees that cannot be backported to previously released devices. For these systems, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ### Does Kernel DMA Protection prevent drive-by DMA attacks during Boot?
 No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt™ 3 ports during boot. 
 
 ### How can I check if a certain driver supports DMA-remapping?
-DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the following Property GUID (highlighted in red in the image below) in the Details tab of a device in Device Manager. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping.
+DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping.
 Please check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
+
+*For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the following image. 
 
 ![Kernel DMA protection user experience](images/device-details-tab.png)
 
 ### What should I do if the drivers for my Thunderbolt™ 3 peripherals do not support DMA-remapping?
-If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support this functionality. Details for driver compatibility requirements can be found here (add link to OEM documentation).
+If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support this functionality. Details for driver compatibility requirements can be found at the [Microsoft Partner Center](https://partner.microsoft.com/dashboard/collaborate/packages/4142).
 
 ### Do Microsoft drivers support DMA-remapping?
 In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA-remapping.
@@ -102,10 +116,13 @@ In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Co
 ### Do drivers for non-PCI devices need to be compatible with DMA-remapping?
 No. Devices for non-PCI peripherals, such as USB devices, do not perform DMA, thus no need for the driver to be compatible with DMA-remapping.
 
-### How can an enterprise enable the “External device enumeration” policy?
-The “External device enumeration” policy controls whether to enumerate external devices that are not compatible with DMA-remapping. Devices that are compatible with DMA-remapping are always enumerated. The policy can be enabled via Group Policy or Mobile Device Management (MDM):
+### How can an enterprise enable the External device enumeration policy?
+The External device enumeration policy controls whether to enumerate external peripherals that are not compatible with DMA-remapping. Peripherals that are compatible with DMA-remapping are always enumerated. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default).
+
+The policy can be enabled by using: 
+
 - Group Policy: Administrative Templates\System\Kernel DMA Protection\Enumeration policy for external devices incompatible with Kernel DMA Protection
-- MDM: [DmaGuard policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
+- Mobile Device Management (MDM): [DmaGuard policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
 
 ## Related topics
 

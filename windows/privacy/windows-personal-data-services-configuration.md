@@ -7,9 +7,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: danihalfin
-ms.author: daniha
+audience: ITPro
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 05/11/2018
+ms.reviewer: 
 ---
 # Windows 10 personal data services configuration
 
@@ -58,6 +63,9 @@ This setting determines the amount of Windows diagnostic data sent to Microsoft.
 >| **Policy Name** | Allow Telemetry |
 >| **Default setting** | 2 - Enhanced |
 >| **Recommended** | 2 - Enhanced |
+
+>[!NOTE]
+>When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
 
 #### Registry
 

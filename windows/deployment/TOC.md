@@ -1,9 +1,10 @@
 # [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment)
+## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)
 ## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
-
-## [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
+## [Windows Autopilot](windows-autopilot/windows-autopilot.md)
+## [Windows 10 Subscription Activation](windows-10-subscription-activation.md)
 ### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
@@ -19,12 +20,13 @@
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md)
-### [Windows 10 in S mode](s-mode.md)
-#### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
+### [Windows Autopilot](windows-autopilot/windows-autopilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)
+
+### [Windows 10 in S mode](s-mode.md)
+#### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
@@ -71,7 +73,6 @@
 ###### [Using the Sdbinst.exe Command-Line Tool](planning/using-the-sdbinstexe-command-line-tool.md)
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 
-#### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
@@ -209,13 +210,12 @@
 ####### [XML Elements Library](usmt/usmt-xml-elements-library.md)
 ###### [Offline Migration Reference](usmt/offline-migration-reference.md)
 ### [Install fonts in Windows 10](windows-10-missing-fonts.md)
-### [Change history for deploy Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Update Windows 10](update/index.md)
-### [Quick guide to Windows as a service](update/waas-quick-start.md)
-#### [Servicing stack updates](update/servicing-stack-updates.md)
-### [Overview of Windows as a service](update/waas-overview.md)
-### [Understand how servicing differs in Windows 10](update/waas-servicing-differences.md)
+### [Windows as a service](update/windows-as-a-service.md)
+#### [Quick guide to Windows as a service](update/waas-quick-start.md)
+##### [Servicing stack updates](update/servicing-stack-updates.md)
+#### [Overview of Windows as a service](update/waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
 ### [Assign devices to servicing channels for Windows 10 updates](update/waas-servicing-channels-windows-10-updates.md)
@@ -227,7 +227,9 @@
 #### [Windows Update error code reference](update/windows-update-error-reference.md)
 #### [Other Windows Update resources](update/windows-update-resources.md)
 ### [Optimize Windows 10 update delivery](update/waas-optimize-windows-10-updates.md)
-#### [Configure Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization.md)
+#### [Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization.md)
+#### [Set up Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization-setup.md)
+#### [Delivery Optimization reference](update/waas-delivery-optimization-reference.md)
 #### [Configure BranchCache for Windows 10 updates](update/waas-branchcache.md)
 #### [Whitepaper: Windows Updates using forward and reverse differentials](update/PSFxWhitepaper.md)
 ### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
@@ -246,7 +248,6 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
 ### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
@@ -278,7 +279,3 @@
 #### [Using Device Health](update/device-health-using.md)
 ### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
 ### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
-
-## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
-
-## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)

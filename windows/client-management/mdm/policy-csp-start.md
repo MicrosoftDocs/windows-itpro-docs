@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Start
 description: Policy CSP - Start
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/14/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Start
@@ -666,6 +668,13 @@ The following list shows the supported values:
 Enabling this policy prevents context menus from being invoked in the Start Menu.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (Do not disable).
+-   1 - True (disable).
+
+<!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Disable context menus in the Start Menu*
@@ -1091,6 +1100,13 @@ Added in Windows 10, version 1709. Enabling this policy removes the people icon
 Value type is integer.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Remove the People Bar from the taskbar*
@@ -1846,7 +1862,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

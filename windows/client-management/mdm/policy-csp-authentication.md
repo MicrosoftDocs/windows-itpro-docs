@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - Authentication
 description: Policy CSP - Authentication
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/30/2018
+author: manikadhiman
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Authentication
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -296,6 +295,8 @@ Added in Windows 10, version 1607. Allows secondary authentication devices to w
 
 The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
+In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This will only affect users that have not already set up a secondary authentication device.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -352,6 +353,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+> [!Warning]
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
 Value type is integer. Supported values:
@@ -410,9 +414,12 @@ Value type is integer. Supported values:
 
 <!--/Scope-->
 <!--Description-->
+> [!Warning]
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
 
-> [!Note]  
+> [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
 
 Value type is integer. Supported values:
@@ -489,14 +496,27 @@ Value type is string.
 
 <!--/Validation-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+  <!--EndHoloLensBusiness-->
+  <hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

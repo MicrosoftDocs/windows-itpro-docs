@@ -1,8 +1,11 @@
 ---
 title: QUERY OBJ
 description: QUERY OBJ
-author: jamiejdt
+author: eavena
 ms.assetid: 55abf0d1-c779-4172-8357-552ab010933b
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -65,7 +68,7 @@ Returns a tab-delimited list of current applications, packages, file type associ
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -82,7 +85,7 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 In version 4.6, a new column has been added to the output of SFTMIME QUERY OBJ:APP \[/GLOBAL\]. The last column of the output is a numeric value that indicates whether an application is published or not.
@@ -93,7 +96,7 @@ PUBLISHED=0 means the application has not been published or it is no longer publ
 
 If you use the /GLOBAL parameter, the PUBLISHED state will be 1 for applications that were published globally and 0 for those applications that were published under user contexts. Without the /GLOBAL parameter, a PUBLISHED state of 1 is returned for applications published in the context of the user running the command, and a state of 0 is returned for those applications that are published globally.
 
- 
+ 
 
 The SFTMIME QUERY OBJ command can be used to query for information on all of the objects shown above—applications, packages, file type associations, and servers. To show how you might use the SFTMIME QUERY OBJ command in your normal operations tasks, the following example demonstrates the process you would follow if you wanted to set the OVERRIDEURL parameter value for a specific package to specify a new path to the package content. 
 
@@ -122,16 +125,16 @@ For version 4.6 SP2, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Create Your AppLocker rules (Windows 10)
 description: This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 ms.assetid: b684a3a5-929c-4f70-8742-04088022f232
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 
@@ -38,7 +44,7 @@ You can use a reference device to automatically create a set of default rules fo
 You can create rules and set the mode to **Audit only** for each installed app, test and update each rule as necessary, and then deploy the policies. Creating rules individually might be best when you are targeting a small number of applications within a business group.
 
 >**Note:**  AppLocker includes default rules for each rule collection. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. You can also edit the default rules. For information about creating the default rules for the Windows operating system, see [Create AppLocker default rules](create-applocker-default-rules.md).
- 
+ 
 For information about performing this task, see:
 
 1.  [Create a rule that uses a publisher condition](create-a-rule-that-uses-a-publisher-condition.md)

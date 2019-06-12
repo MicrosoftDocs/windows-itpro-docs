@@ -1,8 +1,11 @@
 ---
 title: Release Notes for App-V 5.1
 description: Release Notes for App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 62c5be3b-0a46-4512-93ed-97c23184f343
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -128,7 +131,7 @@ The Permissions.sql script should be updated according to **Step 2** in [KB arti
 **Important**  
 **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
 
- 
+ 
 
 ## Microsoft Visual Studio 2012 not supported
 
@@ -176,25 +179,25 @@ Occassionally when mounting a package, a "File Not Found" (0x80070002) error is 
 <tr>
 <td align="left">Default</td>
 <td align="left">5<br />
-**Note**: this value is the default if the registry key is not defined or a value <=5 is specified.
+<strong>Note</strong>: this value is the default if the registry key is not defined or a value &lt;=5 is specified.
 </td>
 </tr>
 </tbody>
 </table>
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 
 
 [About App-V 5.1](about-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

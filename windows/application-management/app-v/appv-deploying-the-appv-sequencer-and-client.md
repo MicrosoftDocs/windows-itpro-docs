@@ -1,12 +1,16 @@
 ---
 title: Deploying the App-V Sequencer and configuring the client (Windows 10)
 description: Deploying the App-V Sequencer and configuring the client
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # Deploying the App-V Sequencer and configuring the client
 
@@ -88,6 +92,5 @@ You can use the App-V Sequencer log information to troubleshoot Sequencer instal
 >[!NOTE]
 >Sequencer-related events are prepended with **AppV\_Sequencer**. Client-related events are prepended with **AppV\_Client**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

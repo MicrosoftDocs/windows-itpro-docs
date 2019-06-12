@@ -2,11 +2,15 @@
 title: Plan Your Migration (Windows 10)
 description: Plan Your Migration
 ms.assetid: c951f7df-850e-47ad-b31b-87f902955e3e
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Plan Your Migration
@@ -28,38 +32,38 @@ One of the most important requirements for migrating settings and data is restor
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Common Migration Scenarios](usmt-common-migration-scenarios.md)</p></td>
+<td align="left"><p><a href="usmt-common-migration-scenarios.md" data-raw-source="[Common Migration Scenarios](usmt-common-migration-scenarios.md)">Common Migration Scenarios</a></p></td>
 <td align="left"><p>Determine whether you will perform a refresh migration or a replace migration.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)</p></td>
+<td align="left"><p><a href="usmt-what-does-usmt-migrate.md" data-raw-source="[What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)">What Does USMT Migrate?</a></p></td>
 <td align="left"><p>Learn which applications, user data, and operating system components USMT migrates.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Choose a Migration Store Type](usmt-choose-migration-store-type.md)</p></td>
+<td align="left"><p><a href="usmt-choose-migration-store-type.md" data-raw-source="[Choose a Migration Store Type](usmt-choose-migration-store-type.md)">Choose a Migration Store Type</a></p></td>
 <td align="left"><p>Choose an uncompressed, compressed, or hard-link migration store.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Determine What to Migrate](usmt-determine-what-to-migrate.md)</p></td>
+<td align="left"><p><a href="usmt-determine-what-to-migrate.md" data-raw-source="[Determine What to Migrate](usmt-determine-what-to-migrate.md)">Determine What to Migrate</a></p></td>
 <td align="left"><p>Identify user accounts, application settings, operating system settings, and files that you want to migrate inside your organization.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Test Your Migration](usmt-test-your-migration.md)</p></td>
+<td align="left"><p><a href="usmt-test-your-migration.md" data-raw-source="[Test Your Migration](usmt-test-your-migration.md)">Test Your Migration</a></p></td>
 <td align="left"><p>Test your migration before you deploy Windows to all users.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

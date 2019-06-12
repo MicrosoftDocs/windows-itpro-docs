@@ -2,11 +2,18 @@
 title: Windows 10 Credential Theft Mitigation Guide Abstract (Windows 10)
 description: Provides a summary of the Windows 10 credential theft mitigation guide.
 ms.assetid: 821ddc1a-f401-4732-82a7-40d1fff5a78a
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 04/19/2017
 ---
 
@@ -24,7 +31,7 @@ This guide explains how credential theft attacks occur and the strategies and co
 - Respond to suspicious activity
 - Recover from a breach
 
-![Security stages](images\security-stages.png)
+![Security stages](images/security-stages.png)
 
 ## Attacks that steal credentials
 

@@ -1,24 +1,27 @@
 ---
 title: Find the Application User Model ID of an installed app
-description: In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Microsoft Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: BD8BD003-887D-4EFD-9C7A-A68AB895D8CD
-author: alhopper-msft
-ms.author: alhopper
-ms.date: 05/02/2017
+ms.reviewer: 
+manager: dansimp
+description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. 
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.localizationpriority: medium
+ms.prod: w10
 ---
 # Find the Application User Model ID of an installed app
 
-In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Microsoft Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
+To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. You can find the AUMID by using Windows PowerShell, File Explorer, or the registry.
 
-## To identify the AUMID of an installed app by using Windows PowerShell
+## To find the AUMID by using Windows PowerShell
 
-At a Windows PowerShell command prompt, type the following commands to list the AUMIDs for all Microsoft Store apps installed for the current user on your device:
+To get the names and AUMIDs for all apps installed for the current user, open a Windows PowerShell command prompt and enter the following command:
+
+```powershell
+get-StartApps
+```
+
+To get the names and AUMIDs for Windows Store apps installed for another user, open a Windows PowerShell command prompt and enter the following commands:
 
 ```powershell
 $installedapps = get-AppxPackage
@@ -37,7 +40,19 @@ $aumidList
 
 You can add the –user &lt;username&gt; or the –allusers parameters to the get-AppxPackage cmdlet to list AUMIDs for other users. You must use an elevated Windows PowerShell prompt to use the –user or –allusers parameters.
 
-## To identify the AUMID of an installed app for the current user by using the registry
+## To find the AUMID by using File Explorer
+
+To get the names and AUMIDs for all apps installed for the current user, perform the following steps:
+
+1. Open **Run**, enter **shell:Appsfolder**, and select **OK**.
+
+2. A File Explorer window opens. Press **Alt** > **View** > **Choose details**.
+
+3. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to change the **View** setting from **Tiles** to **Details**.)
+
+![Image of the Choose Details options](images/aumid-file-explorer.png)
+
+## To find the AUMID of an installed app for the current user by using the registry
 
 Querying the registry can only return information about Microsoft Store apps that are installed for the current user, while the Windows PowerShell query can find information for any account on the device.
 

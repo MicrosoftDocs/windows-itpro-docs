@@ -5,10 +5,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business and Device Registration
 
@@ -77,11 +82,11 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 | Phase  | Description  |
 | :----: | :----------- |
 | A | The user signs in to a domain joined Windows 10 computers using domain credentials.  This can be user name and password or smart card authentication.  The user sign-in triggers the Automatic Device Join task.|
-|B | The task queries Active Directory using the LDAP protocol for the keywords attribute on service connection point stored in the configuration partition in Active Directory (CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=contoso,DC=com).  The value returned in the keywords attribute determines directs device registration to Azure Device Registration Service (ADRS).|
-|C | For the federated environments, the computer authenticates ADFS/STS using Windows integrated authentication.  The enterprise device registration service creates and returns a token that includes claims for the object GUID, computer SID, and domain joined state. The task submits the token and claims to Azure Active Directory where it is validated.  Azure Active Directory returns an ID token to the running task.
+|B | The task queries Active Directory using the LDAP protocol for the keywords attribute on service connection point stored in the configuration partition in Active Directory (CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=contoso,DC=com).  The value returned in the keywords attribute determines if device registration is directed to Azure Device Registration Service (ADRS) or the enterprise device registration service hosted on-premises.|
+|C | For the federated environments, the computer authenticates the enterprise device registration endpoint using Windows integrated authentication.  The enterprise device registration service creates and returns a token that includes claims for the object GUID, computer SID, and domain joined state. The task submits the token and claims to Azure Active Directory where it is validated.  Azure Active Directory returns an ID token to the running task.
 |D | The application creates TPM bound (preferred) RSA 2048 bit key-pair known as the device key (dkpub/dkpriv).  The application create a certificate request using dkpub and the public key and signs the certificate request with using dkpriv.  Next, the application derives second key pair from the TPM's storage root key.  This is the transport key (tkpub/tkpriv).|
 |E | To provide SSO for on-premises federated application, the task requests an enterprise PRT from the on-premises STS. Windows Server 2016 running the Active Directory Federation Services role validate the request and return it the running task.|
-|F | The task sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data.  Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then writes a device object in Azure Active Directory and sends the device ID and the device certificate to the client.  Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the task exits.|
-|G |If device write-back is enabled, on it's next synchronization cycle, Azure AD Connect requests updates from Azure Active Directory.  Azure Active Directory correlates the device object with a matching synchronized computer object. Azure AD Connect receives the device object that includes the object GUID and computer SID and writes the device object to Active Directory.|
+|F | The task sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data. Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then writes a device object in Azure Active Directory and sends the device ID and the device certificate to the client.  Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the task exits.|
+|G | If Azure AD Connect device write-back is enabled, Azure AD Connect requests updates from Azure Active Directory at its next synchronization cycle (device write-back is required for hybrid deployment using certificate trust). Azure Active Directory correlates the device object with a matching synchronized computer object. Azure AD Connect receives the device object that includes the object GUID and computer SID and writes the device object to Active Directory.|
 
 [Return to top](#Windows-Hello-for-Business-and-Device-Registration)

@@ -2,12 +2,16 @@
 title: Deploy Windows 10 (Windows 10)
 description: Deploying Windows 10 for IT professionals.
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 11/06/2018
-author: greg-lindsay
+author: dansimp
+ms.topic: article
 ---
 
 # Deploy Windows 10

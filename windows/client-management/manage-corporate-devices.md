@@ -2,14 +2,18 @@
 title: Manage corporate devices (Windows 10)
 description: You can use the same management tools to manage all device types running Windows 10 desktops, laptops, tablets, and phones.
 ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["MDM", "device management"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/21/2017
+ms.topic: article
 ---
 
 # Manage corporate devices

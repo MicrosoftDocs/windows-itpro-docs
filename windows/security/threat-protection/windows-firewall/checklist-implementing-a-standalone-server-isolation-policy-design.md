@@ -2,12 +2,18 @@
 title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows 10)
 description: Checklist Implementing a Standalone Server Isolation Policy Design
 ms.assetid: 50a997d8-f079-408c-8ac6-ecd02078ade3
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

@@ -4,11 +4,13 @@ description: Learn how to install and run Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Install Windows Configuration Designer
@@ -68,6 +70,7 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 
 ## Current Windows Configuration Designer limitations
 
+- Windows Configuration Designer will not work properly if the Group Policy setting **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** is enabled. We recommend that you run Windows Configuration Designer on a different device, rather than change the security setting. 
 
 - You can only run one instance of Windows Configuration Designer on your computer at a time.
 

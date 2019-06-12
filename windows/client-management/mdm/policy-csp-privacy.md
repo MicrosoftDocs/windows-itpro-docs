@@ -1,18 +1,20 @@
 ---
 title: Policy CSP - Privacy
 description: Policy CSP - Privacy
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/14/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Privacy
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -316,7 +318,7 @@ ms.date: 08/14/2018
 <!--Description-->
 Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 
-> [!Note]  
+> [!NOTE]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 
@@ -4851,15 +4853,28 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic
+
+- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->  
+## <a href="" id="hololenbusinessspolicies"></a>Privacy policies supported by Windows Holographic for Business
+
+- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in the next major release of Windows 10.

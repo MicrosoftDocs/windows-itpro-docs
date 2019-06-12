@@ -1,12 +1,16 @@
 ---
 title: How to create a virtual application package using an App-V Package Accelerator (Windows 10)
 description: How to create a virtual application package using an App-V Package Accelerator.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to create a virtual application package using an App-V Package Accelerator
 
@@ -36,7 +40,7 @@ Use the following procedure to create a virtual application package with the App
 
     Alternatively, if you have already copied the installation files to a directory on this computer, select **Make New Folder**, browse to the folder that contains the installation files, then select **Next**.
 
-    >[!NOTE]
+   > [!NOTE]
     >You can specify the following types of supported installation files:
     > - Windows Installer files (**.msi**)
     > - Cabinet files (.cab)
@@ -67,9 +71,9 @@ Use the following procedure to create a virtual application package with the App
 
     The package is now available in the Sequencer. To edit the package properties, select **Edit \[Package Name\]**. For more information about how to modify a package, see [How to modify an existing virtual application package](appv-modify-an-existing-virtual-application-package.md).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

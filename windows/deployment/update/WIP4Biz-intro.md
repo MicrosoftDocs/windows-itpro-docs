@@ -5,10 +5,13 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 03/01/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Introduction to the Windows Insider Program for Business

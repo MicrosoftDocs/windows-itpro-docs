@@ -1,8 +1,11 @@
 ---
 title: Release Notes for DaRT 8.0
 description: Release Notes for DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: e8b373c8-7aa5-4930-a8f9-743d26145dad
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -37,7 +40,7 @@ We are interested in your feedback on DaRT 8.0. You can send your feedback to <m
 **Note**  
 This email address is not a support channel, but your feedback will help us to plan future changes for our documentation and product releases.
 
- 
+ 
 
 For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
@@ -88,9 +91,9 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 [About DaRT 8.0](about-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Create an Inbound ICMP Rule (Windows 10)
 description: Create an Inbound ICMP Rule
 ms.assetid: 267b940a-79d9-4322-b53b-81901e357344
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

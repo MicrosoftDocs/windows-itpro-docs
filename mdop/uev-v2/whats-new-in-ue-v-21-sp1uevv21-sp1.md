@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.1 SP1
 description: What's New in UE-V 2.1 SP1
-author: jamiejdt
+author: levinec
 ms.assetid: 9a40c737-ad9a-4ec1-b42b-31bfabe0f170
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -53,7 +56,7 @@ Printer roaming in UE-V requires one of these scenarios:
 **Note**  
 The UE-V printer roaming feature does **not** roam printer settings or preferences, such as printing double-sided.
 
- 
+ 
 
 ## Office 2013 Settings Location Template
 
@@ -63,7 +66,7 @@ UE-V 2.1 and 2.1 SP1 include the Microsoft Office 2013 settings location templat
 **Note**  
 An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
- 
+ 
 
 Previously UE-V included Microsoft Office 2010 settings location templates that were automatically distributed and registered with the UE-V Agent. UE-V 2.1 works with Office 365 to determine whether Office 2013 settings are roamed by Office 365. If settings are roamed by Office 365 they are not roamed by UE-V. [Overview of user and roaming settings for Office 2013](https://go.microsoft.com/fwlink/p/?LinkID=391220) provides more information.
 
@@ -75,10 +78,10 @@ To enable settings synchronization using UE-V 2.1, do one of the following:
 
 UE-V 2.1 ships [Office 2013 and Office 2010 templates](https://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
@@ -89,9 +92,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-sp1-release-notes.md)
 
- 
+ 
 
- 
+ 
 
 
 

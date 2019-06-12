@@ -2,12 +2,18 @@
 title: Accounts Administrator account status (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Accounts Administrator account status security policy setting.
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/01/2017
 ---
 

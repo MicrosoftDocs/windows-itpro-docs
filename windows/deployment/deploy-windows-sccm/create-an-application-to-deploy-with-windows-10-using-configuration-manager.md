@@ -2,13 +2,16 @@
 title: Create an application to deploy with Windows 10 using Configuration Manager (Windows 10)
 description: Microsoft System Center 2012 R2 Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, task sequence, custom, customize
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Create an application to deploy with Windows 10 using Configuration Manager
@@ -26,7 +29,7 @@ Microsoft System Center 2012 R2 Configuration Manager supports deploying applica
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
->[!NOTE]  
+>[!NOTE]
 >Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
 
 ## Example: Create the Adobe Reader XI application
@@ -94,9 +97,9 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

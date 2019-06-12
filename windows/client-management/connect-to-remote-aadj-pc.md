@@ -6,10 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.date: 08/02/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -34,22 +37,22 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   1. Open system properties for the remote PC. 
   2. Enable **Allow remote connections to this computer** and select **Allow connections only from computers running Remote Desktop with Network Level Authentication**. 
 
-   ![Allow remote connections to this computer](images/allow-rdp.png)
+     ![Allow remote connections to this computer](images/allow-rdp.png)
 
   3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**. 
-  >[!NOTE]
-  >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
-  >
-  >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
-  >
-  >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
-  >
-  >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
+     >[!NOTE]
+     >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
+     >
+     >`net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
+     >
+     >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
+     >
+     >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
 
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   >[!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureADName\YourAccountName`.
+  >When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
 
  
 ## Supported configurations
@@ -87,9 +90,9 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,7 +20,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		  "**/*.gif"
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,20 +31,22 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "justinha",
-		"ms.date": "04/05/2017",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.win-device-security"
-			}
-		}
-	},
+      "uhfHeaderId": "MSDocsHeader-WindowsIT",
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "ms.author": "justinha",
+      "ms.date": "04/05/2017",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.win-device-security",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "win-device-security"
+    "dest": "win-device-security",
+    "markdownEngineName": "markdig"
   }
 }

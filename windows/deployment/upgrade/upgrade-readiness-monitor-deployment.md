@@ -1,12 +1,15 @@
 ---
 title: Monitor deployment with Upgrade Readiness
+ms.reviewer: 
+manager: dansimp
 description: Describes how to use Upgrade Readiness to monitor the deployment after Windows upgrades.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.localizationpriority: medium
 ms.prod: w10
-author: jaimeo
-ms.author: jaimeo
-ms.date: 11/07/2018
+author: lomayor
+ms.author: lomayor
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 4: Monitor

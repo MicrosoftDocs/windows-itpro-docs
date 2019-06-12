@@ -2,12 +2,18 @@
 title: Domain member Maximum machine account password age (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Maximum machine account password age security policy setting.
 ms.assetid: 0ec6f7c1-4d82-4339-94c0-debb2d1ac109
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 05/31/2018
 ---
 
@@ -53,7 +59,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | 30 days| 
 | Member Server Effective Default Settings|30 days| 
 | Client Computer Effective Default Settings | 30 days| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

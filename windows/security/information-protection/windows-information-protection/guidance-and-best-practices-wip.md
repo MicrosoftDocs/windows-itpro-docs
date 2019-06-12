@@ -2,14 +2,20 @@
 title: General guidance and best practices for Windows Information Protection (WIP) (Windows 10)
 description: This section includes info about the enlightened Microsoft apps, including how to add them to your Protected Apps list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with Windows Information Protection (WIP).
 ms.assetid: aa94e733-53be-49a7-938d-1660deaf52b0
+ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
 ms.localizationpriority: medium
-ms.date: 09/11/2017
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ---
 
 # General guidance and best practices for Windows Information Protection (WIP)

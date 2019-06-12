@@ -2,12 +2,18 @@
 title: Network security Restrict NTLM Incoming NTLM traffic (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Incoming NTLM traffic security policy setting.
 ms.assetid: c0eff7d3-ed59-4004-908a-2205295fefb8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -59,7 +65,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not defined| 
 | Member server effective default settings | Not defined| 
 | Client computer effective default settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

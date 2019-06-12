@@ -2,13 +2,19 @@
 title: Administer AppLocker (Windows 10)
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 09/21/2017
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # Administer AppLocker
@@ -21,19 +27,18 @@ This topic for IT professionals provides links to specific procedures to use whe
 
 AppLocker helps administrators control how users can access and use files, such as executable files, packaged apps, scripts, Windows Installer files, and DLLs. Using AppLocker, you can:
 
--   Define rules based on file attributes derived from the digital signature, including the publisher, product name, file name, and file version. For example, you can create rules based on the publisher attribute that is persistent through updates, or you can create rules for a specific version of a file.
--   Assign a rule to a security group or an individual user.
--   Create exceptions to rules. For example, you can create a rule that allows all Windows processes to run, except Registry Editor (regedit.exe).
--   Use audit-only mode to deploy the policy and understand its impact before enforcing it.
--   Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, the existing policy is overwritten.
--   Simplify creating and managing AppLocker rules by using AppLocker PowerShell cmdlets.
-> **Note**  For more info about enhanced capabilities of AppLocker to control Windows apps, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
- 
+- Define rules based on file attributes derived from the digital signature, including the publisher, product name, file name, and file version. For example, you can create rules based on the publisher attribute that is persistent through updates, or you can create rules for a specific version of a file.
+- Assign a rule to a security group or an individual user.
+- Create exceptions to rules. For example, you can create a rule that allows all Windows processes to run, except Registry Editor (regedit.exe).
+- Use audit-only mode to deploy the policy and understand its impact before enforcing it.
+- Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, the existing policy is overwritten.
+- Simplify creating and managing AppLocker rules by using AppLocker PowerShell cmdlets.
+  > **Note**  For more info about enhanced capabilities of AppLocker to control Windows apps, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
+ 
 ## In this section
 
 | Topic | Description |
 | - | - |
-| [Administer AppLocker using Mobile Device Management (MDM)](administer-applocker-using-mdm.md) | This topic describes how to used MDM to manage AppLocker policies. |
 | [Maintain AppLocker policies](maintain-applocker-policies.md) | This topic describes how to maintain rules within AppLocker policies. |
 | [Edit an AppLocker policy](edit-an-applocker-policy.md) | This topic for IT professionals describes the steps required to modify an AppLocker policy. |
 | [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md) | This topic discusses the steps required to test an AppLocker policy prior to deployment. |
@@ -50,7 +55,7 @@ AppLocker helps administrators control how users can access and use files, such 
 
 You can administer AppLocker policies by using the Group Policy Management Console to create or edit a Group Policy Object (GPO), or to create or edit an AppLocker policy on a local computer by using the Local Group Policy Editor snap-in or the Local Security Policy snap-in (secpol.msc).
 
-### Administer Applocker using Group Policy
+### Administer AppLocker using Group Policy
 
 You must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. Also, the Group Policy Management feature must be installed on the computer.
 
@@ -67,5 +72,3 @@ You must have Edit Setting permission to edit a GPO. By default, members of the
 ## Using Windows PowerShell to administer AppLocker
 
 For how-to info about administering AppLocker with Windows PowerShell, see [Use the AppLocker Windows PowerShell Cmdlets](use-the-applocker-windows-powershell-cmdlets.md). For reference info and examples how to administer AppLocker with Windows PowerShell, see the [AppLocker cmdlets](https://technet.microsoft.com/library/hh847210.aspx).
- 
- 

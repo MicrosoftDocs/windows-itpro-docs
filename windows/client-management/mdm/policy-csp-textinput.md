@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - TextInput
 description: Policy CSP - TextInput
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/09/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - TextInput
@@ -1334,23 +1336,24 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub  
 
--   [TextInput/AllowIMELogging](#textinput-allowimelogging)  
--   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
--   [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
--   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
--   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
--   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
--   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
--   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
--   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
-<!--EndSurfaceHub-->
+- [TextInput/AllowIMELogging](#textinput-allowimelogging)  
+- [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
+- [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
+- [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
+- [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
+- [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
+- [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
+- [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
+- [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
+  <!--EndSurfaceHub-->
 

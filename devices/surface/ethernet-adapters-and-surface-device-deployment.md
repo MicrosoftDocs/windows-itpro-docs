@@ -2,14 +2,16 @@
 title: Ethernet adapters and Surface deployment (Surface)
 description: This article provides guidance and answers to help you perform a network deployment to Surface devices.
 ms.assetid: 5273C59E-6039-4E50-96B3-426BB38A64C0
+ms.reviewer: 
+manager: dansimp
 keywords: ethernet, deploy, removable, network, connectivity, boot, firmware, device, adapter, PXE boot, USB
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jobotto
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ---
@@ -32,9 +34,9 @@ Booting from the network (PXE boot) is only supported when you use an Ethernet a
 
 The following Ethernet devices are supported for network boot with Surface devices:
 
--   Surface USB to Ethernet adapter
+-   Surface USB-C to Ethernet and USB 3.0 Adapter
 
--   Surface USB 3.0 Ethernet adapter
+-   Surface USB 3.0 to Gigabit Ethernet Adapter
 
 -   Surface Dock
 

@@ -1,18 +1,24 @@
 ---
 title: Get Started with UE-V
 description: Get Started with UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 03/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Get Started with UE-V
 
 **Applies to**
 -   Windows 10, version 1607
+
+>[!NOTE]
+>This documentation is for the most recent version of UE-V. If you're looking for information about UE-V 2.x, which was included in the Microsoft Desktop Optimization Pack (MDOP), see [Get Started with UE-V 2.x](https://docs.microsoft.com/microsoft-desktop-optimization-pack/uev-v2/get-started-with-ue-v-2x-new-uevv2).
 
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) for the first time in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
@@ -47,7 +53,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
 
 **Create a network share**
 
-1.  Create a new security group and add UE-V users to it.
+1.  Create a new security group and add UE-V users to the group.
 
 2.  Create a new folder on the centrally located computer that stores the UE-V settings packages, and then grant the UE-V users access with group permissions to the folder. The administrator who supports UE-V must have permissions to this shared folder.
 
@@ -80,7 +86,7 @@ For evaluation purposes, enable the service on at least two devices that belong 
 The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location.
 
 Before enabling the UE-V service, you'll need to register the UE-V templates for first use. In a PowerShell window, type `Register-UevTemplate [TemplateName]` where **TemplateName** is the name of the UE-V template you want to register, and press ENTER. For instance, to register all built-in UE-V templates, use the following PowerShell Command:
-'Get-childItem c:\programdata\Microsoft\UEV\InboxTemplates\*.xml|% {Register-UevTemplate $_.Fullname}'
+`Get-childItem c:\programdata\Microsoft\UEV\InboxTemplates\*.xml|% {Register-UevTemplate $_.Fullname}`
 
 A storage path must be configured on the client-side to tell where the personalized settings are stored. 
 
@@ -110,7 +116,7 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 2.  Navigate to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft** **User Experience Virtualization**.
 
-3.  Double click **Use Users Experience Virtualization (UE-V)**.
+3.  Double click **Use User Experience Virtualization (UE-V)**.
 
 4.  Select **Enabled** and click **OK**.
 
@@ -148,9 +154,9 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 5.  You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Other resources for this feature
 

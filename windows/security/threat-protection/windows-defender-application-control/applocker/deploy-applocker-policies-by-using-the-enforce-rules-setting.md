@@ -2,12 +2,18 @@
 title: Deploy AppLocker policies by using the enforce rules setting (Windows 10)
 description: This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 ms.assetid: fd3a3d25-ff3b-4060-8390-6262a90749ba
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/21/2017
 ---
 
@@ -41,7 +47,7 @@ You can edit an AppLocker policy by adding, changing, or removing rules. However
 Microsoft Desktop Optimization Pack.
 
 >**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
- 
+ 
 For the procedure to update the GPO, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
 For the procedures to distribute policies for local PCs by using the Local Security Policy snap-in (secpol.msc), see [Export an AppLocker policy to an XML file](export-an-applocker-policy-to-an-xml-file.md) and [Import an AppLocker policy from another computer](import-an-applocker-policy-from-another-computer.md).
@@ -53,5 +59,5 @@ When a policy is deployed, it is important to monitor the actual implementation 
 ## Additional resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
- 
- 
+ 
+ 

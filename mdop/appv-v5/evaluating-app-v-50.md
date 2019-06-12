@@ -1,8 +1,11 @@
 ---
 title: Evaluating App-V 5.0
 description: Evaluating App-V 5.0
-author: jamiejdt
+author: dansimp
 ms.assetid: 0b4a6b12-559d-429f-9659-dc8f4883feab
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,10 +48,10 @@ Use the following link for more information about creating and managing virtuali
 
 -   [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](how-to-configure-the-client-to-receive-package-and-connection-groups-updates-from-the-publishing-server-beta.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -1,8 +1,11 @@
 ---
 title: Application Template Schema Reference for UE-V 2.x
 description: Application Template Schema Reference for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -148,7 +151,7 @@ The Process data type is a container used to describe processes to be monitored 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -198,7 +201,7 @@ Settings is a container for all the settings that apply to a particular template
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="name21"></a>Name Element
 
@@ -213,7 +216,7 @@ UE-V does not reference external DTDs, so it is not possible to use named entiti
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
 
- 
+ 
 
 ### <a href="" id="id21"></a>ID Element
 
@@ -258,7 +261,7 @@ This value is queried to determine if a new version of a template should be appl
 
 -   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
- 
+ 
 
 ### <a href="" id="author21"></a>Author Element
 
@@ -324,7 +327,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 **Note**  
 The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
+ 
 
 In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplictication.exe</Filename>` should be specified instead of `<Filename>MyApplictication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
 
@@ -341,7 +344,7 @@ If this element is absent, the settings location template ignores the process’
 **Note**  
 UE-V does not support ARM processors in this version.
 
- 
+ 
 
 ### ProductName
 
@@ -490,11 +493,11 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -510,7 +513,7 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -526,16 +529,16 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Processes</p></td>
-<td align="left"><p>A container for a collection of one or more Process elements. For more information, see [Processes](#processes21).</p></td>
+<td align="left"><p>A container for a collection of one or more Process elements. For more information, see <a href="#processes21" data-raw-source="[Processes](#processes21)">Processes</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data21).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="common21"></a>Common Element
 
@@ -553,11 +556,11 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -573,7 +576,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -589,12 +592,12 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data21).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="settingslocationtemplate21"></a>SettingsLocationTemplate Element
 
@@ -612,11 +615,11 @@ This element defines the settings for a single application or a suite of applica
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -633,7 +636,7 @@ This element defines the settings for a single application or a suite of applica
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="appendix21"></a>Appendix: SettingsLocationTemplate.xsd
 
@@ -1088,7 +1091,7 @@ The Process data type is a container used to describe processes to be monitored 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -1135,7 +1138,7 @@ Settings is a container for all the settings that apply to a particular template
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="name"></a>Name Element
 
@@ -1150,7 +1153,7 @@ UE-V does not reference external DTDs, so it is not possible to use named entiti
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
 
- 
+ 
 
 ### <a href="" id="id"></a>ID Element
 
@@ -1195,7 +1198,7 @@ This value is queried to determine if a new version of a template should be appl
 
 -   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
- 
+ 
 
 ### <a href="" id="author"></a>Author Element
 
@@ -1261,7 +1264,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 **Note**  
 The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
+ 
 
 In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplictication.exe</Filename>` should be specified instead of `<Filename>MyApplictication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
 
@@ -1278,7 +1281,7 @@ If this element is absent, the settings location template ignores the process’
 **Note**  
 UE-V does not support ARM processors in this version.
 
- 
+ 
 
 ### ProductName
 
@@ -1429,11 +1432,11 @@ Application is a container for settings that apply to a particular application. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1449,7 +1452,7 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version" data-raw-source="[Version](#version)">Version</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -1461,16 +1464,16 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Processes</p></td>
-<td align="left"><p>A container for a collection of one or more Process elements. For more information, see [Processes](#processes).</p></td>
+<td align="left"><p>A container for a collection of one or more Process elements. For more information, see <a href="#processes" data-raw-source="[Processes](#processes)">Processes</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data" data-raw-source="[Data types](#data)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="common"></a>Common Element
 
@@ -1490,11 +1493,11 @@ Common is similar to an Application element, but it is always associated with tw
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1510,7 +1513,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version" data-raw-source="[Version](#version)">Version</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -1522,12 +1525,12 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data" data-raw-source="[Data types](#data)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="settingslocationtemplate"></a>SettingsLocationTemplate Element
 
@@ -1547,11 +1550,11 @@ This element defines the settings for a single application or a suite of applica
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1568,7 +1571,7 @@ This element defines the settings for a single application or a suite of applica
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="appendix"></a>Appendix: SettingsLocationTemplate.xsd
 
@@ -1865,10 +1868,10 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
 </xs:schema>
 ```
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
@@ -1877,9 +1880,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

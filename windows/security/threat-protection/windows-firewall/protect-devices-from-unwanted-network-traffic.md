@@ -2,12 +2,18 @@
 title: Protect Devices from Unwanted Network Traffic (Windows 10)
 description: Protect Devices from Unwanted Network Traffic
 ms.assetid: 307d2b38-e8c4-4358-ae16-f2143af965dc
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

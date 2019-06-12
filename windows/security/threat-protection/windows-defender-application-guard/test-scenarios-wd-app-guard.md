@@ -6,15 +6,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
-ms.date: 10/16/2018
+author: dansimp
+ms.author: dansimp
+ms.date: 03/15/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Application Guard testing scenarios
 
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
@@ -25,7 +27,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 **To test Application Guard in Standalone mode**
 
-1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
+1.	[Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard).
 
 2.	Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
 
@@ -46,46 +48,46 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 ### Install, set up, and turn on Application Guard
 Before you can use Application Guard in enterprise mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
-1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
+1. [Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard#install-application-guard).
 
-2.	Restart the device and then start Microsoft Edge.
+2. Restart the device and then start Microsoft Edge.
 
-3.	Set up the Network Isolation settings in Group Policy:
+3. Set up the Network Isolation settings in Group Policy:
 
-    a.	Click on the **Windows** icon, type _Group Policy_, and then click **Edit Group Policy**.
+   a.  Click on the **Windows** icon, type _Group Policy_, and then click **Edit Group Policy**.
     
-    b.	Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
+   b.  Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
 
-    c.	For the purposes of this scenario, type _.microsoft.com_ into the **Enterprise cloud resources** box.
+   c.  For the purposes of this scenario, type _.microsoft.com_ into the **Enterprise cloud resources** box.
 
-    ![Group Policy editor with Enterprise cloud resources setting](images/appguard-gp-network-isolation.png)
+   ![Group Policy editor with Enterprise cloud resources setting](images/appguard-gp-network-isolation.png)
 
-    d. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
+   d. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
 
-    e. For the purposes of this scenario, type _bing.com_ into the **Neutral resources** box.
+   e. For the purposes of this scenario, type _bing.com_ into the **Neutral resources** box.
 
-    ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
+   ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
 
-4.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
+4. Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
 
-5.	Click **Enabled** and click **OK**.
+5. Click **Enabled**, choose Option **1**, and click **OK**.
 
-    ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
+   ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
 
-    >[!NOTE]
-    >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
+   >[!NOTE]
+   >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
 
-6. Start Microsoft Edge and type _www.microsoft.com_.
+6. Start Microsoft Edge and type <em>www.microsoft.com</em>.
     
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you’ve marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
     ![Trusted website running on Microsoft Edge](images/appguard-turned-on-with-trusted-site.png)
 
-7.	In the same Microsoft Edge browser, type any URL that isn’t part of your trusted or neutral site lists.
+7. In the same Microsoft Edge browser, type any URL that isn’t part of your trusted or neutral site lists.
  
-    After you submit the URL, Application Guard determines the URL is untrusted and redirects the request to the hardware-isolated environment.
+   After you submit the URL, Application Guard determines the URL is untrusted and redirects the request to the hardware-isolated environment.
 
-    ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
+   ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
 
 ### Customize Application Guard
 Application Guard lets you specify your configuration, allowing you to create the proper balance between isolation-based security and productivity for your employees.

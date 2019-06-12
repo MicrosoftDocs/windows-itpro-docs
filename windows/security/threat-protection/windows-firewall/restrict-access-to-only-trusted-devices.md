@@ -2,12 +2,18 @@
 title: Restrict Access to Only Trusted Devices (Windows 10)
 description: Restrict Access to Only Trusted Devices
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

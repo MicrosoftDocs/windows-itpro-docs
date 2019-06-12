@@ -1,8 +1,11 @@
 ---
 title: Changing the Frequency of UE-V 2.x Scheduled Tasks
 description: Changing the Frequency of UE-V 2.x Scheduled Tasks
-author: jamiejdt
+author: levinec
 ms.assetid: ee486570-c6cf-4fd9-ba48-0059ba877c10
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,7 +34,7 @@ The Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1 Agent i
 **Note**  
 With the exception of Collect CEIP Data, these tasks must remain enabled as UE-V cannot function without them.
 
- 
+ 
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
@@ -67,7 +70,7 @@ If upon installation the user or administrator choses to participate in the Cust
 </tbody>
 </table>
 
- 
+ 
 
 ### Monitor Application Settings
 
@@ -92,7 +95,7 @@ The **Monitor Application Settings** task is used to synchronize settings for Wi
 </tbody>
 </table>
 
- 
+ 
 
 ### Sync Controller Application
 
@@ -117,7 +120,7 @@ The **Sync Controller Application** task is used to start the Sync Controller to
 </tbody>
 </table>
 
- 
+ 
 
 For example, the following command configures the agent to synchronize settings every 15 minutes instead of the default 30 minutes.
 
@@ -148,7 +151,7 @@ The **Synchronize Settings at Logoff** task is used to start an application at l
 </tbody>
 </table>
 
- 
+ 
 
 ### Template Auto Update
 
@@ -173,7 +176,7 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 </tbody>
 </table>
 
- 
+ 
 
 **Example:** The following command configures the UE-V Agent to check the settings template catalog store every hour.
 
@@ -204,7 +207,7 @@ The **Upload CEIP Data** task runs during the installation if the user or the ad
 </tbody>
 </table>
 
- 
+ 
 
 ## UE-V 2 Scheduled Task Details
 
@@ -280,7 +283,7 @@ The following chart provides additional information about scheduled tasks for UE
 </tbody>
 </table>
 
- 
+ 
 
 **Legend**
 
@@ -312,10 +315,10 @@ The following additional information applies to UE-V scheduled tasks:
 
 -   The Monitor Application Settings scheduled task will update Windows app (AppX) settings in real time, based on Windows app program setting triggers built into each app.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
@@ -324,9 +327,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md#deploycatalogue)
 
- 
+ 
 
- 
+ 
 
 
 

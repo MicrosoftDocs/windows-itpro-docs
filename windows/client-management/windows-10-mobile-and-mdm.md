@@ -2,14 +2,18 @@
 title: Windows 10 Mobile deployment and management guide (Windows 10)
 description: This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: Mobile, diagnostic data, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
-author: AMeeus
-ms.date: 09/21/2017
+author: dansimp
+ms.date: 01/26/2019
+ms.topic: article
 ---
 
 # Windows 10 Mobile deployment and management guide
@@ -306,13 +310,13 @@ In addition to SCEP certificate management, Windows 10 Mobile supports deploymen
 Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
 Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidently.
 
->**Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
--   View a summary of all personal certificates
--   View the details of individual certificates
--   View the certificates used for VPN, Wi-Fi, and email authentication
--   Identify which certificates may have expired
--   Verify the certificate path and confirm that you have the correct intermediate and root CA certificates
--   View the certificate keys stored in the device TPM
+> **Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
+> -   View a summary of all personal certificates
+> -   View the details of individual certificates
+> -   View the certificates used for VPN, Wi-Fi, and email authentication
+> -   Identify which certificates may have expired
+> -   Verify the certificate path and confirm that you have the correct intermediate and root CA certificates
+> -   View the certificate keys stored in the device TPM
 
 ### <a href="" id="wi-fi-profiles"></a>Wi-Fi profiles
 
@@ -460,7 +464,7 @@ Some device-wide settings for managing VPN connections can help you manage VPNs 
 
 *Applies to: Corporate and personal devices*
 
-Protecting the apps and data stored on a device is critical to device security. One method for helping protect your apps and data is to encrypt internal device storage. The device encryption in Windows 10 Mobile helps protect corporate data against unauthorized access, even when an unauthorized user has physical possession of the device.
+Protecting the apps and data stored on a device is critical to device security. One method for helping protect your apps and data is to encrypt internal device storage. The [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) in Windows 10 Mobile helps protect corporate data against unauthorized access, even when an unauthorized user has physical possession of the device.
 
 Windows 10 Mobile also has the ability to install apps on a secure digital (SD) card. The operating system stores apps on a partition specifically designated for that purpose. This feature is always on so you don’t need to set a policy explicitly to enable it.
 
@@ -707,7 +711,7 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 <td align="left"><strong>Wi-Fi</strong></td>
 <td align="left">Device is connected to a personal or corporate Wi-Fi network (no data charges)</td>
 <td align="left">Yes</td>
-<td align="left">Yes/td>
+<td align="left">Yes/td&gt;
 <td align="left">Yes</td>
 <td align="left">Yes – outside of Active Hours (forced restart after 7 days if user postpones restart)</td>
 </tr>
@@ -767,7 +771,7 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left"><strong>Windows Insider Builds</strong></td>
 <td align="left">As appropriate during development cycle, released to Windows Insiders only</td>
 <td align="left">Variable, until the next Insider build is released to Windows Insiders</td>
-<td align="left">Allows Insiders to test new feature and application compatibility before a Feature Update is released/td>
+<td align="left">Allows Insiders to test new feature and application compatibility before a Feature Update is released/td&gt;
 <td align="left">Mobile</td>
 </tr>
 <tr class="odd">
@@ -775,7 +779,7 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left">Immediately after the Feature Update is published to Windows Update by Microsoft</td>
 <td align="left">Microsoft typically releases two Feature Updates per 12-month period (approximately every four months, though it can potentially be longer)</td>
 <td align="left">Makes new features available to users as soon as possible</td>
-<td align="left">Mobile & Mobile Enterprise</td>
+<td align="left">Mobile &amp; Mobile Enterprise</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Current Branch for Business (CBB)</strong></td>

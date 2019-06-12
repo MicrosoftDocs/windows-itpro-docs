@@ -2,12 +2,18 @@
 title: Create an Inbound Program or Service Rule (Windows 10)
 description: Create an Inbound Program or Service Rule
 ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

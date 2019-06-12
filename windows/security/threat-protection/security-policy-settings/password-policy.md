@@ -2,12 +2,18 @@
 title: Password Policy (Windows 10)
 description: An overview of password policies for Windows and links to information for each policy setting.
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -46,9 +52,9 @@ The following topics provide a discussion of password policy implementation and 
 | [Minimum password length](minimum-password-length.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.| 
 | [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) | Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.|
 | [Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md) | Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.| 
- 
+ 
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
- 
+ 
+ 

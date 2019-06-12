@@ -2,12 +2,18 @@
 title: Allow log on locally - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on locally security policy setting.
 ms.assetid: d9e5e1f3-3bff-4da7-a9a2-4bb3e0c79055
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -22,7 +28,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines which users can start an interactive session on the device. Users must have this user right to log on over a Remote Desktop Services session that is running on a Windows-based member device or domain controller.
 > **Note:**  Users who do not have this right are still able to start a remote interactive session on the device if they have the **Allow logon through Remote Desktop Services** right.
- 
+ 
 Constant: SeInteractiveLogonRight
 
 ### Possible values
@@ -65,7 +71,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Account Operators<br>Administrators<br>Backup Operators<br>Print Operators<br>Server Operators |
 | Member Server Effective Default Settings | Administrators<br>Backup Operators<br>Users |
 | Client Computer Effective Default Settings | Administrators<br>Backup Operators<br>Users |
- 
+ 
 ## Policy management
 
 Restarting the device is not required to implement this change.
@@ -105,5 +111,5 @@ If you remove these default groups, you could limit the abilities of users who a
 
 ## Related topics
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

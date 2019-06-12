@@ -4,16 +4,18 @@ description: Enable Bitlocker device encryption to protect files stored on the H
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 12/20/2017
+ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable encryption for HoloLens
 
-You can enable [Bitlocker device encryption](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) to protect files and information stored on the HoloLens. Device encryption helps protect your data by encrypting it using AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Only someone with the right encryption key (such as a password) can decrypt it or perform a data recovery.
+You can enable [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) to protect files and information stored on the HoloLens. Device encryption helps protect your data by encrypting it using AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Only someone with the right encryption key (such as a password) can decrypt it or perform a data recovery.
 
 
 
@@ -21,40 +23,21 @@ You can enable [Bitlocker device encryption](https://docs.microsoft.com/windows/
 
 You can use your mobile device management (MDM) provider to apply a policy that requires device encryption. The policy used is the [Security/RequireDeviceEncryption setting](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in the Policy CSP.
 
-In the following steps, Microsoft Intune is used as the example. For other MDM tools, see your MDM provider's documentation for instructions.
+[See instructions for enabling device encryption using Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+For other MDM tools, see your MDM provider's documentation for instructions. If your MDM provider requires custom URI for device encryption, use the following configuration:
 
-2. Use **Search** or go to **More services** to open the Intune blade.
-
-3. Go to **Device configuration > Profiles**, and select **Create profile**.
-
-    ![Intune create profile option](images/encrypt-create-profile.png)
-
-4. Enter a name of your choice, select **Windows 10 and later** for the platform,  select **Custom** for the profile type, and then select **Add**.
-
-    ![Intune custom setting screen](images/encrypt-custom.png)
-
-5. In **Add Row OMA-URI Settings**, enter or select the following information:
-    - **Name**: a name of your choice
-    - **Description**: optional
-    - **OMA-URI**: `./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
-    - **Data type**: integer
-    - **Value**: `1`
-
-    ![Intune OMA-URI settings for encryption](images/encrypt-oma-uri.png)
-
-6. Select **OK**, select **OK**, and then select **Create**. The blade for the profile opens automatically.
-
-7. Select **Assignments** to assign the profile to a group. After you configure the assignment, select **Save**.
-
-![Intune profile assignment screen](images/encrypt-assign.png)
+- **Name**: a name of your choice
+- **Description**: optional
+- **OMA-URI**: `./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
+- **Data type**: integer
+- **Value**: `1`
 
 ## Enable device encryption using a provisioning package
 
 Provisioning packages are files created by the Windows Configuration Designer tool that apply a specified configuration to a device. 
 
-### Create a provisioning package that upgrades the Windows Holographic edition
+### Create a provisioning package that upgrades the Windows Holographic edition and enables encryption
 
 1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
@@ -119,6 +102,6 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 Encryption is silent on HoloLens. To verify the device encryption status:
  
--	On HoloLens, go to **Settings** > **System** > **About**. **Bitlocker** is **enabled** if the device is encrypted. 
+-	On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
 
-![About screen showing Bitlocker enabled](images/about-encryption.png)
+![About screen showing BitLocker enabled](images/about-encryption.png)

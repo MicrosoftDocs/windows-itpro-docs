@@ -2,13 +2,19 @@
 title: Configure security policy settings (Windows 10)
 description: Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 ms.assetid: 63b0967b-a9fe-4d92-90af-67469ee20320
+ms.reviewer: 
+ms.author: dansimp
 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 # Configure security policy settings
@@ -36,7 +42,7 @@ When a local setting is inaccessible, it indicates that a GPO currently controls
     > [!NOTE]
     > -   Some security policy settings require that the device be restarted before the setting takes effect.
     > -   Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
-     
+     
 ## <a href="" id="bkmk-domain"></a>To configure a security policy setting using the Local Group Policy Editor console
 
 You must have the appropriate permissions to install and use the Microsoft Management Console (MMC), and to update a Group Policy Object (GPO) on the domain controller to perform these procedures.
@@ -52,12 +58,12 @@ You must have the appropriate permissions to install and use the Microsoft Manag
 
     > [!NOTE]
     > If this security policy has not yet been defined, select the **Define these policy settings** check box.
-     
+     
 5.  Modify the security policy setting, and then click **OK**.
 
 > [!NOTE]
 > If you want to configure security settings for many devices on your network, you can use the Group Policy Management Console.
- 
+ 
 ## <a href="" id="bkmk-dc"></a>To configure a setting for a domain controller
 
 The following procedure describes how to configure a security policy setting for only a domain controller (from the domain controller).
@@ -72,13 +78,13 @@ The following procedure describes how to configure a security policy setting for
 
     > [!NOTE]
     > If this security policy has not yet been defined, select the **Define these policy settings** check box.
-     
+     
 4.  Modify the security policy setting, and then click **OK**.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > -   Always test a newly created policy in a test organizational unit before you apply it to your network.
 > -   When you change a security setting through a GPO and click **OK**, that setting will take effect the next time you refresh the settings.
- 
+ 
 ## Related topics
 
 - [Security policy settings reference](security-policy-settings-reference.md)

@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: kaushika-ainapure
-author: kaushika-msft
+ms.author: tracyp
+author: msfttracyp
 ms.date: 07/20/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Changes to Service Host grouping in Windows 10
@@ -68,7 +70,7 @@ For example, this is the registry key configuration for BFE:
 
 ## Memory footprint
 
-Be aware that separating services increases the total number of SvcHost instances, which increases memory utlization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
+Be aware that separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
 
 Consider the following:
 

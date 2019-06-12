@@ -5,10 +5,13 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: Jaimeo
+author: lomayor
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: lomayor
 ms.date: 09/24/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: article
 ---
 
 # Overview of Windows as a service
@@ -116,20 +119,19 @@ The concept of servicing channels is new, but organizations can use the same man
 
 ### Semi-Annual Channel
 
-In the Semi-Annual servicing channel, feature updates are available as soon as Microsoft releases them. Windows 10, version 1511, had few servicing tool options to delay feature updates, limiting the use of the Semi-Annual servicing channel. Windows 10, version 1607 and onward, includes more servicing tools that can delay feature updates for up to 365 days. This servicing modal is ideal for pilot deployments and testing of Windows 10 feature updates and for users such as developers who need to work with the latest features immediately.
-Once the latest release went through pilot deployment and testing, you choose the timing at which it goes into broad deployment.
+In the Semi-Annual servicing channel, feature updates are available as soon as Microsoft releases them. Windows 10, version 1511, had few servicing tool options to delay feature updates, limiting the use of the Semi-Annual servicing channel. Windows 10, version 1607 and onward, includes more servicing tools that can delay feature updates for up to 365 days. This servicing model is ideal for pilot deployments and testing of Windows 10 feature updates and for users such as developers who need to work with the latest features immediately. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
 
 When Microsoft officially releases a feature update for Windows 10, it is made available to any PC not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft System Center Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about Windows 10 servicing tools, see [Servicing tools](#servicing-tools).
 
 
 Organizations are expected to initiate targeted deployment on Semi-Annual Channel releases.  All customers, independent software vendors (ISVs), and partners should use this time for testing and piloting within their environments. After 2-4 months, we will transition to broad deployment and encourage customers and partners to expand and accelerate the deployment of the release. For customers using Windows Update for Business, the Semi-Annual Channel provides three months of additional total deployment time before being required to update to the next release.
 
->[!NOTE]
-All releases of Windows 10 have 18 months of servicing for all editions--these updates provide security and feature updates for the release. Customers running Enterprise and Education editions have an additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release. These versions include Enterprise and Education editions for Windows 10, versions 1607, 1703, 1709 and 1803. Starting in October 2018, all Semi-Annual Channel releases in the September/October timeframe will also have the additional 12 months of servicing for a total of 30 months from the initial release. The Semi-Annual Channel versions released in March/April timeframe will continue to have an 18 month lifecycle.
-
-
->[!NOTE]
->Organizations can electively delay feature updates into as many phases as they wish by using one of the servicing tools mentioned in the section Servicing tools.
+> [!NOTE]
+> All releases of Windows 10 have 18 months of servicing for all editions--these updates provide security and feature updates for the release. Customers running Enterprise and Education editions have an additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release. These versions include Enterprise and Education editions for Windows 10, versions 1607, 1703, 1709 and 1803. Starting in October 2018, all Semi-Annual Channel releases in the September/October timeframe will also have the additional 12 months of servicing for a total of 30 months from the initial release. The Semi-Annual Channel versions released in March/April timeframe will continue to have an 18 month lifecycle.
+> 
+> 
+> [!NOTE]
+> Organizations can electively delay feature updates into as many phases as they wish by using one of the servicing tools mentioned in the section Servicing tools.
 
 ### Long-term Servicing Channel
 
@@ -145,7 +147,7 @@ Microsoft never publishes feature updates through Windows Update on devices that
 >[!NOTE]
 >Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
 
-The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in Windows 10 Enterprise LTSB edition, even of you install by using sideloading.
+The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in Windows 10 Enterprise LTSB edition, even if you install by using sideloading.
 
 >[!NOTE]
 >If an organization has devices currently running Windows 10 Enterprise LTSB that it would like to change to the Semi-Annual Channel, it can make the change without losing user data. Because LTSB is its own SKU, however, an upgrade is required from Windows 10 Enterprise LTSB to Windows 10 Enterprise, which supports the Semi-Annual Channel.

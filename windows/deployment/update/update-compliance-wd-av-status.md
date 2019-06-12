@@ -1,13 +1,16 @@
 ---
 title: Update Compliance - Windows Defender AV Status report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Windows Defender AV Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
-ms.date: 10/04/2018
+author: greg-lindsay
+ms.author: greglin
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Windows Defender AV Status

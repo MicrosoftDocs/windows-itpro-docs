@@ -2,12 +2,18 @@
 title: Increase scheduling priority (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase scheduling priority security policy setting.
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 07/13/2017
 ---
 
@@ -34,26 +40,11 @@ Constant: SeIncreaseBasePriorityPrivilege
 
 ### Best practices
 
--   Allow the default value, Administrators and Window Manager/Window Manager Group, as the only accounts responsible for controlling process scheduling priorities.
+-   Retain the default value as the only accounts responsible for controlling process scheduling priorities.
 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
-
-### Default values
-
-By default this setting is Administrators on domain controllers and on stand-alone servers.
-
-The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
-
-| Server type or GPO | Default value |
-| - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy| Not defined| 
-| Stand-Alone Server Default Settings | Administrators and Window Manager/Window Manager Group| 
-| Domain Controller Effective Default Settings | Administrators and Window Manager/Window Manager Group| 
-| Member Server Effective Default Settings | Administrators and Window Manager/Window Manager Group|
-| Client Computer Effective Default Settings | Administrators and Window Manager/Window Manager Group| 
  
 ## Policy management
 
@@ -93,3 +84,4 @@ None. Restricting the **Increase scheduling priority** user right to members of 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
+- [Increase scheduling priority for Windows Server 2012 and earlier](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))

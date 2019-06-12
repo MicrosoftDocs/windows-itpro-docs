@@ -2,12 +2,18 @@
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.date: 08/17/2017
 ---
 
@@ -16,8 +22,6 @@ ms.date: 08/17/2017
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
-
-Prefer video? See [Credential Theft and Lateral Traversal](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474) in the Deep Dive into Windows Defender Credential Guard video series.
 
 Introduced in Windows 10 Enterprise and Windows Server 2016, Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
 
@@ -39,10 +43,3 @@ By enabling Windows Defender Credential Guard, the following features and soluti
 - [What's New in Kerberos Authentication for Windows Server 2012](https://technet.microsoft.com/library/hh831747.aspx)
 - [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/library/dd378897.aspx)
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
- 
-
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)

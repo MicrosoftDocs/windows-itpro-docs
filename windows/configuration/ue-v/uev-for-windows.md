@@ -1,12 +1,16 @@
 ---
 title: User Experience Virtualization for Windows 10, version 1607
 description: Overview of User Experience Virtualization for Windows 10, version 1607
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 05/02/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 # User Experience Virtualization (UE-V) for Windows 10 overview
@@ -94,6 +98,6 @@ You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-
 
 -   [Technical Reference for UE-V for Windows 10](uev-technical-reference.md)
 
-## Have a suggestion for UE-V?
+
 
 For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).

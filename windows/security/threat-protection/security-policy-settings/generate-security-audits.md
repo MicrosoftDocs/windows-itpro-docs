@@ -2,12 +2,18 @@
 title: Generate security audits (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Generate security audits security policy setting.
 ms.assetid: c0e1cd80-840e-4c74-917c-5c2349de885f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -52,7 +58,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Local Service<br/>Network Service| 
 | Member Server Effective Default Settings | Local Service<br/>Network Service| 
 | Client Computer Effective Default Settings | Local Service<br/>Network Service| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

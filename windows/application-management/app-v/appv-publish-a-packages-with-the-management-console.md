@@ -1,12 +1,16 @@
 ---
 title: How to publish a package by using the Management console (Windows 10)
 description: How to publish a package by using the Management console.
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
+ms.topic: article
 ---
 # How to publish a package by using the Management console
 
@@ -14,8 +18,8 @@ ms.date: 09/27/2018
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers running the App-V client can access and run the applications in that package.
 
->[!NOTE]  
->The ability to enable only administrators to publish or unpublish packages (described below) is supported starting in App-V 5.0 SP3.
+> [!NOTE]
+> The ability to enable only administrators to publish or unpublish packages (described below) is supported starting in App-V 5.0 SP3.
 
 ## Publish an App-V package
 
@@ -35,9 +39,9 @@ Use the following procedure to publish an App-V package. Once you publish a pack
 
     To instead use Windows PowerShell to set this item, see [Understanding pending packages: UserPending and GlobalPending](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#about-pending-packages-userpending-and-globalpending).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

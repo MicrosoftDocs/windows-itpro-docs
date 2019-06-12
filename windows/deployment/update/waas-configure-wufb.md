@@ -1,13 +1,15 @@
 ---
 title: Configure Windows Update for Business (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.date: 11/16/2018
+ms.author: greglin
+ms.topic: article
 ---
 
 # Configure Windows Update for Business
@@ -17,6 +19,8 @@ ms.date: 11/16/2018
 
 - Windows 10
 - Windows 10 Mobile
+- Windows Server 2016
+- Windows Server 2019
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -62,10 +66,6 @@ Starting with Windows 10, version 1703, users can configure the branch readiness
 ## Configure when devices receive feature updates
 
 After you configure the servicing branch (Windows Insider Preview or Semi-Annual Channel), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update. You can defer receiving these Feature Updates for a period of up to 365 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
-
->[!IMPORTANT]
->
->You can only defer up to 180 days on devices running Windows 10, version 1703.
 
 For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriodinDays=30` will not install a feature update that is first publicly available on Windows Update in September until 30 days later, in October.
 

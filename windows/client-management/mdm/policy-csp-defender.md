@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Defender
 description: Policy CSP - Defender
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 11/14/2018
+author: manikadhiman
+ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Defender
@@ -250,7 +252,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <!--/Description-->
@@ -561,7 +563,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
 <!--/Description-->
@@ -801,7 +803,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows a scanning of network files.
 
 <!--/Description-->
@@ -1097,7 +1099,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Represents the average CPU load factor for the Windows Defender scan (in percent).
 
 
@@ -1156,6 +1158,7 @@ Valid values: 0–100
 <hr/>
 
 <!--/Scope-->
+
 <!--Description-->
 This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
 
@@ -1169,6 +1172,8 @@ Supported values:
 
 - 0 (default) - Disabled 
 - 1 - Enabled
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunningScan
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1238,8 +1243,8 @@ Added in Windows 10, version 1709. This policy setting determines how aggressive
 If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
 For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
-      
-> [!Note]  
+      
+> [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
@@ -1310,7 +1315,7 @@ The typical cloud check timeout is 10 seconds. To enable the extended cloud chec
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
-> [!Note]  
+> [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
@@ -1476,7 +1481,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Time period (in days) that quarantine items will be stored on the system.
 
 
@@ -1547,6 +1552,8 @@ Supported values:
 - 0 - Disabled 
 - 1 - Enabled (default)
 
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1606,9 +1613,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run.
+If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
 If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
 
@@ -1616,6 +1623,8 @@ Supported values:
 
 - 0 - Disabled 
 - 1 - Enabled (default)
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1881,7 +1890,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
@@ -1999,7 +2008,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 > [!IMPORTANT]
 > The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
- 
+ 
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
@@ -2240,13 +2249,13 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Selects the time of day that the Windows Defender quick scan should run.
 
 > [!NOTE]
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
- 
+ 
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
@@ -2457,11 +2466,13 @@ Possible values are:
 - MMPC
 - FileShares
 
-For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
+For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
 
 If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
 If you disable or do not configure this setting, definition update sources will be contacted in a default order.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2522,11 +2533,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
+This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. 
+
+For example: \\unc1\Signatures | \\unc2\Signatures  
+
+The list is empty by default.
 
 If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
 If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2590,13 +2607,15 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
 
 A value of 0 means no check for new signatures, a value of 1 means to check every hour, a value of 2 means to check every two hours, and so on, up to a value of 24, which means to check every day.
 
 The default value is 8.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2655,7 +2674,7 @@ Valid values: 0–24.
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
 <!--/Description-->
@@ -2719,11 +2738,11 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
- 
+ 
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
-This value is a list of threat severity level IDs and corresponding actions, separated by a**|** using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
+This value is a list of threat severity level IDs and corresponding actions, separated by a<strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
 
 The following list shows the supported values for threat severity levels:
 
@@ -2760,39 +2779,40 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  
 
--   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
--   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
--   [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
--   [Defender/AllowEmailScanning](#defender-allowemailscanning)  
--   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
--   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
--   [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
--   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
--   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
--   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
--   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
--   [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
--   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
--   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
--   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
--   [Defender/ExcludedExtensions](#defender-excludedextensions)  
--   [Defender/ExcludedPaths](#defender-excludedpaths)  
--   [Defender/ExcludedProcesses](#defender-excludedprocesses)  
--   [Defender/PUAProtection](#defender-puaprotection)  
--   [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
--   [Defender/ScanParameter](#defender-scanparameter)  
--   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
--   [Defender/ScheduleScanDay](#defender-schedulescanday)  
--   [Defender/ScheduleScanTime](#defender-schedulescantime)  
--   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
--   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
--   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
-<!--EndSurfaceHub-->
+- [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
+- [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
+- [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
+- [Defender/AllowEmailScanning](#defender-allowemailscanning)  
+- [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
+- [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
+- [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
+- [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
+- [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
+- [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
+- [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
+- [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
+- [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
+- [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
+- [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
+- [Defender/ExcludedExtensions](#defender-excludedextensions)  
+- [Defender/ExcludedPaths](#defender-excludedpaths)  
+- [Defender/ExcludedProcesses](#defender-excludedprocesses)  
+- [Defender/PUAProtection](#defender-puaprotection)  
+- [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
+- [Defender/ScanParameter](#defender-scanparameter)  
+- [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
+- [Defender/ScheduleScanDay](#defender-schedulescanday)  
+- [Defender/ScheduleScanTime](#defender-schedulescantime)  
+- [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
+- [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
+- [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
+  <!--EndSurfaceHub-->
 

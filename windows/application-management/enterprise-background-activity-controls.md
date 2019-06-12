@@ -1,11 +1,13 @@
 ---
-author: TylerMSFT
+author: msfttracyp
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
-ms.author: twhitney
+ms.author: tracyp
 ms.date: 10/03/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
-ms.prod: windows
+ms.prod: w10
 ms.technology: uwp
 keywords: windows 10, uwp, enterprise, background task, resources
 ---

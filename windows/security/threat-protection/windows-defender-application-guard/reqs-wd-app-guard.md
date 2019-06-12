@@ -6,14 +6,16 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 11/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # System requirements for Windows Defender Application Guard
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
@@ -36,6 +38,6 @@ Your environment needs the following software to run Windows Defender Applicatio
 
 |Software|Description|
 |--------|-----------|
-|Operating system|Windows 10 Enterprise edition, version 1709 or higher<br>Windows 10 Professional edition, version 1803|
+|Operating system|Windows 10 Enterprise edition, version 1709 or higher<br>Windows 10 Professional edition, version 1803 or higher<br>Windows 10 Professional for Workstations edition, version 1803 or higher<br>Windows 10 Professional Education edition version 1803 or higher<br>Windows 10 Education edition, version 1903 or higher<br>Professional editions are only supported for non-managed devices; Intune or any other 3rd party mobile device management (MDM) solutions are not supported with WDAG for Professional editions. |
 |Browser|Microsoft Edge and Internet Explorer|
 |Management system<br> (only for managed devices)|[Microsoft Intune](https://docs.microsoft.com/intune/)<br><br>**-OR-**<br><br>[System Center Configuration Manager](https://docs.microsoft.com/sccm/)<br><br>**-OR-**<br><br>[Group Policy](https://technet.microsoft.com/library/cc753298(v=ws.11).aspx)<br><br>**-OR-**<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product.|

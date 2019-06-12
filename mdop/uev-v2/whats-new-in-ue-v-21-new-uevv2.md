@@ -1,8 +1,11 @@
 ---
 title: What's New in UE-V 2.1
 description: What's New in UE-V 2.1
-author: jamiejdt
+author: levinec
 ms.assetid: 7f385183-7d97-4602-b19a-baa710334ade
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +27,7 @@ UE-V 2.1 includes the Microsoft Office 2013 settings location template with impr
 **Note**  
 An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
- 
+ 
 
 Previously UE-V included Microsoft Office 2010 settings location templates that were automatically distributed and registered with the UE-V Agent. UE-V 2.1 works with Office 365 to determine whether Office 2013 settings are roamed by Office 365. If settings are roamed by Office 365 they are not roamed by UE-V. [Overview of user and roaming settings for Office 2013](https://go.microsoft.com/fwlink/p/?LinkID=391220) provides more information.
 
@@ -55,7 +58,7 @@ UE-V 2.1 gives customers the ability to synchronize credentials and certificates
 **Note**  
 In Windows 8 and later, Credential Manager contains web credentials. These credentials are not synchronized between users’ devices.
 
- 
+ 
 
 ## UE-V and Microsoft Account Synchronization
 
@@ -75,7 +78,7 @@ UE-V 2.1 includes [support for VDI sessions](https://technet.microsoft.com/libra
 **Note**  
 If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as back-up/restore and LKG.
 
- 
+ 
 
 ## Administrative Backup and Restore
 
@@ -87,10 +90,10 @@ You can restore additional settings when a user adopts a new device by putting a
 
 UE-V now synchronizes touch keyboard personalization, the spelling dictionary, and enables the App Switching for recent apps and screen edge settings to synchronize between Windows 8 and Windows 8.1 devices.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
@@ -101,9 +104,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-release-notesuevv21.md)
 
- 
+ 
 
- 
+ 
 
 
 

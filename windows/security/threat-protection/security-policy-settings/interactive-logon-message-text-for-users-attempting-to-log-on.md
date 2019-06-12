@@ -2,12 +2,18 @@
 title: Interactive logon Message text for users attempting to log on (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Message text for users attempting to log on security policy setting.
 ms.assetid: fcfe8a6d-ca65-4403-b9e6-2fa017a31c2e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -36,12 +42,12 @@ The possible values for this setting are:
 
 ### Best practices
 
--   It is advisable to set **Interactive logon: Message text for users attempting to log on** to a value similar to one of the following:
+- It is advisable to set **Interactive logon: Message text for users attempting to log on** to a value similar to one of the following:
 
-    1.  IT IS AN OFFENSE TO CONTINUE WITHOUT PROPER AUTHORIZATION.
-    2.  This system is restricted to authorized users. Individuals who attempt unauthorized access will be prosecuted. If you are unauthorized, terminate access now. Click OK to indicate your acceptance of this information.
->**Important:**  Any warning that you display in the title or text should be approved by representatives from your organization's legal and human resources departments.
- 
+  1. IT IS AN OFFENSE TO CONTINUE WITHOUT PROPER AUTHORIZATION.
+  2. This system is restricted to authorized users. Individuals who attempt unauthorized access will be prosecuted. If you are unauthorized, terminate access now. Click OK to indicate your acceptance of this information.
+     >**Important:**  Any warning that you display in the title or text should be approved by representatives from your organization's legal and human resources departments.
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -58,7 +64,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Not defined| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes different requirements to help you manage this policy.
@@ -87,7 +93,7 @@ Users often do not understand the importance of security practices. However, the
 Configure the **Interactive logon: Message text for users attempting to log on** and [Interactive logon: Message title for users attempting to log on](interactive-logon-message-title-for-users-attempting-to-log-on.md) settings to an appropriate value for your organization.
 
 >**Note:**  Any warning message that displays should be approved by your organization's legal and human resources representatives.
- 
+ 
 ### Potential impact
 
 Users see a message in a dialog box before they can log on to the server console.

@@ -3,14 +3,15 @@ title: Change to Windows 10 Education from Windows 10 Pro
 description: Learn how IT Pros can opt into changing to Windows 10 Pro Education from Windows 10 Pro.
 keywords: change, free change, Windows 10 Pro to Windows 10 Pro Education, Windows 10 Pro to Windows 10 Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: MikeBlodge
-ms.author: MikeBlodge
-ms.date: 04/30/2018
+author: levinec
+ms.author: ellevin
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro
@@ -20,6 +21,9 @@ If you have an education tenant and use devices with Windows 10 Pro, global admi
 - [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](https://docs.microsoft.com/education/windows/s-mode-switch-to-edu)
 
 To take advantage of this offering, make sure you meet the [requirements for changing](#requirements-for-changing). For academic customers who are eligible to change to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assistance.
+
+>[!IMPORTANT]
+>If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation) won't work.
 
 ## Requirements for changing
 Before you change to Windows 10 Pro Education, make sure you meet these requirements:
@@ -97,8 +101,8 @@ When you change to Windows 10 Pro Education, you get the following benefits:
 - **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 or higher, or Windows 10 S mode, version 1703, can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
 - **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
 - **Roll back options to Windows 10 Pro**
-    - When a user leaves the domain or you turn off the setting to automatically change to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
-    - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
+  - When a user leaves the domain or you turn off the setting to automatically change to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
+  - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
 
     See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro) for more info.
 
@@ -110,7 +114,7 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your work or school account.
 
-  If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
+   If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
 3. In the **Benefits** tile, look for the **Change to Windows 10 Pro Education for free** link and then click it.
@@ -308,6 +312,8 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ## Related topics
 
-[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
-[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)<BR> 
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  
+[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)  
+[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)  
+[Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
+

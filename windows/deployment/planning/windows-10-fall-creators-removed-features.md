@@ -5,8 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: lizap
+author: greg-lindsay
 ms.date: 10/09/2017
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
+ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10 Fall Creators Update (version 1709)
 

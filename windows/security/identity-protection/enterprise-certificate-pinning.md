@@ -1,27 +1,32 @@
 ---
+title: Enterprise Certificate Pinning
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: mstephens
-author: MikeStephens-MS
 description: Enterprise certificate pinning is a Windows feature for remembering, or “pinning” a root, issuing certificate authority, or end entity certificate to a given domain name.  
-manager: alanth
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.prod: w10
 ms.technology: windows
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
 ---
 
 # Enterprise Certificate Pinning
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Enterprise certificate pinning is a Windows feature for remembering, or “pinning,” a root issuing certificate authority or end entity certificate to a given domain name. 
 Enterprise certificate pinning helps reduce man-in-the-middle attacks by enabling you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates.
 
->[!NOTE] 
+>[!NOTE]
 > External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning.
 
 Windows Certificate APIs (CertVerifyCertificateChainPolicy and WinVerifyTrust) are updated to check if the site’s server authentication certificate chain matches a restricted set of certificates. 
@@ -64,7 +69,6 @@ Each PinRule element contains a sequence of one or more Site elements and a sequ
   </PinRule>
 
 </PinRules>
-
 ```
 
 #### PinRules Element
@@ -107,7 +111,7 @@ The **Site** element can have the following attributes.
 |-----------|-------------|----------|
 | **Domain** | Contains the DNS name to be matched for this pin rule. When creating the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*" it is removed. <br>- Non-ASCII DNS name are converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then, wildcard left hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
 | **AllSubdomains** | By default, wildcard left hand label matching is restricted to a single left hand label. This attribute can be set to "true" to enable wildcard matching of all of the left-hand labels.<br>For example, setting this attribute would also match "123.abc.xyz.com" for the ".xyz.com" domain value.| No.|
-    
+
 ### Create a Pin Rules Certificate Trust List
 
 The command line utility, **Certutil.exe**, includes the **generatePinRulesCTL** argument to parse the XML file and generate the encoded certificate trust list (CTL) that you add to your reference Windows 10 version 1703 computer and subsequently deploy. 
@@ -180,27 +184,27 @@ Now you need to configure a Group Policy object to include the applied certifica
 
 Sign-in to the reference computer using domain administrator equivalent credentials.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the forest node and then expand the domain node.
-3.	Expand the node that has contains your Active Directory’s domain name
-4.	Select the **Group Policy objects** node.  Right-click the **Group Policy objects** node and click **New**.
-5.	In the **New GPO** dialog box, type _Enterprise Certificate Pinning Rules_ in the **Name** text box and click **OK**.
-6.	In the content pane, right-click the **Enterprise Certificate Pinning Rules** Group Policy object and click **Edit**.
-7.	In the **Group Policy Management Editor**, in the navigation pane, expand the **Preferences** node under **Computer Configuration**. Expand **Windows Settings**.
-8.	Right-click the **Registry** node and click **New**.
-9.	In the **New Registry Properties** dialog box, select **Update** from the **Action** list.  Select **HKEY_LOCAL_MACHINE** from the **Hive** list.
-10.	For the **Key Path**, click **…** to launch the **Registry Item Browser**.  Navigate to the following registry key and select the **PinRules** registry value name:
+1.  Start the **Group Policy Management Console** (gpmc.msc)
+2.  In the navigation pane, expand the forest node and then expand the domain node.
+3.  Expand the node that has contains your Active Directory’s domain name
+4.  Select the **Group Policy objects** node.  Right-click the **Group Policy objects** node and click **New**.
+5.  In the **New GPO** dialog box, type _Enterprise Certificate Pinning Rules_ in the **Name** text box and click **OK**.
+6.  In the content pane, right-click the **Enterprise Certificate Pinning Rules** Group Policy object and click **Edit**.
+7.  In the **Group Policy Management Editor**, in the navigation pane, expand the **Preferences** node under **Computer Configuration**. Expand **Windows Settings**.
+8.  Right-click the **Registry** node and click **New**.
+9.  In the **New Registry Properties** dialog box, select **Update** from the **Action** list.  Select **HKEY_LOCAL_MACHINE** from the **Hive** list.
+10. For the **Key Path**, click **…** to launch the **Registry Item Browser**.  Navigate to the following registry key and select the **PinRules** registry value name:
 
     HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType0\CertDllCreateCertificateChainEngine\Config  
 
     Click **Select** to close the **Registry Item Browser**.
-    
-11.	The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Click **OK** to save your settings and close the dialog box.
+
+11. The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Click **OK** to save your settings and close the dialog box.
 
     ![PinRules Properties](images/enterprise-certificate-pinning-pinrules-properties.png)
-    
+
 12. Close the **Group Policy Management Editor** to save your settings.
-13.	Link the **Enterprise Certificate Pinning Rules** Group Policy object to apply to computers that run Windows 10, version 1703 in your enterprise. When these domain-joined computers apply Group Policy, the registry information configured in the Group Policy object is applied to the computer.
+13. Link the **Enterprise Certificate Pinning Rules** Group Policy object to apply to computers that run Windows 10, version 1703 in your enterprise. When these domain-joined computers apply Group Policy, the registry information configured in the Group Policy object is applied to the computer.
 
 ## Additional Pin Rules Logging
 

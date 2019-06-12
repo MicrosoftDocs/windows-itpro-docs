@@ -3,15 +3,16 @@ title: Enable Microsoft Teams for your school
 description: Learn how to use the new Microsoft Education system to set up a cloud infrastructure for your school, acquire devices and apps, and configure and deploy policies to your Windows 10 devices.
 keywords: education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, School Data Sync, Microsoft Teams, Microsoft Store for Education, Azure AD, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 07/28/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable Microsoft Teams for your school
@@ -27,21 +28,21 @@ To get started, IT administrators need to use the Office 365 Admin Center to ena
 3. Go to **Settings > Services & add-ins**.
 4. On the **Services & add-ins** page, select **Microsoft Teams**.
 
-  **Figure 1** - Select Microsoft Teams from the list of services & add-ins
+   **Figure 1** - Select Microsoft Teams from the list of services & add-ins
 
-  ![Enable Microsoft Teams for your school](images/o365_settings_services_msteams.png)
+   ![Enable Microsoft Teams for your school](images/o365_settings_services_msteams.png)
 
 5. On the Microsoft Teams settings screen, select the license that you want to configure, **Student** or **Faculty and Staff**. Select **Faculty and Staff**.
 
-  **Figure 2** - Select the license that you want to configure
+   **Figure 2** - Select the license that you want to configure
 
-  ![Select the Microsoft Teams license that you want to configure](images/o365_msteams_settings.png)
+   ![Select the Microsoft Teams license that you want to configure](images/o365_msteams_settings.png)
 
 6. After you select the license type, set the toggle to turn on Microsoft Teams for your organization.
 
-  **Figure 3** - Turn on Microsoft Teams for your organization
+   **Figure 3** - Turn on Microsoft Teams for your organization
 
-  ![Turn on Microsoft Teams for your organization](images/o365_msteams_turnon.png)
+   ![Turn on Microsoft Teams for your organization](images/o365_msteams_turnon.png)
 
 7. Click **Save**.
 
@@ -49,8 +50,8 @@ You can find more info about how to control which users in your school can use M
 
 
 > [!div class="step-by-step"]
-[<< Use School Data Sync to import student data](use-school-data-sync.md)
-[Configure Microsoft Store for Education >>](configure-microsoft-store-for-education.md)
+> [<< Use School Data Sync to import student data](use-school-data-sync.md)
+> [Configure Microsoft Store for Education >>](configure-microsoft-store-for-education.md)
 
 
 ## Related topic

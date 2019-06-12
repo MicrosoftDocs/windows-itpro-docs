@@ -7,9 +7,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-ms.date: 11/07/2018
+author: dansimp
+ms.author: dansimp
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
+audience: ITPro
+ms.date: 04/19/2019
+ms.reviewer: 
 ---
 
 
@@ -20,7 +25,7 @@ ms.date: 11/07/2018
 - Windows 10, version 1709
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -29,6 +34,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 
+- [Windows 10, version 1903 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
@@ -46,15 +52,14 @@ Invalid Signature - This event is superseded by an event that contains additiona
 
 The following fields are available:
 
-- **DatasourceApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS4**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceDevicePnp_RS4**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceDriverPackage_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
+- **DatasourceSystemBios_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **DecisionApplicationFile_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_RS4**  The count of the number of this particular object type present on this device.
@@ -62,26 +67,24 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_RS4**  The count of the number of this particular object type present on this device.
+- **DecisionSystemBios_19H1Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **DecisionSystemBios_RS4**  The total DecisionSystemBios objects targeting Windows 10 version, 1803 present on this device.
-- **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
-- **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
+- **InventoryLanguagePack**  The count of InventoryLanguagePack objects present on this machine.
 - **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
 - **InventorySystemBios**  The count of the number of this particular object type present on this device.
-- **InventoryTest**  The count of the number of this particular object type present on this device.
 - **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
-- **PCFP**  The count of the number of this particular object type present on this device.
+- **PCFP**  An ID for the system, calculated by hashing hardware identifiers.
 - **SystemMemory**  The count of the number of this particular object type present on this device.
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
-- **SystemProcessorNx**  The count of the number of this particular object type present on this device.
-- **SystemProcessorPrefetchW**  The count of the number of this particular object type present on this device.
-- **SystemProcessorSse2**  The count of the number of this particular object type present on this device.
+- **SystemProcessorNx**  The total number of objects of this type present on this device.
+- **SystemProcessorPrefetchW**  The total number of objects of this type present on this device.
+- **SystemProcessorSse2**  The count of SystemProcessorSse2 objects present on this machine.
 - **SystemTouch**  The count of the number of this particular object type present on this device.
-- **SystemWim**  The count of the number of this particular object type present on this device.
+- **SystemWim**  The total number of objects of this type present on this device.
 - **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
-- **SystemWlan**  The count of the number of this particular object type present on this device.
-- **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
+- **SystemWlan**  The total number of objects of this type present on this device.
 - **Wmdrm_RS4**  The total Wmdrm objects targeting Windows 10, version 1803 present on this device.
 
 
@@ -359,7 +362,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
 
-This event indicates that the DecisionApplicationFile object is no longer present.
+This event indicates Indicates that the DecisionApplicationFile object is no longer present.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -506,7 +509,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPassiveAdd
 
-This event sends compatibility decision data about non-blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up-to-date.
+This event sends compatibility decision data about non-blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -625,6 +628,7 @@ The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the device blocked from upgrade due to a BIOS block?
+- **DisplayGenericMessageGated**  Indicates whether a generic offer block message will be shown for the bios.
 - **HasBiosBlock**  Does the device have a BIOS block?
 
 
@@ -706,7 +710,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.InventoryApplicationFileStartSync
 
-This event indicates that a new set of InventoryApplicationFileAdd events will be sent.
+This event indicates indicates that a new set of InventoryApplicationFileAdd events will be sent.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -885,6 +889,7 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Context**  Indicates what mode Appraiser is running in. Example: Setup or Telemetry.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
+- **Subcontext**  Indicates what categories of incompatibilities appraiser is scanning for. Can be N/A, Resolve, or a semicolon-delimited list that can include App, Dev, Sys, Gat, or Rescan.
 - **Time**  The client time of the event.
 
 
@@ -1326,7 +1331,7 @@ The following fields are available:
 
 ### Census.App
 
-Provides information on IE and Census versions running on the device
+This event sends version data about the Apps running on this device, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -1339,7 +1344,7 @@ The following fields are available:
 - **AppraiserTaskExitCode**  The Appraiser task exist code.
 - **AppraiserTaskLastRun**  The last runtime for the Appraiser task.
 - **CensusVersion**  The version of Census that generated the current data for this device.
-- **IEVersion**  Retrieves which version of Internet Explorer is running on this device.
+- **IEVersion**  The version of Internet Explorer that is running on the device.
 
 
 ### Census.Battery
@@ -1535,24 +1540,24 @@ The following fields are available:
 
 ### Census.Processor
 
-Provides information on several important data points about Processor settings
+This event sends data about the processor to help keep Windows up to date.
 
 The following fields are available:
 
-- **KvaShadow**  Microcode info of the processor.
+- **KvaShadow**  This is the micro code information of the processor.
 - **MMSettingOverride**  Microcode setting of the processor.
 - **MMSettingOverrideMask**  Microcode setting override of the processor.
-- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.
-- **ProcessorClockSpeed**  Retrieves the clock speed of the processor in MHz.
-- **ProcessorCores**  Retrieves the number of cores in the processor.
-- **ProcessorIdentifier**  The processor identifier of a manufacturer.
-- **ProcessorManufacturer**  Retrieves the name of the processor's manufacturer.
-- **ProcessorModel**  Retrieves the name of the processor model.
+- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system.
+- **ProcessorClockSpeed**  Clock speed of the processor in MHz.
+- **ProcessorCores**  Number of logical cores in the processor.
+- **ProcessorIdentifier**  Processor Identifier of a manufacturer.
+- **ProcessorManufacturer**  Name of the processor manufacturer.
+- **ProcessorModel**  Name of the processor model.
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
-- **ProcessorUpdateRevision**  Retrieves the processor architecture of the installed operating system.
+- **ProcessorUpdateRevision**  The microcode revision.
 - **ProcessorUpdateStatus**  Enum value that represents the processor microcode load status
-- **SocketCount**  Number of physical CPU sockets of the machine.
-- **SpeculationControl**  If the system has enabled protections needed to validate the speculation control vulnerability.
+- **SocketCount**  Count of CPU sockets.
+- **SpeculationControl**  Indicates whether the system has enabled protections needed to validate the speculation control vulnerability.
 
 
 ### Census.Security
@@ -1858,6 +1863,92 @@ The following fields are available:
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 
+## Component-based Servicing events
+
+### CbsServicingProvider.CbsCapabilityEnumeration
+
+This event reports on the results of scanning for optional Windows content on Windows Update.
+
+The following fields are available:
+
+- **architecture**  Indicates the scan was limited to the specified architecture.
+- **capabilityCount**  The number of optional content packages found during the scan.
+- **clientId**  The name of the application requesting the optional content.
+- **duration**  The amount of time it took to complete the scan.
+- **hrStatus**  The HReturn code of the scan.
+- **language**  Indicates the scan was limited to the specified language.
+- **majorVersion**  Indicates the scan was limited to the specified major version.
+- **minorVersion**  Indicates the scan was limited to the specified minor version.
+- **namespace**  Indicates the scan was limited to packages in the specified namespace.
+- **sourceFilter**  A bitmask indicating the scan checked for locally available optional content.
+- **stackBuild**  The build number of the servicing stack.
+- **stackMajorVersion**  The major version number of the servicing stack.
+- **stackMinorVersion**  The minor version number of the servicing stack.
+- **stackRevision**  The revision number of the servicing stack.
+
+
+### CbsServicingProvider.CbsCapabilitySessionFinalize
+
+This event provides information about the results of installing or uninstalling optional Windows content from Windows Update.
+
+The following fields are available:
+
+- **capabilities**  The names of the optional content packages that were installed.
+- **clientId**  The name of the application requesting the optional content.
+- **highestState**  The highest final install state of the optional content.
+- **hrStatus**  The HReturn code of the install operation.
+- **rebootCount**  The number of reboots required to complete the install.
+- **stackBuild**  The build number of the servicing stack.
+- **stackMajorVersion**  The major version number of the servicing stack.
+- **stackMinorVersion**  The minor version number of the servicing stack.
+- **stackRevision**  The revision number of the servicing stack.
+
+
+### CbsServicingProvider.CbsCapabilitySessionPended
+
+This event provides information about the results of installing optional Windows content that requires a reboot to keep Windows up to date.
+
+The following fields are available:
+
+- **clientId**  The name of the application requesting the optional content.
+- **pendingDecision**  Indicates the cause of reboot, if applicable.
+
+
+### CbsServicingProvider.CbsSelectableUpdateChangeV2
+
+This event reports the results of enabling or disabling optional Windows Content to keep Windows up to date.
+
+The following fields are available:
+
+- **applicableUpdateState**  Indicates the highest applicable state of the optional content.
+- **buildVersion**  The build version of the package being installed.
+- **clientId**  The name of the application requesting the optional content change.
+- **downloadSource**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **downloadtimeInSeconds**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **executionID**  A unique ID used to identify events associated with a single servicing operation and not reused for future operations.
+- **executionSequence**  A counter that tracks the number of servicing operations attempted on the device.
+- **firstMergedExecutionSequence**  The value of a pervious executionSequence counter that is being merged with the current operation, if applicable.
+- **firstMergedID**  A unique ID of a pervious servicing operation that is being merged with this operation, if applicable.
+- **hrDownloadResult**  The return code of the download operation.
+- **hrStatusUpdate**  The return code of the servicing operation.
+- **identityHash**  A pseudonymized (hashed) identifier for the Windows Package that is being installed or uninstalled.
+- **initiatedOffline**  Indicates whether the operation was performed against an offline Windows image file or a running instance of Windows.
+- **majorVersion**  The major version of the package being installed.
+- **minorVersion**  The minor version of the package being installed.
+- **packageArchitecture**  The architecture of the package being installed.
+- **packageLanguage**  The language of the package being installed.
+- **packageName**  The name of the package being installed.
+- **rebootRequired**  Indicates whether a reboot is required to complete the operation.
+- **revisionVersion**  The revision number of the package being installed.
+- **stackBuild**  The build number of the servicing stack binary performing the installation.
+- **stackMajorVersion**  The major version number of the servicing stack binary performing the installation.
+- **stackMinorVersion**  The minor version number of the servicing stack binary performing the installation.
+- **stackRevision**  The revision number of the servicing stack binary performing the installation.
+- **updateName**  The name of the optional Windows Operation System feature being enabled or disabled.
+- **updateStartState**  A value indicating the state of the optional content before the operation started.
+- **updateTargetState**  A value indicating the desired state of the optional content.
+
+
 ## Diagnostic data events
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
@@ -1868,7 +1959,13 @@ This event sends data indicating that a device has undergone a change of telemet
 
 ### TelClientSynthetic.AuthorizationInfo_Startup
 
-This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date. The telemetry opt-in level signals what data we are allowed to collect.
+Fired by UTC at startup to signal what data we are allowed to collect.
+
+
+
+### TelClientSynthetic.ConnectivityHeartBeat_0
+
+This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads telemetry events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
 
 
 
@@ -1904,6 +2001,12 @@ The following fields are available:
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
+
+
+### TelClientSynthetic.TailoredExperiencesWithDiagnosticDataUpdate
+
+This event is triggered when UTC determines it needs to send information about personalization settings of the user.
+
 
 
 ## DxgKernelTelemetry events
@@ -1951,6 +2054,81 @@ The following fields are available:
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
 - **version**  The event version.
 - **WDDMVersion**  The Windows Display Driver Model version.
+
+
+## Failover Clustering events
+
+### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
+
+This event returns information about how many resources and of what type are in the server cluster. This data is collected to keep Windows Server safe, secure, and up to date. The data includes information about whether hardware is configured correctly, if the software is patched correctly, and assists in preventing crashes by attributing issues (like fatal errors) to workloads and system configurations.
+
+The following fields are available:
+
+- **autoAssignSite**  The cluster parameter: auto site.
+- **autoBalancerLevel**  The cluster parameter: auto balancer level.
+- **autoBalancerMode**  The cluster parameter: auto balancer mode.
+- **blockCacheSize**  The configured size of the block cache.
+- **ClusterAdConfiguration**  The ad configuration of the cluster.
+- **clusterAdType**  The cluster parameter: mgmt_point_type.
+- **clusterDumpPolicy**  The cluster configured dump policy.
+- **clusterFunctionalLevel**  The current cluster functional level.
+- **clusterGuid**  The unique identifier for the cluster.
+- **clusterWitnessType**  The witness type the cluster is configured for.
+- **countNodesInSite**  The number of nodes in the cluster.
+- **crossSiteDelay**  The cluster parameter: CrossSiteDelay.
+- **crossSiteThreshold**  The cluster parameter: CrossSiteThreshold.
+- **crossSubnetDelay**  The cluster parameter: CrossSubnetDelay.
+- **crossSubnetThreshold**  The cluster parameter: CrossSubnetThreshold.
+- **csvCompatibleFilters**  The cluster parameter: ClusterCsvCompatibleFilters.
+- **csvIncompatibleFilters**  The cluster parameter: ClusterCsvIncompatibleFilters.
+- **csvResourceCount**  The number of resources in the cluster.
+- **currentNodeSite**  The name configured for the current site for the cluster.
+- **dasModeBusType**  The direct storage bus type of the storage spaces.
+- **downLevelNodeCount**  The number of nodes in the cluster that are running down-level.
+- **drainOnShutdown**  Specifies whether a node should be drained when it is shut down.
+- **dynamicQuorumEnabled**  Specifies whether dynamic Quorum has been enabled.
+- **enforcedAntiAffinity**  The cluster parameter: enforced anti affinity.
+- **genAppNames**  The win32 service name of a clustered service.
+- **genSvcNames**  The command line of a clustered genapp.
+- **hangRecoveryAction**  The cluster parameter: hang recovery action.
+- **hangTimeOut**  Specifies the “hang time out” parameter for the cluster.
+- **isCalabria**  Specifies whether storage spaces direct is enabled.
+- **isMixedMode**  Identifies if the cluster is running with different version of OS for nodes.
+- **isRunningDownLevel**  Identifies if the current node is running down-level.
+- **logLevel**  Specifies the granularity that is logged in the cluster log.
+- **logSize**  Specifies the size of the cluster log.
+- **lowerQuorumPriorityNodeId**  The cluster parameter: lower quorum priority node ID.
+- **minNeverPreempt**  The cluster parameter: minimum never preempt.
+- **minPreemptor**  The cluster parameter: minimum preemptor priority.
+- **netftIpsecEnabled**  The parameter: netftIpsecEnabled.
+- **NodeCount**  The number of nodes in the cluster.
+- **nodeId**  The current node number in the cluster.
+- **nodeResourceCounts**  Specifies the number of node resources.
+- **nodeResourceOnlineCounts**  Specifies the number of node resources that are online.
+- **numberOfSites**  The number of different sites.
+- **numNodesInNoSite**  The number of nodes not belonging to a site.
+- **plumbAllCrossSubnetRoutes**  The cluster parameter: plumb all cross subnet routes.
+- **preferredSite**  The preferred site location.
+- **privateCloudWitness**  Specifies whether a private cloud witness exists for this cluster.
+- **quarantineDuration**  The quarantine duration.
+- **quarantineThreshold**  The quarantine threshold.
+- **quorumArbitrationTimeout**  In the event of an arbitration event, this specifies the quorum timeout period.
+- **resiliencyLevel**  Specifies the level of resiliency.
+- **resourceCounts**  Specifies the number of resources.
+- **resourceTypeCounts**  Specifies the number of resource types in the cluster.
+- **resourceTypes**  Data representative of each resource type.
+- **resourceTypesPath**  Data representative of the DLL path for each resource type.
+- **sameSubnetDelay**  The cluster parameter: same subnet delay.
+- **sameSubnetThreshold**  The cluster parameter: same subnet threshold.
+- **secondsInMixedMode**  The amount of time (in seconds) that the cluster has been in mixed mode (nodes with different operating system versions in the same cluster).
+- **securityLevel**  The cluster parameter: security level.
+- **securityLevelForStorage**  The cluster parameter: security level for storage.
+- **sharedVolumeBlockCacheSize**  Specifies the block cache size for shared for shared volumes.
+- **shutdownTimeoutMinutes**  Specifies the amount of time it takes to time out when shutting down.
+- **upNodeCount**  Specifies the number of nodes that are up (online).
+- **useClientAccessNetworksForCsv**  The cluster parameter: use client access networks for CSV.
+- **vmIsolationTime**  The cluster parameter: VM isolation time.
+- **witnessDatabaseWriteTimeout**  Specifies the timeout period for writing to the quorum witness database.
 
 
 ## Fault Reporting events
@@ -2304,35 +2482,35 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **BusReportedDescription**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
+- **BusReportedDescription**  The description of the device reported by the bus.
 - **Class**  The device setup class of the driver loaded for the device.
-- **ClassGuid**  The device setup class guid of the driver loaded for the device.
-- **COMPID**  The list of compat ids for the device.
-- **ContainerId**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
-- **Description**  The device description.
-- **DeviceState**  DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present
-- **DriverId**  A unique identifier for the driver installed.
-- **DriverName**  Name of the .sys image file (or wudfrd.sys if using user mode driver framework).
+- **ClassGuid**  The device class unique identifier of the driver package loaded on the device.
+- **COMPID**  The list of “Compatible IDs” for this device.
+- **ContainerId**  The system-supplied unique identifier that specifies which group(s) the device(s) installed on the parent (main) device belong to.
+- **Description**  The description of the device.
+- **DeviceState**  Identifies the current state of the parent (main) device.
+- **DriverId**  The unique identifier for the installed driver.
+- **DriverName**  The file name of the installed driver image.
 - **DriverPackageStrongName**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
-- **DriverVerDate**  The date of the driver loaded for the device.
-- **DriverVerVersion**  The version of the driver loaded for the device.
-- **Enumerator**  The bus that enumerated the device.
-- **HWID**  List of hardware ids for the device.
-- **Inf**  INF file name (the name could be renamed by OS, such as oemXX.inf)
-- **InstallState**  Device installation state.
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **LowerClassFilters**  Lower filter class drivers IDs installed for the device.
-- **LowerFilters**  Lower filter drivers IDs installed for the device.
-- **Manufacturer**  The device manufacturer.
-- **MatchingID**  Represents the hardware ID or compatible ID that Windows uses to install a device instance.
-- **Model**  The device model.
-- **ParentId**  Device instance id of the parent of the device.
-- **ProblemCode**  The current error code for the device.
-- **Provider**  The device provider.
-- **Service**  The device service name
-- **STACKID**  The device service name.
-- **UpperClassFilters**  The list of hardware ids for the stack
-- **UpperFilters**  Upper filter drivers IDs installed for the device
+- **DriverVerDate**  The date associated with the driver installed on the device.
+- **DriverVerVersion**  The version number of the driver installed on the device.
+- **Enumerator**  Identifies the bus that enumerated the device.
+- **HWID**  A list of hardware IDs for the device.
+- **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
+- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
+- **InventoryVersion**  The version number of the inventory process generating the events.
+- **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
+- **LowerFilters**  The identifiers of the Lower filters installed for the device.
+- **Manufacturer**  The manufacturer of the device.
+- **MatchingID**  The Hardware ID or Compatible ID that Windows uses to install a device instance.
+- **Model**  Identifies the model of the device.
+- **ParentId**  The Device Instance ID of the parent of the device.
+- **ProblemCode**  The error code currently returned by the device, if applicable.
+- **Provider**  Identifies the device provider.
+- **Service**  The name of the device service.
+- **STACKID**  The list of hardware IDs for the stack.
+- **UpperClassFilters**  The identifiers of the Upper Class filters installed for the device.
+- **UpperFilters**  The identifiers of the Upper filters installed for the device.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpRemove
@@ -2480,28 +2658,29 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **AddinCLSID**  The CLSID for the Office addin
-- **AddInCLSID**  The CLSID for the Add-in
-- **AddInId**  Add-In identifier
-- **AddinType**  The type of the Office addin.
-- **BinFileTimestamp**  Timestamp of the Office addin
-- **BinFileVersion**  Version of the Office addin
-- **Description**  Add-in description
-- **FileId**  FileId of the Office addin
-- **FileSize**  File size of the Office addin
-- **FriendlyName**  Add-in friendly name
-- **FullPath**  Full path to the add-in module
-- **LoadBehavior**  The load behavior
-- **LoadTime**  The load time for the add-in
-- **OfficeApplication**  The Microsoft Office application associated with the add-in
-- **OfficeArchitecture**  Architecture of the addin
-- **OfficeVersion**  The Microsoft Office version installed
-- **OutlookCrashingAddin**  Whether the Outlook addin is crashing
-- **ProductCompany**  The name of the company associated with the Office addin
-- **ProductName**  The product name associated with the Office addin
-- **ProductVersion**  The version associated with the Office addin
-- **ProgramId**  The unique program identifier of the Office addin
-- **Provider**  Name of the provider for this addin
+- **AddinCLSID**  The class identifier key for the Microsoft Office add-in.
+- **AddInCLSID**  The class identifier key for the Microsoft Office add-in.
+- **AddInId**  The identifier for the Microsoft Office add-in.
+- **AddinType**  The type of the Microsoft Office add-in.
+- **BinFileTimestamp**  The timestamp of the Office add-in.
+- **BinFileVersion**  The version of the Microsoft Office add-in.
+- **Description**  Description of the Microsoft Office add-in.
+- **FileId**  The file identifier of the Microsoft Office add-in.
+- **FileSize**  The file size of the Microsoft Office add-in.
+- **FriendlyName**  The friendly name for the Microsoft Office add-in.
+- **FullPath**  The full path to the Microsoft Office add-in.
+- **InventoryVersion**  The version of the inventory binary generating the events.
+- **LoadBehavior**  Integer that describes the load behavior.
+- **LoadTime**  Load time for the Office add-in.
+- **OfficeApplication**  The Microsoft Office application associated with the add-in.
+- **OfficeArchitecture**  The architecture of the add-in.
+- **OfficeVersion**  The Microsoft Office version for this add-in.
+- **OutlookCrashingAddin**  Indicates whether crashes have been found for this add-in.
+- **ProductCompany**  The name of the company associated with the Office add-in.
+- **ProductName**  The product name associated with the Microsoft Office add-in.
+- **ProductVersion**  The version associated with the Office add-in.
+- **ProgramId**  The unique program identifier of the Microsoft Office add-in.
+- **Provider**  Name of the provider for this add-in.
 - **Usage**  Data regarding usage of the add-in.
 
 
@@ -2519,6 +2698,9 @@ This event indicates that a new sync is being generated for this object type.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
@@ -2529,6 +2711,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **OAudienceData**  Sub-identifier for Microsoft Office release management, identifying the pilot group for a device
 - **OAudienceId**  Microsoft Office identifier for Microsoft Office release management, identifying the pilot group for a device
 - **OMID**  Identifier for the Office SQM Machine
@@ -2544,6 +2727,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
@@ -2554,6 +2740,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **OIeFeatureAddon**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_ADDON_MANAGEMENT feature lets applications hosting the WebBrowser Control to respect add-on management selections made using the Add-on Manager feature of Internet Explorer. Add-ons disabled by the user or by administrative group policy will also be disabled in applications that enable this feature.
 - **OIeMachineLockdown**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_LOCALMACHINE_LOCKDOWN feature is enabled, Internet Explorer applies security restrictions on content loaded from the user's local machine, which helps prevent malicious behavior involving local files.
 - **OIeMimeHandling**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_MIME_HANDLING feature control is enabled, Internet Explorer handles MIME types more securely. Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
@@ -2577,6 +2764,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
@@ -2587,6 +2777,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **OfficeApplication**  The name of the Office application.
 - **OfficeArchitecture**  The bitness of the Office application.
 - **OfficeVersion**  The version of the Office application.
@@ -2607,6 +2798,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
@@ -2617,6 +2811,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **OC2rApps**  A GUID the describes the Office Click-To-Run apps
 - **OC2rSkus**  Comma-delimited list (CSV) of Office Click-To-Run products installed on the device. For example, Office 2016 ProPlus
 - **OMsiApps**  Comma-delimited list (CSV) of Office MSI products installed on the device. For example, Microsoft Word
@@ -2629,6 +2824,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
@@ -2641,6 +2839,7 @@ The following fields are available:
 
 - **BrowserFlags**  Browser flags for Office-related products
 - **ExchangeProviderFlags**  Office Exchange provider policies
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **SharedComputerLicensing**  Office Shared Computer Licensing policies
 
 
@@ -2650,6 +2849,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
@@ -2716,6 +2918,9 @@ This event indicates that a new sync is being generated for this object type.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAStartSync
@@ -2724,6 +2929,9 @@ Diagnostic event to indicate a new sync is being generated for this object type
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousUUPInfoAdd
@@ -2776,6 +2984,14 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **IndicatorValue**  The indicator value.
+
+
+### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorRemove
+
+This event is a counterpart to InventoryMiscellaneousUexIndicatorAdd that indicates that the item has been removed.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
 
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorStartSync
@@ -2928,101 +3144,46 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
+## Privacy logging notification events
 
-### CbsServicingProvider.CbsCapabilityEnumeration
+### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
 
-This event reports on the results of scanning for optional Windows content on Windows Update.
-
-The following fields are available:
-
-- **architecture**  Indicates the scan was limited to the specified architecture.
-- **capabilityCount**  The number of optional content packages found during the scan.
-- **clientId**  The name of the application requesting the optional content.
-- **duration**  The amount of time it took to complete the scan.
-- **hrStatus**  The HReturn code of the scan.
-- **language**  Indicates the scan was limited to the specified language.
-- **majorVersion**  Indicates the scan was limited to the specified major version.
-- **minorVersion**  Indicates the scan was limited to the specified minor version.
-- **namespace**  Indicates the scan was limited to packages in the specified namespace.
-- **sourceFilter**  A bitmask indicating the scan checked for locally available optional content.
-- **stackBuild**  The build number of the servicing stack.
-- **stackMajorVersion**  The major version number of the servicing stack.
-- **stackMinorVersion**  The minor version number of the servicing stack.
-- **stackRevision**  The revision number of the servicing stack.
-
-
-### CbsServicingProvider.CbsCapabilitySessionFinalize
-
-This event provides information about the results of installing or uninstalling optional Windows content from Windows Update.
+This event returns data to report the efficacy of a single-use tool to inform users impacted by a known issue and to take corrective action to address the issue.
 
 The following fields are available:
 
-- **capabilities**  The names of the optional content packages that were installed.
-- **clientId**  The name of the application requesting the optional content.
-- **highestState**  The highest final install state of the optional content.
-- **hrStatus**  The HReturn code of the install operation.
-- **rebootCount**  The number of reboots required to complete the install.
-- **stackBuild**  The build number of the servicing stack.
-- **stackMajorVersion**  The major version number of the servicing stack.
-- **stackMinorVersion**  The minor version number of the servicing stack.
-- **stackRevision**  The revision number of the servicing stack.
-
-
-### CbsServicingProvider.CbsCapabilitySessionPended
-
-This event provides information about the results of installing optional Windows content that requires a reboot to keep Windows up to date.
-
-The following fields are available:
-
-- **clientId**  The name of the application requesting the optional content.
-- **pendingDecision**  Indicates the cause of reboot, if applicable.
-
-
-### Microsoft.Windows.WaaSAssessment.Error
-
-This event returns the name of the missing setting needed to determine the Operating System build age.
-
-The following fields are available:
-
-- **m**  The WaaS (“Workspace as a Service”—cloud-based “workspace”) Assessment Error String.
-
-
-### Microsoft.Xbox.XamTelemetry.AppActivationError
-
-This event indicates whether the system detected an activation error in the app.
-
-
-
-### Microsoft.Xbox.XamTelemetry.AppActivity
-
-This event is triggered whenever the current app state is changed by: launch, switch, terminate, snap, etc.
-
+- **cleanupTask**  Indicates whether the task that launched the dialog should be cleaned up.
+- **cleanupTaskResult**  The return code of the attempt to clean up the task used to show the dialog.
+- **deviceEvaluated**  Indicates whether the device was eligible for evaluation of a known issue.
+- **deviceImpacted**  Indicates whether the device was impacted by a known issue.
+- **modalAction**  The action the user took on the dialog that was presented to them.
+- **modalResult**  The return code of the attempt to show a dialog to the user explaining the issue.
+- **resetSettingsResult**  The return code of the action to correct the known issue.
 
 
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+deny
 
 The following fields are available:
 
 - **ActionName**  The name of the action to be taken by the plug-in.
-- **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
+- **AppraiserBinariesValidResult**  Indicates whether the plug-in was appraised as valid.
 - **AppraiserDetectCondition**  Indicates whether the plug-in passed the appraiser's check.
 - **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
 - **AppraiserTaskDisabled**  Indicates the appraiser task is disabled.
 - **CV**  Correlation vector
 - **DateTimeDifference**  The difference between local and reference clock times.
-- **DateTimeSyncEnabled**  Indicates whether the datetime sync plug-in is enabled.
+- **DateTimeSyncEnabled**  Indicates whether the Datetime Sync plug-in is enabled.
 - **DaysSinceLastSIH**  The number of days since the most recent SIH executed.
 - **DaysToNextSIH**  The number of days until the next scheduled SIH execution.
-- **DetectedCondition**  Indicates whether detect condition is true and the perform action will be run.
+- **DetectedCondition**  Indicates whether detected condition is true and the perform action will be run.
 - **EvalAndReportAppraiserBinariesFailed**  Indicates the EvalAndReportAppraiserBinaries event failed.
 - **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
 - **EvalAndReportAppraiserRegEntriesFailed**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
-- **GlobalEventCounter**  Client side counter that indicates ordering of events.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by the remediation system.
 - **HResult**  The HRESULT for detection or perform action phases of the plugin.
 - **IsAppraiserLatestResult**  The HRESULT from the appraiser task.
 - **IsConfigurationCorrected**  Indicates whether the configuration of SIH task was successfully corrected.
@@ -3032,12 +3193,12 @@ The following fields are available:
 - **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Reload**  True if SIH reload is required.
-- **RemediationNoisyHammerAcLineStatus**  Event that indicates the AC Line Status of the machine.
+- **RemediationNoisyHammerAcLineStatus**  Indicates the AC Line Status of the device.
 - **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
 - **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
 - **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
 - **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
-- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent hammer task ran.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent Noisy Hammer task ran.
 - **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
 - **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
 - **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
@@ -3085,9 +3246,29 @@ The following fields are available:
 - **TimeServiceSyncType**  Type of sync behavior for Date & Time service on device.
 
 
+### Microsoft.Windows.Remediation.ChangePowerProfileDetection
+
+Indicates whether the remediation system can put in a request to defer a system-initiated sleep to enable installation of security or quality updates.
+
+The following fields are available:
+
+- **ActionName**  A descriptive name for the plugin action
+- **CurrentPowerPlanGUID**  The ID of the current power plan configured on the device
+- **CV**  Correlation vector
+- **GlobalEventCounter**  Counter that indicates the ordering of events on the device
+- **PackageVersion**  Current package version of remediation service
+- **RemediationBatteryPowerBatteryLevel**  Integer between 0 and 100 indicating % battery power remaining (if not on battery, expect 0)
+- **RemediationFUInProcess**  Result that shows whether the device is currently installing a feature update
+- **RemediationFURebootRequred**  Indicates that a feature update reboot required was detected so the plugin will exit.
+- **RemediationScanInProcess**  Result that shows whether the device is currently scanning for updates
+- **RemediationTargetMachine**  Result that shows whether this device is a candidate for remediation(s) that will fix update issues
+- **SetupMutexAvailable**  Result that shows whether setup mutex is available or not
+- **SysPowerStatusAC**  Result that shows whether system is on AC power or not
+
+
 ### Microsoft.Windows.Remediation.Completed
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+This event is sent when Windows Update sediment remediations have completed on the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
@@ -3105,12 +3286,12 @@ The following fields are available:
 - **CV**  The Correlation Vector.
 - **DateTimeDifference**  The difference between the local and reference clocks.
 - **DaysSinceOsInstallation**  The number of days since the installation of the Operating System.
-- **DiskMbCleaned**  The amount of space cleaned on the hard disk, measured in Megabytes.
+- **DiskMbCleaned**  The amount of space cleaned on the hard disk, measured in megabytes.
 - **DiskMbFreeAfterCleanup**  The amount of free hard disk space after cleanup, measured in Megabytes.
 - **DiskMbFreeBeforeCleanup**  The amount of free hard disk space before cleanup, measured in Megabytes.
 - **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
-- **GlobalEventCounter**  Client-side counter that indicates ordering of events.
-- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
+- **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
+- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in megabytes.
 - **hasRolledBack**  Indicates whether the client machine has rolled back.
 - **hasUninstalled**  Indicates whether the client machine has uninstalled a later version of the OS.
 - **hResult**  The result of the event execution.
@@ -3171,11 +3352,11 @@ The following fields are available:
 - **RunResult**  The HRESULT for Detection or Perform Action phases of the plug-in.
 - **ServiceHealthPlugin**  The nae of the Service Health plug-in.
 - **StartComponentCleanupTask**  TRUE if the Component Cleanup task started successfully.
-- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive in MBs.
+- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive, in megabytes.
 - **systemUptimeInHours**  Indicates the amount of time the system in hours has been on since the last boot.
 - **TotalSizeofOrphanedInstallerFilesInMegabytes**  The size of any orphaned Windows Installer files, measured in Megabytes.
-- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Windows Store cache after cleanup, measured in Megabytes.
-- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Windows Store cache (prior to cleanup), measured in Megabytes.
+- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Microsoft Store cache after cleanup, measured in Megabytes.
+- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Microsoft Store cache (prior to cleanup), measured in Megabytes.
 - **uninstallActive**  TRUE if previous uninstall has occurred for current OS
 - **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
 - **usoScanInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
@@ -3186,7 +3367,7 @@ The following fields are available:
 - **usoScanIsNetworkMetered**  TRUE if the device is currently connected to a metered network.
 - **usoScanIsNoAutoUpdateKeyPresent**  TRUE if no Auto Update registry key is set/present.
 - **usoScanIsUserLoggedOn**  TRUE if the user is logged on.
-- **usoScanPastThreshold**  TRUE if the most recent USO (Update Session Orchestrator) scan is past the threshold (late).
+- **usoScanPastThreshold**  TRUE if the most recent Update Session Orchestrator (USO) scan is past the threshold (late).
 - **usoScanType**  The type of USO (Update Session Orchestrator) scan: "Interactive" or "Background".
 - **windows10UpgraderBlockWuUpdates**  Event to report the value of Windows 10 Upgrader BlockWuUpdates Key.
 - **windowsEditionId**  Event to report the value of Windows Edition ID.
@@ -3202,15 +3383,31 @@ The following fields are available:
 - **windowsUpgradeRecoveredFromRs4**  Event to report the value of the Windows Upgrade Recovered key.
 
 
+### Microsoft.Windows.Remediation.RemediationShellMainExeEventId
+
+Enables tracking of completion of process that remediates issues preventing security and quality updates.
+
+The following fields are available:
+
+- **CV**  Client side counter which indicates ordering of events sent by the remediation system.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by the remediation system.
+- **PackageVersion**  Current package version of Remediation.
+- **RemediationShellCanAcquireSedimentMutex**  True if the remediation was able to acquire the sediment mutex. False if it is already running.
+- **RemediationShellExecuteShellResult**  Indicates if the remediation system completed without errors.
+- **RemediationShellFoundDriverDll**  Result whether the remediation system found its component files to run properly.
+- **RemediationShellLoadedShellDriver**  Result whether the remediation system loaded its component files to run properly.
+- **RemediationShellLoadedShellFunction**  Result whether the remediation system loaded the functions from its component files to run properly.
+
+
 ### Microsoft.Windows.Remediation.Started
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+This event is sent when Windows Update sediment remediations have started on the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
-- **PackageVersion**  Current package version of Remediation.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
@@ -3236,6 +3433,12 @@ This event indicates an error in the updater payload. This information assists i
 
 
 
+### Microsoft.Windows.Sediment.Info.PhaseChange
+
+The event indicates progress made by the updater. This information assists in keeping Windows up to date.
+
+
+
 ### Microsoft.Windows.Sediment.OSRSS.CheckingOneSettings
 
 This event indicates the parameters that the Operating System Remediation System Service (OSRSS) uses for a secure ping to Microsoft to help ensure Windows is up to date.
@@ -3248,6 +3451,31 @@ The following fields are available:
 - **ServiceVersionMajor**  The Major version information of the component.
 - **ServiceVersionMinor**  The Minor version information of the component.
 - **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.OSRSS.DownloadingUrl
+
+This event provides information about the URL from which the Operating System Remediation System Service (OSRSS) is attempting to download. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **AttemptNumber**  The count indicating which download attempt is starting.
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The URL from which data was downloaded.
+
+
+### Microsoft.Windows.Sediment.OSRSS.DownloadSuccess
+
+This event indicates the Operating System Remediation System Service (OSRSS)  successfully download data from the indicated URL. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The URL from which data was downloaded.
 
 
 ### Microsoft.Windows.Sediment.OSRSS.Error
@@ -3265,6 +3493,65 @@ The following fields are available:
 - **Time**  The system time at which the event occurred.
 
 
+### Microsoft.Windows.Sediment.OSRSS.ExeSignatureValidated
+
+This event indicates the Operating System Remediation System Service (OSRSS) successfully validated the signature of an EXE from the indicated URL. The information provided helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The URL from which the validated EXE was downloaded.
+
+
+### Microsoft.Windows.Sediment.OSRSS.ExtractSuccess
+
+This event indicates that the Operating System Remediation System Service (OSRSS) successfully extracted downloaded content. The information provided helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The URL from which the successfully extracted content was downloaded.
+
+
+### Microsoft.Windows.Sediment.OSRSS.NewUrlFound
+
+This event indicates the Operating System Remediation System Service (OSRSS) succeeded in finding a new URL to download from. This helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The new URL from which content will be downloaded.
+
+
+### Microsoft.Windows.Sediment.OSRSS.ProcessCreated
+
+This event indicates the Operating System Remediation System Service (OSRSS) created a new process to execute content downloaded from the indicated URL. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The Major version information of the component.
+- **ServiceVersionMinor**  The Minor version information of the component.
+- **Time**  The system time at which the event occurred.
+- **Url**  The new URL from which content will be executed.
+
+
+### Microsoft.Windows.Sediment.OSRSS.SelfUpdate
+
+This event returns metadata after Operating System Remediation System Service (OSRSS) successfully replaces itself with a new version.
+
+The following fields are available:
+
+- **ServiceVersionMajor**  The major version number for the component.
+- **ServiceVersionMinor**  The minor version number for the component.
+- **Time**  The system timestamp for when the event occurred.
+
+
 ### Microsoft.Windows.Sediment.OSRSS.UrlState
 
 This event indicates the state the Operating System Remediation System Service (OSRSS)  is in while attempting a download from the URL.
@@ -3279,17 +3566,116 @@ The following fields are available:
 - **Time**  System timestamp the event was fired
 
 
-## Sediment Launcher events
+### Microsoft.Windows.Sediment.ServiceInstaller.ApplicabilityCheckFailed
+
+This event returns data relating to the error state after one of the applicability checks for the installer component of the Operating System Remediation System Service (OSRSS) has failed.
+
+The following fields are available:
+
+- **CheckName**  The name of the applicability check that failed.
+- **InstallerVersion**  The version information for the installer component.
+- **Time**  The system timestamp for when the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.AttemptingUpdate
+
+This event indicates the Operating System Remediation System Service (OSRSS) installer is attempting an update to itself. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.BinaryUpdated
+
+This event indicates the Operating System Remediation System Service (OSRSS) updated installer binaries with new binaries as part of its self-update process. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.InstallerLaunched
+
+This event indicates the Operating System Remediation System Service (OSRSS) has launched. The information provided helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.ServiceInstalled
+
+This event indicates the Operating System Remediation System Service (OSRSS) successfully installed the Installer Component. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.ServiceRestarted
+
+This event indicates the Operating System Remediation System Service (OSRSS) has restarted after installing an updated version of itself. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.ServiceStarted
+
+This event indicates the Operating System Remediation System Service (OSRSS) has started after installing an updated version of itself. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.ServiceStopped
+
+This event indicates the Operating System Remediation System Service (OSRSS) was stopped by a self-updated to install an updated version of itself. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.UpdaterCompleted
+
+This event indicates the Operating System Remediation System Service (OSRSS) successfully completed the self-update operation. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
+
+### Microsoft.Windows.Sediment.ServiceInstaller.UpdaterLaunched
+
+This event indicates the Operating System Remediation System Service (OSRSS) successfully launched the self-updater after downloading it. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **InstallerVersion**  The version information of the Installer component.
+- **Time**  The system time at which the event occurred.
+
 
 ### Microsoft.Windows.SedimentLauncher.Applicable
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+This event is sent when the Windows Update sediment remediations launcher finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **DetectedCondition**  Boolean true if detect condition is true and perform action will be run.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **IsSelfUpdateEnabledInOneSettings**  True if self update enabled in Settings.
 - **IsSelfUpdateNeeded**  True if self update needed by device.
 - **PackageVersion**  Current package version of Remediation.
@@ -3299,43 +3685,98 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Completed
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+This event is sent when the Windows Update sediment remediations launcher finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **FailedReasons**  Concatenated list of failure reasons.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 - **SedLauncherExecutionResult**  HRESULT for one execution of the Sediment Launcher.
 
 
+### Microsoft.Windows.SedimentLauncher.Error
+
+Error occurred during execution of the plugin.
+
+The following fields are available:
+
+- **HResult**  The result for the Detection or Perform Action phases of the plug-in.
+- **Message**  A message containing information about the error that occurred (if any).
+- **PackageVersion**  The version number of the current remediation package.
+
+
+### Microsoft.Windows.SedimentLauncher.FallbackError
+
+This event indicates that an error occurred during execution of the plug-in fallback.
+
+The following fields are available:
+
+- **s0**  Error occurred during execution of the plugin fallback. See [Microsoft.Windows.SedimentLauncher.wilResult](#microsoftwindowssedimentlauncherwilresult).
+- **wilResult**  Result from executing wil based function. See [wilResult](#wilresult).
+
+
+### Microsoft.Windows.SedimentLauncher.Information
+
+This event provides general information returned from the plug-in.
+
+The following fields are available:
+
+- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
+- **Message**  Information message returned from a plugin containing only information internal to the plugins execution.
+- **PackageVersion**  Current package version of Remediation.
+
+
 ### Microsoft.Windows.SedimentLauncher.Started
 
-This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.
+This event is sent when the Windows Update sediment remediations launcher starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
 
-## Sediment Service events
+### Microsoft.Windows.SedimentLauncher.wilResult
+
+This event provides the result from the Windows internal library.
+
+The following fields are available:
+
+- **callContext**  List of telemetry activities containing this error.
+- **currentContextId**  Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage**  Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName**  Name of the newest telemetry activity containing this error.
+- **failureCount**  Number of failures seen within the binary where the error occurred.
+- **failureId**  Identifier assigned to this failure.
+- **failureType**  Indicates what type of failure was observed (exception, returned error, logged error or fail fast).
+- **fileName**  Source code file name where the error occurred.
+- **function**  Name of the function where the error occurred.
+- **hresult**  Failure error code.
+- **lineNumber**  Line number within the source code file where the error occurred.
+- **message**  Custom message associated with the failure (if any).
+- **module**  Name of the binary where the error occurred.
+- **originatingContextId**  Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage**  Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName**  Name of the oldest telemetry activity containing this error.
+- **threadId**  Identifier of the thread the error occurred on.
+
 
 ### Microsoft.Windows.SedimentService.Applicable
 
-This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
+This event is sent when the Windows Update sediment remediations service finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **DetectedCondition**  Determine whether action needs to run based on device properties.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **IsSelfUpdateEnabledInOneSettings**  Indicates if self update is enabled in One Settings.
 - **IsSelfUpdateNeeded**  Indicates if self update is needed.
 - **PackageVersion**  Current package version of Remediation.
@@ -3345,13 +3786,13 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Completed
 
-This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
+This event is sent when the Windows Update sediment remediations service finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **FailedReasons**  List of reasons when the plugin action failed.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
@@ -3365,9 +3806,41 @@ The following fields are available:
 - **SedimentServiceTotalIterations**  Number of 5 second iterations service will wait before running again.
 
 
+### Microsoft.Windows.SedimentService.Error
+
+This event indicates whether an error condition occurred in the plug-in.
+
+The following fields are available:
+
+- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
+- **Message**  Custom message associated with the failure (if any).
+- **PackageVersion**  Current package version of Remediation.
+
+
+### Microsoft.Windows.SedimentService.FallbackError
+
+This event indicates whether an error occurred for a fallback in the plug-in.
+
+The following fields are available:
+
+- **s0**  Event returned when an error occurs for a fallback in the plugin. See [Microsoft.Windows.SedimentService.wilResult](#microsoftwindowssedimentservicewilresult).
+- **wilResult**  Result for wil based function. See [wilResult](#wilresult).
+
+
+### Microsoft.Windows.SedimentService.Information
+
+This event provides general information returned from the plug-in.
+
+The following fields are available:
+
+- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
+- **Message**  Custom message associated with the failure (if any).
+- **PackageVersion**  Current package version of Remediation.
+
+
 ### Microsoft.Windows.SedimentService.Started
 
-This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
+This event is sent when the Windows Update sediment remediations service starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3376,6 +3849,31 @@ The following fields are available:
 - **PackageVersion**  The version number of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentService.wilResult
+
+This event provides the result from the Windows internal library.
+
+The following fields are available:
+
+- **callContext**  List of telemetry activities containing this error.
+- **currentContextId**  Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage**  Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName**  Name of the newest telemetry activity containing this error.
+- **failureCount**  Number of failures seen within the binary where the error occurred.
+- **failureId**  Identifier assigned to this failure.
+- **failureType**  Indicates what type of failure was observed (exception, returned error, logged error or fail fast).
+- **fileName**  Source code file name where the error occurred.
+- **function**  Name of the function where the error occurred.
+- **hresult**  Failure error code.
+- **lineNumber**  Line number within the source code file where the error occurred.
+- **message**  Custom message associated with the failure (if any).
+- **module**  Name of the binary where the error occurred.
+- **originatingContextId**  Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage**  Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName**  Name of the oldest telemetry activity containing this error.
+- **threadId**  Identifier of the thread the error occurred on.
 
 
 ## Setup events
@@ -3505,7 +4003,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event – whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **HandlerReasons**  If an action has been assessed as inapplicable, the installer technology-specific logic prevented it.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.)
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StandardReasons**  If an action has been assessed as inapplicable, the standard logic the prevented it.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
@@ -3522,7 +4020,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **RebootRequired**  Indicates if a reboot was required to complete the action.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
@@ -3537,7 +4035,7 @@ The following fields are available:
 - **CachedEngineVersion**  The engine DLL version that is being used.
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
@@ -3553,7 +4051,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **Service**  The service that is being stopped/started.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StateChange**  The service operation (stop/start) is being attempted.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
@@ -3571,7 +4069,7 @@ The following fields are available:
 - **EventScenario**  Indicates the purpose of sending this event – whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **FailedParseActions**  The list of actions that were not successfully parsed.
 - **ParsedActions**  The list of actions that were successfully parsed.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.)
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
 
 
@@ -3647,7 +4145,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
@@ -3660,6 +4158,37 @@ The following fields are available:
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 
 
+### SoftwareUpdateClientTelemetry.Commit
+
+This event tracks the commit process post the update installation when software update client is trying to update the device.
+
+The following fields are available:
+
+- **BiosFamily**  The family of the BIOS (Basic Input Output System).
+- **BiosName**  The name of the device BIOS.
+- **BiosReleaseDate**  The release date of the device BIOS.
+- **BiosSKUNumber**  The sku number of the device BIOS.
+- **BIOSVendor**  The vendor of the BIOS.
+- **BiosVersion**  The version of the BIOS.
+- **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
+- **BundleRevisionNumber**  Identifies the revision number of the content bundle
+- **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client
+- **ClientVersion**  The version number of the software distribution client.
+- **DeviceModel**  What is the device model.
+- **EventInstanceID**  A globally unique identifier for event instance.
+- **EventScenario**  State of call
+- **EventType**  Possible values are "Child", "Bundle", or "Driver".
+- **FlightId**  The specific id of the flight the device is getting
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
+- **RevisionNumber**  Unique revision number of Update
+- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Microsoft Store.
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
+- **SystemBIOSMajorRelease**  Major version of the BIOS.
+- **SystemBIOSMinorRelease**  Minor version of the BIOS.
+- **UpdateId**  Unique Update ID
+- **WUDeviceID**  UniqueDeviceID
+
+
 ### SoftwareUpdateClientTelemetry.Download
 
 Download process event for target update on Windows Update client (see eventscenario field for specifics, e.g.: started/failed/succeeded)
@@ -3668,32 +4197,32 @@ The following fields are available:
 
 - **ActiveDownloadTime**  How long the download took, in seconds, excluding time where the update wasn't actively being downloaded.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
-- **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
+- **AppXDownloadScope**  Indicates the scope of the download for application content.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
-- **BiosSKUNumber**  The sku number of the device BIOS.
+- **BiosSKUNumber**  The SKU number of the device BIOS.
 - **BIOSVendor**  The vendor of the BIOS.
 - **BiosVersion**  The version of the BIOS.
-- **BundleBytesDownloaded**  How many bytes were downloaded for the specific content bundle.
-- **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
+- **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
+- **BundleId**  Identifier associated with the specific content bundle.
 - **BundleRepeatFailFlag**  Indicates whether this particular update bundle had previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
-- **BytesDownloaded**  How many bytes were downloaded for an individual piece of content (not the entire bundle).
-- **CachedEngineVersion**  For self-initiated healing, the version of the SIH engine that is cached on the device. If the SIH engine does not exist, the value is null.
-- **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
-- **CbsDownloadMethod**  Indicates whether the download was a full-file download or a partial/delta download.
+- **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
+- **CachedEngineVersion**  The version of the “Self-Initiated Healing” (SIH) engine that is cached on the device, if applicable.
+- **CallerApplicationName**  The name provided by the application that initiated API calls into the software distribution client.
+- **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
-- **DeviceModel**  What is the device model.
+- **DeviceModel**  The model of the device.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
-- **DownloadScenarioId**  A unique ID for a given download used to tie together WU and DO events.
-- **DownloadType**  Differentiates the download type of SIH downloads between Metadata and Payload downloads.
+- **DownloadScenarioId**  A unique ID for a given download, used to tie together Windows Update and Delivery Optimizer events.
+- **DownloadType**  Differentiates the download type of “Self-Initiated Healing” (SIH) downloads between Metadata and Payload downloads.
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
-- **EventType**  Possible values are Child, Bundle, or Driver.
+- **EventScenario**  Indicates the purpose for sending this event: whether because the software distribution just started downloading content; or whether it was cancelled, succeeded, or failed.
+- **EventType**  Identifies the type of the event (Child, Bundle, or Driver).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
@@ -3703,7 +4232,7 @@ The following fields are available:
 - **HandlerType**  Indicates what kind of content is being downloaded (app, driver, windows patch, etc.).
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
 - **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
-- **HostName**  The hostname URL the content is downloading from.
+- **HostName**  The parent URL the content is downloading from.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6.
 - **IsDependentSet**  Indicates whether a driver is a part of a larger System Hardware/Firmware Update
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
@@ -3716,23 +4245,23 @@ The following fields are available:
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
-- **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
-- **Setup360Phase**  If the download is for an operating system upgrade, this datapoint indicates which phase of the upgrade is underway.
-- **ShippingMobileOperator**  The mobile operator that a device shipped on.
+- **RevisionNumber**  The revision number of the specified piece of content.
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
+- **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
+- **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
-- **TargetMetadataVersion**  For self-initiated healing, this is the target version of the SIH engine to download (if needed). If not, the value is null.
+- **TargetMetadataVersion**  The version of the currently downloading (or most recently downloaded) package.
 - **ThrottlingServiceHResult**  Result code (success/failure) while contacting a web service to determine whether this device should download content yet.
-- **TimeToEstablishConnection**  Time (in ms) it took to establish the connection prior to beginning downloaded.
-- **TotalExpectedBytes**  The total count of bytes that the download is expected to be.
+- **TimeToEstablishConnection**  Time (in milliseconds) it took to establish the connection prior to beginning downloaded.
+- **TotalExpectedBytes**  The total size (in Bytes) expected to be downloaded.
 - **UpdateId**  An identifier associated with the specific piece of content.
 - **UpdateID**  An identifier associated with the specific piece of content.
-- **UpdateImportance**  Indicates whether a piece of content was marked as Important, Recommended, or Optional.
-- **UsedDO**  Whether the download used the delivery optimization service.
+- **UpdateImportance**  Indicates whether the content was marked as Important, Recommended, or Optional.
+- **UsedDO**  Indicates whether the download used the Delivery Optimization (DO) service.
 - **UsedSystemVolume**  Indicates whether the content was downloaded to the device's main system storage drive, or an alternate storage drive.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 
@@ -3783,7 +4312,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one
 - **ResumeCount**  Number of times this active download has resumed from a suspended state
 - **RevisionNumber**  Identifies the revision number of this specific piece of content
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **ServiceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **SuspendCount**  Number of times this active download has entered a suspended state
 - **SuspendReason**  Last reason for why this active download entered a suspended state
@@ -3843,7 +4372,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RepeatFailFlag**  Indicates whether this specific piece of content previously failed to install.
 - **RevisionNumber**  The revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the install is for an operating system upgrade, indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of an installation event (success, cancellation, failure code HResult).
@@ -3870,7 +4399,7 @@ The following fields are available:
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **NumberOfApplicableUpdates**  The number of updates ultimately deemed applicable to the system after the detection process is complete.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.).
 - **WUDeviceID**  The unique device ID controlled by the software distribution client.
 
 
@@ -3883,7 +4412,7 @@ The following fields are available:
 - **EndpointUrl**  The endpoint URL where the device obtains update metadata. This is used to distinguish between test, staging, and production environments.
 - **EventScenario**  The purpose of this event, such as scan started, scan succeeded, or scan failed.
 - **ExtendedStatusCode**  The secondary status code of the event.
-- **LeafCertId**  Integral ID from the FragmentSigning data for certificate that failed.
+- **LeafCertId**  The integral ID from the FragmentSigning data for the certificate that failed.
 - **ListOfSHA256OfIntermediateCerData**  A semicolon delimited list of base64 encoding of hashes for the Base64CerData in the FragmentSigning data of an intermediate certificate.
 - **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
 - **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
@@ -3891,10 +4420,10 @@ The following fields are available:
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Microsoft Store
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
-- **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
+- **SHA256OfTimestampToken**  An encoded string of the timestamp token.
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
 - **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
 - **StatusCode**  The status code of the event.
@@ -4145,6 +4674,7 @@ The following fields are available:
 - **FlightId**  Unique ID for each flight.
 - **InternalFailureResult**  Indicates a non-fatal error from a plugin.
 - **ObjectId**  Unique value for each Update Agent mode (same concept as InstanceId for Setup360).
+- **PackageCategoriesSkipped**  Indicates package categories that were skipped, if applicable.
 - **PackageCountOptional**  # of optional packages requested.
 - **PackageCountRequired**  # of required packages requested.
 - **PackageCountTotal**  Total # of packages needed.
@@ -4382,36 +4912,36 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **DetectorVersion**  Most recently run detector version for the current campaign.
 - **GlobalEventCounter**  Client side counter that indicates the ordering of events sent by this user.
-- **key1**  Interaction data for the UI
-- **key10**  UI interaction data
-- **key11**  UI interaction data
-- **key12**  UI interaction data
-- **key13**  UI interaction data
-- **key14**  UI interaction data
-- **key15**  UI interaction data
-- **key16**  UI interaction data
-- **key17**  UI interaction data
-- **key18**  UI interaction data
-- **key19**  UI interaction data
-- **key2**  Interaction data for the UI
-- **key20**  UI interaction data
-- **key21**  UI interaction data
-- **key22**  UI interaction data
-- **key23**  UI interaction data
-- **key24**  UI interaction data
-- **key25**  UI interaction data
-- **key26**  UI interaction data
-- **key27**  UI interaction data
-- **key28**  UI interaction data
-- **key29**  UI interaction data
-- **key3**  Interaction data for the UI
-- **key30**  UI interaction data
-- **key4**  Interaction data for the UI
-- **key5**  UI interaction type
-- **key6**  Current package version of UNP
-- **key7**  UI interaction type
-- **key8**  UI interaction data
-- **key9**  UI interaction data
+- **key1**  UI interaction data.
+- **key10**  UI interaction data.
+- **key11**  UI interaction data.
+- **key12**  UI interaction data.
+- **key13**  UI interaction data.
+- **key14**  UI interaction data.
+- **key15**  UI interaction data.
+- **key16**  UI interaction data.
+- **key17**  UI interaction data.
+- **key18**  UI interaction data.
+- **key19**  UI interaction data.
+- **key2**  UI interaction data.
+- **key20**  UI interaction data.
+- **key21**  UI interaction data.
+- **key22**  UI interaction data.
+- **key23**  UI interaction data.
+- **key24**  The interaction data for the user interface.
+- **key25**  The interaction data for the user interface.
+- **key26**  The interaction data for the user interface.
+- **key27**  The interaction data for the user interface.
+- **key28**  The interaction data for the user interface.
+- **key29**  UI interaction data.
+- **key3**  UI interaction data.
+- **key30**  UI interaction data.
+- **key4**  UI interaction data.
+- **key5**  UI interaction data.
+- **key6**  UI interaction data.
+- **key7**  UI interaction data.
+- **key8**  UI interaction data.
+- **key9**  UI interaction data.
 - **PackageVersion**  Current package version of the update notification.
 - **schema**  UI interaction type.
 
@@ -4506,6 +5036,12 @@ This event indicates whether devices received additional or critical supplementa
 
 
 
+### FacilitatorTelemetry.InitializeDU
+
+This event determines whether devices received additional or critical supplemental content during an OS upgrade.
+
+
+
 ### Setup360Telemetry.Downlevel
 
 This event sends data indicating that the device has started the downlevel phase of the upgrade, to help keep Windows up-to-date and secure.
@@ -4562,9 +5098,9 @@ The following fields are available:
 - **Setup360Extended**  Detailed information about the phase or action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
-- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
+- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled
+- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -4597,6 +5133,7 @@ This event sends data indicating that the device has invoked the predownload qui
 The following fields are available:
 
 - **ClientId**  Using Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
 - **HostOsSkuName**  The OS edition which is running Setup360 instance (previous operating system).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
@@ -4711,6 +5248,17 @@ This event sends a summary of all the setup mitigations available for this updat
 
 This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop.
 
+The following fields are available:
+
+- **ClientId**  The Windows Update client ID passed to Setup.
+- **Count**  The count of applicable OneSettings for the device.
+- **FlightData**  The ID for the flight (test instance version).
+- **InstanceId**  The GUID (Globally-Unique ID) that identifies each instance of setuphost.exe.
+- **Parameters**  The set of name value pair parameters sent to OneSettings to determine if there are any applicable OneSettings.
+- **ReportId**  The Update ID passed to Setup.
+- **Result**  The HResult of the event error.
+- **ScenarioId**  The update scenario ID.
+- **Values**  Values sent back to the device, if applicable.
 
 
 ### Setup360Telemetry.UnexpectedEvent
@@ -4726,7 +5274,7 @@ The following fields are available:
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
@@ -4735,6 +5283,15 @@ The following fields are available:
 
 
 ## Windows as a Service diagnostic events
+
+### Microsoft.Windows.WaaSAssessment.Error
+
+This event returns the name of the missing setting needed to determine the Operating System build age.
+
+The following fields are available:
+
+- **m**  The WaaS (“Workspace as a Service”—cloud-based “workspace”) Assessment Error String.
+
 
 ### Microsoft.Windows.WaaSMedic.Summary
 
@@ -4762,17 +5319,17 @@ This event provides the results from the WaaSMedic engine
 The following fields are available:
 
 - **detectionSummary**  Result of each applicable detection that was run.
-- **featureAssessmentImpact**  WaaS Assessment impact for feature updates.
+- **featureAssessmentImpact**  Windows as a Service (WaaS) Assessment impact on feature updates
 - **hrEngineResult**  Indicates the WaaSMedic engine operation error codes
-- **insufficientSessions**  Device not eligible for diagnostics.
-- **isManaged**  Device is managed for updates.
-- **isWUConnected**  Device is connected to Windows Update.
-- **noMoreActions**  No more applicable diagnostics.
-- **qualityAssessmentImpact**  WaaS Assessment impact for quality updates.
+- **insufficientSessions**  True, if the device has enough activity to be eligible for update diagnostics. False, if otherwise
+- **isManaged**  Indicates the device is managed for updates
+- **isWUConnected**  Indicates the device is connected to Windows Update
+- **noMoreActions**  All available WaaSMedic diagnostics have run. There are no pending diagnostics and corresponding actions
+- **qualityAssessmentImpact**  Windows as a Service (WaaS) Assessment impact for quality updates
 - **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn the it back on.
-- **usingBackupFeatureAssessment**  Relying on backup feature assessment.
-- **usingBackupQualityAssessment**  Relying on backup quality assessment.
-- **versionString**  Version of the WaaSMedic engine.
+- **usingBackupFeatureAssessment**  The WaaSMedic engine contacts Windows as a Service (WaaS) Assessment to determine whether the device is up-to-date. If WaaS Assessment isn't available, the engine falls back to backup feature assessments, which are determined programmatically on the client
+- **usingBackupQualityAssessment**  The WaaSMedic engine contacts Windows as a Service (WaaS) Assessment to determine whether the device is up-to-date. If WaaS Assessment isn't available, the engine falls back to backup quality assessments, which are determined programmatically on the client
+- **versionString**  Installed version of the WaaSMedic engine
 
 
 ## Windows Error Reporting events
@@ -4799,8 +5356,19 @@ The following fields are available:
 
 ### Microsoft.Windows.Store.Partner.ReportApplication
 
-Report application event for Windows Store client.
+Report application event for Microsoft Store client.
 
+
+
+### Microsoft.Windows.Store.StoreActivating
+
+This event sends tracking data about when the Store app activation via protocol URI is in progress, to help keep Windows up to date.
+
+The following fields are available:
+
+- **correlationVectorRoot**  Identifies multiple events within a session/sequence. Initial value before incrementation or extension.
+- **protocolUri**  Protocol URI used to activate the store.
+- **reason**  The reason for activating the store.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.AbortedInstallation
@@ -5047,7 +5615,7 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndUpdateMetadataPrepare
 
-This event happens after a scan for available app updates. It's used to help keep Windows up-to-date and secure.
+This event is sent after a scan for available app updates to help keep Windows up-to-date and secure.
 
 The following fields are available:
 
@@ -5061,9 +5629,9 @@ FulfillmentComplete event is fired at the end of an app install or update. We us
 The following fields are available:
 
 - **FailedRetry**  Tells us if the retry for an install or update was successful or not.
-- **HResult**  The HResult code of the operation.
-- **PFN**  The Package Family Name of the app that is being installed or updated.
-- **ProductId**  The product ID of the app that is being updated or installed.
+- **HResult**  Resulting HResult error/success code of this call
+- **PFN**  Package Family Name of the app that being installed or updated
+- **ProductId**  Product Id of the app that is being updated or installed
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentInitiate
@@ -5178,6 +5746,144 @@ The following fields are available:
 
 ## Windows Update Delivery Optimization events
 
+### Microsoft.OSG.DU.DeliveryOptClient.DownloadCanceled
+
+This event describes when a download was canceled with Delivery Optimization. It's used to understand and address problems regarding downloads.
+
+The following fields are available:
+
+- **background**  Is the download being done in the background?
+- **bytesFromCacheServer**  Bytes received from a cache host.
+- **bytesFromCDN**  The number of bytes received from a CDN source.
+- **bytesFromGroupPeers**  The number of bytes received from a peer in the same group.
+- **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same group.
+- **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
+- **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
+- **callerName**  Name of the API caller.
+- **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
+- **cdnErrorCounts**  The number of times each error in cdnErrorCodes was encountered.
+- **clientTelId**  A random number used for device sampling.
+- **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
+- **doErrorCode**  The Delivery Optimization error code that was returned.
+- **errorCode**  The error code that was returned.
+- **experimentId**  When running a test, this is used to correlate events that are part of the same test.
+- **fileID**  The ID of the file being downloaded.
+- **gCurMemoryStreamBytes**  Current usage for memory streaming.
+- **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
+- **isVpn**  Indicates whether the device is connected to a VPN (Virtual Private Network).
+- **jobID**  Identifier for the Windows Update job.
+- **reasonCode**  Reason the action or event occurred.
+- **scenarioID**  The ID of the scenario.
+- **sessionID**  The ID of the file download session.
+- **updateID**  The ID of the update being downloaded.
+- **usedMemoryStream**  TRUE if the download is using memory streaming for App downloads.
+
+
+### Microsoft.OSG.DU.DeliveryOptClient.DownloadCompleted
+
+This event describes when a download has completed with Delivery Optimization. It's used to understand and address problems regarding downloads.
+
+The following fields are available:
+
+- **background**  Is the download a background download?
+- **bytesFromCacheServer**  Bytes received from a cache host.
+- **bytesFromCDN**  The number of bytes received from a CDN source.
+- **bytesFromGroupPeers**  The number of bytes received from a peer in the same domain group.
+- **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same domain group.
+- **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
+- **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
+- **bytesRequested**  The total number of bytes requested for download.
+- **cacheServerConnectionCount**  Number of connections made to cache hosts.
+- **callerName**  Name of the API caller.
+- **cdnConnectionCount**  The total number of connections made to the CDN.
+- **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
+- **cdnErrorCounts**  The number of times each error in cdnErrorCodes was encountered.
+- **cdnIp**  The IP address of the source CDN.
+- **clientTelId**  A random number used for device sampling.
+- **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
+- **doErrorCode**  The Delivery Optimization error code that was returned.
+- **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
+- **downlinkUsageBps**  The download speed (in bytes per second).
+- **downloadMode**  The download mode used for this file download session.
+- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
+- **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
+- **fileID**  The ID of the file being downloaded.
+- **fileSize**  The size of the file being downloaded.
+- **gCurMemoryStreamBytes**  Current usage for memory streaming.
+- **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
+- **groupConnectionCount**  The total number of connections made to peers in the same group.
+- **internetConnectionCount**  The total number of connections made to peers not in the same LAN or the same group.
+- **isVpn**  Is the device connected to a Virtual Private Network?
+- **jobID**  Identifier for the Windows Update job.
+- **lanConnectionCount**  The total number of connections made to peers in the same LAN.
+- **numPeers**  The total number of peers used for this download.
+- **restrictedUpload**  Is the upload restricted?
+- **scenarioID**  The ID of the scenario.
+- **sessionID**  The ID of the download session.
+- **totalTimeMs**  Duration of the download (in seconds).
+- **updateID**  The ID of the update being downloaded.
+- **uplinkBps**  The maximum measured available upload bandwidth (in bytes per second).
+- **uplinkUsageBps**  The upload speed (in bytes per second).
+- **usedMemoryStream**  TRUE if the download is using memory streaming for App downloads.
+
+
+### Microsoft.OSG.DU.DeliveryOptClient.DownloadPaused
+
+This event represents a temporary suspension of a download with Delivery Optimization. It's used to understand and address problems regarding downloads.
+
+The following fields are available:
+
+- **background**  Is the download a background download?
+- **callerName**  The name of the API caller.
+- **clientTelId**  A random number used for device sampling.
+- **errorCode**  The error code that was returned.
+- **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
+- **fileID**  The ID of the file being paused.
+- **isVpn**  Is the device connected to a Virtual Private Network?
+- **jobID**  Identifier for the Windows Update job.
+- **reasonCode**  The reason for pausing the download.
+- **scenarioID**  The ID of the scenario.
+- **sessionID**  The ID of the download session.
+- **updateID**  The ID of the update being paused.
+
+
+### Microsoft.OSG.DU.DeliveryOptClient.DownloadStarted
+
+This event sends data describing the start of a new download to enable Delivery Optimization. It's used to understand and address problems regarding downloads.
+
+The following fields are available:
+
+- **background**  Indicates whether the download is happening in the background.
+- **bytesRequested**  Number of bytes requested for the download.
+- **callerName**  Name of the API caller.
+- **cdnUrl**  The URL of the source CDN.
+- **clientTelId**  Random number used for device selection
+- **costFlags**  A set of flags representing network cost.
+- **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
+- **diceRoll**  Random number used for determining if a client will use peering.
+- **doClientVersion**  The version of the Delivery Optimization client.
+- **doErrorCode**  The Delivery Optimization error code that was returned.
+- **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
+- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
+- **errorCode**  The error code that was returned.
+- **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
+- **fileID**  The ID of the file being downloaded.
+- **filePath**  The path to where the downloaded file will be written.
+- **fileSize**  Total file size of the file that was downloaded.
+- **fileSizeCaller**  Value for total file size provided by our caller.
+- **groupID**  ID for the group.
+- **isVpn**  Indicates whether the device is connected to a Virtual Private Network.
+- **jobID**  The ID of the Windows Update job.
+- **minDiskSizeGB**  The minimum disk size (in GB) policy set for the device to allow peering with delivery optimization.
+- **minDiskSizePolicyEnforced**  Indicates whether there is an enforced minimum disk size requirement for peering.
+- **minFileSizePolicy**  The minimum content file size policy to allow the download using peering with delivery optimization.
+- **peerID**  The ID for this delivery optimization client.
+- **scenarioID**  The ID of the scenario.
+- **sessionID**  The ID for the file download session.
+- **updateID**  The ID of the update being downloaded.
+- **usedMemoryStream**  Indicates whether the download used memory streaming.
+
+
 ### Microsoft.OSG.DU.DeliveryOptClient.FailureCdnCommunication
 
 This event represents a failure to download from a CDN with Delivery Optimization. It's used to understand and address problems regarding downloads.
@@ -5199,6 +5905,20 @@ The following fields are available:
 - **requestSize**  The size of the range requested from the CDN.
 - **responseSize**  The size of the range response received from the CDN.
 - **sessionID**  The ID of the download session.
+
+
+### Microsoft.OSG.DU.DeliveryOptClient.JobError
+
+This event represents a Windows Update job error. It allows for investigation of top errors.
+
+The following fields are available:
+
+- **clientTelId**  A random number used for device sampling.
+- **doErrorCode**  Error code returned for delivery optimization.
+- **errorCode**  The error code returned.
+- **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
+- **fileID**  The ID of the file being downloaded.
+- **jobID**  The Windows Update job ID.
 
 
 ## Windows Update events
@@ -5271,11 +5991,11 @@ This event collects information regarding the install phase of the new device ma
 The following fields are available:
 
 - **errorCode**  The error code returned for the current install phase.
-- **flightId**  Unique ID for each flight.
+- **flightId**  The unique identifier for each flight (pre-release builds).
 - **objectId**  Unique value for each diagnostics session.
-- **relatedCV**  Correlation vector value generated from the latest USO scan.
+- **relatedCV**  Correlation vector value generated from the latest scan.
 - **result**  Outcome of the install phase of the update.
-- **scenarioId**  Indicates the update scenario.
+- **scenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
 - **sessionId**  Unique value for each update session.
 - **updateId**  Unique ID for each Update.
 
@@ -5286,18 +6006,30 @@ This event sends data for the start of each mode during the process of updating 
 
 The following fields are available:
 
-- **flightId**  Unique ID for each flight.
-- **mode**  The mode that is starting.
+- **flightId**  The unique identifier for each flight (pre-release builds).
+- **mode**  Indicates the active Update Agent mode.
 - **objectId**  Unique value for each diagnostics session.
-- **relatedCV**  Correlation vector value generated from the latest USO scan.
-- **scenarioId**  Indicates the update scenario.
-- **sessionId**  Unique value for each update session.
-- **updateId**  Unique ID for each Update.
+- **relatedCV**  Correlation vector value generated from the latest scan.
+- **scenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
+- **sessionId**  The unique identifier for each update session.
+- **updateId**  The unique identifier for each Update.
 
 
 ### Microsoft.Windows.Update.NotificationUx.DialogNotificationToBeDisplayed
 
 This event indicates that a notification dialog box is about to be displayed to user.
+
+
+
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootAcceptAutoDialog
+
+This event indicates that the Enhanced Engaged restart "accept automatically" dialog box was displayed.
+
+
+
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootFirstReminderDialog
+
+This event indicates that the Enhanced Engaged restart "first reminder" dialog box was displayed.
 
 
 
@@ -5310,6 +6042,18 @@ This event indicates that the Enhanced Engaged restart "restart failed" dialog b
 ### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootRebootImminentDialog
 
 This event indicates that the Enhanced Engaged restart "restart imminent" dialog box was displayed.
+
+
+
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootSecondReminderDialog
+
+This event indicates that the second reminder dialog box was displayed for Enhanced Engaged restart.
+
+
+
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootThirdReminderDialog
+
+This event indicates that the third reminder dialog box for Enhanced Engaged restart was displayed.
 
 
 
@@ -5334,6 +6078,12 @@ The following fields are available:
 ### Microsoft.Windows.Update.Orchestrator.ActivityRestrictedByActiveHoursPolicy
 
 This event indicates a policy is present that may restrict update activity to outside of active hours.
+
+
+
+### Microsoft.Windows.Update.Orchestrator.AttemptImmediateReboot
+
+This event sends data when the Windows Update Orchestrator is set to reboot immediately after installing the update.
 
 
 
@@ -5371,17 +6121,17 @@ This event indicates that a scan for a Windows Update occurred.
 
 The following fields are available:
 
-- **deferReason**  Reason why the device could not check for updates.
-- **detectionBlockreason**  Reason for blocking detection
+- **deferReason**  The reason why the device could not check for updates.
+- **detectionBlockreason**  The reason detection did not complete.
 - **detectionRetryMode**  Indicates whether we will try to scan again.
-- **errorCode**  Error value
-- **eventScenario**  End to end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
-- **flightID**  The specific ID of the Windows Insider build the device is getting.
-- **interactive**  Indicates whether the session was user initiated.
-- **revisionNumber**  Update revision number.
-- **updateId**  Update ID.
-- **updateScenarioType**  The update session type.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **errorCode**  The error code returned for the current process.
+- **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
+- **flightID**  The unique identifier for the flight (Windows Insider pre-release build) should be delivered to the device, if applicable.
+- **interactive**  Indicates whether the user initiated the session.
+- **revisionNumber**  The Update revision number.
+- **updateId**  The unique identifier of the Update.
+- **updateScenarioType**  Identifies the type of update session being performed.
+- **wuDeviceid**  The unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
@@ -5471,7 +6221,7 @@ The following fields are available:
 - **deferReason**  Reason for install not completing.
 - **errorCode**  The error code reppresented by a hexadecimal value.
 - **eventScenario**  End-to-end update session ID.
-- **flightID**  The specific ID of the Windows Insider build the device is getting.
+- **flightID**  The ID of the Windows Insider build the device is getting.
 - **flightUpdate**  Indicates whether the update is a Windows Insider build.
 - **ForcedRebootReminderSet**  A boolean value that indicates if a forced reboot will happen for updates.
 - **installCommitfailedtime**  The time it took for a reboot to happen but the upgrade failed to progress.
@@ -5509,6 +6259,29 @@ The following fields are available:
 - **interactiveOneshotupdate**  The last time an interactive scan was completed.
 - **oldlastscanOneshotupdate**  The last time a scan completed successfully.
 - **wuDeviceid**  The Windows Update Device GUID (Globally-Unique ID).
+
+
+### Microsoft.Windows.Update.Orchestrator.PostInstall
+
+This event is sent after a Windows update install completes.
+
+The following fields are available:
+
+- **batteryLevel**  Current battery capacity in megawatt-hours (mWh) or percentage left.
+- **bundleId**  The unique identifier associated with the specific content bundle.
+- **bundleRevisionnumber**  Identifies the revision number of the content bundle.
+- **errorCode**  The error code returned for the current phase.
+- **eventScenario**  State of update action.
+- **flightID**  The unique identifier for the flight (Windows Insider pre-release build) should be delivered to the device, if applicable.
+- **sessionType**  The Windows Update session type (Interactive or Background).
+- **updateScenarioType**  Identifies the type of Update session being performed.
+- **wuDeviceid**  The unique device identifier used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.PowerMenuOptionsChanged
+
+This event is sent when the options in power menu changed, usually due to an update pending reboot, or after a update is installed.
+
 
 
 ### Microsoft.Windows.Update.Orchestrator.PreShutdownStart
@@ -5587,6 +6360,21 @@ The following fields are available:
 - **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
 - **policyCacherefreshtime**  Time when policy cache was refreshed.
 - **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
+- **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdateRebootRequired
+
+This event sends data about whether an update required a reboot to help keep Windows up to date.
+
+The following fields are available:
+
+- **flightID**  The specific ID of the Windows Insider build the device is getting.
+- **interactive**  Indicates whether the reboot initiation stage of the update process was entered as a result of user action.
+- **revisionNumber**  Update revision number.
+- **updateId**  Update ID.
+- **updateScenarioType**  The update session type.
+- **uxRebootstate**  Indicates the exact state of the user experience at the time the required reboot was initiated to ensure the correct update process and experience is provided to keep Windows up to date.
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
 
@@ -5710,11 +6498,11 @@ The following fields are available:
 - **rebootOutsideOfActiveHours**  True, if a reboot is scheduled outside of active hours. False, otherwise.
 - **rebootScheduledByUser**  True, if a reboot is scheduled by user. False, if a reboot is scheduled automatically.
 - **rebootState**  Current state of the reboot.
-- **revisionNumber**  Revision number of the update that is getting installed with this reboot.
+- **revisionNumber**  Revision number of the OS.
 - **scheduledRebootTime**  Time scheduled for the reboot.
 - **scheduledRebootTimeInUTC**  Time scheduled for the reboot, in UTC.
 - **updateId**  Identifies which update is being scheduled.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **wuDeviceid**  The unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.UxBrokerFirstReadyToReboot
@@ -5760,22 +6548,47 @@ This event sends data specific to the CleanupSafeOsImages mitigation used for OS
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FlightId**  Unique identifier for each flight.
-- **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
+- **ClientId**  The client ID used by Windows Update.
+- **FlightId**  The ID of each Windows Insider build the device received.
+- **InstanceId**  A unique device ID that identifies each update instance.
 - **MitigationScenario**  The update scenario in which the mitigation was executed.
-- **MountedImageCount**  Number of mounted images.
-- **MountedImageMatches**  Number of mounted images that were under %systemdrive%\$Windows.~BT.
-- **MountedImagesFailed**  Number of mounted images under %systemdrive%\$Windows.~BT that could not be removed.
-- **MountedImagesRemoved**  Number of mounted images under %systemdrive%\$Windows.~BT that were successfully removed.
-- **MountedImagesSkipped**  Number of mounted images that were not under %systemdrive%\$Windows.~BT.
-- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **MountedImageCount**  The number of mounted images.
+- **MountedImageMatches**  The number of mounted image matches.
+- **MountedImagesFailed**  The number of mounted images that could not be removed.
+- **MountedImagesRemoved**  The number of mounted images that were successfully removed.
+- **MountedImagesSkipped**  The number of mounted images that were not found.
+- **RelatedCV**  The correlation vector value generated from the latest USO scan.
 - **Result**  HResult of this operation.
 - **ScenarioId**  ID indicating the mitigation scenario.
 - **ScenarioSupported**  Indicates whether the scenario was supported.
 - **SessionId**  Unique value for each update attempt.
-- **UpdateId**  Unique ID for each Update.
+- **UpdateId**  Unique ID for each Windows Update.
 - **WuId**  Unique ID for the Windows Update client.
+
+
+## Windows Update Reserve Manager events
+
+### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
+
+This event is sent when the Update Reserve Manager commits a hard reserve adjustment that was pending.
+
+
+### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
+
+This event returns data about the Update Reserve Manager, including whether it’s been initialized.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
+
+This event is sent when the Update Reserve Manager removes a pending hard reserve adjustment.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
+
+This event is sent when the Update Reserve Manager needs to adjust the size of the hard reserve after the option content is installed.
+
 
 
 ## Winlogon events
@@ -5783,6 +6596,20 @@ The following fields are available:
 ### Microsoft.Windows.Security.Winlogon.SetupCompleteLogon
 
 This event signals the completion of the setup process. It happens only once during the first logon.
+
+
+
+## XBOX events
+
+### Microsoft.Xbox.XamTelemetry.AppActivationError
+
+This event indicates whether the system detected an activation error in the app.
+
+
+
+### Microsoft.Xbox.XamTelemetry.AppActivity
+
+This event is triggered whenever the current app state is changed by: launch, switch, terminate, snap, etc.
 
 
 

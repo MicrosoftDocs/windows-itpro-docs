@@ -1,8 +1,11 @@
 ---
 title: Accessibility for UE-V 2.x
 description: Accessibility for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: ec05da5f-4558-4d4d-9b58-3b8ed68cf2fe
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -58,13 +61,13 @@ For information about the availability of Microsoft product documentation and bo
 <td align="left"><p>(609) 987-8116</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[http://www.learningally.org/](https://go.microsoft.com/fwlink/p/?linkid=239)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=239" data-raw-source="[http://www.learningally.org/](https://go.microsoft.com/fwlink/p/?linkid=239)">http://www.learningally.org/</a></p></td>
 <td align="left"><p>Web addresses can change, so you might be unable to connect to the website or sites that are mentioned here.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Customer service for people with hearing impairments
 
@@ -81,19 +84,19 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 
 For more information about how accessible technology for computers can help to improve the lives of people with disabilities, see the [Microsoft Accessibility website](https://go.microsoft.com/fwlink/p/?linkid=8431).
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
 
 [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

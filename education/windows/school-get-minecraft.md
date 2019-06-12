@@ -2,16 +2,17 @@
 title: For IT administrators get Minecraft Education Edition
 description: Learn how IT admins can get and distribute Minecraft in their schools.
 keywords: Minecraft, Education Edition, IT admins, acquire
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: levinec
 searchScope:
   - Store
-ms.author: trudyha
-ms.date: 1/5/2018
-ms.technology: Windows
+ms.author: ellevin
+ms.date: 01/30/2019
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 
@@ -21,10 +22,23 @@ ms.topic: conceptual
 
 -   Windows 10  
 
-When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
+
+## Settings for Office 365 A3 or Office 365 A5 customers
+
+Schools that purchased these products have an extra option for making Minecraft: Education Edition available to their students:
+- Office 365 A3 or Office 365 A5
+- Enterprise Mobility + Security E3 or Enterprise Mobility + Security E5
+- Minecraft: Education Edition
+
+If your school has these products in your tenant, admins can choose to enable Minecraft: Education Edition for students using Office 365 A3 or Office 365 A5. On your Office 365 A3 or Office 365 A5 details page in **Microsoft Store for Education**, under **Settings & actions**, you can select **Allow access to Minecraft: Education Edition for users of Office 365 A3 or Office 365 A5**. 
+
+When this setting is selected, students in your tenant can use Minecraft: Education Edition even if they do not have a trial or a direct license assigned to them. 
+
+If you turn off this setting after students have been using Minecraft: Education Edition, they will have 25 more days to use Minecraft: Education Edition before they do not have access. 
 
 ## Add Minecraft to your Microsoft Store for Education 
 
@@ -34,7 +48,7 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
 ### <a href="" id="individual-copies"></a>Minecraft: Education Edition - direct purchase
 
-1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **GET STARTED**.
+1. Go to [https://education.minecraft.net/](https://education.minecraft.net/) and select **GET STARTED**.
 
     <!-- ![Click Get the app](images/it-get-app.png) --> 
 
@@ -103,7 +117,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 
 4. On **Invoice Bills**, click the invoice number to view and download your invoice. It downloads as a .pdf.
 
-  ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
+   ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
 
 The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
 
@@ -142,7 +156,7 @@ For Minecraft: Education Edition, you can use auto assign subscription to contro
      
     ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-legacy.png)
  
- -Or-
+   -Or-
  
     ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-bd.png)
     

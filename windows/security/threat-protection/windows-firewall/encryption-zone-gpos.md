@@ -2,12 +2,18 @@
 title: Encryption Zone GPOs (Windows 10)
 description: Encryption Zone GPOs
 ms.assetid: eeb973dd-83a5-4381-9af9-65c43c98c29b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

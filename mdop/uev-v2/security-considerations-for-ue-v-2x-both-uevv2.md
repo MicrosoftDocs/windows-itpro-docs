@@ -1,8 +1,11 @@
 ---
 title: Security Considerations for UE-V 2.x
 description: Security Considerations for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 9d5c3cae-9fcb-4dea-bd67-741b3dea63be
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +25,7 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 **Important**  
 When you create the settings storage share, limit the share access to users who require access.
 
- 
+ 
 
 Because settings packages might contain personal information, you should take care to protect them as well as possible. In general, do the following:
 
@@ -43,7 +46,7 @@ Because settings packages might contain personal information, you should take ca
 
         | User account | Recommended permissions | Folder |
         | - | - | - |
-        | Creator/Owner | No permissions | No permissions |
+        | Creator/Owner | Full control | Subfolders and files only|
         | Domain Admins | Full control | This folder, subfolders, and files |
         | Security group of UE-V users | List folder/read data, create folders/append data | This folder only |
         | Everyone | Remove all permissions | No permissions |
@@ -55,7 +58,7 @@ Because settings packages might contain personal information, you should take ca
         | Everyone | No permissions |
         | Domain computers | Read permission Levels |
         | Administrators | Read/write permission levels |
-         
+         
     4.  Set the following NTFS permissions for the settings template catalog folder.
 
         | User account | Recommended permissions | Apply to |
@@ -110,7 +113,7 @@ Additional security can be configured when a Windows Server is used for the sett
 
 When this configuration setting is in place, the UE-V Agent verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V Agent does not grant access to the folder.
 
- 
+ 
 
 If you must create folders for the users, ensure that you have the correct permissions set.
 
@@ -120,19 +123,19 @@ We strongly recommend that you do not pre-create folders. Instead, let the UE-V 
 
 If you redirect UE-V settings to a user’s home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
 
 [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

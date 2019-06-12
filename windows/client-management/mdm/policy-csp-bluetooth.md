@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Bluetooth
 description: Policy CSP - Bluetooth
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/30/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Bluetooth
@@ -339,28 +341,51 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+  <!--EndHoloLensBusiness-->
+  <hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+
 ## ServicesAllowedList usage guide
 
-When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow pairing and connections of Windows PCs and phones to explicitly define Bluetooth profiles and services. It is an allowed list, enabling admins to still allow custom Bluetooth profiles that are not defined by the Bluetooth Special Interests Group (SIG).
+When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow pairing and connections of Windows PCs and phones to explicitly defined Bluetooth profiles and services. It is an allowed list, enabling admins to still allow custom Bluetooth profiles that are not defined by the Bluetooth Special Interests Group (SIG).
 
-To define which profiles and services are allowed, enter the profile or service Universally Unique Identifiers (UUID) using semicolon delimiter. To get a profile UUID, refer to the [Service Discovery](https://www.bluetooth.com/specifications/assigned-numbers/service-discovery) page on the Bluetooth SIG website. 
+- Disabling a service shall block incoming and outgoing connections for such services
+- Disabling a service shall not publish an SDP record containing the service being blocked
+- Disabling a service shall not allow SDP to expose a record for a blocked service
+- Disabling a service shall log when a service is blocked for auditing purposes
+- Disabling a service shall take effect upon reload of the stack or system reboot
+
+To define which profiles and services are allowed, enter the semicolon delimited profile or service Universally Unique Identifiers (UUID). To get a profile UUID, refer to the [Service Discovery](https://www.bluetooth.com/specifications/assigned-numbers/service-discovery) page on the Bluetooth SIG website. 
 
 These UUIDs all use the same base UUID with the profile identifiers added to the beginning of the base UUID.
 
 Here are some examples:
 
-**Bluetooth Headsets for Voice (HFP)**
+**Example of how to enable Hands Free Profile (HFP)**
 
 BASE_UUID = 0x00000000-0000-1000-8000-00805F9B34FB
 
@@ -370,8 +395,22 @@ BASE_UUID = 0x00000000-0000-1000-8000-00805F9B34FB
 
 Footnote: * Used as both Service Class Identifier and Profile Identifier.
 
-Hands Free Profile UUID = base UUID + 0x111E to the beginning = 0000111E-0000-1000-8000-00805F9B34FB
+Hands Free Profile UUID = base UUID + 0x111E to the beginning = 0000**111E**-0000-1000-8000-00805F9B34FB
 
+**Allow Audio Headsets (Voice)**
+
+|Profile|Reasoning|UUID|
+|-|-|-|
+|HFP (Hands Free Profile)|For voice-enabled headsets|0x111E|
+|Generic Audio Service|Generic audio service|0x1203|
+|Headset Service Class|For older voice-enabled headsets|0x1108|
+|PnP Information|Used to identify devices occasionally|0x1200|
+
+This means that if you only want Bluetooth headsets, the UUIDs to include are:
+
+{0000111E-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}
+
+<!--
 **Allow Audio Headsets only (Voice)**
 
 |Profile  |Reasoning  |UUID  |
@@ -386,38 +425,38 @@ Footnote: * *GAP, DID, and Scan Parameter are required, as these are underlying 
 This means that if you only want Bluetooth headsets, the UUIDs are:
 
 {0000111E-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
+-->
 
 **Allow Audio Headsets and Speakers (Voice & Music)**
 
 |Profile  |Reasoning  |UUID  |
 |---------|---------|---------|
 |HFP (Hands Free Profile)     |For voice enabled headsets         |0x111E         |
-|A2DP Source (Advance Audio Distribution)|For streaming to Bluetooth speakers         |0x110A         |
-|GAP (Generic Access Profile)     |Generic service used by Bluetooth         |0x1800         |
-|Device ID (DID)     |Generic service used by Bluetooth         |0x180A         |
-|Scan Parameters     |Generic service used by Bluetooth         |0x1813         |
+|A2DP Source (Advance Audio Distribution)|For streaming to Bluetooth speakers         |0x110B|         
+|Generic Audio Service|Generic service used by Bluetooth|0x1203|
+|Headset Service Class|For older voice-enabled headsets|0x1108|
+|AV Remote Control Target Service|For controlling audio remotely|0x110C|
+|AV Remote Control Service|For controlling audio remotely|0x110E|
+|AV Remote Control Controller Service|For controlling audio remotely|0x110F|
+|PnP Information|Used to identify devices occasionally|0x1200|
 
-{0000111E-0000-1000-8000-00805F9B34FB};{0000110A-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
+{0000111E-0000-1000-8000-00805F9B34FB};{0000110B-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{0000110C-0000-1000-8000-00805F9B34FB};{0000110E-0000-1000-8000-00805F9B34FB};{0000110F-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}; 
 
 **Classic Keyboards and Mice**
 
 |Profile  |Reasoning  |UUID  |
 |---------|---------|---------|
 |HID (Human Interface Device)     |For classic BR/EDR keyboards and mice         |0x1124         |
-|GAP (Generic Access Profile)     |Generic service used by Bluetooth         |0x1800         |
-|DID (Device ID)     |Generic service used by Bluetooth         |0x180A         |
-|Scan Parameters     |Generic service used by Bluetooth         |0x1813         |
+|PnP Information|Used to identify devices occasionally|0x1200|
 
-{00001801-0000-1000-8000-00805F9B34FB};{00001812-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
+{00001124-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB};
 
-> [!Note]  
-> For both Classic and LE use a super set of the two formula’s UUIDs
 
 **LE Keyboards and Mice**  
 
 |Profile  |Reasoning  |UUID  |
 |---------|---------|---------|
-|Generic Access Atribute     |For the LE Protocol         |0x1801         |
+|Generic Access Attribute     |For the LE Protocol         |0x1801         |
 |HID Over GATT *     |For LE keyboards and mice         |0x1812         |
 |GAP (Generic Access Profile)     |Generic service used by Bluetooth         |0x1800         |
 |DID (Device ID)     |Generic service used by Bluetooth         |0x180A         |
@@ -433,10 +472,12 @@ Footnote: * The Surface pen uses the HID over GATT profile
 |---------|---------|---------|
 |OBEX Object Push (OPP)     |For file transfer         |0x1105         |
 |Object Exchange (OBEX)     |Protocol for file transfer         |0x0008         |
-|Generic Access Profile (GAP)     |Generic service used by Bluetooth         |0x1800         |
-|Device ID (DID)     |Generic service used by Bluetooth         |0x180A         |
-|Scan Parameters     |Generic service used by Bluetooth         |0x1813         |
+|PnP Information|Used to identify devices occasionally|0x1200|
 
-{00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{0000111E-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
+{00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}
 
-
+Disabling file transfer shall have the following effects
+- Fsquirt shall not allow sending of files
+- Fsquirt shall not allow receiving of files
+- Fsquirt shall display error message informing user of policy preventing file transfer
+- 3rd-party apps shall not be permitted to send or receive files using MSFT Bluetooth API

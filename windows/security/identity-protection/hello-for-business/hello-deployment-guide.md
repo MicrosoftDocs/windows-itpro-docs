@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/29/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Deployment Guide
 

@@ -1,12 +1,16 @@
 ---
 title: Use UE-V with custom applications
 description: Use UE-V with custom applications
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 # Use UE-V with custom applications 
@@ -119,7 +123,7 @@ UE-V for Windows 10, version 1607 includes a new template generator. If you are 
 
 ![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
 
-3.  To open the generator, select **Microsoft Application Virtualization Generator** from the **Start** menu. 
+3. To open the generator, select **Microsoft Application Virtualization Generator** from the **Start** menu. 
 
 4. See [Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md) for information about how to use the template generator.
 
@@ -240,9 +244,9 @@ Templates that are deployed by using an ESD system or Group Policy objects must 
     >**Note**
     This program runs automatically during computer startup and daily at 3:30 A. M. to gather any new templates that were recently added to the catalog.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

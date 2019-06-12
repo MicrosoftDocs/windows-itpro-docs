@@ -2,12 +2,18 @@
 title: Microsoft network server Server SPN target name validation level (Windows 10)
 description: Describes the best practices, location, and values, policy management and security considerations for the Microsoft network server Server SPN target name validation level security policy setting.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -47,7 +53,7 @@ The default setting is Off.
 This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities.
 
 >**Note:**  All Windows operating systems support a client-side SMB component and a server-side SMB component.
- 
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -64,7 +70,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings| Validation level check not implemented| 
 | Member server effective default settings | Validation level check not implemented| 
 | Effective GPO default settings on client computers | Validation level check not implemented| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

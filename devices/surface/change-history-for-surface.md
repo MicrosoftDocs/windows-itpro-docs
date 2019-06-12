@@ -1,18 +1,42 @@
 ---
 title: Change history for Surface documentation (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics in the Surface documentation library.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 11/15/2018
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## March 2019
+
+New or changed topic | Description
+--- | ---
+[Surface System SKU reference](surface-system-sku-reference.md) | New
+
+
+## February 2019
+
+New or changed topic | Description
+--- | ---
+[Surface Asset Tag](assettag.md) | New
+
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Surface Brightness Control](microsoft-surface-brightness-control.md) | New
+[Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
+
 
 ## November 2018
 

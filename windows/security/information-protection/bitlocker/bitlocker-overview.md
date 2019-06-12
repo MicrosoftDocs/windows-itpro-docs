@@ -2,13 +2,19 @@
 title: BitLocker (Windows 10)
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 10/16/2017
+author: dulcemontemayor
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 01/26/2018
 ---
 
 # BitLocker
@@ -42,7 +48,7 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511."
+To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
  
 ## System requirements
 
@@ -71,7 +77,7 @@ When installing the BitLocker optional component on a server you will also need 
 | [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md) | This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
 | [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This topic for the IT professional explains how can you plan your BitLocker deployment. |
 | [BitLocker basic deployment](bitlocker-basic-deployment.md) | This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption. |
-| [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md)| This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later.| 
+| [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)| This topic for the IT professional explains how to deploy BitLocker on Windows Server.| 
 | [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | This topic for the IT professional describes how BitLocker Network Unlock works and how to configure it. |
 | [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)| This topic for the IT professional describes how to use tools to manage BitLocker.| 
 | [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md) | This topic for the IT professional describes how to use the BitLocker Recovery Password Viewer. |

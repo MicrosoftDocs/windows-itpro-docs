@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-ms.localizationpriority: medium
-author: mikestephens-MS
-ms.author: mstephen
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -187,11 +192,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Mark the certificate template as Windows Hello for Business sign-in template
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
-[Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
+> [< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+> [Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
 <br><br>
 
@@ -199,7 +204,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. Configure Windows Hello for Business settings: PKI (*You are here*)

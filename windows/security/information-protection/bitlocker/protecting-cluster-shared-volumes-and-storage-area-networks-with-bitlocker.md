@@ -2,12 +2,19 @@
 title: Protecting cluster shared volumes and storage area networks with BitLocker (Windows 10)
 description: This topic for IT pros describes how to protect CSVs and SANs with BitLocker.
 ms.assetid: ecd25a10-42c7-4d31-8a7e-ea52c8ebc092
+ms.reviewer: 
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 06/19/2017
+ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker
@@ -26,14 +33,14 @@ BitLocker can protect both physical disk resources and cluster shared volumes ve
 BitLocker on volumes within a cluster are managed based on how the cluster service "views" the volume to be protected. The volume can be a physical disk resource such as a logical unit number (LUN) on a storage area network (SAN) or network attached storage (NAS).
 
 >**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx).
- 
+ 
 Alternatively, the volume can be a cluster-shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume will need to turn on 
 BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations will complete.
 
 Windows PowerShell or the manage-bde command line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
 
 >**Note:**  Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
- 
+ 
 For thinly provisioned storage, such as a Dynamic Virtual Hard Disk (VHD), BitLocker runs in Used Disk Space Only encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes. This is blocked in order to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
 ### Active Directory-based protector
@@ -50,7 +57,7 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
 4.  Registry-based auto-unlock key
 
 >**Note:**  A Windows Server 2012 or later domain controller is required for this feature to work properly.
- 
+ 
 ### Turning on BitLocker before adding disks to a cluster using Windows PowerShell
 
 BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require suspending the resource to complete the operation. To turn on BitLocker for a disk before adding it to a cluster, do the following:
@@ -70,7 +77,7 @@ BitLocker encryption is available for disks before or after addition to a cluste
     ```
 
     >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
-     
+     
 5.  Repeat the preceding steps for each disk in the cluster.
 6.  Add the volume(s) to the cluster.
 
@@ -103,7 +110,7 @@ When the cluster service owns a disk resource already, it needs to be set into m
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
     >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
-     
+     
 6.  Use **Resume-ClusterResource** to take the physical disk resource back out of maintenance mode:
 
     ``` syntax
@@ -184,7 +191,7 @@ The following table contains information about both Physical Disk Resources (i.e
 <tr class="even">
 <td align="left"><p><strong>Manage-bde Pause/Resume</strong></p></td>
 <td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked**</p></td>
+<td align="left"><p>Blocked<strong></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
@@ -253,9 +260,9 @@ The following table contains information about both Physical Disk Resources (i.e
 </tr>
 </tbody>
 </table>
- 
->**Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
- 
+ 
+&gt;</strong>Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
+ 
 In the case where a physical disk resource experiences a failover event during conversion, the new owning node will detect the conversion is not complete and will complete the conversion process.
 
 ### Other considerations when using BitLocker on CSV2.0

@@ -2,16 +2,17 @@
 title: Education scenarios Microsoft Store for Education
 description: Learn how IT admins and teachers can use Microsoft Store for Education to acquire and manage apps in schools.
 keywords: school, Microsoft Store for Education, Microsoft education store
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 searchScope:
   - Store
-author: trudyha
-ms.author: trudyha
-ms.date: 3/30/2018
-ms.technology: Windows
+author: levinec
+ms.author: ellevin
+ms.date: 03/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with Microsoft Store for Education
@@ -173,4 +174,4 @@ You can manage your orders through Microsoft Store for Business. For info on ord
 It can take up to 24 hours after a purchase, before a receipt is available on your **Order history page**. 
 
 > [!NOTE]
-For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 
+> For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 

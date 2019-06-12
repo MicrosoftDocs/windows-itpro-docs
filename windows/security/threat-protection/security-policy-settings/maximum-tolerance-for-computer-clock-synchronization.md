@@ -2,12 +2,18 @@
 title: Maximum tolerance for computer clock synchronization (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum tolerance for computer clock synchronization security policy setting.
 ms.assetid: ba2cf59e-d69d-469e-95e3-8e6a0ba643af
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -50,7 +56,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings| 5 minutes| 
 | Member Server Effective Default Settings | Not applicable| 
 | Client Computer Effective Default Settings | Not applicable| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

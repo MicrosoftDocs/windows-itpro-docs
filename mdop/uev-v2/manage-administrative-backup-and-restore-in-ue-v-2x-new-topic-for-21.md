@@ -1,8 +1,11 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V 2.x
 description: Manage Administrative Backup and Restore in UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -87,10 +90,10 @@ Restoring a user’s device restores the currently registered Template’s setti
 
     If the user’s UE-V settings storage path, domain, and Computer name match the current user then all of the settings for that user are synchronized, with only the latest settings applied. If a user logs on to a new device for the first time and these criteria are met, the settings data is applied to that device.
 
-    **Note**  
+    **Note**  
     Accessibility and Windows Desktop settings require the user to re-logon to Windows to be applied.
 
-     
+
 
 -   **Manual Restore**
 
@@ -126,7 +129,7 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
     </tbody>
     </table>
 
-     
+
 
 **To restore application settings and Windows settings with WMI**
 
@@ -153,17 +156,19 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
     </tbody>
     </table>
 
-     
-
-    **Note**  
-    UE-V does not provide a settings rollback for Windows apps.
-
-     
-
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+~~~
+**Note**  
+UE-V does not provide a settings rollback for Windows apps.
+~~~
+
+
+
+
+
+
+
 
 ## Related topics
 
@@ -172,9 +177,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Administering UE-V 2.x](administering-ue-v-2x-new-uevv2.md)
 
- 
 
- 
+
+
 
 
 

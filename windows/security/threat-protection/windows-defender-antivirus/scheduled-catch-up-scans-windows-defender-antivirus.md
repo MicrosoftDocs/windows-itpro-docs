@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
-ms.date: 09/03/2018
+author: dansimp
+ms.author: dansimp
+ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure scheduled quick or full Windows Defender Antivirus scans
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
 > By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
@@ -41,7 +43,6 @@ To configure the Group Policy settings described in this topic:
 5.  Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
 
 6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
-
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
@@ -66,6 +67,8 @@ A custom scan allows you to specify the files and folders to scan, such as a USB
 
 Scheduled scans will run at the day and time you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
 
+>[!NOTE]
+>If a computer is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Windows Defender Antivirus will run a full scan at the next scheduled time.
 
 **Use Group Policy to schedule scans:**
 
@@ -74,7 +77,7 @@ Location | Setting | Description | Default setting (if not configured)
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
 Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
+Root | Randomize scheduled task times |In Windows Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 
@@ -219,7 +222,7 @@ You can force a scan to occur after every [protection update](manage-protection-
 
 Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
-Signature updates | Turn on scan after signature update | A scan will occur immediately after a new protection update is downloaded | Enabled
+Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled
 
 
 

@@ -1,12 +1,16 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Template Generator
 description: Working with Custom UE-V Templates and the UE-V Template Generator
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -97,7 +101,7 @@ Use the UE-V template generator to edit settings location templates. When the re
     >**Note**  
     A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
 
-     
+     
 2.  Open the settings location template file with an XML editor.
 
 3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](uev-application-template-schema-reference.md). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
@@ -141,10 +145,10 @@ Before you share a settings location template on the UE-V template gallery, ensu
 
 Before you deploy any settings location template that you have downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
 
-## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 
@@ -153,9 +157,9 @@ Add or vote on suggestions on the [User Experience Virtualization feedback site]
 
 [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Planning Certificate-based Authentication (Windows 10)
 description: Planning Certificate-based Authentication
 ms.assetid: a55344e6-d0df-4ad5-a6f5-67ccb6397dec
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

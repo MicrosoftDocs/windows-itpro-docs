@@ -2,6 +2,9 @@
 title: Use Orchestrator runbooks with MDT (Windows 10)
 description: This topic will show you how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: web services, database
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,6 +13,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Use Orchestrator runbooks with MDT
@@ -19,7 +23,7 @@ MDT can integrate with System Center 2012 R2 Orchestrator, which is a component 
 
 **Note**  
 If you are licensed to use Orchestrator, we highly recommend that you start using it. To find out more about licensing options for System Center 2012 R2 and Orchestrator, visit the [System Center 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=619553) website.
- 
+ 
 ## <a href="" id="sec01"></a>Orchestrator terminology
 
 Before diving into the core details, here is a quick course in Orchestrator terminology:
@@ -33,39 +37,39 @@ Before diving into the core details, here is a quick course in Orchestrator term
 
 **Note**  
 To find and download additional integration packs, see [Integration Packs for System Center 2012 - Orchestrator](https://go.microsoft.com/fwlink/p/?LinkId=619554).
- 
+ 
 ## <a href="" id="sec02"></a>Create a sample runbook
 
 This section assumes you have Orchestrator 2012 R2 installed on a server named OR01. In this section, you create a sample runbook, which is used to log some of the MDT deployment information into a text file on OR01.
 
-1.  On OR01, using File Explorer, create the **E:\\Logfile** folder, and grant Users modify permissions (NTFS).
-2.  In the **E:\\Logfile** folder, create the DeployLog.txt file.
-    **Note**  
-    Make sure File Explorer is configured to show known file extensions so the file is not named DeployLog.txt.txt.
-     
-    ![figure 23](../images/mdt-09-fig23.png)
+1. On OR01, using File Explorer, create the **E:\\Logfile** folder, and grant Users modify permissions (NTFS).
+2. In the **E:\\Logfile** folder, create the DeployLog.txt file.
+   **Note**  
+   Make sure File Explorer is configured to show known file extensions so the file is not named DeployLog.txt.txt.
+     
+   ![figure 23](../images/mdt-09-fig23.png)
 
-    Figure 23. The DeployLog.txt file.
+   Figure 23. The DeployLog.txt file.
 
-3.  Using System Center 2012 R2 Orchestrator Runbook Designer, in the **Runbooks** node, create the **1.0 MDT** folder.
+3. Using System Center 2012 R2 Orchestrator Runbook Designer, in the **Runbooks** node, create the **1.0 MDT** folder.
 
-    ![figure 24](../images/mdt-09-fig24.png)
+   ![figure 24](../images/mdt-09-fig24.png)
 
-    Figure 24. Folder created in the Runbooks node.
+   Figure 24. Folder created in the Runbooks node.
 
-4.  In the **Runbooks** node, right-click the **1.0 MDT** folder, and select **New / Runbook**.
-5.  On the ribbon bar, click **Check Out**.
-6.  Right-click the **New Runbook** label, select **Rename**, and assign the name **MDT Sample**.
-7.  Add (using a drag-and-drop operation) the following items from the **Activities** list to the middle pane:
-    1.  Runbook Control / Initialize Data
-    2.  Text File Management / Append Line
-8.  Connect **Initialize Data** to **Append Line**.
+4. In the **Runbooks** node, right-click the **1.0 MDT** folder, and select **New / Runbook**.
+5. On the ribbon bar, click **Check Out**.
+6. Right-click the **New Runbook** label, select **Rename**, and assign the name **MDT Sample**.
+7. Add (using a drag-and-drop operation) the following items from the **Activities** list to the middle pane:
+   1.  Runbook Control / Initialize Data
+   2.  Text File Management / Append Line
+8. Connect **Initialize Data** to **Append Line**.
 
-    ![figure 25](../images/mdt-09-fig25.png)
+   ![figure 25](../images/mdt-09-fig25.png)
 
-    Figure 25. Activities added and connected.
+   Figure 25. Activities added and connected.
 
-9.  Right-click the **Initialize Data** activity, and select **Properties**
+9. Right-click the **Initialize Data** activity, and select **Properties**
 10. On **the Initialize Data Properties** page, click **Add**, change **Parameter 1** to **OSDComputerName**, and then click **Finish**.
 
     ![figure 26](../images/mdt-09-fig26.png)
@@ -96,14 +100,14 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
     Figure 29. The expanded text box after all subscriptions have been added.
 
 19. On the **Append Line Properties** page, click **Finish**.
-## <a href="" id="sec03"></a>Test the demo MDT runbook
-After the runbook is created, you are ready to test it.
-1.  On the ribbon bar, click **Runbook Tester**.
-2.  Click **Run**, and in the **Initialize Data Parameters** dialog box, use the following setting and then click **OK**:
+    ## <a href="" id="sec03"></a>Test the demo MDT runbook
+    After the runbook is created, you are ready to test it.
+20. On the ribbon bar, click **Runbook Tester**.
+21. Click **Run**, and in the **Initialize Data Parameters** dialog box, use the following setting and then click **OK**:
     -   OSDComputerName: PC0010
-3.  Verify that all activities are green (for additional information, see each target).
-4.  Close the **Runbook Tester**.
-5.  On the ribbon bar, click **Check In**.
+22. Verify that all activities are green (for additional information, see each target).
+23. Close the **Runbook Tester**.
+24. On the ribbon bar, click **Check In**.
 
 ![figure 30](../images/mdt-09-fig30.png)
 
@@ -138,7 +142,7 @@ Figure 31. The ready-made task sequence.
 Since this task sequence just starts a runbook, you can test this on the PC0001 client that you used for the MDT simulation environment.
 **Note**  
 Make sure the account you are using has permissions to run runbooks on the Orchestrator server. For more information about runbook permissions, see [Runbook Permissions](https://go.microsoft.com/fwlink/p/?LinkId=619555).
- 
+ 
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Using an elevated command prompt (run as Administrator), type the following command:
 

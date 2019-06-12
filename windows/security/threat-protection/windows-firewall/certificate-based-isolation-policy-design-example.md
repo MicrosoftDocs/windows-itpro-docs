@@ -2,12 +2,18 @@
 title: Certificate-based Isolation Policy Design Example (Windows 10)
 description: Certificate-based Isolation Policy Design Example
 ms.assetid: 509b513e-dd49-4234-99f9-636fd2f749e3
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Password-less Strategy
 
@@ -22,10 +27,10 @@ Over the past few years, Microsoft has continued their commitment to enabling a 
 ### 1. Develop a password replacement offering
 Before you move away from passwords, you need something to replace them.  With Windows 10, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single-sign on to Azure Active Directory and Active Directory.
 
-Deploying Windows Hello for Business is the first step towards password-less. With Windows Hello for Business deployed, it coexists with password nicely.  Users are likely to useWindows Hello for Business because of its convenience, especially when combined with biometrics.  However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
+Deploying Windows Hello for Business is the first step towards password-less. With Windows Hello for Business deployed, it coexists with password nicely.  Users are likely to use Windows Hello for Business because of its convenience, especially when combined with biometrics.  However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
 
 ### 2. Reduce user-visible password surface area
-With Windows Hello for Business and passwords coexisting in your environment, the next step towards password-less is to reduce the password surface.  The environment and workflows need to stop asking for passwords. The goal of this step is to achieve a state where the user knows they have a password, but they never user it.  This state helps decondition users from providing a password any time a password prompt shows on their computer.  This is a how passwords are phished.  Users who rarely, it at all, use their password are unlikely to provide it.  Password prompts are no longer the norm.
+With Windows Hello for Business and passwords coexisting in your environment, the next step towards password-less is to reduce the password surface. The environment and workflows need to stop asking for passwords. The goal of this step is to achieve a state where the user knows they have a password, but they never use it. This state helps decondition users from providing a password any time a password prompt shows on their computer. This is how passwords are phished.  Users who rarely, if at all, use their password are unlikely to provide it. Password prompts are no longer the norm.
 
 ### 3. Transition into a password-less deployment
 Once the user-visible password surface has been eliminated, your organization can begin to transition those users into a password-less world.  A world where:
@@ -113,7 +118,7 @@ You will want to balance testing in a lab with providing results to management q
 
 ## The Process
 
-The journey to password-less is to take each work persona through each password-less step. In the begging, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
+The journey to password-less is to take each work persona through each password-less step. In the beginning, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
 
 1. Password-less replacement offering (Step 1) 
    1. Identify test users that represent the targeted work persona.

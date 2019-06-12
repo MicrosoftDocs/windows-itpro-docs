@@ -5,11 +5,13 @@ keywords: Windows 10 S switch, S mode Switch, switch in S mode, Switch S mode, W
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.prod: w10
-ms.technology: Windows
 ms.sitesec: library
 ms.pagetype: edu
-ms.date: 04/30/2018
-author: Mikeblodge
+ms.date: 12/03/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
+author: mjcaparas
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
@@ -54,7 +56,7 @@ Tenant-wide Windows 10 Pro in S mode > Pro Education in S mode <BR>
 Tenant-wide Windows 10 Pro > Pro Education
 
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare metal recover (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to roll back this kind of switch is through a [bare metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ### Devices running Windows 10, version 1709
 

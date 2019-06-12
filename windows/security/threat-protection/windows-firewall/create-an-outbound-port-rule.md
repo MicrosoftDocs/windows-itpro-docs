@@ -2,12 +2,18 @@
 title: Create an Outbound Port Rule (Windows 10)
 description: Create an Outbound Port Rule
 ms.assetid: 59062b91-756b-42ea-8f2a-832f05d77ddf
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 

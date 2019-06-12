@@ -2,12 +2,18 @@
 title: Network access Allow anonymous SID/Name translation (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network access Allow anonymous SID/Name translation security policy setting.
 ms.assetid: 0144477f-22a6-4d06-b70a-9c9c2196e99e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -58,7 +64,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ### Operating system version differences
 
 The default value of this setting has changed between operating systems as follows:

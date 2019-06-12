@@ -2,12 +2,19 @@
 title: BCD settings and BitLocker (Windows 10)
 description: This topic for IT professionals describes the BCD settings that are used by BitLocker.
 ms.assetid: c4ab7ac9-16dc-4c7e-b061-c0b0deb2c4fa
+ms.reviewer: 
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 08/21/2017
+ms.localizationpriority: medium
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # BCD settings and BitLocker
@@ -99,12 +106,12 @@ The following table contains the default BCD validation profile used by BitLocke
 
 This following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
 > **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
- 
+
 | Hex Value | Prefix | Friendly Name |
 | - | - | - |
-| 0x12000004 | all| description| 
-| 0x12000005| all| locale|
-| 0x12000016| all| targetname| 
+| 0x12000004 | all | description | 
+| 0x12000005 | all | locale | 
+| 0x12000016 | all | targetname | 
 | 0x12000019| all| busparams| 
 | 0x1200001d| all| key| 
 | 0x1200004a| all| fontpath| 
@@ -176,7 +183,7 @@ This following is a full list of BCD settings with friendly names which are igno
 | 0x25000061 | winload| numproc| 
 | 0x25000063 | winload| configflags|
 | 0x25000066| winload| groupsize|
-| 0x25000071 | winload| msi| 
+| 0x25000071 | winload| msi|
 | 0x25000072 | winload| pciexpress| 
 | 0x25000080 | winload| safeboot| 
 | 0x250000a6 | winload| tscsyncpolicy| 

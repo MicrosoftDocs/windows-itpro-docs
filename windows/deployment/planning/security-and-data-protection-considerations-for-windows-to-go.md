@@ -2,13 +2,16 @@
 title: Security and data protection considerations for Windows To Go (Windows 10)
 description: One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
 ms.assetid: 5f27339f-6761-44f4-8c29-9a25cf8e75fe
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: mobile, device, USB, secure, BitLocker
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility, security
 ms.sitesec: library
-author: mtniehaus
-ms.date: 04/19/2017
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Security and data protection considerations for Windows To Go
@@ -17,6 +20,9 @@ ms.date: 04/19/2017
 **Applies to**
 
 -   Windows 10
+
+>[!IMPORTANT]
+>Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
 
@@ -37,7 +43,7 @@ You can enable BitLocker while using the Windows To Go Creator wizard as part of
 **Tip**  
 If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.md#wtg-faq-blfail)
 
- 
+ 
 
 If you are using a host computer running Windows 7 that has BitLocker enabled, you should suspend BitLocker before changing the BIOS settings to boot from USB and then resume BitLocker protection. If BitLocker is not suspended first, the next time the computer is started it will boot into recovery mode.
 
@@ -70,9 +76,9 @@ Windows to Go is a core capability of Windows when it is deployed on the drive a
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

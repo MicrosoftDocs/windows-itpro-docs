@@ -1,8 +1,11 @@
 ---
 title: Deploy Required Features for UE-V 2.x
 description: Deploy Required Features for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 10399bb3-cc7b-4578-bc0c-2f6b597abe4d
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -41,10 +44,10 @@ UE-V requires a location in which to store user settings in settings package fil
 
 If you don’t create a settings storage location, the UE-V Agent will use Active Directory (AD) by default.
 
-**Note**  
+**Note**  
 As a matter of [performance and capacity planning](https://technet.microsoft.com/library/dn458932.aspx#capacity) and to reduce problems with network latency, create settings storage locations on the same local networks where the users’ computers reside. We recommend 20 MB of disk space per user for the settings storage location.
 
- 
+
 
 ### Create a UE-V Settings Storage Location
 
@@ -103,7 +106,7 @@ The UE-V Agent dynamically creates a user-specific settings storage path, with a
     </tbody>
     </table>
 
-     
+
 
 4.  Set the following NTFS file system permissions for the settings storage location folder.
 
@@ -134,18 +137,18 @@ The UE-V Agent dynamically creates a user-specific settings storage path, with a
     </tbody>
     </table>
 
-     
+
 
 With this configuration, the UE-V Agent creates and secures a Settingspackage folder while it runs in the context of the user, and grants each user permission to create folders for settings storage. Users receive full control to their Settingspackage folder while other users cannot access it.
 
-**Note**  
+**Note**  
 If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
 
 1.  Add a **REG\_DWORD** registry key named **"RepositoryOwnerCheckEnabled"** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\UEV\\Agent\\Configuration**.
 
 2.  Set the registry key value to *1*.
 
- 
+
 
 ### Use Active Directory with UE-V 2.x
 
@@ -164,7 +167,7 @@ You can configure UE-V before, during, or after UE-V Agent installation, dependi
 
     Supported operating systems for the domain controller that deploys the Group Policy Objects include the following:
 
-    Windows Server 2008 R2
+    Windows Server 2008 R2
 
     Windows Server 2012 and Windows Server 2012 R2
 
@@ -172,12 +175,12 @@ You can configure UE-V before, during, or after UE-V Agent installation, dependi
 
 -   [Windows PowerShell and WMI](https://technet.microsoft.com/library/dn458937.aspx)**:** You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify configurations after you install the UE-V Agent.
 
-    **Note**  
+    **Note**  
     Registry modification can result in data loss, or the computer becomes unresponsive. We recommend that you use other configuration methods.
 
-     
 
--   **Command-line or Batch Script Installation:** Parameters that are used when you [Deploy the UE-V Agent](#agent) configure many UE-V settings. Electronic software distribution systems, such as System Center 2012 Configuration Manager, use these parameters to configure their clients when they deploy and install the UE-V Agent software.
+
+-   **Command-line or Batch Script Installation:** Parameters that are used when you [Deploy the UE-V Agent](#agent) configure many UE-V settings. Electronic software distribution systems, such as System Center 2012 Configuration Manager, use these parameters to configure their clients when they deploy and install the UE-V Agent software.
 
 ## <a href="" id="agent"></a>Deploy the UE-V 2.x Agent
 
@@ -186,10 +189,10 @@ The UE-V Agent is the core of a UE-V deployment and must run on each computer th
 
 **UE-V Agent Installation Files:** A single installation file, AgentSetup.exe, installs the UE-V Agent on both 32-bit and 64-bit operating systems. In addition, AgentSetupx86.msi or AgentSetupx64.msi architecture-specific Windows Installer files are provided, and since they are smaller, they might streamline the agent deployments. The [command-line parameters for the AgentSetup.exe installer](#params) are supported for the Windows Installer installation as well.
 
-**Important**  
+**Important**  
 During UE-V Agent installation or uninstallation, you can either use the AgentSetup.exe file or the AgentSetup&lt;arch&gt;.msi file, but not both. The same file must be used to uninstall the UE-V Agent that was used to install the UE-V Agent.
 
- 
+
 
 ### To Deploy the UE-V Agent
 
@@ -229,42 +232,42 @@ Use the following procedure to deploy the UE-V Agent from a network share.
 <td align="left"><p>Command prompt</p></td>
 <td align="left"><p>When you install the UE-V Agent at a command prompt, use the <em>%^username%</em> variable format. If quotation marks are required because of spaces in the settings storage path, use a batch script file for deployment.</p>
 <p></p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%^username%</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%^username%</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%^username%</code></p></td>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l<em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%^username%</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Batch script</p></td>
 <td align="left"><p>When you install the UE-V Agent from a batch script file, use the <em>%%username%%</em> variable format. If you use this installation method, you must escape the variable with the %% characters. Without this character, the script expands the <em>username</em> variable at installation time, rather than at run time, which causes UE-V to use a single settings storage location for all users.</p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\\server\settingsshare\%%username%%&quot;</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\server\settingsshare%%username%%&quot;</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\\server\settingsshare\%%username%%&quot;</code></p>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l</em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=&quot;\server\settingsshare%%username%%&quot;</code></p>
 <p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows PowerShell</p></td>
 <td align="left"><p>When you install the UE-V Agent from a Windows PowerShell prompt or a Windows PowerShell script, use the <em>%username%</em> variable format.</p></td>
-<td align="left"><p><code>&amp; AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%username%</code></p>
+<td align="left"><p><code>&amp; AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%username%</code></p>
 <p></p>
-<p><code>&amp; msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\%username%</code></p>
+<p><code>&amp; msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l<em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare%username%</code></p>
 <p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Electronic software distribution, such as deployment of Configuration Manager Software Deployment</p></td>
 <td align="left"><p>When you install the UE-V Agent by using Configuration Manager, use the <em>^%username^%</em> variable format.</p></td>
-<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\^%username^%</code></p>
+<td align="left"><p><code>AgentSetup.exe /quiet /norestart /log &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare^%username^%</code></p>
 <p></p>
-<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l*v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\\server\settingsshare\^%username^%</code></p></td>
+<p><code>msiexec.exe /i &quot;&lt;path to msi file&gt;&quot; /quiet /norestart /l</em>v &quot;%temp%\UE-VAgentInstaller.log&quot; SettingsStoragePath=\server\settingsshare^%username^%</code></p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 The installation of the UE-V Agent requires administrator rights, and the computer requires a restart before the UE-V Agent can run.
 
- 
+
 
 ### <a href="" id="params"></a>Command-line parameters for UE-V Agent deployment
 
@@ -293,12 +296,11 @@ The command-line parameters of the UE-V Agent are as follows.
 <td align="left"><p>SettingsStoragePath</p></td>
 <td align="left"><p>Indicates the Universal Naming Convention (UNC) path that defines where settings are stored.</p></td>
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>You must specify a SettingsStoragePath in UE-V 2.1 and UE-V 2.1 SP1. You can set the AdHomePath string to specify that the user's Active Directory home path is used. For example, <code>SettingsStoragePath = \\share\path|AdHomePath</code>.</p>
+<strong>Important</strong><br/><p>You must specify a SettingsStoragePath in UE-V 2.1 and UE-V 2.1 SP1. You can set the AdHomePath string to specify that the user&#39;s Active Directory home path is used. For example, <code>SettingsStoragePath = \share\path|AdHomePath</code>.</p>
 <p>In UE-V 2.0, you can leave SettingsStoragePath blank to use the Active Directory home path instead.</p>
 </div>
 <div>
- 
+
 </div>
 <p>%username% or %computername% environment variables are accepted. Scripting can require escaped variables.</p>
 <p><strong>Default</strong>: &lt;none&gt;</p></td>
@@ -369,11 +371,10 @@ The command-line parameters of the UE-V Agent are as follows.
 <td align="left"><p>ACCEPTLICENSETERMS</p></td>
 <td align="left"><p>Lets UE-V be installed silently. This must be set to <strong>True</strong> to install UE-V silently and bypass the requirement that the user accepts the UE-V license terms. If set to <strong>False</strong> or left empty, the user receives an error message and UE-V is not installed.</p></td>
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>This parameter is required to install UE-V silently.</p>
+<strong>Important</strong><br/><p>This parameter is required to install UE-V silently.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -384,7 +385,7 @@ The command-line parameters of the UE-V Agent are as follows.
 </tbody>
 </table>
 
- 
+
 
 ### Update the UE-V Agent
 
@@ -396,10 +397,10 @@ During a UE-V Agent upgrade, the default group of settings location templates fo
 
 The UE-V 2.x Agent introduces many new features and modifies how and when the agent uploads content to the settings storage share. The upgrade process automates these changes. To upgrade the UE-V Agent, run the UE-V Agent install package (AgentSetup.exe, AgentSetupx86.msi, or AgentSetupx64.msi) on users’ computers.
 
-**Note**  
+**Note**  
 When you upgrade the UE-V Agent, you must use the same installer type (.exe file or .msi packet) that installed the previous UE-V Agent. For example, use the UE-V 2 AgentSetup.exe to upgrade UE-V 1.0 Agents that were installed by using AgentSetup.exe.
 
- 
+
 
 The following configurations are preserved when the Agent Setup program runs:
 
@@ -409,12 +410,12 @@ The following configurations are preserved when the Agent Setup program runs:
 
 -   Scheduled tasks (Interval settings are reset to their defaults)
 
-**Note**  
+**Note**  
 A computer with UE-V 2.x settings location templates that are registered in the UE-V 1.0 Agent register errors in the Windows Event Log.
 
- 
 
-You can use Microsoft System Center 2012 Configuration Manager or another enterprise software distribution tool to automate and distribute the UE-V Agent upgrade.
+
+You can use Microsoft System Center 2012 Configuration Manager or another enterprise software distribution tool to automate and distribute the UE-V Agent upgrade.
 
 **Recommendations:** We recommend that you upgrade all of the UE-V 1.0 Agents in a computing environment, but it is not required. UE-V 2.x settings location templates can interact with a UE-V 1.0 Agent because they only share the settings from the settings storage path. We recommend, however, that you move the deployments to a single agent version to simplify management and to support UE-V.
 
@@ -424,7 +425,7 @@ You might experience errors after you attempt one of the following operations:
 
 -   Upgrade from UE-V 1.0 to UE-V 2
 
--   Upgrade to a newer version of Windows, for example, from Windows 7 to Windows 8 or from Windows 8 to Windows 8.1.
+-   Upgrade to a newer version of Windows, for example, from Windows 7 to Windows 8 or from Windows 8 to Windows 8.1.
 
 -   Uninstall the agent after upgrading the UE-V Agent
 
@@ -436,10 +437,10 @@ msiexec.exe /f "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInst
 
 You can then retry the uninstall process or upgrade by installing the newer version of the UE-V Agent.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 
@@ -448,9 +449,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md)
 
- 
 
- 
+
+
 
 
 

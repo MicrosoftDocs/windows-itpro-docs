@@ -4,10 +4,13 @@ description: WSUS allows companies to defer, selectively approve, choose when de
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: greglin
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
 ---
 
 # Deploy Windows 10 updates using Windows Server Update Services (WSUS)
@@ -68,41 +71,41 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 **To configure the Configure Automatic Updates and Intranet Microsoft Update Service Location Group Policy settings for your environment**
 
-1.	Open GPMC.
+1. Open GPMC.
 
-2.	Expand Forest\Domains\\*Your_Domain*. 
+2. Expand Forest\Domains\\*Your_Domain*. 
 
-3.	Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
+3. Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
 
-    ![Example of UI](images/waas-wsus-fig3.png) 
+   ![Example of UI](images/waas-wsus-fig3.png) 
     
-    >[!NOTE]
-    >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
+   >[!NOTE]
+   >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
     
-4.	In the **New GPO** dialog box, name the new GPO **WSUS – Auto Updates and Intranet Update Service Location**.
+4. In the **New GPO** dialog box, name the new GPO **WSUS – Auto Updates and Intranet Update Service Location**.
 
-5.	Right-click the **WSUS – Auto Updates and Intranet Update Service Location** GPO, and then click **Edit**.
+5. Right-click the **WSUS – Auto Updates and Intranet Update Service Location** GPO, and then click **Edit**.
 
-6.	In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
+6. In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
 
-7.	Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
+7. Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
 
-    ![Example of UI](images/waas-wsus-fig4.png)
+   ![Example of UI](images/waas-wsus-fig4.png)
     
-8.  In the **Configure Automatic Updates** dialog box, select **Enable**.
+8. In the **Configure Automatic Updates** dialog box, select **Enable**.
 
-9.	Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
+9. Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
 
-    ![Example of UI](images/waas-wsus-fig5.png)
+   ![Example of UI](images/waas-wsus-fig5.png)
     
-    >[!NOTE]
-    ?There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
+   > [!NOTE]
+   > ?There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
     
-9. Right-click the **Specify intranet Microsoft update service location** setting, and then click **Edit**. 
+10. Right-click the **Specify intranet Microsoft update service location** setting, and then click **Edit**. 
 
-9. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
+11. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
 
-12.	Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type **http://Your_WSUS_Server_FQDN:PortNumber**, and then click **OK**.
+12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type <strong>http://Your_WSUS_Server_FQDN:PortNumber</strong>, and then click **OK**.
 
     >[!NOTE]
     >The URL `http://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
@@ -245,7 +248,7 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they’re available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it.
+>WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
 
 **To configure an Automatic Approval rule for Windows 10 feature updates and approve them for the Ring 3 Broad IT deployment ring**
 

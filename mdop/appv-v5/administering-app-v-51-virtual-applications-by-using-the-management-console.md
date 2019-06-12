@@ -1,8 +1,11 @@
 ---
 title: Administering App-V 5.1 Virtual Applications by Using the Management Console
 description: Administering App-V 5.1 Virtual Applications by Using the Management Console
-author: jamiejdt
+author: manikadhiman
 ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -86,17 +89,17 @@ The main elements of the App-V 5.1 Management Console are:
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 JavaScript must be enabled on the browser that opens the Web Management Console.
 
- 
-
-## Got a suggestion for App-V?
+ 
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
+
 
 ## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V 5.1 deployment
 
@@ -105,9 +108,9 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 -   [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,18 @@
 title: Add Production Devices to the Membership Group for a Zone (Windows 10)
 description: Add Production Devices to the Membership Group for a Zone
 ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: dansimp
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
@@ -23,7 +29,7 @@ After you test the GPOs for your design on a small set of devices, you can deplo
 **Caution**  
 For GPOs that contain connection security rules that prevent unauthenticated connections, be sure to set the rules to request, not require, authentication during testing. After you deploy the GPO and confirm that all of your devices are successfully communicating by using authenticated IPsec, then you can modify the GPO to require authentication. Do not change the boundary zone GPO to require mode.
 
- 
+ 
 
 The method discussed in this guide uses the **Domain Computers** built-in group. The advantage of this method is that all new devices that are joined to the domain automatically receive the isolated domain GPO. To do this successfully, you must make sure that the WMI filters and security group filters exclude devices that must not receive the GPOs. Use device groups that deny both read and apply Group Policy permissions to the GPOs, such as a group used in the CG\_DOMISO\_NOIPSEC example design. Devices that are members of some zones must also be excluded from applying the GPOs for the main isolated domain. For more information, see the "Prevent members of a group from applying a GPO" section in [Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md).
 
@@ -75,9 +81,9 @@ From an elevated command prompt, type the following:
 gpresult /r /scope:computer
 ```
 
- 
+ 
 
- 
+ 
 
 
 

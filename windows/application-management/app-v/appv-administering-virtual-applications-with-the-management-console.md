@@ -1,12 +1,16 @@
 ---
 title: Administering App-V Virtual Applications by using the Management Console (Windows 10)
 description: Administering App-V Virtual Applications by using the Management Console
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # Administering App-V Virtual Applications by using the Management Console
 
@@ -50,9 +54,9 @@ The main elements of the App-V Management Console are:
 >[!IMPORTANT]
 >The browser you're using to open the Web Management Console must have JavaScript enabled.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Other resources for this App-V deployment
 

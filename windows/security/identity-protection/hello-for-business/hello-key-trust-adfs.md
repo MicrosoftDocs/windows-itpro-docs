@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-ms.localizationpriority: medium
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -197,8 +202,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 4. Click the **Members** tab and click **Add…**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
-7.	Click **OK** to return to **Active Directory Users and Computers**.
-8.	Change to server hosting the AD FS role and restart it.
+7. Change to server hosting the AD FS role and restart it.
 
 
 ## Configure the Device Registration Service

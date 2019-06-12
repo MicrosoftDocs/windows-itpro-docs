@@ -1,12 +1,16 @@
 ---
 title: Application Publishing and Client Interaction (Windows 10)
 description: Application publishing and client interaction.
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 # Application publishing and client interaction
 
@@ -309,7 +313,7 @@ The following table shows local and roaming locations when folder redirection ha
 The current App-V Client VFS driver can't write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. Here's what happens during the process:
 
 1. During publishing or virtual environment startup, the App-V Client detects the location of the AppData directory.
-2. If the roaming AppData path is local or ino AppData\\Roaming location is mapped, nothing happens.
+2. If the roaming AppData path is local or no AppData\\Roaming location is mapped, nothing happens.
 3. If the roaming AppData path is not local, the VFS AppData directory is mapped to the local AppData directory.
 
 This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The process does the following things:
@@ -375,46 +379,46 @@ The process then configures the client for package or connection group additions
 
 3. Configure the packages by identifying the **Add** or **Update** operations.
 
-    1. The App-V Client utilizes the AppX API from Windows and accesses the appv file from the publishing server.
+   1. The App-V Client utilizes the AppX API from Windows and accesses the appv file from the publishing server.
 
-    2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
+   2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
 
-    3. Completely stream publishing block data defined in the **StreamMap.xml** file. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
+   3. Completely stream publishing block data defined in the **StreamMap.xml** file. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
 
-        - Icons: Targets of extension points.
-        - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
-        - Scripts: Download scripts directory for use throughout the publishing process.
+       - Icons: Targets of extension points.
+       - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
+       - Scripts: Download scripts directory for use throughout the publishing process.
 
-    4. Populate the Package store by doing the following:
+   4. Populate the Package store by doing the following:
 
-        1. Create sparse files on disk that represent the extracted package for any directories listed.
+      1. Create sparse files on disk that represent the extracted package for any directories listed.
 
-        2. Stage top-level files and directories under root.
+      2. Stage top-level files and directories under root.
 
-        All other files are created when the directory is listed as sparse on disk and streamed on demand.
+         All other files are created when the directory is listed as sparse on disk and streamed on demand.
 
-    5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** files from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
+   5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** files from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
 
-    6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
+   6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
 
-    7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
+   7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
 
-    8. Register the package with the App-V Kernal Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
+   8. Register the package with the App-V Kernel Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
 
-    9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
+   9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
 
 4. Configure Connection Groups by adding and enabling or disabling.
 
 5. Remove objects that are not published to the target (user or machine).
 
-    >[!NOTE]
+   > [!NOTE]
     >This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
 
 6. Invoke background load mounting based on client configuration.
 
 7. Packages that already have publishing information for the machine or user are immediately restored.
 
-    >[!NOTE]
+   > [!NOTE]
     >This condition occurs as a product of removal without unpublishing with background addition of the package.
 
 This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
@@ -443,7 +447,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
     2. Store backup information in the user’s registry and roaming profile (Shortcut Backups).
 
-        >[!NOTE]
+       > [!NOTE]
         >This enables restore extension points if the package is unpublished.
 
     3. Run scripts targeted for publishing timing.
@@ -893,6 +897,5 @@ There are three specific categories of events recorded:
 - **Operational** logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
 - **Virtual Application** logs virtual application launches and use of virtualization subsystems.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

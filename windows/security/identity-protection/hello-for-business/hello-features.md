@@ -2,14 +2,19 @@
 title: Windows Hello for Business Features
 description: Windows Hello for Business Features 
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
+ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, PIN Reset, Dynamic Lock, Multifactor Unlock, Forgot PIN, Privileged credentials
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 05/05/2018
 ---
 # Windows Hello for Business Features
@@ -124,15 +129,15 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account. 
 2. You need your tenant ID to complete the following task.  You can discovery your tenant ID viewing the **Properties** of your Azure Active Directory from the Azure Portal.  You can also use the following command in a command Window on any Azure AD joined or hybrid Azure AD joined computer.</br>
-```
-dsregcmd /status | findstr -snip "tenantid"
-```
+   ```
+   dsregcmd /status | findstr -snip "tenantid"
+   ```
 3. Navigate to the Microsoft Intune blade. Click **Device configuration**. Click **Profiles**. Click **Create profile**.
 4. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Custom** from the **Profile type** list.
 5. In the **Custom OMA-URI Settings** blade, Click **Add**.
 6. In the **Add Row** blade, type **PIN Reset Settings** in the **Name** field. In the **OMA-URI** field, type **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery** where <b>*tenant ID*</b> is your Azure Active Directory tenant ID from step 2.
 7. Select **Boolean** from the **Data type** list and select **True** from the **Value** list.
-8. Click **OK** to save the row configuration. Click **OK** to close the **Custom OMA-URI Settings blade.  Click **Create** to save the profile.
+8. Click **OK** to save the row configuration. Click **OK** to close the <strong>Custom OMA-URI Settings blade.  Click **Create</strong> to save the profile.
  
 ##### Assign the PIN Reset Device configuration profile using Microsoft Intune
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account. 
@@ -202,9 +207,9 @@ Active Directory Domain Services uses AdminSDHolder to secure privileged users a
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1. Type the following command to add the **allow** read and write property permissions for msDS-KeyCredentialLink attribute for the **Key Admins** (or **KeyCredential Admins**) group on the AdminSDHolder object.</br>
-```dsacls "CN=AdminSDHolder,CN=System,**DC=domain,DC=com**" /g "**[domainName\keyAdminGroup]**":RPWP,msDS-KeyCredentialLink```</br>
+```dsacls "CN=AdminSDHolder,CN=System,DC=domain,DC=com" /g "[domainName\keyAdminGroup]":RPWP;msDS-KeyCredentialLink```</br>
 where **DC=domain,DC=com** is the LDAP path of your Active Directory domain and **domainName\keyAdminGroup]** is the NetBIOS name of your domain and the name of the group you use to give access to keys based on your deployment.  For example:</br>
-```dsacls "CN=AdminSDHolder,CN=System,DC=corp,DC=mstepdemo,DC=net /g "mstepdemo\Key Admins":RPWP,msDS-KeyCredentialLink```
+```dsacls "CN=AdminSDHolder,CN=System,DC=corp,DC=mstepdemo,DC=net" /g "mstepdemo\Key Admins":RPWP;msDS-KeyCredentialLink```
 2. To trigger security descriptor propagation, open **ldp.exe**.
 3. Click **Connection** and select **Connect...**  Next to **Server**, type the name of the domain controller that holds the PDC role for the domain. Next to **Port**, type **389** and click **OK**.
 4. Click **Connection** and select **Bind...**  Click **OK** to bind as the currently signed-in user.

@@ -6,10 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: mikestephens-MS
-ms.author: mstephen
-localizationpriority: high
+audience: ITPro
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -112,7 +117,7 @@ Before you continue with the deployment, validate your deployment progress by re
 The service account used for the device registration server depends on the domain controllers in the environment.  
 
 >[!NOTE]
->Follow the procedures below based on the domain controllers deployed in your environment.  If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+> Follow the procedures below based on the domain controllers deployed in your environment.  If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
 
 ### Windows Server 2012 or later Domain Controllers
 
@@ -142,7 +147,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 ## Configure the Active Directory Federation Service Role
 
 >[!IMPORTANT]
->Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+> Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
 
 ### Windows Server 2012 or later Domain Controllers
 
@@ -271,7 +276,8 @@ Sign-in a certificate authority or management workstations with _domain administ
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
 6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
-> [!NOTE]
+
+>[!NOTE]
 > The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
 
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
@@ -341,20 +347,44 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 Sign-in the AD FS server with domain administrator equivalent credentials. 
 
-1.	Open a **Windows PowerShell** prompt.
-2.	Type the following command   
+1. Open a **Windows PowerShell** prompt.
+2. Type the following command   
   
-    ```PowerShell
-    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
-    ```
->[!NOTE]
-> If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
+   ```PowerShell
+   Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+   ```
+   >[!NOTE]
+   > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 
 ### Enrollment Agent Certificate Enrollment
 
 Active Directory Federation Server used for Windows Hello for Business certificate enrollment perform their own certificate lifecycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
+
+### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
+
+>[!TIP] 
+> Make sure to change the $enrollmentService and $configNC variables before running the script.
+
+```Powershell
+# Replace this with your Device Registration Service endpoint
+$enrollmentService = "enterpriseregistration.contoso.com"
+# Replace this with your Active Directory configuration naming context 
+$configNC = "CN=Configuration,DC=corp,DC=contoso,DC=org" 
+ 
+$de = New-Object System.DirectoryServices.DirectoryEntry
+$de.Path = "LDAP://CN=Device Registration Configuration,CN=Services," + $configNC
+
+$deSCP = $de.Children.Add("CN=62a0ff2e-97b9-4513-943f-0d221bd30080", "serviceConnectionPoint")
+$deSCP.Properties["keywords"].Add("enterpriseDrsName:" + $enrollmentService)
+$deSCP.CommitChanges()
+```
+
+>[!NOTE]
+> You can save the modified script in notepad and save them as "add-scpadfs.ps1" and the way to run it is just navigating into the script path folder and running .\add-scpAdfs.ps1.
+>
 
 ## Additional Federation Servers
 
