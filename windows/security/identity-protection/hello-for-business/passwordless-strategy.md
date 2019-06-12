@@ -187,7 +187,7 @@ Next, review your master list of scenarios. You can start with the workflows tha
 
 Start mitigating password usages based on the workflows of your targeted personas. Document the mitigation as a solution to your scenario. Don't worry about the implementation details for the solution. An overview of the changes needed to reduce the password usages is all you need. If there are technical changes needed, either infrastructure or code changes, the exact details will likely be included in the project documentation. However your organization tracks projects, create a new project in that system. Associate your scenario to that project and start the processes needed to get that project funded.
 
-Mitigating password usage with applications is one or the more challenging obstacle in the journey to password-less. If your organization develops the application, then you are in better shape the common-off-the-shelf software (COTS).
+Mitigating password usage with applications is one or the more challenging obstacle in the passwordless journey. If your organization develops the application, then you are in better shape the common-off-the-shelf software (COTS).
 
 The ideal mitigation for applications that prompt the user for a password is to enable those applications to use an existing authenticated identity, such as Azure Active Directory or Active Directory. Work with the applications vendors to have them add support for Azure identities. For on-premises applications, have the application use Windows integrated authentication. The goal for your users should be a seamless single sign-on experience where each user authenticates once when they sign-in to Windows. Use this same strategy for applications that store their own identities in their own databases.
 
