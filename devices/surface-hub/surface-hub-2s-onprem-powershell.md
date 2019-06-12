@@ -15,11 +15,11 @@ ms.localizationpriority: Normal
 
 ## Connect to Exchange Server PowerShell
 
-> [!NOTE]
-> It is important that you know the FQDN of the Client Access service of the on-premises Exchange server.
+> [!IMPORTANT]
+> You'll need the Fully Qualified Domain Name (FQDN) for the Client Access service of the on-premises Exchange server for some of these cmdlets.
 
 ```PowerShell
-   $ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
+$ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
 $ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
 Import-PSSession $ExchSession
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Changing Start Menu on Surface Hub 2S"
+title: "Change the Start Menu on Surface Hub 2S"
 description: "Learn how to change Start Menu on Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -10,3 +10,5 @@ audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
 ---
+
+# Change the Start Menu on Surface Hub 2S

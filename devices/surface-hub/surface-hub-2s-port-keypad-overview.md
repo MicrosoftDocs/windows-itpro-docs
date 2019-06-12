@@ -21,7 +21,7 @@ The figure below shows the location of ports and physical buttons located on a k
 
 ## Port and keypad component reference
 
-| Key | Component | Description | Key parameters |
+|**Key**|**Component**|**Description**|**Key parameters**|
 |:--- |:--------- |:----------- |:-------------- |
 | 1 | **USB C** | **USB 3.1 Gen 1** <br> Use as a walk-up port for plugging in peripherals such as thumb-drives. Guest ports are located on each side of the device (4).<br> <br> *NOTE: This is the recommended port for connecting an external camera. Additional camera mount features are incorporated into the design to help support retention of attached cameras.*<br> <br> NOTE: TouchBack and video ingest are not supported on these ports. | Type C <br> <br> 15 W Port (5V/3A)       |
 | 2 | **AC power** | **100-240V input** <br> Connect to standard AC power and Surface Hub 2S will auto switch to the local power standard such as110 volts in the US and Canada or 220 volts in the UK. <br> <br> *NOTE: When the AC cord is plugged in, the system remains in an off state in which only the system management controller (SMC), real time clock (RTC), and keypad are running.* | IEC 60320 C14 |
@@ -41,7 +41,7 @@ The figure below shows the location of ports and physical buttons located on a k
 
 Surface Hub 2S consists of two primary system components:
 
-| Component | Functionality |
-|:--------- |:------------- |
-| **Video board** | - Produces the image on the LCD display. <br> - Provides an audio/video connection path to/from the compute module. <br> - Provides video scaling to support external video sources. <br> - Performs color correction and calibration. <br> - Responsible for power management, including occupancy sensors and device power states. <br> - Monitors and manages all thermal sensors throughout the device. <br> - Performs internal diagnostics. <br> - Captures diagnostics, error logs and telemetry for all components not connected to the compute module. <br> - Controls the behavior of keypad buttons. <br> - Provides an on-screen display for control of video source, brightness, and volume. |
-| **Compute module** | Connects to and controls all USB devices. <br> - Provides video board interconnections for USB, DisplayPort, HDMI, PCIe. <br> - Provides Ethernet access via wired and wireless interfaces. <br> Provides the on-screen audio/video content. <br> - Ingests audio/video provided by external sources. <br> - Allows video to be passed directly to the video board (bypassing the ingest process) for scenarios in which an external source is HDCP encrypted or is beyond the capability of the ingest subsystem. <br> - Provides digital audio output for accessibility and room audio systems respectively (USB dongle support only). |
+|**Component**|**Functionality**|
+|:--------- |:----------------- |
+|**Video board**| - Produces the image on the LCD display. <br> - Provides an audio/video connection path to/from the compute module. <br> - Provides video scaling to support external video sources. <br> - Performs color correction and calibration. <br> - Responsible for power management, including occupancy sensors and device power states. <br> - Monitors and manages all thermal sensors throughout the device. <br> - Performs internal diagnostics. <br> - Captures diagnostics, error logs and telemetry for all components not connected to the compute module. <br> - Controls the behavior of keypad buttons. <br> - Provides an on-screen display for control of video source, brightness, and volume. |
+|**Compute module**| Connects to and controls all USB devices. <br> - Provides video board interconnections for USB, DisplayPort, HDMI, PCIe. <br> - Provides Ethernet access via wired and wireless interfaces. <br> Provides the on-screen audio/video content. <br> - Ingests audio/video provided by external sources. <br> - Allows video to be passed directly to the video board (bypassing the ingest process) for scenarios in which an external source is HDCP encrypted or is beyond the capability of the ingest subsystem. <br> - Provides digital audio output for accessibility and room audio systems respectively (USB dongle support only). |
