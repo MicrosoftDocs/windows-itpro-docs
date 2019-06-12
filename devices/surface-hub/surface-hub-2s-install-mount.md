@@ -17,4 +17,13 @@ Surface Hub 2S is designed for ease of mobility with a form factor that enables 
 
 You can mount Surface Hub 2S with the certified wall mount or the certified mobile stand, both developed in partnership with Steelcase. Both fully integrate with the design of Surface Hub 2S, enabling unimpeded access to the compute cartridge along with all I/O ports and power. 
 
-For more information, see [Steelcase Roam specifications](https://www.steelcase.com/content/uploads/2019/05/Steelcase-Roam-Spec-Guide.pdf). 
+For more information, see [Officially licensed third-party accessories](http://licensedhardware.azurewebsites.net/surface) and view installation demos from the Surface product team:
+
+- [Unboxing and set up](https://youtu.be/fCrxdNXvru4)
+- [Steelcase mobile stand and APC battery set up](https://youtu.be/VTzdu4Skpkg)
+
+ 
+ ![* Surface Hub 2S on Roam Mobile Stand *](images/sh2-mobile-stand.png)<br>
+*Figure 1. Surface Hub 2S on Roam Mobile Stand.*
+
+If you’re not using licensed accessories, see [Customizing installation of Surface Hub 2S](surface-hub-2s-connect.md).
