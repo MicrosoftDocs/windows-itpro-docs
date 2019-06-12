@@ -15,5 +15,4 @@ manager: dansimp
 
 # HotSpot (Windows Configuration Designer reference)
 
-Do not use. Enterprise admins who want to configure settings for mobile hotspots should use [Policies > Wifi](#wcd-policies.md#wifi). Mobile operators should use the [Country and Operator Settings Asset (COSA) format](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/cosa-overview).
-
+Do not use. Enterprise admins who want to configure settings for mobile hotspots should use [Policies > Wifi](wcd-policies.md#wifi). Mobile operators should use the [Country and Operator Settings Asset (COSA) format](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/cosa-overview).

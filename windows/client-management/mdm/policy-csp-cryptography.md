@@ -19,14 +19,23 @@ manager: dansimp
 ## Cryptography policies  
 
 
+<<<<<<< HEAD
+* [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
+* [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
+=======
 * [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)  
 * [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
+>>>>>>> master
 * [Cryptography/Microsoft Surface Hub](#cryptography-policies-supported-by-microsoft-surface-hub)
 <hr/>
 
 <!--Policy-->
 
+<<<<<<< HEAD
+## <a id="CryptographyAllowFipsAlgorithmPolicy" />Cryptography/AllowFipsAlgorithmPolicy
+=======
 ## Cryptography/AllowFipsAlgorithmPolicy
+>>>>>>> master
 
 <!--SupportedSKUs-->
 
@@ -68,7 +77,11 @@ The following list shows the supported values:
 
 <!--Policy-->
 
+<<<<<<< HEAD
+## <a id="CryptographyTLSCipherSuites" />Cryptography/TLSCipherSuites
+=======
 ## Cryptography/TLSCipherSuites
+>>>>>>> master
 
 <!--SupportedSKUs-->
 |Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
@@ -105,8 +118,8 @@ Footnote:
 <!--StartSurfaceHub-->
 ##  Cryptography policies supported by Microsoft Surface Hub  
 
-- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
-- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)  
+- [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
+- [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)  
   <!--EndSurfaceHub-->
 
 
