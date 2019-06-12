@@ -41,7 +41,7 @@ Once the user-visible password surface has been eliminated, your organization ca
 In this world, the user signs in to Windows 10 using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
 
 ### 4. Eliminate passwords from the identity directory
-The final step of the password-less story is where passwords simply do not exist. At this step, identity directories no longer persist any form of the password. This is where Microsoft achieves the long-term security promise of a truly password-less environment.
+The final step of the passwordless story is where passwords simply do not exist. At this step, identity directories no longer persist any form of the password. This is where Microsoft achieves the long-term security promise of a truly passwordless environment.
 
 ## Methodology
 The four steps to password-less provides a overall view of how Microsoft envisions the road to password-less. But the road to password-less is frequently traveled and derailed by many. The scope of work is vast and filled with many challenges and frustrations. Nearly everyone wants the instant gratification of password-less, but can easily become overwhelmed in any of the steps. You are not alone and Microsoft understands. While there are many ways to accomplish password-less, here is one recommendation based on several years of research, investigation, and customer conversations.
