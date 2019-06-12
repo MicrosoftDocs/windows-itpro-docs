@@ -95,9 +95,9 @@ How long does it take to become passwordless?  The answer is "it depends". It de
 - evaluate user acceptance testing results for user-visible password surfaces
 - work with stakeholders to create solutions that mitigate user-visible password surfaces
 - add the solution to the project backlog and prioritize against other projects
-- deploy solution
-- User acceptance testing to confirm the solution mitigates the user-visible password surface
-- Repeat as needed
+- deploy the solution
+- perform user acceptance testing to confirm that the solution mitigates the user-visible password surface
+- repeat the testing as needed
 
 Your organization's journey to being passwordless may take some time. Counting the number of work personas and the number of applications is probably a good indicator of the investment. Hopefully, your organization is growing, which means that the list of personas and the list of applications is unlikely to shrink. If the work to go passwordless today is *n*, then it is likely that to go passwordless tomorrow is *n x 2* or perhaps more, *n x n*. Do not let the size or duration of the project be a distraction. As you progress through each work persona, the actions and tasks will become more familiar for you and your stakeholders. Scope the project to sizable, realistic phases, pick the correct work personas, and soon you will see parts of your organization transition to a passwordless state.
 
