@@ -82,7 +82,7 @@ Give your personas easy and intuitive name like Abby Accounting, Mark Marketing,
 Ultimately, create a naming convention that does not require your stakeholders and partners to read through a long list of tables or a secret decoder ring. Also, if possible, try to keep the references as names of people. After all, you are talking about a person, who is in that department, who uses that specific software.
 
 #### Organization's IT structure
-IT department structures can vary more than the organization. Some IT departments are centralized while others are decentralized. Also, the road to password-less will likely have you interacting with the client authentication team, the deployment team, the security team, the PKI team, the Active Directory team, the cloud team, and the list continues. Most of these teams will be your partner on your journey to password-less. Ensure there is a password-less stakeholder on each of these teams and that the effort is understood and funded.
+IT department structures can vary more than the organization. Some IT departments are centralized while others are decentralized. Also, the road to being passwordless will probably have you interacting with the client authentication team, the deployment team, the security team, the PKI team, the Active Directory team, the cloud team, and the list continues. Most of these teams will be your partner on your journey to being passwordless. Ensure there is a passwordless stakeholder on each of these teams, and that the effort is understood and funded.
 
 #### Assess your Organization
 You have a ton of information. You have created your work personas, you identified your stakeholders throughout the different IT groups. Now what?
