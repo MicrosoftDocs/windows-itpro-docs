@@ -70,6 +70,7 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /Scenario:\[Recovery\] | This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.|
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
+| /AddReg | This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**. |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
 - In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
@@ -410,6 +411,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
 53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
+54. New rule description.
+55. New rule description.
+56. New rule description.
 
 ## Release notes
 
@@ -546,7 +550,7 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 
 ## Sample registry key
 
-![Addreg](../images/setupdiag-addreg.jpg) 
+![Addreg](./../images/addreg.png)
 
 ## Related topics
 
