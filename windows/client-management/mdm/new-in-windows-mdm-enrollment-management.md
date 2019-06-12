@@ -33,7 +33,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 - **Breaking changes and known issues**
   - [Get command inside an atomic command is not supported](#get-command-inside-an-atomic-command-is-not-supported)
-  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#ncunpdufw81tw10)
+  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows81-to-windows10)
   - [Apps installed using WMI classes are not removed](#apps-installed-using-wmi-classes-are-not-removed)
   - [Passing CDATA in SyncML does not work](#passing-cdata-in-syncml-does-not-work)
   - [SSL settings in IIS server for SCEP must be set to "Ignore"](#ssl-settings-in-iis-server-for-scep-must-be-set-to-ignore)
@@ -46,7 +46,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#mcmcwfciw10mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
-  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#upfiaadjw10pc)
+  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows10-pc)
   - [Requirements to note for VPN certificates also used for Kerberos Authentication](#requirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
   - [Device management agent for the push-button reset is not working](#device-management-agent-for-the-push-button-reset-is-not-working)
 
@@ -1583,7 +1583,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 In Windows 10, a Get command inside an atomic command is not supported. This was allowed in Windows Phone 8 and Windows Phone 8.1.
 
-### <a id="ncunpdufw81tw10" /a>Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10
+### Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10
 
 During an upgrade from Windows 8.1 to Windows 10, the notification channel URI information is not preserved. In addition, the MDM client loses the PFN, AppID, and client secret.
 
@@ -1830,7 +1830,7 @@ In Windows 10 Mobile, remote PIN reset in Azure AD joined devices are not suppo
 
 Starting in Windows 10, after the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### <a id="upfiaadjw10pc">User provisioning failure in Azure Active Directory joined Windows 10 PC
+### User provisioning failure in Azure Active Directory joined Windows 10 PC
 
 In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
