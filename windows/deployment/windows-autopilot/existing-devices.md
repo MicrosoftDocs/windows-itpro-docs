@@ -23,7 +23,7 @@ Modern desktop management with Windows Autopilot enables you to easily deploy th
 
 This topic describes how to convert Windows 7 or Windows 8.1 domain-joined computers to Azure Active Directory-joined computers running Windows 10 by using Windows Autopilot.
 
->[NOTE!]
+>[!NOTE]
 >Windows Autopilot for existing devices only supports user-driven Azure Active Directory profiles. Hybrid AAD joined devices and self-deploying profiles are not supported.
 
 ## Prerequisites
