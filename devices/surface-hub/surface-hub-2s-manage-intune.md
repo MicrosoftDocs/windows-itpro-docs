@@ -1,6 +1,6 @@
 ---
 title: "Manage Surface Hub 2S with Intune"
-description: "Learn how you can update and manage Surface Hub 2S using Intune."
+description: "Learn how to update and manage Surface Hub 2S using Intune."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -40,25 +40,25 @@ These settings include user experience and app behavior, Azure Log Analytics reg
 
 For a list of all available configuration service providers (CSPs), see [SurfaceHub CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/surfacehub-csp).
 
-### Quality of Service (QoS) settings
+## Quality of Service (QoS) settings
 
 To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. The settings are identical for Skype for Business and Teams.
 
-| Name        | Description         | OMA-URI                                                                 | Type    | Value       |
-|:----------- |:------------------- |:----------------------------------------------------------------------- |:------- |:----------- |
-| Audio Ports | Audio Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000-50019 |
-| Audio DSCP  | Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction               | Integer | 46          |
-| Video Ports | Video Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
-| Video DSCP  | Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction               | Integer | 34          |
+|**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
+|:------ |:------------- |:--------- |:------ |:------- |
+|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000-50019 |
+|**Audio DSCP**| Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction | Integer | 46 |
+|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
+|**Video DSCP**| Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction | Integer | 34 |
 
 > [!NOTE]
 > These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
 
-### Microsoft Teams Mode settings
+## Microsoft Teams Mode settings
 
 You can set the Microsoft Teams app mode using Intune. Surface Hub 2S comes installed with Microsoft Teams in mode 0, which supports both Microsoft Teams and Skype for Business. You can adjust the modes as shown below.
 
-Modes:
+### Modes:
 
 - Mode 0 – Skype for Business with Microsoft Teams functionality for scheduled meetings.
 - Mode 1 – Microsoft Teams with Skype for Business functionality for scheduled meetings.
@@ -66,7 +66,7 @@ Modes:
 
 To set modes, add the following settings to a custom Device Configuration Profile.
 
-| Name           | Description | OMA-URI                                                   | Type    | Value                                                       |
-|:-------------- |:----------- |:--------------------------------------------------------- |:------- |:----------------------------------------------------------- |
-| Teams App ID   | App name    | ./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId       | String  | Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams­­ |
-| Teams App Mode | Teams mode  | ./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode | Integer | 0 or 1 or 2                                                 |
+|**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
+|:------ |:------------- |:--------- |:------ |:------- |
+|**Teams App ID**| App name | ./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId | String  | Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams­­ |
+|**Teams App Mode**| Teams mode | ./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode | Integer | 0 or 1 or 2 |
