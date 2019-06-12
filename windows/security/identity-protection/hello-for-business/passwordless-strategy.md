@@ -120,7 +120,7 @@ You will want to balance testing in a lab with providing results to management q
 
 The journey to being passwordless is to take each work persona through each passwordless step. In the beginning, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow. The process looks something like this:
 
-1. Password-less replacement offering (Step 1)
+1. Passwordless replacement offering (Step 1)
    1. Identify test users representing the targeted work persona.
    2. Deploy Windows Hello for Business to test users.
    3. Validate that passwords and Windows Hello for Business work.
