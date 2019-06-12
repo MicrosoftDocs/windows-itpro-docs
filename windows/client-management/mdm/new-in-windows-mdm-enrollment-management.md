@@ -1110,7 +1110,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
+<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md##connecting-your-windows-10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
 <td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
 <ul>
 <li>Username</li>
