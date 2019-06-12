@@ -1,18 +1,17 @@
 ---
 title: Policy CSP - DeliveryOptimization
 description: Policy CSP - DeliveryOptimization
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/06/2018
+author: manikadhiman
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - DeliveryOptimization
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -35,6 +34,12 @@ ms.date: 07/06/2018
   </dd>
   <dd>
     <a href="#deliveryoptimization-dodelayforegrounddownloadfromhttp">DeliveryOptimization/DODelayForegroundDownloadFromHttp</a>
+  </dd>
+  <dd>
+    <a href="#deliveryoptimization-dodelaycacheserverfallbackbackground">DeliveryOptimization/DODelayCacheServerFallbackBackground</a>
+  </dd>
+  <dd>
+    <a href="#deliveryoptimization-dodelaycacheserverfallbackforeground">DeliveryOptimization/DODelayCacheServerFallbackForeground</a>
   </dd>
   <dd>
     <a href="#deliveryoptimization-dodownloadmode">DeliveryOptimization/DODownloadMode</a>
@@ -404,6 +409,144 @@ The following list shows the supported values as number of seconds:
 <hr/>
 
 <!--Policy-->
+<a href="" id="deliveryoptimization-dodelaycacheserverfallbackbackground"></a>**DeliveryOptimization/DODelayCacheServerFallbackBackground**  
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+
+</table>
+
+<!--/SupportedSKUs-->
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+
+<!--Description-->
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download.
+
+> [!NOTE]
+> The [DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp) policy takes precedence over this policy to allow downloads from peers first.
+
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Delay Background download Cache Server fallback (in seconds)*
+-   GP name: *DelayCacheServerFallbackBackground*
+-   GP element: *DelayCacheServerFallbackBackground*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
+
+<!--SupportedValues-->
+This policy is specified in seconds.  
+Supported values: 0 - one month (in seconds)
+<!--/SupportedValues-->
+
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
+<a href="" id="deliveryoptimization-dodelaycacheserverfallbackforeground"></a>**DeliveryOptimization/DODelayCacheServerFallbackForeground**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+
+<!--Description-->
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download.
+
+> [!NOTE]
+> The [DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp) policy takes precedence over this policy to allow downloads from peers first.
+
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Delay Foreground download Cache Server fallback (in seconds)*
+-   GP name: *DelayCacheServerFallbackForeground*
+-   GP element: *DelayCacheServerFallbackForeground*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+<!--/ADMXMapped-->
+
+<!--SupportedValues-->
+This policy is specified in seconds.  
+Supported values: 0 - one month (in seconds)
+<!--/SupportedValues-->
+
+<!--Example-->
+<!--/Example-->
+<!--Validation-->
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
 
 <!--SupportedSKUs-->
@@ -695,7 +838,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
- 
+ 
 Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
 
 The default value is 20.
@@ -752,7 +895,7 @@ ADMX Info:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
- 
+ 
 
 Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
@@ -811,7 +954,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
- 
+ 
 Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
 
 The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
@@ -985,7 +1128,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-Added in Windows 10, version 1703. Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. Recommended values: 64 GB to 256 GB.
+Added in Windows 10, version 1703. Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. Recommended values: 64 GB to 256 GB.
 
 > [!NOTE]
 > If the DOMofidyCacheDrive policy is set, the disk size check will apply to the new working directory specified by this policy.
@@ -1046,7 +1189,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. Recommended values: 1 MB to 100,000 MB.
+Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. Recommended values: 1 MB to 100,000 MB.
 
 The default value is 100 MB.
 
@@ -1104,7 +1247,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
+Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required to use Peer Caching. For example, if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
 
 The default value is 4 GB.
 
@@ -1470,9 +1613,9 @@ Added in Windows&nbsp;10, version 1803. Specifies the maximum background downloa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1536,9 +1679,9 @@ Added in Windows&nbsp;10, version 1803. Specifies the maximum foreground downloa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1558,36 +1701,108 @@ This policy allows an IT Admin to define the following:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+<!--/Policies-->
+
+<!--StartHoloLens-->
+
+<!--EndHoloLens-->
+  
+<!--StartHoloLensBusiness-->
+<!--EndHoloLensBusiness-->
+
+<!--StartIoTCore-->
+## <a href="" id="iotcore"></a>DeliveryOptimization policies supported by IoT Core  
+
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
+-   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
+-   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+-   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
+-   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+-   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+<!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>DeliveryOptimization policies supported by IoT Enterprise  
+
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
+-   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
+-   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+-   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
+-   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+-   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+  
+<!--EndIoTEnterprise-->
+
+<!--StartSurfaceHub-->
+## <a href="" id="surfacehubpolicies"></a>DeliveryOptimization policies supported by Microsoft Surface Hub  
+
+- [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)  
+- [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)  
+- [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)  
+- [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)  
+- [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)  
+- [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)  
+- [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)  
+- [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)  
+- [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)  
+- [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)  
+- [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)  
+- [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)  
+- [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)  
+- [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)  
+- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)  
+  <!--EndSurfaceHub-->
+
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
-
-<!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>DeliveryOptimization policies supported by Microsoft Surface Hub  
-
--   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)  
--   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)  
--   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)  
--   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)  
--   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)  
--   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)  
--   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)  
--   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)  
--   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)  
--   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)  
--   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)  
--   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)  
--   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)  
--   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)  
--   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)  
-<!--EndSurfaceHub-->
-
+-   6 - Added in Windows 10, version 1903.

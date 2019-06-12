@@ -2,6 +2,9 @@
 title: Configure MDT for UserExit scripts (Windows 10)
 description: In this topic, you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address.
 ms.assetid: 29a421d1-12d2-414e-86dc-25b62f5238a7
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: rules, script
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -53,7 +56,7 @@ The first three lines of the script make up a header that all UserExit scripts h
 
 **Note**  
 The purpose of this sample is not to recommend that you use the MAC Address as a base for computer naming, but to show you how to take a variable from MDT, pass it to an external script, make some changes to it, and then return the new value to the deployment process.
- 
+ 
 ## Related topics
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)

@@ -1,21 +1,22 @@
 ---
 title: Windows Autopilot Self-Deploying mode (Preview) 
-description: Gives an overview of Autopilot Plug and Forget and how to use it.
-keywords: Autopilot Plug and Forget, Windows 10
+description: Windows Autopilot deployment
+keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype:
 ms.localizationpriority: medium
+ms.sitesec: library
+ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
 
-# Windows Autopilot Self-Deploying mode (Preview)
+# Windows Autopilot Self-Deploying mode
 
 **Applies to: Windows 10, version 1809 or later**
 

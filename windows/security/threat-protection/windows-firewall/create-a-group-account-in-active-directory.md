@@ -2,12 +2,14 @@
 title: Create a Group Account in Active Directory (Windows 10)
 description: Create a Group Account in Active Directory
 ms.assetid: c3700413-e02d-4d56-96b8-7991f97ae432
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

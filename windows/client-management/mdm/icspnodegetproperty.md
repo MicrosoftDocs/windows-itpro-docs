@@ -2,11 +2,13 @@
 title: ICSPNode GetProperty
 description: ICSPNode GetProperty
 ms.assetid: a2bdc158-72e0-4cdb-97ce-f5cf1a44b7db
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -47,7 +49,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

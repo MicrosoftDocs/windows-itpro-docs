@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phDeviceMgmt.designing\_a\_custom\_configuration\_service\_provider'
 - 'p\_phDeviceMgmt.design\_a\_custom\_windows\_csp'
 ms.assetid: 0fff9516-a71a-4036-a57b-503ef1a81a37
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -34,13 +36,13 @@ Nodes can represent anything from abstract concepts or collections (such as emai
 
 For example, a hypothetical Email configuration service provider might have these nodes:
 
--   Account: The name of the email account (such as "Hotmail")
+- Account: The name of the email account (such as "Hotmail")
 
--   Username: The user name or email address ("exampleAccount@hotmail.com")
+- Username: The user name or email address ("exampleAccount@hotmail.com")
 
--   Password: The user's password
+- Password: The user's password
 
--   Server: The DNS address of the server ("mail-serv1-example.mail.hotmail.com")
+- Server: The DNS address of the server ("mail-serv1-example.mail.hotmail.com")
 
 The `Account`, `Username`, and `Server` nodes would hold text-based information about the email account, the user's email address, and the server address associated with that account. The `Password` node, however, might hold a binary hash of the user's password.
 
@@ -157,9 +159,9 @@ For internally transactioned nodes, the practice of implementing the contrary co
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

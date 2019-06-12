@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage event-based forced updates
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
@@ -144,7 +146,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
     1. Double-click **Allow real-time definition updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     2. Double-click **Allow notifications to disable definitions based reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
     
-> [!NOTE]  
+> [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 
 ## Related topics

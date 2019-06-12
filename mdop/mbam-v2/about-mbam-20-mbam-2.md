@@ -1,8 +1,11 @@
 ---
 title: About MBAM 2.0
 description: About MBAM 2.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: b43a0ba9-1c83-4854-a2c5-14eea0070e36
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -24,7 +27,7 @@ BitLocker Administration and Monitoring 2.0 enforces the BitLocker encryption 
 **Note**  
 BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
- 
+ 
 
 The following groups might be interested in using MBAM to manage BitLocker:
 
@@ -102,9 +105,9 @@ This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Ent
 
 [Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

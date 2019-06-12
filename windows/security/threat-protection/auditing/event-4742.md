@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4742(S): A computer account was changed.
@@ -92,7 +95,6 @@ You might see this event without any changes inside, that is, where all **Change
  <Data Name="ServicePrincipalNames">-</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -239,17 +241,17 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 <!-- -->
 
--   **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. If the SPN list of a computer account changed, you will see the new SPN list in **Service Principal Names** field (note that you will see the new list instead of changes). If the value of **servicePrincipalName** attribute of computer object was changed, you will see the new value here.
+- **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. If the SPN list of a computer account changed, you will see the new SPN list in **Service Principal Names** field (note that you will see the new list instead of changes). If the value of **servicePrincipalName** attribute of computer object was changed, you will see the new value here.
 
-    Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots**:**
+  Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots<strong>:</strong>
 
-    HOST/Win81.contoso.local
+  HOST/Win81.contoso.local
 
-    RestrictedKrbHost/Win81.contoso.local
+  RestrictedKrbHost/Win81.contoso.local
 
-    HOST/WIN81
+  HOST/WIN81
 
-    RestrictedKrbHost/WIN81
+  RestrictedKrbHost/WIN81
 
 TERMSRV/Win81.contoso.local
 

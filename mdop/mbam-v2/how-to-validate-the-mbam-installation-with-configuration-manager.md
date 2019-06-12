@@ -1,8 +1,11 @@
 ---
 title: How to Validate the MBAM Installation with Configuration Manager
 description: How to Validate the MBAM Installation with Configuration Manager
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 8e268539-91c3-4e8a-baae-faf3605da818
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,7 +26,7 @@ After installing Microsoft BitLocker Administration and Monitoring (MBAM) with C
     **Note**  
     To validate the installation, you must use a domain account that has local computer administrative credentials on each server.
 
-     
+     
 
 2.  Use the Configuration Manager console to confirm that a new collection, called “MBAM Supported Computers,” is displayed.
 
@@ -66,9 +69,9 @@ After installing Microsoft BitLocker Administration and Monitoring (MBAM) with C
 
 [Deploying MBAM with Configuration Manager](deploying-mbam-with-configuration-manager-mbam2.md)
 
- 
+ 
 
- 
+ 
 
 
 

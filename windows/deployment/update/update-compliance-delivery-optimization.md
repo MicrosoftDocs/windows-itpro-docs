@@ -1,12 +1,14 @@
 ---
 title: Delivery Optimization in Update Compliance (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: new Delivery Optimization data displayed in Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 keywords: oms, operations management suite, optimization, downloads, updates, log analytics
 ms.localizationpriority: medium
 ms.collection: M365-analytics

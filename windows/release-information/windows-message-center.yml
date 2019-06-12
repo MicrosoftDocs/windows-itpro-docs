@@ -23,21 +23,21 @@ sections:
     columns: 2
     items:
     
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540
-      html: Read the announcement >
+    - href: https://blogs.windows.com/windowsexperience/
+      html: Get the update >
       image: 
-        src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: Windows 10, version 1809 designated for broad deployment
-    - href: https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency
-      html: Find out more >
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Windows 10, version 1903 rollout begins
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+      html: Read about the latest enhancements > 
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Improvements to the Windows 10 update experience are coming
-    - href: https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience
-      html: Learn about our approach >
+      title: What’s new in Windows Update for Business
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+      html: Get an overview > 
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
-      title: How do we measure and improve the quality of Windows?
+      title: What’s new for businesses and IT pros in Windows 10
     - href: https://docs.microsoft.com/windows/windows-10/release-information
       html: Visit the Windows 10 release information page >
       image: 
@@ -50,6 +50,27 @@ sections:
     text: "
       <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
       
+      <tr><td><a href = 'https://blogs.windows.com/windowsexperience/' target='_blank'><b>Windows 10, version 1903 rollout begins</b></a><br>The Windows 10 May 2019 Update (Windows 10, version 1903) is available today to commercial customers via Windows Server Update Services (WSUS), Windows Update for Business, and the Volume Licensing Service Center (VLSC)—and to end users who manually select “Check for updates.” We are slowly throttling up availability while we carefully monitor data and feedback.</td><td>May 21, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog' target='_blank'><b>What’s new in Windows Update for Business</b></a><br>We are enhancing and expanding the capabilities of Windows Update for Business to make the move to the cloud even easier. From simplified branch readiness options to better control over deadlines and reboots, read about the enhancements to Windows Update for Business as a part of Windows 10, version 1903. </td><td>May 21, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog' target='_blank'><b>What’s new for businesses and IT pros in Windows 10</b></a><br>Explore the newest capabilities for businesses and IT in the latest feature update in the areas of intelligent security, simplified updates, flexible management, and enhanced productivity. </td><td>May 21, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><a href = 'https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates' target='_blank'><b>Reminder: Install the latest SSU for a smoother update experience </b></a><br><div>We strongly recommend that you install the latest servicing stack update (SSU) before installing any Windows update; especially as an SSU may be a prerequisite for some updates. If you have difficulty installing Windows updates, verify that you have installed the latest SSU package for your version of Windows and then try installing the update again. Links to the latest SSU are always provided in the “How to get this update” section of each update KB article (e.g., <a href='https://support.microsoft.com/help/4494441' target='_blank'>KB4494441</a>).  For more information about SSUs, see our <a href='https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates' target='_blank'>Servicing stack updates</a> guidance.</div></td><td>May 14, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><a href = 'https://blogs.technet.microsoft.com/msrc/2019/05/14/prevent-a-worm-by-updating-remote-desktop-services-cve-2019-0708/' target='_blank'><b>Take action: Update Remote Desktop Services on older versions of Windows</b></a><br><div>Today, we released fixes for a critical wormable, remote code execution vulnerability (<a href='https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708' target='_blank'>CVE-2019-0708</a>) in Remote Desktop Services—formerly known as Terminal Services. This vulnerability affects Windows 7, Windows Server 2008 R2, and earlier versions of Windows nearing end of support. It does not affect Windows 8, Windows Server 2012, or newer operating systems. While we have not observed attacks exploiting this vulnerability, affected systems should be patched with priority. Here is what you need to know:<br> <br>
+<strong>Call to action:</strong>
+<ul>
+<li>	If you are running a supported version of Windows and have automatic updates enabled, you are automatically protected and do not need to take any action. </li>
+<li>	If you are managing updates on behalf of your organization, you should download the latest updates from the <a href='https://portal.msrc.microsoft.com/' target='_blank'>Microsoft Security Update Guide</a> and apply them to your Windows 7, Windows Server 2008 R2, and Windows Server 2008 devices as soon as possible.</li>
+</ul>
+Given the potential impact to customers and their businesses, we have also released <a href='https://support.microsoft.com/help/4500705' target='_blank'>security updates for Windows XP and Windows Server 2003</a>, even though these operating systems have reached end of support (except by custom support agreements). While we recommend that you upgrade to the current version of Windows to benefit from the latest security protections, these updates are available from the Microsoft Update Catalog only. For more information, see <a href='https://support.microsoft.com/help/4500705' target='_blank'>KB4500705</a>.
+ </div>
+</td><td>May 14, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376' target='_blank'><b>Reminder: Windows 10  update servicing cadence</b></a><br><div>This month we received questions about the cadence of updates we released in April and May 2019. Here's a quick recap of our releases and servicing cadence: <br>
+ <ul>
+<li>	April 9, 2019 was the regular Update Tuesday release for all versions of Windows.</li> 
+<li>	May 1, 2019 was an \"optional,\" out of band non-security update (OOB) for Windows 10, version 1809. It was released to Microsoft Catalog and WSUS, providing a critical fix for our OEM partners.</li>
+<li>	May 3, 2019 was the \"optional\" Windows 10, version 1809 \"C\" release for April. This update contained important <a href='https://support.microsoft.com/help/4470918/updates-for-may-2019-japan-era-change' target='_blank'>Japanese era</a> packages for commercial customers to preview. It was released later than expected and mistakenly targeted as \"required\" (instead of \"optional\") for consumers, which pushed the update out to customers and required a reboot. Within 24 hours of receiving customer reports, we corrected the targeting logic and mitigated the issue.</li>
+ </ul>
+ For more information about the Windows 10  update servicing cadence, please see the <a href='https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376' target='_blank'>Window IT Pro blog</a>.</div>
+</td><td>May 10, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><a href = 'https://support.microsoft.com/help/4493730/servicing-stack-update-for-windows-server-2008-sp2' target='_blank'><b>Take action: Install servicing stack update for Windows Server 2008 SP2 for SHA-2 code sign support</b></a><br>A standalone update, KB4493730, that introduce SHA-2 code sign support for the servicing stack (SSU) was released today as a security update.</td><td>April 19, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><a href = 'https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847' target='_blank'><b>The benefits of Windows 10 Dynamic Update</b></a><br><div>Dynamic Update can help organizations and end users alike ensure that their Windows 10 devices have the latest feature update content (as part of an in-place upgrade)—and preserve precious features on demand (FODs) and language packs (LPs) that may have been previously installed. </div><br>
 

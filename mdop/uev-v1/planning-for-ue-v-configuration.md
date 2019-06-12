@@ -1,8 +1,11 @@
 ---
 title: Planning for UE-V Configuration
 description: Planning for UE-V Configuration
-author: jamiejdt
+author: levinec
 ms.assetid: db78dad4-78e0-45d6-a235-8b7345cb79f8
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

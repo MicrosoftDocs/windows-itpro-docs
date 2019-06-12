@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/08/2017
+ms.reviewer: 
 ---
 # Hybrid Azure AD joined Certificate Trust Deployment
 
@@ -37,10 +38,10 @@ This baseline provides detailed procedures to move your environment from an on-p
 ## Federated Baseline ##
 The federated baseline helps organizations that have completed their federation with Azure Active Directory and Office 365 and enables them to introduce Windows Hello for Business into their hybrid environment.  This baseline exclusively focuses on the procedures needed to add Azure Device Registration and Windows Hello for Business to an existing hybrid deployment.
 
-Regardless of the baseline you choose, you’re next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
+Regardless of the baseline you choose, your next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
 
 > [!div class="nextstepaction"]
-> [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+> [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 
 <br><br>
 
@@ -48,7 +49,7 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. Overview (*You are here*)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

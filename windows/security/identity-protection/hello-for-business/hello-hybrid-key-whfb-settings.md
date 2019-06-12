@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure Hybrid Windows Hello for Business key trust settings
 
@@ -37,7 +38,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
 
 <br><br>
 
@@ -45,7 +46,7 @@ For the most efficient deployment, configure these technologies in order beginni
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)

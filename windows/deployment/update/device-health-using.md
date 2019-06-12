@@ -1,5 +1,7 @@
 ---
 title: Using Device Health
+ms.reviewer: 
+manager: laurawi
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,8 +37,8 @@ In Azure Portal, the aspects of a solution's dashboard are usually divided into 
 
 ## Device Reliability
 
-- [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver-Induced OS Crashes](#driver--induced-OS-crashes)
+- [Frequently crashing devices](#frequently-crashing-devices)
+- [Driver-induced OS crashes](#driver-induced-crashes)
 
 
 
@@ -79,7 +81,7 @@ This displays device records sorted by date and crash details by failure ID, als
 
  
  
-### Driver-Induced OS Crashes
+### Driver-induced crashes
 
 This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 
@@ -275,29 +277,29 @@ You can run these queries from the Azure Portal **Log Search** interface (availa
 
 ### Device reliability query examples
 
-|Data|Query|
-|-------------------|------------------------|
-|Total devices|	Type = DHOSReliability \| measure countdistinct(ComputerID) by Type|
-|Number of devices that have crashed in the last three weeks|	Type = DHOSReliability KernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by Type|
-|Compare the percentage of your devices that have not crashed with the percentage of similar devices outside your organization ("similar" here means other commercial devices with the same mix of device models, operating system versions and update levels).|	Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices by Type \| Display Table|
-|As above, but sorted by device manufacturer|	Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by Manufacturer \| sort NumberDevices desc \| Display Table|
-|As above, but sorted by model|	Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by ModelFamily\| sort NumberDevices desc \| Display Table|
-|As above, but sorted by operating system version|	Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by OSVersion \| sort NumberDevices desc \| Display Table|
-|Crash rate trending in my organization compared to the commercial average. Each interval shows percentage of devices that crashed at least once in the trailing two weeks|	Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices by TimeGenerated \| Display LineChart|
-|Table of devices that have crashed the most in the last two weeks|	Type = DHOSReliability KernelModeCrashCount > 0 \| Dedup ComputerID \| select Computer, KernelModeCrashCount \| sort TimeGenerated desc, KernelModeCrashCount desc \| Display Table|
-|Detailed crash records, most recent first|	Type = DHOSCrashData \| sort TimeGenerated desc, Computer asc \| display Table|
-|Number of devices that crashed due to drivers|	Type = DHDriverReliability DriverKernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by Type|
-|Table of drivers that have caused the most devices to crash|	Type = DHDriverReliability DriverKernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by DriverName \| Display Table|
-|Trend of devices crashed by driver by day|	* Type=DHOSCrashData DriverName!="ntkrnlmp.exe" DriverName IN {Type=DHOSCrashData \| measure count() by DriverName | top 5} \| measure countdistinct(ComputerID) as NumberDevices by DriverName interval 1day|
-|Crashes for different versions of a given driver (replace netwtw04.sys with the driver you want from the previous list). This lets you get an idea of which *versions* of a given driver work best with your devices|	Type = DHDriverReliability DriverName="netwtw04.sys" \| Dedup ComputerID \| sort TimeGenerated desc \| measure countdistinct(ComputerID) as InstallCount, sum(map(DriverKernelModeCrashCount,1,10000, 1)) as DevicesCrashed by DriverVersion \| Display Table|
-|Top crashes by FailureID|	Type =DHOSCrashData \| measure count() by KernelModeCrashFailureId \| Display Table|
+|                                                                                                                              Data                                                                                                                              |                                                                                                                                                   Query                                                                                                                                                    |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                         Total devices                                                                                                                          |                                                                                                                    Type = DHOSReliability \| measure countdistinct(ComputerID) by Type                                                                                                                     |
+|                                                                                                  Number of devices that have crashed in the last three weeks                                                                                                   |                                                                                                        Type = DHOSReliability KernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by Type                                                                                                        |
+| Compare the percentage of your devices that have not crashed with the percentage of similar devices outside your organization ("similar" here means other commercial devices with the same mix of device models, operating system versions and update levels). |                                        Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices by Type \| Display Table                                         |
+|                                                                                                          As above, but sorted by device manufacturer                                                                                                           | Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by Manufacturer \| sort NumberDevices desc \| Display Table |
+|                                                                                                                 As above, but sorted by model                                                                                                                  |  Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by ModelFamily\| sort NumberDevices desc \| Display Table  |
+|                                                                                                        As above, but sorted by operating system version                                                                                                        |  Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices, countdistinct(ComputerID) as NumberDevices by OSVersion \| sort NumberDevices desc \| Display Table   |
+|                                           Crash rate trending in my organization compared to the commercial average. Each interval shows percentage of devices that crashed at least once in the trailing two weeks                                            |                                  Type=DHOSReliability \| measure avg(map(KernelModeCrashCount, 1, 10000, 0, 1)) as MyOrgPercentCrashFreeDevices, avg(KernelModeCrashFreePercentForIndustry) as CommercialAvgPercentCrashFreeDevices by TimeGenerated \| Display LineChart                                  |
+|                                                                                               Table of devices that have crashed the most in the last two weeks                                                                                                |                                                            Type = DHOSReliability KernelModeCrashCount > 0 \| Dedup ComputerID \| select Computer, KernelModeCrashCount \| sort TimeGenerated desc, KernelModeCrashCount desc \| Display Table                                                             |
+|                                                                                                           Detailed crash records, most recent first                                                                                                            |                                                                                                               Type = DHOSCrashData \| sort TimeGenerated desc, Computer asc \| display Table                                                                                                               |
+|                                                                                                         Number of devices that crashed due to drivers                                                                                                          |                                                                                                   Type = DHDriverReliability DriverKernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by Type                                                                                                   |
+|                                                                                                  Table of drivers that have caused the most devices to crash                                                                                                   |                                                                                       Type = DHDriverReliability DriverKernelModeCrashCount > 0 \| measure countdistinct(ComputerID) by DriverName \| Display Table                                                                                        |
+|                                                                                                           Trend of devices crashed by driver by day                                                                                                            |                                                                                            \* Type=DHOSCrashData DriverName!="ntkrnlmp.exe" DriverName IN {Type=DHOSCrashData \| measure count() by DriverName                                                                                             |
+|                      Crashes for different versions of a given driver (replace netwtw04.sys with the driver you want from the previous list). This lets you get an idea of which *versions* of a given driver work best with your devices                      |                       Type = DHDriverReliability DriverName="netwtw04.sys" \| Dedup ComputerID \| sort TimeGenerated desc \| measure countdistinct(ComputerID) as InstallCount, sum(map(DriverKernelModeCrashCount,1,10000, 1)) as DevicesCrashed by DriverVersion \| Display Table                        |
+|                                                                                                                    Top crashes by FailureID                                                                                                                    |                                                                                                            Type =DHOSCrashData \| measure count() by KernelModeCrashFailureId \| Display Table                                                                                                             |
 
 ### Windows Information Protection (WIP) App Learning query examples
 
-|Data|Query|
-|-------------------|------------------------|
-|Apps encountering policy boundaries on the most computers (click on an app in the results to see details including computer names)| Type=DHWipAppLearning \| measure countdistinct(ComputerID) as ComputerCount by AppName|
-|Trend of App Learning activity for a given app. Useful for tracking activity before and after a rule change| Type=DHWipAppLearning AppName="MICROSOFT.SKYPEAPP" | measure countdistinct(ComputerID) as ComputerCount interval 1day|
+|                                                                Data                                                                |                                         Query                                          |
+|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Apps encountering policy boundaries on the most computers (click on an app in the results to see details including computer names) | Type=DHWipAppLearning \| measure countdistinct(ComputerID) as ComputerCount by AppName |
+|            Trend of App Learning activity for a given app. Useful for tracking activity before and after a rule change             |                   Type=DHWipAppLearning AppName="MICROSOFT.SKYPEAPP"                   |
 
 ### Exporting data and configuring alerts
 

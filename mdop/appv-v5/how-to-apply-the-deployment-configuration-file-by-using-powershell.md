@@ -1,8 +1,11 @@
 ---
 title: How to Apply the Deployment Configuration File by Using PowerShell
 description: How to Apply the Deployment Configuration File by Using PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: 5df5d5bc-6c72-4087-8b93-d6d4b502a1f4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -26,23 +29,25 @@ The dynamic deployment configuration file is applied when a package is added or 
 
     **Add-AppVClientPackage –Path c:\\Packages\\Contoso\\MyApp.appv -DynamicDeploymentConfiguration c:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml**
 
-    **Note**  
+    **Note**  
     This command captures the resulting object into $pkg. If the package is already present on the computer, the **Set-AppVclientPackage** cmdlet can be used to apply the deployment configuration document:
 
     **Set-AppVClientPackage –Name Myapp –Path c:\\Packages\\Contoso\\MyApp.appv -DynamicDeploymentConfiguration c:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml**
 
-     
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+~~~
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+~~~
 
 ## Related topics
 
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
 
- 
+
+
 
 
 

@@ -2,12 +2,14 @@
 title: System objects Require case insensitivity for non-Windows subsystems (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the System objects Require case insensitivity for non-Windows subsystems security policy setting.
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -60,7 +62,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

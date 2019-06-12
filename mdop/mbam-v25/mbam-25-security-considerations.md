@@ -1,8 +1,11 @@
 ---
 title: MBAM 2.5 Security Considerations
 description: MBAM 2.5 Security Considerations
-author: jamiejdt
+author: dansimp
 ms.assetid: f6613c63-b32b-45fb-a6e8-673d6dae7d16
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -69,14 +72,14 @@ To enable MBAM to escrow and then store TPM OwnerAuth passwords, you must config
 </tbody>
 </table>
 
- 
+ 
 
 The location of these Group Policy settings is **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Trusted Platform Module Services**.
 
 **Note**  
 Windows removes the OwnerAuth locally after MBAM successfully escrows it with these settings.
 
- 
+ 
 
 ### Escrowing TPM OwnerAuth in Windows 7
 
@@ -117,7 +120,7 @@ To create user-to-computer associations after you have installed the MBAM server
 **Note**  
 The MBAM agent will override user-to-computer associations when that computer begins reporting up to the server.
 
- 
+ 
 
 **Prerequisites:** The Read-AD\* cmdlets can retrieve information from AD only if they are either run as a highly privileged user account, such as a Domain Administrator, or run as an account in a custom security group granted read access to the information (recommended).
 
@@ -168,7 +171,7 @@ The Read-AD\* cmdlets do not have the ability to discover the user accounts that
 
 -   Users who are not in the MBAM Advanced Helpdesk Users security group as defined during installation, recovering on behalf of other users
 
- 
+ 
 
 ## <a href="" id="bkmk-autounlock"></a>Configure MBAM to automatically unlock the TPM after a lockout
 
@@ -178,7 +181,7 @@ You can configure MBAM 2.5 SP1 to automatically unlock the TPM in case of a lock
 **Important**  
 To enable TPM lockout auto reset, you must configure this feature on both the server side and in Group Policy on the client side.
 
- 
+ 
 
 -   To enable TPM lockout auto reset on the client side, configure the Group Policy setting "Configure TPM lockout auto reset" located at **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDOP MBAM** &gt; **Client Management**.
 
@@ -193,7 +196,7 @@ TPM lockout auto reset is disabled by default.
 **Note**  
 TPM lockout auto reset is only supported on computers running TPM version 1.2. TPM 2.0 provides built-in lockout auto reset functionality.
 
- 
+ 
 
 **The Recovery Audit Report** includes events related to TPM lockout auto reset. If a request is made from the MBAM client to retrieve a TPM OwnerAuth password, an event is logged to indicate recovery. Audit entries will include the following events:
 
@@ -224,7 +227,7 @@ TPM lockout auto reset is only supported on computers running TPM version 1.2. T
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-secure-databases"></a>Secure connections to SQL Server
 
@@ -302,11 +305,11 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
 [Planning to Deploy MBAM 2.5](planning-to-deploy-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

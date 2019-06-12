@@ -1,8 +1,11 @@
 ---
 title: How to Configure Servers for Server-Based Deployment
 description: How to Configure Servers for Server-Based Deployment
-author: jamiejdt
+author: dansimp
 ms.assetid: 6371c37a-46eb-44e8-ad6b-4430c866c8b4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

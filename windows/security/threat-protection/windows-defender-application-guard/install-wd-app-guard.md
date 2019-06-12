@@ -6,15 +6,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 02/19/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Prepare to install Windows Defender Application Guard
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Review system requirements
 

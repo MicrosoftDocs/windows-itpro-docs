@@ -1,5 +1,5 @@
 ---
-title: Hybrid Windows Hello for Business Prerequistes (Windows Hello for Business)
+title: Hybrid Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Prerequisites for Hybrid Windows Hello for Business Deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Hybrid Windows Hello for Business Prerequisites
 
@@ -27,10 +28,10 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastucture](#public-key-infrastructure)
+* [Public Key Infrastructure](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
-* [MultiFactor Authentication](#multifactor-authentication)
+* [Multifactor Authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
 ## Directories ##
@@ -57,7 +58,7 @@ Review these requirements and those from the Windows Hello for Business planning
 ## Public Key Infrastructure ##
 The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows 10 devices to trust the domain controller.
  
-Certificate trust deployments need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  When using Group Policy, hybrid certificate trust deployment use the Windows Server 2016 Active Directory Federation Server (AS FS) as a certificate registration authority.
+Certificate trust deployments need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  When using Group Policy, hybrid certificate trust deployment uses the Windows Server 2016 Active Directory Federation Server (AD FS) as a certificate registration authority.
 
 The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012.
 
@@ -96,7 +97,7 @@ The AD FS farm used with Windows Hello for Business must be Windows Server 2016 
 ## Multifactor Authentication ##
 Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their username and password as one factor. but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication service or they can use multifactor authentication provides by Windows Server 2016 Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multifactor authentication into AD FS.
+Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication service, or they can use multifactor authentication provides by Windows Server 2016 Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multifactor authentication into AD FS.
 
 ### Section Review 
 > [!div class="checklist"]
@@ -119,7 +120,7 @@ Hybrid certificate trust deployments need the device write back feature.  Authen
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid certificate trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
+Follow the Windows Hello for Business hybrid certificate trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
 
 If your environment is already federated, but does not include Azure device registration, choose **Configure Azure Device Registration**. 
 

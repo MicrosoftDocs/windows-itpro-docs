@@ -1,8 +1,11 @@
 ---
 title: How to Verify First Time Setup Settings
 description: How to Verify First Time Setup Settings
-author: jamiejdt
+author: levinec
 ms.assetid: e8a07d4c-5786-4455-ac43-2deac4042efd
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ While your test of first time setup is running or after it finishes, you can ver
 **Note**  
 For information about how to monitor the successful completion of first time setup throughout your enterprise after deployment, see [Monitoring MED-V Workspace Deployments](monitoring-med-v-workspace-deployments.md).
 
- 
+ 
 
 **To verify settings during first time setup**
 
@@ -48,7 +51,7 @@ For information about how to monitor the successful completion of first time set
         **Note**  
         You can close the virtual machine window at any time and first time setup continues.
 
-         
+         
 
 **To verify settings after first time setup finishes**
 
@@ -81,7 +84,7 @@ For information about how to monitor the successful completion of first time set
 **Note**  
 If you encounter any problems when verifying your first time setup settings, see [Operations Troubleshooting](operations-troubleshooting-medv2.md).
 
- 
+ 
 
 After you have verified that your first time setup settings are correct, you can test other MED-V workspace configurations to verify that they function as intended, such as application publishing and URL redirection.
 
@@ -98,9 +101,9 @@ After you have completed all testing of your MED-V workspace package and have ve
 
 [Manage MED-V Workspace Settings](manage-med-v-workspace-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

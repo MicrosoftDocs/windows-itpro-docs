@@ -2,10 +2,13 @@
 title: Exclude Files and Settings (Windows 10)
 description: Exclude Files and Settings
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: lomayor
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -266,9 +269,9 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 - [Customize USMT XML Files](usmt-customize-xml-files.md)
 - [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

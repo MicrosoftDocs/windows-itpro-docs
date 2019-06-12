@@ -1,18 +1,18 @@
 ---
 title: Policy CSP - TimeLanguageSettings
 description: Policy CSP - TimeLanguageSettings
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/09/2019
+author: manikadhiman
+ms.date: 03/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - TimeLanguageSettings
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 

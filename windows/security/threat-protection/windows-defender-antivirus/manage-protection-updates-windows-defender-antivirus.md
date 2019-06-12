@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -83,27 +85,27 @@ The procedures in this article first describe how to set the order, and then how
 
 **Use Group Policy to manage the update location:**
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+3. Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender > Signature updates** and configure the following settings:
+4. Expand the tree to **Windows components > Windows Defender > Signature updates** and configure the following settings:
 
-    1.  Double-click the **Define the order of sources for downloading definition updates** setting and set the option to **Enabled**.
+   1.  Double-click the **Define the order of sources for downloading definition updates** setting and set the option to **Enabled**.
 
-    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
+   2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
-    ![Screenshot of group policy setting listing the order of sources](images/defender/wdav-order-update-sources.png)
+   ![Screenshot of group policy setting listing the order of sources](images/defender/wdav-order-update-sources.png)
 
-    3.  Click **OK**. This will set the order of protection update sources.
+   3. Click **OK**. This will set the order of protection update sources.
 
-    1.  Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
+   4. Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
 
-    2.  Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
+   5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
 
-    3.  Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
+   6. Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
 
 **Use Configuration Manager to manage the update location:**

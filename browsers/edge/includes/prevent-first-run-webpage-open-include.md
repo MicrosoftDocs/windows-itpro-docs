@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed. Load the First Run webpage. | |
-|Enabled |1 |1 |Prevented. |![Most restricted value](../images/check-gn.png) |
+|                Group Policy                 | MDM | Registry |             Description              |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|--------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Allowed. Load the First Run webpage. |                                                  |
+|                   Enabled                   |  1  |    1     |              Prevented.              | ![Most restricted value](/images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings
@@ -33,7 +36,7 @@ ms:topic: include
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage 
 - **Data type:** Integer
 
-####Registry
+#### Registry
 - **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
 - **Value name:** PreventFirstRunPage
 - **Value type:** REG_DWORD

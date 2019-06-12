@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Certificate Trust New Installation
 
@@ -28,7 +29,7 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Azure Active Directory](#azure-active-directory)
-* [Multi-factor Authentication Services](#multi-factor-authentication-services)
+* [Multifactor Authentication Services](#multifactor-authentication-services)
 
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
@@ -80,7 +81,7 @@ If you do have an existing public key infrastructure, please review [Certificati
 ### Section Review ###
 
 > [!div class="checklist"]
-> *  Miniumum Windows Server 2012 Certificate Authority.
+> *  Minimum Windows Server 2012 Certificate Authority.
 > *  Enterprise Certificate Authority.
 > *  Functioning public key infrastructure.
   
@@ -103,11 +104,11 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 
 ### Azure Multi-Factor Authentication (MFA) Cloud ###
 > [!IMPORTANT]
-As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
+> As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
 > * Azure Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
->
+> 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
 #### Azure MFA Provider #### 
@@ -128,7 +129,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 > * Review the overview and uses of Azure Multifactor Authentication.
 > * Review your Azure Active Directory subscription for Azure Multifactor Authentication.
 > * Create an Azure Multifactor Authentication Provider, if necessary.
-> * Configure Azure Multufactor Authentiation features and settings.
+> * Configure Azure Multifactor Authentication features and settings.
 > * Understand the different User States and their effect on Azure Multifactor Authentication.
 > * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server 2016 Active Directory Federation Services, if necessary.
 
@@ -141,7 +142,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. New Installation Baseline (*You are here*)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

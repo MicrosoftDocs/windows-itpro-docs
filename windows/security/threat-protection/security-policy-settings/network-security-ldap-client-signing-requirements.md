@@ -2,12 +2,14 @@
 title: Network security LDAP client signing requirements (Windows 10)
 description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.
 ms.assetid: 38b35489-eb5b-4035-bc87-df63de50509c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -59,7 +61,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Negotiate signing| 
 | Member Server Effective Default Settings | Negotiate signing| 
 | Client Computer Effective Default Settings | Negotiate signing| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

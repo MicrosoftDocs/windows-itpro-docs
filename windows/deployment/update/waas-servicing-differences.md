@@ -1,21 +1,23 @@
 ---
 title: Servicing differences between Windows 10 and older operating systems
+ms.reviewer: 
+manager: dansimp
 description: Learn the differences between servicing Windows 10 and servicing older operating systems.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: KarenSimWindows
+author: lomayor
 ms.localizationpriority: medium
-ms.author: karensim
+ms.author: lomayor
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 # Understanding the differences between servicing Windows 10-era and legacy Windows operating systems 
 
->Applies to: Windows 10 
-
->**February 15, 2019:  This document has been corrected and edited to reflect that security-only updates for legacy OS versions are not cumulative. They were previously identified as cumulative similar to monthly rollups, which is inaccurate.**
+> Applies to: Windows 10 
+> 
+> **February 15, 2019:  This document has been corrected and edited to reflect that security-only updates for legacy OS versions are not cumulative. They were previously identified as cumulative similar to monthly rollups, which is inaccurate.**
 
 Today, many enterprise customers have a mix of modern and legacy client and server operating systems. Managing the servicing and updating differences between those legacy operating systems and Windows 10 versions adds a level of complexity that is not well understood. This can be confusing. With the end of support for legacy [Windows 7 SP1](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) and Windows Server 2008 R2 variants on January 14, 2020, System Administrators have a critical need critical to understand how best to leverage a modern workplace to support system updates.
  

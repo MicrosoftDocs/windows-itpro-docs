@@ -1,11 +1,14 @@
 ---
 title: Upgrade Readiness data sharing
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 description: Connectivity scenarios for data sharing with Upgrade Readiness
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
+author: lomayor
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -29,10 +32,10 @@ In order to use the direct connection scenario, set the parameter **ClientProxy=
 This is the first and most simple proxy scenario. The WinHTTP stack was designed for use in services and does not support proxy autodetection, PAC scripts or authentication.
 
 In order to set the WinHTTP proxy system-wide on your computers, you need to
-•Use the command netsh winhttp set proxy \<server\>:\<port\>
-•Set ClientProxy=System in runconfig.bat
+- Use the command netsh winhttp set proxy \<server\>:\<port\>
+- Set ClientProxy=System in runconfig.bat
 
-The WinHTTP scenario is most appropriate for customers who use a single proxy or f. If you have more advanced proxy requirements, refer to Scenario 3.
+The WinHTTP scenario is most appropriate for customers who use a single proxy. If you have more advanced proxy requirements, refer to Scenario 3.
 
 If you want to learn more about proxy considerations on Windows, see [Understanding Web Proxy Configuration](https://blogs.msdn.microsoft.com/ieinternals/2013/10/11/understanding-web-proxy-configuration/).
 
@@ -44,5 +47,11 @@ In order to enable this scenario, you need:
 - A current quality update Rollup for Windows 7, 8.1 or Windows 10 Version 1511. Updates shipped after October 2016 have the needed code
 - Set the reg key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy to 0. If the value does not exist, create a new DWORD, name it DisableEnterpriseAuthProxy and set the value to 0. The deployment script will check this is configured correctly.
 - Set ClientProxy=User in bat.
+
+> [!IMPORTANT]
+> Using **Logged-in user's internet connection** with **DisableEnterpriseAuthProxy = 0** scenario is incompatible with ATP where the required value of that attribute is 1.(Read more here)[<https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection>]
+
+
+
 
 

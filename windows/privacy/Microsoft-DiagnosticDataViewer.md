@@ -8,12 +8,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/17/2018
+ms.reviewer: 
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
@@ -107,7 +108,7 @@ The Diagnostic Data Viewer for PowerShell provides you with the following featur
 
     Each event is displayed as a PowerShell Object. By default each event shows the event name, the time when it was seen by your Windows device, whether the event is [Basic](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization), its [diagnostic event category](#view-diagnostic-event-categories), and a detailed JSON view of the information it contains, which shows the event exactly as it was when sent to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
 
-- **View Diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data).  
+- <a id="view-diagnostic-event-categories" />**View diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data).  
     
     To view the diagnostic category represented by each numeric identifier and what the category means, you can run the command:
 

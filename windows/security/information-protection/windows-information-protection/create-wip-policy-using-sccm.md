@@ -2,26 +2,27 @@
 title: Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager (Windows 10)
 description: Configuration Manager (version 1606 or later) helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
+ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 05/13/2019
 ---
 
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
 **Applies to:**
 
-- Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 - System Center Configuration Manager
 
 System Center Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
@@ -73,107 +74,107 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 
 **To add a store app**
 
-1.	From the **App rules** area, click **Add**.
-    
+1.  From the **App rules** area, click **Add**.
+
     The **Add app rule** box appears.
 
     ![Create Configuration Item wizard, add a universal store app](images/wip-sccm-adduniversalapp.png)
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
+2.  Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
 
-3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
+3.  Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
-4.	Pick **Store App** from the **Rule template** drop-down list.
+4.  Pick **Store App** from the **Rule template** drop-down list.
 
     The box changes to show the store app rule options.
 
-5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
+5.  Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
 
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 
-1.	Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
+1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
 
-    >[!NOTE]
+   > [!NOTE]
+   > 
+   > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
 
-    >If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
+2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
-2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
 
-3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
+   The API runs and opens a text editor with the app details.
 
-    The API runs and opens a text editor with the app details.
+   ``` json
+       {
+       "packageIdentityName": "Microsoft.Office.OneNote",
+       "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+       }
+   ```
 
-    ``` json
-        {
-        "packageIdentityName": "Microsoft.Office.OneNote",
-        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-        }
-    ```
+4. Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
-4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
-
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
-    ```json
-        {
-            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-        }
-    ```
+   > [!IMPORTANT]
+   > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
+   > ```json
+   >     {
+   >         "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+   >     }
+   > ```
 
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
-1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
+1. If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >[!NOTE]
-    >Your PC and phone must be on the same wireless network.
+   >[!NOTE]
+   >Your PC and phone must be on the same wireless network.
 
-2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+2. On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
-3.	On the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+3. On the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
 
-4.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+4. Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
 
-5.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+5. In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
 
-6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
+6. On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
 
-7.	Start the app for which you're looking for the publisher and product name values.
+7. Start the app for which you're looking for the publisher and product name values.
 
-8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
+8. Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    >For example:<p>
-    ```json
-        {
-            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-        }
-    ```
+   > [!IMPORTANT]
+   > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+   > For example:<p>
+   > ```json
+   >     {
+   >         "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+   >     }
+   > ```
 
 ### Add a desktop app rule to your policy
 For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app to your policy**
-1.	From the **App rules** area, click **Add**.
-    
+1.  From the **App rules** area, click **Add**.
+
     The **Add app rule** box appears.
 
     ![Create Configuration Item wizard, add a classic desktop app](images/wip-sccm-adddesktopapp.png)
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
+2.  Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
 
-3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
+3.  Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
-4.	Pick **Desktop App** from the **Rule template** drop-down list.
+4.  Pick **Desktop App** from the **Rule template** drop-down list.
 
     The box changes to show the desktop app rule options.
 
-5.	Pick the options you want to include for the app rule (see table), and then click **OK**.
+5.  Pick the options you want to include for the app rule (see table), and then click **OK**.
 
     <table>
         <tr>
@@ -230,13 +231,13 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create an app rule and xml file using the AppLocker tool**
-1.	Open the Local Security Policy snap-in (SecPol.msc).
-    
-2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+1.  Open the Local Security Policy snap-in (SecPol.msc).
+
+2.  In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
     ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
 
-3.	Right-click in the right-hand pane, and then click **Create New Rule**.
+3.  Right-click in the right-hand pane, and then click **Create New Rule**.
 
     The **Create Packaged app Rules** wizard appears.
 
@@ -248,7 +249,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-permissions.png)
 
-6.	On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
+6.  On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
     ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-publisher.png)
 
@@ -264,13 +265,13 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
     ![Local security snap-in, showing the new rule](images/intune-local-security-snapin-updated.png)
 
-10.	In the left pane, right-click on **AppLocker**, and then click **Export policy**.
+10. In the left pane, right-click on **AppLocker**, and then click **Export policy**.
 
     The **Export policy** box opens, letting you export and save your new policy as XML.
 
     ![Local security snap-in, showing the Export Policy option](images/intune-local-security-export.png)
 
-11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+11. In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
     The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
@@ -292,24 +293,24 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
                 </Conditions>
             </FilePublisherRule>
         </RuleCollection>
-	</AppLockerPolicy>
+    </AppLockerPolicy>
     ```
 12. After you’ve created your XML file, you need to import it by using System Center Configuration Manager.
 
 **To import your Applocker policy file app rule using System Center Configuration Manager**
-1.	From the **App rules** area, click **Add**.
-    
+1.  From the **App rules** area, click **Add**.
+
     The **Add app rule** box appears.
 
     ![Create Configuration Item wizard, add an AppLocker policy](images/wip-sccm-addapplockerfile.png)
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
+2.  Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
 
-3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
+3.  Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
-4.	Pick the **AppLocker policy file** from the **Rule template** drop-down list.
+4.  Pick the **AppLocker policy file** from the **Rule template** drop-down list.
 
     The box changes to let you import your AppLocker XML policy file.
 
@@ -322,17 +323,17 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a store app, a desktop app, or an AppLocker policy file app rule**
 
-1.	From the **App rules** area, click **Add**.
-    
+1.  From the **App rules** area, click **Add**.
+
     The **Add app rule** box appears.
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
+2.  Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
 
-3.	Click **Exempt** from the **Windows Information Protection mode** drop-down list.
+3.  Click **Exempt** from the **Windows Information Protection mode** drop-down list.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
 
-4.	Fill out the rest of the app rule info, based on the type of rule you’re adding:
+4.  Fill out the rest of the app rule info, based on the type of rule you’re adding:
 
     - **Store app.** Follow the **Publisher** and **Product name** instructions in the [Add a store app rule to your policy](#add-a-store-app-rule-to-your-policy) section of this topic.
 
@@ -340,7 +341,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
     - **AppLocker policy file.** Follow the **Import** instructions in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section of this topic, using a list of exempted apps.
 
-5.	Click **OK**.
+5.  Click **OK**.
 
 ## Manage the WIP-protection level for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
@@ -385,74 +386,72 @@ There are no default locations included with WIP, you must add each of your netw
 
     The **Add or edit corporate network definition** box appears.
 
-2.	Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
+2. Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
 
-    ![Add or edit corporate network definition box, Add your enterprise network locations](images/wip-sccm-add-network-domain.png)
-    
-    <table>
-        <tr>
-            <th>Network location type</th>
-            <th>Format</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Enterprise Cloud Resources</td>
-            <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
-        </tr>
-        <tr>
-            <td>Enterprise Network Domain Names (Required)</td>
-            <td>corp.contoso.com,region.contoso.com</td>
-            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Proxy servers</td>
-            <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
-        </tr>
-        <tr>
-            <td>Internal proxy servers</td>
-            <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-            <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>           
-        </tr>
-        <tr>
-            <td>Enterprise IPv4 Range (Required)</td>
-            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
-            <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Enterprise IPv6 Range</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-            <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Neutral Resources</td>
-            <td>sts.contoso.com,sts.contoso2.com</td>
-            <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
-        </tr>           
-    </table>
+   ![Add or edit corporate network definition box, Add your enterprise network locations](images/wip-sccm-add-network-domain.png)
 
-3.	Add as many locations as you need, and then click **OK**.
+   <table>
+       <tr>
+           <th>Network location type</th>
+           <th>Format</th>
+           <th>Description</th>
+       </tr>
+       <tr>
+           <td>Enterprise Cloud Resources</td>
+           <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
+           <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<p>If you have multiple resources, you must separate them using the &quot;|&quot; delimiter. If you don’t use proxy servers, you must also include the &quot;,&quot; delimiter just before the &quot;|&quot;. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
+       </tr>
+       <tr>
+           <td>Enterprise Network Domain Names (Required)</td>
+           <td>corp.contoso.com,region.contoso.com</td>
+           <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the &quot;,&quot; delimiter.</td>
+       </tr>
+       <tr>
+           <td>Proxy servers</td>
+           <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
+           <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the &quot;;&quot; delimiter.</td>
+       </tr>
+       <tr>
+           <td>Internal proxy servers</td>
+           <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
+           <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the &quot;;&quot; delimiter.</td><br/>    </tr>
+       <tr>
+           <td>Enterprise IPv4 Range (Required)</td>
+           <td><strong>Starting IPv4 Address:</strong> 3.4.0.1<br><strong>Ending IPv4 Address:</strong> 3.4.255.254<br><strong>Custom URI:</strong> 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
+           <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
+       </tr>
+       <tr>
+           <td>Enterprise IPv6 Range</td>
+           <td><strong>Starting IPv6 Address:</strong> 2a01:110::<br><strong>Ending IPv6 Address:</strong> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br><strong>Custom URI:</strong> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+           <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
+       </tr>
+       <tr>
+           <td>Neutral Resources</td>
+           <td>sts.contoso.com,sts.contoso2.com</td>
+           <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the &quot;,&quot; delimiter.</td>
+       </tr><br/></table>
 
-    The **Add or edit corporate network definition** box closes.
+3. Add as many locations as you need, and then click **OK**.
 
-4.	Decide if you want to Windows to look for additional network settings and if you want to show the WIP icon on your corporate files while in File Explorer.
+   The **Add or edit corporate network definition** box closes.
 
-    ![Create Configuration Item wizard, Add whether to search for additional network settings](images/wip-sccm-optsettings.png)
+4. Decide if you want to Windows to look for additional network settings and if you want to show the WIP icon on your corporate files while in File Explorer.
 
-    - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network. Not configured is the default option.
+   ![Create Configuration Item wizard, Add whether to search for additional network settings](images/wip-sccm-optsettings.png)
 
-    - **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network. Not configured is the default option.
+   - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network. Not configured is the default option.
 
-    - **Show the Windows Information Protection icon overlay on your allowed apps that are WIP-unaware on corporate files in the File Explorer.** Click this box if you want the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with *Managed* text on the app name in the **Start** menu. Not configured is the default option.
+   - **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network. Not configured is the default option.
 
-5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
-    
-    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/wip-sccm-dra.png)
+   - **Show the Windows Information Protection icon overlay on your allowed apps that are WIP-unaware on corporate files in the File Explorer.** Click this box if you want the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with *Managed* text on the app name in the **Start** menu. Not configured is the default option.
 
-    After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
-    
-    For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
+5. In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+
+   ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/wip-sccm-dra.png)
+
+   After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
+
+   For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional WIP settings.
@@ -460,27 +459,27 @@ After you've decided where your protected apps can access enterprise data on you
 ![Create Configuration Item wizard, Choose any additional, optional settings](images/wip-sccm-additionalsettings.png)
 
 **To set your optional settings**
-1.	Choose to set any or all of the optional settings:
+1.  Choose to set any or all of the optional settings:
 
     - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
-	
+
         - **Yes (recommended).** Turns on the feature and provides the additional protection.
-	
+
         - **No, or not configured.**  Doesn't enable this feature.
 
     - **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
 
-	    - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
+        - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
 
-	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+        - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
 
-    - **Revoke local encryption keys during the unerollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
+    - **Revoke local encryption keys during the unenrollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
         - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
-        
+
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
 
-    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Choose to set up Azure Rights Management with WIP](create-wip-policy-using-intune-azure.md#choose-to-set-up-azure-rights-management-with-wip). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell).
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell). If you don’t specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
 
 2. After you pick all of the settings you want to include, click **Summary**.
 
@@ -491,7 +490,7 @@ After you've finished configuring your policy, you can review all of your info o
 - Click the **Summary** button to review your policy choices, and then click **Next** to finish and to save your policy.
 
     ![Create Configuration Item wizard, Summary screen for all of your policy choices](images/wip-sccm-summaryscreen.png)
- 
+
     A progress bar appears, showing you progress for your policy. After it's done, click **Close** to return to the **Configuration Items** page.
 
 ## Deploy the WIP policy

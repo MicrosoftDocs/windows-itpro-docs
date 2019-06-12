@@ -1,5 +1,7 @@
 ---
 title: Setting the BitLocker encryption algorithm for Autopilot devices
+ms.reviewer: 
+manager: laurawi
 description: Microsoft Intune provides a comprehensive set of configuration options to manage BitLocker on Windows 10 devices. 
 keywords: Autopilot, BitLocker, encryption, 256-bit, Windows 10
 ms.prod: w10
@@ -9,13 +11,17 @@ ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
-ms.author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
 
 # Setting the BitLocker encryption algorithm for Autopilot devices
+
+**Applies to**
+
+-   Windows 10
 
 With Windows Autopilot, you can configure the BitLocker encryption settings to be applied before automatic encryption is started. This ensures that the default encrytion algorithm is not applied automatically when this is not the desired setting. Other BitLocker policies that must be applied prior to encryption can also be delivered before automatic BitLocker encryption begins. 
 

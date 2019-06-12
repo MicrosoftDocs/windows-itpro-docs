@@ -2,12 +2,15 @@
 title: Audit Kerberos Service Ticket Operations (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Kerberos Service Ticket Operations, which determines whether the operating system generates security audit events for Kerberos service ticket requests.
 ms.assetid: ddc0abef-ac7f-4849-b90d-66700470ccd6
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dulcemontemayor
 ms.date: 04/19/2017
 ---
 

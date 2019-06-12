@@ -2,12 +2,14 @@
 title: DeviceStatus CSP
 description: The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/26/2018
+author: manikadhiman
+ms.date: 04/30/2019
 ---
 
 # DeviceStatus CSP
@@ -36,9 +38,9 @@ Required. Node for queries on the SIM cards.
 
 > **Note**  Multiple SIMs are supported.
 
- 
+ 
 
-<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/****_IMEI_**  
+<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
 
 <a href="" id="devicestatus-cellularidentities-imei-imsi"></a>**DeviceStatus/CellularIdentities/*IMEI*/IMSI**  
@@ -74,7 +76,7 @@ Supported operation is Get.
 <a href="" id="devicestatus-networkidentifiers"></a>**DeviceStatus/NetworkIdentifiers**  
 Node for queries on network and device properties.
 
-<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/****_MacAddress_**  
+<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/**<strong>*MacAddress*</strong>  
 MAC address of the wireless network card. A MAC address is present for each network card on the device.
 
 <a href="" id="devicestatus-networkidentifiers-macaddress-ipaddressv4"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/IPAddressV4**  
@@ -157,6 +159,12 @@ Valid values:
 
 Supported operation is Get.
 
+If more than one antivirus provider is active, this node returns:
+-   1 – If every active antivirus provider has a valid signature status.
+-   0 – If any of the active antivirus providers has an invalid signature status.
+
+This node also returns 0 when no antivirus provider is active.
+
 <a href="" id="devicestatus-antivirus-status"></a>**DeviceStatus/Antivirus/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antivirus.
 
@@ -185,6 +193,12 @@ Valid values:
 -  2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
+
+If more than one antispyware provider is active, this node returns:
+-   1 – If every active antispyware provider has a valid signature status.
+-   0 – If any of the active antispyware providers has an invalid signature status.
+
+This node also returns 0 when no antispyware provider is active.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware.

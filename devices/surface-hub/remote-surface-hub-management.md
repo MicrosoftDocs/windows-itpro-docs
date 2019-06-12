@@ -4,10 +4,12 @@ description: This section lists topics for managing Surface Hub.
 keywords: remote management, MDM, install apps, monitor Surface Hub, Operations Management Suite, OMS
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 

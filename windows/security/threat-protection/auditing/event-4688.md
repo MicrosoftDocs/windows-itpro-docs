@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4688(S): A new process has been created.
@@ -66,7 +69,6 @@ This event generates every time a new process starts.
  <Data Name="MandatoryLabel">S-1-16-8192</Data> 
  </EventData>
 </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -196,19 +198,19 @@ For 4688(S): A new process has been created.
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** that you are concerned about.                             |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** for names that don’t comply with naming conventions.                                                                                     |
 
--   If you have a pre-defined “**New** **Process Name**” or **“Creator Process Name**” for the process reported in this event, monitor all events with “**New** **Process Name**” or **“Creator Process Name**” not equal to your defined value.
+- If you have a pre-defined “**New** **Process Name**” or **“Creator Process Name**” for the process reported in this event, monitor all events with “**New** **Process Name**” or **“Creator Process Name**” not equal to your defined value.
 
--   You can monitor to see if “**New** **Process Name**” or **“Creator Process Name**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+- You can monitor to see if “**New** **Process Name**” or **“Creator Process Name**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
--   If you have a pre-defined list of restricted substrings or words in process names (for example “**mimikatz**” or “**cain.exe**”), check for these substrings in “**New** **Process Name**” or **“Creator Process Name**.”
+- If you have a pre-defined list of restricted substrings or words in process names (for example “**mimikatz**” or “**cain.exe**”), check for these substrings in “**New** **Process Name**” or **“Creator Process Name**.”
 
--   It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
+- It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
 
--   Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol**.** Typically this means that UAC is disabled for this account for some reason.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<strong>.</strong> Typically this means that UAC is disabled for this account for some reason.
 
--   Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol**.** This means that a user ran a program using administrative privileges.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<strong>.</strong> This means that a user ran a program using administrative privileges.
 
--   You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
+- You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
 
--   If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the “**Mandatory Label**” in this event.
+- If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the “**Mandatory Label**” in this event.
 

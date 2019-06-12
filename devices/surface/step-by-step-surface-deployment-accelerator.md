@@ -2,14 +2,16 @@
 title: Step by step Surface Deployment Accelerator (Surface)
 description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices.
 ms.assetid: A944FB9C-4D81-4868-AFF6-B9D1F5CF1032
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 keywords: deploy, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: miladCA
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ---
@@ -45,94 +47,94 @@ The tool installs in the SDA program group, as shown in Figure 2.
 >[!NOTE]
 >At this point, the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
 
- 
+
 
 ## Create a deployment share
 
 
-The following steps show you how to create a deployment share for Windows 10 that supports Surface 3, Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, the Surface Asset Tag Tool, and Office 365. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
+The following steps show you how to create a deployment share for Windows 10 that supports Surface 3, Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, the Surface Asset Tag Tool, and Office 365. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
 
 >[!NOTE]
->SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
+>SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
 
- 
 
-1.  Open the SDA wizard by double-clicking the icon in the **Surface Deployment Accelerator** program group on the Start screen.
 
-2.  On the **Welcome** page, click **Next** to continue.
+1. Open the SDA wizard by double-clicking the icon in the **Surface Deployment Accelerator** program group on the Start screen.
 
-3.  On the **Verify System** page, the SDA wizard verifies the prerequisites required for an SDA deployment share. This process also checks for the presence of the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10 and the Microsoft Deployment Toolkit (MDT) 2013 Update 2. If these tools are not detected, they are downloaded and installed automatically. Click **Next** to continue.
+2. On the **Welcome** page, click **Next** to continue.
 
-  >[!NOTE]
-  >As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
-  > * Deployment tools
-  >  * User State Migration Tool (USMT)
-  >  * Windows Preinstallation Environment (WinPE)</br></br>
+3. On the **Verify System** page, the SDA wizard verifies the prerequisites required for an SDA deployment share. This process also checks for the presence of the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10 and the Microsoft Deployment Toolkit (MDT) 2013 Update 2. If these tools are not detected, they are downloaded and installed automatically. Click **Next** to continue.
 
-  >[!NOTE]
-  >As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
+   > [!NOTE]
+   > As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
+   > * Deployment tools
+   >   * User State Migration Tool (USMT)
+   >   * Windows Preinstallation Environment (WinPE)</br></br>
+   > 
+   > [!NOTE]
+   > As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
 
-4.  On the **Windows 8.1** page, to create a Windows 10 deployment share, do not select the **Would you like to support Windows 8.1** check box. Click **Next** to continue.
+4. On the **Windows 8.1** page, to create a Windows 10 deployment share, do not select the **Would you like to support Windows 8.1** check box. Click **Next** to continue.
 
-5.  On the **Windows 10** page, to create a Windows 10 deployment share, select the **Would you like to support Windows 10** check box. Supply the following information before you click **Next** to continue:
+5. On the **Windows 10** page, to create a Windows 10 deployment share, select the **Would you like to support Windows 10** check box. Supply the following information before you click **Next** to continue:
 
-    -   **Configure Deployment Share for Windows 10**
+   -   **Configure Deployment Share for Windows 10**
 
-        -   **Local Path** – Specify or browse to a location on the local storage device where you would like to store the deployment share files for the Windows 10 SDA deployment share. For example, **E:\\SDAWin10\\** is the location specified in Figure 3.
+       -   **Local Path** – Specify or browse to a location on the local storage device where you would like to store the deployment share files for the Windows 10 SDA deployment share. For example, **E:\\SDAWin10\\** is the location specified in Figure 3.
 
-        -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
+       -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
 
-    -   **Windows 10 Deployment Services**
+   -   **Windows 10 Deployment Services**
 
-        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
+       -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
 
-    -   **Windows 10 Source Files**
+   -   **Windows 10 Source Files**
 
-        -   **Local Path** – Specify or browse to the root directory of Windows 10 installation files. If you have an ISO file, mount it and browse to the root of the mounted drive. You must have a full set of source files, not just **Install.wim**.
+       -   **Local Path** – Specify or browse to the root directory of Windows 10 installation files. If you have an ISO file, mount it and browse to the root of the mounted drive. You must have a full set of source files, not just **Install.wim**.
 
-    ![Specify Windows 10 deployment share options](images/sdasteps-fig3.png "Specify Windows 10 deployment share options")
+   ![Specify Windows 10 deployment share options](images/sdasteps-fig3.png "Specify Windows 10 deployment share options")
 
-    *Figure 3. Specify Windows 10 deployment share options*
+   *Figure 3. Specify Windows 10 deployment share options*
 
-6.  On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface 3 and Surface Pro 3 and cannot be selected unless Surface 3 or Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
+6. On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface 3 and Surface Pro 3 and cannot be selected unless Surface 3 or Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
 
-    ![Firmware tool selection](images/sdasteps-fig4-select.png "Firmware tool selection")
+   ![Firmware tool selection](images/sdasteps-fig4-select.png "Firmware tool selection")
 
-    *Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers*
+   *Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers*
 
-    >[!NOTE]
-    >You cannot select both Surface 3 and Surface 3 LTE models at the same time.
+   >[!NOTE]
+   >You cannot select both Surface 3 and Surface 3 LTE models at the same time.
 
-7.  On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
+7. On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
 
-    -   Download of Windows ADK
+   -   Download of Windows ADK
 
-    -   Installation of Windows ADK
+   -   Installation of Windows ADK
 
-    -   Download of MDT
+   -   Download of MDT
 
-    -   Installation of MDT
+   -   Installation of MDT
 
-    -   Download of Surface apps and drivers
+   -   Download of Surface apps and drivers
 
-    -   Creation of the deployment share
+   -   Creation of the deployment share
 
-    -   Import of Windows installation files into the deployment share
+   -   Import of Windows installation files into the deployment share
 
-    -   Import of the apps and drivers into the deployment share
+   -   Import of the apps and drivers into the deployment share
 
-    -   Creation of rules and task sequences for Windows deployment
+   -   Creation of rules and task sequences for Windows deployment
 
-    ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
+   ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
-    *Figure 5. The Installation Progress window*
->[!NOTE]
->The following error message may be hit while Installing the latest ADK or MDT: "An exception occurred during a WebClient request.". This is due to incompatibility between SDA and BITS. Here is the workaround for this:
+   *Figure 5. The Installation Progress window*
+   >[!NOTE]
+   >The following error message may be hit while Installing the latest ADK or MDT: "An exception occurred during a WebClient request.". This is due to incompatibility between SDA and BITS. Here is the workaround for this:
 
- ```
-In the following two PowerShell scripts:
-%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
-%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\INSTALL-WindowsADK.ps1
+   ```
+   In the following two PowerShell scripts:
+   %ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
+   %ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\INSTALL-WindowsADK.ps1
 
 Edit the $BITSTransfer variable in the input parameters to $False as shown below:
 
@@ -145,7 +147,7 @@ Param(
         [string]$BITSTransfer = $False
     )
  ```
- 
+
 8.  When the SDA process completes the creation of your deployment share, a **Success** window is displayed. Click **Finish** to close the window. At this point your deployment share is now ready to perform a Windows deployment to Surface devices.
 
 ### Optional: Create a deployment share without an Internet connection
@@ -168,7 +170,7 @@ If you are unable to connect to the Internet with your deployment server, or if 
 >[!NOTE]
 >The **Copy from a Local Directory** check box is only available in SDA version 1.90.0221 or later.
 
- 
+
 
 ### <a href="" id="optional"></a>Optional: Prepare offline USB media
 
@@ -177,7 +179,7 @@ You can use USB media to perform an SDA deployment if your Surface device is una
 >[!NOTE]
 >The offline media files for the complete SDA deployment share are approximately 9 GB in size. Your USB drive must be at least 9 GB in size. A 16 GB USB drive is recommended.
 
- 
+
 
 Before you can create bootable media files within the MDT Deployment Workbench or copy those files to a USB drive, you must first configure that USB drive to be bootable. Using [DiskPart](https://go.microsoft.com/fwlink/p/?LinkId=761073), create a partition, format the partition as FAT32, and set the partition to be active. To run DiskPart, open an administrative PowerShell or Command Prompt window, and then run the following sequence of commands, as shown in Figure 7:
 
@@ -209,7 +211,7 @@ Before you can create bootable media files within the MDT Deployment Workbench o
     >[!NOTE]
     >You can format your USB drive with FAT32 from Disk Management, but you must still use DiskPart to set the partition as active for the drive to boot properly.
 
-     
+
 
 After you have prepared the USB drive for boot, the next step is to generate offline media from the SDA deployment share. To create this media, follow these steps:
 
@@ -262,7 +264,6 @@ After you have prepared the USB drive for boot, the next step is to generate off
 18. Press **Ctrl+A** to select all of the text in the window, then press **Ctrl+V** to paste the text from the SDA deployment share Bootstrap.ini file.
 
 19. Delete the following lines from the Bootstrap.ini as shown in Figure 11, and then save the file:
-
     ```
     UserID=
     UserDomain=
@@ -354,7 +355,7 @@ To perform a deployment from the SDA deployment share, follow this process on th
 
 ### Boot the Surface device from the network
 
-To boot the Surface device from the network, the Microsoft Surface Deployment Accelerator wizard must have been run on a Windows Server 2012 R2 or later environment that was configured with the Windows Deployment Services (WDS). WDS must have been configured to respond to network boot (PXE boot) requests and the boot files must have been imported into WDS. The SDA wizard will import these file automatically if the **Import boot media into the local Windows Deployment Service** check box was selected on the page for the version of Windows you intend to deploy.
+To boot the Surface device from the network, the Microsoft Surface Deployment Accelerator wizard must have been run on a Windows Server 2012 R2 or later environment that was configured with the Windows Deployment Services (WDS). WDS must have been configured to respond to network boot (PXE boot) requests and the boot files must have been imported into WDS. The SDA wizard will import these file automatically if the **Import boot media into the local Windows Deployment Service** check box was selected on the page for the version of Windows you intend to deploy.
 
 To boot the Surface device from the network, you must also use a Microsoft Surface Ethernet Adapter or the Ethernet port on a Microsoft Surface Dock. Third-party Ethernet adapters are not supported for network boot (PXE boot). A keyboard is also required. Both the Microsoft Surface Type Cover and keyboards connected via USB to the device or dock are supported.
 
@@ -364,7 +365,7 @@ To instruct your Surface device to boot from the network, start with the device 
 
 2.  Press **Enter** when prompted by the dialog on the screen. This prompt indicates that your device has found the WDS PXE server over the network.
 
-3.  If you have configured more than one deployment share on this device, you will be prompted to select between the boot images for each deployment share. For example, if you created both a Windows 10 and a Windows 8.1 deployment share, you will be prompted to choose between these two options.
+3.  If you have configured more than one deployment share on this device, you will be prompted to select between the boot images for each deployment share. For example, if you created both a Windows 10 and a Windows 8.1 deployment share, you will be prompted to choose between these two options.
 
 4.  Enter the domain credentials that you use to log on to the server where SDA is installed when you are prompted, as shown in Figure 14.
 
@@ -414,9 +415,9 @@ To run the Deploy Microsoft Surface task sequence:
 
 8.  When the deployment task sequence completes, a **Success** window is displayed. Click **Finish** to complete the deployment and begin using your Surface device.
 
- 
 
- 
+
+
 
 
 

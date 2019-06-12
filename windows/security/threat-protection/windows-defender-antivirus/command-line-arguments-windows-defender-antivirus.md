@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can perform various Windows Defender Antivirus functions with the dedicated command-line tool mpcmdrun.exe.
 
@@ -35,23 +37,23 @@ The utility has the following commands:
 MpCmdRun.exe [command] [-options]
 ```
 
-Command | Description 
-:---|:---
-\-? **or** -h | Displays all available options​ for this tool​
-\-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]]​ [-Timeout <days>]​ [-Cancel]​ | Scans for malicious software​
-\-Trace [-Grouping #] [-Level #] | Starts diagnostic tracing​
-\-GetFiles | Collects support information​
-\-GetFilesDiagTrack | Same as Getfiles but outputs to​ temporary DiagTrack folder​
-\-RemoveDefinitions [-All] | Restores the installed​ Security intelligence  to a previous backup copy or to​ the original default set
-\-RemoveDefinitions [-DynamicSignatures] | Removes only the dynamically​ downloaded Security intelligence ​
-\-RemoveDefinitions [-Engine] | Restores the previous installed engine
-\-SignatureUpdate [-UNC \| -MMPC] | Checks for new Security intelligence updates​
-\-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]] | Restores or list​s quarantined item(s)​
-\-AddDynamicSignature [-Path] | Loads dynamic Security intelligence ​
-\-ListAllDynamicSignatures | Lists the loaded dynamic Security intelligence ​
-\-RemoveDynamicSignature [-SignatureSetID] | Removes dynamic Security intelligence ​
-\-CheckExclusion -path <path> | Checks whether a path is excluded
 
+| Command                                                                                                 | Description                                                                                            |
+|:--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| \-? **or** -h                                                                                           | Displays all available options for this tool                                                           |
+| \-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]] [-Timeout <days>] [-Cancel] | Scans for malicious software                                                                           |
+| \-Trace [-Grouping #] [-Level #]                                                                        | Starts diagnostic tracing                                                                              |
+| \-GetFiles                                                                                              | Collects support information                                                                           |
+| \-GetFilesDiagTrack                                                                                     | Same as Getfiles but outputs to temporary DiagTrack folder                                             |
+| \-RemoveDefinitions [-All]                                                                              | Restores the installed Security intelligence  to a previous backup copy or to the original default set |
+| \-RemoveDefinitions [-DynamicSignatures]                                                                | Removes only the dynamically downloaded Security intelligence                                          |
+| \-RemoveDefinitions [-Engine]                                                                           | Restores the previous installed engine                                                                 |
+| \-SignatureUpdate [-UNC \| -MMPC]                                                                       | Checks for new Security intelligence updates                                                           |
+| \-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]]               | Restores or lists quarantined item(s)                                                                  |
+| \-AddDynamicSignature [-Path]                                                                           | Loads dynamic Security intelligence                                                                    |
+| \-ListAllDynamicSignatures                                                                              | Lists the loaded dynamic Security intelligence                                                         |
+| \-RemoveDynamicSignature [-SignatureSetID]                                                              | Removes dynamic Security intelligence                                                                  |
+| \-CheckExclusion -path <path>                                                                           | Checks whether a path is excluded                                                                      |
 
 ## Related topics
 

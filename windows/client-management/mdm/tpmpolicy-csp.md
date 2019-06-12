@@ -1,12 +1,14 @@
 ---
 title: TPMPolicy CSP
 description: TPMPolicy CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 11/01/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TPMPolicy CSP
@@ -36,19 +38,19 @@ The following diagram shows the TPMPolicy configuration service provider in tree
 Here is an example:
 
 ``` syntax
-                <Replace>
-                    <CmdID>101</CmdID>
-                    <Item>
-                        <Target>
-                            <LocURI>
-                                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
-                            </LocURI>
-                        </Target>
-                        <Meta>
+                <Replace>
+                    <CmdID>101</CmdID>
+                    <Item>
+                        <Target>
+                            <LocURI>
+                                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
+                            </LocURI>
+                        </Target>
+                        <Meta>
                             <Format>bool</Format>
-                                <Type>text/plain</Type>
-                        </Meta>
-                        <Data>true</Data>
-                    </Item>
-                </Replace>
+                                <Type>text/plain</Type>
+                        </Meta>
+                        <Data>true</Data>
+                    </Item>
+                </Replace>
 ```

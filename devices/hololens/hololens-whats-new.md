@@ -3,11 +3,13 @@ title: What's new in Microsoft HoloLens (HoloLens)
 description: Windows Holographic for Business gets new features in Windows 10, version 1809.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/13/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # What's new in Microsoft HoloLens
@@ -33,14 +35,14 @@ Share from Microsoft Edge | Share button is now available on Microsoft Edge wind
 ### For administrators 
 
 
-Feature | Details  
---- | --- 
-[Enable post-setup provisioning](hololens-provisioning.md) | You can now apply a runtime provisioning package at any time using **Settings**.   
-Assigned access with Azure AD groups | You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.  
-PIN sign-in on profile switch from sign-in screen  | PIN sign-in is now available for **Other User**.  | When signing in as **Other User**, the PIN option is now available under **Sign-In options**. 
-Sign in with Web Credential Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
-Read device hardware info through MDM so devices can be tracked by serial # | IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
-Set HoloLens device name through MDM (rename) |  IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
+|                                   Feature                                   |                                                                                                                                                                       Details                                                                                                                                                                        |
+|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         [Enable post-setup provisioning](hololens-provisioning.md)          |                                                                                                                                   You can now apply a runtime provisioning package at any time using **Settings**.                                                                                                                                   |
+|                    Assigned access with Azure AD groups                     |                                                                                                           You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.                                                                                                            |
+|              PIN sign-in on profile switch from sign-in screen              |                                                                                                                                                  PIN sign-in is now available for **Other User**.                                                                                                                                                    |
+|             Sign in with Web Credential Provider using password             | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  |
+| Read device hardware info through MDM so devices can be tracked by serial # |                                                                                        IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions.                                                                                         |
+|                Set HoloLens device name through MDM (rename)                |                                                                                                IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions.                                                                                                |
 
 ### For international customers 
  
