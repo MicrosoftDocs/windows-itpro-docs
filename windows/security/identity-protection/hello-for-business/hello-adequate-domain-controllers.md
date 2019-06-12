@@ -19,9 +19,12 @@ ms.date: 08/20/2018
 
 **Applies to**
 -   Windows 10, version 1702 or later
--   Windows Server 2019
+-   Windows Server, versions 2016 and 2019
 -   Hybrid or On-Premises deployment
 -   Key trust
+
+> [!NOTE]
+>There was an issue with key trust on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
 
 ## How many is adequate
 
@@ -68,8 +71,7 @@ There are several conclusions here:
 
 The preceding was an example to show why it's unrealistic to have a "one-size-fits-all" number to describe what "an adequate amount" means.  In the real world, authentication is not evenly distributed across domain controllers.
 
-> [!NOTE]
->There was an issue with key trust on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
+
 
 ## Determining total AS Request load
 
