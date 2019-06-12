@@ -264,7 +264,7 @@ The account options on a user account includes an option -- **Smart card is requ
 ![SCRIL setting on AD Users and Computers](images/passwordless/00-scril-dsa.png)
 **SCRIL setting for a user on Active Directory Users and Computers.**
 
-When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account do not allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level do not expire. The users are effectively password-less because:
+When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account do not allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level do not expire. The users are effectively passwordless because:
 - the do not know their password.
 - their password is 128 random bits of data and is likely to include non-typable characters.
 - the user is not asked to change their password
