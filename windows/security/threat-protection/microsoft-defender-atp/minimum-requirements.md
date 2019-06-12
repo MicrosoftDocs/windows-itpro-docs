@@ -87,7 +87,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 > -   You cannot change your data storage location after the first-time setup.
 > -   Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
-<span id="telemetry-and-diagnostics-settings" />
+
 ### Diagnostic data settings
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
 By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
