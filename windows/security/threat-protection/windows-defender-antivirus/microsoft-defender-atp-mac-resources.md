@@ -74,7 +74,7 @@ We distribute our updates via Microsoft Auto Update (MAU). You can check for MAU
 
 **Q**: Can MDATP for Mac be updated without MAU?
 
-**A**: In the current release, MDATP for Mac product updates are done via Microsoft Auto Update (MAU). While advanced manageability experts may be able to set up the product updates without MAU, this scenario is not explicitly supported. We will monitor customer interest in this scenario to evaluate its importance relative to other product advancements.
+**A**: In the current release, MDATP for Mac product updates are done via MAU. While advanced manageability experts may be able to set up the product updates without MAU, this scenario is not explicitly supported. We will monitor customer interest in this scenario to evaluate its importance relative to other product advancements.
 
 ## Uninstalling
 
