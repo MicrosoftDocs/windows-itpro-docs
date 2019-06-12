@@ -83,11 +83,11 @@ The installation will proceed.
 
 ### Fixing disabled Real Time Protection
 
-If you did not enable Microsoft's driver during the installation, then Defender's application will display a banner prompting you to enable it:
+If you did not enable Microsoft's driver during installation, then Defender's application will display a banner prompting you to enable it:
 
    ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
 
-You can also run ```mdatp --health```, that would report that the Real Time Protection is enabled but not available:
+You can also run ```mdatp --health```. It will report if Real Time Protection is enabled but not available:
 
 ```bash
 mavel-mojave:~ testuser$ mdatp --health
@@ -100,13 +100,13 @@ realTimeProtectionEnabled               : true
 > [!NOTE]
 > You have a 30 minute window to enable Real Time Protection from the warning banner, immediately following installation.
 
-The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Click on the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
+The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Select the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
 
-If you don't see a prompt, then it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
+If you don't see a warning banner, it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
 
 ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
 
-In this case you will need to perform the following steps to enable Real Time Protection instead. 
+In this case, you will need to perform the following steps to enable Real Time Protection instead. 
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
