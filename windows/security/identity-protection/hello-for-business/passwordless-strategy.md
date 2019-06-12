@@ -110,7 +110,7 @@ You begin with your work personas. These were part of your preparation process. 
 > [!IMPORTANT]
 > Avoid using any work personas from your IT department. This is probably the worst way to start the passwordless journey. IT roles are very difficult and time consuming. IT workers typically have multiple credentials, run a multitude of scripts and custom applications, and are the worst offenders of password usage. It is better to save these work personas for the middle or end of your journey.
 
-Review your collection of work personas. Early in your password-less journey, identify personas that have the fewest applications. These work personas could represent an entire department or two. These are the perfect work personas for your proof-of-concept or pilot.
+Review your collection of work personas. Early in your passwordless journey, identify personas that have the fewest applications. These work personas could represent an entire department or two. These are the perfect work personas for your proof-of-concept or pilot.
 
 Most organizations host their proof of concept in a test lab or environment. To do that with password-less may be more challenging and take more time. To test in a lab, you must first duplicate the environment of the targeted persona. This could be a few days or several weeks depending on the complexity of targeted work persona.
 
