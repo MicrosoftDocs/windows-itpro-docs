@@ -108,7 +108,7 @@ What is the best guidance for kicking off the passwordless journey?  You will wa
 You begin with your work personas. These were part of your preparation process. They have a persona name, such as Abby Accounting II, or any other naming convention your organization defined. That work persona includes a list of all the applications that Abby uses to perform her assigned duties in the accounting department. To start, you need to pick a work persona. This is the targeted work persona you will enable to climb the passwordless steps.
 
 > [!IMPORTANT]
-> Avoid using any work personas from your IT department. This is probably the worst way to start the password-less journey. IT roles are very difficult and time consuming. IT workers typically have multiple credentials, run a multitude of scripts and custom applications, and are the worst offenders of password usage. It is better to save these work personas for the middle or end of your journey.
+> Avoid using any work personas from your IT department. This is probably the worst way to start the passwordless journey. IT roles are very difficult and time consuming. IT workers typically have multiple credentials, run a multitude of scripts and custom applications, and are the worst offenders of password usage. It is better to save these work personas for the middle or end of your journey.
 
 Review your collection of work personas. Early in your password-less journey, identify personas that have the fewest applications. These work personas could represent an entire department or two. These are the perfect work personas for your proof-of-concept or pilot.
 
