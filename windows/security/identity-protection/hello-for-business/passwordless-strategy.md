@@ -138,7 +138,7 @@ The journey to being passwordless is to take each work persona through each pass
 
 After successfully moving a work persona to password-less, you can prioritize the remaining work personas, and repeat the process.
 
-### Password-less replacement offering (Step 1)
+### Passwordless replacement offering (Step 1)
 The first step to password-less is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
 
 #### Identify test users that represent the targeted work persona
