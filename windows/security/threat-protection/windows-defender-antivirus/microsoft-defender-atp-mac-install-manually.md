@@ -97,12 +97,16 @@ realTimeProtectionEnabled               : true
 ...
 ```
 
-To resolve it, click on the Fix button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation". 
-You can enable it by performting the following steps:
+> [!NOTE]
+> You have a 30 minute window to enable Real Time Protection from the warning banner, immediately following installation.
 
-Note, that if you won't complete this step [during 30 minutes](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) after the installation, the prompt will disappear:
+The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Click on the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
 
-   ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+If you don't see a prompt, then it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
+
+![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+
+In this case you will need to perform the following steps to enable Real Time Protection instead. 
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
