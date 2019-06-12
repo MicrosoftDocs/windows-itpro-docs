@@ -28,9 +28,9 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastructure](#public-key-infastructure)
+* [Public Key Infrastructure](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
-* [Federation](#federation)
+* [Federation](#federation-with-azure)
 * [MultiFactor Authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
