@@ -22,9 +22,9 @@ ms.reviewer:
 -   Windows 10
 
 Windows Hello for Business authentication works through collection of components and infrastructure working together.  You can group the infrastructure and components in three categories:
-- [Registration](#Registration)
-- [Provisioning](#Provisioning)
-- [Authentication](#Authentication)
+- [Registration](#registration)
+- [Provisioning](#provisioning)
+- [Authentication](#authentication)
 
 ## Registration
 

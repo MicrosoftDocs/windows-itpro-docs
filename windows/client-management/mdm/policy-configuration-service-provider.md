@@ -738,7 +738,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="CryptographyAllowFipsAlgorithmPolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="cryptographyallowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
     <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
