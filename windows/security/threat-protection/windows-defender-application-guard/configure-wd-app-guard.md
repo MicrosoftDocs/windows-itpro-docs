@@ -6,14 +6,16 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dansimp
+ms.author: dansimp
 ms.date: 10/17/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Windows Defender Application Guard policy settings
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 
@@ -27,11 +29,11 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 >You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. 
 
 
-|Policy name|Supported versions|Description|
-|-----------|------------------|-----------|
-|Private network ranges for apps|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
-|Enterprise resource domains hosted in the cloud|At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Notes: 1) Please include a full domain name (www.contoso.com) in the configuration 2) You may optionally use "." as a wildcard character to automatically trust subdomains. Configuring ".constoso.com" will automatically trust "subdomain1.contoso.com", "subdomain2.contoso.com" etc. |
-|Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment.|
+|                   Policy name                   |                   Supported versions                   |                                                                                                                                                                                                                               Description                                                                                                                                                                                                                                |
+|-------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Private network ranges for apps         | At least Windows Server 2012, Windows 8, or Windows RT |                                                                                                 A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.                                                                                                 |
+| Enterprise resource domains hosted in the cloud | At least Windows Server 2012, Windows 8, or Windows RT | A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Notes: 1) Please include a full domain name (www.contoso.com) in the configuration 2) You may optionally use "." as a wildcard character to automatically trust subdomains. Configuring ".constoso.com" will automatically trust "subdomain1.contoso.com", "subdomain2.contoso.com" etc. |
+|  Domains categorized as both work and personal  | At least Windows Server 2012, Windows 8, or Windows RT |                                                                                                                           A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment.                                                                                                                           |
 
 ## Application-specific settings
 These settings, located at **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard**, can help you to manage your company's implementation of Application Guard.

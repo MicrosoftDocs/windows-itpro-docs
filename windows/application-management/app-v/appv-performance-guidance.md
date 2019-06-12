@@ -1,12 +1,15 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10)
 description: Performance Guidance for Application Virtualization
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 
@@ -86,7 +89,7 @@ Deployment Environment
 </tbody>
 </table>
 
- 
+ 
 
 Expected Configuration
 
@@ -107,7 +110,7 @@ Expected Configuration
 </tbody>
 </table>
 
- 
+ 
 
 IT Administration
 
@@ -124,7 +127,7 @@ IT Administration
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-us"></a>Usage Scenarios
 
@@ -144,14 +147,14 @@ As you review the two scenarios, keep in mind that these approach the extremes. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>To provide the most optimal user experience, this approach leverages the capabilities of a UPM solution and requires additional image preparation and can incur some additional image management overhead.</p>
-<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see [Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance) later in this topic.</p></td>
+<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see <a href="#sequencing-steps-to-optimize-packages-for-publishing-performance" data-raw-source="[Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance)">Sequencing Steps to Optimize Packages for Publishing Performance</a> later in this topic.</p></td>
 <td align="left"><p>The general expectations of the previous scenario still apply here. However, keep in mind that VM images are typically stored in very costly arrays; a slight alteration has been made to the approach. Do not pre-configure user-targeted virtual application packages in the base image.</p>
-<p>The impact of this alteration is detailed in the [User Experience Walk-through](#bkmk-uewt) section of this document.</p></td>
+<p>The impact of this alteration is detailed in the <a href="#bkmk-uewt" data-raw-source="[User Experience Walk-through](#bkmk-uewt)">User Experience Walk-through</a> section of this document.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-pe"></a>Preparing your Environment
 
@@ -174,9 +177,9 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p></p>
 <ul>
-<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable the App-V client as described in <a href="appv-enable-the-app-v-desktop-client.md" data-raw-source="[Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md)">Enable the App-V in-box client</a>.</p></li>
 <li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all user- and global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all user- and global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -194,9 +197,9 @@ The following table displays the required steps to prepare the base image and th
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable the App-V client as described in <a href="appv-enable-the-app-v-desktop-client.md" data-raw-source="[Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md)">Enable the App-V in-box client</a>.</p></li>
 <li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -207,7 +210,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+ 
 
 **Configurations** - For critical App-V Client configurations and for a little more context and how-to, review the following information:
 
@@ -228,7 +231,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>Shared Content Store (SCS) Mode</p>
 <ul>
-<li><p>Configurable in Windows PowerShell with `Set-AppvClientConfiguration -SharedContentStoreMode 1`<br>or configurable with Group Policy, as described in [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configurable in Windows PowerShell with <code>Set-AppvClientConfiguration -SharedContentStoreMode 1</code><br>or configurable with Group Policy, as described in <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 </ul></td>
 <td align="left"><p>When running the shared content store only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM).</p>
 <p>This helps to conserve local storage and minimize disk I/O per second (IOPS).</p></td>
@@ -259,7 +262,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+ 
 
 ### Configure UE-V solution for App-V Approach
 
@@ -285,7 +288,7 @@ UE-V will only support removing the .lnk file type from the exclusion list in th
 **Important**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+ 
 
 Using the Microsoft Registry Editor (regedit.exe), navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **UEV** \\ **Agent** \\ **Configuration** \\ **ExcludedFileTypes** and remove **.lnk** from the excluded file types.
 
@@ -308,7 +311,7 @@ To enable an optimized login experience, for example the App-V approach for the 
 
     App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver does not handle UPD selected folders.
 
-     
+     
 
 -   Capturing changes to the locations, which constitute the user integrations, prior to session logoff.
 
@@ -401,7 +404,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -426,7 +429,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-plc"></a>Impact to Package Life Cycle
 
@@ -513,7 +516,7 @@ Several App-V features facilitate new scenarios or enable new customer deploymen
 </tbody>
 </table>
 
- 
+ 
 
 ### Removing FB1
 
@@ -552,7 +555,7 @@ Removing FB1 does not require the original application installer. After completi
     **Note**  
     This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.
 
-     
+     
 
 <table>
 <colgroup>
@@ -579,7 +582,7 @@ Removing FB1 does not require the original application installer. After completi
 </tbody>
 </table>
 
- 
+ 
 
 ### Creating a new virtual application package on the sequencer
 
@@ -616,7 +619,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 </tbody>
 </table>
 
- 
+ 
 
 ### Disabling a Dynamic Configuration by using Windows PowerShell
 
@@ -666,7 +669,7 @@ For documentation on How to Apply a Dynamic Configuration, see:
 </tbody>
 </table>
 
- 
+ 
 
 ### Determining what virtual fonts exist in the package
 

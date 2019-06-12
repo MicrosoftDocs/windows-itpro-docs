@@ -2,11 +2,13 @@
 title: AssignedAccess DDF
 description: AssignedAccess DDF
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 02/22/2018
 ---
 

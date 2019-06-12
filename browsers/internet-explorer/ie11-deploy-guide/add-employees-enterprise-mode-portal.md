@@ -3,11 +3,14 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to add employees to the Enterprise Mode Site List Portal.
-author: shortpatti
+author: dansimp
 ms.prod: ie11
 title: Add employees to the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Add employees to the Enterprise Mode Site List Portal

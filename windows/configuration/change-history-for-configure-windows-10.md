@@ -1,5 +1,7 @@
 ---
 title: Change history for Configure Windows 10 (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists changes to documentation for configuring Windows 10.
 keywords: 
 ms.prod: w10
@@ -7,15 +9,21 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 11/07/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## April 2019
+
+New or changed topic | Description
+--- | ---
+[Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) | Added information for Shell Launcher v2, coming in the next feature update to Windows 10.
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added new recommendations for policies to manage updates.
 
 ## February 2019
 
@@ -152,10 +160,9 @@ New or changed topic | Description
 
 ## October 2017
 
-New or changed topic | Description
---- | ---
-[Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access | Removed **Guidelines for using Remote Desktop app**; the behavior for Remote Desktop has changed so that it's no longer necessary to turn off **Start connections in full screen** for assigned access.
-
+|                                    New or changed topic                                     |                          Description                           |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
 
 ## RELEASE: Windows 10, version 1709
 
@@ -168,6 +175,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 
 ## September 2017
+
 |New or changed topic | Description|
 |--- | ---|
 |[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.|
@@ -183,6 +191,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 
 ## July 2017
+
 | New or changed topic | Description |
 | --- | --- |
 |[Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data-1703.md)|Updated categories and included diagnostic data.|

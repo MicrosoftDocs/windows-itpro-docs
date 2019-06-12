@@ -8,6 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author:
 ms.date: 08/18/2017
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -109,7 +113,7 @@ To find out which version of Windows 10 is right for your organization, you can 
 
 ### How will people in my organization adjust to using Windows 10 Enterprise after upgrading from Windows 7 or Windows 8.1?
 
-Windows 10 combines the best aspects of the user experience from Windows 8.1 and Windows 7 to make using Windows simple and straightforward. Users of Windows 7 will find the Start menu in the same location as they always have. In the same place, users of Windows 8.1 will find the live tiles from their Start screen, accessible by the Start button in the same way as they were accessed in Windows 8.1. To help you make the transition a seamless one, download the [Windows 10 for Business Onboarding Kit](https://blogs.technet.microsoft.com/windowsitpro/2016/06/28/windows-10-for-business-onboarding-kit/) and see our [end user readiness](https://technet.microsoft.com/windows/dn621092) resources.
+Windows 10 combines the best aspects of the user experience from Windows 8.1 and Windows 7 to make using Windows simple and straightforward. Users of Windows 7 will find the Start menu in the same location as they always have. In the same place, users of Windows 8.1 will find the live tiles from their Start screen, accessible by the Start button in the same way as they were accessed in Windows 8.1. To help you make the transition a seamless one, download the [Windows 10 Adoption Planning Kit](https://info.microsoft.com/Windows10AdoptionPlanningKit) and see our [end user readiness](https://technet.microsoft.com/windows/dn621092) resources.
 
 ### How does Windows 10 help people work with applications and data across a variety of devices?
 

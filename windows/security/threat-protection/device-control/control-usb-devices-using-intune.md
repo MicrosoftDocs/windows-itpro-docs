@@ -6,9 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: justinha
-author: justinha
+ms.author: dansimp
+author: dansimp
 ms.date: 02/22/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
@@ -44,7 +46,7 @@ Protecting authorized removable storage with Windows Defender Antivirus requires
 - If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Windows Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
 
->[!NOTE] 
+>[!NOTE]
 >We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Windows Defender Antivirus** > **Real-time monitoring**.
 
 <!-- Need to build out point in the precedeing note. 
@@ -111,7 +113,7 @@ Based on any Windows Defender ATP event, including the plug and play events, you
 
 Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
 
->[!Note] 
+>[!NOTE]
 >Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
 
 The following table describes the ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
@@ -123,7 +125,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 | [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
 | [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
 
->[!Note] 
+>[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 
 ### Block installation and usage of removable storage

@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Technical Deep Dive
 
@@ -43,6 +44,6 @@ Provision can occur automatically through the out-of-box-experience (OOBE) on Az
 
 ## Authentication
 
-Authentication using Windows Hello for Business is the goal, and the first step in getting to a passwordless environment.  With the device registered, and provisioning complete. Users can sign-in to Windows 10 using biometrics or a PIN.  PIN is the most common gesture and is avaiable on most computers and devices.  Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.  The PIN nor the private portion of the credential are never sent to the identity provider, and the PIN is not stored on the device.  It is user provided entropy when performing operations that use the private portion of the credential.
+Authentication using Windows Hello for Business is the goal, and the first step in getting to a passwordless environment.  With the device registered, and provisioning complete. Users can sign-in to Windows 10 using biometrics or a PIN.  PIN is the most common gesture and is available on most computers and devices.  Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.  The PIN nor the private portion of the credential are never sent to the identity provider, and the PIN is not stored on the device.  It is user provided entropy when performing operations that use the private portion of the credential.
 
 [How Windows Hello for Business authentication works](hello-how-it-works-authentication.md)

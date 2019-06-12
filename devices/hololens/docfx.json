@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-		  "**/**.yml"
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,26 +29,27 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/hololens/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "jdecker",
-		"ms.date": "04/05/2017",
-		"feedback_system": "GitHub",
-		"feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.itpro-hololens"
-			}
-		}
-	},
+      "uhfHeaderId": "MSDocsHeader-WindowsIT",
+      "breadcrumb_path": "/hololens/breadcrumb/toc.json",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "ms.author": "jdecker",
+      "ms.date": "04/05/2017",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.itpro-hololens",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [
       null
     ],
     "dest": "devices/hololens",
-    "markdownEngineName": "dfm"
+    "markdownEngineName": "markdig"
   }
 }

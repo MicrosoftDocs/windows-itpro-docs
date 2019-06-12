@@ -1,8 +1,11 @@
 ---
 title: About Application Licensing
 description: About Application Licensing
-author: jamiejdt
+author: dansimp
 ms.assetid: 6b487641-1627-4e91-b829-04f001008176
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 09/07/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity
@@ -23,7 +26,7 @@ Using configurable code integrity to restrict devices to only authorized apps ha
 
 1. Configurable code integrity policy is enforced by the Windows kernel itself. As such, the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run. 
 2. Configurable code integrity allows customers to set application control policy not only over code running in user mode, but also kernel mode hardware and software drivers and even code that runs as part of Windows. 
-3. Customers can protect the configurable code integrity policy even from local administrator tampering by digitally signing the policy. This would mean that changing the policy would require both administrative privilege and access to the organization’s digital signing process, making it extremely difficult for an attacker with administrative privledge, or malicious software that managed to gain administrative privilege, to alter the application control policy. 
+3. Customers can protect the configurable code integrity policy even from local administrator tampering by digitally signing the policy. This would mean that changing the policy would require both administrative privilege and access to the organization’s digital signing process, making it extremely difficult for an attacker with administrative privilege, or malicious software that managed to gain administrative privilege, to alter the application control policy. 
 4. The entire configurable code integrity enforcement mechanism can be protected by HVCI, where even if a vulnerability exists in kernel mode code, the likelihood that an attacker could successfully exploit it is significantly diminished. Why is this relevant? That’s because an attacker that compromises the kernel would otherwise have enough privilege to disable most system defenses and override the application control policies enforced by configurable code integrity or any other application control solution.
 
 ## (Re-)Introducing Windows Defender Application Control

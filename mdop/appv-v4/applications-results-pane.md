@@ -1,8 +1,11 @@
 ---
 title: Applications Results Pane
 description: Applications Results Pane
-author: jamiejdt
+author: dansimp
 ms.assetid: 977a4d35-5344-41fa-af66-14957b38ed47
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

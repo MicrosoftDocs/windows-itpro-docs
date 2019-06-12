@@ -1,8 +1,11 @@
 ---
 title: How to Change, Repair, or Remove DaRT 8.0
 description: How to Change, Repair, or Remove DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a9737635-aaf5-45bd-861f-f9dff4f02336
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

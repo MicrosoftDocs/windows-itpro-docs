@@ -2,11 +2,14 @@
 title: Update Product Status (Windows 10)
 description: Update Product Status
 ms.assetid: 39d4abd4-801a-4e8f-9b8c-425a24a96764
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -30,6 +33,6 @@ The license-status query requires a valid computer name for each system queried.
 
     **Note**  
     If a previously discovered Microsoft Office 2010 product has been uninstalled from the remote computer, updating its licensing status will cause the entry to be deleted from the **Office** product list view, and, consequently, the total number of discovered products will be smaller. However, the Windows installation of the same computer will not be deleted and will always be shown in the **Windows** products list view.
- 
+ 
 ## Related topics
 - [Add and Manage Products](add-manage-products-vamt.md)

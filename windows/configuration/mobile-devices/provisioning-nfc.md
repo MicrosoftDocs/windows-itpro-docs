@@ -4,11 +4,13 @@ description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # NFC-based device provisioning
@@ -70,14 +72,14 @@ The following table describes the information that is required when writing to a
 
 The NFC provisioning helper device must split the provisioning package raw content into multiple parts and publish these in order. Each part should follow the following format:
 
-<table><tr><td>**Version**</br>(1 byte)</td><td>**Leading**<br>(1 byte)</td><td>**Order**</br>(1 byte)</td><td>**Total**</br>(1 byte)</td><td>**Chunk payload**</br>(N bytes)</td></tr></table>
+<table><tr><td><strong>Version</strong></br>(1 byte)</td><td><strong>Leading</strong><br>(1 byte)</td><td><strong>Order</strong></br>(1 byte)</td><td><strong>Total</strong></br>(1 byte)</td><td><strong>Chunk payload</strong></br>(N bytes)</td></tr></table>
  
 For each part:
-- **Version** should always be 0x00.
-- **Leading byte** should always be 0xFF.
-- **Order** represents which message chunk (out of the whole message) the part belongs to. The Order begins with zero (0). 
-- **Total** represents the total number of chunks to be transferred for the whole message.
-- **Chunk payload** represents each of the split parts.
+- <strong>Version</strong> should always be 0x00.
+- <strong>Leading byte</strong> should always be 0xFF.
+- <strong>Order</strong> represents which message chunk (out of the whole message) the part belongs to. The Order begins with zero (0). 
+- <strong>Total</strong> represents the total number of chunks to be transferred for the whole message.
+- <strong>Chunk payload</strong> represents each of the split parts.
 
 The NFC provisioning helper device must publish the record in a type of Windows.ProvPlugins.Chunk.
 
@@ -138,9 +140,9 @@ For detailed information and code samples on how to implement an NFC-enabled dev
 - [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 
 - [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
- 
+ 
 
- 
+ 
 
 
 

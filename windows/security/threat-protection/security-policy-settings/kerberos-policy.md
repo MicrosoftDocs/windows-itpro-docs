@@ -2,12 +2,14 @@
 title: Kerberos Policy (Windows 10)
 description: Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -31,14 +33,14 @@ countermeasures you can take, and the potential impact for each setting.
 
 ## In this section
 
-| Topic | Description |
-| - | - |
-| [Enforce user logon restrictions](enforce-user-logon-restrictions.md) | Describes the best practices, location, values, policy management, and security considerations for the **Enforce user logon restrictions** security policy setting.| 
-| [Maximum lifetime for service ticket](maximum-lifetime-for-service-ticket.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for service ticket** security policy setting.| 
-| [Maximum lifetime for user ticket](maximum-lifetime-for-user-ticket.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket** policy setting.| 
-| [Maximum lifetime for user ticket renewal](maximum-lifetime-for-user-ticket-renewal.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket renewal** security policy setting.| 
-| [Maximum tolerance for computer clock synchronization](maximum-tolerance-for-computer-clock-synchronization.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum tolerance for computer clock synchronization** security| policy setting. 
- 
+|                                                      Topic                                                      |                                                                                 Description                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                      [Enforce user logon restrictions](enforce-user-logon-restrictions.md)                      |     Describes the best practices, location, values, policy management, and security considerations for the **Enforce user logon restrictions** security policy setting.      |
+|                  [Maximum lifetime for service ticket](maximum-lifetime-for-service-ticket.md)                  |   Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for service ticket** security policy setting.    |
+|                     [Maximum lifetime for user ticket](maximum-lifetime-for-user-ticket.md)                     |         Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket** policy setting.          |
+|             [Maximum lifetime for user ticket renewal](maximum-lifetime-for-user-ticket-renewal.md)             | Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket renewal** security policy setting. |
+| [Maximum tolerance for computer clock synchronization](maximum-tolerance-for-computer-clock-synchronization.md) |   Describes the best practices, location, values, policy management, and security considerations for the **Maximum tolerance for computer clock synchronization** security   |
+ 
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)

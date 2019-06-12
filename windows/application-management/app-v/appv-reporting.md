@@ -1,12 +1,15 @@
 ---
 title: About App-V Reporting (Windows 10)
 description: About App-V Reporting
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # About App-V reporting
@@ -21,15 +24,15 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 1. The App-V Reporting server requires the following things:
 
- * Internet Information Service (IIS) web server role
- * Windows Authentication role (under **IIS / Security**)
- * SQL Server installed and running with SQL Server Reporting Services (SSRS)
+   * Internet Information Service (IIS) web server role
+   * Windows Authentication role (under **IIS / Security**)
+   * SQL Server installed and running with SQL Server Reporting Services (SSRS)
 
-    To confirm SQL Server Reporting Services is running, enter <https://localhost/Reports> in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
+     To confirm SQL Server Reporting Services is running, enter <https://localhost/Reports> in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
 2. Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
 3. If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports](https://www.microsoft.com/en-us/download/details.aspx?id=42630).
 
-    >[!NOTE]
+   > [!NOTE]
     >If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
 4. After importing the App-V Windows PowerShell module using **Import-Module AppvClient** as administrator, enable App-V client reporting. This sample Windows PowerShell command enables App-V reporting:
 
@@ -43,7 +46,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 5. After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server, which then notifies the App-V client.
 6. When the App-V client receives the success notification, it empties the data cache to conserve space.
 
-    >[!NOTE]
+   > [!NOTE]
     >By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
     
     If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
@@ -88,7 +91,7 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
     For a complete list of client configuration settings, go to [About client configuration settings](appv-client-configuration-settings.md) and look for the following entries: **ReportingEnabled**, **ReportingServerURL**, **ReportingDataCacheLimit**, **ReportingDataBlockSize**, **ReportingStartTime**, **ReportingRandomDelay**, **ReportingInterval**.
 * Using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.
 
-    >[!NOTE]
+   > [!NOTE]
     >Group Policy settings override local settings configured using Windows PowerShell.
 
 ## App-V Client reporting

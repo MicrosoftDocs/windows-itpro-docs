@@ -1,8 +1,11 @@
 ---
 title: How to Import an Application
 description: How to Import an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: ab40acad-1025-478d-8e13-0e1ff1bd37e4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Typically, you import applications to make them available to stream from an Appl
 **Note**  
 To import an application, you must have its sequenced Open Software Descriptor (OSD) file or its Sequencer Project (SPRJ) file available on the server.
 
- 
+ 
 
 When importing an application, you should make sure the server is configured with a value in the **Default Content Path** field on the **General** tab of the **System Options** dialog (accessible by right-clicking the **Application Virtualization System** node in the App-V Server Console). The default content path value defines where the applications will be imported, and during the import process, this value is used to modify the paths defined in the OSD file for the SFT file and for the icon shortcuts. In the OSD file, the path for the SFT file is specified in the CODEBASE HREF entry and the path for the icons is specified in the SHORTCUTS entry.
 
@@ -40,14 +43,14 @@ During the import process, the protocol, server, and, if present, port specified
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>\\server\content\</p></td>
-<td align="left"><p>http://WebServer/myFolder/package.sft</p></td>
-<td align="left"><p>\\server\content\myFolder\package.sft</p></td>
+<td align="left"><p>\server\content&lt;/p&gt;</td>
+<td align="left"><p><a href="http://WebServer/myFolder/package.sft" data-raw-source="http://WebServer/myFolder/package.sft">http://WebServer/myFolder/package.sft</a></p></td>
+<td align="left"><p>\server\content\myFolder\package.sft</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To import an application**
 
@@ -68,7 +71,7 @@ During the import process, the protocol, server, and, if present, port specified
     **Note**  
     Applications sequenced with Sequencer 4.0 populate the **File Associations** dialog box when you import or create them through the management console. Applications with previous Sequencer version packages do not.
 
-     
+     
 
 8.  Click **Next**.
 
@@ -89,9 +92,9 @@ During the import process, the protocol, server, and, if present, port specified
 
 [How to Manually Add an Application](how-to-manually-add-an-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

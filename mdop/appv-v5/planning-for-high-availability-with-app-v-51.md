@@ -1,8 +1,11 @@
 ---
 title: Planning for High Availability with App-V 5.1
 description: Planning for High Availability with App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 1f190a0e-10ee-4fbe-a602-7e807e943033
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -55,7 +58,7 @@ Review the following for more information about configuring IIS and Network Load
     **Note**  
     The IIS Network Load Balancing functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details are changed in Windows Server 2012. For information on new ways to do tasks, see [Common Management Tasks and Navigation in Windows Server 2012 R2 Preview and Windows Server 2012](https://go.microsoft.com/fwlink/?LinkId=316371) (https://go.microsoft.com/fwlink/?LinkId=316371).
 
-     
+     
 
 ## <a href="" id="bkmk-clusterscsmode"></a>Support for clustered file servers when running (SCS) mode
 
@@ -108,7 +111,7 @@ Use the following steps to modify the connection string to include **failover pa
 **Important**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+ 
 
 1.  Login to the management server and open **regedit**.
 
@@ -121,7 +124,7 @@ This topic describes how to change the Windows registry by using Registry Editor
     **Note**  
     Database Mirroring is on the list of Deprecated Database Engine Features for Microsoft SQL Server 2012 due to the **AlwaysOn** feature available with Microsoft SQL Server 2012.
 
-     
+     
 
 Click any of the following links for more information:
 
@@ -148,9 +151,9 @@ The App-V 5.1 management server database supports deployments to computers runni
 
 [Planning to Deploy App-V](planning-to-deploy-app-v51.md)
 
- 
+ 
 
- 
+ 
 
 
 

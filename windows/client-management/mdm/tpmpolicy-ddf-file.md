@@ -1,12 +1,14 @@
 ---
 title: TPMPolicy DDF file
 description: TPMPolicy DDF file
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TPMPolicy DDF file

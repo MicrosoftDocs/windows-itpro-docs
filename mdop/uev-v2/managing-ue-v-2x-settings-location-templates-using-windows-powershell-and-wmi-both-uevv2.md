@@ -1,8 +1,11 @@
 ---
 title: Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI
-author: jamiejdt
+author: levinec
 ms.assetid: b5253050-acc3-4274-90d0-1fa4c480331d
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +26,7 @@ The WMI and Windows PowerShell features of UE-V include the ability to enable, d
 
 You must have administrator permissions to update, register, or unregister a settings location template. Administrator permissions are not required to enable, disable, or list templates.
 
-****To manage settings location templates by using Windows PowerShell****
+***<em>To manage settings location templates by using Windows PowerShell</em>***
 
 1.  Use an account with administrator rights to open a Windows PowerShell command prompt.
 
@@ -152,7 +155,7 @@ You must have administrator permissions to update, register, or unregister a set
     </tbody>
     </table>
 
-     
+
 
 The UE-V Windows PowerShell features enable you to manage a group of settings templates that are deployed in your enterprise. Use the following procedure to manage a group of templates by using Windows PowerShell.
 
@@ -331,12 +334,14 @@ User Experience Virtualization provides the following set of WMI commands. Admin
     </tbody>
     </table>
 
-     
 
-    **Note**  
-    Where a list of Package Family Names is called by the WMI command, the list must be in quotes and separated by a pipe symbol, for example, `"<package family name | package family name>"`.
 
-     
+~~~
+**Note**  
+Where a list of Package Family Names is called by the WMI command, the list must be in quotes and separated by a pipe symbol, for example, `"<package family name | package family name>"`.
+~~~
+
+
 
 ### Deploying the UE-V Agent using Windows PowerShell
 
@@ -344,10 +349,10 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 
 1.  Stage the UE-V Agent installation package in an accessible network share.
 
-    **Note**  
+    **Note**  
     Use AgentSetup.exe to deploy both 32-bit and 64-bit versions of the UE-V Agent. The Windows Installer packages, AgentSetupx86.msi and AgentSetupx64.msi, are available for each architecture. To uninstall the UE-V Agent at a later time by using the installation file, you must use the same file type.
 
-     
+
 
 2.  Use one of the following Windows PowerShell commands to install the UE-V Agent.
 
@@ -364,9 +369,9 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 
 [Administering UE-V 2.x](administering-ue-v-2x-new-uevv2.md)
 
- 
 
- 
+
+
 
 
 

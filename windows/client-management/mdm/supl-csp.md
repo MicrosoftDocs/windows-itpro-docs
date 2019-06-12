@@ -2,11 +2,13 @@
 title: SUPL CSP
 description: SUPL CSP
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/20/2018
 ---
 

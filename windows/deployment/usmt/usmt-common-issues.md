@@ -2,11 +2,14 @@
 title: Common Issues (Windows 10)
 description: Common Issues
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 09/19/2017
-author: greg-lindsay
+author: lomayor
 ms.topic: article
 ---
 
@@ -37,31 +40,31 @@ The following sections discuss common issues that you might see when you run the
 
 When you encounter a problem or error message during migration, you can use the following general guidelines to help determine the source of the problem:
 
--   Examine the ScanState, LoadState, and UsmtUtils logs to obtain the exact USMT error messages and Windows® application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return Codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
+- Examine the ScanState, LoadState, and UsmtUtils logs to obtain the exact USMT error messages and Windows® application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return Codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
 
-    In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the **/v***:5* option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
+  In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the **/v**<em>:5</em> option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
 
-    **Note**  
-    Running the ScanState and LoadState tools with the **/v***:5* option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
+  **Note**  
+  Running the ScanState and LoadState tools with the **/v**<em>:5</em> option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
 
-     
+     
 
--   Use the **/Verify** option in the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
+- Use the **/Verify** option in the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
 
--   Use the **/Extract** option in the UsmtUtils tool to extract files from a compressed migration store. For more information, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).
+- Use the **/Extract** option in the UsmtUtils tool to extract files from a compressed migration store. For more information, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).
 
--   Create a progress log using the **/Progress** option to monitor your migration.
+- Create a progress log using the **/Progress** option to monitor your migration.
 
--   For the source and destination computers, obtain operating system information, and versions of applications such as Internet Explorer and any other relevant programs. Then verify the exact steps that are needed to reproduce the problem. This information might help you to understand what is wrong and to reproduce the issue in your testing environment.
+- For the source and destination computers, obtain operating system information, and versions of applications such as Internet Explorer and any other relevant programs. Then verify the exact steps that are needed to reproduce the problem. This information might help you to understand what is wrong and to reproduce the issue in your testing environment.
 
--   Log off after you run the LoadState tool. Some settings—for example, fonts, desktop backgrounds, and screen-saver settings—will not take effect until the next time the end user logs on.
+- Log off after you run the LoadState tool. Some settings—for example, fonts, desktop backgrounds, and screen-saver settings—will not take effect until the next time the end user logs on.
 
--   Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
+- Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
 
-    **Note**  
-    USMT will fail if it cannot migrate a file or setting unless you specify the **/c** option. When you specify the **/c** option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that did not migrate.
+  **Note**  
+  USMT will fail if it cannot migrate a file or setting unless you specify the **/c** option. When you specify the **/c** option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that did not migrate.
 
-     
+     
 
 ## <a href="" id="user"></a>User Account Problems
 
@@ -327,9 +330,9 @@ You should also reboot the machine.
 
 [UsmtUtils Syntax](usmt-utilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

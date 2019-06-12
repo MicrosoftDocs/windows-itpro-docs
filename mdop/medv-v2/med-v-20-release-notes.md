@@ -1,8 +1,11 @@
 ---
 title: MED-V 2.0 Release Notes
 description: MED-V 2.0 Release Notes
-author: jamiejdt
+author: levinec
 ms.assetid: b8f7d938-566e-434c-b4b8-28b67cdfd0b1
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,7 +41,7 @@ This section provides the most up-to-date information about issues with the Micr
 **Note**  
 There are currently no known issues with MED-V 2.0.
 
- 
+ 
 
 ## Release Notes Copyright Information
 
@@ -55,9 +58,9 @@ Microsoft, Active Directory, ActiveSync, MS-DOS, Windows, Windows Server, and W
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

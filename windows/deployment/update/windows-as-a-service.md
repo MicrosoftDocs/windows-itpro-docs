@@ -4,9 +4,11 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: lomayor
+ms.author: lomayor
 ms.date: 01/24/2019
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---
@@ -18,14 +20,15 @@ Find the tools and resources you need to help deploy and support Windows as a se
 
 Find the latest and greatest news on Windows 10 deployment and servicing.
 
-**Working to make Windows updates clear and transparent**
-> [!VIDEO https://www.youtube-nocookie.com/embed/u5P20y39DrA]
+**Discovering the Windows 10 Update history pages**
+> [!VIDEO https://www.youtube-nocookie.com/embed/GADIXBf9R58]
 
 Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. The Windows update history page is for anyone looking to gain an immediate, precise understanding of particular Windows update issues. 
 
 The latest news:
 <ul compact style="list-style: none"> 
 <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Call-to-action-review-your-Windows-Update-for-Business-deferral/ba-p/394244">Call to action: review your Windows Update for Business deferral values</a> - April 3, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540">Windows 10, version 1809 designated for broad deployment</a> - March 28, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience">Data, insights and listening to improve the customer experience</a> - March 6, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Getting-to-know-the-Windows-update-history-pages/ba-p/355079">Getting to know the Windows update history pages</a> - February 21, 2019</li>

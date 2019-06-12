@@ -2,12 +2,14 @@
 title: Monitor the central access policies that apply on a file server (Windows 10)
 description: This topic for the IT professional describes how to monitor changes to the central access policies that apply to a file server when using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: 126b051e-c20d-41f1-b42f-6cff24dcf20c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

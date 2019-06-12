@@ -1,8 +1,11 @@
 ---
 title: AGPM 3
 description: AGPM 3
-author: jamiejdt
+author: mjcaparas
 ms.assetid: b0d0051d-2900-4a0f-8307-552ad26b0e3b
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

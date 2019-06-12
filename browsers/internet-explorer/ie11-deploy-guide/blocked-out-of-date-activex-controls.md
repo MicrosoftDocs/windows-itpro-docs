@@ -1,9 +1,9 @@
 ---
 title: Blocked out-of-date ActiveX controls
 description: This page is periodically updated with new ActiveX controls blocked by this feature.
-author: shortpatti
-ms.author: pashort
-manager: elizapo
+author: dansimp
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ie11
@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.assetid: ''
+ms.reviewer: 
 ms.sitesec: library
 ---
 
@@ -34,7 +35,9 @@ You will receive a notification if a webpage tries to load one of the following 
 
 **Silverlight**
 
+
 | Everything below (but not including) Silverlight 5.1.50907.0 |
 |--------------------------------------------------------------|
+|                                                              |
 
 For more information, see [Out-of-date ActiveX control blocking](out-of-date-activex-control-blocking.md) and [Internet Explorer begins blocking out-of-date ActiveX controls](https://blogs.msdn.com/b/ie/archive/2014/08/06/internet-explorer-begins-blocking-out-of-date-activex-controls.aspx).  You can also view Microsoft's complete list of out-of-date ActiveX controls in the XML-based [version list](https://go.microsoft.com/fwlink/?LinkId=403864).

@@ -9,20 +9,28 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure and validate exclusions based on file extension and folder location
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+> [!IMPORTANT]
+> [Windows Defender Advanced Threat Protection ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to Windows Defender Antivirus exclusion settings. This means that any Windows Defender exclusions, no matter how you created them, are not applied by Windows Defender ATP.
 
 You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
 Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+
+> [!NOTE]
+> Automatic exclusions apply only to Windows Server 2016 and above. 
 
 >[!TIP]
 >The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
@@ -180,31 +188,31 @@ The following table describes how the wildcards can be used and provides some ex
         <th>Use in file and file extension exclusions</th>
         <th>Use in folder exclusions</th>
         <th>Example use</th>
-        <th>Example matches></th>
+        <th>Example matches&gt;</th>
     </tr>
     <tr>
-        <td><b>\*</b> (asterisk)</td>
+        <td><b><em></b> (asterisk)</td>
         <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b>\*</b> with folder slashes <b>\\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
+        <td>Replaces a single folder. <br />Use multiple <b></em></b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
-                <li>C:\MyData\\<b>\*</b>.txt</li>
-                <li>C:\somepath\\<b>\*</b>\Data</li>
-                <li>C:\Serv\\<b>\*</b>\\<b>\*</b>\Backup
+                <li>C:\MyData\<b><em></b>.txt</li>
+                <li>C:\somepath\<b></em></b>\Data</li>
+                <li>C:\Serv\<b><em></b>\<b></em></b>\Backup
             </ol>
         </td>
         <td>
             <ol>
-                <li><i>C:\MyData\\<b>notes</b>.txt</i></li>
+                <li><i>C:\MyData\<b>notes</b>.txt</i></li>
                 <li>Any file in:
                     <ul>
-                        <li><i>C:\somepath\\<b>Archives</b>\Data</i> and its subfolders</li>
-                        <li><i>C:\somepath\\<b>Authorized</b>\Data</i> and its subfolders</li>
+                        <li><i>C:\somepath\<b>Archives</b>\Data</i> and its subfolders</li>
+                        <li><i>C:\somepath\<b>Authorized</b>\Data</i> and its subfolders</li>
                     </ul>
                 <li>Any file in:
                 <ul>
-                    <li><i>C:\Serv\\<b>Primary</b>\\<b>Denied</b>\Backup</i> and its subfolders</li>
-                    <li><i>C:\Serv\\<b>Secondary</b>\\<b>Allowed</b>\Backup</i> and its subfolders</li>
+                    <li><i>C:\Serv\<b>Primary</b>\<b>Denied</b>\Backup</i> and its subfolders</li>
+                    <li><i>C:\Serv\<b>Secondary</b>\<b>Allowed</b>\Backup</i> and its subfolders</li>
                 </ul>
             </ol>
         </td>
@@ -224,14 +232,14 @@ The following table describes how the wildcards can be used and provides some ex
         <td>
             <ol>
                 <li>C:\MyData\my<b>?</b>.zip</li>
-                <li>C:\somepath\\<b>?</b>\Data</li>
+                <li>C:\somepath\<b>?</b>\Data</li>
                 <li>C:\somepath\test0<b>?</b>\Data</li>
             </ol>
         </td>
         <td>
             <ol>
                 <li><i>C:\MyData\my<b>1</b>.zip</i></li>
-                <li>Any file in <i>C:\somepath\\<b>P</b>\Data</i> and its subfolders</li>
+                <li>Any file in <i>C:\somepath\<b>P</b>\Data</i> and its subfolders</li>
                 <li>Any file in <i>C:\somepath\test0<b>1</b>\Data</i> and its subfolders</li>
             </ol>
         </td>

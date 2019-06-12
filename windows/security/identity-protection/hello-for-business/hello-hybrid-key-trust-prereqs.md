@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Hybrid Key trust Windows Hello for Business Prerequisites
 
@@ -27,7 +28,7 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastucture](#public-key-infastructure)
+* [Public Key Infrastructure](#public-key-infastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
 * [MultiFactor Authentication](#multifactor-authentication)
@@ -58,7 +59,18 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
-The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012.
+The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party enterprise certification authority. The detailed requirements for the Domain Controller certificate are shown below.
+
+* The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL.
+* Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name).
+* The certificate Key Usage section must contain Digital Signature and Key Encipherment.
+* Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].
+* The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2) and Server Authentication (1.3.6.1.5.5.7.3.1).
+* The certificate Subject Alternative Name section must contain the Domain Name System (DNS) name.  
+* The certificate template must have an extension that has the BMP data value "DomainController".
+* The domain controller certificate must be installed in the local computer's certificate store.
+
+ 
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
@@ -85,7 +97,7 @@ Organizations using older directory synchronization technology, such as DirSync 
 <br>
 
 ## Federation with Azure ##
-You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
+You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) beginning with Windows Server 2012 R2. 
 
 ### Section Review ###
 > [!div class="checklist"]
@@ -97,7 +109,7 @@ You can deploy Windows Hello for Business key trust in non-federated and federat
 ## Multifactor Authentication ##
 Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure’s Multi-factor Authentication service or they can use multi-factor authentication provides by Windows Server 2012 R2 or later Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multi-factor authentication into AD FS.
+Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication (MFA) service or they can use multifactor authentication provided by AD FS beginning with Windows Server 2012 R2, which includes an adapter model that enables third parties to integrate their MFA into AD FS. The MFA enabled by an Office 365 license is sufficient for Azure AD.
 
 ### Section Review 
 > [!div class="checklist"]
@@ -118,9 +130,9 @@ Organizations wanting to deploy hybrid key trust need their domain joined device
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
+Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
 
-For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Syncrhonization**. 
+For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Synchronization**. 
 
 For federated and non-federated environments, start with **Configure Windows Hello for Business settings**.
 

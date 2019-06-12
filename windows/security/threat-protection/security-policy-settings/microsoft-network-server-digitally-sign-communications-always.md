@@ -2,12 +2,14 @@
 title: Microsoft network server Digitally sign communications (always) (Windows 10)
 description: For SMBv3 and SMBv2, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (always) security policy setting.
 ms.assetid: 2007b622-7bc2-44e8-9cf1-d34b62117ea8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,7 +20,7 @@ ms.date: 06/21/2018
 # Microsoft network server: Digitally sign communications (always)
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows Server
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (always)** security policy setting for SMBv3 and SMBv2.
@@ -33,10 +35,12 @@ Beginning with SMBv2 clients and servers, signing can be either required or not 
 
 There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2.
 
-|   | Server – Required | Server – Not Required |
-|---|-------------------|-----------------------|
-| **Client – Required** | Signed | Signed           | 
+
+|                           |  Server – Required  | Server – Not Required  |
+|---------------------------|---------------------|------------------------|
+|   **Client – Required**   |       Signed        |         Signed         |
 | **Client – Not Required** | Signed <sup>1</sup> | Not Signed<sup>2</sup> |
+
 </br>
 <sup>1</sup> Default for domain controller SMB traffic</br>
 <sup>2</sup> Default for all other SMB traffic
@@ -68,7 +72,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -91,9 +95,9 @@ SMB is the resource-sharing protocol that is supported by many Windows operating
 
 Enable **Microsoft network server: Digitally sign communications (always)**.
 
->[!NOTE]  
+>[!NOTE]
 >An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
- 
+
 ### Potential impact
 
 Storage speeds impact performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage of signing. If you are using a 1 Gb Ethernet network or slower storage speed with a modern CPU, there is limited degradation in performance. If you are using a faster network (such as 10 Gb), the performance impact of signing may be greater.

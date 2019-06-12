@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4907(S): Auditing settings on object were changed.
@@ -65,7 +68,6 @@ This event doesn't generate for Active Directory objects.
  <Data Name="ProcessName">C:\\Windows\\regedit.exe</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -158,11 +160,11 @@ This event doesn't generate for Active Directory objects.
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the object.
 
 > **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-
+> 
 > Example:
-
+> 
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-
+> 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
 > See the list of possible values in the table below:
 
@@ -281,7 +283,7 @@ For 4907(S): Auditing settings on object were changed.
 
 <!-- -->
 
--   If you have critical file or registry objects and you need to monitor all modifications (especially changes in SACL), monitor for specific “**Object\\Object Name”**.
+- If you have critical file or registry objects and you need to monitor all modifications (especially changes in SACL), monitor for specific “**Object\\Object Name”**.
 
--   If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers**.**
+- If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<strong>.</strong>
 

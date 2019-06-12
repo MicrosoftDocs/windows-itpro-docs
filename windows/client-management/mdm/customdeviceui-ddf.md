@@ -2,11 +2,13 @@
 title: CustomDeviceUI DDF
 description: CustomDeviceUI DDF
 ms.assetid: E6D6B902-C57C-48A6-9654-CCBA3898455E
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

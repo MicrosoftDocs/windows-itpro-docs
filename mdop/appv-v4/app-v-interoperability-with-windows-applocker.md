@@ -1,8 +1,11 @@
 ---
 title: App-V Interoperability with Windows AppLocker
 description: App-V Interoperability with Windows AppLocker
-author: jamiejdt
+author: dansimp
 ms.assetid: 9a488034-607d-411c-b495-ff184c726f49
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Version 4.5 SP1 of the Microsoft Application Virtualization (App-V) client suppo
 **Note**  
 Windows AppLocker must first be enabled before configuring Windows AppLocker rules for virtual applications. For more information about enabling Windows AppLocker, [Windows AppLocker](https://go.microsoft.com/fwlink/?LinkId=156732) (https://go.microsoft.com/fwlink/?LinkId=156732).
 
- 
+ 
 
 ## Configuring Windows AppLocker Rules for Virtual Applications
 
@@ -28,9 +31,9 @@ Local administrators can create Windows AppLocker rules that restrict the runnin
 
 When you browse to find a directory path or specific file for which you want to create a rule, you can access the App-V drive by using the path to the hidden share. For example, you can browse to \\\\localhost\\Q$, where the App-V drive is drive Q. However, to create the rule, you must edit the path to remove the reference to \\\\localhost\\Q$ and use Q:\\ instead. You must start each application on the reference computer to access the application’s files, and administrative rights are required to browse to \\\\localhost\\Q$.
 
- 
+ 
 
- 
+ 
 
 
 

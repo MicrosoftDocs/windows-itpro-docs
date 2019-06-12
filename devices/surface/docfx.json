@@ -1,39 +1,47 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/**.md", "**/**.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**"],
-          "exclude": ["**/obj/**"]
-        }
+      {
+        "files": [
+          "**/images/**"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
     ],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/surface/breadcrumb/toc.json",
-        "ROBOTS": "INDEX, FOLLOW",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "jdecker",
-		"ms.date": "05/09/2017",
-		"feedback_system": "GitHub",
-		"feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.surface"
-			}
-		}
+      "uhfHeaderId": "MSDocsHeader-WindowsIT",
+      "breadcrumb_path": "/surface/breadcrumb/toc.json",
+      "ROBOTS": "INDEX, FOLLOW",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "ms.author": "jdecker",
+      "ms.date": "05/09/2017",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.surface",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
     "dest": "devices/surface",
-    "markdownEngineName": "dfm"
+    "markdownEngineName": "markdig"
   }
 }

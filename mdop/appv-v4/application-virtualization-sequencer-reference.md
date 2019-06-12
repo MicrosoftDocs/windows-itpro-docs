@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Sequencer Reference
 description: Application Virtualization Sequencer Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: a2aef256-98c0-4f81-83a2-af4b64208088
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

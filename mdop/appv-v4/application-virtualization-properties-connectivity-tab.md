@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Properties Connectivity Tab
 description: Application Virtualization Properties Connectivity Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: e07c1352-a2be-4d99-9968-daba515bcde2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

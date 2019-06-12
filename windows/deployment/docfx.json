@@ -21,7 +21,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		  "**/*.gif"
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,23 +32,24 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "greglin",
-		"feedback_system": "GitHub",
-		"feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-		"feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.win-development"
-			}
-		}
-	},
+      "uhfHeaderId": "MSDocsHeader-WindowsIT",
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "ms.author": "greglin",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.win-development",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "win-development",
-    "markdownEngineName": "dfm"
+    "markdownEngineName": "markdig"
   }
 }

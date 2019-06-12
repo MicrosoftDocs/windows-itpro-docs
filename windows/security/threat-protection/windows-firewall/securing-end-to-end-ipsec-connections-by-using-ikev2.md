@@ -6,12 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Securing End-to-End IPsec connections by using IKEv2
@@ -130,10 +132,10 @@ New-NetIPsecRule  -DisplayName "My IKEv2 Rule" -RemoteAddress any -Phase1AuthSet
 
 Make sure that you install the required certificates on the participating computers.
 
->**Note:**  
--   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](https://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
--   You need a root certificate and a computer certificate on all devices that participate in the secure connection. Save the computer certificate in the **Personal/Certificates** folder.
--   For remote devices, you can create a secure website to facilitate access to the script and certificates.
+> **Note:**  
+> -   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](https://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
+> -   You need a root certificate and a computer certificate on all devices that participate in the secure connection. Save the computer certificate in the **Personal/Certificates** folder.
+> -   For remote devices, you can create a secure website to facilitate access to the script and certificates.
 
 ## Troubleshooting
 
@@ -185,9 +187,9 @@ You might not find the exact answer for the issue, but you can find good hints. 
 
 -   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
- 
+ 
 
- 
+ 
 
 
 

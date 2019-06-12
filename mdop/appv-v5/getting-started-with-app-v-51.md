@@ -1,8 +1,11 @@
 ---
 title: Getting Started with App-V 5.1
 description: Getting Started with App-V 5.1
-author: jamiejdt
+author: dansimp
 ms.assetid: 49a20e1f-0566-4e53-a417-1521393fc974
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -53,7 +56,7 @@ App-V consists of the following elements:
 <li><p>Retrieves virtual applications</p></li>
 <li><p>Publishes the applications on the clients</p></li>
 <li><p>Automatically sets up and manages virtual environments at runtime on Windows endpoints.</p></li>
-<li><p>Stores user-specific virtual application settings, such as registry and file changes, in each user's profile.</p></li>
+<li><p>Stores user-specific virtual application settings, such as registry and file changes, in each user&#39;s profile.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -75,7 +78,7 @@ App-V consists of the following elements:
 </tbody>
 </table>
 
- 
+ 
 
 For more information about these elements, see [High Level Architecture for App-V 5.1](high-level-architecture-for-app-v-51.md).
 
@@ -84,7 +87,7 @@ If you are new to this product, we recommend that you read the documentation tho
 **Note**  
 A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <https://go.microsoft.com/fwlink/?LinkId=272491> (https://go.microsoft.com/fwlink/?LinkId=272491).
 
- 
+ 
 
 This section of the App-V 5.1 Administrator’s Guide includes high-level information about App-V 5.1 to provide you with a basic understanding of the product before you begin the deployment planning.
 
@@ -127,9 +130,9 @@ This section of the App-V 5.1 Administrator’s Guide includes high-level inform
 
 
 
- 
+ 
 
- 
+ 
 
 
 
