@@ -151,150 +151,38 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 
 ## Sample output
 
-The following is an example where SetupDiag is run in offline mode. In this example, there is an application warning, but since setup is executed in /quiet mode so it becomes a block. Instructions to resolve the problem are provided by SetupDiag in the output.
-
-The output also provides an error code 0xC1900208 - 0x4000C which corresponds to a compatibility issue as documented in the [Upgrade error codes](upgrade-error-codes.md#result-codes) and [Resolution procedures](resolution-procedures.md#modern-setup-errors) topics in this article.
+The following is an example where SetupDiag is run in offline mode.
 
 ```
-C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
+D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
 
 SetupDiag v1.5.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
-Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
-        Found 4 setupact.logs.
-        Processing setupact.log at: c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\NewOs\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\UnattendGC\setupact.log
-Found c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log with update date 03/29/2018 23:13:58 and CV: H2X+YsWL/UOkj/8X to be the correct setup log.
-Gathering information from setup logs.
+Searching for setup logs...
+Found d:\tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e\setupact_6.log with update date 6/12/2019 2:44:20 PM to be the correct setup log.
+Found d:\tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e\setupact_1.log with update date 6/12/2019 2:45:19 PM to be the correct rollback log.
+
+Gathering baseline information from setup logs...
 
 SetupDiag: processing rule: CompatScanOnly.
-..No match.
+...No match.
 
-SetupDiag: processing rule: BitLockerHardblock.
-..No match.
+...
 
-SetupDiag: processing rule: VHDHardblock.
-..No match.
+SetupDiag: processing rule: DISMImageSessionFailure.
+..
+Error: SetupDiag reports DISM provider failure.
+Last Phase: Safe OS
+Last Operation: Apply Optional Component status
+Message = Failed to get the IDismImage instance from the image session
+Function: CDISMManager::CloseImageSession
+Error: 0x800706ba
+Recommend you re-download the update source files, reboot and try the update again.
 
-SetupDiag: processing rule: PortableWorkspaceHardblock.
-..No match.
+SetupDiag found 1 matching issue.
 
-SetupDiag: processing rule: AuditModeHardblock.
-..No match.
-
-SetupDiag: processing rule: SafeModeHardblock.
-..No match.
-
-SetupDiag: processing rule: InsufficientSystemPartitionDiskSpaceHardblock.
-..No match.
-
-SetupDiag: processing rule: CompatBlockedApplicationAutoUninstall.
-....No match.
-
-SetupDiag: processing rule: CompatBlockedApplicationDismissable.
-....
-
-Matching Profile found: CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-Warning: Found Application Block for: "Microsoft Endpoint Protection".
-This is a dismissible message when not running setup.exe in "/quiet" mode.
-Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
-You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
-For more information about Setup command line switches, see here:
-https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
-
-SetupDiag: processing rule: CompatBlockedApplicationManualUninstall.
-....No match.
-
-SetupDiag: processing rule: HardblockDeviceOrDriver.
-....No match.
-
-SetupDiag: processing rule: HardblockMismatchedLanguage.
-..No match.
-
-SetupDiag: processing rule: HardblockFlightSigning.
-..No match.
-
-SetupDiag: processing rule: DiskSpaceBlockInDownLevel.
-..No match.
-
-SetupDiag: processing rule: DiskSpaceFailure.
-..No match.
-
-SetupDiag: processing rule: DebugSetupMemoryDump.
-.No match.
-
-SetupDiag: processing rule: DebugSetupCrash.
-.No match.
-
-SetupDiag: processing rule: DebugMemoryDump.
-.No match.
-
-SetupDiag: processing rule: DeviceInstallHang.
-..No match.
-
-SetupDiag: processing rule: BootFailureDetected.
-.No match.
-
-SetupDiag: processing rule: FindDebugInfoFromRollbackLog.
-.No match.
-
-SetupDiag: processing rule: AdvancedInstallerFailed.
-..No match.
-
-SetupDiag: processing rule: FindMigApplyUnitFailure.
-..No match.
-
-SetupDiag: processing rule: FindMigGatherUnitFailure.
-..No match.
-
-SetupDiag: processing rule: OptionalComponentInstallFailure.
-..No match.
-
-SetupDiag: processing rule: CriticalSafeOSDUFailure.
-..No match.
-
-SetupDiag: processing rule: UserProfileCreationFailureDuringOnlineApply.
-..No match.
-
-SetupDiag: processing rule: WimMountFailure.
-..No match.
-
-SetupDiag: processing rule: FindSuccessfulUpgrade.
-..No match.
-
-SetupDiag: processing rule: FindSetupHostReportedFailure.
-..No match.
-
-SetupDiag: processing rule: FindDownlevelFailure.
-..No match.
-
-SetupDiag: processing rule: FindAbruptDownlevelFailure.
-....Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
-
-SetupDiag: processing rule: FindSetupPlatformFailedOperationInfo.
-..No match.
-
-SetupDiag: processing rule: FindRollbackFailure.
-..No match.
-
-SetupDiag found 2 matching issues.
-
-Warning: Found Application Block for: "Microsoft Endpoint Protection".
-This is a dismissible message when not running setup.exe in "/quiet" mode.
-Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
-You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
-For more information about Setup command line switches, see here:
-https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
-Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
-
-SetupDiag results were logged to: c:\setupdiag\results.log
+SetupDiag results were logged to: c:\setupdiag\results.xml
 Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ```
@@ -417,11 +305,14 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
-06/13/2019 - SetupDiag v1.5.0.0 is released with 56 rules, as a standalone tool available from the Download Center.
-   - All date and time outputs are updatred to localized format per user request.
-   - Huge performance improvement in searching out setupact.logs and determine correct log to parse.  What used to take a minute or more, now typically takes seconds. For example, a sample cab with 9 setupact.logs (three over 200mb each) that used to take nearly 2 minutes in version 1.4.1 now takes 12 seconds.
+06/19/2019 - SetupDiag v1.5.0.0 is released with 56 rules, as a standalone tool available from the Download Center.
+   - All date and time outputs are updated to localized format per user request.
+   - SetupPhase and SetupOperation information has been added to /verbose output.
+   - Added las Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+   - There is a huge performance improvement in searching setupact.logs to determine correct log to parse.  What used to take a minute or more, now typically takes seconds. For example, a sample cab with 9 setupact.logs (three over 200mb each) that used to take nearly 2 minutes in version 1.4.1 now takes 12 seconds.
    - Added SetupDiag version number to text report (xml and json always had it).
    - Added "no match" reports for xml and json per user request.
+   - Added a rule for DISM Image Session Failures.
    - Added a rule for failures revolving around WimMount registration (Driver location info in the registry).
    - Added a rule for WinSetupBootFilter driver failures.
    - Added a rule for early down-level failures that occur early in the down-level phase per user request.
