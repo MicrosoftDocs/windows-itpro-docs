@@ -5,33 +5,39 @@
 ## Overview
 ### [What's new in Surface Hub 2S](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
+### [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
 
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 
-### [Unpacking Surface Hub 2S](surface-hub-2s-unpack.md)
-### [Room considerations for Surface Hub 2S](surface-hub-2s-room-considerations.md)
-### [Physically installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
-### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
+#### [Site planning for Surface Hub 2S](surface-hub-2s-site-planning.md)
+#### [Installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
+#### [Customizing installation of Surface Hub 2S](surface-hub-2s-custom-install.md)
+#### [Surface Hub 2S ports and keypad overview](surface-hub-2s-port-keypad-overview.md)
+#### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
 ### [Configure phone authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
-### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 
 ## Deploy
+### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
 ### [Configure Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
-
+### [Out of box startup for Surface Hub 2S](surface-hub-2s-startup.md)
 
 ## Manage
 ### [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
-### [Managing Surface Hub 2S with Surface app](surface-hub-2s-manage-surface-app.md)
+### [Local management for Surface Hub 2S settings](local-management-surface-hub-settings.md)
 ### [Servicing and updating for Surface Hub 2S](surface-hub-2s-service-update.md)
+### [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
+### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
+### [Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)
+### [Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md)
+### [Changing Start Menu on Surface Hub 2S](surface-hub-2s-change-start-menu.md)
 
 ## Secure
-
-### [Securing Surface Hub 2S with SEMM](surface-hub-2s-secure-with-semm.md)
 ### [Securing Surface Hub 2S with UEFI](surface-hub-2s-secure-with-uefi.md)
+### [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 
 ## Support
 ### [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)
