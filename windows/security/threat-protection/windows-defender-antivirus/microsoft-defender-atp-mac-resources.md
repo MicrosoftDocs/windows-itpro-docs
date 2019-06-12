@@ -68,7 +68,7 @@ The detailed log will be saved to /Library/Logs/Microsoft/wdav.install.log. If y
 
 ## Upgrade
 
-We distribute our updates via Microsoft Auto Update. You can check for MAU settings in main application's menu (Help => Check For Product Updates...):
+We distribute our updates via Microsoft Auto Update (MAU). You can check for MAU settings in main application's menu (Help => Check For Product Updates...):
 
     ![MAU screenshot](images/MDATP_34_MAU.png)
 
