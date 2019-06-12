@@ -79,7 +79,7 @@ To complete this process, you must have admin privileges on the machine.
 The installation will proceed.
 
 > [!NOTE]
-> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but reat time protection will be disabled.
+> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but real-time protection will be disabled.
 
 ### Fixing disabled Real Time Protection
 
@@ -112,7 +112,7 @@ Note, that if you won't complete this step [during 30 minutes](https://developer
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Open **System Preferences...** => **Security & Privacy** from the menu. (Close it first, if it's opened.)
+2. Open **System Preferences...** > **Security & Privacy** from the menu. (Close it first, if it's opened.)
 
 3. **Allow** system software from developers "Microsoft Corporation"
 
@@ -122,7 +122,7 @@ Note, that if you won't complete this step [during 30 minutes](https://developer
 mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
 ```
 
-The banner would disappear from the Defender application, and ```mdatp --health``` would now report that Real Time Protection is both enabled and available:
+The banner should disappear from the Defender application, and ```mdatp --health``` should now report that Real Time Protection is both enabled and available:
 
 ```bash
 mavel-mojave:~ testuser$ mdatp --health
