@@ -102,7 +102,7 @@ realTimeProtectionEnabled               : true
 
 The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Select the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
 
-If you don't see a warning banner, it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
+If you don't see a prompt, it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
 
 ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
 
