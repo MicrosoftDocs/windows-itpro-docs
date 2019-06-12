@@ -1,15 +1,15 @@
 ---
 title: SetupDiag
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 description: How to use the SetupDiag tool to diagnose Windows Setup errors
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -27,7 +27,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.4.1.0</I>
+<I>Current version of SetupDiag: 1.5.0.0</I>
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -157,7 +157,7 @@ The output also provides an error code 0xC1900208 - 0x4000C which corresponds to
 ```
 C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
 
-SetupDiag v1.4.1.0
+SetupDiag v1.5.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
@@ -413,6 +413,23 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
+06/13/2019 - SetupDiag v1.5.0.0 is released with 56 rules, as a standalone tool available from the Download Center.
+   - All date and time outputs are updatred to localized format per user request.
+   - Huge performance improvement in searching out setupact.logs and determine correct log to parse.  What used to take a minute or more, now typically takes seconds. For example, a sample cab with 9 setupact.logs (three over 200mb each) that used to take nearly 2 minutes in version 1.4.1 now takes 12 seconds.
+   - Added SetupDiag version number to text report (xml and json always had it).
+   - Added "no match" reports for xml and json per user request.
+   - Added a rule for failures revolving around WimMount registration (Driver location info in the registry).
+   - Added a rule for WinSetupBootFilter driver failures.
+   - Added a rule for early down-level failures that occur early in the down-level phase per user request.
+   - Overall rules processing performance is improved.
+   - Added registry output for info matched to: HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag
+       - This enables Configuration Manager, Intune and Enterprise customers to query the registry on targeted systems to get SetupDiag failure information.
+       - This registry information will soon be integrated with the GetHelp app to help customer service agents more quickly help with update failures.
+       - The **/AddReg** command was added to toggle registry output. This setting is **off** by default for offline mode, and **on** by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
+       - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
+       - This registry key also gets deleted when a new update instance is invoked.
+       - For an example, see [Sample registry key](#sample-registry-key).
+
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
@@ -526,6 +543,10 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 ```
 {"Version":"1.3.0.0","ProfileName":"DiskSpaceBlockInDownLevel","ProfileGuid":"6080AFAC-892E-4903-94EA-7A17E69E549E","SystemInfo":{"BiosReleaseDate":"20171012000000.000000+000","BiosVendor":"Hyper-V UEFI Release v2.5","BiosVersion":"Hyper-V UEFI Release v2.5","CV":null,"CommercialId":"Offline","FilterDrivers":"","FirmwareType":"UEFI","HostOSArchitecture":"x64","HostOSBuildString":"14393.1794.amd64fre.rs1_release.171008-1615","HostOSEdition":"Core","HostOSLanguageId":"1033","HostOSVersion":"10.0.14393","MachineName":"Offline","Manufacturer":"Microsoft Corporation","Model":"Virtual Machine","RegisteredAV":"","ReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","RollbackElapsedTime":"PT0S","RollbackEndTime":"\/Date(-62135568000000-0800)\/","RollbackStartTime":"\/Date(-62135568000000-0800)\/","SDMode":1,"SetupReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","TargetOSArchitecture":null,"TargetOSBuildString":"10.0.16299.15 (rs3_release.170928-1534)","UpgradeElapsedTime":"PT26M24S","UpgradeEndTime":"\/Date(1513891366000-0800)\/","UpgradeStartTime":"\/Date(1513889782000-0800)\/"},"FailureData":["Warning: Found Disk Space Hard Block."],"DeviceDriverInfo":null,"Remediation":["You must free up at least \"6603\" MB of space on the System Drive, and try again."]}
 ```
+
+## Sample registry key
+
+![Addreg](../images/setupdiag-addreg.jpg) 
 
 ## Related topics
 

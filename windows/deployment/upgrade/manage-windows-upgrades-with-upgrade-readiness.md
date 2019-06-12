@@ -5,7 +5,7 @@ ms.prod: w10
 author: lomayor
 ms.date: 04/25/2017
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 ms.topic: article
 ---

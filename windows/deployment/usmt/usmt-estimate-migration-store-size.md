@@ -3,7 +3,7 @@ title: Estimate Migration Store Size (Windows 10)
 description: Estimate Migration Store Size
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy

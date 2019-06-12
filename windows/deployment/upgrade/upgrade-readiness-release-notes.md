@@ -1,7 +1,7 @@
 ---
 title: Upgrade Readiness release notes (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 author: lomayor
 description: Provides tips and limitations about Upgrade Readiness.

@@ -8,7 +8,7 @@ author: lomayor
 ms.author: lomayor
 ms.date: 01/24/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---

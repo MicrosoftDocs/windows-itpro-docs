@@ -1,7 +1,7 @@
 ---
 title: Upgrade Readiness deployment script (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 description: Deployment script for Upgrade Readiness.
 ms.prod: w10

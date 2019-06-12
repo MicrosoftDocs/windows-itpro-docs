@@ -3,7 +3,7 @@ title: Customize USMT XML Files (Windows 10)
 description: Customize USMT XML Files
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy

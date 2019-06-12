@@ -1,7 +1,7 @@
 ---
 title: Servicing differences between Windows 10 and older operating systems
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Learn the differences between servicing Windows 10 and servicing older operating systems.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10

@@ -1,7 +1,7 @@
 ---
 title: Upgrade Readiness - Additional insights
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10

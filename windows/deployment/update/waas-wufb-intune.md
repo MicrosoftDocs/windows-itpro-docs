@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: lomayor
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 

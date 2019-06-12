@@ -1,7 +1,7 @@
 ---
 title: Upgrade Readiness - Targeting a new operating system version
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 description: Explains how to run Upgrade Readiness again to target a different operating system version or bulk-approve all apps from a given vendor
 ms.prod: w10

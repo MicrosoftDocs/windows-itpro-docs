@@ -8,7 +8,7 @@ author: lomayor
 ms.localizationpriority: medium
 ms.author: lomayor
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 

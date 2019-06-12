@@ -3,7 +3,7 @@ title: User State Migration Tool (USMT) Command-line Syntax (Windows 10)
 description: User State Migration Tool (USMT) Command-line Syntax
 ms.assetid: f9d205c9-e824-46c7-8d8b-d7e4b52fd514
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: lomayor
 ms.prod: w10
 ms.mktglfcycl: deploy
