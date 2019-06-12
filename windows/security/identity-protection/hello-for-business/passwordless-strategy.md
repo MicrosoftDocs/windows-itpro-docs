@@ -139,7 +139,7 @@ The journey to being passwordless is to take each work persona through each pass
 After successfully moving a work persona to password-less, you can prioritize the remaining work personas, and repeat the process.
 
 ### Passwordless replacement offering (Step 1)
-The first step to password-less is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
+The first step to password freedom is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
 
 #### Identify test users that represent the targeted work persona
 A successful transition to password-less heavily relies on user acceptance testing. It is impossible for you to know how every work persona goes about their day-to-day activities, or to accurately validate them. You need to enlist the help of users that fit the targeted work persona. You only need a few users from the targeted work persona. As you cycle through step 2, you may want to change a few of the users (or add a few) as part of your validation process.
