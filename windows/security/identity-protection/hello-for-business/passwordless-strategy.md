@@ -20,7 +20,7 @@ ms.reviewer:
 
 ## Four steps to password freedom
 
-Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password-less.
+Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password freedom.
 ![Passwordless approach](images/four-steps-passwordless.png)
 
 
