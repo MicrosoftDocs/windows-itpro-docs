@@ -49,7 +49,7 @@ Four steps to password freedom provides an overall view of how Microsoft envisio
 ### Prepare for the Journey
 The road to being passwordless is a journey. The duration of that journey varies for each organization. It is important for IT decision-makers to understand the criteria that influence the length of the journey.
 
-The most intuitive answer is the size of the organization, and that would be correct. However, what exactly determines size. One way to break down the size of the organization is:
+The most intuitive answer is the size of the organization, and that would be correct. However, what exactly determines size? One way to break down the size of the organization is:
 - Number of departments
 - Organization or department hierarchy
 - Number and type of applications and services
