@@ -1,5 +1,5 @@
 ---
-title: Password-less Strategy
+title: Passwordless Strategy
 description: Reducing Password Usage Surface
 keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: w10
@@ -60,7 +60,7 @@ The most intuitive answer is the size of the organization, and that would be cor
 #### Number of departments
 The number of departments within an organization varies. Most organizations have a common set of departments such as executive leadership, human resources, accounting, sales, and marketing. Other organizations will have those departments and additional ones such research and development or support. Small organizations may not segment their departments this explicitly while larger ones may. Additionally, there may be sub-departments, and sub-departments of those sub-departments as well.
 
-You need to know all the departments within your organization and you need to know which departments use computers and which do not. It is fine if a department does not use computers (probably rare, but acceptable). This is one less department with which you need to concern yourself. Nevertheless, ensure this department is in your list and you have assessed it is not applicable.
+You need to know all the departments within your organization and you need to know which departments use computers and which do not. It is fine if a department does not use computers (probably rare, but acceptable). This is one less department with which you need to concern yourself. Nevertheless, ensure this department is in your list and you have assessed that it is not applicable.
 
 Your count of the departments must be thorough and accurate, as well as knowing the stakeholders for those departments that will put you and your staff on the passwordless road. Realistically, many of us lose sight of our organizational chart and how it grows or shrinks over time. This is why you need to inventory all of them. Also, do not forget to include external departments such as vendors or federated partners. If your organization goes password-free, but partners continue to use passwords and then access your corporate resources, you should know about it and include them in your passwordless strategy.
 
@@ -68,7 +68,7 @@ Your count of the departments must be thorough and accurate, as well as knowing 
 Organization and department hierarchy is the management layers within the departments or the organization as a whole. How the device is used, what applications and how they are used most likely differ between each department, but also within the structure of the department. To determine the correct passwordless strategy, you need to know these differences across your organization. An executive leader is likely to use their device differently compared to a member of middle management in the sales department. Both of those user cases are probably different to how an individual contributor in the customer service department uses their device.
 
 #### Number and type of applications and services
-The number of applications within an organization is simply astonishing and rarely is there one centralized list that is accurate. Applications and services are the most critical item in your passwordless assessment. Applications and services take considerable effort to move to a different type of authentication. That is not to say changing policies and procedures is not a daunting task, but there is something to be said of updating a company's set of standard operating procedure and security policies compared to changing 100 lines (or more) of authentication code in the critical path of your internally developed CRM application.
+The number of applications within an organization is simply astonishing and rarely is there one centralized list that is accurate. Applications and services are the most critical items in your passwordless assessment. Applications and services take considerable effort to move to a different type of authentication. That is not to say changing policies and procedures is not a daunting task, but there is something to be said of updating a company's set of standard operating procedures and security policies compared to changing 100 lines (or more) of authentication code in the critical path of your internally developed CRM application.
 
 Capturing the number of applications used is easier once you have the departments, their hierarchy, and their stakeholders. In this approach, you should have an organized list of departments and the hierarchy in each. You can now associate the applications that are used by all levels within each department. You'll also want to document whether the application is internally developed or commercially available off-the-shelf (COTS). If the later, document the manufacturer and the version. Also, do not forget web-based applications or services when inventorying applications.
 
@@ -114,7 +114,7 @@ Review your collection of work personas. Early in your passwordless journey, ide
 
 Most organizations host their proof of concept in a test lab or environment. To do that with a password-free strategy may be more challenging and take more time. To test in a lab, you must first duplicate the environment of the targeted persona. This could be a few days or several weeks depending on the complexity of targeted work persona.
 
-You will want to balance testing in a lab with providing results to management quickly. Continuing to show forward progress on your password-less journey is always a good thing. If there are ways you can test in production with low or now risk, that may be advantageous to your timeline.
+You will want to balance testing in a lab with providing results to management quickly. Continuing to show forward progress on your journey to being passwordless is always a good thing. If there are ways you can test in production with low or now risk, that may be advantageous to your timeline.
 
 ## The Process
 
@@ -130,13 +130,13 @@ The journey to being passwordless is to take each work persona through each pass
    3. Repeat until all user password usage is mitigated.
    4. Remove password capabilities from Windows.
    5. Validate that **none of the workflows** need passwords.
-3. Transition into a password-less (Step 3)
+3. Transition into a passwordless scenario (Step 3)
    1. Awareness campaign and user education.
-   2. Include remaining users that fit the work persona.
+   2. Include remaining users who fit the work persona.
    3. Validate that **none of the users** of the work personas need passwords.
    4. Configure user accounts to disallow password authentication.
 
-After successfully moving a work persona to password-less, you can prioritize the remaining work personas, and repeat the process.
+After successfully moving a work persona to being passwordless, you can prioritize the remaining work personas, and repeat the process.
 
 ### Passwordless replacement offering (Step 1)
 The first step to password freedom is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
@@ -145,9 +145,9 @@ The first step to password freedom is providing an alternative to passwords. Win
 A successful transition relies on user acceptance testing. It is impossible for you to know how every work persona goes about their day-to-day activities, or to accurately validate them. You need to enlist the help of users that fit the targeted work persona. You only need a few users from the targeted work persona. As you cycle through step 2, you may want to change a few of the users (or add a few) as part of your validation process.
 
 #### Deploy Windows Hello for Business to test users
-Next, you will want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the password-less journey. Use the [Windows Hello for Business Planning Guide](hello-planning-guide.md) to help learn which deployment is best for your environment. Next, use the [Windows Hello for Business deployment guides](hello-deployment-guide.md) to deploy Windows Hello for Business.
+Next, you will want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming passwordless. Use the [Windows Hello for Business Planning Guide](hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](hello-deployment-guide.md) to deploy Windows Hello for Business.
 
-With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is you will only need to deploy the infrastructure once. When other targeted work personas need to provision Windows Hello for Business, you can simply add them to a group. You will use the first work persona to validate your Windows Hello for Business deployment.
+With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is that you will only need to deploy the infrastructure once. When other targeted work personas need to provision Windows Hello for Business, you can simply add them to a group. You will use the first work persona to validate your Windows Hello for Business deployment.
 
 > [!NOTE]
 > There are many different ways to connect a device to Azure. Deployments may vary based on how the device is joined to Azure Active Directory. Review your planning guide and deployment guide to ensure additional infrastructure is not needed for an additional Azure joined devices.
@@ -172,7 +172,7 @@ Test users create the workflows associated with the targeted work persona. Their
 - How frequently do you use this application in a given day? week?
 - Is the password you type into the application the same as the password you use to sign-in to Windows?
 
-Some organizations will empower their users to write this information while some may insist on having a member of the IT department shadow them. An objective viewer may notice a password prompt that the user overlooks simply because of muscle memory. As previously mentioned, this information is critical. You could miss one password prompt which could delay the transition to password-less.
+Some organizations will empower their users to write this information while some may insist on having a member of the IT department shadow them. An objective viewer may notice a password prompt that the user overlooks simply because of muscle memory. As previously mentioned, this information is critical. You could miss one password prompt that could delay the transition to being passwordless.
 
 #### Identify password usage and plan, develop, and deploy password mitigations
 Your test users have provided you valuable information that describes the how, what, why and when they use a password. It is now time for your team to identify each of these password use cases and understand why the user must use a password.
@@ -231,15 +231,15 @@ This is the big moment. You have identified password usage, developed solutions 
 Congratulations!  You are ready to transition one or more portions of your organization to a passwordless deployment. You have validated that the targeted work persona is ready to go where the user no longer needs to know or use their password. You are just a few steps away from declaring success.
 
 #### Awareness and user education
-In this last step, you are going to include the remaining users that fit the targeted work persona to the wonderful world of password-less. Before you do this, you want to invest in an awareness campaign.
+In this last step, you are going to include the remaining users that fit the targeted work persona to the wonderful world of being passwordless. Before you do this, you want to invest in an awareness campaign.
 
 An awareness campaign introduces the users to the new way of authenticating to their device, such as using Windows Hello for Business. The idea of the campaign is to positively promote the change to the users in advance. Explain  the value and why your company is changing. The campaign should provide dates and encourage questions and feedback. This campaign can coincide with user education, where you can show the users the changes and, if your environment allows, enable the users to try out the experience.
 
 #### Including remaining users that fit the work persona
-You have implemented the awareness campaign for the targeted users. These users are informed and ready to transition to password-less. Add the remaining users that match the targeted work persona to your deployment.
+You have implemented the awareness campaign for the targeted users. These users are informed and ready to transition to being passwordless. Add the remaining users that match the targeted work persona to your deployment.
 
 #### Validate that none of the users of the work personas needs passwords
-You have successfully transitioned all users for the targeted work persona to password-less. Monitor the users within the work persona to ensure they do not encounter any issues while working in a password-less environment.
+You have successfully transitioned all users for the targeted work persona to being passwordless. Monitor the users within the work persona to ensure they do not encounter any issues while working in a passwordless environment.
 
 Track all reported issues. Set priority and severity to each reported issue and have your team triage the issues appropriately. As you triage issues, some things to consider are:
 - Is the reporting user performing a task outside the work persona?
@@ -249,7 +249,7 @@ Track all reported issues. Set priority and severity to each reported issue and 
 
 Each organization's priority and severity will differ. However, most organizations consider work stoppages to be fairly significant. Your team should predefine levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority, and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it, and less time on the process.
 
-Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
+Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this is not the end goal, but do not let this slow down your momentum towards becoming passwordless. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
 
 #### Configure user accounts to disallow password authentication.
 You transitioned all the users for the targeted work persona to a passwordless environment and you have successfully validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
