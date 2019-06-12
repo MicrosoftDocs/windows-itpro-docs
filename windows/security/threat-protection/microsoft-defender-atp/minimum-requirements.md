@@ -57,6 +57,7 @@ For more information about licensing requirements for Microsoft Defender ATP pla
   - Windows 10 Pro
   - Windows 10 Pro Education
 - Windows server
+  - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016, version 1803
