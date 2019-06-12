@@ -426,9 +426,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
    - Added a rule for WinSetupBootFilter driver failures.
    - Added a rule for early down-level failures that occur early in the down-level phase per user request.
    - Overall rules processing performance is improved.
-   - Added registry output for info matched to: HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag
+   - Information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
        - This enables Configuration Manager, Intune and Enterprise customers to query the registry on targeted systems to get SetupDiag failure information.
-       - This registry information will soon be integrated with the GetHelp app to help customer service agents more quickly help with update failures.
+       - This registry information will soon be integrated with the GetHelp app to help customer service and support agents more quickly help with update failures.
        - The **/AddReg** command was added to toggle registry output. This setting is **off** by default for offline mode, and **on** by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
        - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
        - This registry key also gets deleted when a new update instance is invoked.
