@@ -47,7 +47,7 @@ The final step of the passwordless story is where passwords simply do not exist.
 Four steps to password freedom provides an overall view of how Microsoft envisions the road to eliminating passwords.  But this road is frequently traveled and derailed by many. The scope of work is vast and filled with many challenges and frustrations. Nearly everyone wants the instant gratification of achieving a passwordless environment, but can easily become overwhelmed in any of the steps. You are not alone and Microsoft understands. While there are many ways to accomplish freedom from passwords, here is one recommendation based on several years of research, investigation, and customer conversations.
 
 ### Prepare for the Journey
-The road to password-less is a journey. The duration of that journey varies from each organization. It is important for IT decision makers to understand the criteria that influences the length of the journey.
+The road to being passwordless is a journey. The duration of that journey varies for each organization. It is important for IT decision-makers to understand the criteria that influence the length of the journey.
 
 The most intuitive answer is the size of the organization, and that would be correct. However, what exactly determines size. One way to break down the size of the organization is:
 - Number of departments
