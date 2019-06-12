@@ -25,7 +25,7 @@ ms.topic: conceptual
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
@@ -79,7 +79,62 @@ To complete this process, you must have admin privileges on the machine.
 The installation will proceed.
 
 > [!NOTE]
-> If you don't select **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
+> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but real-time protection will be disabled.
+
+### Fixing disabled Real Time Protection
+
+If you did not enable Microsoft's driver during installation, then Defender's application will display a banner prompting you to enable it:
+
+   ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
+
+You can also run ```mdatp --health```. It will report if Real Time Protection is enabled but not available:
+
+```bash
+mavel-mojave:~ testuser$ mdatp --health
+...
+realTimeProtectionAvailable             : false
+realTimeProtectionEnabled               : true
+...
+```
+
+> [!NOTE]
+> You have a 30 minute window to enable Real Time Protection from the warning banner, immediately following installation.
+
+The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Select the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
+
+If you don't see a prompt, it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
+
+![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+
+In this case, you will need to perform the following steps to enable Real Time Protection instead. 
+
+1. In Terminal, attempt to install the driver. (The operation will fail)
+    ```bash
+    mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+    Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
+    Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
+    Diagnostics for /Library/Extensions/wdavkext.kext:
+    ```
+
+2. Open **System Preferences...** > **Security & Privacy** from the menu. (Close it first, if it's opened.)
+
+3. **Allow** system software from developers "Microsoft Corporation"
+
+4. In Terminal, install the driver again. This time the operation will succeed:
+
+```bash
+mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+```
+
+The banner should disappear from the Defender application, and ```mdatp --health``` should now report that Real Time Protection is both enabled and available:
+
+```bash
+mavel-mojave:~ testuser$ mdatp --health
+...
+realTimeProtectionAvailable             : true
+realTimeProtectionEnabled               : true
+...
+```
 
 ## Client configuration
 
