@@ -1585,7 +1585,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 In Windows 10, a Get command inside an atomic command is not supported. This was allowed in Windows Phone 8 and Windows Phone 8.1.
 
-### Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10
+### Notification channel URI not preserved during upgrade from Windows�8.1 to Windows�10
 
 During an upgrade from Windows 8.1 to Windows 10, the notification channel URI information is not preserved. In addition, the MDM client loses the PFN, AppID, and client secret.
 
@@ -1651,7 +1651,7 @@ Applies only to phone prior to build 10586.218: When ApplicationManagement/Appli
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
-### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
+### Multiple certificates might cause Wi-Fi connection instabilities in Windows�10 Mobile
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -1832,7 +1832,7 @@ In Windows 10 Mobile, remote PIN reset in Azure AD joined devices are not suppo
 
 Starting in Windows 10, after the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### User provisioning failure in Azure Active Directory joined Windows 10 PC
+### User provisioning failure in Azure Active Directory joined Windows�10 PC
 
 In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -1847,7 +1847,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 ## Frequently Asked Questions
 
 
-### **Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
+### **Can there be more than 1 MDM server to enroll and manage devices in Windows�10?**
 No. Only one MDM is allowed.
 
 ### **How do I set the maximum number of Azure Active Directory joined devices per user?**
