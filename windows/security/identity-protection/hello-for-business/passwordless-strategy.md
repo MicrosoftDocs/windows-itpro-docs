@@ -183,7 +183,7 @@ Keep in mind your test users will not uncover all scenarios. Some scenarios you 
 - Provisioning a new brand new user without a password.
 - Users who forget the PIN or other remediation flows when the strong credential is unusable.
 
-Next, review your master list of scenarios. You can start with the workflows that are dictated by process or policy or, you can begin with workflows that need technical solutions - whichever of the two is easier or quicker. This will certainly vary by organization.
+Next, review your master list of scenarios. You can start with the workflows that are dictated by process or policy, or you can begin with workflows that need technical solutions - whichever of the two is easier or quicker. This will certainly vary by organization.
 
 Start mitigating password usages based on the workflows of your targeted personas. Document the mitigation as a solution to your scenario. Don't worry about the implementation details for the solution. An overview of the changes needed to reduce the password usages is all you need. If there are technical changes needed, either infrastructure or code changes, the exact details will likely be included in the project documentation. However your organization tracks projects, create a new project in that system. Associate your scenario to that project and start the processes needed to get that project funded.
 
