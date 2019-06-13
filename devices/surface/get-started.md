@@ -21,12 +21,16 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/task-list-planning-blue.svg" alt="Overview" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Overview</h3>
-                        <p><a href=" ">Link name</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
+                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">Surface Book</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a><p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +47,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Plan</h3>
-                        <p><a href=" ">Link name</a></p>
+                        <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
+                        <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
                     </div>
                 </div>
             </div>
@@ -60,7 +65,9 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
-                        <p><a href=" ">Link name</a></p>
+                        <p><a href="deploy-windows-10-to-surface-devices-with-mdt.md">Deploy with Microsoft Deployment Toolkit</a></p>
+                        <p><a href="customize-the-oobe-for-surface-deployments.md">Customize start-up experience</a></p>
+                        <p><a href="surface-system-sku-reference.md">Surface SKU reference</a></p>
                     </div>
                 </div>
             </div>
@@ -80,7 +87,9 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Manage</h3>
-                        <p><a href=" ">Link name</a></p>
+                        <p><a href="maintain-optimal-power-settings-on-Surface-devices.md">Maintain optimal power settings</a></p>
+                        <p><a href="battery-limit.md">Manage battery limit with UEFI</a></p>
+                        <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Manage driver and firmware updates</a></p>
                     </div>
                 </div>
             </div>
@@ -97,7 +106,9 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Secure</h3>
-                        <p><a href=" ">Link name</a></p>
+                        <p><a href="surface-enterprise-management-mode.md">Surface Enterprise Management Mode (SEMM)</a></p>
+                        <p><a href="manage-surface-uefi-settings.md">Manage UEFI</a></p>
+                        <p><a href="microsoft-surface-data-eraser.md">Surface Data Eraser tool</a></p>
                     </div>
                 </div>
             </div>
@@ -114,7 +125,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Support</h3>
-                        <p><a href=" ">Link name</a></p>
+                        <p><a href="surface-diagnostic-toolkit-business.md">Surface Diagnostic Toolkit</a></p>
+                        <p><a href="support-solutions-surface.md">Top support solutions</a></p>
                     </div>
                 </div>
             </div>
@@ -131,8 +143,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Get ready for Surface devices</h3>
-                        <p>Prepare your environment for Surface devices</p>
-                        <p>Surface Device Readiness Guide</p>
+                        <p>NEED UPDATE</p>
+                        <p>NEED UPDATE</p>
                     </div>
                 </div>
             </div>
@@ -144,8 +156,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Integrate with Surface devices</h3>
-                        <p>Surface devices with Windows 10</p>
-                        <p>Surface devices and other operating systems</p>
+                        <p>NEED UPDATE</p>
+                        <p>NEED UPDATE</p>
                     </div>
                 </div>
             </div>
@@ -157,7 +169,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Community</h3>
-                        <p>Join the Surface Devices Technical Community</p>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
                     </div>
                 </div>
             </div>

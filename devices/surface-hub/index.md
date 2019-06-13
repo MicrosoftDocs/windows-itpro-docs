@@ -12,7 +12,7 @@ description: "Get started with Microsoft Surface Hub."
 ---
 # Get started with Surface Hub
 
-Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for brainstorming, collaboration, and presentations. Use the links to content below to learn how to plan, deploy, manage, and support your Surface Hub devices.
+Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming, collaboration, and presentations. Use the links to content below to learn how to plan, deploy, manage, and support your Surface Hub devices.
 
 <ul class="panelContent cardsF">
     <li>
@@ -27,7 +27,7 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     <div class="cardText">
                         <h3>Overview</h3>
                         <p><a href="surface-hub-2s-whats-new.md">What's new in Surface Hub 2S</a></p>
-                        <p><a href="surfacehub-whats-new-1703.md">What's new in Surface Hub</a></p>
+                        <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operation system essentials</a></p>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,9 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     </div>
                     <div class="cardText">
                         <h3>Plan</h3>
-                        <p><a href=" ">Surface Hub 2S Site Readiness Guide</a></p>
-                        <p><a href="surface-hub-site-readiness-guide.md">Surface Hub Site Readiness Guide</a></p>
+                        <p><a href="surface-hub-2s-site-readiness-guide.md">Surface Hub 2S Site Readiness Guide</a></p>
+                        <p><a href="surface-hub-2s-prepare-environment.md">Prepare your environment for Surface Hub 2S</a></p>
+                        <p><a href="surface-hub-2s-install-mount.md">Install and mount Surface Hub 2S</a></p>
                     </div>
                 </div>
             </div>
@@ -62,8 +63,9 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
-                        <p><a href="surface-hub-2s-deploy.md">Deploy Surface Hub 2S</a></p>
-                        <p><a href="set-up-your-surface-hub.md">Deploy Surface Hub</a></p>
+                        <p><a href="surface-hub-2s-deploy-checklist.md">Surface Hub 2S deployment checklist</a></p>
+                        <p><a href="surface-hub-2s-account.md">Create device account</a></p>
+                        <p><a href="surface-hub-2s-deploy.md">Deploy with provisioning package</a></p>
                     </div>
                 </div>
             </div>
@@ -83,8 +85,8 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     </div>
                     <div class="cardText">
                         <h3>Manage</h3>
-                        <p><a href="surface-hub-2s-manage-surface-app.md">Surface Hub 2S with Surface App</a></p>
-                        <p><a href="manage-surface-hub.md">Surface Hub </a></p>
+                        <p><a href="surface-hub-2s-manage-intune.md">Manage with Intune</a></p>
+                        <p><a href="local-management-surface-hub-settings.md">Manage local settings</a></p>
                     </div>
                 </div>
             </div>
@@ -101,9 +103,8 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                     </div>
                     <div class="cardText">
                         <h3>Secure</h3>
-                        <p><a href="surface-hub-2s-secure-with-semm.md">Surface Hub 2S with SEMM</a></p>
-                        <p><a href="surface-hub-2s-secure-with-uefi.md">Surface Hub 2S with UEFI</a></p>
-                        <p><a href="surface-hub-2s-conditional-access.md">Surface Hub 2S conditional access</a></p>
+                        <p><a href="surface-hub-2s-secure-with-uefi-semm.md">Secure with UEFI and SEMM</a></p>
+                        <p><a href="surface-hub-wifi-direct.md">Wi-Fi security considerations</a></p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@ Microsoft Surface Hub 2S and Surface Hub are all-in one productivity devices for
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help.svg" alt="Support icon" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector-blue.svg" alt="Support icon" />
                         </div>
                     </div>
                     <div class="cardText">
