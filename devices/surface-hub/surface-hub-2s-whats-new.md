@@ -1,5 +1,5 @@
 ---
-title: "What's new in Surface Hub 2S"
+title: "What's new in Surface Hub 2S for IT admins"
 description: "Learn more about new features in Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# What's new in Surface Hub 2S
+# What's new in Surface Hub 2S for IT admins
 
 Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork delivering a digital whiteboard, meetings platform, and a Windows 10 computing experience in one device.
 

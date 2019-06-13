@@ -1,5 +1,5 @@
 ---
-title: "Secure Surface Hub 2S with UEFI"
+title: "Secure and manage Surface Hub 2S with UEFI"
 description: "Learn more securing Surface Hub 2S with UEFI."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -11,4 +11,4 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# Secure Surface Hub 2S with UEFI
+# Secure and manage Surface Hub 2S with UEFI
