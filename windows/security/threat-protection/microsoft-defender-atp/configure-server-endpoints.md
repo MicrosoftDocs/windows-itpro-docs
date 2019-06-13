@@ -26,7 +26,7 @@ ms.topic: article
 - Windows Server, 2019
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
@@ -59,7 +59,7 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
 ### Option 2: Onboard servers through Microsoft Defender Security Center
-You'll need to tak the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
+You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
@@ -219,7 +219,7 @@ To offboard the server, you can use either of the following methods:
 
    b. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
     
-      ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
+   ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
