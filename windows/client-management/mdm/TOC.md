@@ -208,7 +208,7 @@
 #### [DeliveryOptimization](policy-csp-deliveryoptimization.md)
 #### [Desktop](policy-csp-desktop.md)
 #### [DeviceGuard](policy-csp-deviceguard.md)
-#### [DeviceHealthMonitoring]((policy-csp-devicehealthmonitoring.md))
+#### [DeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md)
 #### [DeviceInstallation](policy-csp-deviceinstallation.md)
 #### [DeviceLock](policy-csp-devicelock.md)
 #### [Display](policy-csp-display.md)
