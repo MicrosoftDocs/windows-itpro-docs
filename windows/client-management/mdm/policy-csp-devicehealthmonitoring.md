@@ -126,7 +126,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
 This policy modifies which health events are sent to Microsoft on the DeviceHealthMonitoring connection.
 IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft DeviceHealthMonitoring service.
 
@@ -181,7 +181,7 @@ IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to
 
 <!--/Scope-->
 <!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
 The value of this policy constrains the DeviceHealthMonitoring connection to certain destinations in order to support regional and sovereign cloud scenarios.
 In most cases, an IT Pro does not need to define this policy. Instead, it is expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked. Only configure this policy manually if explicitly instructed to do so by a Microsoft device monitoring service.
 
