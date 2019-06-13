@@ -111,7 +111,7 @@ Sign-in a certificate authority or management workstations with *Domain Admin* e
 
 1. Open the **Certificate Authority** management console.
 2. Right-click **Certificate Templates** and click **Manage**.
-3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent** template in the details pane and click **Duplicate Template**.
+3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent (Offline request)** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.
 6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected.  Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
