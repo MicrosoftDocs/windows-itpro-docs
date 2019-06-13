@@ -128,7 +128,7 @@ The following list shows the supported values:
 <!--Description-->
 This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
 This policy modifies which health events are sent to Microsoft on the DeviceHealthMonitoring connection.
-IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft DeviceHealthMonitoring service.
+IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft device health monitoring service.
 
 
 <!--/Description-->
