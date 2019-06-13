@@ -285,7 +285,7 @@ There are a few instances where your device may not be able to connect to work, 
 
  
 
-## Connecting your Windows 10-based device to work using a deep link
+## Connecting your Windows 10-based device to work using a deep link
 
 
 Windows 10-based devices may be connected to work using a deep link. Users will be able to click or open a link in a particular format from anywhere in Windows 10 and be directed to the new enrollment experience.
