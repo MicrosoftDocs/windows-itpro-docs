@@ -112,7 +112,7 @@ You begin with your work personas. These were part of your preparation process. 
 
 Review your collection of work personas. Early in your passwordless journey, identify personas with the fewest applications. These work personas could represent an entire department or two. These are the perfect work personas for your proof-of-concept or pilot.
 
-Most organizations host their proof of concept in a test lab or environment. To do that with a password-free strategy may be more challenging and take more time. To test in a lab, you must first duplicate the environment of the targeted persona. This could take a few days or several weeks, depending on the complexity of targeted work persona.
+Most organizations host their proof of concept in a test lab or environment. To do that with a password-free strategy may be more challenging and take more time. To test in a lab, you must first duplicate the environment of the targeted persona. This could take a few days or several weeks, depending on the complexity of the targeted work persona.
 
 You will want to balance lab testing with providing results to management quickly. Continuing to show forward progress on your journey to password freedom is always a good thing. If there are ways you can test in production with low or no risk, it may be advantageous to your timeline.
 
