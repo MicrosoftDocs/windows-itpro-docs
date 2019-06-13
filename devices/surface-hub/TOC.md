@@ -3,9 +3,9 @@
 # Surface Hub 2S
 
 ## Overview
-### [What's new in Surface Hub 2S](surface-hub-2s-whats-new.md)
+### [What's new in Surface Hub 2S for IT admins](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
-### [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Managing Windows 10 Team operating system on Surface Hub ](differences-between-surface-hub-and-windows-10-enterprise.md)
 
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 

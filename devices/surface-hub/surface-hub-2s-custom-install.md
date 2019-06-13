@@ -1,5 +1,5 @@
 ---
-title: "Customizing physical installation of Surface Hub 2S"
+title: "Customize wall mount of Surface Hub 2S"
 description: "Learn how to perform a custom install of Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# Customizing installation of Surface Hub 2S
+# Customize wall mount of Surface Hub 2S
 
 If you’re not using certified mounting solutions, you can mount Surface Hub 2S using readily available retail hardware.
 
