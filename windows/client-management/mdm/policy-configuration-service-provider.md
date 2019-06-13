@@ -1006,6 +1006,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### DeviceHealthMonitoring policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" id="devicehealthmonitoring-allowdevicehealthmonitoring">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" id="devicehealthmonitoring-configdevicehealthmonitoringscope">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a>
+  </dd>
+</dl>
+
 ### DeviceInstallation policies
 
 <dl>

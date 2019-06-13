@@ -33,7 +33,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 - **Breaking changes and known issues**
   - [Get command inside an atomic command is not supported](#get-command-inside-an-atomic-command-is-not-supported)
-  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows81-to-windows10)
+  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows-81-to-windows-10)
   - [Apps installed using WMI classes are not removed](#apps-installed-using-wmi-classes-are-not-removed)
   - [Passing CDATA in SyncML does not work](#passing-cdata-in-syncml-does-not-work)
   - [SSL settings in IIS server for SCEP must be set to "Ignore"](#ssl-settings-in-iis-server-for-scep-must-be-set-to-ignore)
@@ -46,7 +46,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#mcmcwfciw10mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
-  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows10-pc)
+  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows-10-pc)
   - [Requirements to note for VPN certificates also used for Kerberos Authentication](#requirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
   - [Device management agent for the push-button reset is not working](#device-management-agent-for-the-push-button-reset-is-not-working)
 
@@ -96,6 +96,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground" data-raw-source="[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)">DeliveryOptimization/DODelayCacheServerFallbackBackground</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground" data-raw-source="[DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)">DeliveryOptimization/DODelayCacheServerFallbackForeground</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" data-raw-source="[DeviceHealthMonitoring/AllowDeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring)">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" data-raw-source="[DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope)">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" data-raw-source="[DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a></li>
 <li><a href="policy-csp-experience.md#experience-showlockonusertile" data-raw-source="[Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)">Experience/ShowLockOnUserTile</a></li>
 <li><a href="policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar" data-raw-source="[InternetExplorer/AllowEnhancedSuggestionsInAddressBar](policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)">InternetExplorer/AllowEnhancedSuggestionsInAddressBar</a></li>
 <li><a href="policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" data-raw-source="[InternetExplorer/DisableActiveXVersionListAutoDownload](policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)">InternetExplorer/DisableActiveXVersionListAutoDownload</a></li>
@@ -1108,7 +1111,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
+<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
 <td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
 <ul>
 <li>Username</li>
@@ -1649,7 +1652,7 @@ Applies only to phone prior to build 10586.218: When ApplicationManagement/Appli
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
-### <a id="mcmcwfciw10mobile" />Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
+### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -1845,7 +1848,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 ## Frequently Asked Questions
 
 
-### <a id="ctbmt1mdmsteamdiw10" />**Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
+### **Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
 No. Only one MDM is allowed.
 
 ### **How do I set the maximum number of Azure Active Directory joined devices per user?**
