@@ -10,6 +10,7 @@
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 
 #### [Site planning for Surface Hub 2S](surface-hub-2s-site-planning.md)
+#### [Surface Hub 2S quick start](surface-hub-2s-quick-start.md)
 #### [Installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
 #### [Customizing installation of Surface Hub 2S](surface-hub-2s-custom-install.md)
 #### [Surface Hub 2S ports and keypad overview](surface-hub-2s-port-keypad-overview.md)
