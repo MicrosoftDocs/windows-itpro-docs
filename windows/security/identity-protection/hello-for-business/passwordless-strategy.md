@@ -216,7 +216,7 @@ The policy name for these operating systems is **Interactive logon: Require Wind
 When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
 #### Excluding the password credential provider
-You can use Group Policy to deploy an administrative template policy settings to the computer. This policy settings is found under **Computer Configuration > Policies > Administrative Templates > Logon**
+You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > Logon**
 ![HideCredProvPolicy](images/passwordless/00-hidecredprov.png)
 
 The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is **60b78e88-ead8-445c-9cfd-0b87f74ea6cd**.
