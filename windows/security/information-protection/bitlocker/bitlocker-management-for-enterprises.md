@@ -22,6 +22,10 @@ The ideal for BitLocker management is to eliminate the need for IT admins to set
 
 Though much Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for different types of computers.
 
+
+>[!IMPORTANT]
+> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities would be offered from [SCCM in on-prem scenarios](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/viewing-mbam-25-reports-for-the-configuration-manager-integration-topology) in a future.
+
 ## Managing domain-joined computers and moving to cloud  
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
@@ -132,8 +136,10 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 
 <br />
 
+
+
 <a id="powershell"></a>
-**Powershell**
+# **Powershell**
 
 [BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell) 
 
