@@ -1,15 +1,15 @@
 ---
 title: Frequently asked questions and troubleshooting Windows Analytics
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Frequently asked questions about Windows Analytics and steps to take when things go wrong
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
-ms.author: lomayor
+author: greg-lindsay
+ms.author: greg-lindsay
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

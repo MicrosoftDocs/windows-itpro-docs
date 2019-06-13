@@ -3,12 +3,12 @@ title: USMT Best Practices (Windows 10)
 description: USMT Best Practices
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
