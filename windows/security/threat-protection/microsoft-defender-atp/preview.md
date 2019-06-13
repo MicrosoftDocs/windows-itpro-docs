@@ -42,7 +42,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Windows Server 2012 R2](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2012 R2. 
+- [Windows Server 2008 R2 SP1] <BR> You can now onboard Windows Server 2008 R2 SP1.
 
 - [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
 
