@@ -2,11 +2,13 @@
 title: EnterpriseModernAppManagement DDF
 description: EnterpriseModernAppManagement DDF
 ms.assetid: 
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/27/2018
 ---
 

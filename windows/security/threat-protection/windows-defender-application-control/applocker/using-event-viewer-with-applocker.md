@@ -2,12 +2,14 @@
 title: Using Event Viewer with AppLocker (Windows 10)
 description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -61,9 +63,9 @@ The following table contains information about the events that you can use to de
 | 8024 | Information| Packaged app installation audited.| Added in Windows Server 2012 and Windows 8.| 
 | 8025 | Warning| Packaged app installation disabled.| Added in Windows Server 2012 and Windows 8.| 
 | 8027 | Warning| No Packaged app rule configured.| Added in Windows Server 2012 and Windows 8.| 
- 
+ 
 ## Related topics
 
 - [Tools to use with AppLocker](tools-to-use-with-applocker.md)
- 
- 
+ 
+ 

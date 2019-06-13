@@ -1,11 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise 2019 LTSC
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2019 LTSC (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019 LTSC"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: mjcaparas
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -79,31 +82,31 @@ Endpoint detection and response is improved. Enterprise customers can now take a
    Windows Defender is now called Windows Defender Antivirus and now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). 
     
    We've also [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10). The new library includes information on:
-   - [Deploying and enabling AV protection](/windows/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus)
-   - [Managing updates](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus)
-   - [Reporting](/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
-   - [Configuring features](/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
-   - [Troubleshooting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)
+- [Deploying and enabling AV protection](/windows/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus)
+- [Managing updates](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus)
+- [Reporting](/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
+- [Configuring features](/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
+- [Troubleshooting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)
 
-   Some of the highlights of the new library include [Evaluation guide for Windows Defender AV](/windows/threat-protection/windows-defender-antivirus//evaluate-windows-defender-antivirus) and [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus).
+  Some of the highlights of the new library include [Evaluation guide for Windows Defender AV](/windows/threat-protection/windows-defender-antivirus//evaluate-windows-defender-antivirus) and [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus).
 
-   New features for Windows Defender AV in Windows 10 Enterprise 2019 LTSC include:
-   - [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
-   - [The ability to specify the level of cloud-protection](/windows/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus)
-   - [Windows Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus)
+  New features for Windows Defender AV in Windows 10 Enterprise 2019 LTSC include:
+- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
+- [The ability to specify the level of cloud-protection](/windows/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus)
+- [Windows Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus)
 
-   We've [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+  We've [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
 
-   **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
-   - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
-    - [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
-    - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
-    - Upgraded detections of ransomware and other advanced attacks.
-    - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
+  **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
+- [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+  - [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
+  - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
+  - Upgraded detections of ransomware and other advanced attacks.
+  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
 
-   **Threat reponse** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
-   - [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
-    - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
+  **Threat reponse** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
+- [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+  - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
 Additional capabilities have been added to help you gain a holistic view on **investigations** include:
    - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.

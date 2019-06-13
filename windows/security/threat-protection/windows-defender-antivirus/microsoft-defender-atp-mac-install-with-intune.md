@@ -1,5 +1,6 @@
 ---
 title: Installing Microsoft Defender ATP for Mac with Microsoft Intune
+ms.reviewer: 
 description: Describes how to install Microsoft Defender ATP for Mac, using Microsoft Intune.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
-author: martyav
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -24,7 +25,7 @@ ms.topic: conceptual
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
@@ -40,7 +41,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/en-us/intune/lob-apps-macos](https://docs.microsoft.com/en-us/intune/lob-apps-macos).
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
 
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:

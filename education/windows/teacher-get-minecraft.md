@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: mjcaparas
 searchScope:
   - Store
-ms.author: trudyha
+ms.author: macapara
 ms.date: 01/05/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ---
 

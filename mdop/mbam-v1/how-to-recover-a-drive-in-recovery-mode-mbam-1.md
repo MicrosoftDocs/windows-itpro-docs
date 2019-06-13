@@ -1,8 +1,11 @@
 ---
 title: How to Recover a Drive in Recovery Mode
 description: How to Recover a Drive in Recovery Mode
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 09d27e4b-57fa-47c7-a004-8b876a49f27e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ Use this procedure to access the centralized Key Recovery data system that can p
 **Important**  
 MBAM generates single-use recovery keys. Under this limitation, a recovery key can be used only once and then it is no longer valid. The single use of a recovery password is automatically applied to operating system drives and fixed drives. On removable drives, the single use is applied when the drive is removed and then re-inserted and unlocked on a computer that has the group policy settings activated to manage removable drives.
 
- 
+ 
 
 **To recover a drive in Recovery Mode**
 
@@ -34,7 +37,7 @@ MBAM generates single-use recovery keys. Under this limitation, a recovery key c
     **Note**  
     If you are an MBAM Advanced Helpdesk User, the user domain and user ID entries are not required.
 
-     
+     
 
 4.  MBAM returns the following:
 
@@ -47,7 +50,7 @@ MBAM generates single-use recovery keys. Under this limitation, a recovery key c
         **Note**  
         If you are recovering a damaged drive, the recovery package option provides BitLocker with the critical information necessary to attempt the recovery.
 
-         
+         
 
 5.  After the recovery password and recovery package are retrieved, the recovery password is displayed. To copy the password, click **Copy Key**, and then paste the recovery password into an email or other text file for temporary storage. Or, to save the recovery password to a file, click **Save**.
 
@@ -58,9 +61,9 @@ MBAM generates single-use recovery keys. Under this limitation, a recovery key c
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam.md)
 
- 
+ 
 
- 
+ 
 
 
 

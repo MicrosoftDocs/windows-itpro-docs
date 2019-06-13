@@ -1,8 +1,11 @@
 ---
 title: How to Use the Desktop Notification Area for Application Virtualization Client Management
 description: How to Use the Desktop Notification Area for Application Virtualization Client Management
-author: jamiejdt
+author: eavena
 ms.assetid: 75b2e636-7669-4e1e-8368-8b9fca567a84
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

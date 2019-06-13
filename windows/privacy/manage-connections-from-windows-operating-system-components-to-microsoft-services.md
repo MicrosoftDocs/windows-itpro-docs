@@ -2,15 +2,16 @@
 title: Manage connections from Windows operating system components to Microsoft services (Windows 10)
 description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
+ms.reviewer: 
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: medgarmedgar
-ms.author: v-medgar
-manager: sanashar
+author: dansimp
+ms.author: dansimp
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/16/2019
@@ -26,7 +27,7 @@ ms.date: 05/16/2019
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
-Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+Learn about the network connections that Windows components make to Microsoft in addition to the privacy settings that affect the data which is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
@@ -232,7 +233,7 @@ For more information, see [Automatic Root Certificates Update Configuration](htt
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
-> By not automatically downloading the root certificates, the device might have not be able to connect to some websites.
+> By not automatically downloading the root certificates, the device might have not been able to connect to some websites.
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
@@ -417,7 +418,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
-> The following Group Policies and Registry Keys are for user interactive scenarios rather then the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+> The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -582,7 +583,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
 | Allow Microsoft Compatibility List                       | Choose whether to use the Microsoft Compatibility List in Microsoft Edge. <br /> **Set to: Disabled**        |
 
-Alternatively, you can configure the these Registry keys as described:
+Alternatively, you can configure the following Registry keys as described:
 
 | Registry Key | Registry path |
 | - | - |
@@ -666,7 +667,7 @@ To remove the News app:
 
   -or-
 >[!IMPORTANT]
-> If you have any issues with these commands, do a system reboot and try the scripts again.
+> If you have any issues with these commands, restart the system and try the scripts again.
 >
 - Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
@@ -913,7 +914,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
 - Create a new REG_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY_CURRENT_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
-To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
+To turn off **Let apps on my other devices open apps and continue experiences on this device**:
 
 - Turn off the feature in the UI.
 
@@ -1411,7 +1412,7 @@ To turn this off:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access diagnostic information about other apps**
 
   -or-
 
@@ -1595,7 +1596,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 >1. Ensure Windows and Windows Defender are fully up to date.
 >2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to >the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make >the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link >and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 

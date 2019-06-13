@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: shortpatti
-ms.author: pashort
-manager: elizapo
+author: dulcemontemayor
+ms.author: dolmont
+manager: dansimp
 ms.reviewer: 
 ms.localizationpriority: medium
 ms.date: 03/21/2019

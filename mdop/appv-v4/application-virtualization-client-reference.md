@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Client Reference
 description: Application Virtualization Client Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: 5107f567-9ac8-43e1-89c8-5e0762e3ddd8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -4,10 +4,12 @@ description: This topic provides best practice recommendations for maintaining o
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: coveminer
-ms.author: v-jokai
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Maintain optimal power settings on Surface devices

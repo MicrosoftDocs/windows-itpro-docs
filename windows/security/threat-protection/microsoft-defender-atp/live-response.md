@@ -107,7 +107,7 @@ help | Provides help information for live response commands.
 persistence | Shows all known persistence methods on the machine.
 processes | Shows all processes running on the machine.
 registry | Shows registry values.
-sheduledtasks| Shows all scheduled tasks on the machine. 
+scheduledtasks| Shows all scheduled tasks on the machine. 
 services | Shows all services on the machine. 
 trace | Sets the terminal's logging mode to debug.
 

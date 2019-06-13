@@ -2,12 +2,14 @@
 title: Planning Settings for a Basic Firewall Policy (Windows 10)
 description: Planning Settings for a Basic Firewall Policy
 ms.assetid: 4c90df5a-3cbc-4b85-924b-537c2422d735
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

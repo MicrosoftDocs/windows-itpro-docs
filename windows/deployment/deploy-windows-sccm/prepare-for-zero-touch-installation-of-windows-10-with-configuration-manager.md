@@ -2,6 +2,9 @@
 title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager (Windows 10)
 description: This topic will walk you through the process of integrating Microsoft System Center 2012 R2 Configuration Manager SP1 with Microsoft Deployment Toolkit (MDT) 2013 Update 2, as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: install, configure, deploy, deployment
 ms.prod: w10
 ms.localizationpriority: medium
@@ -83,51 +86,51 @@ Figure 6. The Configuration Manager service accounts used for operating system d
 
 In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
 
-1.  On DC01, log on as Administrator in the CONTOSO domain using the password **P@ssw0rd**.
+1. On DC01, log on as Administrator in the CONTOSO domain using the password <strong>P@ssw0rd</strong>.
 
-2.  In an elevated Windows PowerShell prompt (run as Administrator), run the following commands, pressing **Enter** after each command:
+2. In an elevated Windows PowerShell prompt (run as Administrator), run the following commands, pressing **Enter** after each command:
 
-    ``` syntax
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
+   ``` syntax
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 
-    Set-Location C:\Setup\Scripts
+   Set-Location C:\Setup\Scripts
 
-    .\Set-OUPermissions.ps1 -Account CM_JD 
-    -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
-    ```
+   .\Set-OUPermissions.ps1 -Account CM_JD 
+   -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
+   ```
 
-3.  The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
+3. The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
 
-    * Scope: This object and all descendant objects
+   * Scope: This object and all descendant objects
 
-    * Create Computer objects
+   * Create Computer objects
 
-    * Delete Computer objects
+   * Delete Computer objects
 
-    * Scope: Descendant Computer objects
+   * Scope: Descendant Computer objects
 
-    * Read All Properties
+   * Read All Properties
 
-    * Write All Properties
+   * Write All Properties
 
-    * Read Permissions
+   * Read Permissions
 
-    * Modify Permissions
+   * Modify Permissions
 
-    * Change Password
+   * Change Password
 
-    * Reset Password
+   * Reset Password
 
-    * Validated write to DNS host name
+   * Validated write to DNS host name
 
-    * Validated write to service principal name
+   * Validated write to service principal name
 
 ## <a href="" id="sec03"></a>Review the Sources folder structure
 
 
 To support the packages you create in this section, the following folder structure should be created on the Configuration Manager primary site server (CM01):
 
->[!NOTE]  
+>[!NOTE]
 >In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
 
 -   E:\\Sources
@@ -161,19 +164,19 @@ Figure 7. The E:\\Sources\\OSD folder structure.
 
 To extend the Configuration Manager console with MDT wizards and templates, you install MDT in the default location and run the integration setup. In these steps, we assume you have downloaded MDT to the C:\\Setup\\MDT2013 folder on CM01.
 
-1.  On CM01, log on as Administrator in the CONTOSO domain using the password **P@ssw0rd**.
+1. On CM01, log on as Administrator in the CONTOSO domain using the password <strong>P@ssw0rd</strong>.
 
-2.  Make sure the Configuration Manager Console is closed before continuing.
+2. Make sure the Configuration Manager Console is closed before continuing.
 
-3.  Using File Explorer, navigate to the **C:\\Setup\\MDT** folder.
+3. Using File Explorer, navigate to the **C:\\Setup\\MDT** folder.
 
-4.  Run the MDT setup (MicrosoftDeploymentToolkit2013\_x64.msi), and use the default options in the setup wizard.
+4. Run the MDT setup (MicrosoftDeploymentToolkit2013\_x64.msi), and use the default options in the setup wizard.
 
-5.  From the Start screen, run Configure ConfigManager Integration with the following settings:
+5. From the Start screen, run Configure ConfigManager Integration with the following settings:
 
-    * Site Server Name: CM01.contoso.com
+   * Site Server Name: CM01.contoso.com
 
-    * Site code: PS1
+   * Site code: PS1
 
 ![figure 8](../images/mdt-06-fig08.png)
 
@@ -271,9 +274,9 @@ Configuration Manager has many options for starting a deployment, but starting v
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

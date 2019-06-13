@@ -1,8 +1,11 @@
 ---
 title: How to Create and Test a MED-V Image
 description: How to Create and Test a MED-V Image
-author: jamiejdt
+author: dansimp
 ms.assetid: 40e4aba6-12cb-4794-967d-2c09dc20d808
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -56,7 +59,7 @@ When creating a MED-V image, it goes through the following stages:
     **Note**  
     The following characters cannot be included in the image name: space " &lt; &gt; | \\ / : \* ?
 
-     
+     
 
 5.  Click **OK**.
 
@@ -93,7 +96,7 @@ When creating a MED-V image, it goes through the following stages:
 </tbody>
 </table>
 
- 
+ 
 
 ## How to Test a MED-V Image from the MED-V Client
 
@@ -125,12 +128,12 @@ After a MED-V test image is created, use the following procedure to test the ima
 **Note**  
 While testing an image, do not open VPC and make changes to the image.
 
- 
+ 
 
 **Note**  
 When testing an image, no changes are saved to the image between sessions; instead, they are saved in a separate, temporary file. This is to ensure that when the image is packed and run on the production environment, it is the original, clean image.
 
- 
+ 
 
 ## Related topics
 
@@ -143,9 +146,9 @@ When testing an image, no changes are saved to the image between sessions; inste
 
 [MED-V Client Operations](med-v-client-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

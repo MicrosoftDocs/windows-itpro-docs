@@ -42,6 +42,8 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Windows Server 2008 R2 SP1] <BR> You can now onboard Windows Server 2008 R2 SP1.
+
 - [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.

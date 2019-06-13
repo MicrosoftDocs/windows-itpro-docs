@@ -1,8 +1,11 @@
 ---
 title: Deploying a MED-V Workspace Using a Deployment Package
 description: Deploying a MED-V Workspace Using a Deployment Package
-author: jamiejdt
+author: dansimp
 ms.assetid: e07fa70a-1a9f-486f-9a86-b33593b234da
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,15 +40,15 @@ If the image will be included in the package, no other configurations are necess
 **Note**  
 If you are using image pre-staging, it is important to configure the image pre-stage folder prior to creating the deployment package. The folder path needs to be included in the deployment package.
 
- 
+ 
 
 Finally, create the deployment package. For more information on creating a deployment package, see [How to Configure a Deployment Package](how-to-configure-a-deployment-package.md). After the package is complete, distribute it for deployment.
 
 After the deployment package is distributed, MED-V client can be installed and the image deployed. For more information on installing MED-V client, see [How to Install MED-V Client](how-to-install-med-v-clientdeployment-package.md). For more information on deploying the image, see [How to Deploy a Workspace Image](how-to-deploy-a-workspace-imagedeployment-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

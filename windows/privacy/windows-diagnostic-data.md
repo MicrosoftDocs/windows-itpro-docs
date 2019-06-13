@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/15/2019
+ms.reviewer: 
 ---
 
 # Windows 10, version 1709 and newer diagnostic data for the Full level

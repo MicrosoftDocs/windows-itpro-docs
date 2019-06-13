@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Deployment Requirements
 description: Application Virtualization Deployment Requirements
-author: jamiejdt
+author: dansimp
 ms.assetid: 9564e974-a853-45ae-b605-0a2e3e5cf212
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

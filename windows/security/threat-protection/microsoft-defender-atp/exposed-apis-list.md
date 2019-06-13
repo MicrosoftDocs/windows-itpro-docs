@@ -1,5 +1,6 @@
 ---
 title: Supported Microsoft Defender Advanced Threat Protection query APIs  
+ms.reviewer: 
 description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, supported apis, actor, alerts, machine, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -30,23 +31,24 @@ ms.topic: article
 ### End Point URI:
 
 > The service base URI is: https://api.securitycenter.windows.com
-
+> 
 > The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
 
 ### Versioning:
 
 > The API supports versioning.
-
+> 
 > The current version is **V1.0**.
-
+> 
 > To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
-
+> 
 > If you don't specify any version (e.g., https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
 
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
 ## In this section
+
 Topic | Description
 :---|:---
 Advanced Hunting | Run queries from API.

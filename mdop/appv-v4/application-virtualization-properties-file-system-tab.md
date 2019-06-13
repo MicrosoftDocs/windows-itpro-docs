@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Properties File System Tab
 description: Application Virtualization Properties File System Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: c7d56d36-8c50-4dfc-afee-83dea06376d4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: Getting Started with MBAM 2.5
 description: Getting Started with MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 23d0cfbb-e2ef-4c34-bf29-1b7ab4c48f00
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -41,32 +44,32 @@ Before you start planning your MBAM deployment, review the following topics.
 <tbody>
 <tr class="odd">
 <td align="left"><p>High-level overview of MBAM 2.5 that describes how you can use it in your organization.</p></td>
-<td align="left"><p>[About MBAM 2.5](about-mbam-25.md)</p></td>
+<td align="left"><p><a href="about-mbam-25.md" data-raw-source="[About MBAM 2.5](about-mbam-25.md)">About MBAM 2.5</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Release notes, which lists known issues in the product.</p></td>
-<td align="left"><p>[Release Notes for MBAM 2.5](release-notes-for-mbam-25.md)</p></td>
+<td align="left"><p><a href="release-notes-for-mbam-25.md" data-raw-source="[Release Notes for MBAM 2.5](release-notes-for-mbam-25.md)">Release Notes for MBAM 2.5</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Information about how you can evaluate MBAM 2.5 in a test environment.</p></td>
-<td align="left"><p>[Evaluating MBAM 2.5 in a Test Environment](evaluating-mbam-25-in-a-test-environment.md)</p></td>
+<td align="left"><p><a href="evaluating-mbam-25-in-a-test-environment.md" data-raw-source="[Evaluating MBAM 2.5 in a Test Environment](evaluating-mbam-25-in-a-test-environment.md)">Evaluating MBAM 2.5 in a Test Environment</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description of the MBAM 2.5 features and the recommended architecture of the Stand-alone and Configuration Manager Integration topologies in a production environment.</p></td>
-<td align="left"><p>[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)</p></td>
+<td align="left"><p><a href="high-level-architecture-for-mbam-25.md" data-raw-source="[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)">High-Level Architecture for MBAM 2.5</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description and illustration of each MBAM Server feature, without the recommended architecture.</p></td>
-<td align="left"><p>[Illustrated Features of an MBAM 2.5 Deployment](illustrated-features-of-an-mbam-25-deployment.md)</p></td>
+<td align="left"><p><a href="illustrated-features-of-an-mbam-25-deployment.md" data-raw-source="[Illustrated Features of an MBAM 2.5 Deployment](illustrated-features-of-an-mbam-25-deployment.md)">Illustrated Features of an MBAM 2.5 Deployment</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Describes the keyboard shortcuts that are available for MBAM 2.5.</p></td>
-<td align="left"><p>[Accessibility for MBAM 2.5](accessibility-for-mbam-25.md)</p></td>
+<td align="left"><p><a href="accessibility-for-mbam-25.md" data-raw-source="[Accessibility for MBAM 2.5](accessibility-for-mbam-25.md)">Accessibility for MBAM 2.5</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## How to get MDOP technologies
 
@@ -92,9 +95,9 @@ MBAM 2.5 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is pa
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
- 
+ 
 
- 
+ 
 
 
 

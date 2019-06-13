@@ -1,8 +1,11 @@
 ---
 title: Deploying App-V 5.1
 description: Deploying App-V 5.1
-author: jamiejdt
+author: dansimp
 ms.assetid: af8742bf-e24b-402a-bcf4-0f2297f26bc4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

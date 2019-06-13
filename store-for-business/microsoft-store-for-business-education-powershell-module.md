@@ -11,12 +11,14 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author:
 ms.date: 10/22/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft Store for Business and Education PowerShell module - preview
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Microsoft Store for Business and Education PowerShell module (preview) is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=853459).
 
@@ -50,7 +52,6 @@ To install **Microsoft Store for Business and Education PowerShell** with PowerS
 # Install the Microsoft Store for Business and Education PowerShell module from PowerShell Gallery
 
 Install-Module -Name MSStore
-
 ```
 
 ## Import Microsoft Store for Business and Education PowerShell module into the PowerShell session
@@ -60,7 +61,6 @@ Once you install the module on your Windows 10 device, you will need to then imp
 # Import the MSStore module into this session
 
 Import-Module -Name MSStore
-
 ```
 
 Next, authorize the module to call **Microsoft Store for Business and Education** on your behalf. This step is required once, per user of the PowerShell module.
@@ -71,7 +71,6 @@ To authorize the PowerShell module, run this command. You'll need to sign-in wit
 # Grant MSStore Access to your Microsoft Store for Business and Education
 
 Grant-MSStoreClientAppAccess
-
 ```
 You will be promted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
 
@@ -82,7 +81,6 @@ Service management should encounter no breaking changes as a result of the separ
 # View items in inventory (Apps & software)
 
 Get-MSStoreInventory
-
 ```
 
 >[!TIP]
@@ -100,7 +98,6 @@ Most items in **Products and Services** in **Microsoft Store for Business and Ed
 # View products assigned to people
 
 Get-MSStoreSeatAssignments -ProductId 9NBLGGH4R2R6 -SkuId 0016
-
 ```
 
 > [!Important]
@@ -127,7 +124,6 @@ Add-MSStoreSeatAssignment -ProductId 9NBLGGH4R2R6 -SkuId 0016 -Username 'user@my
 # Reclaim a product (Product ID and SKU ID combination) from a User (user@host.com)
 
 Remove-MSStoreSeatAssignment -ProductId 9NBLGGH4R2R6 -SkuId 0016 -Username 'user@myorganization.onmicrosoft.com'
-
 ```
 
 ## Assign or reclaim a product with a .csv file
@@ -143,7 +139,6 @@ Add-MSStoreSeatAssignments  -ProductId 9NBLGGH4R2R6 -SkuId 0016 -PathToCsv C:\Pe
 # Reclaim a product (Product ID and SKU ID combination) from a User (user@host.com)
 
 Remove-MSStoreSeatAssignments  -ProductId 9NBLGGH4R2R6 -SkuId 0016 -PathToCsv C:\People.csv -ColumnName UserPrincipalName
-
 ```
 
 ## Uninstall Microsoft Store for Business and Education PowerShell module
@@ -153,5 +148,4 @@ You can remove **Microsoft Store for Business and Education PowerShell** from yo
 # Uninstall the MSStore Module
 
 Get-InstalledModule -Name "MSStore" -RequiredVersion 1.0 | Uninstall-Module
-
 ```

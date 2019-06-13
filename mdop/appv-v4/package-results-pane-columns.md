@@ -1,8 +1,11 @@
 ---
 title: Package Results Pane Columns
 description: Package Results Pane Columns
-author: jamiejdt
+author: eavena
 ms.assetid: 4ed3a06a-656d-497a-b62d-21684396e2b0
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

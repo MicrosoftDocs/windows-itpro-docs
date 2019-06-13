@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 12/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4672(S): Special privileges assigned to new logon.
@@ -19,7 +22,7 @@ ms.date: 12/20/2018
 
 <img src="images/event-4672.png" alt="Event 4672 illustration" width="449" height="503" hspace="10" align="left" />
 </br>
-***Subcategory:***&nbsp;[Audit Special Logon](audit-special-logon.md)
+<strong><em>Subcategory:</em></strong>&nbsp;<a href="audit-special-logon.md" data-raw-source="[Audit Special Logon](audit-special-logon.md)">Audit Special Logon</a>
 
 ***Event Description:***
 
@@ -84,7 +87,6 @@ You typically will see many of these events in the event log, because every logo
  <Data Name="PrivilegeList">SeTcbPrivilege SeSecurityPrivilege SeTakeOwnershipPrivilege SeLoadDriverPrivilege SeBackupPrivilege SeRestorePrivilege SeDebugPrivilege SeSystemEnvironmentPrivilege SeEnableDelegationPrivilege SeImpersonatePrivilege</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.

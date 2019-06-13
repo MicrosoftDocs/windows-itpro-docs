@@ -2,11 +2,13 @@
 title: RemoteLock DDF file
 description: RemoteLock DDF file
 ms.assetid: A301AE26-1BF1-4328-99AB-1ABBA4960797
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

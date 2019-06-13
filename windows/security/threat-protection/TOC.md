@@ -95,6 +95,7 @@
 #####  [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 ##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 ##### [Information protection in Windows overview](microsoft-defender-atp/information-protection-in-windows-overview.md)
+###### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 
 
@@ -238,6 +239,7 @@
 ####### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
    
 ##### [Microsoft Defender ATP API](microsoft-defender-atp/use-apis.md)
+###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Get started with Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ####### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ####### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
@@ -1031,11 +1033,11 @@
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
 #### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
-##### [Level 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
-##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
-##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
-##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
-##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
+##### [Level 1 enterprise basic security](windows-security-configuration-framework/level-1-enterprise-basic-security.md)
+##### [Level 2 enterprise enhanced security](windows-security-configuration-framework/level-2-enterprise-enhanced-security.md)
+##### [Level 3 enterprise high security](windows-security-configuration-framework/level-3-enterprise-high-security.md)
+##### [Level 4 enterprise dev/ops workstation](windows-security-configuration-framework/level-4-enterprise-devops-security.md)
+##### [Level 5 enterprise administrator workstation](windows-security-configuration-framework/level-5-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 

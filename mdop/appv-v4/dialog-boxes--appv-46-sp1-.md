@@ -1,8 +1,11 @@
 ---
 title: Dialog Boxes (AppV 4.6 SP1)
 description: Dialog Boxes (AppV 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: f76b95df-cba4-4a69-8cd8-a888edf437be
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

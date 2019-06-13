@@ -1,8 +1,11 @@
 ---
 title: Files Tab
 description: Files Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: 14191e51-11a2-40ab-8855-3408a4bc5a9d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,11 @@
 ---
 title: How to Manage User BitLocker Encryption Exemptions
 description: How to Manage User BitLocker Encryption Exemptions
-author: jamiejdt
+author: dansimp
 ms.assetid: f582ab82-5bb5-4cd3-ad7c-483240533cf9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -38,26 +41,25 @@ To exempt users from BitLocker protection, you have to:
 <td align="left"><p>Add the exempted user to a security group for a Group Policy Object that is configured specifically for exempted users.</p></td>
 <td align="left"><p>When members of this security group sign in to a computer, the user’s Group Policy setting exempts the user from BitLocker protection. The user’s Group Policy setting overwrites the computer policy, and the computer will remain exempt from BitLocker encryption.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>MBAM does not enact the encryption policy if the computer is already BitLocker-protected and the user is exempted. However, if another user who is not exempt from the encryption policy signs in to the computer, encryption will take place.</p>
+<strong>Note</strong><br/><p>MBAM does not enact the encryption policy if the computer is already BitLocker-protected and the user is exempted. However, if another user who is not exempt from the encryption policy signs in to the computer, encryption will take place.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The following steps describe what occurs when end users request an exemption from the BitLocker Drive Encryption exemption process through the MBAM Client or through whatever process your organization uses. You must configure MBAM Group Policy settings to allow end users to request an exemption from BitLocker Drive Encryption.
 
 1.  When end users sign in to a computer that is required to be encrypted, they receive a notification that their computer is going to be encrypted. They can select **Request Exemption** and postpone the encryption by selecting **Postpone**, or they can select **Start Encryption** to accept the BitLocker encryption.
 
-    **Note**  
+    **Note**  
     Selecting **Request Exemption** postpones the BitLocker protection until the maximum time that is set in the User Exemption Policy.
 
-     
+
 
 2.  If end users select **Request Exemption**, they receive a notification telling them to contact the organization’s BitLocker administration group. Depending on how the **Configure User Exemption Policy** is configured, users are provided with one or more of the following contact methods:
 
@@ -95,26 +97,25 @@ To exempt users from BitLocker protection, you have to:
 <td align="left"><p>Add the exempted user to a security group for a Group Policy Object that is configured specifically for exempted users.</p></td>
 <td align="left"><p>When members of this security group sign in to a computer, the user’s Group Policy setting exempts the user from BitLocker protection. The user’s Group Policy setting overwrites the computer policy, and the computer will remain exempt from BitLocker encryption.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the computer is already BitLocker-protected, the User Exemption Policy has no effect. In addition, if another user signs in to a computer that is not exempt from the encryption policy, encryption will take place.</p>
+<strong>Note</strong><br/><p>If the computer is already BitLocker-protected, the User Exemption Policy has no effect. In addition, if another user signs in to a computer that is not exempt from the encryption policy, encryption will take place.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The following steps describe what occurs when end users request an exemption from the BitLocker Drive Encryption exemption process through the MBAM Client or through whatever process your organization uses. You must configure MBAM Group Policy settings to allow end users to request an exemption from BitLocker Drive Encryption.
 
 1.  When end users sign in to a computer that is required to be encrypted, they receive a notification that their computer is going to be encrypted. They can select **Request Exemption** and postpone the encryption by selecting **Postpone**, or they can select **Start Encryption** to accept the BitLocker encryption.
 
-    **Note**  
+    **Note**  
     Selecting **Request Exemption** postpones the BitLocker protection until the maximum time that is set in the User Exemption Policy.
 
-     
+
 
 2.  If end users select **Request Exemption**, they receive a notification telling them to contact the organization’s BitLocker administration group. Depending on how the **Configure User Exemption Policy** is configured, users are provided with one or more of the following contact methods:
 
@@ -140,10 +141,10 @@ The following steps describe what occurs when end users request an exemption fro
 
     When a user signs in to a computer controlled by BitLocker, the MBAM Client checks the User Exemption Policy setting. If the computer is already encrypted, BitLocker protection is not suspended. If the computer is not encrypted, MBAM does not prompt the user to encrypt.
 
-    **Important**  
+    **Important**  
     Shared computer scenarios require special consideration when you are using BitLocker user exemptions. If a non-exempt user signs in to a computer that is shared with an exempt user, the computer may be encrypted.
 
-     
+
 
 
 ## Related topics
@@ -153,9 +154,9 @@ The following steps describe what occurs when end users request an exemption fro
 
 [Planning for MBAM 2.5 Group Policy Requirements](planning-for-mbam-25-group-policy-requirements.md)
 
- 
 
- 
+
+
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

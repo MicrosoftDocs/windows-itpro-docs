@@ -1,8 +1,11 @@
 ---
 title: Planning to Deploy MBAM with Configuration Manager
 description: Planning to Deploy MBAM with Configuration Manager
-author: jamiejdt
+author: msfttracyp
 ms.assetid: fb768306-48c2-40b4-ac4e-c279db987391
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,10 +19,10 @@ ms.date: 08/30/2016
 
 To deploy MBAM with the Configuration Manager topology, a three-server architecture, which supports 200,000 clients, is recommended. Use a separate server to run Configuration Manager, and install the basic Administration and Monitoring features on two servers, as shown in the architecture image in [Getting Started - Using MBAM with Configuration Manager](getting-started---using-mbam-with-configuration-manager.md).
 
-**Important**  
+**Important**  
 Windows To Go is not supported when you install the integrated topology of MBAM with Configuration Manager 2007.
 
- 
+
 
 ## Deployment Prerequisites for Installing MBAM with Configuration Manager
 
@@ -44,23 +47,23 @@ Ensure that you have met the following prerequisites before you install MBAM wit
 </tr>
 <tr class="even">
 <td align="left"><p>Enable the Hardware Inventory Client Agent on the Configuration Manager Server.</p></td>
-<td align="left"><p>For Configuration Manager 2007, see [How to Configure Hardware Inventory for a Site](https://go.microsoft.com/fwlink/?LinkId=301656).</p>
-<p>For System Center 2012 Configuration Manager, see [How to Configure Hardware Inventory in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301685).</p></td>
+<td align="left"><p>For Configuration Manager 2007, see <a href="https://go.microsoft.com/fwlink/?LinkId=301656" data-raw-source="[How to Configure Hardware Inventory for a Site](https://go.microsoft.com/fwlink/?LinkId=301656)">How to Configure Hardware Inventory for a Site</a>.</p>
+<p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301685" data-raw-source="[How to Configure Hardware Inventory in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301685)">How to Configure Hardware Inventory in Configuration Manager</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Enable the Desired Configuration Management (DCM) agent or the compliance settings, depending on the version of Configuration Manager that you are using.</p></td>
-<td align="left"><p>For Configuration Manager 2007, enable the see [Desired Configuration Management Client Agent Properties](https://go.microsoft.com/fwlink/?LinkId=301686).</p>
-<p>For System Center 2012 Configuration Manager, see [Configuring Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301687).</p></td>
+<td align="left"><p>For Configuration Manager 2007, enable the see <a href="https://go.microsoft.com/fwlink/?LinkId=301686" data-raw-source="[Desired Configuration Management Client Agent Properties](https://go.microsoft.com/fwlink/?LinkId=301686)">Desired Configuration Management Client Agent Properties</a>.</p>
+<p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301687" data-raw-source="[Configuring Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301687)">Configuring Compliance Settings in Configuration Manager</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Define a reporting services point in Configuration Manager. Required for SQL Reporting Services.</p></td>
-<td align="left"><p>For Configuration Manager 2007, see [How to Create a Reporting Services Point for SQL Reporting Services](https://go.microsoft.com/fwlink/?LinkId=301688).</p>
-<p>For System Center 2012 Configuration Manager, see [Prerequisites for Reporting in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301689).</p></td>
+<td align="left"><p>For Configuration Manager 2007, see <a href="https://go.microsoft.com/fwlink/?LinkId=301688" data-raw-source="[How to Create a Reporting Services Point for SQL Reporting Services](https://go.microsoft.com/fwlink/?LinkId=301688)">How to Create a Reporting Services Point for SQL Reporting Services</a>.</p>
+<p>For System Center 2012 Configuration Manager, see <a href="https://go.microsoft.com/fwlink/?LinkId=301689" data-raw-source="[Prerequisites for Reporting in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301689)">Prerequisites for Reporting in Configuration Manager</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="---------configuration-manager-supported-versions"></a> Configuration Manager Supported Versions
 
@@ -86,22 +89,21 @@ MBAM supports the following versions of Configuration Manager:
 <td align="left"><p>SP1 or later</p></td>
 <td align="left"><p>64-bit</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Although Configuration Manager 2007 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.</p>
+<strong>Note</strong><br/><p>Although Configuration Manager 2007 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
+<td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For a list of supported configurations for the Configuration Manager Server, see the appropriate webpage for the version of Configuration Manager that you are using. MBAM has no additional system requirements for the Configuration Manager Server.
 
@@ -147,9 +149,9 @@ The following table lists the server processor, RAM, and disk space requirements
 </tbody>
 </table>
 
- 
 
-## SQL Server Processor, RAM, and Disk Space Requirements
+
+## SQL Server Processor, RAM, and Disk Space Requirements
 
 
 The following table lists the server processor, RAM, and disk space requirements for the SQL Server computer when you are using the Configuration Manager Integration topology.
@@ -186,7 +188,7 @@ The following table lists the server processor, RAM, and disk space requirements
 </tbody>
 </table>
 
- 
+
 
 ## Required permissions to install the MBAM Server
 
@@ -216,9 +218,9 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
 
-**System Center 2012 Configuration Manager**
+
+**System Center 2012 Configuration Manager**
 
 <table>
 <colgroup>
@@ -247,7 +249,7 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
+
 
 **Configuration Manager 2007**
 
@@ -278,7 +280,7 @@ To install MBAM with Configuration Manager, you must have an administrative user
 </tbody>
 </table>
 
- 
+
 
 ## Order of Deployment of MBAM Features for the Configuration Manager Topology
 
@@ -319,7 +321,7 @@ This checklist outlines the recommended steps and a high-level list of items to 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Review the getting started information, which describes how Configuration Manager works with MBAM and shows the recommended high-level architecture.</p></td>
-<td align="left"><p>[Getting Started - Using MBAM with Configuration Manager](getting-started---using-mbam-with-configuration-manager.md)</p></td>
+<td align="left"><p><a href="getting-started---using-mbam-with-configuration-manager.md" data-raw-source="[Getting Started - Using MBAM with Configuration Manager](getting-started---using-mbam-with-configuration-manager.md)">Getting Started - Using MBAM with Configuration Manager</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
@@ -331,34 +333,34 @@ This checklist outlines the recommended steps and a high-level list of items to 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for and configure MBAM Group Policy requirements.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Group Policy Requirements](planning-for-mbam-20-group-policy-requirements-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-group-policy-requirements-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Group Policy Requirements](planning-for-mbam-20-group-policy-requirements-mbam-2.md)">Planning for MBAM 2.0 Group Policy Requirements</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for and create necessary Active Directory Domain Services security groups and plan for MBAM local security group membership requirements.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md)</p></td>
+<td align="left"><p>Plan for and create necessary Active Directory Domain Services security groups and plan for MBAM local security group membership requirements.</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-administrator-roles-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Administrator Roles](planning-for-mbam-20-administrator-roles-mbam-2.md)">Planning for MBAM 2.0 Administrator Roles</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Plan for deploying MBAM Client deployment.</p></td>
-<td align="left"><p>[Planning for MBAM 2.0 Client Deployment](planning-for-mbam-20-client-deployment-mbam-2.md)</p></td>
+<td align="left"><p><a href="planning-for-mbam-20-client-deployment-mbam-2.md" data-raw-source="[Planning for MBAM 2.0 Client Deployment](planning-for-mbam-20-client-deployment-mbam-2.md)">Planning for MBAM 2.0 Client Deployment</a></p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Using MBAM with Configuration Manager](using-mbam-with-configuration-manager.md)
 
- 
 
- 
+
+
 
 
 

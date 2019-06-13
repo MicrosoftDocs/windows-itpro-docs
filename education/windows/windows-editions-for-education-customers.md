@@ -7,9 +7,11 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: lizap
-ms.author: elizpao
+author: mjcaparas
+ms.author: macapara
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows 10 editions for education customers

@@ -1,8 +1,11 @@
 ---
 title: How to Sequence a Package by Using PowerShell
 description: How to Sequence a Package by Using PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: 6134c6be-937d-4609-a516-92d49154b290
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Use the following procedure to create a new App-V 5.1 package using PowerShell.
 **Note**  
 Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V 5.1 Sequencer and Client Deployment](planning-for-the-app-v-51-sequencer-and-client-deployment.md).
 
- 
+ 
 
 **To create a new virtual application using PowerShell**
 
@@ -64,9 +67,9 @@ Before you use this procedure you must copy the associated installer files to th
 
 [Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md)
 
- 
+ 
 
- 
+ 
 
 
 

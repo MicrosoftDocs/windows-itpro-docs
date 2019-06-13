@@ -1,8 +1,10 @@
 ---
 description: If you're having problems with Microsoft Edge, this topic tells how to use the Enterprise Mode site list to automatically open sites using IE11.
 ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
-author: shortpatti
-ms.author: pashort
+ms.reviewer: 
+manager: dansimp
+author: eavena
+ms.author: eravena
 ms.manager: dougkim
 ms.prod: browser-edge
 ms.topic: reference

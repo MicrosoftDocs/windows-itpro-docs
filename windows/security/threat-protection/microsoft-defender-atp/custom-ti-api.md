@@ -35,11 +35,11 @@ Before creating custom alerts, you'll need to enable the threat intelligence app
 ### Use the threat intelligence REST API to create custom threat intelligence alerts
 You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource:
 
--	GET
--	POST
--	PATCH
--	PUT (used for managing entities relations only)
--	DELETE
+-   GET
+-   POST
+-   PATCH
+-   PUT (used for managing entities relations only)
+-   DELETE
 
 All threat intelligence API requests use the following basic URL pattern:
 
@@ -48,12 +48,12 @@ All threat intelligence API requests use the following basic URL pattern:
 ```
 
 For this URL:
--	`https://TI.SecurityCenter.Windows.com` is the threat intelligence API endpoint.
--	`{version}` is the target service version. Currently, the only supported version is: v1.0.
--	`{resource}` is resource segment or path, such as:
-  -	AlertDefinitions (for specific single resource, add: (id))
-  -	IndicatorsOfCompromise (for specific single resource, add: (id))
--	`[query_parameters]` represents additional query parameters such as $filter and $select.
+- `https://TI.SecurityCenter.Windows.com` is the threat intelligence API endpoint.
+- `{version}` is the target service version. Currently, the only supported version is: v1.0.
+- `{resource}` is resource segment or path, such as:
+  - AlertDefinitions (for specific single resource, add: (id))
+  - IndicatorsOfCompromise (for specific single resource, add: (id))
+- `[query_parameters]` represents additional query parameters such as $filter and $select.
 
 **Quotas**</br>
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
@@ -93,7 +93,6 @@ The response will include an access token and expiry information.
   "resource": "https://graph.microsoft.com",
   "access_token": "<token>"
 }
-
 ```
 
 ## Threat intelligence API metadata
@@ -163,7 +162,6 @@ If successful, you should get a 201 CREATED response containing the representati
   "LastModifiedAt": null,
   "LastModifiedBy": null,
   "Enabled": true
-
 ```
 
 ### Create a new indicator of compromise
@@ -331,8 +329,8 @@ Content-Type: application/json;
 Accept: application/json;odata.metadata=none
 
 {
-	"Category": "Backdoor",
-	"Enabled": false
+    "Category": "Backdoor",
+    "Enabled": false
 }
 ```
 
@@ -346,7 +344,7 @@ Authorization : Bearer <access_token>
 Content-Type: application/json;
 
 {
-	"@odata.id": "https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions(6)"
+    "@odata.id": "https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions(6)"
 }
 ```
 
@@ -390,13 +388,13 @@ The Microsoft Defender ATP threat intelligence API  provides several optional qu
 
 Name | Value | Description
 :---|:---|:--
-$select |	string |	Comma-separated list of properties to include in the response.
-$expand |	string |	Comma-separated list of relationships to expand and include in the response.
-$orderby |	string	| Comma-separated list of properties that are used to sort the order of items in the response collection.
-$filter	| string |	Filters the response based on a set of criteria.
-$top |	int |	The number of items to return in a result set.
-$skip |	int	| The number of items to skip in a result set.
-$count |	boolean |	A collection and the number of items in the collection.
+$select |   string |    Comma-separated list of properties to include in the response.
+$expand |   string |    Comma-separated list of relationships to expand and include in the response.
+$orderby |  string  | Comma-separated list of properties that are used to sort the order of items in the response collection.
+$filter | string |  Filters the response based on a set of criteria.
+$top |  int |   The number of items to return in a result set.
+$skip | int | The number of items to skip in a result set.
+$count |    boolean |   A collection and the number of items in the collection.
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 

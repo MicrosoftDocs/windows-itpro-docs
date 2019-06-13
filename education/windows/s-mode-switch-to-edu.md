@@ -8,7 +8,10 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 12/03/2018
-author: jaimeo
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
+author: mjcaparas
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
