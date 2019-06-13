@@ -29,12 +29,6 @@ This procedure shows you how to open the Windows Defender Firewall with Advanced
 
 To complete this procedure, you must be a member of the Administrators group. For more information, see Additional considerations.
 
-## Opening Windows Defender Firewall 
-
--   [Using the Windows interface](#to-open-windows-firewall-with-advanced-security-using-the-ui)
-
--   [Using a command line](#to-open-windows-firewall-with-advanced-security-from-a-command-prompt)
-
 ## To open Windows Defender Firewall using the UI
 
 Click Start, type **Windows Defender Firewall**, and the press ENTER.

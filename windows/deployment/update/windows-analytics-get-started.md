@@ -66,8 +66,7 @@ To enable data sharing, configure your proxy server to whitelist the following e
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health reports. Not used by Upgrade Readiness or Update Compliance AV reports. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health reports. Not used by Upgrade Readiness or Update Compliance AV reports. |
 | `https://login.live.com` | This endpoint is required by Device Health to ensure data integrity and provides a more reliable device identity for all of the Windows Analytics solutions on Windows 10. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
-| `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
-| `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
+
 
 
 >[!NOTE]
@@ -94,10 +93,8 @@ The compatibility update scans your devices and enables application usage tracki
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
 | Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up to date with cumulative updates.  |
-| Windows 8.1          | [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
-| Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
-
-We also recommend installing the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup) on Windows 7 and Windows 8.1 devices.
+| Windows 8.1          | The compatibility update is included in monthly quality updates for Windows 8.1. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%208) before attempting to enroll devices into Windows Analytics. |
+| Windows 7 SP1        | The compatibility update is included in monthly quality updates for Windows 7. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%207) before attempting to enroll devices into Windows Analytics. |
 
 ### Connected User Experiences and Telemetry service
 With Windows diagnostic data enabled, the Connected User Experience and Telemetry service (DiagTrack) collects system, application, and driver data. Microsoft analyzes this data, and shares it back to you through Windows Analytics. For the best experience, install these updates depending upon the operating system version.

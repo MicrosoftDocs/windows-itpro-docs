@@ -537,6 +537,12 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 </td>
 </tr>
 <tr>
+<td>0x80244018</td>
+<td>Your machine is connected through a proxy server.</td>
+<td>Make sure Automatically Detect Settings is selected in internet options. (Control Panel > Internet Options > Connections > LAN Settings).
+</td>
+</tr>
+<tr>
 <td>0xC1900201</td>
 <td>The system did not pass the minimum requirements to install the update.</td>
 <td>Contact the hardware vendor to get the latest updates.</td>
