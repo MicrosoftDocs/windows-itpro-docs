@@ -1,5 +1,5 @@
 ---
-title: Surface Diagnostic Toolkit for Business
+title: Deploy Surface Diagnostic Toolkit for Business
 description: This topic explains how to use the Surface Diagnostic Toolkit for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
