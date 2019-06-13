@@ -15,49 +15,27 @@ ms.localizationpriority: Normal
 
 Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork delivering a digital whiteboard, meetings platform, and a Windows 10 computing experience in one device.
 
-## Modular design
 
-A key part of the design of Surface Hub 2 is that it’s built to be modular and easily updateable when new features become available. With a removable processor cartridge on the back of the device Surface Hub 2S will be fully updatable to Surface Hub 2X simply by replacing the cartridge. For example, Surface Hub 2S already includes components and features that can be activated in Surface Hub 2X including the ability to tile multiple Surface Hubs together and rotate the device.
 
-## UEFI management and recovery
+| Capability                           | Summary                                                                                                                                                                                                                                                           | Learn more                                                                                                                                                                         |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MDM and UEFI manageability           | Manage settings and policies using a mobile device management (MDM) provider.<br> <br>Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level.                                     | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> <br> <br>[Surface Enterprise Management Mode](surface-enterprise-management-mode.md) |
+| Cloud and on-premises coexistence    | Calling and meeting capabilities support coexistence of cloud and on premises solutions with side-by-side compatibility with Skype for Business.                                                                                                                  | [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)                                                                                   |
+| Reset and recovery                   | Restore from the cloud or USB drive.                                                                                                                                                                                                                              | [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)                                                                                                              |
+| Microsoft Whiteboard                 | Active Directory integration, intelligent ink, and Bing search bring powerful new capabilities, enabling a persistent digital canvas shareable across most browsers on Windows and iOS devices.                                                                   | [Announcing a new whiteboard for your Surface Hub](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050)            |
+| Microsoft Teams Meeting Room License | Extends Office 365 licensing options across Skype for Business, Microsoft Teams, and Intune.                                                                                                                                                                      | [Teams Meeting Room Licensing Update](https://docs.microsoft.com/en-us/MicrosoftTeams/room-systems/skype-room-systems-v2-0)                                                        |
+| On-screen display                    | Adjust volume, brightness and input control directly on the display.                                                                                                                                                                                              |                                                                                                                                                                                    |
+| Sensor-activated Connected Standby   | Doppler sensor triggers energy conservation power state changes based on nearby presence, entering Connected Standby sleep state after 1 minute of inactivity.<br> <br>Manage this setting remotely using Intune or directly on the device from the Settings app. | [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md)                                                                                                                         |
+| Surface Hub pen                      | Ergonomically redesigned and easily attachable on the sides of the device. Pen firmware is updateable for future features.                                                                                                                                        |                                                                                                                                                                                    |
+| Surface app for Surface Hub 2S       |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                    |
+| Ready for tomorrow                   | Removable cartridge facilitates upgrading to new features.                                                                                                                                                                                                        |                                                                                                                                                                                    |
+|                                      |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                    |
 
-Surface Hub 2S is fully integrated with Surface Enterprise Management Mode (SEMM), enabling IT administrators to manage hardware components and firmware at the firmware level.  For example you can restrict boot options, disable the various radios in the system such as Wi-Fi and Bluetooth, and lockdown access to the UEFI menu. To learn more about the SEMM technology that’s shared across Surface products, see [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
+ 
+For more information about what’s new in Surface Hub 2S, see:
 
-## Mobile and untethered
-
-You can mount Surface Hub 2S using the optional [Steelcase Roam Mobile Stand](https://www.steelcase.com/products/collaboration/steelcase-roam/) making it easy to move the device between a conference rooms, huddle spaces, or wherever it needs to be.  An optional lithium-ion [APC Charge Mobile Battery](https://www.apc.com/us/en/campaign/apc-charge-mobile-battery-for-microsoft-surface-hub-2.jsp) provides power to the device wherever you are using it, providing enough battery power to support a typical meeting lasting an hour or more.
-
-## Advanced display, camera and audio
-
-With Surface Hub 2S meetings sound and look crystal clear because of improved display, microphones, speakers, 4K camera and integration with Microsoft Teams and Skype for Business.
-
-- **Display:** A 50” 4K plus PixelSense anti-glare display with a 3:2 aspect ratio enables image clarity with high-quality pen and touch feel.
-- **Camera:** The 4K camera delivers a 90-degree horizontal field of view designed to integrate natural colors and uniform lighting to enable a cognitively comfortable  meeting experience. It includes an internal lens rotation  mechanism that allows you to setup the field of view for either portrait or landscape. In the event of an accidental impact to the camera, resiliency in the form of a breakaway foot and integrated tether allow the camera to detach and bounce back without dropping to the floor.
-- **Audio:** For enhanced audio clarity, even in noisy environments, sound is delivered using a pair of  2-way front facing, super wideband stereo speakers and a discrete bass module designed  to faithfully reproduce the human voice.  An integrated 8-microphone full band array uses spatial filtering (more commonly known as beamforming) to focus on people speaking in front of the device and ignore sounds from the sides or back of the room. New capabilities such as “smart voice automatic gain control” further minimize background noise to improve voice clarity.
-
-## Microsoft Teams
-
-Calling and meeting capabilities support coexistence of cloud and on premises solutions with side-by-side compatibility with Skype for Business. Microsoft Teams for Surface Hub enables “one-touch join” and up to four incoming video streams.
-
-## Microsoft Whiteboard
-
-Microsoft Whiteboard on Surface Hub 2S gives you a persistent digital canvas with features such as intelligent ink, Active Directory integration on Surface Hub 2. and Bing search. You can share the whiteboard across Windows, iOS, and Android devices and transform analog whiteboard images into digital ink, enabling them to blend as if it were originally created on Surface  Hub.
-
-## New licensing options
-
-Take advantage of the [Microsoft Teams Meeting Room License](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/New-Office-365-licensing-options-for-Surface-Hub/ba-p/339238) available in Office 365. This license covers Skype for Business, Microsoft Teams, and Intune.
-
-## On-screen display
-
-Surface Hub 2S provides an on-screen display that you can use to configure additional settings.  
-
-## New power settings
-
-Like the original Surface Hub, when Surface Hub 2S detects that someone has entered the room, it wakes up and displays the Welcome screen. Surface Hub 2S now supports connected standby, the default power management state across Surface devices. It uses a Doppler sensor to trigger entering sleep state when a room is vacated or after a minute of no movement in the room or activity on the device. 
-
-## New Surface Hub pen
-
-The new Surface Hub 2 pen includes a projective capacitance optically bonded sensor (PCOS) ative pen technology that facilitates real time writing without lag. The pen is powered with AAA batteries and comes with firmware that can be updated. 
+- [Surface Hub 2S product site](https://www.microsoft.com/en-us/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab)
+- [Behind the Design Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099)
 
 ## Surface Hub 2S compared with Surface Hub
 

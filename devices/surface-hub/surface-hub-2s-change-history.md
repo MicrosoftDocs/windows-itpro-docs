@@ -12,3 +12,5 @@ ms.localizationpriority: Normal
 ---
 
 # Change history for Surface Hub 2S
+
+This topic will summarize new and updated content in the Surface Hub 2S documentation library.
