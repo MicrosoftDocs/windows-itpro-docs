@@ -23,6 +23,10 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+Create custom detection rules from [Advanced hunting](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-hunting) queries to automatically check for threat indicators and generate alerts whenever these indicators are found.
+
+>[!NOTE]
+>To create and manage custom detections, [your role](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security secttings** permission.
 
 1.	In the navigation pane, select **Advanced hunting**.
 
