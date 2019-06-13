@@ -24,7 +24,7 @@ Though much Windows BitLocker [documentation](bitlocker-overview.md) has been pu
 
 
 >[!IMPORTANT]
-> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities would be offered from [SCCM in on-prem scenarios](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/viewing-mbam-25-reports-for-the-configuration-manager-integration-topology) in a future.
+> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities will be offered from [SCCM in on-prem scenarios](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/viewing-mbam-25-reports-for-the-configuration-manager-integration-topology) in the future.
 
 ## Managing domain-joined computers and moving to cloud  
 
