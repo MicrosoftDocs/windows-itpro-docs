@@ -36,5 +36,3 @@
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ## [Top support solutions for Surface devices](support-solutions-surface.md)
 ## [Change history for Surface documentation](change-history-for-surface.md)
-
-
