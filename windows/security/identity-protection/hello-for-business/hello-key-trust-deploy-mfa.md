@@ -174,7 +174,7 @@ Update the server using Windows Update until the server has no required or optio
 
 #### Configure the IIS Server’s Certificate
 
-To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server’s-certificate) section.
+To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-servers-certificate) section.
 
 #### Create WebServices SDK user account
 
