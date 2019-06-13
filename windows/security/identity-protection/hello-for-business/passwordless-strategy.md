@@ -224,7 +224,7 @@ The name of the policy setting is **Exclude credential providers**. The value to
 
 Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it. This prevents the user from entering a password using the credential provider. However, this does not prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
 
-#### Validate that none of the workflows need passwords
+#### Validate that none of the workflows needs passwords
 This is the big moment. You have identified password usage, developed solutions to mitigate password usage, and have removed or disabled password usage from Windows. In this configuration, your users will not be able to use a password. Users will be blocked if any of their workflows ask them for a password. Ideally, your test users should be able to complete all the work flows of the targeted work persona without any password usage. Do not forget those low percentage work flows, such as provisioning a new user or a user that forgot their PIN or cannot use their strong credential. Ensure those scenarios are validated as well.
 
 ### Transition into a passwordless deployment (Step 3)
