@@ -163,7 +163,7 @@ Before you move to step 2, ensure you have:
 - validated passwords and Windows Hello for Business both work for the test users.
 
 #### Survey test user workflow for password usage
-Now is the time to learn more about the targeted work persona. You have a list of applications they use, but you do not know what, why, when, and how frequently. This information is important as your further your progress through step 2.
+Now is the time to learn more about the targeted work persona. You have a list of applications they use, but you do not know what, why, when, and how frequently. This information is important as you further your progress through step 2.
 
 Test users create the workflows associated with the targeted work persona. Their initial goal is to do one simple task: Document password usage. This list is not a comprehensive one, but it gives you an idea of the type of information you want. The general idea is to learn about all the scenarios in which that work persona encounters a password. A good approach is to ask yourself the following set of questions:
 - What is the name of the application that asked for a password?.
