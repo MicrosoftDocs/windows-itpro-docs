@@ -177,7 +177,7 @@ Some organizations will empower their users to write this information while some
 #### Identify password usage and plan, develop, and deploy password mitigations
 Your test users have provided you valuable information that describes the how, what, why and when they use a password. It is now time for your team to identify each of these password use cases and understand why the user must use a password.
 
-Create a master list of the scenarios. Each scenario should have a clear problem statement. Name the scenario with a one-sentence summary of the problem statement. Include in the scenario the results of your team's investigation as to why the user is prompted by a password. Include relevant, but accurate details. If its policy or procedure driven, then include the name and section of the policy that dictates why the workflow uses a password.
+Create a master list of the scenarios. Each scenario should have a clear problem statement. Name the scenario with a one-sentence summary of the problem statement. Include in the scenario the results of your team's investigation as to why the user is prompted by a password. Include relevant, but accurate details. If it is policy or procedure driven, then include the name and section of the policy that dictates why the workflow uses a password.
 
 Keep in mind your test users will not uncover all scenarios. Some scenarios you will need to force on your users because they are low percentage scenarios. Remember to include scenarios like:
 - Provisioning a new brand new user without a password.
