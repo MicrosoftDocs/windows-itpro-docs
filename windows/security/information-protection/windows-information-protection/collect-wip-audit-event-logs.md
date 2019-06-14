@@ -6,13 +6,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.reviewer: 
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs
@@ -163,16 +164,41 @@ Use Windows Event Forwarding to collect and aggregate your WIP audit events. You
 
 2.	In the console tree under **Application and Services Logs\Microsoft\Windows**, click **EDP-Audit-Regular** and **EDP-Audit-TCB**.
 
+## Collect WIP audit logs using Azure Monitor
+You can collect audit logs using Azure Monitor. See [Windows event log data sources in Azure Monitor.](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)
 
+**To view the WIP events in Azure Monitor**
+1.  Use an existing or create a new Log Analytics workspace.
 
+2.  In **Log Analytics** > **Advanced Settings**, select **Data**. In Windows Event Logs, add logs to receive:
 
+    ```
+    Microsoft-Windows-EDP-Application-Learning/Admin
+    Microsoft-Windows-EDP-Audit-TCB/Admin
+    ```
+    >[!NOTE]
+    >If using Windows Events Logs, the event log names can be found under Properties of the event in the Events folder (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB).
 
+3.  Download Microsoft [Monitoring Agent](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation).
 
+4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: MMASetup-.exe /c /t:
+Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
 
+5.  To deploy MSI via Intune, in installation parameters add: /q /norestart NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID=<WORKSPACE_ID> OPINSIGHTS_WORKSPACE_KEY=<WORKSPACE_KEY> AcceptEndUserLicenseAgreement=1
 
+>[!NOTE]
+>Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
 
+6. After the agent is deployed, data will be received within approximately 10 minutes.
 
+7. To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
 
+***Example***
+```
+Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
+```
 
-
-
+## Additional resources
+-   [How to deploy app via Intune](https://docs.microsoft.com/intune/apps-add)
+-   [How to create Log workspace](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)
+-   [How to use Microsoft Monitoring Agents for Windows](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview)

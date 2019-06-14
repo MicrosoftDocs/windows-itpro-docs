@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -37,7 +39,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 
 #### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
-- **Value name:**ConfigureKioskResetAfterIdleTimeout
+- <strong>Value name:</strong>ConfigureKioskResetAfterIdleTimeout
 - **Value type:** REG_DWORD
 
 

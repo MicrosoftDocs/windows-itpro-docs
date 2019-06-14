@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -13,10 +15,11 @@ ms:topic: include
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Override the security warning to sites that have SSL errors.  | |
-|Enabled |1 |1 |Prevented/turned on.  |![Most restricted value](../images/check-gn.png) |
+|                Group Policy                 | MDM | Registry |                                   Description                                   |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|---------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Allowed/turned on. Override the security warning to sites that have SSL errors. |                                                  |
+|                   Enabled                   |  1  |    1     |                              Prevented/turned on.                               | ![Most restricted value](/images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings

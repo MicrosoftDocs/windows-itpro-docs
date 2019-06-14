@@ -1,8 +1,11 @@
 ---
 title: About MBAM 1.0
 description: About MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 99254aaa-2b30-4b2e-8365-0d4b67a89a0c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ With Microsoft BitLocker Administration and Monitoring, you can select the BitLo
 **Note**  
 BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
- 
+ 
 
 The following groups might be interested in using MBAM to manage BitLocker:
 
@@ -43,9 +46,9 @@ For more information and for latest updates, see [Release Notes for MBAM 1.0](re
 
 [Getting Started with MBAM 1.0](getting-started-with-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

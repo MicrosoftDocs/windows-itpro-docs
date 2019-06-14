@@ -1,5 +1,6 @@
 ---
 title: Threat & Vulnerability Management scenarios
+ms.reviewer: 
 description: Learn how to use Threat & Vulnerability Management in the context of scenarios that Security Administrators encounter when collaborating with IT Administrators and SecOps while protecting their organization from cybersecurity threats.    
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase configuration score, increase threat & vulnerability configuration score, configuration score, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: mjcaparas
+author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -87,10 +88,10 @@ Remediating issues in the security recommendations list will improve your config
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
 
-   >>![request remediation](images/tvm_request_remediation.png). 
-
-   >You will see a confirmation message that the remediation task has been created.
-   >![remediation task creation confirmation](images/tvm_remediation_task_created.png)
+   > >![request remediation](images/tvm_request_remediation.png). 
+   > 
+   > You will see a confirmation message that the remediation task has been created.
+   > ![remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 4. Save your CSV file.
    ![save csv file](images/tvm_save_csv_file.png)

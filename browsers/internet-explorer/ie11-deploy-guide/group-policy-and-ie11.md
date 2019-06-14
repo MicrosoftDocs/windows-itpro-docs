@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the topics in this section to learn about Group Policy and how to use it to manage Internet Explorer.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 50383d3f-9ac9-4a30-8852-354b6eb9434a
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Group Policy and Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -35,11 +38,11 @@ Use the topics in this section to learn about Group Policy and how to use it to 
 |[Group policy preferences and Internet Explorer 11](group-policy-preferences-and-ie11.md) |Info about Group Policy preferences, as compared to Group Policy settings. |
 |[Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md) |Info about Administrative Templates, including where to store them and the related Group Policy settings. | 
 |[Enable and disable add\-ons using administrative templates and group policy](enable-and-disable-add-ons-using-administrative-templates-and-group-policy.md) |Guidance about how to use your local Group Policy editor or the CLSID and Administrative Templates to manage your Group Policy objects.
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

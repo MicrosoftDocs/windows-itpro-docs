@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Specify the cloud-delivered protection level
@@ -22,7 +24,7 @@ ms.date: 09/03/2018
 
 You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
 
->[!NOTE] 
+>[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 

@@ -7,13 +7,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/05/2019
+ms.reviewer: 
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune

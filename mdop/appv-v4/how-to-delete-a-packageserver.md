@@ -1,8 +1,11 @@
 ---
 title: How to Delete a Package
 description: How to Delete a Package
-author: jamiejdt
+author: dansimp
 ms.assetid: 23f9c0e9-8910-47df-9fc0-7bbb5bbf2dc9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ You can use the following procedure to delete a package, including all versions 
 **Important**  
 When you choose to delete a package, a confirmation box reminds you that this action deletes all its versions. The server will no longer be able to stream the application.
 
- 
+ 
 
 **To delete a package**
 
@@ -36,9 +39,9 @@ When you choose to delete a package, a confirmation box reminds you that this ac
 
 [How to Manage Packages in the Server Management Console](how-to-manage-packages-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

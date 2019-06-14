@@ -7,9 +7,11 @@ ms.pagetype: edu
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Provision student PCs with apps

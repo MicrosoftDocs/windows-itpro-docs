@@ -1,7 +1,9 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
 ms:topic: include
 ---
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Locked, preventing users from making changes. | 
-|Enabled |1 |1 |Unlocked, letting users make changes. | 
+|                Group Policy                 | MDM | Registry |                  Description                  |
+|---------------------------------------------|:---:|:--------:|-----------------------------------------------|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Locked, preventing users from making changes. |
+|                   Enabled                   |  1  |    1     |     Unlocked, letting users make changes.     |
+
 ---
 
 ### ADMX info and settings
@@ -41,7 +44,7 @@ ms:topic: include
 ### Related policies
 
 - [Configure Home Button](../available-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
- 
+
 - [Set Home Button URL](../available-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
 
 

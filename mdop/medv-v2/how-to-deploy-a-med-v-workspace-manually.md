@@ -1,8 +1,11 @@
 ---
 title: How to Deploy a MED-V Workspace Manually
 description: How to Deploy a MED-V Workspace Manually
-author: jamiejdt
+author: levinec
 ms.assetid: 94bfb209-2230-49b6-bb40-9c6ab088dbf4
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,38 +31,42 @@ This section provides instruction about how to manually deploy a MED-V workspace
 
     -   **MED-V Host Agent Installation File** – installs the Host Agent (MED-V\_HostAgent\_Setup installation file).
 
-        **Warning**  
+        **Warning**  
         Close Internet Explorer before you install the MED-V Host Agent, otherwise conflicts can occur later with URL redirection. You can also do this by specifying a computer restart during a distribution.
 
-         
 
-    -   **MED-V Workspace Installer, VHD, and Setup Executable** – created with the **MED-V Workspace Packager**. For more information, see [Create a MED-V Workspace Package](create-a-med-v-workspace-package.md).
 
-        **Important**  
-        The compressed VHD file (.medv) and the Setup executable program (setup.exe) must be in the same folder as the MED-V workspace installer.
+~~~
+-   **MED-V Workspace Installer, VHD, and Setup Executable** – created with the **MED-V Workspace Packager**. For more information, see [Create a MED-V Workspace Package](create-a-med-v-workspace-package.md).
 
-         
+    **Important**  
+    The compressed VHD file (.medv) and the Setup executable program (setup.exe) must be in the same folder as the MED-V workspace installer.
+~~~
 
-2.  Install the following in the order listed. The end user can perform this task manually or you can create a script to install the following:
 
-    -   Windows Virtual PC and the Windows Virtual PC additions and updates. A computer restart is required.
 
-    -   The MED-V Host Agent.
+2. Install the following in the order listed. The end user can perform this task manually or you can create a script to install the following:
 
-        **Note**  
-        If it is running, Internet Explorer must be restarted before the installation of the MED-V Host Agent can finish.
+   -   Windows Virtual PC and the Windows Virtual PC additions and updates. A computer restart is required.
 
-         
+   -   The MED-V Host Agent.
 
-    -   The MED-V workspace package.
+       **Note**  
+       If it is running, Internet Explorer must be restarted before the installation of the MED-V Host Agent can finish.
 
-        Install the MED-V workspace by running the setup.exe program that is included in the MED-V workspace package files.
 
-3.  Complete first time setup.
 
-    After the MED-V workspace is installed, you have the option of starting MED-V. This starts the MED-V Host Agent. You can either start MED-V at that time, or start the MED-V Host Agent later to complete first time setup.
+~~~
+-   The MED-V workspace package.
 
-    To start the MED-V Host Agent, click **Start**, click **All Programs**, click **Microsoft Enterprise Desktop Virtualization**, and then click **MED-V Host Agent**.
+    Install the MED-V workspace by running the setup.exe program that is included in the MED-V workspace package files.
+~~~
+
+3. Complete first time setup.
+
+   After the MED-V workspace is installed, you have the option of starting MED-V. This starts the MED-V Host Agent. You can either start MED-V at that time, or start the MED-V Host Agent later to complete first time setup.
+
+   To start the MED-V Host Agent, click **Start**, click **All Programs**, click **Microsoft Enterprise Desktop Virtualization**, and then click **MED-V Host Agent**.
 
 ## Related topics
 
@@ -70,9 +77,9 @@ This section provides instruction about how to manually deploy a MED-V workspace
 
 [Deploying the MED-V Workspace Package](deploying-the-med-v-workspace-package.md)
 
- 
 
- 
+
+
 
 
 

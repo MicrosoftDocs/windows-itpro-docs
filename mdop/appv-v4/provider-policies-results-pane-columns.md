@@ -1,8 +1,11 @@
 ---
 title: Provider Policies Results Pane Columns
 description: Provider Policies Results Pane Columns
-author: jamiejdt
+author: eavena
 ms.assetid: f9456f17-3106-4e5a-9a8c-df3af66986e1
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

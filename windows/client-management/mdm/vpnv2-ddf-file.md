@@ -2,11 +2,13 @@
 title: VPNv2 DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the VPNv2 configuration service provider.
 ms.assetid: 4E2F36B7-D2EE-4F48-AD1A-6BDE7E72CC94
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

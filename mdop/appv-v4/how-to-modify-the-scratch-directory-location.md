@@ -1,8 +1,11 @@
 ---
 title: How to Modify the Scratch Directory Location
 description: How to Modify the Scratch Directory Location
-author: jamiejdt
+author: eavena
 ms.assetid: 61ecb379-85be-4316-8023-a2c1811504e5
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ The scratch directory is used by the App-V Sequencer to save temporary files dur
 **Important**  
 The specified scratch directory location should be located on the computer running the App-V Sequencer.
 
- 
+ 
 
 Use the following procedure to modify the scratch directory location.
 
@@ -40,9 +43,9 @@ Use the following procedure to modify the scratch directory location.
 
 [How to Modify the Log Directory Location](how-to-modify-the-log-directory-location.md)
 
- 
+ 
 
- 
+ 
 
 
 

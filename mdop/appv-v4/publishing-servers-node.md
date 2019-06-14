@@ -1,8 +1,11 @@
 ---
 title: Publishing Servers Node
 description: Publishing Servers Node
-author: jamiejdt
+author: eavena
 ms.assetid: b5823c6c-15bc-4e8d-aeeb-acc366ffedd1
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -8,16 +8,18 @@ ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 10/09/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up Windows 10 education devices
 
 > [!div class="step-by-step"]
-[<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
-[Finish setup and other tasks >>](finish-setup-and-other-tasks.md)
+> [<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+> [Finish setup and other tasks >>](finish-setup-and-other-tasks.md)
 
 We recommend using the latest build of Windows 10, version 1703 on your education devices. 
 
@@ -26,8 +28,8 @@ To set up new Windows 10 devices and enroll them to your education tenant, choos
 - **Option 2: [Go through Windows OOBE and join the device to Azure AD](set-up-windows-education-devices.md)** - You can go through a typical Windows 10 device setup or first-run experience to configure your device.
 
 > [!div class="step-by-step"]
-[<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
-[Finish setup and other tasks >>](finish-setup-and-other-tasks.md)
+> [<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+> [Finish setup and other tasks >>](finish-setup-and-other-tasks.md)
 
 
 

@@ -9,9 +9,11 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 03/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Educator Trial in a Box Guide
@@ -76,15 +78,15 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 4. Select the **Immersive Reader** button.
 
-  ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
+   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
 
 6. Select these various settings to see different ways to configure Immersive Reader for your students.
 
-  | Text to Speech | Text Preferences | Grammar Options | Line Focus |
-  | :------------: | :--------------: | :-------------: | :--------: |
-  | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
+   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
+   | :------------: | :--------------: | :-------------: | :--------: |
+   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 </br>
 </br>
@@ -131,18 +133,18 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 2. Take the digital pen out of the box and make notes or draw.
 
 3. Follow the instructions for the project. Look for the **Try this!** callouts to experiment with these engaging activities.
-  - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
+   - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
 
-    ![OneNote Draw tab](images/onenote_draw.png)
+     ![OneNote Draw tab](images/onenote_draw.png)
 
-  - Type anywhere on the page! Just click your cursor where you want to place text.
-  - Use the checkmark in the **Home** tab to keep track of completed tasks.
+   - Type anywhere on the page! Just click your cursor where you want to place text.
+   - Use the checkmark in the **Home** tab to keep track of completed tasks.
 
-    ![OneNote To Do Tag](images/onenote_checkmark.png)
+     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
-  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab.
+   - To find information without leaving OneNote, use the Researcher tool found under the Insert tab.
 
-    ![OneNote Researcher](images/onenote_researcher.png)
+     ![OneNote Researcher](images/onenote_researcher.png)
 
 </br>
 </br>
@@ -168,7 +170,7 @@ Use video to create a project summary.
 4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.
 
 5. Select the first video to preview it full screen. Select **Edit & Create**, then select **Create a video with text**.
-  1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen.
+   1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen.
 
 6. Name your project “Laser Maze Project.” Hit Enter to continue.
 
@@ -176,24 +178,24 @@ Use video to create a project summary.
 
 8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
 
-  ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
+   ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
 
 9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**.
 
 10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**.
 
 11.	Select the last card on the Storyboard and select **3D effects**.
-  1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.
-  2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
-  3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.
-  4. Play back your effect.
-  5. Select **Done** when you have it where you want it.
+    1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.
+    2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
+    3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.
+    4. Play back your effect.
+    5. Select **Done** when you have it where you want it.
 
-  ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
+    ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
 
 12. Select **Music** and select a track from the **Recommended** music collection.
-  1. The music will update automatically to match the length of your video project, even as you make changes.
-  2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
+    1. The music will update automatically to match the length of your video project, even as you make changes.
+    2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
 
 13. You can adjust the volume for the background music using the **Music volume** button.
 
@@ -224,7 +226,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
 3. Scroll down to the **Details** section and select **Download World**.
 
-  ![Select the download world link](images/mcee_downloadworld.png)
+   ![Select the download world link](images/mcee_downloadworld.png)
 
 4. When prompted, save the world.
 
@@ -237,28 +239,28 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 8. Click **Lesson Hub Vol 1** to enter the downloaded world.
 
 9. Explore the world by using the keys on your keyboard.
-  * **W** moves forward.
-  * **A** moves left.
-  * **S** moves right.
-  * **D** moves backward.
+   * **W** moves forward.
+   * **A** moves left.
+   * **S** moves right.
+   * **D** moves backward.
 
 10. Use your mouse as your "eyes". Just move it to look around.
 
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
 
-  To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
+    To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
 
-  ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
+    ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
 
 12. Access and adapt over 300 lesson plans, spanning all grades and subjects, to meet your needs. Enjoy exploring new worlds and happy crafting.
 
-  **Try this!**
+    **Try this!**
 
-  1. Go to <a href="https://education.minecraft.net" target="_blank">education.minecraft.net/</a>.
-  2. Click **Class Resources**.
-  3. Click **Find a Lesson**.
+    1. Go to <a href="https://education.minecraft.net" target="_blank">education.minecraft.net/</a>.
+    2. Click **Class Resources**.
+    3. Click **Find a Lesson**.
 
-  ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans.png)
+    ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans.png)
 
 </br>
 </br>
@@ -267,21 +269,21 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 ![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png)
 ## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
-The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
+The **Math Assistant** and **Ink Replay** features available in the OneNote app give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
 
 **Let's solve 3x+4=7 in OneNote using the pen!**
 To get started:
 1. Open the OneNote app for Windows 10 (not OneNote 2016).
 
-  ![OneNote icon](images/OneNote_logo.png)
+   ![OneNote icon](images/OneNote_logo.png)
 
 2. In the top left corner, click on the **<** arrow to access your notebooks and pages.
 
-  ![OneNote back arrow navigation button](images/left_arrow.png)
+   ![OneNote back arrow navigation button](images/left_arrow.png)
 
 3. Click **Add Page** to launch a blank work space.
 
-  ![Select add page button](images/plus-page.png)
+   ![Select add page button](images/plus-page.png)
 
 4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
@@ -290,30 +292,30 @@ To solve the equation 3x+4=7, follow these instructions:
 
 2. If you wrote the equation using digital ink, use the **Lasso tool** to circle the equation. If you typed the equation, highlight it using your mouse.
 
-  ![Lasso button](images/lasso.png)
+   ![Lasso button](images/lasso.png)
 
 3. On the **Draw** tab, click the **Math** button.
 
-  ![Math button](images/math-button.png)
+   ![Math button](images/math-button.png)
 
 4. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 
-  ![Solve for x menu](images/solve-for-x.png)
+   ![Solve for x menu](images/solve-for-x.png)
 
 5. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
 
 6. On the **View** tab, click the **Replay** button. Use your mouse to select the written equation and watch your text in replay. Replay is great for students to review how the teacher solved the equation and for teachers to review how students approached a problem.
 
-  ![Replay button](images/replay.png)
+   ![Replay button](images/replay.png)
 
 To graph the equation 3x+4=7, follow these instructions:
 1. From the drop-down menu in the **Math** pane, select the option to **Graph Both Sides in 2D**. You can play with the interactive graph of your equation - use a single finger to move the graph position or two fingers to change the **zoom** level.
 
-  ![Graph both sides in 2D](images/graph-for-x.png)
+   ![Graph both sides in 2D](images/graph-for-x.png)
 
 2. Click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
-</br>
-</br>
+   </br>
+   </br>
 
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.

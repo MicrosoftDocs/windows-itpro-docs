@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configuring Hybrid key trust Windows Hello for Business: Active Directory
 
@@ -47,10 +48,10 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 > [!div class="checklist"]
 > * Create the Windows Hello for Business Users group
-
->[!div class="step-by-step"]
-[< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
-[Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
+> [Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
 
 <br><br>
 

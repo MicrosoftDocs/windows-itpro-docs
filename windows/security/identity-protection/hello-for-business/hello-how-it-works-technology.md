@@ -6,18 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 10/08/2018
+ms.reviewer: 
 ---
 # Technology and Terms
 
 **Applies to:**
--   Windows 10
+- Windows 10
 
 - [Attestation Identity Keys](#attestation-identity-keys)
 - [Azure AD Joined](#azure-ad-joined)
@@ -34,13 +35,13 @@ ms.date: 10/08/2018
 - [Key Trust](#key-trust)
 - [Managed Environment](#managed-environment)
 - [On-premises Deployment](#on-premises-deployment)
-- [Pass-through Authentication](#passthrough-authentication)
-- [Password Hash Synchronization](#password-hash-synchronization)
+- [Pass-through Authentication](#pass-through-authentication)
+- [Password Hash Synchronization](#password-hash-sync)
 - [Primary Refresh Token](#primary-refresh-token) 
 - [Storage Root Key](#storage-root-key)
 - [Trust Type](#trust-type)
 - [Trusted Platform Module](#trusted-platform-module)
-<hr>
+  <hr>
 
 ## Attestation Identity Keys
 Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
@@ -212,9 +213,9 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 Managed environments are for non-federated environments where Azure Active Directory manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services. 
 
 ### Related topics
-[Federated Environment](#federated-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Synchronization](#password-hash-synchronization)
+[Federated Environment](#federated-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Synchronization](#password-hash-sync)
 
-[Return to Top](#Technology-and-Terms)
+[Return to Top](#technology-and-terms)
 ## On-premises Deployment 
 The Windows Hello for Business on-premises deployment is for organizations that exclusively have on-premises resources that are accessed using Active Directory identities.  On-premises deployments support domain joined devices.  The on-premises deployment model supports two authentication trust types, key trust and certificate trust.
 
@@ -229,13 +230,13 @@ The Windows Hello for Business on-premises deployment is for organizations that 
 Provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Allows your users to sign in to both on-premises and Office 365 resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Office 365. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
 ### Related topics
-[Federated Environment](#federated-environment), [Managed Environment](#managed-environment), [Password Hash Synchronization](#password-hash-synchronization)
+[Federated Environment](#federated-environment), [Managed Environment](#managed-environment), [Password Hash Synchronization](#password-hash-sync)
 
 
 ### More information
 - [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
 
-[Return to Top](#hello-how-it-works-technology.md)
+[Return to Top](hello-how-it-works-technology.md)
 ## Password Hash Sync
 The simplest way to enable authentication for on-premises directory objects in Azure AD. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Azure AD so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
@@ -253,7 +254,7 @@ The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a si
 
 The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
 
-[Return to Top](#Technology-and-Terms)
+[Return to Top](#technology-and-terms)
 ## Storage Root Key
 The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of 2048 bits length). The SRK has a major role and is used to protect TPM keys, so that these keys cannot be used without the TPM. The SRK key is created when the ownership of the TPM is taken.
 
@@ -284,9 +285,9 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows�10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
+Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-Windows�10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows�10 supports only TPM 2.0. 
+Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
 
 TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 
@@ -316,16 +317,3 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 
 [Return to Top](hello-how-it-works-technology.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-    

@@ -2,12 +2,14 @@
 title: Encryption Zone (Windows 10)
 description: Encryption Zone
 ms.assetid: 55a025ce-357f-4d1b-b2ae-6ee32c9abe13
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,7 +57,7 @@ The GPO for devices that are running at least Windows Server 2008 should includ
         **Important**  
         Be sure to begin operations by using request in and request out behavior until you are sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the GPO to require in, request out.
 
-         
+         
 
 -   A registry policy that includes the following values:
 

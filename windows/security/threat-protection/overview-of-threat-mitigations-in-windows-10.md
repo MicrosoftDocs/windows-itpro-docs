@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mitigate threats by using Windows 10 security features (Windows 10)
 description: This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. 
 ms.prod: w10
@@ -6,8 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dulcemontemayor
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ---
 
 # Mitigate threats by using Windows 10 security features
@@ -189,7 +192,7 @@ Control Flow Guard (CFG) is a mitigation that does not need configuration within
 | **Heap protections**<br>help prevent<br>exploitation of the heap | Windows 10 includes protections for the heap, such as the use of internal data structures which help protect against corruption of memory used by the heap.<br><br>**More information**: [Windows heap protections](#windows-heap-protections), later in this topic. |
 | **Kernel pool protections**<br>help prevent<br>exploitation of pool memory<br>used by the kernel | Windows 10 includes protections for the pool of memory used by the kernel. For example, safe unlinking protects against pool overruns that are combined with unlinking operations that can be used to create an attack.<br><br>**More information**: [Kernel pool protections](#kernel-pool-protections), later in this topic. |
 | **Control Flow Guard**<br>helps mitigate exploits<br>that are based on<br>flow between code locations<br>in memory | Control Flow Guard (CFG) is a mitigation that requires no configuration within the operating system, but instead is built into software when it’s compiled. It is built into Microsoft Edge, IE11, and other areas in Windows 10. CFG can be built into applications written in C or C++, or applications compiled using Visual Studio 2015.<br>For such an application, CFG can detect an attacker’s attempt to change the intended flow of code. If this occurs, CFG terminates the application. You can request software vendors to deliver Windows applications compiled with CFG enabled.<br><br>**More information**: [Control Flow Guard](#control-flow-guard), later in this topic. |
-| **Protections built into Microsoft Edge** (the browser)<br>helps mitigate multiple<br>threats | Windows 10 includes an entirely new browser, Microsoft Edge, designed with multiple security improvements.<br><br>**More information**: [Microsoft Edge and Internet Explorer 11](#microsoft-edge-and-internet-explorer-11), later in this topic. |
+| **Protections built into Microsoft Edge** (the browser)<br>helps mitigate multiple<br>threats | Windows 10 includes an entirely new browser, Microsoft Edge, designed with multiple security improvements.<br><br>**More information**: [Microsoft Edge and Internet Explorer 11](#microsoft-edge-and-internet-explorer11), later in this topic. |
 
 ### SMB hardening improvements for SYSVOL and NETLOGON shares
 

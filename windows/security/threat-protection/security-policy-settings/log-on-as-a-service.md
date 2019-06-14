@@ -2,12 +2,14 @@
 title: Log on as a service (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a service security policy setting.
 ms.assetid: acc9a9e0-fd88-4cda-ab54-503120ba1f42
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,7 +57,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Network Service| 
 | Member Server Effective Default Settings| Network Service| 
 | Client Computer Effective Default Settings | Network Service| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

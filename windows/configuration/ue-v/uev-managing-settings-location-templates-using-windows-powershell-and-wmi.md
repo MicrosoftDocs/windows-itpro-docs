@@ -1,12 +1,15 @@
 ---
 title: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -26,7 +29,7 @@ The WMI and Windows PowerShell features of UE-V include the ability to enable, d
 
 You must have administrator permissions to update, register, or unregister a settings location template. Administrator permissions are not required to enable, disable, or list templates.
 
-****To manage settings location templates by using Windows PowerShell****
+***<em>To manage settings location templates by using Windows PowerShell</em>***
 
 1.  Use an account with administrator rights to open a Windows PowerShell command prompt.
 
@@ -155,7 +158,7 @@ You must have administrator permissions to update, register, or unregister a set
     </tbody>
     </table>
 
-     
+     
 
 The UE-V Windows PowerShell features enable you to manage a group of settings templates that are deployed in your enterprise. Use the following procedure to manage a group of templates by using Windows PowerShell.
 

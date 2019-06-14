@@ -1,5 +1,7 @@
 ---
 title: Windows Autopilot Enrollment Status page 
+ms.reviewer: 
+manager: laurawi
 description: Gives an overview of the enrollment status page capabilities, configuration
 keywords: Autopilot Plug and Forget, Windows 10
 ms.prod: w10
@@ -9,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
-ms.author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -17,7 +19,11 @@ ms.topic: article
 
 # Windows Autopilot Enrollment Status page
 
-The Windows Autopilot Enrollment Status page displaying the status of the complete device configuration process.  Incorporating feedback from customers, this provides information to the user to show that the device is being set up and can be configured to prevent access to the desktop until the configuration is complete. 
+**Applies to**
+
+-   Windows 10
+
+The Windows Autopilot Enrollment Status Page displays the status of the complete device configuration process.  Incorporating feedback from customers, this provides information to the user to show that the device is being configured. The Enrollment Status Page can be also configured to prevent access to the desktop until the configuration process is complete. 
  
  ![Enrollment status page](images/enrollment-status-page.png)
  

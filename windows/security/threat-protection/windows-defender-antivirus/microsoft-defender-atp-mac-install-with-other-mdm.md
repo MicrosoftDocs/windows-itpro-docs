@@ -23,7 +23,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
  
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 

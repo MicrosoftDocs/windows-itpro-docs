@@ -1,8 +1,11 @@
 ---
 title: How to Create a Connection Group
 description: How to Create a Connection Group
-author: jamiejdt
+author: dansimp
 ms.assetid: 9d272052-2d28-4e41-989c-89610482a0ca
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +42,7 @@ When you place packages in a connection group, their package root paths are merg
     **Important**  
     By default, the Active Directory Domain Services access configurations that are associated with a specific application are not added to the connection group. To transfer the Active Directory access configuration, select **ADD PACKAGE ACCESS TO GROUP ACCESS**, which is located in the **PACKAGES IN** pane.
 
-     
+     
 
 7.  After adding all the applications and configuring Active Directory access, click **Apply**.
 
@@ -52,9 +55,9 @@ When you place packages in a connection group, their package root paths are merg
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 

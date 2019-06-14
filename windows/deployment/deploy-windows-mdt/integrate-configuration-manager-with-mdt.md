@@ -2,6 +2,9 @@
 title: Integrate Configuration Manager with MDT (Windows 10)
 description: This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 ms.assetid: 3bd1cf92-81e5-48dc-b874-0f5d9472e5a5
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.pagetype: mdt
 keywords: deploy, image, customize, task sequence
 ms.prod: w10
@@ -9,7 +12,6 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 

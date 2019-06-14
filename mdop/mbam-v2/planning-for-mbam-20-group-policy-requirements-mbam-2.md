@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.0 Group Policy Requirements
 description: Planning for MBAM 2.0 Group Policy Requirements
-author: jamiejdt
+author: msfttracyp
 ms.assetid: f5e19dcb-eb15-4722-bb71-0734b3799eb8
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -22,10 +25,10 @@ MBAM supports the following types of BitLocker protectors for fixed data drives:
 
 The numeric password protector is applied automatically as part of volume encryption and does not need to be configured.
 
-**Important**  
+**Important**  
 The default Windows BitLocker drive encryption Group Policy Object (GPO) settings are not used by MBAM and can cause conflicting behavior if they are enabled. To enable MBAM to manage BitLocker, you must define the MBAM Group Policy settings only after installing the MBAM Group Policy template.
 
- 
+
 
 Enhanced startup PINs can contain characters, such as uppercase and lowercase letters, and numbers. Unlike BitLocker, MBAM does not support the use of symbols and spaces for enhanced PINs.
 
@@ -33,10 +36,10 @@ Install the MBAM Group Policy template on a computer that is capable of running 
 
 The MDOP MBAM (BitLocker Management) GPO node contains four global policy settings and four child GPO settings nodes: Client Management, Fixed Drive, Operating System Drive, and Removable Drive. The following sections provide policy definitions and suggested policy settings to assist you in planning for MBAM GPO policy setting requirements.
 
-**Note**  
+**Note**  
 For more information about configuring the minimum, recommended GPO settings to enable MBAM to manage BitLocker encryption, see [How to Edit MBAM 2.0 GPO Settings](how-to-edit-mbam-20-gpo-settings-mbam-2.md).
 
- 
+
 
 ## Global Policy Definitions
 
@@ -83,7 +86,7 @@ This section describes MBAM Global policy definitions found at the following GPO
 </tbody>
 </table>
 
- 
+
 
 ## Client Management Policy Definitions
 
@@ -118,14 +121,13 @@ This section describes Client Management policy definitions for Microsoft BitLoc
 <td align="left"><p>Configure user exemption policy</p></td>
 <td align="left"><p>Suggested Configuration: <strong>Not Configured</strong></p>
 <p>This policy setting lets you configure a web site address, email address, or phone number that will instruct a user to request an exemption from BitLocker encryption.</p>
-<p>If you enable this policy setting and provide a web site address, email address, or phone number, users will see a dialog that gives them instructions on how to apply for an exemption from BitLocker protection. For more information about enabling BitLocker encryption exemptions for users, see [How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-2.md).</p>
+<p>If you enable this policy setting and provide a web site address, email address, or phone number, users will see a dialog that gives them instructions on how to apply for an exemption from BitLocker protection. For more information about enabling BitLocker encryption exemptions for users, see <a href="how-to-manage-user-bitlocker-encryption-exemptions-mbam-2.md" data-raw-source="[How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-2.md)">How to Manage User BitLocker Encryption Exemptions</a>.</p>
 <p>If you either disable or do not configure this policy setting, the exemption request instructions will not be presented to users.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and any one user is not exempt, the computer will be encrypted.</p>
+<strong>Note</strong><br/><p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and any one user is not exempt, the computer will be encrypted.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -138,7 +140,7 @@ This section describes Client Management policy definitions for Microsoft BitLoc
 </tbody>
 </table>
 
- 
+
 
 ##  Fixed Drive Policy Definitions
 
@@ -202,7 +204,7 @@ This section describes Fixed Drive policy definitions for Microsoft BitLocker Ad
 </tbody>
 </table>
 
- 
+
 
 ## Operating System Drive Policy Definitions
 
@@ -230,7 +232,7 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <li><p>Allow Standby States (S1-S3) When Sleeping (Plugged In)</p></li>
 <li><p>Allow Standby States (S1-S3) When Sleeping (On Battery)</p></li>
 </ul>
-<p>If you are running Microsoft Windows 8 or later, and you want to use BitLocker on a computer without a TPM, select the <strong>Allow BitLocker without a compatible TPM</strong> check box. In this mode, a password is required for startup. If you forget the password, you have to use one of the BitLocker recovery options to access the drive.</p>
+<p>If you are running Microsoft Windows 8 or later, and you want to use BitLocker on a computer without a TPM, select the <strong>Allow BitLocker without a compatible TPM</strong> check box. In this mode, a password is required for startup. If you forget the password, you have to use one of the BitLocker recovery options to access the drive.</p>
 <p>On a computer with a compatible TPM, two types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require the entry of a personal identification number (PIN).</p>
 <p>If you enable this policy setting, users have to put the operating system drive under BitLocker protection, and the drive will be encrypted.</p>
 <p>If you disable this policy, users will not be able to put the operating system drive under BitLocker protection. If you apply this policy after the operating system drive is encrypted, the drive will be decrypted.</p>
@@ -252,7 +254,7 @@ This section describes Operating System Drive policy definitions for Microsoft B
 </tbody>
 </table>
 
- 
+
 
 ## Removable Drive Policy Definitions
 
@@ -309,16 +311,16 @@ This section describes Removable Drive Policy definitions for Microsoft BitLocke
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [MBAM 2.0 Deployment Prerequisites](mbam-20-deployment-prerequisites-mbam-2.md)
 
- 
 
- 
+
+
 
 
 

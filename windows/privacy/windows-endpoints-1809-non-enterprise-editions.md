@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Windows 10, version 1809, connection endpoints for non-Enterprise editions
 
@@ -64,7 +65,7 @@ We used the following methodology to derive these network endpoints:
 |\*wns.windows.com\*	| HTTPS, TLSv1.2 |	Used for the Windows Push Notification Services (WNS).
 |\*wpc.v0cdn.net*	| |	Windows Telemetry related traffic
 |auth.gfx.ms/16.000.27934.1/OldConvergedLogin_PCore.js	| |	MSA related
-|evoke-windowsservices-tas.msedge*	| HTTPS |	The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+|evoke-windowsservices-tas.msedge*	| HTTPS |	The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 |fe2.update.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
 |fe3.\*.mp.microsoft.com.\* 	|TLSv1.2/HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store.
 |fs.microsoft.com	| |	Font Streaming (in ENT traffic)
@@ -132,7 +133,7 @@ We used the following methodology to derive these network endpoints:
 | *geo-prod.do.dsp.mp.microsoft.com	| HTTPS |	Enables connections to Windows Update. |
 | au.download.windowsupdate.com\* | HTTP | Enables connections to Windows Update. |
 | cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
 | ctldl.windowsupdate.com/* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |

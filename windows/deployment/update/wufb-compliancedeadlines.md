@@ -4,10 +4,12 @@ description: Learn how to enforce compliance deadlines using Windows Update for 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: greg-lindsay
 ms.date: 06/20/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 # Enforcing compliance deadlines for updates 
@@ -27,7 +29,7 @@ This flow only enforces the deadline where the device will attempt to silently r
 
 Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to reboot the device. 
 
->[!NOTE] 
+>[!NOTE]
 >Deadlines are enforced from pending restart state (for example, when the device has completed the installation and download from Windows Update).
 
 ### Policy overview

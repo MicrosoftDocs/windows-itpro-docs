@@ -27,10 +27,10 @@ Retrieves a collection of alerts related to a given domain address.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type |   Permission  |   Permission display name
 :---|:---|:---
-Application |	Alert.Read.All |	'Read all alerts'
-Application |	Alert.ReadWrite.All |	'Read and write all alerts'
+Application |   Alert.Read.All |    'Read all alerts'
+Application |   Alert.ReadWrite.All |   'Read and write all alerts'
 Delegated (work or school account) | Alert.Read | 'Read alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
@@ -46,10 +46,9 @@ GET /api/domains/{domain}/alerts
 
 ## Request headers
 
-Header | Value 
-:---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+| Header        | Value  |
+|:--------------|:-------|
+| Authorization | String |
 
 ## Request body
 Empty
@@ -83,45 +82,45 @@ Content-type: application/json
     "value": [
         {
             "id": "441688558380765161_2136280442",
-			"incidentId": 8633,
-			"assignedTo": "secop@contoso.com",
-			"severity": "Low",
-			"status": "InProgress",
-			"classification": "TruePositive",
-			"determination": "Malware",
-			"investigationState": "Running",
-			"category": "MalwareDownload",
-			"detectionSource": "WindowsDefenderAv",
-			"threatFamilyName": "Mikatz",
-			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description",
-			"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
-			"firstEventTime": "2018-11-25T16:17:50.0948658Z",
-			"lastEventTime": "2018-11-25T16:18:01.809871Z",
-			"resolvedTime": null,
-			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
+            "incidentId": 8633,
+            "assignedTo": "secop@contoso.com",
+            "severity": "Low",
+            "status": "InProgress",
+            "classification": "TruePositive",
+            "determination": "Malware",
+            "investigationState": "Running",
+            "category": "MalwareDownload",
+            "detectionSource": "WindowsDefenderAv",
+            "threatFamilyName": "Mikatz",
+            "title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+            "description": "Some description",
+            "alertCreationTime": "2018-11-25T16:19:21.8409809Z",
+            "firstEventTime": "2018-11-25T16:17:50.0948658Z",
+            "lastEventTime": "2018-11-25T16:18:01.809871Z",
+            "resolvedTime": null,
+            "machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         },
         {
             "id": "121688558380765161_2136280442",
-			"incidentId": 4123,
-			"assignedTo": "secop@contoso.com",
-			"severity": "Low",
-			"status": "InProgress",
-			"classification": "TruePositive",
-			"determination": "Malware",
-			"investigationState": "Running",
-			"category": "MalwareDownload",
-			"detectionSource": "WindowsDefenderAv",
-			"threatFamilyName": "Mikatz",
-			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description",
-			"alertCreationTime": "2018-11-24T16:19:21.8409809Z",
-			"firstEventTime": "2018-11-24T16:17:50.0948658Z",
-			"lastEventTime": "2018-11-24T16:18:01.809871Z",
-			"resolvedTime": null,
-			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
+            "incidentId": 4123,
+            "assignedTo": "secop@contoso.com",
+            "severity": "Low",
+            "status": "InProgress",
+            "classification": "TruePositive",
+            "determination": "Malware",
+            "investigationState": "Running",
+            "category": "MalwareDownload",
+            "detectionSource": "WindowsDefenderAv",
+            "threatFamilyName": "Mikatz",
+            "title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+            "description": "Some description",
+            "alertCreationTime": "2018-11-24T16:19:21.8409809Z",
+            "firstEventTime": "2018-11-24T16:17:50.0948658Z",
+            "lastEventTime": "2018-11-24T16:18:01.809871Z",
+            "resolvedTime": null,
+            "machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         }
-	]
+    ]
 }
 ```
 

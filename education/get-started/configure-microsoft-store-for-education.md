@@ -8,16 +8,18 @@ ms.sitesec: library
 ms.topic: get-started
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 08/29/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Microsoft Store for Education
 
 > [!div class="step-by-step"]
-[<< Use School Data Sync to import student data](use-school-data-sync.md)
-[Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
+> [<< Use School Data Sync to import student data](use-school-data-sync.md)
+> [Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
 
 You'll need to configure Microsoft Store for Education to accept the services agreement and make sure your Microsoft Store account is associated with Intune for Education.
 
@@ -32,30 +34,30 @@ You can watch the descriptive audio version here: [Microsoft Education: Configur
 1. Sign in to <a href="https://educationstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
 2. Accept the Microsoft Store for Business and Education Services Agreement. 
 
-  This will take you to the Microsoft Store for Education portal.
+   This will take you to the Microsoft Store for Education portal.
 
-  **Figure 1** - Microsoft Store for Education portal
+   **Figure 1** - Microsoft Store for Education portal
 
-  ![Microsoft Store for Education portal](images/msfe_store_portal.png)
+   ![Microsoft Store for Education portal](images/msfe_store_portal.png)
 
 3. In the Microsoft Store portal, click **Manage** to go to the Microsoft Store **Overview** page.
 4. Find the **Overview** page, find the **Store settings** tile and click **Management tools**.
 
-  **Figure 2** - Select management tools from the list of Store settings options
+   **Figure 2** - Select management tools from the list of Store settings options
 
-  ![Select management tools from list of Store settings options](images/msfe_storesettings_select_managementtools.png)
+   ![Select management tools from list of Store settings options](images/msfe_storesettings_select_managementtools.png)
 
-4. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Microsoft Store for Education.
+5. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Microsoft Store for Education.
 
-  **Figure 3** - Activate Intune for Education as the management tool
+   **Figure 3** - Activate Intune for Education as the management tool
 
-  ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
+   ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
 
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
 > [!div class="step-by-step"]
-[<< Use School Data Sync to import student data](use-school-data-sync.md)
-[Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
+> [<< Use School Data Sync to import student data](use-school-data-sync.md)
+> [Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
 
 
 ## Related topic
