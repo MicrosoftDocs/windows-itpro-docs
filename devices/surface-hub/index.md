@@ -157,8 +157,8 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardText">
                         <h3>Surface Hub 2s Videos</h3>
-                        <p><a href="https://youtu.be/pbhNngw3a-Y target="_blank">What is Surface Hub 2S?</p>
-                        <p><a href="https://www.youtube.com/watch?v=CH2seLS5Wb0 target="_blank">Surface Hub 2S with Teams</p>
+                        <p><a href="https://youtu.be/pbhNngw3a-Y" target="_blank">What is Surface Hub 2S?</p>
+                        <p><a href="https://www.youtube.com/watch?v=CH2seLS5Wb0" target="_blank">Surface Hub 2S with Teams</p>
                         <p><a href="https://www.youtube.com/watch?v=I4N2lQX4WyI&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ&index=7" target="_blank">Surface Hub 2S with Microsoft 365</p>
                     </div>
                 </div>
