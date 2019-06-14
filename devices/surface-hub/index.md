@@ -26,6 +26,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                     </div>
                     <div class="cardText">
                         <h3>Overview</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099" target="_blank">Behind the design: Surface Hub 2S</a></p>
                         <p><a href="surface-hub-2s-whats-new.md">What's new in Surface Hub 2S</a></p>
                         <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operation system essentials</a></p>
                     </div>
@@ -45,8 +46,8 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                     <div class="cardText">
                         <h3>Plan</h3>
                         <p><a href="surface-hub-2s-site-readiness-guide.md">Surface Hub 2S Site Readiness Guide</a></p>
-                        <p><a href="surface-hub-2s-prepare-environment.md">Prepare your environment for Surface Hub 2S</a></p>
                         <p><a href="surface-hub-2s-install-mount.md">Install and mount Surface Hub 2S</a></p>
+                        <p><a href="surface-hub-2s-custom-install.md">Customize Surface Hub 2S installation</a></p>
                     </div>
                 </div>
             </div>
@@ -121,8 +122,10 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                     </div>
                     <div class="cardText">
                         <h3>Support</h3>
+                        <p><a href="https://support.microsoft.com/help/4493926" target="_blank">Service and warranty</a></p>
                         <p><a href="surface-hub-2s-recover-reset.md">Recover & reset Surface Hub 2S</a></p>
                         <p><a href="support-solutions-surface-hub.md">Surface Hub support solutions</a></p>
+                        <p><a href="https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627" target="_blank">Enable Microsoft Whiteboard on Surface Hub</a></p>
                     </div>
                 </div>
             </div>
@@ -139,6 +142,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardText">
                         <h3>Get ready for Surface Hub 2S</h3>
+                        <p><a href="https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab" target="_blank">Ordering Surface Hub 2S</p>
                         <p><a href="surface-hub-2s-prepare-environment.md">Prepare your environment for Surface Hub 2S</p>
                         <p><a href="surface-hub-2s-unpack.md">Unpacking Surface Hub 2S</p>
                         <p><a href="surface-hub-2s-install-mount.md">Install & mount Surface Hub 2S</p>
@@ -152,11 +156,10 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Integrate with Surface Hub 2S</h3>
-                        <p><a href=" ">Surface Hub 2S with Microsoft Intune</p>
-                        <p><a href="surface-hub-2s-configure-teams.md">Surface Hub 2S with Microsoft Teams</p>
-                        <p><a href="surface-hub-2s-configure-skype.md">Surface Hub 2S with Skype for Business</p>
-                        <p><a href="surface-hub-2s-configure-with-powershell.md">Surface Hub 2S and PowerShell</p>
+                        <h3>Surface Hub 2s Videos</h3>
+                        <p><a href="https://youtu.be/pbhNngw3a-Y target="_blank">What is Surface Hub 2S?</p>
+                        <p><a href="https://www.youtube.com/watch?v=CH2seLS5Wb0 target="_blank">Surface Hub 2S with Teams</p>
+                        <p><a href="https://www.youtube.com/watch?v=I4N2lQX4WyI&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ&index=7" target="_blank">Surface Hub 2S with Microsoft 365</p>
                     </div>
                 </div>
             </div>
@@ -168,6 +171,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardText">
                         <h3>Community</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Surface-Hub/bd-p/SurfaceHub" target="_blank">Join the Surface Hub Technical Community</p>
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Join the Surface Devices Technical Community</p>
                     </div>
                 </div>

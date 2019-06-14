@@ -26,11 +26,11 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Overview</h3>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
-                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">Surface Book</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a><p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">NEED UPDATE</a></p>
+                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">NEED UPDATE</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">NEED UPDATE</a><p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">NEED UPDATE</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">NEED UPDATE</a></p>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help.svg" alt="Support" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector-blue.svg" alt="Support" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,9 +142,12 @@ Harness the power of Surface, Windows, and Office connected together through the
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Get ready for Surface devices</h3>
-                        <p>NEED UPDATE</p>
-                        <p>NEED UPDATE</p>
+                        <h3>Technical specifications</h3>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
+                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">Surface Book</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a><p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
+                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
                     </div>
                 </div>
             </div>
