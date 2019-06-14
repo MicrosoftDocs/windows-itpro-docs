@@ -3,12 +3,12 @@ title: Migrate Application Settings (Windows 10)
 description: Migrate Application Settings
 ms.assetid: 28f70a83-0a3e-4a6b-968a-2b78ccd3cc07
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
