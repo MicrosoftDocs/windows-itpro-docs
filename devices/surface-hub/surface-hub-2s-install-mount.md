@@ -23,7 +23,7 @@ For more information, see [Officially licensed third-party accessories](http://l
 - [Steelcase mobile stand and APC battery set up](https://youtu.be/VTzdu4Skpkg)
 
  
- ![* Surface Hub 2S on Roam Mobile Stand *](images/sh2-mobile-stand.png)<br>
+ ![Surface Hub 2S on Roam Mobile Stand](images/sh2-mobile-stand.png)<br>
 *Figure 1. Surface Hub 2S on Roam Mobile Stand.*
 
 If you’re not using licensed accessories, see [Customizing installation of Surface Hub 2S](surface-hub-2s-connect.md).

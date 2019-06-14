@@ -10,20 +10,18 @@ audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
 ---
+
 # Surface Hub 2S quick start 
 
-
-
 ## Unpack Surface Hub 2S
+
 1. Use the handles on each side of the box to move it to the space where you'll set it up.
 2. Before opening, remove the clips (4) located on the front and back, and then lift the top off the box using the handles.
 3. In the base of the Surface Hub 2S, open the accessories box containing the setup guide, Surface Hub 2 pen, Surface Hub 2 camera and the power cable.
 4. On the back of the Surface Hub there's an instructional label showing you where to attach the mounting hardware. Install them in place and remove the label.
 
- 
-
-| 1. **Set up your mount first**                                                                                                                              |                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1. **Set up your mount first** | |
+| -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | Leave your Surface Hub in the box until the mount is set up and mounting hardware is applied. Mount is not included. Your mount is sold separately.         | ![* Set up your mount first *](images/sh2-setup-1.png) <br>                      |
 | 2. **Attach hardware to the Surface Hub**                                                                                                                   |                                                                                      |
 | Mounting hardware and specific instructions are found in the box for your mount.                                                                            | ![* Attach hardware to the Surface Hub *](images/sh2-setup-2.png) <br>             |

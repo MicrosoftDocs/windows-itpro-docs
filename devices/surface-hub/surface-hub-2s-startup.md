@@ -10,4 +10,5 @@ audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
 ---
+
 # Out-of-box startup for Surface Hub 2S
