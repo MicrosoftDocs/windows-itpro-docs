@@ -20,6 +20,7 @@ ms.topic: article
 
 **Applies to:**
 
+- Windows Server 2008 R2 SP1 (pre-release)
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -34,6 +35,7 @@ ms.topic: article
 Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
+- Windows Server 2008 R2 SP1 (pre-release)
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -42,9 +44,9 @@ The service supports the onboarding of the following servers:
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
-## Windows Server 2012 R2 and Windows Server 2016
+## Windows Server 2008 R2 SP1,  Windows Server 2012 R2 and Windows Server 2016
 
-There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP:
+There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP:
 
 - **Option 1**: Onboard through Azure Security Center
 - **Option 2**: Onboard through Microsoft Defender Security Center
@@ -52,7 +54,7 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 ### Option 1: Onboard servers through Azure Security Center
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-2. Select Windows Server 2012 R2 and 2016 as the operating system.
+2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
 
 3. Click **Onboard Servers in Azure Security Center**. 
 
@@ -61,10 +63,16 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 ### Option 2: Onboard servers through Microsoft Defender Security Center
 You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
-- For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
+- For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
+    - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
+    - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/en-us/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+    - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+
+
+- For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
     >[!NOTE]
-    >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
+    >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
 - Turn on server monitoring from Microsoft Defender Security Center.
 - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
