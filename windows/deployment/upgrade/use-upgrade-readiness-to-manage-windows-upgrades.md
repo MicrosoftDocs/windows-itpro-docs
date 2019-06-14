@@ -1,13 +1,13 @@
 ---
 title: Use Upgrade Readiness to manage Windows upgrades (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Describes how to use Upgrade Readiness to manage Windows upgrades.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.localizationpriority: medium
 ms.prod: w10
-author: lomayor
-ms.author: lomayor
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ---
 

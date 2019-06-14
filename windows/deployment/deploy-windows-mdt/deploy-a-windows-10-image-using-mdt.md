@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 10/16/2017
 ms.topic: article
 ---
 

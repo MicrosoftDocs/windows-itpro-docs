@@ -45,7 +45,9 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to whitelist access to the required services. For additional details about each of these services and their specific requirements, review the following details:
 
 <table><th>Service<th>Information
-<tr><td><b>Windows Autopilot Deployment Service and Windows Activation<b><td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used: https://ztd.dds.microsoft.com, https://cs.dds.microsoft.com. <br>
+<tr><td><b>Windows Autopilot Deployment Service and Windows Activation<b><td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 builds 18204 and above, the following URLs are used:<br> 
+<ul><li>https://ztd.dds.microsoft.com </li>
+<li>https://cs.dds.microsoft.com </li></ul>
     
 For all supported Windows 10 releases, Windows Autopilot also uses Windows Activation services. See <a href="https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33">Windows activation or validation fails with error code 0x8004FE33</a> for details about problems that might occur when you connect to the Internet through a proxy server.
 <tr><td><b>Azure Active Directory<b><td>User credentials are validated by Azure Active Directory, and the device can also be joined to Azure Active Directory. See <a href="https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service">Office 365 IP Address and URL Web service</a> for more information.

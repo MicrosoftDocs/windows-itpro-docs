@@ -45,7 +45,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
             >[!NOTE]
             >This setting is only available in the Microsoft Defender ATP administrator (default) role. 
 
-		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
+		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 
 		  - **Live response capabilities** - Users can take basic or advanced live response commands. <br>
 			- Basic commands allow users to:
