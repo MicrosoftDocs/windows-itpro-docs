@@ -34,10 +34,9 @@
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)
 ### [Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md)
-### [Changing Start Menu on Surface Hub 2S](surface-hub-2s-change-start-menu.md)
 
 ## Secure
-### [Securing Surface Hub 2S with UEFI](surface-hub-2s-secure-with-uefi.md)
+### [Securing Surface Hub 2S with UEFI](surface-hub-2s-secure-with-uefi-semm.md)
 ### [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 
 ## Support
