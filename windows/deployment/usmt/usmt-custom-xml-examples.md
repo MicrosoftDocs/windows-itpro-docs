@@ -3,12 +3,12 @@ title: Custom XML Examples (Windows 10)
 description: Custom XML Examples
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

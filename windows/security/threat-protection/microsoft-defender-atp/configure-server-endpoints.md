@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:**
 
-- Windows Server 2008 R2 SP1 
+- Windows Server 2008 R2 SP1 (pre-release)
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -35,7 +35,7 @@ ms.topic: article
 Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
-- Windows Server 2008 R2 SP1 
+- Windows Server 2008 R2 SP1 (pre-release)
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
