@@ -107,8 +107,8 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 
-<!--CSP Example-->
-CSP Example
+<!--Example-->
+Example
 ```
 Name: Point and Print Enable Oma-URI: ./Device/Vendor/MSFT/Policy/Config/Printers/PointAndPrintRestrictions
 Data type: String Value: <enabled/>
@@ -118,7 +118,7 @@ Data type: String Value: <enabled/>
 <data id="PointAndPrint_NoWarningNoElevationOnInstall_Enum" value="1"/>
 <data id="PointAndPrint_NoWarningNoElevationOnUpdate_Enum" value="2"/>
 ```
-<!--/CSP Example-->
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>
