@@ -25,6 +25,7 @@
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
 ### [Configure Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
 ### [Out of box startup for Surface Hub 2S](surface-hub-2s-startup.md)
+### [Deploy apps with Microsoft Intune](surface-hub-2s-deploy-apps-intune.md)
 
 ## Manage
 ### [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
