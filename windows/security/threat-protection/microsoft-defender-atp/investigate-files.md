@@ -65,7 +65,7 @@ The **Most recent observed machines with the file** section allows you to specif
 This allows for greater accuracy in defining entities to display such as if and when an entity was observed in the organization. For example, if you’re trying to identify the origin of a network communication to a certain IP Address within a 10-minute period on a given date, you can specify that exact time interval, and see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)

@@ -111,7 +111,7 @@ See [Manage antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-de
 
 **Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans:**
 
-Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 ExclusionProcess
