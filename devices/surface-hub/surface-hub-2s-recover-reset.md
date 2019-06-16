@@ -37,3 +37,18 @@ To begin, sign into Surface Hub 2S with admin credentials, open the **Settings**
 
 **Recover Surface Hub 2S using USB recovery drive**
 New in Surface Hub 2S, you can now reinstall the device using a recovery image.
+
+## Recover from USB drive
+
+Surface Hub 2S lets you reinstall the device using a recovery image, which allows you to reinstall the device to factory settings if you lost the Bitlocker key or no longer have admin credentials to the Settings app.
+
+
+1. Begin with a USB 3.0 drive with 8GB or 16GB of storage, formatted as FAT32.
+2. Download recovery image from the Surface Recovery website onto the USB drive and connect it to any USB-C or USB A port on Surface Hub 2S.
+3. Turn the device off, hold the Volume down button and then press the Power. Keep holding the Volume down button until you see circling dots below the Windows logo.
+
+![*Use Volume down and power buttons to initiate recovery*](images/sh2-keypad.png)<br>
+
+4. In the language selection screen, select the display language for your Surface Hub 2S.
+5. Choose **Recover from a drive** and **Fully clean the drive** and then click **Recover**. If prompted for a BitLocker key, click **Skip this drive**. Surface Hub 2S will reboot several times and take approximately 30 minutes to complete the recovery process.
+6. When the first OOBE startup screen appears, remove the USB drive.
