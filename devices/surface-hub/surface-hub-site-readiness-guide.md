@@ -89,7 +89,7 @@ The 55” Surface Hub requires two people to safely lift and mount. The 84” Su
 
 ## Mounting and setup
 
-See the your mounting guide at http://www.microsoft.com/surface/support/surface-hub, for detailed instructions. 
+See your mounting guide at http://www.microsoft.com/surface/support/surface-hub for detailed instructions. 
 
 There are three ways to mount your Surface Hub:
 
