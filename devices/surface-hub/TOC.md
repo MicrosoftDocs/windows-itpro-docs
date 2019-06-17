@@ -13,6 +13,7 @@
 #### [Surface Hub 2S quick start](surface-hub-2s-quick-start.md)
 #### [Installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
 #### [Customizing installation of Surface Hub 2S](surface-hub-2s-custom-install.md)
+#### [Setup worksheet](setup-worksheet-surface-hub.md)
 #### [Surface Hub 2S ports and keypad overview](surface-hub-2s-port-keypad-overview.md)
 #### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
@@ -43,12 +44,13 @@
 
 ## Support
 ### [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)
+### [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
 ### [Change history](surface-hub-2s-change-history.md)
 
 # Surface Hub
 ## Overview
 ### [What's new in Windows 10, version 1703 for Surface Hub?](surfacehub-whats-new-1703.md)
-### [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 
 ## Plan
 ### [Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)

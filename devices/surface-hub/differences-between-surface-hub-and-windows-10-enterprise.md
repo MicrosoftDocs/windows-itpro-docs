@@ -13,7 +13,7 @@ manager: dansimp
 ms.localizationpriority: medium
 ---
 
-# Differences between Surface Hub and Windows 10 Enterprise
+# Operating system essentials (Surface Hub)
 
 The Surface Hub operating system, Windows 10 Team, is based on Windows 10 Enterprise, providing rich support for enterprise management, security, and other features. However, there are important differences between them. While the Enterprise edition is designed for PCs, Windows 10 Team is designed from the ground up for large screens and meeting rooms. When you evaluate security and management requirements for Surface Hub, it's best to consider it as a new operating system. This article is designed to help highlight the key differences between Windows 10 Team on Surface Hub and Windows 10 Enterprise, and what the differences mean for your organization.
 
