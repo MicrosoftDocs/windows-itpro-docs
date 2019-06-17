@@ -18,8 +18,8 @@ Phone authentication for Surface Hub simplifies signing-in to your meetings and 
 ## To set up phone authentication
 
 1. Download the [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator) app for iPhone or Android to your phone.
-2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and click **Next.**
-3. In the Additional security verification screen, select Mobile App and Use verification code, and then click Setup.
+2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and select **Next.**
+3. In the Additional security verification screen, select Mobile App and Use verification code, and then select **Setup**.
 
 ## To configure mobile app
 
@@ -30,6 +30,6 @@ Phone authentication for Surface Hub simplifies signing-in to your meetings and 
 
 ## To sign into Surface Hub
 
-1. On Surface Hub, sign into **My meetings and files** and click **Send notification** when prompted.
+1. On Surface Hub, sign into **My meetings and files** and select **Send notification** when prompted.
 2. Match the number displayed on your phone with the number displayed on Surface Hub to approve your sign-in request.
 3. If prompted, enter the PIN or biometric ID on your phone, to complete sign-in.
