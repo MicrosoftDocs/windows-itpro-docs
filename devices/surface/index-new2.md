@@ -1,8 +1,17 @@
 --- 
+title: Microsoft Surface documentation and resources
 layout: HubPage
 hide_bc: true
-title: Product
-description: Product
+description: Surface and Surface Hub documentation for admins & IT professionals
+author: robmazz
+ms.author: robmazz
+manager: laurawi
+ms.topic: hub-page
+keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation
+localization_priority: Normal
+audience: ITPro
+ms.prod: Surface
+description: Learn about Microsoft Surface and Surface Hub devices.
 ---
 <div id="main" class="v2">
     <div class="container">
