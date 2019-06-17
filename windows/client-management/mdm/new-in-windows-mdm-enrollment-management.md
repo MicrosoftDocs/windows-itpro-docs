@@ -1878,8 +1878,6 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |New or updated topic | Description|
 |--- | ---|
 |[Policy CSP - DeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md)|Added the following new policies:<br>AllowDeviceHealthMonitoring, ConfigDeviceHealthMonitoringScope, ConfigDeviceHealthMonitoringUploadDestination.|
-New or updated topic | Description|
-|--- | ---|
 |[Policy CSP - TimeLanguageSettings](policy-csp-timelanguagesettings.md)|Added the following new policy:<br>ConfigureTimeZone.|
 
 
