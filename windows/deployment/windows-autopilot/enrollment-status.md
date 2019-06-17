@@ -21,34 +21,14 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 (1803 and newer) 
 
-The Windows Autopilot Enrollment Status Page displays the status of the complete device configuration process.  Incorporating feedback from customers, this provides information to the user to show that the device is being configured. The Enrollment Status Page can be also configured to prevent access to the desktop until the configuration process is complete. 
+The Enrollment Status Page (ESP) displays the status of the complete device configuration process when a MDM managed user signs into a device for the very first time.  The benefit of using the ESP will help users understand the progress of their device provisioning status along with ensuring the device has met the organizations desired state before the user can access the desktop for the first time.
+
+The ESP will track the installation of applications, security policies, certificates and network connections.  Within Intune, an Administrator can deploy ESP profiles to a licensed Intune user along with configuring specific settings within the ESP profile; a few of these settings are, force the installation of specified applications, allow users to collect troubleshooting logs, specify what a user can do if device setup fails.  Read more about [how to setup the Enrollment Status Page in Intune.] (https://docs.microsoft.com/en-us/intune/windows-enrollment-status).   
  
  ![Enrollment status page](images/enrollment-status-page.png)
  
-From Windows 10 version 1803 onwards, you can opt out of the account setup phase. If it is skipped, settings will be applied for users when they access their desktop for the first time. 
-
-## Available settings
-
- The following settings can be configured to customize behavior of the enrollment status page:
-
-<table>
-<th align="left">Setting<th align="left">Yes<th align="left">No
-<tr><td>Show app and profile installation progress<td>The enrollment status page is displayed.<td>The enrollment status page is not displayed.
-<tr><td>Block device use until all apps and profiles are installed<td>The settings in this table are made available to customize behavior of the enrollment status page, so that the user can address potential installation issues.
-<td>The enrollment status page is displayed with no additional options to address installation failures.
-<tr><td>Allow users to reset device if installation error occurs<td>A <b>Reset device</b> button is displayed if there is an installation failure.<td>The <b>Reset device</b> button is not displayed if there is an installation failure.
-<tr><td>Allow users to use device if installation error occurs<td>A <b>Continue anyway</b> button is displayed if there is an installation failure.<td>The <b>Continue anyway</b> button is not displayed if there is an installation failure.
-<tr><td>Show error when installation takes longer than specified number of minutes<td colspan="2">Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
-<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><b>Oh no! Something didn't do what it was supposed to.  Please contact your IT department.<b>
-<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
-<tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <b>All</b> or <b>Selected</b>. <br><br>If <b>Selected</b> is chosen, a <b>Select apps</b> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
-</table>
-
-See the following example:
-
- ![Enrollment status page settings](images/esp-settings.png)
 
 ## Installation progress tracking
 
@@ -69,7 +49,7 @@ The following types of policies and installations are not tracked:
 
 ## More information
 
-For more information on configuring the Enrollment Status page, see the [Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).<br>
+For more information on configuring the Enrollment Status Page, see the [Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).<br>
 For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).<br>
 For more information about blocking for app installation:
 - [Blocking for app installation using Enrollment Status Page](https://blogs.technet.microsoft.com/mniehaus/2018/12/06/blocking-for-app-installation-using-enrollment-status-page/).
