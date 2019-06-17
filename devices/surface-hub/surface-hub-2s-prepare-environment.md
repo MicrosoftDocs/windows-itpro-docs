@@ -24,20 +24,20 @@ Microsoft regularly updates the Office 365 service with new features and functio
 ## Device affiliation
 
 Use Device affiliation to manage user access to the Settings app on Surface Hub 2S.
-With the Windows 10 Team Edition operating system  —  that runs on SH2  —  only authorized users can  adjust settings via the settings app. Since choosing the affiliation can impact feature availability, plan appropriately to ensure that users can access features as intended.
+With the Windows 10 Team Edition operating system  —  that runs on Surface Hub 2S —  only authorized users can  adjust settings via the settings app. Since choosing the affiliation can impact feature availability, plan appropriately to ensure that users can access features as intended.
 
 > [!NOTE]
 > You can only set Device affiliation during the initial out-of-box experience (OOBE) setup. If you need to reset Device affiliation, you’ll have to repeat OOBE setup.
 
-## No affiliation
+##3 No affiliation
 
 No affiliation is like having Surface Hub 2S in a workgroup with a different local Administrator account on each Surface Hub 2S. If you choose No affiliation, you must locally save the [Bitlocker Key to a USB thumb drive](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-key-management-faq). You can still enroll the device with Intune, however only the local admin can access the Settings app using the account credentials configured during OOBE. You can change the Administrator account password from the Settings app.
 
-## Active Directory Domain Services
+### Active Directory Domain Services
 
 If you affiliate Surface Hub 2S with on-premises Active Directory Domain Services, you need to manage access to the Settings app via a security group on your domain, ensuring that all SG members have permissions to change settings on Surface Hub 2S. Note also the following:
 
-- When Surface Hub 2S affiliates with your on-premises Active Directory Domain Services, the Bitlocker key is saved in the AD Schema and can be exported to a file.
+- When Surface Hub 2S affiliates with your on-premises Active Directory Domain Services, the Bitlocker key is saved in the AD Schema.
 - Your organization’s Trusted Root CAs are pushed to the same container in Surface Hub 2S, which means you don’t need to import them using a provisioning package.
 - You can still enroll the device with Intune to centrally manage settings on your Surface Hub 2S.
 
@@ -45,4 +45,4 @@ If you affiliate Surface Hub 2S with on-premises Active Directory Domain Service
 
 When choosing to affiliate your Surface Hub 2S with Azure AD, any user in the Global Admins Security Group can sign in to the Settings app on Surface Hub 2S. Currently, no other group can be delegated to sign in to the Settings app on Surface Hub 2S.
 
-If you enabled Intune Automatic Enrollment for your organization, Surface Hub 2S will automatically enroll itself with Intune. The device’s Bitlocker key is automatically saved in Azure AD. When affiliating Surface Hub 2S with Azure AD, single sign-on and streamlined sign-on may not work.
+If you enabled Intune Automatic Enrollment for your organization, Surface Hub 2S will automatically enroll itself with Intune. The device’s Bitlocker key is automatically saved in Azure AD. When affiliating Surface Hub 2S with Azure AD, single sign-on and Easy Authentication will not work.

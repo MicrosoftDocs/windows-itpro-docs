@@ -11,11 +11,13 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# Configure phone authentication for Surface Hub 2S
+# Configure Easy Authentication for Surface Hub 2S
 
-Phone authentication simplifies signing-in to your meetings and files on Surface Hub 2S.
+Easy Authentication simplifies signing-in to your meetings and files on Surface Hub 2S.
 
-## To set up phone authentication
+Note: Easy Authentication requires that your primary email address must match your UPN.
+
+## To set up Easy Authentication
 
 1. Download the [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator) app for iPhone or Android to your phone.
 2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and select **Next.**
