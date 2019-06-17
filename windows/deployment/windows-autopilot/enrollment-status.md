@@ -1,8 +1,8 @@
 ---
-title: Windows Autopilot Enrollment Status page 
+title: Windows Autopilot Enrollment Status Page 
 ms.reviewer: 
 manager: laurawi
-description: Gives an overview of the enrollment status page capabilities, configuration
+description: Gives an overview of the Enrollment Status Page capabilities, configuration
 keywords: Autopilot Plug and Forget, Windows 10
 ms.prod: w10
 ms.technology: Windows
@@ -17,7 +17,7 @@ ms.topic: article
 ---
 
 
-# Windows Autopilot Enrollment Status page
+# Windows Autopilot Enrollment Status Page
 
 **Applies to**
 
@@ -27,12 +27,12 @@ The Enrollment Status Page (ESP) displays the status of the complete device conf
 
 The ESP will track the installation of applications, security policies, certificates and network connections.  Within Intune, an administrator can deploy ESP profiles to a licensed Intune user and configure specific settings within the ESP profile; a few of these settings are: force the installation of specified applications, allow users to collect troubleshooting logs, specify what a user can do if device setup fails.  For more information, see [how to setup the Enrollment Status Page in Intune.] (https://docs.microsoft.com/en-us/intune/windows-enrollment-status).   
  
- ![Enrollment status page](images/enrollment-status-page.png)
+ ![Enrollment Status Page](images/enrollment-status-page.png)
  
 
 ## Installation progress tracking
 
-The Enrollment Status page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
+The Enrollment Status Page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
 
 - Certain types of app installations.
     - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp).
