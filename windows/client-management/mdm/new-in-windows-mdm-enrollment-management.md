@@ -33,7 +33,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 - **Breaking changes and known issues**
   - [Get command inside an atomic command is not supported](#get-command-inside-an-atomic-command-is-not-supported)
-  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows81-to-windows10)
+  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows-81-to-windows-10)
   - [Apps installed using WMI classes are not removed](#apps-installed-using-wmi-classes-are-not-removed)
   - [Passing CDATA in SyncML does not work](#passing-cdata-in-syncml-does-not-work)
   - [SSL settings in IIS server for SCEP must be set to "Ignore"](#ssl-settings-in-iis-server-for-scep-must-be-set-to-ignore)
@@ -43,19 +43,20 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Version information for mobile devices](#version-information-for-mobile-devices)
   - [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#upgrading-windows-phone-81-devices-with-app-whitelisting-using-applicationrestriction-policy-has-issues)
   - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
-  - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#mcmcwfciw10mobile)
+  - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#multiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
-  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows10-pc)
+  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows-10-pc)
   - [Requirements to note for VPN certificates also used for Kerberos Authentication](#requirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
   - [Device management agent for the push-button reset is not working](#device-management-agent-for-the-push-button-reset-is-not-working)
 
 - **Frequently Asked Questions**
-  - [Can there be more than 1 MDM server to enroll and manage devices in Windows 10?](#ctbmt1mdmsteamdiw10)
+  - [Can there be more than 1 MDM server to enroll and manage devices in Windows 10?](#can-there-be-more-than-1-mdm-server-to-enroll-and-manage-devices-in-windows-10)
   - [How do I set the maximum number of Azure Active Directory joined devices per user?](#how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user)
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [June 2019](#june-2019)
     - [May 2019](#may-2019)
     - [April 2019](#april-2019)
     - [March 2019](#march-2019)
@@ -120,6 +121,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" data-raw-source="[ServiceControlManager/SvchostProcessMitigation](policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)">ServiceControlManager/SvchostProcessMitigation</a></li>
 <li><a href="policy-csp-system.md#system-allowcommercialdatapipeline" data-raw-source="[System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)">System/AllowCommercialDataPipeline</a></li>
 <li><a href="policy-csp-system.md#system-turnofffilehistory" data-raw-source="[System/TurnOffFileHistory](policy-csp-system.md#system-turnofffilehistory)">System/TurnOffFileHistory</a></li>
+<li><a href="policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" data-raw-source="[TimeLanguageSettings/ConfigureTimeZone](policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)">TimeLanguageSettings/ConfigureTimeZone</a></li>
 <li><a href="policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" data-raw-source="[Troubleshooting/AllowRecommendations](policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)">Troubleshooting/AllowRecommendations</a></li>
 <li><a href="policy-csp-update.md#update-automaticmaintenancewakeup" data-raw-source="[Update/AutomaticMaintenanceWakeUp](policy-csp-update.md#update-automaticmaintenancewakeup)">Update/AutomaticMaintenanceWakeUp</a></li>
 <li><a href="policy-csp-update.md#update-configuredeadlineforfeatureupdates" data-raw-source="[Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates)">Update/ConfigureDeadlineForFeatureUpdates</a></li>
@@ -1108,7 +1110,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
+<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
 <td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
 <ul>
 <li>Username</li>
@@ -1583,7 +1585,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 In Windows 10, a Get command inside an atomic command is not supported. This was allowed in Windows Phone 8 and Windows Phone 8.1.
 
-### Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10
+### Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10
 
 During an upgrade from Windows 8.1 to Windows 10, the notification channel URI information is not preserved. In addition, the MDM client loses the PFN, AppID, and client secret.
 
@@ -1649,7 +1651,7 @@ Applies only to phone prior to build 10586.218: When ApplicationManagement/Appli
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
-### <a id="mcmcwfciw10mobile" />Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
+### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -1830,7 +1832,7 @@ In Windows 10 Mobile, remote PIN reset in Azure AD joined devices are not suppo
 
 Starting in Windows 10, after the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### User provisioning failure in Azure Active Directory joined Windows 10 PC
+### User provisioning failure in Azure Active Directory joined Windows 10 PC
 
 In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -1845,7 +1847,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 ## Frequently Asked Questions
 
 
-### <a id="ctbmt1mdmsteamdiw10" />**Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
+### **Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
 No. Only one MDM is allowed.
 
 ### **How do I set the maximum number of Azure Active Directory joined devices per user?**
@@ -1867,6 +1869,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### June 2019
+New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - TimeLanguageSettings](policy-csp-timelanguagesettings.md)|Added the following new policy:<br>ConfigureTimeZone.|
+
 
 ### May 2019
 
