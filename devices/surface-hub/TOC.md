@@ -5,7 +5,7 @@
 ## Overview
 ### [What's new in Surface Hub 2S for IT admins](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
-### [Managing Windows 10 Team operating system on Surface Hub ](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Operating system essentials (Surface Hub) ](differences-between-surface-hub-and-windows-10-enterprise.md)
 
 ## Plan
 ### Surface Hub 2S Site Readiness Guide 
@@ -22,6 +22,7 @@
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
+### [Deploy apps to Surface Hub 2S using Intune](surface-hub-2s-deploy-apps-intune.md)
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
 ### [Configure Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
 ### [Out of box startup for Surface Hub 2S](surface-hub-2s-startup.md)

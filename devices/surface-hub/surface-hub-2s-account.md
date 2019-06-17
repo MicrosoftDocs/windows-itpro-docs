@@ -13,9 +13,9 @@ ms.localizationpriority: Normal
 
 # Create Surface Hub 2S device account
 
-Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests as well as join meetings using Microsoft Teams or Skype for Business. Configure the device account during OOBE setup. If needed you can changed it later (without going through OOBE setup).
+Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests as well as join meetings using Microsoft Teams or Skype for Business. You create the device account when you first start Surface Hub 2S during OOBE setup.
 
-Unlike standard Room mailboxes that remain disabled by default, you’ll need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
+Unlike standard Room mailboxes that remain disabled by default, you will need to enable the Surface Hub 2S device account to sign in to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
 
 Complete advanced configuration tasks using Windows PowerShell. For example:
 
@@ -23,11 +23,11 @@ Complete advanced configuration tasks using Windows PowerShell. For example:
 - You will need to configure calendar processing for every Surface Hub device account using PowerShell.
 - If you want Surface Hub 2S to send a custom auto reply in response to scheduling requests, you’ll need to configure that using Exchange Online PowerShell.
 
-For more information, see [Configure Surface Hub 2S accounts via PowerShell].
+For more information, see [Configure Surface Hub 2S accounts with PowerShell](surface-hub-2s-configure-with-powershell).
 
 ## Create account using Office 365 portal
 
-1. In the Office 365 Admin portal, go to Resources and choose Rooms & Equipment.
+1. In the Microsoft 365 Admin Center, go to Resources and choose Rooms & Equipment and then click +Room.
 
 2. Provide a name and email address for the device account. Leave remaining settings unchanged in the default state.
 
@@ -49,3 +49,11 @@ For more information, see [Configure Surface Hub 2S accounts via PowerShell].
 - **Calendar:** Set **Calendar Auto processing** for this account.
 
 For more information, see [Configure Surface Hub 2S accounts via PowerShell.](devices\surface-hub\surface-hub-2s-configure-using-o365.md)
+
+## Room account password rotation  
+
+You can configure Surface Hub 2S to automatically change a device account password without requiring you to manually update the device account information.
+
+If you turn on Password Rotation, Surface Hub 2S changes the password every 7 days. The automatically generated passwords contain 15-32 characters including  a combination of uppercase and lowercase letters, numbers, and special characters.
+
+Passwords do not change during a meeting. If Surface Hub 2S is turned off, it attempts to change the password immediately when turned on or every 10 minutes until successful.

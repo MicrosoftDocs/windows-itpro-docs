@@ -19,13 +19,12 @@ You can use Windows Configuration Designer (WCD) to create provisioning packages
 
 ### Install Windows Configuration Designer
 
-Install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK) for Windows 10. Download and install the ADK for Windows 10, version 1703.
+Install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK) for Windows 10. Download and install the [ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) . For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) 
 
 ### Add certificates
 
 You can import Certificate Authority certificates to Surface Hub 2S.
-To add certificates to Surface Hub 2S, you’ll need a copy of each certificate as X.509 in .cer format. You cannot import .crt, .pfx or other container formats.
-Certificates must be imported into Windows Configuration Designer and arranged by hierarchy:
+To add certificates to Surface Hub 2S, you’ll need a copy of each certificate as X.509 in CER format. You cannot import CRT, PFX, or other container formats. Certificates must be imported into Windows Configuration Designer and arranged by hierarchy:
 
  ![Add certificates](images/sh2-wcd.png)
 

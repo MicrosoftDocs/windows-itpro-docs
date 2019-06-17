@@ -53,11 +53,11 @@ ms.localizationpriority: Normal
 | ☐ |**Microsoft Teams scheduled meeting**| - Confirmation email received <br> - Meeting appears on start screen <br> - One-touch join functions <br> - Able to join audio <br> - Able to join video <br> - Able to share screen ||
 | ☐ |**Skype for Business scheduled meeting**| - Confirmation email received <br> - Meeting appears on start screen <br> - One-touch join functions correctly <br> - Able to join audio <br> - Able to join video <br> - Able to share screen <br> - Able to send/receive IM | |
 | ☐ |**Scheduled meeting when already invited**| - Meeting declined | |
-| ☐ |**Microsoft Teams ad-hoc meeting**| - Invite other users work <br> - Able to join audio <br> - Able to join Video <br> - Able to share screen | |
+| ☐ |**Microsoft Teams ad-hoc meeting**| - Invite other users work <br> - Able to join audio <br> - Able to join video <br> - Able to share screen | |
 | ☐ |**Skype for Business scheduled meeting**| - Invite other users work <br> - Able to join audio <br> - Able to join video <br> - Able to share screen <br> - Able to send/receive IM | |
-| ☐ |**Microsoft Whiteboard**| - Launch from start / welcome screen <br> - Launch from Microsoft Teams | [Microsoft Whiteboard](https://whiteboard.microsoft.com/) |
+| ☐ |**Microsoft Whiteboard**| - Launch from Welcome / Start screen <br> - Launch from Microsoft Teams | [Microsoft Whiteboard](https://whiteboard.microsoft.com/) |
 | ☐ |**Incoming Skype/Teams call**| - Able to join audio<br>- Able to join video <br> - Able to share screen <br> - Able to send/receive IM (Skype for Business only) | |
 | ☐ |**Incoming live video streams**| - Maximum 2 (Skype for Business) <br> - Maximum 4 (Microsoft Teams) | |
 | ☐ |**Microsoft Teams Mode 0 behavior**| - Skype for Business tile on Welcome/Start screen <br> - Can join scheduled Skype for Business meetings (Skype UI) <br> - Can join scheduled Teams meetings (Teams UI) | |
 | ☐ |**Microsoft Teams Mode 1 behavior**| - Teams tile on Welcome/Start screen <br> - Can join scheduled Skype for Business meetings (Skype UI) <br> - Can join scheduled Teams meetings (Teams UI) | |
-| ☐ |**Microsoft Teams Mode 2 behavior**| - Teams tile on welcome / start screen <br> - Can join scheduled Teams meetings <br> - Fail to join Skype for Business meetings | |
+| ☐ |**Microsoft Teams Mode 2 behavior**| - Teams tile on Welcome / Start screen <br> - Can join scheduled Teams meetings <br> - Fail to join Skype for Business meetings | |
