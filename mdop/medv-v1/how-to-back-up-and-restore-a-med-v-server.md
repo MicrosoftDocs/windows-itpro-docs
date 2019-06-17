@@ -26,7 +26,7 @@ XML files located on the server can be backed up and then restored in case of lo
     **Note**  
     If the configuration has been changed from the default, the files might be stored in a different location.
 
-     
+     
 
     -   ClientPolicy.xml
 
@@ -41,7 +41,7 @@ XML files located on the server can be backed up and then restored in case of lo
     **Note**  
     The ServerSettings.xml file can be backed up as well. However, if a specific configuration has been changed (for example, on the original server, the MED-V VMS directory is located in "*C:\\Vms*" and such a directory does not exist on the new server), it can cause an error.
 
-     
+     
 
 **To restore a MED-V server**
 
@@ -53,9 +53,9 @@ XML files located on the server can be backed up and then restored in case of lo
 
 3.  Restart the MED-V service.
 
- 
+ 
 
- 
+ 
 
 
 

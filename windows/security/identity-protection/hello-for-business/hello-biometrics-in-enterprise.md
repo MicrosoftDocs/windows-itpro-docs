@@ -30,7 +30,7 @@ Windows Hello is the biometric authentication feature that helps strengthen auth
 
 Because we realize your employees are going to want to use this new technology in your enterprise, we’ve been actively working with the device manufacturers to create strict design and performance recommendations that help to ensure that you can more confidently introduce Windows Hello biometrics into your organization.
 
-##How does Windows Hello work?
+## How does Windows Hello work?
 Windows Hello lets your employees use fingerprint or facial recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Windows Hello credentials.
 
 The Windows Hello authenticator works to authenticate and allow employees onto your enterprise network. Authentication doesn’t roam among devices, isn’t shared with a server, and can’t easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
@@ -88,9 +88,9 @@ To allow facial recognition, you must have devices with integrated special infra
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 
- 
+ 
 
- 
+ 
 
 
 

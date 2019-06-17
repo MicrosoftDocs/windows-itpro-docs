@@ -3,12 +3,12 @@ title: Conflicts and Precedence (Windows 10)
 description: Conflicts and Precedence
 ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -174,40 +174,40 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tbody>
 <tr class="odd">
 <td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\* [*]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\* [*.txt]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:* [</em>.txt]&lt;/pattern&gt;</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders in Dir1 (including all .txt files in C:).</p></td>
 <td align="left"><p>The &lt;exclude&gt; rule does not affect the migration because the &lt;include&gt; rule is more specific.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\* [*]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2\* [*.txt]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1\Dir2 and its subfolders.</p></td>
 <td align="left"><p>Both rules are processed as intended.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\* [*]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\ * [*.txt]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\ * [</em>.txt]&lt;/pattern&gt;</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1 and its subfolders.</p></td>
 <td align="left"><p>Both rules are processed as intended.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2\* [*.txt]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2\* [*.txt]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [<em>.txt]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
 </ul></td>
 <td align="left"><p>Nothing will be migrated.</p></td>
 <td align="left"><p>The rules are equally specific, so the &lt;exclude&gt; rule takes precedence over the &lt;include&gt; rule.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><ul>
-<li><p>Include rule: C:\Dir1\* [*.txt]</p></li>
-<li><p>Exclude rule: C:\Dir1\Dir2\* [*]</p></li>
+<li><p>Include rule: C:\Dir1* [<em>.txt]</p></li>
+<li><p>Exclude rule: C:\Dir1\Dir2* [</em>]</p></li>
 </ul></td>
 <td align="left"><p>Migrates the .txt files in Dir1 and the .txt files from subfolders other than Dir2.</p>
 <p>No files are migrated from Dir2 or its subfolders.</p></td>
@@ -215,8 +215,8 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tr>
 <tr class="even">
 <td align="left"><ul>
-<li><p>Include rule: C:\Dir1\Dir2\* [*]</p></li>
-<li><p>Exclude rule: C:\Dir1\* [*.txt]</p></li>
+<li><p>Include rule: C:\Dir1\Dir2* [<em>]</p></li>
+<li><p>Exclude rule: C:\Dir1* [</em>.txt]</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders of Dir2, except the .txt files from Dir1 and any subfolders of Dir1 (including Dir2).</p></td>
 <td align="left"><p>Both rules are processed as intended.</p></td>
@@ -224,7 +224,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -243,13 +243,13 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tr class="odd">
 <td align="left"><p>Component 1:</p>
 <ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\* [*]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2\* [*.txt]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
 </ul>
 <p>Component 2:</p>
 <ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2\* [*.txt]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\* [*]&lt;/pattern&gt;</p></li>
+<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [<em>.txt]&lt;/pattern&gt;</p></li>
+<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [</em>]&lt;/pattern&gt;</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders of C:\Dir1\ (including C:\Dir1\Dir2).</p></td>
 <td align="left"><p>Rules that are in different components do not affect each other, except for the &lt;unconditionalExclude&gt; rule. Therefore, in this example, although some .txt files were excluded when Component 1 was processed, they were included when Component 2 was processed.</p></td>
@@ -257,11 +257,11 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tr class="even">
 <td align="left"><p>Component 1:</p>
 <ul>
-<li><p>Include rule: C:\Dir1\Dir2\* [*]</p></li>
+<li><p>Include rule: C:\Dir1\Dir2* [<em>]</p></li>
 </ul>
 <p>Component 2:</p>
 <ul>
-<li><p>Exclude rule: C:\Dir1\* [*.txt]</p></li>
+<li><p>Exclude rule: C:\Dir1* [</em>.txt]</p></li>
 </ul></td>
 <td align="left"><p>Migrates all files and subfolders from Dir2 except the .txt files in C:\Dir1 and its subfolders.</p></td>
 <td align="left"><p>Both rules are processed as intended.</p></td>
@@ -269,11 +269,11 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tr class="odd">
 <td align="left"><p>Component 1:</p>
 <ul>
-<li><p>Exclude rule: C:\Dir1\Dir2\* [*]</p></li>
+<li><p>Exclude rule: C:\Dir1\Dir2* [<em>]</p></li>
 </ul>
 <p>Component 2:</p>
 <ul>
-<li><p>Include rule: C:\Dir1\* [*.txt]</p></li>
+<li><p>Include rule: C:\Dir1* [</em>.txt]</p></li>
 </ul></td>
 <td align="left"><p>Migrates all .txt files in Dir1 and any subfolders.</p></td>
 <td align="left"><p>Component 1 does not contain an &lt;include&gt; rule, so the &lt;exclude&gt; rule is not processed.</p></td>
@@ -281,7 +281,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="regex"></a>Including and excluding registry objects
 
@@ -301,7 +301,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tbody>
 <tr class="odd">
 <td align="left"><ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor\* [*]</p></li>
+<li><p>Include rule: HKLM\Software\Microsoft\Command Processor* [<em>]</p></li>
 <li><p>Exclude Rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
 </ul></td>
 <td align="left"><p>Migrates all keys in HKLM\Software\Microsoft\Command Processor except DefaultColor.</p></td>
@@ -310,7 +310,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <tr class="even">
 <td align="left"><ul>
 <li><p>Include rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-<li><p>Exclude Rule: HKLM\Software\Microsoft\Command Processor\* [*]</p></li>
+<li><p>Exclude Rule: HKLM\Software\Microsoft\Command Processor* [</em>]</p></li>
 </ul></td>
 <td align="left"><p>Migrates only DefaultColor in HKLM\Software\Microsoft\Command Processor.</p></td>
 <td align="left"><p>DefaultColor is migrated because the &lt;include&gt; rule is more specific than the &lt;exclude&gt; rule.</p></td>
@@ -326,7 +326,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -346,11 +346,11 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 <td align="left"><p>Component 1:</p>
 <ul>
 <li><p>Include rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-<li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor\* [*]</p></li>
+<li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor* [<em>]</p></li>
 </ul>
 <p>Component 2:</p>
 <ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor\* [*]</p></li>
+<li><p>Include rule: HKLM\Software\Microsoft\Command Processor* [</em>]</p></li>
 <li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
 </ul></td>
 <td align="left"><p>Migrates all the keys/values under HKLM\Software\Microsoft\Command Processor.</p></td>
@@ -359,7 +359,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+ 
 
 ## File collisions
 
@@ -415,7 +415,7 @@ For this example, the following table describes the resulting behavior if you ad
 <tr class="odd">
 <td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; 
    &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data\* [*]&lt;/pattern&gt; 
+      &lt;pattern type=&quot;File&quot;&gt;c:\data* [<em>]&lt;/pattern&gt; 
    &lt;/objectSet&gt; 
 &lt;/merge&gt;</code></pre></td>
 <td align="left"><p>During ScanState, all the files will be added to the store.</p>
@@ -424,7 +424,7 @@ For this example, the following table describes the resulting behavior if you ad
 <tr class="even">
 <td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
    &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data\* [*]&lt;/pattern&gt; 
+      &lt;pattern type=&quot;File&quot;&gt;c:\data* [</em>]&lt;/pattern&gt; 
    &lt;/objectSet&gt; 
 &lt;/merge&gt; </code></pre></td>
 <td align="left"><p>During ScanState, all the files will be added to the store.</p>
@@ -447,16 +447,16 @@ For this example, the following table describes the resulting behavior if you ad
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

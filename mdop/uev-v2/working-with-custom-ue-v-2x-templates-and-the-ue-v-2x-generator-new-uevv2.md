@@ -64,7 +64,7 @@ Use the UE-V Generator to edit settings location templates. When the revised set
 **Note**  
 If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is automatically converted to a UE-V 2 template. UE-V 1.0 Agents can no longer use the edited template.
 
- 
+ 
 
 **To edit a UE-V settings location template with the UE-V Generator**
 
@@ -107,7 +107,7 @@ If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is a
     **Note**  
     A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
 
-     
+     
 
 2.  Open the settings location template file with an XML editor.
 
@@ -165,9 +165,9 @@ Before you deploy any settings location template that you have downloaded from t
 
 [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

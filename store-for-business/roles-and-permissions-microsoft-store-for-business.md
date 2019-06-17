@@ -32,7 +32,7 @@ This table lists the global user accounts and the permissions they have in Micro
 | Purchase apps                   |  X                    | X                     |
 | Distribute apps                |  X                    | X                     |
 | Purchase subscription-based software  |  X             | X                     |
- 
+ 
 
 **Global Administrator** - IT Pros with this account have full access to Microsoft Store. They can do everything allowed in the Microsoft Store Admin role, plus they can sign up for Microsoft Store.
 

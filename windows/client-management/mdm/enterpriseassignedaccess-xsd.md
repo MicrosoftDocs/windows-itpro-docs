@@ -4,11 +4,11 @@ description: EnterpriseAssignedAccess XSD
 ms.assetid: BB3B633E-E361-4B95-9D4A-CE6E08D67ADA
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

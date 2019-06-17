@@ -39,6 +39,6 @@ BitLocker on operating system drives in its basic configuration (with a TPM but 
 
 Most operating systems use a shared memory space and rely on the operating system to manage physical memory. A TPM is a hardware component that uses its own internal firmware and logic circuits for processing instructions, thus shielding it from external software vulnerabilities. Attacking the TPM requires physical access to the computer. Additionally, the tools and skills necessary to attack hardware are often more expensive, and usually are not as available as the ones used to attack software. And because each TPM is unique to the computer that contains it, attacking multiple TPM computers would be difficult and time-consuming.
 
-> [!NOTE]  
+> [!NOTE]
 > Configuring BitLocker with an additional factor of authentication provides even more protection against TPM hardware attacks.
- 
+ 

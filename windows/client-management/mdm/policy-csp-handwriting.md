@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Handwriting
 description: Policy CSP - Handwriting
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 08/09/2018
 ms.reviewer: 
 manager: dansimp

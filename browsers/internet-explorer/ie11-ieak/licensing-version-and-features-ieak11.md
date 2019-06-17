@@ -17,44 +17,45 @@ ms.date: 10/23/2018
 # Determine the licensing version and features to use in IEAK 11
 In addition to the Software License Terms for the Internet Explorer Administration Kit 11 (IEAK 11, referred to as the "software"), these Guidelines further define how you may and may not use the software to create versions of Internet Explorer 11 with optional customizations (referred to as the "customized browser") for internal use and distribution in accordance with the IEAK 11 Software License Terms. IEAK 11 is for testing purposes only and is not intended to be used in a production environment.
 
-During installation, you must pick a version of IEAK 11, either **External** or **Internal**, based on your license agreement. Your version selection decides the options you can chose, the steps you follow to deploy your Internet Explorer 11 package, and how you manage the browser after deployment.
+During installation, you must pick a version of IEAK 11, either **External** or **Internal**, based on your license agreement. Your version selection decides the options you can chose, the steps you follow to deploy your Internet Explorer 11 package, and how you manage the browser after deployment.
 
 -   **External Distribution as an Internet Service Provider (ISP), Internet Content Provider (ICP), or Developer.** If you are an ISP or an ICP, your license agreement also states that you must show the Internet Explorer logo on your packaging and promotional goods, as well as on your website.
     >[!IMPORTANT]
-    >Original Equipment Manufacturers (OEMs) that install IEAK 11 as part of a Windows product, under an OEM license agreement with Microsoft, must use their appropriate Windows OEM Preinstallation document (OPD) as the guide for allowable customizations.
+    >Original Equipment Manufacturers (OEMs) that install IEAK 11 as part of a Windows product, under an OEM license agreement with Microsoft, must use their appropriate Windows OEM Preinstallation document (OPD) as the guide for allowable customizations.
 
 -   **Internal Distribution via a Corporate Intranet.** This version is for network admins that plan to directly deploy IE11 into a corporate environment.
 
 ## Available features by version
 
-| Feature | Internal | External |
-| ---------------------------------------- | :---------------------------------------------: | :----------------------------------------------: |
-|Welcome screen                            | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|File locations                            | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Platform selection                        | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Language selection                        | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Package type selection                    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Feature selection                         | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Automatic Version Synchronization (AVS)   | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Custom components                         | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Internal install                          | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|User experience                           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|Browser user interface                    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Search providers                          | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Important URLs – Home page and support    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Accelerators                              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Favorites, Favorites bar, and feeds       | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Browsing options                          | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|First Run wizard and Welcome page options | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Connection manager                        | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Connection settings                       | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Automatic configuration                   | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|Proxy settings                            | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Security and privacy settings             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|Add a root certificate                    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|Programs                                  | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
-|Additional settings                       | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
-|Wizard complete                           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
+|                  Feature                  |                                     Internal                                     |                                       External                                       |
+|-------------------------------------------|:--------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+|              Welcome screen               | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|              File locations               | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|            Platform selection             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|            Language selection             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|          Package type selection           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|             Feature selection             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|  Automatic Version Synchronization (AVS)  | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|             Custom components             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|             Internal install              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|              User experience              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|          Browser user interface           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|             Search providers              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|  Important URLs – Home page and support   | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|               Accelerators                | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|    Favorites, Favorites bar, and feeds    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|             Browsing options              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+| First Run wizard and Welcome page options | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|            Connection manager             | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|            Connection settings            | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|          Automatic configuration          | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|              Proxy settings               | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|       Security and privacy settings       | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|          Add a root certificate           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|                 Programs                  | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+|            Additional settings            | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) | ![Not available](https://docs.microsoft.com/microsoft-edge/deploy/images/148766.png) |
+|              Wizard complete              | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png) |   ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)   |
+
 ---
 
 

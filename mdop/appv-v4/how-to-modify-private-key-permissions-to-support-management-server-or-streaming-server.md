@@ -26,7 +26,7 @@ In Windows Server 2008, the process of changing the ACLs on the private key is 
 **Note**  
 The default security context is Network Service; however, a domain account can be used instead.
 
- 
+ 
 
 **To manage private keys in Windows Server 2003**
 
@@ -57,9 +57,9 @@ The default security context is Network Service; however, a domain account can b
 
 [Configuring Certificates to Support Secure Streaming](configuring-certificates-to-support-secure-streaming.md)
 
- 
+ 
 
- 
+ 
 
 
 

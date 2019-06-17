@@ -12,7 +12,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 

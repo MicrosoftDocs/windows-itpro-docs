@@ -34,9 +34,9 @@ Use the topics in this section to learn about how to auto detect your settings, 
 |[Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) |Guidance about how to add, update and lock your auto configuration settings. |
 |[Auto proxy configuration settings for Internet Explorer 11](auto-proxy-configuration-settings-for-ie11.md) |Guidance about how to add, update, and lock your auto-proxy settings. | 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,11 +20,11 @@ Info about whether to hide the globally unique identifier (GUID) for each of you
 |Name                  |Value                                                                |Description                                    |
 |------|-------------------------------------------------------------------------------------|-----------------------------------------------|
 |GUID  |<ul><li>**0.** Component isn't hidden.</li><li>**1.** Component is hidden.</li></ul> |Determines whether this is a hidden component. | 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

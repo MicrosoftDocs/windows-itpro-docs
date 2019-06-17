@@ -27,7 +27,7 @@ ms.date: 06/16/2016
 **Note**  
 MED-V cannot be started from an elevated command prompt.
 
- 
+ 
 
 **To exit the MED-V client**
 
@@ -37,9 +37,9 @@ MED-V cannot be started from an elevated command prompt.
 
     The MED-V client exits.
 
- 
+ 
 
- 
+ 
 
 
 

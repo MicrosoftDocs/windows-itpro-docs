@@ -26,7 +26,7 @@ Use the App-V 5.0 ADMX template to configure App-V 5.0 client settings using the
     **Note**  
     Use the following link to download the App-V 5.0 **ADMX Templates**: <https://go.microsoft.com/fwlink/p/?LinkId=393941>.
 
-     
+     
 
 2.  On the computer where you manage group Policy, typically the domain controller, copy the template **.admx** file to the following directory: **&lt;Installation Drive&gt; \\ Windows \\ PolicyDefinitions**.
 
@@ -43,9 +43,9 @@ Use the App-V 5.0 ADMX template to configure App-V 5.0 client settings using the
 
 [About Client Configuration Settings](about-client-configuration-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

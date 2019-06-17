@@ -20,7 +20,7 @@ ms.date: 01/04/2019
 # SMBv1 Microsoft network server: Digitally sign communications (if client agrees)
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
 
@@ -70,15 +70,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-| Server type or GPO Default value |
-| - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy| Enabled| 
-| Stand-Alone Server Default Settings | Not defined| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings|Not defined| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+
+|      Server type or GPO Default value      |
+|--------------------------------------------|
+|           Default Domain Policy            |
+|      Default Domain Controller Policy      |
+|    Stand-Alone Server Default Settings     |
+|       DC Effective Default Settings        |
+|  Member Server Effective Default Settings  |
+| Client Computer Effective Default Settings |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -108,8 +109,8 @@ Configure the settings as follows:
 
 In highly secure environments we recommend that you configure all of these settings to Enabled. However, that configuration may cause slower performance on client devices and prevent communications with earlier SMB applications and operating systems.
 
->**Note:**  An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
- 
+>**Note:**  An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
+
 ### Potential impact
 
 SMB file and print-sharing protocol support mutual authentication. This prevents session hijacking attacks and supports message authentication to prevent man-in-the-middle attacks. SMB signing provides this authentication by placing a digital signature into each SMB, which is then verified by the client and the server.

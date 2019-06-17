@@ -18,7 +18,7 @@ You must continue using IE11 if web apps use any of the following:
 
 * x-ua-compatible headers
 
-* &lt;meta&gt; tags
+* &lt;meta&gt; tags with an http-equivalent value of X-UA-Compatible header
 
 * Enterprise mode or compatibility view to addressing compatibility issues
 

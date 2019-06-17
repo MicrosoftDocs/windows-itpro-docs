@@ -50,12 +50,12 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 
 **To invite a developer to become an LOB publisher**
 
-1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
-2.  Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
-3.  On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
+2. Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
+3. On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
  
- >[!Note]
- > This needs to be the email address listed in contact info for the developer account.
+   >[!Note]
+   > This needs to be the email address listed in contact info for the developer account.
   
 ## <a href="" id="submit-lob-app"></a>Submit apps (LOB publisher)
 

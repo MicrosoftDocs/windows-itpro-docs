@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Turned off/not syncing | |
-|Enabled |1 |1 |Turned on/syncing  |![Most restricted value](../images/check-gn.png) |
+|                Group Policy                 | MDM | Registry |      Description       |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Turned off/not syncing |                                                  |
+|                   Enabled                   |  1  |    1     |   Turned on/syncing    | ![Most restricted value](/images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings

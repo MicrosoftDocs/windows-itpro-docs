@@ -78,7 +78,9 @@ Install Surface Hub Recovery Tool on the host PC.
 5. When the download is complete, the tool instructs you to connect an SSD drive. If the tool is unable to locate the attached drive, there is a good chance that the cable being used is not reporting the name of the SSD to Windows.  The imaging tool must find the name of the drive as "LITEON L CH-128V2S USB Device" before it can continue.  For more information on how to remove the existing drive from your Surface Hub, see [Surface Hub SSD replacement](surface-hub-ssd-replacement.md).
 
 
-    ![Connect SSD](images/shrt-drive.png)
+~~~
+![Connect SSD](images/shrt-drive.png)
+~~~
 
 6. When the drive is recognized, click **Start** to begin the re-imaging process. On the warning that all data on the drive will be erased, click **OK**.
 
@@ -94,7 +96,7 @@ Install Surface Hub Recovery Tool on the host PC.
 
 Issue | Notes
 --- | ---
-The tool fails to image the SSD	| Make sure you are using a factory-supplied SSD and one of the tested cables.
+The tool fails to image the SSD | Make sure you are using a factory-supplied SSD and one of the tested cables.
 The reimaging process appears halted/frozen | It is safe to close and restart the Surface Hub Recovery Tool with no ill effect to the SSD.
 The drive isn’t recognized by the tool | Verify that the Surface Hub SSD is enumerated as a Lite-On drive, "LITEON L CH-128V2S USB Device".  If the drive is recognized as another named device, your current cable isn’t compatible. Try another cable or one of the tested cable listed above.
 Error: -2147024809 | Open Disk Manager and remove the partitions on the Surface Hub drive.  Disconnect and reconnect the drive to the host machine. Restart the imaging tool again.

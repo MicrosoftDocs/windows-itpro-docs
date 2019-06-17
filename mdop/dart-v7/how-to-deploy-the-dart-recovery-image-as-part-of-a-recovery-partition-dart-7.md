@@ -34,7 +34,7 @@ After you have finished running the DaRT Recovery Image Wizard and created the r
         **Note**  
         If you burned a CD or DVD of the recovery image, you can open the files on the CD or DVD and copy the boot.wim file from the \\sources folder. This lets you skip the need to mount the image.
 
-         
+         
 
 3.  Use the boot.wim file to create a bootable recovery partition by using your company’s standard method for creating a custom Windows RE image.
 
@@ -51,9 +51,9 @@ For more information about how to deploy a recovery solution to reinstall the fa
 
 [Deploying the DaRT 7.0 Recovery Image](deploying-the-dart-70-recovery-image-dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

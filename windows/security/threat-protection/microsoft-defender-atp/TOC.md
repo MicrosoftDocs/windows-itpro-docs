@@ -39,25 +39,23 @@
 ##### [Investigate a domain](investigate-domain.md)
 ##### [Investigate a user account](investigate-user.md)
  
-#### Machines list
-##### [View and organize the Machines list](machines-view-overview.md)
-##### [Manage machine group and tags](machine-tags.md)
-##### [Alerts related to this machine](investigate-machines.md#alerts-related-to-this-machine)
-##### [Machine timeline](investigate-machines.md#machine-timeline)
-###### [Search for specific events](investigate-machines.md#search-for-specific-events)
-###### [Filter events from a specific date](investigate-machines.md#filter-events-from-a-specific-date)
-###### [Export machine timeline events](investigate-machines.md#export-machine-timeline-events)
-###### [Navigate between pages](investigate-machines.md#navigate-between-pages)
+#### [Machines list](machines-view-overview.md)
+##### [Investigate machines](investigate-machines.md#machine-timeline)
+###### [Machine details](investigate-machines.md#machine-details)
+###### [Response actions](investigate-machines.md#response-actions)
+###### [Cards](investigate-machines.md#cards)
+###### [Tabs](investigate-machines.md#tabs)
 
 
 #### [Take response actions](response-actions.md)
 ##### [Take response actions on a machine](respond-machine-alerts.md)
-###### [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
-###### [Run antivirus scan](respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
+###### [Manage tags](respond-machine-alerts.md#manage-tags)
+###### [Initiate Automated Investigation](respond-machine-alerts.md#initiate-automated-investigation)
+###### [Initiate Live Response Session](respond-machine-alerts.md#initiate-live-response-session)
+###### [Collect investigation package from machines](respond-machine-alerts.md#collect-investigation-package-from-machines)
+###### [Run Windows Defender Antivirus scan on machines](respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
-###### [Remove app restriction](respond-machine-alerts.md#remove-app-restriction)
 ###### [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network)
-###### [Release machine from isolation](respond-machine-alerts.md#release-machine-from-isolation)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file](respond-file-alerts.md)
@@ -70,6 +68,7 @@
 ###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
+
 
 ##### [Investigate entities using Live response](live-response.md)
 ###### [Live response command examples](live-response-command-examples.md)
@@ -245,6 +244,7 @@
   
 
 #### [Microsoft Defender ATP API](use-apis.md)
+##### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)

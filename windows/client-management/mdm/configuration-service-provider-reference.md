@@ -4,11 +4,11 @@ description: A configuration service provider (CSP) is an interface to read, set
 ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/13/2019
 ---
 
@@ -2712,7 +2712,7 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
- 
+ 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
 -   [AccountManagement CSP](accountmanagement-csp.md)
@@ -2769,7 +2769,7 @@ The following list shows the configuration service providers supported in Window
 
 <hr>
 
- Footnotes:
+ Footnotes:
 - 1 - Added in Windows 10, version 1607.
 - 2 - Added in Windows 10, version 1703.
 - 3 - Added in Windows 10, version 1709.

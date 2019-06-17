@@ -45,12 +45,12 @@ Use one of the following methods to publish packages to App-V client computers w
 </tr>
 <tr class="odd">
 <td align="left"><p>PowerShell</p></td>
-<td align="left"><p>Use PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V 5.1, see [Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md).</p></td>
+<td align="left"><p>Use PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V 5.1, see <a href="administering-app-v-51-by-using-powershell.md" data-raw-source="[Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md)">Administering App-V 5.1 by Using PowerShell</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To deploy App-V 5.1 packages by using an ESD**
 
@@ -69,9 +69,9 @@ Use one of the following methods to publish packages to App-V client computers w
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

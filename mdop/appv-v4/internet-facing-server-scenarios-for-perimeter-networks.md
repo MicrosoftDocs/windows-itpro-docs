@@ -42,7 +42,7 @@ Place the following servers in the perimeter network:
 **Note**  
 It is a best practice to place the Management Server and IIS server on separate computers.
 
- 
+ 
 
 Place the following servers in the internal network:
 
@@ -80,7 +80,7 @@ The following tables list the traffic requirements for communication from the In
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -117,11 +117,11 @@ The following tables list the traffic requirements for communication from the In
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

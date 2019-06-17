@@ -43,11 +43,11 @@ Describes how to delete a MED-V image.
 **Note**  
 After the MED-V image is configured, the computer should not be part of a domain because the join domain procedure should be performed on the client after the deployment, as part of the MED-V workspace setup.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

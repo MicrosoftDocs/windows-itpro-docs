@@ -22,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Application Virtualization Management System. These Release Notes contain information that you need to successfully install the Application Virtualization Management System. This document contains information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other Application Virtualization Management System documentation, the latest change should be considered authoritative. These Release Notes supersede the content included with this product.
 
- 
+ 
 
 For updated information about known issues, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=122918>.
 
@@ -36,7 +36,7 @@ These Release Notes have been updated to reflect the changes introduced with Mic
     **Important**  
     Running App-V 4.5 CU1 on any version of Windows 7 or Windows Server 2008 R2 in a live operating environment is not supported.
 
-     
+     
 
 -   Improved support for sequencing the .NET Framework: App-V 4.5 CU1 addresses previous issues with sequencing the .NET Framework 3.5 and earlier on Windows XP (SP2 or later). For more information about the new capabilities, see the TechNet article at <https://go.microsoft.com/fwlink/?LinkId=123412>.
 
@@ -74,16 +74,16 @@ When this has been completed, install the App-V 4.5 CU1 client by using setup.m
 
 When installing Microsoft Application Error Reporting, use the following command if you are installing or upgrading to the App-V 4.5 CU1 Desktop client:
 
-    msiexec /i dw20shared.msi APPGUID={FE495DBC-6D42-4698-B61F-86E655E0796D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
+    msiexec /i dw20shared.msi APPGUID={FE495DBC-6D42-4698-B61F-86E655E0796D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
 
 Alternatively, if you are installing or upgrading to the App-V 4.5 CU1 Terminal Services client, use the following command:
 
-    msiexec /i dw20shared.msi APPGUID={8A97C241-D92A-47DC-B360-E716C1AAA929} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
+    msiexec /i dw20shared.msi APPGUID={8A97C241-D92A-47DC-B360-E716C1AAA929} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus
 
 **Note**  
 The APPGUID parameter references the product code of the App-V client that you install or upgrade to. The product code is unique for each setup.msi. You can use the Orca database editor or similar tool to examine Windows Installer files and determine the product code. This step is required for all installs or upgrades to App-V 4.5 CU1.
 
- 
+ 
 
 ### <a href="" id="some-applications-might-fail-to-install-during-the-monitoring-phase-when-sequencing-on-windows-7-beta--"></a>Some applications might fail to install during the monitoring phase when sequencing on Windows 7 Beta
 
@@ -91,12 +91,12 @@ When sequencing on Windows 7 Beta or on a computer with Windows Installer 5.0,
 
 WORKAROUND   You must manually grant the Everyone group Full Control permissions to the following registry key:
 
-    HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\SystemGuard
+    HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\SystemGuard
 
 **Important**  
 You must use the **Advanced** button to set the “Include inheritable permissions from this object’s parent” option.
 
- 
+ 
 
 ### Unable to save packages when sequencing on Windows 7 Beta
 
@@ -235,7 +235,7 @@ WORKAROUND   After installing the application on the sequencing computer, whi
 **Important**  
 This issue has been fixed in Microsoft Application Virtualization 4.5 Cumulative Update 1.
 
- 
+ 
 
 ### When the server installer is run in silent mode, it does not correctly check for MSXML6
 
@@ -262,7 +262,7 @@ When using Symantec Endpoint Protection with the Application and Device Control 
 **Important**  
 This issue has been fixed in Microsoft Application Virtualization 4.5 Cumulative Update 1.
 
- 
+ 
 
 ## Release Notes Copyright Information
 
@@ -277,9 +277,9 @@ Microsoft, MS-DOS, Windows, Windows Server, Windows Vista, Active Directory, an
 
 The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

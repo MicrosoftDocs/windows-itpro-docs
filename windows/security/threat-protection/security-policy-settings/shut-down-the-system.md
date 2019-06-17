@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators| 
 | Member Server Effective Default Settings | Administrators<br/>Backup Operators| 
 | Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

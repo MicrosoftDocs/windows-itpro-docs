@@ -4,11 +4,11 @@ description: ICSPNode SetValue
 ms.assetid: b218636d-fe8b-4a0f-b4e8-a621f65619d3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -25,7 +25,7 @@ HRESULT SetValue([in] VARIANT varValue);
 ## Parameters
 
 <a href="" id="varvalue"></a>*varValue*  
-<p style="margin-left: 25px">Value to set. To clear a leaf node’s value, set *varValue*’s type to `VT_NULL`.</p>
+<p style="margin-left: 25px">Value to set. To clear a leaf node’s value, set <em>varValue</em>’s type to <code>VT_NULL</code>.</p>
 
 ## Return Value
 
@@ -43,7 +43,7 @@ For externally–transactioned nodes, no additional methods must be implemented 
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

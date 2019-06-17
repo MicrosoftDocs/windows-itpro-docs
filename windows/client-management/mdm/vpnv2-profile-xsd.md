@@ -4,11 +4,11 @@ description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10
 ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 02/05/2018
 ---
 

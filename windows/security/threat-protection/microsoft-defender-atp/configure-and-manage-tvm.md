@@ -26,12 +26,12 @@ ms.topic: article
 This section guides you through the steps you need to take to configure Threat & Vulnerability Management's integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) for a seamless collaboration of issue remediation.
 
 ### Before you begin
->[!IMPORTANT] 
-Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
+> [!IMPORTANT]
+> Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM).   
 
->[!WARNING] 
+>[!WARNING]
 >Only Intune and SCCM enrolled devices are supported in this scenario.</br>
 >Use any of the following options to enroll devices in Intune:
 >- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)

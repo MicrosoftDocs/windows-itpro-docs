@@ -22,7 +22,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.0 helps you troubleshoot and
 **Note**  
 DaRT does not support the recovery of dynamic disks.
 
- 
+ 
 
 DaRT also provides tools to help you fix a problem as soon as you determine the cause. For example, you can use the tools in DaRT to disable a faulty device driver, remove hotfixes, restore deleted files, and scan the computer for malware even when you cannot or should not start the installed Windows operating system.
 
@@ -73,9 +73,9 @@ This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). MDO
 
 [Release Notes for DaRT 8.0](release-notes-for-dart-80--dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 
