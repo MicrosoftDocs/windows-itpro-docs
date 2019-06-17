@@ -19,11 +19,11 @@ Designed for team collaboration, Surface Hub 2S can transform the way you work  
 
 ## Room considerations
 
-Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, beaming microphones, crystal clear speakers, and a brilliant 4K+ resolution display. Optimizing the user experience in larger spaces with more people further away from the display may require peripherals such as an additional camera, microphone, or room systems solution such as Microsoft Teams Rooms. Use the following proximity table to determine if you need to plan for additional peripherals.
+Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, beaming microphones, crystal clear speakers, and a brilliant 4K+ resolution display. Optimizing the user experience in larger spaces with more people further away from the display may require peripherals such as an extra camera, microphone, or room systems solution such as Microsoft Teams Rooms. Use the following proximity table to determine if you need to plan for additional peripherals.
  
 |**Proximity**|**Additional requirements**|
 |:--------|:------|
-| 1-2 meters | None |
+| 1–2 meters | None |
 | Up to 2.3 meters | None |
 | Up to 4 meters | Peripherals optional|
 | More than 4 meters | Peripherals recommended |
@@ -45,4 +45,4 @@ For detailed room planning guidance and more information about Microsoft Teams R
 
 ## Managing Surface Hub 2S location
 
-If you plan to use Surface Hub 2S on a mobile stand, you may wish to explore third party solutions that enable location services. For example, active RFID systems can provide real-time tracking throughout complex office or industrial spaces. For more information, consult your A/V provider or other third-party expertise for guidance.
+If you plan to use Surface Hub 2S on a mobile stand, you may wish to explore third-party solutions that enable location services. For example, active RFID systems can provide real-time tracking throughout complex office or industrial spaces. For more information, see your A/V provider or other third-party expertise for guidance.
