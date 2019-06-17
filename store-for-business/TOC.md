@@ -31,7 +31,7 @@
 ### [Understand billing profiles](billing-profile.md)
 ## [Manage settings in the Microsoft Store for Business and Education](manage-settings-microsoft-store-for-business.md)
 ### [Update account settings](update-microsoft-store-for-business-account-settings.md)
-### [Manage user accounts ](manage-users-and-groups-microsoft-store-for-business.md)
+### [Manage user accounts](manage-users-and-groups-microsoft-store-for-business.md)
 ## [Device Guard signing portal](device-guard-signing-portal.md)
 ### [Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md)
 ### [Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md)
