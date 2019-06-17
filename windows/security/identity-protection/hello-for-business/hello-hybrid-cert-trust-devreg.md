@@ -129,7 +129,6 @@ If your AD FS farm is not already configured for Device Authentication (you can 
    `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
 3. On the pop-up window click **Yes**.
 
-
 > [!NOTE]
 > If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
 
