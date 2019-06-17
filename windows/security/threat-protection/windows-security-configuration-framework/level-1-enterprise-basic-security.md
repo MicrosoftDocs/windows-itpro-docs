@@ -27,9 +27,9 @@ Microsoft recommends the following configuration for level 1 devices.
 
 Devices targeting Level 1 should support the following hardware features:
 
-- [Trusted Platform Module (TPM) 2.0](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm)
-- [Bitlocker Drive Encryption](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker)
-- [UEFI Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot)
+- [Trusted Platform Module (TPM) 2.0](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-tpm)
+- [Bitlocker Drive Encryption](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-bitlocker)
+- [UEFI Secure Boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)
 - Drivers and Firmware Distributed through Windows Update
 
 ## Policies

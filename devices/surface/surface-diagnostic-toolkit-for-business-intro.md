@@ -31,7 +31,7 @@ Before you run the diagnostic tool, make sure you have the latest Windows update
 1. Download the [Surface Diagnostic Toolkit for Business](https://aka.ms/checkmysurface).
 2. Select Run and follow the on-screen instructions.
 
-The diagnosis and repair time averages 15 minutes but could take an hour or longer, depending on internet connection speed and the number of updates or repairs required. For more detailed information on Surface Diagnostic Toolkit for Business, refer to [Deploy Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/en-us/surface/surface-diagnostic-toolkit-business).
+The diagnosis and repair time averages 15 minutes but could take an hour or longer, depending on internet connection speed and the number of updates or repairs required. For more detailed information on Surface Diagnostic Toolkit for Business, refer to [Deploy Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business).
 
 # If you still need help
 
