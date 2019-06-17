@@ -318,8 +318,13 @@ Each rule name and its associated unique rule identifier are listed with a descr
 ## Release notes
 
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
-   - Formatted Json output for easy readability.
+   - All date and time outputs are updated to localized format per user request.
    - Added setup Operation and Phase information to /verbose log.
+   - Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+   - Performance improvement in searching setupact.logs to determine correct log to parse.
+   - Added SetupDiag version number to text report (xml and json always had it).
+   - Added "no match" reports for xml and json per user request.
+   - Formatted Json output for easy readability.
    - Performance improvements when searching for setup logs; this should be much faster now.
    - Added "no match" reports for xml and json per user request.
    - Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
