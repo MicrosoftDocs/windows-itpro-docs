@@ -299,28 +299,32 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
 53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
-54. New rule description.
-55. New rule description.
-56. New rule description.
+54.	PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
+    - These are for server upgrades only, will output the compliance block and remediation required.
+55.	PreReleaseWimMountDriverFound - 31EC76CC-27EC-4ADC-9869-66AABEDB56F0
+    - Captures failures due to having an unrecognized wimmount.sys driver registered on the system.
+56.	WinSetupBootFilterFailure - C073BFC8-5810-4E19-B53B-4280B79E096C
+    - Detects failures in the kernel mode file operations.
+57.	WimMountDriverIssue - 565B60DD-5403-4797-AE3E-BC5CB972FBAE
+    - Detects failures in WimMount.sys registration on the system.
+58.	DISMImageSessionFailure - 61B7886B-10CD-4C98-A299-B987CB24A11C
+    - Captures failure information when DISM fails to start an image session successfully.
+59.	FindEarlyDownlevelError - A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52
+    - Detects failures in down-level phase before setup platform is invoked.
+60.	FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
+    - Captures failure information when setup platform encounters a fatal error.
+
 
 ## Release notes
 
-06/19/2019 - SetupDiag v1.5.0.0 is released with 56 rules, as a standalone tool available from the Download Center.
-   - All date and time outputs are updated to localized format per user request.
-   - SetupPhase and SetupOperation information has been added to /verbose output.
-   - Added las Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
-   - There is a huge performance improvement in searching setupact.logs to determine correct log to parse.  What used to take a minute or more, now typically takes seconds. For example, a sample cab with 9 setupact.logs (three over 200mb each) that used to take nearly 2 minutes in version 1.4.1 now takes 12 seconds.
-   - Added SetupDiag version number to text report (xml and json always had it).
+06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
+   - Formatted Json output for easy readability.
+   - Added setup Operation and Phase information to /verbose log.
+   - Performance improvements when searching for setup logs; this should be much faster now.
    - Added "no match" reports for xml and json per user request.
-   - Added a rule for DISM Image Session Failures.
-   - Added a rule for failures revolving around WimMount registration (Driver location info in the registry).
-   - Added a rule for WinSetupBootFilter driver failures.
-   - Added a rule for early down-level failures that occur early in the down-level phase per user request.
-   - Overall rules processing performance is improved.
-   - Information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
-       - This enables Configuration Manager, Intune and Enterprise customers to query the registry on targeted systems to get SetupDiag failure information.
-       - This registry information will soon be integrated with the GetHelp app to help customer service and support agents more quickly help with update failures.
-       - The **/AddReg** command was added to toggle registry output. This setting is **off** by default for offline mode, and **on** by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
+   - Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
+   - Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
+       - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
        - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
        - This registry key also gets deleted when a new update instance is invoked.
        - For an example, see [Sample registry key](#sample-registry-key).
