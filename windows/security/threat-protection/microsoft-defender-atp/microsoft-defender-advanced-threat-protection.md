@@ -82,7 +82,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next generation protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)**<br>
+**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
