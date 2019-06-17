@@ -5,9 +5,9 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 10/17/2018
 ms.reviewer: 
 manager: laurawi

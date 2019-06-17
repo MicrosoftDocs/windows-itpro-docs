@@ -2,10 +2,10 @@
 title: Upgrade Readiness - Additional insights
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---

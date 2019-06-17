@@ -2,14 +2,14 @@
 title: Submit Windows 10 upgrade errors using Feedback Hub
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 description: Submit Windows 10 upgrade errors for diagnosis using feedback hub
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, feedback
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---

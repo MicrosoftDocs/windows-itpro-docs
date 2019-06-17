@@ -2,10 +2,10 @@
 title: Upgrade Readiness - Identify important apps (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 description: Describes how to prepare your environment so that you can use Upgrade Readiness to manage Windows upgrades.
 ms.prod: w10
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---

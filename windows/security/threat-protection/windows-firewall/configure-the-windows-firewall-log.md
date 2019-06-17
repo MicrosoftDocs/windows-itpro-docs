@@ -29,10 +29,6 @@ To configure Windows Defender Firewall with Advanced Security to log dropped pac
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
 
-In this topic:
-
-- [To configure the Windows Defender Firewall with Advanced Security log](#to-configure-the-windows-firewall-log)
-
 ## To configure the Windows Defender Firewall with Advanced Security log
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).

@@ -4,13 +4,13 @@ description: With Windows 10, you can quickly upgrade from one edition of Windo
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ---
 

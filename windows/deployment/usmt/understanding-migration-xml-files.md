@@ -4,11 +4,11 @@ description: Understanding Migration XML Files
 ms.assetid: d3d1fe89-085c-4da8-9657-fd54b8bfc4b7
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

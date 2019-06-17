@@ -4,11 +4,11 @@ description: Determine What to Migrate
 ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

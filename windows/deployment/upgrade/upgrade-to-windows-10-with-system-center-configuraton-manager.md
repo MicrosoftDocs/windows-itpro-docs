@@ -4,12 +4,12 @@ description: The simplest path to upgrade PCs currently running Windows 7, Wind
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ---
 

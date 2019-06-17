@@ -4,9 +4,9 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 10/13/2017
 ms.reviewer: 
 manager: laurawi

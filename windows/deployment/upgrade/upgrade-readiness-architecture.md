@@ -2,10 +2,10 @@
 title: Upgrade Readiness architecture (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 description: Describes Upgrade Readiness architecture.
 ms.prod: w10
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---

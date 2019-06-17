@@ -738,7 +738,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="CryptographyAllowFipsAlgorithmPolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="cryptographyallowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
     <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
@@ -3381,6 +3381,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-allowset24hourclock" id="timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
   </dd>
 </dl>
 

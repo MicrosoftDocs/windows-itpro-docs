@@ -2638,6 +2638,9 @@ GP Info:
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
 
+> [!Warning]  
+> Starting with Windows 10 version 1803, this policy is deprecated.
+
 <!--SupportedSKUs-->
 <table>
 <tr>

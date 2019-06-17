@@ -4,9 +4,9 @@ description: Learn about some common issues you might experience with Windows Up
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi

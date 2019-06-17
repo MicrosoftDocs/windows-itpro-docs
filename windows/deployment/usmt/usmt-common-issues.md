@@ -4,12 +4,12 @@ description: Common Issues
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 09/19/2017
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ---
 

@@ -142,7 +142,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ### Move the Recovery Database from Server A to Server B
 
-Use Windows Explorer to move the **MBAM Compliance Status Database Data.bak** file from Server A to Server B.
+Use Windows Explorer to move the **MBAM Recovery Database Data.bak** file from Server A to Server B.
 
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 

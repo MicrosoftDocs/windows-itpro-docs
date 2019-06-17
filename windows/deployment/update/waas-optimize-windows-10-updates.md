@@ -4,10 +4,9 @@ description: Two methods of peer-to-peer content distribution are available in W
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
-ms.date: 09/24/2018
+ms.author: greg-lindsay
 ms.reviewer: 
 manager: laurawi
 ms.topic: article

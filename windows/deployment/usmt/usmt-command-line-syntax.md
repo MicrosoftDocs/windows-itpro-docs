@@ -4,11 +4,11 @@ description: User State Migration Tool (USMT) Command-line Syntax
 ms.assetid: f9d205c9-e824-46c7-8d8b-d7e4b52fd514
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

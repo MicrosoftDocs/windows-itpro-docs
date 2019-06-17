@@ -4,14 +4,14 @@ description: The simplest path to upgrade PCs that are currently running Windows
 ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ---
 

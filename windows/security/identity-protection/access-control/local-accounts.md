@@ -117,6 +117,74 @@ When enabling the Guest account, only grant limited rights and permissions. For 
 
 In addition, the guest user in the Guest account should not be able to view the event logs. After the Guest account is enabled, it is a best practice to monitor the Guest account frequently to ensure that other users cannot use services and other resources, such as resources that were unintentionally left available by a previous user.
 
+## <a href="" id="sec-helpassistant"></a>HelpAssistant account (installed with a Remote Assistance session)
+
+
+The HelpAssistant account is a default local account that is enabled when a Remote Assistance session is run. This account is automatically disabled when no Remote Assistance requests are pending.
+
+HelpAssistant is the primary account that is used to establish a Remote Assistance session. The Remote Assistance session is used to connect to another computer running the Windows operating system, and it is initiated by invitation. For solicited remote assistance, a user sends an invitation from their computer, through e-mail or as a file, to a person who can provide assistance. After the user’s invitation for a Remote Assistance session is accepted, the default HelpAssistant account is automatically created to give the person who provides assistance limited access to the computer. The HelpAssistant account is managed by the Remote Desktop Help Session Manager service.
+
+**Security considerations**
+
+The SIDs that pertain to the default HelpAssistant account include:
+
+-   SID: S-1-5-&lt;domain&gt;-13, display name Terminal Server User. This group includes all users who sign in to a server with Remote Desktop Services enabled. Note that, in Windows Server 2008, Remote Desktop Services are called Terminal Services.
+
+-   SID: S-1-5-&lt;domain&gt;-14, display name Remote Interactive Logon. This group includes all users who connect to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
+
+For the Windows Server operating system, Remote Assistance is an optional component that is not installed by default. You must install Remote Assistance before it can be used.
+
+For details about the HelpAssistant account attributes, see the following table.
+
+**HelpAssistant account attributes**
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Well-Known SID/RID</p></td>
+<td><p>S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)</p></td>
+</tr>
+<tr class="even">
+<td><p>Type</p></td>
+<td><p>User</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default container</p></td>
+<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
+</tr>
+<tr class="even">
+<td><p>Default members</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default member of</p></td>
+<td><p>Domain Guests</p>
+<p>Guests</p></td>
+</tr>
+<tr class="even">
+<td><p>Protected by ADMINSDHOLDER?</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Safe to move out of default container?</p></td>
+<td><p>Can be moved out, but we do not recommend it.</p></td>
+</tr>
+<tr class="even">
+<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
 
 ### DefaultAccount
 

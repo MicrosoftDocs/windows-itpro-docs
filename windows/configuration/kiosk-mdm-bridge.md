@@ -31,59 +31,59 @@ Here’s an example to set AssignedAccess configuration:
 3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
 4. Execute the following script:
 
-```ps
+```xml
 $nameSpaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
 $obj.Configuration = @"
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
-  &lt;Profiles&gt;
-    &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
-      &lt;AllAppsList&gt;
-        &lt;AllowedApps&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
-          &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
-        &lt;/AllowedApps&gt;
-      &lt;/AllAppsList&gt;
-      &lt;StartLayout&gt;
-        &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
-                      &lt;DefaultLayoutOverride&gt;
-                        &lt;StartLayoutCollection&gt;
-                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
-                            &lt;start:Group Name=&quot;Group1&quot;&gt;
-                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                            &lt;/start:Group&gt;
-                            &lt;start:Group Name=&quot;Group2&quot;&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationLinkPath=&quot;%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk&quot; /&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationLinkPath=&quot;%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk&quot; /&gt;
-                            &lt;/start:Group&gt;
-                          &lt;/defaultlayout:StartLayout&gt;
-                        &lt;/StartLayoutCollection&gt;
-                      &lt;/DefaultLayoutOverride&gt;
-                    &lt;/LayoutModificationTemplate&gt;
-                ]]&gt;
-      &lt;/StartLayout&gt;
-      &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
-    &lt;/Profile&gt;
-  &lt;/Profiles&gt;
-  &lt;Configs&gt;
-    &lt;Config&gt;
-      &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
-      &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
-    &lt;/Config&gt;
-  &lt;/Configs&gt;
-&lt;/AssignedAccessConfiguration&gt;
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Group1">
+                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+                              <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+                            </start:Group>
+                            <start:Group Name="Group2">
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
+                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>MultiAppKioskUser</Account>
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
 "@
 
 Set-CimInstance -CimInstance $obj

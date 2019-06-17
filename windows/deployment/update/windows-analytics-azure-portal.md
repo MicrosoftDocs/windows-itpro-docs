@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
-ms.author: lomayor
+author: greg-lindsay
+ms.author: greg-lindsay
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

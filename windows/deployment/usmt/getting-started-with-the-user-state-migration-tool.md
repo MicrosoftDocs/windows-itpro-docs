@@ -4,12 +4,11 @@ description: Getting Started with the User State Migration Tool (USMT)
 ms.assetid: 506ff1d2-94b8-4460-8672-56aad963504b
 ms.reviewer: 
 manager: laurawi
-ms.author: lomayor
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
-ms.date: 04/19/2017
+author: greg-lindsay
 ms.topic: article
 ---
 
