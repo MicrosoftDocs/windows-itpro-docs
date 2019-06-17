@@ -21,7 +21,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 (1803 and newer) 
+-   Windows 10, version 1803 and later 
 
 The Enrollment Status Page (ESP) displays the status of the complete device configuration process when a MDM managed user signs into a device for the very first time.  The benefit of using the ESP will help users understand the progress of their device provisioning status along with ensuring the device has met the organizations desired state before the user can access the desktop for the first time.
 
