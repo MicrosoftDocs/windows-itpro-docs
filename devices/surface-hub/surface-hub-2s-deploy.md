@@ -15,7 +15,7 @@ ms.localizationpriority: Normal
 
 ## Deploy Surface Hub 2S with a provisioning package
 
-You can use Windows Configuration Designer (WCD) to create provisioning packages to automate the deployment process of Surface Hub 2S. Use provisioning packages to add certificates, configure proxies, set up device administrators and device accounts. You can also use provisioning packages in conjunction with a configuration file to deploy multiple Surface Hubs with a single USB thumb drive.
+You can use Windows Configuration Designer (WCD) to create provisioning packages to automate the deployment process of Surface Hub 2S. Use provisioning packages to add certificates, configure proxies, set up device administrators and device accounts. You can also use provisioning packages along with a configuration file to deploy multiple Surface Hubs with a single USB thumb drive.
 
 ### Install Windows Configuration Designer
 
@@ -24,7 +24,7 @@ Install Windows Configuration Designer from the Windows Assessment and Deploymen
 ### Add certificates
 
 You can import Certificate Authority certificates to Surface Hub 2S.
-To add certificates to Surface Hub 2S, you’ll need a copy of each certificate as X.509 in CER format. You cannot import CRT, PFX, or other container formats. Certificates must be imported into Windows Configuration Designer and arranged by hierarchy:
+To add certificates to Surface Hub 2S, you need a copy of each certificate as X.509 in .cer format. You cannot import .crt, .pfx or other container formats. Certificates must be imported into Windows Configuration Designer and arranged by hierarchy:
 
  ![Add certificates](images/sh2-wcd.png)
 
@@ -50,7 +50,7 @@ To create a bulk token, give it a friendly name, configure the expiration date (
 
 ### Provisioning multiple devices (.csv file)
 
-In addition to the provisioning package, you can use a Surface Hub configuration file to make it even easier to set up your devices. A Surface Hub configuration file contains a list of device accounts and friendly names for wireless projection. During first run, you’ll get an option to choose a device account and friendly name from a configuration file.
+In addition to the provisioning package, you can use a Surface Hub configuration file to make it even easier to set up your devices. A Surface Hub configuration file contains a list of device accounts and friendly names for wireless projection. During first run, you get an option to choose a device account and friendly name from a configuration file.
 
 ### To create a Surface Hub configuration file
 

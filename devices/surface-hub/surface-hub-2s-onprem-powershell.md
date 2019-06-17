@@ -53,7 +53,7 @@ Enable-CsMeetingRoom -Identity Contoso\HUB01 -SipAddressType emailaddress -Regis
 
 ## Mobile Device Mailbox Policy
 
-You may need to create a new Mobile Device Mailbox Policy (also known as ActiveSync Policy) to allow your Surface Hub to connect to your online or on-premises environment.
+You may need to create a Mobile Device Mailbox Policy (also known as ActiveSync Policy) to allow your Surface Hub to connect to your online or on-premises environment.
 
 ## Create a Surface Hub mobile device mailbox policy
 
