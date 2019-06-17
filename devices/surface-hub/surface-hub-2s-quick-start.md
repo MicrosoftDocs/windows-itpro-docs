@@ -33,7 +33,9 @@ ms.localizationpriority: Normal
 ## Install pen and camera
 
 1. Attach Surface Hub 2 pen magnetically to your preferred side of the device.
-2. Remove the lens cling from the camera and attach it to the USB-C port on the top of the Surface Hub 2S.
+2. Remove the lens cling from the camera and attach it to the USB-C port on the top of the Surface Hub 2S. A red LED indicator light on the pen warns you when the battery is slow.
+
+![*Surface Hub 2S pen *](images/sh2-pen.png) <br>
 
 ## Start Surface Hub 2S
 

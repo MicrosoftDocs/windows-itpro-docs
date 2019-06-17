@@ -19,14 +19,14 @@ Designed for team collaboration, Surface Hub 2S can transform the way you work  
 
 ## Room considerations
 
-Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, beaming microphones, crystal clear speakers, and a brilliant 4K+ resolution display.  Optimizing the user experience in larger spaces may require peripherals such as an additional camera, microphone, or room systems solution such as Microsoft Teams Rooms. See the following table for guidance.
+Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, beaming microphones, crystal clear speakers, and a brilliant 4K+ resolution display. Optimizing the user experience in larger spaces with more people further away from the display may require peripherals such as an additional camera, microphone, or room systems solution such as Microsoft Teams Rooms. Use the following proximity table to determine if you need to plan for additional peripherals.
  
-|**Room size**|**Participants**|**Proximity**|**Additional requirements**|
-|:-----|:-----|:--------|:------|
-|**Huddle**| 1-3 | 1-2 meters | None |
-|**Small meeting**| 3-5 | Up to 2.3 meters | None |
-|**Medium-size meeting**| 5-7 | Up to 4 meters | Peripherals optional|
-|**Larger meting**| 7 + | More than 4 meters | Peripherals recommended |
+|**Proximity**|**Additional requirements**|
+|:--------|:------|
+| 1-2 meters | None |
+| Up to 2.3 meters | None |
+| Up to 4 meters | Peripherals optional|
+| More than 4 meters | Peripherals recommended |
 
 As a general guideline, install Surface Hub 2S in a space that meets the following criteria:
 
