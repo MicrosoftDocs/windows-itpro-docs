@@ -227,7 +227,7 @@ The following are answers to commonly asked questions for the FIPS 140-2 validat
 8.  Are applications FIPS 140-2 validated?  
     **Answer:** Microsoft only has low-level cryptographic modules in Windows FIPS 140-2 validated, not high-level applications. A better question is whether a certain application calls a FIPS 140-2 validated cryptographic module in the underlying Windows OS. That question needs to be directed to the company/product group that created the application of interest.
 9.  How can Systems Center Operations Manager 2012 be configured to use FIPS 140-2 validated cryptographic modules?  
-    **Answer:** See [http://technet.microsoft.com/library/hh914094.aspx](https://technet.microsoft.com/library/hh914094.aspx)
+    **Answer:** See [https://technet.microsoft.com/library/hh914094.aspx](https://technet.microsoft.com/library/hh914094.aspx)
 
 ## Microsoft FIPS 140 Validated Cryptographic Modules
 
@@ -7086,5 +7086,5 @@ Version 6.3.9600</p></td>
 
 Enabling FIPS mode - <http://support.microsoft.com/kb/811833>
 
-Cipher Suites in Schannel - [http://msdn.microsoft.com/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/library/aa374757\(vs.85\).aspx)
+Cipher Suites in Schannel - [https://msdn.microsoft.com/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/library/aa374757\(vs.85\).aspx)
 

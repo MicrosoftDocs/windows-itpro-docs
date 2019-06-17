@@ -2883,7 +2883,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-553</p></td>
+<td><p>S-1-5-32-&lt;domain&gt;-576</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>

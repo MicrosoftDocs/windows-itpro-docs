@@ -1,7 +1,7 @@
 ---
 title: Custom detections overview
 ms.reviewer: 
-description: Understand how how you can leverage the power of advanced hunting to create custom detections
+description: Understand how you can leverage the power of advanced hunting to create custom detections
 keywords: custom detections, detections, advanced hunting, hunt, detect, query
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

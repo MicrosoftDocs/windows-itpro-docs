@@ -45,7 +45,7 @@ Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new e
 In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
 - You can use a custom Windows desktop application that can then launch UWP apps, such as **Settings** and **Touch Keyboard**.
 - From a custom UWP shell, you can launch secondary views and run on multiple monitors.
-- The custom shell app runs in full screen, and and can run other apps in full screen on user’s demand.
+- The custom shell app runs in full screen, and can run other apps in full screen on user’s demand.
 
 For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2).
 

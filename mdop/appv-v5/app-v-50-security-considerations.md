@@ -126,35 +126,3 @@ The following will help you plan how to ensure that virtualized packages are sec
 
 
 During App-V 5.0 Setup, setup log files are created in the **%temp%** folder of the installing user.
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-****
-
-[]()  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
