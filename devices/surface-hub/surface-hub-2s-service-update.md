@@ -9,6 +9,7 @@ ms.author: robmazz
 audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Servicing and updating Surface Hub 2S
