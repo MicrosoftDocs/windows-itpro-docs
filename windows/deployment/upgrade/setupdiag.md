@@ -326,7 +326,6 @@ Each rule name and its associated unique rule identifier are listed with a descr
    - Added "no match" reports for xml and json per user request.
    - Formatted Json output for easy readability.
    - Performance improvements when searching for setup logs; this should be much faster now.
-   - Added "no match" reports for xml and json per user request.
    - Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
    - Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
        - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
