@@ -1,6 +1,6 @@
 ---
-title: Differences between Surface Hub and Windows 10 Enterprise
-description: This topic explains the differences between Windows 10 Team and Windows 10 Enterprise.
+title: Operating system essentials (Surface Hub)
+description: This topic explains unique aspects of the Windows 10 Team operating system and how it differs from Windows 10 Enterprise.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
