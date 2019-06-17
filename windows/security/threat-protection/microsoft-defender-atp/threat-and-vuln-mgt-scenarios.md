@@ -98,7 +98,7 @@ Remediating issues in the security recommendations list will improve your config
 
 5. Send a follow up email to your IT Administrator and allow the time that you have alloted for the remediation to propagate in the system.
 
-6. Review the machine **Configuration score** widget again. The number of the security controls issues will decrease. When you click **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be be listed there anymore, and your configuration score should increase.
+6. Review the machine **Configuration score** widget again. The number of the security controls issues will decrease. When you click **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be listed there anymore, and your configuration score should increase.
 
 
 ## Related topics
