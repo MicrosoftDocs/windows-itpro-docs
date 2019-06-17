@@ -9,6 +9,7 @@ ms.author: robmazz
 audience: Admin
 ms.topic: article
 ms.localizationpriority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Out-of-box startup for Surface Hub 2S
