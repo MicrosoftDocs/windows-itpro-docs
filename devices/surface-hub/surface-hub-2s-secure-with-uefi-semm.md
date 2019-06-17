@@ -38,20 +38,20 @@ Use the Microsoft Surface UEFI Configurator to turn on or off the following UEFI
 
 ## Create UEFI configuration image
 
-Unlike other Surface devices, you cannot use an MSI file or a Win PE image to apply these settings on Surface Hub 2S. Instead, you’ll need to create a USB image that can be loaded to the device. To create a Surface Hub 2S UEFI configuration image, download and install the latest version of the Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center. For more information about using UEFI and SEMM, see [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode).
+Unlike other Surface devices, you cannot use an MSI file or a Win PE image to apply these settings on Surface Hub 2S. Instead, you need to create a USB image to load into the device. To create a Surface Hub 2S UEFI configuration image, download and install the latest version of the Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center. For more information about using UEFI and SEMM, see [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode).
 
 ## To configure UEFI on Surface Hub 2S
 
 1. Start the UEFI Configurator and on the first screen, choose **Configuration Package**.
 2. To add the certificate to your package, you must have a valid certificate with the private key in a .pfx file format to sign and protect the package. Select **+ Certificate Protection.**
 3. Enter the certificate’s private key’s password.
-4. After importing the private key,continue creating the package.
+4. After importing the private key, continue creating the package.
 5. Choose **Hub** and **Surface Hub 2S** as the target for the UEFI configuration package.
 6. Choose the components and settings you want to activate or deactivate on Surface Hub 2S.
 7. Use the USB option to export the file.
-8. Insert and choose the USB drive you’d like to use for this package. Note that the USB drive will be formatted, and you’ll lose any information you have on it.
+8. Insert and choose the USB drive you’d like to use for this package. The USB drive will be formatted and you lose any information you have on it.
 
-Upon successful creation of the package, the Configurator will display the last two characters of your certificate’s thumbprint. You’ll need them when you import to the configuration to Surface Hub 2S.
+Upon successful creation of the package, the Configurator will display the last two characters of your certificate’s thumbprint. You need these characters when you import to the configuration to Surface Hub 2S.
 
 ## To boot into UEFI
 

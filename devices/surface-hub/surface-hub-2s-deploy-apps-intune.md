@@ -21,8 +21,8 @@ You can install additional apps to fit your team or organization's needs.
 - Apps must be targeted for the [Universal device family](https://msdn.microsoft.com/library/windows/apps/dn894631) or Windows Team device family.
 - Surface Hub only supports [offline-licensed apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) from Microsoft Store for Business.
 - By default, apps must be Store-signed to be installed. During testing and development, you can also choose to run developer-signed UWP apps by placing the device in developer mode.
-- When developing and submitting apps to the Microsoft Store, set Device family availability and Organizational licensing options to ensure apps will be available to run on Surface Hub.
-- You need admin credentials to install apps on Surface Hub. Designed to be used in meeting rooms and other shared spaces, Surface Hub prevents regular users from accessing the Microsoft Store to download and install apps.
+- When developing and submitting apps to the Microsoft Store, set Device family availability and Organizational licensing options to ensure that apps are available to run on Surface Hub.
+- You need admin credentials to install apps on Surface Hub. Designed for use in meeting rooms and other shared spaces, Surface Hub prevents regular users from accessing the Microsoft Store to download and install apps.
 
 ## Deployment guidelines
 
@@ -44,4 +44,4 @@ You can deploy Universal Windows Platform (UWP) apps to Surface Hub 2S using Int
 5. After enabling Offline shopping, you can acquire offline licenses for apps that you can sync to Intune and deploy as Device licensing.
 6. In **Intune** > **Client apps** > **Microsoft Store for Business**, select **Sync**.
 7. In the Client apps page, search for the app in the apps list. Assign the apps to the desired device group or groups. Select **Assignments** > **Add group**. ![*Assigning apps to groups *](images/sh2-assign-group.png) <br>
-8. Under assignment type, choose **Required**. For the selected group(s), choose **Device licensing** and then select **OK** and save the assignment.
+8. Under assignment type, choose **Required**. For the selected groups, choose **Device licensing** and then select **OK** and save the assignment.

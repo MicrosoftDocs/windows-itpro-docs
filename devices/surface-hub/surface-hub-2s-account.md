@@ -13,15 +13,15 @@ ms.localizationpriority: Normal
 
 # Create Surface Hub 2S device account
 
-Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests as well as join meetings using Microsoft Teams or Skype for Business. Configure the device account during OOBE setup. If needed you can changed it later (without going through OOBE setup).
+Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests and join meetings using Microsoft Teams or Skype for Business. Configure the device account during OOBE setup. If needed you can change it later (without going through OOBE setup).
 
-Unlike standard Room mailboxes that remain disabled by default, you’ll need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
+Unlike standard Room mailboxes that remain disabled by default, you need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
 
 Complete advanced configuration tasks using Windows PowerShell. For example:
 
 - If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy using Exchange Online PowerShell.
-- You will need to configure calendar processing for every Surface Hub device account using PowerShell.
-- If you want Surface Hub 2S to send a custom auto reply in response to scheduling requests, you’ll need to configure that using Exchange Online PowerShell.
+- You need to configure calendar processing for every Surface Hub device account using PowerShell.
+- If you want Surface Hub 2S to send a custom auto reply in response to scheduling requests, you need to configure that using Exchange Online PowerShell.
 
 For more information, see [Configure Surface Hub 2S accounts via PowerShell].
 
@@ -35,7 +35,7 @@ For more information, see [Configure Surface Hub 2S accounts via PowerShell].
 
 ![Leave remaining settings unchanged in the default state](images/sh2-account3.png)
 
-3. Set the password for the device account. Ensure you **do not** select the option **Make this user change their password when they first sign in.**
+3. Set the password for the device account. Ensure that you **do not** select the option **Make this user change their password when they first sign in.**
 
 ![Set the password for the device account](images/sh2-account4.png)
 

@@ -20,7 +20,7 @@ ms.localizationpriority: Normal
 |**Size**| 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
 |**Weight**| 61.6 lbs. (28 kg) |
 |**Resolution**| 3840 x 2560 |
-|**Display**| PixelSense Display, 3:2 aspect ratio, 10-bit color, 15.5mm border, anti-glare, IPS LCD |
+|**Display**| PixelSense Display, 3:2 aspect ratio, 10-bit color, 15.5 mm border, anti-glare, IPS LCD |
 |**Compute**| Quad-core 8th Generation Intel Core i5 processor, 8 GB RAM, 128 GB SSD <sup>1</sup> |
 |**Graphics**| Intel UHD Graphics 620 |
 |**Wireless**| Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac compatible) Bluetooth Wireless 4.1 technology <br> Miracast display |
@@ -31,7 +31,7 @@ ms.localizationpriority: Normal
 |**Software**| Windows 10 <br> Microsoft Teams for Surface Hub <sup>2</sup> <br> Skype for Business <br> Microsoft Whiteboard <br> Microsoft Office (Mobile) <br> Microsoft Power BI <sup>2</sup> |
 |**Connections**| USB-A <br> Mini-DisplayPort video output <br> RJ45 Gigabit Ethernet <br> HDMI video input <br> USB-C with DisplayPort input <br> Four USB-C (on display) |
 |**Exterior**| Casing: Precision machined aluminum with mineral-composite resin <br> Color: Platinum <br> Physical Buttons: Power, Volume, Source |
-|**What’s in the box**| One Surface Hub 2S <br> One Surface Hub 2 Pen  <br> One Surface Hub 2 Camera <br> 2.5m AC Power Cable <br> Quick Start Guide |
+|**What’s in the box**| One Surface Hub 2S <br> One Surface Hub 2 Pen  <br> One Surface Hub 2 Camera <br> 2.5 m AC Power Cable <br> Quick Start Guide |
 |**Warranty**| 1-year limited hardware warranty |
 
 ## Pen tech specs
@@ -39,7 +39,7 @@ ms.localizationpriority: Normal
 |**Item**|**Details**|
 |:------ |:-  ------ |
 |**Dimensions**| 5.94" x 0.64" x 0.56” (151 mm x 16.3 mm x 14.3 mm) |
-|**Weight**| 0.09 lbs. (41g) |
+|**Weight**| 0.09 lbs. (41 g) |
 |**Buttons**| Barrel button and tail eraser |
 |**Color**| Grey |
 |**Connector type**| Bluetooth 4.0 |
@@ -69,13 +69,13 @@ ms.localizationpriority: Normal
 |**Connection**| AC input/DC output & USB-A |
 |**Voltage**| 48 V DC |
 |**Capacity**| 8.2 Ah |
-|**Energy**| 403Wh (~10x Pro6) |
+|**Energy**| 403 Wh (~10x Pro6) |
 |**Power Delivery**| 387 W |
 |**Battery Technology**| Li-Ion NMC523 |
 |**Charger**| 600 W |
-|**Charging Time**| 0 to 100 percent in ~1.5 hours |
+|**Charging Time**| 0–100 percent in ~1.5 hours |
 |**Run Time**| 2 hours nominal |
-|**AC output**| 88-265 V AC, 50-60Hz, Max 8 A/400 W |
+|**AC output**| 88–265 V AC, 50–60 Hz, Max 8 A/400 W |
 |**DC output**| 24 V DC, Max 16.2 A /387 W |
 
 > [!NOTE]

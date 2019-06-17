@@ -21,7 +21,7 @@ ms.localizationpriority: Normal
 | ☐ |**Device account UPN**| | |
 | ☐ |**ActiveSync Policy**| | |
 | ☐ |**Calendar processing configuration completed**| - Yes <br> - No | |
-| ☐ |**Device friendly name**| | |
+| ☐ |**Device-friendly name**| | |
 | ☐ |**Device host name**| | |
 | ☐ |**Affiliation**| - None <br> - Active Directory affiliation <br> - Azure Active Directory | |
 | ☐ |**Microsoft Teams Mode**| - Mode 0 <br> - Mode 1 <br> - Mode 2 | |
@@ -40,14 +40,14 @@ ms.localizationpriority: Normal
 | ☐ |**Install additional certificates (on-premises only)**| | [Using certificates for AADJ on-premises single-sign on](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert) |
 |☐ |**Windows update**| - Windows Update for Business <br> - Windows Server Update Services [WSUS] | [Deploy updates using Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wufb) <br> [Get Started with Windows Server Update Services (WSUS)](https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) |
 |☐ |**Surface app speaker setting**| - Rolling stand <br> - Wall-mounted | |
-|☐ |**IP Address**| - Wired - DHCP <br> - Wired - DHCP reservation <br> - Wireless – DHCP <br> - Wireless – DHCP reservation | |
+|☐ |**IP Address**| - Wired — DHCP <br> - Wired — DHCP reservation <br> - Wireless — DHCP <br> - Wireless — DHCP reservation | |
 
 ## Surface Hub 2S post-deployment checklist
 
 |**Check**|**Item**|**Response**|**Learn more**|
 |:------|:-------|:---------|:----------|
 | ☐ |**Device account syncing**| - Yes <br> - No | |
-| ☐ |**Bitlocker key**| - Saved to file (no affiliation) <br> - Saved in Active Directory (AD affiliation) <br>- Saved in Azure AD ( Azure AD affiliation) | |
+| ☐ |**Bitlocker key**| - Saved to file (no affiliation) <br> - Saved in Active Directory (AD affiliation) <br>- Saved in Azure AD (Azure AD affiliation) | |
 | ☐ |**Device OS updates**| - Completed | |
 | ☐ |**Windows Store updates**| - Automatic <br> - Manual | |
 | ☐ |**Microsoft Teams scheduled meeting**| - Confirmation email received <br> - Meeting appears on start screen <br> - One-touch join functions <br> - Able to join audio <br> - Able to join video <br> - Able to share screen ||

@@ -32,4 +32,4 @@ Phone authentication for Surface Hub simplifies signing-in to your meetings and 
 
 1. On Surface Hub, sign into **My meetings and files** and select **Send notification** when prompted.
 2. Match the number displayed on your phone with the number displayed on Surface Hub to approve your sign-in request.
-3. If prompted, enter the PIN or biometric ID on your phone, to complete sign-in.
+3. If prompted, enter the PIN or biometric ID on your phone to complete sign-in.

@@ -73,12 +73,14 @@ DisplayPort cables are certified for to 3 meters in length. If a long cable is n
 > Most DisplayPort sources will automatically switch to HDMI signaling if HDMI is detected.
 
 ## Wirelessly connect to Surface Hub 2S
+
 Windows 10 natively supports Miracast, which lets you wireless connect to Surface Hub 2S.
- ****
-**To connect using Miracast:**
+
+### To connect using Miracast
+
 1. On your Windows 10 device, enter **Win** + **K**.
 2. In the Connect window, look for the name of your Surface Hub 2S in the list of nearby devices. You can find the name of your Surface Hub 2S in the bottom left corner of the display.
-3. If required, your system administrator may have enabled the PIN setting for Miracast connections on your Surface Hub which means that the first time you connect to that Surface Hub, a PIN number will be displayed on the screen.  
+3. If required, your system administrator may have enabled the PIN setting for Miracast connections on your Surface Hub which means that the first time you connect to that Surface Hub, a PIN number is displayed on the screen.  
 
 > [!NOTE]
 > If you’re a local administrator on Surface Hub 2S, you can configure PIN requirements via **Surface app > Settings.**
@@ -96,5 +98,3 @@ You can connect the following accessories to Surface Hub-2S using Bluetooth:
 
 > [!NOTE]
 > After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [Local management for Surface Hub settings](local-management-surface-hub-settings.md).
-
-## Learn more

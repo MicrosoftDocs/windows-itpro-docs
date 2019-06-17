@@ -53,23 +53,23 @@ In addition to the visible ports on the sides of the device, certain integrated 
 
 The removable compute cartridge containing the I/O ports must remain free of any obstructions or impediments of any kind.
 
-![*Figure 3.View of compute cartridge located at the underside of Surface Hub 2s.*](images/sh2-ports.png) <br>
-***Figure 3.View of compute cartridge located at the underside of Surface Hub 2s.***
+![*Figure 3.View of compute cartridge on the underside of Surface Hub 2s.*](images/sh2-ports.png) <br>
+***Figure 3.View of compute cartridge on the underside of Surface Hub 2s.***
 
 ![*Figure 4. Unimpeded removal of compute cartridge *](images/sh2-cartridge.png) <br>
 ***Figure 4. Unimpeded removal of compute cartridge***
 
 ## Selecting a mounting system
 
-Surface Hub 2S uses a 350 mm x 350 mm mounting framework that meets most — but not all — of the criteria listed in the VESA Flat Display Mounting Interface Standard. Still, you can install Surface Hub 2S using any of various off-the-shelf display brackets, specifically designed to accommodate displays that diverge from exact VESA specifications, as shown below.
+Surface Hub 2S uses a 350 mm x 350 mm mounting framework that meets most — but not all — of the criteria listed in the VESA Flat Display Mounting Interface Standard. You can install Surface Hub 2S using any of various off-the-shelf display brackets designed to accommodate displays that diverge from exact VESA specifications, as shown below.
 
-On the back of Surface Hub 2S, you’ll find a square pattern of four M6 x 1.0 threaded holes centered on the circular bump (565 mm in diameter). Attach your mount using four M6 x 1.0 – 12 mm-long metric bolts. Or, depending on preference, you can use longer bolts up to a maximum of 20 mm.
+On the back of Surface Hub 2S, you’ll find a square pattern of four M6 x 1.0 threaded holes centered on the circular bump (565 mm in diameter). Attach your mount using four M6 x 1.0–12 mm-long metric bolts. Or, depending on preference, you can use longer bolts up to a maximum of 20 mm.
 Important considerations for mounting systems
 
 |**Item**|**Description**|**Notes**|
 |:------ |:------------- |:------- |
 |**Strength**| Only choose mounts that can safely support devices of at least 28 kg (62 lbs.). | Required |
-|**Stiffness**| Avoid flexible display mounts that can diminish the interactive pen and touch use experience. Note that most TV mounts are not designed to support touch displays. | Recommended |
+|**Stiffness**| Avoid flexible display mounts that can diminish the interactive pen and touch use experience. Most TV mounts are not designed to support touch displays. | Recommended |
 |**Depth**| Keep the device mounted tightly to the wall especially in corridors and along circulation paths within rooms.| Recommended |
 |**Versatility**| Ensure your mounting solution remains hidden from view in both the existing landscape mode and any  potential portrait mode (subject to future availability). | Recommended |
 
