@@ -4,11 +4,11 @@ description: EnterpriseModernAppManagement DDF
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/27/2018
 ---
 

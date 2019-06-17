@@ -32,7 +32,7 @@ AppLocker defines executable rules as any files with the .exe and .com extension
 | Allow members of the local Administrators group access to run all executable files | (Default Rule) All files| BUILTIN\Administrators | Path: * |
 | Allow all users to run executable files in the Windows folder| (Default Rule) All files located in the Windows folder| Everyone| Path: %windir%\*| 
 | Allow all users to run executable files in the Program Files folder | (Default Rule) All files located in the Program Files folder| Everyone | Path: %programfiles%\*| 
- 
+ 
 ## Related topics
 
 - [Understanding AppLocker Default Rules](understanding-applocker-default-rules.md)

@@ -80,7 +80,7 @@ The UE-V Configuration Pack includes tools to:
     </tbody>
     </table>
 
-     
+     
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -107,7 +107,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
- 
+ 
 
 <a href="" id="create"></a>**Create the first UE-V policy configuration item**
 
@@ -240,9 +240,9 @@ You can download the [System Center 2012 Configuration Pack for Microsoft User E
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

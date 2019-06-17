@@ -22,7 +22,7 @@ Use the following procedure to publish an App-V 5.0 package. Once you publish a 
 **Note**  
 The ability to enable only administrators to publish or unpublish packages (described below) is supported starting in App-V 5.0 SP3.
 
- 
+ 
 
 **To publish an App-V 5.0 package**
 
@@ -51,9 +51,9 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 [How to Configure Access to Packages by Using the Management Console](how-to-configure-access-to-packages-by-using-the-management-console-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

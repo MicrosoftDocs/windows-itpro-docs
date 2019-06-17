@@ -53,16 +53,16 @@ The following image shows the CellularSettings CSP in tree format as used by Ope
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

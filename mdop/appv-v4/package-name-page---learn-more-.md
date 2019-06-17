@@ -22,7 +22,7 @@ Use the **Package Name** page to specify a name for the virtual application pack
 **Note**  
 Editing the primary virtual application directory is an advanced task.
 
- 
+ 
 
 This page contains the following elements:
 
@@ -37,9 +37,9 @@ Select this option to change the location of where the virtual application will 
 
 [Create New Package Wizard (AppV 4.6 SP1)](create-new-package-wizard---appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

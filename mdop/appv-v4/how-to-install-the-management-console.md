@@ -40,14 +40,14 @@ Before you can complete this procedure, you must install the Application Virtual
     **Note**  
     If a component is already installed on the computer, by deselecting it on the Custom Setup screen, it will automatically be uninstalled.
 
-     
+     
 
 8.  On the **Ready to Modify the Program** screen, click **Install**.
 
     **Note**  
     If this is the first component you install, the **Ready to Install the Program** page is displayed. To start the installation, click **Install**.
 
-     
+     
 
 9.  On the **Installation Wizard Completed** screen, click **Finish**. Click **Okay** to restart the computer and complete the installation.
 
@@ -64,9 +64,9 @@ Before you can complete this procedure, you must install the Application Virtual
 
 [How to Install the Servers and System Components](how-to-install-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

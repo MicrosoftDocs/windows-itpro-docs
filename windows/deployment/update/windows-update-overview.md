@@ -4,12 +4,12 @@ description: Learn how Windows Update works, including architecture and troubles
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 09/18/2018
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 
@@ -37,15 +37,15 @@ To understand the changes to the Windows Update architecture that UUP introduces
 - **Update Session Orchestrator (USO)**- A Windows OS component that orchestrates the sequence of downloading and installing various update types from Windows Update.  
 
    Update types- 
-   - OS Feature updates 
-   - OS Security updates 
-   - Device drivers 
-   - Defender definition updates 
+  - OS Feature updates 
+  - OS Security updates 
+  - Device drivers 
+  - Defender definition updates 
 
-   >[!NOTE]
-      > Other types of updates, like Office desktop updates, are installed if the user opts into Microsoft Update.
-      >
-      >Store apps aren't installed by USO, today they are separate. 
+    >[!NOTE]
+     > Other types of updates, like Office desktop updates, are installed if the user opts into Microsoft Update.
+     >
+     >Store apps aren't installed by USO, today they are separate. 
 
 - **WU Client/ UpdateAgent** - The component running on your PC. It's essentially a DLL that is downloaded to the device when an update is applicable. It surfaces the APIs needed to perform an update, including those needed to generate a list of payloads to download, as well as starts stage and commit operations. It provides a unified interface that abstracts away the underlying update technologies from the caller.  
 - **WU Arbiter handle**- Code that is included in the UpdateAgent binary. The arbiter gathers information about the device, and uses the CompDB(s) to output an action list. It is responsible for determining the final "composition state" of your device, and which payloads (like ESDs or packages) are needed to get your device up to date. 

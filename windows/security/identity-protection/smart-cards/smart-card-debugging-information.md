@@ -62,9 +62,9 @@ Windows software trace preprocessor (WPP) simplifies tracing the operation of th
 
 Using WPP, use one of the following commands to enable tracing:
 
--   **tracelog.exe -kd -rt -start** &lt;*FriendlyName*&gt; **-guid \#**&lt;*GUID*&gt; **-f .\\**&lt;*LogFileName*&gt;**.etl -flags** &lt;*flags*&gt; **-ft 1**
+- **tracelog.exe -kd -rt -start** &lt;*FriendlyName*&gt; **-guid \#**&lt;*GUID*&gt; **-f .\\**&lt;*LogFileName*&gt;**.etl -flags** &lt;*flags*&gt; **-ft 1**
 
--   **logman start** &lt;*FriendlyName*&gt; **-ets -p {**&lt;*GUID*&gt;**} -**&lt;*Flags*&gt; **-ft 1 -rt -o .\\**&lt;*LogFileName*&gt;***.etl -mode 0x00080000**
+- **logman start** &lt;*FriendlyName*&gt; **-ets -p {**&lt;*GUID*&gt;**} -**&lt;*Flags*&gt; **-ft 1 -rt -o .\\**&lt;*LogFileName*&gt;<em>**.etl -mode 0x00080000</em>*
 
 You can use the parameters in the following table.
 

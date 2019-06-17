@@ -22,7 +22,7 @@ Microsoft User Experience Virtualization (UE-V) supports the following described
 **Note**  
 Microsoft provides support for the current service pack, and in some cases, the preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For more information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+ 
 
 ## Supported configurations for UE-V Agent and UE-V Generator
 
@@ -82,7 +82,7 @@ The following table lists the operating systems that support the User Experience
 </tbody>
 </table>
 
- 
+ 
 
 There are no special RAM requirements that are specific to UE-V.
 
@@ -91,7 +91,7 @@ The installation of the UE-V agent requires administrative rights and will requi
 **Important**  
 The Sync Your Settings feature in Windows 8 must be disabled to allow UE-V to function properly. Synchronization of settings with both Windows 8 and UE-V will result in unpredictable synchronization behavior.
 
- 
+ 
 
 ### <a href="" id="requirements-for-the-offline-files-feature-"></a>Requirements for the Offline Files feature
 
@@ -171,9 +171,9 @@ Supported Configurations for User Experience Virtualization
 
 [Deploying the UE-V Agent](deploying-the-ue-v-agent.md)
 
- 
+ 
 
- 
+ 
 
 
 

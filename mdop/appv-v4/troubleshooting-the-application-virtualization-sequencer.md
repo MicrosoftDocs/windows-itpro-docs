@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting the Application Virtualization Sequencer
 description: Troubleshooting the Application Virtualization Sequencer
-author: v-madhi
+author: manikadhiman
 ms.assetid: 12ea8367-0b84-44e1-a885-e0539486556b
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

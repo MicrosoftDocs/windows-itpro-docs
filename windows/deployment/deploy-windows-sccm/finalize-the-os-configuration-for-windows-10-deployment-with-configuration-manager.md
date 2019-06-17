@@ -70,36 +70,36 @@ To support additional server-side logging in Configuration Manager, you create a
 
 This section will show you how to configure the rules (the Windows 10 x64 Settings package) to support the Contoso environment.
 
-1.  On CM01, using File Explorer, navigate to the **E:\\Sources\\OSD\\Settings\\Windows 10 x64 Settings** folder.
+1. On CM01, using File Explorer, navigate to the **E:\\Sources\\OSD\\Settings\\Windows 10 x64 Settings** folder.
 
-2.  Using Notepad, edit the CustomSetting.ini file with the following settings:
+2. Using Notepad, edit the CustomSetting.ini file with the following settings:
 
-    ``` syntax
-    [Settings]
-    Priority=Default
-    Properties=OSDMigrateConfigFiles,OSDMigrateMode
-    [Default]
-    DoCapture=NO
-    ComputerBackupLocation=NONE
-    MachineObjectOU=ou=Workstations,ou=Computers,ou=Contoso,dc=contoso,dc=com
-    OSDMigrateMode=Advanced
-    OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
-    OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
-    SLSHARE=\\CM01\Logs$
-    EventService=http://CM01:9800
-    ApplyGPOPack=NO
-    ```
+   ``` syntax
+   [Settings]
+   Priority=Default
+   Properties=OSDMigrateConfigFiles,OSDMigrateMode
+   [Default]
+   DoCapture=NO
+   ComputerBackupLocation=NONE
+   MachineObjectOU=ou=Workstations,ou=Computers,ou=Contoso,dc=contoso,dc=com
+   OSDMigrateMode=Advanced
+   OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
+   OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
+   SLSHARE=\\CM01\Logs$
+   EventService=http://CM01:9800
+   ApplyGPOPack=NO
+   ```
 
-    ![Settings package during deployment](../images/fig30-settingspack.png)
+   ![Settings package during deployment](../images/fig30-settingspack.png)
 
-    *Figure 27. The Settings package, holding the rules and the Unattend.xml template used during deployment*
+   *Figure 27. The Settings package, holding the rules and the Unattend.xml template used during deployment*
 
-3.  Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
+3. Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
 
-  >[!NOTE]  
-  >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
+   >[!NOTE]
+   >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
 
- 
+ 
 
 ## <a href="" id="sec04"></a>Distribute content to the CM01 distribution portal
 
@@ -117,27 +117,27 @@ In Configuration Manager, you can distribute all packages needed by a task seque
 
 This sections provides steps to help you create a deployment for the task sequence.
 
-1.  On CM01, using the Configuration Manager Console, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then select **Deploy**.
+1. On CM01, using the Configuration Manager Console, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then select **Deploy**.
 
-2.  On the **General** page, select the **All Unknown Computers** collection and click **Next**.
+2. On the **General** page, select the **All Unknown Computers** collection and click **Next**.
 
-3.  On the **Deployment Settings** page, use the following settings and then click **Next**:
+3. On the **Deployment Settings** page, use the following settings and then click **Next**:
 
-    * Purpose: Available
+   * Purpose: Available
 
-    * Make available to the following: Only media and PXE
+   * Make available to the following: Only media and PXE
 
-    ![Configure the deployment settings](../images/mdt-06-fig33.png)
+   ![Configure the deployment settings](../images/mdt-06-fig33.png)
     
-    *Figure 28. Configure the deployment settings*
+   *Figure 28. Configure the deployment settings*
 
-4.  On the **Scheduling** page, accept the default settings and click **Next**.
+4. On the **Scheduling** page, accept the default settings and click **Next**.
 
-5.  On the **User Experience** page, accept the default settings and click **Next**.
+5. On the **User Experience** page, accept the default settings and click **Next**.
 
-6.  On the **Alerts** page, accept the default settings and click **Next**.
+6. On the **Alerts** page, accept the default settings and click **Next**.
 
-7.  On the **Distribution Points** page, accept the default settings, click **Next** twice, and then click **Close**.
+7. On the **Distribution Points** page, accept the default settings, click **Next** twice, and then click **Close**.
 
    ![Task sequence deployed](../images/fig32-deploywiz.png)
 
@@ -150,17 +150,17 @@ You can have Configuration Manager prompt you for a computer name or you can use
 
 This section provides steps to help you configure the All Unknown Computers collection to have Configuration Manager prompt for computer names.
 
-1.  Using the Configuration Manager Console, in the Asset and Compliance workspace, select **Device Collections**, right-click **All Unknown Computers**, and select **Properties**.
+1. Using the Configuration Manager Console, in the Asset and Compliance workspace, select **Device Collections**, right-click **All Unknown Computers**, and select **Properties**.
 
-2.  In the **Collection Variables** tab, create a new variable with the following settings:
+2. In the **Collection Variables** tab, create a new variable with the following settings:
 
-    * Name: OSDComputerName
+   * Name: OSDComputerName
 
-    * Clear the **Do not display this value in the Configuration Manager console** check box.
+   * Clear the **Do not display this value in the Configuration Manager console** check box.
 
-3.  Click **OK**.
+3. Click **OK**.
 
-   >[!NOTE]  
+   >[!NOTE]
    >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
    
    ![Configure a collection variable](../images/mdt-06-fig35.png)
@@ -190,4 +190,4 @@ This section provides steps to help you configure the All Unknown Computers coll
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 

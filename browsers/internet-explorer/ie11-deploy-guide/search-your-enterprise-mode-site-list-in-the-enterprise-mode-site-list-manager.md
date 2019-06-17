@@ -29,16 +29,16 @@ You can search to see if a specific site already appears in your global Enterpri
 
  **To search your compatibility list**
 
--   From the Enterprise Mode Site List Manager, type part of the URL into the **Search** box.<p>
-The search query searches all of the text. For example, entering *“micro”* will return results like, www.microsoft.com, microsoft.com, and microsoft.com/images. Wildcard characters aren’t supported.
+- From the Enterprise Mode Site List Manager, type part of the URL into the **Search** box.<p>
+  The search query searches all of the text. For example, entering *“micro”* will return results like, www.microsoft.com, microsoft.com, and microsoft.com/images. Wildcard characters aren’t supported.
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
+ 
 
- 
+ 
 
 
 

@@ -32,14 +32,14 @@ The following section provides information and instructions to help you deploy t
     **Warning**  
     Internet Explorer must be closed before you install the MED-V Host Agent, otherwise conflicts can occur later with URL redirection. You can also do this by specifying a computer restart during a distribution.
 
-     
+     
 
 4.  Copy the MED-V workspace package files to the Windows 7 image. The MED-V workspace package files are the MED-V workspace installer, .medv file, and setup.exe file that you created by using the **MED-V Workspace Packager**.
 
     **Important**  
     The .medv and setup.exe file must be in the same folder as the MED-V workspace installer. Then, install the MED-V workspace by running setup.exe.
 
-     
+     
 
 5.  Configure a shortcut on the **Start** menu to open the MED-V workspace package installation.
 
@@ -56,9 +56,9 @@ When the end user has to access an application published in the MED-V workspace,
 
 [How to Deploy a MED-V Workspace Through an Electronic Software Distribution System](how-to-deploy-a-med-v-workspace-through-an-electronic-software-distribution-system.md)
 
- 
+ 
 
- 
+ 
 
 
 

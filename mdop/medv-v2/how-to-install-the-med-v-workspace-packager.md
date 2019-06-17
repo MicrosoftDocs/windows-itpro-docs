@@ -22,7 +22,7 @@ Microsoft Enterprise Desktop Virtualization (MED-V) 2.0 includes a **MED-V Works
 **Important**  
 Before you start to run the wizards, make sure that you have a prepared VHD ready to install. For more information, see [Prepare a MED-V Image](prepare-a-med-v-image.md).
 
- 
+ 
 
 This section provides step-by-step instructions for installing or repairing the **MED-V Workspace Packager**.
 
@@ -69,9 +69,9 @@ If the packager does not open as expected, you can try to repair the installatio
 
 [How to Uninstall the MED-V Components](how-to-uninstall-the-med-v-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

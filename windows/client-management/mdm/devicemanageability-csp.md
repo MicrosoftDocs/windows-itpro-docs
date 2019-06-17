@@ -4,11 +4,11 @@ description: The DeviceManageability configuration service provider (CSP) is use
 ms.assetid: FE563221-D5B5-4EFD-9B60-44FE4066B0D2
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 

@@ -23,10 +23,10 @@ This topic describes how to install the Volume Activation Management Tool (VAMT)
 
 You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products’ license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For Active Directory-Based Activation use, for best results we recommend running VAMT while logged on as a domain administrator. 
 
->[!NOTE]  
+>[!NOTE]
 >The VAMT Microsoft Management Console snap-in ships as an x86 package. 
 
 ### Requirements
@@ -70,5 +70,5 @@ To uninstall VAMT using the **Programs and Features** Control Panel:
 2.  Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
 
 
- 
- 
+ 
+ 

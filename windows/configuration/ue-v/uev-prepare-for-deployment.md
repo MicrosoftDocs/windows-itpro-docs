@@ -369,7 +369,7 @@ Enable this configuration using one of these methods:
 Restart the device to allow the settings to synchronize.
 
 - >**Note**
-These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
+  These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
 
 
 >**Note**

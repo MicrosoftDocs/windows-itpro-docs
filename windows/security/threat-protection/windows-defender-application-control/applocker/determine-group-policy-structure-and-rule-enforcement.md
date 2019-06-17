@@ -32,7 +32,7 @@ This overview topic describes the process to follow when you are planning to dep
 | [Understand AppLocker enforcement settings](understand-applocker-enforcement-settings.md) | This topic describes the AppLocker enforcement settings for rule collections. |
 | [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md) | This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.|
 | [Document the Group Policy structure and AppLocker rule enforcement](document-group-policy-structure-and-applocker-rule-enforcement.md) | This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker. |
- 
+ 
 When you are determining how many Group Policy Objects (GPOs) to create when you apply an AppLocker policy in your organization, you should consider the following:
 
 -   Whether you are creating new GPOs or using existing GPOs

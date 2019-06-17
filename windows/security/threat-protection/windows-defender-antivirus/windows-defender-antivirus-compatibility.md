@@ -30,17 +30,17 @@ If you are also using Microsoft Defender Advanced Threat Protection, then Window
 
 The following matrix illustrates the states that Windows Defender AV will enter when third-party antivirus products or Microsoft Defender ATP are also used. 
 
-Windows version | Antimalware protection offered by | Organization enrolled in Microsoft Defender ATP | Windows Defender AV state
--|-|-|-
-Windows 10 | A third-party product that is not offered or developed by Microsoft | Yes | Passive mode
-Windows 10 | A third-party product that is not offered or developed by Microsoft | No | Automatic disabled mode
-Windows 10 | Windows Defender AV | Yes | Active mode
-Windows 10 | Windows Defender AV | No | Active mode
-Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Active mode<sup>[[1](#fn1)]</sup>
-Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Active mode<sup>[[1](#fn1)]<sup>
-Windows Server 2016 | Windows Defender AV | Yes | Active mode
-Windows Server 2016 | Windows Defender AV | No | Active mode
 
+|   Windows version   |                  Antimalware protection offered by                  | Organization enrolled in Microsoft Defender ATP |     Windows Defender AV state     |
+|---------------------|---------------------------------------------------------------------|-------------------------------------------------|-----------------------------------|
+|     Windows 10      | A third-party product that is not offered or developed by Microsoft |                       Yes                       |           Passive mode            |
+|     Windows 10      | A third-party product that is not offered or developed by Microsoft |                       No                        |      Automatic disabled mode      |
+|     Windows 10      |                         Windows Defender AV                         |                       Yes                       |            Active mode            |
+|     Windows 10      |                         Windows Defender AV                         |                       No                        |            Active mode            |
+| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft |                       Yes                       | Active mode<sup>[[1](#fn1)]</sup> |
+| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft |                       No                        | Active mode<sup>[[1](#fn1)]<sup>  |
+| Windows Server 2016 |                         Windows Defender AV                         |                       Yes                       |            Active mode            |
+| Windows Server 2016 |                         Windows Defender AV                         |                       No                        |            Active mode            |
 
 (<a id="fn1">1</a>)  On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [uninstall Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md) to prevent problems caused by having multiple antivirus products installed on a machine.
 

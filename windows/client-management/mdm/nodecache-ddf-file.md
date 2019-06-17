@@ -4,11 +4,11 @@ description: NodeCache DDF file
 ms.assetid: d7605098-12aa-4423-89ae-59624fa31236
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

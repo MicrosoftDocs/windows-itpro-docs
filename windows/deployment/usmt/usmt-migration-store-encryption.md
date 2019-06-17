@@ -54,21 +54,21 @@ The following table describes the command-line encryption options in USMT.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the UsmtUtils command with the **/ec** option. For more information see [UsmtUtils Syntax](usmt-utilities.md)
 
- 
+ 
 
 ## Related topics
 
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

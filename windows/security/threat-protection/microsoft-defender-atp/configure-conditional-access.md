@@ -25,7 +25,7 @@ ms.date: 09/03/2018
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
 ### Before you begin
->[!WARNING] 
+>[!WARNING]
 >It's important to note that Azure AD registered devices is not supported in this scenario.</br>
 >Only Intune enrolled devices are supported.
 
@@ -40,7 +40,7 @@ You need to make sure that all your devices are enrolled in Intune. You can use 
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
 
-> [!NOTE] 
+> [!NOTE]
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:
@@ -71,10 +71,10 @@ Take the following steps to enable Conditional Access:
 4. In **Platform**, select **Windows 10 and later**.
 5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
 
-  - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
-  - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 

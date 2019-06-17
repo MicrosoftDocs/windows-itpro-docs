@@ -4,11 +4,11 @@ description: ICSPNode DeleteProperty
 ms.assetid: 7e21851f-d663-4558-b3e8-590d24b4f6c4
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

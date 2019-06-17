@@ -24,171 +24,134 @@ manager: dansimp
 
 In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware.
-
->[!NOTE]
->We've recently introduced a new feature that helps reduce the network and CPU overhead ov VMs when obtaining security intelligence updates. If you'd like to test this feature before it's released generally, [download the PDF guide for VDI performance improvement testing](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf).
-
-
-We recommend setting the following when deploying Windows Defender Antivirus in a VDI environment:
-
-Location | Setting | Suggested configuration
----|---|---
-Client interface | Enable headless UI mode | Enabled
-Client interface | Suppress all notifications | Enabled
-Scan | Specify the scan type to use for a scheduled scan | Enabled - Quick
-Root | Randomize scheduled task times | Enabled
-Signature updates | Turn on scan after signature update | Enabled
-Scan | Turn on catch up quick scan | Enabled
-
-For more details on the best configuration options to ensure a good balance between performance and protection, including detailed instructions for System Center Configuration Manager and Group Policy, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
-
 See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
 
 For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-install-endpoint-protection) topic.
 
-There are three main steps in this guide to help roll out Windows Defender Antivirus protection across your VDI:
+With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-1. [Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use](#create-and-deploy-the-base-image)
+This guide will show you how to configure your VMs for optimal protection and performance, including how to:
 
-2. [Manage the base image and updates for your VMs](#manage-your-vms-and-base-image)
-
-3. [Configure the VMs for optimal protection and performance](#configure-endpoints-for-optimal-performance), including:
-
-    - [Randomize scheduled scans](#randomize-scheduled-scans)
-    - [Use quick scans](#use-quick-scans)
-    - [Prevent notifications](#prevent-notifications)
-    - [Disable scans from occurring after every update](#disable-scans-after-an-update)
-    - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
-
->[!IMPORTANT]
-> While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
-
->[!NOTE]
->When you manage Windows with System Center Configuration Manager, Windows Defender Antivirus protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection) for more information.
-
-## Create and deploy the base image
-
-The main steps in this section include:
-
-1. Create your standard base image according to your requirements
-2. Apply Windows Defender AV protection updates to your base image
-3. Seal or “lock” the image to create a “known-good” image
-4. Deploy your image to your VMs
-
-### Create the base image  
-
-First, you should create your base image according to your business needs, applying or installing the relevant line of business (LOB) apps and settings as you normally would. Typically, this would involve creating a VHD or customized .iso, depending on how you will deploy the image to your VMs.
-
-### Apply protection updates to the base image
-
-After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender Antivirus protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
-
-### Seal the base image
-
-When the base image is fully updated, you should run a quick scan on the image.
-
-After running a scan and buliding the cache, remove the machine GUID that uniquely identifies the device in telemetry for both Windows Defender Antivirus and the Microsoft Security Removal Tool. This key is located here:
-
-'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RemovalTools\MRT'
-
-Remove the string found in the 'GUID' value
-
-This “sealing” or “locking” of the image helps Windows Defender Antivirus build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
-
-You can run a quick scan [from the command line](command-line-arguments-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
-
->[!NOTE]
-><b>Quick scan versus full scan</b>
->Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. Combined with our always on real-time protection capability - which reviews files when they are opened and closed, and whenever a user navigates to a folder – quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
->Therefore, when considering performance – especially for creating a new or updated image in preparation for deployment – it makes sense to use a quick scan only.
->A full scan, however, can be useful on a VM that has encountered a malware threat to identify if there are any inactive components lying around and help perform a thorough clean-up.
-
-### Deploy the base image
-
-You'll then need to deploy the base image across your VDI. For example, you can create or clone a VHD from your base image, and then use that VHD when you create or start your VMs.
-
-The following references provide ways you can create and deploy the base image across your VDI:
-
-- [Single image management for Virtual Desktop Collections](https://blogs.technet.microsoft.com/enterprisemobility/2012/10/29/single-image-management-for-virtual-desktop-collections-in-windows-server-2012/)
-- [Using Hyper-V to create a Base OS image that can be used for VMs and VHDs](https://blogs.technet.microsoft.com/haroldwong/2011/06/12/using-hyper-v-to-create-a-base-os-image-that-can-be-used-for-vms-and-boot-to-vhd/)
-- [Plan for Hyper-V security in Windows Server 2016]( https://technet.microsoft.com/windows-server-docs/compute/hyper-v/plan/plan-for-hyper-v-security-in-windows-server-2016)
-- [Create a virtual machine in Hyper-V (with a VHD)](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/get-started/create-a-virtual-machine-in-hyper-v)
-- [Build Virtual Desktop templates]( https://technet.microsoft.com/library/dn645526(v=ws.11).aspx)
-
-## Manage your VMs and base image
-
-How you manage your VDI will affect the performance impact of Windows Defender AV on your VMs and infrastructure.
-
-Because Windows Defender Antivirus downloads protection updates every day, or [based on your protection update settings](manage-protection-updates-windows-defender-antivirus.md), network bandwidth can be a problem if multiple VMs attempt to download updates at the same time.  
-
-Following the guidelines in this means the VMs will only need to download “delta” updates, which are the differences between an existing Security intelligence set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full Security intelligence download (which can average around 150 mb).
-
-### Manage updates for persistent VDIs
-
-If you are using a persistent VDI, you should update the base image monthly, and set up protection updates to be delivered daily via a file share, as follows:  
-
-1. Create a dedicated file share location on your network that can be accessed by your VMs and your VM host (or other, persistent machine, such as a dedicated admin console that you use to manage your VMs).
-
-2. Set up a scheduled task on your VM host to automatically download updates from the MMPC website or Microsoft Update and save them to the file share (the [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) can help with this).
-
-3. [Configure the VMs to pull protection updates from the file share](manage-protection-updates-windows-defender-antivirus.md).
-
-4. Disable or delay automatic Microsoft updates on your VMs. See [Update Windows 10 in the enterprise](https://technet.microsoft.com/itpro/windows/manage/waas-update-windows-10) for information on managing operating system updates with WSUS, SCCM, and others.
-
-5. On or just after each Patch Tuesday (the second Tuesday of each month), [update your base image with the latest protection updates from the MMPC website, WSUS, or Microsoft Update](manage-protection-updates-windows-defender-antivirus.md) Also apply all other Windows patches and fixes that were delivered on the Patch Tuesday. You can automate this by following the instructions in [Orchestrated offline VM Patching using Service Management Automation](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/).
-
-6. [Run a quick scan](run-scan-windows-defender-antivirus.md) on your base image before deploying it to your VMs.
-
-A benefit to aligning your image update to the monthly Microsoft Update is that you ensure your VMs will have the latest Windows security patches and other important Microsoft updates without each VM needing to individually download them.
-
-### Manage updates for non-persistent VDIs
-
-If you are using a non-persistent VDI, you can update the base image daily (or nightly) and directly apply the latest updates to the image.
-
-An example:  
-
-1. Every night or other time when you can safely take your VMs offline, update your base image with the latest [protection updates from the MMPC website, WSUS, or Microsoft Update](manage-protection-updates-windows-defender-antivirus.md).
-
-2. [Run a quick scan](run-scan-windows-defender-antivirus.md) on your base image before deploying it to your VMs.
-
-## Configure endpoints for optimal performance
-
-There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection, including:
-
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
 - [Randomize scheduled scans](#randomize-scheduled-scans)
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
 - [Disable scans from occurring after every update](#disable-scans-after-an-update)
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
+- [Apply exclusions](#exclusions)
 
-These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
+You can also download the whitepaper [Windows Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
+
+>[!IMPORTANT]
+> While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
+
+
+>[!NOTE]
+> There are performance and feature improvements to the way in which Windows Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+
+
+
+### Set up a dedicated VDI file share
+
+In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines.
+
+You can set this feature with Intune, Group Policy, or PowerShell.
+
+Open the Intune management portal either by searching for Intune on https://portal.azure.com or going to https://devicemanagement.microsoft.com and logging in.
+
+1.	To create a group with only the devices or users you specify:
+1.	Go to **Groups**. Click **New group**. Use the following values:
+    1.	Group type: **Security**
+    2.	Group name: **VDI test VMs**
+    3.	Group description: *Optional*
+    4.	Membership type: **Assigned**
+    
+1.	Add the devices or users you want to be a part of this test and then click **Create** to save the group. It’s a good idea to create a couple of groups, one with VMs running the latest Insider Preview build and with the shared security intelligence update feature enabled, and another with VMs that are running Windows 10 1809 or earlier versions. This will help when you create dashboards to test the performance changes.
+
+1.	To create a group that will include any machine in your tenant that is a VM, even when they are newly created:
+
+1.	Go to **Groups**. Click **New group**. Use the following values:
+    1.	Group type: **Security**
+    2.	Group name: **VDI test VMs**
+    3.	Group description: *Optional*
+    4.	Membership type: **Dynamic Device**
+1.	Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**. Click **Add query** and then **Create** to save the group.
+1.	Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one. In this demo I’m going to create a new one by clicking **Create profile**.
+1.	Name it, choose **Windows 10 and later** as the Platform and – most importantly – select **Custom** as the profile type.
+1.	The **Custom OMA-URI Settings** blade is opened automatically. Click **Add** then enter the following values:
+    1.	Name: **VDI shared sig location**
+    1.	Description: *Optional*
+    1.	OMA-URI: **./Vendor/MSFT/Defender/SharedSignatureRoot**
+    1.	Data type: **String**
+    1.	Value: **\\<sharedlocation>\wdav-update\** (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
+1.	Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. Click **Create** to save the new profile. The profile details page now appears.
+1.	Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
+1.	Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
+1.	The profile will now be deployed to the impacted devices. Note that this may take some time.
+    
+#### Use Group Policy to enable the shared security intelligence feature:
+1.	On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click Edit.
+1.	In the **Group Policy Management Editor** go to **Computer configuration**.
+1.	Click **Administrative templates**.
+1.	Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**
+1.	Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
+1.	Deploy the GPO to the VMs you want to test.
+    
+#### Use PowerShell to enable the shared security intelligence feature:
+Use the following cmdlet to enable the feature. You’ll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
+    
+```PowerShell
+Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
+```
+
+See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.
+    
+### Download and unpackage the latest updates
+Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those).
+    
+```PowerShell
+$vdmpathbase = 'c:\wdav-update\{00000000-0000-0000-0000-'
+$vdmpathtime = Get-Date -format "yMMddHHmmss"
+$vdmpath = $vdmpathbase + $vdmpathtime + '}'
+$vdmpackage = $vdmpath + '\mpam-fe.exe'
+$args = @("/x")
+
+New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
+
+Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
+
+cmd /c "cd $vdmpath & c: & mpam-fe.exe /x" 
+```
+
+You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update. 
+We suggest starting with once a day – but you should experiment with increasing or decreasing the frequency to understand the impact. 
+Note that security intelligence packages are typically published once every three to four hours, so setting a frequency shorter than four hours isn’t advised as it will increase the network overhead on your management machine for no benefit.
+
+#### Set a scheduled task to run the powershell script
+1.	On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
+1.	Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Click **New…** Select **Daily** and click **OK**.
+1.	Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter 
+
+    *-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1* 
+
+in the **Add arguments** field. Click **OK**. You can choose to configure additional settings if you wish. Click OK to save the scheduled task.
+ 
+
+You can initiate the update manually by right-clicking on the task and clicking **Run**.
+
+#### Download and unpackage manually
+If you would prefer to do everything manually, this what you would need to do to replicate the script’s behavior:
+1.	Create a new folder on the system root called *wdav_update* to store intelligence updates, for example, create the folder *c:\wdav_update*
+1.	Create a subfolder under *wdav_update* with a GUID name, such as *{00000000-0000-0000-0000-000000000000}*; for example *c:\wdav_update\{00000000-0000-0000-0000-000000000000}* (note, in the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time)
+1.	Download a security intelligence package from https://www.microsoft.com/en-us/wdsi/definitions  into the GUID folder. The file should be named *mpam-fe.exe*.
+1.	Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example **mpam-fe.exe /X**.
+Note: The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
 
 ### Randomize scheduled scans
 
-Windows Defender Antivirus supports the randomization of scheduled scans and Security intelligence updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
-
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime.  
- 
-<!-- individual instructions will be removed and linked to RS2 content when it's live, for now I'll put them inline-->
-
-**Use Group Policy to randomize scheduled scan start times:**
-
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Policies** then **Administrative templates**.
-
-4. Expand the tree to **Windows components > Windows Defender** and configure the following setting:
-
-    - Double-click **Randomize scheduled task times** and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the Security intelligence update. For example, if the schedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
-
-**Use Configuration Manager to randomize scheduled scans:**
-
-See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
+The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Windows Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -197,54 +160,17 @@ See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for
 You can specify the type of scan that should be performed during a scheduled scan.
 Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active.
 
-**Use Group Policy to specify the type of scheduled scan:**
-
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Policies** then **Administrative templates**.
-
-4. Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:  
+1. Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:  
 
     - Double-click **Specify the scan type to use for a scheduled scan** and set the option to **Enabled** and **Quick scan**. Click **OK**.
-
-**Use Configuration Manager to specify the type of scheduled scan:**
-
-See [How to create and deploy antimalware policies: Scheduled scans settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) for details on configuring System Center Configuration Manager (current branch).
-
-See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
 ### Prevent notifications
 
 Sometimes, Windows Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Windows Defender Antivirus user interface.
 
-**Use Group Policy to hide notifications:**
-
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Policies** then **Administrative templates**.
-
-4. Expand the tree to **Windows components > Windows Defender > Client Interface** and configure the following settings:
+1. Expand the tree to **Windows components > Windows Defender > Client Interface** and configure the following settings:
 
    - Double-click **Suppress all notifications** and set the option to **Enabled**. Click **OK**. This prevents notifications from Windows Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
-   - Double-click **Enable headless UI mode** and set the option to **Enabled**. Click **OK**. This hides the entire Windows Defender AV user interface from users.
-
-**Use Configuration Manager to hide notifications:**
-
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
-
-2. Go to the **Advanced** section and configure the following settings:
-
-   1. Set **Disable the client user interface** to **Yes**. This hides the entire Windows Defender AV user interface.
-
-   2. Set **Show notifications messages on the client computer...** to **Yes**. This hides notifications from appearing.
-
-   3. Click **OK**.
-
-3. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Disable scans after an update
 
@@ -253,61 +179,26 @@ This setting will prevent a scan from occurring after receiving an update. You c
 >[!IMPORTANT]
 >Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-**Use Group Policy to disable scans after an update:**
-
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Policies** then **Administrative templates**.
-
-4. Expand the tree to **Windows components > Windows Defender > Signature Updates** and configure the following setting:
+1. Expand the tree to **Windows components > Windows Defender > Signature Updates** and configure the following setting:
 
    - Double-click **Turn on scan after signature update** and set the option to **Disabled**. Click **OK**. This prevents a scan from running immediately after an update.
 
-**Use Configuration Manager to disable scans after an update:**
-
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
-
-2. Go to the **Scheduled scans** section and configure the following setting:
-
-3. Set **Check for the latest Security intelligence updates before running a scan** to **No**. This prevents a scan after an update.
-
-4. Click **OK**.
-
-5. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
-
 ### Scan VMs that have been offline 
 
-This setting will help ensure protection for a VM that has been offline for some time or has otherwise missed a scheduled scan.
+1. Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:
 
-**Use Group Policy to enable a catch-up scan:**
+1. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. Click **OK**. This forces a scan if the VM has missed two or more consecutive scheduled scans.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+### Enable headless UI mode
+   - Double-click **Enable headless UI mode** and set the option to **Enabled**. Click **OK**. This hides the entire Windows Defender AV user interface from users.
 
-3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:
-
-5. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. Click **OK**. This forces a scan if the VM has missed two or more consecutive scheduled scans.
-
-**Use Configuration Manager to disable scans after an update:**
-
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
-
-2. Go to the **Scheduled scans** section and configure the following setting:
-
-3. Set **Force a scan of the selected scan type if client computer is offline during...** to **Yes**. This forces a scan if the VM has missed two or more consecutive scheduled scans.
-
-4. Click **OK**.
-
-5. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Exclusions
 On Windows Server 2016, Windows Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
 - [Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus)
+
 
 ## Additional resources
 

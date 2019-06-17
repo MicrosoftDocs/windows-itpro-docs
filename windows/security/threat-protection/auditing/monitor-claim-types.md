@@ -30,7 +30,7 @@ Use the following procedures to configure settings to monitor changes to claim t
 Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+ 
 **To configure settings to monitor changes to claim types**
 
 1.  Sign in to your domain controller by using domain administrator credential.

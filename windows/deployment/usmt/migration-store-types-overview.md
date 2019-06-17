@@ -3,12 +3,12 @@ title: Migration Store Types Overview (Windows 10)
 description: Migration Store Types Overview
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -60,7 +60,7 @@ If there is not enough local disk space, or if you are moving the user state to 
 **Important**  
 If possible, have users store their data within their %UserProfile%\\My Documents and %UserProfile%\\Application Data folders. This will reduce the chance of USMT missing critical user data that is located in a directory that USMT is not configured to check.
 
- 
+ 
 
 ### <a href="" id="bkmk-localonly"></a>The /localonly Command-Line Option
 
@@ -71,9 +71,9 @@ You should use this option to exclude the data from removable drives and network
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

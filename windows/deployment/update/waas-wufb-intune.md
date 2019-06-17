@@ -4,12 +4,12 @@ description: Configure Windows Update for Business settings using Microsoft Intu
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 
@@ -186,7 +186,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 4. Name the policy **Windows Update for Business - CBB1**. Then, in the **OMA-URI Settings** section, click **Add**.
 
-4. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
+5. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
 
 6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
 
@@ -198,7 +198,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
     
 8. Because the **Ring 4 Broad business users** deployment ring receives the CBB feature updates immediately, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
-8. In **Setting name**, type **Defer feature updates for 0 days**, and then select **Integer** from the **Data type** list.
+9. In **Setting name**, type **Defer feature updates for 0 days**, and then select **Integer** from the **Data type** list.
 
 10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
@@ -206,14 +206,14 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
     ![Settings for this policy](images/waas-wufb-intune-cbb1a.png)
 
-9. Click **Save Policy**.
+12. Click **Save Policy**.
 
-9. In the **Deploy Policy: Windows Update for Business – CBB1** dialog box, click **Yes**.
+13. In the **Deploy Policy: Windows Update for Business – CBB1** dialog box, click **Yes**.
 
-    >[!NOTE]
-    >If this dialog box doesn't appear, select the policy, and then click **Manage Deployment**.
+     >[!NOTE]
+     >If this dialog box doesn't appear, select the policy, and then click **Manage Deployment**.
     
-10. In the **Manage Deployment: Windows Update for Business – CBB1** dialog box, select the **Ring 4 Broad business users** group, click **Add**, and then click **OK**.
+14. In the **Manage Deployment: Windows Update for Business – CBB1** dialog box, select the **Ring 4 Broad business users** group, click **Add**, and then click **OK**.
 
 You have now configured the **Ring 4 Broad business users** deployment ring to receive CBB feature updates as soon as they’re available. Finally, configure **Ring 5 Broad business users #2** to accommodate a 7-day delay for quality updates and a 14-day delay for feature updates. 
 
@@ -228,7 +228,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 
 4. Name the policy **Windows Update for Business - CBB2**. Then, in the **OMA-URI Settings** section, click **Add**.
 
-4. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
+5. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
 
 6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
 
@@ -240,30 +240,30 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
     
 8. In the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
-8. In **Setting name**, type **Defer quality updates for 7 days**, and then select **Integer** from the **Data type** list.
+9. In **Setting name**, type **Defer quality updates for 7 days**, and then select **Integer** from the **Data type** list.
 
 10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **7**, and then click **OK**.
 
-8. In the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
+12. In the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
-8. In **Setting name**, type **Defer feature updates for 14 days**, and then select **Integer** from the **Data type** list.
+13. In **Setting name**, type **Defer feature updates for 14 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
+14. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
-11.	In the **Value** box, type **14**, and then click **OK**.
+15. In the **Value** box, type **14**, and then click **OK**.
 
     ![Settings for this policy](images/waas-wufb-intune-cbb2a.png)
 
-9. Click **Save Policy**.
+16. Click **Save Policy**.
 
-9. In the **Deploy Policy: Windows Update for Business – CBB2** dialog box, click **Yes**.
+17. In the **Deploy Policy: Windows Update for Business – CBB2** dialog box, click **Yes**.
 
-    >[!NOTE]
-    >If this dialog box doesn't appear, select the policy, and then click **Manage Deployment**.
+     >[!NOTE]
+     >If this dialog box doesn't appear, select the policy, and then click **Manage Deployment**.
     
-10. In the **Manage Deployment: Windows Update for Business – CBB2** dialog box, select the **Ring 5 Broad Business Users #2** group, click **Add**, and then click **OK**.
+18. In the **Manage Deployment: Windows Update for Business – CBB2** dialog box, select the **Ring 5 Broad Business Users #2** group, click **Add**, and then click **OK**.
 
 ## Related topics
 
