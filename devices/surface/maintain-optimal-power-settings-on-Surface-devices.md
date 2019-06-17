@@ -103,7 +103,7 @@ Power slider enables four states as described in the following table:
 
 | Slider mode| Description |
 |---|---|
-| Battery saver| Helps conserve power and prolong battery life when the system is disconnected from a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).|
+| Battery saver| Helps conserve power and prolong battery life when the system is disconnected from a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver).|
 | Recommended | Delivers longer battery life than the default settings in earlier versions of Windows. |
 | Better Performance | Slightly favors performance over battery life, functioning as the default slider mode. |
 | Best Performance | Favors performance over power for workloads requiring maximum performance and responsiveness, regardless of battery power consumption.|
