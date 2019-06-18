@@ -6,11 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greg-lindsay
 ms.date: 10/31/2017
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 # How to install fonts that are missing after upgrading to Windows 10
