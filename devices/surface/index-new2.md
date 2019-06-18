@@ -96,7 +96,6 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                               <br>
                               <ul class="cardsFTitle panelContent singlePanelContent" style="display:flex!important;">
                                     <li>
-                                        <a href="  ">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -106,12 +105,13 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Link name</h3>
+                                                       <h3>Communities</h3>
+                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
+                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                     </li>
                                     <li>
                                         <a href="  ">
