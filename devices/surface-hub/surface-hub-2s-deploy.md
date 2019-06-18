@@ -1,5 +1,5 @@
 ---
-title: "Deploy Surface Hub 2S"
+title: "Create provisioning packages for Surface Hub 2S"
 description: "This page describes how to deploy Surface Hub 2S using provisioning packages and other tools."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -11,9 +11,7 @@ ms.topic: article
 ms.localizationpriority: Normal
 ---
 
-# Deploy Surface Hub 2S
-
-## Deploy Surface Hub 2S with a provisioning package
+# Create provisioning packages for Surface Hub 2S
 
 You can use Windows Configuration Designer (WCD) to create provisioning packages to automate the deployment process of Surface Hub 2S. Use provisioning packages to add certificates, configure proxies, set up device administrators and device accounts. You can also use provisioning packages along with a configuration file to deploy multiple Surface Hubs with a single USB thumb drive.
 
