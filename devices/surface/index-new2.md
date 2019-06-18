@@ -16,7 +16,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft Surface</h1>
-        <p>Learn how to plan, deploy, and manage Microsoft Surface and Surface Hub devices.</p>
+        <p>Learn how to plan, deploy, and manage Microsoft Surface and Surface Hub devices.<br><br></p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -30,8 +30,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <a href="https://technet.microsoft.com/en-us/library/gg293124.aspx">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/OfficeAdmins400x140.svg" alt="Office admins" />
+                                                        <a href="get-started.md">
+                                                            <img src="https://docs.microsoft.com/media/hubs/windows/win_it-pro-5.svg" alt="Surface Devices" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -45,13 +45,13 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                 </a>
                             </li>
                             <li>
-                                <a href="/SkypeForBusiness/skype-for-business-online">
+                                <a href="https://docs.microsoft.com/surface-hub/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/OfficeAdmins400x140.svg" alt="Office admins" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/windows/win_it-pro-6.svg" alt="Surface Hub" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -64,13 +64,13 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                 </a>
                             </li>
                             <li>
-                                <a href="/powershell/skype/intro">
+                                <a href="https://www.microsoft.com/surface/business">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/OfficeAdmins400x140.svg" alt="Office admins" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/OfficeAdmins400x140.svg" alt="Surface for Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -92,7 +92,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started.svg" alt="Get started" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/blog-site-blue.svg" alt="Communities" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -110,13 +110,12 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Learn" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Learn</h3>
                                                         <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
-                                                        <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-84" target="_blank">Something 2</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,7 +127,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Need help?" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
