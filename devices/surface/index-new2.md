@@ -25,14 +25,13 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsK">
                             <li>
+                                <a href="get-started.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <a href="get-started.md">
                                                             <img src="https://docs.microsoft.com/media/hubs/windows/win_it-pro-5.svg" alt="Surface Devices" />
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -56,7 +55,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Surface Hub</h3>
-                                                    <p>Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming, collaboration, and presentations. Learn how to plan, deploy, manage, and support your Surface Hub devices.</p>
+                                                    <p>Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Learn how to plan, deploy, manage, and support your Surface Hub devices.</p>
                                                 </div>
                                             </div>
                                         </div>
