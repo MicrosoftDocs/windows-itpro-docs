@@ -41,7 +41,7 @@ It provides the following solutions to frequently-cited gaps across security ope
  
 To discover endpoint vulnerabilities and misconfiguration, Threat & Vulnerability Management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead, and provides:
 - Real-time device inventory. Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
-- Visibility into software and vulnerabilities. Optics into the organization’s software inventory, as well as software changes like installations, uninstallations, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
+- Visibility into software and vulnerabilities. Optics into the organization’s software inventory, and software changes like installations, uninstallations, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
 - Application runtime context. Visibility on application usage patterns for better prioritization and decision-making.
 - Configuration posture. Visibility into organizational security configuration or misconfigurations. Issues are reported in the dashboard with actionable security recommendations.
  
@@ -50,7 +50,7 @@ To discover endpoint vulnerabilities and misconfiguration, Threat & Vulnerabilit
 Threat & Vulnerability Management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, Threat & Vulnerability Management in Microsoft Defender ATP highlights the most critical weaknesses that need attention by fusing its security recommendations with dynamic threat and business context:
 - Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, Threat & Vulnerability Management dynamically aligns the prioritization of its security recommendations to focus on vulnerabilities that are currently being exploited in the wild and emerging threats that pose the highest risk.
 - Pinpointing active breaches. Microsoft Defender ATP correlates Threat & Vulnerability Management and EDR insights to provide the unique ability to prioritize vulnerabilities that are currently being exploited in an active breach within the organization.
-- Protecting high-value assets. Microsoft Defender ATP’s integration with Azure Information Protection allows Threat & Vulnerability Management to call attention to exposed machines with business-critical applications, confidential data, or high-value users.
+- Protecting high-value assets. Microsoft Defender ATP’s integration with Azure Information Protection allows Threat & Vulnerability Management to identify the exposed machines with business-critical applications, confidential data, or high-value users.
  
 ### Seamless remediation
  
