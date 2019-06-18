@@ -38,9 +38,6 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="cardText">
                                                     <h3>Card name</h3>
                                                     <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,9 +57,6 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="cardText">
                                                     <h3>Card name</h3>
                                                     <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,9 +76,6 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                 <div class="cardText">
                                                     <h3>Card name</h3>
                                                     <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
                                                 </div>
                                             </div>
                                         </div>
