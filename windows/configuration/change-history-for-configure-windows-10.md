@@ -214,7 +214,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 | New or changed topic | Description |
 | --- | --- |
 | [Configure cellular settings for tablets and PCs](provisioning-apn.md) | New |
-| [ Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
 
 
 ## April 2017

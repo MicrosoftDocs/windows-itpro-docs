@@ -565,7 +565,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you can choose optional settings.
 
-![Advanced optional settings ](images/wip-azure-advanced-settings-optional.png)
+![Advanced optional settings](images/wip-azure-advanced-settings-optional.png)
    
 **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile.** Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
         

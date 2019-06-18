@@ -61,5 +61,5 @@ Windows 10 version 1703 or higher is required to use Windows Autopilot. See [Win
 
 ## Related topics
 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/en-us/intune/enrollment-autopilot)<br>
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot)<br>
 [Windows Autopilot scenarios and capabilities](windows-autopilot-scenarios.md)

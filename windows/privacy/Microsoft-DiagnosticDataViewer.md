@@ -46,7 +46,7 @@ Using the Diagnostic Data Viewer for PowerShell requires administrative (elevate
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
-   >It is recommended to visit the documentation on [Getting Started](https://docs.microsoft.com/en-us/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
+   >It is recommended to visit the documentation on [Getting Started](https://docs.microsoft.com/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
 To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell
@@ -106,9 +106,9 @@ The Diagnostic Data Viewer for PowerShell provides you with the following featur
 
 - **View your diagnostic events.** Running `PS C:\> Get-DiagnosticData`, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
-    Each event is displayed as a PowerShell Object. By default each event shows the event name, the time when it was seen by your Windows device, whether the event is [Basic](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization), its [diagnostic event category](#view-diagnostic-event-categories), and a detailed JSON view of the information it contains, which shows the event exactly as it was when sent to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
+    Each event is displayed as a PowerShell Object. By default each event shows the event name, the time when it was seen by your Windows device, whether the event is [Basic](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization), its [diagnostic event category](#view-diagnostic-event-categories), and a detailed JSON view of the information it contains, which shows the event exactly as it was when sent to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
 
-- <a id="view-diagnostic-event-categories" />**View diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data).  
+- <a id="view-diagnostic-event-categories" />**View diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data).  
     
     To view the diagnostic category represented by each numeric identifier and what the category means, you can run the command:
 
@@ -186,4 +186,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)
+- [Documentation for Diagnostic Data Viewer for PowerShell](https://docs.microsoft.com/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)

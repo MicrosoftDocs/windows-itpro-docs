@@ -61,7 +61,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
@@ -115,7 +115,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
