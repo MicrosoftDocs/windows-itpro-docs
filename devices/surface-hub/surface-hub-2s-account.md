@@ -48,5 +48,3 @@ For more information, see [Configure Surface Hub 2S accounts with PowerShell](su
 - **Skype for Business:** For Skype for Business only (on-premises or online), you can enable the Skype for Business object by running **Enable-CsMeetingRoom** to enable features such as Meeting room prompt for audio and Lobby hold.
 - **Calling features:** Regardless of your Office 365 licensing configuration, run *Enable-CsMeetingRoom* to enable features such as **Meeting room prompt for audio** and **Lobby hold**.
 - **Calendar:** Set **Calendar Auto processing** for this account.
-
-For more information, see [Create Surface Hub 2S using PowerShell](surface-hub-2s-configure-with-powershell.md).
