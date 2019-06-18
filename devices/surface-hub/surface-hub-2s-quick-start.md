@@ -30,14 +30,18 @@ ms.localizationpriority: Normal
 | 4. **Attach accessories and power on** | |
 | Install accessories and attach power cable as shown. See guides on the screen cling. Remove cling wrap from the screen. Press the power button to power on. | ![* Attach accessories and power on *](images/sh2-setup-4.png) <br> |
 
-## Install pen and camera
+## Install and adjust pen 
 
 1. Attach Surface Hub 2 pen magnetically to your preferred side of the device.
 
-![*Surface Hub 2S pen *](images/sh2-pen.png) <br>
-A red LED indicator light on the pen warns you when the battery is low.
+![*Surface Hub 2 pen comes ready to use. To replace AAA battery, pull off the top button and insert battery as shown. The indicator light will turn red when the battery is low.*](images/sh2-pen.png) <br>
 
-2. Remove the lens cling from the camera and attach it to the USB-C port on the top of the Surface Hub 2S. 
+2. To adjust pen pressure, open the Surface app on Surface Hub 2S, select Pen, and adjust the slider.
+
+![*Adjust the slider to change pen pressure *](images/sh2-pen-pressure.png) <br>
+
+## Install camera
+Remove the lens cling from the camera and attach it to the USB-C port on the top of the Surface Hub 2S.
 
 ## Start Surface Hub 2S
 
