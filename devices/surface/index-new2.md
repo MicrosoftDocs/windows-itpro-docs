@@ -70,7 +70,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/OfficeAdmins400x140.svg" alt="Surface for Business" />
+                                                        <img src="https://docs.microsoft.com/en-us//office/media/icons/small-business-blue.svg" alt="Surface for Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
