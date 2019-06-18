@@ -17,7 +17,7 @@ ms.date: 05/21/2019
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-To view the Policy DDF files for different Windows 10 versions, click the respective links below:
+You can view various Policy DDF files by clicking the following links:
 
 - [View the Policy DDF file for Windows 10, version 1903](http://download.microsoft.com/download/0/C/D/0CD61812-8B9C-4846-AC4A-1545BFD201EE/PolicyDDF_all_1903.xml)
 - [View the Policy DDF file for Windows 10, version 1809](http://download.microsoft.com/download/7/3/5/735B8537-82F4-4CD1-B059-93984F9FAAC5/Policy_DDF_all_1809.xml)
@@ -28,7 +28,7 @@ To view the Policy DDF files for different Windows 10 versions, click the respec
 - [View the Policy DDF file for Windows 10, version 1607](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
 - [View the Policy DDF file for Windows 10, version 1607 release 8C](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 
-To download DDF files for various CSPs, click [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+You can download DDF files for various CSPs from [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
 The XML below is the DDF for Windows 10, version 1903.
 
