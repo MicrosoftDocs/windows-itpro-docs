@@ -406,45 +406,113 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
-  <Version>1.3.0.0</Version>
-  <ProfileName>DiskSpaceBlockInDownLevel</ProfileName>
-  <ProfileGuid>6080AFAC-892E-4903-94EA-7A17E69E549E</ProfileGuid>
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+  <Version>1.5.0.0</Version>
+  <ProfileName>FindSPFatalError</ProfileName>
+  <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
   <SystemInfo>
     <MachineName>Offline</MachineName>
-    <Manufacturer>Microsoft Corporation</Manufacturer>
-    <Model>Virtual Machine</Model>
-    <HostOSArchitecture>x64</HostOSArchitecture>
+    <Manufacturer>Gigabyte Technology Co., Ltd.</Manufacturer>
+    <Model>X470 AORUS ULTRA GAMING</Model>
+    <HostOSArchitecture>1033</HostOSArchitecture>
     <FirmwareType>UEFI</FirmwareType>
-    <BiosReleaseDate>20171012000000.000000+000</BiosReleaseDate>
-    <BiosVendor>Hyper-V UEFI Release v2.5</BiosVendor>
-    <BiosVersion>Hyper-V UEFI Release v2.5</BiosVersion>
-    <HostOSVersion>10.0.14393</HostOSVersion>
-    <HostOSBuildString>14393.1794.amd64fre.rs1_release.171008-1615</HostOSBuildString>
-    <TargetOSBuildString>10.0.16299.15 (rs3_release.170928-1534)</TargetOSBuildString>
-    <HostOSLanguageId>1033</HostOSLanguageId>
-    <HostOSEdition>Core</HostOSEdition>
-    <RegisteredAV />
+    <BiosReleaseDate>20180808000000.000000+000</BiosReleaseDate>
+    <BiosVendor>F3</BiosVendor>
+    <BiosVersion />
+    <HostOSVersion>10.0.18908</HostOSVersion>
+    <HostOSBuildString>18908.1000.amd64fre.rs_prerelease.190524-1658</HostOSBuildString>
+    <TargetOSBuildString>10.0.18912.1001 (rs_prerelease.190601-1739)</TargetOSBuildString>
+    <HostOSLanguageId />
+    <HostOSEdition>Professional</HostOSEdition>
+    <RegisteredAV>Windows Defender</RegisteredAV>
     <FilterDrivers />
-    <UpgradeStartTime>2017-12-21T12:56:22</UpgradeStartTime>
+    <UpgradeStartTime>2019-06-06T21:19:10</UpgradeStartTime>
     <UpgradeElapsedTime />
-    <UpgradeEndTime>2017-12-21T13:22:46</UpgradeEndTime>
+    <UpgradeEndTime>2019-06-06T22:21:49</UpgradeEndTime>
     <RollbackStartTime>0001-01-01T00:00:00</RollbackStartTime>
     <RollbackEndTime>0001-01-01T00:00:00</RollbackEndTime>
     <RollbackElapsedTime />
+    <FinalizeStartTime>0001-01-01T00:00:00</FinalizeStartTime>
+    <PostOOBESuccessTime>0001-01-01T00:00:00</PostOOBESuccessTime>
+    <TotalOfflineTime />
     <CommercialId>Offline</CommercialId>
-    <SetupReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</SetupReportId>
-    <ReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</ReportId>
+    <CV>MgUweCZk90KdwUiZ</CV>
+    <SetupReportId>F21F8FB6-00FD-4349-84FB-2AC75F389E73</SetupReportId>
+    <ReportId>F21F8FB6-00FD-4349-84FB-2AC75F389E73</ReportId>
   </SystemInfo>
-  <FailureData>Warning: Found Disk Space Hard Block.</FailureData>
-  <Remediation>You must free up at least "6603" MB of space on the System Drive, and try again.</Remediation>
+  <LogErrorLine>2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</LogErrorLine>
+  <FailureData>
+Error: SetupDiag reports Fatal Error.
+Last Setup Phase = Downlevel
+Last Setup Operation: Gather data, scope: EVERYTHING
+Error: 0x00000057</FailureData>
+  <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
+  <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
+  <FailureData>
+Refer to "https://docs.microsoft.com/en-us/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
+  <FailureDetails>Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel</FailureDetails>
 </SetupDiag>
 ```
 
 ### JSON log sample
 
 ```
-{"Version":"1.3.0.0","ProfileName":"DiskSpaceBlockInDownLevel","ProfileGuid":"6080AFAC-892E-4903-94EA-7A17E69E549E","SystemInfo":{"BiosReleaseDate":"20171012000000.000000+000","BiosVendor":"Hyper-V UEFI Release v2.5","BiosVersion":"Hyper-V UEFI Release v2.5","CV":null,"CommercialId":"Offline","FilterDrivers":"","FirmwareType":"UEFI","HostOSArchitecture":"x64","HostOSBuildString":"14393.1794.amd64fre.rs1_release.171008-1615","HostOSEdition":"Core","HostOSLanguageId":"1033","HostOSVersion":"10.0.14393","MachineName":"Offline","Manufacturer":"Microsoft Corporation","Model":"Virtual Machine","RegisteredAV":"","ReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","RollbackElapsedTime":"PT0S","RollbackEndTime":"\/Date(-62135568000000-0800)\/","RollbackStartTime":"\/Date(-62135568000000-0800)\/","SDMode":1,"SetupReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","TargetOSArchitecture":null,"TargetOSBuildString":"10.0.16299.15 (rs3_release.170928-1534)","UpgradeElapsedTime":"PT26M24S","UpgradeEndTime":"\/Date(1513891366000-0800)\/","UpgradeStartTime":"\/Date(1513889782000-0800)\/"},"FailureData":["Warning: Found Disk Space Hard Block."],"DeviceDriverInfo":null,"Remediation":["You must free up at least \"6603\" MB of space on the System Drive, and try again."]}
+{
+    "Version":"1.5.0.0",
+    "ProfileName":"FindSPFatalError",
+    "ProfileGuid":"A4028172-1B09-48F8-AD3B-86CDD7D55852",
+    "SystemInfo":{
+        "BiosReleaseDate":"20180808000000.000000+000",
+        "BiosVendor":"F3",
+        "BiosVersion":"F3",
+        "CV":"MgUweCZk90KdwUiZ",
+        "CommercialId":"Offline",
+        "FilterDrivers":"",
+        "FinalizeStartTime":"\/Date(-62135568000000-0800)\/",
+        "FirmwareType":"UEFI",
+        "HostOSArchitecture":"x64",
+        "HostOSBuildString":"18908.1000.amd64fre.rs_prerelease.190524-1658",
+        "HostOSEdition":"Professional",
+        "HostOSLanguageId":"",
+        "HostOSVersion":"",
+        "MachineName":"Offline",
+        "Manufacturer":"Gigabyte Technology Co., Ltd.",
+        "Model":"X470 AORUS ULTRA GAMING",
+        "PostOOBESuccessTime":"\/Date(-62135568000000-0800)\/",
+        "RegisteredAV":"Windows Defender",
+        "ReportId":"F21F8FB6-00FD-4349-84FB-2AC75F389E73",
+        "RollbackElapsedTime":"PT0S",
+        "RollbackEndTime":"\/Date(-62135568000000-0800)\/",
+        "RollbackStartTime":"\/Date(-62135568000000-0800)\/",
+        "SetupReportId":"F21F8FB6-00FD-4349-84FB-2AC75F389E73",
+        "TargetOSArchitecture":null,
+        "TargetOSBuildString":"10.0.18912.1001 (rs_prerelease.190601-1739)",
+        "TotalOfflineTime":"PT0S",
+        "UpgradeElapsedTime":"PT1H2M39S",
+        "UpgradeEndTime":"\/Date(1559884909000-0700)\/",
+        "UpgradeStartTime":"\/Date(1559881150000-0700)\/"
+    },
+    "LogErrorLine":"2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+        gle=0x00000057
+    ]",
+    "FailureData":[
+        "\u000aError: SetupDiag reports Fatal Error.\u000aLast Setup Phase = Downlevel\u000aLast Setup Operation: Gather data, scope: EVERYTHING\u000aError: 0x00000057",
+        "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+            gle=0x00000057
+        ]",
+        "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+            gle=0x00000057
+        ]",
+        "\u000aRefer to \"https:\/\/docs.microsoft.com\/en-us\/windows\/desktop\/Debug\/system-error-codes\" for error information."
+    ],
+    "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
+    "DeviceDriverInfo":null,
+    "Remediation":[
+        
+    ],
+    "SetupPhaseInfo":null,
+    "SetupOperationInfo":null
+}
 ```
 
 ## Sample registry key
