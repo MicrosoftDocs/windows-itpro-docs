@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Watch this video to learn more about Windows Autopilot in Micrsoft Store for Business. </br>
+Watch this video to learn more about Windows Autopilot in Microsoft Store for Business. </br>
 
 > [!video https://www.microsoft.com/en-us/videoplayer/embed/3b30f2c2-a3e2-4778-aa92-f65dbc3ecf54?autoplay=false]
 
