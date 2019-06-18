@@ -106,6 +106,19 @@ ADMX Info:
 -   GP ADMX file name: *Printing.admx*
 
 <!--/ADMXBacked-->
+
+<!--Example-->
+Example
+```
+Name: Point and Print Enable Oma-URI: ./Device/Vendor/MSFT/Policy/Config/Printers/PointAndPrintRestrictions
+Data type: String Value: <enabled/>
+<data id="PointAndPrint_TrustedServers_Chk" value="true"/>
+<data id="PointAndPrint_TrustedServers_Edit" value="Printserver1.Contoso.com"/>
+<data id="PointAndPrint_TrustedForest_Chk" value="false"/>
+<data id="PointAndPrint_NoWarningNoElevationOnInstall_Enum" value="1"/>
+<data id="PointAndPrint_NoWarningNoElevationOnUpdate_Enum" value="2"/>
+```
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>
