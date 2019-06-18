@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 Here's the XSD for the AppLocker CSP.
 
-``` syntax
+```xml
 <?xml version="1.0"?>  
 
 <xs:schema attributeFormDefault="unqualified"  
