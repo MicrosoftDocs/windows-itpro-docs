@@ -30,7 +30,7 @@ It helps organizations discover vulnerabilities and misconfigurations in real-ti
 ## Next-generation capabilities 
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
-It is the first solution in the industry to automate the remediation process through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) for patching, configuration changes, or upgrades.
+It is the first solution in the industry to bridge the Security Administion-IT Administration gap during the remediation process by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
 
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
@@ -42,8 +42,8 @@ It provides the following solutions to frequently-cited gaps across security ope
 To discover endpoint vulnerabilities and misconfiguration, Threat & Vulnerability Management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead, and provides:
 - Real-time device inventory. Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
 - Visibility into software and vulnerabilities. Optics into the organization’s software inventory, as well as software changes like installations, uninstallations, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
-- Application runtime context. Constant visibility into application usage patterns for better prioritization and decision-making. Critical dependencies, such as vulnerable runtime libraries being loaded by other applications, are made visible.
-- Configuration posture. Visibility into organizational security configuration, surfacing issues like disabled antivirus, enabled SMBv1, or misconfigurations that could allow escalation of privileges. Issues are reported in the dashboard with actionable security recommendations.
+- Application runtime context. Visibility on application usage patterns for better prioritization and decision-making.
+- Configuration posture. Visibility into organizational security configuration or misconfigurations. Issues are reported in the dashboard with actionable security recommendations.
  
 ### Intelligence-driven prioritization
  
