@@ -31,7 +31,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                            <img src="https://docs.microsoft.com/media/hubs/windows/win_it-pro-5.svg" alt="Surface Devices" />
+                                                            <img src="images/surface-devices-400x140.svg" alt="Surface Devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -50,7 +50,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/windows/win_it-pro-6.svg" alt="Surface Hub" />
+                                                        <img src="images/surface-hub-400x140.svg" alt="Surface Hub" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -69,12 +69,12 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us//office/media/icons/small-business-blue.svg" alt="Surface for Business" />
+                                                        <img src="images/surface-workplace-400x140.svg" alt="Surface for Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Surface for Business</h3>
-                                                    <p>Learn about Surface devices for the modern workplace.</p>
+                                                    <p>Explore how Surface devices are transforming the modern workplace with people-centric design and flexible form factors, helping you get the most out of AI, big data, the cloud, and other foundational technologies.</p>
                                                 </div>
                                             </div>
                                         </div>
