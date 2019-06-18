@@ -515,7 +515,7 @@ The following table shows the Group Policy settings that are used to deny networ
 
     2.  Double-click **Deny log on through Remote Desktop Services**.
 
-    3.  Click **Add User or Group**, type type **Local account and member of Administrators group**, and &gt; **OK**. 
+    3.  Click **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**. 
 
 8.  Link the GPO to the first **Workstations** OU as follows:
 

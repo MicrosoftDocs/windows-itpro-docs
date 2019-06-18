@@ -31,7 +31,7 @@ You first need to [create an app](apis-intro.md).
 ## Use case
 
 A common scenario is scheduling an advanced query and using the results for follow up actions and processing.
-In this section we share sample for this purpose using [Microsoft Flow](https://flow.microsoft.com/) (or [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/)).
+In this section we share sample for this purpose using [Microsoft Flow](https://flow.microsoft.com/) (or [Logic Apps](https://azure.microsoft.com/services/logic-apps/)).
 
 ## Define a flow to run query and parse results
 

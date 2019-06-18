@@ -104,7 +104,7 @@ At this point, the IT administrator can set a policy to pause the update. In thi
 
 ![illustration of rings with pause quality update check box selected](images/waas-wufb-pause.png)
 
-Now all devices are paused from updating for 35 days. When the the pause is removed, they will be offered the *next* quality update, which ideally will not have the same issue. If there is still an issue, the IT admin can pause updates again.
+Now all devices are paused from updating for 35 days. When the pause is removed, they will be offered the *next* quality update, which ideally will not have the same issue. If there is still an issue, the IT admin can pause updates again.
 
 
 

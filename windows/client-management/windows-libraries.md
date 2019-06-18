@@ -117,7 +117,7 @@ See the [Library Description Schema](https://go.microsoft.com/fwlink/?LinkId=159
 
 ### Concepts
 
-- [Windows Search Features ](https://technet.microsoft.com/library/dd744686.aspx)
+- [Windows Search Features](https://technet.microsoft.com/library/dd744686.aspx)
 - [Windows Indexing Features](https://technet.microsoft.com/library/dd744700.aspx)
 - [Federated Search Features](https://technet.microsoft.com/library/dd744682.aspx)
 - [Administrative How-to Guides](https://technet.microsoft.com/library/ee461108.aspx)

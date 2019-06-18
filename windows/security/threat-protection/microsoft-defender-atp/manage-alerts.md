@@ -116,7 +116,7 @@ Added comments instantly appear on the pane.
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules.md)
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)

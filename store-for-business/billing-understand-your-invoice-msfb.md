@@ -111,7 +111,7 @@ If you have third-party services in your bill, the name and address of each publ
 If prices were converted to your local currency, the exchange rates are listed in this section at the bottom of the invoice. All Azure charges are priced in USD and third-party services are priced in the seller's currency.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-invoice-mca).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice-mca).
 
 ## Need help? Contact us.
 
