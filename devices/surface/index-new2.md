@@ -114,6 +114,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Learn</h3>
+                                                        <P><a href="https://docs.microsoft.com/learn/browse/?term=Surface" target="_blank">Surface training on Microsoft Learn</a></p>
                                                         <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
                                                     </div>
                                                 </div>

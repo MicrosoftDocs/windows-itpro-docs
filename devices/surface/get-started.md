@@ -137,8 +137,11 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Discover Surface tools</h3>
-                        <p>NEED UPDATE</p>
-                        <p>NEED UPDATE</p>
+                         <P><a href="surface-diagnostic-toolkit-business.md">Surface Diagnostic Toolkit for Business</a></p>
+                         <P><a href="surface-enterprise-management-mode.md">SEMM and UEFI</a></p>
+                         <P><a href="microsoft-surface-brightness-control.md">Surface Brightness Control</a></p>
+                         <P><a href="microsoft-surface-data-eraser.md">Surface Data Eraser</a></p>
+                         <P><a href="battery-limit.md">Battery Limit setting</a></p>
                     </div>
                 </div>
             </div>
