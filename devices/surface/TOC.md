@@ -29,7 +29,7 @@
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
 ### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
-## [Fix common Surface device issues using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business-intro.md)
+## [Fix common Surface device issues using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)
 ### [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
 ### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
 ### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
