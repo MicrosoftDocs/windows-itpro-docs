@@ -29,17 +29,17 @@ sections:
     columns: 3
     items:
     
-    - href: https://blogs.windows.com/windowsexperience/
+    - href: https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update/#1P75kJB6T5OhySyo.97
       html: Get the update >
       image: 
         src: https://docs.microsoft.com/media/common/i_deploy.svg
       title: Windows 10, version 1903 rollout begins
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
       html: Read about the latest enhancements > 
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What’s new in Windows Update for Business
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
       html: Get an overview > 
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
