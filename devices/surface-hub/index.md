@@ -28,7 +28,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                         <h3>Overview</h3>
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099" target="_blank">Behind the design: Surface Hub 2S</a></p>
                         <p><a href="surface-hub-2s-whats-new.md">What's new in Surface Hub 2S</a></p>
-                        <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operation system essentials</a></p>
+                        <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operating system essentials</a></p>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,6 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                         <h3>Get ready for Surface Hub 2S</h3>
                         <p><a href="https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab" target="_blank">Ordering Surface Hub 2S</p>
                         <p><a href="surface-hub-2s-prepare-environment.md">Prepare your environment for Surface Hub 2S</p>
-                        <p><a href="surface-hub-2s-unpack.md">Unpacking Surface Hub 2S</p>
                         <p><a href="surface-hub-2s-install-mount.md">Install & mount Surface Hub 2S</p>
                     </div>
                 </div>

@@ -21,27 +21,6 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/task-list-planning-blue.svg" alt="Overview" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Overview</h3>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">NEED UPDATE</a></p>
-                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">NEED UPDATE</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">NEED UPDATE</a><p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">NEED UPDATE</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">NEED UPDATE</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/en-us/office/media/icons/task-checklist-planning-blue.svg" alt="Plan" />
                         </div>
                     </div>
@@ -73,9 +52,6 @@ Harness the power of Surface, Windows, and Office connected together through the
             </div>
         </div>
     </li>
-</ul>
-
-<ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -95,6 +71,9 @@ Harness the power of Surface, Windows, and Office connected together through the
             </div>
         </div>
     </li>
+</ul>
+
+<ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -125,7 +104,6 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Support</h3>
-                        <p><a href="surface-diagnostic-toolkit-business.md">Surface Diagnostic Toolkit</a></p>
                         <p><a href="support-solutions-surface.md">Top support solutions</a></p>
                     </div>
                 </div>
@@ -158,7 +136,7 @@ Harness the power of Surface, Windows, and Office connected together through the
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Integrate with Surface devices</h3>
+                        <h3>Discover Surface tools</h3>
                         <p>NEED UPDATE</p>
                         <p>NEED UPDATE</p>
                     </div>
@@ -174,6 +152,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                         <h3>Community</h3>
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
                     </div>
                 </div>
             </div>
