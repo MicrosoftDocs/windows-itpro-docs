@@ -1,6 +1,6 @@
 ---
-title: "Configure phone authentication for Surface Hub 2S"
-description: "Learn how to simplify signing in to Surface Hub 2S using phone authentication."
+title: "Configure Easy Authentication for Surface Hub 2S"
+description: "Learn how to simplify signing in to Surface Hub 2S using Easy Authentication on your mobile device."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
