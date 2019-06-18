@@ -30,7 +30,7 @@ It helps organizations discover vulnerabilities and misconfigurations in real-ti
 ## Next-generation capabilities 
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
-It is the first solution in the industry to bridge the Security Administion-IT Administration gap during the remediation process by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
+It is the first solution in the industry to bridge the Security Administion-IT Administration gap during the remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
 
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
