@@ -17,11 +17,11 @@ Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork
 
 |**Capability**|**Summary**|**Learn more**|
 |:-------|:------|:----|
-|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider.<br> <br>Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> <br> <br>[Surface Enterprise Management Mode](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode) |
+|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider.<br> <br> Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
 |**Cloud and on-premises coexistence**| Supports on-premises, hybrid, or online. | [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md) |
 |**Reset and recovery**| Restore from the cloud or USB drive. | [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md) |
 |**Microsoft Whiteboard**| Ofice 365 integration, intelligent ink, and Bing search bring powerful new capabilities, enabling a persistent digital canvas shareable across most browsers, Windows and iOS devices. | [Announcing a new whiteboard for your Surface Hub](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050) |
-|**Microsoft Teams Meeting Room License**| Extends Office 365 licensing options across Skype for Business, Microsoft Teams, and Intune. | [Teams Meeting Room Licensing Update](https://docs.microsoft.com/en-us/MicrosoftTeams/room-systems/skype-room-systems-v2-0) |
+|**Microsoft Teams Meeting Room License**| Extends Office 365 licensing options across Skype for Business, Microsoft Teams, and Intune. | [Teams Meeting Room Licensing Update](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0) |
 |**On-screen display**| Adjust volume, brightness, and input control directly on the display. |  |
 |**Sensor-activated Connected Standby**| Doppler sensor activates Connected Standby after 1 minute of inactivity.<br> <br>Manage this setting remotely using Intune or directly on the device from the Settings app. | [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) |
 |**Surface Hub pen**| Ergonomically redesigned and easily attachable on the sides of the device.  |  |
@@ -30,7 +30,7 @@ Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork
 
 For more information about what’s new in Surface Hub 2S, see:
 
-- [Surface Hub 2S product site](https://www.microsoft.com/en-us/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab)
+- [Surface Hub 2S product site](https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab)
 - [Behind the Design Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099)
 
 ## Surface Hub 2S compared with Surface Hub
