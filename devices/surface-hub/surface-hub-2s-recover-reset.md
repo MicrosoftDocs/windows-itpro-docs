@@ -52,3 +52,13 @@ Surface Hub 2S lets you reinstall the device using a recovery image, which allow
 4. In the language selection screen, select the display language for your Surface Hub 2S.
 5. Choose **Recover from a drive** and **Fully clean the drive** and then select **Recover**. If prompted for a BitLocker key, select **Skip this drive**. Surface Hub 2S reboots several times and takes approximately 30 minutes to complete the recovery process.
 Remove the USB drive when the first time setup screen appears.
+
+## Recover a locked Surface Hub
+
+On rare occasions, Surface Hub 2S may encounter an error during cleanup of user and app data at the end of a session. If this occurs, the device will automatically reboot and resume data cleanup. But if this operation fails repeatedly, the device will be automatically locked to protect user data.
+
+**To unlock Surface Hub 2S:** <br>
+Reset or recover the device from Windows Recovery Environment (Windows RE). For more information, see [What is Windows RE?](https://technet.microsoft.com/library/cc765966.aspx)
+
+> [!NOTE]
+> To enter recovery mode, you need to physically unplug and replug the power cord three times. 

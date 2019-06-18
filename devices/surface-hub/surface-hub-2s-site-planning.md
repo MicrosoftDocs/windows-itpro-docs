@@ -25,8 +25,8 @@ Designed for interactive use in smaller conference rooms and huddle spaces, Surf
 | **Room size**     | **Participants** | **Proximity**        | **Additional peripherals** |
 | ------------- | ------------ | -------------------- | -------------------------- |
 | Huddle        | 1-3          | 1–2 meters           | None                       |
-| Small meeting | 3-5          | Up to 2.3 meters     | None                       |
-| Larger meting | 5 +          | More than 2.3 meters | Peripherals recommended    |
+| Small meeting | 4-6          | Up to 2.3 meters     | None                       |
+| Larger meting | 6 +          | More than 2.3 meters | Peripherals recommended    |
 
 
 As a general guideline, install Surface Hub 2S in a space that meets the following criteria:

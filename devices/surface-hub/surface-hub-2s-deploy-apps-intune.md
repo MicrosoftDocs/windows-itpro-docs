@@ -44,4 +44,7 @@ You can deploy Universal Windows Platform (UWP) apps to Surface Hub 2S using Int
 5. After enabling Offline shopping, you can acquire offline licenses for apps that you can sync to Intune and deploy as Device licensing.
 6. In **Intune** > **Client apps** > **Microsoft Store for Business**, select **Sync**.
 7. In the Client apps page, search for the app in the apps list. Assign the apps to the desired device group or groups. Select **Assignments** > **Add group**. ![*Assigning apps to groups *](images/sh2-assign-group.png) <br>
-8. Under assignment type, choose **Required**. For the selected groups, choose **Device licensing** and then select **OK** and save the assignment.
+8. Under assignment type, choose **Required**.
+![*Assigning apps to groups *](images/sh2-add-group.png) <br>
+9. For the selected groups, choose **Device licensing** and then select **OK** and save the assignment.
+![*Assigning apps to groups *](images/sh2-apps-assign.png) <br>
