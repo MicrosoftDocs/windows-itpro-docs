@@ -33,7 +33,7 @@
 ### [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Local management for Surface Hub 2S settings](local-management-surface-hub-settings.md)
 ### [Manage device account password rotation](surface-hub-2s-manage-passwords.md)
-### [Servicing and updating for Surface Hub 2S](surface-hub-2s-service-update.md)
+### [Manage Windows updates](manage-windows-updates-for-surface-hub.md)
 ### [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)
