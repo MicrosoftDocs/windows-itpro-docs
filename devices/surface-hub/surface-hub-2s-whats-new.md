@@ -17,7 +17,7 @@ Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork
 
 |**Capability**|**Summary**|**Learn more**|
 |:-------|:------|:----|
-|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider.<br> <br>Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> <br> <br>[Surface Enterprise Management Mode](surface-enterprise-management-mode.md) |
+|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider.<br> <br>Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> <br> <br>[Surface Enterprise Management Mode](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode) |
 |**Cloud and on-premises coexistence**| Supports on-premises, hybrid, or online. | [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md) |
 |**Reset and recovery**| Restore from the cloud or USB drive. | [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md) |
 |**Microsoft Whiteboard**| Ofice 365 integration, intelligent ink, and Bing search bring powerful new capabilities, enabling a persistent digital canvas shareable across most browsers, Windows and iOS devices. | [Announcing a new whiteboard for your Surface Hub](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050) |
@@ -60,6 +60,6 @@ The following table details the differences between Surface Hub and Surface Hub 
 |**Software**| Windows 10 + Office (Word, PowerPoint, Excel) | Windows 10 + Office (Word, PowerPoint, Excel) | Windows 10 + Office (Word, PowerPoint, Excel) |
 
 > [!NOTE]
-> The NFC reader available in Surface Hub is discontinued in Surface Hub 2S and is no longer available.
+> The NFC reader available in the original Surface Hub is discontinued in Surface Hub 2S and is no longer available.
 
 To learn more about what’s new in Surface Hub 2S, see [Behind the design: Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099).
