@@ -80,7 +80,7 @@ Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
 > [!Note]
-> Deprecated in Windows 10, version 1607.
+> This node has been deprecated since Windows 10, version 1607.
 
 Added in Windows 10, version 1511. Optional. Disable the internet connectivity check for the profile.
 
