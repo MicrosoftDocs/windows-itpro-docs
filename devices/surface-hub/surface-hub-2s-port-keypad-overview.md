@@ -15,6 +15,9 @@ ms.localizationpriority: Normal
 
 This page describes the ports, physical buttons, and configuration information essential for connecting to Surface Hub 2S whether via wired, Wi-Fi, or Bluetooth methods. It also includes best practice recommendations for key connectivity scenarios.
 
+> [!NOTE]
+> You can find the serial number on the outside of the packaging, on the display by the power cord, or by using the Surface app. 
+
 The figure below shows the location of ports and physical buttons on a keypad attached to the underside of the device. The table includes detailed descriptions of each element.
 
  ![Front facing and underside view of I/O connections and physical buttons](images/hub2s-schematic.png)
@@ -37,11 +40,3 @@ The figure below shows the location of ports and physical buttons on a keypad at
 
  ![Rear facing view of wireless, audio, & related components](images/hub2s-rear.png)
 
-## Major system components
-
-Surface Hub 2S consists of two primary system components:
-
-|**Component**|**Functionality**|
-|:--------- |:----------------- |
-|**Video board**| - Produces the image on the LCD display. <br> - Provides an audio/video connection path to/from the compute module. <br> - Provides video scaling to support external video sources. <br> - Performs color correction and calibration. <br> - Responsible for power management, including occupancy sensors and device power states. <br> - Monitors and manages all thermal sensors throughout the device. <br> - Performs internal diagnostics. <br> - Captures diagnostics, error logs, and telemetry for all components not connected to the compute module. <br> - Controls the behavior of keypad buttons. <br> - Provides an on-screen display for control of video source, brightness, and volume. |
-|**Compute module**| Connects to and controls all USB devices. <br> - Provides video board interconnections for USB, Mini DP, HDMI, PCIe. <br> - Provides Ethernet access via wired and wireless interfaces. <br> Provides the on-screen audio/video content. <br> - Ingests audio/video provided by external sources. <br> - Allows video to be passed directly to the video board (bypassing the ingest process) for scenarios in which an external source is HDCP encrypted or is beyond the capability of the ingest subsystem. <br> - Provides digital audio output for accessibility and room audio systems respectively (USB dongle support only). |
