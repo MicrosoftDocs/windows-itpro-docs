@@ -107,7 +107,7 @@ Remediating issues in the security recommendations list will improve your config
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
 The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
-This capability allows you, the Security Administrator, to request for the IT Administrator to remediate a vulnerability or misconfiguration from the **Security recommendation** pages to Intune.
+Security Administrators like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
 
 1. Click on a security recommendation you would like to request remediation for, and then click **Remediation options**.
 
