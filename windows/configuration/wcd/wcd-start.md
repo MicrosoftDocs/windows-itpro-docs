@@ -34,7 +34,7 @@ Use StartLayout to select the `LayoutModification.xml` file that applies a custo
 >[!NOTE]
 >The XML file that defines the Start layout for Windows 10 Mobile must be named `LayoutModification.xml`.
 
-For more information, see [Start layout XML for mobile editions of Windows 10 ](../mobile-devices/lockdown-xml.md)).
+For more information, see [Start layout XML for mobile editions of Windows 10](../mobile-devices/lockdown-xml.md)).
 
 ## StartLayoutFilePath
 

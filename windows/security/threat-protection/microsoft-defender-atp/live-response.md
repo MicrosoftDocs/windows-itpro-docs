@@ -127,7 +127,7 @@ undo | Restores an entity that was remediated.
 
 
 ## Use live response commands
-The commands that you can use in the console follow similar principles as [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+The commands that you can use in the console follow similar principles as [Windows Commands](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the machine, and take remediation actions on an entity.
 

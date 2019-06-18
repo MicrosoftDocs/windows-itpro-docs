@@ -74,7 +74,7 @@ The configuration profile contains a custom settings payload that includes:
 To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
-  > You must set the the Preference Domain as "com.microsoft.wdav.atp"
+  > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
     ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 

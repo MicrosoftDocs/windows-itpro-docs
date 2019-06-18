@@ -5,6 +5,7 @@
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 
 ## Features removed or planned for replacement
+### [Windows 10 features lifecycle](features-lifecycle.md)
 ### [Windows 10, version 1903](windows-10-1903-removed-features.md)
 ### [Windows 10, version 1809](windows-10-1809-removed-features.md)
 ### [Windows 10, version 1803](windows-10-1803-removed-features.md)
