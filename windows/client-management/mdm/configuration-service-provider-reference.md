@@ -24,7 +24,7 @@ For information about the bridge WMI provider classes that map to these CSPs, se
 
 Additional lists:
 - [List of CSPs supported in Windows Holographic](#hololens)
-- [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
+- [List of CSPs supported in Microsoft Surface Hub](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
 
 <!--StartCSPs-->

@@ -90,7 +90,7 @@ App-V does not change your Microsoft Error Reporting settings. If you previously
 
 **Important Information:**
 
-Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <http://technet.microsoft.com/library/cc709644.aspx>.
+Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <https://technet.microsoft.com/library/cc709644.aspx>.
 
 ### Microsoft Update
 

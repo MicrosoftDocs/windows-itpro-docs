@@ -303,7 +303,7 @@ The Task Sequence will download content, reboot, format the drives and install W
 
 ### Register the device for Windows Autopilot
 
-Devices provisioned through Autopilot will only receive the guided OOBE Autopilot experience on first boot. Once updated to Windows 10, the device should be registered to ensure a continued Autopilot experience in the event of PC reset. You can enable automatic registration for an assigned group using the **Convert all targeted devices to Autopilot** setting. For more information, see [Create an Autopilot deployment profile](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#create-an-autopilot-deployment-profile).
+Devices provisioned through Autopilot will only receive the guided OOBE Autopilot experience on first boot. Once updated to Windows 10, the device should be registered to ensure a continued Autopilot experience in the event of PC reset. You can enable automatic registration for an assigned group using the **Convert all targeted devices to Autopilot** setting. For more information, see [Create an Autopilot deployment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile).
 
 Also see [Adding devices to Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices).
 

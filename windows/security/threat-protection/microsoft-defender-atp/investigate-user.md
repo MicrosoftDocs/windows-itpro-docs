@@ -85,7 +85,7 @@ You can filter the results by the following time periods:
 - 6 months
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)

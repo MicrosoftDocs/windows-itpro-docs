@@ -476,7 +476,7 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [CodeIntegrityEnabled](#codeintegrityenabled)
 - [TestSigningEnabled](#testsigningenabled)
 - [SafeMode](#safemode)
-- [WinPE ](#winpe)
+- [WinPE](#winpe)
 - [ELAMDriverLoaded](#elamdriverloaded) ***
 - [VSMEnabled](#vsmenabled)
 - [PCRHashAlgorithmID](#pcrhashalgorithmid)
