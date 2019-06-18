@@ -34,49 +34,5 @@ ms.localizationpriority: Normal
 |**What’s in the box**| One Surface Hub 2S <br> One Surface Hub 2 Pen  <br> One Surface Hub 2 Camera <br> 2.5 m AC Power Cable <br> Quick Start Guide |
 |**Warranty**| 1-year limited hardware warranty |
 
-## Pen tech specs
-
-|**Item**|**Details**|
-|:------ |:-  ------ |
-|**Dimensions**| 5.94" x 0.64" x 0.56” (151 mm x 16.3 mm x 14.3 mm) |
-|**Weight**| 0.09 lbs. (41 g) |
-|**Buttons**| Barrel button and tail eraser |
-|**Color**| Grey |
-|**Connector type**| Bluetooth 4.0 |
-|**Compatibility**| Surface Hub 2S <br> Surface Book 2 <sup>3</sup> <br> Surface Book <br> Surface Studio 2 <sup>3</sup> <br> Surface Studio 3 <br> Surface Laptop <br> |
-|**Compatibility**| Surface Go <br> Surface Go with LTE Advanced  <br> Surface Pro 6 <sup>3</sup> <br> Surface Pro (5th Gen) <sup>3</sup> <br> Surface Pro (5th Gen) with LTE Advanced <sup>3</sup> <br> Surface Pro 4 <br> Surface Pro 3 <br> Surface 3 |
-
-## Camera tech specs
-
-|**Item**|**Specification Details**|
-|:---  - |:---  ------------------ |
-|**Dimensions**| 2.26" x 2.18" x 1.65” (57.5 mm x 55.3 mm x 42 mm) |
-|**Weight**| 0.19 lbs. (88.01 g) |
-|**Connection**| USB-C (with magnetic attach) |
-|**Resolution**| 4K |
-|**Field of View**| 90-degree HFOV |
-|**Imaging Features**| Anti-flicker <br> Face-based auto exposure <br> Up to 30 frames per second <br> |
-
-## Battery tech specs
-
-> [!NOTE]
-> The optional mobile battery is sold separately. For more information, see [APC Charge Mobile Battery](https://www.apc.com/us/en/campaign/apc-charge-mobile-battery-for-microsoft-surface-hub-2.jsp).
-
-|**Item**|**Details**|
-|:---  - |:--  ----- |
-|**Dimensions**| 11 x 17 x 5 inches (282 x 432 x 127 mm) |
-|**Weight**| ~30 lbs. (13.6 kg) |
-|**Connection**| AC input/DC output & USB-A |
-|**Voltage**| 48 V DC |
-|**Capacity**| 8.2 Ah |
-|**Energy**| 403 Wh (~10x Pro6) |
-|**Power Delivery**| 387 W |
-|**Battery Technology**| Li-Ion NMC523 |
-|**Charger**| 600 W |
-|**Charging Time**| 0–100 percent in ~1.5 hours |
-|**Run Time**| 2 hours nominal |
-|**AC output**| 88–265 V AC, 50–60 Hz, Max 8 A/400 W |
-|**DC output**| 24 V DC, Max 16.2 A /387 W |
-
 > [!NOTE]
 > <sup>1</sup> System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See Surface.com/Storage for more details. <br> <sup>2</sup> Software license required for some features. Sold separately.<br> <sup>3</sup> Tilt functionality is currently available

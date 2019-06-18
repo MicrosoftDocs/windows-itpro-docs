@@ -21,7 +21,7 @@ To begin, sign into Surface Hub 2S with admin credentials, open the **Settings**
 
 1. To reset, select **Get Started**.
 2. When the **Ready to reset this device** window appears, select **Reset**. Surface Hub 2S reinstalls the operating system from the recovery partition and may take up to one hour to complete.
-3. Run **Setup** to reconfigure the device.
+3. Run **the first time Setup program** to reconfigure the device.
 4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/en-us/intune/devices-wipe).
 
 ![*Reset and recovery for Surface Hub 2S*](images/sh2-reset.png)<br>
@@ -32,7 +32,7 @@ To begin, sign into Surface Hub 2S with admin credentials, open the **Settings**
 1. To recover, select **Restart now**.
 2. In advanced startup mode, select the option to recover the device from the cloud. Surface Hub 2S downloads the latest available customer image from the cloud and reinstalls the operating system.
 3. Remain connected to the network during the recovery process.
-4. Run **Setup** to reconfigure the device.
+4. Run **the first time Setup program** to reconfigure the device.
 5. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/en-us/intune/devices-wipe).
 
 ## Recover Surface Hub 2S using USB recovery drive
@@ -51,4 +51,4 @@ Surface Hub 2S lets you reinstall the device using a recovery image, which allow
 
 4. In the language selection screen, select the display language for your Surface Hub 2S.
 5. Choose **Recover from a drive** and **Fully clean the drive** and then select **Recover**. If prompted for a BitLocker key, select **Skip this drive**. Surface Hub 2S reboots several times and takes approximately 30 minutes to complete the recovery process.
-6. When the first OOBE startup screen appears, remove the USB drive.
+Remove the USB drive when the first time setup screen appears.
