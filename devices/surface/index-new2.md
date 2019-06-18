@@ -15,8 +15,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Product name</h1>
-        <p>Log a <a href="https://aka.ms/maxart">MAX ART</a> bug to request card images.</p>
+        <h1>Microsoft Surface</h1>
+        <p>Learn how to plan, deploy, and manage Microsoft Surface and Surface Hub devices.</p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -36,11 +36,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card name</h3>
-                                                    <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
+                                                    <h3>Surface Devices</h3>
+                                                    <p>Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,11 +55,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card name</h3>
-                                                    <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
+                                                    <h3>Surface Hub</h3>
+                                                    <p>Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming, collaboration, and presentations. Learn how to plan, deploy, manage, and support your Surface Hub devices.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,11 +74,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card name</h3>
-                                                    <p>Description</p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
-                                                    <p><a href="">Link name</a></p>
+                                                    <h3>Surface for Business</h3>
+                                                    <p>Learn about Surface devices for the modern workplace.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,9 +85,8 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                             <li class="fullSpan">
                               <hr />
                               <br>
-                              <ul class="cardsFTitle panelContent singlePanelContent" style="display:flex!important;">
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
                                     <li>
-                                        <a href="  ">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -106,15 +96,15 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Link name</h3>
+                                                       <h3>Communities</h3>
+                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
+                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                     </li>
                                     <li>
-                                        <a href="  ">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -124,15 +114,15 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Link name</h3>
+                                                        <h3>Learn</h3>
+                                                        <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
+                                                        <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-84" target="_blank">Something 2</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                     </li>
                                     <li>
-                                        <a href="  ">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -142,12 +132,13 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Link name</h3>
+                                                        <h3>Need help?</h3>
+                                                        <P><a href="https://support.microsoft.com/products/surface-devices" target="_blank">Surface Devices</a></p>
+                                                        <P><a href="https://support.microsoft.com/hub/4343507/surface-hub-help" target="_blank">Surface Hub</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                     </li>
                                 </ul>
                             </li>
