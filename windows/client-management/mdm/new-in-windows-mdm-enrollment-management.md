@@ -1445,6 +1445,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top"><p><a href="wifi-csp.md" data-raw-source="[WiFi CSP](wifi-csp.md)">WiFi CSP</a></p></td>
+<td style="vertical-align:top"><p>Deprecated the following node in Windows 10, version 1607:</p>
+<ul>
+<li>DisableInternetConnectivityChecks</li>
+</ul>
+</tr>
+</td>
 </tbody>
 </table>
 
