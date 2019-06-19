@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/14/2018
+ms.date: 06/19/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -18,31 +18,20 @@ manager: dansimp
 <!--Policies-->
 ## Cryptography policies  
 
+[Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
+[Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
 
-<<<<<<< HEAD
-* [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
-* [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)
-=======
-* [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)  
-* [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
->>>>>>> master
-* [Cryptography/Microsoft Surface Hub](#cryptography-policies-supported-by-microsoft-surface-hub)
 <hr/>
 
 <!--Policy-->
 
-<<<<<<< HEAD
-## <a id="CryptographyAllowFipsAlgorithmPolicy" />Cryptography/AllowFipsAlgorithmPolicy
-=======
 ## Cryptography/AllowFipsAlgorithmPolicy
->>>>>>> master
 
 <!--SupportedSKUs-->
 
 |Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
-
+|![No][x] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check]|
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -77,16 +66,12 @@ The following list shows the supported values:
 
 <!--Policy-->
 
-<<<<<<< HEAD
-## <a id="CryptographyTLSCipherSuites" />Cryptography/TLSCipherSuites
-=======
 ## Cryptography/TLSCipherSuites
->>>>>>> master
 
 <!--SupportedSKUs-->
 |Home|Pro|Business	|Enterprise	|Education 	|Mobile	|Mobile Enterprise |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|![][x] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check] | ![][check]|
+|![No][x] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check] | ![Yes][check]|
 
 
 <!--/SupportedSKUs-->
@@ -121,7 +106,6 @@ Footnote:
 - [Cryptography/AllowFipsAlgorithmPolicy](#CryptographyAllowFipsAlgorithmPolicy)  
 - [Cryptography/TLSCipherSuites](#CryptographyTLSCipherSuites)  
   <!--EndSurfaceHub-->
-
 
 
 [check]: images/checkmark.png "Check"
