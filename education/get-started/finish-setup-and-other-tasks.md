@@ -198,7 +198,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
    Depending on the organization's policy, the user may be asked to update the password.
 
-5. After the user's credentails are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
+5. After the user's credentials are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
 
    **Figure 8** - Device is connected to organization's MDM
 
