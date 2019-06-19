@@ -105,7 +105,7 @@ If you need to make changes or updates to any of the apps or settings for the gr
 After completing the basic setup for your cloud infrastructure and confirming that it is up and running, it's time to prepare for additional devices to be added and enable capabilities for the user to use.
 
 ### Enable many devices to be added by a single person 
-When a device is owned by the school, you may need to have a single persion adding many devices to your cloud infrastructure. 
+When a device is owned by the school, you may need to have a single person adding many devices to your cloud infrastructure. 
 
 Follow the steps in this section to enable a single person to add many devices to your cloud infrastructure.
 
