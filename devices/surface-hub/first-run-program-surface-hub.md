@@ -203,7 +203,7 @@ If you skip setting it up now, you can add a device account later by using the S
 
 If you click **Skip setting up a device account**, the device will display a dialog box showing what will happen if the device doesn't have a device account. If you choose **Yes, skip this**, you will be sent to the [Name this device page](#name-this-device).
 
-![Image showing message the is displaed to confirm you want to skip creating a device account.](images/setupskipdeviceacct.png)
+![Image showing message the is displayed to confirm you want to skip creating a device account.](images/setupskipdeviceacct.png)
 
 ### What happens?
 
