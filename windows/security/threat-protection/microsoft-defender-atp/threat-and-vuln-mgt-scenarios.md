@@ -151,4 +151,8 @@ When an exception is created for a recommendation, the recommendation is no long
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
+- [Security recommendations](Security recommendations.md)
+- [Remediation])(Remediation.md)
+- [Software inventory](Software inventory.md)
+- [Weaknesses](Weaknesses.md)
 
