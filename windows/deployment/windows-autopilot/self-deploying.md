@@ -67,4 +67,7 @@ When performing a self-deploying mode deployment using Windows Autopilot, the fo
     -   Remain at the logon screen, where any member of the organization can log on by specifying their Azure AD credentials.
     -   Automatically sign in as a local account, for devices configured as a kiosk or digital signage.
 
+>[!NOTE]
+>Deploying EAS policies using self-deploying mode for kiosk deployments will cause auto-logon functionality to fail. 
+
 In case the observed results do not match these expectations, consult the [Windows Autopilot Troubleshooting](troubleshooting.md) documentation.
