@@ -334,7 +334,7 @@ write-host "There are no issuance policies which are not mapped to groups"
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##

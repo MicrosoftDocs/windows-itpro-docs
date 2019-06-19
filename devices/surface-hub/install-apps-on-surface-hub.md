@@ -158,7 +158,7 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 
 ## Summary
 
-There are a few different ways to install apps on your Surface Hub depending on whether you are developing apps, evaluating apps on a small number of devices, or deploying apps broadly to your oganization. This table summarizes the supported methods:
+There are a few different ways to install apps on your Surface Hub depending on whether you are developing apps, evaluating apps on a small number of devices, or deploying apps broadly to your organization. This table summarizes the supported methods:
 
 | Install method             | Developing apps | Evaluating apps on <br> a few devices | Deploying apps broadly <br> to your organization |
 | -------------------------- | --------------- | ------------------------------------- | ---------------------- |

@@ -166,7 +166,7 @@ This MDM alert header is defined as follows:
 
 KioskModeApp Add
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Add>
@@ -188,7 +188,7 @@ KioskModeApp Add
 
 KioskModeApp Delete
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Delete>
@@ -206,7 +206,7 @@ KioskModeApp Delete
 
 KioskModeApp Get
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Get>
@@ -224,7 +224,7 @@ KioskModeApp Get
 
 KioskModeApp Replace
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Replace>
@@ -246,7 +246,7 @@ KioskModeApp Replace
 
 ## AssignedAccessConfiguration XSD
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
@@ -390,7 +390,7 @@ KioskModeApp Replace
 
 ## Example AssignedAccessConfiguration XML
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
@@ -698,7 +698,7 @@ Example of the Delete command.
 
 ## StatusConfiguration XSD
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
@@ -731,7 +731,7 @@ Example of the Delete command.
 
 StatusConfiguration Add OnWithAlerts
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -760,7 +760,7 @@ StatusConfiguration Add OnWithAlerts
 
 
 StatusConfiguration Delete
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Delete>
@@ -778,7 +778,7 @@ StatusConfiguration Delete
 
 StatusConfiguration Get
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Get>
@@ -826,7 +826,7 @@ StatusConfiguration Replace On
 ## Status example
 
 Status Get
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Get>
@@ -844,7 +844,7 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
@@ -1195,7 +1195,7 @@ ShellLauncherConfiguration Get
 
 This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
   This is a sample Assigned Access XML file. The Profile specifies which apps are allowed
