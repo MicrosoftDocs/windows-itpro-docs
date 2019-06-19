@@ -4,11 +4,15 @@
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Windows Autopilot](windows-autopilot/windows-autopilot.md)
-## [Windows 10 Subscription Activation](windows-10-subscription-activation.md)
+
+## Subscription Activation
+### [Windows 10 Subscription Activation](windows-10-subscription-activation.md)
 ### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
-## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
+
+## Resolve upgrade errors
+### [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 ### [Quick fixes](upgrade\quick-fixes.md)
 ### [SetupDiag](upgrade/setupdiag.md)
 ### [Troubleshooting upgrade errors](upgrade/troubleshoot-upgrade-errors.md)
@@ -18,7 +22,8 @@
 ### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
-## [Deploy Windows 10](deploy.md)
+## Deploy Windows 10
+### [Deploying Windows 10](deploy.md)
 
 ### [Windows Autopilot](windows-autopilot/windows-autopilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
@@ -211,7 +216,8 @@
 ###### [Offline Migration Reference](usmt/offline-migration-reference.md)
 ### [Install fonts in Windows 10](windows-10-missing-fonts.md)
 
-## [Update Windows 10](update/index.md)
+## Update Windows 10
+### [Update Windows 10 in enterprise deployments](update/index.md)
 ### [Windows as a service](update/windows-as-a-service.md)
 #### [Quick guide to Windows as a service](update/waas-quick-start.md)
 ##### [Servicing stack updates](update/servicing-stack-updates.md)
@@ -249,7 +255,8 @@
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
 
-## [Windows Analytics](update/windows-analytics-overview.md)
+## Windows Analytics
+## [Windows Analytics overview](update/windows-analytics-overview.md)
 ### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
 ### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)

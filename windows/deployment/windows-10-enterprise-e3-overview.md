@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

@@ -27,7 +27,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.4.1.0</I>
+<I>Current version of SetupDiag: 1.5.0.0</I>
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -67,9 +67,10 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
-| /Scenario:\[Recovery\] | This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.|
+| /Scenario:\[Recovery\] | <ul><li>This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.</ul>|
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
+| /AddReg | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.</ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
 - In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
@@ -150,150 +151,38 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 
 ## Sample output
 
-The following is an example where SetupDiag is run in offline mode. In this example, there is an application warning, but since setup is executed in /quiet mode so it becomes a block. Instructions to resolve the problem are provided by SetupDiag in the output.
-
-The output also provides an error code 0xC1900208 - 0x4000C which corresponds to a compatibility issue as documented in the [Upgrade error codes](upgrade-error-codes.md#result-codes) and [Resolution procedures](resolution-procedures.md#modern-setup-errors) topics in this article.
+The following is an example where SetupDiag is run in offline mode.
 
 ```
-C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
+D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
 
-SetupDiag v1.4.1.0
+SetupDiag v1.5.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
-Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
-        Found 4 setupact.logs.
-        Processing setupact.log at: c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\NewOs\Panther\setupact.log
-        Processing setupact.log at: c:\temp\bobmacneill\Panther\UnattendGC\setupact.log
-Found c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log with update date 03/29/2018 23:13:58 and CV: H2X+YsWL/UOkj/8X to be the correct setup log.
-Gathering information from setup logs.
+Searching for setup logs...
+Found d:\tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e\setupact_6.log with update date 6/12/2019 2:44:20 PM to be the correct setup log.
+Found d:\tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e\setupact_1.log with update date 6/12/2019 2:45:19 PM to be the correct rollback log.
+
+Gathering baseline information from setup logs...
 
 SetupDiag: processing rule: CompatScanOnly.
-..No match.
+...No match.
 
-SetupDiag: processing rule: BitLockerHardblock.
-..No match.
+...
 
-SetupDiag: processing rule: VHDHardblock.
-..No match.
+SetupDiag: processing rule: DISMImageSessionFailure.
+..
+Error: SetupDiag reports DISM provider failure.
+Last Phase: Safe OS
+Last Operation: Apply Optional Component status
+Message = Failed to get the IDismImage instance from the image session
+Function: CDISMManager::CloseImageSession
+Error: 0x800706ba
+Recommend you re-download the update source files, reboot and try the update again.
 
-SetupDiag: processing rule: PortableWorkspaceHardblock.
-..No match.
+SetupDiag found 1 matching issue.
 
-SetupDiag: processing rule: AuditModeHardblock.
-..No match.
-
-SetupDiag: processing rule: SafeModeHardblock.
-..No match.
-
-SetupDiag: processing rule: InsufficientSystemPartitionDiskSpaceHardblock.
-..No match.
-
-SetupDiag: processing rule: CompatBlockedApplicationAutoUninstall.
-....No match.
-
-SetupDiag: processing rule: CompatBlockedApplicationDismissable.
-....
-
-Matching Profile found: CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-Warning: Found Application Block for: "Microsoft Endpoint Protection".
-This is a dismissible message when not running setup.exe in "/quiet" mode.
-Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
-You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
-For more information about Setup command line switches, see here:
-https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
-
-SetupDiag: processing rule: CompatBlockedApplicationManualUninstall.
-....No match.
-
-SetupDiag: processing rule: HardblockDeviceOrDriver.
-....No match.
-
-SetupDiag: processing rule: HardblockMismatchedLanguage.
-..No match.
-
-SetupDiag: processing rule: HardblockFlightSigning.
-..No match.
-
-SetupDiag: processing rule: DiskSpaceBlockInDownLevel.
-..No match.
-
-SetupDiag: processing rule: DiskSpaceFailure.
-..No match.
-
-SetupDiag: processing rule: DebugSetupMemoryDump.
-.No match.
-
-SetupDiag: processing rule: DebugSetupCrash.
-.No match.
-
-SetupDiag: processing rule: DebugMemoryDump.
-.No match.
-
-SetupDiag: processing rule: DeviceInstallHang.
-..No match.
-
-SetupDiag: processing rule: BootFailureDetected.
-.No match.
-
-SetupDiag: processing rule: FindDebugInfoFromRollbackLog.
-.No match.
-
-SetupDiag: processing rule: AdvancedInstallerFailed.
-..No match.
-
-SetupDiag: processing rule: FindMigApplyUnitFailure.
-..No match.
-
-SetupDiag: processing rule: FindMigGatherUnitFailure.
-..No match.
-
-SetupDiag: processing rule: OptionalComponentInstallFailure.
-..No match.
-
-SetupDiag: processing rule: CriticalSafeOSDUFailure.
-..No match.
-
-SetupDiag: processing rule: UserProfileCreationFailureDuringOnlineApply.
-..No match.
-
-SetupDiag: processing rule: WimMountFailure.
-..No match.
-
-SetupDiag: processing rule: FindSuccessfulUpgrade.
-..No match.
-
-SetupDiag: processing rule: FindSetupHostReportedFailure.
-..No match.
-
-SetupDiag: processing rule: FindDownlevelFailure.
-..No match.
-
-SetupDiag: processing rule: FindAbruptDownlevelFailure.
-....Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
-
-SetupDiag: processing rule: FindSetupPlatformFailedOperationInfo.
-..No match.
-
-SetupDiag: processing rule: FindRollbackFailure.
-..No match.
-
-SetupDiag found 2 matching issues.
-
-Warning: Found Application Block for: "Microsoft Endpoint Protection".
-This is a dismissible message when not running setup.exe in "/quiet" mode.
-Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
-You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
-For more information about Setup command line switches, see here:
-https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
-Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
-
-SetupDiag results were logged to: c:\setupdiag\results.log
+SetupDiag results were logged to: c:\setupdiag\results.xml
 Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ```
@@ -410,8 +299,39 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
 53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
+54.	PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
+    - These are for server upgrades only, will output the compliance block and remediation required.
+55.	PreReleaseWimMountDriverFound - 31EC76CC-27EC-4ADC-9869-66AABEDB56F0
+    - Captures failures due to having an unrecognized wimmount.sys driver registered on the system.
+56.	WinSetupBootFilterFailure - C073BFC8-5810-4E19-B53B-4280B79E096C
+    - Detects failures in the kernel mode file operations.
+57.	WimMountDriverIssue - 565B60DD-5403-4797-AE3E-BC5CB972FBAE
+    - Detects failures in WimMount.sys registration on the system.
+58.	DISMImageSessionFailure - 61B7886B-10CD-4C98-A299-B987CB24A11C
+    - Captures failure information when DISM fails to start an image session successfully.
+59.	FindEarlyDownlevelError - A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52
+    - Detects failures in down-level phase before setup platform is invoked.
+60.	FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
+    - Captures failure information when setup platform encounters a fatal error.
+
 
 ## Release notes
+
+06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
+   - All date and time outputs are updated to localized format per user request.
+   - Added setup Operation and Phase information to /verbose log.
+   - Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+   - Performance improvement in searching setupact.logs to determine correct log to parse.
+   - Added SetupDiag version number to text report (xml and json always had it).
+   - Added "no match" reports for xml and json per user request.
+   - Formatted Json output for easy readability.
+   - Performance improvements when searching for setup logs; this should be much faster now.
+   - Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
+   - Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
+       - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
+       - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
+       - This registry key also gets deleted when a new update instance is invoked.
+       - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
@@ -486,46 +406,118 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
-  <Version>1.3.0.0</Version>
-  <ProfileName>DiskSpaceBlockInDownLevel</ProfileName>
-  <ProfileGuid>6080AFAC-892E-4903-94EA-7A17E69E549E</ProfileGuid>
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+  <Version>1.5.0.0</Version>
+  <ProfileName>FindSPFatalError</ProfileName>
+  <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
   <SystemInfo>
     <MachineName>Offline</MachineName>
-    <Manufacturer>Microsoft Corporation</Manufacturer>
-    <Model>Virtual Machine</Model>
-    <HostOSArchitecture>x64</HostOSArchitecture>
+    <Manufacturer>Gigabyte Technology Co., Ltd.</Manufacturer>
+    <Model>X470 AORUS ULTRA GAMING</Model>
+    <HostOSArchitecture>1033</HostOSArchitecture>
     <FirmwareType>UEFI</FirmwareType>
-    <BiosReleaseDate>20171012000000.000000+000</BiosReleaseDate>
-    <BiosVendor>Hyper-V UEFI Release v2.5</BiosVendor>
-    <BiosVersion>Hyper-V UEFI Release v2.5</BiosVersion>
-    <HostOSVersion>10.0.14393</HostOSVersion>
-    <HostOSBuildString>14393.1794.amd64fre.rs1_release.171008-1615</HostOSBuildString>
-    <TargetOSBuildString>10.0.16299.15 (rs3_release.170928-1534)</TargetOSBuildString>
-    <HostOSLanguageId>1033</HostOSLanguageId>
-    <HostOSEdition>Core</HostOSEdition>
-    <RegisteredAV />
+    <BiosReleaseDate>20180808000000.000000+000</BiosReleaseDate>
+    <BiosVendor>F3</BiosVendor>
+    <BiosVersion />
+    <HostOSVersion>10.0.18908</HostOSVersion>
+    <HostOSBuildString>18908.1000.amd64fre.rs_prerelease.190524-1658</HostOSBuildString>
+    <TargetOSBuildString>10.0.18912.1001 (rs_prerelease.190601-1739)</TargetOSBuildString>
+    <HostOSLanguageId />
+    <HostOSEdition>Professional</HostOSEdition>
+    <RegisteredAV>Windows Defender</RegisteredAV>
     <FilterDrivers />
-    <UpgradeStartTime>2017-12-21T12:56:22</UpgradeStartTime>
+    <UpgradeStartTime>2019-06-06T21:19:10</UpgradeStartTime>
     <UpgradeElapsedTime />
-    <UpgradeEndTime>2017-12-21T13:22:46</UpgradeEndTime>
+    <UpgradeEndTime>2019-06-06T22:21:49</UpgradeEndTime>
     <RollbackStartTime>0001-01-01T00:00:00</RollbackStartTime>
     <RollbackEndTime>0001-01-01T00:00:00</RollbackEndTime>
     <RollbackElapsedTime />
+    <FinalizeStartTime>0001-01-01T00:00:00</FinalizeStartTime>
+    <PostOOBESuccessTime>0001-01-01T00:00:00</PostOOBESuccessTime>
+    <TotalOfflineTime />
     <CommercialId>Offline</CommercialId>
-    <SetupReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</SetupReportId>
-    <ReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</ReportId>
+    <CV>MgUweCZk90KdwUiZ</CV>
+    <SetupReportId>F21F8FB6-00FD-4349-84FB-2AC75F389E73</SetupReportId>
+    <ReportId>F21F8FB6-00FD-4349-84FB-2AC75F389E73</ReportId>
   </SystemInfo>
-  <FailureData>Warning: Found Disk Space Hard Block.</FailureData>
-  <Remediation>You must free up at least "6603" MB of space on the System Drive, and try again.</Remediation>
+  <LogErrorLine>2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</LogErrorLine>
+  <FailureData>
+Error: SetupDiag reports Fatal Error.
+Last Setup Phase = Downlevel
+Last Setup Operation: Gather data, scope: EVERYTHING
+Error: 0x00000057</FailureData>
+  <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
+  <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
+  <FailureData>
+Refer to "https://docs.microsoft.com/en-us/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
+  <FailureDetails>Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel</FailureDetails>
 </SetupDiag>
 ```
 
 ### JSON log sample
 
 ```
-{"Version":"1.3.0.0","ProfileName":"DiskSpaceBlockInDownLevel","ProfileGuid":"6080AFAC-892E-4903-94EA-7A17E69E549E","SystemInfo":{"BiosReleaseDate":"20171012000000.000000+000","BiosVendor":"Hyper-V UEFI Release v2.5","BiosVersion":"Hyper-V UEFI Release v2.5","CV":null,"CommercialId":"Offline","FilterDrivers":"","FirmwareType":"UEFI","HostOSArchitecture":"x64","HostOSBuildString":"14393.1794.amd64fre.rs1_release.171008-1615","HostOSEdition":"Core","HostOSLanguageId":"1033","HostOSVersion":"10.0.14393","MachineName":"Offline","Manufacturer":"Microsoft Corporation","Model":"Virtual Machine","RegisteredAV":"","ReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","RollbackElapsedTime":"PT0S","RollbackEndTime":"\/Date(-62135568000000-0800)\/","RollbackStartTime":"\/Date(-62135568000000-0800)\/","SDMode":1,"SetupReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","TargetOSArchitecture":null,"TargetOSBuildString":"10.0.16299.15 (rs3_release.170928-1534)","UpgradeElapsedTime":"PT26M24S","UpgradeEndTime":"\/Date(1513891366000-0800)\/","UpgradeStartTime":"\/Date(1513889782000-0800)\/"},"FailureData":["Warning: Found Disk Space Hard Block."],"DeviceDriverInfo":null,"Remediation":["You must free up at least \"6603\" MB of space on the System Drive, and try again."]}
+{
+    "Version":"1.5.0.0",
+    "ProfileName":"FindSPFatalError",
+    "ProfileGuid":"A4028172-1B09-48F8-AD3B-86CDD7D55852",
+    "SystemInfo":{
+        "BiosReleaseDate":"20180808000000.000000+000",
+        "BiosVendor":"F3",
+        "BiosVersion":"F3",
+        "CV":"MgUweCZk90KdwUiZ",
+        "CommercialId":"Offline",
+        "FilterDrivers":"",
+        "FinalizeStartTime":"\/Date(-62135568000000-0800)\/",
+        "FirmwareType":"UEFI",
+        "HostOSArchitecture":"x64",
+        "HostOSBuildString":"18908.1000.amd64fre.rs_prerelease.190524-1658",
+        "HostOSEdition":"Professional",
+        "HostOSLanguageId":"",
+        "HostOSVersion":"",
+        "MachineName":"Offline",
+        "Manufacturer":"Gigabyte Technology Co., Ltd.",
+        "Model":"X470 AORUS ULTRA GAMING",
+        "PostOOBESuccessTime":"\/Date(-62135568000000-0800)\/",
+        "RegisteredAV":"Windows Defender",
+        "ReportId":"F21F8FB6-00FD-4349-84FB-2AC75F389E73",
+        "RollbackElapsedTime":"PT0S",
+        "RollbackEndTime":"\/Date(-62135568000000-0800)\/",
+        "RollbackStartTime":"\/Date(-62135568000000-0800)\/",
+        "SetupReportId":"F21F8FB6-00FD-4349-84FB-2AC75F389E73",
+        "TargetOSArchitecture":null,
+        "TargetOSBuildString":"10.0.18912.1001 (rs_prerelease.190601-1739)",
+        "TotalOfflineTime":"PT0S",
+        "UpgradeElapsedTime":"PT1H2M39S",
+        "UpgradeEndTime":"\/Date(1559884909000-0700)\/",
+        "UpgradeStartTime":"\/Date(1559881150000-0700)\/"
+    },
+    "LogErrorLine":"2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+        gle=0x00000057
+    ]",
+    "FailureData":[
+        "\u000aError: SetupDiag reports Fatal Error.\u000aLast Setup Phase = Downlevel\u000aLast Setup Operation: Gather data, scope: EVERYTHING\u000aError: 0x00000057",
+        "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+            gle=0x00000057
+        ]",
+        "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
+            gle=0x00000057
+        ]",
+        "\u000aRefer to \"https:\/\/docs.microsoft.com\/en-us\/windows\/desktop\/Debug\/system-error-codes\" for error information."
+    ],
+    "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
+    "DeviceDriverInfo":null,
+    "Remediation":[
+        
+    ],
+    "SetupPhaseInfo":null,
+    "SetupOperationInfo":null
+}
 ```
+
+## Sample registry key
+
+![Addreg](./../images/addreg.png)
 
 ## Related topics
 
