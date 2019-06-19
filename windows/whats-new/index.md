@@ -29,6 +29,7 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 - [Windows 10 update history](https://support.microsoft.com/help/12387/windows-10-update-history)
 - [Windows 10 content from Microsoft Ignite](https://go.microsoft.com/fwlink/p/?LinkId=613210)
 - [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkId=690485)
+- [How much space does Windows 10 take](https://hubsadda.com/how-much-space-does-windows-10-take)
 
 ## See also
 
