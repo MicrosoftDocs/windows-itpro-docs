@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot Self-Deploying mode (Preview) 
+title: Windows Autopilot Self-Deploying mode
 description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
@@ -15,10 +15,9 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-
 # Windows Autopilot Self-Deploying mode
 
-**Applies to: Windows 10, version 1809 or later**
+**Applies to: Windows 10, version 1903 or later**
 
 Windows Autopilot self-deploying mode enables a device to be deployed with little to no user interaction. For devices with an Ethernet connection, no user interaction is required; for devices connected via Wi-fi, no interaction is required after making the Wi-fi connection (choosing the language, locale, and keyboard, then making a network connection).  
 
