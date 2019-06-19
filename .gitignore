@@ -5,7 +5,8 @@ obj/
 _site/
 Tools/NuGet/
 .optemp/
-
+Thumbs.db
+.DS_Store
 
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
