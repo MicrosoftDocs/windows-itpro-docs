@@ -29,7 +29,6 @@ ms.localizationpriority: Normal
 |**Audio/Video**| Full-range, front facing 3-way stereo speakers <br> Full band 8-element MEMS microphone array <br> Microsoft Surface Hub 2 Camera, 4K, USB-C connection, 90-degree HFOV |
 |**Pen**| Microsoft Surface Hub 2 Pen (active) |
 |**Software**| Windows 10 <br> Microsoft Teams for Surface Hub <sup>2</sup> <br> Skype for Business <br> Microsoft Whiteboard <br> Microsoft Office (Mobile) <br> Microsoft Power BI <sup>2</sup> |
-|**Connections**| USB-A <br> Mini-DisplayPort video output <br> RJ45 Gigabit Ethernet <br> HDMI video input <br> USB-C with DisplayPort input <br> Four USB-C (on display) |
 |**Exterior**| Casing: Precision machined aluminum with mineral-composite resin <br> Color: Platinum <br> Physical Buttons: Power, Volume, Source |
 |**What’s in the box**| One Surface Hub 2S <br> One Surface Hub 2 Pen  <br> One Surface Hub 2 Camera <br> 2.5 m AC Power Cable <br> Quick Start Guide |
 |**Warranty**| 1-year limited hardware warranty |
