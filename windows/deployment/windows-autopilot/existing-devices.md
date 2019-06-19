@@ -19,12 +19,12 @@ ms.topic: article
 
 **Applies to: Windows 10**
 
-Modern desktop management with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices. The apps you need for work can be automatically installed. Your work profile is synchronized, so you can resume working right away.
+Modern desktop deployment with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices. The apps you need for work can be automatically installed. Your work profile is synchronized, so you can resume working right away.
 
-This topic describes how to convert Windows 7 or Windows 8.1 domain-joined computers to Azure Active Directory-joined computers running Windows 10 by using Windows Autopilot.
+This topic describes how to convert Windows 7 or Windows 8.1 domain-joined computers to Windows 10 devices joined to either Azure Active Directory or Active Directory (Hybrid Azure AD Join) by using Windows Autopilot.
 
 >[!NOTE]
->Windows Autopilot for existing devices only supports user-driven Azure Active Directory profiles. Hybrid AAD joined devices and self-deploying profiles are not supported.
+>Windows Autopilot for existing devices only supports user-driven Azure Active Directory and Hybrid Azure AD profiles. Self-deploying profiles are not supported.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ See the following examples.
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     ```
 
-    See the following sample output:
+    See the following sample output: (use the horizontal scroll bar at the bottom to view long lines)
     <pre style="overflow-y: visible">
     PS C:\> Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     {
@@ -117,14 +117,14 @@ See the following examples.
    |           CloudAssignedTenantId (guid, required)           |                                                                                      The Azure Active Directory tenant ID that should be used.  This is the GUID for the tenant, and can be found in properties of the tenant.  The value should not include braces.                                                                                       |
    |        CloudAssignedTenantDomain (string, required)        |                                                                                                                                  The Azure Active Directory tenant name that should be used, e.g. tenant.onmicrosoft.com.                                                                                                                                  |
    |         CloudAssignedOobeConfig (number, required)         |                                                                           This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16                                                                           |
-   |      CloudAssignedDomainJoinMethod (number, required)      |                                                                                                                                    This property should be set to 0 and specifies that the device should join Azure AD.                                                                                                                                    |
+   |      CloudAssignedDomainJoinMethod (number, required)      |                                                                                                                                    This property specifies whether the device should join Azure Active Directory or Active Directory (Hybrid Azure AD Join).  Values include: Active AD Join = 0, Hybrid Azure AD Join = 1                                                        |
    |      CloudAssignedForcedEnrollment (number, required)      |                                                                                                                         Specifies that the device should require AAD Join and MDM enrollment.  <br>0 = not required, 1 = required.                                                                                                                         |
    |             ZtdCorrelationId (guid, required)              | A unique GUID (without braces) that will be provided to Intune as part of the registration process. ZtdCorrelationId will be included in enrollment message as “OfflineAutoPilotEnrollmentCorrelator”. This attribute will be present only if the enrollment is taking place on a device registered with Zero Touch Provisioning via offline registration. |
    | CloudAssignedAadServerData (encoded JSON string, required) |                                                  An embedded JSON string used for branding. It requires AAD corp branding enabled. <br> Example value: "CloudAssignedAadServerData":  "{\"ZeroTouchConfig\":{\"CloudAssignedTenantUpn\":\"\",\"CloudAssignedTenantDomain\":\"tenant.onmicrosoft.com\"}}"                                                   |
    |         CloudAssignedDeviceName (string, optional)         |                                                                          The name automatically assigned to the computer.  This follows the naming pattern convention that can be configured in Intune as part of the Autopilot profile, or can specify an explicit name to use.                                                                           |
 
 
-5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below:
+5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below: (use the horizontal scroll bar at the bottom if needed to view the entire command string)
 
     ```
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON | Out-File c:\Autopilot\AutopilotConfigurationFile.json -Encoding ASCII
@@ -300,6 +300,9 @@ The Task Sequence will download content, reboot, format the drives and install W
 ![refresh-1](images/up-1.png)
 ![refresh-2](images/up-2.png)
 ![refresh-3](images/up-3.png)
+
+>[!NOTE]
+>If joining devices to Active Directory (Hybrid Azure AD Join), it is necessary to create a Domain Join device configuration profile that is targeted to "All Devices" (since there is no Azure Active Directory device object for the computer to do group-based targeting).  See [User-driven mode for hybrid Azure Active Directory join](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join) for more information.
 
 ### Register the device for Windows Autopilot
 

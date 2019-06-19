@@ -811,7 +811,7 @@ This document focuses on App-V Full Infrastructure solutions. For specific infor
 
 The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See the How to Deploy the Client section on TechNet at: [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-51gb18030.md) or utilize the PowerShell:
 
-``` syntax
+```powershell
 get-command *appv*
 ```
 
@@ -1174,7 +1174,7 @@ The short cut is one of the basic elements of integration with the OS and is the
 
 From the package manifest and dynamic configuration XML files, the path to a specific application executable can be found in a section similar to the following:
 
-``` syntax
+```xml
 <Extension Category="AppV.Shortcut">
           <Shortcut>
             <File>[{Common Desktop}]\Adobe Reader 9.lnk</File>
@@ -1194,7 +1194,7 @@ As mentioned previously, the App-V shortcuts are placed by default in the userâ€
 
 The App-V Client manages the local operating system File Type Associations during publishing, which enables users to use file type invocations or to open a file with a specifically registered extension (.docx) to start an App-V application. File type associations are present in the manifest and dynamic configuration files as represented in the example below:
 
-``` syntax
+```xml
 <Extension Category="AppV.FileTypeAssociation">
           <FileTypeAssociation>
             <FileExtension MimeAssociation="true">
@@ -1323,7 +1323,7 @@ App-V supports specific software clients and application capabilities extension 
 
 Example of software client registration of an App-V based mail client.
 
-``` syntax
+```xml
     <SoftwareClients Enabled="true">
       <ClientConfiguration EmailEnabled="true" />
       <Extensions>
@@ -1510,7 +1510,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **Manifest**
 
-``` syntax
+```xml
 <appv:Extension Category="AppV.Shortcut">
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.lnk</appv:File>
@@ -1522,7 +1522,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **Deployment Configuration**
 
-``` syntax
+```xml
 <MachineConfiguration>
      <Subsystems>
           <Registry>
@@ -1537,7 +1537,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **User Configuration**
 
-``` syntax
+```xml
 <UserConfiguration>
      <Subsystems>
 <appv:ExtensionCategory="AppV.Shortcut">

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 10/24/2018
+ms.date: 06/18/2019
 ---
 
 # WiFi CSP
@@ -79,7 +79,10 @@ If it is an IPvFuture address, then it must be specified as an IP literal as "\[
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
-Added in Windows 10, version 1511.Optional. Disable the internet connectivity check for the profile.
+> [!Note]
+> This node has been deprecated since Windows 10, version 1607.
+
+Added in Windows 10, version 1511. Optional. Disable the internet connectivity check for the profile.
 
 Value type is chr.
 
