@@ -9,9 +9,9 @@ keywords: deployment, automate, tools, configure, sccm
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
+author: greg-lindsay
 ms.topic: article
 ---
 
