@@ -227,7 +227,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
 
    2. With the sample configuration.xml file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2013 applications. The following is a basic example of the configuration.xml file:
 
-      ``` syntax
+      ```xml
       <Configuration>
          <Add SourcePath= ”\\Server\Office2013” OfficeClientEdition="32" >
           <Product ID="O365ProPlusRetail ">
@@ -688,7 +688,7 @@ To exclude specific Office applications (for example, Access and InfoPath) when 
 
 5.  Add the Office 2013 App-V Package with the new Deployment Configuration File.
 
-    ``` syntax
+    ```xml
     <Application Id="[{AppVPackageRoot)]\officefl5\INFOPATH.EXE" Enabled="true">
       <VisualElements>
         <Name>InfoPath Filler 2013</Name>

@@ -22,7 +22,7 @@ You will also learn how to deploy apps using Microsoft Intune, turn on or off Ea
 
 1. [Inclusive Classroom features](#features)
 2. [Deploying apps with Microsoft Intune](#intune)
-3. [How to show/hide the Ease of Accesss settings for text in Windows 10](#ease)
+3. [How to show/hide the Ease of Access settings for text in Windows 10](#ease)
 4. [How to change your Office 365 account from monthly, semi-annual, or yearly](#account)
 
 ## <a name="features"></a>Inclusive Classroom features
