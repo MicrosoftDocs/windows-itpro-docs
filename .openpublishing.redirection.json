@@ -15036,6 +15036,11 @@
 "source_path": "windows/hub/release-information.md",
 "redirect_url": "/windows/release-information",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/index.md",
+"redirect_url": "/windows/security/threat-protection",
+"redirect_document_id": true
 }
 ]
 }
