@@ -91,7 +91,7 @@ See the following examples.
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     ```
 
-    See the following sample output:
+    See the following sample output: (use the horizontal scroll bar at the bottom to view long lines)
     <pre style="overflow-y: visible">
     PS C:\> Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     {
@@ -124,7 +124,7 @@ See the following examples.
    |         CloudAssignedDeviceName (string, optional)         |                                                                          The name automatically assigned to the computer.  This follows the naming pattern convention that can be configured in Intune as part of the Autopilot profile, or can specify an explicit name to use.                                                                           |
 
 
-5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below:
+5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below: (use the horizontal scroll bar at the bottom if needed to view the entire command string)
 
     ```
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON | Out-File c:\Autopilot\AutopilotConfigurationFile.json -Encoding ASCII
