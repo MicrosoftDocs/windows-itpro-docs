@@ -134,7 +134,7 @@ You can configure the MBAM Recovery and Hardware Service with the name of this s
 
 -   Configure the group after the MBAM Recovery and Hardware Service has been installed by editing the web.config file in the &lt;inetpub&gt;\\Microsoft Bitlocker Management Solution\\Recovery and Hardware Service\\ folder.
 
-    ``` syntax
+    ```xml
     <add key="DataMigrationUsersGroupName" value="<groupName>|<empty>" />
     ```
 
