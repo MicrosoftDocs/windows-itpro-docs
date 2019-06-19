@@ -1,8 +1,8 @@
 ---
 title: What's new in Windows 10 deployment
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greglin
 description: Changes and new features related to Windows 10 deployment
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 
