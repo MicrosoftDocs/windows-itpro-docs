@@ -235,7 +235,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/education/images/education-partner-mepn-1.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-partner-mepn-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -254,7 +254,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/education/images/education-partner-aep-2.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-partner-aep-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -273,7 +273,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/education/images/education-partner-directory-3.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-partner-directory-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -292,7 +292,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/education/images/education-partner-yammer.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-partner-yammer.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
