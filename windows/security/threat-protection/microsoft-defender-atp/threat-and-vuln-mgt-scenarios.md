@@ -27,8 +27,10 @@ ms.topic: article
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Running with Windows 10 1709 (Fall Creators Update) or later
+
 >[!NOTE]
->Threat & Vulnerability Management can also scan machines running on Windows 7 operating systems and detects vulnerabilities coming from patch Tuesday.
+>Threat & Vulnerability Management can also scan machines running on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities coming from patch Tuesday.
+
 - Have the following mandatory updates installed:
 - (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
 - (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
