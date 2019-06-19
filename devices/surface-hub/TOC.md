@@ -8,7 +8,7 @@
 ### [Operating system essentials (Surface Hub) ](differences-between-surface-hub-and-windows-10-enterprise.md)
 
 ## Plan
-### Surface Hub 2S Site Readiness Guide 
+### [Surface Hub 2S Site Readiness Guide](surface-hub-2s-site-readiness-guide.md) 
 #### [Site planning for Surface Hub 2S](surface-hub-2s-site-planning.md)
 #### [Surface Hub 2S quick start](surface-hub-2s-quick-start.md)
 #### [Installing and mounting Surface Hub 2S](surface-hub-2s-install-mount.md)
@@ -17,17 +17,15 @@
 #### [Surface Hub 2S ports and keypad overview](surface-hub-2s-port-keypad-overview.md)
 #### [Connecting to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
-### [Configure phone authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
+### [Configure Easy Authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
 
 ## Deploy
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
-### [Deploy Surface Hub 2S](surface-hub-2s-deploy.md)
+### [Create provisioning packages for Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Deploy apps to Surface Hub 2S using Intune](surface-hub-2s-deploy-apps-intune.md)
 ### [Configure Surface Hub 2S with PowerShell](surface-hub-2s-configure-with-powershell.md)
 ### [Create Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
-### [First time setup on Surface Hub 2S](surface-hub-2s-startup.md)
-### [Deploy apps with Microsoft Intune](surface-hub-2s-deploy-apps-intune.md)
 
 ## Manage
 ### [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
