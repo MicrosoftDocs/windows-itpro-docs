@@ -7,7 +7,6 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/17/2019
 ms.reviewer: 
 manager: dansimp
 ---

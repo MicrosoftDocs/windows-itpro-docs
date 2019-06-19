@@ -63,7 +63,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Manage</h3>
-                        <p><a href="maintain-optimal-power-settings-on-Surface-devices.md">Maintain optimal power settings</a></p>
+                        <p><a href="maintain-optimal-power-settings-on-Surface-devices.md">Best practice power settings for Surface devices</a></p>
                         <p><a href="battery-limit.md">Manage battery limit with UEFI</a></p>
                         <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Manage driver and firmware updates</a></p>
                     </div>
@@ -137,7 +137,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Discover Surface tools</h3>
-                         <P><a href="surface-diagnostic-toolkit-business.md">Surface Diagnostic Toolkit for Business</a></p>
+                         <P><a href="surface-diagnostic-toolkit-for-business-intro.md">Surface Diagnostic Toolkit for Business</a></p>
                          <P><a href="surface-enterprise-management-mode.md">SEMM and UEFI</a></p>
                          <P><a href="microsoft-surface-brightness-control.md">Surface Brightness Control</a></p>
                          <P><a href="microsoft-surface-data-eraser.md">Surface Data Eraser</a></p>

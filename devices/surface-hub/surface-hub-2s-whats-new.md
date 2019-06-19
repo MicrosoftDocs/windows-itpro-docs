@@ -17,13 +17,13 @@ Surface Hub 2S is an all-in-one collaboration canvas that’s built for teamwork
 
 |**Capability**|**Summary**|**Learn more**|
 |:-------|:------|:----|
-|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider.<br> <br> Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware at the firmware level. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)<br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
+|**Mobile Device Management and UEFI manageability**| Manage settings and policies using a mobile device management (MDM) provider. <br> <br> Full integration with Surface Enterprise Management Mode (SEMM) lets you manage hardware components and firmware. | [Managing Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md) <br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
 |**Cloud and on-premises coexistence**| Supports on-premises, hybrid, or online. | [Prepare your environment for Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md) |
 |**Reset and recovery**| Restore from the cloud or USB drive. | [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md) |
 |**Microsoft Whiteboard**| Ofice 365 integration, intelligent ink, and Bing search bring powerful new capabilities, enabling a persistent digital canvas shareable across most browsers, Windows and iOS devices. | [Announcing a new whiteboard for your Surface Hub](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050) |
 |**Microsoft Teams Meeting Room License**| Extends Office 365 licensing options across Skype for Business, Microsoft Teams, and Intune. | [Teams Meeting Room Licensing Update](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0) |
 |**On-screen display**| Adjust volume, brightness, and input control directly on the display. |  |
-|**Sensor-activated Connected Standby**| Doppler sensor activates Connected Standby after 1 minute of inactivity.<br> <br>Manage this setting remotely using Intune or directly on the device from the Settings app. | [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) |
+|**Sensor-activated Connected Standby**| Doppler sensor activates Connected Standby after 1 minute of inactivity.<br> <br> Manage this setting remotely using Intune or directly on the device from the Settings app. | [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) |
 |**Surface Hub pen**| Ergonomically redesigned and easily attachable on the sides of the device.  |  |
 |**Surface app for Surface Hub 2S**| Change audio settings and view your device's information from the Surface app |  |
 |**Ready for tomorrow**| Removable cartridge facilitates upgrading to new features. |  |
@@ -40,7 +40,7 @@ The following table details the differences between Surface Hub and Surface Hub 
 |**Component**| **Surface Hub 55”**|**Surface Hub 84”**| **Surface Hub 2S**|
 |:----- |:---- |:---- |:----- |
 |**Form Factor**| 55” | 84” | 50” |
-|**Size**| 31.75” x 59.62” x 3.38” <br> (806.4 mm x 1514.3 mm x 85.8 mm) | 46.12” x 86.7” x 4.15” <br> (1171.5 mm x 2202.9 mm x 105.4 mm) | 29.2" x 43.2" x 3.0" <br> (741 mm x 1097 mm x 76 mm) |
+|**Dimension**| 31.75” x 59.62” x 3.38” <br> (806.4 mm x 1514.3 mm x 85.8 mm) | 46.12” x 86.7” x 4.15” <br> (1171.5 mm x 2202.9 mm x 105.4 mm) | 29.2" x 43.2" x 3.0" <br> (741 mm x 1097 mm x 76 mm) |
 |**Weight**| 105 lbs. (48 kg) | 280 lbs. (127 kg) | 61.6 lbs. (28 kg) |
 |**Display**| Resolution: <br> 1920 x 1080 @ 120 Hz  <br> Contrast ratio: <br> 1300:1 <br> Touch: <br> 100-point multi-touch <br> Projective Capacitance optically bonded sensor | Resolution: <br> 3840 x 2160 @ 120 Hz  <br> Contrast Ratio: <br> 1400:1 <br> Touch: <br> 100-point multi-touch <br> Projective Capacitance optically bonded sensor | Resolution: <br> 3840 x 2560 @ 60 Hz |
 |**Aspect Ratio**| 16:9 | 16:9 | 3:2 |
@@ -61,5 +61,3 @@ The following table details the differences between Surface Hub and Surface Hub 
 
 > [!NOTE]
 > The NFC reader available in the original Surface Hub is discontinued in Surface Hub 2S and is no longer available.
-
-To learn more about what’s new in Surface Hub 2S, see [Behind the design: Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099).

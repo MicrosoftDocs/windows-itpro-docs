@@ -16,128 +16,70 @@ description: Learn about Microsoft Surface and Surface Hub devices.
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft Surface</h1>
-        <P>Learn how to plan, deploy, and manage Microsoft Surface and Surface Hub devices.</p>
-        <P></p>
+        <p>Learn how to plan, deploy, and manage Microsoft Surface and Surface Hub devices.<br><br></p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsF">
+                        <ul id="home-all" class="cardsK">
                             <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started" />
+                                <a href="get-started.md">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                            <img src="images/surface-devices-400x140.svg" alt="Surface Devices" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Surface Devices</h3>
-                                                <P><a href="get-started.md">Get started</a></p>
-                                                <P><a href="windows-autopilot-and-surface-devices.md">Autopilot on Surface</a></p>
-                                                <P><a href="update.md">Manage Surface updates</a></p>
+                                                <div class="cardText">
+                                                    <h3>Surface Devices</h3>
+                                                    <p>Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy" />
+                                <a href="https://docs.microsoft.com/surface-hub/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/surface-hub-400x140.svg" alt="Surface Hub" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Surface Hub</h3>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/index">Get started</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-site-readiness-guide" target="_blank">Surface Hub 2S Site Readiness</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-manage-intune" target="_blank">Intune on Surface Hub 2S</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-secure-with-uefi" target="_blank">UEFI on Surface Hub 2S</a></p>
+                                                <div class="cardText">
+                                                    <h3>Surface Hub</h3>
+                                                    <p>Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Learn how to plan, deploy, manage, and support your Surface Hub devices.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/small-business-blue.svg" alt="Business" />
+                                <a href="https://www.microsoft.com/surface/business">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/surface-workplace-400x140.svg" alt="Surface for Business" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Surfaces for business</h3>
-                                                <P><a href="https://www.microsoft.com/surface/business" target="_blank">Surface devices for the modern workplace</a></p>
+                                                <div class="cardText">
+                                                    <h3>Surface for Business</h3>
+                                                    <p>Explore how Surface devices are transforming the modern workplace with people-centric design and flexible form factors, helping you get the most out of AI, big data, the cloud, and other foundational technologies.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/list-123-blue.svg" alt="Specs list" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Surface Device Tech Specs</h3>
-                                                <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
-                                                <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">Surface Book</a></p>
-                                                <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a><p>
-                                                <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
-                                                <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg" alt="Specs list" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Surface Hub Tech Specs</h3>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs" target="_blank">Surface Hub 2S</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-55" target="_blank">55" Surface Hub</a></p>
-                                                <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-84" target="_blank">84" Surface Hub</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/connector-blue.svg" alt="Support solutions" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Support solutions</h3>
-                                                <P><a href="https://docs.microsoft.com/surface/support-solutions-surface" target="_blank">Support for Surface devices</a></p>
-                                                <P><a href="https://support.microsoft.com/hub/4343507/surface-hub-help" target="_blank">Support for Surface Hub</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
                             <li class="fullSpan">
                               <hr />
@@ -153,7 +95,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Communities</h3>
+                                                       <h3>Communities</h3>
                                                         <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
                                                         <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
                                                     </div>
@@ -172,20 +114,20 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Learn</h3>
+                                                        <P><a href="https://docs.microsoft.com/learn/browse/?term=Surface" target="_blank">Surface training on Microsoft Learn</a></p>
                                                         <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
-                                                        <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-technical-84" target="_blank">Something 2</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </li> 
+                                    </li>
                                     <li>
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Need help?" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -197,9 +139,9 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                             </div>
                                         </div>
                                     </li>
-                              </ul>
+                                </ul>
                             </li>
-                       </ul>
+                        </ul>
                     </li>
                 </ul>
             </li>
