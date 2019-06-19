@@ -83,7 +83,7 @@ For online-licensed apps, you can assign apps directly to people in your organiz
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
 There are other options for distributing apps:
-- **Use a management tool** - If you use a management tool that supports Microsoft Store, you can distribute apps with your management tool. Once it is configured to work with Store for Business, your managment tool will have access to all apps in your inventory. For more information, see [Distribute apps with a management tool](distribute-apps-with-management-tool.md).
+- **Use a management tool** - If you use a management tool that supports Microsoft Store, you can distribute apps with your management tool. Once it is configured to work with Store for Business, your management tool will have access to all apps in your inventory. For more information, see [Distribute apps with a management tool](distribute-apps-with-management-tool.md).
 - **Distribute from private store** - You can also add apps to your private store, and let people get them on their own. For more information, see [Distribute apps from private store](#distribute-apps-from-private-store)
 
 ## Distribute apps from private store
