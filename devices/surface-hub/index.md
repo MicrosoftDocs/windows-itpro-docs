@@ -12,7 +12,7 @@ description: "Get started with Microsoft Surface Hub."
 ---
 # Get started with Surface Hub
 
-Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming, collaboration, and presentations. Use the links to content below to learn how to plan, deploy, manage, and support your Surface Hub devices.
+Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Use the links below to learn how to plan, deploy, manage, and support your Surface Hub devices.
 
 <ul class="panelContent cardsF">
     <li>

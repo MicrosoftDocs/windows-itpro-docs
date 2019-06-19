@@ -15,7 +15,8 @@ ms.localizationpriority: Normal
 
 Easy Authentication simplifies signing-in to your meetings and files on Surface Hub 2S.
 
-Note: Easy Authentication requires that your primary email address must match your UPN.
+> [!NOTE]
+> Easy Authentication requires that your primary email address must match your UPN.
 
 ## To set up Easy Authentication
 

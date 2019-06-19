@@ -13,15 +13,13 @@ ms.localizationpriority: Normal
 
 # Surface Hub 2S tech specs
 
-## General specs
-
 |**Item**|**Details**|
 |:------ |:--------- |
-|**Size**| 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
+|**Dimensions**| 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
 |**Weight**| 61.6 lbs. (28 kg) |
 |**Resolution**| 3840 x 2560 |
 |**Display**| PixelSense Display, 3:2 aspect ratio, 10-bit color, 15.5 mm border, anti-glare, IPS LCD |
-|**Compute**| Quad-core 8th Generation Intel Core i5 processor, 8 GB RAM, 128 GB SSD <sup>1</sup> |
+|**Processor**| Quad-core 8th Generation Intel Core i5 processor, 8 GB RAM, 128 GB SSD <sup>1</sup> |
 |**Graphics**| Intel UHD Graphics 620 |
 |**Wireless**| Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac compatible) Bluetooth Wireless 4.1 technology <br> Miracast display |
 |**Connections**| USB-A <br> Mini-DisplayPort 1.2 video output <br> RJ45 gigabit Ethernet (1000/100/10 BaseT) <br> HDMI video input (HDMI 2.0, HDCP 2.2 /1.4) <br> USB-C with DisplayPort input <br> Four USB-C (on display) |

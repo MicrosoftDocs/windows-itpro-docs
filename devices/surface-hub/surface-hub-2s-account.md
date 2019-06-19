@@ -25,9 +25,9 @@ Complete advanced configuration tasks using Windows PowerShell. For example:
 
 For more information, see [Configure Surface Hub 2S accounts with PowerShell](surface-hub-2s-configure-with-powershell.md).
 
-## Create account using Office 365 portal
+## Create account using Microsoft 365 admin center
 
-1. In the Microsoft 365 Admin Center, go to Resources and choose Rooms & Equipment and then click +Room.
+1. In the Microsoft 365 admin center, go to **Resources** and choose **Rooms & Equipment** and then select **+ Room**.
 
 2. Provide a name and email address for the device account. Leave remaining settings unchanged in the default state.
 
