@@ -1671,7 +1671,7 @@ In Group Policy, configure:
 
 -OR-
 
-- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
    -and-
 
