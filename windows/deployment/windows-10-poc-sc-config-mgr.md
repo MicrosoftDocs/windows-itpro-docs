@@ -840,7 +840,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarcy Configuration** and click on **Discovery Methods**.
+3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarchy Configuration** and click on **Discovery Methods**.
 4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
 5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
 6. When a popup dialog box asks if you want to run full discovery, click **Yes**. 
