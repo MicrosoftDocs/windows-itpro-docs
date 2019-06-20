@@ -192,7 +192,7 @@ For more information about downloading offline-licensed apps, see [Download offl
 
 ## Manage products programmatically
 
-Microsoft Store for Business and Education provides a set of Admin management APIs. If you orgranization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
+Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
 
 You can download a preview PoweShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
 - View items in inventory (**Apps & software**)
