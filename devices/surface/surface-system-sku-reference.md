@@ -31,6 +31,8 @@ System Model and System SKU are variables stored in System Management BIOS (SMBI
 | Surface Pro with LTE Advanced                                | Surface Pro      | Surface_Pro_1807                 |
 | Surface Book 2 13inch                                        | Surface Book 2   | Surface_Book_1832                |
 | Surface Book 2 15inch                                        | Surface Book 2   | Surface_Book_1793                |
+| Surface Go LTE Consumer  | Surface Go | Surface_Go_1825_Consumer |
+| Surface Go LTE Commercial | System Go | Surface_Go_1825_Commercial |
 | Surface Go Consumer                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
 | Surface Pro 6 Consumer                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
