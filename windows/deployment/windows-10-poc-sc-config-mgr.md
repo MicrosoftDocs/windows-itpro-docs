@@ -306,7 +306,7 @@ This section contains several procedures to support Zero Touch installation with
 WDSUTIL /Set-Server /AnswerClients:None
 ```
 
-1. Deterime the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. Determine the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
     (Get-NetAdapter "Ethernet").MacAddress
