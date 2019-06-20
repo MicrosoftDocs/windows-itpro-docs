@@ -930,7 +930,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 4. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64** and then click **Deploy**.
 
-5. Use the following settings in the Deploy Sofware wizard:
+5. Use the following settings in the Deploy Software wizard:
     - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**<br>
     - Deployment Settings > Purpose: **Available**<br>
     - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**<br>
@@ -1052,8 +1052,8 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 1. On SRV1, in the Assets and Compliance workspace, click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**.
 2. Right-click the computer account for PC1, point to **Client Notification**, click **Download Computer Policy**, and click **OK** in the popup dialog box.
-3. On PC1, in the notification area, click **New sofware is available** and then click **Open Sofware Center**.
-4. In the Sofware Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
+3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
+4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
 
     ![installOS](images/sccm-install-os.png)
 
