@@ -43,7 +43,7 @@ Ensure that your machines:
 Threat & Vulnerability Management introduces a new exposure score metric which visually represents how exposed your machines are to imminent threats.
 
 The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
-- Weaknesses, such as vulnerabilities and misconfigurations discovered on the device
+- Weaknesses, such as vulnerabilities discovered on the device
 - External and internal threats such as public exploit code and security alerts
 - Likelihood of the device getting breached given its current security posture
 - Value of the device to the organization given its role and content
