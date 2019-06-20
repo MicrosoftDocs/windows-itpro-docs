@@ -19,7 +19,7 @@ manager: dansimp
 A billing account contains defining information about your organization. 
 
 >[!NOTE]
->Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more infomation, see [aka.ms/aboutM365preview](https://aka.ms/aboutM365preview).
+>Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more information, see [aka.ms/aboutM365preview](https://aka.ms/aboutM365preview).
 
 The **Billing account** page allows you to manage organization information, purchasing agreements that you have with Microsoft, and admin approvals. The organization information and payment options are required before you can shop for products that have a price.
 

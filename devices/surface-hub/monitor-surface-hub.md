@@ -138,7 +138,7 @@ You'll need the workspace ID and primary key of your OMS workspace. You can get 
 A confirmation dialog will appear telling you whether or not the OMS configuration was successfully applied to the device. If it was, the device will start sending data to OMS.
 
 ### Enroll using a provisioning package
-You can use a provisioning package to enroll your Surface Hub. For more infomation, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
+You can use a provisioning package to enroll your Surface Hub. For more information, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
  
 ### Enroll using a MDM provider
 You can enroll Surface Hub into OMS using the SurfaceHub CSP. Intune and Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. For more information, see [Manage Surface Hub settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
