@@ -912,7 +912,7 @@ The following screenshots of the administrator console shows the list of update 
 
 ![mdm update management screenshot](images/deviceupdatescreenshot1.png)
 
-![mdm update managment metadata screenshot](images/deviceupdatescreenshot2.png)
+![mdm update management metadata screenshot](images/deviceupdatescreenshot2.png)
 
 
 ## <a href="" id="syncmlexample"></a>SyncML example
