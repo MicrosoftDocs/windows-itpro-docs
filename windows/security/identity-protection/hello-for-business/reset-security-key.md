@@ -24,7 +24,7 @@ ms.reviewer:
 >This operation will wipe everything from your security key and reset it to factory defaults.</br> **All data and credentials will be cleared.** 
 
 
-A [Microsoft-compatible security key](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) can be reset via Settings app ( Settings > Accounts > Sign-in options > Security key  ).
+A [Microsoft-compatible security key](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) can be reset via Settings app ( Settings > Accounts > Sign-in options > Security key  ).
 </br>
 Follow the instructions in the Settings app and look for specific instructions based on your security key manufacturer below:
 

@@ -19,12 +19,12 @@ ms.date: 05/13/2019
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224). For CSP DDF files, see [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
 
 
 Additional lists:
 - [List of CSPs supported in Windows Holographic](#hololens)
-- [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
+- [List of CSPs supported in Microsoft Surface Hub](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
 
 <!--StartCSPs-->
@@ -2673,7 +2673,8 @@ Additional lists:
 ## CSP DDF files download
 
 You can download the DDF files for various CSPs from the links below:
-
+- [Download all the DDF files for Windows 10, version 1903](http://download.microsoft.com/download/6/F/0/6F019079-6EB0-41B5-88E8-D1CE77DBA27B/Windows10_1903_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1809](http://download.microsoft.com/download/6/A/7/6A735141-5CFA-4C1B-94F4-B292407AF662/Windows10_1809_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1803](https://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1709](https://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)

@@ -95,7 +95,7 @@ Install the following module in Powershell
 
 2.  Create a Credentials object, then create a new session that connects to Skype for Business Online, and provide the global tenant administrator account, then click **OK**.
 
-    ![Image for Windows PowerShell credential request. ](images/setupdeviceaccto365-18.png)
+    ![Image for Windows PowerShell credential request.](images/setupdeviceaccto365-18.png)
 
 3.  To connect to Microsoft Online Services, run:
 

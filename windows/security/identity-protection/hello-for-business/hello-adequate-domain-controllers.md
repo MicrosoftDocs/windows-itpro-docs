@@ -1,6 +1,6 @@
 ---
-title: Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
-description: Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
+title: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
+description: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,34 +16,44 @@ localizationpriority: medium
 ms.date: 08/20/2018
 ms.reviewer: 
 ---
-# Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
+# Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
 
 **Applies to**
 -   Windows 10, version 1702 or later
+-   Windows Server, versions 2016 and 2019
 -   Hybrid or On-Premises deployment
 -   Key trust
 
+> [!NOTE]
+>There was an issue with key trust on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
+
 ## How many is adequate
 
-How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2016 includes the KDC AS Requests performance counter.  You can use these counters to determine how much of a domain controller's load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication--it remains unchanged.
+ 
+How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2019 includes the KDC AS Requests performance counter.  You can use this counter to determine how much of a domain controller's load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
 
-Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 domain controller.
+
+Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2019 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2019 domain controller.
   
-Determining an adequate number of Windows Server 2016 domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2016) to a deployment of existing domain controllers (Windows Server 2008R2 or Windows Server 2012R2) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on".   To illustrate the "piling on" concept, consider the following scenario:
+ 
+Determining an adequate number of Windows Server 2019 domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2019) to a deployment of existing domain controllers (Windows Server 2008R2, Windows Server 2012R2 or Windows Server 2016) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on". To illustrate the "piling on" concept, consider the following scenario:
+
  
 Consider a controlled environment where there are 1000 client computers and the authentication load of these 1000 client computers is evenly distributed across 10 domain controllers in the environment.  The Kerberos AS requests load would look something like the following:
 
 ![dc-chart1](images/plan/dc-chart1.png)
 
-The environment changes.  The first change includes DC1 upgraded to Windows Server 2016 to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment.   Given all other factors stay constant, the authentication would now look like the following:
+
+The environment changes.  The first change includes DC1 upgraded to Windows Server 2019 to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment.   Given all other factors stay constant, the authentication would now look like the following:
 
 ![dc-chart2](images/plan/dc-chart2.png)
 
-The Windows Server 2016 domain controller is handling 100 percent of all public key trust authentication.  However, it is also handling 10 percent of the password authentication. Why?  This behavior occurs because domain controllers 2- 10 only support password and certificate trust authentication; only a Windows Server 2016 domain controller supports authentication public key trust authentication.  The Windows Server 2016 domain controller understands how to authenticate password and certificate trust authentication and will continue to share the load of authenticating those clients.  Because DC1 can handle all forms of authentication, it will be bear more of the authentication load, and easily become overloaded.  What if another Windows Server 2016 domain controller is added, but without deploying Windows Hello for Business to anymore clients?
+The Windows Server 2019 domain controller is handling 100 percent of all public key trust authentication.  However, it is also handling 10 percent of the password authentication. Why?  This behavior occurs because domain controllers 2 - 10 only support password and certificate trust authentication; only a Windows Server 2019 domain controller supports public key trust authentication.  The Windows Server 2019 domain controller understands how to authenticate password and certificate trust authentication and will continue to share the load of authenticating those clients.  Because DC1 can handle all forms of authentication, it will bear more of the authentication load, and easily become overloaded.  What if another Windows Server 2019 domain controller is added, but without deploying Windows Hello for Business to any more clients?
+
 
 ![dc-chart3](images/plan/dc-chart3.png)
 
-Upgrading another Windows Server 2016 domain controller distributes the public key trust authentication across two domain controllers--each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication.  Both Windows Server 2016 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016, but the number of WHFB clients remains the same.
+Upgrading another Windows Server 2019 domain controller distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication.  Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2019, but the number of WHFB clients remains the same.
 
 ![dc-chart4](images/plan/dc-chart4.png)
 
@@ -51,7 +61,7 @@ Domain controllers 1 through 5 now share the public key trust authentication loa
 
 ![dc-chart5](images/plan/dc-chart5.png)
 
-You'll notice the distribution did not change.  Each Windows Server 2016 domain controller handles 20 percent of the public key trust authentication.  However, increasing the volume of authentication (by increasing the number of clients) increases the amount of work that is represented by the same 20 percent.  In the previous example, 20 percent of public key trust authentication equated to a volume of 20 authentications per domain controller capable of public key trust authentication.  However, with upgraded clients, that same 20 percent represents a volume 100 public key trust authentications per public key trust capable domain controller.  Also, the distribution of non-public key trust authentication remained at 10 percent, but the volume of password and certificate trust authentication decreased across the older domain controllers.
+You'll notice the distribution did not change.  Each Windows Server 2019 domain controller handles 20 percent of the public key trust authentication.  However, increasing the volume of authentication (by increasing the number of clients) increases the amount of work that is represented by the same 20 percent.  In the previous example, 20 percent of public key trust authentication equated to a volume of 20 authentications per domain controller capable of public key trust authentication.  However, with upgraded clients, that same 20 percent represents a volume of 100 public key trust authentications per public key trust capable domain controller.  Also, the distribution of non-public key trust authentication remained at 10 percent, but the volume of password and certificate trust authentications decreased across the older domain controllers.
 
 There are several conclusions here: 
 * Upgrading domain controllers changes the distribution of new authentication, but doesn't change the distribution of older authentication.
@@ -61,6 +71,8 @@ There are several conclusions here:
 * Upgrading clients to Windows Hello for Business but does not affect the distribution of authentication; only the volume of authentication. 
 
 The preceding was an example to show why it's unrealistic to have a "one-size-fits-all" number to describe what "an adequate amount" means.  In the real world, authentication is not evenly distributed across domain controllers.
+
+
 
 ## Determining total AS Request load
 
@@ -83,13 +95,15 @@ Add the number of authentications for each domain controller for the median time
 Review the distribution of authentication.  Hopefully, none of these are above 70 percent.  It's always good to reserve some capacity for the unexpected.  Also, the primary purposes of a domain controller are to provide authentication and handle Active Directory operations. Identify domain controllers with lower distributions of authentication as potential candidates for the initial domain controller upgrades in conjunction with a reasonable distribution of clients provisioned for Windows Hello for Business.
   
 ## Monitoring Authentication
-Using the same methods previously described above, monitor the Kerberos authentication after upgrading a domain controller and your first phase of Windows Hello for Business deployments.  Make note of the delta of authentication before and after upgrading the domain controller to Windows Server 2016.  This delta is representative of authentication resulting from the first phase of your Windows Hello for Business clients.  This gives you a baseline for your environment from which you can form a statement such as 
+
+Using the same methods described above, monitor the Kerberos authentication after upgrading a domain controller and your first phase of Windows Hello for Business deployments.  Make note of the delta of authentication before and after upgrading the domain controller to Windows Server 2019.  This delta is representative of authentication resulting from the first phase of your Windows Hello for Business clients.  It gives you a baseline for your environment to where you can form a statement such as:
+
 
 ```"Every n Windows Hello for Business clients results in x percentage of key-trust authentication."```
 
 Where _n_ equals the number of clients you switched to Windows Hello for Business and _x_ equals the increased percentage of authentication from the upgraded domain controller.  Armed with this information, you can apply the observations of upgrading domain controllers and increasing Windows Hello for Business client count to appropriately phase your deployment.
   
-Remember, increasing the number of clients changes the volume of authentication distributed across the Windows Server 2016 domain controllers. If there is only one Windows Server 2016 domain controller, there's no distribution and you are simply increasing the volume of authentication for which THAT domain controller is responsible.
+Remember, increasing the number of clients changes the volume of authentication distributed across the Windows Server 2019 domain controllers. If there is only one Windows Server 2019 domain controller, there's no distribution and you are simply increasing the volume of authentication for which THAT domain controller is responsible.
 
 Increasing the number of domain controllers distributes the volume of authentication, but doesn't change it.  Therefore, as you add more domain controllers, the burden of authentication, for which each domain controller is responsible, decreases. Upgrading two domain controller changes the distribution to 50 percent. Upgrading three domain controllers changes the distribution to 33 percent, and so on.
 

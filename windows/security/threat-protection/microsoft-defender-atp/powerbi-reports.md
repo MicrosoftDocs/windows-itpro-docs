@@ -45,7 +45,7 @@ You can access these options from Microsoft Defender Security Center. Both the P
 ## Create a Microsoft Defender ATP dashboard on Power BI service
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
-1. In the navigation pane, select **Settings** > **Power BI reports**.
+1. In the navigation pane, select **Settings** > **General** > **Power BI reports**.
 
 2. Click **Create dashboard**.
 

@@ -20,11 +20,11 @@ Get answers to commonly asked questions about the Internet Explorer 11 Blocker T
 >[!Important]
 >If you administer your company’s environment using an update management solution, such as Windows Server Update Services (WSUS) or System Center 2012 Configuration Manager, you don’t need to use the Internet Explorer 11 Blocker Toolkit. Update management solutions let you completely manage your Windows Updates and Microsoft Updates, including your Internet Explorer 11 deployment.
 
--   [Automatic updates delivery process]()
+-   [Automatic updates delivery process](#automatic-updates-delivery-process)
 
--   [How the Internet Explorer 11 Blocker Toolkit works]()
+-   [How the Internet Explorer 11 Blocker Toolkit works](#how-the-internet-explorer-11-blocker-toolkit-works)
 
--   [Internet Explorer 11 Blocker Toolkit and other update services]()
+-   [Internet Explorer 11 Blocker Toolkit and other update services](#internet-explorer-11-blocker-toolkit-and-other-update-services)
 
 ## Automatic Updates delivery process
 
@@ -50,7 +50,7 @@ other update management solution.
 **Q. Why don’t we just block URL access to Windows Update or Microsoft Update?**  
 A. Blocking the Windows Update or Microsoft Update URLs also stops delivery of critical security and reliability updates for all of the supported versions of the Windows operating system; leaving your computers more vulnerable.
 
-How the Internet Explorer 11 Blocker Toolkit works
+## How the Internet Explorer 11 Blocker Toolkit works
 
 **Q. How should I test the Internet Explorer 11 Blocker Toolkit in my company?**  
 A. Because the toolkit only sets a registry key to turn on and off the delivery of Internet Explorer 11, there should be no additional impact or side effects to your environment. No additional testing should be necessary.  

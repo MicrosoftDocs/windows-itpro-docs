@@ -74,7 +74,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
 5. In the **Sync options** screen:
 
-   1. In the **Select new or existing users** section, you can select either **Existing users** or **New users** based on the scenaro that applies to you. For this walkthrough, select **New users**.
+   1. In the **Select new or existing users** section, you can select either **Existing users** or **New users** based on the scenario that applies to you. For this walkthrough, select **New users**.
    2. In the **Import data** section, click **Upload Files** to bring up the **Select data files to be uploaded** window.  
    3. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
    4. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.

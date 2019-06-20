@@ -93,7 +93,7 @@ The **Artifact timeline** feature provides an addition view of the evidence that
 Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
