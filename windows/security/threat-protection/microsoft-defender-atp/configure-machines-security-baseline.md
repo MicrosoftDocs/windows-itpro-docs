@@ -65,11 +65,33 @@ To review specific machines, select **Configure security baseline** on the card.
 
 Machine configuration management monitors baseline compliance only of Windows 10 machines that have been specifically assigned the Microsoft Defender ATP security baseline. You can conveniently review the baseline and assign it to machines on Intune device management.
 
-1.	Select **Configure security baseline** on the **Security baseline** card to go to Intune device management. A similar overview of baseline compliance is displayed.
+1. Select **Configure security baseline** on the **Security baseline** card to go to Intune device management. A similar overview of baseline compliance is displayed.
 
-Tip: Alternatively, you can navigate to the Microsoft Defender ATP security baseline in the Microsoft Azure portal from All services > Intune > Device security > Security baselines (preview) > PREVIEW: Windows Defender ATP baseline.
+   >[!TIP]
+   > Alternatively, you can navigate to the Microsoft Defender ATP security baseline in the Microsoft Azure portal from **All services > Intune > Device security > Security baselines (preview) > PREVIEW: Windows Defender ATP baseline**.
 
 
+2. Create a new profile.
+
+   ![Microsoft Defender ATP security baseline overview on Intune](images/secconmgmt_baseline_intuneprofile1.png)
+   *Microsoft Defender ATP security baseline overview on Intune*
+
+3. During profile creation, you can review and adjust specific settings on the baseline.
+
+   ![Security baseline options during profile creation on Intune](images/secconmgmt_baseline_intuneprofile2.png)
+   *Security baseline options during profile creation on Intune*
+
+4. After creating the new profile, you will be shown a list of profiles for the security baseline. Select the new profile from the list of profiles.
+
+   ![Security baseline profiles on Intune](images/secconmgmt_baseline_intuneprofile3.png)
+   *Security baseline profiles on Intune*
+
+5. To deploy the security baseline, assign the profile to all your machines and save the profile.
+
+   ![Assigning the security baseline on Intune](images/secconmgmt_baseline_intuneprofile4.png)
+   *Assigning the security baseline on Intune*
+
+To learn more about Intune security baselines and assigning them, [read Create a Windows 10 security baseline in Intune](https://docs.microsoft.com/intune/security-baselines).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
