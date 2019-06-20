@@ -1465,7 +1465,7 @@ To turn this Off in the UI:
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
-In the **Vocie activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
+In the **Voice activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
 
 To turn this Off in the UI:
 
