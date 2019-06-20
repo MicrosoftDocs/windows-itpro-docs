@@ -1,6 +1,6 @@
 ---
-title: Ensure your machines are configured properly
-description: Properly configure machines to boost overall resilience against threats and enhance your capability to detect and respond to attacks.
+title: Optimize ASR rule deployment and detections
+description: Ensure your attack surface reduction (ASR) rules are fully deployed and optimized to effectively identify and prevent actions that are typically taken by malware during exploitation. 
 keywords: onboard, Intune management, MDATP, WDATP, Microsoft Defender, Windows Defender, advanced threat protection, attack surface reduction, ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: procedural
 ---
 
-# Ensure your machines are configured properly
+# Optimize ASR rule deployment and detections
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -26,45 +26,32 @@ ms.topic: procedural
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-With properly configured machines, you can boost overall resilience against threats and enhance your capability to detect and respond to attacks. Security configuration management helps ensure that your machines:
+[Attack surface reduction (ASR) rules](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) identify and prevent actions that are typically taken by malware during exploitation. These rules control when and how potentially malicious code can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
 
-- Onboard to Microsoft Defender ATP
-- Meet or exceed the Microsoft Defender ATP security baseline configuration
-- Have strategic attack surface mitigations in place
+![Attack surface management card](images/secconmgmt_asr_card.png)
 
-![Security configuration management page](images/secconmgmt_main.png)
-*Machine configuration management page*
+*Attack surface management card*
 
-You can track configuration status at an organizational level and quickly take action in response to poor onboarding coverage, compliance issues, and poorly optimized attack surface mitigations through direct, deep links to device management pages on Microsoft Intune and Microsoft 365 security center.
+The **Attack surface management** card is an entry point to tools in Microsoft 365 security center that you can use to:
 
-In doing so, you benefit from:
-- Comprehensive visibility of the events on your machines
-- Robust threat intelligence and powerful machine learning technologies for processing raw events and identifying the breach activity and threat indicators
-- A full stack of security features configured to efficiently stop the installation of malicious implants, hijacking of system files and process, data exfiltration, and other threat activities
-- Optimized attack surface mitigations, maximizing strategic defenses against threat activity while minimizing impact to productivity
+- Understand how ASR rules are currently deployed in your organization
+- Review ASR detections and identify possible incorrect detections
+- Analyze the impact of exclusions and generate the list of file paths to exclude
 
-## Enroll machines to Intune management
+Selecting **Go to attack surface management** takes you to **Monitoring & reports > Attack surface reduction rules > Add exclusions**. From there, you can navigate to other sections of Microsoft 365 security center.
 
-Machine configuration management works closely with Intune device management to establish the inventory of the machines in your organization and the baseline security configuration. You will be able to track and manage configuration issues on Intune-managed Windows 10 machines.
+![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center](images/secconmgmt_asr_m365exlusions.png)
 
-Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
+*Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center*
 
->[!TIP]
->- To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>[!NOTE]
+>To access Microsoft 365 security center, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read more about required licenses and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
 
-## In this section
-Topic | Description
-:---|:---
-[Onboard previous versions of Windows](onboard-downlevel.md)| Onboard Windows 7 and Windows 8.1 machines to Microsoft Defender ATP. 
-[Onboard Windows 10 machines](configure-endpoints.md) | You'll need to onboard machines for it to report to the Microsoft Defender ATP service. Learn about the tools and methods you can use to configure machines in your enterprise.
-[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP 
-[Onboard non-Windows machines](configure-endpoints-non-windows.md) | Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
-[Run a detection test on a newly onboarded machine](run-detection-test.md) | Run a script on a newly onboarded machine to verify that it is properly reporting to the Microsoft Defender ATP service.
-[Configure proxy and Internet settings](configure-proxy-internet.md)| Enable communication with the Microsoft Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
-[Troubleshoot onboarding issues](troubleshoot-onboarding.md) | Learn about resolving issues that might arise during onboarding.
+For more information about optimizing ASR rule deployment in Microsoft 365 security center, read [Monitor and manage ASR rule deployment and detections](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections) 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-
-
-
+# Related topics
+- [Ensure your machines are configured properly](configure-machines.md)
+- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboaring.md)
+- [Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)
