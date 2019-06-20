@@ -352,6 +352,11 @@
 #### Interoperability
 ##### [Partner applications](partner-applications.md)
 
+#### [Manage machine configuration](configure-machines.md)
+##### [Monitor and increase machine onboarding](configure-machines-onboarding.md)
+##### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
+##### [Optimize ASR rule deployment and detections](configure-machines-asr.md)
+
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac.md)
 ###### [Create and manage roles](user-roles.md)
