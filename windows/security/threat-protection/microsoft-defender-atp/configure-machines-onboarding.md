@@ -33,6 +33,7 @@ Each onboarded machine adds an additional endpoint detection and response (EDR) 
 The **Onboarding** card provides a high-level overview of your onboarding rate by comparing the number of Windows 10 machines that have actually onboarded to Microsoft Defender ATP against the total number of Intune-managed Windows 10 machines.
 
 ![Machine configuration management Onboarding card](images/secconmgmt_onboarding_card.png)
+
 *Card showing onboarded machines compared to the total number of Intune-managed Windows 10 machine*
 
 >[!NOTE]
@@ -52,16 +53,19 @@ From the overview, create a configuration profile specifically for the deploymen
 1. Select **Create a device configuration profile to configure ATP sensor**.
 
    ![Microsoft Defender ATP device compliance page on Intune device management](images/secconmgmt_onboarding_1deviceconfprofile.png)
+
    *Microsoft Defender ATP device compliance page on Intune device management*
 
 2. Specify a name for the profile, specify desired configuration options for sample sharing and reporting frequency, and select **Create** to save the new profile.
 
    ![Configuration profile creation screen on Intune](images/secconmgmt_onboarding_2deviceconfprofile.png)
+
    *Configuration profile creation*
 
 3. After creating the profile, assign it to all your machines. You can review profiles and their deployment status anytime by accessing **Device configuration > Profiles** on Intune.
 
    ![Profile assignment screen screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)
+
    *Assigning the new agent profile to all machines*
 
 To learn more about Intune profiles, [read Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-profile-assign).

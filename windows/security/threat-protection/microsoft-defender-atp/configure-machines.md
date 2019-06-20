@@ -33,6 +33,7 @@ With properly configured machines, you can boost overall resilience against thre
 - Have strategic attack surface mitigations in place
 
 ![Security configuration management page](images/secconmgmt_main.png)
+
 *Machine configuration management page*
 
 You can track configuration status at an organizational level and quickly take action in response to poor onboarding coverage, compliance issues, and poorly optimized attack surface mitigations through direct, deep links to device management pages on Microsoft Intune and Microsoft 365 security center.
