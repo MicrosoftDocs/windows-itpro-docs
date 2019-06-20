@@ -97,6 +97,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground" data-raw-source="[DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)">DeliveryOptimization/DODelayCacheServerFallbackBackground</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground" data-raw-source="[DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)">DeliveryOptimization/DODelayCacheServerFallbackForeground</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" data-raw-source="[DeviceHealthMonitoring/AllowDeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring)">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" data-raw-source="[DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope)">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a></li>
+<li><a href="policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" data-raw-source="[DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a></li>
 <li><a href="policy-csp-experience.md#experience-showlockonusertile" data-raw-source="[Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)">Experience/ShowLockOnUserTile</a></li>
 <li><a href="policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar" data-raw-source="[InternetExplorer/AllowEnhancedSuggestionsInAddressBar](policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)">InternetExplorer/AllowEnhancedSuggestionsInAddressBar</a></li>
 <li><a href="policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" data-raw-source="[InternetExplorer/DisableActiveXVersionListAutoDownload](policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)">InternetExplorer/DisableActiveXVersionListAutoDownload</a></li>
@@ -1871,8 +1874,10 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ## Change history in MDM documentation
 
 ### June 2019
-New or updated topic | Description|
+
+|New or updated topic | Description|
 |--- | ---|
+|[Policy CSP - DeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md)|Added the following new policies:<br>AllowDeviceHealthMonitoring, ConfigDeviceHealthMonitoringScope, ConfigDeviceHealthMonitoringUploadDestination.|
 |[Policy CSP - TimeLanguageSettings](policy-csp-timelanguagesettings.md)|Added the following new policy:<br>ConfigureTimeZone.|
 
 
