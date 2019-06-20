@@ -30,7 +30,7 @@ With the Windows 10 Team Edition operating system  —  that runs on Surface Hub
 > [!NOTE]
 > You can only set Device affiliation during the initial out-of-box experience (OOBE) setup. If you need to reset Device affiliation, you’ll have to repeat OOBE setup.
 
-##3 No affiliation
+## No affiliation
 
 No affiliation is like having Surface Hub 2S in a workgroup with a different local Administrator account on each Surface Hub 2S. If you choose No affiliation, you must locally save the [Bitlocker Key to a USB thumb drive](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-key-management-faq). You can still enroll the device with Intune, however only the local admin can access the Settings app using the account credentials configured during OOBE. You can change the Administrator account password from the Settings app.
 
