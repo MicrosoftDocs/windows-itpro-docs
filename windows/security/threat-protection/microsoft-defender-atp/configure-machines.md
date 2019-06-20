@@ -56,7 +56,7 @@ Before you can ensure your machines are configured properly, enroll them to Intu
 >[!NOTE] 
 >During preview, you might encounter a few known limitations:
 >- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
->- The count of onboarded machines tracked by security configuration management might not include machines onboarded using Security Center Configuration Manager. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
+>- The count of onboarded machines tracked by security configuration management might not include machines onboarded using Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
 >- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
 
 

@@ -37,7 +37,7 @@ The **Onboarding** card provides a high-level overview of your onboarding rate b
 *Card showing onboarded machines compared to the total number of Intune-managed Windows 10 machine*
 
 >[!NOTE]
->- If you used Security Center Configuration Manager or other onboarding methods that don’t use Intune profiles, you might encounter data discrepancies. To resolve these discrepancies, assign an Intune configuration profile to onboard the machines to Microsoft Defender ATP again.
+>- If you used Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles, you might encounter data discrepancies. To resolve these discrepancies, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to your machines.
 >- During preview, you might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
 
 ## Onboard more machines with Intune profiles
