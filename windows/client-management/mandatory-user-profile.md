@@ -150,6 +150,8 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 | Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
 | Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
 
+Note Above Group Policy settings can be Applied in windows 10 professional edition
+
 
 
 
