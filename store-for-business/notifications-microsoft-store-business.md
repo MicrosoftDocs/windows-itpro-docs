@@ -1,6 +1,6 @@
 ---
 title: Notifications in Microsoft Store for Business and Education (Windows 10)
-description: Notifications alert you to issues or outages with Micrososft Store for Business and Education.
+description: Notifications alert you to issues or outages with Microsoft Store for Business and Education.
 keywords: notifications, alerts
 ms.assetid: 
 ms.reviewer: 
