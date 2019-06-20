@@ -117,7 +117,7 @@ For example:<br>
 ($1.29 X .095) X 100 = $12.25
 
 ## Agreements
-Each billing account inculdes access to the purchasing agreements your organization has signed with Microsoft. This could include:
+Each billing account includes access to the purchasing agreements your organization has signed with Microsoft. This could include:
 - Microsoft Enterprise Agreement
 - Select agreements
 - Open agreements
