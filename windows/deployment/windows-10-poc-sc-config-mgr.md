@@ -793,7 +793,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 ## Replace a client with Windows 10 using Configuration Manager
 
->Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoto.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
+>Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
 
 ![contoso.com\Computers](images/poc-computers.png)
 
