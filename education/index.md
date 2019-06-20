@@ -205,7 +205,7 @@ ms.prod: w10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Excel Data Streamer</h3>
+                                                    <h3>Data Streamer</h3>
                                                     <p>Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.</p>
                                                 </div>
                                             </div>
