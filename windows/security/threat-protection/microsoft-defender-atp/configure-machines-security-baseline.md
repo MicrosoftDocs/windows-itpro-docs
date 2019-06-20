@@ -63,6 +63,11 @@ Each machine is given one of the following status types:
 
 To review specific machines, select **Configure security baseline** on the card. This takes you to Intune device management. From there, select **Device status** for the names and statuses of the machines.
 
+>[!NOTE] 
+>During preview, you might encounter a few known limitations:
+>- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
+>- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
+
 ## Review and assign the Microsoft Defender ATP security baseline
 
 Machine configuration management monitors baseline compliance only of Windows 10 machines that have been specifically assigned the Microsoft Defender ATP security baseline. You can conveniently review the baseline and assign it to machines on Intune device management.
