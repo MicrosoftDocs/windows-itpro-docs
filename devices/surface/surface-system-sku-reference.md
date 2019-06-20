@@ -42,20 +42,20 @@ System Model and System SKU are variables that are stored in the System Manageme
 
 ## Examples 
 
-**PowerShell**  
+**Retrieving the SKU by using PowerShell**  
 Use the following PowerShell command to pull the System SKU information:
 
  ``` powershell  
 gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 ```
 
-**System information**  
+**Retrieving the SKU by using System Information**  
 You can also find the System SKU and System Model for a device in **System Information**. To do this, follow these steps:
 
 1. Select **Start** and then in the search box type **MSInfo32**.  
 1. Select **System Information**.
 
-**Example: Using the SKU in a task sequence WMI condition**  
+**Using the SKU in a task sequence WMI condition**  
 You can use the System SKU information in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager as part of a task sequence WMI condition.
 
  ``` powershell  
