@@ -103,7 +103,7 @@ You’ll need this documentation:
 | United States | Sales Tax Exemption Certificate |
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
 | Ireland | 13B/56A Tax Exemption Certificate|
-| International organizations that hold tax exaemption | Certification / letter confirmation from local tax authorities |
+| International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
 
 ### Calculating tax
 
