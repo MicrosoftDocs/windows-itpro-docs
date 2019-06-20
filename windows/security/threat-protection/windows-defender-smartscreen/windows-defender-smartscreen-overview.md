@@ -71,5 +71,5 @@ SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log in Even
 
 - [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
 
->[!NOTE] 
+>[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

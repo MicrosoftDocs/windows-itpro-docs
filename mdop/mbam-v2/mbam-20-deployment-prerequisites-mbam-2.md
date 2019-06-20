@@ -91,12 +91,12 @@ Each of the MBAM Server features has specific prerequisites that must be met bef
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 For a list of supported operating systems, see [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md).
 
- 
+
 
 ### Prerequisites for the Compliance and Audit Reports
 
@@ -114,7 +114,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p>
-<p>See [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md) for supported versions.</p></td>
+<p>See <a href="mbam-20-supported-configurations-mbam-2.md" data-raw-source="[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)">MBAM 2.0 Supported Configurations</a> for supported versions.</p></td>
 <td align="left"><p>Install SQL Server with:</p>
 <ul>
 <li><p>SQL_Latin1_General_CP1_CI_AS collation</p></li>
@@ -136,7 +136,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tbody>
 </table>
 
- 
+
 
 ### Prerequisites for the Recovery Database
 
@@ -154,7 +154,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p>
-<p>See [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md) for supported versions.</p></td>
+<p>See <a href="mbam-20-supported-configurations-mbam-2.md" data-raw-source="[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)">MBAM 2.0 Supported Configurations</a> for supported versions.</p></td>
 <td align="left"><p>Install SQL Server with:</p>
 <ul>
 <li><p>SQL_Latin1_General_CP1_CI_AS collation</p></li>
@@ -179,20 +179,19 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional - Install Transparent Data Encryption (TDE) feature available in SQL Server</p></td>
-<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with many laws, regulations, and guidelines established in various industries.</p>
+<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with many laws, regulations, and guidelines established in various industries.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>TDE performs real-time decryption of database information, which means that, if the account under which you are logged on has permissions to the database while you are viewing the recovery key information in the SQL Server tables, the recovery key information is visible.</p>
+<strong>Note</strong><br/><p>TDE performs real-time decryption of database information, which means that, if the account under which you are logged on has permissions to the database while you are viewing the recovery key information in the SQL Server tables, the recovery key information is visible.</p>
 </div>
 <div>
- 
+
 </div>
-<p>More about TDE: [MBAM 2.0 Security Considerations](mbam-20-security-considerations-mbam-2.md).</p></td>
+<p>More about TDE: <a href="mbam-20-security-considerations-mbam-2.md" data-raw-source="[MBAM 2.0 Security Considerations](mbam-20-security-considerations-mbam-2.md)">MBAM 2.0 Security Considerations</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Prerequisites for the Compliance and Audit Database
 
@@ -210,7 +209,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p>
-<p>See [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md) for supported versions.</p></td>
+<p>See <a href="mbam-20-supported-configurations-mbam-2.md" data-raw-source="[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)">MBAM 2.0 Supported Configurations</a> for supported versions.</p></td>
 <td align="left"><p>Install SQL Server with:</p>
 <ul>
 <li><p>SQL_Latin1_General_CP1_CI_AS collation</p></li>
@@ -235,15 +234,14 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional - Install Transparent Data Encryption (TDE) feature in SQL Server.</p></td>
-<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with many laws, regulations, and guidelines established in various industries.</p>
+<td align="left"><p>The TDE SQL Server feature performs real-time I/O encryption and decryption of the data and log files, which can help you to comply with many laws, regulations, and guidelines established in various industries.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>TDE performs real-time decryption of database information, which means that, if the account under which you are logged on has permissions to the database while you are viewing the recovery key information in the SQL Server tables, the recovery key information is visible.</p>
+<strong>Note</strong><br/><p>TDE performs real-time decryption of database information, which means that, if the account under which you are logged on has permissions to the database while you are viewing the recovery key information in the SQL Server tables, the recovery key information is visible.</p>
 </div>
 <div>
- 
+
 </div>
-<p>More about TDE: [MBAM 2.0 Security Considerations](mbam-20-security-considerations-mbam-2.md)</p></td>
+<p>More about TDE: <a href="mbam-20-security-considerations-mbam-2.md" data-raw-source="[MBAM 2.0 Security Considerations](mbam-20-security-considerations-mbam-2.md)">MBAM 2.0 Security Considerations</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SQL Server must have Database Engine Services installed and running during MBAM Server installation.</p></td>
@@ -256,7 +254,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tbody>
 </table>
 
- 
+
 
 ### Prerequisites for the Self-Service Portal
 
@@ -274,12 +272,12 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of Windows Server</p>
-<p>See [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md) for supported versions.</p></td>
+<p>See <a href="mbam-20-supported-configurations-mbam-2.md" data-raw-source="[MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)">MBAM 2.0 Supported Configurations</a> for supported versions.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ASP.NET MVC 2.0</p></td>
-<td align="left"><p>[ASP.NET MVC 2 download](https://go.microsoft.com/fwlink/?LinkId=392270)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=392270" data-raw-source="[ASP.NET MVC 2 download](https://go.microsoft.com/fwlink/?LinkId=392270)">ASP.NET MVC 2 download</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Web Service IIS Management Tools</p></td>
@@ -288,7 +286,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tbody>
 </table>
 
- 
+
 
 ## Prerequisites for MBAM Clients
 
@@ -314,24 +312,23 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <td align="left"><p>For more information, see the BIOS documentation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Windows 8 clients only</strong>: To have MBAM store and manage the TPM recovery keys: TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM. To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468).</p>
+<td align="left"><p><strong>Windows 8 clients only</strong>: To have MBAM store and manage the TPM recovery keys: TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM. To turn off TPM auto-provisioning, see <a href="https://go.microsoft.com/fwlink/?LinkId=286468" data-raw-source="[Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468)">Disable-TpmAutoProvisioning</a>.</p>
 <ul>
 <li><p>TPM auto-provisioning must be turned off.</p></li>
 <li><p>MBAM must be set as the owner of the TPM before you deploy MBAM.</p></li>
 </ul></td>
-<td align="left"><p>To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468).</p>
+<td align="left"><p>To turn off TPM auto-provisioning, see <a href="https://go.microsoft.com/fwlink/?LinkId=286468" data-raw-source="[Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468)">Disable-TpmAutoProvisioning</a>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Ensure that the keyboard, video, or mouse are directly connected and not managed through a keyboard, video, or mouse (KVM) switch. A KVM switch can interfere with the ability of the computer to detect the physical presence of hardware.</p>
+<strong>Note</strong><br/><p>Ensure that the keyboard, video, or mouse are directly connected and not managed through a keyboard, video, or mouse (KVM) switch. A KVM switch can interfere with the ability of the computer to detect the physical presence of hardware.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -340,9 +337,9 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 
 [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)
 
- 
 
- 
+
+
 
 
 

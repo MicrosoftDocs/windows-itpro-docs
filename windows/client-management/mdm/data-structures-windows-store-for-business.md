@@ -7,7 +7,7 @@ ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
 description: 
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -81,7 +81,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## BulkSeatOperationResultSet
 
@@ -100,16 +100,16 @@ Specifies the properties of the alternate identifier.
 <tbody>
 <tr class="odd">
 <td><p>seatDetails</p></td>
-<td><p>collection of [SeatDetails](#seatdetails)</p></td>
+<td><p>collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
 </tr>
 <tr class="even">
 <td><p>failedSeatOperations</p></td>
-<td><p>collection of [FailedSeatRequest](#failedseatrequest)</p></td>
+<td><p>collection of <a href="#failedseatrequest" data-raw-source="[FailedSeatRequest](#failedseatrequest)">FailedSeatRequest</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## FailedSeatRequest
 
@@ -132,7 +132,7 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="even">
 <td><p>productKey</p></td>
-<td><p>[ProductKey](#productkey)</p></td>
+<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>userName</p></td>
@@ -141,7 +141,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## FrameworkPackageDetails
 
@@ -172,7 +172,7 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="odd">
 <td><p>location</p></td>
-<td><p>[PackageLocation](#packagelocation)</p></td>
+<td><p><a href="#packagelocation" data-raw-source="[PackageLocation](#packagelocation)">PackageLocation</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -187,17 +187,17 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
-<td><p>collection of [ProductArchitectures](#productarchitectures)</p></td>
+<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>packageFormat</p></td>
-<td><p>[ProductPackageFormat](#productpackageformat)</p></td>
+<td><p><a href="#productpackageformat" data-raw-source="[ProductPackageFormat](#productpackageformat)">ProductPackageFormat</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>platforms</p></td>
-<td><p>collection of [ProductPlatform](#productplatform)</p></td>
+<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -213,7 +213,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## InventoryDistributionPolicy
 
@@ -241,7 +241,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## InventoryEntryDetails
 
@@ -262,7 +262,7 @@ Specifies the properties of the alternate identifier.
 <tbody>
 <tr class="odd">
 <td><p>productKey</p></td>
-<td><p>[ProductKey](#productkey)</p></td>
+<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
 <td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
@@ -282,23 +282,23 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="odd">
 <td><p>licenseType</p></td>
-<td><p>[LicenseType](#licensetype)</p></td>
+<td><p><a href="#licensetype" data-raw-source="[LicenseType](#licensetype)">LicenseType</a></p></td>
 <td><p>Indicates whether the set of seats for a given application supports online or offline licensing.</p></td>
 </tr>
 <tr class="even">
 <td><p>distributionPolicy</p></td>
-<td><p>[InventoryDistributionPolicy](#inventorydistributionpolicy)</p></td>
+<td><p><a href="#inventorydistributionpolicy" data-raw-source="[InventoryDistributionPolicy](#inventorydistributionpolicy)">InventoryDistributionPolicy</a></p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p>status</p></td>
-<td><p>[InventoryStatus](#inventorystatus)</p></td>
+<td><p><a href="#inventorystatus" data-raw-source="[InventoryStatus](#inventorystatus)">InventoryStatus</a></p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## InventoryResultSet
 
@@ -324,13 +324,13 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="even">
 <td><p>inventoryEntries</p></td>
-<td><p>collection of [InventoryEntryDetails](#inventoryentrydetails)</p></td>
+<td><p>collection of <a href="#inventoryentrydetails" data-raw-source="[InventoryEntryDetails](#inventoryentrydetails)">InventoryEntryDetails</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## InventoryStatus
 
@@ -358,7 +358,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## LicenseType
 
@@ -386,7 +386,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+ 
 
 ## LocalizedProductDetail
 
@@ -424,18 +424,18 @@ Specifies the properties of the localized product.
 </tr>
 <tr class="even">
 <td><p>images</p></td>
-<td><p>collection of [ProductImage](#productimage)</p></td>
+<td><p>collection of <a href="#productimage" data-raw-source="[ProductImage](#productimage)">ProductImage</a></p></td>
 <td><p>Artwork and icon associated with the application.</p></td>
 </tr>
 <tr class="odd">
 <td><p>publisher</p></td>
-<td><p>[PublisherDetails](#publisherdetails)</p></td>
+<td><p><a href="#publisherdetails" data-raw-source="[PublisherDetails](#publisherdetails)">PublisherDetails</a></p></td>
 <td><p>Publisher of the application.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## OfflineLicense
 
@@ -456,7 +456,7 @@ Specifies the properties of the localized product.
 <tbody>
 <tr class="odd">
 <td><p>productKey</p></td>
-<td><p>[ProductKey](#productkey)</p></td>
+<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
 <td><p>Identifies a set of seats associated with an application.</p></td>
 </tr>
 <tr class="even">
@@ -482,7 +482,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+ 
 
 ## PackageContentInfo
 
@@ -501,7 +501,7 @@ Specifies the properties of the localized product.
 <tbody>
 <tr class="odd">
 <td><p>productPlatforms</p></td>
-<td><p>collection of [ProductPlatform](#productplatform)</p></td>
+<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
 </tr>
 <tr class="even">
 <td><p>packageFormat</p></td>
@@ -510,7 +510,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+ 
 
 ## PackageLocation
 
@@ -537,7 +537,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductArchitectures
 
@@ -567,7 +567,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductDetails
 
@@ -588,7 +588,7 @@ Specifies the properties of the localized product.
 <tbody>
 <tr class="odd">
 <td><p>productKey</p></td>
-<td><p>[ProductKey](#productkey)</p></td>
+<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
 <td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
@@ -613,7 +613,7 @@ Specifies the properties of the localized product.
 </tr>
 <tr class="even">
 <td><p>alternateIds</p></td>
-<td><p>collection of [AlternateIdentifier](#alternateidentifier)</p></td>
+<td><p>collection of <a href="#alternateidentifier" data-raw-source="[AlternateIdentifier](#alternateidentifier)">AlternateIdentifier</a></p></td>
 <td><p>The identifiers that can be used to instantiate the installation of on online application.</p></td>
 </tr>
 <tr class="odd">
@@ -623,13 +623,13 @@ Specifies the properties of the localized product.
 </tr>
 <tr class="even">
 <td><p>supportedPlatforms</p></td>
-<td><p>collection of [ProductPlatform](#productplatform)</p></td>
+<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductImage
 
@@ -658,7 +658,7 @@ Specifies the properties of the product image.
 <tr class="even">
 <td><p>purpose</p></td>
 <td><p>string</p></td>
-<td><p>Tag for the purpose of the image, e.g. "screenshot" or "logo".</p></td>
+<td><p>Tag for the purpose of the image, e.g. &quot;screenshot&quot; or &quot;logo&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>height</p></td>
@@ -678,12 +678,12 @@ Specifies the properties of the product image.
 <tr class="even">
 <td><p>backgroundColor</p></td>
 <td><p>string</p></td>
-<td><p>Format "#RRGGBB"</p></td>
+<td><p>Format &quot;#RRGGBB&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p>foregroundColor</p></td>
 <td><p>string</p></td>
-<td><p>Format "#RRGGBB"</p></td>
+<td><p>Format &quot;#RRGGBB&quot;</p></td>
 </tr>
 <tr class="even">
 <td><p>fileSize</p></td>
@@ -693,7 +693,7 @@ Specifies the properties of the product image.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductKey
 
@@ -727,7 +727,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductPackageDetails
 
@@ -748,7 +748,7 @@ Specifies the properties of the product key.
 <tbody>
 <tr class="odd">
 <td><p>frameworkDependencyPackages</p></td>
-<td><p>collection of [FrameworkPackageDetails](#frameworkpackagedetails)</p></td>
+<td><p>collection of <a href="#frameworkpackagedetails" data-raw-source="[FrameworkPackageDetails](#frameworkpackagedetails)">FrameworkPackageDetails</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -763,7 +763,7 @@ Specifies the properties of the product key.
 </tr>
 <tr class="even">
 <td><p>location</p></td>
-<td><p>[PackageLocation](#packagelocation)</p></td>
+<td><p><a href="#packagelocation" data-raw-source="[PackageLocation](#packagelocation)">PackageLocation</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -778,17 +778,17 @@ Specifies the properties of the product key.
 </tr>
 <tr class="odd">
 <td><p>architectures</p></td>
-<td><p>collection of [ProductArchitectures](#productarchitectures)</p></td>
+<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
 <td><p>Values {x86, x64, arm, neutral}</p></td>
 </tr>
 <tr class="even">
 <td><p>packageFormat</p></td>
-<td><p>[ProductPackageFormat](#productpackageformat)</p></td>
+<td><p><a href="#productpackageformat" data-raw-source="[ProductPackageFormat](#productpackageformat)">ProductPackageFormat</a></p></td>
 <td><p>Extension of the package file.</p></td>
 </tr>
 <tr class="odd">
 <td><p>platforms</p></td>
-<td><p>collection of [ProductPlatform](#productplatform)</p></td>
+<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -804,7 +804,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductPackageFormat
 
@@ -831,7 +831,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductPackageSet
 
@@ -857,13 +857,13 @@ Specifies the properties of the product key.
 </tr>
 <tr class="even">
 <td><p>productPackages</p></td>
-<td><p>collection of [ProductPackageDetails](#productpackagedetails)</p></td>
+<td><p>collection of <a href="#productpackagedetails" data-raw-source="[ProductPackageDetails](#productpackagedetails)">ProductPackageDetails</a></p></td>
 <td><p>A collection of application packages.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## ProductPlatform
 
@@ -886,16 +886,16 @@ Specifies the properties of the product key.
 </tr>
 <tr class="even">
 <td><p>minVersion</p></td>
-<td><p>[VersionInfo](#versioninfo)</p></td>
+<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>maxTestedVersion</p></td>
-<td><p>[VersionInfo](#versioninfo)</p></td>
+<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## PublisherDetails
 
@@ -929,7 +929,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+ 
 
 ## SeatAction
 
@@ -953,7 +953,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+ 
 
 ## SeatDetails
 
@@ -975,7 +975,7 @@ Specifies the properties of the publisher details.
 <tr class="odd">
 <td><p>assignedTo</p></td>
 <td><p>string</p></td>
-<td><p>Format = UPN (user@domain)</p></td>
+<td><p>Format = UPN (user<xref href="domain)" data-throw-if-not-resolved="False" data-raw-source="@domain)"></xref></p></td>
 </tr>
 <tr class="even">
 <td><p>dateAssigned</p></td>
@@ -984,18 +984,18 @@ Specifies the properties of the publisher details.
 </tr>
 <tr class="odd">
 <td><p>state</p></td>
-<td><p>[SeatState](#seatstate)</p></td>
+<td><p><a href="#seatstate" data-raw-source="[SeatState](#seatstate)">SeatState</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>productKey</p></td>
-<td><p>[ProductKey](#productkey)</p></td>
+<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## SeatDetailsResultSet
 
@@ -1014,7 +1014,7 @@ Specifies the properties of the publisher details.
 <tbody>
 <tr class="odd">
 <td><p>seats</p></td>
-<td><p>collection of [SeatDetails](#seatdetails)</p></td>
+<td><p>collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
 </tr>
 <tr class="even">
 <td><p>continuationToken</p></td>
@@ -1023,7 +1023,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+ 
 
 ## SeatState
 
@@ -1047,7 +1047,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+ 
 
 ## SupportedProductPlatform
 
@@ -1070,20 +1070,20 @@ Specifies the properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>minVersion</p></td>
-<td><p>[VersionInfo](#versioninfo)</p></td>
+<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>maxTestedVersion</p></td>
-<td><p>[VersionInfo](#versioninfo)</p></td>
+<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
-<td><p>collection of [ProductArchitecture](#productarchitecture)</p></td>
+<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## VersionInfo
 

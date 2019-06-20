@@ -3,15 +3,15 @@ title: Windows 10 deployment scenarios (Windows 10)
 description: To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.date: 11/06/2018
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 

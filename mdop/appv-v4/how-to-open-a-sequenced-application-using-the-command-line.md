@@ -46,16 +46,16 @@ Use the following procedure to open sequenced application packages using the com
     **Note**  
     If the installer or Windows Installer package has a graphical user interface, it will be displayed after you specify the command-line parameters.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Virtual Applications Using the Command Line](how-to-manage-virtual-applications-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

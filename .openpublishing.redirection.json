@@ -672,7 +672,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview",
 "redirect_document_id": true
 },
 {
@@ -14958,8 +14958,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/windows/deployment/windows-10-enterprise-subscription-activation.md",
-"redirect_url": "/windows/windows/deployment/windows-10-subscription-activation",
+"source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/deployment/windows-10-subscription-activation",
 "redirect_document_id": true
 },
 {
@@ -14983,8 +14983,63 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-network.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-licensing.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements#licensing-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-configuration.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements#configuration-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/user-driven-aad.md",
+"redirect_url": "/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-azure-active-directory-join",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/user-driven-hybrid.md",
+"redirect_url": "/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/intune-connector.md",
+"redirect_url": "https://docs.microsoft.com/intune/windows-autopilot-hybrid",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-remote.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-local.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-local-windows-autopilot-reset",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/configure-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/add-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/administer.md",
+"redirect_url": "/windows/deployment/windows-autopilot/add-devices#registering-devices",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/hub/release-information.md",
 "redirect_url": "/windows/release-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/index.md",
+"redirect_url": "/windows/security/threat-protection",
 "redirect_document_id": true
 }
 ]

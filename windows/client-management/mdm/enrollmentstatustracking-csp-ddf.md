@@ -1,7 +1,7 @@
 ---
 title: EnrollmentStatusTracking CSP
 description: EnrollmentStatusTracking CSP
-ms.author: v-madhi@microsoft.com
+ms.author: dansimp@microsoft.com
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -387,7 +387,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
             <AccessType>
               <Get />
             </AccessType>
-            <Description>These settings are read by the Enrollment Status Page (ESP) during the the Device Preparation phase.  These setting are used to orchestrate any setup activities prior to provisioning the device in the Device Setup phase of the ESP.</Description>
+            <Description>These settings are read by the Enrollment Status Page (ESP) during the Device Preparation phase.  These setting are used to orchestrate any setup activities prior to provisioning the device in the Device Setup phase of the ESP.</Description>
             <DFFormat>
               <node />
             </DFFormat>

@@ -3,12 +3,12 @@ title: Understanding Migration XML Files (Windows 10)
 description: Understanding Migration XML Files
 ms.assetid: d3d1fe89-085c-4da8-9657-fd54b8bfc4b7
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -55,7 +55,7 @@ The Config.xml file is the configuration file created by the `/genconfig` option
 **Note**  
 When modifying the XML elements in the Config.xml file, you should edit an element and set the **migrate** property to **no**, rather than deleting the element from the file. If you delete the element instead of setting the property, the component may still be migrated by rules in other XML files.
 
- 
+ 
 
 ## <a href="" id="bkmk-migapp"></a>Overview of the MigApp.xml file
 
@@ -65,7 +65,7 @@ The MigApp.xml file installed with USMT includes instructions to migrate the set
 **Important**  
 The MigApps.xml file will only detect and migrate .pst files that are linked to Microsoft Office Outlook. See the [Sample migration rules for customized versions of XML files](#bkmk-samples) section of this document for more information about migrating .pst files that are not linked to Outlook.
 
- 
+ 
 
 ## <a href="" id="bkmk-migdocs"></a>Overview of the MigDocs.xml file
 
@@ -182,7 +182,7 @@ You can make a copy of the MigUser.xml file and modify it to include or exclude 
 **Note**  
 Each file name extension you include in the rules within the MigUser.xml file increases the amount of time needed for the ScanState tool to gather the files for the migration. If you are migrating more than three hundred file types, you may experience a slow migration. For more information about other ways to organize the migration of your data, see the [Using multiple XML files](#bkmk-multiple) section of this document.
 
- 
+ 
 
 ## <a href="" id="bkmk-multiple"></a>Using multiple XML files
 
@@ -204,7 +204,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 <tr class="odd">
 <td align="left"><p>Config.xml file</p></td>
 <td align="left"><p>Operating-system components such as desktop wallpaper and background theme.</p>
-<p>You can also overload config.xml to include some application and document settings by generating the config.xml file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).</p></td>
+<p>You can also overload config.xml to include some application and document settings by generating the config.xml file with the other default XML files. For more information, see <a href="usmt-customize-xml-files.md" data-raw-source="[Customize USMT XML Files](usmt-customize-xml-files.md)">Customize USMT XML Files</a> and <a href="usmt-configxml-file.md" data-raw-source="[Config.xml File](usmt-configxml-file.md)">Config.xml File</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MigApps.xml file</p></td>
@@ -221,7 +221,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 </tbody>
 </table>
 
- 
+ 
 
 For example, you can use all of the XML migration file types for a single migration, as in the following example:
 
@@ -234,7 +234,7 @@ Scanstate <store> /config:c:\myFolder\config.xml /i:migapps.xml /i:migdocs.xml /
 **Important**  
 You should not use the MigUser.xml and MigDocs.xml files together in the same command. Using both XML files can result in duplication of some migrated files. This occurs when conflicting target-location instructions are given in each XML file. The target file will be stored once during the migration, but will be applied by each XML file to a different location on the destination computer.
 
- 
+ 
 
 If your data set is unknown or if many files are stored outside of the standard user-profile folders, the MigDocs.xml is a better choice than the MigUser.xml file, because the MigDocs.xml file will gather a broader scope of data. The MigDocs.xml file migrates folders of data based on location. The MigUser.xml file migrates only the files with the specified file name extensions.
 
@@ -248,7 +248,7 @@ You can use the **/genmigxml** command-line option to determine which files will
 **Note**  
 If you reinstall USMT, the default migration XML files will be overwritten and any customizations you make directly to these files will be lost. Consider creating separate XML files for your custom migration rules and saving them in a secure location.
 
- 
+ 
 
 To generate the XML migration rules file for a source computer:
 
@@ -292,7 +292,7 @@ The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes thr
 <td align="left"><p>ScanProgramFiles</p></td>
 <td align="left"><p>The <em>ScanProgramFiles</em> argument is valid only when the <strong>GenerateDocPatterns</strong> function is called in a system context. This argument determines whether or not to scan the Program Files directory to gather registered file name extensions for known applications.</p>
 <p>For example, when set to <strong>TRUE</strong>, the function discovers and migrates .doc files under the Microsoft Office directory, because .doc is a file name extension registered to a Microsoft Office application. The <strong>GenerateDocPatterns</strong> function generates this inclusion pattern for .doc files:</p>
-<pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;C:\Program Files\Microsoft Office\*[*.doc]&lt;/pattern&gt;</code></pre>
+<pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;C:\Program Files\Microsoft Office<em>[</em>.doc]&lt;/pattern&gt;</code></pre>
 <p>If a child folder of an included folder contains an installed application, ScanProgramFiles will also create an exclusion rule for the child folder. All folders under the application folder will be scanned recursively for registered file name extensions.</p></td>
 <td align="left"><p>False</p></td>
 </tr>
@@ -309,7 +309,7 @@ The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes thr
 </tbody>
 </table>
 
- 
+ 
 
 **Usage:**
 
@@ -321,9 +321,9 @@ To create include data patterns for only the system drive:
 
 ``` syntax
 <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-     <objectSet>
-        <script>MigXmlHelper.GenerateDocPatterns ("FALSE","TRUE","TRUE")</script>
-     </objectSet>
+     <objectSet>
+        <script>MigXmlHelper.GenerateDocPatterns ("FALSE","TRUE","TRUE")</script>
+     </objectSet>
 </include>
 ```
 
@@ -331,9 +331,9 @@ To create an include rule to gather files for registered extensions from the %PR
 
 ``` syntax
 <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-     <objectSet>
-        <script>MigXmlHelper.GenerateDocPatterns ("TRUE","TRUE","FALSE")</script>
-     </objectSet>
+     <objectSet>
+        <script>MigXmlHelper.GenerateDocPatterns ("TRUE","TRUE","FALSE")</script>
+     </objectSet>
 </include>
 ```
 
@@ -341,9 +341,9 @@ To create exclude data patterns:
 
 ``` syntax
 <exclude filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-     <objectSet>
-        <script>MigXmlHelper.GenerateDocPatterns ("FALSE","FALSE","FALSE")</script>
-     </objectSet>
+     <objectSet>
+        <script>MigXmlHelper.GenerateDocPatterns ("FALSE","FALSE","FALSE")</script>
+     </objectSet>
 </exclude>
 ```
 
@@ -402,14 +402,14 @@ The user context includes rules for data in the User Profiles directory. When ca
 **Note**  
 Rules contained in a component that is assigned the user context will be run for each user profile on the computer. Files that are scanned multiple times by the MigDocs.xml files will only be copied to the migration store once; however, a large number of rules in the user context can slow down the migration. Use the system context when it is applicable.
 
- 
+ 
 
 ### <a href="" id="bkmk-samples"></a>Sample migration rules for customized versions of XML files
 
 **Note**  
 For best practices and requirements for customized XML files in USMT, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [General Conventions](usmt-general-conventions.md).
 
- 
+ 
 
 ### <a href="" id="bkmk-exclude"></a>Exclude rules usage examples
 
@@ -423,16 +423,16 @@ In the examples below, the source computer has a .txt file called "new text docu
 <tbody>
 <tr class="odd">
 <td align="left"><p>Rule 1</p></td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder\[new text document.txt]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder[new text document.txt]&lt;/pattern&gt;</code></pre></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Rule 2</p></td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder\*[*]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder<em>[</em>]&lt;/pattern&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 To exclude the new text document.txt file as well as any .txt files in “new folder”, you can do the following:
 
@@ -442,10 +442,10 @@ To exclude Rule 1, there needs to be an exact match of the file name. However, f
 
 ``` syntax
 <exclude>
-     <objectSet>
-        <pattern type="File">D:\Newfolder\[new text document.txt]</pattern>
-         <pattern type="File">D:\New folder\*[*.txt]</pattern>
-     </objectSet>
+     <objectSet>
+        <pattern type="File">D:\Newfolder\[new text document.txt]</pattern>
+         <pattern type="File">D:\New folder\*[*.txt]</pattern>
+     </objectSet>
 </exclude>
 ```
 
@@ -455,9 +455,9 @@ If you do not know the file name or location of the file, but you do know the fi
 
 ``` syntax
 <unconditionalExclude>
-     <objectSet>
-        <script>MigXmlHelper.GenerateDrivePatterns ("*[*.txt]", "Fixed")</script>
-     </objectSet>
+     <objectSet>
+        <script>MigXmlHelper.GenerateDrivePatterns ("*[*.txt]", "Fixed")</script>
+     </objectSet>
 </unconditionalExclude>
 ```
 
@@ -467,16 +467,16 @@ If you want the &lt;UnconditionalExclude&gt; element to apply to both the system
 
 ``` syntax
 <component type="Documents" context="UserandSystem">
-   <displayName>MigDocExcludes</displayName>
-   <role role="Data">
-     <rules>
-       <unconditionalExclude>
-         <objectSet>
-                <script>MigXmlHelper.GenerateDrivePatterns ("*[*.txt]", "Fixed")</script>
-         </objectSet>
-       </unconditionalExclude>
-     </rules>
-   </role>
+   <displayName>MigDocExcludes</displayName>
+   <role role="Data">
+     <rules>
+       <unconditionalExclude>
+         <objectSet>
+                <script>MigXmlHelper.GenerateDrivePatterns ("*[*.txt]", "Fixed")</script>
+         </objectSet>
+       </unconditionalExclude>
+     </rules>
+   </role>
 </component>
 ```
 
@@ -492,9 +492,9 @@ This rule will include .pst files that are located in the default location, but 
 
 ``` syntax
 <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-     <objectSet>
-        <pattern type="File">%CSIDL_LOCAL_APPDATA%\Microsoft\Outlook\*[*.pst]</pattern>
-     </objectSet>
+     <objectSet>
+        <pattern type="File">%CSIDL_LOCAL_APPDATA%\Microsoft\Outlook\*[*.pst]</pattern>
+     </objectSet>
 </include>
 ```
 
@@ -504,9 +504,9 @@ For locations outside the user profile, such as the Program Files folder, you ca
 
 ``` syntax
 <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-     <objectSet>
-        <pattern type="File">%CSIDL_PROGRAM_FILES%\*[*.pst]</pattern>
-     </objectSet>
+     <objectSet>
+        <pattern type="File">%CSIDL_PROGRAM_FILES%\*[*.pst]</pattern>
+     </objectSet>
 </include>
 ```
 
@@ -515,7 +515,7 @@ For more examples of include rules that you can use in custom migration XML file
 **Note**  
 For more information about the order of precedence for XML migration rules, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 
- 
+ 
 
 ## <a href="" id="bkmk-next"></a>Next steps
 
@@ -531,9 +531,9 @@ You can use an XML schema (MigXML.xsd) file to validate the syntax of your custo
 
 [Include Files and Settings](usmt-include-files-and-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

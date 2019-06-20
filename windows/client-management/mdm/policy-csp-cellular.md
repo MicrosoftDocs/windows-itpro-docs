@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Cellular
 description: Policy CSP - Cellular
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -313,9 +313,9 @@ If this policy setting is disabled or is not configured, the link to the per-app
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -341,18 +341,18 @@ Footnote:
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Cellular policies that can be set using Exchange Active Sync (EAS)  
 
--   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-<!--EndEAS-->
+- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+  <!--EndEAS-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Cellular policies supported by IoT Core  
 
--   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-<!--EndIoTCore-->
+- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+  <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Cellular policies supported by Microsoft Surface Hub  
 
--   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-<!--EndSurfaceHub-->
+- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+  <!--EndSurfaceHub-->
 

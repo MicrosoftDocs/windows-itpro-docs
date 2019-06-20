@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow Adobe Flash -->
@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented |
-|Enabled **(default)** |1 |1 |Allowed |
+|     Group Policy      | MDM | Registry | Description |
+|-----------------------|:---:|:--------:|-------------|
+|       Disabled        |  0  |    0     |  Prevented  |
+| Enabled **(default)** |  1  |    1     |   Allowed   |
+
 --- 
 
 ### ADMX info and settings

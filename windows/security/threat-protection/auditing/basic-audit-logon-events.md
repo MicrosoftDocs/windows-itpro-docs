@@ -65,7 +65,7 @@ You can configure this security setting by opening the appropriate policy under 
 | 552          | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
 | 682          | A user has reconnected to a disconnected terminal server session.                                                                                                                                               |
 | 683          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
- 
+ 
 
 When event 528 is logged, a logon type is also listed in the event log. The following table describes each logon type.
 
@@ -80,9 +80,9 @@ When event 528 is logged, a logon type is also listed in the event log. The foll
 | 9          | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.|
 | 10         | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.|
 | 11         | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.|
- 
+ 
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+ 
+ 

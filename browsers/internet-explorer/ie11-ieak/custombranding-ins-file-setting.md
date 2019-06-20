@@ -17,7 +17,8 @@ ms.date: 07/27/2017
 # Use the CustomBranding .INS file to create custom branding and setup info
 Provide the URL to your branding cabinet (.cab) file.
 
-|Name       |Value                           | Description                                                  |
-|-----------|--------------------------------|--------------------------------------------------------------|
-|Branding |`<cab_file_url>` |The location of your branding cabinet (.cab) file. For example, https://www.&lt;your_server&gt;.net/cabs/branding.cab.|
+
+|   Name   |      Value       |                                                      Description                                                       |
+|----------|------------------|------------------------------------------------------------------------------------------------------------------------|
+| Branding | `<cab_file_url>` | The location of your branding cabinet (.cab) file. For example, https://www.&lt;your_server&gt;.net/cabs/branding.cab. |
 

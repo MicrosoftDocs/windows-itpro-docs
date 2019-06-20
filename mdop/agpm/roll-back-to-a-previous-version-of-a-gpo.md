@@ -36,7 +36,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 **Note**  
 To verify that the version that has been redeployed matches the version intended, examine a difference report for the two versions. In the **History** window for the GPO, highlight the two versions, and then right-click and select **Difference** and either **HTML Report** or **XML Report**.
 
- 
+ 
 
 ### Additional considerations
 
@@ -46,9 +46,9 @@ To verify that the version that has been redeployed matches the version intended
 
 -   [Performing Approver Tasks](performing-approver-tasks.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,7 +24,7 @@ If your organization uses Active Directory Domain Services (AD DS), you may want
 **Note**  
 You may want to use more than one method in your organization. For example, you can boot into DaRT from a remote partition for most situations and have a USB flash drive available in case the end-user computer cannot connect to the network.
 
- 
+ 
 
 The following table shows some advantages and disadvantages of each method of using DaRT in your organization.
 
@@ -80,16 +80,16 @@ The following table shows some advantages and disadvantages of each method of us
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Planning to Deploy DaRT 10](planning-to-deploy-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

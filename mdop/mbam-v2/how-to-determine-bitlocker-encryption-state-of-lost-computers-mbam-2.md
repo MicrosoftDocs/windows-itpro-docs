@@ -26,7 +26,7 @@ You can use Microsoft BitLocker Administration and Monitoring (MBAM) to determin
     **Note**  
     Note: The default address for the Administration and Monitoring website is http://*&lt;computername&gt;*. Using the fully qualified server name will yield faster browsing results.
 
-     
+     
 
 2.  Selects the **Report** node from the navigation pane, and select the **Computer Compliance Report**.
 
@@ -37,16 +37,16 @@ You can use Microsoft BitLocker Administration and Monitoring (MBAM) to determin
     **Note**  
     Device compliance is determined by the BitLocker policies that your enterprise has deployed. You may want to verify your deployed policies before you try to determine the BitLocker encryption state of a device.
 
-     
+     
 
 ## Related topics
 
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

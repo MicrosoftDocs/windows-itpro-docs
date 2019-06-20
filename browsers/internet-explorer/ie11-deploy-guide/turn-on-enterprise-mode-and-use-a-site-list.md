@@ -37,28 +37,28 @@ Before you can use a site list with Enterprise Mode, you need to turn the functi
 
  **To turn on Enterprise Mode using Group Policy**
 
-1.  Open your Group Policy editor and go to the `Administrative Templates\Windows Components\Internet Explorer\Use the Enterprise Mode IE website list` setting.<p>
-Turning this setting on also requires you to create and store a site list. For more information about creating your site list, see the [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md) topics.
+1. Open your Group Policy editor and go to the `Administrative Templates\Windows Components\Internet Explorer\Use the Enterprise Mode IE website list` setting.<p>
+   Turning this setting on also requires you to create and store a site list. For more information about creating your site list, see the [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md) topics.
 
-    ![local group policy editor for using a site list](images/ie-emie-grouppolicysitelist.png)
+   ![local group policy editor for using a site list](images/ie-emie-grouppolicysitelist.png)
 
-2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
+2. Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
- **To turn on Enterprise Mode using the registry**
+   **To turn on Enterprise Mode using the registry**
 
-1.  **For only the local user:** Open a registry editor, like regedit.exe and go to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
-<p>-OR-<p>
-**For all users on the device:** Open a registry editor, like regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
+3. **For only the local user:** Open a registry editor, like regedit.exe and go to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
+   <p>-OR-<p>
+   <strong>For all users on the device:</strong> Open a registry editor, like regedit.exe and go to <code>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode</code>.
 
-2.  Edit the `SiteList` registry key to point to where you want to keep your Enterprise Mode site list file. For example:
+4. Edit the `SiteList` registry key to point to where you want to keep your Enterprise Mode site list file. For example:
 
-    ![enterprise mode with site list in the registry](images/ie-emie-registrysitelist.png)
+   ![enterprise mode with site list in the registry](images/ie-emie-registrysitelist.png)
 
-    -   **HTTPS location**: `"SiteList"="https://localhost:8080/sites.xml"`
+   -   **HTTPS location**: `"SiteList"="https://localhost:8080/sites.xml"`
 
-    -   **Local network:** `"SiteList"="\\network\shares\sites.xml"`
+   -   **Local network:** `"SiteList"="\\network\shares\sites.xml"`
 
-    -   **Local file:** `"SiteList"="file:///c:\\Users\\<user>\\Documents\\testList.xml"`
+   -   **Local file:** `"SiteList"="file:///c:\\Users\\<user>\\Documents\\testList.xml"`
     
    All of your managed devices must have access to this location if you want them to be able to access and use Enterprise Mode and your site list. For information about how to create and use an Enterprise Mode site list, see [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
@@ -67,9 +67,9 @@ Turning this setting on also requires you to create and store a site list. For m
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1)](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md)
 - [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)
- 
+ 
 
- 
+ 
 
 
 

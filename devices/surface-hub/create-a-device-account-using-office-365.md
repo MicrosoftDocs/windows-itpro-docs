@@ -95,7 +95,7 @@ Install the following module in Powershell
 
 2.  Create a Credentials object, then create a new session that connects to Skype for Business Online, and provide the global tenant administrator account, then click **OK**.
 
-    ![Image for Windows PowerShell credential request. ](images/setupdeviceaccto365-18.png)
+    ![Image for Windows PowerShell credential request.](images/setupdeviceaccto365-18.png)
 
 3.  To connect to Microsoft Online Services, run:
 
@@ -245,7 +245,7 @@ You can use the Exchange Admin Center to create a device account:
 >[!NOTE]
 >If you want to create and assign a policy to the account you created, and are using Exchange 2010, look up the corresponding information regarding policy creation and policy assignment when using the EMC (Exchange management console).
 
- 
+ 
 
 1.  Go to the Exchange Admin Center.
 
@@ -373,11 +373,11 @@ If you aren't sure what value to use for the `RegistrarPool` parameter in your e
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
     
-3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+3. To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-    ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
-    ```
+   ```PowerShell
+   Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+   ```
 
     
 

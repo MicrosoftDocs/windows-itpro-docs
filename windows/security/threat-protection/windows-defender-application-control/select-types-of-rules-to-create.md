@@ -46,7 +46,7 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
-> [!NOTE] 
+> [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 **Table 2. Windows Defender Application Control policy - policy rule options**
@@ -70,6 +70,7 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
+| **17 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
 
 ## Windows Defender Application Control file rule levels
 

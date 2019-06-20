@@ -22,7 +22,7 @@ You can configure the App-V client so that only administrators (not end users) c
 **Note**  
 **This feature is supported starting in App-V 5.0 SP3.**
 
- 
+ 
 
 Use one of the following methods to allow only administrators to enable or disable connection groups.
 
@@ -56,7 +56,7 @@ Use one of the following methods to allow only administrators to enable or disab
 </tbody>
 </table>
 
- 
+ 
 
 **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
@@ -65,9 +65,9 @@ Use one of the following methods to allow only administrators to enable or disab
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 

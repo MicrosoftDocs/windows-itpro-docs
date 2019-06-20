@@ -3,12 +3,12 @@ title: Determine What to Migrate (Windows 10)
 description: Determine What to Migrate
 ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -32,34 +32,34 @@ To reduce complexity and increase standardization, your organization should cons
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Identify Users](usmt-identify-users.md)</p></td>
+<td align="left"><p><a href="usmt-identify-users.md" data-raw-source="[Identify Users](usmt-identify-users.md)">Identify Users</a></p></td>
 <td align="left"><p>Use command-line options to specify which users to migrate and how they should be migrated.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Identify Applications Settings](usmt-identify-application-settings.md)</p></td>
+<td align="left"><p><a href="usmt-identify-application-settings.md" data-raw-source="[Identify Applications Settings](usmt-identify-application-settings.md)">Identify Applications Settings</a></p></td>
 <td align="left"><p>Determine which applications you want to migrate and prepare a list of application settings to be migrated.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Identify Operating System Settings](usmt-identify-operating-system-settings.md)</p></td>
+<td align="left"><p><a href="usmt-identify-operating-system-settings.md" data-raw-source="[Identify Operating System Settings](usmt-identify-operating-system-settings.md)">Identify Operating System Settings</a></p></td>
 <td align="left"><p>Use migration to create a new standard environment on each of the destination computers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md)</p></td>
+<td align="left"><p><a href="usmt-identify-file-types-files-and-folders.md" data-raw-source="[Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md)">Identify File Types, Files, and Folders</a></p></td>
 <td align="left"><p>Determine and locate the standard, company-specified, and non-standard locations of the file types, files, folders, and settings that you want to migrate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
- 
+ 
 
- 
+ 
 
 
 

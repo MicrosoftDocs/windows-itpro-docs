@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
@@ -39,25 +39,25 @@ You can access Microsoft Defender ATP API with **Application Context** or **User
 
 	Steps that need to be taken to access Microsoft Defender ATP API with application context:
 
-	1. Create an AAD Web-Application.
-	2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'. 
-	3. Create a key for this Application.
-	4. Get token using the application with its key.
-	5. Use the token to access Microsoft Defender ATP API
+  1. Create an AAD Web-Application.
+  2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'. 
+  3. Create a key for this Application.
+  4. Get token using the application with its key.
+  5. Use the token to access Microsoft Defender ATP API
 
-	For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).
+     For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).
 
 
 - **User Context:** <br>
     Used to perform actions in the API on behalf of a user.
 
 	Steps that needs to be taken to access Microsoft Defender ATP API with application context:
-	1. Create AAD Native-Application.
-	2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
-	3. Get token using the application with user credentials.
-	4. Use the token to access Microsoft Defender ATP API
+  1. Create AAD Native-Application.
+  2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
+  3. Get token using the application with user credentials.
+  4. Use the token to access Microsoft Defender ATP API
 
-	For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).
+     For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).
 
 
 ## Related topics

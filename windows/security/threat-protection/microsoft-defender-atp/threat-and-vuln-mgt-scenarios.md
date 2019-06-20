@@ -61,11 +61,11 @@ To lower down your threat and vulnerability exposure:
    > There are two types of recommendations: 
    > - <i>Security update</i> which refers to recommendations that require a package installation
    > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
-   > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon.  
+   > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon or the possible alert activity [possible alert activity](images/tvm_alert_icon.png) icon. 
    
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It shows the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  ![details in security recommendations page](images/tvm_security_recommendations_page.png)
 
-3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. ![details in software page ](images/tvm_software_page_details.png)
+3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. ![details in software page](images/tvm_software_page_details.png)
 
 4. Click **Open machine page** to connect to the machine and apply the selected recommendation.  ![details in machine page](images/tvm_machine_page_details.png)
 
@@ -88,17 +88,17 @@ Remediating issues in the security recommendations list will improve your config
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
 
-   >>![request remediation](images/tvm_request_remediation.png). 
-
-   >You will see a confirmation message that the remediation task has been created.
-   >![remediation task creation confirmation](images/tvm_remediation_task_created.png)
+   > >![request remediation](images/tvm_request_remediation.png). 
+   > 
+   > You will see a confirmation message that the remediation task has been created.
+   > ![remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 4. Save your CSV file.
    ![save csv file](images/tvm_save_csv_file.png)
 
 5. Send a follow up email to your IT Administrator and allow the time that you have alloted for the remediation to propagate in the system.
 
-6. Review the machine **Configuration score** widget again. The number of the security controls issues will decrease. When you click **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be be listed there anymore, and your configuration score should increase.
+6. Review the machine **Configuration score** widget again. The number of the security controls issues will decrease. When you click **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be listed there anymore, and your configuration score should increase.
 
 
 ## Related topics

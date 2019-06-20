@@ -25,7 +25,7 @@ ms.topic: conceptual
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
@@ -74,7 +74,7 @@ The configuration profile contains a custom settings payload that includes:
 To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
-  > You must set the the Preference Domain as "com.microsoft.wdav.atp"
+  > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
     ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 

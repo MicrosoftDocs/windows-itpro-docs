@@ -22,7 +22,7 @@ The **Publishing Servers Results** pane can display a variety of columns. **Name
 **Note**  
 You can add or remove a column simply by right-clicking in the **Results** pane, selecting **View**, then selecting **Add/Remove Columns**.
 
- 
+ 
 
 The list can be sorted by any of the columns. Columns that contain dates and times are sorted in chronological order, not alphabetical. For columns that contain a mix of dates and times and text (for example, **Next Refresh**), dates and times are considered to come before any other text.
 
@@ -65,9 +65,9 @@ The last time a refresh happened from this server for any user.
 
 [Publishing Servers Results Pane](publishing-servers-results-pane.md)
 
- 
+ 
 
- 
+ 
 
 
 

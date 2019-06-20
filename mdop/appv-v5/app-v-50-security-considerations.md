@@ -1,11 +1,11 @@
 ---
 title: App-V 5.0 Security Considerations
 description: App-V 5.0 Security Considerations
-author: v-madhi
+author: manikadhiman
 ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,10 +19,10 @@ ms.date: 08/30/2016
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for App-V 5.0.
 
-**Important**  
+**Important**  
 App-V 5.0 is not a security product and does not provide any guarantees for a secure environment.
 
- 
+
 
 ## PackageStoreAccessControl (PSAC) feature has been deprecated
 
@@ -45,14 +45,14 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature that wa
 
 A best practice for user account management is to create domain global groups and add user accounts to them. Then, add the domain global accounts to the necessary App-V 5.0 local groups on the App-V 5.0 servers.
 
-**Note**  
+**Note**  
 App-V client computer accounts that need to connect to the publishing server must be part of the publishing server’s **Users** local group. By default, all computers in the domain are part of the **Authorized Users** group, which is part of the **Users** local group.
 
- 
+
 
 ### <a href="" id="-------------app-v-5-0-server-security"></a> App-V 5.0 server security
 
-No groups are created automatically during App-V 5.0 Setup. You should create the following Active Directory Domain Services global groups to manage App-V 5.0 server operations.
+No groups are created automatically during App-V 5.0 Setup. You should create the following Active Directory Domain Services global groups to manage App-V 5.0 server operations.
 
 <table>
 <colgroup>
@@ -70,11 +70,10 @@ No groups are created automatically during App-V 5.0 Setup. You should create th
 <td align="left"><p>App-V Management Admin group</p></td>
 <td align="left"><p>Used to manage the App-V 5.0 management server. This group is created during the App-V 5.0 Management Server installation.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>There is no method to create the group using the management console after you have completed the installation.</p>
+<strong>Important</strong><br/><p>There is no method to create the group using the management console after you have completed the installation.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -84,38 +83,36 @@ No groups are created automatically during App-V 5.0 Setup. You should create th
 <tr class="odd">
 <td align="left"><p>App-V Management Service install admin account</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This is only required if management database is being installed separately from the service.</p>
+<strong>Note</strong><br/><p>This is only required if management database is being installed separately from the service.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Provides public access to schema-version table in management database. This account should be created during the App-V 5.0 management database installation.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V Reporting Service install admin account</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This is only required if reporting database is being installed separately from the service.</p>
+<strong>Note</strong><br/><p>This is only required if reporting database is being installed separately from the service.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Public access to schema-version table in reporting database. This account should be created during the App-V 5.0 reporting database installation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Consider the following additional information:
 
 -   Access to the package shares - If a share exists on the same computer as the management Server, the **Network** service requires read access to the share. In addition, each App-V client computer must have read access to the package share.
 
-    **Note**  
+    **Note**  
     In previous versions of App-V, package share was referred to as content share.
 
-     
+
 
 -   Registering publishing servers with Management Server - A publishing server must be registered with the Management server. For example, it must be added to the database, so that the Publishing server machine accounts are able to call into the Management service API.
 
@@ -129,35 +126,3 @@ The following will help you plan how to ensure that virtualized packages are sec
 
 
 During App-V 5.0 Setup, setup log files are created in the **%temp%** folder of the installing user.
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-[]()  
-
-****
-
-[]()  
-
-
-
-
-
-
- 
-
- 
-
-
-
-
-

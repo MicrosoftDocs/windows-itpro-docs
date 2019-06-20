@@ -4,7 +4,7 @@ description: PROXY CSP
 ms.assetid: 9904d44c-4a1e-4ae7-a6c7-5dba06cb16ce
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -21,7 +21,7 @@ The PROXY configuration service provider is used to configure proxy connections.
 
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 For the PROXY CSP, you cannot use the Replace command unless the node already exists.
 
@@ -63,7 +63,7 @@ Depending on the ProxyID, the valid values are ISA, WAP, SOCKS, or NULL.
 <a href="" id="proxyname-ports"></a>***ProxyName*/Ports**  
 Node for port information.
 
-<a href="" id="proxyname-ports-portname"></a>***ProxyName*/Ports/****_PortName_**  
+<a href="" id="proxyname-ports-portname"></a>***ProxyName*/Ports/**<strong>*PortName*</strong>  
 Defines the name of a port.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two ports, use "PORT0" and "PORT1" as the element names.
@@ -74,7 +74,7 @@ Specifies the port number to be associated with the parent port.
 <a href="" id="proxyname-ports-portname-services"></a>***ProxyName*/Ports/*PortName*/Services**  
 Node for services information.
 
-<a href="" id="proxyname-ports-services-servicename"></a>***ProxyName*/Ports/Services/****_ServiceName_**  
+<a href="" id="proxyname-ports-services-servicename"></a>***ProxyName*/Ports/Services/**<strong>*ServiceName*</strong>  
 Defines the name of a service.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two services, use "SERVICE0" and "SERVICE1" as the element names.
@@ -87,7 +87,7 @@ One commonly used value is "HTTP".
 <a href="" id="proxyname-conrefs"></a>***ProxyName*/ConRefs**  
 Node for connection reference information
 
-<a href="" id="proxyname-conrefs-conrefname"></a>***ProxyName*/ConRefs/****_ConRefName_**  
+<a href="" id="proxyname-conrefs-conrefname"></a>***ProxyName*/ConRefs/**<strong>*ConRefName*</strong>  
 Defines the name of a connection reference.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two connection references, use "CONREF0" and "CONREF1" as the element names.
@@ -100,9 +100,9 @@ Specifies one single connectivity object associated with the proxy connection.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

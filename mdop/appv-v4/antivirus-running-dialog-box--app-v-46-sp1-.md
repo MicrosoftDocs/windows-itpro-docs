@@ -26,16 +26,16 @@ Use the following procedure to stop the antivirus software from running during s
     **Important**  
     Remember to restart the antivirus software when you have finished sequencing the application.
 
-     
+     
 
 ## Related topics
 
 
 [Dialog Boxes (AppV 4.6 SP1)](dialog-boxes--appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

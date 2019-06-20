@@ -32,16 +32,16 @@ You can use the following procedure to determine how much free space is availabl
     **Important**  
     The App-V performance counters are implemented in a 32-bit DLL, so to see them, you must use the following command to start the 32-bit version of Performance Monitor: **mmc /32 perfmon.msc**. This command must be run directly on the computer being monitored and cannot be used to monitor a remote computer running a 64-bit operating system.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Virtual Applications by Using the Command Line](how-to-manage-virtual-applications-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

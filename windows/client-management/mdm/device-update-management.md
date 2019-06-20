@@ -5,7 +5,7 @@ ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ms.reviewer: 
 manager: dansimp
 keywords: mdm,management,administrator
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -146,7 +146,7 @@ The following diagram shows the Update policies in a tree format.
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
+<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with <strong>Update/ActiveHoursStart</strong>) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
 > [!NOTE]
 > The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
@@ -171,7 +171,7 @@ The following diagram shows the Update policies in a tree format.
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with <strong>Update/ActiveHoursEnd</strong>) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
 
 > [!NOTE]
 > The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
@@ -200,7 +200,7 @@ The following diagram shows the Update policies in a tree format.
 
 > [!IMPORTANT]
 > This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
+ 
 
 <p style="margin-left: 20px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
@@ -290,7 +290,7 @@ The following diagram shows the Update policies in a tree format.
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-<p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
+> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
@@ -322,9 +322,9 @@ The following diagram shows the Update policies in a tree format.
 -   Update/RequireDeferUpgrade must be set to 1
 -   System/AllowTelemetry must be set to 1 or higher
 
-<p style="margin-left: 20px">If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the &quot;Specify intranet Microsoft update service location&quot; policy is enabled, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
-<p style="margin-left: 20px">If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the Allow Telemetry policy is enabled and the Options value is set to 0, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
 <table style="margin-left: 20px">
 <colgroup>
@@ -391,9 +391,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Supported values are 0-8, which refers to the number of months to defer upgrades.
 
-<p style="margin-left: 20px">If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the &quot;Specify intranet Microsoft update service location&quot; policy is enabled, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
-<p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the &quot;Allow Telemetry&quot; policy is enabled and the Options value is set to 0, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**
 > [!NOTE]
@@ -496,14 +496,14 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Deferrals are not paused.
 -   1 – Deferrals are paused.
 
-<p style="margin-left: 20px">If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the &quot;Specify intranet Microsoft update service location&quot; policy is enabled, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
-<p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+<p style="margin-left: 20px">If the &quot;Allow Telemetry&quot; policy is enabled and the Options value is set to 0, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-<p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
+> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
@@ -674,7 +674,7 @@ Example
 
 <p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
 
-<p style="margin-left: 20px">Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+<p style="margin-left: 20px">Value type is string and the default value is an empty string, &quot;&quot;. If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!Note]
 > If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.
@@ -703,11 +703,11 @@ The update approval list enables IT to approve individual updates and update cla
 
 > **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
 
- 
+ 
 
 Supported operations are Get and Add.
 
-<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/****_Approved Update Guid_**
+<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/**<strong>*Approved Update Guid*</strong>
 Specifies the update GUID.
 
 To auto-approve a class of updates, you can specify the [Update Classifications](https://go.microsoft.com/fwlink/p/?LinkId=526723) GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
@@ -730,7 +730,7 @@ Specifies the approved updates that failed to install on a device.
 
 Supported operation is Get.
 
-<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/****_Failed Update Guid_**
+<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/**<strong>*Failed Update Guid*</strong>
 Update identifier field of the UpdateIdentity GUID that represent an update that failed to download or install.
 
 Supported operation is Get.
@@ -750,7 +750,7 @@ The updates that are installed on the device.
 
 Supported operation is Get.
 
-<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/****_Installed Update Guid_**
+<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/**<strong>*Installed Update Guid*</strong>
 UpdateIDs that represent the updates installed on a device.
 
 Supported operation is Get.
@@ -760,7 +760,7 @@ The updates that are applicable and not yet installed on the device. This includ
 
 Supported operation is Get.
 
-<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/****_Installable Update Guid_**
+<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/**<strong>*Installable Update Guid*</strong>
 Update identifiers that represent the updates applicable and not installed on a device.
 
 Supported operation is Get.
@@ -784,7 +784,7 @@ The updates that require a reboot to complete the update session.
 
 Supported operation is Get.
 
-<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/****_Pending Reboot Update Guid_**
+<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/**<strong>*Pending Reboot Update Guid*</strong>
 Update identifiers for the pending reboot state.
 
 Supported operation is Get.
@@ -885,7 +885,7 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 </tbody>
 </table>
 
- 
+ 
 
 Here is the list of older policies that are still supported for backward compatibility. You can use these for Windows 10, version 1511 devices.
 
@@ -904,7 +904,7 @@ For policies supported for Windows Update for Business, when you set policies fo
 
 For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, the you will get the expected behavior for 1511 policies.
 
- 
+ 
 
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
 
@@ -968,7 +968,7 @@ The following diagram and screenshots show the process flow of the device update
 
 ![mdm device update management screenshot](images/deviceupdatescreenshot3.png)![mdm device update management screenshot](images/deviceupdatescreenshot4.png)![mdm device update management screenshot](images/deviceupdatescreenshot5.png)![mdm device update management screenshot](images/deviceupdatescreenshot6.png)![mdm device update management screenshot](images/deviceupdatescreenshot7.png)![mdm device update management screenshot](images/deviceupdatescreenshot8.png)![mdm device update management screenshot](images/deviceupdatescreenshot9.png)
 
- 
+ 
 
 
 

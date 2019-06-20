@@ -4,12 +4,12 @@ description: WiFi CSP
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 10/24/2018
+ms.date: 06/18/2019
 ---
 
 # WiFi CSP
@@ -43,7 +43,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 
 Supported operation is Get.
 
-<a href="" id="-ssid-"></a>***<SSID>***
+<a href="" id="-ssid-"></a>**<em><SSID></em>**
 Specifies the name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. The SSID is added when the WlanXML node is added. When the SSID node is deleted, then all the subnodes are also deleted.
 
 SSID is the name of network you are connecting to, while Profile name is the name of the Profile which contains the WiFi settings information. If the Profile name is not set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, <LocURI>./Vendor/MSFT/WiFi/Profile/<*MUST BE NAME OF PROFILE AS PER WIFI XML*>/WlanXml</LocURI>.
@@ -79,7 +79,10 @@ If it is an IPvFuture address, then it must be specified as an IP literal as "\[
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
-Added in Windows 10, version 1511.Optional. Disable the internet connectivity check for the profile.
+> [!Note]
+> This node has been deprecated since Windows 10, version 1607.
+
+Added in Windows 10, version 1511. Optional. Disable the internet connectivity check for the profile.
 
 Value type is chr.
 
@@ -228,9 +231,9 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

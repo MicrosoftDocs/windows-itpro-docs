@@ -62,22 +62,20 @@ The report results can be grouped by dragging a column header to the top of the 
 <td align="left"><p>Time</p></td>
 <td align="left"><p>The date and time the event occurred.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>By default, the events are displayed in descending date order. However, it can be changed by clicking the Time Received column.</p>
+<strong>Note</strong><br/><p>By default, the events are displayed in descending date order. However, it can be changed by clicking the Time Received column.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p>User Name</p></td>
 <td align="left"><p>The user who initiated the event.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the event occurred before a user logged on, the user name is SYSTEM.</p>
+<strong>Note</strong><br/><p>If the event occurred before a user logged on, the user name is SYSTEM.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -116,17 +114,16 @@ The report results can be grouped by dragging a column header to the top of the 
 <td align="left"><p>Image Version</p></td>
 <td align="left"><p>The image version that the MED-V workspace is currently using.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>MED-V workspace version can be Unknown if it has not yet been downloaded onto a computer.</p>
+<strong>Note</strong><br/><p>MED-V workspace version can be Unknown if it has not yet been downloaded onto a computer.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-generatinganactivitylogreport"></a>How to Generate an Activity Log Report
 
@@ -185,18 +182,16 @@ The report results can be grouped by dragging a column header to the top of the 
 <td align="left"><p>Time Received</p></td>
 <td align="left"><p>The date and time the event was received on the server.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the client is working offline, the server receives the reports when the client is online.</p>
+<strong>Note</strong><br/><p>If the client is working offline, the server receives the reports when the client is online.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>By default, the events are displayed in descending date order. However, it can be changed by clicking the <strong>Time Received</strong> column.</p>
+<strong>Note</strong><br/><p>By default, the events are displayed in descending date order. However, it can be changed by clicking the <strong>Time Received</strong> column.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -222,7 +217,7 @@ The report results can be grouped by dragging a column header to the top of the 
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-generatinganerrorlogreport"></a>How to Generate an Error Log Report
 
@@ -275,18 +270,16 @@ The report results can be grouped by dragging a column header to the top of the 
 <td align="left"><p>Time Received</p></td>
 <td align="left"><p>The date and time the event was received on the server.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the client is working offline, the server receives the reports when the client is online.</p>
+<strong>Note</strong><br/><p>If the client is working offline, the server receives the reports when the client is online.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>By default, the events are displayed in descending date order. However, it can be changed by clicking the <strong>Time Received</strong> column.</p>
+<strong>Note</strong><br/><p>By default, the events are displayed in descending date order. However, it can be changed by clicking the <strong>Time Received</strong> column.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -308,11 +301,11 @@ The report results can be grouped by dragging a column header to the top of the 
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

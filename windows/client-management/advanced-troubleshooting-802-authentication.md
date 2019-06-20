@@ -69,7 +69,7 @@ This log is not enabled by default. You can enable this log by expanding **Event
 ![screenshot of event viewer](images/capi.png)
  
 The following article explains how to analyze CAPI2 event logs:
-[Troubleshooting PKI Problems on Windows Vista](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
+[Troubleshooting PKI Problems on Windows Vista](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
 
 When troubleshooting complex 802.1X authentication issues, it is important to understand the 802.1X authentication process. The following figure is an example of wireless connection process with 802.1X authentication:
 

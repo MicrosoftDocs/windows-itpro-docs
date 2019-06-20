@@ -5,7 +5,7 @@ ms.date:  10/15/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 ## Interoperability goals and enterprise guidance
@@ -18,7 +18,7 @@ You must continue using IE11 if web apps use any of the following:
 
 * x-ua-compatible headers
 
-* &lt;meta&gt; tags
+* &lt;meta&gt; tags with an http-equivalent value of X-UA-Compatible header
 
 * Enterprise mode or compatibility view to addressing compatibility issues
 

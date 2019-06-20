@@ -1,11 +1,11 @@
 ---
 title: Upgrade Readiness - Additional insights
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -56,10 +56,10 @@ This blade reports the number of devices that have installed a firmware update t
 
 The IE site discovery feature in Upgrade Readiness provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 7, Windows 8.1, and Windows 10. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
 
-> [!NOTE] 
+> [!NOTE]
 > Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. The data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
-
->IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
+> 
+> IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
 
 In order to use site discovery, a separate opt-in is required; see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
 
@@ -93,4 +93,4 @@ Office add-ins provides a list of the Microsoft Office add-ins in your environme
 
 ## Related topics
 
-[Upgrade Readiness release notes](upgrade-readiness-release-notes.md)
+[Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)

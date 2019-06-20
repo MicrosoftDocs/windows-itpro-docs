@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - DeviceGuard
 description: Policy CSP - DeviceGuard
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

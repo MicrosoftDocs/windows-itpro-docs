@@ -24,7 +24,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Readiness and Windows upgrades**<br>
->You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/en-us/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+>You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 
 ## Before you begin
@@ -248,7 +248,7 @@ You can use both the WMI and XML settings individually or together:
     </tr>
 </table>
  
-**To turn on both WMI and XML recording**
+<strong>To turn on both WMI and XML recording</strong>
 <table>
     <tr>
         <th>Setting name</th>
@@ -476,7 +476,7 @@ You can completely remove the data stored on your employee’s computers.
 ## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
- 
+ 
 
 
 

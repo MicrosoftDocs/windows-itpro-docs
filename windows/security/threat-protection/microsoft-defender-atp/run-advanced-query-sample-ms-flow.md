@@ -31,7 +31,7 @@ You first need to [create an app](apis-intro.md).
 ## Use case
 
 A common scenario is scheduling an advanced query and using the results for follow up actions and processing.
-In this section we share sample for this purpose using [Microsoft Flow](https://flow.microsoft.com/) (or [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/)).
+In this section we share sample for this purpose using [Microsoft Flow](https://flow.microsoft.com/) (or [Logic Apps](https://azure.microsoft.com/services/logic-apps/)).
 
 ## Define a flow to run query and parse results
 
@@ -43,21 +43,21 @@ Use the following basic flow as an example.
 
 	![Image of MsFlow choose an action](images/ms-flow-choose-action.png)
 
-	- Set method to be POST
-	- Uri is https://api.securitycenter.windows.com/api/advancedqueries/run or one of the region specific locations
-		- US: https://api-us.securitycenter.windows.com/api/advancedqueries/run
-		- Europe: https://api-eu.securitycenter.windows.com/api/advancedqueries/run
-		- United Kingdom: https://api-uk.securitycenter.windows.com/api/advancedqueries/run
-	- Add the Header: Content-Type              application/json
-	- In the body write your query surrounded by single quotation mark (')
-	- In the Advanced options select Authentication to be Active Directory OAuth
-	- Set the Tenant with proper AAD Tenant Id
-	- Audience is https://api.securitycenter.windows.com
-	- Client ID is your application ID
-	- Credential Type should be Secret
-	- Secret is the application secret generated in the Azure Active directory.
+   - Set method to be POST
+   - Uri is https://api.securitycenter.windows.com/api/advancedqueries/run or one of the region specific locations
+       - US: https://api-us.securitycenter.windows.com/api/advancedqueries/run
+       - Europe: https://api-eu.securitycenter.windows.com/api/advancedqueries/run
+       - United Kingdom: https://api-uk.securitycenter.windows.com/api/advancedqueries/run
+   - Add the Header: Content-Type              application/json
+   - In the body write your query surrounded by single quotation mark (')
+   - In the Advanced options select Authentication to be Active Directory OAuth
+   - Set the Tenant with proper AAD Tenant Id
+   - Audience is https://api.securitycenter.windows.com
+   - Client ID is your application ID
+   - Credential Type should be Secret
+   - Secret is the application secret generated in the Azure Active directory.
 
-	![Image of MsFlow define action](images/ms-flow-define-action.png)
+     ![Image of MsFlow define action](images/ms-flow-define-action.png)
 
 3. You can use the "Parse JSON" action to get the schema of data – just "use sample payload to generate schema" and copy an output from of the expected result.
 

@@ -55,7 +55,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators<br/>Users| 
 | Member Server Effective Default Settings | Administrators<br/>Users| 
 | Client Computer Effective Default Settings | Administrators<br/>Users| 
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.

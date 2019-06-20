@@ -18,7 +18,7 @@ ms.reviewer:
 # Technology and Terms
 
 **Applies to:**
--   Windows 10
+- Windows 10
 
 - [Attestation Identity Keys](#attestation-identity-keys)
 - [Azure AD Joined](#azure-ad-joined)
@@ -41,7 +41,7 @@ ms.reviewer:
 - [Storage Root Key](#storage-root-key)
 - [Trust Type](#trust-type)
 - [Trusted Platform Module](#trusted-platform-module)
-<hr>
+  <hr>
 
 ## Attestation Identity Keys
 Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.

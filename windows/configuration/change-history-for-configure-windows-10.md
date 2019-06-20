@@ -160,10 +160,9 @@ New or changed topic | Description
 
 ## October 2017
 
-New or changed topic | Description
---- | ---
-[Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access | Removed **Guidelines for using Remote Desktop app**; the behavior for Remote Desktop has changed so that it's no longer necessary to turn off **Start connections in full screen** for assigned access.
-
+|                                    New or changed topic                                     |                          Description                           |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
 
 ## RELEASE: Windows 10, version 1709
 
@@ -176,6 +175,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 
 ## September 2017
+
 |New or changed topic | Description|
 |--- | ---|
 |[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.|
@@ -191,6 +191,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 
 ## July 2017
+
 | New or changed topic | Description |
 | --- | --- |
 |[Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data-1703.md)|Updated categories and included diagnostic data.|
@@ -213,7 +214,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 | New or changed topic | Description |
 | --- | --- |
 | [Configure cellular settings for tablets and PCs](provisioning-apn.md) | New |
-| [ Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
 
 
 ## April 2017

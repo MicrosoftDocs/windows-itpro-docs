@@ -4,7 +4,7 @@ description: NAPDEF CSP
 ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -18,12 +18,12 @@ ms.date: 06/26/2017
 The NAPDEF configuration service provider is used to add, modify, or delete WAP network access points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
 
 > **Note**  You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
-
- 
-
+> 
+> 
+> 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
@@ -51,7 +51,7 @@ The only permitted values for this element are "POP" (Password Authentication Pr
 
 > **Note**  **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change.
 
- 
+ 
 
 <a href="" id="bearer"></a>**BEARER**  
 Specifies the type of bearer.
@@ -131,16 +131,16 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - TextInput
 description: Policy CSP - TextInput
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -1344,16 +1344,16 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub  
 
--   [TextInput/AllowIMELogging](#textinput-allowimelogging)  
--   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
--   [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
--   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
--   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
--   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
--   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
--   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
--   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
--   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
-<!--EndSurfaceHub-->
+- [TextInput/AllowIMELogging](#textinput-allowimelogging)  
+- [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
+- [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
+- [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
+- [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
+- [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
+- [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
+- [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
+- [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
+- [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
+  <!--EndSurfaceHub-->
 

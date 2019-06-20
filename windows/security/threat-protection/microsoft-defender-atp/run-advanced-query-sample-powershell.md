@@ -33,11 +33,11 @@ You first need to [create an app](apis-intro.md).
 
 - Open a PowerShell window.
 - If your policy does not allow you to run the PowerShell commands, you can run the below command:
-```
-Set-ExecutionPolicy -ExecutionPolicy Bypass
-```
+  ```
+  Set-ExecutionPolicy -ExecutionPolicy Bypass
+  ```
 
->For more details, see [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>For more details, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
@@ -51,14 +51,13 @@ $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret 
 $resourceAppIdUri = 'https://api.securitycenter.windows.com'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
 $body = [Ordered] @{
-	resource = "$resourceAppIdUri"
-	client_id = "$appId"
-	client_secret = "$appSecret"
-	grant_type = 'client_credentials'
+    resource = "$resourceAppIdUri"
+    client_id = "$appId"
+    client_secret = "$appSecret"
+    grant_type = 'client_credentials'
 }
 $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorAction Stop
 $aadToken = $response.access_token
-
 ```
 
 where
@@ -75,9 +74,9 @@ $query = 'RegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
 $headers = @{ 
-	'Content-Type' = 'application/json'
-	Accept = 'application/json'
-	Authorization = "Bearer $aadToken" 
+    'Content-Type' = 'application/json'
+    Accept = 'application/json'
+    Authorization = "Bearer $aadToken" 
 }
 $body = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $webResponse = Invoke-WebRequest -Method Post -Uri $url -Headers $headers -Body $body -ErrorAction Stop
@@ -107,7 +106,7 @@ To output the results of the query in CSV format in file file1.csv do the below:
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-To output the results of the query in JSON format in file file1.json​ do the below:
+To output the results of the query in JSON format in file file1.json do the below:
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

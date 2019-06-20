@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -31,7 +30,7 @@ To configure your environment for BitLocker, you will need to do the following:
 
 >[!NOTE]
 >Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
- 
+ 
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
 ## <a href="" id="sec01"></a>Configure Active Directory for BitLocker
@@ -40,7 +39,7 @@ To enable BitLocker to store the recovery key and TPM information in Active Dire
 
 >[!NOTE]
 >Depending on the Active Directory Schema version, you might need to update the Schema before you can store BitLocker information in Active Directory.
- 
+ 
 In Windows Server 2012 R2 (as well as in Windows Server 2008 R2 and Windows Server 2012), you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
 
 ![figure 2](../images/mdt-09-fig02.png)
@@ -84,7 +83,7 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
 
 >[!NOTE]
 >If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.
- 
+ 
 ### Set permissions in Active Directory for BitLocker
 
 In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://go.microsoft.com/fwlink/p/?LinkId=167133) from Microsoft to C:\\Setup\\Scripts on DC01.
@@ -142,7 +141,7 @@ When configuring a task sequence to run any BitLocker tool, either directly or u
 -   **Configure BIOS for TPM.** Runs the vendor tools (in this case, HP, Dell, and Lenovo). To ensure this action is run only when necessary, add a condition so the action is run only when the TPM chip is not already activated. Use the properties from the ZTICheckforTPM.wsf.
     **Note**  
     It is common for organizations wrapping these tools in scripts to get additional logging and error handling.
-     
+     
 -   **Restart computer.** Self-explanatory, reboots the computer.
 -   **Check TPM Status.** Runs the ZTICheckforTPM.wsf script one more time.
 -   **Enable BitLocker.** Runs the built-in action to activate BitLocker.

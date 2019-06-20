@@ -1,15 +1,15 @@
 ---
 title: Get started with Upgrade Readiness (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Explains how to get started with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
-ms.author: lomayor
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
@@ -47,7 +47,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
-    >[!NOTE] 
+    >[!NOTE]
     > Upgrade Readiness is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 

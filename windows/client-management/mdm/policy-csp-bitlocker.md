@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Bitlocker
 description: Policy CSP - Bitlocker
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -83,12 +83,17 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
+> [!NOTE]
+> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
+
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

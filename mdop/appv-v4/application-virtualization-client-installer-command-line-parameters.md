@@ -19,12 +19,12 @@ ms.date: 08/30/2016
 
 The following table lists all available Microsoft Application Virtualization Client installer command-line parameters, their values, and a brief description of each parameter. Parameters are case-sensitive and must be entered as all-uppercase letters. All parameter values must be enclosed in double quotes.
 
-**Note**  
--   For App-V version 4.6, command-line parameters cannot be used during a client upgrade.
+**Note**  
+-   For App-V version 4.6, command-line parameters cannot be used during a client upgrade.
 
 -   The *SWICACHESIZE* and *MINFREESPACEMB* parameters cannot be combined on the command line. If both are used, the *SWICACHESIZE* parameter will be ignored.
 
- 
+
 
 <table>
 <colgroup>
@@ -59,14 +59,13 @@ The following table lists all available Microsoft Application Virtualization Cli
 <p>A URL has several parts:</p>
 <p>&lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;/&lt;path&gt;/&lt;?query&gt;&lt;#fragment&gt;</p>
 <p>A UNC path has three parts:</p>
-<p>\\&lt;computername&gt;\&lt;share folder&gt;\&lt;resource&gt;</p>
+<p>&amp;lt;computername&gt;&amp;lt;share folder&gt;&amp;lt;resource&gt;</p>
 <p>If the <em>APPLICATIONSOURCEROOT</em> parameter is specified on a client, the client will break the URL or UNC path from an OSD file into its constituent parts and replace the OSD sections with the corresponding <em>APPLICATIONSOURCEROOT</em> sections.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Be sure to use the correct format when using file:// with a UNC path. The correct format is file://\\&lt;server&gt;\&lt;share&gt;.</p>
+<strong>Important</strong><br/><p>Be sure to use the correct format when using file:// with a UNC path. The correct format is file://&amp;lt;server&gt;&amp;lt;share&gt;.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -77,13 +76,12 @@ The following table lists all available Microsoft Application Virtualization Cli
 <p>A URL has several parts:</p>
 <p>&lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;/&lt;path&gt;/&lt;?query&gt;&lt;#fragment&gt;</p>
 <p>A UNC path has three parts:</p>
-<p>\\&lt;computername&gt;\&lt;share folder&gt;\&lt;resource&gt;</p>
+<p>&amp;lt;computername&gt;&amp;lt;share folder&gt;&amp;lt;resource&gt;</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Be sure to use the correct format when using a UNC path. Acceptable formats are \\&lt;server&gt;\&lt;share&gt; or &lt;drive letter&gt;:\&lt;folder&gt;.</p>
+<strong>Important</strong><br/><p>Be sure to use the correct format when using a UNC path. Acceptable formats are &amp;lt;server&gt;&amp;lt;share&gt; or &lt;drive letter&gt;:&amp;lt;folder&gt;.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -94,13 +92,12 @@ The following table lists all available Microsoft Application Virtualization Cli
 <p>A URL has several parts:</p>
 <p>&lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;/&lt;path&gt;/&lt;?query&gt;&lt;#fragment&gt;</p>
 <p>A UNC path has three parts:</p>
-<p>\\&lt;computername&gt;\&lt;share folder&gt;\&lt;resource&gt;</p>
+<p>&amp;lt;computername&gt;&amp;lt;share folder&gt;&amp;lt;resource&gt;</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Be sure to use the correct format when using a UNC path. Acceptable formats are \\&lt;server&gt;\&lt;share&gt; or &lt;drive letter&gt;:\&lt;folder&gt;.</p>
+<strong>Important</strong><br/><p>Be sure to use the correct format when using a UNC path. Acceptable formats are &amp;lt;server&gt;&amp;lt;share&gt; or &lt;drive letter&gt;:&amp;lt;folder&gt;.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -111,11 +108,10 @@ The following table lists all available Microsoft Application Virtualization Cli
 <td align="left"><p>The AutoLoad triggers that define the events that initiate auto-loading of applications. AutoLoad implicitly uses background streaming to enable the application to be fully loaded into cache.</p>
 <p>The primary feature block will be loaded as quickly as possible. Remaining feature blocks will be loaded in the background to enable foreground operations, such as user interaction with applications, to take priority and provide optimal performance.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The <em>AUTOLOADTARGET</em> parameter determines which applications are auto-loaded. By default, packages that have been used are auto-loaded unless <em>AUTOLOADTARGET</em> is set.</p>
+<strong>Note</strong><br/><p>The <em>AUTOLOADTARGET</em> parameter determines which applications are auto-loaded. By default, packages that have been used are auto-loaded unless <em>AUTOLOADTARGET</em> is set.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Each parameter affects loading behavior as follows:</p>
 <ul>
@@ -126,11 +122,10 @@ The following table lists all available Microsoft Application Virtualization Cli
 <p>The three values can be combined. In the following example, AutoLoad triggers are enabled both at user login and when publishing refresh occurs:</p>
 <p><em>AUTOLOADONLOGIN AUTOLOADONREFRESH</em></p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the client is configured with these values at first install, Autoload will not be triggered until the next time the user logs off and logs back on.</p>
+<strong>Note</strong><br/><p>If the client is configured with these values at first install, Autoload will not be triggered until the next time the user logs off and logs back on.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -144,20 +139,18 @@ The following table lists all available Microsoft Application Virtualization Cli
 <li><p>NONE—No auto-loading, regardless of what triggers might be set.</p></li>
 <li><p>ALL—If any AutoLoad trigger is enabled, all packages are automatically loaded, whether or not they have ever been launched.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting is configured for individual packages by using the SFTMIME <strong>ADD PACKAGE</strong> and <strong>CONFIGURE PACKAGE</strong> commands. For more information about these commands, see [SFTMIME Command Reference](sftmime--command-reference.md).</p>
+<strong>Note</strong><br/><p>This setting is configured for individual packages by using the SFTMIME <strong>ADD PACKAGE</strong> and <strong>CONFIGURE PACKAGE</strong> commands. For more information about these commands, see <a href="sftmime--command-reference.md" data-raw-source="[SFTMIME Command Reference](sftmime--command-reference.md)">SFTMIME Command Reference</a>.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>PREVUSED—If any AutoLoad trigger is enabled, load only the packages where at least one application in the package has been previously used (that is, launched or precached).</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>When you install the App-V client to use a read-only cache, (for example, as a VDI server implementation), you must set the <em>AUTOLOADTARGET</em> parameter to NONE to prevent the client from trying to update applications in the read-only cache.</p>
+<strong>Note</strong><br/><p>When you install the App-V client to use a read-only cache, (for example, as a VDI server implementation), you must set the <em>AUTOLOADTARGET</em> parameter to NONE to prevent the client from trying to update applications in the read-only cache.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -217,7 +210,7 @@ The following table lists all available Microsoft Application Virtualization Cli
 <tr class="even">
 <td align="left"><p><em>SWIPUBSVRHOST</em></p></td>
 <td align="left"><p>IP address|host name</p></td>
-<td align="left"><p>Specifies either the IP address of the Application Virtualization Server or a host name of the server that resolves into the server's IP address; required when <em>SWIPUBSVRDISPLAY</em> is used.</p>
+<td align="left"><p>Specifies either the IP address of the Application Virtualization Server or a host name of the server that resolves into the server&#39;s IP address; required when <em>SWIPUBSVRDISPLAY</em> is used.</p>
 <p>Example: <strong>SWIPUBSVRHOST=&quot;SERVER01&quot;</strong></p></td>
 </tr>
 <tr class="odd">
@@ -286,19 +279,18 @@ The following table lists all available Microsoft Application Virtualization Cli
 <td align="left"><p>[0|1]</p></td>
 <td align="left"><p>Used when you have applied registry settings prior to deploying a client—for example, by using Group Policy. When a client is deployed, set this parameter to a value of 1 so that it will not overwrite the registry settings.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>If set to a value of 1, the following client installer command-line parameters are ignored:</p>
+<strong>Important</strong><br/><p>If set to a value of 1, the following client installer command-line parameters are ignored:</p>
 <p><strong>SWICACHESIZE</strong>, <strong>MINFREESPACEMB</strong>, <strong>ALLOWINDEPENDENTFILESTREAMING</strong>, <strong>APPLICATIONSOURCEROOT</strong>, <strong>ICONSOURCEROOT</strong>, <strong>OSDSOURCEROOT</strong>, <strong>SYSTEMEVENTLOGLEVEL</strong>, <strong>SWIGLOBALDATA</strong>, <strong>DOTIMEOUTMINUTES</strong>, <strong>SWIFSDRIVE</strong>, <strong>AUTOLOADTARGET</strong>, <strong>AUTOLOADTRIGGERS</strong>, and <strong>SWIUSERDATA</strong>.</p>
-<p>For further information about setting these values after installation, see “How to Configure the App-V Client Registry Settings by Using the Command Line” in the Application Virtualization (App-V) Operations Guide ([https://go.microsoft.com/fwlink/?LinkId=122939](https://go.microsoft.com/fwlink/?LinkId=122939)).</p>
+<p>For further information about setting these values after installation, see “How to Configure the App-V Client Registry Settings by Using the Command Line” in the Application Virtualization (App-V) Operations Guide (<a href="https://go.microsoft.com/fwlink/?LinkId=122939" data-raw-source="[https://go.microsoft.com/fwlink/?LinkId=122939](https://go.microsoft.com/fwlink/?LinkId=122939)">https://go.microsoft.com/fwlink/?LinkId=122939</a>).</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -309,9 +301,9 @@ The following table lists all available Microsoft Application Virtualization Cli
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
 
- 
+
+
 
 
 

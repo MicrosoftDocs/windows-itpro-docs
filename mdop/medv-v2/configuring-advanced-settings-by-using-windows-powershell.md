@@ -82,7 +82,7 @@ Run Windows PowerShell with administrative credentials, and ensure that the Wind
 
     This command runs the Windows PowerShell script and runs the **New-MedvWorkspace** cmdlet to generate a new MED-V workspace package. The new packager files are saved in the folder that you originally specified for storing your MED-V Workspace Packager files. For additional help about this cmdlet, see the Windows PowerShell Help.
 
- 
+ 
 
 ## Exporting a MED-V Configuration to a Registry File
 
@@ -102,9 +102,9 @@ You can import the resultant registry file from the host computer to a MED-V wor
 
 [Test And Deploy the MED-V Workspace Package](test-and-deploy-the-med-v-workspace-package.md)
 
- 
+ 
 
- 
+ 
 
 
 

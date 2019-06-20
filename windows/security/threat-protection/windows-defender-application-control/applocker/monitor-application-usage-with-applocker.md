@@ -62,7 +62,7 @@ For both event subscriptions and local events, you can use the **Get-AppLockerFi
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 
 >**Note:**  If the AppLocker logs are not on your local device, you will need permission to view the logs. If the output is saved to a file, you will need permission to read that file.
- 
+ 
 **To review AppLocker events with Get-AppLockerFileInformation**
 
 1.  At the command prompt, type **PowerShell**, and then press ENTER.

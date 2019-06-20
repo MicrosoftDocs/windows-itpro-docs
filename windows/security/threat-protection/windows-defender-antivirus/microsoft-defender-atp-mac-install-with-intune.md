@@ -25,7 +25,7 @@ ms.topic: conceptual
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Prerequisites and system requirements
 
@@ -39,7 +39,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
-5. Download **IntuneAppUtil** from [https://docs.microsoft.com/en-us/intune/lob-apps-macos](https://docs.microsoft.com/en-us/intune/lob-apps-macos).
+5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
 
     ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
 
@@ -83,7 +83,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
 ## Client device setup
 
-You need no special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-macos-cp).
+You need no special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
 
 1. You'll be asked to confirm device management.
 

@@ -40,9 +40,9 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 For requirements, see [System requirements](bitlocker-overview.md#system-requirements).
 
-> [!NOTE]  
+> [!NOTE]
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
- 
+ 
 ## Why are two partitions required? Why does the system drive have to be so large?
 
 Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.

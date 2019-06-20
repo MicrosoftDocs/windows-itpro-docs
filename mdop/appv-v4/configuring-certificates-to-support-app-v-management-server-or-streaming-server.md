@@ -22,12 +22,12 @@ After you complete the certificate provisioning process and change the private k
 **Note**  
 Select the certificate that was configured for App-V if there is more than one certificate provisioned for this server.
 
- 
+ 
 
 **Important**  
 When upgrading from version  4.2 to version  4.5, the setup has an option for **Use enhanced security**; however, selecting this option will not disable streaming over RTSP. You must use the Management Console to disable RTSP after installation.
 
- 
+ 
 
 Select the TCP port that the service will use for client communications. The default port is TCP 322; however, you can change the port to a custom port for your environment.
 
@@ -51,9 +51,9 @@ For more detailed information about configuring certificates with the SAN attrib
 
 [How to Modify Private Key Permissions to Support Management Server or Streaming Server](how-to-modify-private-key-permissions-to-support-management-server-or-streaming-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

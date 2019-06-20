@@ -36,7 +36,7 @@ This article lists new and updated features and content that are of interest to 
 
 Windows 10 Education support has been added to Windows 10 Subscription Activation.
 
-With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation).
+With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation).
 
 ### SetupDiag
 
@@ -51,7 +51,7 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 ## Servicing
 
 - [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
-- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
@@ -98,17 +98,17 @@ The draft release of the [security configuration baseline settings](https://blog
 - [Microphone privacy settings](https://support.microsoft.com/en-us/help/4468232/windows-10-camera-microphone-and-privacy-microsoft-privacy): A microphone icon appears in the notification area letting you see which apps are using your microphone.
 
 - [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) enhancements: 
-    - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change Registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
-    - WDAG is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend WDAG’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the WDAG extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigations to the WDAG Edge browser. There is also a companion app to enable this feature in the Microsoft Store. Users can quickly launch WDAG from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
+  - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change Registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
+  - WDAG is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend WDAG’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the WDAG extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigations to the WDAG Edge browser. There is also a companion app to enable this feature in the Microsoft Store. Users can quickly launch WDAG from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
     To try this extension: 
-     1.	Configure WDAG policies on your device.
-     2.	Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
-     3.	Follow any additional configuration steps on the extension setup page.
-     4.	Reboot the device.
-     5.	Navigate to an untrusted site in Chrome and Firefox.
+    1. Configure WDAG policies on your device.
+    2. Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
+    3. Follow any additional configuration steps on the extension setup page.
+    4. Reboot the device.
+    5. Navigate to an untrusted site in Chrome and Firefox.
 
-    - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
+  - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
 - [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC has a number of new features that light up key scenarios and provide feature parity with AppLocker.
     - [Multiple Policies](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): WDAC now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
@@ -116,10 +116,18 @@ The draft release of the [security configuration baseline settings](https://blog
     This brings WDAC to functionality parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that is not available with AppLocker.
     - [Allow COM Object Registration](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy): Previously, WDAC enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
+#### System Guard
+
+[System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) has added a new feature in this version of Windows called **SMM Firmware Measurement**. This feature is built on top of [System Guard Secure Launch](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to check that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, OS memory and secrets are protected from SMM. There are currently no devices out there with compatible hardware, but they will be coming out in the next few months.
+
+This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
+
+![System Guard](images/system-guard.png "SMM Firmware Measurement")
+
 ### Identity Protection
 
 - [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less login for websites supporting FIDO2 authentication, such as Microsoft account and Azure AD.
-- [Streamlined Windows Hello PIN reset experience](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience): Microsoft account users have a revamped Windows Hello PIN reset experience with the same look and feel as signing in on the web.
+- [Streamlined Windows Hello PIN reset experience](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience): Microsoft account users have a revamped Windows Hello PIN reset experience with the same look and feel as signing in on the web.
 - Sign-in with [Password-less](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/passwordless-strategy) Microsoft accounts: Sign in to Windows 10 with a phone number account. Then use Windows Hello for an even easier sign-in experience!
 - [Remote Desktop with Biometrics](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features#remote-desktop-with-biometrics): Azure Active Directory and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
 
@@ -131,13 +139,11 @@ The draft release of the [security configuration baseline settings](https://blog
 
 ## Microsoft Edge
 
-Windows 10, version 1903 offers new Group Policies and [MDM policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser) for managing Microsoft Edge. You can silently enable BitLocker for standard Azure Active Directory-joined users. You can also more easily manage the entire Microsoft 365 experience for users with the Microsoft 365 Admin Center.
-
 Several new features are coming in the next version of Edge. See the [news from Build 2019](https://blogs.windows.com/msedgedev/2019/05/06/edge-chromium-build-2019-pwa-ie-mode-devtools/#2QJF4u970WjQ2Sv7.97) for more information.
 
 ## See Also
 
-[What's New in Windows Server, version 1903](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-1903): New and updated features in Windows Server.<br>
+[What's New in Windows Server, version 1903](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1903): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>

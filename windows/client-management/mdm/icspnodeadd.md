@@ -4,7 +4,7 @@ description: ICSPNode Add
 ms.assetid: 5f03d350-c82b-4747-975f-385fd8b5b3a8
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -75,7 +75,7 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 <tr class="even">
 <td style="vertical-align:top"><p><code>CSPNODE_OPTION_INTERNALTRANSACTION</code></p></td>
 <td style="vertical-align:top"><p>0x02</p></td>
-<td style="vertical-align:top"><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the [ICSPNodeTransactioning](icspnodetransactioning.md).</p></td>
+<td style="vertical-align:top"><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the <a href="icspnodetransactioning.md" data-raw-source="[ICSPNodeTransactioning](icspnodetransactioning.md)">ICSPNodeTransactioning</a>.</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p><code>CSPNODE_OPTION_HANDLEALLPROPERTIES</code></p></td>
@@ -90,7 +90,7 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 </tbody>
 </table>
 
- 
+ 
 ## Return Value
 
 This method returns an ICSPNode and the feature options supported on that child node. If the method returns null, call GetLastError to get the error value.
@@ -109,7 +109,7 @@ For externally–transactioned nodes, if this method is implemented, then [ICSPN
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

@@ -29,17 +29,17 @@ sections:
     columns: 3
     items:
     
-    - href: https://blogs.windows.com/windowsexperience/
+    - href: https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update/#1P75kJB6T5OhySyo.97
       html: Get the update >
       image: 
         src: https://docs.microsoft.com/media/common/i_deploy.svg
       title: Windows 10, version 1903 rollout begins
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
       html: Read about the latest enhancements > 
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What’s new in Windows Update for Business
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/bg-p/Windows10Blog
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
       html: Get an overview > 
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
@@ -60,9 +60,7 @@ sections:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
-      <tr><td><div id='368msg'></div><b>System unresponsive after restart if Sophos Endpoint Protection installed</b><br>Devices with Sophos Endpoint Protection installed and managed by Sophos Central or Sophos Enterprise Console (SEC) may become unresponsive upon restart.<br><br><a href = '#368msgdesc'>See details ></a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493471' target='_blank'>KB4493471</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>May 14, 2019 <br>01:21 PM PT</td></tr>
-      <tr><td><div id='364msg'></div><b>System may be unresponsive after restart if Avira antivirus software installed</b><br>Devices with Avira antivirus software installed may become unresponsive upon restart.<br><br><a href = '#364msgdesc'>See details ></a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493471' target='_blank'>KB4493471</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>May 14, 2019 <br>01:19 PM PT</td></tr>
-      <tr><td><div id='359msg'></div><b>Authentication may fail for services after the Kerberos ticket expires</b><br>Authentication may fail for services that require unconstrained delegation after the Kerberos ticket expires.<br><br><a href = '#359msgdesc'>See details ></a></td><td>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489880' target='_blank'>KB4489880</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4499149' target='_blank'>KB4499149</a></td><td>May 14, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td><div id='496msg'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><br>When trying to expand, view or create Custom Views in Event Viewer, you may receive an error and the app may stop responding or close.<br><br><a href = '#496msgdesc'>See details ></a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503273' target='_blank'>KB4503273</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>June 13, 2019 <br>02:21 PM PT</td></tr>
       </table>
       "
 
@@ -73,21 +71,11 @@ sections:
         <div>
         </div> 
       "
-- title: April 2019
+- title: June 2019
 - items:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='368msgdesc'></div><b>System unresponsive after restart if Sophos Endpoint Protection installed</b><div>Microsoft and Sophos have identified an issue on devices with Sophos Endpoint Protection installed and managed by either Sophos Central or Sophos Enterprise Console (SEC) that may cause the system to become unresponsive upon restart after installing <a href=\"https://support.microsoft.com/help/4493471\" target=\"_blank\">KB4493471</a>.</div><div><br></div><div><strong>Affected platforms:</strong>&nbsp;</div><ul><li>Client: Windows 8.1; Windows 7 SP1</li><li>Server: Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue has been resolved. Microsoft has removed the temporary block for all affected Windows updates. Sophos has&nbsp;released an update to address this issue. Guidance for Sophos Endpoint and Sophos Enterprise Console customers can be found in the <a href=\"https://community.sophos.com/kb/133945\" target=\"_blank\">Sophos support article</a>.</div><br><a href ='#368msg'>Back to top</a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493471' target='_blank'>KB4493471</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>Resolved:<br>May 14, 2019 <br>01:21 PM PT<br><br>Opened:<br>April 09, 2019 <br>10:00 AM PT</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='364msgdesc'></div><b>System may be unresponsive after restart if Avira antivirus software installed</b><div>Microsoft and Avira have identified an issue on devices with Avira antivirus software installed that may cause the system to become unresponsive upon restart after installing <a href=\"https://support.microsoft.com/help/4493471\" target=\"_blank\">KB4493471</a>.</div><div><br></div><div><strong>Affected platforms:</strong>&nbsp;</div><ul><li>Client: Windows 8.1; Windows 7 SP1&nbsp;</li><li>Server: Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue has been resolved. Microsoft has removed the temporary block for all affected Windows updates. Avira has released an automatic update to address this issue. Guidance for Avira customers can be found in the <a href=\"https://www.avira.com/en/support-for-home-knowledgebase-detail/kbid/1976\" target=\"_blank\">Avira support article</a>.</div><br><a href ='#364msg'>Back to top</a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493471' target='_blank'>KB4493471</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>Resolved:<br>May 14, 2019 <br>01:19 PM PT<br><br>Opened:<br>April 09, 2019 <br>10:00 AM PT</td></tr>
-      </table>
-      "
-
-- title: March 2019
-- items:
-  - type: markdown
-    text: "
-      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
-      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='359msgdesc'></div><b>Authentication may fail for services after the Kerberos ticket expires</b><div>After installing <a href=\"https://support.microsoft.com/help/4489880\" target=\"_blank\">KB4489880</a>, some customers report that authentication fails for services that require unconstrained delegation after the Kerberos ticket expires (the default is 10 hours). For example, the SQL server service fails.</div><div><br></div><div><strong>Affected platforms:</strong>&nbsp;</div><ul><li>Client: Windows 7 SP1</li><li>Server: Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href=\"https://support.microsoft.com/help/4499149\" target=\"_blank\">KB4499149</a>.</div><br><a href ='#359msg'>Back to top</a></td><td>March 12, 2019<br><a href ='https://support.microsoft.com/help/4489880' target='_blank'>KB4489880</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4499149' target='_blank'>KB4499149</a></td><td>Resolved:<br>May 14, 2019 <br>10:00 AM PT<br><br>Opened:<br>March 12, 2019 <br>10:00 AM PT</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='496msgdesc'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><div>When trying to expand, view, or create&nbsp;<strong>Custom Views&nbsp;</strong>in Event Viewer, you may receive the error, \"MMC has detected an error in a snap-in and will unload it.\" and the app may stop responding or close. You may also receive the same error when using&nbsp;<strong>Filter Current Log</strong>&nbsp;in the&nbsp;<strong>Action&nbsp;</strong>menu with built-in views or logs. Built-in views and other features of Event Viewer should work as expected.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10 Enterprise LTSC 2015; Windows 8.1; Windows 7 SP1</li><li>Server: Windows Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Workaround:</strong> To mitigate this issue, see <a href=\"https://support.microsoft.com/help/4508640\" target=\"_blank\">KB4508640</a>.</div><div><br></div><div><strong>Next steps: </strong>We are working on a resolution and estimate a solution will be available in late June.</div><br><a href ='#496msg'>Back to top</a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503273' target='_blank'>KB4503273</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>June 13, 2019 <br>02:21 PM PT<br><br>Opened:<br>June 12, 2019 <br>11:11 AM PT</td></tr>
       </table>
       "

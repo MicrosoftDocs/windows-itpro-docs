@@ -47,9 +47,9 @@ You can configure this security setting under Computer Configuration\\Windows Se
 | 600 | A process was assigned a primary token.| 
 | 601 | A user attempted to install a service. |
 | 602 | A scheduler job was created. |
- 
+ 
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+ 
+ 

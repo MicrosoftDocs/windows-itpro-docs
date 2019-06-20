@@ -149,30 +149,30 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />  
-  <! -- msxml3.dll pick correct version based on release you are supporting -->
-  <! -- msxml6.dll pick correct version based on release you are supporting -->     
-  <! -- jscript9.dll pick correct version based on release you are supporting -->
-  <! -- RS1 Windows 1607
+  <!-- msxml3.dll pick correct version based on release you are supporting -->
+  <!-- msxml6.dll pick correct version based on release you are supporting -->     
+  <!-- jscript9.dll pick correct version based on release you are supporting -->
+  <!-- RS1 Windows 1607
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
   <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.14393.2607"/>
   -->
-  <! -- RS2 Windows 1703
+  <!-- RS2 Windows 1703
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.15063.1386"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.15063.1386"/>
   <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.15063.1445"/>
   -->
-  <! -- RS3 Windows 1709
+  <!-- RS3 Windows 1709
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.16299.725"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.16299.725"/>
   <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.16299.785"/>
   -->
-  <! -- RS4 Windows 1803
+  <!-- RS4 Windows 1803
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17134.344"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17134.344"/>
   <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17134.406"/>
   -->
-  <! -- RS5 Windows 1809
+  <!-- RS5 Windows 1809
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17763.54"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17763.54"/>
   <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17763.133"/>
@@ -1502,4 +1502,3 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
 
   ```
 <br />
-

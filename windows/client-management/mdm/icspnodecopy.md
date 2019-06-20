@@ -4,7 +4,7 @@ description: ICSPNode Copy
 ms.assetid: cd5ce0bc-a08b-4f82-802d-c7ff8701b41f
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -57,7 +57,7 @@ HRESULT Copy([in] IConfigManager2URI* puriDestination,
 <tr class="even">
 <td><p><code>CSPNODE_OPTION_INTERNALTRANSACTION</code></p></td>
 <td><p>0x02</p></td>
-<td><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the [ICSPNodeTransactioning](icspnodetransactioning.md).</p></td>
+<td><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the <a href="icspnodetransactioning.md" data-raw-source="[ICSPNodeTransactioning](icspnodetransactioning.md)">ICSPNodeTransactioning</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>CSPNODE_OPTION_HANDLEALLPROPERTIES</code></p></td>
@@ -72,7 +72,7 @@ HRESULT Copy([in] IConfigManager2URI* puriDestination,
 </tbody>
 </table>
 
- 
+ 
 ## Return Value
 
 A value of S\_OK indicates that the node was successfully copied to the new location. CFGMGR\_E\_COMMANDNOTALLOWED indicates that this node does not support the **Copy** method.
