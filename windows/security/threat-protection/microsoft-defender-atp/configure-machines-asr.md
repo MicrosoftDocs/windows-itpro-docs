@@ -53,5 +53,5 @@ For more information about optimizing ASR rule deployment in Microsoft 365 secur
 
 # Related topics
 - [Ensure your machines are configured properly](configure-machines.md)
-- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboaring.md)
+- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
 - [Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)

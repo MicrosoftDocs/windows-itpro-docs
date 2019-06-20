@@ -108,5 +108,5 @@ To learn more about Intune security baselines and assigning them, [read Create a
 
 # Related topics
 - [Ensure your machines are configured properly](configure-machines.md)
-- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboaring.md)
+- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
 - [Optimize ASR rule deployment and detections](configure-machines-asr.md)
