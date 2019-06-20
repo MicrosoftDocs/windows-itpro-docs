@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -32,4 +33,4 @@ ms.localizationpriority: Normal
 |**Warranty**| 1-year limited hardware warranty |
 
 > [!NOTE]
-> <sup>1</sup> System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See Surface.com/Storage for more details. <br> <sup>2</sup> Software license required for some features. Sold separately.<br> <sup>3</sup> Tilt functionality is currently available
+> <sup>1</sup> System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See Surface.com/Storage for more details. <br> <sup>2</sup> Software license required for some features. Sold separately.<br> 
