@@ -41,3 +41,5 @@ Remove the lens cling from the camera and attach it to the USB-C port on the top
 
 1. Insert the power cable into the back of the device and plug it into a power outlet. Run the cable through any cable guides on your mounting solution and remove the screen clang.
 2. To begin, press the power button on the bottom right.
+
+![* Keypad showing source, volume and power buttons*](images/sh2-keypad.png) <br>
