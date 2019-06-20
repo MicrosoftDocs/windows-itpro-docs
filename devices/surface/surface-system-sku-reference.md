@@ -18,7 +18,7 @@ manager: dansimp
 
 This document provides a reference of System Model and System SKU names that you can use to quickly determine the machine state of a specific device using PowerShell or WMI.
 
-System Model and System SKU are variables stored in System Management BIOS (SMBIOS) tables in the UEFI layer of Surface devices.  The System SKU name is required to differentiate between devices with the same System Model name, such as Surface Pro and Surface Pro with LTE Advanced. 
+System Model and System SKU are variables that are stored in the System Management BIOS (SMBIOS) tables in the UEFI layer of Surface devices. The System SKU name is required to differentiate between devices that have the same System Model name, such as Surface Pro and Surface Pro with LTE Advanced. 
 
 | Device   | System Model | System SKU       |
 | ---------- | ----------- | -------------- |
@@ -42,22 +42,23 @@ System Model and System SKU are variables stored in System Management BIOS (SMBI
 
 ## Examples 
 
-**PowerShell**
- Use the following PowerShell command to pull System SKU:
+**PowerShell**  
+Use the following PowerShell command to pull the System SKU information:
 
- ``` 
+ ``` powershell  
 gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 ```
 
-**System Information**
-You can also find the System SKU and System Model for a device in System Information. 
+**System information**  
+You can also find the System SKU and System Model for a device in **System Information**. To do this, follow these steps:
 
-- Go to **Start** >  **MSInfo32**.  
+1. Select **Start** and then in the search box type **MSInfo32**.  
+1. Select **System Information**.
 
-One example of how you could use this in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager is as part of a Task Sequence WMI Condition. For example: 
+**Example: Using the SKU in a task sequence WMI condition**  
+You can use the System SKU information in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager as part of a task sequence WMI condition.
 
-**Task Sequence WMI Condition**
-
-
+ ``` powershell  
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
+ ``` 
