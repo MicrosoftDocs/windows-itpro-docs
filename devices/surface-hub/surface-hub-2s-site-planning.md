@@ -44,7 +44,7 @@ Whether mounted to a wall or installed on the mobile stand, the areas where you 
 - Room temperatures no cooler than 10°C (50° F) and no hotter than 35°C  (95° F).
 - Relative humidity no lower than 20 percent and no higher than 80 percent.
 
-For detailed room planning guidance and more information about Microsoft Teams Rooms see [Plan Microsoft Teams Rooms.](https://docs.microsoft.com/en-us/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
+For detailed room planning guidance and more information about Microsoft Teams Rooms see [Plan Microsoft Teams Rooms.](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
 
 ## Managing Surface Hub 2S location
 
