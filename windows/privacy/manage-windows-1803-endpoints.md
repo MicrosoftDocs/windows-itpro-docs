@@ -427,6 +427,10 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | svchost | HTTPS   | *.update.microsoft.com |
 | svchost | HTTPS   | *.delivery.mp.microsoft.com  |
 
+These are dependent on enabling:
+- [Device authentication](manage-windows-1803-endpoints.md#device-authentication)
+- [Microsoft account](manage-windows-1803-endpoints.md#microsoft-account)
+
 The following endpoint is used for content regulation.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
 
