@@ -49,6 +49,6 @@ From the panel, you can click on the Open investigation page link to see the inv
 
 You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
 
-##Related topics
+## Related topics
 - [Automated investigation and investigation](automated-investigations.md)
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
