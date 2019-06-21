@@ -166,8 +166,8 @@ For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.c
 
 -   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V ](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V ](uev-troubleshooting.md)
+-   [Troubleshooting UE-V](uev-troubleshooting.md)
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)

@@ -47,4 +47,4 @@ For detailed information about Windows 10 servicing, see [Overview of Windows as
 ## See Also
 
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[Windows 10 - Release information](https://docs.microsoft.com/en-us/windows/windows-10/release-information): Windows 10 current versions by servicing option.
+[Windows 10 - Release information](https://docs.microsoft.com/windows/windows-10/release-information): Windows 10 current versions by servicing option.

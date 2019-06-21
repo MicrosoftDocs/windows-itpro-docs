@@ -1,8 +1,8 @@
 ---
 title: What's new in Windows 10 deployment
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greglin
 description: Changes and new features related to Windows 10 deployment
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -23,13 +23,13 @@ ms.topic: article
 
 This topic provides an overview of new solutions and online content related to deploying Windows 10 in your organization.
 
-- For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://docs.microsoft.com/en-us/windows/whats-new/index).
+- For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://docs.microsoft.com/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
 ## Recent additions to this page
 
 [SetupDiag](#setupdiag) 1.4.1 is released.<br>
-The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) is available.<br>
+The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
 [Windows 10 Subscription Activation](#windows-10-subscription-activation) now supports Windows 10 Education.
 
@@ -49,7 +49,7 @@ See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, whic
 ## Windows 10 servicing and support
 
 - [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Office 365 ProPlus updates, and Intune content, with System Center Configuration Manager content coming soon! 
-- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
@@ -88,7 +88,7 @@ The following Windows Autopilot features are available in Windows 10, version 19
 
 Windows 10 Education support has been added to Windows 10 Subscription Activation.
 
-With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation).
+With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation).
 
 ### SetupDiag
 
@@ -135,14 +135,14 @@ For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 MDT build 8456 (12/19/2018) is available, including support for Windows 10, version 1809, and Windows Server 2019.
 
-For more information about MDT, see the [MDT resource page](https://docs.microsoft.com/en-us/sccm/mdt/).
+For more information about MDT, see the [MDT resource page](https://docs.microsoft.com/sccm/mdt/).
 
 
 ### Windows Assessment and Deployment Kit (ADK)
 
 The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. See the following topics:
 
-- [What's new in ADK kits and tools](https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-kits-and-tools)
+- [What's new in ADK kits and tools](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools)
 - [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
 
 
@@ -178,7 +178,7 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 
 [Overview of Windows as a service](update/waas-overview.md)
 <BR>[Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)
-<BR>[Windows 10 release information](https://docs.microsoft.com/en-us/windows/windows-10/release-information)
+<BR>[Windows 10 release information](https://docs.microsoft.com/windows/windows-10/release-information)
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)

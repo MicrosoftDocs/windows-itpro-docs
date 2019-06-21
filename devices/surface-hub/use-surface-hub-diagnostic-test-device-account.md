@@ -118,7 +118,7 @@ Field |Success |Failure |Comment |Reference
 LyncDiscover Cert CN | | |Informational. Displays the LD cert Common name |
 LyncDiscover Cert CA | | |Informational. Displays the LD Cert CA |
 LyncDiscover Cert Root CA | | |Informational. Displays the LD Cert Root CA, if available. |
-LD Trust Status |Certificate is Trusted. |Certificate is not trusted, please add the Root CA. |Verify the certificate against the local cert store. Returns positive if the machine trusts the certificate.|[Download and deploy Skype for Business certificates using PowerShell](https://blogs.msdn.microsoft.com/surfacehub/2016/06/07/download-and-deploy-skype-for-business-certificates-using-powershell/)/[Supported items for Surface Hub provisioning packages](https://docs.microsoft.com/en-us/surface-hub/provisioning-packages-for-surface-hub#supported-items-for-surface-hub-provisioning-packages)
+LD Trust Status |Certificate is Trusted. |Certificate is not trusted, please add the Root CA. |Verify the certificate against the local cert store. Returns positive if the machine trusts the certificate.|[Download and deploy Skype for Business certificates using PowerShell](https://blogs.msdn.microsoft.com/surfacehub/2016/06/07/download-and-deploy-skype-for-business-certificates-using-powershell/)/[Supported items for Surface Hub provisioning packages](https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub#supported-items-for-surface-hub-provisioning-packages)
 
 SIP Pool Certification
 

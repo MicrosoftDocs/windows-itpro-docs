@@ -38,7 +38,7 @@ If you are using the MBAM Stand-alone topology, and you upgrade the server infra
 
 WORKAROUND: After the upgrade, run the following script on the Compliance and Audit Database:
 
-``` syntax
+```sql
 -- =============================================
 -- Script Template
 -- =============================================

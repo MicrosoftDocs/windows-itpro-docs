@@ -27,8 +27,8 @@ A level 3 configuration should include all the configurations from level 2 and l
 
 Devices targeting Level 3 should support all Level 2 and Level 1 features, and add the following hardware features:
 
-- [System Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-- [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby)
+- [System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+- [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby)
 
 ## Policies
 

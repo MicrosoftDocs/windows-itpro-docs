@@ -34,7 +34,7 @@ The client starts collecting data when it receives a “REPORTING=”TRUE””a
 
 The following schema gives specific details of the package and the application data that is sent to the server.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
