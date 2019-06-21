@@ -28,8 +28,7 @@ ms.topic: procedural
 
 [Attack surface reduction (ASR) rules](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) identify and prevent actions that are typically taken by malware during exploitation. These rules control when and how potentially malicious code can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
 
-![Attack surface management card](images/secconmgmt_asr_card.png)
-
+![Attack surface management card](images/secconmgmt_asr_card.png)<br>
 *Attack surface management card*
 
 The **Attack surface management** card is an entry point to tools in Microsoft 365 security center that you can use to:
@@ -40,8 +39,7 @@ The **Attack surface management** card is an entry point to tools in Microsoft 3
 
 Selecting **Go to attack surface management** takes you to **Monitoring & reports > Attack surface reduction rules > Add exclusions**. From there, you can navigate to other sections of Microsoft 365 security center.
 
-![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center](images/secconmgmt_asr_m365exlusions.png)
-
+![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center](images/secconmgmt_asr_m365exlusions.png)<br>
 *Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center*
 
 >[!NOTE]
