@@ -1713,7 +1713,7 @@ In **Configure user storage of BitLocker recovery information**, select whether 
 
 Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you cannot specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for the drive are determined by the policy setting.
 
-In **Save BitLocker recovery information to Active Directory Doman Services**, choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS.
+In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS.
 Storing the key package supports recovering data from a drive that has been physically corrupted. To recover this data, you can use the **Repair-bde** command-line tool. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
 
 For more information about the BitLocker repair tool, see [Repair-bde](https://technet.microsoft.com/library/ff829851.aspx).
