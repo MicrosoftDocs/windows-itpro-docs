@@ -38,8 +38,19 @@ Verify that the **Domain member: Disable machine account password changes** opti
 
 ### Best practices
 
-1.  Do not enable this policy setting. Machine account passwords are used to establish secure channel communications between members and domain controllers and between the domain controllers within the domain. After it is established, the secure channel transmits sensitive information that is necessary for making authentication and authorization decisions.
-2.  Do not use this policy setting in an attempt to support dual-boot scenarios that use the same machine account. If you want to dual-boot installations that are joined to the same domain, give the two installations different computer names. This policy setting was added to the Windows operating system to make it easier for organizations that stockpile pre-built computers that are put into production months later; those devices do not have to be rejoined to the domain.
+1. Do not enable this policy setting. Machine account passwords are used to establish secure channel communications between members and domain controllers and between the domain controllers within the domain. After it is established, the secure channel transmits sensitive information that is necessary for making authentication and authorization decisions.
+2. Do not use this policy setting in an attempt to support dual-boot scenarios that use the same machine account. If you want to dual-boot installations that are joined to the same domain, give the two installations different computer names. This policy setting was added to the Windows operating system to make it easier for organizations that stockpile pre-built computers that are put into production months later; those devices do not have to be rejoined to the domain.
+  
+There might be situations where you may think about using the setting, like:
+* Non-persistent VDI domain members that are rolled back to the base image after each invocation. An updated password would be lost on roll-back.
+* Embedded devices that have write access to the OS volume disabled. So an updated password would not be persisted.
+
+For both situations in case you are using this approach, we would strongly suggest to plan for a password change when using the setting and configure the deployment to retain this updated OS image or, in the embedded scenario, allow the write to the OS volume. To facilitate the update to the machine account password locally, trigger the update using this command:
+
+```
+Nltest /sc_change_pwd:<AD domain name>
+```
+
 
 ### Location
 
