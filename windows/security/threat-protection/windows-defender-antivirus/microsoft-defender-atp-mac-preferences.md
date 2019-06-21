@@ -34,99 +34,115 @@ The top level of the configuration profile includes product-wide preferences, as
 
 The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of the product.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | antivirusEngine
-**Data type** | Dictionary (nested preference)
-**Comments** | See the following sections for a description of the dictionary contents.
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | antivirusEngine |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
 
 #### Enable / disable real-time protection
 
 Whether real time protection (scan files as they are accessed) is enabled or not.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | enableRealTimeProtection
-**Data type** | Boolean
-**Possible values** | true (default); false
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | enableRealTimeProtection |
+| **Data type** | Boolean |
+| **Possible values** | true (default); false |
 
 #### Scan exclusions
 
 Entities that have been excluded from scanning. Exclusions can be specified by full paths, extensions or file names.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | exclusions
-**Data type** | Dictionary (nested preference)
-**Comments** | See the following sections for a description of the dictionary contents.
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | exclusions |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
 
 ##### Type of exclusion
 
 Specifies the type of the excluded content.
 
-**Domain** | com.microsoft.wdav
-**Key** | $type
-**Data type** | String
-**Possible values** | excludedPath; excludedFileExtension; excludedFileName
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | $type |
+| **Data type** | String |
+| **Possible values** | excludedPath; excludedFileExtension; excludedFileName |
 
 ##### Path to excluded content
 
 Path to file or directory that should be exluded from scanning.
 
-**Domain** | com.microsoft.wdav
-**Key** | path
-**Data type** | String
-**Possible values** | valid paths
-**Comments** | Applicable only if *$type* is *excludedPath*
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | path |
+| **Data type** | String |
+| **Possible values** | valid paths |
+| **Comments** | Applicable only if *$type* is *excludedPath* |
 
 ##### Path type (file / directory)
 
 Indicates if the *path* property refers to a file or directory. 
 
-**Domain** | com.microsoft.wdav
-**Key** | isDirectory
-**Data type** | Boolean
-**Possible values** | false (default); true
-**Comments** | Applicable only if *$type* is *excludedPath*
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | isDirectory |
+| **Data type** | Boolean |
+| **Possible values** | false (default); true |
+| **Comments** | Applicable only if *$type* is *excludedPath* |
 
 ##### Extension excluded from scanning
 
 Extension of files that should be excluded from scanning.
 
-**Domain** | com.microsoft.wdav
-**Key** | extension
-**Data type** | String
-**Possible values** | valid file extensions
-**Comments** | Applicable only if *$type* is *excludedFileExtension*
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | extension |
+| **Data type** | String |
+| **Possible values** | valid file extensions |
+| **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
 ##### Name of excluded content
 
 Name of file that should be excluded from scanning.
 
-**Domain** | com.microsoft.wdav
-**Key** | name
-**Data type** | String
-**Possible values** | any string
-**Comments** | Applicable only if *$type* is *excludedFileName*
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | name |
+| **Data type** | String |
+| **Possible values** | any string |
+| **Comments** | Applicable only if *$type* is *excludedFileName* |
 
 #### Threat type settings
 
 The *threatTypeSettings* preference in the antivirus engine is used to control how certain threat types are handled by the product.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | threatTypeSettings
-**Data type** | Dictionary (nested preference)
-**Comments** | See the following sections for a description of the dictionary contents.
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | threatTypeSettings |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
 
 ##### Threat type
 
 Type of the threat for which the behavior is configured.
 
-**Domain** | com.microsoft.wdav
-**Key** | key
-**Data type** | String
-**Possible values** | potentially_unwanted_application
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | key |
+| **Data type** | String |
+| **Possible values** | potentially_unwanted_application |
 
 ##### Action to take
 
@@ -136,50 +152,56 @@ Action to take when encountering a threat of the the type being configured. Can 
 - Block: reports the threat to the user interface and the security console and blocks the execution of the threat if real-time protection is turned on
 - Off: does not block the threat or report it
 
-**Domain** | com.microsoft.wdav
-**Key** | value
-**Data type** | String
-**Possible values** | audit (default); block; off
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | value |
+| **Data type** | String |
+| **Possible values** | audit (default); block; off |
 
 ### Cloud delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud driven protection feature of the product.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | cloudService
-**Data type** | Dictionary (nested preference)
-**Comments** | See the following sections for a description of the dictionary contents.
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | cloudService |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
 
 #### Enable / disable cloud delivered protection
 
 Whether cloud delivered protection is enabled on the device or not. To improve the security of your sevices, we recommend keeping this feature turned on.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | enabled
-**Data type** | Boolean
-**Possible values** | true (default); false
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | enabled |
+| **Data type** | Boolean |
+| **Possible values** | true (default); false |
 
 #### Diagnostic collection level
 
 Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | diagnosticLevel
-**Data type** | String
-**Possible values** | optional (default); required
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | diagnosticLevel |
+| **Data type** | String |
+| **Possible values** | optional (default); required |
 
 #### Enable / disable automatic sample submissions
 
 Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. We'll prompt users if the file we need is likely to contain personal information.
 
-:---|:---
-**Domain** | com.microsoft.wdav
-**Key** | automaticSampleSubmission
-**Data type** | Boolean
-**Possible values** | true (default); false
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | automaticSampleSubmission |
+| **Data type** | Boolean |
+| **Possible values** | true (default); false |
 
 ## Recommended configuration profile
 
