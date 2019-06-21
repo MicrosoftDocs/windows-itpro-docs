@@ -498,7 +498,7 @@ if (![System.String]::IsNullOrEmpty($strRegPoolEntry))
     $strRegPool = $strRegPoolEntry
 }
 
-# Try to SfB-enable the account. Note that it may not work right away as the account needs to propogate to active directory
+# Try to SfB-enable the account. Note that it may not work right away as the account needs to propagate to active directory
 PrintAction "Enabling Skype for Business..."
 Start-Sleep -s 10
 $Error.Clear()
@@ -878,7 +878,7 @@ if (![System.String]::IsNullOrEmpty($strRegPoolEntry))
 }
 #>
 
-# Try to SfB-enable the account. Note that it may not work right away as the account needs to propogate to active directory
+# Try to SfB-enable the account. Note that it may not work right away as the account needs to propagate to active directory
 PrintAction "Enabling Skype for Business on $strRegPool"
 Start-Sleep -s 10
 $Error.Clear()
