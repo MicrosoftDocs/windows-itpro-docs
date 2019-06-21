@@ -39,7 +39,7 @@ These settings include user experience and app behavior, Azure Log Analytics reg
 
 ## Additional supported configuration service providers (CSPs)
 
-For addtional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
+For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
 
 ## Quality of Service (QoS) settings
 
