@@ -148,9 +148,9 @@ Type of the threat for which the behavior is configured.
 
 Action to take when encountering a threat of the the type being configured. Can be:
 
-- Audit: adds an entry to the log about the threat, but does not report it to the user interface or the security console
-- Block: reports the threat to the user interface and the security console and blocks the execution of the threat if real-time protection is turned on
-- Off: does not block the threat or report it
+- *Audit*: adds an entry to the log about the threat, but does not report it to the user interface or the security console
+- *Block*: reports the threat to the user interface and the security console and blocks the execution of the threat if real-time protection is turned on
+- *Off*: does not block the threat or report it
 
 |||
 |:---|:---|
@@ -316,7 +316,8 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings** and create a new entry with *com.microsoft.wdav* as the preference domain and upload the .plist with the settings.
 
-**NOTE:** it is important that you enter the correct preference domain, otherwise these preferences might not be recognized by the product.
+>[!WARNING]
+>It is important that you enter the correct preference domain, otherwise these preferences might not be recognized by the product.
 
 ### Intune deployment
 
@@ -333,6 +334,9 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 6. Select **OK**.
 
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
+
+>[!WARNING]
+>It is important that you enter the correct custom configuration profile name, otherwise these preferences might not be recognized by the product.
 
 ## Resources
 
