@@ -87,7 +87,7 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
     Set-CalendarProcessing surfacehub2@adatum.com -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
-11.	Enable the mailbox as a meeting device in Skype for Business Online. Run the following cmdlet which enables the acount as a meeting device. 
+11.	Enable the mailbox as a meeting device in Skype for Business Online. Run the following cmdlet which enables the account as a meeting device. 
 
     ```
     Get-CsTenant | select registrarpool
