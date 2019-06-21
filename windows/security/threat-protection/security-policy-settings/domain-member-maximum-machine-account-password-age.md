@@ -28,13 +28,15 @@ Describes the best practices, location, values, and security considerations for 
 
 The **Domain member: Maximum machine account password age** policy setting determines when a domain member submits a password change.
 
-In Active Directory–based domains, each device has an account and password. By default, the domain members submit a password change every 30 days. Increasing this interval significantly, or setting it to **0** so that a device no longer submits a password change, gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
+In Active Directory–based domains, each device has an account and password. By default, the domain members submit a password change every 30 days. Increasing this interval significantly gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
 
 For more information, see [Machine Account Password Process](https://blogs.technet.microsoft.com/askds/2009/02/15/machine-account-password-process-2/).
 
+You can use the policy “Domain member: Disable machine account password changes” to disable the password change altogether. Please refer to the discussion for this policy on the feasibility of this approach.
+
 ### Possible values
 
--   User-defined number of days between 0 and 999
+-   User-defined number of days between 1 and 999
 -   Not defined.
 
 ### Best practices
