@@ -20,7 +20,7 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Mac
 
-In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile, which is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users of the devices in your enterprise will not be able to change preferences that are set through this configuration profile.
+In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile, which is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users in your enterprise will not be able to change preferences that are set through this configuration profile.
 
 This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
 
@@ -50,7 +50,7 @@ Whether real time protection (scan files as they are accessed) is enabled or not
 | **Domain** | com.microsoft.wdav |
 | **Key** | enableRealTimeProtection |
 | **Data type** | Boolean |
-| **Possible values** | true (default); false |
+| **Possible values** | true (default) <br/> false |
 
 #### Scan exclusions
 
@@ -72,7 +72,7 @@ Specifies the type of the excluded content.
 | **Domain** | com.microsoft.wdav |
 | **Key** | $type |
 | **Data type** | String |
-| **Possible values** | excludedPath; excludedFileExtension; excludedFileName |
+| **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
 ##### Path to excluded content
 
@@ -95,7 +95,7 @@ Indicates if the *path* property refers to a file or directory.
 | **Domain** | com.microsoft.wdav |
 | **Key** | isDirectory |
 | **Data type** | Boolean |
-| **Possible values** | false (default); true |
+| **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
 ##### Extension excluded from scanning
@@ -157,7 +157,7 @@ Action to take when encountering a threat of the the type being configured. Can 
 | **Domain** | com.microsoft.wdav |
 | **Key** | value |
 | **Data type** | String |
-| **Possible values** | audit (default); block; off |
+| **Possible values** | audit (default) <br/> block <br/> off |
 
 ### Cloud delivered protection preferences
 
@@ -179,7 +179,7 @@ Whether cloud delivered protection is enabled on the device or not. To improve t
 | **Domain** | com.microsoft.wdav |
 | **Key** | enabled |
 | **Data type** | Boolean |
-| **Possible values** | true (default); false |
+| **Possible values** | true (default) <br/> false |
 
 #### Diagnostic collection level
 
@@ -190,7 +190,7 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 | **Domain** | com.microsoft.wdav |
 | **Key** | diagnosticLevel |
 | **Data type** | String |
-| **Possible values** | optional (default); required |
+| **Possible values** | optional (default) <br/> required |
 
 #### Enable / disable automatic sample submissions
 
@@ -201,7 +201,7 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Domain** | com.microsoft.wdav |
 | **Key** | automaticSampleSubmission |
 | **Data type** | Boolean |
-| **Possible values** | true (default); false |
+| **Possible values** | true (default) <br/> false |
 
 ## Recommended configuration profile
 
