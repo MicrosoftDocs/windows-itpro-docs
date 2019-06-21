@@ -615,7 +615,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack QualityUpdate opearation. </Description>
+          <Description>Returns the result of last RollBack QualityUpdate operation. </Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -637,7 +637,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack FeatureUpdate opearation.</Description>
+          <Description>Returns the result of last RollBack FeatureUpdate operation.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
