@@ -196,7 +196,7 @@ Required. Specifies the root CA thumbprint. It is a 20-byte value of the SHA1 ce
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectalternativenames"></a>**My/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
-Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *<nameformat1>*+*<actual name1>*;*<name format 2>*+*<actual name2>*. Value type is chr.
+Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *\<nameformat1>*+*\<actual name1>*;*\<name format 2>*+*\<actual name2>*. Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 

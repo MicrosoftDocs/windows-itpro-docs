@@ -49,7 +49,7 @@ The following diagram shows the Update configuration service provider in tree fo
 
 <p style="margin-left: 20px">Sample syncml:
 <p style="margin-left: 20px"><code>
-<LocURI>./Vendor/MSFT/Update/ApprovedUpdates/%7ba317dafe-baf4-453f-b232-a7075efae36e%7d</LocURI>
+&lt;LocURI&gt;./Vendor/MSFT/Update/ApprovedUpdates/%7ba317dafe-baf4-453f-b232-a7075efae36e%7d&lt;/LocURI&gt;
 </code>
 
 <a href="" id="approvedupdates-approved-update-guid-approvedtime"></a>**ApprovedUpdates/*Approved Update Guid*/ApprovedTime**
