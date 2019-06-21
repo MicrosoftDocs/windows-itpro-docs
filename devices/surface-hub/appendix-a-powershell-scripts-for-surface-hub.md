@@ -1411,7 +1411,7 @@ if ($fHasOnline)
     }
 }
 
-#If there is an on-prem component, we can get the authorative AD user from mailbox
+#If there is an on-prem component, we can get the authoritative AD user from mailbox
 if ($fHasOnPrem)
 {
     $accountOnPrem = $null
