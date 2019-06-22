@@ -327,7 +327,7 @@ The App-V Client manages the following two file-based locations:
 </tr>
 <tr class="even">
 <td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>ppdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
+<td align="left"><p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Files in the user catalog</p></td>
