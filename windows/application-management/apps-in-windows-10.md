@@ -199,7 +199,7 @@ System apps are integral to the operating system. Here are the typical system ap
 
 
 ## System apps in 1903
-Location of systemapps is  C:\Window\SystemApps\
+Location of system apps is  C:\Windows\SystemApps\
 
 |         Name                                 |                Full name                     |1903 | Uninstall through UI? |
 |----------------------------------------------|----------------------------------------------|:---:|:---------------------:|
