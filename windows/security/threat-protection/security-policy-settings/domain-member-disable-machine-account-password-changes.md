@@ -51,7 +51,7 @@ Verify that the **Domain member: Disable machine account password changes** opti
      Nltest /sc_change_pwd:<AD DS domain name>
      ```
 
-     In this command, **\<AD DS domain name\>** represents the domain of the local computer.  
+     In this command, **\<AD DS domain name\>** represents the domain of the local computer. For more information about maintenance windows and non-persistent VDI implementations, see [Optimizing Windows 10, version 1803, for a Virtual Desktop Infrastructure (VDI) role: VDI optimization principles: Non-Persistent VDI](/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-1803#vdi-optimization-principles).
 
 ### Location
 
