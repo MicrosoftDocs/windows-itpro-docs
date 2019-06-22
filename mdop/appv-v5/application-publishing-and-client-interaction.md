@@ -877,7 +877,7 @@ Adding an App-V package to the client is the first step of the publishing refres
 
     7.  Create the Registry.dat file from the package store to %ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat
 
-    8.  Register the package with the App-V Kernal Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
+    8.  Register the package with the App-V Kernel Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
 
     9.  Invoke scripting from the AppxManifest.xml or DeploymentConfig.xml file for Package Add timing.
 
