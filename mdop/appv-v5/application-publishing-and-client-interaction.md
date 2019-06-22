@@ -1554,12 +1554,12 @@ The example below shows the combination of the Manifest, Deployment Configuratio
      <appv:Shortcut>
           <appv:Fìle>[{Desktop}]\7-Zip\7-Zip File Manager.lnk</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
+          <appv:Icon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
      </appv:Shortcut>
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.Ink</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
+          <appv:Icon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
      </appv:Shortcut>
 </appv:Extension>
      </Subsystems>
