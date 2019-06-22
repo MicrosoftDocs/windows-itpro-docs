@@ -35,7 +35,7 @@ Use the following procedure to migrate packages created with App-V using the use
 
    &lt;/UserConfiguration&gt;
 
-2. To add the App-V 5.0 package type the following in an elavted PowerShell command prompt:
+2. To add the App-V 5.0 package type the following in an elevated PowerShell command prompt:
 
    PS&gt;**$pkg= Add-AppvClientPackage –Path** &lt;Path to package location&gt;
 
