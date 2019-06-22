@@ -5,13 +5,14 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/13/2019
+ms.reviewer: 
 ---
 
 # Create a Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
@@ -96,7 +97,7 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
 - **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-![Add Store app](images\add-a-protected-store-app.png)
+![Add Store app](images/add-a-protected-store-app.png)
 
 To add multiple Store apps, click the ellipsis **…**. 
 
@@ -564,7 +565,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you can choose optional settings.
 
-![Advanced optional settings ](images/wip-azure-advanced-settings-optional.png)
+![Advanced optional settings](images/wip-azure-advanced-settings-optional.png)
    
 **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile.** Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
         

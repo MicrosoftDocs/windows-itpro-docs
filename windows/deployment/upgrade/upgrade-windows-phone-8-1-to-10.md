@@ -1,5 +1,8 @@
 ---
 title: Upgrade Windows Phone 8.1 to Windows 10 Mobile in an MDM environment (Windows 10)
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. 
 keywords: upgrade, update, windows, phone, windows 10, mdm, mobile
 ms.prod: w10

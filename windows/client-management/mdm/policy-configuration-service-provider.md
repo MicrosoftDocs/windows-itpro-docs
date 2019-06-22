@@ -2,20 +2,20 @@
 title: Policy CSP
 description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/01/2019
 ---
 
 # Policy CSP
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
+The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
 
@@ -57,12 +57,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/****_AreaName_**  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>  
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/****_AreaName/PolicyName_**  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
@@ -70,7 +70,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   Separate substring values by the Unicode &\#xF000; in the XML file.
 
 > [!NOTE]
-> A query from a different caller could provide a different value as each caller could have different values for a named policy.
+> A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
@@ -81,12 +81,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/****_AreaName_**  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>  
 <p style="margin-left: 20px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/****_AreaName/PolicyName_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -97,36 +97,36 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/library/cc179097.aspx).
 
-<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+<p style="margin-left: 20px">ADMX files that have been installed by using <strong>ConfigOperations/ADMXInstall</strong> can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy**  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy/_UniqueID_**  
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference/_UniqueID_**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
@@ -738,10 +738,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy" id="cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="cryptographyallowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptography-tlsciphersuites" id="cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
+    <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
   </dd>
 </dl>
 
@@ -1003,6 +1003,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures" id="deviceguard-requireplatformsecurityfeatures">DeviceGuard/RequirePlatformSecurityFeatures</a>
+  </dd>
+</dl>
+
+### DeviceHealthMonitoring policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" id="devicehealthmonitoring-allowdevicehealthmonitoring">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" id="devicehealthmonitoring-configdevicehealthmonitoringscope">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a>
   </dd>
 </dl>
 
@@ -1333,6 +1347,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode" id="internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar" id="internetexplorer-allowenhancedsuggestionsinaddressbar">InternetExplorer/AllowEnhancedSuggestionsInAddressBar</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu" id="internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a>
   </dd>
   <dd>
@@ -1399,6 +1416,8 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" id="internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
+  </dd><br/>  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -1406,6 +1425,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablecompatview" id="internetexplorer-disablecompatview">InternetExplorer/DisableCompatView</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory" id="internetexplorer-disableconfiguringhistory">InternetExplorer/DisableConfiguringHistory</a>
@@ -1426,10 +1448,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport" id="internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync" id="internetexplorer-disablefeedsbackgroundsync">InternetExplorer/DisableFeedsBackgroundSync</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard" id="internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature" id="internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation" id="internetexplorer-disablegeolocation">InternetExplorer/DisableGeolocation</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange" id="internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
@@ -1457,6 +1485,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck" id="internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete" id="internetexplorer-disablewebaddressautocomplete">InternetExplorer/DisableWebAddressAutoComplete</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode" id="internetexplorer-donotallowactivexcontrolsinprotectedmode">InternetExplorer/DoNotAllowActiveXControlsInProtectedMode</a>
@@ -1850,6 +1881,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses">InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage" id="internetexplorer-newtabdefaultpage">InternetExplorer/NewTabDefaultPage</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses" id="internetexplorer-notificationbarinternetexplorerprocesses">InternetExplorer/NotificationBarInternetExplorerProcesses</a>
@@ -2900,6 +2934,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-search.md#search-allowcortanainaad" id="search-allowcortanainaad">Search/AllowCortanaInAAD</a>
   </dd>
   <dd>
+    <a href="./policy-csp-search.md#search-allowfindmyfiles" id="search-allowfindmyfiles">Search/AllowFindMyFiles</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-search.md#search-allowindexingencryptedstoresoritems" id="search-allowindexingencryptedstoresoritems">Search/AllowIndexingEncryptedStoresOrItems</a>
   </dd>
   <dd>
@@ -2975,6 +3012,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-security.md#security-requireretrievehealthcertificateonboot" id="security-requireretrievehealthcertificateonboot">Security/RequireRetrieveHealthCertificateOnBoot</a>
+  </dd>
+</dl>
+
+### ServiceControlManager policies
+<dl>
+  <dd>
+    <a href="./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" id="servicecontrolmanager-svchostprocessmitigation">ServiceControlManager/SvchostProcessMitigation</a>
   </dd>
 </dl>
 
@@ -3351,6 +3395,17 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-allowset24hourclock" id="timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+</dl>
+
+### Troubleshooting policies
+
+<dl>
+   <dd>
+    <a href="./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
   </dd>
 </dl>
 
@@ -3890,6 +3945,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning)
 -   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit)
 -   [InternetExplorer/AllowEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode)
+-   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)
 -   [InternetExplorer/AllowEnterpriseModeFromToolsMenu](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu)
 -   [InternetExplorer/AllowEnterpriseModeSiteList](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist)
 -   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3)
@@ -3912,17 +3968,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
+-   [InternetExplorer/DisableCompatView](./policy-csp-internetexplorer.md#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
 -   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection)
 -   [InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation](./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation)
 -   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites)
 -   [InternetExplorer/DisableEnclosureDownloading](./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading)
 -   [InternetExplorer/DisableEncryptionSupport](./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport)
+-   [InternetExplorer/DisableFeedsBackgroundSync](./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)
 -   [InternetExplorer/DisableFirstRunWizard](./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard)
 -   [InternetExplorer/DisableFlipAheadFeature](./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature)
+-   [InternetExplorer/DisableGeolocation](./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)
 -   [InternetExplorer/DisableHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange)
 -   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors)
 -   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing)
@@ -3932,6 +3992,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/DisableSecondaryHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange)
 -   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck)
 -   [InternetExplorer/DisableUpdateCheck](./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck)
+-   [InternetExplorer/DisableWebAddressAutoComplete](./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)
 -   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode)
 -   [InternetExplorer/DoNotAllowUsersToAddSites](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites)
 -   [InternetExplorer/DoNotAllowUsersToChangePolicies](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstochangepolicies)
@@ -4062,6 +4123,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes)
 -   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses)
 -   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses)
+-   [InternetExplorer/NewTabDefaultPage](./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)
 -   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses)
 -   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter)
 -   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols)
@@ -4190,6 +4252,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses)
 -   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4332,7 +4395,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
--   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
 -   [Defender/AllowArchiveScanning](./policy-csp-defender.md#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](./policy-csp-defender.md#defender-allowbehaviormonitoring)
@@ -4456,6 +4519,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning)
 -   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit)
 -   [InternetExplorer/AllowEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode)
+-   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)
 -   [InternetExplorer/AllowEnterpriseModeFromToolsMenu](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu)
 -   [InternetExplorer/AllowEnterpriseModeSiteList](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist)
 -   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3)
@@ -4478,17 +4542,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
+-   [InternetExplorer/DisableCompatView](./policy-csp-internetexplorer.md#internetexplorer-disablecompatview)
 -   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
 -   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection)
 -   [InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation](./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation)
 -   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites)
 -   [InternetExplorer/DisableEnclosureDownloading](./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading)
 -   [InternetExplorer/DisableEncryptionSupport](./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport)
+-   [InternetExplorer/DisableFeedsBackgroundSync](./policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)
 -   [InternetExplorer/DisableFirstRunWizard](./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard)
 -   [InternetExplorer/DisableFlipAheadFeature](./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature)
+-   [InternetExplorer/DisableGeolocation](./policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)
 -   [InternetExplorer/DisableHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange)
 -   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors)
 -   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing)
@@ -4498,6 +4566,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/DisableSecondaryHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange)
 -   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck)
 -   [InternetExplorer/DisableUpdateCheck](./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck)
+-   [InternetExplorer/DisableWebAddressAutoComplete](./policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)
 -   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode)
 -   [InternetExplorer/DoNotAllowUsersToAddSites](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites)
 -   [InternetExplorer/DoNotAllowUsersToChangePolicies](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstochangepolicies)
@@ -4628,6 +4697,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes)
 -   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses)
 -   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses)
+-   [InternetExplorer/NewTabDefaultPage](./policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)
 -   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses)
 -   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter)
 -   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols)
@@ -4916,6 +4986,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
 -   [Search/AllowCloudSearch](./policy-csp-search.md#search-allowcloudsearch)
 -   [Search/AllowCortanaInAAD](./policy-csp-search.md#search-allowcortanainaad)
+-   [Search/AllowFindMyFiles](./policy-csp-search.md#search-allowfindmyfiles)
 -   [Search/AllowIndexingEncryptedStoresOrItems](./policy-csp-search.md#search-allowindexingencryptedstoresoritems)
 -   [Search/AllowSearchToUseLocation](./policy-csp-search.md#search-allowsearchtouselocation)
 -   [Search/AllowUsingDiacritics](./policy-csp-search.md#search-allowusingdiacritics)
@@ -4926,6 +4997,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Search/PreventIndexingLowDiskSpaceMB](./policy-csp-search.md#search-preventindexinglowdiskspacemb)
 -   [Search/PreventRemoteQueries](./policy-csp-search.md#search-preventremotequeries)
 -   [Security/ClearTPMIfNotReady](./policy-csp-security.md#security-cleartpmifnotready)
+-   [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 -   [Settings/AllowOnlineTips](./policy-csp-settings.md#settings-allowonlinetips)
 -   [Settings/ConfigureTaskbarCalendar](./policy-csp-settings.md#settings-configuretaskbarcalendar)
 -   [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist)
@@ -4965,6 +5037,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode)
 -   [TextInput/AllowLanguageFeaturesUninstall](./policy-csp-textinput.md#textinput-allowlanguagefeaturesuninstall)
 -   [TextInput/AllowLinguisticDataCollection](./policy-csp-textinput.md#textinput-allowlinguisticdatacollection)
+-   [Troubleshooting/AllowRecommendations](./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)
 -   [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
 -   [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
 -   [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
@@ -5089,272 +5162,174 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartHoloLensBusiness-->
 ## <a href="" id="hololenbusinessspolicies"></a>Policies supported by Windows Holographic for Business  
 
-- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
-- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
-- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
-- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-- [Browser/AllowAutofill](#browser-allowautofill)
-- [Browser/AllowCookies](#browser-allowcookies)  
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
-- [Browser/AllowPopups](#browser-allowpopups)  
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
-- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
-- [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
-- [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
-- [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
-- [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
-- [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
-- [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
-- [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
-- [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
-- [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
-- [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
-- [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
-- [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
-- [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
-- [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
-- [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
-- [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
-- [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
-- [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
-- [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
-- [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
-- [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
-- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
-- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
-- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
-- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
-- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
-- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
-- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
-- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
-- [Experience/AllowCortana](#experience-allowcortana)  
-- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-- [Settings/AllowDateTime](#settings-allowdatetime)  
-- [Settings/AllowVPN](#settings-allowvpn)
-- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-- [System/AllowLocation](#system-allowlocation)  
-- [System/AllowTelemetry](#system-allowtelemetry)
-- [Update/AllowAutoUpdate](#update-allowautoupdate)  
-- [Update/AllowUpdateService](#update-allowupdateservice)  
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)  
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowAutofill](#browser-allowautofill)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
 
-- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
-- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
-- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-- [Browser/AllowPopups](#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
-- [Browser/AllowCookies](#browser-allowcookies)
-- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
-- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
-- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
-- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
-- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
-- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
-- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
-- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
-- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
-- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
-- [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
-- [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
-- [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
-- [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
-- [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
-- [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
-- [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
-- [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
-- [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
-- [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
-- [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
-- [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
-- [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
-- [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
-- [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
-- [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
-- [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
-- [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
-- [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
-- [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
-- [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [Experience/AllowCortana](#experience-allowcortana)
-- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-- [Settings/AllowDateTime](#settings-allowdatetime)
-- [Settings/AllowVPN](#settings-allowvpn)
-- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-- [System/AllowTelemetry](#system-allowtelemetry)
-- [System/AllowLocation](#system-allowlocation)
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)  
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [System/AllowLocation](#system-allowlocation)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 <!--EndHoloLens-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
 
-- [Camera/AllowCamera](#camera-allowcamera)
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
-- [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
-- [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
-- [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
-- [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
-- [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
-- [Defender/AllowEmailScanning](#defender-allowemailscanning)  
-- [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
-- [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
-- [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
-- [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
-- [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
-- [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
-- [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
-- [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
-- [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
-- [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
-- [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
-- [Defender/ExcludedExtensions](#defender-excludedextensions)  
-- [Defender/ExcludedPaths](#defender-excludedpaths)  
-- [Defender/ExcludedProcesses](#defender-excludedprocesses)  
-- [Defender/PUAProtection](#defender-puaprotection)  
-- [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
-- [Defender/ScanParameter](#defender-scanparameter)  
-- [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
-- [Defender/ScheduleScanDay](#defender-schedulescanday)  
-- [Defender/ScheduleScanTime](#defender-schedulescantime)  
-- [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
-- [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
-- [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
-- [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)  
-- [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)  
-- [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)  
-- [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)  
-- [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)  
-- [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)  
-- [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)  
-- [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)  
-- [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)  
-- [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)  
-- [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)  
-- [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)  
-- [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)  
-- [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)  
-- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
-- [Desktop/PreventUserRedirectionOfProfileFolders](#desktop-preventuserredirectionofprofilefolders)
-- [TextInput/AllowIMELogging](#textinput-allowimelogging)  
-- [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
-- [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
-- [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
-- [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
-- [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
-- [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
-- [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
-- [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
-- [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
-- [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
-- [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)
+-   [Camera/AllowCamera](#camera-allowcamera)
+-   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
+-   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
+-   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
+-   [Defender/AllowCloudProtection](#defender-allowcloudprotection)
+-   [Defender/AllowEmailScanning](#defender-allowemailscanning)
+-   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)
+-   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)
+-   [Defender/AllowIOAVProtection](#defender-allowioavprotection)
+-   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)
+-   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)
+-   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)
+-   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
+-   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
+-   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
+-   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
+-   [Defender/ExcludedExtensions](#defender-excludedextensions)
+-   [Defender/ExcludedPaths](#defender-excludedpaths)
+-   [Defender/ExcludedProcesses](#defender-excludedprocesses)
+-   [Defender/PUAProtection](#defender-puaprotection)
+-   [Defender/RealTimeScanDirection](#defender-realtimescandirection)
+-   [Defender/ScanParameter](#defender-scanparameter)
+-   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)
+-   [Defender/ScheduleScanDay](#defender-schedulescanday)
+-   [Defender/ScheduleScanTime](#defender-schedulescantime)
+-   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)
+-   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
+-   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [Desktop/PreventUserRedirectionOfProfileFolders](#desktop-preventuserredirectionofprofilefolders)
+-   [TextInput/AllowIMELogging](#textinput-allowimelogging)
+-   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
+-   [TextInput/AllowInputPanel](#textinput-allowinputpanel)
+-   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
+-   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
+-   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
+-   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
+-   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
+-   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
+-   [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)
 <!--EndSurfaceHub-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Core
 
-- [Camera/AllowCamera](#camera-allowcamera)
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
-- [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
-- [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
-- [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
-- [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
-- [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
-- [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
-- [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
-- [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
-- [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
-- [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
-- [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
-- [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
-- [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
-- [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
-- [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
-- [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
-- [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
-- [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
-- [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
-- [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
-- [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
-- [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
-- [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
-- [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
-- [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-- [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
-- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-- [Wifi/AllowWiFi](#wifi-allowwifi)  
-- [Wifi/WLANScanMode](#wifi-wlanscanmode)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
+-   [Camera/AllowCamera](#camera-allowcamera)
+-   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
+-   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)
+-   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)
+-   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+-   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+-   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
 -   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
@@ -5382,39 +5357,92 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+-   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+-   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+-   [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
+-   [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
+-   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)
+-   [Wifi/AllowWiFi](#wifi-allowwifi)
+-   [Wifi/WLANScanMode](#wifi-wlanscanmode)
+<!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotcore"></a>Policies supported by Windows 10 IoT Enterprise
+
+-   [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
+-   [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
+-   [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
+-   [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
+-   [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
+-   [InternetExplorer/DisableWebAddressAutoComplete](#internetexplorer-disablewebaddressautocomplete)
+-   [InternetExplorer/NewTabDefaultPage](#internetexplorer-newtabdefaultpage)
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](#deliveryoptimization-docachehost)
+-   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](#deliveryoptimization-dodelayforegrounddownloadfromhttp)
+-   [DeliveryOptimization/DODelayCacheServerFallbackBackground](#deliveryoptimization-dodelaycacheserverfallbackbackground)
+-   [DeliveryOptimization/DODelayCacheServerFallbackForeground](#deliveryoptimization-dodelaycacheserverfallbackforeground)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOGroupIdSource](#deliveryoptimization-dogroupidsource)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload](#deliveryoptimization-dominbatterypercentageallowedtoupload)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+-   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
+-   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+-   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
+-   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
+-   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
+-   [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
 
 <!--EndIoTCoreEnterprise-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
--   [Browser/AllowBrowser](#browser-allowbrowser)  
--   [Camera/AllowCamera](#camera-allowcamera)  
--   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
--   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
--   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
--   [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
-<!--EndEAS-->
+- [Browser/AllowBrowser](#browser-allowbrowser)  
+- [Camera/AllowCamera](#camera-allowcamera)  
+- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+- [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+- [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+- [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+- [System/AllowStorageCard](#system-allowstoragecard)  
+- [System/TelemetryProxy](#system-telemetryproxy)  
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
+  <!--EndEAS-->
 
 ## Examples
 

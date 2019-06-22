@@ -1,8 +1,11 @@
 ---
 title: How to Install and Configure the MED-V Server Component
 description: How to Install and Configure the MED-V Server Component
-author: jamiejdt
+author: dansimp
 ms.assetid: 2d3c5b15-df2c-4ab6-bf78-f47ef8ae7418
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,10 +48,10 @@ This section explains how to [install](#bkmk-howtoinstallthemedvserver) and [con
 
 6.  When the **InstallShield Wizard Completed** screen appears, click **Finish** to complete the wizard.
 
-**Note**  
+**Note**  
 If you are installing the MED-V server via Microsoft Remote Desktop, use the following syntax: **mstsc/admin**. Ensure that your RDP session is directed to the console.
 
- 
+
 
 ## <a href="" id="bkmk-howtoconfigurethemedvserver"></a>How to Configure the MED-V Server
 
@@ -69,32 +72,34 @@ The following server settings can be configured:
 
 1.  On the Windows Start menu, select **All Programs &gt; MED-V &gt; MED-V Server Configuration Manager**.
 
-    **Note**  
+    **Note**  
     Note: If you selected the **Launch MED-V Server Configuration Manager** check box during the server installation, the MED-V server configuration manager starts automatically after the server installation is complete.
 
-     
 
-    The MED-V Server Configuration Manager appears.
 
-2.  On the **Connections** tab, configure the following client connections settings:
+~~~
+The MED-V Server Configuration Manager appears.
+~~~
 
-    -   **Enable unencrypted connections (http), using port**—Select this check box to enable unencrypted connections using a specified port. In the port box, enter the server port on which to accept unencrypted connections (http).
+2. On the **Connections** tab, configure the following client connections settings:
 
-    -   **Enable encrypted connections (https), using port**—Select this check box to enable encrypted connections using a specified port. In the port box, enter the server port on which to accept encrypted connections (https).
+   -   **Enable unencrypted connections (http), using port**—Select this check box to enable unencrypted connections using a specified port. In the port box, enter the server port on which to accept unencrypted connections (http).
 
-        Https is an optional configuration which can be set to ensure secure transactions between the MED-V server and MED-V clients. To configure https, you must perform the following procedures:
+   -   **Enable encrypted connections (https), using port**—Select this check box to enable encrypted connections using a specified port. In the port box, enter the server port on which to accept encrypted connections (https).
 
-        -   Configure a certificate on the server.
+       Https is an optional configuration which can be set to ensure secure transactions between the MED-V server and MED-V clients. To configure https, you must perform the following procedures:
 
-        -   Associate the server certificate with the port specified using netsh. For information, see the following:
+       -   Configure a certificate on the server.
 
-            -   [Netsh Commands for Hypertext Transfer Protocol (HTTP)](https://go.microsoft.com/fwlink/?LinkId=183314)
+       -   Associate the server certificate with the port specified using netsh. For information, see the following:
 
-            -   [How to: Configure a Port with an SSL Certificate](https://go.microsoft.com/fwlink/?LinkID=183315)
+           -   [Netsh Commands for Hypertext Transfer Protocol (HTTP)](https://go.microsoft.com/fwlink/?LinkId=183314)
 
-            -   [How to: Configure a Port with an SSL Certificate](https://msdn.microsoft.com/library/ms733791.aspx)
+           -   [How to: Configure a Port with an SSL Certificate](https://go.microsoft.com/fwlink/?LinkID=183315)
 
-3.  Click **OK**.
+           -   [How to: Configure a Port with an SSL Certificate](https://msdn.microsoft.com/library/ms733791.aspx)
+
+3. Click **OK**.
 
 ### <a href="" id="bkmk-configuringimages"></a>Configuring Images
 
@@ -148,10 +153,10 @@ The following server settings can be configured:
 
         `Data Source=<ServerName>;Initial Catalog=<DBName>;uid=sa;pwd=<Password>;`
 
-        **Note**  
+        **Note**  
         Note: To connect to SQL Express, use: `Data Source=<ServerName>\sqlexpress.`
 
-         
+
 
 4.  To create the database, click **Create Database**.
 
@@ -182,9 +187,9 @@ The following server settings can be configured:
 
 [Design the MED-V Server Infrastructure](design-the-med-v-server-infrastructure.md)
 
- 
 
- 
+
+
 
 
 

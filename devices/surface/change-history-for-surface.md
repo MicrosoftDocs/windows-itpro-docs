@@ -1,11 +1,13 @@
 ---
 title: Change history for Surface documentation (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics in the Surface documentation library.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -13,10 +15,18 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## June 2019
+
+New or changed topic | Description
+--- | ---
+
+[Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md) | New
+
 ## March 2019
 
 New or changed topic | Description
 --- | ---
+
 [Surface System SKU reference](surface-system-sku-reference.md) | New
 
 

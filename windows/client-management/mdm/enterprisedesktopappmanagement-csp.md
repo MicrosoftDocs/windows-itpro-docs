@@ -2,11 +2,13 @@
 title: EnterpriseDesktopAppManagement CSP
 description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/11/2017
 ---
 
@@ -27,7 +29,7 @@ The root node for the EnterpriseDesktopAppManagement configuration service provi
 <a href="" id="msi"></a>**MSI**
 Node for all settings.
 
-<a href="" id="msi-productid"></a>**MSI/****_ProductID_**
+<a href="" id="msi-productid"></a>**MSI/**<strong>*ProductID*</strong>
 The MSI product code for the application.
 
 <a href="" id="msi-productid-version"></a>**MSI/*ProductID*/Version**
@@ -84,7 +86,7 @@ Status of the application. Value type is string. Supported operation is Get.
 | Enforcement Failed        | 60    |
 | Enforcement Completed     | 70    |
 
- 
+ 
 
 <a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**
 The last error code during the application installation process. This is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this could be the result of executing MSIExec.exe or the error result from an API that failed.
@@ -134,7 +136,7 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response. |
 | LocURI | Path to Win32 CSP command processor.                                                                                          |
 
- 
+ 
 
 **SyncML to perform MSI operations for application uninstall**
 
@@ -162,7 +164,7 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                                                                                       |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.                                                          |
 
- 
+ 
 
 **SyncML to perform MSI operations for application status reporting**
 
@@ -190,7 +192,7 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                              |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting. |
 
- 
+ 
 
 **SyncML to perform MSI install operations for an application targeted to a specific user on the device. The Add command is required to preceed the Exec command.**
 
@@ -280,11 +282,11 @@ The following table describes the fields in the previous sample:
 </tbody>
 </table>
 
- 
+ 
 
 > **Note**  Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at <https://technet.microsoft.com/library/cc759262(v=ws.10).aspx>.
 
- 
+ 
 
 **SyncML to perform MSI install operations for an application targeted to all users on the device (per-device installation)**
 
@@ -405,7 +407,7 @@ The following table MsiInstallJob describes the schema elements.
 </tbody>
 </table>
 
- 
+ 
 
 Here is an example of a common response to a request
 
@@ -477,7 +479,7 @@ For Intune standalone environment, the MSI package will determine the MSI execut
 </tbody>
 </table>
 
- 
+ 
 
 The following table applies to SCCM hybrid environment.
 
@@ -518,7 +520,7 @@ The following table applies to SCCM hybrid environment.
 </tbody>
 </table>
 
- 
+ 
 
 ## How to determine the package type from the MSI package
 
@@ -556,9 +558,9 @@ Here's a list of references:
 </Alert>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

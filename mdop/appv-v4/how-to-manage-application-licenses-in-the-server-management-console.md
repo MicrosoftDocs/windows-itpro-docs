@@ -1,8 +1,11 @@
 ---
 title: How to Manage Application Licenses in the Server Management Console
 description: How to Manage Application Licenses in the Server Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 48503b04-0de7-48de-98ee-4623a712a341
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ The Application Virtualization Server Management Console is the interface you us
 **Important**  
 If the App-V client Application Source Root (ASR) setting is configured to use any type of streaming source other than the Management Server, for example a Streaming Server, an IIS server, or a File server, then the Management Server is unable to enforce its licensing policy.
 
- 
+ 
 
 ## In This Section
 
@@ -50,9 +53,9 @@ Provides a procedure for creating a new unlimited license group, allowing specif
 
 [How to Perform Administrative Tasks in the Application Virtualization Server Management Console](how-to-perform-administrative-tasks-in-the-application-virtualization-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

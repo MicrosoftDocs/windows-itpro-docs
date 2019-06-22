@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4697(S): A service was installed in the system.
@@ -111,11 +114,11 @@ This event generates when new service was installed in the system.
 | 0x2   | ​File System Driver       | ​A file system driver, which is also a Kernel device driver.                                                                                                                                  |
 | 0x8   | ​Recognizer Driver        | ​A file system driver used during startup to determine the file systems present on the system.                                                                                                |
 | 0x10  | ​Win32 Own Process        | ​A Win32 program that can be started by the Service Controller and that obeys the service control protocol. This type of Win32 service runs in a process by itself (this is the most common). |
-| 0x20  | ​Win32 Share Process      | ​A Win32 service that can share a process with other Win32 services.<br>(see: <http://msdn.microsoft.com/library/windows/desktop/ms685967(v=vs.85).aspx>                          |
-| 0x110 | ​Interactive Own Process  | ​A service that should be run as a standalone process and can communicate with the desktop.<br>(see: <http://msdn.microsoft.com/library/windows/desktop/ms683502(v=vs.85).aspx>)  |
+| 0x20  | ​Win32 Share Process      | ​A Win32 service that can share a process with other Win32 services.<br>(see: <https://msdn.microsoft.com/library/windows/desktop/ms685967(v=vs.85).aspx>                          |
+| 0x110 | ​Interactive Own Process  | ​A service that should be run as a standalone process and can communicate with the desktop.<br>(see: <https://msdn.microsoft.com/library/windows/desktop/ms683502(v=vs.85).aspx>)  |
 | 0x120 | Interactive Share Process | A service that can share address space with other services of the same type and can communicate with the desktop.                                                                             |
 
--   **Service Start Type** \[Type = HexInt32\]: The service start type can have one of the following values (see: <http://msdn.microsoft.com/library/windows/desktop/ms682450(v=vs.85).aspx)>:
+-   **Service Start Type** \[Type = HexInt32\]: The service start type can have one of the following values (see: <https://msdn.microsoft.com/library/windows/desktop/ms682450(v=vs.85).aspx)>:
 
 | Value | Service Type        | Description                                                                                                                                             |
 |-------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

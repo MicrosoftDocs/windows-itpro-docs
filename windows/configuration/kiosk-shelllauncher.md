@@ -2,11 +2,14 @@
 title: Use Shell Launcher to create a Windows 10 kiosk (Windows 10)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -42,7 +45,7 @@ Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new e
 In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
 - You can use a custom Windows desktop application that can then launch UWP apps, such as **Settings** and **Touch Keyboard**.
 - From a custom UWP shell, you can launch secondary views and run on multiple monitors.
-- The custom shell app runs in full screen, and and can run other apps in full screen on user’s demand.
+- The custom shell app runs in full screen, and can run other apps in full screen on user’s demand.
 
 For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2).
 
@@ -107,7 +110,7 @@ The following XML sample works for **Shell Launcher v1**:
 </ShellLauncherConfiguration>
 ``` 
 
-For **Shell Launcher v2**, you will use a different schema reference and a different app type for `Shell`, as shown in the following example.
+For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying the v2 namespace, and use `v2:AppType` to specify the type, as shown in the following example. If `v2:AppType` is not specified, it implies the shell is Win32 app.
 
 ```
 <?xml version="1.0" encoding="utf-8"?> 
@@ -135,7 +138,7 @@ In your MDM service, you can create a [custom OMA-URI setting](https://docs.micr
 
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
-For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)` instead. 
+For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)`. 
 
 ![Screenshot of custom OMA-URI settings](images/slv2-oma-uri.png)
 
@@ -278,4 +281,28 @@ $ShellLauncherClass.SetEnabled($FALSE)
 $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
+```
+
+## default action, custom action, exit code
+Shell launcher defines 4 actions to handle app exits, you can customize shell launcher and use these actions based on different exit code.
+
+Value|Description
+--- | ---
+0|Restart the shell
+1|Restart the device
+2|Shut down the device
+3|Do nothing
+
+These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
+
+To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommeded to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+``` xml
+<ReturnCodeActions>
+    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+    <ReturnCodeAction ReturnCode="1" Action="DoNothing"/>
+</ReturnCodeActions>
+<DefaultAction Action="RestartDevice"/>
+
 ```

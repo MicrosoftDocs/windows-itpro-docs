@@ -4,10 +4,12 @@ description: Additional settings to control the behavior of Windows Update (WU) 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greg-lindsay
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -153,7 +155,9 @@ If you disable or do not configure this policy, Windows Update will include upda
 
 Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
 
-When enabling this setting through Group Policy, under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
+#### Configuring Automatic Updates by using Group Policy
+
+Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
 
 **2 - Notify for download and auto install** -  When Windows finds updates that apply to this device, users will be notified that updates are ready to be downloaded. After going to **Settings > Update & security > Windows Update**, users can download and install any available updates.
 
@@ -167,7 +171,85 @@ If this setting is set to *Disabled*, any updates that are available on Windows 
 
 If this setting is set to *Not Configured*, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
 
+#### Configuring Automatic Updates by editing the registry
 
+> ![Note]
+> Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require you to reinstall the operating system. Microsoft cannot guarantee that these problems can be resolved. Modify the registry at your own risk.
+
+In an environment that does not have Active Directory deployed, you can edit registry settings to configure group policies for Automatic Update.
+
+To do this, follow these steps:
+
+1. Select **Start**, search for "regedit", and then open Registry Editor.
+
+2. Open the following registry key:
+
+   ```
+   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+   ```
+
+3. Add one of the following registry values to configure Automatic Update.
+
+   * NoAutoUpdate (REG_DWORD):
+     
+     * **0**: Automatic Updates is enabled (default).
+    
+     * **1**: Automatic Updates is disabled.
+     
+   * AUOptions (REG_DWORD):
+   
+     * **1**: Keep my computer up to date is disabled in Automatic Updates.
+     
+     * **2**: Notify of download and installation.
+     
+     * **3**: Automatically download and notify of installation.
+     
+     * **4**: Automatically download and scheduled installation.
+
+    * ScheduledInstallDay (REG_DWORD):
+      
+      * **0**: Every day.
+      
+      * **1** through **7**: The days of the week from Sunday (1) to Saturday (7).
+      
+    * ScheduledInstallTime (REG_DWORD):
+    
+      **n**, where **n** equals the time of day in a 24-hour format (0-23).
+      
+    * UseWUServer (REG_DWORD)
+    
+      Set this value to **1** to configure Automatic Updates to use a server that is running Software Update Services instead of Windows Update.
+      
+    * RescheduleWaitTime (REG_DWORD)
+    
+      **m**, where **m** equals the time period to wait between the time Automatic Updates starts and the time that it begins installations where the scheduled times have passed. The time is set in minutes from 1 to 60, representing 1 minute to 60 minutes)
+      
+      > ![Note]
+      > This setting only affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
+      
+    * NoAutoRebootWithLoggedOnUsers (REG_DWORD):
+    
+      **0** (false) or **1** (true). If set to **1**, Automatic Updates does not automatically restart a computer while users are logged on.
+      
+      > ![Note]
+      > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
+
+To use Automatic Updates with a server that is running Software Update Services, see the Deploying Microsoft Windows Server Update Services 2.0 guidance.
+
+When you configure Automatic Updates directly by using the policy registry keys, the policy overrides the preferences that are set by the local administrative user to configure the client. If an administrator removes the registry keys at a later date, the preferences that were set by the local administrative user are used again.
+
+To determine the WSUS server that the client computers and servers connect to for updates, add the following registry values to the registry:
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
+```
+
+* WUServer (REG_SZ)
+
+  This value sets the WSUS server by HTTP name (for example, http://IntranetSUS).
+
+*  WUStatusServer (REG_SZ)
+
+   This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
 ## Related topics
 

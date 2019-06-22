@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the MBAM Client to Desktop or Laptop Computers
 description: How to Deploy the MBAM Client to Desktop or Laptop Computers
-author: jamiejdt
+author: dansimp
 ms.assetid: 3a7639e0-468e-4496-8be2-ed29b8e07c53
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -33,7 +36,7 @@ Before you start the MBAM Client deployment, review the [MBAM 2.5 Supported Conf
     **Important**  
     The MBAM Client does not start BitLocker Drive Encryption actions if a remote desktop protocol connection is active. All remote console connections must be closed and a user must be logged on to a physical console session before BitLocker Drive Encryption begins.
 
-     
+     
 
 
 ## Related topics
@@ -41,7 +44,7 @@ Before you start the MBAM Client deployment, review the [MBAM 2.5 Supported Conf
 
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

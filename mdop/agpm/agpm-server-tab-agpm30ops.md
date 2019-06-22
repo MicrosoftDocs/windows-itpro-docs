@@ -1,8 +1,11 @@
 ---
 title: AGPM Server Tab
 description: AGPM Server Tab
-author: jamiejdt
+author: mjcaparas
 ms.assetid: fb3b0265-53ed-4bf6-88a4-c409f5f1bed4
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -33,7 +36,7 @@ The maximum number of unique versions to store for each GPO does not include the
 
 When a GPO version is deleted, a record of that version remains in the history of the GPO, but the GPO version itself is deleted from the archive. You can prevent a GPO version from being deleted by marking it in the history as not deletable.
 
- 
+ 
 
 ### Additional references
 
@@ -43,9 +46,9 @@ When a GPO version is deleted, a record of that version remains in the history o
 
 -   [Performing Reviewer Tasks](performing-reviewer-tasks-agpm30ops.md)
 
- 
+ 
 
- 
+ 
 
 
 

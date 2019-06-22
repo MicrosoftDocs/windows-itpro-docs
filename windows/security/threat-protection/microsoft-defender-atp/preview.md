@@ -28,7 +28,7 @@ The Microsoft Defender ATP service is constantly being updated to include new fe
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
-For more information on capabilities that are generally available or in preview, see [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md).
+For more information on new capabilities that are generally available, see [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md).
 
 ## Turn on preview features
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
@@ -42,7 +42,11 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Live response](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/live-response)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
+- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2008 R2 SP1.
+
+- [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
+
+- [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 

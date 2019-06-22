@@ -1,17 +1,19 @@
 ---
-title: Differences between Surface Hub and Windows 10 Enterprise
-description: This topic explains the differences between Windows 10 Team and Windows 10 Enterprise.
+title: Operating system essentials (Surface Hub)
+description: This topic explains unique aspects of the Windows 10 Team operating system and how it differs from Windows 10 Enterprise.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
-author: isaiahng
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 06/20/2019
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ---
 
-# Differences between Surface Hub and Windows 10 Enterprise
+# Operating system essentials (Surface Hub)
 
 The Surface Hub operating system, Windows 10 Team, is based on Windows 10 Enterprise, providing rich support for enterprise management, security, and other features. However, there are important differences between them. While the Enterprise edition is designed for PCs, Windows 10 Team is designed from the ground up for large screens and meeting rooms. When you evaluate security and management requirements for Surface Hub, it's best to consider it as a new operating system. This article is designed to help highlight the key differences between Windows 10 Team on Surface Hub and Windows 10 Enterprise, and what the differences mean for your organization.
 

@@ -1,8 +1,11 @@
 ---
 title: Configuring UE-V with Group Policy Objects
 description: Configuring UE-V with Group Policy Objects
-author: jamiejdt
+author: levinec
 ms.assetid: 5c9be706-a05f-4397-9a38-e6b73ebff1e5
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,13 +45,13 @@ The following policy settings can be configured for UE-V:
 <td align="left"><p>Settings storage path</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This policy setting configures where the user settings will be stored.</p></td>
-<td align="left"><p>Provide a Universal Naming Convention (UNC) path and variables such as \\Server\SettingsShare\%username%.</p></td>
+<td align="left"><p>Provide a Universal Naming Convention (UNC) path and variables such as \Server\SettingsShare%username%.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings template catalog path</p></td>
 <td align="left"><p>Computers Only</p></td>
 <td align="left"><p>This policy setting configures where custom settings location templates are stored. This policy setting also configures whether the catalog will be used to replace the default Microsoft templates that are installed with the UE-V agent.</p></td>
-<td align="left"><p>Provide a Universal Naming Convention (UNC) path such as \\Server\TemplateShare or a folder location on the computer.</p>
+<td align="left"><p>Provide a Universal Naming Convention (UNC) path such as \Server\TemplateShare or a folder location on the computer.</p>
 <p></p>
 <p>Select the check box to replace the default Microsoft templates.</p></td>
 </tr>
@@ -92,7 +95,7 @@ The following policy settings can be configured for UE-V:
 </tbody>
 </table>
 
- 
+ 
 
 **To configure computer-targeted policies**
 
@@ -125,9 +128,9 @@ The UE-V agent uses the following order of precedence to determine synchronizati
 
 [Operations for UE-V 1.0](operations-for-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

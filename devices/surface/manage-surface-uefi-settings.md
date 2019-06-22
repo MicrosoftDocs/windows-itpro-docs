@@ -7,13 +7,15 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices, surface
-author: miladCA
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
-#Manage Surface UEFI settings
+# Manage Surface UEFI settings
 
 Current and future generations of Surface devices, including Surface Pro 4, Surface Book, and Surface Studio, use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
 
@@ -22,7 +24,7 @@ Current and future generations of Surface devices, including Surface Pro 4, Surf
 
 You can enter the Surface UEFI settings on your Surface device by pressing the **Volume Up** button and the **Power** button simultaneously. Hold the **Volume Up** button until the Surface logo is displayed, which indicates that the device has begun to boot. 
 
-##PC information 
+## PC information 
 
 On the **PC information** page, detailed information about your Surface device is provided: 
 
@@ -50,7 +52,7 @@ You will also find detailed information about the firmware of your Surface devic
 
 You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history) for your device. 
 
-##Security 
+## Security 
 
 On the **Security** page of Surface UEFI settings, you can set a password to protect UEFI settings. This password must be entered when you boot the Surface device to UEFI. The password can contain the following characters (as shown in Figure 2): 
 
@@ -80,7 +82,7 @@ You can also enable or disable the Trusted Platform Module (TPM) device on the *
 
 *Figure 4. Configure Surface UEFI security settings*
 
-##Devices 
+## Devices 
 
 On the **Devices** page you can enable or disable specific devices and components of your Surface device. Devices that you can enable or disable on this page include: 
 
@@ -104,7 +106,7 @@ Each device is listed with a slider button that you can move to **On** (enabled)
 
 *Figure 5. Enable and disable specific devices*
 
-##Boot configuration 
+## Boot configuration 
 
 On the **Boot Configuration** page, you can change the order of your boot devices and/or enable or disable boot of the following devices: 
 
@@ -126,7 +128,7 @@ For the specified boot order to take effect, you must set the **Enable Alternate
 
 You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE Network Boot** option, for example when performing a Windows deployment using PXE where the PXE server is configured for IPv4 only.  
 
-##About 
+## About 
 
 The **About** page displays regulatory information, such as compliance with FCC rules, as shown in Figure 7. 
 
@@ -134,7 +136,7 @@ The **About** page displays regulatory information, such as compliance with FCC 
 
 *Figure 7. Regulatory information displayed on the About page*
 
-##Exit 
+## Exit 
 
 Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 8. 
 

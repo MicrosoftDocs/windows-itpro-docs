@@ -2,12 +2,14 @@
 title: Administer AppLocker (Windows 10)
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,14 +27,14 @@ This topic for IT professionals provides links to specific procedures to use whe
 
 AppLocker helps administrators control how users can access and use files, such as executable files, packaged apps, scripts, Windows Installer files, and DLLs. Using AppLocker, you can:
 
--   Define rules based on file attributes derived from the digital signature, including the publisher, product name, file name, and file version. For example, you can create rules based on the publisher attribute that is persistent through updates, or you can create rules for a specific version of a file.
--   Assign a rule to a security group or an individual user.
--   Create exceptions to rules. For example, you can create a rule that allows all Windows processes to run, except Registry Editor (regedit.exe).
--   Use audit-only mode to deploy the policy and understand its impact before enforcing it.
--   Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, the existing policy is overwritten.
--   Simplify creating and managing AppLocker rules by using AppLocker PowerShell cmdlets.
-> **Note**  For more info about enhanced capabilities of AppLocker to control Windows apps, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
- 
+- Define rules based on file attributes derived from the digital signature, including the publisher, product name, file name, and file version. For example, you can create rules based on the publisher attribute that is persistent through updates, or you can create rules for a specific version of a file.
+- Assign a rule to a security group or an individual user.
+- Create exceptions to rules. For example, you can create a rule that allows all Windows processes to run, except Registry Editor (regedit.exe).
+- Use audit-only mode to deploy the policy and understand its impact before enforcing it.
+- Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, the existing policy is overwritten.
+- Simplify creating and managing AppLocker rules by using AppLocker PowerShell cmdlets.
+  > **Note**  For more info about enhanced capabilities of AppLocker to control Windows apps, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
+ 
 ## In this section
 
 | Topic | Description |

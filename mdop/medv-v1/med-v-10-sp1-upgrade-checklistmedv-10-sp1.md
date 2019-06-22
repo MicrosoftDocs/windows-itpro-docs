@@ -1,8 +1,11 @@
 ---
 title: MED-V 1.0 SP1 Upgrade Checklist
 description: MED-V 1.0 SP1 Upgrade Checklist
-author: jamiejdt
+author: dansimp
 ms.assetid: 1a462b37-8c7a-4826-9175-0b1b701d345b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,16 +45,16 @@ To upgrade Microsoft Enterprise Desktop Virtualization (MED-V) 1.0 to MED-V 1.
 **Note**  
 If the server configuration has been changed from the default, the files might be stored in a different location.
 
- 
+ 
 
 ## Client Upgrade
 
 
 To upgrade the MED-V 1.0 client to MED-V 1.0 SP1, install the .msp file on a MED-V 1.0 client. The client and MED-V are automatically upgraded.
 
- 
+ 
 
- 
+ 
 
 
 

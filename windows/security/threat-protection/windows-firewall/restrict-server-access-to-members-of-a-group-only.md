@@ -2,12 +2,14 @@
 title: Restrict Server Access to Members of a Group Only (Windows 10)
 description: Restrict Server Access to Members of a Group Only
 ms.assetid: ea51c55b-e1ed-44b4-82e3-3c4287a8628b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

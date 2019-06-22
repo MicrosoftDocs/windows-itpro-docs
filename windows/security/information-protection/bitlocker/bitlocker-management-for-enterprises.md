@@ -6,13 +6,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019 
+ms.reviewer: 
 ---
 
 # BitLocker Management for Enterprises
@@ -20,6 +21,10 @@ ms.date: 02/28/2019
 The ideal for BitLocker management is to eliminate the need for IT admins to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, Secure Boot, and other hardware improvements, for example, has helped to alleviate the support burden on the helpdesk, and we are seeing a consequent decrease in support call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1. 
 
 Though much Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for different types of computers.
+
+
+>[!IMPORTANT]
+> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities will be offered from [SCCM in on-prem scenarios](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/viewing-mbam-25-reports-for-the-configuration-manager-integration-topology) in the future.
 
 ## Managing domain-joined computers and moving to cloud  
 
@@ -45,7 +50,7 @@ For Windows PCs and Windows Phones that enroll using **Connect to work or school
 
 ##  Managing servers
 
-Servers are often installed, configured, and deployed using PowerShell, so the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#a-href-idbkmk-blcmdletsabitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server, so follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC. 
+Servers are often installed, configured, and deployed using PowerShell, so the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server, so follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC. 
 
 The Minimal Server Interface is a prerequisite for some of the BitLocker administration tools. On a [Server Core](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-core) installation, you must add the necessary GUI components first. The steps to add shell components to Server Core are described in [Using Features on Demand with Updated Systems and Patched Images](https://blogs.technet.microsoft.com/server_core/2012/11/05/using-features-on-demand-with-updated-systems-and-patched-images/) and [How to update local source media to add roles and features](https://blogs.technet.microsoft.com/joscon/2012/11/14/how-to-update-local-source-media-to-add-roles-and-features/).  
 
@@ -131,9 +136,11 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 
 <br />
 
-<a id="powershell"></a>
-**Powershell**
 
-[BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#a-href-idbkmk-blcmdletsabitlocker-cmdlets-for-windows-powershell) 
+
+<a id="powershell"></a>
+# **PowerShell**
+
+[BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell) 
 
 [Surface Pro Specifications](https://www.microsoft.com/surface/support/surface-pro-specs)

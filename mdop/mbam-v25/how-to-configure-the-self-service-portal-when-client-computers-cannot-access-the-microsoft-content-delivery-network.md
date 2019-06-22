@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Self-Service Portal When Client Computers Cannot Access the Microsoft Content Delivery Network
 description: How to Configure the Self-Service Portal When Client Computers Cannot Access the Microsoft Content Delivery Network
-author: jamiejdt
+author: dansimp
 ms.assetid: 90ee76db-9876-41b5-994a-118556d5ed3b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,38 +26,38 @@ Your client computers need access to the CDN, which gives the Self-Service Porta
 **Note**  
 In MBAM 2.5 SP1, the JavaScript files are included in the product, and you do not need to follow the instructions in this section to configure the SSP to support clients that cannot access the internet.
 
- 
+ 
 
 **How to configure the Self-Service Portal when client computers cannot access the CDN**
 
-1.  Download the following JavaScript files from the CDN:
+1. Download the following JavaScript files from the CDN:
 
-    -   [jQuery-1.10.2.min.js](https://go.microsoft.com/fwlink/?LinkID=390515)
+   -   [jQuery-1.10.2.min.js](https://go.microsoft.com/fwlink/?LinkID=390515)
 
-    -   [jQuery.validate.min.js](https://go.microsoft.com/fwlink/?LinkID=390516)
+   -   [jQuery.validate.min.js](https://go.microsoft.com/fwlink/?LinkID=390516)
 
-    -   [jQuery.validate.unobtrusive.min.js](https://go.microsoft.com/fwlink/?LinkID=390517)
+   -   [jQuery.validate.unobtrusive.min.js](https://go.microsoft.com/fwlink/?LinkID=390517)
 
-2.  Copy the JavaScript files to the **Scripts** directory of the Self-Service Portal. This directory is located in *&lt;MBAM Self-Service Install Directory&gt;\\*Self Service Website\\Scripts.
+2. Copy the JavaScript files to the **Scripts** directory of the Self-Service Portal. This directory is located in <em>&lt;MBAM Self-Service Install Directory&gt;\\</em>Self Service Website\\Scripts.
 
-3.  Open Internet Information Services (IIS) Manager.
+3. Open Internet Information Services (IIS) Manager.
 
-4.  Expand **Sites** &gt; **Microsoft BitLocker Administration and Monitoring**, and highlight **SelfService**.
+4. Expand **Sites** &gt; **Microsoft BitLocker Administration and Monitoring**, and highlight **SelfService**.
 
-    **Note**  
-    *SelfService* is the default virtual directory name. If you chose a different name for this directory during the configuration, remember to replace *SelfService* in these instructions with the name you chose.
+   **Note**  
+   *SelfService* is the default virtual directory name. If you chose a different name for this directory during the configuration, remember to replace *SelfService* in these instructions with the name you chose.
 
-     
+     
 
-5.  In the middle pane, double-click **Application Settings**.
+5. In the middle pane, double-click **Application Settings**.
 
-6.  For each item in the following list, edit the application settings to reference the new location by replacing /&lt;*virtual directory*&gt;/ with /SelfService/ (or whatever name you chose during configuration). For example, the virtual directory path will be similar to /selfservice/Scripts/ jQuery-1.10.2.min.js.
+6. For each item in the following list, edit the application settings to reference the new location by replacing /&lt;*virtual directory*&gt;/ with /SelfService/ (or whatever name you chose during configuration). For example, the virtual directory path will be similar to /selfservice/Scripts/ jQuery-1.10.2.min.js.
 
-    -   jQueryPath: /&lt;*virtual directory*&gt;/Scripts/jQuery-1.10.2.min.js
+   -   jQueryPath: /&lt;*virtual directory*&gt;/Scripts/jQuery-1.10.2.min.js
 
-    -   jQueryValidatePath: /&lt;*virtual directory*&gt;/Scripts/jQuery.validate.min.js
+   -   jQueryValidatePath: /&lt;*virtual directory*&gt;/Scripts/jQuery.validate.min.js
 
-    -   jQueryValidateUnobtrusivePath: /&lt;*virtual directory*&gt;/Scripts/jQuery.validate.unobtrusive.min.js
+   -   jQueryValidateUnobtrusivePath: /&lt;*virtual directory*&gt;/Scripts/jQuery.validate.unobtrusive.min.js
 
 
 
@@ -63,7 +66,7 @@ In MBAM 2.5 SP1, the JavaScript files are included in the product, and you do no
 
 [How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

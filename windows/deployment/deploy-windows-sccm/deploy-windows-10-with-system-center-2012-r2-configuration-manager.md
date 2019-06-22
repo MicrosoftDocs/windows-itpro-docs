@@ -2,13 +2,15 @@
 title: Deploy Windows 10 with System Center 2012 R2 Configuration Manager (Windows 10)
 description: If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10.
 ms.assetid: eacd7b7b-dde0-423d-97cd-29bde9e8b363
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, custom, boot
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

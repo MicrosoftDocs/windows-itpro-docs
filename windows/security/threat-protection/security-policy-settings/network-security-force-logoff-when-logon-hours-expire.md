@@ -2,12 +2,14 @@
 title: Network security Force logoff when logon hours expire (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network security Force logoff when logon hours expire security policy setting.
 ms.assetid: 64d5dde4-58e4-4217-b2c4-73bd554ec926
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -60,7 +62,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled| 
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

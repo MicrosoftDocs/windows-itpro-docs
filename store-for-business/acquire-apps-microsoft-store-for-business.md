@@ -8,6 +8,8 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---
@@ -36,7 +38,7 @@ There are a couple of things we need to know when you pay for apps. You can add 
 ## Allow users to shop
 
 **Allow users to shop** controls the shopping experience in Microsoft Store for Education. When this setting is on, **Purchasers** and **Basic Purchasers** can purchase products and services from Microsoft Store for Education. If your school chooses to closely control how purchases are made, admins can turn off **Allow users to shop**. When the setting is off:
-- The shopping experience is not availalbe 
+- The shopping experience is not available 
 - **Purchasers** and **Basic Purchasers** can't purchase products and services from Microsoft Store for Education
 - Admins can't assign shopping roles to users
 - Products and services previously purchased by **Basic Purchasers** can be managed by admins. 

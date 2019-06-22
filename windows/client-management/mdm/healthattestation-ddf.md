@@ -2,11 +2,13 @@
 title: HealthAttestation DDF
 description: HealthAttestation DDF
 ms.assetid: D20AC78D-D2D4-434B-B9FD-294BCD9D1DDE
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

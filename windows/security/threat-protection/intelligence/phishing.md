@@ -1,12 +1,13 @@
 ---
 title: Phishing
+ms.reviewer: 
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
+ms.author: levinec
 author: levinec
 manager: dansimp
 audience: ITPro
@@ -135,7 +136,7 @@ Send an email with the phishing scam to **The Anti-Phishing Working Group**: rep
 
 ## Where to find more information about phishing attacks
 
-For information on the latest Phishing attacks, techniques, and trends, you can read these entries on the [Windows Security blog](https://cloudblogs.microsoft.com/microsoftsecure/?product=windows,windows-defender-advanced-threat-protection):
+For information on the latest phishing attacks, techniques, and trends, you can read these entries on the [Microsoft Security blog](https://www.microsoft.com/security/blog/product/windows/):
 
 * [Phishers unleash simple but effective social engineering techniques using PDF attachments](https://cloudblogs.microsoft.com/microsoftsecure/2017/01/26/phishers-unleash-simple-but-effective-social-engineering-techniques-using-pdf-attachments/?source=mmpc)
 

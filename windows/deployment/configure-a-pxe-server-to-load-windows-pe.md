@@ -8,7 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ---
 

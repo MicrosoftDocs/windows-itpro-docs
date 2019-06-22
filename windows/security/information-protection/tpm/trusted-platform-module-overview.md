@@ -2,13 +2,14 @@
 title: Trusted Platform Module Technology Overview (Windows 10)
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 ms.assetid: face8932-b034-4319-86ac-db1163d46538
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms-author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -88,11 +89,11 @@ Some things that you can check on the device are:
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
 - [Details on the TPM standard](https://www.microsoft.com/en-us/research/project/the-trusted-platform-module-tpm/) (has links to features using TPM)
-- [TPM Base Services Portal](https://docs.microsoft.com/en-us/windows/desktop/TBS/tpm-base-services-portal)
-- [TPM Base Services API](https://docs.microsoft.com/en-us/windows/desktop/api/_tbs/)
+- [TPM Base Services Portal](https://docs.microsoft.com/windows/desktop/TBS/tpm-base-services-portal)
+- [TPM Base Services API](https://docs.microsoft.com/windows/desktop/api/_tbs/)
 - [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
-- [Azure device provisioning: Identity attestation with TPM](https://azure.microsoft.com/en-us/blog/device-provisioning-identity-attestation-with-tpm/)
-- [Azure device provisioning: A manufacturing timeline for TPM devices](https://azure.microsoft.com/en-us/blog/device-provisioning-a-manufacturing-timeline-for-tpm-devices/)
+- [Azure device provisioning: Identity attestation with TPM](https://azure.microsoft.com/blog/device-provisioning-identity-attestation-with-tpm/)
+- [Azure device provisioning: A manufacturing timeline for TPM devices](https://azure.microsoft.com/blog/device-provisioning-a-manufacturing-timeline-for-tpm-devices/)
 - [Windows 10: Enabling vTPM (Virtual TPM)](https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx)
 - [How to Multiboot with Bitlocker, TPM, and a Non-Windows OS](https://social.technet.microsoft.com/wiki/contents/articles/9528.how-to-multiboot-with-bitlocker-tpm-and-a-non-windows-os.aspx)

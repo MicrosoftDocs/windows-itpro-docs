@@ -2,12 +2,14 @@
 title: Force shutdown from a remote system (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Force shutdown from a remote system security policy setting.
 ms.assetid: 63129243-31ea-42a4-a598-c7064f48a3df
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,7 +57,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators<br/>Server Operators| 
 | Member Server Effective Default Settings | Administrators| 
 | Client Computer Effective Default Settings | Administrators| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

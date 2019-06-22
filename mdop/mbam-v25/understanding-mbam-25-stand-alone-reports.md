@@ -1,8 +1,11 @@
 ---
 title: Understanding MBAM 2.5 Stand-alone Reports
 description: Understanding MBAM 2.5 Stand-alone Reports
-author: jamiejdt
+author: dansimp
 ms.assetid: 78b5aaf4-8257-4722-8eb9-e0de48db6a11
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,10 +19,10 @@ ms.date: 06/16/2016
 
 This topic describes the reports that are available when you are running Microsoft BitLocker Administration and Monitoring (MBAM) in the Stand-alone topology.
 
-**Note**  
+**Note**  
 If you are running MBAM with the Configuration Manager Integration topology, you generate reports from Configuration Manager rather than from MBAM. See [Viewing MBAM 2.5 Reports for the Configuration Manager Integration Topology](viewing-mbam-25-reports-for-the-configuration-manager-integration-topology.md) for more information about these reports.
 
- 
+
 
 ## Understanding the MBAM Stand-alone topology reports
 
@@ -91,7 +94,7 @@ Use this report type to collect information about overall BitLocker compliance i
 </tbody>
 </table>
 
- 
+
 
 **Enterprise Compliance Computer Details**
 
@@ -134,7 +137,7 @@ Use this report type to collect information about overall BitLocker compliance i
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-compliance"></a>Computer Compliance Report
 
@@ -142,10 +145,10 @@ Use this report type to collect information that is specific to a computer or us
 
 View this report by clicking the computer name in the Enterprise Compliance Report, or by typing the computer name in the Computer Compliance Report. This report shows detailed encryption information about each drive (operating system and fixed data drives) on a computer. It also indicates the policy that is applied to each drive type on the computer. To view the details of each drive, expand the Computer Name entry.
 
-**Note**  
+**Note**  
 Removable Data Volume encryption status is not shown in this report.
 
- 
+
 
 **Computer Compliance Report Fields**
 
@@ -225,7 +228,7 @@ Removable Data Volume encryption status is not shown in this report.
 </tbody>
 </table>
 
- 
+
 
 **Computer Compliance Report Drive Fields**
 
@@ -276,7 +279,7 @@ Removable Data Volume encryption status is not shown in this report.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-recovery"></a>Recovery Audit Report
 
@@ -312,12 +315,11 @@ Use this report type to audit users who have requested access to BitLocker recov
 <td align="left"><p>Helpdesk User</p></td>
 <td align="left"><p>Help Desk user who initiated the request for key retrieval.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If an Advanced Helpdesk User recovers the key without specifying the end user, the <strong>End User</strong> field will be blank. A standard Helpdesk User must specify the end user, and that user will appear in this field.</p>
+<strong>Note</strong><br/><p>If an Advanced Helpdesk User recovers the key without specifying the end user, the <strong>End User</strong> field will be blank. A standard Helpdesk User must specify the end user, and that user will appear in this field.</p>
 <p>A recovery via the Self-Service Portal will list the requesting end user both in this field and in the <strong>End User</strong> field.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -359,12 +361,12 @@ Use this report type to audit users who have requested access to BitLocker recov
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 Report results can be saved to a file by clicking the **Export** button on the **Reports** menu bar.
 
- 
+
 
 
 ## Related topics
@@ -374,11 +376,11 @@ Report results can be saved to a file by clicking the **Export** button on the *
 
 [Generating MBAM 2.5 Stand-alone Reports](generating-mbam-25-stand-alone-reports.md)
 
- 
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

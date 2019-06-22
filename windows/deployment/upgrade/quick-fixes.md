@@ -1,5 +1,8 @@
 ---
 title: Quick fixes - Windows IT Pro
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
@@ -7,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 05/03/2018
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -30,18 +32,18 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 ## List of fixes
 
 <ol>
-<li>Remove nonessential external hardware, such as docks and USB devices. [More information](#remove-external-hardware).</li>
-<li>Check the system drive for errors and attempt repairs. [More information](#repair-the-system-drive).</li>
-<li>Run the Windows Update troubleshooter. [More information](#windows-update-troubleshooter).</li>
-<li>Attempt to restore and repair system files. [More information](#repair-system-files).</li>
-<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. [More information](#update-windows).</li>
+<li>Remove nonessential external hardware, such as docks and USB devices. <a href="#remove-external-hardware" data-raw-source="[More information](#remove-external-hardware)">More information</a>.</li>
+<li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
+<li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
+<li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
+<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
-  [More information](#uninstall-non-microsoft-antivirus-software).</li>
+  <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
 
-<li>Uninstall all nonessential software. [More information](#uninstall-non-essential-software).</li>
-<li>Update firmware and drivers. [More information](#update-firmware-and-drivers)</li>
-<li>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. [More information](#ensure-that-download-and-install-updates-is-selected).</li>
-<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. [More information](#verify-disk-space).</li>
+<li>Uninstall all nonessential software. <a href="#uninstall-non-essential-software" data-raw-source="[More information](#uninstall-non-essential-software)">More information</a>.</li>
+<li>Update firmware and drivers. <a href="#update-firmware-and-drivers" data-raw-source="[More information](#update-firmware-and-drivers)">More information</a></li>
+<li>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. <a href="#ensure-that-download-and-install-updates-is-selected" data-raw-source="[More information](#ensure-that-download-and-install-updates-is-selected)">More information</a>.</li>
+<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. <a href="#verify-disk-space" data-raw-source="[More information](#verify-disk-space)">More information</a>.</li>
 </ol>
 
 ## Step by step instructions

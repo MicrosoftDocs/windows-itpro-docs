@@ -1,8 +1,11 @@
 ---
 title: Recovering Computers Using DaRT 8.0
 description: Recovering Computers Using DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 0caeb7d9-c1e6-4f32-bc27-157b91630989
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -31,7 +34,7 @@ Whichever method that you use to boot into DaRT, you must enable the boot device
 **Note**  
 Configuring the BIOS is unique, depending on the kind of hard disk drive, network adapters, and other hardware that is used in your organization.
 
- 
+ 
 
 ## Recover a local computer by using the DaRT recovery image
 
@@ -48,7 +51,7 @@ The Remote Connection feature in DaRT lets an IT administrator run the DaRT tool
 **Important**  
 The two computers establishing a remote connection must be part of the same network.
 
- 
+ 
 
 The **Diagnostics and Recovery Toolset** window includes the option to run DaRT on an end-user computer remotely from an administrator computer. The end user opens the DaRT tools on the problem computer and starts the remote session by clicking **Remote Connection**.
 
@@ -63,9 +66,9 @@ The IT administrator or help desk worker enters this information into the **DaRT
 
 [Operations for DaRT 8.0](operations-for-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

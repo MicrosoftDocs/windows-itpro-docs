@@ -2,12 +2,14 @@
 title: Open Windows Defender Firewall with Advanced Security (Windows 10)
 description: Open Windows Defender Firewall with Advanced Security
 ms.assetid: 788faff2-0f50-4e43-91f2-3e2595c0b6a1
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -26,12 +28,6 @@ This procedure shows you how to open the Windows Defender Firewall with Advanced
 **Administrative credentials**
 
 To complete this procedure, you must be a member of the Administrators group. For more information, see Additional considerations.
-
-## Opening Windows Defender Firewall 
-
--   [Using the Windows interface](#to-open-windows-firewall-with-advanced-security-using-the-ui)
-
--   [Using a command line](#to-open-windows-firewall-with-advanced-security-from-a-command-prompt)
 
 ## To open Windows Defender Firewall using the UI
 

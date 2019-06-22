@@ -1,5 +1,8 @@
 ---
 title: Log files - Windows IT Pro
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
@@ -7,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 03/30/2018
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -82,9 +84,9 @@ See the following example:
 
 <ol>
 <LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
-<LI>Based on the [extend code](upgrade-error-codes.md#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+<LI>Based on the <a href="upgrade-error-codes.md#extend-codes" data-raw-source="[extend code](upgrade-error-codes.md#extend-codes)">extend code</a> portion of the error code, determine the type and location of a <a href="#log-files" data-raw-source="[log files](#log-files)">log files</a> to investigate.
 <LI>Open the log file in a text editor, such as notepad.
-<LI>Using the [result code](upgrade-error-codes.md#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+<LI>Using the <a href="upgrade-error-codes.md#result-codes" data-raw-source="[result code](upgrade-error-codes.md#result-codes)">result code</a> portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the &quot;abort&quot; and abandoning&quot; text strings described in step 7 below.
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.

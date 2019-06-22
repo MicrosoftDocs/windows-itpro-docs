@@ -2,11 +2,13 @@
 title: AssignedAccess DDF
 description: AssignedAccess DDF
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 02/22/2018
 ---
 
@@ -22,7 +24,7 @@ You can download the DDF files from the links below:
 
 The XML below is for Windows 10, version 1803.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

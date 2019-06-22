@@ -1,8 +1,11 @@
 ---
 title: Windows Virtual PC Application Exclude List
 description: Windows Virtual PC Application Exclude List
-author: jamiejdt
+author: levinec
 ms.assetid: 7715f198-f5ed-421e-8740-0cec2ca4ece3
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -48,7 +51,7 @@ Windows Virtual PC includes a feature known as the "Exclude List" that lets you 
         **Important**  
         If applicable, remove the quotation marks from the full path when you enter it into the value data field.
 
-         
+         
 
 5.  Close Registry Editor and restart the MED-V workspace virtual machine.
 
@@ -63,9 +66,9 @@ You can also republish an excluded application to the host **Start** menu by del
 
 [How to Publish and Unpublish an Application on the MED-V Workspace](how-to-publish-and-unpublish-an-application-on-the-med-v-workspace.md)
 
- 
+ 
 
- 
+ 
 
 
 

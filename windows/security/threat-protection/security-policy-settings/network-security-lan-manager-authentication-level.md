@@ -2,12 +2,14 @@
 title: Network security LAN Manager authentication level (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network security LAN Manager authentication level security policy setting.
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,7 +57,7 @@ authentication level that servers accept. The following table identifies the pol
 | Send NTLMv2 response only | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 3| 
 | Send NTLMv2 response only. Refuse LM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM authentication, and they will accept only NTLM and NTLMv2 authentication.| 4| 
 | Send NTLMv2 response only. Refuse LM &amp; NTLM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM and NTLM authentication, and they will accept only NTLMv2 authentication.| 5| 
- 
+ 
 ### Best practices
 
 -   Best practices are dependent on your specific security and authentication requirements.
@@ -80,7 +82,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Send NTLMv2 response only| 
 | Member Server Effective Default Settings | Send NTLMv2 response only| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

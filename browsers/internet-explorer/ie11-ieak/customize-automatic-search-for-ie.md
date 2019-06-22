@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Customize Automatic Search using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -21,13 +24,13 @@ You can customize Automatic Search so that your employees can type a single word
 
 **To set up Automatic Search**
 
-1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: https://ieautosearch/response.asp?MT=%1&srch=%2.<p>
-For info about the acceptable values for the *%1* and *%2* parameters, see the [Automatic Search parameters](#automatic-search-parameters). For an example of the script file, see the [Sample Automatic Search script](#sample-automatic-search-script).<p>
-**Important**<br>If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. 
+1. Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: https://ieautosearch/response.asp?MT=%1&srch=%2.<p>
+   For info about the acceptable values for the *%1* and *%2* parameters, see the [Automatic Search parameters](#automatic-search-parameters). For an example of the script file, see the [Sample Automatic Search script](#sample-automatic-search-script).<p>
+   **Important**<br>If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. 
 
-2.  On the **Additional Settings** page of the IEAK 11, click **Internet Settings**, and then click **Advanced Settings**.
+2. On the **Additional Settings** page of the IEAK 11, click **Internet Settings**, and then click **Advanced Settings**.
 
-3.  Go to the section labeled **Searching** and type *intranet* into the **Search Provider Keyword** box.
+3. Go to the section labeled **Searching** and type *intranet* into the **Search Provider Keyword** box.
 
 **To redirect to a different site than the one provided by the search results**
 
@@ -90,9 +93,9 @@ end if
 %>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

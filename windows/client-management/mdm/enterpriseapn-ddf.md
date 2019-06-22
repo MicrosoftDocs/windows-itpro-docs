@@ -2,11 +2,13 @@
 title: EnterpriseAPN DDF
 description: EnterpriseAPN DDF
 ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 
@@ -20,11 +22,11 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 The content below are the different versions of the DDF for this CSP.
 
 
--   [EnterpriseAPN CSP version 1.0 DDF](#enterpriseapn-csp-version-1-0-ddf)
--   [EnterpriseAPN CSP version 1.1 DDF](#enterpriseapn-csp-version-1-1-ddf)
--   [EnterpriseAPN CSP version 1.2 DDF](#enterpriseapn-csp-version-1-2-ddf)
+-   [EnterpriseAPN CSP version 1.0 DDF](#enterpriseapn-csp-version-10-ddf)
+-   [EnterpriseAPN CSP version 1.1 DDF](#enterpriseapn-csp-version-11-ddf)
+-   [EnterpriseAPN CSP version 1.2 DDF](#enterpriseapn-csp-version-12-ddf)
 
-### EnterpriseAPN CSP version 1.0 DDF
+### <a id="enterpriseapn-csp-version-1-0-ddf" />EnterpriseAPN CSP version 1.0 DDF
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -312,7 +314,7 @@ The content below are the different versions of the DDF for this CSP.
 </MgmtTree>
 ```
 
-### EnterpriseAPN CSP version 1.1 DDF
+### <a id="enterpriseapn-csp-version-1-1-ddf" />EnterpriseAPN CSP version 1.1 DDF
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -737,7 +739,7 @@ The content below are the different versions of the DDF for this CSP.
 </MgmtTree>
 ```
 
-### EnterpriseAPN CSP version 1.2 DDF
+### <a id="enterpriseapn-csp-version-1-2-ddf" />EnterpriseAPN CSP version 1.2 DDF
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>

@@ -2,11 +2,13 @@
 title: ICSPNode SetProperty
 description: ICSPNode SetProperty
 ms.assetid: e235c38f-ea04-4cd8-adec-3c6c0ce7172d
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -47,7 +49,7 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
+ 
 
 
 

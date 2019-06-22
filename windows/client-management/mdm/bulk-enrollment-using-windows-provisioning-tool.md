@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.bulk\_enrollment'
 - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
 ms.assetid: DEB98FF3-CC5C-47A1-9277-9EF939716C87
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 
@@ -30,12 +32,12 @@ On the desktop, you can create an Active Directory account, such as "enrollment@
 
 On the desktop and mobile devices, you can use an enrollment certificate or enrollment username and password, such as "enroll@contoso.com" and "enrollmentpassword." These credentials are used in the provisioning package, which you can use to enroll multiple devices to the MDM service. Once the devices are joined, many users can use them.
 
->[!NOTE]  
+> [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
 > -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.
 
- 
+ 
 
 ## What you need
 
@@ -51,27 +53,27 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 Using the ICD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
 
-1.  Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
-2.  Click **Advanced Provisioning**.
+1. Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Click **Advanced Provisioning**.
 
-    ![icd start page](images/bulk-enrollment7.png)
-3.  Enter a project name and click **Next**.
-4.  Select **All Windows editions**, since Provisioning CSP is common to all Windows 10 editions, then click **Next**.
-5.  Skip **Import a provisioning package (optional)** and click **Finish**.
-6.  Expand **Runtime settings** &gt; **Workplace**.
-7.  Click **Enrollments**, enter a value in **UPN**, and then click **Add**.
-    The UPN is a unique identifier for the enrollment. For bulk enrollment, this must be a service account that is allowed to enroll multiple users, such as "enrollment@contoso.com".
-8.  On the left navigation pane, expand the **UPN** and then enter the information for the rest of the settings for enrollment process.
-    Here is the list of available settings:
-    -   **AuthPolicy** - Select **OnPremise**.
-    -   **DiscoveryServiceFullUrl** - specify the full URL for the discovery service.
-    -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
-    -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
-    -   **Secret** - Password
-    For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
-    Here is the screenshot of the ICD at this point.
-    ![bulk enrollment screenshot](images/bulk-enrollment.png)
-9.  Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
+   ![icd start page](images/bulk-enrollment7.png)
+3. Enter a project name and click **Next**.
+4. Select **All Windows editions**, since Provisioning CSP is common to all Windows 10 editions, then click **Next**.
+5. Skip **Import a provisioning package (optional)** and click **Finish**.
+6. Expand **Runtime settings** &gt; **Workplace**.
+7. Click **Enrollments**, enter a value in **UPN**, and then click **Add**.
+   The UPN is a unique identifier for the enrollment. For bulk enrollment, this must be a service account that is allowed to enroll multiple users, such as "enrollment@contoso.com".
+8. On the left navigation pane, expand the **UPN** and then enter the information for the rest of the settings for enrollment process.
+   Here is the list of available settings:
+   -   **AuthPolicy** - Select **OnPremise**.
+   -   **DiscoveryServiceFullUrl** - specify the full URL for the discovery service.
+   -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
+   -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
+   -   **Secret** - Password
+   For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
+   Here is the screenshot of the ICD at this point.
+   ![bulk enrollment screenshot](images/bulk-enrollment.png)
+9. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 10. When you are done adding all the settings, on the **File** menu, click **Save**.
 11. On the main menu click **Export** &gt; **Provisioning package**.
 
@@ -91,34 +93,34 @@ Using the ICD, create a provisioning package using the enrollment information re
 
 Using the ICD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
 
-1.  Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
-2.  Click **Advanced Provisioning**.
-3.  Enter a project name and click **Next**.
-4.  Select **Common to all Windows editions**, since Provisioning CSP is common to all Windows 10 editions.
-5.  Skip **Import a provisioning package (optional)** and click **Finish**.
-6.  Specify the certificate.
-    1.  Go to **Runtime settings** &gt; **Certificates** &gt; **ClientCertificates**.
-    2.  Enter a **CertificateName** and then click **Add**.
-    3.  Enter the **CertificatePasword**.
-    4.  For **CertificatePath**, browse and select the certificate to be used.
-    5.  Set **ExportCertificate** to False.
-    6.  For **KeyLocation**, select **Software only**.
+1. Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Click **Advanced Provisioning**.
+3. Enter a project name and click **Next**.
+4. Select **Common to all Windows editions**, since Provisioning CSP is common to all Windows 10 editions.
+5. Skip **Import a provisioning package (optional)** and click **Finish**.
+6. Specify the certificate.
+   1.  Go to **Runtime settings** &gt; **Certificates** &gt; **ClientCertificates**.
+   2.  Enter a **CertificateName** and then click **Add**.
+   3.  Enter the **CertificatePasword**.
+   4.  For **CertificatePath**, browse and select the certificate to be used.
+   5.  Set **ExportCertificate** to False.
+   6.  For **KeyLocation**, select **Software only**.
 
-    ![icd certificates section](images/bulk-enrollment8.png)
-7.  Specify the workplace settings.
-    1.  Got to **Workplace** &gt; **Enrollments**.
-    2.  Enter the **UPN** for the enrollment and then click **Add**.
-        The UPN is a unique identifier for the enrollment. For bulk enrollment, this must be a service account that is allowed to enroll multiple users, such as "enrollment@contoso.com".
-    3.  On the left column, expand the **UPN** and then enter the information for the rest of the settings for enrollment process.
-        Here is the list of available settings:
-        -   **AuthPolicy** - Select **Certificate**.
-        -   **DiscoveryServiceFullUrl** - specify the full URL for the discovery service.
-        -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
-        -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
-        -   **Secret** - the certificate thumbprint.
-        For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
-8.  Configure the other settings, such as the Wi-Fi connection so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
-9.  When you are done adding all the settings, on the **File** menu, click **Save**.
+   ![icd certificates section](images/bulk-enrollment8.png)
+7. Specify the workplace settings.
+   1. Got to **Workplace** &gt; **Enrollments**.
+   2. Enter the **UPN** for the enrollment and then click **Add**.
+      The UPN is a unique identifier for the enrollment. For bulk enrollment, this must be a service account that is allowed to enroll multiple users, such as "enrollment@contoso.com".
+   3. On the left column, expand the **UPN** and then enter the information for the rest of the settings for enrollment process.
+      Here is the list of available settings:
+      -   **AuthPolicy** - Select **Certificate**.
+      -   **DiscoveryServiceFullUrl** - specify the full URL for the discovery service.
+      -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
+      -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
+      -   **Secret** - the certificate thumbprint.
+      For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
+8. Configure the other settings, such as the Wi-Fi connection so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
+9. When you are done adding all the settings, on the **File** menu, click **Save**.
 10. Export and build the package (steps 10-13 in the procedure above).
 11. Apply the package to some test devices and verify that they work. For more information, see [Apply a provisioning package](#apply-a-provisioning-package).
 12. Apply the package to your devices.
@@ -161,7 +163,7 @@ Here are links to step-by-step provisioning topics in Technet.
 -   [Provision PCs with apps and certificates for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-with-apps-and-certificates)
 -   [Provision PCs with common settings for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment)
 
- 
+ 
 
 
 

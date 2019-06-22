@@ -2,11 +2,13 @@
 title: WiFi DDF file
 description: WiFi DDF file
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/28/2018
 ---
 
@@ -102,7 +104,7 @@ The XML below is for Windows 10, version 1809.
             </AccessType>
             <Description>
               XML describing the network configuration and follows Windows WLAN_profile schema.
-              Link to schema: http://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx
+              Link to schema: https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx
             </Description>
             <DFFormat>
               <chr />

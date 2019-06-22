@@ -13,12 +13,14 @@ ms.localizationpriority: high
 ---
 # Windows 10 release information
 
-Feature updates for Windows 10 are released twice a year, targeting March and September, via the Semi-Annual Channel (SAC) and will be serviced with monthly quality updates for 18 months from the date of the release. We recommend that you begin deployment of each SAC release immediately to devices selected for early adoption and ramp up to full deployment at your discretion. This will enable you to gain access to new features, experiences, and integrated security as soon as possible.
+Feature updates for Windows 10 are released twice a year, around March and September, via the Semi-Annual Channel and will be serviced with monthly quality updates for 18 months from the date of the release.
 
-Starting with Windows 10, version 1809, feature updates for Windows 10 Enterprise and Education editions with a targeted release month of September will be serviced for 30 months from their release date. For information about servicing timelines, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).
+We recommend that you begin deployment of each Semi-Annual Channel release immediately as a targeted deployment to devices selected for early adoption and ramp up to full deployment at your discretion. This will enable you to gain access to new features, experiences, and integrated security as soon as possible.
+
+Starting with Windows 10, version 1809, feature updates for Windows 10 Enterprise and Education editions are serviced for 30 months from their release date. For information about servicing timelines, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).
 
 >[!NOTE]
->If you are not using Windows Update for Business today, the "Semi-Annual Channel (Targeted)" servicing option has no impact on when your devices will be updated. It merely reflects a milestone for the semi-annual release, the period of time during which Microsoft recommends that your IT team make the release available to specific, "targeted" devices for the purpose of validating and generating data in order to get to a broad deployment decision. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+>Beginning with Windows 10, version 1903, this page will no longer list Semi-Annual Channel (Targeted) information for version 1903 and future feature updates. Instead, you will find a single entry for each Semi-Annual Channel release. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
 
 
 <div class="m-rich-content-block" data-grid="col-12">

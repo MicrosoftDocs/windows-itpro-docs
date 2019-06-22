@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - DataProtection
 description: Policy CSP - DataProtection
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - DataProtection
@@ -121,7 +123,7 @@ The following list shows the supported values:
 > [!IMPORTANT]
 > This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
- 
+ 
 Setting used by Windows 8.1 Selective Wipe.
 
 > [!NOTE]
@@ -143,6 +145,6 @@ Footnote:
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>DataProtection policies supported by IoT Core  
 
--   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-<!--EndIoTCore-->
+- [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+  <!--EndIoTCore-->
 

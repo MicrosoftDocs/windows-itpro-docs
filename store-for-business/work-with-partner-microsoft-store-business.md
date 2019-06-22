@@ -10,6 +10,8 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 10/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with solution providers in Microsoft Store for Business

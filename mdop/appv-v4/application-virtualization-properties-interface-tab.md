@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Properties Interface Tab
 description: Application Virtualization Properties Interface Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: bb9cb54e-315a-48bf-a396-b33e2cbd030a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

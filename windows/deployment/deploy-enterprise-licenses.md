@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
+ms.reviewer: 
+manager: laurawi
+ms.author: greg-lindsay
 description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enterprise E3 or E5 Subscription Activation, or for Windows 10 Enterprise E3 in CSP
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -7,17 +10,13 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 05/25/2018
 author: greg-lindsay
 ms.topic: article
 ---
 
 # Deploy Windows 10 Enterprise licenses
 
->[!IMPORTANT]
->Office 365 Enterprise E3 and Office 365 Enterprise E5 include a Windows 10 Enterprise license. This article is about the use and implementation of these licenses in a on-premises Active Directory environment.
-
-This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
+This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
 >[!NOTE]
 >* Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.
@@ -38,11 +37,11 @@ If the device has a firmware-embedded activation key, it will be displayed in th
 
 If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
 
-1.	Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
--  **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
-- **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
-2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
-3.	The admin can now assign subscription licenses to users.
+1. Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
+2. **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
+3. **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
+4. After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
+5. The admin can now assign subscription licenses to users.
 
 >Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
 
@@ -162,7 +161,7 @@ Now the device is Azure AD joined to the company’s subscription.
 
 <span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
-**Figure 7a - Windows 10 Pro activation in Settings** 
+<strong>Figure 7a - Windows 10 Pro activation in Settings</strong> 
 
 Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only).
 
@@ -187,7 +186,7 @@ You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &g
 
 If there are any problems with the Windows 10 Enterprise E3 or E5 license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
->[!NOTE] 
+>[!NOTE]
 >If you use slmgr /dli or /dlv commands to retrieve the activation information for the Windows 10 E3 or E5 license, the license information displayed will be the following:
 >Name: Windows(R), Professional edition
 >Description: Windows(R) Operating System, RETAIL channel
@@ -220,17 +219,17 @@ Use the following figures to help you troubleshoot when users experience these c
 
 <span id="win-10-not-activated"/>
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" />
-**Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings**
+<strong>Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings</strong>
 
 
 <span id="subscription-not-active"/>
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" />
-**Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings**
+<strong>Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 
 <span id="win-10-not-activated-subscription-not-active"/>
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" />
-**Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings**
+<strong>Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 
 ### Review requirements on devices

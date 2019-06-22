@@ -1,8 +1,11 @@
 ---
 title: Performing BitLocker Management with MBAM
 description: Performing BitLocker Management with MBAM
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 2d24390a-87bf-48b3-96a9-3882d6f2a15c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
