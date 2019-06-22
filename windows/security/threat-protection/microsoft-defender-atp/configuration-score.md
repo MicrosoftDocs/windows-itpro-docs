@@ -24,7 +24,7 @@ ms.date: 04/11/2019
 [!include[Prerelease information](prerelease.md)]
 
 >[!NOTE]
->  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection) page.
+>  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
 
 The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over your organization's security posture based on security best practices.
 
