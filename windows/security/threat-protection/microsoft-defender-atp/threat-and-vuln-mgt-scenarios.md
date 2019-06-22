@@ -65,7 +65,7 @@ To lower down your threat and vulnerability exposure:
    > There are two types of recommendations: 
    > - <i>Security update</i> which refers to recommendations that require a package installation
    > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
-   > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png).  
+   > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
    
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It shows the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  ![details in security recommendations page](images/tvm_security_recommendations_page.png)
 
@@ -151,7 +151,8 @@ When an exception is created for a recommendation, the recommendation is no long
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
-- [Security recommendations](tvm-security-recommendations.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+
