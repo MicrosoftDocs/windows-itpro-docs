@@ -411,7 +411,7 @@ The following table MsiInstallJob describes the schema elements.
 
 Here is an example of a common response to a request
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <SyncML>
   <SyncHdr />
