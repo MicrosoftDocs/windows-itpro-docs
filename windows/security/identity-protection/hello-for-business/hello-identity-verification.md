@@ -26,7 +26,7 @@ Windows Hello addresses the following problems with passwords:
 -   Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 -   Server breaches can expose symmetric network credentials (passwords).
 -   Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
--   Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
+-   Users can inadvertently expose their passwords due to [phishing attacks](https://www.tripwire.com/state-of-security/security-awareness/6-common-phishing-attacks-and-how-to-protect-against-them/).
 
 >[!div class="mx-tdBreakAll"]
 >| | | |
