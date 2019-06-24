@@ -340,7 +340,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <Arguments />
            <WorkingDirectory />
            <AppuserModelId>Microsoft.Office.MSACCESS.EXE.16</AppUserModelId>
-           <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
+           <AppUserModelExcludeFromShowInNewInstall>true</AppUserModelExcludeFromShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
            <ApplicationId>[{AppVPackageRoot}]\office16\MSACCESS.EXE</ApplicationId>
