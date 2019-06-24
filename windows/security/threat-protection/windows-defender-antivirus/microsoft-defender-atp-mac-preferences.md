@@ -142,7 +142,7 @@ Type of the threat for which the behavior is configured.
 | **Domain** | com.microsoft.wdav |
 | **Key** | key |
 | **Data type** | String |
-| **Possible values** | potentially_unwanted_application |
+| **Possible values** | potentially_unwanted_application <br/> archive_bomb |
 
 ##### Action to take
 
@@ -209,7 +209,9 @@ To get started, we recommend the following configuration profile for your enterp
 
 The following configuration profile will:
 - Enable real time protection (RTP)
-- Enable the blocking of potentially unwanted applications (PUA), which by default are in *audit* (non-blocking) mode
+- Specify how the following threat types are handled:
+  - **Potentially unwanted applications (PUA)** are blocked
+  - **Archive bombs** (file with a very high compression rate) are audited to the product logs
 - Enable cloud delivered protection
 - Enable automatic sample submission
 
@@ -229,6 +231,12 @@ The following configuration profile will:
                 <string>potentially_unwanted_application</string>
                 <key>value</key>
                 <string>block</string>
+            </dict>
+            <dict>
+                <key>key</key>
+                <string>archive_bomb</string>
+                <key>value</key>
+                <string>audit</string>
             </dict>
         </array>
     </dict>
@@ -292,6 +300,12 @@ The following configuration profile contains entries for all of the settings des
                 <string>potentially_unwanted_application</string>
                 <key>value</key>
                 <string>block</string>
+            </dict>
+            <dict>
+                <key>key</key>
+                <string>archive_bomb</string>
+                <key>value</key>
+                <string>audit</string>
             </dict>
         </array>
     </dict>
