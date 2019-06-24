@@ -215,7 +215,7 @@ The following configuration profile will:
 - Enable cloud delivered protection
 - Enable automatic sample submission
 
-```xml
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -255,7 +255,7 @@ The following configuration profile will:
 
 The following configuration profile contains entries for all of the settings described in this document and can be used for more advanced scenarios where you want more control over the product.
 
-```xml
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
