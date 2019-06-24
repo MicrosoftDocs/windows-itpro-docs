@@ -65,7 +65,7 @@ Entities that have been excluded from scanning. Exclusions can be specified by f
 
 **Type of exclusion**
 
-Specifies the type of the excluded content.
+Specifies the type of content excluded from scanning.
 
 |||
 |:---|:---|
