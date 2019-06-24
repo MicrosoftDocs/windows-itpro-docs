@@ -63,7 +63,7 @@ Entities that have been excluded from scanning. Exclusions can be specified by f
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-##### Type of exclusion
+**Type of exclusion**
 
 Specifies the type of the excluded content.
 
@@ -74,7 +74,7 @@ Specifies the type of the excluded content.
 | **Data type** | String |
 | **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
-##### Path to excluded content
+**Path to excluded content**
 
 Used to exclude content from scanning by full file path.
 
@@ -86,7 +86,7 @@ Used to exclude content from scanning by full file path.
 | **Possible values** | valid paths |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-##### Path type (file / directory)
+**Path type (file / directory)**
 
 Indicates if the *path* property refers to a file or directory. 
 
@@ -98,7 +98,7 @@ Indicates if the *path* property refers to a file or directory.
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-##### File extension excluded from scanning
+**File extension excluded from scanning**
 
 Used to exclude content from scanning by file extension.
 
@@ -110,7 +110,7 @@ Used to exclude content from scanning by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-##### Name of excluded content
+**Name of excluded content**
 
 Used to exclude content from scanning by file name.
 
@@ -133,7 +133,7 @@ The *threatTypeSettings* preference in the antivirus engine is used to control h
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-##### Threat type
+**Threat type**
 
 Type of the threat for which the behavior is configured.
 
@@ -144,7 +144,7 @@ Type of the threat for which the behavior is configured.
 | **Data type** | String |
 | **Possible values** | potentially_unwanted_application <br/> archive_bomb |
 
-##### Action to take
+**Action to take**
 
 Action to take when encountering a threat of the the type being configured. Can be:
 
@@ -215,7 +215,7 @@ The following configuration profile will:
 - Enable cloud delivered protection
 - Enable automatic sample submission
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -255,7 +255,7 @@ The following configuration profile will:
 
 The following configuration profile contains entries for all of the settings described in this document and can be used for more advanced scenarios where you want more control over the product.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
