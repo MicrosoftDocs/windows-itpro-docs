@@ -455,7 +455,7 @@ The following section contains lists with information about Microsoft documentat
 
 About NGEN technology
 
--   [How to speed up NGEN optimaztion](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
+-   [How to speed up NGEN optimization](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
 -   [Script](https://aka.ms/DrainNGenQueue)
 
