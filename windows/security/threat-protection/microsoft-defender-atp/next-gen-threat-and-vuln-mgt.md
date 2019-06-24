@@ -30,7 +30,7 @@ It helps organizations discover vulnerabilities and misconfigurations in real-ti
 ## Next-generation capabilities 
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
-It is the first solution in the industry to bridge the gap between Security Administion and IT Administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
+It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
 
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
@@ -63,7 +63,7 @@ Microsoft Defender ATP’s Threat & Vulnerability Management allows security adm
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Security recommendations](tvm-security-recommendations.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
