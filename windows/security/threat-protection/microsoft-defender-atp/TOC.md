@@ -4,6 +4,7 @@
 ### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
 #### [Configuration score](configuration-score.md)
+#### [Security recommendation](tvm-security-recommendation.md)
 #### [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
