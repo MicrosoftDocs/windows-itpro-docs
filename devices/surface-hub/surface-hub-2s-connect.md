@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -20,7 +21,7 @@ Surface Hub 2S lets you connect external devices, mirror the display on Surface 
 You can display content from your devices to Surface Hub 2S. If the source device is Windows-based, that device can also provide TouchBack and InkBack, which takes video and audio from the connected device and presents them on Surface Hub 2S. If Surface Hub 2S encounters a High-Bandwidth Digital Content Protection (HDCP) signal, such as a Blu-ray DVD player, the source is displayed as a black image.
 
 > [!NOTE]
-> Surface Hub-2S uses the video input selected until a new connection is made, the existing connection is disrupted, or the Connect App is closed.
+> Surface Hub 2S uses the video input selected until a new connection is made, the existing connection is disrupted, or the Connect App is closed.
 
 ## Recommended wired configurations for connecting to Surface Hub 2S
 
@@ -28,7 +29,7 @@ In general, it’s recommended to use native cable connections whenever possible
 
 |**Mode**|**Connection**|**Functionality**|**Comments**|
 |:---- |:---------- |:------------ |:-------- |
-| Wired “Connect” Application | USB-C (via compute module) | Video, audio, TouchBack/InkBack into Surface Hub 2S.| Provides display port video, audio, and TouchBack/InkBack on a single cable. |
+| Wired “Connect” Application | USB-C (via compute module) | Video, audio, TouchBack/InkBack into Surface Hub 2S.| Provides video, audio, and TouchBack/InkBack on a single cable. |
 | | HDMI + USB-C | HDMI-in for Audio/Video <br> USB-C for TouchBack/InkBack | USB-C supports TouchBack/InkBack with the  HDMI A/V connection <br> <br>Use USB-C to USB-A to connect to legacy computers <br> <br> *NOTE: For best results, connect HDMI before connecting USB-C cable. If the computer you are using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable.* |
 | “Source” selection experience <br> (bypasses the OS, full screen requires source selection with keypad button) | USB-C (port in compute module) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> Touchback/InkBack not supported <br> HDCP enabled |
 | | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V <br> TouchBack/InkBack not supported <br> HDCP enabled |
