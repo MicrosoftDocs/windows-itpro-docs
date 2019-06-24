@@ -45,6 +45,11 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
 
+## Browser requirements
+- Internet Explorer 11 and Microsoft Edge are supported. 
+- The latest versions of Safari, Chrome, and Firefox are supported.
+- Any HTML5 compliant browsers are also supported.
+
 ## Hardware and software requirements
 ### Supported Windows versions
 - Windows 7 SP1 Enterprise
@@ -146,8 +151,7 @@ For more information on additional proxy configuration settings see, [Configure 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 
-## Browser requirements
-Internet Explorer and Microsoft Edge is supported. Any HTML5 compliant browsers are also supported.
+
 
 
 ## Windows Defender Antivirus configuration requirement
