@@ -76,7 +76,7 @@ Specifies the type of the excluded content.
 
 ##### Path to excluded content
 
-Path to file or directory that should be exluded from scanning.
+Used to exclude content from scanning by full file path.
 
 |||
 |:---|:---|
@@ -98,9 +98,9 @@ Indicates if the *path* property refers to a file or directory.
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-##### Extension excluded from scanning
+##### File extension excluded from scanning
 
-Extension of files that should be excluded from scanning.
+Used to exclude content from scanning by file extension.
 
 |||
 |:---|:---|
@@ -112,7 +112,7 @@ Extension of files that should be excluded from scanning.
 
 ##### Name of excluded content
 
-Name of file that should be excluded from scanning.
+Used to exclude content from scanning by file name.
 
 |||
 |:---|:---|
@@ -148,9 +148,9 @@ Type of the threat for which the behavior is configured.
 
 Action to take when encountering a threat of the the type being configured. Can be:
 
-- *Audit*: adds an entry to the log about the threat, but does not report it to the user interface or the security console
-- *Block*: reports the threat to the user interface and the security console and blocks the execution of the threat if real-time protection is turned on
-- *Off*: does not block the threat or report it
+- **Audit**: adds an entry to the log about the threat, but does not report it to the user interface or the security console
+- **Block**: reports the threat to the user interface and the security console and protects the device against this type of threat
+- **Off**: does not block the threat and does not report it to the log or security console
 
 |||
 |:---|:---|
@@ -194,7 +194,7 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. We'll prompt users if the file we need is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. We'll prompt users if the file being submitted is likely to contain personal information.
 
 |||
 |:---|:---|
@@ -314,10 +314,10 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 ### JAMF deployment
 
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings** and create a new entry with *com.microsoft.wdav* as the preference domain and upload the .plist with the settings.
+From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings** and create a new entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced using the steps described earlier in this document.
 
 >[!WARNING]
->It is important that you enter the correct preference domain, otherwise these preferences might not be recognized by the product.
+>It is important that you enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences might not be recognized by the product.
 
 ### Intune deployment
 
@@ -325,7 +325,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
 
-3. Save the .plist with the settings as **com.microsoft.wdav.xml**.
+3. Save the .plist produced using the steps described earlier in this document as **com.microsoft.wdav.xml**.
 
 4. Enter **com.microsoft.wdav** as the **custom configuration profile name**.
 
