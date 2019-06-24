@@ -588,7 +588,7 @@ The XML below is for Windows 10, version 1803.
           </AccessType>
           <Description>
             Roll Back Latest Feature Update, if the machine meets the following conditions:
-            Condition 1: Device must be WUfB Connnected
+            Condition 1: Device must be WUfB Connected
             Condition 2: Device must be in Paused State
             Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
             Condition 4: Machine should be within the uninstall period
@@ -615,7 +615,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack QualityUpdate opearation. </Description>
+          <Description>Returns the result of last RollBack QualityUpdate operation. </Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -637,7 +637,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack FeatureUpdate opearation.</Description>
+          <Description>Returns the result of last RollBack FeatureUpdate operation.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
