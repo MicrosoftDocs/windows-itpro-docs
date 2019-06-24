@@ -146,6 +146,10 @@ For more information on additional proxy configuration settings see, [Configure 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 
+## Browser requirements
+Internet Explorer and Microsoft Edge is supported. Any HTML5 compliant browsers are also supported.
+
+
 ## Windows Defender Antivirus configuration requirement
 The Microsoft Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
 
