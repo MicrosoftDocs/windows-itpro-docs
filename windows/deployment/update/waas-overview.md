@@ -22,6 +22,7 @@ ms.topic: article
 - Windows 10
 - Windows 10 Mobile
 - Windows 10 IoT Mobile
+- Windows 10 Team (Surface Hub)
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
