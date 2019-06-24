@@ -324,7 +324,7 @@ You may want to disable specific applications in your Office App-V package. For 
         <Description />
       </VisualElements>
     </Application>
-    <Application Id="[{AppVPackageRoot}]\officel5\lync.exe" Enabled="true">
+    <Application Id="[{AppVPackageRoot}]\office15\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2013</Name>
         <Icon />
@@ -365,7 +365,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
-           <ApplicationId>[{AppVPackageRoot}]\officel5\MSACCESS.EXE</ApplicationId>
+           <ApplicationId>[{AppVPackageRoot}]\office15\MSACCESS.EXE</ApplicationId>
         </Shortcut>
     ```
 3. Save the Deployment Configuration File.
