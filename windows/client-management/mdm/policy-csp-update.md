@@ -2722,7 +2722,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2835,7 +2835,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
