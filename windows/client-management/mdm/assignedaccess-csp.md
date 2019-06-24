@@ -1002,7 +1002,7 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 ```
 ### Shell Launcher V2 XSD
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"

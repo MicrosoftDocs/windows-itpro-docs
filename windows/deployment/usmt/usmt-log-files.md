@@ -272,7 +272,7 @@ The directory of **C:\\data\\New Folder** contains:
 
 To migrate these files you author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -368,7 +368,7 @@ The **C:\\Data\\New Folder\\** contains:
 
 You author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -422,7 +422,7 @@ However, upon testing the migration you notice that all the text files are still
 
 Upon reviewing the diagnostic log, you confirm that the files are still migrating, and that it is a problem with the authored migration XML rule. You author an update to the migration XML script as follows:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 

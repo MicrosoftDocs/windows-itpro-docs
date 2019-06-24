@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 Here's the XSD for the ApplicationManagement/ApplicationRestrictions policy.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="AppPolicy_xsd"
            attributeFormDefault="unqualified"
