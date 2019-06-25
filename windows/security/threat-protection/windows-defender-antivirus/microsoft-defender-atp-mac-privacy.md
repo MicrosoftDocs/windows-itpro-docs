@@ -1,5 +1,5 @@
 ---
-title: Privacy in Microsoft Defender ATP for Mac
+title: Privacy for Microsoft Defender ATP for Mac
 ms.reviewer: 
 description: Describes privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, privacy, diagnostic
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Privacy in Microsoft Defender ATP for Mac
+# Privacy for Microsoft Defender ATP for Mac
 
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender ATP for Mac.
 
