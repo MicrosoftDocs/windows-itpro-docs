@@ -23,15 +23,15 @@ ms.topic: conceptual
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
 
-In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile, which is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users in your enterprise will not be able to change preferences that are set through this configuration profile.
+In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
 This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
 
 ## Configuration profile structure
 
-The configuration profile is a .plist file that consists of entries identified by a key (denoting the name of the preference being set), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
+The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference being set), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
-The top level of the configuration profile includes product-wide preferences, as well as entries for sub-areas of the product, which are explained in more detail in the next sections.
+The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
 
@@ -46,7 +46,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Whether real time protection (scan files as they are accessed) is enabled or not.
+Whether real-time protection (scan files as they are accessed) is enabled or not.
 
 |||
 |:---|:---|
@@ -57,7 +57,7 @@ Whether real time protection (scan files as they are accessed) is enabled or not
 
 #### Scan exclusions
 
-Entities that have been excluded from scanning. Exclusions can be specified by full paths, extensions or file names.
+Entities that have been excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
 
 |||
 |:---|:---|
@@ -68,7 +68,7 @@ Entities that have been excluded from scanning. Exclusions can be specified by f
 
 **Type of exclusion**
 
-Specifies the type of content excluded from scanning.
+Specifies the type of content excluded from being scanned.
 
 |||
 |:---|:---|
@@ -79,7 +79,7 @@ Specifies the type of content excluded from scanning.
 
 **Path to excluded content**
 
-Used to exclude content from scanning by full file path.
+Used to exclude content from being scanned by full file path.
 
 |||
 |:---|:---|
@@ -101,9 +101,9 @@ Indicates if the *path* property refers to a file or directory.
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-**File extension excluded from scanning**
+**File extension excluded from being scanned**
 
-Used to exclude content from scanning by file extension.
+Used to exclude content from being scanned by file extension.
 
 |||
 |:---|:---|
@@ -115,7 +115,7 @@ Used to exclude content from scanning by file extension.
 
 **Name of excluded content**
 
-Used to exclude content from scanning by file name.
+Used to exclude content from being scanned by file name.
 
 |||
 |:---|:---|
@@ -149,11 +149,11 @@ Type of the threat for which the behavior is configured.
 
 **Action to take**
 
-Action to take when encountering a threat of the the type being configured. Can be:
+Action to take when coming across a threat of the type specified above. Can be:
 
-- **Audit**: adds an entry to the log about the threat, but does not report it to the user interface or the security console
+- **Audit**: adds an entry to the log about the threat, but will not report it to the user interface or the security console
 - **Block**: reports the threat to the user interface and the security console and protects the device against this type of threat
-- **Off**: does not block the threat and does not report it to the log or security console
+- **Off**: will not block the threat and will not report it to the log or security console
 
 |||
 |:---|:---|
@@ -175,7 +175,7 @@ The *cloudService* entry in the configuration profile is used to configure the c
 
 #### Enable / disable cloud delivered protection
 
-Whether cloud delivered protection is enabled on the device or not. To improve the security of your sevices, we recommend keeping this feature turned on.
+Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.
 
 |||
 |:---|:---|
@@ -197,7 +197,7 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. We'll prompt users if the file being submitted is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. Users will be prompted if the file being submitted is likely to contain personal information.
 
 |||
 |:---|:---|
@@ -208,13 +208,13 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration profile for your enterprise in order to take advantage of all of the protection features that Microsoft Defender ATP provides. 
+To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
 The following configuration profile will:
-- Enable real time protection (RTP)
+- Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
-  - **Archive bombs** (file with a very high compression rate) are audited to the product logs
+  - **Archive bombs** (file with a high compression rate) are audited to the product logs
 - Enable cloud delivered protection
 - Enable automatic sample submission
 
@@ -256,7 +256,7 @@ The following configuration profile will:
 
 ## Full configuration profile example
 
-The following configuration profile contains entries for all of the settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -327,11 +327,11 @@ The following configuration profile contains entries for all of the settings des
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management console that your enterprise is using. Listed below are steps for deploying this through JAMF and Intune.
+Once you've built the configuration profile for your enterprise, you can deploy it through the management console that your enterprise is using. The following sections provide instructions on how to deploy this profile using JAMF and Intune.
 
 ### JAMF deployment
 
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings** and create a new entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced using the steps described earlier in this document.
+From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced earlier.
 
 >[!WARNING]
 >It is important that you enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences might not be recognized by the product.
@@ -342,7 +342,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
 
-3. Save the .plist produced using the steps described earlier in this document as **com.microsoft.wdav.xml**.
+3. Save the .plist produced earlier as **com.microsoft.wdav.xml**.
 
 4. Enter **com.microsoft.wdav** as the **custom configuration profile name**.
 
