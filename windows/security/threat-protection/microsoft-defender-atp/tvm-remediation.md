@@ -50,7 +50,6 @@ The dashboard will show that status of your top remediation activities. Click an
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendation](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 
