@@ -6,6 +6,7 @@
 #### [Configuration score](configuration-score.md)
 #### [Security recommendation](tvm-security-recommendation.md)
 #### [Remediation](tvm-remediation.md)
+#### [Software inventory](tvm-software-inventory.md)
 #### [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
