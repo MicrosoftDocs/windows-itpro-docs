@@ -38,7 +38,7 @@ There are two levels of diagnostic data for Microsoft Defender ATP client softwa
 
 * **Required**: The minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and performing as expected on the device it’s installed on.
 
-* **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues.
+* **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
 By default, both optional and required diagnostic data are sent to Microsoft.
 
@@ -79,7 +79,7 @@ The following fields are considered common for all events:
 | org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
 | hostname                | Local machine name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
-| app_version             | Version of the Microsoft Defender ATP for Mac application. Allows us to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
+| app_version             | Version of the Microsoft Defender ATP for Mac application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
 | sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
 | supported_compressions  | List of compression algorithms supported by the application, for example `['gzip']`. Allows Microsoft to understand what types of compressions can be used when it communicates with the application. |
 | release_ring            | Ring that the device is associated with (for example Insider Fast, Insider Slow, Production). Allows Microsoft to identify on which release ring an issue may be occurring so that it can correctly be prioritized. |
@@ -87,7 +87,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and performing as expected on the device it’s installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and perform as expected on the device it’s installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender ATP that may be related to a device or software configuration. For example, it can help determine if a Microsoft Defender ATP feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Microsoft Defender ATP features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
@@ -100,7 +100,7 @@ The following fields are collected:
 | Field            | Description |
 | ---------------- | ----------- |
 | correlation_id   | Unique identifier associated with the installation. |
-| version          | Version of the package being installed. |
+| version          | Version of the package. |
 | severity         | Severity of the message (for example Informational). |
 | code             | Code that describes the operation. |
 | text             | Additional information associated with the product installation. |
@@ -147,7 +147,7 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 
 ### Optional diagnostic data
 
-**Optional diagnostic data** is additional data that helps Microsoft make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
+**Optional diagnostic data** is additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and fix issues.
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included.
 
@@ -161,7 +161,7 @@ The following fields are collected:
 
 | Field                                              | Description |
 | -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Connection retry timeout when communication with the cloud. |
+| connection_retry_timeout                           | Connection retry time out when communication with the cloud. |
 | file_hash_cache_maximum                            | Size of the product cache. |
 | crash_upload_daily_limit                           | Limit of crash logs uploaded daily. |
 | antivirus_engine.exclusions[].is_directory         | Whether the exclusion from scanning is a directory or not. |
@@ -170,7 +170,7 @@ The following fields are collected:
 | antivirus_engine.exclusions[].name                 | Name of the file excluded from scanning. |
 | antivirus_engine.scan_cache_maximum                | Size of the product cache. |
 | antivirus_engine.maximum_scan_threads              | Maximum number of threads used for scanning. |
-| antivirus_engine.threat_restoration_exclusion_time | Timeout before a file restored from the quarantine can be detected again. |
+| antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can be detected again. |
 | filesystem_scanner.full_scan_directory             | Full scan directory. |
 | filesystem_scanner.quick_scan_directories          | List of directories used in quick scan. |
 | edr.latency_mode                                   | Latency mode used by the detection and response component. |
