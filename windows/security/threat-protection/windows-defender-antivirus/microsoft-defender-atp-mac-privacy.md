@@ -58,7 +58,7 @@ When this feature is enabled and the sample being collected is likely to contain
 
 If you're an IT administrator, you might be interested in configuring these controls at the enterprise level. 
 
-The privacy controls for the various type of data described in the previous section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+The privacy controls for the various type of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings you configure have the desired effect before you implement the policy settings more widely in your organization.
 
@@ -222,7 +222,7 @@ The following fields are collected:
 
 | Field                          | Description |
 | ------------------------------ | ----------- |
-| pkt_ack_timeout                | All properties below are aggregated numerical values, representing count of events that happened since kernel extension startup. |
+| pkt_ack_timeout                | All of the following properties are aggregated numerical values, representing count of events that happened since kernel extension startup. |
 | pkt_ack_conn_timeout           | |
 | ipc.ack_pkts                   | |
 | ipc.nack_pkts                  | |
