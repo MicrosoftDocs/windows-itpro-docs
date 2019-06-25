@@ -55,6 +55,8 @@ In general you'll need to take the following steps:
 
 Whichever method you choose, you will first need to visit the onboarding page in the Microsoft Defender ATP portal.
 
+Once installed, you can configure the product in your enterprise using the steps in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+
 ### Prerequisites
 
 You should have beginner-level experience in macOS and BASH scripting. You must have administrative privileges on the machine.
