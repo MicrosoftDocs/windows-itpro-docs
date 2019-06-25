@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise 2019 LTSC
 ms.reviewer: 
-manager: dansimp
-ms.author: macapara
+manager: laurawi
+ms.author: greglin
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2019 LTSC (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019 LTSC"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mjcaparas
+author: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -279,33 +279,6 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
 
-## Sign-in
-
-### Faster sign-in to a Windows 10 shared pc
-
-If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
-
-**To enable fast sign-in:**
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
-2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
-3. Sign-in to a shared PC with your account. You'll notice the difference!
-
-    ![fast sign-in](../images/fastsignin.png "fast sign-in")
-
-### Web sign-in to Windows 10
-
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
-
-**To try out web sign-in:**
-1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
-3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
-
-![Web sign-in](../images/websignin.png "web sign-in")
-
-## Deployment
-
 ### MBR2GPT.EXE
 
 MBR2GPT.EXE is a new command-line tool introduced with Windows 10, version 1703 and also available in Windows 10 Enterprise 2019 LTSC (and later versions). MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
@@ -315,10 +288,6 @@ The GPT partition format is newer and enables the use of larger and more disk pa
 Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
-
-### Windows Autopilot
-
-Information about Windows Autopilot support for LTSC 2019 is pending.
 
 ### DISM
 
@@ -371,6 +340,31 @@ Portions of the work done during the offline phases of a Windows update have bee
 [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a new command-line tool that can help diagnose why a Windows 10 update failed.
 
 SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+
+## Sign-in
+
+### Faster sign-in to a Windows 10 shared pc
+
+If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
+
+**To enable fast sign-in:**
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
+2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
+3. Sign-in to a shared PC with your account. You'll notice the difference!
+
+    ![fast sign-in](../images/fastsignin.png "fast sign-in")
+
+### Web sign-in to Windows 10
+
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
+
+**To try out web sign-in:**
+1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+3. On the lock screen, select web sign-in under sign-in options.
+4. Click the “Sign in” button to continue.
+
+![Web sign-in](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 
