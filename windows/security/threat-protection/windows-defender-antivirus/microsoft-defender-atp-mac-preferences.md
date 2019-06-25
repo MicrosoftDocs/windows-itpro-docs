@@ -23,13 +23,13 @@ ms.topic: conceptual
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
 
-In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
 This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
 
 ## Configuration profile structure
 
-The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference being set), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
+The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
@@ -57,7 +57,7 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 #### Scan exclusions
 
-Entities that have been excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
+Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
 
 |||
 |:---|:---|
@@ -68,7 +68,7 @@ Entities that have been excluded from being scanned. Exclusions can be specified
 
 **Type of exclusion**
 
-Specifies the type of content excluded from being scanned.
+Specifies the type of content excluded from the scan.
 
 |||
 |:---|:---|
@@ -79,7 +79,7 @@ Specifies the type of content excluded from being scanned.
 
 **Path to excluded content**
 
-Used to exclude content from being scanned by full file path.
+Used to exclude content from the scan by full file path.
 
 |||
 |:---|:---|
@@ -101,9 +101,9 @@ Indicates if the *path* property refers to a file or directory.
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-**File extension excluded from being scanned**
+**File extension excluded from the scan**
 
-Used to exclude content from being scanned by file extension.
+Used to exclude content from the scan by file extension.
 
 |||
 |:---|:---|
@@ -115,7 +115,7 @@ Used to exclude content from being scanned by file extension.
 
 **Name of excluded content**
 
-Used to exclude content from being scanned by file name.
+Used to exclude content from the scan by file name.
 
 |||
 |:---|:---|
@@ -197,7 +197,7 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. Users will be prompted if the file being submitted is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You are prompted if the submitted file is likely to contain personal information.
 
 |||
 |:---|:---|
