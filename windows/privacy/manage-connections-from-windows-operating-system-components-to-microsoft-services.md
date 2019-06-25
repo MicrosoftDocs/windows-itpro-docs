@@ -604,7 +604,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](https://techcommunity.microsoft.com/t5/Networking-Blog/bg-p/NetworkingBlog).
 
 In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was `http://www.msftncsi.com`.
 
