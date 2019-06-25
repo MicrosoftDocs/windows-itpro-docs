@@ -1,7 +1,7 @@
 ---
 title: Remediation
-description: Expand your visibility into the overall security configuration posture of your organization
-keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+description: You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations. Threat & Vulnerability Management bridges the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
+keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,40 +17,41 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/11/2019
 ---
-# Configuration score
+# Remediation
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 
->[!NOTE]
->  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection) page.
+After your organization's cybersecurity weaknesses are identified and mapped to actionable security recommendations, you can start creating security tasks or ticket through the integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
 
-The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over your organization's security posture based on security best practices.
+You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
-Your configuration score widget shows the collective security configuration state of your machines across the following categories:
-- Application
-- Operating system
-- Network
-- Accounts
-- Security controls
+## Navigate through your remediation options 
+You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
+
+1. From the fly-in page, you'll see the security recommendation details including your next steps. Click **Remediation options**.
+2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
+3. Select a remediation due date.
+4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
 
 ## How it works
 
-What you'll see in the configuration score widget is the product of meticulous and ongoing vulnerability discovery process aggregated with configuration discovery assessments that continuously:
-- Compare collected configurations to the collected benchmarks to discover misconfigured assets
-- Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction) by remediating the misconfiguration
-- Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)
-- Collect and monitor changes of security control configuration state from all assets
+When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. 
 
-From the widget, you'd be able to see which security aspect require attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can take action based on security benchmarks. 
+It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation page**, and it also creates a remediation ticket in Microsoft Intune.
 
-## Improve your configuration score
-The goal is to improve your configuration score by remediating the issues in the security recommendations list. You can filter the view based on:
-- **Related component** - **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
-- **Remediation type** - **Configuration change** or **Software update**
+You also have the option to export all remediation activity data to CSV for records, reporting purposes, or if you want to notify your IT administration counterpart that a remediation ticket has been submitted. 
+
+The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [Security recommendation](tvm-security-recommendation.md)
+- [Remediation](tvm-remediation.md)
+- [Software inventory](tvm-software-inventory.md)
+- [Weaknesses](tvm-weaknesses.md)
+
+
