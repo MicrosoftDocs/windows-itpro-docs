@@ -72,6 +72,7 @@
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 ##### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
+#####[Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 
 #### [Secure score](microsoft-defender-atp/overview-secure-score.md)
