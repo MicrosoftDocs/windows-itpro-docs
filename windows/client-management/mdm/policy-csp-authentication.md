@@ -25,7 +25,7 @@ manager: dansimp
 
 [Authentication/AllowEAPCertSSO](#Authentication-AllowEAPCertSSO)
 
-[Authentication/AllowFastReconnect](#Authentication-AllowFastReconnect )
+[Authentication/AllowFastReconnect](#Authentication-AllowFastReconnect)
 
 [Authentication/AllowFidoDeviceSignon](#Authentication-AllowFidoDeviceSignon)
 
