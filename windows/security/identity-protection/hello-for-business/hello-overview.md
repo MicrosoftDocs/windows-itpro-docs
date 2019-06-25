@@ -53,7 +53,7 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 ## The difference between Windows Hello and Windows Hello for Business
 
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it is set up, using a simple password hash, however it is not backed by asymmetric (public/private key) or certificate-based authentication. 
+- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it is set up, using a simple password hash. However, it is not backed by asymmetric (public/private key) or certificate-based authentication. 
 
 - Windows Hello for Business, which is configured by Group Policy or mobile device management (MDM) policy, uses key-based or certificate-based authentication which increases significatively the security respect the regular Windows Hello.
 
