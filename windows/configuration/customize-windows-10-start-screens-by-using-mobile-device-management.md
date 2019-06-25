@@ -30,14 +30,16 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can us
 >[!NOTE]
 >Support for applying a customized taskbar using MDM is added in Windows 10, version 1703.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions.
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop and taskbar editions.
+
+
 
 >[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
  
 
-## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
+## How Start layout control works
 
 
 Two features enable Start layout control:
@@ -51,7 +53,7 @@ Two features enable Start layout control:
 
 -   In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile. 
 
-## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
+## Create a policy for your customized Start layout
 
 
 This example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout. See the documentation for your MDM solution for help in applying the policy.
