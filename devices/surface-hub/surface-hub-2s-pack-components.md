@@ -30,31 +30,31 @@ This article contains the following procedures:
 Use the following steps to pack your Surface Hub 2S 55" for shipment.
 
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-1.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-1.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-2.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-2.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-3.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-3.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-4.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-4.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-5.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-5.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-6.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-6.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-7.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-7.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-8.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-8.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-9.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-9.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-10.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-10.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-11.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-11.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-12.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-12.png)
 
-![Alt text describes the content of the image.](/media/surface-hub-2s-repack-13.png)
+![Alt text describes the content of the image.](/images/surface-hub-2s-repack-13.png)
 
 ## How to replace and pack your Surface Hub 2S Compute Module
 
