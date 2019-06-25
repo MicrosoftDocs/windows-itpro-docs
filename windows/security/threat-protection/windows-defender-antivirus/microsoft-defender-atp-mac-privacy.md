@@ -93,7 +93,7 @@ Required diagnostic data helps to identify problems with Microsoft Defender ATP 
 
 #### Software setup and inventory data events
 
-##### Microsoft Defender ATP installation / uninstallation
+**Microsoft Defender ATP installation / uninstallation**
 
 The following fields are collected:
 
@@ -105,7 +105,7 @@ The following fields are collected:
 | code             | Code describing the operation. |
 | text             | Additional information associated with the product installation. |
 
-##### Microsoft Defender ATP configuration
+**Microsoft Defender ATP configuration**
 
 The following fields are collected:
 
@@ -122,7 +122,7 @@ The following fields are collected:
 
 #### Product and service performance data events
 
-##### Kernel extension statistics
+**Kernel extension statistics**
 
 The following fields are collected:
 
@@ -137,7 +137,7 @@ The following fields are collected:
 
 #### Support data
 
-##### Diagnostic logs
+**Diagnostic logs**
 
 Diagnostic logs are collected only with the user's consent as part of the feedback submission feature. The following files are collected as part of the support logs:
 
@@ -155,7 +155,7 @@ Examples of optional diagnostic data include data we collect about product confi
 
 #### Software setup and inventory data events
 
-##### Microsoft Defender ATP configuration
+**Microsoft Defender ATP configuration**
 
 The following fields are collected:
 
@@ -176,7 +176,7 @@ The following fields are collected:
 | edr.latency_mode                                   | Latency mode used by the detection and response component. |
 | edr.proxy_address                                  | Proxy address used by the detection and response component. |
 
-##### Microsoft Auto-Update configuration
+**Microsoft Auto-Update configuration**
 
 The following fields are collected:
 
@@ -212,11 +212,11 @@ The following fields are collected:
 
 #### Product and service performance data events
 
-##### Unexpected application exit (crash)
+**Unexpected application exit (crash)**
 
 Unexpected application exits and the state of the application when that happens.
 
-##### Kernel extension statistics
+**Kernel extension statistics**
 
 The following fields are collected:
 
