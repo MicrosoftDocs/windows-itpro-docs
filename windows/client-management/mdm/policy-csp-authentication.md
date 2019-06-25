@@ -19,43 +19,70 @@ manager: dansimp
 <!--Policies-->
 ## Authentication policies  
 
+<dl>
+  <dd>
+    <a href="#authentication-allowaadpasswordreset">Authentication/AllowAadPasswordReset</a>
+  </dd>
+  <dd>
+    <a href="#authentication-alloweapcertsso">Authentication/AllowEAPCertSSO</a>
+  </dd>
+  <dd>
+    <a href="#authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
+  </dd>
+  <dd>
+    <a href="#authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
+  </dd>
+  <dd>
+    <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
+  </dd>
+  <dd>
+    <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
+  </dd>
+  <dd>
+    <a href="#authentication-enablewebsignin">Authentication/EnableWebSignIn</a>
+  </dd>
+  <dd>
+    <a href="#authentication-preferredaadtenantdomainname">Authentication/PreferredAadTenantDomainName</a>
+  </dd>
+</dl>
 
 
-[Authentication/AllowAadPasswordReset](#Authentication-AllowAadPasswordReset)
-
-[Authentication/AllowEAPCertSSO](#Authentication-AllowEAPCertSSO)
-
-[Authentication/AllowFastReconnect](#Authentication-AllowFastReconnect )
-
-[Authentication/AllowFidoDeviceSignon](#Authentication-AllowFidoDeviceSignon)
-
-[Authentication/AllowSecondaryAuthenticationDevice](#Authentication-AllowSecondaryAuthenticationDevice)
-
-[Authentication/EnableFastFirstSignIn](#Authentication-EnableFastFirstSignIn)
-
-[Authentication/EnableWebSignIn](#Authentication-EnableWebSignIn)
-
-[Authentication/PreferredAadTenantDomainName](#Authentication-PreferredAadTenantDomainName)
-
-[Authentication policies supported by Windows Holographic](#Authentication-policies-supported-by-Windows-Holographic)
-
-[Authentication policies supported by Windows Holographic for Business](#Authentication-policies-supported-by-Windows-Holographic-for-Business)
 <hr/>
 
 <!--Policy-->
- ###  **Authentication-AllowAadPasswordReset**  
+<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**  
 
 <!--SupportedSKUs-->
-
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/crossmark.png" alt="cross mark" />|	<img src="images/checkmark.png" alt="check mark" /><sup>3</sup> |<img src="images/checkmark.png" alt="check mark" /><sup>3</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>3</sup>	|<img src="images/checkmark.png" alt="check mark" /><sup>3</sup>| 	<img src="images/crossmark.png" alt="cross mark" /> | 	<img src="images/crossmark.png" alt="cross mark" />|
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-- Device
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
 <!--/Scope-->
 <!--Description-->
 Added in Windows 10, version 1709. Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the windows logon screen.
@@ -73,19 +100,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-AllowEAPCertSSO**  
+<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 
 <!--SupportedSKUs-->
-
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/crossmark.png" alt="cross mark" />|	<img src="images/checkmark.png" alt="check mark" /> |<img src="images/checkmark.png" alt="check mark" />| <img src="images/checkmark.png" alt="check mark" /> |<img src="images/checkmark.png" alt="check mark" />| 	<img src="images/crossmark.png" alt="cross mark" /> | 	<img src="images/crossmark.png" alt="cross mark" />|
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-- User
+> [!div class = "checklist"]
+> * User
 
 <hr/>
 
@@ -106,19 +150,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-AllowFastReconnect**  
+<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
 
 <!--SupportedSKUs-->
-
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/checkmark.png" alt="check mark" /> |	<img src="images/checkmark.png" alt="check mark" /> |<img src="images/checkmark.png" alt="check mark" />| <img src="images/checkmark.png" alt="check mark" /> |<img src="images/checkmark.png" alt="check mark" />| <img src="images/checkmark.png" alt="check mark" />  | 	<img src="images/checkmark.png" alt="check mark" /> |
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-- Device
+> [!div class = "checklist"]
+> * Device
 
 <hr/>
 
@@ -141,18 +202,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-AllowFidoDeviceSignon**  
+<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
 
 <!--SupportedSKUs-->
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/crossmark.png" alt="cross mark" />|	<img src="images/checkmark.png" alt="check mark" /><sup>3</sup> |<img src="images/checkmark.png" alt="check mark" /><sup>3</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>3</sup>	|<img src="images/checkmark.png" alt="check mark" /><sup>3</sup>| 	<img src="images/crossmark.png" alt="cross mark" /> | 	<img src="images/crossmark.png" alt="cross mark" />|
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
 <!--/SupportedSKUs-->
 <!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-###[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-- Device
+> [!div class = "checklist"]
+> * Device
 
 <hr/>
 
@@ -177,18 +256,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-AllowSecondaryAuthenticationDevice**  
+<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
 
 <!--SupportedSKUs-->
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/checkmark.png" alt="check mark" /><sup>1</sup> |	<img src="images/checkmark.png" alt="check mark" /><sup>1</sup> |<img src="images/checkmark.png" alt="check mark" /><sup>1</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>1</sup>|<img src="images/checkmark.png" alt="check mark" /><sup>1</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>1</sup> | 	<img src="images/checkmark.png" alt="check mark" /> <sup>1</sup>|
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-- Device
+> [!div class = "checklist"]
+> * Device
 
 <hr/>
 
@@ -221,7 +318,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-EnableFastFirstSignIn**  
+<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**  
 
 <!--SupportedSKUs-->
 <table>
@@ -259,12 +356,12 @@ The following list shows the supported values:
 > [!Warning]
 > This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
-This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the [pre-configured candidate local accounts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc).
+This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Auto connect new non-admin AZure AD accounts to [pre-configured candidate local accounts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc)
+- 1 - Enabled. Auto connect new non-admin AZure AD accounts to pre-configured candidate local accounts
 - 2 - Disabled. Do not auto connect new non-admin Azure AD accounts to pre-configured local accounts
 
 <!--/Description-->
@@ -282,17 +379,36 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-EnableWebSignIn**  
+<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**  
 
 <!--SupportedSKUs-->
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/crossmark.png" alt="cross mark" />|	<img src="images/checkmark.png" alt="check mark" /><sup>5</sup> |<img src="images/checkmark.png" alt="check mark" /><sup>5</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>5</sup>	|<img src="images/checkmark.png" alt="check mark" /><sup>5</sup> ||
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
-- Device
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
 
 <hr/>
 
@@ -327,18 +443,36 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-### **Authentication-PreferredAadTenantDomainName**  
+<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**  
 
 <!--SupportedSKUs-->
-| Home | Pro | Business | Enterprise | Education | Mobile | Mobile Enterprise |
-| :---:|:---:|   :---:  |    :---:   |   :---:   | :---:  | :---:|
-|<img src="images/crossmark.png" alt="cross mark" />|	<img src="images/checkmark.png" alt="check mark" /><sup>5</sup> |<img src="images/checkmark.png" alt="check mark" /><sup>5</sup>| <img src="images/checkmark.png" alt="check mark" /> <sup>5</sup>	|<img src="images/checkmark.png" alt="check mark" /><sup>5</sup> ||
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
 
 <!--/SupportedSKUs-->
 <!--Scope-->
-### [Scope](./policy-configuration-service-provider.md#policy-scope):
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-- Device
+> [!div class = "checklist"]
+> * Device
 
 <hr/>
 
@@ -365,13 +499,13 @@ Value type is string.
 
 <!--/Policies-->
 <!--StartHoloLens-->
-### Authentication policies supported by Windows Holographic
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 <!--EndHoloLens-->
 
 <!--StartHoloLensBusiness-->
-### Authentication policies supported by Windows Holographic for Business
+## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
