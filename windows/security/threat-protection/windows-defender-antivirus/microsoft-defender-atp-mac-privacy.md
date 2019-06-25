@@ -50,7 +50,9 @@ Enabling the cloud-delivered protection service is optional, however it is highl
 
 ### Sample data
 
-Sample data is used to improve the protection capabilities of the product, by sending Microsoft suspicious samples. When the sample being collected is likely to contain personal information, the user is prompted for consent before sending it.
+Sample data is used to improve the protection capabilities of the product, by sending Microsoft suspicious samples so they can be analyzed. Enabling automatic sample submission is optional.
+
+When this feature is enabled and the sample being collected is likely to contain personal information, the user is prompted for consent.
 
 ## Manage privacy controls with policy settings
 
