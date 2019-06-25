@@ -15038,6 +15038,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/windows-10-architecture-posters.md",
+"redirect_url": "/windows/deployment/windows-10-deployment-scenarios",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/device-security/index.md",
 "redirect_url": "/windows/security/threat-protection",
 "redirect_document_id": true
