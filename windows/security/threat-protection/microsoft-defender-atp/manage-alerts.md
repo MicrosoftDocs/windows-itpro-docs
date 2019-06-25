@@ -68,13 +68,13 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2.  Select **Create a suppression rule**.
 
-    You can create a suppression rule based on the following attributes:
+    You can create a suppression condition using these attributes. An AND operator is applied between each condition, so suppression occurs only if all conditions are met.
     
-    * File hash 
-    * File name - wild card supported
-    * File path - wild card supported
-    * IP
-    * URL - wild card supported
+    * File SHA1
+    * File name - wildcard supported
+    * Folder path - wildcard supported
+    * IP address
+    * URL - wildcard supported
 
 3. Select the **Trigerring IOC**.
     
