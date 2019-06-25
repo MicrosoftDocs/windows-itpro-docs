@@ -149,11 +149,11 @@ Type of the threat for which the behavior is configured.
 
 **Action to take**
 
-Action to take when coming across a threat of the type specified above. Can be:
+Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
-- **Audit**: adds an entry to the log about the threat, but will not report it to the user interface or the security console
-- **Block**: reports the threat to the user interface and the security console and protects the device against this type of threat
-- **Off**: will not block the threat and will not report it to the log or security console
+- **Audit**: your device is not protected against this type of threat, but an entry about the threat is logged.
+- **Block**: your device is protected against this type of threat and you are notified in the user interface and the security console.
+- **Off**: your device is not protected against this type of threat and nothing is logged.
 
 |||
 |:---|:---|
