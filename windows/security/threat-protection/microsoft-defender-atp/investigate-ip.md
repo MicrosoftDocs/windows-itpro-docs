@@ -67,7 +67,7 @@ Use the search filters to define the search criteria. You can also use the timel
 Clicking any of the machine names will take you to that machine's view, where you can continue investigate reported alerts, behaviors, and events.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)

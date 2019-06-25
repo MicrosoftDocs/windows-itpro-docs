@@ -53,7 +53,7 @@ The hardware requirements are applicable to all versions.
 <th align="left">Operating System</th>
 <th align="left">Edition</th>
 <th align="left">Service Pack</th>
-<th align="left">Achitectural SKU</th>
+<th align="left">Architectural SKU</th>
 </tr>
 </thead>
 <tbody>
@@ -106,7 +106,7 @@ For the Application Virtualization (App-V) 4.6 Desktop Client, the following add
 <th align="left">Operating System</th>
 <th align="left">Edition</th>
 <th align="left">Service Pack</th>
-<th align="left">Achitectural SKU</th>
+<th align="left">Architectural SKU</th>
 </tr>
 </thead>
 <tbody>
@@ -176,7 +176,7 @@ The hardware requirements are applicable to all versions.
 <th align="left">Operating System</th>
 <th align="left">Edition</th>
 <th align="left">Service Pack</th>
-<th align="left">Achitectural SKU</th>
+<th align="left">Architectural SKU</th>
 </tr>
 </thead>
 <tbody>
@@ -233,7 +233,7 @@ For the Application Virtualization (App-V) 4.6 Desktop Client, the following add
 <th align="left">Operating System</th>
 <th align="left">Edition</th>
 <th align="left">Service Pack</th>
-<th align="left">Achitectural SKU</th>
+<th align="left">Architectural SKU</th>
 </tr>
 </thead>
 <tbody>

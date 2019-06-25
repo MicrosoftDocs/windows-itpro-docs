@@ -23,7 +23,7 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!IMPORTANT]
-> [Windows Defender Advanced Threat Protection ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to Windows Defender Antivirus exclusion settings. This means that any Windows Defender exclusions, no matter how you created them, are not applied by Windows Defender ATP.
+> [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection) does not adhere to Windows Defender Antivirus exclusion settings. This means that any Windows Defender exclusions, no matter how you created them, are not applied by Windows Defender ATP.
 
 You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
@@ -150,7 +150,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions:**
 
-Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 ExclusionExtension
@@ -185,34 +185,34 @@ The following table describes how the wildcards can be used and provides some ex
 <table>
     <tr>
         <th>Wildcard</th>
-        <th>Use in file and file extension exclusions</th>
+        <th>Use in file name and file extension exclusions</th>
         <th>Use in folder exclusions</th>
         <th>Example use</th>
-        <th>Example matches&gt;</th>
+        <th>Example matches</th>
     </tr>
     <tr>
-        <td><b><em></b> (asterisk)</td>
+        <td><b>*</b> (asterisk)</td>
         <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b></em></b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
+        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wilcarded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
-                <li>C:\MyData\<b><em></b>.txt</li>
-                <li>C:\somepath\<b></em></b>\Data</li>
-                <li>C:\Serv\<b><em></b>\<b></em></b>\Backup
+                <li>C:\MyData\<b>*</b>.txt</li>
+                <li>C:\somepath\<b>*</b>\Data</li>
+                <li>C:\Serv\<b>*</b>\<b>*</b>\Backup
             </ol>
         </td>
         <td>
             <ol>
-                <li><i>C:\MyData\<b>notes</b>.txt</i></li>
+                <li>C:\MyData\<b>notes</b>.txt</li>
                 <li>Any file in:
                     <ul>
-                        <li><i>C:\somepath\<b>Archives</b>\Data</i> and its subfolders</li>
-                        <li><i>C:\somepath\<b>Authorized</b>\Data</i> and its subfolders</li>
+                        <li>C:\somepath\<b>Archives</b>\Data and its subfolders</li>
+                        <li>C:\somepath\<b>Authorized</b>\Data and its subfolders</li>
                     </ul>
                 <li>Any file in:
                 <ul>
-                    <li><i>C:\Serv\<b>Primary</b>\<b>Denied</b>\Backup</i> and its subfolders</li>
-                    <li><i>C:\Serv\<b>Secondary</b>\<b>Allowed</b>\Backup</i> and its subfolders</li>
+                    <li>C:\Serv\<b>Primary</b>\<b>Denied</b>\Backup and its subfolders</li>
+                    <li>C:\Serv\<b>Secondary</b>\<b>Allowed</b>\Backup and its subfolders</li>
                 </ul>
             </ol>
         </td>
@@ -227,7 +227,7 @@ The following table describes how the wildcards can be used and provides some ex
         </td>
         <td>
             Replaces a single character in a folder name. </br>
-            After matching to the number of wilcarded and named folders, all subfolders will also be included.
+            After matching the number of wilcarded and named folders, all subfolders will also be included.
         </td>
         <td>
             <ol>
@@ -238,9 +238,9 @@ The following table describes how the wildcards can be used and provides some ex
         </td>
         <td>
             <ol>
-                <li><i>C:\MyData\my<b>1</b>.zip</i></li>
-                <li>Any file in <i>C:\somepath\<b>P</b>\Data</i> and its subfolders</li>
-                <li>Any file in <i>C:\somepath\test0<b>1</b>\Data</i> and its subfolders</li>
+                <li>C:\MyData\my<b>1</b>.zip</li>
+                <li>Any file in C:\somepath\<b>P</b>\Data and its subfolders</li>
+                <li>Any file in C:\somepath\test0<b>1</b>\Data and its subfolders</li>
             </ol>
         </td>
     </tr>
@@ -255,7 +255,7 @@ The following table describes how the wildcards can be used and provides some ex
         </td>
         <td>
             <ol>
-                <li><i><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</i></li>
+                <li><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</li>
             </ol>
         </td>
     </tr>
@@ -286,7 +286,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 **Validate the exclusion list by using MpCmdRun:**
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
 ```DOS
 MpCmdRun.exe -CheckExclusion -path <path>

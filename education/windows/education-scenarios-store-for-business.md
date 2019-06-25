@@ -130,7 +130,7 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
+Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
 
 Applies to: IT admins
 

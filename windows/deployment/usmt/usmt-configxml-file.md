@@ -3,12 +3,12 @@ title: Config.xml File (Windows 10)
 description: Config.xml File
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -383,7 +383,7 @@ Syntax: `<exclude>`` </exclude>`
 
 Refer to the following sample Config.xml file for additional details about items you can choose to exclude from a migration.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Applications/>

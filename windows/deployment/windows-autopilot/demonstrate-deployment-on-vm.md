@@ -394,7 +394,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** in the upper-right-corner of the main page.
 
@@ -462,7 +462,7 @@ Click on **OK** and then click on **Create**.
 
 #### Assign the profile
 
-Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
+Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
 
 To create a Group, open the Azure Portal and select **Azure Active Directory** > **Groups** > **All groups**:
 
@@ -564,7 +564,7 @@ Windows Autopilot will now take over to automatically join your device into Azur
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/en-us/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
+To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
 
 ### Delete (deregister) Autopilot device
 
@@ -758,7 +758,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/en-us/intune/apps-win32-app-management).
+For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
 
 ### Add Office 365
 
@@ -826,7 +826,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add Office to Intune.
 
-For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365).
+For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 

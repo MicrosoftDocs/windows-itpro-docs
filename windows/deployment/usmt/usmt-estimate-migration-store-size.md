@@ -3,12 +3,12 @@ title: Estimate Migration Store Size (Windows 10)
 description: Estimate Migration Store Size
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -90,7 +90,7 @@ To preserve the functionality of existing applications or scripts that require t
 
 The space requirements report provides two elements, &lt;**storeSize**&gt; and &lt;**temporarySpace**&gt;. The &lt;**temporarySpace**&gt; value shows the disk space, in bytes, that USMT uses to operate during the migration—this does not include the minimum 250 MB needed to support USMT. The &lt;**storeSize**&gt; value shows the disk space, in bytes, required to host the migration store contents on both the source and destination computers. The following example shows a report generated using **/p:***&lt;path to a file&gt;*.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <PreMigration>
   <storeSize>

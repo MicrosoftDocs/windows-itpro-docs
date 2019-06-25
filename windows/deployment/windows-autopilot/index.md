@@ -45,7 +45,7 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 
 <table>
 <tr><td><a href="user-driven.md">User-driven mode</a><td>Requirements and validation steps for deploying a new Azure Active Directory (AAD) joined or hybrid AAD-joined Windows 10 device are provided.
-<tr><td><a href="self-deploying.md">Self-deploying mode</a><td>Requirements and validation steps for deploying a new Windows 10 device device with little to no user interaction are provided.
+<tr><td><a href="self-deploying.md">Self-deploying mode</a><td>Requirements and validation steps for deploying a new Windows 10 device with little to no user interaction are provided.
 <tr><td><a href="windows-autopilot-reset.md">Windows Autopilot Reset</a><td>Using Windows Autopilot Reset, a device can be restored to its original settings, taking it back to a business-ready state. Both local and remote reset scenarios are discussed.
 <tr><td><a href="white-glove.md">Windows Autopilot for white glove deployment</a><td>Requirements and procedures are described that enable additional policies and apps to be delivered to a Windows Autopilot device.
 <tr><td><a href="existing-devices.md">Support for existing devices</a><td>This topic describes how Windows Autopilot can be used to convert Windows 7 or Windows 8.1 domain-joined computers to AAD-joined computers running Windows 10.

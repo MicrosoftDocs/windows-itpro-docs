@@ -422,7 +422,7 @@ To disable navigation buttons (such as Home or Back) in lockdown XML, you supply
 
 The following section contains a sample lockdown XML file that shows how to disable navigation buttons.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
     <Default>
@@ -521,7 +521,7 @@ The following sample file contains configuration for enabling tile manipulation.
 > [!NOTE]
 > Tile manipulation is disabled when you don’t have a `<Tiles>` node in lockdown XML, or if you have a `<Tiles>` node but don’t have the `<EnableTileManipulation>` node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
     <Default>

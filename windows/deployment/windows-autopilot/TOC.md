@@ -16,7 +16,7 @@
 # Administering Windows Autopilot
 ## [Registering devices](add-devices.md)
 ## [Configuring device profiles](profiles.md)
-## [Enrollment status page](enrollment-status.md)
+## [Enrollment Status Page](enrollment-status.md)
 ## [BitLocker encryption](bitlocker.md)
 ## [Troubleshooting](troubleshooting.md)
 ## [Known issues](known-issues.md)

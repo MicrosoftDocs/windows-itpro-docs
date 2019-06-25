@@ -40,7 +40,7 @@ In this section we share PowerShell samples to
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->For more details, refer to [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>For more details, refer to [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 

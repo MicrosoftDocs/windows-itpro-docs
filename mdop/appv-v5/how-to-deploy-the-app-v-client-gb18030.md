@@ -43,17 +43,17 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
 3. Review the locations for client registry, log, and troubleshooting information:
 
+#### Client registry information
+<ul><li>By default, after you install the App-V 5.0 client, the client information is stored in the registry in the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\APPV\CLIENT</code></li><li>When you deploy a virtualized package to a computer that is running the App-V client, the associated package data is stored in the following location:<p><p><code>C:\ProgramData\App-V</code><p><p>However, you can reconfigure this location with the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SOFTWARE\MICROSOFT\APPV\CLIENT\STREAMING\PACKAGEINSTALLATIONROOT</code></li></ul>
 
-   |                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-   |-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |           Client registry information           |                                    <ul><li>By default, after you install the App-V 5.0 client, the client information is stored in the registry in the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\APPV\CLIENT</code></li><li>When you deploy a virtualized package to a computer that is running the App-V client, the associated package data is stored in the following location:<p><p><code>C:\ProgramData\App-V</code><p><p>However, you can reconfigure this location with the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SOFTWARE\MICROSOFT\APPV\CLIENT\STREAMING\PACKAGEINSTALLATIONROOT</code></li></ul>                                    |
-   |                Client log files                 | <ul><li>For log file information that is associated with the App-V 5.0 Client, search in the following log:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV</code></li><li>In App-V 5.0 SP3, some logs have been consolidated and moved to the following location:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</code><p><p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</li><li>Packages that are currently stored on computers that run the App-V 5.0 Client are saved to the following location:<p><p><code>C:\ProgramData\App-V\<<em>package id</em>>\<<em>version id</em>></code></li></ul> |
-   | Client installation troubleshooting information |                                                                                                                                                                                                                                                                                   See the error log in the **%temp%** folder. To review the log files, click **Start**, type **%temp%**, and then look for the **appv_ log**.                                                                                                                                                                                                                                                                                   |
+#### Client log files                  
+<ul><li>For log file information that is associated with the App-V 5.0 Client, search in the following log:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV</code></li><li>In App-V 5.0 SP3, some logs have been consolidated and moved to the following location:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</code><p><p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</li><li>Packages that are currently stored on computers that run the App-V 5.0 Client are saved to the following location:<p><p><code>C:\ProgramData\App-V\<<em>package id</em>>\<<em>version id</em>></code></li></ul>
 
-   ---
+#### Client installation troubleshooting information
+- See the error log in the **%temp%** folder. 
+- To review the log files, click **Start**, type **%temp%**, and then look for the **appv_ log**. 
 
-
-**To install the App-V 5.0 Client**
+## To install the App-V 5.0 Client
 
 1. Copy the App-V 5.0 client installation file to the computer on which it will be installed.<p><p>Choose from the following client types:
 
@@ -83,7 +83,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
    >After the installation, only the .exe file can be uninstalled.
 
 
-**To install the App-V 5.0 client using a script**
+## To install the App-V 5.0 client using a script
 
 1. Install all of the required prerequisite software on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If you install the client by using an .msi file, the installation will fail if any prerequisites are missing.
 
@@ -127,7 +127,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
    ---
 
-**To install the App-V 5.0 client by using the Windows Installer (.msi) file**
+## To install the App-V 5.0 client by using the Windows Installer (.msi) file
 
 1. Install the required prerequisites on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If any prerequisites are not met, the installation will fail.
 
