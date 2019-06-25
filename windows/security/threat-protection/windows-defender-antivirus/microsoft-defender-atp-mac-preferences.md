@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Mac
 
+>[!IMPORTANT]
+>This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
+
 In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile, which is deployed using the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set by the local user on the device. In other words, users in your enterprise will not be able to change preferences that are set through this configuration profile.
 
 This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
