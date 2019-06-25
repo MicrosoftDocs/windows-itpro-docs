@@ -23,15 +23,21 @@ ms.date: 04/11/2019
 
 [!include[Prerelease�information](prerelease.md)]
 
+>[!NOTE]
+>To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+
 After your organization's cybersecurity weaknesses are identified and mapped to actionable security recommendations, you can start creating security tasks or ticket through the integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
 
 You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
 ## Navigate through your remediation options 
 You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
-
 1. From the fly-in page, you'll see the security recommendation details including your next steps. Click **Remediation options**.
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
+
+>[!NOTE]
+>If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune at a time. Create another remediation request for the remaining machines up to 10,000.
+
 3. Select a remediation due date.
 4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
 
