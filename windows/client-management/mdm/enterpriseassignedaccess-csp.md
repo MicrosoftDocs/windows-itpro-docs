@@ -107,7 +107,7 @@ aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.m
 
 Entry | Description
 ----------- | ------------
-Folder | A folder should be contained in <Applications/> node among with other <Application/> nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
+Folder | A folder should be contained in `<Applications/>` node among with other `<Application/>` nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
 
 Folder example:
 ``` syntax
