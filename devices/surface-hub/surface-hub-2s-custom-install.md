@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -78,7 +79,7 @@ Important considerations for mounting systems
 
 ## Mounting methods compatible with Surface Hub 2S
 
-Rail mounts typically have multiple holes and a set of slots, enabling compatibility across a wide range of displays. A rail attached to the wall and two mounts attached to the display enable you to securely install Surface Hub 2S to a wall. Most rail mounts widely available for retail are compatible with Surface Hub 2S.
+Rail mounts typically have multiple holes and a set of slots, enabling compatibility across a wide range of displays. A rail attached to the wall and two mounts attached to the display enable you to securely install Surface Hub 2S to a wall. When evaluating rail mounts for compatibility, ensure they meet versatility requirements listed earlier.
 
 ![*Figure 6. Rail mounts*](images/h2gen-railmount.png)<br>
 ***Figure 6. Surface Hub 2S rail mounts***
