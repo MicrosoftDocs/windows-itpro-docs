@@ -43,6 +43,7 @@
 ## Support
 ### [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)
 ### [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
+### [How to pack and ship your Surface Hub 2S for service](surface-hub-2s-pack-components.md)
 ### [Change history](surface-hub-2s-change-history.md)
 
 # Surface Hub
