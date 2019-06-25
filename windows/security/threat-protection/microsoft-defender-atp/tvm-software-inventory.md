@@ -17,40 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/11/2019
 ---
-# Configuration score
+# Software inventory
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
-
->[!NOTE]
->  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection) page.
-
-The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over your organization's security posture based on security best practices.
-
-Your configuration score widget shows the collective security configuration state of your machines across the following categories:
-- Application
-- Operating system
-- Network
-- Accounts
-- Security controls
+Short description
 
 ## How it works
+xxxx
 
-What you'll see in the configuration score widget is the product of meticulous and ongoing vulnerability discovery process aggregated with configuration discovery assessments that continuously:
-- Compare collected configurations to the collected benchmarks to discover misconfigured assets
-- Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction) by remediating the misconfiguration
-- Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)
-- Collect and monitor changes of security control configuration state from all assets
-
-From the widget, you'd be able to see which security aspect require attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can take action based on security benchmarks. 
-
-## Improve your configuration score
-The goal is to improve your configuration score by remediating the issues in the security recommendations list. You can filter the view based on:
-- **Related component** - **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
-- **Remediation type** - **Configuration change** or **Software update**
+## Navigate to software inventory
+xxxx
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [Security recommendation](tvm-security-recommendation.md)
+- [Remediation](tvm-remediation.md)
+- [Weaknesses](tvm-weaknesses.md)
