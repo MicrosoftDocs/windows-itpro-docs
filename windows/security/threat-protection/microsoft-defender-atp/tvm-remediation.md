@@ -21,8 +21,6 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease�information](prerelease.md)]
-
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
@@ -36,7 +34,7 @@ You'll see your remediation options when you select one of the security recommen
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
 
 >[!NOTE]
->If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune at a time. Create another remediation request for the remaining machines up to 10,000.
+>If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune.
 
 3. Select a remediation due date.
 4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
