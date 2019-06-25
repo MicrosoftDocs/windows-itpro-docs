@@ -55,22 +55,22 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -105,22 +105,22 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -155,22 +155,22 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -207,22 +207,22 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -261,22 +261,22 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -323,22 +323,22 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td></td>
+    <td></td>
 </tr>
 </table>
 
@@ -384,22 +384,22 @@ Value type is integer. Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td></td>
+    <td></td>
 </tr>
 </table>
 
@@ -448,22 +448,22 @@ Value type is integer. Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td></td>
+    <td></td>
 </tr>
 </table>
 
