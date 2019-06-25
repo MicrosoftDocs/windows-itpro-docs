@@ -36,31 +36,31 @@ Some diagnostic data is required, while some diagnostic data is optional. We giv
 
 There are two levels of diagnostic data for Microsoft Defender ATP client software that you can choose from:
 
-* **Required** The minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and performing as expected on the device it’s installed on.
+* **Required**: The minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and performing as expected on the device it’s installed on.
 
-* **Optional** Additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues.
+* **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues.
 
-By default, both optional and required diagnostic data is sent to Microsoft.
+By default, both optional and required diagnostic data are sent to Microsoft.
 
 ### Cloud delivered protection data
 
 Cloud delivered protection is used to provide increased and faster protection with access to the latest protection data in the cloud.
 
-Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides very important protection against malware on your endpoints and across your network.
+Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides important protection against malware on your endpoints and across your network.
 
 ### Sample data
 
 Sample data is used to improve the protection capabilities of the product, by sending Microsoft suspicious samples so they can be analyzed. Enabling automatic sample submission is optional.
 
-When this feature is enabled and the sample being collected is likely to contain personal information, the user is prompted for consent.
+When this feature is enabled and the sample that is collected is likely to contain personal information, the user is prompted for consent.
 
 ## Manage privacy controls with policy settings
 
-If you're an IT administrator, you might be interested in configuring these controls at the enterprise level. 
+If you're an IT administrator, you might want to configure these controls at the enterprise level. 
 
-The privacy controls for the various type of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
 
-As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings you configure have the desired effect before you implement the policy settings more widely in your organization.
+As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
 ## Diagnostic data events
 
@@ -73,23 +73,23 @@ The following fields are considered common for all events:
 
 | Field                   | Description |
 | ----------------------- | ----------- |
-| platform                | The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue. |
-| machine_guid            | Unique identifier associated with the device. Allows us to identify whether issues are impacting a select set of installs and how many users are impacted. |
-| sense_guid              | Unique identifier associated with the device. Allows us to identify whether issues are impacting a select set of installs and how many users are impacted. |
-| org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows us to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
-| hostname                | Local machine name (without DNS suffix). Allows us to identify whether issues are impacting a select set of installs and how many users are impacted. |
-| product_guid            | Unique identifier of the product. Allows us to differentiate issues impacting different flavors of the product. |
-| app_version             | Version of the Microsoft Defender ATP for Mac application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.|
-| sig_version             | Version of security intelligence database. Allows us to identify which versions of the security intelligence are showing an issue so that we can correctly prioritize it. |
-| supported_compressions  | List of compression algorithms supported by the application, e.g. `['gzip']`. Allows us to understand what types of compressions can be used when communicating with the application. |
-| release_ring            | Ring that the device is associated with (e.g. Insider Fast, Insider Slow, Production). Allows us to identify on which release ring an issue may be occurring so that we can correctly prioritize the issue. |
+| platform                | The broad classification of the platform on which the app is running. Allows Microsoft to identify on which platforms an issue may be occurring so that it can correctly be prioritized. |
+| machine_guid            | Unique identifier associated with the device. Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
+| sense_guid              | Unique identifier associated with the device. Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
+| org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
+| hostname                | Local machine name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
+| product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
+| app_version             | Version of the Microsoft Defender ATP for Mac application. Allows us to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
+| sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
+| supported_compressions  | List of compression algorithms supported by the application, for example `['gzip']`. Allows Microsoft to understand what types of compressions can be used when it communicates with the application. |
+| release_ring            | Ring that the device is associated with (for example Insider Fast, Insider Slow, Production). Allows Microsoft to identify on which release ring an issue may be occurring so that it can correctly be prioritized. |
 
 
 ### Required diagnostic data
 
 **Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender ATP secure, up-to-date, and performing as expected on the device it’s installed on.
 
-Required diagnostic data helps to identify problems with Microsoft Defender ATP that may be related to a device or software configuration. For example, it can help determine if an Microsoft Defender ATP feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Microsoft Defender ATP features are disabled. Required diagnostic data helps us detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
+Required diagnostic data helps to identify problems with Microsoft Defender ATP that may be related to a device or software configuration. For example, it can help determine if a Microsoft Defender ATP feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Microsoft Defender ATP features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
 #### Software setup and inventory data events
 
@@ -101,8 +101,8 @@ The following fields are collected:
 | ---------------- | ----------- |
 | correlation_id   | Unique identifier associated with the installation. |
 | version          | Version of the package being installed. |
-| severity         | Severity of the message (e.g. Informational). |
-| code             | Code describing the operation. |
+| severity         | Severity of the message (for example Informational). |
+| code             | Code that describes the operation. |
 | text             | Additional information associated with the product installation. |
 
 **Microsoft Defender ATP configuration**
@@ -111,9 +111,9 @@ The following fields are collected:
 
 | Field                                               | Description |
 | --------------------------------------------------- | ----------- |
-| antivirus_engine.enable_real_time_protection        | Whether real time protection is enabled on the device or not. |
+| antivirus_engine.enable_real_time_protection        | Whether real-time protection is enabled on the device or not. |
 | cloud_service.enabled                               | Whether cloud delivered protection is enabled on the device or not. |
-| cloud_service.timeout                               | Timeout when communicating with the Microsoft Defender ATP cloud. |
+| cloud_service.timeout                               | Time out when the application communicates with the Microsoft Defender ATP cloud. |
 | cloud_service.heartbeat_interval                    | Interval between consecutive heartbeats sent by the product to the cloud. |
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
@@ -139,7 +139,7 @@ The following fields are collected:
 
 **Diagnostic logs**
 
-Diagnostic logs are collected only with the user's consent as part of the feedback submission feature. The following files are collected as part of the support logs:
+Diagnostic logs are collected only with the consent of the user as part of the feedback submission feature. The following files are collected as part of the support logs:
 
 - All files under */Library/Logs/Microsoft/mdatp/*
 - Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender ATP for Mac
@@ -147,11 +147,11 @@ Diagnostic logs are collected only with the user's consent as part of the feedba
 
 ### Optional diagnostic data
 
-**Optional diagnostic data** is additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
+**Optional diagnostic data** is additional data that helps Microsoft make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included.
 
-Examples of optional diagnostic data include data we collect about product configuration (e.g. number of exclusions set on the device) and product performance (aggregate measures about the performance of components of the product).
+Examples of optional diagnostic data include data Microsoft collects about product configuration (for example number of exclusions set on the device) and product performance (aggregate measures about the performance of components of the product).
 
 #### Software setup and inventory data events
 
@@ -182,7 +182,7 @@ The following fields are collected:
 
 | Field                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Determines how product updates are checked (e.g. automatic, manual). |
+| how_to_check                | Determines how product updates are checked (for example automatic or manual). |
 | channel_name                | Update channel associated with the device. |
 | manifest_server             | Server used for downloading updates. |
 | update_cache                | Location of the cache used to store updates. |
@@ -222,7 +222,7 @@ The following fields are collected:
 
 | Field                          | Description |
 | ------------------------------ | ----------- |
-| pkt_ack_timeout                | All of the following properties are aggregated numerical values, representing count of events that happened since kernel extension startup. |
+| pkt_ack_timeout                | The following properties are aggregated numerical values, representing count of events that happened since kernel extension startup. |
 | pkt_ack_conn_timeout           | |
 | ipc.ack_pkts                   | |
 | ipc.nack_pkts                  | |
