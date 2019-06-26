@@ -1,7 +1,7 @@
 ---
 title: Stream Microsoft Defender Advanced Threat Protection event 
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub or Azure storage account
-keywords: raw data export, streaming API, API, Event hub, Azure storage, storage account, Advanced Hunting, raw data sharing
+keywords: raw data export, streaming API, API, Event Hub, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -25,15 +25,15 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## Stream Advanced Hunting events to your event hub and/or Azure storage account.
+## Stream Advanced Hunting events to your Event Hub and/or Azure storage account.
 
-Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting.md) to an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/en-us/azure/event-hubs/).
+Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting.md) to an [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
 ## In this section
 
 Topic | Description
 :---|:---
-[Stream Microsoft Defender ATP events to your event hub](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to your event hub.
+[Stream Microsoft Defender ATP events to your Event Hub](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to your Event Hub.
 [Stream Microsoft Defender ATP events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to your Azure storage account.
 
 
