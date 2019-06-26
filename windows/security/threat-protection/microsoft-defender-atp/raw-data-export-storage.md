@@ -23,25 +23,25 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## Preparations:
+## Before you begin:
 
-- Create a [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) in your tenant.
-- Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
+1. Create a [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) in your tenant.
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
 ## Enable raw data streaming:
 
-- Log in to [MDATP portal](https://securitycenter.windows.com) with Global Admin user.
-- Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on MDATP portal.
-- Click on **Add data export settings**.
-- Choose a Name to your new settings.
-- Choose **Forward events to Azure Storage**
-- Type your **Storage Account Resource Id**.
-  In order to get your **Storage Account Resource Id**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
+1. Log in to [Microsoft Defender ATP portal](https://securitycenter.windows.com) with Global Admin user.
+2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender ATP portal.
+3. Click on **Add data export settings**.
+4. Choose a Name to your new settings.
+5. Choose **Forward events to Azure Storage**
+6. Type your **Storage Account Resource Id**. In order to get your **Storage Account Resource Id**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
 
   ![Image of event hub resource Id](images/storage-account-resource-id.png)
-- Choose the events you want to stream and click Save.
+
+7. Choose the events you want to stream and click Save.
 
 ## The schema of the events in the Storage account:
 
@@ -61,7 +61,7 @@ ms.topic: article
 ```
 
 - each blob contains multiple rows.
-- Each raw contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in Json format in a property called "properties".
+- Each raw contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in JSON format in a property called "properties".
 - Check out [Advanced Hunting overview](overview-hunting.md) to learn about the schema of WDATP events.
 
 ## Data types mapping:
@@ -79,10 +79,10 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Machine Info event: 
 
-![Image of event hub resource Id](images/machine-info-datatype-example.png)
+![Image of event hub resource ID](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](overview-hunting.md)
-- [MDATP Streaming API](raw-data-export.md)
-- [Stream MDATP events to your Azure storage account](raw-data-export-storage.md)
+- [Microsoft Defender Advanced Threat Protection Streaming API](raw-data-export.md)
+- [Stream Microsoft Defender Advanced Threat Protection events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
