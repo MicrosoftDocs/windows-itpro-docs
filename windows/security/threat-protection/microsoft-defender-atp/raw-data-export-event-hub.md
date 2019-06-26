@@ -1,7 +1,7 @@
 ---
 title: Stream Microsoft Defender Advanced Threat Protection events. 
-description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hubs.
-keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
+description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub.
+keywords: raw data export, streaming API, API, Event Hub, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -27,7 +27,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 ## Before you begin:
 
-1. Create an [Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
+1. Create an [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
 ## Enable raw data streaming:
