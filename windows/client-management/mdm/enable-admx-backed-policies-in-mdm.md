@@ -289,7 +289,7 @@ The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualiza
 
 The \<Data> payload is empty. Here an example to set AppVirtualization/PublishingAllowServer2 to "Not Configured."
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>

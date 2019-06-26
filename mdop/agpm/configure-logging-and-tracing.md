@@ -51,7 +51,7 @@ A user account with the AGPM Administrator (Full Control) role, the user account
 
 ### Additional considerations
 
--   You must be able to edit and deploy a GPO to confige AGPM logging and tracing. See [Editing a GPO](editing-a-gpo.md) and [Deploy a GPO](deploy-a-gpo.md) for additional detail.
+-   You must be able to edit and deploy a GPO to configure AGPM logging and tracing. See [Editing a GPO](editing-a-gpo.md) and [Deploy a GPO](deploy-a-gpo.md) for additional detail.
 
 ### Additional references
 

@@ -375,7 +375,7 @@ This table summarize what customers can purchase, depending on which Microsoft S
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 > - Admins can acquire free apps from **Microsoft Store for Education**.
 > - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-> - Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
+> - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 

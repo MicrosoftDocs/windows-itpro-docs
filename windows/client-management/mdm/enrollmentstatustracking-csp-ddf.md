@@ -18,7 +18,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 ### EnrollmentStatusTracking CSP
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

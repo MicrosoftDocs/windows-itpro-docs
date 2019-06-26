@@ -6562,12 +6562,12 @@
 },
 {
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-managemement-windows-store-for-business",
+"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/app-inventory-managemement-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-managemement-microsoft-store-for-business",
+"redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -15045,6 +15045,11 @@
 {
 "source_path": "windows/device-security/index.md",
 "redirect_url": "/windows/security/threat-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/internet-explorer/ie11-deploy-guide/group-policy-compatability-with-ie11.md",
+"redirect_url": "/browsers/internet-explorer/ie11-deploy-guide/group-policy-compatibility-with-ie11",
 "redirect_document_id": true
 }
 ]

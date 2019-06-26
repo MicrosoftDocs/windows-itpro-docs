@@ -27,7 +27,7 @@ Dynamic Code Security is not enabled by default because existing policies may no
 Additionally, a small number of .NET loading features, including loading unsigned assemblies built with System.Reflection.Emit, are not currently supported with Dynamic Code Security enabled. 
 Microsoft recommends testing Dynamic Code Security in audit mode before enforcing it to discover whether any new libraries should be included in the policy. 
 
-To enable Dynamic Code Security, add the following option to the <Rules> section of your policy: 
+To enable Dynamic Code Security, add the following option to the `<Rules>` section of your policy: 
 
 ```xml
 <Rule> 
