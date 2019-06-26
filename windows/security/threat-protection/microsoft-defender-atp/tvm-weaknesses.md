@@ -1,7 +1,7 @@
 ---
 title: Weaknesses
-description: Expand your visibility into the overall security configuration posture of your organization
-keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+description: The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, breach, and threat insights    
+keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,16 +21,13 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Short description.
+Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
+The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights. 
 
 ## Navigate through weaknesses page
-XXXX 
-
-## How it works
-
-XXXX 
-
+1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
+2. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: The Common Vulnerabilities and Exposures (CVE) description, CVE ID, exploits available, severity, publish, and update dates.    
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
