@@ -30,7 +30,7 @@ ms.topic: article
 - Create an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
 - Log in to your [Azure tenant](https://ms.portal.azure.com/), go to – Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
-## Enable raw data streaming: 
+## Enable raw data streaming:
 
 - Log in to [MDATP portal](https://securitycenter.windows.com) with Global Admin user.
 - Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on MDATP portal.
@@ -43,7 +43,43 @@ ms.topic: article
   ![Image of event hub resource Id](images/event-hub-resource-id.png)
 - Choose the events you want to stream and click Save.
 
+## The schema of the events in the Event-Hub:
 
+```
+{
+	"records": [
+					{
+						"time": " <The time WDATP received the event> "
+						"tenantId": "  <The Id of the tenant that the event belongs to> "
+						"category": " <The Advanced Hunting table name with 'AdvancedHunting-' prefix> "
+						"properties": { <WDATP Advanced Hunting event as Json> }
+					}
+					…
+				]
+}
+
+```
+
+- As you can see, each event hub message in the Event-Hub contains list of records.
+- Each record contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in Json format in a property called "properties".
+- Check out [Advanced Hunting overview](overview-hunting) to learn about the schema of WDATP events.
+
+## Data types mapping:
+
+In order to get the data types for our events properties do the following:
+
+- Login to our portal and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+- Run the following query to get the data types mapping for each event: 
+```
+{EventType}
+| getschema
+| project ColumnName, ColumnType 
+
+```
+
+- Here is an example for Machine Info event: 
+
+![Image of event hub resource Id](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](overview-hunting)
