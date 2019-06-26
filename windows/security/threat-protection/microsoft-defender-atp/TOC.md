@@ -92,7 +92,7 @@
 ##### [Advanced hunting reference](advanced-hunting-reference.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
 #### [Custom detections](overview-custom-detections.md)
-#####[Create custom detections rules](custom-detection-rules.md)
+##### [Create custom detections rules](custom-detection-rules.md)
 
 ### [Management and APIs](management-apis.md)
 #### [Understand threat intelligence concepts](threat-indicator-concepts.md)
