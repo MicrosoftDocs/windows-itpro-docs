@@ -72,8 +72,8 @@ See [Microsoft Defender ATP icons](https://docs.microsoft.com/windows/security/t
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Configuration score](configuration-score.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
