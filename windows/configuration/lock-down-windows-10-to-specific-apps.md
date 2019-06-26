@@ -194,7 +194,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
 
 ##### FileExplorerNamespaceRestrictions
 
-Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This can also set using Microsoft Intune.
+Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This can also be set using Microsoft Intune.
 
 The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
