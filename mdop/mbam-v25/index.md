@@ -10,13 +10,11 @@ ms.prod: w10
 ms.date: 04/19/2017
 ---
 
-
 # Microsoft BitLocker Administration and Monitoring 2.5
-
 
 Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 provides a simplified administrative interface that you can use to manage BitLocker Drive Encryption. You configure MBAM Group Policy Templates that enable you to set BitLocker Drive Encryption policy options that are appropriate for your enterprise, and then use them to monitor client compliance with those policies. You can also report on the encryption status of an individual computer and on the enterprise as a whole. In addition, you can access recovery key information when users forget their PIN or password or when their BIOS or boot record changes. For a more detailed description of MBAM, see [About MBAM 2.5](about-mbam-25.md).
 
-To obtain MBAM, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
+To obtain MBAM, see [How Do I Get MDOP](index.md#how-to-get-mdop).
 
 ## Outline
 
@@ -57,16 +55,16 @@ To obtain MBAM, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=
   - [Client Event Logs](client-event-logs.md)
   - [Server Event Logs](server-event-logs.md)
 
-### More Information
+## More Information
 
--   [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)
+- [MDOP Information Experience](index.md)
 
-    Find documentation, videos, and other resources for MDOP technologies.
+  Find documentation, videos, and other resources for MDOP technologies.
 
--   [MBAM Deployment Guide](https://www.microsoft.com/download/details.aspx?id=38398)
+- [MBAM Deployment Guide](https://www.microsoft.com/download/details.aspx?id=38398)
 
-    Get help in choosing a deployment method for MBAM, including step-by-step instructions for each method.
+  Get help in choosing a deployment method for MBAM, including step-by-step instructions for each method.
     
--   [Apply Hotfixes on MBAM 2.5 SP1 Server](apply-hotfix-for-mbam-25-sp1.md)
+- [Apply Hotfixes on MBAM 2.5 SP1 Server](apply-hotfix-for-mbam-25-sp1.md)
 
-    Guide of how to apply MBAM 2.5 SP1 Server hotfixes
+  Guide of how to apply MBAM 2.5 SP1 Server hotfixes
