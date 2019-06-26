@@ -25,24 +25,14 @@ The cybersecurity weaknesses identified in your organization are mapped to actio
 
 Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and SCCM. It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collect information from your environment. 
 
-## The basis of your security recommendation
-
+## The basis of the security recommendation
 Each machine in the organization is scored based on three important factors: threat, likelihood to be breached, and value, to help customers to focus on the right things at the right time.
 
-Threat landscape
-- Vulnerability characteristics (CVSS score, days vulnerable)
-- Exploit characteristics (public exploit and difficulty, whether it is included in a bundle or exploit kit)
-- Endpoint detection and response (EDR) security alerts (active alerts, breach history)
-- Threat analytics (live campaigns, threat actors)
+Threat - Characteristics of the vulnerabilities and exploits in your devices and breach history. Based on these factors, the security recommendations shows the correponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports. 
 
-Breach likelihood
-- Current security posture
-- Internet facing
-- Exploit attempts in the organization
+Breach likelihood - Current security posture and resilience against threats
 
-Business value
-- High value asset (HVA) analysis (Windows Information Protection, HVU, critical process)
-- Run-time and dependency analysis
+Business value - Your organization's assets, critical processes, and intellectual properties
 
 
 ## Navigate through your security recommendations
