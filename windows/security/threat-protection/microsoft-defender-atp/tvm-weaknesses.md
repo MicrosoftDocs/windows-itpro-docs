@@ -1,6 +1,6 @@
 ---
 title: Weaknesses
-description: The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, breach, and threat insights    
+description: The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, breach, and threat insights.    
 keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -37,13 +37,14 @@ You can see the list of vulnerabilities in two ways:
 2. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: The CVE) description, CVE ID, exploits available, severity, publish, and update dates.    
 
 ## How it works
-When new vulnerabilities are released, you would want know how many of your assets are exposed. If the **Exposed Machines** column shows, 0, that means you are not infected. 
+When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. If the **Exposed Machines** column shows, 0, that means you are not infected. 
 
-If there's a number, that means you need to remediate the vulnerabilities in those machines because it is puts the rest of your assets and your organization at risk. You can also see the related alert and threat insights in the **Threat** column.
+If there's a number in the **Exposed Machines**, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
+
+You can also see the related alert and threat insights in the **Threat** column.
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
-
 
 
 ## Related topics
