@@ -87,8 +87,6 @@
 
 ### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
-### [Threat analytics](threat-analytics.md)
-
 ### [Advanced hunting](overview-hunting.md)
 #### [Query data using Advanced hunting](advanced-hunting.md)
 ##### [Advanced hunting reference](advanced-hunting-reference.md)
