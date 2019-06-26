@@ -21,6 +21,8 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!includePrerelease information]
+
 ## Before you begin
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
