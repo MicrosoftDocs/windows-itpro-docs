@@ -1,7 +1,7 @@
 ---
 title: Stream Microsoft Defender Advanced Threat Protection events. 
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Storage account.
-keywords: raw data export, streaming API, API, Event hub, Azure storage, storage account, Advanced Hunting, raw data sharing
+keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
