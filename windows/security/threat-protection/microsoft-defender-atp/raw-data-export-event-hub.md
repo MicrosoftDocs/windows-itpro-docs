@@ -54,7 +54,7 @@ ms.topic: article
 						"category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
 						"properties": { <WDATP Advanced Hunting event as Json> }
 					}
-					…
+					...
 				]
 }
 ```
