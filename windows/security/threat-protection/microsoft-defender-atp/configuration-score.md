@@ -21,6 +21,8 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!include[Prerelease information](prerelease.md)]
+
 >[!NOTE]
 >  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
 
