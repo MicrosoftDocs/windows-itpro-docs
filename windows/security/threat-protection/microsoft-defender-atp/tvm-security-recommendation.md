@@ -30,11 +30,11 @@ Each security recommendation includes an actionable remediation recommendation w
 ## The basis of the security recommendation
 Each machine in the organization is scored based on three important factors: threat, likelihood to be breached, and value, to help customers to focus on the right things at the right time.
 
-Threat - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations shows the correponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports. 
+- Threat - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations shows the correponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports. 
 
-Breach likelihood - Your organization's security posture and resilience against threats
+- Breach likelihood - Your organization's security posture and resilience against threats
 
-Business value - Your organization's assets, critical processes, and intellectual properties
+- Business value - Your organization's assets, critical processes, and intellectual properties
 
 
 ## Navigate through your security recommendations
