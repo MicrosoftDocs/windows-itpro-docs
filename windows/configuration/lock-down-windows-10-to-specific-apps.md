@@ -199,7 +199,7 @@ Starting in Windows 10, version 1809, you can explicitly allow some known folder
 The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
 >[!NOTE]
->You can grant access to the Downloads folder through the File Explorer by adding "Explorer.exe" to the list of allowed apps and pinning a file explorer shortcut to the kiosk start menu.
+> To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
