@@ -28,7 +28,7 @@ ms.topic: article
 ## Preparations:
 
 - Create an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
-- Log in to your [Azure tenant](https://ms.portal.azure.com/), go to – Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
+- Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
 ## Enable raw data streaming:
 
@@ -37,8 +37,8 @@ ms.topic: article
 - Click on **Add data export settings**.
 - Choose a Name to your new settings.
 - Choose **Forward events to Azure Event Hub**
-- Type your **Event hub name** and your **Event hub resource Id**
-  In order to get your **Event hub resource Id**, go to your Event hub namespace page on Azure > properties tab > copy the text under **Resource ID**:
+- Type your **Event hub name** and your **Event hub resource Id**.
+  In order to get your **Event hub resource Id**, go to your Event hub namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
 
   ![Image of event hub resource Id](images/event-hub-resource-id.png)
 - Choose the events you want to stream and click Save.
@@ -61,7 +61,7 @@ ms.topic: article
 
 - As you can see, each event hub message in the Event-Hub contains list of records.
 - Each record contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in Json format in a property called "properties".
-- Check out [Advanced Hunting overview](overview-hunting) to learn about the schema of WDATP events.
+- Check out [Advanced Hunting overview](overview-hunting.md) to learn about the schema of WDATP events.
 
 ## Data types mapping:
 
@@ -81,5 +81,7 @@ In order to get the data types for our events properties do the following:
 ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 
 ## Related topics
-- [Overview of Advanced Hunting](overview-hunting)
+- [Overview of Advanced Hunting](overview-hunting.md)
+- [MDATP Streaming API](raw-data-export.md)
+- [Stream MDATP events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Event Hub documentation](https://docs.microsoft.com/en-us/azure/event-hubs/)

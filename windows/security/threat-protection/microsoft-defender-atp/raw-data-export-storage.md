@@ -62,7 +62,7 @@ ms.topic: article
 
 - each blob contains multiple rows.
 - Each raw contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in Json format in a property called "properties".
-- Check out [Advanced Hunting overview](overview-hunting) to learn about the schema of WDATP events.
+- Check out [Advanced Hunting overview](overview-hunting.md) to learn about the schema of WDATP events.
 
 ## Data types mapping:
 
@@ -82,5 +82,7 @@ In order to get the data types for our events properties do the following:
 ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 
 ## Related topics
-- [Overview of Advanced Hunting](overview-hunting)
+- [Overview of Advanced Hunting](overview-hunting.md)
+- [MDATP Streaming API](raw-data-export.md)
+- [Stream MDATP events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
