@@ -75,6 +75,7 @@
 
 ### [Automated investigation and remediation](automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation.md)
+#### [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)
 
 
 ### [Secure score](overview-secure-score.md)
