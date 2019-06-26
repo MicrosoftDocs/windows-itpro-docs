@@ -39,7 +39,7 @@ You can see the list of vulnerabilities in two ways:
 ## How it works
 When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
 
-If the **Exposed Machines** column shows, 0, that means you are not infected. 
+If the **Exposed Machines** column shows 0, that means you are not infected. 
 
 If there's a number in the **Exposed Machines**, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
 
