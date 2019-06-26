@@ -28,7 +28,7 @@ ms.topic: article
 ## Preparations:
 
 - Create an [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) in your tenant.
-- Log in to your [Azure tenant](https://ms.portal.azure.com/), go to – Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
+- Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
 ## Enable raw data streaming:
 
@@ -37,7 +37,7 @@ ms.topic: article
 - Click on **Add data export settings**.
 - Choose a Name to your new settings.
 - Choose **Forward events to Azure Storage**
-- Type your **Storage Account Resource Id**
+- Type your **Storage Account Resource Id**.
   In order to get your **Storage Account Resource Id**, go to your Storage account page on Azure > properties tab > copy the text under **Storage account resource ID**:
 
   ![Image of event hub resource Id](images/storage-account-resource-id.png)
