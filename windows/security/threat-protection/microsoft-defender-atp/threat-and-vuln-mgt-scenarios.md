@@ -120,7 +120,7 @@ Security Administrators like you can request for the IT Administrator to remedia
 See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
->If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune at a time. Create another remediation request for the remaining machines up to 10,000.
+>If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune.
 
 ## File for exception
 With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to requesting for remediation.
