@@ -27,17 +27,17 @@ ms.topic: article
 
 ## Stream Advanced Hunting events to your event hub and/or Azure storage account.
 
-Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting) to an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/en-us/azure/event-hubs/).
+Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting.md) to an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
 ## In this section
 
 Topic | Description
 :---|:---
-[Stream MDATP events to your event hub](enable-siem-integration.md)| Learn about enabling the streaming API in your tenant and configure MDATP to stream [Advanced Hunting](overview-hunting) to your event hub.
-[Stream MDATP events to your Azure storage account](configure-splunk.md)| Learn about enabling the streaming API in your tenant and configure MDATP to stream [Advanced Hunting](overview-hunting) to your Azure storage account.
+[Stream MDATP events to your event hub](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure MDATP to stream [Advanced Hunting](overview-hunting.md) to your event hub.
+[Stream MDATP events to your Azure storage account](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure MDATP to stream [Advanced Hunting](overview-hunting.md) to your Azure storage account.
 
 
 ## Related topics
-- [Overview of Advanced Hunting](overview-hunting)
+- [Overview of Advanced Hunting](overview-hunting.md)
 - [Azure Event Hub documentation](https://docs.microsoft.com/en-us/azure/event-hubs/)
 - [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
