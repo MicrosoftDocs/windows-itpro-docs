@@ -167,7 +167,7 @@ If the conditions are not true, the device will not Roll Back the Latest Quality
 <a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**
 Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machine meets the following conditions:
 
--  Condition 1: Device must be Windows Update for Business Connnected
+-  Condition 1: Device must be Windows Update for Business Connected
 -  Condition 2: Device must be in Paused State
 -  Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
 -  Condition 4: Machine should be within the uninstall period

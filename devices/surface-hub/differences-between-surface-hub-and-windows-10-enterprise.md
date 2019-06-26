@@ -127,13 +127,13 @@ The administrative features in Windows 10 Enterprise, such as the Microsoft Mana
 
 ### Remote management and monitoring
 
-Surface Hub supports remote management through mobile device management (MDM), and monitoring through Operations Management Suite (OMS).
+Surface Hub supports remote management through mobile device management (MDM) solutions such as [Microsoft Intune](https://docs.microsoft.com/en-us/intune/) and monitoring through [Azure Monitor](https://azure.microsoft.com/services/monitor/). 
 
 *Organization policies that this may affect:* <br> Surface Hub doesn't support installing Win32 agents required by most traditional PC management and monitoring tools, such as System Center Operations Manager.
 
-### Group policy
+### Group Policy
 
-Surface Hub does not support group policy, including auditing. Instead, use MDM to apply policies to your Surface Hub. For more information about MDM, see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
+Surface Hub does not support Windows Group Policy, including auditing. Instead, use MDM to apply policies to your Surface Hub. For more information about MDM, see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
 
 *Organization policies that this may affect:* <br> Use MDM to manage Surface Hub rather than group policy.
 

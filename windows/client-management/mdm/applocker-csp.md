@@ -950,7 +950,7 @@ The following example for Windows 10 Mobile denies all apps and allows the follo
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML>
   <SyncBody>
@@ -1663,7 +1663,7 @@ The following example for Windows 10, version 1607 denies known unenlightened Mi
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML>
   <SyncBody>

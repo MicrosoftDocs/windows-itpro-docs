@@ -118,7 +118,7 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
    -   Creation of rules and task sequences for Windows deployment
 
-   ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
+   ![The installation progress window](images/sdasteps-fig5-installwindow.png "The installation progress window")
 
     *Figure 5. The Installation Progress window*
     

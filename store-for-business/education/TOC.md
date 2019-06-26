@@ -21,7 +21,7 @@
 ### [Distribute apps with a management tool](/microsoft-store/distribute-apps-with-management-tool?toc=/microsoft-store/education/toc.json)
 ### [Distribute offline apps](/microsoft-store/distribute-offline-apps?toc=/microsoft-store/education/toc.json)
 ## [Manage products and services](/microsoft-store/manage-apps-microsoft-store-for-business-overview?toc=/microsoft-store/education/toc.json)
-### [App inventory managemement for Microsoft Store for Business](/microsoft-store/app-inventory-management-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
+### [App inventory management for Microsoft Store for Business](/microsoft-store/app-inventory-management-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
 ### [Manage app orders in Microsoft Store for Business and Education](/microsoft-store/manage-orders-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
 ### [Manage access to private store](/microsoft-store/manage-access-to-private-store?toc=/microsoft-store/education/toc.json)
 ### [Manage private store settings](/microsoft-store/manage-private-store-settings?toc=/microsoft-store/education/toc.json)

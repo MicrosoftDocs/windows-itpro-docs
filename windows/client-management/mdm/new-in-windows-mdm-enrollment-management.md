@@ -1487,7 +1487,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>New and updated policies in Policy CSP</p></td>
 <td style="vertical-align:top"><p>The following policies have been added to the <a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a>:</p>
 <ul>
-<li>Accounts/DomainNamesForEmailSync</li>
 <li>ApplicationManagement/AllowWindowsBridgeForAndroidAppsExecution</li>
 <li>Bluetooth/ServicesAllowedList</li>
 <li>DataProtection/AllowAzureRMSForEDP</li>
