@@ -24,7 +24,7 @@ ms.date: 04/11/2019
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
-After your organization's cybersecurity weaknesses are identified and mapped to actionable security recommendations, you can start creating security tasks or ticket through the integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM).
+After your organization's cybersecurity weaknesses are identified and mapped to actionable security recommendations, you can start creating security tasks through the integration with Microsoft Intune where remediation tickets are created.
 
 You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
