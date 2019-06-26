@@ -16,11 +16,11 @@ ms.localizationpriority: Normal
 
 ## Office 365 readiness
 
-You may use Exchange and Skype for Business on-premises with Surface Hub 2S. However, if you use Exchange Online, Skype for Business Online, Microsoft Teams or Microsoft Whiteboard, and intend to manage Surface Hub 2S with Intune, first review the [Office 365 requirements for endpoints](https://docs.microsoft.com/en-us/office365/enterprise/office-365-endpoints).
+You may use Exchange and Skype for Business on-premises with Surface Hub 2S. However, if you use Exchange Online, Skype for Business Online, Microsoft Teams or Microsoft Whiteboard, and intend to manage Surface Hub 2S with Intune, first review the [Office 365 requirements for endpoints](https://docs.microsoft.com/office365/enterprise/office-365-endpoints).
 
 Office 365 endpoints help optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This feature reduces latency and your perimeter capacity requirements.
 
-Microsoft regularly updates the Office 365 service with new features and functionality, which may alter required ports, URLs, and IP addresses. To evaluate, configure, and stay up-to-date with changes, subscribe to the [Office 365 IP Address and URL Web service](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+Microsoft regularly updates the Office 365 service with new features and functionality, which may alter required ports, URLs, and IP addresses. To evaluate, configure, and stay up-to-date with changes, subscribe to the [Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 ## Device affiliation
 
@@ -32,7 +32,7 @@ With the Windows 10 Team Edition operating system  —  that runs on Surface Hub
 
 ## No affiliation
 
-No affiliation is like having Surface Hub 2S in a workgroup with a different local Administrator account on each Surface Hub 2S. If you choose No affiliation, you must locally save the [Bitlocker Key to a USB thumb drive](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-key-management-faq). You can still enroll the device with Intune, however only the local admin can access the Settings app using the account credentials configured during OOBE. You can change the Administrator account password from the Settings app.
+No affiliation is like having Surface Hub 2S in a workgroup with a different local Administrator account on each Surface Hub 2S. If you choose No affiliation, you must locally save the [Bitlocker Key to a USB thumb drive](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-key-management-faq). You can still enroll the device with Intune, however only the local admin can access the Settings app using the account credentials configured during OOBE. You can change the Administrator account password from the Settings app.
 
 ## Active Directory Domain Services
 

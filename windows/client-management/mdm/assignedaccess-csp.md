@@ -134,7 +134,7 @@ Additionally, the Status payload includes the following fields:
 Supported operation is Get.
 
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
-Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. For more information, see [Shell Launcher](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher).
+Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shelllauncher).
 
 > [!Note]
 > You cannot set both ShellLauncher and KioskModeApp at the same time on the device.
@@ -844,6 +844,8 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
+Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD. 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
@@ -851,8 +853,11 @@ Status Get
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
     xmlns:default="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
     targetNamespace="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
     >
+
+    <xs:import namespace="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
@@ -875,6 +880,8 @@ Status Get
             <xs:element name="DefaultAction" type="default_action_t" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
         <xs:attribute name="Shell" type="xs:string" use="required"/>
+        <xs:attribute ref="V2:AppType"/>
+        <xs:attribute ref="V2:AllAppsFullScreen"/>
     </xs:complexType>
 
     <xs:complexType name="custom_shell_t">
@@ -885,10 +892,11 @@ Status Get
                     <xs:field xpath="@ReturnCode"/>
                 </xs:unique>
             </xs:element>
-            <!--if "DefaultAction" is not supplied, pre-defined default action is "restart the shell"-->
             <xs:element name="DefaultAction" type="default_action_t" minOccurs="0" maxOccurs="1"/>
         </xs:all>
-        <xs:attribute name="Shell" type="xs:string" use="required"/>
+        <xs:attribute name="Shell" type="xs:string" />
+        <xs:attribute ref="V2:AppType"/>
+        <xs:attribute ref="V2:AllAppsFullScreen"/>
     </xs:complexType>
 
     <xs:complexType name="default_action_t">
@@ -931,7 +939,7 @@ Status Get
 
     <xs:complexType name="config_list_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element name="Config" type="config_t" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="Config" type="config_t" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -990,6 +998,31 @@ Status Get
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+</xs:schema>
+```
+### Shell Launcher V2 XSD
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    xmlns:default="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    targetNamespace="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    >
+
+    <xs:attribute name="AppType">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UWP"/>
+          <xs:enumeration value="Desktop"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="AllAppsFullScreen" type="xs:boolean"/>
+
 </xs:schema>
 ```
 
@@ -1110,6 +1143,61 @@ ShellLauncherConfiguration Add AutoLogon
     <Final />
   </SyncBody>
 </SyncML>
+```
+
+ShellLauncher V2 Add
+```
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>
+        <![CDATA[
+        <?xml version="1.0" encoding="utf-8"?>
+        <!--Using the http://schemas.microsoft.com/ShellLauncher/2019/Configuration namespace will opt-in to customshellhost.exe experience which can run win32 and UWP apps-->
+        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+            <Profiles>
+                <DefaultProfile> 
+                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"--> 
+                        <DefaultAction Action="RestartShell"/> 
+                    </Shell> 
+                </DefaultProfile> 
+                <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
+                    <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
+                        <ReturnCodeActions>
+                            <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+                            <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+                            <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+                            <ReturnCodeAction ReturnCode="1" Action="DoNothing"/>
+                        </ReturnCodeActions>
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </Profile>
+            </Profiles>
+            <Configs>
+                <Config>
+                    <Account Name="sluser1"/>
+                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
+                </Config>
+            </Configs>
+        </ShellLauncherConfiguration>
+        ]]>
+        </Data>
+      </Item>
+    </Add>
+    <Final />
+  </SyncBody>
+</SyncML>
+
 ```
 
 ShellLauncherConfiguration Get

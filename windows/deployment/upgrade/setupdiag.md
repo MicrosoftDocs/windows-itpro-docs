@@ -404,9 +404,9 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 
 ### XML log sample
 
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
   <Version>1.5.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
@@ -449,7 +449,7 @@ Error: 0x00000057</FailureData>
   <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
   <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
   <FailureData>
-Refer to "https://docs.microsoft.com/en-us/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
+Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
   <FailureDetails>Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel</FailureDetails>
 </SetupDiag>
 ```

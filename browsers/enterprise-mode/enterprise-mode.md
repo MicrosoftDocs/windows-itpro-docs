@@ -54,6 +54,6 @@ You can build and manage your Enterprise Mode Site List is by using any generic 
 ### Add a single site to the site list
 
 
-### Add mulitple sites to the site list
+### Add multiple sites to the site list
 
 

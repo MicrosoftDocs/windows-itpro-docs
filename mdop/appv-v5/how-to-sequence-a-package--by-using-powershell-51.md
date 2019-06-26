@@ -56,7 +56,7 @@ Before you use this procedure you must copy the associated installer files to th
 
     -   InstallMediaPath - specifies the path to where the installation media is
 
-    -   TemplateFilePath - specifies the path to a template fileif you want to customize the sequencing process.
+    -   TemplateFilePath - specifies the path to a template file if you want to customize the sequencing process.
 
     -   FullLoad - specifies that the package must be fully downloaded to the computer running the App-V 5.1 before it can be opened.
 
