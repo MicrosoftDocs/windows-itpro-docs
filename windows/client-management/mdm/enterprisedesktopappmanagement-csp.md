@@ -265,7 +265,7 @@ The following table describes the fields in the previous sample:
 <td>Add</td>
 <td>This is required to precede the Exec command.
 <ul>
-<li>CmdID - Input value used to reference the request. Reponses includes this value, which can be use to match the request and response.</li>
+<li>CmdID - Input value used to reference the request. Responses includes this value, which can be use to match the request and response.</li>
 <li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.</li>
 </ul></td>
 </tr>
@@ -411,7 +411,7 @@ The following table MsiInstallJob describes the schema elements.
 
 Here is an example of a common response to a request
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <SyncML>
   <SyncHdr />

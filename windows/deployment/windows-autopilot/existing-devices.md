@@ -62,7 +62,7 @@ See the following examples.
 
     #### Install required modules
 
-    ```
+    ```powershell
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
     Install-Module AzureAD -Force
     Install-Module WindowsAutopilotIntune -Force
@@ -71,7 +71,7 @@ See the following examples.
 3. Enter the following lines and provide Intune administrative credentials
    - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
 
-     ```
+     ```powershell
      Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
      ```
      The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
@@ -87,7 +87,7 @@ See the following examples.
 
     #### Retrieve profiles in Autopilot for existing devices JSON format
 
-    ```
+    ```powershell
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     ```
 
@@ -126,7 +126,7 @@ See the following examples.
 
 5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below: (use the horizontal scroll bar at the bottom if needed to view the entire command string)
 
-    ```
+    ```powershell
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON | Out-File c:\Autopilot\AutopilotConfigurationFile.json -Encoding ASCII
     ```
     **IMPORTANT**: The file name must be named **AutopilotConfigurationFile.json** in addition to being encoded as ASCII/ANSI. 
@@ -302,7 +302,7 @@ The Task Sequence will download content, reboot, format the drives and install W
 ![refresh-3](images/up-3.png)
 
 >[!NOTE]
->If joining devices to Active Directory (Hybrid Azure AD Join), it is necessary to create a Domain Join device configuration profile that is targeted to "All Devices" (since there is no Azure Active Directory device object for the computer to do group-based targeting).  See [User-driven mode for hybrid Azure Active Directory join](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join) for more information.
+>If joining devices to Active Directory (Hybrid Azure AD Join), it is necessary to create a Domain Join device configuration profile that is targeted to "All Devices" (since there is no Azure Active Directory device object for the computer to do group-based targeting).  See [User-driven mode for hybrid Azure Active Directory join](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join) for more information.
 
 ### Register the device for Windows Autopilot
 

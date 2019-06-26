@@ -38,4 +38,4 @@ Use the following table to determine which Windows Firewall with Advanced Securi
 
 To examine details for a specific design, click the design title at the top of the column in the preceding table.
 
-**Next: **[Basic Firewall Policy Design](basic-firewall-policy-design.md)
+**Next:** [Basic Firewall Policy Design](basic-firewall-policy-design.md)

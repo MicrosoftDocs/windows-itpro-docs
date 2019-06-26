@@ -57,8 +57,7 @@ The table in this section lists the main Windows Defender Antivirus event IDs an
 
 
 
-<style type='text/css'> table.oridealign td,th { vertical-align: top; text-align: left; } </style>
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2" >Event ID: 1000</th>
 </tr>
@@ -2716,7 +2715,7 @@ This section provides the following information about Windows Defender Antivirus
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 
 
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2">Error code: 0x80508007</th>
 </tr>
@@ -2916,7 +2915,7 @@ The following error codes are used during internal testing of Windows Defender A
 If you see these errors, you can try to [update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.
 
 
-<table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="3">Internal error codes</th>
 </tr>
