@@ -53,8 +53,8 @@ The goal is to improve your configuration score by remediating the issues in the
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
