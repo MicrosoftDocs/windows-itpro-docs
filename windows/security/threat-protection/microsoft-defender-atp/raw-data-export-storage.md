@@ -38,7 +38,7 @@ ms.topic: article
 - Choose a Name to your new settings.
 - Choose **Forward events to Azure Storage**
 - Type your **Storage Account Resource Id**.
-  In order to get your **Storage Account Resource Id**, go to your Storage account page on Azure > properties tab > copy the text under **Storage account resource ID**:
+  In order to get your **Storage Account Resource Id**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
 
   ![Image of event hub resource Id](images/storage-account-resource-id.png)
 - Choose the events you want to stream and click Save.
