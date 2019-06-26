@@ -34,7 +34,7 @@ You can see the list of vulnerabilities in two ways:
 
 *Weaknesses page in the menu* 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: The CVE) description, CVE ID, exploits available, severity, publish, and update dates.    
+2. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: CVE description, CVE ID, exploits available, severity, publish, and update dates.    
 
 ## How it works
 When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. If the **Exposed Machines** column shows, 0, that means you are not infected. 
