@@ -7,6 +7,7 @@
 #### [Security recommendation](tvm-security-recommendation.md)
 #### [Remediation](tvm-remediation.md)
 #### [Software inventory](tvm-software-inventory.md)
+#### [Weaknesses](tvm-weaknesses.md)
 #### [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
