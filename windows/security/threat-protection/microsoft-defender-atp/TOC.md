@@ -122,7 +122,7 @@
 ### [Assign user access to the portal](assign-portal-access.md)
 
 ### [Evaluate Microsoft Defender ATP](evaluate-atp.md)
-####Evaluate attack surface reduction
+#### Evaluate attack surface reduction
 ##### [Hardware-based isolation](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Application control](../windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 ##### [Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
@@ -136,7 +136,7 @@
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
-###Hardware-based isolation
+### Hardware-based isolation
 #### [System integrity](../windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 #### [Application isolation](../windows-defender-application-guard/install-wd-app-guard.md)
 ##### [Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
@@ -366,7 +366,7 @@
 ### Configure Microsoft Threat Protection integration
 #### [Configure Conditional Access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
-####[Configure information protection in Windows](information-protection-in-windows-config.md)
+#### [Configure information protection in Windows](information-protection-in-windows-config.md)
 
 
 ### [Configure Microsoft Defender Security Center settings](preferences-setup.md)
@@ -388,14 +388,14 @@
 ##### [Enable Threat intel](enable-custom-ti.md)
 ##### [Enable SIEM integration](enable-siem-integration.md)
  
-####Rules
+#### Rules
 ##### [Manage suppression rules](manage-suppression-rules.md)
 ##### [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](manage-indicators.md)
 ##### [Manage automation file uploads](manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](manage-automation-folder-exclusions.md)
  
-####Machine management
+#### Machine management
 ##### [Onboarding machines](onboard-configure.md)
 ##### [Offboarding machines](offboard-machines.md)
  
@@ -404,7 +404,7 @@
 
 
 ## [Troubleshoot Microsoft Defender ATP](troubleshoot-overview.md)
-###Troubleshoot sensor state
+### Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status.md)
 #### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
 #### [Inactive machines](fix-unhealthy-sensors.md#inactive-machines)
@@ -414,7 +414,7 @@
 ### [Troubleshoot Microsoft Defender ATP service issues](troubleshoot-mdatp.md)
 #### [Check service health](service-status.md)
 
-###Troubleshoot attack surface reduction
+### Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
 #### [Collect diagnostic data for files](../windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
