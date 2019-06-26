@@ -1,7 +1,7 @@
 ---
 title: Stream Microsoft Defender Advanced Threat Protection events. 
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub.
-keywords: raw data export, streaming API, API, Event hub, Azure storage, storage account, Advanced Hunting, raw data sharing
+keywords: raw data export, streaming API, API, Event Hub, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure Microsoft Defender ATP to stream Advanced Hunting events to your Event hub
+# Configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 ## Before you begin:
 
-- Create an [Event hub](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
+- Create an [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/) in your tenant.
 - Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
 
 ## Enable raw data streaming:
@@ -37,13 +37,13 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 - Click on **Add data export settings**.
 - Choose a Name to your new settings.
 - Choose **Forward events to Azure Event Hub**
-- Type your **Event hub name** and your **Event hub resource Id**.
-  In order to get your **Event hub resource Id**, go to your Event hub namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
+- Type your **Event Hub name** and your **Event Hub resource Id**.
+  In order to get your **Event Hub resource Id**, go to your Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
 
-  ![Image of event hub resource Id](images/event-hub-resource-id.png)
+  ![Image of Event Hub resource Id](images/event-hub-resource-id.png)
 - Choose the events you want to stream and click Save.
 
-## The schema of the events in the Event-Hub:
+## The schema of the events in the Event Hub:
 
 ```
 {
@@ -59,7 +59,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 }
 ```
 
-- As you can see, each event hub message in the Event-Hub contains list of records.
+- As you can see, each Event Hub message in the Event Hub contains list of records.
 - Each record contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in Json format in a property called "properties".
 - Check out [Advanced Hunting overview](overview-hunting.md) to learn about the schema of WDATP events.
 
