@@ -34,7 +34,7 @@ You can use the Threat & Vulnerability Management capability in [Microsoft Defen
 - View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
 - Correlate EDR insights with endpoint vulnerabilities and process them 
 - Select remediation options, triage and track the remediation tasks
-- Select exception options and track exceptions
+- Select exception options and track active exceptions
 
 ## Threat & Vulnerability Management in Microsoft Defender Security Center
 When you open the portal, you’ll see the main areas of the capability:
