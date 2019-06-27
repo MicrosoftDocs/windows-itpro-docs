@@ -53,7 +53,7 @@ You also have the option to export all remediation activity data to CSV for reco
 
 The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
 
-However, if the security recommendation stemmed from a false positive findings, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. The exceptions you've filed will also show up in the **Remediation** page, in the **Exceptions** tab.
+However, if the security recommendation stemmed from a false positive finding, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. The exceptions you've filed will also show up in the **Remediation** page, in the **Exceptions** tab.
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
