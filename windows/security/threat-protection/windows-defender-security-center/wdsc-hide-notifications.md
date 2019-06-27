@@ -56,6 +56,10 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
+0. Download the latest Administrative templates for windows 10 v1809 from below Microsoft official site
+     **https://www.microsoft.com/en-us/download/details.aspx?id=57576**
+
+
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
@@ -74,6 +78,8 @@ You can hide all notifications that are sourced from the Windows Security app. T
 This can only be done in Group Policy.
 
 >[!IMPORTANT]
+
+
 >### Requirements
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
@@ -86,4 +92,14 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+7.  Corresponding registry key  for **Hide all notifications**
+   
+    **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+    **"DisableNotifications"=dword:00000001**
+    
+8.   Corresponding registry key  for **Hide not-critical notifications**
+
+     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+     **"DisableEnhancedNotifications"=dword:00000001**
+
+9. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
