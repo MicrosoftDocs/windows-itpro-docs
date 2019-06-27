@@ -38,19 +38,19 @@ If you have any feedback, please submit it to us by opening Microsoft Defender A
 - You must have a Microsoft Defender ATP subscription.
 - You must have access to the Microsoft Defender Security Center portal.
 - You should have beginner-level experience in macOS and BASH scripting. 
-- If doing a manual deployment, you must have administrative privileges on the machine.
+- If doing a manual deployment, you must have administrative privileges on the device.
 
 ### System requirements
 
 > [!CAUTION]
 > The three most recent released versions of macOS are supported. Beta versions of macOS are not supported.
 
-- macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
-- Disk space: 1GB
+- Supported macOS versions: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
+- Disk space: 650MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them:
 
 | Service        | Description                          | URL                                                                  |
 | -------------- | ------------------------------------ | -------------------------------------------------------------------- |
@@ -89,15 +89,15 @@ In general you'll need to take the following steps:
   - Via the command line tool:
     - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
 
-## How to configure Microsoft Defender ATP for Mac
-
-Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
-
 ## How to update Microsoft Defender ATP for Mac
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used.
 
 To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md)
+
+## How to configure Microsoft Defender ATP for Mac
+
+Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
 
 ## Resources
 
