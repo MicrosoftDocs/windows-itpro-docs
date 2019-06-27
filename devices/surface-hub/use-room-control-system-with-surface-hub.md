@@ -76,7 +76,7 @@ In Replacement PC mode, the power states are only Ready and Off and only change 
 | 0 | S5 | Off |
 | 5 | S0 | Ready |
 
-For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
+For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and responses. 
 
 | Command | State change| Response |
 | --- | --- | --- |

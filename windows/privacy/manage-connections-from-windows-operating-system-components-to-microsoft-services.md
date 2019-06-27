@@ -41,7 +41,7 @@ Applying the Windows Restricted Traffic Limited Functionality Baseline is the sa
 It is recommended that you restart a device after making configuration changes to it.
 Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
-To use Microsoft InTune cloud based device managment for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
+To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
@@ -604,7 +604,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](https://techcommunity.microsoft.com/t5/Networking-Blog/bg-p/NetworkingBlog).
 
 In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was `http://www.msftncsi.com`.
 
@@ -1465,7 +1465,7 @@ To turn this Off in the UI:
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
-In the **Vocie activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
+In the **Voice activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
 
 To turn this Off in the UI:
 
@@ -1671,7 +1671,7 @@ In Group Policy, configure:
 
 -OR-
 
-- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
    -and-
 

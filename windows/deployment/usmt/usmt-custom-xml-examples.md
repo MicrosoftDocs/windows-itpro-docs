@@ -134,7 +134,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
  
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
 <component type="Documents" context="User">

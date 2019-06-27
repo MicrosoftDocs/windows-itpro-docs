@@ -70,4 +70,4 @@ This GPO provides the following rules:
 
 -   A firewall exception rule to allow required network traffic for the WGBank dashboard program. This inbound rule allows network traffic for the program Dashboard.exe in the %ProgramFiles%\\WGBank folder. The rule is also filtered to only allow traffic on port 1551. This rule is applied only to the domain profile.
 
-**Next: **[Isolated Domain GPOs](isolated-domain-gpos.md)
+**Next:** [Isolated Domain GPOs](isolated-domain-gpos.md)

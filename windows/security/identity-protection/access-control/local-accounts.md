@@ -193,7 +193,7 @@ The DSMA is a well-known user account type.
 It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
 The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
 
-The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
+The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-\<ComputerIdentifier>-503 
 
 The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
 

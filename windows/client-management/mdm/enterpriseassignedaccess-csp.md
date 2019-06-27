@@ -107,7 +107,7 @@ aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.m
 
 Entry | Description
 ----------- | ------------
-Folder | A folder should be contained in <Applications/> node among with other <Application/> nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
+Folder | A folder should be contained in `<Applications/>` node among with other `<Application/>` nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
 
 Folder example:
 ``` syntax
@@ -422,7 +422,7 @@ To disable navigation buttons (such as Home or Back) in lockdown XML, you supply
 
 The following section contains a sample lockdown XML file that shows how to disable navigation buttons.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
     <Default>
@@ -521,7 +521,7 @@ The following sample file contains configuration for enabling tile manipulation.
 > [!NOTE]
 > Tile manipulation is disabled when you don’t have a `<Tiles>` node in lockdown XML, or if you have a `<Tiles>` node but don’t have the `<EnableTileManipulation>` node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
     <Default>

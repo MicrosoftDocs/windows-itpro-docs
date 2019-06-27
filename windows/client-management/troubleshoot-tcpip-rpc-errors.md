@@ -156,7 +156,7 @@ Netsh trace stop
 
 Open the traces in [Microsoft Network Monitor 3.4](troubleshoot-tcpip-netmon.md) or Message Analyzer and filter the trace for
 
-- Ipv4.address==<client-ip> and ipv4.address==<server-ip> and tcp.port==135 or just tcp.port==135 should help.
+- `Ipv4.address==<client-ip>` and `ipv4.address==<server-ip>` and `tcp.port==135` or just `tcp.port==135` should help.
 
 - Look for the “EPM” Protocol Under the “Protocol” column.
 
@@ -166,7 +166,7 @@ Open the traces in [Microsoft Network Monitor 3.4](troubleshoot-tcpip-netmon.md)
 
 - Check if we are connecting successfully to this Dynamic port successfully.
 
-- The filter should be something like this: tcp.port==<dynamic-port-allocated> and ipv4.address==<server-ip> 
+- The filter should be something like this: `tcp.port==<dynamic-port-allocated>` and `ipv4.address==<server-ip>` 
 
     ![Screenshot of Network Monitor with filter applied](images/tcp-ts-24.png)
 

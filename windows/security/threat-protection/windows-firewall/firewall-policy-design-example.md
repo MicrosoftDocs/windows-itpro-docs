@@ -110,5 +110,5 @@ The following groups were created by using the Active Directory Users and Comput
 
 In your own design, create a group for each computer role in your organization that requires different or additional firewall rules. For example, file servers and print servers require additional rules to allow the incoming network traffic for those functions. If a function is ordinarily performed on most devices on the network, you might consider adding devices performing those roles to the common default firewall GPO set, unless there is a security reason not to include it there.
 
-**Next: **[Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md)
+**Next:** [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md)
 
