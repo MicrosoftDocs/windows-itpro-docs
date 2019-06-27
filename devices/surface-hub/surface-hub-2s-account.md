@@ -45,7 +45,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 ### Finalize setup via PowerShell
 
 - **Skype for Business:** For Skype for Business only (on-premises or online), you can enable the Skype for Business object by running **Enable-CsMeetingRoom** to enable features such as Meeting room prompt for audio and Lobby hold.
-- **Calling features:** Regardless of your Office 365 licensing configuration, run *Enable-CsMeetingRoom* to enable features such as **Meeting room prompt for audio** and **Lobby hold**.
+
 - **Calendar:** Set **Calendar Auto processing** for this account.
 
 ## Create account using PowerShell
