@@ -64,6 +64,6 @@ Topic | Description
 :---|:---
 [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)| Track onboarding status of Intune-managed machines and onboard more machines through Intune. 
 [Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md) | Track baseline compliance and noncompliance. Deploy the security baseline to more Intune-managed machines.
-[Optimize ASR rule deployment and detections](configure-machines-asr) | Review rule deployment and tweak detections using impact analysis tools in Microsoft 365 security center.
+[Optimize ASR rule deployment and detections](configure-machines-asr.md) | Review rule deployment and tweak detections using impact analysis tools in Microsoft 365 security center.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
