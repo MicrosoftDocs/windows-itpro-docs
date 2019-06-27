@@ -32,7 +32,7 @@ You can lower down your organization's exposure from vulnerabilities and increas
 
 ## Navigate through your remediation options 
 You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
-1. From the fly-in page, you'll see the security recommendation details including your next steps. Click **Remediation options**.
+1. From the flyout panel, you'll see the security recommendation details including your next steps. Click **Remediation options**.
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
 
 >[!NOTE]
