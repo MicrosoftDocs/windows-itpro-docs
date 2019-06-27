@@ -70,7 +70,6 @@ The output from this command should look like this:
 >
 > `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
-
 > [!CAUTION]
 > We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
