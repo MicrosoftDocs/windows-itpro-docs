@@ -20,6 +20,10 @@ ms.topic: conceptual
 
 # Deploy updates for Microsoft Defender ATP for Mac
 
+**Applies to:**
+
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
 To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.

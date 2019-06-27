@@ -20,6 +20,10 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Mac
 
+**Applies to:**
+
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
 
