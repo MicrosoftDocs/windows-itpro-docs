@@ -34,21 +34,21 @@ You can see the list of vulnerabilities in three ways:
 1. Click the global search drop-down menu.
 2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then click the search icon. The **Weaknesses** page opens with the CVE information that you are looking for. 
 ![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a fly-in page opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
+3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
 
 >[!NOTE]
 >To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search. 
 
 *Weaknesses page in the menu* 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
 *Top vulnerable software widget in the dashboard* 
 1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software. 
 ![tvm-top-vulnerable-software](images/tvm-top-vulnerable-software.png)
 2. Click the software that you want to investigate and it takes you to the software page. You will the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
 3. Select the **Discovered vulnerabilities** tab. 
-4. Select the vulnerability that you want to investigate to open up a fly-in page with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
 ## How it works
 When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
