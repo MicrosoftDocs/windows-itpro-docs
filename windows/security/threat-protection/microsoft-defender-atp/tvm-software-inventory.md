@@ -38,7 +38,7 @@ Since it is real-time, in a matter of minutes, you will see vulnerability inform
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
