@@ -157,7 +157,6 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 
 
 
-
 ## Related topics
 
 - [Manage Windows 10 Start layout and taskbar options](/windows/configuration/windows-10-start-layout-options-and-policies)
