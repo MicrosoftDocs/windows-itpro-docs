@@ -30,10 +30,7 @@ manager: dansimp
   <dd>
     <a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
-</dl>
+ </dl>
 
 
 <hr/>
