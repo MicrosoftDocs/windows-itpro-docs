@@ -34,7 +34,7 @@ Ensure that your machines:
 - Have the following mandatory updates installed:
 - (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
 - (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
-- Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are using SCCM, update your console to the latest May version 1905
+- Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
@@ -53,7 +53,7 @@ The exposure score is broken down into the following levels:
 - 30–69: medium exposure score
 - 70–100: high exposure score
 
-You can reduce the exposure score by remediating issues based on prioritized security recommendations. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
+You can remediate the issues based on prioritized security recommendations to reduce the exposure scor. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
 
 To lower down your threat and vulnerability exposure:
 
@@ -154,4 +154,3 @@ When an exception is created for a recommendation, the recommendation is no long
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
-
