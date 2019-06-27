@@ -24,9 +24,6 @@ ms.topic: conceptual
 
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 ## Collecting diagnostic information
 
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
@@ -70,7 +67,7 @@ The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If 
 
 We distribute our updates via Microsoft Auto Update (MAU). You can check for MAU settings in main application's menu (Help => Check For Product Updates...):
 
-    ![MAU screenshot](images/MDATP_34_MAU.png)
+![MAU screenshot](images/MDATP_34_MAU.png)
 
 **Q**: Can MDATP for Mac be updated without MAU?
 
@@ -133,7 +130,5 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 
 ## Known issues
 
-- Not fully optimized for performance or disk space yet.
 - Full Microsoft Defender ATP integration is not available yet.
-- Mac devices that switch networks may appear multiple times in the Microsoft Defender ATP portal.
 - Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.

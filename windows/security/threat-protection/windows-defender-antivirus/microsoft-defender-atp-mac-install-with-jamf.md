@@ -24,9 +24,6 @@ ms.topic: conceptual
 
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 ## Prerequisites and system requirements
 
 Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
@@ -76,7 +73,7 @@ To set the onboarding information, add a property list file with the name, _jamf
   >[!IMPORTANT]
   > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
-    ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
+![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 
 ### Approved Kernel Extension
 
