@@ -27,9 +27,9 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-Since opening the public preview, we've been working non-stop to enhance the product, by listening to customer feedback. We've added management features and more granular controls for diagnostic data collection, refined the user experience, and fixed bugs.
+Since the announcement of the public preview, Microsoft has been working non-stop to enhance the product, by listening to customer feedback. We've added management features and more granular controls for diagnostic data collection, refined the user experience, and fixed bugs.
 
-If you have any feedback, please submit it to us by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
+If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -38,7 +38,7 @@ If you have any feedback, please submit it to us by opening Microsoft Defender A
 - You must have a Microsoft Defender ATP subscription.
 - You must have access to the Microsoft Defender Security Center portal.
 - You should have beginner-level experience in macOS and BASH scripting. 
-- If doing a manual deployment, you must have administrative privileges on the device.
+- In case of manual deployment, you must have administrative privileges on the device.
 
 ### System requirements
 
@@ -46,11 +46,11 @@ If you have any feedback, please submit it to us by opening Microsoft Defender A
 > The three most recent released versions of macOS are supported. Beta versions of macOS are not supported.
 
 - Supported macOS versions: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
-- Disk space: 650MB
+- Disk space: 650 MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them:
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them:
 
 | Service        | Description                          | URL                                                                  |
 | -------------- | ------------------------------------ | -------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ If you prefer the command line, you can also check the connection by running the
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-The output from this command should look like this:
+The output from this command should be similar to the following:
 
 > `OK https://x.cp.wd.microsoft.com/api/report`
 >
@@ -77,15 +77,15 @@ The output from this command should look like this:
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
 
-In general you'll need to take the following steps:
+In general you need to take the following steps:
 
-- Ensure you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
+- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
 - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - Via third party management tools:
+  - Via third-party management tools:
     - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
     - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
     - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - Via the command line tool:
+  - Via the command-line tool:
     - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
 
 ## How to update Microsoft Defender ATP for Mac
@@ -100,6 +100,6 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Resources
 
-- For additional information about logging, uninstalling, or known issues, see our [Resources](microsoft-defender-atp-mac-resources.md) page.
+- For more information about logging, uninstalling, or known issues, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
 
 - [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md)

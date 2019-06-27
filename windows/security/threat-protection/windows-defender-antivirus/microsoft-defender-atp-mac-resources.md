@@ -67,7 +67,7 @@ The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If 
 
 There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
-### Within the GUI
+### Interactive uninstallation
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
 
@@ -101,7 +101,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 In the Microsoft Defender ATP portal, you'll see two categories of information:
 
-- AV alerts, including:
+- Antivirus alerts, including:
   - Severity
   - Scan type
   - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
