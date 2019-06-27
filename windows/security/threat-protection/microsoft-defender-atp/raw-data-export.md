@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Raw Data Streaming API
+# Raw Data Streaming API (Preview)
 
 **Applies to:**
 
@@ -25,7 +25,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## Stream Advanced Hunting events to Event Hubs and/or Azure storage account. (Preview)
+## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
 
 Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting.md) to an [Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
