@@ -114,3 +114,8 @@ If you need to reboot a computer during OOBE:
 - Enter **shutdown /r /t 0** to restart immediately, or **shutdown /s /t 0** to shutdown immediately.
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options).
+
+## Related topics
+
+[Windows Autopilot - known issues](known-issues.md)<br>
+[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)<br>
