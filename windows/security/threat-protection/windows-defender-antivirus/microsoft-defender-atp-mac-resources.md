@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 ## Collecting diagnostic information
 

@@ -20,7 +20,8 @@ ms.topic: conceptual
 # Deployment with a different Mobile Device Management (MDM) system
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
  
 ## Prerequisites and system requirements
 
