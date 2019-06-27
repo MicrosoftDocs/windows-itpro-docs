@@ -53,7 +53,7 @@ The exposure score is broken down into the following levels:
 - 30–69: medium exposure score
 - 70–100: high exposure score
 
-You can remediate the issues based on prioritized security recommendations to reduce the exposure scor. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
+You can remediate the issues based on prioritized security recommendations to reduce the exposure score. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
 
 To lower down your threat and vulnerability exposure:
 
@@ -67,9 +67,9 @@ To lower down your threat and vulnerability exposure:
    > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
    > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![Threat insight](images/tvm_bug_icon.png) icon and possible active alert ![Possible active alert](images/tvm_alert_icon.png) icon.  
    
-2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. A fly-in page opens with the description of what you need to remediate, number of vulnerability, associated exploits in what machines, number of exposed machines and their machine names, business impact, and list of CVEs. Click **Open software page** option from the fly-in menu.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
+2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. A flyout panel opens with the description of what you need to remediate, number of vulnerability, associated exploits in what machines, number of exposed machines and their machine names, business impact, and list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
 
-3. Click **Installed machines** and select the affected machine from the list to open the fly-in page with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
+3. Click **Installed machines** and select the affected machine from the list to open the flyout panel with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
 
 4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![Details in machine page](images/tvm_machine_page_details.png)
 
@@ -79,7 +79,7 @@ To lower down your threat and vulnerability exposure:
 
 ## Improve your security configuration
 >[!NOTE]
-> Secure score is now part of Threat & Vulnerability Management as [configuration score](configuration-score.md). We’ll keep the secure score page available for a few weeks. View the [secure score](https://securitycenter.windows.com/securescore) page. 
+> Secure score is now part of Threat & Vulnerability Management as [configuration score](configuration-score.md). The secure score page is available for a few weeks. View the [secure score](https://securitycenter.windows.com/securescore) page. 
 
 Remediating issues in the security recommendations list will improve your configuration. As you do so, your configuration score improves, which means building your organization's resilience against cybersecurity threats and vulnerabilities stronger.
 
@@ -87,7 +87,7 @@ Remediating issues in the security recommendations list will improve your config
 
    >>![Configuration score widget](images/tvm_config_score.png)
 
-2. Select the first item on the list. The fly-in page opens with the description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
+2. Select the first item on the list. The flyout panel opens with the description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
    ![Security controls related security recommendations](images/tvm_security_controls.png)
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
@@ -109,6 +109,7 @@ Remediating issues in the security recommendations list will improve your config
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
 The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
+
 Security Administrators like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
 
 1. Click a security recommendation you would like to request remediation for, and then click **Remediation options**.
@@ -136,13 +137,13 @@ When an exception is created for a recommendation, the recommendation is no long
 
 1. Navigate to the **Security recommendations** page under the **Threat & Vulnerability Management** section menu.
 
-2. Click the top-most recommendation. A fly-in page opens with the recommendation details.
+2. Click the top-most recommendation. A flyout panel opens with the recommendation details.
 
 3. Click **Exception options**.
 
 4. Select your justification for filing an exception instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
-5. Click Submit. A confirmation message at the top of the page will indicate that the exception has been created
+5. Click **Submit**. A confirmation message at the top of the page will indicate that the exception has been created
 
 6. View all your exceptions (current + past) by navigating to the **Remediation** page under the **Threat & Vulnerability Management** menu and clicking on the **Exceptions** tab.
 
