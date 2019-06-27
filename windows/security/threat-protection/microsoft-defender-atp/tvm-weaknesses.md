@@ -32,8 +32,8 @@ You can see the list of vulnerabilities in three ways:
 
 *Vulnerabilities in global search*
 1. Click the global search drop-down menu.
+2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then click the search icon. The **Weaknesses** page opens with the CVE information that you are looking for. 
 ![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
-2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then click the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
 3. Select the CVE and a fly-in page opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
 
 >[!NOTE]
