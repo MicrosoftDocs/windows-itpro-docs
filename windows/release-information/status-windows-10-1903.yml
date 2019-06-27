@@ -21,7 +21,7 @@ sections:
       Find information on known issues for Windows 10, version 1903 and Windows Server, version 1903. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
  <table border = '0' class='box-info'><tr>
-<td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status as of June 18, 2019</b>:<br>
+<td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status</b>:<br>
       <div>Windows 10, version 1903 is available for any user who manually selects “Check for updates” via Windows Update for all devices that do not have a safeguard hold. If you are not offered the update, please check below for any known issues that may affect your device. The recommended servicing status is Semi-Annual Channel.<br><br>We are now beginning to build and train the machine learning (ML) based rollout process to update devices running the April 2018 Update, and earlier versions of Windows 10, to ensure we can continue to service these devices and provide the latest updates, security updates and improvements. <br><br><b>Note</b> Follow <a href='https://twitter.com/windowsupdate' target='_blank'>@WindowsUpdate</a> to find out when new content is published to the release information dashboard.</div>
 
 </td></tr></table>
