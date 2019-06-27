@@ -28,15 +28,15 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 ## Before you begin:
 
 1. Create a [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) in your tenant.
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to > Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
 
 ## Enable raw data streaming:
 
 1. Log in to [Microsoft Defender ATP portal](https://securitycenter.windows.com) with Global Admin user.
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender ATP portal.
+2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
 3. Click on **Add data export settings**.
-4. Choose a Name to your new settings.
-5. Choose **Forward events to Azure Storage**
+4. Choose a name for your new settings.
+5. Choose **Forward events to Azure Storage**.
 6. Type your **Storage Account Resource Id**. In order to get your **Storage Account Resource Id**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
 
   ![Image of event hub resource Id](images/storage-account-resource-id.png)
@@ -61,7 +61,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 ```
 
 - Each blob contains multiple rows.
-- Each row contains the event name, the time Microsofte Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- Each row contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 - For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](overview-hunting.md).
 
 ## Data types mapping:

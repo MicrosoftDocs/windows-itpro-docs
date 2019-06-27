@@ -33,7 +33,7 @@ Microsoft Defender ATP supports streaming all the events available through [Adva
 
 Topic | Description
 :---|:---
-[Stream Microsoft Defender ATP events to Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to Event Hubs.
+[Stream Microsoft Defender ATP events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to Event Hubs.
 [Stream Microsoft Defender ATP events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to your Azure storage account.
 
 
