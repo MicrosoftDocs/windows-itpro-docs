@@ -22,13 +22,11 @@
       }
     ],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-WindowsIT",
       "breadcrumb_path": "/microsoft-desktop-optimization-pack/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "mdop",
       "ms.sitesec": "library",
       "ms.topic": "article",
-      "ms.author": "jamiet",
       "ms.date": "04/05/2017",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
