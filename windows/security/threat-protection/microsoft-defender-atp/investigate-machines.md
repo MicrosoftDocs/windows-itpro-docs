@@ -142,13 +142,13 @@ You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline
 
 ### Security recommendations
 
-**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it.
+**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
 ![Image of security recommendations tab](images/security-recommendations-machine.png)
 
 ### Software inventory
 
-The **Software inventory** section lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed machines, and version distribution.
+The **Software inventory** section lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed machines, and version distribution. See [Software inventory](tvm-software-inventory.md) for details
 
 ![Image of software inventory tab](images/software-inventory-machine.png)
 
@@ -166,3 +166,5 @@ The **Discovered vulnerabilities** section shows the name, severity, and threat 
 - [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
+- [Security recommendation](tvm-security-recommendation.md)
+- [Software inventory](tvm-software-inventory.md)

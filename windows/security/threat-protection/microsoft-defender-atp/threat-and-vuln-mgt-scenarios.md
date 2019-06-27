@@ -21,6 +21,8 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!includePrerelease information]
+
 ## Before you begin
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
@@ -69,7 +71,7 @@ To lower down your threat and vulnerability exposure:
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. ![details in software page ](images/tvm_software_page_details.png)
 
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation.  ![details in machine page](images/tvm_machine_page_details.png)
+4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![details in machine page](images/tvm_machine_page_details.png)
 
 5. Allow a few hours for the changes to propagate in the system.
     
@@ -121,6 +123,28 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 
 >[!NOTE]
 >If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune.
+
+## File for exception
+With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to requesting for remediation.
+
+There are many reasons why organizations might want to create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides the same level of protection that the recommendation would, a false positive, among other reasons.
+
+Exceptions can be created for both *Security update* and *Configuration change* recommendations.
+
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
+
+
+1. Navigate to the **Security recommendations** page under the **Threat & Vulnerability Management** section menu.
+
+2. Click the top-most recommendation. A fly-in panel will open with the recommendation details.
+
+3. Click **Exception options**.
+
+4. Select your justification for filing an exception instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+
+5. Click Submit. A confirmation message at the top of the page will indicate that the exception has been created
+
+6. View all your exceptions (current + past) by navigating to the **Remediation** page under the **Threat & Vulnerability Management** menu and clicking on the **Exceptions** tab.
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
