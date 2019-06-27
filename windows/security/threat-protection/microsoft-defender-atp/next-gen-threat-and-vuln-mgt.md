@@ -62,8 +62,8 @@ Microsoft Defender ATP’s Threat & Vulnerability Management allows security adm
 ## Related topics
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)

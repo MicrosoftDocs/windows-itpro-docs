@@ -41,24 +41,26 @@ You'll see your remediation options when you select one of the security recommen
 3. Select a remediation due date.
 4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
 
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/atp-manage-vulnerabilities) for details.
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 ## How it works
 
 When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. 
 
-It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation page**, and it also creates a remediation ticket in Microsoft Intune.
+It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation** page, and it also creates a remediation ticket in Microsoft Intune.
 
 You also have the option to export all remediation activity data to CSV for records, reporting purposes, or if you want to notify your IT administration counterpart that a remediation ticket has been submitted. 
 
 The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
 
+However, if the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. The exceptions you've filed will also show up in the **Remediation** page, in the **Exceptions** tab.
+
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
