@@ -63,16 +63,6 @@ If an error occurs during installation, the installer will only report a general
 
 The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
-## Upgrade
-
-We distribute our updates via Microsoft Auto Update (MAU). You can check for MAU settings in main application's menu (Help => Check For Product Updates...):
-
-![MAU screenshot](images/MDATP_34_MAU.png)
-
-**Q**: Can MDATP for Mac be updated without MAU?
-
-**A**: In the current release, MDATP for Mac product updates are done via MAU. While advanced manageability experts may be able to set up the product updates without MAU, this scenario is not explicitly supported. We will monitor customer interest in this scenario to evaluate its importance relative to other product advancements.
-
 ## Uninstalling
 
 There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.

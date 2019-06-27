@@ -24,6 +24,8 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
 
+![MAU screenshot](images/MDATP_34_MAU.png)
+
 If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates. You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 
 ## Use msupdate
