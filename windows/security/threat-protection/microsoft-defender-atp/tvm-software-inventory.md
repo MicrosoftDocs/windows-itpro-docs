@@ -27,8 +27,8 @@ Microsoft Defender ATP Threat & Vulnerability management's discovery capability 
 
 ## Navigate through your software inventory
 1. Select **Software inventory** from the Threat & Vulnerability management navigation menu. 
-2. In the **Software inventory** page, select the application that you want to investigate and a fly-in screen opens up with the software details, vendor information, prevalence in the organization, exposed machines, threat context, and its impact to your  organization's exposure score.   
-3. In the fly-in screen, select **Open software page** to dive deeper into your software inventory. You will see how many weaknesses are discovered with the application, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
+2. In the **Software inventory** page, select the application that you want to investigate and a flyout panel opens up with the software details, vendor information, prevalence in the organization, exposed machines, threat context, and its impact to your  organization's exposure score.   
+3. In the flyout panel, select **Open software page** to dive deeper into your software inventory. You will see how many weaknesses are discovered with the application, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
 
 ## How it works
 In the field of discovery, we are leveraging the same set of signals in Microsoft Defender ATP's endpoint detection and response that's responsible for detection, for vulnerability assessment. 
