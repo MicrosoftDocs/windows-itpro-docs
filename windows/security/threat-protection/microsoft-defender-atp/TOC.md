@@ -75,6 +75,7 @@
 
 ### [Automated investigation and remediation](automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation.md)
+#### [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)
 
 
 ### [Secure score](overview-secure-score.md)
@@ -100,7 +101,7 @@
 ####  [Protect users, data, and devices with Conditional Access](conditional-access.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response ](information-protection-investigation.md)
+##### [Use sensitivity labels to prioritize incident response](information-protection-investigation.md)
 
 
 

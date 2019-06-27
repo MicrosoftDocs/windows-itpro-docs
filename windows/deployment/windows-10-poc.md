@@ -1,8 +1,8 @@
 ---
 title: Configure a test lab to deploy Windows 10
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 

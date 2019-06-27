@@ -26,7 +26,7 @@
 ### [Recovering Computers Using DaRT 7.0](recovering-computers-using-dart-70-dart-7.md)
 #### [How to Recover Local Computers Using the DaRT Recovery Image](how-to-recover-local-computers-using-the-dart-recovery-image-dart-7.md)
 #### [How to Recover Remote Computers Using the DaRT Recovery Image](how-to-recover-remote-computers-using-the-dart-recovery-image-dart-7.md)
-### [Diagnosing System Failures with Crash Analyzer ](diagnosing-system-failures-with-crash-analyzer--dart-7.md)
+### [Diagnosing System Failures with Crash Analyzer](diagnosing-system-failures-with-crash-analyzer--dart-7.md)
 #### [How to Run the Crash Analyzer on an End-user Computer](how-to-run-the-crash-analyzer-on-an-end-user-computer-dart-7.md)
 #### [How to Run the Crash Analyzer in Stand-alone Mode on a Computer Other than an End-user Computer](how-to-run-the-crash-analyzer-in-stand-alone-mode-on-a-computer-other-than-an-end-user-computer-dart-7.md)
 #### [How to Ensure that Crash Analyzer Can Access Symbol Files](how-to-ensure-that-crash-analyzer-can-access-symbol-files-dart-7.md)

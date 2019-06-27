@@ -228,7 +228,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
    ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4. Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934) . For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows10-based-device-to-work-using-a-deep-link).
+4. Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
 
    ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
@@ -255,7 +255,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
     ![phone settings](images/unifiedenrollment-rs1-39.png)
 
-3.  Click the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows10-based-device-to-work-using-a-deep-link).
+3.  Click the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
 
     ![access work or school page](images/unifiedenrollment-rs1-40.png)
 
@@ -284,8 +284,7 @@ There are a few instances where your device may not be able to connect to work, 
 | We couldn’t auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
  
-
-## Connecting your Windows 10-based device to work using a deep link
+## Connecting your Windows 10-based device to work using a deep link
 
 
 Windows 10-based devices may be connected to work using a deep link. Users will be able to click or open a link in a particular format from anywhere in Windows 10 and be directed to the new enrollment experience.

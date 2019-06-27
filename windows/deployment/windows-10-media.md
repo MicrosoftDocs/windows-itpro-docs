@@ -7,10 +7,10 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 

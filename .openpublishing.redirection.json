@@ -672,7 +672,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview",
 "redirect_document_id": true
 },
 {
@@ -14958,8 +14958,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/windows/deployment/windows-10-enterprise-subscription-activation.md",
-"redirect_url": "/windows/windows/deployment/windows-10-subscription-activation",
+"source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/deployment/windows-10-subscription-activation",
 "redirect_document_id": true
 },
 {
@@ -15035,6 +15035,16 @@
 {
 "source_path": "windows/hub/release-information.md",
 "redirect_url": "/windows/release-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-architecture-posters.md",
+"redirect_url": "/windows/deployment/windows-10-deployment-scenarios",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/index.md",
+"redirect_url": "/windows/security/threat-protection",
 "redirect_document_id": true
 }
 ]
