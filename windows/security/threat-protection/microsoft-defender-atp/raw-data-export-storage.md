@@ -41,15 +41,15 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
   ![Image of event hub resource Id](images/storage-account-resource-id.png)
 
-7. Choose the events you want to stream and click Save.
+7. Choose the events you want to stream and click **Save**.
 
 ## The schema of the events in the Storage account:
 
-- A blobs container will be created for each event type: 
+- A blob container will be created for each event type: 
 
 ![Image of event hub resource Id](images/storage-account-event-schema.png)
 
-- The schema of each row in a Blob is the following Json: 
+- The schema of each row in a blob is the following JSON: 
 
 ```
 {
@@ -60,16 +60,17 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 }               
 ```
 
-- each blob contains multiple rows.
-- Each raw contains the event name, the time WDATP received the event, the tenant it belongs ( You will only get events from your tenant ), and the event in JSON format in a property called "properties".
-- Check out [Advanced Hunting overview](overview-hunting.md) to learn about the schema of WDATP events.
+- Each blob contains multiple rows.
+- Each row contains the event name, the time Microsofte Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](overview-hunting.md).
 
 ## Data types mapping:
 
 In order to get the data types for our events properties do the following:
 
-- Login to our portal and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
-- Run the following query to get the data types mapping for each event: 
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+2. Run the following query to get the data types mapping for each event: 
+
 ```
 {EventType}
 | getschema

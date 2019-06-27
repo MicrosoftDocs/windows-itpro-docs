@@ -62,14 +62,14 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 - Each event hub message in Event Hubs contains list of records.
 - Each record contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
-- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](overview-hunting.md) to learn about the schema of Microsoft Defender ATP events.
+- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](overview-hunting.md).
 
 ## Data types mapping:
 
-In order to get the data types for our events properties do the following:
+To get the data types for event properties do the following:
 
-- Login to our portal and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
-- Run the following query to get the data types mapping for each event:
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+2. Run the following query to get the data types mapping for each event:
  
 ```
 {EventType}
