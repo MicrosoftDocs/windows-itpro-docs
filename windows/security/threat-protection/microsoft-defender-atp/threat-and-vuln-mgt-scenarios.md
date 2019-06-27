@@ -71,7 +71,7 @@ To lower down your threat and vulnerability exposure:
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. ![details in software page ](images/tvm_software_page_details.png)
 
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation.  ![details in machine page](images/tvm_machine_page_details.png)
+4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![details in machine page](images/tvm_machine_page_details.png)
 
 5. Allow a few hours for the changes to propagate in the system.
     
