@@ -65,7 +65,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
    ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
    > [!NOTE]
-   > <Path to exported .cer certificate> should be the full path to the certificate that you exported in   step 3.
+   > \<Path to exported .cer certificate> should be the full path to the certificate that you exported in   step 3.
    Also, adding update signers is crucial to being able to modify or disable this policy in the future. 
 
 6. Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:

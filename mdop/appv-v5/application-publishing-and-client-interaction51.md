@@ -327,7 +327,7 @@ The App-V Client manages the following two file-based locations:
 </tr>
 <tr class="even">
 <td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>ppdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
+<td align="left"><p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Files in the user catalog</p></td>
@@ -877,7 +877,7 @@ Adding an App-V package to the client is the first step of the publishing refres
 
     7.  Create the Registry.dat file from the package store to %ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat
 
-    8.  Register the package with the App-V Kernal Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
+    8.  Register the package with the App-V Kernel Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
 
     9.  Invoke scripting from the AppxManifest.xml or DeploymentConfig.xml file for Package Add timing.
 
@@ -1554,12 +1554,12 @@ The example below shows the combination of the Manifest, Deployment Configuratio
      <appv:Shortcut>
           <appv:Fìle>[{Desktop}]\7-Zip\7-Zip File Manager.lnk</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
+          <appv:Icon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
      </appv:Shortcut>
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.Ink</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
+          <appv:Icon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
      </appv:Shortcut>
 </appv:Extension>
      </Subsystems>

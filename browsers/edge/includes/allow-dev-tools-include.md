@@ -19,7 +19,7 @@ ms.topic: include
 
 | Group Policy | MDM | Registry | Description |                 Most restricted                  |
 |--------------|:---:|:--------:|-------------|:------------------------------------------------:|
-|   Disabled   |  0  |    0     |  Prevented  | ![Most restricted value](/images/check-gn.png) |
+|   Disabled   |  0  |    0     |  Prevented  | ![Most restricted value](../images/check-gn.png) |
 |   Enabled    |  1  |    1     |   Allowed   |                                                  |
 
 ---

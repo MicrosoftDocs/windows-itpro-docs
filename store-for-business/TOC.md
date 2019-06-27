@@ -16,7 +16,7 @@
 ### [Distribute apps with a management tool](distribute-apps-with-management-tool.md)
 ### [Distribute offline apps](distribute-offline-apps.md)
 ## [Manage products and services](manage-apps-microsoft-store-for-business-overview.md)
-### [App inventory managemement](app-inventory-management-microsoft-store-for-business.md)
+### [App inventory management](app-inventory-management-microsoft-store-for-business.md)
 ### [Manage orders](manage-orders-microsoft-store-for-business.md)
 ### [Manage access to private store](manage-access-to-private-store.md)
 ### [Manage private store settings](manage-private-store-settings.md)

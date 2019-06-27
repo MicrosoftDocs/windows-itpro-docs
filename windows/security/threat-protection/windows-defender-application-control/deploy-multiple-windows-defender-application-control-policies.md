@@ -75,5 +75,5 @@ Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and re
 
 ### Merging policies
 
-When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID <ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID <ID>.
+When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 

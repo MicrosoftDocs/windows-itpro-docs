@@ -470,7 +470,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
      **Figure 37** - Confirm that additional apps were deployed to the device
 
-     ![Confirm that additiional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
+     ![Confirm that additional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
 
 ### 3.2 Configure other settings in Intune
 

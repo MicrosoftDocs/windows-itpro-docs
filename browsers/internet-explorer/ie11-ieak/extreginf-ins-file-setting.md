@@ -15,7 +15,7 @@ ms.date: 07/27/2017
 
 
 # Use the ExtRegInf .INS file to specify installation files and mode
-Info about how to specify your Setup information (.inf) files and the instsallation mode for your custom components.
+Info about how to specify your Setup information (.inf) files and the installation mode for your custom components.
 
 |Name       |Value    |Description                                                                                                       |
 |-----------|---------|------------------------------------------------------------------------------------------------------------------|
