@@ -35,10 +35,10 @@ If you have any feedback that you would like to share, submit it by opening Micr
 
 ### Prerequisites
 
-- You must have a Microsoft Defender ATP subscription.
-- You must have access to the Microsoft Defender Security Center portal.
-- You should have beginner-level experience in macOS and BASH scripting. 
-- In case of manual deployment, you must have administrative privileges on the device.
+- Microsoft Defender ATP subscription
+- Access to the Microsoft Defender Security Center portal
+- Beginner-level experience in macOS and BASH scripting
+- Administrative privileges on the device (in case of manual deployment)
 
 ### System requirements
 
