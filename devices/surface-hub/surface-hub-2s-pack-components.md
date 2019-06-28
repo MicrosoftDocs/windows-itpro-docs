@@ -22,7 +22,7 @@ If you replace your Surface Hub 2S, one of its components, or a related accessor
 This article contains the following procedures:
 
 - [How to pack your Surface Hub 2S 55”](#how-to-pack-your-surface-hub-2s-55)  
-- [How to replace and pack your Surface Hub 2S Compute Module](#how-to-replace-and-pack-your-surface-hub-2s-compute-module)  
+- [How to replace and pack your Surface Hub 2S Compute Cartridge](#how-to-replace-and-pack-your-surface-hub-2s-compute-cartridge)  
 - [How to replace your Surface Hub 2S Camera](#how-to-replace-your-surface-hub-2s-camera)  
 
 ## How to pack your Surface Hub 2S 55”
@@ -55,9 +55,9 @@ Use the following steps to pack your Surface Hub 2S 55" for shipment.
 
 ![Step 13](images/surface-hub-2s-repack-13.png)
 
-## How to replace and pack your Surface Hub 2S Compute Module
+## How to replace and pack your Surface Hub 2S Compute Cartridge
 
-Use the following steps to remove the Surface Hub 2S Compute Module, pack it for shipment, and install the new Compute Module.
+Use the following steps to remove the Surface Hub 2S Compute Cartridge, pack it for shipment, and install the new Compute Cartridge.
 
 ![Step 1](images/surface-hub-2s-replace-cartridge-1.png)
 
