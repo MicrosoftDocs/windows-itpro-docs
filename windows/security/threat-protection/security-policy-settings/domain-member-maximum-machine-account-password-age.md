@@ -33,7 +33,7 @@ In Active Directory–based domains, each device has an account and password. By
 > [!IMPORTANT]  
 > Significantly increasing the password change interval (or disabling password changes) gives an attacker more time to undertake a brute-force password-guessing attack against one of the machine accounts.  
 
-For more information, see [Machine Account Password Process](https://blogs.technet.microsoft.com/askds/2009/02/15/machine-account-password-process-2/).
+For more information, see [Machine Account Password Process](https://techcommunity.microsoft.com/t5/Ask-the-Directory-Services-Team/Machine-Account-Password-Process/ba-p/396026).
 
 ### Possible values
 
