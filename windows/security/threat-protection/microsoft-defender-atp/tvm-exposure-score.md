@@ -30,10 +30,10 @@ The widget also gives you a high-level view of your exposure score trend over ti
 ## How it works
 
 Several factors affect your organization exposure score: 
-> Weakness discovered on the device
-> Likelihood of a device getting breached
-> Value of the device to the organization
-> Relevant alert discovered on the device
+- Weakness discovered on the device
+- Likelihood of a device getting breached
+- Value of the device to the organization
+- Relevant alert discovered on the device
 
 Reduce the exposure score by addressing what needs to be remediated based on the prioritized security recommendations. See [Security recommendations](tvm-security-recommendation.md) for details.
 
