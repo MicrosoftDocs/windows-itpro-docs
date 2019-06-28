@@ -49,7 +49,7 @@ Optional. Specifies the complete URL for the favorite.
 
 Adding a new browser favorite.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <wap-provisioningdoc>
   <characteristic type="BrowserFavorite">

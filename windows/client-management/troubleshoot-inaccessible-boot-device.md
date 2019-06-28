@@ -144,7 +144,7 @@ R:\> Copy *.* D:\BootBackup
    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
    ```
 
-   For example: if we assign the ,System Drive> (WinRE drive) the letter R and the <OSdrive> is the letter D, this command would be the following:
+   For example: if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, this command would be the following:
 
    ```cmd
    Bcdboot D:\windows /s R: /f ALL

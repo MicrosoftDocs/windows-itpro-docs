@@ -66,7 +66,7 @@ The minimum required enterprise certificate authority that can be used with Wind
 * Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name).
 * The certificate Key Usage section must contain Digital Signature and Key Encipherment.
 * Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].
-* The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2) and Server Authentication (1.3.6.1.5.5.7.3.1).
+* The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2), Server Authentication (1.3.6.1.5.5.7.3.1), and KDC Authentication (1.3.6.1.5.2.3.5).
 * The certificate Subject Alternative Name section must contain the Domain Name System (DNS) name.  
 * The certificate template must have an extension that has the BMP data value "DomainController".
 * The domain controller certificate must be installed in the local computer's certificate store.

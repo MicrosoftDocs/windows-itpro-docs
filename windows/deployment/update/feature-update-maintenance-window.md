@@ -27,8 +27,8 @@ Use the following information to deploy feature updates during a maintenance win
 1.	In the Configuration Manager console, choose **Assets and Compliance> Device Collections**. 
 2.	In the **Device Collections** list, select the collection for which you intended to deploy the feature update(s). 
 3.	On the **Home** tab, in the **Properties** group, choose **Properties**. 
-4.	In the **Maintenance Windows** tab of the <collection name> Properties dialog box, choose the New icon. 
-5.	Complete the <new> Schedule dialog. 
+4.	In the **Maintenance Windows** tab of the `<collection name>` Properties dialog box, choose the New icon. 
+5.	Complete the `<new>` Schedule dialog. 
 6.	Select from the Apply this schedule to drop-down list. 
 7.	Choose **OK** and then close the **\<collection name\> Properties** dialog box.
 
