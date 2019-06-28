@@ -46,9 +46,14 @@ For more information about licensing requirements for Microsoft Defender ATP pla
 
 
 ## Browser requirements
-- Internet Explorer 11 and Microsoft Edge are supported. 
-- The latest versions of Safari, Chrome, and Firefox are supported.
-- Any HTML5 compliant browsers are also supported.
+Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
+- Microsoft Edge
+- Internet Explorer version 11
+- Google Chrome  
+
+>[!NOTE]
+>While other browsers might work, the mentioned browsers are the ones supported.
+
 
 ## Hardware and software requirements
 ### Supported Windows versions
