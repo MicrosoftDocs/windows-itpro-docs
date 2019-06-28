@@ -30,22 +30,6 @@ The ESP will track the installation of applications, security policies, certific
  ![Enrollment Status Page](images/enrollment-status-page.png)
  
 
-## Installation progress tracking
-
-The Enrollment Status Page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
-
-- Certain types of app installations.
-    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp).
-    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
-
-- Certain device configuration policies. The following types of policies and installations are not tracked:
-
-- Intune Management Extensions PowerShell scripts
-- Office 365 ProPlus installations<sup>**</sup>
-- System Center Configuration Manager apps, packages, and task sequences
-
-<sup>**</sup>The ability to track Office 365 ProPlus installations was added with Windows 10, version 1809.<br>
-
 ## More information
 
 For more information on configuring the Enrollment Status Page, see the [Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).<br>

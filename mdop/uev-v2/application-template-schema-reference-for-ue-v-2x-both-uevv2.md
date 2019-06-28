@@ -642,7 +642,7 @@ This element defines the settings for a single application or a suite of applica
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
@@ -1577,7 +1577,7 @@ This element defines the settings for a single application or a suite of applica
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013/SettingsLocationTemplate"

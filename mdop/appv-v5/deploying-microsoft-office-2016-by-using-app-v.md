@@ -634,7 +634,7 @@ You may want to disable specific applications in your Office App-V package. For 
 5.  Add the Office 2016 App-V Package with the new Deployment Configuration File.
 
     ``` syntax
-    <Application Id="[{AppVPackageRoot}]\officel6\lync.exe" Enabled="true">
+    <Application Id="[{AppVPackageRoot}]\office16\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2016</Name>
         <Icon />
@@ -676,10 +676,10 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <Arguments />
            <WorkingDirectory />
            <AppuserModelId>Microsoft.Office.MSACCESS.EXE.15</AppUserModelId>
-           <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
+           <AppUserModelExcludeFromShowInNewInstall>true</AppUserModelExcludeFromShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
-           <ApplicationId>[{AppVPackageRoot}]\officel6\MSACCESS.EXE</ApplicationId>
+           <ApplicationId>[{AppVPackageRoot}]\office16\MSACCESS.EXE</ApplicationId>
         </Shortcut>
     ```
 

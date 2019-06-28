@@ -166,6 +166,13 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 
 
 ## Changes and updates
+### Version 2.41.139.0
+*Release date: June 24, 2019*<br>
+This version of Surface Diagnostic Toolkit for Business adds support for the following: 
+- Driver version information included in logs and report.
+- Ability to provide feedback about the app <br>
+Please note that even though you turn off telemtry, windows update and feedback still connect to the internet.
+
 ### Version 2.36.139.0
 *Release date: April 26, 2019*<br>
 This version of Surface Diagnostic Toolkit for Business adds support for the following: 

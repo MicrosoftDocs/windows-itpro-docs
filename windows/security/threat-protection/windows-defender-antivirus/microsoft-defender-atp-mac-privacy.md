@@ -20,6 +20,10 @@ ms.topic: conceptual
 
 # Privacy for Microsoft Defender ATP for Mac
 
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender ATP for Mac.
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.

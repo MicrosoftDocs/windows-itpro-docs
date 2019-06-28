@@ -36,4 +36,4 @@ This GPO is identical to the GPO\_DOMISO\_Encryption GPO with the following chan
 
     >**Important:**  Earlier versions of Windows support only device-based authentication. If you specify that user authentication is mandatory, only users on devices that are running at least Windows Vista or Windows Server 2008 can connect.
 
-**Next: **[Planning GPO Deployment](planning-gpo-deployment.md)
+**Next:** [Planning GPO Deployment](planning-gpo-deployment.md)
