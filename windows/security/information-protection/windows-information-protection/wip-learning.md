@@ -96,7 +96,7 @@ The information needed for the following steps can be found using Device Health,
 
     `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
 
-    the text between the first and second back slashes is the publisher:
+    the text between the first and second back slashes is the product name:
 
     `GOOGLE CHROME`
 
