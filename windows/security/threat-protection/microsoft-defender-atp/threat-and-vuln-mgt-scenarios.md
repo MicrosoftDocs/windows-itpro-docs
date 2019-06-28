@@ -79,7 +79,7 @@ To lower down your threat and vulnerability exposure:
 >[!NOTE]
 > Secure score is now part of Threat & Vulnerability Management as [configuration score](configuration-score.md). The secure score page is available for a few weeks. View the [secure score](https://securitycenter.windows.com/securescore) page. 
 
-Remediating issues in the security recommendations list will improve your configuration. As you do so, your configuration score improves, which means building your organization's resilience against cybersecurity threats and vulnerabilities stronger.
+You can improve your security configuration when you remediate issues from the security recommendations list. As you do so, your configuration score improves, which means your organization becomes more resilient against cybersecurity threats and vulnerabilities.
 
 1. From the Configuration score widget, select **Security controls**. The **Security recommendations** page opens and shows the list of issues related to security controls.
 
@@ -124,7 +124,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 >If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.
 
 ## File for exception
-With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to requesting for remediation.
+With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to a remediation request.
 
 There are many reasons why organizations create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides as much protection than the recommendation would, a false positive, among other reasons.
 
@@ -139,11 +139,11 @@ When an exception is created for a recommendation, the recommendation is no long
 
 3. Click **Exception options**.
 
-4. Select your justification for filing an exception instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
-5. Click **Submit**. A confirmation message at the top of the page will indicate that the exception has been created
+5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 
-6. View all your exceptions (current + past) by navigating to the **Remediation** page under the **Threat & Vulnerability Management** menu and clicking on the **Exceptions** tab.
+6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
