@@ -20,7 +20,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ## XSD for the VPN profile
 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://www.microsoft.com/provisioning/EapHostConfig" />

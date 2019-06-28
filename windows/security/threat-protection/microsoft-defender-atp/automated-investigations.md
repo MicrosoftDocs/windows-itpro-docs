@@ -56,7 +56,7 @@ During an Automated investigation, details about each analyzed entity is categor
 
 The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
 
-If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions.
+If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediaton actions. It also acts as an audit trail for all Automated investigation actions. 
 
 ### How an Automated investigation expands its scope
 

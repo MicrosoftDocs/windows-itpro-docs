@@ -72,6 +72,7 @@
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 ##### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
+#####[Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 
 #### [Secure score](microsoft-defender-atp/overview-secure-score.md)
@@ -515,7 +516,7 @@
 ##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
 ##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
 ###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
-###### [How to list XML elements in <EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
+###### [How to list XML elements in \<EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)

@@ -188,7 +188,7 @@ To work around this, click the **App Reliability** tab above the results to see 
 #### Clicking "See all…" from the App Reliability Events blade followed by clicking an app from the expanded list results in raw records instead of the App Reliability view
 To work around this, replace all of the text in the Log Search query box with the following:
 
-*DHAppReliability | where AppFileDisplayName == "<Name of app as it appeared in the list>"*
+*DHAppReliability | where AppFileDisplayName == "\<Name of app as it appeared in the list>"*
 
 For example:
 

@@ -283,6 +283,14 @@ The following table describes changes in SID implementation in the Windows opera
 | Most of the operating system files are owned by the TrustedInstaller security identifier (SID)| Windows Server 2008, Windows Vista| The purpose of this change is to prevent a process that is running as an administrator or under the LocalSystem account from automatically replacing the operating system files. |
 | Restricted SID checks are implemented| Windows Server 2008, Windows Vista| When restricting SIDs are present, Windows performs two access checks. The first is the normal access check, and the second is the same access check against the restricting SIDs in the token. Both access checks must pass to allow the process to access the object. |
 
+## Capability SIDs
+
+Capability Security Identifiers (SIDs) are used to uniquely and immutably identify capabilities. Capabilities represent an unforgeable token of authority that grants access to resources (Examples: documents, camera, locations etc...) to Universal Windows Applications. An App that “has” a capability is granted access to the resource the capability is associated with, and one that “does not have” a capability is denied access to the resource.
+
+All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
+
+All Capability SIDs are prefixed by S-1-15-3
+
 ## See also
 
 - [Access Control Overview](access-control.md)

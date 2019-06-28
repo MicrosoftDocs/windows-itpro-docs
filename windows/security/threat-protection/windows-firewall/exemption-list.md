@@ -57,4 +57,4 @@ To keep the number of exemptions as small as possible, you have several options:
 
 As with defining the boundary zone, create a formal process to approve hosts being added to the exemption list. For a model of processing requests for exemptions, see the decision flowchart in the [Boundary Zone](boundary-zone.md) section.
 
-**Next: **[Isolated Domain](isolated-domain.md)
+**Next:** [Isolated Domain](isolated-domain.md)

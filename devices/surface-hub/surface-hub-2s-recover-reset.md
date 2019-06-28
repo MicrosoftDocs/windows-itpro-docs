@@ -23,7 +23,7 @@ To begin, sign into Surface Hub 2S with admin credentials, open the **Settings**
 1. To reset, select **Get Started**.
 2. When the **Ready to reset this device** window appears, select **Reset**. Surface Hub 2S reinstalls the operating system from the recovery partition and may take up to one hour to complete.
 3. Run **the first time Setup program** to reconfigure the device.
-4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/en-us/intune/devices-wipe).
+4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).
 
 ![*Reset and recovery for Surface Hub 2S*](images/sh2-reset.png)<br>
 *Figure 1. Reset and recovery for Surface Hub 2S.* 

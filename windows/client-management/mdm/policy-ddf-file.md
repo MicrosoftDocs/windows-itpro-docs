@@ -32,7 +32,7 @@ You can download DDF files for various CSPs from [CSP DDF files download](config
 
 The XML below is the DDF for Windows 10, version 1903.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

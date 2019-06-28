@@ -83,7 +83,7 @@ Open the Intune management portal either by searching for Intune on https://port
     1.	Description: *Optional*
     1.	OMA-URI: **./Vendor/MSFT/Defender/SharedSignatureRoot**
     1.	Data type: **String**
-    1.	Value: **\\<sharedlocation>\wdav-update\** (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
+    1.	Value: **\\<sharedlocation\>\wdav-update\** (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
 1.	Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. Click **Create** to save the new profile. The profile details page now appears.
 1.	Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
 1.	Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
@@ -94,7 +94,7 @@ Open the Intune management portal either by searching for Intune on https://port
 1.	In the **Group Policy Management Editor** go to **Computer configuration**.
 1.	Click **Administrative templates**.
 1.	Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**
-1.	Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
+1.	Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation\>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
 1.	Deploy the GPO to the VMs you want to test.
     
 #### Use PowerShell to enable the shared security intelligence feature:
