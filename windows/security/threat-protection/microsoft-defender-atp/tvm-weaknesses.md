@@ -57,6 +57,12 @@ If there's a number in the **Exposed Machines**, that means you need to remediat
 
 You can also see the related alert and threat insights in the **Threat** column.
 
+The breach insights icons are highlighted if there are active alerts associated with the vulnerability found in your organization. 
+![tvm-breach-insights](images/tvm-breach-insights.png)
+
+The threat insights icons are highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is connected to specific campaign for which, Threat Analytics report links are provided that you can read.  
+![tvm-threat-insights](images/tvm-threat-insights.png)
+
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
 
