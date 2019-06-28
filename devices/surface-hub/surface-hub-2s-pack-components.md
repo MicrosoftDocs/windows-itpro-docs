@@ -8,7 +8,7 @@ author: Teresa-Motiv
 ms.author: v-tea
 audience: Admin
 ms.topic: article
-ms.date: 06/25/2019
+ms.date: 06/28/2019
 ms.localizationpriority: Normal
 ---
 
@@ -67,7 +67,7 @@ Use the following steps to remove the Surface Hub 2S Compute Cartridge, pack it 
 
 ![Step 4](images/surface-hub-2s-replace-cartridge-4.png)
 
-![Step 5](images/surface-hub-2s-replace-cartridge-5.png)
+![Step 5](images/surface-hub-2s-repack-8.png)
 
 ![Step 6](images/surface-hub-2s-replace-cartridge-6.png)
 
@@ -75,7 +75,9 @@ Use the following steps to remove the Surface Hub 2S Compute Cartridge, pack it 
 
 ![Step 8](images/surface-hub-2s-replace-cartridge-8.png)
 
-![Step 9](images/surface-hub-2s-replace-cartridge-9.png)
+![Step 9a](images/surface-hub-2s-replace-cartridge-1.png)
+
+![Step 9b](images/surface-hub-2s-replace-cartridge-9.png)
 
 ![Step 10](images/surface-hub-2s-replace-cartridge-10.png)
 
