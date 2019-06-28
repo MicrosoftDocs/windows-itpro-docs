@@ -58,6 +58,7 @@ From that page, you can do any of the following depending on what you need to do
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
