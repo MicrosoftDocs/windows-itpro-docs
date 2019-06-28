@@ -42,7 +42,7 @@ You can see the list of vulnerabilities in three ways:
 2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
 *Top vulnerable software widget in the dashboard* 
-1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software. 
+1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time. 
 ![tvm-top-vulnerable-software](images/tvm-top-vulnerable-software.png)
 2. Click the software that you want to investigate and it takes you to the software page. You will the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
 3. Select the **Discovered vulnerabilities** tab. 
