@@ -56,6 +56,7 @@ However, if the security recommendation stemmed from a false positive report, or
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
