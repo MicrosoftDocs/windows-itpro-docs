@@ -48,6 +48,8 @@ The goal is to remediate the issues in the security recommendations list to impr
 - **Related component** — **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
 - **Remediation type** — **Configuration change** or **Software update**
 
+See how you can [improve your security configuration](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-and-vuln-mgt-scenarios#improve-your-security-configuration) for details.
+
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
