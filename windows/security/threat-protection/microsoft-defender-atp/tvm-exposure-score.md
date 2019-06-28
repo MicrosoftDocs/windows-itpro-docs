@@ -23,7 +23,7 @@ ms.date: 06/30/2019
 
 Your exposure score reflects how vulnerable your organization is to cybersecurity threats. 
 
-The widget also gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure so you can investigate what happened on that date further. 
+The widget also gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further. 
 
 ![Exposure score widget](images/tvm_exp_score.png)
 
