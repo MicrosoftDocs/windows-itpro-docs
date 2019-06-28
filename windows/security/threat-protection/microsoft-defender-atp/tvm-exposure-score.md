@@ -21,7 +21,9 @@ ms.date: 06/30/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Your exposure score reflects how vulnerable your organization is to cybersecurity threats. The widget gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure, to investigate further. 
+Your exposure score reflects how vulnerable your organization is to cybersecurity threats. 
+
+The widget also gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure so you can investigate what happened on that date further. 
 
 ![Exposure score widget](images/tvm_exp_score.png)
 
