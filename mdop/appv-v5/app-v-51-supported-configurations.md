@@ -118,8 +118,18 @@ The following table lists the SQL Server versions that are supported for the App
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2016</p></td>
+<td align="left"><p>SP2</p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
@@ -262,8 +272,18 @@ The following table lists the SQL Server versions that are supported for the App
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2016</p></td>
+<td align="left"><p>SP2</p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
