@@ -24,8 +24,6 @@ ms.topic: article
 
 Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
 
-
-<span id="enable" />
 ## Enable Windows Mixed Reality in WSUS
 
 1. [Check your version of Windows 10.](https://support.microsoft.com/help/13443/windows-which-operating-system)
@@ -52,8 +50,6 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
 IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the Windows Mixed Reality FOD.
 
-
-<span id="block" />
 ## Block the Mixed Reality Portal
 
 You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
