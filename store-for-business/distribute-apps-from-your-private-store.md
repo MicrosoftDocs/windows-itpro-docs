@@ -43,7 +43,7 @@ Microsoft Store adds the app to **Products and services**. Click **Manage**, **A
 
     <!--- ![Image showing Manage menu in Microsoft Store for Business.](images/wsfb-manageinventory.png) -->
 
-3.  Click on the application to open the application settings and then click on **Private store availability**.
+3.  Click on the application to open the application settings, then select **Private store availability**.
 4.  Select **Everyone** to make application available for all people in your organization.
 
     <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
