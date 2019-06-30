@@ -206,7 +206,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | File Picker                                  | 1527c705-839a-4832-9118-54d4Bd6a0c89         |  x  |                          
 | File Explorer                                | C5e2524a-ea46-4f67-841f-6a9465d9d515         |  x  |
 | App Resolver UX                              | E2A4F912-2574-4A75-9BB0-0D023378592B         |  x  |
-| Add Suggested Folders To Library             | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE         |  x  |   
+| Add Suggested Folders To Library             | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE         |  x  |
 | InputApp                                     | InputApp                                     |  x  |
 | Microsoft.AAD.BrokerPlugin                   | Microsoft.AAD.BrokerPlugin                   |  x  |
 | Microsoft.AccountsControl                    | Microsoft.AccountsControl                    |  x  |
