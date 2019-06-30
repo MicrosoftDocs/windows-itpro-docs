@@ -241,7 +241,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.XboxGameCallableUI                 | Microsoft.XboxGameCallableUI                 |  x  |
 | Windows.CBSPreview                           | Windows.CBSPreview                           |  x  |
 | Windows.ImmersiveControlPanel                | Windows.ImmersiveControlPanel                |  x  |
-| Windows.PrintDialog                          | Windows.PrintDialog                                  |  x  |
+| Windows.PrintDialog                          | Windows.PrintDialog                          |  x  |
 
 > [!NOTE]
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
