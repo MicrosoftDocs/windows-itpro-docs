@@ -235,7 +235,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.Windows.PinningConfirmationDialog  | Microsoft.Windows.PinningConfirmationDialog  |  x  |
 | Microsoft.Windows.SecHealthUI                | Microsoft.Windows.SecHealthUI                |  x  |
 | Microsoft.Windows.SecureAssessmentBrowser    | Microsoft.Windows.SecureAssessmentBrowser    |  x  |
-| Microsoft.Windows.ShellExperienceHost        | ShellExperienceHost                          |  x  |                                   
+| Microsoft.Windows.ShellExperienceHost        | Microsoft.Windows.ShellExperienceHost                          |  x  |                                   
 | Microsoft.Windows.StartMenuExperienceHost    | Microsoft.Windows.StartMenuExperienceHost    |  x  |
 | Microsoft.Windows.XGpuEjectDialog            | Microsoft.Windows.XGpuEjectDialog            |  x  |
 | Microsoft.XboxGameCallableUI                 | Microsoft.XboxGameCallableUI                 |  x  |
