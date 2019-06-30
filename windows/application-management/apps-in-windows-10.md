@@ -227,7 +227,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.Windows.CloudExperienceHost        | Microsoft.Windows.CloudExperienceHost        |  x  |
 | Microsoft.Windows.ContentDeliveryManager     | Microsoft.Windows.ContentDeliveryManager     |  x  |
 | Microsoft.Windows.Cortana                    | Microsoft.Windows.Cortana                    |  x  |
-| Microsoft.Windows.NarratorQuickStart         | Microsoft.windows.narratorquickstart         |  x  |
+| Microsoft.Windows.NarratorQuickStart         | Microsoft.Windows.NarratorQuickStart         |  x  |
 | Microsoft.Windows.OOBENetworkCaptivePortal   | Microsoft.Windows.OOBENetworkCaptivePortal   |  x  |
 | Microsoft.Windows.OOBENetworkConnectionFlow  | Microsoft.Windows.OOBENetworkConnectionFlow  |  x  |  
 | Microsoft.Windows.ParentalControls           | ParentalControls                             |  x  |
