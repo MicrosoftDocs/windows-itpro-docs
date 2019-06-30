@@ -212,7 +212,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.AccountsControl                    | Microsoft.AccountsControl                    |  x  |
 | Microsoft.AsyncTextService                   | Microsoft.AsyncTextService                   |  x  |
 | Hello setup UI                               | Microsoft.BioEnrollment                      |  x  |
-| Microsoft.CredDialogHost                     | Microsoft.creddialoghost                     |  x  |
+| Microsoft.CredDialogHost                     | Microsoft.CredDialogHost                     |  x  |
 | Microsoft.ECApp                              | Microsoft.ECApp                              |  x  |
 | Microsoft.EdgeDevtoolsPlugin                 | Microsoft.EdgeDevtoolsPlugin                 |  x  |
 | Microsoft.LockApp                            | Microsoft.LockApp                            |  x  |
