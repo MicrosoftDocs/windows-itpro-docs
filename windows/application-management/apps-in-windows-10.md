@@ -230,7 +230,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.Windows.NarratorQuickStart         | Microsoft.Windows.NarratorQuickStart         |  x  |
 | Microsoft.Windows.OOBENetworkCaptivePortal   | Microsoft.Windows.OOBENetworkCaptivePortal   |  x  |
 | Microsoft.Windows.OOBENetworkConnectionFlow  | Microsoft.Windows.OOBENetworkConnectionFlow  |  x  |  
-| Microsoft.Windows.ParentalControls           | ParentalControls                             |  x  |
+| Microsoft.Windows.ParentalControls           | Microsoft.Windows.ParentalControls                             |  x  |
 | Microsoft.Windows.PeopleExperienceHost       | Microsoft.Windows.PeopleExperienceHost       |  x  |
 | Microsoft.Windows.PinningConfirmationDialog  | Microsoft.Windows.PinningConfirmationDialog  |  x  |
 | Microsoft.Windows.SecHealthUI                | Microsoft.Windows.SecHealthUI                |  x  |
