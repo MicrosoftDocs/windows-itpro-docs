@@ -240,7 +240,7 @@ Location of system apps is  C:\Windows\SystemApps\
 | Microsoft.Windows.XGpuEjectDialog            | Microsoft.Windows.XGpuEjectDialog            |  x  |
 | Microsoft.XboxGameCallableUI                 | Microsoft.XboxGameCallableUI                 |  x  |
 | Windows.CBSPreview                           | Windows.CBSPreview                           |  x  |
-| Windows.ImmersiveControlPanel                | Windows.ImmersiveControlPanel                        |  x  |
+| Windows.ImmersiveControlPanel                | Windows.ImmersiveControlPanel                |  x  |
 | Windows.PrintDialog                          | Windows.PrintDialog                                  |  x  |
 
 > [!NOTE]
