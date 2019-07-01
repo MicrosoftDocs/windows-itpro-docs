@@ -21,8 +21,6 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
@@ -32,7 +30,7 @@ You can lower down your organization's exposure from vulnerabilities and increas
 
 ## Navigate through your remediation options 
 You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
-1. From the fly-in page, you'll see the security recommendation details including your next steps. Click **Remediation options**.
+1. From the flyout panel, you'll see the security recommendation details including your next steps. Click **Remediation options**.
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
 
 >[!NOTE]
@@ -58,6 +56,8 @@ However, if the security recommendation stemmed from a false positive report, or
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
+- [Configuration score](configuration-score.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)

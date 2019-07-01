@@ -21,8 +21,6 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 The cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact on the security recommendation list. Prioritized recommendation helps shorten the mean time to mitigate or remediate vulnerabilities and drive compliance.
 
 Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and SCCM. It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collect information from your environment. 
@@ -60,9 +58,9 @@ From that page, you can do any of the following depending on what you need to do
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md) 
-

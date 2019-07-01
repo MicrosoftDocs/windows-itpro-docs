@@ -21,12 +21,10 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!Include[Prerelease information](prerelease.md)]
-
 >[!NOTE]
 >  Secure score is now part of Threat & Vulnerability Management as Configuration score. The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
 
-The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over the security posture of your organization based on security best practices.
+The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over the security posture of your organization based on security best practices. High configuration score means your endpoints are more resilient from cybersecurity threat attacks.
 
 Your configuration score widget shows the collective security configuration state of your machines across the following categories:
 - Application
@@ -50,9 +48,12 @@ The goal is to remediate the issues in the security recommendations list to impr
 - **Related component** — **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
 - **Remediation type** — **Configuration change** or **Software update**
 
+See how you can [improve your security configuration](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-and-vuln-mgt-scenarios#improve-your-security-configuration), for details.
+
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
