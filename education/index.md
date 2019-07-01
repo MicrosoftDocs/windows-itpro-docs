@@ -55,8 +55,8 @@ ms.prod: w10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deployment Overview</h3>
-                                                    <p>Learn how to deploy our suite of education offerings. Set up a cloud infrastructure for your school, acquire apps, and configure and manage Windows 10 devices.</p>
+                                                    <h3>Deployment Guidance</h3>
+                                                    <p>Learn the easiest way to deploy M365 Education in your school.  Set up a cloud infrastructure, deploy apps, and configure and manage Windows 10 devices.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,7 +76,7 @@ ms.prod: w10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>1. Cloud deployment</h3>
+                                                    <h3>1. M365 EDU deployment</h3>
                                                     <p>Get started by creating your Office 365 tenant, setting up a cloud infrastructure for your school, and creating, managing, and syncing user accounts.</p>
                                                 </div>
                                             </div>
@@ -114,8 +114,8 @@ ms.prod: w10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>3. Tools for Teachers</h3>
-                                                    <p>The latest classroom resources at teachers’ fingertips when you deploy Learning Tools, OneNote Class Notebooks, Teams, and more.</p>
+                                                    <h3>3. Post Deployment Next Steps</h3>
+                                                    <p>Enable hybrid Exchange Server and SharePoint Exchange deployments and configure settings on Admin portals.</p>
                                                 </div>
                                             </div>
                                         </div>
