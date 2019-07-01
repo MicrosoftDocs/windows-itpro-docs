@@ -60,6 +60,11 @@ A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant B
 
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
 
+> [!NOTE]
+> TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
+
+> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
+
 The hard disk must be partitioned with at least two drives:
 
 -   The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
