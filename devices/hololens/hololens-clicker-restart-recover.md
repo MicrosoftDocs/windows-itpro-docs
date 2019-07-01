@@ -21,11 +21,11 @@ Here are some things to try if the HoloLens clicker is unresponsive or isn’t w
 
 Use the tip of a pen to press and hold the [pairing button](https://support.microsoft.com/en-us/help/12646).
 
-![Hold the pairing button](recover-clicker-1.png)
+![Hold the pairing button](images/recover-clicker-1.png)
 
 At the same time, click and hold the clicker for 15 seconds. If the clicker was already paired with your HoloLens, it will stay paired after it restarts.
 
-![Hold the clicker](recover-clicker-2.png)
+![Hold the clicker](images/recover-clicker-2.png)
 
 If the clicker won't turn on or restart, try charging it using the HoloLens charger. If the battery is very low, it might take a few minutes for the white indicator light to turn on.
 
