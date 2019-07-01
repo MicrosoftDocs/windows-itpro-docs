@@ -1,16 +1,22 @@
 ---
 title: Configure kiosks and digital signs on Windows desktop editions (Windows 10)
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: Learn about the methods for configuring kiosks.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
+author: dansimp
 ms.topic: article
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions
+
+>[!WARNING]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Some desktop devices in an enterprise serve a special purpose, such as a PC in the lobby that customers can use to view your product catalog or a PC displaying visual content as a digital sign. Windows 10 offers two different locked-down experiences for public or specialized use:
 
@@ -43,6 +49,7 @@ You can use this method | For this edition | For this kiosk account type
 [Assigned access cmdlets](kiosk-single-app.md#powershell)  | Pro, Ent, Edu | Local standard user
 [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard)  | Pro (version 1709), Ent, Edu | Local standard user, Active Directory, Azure AD 
 [Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md#mdm) | Pro (version 1709), Ent, Edu | Local standard user, Azure AD
+[Shell Launcher](kiosk-shelllauncher.md) v2 | Ent, Edu | Local standard user, Active Directory, Azure AD
 
 <span id="classic" />
 ## Methods for a single-app kiosk running a Windows desktop application
@@ -50,8 +57,8 @@ You can use this method | For this edition | For this kiosk account type
 You can use this method | For this edition | For this kiosk account type 
 --- | --- | ---
 [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | Ent, Edu | Local standard user, Active Directory, Azure AD 
-[Shell Launcher](kiosk-shelllauncher.md) | Ent, Edu | Local standard user, Active Directory, Azure AD
 [Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md#mdm) | Pro (version 1709), Ent, Edu | Local standard user, Azure AD
+[Shell Launcher](kiosk-shelllauncher.md) v1 and v2 | Ent, Edu | Local standard user, Active Directory, Azure AD
 
 <span id="desktop" />
 ## Methods for a multi-app kiosk

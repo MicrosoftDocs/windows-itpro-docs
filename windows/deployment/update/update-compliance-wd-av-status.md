@@ -1,12 +1,14 @@
 ---
 title: Update Compliance - Windows Defender AV Status report
+ms.reviewer: 
+manager: laurawi
 description: an overview of the Windows Defender AV Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-analytics
 ms.topic: article
 ---
@@ -34,3 +36,7 @@ Here are some important terms to consider when using the Windows Defender AV Sta
 
 ## Windows Defender data latency
 Because of the way Windows Defender is associated with the rest of Windows device data, Defender data for new devices might take much longer to appear than other data types. This process could take up to 28 days. 
+
+## Related topics
+
+- [Windows Defender Antivirus pre-requisites](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting#confirm-pre-requisites)

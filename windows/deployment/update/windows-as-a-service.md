@@ -4,9 +4,11 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: greg-lindsay
+ms.author: greg-lindsay
 ms.date: 01/24/2019
+ms.reviewer: 
+manager: laurawi
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---
@@ -18,20 +20,20 @@ Find the tools and resources you need to help deploy and support Windows as a se
 
 Find the latest and greatest news on Windows 10 deployment and servicing.
 
-**Working to make Windows updates clear and transparent**
-> [!VIDEO https://www.youtube-nocookie.com/embed/u5P20y39DrA]
+**Discovering the Windows 10 Update history pages**
+> [!VIDEO https://www.youtube-nocookie.com/embed/mTnAb9XjMPY]
 
-Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. The Windows update history page is for anyone looking to gain an immediate, precise understanding of particular Windows update issues. 
+Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="https://aka.ms/WindowsReleaseHealth">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update">How to get the Windows 10 May 2019 Update</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540">Windows 10, version 1809 designated for broad deployment</a> - March 28, 2019</li>
-<li><a href="https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience">Data, insights and listening to improve the customer experience</a> - March 6, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Getting-to-know-the-Windows-update-history-pages/ba-p/355079">Getting to know the Windows update history pages</a> - February 21, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523">Windows Update for Business and the retirement of SAC-T</a> - February 14, 2019</li>
-<li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
-<li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Call-to-action-review-your-Windows-Update-for-Business-deferral/ba-p/394244">Call to action: review your Windows Update for Business deferral values</a> - April 3, 2019</li>
 </ul>
 
 [See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
@@ -41,9 +43,11 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <img src="images/champs-2.png" alt="" width="640" height="320">
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">**NEW** Classifying Windows updates in common deployment tools</a>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Deployment-rings-The-hidden-strategic-gem-of-Windows-as-a/ba-p/659622">**NEW** Deployment rings: The hidden [strategic] gem of Windows as a service</a>
 
-<a href="https://docs.microsoft.com/windows-server/get-started/express-updates"><b>NEW</b> Express updates for Windows Server 2016 re-enabled for November 2018 update
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">Classifying Windows updates in common deployment tools</a>
+
+<a href="https://docs.microsoft.com/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
 </a>
 
 <a href="https://support.microsoft.com/help/4472027/">2019 SHA-2 Code Signing Support requirement for Windows and WSUS</a>

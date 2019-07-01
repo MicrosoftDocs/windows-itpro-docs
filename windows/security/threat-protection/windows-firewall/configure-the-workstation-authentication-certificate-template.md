@@ -2,12 +2,15 @@
 title: Configure the Workstation Authentication Certificate Template (Windows 10)
 description: Configure the Workstation Authentication Certificate Template
 ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: Justinha
+author: dansimp
 ms.date: 07/30/2018
 ---
 

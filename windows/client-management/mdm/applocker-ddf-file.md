@@ -2,11 +2,13 @@
 title: AppLocker DDF file
 description: AppLocker DDF file
 ms.assetid: 79E199E0-5454-413A-A57A-B536BDA22496
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 12/05/2017
 ---
 
@@ -17,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **AppLock
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

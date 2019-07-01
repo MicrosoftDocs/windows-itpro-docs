@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: shortpatti
-ms.author: pashort
+author: dulcemontemayor
+ms.author: dolmont
 ms.localizationpriority: medium
 ms.date: 02/08/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # How to configure Diffie Hellman protocol over IKEv2 VPN connections

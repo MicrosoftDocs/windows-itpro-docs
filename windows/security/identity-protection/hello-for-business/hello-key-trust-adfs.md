@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -149,7 +150,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 ### Windows Server 2016, 2012 R2 or later Domain Controllers
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008R2-domain-controllers) section.
+Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008-r2-domain-controllers) section.
 
 Sign-in the federation server with _Domain Admin_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 1. Start **Server Manager**.

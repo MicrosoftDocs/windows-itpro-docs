@@ -2,12 +2,14 @@
 title: User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop security policy setting.
 ms.assetid: fce20472-3c93-449d-b520-13c4c74a9892
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -27,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 This security setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts that are used by a standard user.
 
 >**Note:**  This setting does not change the behavior of the UAC elevation prompt for administrators.
- 
+ 
 **Background**
 
 User Interface Privilege Isolation (UIPI) implements restrictions in the Windows subsystem that prevent lower-privilege applications from sending messages or installing hooks in higher-privilege processes. Higher-privilege applications are permitted to send messages to lower-privilege processes. UIPI does not interfere with or change the behavior of messages between applications at the same privilege (or integrity) level.
@@ -81,7 +83,7 @@ Server type or GPO| Default value |
 | DC Effective Default Settings | Disabled| 
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

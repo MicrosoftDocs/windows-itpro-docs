@@ -1,8 +1,11 @@
 ---
 title: Overview of the Tools in DaRT 7.0
 description: Overview of the Tools in DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 67c5991e-cbe6-4ce9-9fe5-f1761369d1fe
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -30,7 +33,7 @@ You can use **Registry Editor** to access and change the registry of the Windows
 **Caution**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+ 
 
 ### Locksmith
 
@@ -67,7 +70,7 @@ For more information about **Crash Analyzer**, see [Diagnosing System Failures w
 **Warning**  
 We recommend that you back up a disk before you use **Disk Commander** to repair it. By using **Disk Commander**, you can potentially damage volumes and make them inaccessible. Additionally, changes to one volume can affect other volumes because volumes on a disk share a partition table.
 
- 
+ 
 
 ### Disk Wipe
 
@@ -76,7 +79,7 @@ You can use **Disk Wipe** to delete all data from a disk or volume, even the dat
 **Warning**  
 After wiping a disk or volume, you cannot recover the data. Verify the size and label of a volume before erasing it.
 
- 
+ 
 
 ### Computer Management
 
@@ -103,7 +106,7 @@ We recommend that you uninstall only one hotfix at a time, even though the tool 
 **Important**  
 Programs that were installed or updated after a hotfix was installed might not work correctly after you uninstall a hotfix.
 
- 
+ 
 
 ### SFC Scan
 
@@ -120,7 +123,7 @@ The **Search** tool opens a **File Search** window that you can use to find docu
 **Important**  
 Environments with the Standalone System Sweeper deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection. Because of how the Standalone System Sweeper tool integrates into DaRT, all supported DaRT version deployments cannot apply these anti-malware updates to their DaRT images.
 
- 
+ 
 
 The **Standalone System Sweeper** can help detect malware and unwanted software and warn you of security risks. You can use this tool to scan a computer for and remove malware even when the installed Windows operating system is not running. When the **Standalone System Sweeper** detects malicious or unwanted software, it prompts you to remove, quarantine, or allow for each item.
 
@@ -133,16 +136,16 @@ The **Remote Connection** tool in DaRT lets you remotely run the DaRT tools on a
 **Important**  
 The two computers establishing a remote connection must be part of the same network.
 
- 
+ 
 
 ## Related topics
 
 
 [Getting Started with DaRT 7.0](getting-started-with-dart-70-new-ia.md)
 
- 
+ 
 
- 
+ 
 
 
 

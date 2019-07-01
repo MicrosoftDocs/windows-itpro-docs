@@ -1,8 +1,11 @@
 ---
 title: What's New in App-V 5.0
 description: What's New in App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 79ff6e02-e926-4803-87d8-248a6b28099d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -107,13 +110,13 @@ The following table displays information about what has changed with the App-V 5
 <td align="left"><p>If no stream optimization is performed, packages are stream faulted when they are requested by computers running the App-V 5.0 client until they can launch.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Q:\</p></td>
-<td align="left"><p>App-V 5.0 uses the native file system and no longer requires a Q:\.</p></td>
+<td align="left"><p>Q:&lt;/p&gt;</td>
+<td align="left"><p>App-V 5.0 uses the native file system and no longer requires a Q:.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Sequencing error detection
 
@@ -161,9 +164,9 @@ There is no file or application cache available with App-V 5.0.
 
 [About App-V 5.0](about-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: AGPM 4
 description: AGPM 4
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 81693f30-1b8e-4e63-b1ac-e6de1bc30cc0
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

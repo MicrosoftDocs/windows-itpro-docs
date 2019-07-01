@@ -2,12 +2,14 @@
 title: GPO\_DOMISO\_IsolatedDomain\_Clients (Windows 10)
 description: GPO\_DOMISO\_IsolatedDomain\_Clients
 ms.assetid: 73cd9e25-f2f1-4ef6-b0d1-d36209518cd9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -86,4 +88,4 @@ This GPO provides the following rules:
 
     -   Authentication mode is set to **Do not authenticate**.
 
-**Next: **[GPO\_DOMISO\_IsolatedDomain\_Servers](gpo-domiso-isolateddomain-servers.md)
+**Next:** [GPO\_DOMISO\_IsolatedDomain\_Servers](gpo-domiso-isolateddomain-servers.md)

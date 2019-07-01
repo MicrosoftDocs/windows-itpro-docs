@@ -5,11 +5,13 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Provision PCs with apps 
@@ -25,7 +27,7 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 >[!IMPORTANT]
->If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Online Desktop Cilent, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## Settings for UWP apps
 
@@ -61,6 +63,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 
 <span id="adv" />
+
 ## Add a Windows desktop application using advanced editor in Windows Configuration Designer
 
 
@@ -70,7 +73,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
     ![enter name for first app](../images/wcd-app-name.png)
 
-3. [Configure the settings for the appropriate installer type.](#settings-for-classic-windows-apps)
+3. Configure the settings for the appropriate installer type.
 
     ![enter settings for first app](../images/wcd-app-commands.png)
 
@@ -100,7 +103,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
     
 6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
 
-7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *\<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 
@@ -133,42 +136,42 @@ For details about the settings you can customize in provisioning packages, see [
 1. When you are done configuring the provisioning package, on the **File** menu, click **Save**.
 
 2. Read the warning that project files may contain sensitive information, and click **OK**.
-> **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+   > **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 3. On the **Export** menu, click **Provisioning package**.
 
-1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+4. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 
-10. Set a value for **Package Version**.
+5. Set a value for **Package Version**.
 
-    > [!TIP]  
-    > You can make changes to existing packages and change the version number to update previously applied packages.
+   > [!TIP]
+   > You can make changes to existing packages and change the version number to update previously applied packages.
 
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+6. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
-    -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
+   -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+   -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-        **Important**  
-        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
+       **Important**  
+       We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
 
-12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
-Optionally, you can click **Browse** to change the default output location.
+7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
+   Optionally, you can click **Browse** to change the default output location.
 
-13. Click **Next**.
+8. Click **Next**.
 
-14. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.<p>
-If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
+9. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.<p>
+   If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.<p>
-If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
+10. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.<p>
+    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-16. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
+11. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
 
     -   Shared network folder
 
@@ -191,7 +194,7 @@ If your build is successful, the name of the provisioning package, output direct
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
- 
+ 
 
 ## Related topics
 

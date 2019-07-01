@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
 
@@ -65,6 +66,9 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 1.	Start the **Group Policy Management Console** (gpmc.msc)
 2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO�**
 3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
+
+>[!IMPORTANT]
+>If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra). 
 
 ### Windows Hello for Business Group Policy
 
@@ -157,10 +161,10 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Create Windows Hello for Business Group Policy object.
 > * Enable the Use Windows Hello for Business policy setting.
 > * Add users or groups to the Windows Hello for Business group
-
-
+> 
+> 
 > [!div class="nextstepaction"]
-[Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
+> [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
 
 <br><br>
 
@@ -168,7 +172,7 @@ Users must receive the Windows Hello for Business group policy settings and have
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)

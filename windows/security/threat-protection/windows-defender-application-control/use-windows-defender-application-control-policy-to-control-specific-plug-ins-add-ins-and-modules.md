@@ -2,12 +2,15 @@
 title: Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules  (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 05/03/2018
 ---
 

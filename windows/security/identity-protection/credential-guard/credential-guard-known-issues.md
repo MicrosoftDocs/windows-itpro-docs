@@ -7,12 +7,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
 #  Windows Defender Credential Guard: Known issues 
@@ -89,21 +90,21 @@ See the following article on Citrix support for Secure Boot:
 
 Windows Defender Credential Guard is not supported by either these products, products versions, computer systems, or Windows 10 versions:
 
--	For Windows Defender Credential Guard on Windows 10 with McAfee Encryption products, see:
-[Support for Windows Defender Device Guard and Windows Defender Credential Guard on Windows 10 with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
+- For Windows Defender Credential Guard on Windows 10 with McAfee Encryption products, see:
+  [Support for Windows Defender Device Guard and Windows Defender Credential Guard on Windows 10 with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
 
--	For Windows Defender Credential Guard on Windows 10 with Check Point Endpoint Security Client, see:
-[Check Point Endpoint Security Client support for Microsoft Windows 10 Windows Defender Credential Guard and Windows Defender Device Guard features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
+- For Windows Defender Credential Guard on Windows 10 with Check Point Endpoint Security Client, see:
+  [Check Point Endpoint Security Client support for Microsoft Windows 10 Windows Defender Credential Guard and Windows Defender Device Guard features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
 
--	For Windows Defender Credential Guard on Windows 10 with VMWare Workstation
-[Windows 10 host fails when running VMWare Workstation when Windows Defender Credential Guard is enabled](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361)
+- For Windows Defender Credential Guard on Windows 10 with VMWare Workstation
+  [Windows 10 host fails when running VMWare Workstation when Windows Defender Credential Guard is enabled](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361)
 
--	For Windows Defender Credential Guard on Windows 10 with specific versions of the Lenovo ThinkPad
-[ThinkPad support for Windows Defender Device Guard and Windows Defender Credential Guard in Microsoft Windows 10 – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
+- For Windows Defender Credential Guard on Windows 10 with specific versions of the Lenovo ThinkPad
+  [ThinkPad support for Windows Defender Device Guard and Windows Defender Credential Guard in Microsoft Windows 10 – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
 
--	For Windows Defender Credential Guard on Windows 10 with Symantec Endpoint Protection
-[Windows 10 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
+- For Windows Defender Credential Guard on Windows 10 with Symantec Endpoint Protection
+  [Windows 10 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
 
- This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows 10 or specific versions of Windows 10. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
+  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows 10 or specific versions of Windows 10. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
 
- Microsoft encourages third-party vendors to contribute to this page by providing relevant product support information and by adding links to their own product support statements.
+  Microsoft encourages third-party vendors to contribute to this page by providing relevant product support information and by adding links to their own product support statements.

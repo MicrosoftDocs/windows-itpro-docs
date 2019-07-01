@@ -4,8 +4,11 @@ description: Preliminary documentation for some Windows 10 features in Insider P
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: dansimp
 ms.date: 04/14/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 

@@ -2,11 +2,13 @@
 title: Using a room control system (Surface Hub)
 description: Room control systems can be used with your Microsoft Surface Hub.
 ms.assetid: DC365002-6B35-45C5-A2B8-3E1EB0CB8B50
+ms.reviewer: 
+manager: dansimp
 keywords: room control system, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
@@ -31,7 +33,7 @@ To connect to a room control system control panel, you don't need to configure a
 | Parity | none |
 | Flow control | none |
 | Line feed | every carriage return |
- 
+ 
 
 ## Wiring diagram
 
@@ -53,7 +55,7 @@ The following command modifiers are available. Commands terminate with a new lin
 | - | Decrease a value |
 | = | Set a discrete value |
 | ? | Queries for a current value |
- 
+ 
 
 ## Power
 
@@ -74,7 +76,7 @@ In Replacement PC mode, the power states are only Ready and Off and only change 
 | 0 | S5 | Off |
 | 5 | S0 | Ready |
 
-For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
+For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and responses. 
 
 | Command | State change| Response |
 | --- | --- | --- |
@@ -110,7 +112,7 @@ Changes to volume levels can be sent by a room control system, or other system.
 | Volume- |  SMC sends the volume down command.</br></br>PC service notifies SMC of new volume level. |  Volume = 50 |
 
 
- 
+ 
 
 ## Mute for audio
 
@@ -121,7 +123,7 @@ Audio can be muted.
 | AudioMute+ |  SMC sends the audio mute command.</br></br>PC service notifies SMC that audio is muted. |  none |
 
 
- 
+ 
 
 ## Video source
 
@@ -135,7 +137,7 @@ Several display sources can be used.
 | 3 |  VGA |
 
 
- 
+ 
 
 Changes to display source can be sent by a room control system, or other system.
 
@@ -158,7 +160,7 @@ Errors are returned following the format in this table.
 | Error: Command not available when off '&lt;input&gt;'. |  When the Surface Hub is off, commands other than Power return this error. For example, &quot;Volume+&quot; would be invalid and return &quot; Error: Command not available when off 'Volume'&quot;. |
 
 
- 
+ 
 
 ## Related topics
 
@@ -167,9 +169,9 @@ Errors are returned following the format in this table.
 
 [Microsoft Surface Hub administrator's guide](surface-hub-administrators-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

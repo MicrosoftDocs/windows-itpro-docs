@@ -1,0 +1,93 @@
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows 7 and Windows Server 2008 R2 SP1
+metadata:
+  document_id: 
+  title: Windows 7 and Windows Server 2008 R2 SP1
+  description: View announcements and review known issues and fixes for Windows 7 and Windows Server 2008 R2 SP1
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues for Windows 7 and Windows Server 2008 R2 SP1. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      
+      " 
+
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    
+    - href: https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update/#1P75kJB6T5OhySyo.97
+      html: Get the update >
+      image: 
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Windows 10, version 1903 rollout begins
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
+      html: Read about the latest enhancements > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: What’s new in Windows Update for Business
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
+      html: Get an overview > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: What’s new for businesses and IT pros in Windows 10
+- items:
+  - type: markdown
+    text: "
+      <div align='right' style='font-size:0.87rem'><a class='is-size-7' href='https://docs.microsoft.com/windows/release-information/windows-message-center'>See all messages ></a></div>
+      "
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Known issues
+- items:
+  - type: markdown
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
+      <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='324msg'></div><b>System may be unresponsive after restart with certain McAfee antivirus products</b><br>Devices with McAfee Endpoint Security Threat Prevention 10.x, Host Intrusion Prevention 8.0, or VirusScan Enterprise 8.8 may be slow or unresponsive at startup.<br><br><a href = '#324msgdesc'>See details ></a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493472' target='_blank'>KB4493472</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
+      <tr><td><div id='512msg'></div><b>IE11 may stop working when loading or interacting with Power BI reports</b><br>Power BI reports that contain line charts with markers may cause Internet Explorer 11 to stop working.<br><br><a href = '#512msgdesc'>See details ></a></td><td>May 14, 2019<br><a href ='https://support.microsoft.com/help/4499164' target='_blank'>KB4499164</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a></td><td>June 20, 2019 <br>02:00 PM PT</td></tr>
+      <tr><td><div id='510msg'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><br>When trying to expand, view or create Custom Views in Event Viewer, you may receive an error and the app may stop responding or close.<br><br><a href = '#510msgdesc'>See details ></a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503292' target='_blank'>KB4503292</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a></td><td>June 20, 2019 <br>02:00 PM PT</td></tr>
+      </table>
+      "
+
+- title: Issue details
+- items:
+  - type: markdown
+    text: "
+        <div>
+        </div> 
+      "
+- title: June 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='512msgdesc'></div><b>IE11 may stop working when loading or interacting with Power BI reports</b><div>Internet Explorer 11 may stop working when loading or interacting with Power BI reports that have line charts with markers. This issue may also occur when viewing other content that contains Scalable Vector Graphics (SVG) markers.</div><div><br></div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 7 SP1; Windows 8.1</li><li>Server: Windows Server 2008 R2 SP1; Windows Server 2012; Windows Server 2012 R2</li></ul><div></div><div><br></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in&nbsp;Preview Rollup <a href='https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a>. If you are using the Internet Explorer cumulative updates, this issue was resolved in <a href=\"https://support.microsoft.com/help/4508646\" target=\"_blank\">KB4508646</a>.</div><br><a href ='#512msg'>Back to top</a></td><td>May 14, 2019<br><a href ='https://support.microsoft.com/help/4499164' target='_blank'>KB4499164</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a></td><td>Resolved:<br>June 20, 2019 <br>02:00 PM PT<br><br>Opened:<br>June 07, 2019 <br>02:57 PM PT</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='510msgdesc'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><div>When trying to expand, view, or create&nbsp;<strong>Custom Views&nbsp;</strong>in Event Viewer, you may receive the error, \"MMC has detected an error in a snap-in and will unload it.\" and the app may stop responding or close. You may also receive the same error when using&nbsp;<strong>Filter Current Log</strong>&nbsp;in the&nbsp;<strong>Action&nbsp;</strong>menu with built-in views or logs. Built-in views and other features of Event Viewer should work as expected.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10 Enterprise LTSC 2015; Windows 8.1; Windows 7 SP1</li><li>Server: Windows Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href='https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a>.  If you are using Security Only updates, see <a href=\"https://support.microsoft.com/help/4508640\" target=\"_blank\" style=\"\">KB4508640</a> for resolving KB for your platform.</div><br><a href ='#510msg'>Back to top</a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503292' target='_blank'>KB4503292</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4503277' target='_blank'>KB4503277</a></td><td>Resolved:<br>June 20, 2019 <br>02:00 PM PT<br><br>Opened:<br>June 12, 2019 <br>11:11 AM PT</td></tr>
+      </table>
+      "
+
+- title: April 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='324msgdesc'></div><b>System may be unresponsive after restart with certain McAfee antivirus products</b><div>Microsoft and McAfee have identified an issue on devices with McAfee Endpoint Security (ENS) Threat Prevention 10.x or McAfee Host Intrusion Prevention (Host IPS) 8.0 or McAfee VirusScan Enterprise (VSE) 8.8 installed. It may cause the system to have slow startup or become unresponsive at restart after installing this update.&nbsp;</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: &nbsp;Windows 8.1; Windows 7 SP1</li><li>Server: &nbsp;Windows Server 2012 R2; Windows Server 2008 R2 SP1</li></ul><div></div><div><strong>Workaround: </strong>Guidance for McAfee customers can be found in the following McAfee support articles:&nbsp;</div><ul><li><a href=\"https://kc.mcafee.com/corporate/index?page=content&amp;id=KB91465\" target=\"_blank\">McAfee Security (ENS) Threat Prevention 10.x</a></li><li><a href=\"https://kc.mcafee.com/corporate/index?page=content&amp;id=KB91466\" target=\"_blank\">McAfee Host Intrusion Prevention (Host IPS) 8.0</a></li><li><a href=\"https://kc.mcafee.com/corporate/index?page=content&amp;id=KB91467\" target=\"_blank\">McAfee VirusScan Enterprise (VSE) 8.8</a></li></ul><div></div><div><strong>Next steps: </strong>We are presently investigating this issue with McAfee. We will provide an update once we have more information.</div><br><a href ='#324msg'>Back to top</a></td><td>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493472' target='_blank'>KB4493472</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>April 25, 2019 <br>02:00 PM PT<br><br>Opened:<br>April 09, 2019 <br>10:00 AM PT</td></tr>
+      </table>
+      "

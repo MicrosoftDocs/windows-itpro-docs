@@ -2,12 +2,14 @@
 title: Document your AppLocker rules (Windows 10)
 description: This topic describes what rule conditions to associate with each file, how to associate the rule conditions with each file, the source of the rule, and whether the file should be included or excluded.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -101,7 +103,7 @@ The following table details sample data for documenting rule type and rule condi
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -116,7 +118,7 @@ The following table details sample data for documenting rule type and rule condi
 </tr>
 </tbody>
 </table>
- 
+ 
 ## Next steps
 
 For each rule, determine whether to use the allow or deny option. Then, three tasks remain:

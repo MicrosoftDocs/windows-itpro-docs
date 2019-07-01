@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Validate and Deploy Multifactor Authentication Services (MFA)
 
@@ -42,7 +43,7 @@ A lab or proof-of-concept environment does not need high-availability or scalabi
 Please follow [Download the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#download-the-azure-multi-factor-authentication-server) to download Azure MFA server. 
 
 >[!IMPORTANT]
->Make sure to validate the requirements for Azure MFA server, as outlined in [Install and Configure the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#install-and-configure-the-azure-multi-factor-authentication-server) before proceeding. Do not use instllation instructions provided in the article.
+>Make sure to validate the requirements for Azure MFA server, as outlined in [Install and Configure the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#install-and-configure-the-azure-multi-factor-authentication-server) before proceeding. Do not use installation instructions provided in the article.
 
 Once you have validated all the requirements, please proceed to [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md).
 

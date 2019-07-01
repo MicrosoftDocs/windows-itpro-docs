@@ -1,8 +1,11 @@
 ---
 title: How to Pack a MED-V Image
 description: How to Pack a MED-V Image
-author: jamiejdt
+author: dansimp
 ms.assetid: e1ce2307-0f1b-4bf8-b146-e4012dc138d2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,25 +35,27 @@ A MED-V image must be packed before it can be added to a deployment package or u
 
     -   In the **Image name** field, type the desired name.
 
-        **Note**  
+        **Note**  
         The following characters cannot be included in the image name: space " &lt; &gt; | \\ / : \* ?
 
-         
 
-        A new packed image will be created.
 
-    -   From the drop-down list, select an existing name.
+~~~
+    A new packed image will be created.
 
-        A new version of the existing image will be created.
+-   From the drop-down list, select an existing name.
 
-5.  Click **OK**.
+    A new version of the existing image will be created.
+~~~
 
-    A new MED-V packed image is created on your host computer with the properties defined in the following table.
+5. Click **OK**.
 
-**Note**  
+   A new MED-V packed image is created on your host computer with the properties defined in the following table.
+
+**Note**  
 In the **Local Packed Images** and **Packed Images on Server** panes, the most recent version of each image is displayed as the parent node. Click the parent node to view all other existing versions of the image.
 
- 
+
 
 **Local Packed Images Properties**
 
@@ -74,11 +79,10 @@ In the **Local Packed Images** and **Packed Images on Server** panes, the most r
 <td align="left"><p>Version</p></td>
 <td align="left"><p>The version of the displayed image.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>All previous versions are kept unless deleted.</p>
+<strong>Note</strong><br/><p>All previous versions are kept unless deleted.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -92,7 +96,7 @@ In the **Local Packed Images** and **Packed Images on Server** panes, the most r
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -103,9 +107,9 @@ In the **Local Packed Images** and **Packed Images on Server** panes, the most r
 
 [Creating a Virtual PC Image for MED-V](creating-a-virtual-pc-image-for-med-v.md)
 
- 
 
- 
+
+
 
 
 

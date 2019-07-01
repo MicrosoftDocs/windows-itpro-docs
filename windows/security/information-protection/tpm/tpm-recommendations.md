@@ -2,13 +2,14 @@
 title: TPM recommendations (Windows 10)
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
 ms.assetid: E85F11F5-4E6A-43E7-8205-672F77706561
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

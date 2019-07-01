@@ -1,8 +1,11 @@
 ---
 title: Application Virtualization Server Management Help
 description: Application Virtualization Server Management Help
-author: jamiejdt
+author: dansimp
 ms.assetid: 4f67265c-58f5-4d77-bfff-95474d8f1bb6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

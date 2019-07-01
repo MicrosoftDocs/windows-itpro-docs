@@ -2,12 +2,14 @@
 title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows 10)
 description: Planning Your Windows Defender Firewall with Advanced Security Design
 ms.assetid: f3ac3d49-ef4c-4f3c-a16c-e107284e169f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -93,4 +95,4 @@ After you have selected a design and assigned your devices to zones, you can beg
 
 When you are ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
-**Next: **[Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
+**Next:** [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)

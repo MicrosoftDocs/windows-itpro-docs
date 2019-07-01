@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Validate and Configure Public Key Infrastructure
 
@@ -64,7 +65,7 @@ By default, the Active Directory Certificate Authority provides and publishes th
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
+3.	In the **Certificate Templates Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
@@ -81,7 +82,7 @@ The Kerberos Authentication certificate template is the most current certificate
 Sign-in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
+3.	In the **Certificate Templates Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
 4.	Click the **Superseded Templates** tab. Click **Add**.
 5.	From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
 6.	From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
@@ -98,7 +99,7 @@ Windows 10 clients use the https protocol when communicating with Active Directo
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
+3.	In the **Certificate Templates Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
 4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
@@ -168,11 +169,11 @@ You want to confirm your domain controllers enroll the correct certificates and 
 
 #### Use the Event Logs
 
-Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServices-Lifecycles-System** event log under **Application and Services/Microsoft/Windows**.
+Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServicesClient-Lifecycle-System** event log under **Application and Services/Microsoft/Windows**.
 
 Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template. 
 
-Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServices-Lifecycles-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
+Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServicesClient-Lifecycle-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
 
 
 #### Certificate Manager

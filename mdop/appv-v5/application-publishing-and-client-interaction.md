@@ -1,8 +1,11 @@
 ---
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
-author: jamiejdt
+author: manikadhiman
 ms.assetid: c69a724a-85d1-4e2d-94a2-7ffe0b47d971
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -91,7 +94,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 </tbody>
 </table>
 
- 
+ 
 
 For information about sequencing, see [Application Virtualization 5.0 Sequencing Guide](https://www.microsoft.com/download/details.aspx?id=27760).
 
@@ -161,7 +164,7 @@ The appv file contains the following folder and files, which are used when creat
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-files-data-storage"></a>App-V client data storage locations
 
@@ -230,7 +233,7 @@ The App-V client performs tasks to ensure that virtual applications run properly
 </tbody>
 </table>
 
- 
+ 
 
 Additional details for the table are provided in the section below and throughout the document.
 
@@ -253,7 +256,7 @@ If the App-V Client is configured in Shared Content Store mode, no data is writt
 **Note**  
 The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
 
- 
+ 
 
 ### Package catalogs
 
@@ -279,7 +282,7 @@ The App-V Client manages the following two file-based locations:
 </tr>
 <tr class="even">
 <td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>%programdata%\Microsoft\AppV\Client\Catalog\</code></p>
+<td align="left"><p><code>%programdata%\Microsoft\AppV\Client\Catalog&lt;/code&gt;</p>
 <p>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.</p></td>
 </tr>
 <tr class="odd">
@@ -306,7 +309,7 @@ The App-V Client manages the following two file-based locations:
 </tbody>
 </table>
 
- 
+ 
 
 ### User catalog
 
@@ -324,7 +327,7 @@ The App-V Client manages the following two file-based locations:
 </tr>
 <tr class="even">
 <td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>ppdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
+<td align="left"><p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Files in the user catalog</p></td>
@@ -345,7 +348,7 @@ The App-V Client manages the following two file-based locations:
 </tbody>
 </table>
 
- 
+ 
 
 ### Shortcut backups
 
@@ -380,12 +383,12 @@ When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file
 <tr class="odd">
 <td align="left"><p><strong>Registry.dat from Package Store</strong></p></td>
 <td align="left"><p><strong> &gt; </strong></p></td>
-<td align="left"><p><strong>%ProgramData%\Microsoft\AppV\Client\Vreg\{VersionGuid}.dat</strong></p></td>
+<td align="left"><p><strong>%ProgramData%\Microsoft\AppV\Client\Vreg{VersionGuid}.dat</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY`. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a userspecific location `HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User`. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
 
@@ -439,9 +442,9 @@ There are two package registry locations and two connection group locations wher
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 **Connection Group VReg:**
 
@@ -479,9 +482,9 @@ There are two package registry locations and two connection group locations wher
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 There are two COW locations for HKLM; elevated and non-elevated processes. Elevated processes always write HKLM changes to the secure COW under HKLM. Non-elevated processes always write HKLM changes to the non-secure COW under HKCU\\Software\\Classes. When an application reads changes from HKLM, elevated processes will read changes from the secure COW under HKLM. Non-elevated reads from both, favoring the changes made in the unsecure COW first.
 
@@ -566,9 +569,9 @@ The App-V Client can be configured to change the default behavior of streaming. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors around streaming packages that must be explained:
 
@@ -620,7 +623,7 @@ Together, these files and registry settings represent the user’s catalog, so e
 **Note**  
 The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under `HKEY_CURRENT_USER` is missing or mismatched with the data in %appdata%.
 
- 
+ 
 
 ### Registry-based data
 
@@ -642,8 +645,8 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 <td align="left"><p>Applications that are run as standard users</p></td>
 <td align="left"><p>When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:</p>
 <ul>
-<li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\REGISTRY\USER\{UserSID}\SOFTWARE</p></li>
+<li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
+<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages{PkgGUID}\REGISTRY\USER{UserSID}\SOFTWARE</p></li>
 </ul>
 <p>The locations are enabled for roaming based on the operating system settings.</p></td>
 </tr>
@@ -656,14 +659,14 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 </ul>
 <p>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following location:</p>
 <ul>
-<li><p>HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\{UserSID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\Registry\User\{UserSID}\SOFTWARE</p></li>
+<li><p>HKLM\SOFTWARE\Microsoft\AppV\Client\Packages{PkgGUID}{UserSID}\REGISTRY\MACHINE\SOFTWARE</p></li>
+<li><p>HKCU\SOFTWARE\Microsoft\AppV\Client\Packages{PkgGUID}\Registry\User{UserSID}\SOFTWARE</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### App-V and folder redirection
 
@@ -687,30 +690,30 @@ The following table shows local and roaming locations, when folder redirection h
 <tbody>
 <tr class="odd">
 <td align="left"><p>ProgramFilesX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\ProgramFilesX86</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\ProgramFilesX86</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SystemX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\SystemX86</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\SystemX86</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\Windows</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\Windows</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>appv_ROOT</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\appv_ROOT</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\appv_ROOT</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AppData</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Roaming</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\AppData</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Roaming</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\AppData</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 The following table shows local and roaming locations, when folder redirection has been implemented for %AppData%, and the location has been redirected (typically to a network location).
 
@@ -728,30 +731,30 @@ The following table shows local and roaming locations, when folder redirection h
 <tbody>
 <tr class="odd">
 <td align="left"><p>ProgramFilesX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\ProgramFilesX86</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\ProgramFilesX86</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SystemX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\SystemX86</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\SystemX86</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\Windows</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\Windows</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>appv_ROOT</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\appv_ROOT</p></td>
+<td align="left"><p>C:\users\jsmith\AppData&lt;strong&gt;Local</strong>\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\appv_ROOT</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AppData</p></td>
-<td align="left"><p><strong>\\Fileserver</strong>\users\jsmith\roaming\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\AppData</p></td>
+<td align="left"><p><strong>\Fileserver</strong>\users\jsmith\roaming\Microsoft\AppV\Client\VFS&amp;lt;GUID&gt;\AppData</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 The current App-V Client VFS driver cannot write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
 
@@ -808,7 +811,7 @@ This document focuses on App-V Full Infrastructure solutions. For specific infor
 
 The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See the How to Deploy the Client section on TechNet at: [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md) or utilize the PowerShell:
 
-``` syntax
+```powershell
 get-command *appv*
 ```
 
@@ -874,7 +877,7 @@ Adding an App-V package to the client is the first step of the publishing refres
 
     7.  Create the Registry.dat file from the package store to %ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat
 
-    8.  Register the package with the App-V Kernal Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
+    8.  Register the package with the App-V Kernel Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
 
     9.  Invoke scripting from the AppxManifest.xml or DeploymentConfig.xml file for Package Add timing.
 
@@ -885,7 +888,7 @@ Adding an App-V package to the client is the first step of the publishing refres
     **Note**  
     This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
 
-     
+     
 
 6.  Invoke background load mounting based on client configuration.
 
@@ -894,7 +897,7 @@ Adding an App-V package to the client is the first step of the publishing refres
     **Note**  
     This condition occurs as a product of removal without unpublishing with background addition of the package.
 
-     
+     
 
 This completes an App-V package add of the publishing refresh process. The next step is publishing the package to the specific target (machine or user).
 
@@ -923,7 +926,7 @@ During the Publishing Refresh operation, the specific publishing operation (Publ
         **Note**  
         This enables restore extension points if the package is unpublished.
 
-         
+         
 
     3.  Run scripts targeted for publishing timing.
 
@@ -1014,7 +1017,7 @@ The App-V 5 package upgrade process differs from the older versions of App-V. Ap
 </tbody>
 </table>
 
- 
+ 
 
 When a task is placed in a pending state, the App-V client also generates a registry key for the pending task, as follows:
 
@@ -1041,7 +1044,7 @@ When a task is placed in a pending state, the App-V client also generates a regi
 </tbody>
 </table>
 
- 
+ 
 
 The following operations must be completed before users can use the newer version of the package:
 
@@ -1068,7 +1071,7 @@ The following operations must be completed before users can use the newer versio
 </tbody>
 </table>
 
- 
+ 
 
 Use the following example scenarios as a guide for updating packages.
 
@@ -1098,7 +1101,7 @@ Use the following example scenarios as a guide for updating packages.
 </tbody>
 </table>
 
- 
+ 
 
 ### Global vs user publishing
 
@@ -1171,7 +1174,7 @@ The short cut is one of the basic elements of integration with the OS and is the
 
 From the package manifest and dynamic configuration XML files, the path to a specific application executable can be found in a section similar to the following:
 
-``` syntax
+```xml
 <Extension Category="AppV.Shortcut">
           <Shortcut>
             <File>[{Common Desktop}]\Adobe Reader 9.lnk</File>
@@ -1191,7 +1194,7 @@ As mentioned previously, the App-V shortcuts are placed by default in the user�
 
 The App-V Client manages the local operating system File Type Associations during publishing, which enables users to use file type invocations or to open a file with a specifically registered extension (.docx) to start an App-V application. File type associations are present in the manifest and dynamic configuration files as represented in the example below:
 
-``` syntax
+```xml
 <Extension Category="AppV.FileTypeAssociation">
           <FileTypeAssociation>
             <FileExtension MimeAssociation="true">
@@ -1237,7 +1240,7 @@ In this example:
 
 -   `<CommandLine>"[{AppVPackageRoot}]\Reader\AcroRd32.exe" "%1"</CommandLine>` is the command line, which points to the application executable
 
- 
+ 
 
 ### Shell extensions
 
@@ -1304,7 +1307,7 @@ The following table displays the supported shell extensions.
 </tbody>
 </table>
 
- 
+ 
 
 ### COM
 
@@ -1320,7 +1323,7 @@ App-V supports specific software clients and application capabilities extension 
 
 Example of software client registration of an App-V based mail client.
 
-``` syntax
+```xml
     <SoftwareClients Enabled="true">
       <ClientConfiguration EmailEnabled="true" />
       <Extensions>
@@ -1369,7 +1372,7 @@ In this example:
 
 -   `<MAPILibrary>[{ProgramFilesX86}]\Mozilla Thunderbird\mozMapi32_InUse.dll</MAPILibrary>` is the MAPI dll registration
 
- 
+ 
 
 ### URL Protocol handler
 
@@ -1490,7 +1493,7 @@ Extension points are not all published the same way, where some extension points
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-dynamic-config"></a>Dynamic configuration processing
 
@@ -1507,7 +1510,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **Manifest**
 
-``` syntax
+```xml
 <appv:Extension Category="AppV.Shortcut">
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.lnk</appv:File>
@@ -1519,7 +1522,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **Deployment Configuration**
 
-``` syntax
+```xml
 <MachineConfiguration>
      <Subsystems>
           <Registry>
@@ -1534,7 +1537,7 @@ The example below shows the combination of the Manifest, Deployment Configuratio
 
 **User Configuration**
 
-``` syntax
+```xml
 <UserConfiguration>
      <Subsystems>
 <appv:ExtensionCategory="AppV.Shortcut">
@@ -1551,12 +1554,12 @@ The example below shows the combination of the Manifest, Deployment Configuratio
      <appv:Shortcut>
           <appv:Fìle>[{Desktop}]\7-Zip\7-Zip File Manager.lnk</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
+          <appv:Icon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
      </appv:Shortcut>
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.Ink</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
+          <appv:Icon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
      </appv:Shortcut>
 </appv:Extension>
      </Subsystems>
@@ -1593,7 +1596,7 @@ During publishing of an App-V package with SxS assemblies the App-V Client will 
 **Note**  
 UnPublishing or removing a package with an assembly does not remove the assemblies for that package.
 
- 
+ 
 
 ## <a href="" id="bkmk-client-logging"></a>Client logging
 
@@ -1607,7 +1610,7 @@ In App-V 5.0 SP3, some logs have been consolidated and moved to the following lo
 
 For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).
 
- 
+ 
 
 There are three specific categories of events recorded described below.
 
@@ -1622,9 +1625,9 @@ There are three specific categories of events recorded described below.
 
 
 
- 
+ 
 
- 
+ 
 
 
 

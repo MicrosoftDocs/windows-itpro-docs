@@ -2,6 +2,9 @@
 title: Windows 10 deployment tools (Windows 10)
 description: Learn about the tools available to deploy Windows 10.
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
+ms.reviewer: 
+manager: laurawi
+ms.author: greg-lindsay
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

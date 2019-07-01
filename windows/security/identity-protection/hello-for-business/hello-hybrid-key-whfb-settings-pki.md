@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -76,6 +77,8 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
+>[!NOTE]
+>The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
 
 ### Publish Certificate Templates to a Certificate Authority
 
@@ -112,11 +115,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Configure superseded domain controller certificate templates
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
-[Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
+> [< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
+> [Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
 
 <br><br>
 

@@ -1,8 +1,11 @@
 ---
 title: How to Configure Access to Packages by Using the Management Console
 description: How to Configure Access to Packages by Using the Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 8f4c91e4-f4e6-48cf-aa94-6085a054e8f7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,7 +38,7 @@ Use the following procedure to configure access to virtualized packages.
         **Note**  
         Ensure that you provide an associated domain name for the group that you are searching for.
 
-         
+         
 
 3.  To grant access to the package, select the desired group and click **Grant Access**. The newly added group is displayed in the **AD ENTITIES WITH ACCESS** pane.
 
@@ -57,16 +60,16 @@ Use the following procedure to configure access to virtualized packages.
 
 3.  To close the **AD ACCESS** page, click **Close**.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

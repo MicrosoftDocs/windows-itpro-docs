@@ -2,12 +2,15 @@
 title: Disable Windows Defender Application Control policies  (Windows 10)
 description: This topic covers how to disable unsigned or signed WDAC policies. 
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 05/03/2018
 ---
 
@@ -34,7 +37,7 @@ If the WDAC policy was deployed by using Group Policy, the GPO that is currently
 
 Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed WDAC policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed WDAC policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
 
-> [!Note] 
+> [!NOTE]
 > For reference, signed WDAC policies should be replaced and removed from the following locations:
 
 -   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\

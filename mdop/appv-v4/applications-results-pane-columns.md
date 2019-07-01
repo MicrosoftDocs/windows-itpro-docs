@@ -1,8 +1,11 @@
 ---
 title: Applications Results Pane Columns
 description: Applications Results Pane Columns
-author: jamiejdt
+author: dansimp
 ms.assetid: abae5ce2-40df-4f47-8062-f5eb6295c88c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ The **Results** pane of the **Applications** node in the Application Virtualizat
 **Note**  
 You can add or remove columns by right-clicking in the **Results** pane, selecting **View**, and then selecting **Add/Remove Columns**.
 
- 
+ 
 
 The list can be sorted by any column. Columns that contain dates and times are sorted in chronological order, not alphabetical. For columns that contain a mix of dates and times and text, dates and times are considered to come before any other text.
 
@@ -124,9 +127,9 @@ The application version.
 
 [Application Virtualization Client Management Console Reference](application-virtualization-client-management-console-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

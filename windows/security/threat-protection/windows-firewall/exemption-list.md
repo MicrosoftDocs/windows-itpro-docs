@@ -2,12 +2,14 @@
 title: Exemption List (Windows 10)
 description: Exemption List
 ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,4 +57,4 @@ To keep the number of exemptions as small as possible, you have several options:
 
 As with defining the boundary zone, create a formal process to approve hosts being added to the exemption list. For a model of processing requests for exemptions, see the decision flowchart in the [Boundary Zone](boundary-zone.md) section.
 
-**Next: **[Isolated Domain](isolated-domain.md)
+**Next:** [Isolated Domain](isolated-domain.md)

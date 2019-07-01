@@ -1,8 +1,11 @@
 ---
 title: How To Use Dynamic Suite Composition
 description: How To Use Dynamic Suite Composition
-author: jamiejdt
+author: eavena
 ms.assetid: 24147feb-a0a8-4791-a8e5-cbe5fe13c762
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,7 +30,7 @@ If you plan to make several primary applications dependent on a single middlewar
 **Important**  
 Package dependencies can be specified as mandatory for a primary application. If a secondary package is flagged as mandatory and it cannot be accessed for some reason during loading, the load of the secondary package will fail. Also, the primary application will fail when the user tries to start it.
 
- 
+ 
 
 You can use the following procedures to create a secondary package, for either a plug-in or a middleware component, and then you can use the final procedure to define the dependency in the OSD file of the secondary package.
 
@@ -44,7 +47,7 @@ You can use the following procedures to create a secondary package, for either a
     **Important**  
     You must specify a new package root for the secondary package.
 
-     
+     
 
 5.  Start the sequencer monitoring phase.
 
@@ -59,7 +62,7 @@ You can use the following procedures to create a secondary package, for either a
     **Note**  
     To assist with management of secondary packages, it is recommended that the package name include the term “Secondary package” to emphasize that this is a package that will not function as a stand-alone application—for example, **\[Plug In Name\] Secondary package**.
 
-     
+     
 
 **To create a secondary package for middleware by using Dynamic Suite Composition**
 
@@ -84,56 +87,56 @@ You can use the following procedures to create a secondary package, for either a
     **Note**  
     To assist with management of secondary packages, it is recommended that the package name include the term “Secondary package” to emphasize that this is a package that will not function as a stand-alone application—for example, **\[Middleware Name\] Secondary package**.
 
-     
+     
 
 **To define the dependency in the primary package**
 
-1.  On the server, open the OSD file of the secondary package for editing. (It is a good idea to use an XML editor to make changes to the OSD file; however, you can use Notepad as an alternative.)
+1. On the server, open the OSD file of the secondary package for editing. (It is a good idea to use an XML editor to make changes to the OSD file; however, you can use Notepad as an alternative.)
 
-2.  Copy the **CODEBASE HREF** line from that file.
+2. Copy the **CODEBASE HREF** line from that file.
 
-3.  Open the OSD file of the primary package for editing.
+3. Open the OSD file of the primary package for editing.
 
-4.  Insert the **&lt;DEPENDENCIES&gt;**tag after the close of **&lt;/ENVLIST&gt;** tag at the end of the **&lt;VIRTUALENV&gt;** section just before the **&lt;/VIRTUALENV&gt;** tag.
+4. Insert the <strong>&lt;DEPENDENCIES&gt;</strong>tag after the close of **&lt;/ENVLIST&gt;** tag at the end of the **&lt;VIRTUALENV&gt;** section just before the **&lt;/VIRTUALENV&gt;** tag.
 
-5.  Paste the **CODEBASE HREF** line from the secondary package after the **&lt;DEPENDENCIES&gt;** tag you just created.
+5. Paste the **CODEBASE HREF** line from the secondary package after the **&lt;DEPENDENCIES&gt;** tag you just created.
 
-6.  If the secondary package is a mandatory package, which means that it must be started before the primary package is started, add the **MANDATORY=”TRUE”** property inside the **CODEBASE** tag. If it is not mandatory, the property can be omitted.
+6. If the secondary package is a mandatory package, which means that it must be started before the primary package is started, add the **MANDATORY=”TRUE”** property inside the **CODEBASE** tag. If it is not mandatory, the property can be omitted.
 
-7.  Close the **&lt;DEPENDENCIES&gt;** tag by inserting the following:
+7. Close the **&lt;DEPENDENCIES&gt;** tag by inserting the following:
 
-    **&lt;/DEPENDENCIES&gt;**
+   **&lt;/DEPENDENCIES&gt;**
 
-8.  Review the changes that you made to the OSD file, and then save and close the file. The following example shows how the added section should appear. The tag values shown here are for example only.
+8. Review the changes that you made to the OSD file, and then save and close the file. The following example shows how the added section should appear. The tag values shown here are for example only.
 
-    **&lt;VIRTUALENV&gt;**
+   **&lt;VIRTUALENV&gt;**
 
-         **&lt;ENVLIST&gt;**
+        **&lt;ENVLIST&gt;**
 
-    **…**
+   **…**
 
-         **&lt;/ENVLIST&gt;**
+        **&lt;/ENVLIST&gt;**
 
-         **&lt;DEPENDENCIES&gt;**
+        **&lt;DEPENDENCIES&gt;**
 
-              **&lt;CODEBASE HREF="rtsp://virt\_apps/package.1/package.1.sft" GUID="D54C80FA-9DFF-459D-AA33-DD852C9FBFBA" SYSGUARDFILE="package.1\\osguard.cp"/&gt;**
+             **&lt;CODEBASE HREF="rtsp://virt\_apps/package.1/package.1.sft" GUID="D54C80FA-9DFF-459D-AA33-DD852C9FBFBA" SYSGUARDFILE="package.1\\osguard.cp"/&gt;**
 
-              **&lt;CODEBASE HREF="rtsp://sample\_apps/package.2/sample.sft" GUID="D54C80FA-9DFF-459D-AA33-DD852C9FBFBA" SYSGUARDFILE="package.2\\osguard.cp" MANDATORY="TRUE" /&gt;**
+             **&lt;CODEBASE HREF="rtsp://sample\_apps/package.2/sample.sft" GUID="D54C80FA-9DFF-459D-AA33-DD852C9FBFBA" SYSGUARDFILE="package.2\\osguard.cp" MANDATORY="TRUE" /&gt;**
 
-         **&lt;/DEPENDENCIES&gt;**
+        **&lt;/DEPENDENCIES&gt;**
 
-    **&lt;/VIRTUALENV&gt;**
+   **&lt;/VIRTUALENV&gt;**
 
-9.  If the secondary package has any entries in the **&lt;ENVLIST&gt;** section of the OSD file, you must copy those entries to the same section in the primary package.
+9. If the secondary package has any entries in the **&lt;ENVLIST&gt;** section of the OSD file, you must copy those entries to the same section in the primary package.
 
 ## Related topics
 
 
 [How to Create or Upgrade Virtual Applications Using the App-V Sequencer](how-to-create-or-upgrade-virtual-applications-using--the-app-v-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

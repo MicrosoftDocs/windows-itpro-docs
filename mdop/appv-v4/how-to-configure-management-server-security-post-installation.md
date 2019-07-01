@@ -1,8 +1,11 @@
 ---
 title: How to Configure Management Server Security Post-Installation
 description: How to Configure Management Server Security Post-Installation
-author: jamiejdt
+author: dansimp
 ms.assetid: 71979fa6-3d0b-4a8b-994e-cb728d013090
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +32,7 @@ Use the App-V Management Console to add the certificate and configure the App-V 
     **Note**  
     If no certificates are displayed in the wizard, a certificate has not been provisioned or the certificate does meet the requirements of App-V.
 
-     
+     
 
 5.  Click **Next** to continue on to the **Welcome To Certificate Wizard** page.
 
@@ -48,9 +51,9 @@ Use the App-V Management Console to add the certificate and configure the App-V 
 
 [Troubleshooting Certificate Permission Issues](troubleshooting-certificate-permission-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

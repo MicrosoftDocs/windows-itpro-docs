@@ -1,19 +1,20 @@
 ---
 title: Configure Directory Synchronization for Hybrid key trust Windows Hello for Business
-description: Azure Directory Syncrhonization for Hybrid Certificate Key Deployment (Windows Hello for Business)
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, directory, syncrhonization, AADConnect
+description: Azure Directory Synchronization for Hybrid Certificate Key Deployment (Windows Hello for Business)
+keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, directory, synchronization, AADConnect
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure Directory Synchronization for Hybrid key trust Windows Hello for Business
 
@@ -26,7 +27,7 @@ ms.date: 08/19/2018
 You are ready to configure directory synchronization for your hybrid environment. Hybrid Windows Hello for Business deployment needs both a cloud and an on-premises identity to authenticate and access resources in the cloud or on-premises.    
 
 ## Deploy Azure AD Connect
-Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
+Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
 
 
 > [!NOTE]
@@ -38,7 +39,7 @@ Next, you need to synchronizes the on-premises Active Directory with Azure Activ
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-key-trust.md)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. Configure Directory Synchronization (*You are here*)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)

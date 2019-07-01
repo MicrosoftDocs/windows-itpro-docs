@@ -2,12 +2,14 @@
 title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode security policy setting.
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: ws10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -33,7 +35,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
     Assumes that the administrator will permit an operation that requires elevation, and additional consent or credentials are not required.
 
     **Note**  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
-     
+     
 -   **Prompt for credentials on the secure desktop**
 
     When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
@@ -80,7 +82,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | DC Effective Default Settings | Prompt for consent for non-Windows binaries| 
 | Member Server Effective Default Settings | Prompt for consent for non-Windows binaries| 
 | Client Computer Effective Default Settings | Prompt for consent for non-Windows binaries| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

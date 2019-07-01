@@ -1,12 +1,15 @@
 ---
 title: App-V Supported Configurations (Windows 10)
 description: App-V Supported Configurations
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # App-V Supported Configurations

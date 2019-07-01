@@ -2,6 +2,9 @@
 title: Configure MDT deployment share rules (Windows 10)
 description: In this topic, you will learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine.
 ms.assetid: b5ce2360-33cc-4b14-b291-16f75797391b
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: rules, configuration, automate, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 

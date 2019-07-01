@@ -144,7 +144,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -163,7 +163,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-api-test.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -182,12 +182,31 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-office-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Office Education Dev Center</h3>
                                                     <p>Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/microsoft-365/education/data-streamer">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/data-streamer.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Data Streamer</h3>
+                                                    <p>Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.</p>
                                                 </div>
                                             </div>
                                         </div>

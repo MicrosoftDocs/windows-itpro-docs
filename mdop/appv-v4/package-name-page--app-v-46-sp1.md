@@ -1,8 +1,11 @@
 ---
 title: Package Name Page
 description: Package Name Page
-author: jamiejdt
+author: eavena
 ms.assetid: 1cea36b7-737d-4c5e-9294-5feba02a3e7d
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Manage connection endpoints for Windows 10, version 1709
 
@@ -83,7 +84,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 |----------------|----------|------------|
 |  |    | star-mini.c10r.facebook.com |
 
-The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. 
+The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office. 
 To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
 Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
@@ -292,7 +293,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Office
 
-The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office Online. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -303,7 +304,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 |   |    | *.e-msedge.net  |
 |   |    | *.s-msedge.net  |
 
-The following endpoint is used to connect to the Office 365 portal's shared infrastructure, including Office Online. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoint is used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -405,52 +406,25 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | svchost  | HTTPS   | *.prod.do.dsp.mp.microsoft.com  |
 
-The following endpoints are used to download operating system patches and updates. 
+The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to download updates for the operating system.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | svchost | HTTP  | *.windowsupdate.com |
-|         | HTTP   | fg.download.windowsupdate.com.c.footprint.net |
-
-The following endpoint is used by the Highwinds Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |            | cds.d2s7q6s2.hwcdn.net |
-
-The following endpoints are used by the Verizon Content Delivery Network to perform Windows updates. 
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not perform updates.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |  HTTP          | *wac.phicdn.net |
-|  |                | *wac.edgecastcdn.net |
-
-The following endpoint is used to download apps and Windows Insider Preview builds from the Microsoft Store. Time Limited URL (TLU) is a mechanism for protecting the content. For example, it prevents someone from copying the URL and then getting access to the app that the person has not acquired).
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the updating functionality on this device is essentially in a disabled state, resulting in user unable to get apps from the Store, get latest version of Windows, and so on.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | *.tlu.dl.delivery.mp.microsoft.com.c.footprint.net |
-
-The following endpoint is used to download apps from the Microsoft Store. It's used as part of calculating the right ranges for apps.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), users of the device will not able to get apps from the Microsoft Store.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | emdl.ws.microsoft.com  |
+| svchost | HTTP  | *.dl.delivery.mp.microsoft.com |
 
 The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. 
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| svchost | HTTPS   | fe2.update.microsoft.com |
-| svchost |    | fe3.delivery.mp.microsoft.com  |
-|       |      | fe3.delivery.dsp.mp.microsoft.com.nsatc.net |
-| svchost | HTTPS   | sls.update.microsoft.com |
+| svchost | HTTPS   | *.update.microsoft.com |
+| svchost | HTTPS   | *.delivery.mp.microsoft.com  |
+
+These are dependent on enabling:
+- [Device authentication](manage-windows-1709-endpoints.md#device-authentication)
+- [Microsoft account](manage-windows-1709-endpoints.md#microsoft-account)
 
 The following endpoint is used for content regulation.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
@@ -458,14 +432,6 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | svchost | HTTPS   | tsfe.trafficshaping.dsp.mp.microsoft.com |
-
-The following endpoints are used to download content.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), you will block any content from being downloaded.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-|  |    | a122.dscd.akamai.net  |
-|  |    | a1621.g.akamai.net   |
 
 ## Microsoft forward link redirection service (FWLink)
 
