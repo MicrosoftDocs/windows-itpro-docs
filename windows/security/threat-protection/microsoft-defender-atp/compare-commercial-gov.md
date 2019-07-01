@@ -17,7 +17,6 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-
 # Compare commercial and government Microsoft Defender ATP
 
 **Applies to:**
@@ -27,41 +26,49 @@ Microsoft Defender ATP for government uses the same underlying technologies as c
 
 
 ## Endpoint versions
-The following OS versions are supported:
+The following OS versions are available:
 
+- Windows 10, version 1903 
 - Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 - Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
 - Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
+- Windows Server, 2019 
 
 >[!NOTE]
 >If patches are not implemented after the machine onboarding, some Microsoft Defender ATP telemetry might be sent to the Microsoft Defender ATP Commercial Cloud.
 
-The following OS versions are not supported:
-- Windows Server
-- Windows 7, 8, 8.1
+The following OS versions are not available:
+- Windows Server 2008 R2 SP1
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server, version 1803
+- Windows 7 SP1 Enterprise
+- Windows 7 SP1 Pro
+- Windows 8 Pro
+- Windows 8.1 Enterprise
 
 
 ## Threat & Vulnerability Management
-Not supported
+Not available.
 
 
 ## Automated investigation and remediation
-Response to Office 365 alerts are not supported
+The following capabilities are not available:
+- Response to Office 365 alerts 
+- Live response 
 
-
-## Live response
-NOTE: ADDED, BUT NEED TO CHECK IF SUPPORTED.
-
-## Microsoft Threat Experts
-Not supported
 
 
 ## Management and APIs
-NOTE: NOT SURE WHAT IS SUPPORTED AND NOT. Keeping here for now.
+The following capabilities are not available:
 
-## Product integrations
+- Threat protection report
+- Machine health and compliance report
+- Integration with third-party products
 
-Integrations with the following products are not supported:
+
+## Microsoft Threat Protection 
+Integrations with the following products are not available:
 - Azure Security Center
 - Azure Advanced Threat Protection
 - Azure Information Protection
@@ -70,7 +77,16 @@ Integrations with the following products are not supported:
 - Skype
 - Intune
 
+## Microsoft Threat Experts
+Not available.
 
+## Required connectivity settings
+You'll need to ensure that traffic from the following are allowed:
+
+Service location | DNS record
+:---|:---
+Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```
+Microsoft Defender ATP GCC high specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net```
 
 
 
