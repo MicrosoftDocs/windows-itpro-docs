@@ -40,12 +40,13 @@ Updates will be obtained from the sources in the order you specify. If a source 
 You can use the following sources:
 
 
--   Microsoft Update
+-   **Microsoft Update**
 -   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
 -   System Center Configuration Manager
 -   A network file share
 -   The [Microsoft Malware Protection Center Security intelligence page (MMPC)](https://www.microsoft.com/security/portal/definitions/adl.aspx)
 
+**For home user, in windows 10 professional edition, setting location as Microsoft Update Server is recommended**.
 
 When updates are published, some logic will be applied to minimize the size of the update. In most cases, only the "delta" (or the differences between the latest update and the update that is currently installed on the endpoint) will be downloaded and applied. However, the size of the delta depends on:
 
@@ -61,6 +62,7 @@ The WSUS, Configuration Manager, and MMPC sources will deliver less frequent upd
 
 > [!IMPORTANT]
 > If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 14 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
+
 > You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
@@ -107,6 +109,28 @@ The procedures in this article first describe how to set the order, and then how
 
    6. Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
+   7. Corresponding Registry key for fallback location
+   
+**[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+  "FallbackOrder"="MicrosoftUpdateServer"**
+
+   8. Other corresponding recommended group policy settings under 
+   
+**Computer configuration\Administrative templates\Windows components\Windows Defender\Signature updates\
+01.Allow definition updates from Microsoft Update set to Enabled
+02.Allow real-time definition updates on reports to Microsoft MAPS  set to Enabled
+03.Specify the day of the week to check for definition updates  set to Enabled , choose radio button set to Everyday
+04.Specify the interval to check for definition updates  set to Enabled , choose radio button set to 6   (6 hours )
+05.Turn on scan after signature update set to Enabled**
+
+   9. Corresponding Registry key for above policy settings
+**[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+  "ForceUpdateFromMU"=dword:00000001
+  "RealtimeSignatureDelivery"=dword:00000001
+  "DisableScanOnUpdate"=dword:00000000
+  "SignatureUpdateInterval"=dword:00000006
+  "ScheduleDay"=dword:00000000**
+
 
 **Use Configuration Manager to manage the update location:**
 
@@ -121,6 +145,13 @@ Use the following PowerShell cmdlets to set the update order.
 Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
 Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
+Using powershell Command
+
+Setting fallback location as MicrosoftUpdateServer
+**Set-MpPreference -SignatureFallbackOrder MicrosoftUpdateServer**
+
+Note : This above setting fully worked as primary antivirus default only with Windows Defender Antivirus
+
 See the following for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
@@ -142,13 +173,6 @@ See the following for more information:
 **Use Mobile Device Management (MDM) to manage the update location:**
 
 See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) for details on configuring MDM.
-
-
-
-
-
-
-
 
 
 ## Related topics
