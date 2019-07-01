@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -54,7 +55,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8.	Close the console.
 
-#### Configure Certificate Suspeding for the Domain Controller Authentication (Kerberos) Certificate Template
+#### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
 Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
 
@@ -75,6 +76,9 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 9.	Click **OK** and close the **Certificate Templates** console.
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
+
+>[!NOTE]
+>The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
 
 ### Enrollment Agent certificate template
 
@@ -182,6 +186,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 4.	Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
 5.	Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
 
+
 ### Section Review
 > [!div class="checklist"]
 > * Domain Controller certificate template
@@ -191,11 +196,11 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Mark the certificate template as Windows Hello for Business sign-in template
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-
-
+> 
+> 
 > [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
-[Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
+> [< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+> [Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
 <br><br>
 

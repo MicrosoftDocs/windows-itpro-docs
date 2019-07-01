@@ -1,8 +1,11 @@
 ---
 title: Software Audit Report
 description: Software Audit Report
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 55a49ed2-f331-40d3-add6-8e5fcd6816fd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

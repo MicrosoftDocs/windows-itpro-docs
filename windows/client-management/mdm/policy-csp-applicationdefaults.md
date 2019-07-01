@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - ApplicationDefaults
 description: Policy CSP - ApplicationDefaults
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -90,7 +92,7 @@ To create the SyncML, follow these steps:
 
 Here is an example output from the dism default association export command:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <DefaultAssociations>
   <Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />
@@ -109,7 +111,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 Here is the SyncMl example:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.1">
 <SyncBody>

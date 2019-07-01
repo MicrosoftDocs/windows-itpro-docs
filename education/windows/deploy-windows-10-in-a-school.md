@@ -7,9 +7,10 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: lizap
-ms.author: elizapo
-ms.date: 05/21/2019
+author: levinec
+ms.author: ellevin
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy Windows 10 in a school
@@ -64,7 +65,7 @@ This school configuration has the following characteristics:
 
 Office 365 Education allows:
 
-- Students and faculty to use Microsoft Office Online to create and edit Microsoft Word, OneNote, PowerPoint, and Excel documents in a browser.
+- Students and faculty to use Microsoft Office to create and edit Microsoft Word, OneNote, PowerPoint, and Excel documents in a browser.
 - Teachers to use the [OneNote Class Notebook app](https://www.onenote.com/classnotebook) to share content and collaborate with students.
 - Faculty to use the [OneNote Staff Notebooks app](https://www.onenote.com/staffnotebookedu) to collaborate with other teachers, administration, and faculty.
 - Teachers to employ Sway to create interactive educational digital storytelling.
@@ -174,7 +175,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 </li>
 <li>Determine the faculty members and students who need to install Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
 <br/>
-*Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans*
+<em>Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans</em>
 <br/>
 <table>
 <colgroup>
@@ -198,7 +199,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <br/>
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 <br/>
-<li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx).</li>
+<li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see <a href="https://technet.microsoft.com/library/jj585024.aspx" data-raw-source="[Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx)">Azure Rights Management</a>.</li>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 2.<br/><br/>
 
 *Table 2. Office 365 Education license plans needed for the classroom*
@@ -222,7 +223,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 </tbody>
 </table>
 <br/>
-You will use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.</li></ol>
+You will use the Office 365 Education license plan information you record in Table 2 in the <a href="#create-user-accounts-in-office-365" data-raw-source="[Create user accounts in Office 365](#create-user-accounts-in-office-365)">Create user accounts in Office 365</a> section of this guide.</li></ol>
 
 ### Create a new Office 365 Education subscription
 
@@ -233,11 +234,11 @@ To create a new Office 365 Education subscription for use in the classroom, use 
 #### To create a new Office 365 subscription
 
 1. In Microsoft Edge or Internet Explorer, type `https://portal.office.com/start?sku=faculty` in the address bar.
-   
+
    **Note**&nbsp;&nbsp;If you have already used your current sign-in account to create a new Office 365 subscription, you will be prompted to sign in. If you want to create a new Office 365 subscription, start an In-Private Window in one of the following:
-  - Microsoft Edge by opening the Microsoft Edge app, either pressing Ctrl+Shift+P or clicking or tapping **More actions**, and then clicking or tapping **New InPrivate window**.
-  - Internet Explorer 11 by opening Internet Explorer 11, either pressing Ctrl+Shift+P or clicking or tapping **Settings**, clicking or tapping **Safety**, and then clicking or tapping **InPrivate Browsing**.
-  
+   - Microsoft Edge by opening the Microsoft Edge app, either pressing Ctrl+Shift+P or clicking or tapping **More actions**, and then clicking or tapping **New InPrivate window**.
+   - Internet Explorer 11 by opening Internet Explorer 11, either pressing Ctrl+Shift+P or clicking or tapping **Settings**, clicking or tapping **Safety**, and then clicking or tapping **InPrivate Browsing**.
+
 2. On the **Get started** page, type your school email address in the **Enter your school email address** box, and then click **Sign up**. You will receive an email in your school email account.
 3. Click the hyperlink in the email in your school email account.
 4. On the **One last thing** page, complete your user information, and then click **Start**. The wizard creates your new Office 365 Education subscription, and you are automatically signed in as the administrative user you specified when you created the subscription.
@@ -275,12 +276,13 @@ All new Office 365 Education subscriptions have automatic tenant join enabled by
 *Table 3. Windows PowerShell commands to enable or disable Automatic Tenant Join*
 
 
-| Action | Windows PowerShell command |
-|------- |----------------------------|
-| Enable |`Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`|
-| Disable |`Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`|
+| Action  |                Windows PowerShell command                 |
+|---------|-----------------------------------------------------------|
+| Enable  | `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`  |
+| Disable | `Set-MsolCompanySettings -AllowEmailVerifiedUsers $false` |
+
 <p>
-**Note**&nbsp;&nbsp;If your institution has AD DS, then disable automatic tenant join. Instead, use Azure AD integration with AD DS to add users to your Office 365 tenant.
+<strong>Note</strong>&nbsp;&nbsp;If your institution has AD DS, then disable automatic tenant join. Instead, use Azure AD integration with AD DS to add users to your Office 365 tenant.
 
 ### Disable automatic licensing
 
@@ -292,11 +294,14 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 
 *Table 4. Windows PowerShell commands to enable or disable automatic licensing*
 
-| Action | Windows PowerShell command|
-| -------| --------------------------|
-| Enable |`Set-MsolCompanySettings -AllowAdHocSubscriptions $true`|
-|Disable | `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`|
+
+| Action  |                Windows PowerShell command                 |
+|---------|-----------------------------------------------------------|
+| Enable  | `Set-MsolCompanySettings -AllowAdHocSubscriptions $true`  |
+| Disable | `Set-MsolCompanySettings -AllowAdHocSubscriptions $false` |
+
 <p>
+
 ### Enable Azure AD Premium
 
 When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory. Azure AD is the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD–integrated apps. Azure AD is available in Free, Basic, and Premium editions. Azure AD Free, which is included in Office 365 Education, has fewer features than Azure AD Basic, which in turn has fewer features than Azure AD Premium.
@@ -378,15 +383,15 @@ You can deploy the Azure AD Connect tool by using one of the following methods:
 
 - **On premises.** As shown in Figure 6, Azure AD Connect runs on premises, which has the advantage of not requiring a virtual private network (VPN) connection to Azure. It does, however, require a virtual machine (VM) or physical server.
 
- ![fig 6](images/deploy-win-10-school-figure6.png)
+  ![fig 6](images/deploy-win-10-school-figure6.png)
 
- *Figure 6. Azure AD Connect on premises*
+  *Figure 6. Azure AD Connect on premises*
 
 - **In Azure**. As shown in Figure 7, Azure AD Connect runs on a VM in Azure AD, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
 
- ![fig 7](images/deploy-win-10-school-figure7.png)
+  ![fig 7](images/deploy-win-10-school-figure7.png)
 
- *Figure 7. Azure AD Connect in Azure*
+  *Figure 7. Azure AD Connect in Azure*
 
 This guide describes how to run Azure AD Connect on premises. For information about running Azure AD Connect in Azure, see [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/library/dn635310.aspx).
 
@@ -437,24 +442,30 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 
 *Table 5. AD DS bulk-import account methods*
 
-|Method | Description and reason to select this method |
-|-------| ---------------------------------------------|
-|Ldifde.exe |This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
-|VBScript | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/scriptcenter/dd939958.aspx).|
-|Windows PowerShell| This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+
+|       Method       |                                                                                                                                                                                                                                                                                                                                         Description and reason to select this method                                                                                                                                                                                                                                                                                                                                         |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Ldifde.exe     | This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx). |
+|      VBScript      |                                                                                                             This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/scriptcenter/dd939958.aspx).                                                                                                              |
+| Windows PowerShell |                                                                          This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).                                                                          |
+
 <p>
+
 ### Create a source file that contains the user and group accounts
 
 After you have selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 6 lists the source file format for the bulk import methods.
 
 *Table 6. Source file format for each bulk import method*
 
-| Method | Source file format |
-|--------| -------------------|
-|Ldifde.exe|Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
-|VBScript | VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx).|
-| Windows PowerShell| Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+
+|       Method       |                                                                                                                                                                                                                                                                                                      Source file format                                                                                                                                                                                                                                                                                                       |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Ldifde.exe     | Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx). |
+|      VBScript      |                                                                                                                              VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/library/bb727091.aspx).                                                                                                                              |
+| Windows PowerShell |                               Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).                               |
+
 <p>
+
 ### Import the user accounts into AD DS
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
@@ -554,16 +565,19 @@ After you create the Microsoft Store for Business portal, configure it by using 
 
 *Table 7. Menu selections to configure Microsoft Store for Business settings*
 
-| Menu selection        | What you can do in this menu |
-|---------------| -------------------|
-|Account information|Displays information about your Microsoft Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Portal. For more information, see [Update Microsoft Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
-|Device Guard signing|Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide).|
-|LOB publishers| Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps).|
-|Management tools| Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool).|
-|Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see [Licensing model: online and offline licenses](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
-|Permissions|Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
-|Private store|Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
+
+|    Menu selection    |                                                                                                                                                                                  What you can do in this menu                                                                                                                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Account information  |              Displays information about your Microsoft Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Portal. For more information, see [Update Microsoft Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).               |
+| Device Guard signing |                                                                           Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide).                                                                            |
+|    LOB publishers    |            Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps).             |
+|   Management tools   |                                                                    Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool).                                                                    |
+|  Offline licensing   |                                                       Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see [Licensing model: online and offline licenses](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).                                                        |
+|     Permissions      | Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business). |
+|    Private store     | Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). |
+
 <p>
+
 ### Find, acquire, and distribute apps in the portal
 
 Now that you have created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Microsoft Store for Business.
@@ -572,7 +586,7 @@ Now that you have created your Microsoft Store for Business portal, you’re rea
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business). 
 
 ### Summary
 
@@ -593,11 +607,11 @@ Depending on your school’s requirements, you may need any combination of the f
 
 - **Windows 10 Home**. Use this operating system to upgrade existing eligible institution-owned and personal devices that are running Windows 8.1 Home or Windows 7 Home to Windows 10 Home.
 - **Windows 10 Pro**. Use this operating system to:
- - Upgrade existing eligible institution-owned and personal devices running Windows 8.1 Pro or Windows 7 Professional to Windows 10 Pro.
- - Deploy new instances of Windows 10 Pro to devices so that new devices have a known configuration.
+  - Upgrade existing eligible institution-owned and personal devices running Windows 8.1 Pro or Windows 7 Professional to Windows 10 Pro.
+  - Deploy new instances of Windows 10 Pro to devices so that new devices have a known configuration.
 - **Windows 10 Education**. Use this operating system to:
- - Upgrade institution-owned devices to Windows 10 Education.
- - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
+  - Upgrade institution-owned devices to Windows 10 Education.
+  - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
 - **Windows 10 Pro Education**. Use this operating system to upgrade existing eligible institution-owned devices running Windows 10 Pro Education, version 1903 or later, to Windows 10 Education using [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation).
 
 **Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features are not available in Windows 10 Home.
@@ -658,7 +672,7 @@ Select this method when you want to deploy Windows over-the-network and perform 
 <li>Deploys images more slowly than when using local media.</li>
 <li>Requires no additional infrastructure.</li>
 </ul>
- 
+
 Select this method when you want to deploy Windows over-the-network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (the Deployment Wizard accesses the centrally located deployment share over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media.</td>
 </tr>
 
@@ -705,7 +719,7 @@ The first step in preparation for Windows 10 deployment is to configure—that i
 <tbody>
 <tr>
 <td valign="top">1. Import operating systems</td>
-<td>Import the operating systems that you selected in the [Select operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
+<td>Import the operating systems that you selected in the <a href="#select-the-operating-systems" data-raw-source="[Select operating systems](#select-the-operating-systems)">Select operating systems</a> section into the deployment share. For more information about how to import operating systems, see <a href="https://technet.microsoft.com/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench" data-raw-source="[Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench)">Import an Operating System into the Deployment Workbench</a>.</td>
 </tr>
 
 <tr>
@@ -719,7 +733,7 @@ Import device drivers for each device in your institution. For more information 
 
 <tr>
 <td valign="top">3. Create MDT applications for Microsoft Store apps</td>
-<td>Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using *sideloading*, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
+<td>Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using <em>sideloading</em>, which allows you to use the <strong>Add-AppxPackage</strong> Windows PowerShell cmdlet to deploy the .appx files associated with the app (called <em>provisioned apps</em>). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
 
 Prior to sideloading the .appx files, obtain the Microsoft Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Microsoft Store, you will need to obtain the .appx files from the app software vendor directly. If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>
 
@@ -727,8 +741,8 @@ If you have Intune, you can deploy Microsoft Store apps after you deploy Windows
 
 In addition, you must prepare your environment for sideloading (deploying) Microsoft Store apps. For more information about how to:<br/><br/>
 <ul>
-<li>Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10).</li>
-<li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
+<li>Prepare your environment for sideloading, see <a href="https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10" data-raw-source="[Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10)">Sideload LOB apps in Windows 10</a>.</li>
+<li>Create an MDT application, see <a href="https://technet.microsoft.com/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench" data-raw-source="[Create a New Application in the Deployment Workbench](https://technet.microsoft.com/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench)">Create a New Application in the Deployment Workbench</a>.</li>
 </ul>
 
 
@@ -785,9 +799,9 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
 
 1. Set up and configure Windows Deployment Services.<p>Windows Deployment Services is a server role available in all Windows Server editions. You can enable the Windows Deployment Services server role on a new server or on any server running Windows Server in your institution. For more information about how to perform this step, see the following resources:
 
-  - [Windows Deployment Services overview](https://technet.microsoft.com/library/hh831764.aspx)
-  - The Windows Deployment Services Help file, included in Windows Deployment Services
-  - [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx)
+   - [Windows Deployment Services overview](https://technet.microsoft.com/library/hh831764.aspx)
+   - The Windows Deployment Services Help file, included in Windows Deployment Services
+   - [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx)
 
 2. Add LTI boot images (Windows PE images) to Windows Deployment Services.<p>The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the Boot subfolder in the deployment share. For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](https://technet.microsoft.com/library/dn759415.aspx#AddLTIBootImagestoWindowsDeploymentServices).
 
@@ -901,89 +915,89 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Use of Microsoft accounts</td>
 <td>You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, do not use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>
-**Note**&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>
-**Group Policy.** Configure the [Accounts: Block Microsoft accounts](https://technet.microsoft.com/library/jj966262.aspx?f=255&MSPPError=-2147217396) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>
-**Intune.** Enable or disable the camera by using the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.
+<strong>Note</strong>&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>
+<strong>Group Policy.</strong> Configure the <a href="https://technet.microsoft.com/library/jj966262.aspx?f=255&amp;MSPPError=-2147217396" data-raw-source="[Accounts: Block Microsoft accounts](https://technet.microsoft.com/library/jj966262.aspx?f=255&amp;MSPPError=-2147217396)">Accounts: Block Microsoft accounts</a> Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>
+<strong>Intune.</strong> Enable or disable the camera by using the <strong>Allow Microsoft account</strong>, <strong>Allow adding non-Microsoft accounts manually</strong>, and <strong>Allow settings synchronization for Microsoft accounts</strong> policy settings under the <strong>Accounts and Synchronization</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Restrict local administrator accounts on the devices</td>
 <td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>
-**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com/library/cc732525.aspx).<br/><br/>
-**Intune**. Not available.
+<strong>Group Policy</strong>. Create a <strong>Local Group</strong> Group Policy preference to limit the local administrators group membership. Select the <strong>Delete all member users</strong> and <strong>Delete all member groups</strong> check boxes to remove any existing members. For more information about how to configure Local Group preferences, see <a href="https://technet.microsoft.com/library/cc732525.aspx" data-raw-source="[Configure a Local Group Item](https://technet.microsoft.com/library/cc732525.aspx)">Configure a Local Group Item</a>.<br/><br/>
+<strong>Intune</strong>. Not available.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Restrict the local administrator accounts on the devices</td>
 <td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>
-**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com/library/cc732525.aspx).<br/><br/>
-**Intune**. Not available.
+<strong>Group Policy</strong>. Create a <strong>Local Group</strong> Group Policy preference to limit the local administrators group membership. Select the <strong>Delete all member users</strong> and <strong>Delete all member groups</strong> check boxes to remove any existing members. For more information about how to configure Local Group preferences, see <a href="https://technet.microsoft.com/library/cc732525.aspx" data-raw-source="[Configure a Local Group Item](https://technet.microsoft.com/library/cc732525.aspx)">Configure a Local Group Item</a>.<br/><br/>
+<strong>Intune</strong>. Not available.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Manage the built-in administrator account created during device deployment</td>
 <td>When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and optionally disable it.<br/><br/>
-**Group Policy**. Rename the built-in Administrator account by using the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](https://technet.microsoft.com/library/cc747484.aspx). You will specify the new name for the Administrator account. You can disable the built-in Administrator account by using the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](https://technet.microsoft.com/library/jj852165.aspx).<br/><br/>
-**Intune**. Not available.
+<strong>Group Policy</strong>. Rename the built-in Administrator account by using the <strong>Accounts: Rename administrator account</strong> Group Policy setting. For more information about how to rename the built-in Administrator account, see <a href="https://technet.microsoft.com/library/cc747484.aspx" data-raw-source="[To rename the Administrator account using the Group Policy Management Console](https://technet.microsoft.com/library/cc747484.aspx)">To rename the Administrator account using the Group Policy Management Console</a>. You will specify the new name for the Administrator account. You can disable the built-in Administrator account by using the <strong>Accounts: Administrator account status</strong> Group Policy setting. For more information about how to disable the built-in Administrator account, see <a href="https://technet.microsoft.com/library/jj852165.aspx" data-raw-source="[Accounts: Administrator account status](https://technet.microsoft.com/library/jj852165.aspx)">Accounts: Administrator account status</a>.<br/><br/>
+<strong>Intune</strong>. Not available.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Control Microsoft Store access</td>
 <td>You can control access to Microsoft Store and whether existing Microsoft Store apps receive updates. You can only disable the Microsoft Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
-**Group Policy**. You can disable the Microsoft Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Microsoft Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Microsoft Store in my enterprise environment?](https://technet.microsoft.com/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
-**Intune**. You can enable or disable the camera by using the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration** policy.
+<strong>Group Policy</strong>. You can disable the Microsoft Store app by using the <strong>Turn off the Store Application</strong> Group Policy setting. You can prevent Microsoft Store apps from receiving updates by using the <strong>Turn off Automatic Download and Install of updates</strong> Group Policy setting. For more information about configuring these settings, see <a href="https://technet.microsoft.com/library/hh832040.aspx#BKMK_UseGP" data-raw-source="[Can I use Group Policy to control the Microsoft Store in my enterprise environment?](https://technet.microsoft.com/library/hh832040.aspx#BKMK_UseGP)">Can I use Group Policy to control the Microsoft Store in my enterprise environment?</a>.<br/><br/>
+<strong>Intune</strong>. You can enable or disable the camera by using the <strong>Allow application store</strong> policy setting in the <strong>Apps</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Use of Remote Desktop connections to devices</td>
 <td>Remote Desktop connections could allow unauthorized access to the device. Depending on your institution’s policies, you may want to disable Remote Desktop connections on your devices.<br/><br/>
-**Group Policy**. You can enable or disable Remote Desktop connections to devices by using the **Allow Users to connect remotely using Remote Desktop setting** in Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections.<br/><br/>
-**Intune**. Not available.
+<strong>Group Policy</strong>. You can enable or disable Remote Desktop connections to devices by using the <strong>Allow Users to connect remotely using Remote Desktop setting</strong> in Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections.<br/><br/>
+<strong>Intune</strong>. Not available.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Use of camera</td>
 <td>A device’s camera can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the camera on your devices.<br/><br/>
-**Group Policy**. Not available.<br/><br/>
-**Intune**. You can enable or disable the camera by using the **Allow camera** policy setting in the **Hardware** section of a **Windows 10 General Configuration** policy.
+<strong>Group Policy</strong>. Not available.<br/><br/>
+<strong>Intune</strong>. You can enable or disable the camera by using the <strong>Allow camera</strong> policy setting in the <strong>Hardware</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Use of audio recording</td>
 <td>Audio recording (by using the Sound Recorder app) can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the Sound Recorder app on your devices.<br/><br/>
-**Group Policy**. You can disable the Sound Recorder app by using the **Do not allow Sound Recorder to run** Group Policy setting. You can disable other audio recording apps by using AppLocker policies. Create AppLocker policies by using the information in [Editing an AppLocker Policy](https://technet.microsoft.com/library/ee791894(v=ws.10).aspx) and [Create Your AppLocker Policies](https://technet.microsoft.com/library/ee791899.aspx).<br/><br/>
-**Intune**. You can enable or disable the camera by using the **Allow voice recording** policy setting in the **Features** section of a **Windows 10 General Configuration** policy.
+<strong>Group Policy</strong>. You can disable the Sound Recorder app by using the <strong>Do not allow Sound Recorder to run</strong> Group Policy setting. You can disable other audio recording apps by using AppLocker policies. Create AppLocker policies by using the information in <a href="https://technet.microsoft.com/library/ee791894(v=ws.10).aspx" data-raw-source="[Editing an AppLocker Policy](https://technet.microsoft.com/library/ee791894(v=ws.10).aspx)">Editing an AppLocker Policy</a> and <a href="https://technet.microsoft.com/library/ee791899.aspx" data-raw-source="[Create Your AppLocker Policies](https://technet.microsoft.com/library/ee791899.aspx)">Create Your AppLocker Policies</a>.<br/><br/>
+<strong>Intune</strong>. You can enable or disable the camera by using the <strong>Allow voice recording</strong> policy setting in the <strong>Features</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Use of screen capture</td>
 <td>Screen captures can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the ability to perform screen captures on your devices.<br/><br/>
-**Group Policy**. Not available.<br/><br/>
-**Intune**. You can enable or disable the camera by using the **Allow screen capture** policy setting in the **System** section of a **Windows 10 General Configuration** policy.
+<strong>Group Policy</strong>. Not available.<br/><br/>
+<strong>Intune</strong>. You can enable or disable the camera by using the <strong>Allow screen capture</strong> policy setting in the <strong>System</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Use of location services</td>
 <td>Providing a device’s location can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the location service on your devices.<br/><br/>
-**Group Policy**. You can enable or disable location services by using the **Turn off location** Group Policy setting in User Configuration\Windows Components\Location and Sensors.<br/><br/>
-**Intune**. You can enable or disable the camera by using the **Allow geolocation** policy setting in the **Hardware** section of a **Windows 10 General Configuration** policy.
+<strong>Group Policy</strong>. You can enable or disable location services by using the <strong>Turn off location</strong> Group Policy setting in User Configuration\Windows Components\Location and Sensors.<br/><br/>
+<strong>Intune</strong>. You can enable or disable the camera by using the <strong>Allow geolocation</strong> policy setting in the <strong>Hardware</strong> section of a <strong>Windows 10 General Configuration</strong> policy.
 </td>
 </tr>
 
 <tr>
 <td valign="top">Changing wallpaper</td>
 <td>Displaying a custom wallpaper can be a source of disclosure or privacy issues in an education environment (if the wallpaper displays information about the user or the device). Depending on your institution’s policies, you may want to prevent users from changing the wallpaper on your devices.<br/><br/>
-**Group Policy**. You can configure the wallpaper by using the **Desktop WallPaper** setting in User Configuration\Administrative Templates\Desktop\Desktop.<br/><br/>
-**Intune**. Not available.
+<strong>Group Policy</strong>. You can configure the wallpaper by using the <strong>Desktop WallPaper</strong> setting in User Configuration\Administrative Templates\Desktop\Desktop.<br/><br/>
+<strong>Intune</strong>. Not available.
 </td>
 </tr>
 
@@ -1035,13 +1049,16 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 
 *Table 12. Deployment preparation checklist*
 
-|Task |      |
-| ---| --- |
-|   |The target devices have sufficient system resources to run Windows 10. |
-|   | Identify the necessary devices drivers, and import them to the MDT deployment share.|
-|   | Create an MDT application for each Microsoft Store and Windows desktop app.|
-|   | Notify the students and faculty about the deployment.|
+
+| Task |                                                                                      |
+|------|--------------------------------------------------------------------------------------|
+|      |        The target devices have sufficient system resources to run Windows 10.        |
+|      | Identify the necessary devices drivers, and import them to the MDT deployment share. |
+|      |     Create an MDT application for each Microsoft Store and Windows desktop app.      |
+|      |                Notify the students and faculty about the deployment.                 |
+
 <p>
+
 ### Perform the deployment
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
@@ -1124,10 +1141,10 @@ Table 13 lists the school and individual classroom maintenance tasks, the resour
 <td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
 For more information about completing this task when you have:
 <ul>
-<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
-<li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
-<li>Windows Server Update Services (WSUS), see [Windows Server Update Services](https://msdn.microsoft.com/library/bb332157.aspx?f=255&MSPPError=-2147217396).</li>
-<li>Neither Intune, Group Policy, or WSUS, see [Update Windows 10](https://windows.microsoft.com/en-id/windows-10/update-windows-10)</li>
+<li>Intune, see <a href="https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune" data-raw-source="[Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)">Keep Windows PCs up to date with software updates in Microsoft Intune</a>.</li>
+<li>Group Policy, see <a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business" data-raw-source="[Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business)">Windows Update for Business</a>.</li>
+<li>Windows Server Update Services (WSUS), see <a href="https://msdn.microsoft.com/library/bb332157.aspx?f=255&amp;MSPPError=-2147217396" data-raw-source="[Windows Server Update Services](https://msdn.microsoft.com/library/bb332157.aspx?f=255&amp;MSPPError=-2147217396)">Windows Server Update Services</a>.</li>
+<li>Neither Intune, Group Policy, or WSUS, see <a href="https://windows.microsoft.com/en-id/windows-10/update-windows-10" data-raw-source="[Update Windows 10](https://windows.microsoft.com/en-id/windows-10/update-windows-10)">Update Windows 10</a></li>
 </ul>
 </td>
 <td>X</td>
@@ -1137,7 +1154,7 @@ For more information about completing this task when you have:
 
 <tr>
 <td>Verify that Windows Defender is active and current with malware Security intelligence.<br/><br/>
-For more information about completing this task, see [Turn Windows Defender on or off](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01) and [Updating Windows Defender](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03). </td>
+For more information about completing this task, see <a href="https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01" data-raw-source="[Turn Windows Defender on or off](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01)">Turn Windows Defender on or off</a> and <a href="https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03" data-raw-source="[Updating Windows Defender](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03)">Updating Windows Defender</a>. </td>
 <td>X</td>
 <td>X</td>
 <td>X</td>
@@ -1145,7 +1162,7 @@ For more information about completing this task, see [Turn Windows Defender on o
 
 <tr>
 <td>Verify that Windows Defender has run a scan in the past week and that no viruses or malware were found.<br/><br/>
-For more information about completing this task, see [How do I find and remove a virus?](https://windows.microsoft.com/en-US/windows-8/how-find-remove-virus)
+For more information about completing this task, see <a href="https://windows.microsoft.com/en-US/windows-8/how-find-remove-virus" data-raw-source="[How do I find and remove a virus?](https://windows.microsoft.com/en-US/windows-8/how-find-remove-virus)">How do I find and remove a virus?</a>
 </td>
 <td>X</td>
 <td>X</td>
@@ -1154,7 +1171,7 @@ For more information about completing this task, see [How do I find and remove a
 
 <tr>
 <td>Verify that you are using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/> 
-For more information about Windows 10 servicing options for updates and upgrades, see [Windows 10 servicing options for updates and upgrades](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing).</td>
+For more information about Windows 10 servicing options for updates and upgrades, see <a href="https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing" data-raw-source="[Windows 10 servicing options for updates and upgrades](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing)">Windows 10 servicing options for updates and upgrades</a>.</td>
 <td></td>
 <td>X</td>
 <td>X</td>
@@ -1162,7 +1179,7 @@ For more information about Windows 10 servicing options for updates and upgrades
 
 <tr>
 <td>Refresh the operating system and apps on devices.<br/><br/>
-For more information about completing this task, see the [Deploy Windows 10 to devices](#deploy-windows-10-to-devices) section.
+For more information about completing this task, see the <a href="#deploy-windows-10-to-devices" data-raw-source="[Deploy Windows 10 to devices](#deploy-windows-10-to-devices)">Deploy Windows 10 to devices</a> section.
 
 </td>
 <td></td>
@@ -1172,7 +1189,7 @@ For more information about completing this task, see the [Deploy Windows 10 to d
 
 <tr>
 <td>Install any new Windows desktop apps or update any Windows desktop apps that are used in the curriculum.<br/><br/>
-For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.
+For more information, see the <a href="#deploy-apps-by-using-intune" data-raw-source="[Deploy apps by using Intune](#deploy-apps-by-using-intune)">Deploy apps by using Intune</a> section.
 
 </td>
 <td></td>
@@ -1183,7 +1200,7 @@ For more information, see the [Deploy apps by using Intune](#deploy-apps-by-usin
 <tr>
 <td>Install new or update existing Microsoft Store apps that are used in the curriculum.<br/><br/>
 Microsoft Store apps are automatically updated from Microsoft Store. The menu bar in the Microsoft Store app shows whether any Microsoft Store app updates are available for download.<br/><br/>
-You can also deploy Microsoft Store apps directly to devices by using Intune. For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.
+You can also deploy Microsoft Store apps directly to devices by using Intune. For more information, see the <a href="#deploy-apps-by-using-intune" data-raw-source="[Deploy apps by using Intune](#deploy-apps-by-using-intune)">Deploy apps by using Intune</a> section.
 
 </td>
 <td></td>
@@ -1195,8 +1212,8 @@ You can also deploy Microsoft Store apps directly to devices by using Intune. Fo
 <td>Remove unnecessary user accounts (and corresponding licenses) from Office 365.<br/><br/>
 For more information about how to:
 <ul>
-<li>Remove unnecessary user accounts, see [Delete or restore users](https://support.office.com/en-us/article/Delete-or-restore-users-d5155593-3bac-4d8d-9d8b-f4513a81479e?ui=en-US&rs=en-US&ad=US).</li>
-<li>Unassign licenses, see [Assign or unassign licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+<li>Remove unnecessary user accounts, see <a href="https://support.office.com/en-us/article/Delete-or-restore-users-d5155593-3bac-4d8d-9d8b-f4513a81479e?ui=en-US&amp;rs=en-US&amp;ad=US" data-raw-source="[Delete or restore users](https://support.office.com/en-us/article/Delete-or-restore-users-d5155593-3bac-4d8d-9d8b-f4513a81479e?ui=en-US&amp;rs=en-US&amp;ad=US)">Delete or restore users</a>.</li>
+<li>Unassign licenses, see <a href="https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US" data-raw-source="[Assign or unassign licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US)">Assign or unassign licenses for Office 365 for business</a>.</li>
 </ul>
 
 </td>
@@ -1209,8 +1226,8 @@ For more information about how to:
 <td>Add new accounts (and corresponding licenses) to Office 365.<br/><br/>
 For more information about how to:
 <ul>
-<li>Add user accounts, see [Add users to Office 365 for business](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc) and [Add users individually or in bulk to Office 365](https://www.youtube.com/watch?v=zDs3VltTJps).</li>
-<li>Assign licenses, see [Assign or unassign licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+<li>Add user accounts, see <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" data-raw-source="[Add users to Office 365 for business](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc)">Add users to Office 365 for business</a> and <a href="https://www.youtube.com/watch?v=zDs3VltTJps" data-raw-source="[Add users individually or in bulk to Office 365](https://www.youtube.com/watch?v=zDs3VltTJps)">Add users individually or in bulk to Office 365</a>.</li>
+<li>Assign licenses, see <a href="https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US" data-raw-source="[Assign or unassign licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US)">Assign or unassign licenses for Office 365 for business</a>.</li>
 </ul>
 </td>
 <td></td>
@@ -1222,8 +1239,8 @@ For more information about how to:
 <td>Create or modify security groups and manage group membership in Office 365.<br/><br/>
 For more information about how to:
 <ul>
-<li>Create or modify security groups, see [View, create, and delete Groups in the Office 365 admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7).</li>
-<li>Manage group membership, see [Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a).</li>
+<li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7" data-raw-source="[View, create, and delete Groups in the Office 365 admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7)">View, create, and delete Groups in the Office 365 admin center</a>.</li>
+<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the Office 365 admin center</a>.</li>
 </ul>
 
 </td>
@@ -1234,7 +1251,7 @@ For more information about how to:
 
 <tr>
 <td>Create or modify Exchange Online or Microsoft Exchange Server distribution lists in Office 365.<br/><br/>
-For more information about how to create or modify Exchange Online or Exchange Server distribution lists in Office 365, see [Manage Distribution Groups](https://technet.microsoft.com/library/bb124513.aspx) and [Groups in Exchange Online and SharePoint Online](https://support.office.com/en-us/article/Create-edit-or-delete-a-security-group-55C96B32-E086-4C9E-948B-A018B44510CB#__groups_in_exchange).
+For more information about how to create or modify Exchange Online or Exchange Server distribution lists in Office 365, see <a href="https://technet.microsoft.com/library/bb124513.aspx" data-raw-source="[Manage Distribution Groups](https://technet.microsoft.com/library/bb124513.aspx)">Manage Distribution Groups</a> and <a href="https://support.office.com/en-us/article/Create-edit-or-delete-a-security-group-55C96B32-E086-4C9E-948B-A018B44510CB#__groups_in_exchange" data-raw-source="[Groups in Exchange Online and SharePoint Online](https://support.office.com/en-us/article/Create-edit-or-delete-a-security-group-55C96B32-E086-4C9E-948B-A018B44510CB#__groups_in_exchange)">Groups in Exchange Online and SharePoint Online</a>.
 
 </td>
 <td></td>
@@ -1244,7 +1261,7 @@ For more information about how to create or modify Exchange Online or Exchange S
 
 <tr>
 <td>Install new student devices<br/><br/>
-Follow the same steps described in the [Deploy Windows 10 to devices](#deploy-windows-10-to-devices) section.
+Follow the same steps described in the <a href="#deploy-windows-10-to-devices" data-raw-source="[Deploy Windows 10 to devices](#deploy-windows-10-to-devices)">Deploy Windows 10 to devices</a> section.
 
 </td>
 <td></td>
@@ -1255,14 +1272,14 @@ Follow the same steps described in the [Deploy Windows 10 to devices](#deploy-wi
 </tbody>
 </table>
 <p>
+
 ### Summary
 
 Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By performing these maintenance tasks you help ensure that your school stays secure and is configured as you specified. 
 
-##Related resources
+## Related resources
 <ul>
-<li>[Try it out: Windows 10 deployment (for educational institutions)](https://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
-<li>[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
-<li>[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
+<li><a href="https://go.microsoft.com/fwlink/p/?LinkId=623254" data-raw-source="[Try it out: Windows 10 deployment (for educational institutions)](https://go.microsoft.com/fwlink/p/?LinkId=623254)">Try it out: Windows 10 deployment (for educational institutions)</a></li>
+<li><a href="https://go.microsoft.com/fwlink/p/?LinkId=623255" data-raw-source="[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)">Try it out: Windows 10 in the classroom</a></li>
+<li><a href="https://go.microsoft.com/fwlink/p/?LinkId=623249" data-raw-source="[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)">Chromebook migration guide</a></li>
 </ul>
-

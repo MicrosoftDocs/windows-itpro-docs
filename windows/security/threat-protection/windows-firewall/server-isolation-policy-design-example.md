@@ -2,12 +2,14 @@
 title: Server Isolation Policy Design Example (Windows 10)
 description: Server Isolation Policy Design Example
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -80,4 +82,4 @@ If Woodgrove Bank wants to implement server isolation without domain isolation, 
 
 You do not have to include the encryption-capable rules on all devices. Instead, you can create GPOs that are applied only to members of the NAG, in addition to the standard domain isolation GPO, that contain connection security rules to support encryption.
 
-**Next: **[Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)
+**Next:** [Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)

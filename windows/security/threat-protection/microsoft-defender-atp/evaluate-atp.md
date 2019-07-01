@@ -1,21 +1,21 @@
 ---
 title: Evaluate Microsoft Defender Advanced Threat Protection
-description: 
-keywords: 
+ms.reviewer: 
+description: Evaluate the different security capabilities in Microsoft Defender ATP.
+keywords: attack surface reduction, evaluate, next, generation, protection 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 08/10/2018
 ---
 
 # Evaluate Microsoft Defender ATP 

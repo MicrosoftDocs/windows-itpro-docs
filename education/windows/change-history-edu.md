@@ -6,9 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: lizap
-ms.author: elizapo
+author: levinec
+ms.author: ellevin
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Windows 10 for Education
@@ -54,21 +56,21 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the prerequisites to provide more clarification. |
+| [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated the prerequisites to provide more clarification. |
 
 ## August 2017
 
 | New or changed topic | Description |
 | --- | ---- |
 | [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Find out how you can test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
-| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the instructions to reflect the new or updated functionality in the latest version of the app. |
+| [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated the instructions to reflect the new or updated functionality in the latest version of the app. |
 
 ## July 2017
 
 | New or changed topic | Description |
 | --- | ---- |
 | [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-for-education.md)  | New information about redeeming Minecraft: Education Edition licenses with qualifying purchases of Windows 10 devices.  |
-| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Added the how-to video, which shows how to use the app to create a provisioning package that you can use to set up school PCs. |
+| [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Added the how-to video, which shows how to use the app to create a provisioning package that you can use to set up school PCs. |
 | [Take a Test app technical reference](take-a-test-app-technical.md) | Added a Group Policy section to inform you of any policies that affect the Take a Test app or functionality within the app. |
 
 ## June 2017
@@ -77,14 +79,14 @@ New or changed topic | Description
 | --- | ---- |
 | [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | Includes the following updates:</br></br> - New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs.</br> - New configuration information when using Windows 10 S for education. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs. |
-| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the recommended apps section to include information about Office 365 for Windows 10 S (Education Preview). |
+| [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated the recommended apps section to include information about Office 365 for Windows 10 S (Education Preview). |
 
 ## May 2017
 
 | New or changed topic | Description |
 | --- | ---- |
 | [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
-| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
+| [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
 
 ## RELEASE: Windows 10, version 1703 (Creators Update)
 
@@ -95,9 +97,9 @@ New or changed topic | Description
 | [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
 | [Set up Windows devices for education](set-up-windows-10.md) | Updated for Windows 10, version 1703. |
-| Set up School PCs app: </br> [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md) </br> [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated. Describes the school-specific settings and policies that Set up School PC configures. Also provides step-by-step instructions for using the latest version of the app to create a provisioning package that you can use to set up student PCs. |
+| Set up School PCs app: </br> [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md) </br> [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated. Describes the school-specific settings and policies that Set up School PC configures. Also provides step-by-step instructions for using the latest version of the app to create a provisioning package that you can use to set up student PCs. |
 | Set up using Windows Configuration Designer: </br> [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md) </br> [Provision student PCs with apps](set-up-students-pcs-with-apps.md) | Updated the information for Windows 10, version 1703. |
-| [Take tests in Windows 10 ](take-tests-in-windows-10.md) </br> [Set up Take a Test on a single PC](take-a-test-single-pc.md) </br> [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) </br> [Take a Test app technical reference](take-a-test-app-technical.md) | Updated. Includes new information on ways you can set up the test account and assessment URL and methods for creating and distributing the link. Methods available to you vary depending on whether you're setting up Take a Test on a single PC or multiple PCs. |
+| [Take tests in Windows 10](take-tests-in-windows-10.md) </br> [Set up Take a Test on a single PC](take-a-test-single-pc.md) </br> [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) </br> [Take a Test app technical reference](take-a-test-app-technical.md) | Updated. Includes new information on ways you can set up the test account and assessment URL and methods for creating and distributing the link. Methods available to you vary depending on whether you're setting up Take a Test on a single PC or multiple PCs. |
 
 ## January 2017
 

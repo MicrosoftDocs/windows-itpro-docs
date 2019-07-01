@@ -3,7 +3,12 @@
 ## [Overview](overview.md)
 ### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
+#### [Exposure score](tvm-exposure-score.md)
 #### [Configuration score](configuration-score.md)
+#### [Security recommendation](tvm-security-recommendation.md)
+#### [Remediation](tvm-remediation.md)
+#### [Software inventory](tvm-software-inventory.md)
+#### [Weaknesses](tvm-weaknesses.md)
 #### [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
@@ -39,25 +44,23 @@
 ##### [Investigate a domain](investigate-domain.md)
 ##### [Investigate a user account](investigate-user.md)
  
-#### Machines list
-##### [View and organize the Machines list](machines-view-overview.md)
-##### [Manage machine group and tags](machine-tags.md)
-##### [Alerts related to this machine](investigate-machines.md#alerts-related-to-this-machine)
-##### [Machine timeline](investigate-machines.md#machine-timeline)
-###### [Search for specific events](investigate-machines.md#search-for-specific-events)
-###### [Filter events from a specific date](investigate-machines.md#filter-events-from-a-specific-date)
-###### [Export machine timeline events](investigate-machines.md#export-machine-timeline-events)
-###### [Navigate between pages](investigate-machines.md#navigate-between-pages)
+#### [Machines list](machines-view-overview.md)
+##### [Investigate machines](investigate-machines.md#machine-timeline)
+###### [Machine details](investigate-machines.md#machine-details)
+###### [Response actions](investigate-machines.md#response-actions)
+###### [Cards](investigate-machines.md#cards)
+###### [Tabs](investigate-machines.md#tabs)
 
 
 #### [Take response actions](response-actions.md)
 ##### [Take response actions on a machine](respond-machine-alerts.md)
-###### [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
-###### [Run antivirus scan](respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
+###### [Manage tags](respond-machine-alerts.md#manage-tags)
+###### [Initiate Automated Investigation](respond-machine-alerts.md#initiate-automated-investigation)
+###### [Initiate Live Response Session](respond-machine-alerts.md#initiate-live-response-session)
+###### [Collect investigation package from machines](respond-machine-alerts.md#collect-investigation-package-from-machines)
+###### [Run Windows Defender Antivirus scan on machines](respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
-###### [Remove app restriction](respond-machine-alerts.md#remove-app-restriction)
 ###### [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network)
-###### [Release machine from isolation](respond-machine-alerts.md#release-machine-from-isolation)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file](respond-file-alerts.md)
@@ -71,11 +74,13 @@
 ###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
 
+
 ##### [Investigate entities using Live response](live-response.md)
 ###### [Live response command examples](live-response-command-examples.md)
 
 ### [Automated investigation and remediation](automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation.md)
+#### [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)
 
 
 ### [Secure score](overview-secure-score.md)
@@ -83,14 +88,12 @@
 
 ### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
-### [Threat analytics](threat-analytics.md)
-
 ### [Advanced hunting](overview-hunting.md)
 #### [Query data using Advanced hunting](advanced-hunting.md)
 ##### [Advanced hunting reference](advanced-hunting-reference.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
 #### [Custom detections](overview-custom-detections.md)
-#####[Create custom detections rules](custom-detection-rules.md)
+##### [Create custom detections rules](custom-detection-rules.md)
 
 ### [Management and APIs](management-apis.md)
 #### [Understand threat intelligence concepts](threat-indicator-concepts.md)
@@ -101,7 +104,7 @@
 ####  [Protect users, data, and devices with Conditional Access](conditional-access.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response ](information-protection-investigation.md)
+##### [Use sensitivity labels to prioritize incident response](information-protection-investigation.md)
 
 
 
@@ -123,7 +126,7 @@
 
 
 ### [Evaluate Microsoft Defender ATP](evaluate-atp.md)
-####Evaluate attack surface reduction
+#### Evaluate attack surface reduction
 ##### [Hardware-based isolation](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Application control](../windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 ##### [Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
@@ -137,7 +140,7 @@
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
-###Hardware-based isolation
+### Hardware-based isolation
 #### [System integrity](../windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 #### [Application isolation](../windows-defender-application-guard/install-wd-app-guard.md)
 ##### [Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
@@ -248,6 +251,7 @@
   
 
 #### [Microsoft Defender ATP API](use-apis.md)
+##### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
@@ -366,7 +370,7 @@
 ### Configure Microsoft Threat Protection integration
 #### [Configure Conditional Access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
-####[Configure information protection in Windows](information-protection-in-windows-config.md)
+#### [Configure information protection in Windows](information-protection-in-windows-config.md)
 
 
 ### [Configure Microsoft Defender Security Center settings](preferences-setup.md)
@@ -388,14 +392,14 @@
 ##### [Enable Threat intel](enable-custom-ti.md)
 ##### [Enable SIEM integration](enable-siem-integration.md)
  
-####Rules
+#### Rules
 ##### [Manage suppression rules](manage-suppression-rules.md)
 ##### [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](manage-indicators.md)
 ##### [Manage automation file uploads](manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](manage-automation-folder-exclusions.md)
  
-####Machine management
+#### Machine management
 ##### [Onboarding machines](onboard-configure.md)
 ##### [Offboarding machines](offboard-machines.md)
  
@@ -404,7 +408,7 @@
 
 
 ## [Troubleshoot Microsoft Defender ATP](troubleshoot-overview.md)
-###Troubleshoot sensor state
+### Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status.md)
 #### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
 #### [Inactive machines](fix-unhealthy-sensors.md#inactive-machines)
@@ -414,7 +418,7 @@
 ### [Troubleshoot Microsoft Defender ATP service issues](troubleshoot-mdatp.md)
 #### [Check service health](service-status.md)
 
-###Troubleshoot attack surface reduction
+### Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
 #### [Collect diagnostic data for files](../windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)

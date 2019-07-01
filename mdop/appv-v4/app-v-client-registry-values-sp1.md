@@ -1,8 +1,11 @@
 ---
 title: App-V Client Registry Values
 description: App-V Client Registry Values
-author: jamiejdt
+author: dansimp
 ms.assetid: 46af5209-9762-47b9-afdb-9a2947e013f7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +17,12 @@ ms.date: 08/30/2016
 # App-V Client Registry Values
 
 
-The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists all the Application Virtualization (App-V) client registry keys and explains their uses.
+The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists all the Application Virtualization (App-V) client registry keys and explains their uses.
 
-**Important**  
+**Important**  
 On a computer running a 64-bit operating system, the keys and values described in the following sections will be under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\SoftGrid\\4.5\\Client.
 
- 
+
 
 ## Configuration Key
 
@@ -49,45 +52,44 @@ The following table provides information about the registry values associated wi
 <td align="left"><p>Do not modify.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Version </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>4.5.0.xxx </p></td>
-<td align="left"><p>Do not modify. </p></td>
+<td align="left"><p>Version </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>4.5.0.xxx </p></td>
+<td align="left"><p>Do not modify. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Drivers </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>Sftfs.sys </p></td>
+<td align="left"><p>Drivers </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>Sftfs.sys </p></td>
 <td align="left"><p>If this key value is present, it contains the name of the driver that caused a stop error the last time the core was starting. After you have fixed the stop error, you must delete this key value so that sftlist can start.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>InstallPath </p></td>
-<td align="left"><p>String </p></td>
+<td align="left"><p>InstallPath </p></td>
+<td align="left"><p>String </p></td>
 <td align="left"><p>Default=C:\Program Files\Microsoft Application Virtualization Client</p></td>
-<td align="left"><p>The location where the client is installed. Do not modify. </p></td>
+<td align="left"><p>The location where the client is installed. Do not modify. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>LogFileName </p></td>
-<td align="left"><p>String </p></td>
+<td align="left"><p>LogFileName </p></td>
+<td align="left"><p>String </p></td>
 <td align="left"><p>Default=CSIDL_COMMON_APPDATA\Microsoft\Application Virtualization Client\sftlog.txt</p></td>
 <td align="left"><p>The path and name for the client log file.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are running an earlier version than App-V 4.6, SP1 and you modify the log file name or location, you must restart the sftlist service for the change to take effect.</p>
+<strong>Note</strong><br/><p>If you are running an earlier version than App-V 4.6, SP1 and you modify the log file name or location, you must restart the sftlist service for the change to take effect.</p>
 </div>
 <div>
- 
+
 </div>
 <p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>LogMinSeverity </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>LogMinSeverity </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>Default=4, Informational</p></td>
 <td align="left"><p>Controls which messages are written to the log. The value indicates a threshold of what is logged—everything less than or equal to that value is logged. For example, a value of 0x3 (Warning) indicates that Warnings (0x3), Errors (0x2), and Critical Errors (0x1) are logged.</p>
 <p>Value Range: 0x0 = None, 0x1 = Critical, 0x2 = Error, 0x3 = Warning, 0x4 = Information (Default), 0x5 = Verbose.</p>
 <p>The log level is configurable from the Application Virtualization (App-V) client console and from the command prompt. At a command prompt, the command sftlist.exe /verboselog will increase the log level to verbose. For more information on command-line details see</p>
-<p>https://go.microsoft.com/fwlink/?LinkId=141467https://go.microsoft.com/fwlink/?LinkId=141467</p>
+<p><a href="https://go.microsoft.com/fwlink/?LinkId=141467https://go.microsoft.com/fwlink/?LinkId=141467" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=141467https://go.microsoft.com/fwlink/?LinkId=141467">https://go.microsoft.com/fwlink/?LinkId=141467https://go.microsoft.com/fwlink/?LinkId=141467</a></p>
 <p>.</p></td>
 </tr>
 <tr class="odd">
@@ -128,31 +130,31 @@ The following table provides information about the registry values associated wi
 <td align="left"><p>ApplicationSourceRoot</p></td>
 <td align="left"><p>String</p></td>
 <td align="left"><p>rtsps://mainserver:322/prodapps</p>
-<p>https://mainserver:443/prodapps</p>
-<p>file://\\uncserver\share\prodapps</p>
-<p>file://\\uncserver\share</p></td>
+<p><a href="https://mainserver:443/prodapps" data-raw-source="https://mainserver:443/prodapps">https://mainserver:443/prodapps</a></p>
+<p>file://\uncserver\share\prodapps</p>
+<p>file://\uncserver\share</p></td>
 <td align="left"><p>Enables an administrator or electronic software distribution (ESD) system to ensure application loading is performed according to the topology management scheme. Use this key value to override the OSD CODEBASE for the HREF element (for example, the source location) for an application. Application Source Root supports URLs and Universal Naming Convention (UNC) path formats.</p>
-<p>The correct format for the URL path is protocol://servername:[port][/path][/], where port and path are optional. If a port is not specified, the default port for the protocol is used. Only the protocol://server:port portion of the OSD URL is replaced. </p>
-<p>The correct format for the UNC path is \\computername\sharefolder\[folder][\], where folder is optional. The computer name can be a fully qualified domain name (FQDN) or an IP address, and sharefolder can be a drive letter. Only the \\computername\sharefolder or drive letter portion of the OSD path is replaced. </p></td>
+<p>The correct format for the URL path is protocol://servername:[port][/path][/], where port and path are optional. If a port is not specified, the default port for the protocol is used. Only the protocol://server:port portion of the OSD URL is replaced. </p>
+<p>The correct format for the UNC path is \computername\sharefolder[folder][], where folder is optional. The computer name can be a fully qualified domain name (FQDN) or an IP address, and sharefolder can be a drive letter. Only the \computername\sharefolder or drive letter portion of the OSD path is replaced. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>OSDSourceRoot</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>\\computername\sharefolder\resource</p>
-<p>\\computername\content</p>
+<td align="left"><p>\computername\sharefolder\resource</p>
+<p>\computername\content</p>
 <p>C:\foldername</p>
-<p>http://computername/productivity/</p>
-<p>https://computername/productivity/</p></td>
+<p><a href="http://computername/productivity/" data-raw-source="http://computername/productivity/">http://computername/productivity/</a></p>
+<p><a href="https://computername/productivity/" data-raw-source="https://computername/productivity/">https://computername/productivity/</a></p></td>
 <td align="left"><p>Enables an administrator to specify a source location for OSD file retrieval for a sequenced application package during publication. Acceptable formats for the OSDSourceRoot include UNC paths and URLs (http or https).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IconSourceRoot</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>\\computername\sharefolder\resource</p>
-<p>\\computername\content</p>
+<td align="left"><p>\computername\sharefolder\resource</p>
+<p>\computername\content</p>
 <p>C:\foldername</p>
-<p>http://computername/productivity/</p>
-<p>https://computername/productivity/</p></td>
+<p><a href="http://computername/productivity/" data-raw-source="http://computername/productivity/">http://computername/productivity/</a></p>
+<p><a href="https://computername/productivity/" data-raw-source="https://computername/productivity/">https://computername/productivity/</a></p></td>
 <td align="left"><p>Enables an administrator to specify a source location for icon file retrieval for a sequenced application package during publication. Acceptable formats for the IconSourceRoot include UNC paths and URLs (http or https).</p></td>
 </tr>
 <tr class="even">
@@ -186,89 +188,89 @@ The following table provides information about the registry values associated wi
 <p>Restart the sftlist service for the change to take effect.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>UserDataDirectory </p></td>
-<td align="left"><p>String </p></td>
+<td align="left"><p>UserDataDirectory </p></td>
+<td align="left"><p>String </p></td>
 <td align="left"><p>%APPDATA%</p></td>
 <td align="left"><p>Location where the icon cache and user settings are stored.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>GlobalDataDirectory </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>C:\Users\Public\Documents </p></td>
+<td align="left"><p>GlobalDataDirectory </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>C:\Users\Public\Documents </p></td>
 <td align="left"><p>Directory to use for global App-V data, including caches for OSD files, icon files, shortcut information, and SystemGuard resources such as .ini files.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>AllowCrashes </p></td>
-<td align="left"><p>DWORD </p></td>
-<td align="left"><p>0 or 1 </p></td>
+<td align="left"><p>AllowCrashes </p></td>
+<td align="left"><p>DWORD </p></td>
+<td align="left"><p>0 or 1 </p></td>
 <td align="left"><p>Default=0: A value of 0 means that the client tries to catch internal program exceptions so that other user applications can recover and continue when a crash happens. A value of 1 means that the client allows the internal program exceptions to occur so that they can be captured in a debugger.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>CoreInternalTimeout </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>CoreInternalTimeout </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>60</p></td>
-<td align="left"><p>Time-out in seconds for internal IPC requests between core and front-end. Do not modify. </p></td>
+<td align="left"><p>Time-out in seconds for internal IPC requests between core and front-end. Do not modify. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>DefaultSuiteCombineTime </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>DefaultSuiteCombineTime </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>10</p></td>
-<td align="left"><p>This value is used to indicate how soon after being started that a program can shut down and not generate any error messages when another application in the same suite is running. </p></td>
+<td align="left"><p>This value is used to indicate how soon after being started that a program can shut down and not generate any error messages when another application in the same suite is running. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>SerializedSuiteLaunchTimeout </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>SerializedSuiteLaunchTimeout </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>Default=60000</p></td>
-<td align="left"><p>Defines how long in milliseconds the client will wait as it tries to serialize program starts in the same suite. If the client times out, the program start will continue but it will not be serialized. </p></td>
+<td align="left"><p>Defines how long in milliseconds the client will wait as it tries to serialize program starts in the same suite. If the client times out, the program start will continue but it will not be serialized. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>ScriptTimeout </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>ScriptTimeout </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>300</p></td>
-<td align="left"><p>Default time-out in seconds for scripts in OSD file if WAIT=TRUE. You can specify per-script time-outs with TIMEOUT instead of WAIT. A value of 0 means no wait, and 0xFFFFFFFF means wait forever. </p></td>
+<td align="left"><p>Default time-out in seconds for scripts in OSD file if WAIT=TRUE. You can specify per-script time-outs with TIMEOUT instead of WAIT. A value of 0 means no wait, and 0xFFFFFFFF means wait forever. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>LaunchRecordLogPath </p></td>
-<td align="left"><p>String </p></td>
+<td align="left"><p>LaunchRecordLogPath </p></td>
+<td align="left"><p>String </p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>If, under either HKLM or HKCU, this value contains a valid path to a log file, SFTTray will write to this log when programs start, shut down, fail to launch, and enter or exit disconnected mode.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>LaunchRecordMask </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>LaunchRecordMask </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>0x1A (26) log launch errors and disconnected mode entry and exit activity.</p>
 <p>0x1F (31) logs everything.</p>
-<p>0x0 (0) logs nothing. </p></td>
+<p>0x0 (0) logs nothing. </p></td>
 <td align="left"><p>Specifies which of the five events are logged (bitmask values):</p>
 <p>1 for program starts</p>
 <p>2 for launch failure errors</p>
 <p>4 for shutdowns</p>
 <p>8 for entering disconnected mode</p>
 <p>16 for exiting disconnected mode to reconnect to a server</p>
-<p>Add any combination of those numbers to turn on the respective messages. Defaults to 0x1F if not in registry. </p></td>
+<p>Add any combination of those numbers to turn on the respective messages. Defaults to 0x1F if not in registry. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>LaunchRecordWriteTimeout </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>LaunchRecordWriteTimeout </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>Default=3000</p></td>
 <td align="left"><p>Specifies in milliseconds how long the tray will wait when trying to write to the launch record log if another process is using it.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>ImportSearchPath </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>d:\files\;C:\documents and settings\user1\SFTs </p></td>
+<td align="left"><p>ImportSearchPath </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>d:\files;C:\documents and settings\user1\SFTs </p></td>
 <td align="left"><p>A semicolon delimited list of up to five directories to search for portable SFT files before prompting the user to select a directory. Trailing backslash in paths is optional. This value is not present by default and must be set manually.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UserImportPath</p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>D:\SFTs\ </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>D:\SFTs\ </p></td>
 <td align="left"><p>Valid only under HKCU. The last location the user browsed to while finding a SFT file for package import. Set automatically if the SFT is found successfully. This is used on successive imports when trying to automatically locate SFT files.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Shared Key
 
@@ -284,29 +286,29 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Shared key control
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>DumpPath </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>Default=C:\ </p></td>
-<td align="left"><p>Default path to create dump files when generating a minidump on an exception. This defaults to C:\ if not specified. The Client installer sets this key to the &lt;App Virtualization global data directory&gt;\Dumps. The Sequencer installer sets this key to the installation directory. </p></td>
+<td align="left"><p>DumpPath </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>Default=C:\ </p></td>
+<td align="left"><p>Default path to create dump files when generating a minidump on an exception. This defaults to C:\ if not specified. The Client installer sets this key to the &lt;App Virtualization global data directory&gt;\Dumps. The Sequencer installer sets this key to the installation directory. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>DumpPathSizeLimit </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>DumpPathSizeLimit </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>1000</p></td>
 <td align="left"><p>Specifies the maximum total amount of disk space in megabytes that can be used to store minidumps. Default = 1000 MB.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Network Key
 
@@ -322,10 +324,10 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network ke
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
@@ -336,8 +338,8 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network ke
 <td align="left"><p>Enables or disables offline mode. If set to 0, the client will not communicate with App-V Management Servers or publishing servers. In disconnected operations, the client can start a loaded application even when it is not connected to an App-V Management Server. In offline mode, the client does not attempt to connect to an App-V Management Server or publishing server. You must allow disconnected operations to be able to work offline. Default value is 1 enabled (online), and 0 is disabled (offline).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>AllowDisconnectedOperation </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>AllowDisconnectedOperation </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>Default=1</p></td>
 <td align="left"><p>Enables or disables disconnected operation. Default value is 1 enabled, and 0 is disabled. When disconnected operations are enabled, the App-V client can start a loaded application even when it is not connected to an App-V Management Server.</p></td>
 </tr>
@@ -345,12 +347,12 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network ke
 <td align="left"><p>FastConnectTimeout</p></td>
 <td align="left"><p>DWORD</p></td>
 <td align="left"><p>Default=1000</p></td>
-<td align="left"><p>This value specifies the TCP connect time-out in milliseconds to determine when to go into disconnected operations mode. This value can be used to override the default ConnectTimeout of 20 seconds (App-V connect time-out for network transactions) or the system’s TCP time-out of approximately 25 seconds. This brings the client into disconnected operations mode quickly. Applied on the next connect.</p></td>
+<td align="left"><p>This value specifies the TCP connect time-out in milliseconds to determine when to go into disconnected operations mode. This value can be used to override the default ConnectTimeout of 20 seconds (App-V connect time-out for network transactions) or the system’s TCP time-out of approximately 25 seconds. This brings the client into disconnected operations mode quickly. Applied on the next connect.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LimitDisconnectedOperation</p></td>
 <td align="left"><p>DWORD</p></td>
-<td align="left"><p>Default=1 </p></td>
+<td align="left"><p>Default=1 </p></td>
 <td align="left"><p>Applicable only if AllowDisconnectedOperation is 1, enabled. This value determines whether there will be a time limit for how long the client will be allowed to operate in disconnected operations. 1=limited. 0=unlimited.</p></td>
 </tr>
 <tr class="odd">
@@ -404,7 +406,7 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network ke
 </tbody>
 </table>
 
- 
+
 
 ## Http Key
 
@@ -420,10 +422,10 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network\\H
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
@@ -442,7 +444,7 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Network\\H
 </tbody>
 </table>
 
- 
+
 
 ## File System Key
 
@@ -458,53 +460,53 @@ The values that are contained under the HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsof
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>FileSize </p></td>
-<td align="left"><p>DWORD </p></td>
+<td align="left"><p>FileSize </p></td>
+<td align="left"><p>DWORD </p></td>
 <td align="left"><p>4096</p></td>
-<td align="left"><p>Maximum size in megabytes of file system cache file. If you change this value in the registry, you must set State to 0 and reboot. </p></td>
+<td align="left"><p>Maximum size in megabytes of file system cache file. If you change this value in the registry, you must set State to 0 and reboot. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>FileName </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>C:\Users\Public\Documents\SoftGrid Client\sftfs.fsd </p></td>
-<td align="left"><p>Location of file system cache file. If you change this value in the registry, you must either leave FileSize the same and reboot or set State to 0 and reboot. </p></td>
+<td align="left"><p>FileName </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>C:\Users\Public\Documents\SoftGrid Client\sftfs.fsd </p></td>
+<td align="left"><p>Location of file system cache file. If you change this value in the registry, you must either leave FileSize the same and reboot or set State to 0 and reboot. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>DriveLetter </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>Q: </p></td>
-<td align="left"><p>Drive where App-V file system will be mounted, if it is available. This value is set either by the listener or the installer, and it is read by the file system. </p></td>
+<td align="left"><p>DriveLetter </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>Q: </p></td>
+<td align="left"><p>Drive where App-V file system will be mounted, if it is available. This value is set either by the listener or the installer, and it is read by the file system. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>State </p></td>
-<td align="left"><p>DWORD </p></td>
-<td align="left"><p>0x100 </p></td>
-<td align="left"><p>State of file system. Set to 0 and reboot to completely clear the file system cache. </p></td>
+<td align="left"><p>State </p></td>
+<td align="left"><p>DWORD </p></td>
+<td align="left"><p>0x100 </p></td>
+<td align="left"><p>State of file system. Set to 0 and reboot to completely clear the file system cache. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>FileSystemStorage </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>C:\Profiles\Joe\SG </p></td>
-<td align="left"><p>Path for symlinks, set under HKCU. Do not modify (use data directory under Configuration to change). </p></td>
+<td align="left"><p>FileSystemStorage </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>C:\Profiles\Joe\SG </p></td>
+<td align="left"><p>Path for symlinks, set under HKCU. Do not modify (use data directory under Configuration to change). </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>GlobalFileSystemStorage </p></td>
-<td align="left"><p>String </p></td>
-<td align="left"><p>C:\Users\Public\Documents\SoftGrid Client\AppFS Storage </p></td>
-<td align="left"><p>Path for global file system data. Do not modify. </p></td>
+<td align="left"><p>GlobalFileSystemStorage </p></td>
+<td align="left"><p>String </p></td>
+<td align="left"><p>C:\Users\Public\Documents\SoftGrid Client\AppFS Storage </p></td>
+<td align="left"><p>Path for global file system data. Do not modify. </p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>MaxPercentToLockInCache </p></td>
-<td align="left"><p>DWORD </p></td>
-<td align="left"><p>Default=90 </p></td>
+<td align="left"><p>MaxPercentToLockInCache </p></td>
+<td align="left"><p>DWORD </p></td>
+<td align="left"><p>Default=90 </p></td>
 <td align="left"><p>Specifies the maximum percentage of the file system cache file that can be locked. Do not modify.</p></td>
 </tr>
 <tr class="even">
@@ -522,19 +524,19 @@ The values that are contained under the HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsof
 </tbody>
 </table>
 
- 
+
 
 ## Permissions Key
 
 
-To help to prevent users from making mistakes, administrators can use the HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Permissions key to control access to some actions for non-administrative users—for example, to prevent users from accidentally unloading programs. Users with administrative rights can give themselves any of these permissions. On shared systems, such as a Remote Desktop Session Host (RD Session Host) server (formerly Terminal Server) system, be careful when granting additional permissions to users because some of these permissions would enable users to control the applications used by all users on the system. Possible values for these settings are 1 (allow) and 0 (disallow).
+To help to prevent users from making mistakes, administrators can use the HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Permissions key to control access to some actions for non-administrative users—for example, to prevent users from accidentally unloading programs. Users with administrative rights can give themselves any of these permissions. On shared systems, such as a Remote Desktop Session Host (RD Session Host) server (formerly Terminal Server) system, be careful when granting additional permissions to users because some of these permissions would enable users to control the applications used by all users on the system. Possible values for these settings are 1 (allow) and 0 (disallow).
 
 The Permissions key settings control all interfaces that enable the named actions. This includes the Options Dialog, SFTTray, and SFTMime. These settings do not affect administrators. The following table provides information about the registry values associated with the Permissions key.
 
-Name 
-Type 
-Data (Examples) 
-Description 
+Name 
+Type 
+Data (Examples) 
+Description 
 ChangeFSDrive
 
 DWORD
@@ -567,21 +569,21 @@ Default=0
 
 A value of 1 allows users to add applications explicitly. This does not affect applications that are added through publishing refresh nor does it prevent users from starting (and thereby implicitly adding) applications that have not already been added. Values are 0 or 1.
 
-LoadApp 
+LoadApp 
 
-DWORD 
+DWORD 
 
 0
 
-Does not allow a user to load an application. This is the default for RD Session Hosts. If you are a mobile user, you might want to fully load your applications in the cache to use them during disconnected operation or offline mode. To stream applications from the App-V Management Server or the App-V Streaming Server, you must be connected to a server to load applications.
+Does not allow a user to load an application. This is the default for RD Session Hosts. If you are a mobile user, you might want to fully load your applications in the cache to use them during disconnected operation or offline mode. To stream applications from the App-V Management Server or the App-V Streaming Server, you must be connected to a server to load applications.
 
 1
 
-Allows a user to load an application. This is the default for Windows desktops. 
+Allows a user to load an application. This is the default for Windows desktops. 
 
-UnloadApp 
+UnloadApp 
 
-DWORD 
+DWORD 
 
 0
 
@@ -589,43 +591,43 @@ Does not allow a user to unload an application. When you load or unload a packag
 
 1
 
-Allows a user to unload an application. 
+Allows a user to unload an application. 
 
-LockApp 
+LockApp 
 
-DWORD 
-
-0
-
-Does not allow a user to lock and unlock an application. This is the default for RD Session Hosts. A locked application cannot be removed from the cache to make room for new applications. To remove a locked application from the App-V Desktop or Client for Remote Desktop Services (formerly Terminal Services) cache, you must unlock it.
-
-1
-
-Allows a user to lock and unlock an application. This is the default for Windows Desktops. 
-
-ManageTypes 
-
-DWORD 
+DWORD 
 
 0
 
-Does not allow a user to add, edit, or remove file type associations for that User alone. This is the default for RD Session Hosts. 
+Does not allow a user to lock and unlock an application. This is the default for RD Session Hosts. A locked application cannot be removed from the cache to make room for new applications. To remove a locked application from the App-V Desktop or Client for Remote Desktop Services (formerly Terminal Services) cache, you must unlock it.
 
 1
 
-Allows a user to add, edit, and remove file type associations for that user only and not globally. This is the default for Windows Desktops. 
+Allows a user to lock and unlock an application. This is the default for Windows Desktops. 
 
-RefreshServer 
+ManageTypes 
 
-DWORD 
+DWORD 
 
 0
 
-Does not allow a user to trigger a refresh of MIME settings. This is the default for RD Session Hosts. 
+Does not allow a user to add, edit, or remove file type associations for that User alone. This is the default for RD Session Hosts. 
 
 1
 
-Enables a user to trigger a refresh of MIME settings. This is the default for Windows Desktops. 
+Allows a user to add, edit, and remove file type associations for that user only and not globally. This is the default for Windows Desktops. 
+
+RefreshServer 
+
+DWORD 
+
+0
+
+Does not allow a user to trigger a refresh of MIME settings. This is the default for RD Session Hosts. 
+
+1
+
+Enables a user to trigger a refresh of MIME settings. This is the default for Windows Desktops. 
 
 UpdateOSDFile
 
@@ -635,17 +637,17 @@ Default= 0
 
 A value of 1 enables a user to use a modified OSD file.
 
-ImportApp 
+ImportApp 
 
-DWORD 
+DWORD 
 
 0
 
-Does not allow a user to import applications into cache. The difference between Load and Import is that when a Load is triggered, the client gets the package from the currently configured location contained in the OSD, ASR, or Override URL. When using Import, a location to get the package from must be specified. 
+Does not allow a user to import applications into cache. The difference between Load and Import is that when a Load is triggered, the client gets the package from the currently configured location contained in the OSD, ASR, or Override URL. When using Import, a location to get the package from must be specified. 
 
 1
 
-Allows a user to import applications into cache. 
+Allows a user to import applications into cache. 
 
 ChangeRefreshSettings
 
@@ -711,7 +713,7 @@ DWORD
 
 A value of 1 allows the users to select to run the client in Offline Mode. In Offline Mode, the Application Virtualization client can start a loaded application even when it is not connected to an Application Virtualization Server.
 
- 
+
 
 ## Custom Settings
 
@@ -727,24 +729,24 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\CustomSett
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>TrayErrorDelay </p></td>
-<td align="left"><p>DWORD </p></td>
-<td align="left"><p>Default=30 </p></td>
-<td align="left"><p>Time in seconds that the Application Virtualization notification area will display error messages like &quot;Launch failed&quot;. Minimum value of 1. </p></td>
+<td align="left"><p>TrayErrorDelay </p></td>
+<td align="left"><p>DWORD </p></td>
+<td align="left"><p>Default=30 </p></td>
+<td align="left"><p>Time in seconds that the Application Virtualization notification area will display error messages like &quot;Launch failed&quot;. Minimum value of 1. </p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>TraySuccessDelay </p></td>
-<td align="left"><p>DWORD </p></td>
-<td align="left"><p>Default=10 </p></td>
-<td align="left"><p>Time in seconds that the appvmed notification area will display success messages like &quot;Word launched&quot; or &quot;Excel shut down&quot;. If 0, those messages will be suppressed. </p></td>
+<td align="left"><p>TraySuccessDelay </p></td>
+<td align="left"><p>DWORD </p></td>
+<td align="left"><p>Default=10 </p></td>
+<td align="left"><p>Time in seconds that the appvmed notification area will display success messages like &quot;Word launched&quot; or &quot;Excel shut down&quot;. If 0, those messages will be suppressed. </p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>TrayVisibility</p></td>
@@ -769,7 +771,7 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\CustomSett
 </tbody>
 </table>
 
- 
+
 
 ## Reporting Settings
 
@@ -785,10 +787,10 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Reporting 
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Name </th>
-<th align="left">Type </th>
-<th align="left">Data (Examples) </th>
-<th align="left">Description </th>
+<th align="left">Name </th>
+<th align="left">Type </th>
+<th align="left">Data (Examples) </th>
+<th align="left">Description </th>
 </tr>
 </thead>
 <tbody>
@@ -807,16 +809,16 @@ The HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Reporting 
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Application Virtualization Client Reference](application-virtualization-client-reference.md)
 
- 
 
- 
+
+
 
 
 

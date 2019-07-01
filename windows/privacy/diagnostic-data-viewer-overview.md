@@ -8,12 +8,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/17/2018
+ms.reviewer: 
 ---
 
 # Diagnostic Data Viewer Overview
@@ -42,6 +43,9 @@ Before you can use this tool for viewing Windows diagnostic data, you must turn 
 
 ### Download the Diagnostic Data Viewer
 Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
+
+   >[!Important]
+   >It's possible that your Windows machine may not have the Microsoft Store available (e.g. Windows Server). If this is the case, please check out [Diagnostic Data Viewer for PowerShell](https://go.microsoft.com/fwlink/?linkid=2094264).
 
 ### Start the Diagnostic Data Viewer
 You can start this app from the **Settings** panel.

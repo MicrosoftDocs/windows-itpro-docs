@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
+ms.reviewer: 
 ---
 
 # Special Identities
@@ -82,7 +83,7 @@ The special identity groups are described in the following tables:
 
 -   [This Organization](#this-organization)
 
--   [Window Manager\\Window Manager Group](#window-manager-window-manager-group)
+-   [Window Manager\\Window Manager Group](#window-managerwindow-manager-group)
 
 ## Anonymous Logon
 

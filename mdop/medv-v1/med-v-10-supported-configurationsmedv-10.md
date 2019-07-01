@@ -1,8 +1,11 @@
 ---
 title: MED-V 1.0 Supported Configurations
 description: MED-V 1.0 Supported Configurations
-author: jamiejdt
+author: dansimp
 ms.assetid: 74643de6-549e-4177-a559-6407e156ed3a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +17,14 @@ ms.date: 06/16/2016
 # MED-V 1.0 Supported Configurations
 
 
-This topic specifies the requirements necessary to install and run Microsoft Enterprise Desktop Virtualization (MED-V) 1.0 in your environment.
+This topic specifies the requirements necessary to install and run Microsoft Enterprise Desktop Virtualization (MED-V) 1.0 in your environment.
 
-## MED-V 1.0 Client System Requirements
+## MED-V 1.0 Client System Requirements
 
 
 ### MED-V Client Operating System Requirements
 
-The following table lists the operating systems that are supported for MED-V 1.0 client installation.
+The following table lists the operating systems that are supported for MED-V 1.0 client installation.
 
 <table>
 <colgroup>
@@ -40,13 +43,13 @@ The following table lists the operating systems that are supported for MED-V 1.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows XP</p></td>
+<td align="left"><p>Windows XP</p></td>
 <td align="left"><p>Professional Edition</p></td>
 <td align="left"><p>SP2 or SP3</p></td>
 <td align="left"><p>x86</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Vista</p></td>
+<td align="left"><p>Windows Vista</p></td>
 <td align="left"><p>Business, Enterprise, or Ultimate Edition</p></td>
 <td align="left"><p>SP1 or SP2</p></td>
 <td align="left"><p>x86</p></td>
@@ -54,28 +57,28 @@ The following table lists the operating systems that are supported for MED-V 1.
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 MED-V client does not run in native x64 mode. Instead, MED-V runs in Windows on Windows 64-bit (WOW64) mode on 64-bit computers.
 
- 
 
-### <a href="" id="med-v-1-0-client-configuration-"></a>MED-V 1.0 Client Configuration
+
+### <a href="" id="med-v-1-0-client-configuration-"></a>MED-V 1.0 Client Configuration
 
 **.NET Framework Version**
 
-The following versions of the Microsoft .NET Framework are supported for MED-V 1.0 client installation:
+The following versions of the Microsoft .NET Framework are supported for MED-V 1.0 client installation:
 
--   .NET Framework 2.0 or .NET Framework 2.0 SP1
+-   .NET Framework 2.0 or .NET Framework 2.0 SP1
 
--   .NET Framework 3.0 or .NET Framework 3.0 SP1
+-   .NET Framework 3.0 or .NET Framework 3.0 SP1
 
--   .NET Framework 3.5 or .NET Framework 3.5 SP1
+-   .NET Framework 3.5 or .NET Framework 3.5 SP1
 
 **Virtualization Engine**
 
-Microsoft Virtual PC 2007 SP1 with the hotfix that is described in Microsoft Knowledge Base article 974918 is supported for MED-V 1.0 client installation in the following configurations:
+Microsoft Virtual PC 2007 SP1 with the hotfix that is described in Microsoft Knowledge Base article 974918 is supported for MED-V 1.0 client installation in the following configurations:
 
 -   Static Virtual Hard Disk (VHD) file
 
@@ -85,18 +88,18 @@ Microsoft Virtual PC 2007 SP1 with the hotfix that is described in Microsoft Kn
 
 **Internet Browser**
 
-Windows Internet Explorer 7 and Windows Internet Explorer 8 are supported for MED-V 1.0 client installation.
+Windows Internet Explorer 7 and Windows Internet Explorer 8 are supported for MED-V 1.0 client installation.
 
 **Microsoft Hyper-V Server**
 
 The MED-V client is not supported in a Microsoft Hyper-V server environment.
 
-## MED-V 1.0 Workspace System Requirements
+## MED-V 1.0 Workspace System Requirements
 
 
 ### MED-V Workspace Operating System Requirements
 
-The following table lists the operating systems supported for MED-V 1.0 workspaces.
+The following table lists the operating systems supported for MED-V 1.0 workspaces.
 
 <table>
 <colgroup>
@@ -115,60 +118,59 @@ The following table lists the operating systems supported for MED-V 1.0 workspa
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
+<td align="left"><p>Windows 2000</p></td>
 <td align="left"><p>Professional</p></td>
 <td align="left"><p>SP4</p></td>
 <td align="left"><p>X86</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows XP</p></td>
+<td align="left"><p>Windows XP</p></td>
 <td align="left"><p>Professional Edition</p></td>
 <td align="left"><p>SP2 or SP3</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>SP3 is recommended to ensure that the MED-V workspace will be compatible with future versions of MED-V.</p>
+<strong>Note</strong><br/><p>SP3 is recommended to ensure that the MED-V workspace will be compatible with future versions of MED-V.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>x86</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-### <a href="" id="med-v-1-0-workspace-configuration-"></a>MED-V 1.0 Workspace Configuration
+
+### <a href="" id="med-v-1-0-workspace-configuration-"></a>MED-V 1.0 Workspace Configuration
 
 **.NET Framework Version**
 
-MED-V requires one of the following supported versions of the Microsoft .NET Framework for MED-V 1.0 workspace installation:
+MED-V requires one of the following supported versions of the Microsoft .NET Framework for MED-V 1.0 workspace installation:
 
--   .NET Framework 2.0 SP1
+-   .NET Framework 2.0 SP1
 
--   .NET Framework 3.0 SP1
+-   .NET Framework 3.0 SP1
 
--   .NET Framework 3.5 or .NET Framework 3.5 SP1
+-   .NET Framework 3.5 or .NET Framework 3.5 SP1
 
-**Note**  
-.NET Framework 3.5 SP1 is recommended to ensure that the MED-V workspace will be compatible with future versions of MED-V.
+**Note**  
+.NET Framework 3.5 SP1 is recommended to ensure that the MED-V workspace will be compatible with future versions of MED-V.
 
- 
+
 
 **Internet Browser**
 
-Windows Internet Explorer 6 SP2 and Windows Internet Explorer 7 are supported for the MED-V 1.0 workspace installation.
+Windows Internet Explorer 6 SP2 and Windows Internet Explorer 7 are supported for the MED-V 1.0 workspace installation.
 
 ### <a href="" id="med-v-workspace-images-"></a>MED-V Workspace Images
 
-MED-V workspace images must be created by using Virtual PC 2007 SP1.
+MED-V workspace images must be created by using Virtual PC 2007 SP1.
 
-## MED-V 1.0 Server System Requirements
+## MED-V 1.0 Server System Requirements
 
 
-### MED-V 1.0 Server Operating System Requirements
+### MED-V 1.0 Server Operating System Requirements
 
-The following table lists the operating systems supported for MED-V 1.0 server installations.
+The following table lists the operating systems supported for MED-V 1.0 server installations.
 
 <table>
 <colgroup>
@@ -187,7 +189,7 @@ The following table lists the operating systems supported for MED-V 1.0 server 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2008</p></td>
+<td align="left"><p>Windows Server 2008</p></td>
 <td align="left"><p>Standard or Enterprise</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>X86 or x64</p></td>
@@ -195,23 +197,23 @@ The following table lists the operating systems supported for MED-V 1.0 server 
 </tbody>
 </table>
 
- 
 
-### <a href="" id="med-v-1-0-server-configuration-"></a>MED-V 1.0 Server Configuration
+
+### <a href="" id="med-v-1-0-server-configuration-"></a>MED-V 1.0 Server Configuration
 
 **.NET Framework Version**
 
-MED-V requires one of the following supported versions of the Microsoft .NET Framework for MED-V 1.0 workspace installation:
+MED-V requires one of the following supported versions of the Microsoft .NET Framework for MED-V 1.0 workspace installation:
 
--   .NET Framework 2.0 or .NET Framework 2.0 SP1
+-   .NET Framework 2.0 or .NET Framework 2.0 SP1
 
--   .NET Framework 3.0 or .NET Framework 3.0 SP1
+-   .NET Framework 3.0 or .NET Framework 3.0 SP1
 
--   .NET Framework 3.5 or .NET Framework 3.5 SP1
+-   .NET Framework 3.5 or .NET Framework 3.5 SP1
 
 **Microsoft SQL Server Version**
 
-The following versions of Microsoft SQL Server are supported for MED-V 1.0 when SQL Server is installed locally or remotely from the MED-V 1.0 Server:
+The following versions of Microsoft SQL Server are supported for MED-V 1.0 when SQL Server is installed locally or remotely from the MED-V 1.0 Server:
 
 <table>
 <colgroup>
@@ -230,13 +232,13 @@ The following versions of Microsoft SQL Server are supported for MED-V 1.0 when 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>SQL Server 2005</p></td>
+<td align="left"><p>SQL Server 2005</p></td>
 <td align="left"><p>Express, Standard, or Enterprise Edition</p></td>
 <td align="left"><p>SP2</p></td>
 <td align="left"><p>X86 or x64</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>SQL Server 2008</p></td>
+<td align="left"><p>SQL Server 2008</p></td>
 <td align="left"><p>Express, Standard, or Enterprise</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>X86 or x64</p></td>
@@ -244,16 +246,16 @@ The following versions of Microsoft SQL Server are supported for MED-V 1.0 when 
 </tbody>
 </table>
 
- 
+
 
 **Microsoft Hyper-V Server**
 
 The MED-V server is supported in a Microsoft Hyper-V server environment.
 
-## MED-V 1.0 Globalization Information
+## MED-V 1.0 Globalization Information
 
 
-Although MED-V is not released in languages other than English, the following Windows operating system language versions are supported for the MED-V 1.0 client, workspace, and server installations:
+Although MED-V is not released in languages other than English, the following Windows operating system language versions are supported for the MED-V 1.0 client, workspace, and server installations:
 
 -   English
 
@@ -267,9 +269,9 @@ Although MED-V is not released in languages other than English, the following Wi
 
 -   Portuguese (Brazil)
 
- 
 
- 
+
+
 
 
 

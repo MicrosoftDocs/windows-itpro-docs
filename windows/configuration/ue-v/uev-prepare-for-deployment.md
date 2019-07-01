@@ -1,12 +1,15 @@
 ---
 title: Prepare a UE-V Deployment
 description: Prepare a UE-V Deployment
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -366,7 +369,7 @@ Enable this configuration using one of these methods:
 Restart the device to allow the settings to synchronize.
 
 - >**Note**
-These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
+  These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
 
 
 >**Note**
@@ -399,8 +402,8 @@ The UE-V template generator must be installed on a device that uses an NTFS file
 
 -   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V ](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V ](uev-troubleshooting.md)
+-   [Troubleshooting UE-V](uev-troubleshooting.md)
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)

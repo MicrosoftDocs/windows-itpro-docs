@@ -4,11 +4,13 @@ description: This section describes the TakeATest settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TakeATest (Windows Configuration Designer reference)
@@ -41,7 +43,7 @@ When set to True, students can print in the Take A Test app.
 
 Enter the account to use when taking a test.
 
-To specify a domain account, enter **domain\user**. To specify an AAD account, enter **username@tenant.com**. To specify a local account, enter the username. 
+To specify a domain account, enter **domain\user**. To specify an AAD account, enter <strong>username@tenant.com</strong>. To specify a local account, enter the username. 
 
 
 ## Related topics

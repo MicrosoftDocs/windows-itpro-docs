@@ -1,5 +1,6 @@
 ---
 title: Windows Hello for Business (Windows 10)
+ms.reviewer: 
 description: An overview of Windows Hello for Business 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
@@ -7,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
@@ -52,9 +53,9 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 ## The difference between Windows Hello and Windows Hello for Business
 
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it is set up, however it is not backed by asymmetric (public/private key) or certificate-based authentication. 
+- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it is set up, but can use a simple password hash depending on an individual's account type. This configuration is referred to as Windows Hello convenience PIN and it is not backed by asymmetric (public/private key) or certificate-based authentication.
 
-- Windows Hello for Business, which is configured by Group Policy or mobile device management (MDM) policy, uses key-based or certificate-based authentication.
+- **Windows Hello for Business**, which is configured by Group Policy or mobile device management (MDM) policy, always uses key-based or certificate-based authentication. This makes it much more secure than **Windows Hello convenience PIN**.
 
 
 ## Benefits of Windows Hello
@@ -92,7 +93,6 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 ## Comparing key-based and certificate-based authentication
 
 Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing certificates can continue to use PKI in combination with Windows Hello. Enterprises that do not use PKI or want to reduce the effort associated with managing certificates can rely on key-based credentials for Windows Hello but still use certificates on their domain controllers as a root of trust.
-
 
 
 ## Learn more

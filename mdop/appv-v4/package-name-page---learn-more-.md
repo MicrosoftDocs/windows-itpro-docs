@@ -1,8 +1,11 @@
 ---
 title: Package Name Page (Learn More)
 description: Package Name Page (Learn More)
-author: jamiejdt
+author: eavena
 ms.assetid: ee75b8f0-bd9d-4460-a256-016ff97c2386
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Use the **Package Name** page to specify a name for the virtual application pack
 **Note**  
 Editing the primary virtual application directory is an advanced task.
 
- 
+ 
 
 This page contains the following elements:
 
@@ -34,9 +37,9 @@ Select this option to change the location of where the virtual application will 
 
 [Create New Package Wizard (AppV 4.6 SP1)](create-new-package-wizard---appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

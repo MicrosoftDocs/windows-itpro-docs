@@ -1,8 +1,11 @@
 ---
 title: Roll Back to a Previous Version of a GPO
 description: Roll Back to a Previous Version of a GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 2a98ad8f-32cb-41eb-ab99-0318f2a55d81
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -33,7 +36,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 **Note**  
 To verify that the version that has been redeployed matches the version intended, examine a difference report for the two versions. In the **History** window for the GPO, highlight the two versions, and then right-click and select **Difference** and either **HTML Report** or **XML Report**.
 
- 
+ 
 
 ### Additional considerations
 
@@ -43,9 +46,9 @@ To verify that the version that has been redeployed matches the version intended
 
 -   [Performing Approver Tasks](performing-approver-tasks-agpm30ops.md)
 
- 
+ 
 
- 
+ 
 
 
 

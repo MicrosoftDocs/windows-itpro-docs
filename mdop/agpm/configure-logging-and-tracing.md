@@ -1,8 +1,11 @@
 ---
 title: Configure Logging and Tracing
 description: Configure Logging and Tracing
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 419231f9-e9db-4f91-a7cf-a0a73db25256
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -48,7 +51,7 @@ A user account with the AGPM Administrator (Full Control) role, the user account
 
 ### Additional considerations
 
--   You must be able to edit and deploy a GPO to confige AGPM logging and tracing. See [Editing a GPO](editing-a-gpo.md) and [Deploy a GPO](deploy-a-gpo.md) for additional detail.
+-   You must be able to edit and deploy a GPO to configure AGPM logging and tracing. See [Editing a GPO](editing-a-gpo.md) and [Deploy a GPO](deploy-a-gpo.md) for additional detail.
 
 ### Additional references
 

@@ -1,5 +1,6 @@
 ---
 title: Microsoft Defender ATP for Mac Resources
+ms.reviewer: 
 description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
-author: martyav
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,10 +22,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
-
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available, and this topic only applies to enterprise customers who have been accepted into the preview program. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 ## Collecting diagnostic information
 
@@ -63,13 +61,13 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 If an error occurs during installation, the installer will only report a general failure.
 
-The detailed log will be saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
+The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
 ## Uninstalling
 
 There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
-### Within the GUI
+### Interactive uninstallation
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
 
@@ -103,7 +101,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 In the Microsoft Defender ATP portal, you'll see two categories of information:
 
-- AV alerts, including:
+- Antivirus alerts, including:
   - Severity
   - Scan type
   - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
@@ -122,7 +120,5 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 
 ## Known issues
 
-- Not fully optimized for performance or disk space yet.
 - Full Microsoft Defender ATP integration is not available yet.
-- Mac devices that switch networks may appear multiple times in the Microsoft Defender ATP portal.
 - Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.

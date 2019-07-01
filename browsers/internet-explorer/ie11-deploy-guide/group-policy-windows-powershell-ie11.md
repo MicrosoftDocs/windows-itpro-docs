@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about how Group Policy works with Windows Powershell and Internet Explorer 11
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: e3607cde-a498-4e04-9daa-b331412967fc
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Group Policy, Windows Powershell, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -1,8 +1,11 @@
 ---
 title: App-V 4.6 SP2 Release Notes
 description: App-V 4.6 SP2 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: abb536f0-e187-4c5b-952a-f837abd10ad2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,7 +36,7 @@ We are interested in your feedback on App-V 4.6 SP2. You can send your feedbac
 **Note**  
 This email address is not a support channel, but your feedback will help us to plan future changes for our documentation and product releases.
 
- 
+ 
 
 For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
@@ -63,7 +66,7 @@ fsutil 8dot3name set Q: 0
 **Note**  
 You do not need to change this setting on the App-V client because the App-V file system properly handles short paths on Windows 8 or Windows Server 2012.
 
- 
+ 
 
 ### <a href="" id="-------------app-v-does-not-override-the-default-handler-for-file-type-or-protocol-associations-on-windows-8"></a> App-V does not override the default handler for file type or protocol associations on Windows 8
 
@@ -101,9 +104,9 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 [About Microsoft Application Virtualization 4.6 SP2](about-microsoft-application-virtualization-46-sp2.md)
 
- 
+ 
 
- 
+ 
 
 
 

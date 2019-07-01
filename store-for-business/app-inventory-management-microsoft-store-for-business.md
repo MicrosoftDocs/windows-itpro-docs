@@ -2,6 +2,8 @@
 title: App inventory management for Microsoft Store for Business and Microsoft Store for Education (Windows 10)
 description: You can manage all apps that you've acquired on your Apps & Software page.
 ms.assetid: 44211937-801B-4B85-8810-9CA055CDB1B2
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -81,7 +83,7 @@ For online-licensed apps, you can assign apps directly to people in your organiz
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
 There are other options for distributing apps:
-- **Use a management tool** - If you use a management tool that supports Microsoft Store, you can distribute apps with your management tool. Once it is configured to work with Store for Business, your managment tool will have access to all apps in your inventory. For more information, see [Distribute apps with a management tool](distribute-apps-with-management-tool.md).
+- **Use a management tool** - If you use a management tool that supports Microsoft Store, you can distribute apps with your management tool. Once it is configured to work with Store for Business, your management tool will have access to all apps in your inventory. For more information, see [Distribute apps with a management tool](distribute-apps-with-management-tool.md).
 - **Distribute from private store** - You can also add apps to your private store, and let people get them on their own. For more information, see [Distribute apps from private store](#distribute-apps-from-private-store)
 
 ## Distribute apps from private store
@@ -190,9 +192,9 @@ For more information about downloading offline-licensed apps, see [Download offl
 
 ## Manage products programmatically
 
-Microsoft Store for Business and Education provides a set of Admin management APIs. If you orgranization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
+Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
 
-You can download a preview PoweShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
+You can download a preview PowerShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
 - View items in inventory (**Apps & software**)
 - Manage licenses - assigning and removing
 - Perform bulk options using .csv files - this automates license management for customers with large numbers of licenses

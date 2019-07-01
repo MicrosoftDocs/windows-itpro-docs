@@ -9,9 +9,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: v-anbic
-ms.date: 09/03/2018
+author: dansimp
+ms.author: dansimp
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Troubleshoot Windows Defender Antivirus reporting in Update Compliance
@@ -20,7 +21,9 @@ ms.date: 09/03/2018
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
+You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
+
+When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of devices or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you might encounter problems or issues.
 
 Typically, the most common indicators of a problem are:
 - You only see a small number or subset of all the devices you were expecting to see
@@ -50,7 +53,9 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
-If the above pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.
+“You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender ATP portal (https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
+
+If the above pre-requisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
 
 > [!div class="nextstepaction"]
 > [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance.md)

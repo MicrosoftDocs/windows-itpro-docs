@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure the Adobe Flash Click-to-Run setting -->
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Load and run Adobe Flash content automatically. | |
-|Enabled or not configured<br>**(default)** |1 |1 |Do not load or run Adobe Flash content and require action from the user.  |![Most restricted value](../images/check-gn.png) |
+|                Group Policy                | MDM | Registry |                               Description                                |                 Most restricted                  |
+|--------------------------------------------|:---:|:--------:|--------------------------------------------------------------------------|:------------------------------------------------:|
+|                  Disabled                  |  0  |    0     |             Load and run Adobe Flash content automatically.              |                                                  |
+| Enabled or not configured<br>**(default)** |  1  |    1     | Do not load or run Adobe Flash content and require action from the user. | ![Most restricted value](../images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings

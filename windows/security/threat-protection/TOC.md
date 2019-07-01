@@ -72,6 +72,7 @@
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 ##### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
+#####[Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 
 #### [Secure score](microsoft-defender-atp/overview-secure-score.md)
@@ -243,6 +244,7 @@
 ####### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
    
 ##### [Microsoft Defender ATP API](microsoft-defender-atp/use-apis.md)
+###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Get started with Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ####### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ####### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
@@ -518,7 +520,7 @@
 ##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
 ##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
 ###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
-###### [How to list XML elements in <EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
+###### [How to list XML elements in \<EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -852,8 +854,8 @@
 ####### [Event 1105 S: Event log automatic backup.](auditing/event-1105.md)
 ####### [Event 1108 S: The event logging service encountered an error while processing an incoming event published from %1.](auditing/event-1108.md)
 ###### [Appendix A: Security monitoring recommendations for many audit events](auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events.md)
-###### [Registry (Global Object Access Auditing) ](auditing/registry-global-object-access-auditing.md)
-###### [File System (Global Object Access Auditing) ](auditing/file-system-global-object-access-auditing.md)
+###### [Registry (Global Object Access Auditing)](auditing/registry-global-object-access-auditing.md)
+###### [File System (Global Object Access Auditing)](auditing/file-system-global-object-access-auditing.md)
  
 
 
@@ -1036,11 +1038,11 @@
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
 #### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
-##### [Level 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
-##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
-##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
-##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
-##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
+##### [Level 1 enterprise basic security](windows-security-configuration-framework/level-1-enterprise-basic-security.md)
+##### [Level 2 enterprise enhanced security](windows-security-configuration-framework/level-2-enterprise-enhanced-security.md)
+##### [Level 3 enterprise high security](windows-security-configuration-framework/level-3-enterprise-high-security.md)
+##### [Level 4 enterprise dev/ops workstation](windows-security-configuration-framework/level-4-enterprise-devops-security.md)
+##### [Level 5 enterprise administrator workstation](windows-security-configuration-framework/level-5-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 

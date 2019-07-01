@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client Log File
 description: How to Configure the Client Log File
-author: jamiejdt
+author: dansimp
 ms.assetid: dd79f8ce-61e2-4dc8-af03-2a353554a1b2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,7 +40,7 @@ You can use the following procedures to configure the Application Virtualization
     **Caution**  
     This registry key value must be set to a value greater than zero to ensure the log file does get reset.
 
-     
+     
 
 **To change the number of backup copies**
 
@@ -90,16 +93,16 @@ You can use the following procedures to configure the Application Virtualization
     </tbody>
     </table>
 
-     
+     
 
 ## Related topics
 
 
 [How to Configure the App-V Client Registry Settings by Using the Command Line](how-to-configure-the-app-v-client-registry-settings-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

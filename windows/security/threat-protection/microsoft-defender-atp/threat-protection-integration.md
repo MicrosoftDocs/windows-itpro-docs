@@ -1,5 +1,6 @@
 ---
 title: Microsoft Defender ATP in Microsoft Threat Protection
+ms.reviewer: 
 description: Learn about the capabilities within the Microsoft Threat Protection 
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
@@ -8,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: mjcaparas
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -38,7 +39,7 @@ Each layer in the threat protection stack plays a critical role in protecting cu
 Microsoft Defender ATP provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ## Azure Information Protection
-Keep sensitive data secure while enabling productivity in the workplace through data data discovery and data protection.
+Keep sensitive data secure while enabling productivity in the workplace through data discovery and data protection.
 
 ## Conditional Access
 Microsoft Defender ATP's dynamic machine risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 

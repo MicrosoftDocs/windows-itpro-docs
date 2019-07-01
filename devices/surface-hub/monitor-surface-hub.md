@@ -2,11 +2,13 @@
 title: Monitor your Microsoft Surface Hub
 description: Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS).
 ms.assetid: 1D2ED317-DFD9-423D-B525-B16C2B9D6942
+ms.reviewer: 
+manager: dansimp
 keywords: monitor Surface Hub, Microsoft Operations Management Suite, OMS
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
@@ -136,7 +138,7 @@ You'll need the workspace ID and primary key of your OMS workspace. You can get 
 A confirmation dialog will appear telling you whether or not the OMS configuration was successfully applied to the device. If it was, the device will start sending data to OMS.
 
 ### Enroll using a provisioning package
-You can use a provisioning package to enroll your Surface Hub. For more infomation, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
+You can use a provisioning package to enroll your Surface Hub. For more information, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
  
 ### Enroll using a MDM provider
 You can enroll Surface Hub into OMS using the SurfaceHub CSP. Intune and Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. For more information, see [Manage Surface Hub settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).

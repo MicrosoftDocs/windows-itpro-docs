@@ -2,11 +2,13 @@
 title: EnterpriseAPN CSP
 description: The EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
 ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/22/2017
 ---
 
@@ -15,7 +17,7 @@ ms.date: 09/22/2017
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
 > [!Note]
-Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
+> Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
 The following image shows the EnterpriseAPN configuration service provider in tree format.
 
@@ -24,7 +26,7 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 <a href="" id="enterpriseapn"></a>**EnterpriseAPN**  
 <p style="margin-left: 20px">The root node for the EnterpriseAPN configuration service provider.</p>
 
-<a href="" id="enterpriseapn-connectionname"></a>**EnterpriseAPN/****_ConnectionName_**  
+<a href="" id="enterpriseapn-connectionname"></a>**EnterpriseAPN/**<strong>*ConnectionName*</strong>  
 <p style="margin-left: 20px">Name of the connection as seen by Windows Connection Manager.</p>
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
@@ -50,7 +52,7 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="enterpriseapn-connectionname-classid"></a>**EnterpriseAPN/*ConnectionName*/ClassId**  
-<p style="margin-left: 20px">GUID that defines the APN class to the modem. This is the same as the OEMConnectionId in CM\_CellularEntries CSP. Normally this setting is not present. It is only required when IsAttachAPN is true and the attach APN is not only used as the Internet APN.</p>
+<p style="margin-left: 20px">GUID that defines the APN class to the modem. This is the same as the OEMConnectionId in CM_CellularEntries CSP. Normally this setting is not present. It is only required when IsAttachAPN is true and the attach APN is not only used as the Internet APN.</p>
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
 
@@ -276,9 +278,9 @@ atomicZ
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

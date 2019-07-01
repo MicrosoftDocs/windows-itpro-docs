@@ -2,13 +2,14 @@
 title: Prepare your organization for BitLocker Planning and policies (Windows 10)
 description: This topic for the IT professional explains how can you plan your BitLocker deployment.
 ms.assetid: 6e3593b5-4e8a-40ac-808a-3fdbc948059d
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -71,7 +72,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.|
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
- 
+ 
 ### BitLocker authentication methods
 
 | Authentication method | Requires user interaction | Description |
@@ -81,7 +82,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
 | TPM + startup key| Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
 | Startup key only | Yes| The user is prompted to insert the USB flash drive that holds the recovery key and/or startup key and reboot the computer.|
- 
+ 
 **Will you support computers without TPM version 1.2 or higher?**
 
 Determine whether you will support computers that do not have a TPM version 1.2 or higher in your environment. If you choose to support BitLocker on this type of computer, a user must use a USB startup key to boot the system. This requires additional support processes similar to multifactor authentication.
@@ -184,7 +185,7 @@ The following recovery data is saved for each computer object:
 Functionality introduced in Windows Server 2012 R2 and Windows 8.1, allows BitLocker to be fully functional in FIPS mode.
 
 >**Note:**  The United States Federal Information Processing Standard (FIPS) defines security and interoperability requirements for computer systems that are used by the U.S. federal government. The FIPS 140 standard defines approved cryptographic algorithms. The FIPS 140 standard also sets forth requirements for key generation and for key management. The National Institute of Standards and Technology (NIST) uses the Cryptographic Module Validation Program (CMVP) to determine whether a particular implementation of a cryptographic algorithm is compliant with the FIPS 140 standard. An implementation of a cryptographic algorithm is considered FIPS 140-compliant only if it has been submitted for and has passed NIST validation. An algorithm that has not been submitted cannot be considered FIPS-compliant even if the implementation produces identical data as a validated implementation of the same algorithm. 
- 
+ 
 Prior to these supported versions of Windows, when Windows was in FIPS mode, BitLocker prevented the creation or use of recovery passwords and instead forced the user to use recovery keys. For more information about these issues, see the support article [kb947249](https://support.microsoft.com/kb/947249).
 
 But on computers running these supported systems with BitLocker enabled:

@@ -26,7 +26,7 @@ The Microsoft Defender ATP service has a wide breadth of visibility on multiple 
 
 To address this challenge, Microsoft Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
 
-The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
+The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated.
 
 ## Understand the Automated investigation flow
 
@@ -43,6 +43,7 @@ Entities are the starting point for Automated investigations. When an alert cont
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
 ### Details of an Automated investigation
+
 As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 In the **Alerts** tab, you'll see the alert that started the investigation. 
@@ -55,7 +56,7 @@ During an Automated investigation, details about each analyzed entity is categor
 
 The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
 
-If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions.
+If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediaton actions. It also acts as an audit trail for all Automated investigation actions. 
 
 ### How an Automated investigation expands its scope
 
@@ -64,11 +65,12 @@ While an investigation is running, any other alert generated from the machine wi
 If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
+
 Depending on how you set up the machine groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
-Automation level | Description 
+Automation level | Description
 :---|:---
 Not protected | Machines will not get any automated investigations run on them.
 Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. 
@@ -84,9 +86,3 @@ When a pending action is approved, the entity is then remediated and this new st
 
 ## Related topic
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
-
-
-
-
-
-

@@ -160,39 +160,11 @@ This tab is only displayed when an investigation is complete and shows all pendi
 ## Pending actions
 If there are pending actions on an Automated investigation, you'll see a pop up similar to the following image. 
 
-![Image of pending actions](images\pending-actions.png)
+![Image of pending actions](images/pending-actions.png)
 
-When you click on the pending actions link, you'll be taken to the pending actions page. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Pending actions**.
+When you click on the pending actions link, you'll be taken to the Action center. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Action center**. For more information, see [Action center](auto-investigation-action-center.md).
 
  
-The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
-
-![Image of pending actions page](images/atp-pending-actions-list.png)
-
-Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
-
-From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
-
-Pending actions are grouped together in the following tabs:
--  Quarantine file
--  Remove persistence
--  Stop process
--  Expand pivot
--  Quarantine service
-
->[!NOTE]
->The tab will only appear if there are pending actions for that category.
-
-### Approve or reject an action
-You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
-
-Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
-
-![Image of pending action selected](images/atp-pending-actions-file.png)
-
-From the panel, you can click on the Open investigation page link to see the investigation details.
-
-You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
-
 ## Related topic
 - [Investigate Microsoft Defender ATP alerts](investigate-alerts.md)
+- [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)

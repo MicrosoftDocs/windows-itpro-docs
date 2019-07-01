@@ -2,12 +2,14 @@
 title: Server Isolation Policy Design (Windows 10)
 description: Server Isolation Policy Design
 ms.assetid: f93f65cd-b863-461e-ab5d-a620fd962c9a
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,4 +59,4 @@ For more info about this design:
 
 -   For a list of tasks that you can use to deploy your server isolation policy design, see [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md).
 
-**Next: **[Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
+**Next:** [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)

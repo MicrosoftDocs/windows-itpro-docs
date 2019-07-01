@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Authentication
 description: Policy CSP - Authentication
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Authentication
@@ -352,7 +354,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -413,7 +415,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
 
@@ -507,8 +509,8 @@ Value type is string.
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-<!--EndHoloLensBusiness-->
-<hr/>
+  <!--EndHoloLensBusiness-->
+  <hr/>
 
 Footnotes:
 

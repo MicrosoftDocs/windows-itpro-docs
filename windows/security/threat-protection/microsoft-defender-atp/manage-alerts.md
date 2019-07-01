@@ -68,13 +68,13 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2.  Select **Create a suppression rule**.
 
-    You can create a suppression rule based on the following attributes:
+    You can create a suppression condition using these attributes. An AND operator is applied between each condition, so suppression occurs only if all conditions are met.
     
-    * File hash 
-    * File name - wild card supported
-    * File path - wild card supported
-    * IP
-    * URL - wild card supported
+    * File SHA1
+    * File name - wildcard supported
+    * Folder path - wildcard supported
+    * IP address
+    * URL - wildcard supported
 
 3. Select the **Trigerring IOC**.
     
@@ -116,7 +116,7 @@ Added comments instantly appear on the pane.
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules.md)
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)

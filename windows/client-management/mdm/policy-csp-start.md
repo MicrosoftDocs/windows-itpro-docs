@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Start
 description: Policy CSP - Start
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/14/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Start

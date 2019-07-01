@@ -2,11 +2,14 @@
 title: Install a Product Key (Windows 10)
 description: Install a Product Key
 ms.assetid: 78812c87-2208-4f8b-9c2c-5a8a18b2d648
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -38,5 +41,5 @@ You can use the Volume Activation Management Tool (VAMT) to install retail, Mult
 ## Related topics
 
 - [Manage Product Keys](manage-product-keys-vamt.md)
- 
- 
+ 
+ 

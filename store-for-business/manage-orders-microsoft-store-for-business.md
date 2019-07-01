@@ -1,6 +1,6 @@
 ---
 title: Manage app orders in Microsoft Store for Business or Microsoft Store for Education (Windows 10)
-description: You can view your order history with Micrsoft Store for Business or Micrsoft Store for Education.
+description: You can view your order history with Microsoft Store for Business or Microsoft Store for Education.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,6 +10,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/10/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage app orders in Microsoft Store for Business and Education

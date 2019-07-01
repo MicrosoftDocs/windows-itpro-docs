@@ -2,12 +2,14 @@
 title: Planning Settings for a Basic Firewall Policy (Windows 10)
 description: Planning Settings for a Basic Firewall Policy
 ms.assetid: 4c90df5a-3cbc-4b85-924b-537c2422d735
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -53,4 +55,4 @@ The following is a list of the firewall settings that you might consider for inc
 
 -   **Outbound rules**. Only create outbound rules to block network traffic that must be prevented in all cases. If your organization prohibits the use of certain network programs, you can support that policy by blocking the known network traffic used by the program. Be sure to test the restrictions before you deploy them to avoid interfering with traffic for needed and authorized programs.
 
-**Next: **[Planning Domain Isolation Zones](planning-domain-isolation-zones.md)
+**Next:** [Planning Domain Isolation Zones](planning-domain-isolation-zones.md)

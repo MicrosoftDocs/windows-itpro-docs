@@ -2,12 +2,13 @@
 title: Understanding PCR banks on TPM 2.0 devices (Windows 10)
 description: This topic for the IT professional provides background about what happens when you switch PCR banks on TPM 2.0 devices. 
 ms.assetid: 743FCCCB-99A9-4636-8F48-9ECB3A3D10DE
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: andreabichsel
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -42,7 +43,7 @@ It is important to note that this binding to PCR values also includes the hashin
 
 ## What happens when PCR banks are switched?
 
-When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. For the same input, each hash algorithm will return a different cryptographic signature for the same inputs.
+When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm will return a different cryptographic signature for the same inputs.
 
 As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR banks to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows 10 will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
 

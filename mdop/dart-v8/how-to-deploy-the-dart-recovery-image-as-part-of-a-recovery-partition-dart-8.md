@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the DaRT Recovery Image as Part of a Recovery Partition
 description: How to Deploy the DaRT Recovery Image as Part of a Recovery Partition
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 07c5d539-51d9-4759-adc7-72b40d5d7bb3
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -31,7 +34,7 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
         **Note**  
         If you burned a CD, DVD, or USB of the recovery image, you can open the files on the removable media and copy the boot.wim file from the \\sources folder. If you copy boot.wim file, you don’t need to mount the image.
 
-         
+         
 
 3.  Use the boot.wim file to create a bootable recovery partition by using your company’s standard method for creating a custom Windows RE image.
 
@@ -50,9 +53,9 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
 
 [Planning for DaRT 8.0](planning-for-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

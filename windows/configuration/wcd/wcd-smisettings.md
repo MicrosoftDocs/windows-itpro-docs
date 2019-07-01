@@ -4,11 +4,13 @@ description: This section describes the SMISettings settings that you can config
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 03/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # SMISettings (Windows Configuration Designer reference)
@@ -100,7 +102,7 @@ Use ShellLauncher to specify the application or executable to use as the default
 
 You can also configure ShellLauncher to launch different shell applications for different users or user groups.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >You may specify any executable file to be the default shell except C:\Windows\System32\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after a user signs in.
 >
 >You cannot use ShellLauncher to launch a Windows app as a custom shell. However, you can use Windows 10 application launcher to launch a Windows app at startup.

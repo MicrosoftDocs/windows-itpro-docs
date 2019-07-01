@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: lenewsad
-ms.author: lanewsad
+author: mjcaparas
+ms.author: macapara
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use the Set up School PCs app  
@@ -87,8 +89,8 @@ We recommend that you:
 * Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses will allow you to set up many devices simultaneously.  
 * Configure your IP addresses to expire after a short time--about 30 minutes. IP addresses will free up quickly so you can continue to set up devices without network issues.    
 
->> [!WARNING]
-> Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
+> > [!WARNING]
+> > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
 
 ### Use an additional USB drive  
 To set up more than one PC at the same time, save the provisioning package to additional USB drives. Then plug the USBs in at the same time during setup. 
@@ -206,7 +208,7 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 
     ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/1810_SUSPC_Take_Test.png)   
 
-2. Select from the advanced settings. Available settings inclue:  
+2. Select from the advanced settings. Available settings include:  
     * Allow keyboard auto-suggestions: Allows app to suggest words as the student types on the PC's keyboard.  
     * Allow teachers to monitor online tests: Enables screen capture in the Take a Test app.  
 3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  

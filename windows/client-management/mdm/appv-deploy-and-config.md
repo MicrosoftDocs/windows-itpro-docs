@@ -1,12 +1,14 @@
 ---
 title: Deploy and configure App-V apps using MDM
 description: Deploy and configure App-V apps using MDM
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Deploy and configure App-V apps using MDM
@@ -95,7 +97,7 @@ ms.date: 06/26/2017
 
 <p>This example shows how to enable App-V on the device.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -115,7 +117,7 @@ ms.date: 06/26/2017
 
 <p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish).  Allowing package scripts assists in package deployments (add and publish of App-V apps).</p>
 
-``` syntax
+```xml
 <Replace> 
 	<CmdID>$CmdID$</CmdID> 
 	<Item> 
@@ -139,7 +141,7 @@ ms.date: 06/26/2017
 
 <p>This SyncML example shows how to publish a package globally on an MDM enrolled device for all device users.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -181,7 +183,7 @@ ms.date: 06/26/2017
 
 <p>This SyncML example shows how to publish a package globally, with a policy that adds two shortcuts for the package, on an MDM enrolled device.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -275,7 +277,7 @@ ms.date: 06/26/2017
 
 <p>This SyncML example shows how to publish a package for a specific MDM user.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -318,7 +320,7 @@ ms.date: 06/26/2017
 > [!NOTE]
 > The user connection group has the user-only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -395,7 +397,7 @@ ms.date: 06/26/2017
 
 <p>This SyncML example shows how to unpublish all global packages on the device by sending an empty package and connection group list in the SyncML.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -431,7 +433,7 @@ ms.date: 06/26/2017
 
 <p>These SyncML examples return all global, and user-published packages on the device.</p>
 
-``` syntax
+```xml
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -442,7 +444,7 @@ ms.date: 06/26/2017
 </Get>
 ```
 
-``` syntax
+```xml
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>

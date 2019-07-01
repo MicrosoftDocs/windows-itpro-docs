@@ -1,12 +1,14 @@
 ---
 title: eUICCs CSP
 description: eUICCs CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # eUICCs CSP

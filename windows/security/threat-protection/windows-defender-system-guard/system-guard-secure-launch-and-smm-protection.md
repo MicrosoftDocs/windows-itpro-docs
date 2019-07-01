@@ -7,8 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 ms.date: 03/01/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # System Guard Secure Launch and SMM protection
@@ -58,7 +61,7 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 ![Windows Security Center](images/secure-launch-msinfo.png)
 
 >[!NOTE]
->To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control), [Credential Guard](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-requirements), and [Virtualization Based Security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
+>To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control), [Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-requirements), and [Virtualization Based Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
 
 ## Requirements Met by System Guard Enabled Machines
 Any machine with System Guard enabled will automatically meet the following low-level hardware requirements:

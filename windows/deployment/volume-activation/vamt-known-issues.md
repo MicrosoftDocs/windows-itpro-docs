@@ -2,11 +2,14 @@
 title: VAMT Known Issues (Windows 10)
 description: VAMT Known Issues
 ms.assetid: 8992f1f3-830a-4ce7-a248-f3a6377ab77f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

@@ -5,11 +5,13 @@ keywords: ["shared pc mode"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Set up a shared or guest PC with Windows 10
@@ -24,16 +26,16 @@ Windows 10, version 1607, introduced *shared PC mode*, which optimizes Windows 1
 > [!NOTE]
 > If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
-##Shared PC mode concepts
+## Shared PC mode concepts
 A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
 
-###Account models
+### Account models
 It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Guest** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used. Windows 10, version 1703, introduces a **kiosk mode** account. Shared PC mode can be configured to enable a **Kiosk** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used to run a specified app in assigned access (kiosk) mode.
 
-###Account management
+### Account management
 When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion applies to Active Directory, Azure Active Directory, and local accounts that are created by the **Guest** and **Kiosk** options. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low. In Windows 10, version 1703, an inactive option is added which deletes accounts if they haven't signed in after a specified number of days.
 
-###Maintenance and sleep
+### Maintenance and sleep
 Shared PC mode is configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not is use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing **SetPowerPolicies** in the list of shared PC options. Additionally, on devices without Advanced Configuration and Power Interface (ACPI) wake alarms, shared PC mode will always override real-time clock (RTC) wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
 
 While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates.  
@@ -46,7 +48,7 @@ Use one of the following methods to configure Windows Update:
 
 [Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_AllowAutoUpdate)
 
-###App behavior
+### App behavior
 
 Apps can take advantage of shared PC mode with the following three APIs:  
 
@@ -55,7 +57,7 @@ Apps can take advantage of shared PC mode with the following three APIs:
 - [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
  
 
-###Customization
+### Customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
 
 | Setting | Value |
@@ -79,7 +81,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 [Policies: Authentication](wcd/wcd-policies.md#authentication) (optional related setting) | Enables a quick first sign-in experience for a user by automatically connecting new non-admin Azure AD accounts to the pre-configured candidate local accounts.
 
 
-##Configuring shared PC mode on Windows
+## Configuring shared PC mode on Windows
 You can configure Windows to be in shared PC mode in a couple different ways:
 - Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx). Your MDM policy can contain any of the options listed in the [Customization](#customization) section. The following image shows a Microsoft Intune policy with the shared PC options added as OMA-URI settings. [Learn more about Windows 10 policy settings in Microsoft Intune.](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 
@@ -116,36 +118,36 @@ Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
 
 1. [Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md)
 
-1.  Open Windows Configuration Designer. 
-2. On the **Start page**, select **Advanced provisioning**.
-3. Enter a name and (optionally) a description for the project, and click **Next**.
-4. Select **All Windows desktop editions**, and click **Next**.
-5. Click **Finish**. Your project opens in Windows Configuration Designer.
-6. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
-7. On the **File** menu, select **Save.**
-8.  On the **Export** menu, select **Provisioning package**.
-9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-10. Set a value for **Package Version**.
+2. Open Windows Configuration Designer. 
+3. On the **Start page**, select **Advanced provisioning**.
+4. Enter a name and (optionally) a description for the project, and click **Next**.
+5. Select **All Windows desktop editions**, and click **Next**.
+6. Click **Finish**. Your project opens in Windows Configuration Designer.
+7. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
+8. On the **File** menu, select **Save.**
+9. On the **Export** menu, select **Provisioning package**.
+10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+11. Set a value for **Package Version**.
     > [!TIP]
     > You can make changes to existing packages and change the version number to update previously applied packages.
-  
-11. (*Optional*) In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-    -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+  
+12. (*Optional*) In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
+    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
     
-       > [!IMPORTANT]  
-       > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
-        
-12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
+      > [!IMPORTANT]
+      > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
+        
+13. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
     Optionally, you can click **Browse** to change the default output location.
-13. Click **Next**.
-14. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
+14. Click **Next**.
+15. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
     If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+16. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-16. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
+17. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
 
     -   Shared network folder
 
@@ -166,11 +168,11 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
 2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
-    - If there is only one provisioning package on the USB drive, the provisioning package is applied.
+   - If there is only one provisioning package on the USB drive, the provisioning package is applied.
     
-    - If there is more than one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**, and select the provisioning package that you want to install. 
+   - If there is more than one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**, and select the provisioning package that you want to install. 
 
-    ![Set up device?](images/setupmsg.jpg)
+     ![Set up device?](images/setupmsg.jpg)
 
 3. Complete the setup process.
 
@@ -187,7 +189,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ## Guidance for accounts on shared PCs
 
 * We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
-* When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account managment happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
+* When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
 * On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
@@ -222,34 +224,34 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 
 <tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set?</p></th></tr> </thead>
 <tbody>
-<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td></tr> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>Control Panel</strong> &gt; <strong>Personalization</strong></p></td></tr> 
 <tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td></tr> 
 <tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td></tr> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Power Management</strong> &gt; <strong>Button Settings</strong></p></td></tr> 
 <tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr><td><p>Select the Power button action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr><td><p>Select the Sleep button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr><td><p>Select the lid switch action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td></tr> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Power Management</strong> &gt; <strong>Sleep Settings</strong></p></td></tr> 
 <tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td></tr> 
 <tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td></tr>
-<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p>*SleepTimeout*</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>*SleepTimeout*</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
+<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p><em>SleepTimeout</em></p></td><td><p>SetPowerPolicies=True</p></td></tr> 
+<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p><em>SleepTimeout</em></p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Turn off hybrid sleep (plugged in)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Turn off hybrid sleep (on battery)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the unattended sleep timeout (plugged in)</p></td> <td> <p>*SleepTimeout*</p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the unattended sleep timeout (on battery)</p></td> <td> <p>*SleepTimeout*</p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
+<tr> <td> <p>Specify the unattended sleep timeout (plugged in)</p></td> <td> <p><em>SleepTimeout</em></p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
+<tr> <td> <p>Specify the unattended sleep timeout (on battery)</p></td> <td> <p><em>SleepTimeout</em></p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Allow standby states (S1-S3) when sleeping (plugged in)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Allow standby states (S1-S3) when sleeping (on battery)</p></td> <td> <p>Enabled</p></td> <td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Specify the system hibernate timeout (plugged in)</p></td> <td> <p>Enabled, 0</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
 <tr> <td> <p>Specify the system hibernate timeout (on battery)</p></td> <td> <p>Enabled, 0</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong></p></td></tr> 
-<tr> <td> <p>Turn off the display (plugged in)</p></td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td></tr>
- <tr> <td> <p>Turn off the display (on battery</p></td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td></tr> 
- <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Energy Saver Settings</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Video and Display Settings</strong></p></td></tr> 
+<tr> <td> <p>Turn off the display (plugged in)</p></td> <td> <p><em>SleepTimeout</em></p> </td></td><td><p>SetPowerPolicies=True</p></td></tr>
+ <tr> <td> <p>Turn off the display (on battery</p></td> <td> <p><em>SleepTimeout</em></p> </td></td><td><p>SetPowerPolicies=True</p></td></tr> 
+ <tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Energy Saver Settings</strong></p></td></tr> 
  <tr><td>Energy Saver Battery Threshold (on battery)</td><td>70</td><td>SetPowerPolicies=True</td></tr>
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Logon</strong></p></td></tr> 
 <tr> <td> <p>Show first sign-in animation</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Hide entry points for Fast User Switching</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Turn on convenience PIN sign-in</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
@@ -258,35 +260,35 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 <tr> <td> <p>Allow users to select when a password is required when resuming from connected standby</p></td> <td> <p>Disabled</p></td><td><p>SignInOnResume=True</p></td>
 </tr> 
 <tr> <td> <p>Block user from showing account details on sign-in</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>User Profiles</strong></p></td></tr> 
 <tr> <td> <p>Turn off the advertising ID</p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components </strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components </strong></p></td></tr> 
 <tr> <td> <p>Do not show Windows Tips </p> </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td> <p>Turn off Microsoft consumer experiences </p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td> <p>Microsoft Passport for Work</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Biometrics</strong></p></td></tr> 
 <tr> <td> <p>Allow the use of biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Allow users to log on using biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Allow domain users to log on using biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Data Collection and Preview Builds</strong></p></td></tr> 
 <tr> <td> <p>Toggle user control over Insider builds</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Disable pre-release features or settings</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Do not show feedback notifications</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
 <tr><td>Allow Telemetry</td><td>Basic, 0</td><td>SetEduPolicies=True</td></tr>
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>File Explorer</strong></p></td></tr> 
 <tr> <td> <p>Show lock in the user tile menu</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong></p></td></tr> 
-<tr> <td> <p>Automatic Maintenance Activation Boundary</p></td> <td> <p>*MaintenanceStartTime*</p></td><td><p>Always</p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Maintenance Scheduler</strong></p></td></tr> 
+<tr> <td> <p>Automatic Maintenance Activation Boundary</p></td> <td> <p><em>MaintenanceStartTime</em></p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Automatic Maintenance Random Delay</p></td> <td> <p>Enabled, 2 hours</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Automatic Maintenance WakeUp Policy</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Windows Hello for Business</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Windows Hello for Business</strong></p></td></tr> 
 <tr> <td> <p>Use phone sign-in</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Use Windows Hello for Business</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Use biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>OneDrive</strong></p></td></tr> 
+<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>OneDrive</strong></p></td></tr> 
 <tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong></p></td> 
+<tr> <td colspan="3"> <p><strong>Windows Settings</strong>&gt;<strong>Security Settings</strong>&gt;<strong>Local Policies</strong>&gt;<strong>Security Options</strong></p></td> 
 </tr>
 <tr> <td> <p>Interactive logon: Do not display last user name</p> </td> <td> <p>Enabled, Disabled when account model is only guest</p> </td><td><p>Always</p></td></tr>
 <tr> <td> <p>Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p>Disabled</p> </td> <td><p>Always</p></td> 
@@ -300,7 +302,7 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 
 
 
- 
+ 
 
 
 
