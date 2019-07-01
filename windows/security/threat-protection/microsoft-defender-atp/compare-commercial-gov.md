@@ -26,7 +26,7 @@ Microsoft Defender ATP for government uses the same underlying technologies as c
 
 
 ## Endpoint versions
-The following OS versions are available:
+The following OS versions are supported:
 
 - Windows 10, version 1903 
 - Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
@@ -37,7 +37,7 @@ The following OS versions are available:
 >[!NOTE]
 >If patches are not implemented after the machine onboarding, some Microsoft Defender ATP telemetry might be sent to the Microsoft Defender ATP Commercial Cloud.
 
-The following OS versions are not available:
+The following OS versions are not supported:
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
