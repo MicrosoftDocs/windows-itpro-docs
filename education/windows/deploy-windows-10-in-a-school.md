@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
-ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -587,7 +586,7 @@ Now that you have created your Microsoft Store for Business portal, you’re rea
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](../../store-for-business/app-inventory-management-microsoft-store-for-business.md).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business). 
 
 ### Summary
 
