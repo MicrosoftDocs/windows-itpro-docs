@@ -23,7 +23,7 @@ ms.topic: conceptual
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac is likely to lead to performance problems and unpredictable side effects.
 
 ## What’s new in the latest release
 
@@ -43,7 +43,7 @@ If you have any feedback that you would like to share, submit it by opening Micr
 ### System requirements
 
 > [!CAUTION]
-> The three most recent released versions of macOS are supported. Beta versions of macOS are not supported.
+> The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
 
 - Supported macOS versions: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space: 650 MB

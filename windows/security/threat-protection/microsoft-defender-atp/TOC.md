@@ -3,6 +3,7 @@
 ## [Overview](overview.md)
 ### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
+#### [Exposure score](tvm-exposure-score.md)
 #### [Configuration score](configuration-score.md)
 #### [Security recommendation](tvm-security-recommendation.md)
 #### [Remediation](tvm-remediation.md)

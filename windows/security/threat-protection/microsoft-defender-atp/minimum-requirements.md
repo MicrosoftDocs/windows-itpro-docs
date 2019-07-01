@@ -45,6 +45,16 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
 
+## Browser requirements
+Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
+- Microsoft Edge
+- Internet Explorer version 11
+- Google Chrome  
+
+>[!NOTE]
+>While other browsers might work, the mentioned browsers are the ones supported.
+
+
 ## Hardware and software requirements
 ### Supported Windows versions
 - Windows 7 SP1 Enterprise
@@ -144,6 +154,9 @@ The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB t
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md) .
 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+
+
+
 
 
 ## Windows Defender Antivirus configuration requirement
