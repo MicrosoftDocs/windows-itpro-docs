@@ -18,8 +18,8 @@ The DiagnosticLog CSP is used for generating and collecting diagnostic informati
 
 DiagnosticLog CSP supports the following type of event tracing:
 
--   Collector-based tracing
--   Channel-based tracing
+- Collector-based tracing
+- Channel-based tracing
 
 ### Collector-based tracing
 
