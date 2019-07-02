@@ -65,7 +65,7 @@ To lower down your threat and vulnerability exposure:
    > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
    > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![Threat insight](images/tvm_bug_icon.png) icon and possible active alert ![Possible active alert](images/tvm_alert_icon.png) icon.  
    
-2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. A flyout panel opens with the description of what you need to remediate, number of vulnerability, associated exploits in what machines, number of exposed machines and their machine names, business impact, and list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
+2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. When you select a recommendation from the list, a fly-out panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout panel with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
 
@@ -83,14 +83,14 @@ You can improve your security configuration when you remediate issues from the s
 
 1. From the Configuration score widget, select **Security controls**. The **Security recommendations** page opens and shows the list of issues related to security controls.
 
-   >>![Configuration score widget](images/tvm_config_score.png)
+   >![Configuration score widget](images/tvm_config_score.png)
 
-2. Select the first item on the list. The flyout panel opens with the description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
+2. Select the first item on the list. The flyout panel will open with a description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
    ![Security controls related security recommendations](images/tvm_security_controls.png)
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
 
-   >>![Request remediation](images/tvm_request_remediation.png). 
+   >![Request remediation](images/tvm_request_remediation.png). 
 
    >You will see a confirmation message that the remediation task has been created.
    >![Remediation task creation confirmation](images/tvm_remediation_task_created.png)

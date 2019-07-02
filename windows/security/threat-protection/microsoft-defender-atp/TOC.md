@@ -70,9 +70,6 @@
 ###### [Remove file from blocked list](respond-file-alerts.md#remove-file-from-blocked-list)
 ###### [Check activity details in Action center](respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Deep analysis](respond-file-alerts.md#deep-analysis)
-###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
-###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
-###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
 
 
 ##### [Investigate entities using Live response](live-response.md)

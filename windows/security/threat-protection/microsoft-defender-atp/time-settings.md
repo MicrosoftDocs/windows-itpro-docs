@@ -35,7 +35,9 @@ Cyberforensic investigations often rely on time stamps to piece together the seq
 
 Microsoft Defender ATP can display either Coordinated Universal Time (UTC) or local time.
 
-Your current time zone setting is shown in the Microsoft Defender ATP menu. You can change the displayed time zone in the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
+Your current time zone setting is shown in the Microsoft Defender ATP menu. You can change the displayed time zone in the **Time zone** menu.
+
+![Time zone settings icon](images/atp-time-zone-menu.png).
 
 ### UTC time zone
 Microsoft Defender ATP uses UTC time by default.
@@ -56,7 +58,7 @@ To set the time zone:
 
 1.	Click the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
 2.	Select the **Timezone UTC** indicator.
-3.	Select **Timezone UTC** or your local time zone, for example -7:00. 
+3.	Select **Timezone UTC** or your local time zone, for example -7:00.
 
 ### Regional settings
 To apply different date formats for Microsoft Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
