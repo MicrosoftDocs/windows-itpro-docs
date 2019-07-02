@@ -70,9 +70,6 @@
 ###### [Remove file from blocked list](respond-file-alerts.md#remove-file-from-blocked-list)
 ###### [Check activity details in Action center](respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Deep analysis](respond-file-alerts.md#deep-analysis)
-###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
-###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
-###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
 
 
 ##### [Investigate entities using Live response](live-response.md)
@@ -355,6 +352,11 @@
 
 #### Interoperability
 ##### [Partner applications](partner-applications.md)
+
+#### [Manage machine configuration](configure-machines.md)
+##### [Monitor and increase machine onboarding](configure-machines-onboarding.md)
+##### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
+##### [Optimize ASR rule deployment and detections](configure-machines-asr.md)
 
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac.md)
