@@ -26,14 +26,13 @@ The [Microsoft Component Object Model (COM)](https://docs.microsoft.com/windows/
 
 Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
-NOTE: To add this functionality to other versions of windows 10 you can install the following or later updates:
+**NOTE**: To add this functionality to other versions of Windows 10, you can install the following or later updates:
 
-- Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592) (https://internal.support.services.microsoft.com/en-us/help/4501371/windows-10-update-kb4501371)
-- windows 10, 1803 June 18, 2019—KB4503288 (OS Build 17134.858) (https://internal.support.services.microsoft.com/en-us/help/4503288/windows-10-update-kb4503288)
-- Windows 10, 1709 June 18, 2019—KB4503281 (OS Build 16299.1237) (https://internal.support.services.microsoft.com/en-us/help/4503281/windows-10-update-kb4503281) 
-- windows 10, 1703 June 18, 2019—KB4503289 (OS Build 15063.1897) (https://internal.support.services.microsoft.com/en-us/help/4503289/windows-10-update-kb4503289
-- Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053) (https://internal.support.services.microsoft.com/en-us/help/4503294/windows-10-update-kb4503294)
-
+- Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592) (https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
+- Windows 10, 1803 June 18, 2019—KB4503288 (OS Build 17134.858) (https://support.microsoft.com/help/4503288/windows-10-update-kb4503288)
+- Windows 10, 1709 June 18, 2019—KB4503281 (OS Build 16299.1237) (https://support.microsoft.com/help/4503281/windows-10-update-kb4503281) 
+- Windows 10, 1703 June 18, 2019—KB4503289 (OS Build 15063.1897) (https://support.microsoft.com/help/4503289/windows-10-update-kb4503289
+- Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053) (https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
 
 ### Get COM object GUID
 
