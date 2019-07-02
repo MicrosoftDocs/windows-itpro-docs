@@ -56,7 +56,7 @@ ms.prod: w10
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deployment Guidance</h3>
-                                                    <p>Learn the easiest way to deploy M365 Education in your school.  Set up a cloud infrastructure, deploy apps, and configure and manage Windows 10 devices.</p>
+                                                    <p>Dive right into the step-by-step process for the easiest deployment path to M365 EDU. We walk you through setting up cloud infrastructure, configuring and managing devices, and migrating on-premise servers for Sharepoint and Exchange to the cloud.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@ ms.prod: w10
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-atft" target="_blank">
+                                <a href="/microsoft-365/education/deploy/post-deployment-next-steps" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -115,7 +115,7 @@ ms.prod: w10
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>3. Post Deployment Next Steps</h3>
-                                                    <p>Enable hybrid Exchange Server and SharePoint Exchange deployments and configure settings on Admin portals.</p>
+                                                    <p>Migrate to Sharepoint Server Hybrid or Sharepoint Online, and Exchange Server Hybrid or Exchange Online. Configure settings in your Admin portals.</p>
                                                 </div>
                                             </div>
                                         </div>
