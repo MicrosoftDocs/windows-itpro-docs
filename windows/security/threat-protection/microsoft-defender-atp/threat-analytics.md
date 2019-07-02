@@ -36,9 +36,9 @@ Each threat report provides a summary to describe details such as where the thre
 The dashboard shows the impact in your organization through the following tiles:
 - Machines with alerts - shows the current distinct number of impacted machines in your organization 
 - Machines with alerts over time - shows the distinct number of impacted over time
-- Mitigation recommendations - lists the measurable mitigations and the number of machines that do not have each of the mitigations in place 
 - Mitigation status - shows the number of mitigated and unmitigated machines. Machines are considered mitigated if they have all the measurable mitigations in place.
-- Mitigation status over time - shows the distinct number of machines that have been mitigated, unmitigated, and unavailable over time
+- Vulnerability patching status - lists any vulnerabilities associated with the threat, and if they have been patched
+- Mitigation recommendations - lists the measurable mitigations and the number of machines that do not have each of the mitigations in place 
 
 ![Image of a threat analytics report](images/ta.png)
 
@@ -62,5 +62,3 @@ The **Mitigation status** and **Mitigation status over time** shows the endpoint
 
 >[!NOTE]
 >The Unavailable category indicates that there is no data available from the specific machine yet. 
-
-

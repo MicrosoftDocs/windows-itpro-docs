@@ -116,13 +116,6 @@ The tile shows you a list of user accounts with the most active alerts and the n
 
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user.md).
 
-## Suspicious activities
-This tile shows audit events based on detections from various security components.
-
-![Suspicous activities tile](images/atp-suspicious-activities-tile.png)
-
-
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
@@ -130,4 +123,3 @@ This tile shows audit events based on detections from various security component
 - [Portal overview](portal-overview.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
-

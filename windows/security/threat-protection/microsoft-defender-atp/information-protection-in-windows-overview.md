@@ -53,7 +53,7 @@ Default sensitive information types include information such as bank account num
 Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type).
 
 
-When a file is created or edited on a  Windows device, Windows Defender ATP scans the content to evaluate if it contains sensitive information. 
+When a file is created or edited on a  Windows device, Microsoft Defender ATP scans the content to evaluate if it contains sensitive information. 
 
 Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Microsoft Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
