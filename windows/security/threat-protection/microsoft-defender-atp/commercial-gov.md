@@ -1,7 +1,7 @@
 ---
-title: Compare commercial and government Microsoft Defender ATP
-description:
-keywords: 
+title: Microsoft Defender ATP in Azure Government
+description: Learn about the requirements and the available Microsoft Defender ATP capabilities in Azure Government
+keywords: government, requirements, capabilities, azure, defender, defender atp, mdatp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender ATP for government uses the same underlying technologies as commercial Microsoft Defender ATP. The government SKU/version is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for the government version. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) in Azure Government uses the same underlying technologies as commercial Microsoft Defender ATP. This offering is currently available to US GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for Azure Government version. 
 
 
 ## Endpoint versions
@@ -32,7 +32,7 @@ The following OS versions are supported:
 - Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 - Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
 - Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
-- Windows Server, 2019 
+- Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 
 >[!NOTE]
 >If patches are not implemented after the machine onboarding, some Microsoft Defender ATP telemetry might be sent to the Microsoft Defender ATP Commercial Cloud.
@@ -47,13 +47,14 @@ The following OS versions are not supported:
 - Windows 8 Pro
 - Windows 8.1 Enterprise
 
+The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our Azure Government environment, there are some capabilities not yet available that we’d like to highlight.  These are the known gaps as of August 2019:
 
 ## Threat & Vulnerability Management
-Not available.
+Not currently available.
 
 
 ## Automated investigation and remediation
-The following capabilities are not available:
+The following capabilities are not currently available:
 - Response to Office 365 alerts 
 - Live response 
 
@@ -67,8 +68,8 @@ The following capabilities are not available:
 - Integration with third-party products
 
 
-## Microsoft Threat Protection 
-Integrations with the following products are not available:
+## Integrations
+Integrations with the following Microsoft products are not currently available:
 - Azure Security Center
 - Azure Advanced Threat Protection
 - Azure Information Protection
@@ -78,7 +79,7 @@ Integrations with the following products are not available:
 - Intune
 
 ## Microsoft Threat Experts
-Not available.
+Not currently available.
 
 ## Required connectivity settings
 You'll need to ensure that traffic from the following are allowed:
