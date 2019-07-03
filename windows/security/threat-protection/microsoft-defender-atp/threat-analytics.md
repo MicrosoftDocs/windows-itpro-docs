@@ -24,7 +24,7 @@ ms.topic: article
 
 Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to be able to quickly assess their security posture, including impact and organizational resilience, in the context of specific emerging threats. 
 
-Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and provides recommended actions for containing them and increasing organizational resilience.
+Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and include recommended actions for containing them and increasing organizational resilience.
 
 ## View the threat analytics dashboard
 
