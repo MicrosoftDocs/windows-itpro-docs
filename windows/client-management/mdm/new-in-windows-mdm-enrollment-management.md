@@ -1885,7 +1885,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP](policy-configuration-service-provider.md)|Added the following list:<br>[Policies supported by HoloLens 2 Development Edition](policy-configuration-service-provider.md#policies-supported-by-hololens2-development-edition)|
+|[Policy CSP](policy-configuration-service-provider.md)|Added the following list:<br>Policies supported by HoloLens 2 Development Edition|
 
 ### June 2019
 
