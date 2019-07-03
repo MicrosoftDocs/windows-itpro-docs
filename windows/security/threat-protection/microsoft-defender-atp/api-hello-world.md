@@ -1,5 +1,5 @@
 ---
-title: Advanced Hunting API
+title: Hello World
 ms.reviewer: 
 description: Use this API to run advanced queries
 keywords: apis, supported apis, advanced hunting, query
@@ -33,68 +33,50 @@ It only takes 5 minutes done in two steps:
 - Use examples: only requires copy/paste of a short PowerShell script
 
 ### Do I need a permission to connect?
-For the App registration stage, you must have a Global administrator role in your Azure Active Directory (Azure AD) tenant.
+For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.
 
 ### Step 1 - Create an App in Azure Active Directory
 
-1. Log on to [Azure](https://portal.azure.com) with your Global administrator user.
+1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
+   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3. In the registration form, enter the following information, then click **Create**.
+3. In the registration form, choose a name for your application and then click **Register**.
 
-   - **Name:** Choose your own name. 
-   - **Application type:** Web app / API
-   - **Redirect URI:** `https://127.0.0.1`
+4. Allow your Application to access Microsoft Defender ATP and assign it 'Read all alerts' permission:
 
-   ![Image of Create application window](images/webapp-create.png)
+   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-4. Allow your App to access Microsoft Defender ATP and assign it 'Read all alerts' permission:
+    **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   - Click **Settings** > **Required permissions** > **Add**.
+	- Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-     ![Image of new app in Azure](images/webapp-add-permission.png)
+     ![Image of API access and API selection](images/application-permissions.png)
 
-   - Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
+   - Click **Grant consent**
 
-     **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+     **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-     ![Image of API access and API selection](images/webapp-add-permission-2.png)
+     ![Image of Grant permissions](images/grant-consent.png)
 
-   - Click **Select permissions** > **Read all alerts** > **Select**.
+5. Add a secret to the application.
 
-     ![Image of API access and API selection](images/webapp-add-permission-readalerts.png)
+	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-   - Click **Done**
+    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-     ![Image of add permissions completion](images/webapp-add-permission-end.png)
+    ![Image of create app key](images/webapp-create-key2.png)
 
-   - Click **Grant permissions**
+6. Write down your application ID and your tenant ID:
 
-     **Note**: Every time you add permission you must click on **Grant permissions**.
+   - On your application page, go to **Overview** and copy the following:
 
-     ![Image of Grant permissions](images/webapp-grant-permissions.png)
-
-5. Create a key for your App:
-
-   - Click **Keys**, type a key name and click **Save**.
-
-     ![Image of create app key](images/webapp-create-key.png)
-
-6. Write down your App ID and your Tenant ID:
-
-   - App ID: 
-
-     ![Image of created app id](images/webapp-app-id1.png)
-
-   - Tenant ID: Navigate to **Azure Active Directory** > **Properties**
-
-     ![Image of create app key](images/api-tenant-id.png)
+   ![Image of created app id](images/app-and-tenant-ids.png)
 
 
-Done! You have successfully registered an application! 
+Done! You have successfully registered an application!
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
@@ -106,8 +88,8 @@ Done! You have successfully registered an application!
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
 $tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your app ID here
-$appSecret = '' ### Paste your app key here
+$appId = '' ### Paste your Application ID here
+$appSecret = '' ### Paste your Application secret here
 
 $resourceAppIdUri = 'https://api.securitycenter.windows.com'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
