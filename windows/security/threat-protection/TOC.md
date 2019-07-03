@@ -117,7 +117,7 @@
 #### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
 
 
-#### [Compare commercial and government Microsoft Defender ATP](microsoft-defender-atp/compare-commercial-gov.md)
+#### [Microsoft Defender ATP in Azure Government ](microsoft-defender-atp/commercial-gov.md)
 
 
 #### [Evaluate Microsoft Defender ATP](microsoft-defender-atp/evaluate-atp.md)

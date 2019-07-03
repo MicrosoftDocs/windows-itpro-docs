@@ -119,7 +119,7 @@
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Assign user access to the portal](assign-portal-access.md)
 
-### [Compare commercial and government Microsoft Defender ATP](compare-commercial-gov.md)
+### [Microsoft Defender ATP in Azure Government ](commercial-gov.md)
 
 
 ### [Evaluate Microsoft Defender ATP](evaluate-atp.md)
