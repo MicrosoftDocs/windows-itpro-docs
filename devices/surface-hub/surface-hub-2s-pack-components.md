@@ -19,7 +19,6 @@ If you replace your Surface Hub 2S, one of its components, or a related accessor
 >[!IMPORTANT]  
 >When packing your device for shipment, make sure that you use the packaging in which your replacement device arrived.  
 
-
 ## How to pack your Surface Hub 2S 50”
 
 Use the following steps to pack your Surface Hub 2S 50" for shipment.
