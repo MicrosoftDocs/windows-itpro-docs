@@ -921,17 +921,23 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Search policies supported by HoloLens 2 Development Edition
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Search policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Search policies supported by HoloLens Commercial Suite
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Search policies supported by HoloLens Development Edition
+
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+<!--EndHoloLens-->
 
 <hr/>
 

@@ -1042,21 +1042,31 @@ XSD:
 <!--/Policy-->
 
 <!--/Policies-->
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic
 
+<!--StartHoloLens2-->  
+## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2 Development Edition
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-<!--EndHoloLens-->
+
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololenbusinessspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens Commercial Suite
 
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens Development Edition
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -1067,4 +1077,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.

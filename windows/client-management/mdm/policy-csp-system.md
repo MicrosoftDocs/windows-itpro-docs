@@ -1581,19 +1581,29 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2 Development Edition
 
-- [System/AllowTelemetry](#system-allowtelemetry)
+- [System/AllowBuildPreview](#system-allowbuildpreview)
+- [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
 - [System/AllowLocation](#system-allowlocation)
-<!--EndHoloLens-->
+- [System/AllowStorageCard](#system-allowstoragecard)
+- [System/AllowTelemetry](#system-allowtelemetry)
+ <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>System policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens Commercial Suite
 
-- [System/AllowTelemetry](#system-allowtelemetry)
 - [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
  <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens Development Edition
+
+- [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
+<!--EndHoloLens-->
 
 <hr/>
 

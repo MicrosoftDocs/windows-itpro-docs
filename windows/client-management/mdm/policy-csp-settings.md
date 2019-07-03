@@ -844,19 +844,26 @@ To validate on Desktop, do the following:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Settings policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Settings policies supported by HoloLens 2 Development Edition
 
 - [Settings/AllowDateTime](#settings-allowdatetime)
 - [Settings/AllowVPN](#settings-allowvpn)
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Settings policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Settings policies supported by HoloLens Commercial Suite
 
 - [Settings/AllowDateTime](#settings-allowdatetime)
 - [Settings/AllowVPN](#settings-allowvpn)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Settings policies supported by HoloLens Development Edition
+
+- [Settings/AllowDateTime](#settings-allowdatetime)
+- [Settings/AllowVPN](#settings-allowvpn)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -867,3 +874,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

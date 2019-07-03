@@ -3958,21 +3958,25 @@ ADMX Info:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2 Development Edition
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+- [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+- [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+- [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
+- [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+- [Update/PauseQualityUpdates](#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Update policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens Commercial Suite
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
@@ -3983,6 +3987,19 @@ ADMX Info:
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens Development Edition
+
+- [Update/AllowAutoUpdate](#update-allowautoupdate)
+- [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/ScheduledInstallDay](#update-scheduledinstallday)
+- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+- [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+<!--EndHoloLens-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Update policies supported by IoT Core  

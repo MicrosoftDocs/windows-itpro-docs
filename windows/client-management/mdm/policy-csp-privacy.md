@@ -13,10 +13,6 @@ manager: dansimp
 
 # Policy CSP - Privacy
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
-
 <hr/>
 
 <!--Policies-->
@@ -4856,17 +4852,26 @@ ADMX Info:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic
+<!--StartHoloLens2-->  
+## <a href="" id="hololens2policies"></a>Privacy policies supported by HoloLens 2 Development Edition
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-<!--EndHoloLens-->
+- [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
+- [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
+- [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololenbusinessspolicies"></a>Privacy policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Privacy policies supported by HoloLens Commercial Suite
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Privacy policies supported by HoloLens Development Edition
+
+- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -4877,4 +4882,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.
