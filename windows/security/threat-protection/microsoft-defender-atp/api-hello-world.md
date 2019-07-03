@@ -19,10 +19,9 @@ ms.topic: article
 
 # Microsoft Defender ATP API - Hello World 
 
-**Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## Get Alerts using a simple PowerShell script
@@ -45,23 +44,33 @@ For the Application registration stage, you must have a **Global administrator**
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it 'Read all alerts' permission:
+4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-    **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-	- Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   ![Image of API access and API selection](images/add-permission.png)
 
-     ![Image of API access and API selection](images/application-permissions.png)
+   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-   - Click **Grant consent**
+   ![Image of API access and API selection](images/application-permissions.png)
 
-     **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
-     ![Image of Grant permissions](images/grant-consent.png)
+     For instance,
 
-5. Add a secret to the application.
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+
+5. Click **Grant consent**
+
+	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+
+	![Image of Grant permissions](images/grant-consent.png)
+
+6. Add a secret to the application.
 
 	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
@@ -69,7 +78,7 @@ For the Application registration stage, you must have a **Global administrator**
 
     ![Image of create app key](images/webapp-create-key2.png)
 
-6. Write down your application ID and your tenant ID:
+7. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following:
 

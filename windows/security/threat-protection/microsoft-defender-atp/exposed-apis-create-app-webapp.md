@@ -19,11 +19,9 @@ ms.topic: article
 
 # Create an app to access Microsoft Defender ATP without a user
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP without a user.
 
@@ -50,17 +48,19 @@ This page explains how to create an AAD application, get an access token to Micr
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it 'Read all alerts' permission:
+4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-    **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-	- Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   ![Image of API access and API selection](images/add-permission.png)
 
-     ![Image of API access and API selection](images/application-permissions.png)
+   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-	 **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
+   ![Image of API access and API selection](images/application-permissions.png)
+
+   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
      For instance,
 
@@ -68,13 +68,13 @@ This page explains how to create an AAD application, get an access token to Micr
      - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-   - Click **Grant consent**
+5. Click **Grant consent**
 
-     **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-     ![Image of Grant permissions](images/grant-consent.png)
+	![Image of Grant permissions](images/grant-consent.png)
 
-5. Add a secret to the application.
+6. Add a secret to the application.
 
 	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
@@ -82,13 +82,13 @@ This page explains how to create an AAD application, get an access token to Micr
 
     ![Image of create app key](images/webapp-create-key2.png)
 
-6. Write down your application ID and your tenant ID:
+7. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following:
 
    ![Image of created app id](images/app-and-tenant-ids.png)
 
-7. **For Microsoft Defender ATP Partners only** - Set your application to be multi-tenanted (available in all tenants after consent)
+8. **For Microsoft Defender ATP Partners only** - Set your application to be multi-tenanted (available in all tenants after consent)
 
     This is **required** for 3rd party applications (for example, if you create an application that is intended to run in multiple customers tenant).
 

@@ -19,10 +19,9 @@ ms.topic: article
 
 # Use Microsoft Defender ATP APIs
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP on behalf of a user.
 
@@ -63,15 +62,17 @@ This page explains how to create an AAD application, get an access token to Micr
 
 4. Allow your Application to access Microsoft Defender ATP and assign it 'Read alerts' permission:
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+	- On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-    **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+	- **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+
+	![Image of API access and API selection](images/add-permission.png)
 
 	- Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
 
-     ![Image of API access and API selection](images/application-permissions-public-client.png)
+    ![Image of API access and API selection](images/application-permissions-public-client.png)
 
-	 **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
+	- **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
 
      For instance,
 
