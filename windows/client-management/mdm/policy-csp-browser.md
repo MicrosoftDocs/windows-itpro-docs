@@ -3965,7 +3965,7 @@ Most restricted value: 0
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Browser policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Browser policies supported by HoloLens 2
 
 - [Browser/AllowAutofill](#browser-allowautofill)
 - [Browser/AllowCookies](#browser-allowcookies)
@@ -3977,7 +3977,7 @@ Most restricted value: 0
  <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Browser policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Browser policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Browser/AllowAutofill](#browser-allowautofill)
 - [Browser/AllowCookies](#browser-allowcookies)
@@ -3989,7 +3989,7 @@ Most restricted value: 0
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Browser policies supported by HoloLens (1st gen) Development Edition
 
 - [Browser/AllowCookies](#browser-allowcookies)
 - [Browser/AllowDoNotTrack](#browser-allowdonottrack)

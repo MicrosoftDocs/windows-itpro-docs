@@ -198,19 +198,19 @@ The following list shows the supported values:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Accounts policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Accounts policies supported by HoloLens 2
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Accounts policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Accounts policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Accounts policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Accounts policies supported by HoloLens (1st gen) Development Edition
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 <!--EndHoloLens-->

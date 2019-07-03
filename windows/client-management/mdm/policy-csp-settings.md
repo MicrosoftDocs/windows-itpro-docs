@@ -845,21 +845,21 @@ To validate on Desktop, do the following:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Settings policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Settings policies supported by HoloLens 2
 
 - [Settings/AllowDateTime](#settings-allowdatetime)
 - [Settings/AllowVPN](#settings-allowvpn)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Settings policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Settings policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Settings/AllowDateTime](#settings-allowdatetime)
 - [Settings/AllowVPN](#settings-allowvpn)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Settings policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Settings policies supported by HoloLens (1st gen) Development Edition
 
 - [Settings/AllowDateTime](#settings-allowdatetime)
 - [Settings/AllowVPN](#settings-allowvpn)

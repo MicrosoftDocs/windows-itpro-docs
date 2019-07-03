@@ -3959,7 +3959,7 @@ ADMX Info:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
@@ -3976,7 +3976,7 @@ ADMX Info:
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
@@ -3989,7 +3989,7 @@ ADMX Info:
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens (1st gen) Development Edition
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)

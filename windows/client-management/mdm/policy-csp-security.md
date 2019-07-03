@@ -745,19 +745,19 @@ The following list shows the supported values:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Security policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Security policies supported by HoloLens 2
 
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Security policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Security policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Security policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Security policies supported by HoloLens (1st gen) Development Edition
 
 - [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
 <!--EndHoloLens-->

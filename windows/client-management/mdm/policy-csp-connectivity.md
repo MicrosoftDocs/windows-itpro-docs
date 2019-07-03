@@ -967,21 +967,21 @@ ADMX Info:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Connectivity policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Connectivity policies supported by HoloLens 2
 
 - [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
 - [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Connectivity policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Connectivity policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
 - [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Connectivity policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Connectivity policies supported by HoloLens (1st gen) Development Edition
 
 - [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
 - [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)

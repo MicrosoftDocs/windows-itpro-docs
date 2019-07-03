@@ -1211,7 +1211,7 @@ Most restricted value is 0.
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>DeviceLock policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>DeviceLock policies supported by HoloLens 2
 
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
@@ -1227,7 +1227,7 @@ Most restricted value is 0.
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>DeviceLock policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>DeviceLock policies supported by HoloLens (1st gen) Commercial Suite
 
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
@@ -1241,7 +1241,7 @@ Most restricted value is 0.
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by HoloLens (1st gen) Development Edition
 
 - [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)

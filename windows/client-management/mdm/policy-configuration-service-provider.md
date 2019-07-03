@@ -5158,7 +5158,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Policies supported by HoloLens 2 Development Edition  
+## <a href="" id="hololens2policies"></a>Policies supported by HoloLens 2  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5219,7 +5219,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Policies supported by HoloLens Commercial Suite  
+## <a href="" id="hololensbusinessspolicies"></a>Policies supported by HoloLens (1st gen) Commercial Suite  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5268,7 +5268,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Policies supported by HoloLens (1st gen) Development Edition
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)

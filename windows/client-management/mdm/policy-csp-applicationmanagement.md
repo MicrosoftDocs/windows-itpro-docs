@@ -1044,7 +1044,7 @@ XSD:
 <!--/Policies-->
 
 <!--StartHoloLens2-->  
-## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2
 
 - [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
@@ -1053,7 +1053,7 @@ XSD:
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens (ist gen) Commercial Suite
 
 - [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
@@ -1061,7 +1061,7 @@ XSD:
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens (1st gen) Development Edition
 
 - [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)

@@ -4853,7 +4853,7 @@ ADMX Info:
 <!--/Policies-->
 
 <!--StartHoloLens2-->  
-## <a href="" id="hololens2policies"></a>Privacy policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Privacy policies supported by HoloLens 2
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 - [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
@@ -4862,13 +4862,13 @@ ADMX Info:
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololensbusinessspolicies"></a>Privacy policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Privacy policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Privacy policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Privacy policies supported by HoloLens (1st gen) Development Edition
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLens-->

@@ -2686,7 +2686,7 @@ You can download the DDF files for various CSPs from the links below:
 
 The following list shows the CSPs supported in HoloLens devices.
 
-| Configuration service provider        | HoloLens Development Edition      | HoloLens Commercial Suite |
+| Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite |
 |--------|--------|------------|
 | [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [Accounts CSP](accounts-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)

@@ -1582,7 +1582,7 @@ The following list shows the supported values:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
 
 - [System/AllowBuildPreview](#system-allowbuildpreview)
 - [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
@@ -1592,14 +1592,14 @@ The following list shows the supported values:
  <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens (1st gen) Commercial Suite
 
 - [System/AllowLocation](#system-allowlocation)
 - [System/AllowTelemetry](#system-allowtelemetry)
  <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens (1st gen) Development Edition
 
 - [System/AllowLocation](#system-allowlocation)
 - [System/AllowTelemetry](#system-allowtelemetry)

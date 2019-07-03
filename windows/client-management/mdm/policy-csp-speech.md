@@ -88,19 +88,19 @@ The following list shows the supported values:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Speech policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Speech policies supported by HoloLens 2
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Speech policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Speech policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Speech policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Speech policies supported by HoloLens (1st gen) Development Edition
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
 <!--EndHoloLens-->

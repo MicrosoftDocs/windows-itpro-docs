@@ -392,19 +392,19 @@ Supported operations are Add, Delete, Get, and Replace.
   <!--EndEAS-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Wifi policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Wifi policies supported by HoloLens 2
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Wifi policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Wifi policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Wifi policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Wifi policies supported by HoloLens (1st gen) Development Edition
 
 - [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
 <!--EndHoloLens-->

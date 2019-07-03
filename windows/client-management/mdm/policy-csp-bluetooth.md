@@ -345,14 +345,14 @@ The default value is an empty string. For more information, see [ServicesAllowed
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Bluetooth policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Bluetooth policies supported by HoloLens 2
 
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
 - [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
   <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Bluetooth policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Bluetooth policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
@@ -360,7 +360,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
   <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by HoloLens (1st gen) Development Edition
 
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)

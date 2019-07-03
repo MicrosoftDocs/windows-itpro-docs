@@ -922,19 +922,19 @@ The following list shows the supported values:
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Search policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Search policies supported by HoloLens 2
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Search policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Search policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Search policies supported by HoloLens (1st gen) Development Edition
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLens-->

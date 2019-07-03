@@ -500,21 +500,21 @@ Value type is string.
 <!--/Policies-->
 
 <!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2 Development Edition
+## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
   <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens Commercial Suite
+## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
   <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens Development Edition
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens (1st gen) Development Edition
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 <!--EndHoloLens-->
