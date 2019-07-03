@@ -137,7 +137,7 @@ Agent Resource    |    Ports
 
 
 ## Windows Server, version 1803 and Windows Server 2019
-To onboard Windows Server, version 1803 or Windows Server 2019, use the same method used when onboarding Windows 10 machines.
+To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
 
 Supported tools include:
 - Local script
