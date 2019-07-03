@@ -23,7 +23,7 @@ ms.date: 08/15/2018
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 
-To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+To get you started in querying your data, you can use the Basic or Advanced query examples, which have some preloaded queries to help you understand the basic query syntax.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
@@ -109,7 +109,7 @@ You can create or modify a query and save it as your own query or share it with 
 ### Update a query
 These steps guide you on modifying and overwriting an existing query.
 
-1. Edit an existing query. 
+1. Edit an existing query.
 
 2. Click the **Save**.
 
@@ -151,6 +151,3 @@ Check out the [Advanced hunting repository](https://github.com/Microsoft/Windows
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference.md)
 - [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
-
-
-

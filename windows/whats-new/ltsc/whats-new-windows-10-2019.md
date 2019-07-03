@@ -36,8 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
->Microsoft Intune supports LTSC 2019 and later. 
-
+>Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
 
 ## Security
 

@@ -93,6 +93,9 @@ You can choose to limit the list of alerts based on their status.
 ### Investigation state
 Corresponds to the automated investigation state.
 
+### Category
+You can choose to filter the queue to display specific types of malicious activity.
+
 ### Assigned to
 You can choose between showing alerts that are assigned to you or automation.
 
