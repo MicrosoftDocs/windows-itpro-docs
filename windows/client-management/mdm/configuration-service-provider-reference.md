@@ -23,7 +23,7 @@ For information about the bridge WMI provider classes that map to these CSPs, se
 
 
 Additional lists:
-- [List of CSPs supported in Windows Holographic](#hololens)
+- [List of CSPs supported in HoloLens devices](#hololens)
 - [List of CSPs supported in Microsoft Surface Hub](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
 
@@ -2681,12 +2681,12 @@ You can download the DDF files for various CSPs from the links below:
 - [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
 
-## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
+## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
 
 
-The following list shows the configuration service providers supported in Windows Holographic editions.
+The following list shows the CSPs supported in HoloLens devices.
 
-| Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
+| Configuration service provider        | HoloLens Development Edition      | HoloLens Commercial Suite |
 |--------|--------|------------|
 | [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [Accounts CSP](accounts-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)
