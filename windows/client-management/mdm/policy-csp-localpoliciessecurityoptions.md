@@ -1103,6 +1103,10 @@ Valid values:
 - 0 - disabled
 - 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
+> [!NOTE]
+> I would recommend if you are the only user on windows 10 machine, then don't enable it.
+
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
