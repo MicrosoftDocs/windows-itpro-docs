@@ -123,10 +123,9 @@ Creating a custom package allows you to target the tool to specific known issues
 
     *Figure 3. Create custom package*
 
-### Language and telemetry page
+### Language and telemetry settings
 
-  
-When you start creating the custom package, you’re asked whether you agree to send data to Microsoft to help improve the application. For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). This setting is limited to only sharing data generated while running packages. Sharing is on by default; if you wish to decline, clear the check box.
+  When creating a package, you can select language settings or opt out of sending telemetry information to Microsoft. By default, SDT sends telemetry to Microsoft that is used to improve the application in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). If you wish to decline, clear the check box when creating a custom package, as shown below. Or clear the **Send telemetry to Microsoft** check box on the **Install Options** page during SDT Setup. 
 
 >[!NOTE]
 >This setting does not affect the minimal telemetry automatically stored on Microsoft servers when running tests and repairs that require an Internet connection, such as Windows Update and Software repair, or providing feedback using the Smile or Frown buttons in the app toolbar. 
