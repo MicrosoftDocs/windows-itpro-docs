@@ -67,7 +67,7 @@ Area | Description
 **(3) Community center, Localization,  Help and support, Feedback** | **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Microsoft Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
 
 > [!NOTE]
-> For devices with high resolution DPI scaling issues, please see here for possible solutions - [Windows scaling issues for high-DPI devices](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)
+> For devices with high resolution DPI scaling issues, please see [Windows scaling issues for high-DPI devices](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) for possible solutions.
 
 ## Microsoft Defender ATP icons
 The following table provides information on the icons used all throughout the portal:
