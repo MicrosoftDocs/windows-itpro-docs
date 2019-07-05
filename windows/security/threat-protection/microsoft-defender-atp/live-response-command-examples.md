@@ -99,10 +99,10 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > The following file types are **not** supported:
 >
-> 1. [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> 1. [Sparse files](/windows/desktop/fileio/sparse-files/)
-> 1. Empty files
-> 1. Virtual files, or files that are not fully present locally
+> * [Reparse point files](/windows/desktop/fileio/reparse-points/)
+> * [Sparse files](/windows/desktop/fileio/sparse-files/)
+> * Empty files
+> * Virtual files, or files that are not fully present locally
 
 ## processes
 ```
