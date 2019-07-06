@@ -19,7 +19,7 @@ Each version of Windows 10 adds new features. Occasionally, we also remove featu
 
 ## Features we removed or will remove soon
 
-The following features are removed from the installed product image for Windows 10, version 1903, or are planned for removal in an upcoming release. Apps that depend on these features won't function in this release.   
+The following features are removed from the installed product image for Windows 10, version 1903, or are planned for removal in an upcoming release. Apps depending on these features won't function in this release.   
 
 
 |                      Feature                      |                                                                                                                                                                                                                                                                                    Details                                                                                                                                                                                                                                                                                    |
