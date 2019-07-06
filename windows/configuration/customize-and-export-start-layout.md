@@ -78,8 +78,6 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 >
 >In earlier versions of Windows 10, no tile would be pinned.
 
-<span id="bmk-exportstartscreenlayout" />
-
 ## Export the Start layout
 
 When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file. Start layout is located by default at C:\Users\username\AppData\Local\Microsoft\Windows\Shell\
