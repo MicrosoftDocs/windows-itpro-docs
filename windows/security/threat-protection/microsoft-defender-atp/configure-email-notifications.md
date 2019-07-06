@@ -69,7 +69,7 @@ You can create rules that determine the machines and alert severities to send em
 
 Here's an example email notification:
 
-![Image of example email notification](images/email-notification.png)
+![Image of example email notification](images/atp-example-email-notification.png)
 
 ## Edit a notification rule
 1. Select the notification rule you'd like to edit.
