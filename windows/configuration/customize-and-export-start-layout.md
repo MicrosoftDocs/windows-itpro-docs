@@ -45,8 +45,6 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-<span id="bkmkcustomizestartscreen" />
-
 ## Customize the Start screen on your test computer
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
@@ -56,8 +54,6 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
 
 2.  Create a new user account that you will use to customize the Start layout.
-
-<a href="" id="bmk-customize-start"></a>
 
 **To customize Start**
 
