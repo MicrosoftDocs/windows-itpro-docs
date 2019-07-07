@@ -57,7 +57,6 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 4. Windows Biometric data is located in the following folder:
  `C:\Windows\System32\WinBioDatabase\` (fingerprint data is stored with the .DAT file name extension)
 5. Users unable to login with already registered fingerprints will have to delete the entire content of this folder and register their fingerprints again.
-  
  
 
 ## The difference between Windows Hello and Windows Hello for Business
