@@ -52,7 +52,7 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 ## In Windows 10 from  v1803 , windows Hello feature is usefull for hasslefree login.
 1. Fingerprint scan as a login method can be enabled on laptop computers by using a built-in fingerprint reader or an external USB fingerprint reader.
-02.Go to settings\accounts\sign-in-options\windows hello fingerprint\ add   fingerprint
+2. Go to Settings > Accounts > Sign-in-options > Windows Hello Fingerprint > Add fingerprint
 3. Users will need to add a PIN after adding their fingerprint(s) to the reader configuration.
 4. Windows Biometric data is located in the following folder:
  **C:\Windows\System32\WinBioDatabase\**  **all  fingerprint datas are stored in .DAT formats**
