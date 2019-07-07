@@ -51,7 +51,7 @@ As an administrator in an enterprise or educational organization, you can create
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data. 
 
 ## In Windows 10 from  v1803 , windows Hello feature is usefull for hasslefree login.
-01.Users are advised to enable fingerprint to their laptops by using builtin fingerprint reader or external usb fingerprint redader.
+1. Fingerprint scan as a login method can be enabled on laptop computers by using a built-in fingerprint reader or an external USB fingerprint reader.
 02.Go to settings\accounts\sign-in-options\windows hello fingerprint\ add   fingerprint
 03. Usershould add PIN after adding fingerprint to the reader.
 04. Location of the windows biometeric data  in this folder 
