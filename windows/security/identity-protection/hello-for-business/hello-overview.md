@@ -50,7 +50,7 @@ As an administrator in an enterprise or educational organization, you can create
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data. 
 
-## Starting from Windows 10 version 1803, the Windows Hello feature can be used as a safe and secure login method.
+## From Windows 10 version 1803, the Windows Hello feature can be used as a safe and secure login method.
 1. Fingerprint scan as a login method can be enabled on laptop computers by using a built-in fingerprint reader or an external USB fingerprint reader.
 2. Go to Settings > Accounts > Sign-in-options > Windows Hello Fingerprint > Add fingerprint
 3. Users will need to add a PIN after adding their fingerprint(s) to the reader configuration.
