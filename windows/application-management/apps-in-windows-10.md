@@ -280,4 +280,3 @@ Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, a
 |                       |    Microsoft.VCLibs.120.00.Universal     |  x   |      |      |          Yes          |
 |                       |    Microsoft.VCLibs.140.00.UWPDesktop    |      |  x   |      |          Yes          |
 
-
