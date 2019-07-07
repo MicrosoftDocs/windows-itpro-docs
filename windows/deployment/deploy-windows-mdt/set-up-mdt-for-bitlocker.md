@@ -143,7 +143,7 @@ We added these five actions to the task sequence:
 -   **Configure BIOS for TPM.** Runs the vendor tools (in this case, HP, Dell, and Lenovo). To ensure this action is run only when necessary, add a condition so the action is run only when the TPM chip is not already activated. Use the properties from the ZTICheckforTPM.wsf.
 
     > [!NOTE]
-    > It is common for organizations wrapping these tools in scripts to get additional logging and error handling.
+    > It is common for organizations to wrap these tools in scripts to get additional logging and error handling.
 -   **Restart computer.** Self-explanatory, reboots the computer.
 -   **Check TPM Status.** Runs the ZTICheckforTPM.wsf script one more time.
 -   **Enable BitLocker.** Runs the built-in action to activate BitLocker.
