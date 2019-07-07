@@ -1084,6 +1084,9 @@ This security setting determines whether pressing CTRL+ALT+DEL is required befor
 
 If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
 
+> [!NOTE]
+> This policy should not be enabled if there is only one user on the Windows 10 device.
+
 If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows.
 
 Default on domain-computers: Enabled: At least Windows  8/Disabled: Windows 7 or earlier.
@@ -1103,8 +1106,6 @@ Valid values:
 - 0 - disabled
 - 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
-> [!NOTE]
-> I would recommend if you are the only user on windows 10 machine, then don't enable it.
 
 
 <!--/SupportedValues-->
