@@ -59,7 +59,6 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 5. Users unable to login with already registered fingerprints will have to delete the entire content of this folder and register their fingerprints again.
   
  
- 
 
 ## The difference between Windows Hello and Windows Hello for Business
 
