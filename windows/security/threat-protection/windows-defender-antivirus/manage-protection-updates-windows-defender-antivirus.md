@@ -40,7 +40,7 @@ Updates will be obtained from the sources in the order you specify. If a source 
 You can use the following sources:
 
 
--   **Microsoft Update**
+-   Microsoft Update
 -   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
 -   System Center Configuration Manager
 -   A network file share
