@@ -94,7 +94,7 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 ## Provisioned Windows apps in 1903
 
 
-| Name of the application             |          Package Name                          | 1903  |Uninstall through UI? |
+| Package name                        | App name                                       | 1903  |Uninstall through UI? |
 |----------------------------------   |------------------------------------------------|:-----:|----------------------|
 | Microsoft.BingWeather                 |Microsoft.BingWeather                         |   x   |
 | Microsoft.DesktopAppInstaller         |Microsoft.DesktopAppInstaller                 |   x   |
