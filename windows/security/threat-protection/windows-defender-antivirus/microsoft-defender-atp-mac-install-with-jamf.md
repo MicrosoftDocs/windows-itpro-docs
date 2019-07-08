@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Create JAMF Policies](#create-jamf-policies)
+- [Create JAMF policies](#create-jamf-policies)
 - [Client device setup](#client-device-setup)
 - [Deployment](#deployment)
 - [Check onboarding status](#check-onboarding-status)
