@@ -171,9 +171,9 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 **To configure a partial Start screen layout**
 
-1.  [Customize the Start layout](#bmk-customize-start).
+1.  [Customize the Start layout](#customize-the-start-screen-on-your-test-computer).
 
-2.  [Export the Start layout](#bmk-exportstartscreenlayout).
+2.  [Export the Start layout](#export-the-start-layout).
 3.  Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
     ``` syntax
