@@ -29,7 +29,6 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 | Change admin account password  | Surface Hub > Accounts | Change the password for the local admin account. This is only available if you configured the device to use a local admin during first run. |
 | Device Management | Surface Hub > Device management | Manage policies and business applications using mobile device management (MDM). |
 | Provisioning packages | Surface Hub > Device management | Set or change provisioning packages installed on the Surface Hub. |
-| Configure Operations Management Suite (OMS) | Surface Hub > Device management | Set up monitoring for your Surface Hub using OMS. |
 | Open the Microsoft Store app | Surface Hub > Apps & features | The Microsoft Store app is only available to admins through the Settings app. |
 | Skype for Business domain name | Surface Hub > Calling & Audio | Configure a domain name for your Skype for Business server. |
 | Default Speaker volume | Surface Hub > Calling & Audio | Configure the default speaker volume for the Surface Hub when it starts a session. |
