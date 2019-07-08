@@ -75,6 +75,12 @@ To enable data sharing, configure your proxy server to whitelist the following e
 > [!IMPORTANT]
 > For privacy and data integrity, Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. SSL interception and inspection aren't possible. To use Desktop Analytics, exclude these endpoints from SSL inspection.<!-- BUG 4647542 --> 
 
+>[!NOTE]
+>Microsoft has a strong commitment to providing the tools and resources that put you in control of your privacy. As a result, Microsoft doesn't collect the following data from devices located in European countries (EEA and Switzerland):
+>- Windows diagnostic data from Windows 8.1 devices
+>- App usage data for Windows 7 devices
+
+
 
 ### Configuring endpoint access with SSL inspection
 To ensure privacy and data integrity Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. Accordingly SSL interception and inspection is not possible. To use Windows Analytics services you should exclude the above endpoints from SSL inspection.
@@ -205,3 +211,4 @@ Note that it is possible to intiate a full inventory scan on a device by calling
 - CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent
 
 For details on how to run these and how to check results, see the deployment script.
+
