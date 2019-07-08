@@ -10,9 +10,9 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
-manager: dansimp
+author: stephow-MSFT
+ms.author: stephow
+manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
