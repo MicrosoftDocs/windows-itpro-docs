@@ -27,7 +27,7 @@ ms.topic: conceptual
 This topic describes how to deploy Microsoft Defender ATP for Mac through Intune. A successful deployment requires the completion of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Client device setup](#client-device-setup)
-- [Create System Configuration profiles](#create-System-Configuration-profiles)
+- [Create System Configuration profiles](#create-system-configuration-profiles)
 - [Publish application](#publish-application)
 
 ## Prerequisites and system requirements
