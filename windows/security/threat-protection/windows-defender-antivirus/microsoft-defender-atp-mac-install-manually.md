@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Mac manually. A successful deployment requires the completion of the following steps:
+This topic describes how to deploy Microsoft Defender ATP for Mac manually. A successful deployment requires the completion of all of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation](#application-installation)
 - [Client configuration](#client-configuration)
