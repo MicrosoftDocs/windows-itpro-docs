@@ -212,7 +212,7 @@ See the following examples.
    - Click **Next**.
 
      >[!NOTE]
-     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined and hybrid AAD joined devices.
+     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined or hybrid AAD joined devices.
 
 7. On the Include Updates page, choose one of the three available options. This selection is optional.
 8. On the Install applications page, add applications if desired. This is optional.
