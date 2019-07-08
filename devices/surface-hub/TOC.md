@@ -20,6 +20,7 @@
 ### [Configure Easy Authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
 
 ## Deploy
+### [Surface Hub 2S adoption toolkit](surface-hub-2s-adoption-toolkit.md)
 ### [First time setup for Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
