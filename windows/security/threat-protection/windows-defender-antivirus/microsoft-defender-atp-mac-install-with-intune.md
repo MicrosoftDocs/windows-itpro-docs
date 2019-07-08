@@ -24,6 +24,12 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
+This topic describes how to deploy Microsoft Defender ATP for Mac through Intune. A successful deployment requires the completion of the following steps:
+- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+- [Client device setup](#client-device-setup)
+- [Create System Configuration profiles](#create-System-Configuration-profiles)
+- [Publish application](#publish-application)
+
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
@@ -122,7 +128,10 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 2. Select **App type=Other/Line-of-business app**.
 3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
 4. Select **Configure** and add the required information.
-5. Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any arbitrary value.
+5. Use **macOS Sierra 10.12** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
+
+    > [!CAUTION]
+    > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.
 
     ![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
 
