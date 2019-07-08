@@ -826,7 +826,6 @@ Add **Channel**
           <Format xmlns="syncml:metinf">node</Format>​
           <Type></Type>​
         </Meta>​
-        <Data></Data>​
       </Item>​
     </Add>​
     <Final/> ​
