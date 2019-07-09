@@ -1107,7 +1107,6 @@ Valid values:
 - 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
 
-
 <!--/SupportedValues-->
 <!--/Policy-->
 
