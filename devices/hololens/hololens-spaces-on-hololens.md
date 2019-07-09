@@ -3,6 +3,7 @@ title: Spaces on HoloLens
 description: HoloLens blends holograms with your world
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens
