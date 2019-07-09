@@ -417,10 +417,14 @@
 ### [Troubleshoot Microsoft Defender ATP service issues](troubleshoot-mdatp.md)
 #### [Check service health](service-status.md)
 
+
+### [Troubleshoot live response issues]()
+#### [Troubleshoot issues related to live response](troubleshoot-live-response.md)
+
 ### Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
-#### [Collect diagnostic data for files](../windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
+#### [Collect diagnostic data for files](../windows-defender-exploit-guard/troubleshoot-np.md)
 
  
 ### [Troubleshoot next generation protection](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
