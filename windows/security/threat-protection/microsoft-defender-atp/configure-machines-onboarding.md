@@ -28,7 +28,8 @@ ms.topic: procedural
 
 Each onboarded machine adds an additional endpoint detection and response (EDR) sensor and increases visibility over breach activity in your network. Onboarding also ensures that a machine can be checked for vulnerable components as well security configuration issues and can receive critical remediation actions during attacks.
 
->[!NOTE] Before you can track and manage onboarding of machines, [enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management).
+>[!NOTE]
+>Before you can track and manage onboarding of machines, [enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management).
 
 ## Discover and track unprotected machines
 
