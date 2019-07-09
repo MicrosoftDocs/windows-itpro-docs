@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -19,15 +20,7 @@ Designed for team collaboration, Surface Hub 2S can transform the way you work  
 
 ## Room considerations
 
-Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, beam-forming microphones, crystal clear speakers, and a brilliant 4K+ resolution display. Optimizing the user experience in larger spaces with more people further away from the display may require peripherals such as an extra camera, microphone, or room systems solution such as Microsoft Teams Rooms. Use the following proximity guidance to determine if you need to plan for peripherals.
-
-
-| **Room size**     | **Participants** | **Proximity**        | **Additional peripherals** |
-| ------------- | ------------ | -------------------- | -------------------------- |
-| Huddle        | 1-3          | 1–2 meters           | None                       |
-| Small meeting | 4-6          | Up to 2.3 meters     | None                       |
-| Larger meting | 6 +          | More than 2.3 meters | Peripherals recommended    |
-
+Designed for interactive use in smaller conference rooms and huddle spaces, Surface Hub 2S provides a 4K camera, microphone array, crystal clear speakers, and a brilliant 4K+ resolution display. Optimizing the user experience in larger spaces with more people further away from the display may require peripherals such as an extra camera, microphone, or room systems solution such as Microsoft Teams Rooms.
 
 As a general guideline, install Surface Hub 2S in a space that meets the following criteria:
 
@@ -42,7 +35,7 @@ Whether mounted to a wall or installed on the mobile stand, the areas where you 
 - Room temperatures no cooler than 10°C (50° F) and no hotter than 35°C  (95° F).
 - Relative humidity no lower than 20 percent and no higher than 80 percent.
 
-For detailed room planning guidance and more information about Microsoft Teams Rooms see [Plan Microsoft Teams Rooms.](https://docs.microsoft.com/en-us/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
+For detailed room planning guidance and more information about Microsoft Teams Rooms see [Plan Microsoft Teams Rooms.](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
 
 ## Managing Surface Hub 2S location
 

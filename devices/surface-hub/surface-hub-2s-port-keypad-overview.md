@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -27,7 +28,7 @@ The figure below shows the location of ports and physical buttons on a keypad at
 |**Key**|**Component**|**Description**|**Key parameters**|
 |:--- |:--------- |:----------- |:-------------- |
 | 1 | **USB C** | **USB 3.1 Gen 1** <br> Use as a walk-up port for plugging in peripherals such as thumb-drives. Guest ports are on each side of the device (4).<br> <br> *NOTE: This is the recommended port for connecting an external camera. Additional camera mount features are incorporated into the design to help support retention of attached cameras.*<br> <br> NOTE: TouchBack and video ingest are not supported on these ports. | Type C <br> <br> 15 W Port (5V/3A)       |
-| 2 | **AC power** | **100-240 V input** <br> Connect to standard AC power and Surface Hub 2S will auto switch to the local power standard such as110 volts in the US and Canada or 220 volts in the UK. <br> <br> *NOTE: When the AC cord is plugged in, the system remains in an off state in which only the system management controller (SMC), real-time clock (RTC), and keypad are running.* | IEC 60320 C14 |
+| 2 | **AC power** | **100-240 V input** <br> Connect to standard AC power and Surface Hub 2S will auto switch to the local power standard such as110 volts in the US and Canada or 220 volts in the UK. | IEC 60320 C14 |
 | 3 | **DC power** | **24V DC input port** <br> Use for connecting to mobile battery. | Xbox1 Dual barrel to Anderson connector |
 | 4 | **Ethernet** | **1000/100/10 Base-T** <br> Use for providing a continuous connection in a corporate environment and related scenarios requiring maximum stability or capacity. | RJ45 |
 | 5 | **USB-A** | **USB 3.1 Gen 1** <br> Use as a walk-up port for plugging in peripherals such as thumb-drives. | Type A<br>7.5 W Port (5V/1.5A) |

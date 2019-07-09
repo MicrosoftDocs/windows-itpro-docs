@@ -12,7 +12,7 @@ description: "Get started with Microsoft Surface Hub."
 ---
 # Get started with Surface Hub
 
-Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming, collaboration, and presentations. Use the links to content below to learn how to plan, deploy, manage, and support your Surface Hub devices.
+Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Use the links below to learn how to plan, deploy, manage, and support your Surface Hub devices.
 
 <ul class="panelContent cardsF">
     <li>
@@ -21,7 +21,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -40,7 +40,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/task-checklist-planning-blue.svg" alt="Plan icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/task-checklist-planning-blue.svg" alt="Plan icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -59,7 +59,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -81,7 +81,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow-blue.svg" alt="Manage icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/process-flow-blue.svg" alt="Manage icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -99,7 +99,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Secure icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Secure icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -117,7 +117,7 @@ Microsoft Surface Hub 2S is an all-in one productivity device for brainstorming,
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector-blue.svg" alt="Support icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/connector-blue.svg" alt="Support icon" />
                         </div>
                     </div>
                     <div class="cardText">

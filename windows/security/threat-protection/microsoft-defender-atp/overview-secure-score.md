@@ -41,7 +41,7 @@ The Microsoft secure score tile is reflective of the sum of all the Windows Defe
 
 ![Image of Microsoft secure score tile](images/mss.png)
 
-Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Microsoft Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 The Office 365 Secure Score looks at your settings and activities and compares them to a baseline established by Microsoft. For more information, see [Introducing the Office 365 Secure Score](https://support.office.com/en-us/article/introducing-the-office-365-secure-score-c9e7160f-2c34-4bd0-a548-5ddcc862eaef#howtoaccess).
 
@@ -74,7 +74,7 @@ Clicking on the affected machines link at the top of the table takes you to the 
 
 Within the tile, you can click on each control to see the recommended optimizations.
 
-Clicking the link under the Misconfigured machines column opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice.
+Clicking the link under the **Misconfigured machines** column opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice.
 
 ## Related topic
 - [Threat analytics](threat-analytics.md)

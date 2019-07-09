@@ -12,10 +12,6 @@ author: lomayor
 ms.date: 09/05/2017
 ---
 
-<head>
-<style type='text/css'> table.topalign td { vertical-align: top } </style>
-</head>
-
 # Azure Active Directory integration with MDM
 
 Azure Active Directory is the world largest enterprise cloud identity management service. It’s used by millions of organizations to access Office 365 and thousands of business applications from Microsoft and third party software as a service (SaaS) vendors. Many of the rich Windows 10 experiences for organizational users (such as store access or OS state roaming) use Azure AD as the underlying identity infrastructure. Windows 10 provides an integrated configuration experience with Azure AD, allowing devices to be registered in Azure AD and enrolled into MDM in a smooth integrated flow.

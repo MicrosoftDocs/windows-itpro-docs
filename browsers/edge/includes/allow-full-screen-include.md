@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow fullscreen mode --> 
@@ -20,7 +20,7 @@ ms:topic: include
 
 |       Group Policy       | MDM | Registry | Description |                 Most restricted                  |
 |--------------------------|:---:|:--------:|-------------|:------------------------------------------------:|
-|         Disabled         |  0  |    0     |  Prevented  | ![Most restricted value](/images/check-gn.png) |
+|         Disabled         |  0  |    0     |  Prevented  | ![Most restricted value](../images/check-gn.png) |
 | Enabled<br>**(default)** |  1  |    1     |   Allowed   |                                                  |
 
 ---

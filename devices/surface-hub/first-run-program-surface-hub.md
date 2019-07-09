@@ -88,7 +88,7 @@ This screen is shown only if the device fails to detect a wired network. If you 
 -   You can select one of the wireless networks shown. If the network is secured, you'll be taken to a login page. See [Wireless network setup](#wireless) for details.
 -   Click **Skip this step** to skip connecting to a network. You'll be taken to the [Set up for you page](#set-up-for-you).
     >[!NOTE]
-    >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+    >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -123,7 +123,7 @@ This page will be shown when the device detects a wired connection with limited 
 
 -   You can select a wireless network to use instead of the limited wired connection.
 -   You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
-    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -149,7 +149,7 @@ When you click **Next**, the device will attempt to connect to the proxy server.
 You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
 
 >[!NOTE]
->If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+>If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
  
 
@@ -203,7 +203,7 @@ If you skip setting it up now, you can add a device account later by using the S
 
 If you click **Skip setting up a device account**, the device will display a dialog box showing what will happen if the device doesn't have a device account. If you choose **Yes, skip this**, you will be sent to the [Name this device page](#name-this-device).
 
-![Image showing message the is displaed to confirm you want to skip creating a device account.](images/setupskipdeviceacct.png)
+![Image showing message the is displayed to confirm you want to skip creating a device account.](images/setupskipdeviceacct.png)
 
 ### What happens?
 

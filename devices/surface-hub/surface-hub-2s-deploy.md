@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -17,7 +18,7 @@ You can use Windows Configuration Designer (WCD) to create provisioning packages
 
 ### Install Windows Configuration Designer
 
-Install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK) for Windows 10. Download and install the [ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) . For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) 
+Install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK) for Windows 10. Download and install the [ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542). For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 ### Add certificates
 

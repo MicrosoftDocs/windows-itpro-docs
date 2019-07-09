@@ -52,9 +52,9 @@ ms.date: 04/24/2018
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
-5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
+5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.
 
-6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
@@ -84,7 +84,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 4.  Click **Policies**, then **Administrative templates**.
 
-5.  Click **Windows components** and then **Microsoft Defender ATP**.
+5.  Click **Windows components** and then **Windows Defender ATP**.
 
 6.  Choose to enable or disable sample sharing from your machines.
 

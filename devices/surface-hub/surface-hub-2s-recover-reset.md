@@ -8,12 +8,13 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
 # Reset and recovery for Surface Hub 2S
 
-If you encounter problems with Surface Hub 2S, you can reset the device to factory settings, recover from the cloud, or recover using a USB drive.
+If you encounter problems with Surface Hub 2S, you can reset the device to factory settings or recover using a USB drive.
 
 To begin, sign into Surface Hub 2S with admin credentials, open the **Settings** app, select **Update & security**, and then select **Recovery**.
 
@@ -22,18 +23,10 @@ To begin, sign into Surface Hub 2S with admin credentials, open the **Settings**
 1. To reset, select **Get Started**.
 2. When the **Ready to reset this device** window appears, select **Reset**. Surface Hub 2S reinstalls the operating system from the recovery partition and may take up to one hour to complete.
 3. Run **the first time Setup program** to reconfigure the device.
-4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/en-us/intune/devices-wipe).
+4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).
 
 ![*Reset and recovery for Surface Hub 2S*](images/sh2-reset.png)<br>
 *Figure 1. Reset and recovery for Surface Hub 2S.* 
-
-## Recover from the cloud
-
-1. To recover, select **Restart now**.
-2. In advanced startup mode, select the option to recover the device from the cloud. Surface Hub 2S downloads the latest available customer image from the cloud and reinstalls the operating system.
-3. Remain connected to the network during the recovery process.
-4. Run **the first time Setup program** to reconfigure the device.
-5. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/en-us/intune/devices-wipe).
 
 ## Recover Surface Hub 2S using USB recovery drive
 
@@ -45,7 +38,7 @@ Surface Hub 2S lets you reinstall the device using a recovery image, which allow
 
 1. Begin with a USB 3.0 drive with 8 GB or 16 GB of storage, formatted as FAT32.
 2. Download recovery image from the Surface Recovery website onto the USB drive and connect it to any USB-C or USB A port on Surface Hub 2S.
-3. Turn off the device, hold the Volume down button, and then press the Power. Keep holding the Volume down button until you see circling dots below the Windows logo.
+3. Turn off the device. While holding down the Volume down button, press the Power button. Keep holding both buttons until you see the Windows logo. Release the Power button but continue to hold the Volume until the Install UI begins.
 
 ![*Use Volume down and power buttons to initiate recovery*](images/sh2-keypad.png) <br>
 

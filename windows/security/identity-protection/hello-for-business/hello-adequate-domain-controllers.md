@@ -19,7 +19,7 @@ ms.reviewer:
 # Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
 
 **Applies to**
--   Windows 10, version 1702 or later
+-   Windows 10, version 1703 or later
 -   Windows Server, versions 2016 and 2019
 -   Hybrid or On-Premises deployment
 -   Key trust
