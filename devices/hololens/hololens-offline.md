@@ -3,6 +3,7 @@ title: Use HoloLens offline
 description: To set up HoloLens, you'll need to connect to a Wi-Fi network
 ms.assetid: b86f603c-d25f-409b-b055-4bbc6edcd301
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens
