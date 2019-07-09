@@ -6503,7 +6503,7 @@
 {
 "source_path": "store-for-business/app-inventory-management-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
