@@ -22,7 +22,7 @@ ms.topic: article
 
 [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows 10 Feature on Demand (FOD)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
 
-Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
+Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable-windows-mixed-reality-in-wsus). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block-the-mixed-reality-portal).
 
 ## Enable Windows Mixed Reality in WSUS
 

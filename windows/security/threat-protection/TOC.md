@@ -421,6 +421,11 @@
 #### [Troubleshoot Microsoft Defender ATP service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
 
+
+#### [Troubleshoot live response issues]()
+##### [Troubleshoot issues related to live response](microsoft-defender-atp/troubleshoot-live-response.md)
+
+
 ####Troubleshoot attack surface reduction
 ##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
 ##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)

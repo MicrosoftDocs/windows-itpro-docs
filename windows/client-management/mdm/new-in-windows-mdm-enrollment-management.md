@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/15/2019
+ms.date: 07/01/2019
 ---
 
 # What's new in mobile device enrollment and management
@@ -56,6 +56,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [July 2019](#july-2019)
     - [June 2019](#june-2019)
     - [May 2019](#may-2019)
     - [April 2019](#april-2019)
@@ -1879,6 +1880,13 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### July 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|Create a custom configuration service provider|Deleted the following documents from the CSP reference because extensibility via CSPs is not currently supported:<br>Create a custom configuration service provider<br>Design a custom configuration service provider<br>IConfigServiceProvider2<br>IConfigServiceProvider2::ConfigManagerNotification<br>IConfigServiceProvider2::GetNode<br>ICSPNode<br>ICSPNode::Add<br>ICSPNode::Clear<br>ICSPNode::Copy<br>ICSPNode::DeleteChild<br>ICSPNode::DeleteProperty<br>ICSPNode::Execute<br>ICSPNode::GetChildNodeNames<br>ICSPNode::GetProperty<br>ICSPNode::GetPropertyIdentifiers<br>ICSPNode::GetValue<br>ICSPNode::Move<br>ICSPNode::SetProperty<br>ICSPNode::SetValue<br>ICSPNodeTransactioning<br>ICSPValidate<br>Samples for writing a custom configuration service provider|
+
 
 ### June 2019
 

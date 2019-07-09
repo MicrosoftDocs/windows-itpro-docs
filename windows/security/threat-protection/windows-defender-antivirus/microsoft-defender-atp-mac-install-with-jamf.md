@@ -24,6 +24,13 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
+This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
+- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+- [Create JAMF policies](#create-jamf-policies)
+- [Client device setup](#client-device-setup)
+- [Deployment](#deployment)
+- [Check onboarding status](#check-onboarding-status)
+
 ## Prerequisites and system requirements
 
 Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
@@ -57,7 +64,7 @@ Download the installation and onboarding packages from Windows Defender Security
     mavel-macmini:Downloads test$
     ```
 
-## Create JAMF Policies
+## Create JAMF policies
 
 You need to create a configuration profile and a policy to start deploying Microsoft Defender ATP for Mac to client devices.
 
