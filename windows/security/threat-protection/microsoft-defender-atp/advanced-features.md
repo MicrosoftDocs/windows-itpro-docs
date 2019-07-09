@@ -39,6 +39,7 @@ When you enable this feature, users with the appropriate permissions can initiat
 For more information on role assignments see, [Create and manage roles](user-roles.md).
 
 ## Live response unsigned script execution
+
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
 ## Auto-resolve remediated alerts
@@ -58,7 +59,7 @@ Blocking is only available if your organization uses Windows Defender Antivirus 
 
 This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on machines in your organization.
 
-To turn **Block or allow** files on:
+To turn **Allow or block** files on:
 
 1. In the navigation pane, select **Settings** > **Advanced features** > **Allow or block file**.
 
