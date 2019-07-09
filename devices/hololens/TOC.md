@@ -11,7 +11,7 @@
 ## [Manage updates to HoloLens](hololens-updates.md)
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
 ## [Use the HoloLens Clicker](hololens-clicker.md)
-## [Restart or recover the HoloLens](hololens-restart-recover.md)
+## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
 ## [Restart or recover the HoloLens clicker](hololens-clicker-restart-recover.md)
 
 # Application Management 
