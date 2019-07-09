@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 3/1/2019
+ms.date: 7/9/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
