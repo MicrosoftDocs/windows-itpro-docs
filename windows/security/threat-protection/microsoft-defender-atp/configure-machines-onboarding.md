@@ -28,6 +28,8 @@ ms.topic: procedural
 
 Each onboarded machine adds an additional endpoint detection and response (EDR) sensor and increases visibility over breach activity in your network. Onboarding also ensures that a machine can be checked for vulnerable components as well security configuration issues and can receive critical remediation actions during attacks.
 
+>[!NOTE] Before you can track and manage onboarding of machines, [enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management).
+
 ## Discover and track unprotected machines
 
 The **Onboarding** card provides a high-level overview of your onboarding rate by comparing the number of Windows 10 machines that have actually onboarded to Microsoft Defender ATP against the total number of Intune-managed Windows 10 machines.
