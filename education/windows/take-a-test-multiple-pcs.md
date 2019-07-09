@@ -191,7 +191,7 @@ Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5
 12. Create a new **Action**.
 13. Configure the action to **Start a program**.
 14. In the **Program/script** field, enter **powershell**.
-15. In the **Add arguments** field, enter **-file "<path to powershell script>"**.
+15. In the **Add arguments** field, enter **-file "\<path to powershell script>"**.
 16. Click **OK**.
 17. Navigate to the **Triggers** tab and create a new trigger.
 18. Specify the trigger to be **On a schedule**.

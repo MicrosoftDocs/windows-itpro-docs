@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -38,7 +39,7 @@ Use the Microsoft Surface UEFI Configurator to turn on or off the following UEFI
 
 ## Create UEFI configuration image
 
-Unlike other Surface devices, you cannot use an MSI file or a Win PE image to apply these settings on Surface Hub 2S. Instead, you need to create a USB image to load into the device. To create a Surface Hub 2S UEFI configuration image, download and install the latest version of the Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center. For more information about using UEFI and SEMM, see [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode).
+Unlike other Surface devices, you cannot use an MSI file or a Win PE image to apply these settings on Surface Hub 2S. Instead, you need to create a USB image to load into the device. To create a Surface Hub 2S UEFI configuration image, download and install the latest version of the Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center. For more information about using UEFI and SEMM, see [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
 
 ## To configure UEFI on Surface Hub 2S
 

@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -17,7 +18,7 @@ Creating a Surface Hub device account (also known as a Room mailbox) allows Surf
 
 Unlike standard Room mailboxes that remain disabled by default, you need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
 
-Create the account using the Microsoft 365 admin center or by using PowerShell. You can use Exhange Online PowerShell to configure specific features including: 
+Create the account using the Microsoft 365 admin center or by using PowerShell. You can use Exchange Online PowerShell to configure specific features including: 
 
 -  Calendar processing for every Surface Hub device account.
 -  Custom auto replies to scheduling requests.
@@ -44,7 +45,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 ### Finalize setup via PowerShell
 
 - **Skype for Business:** For Skype for Business only (on-premises or online), you can enable the Skype for Business object by running **Enable-CsMeetingRoom** to enable features such as Meeting room prompt for audio and Lobby hold.
-- **Calling features:** Regardless of your Office 365 licensing configuration, run *Enable-CsMeetingRoom* to enable features such as **Meeting room prompt for audio** and **Lobby hold**.
+
 - **Calendar:** Set **Calendar Auto processing** for this account.
 
 ## Create account using PowerShell

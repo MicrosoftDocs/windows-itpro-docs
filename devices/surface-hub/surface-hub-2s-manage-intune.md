@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -34,11 +35,11 @@ Select Windows 10 Team for preset device restriction settings for Surface Hub an
 
  ![Set device restrictions for Surface Hub 2S.](images/sh2-set-intune3.png) <br>
 
-These settings include user experience and app behavior, Azure Log Analytics registration, Maintenance windows configuration, Session settings, and Miracast settings.
+These settings include user experience and app behavior, Azure Log Analytics registration, Maintenance windows configuration, Session settings, and Miracast settings. For a complete list of available Windows 10 Team settings, see [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp).
 
-## Additional supported configuration service providers
+## Additional supported configuration service providers (CSPs)
 
-For a list of all available configuration service providers (CSPs), see [SurfaceHub CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/surfacehub-csp).
+For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
 
 ## Quality of Service (QoS) settings
 

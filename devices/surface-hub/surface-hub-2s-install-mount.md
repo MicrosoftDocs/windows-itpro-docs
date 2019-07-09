@@ -8,6 +8,7 @@ author: robmazz
 ms.author: robmazz
 audience: Admin
 ms.topic: article
+ms.date: 06/20/2019
 ms.localizationpriority: Normal
 ---
 
@@ -21,7 +22,7 @@ For more information, see [Officially licensed third-party accessories](http://l
 
  ![Surface Hub 2S on Roam Mobile Stand](images/sh2-mobile-stand.png)<br>
 
-If you’re not using licensed accessories, see [Customizing installation of Surface Hub 2S](surface-hub-2s-connect.md).
+If you’re not using licensed accessories, see [Customize wall mount of Surface Hub 2S](surface-hub-2s-custom-install.md).
 
 | 1. **Set up your mount first** | |
 |:------ |:-------- |

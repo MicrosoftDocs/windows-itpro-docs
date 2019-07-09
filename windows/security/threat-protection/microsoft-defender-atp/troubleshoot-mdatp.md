@@ -19,7 +19,7 @@ ms.topic: troubleshooting
 
 # Troubleshoot service issues
 
-This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
+This section addresses issues that might arise as you use the Microsoft Defender Advanced Threat service.
 
 ## Server error - Access is denied due to invalid credentials
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.

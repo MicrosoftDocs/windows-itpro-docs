@@ -12,7 +12,7 @@
 #### [Site planning for Surface Hub 2S](surface-hub-2s-site-planning.md)
 #### [Surface Hub 2S quick start](surface-hub-2s-quick-start.md)
 #### [Install and mount Surface Hub 2S](surface-hub-2s-install-mount.md)
-#### [Customizing installation of Surface Hub 2S](surface-hub-2s-custom-install.md)
+#### [Customize wall mount of Surface Hub 2S](surface-hub-2s-custom-install.md)
 #### [Setup worksheet](setup-worksheet-surface-hub.md)
 #### [Surface Hub 2S ports and keypad overview](surface-hub-2s-port-keypad-overview.md)
 #### [Connect devices to Surface Hub 2S](surface-hub-2s-connect.md)
@@ -20,6 +20,7 @@
 ### [Configure Easy Authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
 
 ## Deploy
+### [First time setup for Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Create provisioning packages for Surface Hub 2S](surface-hub-2s-deploy.md)
@@ -43,6 +44,7 @@
 ## Support
 ### [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)
 ### [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
+### [How to pack and ship your Surface Hub 2S for service](surface-hub-2s-pack-components.md)
 ### [Change history](surface-hub-2s-change-history.md)
 
 # Surface Hub

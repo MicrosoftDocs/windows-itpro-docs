@@ -21,7 +21,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/task-checklist-planning-blue.svg" alt="Plan" />
+                            <img src="https://docs.microsoft.com/office/media/icons/task-checklist-planning-blue.svg" alt="Plan" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -39,7 +39,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -58,7 +58,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow-blue.svg" alt="Manage" />
+                            <img src="https://docs.microsoft.com/office/media/icons/process-flow-blue.svg" alt="Manage" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -80,7 +80,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Secure" />
+                            <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Secure" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -99,7 +99,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector-blue.svg" alt="Support" />
+                            <img src="https://docs.microsoft.com/office/media/icons/connector-blue.svg" alt="Support" />
                         </div>
                     </div>
                     <div class="cardText">

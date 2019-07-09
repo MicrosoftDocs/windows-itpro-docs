@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/15/2019
+ms.date: 07/01/2019
 ---
 
 # What's new in mobile device enrollment and management
@@ -56,6 +56,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [July 2019](#july-2019)
     - [June 2019](#june-2019)
     - [May 2019](#may-2019)
     - [April 2019](#april-2019)
@@ -1487,7 +1488,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>New and updated policies in Policy CSP</p></td>
 <td style="vertical-align:top"><p>The following policies have been added to the <a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a>:</p>
 <ul>
-<li>Accounts/DomainNamesForEmailSync</li>
 <li>ApplicationManagement/AllowWindowsBridgeForAndroidAppsExecution</li>
 <li>Bluetooth/ServicesAllowedList</li>
 <li>DataProtection/AllowAzureRMSForEDP</li>
@@ -1881,6 +1881,13 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 ## Change history in MDM documentation
 
+### July 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|Create a custom configuration service provider|Deleted the following documents from the CSP reference because extensibility via CSPs is not currently supported:<br>Create a custom configuration service provider<br>Design a custom configuration service provider<br>IConfigServiceProvider2<br>IConfigServiceProvider2::ConfigManagerNotification<br>IConfigServiceProvider2::GetNode<br>ICSPNode<br>ICSPNode::Add<br>ICSPNode::Clear<br>ICSPNode::Copy<br>ICSPNode::DeleteChild<br>ICSPNode::DeleteProperty<br>ICSPNode::Execute<br>ICSPNode::GetChildNodeNames<br>ICSPNode::GetProperty<br>ICSPNode::GetPropertyIdentifiers<br>ICSPNode::GetValue<br>ICSPNode::Move<br>ICSPNode::SetProperty<br>ICSPNode::SetValue<br>ICSPNodeTransactioning<br>ICSPValidate<br>Samples for writing a custom configuration service provider|
+
+
 ### June 2019
 
 |New or updated topic | Description|
@@ -1904,7 +1911,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |[Policy CSP - System](policy-csp-system.md)|Added the following new policies:<br>AllowCommercialDataPipeline, TurnOffFileHistory.|
 |[Policy CSP - Troubleshooting](policy-csp-troubleshooting.md)|Added the following new policy:<br>AllowRecommendations.|
 |[Policy CSP - Update](policy-csp-update.md)|Added the following new policies:<br>AutomaticMaintenanceWakeUp, ConfigureDeadlineForFeatureUpdates, ConfigureDeadlineForQualityUpdates, ConfigureDeadlineGracePeriod, ConfigureDeadlineNoAutoReboot.|
-|[Policy CSP - WindowsLogon](policy-csp-windowslogon.md)|Added the following new policies:<br>AllowAutomaticRestartSignOn, ConfigAutomaticRestartSignOn, EnableFirstLogonAnimation.|
+|[Policy CSP - WindowsLogon](policy-csp-windowslogon.md)|Added the following new policies:<br>AllowAutomaticRestartSignOn, ConfigAutomaticRestartSignOn, EnableFirstLogonAnimation.<br><br>Removed the following policy:<br>SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart. This policy is replaced by AllowAutomaticRestartSignOn.|
 
 ### April 2019
 

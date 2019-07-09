@@ -182,7 +182,7 @@ The User Portal and Mobile Application web services need to communicate with the
 
 1. Open **Active Directory Users and Computers**.
 2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Right-click the **Users** container, select **New**, and select **User**.
-3. In the **New Object – User** dialog box, type **PFWSDK_<computerName>** in the **First name** and **User logon name** boxes, where *<computer>* is the name of the primary MFA server running the Web Services SDK.  Click **Next**.
+3. In the **New Object – User** dialog box, type **PFWSDK_\<computerName>** in the **First name** and **User logon name** boxes, where *\<computer>* is the name of the primary MFA server running the Web Services SDK.  Click **Next**.
 4. Type a strong password and confirm it in the respective boxes.  Clear **User must change password at next logon**. Click **Next**.  Click **Finish** to create the user account.
 
 #### Add the MFA SDK user account to the Phonefactor Admins group
@@ -192,7 +192,7 @@ Adding the WebServices SDK user account to the Phonefactor Admins group provides
 1. Open **Active Directory Users and Computers**.
 2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactors Admin** security group and select Properties.
 3. Click the Members tab.
-4. Click **Add**. Click **Object Types..** Type the PFWSDK_<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
+4. Click **Add**. Click **Object Types..** Type the PFWSDK_\<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
     * The Webservices SDK user account
     *  Group or user account that will manage the User Portal server.
@@ -507,7 +507,7 @@ Sign in the primary AD FS server with _local administrator_ equivalent credentia
 
 Sign in the primary AD FS server with _local administrator_ equivalent credentials.
 
-Edit the **Register-MultiFactorAuthenticationAdfsAdapter.ps1** script adding `-ConfigurationFilePath <path>` to the end of the `Register-AdfsAuthenticationProvider` command where **<path>** is the full path to the **MultiFactorAuthenticationAdfsAdapter.config** file.
+Edit the **Register-MultiFactorAuthenticationAdfsAdapter.ps1** script adding `-ConfigurationFilePath <path>` to the end of the `Register-AdfsAuthenticationProvider` command where **\<path>** is the full path to the **MultiFactorAuthenticationAdfsAdapter.config** file.
 
 ### Run the AD FS Adapter PowerShell cmdlet
 
