@@ -17,7 +17,6 @@ manager: dansimp
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
  
-<span id="get-insider" />
 
 ## How do I install the Insider builds? 
  
