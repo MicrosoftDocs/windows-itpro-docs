@@ -1567,10 +1567,10 @@ GP Info:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td></td>
 </tr>
@@ -1587,6 +1587,11 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
+
+> [!WARNING]
+> Starting in the version 1803 of Windows, this policy is deprecated.
+
+
 Microsoft network server: Amount of idle time required before suspending a session
 
 This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
