@@ -1591,7 +1591,6 @@ GP Info:
 > [!WARNING]
 > Starting in the version 1803 of Windows, this policy is deprecated.
 
-
 Microsoft network server: Amount of idle time required before suspending a session
 
 This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
