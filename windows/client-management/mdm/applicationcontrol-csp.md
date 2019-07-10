@@ -50,14 +50,14 @@ This subtree has nodes containing information which describes the policy indicat
 
 Scope is dynamic. Supported operation is Get.
 
-<a href="" id="applicationcontrol-policies-policyguid-policyinfo-version"></a>**EApplicationControl/Policies/_Policy GUID_/PolicyInfo/Version**  
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-version"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Version**  
 This node provides the version of the policy indicated by the GUID. Stored as a string, but when parsing use a uint64 as the containing data type.
 
 Scope is dynamic. Supported operation is Get.
 
 Value type is char.
 
-<a href="" id="applicationcontrol-policies-policyguid-policyinfo-iseffective"></a>**EApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsEffective**  
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-iseffective"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsEffective**  
 This node specifies whether a policy is actually loaded by the enforcement engine and is in effect on a system.
 
 Scope is dynamic. Supported operation is Get.
@@ -67,7 +67,7 @@ Value type is bool. Supported values are as follows:
 - False — Indicates that the policy is not loaded by the enforcement engine and is not in effect on a system. This is the default.
 <Verify>
 
-<a href="" id="applicationcontrol-policies-policyguid-policyinfo-isdeployed"></a>**EApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsDeployed**  
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-isdeployed"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsDeployed**  
 This node specifies whether a policy is on the system and is present on the physical machine.
 
 Scope is dynamic. Supported operation is Get.
@@ -77,7 +77,7 @@ Value type is bool. Supported values are as follows:
 - False — Indicates that the policy is not on the system and is not present on the physical machine. This is the default.
 <Verify>
 
-<a href="" id="applicationcontrol-policies-policyguid-policyinfo-isauthorized"></a>**EApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsAuthorized**  
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-isauthorized"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsAuthorized**  
 This node specifies whether the policy is authorized to be loaded by the enforcement engine on the system. If not authorized, a policy cannot take effect on the system.
 
 Scope is dynamic. Supported operation is Get.
@@ -87,105 +87,140 @@ Value type is bool. Supported values are as follows:
 - False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
 <Verify>
 
-The following table provides the policy output based on different combinations of PolicyInfo nodes values:
+The following table provides the result of this policy based on different values of IsAuthorized, IsDeployed, and IsEffective nodes:
+|IsAuthorized|IsDeployed|IsEffective|Resultant|
+|------------|----------|-----------|---------|
+|True|True|True|Policy is currently running and in effect.|
+|True|True|False|Policy requires a reboot to take effect.|
+|True|False|True|Policy requires a reboot to unload from CI.|
+|False|True|True|Not Reachable.|
+|True|False|False|*Not Reachable.|
+|False|True|False|*Not Reachable.|
+|False|False|True|Not Reachable.|
+|False|False|False|*Not Reachable.|
+```*``` denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
 
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes**  
-Required. This node is supported only in device context.  
-This node's children register which resource types the policy provider supports for provisioning. Only registered providers for a particular resource type will have their policies incorporated with ESP tracking message.
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-status"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status**  
+This node specifies whether the deployment of the policy indicated by the GUID was successful.
 
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+Scope is dynamic. Supported operation is Get.
 
-<a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-trackedresourcetypes-Apps"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/TrackedResourceTypes/Apps**  
-Required. This node is supported only in device context.  
-This node specifies if the policy provider is registered for app provisioning.
+Value type is integer. Default value is 0 == OK.
 
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+<a href="" id="applicationcontrol-policies-policyguid-policyinfo-friendlyname"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/FriendlyName**  
+This node provides the friendly name of the policy indicated by the policy GUID.
 
-Value type is boolean. Expected values are as follows:
-- false — Indicates that the policy provider is not registered for app provisioning. This is the default.
-- true — Indicates that the policy provider is registered for app provisioning.
+Scope is dynamic. Supported operation is Get.
 
-<a href="" id="enrollmentstatustracking-setup"></a>**EnrollmentStatusTracking/Setup**  
-Required. This node is supported in both user context and device context.  
-Provides the settings that ESP reads during the account setup phase in the user context and device setup phase in the device context. Policy providers use this node to communicate progress status back to the ESP, which is then displayed to the user through progress messages.
+Value type is char.
 
-Scope is permanent. Supported operation is Get.
+## ApplicationControl CSP usage guidance  
 
-<a href="" id="enrollmentstatustracking-setup-apps"></a>**EnrollmentStatusTracking/Setup/Apps**  
-Required. This node is supported in both user context and device context.  
-Provides the settings to communicate to the ESP which app installations it should block on and provide progress in the status message to the user.
+To use this CSP:  
+- Know a generated policy’s GUID, which can be found in the policy xml as ```<PolicyTypeID>```.
+- Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+- Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
 
-Scope is permanent. Supported operation is Get.
+    Sample certutil invocation:
+    ```
+    certutil -encode WinSiPolicy.p7b WinSiPolicy.cer 
+    ```
+    Alternatively, you can use the following PowerShell invocation:
+    ```
+    [Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
+    ```
+    If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you use Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.
 
-<a href="" id="enrollmentstatustracking-setup-apps-policyproviders"></a>**EnrollmentStatusTracking/Setup/Apps/PolicyProviders**  
-Required. This node is supported in both user context and device context.  
-Specifies the app policy providers for this CSP. These are the policy providers the ESP should wait on before showing the tracking message with the status to the user.
+- Deploy the policy:
+    - To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 snippet).
 
-Scope is permanent. Supported operation is Get.
+    - To deploy base policy and supplemental policies:
+        - Perform an ADD as described above first with the GUID and policy data for the base policy
+        - Repeat for each base or supplemental policy in turn (with its own GUID and data)
 
-<a href="" id="enrollmentstatustracking-setup-apps-policyproviders-providername"></a>**EnrollmentStatusTracking/Setup/Apps/PolicyProviders**/***ProviderName***  
-Optional. This node is supported in both user context and device context.  
-Represents an app policy provider for the ESP. Existence of this node indicates to the ESP that it should not show the tracking status message until the TrackingPoliciesCreated node has been set to true.
+    The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
 
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
+    **Example 1: Add first base policy**
+    ```
+    <Add>
+        <CmdID>1</CmdID>
+        <Item>
+            <Target>
+                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base1GUID}/Policy</LocURI>
+            </Target>
+            <Meta>
+                <Format xmlns="syncml:metinf">b64</Format>
+            </Meta>
+            <Data> {Base1Data} </Data>
+        </Item>
+    </Add>
+    ```
+    **Example 2: Add second base policy**
+    ```
+    <Add>
+        <CmdID>1</CmdID>
+        <Item>
+            <Target>
+                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base2GUID}/Policy</LocURI>
+            </Target>
+            <Meta>
+                <Format xmlns="syncml:metinf">b64</Format>
+            </Meta>
+            <Data> {Base2Data} </Data>
+        </Item>
+    </Add>
+    ```
+    **Example 3: Add supplemental policy**
+    ```
+    <Add>
+        <CmdID>1</CmdID>
+        <Item>
+            <Target>
+                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Supplemental1GUID}/Policy</LocURI>
+            </Target>
+            <Meta>
+                <Format xmlns="syncml:metinf">b64</Format>
+            </Meta>
+            <Data> {Supplemental1Data} </Data>
+        </Item>
+    </Add>
+    ```
+- Perform a GET operation using a deployed policy’s GUID to interrogate/inspect the policy itself or information about it.
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy (raw p7b)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Version (policy version)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsEffective (is the policy in effect)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsDeployed (is the policy on the system)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsAuthorized (is the policy authorized on the system)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Status (was the deployment successful)
+    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/FriendlyName (the friendly name per the policy)
 
-<a href="" id="enrollmentstatustracking-setup-apps-policyproviders-providername-trackingpoliciescreated"></a>**EnrollmentStatusTracking/Setup/Apps/PolicyProviders/*ProviderName*/TrackingPoliciesCreated**  
-Required. This node is supported in both user context and device context.  
-Indicates if the provider has created the required policies for the ESP to use for tracking app installation progress. The policy provider itself is expected to set the value of this node, not the MDM server.
+    **Sample Get command**  
+    ```
+    <Get>
+        <CmdID>1</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{PolicyGUID}/Policy</LocURI>
+                </Target>
+            </Item>
+    </Get>
+    ```
+- Delete the policy. 
+  To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy**.
 
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is boolean. The expected values are as follows:
-- true — Indicates that the provider has created the required policies.
-- false — Indicates that the provider has not created the required policies. This is the default.
-
-<a href="" id="enrollmentstatustracking-setup-apps-tracking"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking**  
-Required. This node is supported in both user context and device context.  
-Root node for the app installations being tracked by the ESP.
-
-Scope is permanent. Supported operation is Get.
-
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/_ProviderName_**  
-Optional. This node is supported in both user context and device context.  
-Indicates the provider name responsible for installing the apps and providing status back to ESP.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/_AppName_**  
-Optional. This node is supported in both user context and device context.  
-Represents a unique name for the app whose progress should be tracked by the ESP. The policy provider can define any arbitrary app name as ESP does not use the app name directly.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname-installationstate"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName*/InstallationState**  
-Optional. This node is supported in both user context and device context.  
-Represents the installation state for the app. The policy providers (not the MDM server) must update this node for the ESP to track the installation progress and update the status message.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is integer. Expected values are as follows:
-- 1 — NotInstalled
-- 2 — InProgress
-- 3 — Completed
-- 4 — Error
-
-<a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname-rebootrequired"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName*/RebootRequired**  
-Optional. This node is supported in both user context and device context.  
-Indicates if the app installation requires ESP to issue a reboot. The policy providers installing the app (not the MDM server) must set this node. If the policy providers do not set this node, the ESP will not reboot the device for the app installation.
-
-Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
-
-Value type is integer. Expected values are as follows:
-- 1 — NotRequired
-- 2 — SoftReboot
-- 3 — HardReboot
-
-<a href="" id="enrollmentstatustracking-setup-hasprovisioningcompleted"></a>**EnrollmentStatusTracking/Setup/HasProvisioningCompleted**  
-Required. This node is supported in both user context and device context.  
-ESP sets this node when it completes. Providers can query this node to determine if the ESP is showing, which allows them to determine if they still need to provide status updates for the ESP through this CSP.
-
-Scope is permanent. Supported operation is Get.
-
-Value type is boolean. Expected values are as follows:
-- true — Indicates that ESP has completed. This is the default.
-- false — Indicates that ESP is displayed, and provisioning is still going.
+  > [!Note]
+  >  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** is not sufficient to delete a signed policy.
+    
+   To delete a signed policy, first replace it with a signed update allowing unsigned policy, then deploy another update with unsigned policy, then perform delete.
+    
+   **Delete a policy**
+   ```
+   <Delete>
+     <CmdID>1</CmdID>
+        <Item>
+            <Target>
+                  <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{PolicyGUID}/Policy</LocURI>
+            </Target>
+        </Item>
+   </Delete>
+   ```
