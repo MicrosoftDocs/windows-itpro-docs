@@ -3,6 +3,7 @@ title: Restart or recover the HoloLens clicker
 description: Things to try if the HoloLens clicker is unresponsive or isn’t working well.
 ms.assetid: 13406eca-e2c6-4cfc-8ace-426ff8f837f4
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens
