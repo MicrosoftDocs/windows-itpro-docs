@@ -3,6 +3,7 @@ title: Get apps for HoloLens
 description: The Microsoft Store is your source for apps and games that work with HoloLens. 
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens

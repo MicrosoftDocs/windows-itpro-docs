@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 3/1/2019
+ms.date: 7/9/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -70,14 +70,15 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | 14. Offline maps | [AllowOfflineMapsDownloadOverMeteredConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-maps)|Allows the download and update of map data over metered connections. <br /> **Set to 0 (zero)** 
 | | [EnableOfflineMapsAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-maps#maps-enableofflinemapsautoupdate)|Disables the automatic download and update of map data. **Set to 0  (zero)** 
 | 15. OneDrive | [DisableOneDriveFileSync](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync)| Allows IT Admins to prevent apps and features from working with files on OneDrive. **Set to 1 (one)** 
+|   15.1 Injest the ADMX | To get the latest OneDrive ADMX file you need an up-to-date Windows 10 client. | The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (e.g. "18.162.0812.0001"). 
+|   15.2 Prevent Network Traffic before User SignIn | PreventNetworkTrafficPreUserSignIn | The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn
 | 16. Preinstalled apps | N/A | N/A 
 | 17. Privacy settings | | Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC. 
 |   17.1 General | [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | This policy setting controls the ability to send inking and typing data to Microsoft. **Set to 0 (zero)**
 |   17.2 Location | [System/AllowLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowlocation) | Specifies whether to allow app access to the Location service. **Set to 0  (zero)**
 |   17.3 Camera | [Camera/AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera#camera-allowcamera) | Disables or enables the camera. **Set to 0  (zero)**
 |   17.4 Microphone | [Privacy/LetAppsAccessMicrophone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) | Specifies whether Windows apps can access the microphone. **Set to 2 (two)**  
-|   17.5 Notifications | [Notifications/DisallowCloudNotification](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification) | Turn off notifications network usage.  **DO NOT TURN OFF WNS Notifications if you want manage your device(s) using Microsoft InTune**
-| | [Privacy/LetAppsAccessNotifications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessnotifications) | Specifies whether Windows apps can access notifications. **Set to 2 (two)**  
+|   17.5 Notifications | [Privacy/LetAppsAccessNotifications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessnotifications) | Specifies whether Windows apps can access notifications. **Set to 2 (two)**
 | | [Settings/AllowOnlineTips]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowonlinetips) | Enables or disables the retrieval of online tips and help for the Settings app. **Set to Disabled**
 |   17.6 Speech, Inking, & Typing | [Privacy/AllowInputPersonalization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | This policy specifies whether users on the device have the option to enable online speech recognition. **Set to 0 (zero)** 
 | | [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection)| This policy setting controls the ability to send inking and typing data to Microsoft  **Set to 0 (zero)** 
@@ -106,13 +107,30 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 | | [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Stop sending file samples back to Microsoft. **Set to 2 (two)** 
 |   23.1 Windows Defender Smartscreen | [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | Disable Windows Defender Smartscreen. **Set to 0 (zero)** 
 |   23.2 Windows Defender Smartscreen EnableAppInstallControl | [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol) | Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
+|   23.3 Windows Defender Potentially Unwanted Applications(PUA) Protection | [Defender/PUAProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) | Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)** 
 | 24. Windows Spotlight | [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight) | Disable Windows Spotlight. **Set to 0 (zero)** 
 | 25. Microsoft Store | [ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)| Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)** 
 | | [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)| Specifies whether automatic update of apps from Microsoft Store are allowed. **Set to 0 (zero)** 
 | 25.1 Apps for websites | [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers) | This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
 | 26. Windows Update Delivery Optimization | | The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). 
 | | [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)| Lets you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)** 
-| 27. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. **Set to 5 (five)** 
+| 27. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. **Set to 5 (five)**
+|   27.1 Windows Update Allow Update Service | [Update/AllowUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowupdateservice) | Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
+|   27.2 Windows Update Service URL| [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl) | Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with this Value:
+
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Meta>
+                    <Format>chr</Format>
+                    <Type>text/plain</Type>
+                </Meta>
+                <Target>
+                    <LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>
+                </Target>
+                <Data>http://abcd-srv:8530</Data>
+            </Item>
+        </Replace>  
 
 
 ### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
