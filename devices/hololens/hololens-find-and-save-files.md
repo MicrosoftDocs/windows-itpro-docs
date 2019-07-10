@@ -3,6 +3,7 @@ title: Find and save files on HoloLens
 description: Use File Explorer on HoloLens to view and manage files on your device
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens

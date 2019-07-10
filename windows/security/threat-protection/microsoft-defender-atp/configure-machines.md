@@ -49,14 +49,17 @@ Machine configuration management works closely with Intune device management to 
 
 Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
 
+>[!NOTE]
+>To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/en-us/intune/licenses-assign).
+
 >[!TIP] 
 >To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
->[!NOTE] 
->During preview, you might encounter a few known limitations:
->- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
->- The count of onboarded machines tracked by machine configuration management might not include machines onboarded using Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
->- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
+## Known issues and limitations in this preview 
+During preview, you might encounter a few known limitations:
+- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
+- The count of onboarded machines tracked by machine configuration management might not include machines onboarded using Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
+- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
 
 
 ## In this section
