@@ -62,7 +62,7 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 - Web Proxy Auto-discovery Protocol (WPAD)
 - Manual static proxy configuration
 
-If a proxy or firewall is blocking anonymous traffic, make sure anonymous traffic is permitted in the previously listed URLs.
+If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
