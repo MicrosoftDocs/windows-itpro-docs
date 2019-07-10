@@ -6,6 +6,7 @@
 ### [What's new in Surface Hub 2S for IT admins](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
 ### [Operating system essentials (Surface Hub) ](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Adjust Surface Hub 2S brightness, volume, and input](surface-hub-2s-onscreen-display.md)
 
 ## Plan
 ### [Surface Hub 2S Site Readiness Guide](surface-hub-2s-site-readiness-guide.md) 

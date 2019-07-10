@@ -13,6 +13,7 @@ ms.localizationpriority: Normal
 ---
 # Adjust Surface Hub 2S brightness, volume, and input
 Surface Hub 2S provides an on-screen display for volume, brightness, and input control. The Source button functions as a toggle key to switch between the volume, brightness, and input control menus.
+
 **To show the on-screen display:**
 
 - Press and hold the **Source** button for 4 seconds.
@@ -23,7 +24,7 @@ Surface Hub 2S provides an on-screen display for volume, brightness, and input c
  
 **To adjust volume:**
 
-1. Use the **Volume up/down** button to increase or decrease volume.
+- Use the **Volume up/down** button to increase or decrease volume.
 
 **To adjust brightness:**
 
@@ -34,6 +35,3 @@ Surface Hub 2S provides an on-screen display for volume, brightness, and input c
 
 1. Press the **Source** button twice to switch to the Source menu.
 2. Use the **Volume up/down** button to switch between PC, HDMI, and USB-C inputs.
-
- 
-
