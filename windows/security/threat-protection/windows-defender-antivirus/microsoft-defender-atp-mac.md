@@ -55,7 +55,7 @@ The following table lists the services and their associated URLs that your netwo
 | -------------- | ------------------------------------ | -------------------------------------------------------------------- |
 | ATP            | Advanced threat protection service   | [https://x.cp.wd.microsoft.com](https://x.cp.wd.microsoft.com), [https://cdn.x.cp.wd.microsoft.com](https://cdn.x.cp.wd.microsoft.com) |
 
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
+To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
