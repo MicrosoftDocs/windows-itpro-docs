@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Compare commercial and government Microsoft Defender ATP
+# Microsoft Defender ATP in Azure Government 
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) in Azure Government uses the same underlying technologies as commercial Microsoft Defender ATP. This offering is currently available to US GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for Azure Government version. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) in Azure Government uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial. This offering is currently available to US Office 365 GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for Azure Government version. 
 
 
 ## Endpoint versions
@@ -75,8 +75,8 @@ Integrations with the following Microsoft products are not currently available:
 - Azure Information Protection
 - Office 365 Advanced Threat Protection
 - Microsoft Cloud App Security
-- Skype
-- Intune
+- Skype for Business
+- Microsoft Intune
 
 ## Microsoft Threat Experts
 Not currently available.
