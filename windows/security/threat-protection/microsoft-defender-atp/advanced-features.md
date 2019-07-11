@@ -39,6 +39,7 @@ When you enable this feature, users with the appropriate permissions can initiat
 For more information on role assignments see, [Create and manage roles](user-roles.md).
 
 ## Live response unsigned script execution
+
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
 ## Auto-resolve remediated alerts
@@ -58,7 +59,7 @@ Blocking is only available if your organization uses Windows Defender Antivirus 
 
 This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on machines in your organization.
 
-To turn **Block or allow** files on:
+To turn **Allow or block** files on:
 
 1. In the navigation pane, select **Settings** > **Advanced features** > **Allow or block file**.
 
@@ -137,12 +138,22 @@ Turning this setting on forwards signals to Azure Information Protection, giving
 
 ## Microsoft Intune connection
 
-This feature is only available if you have an active Microsoft Intune (Intune) license.
+Microsoft Defender ATP can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [enable this feature](configure-conditional-access.md), you'll be able to share Microsoft Defender ATP device information with Intune, enhancing policy enforcement.
 
-When you enable this feature, you'll be able to share Microsoft Defender ATP device information to Intune and enhance policy enforcement.
+>[!IMPORTANT]
+>You'll need to enable the integration on both Intune and Microsoft Defender ATP to use this feature. For more information on specific steps, see [Configure Conditional Access in Microsoft Defender ATP](configure-conditional-access.md).
+
+This feature is only available if you have the following:
+
+- A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
+- An active Microsoft Intune environment, with Intune-managed Windows 10 devices [Azure AD-joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+
+### Conditional Access policy
+
+When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
 
 >[!NOTE]
->You'll need to enable the integration on both Intune and Microsoft Defender ATP to use this feature.
+> The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
 ## Preview features
 
