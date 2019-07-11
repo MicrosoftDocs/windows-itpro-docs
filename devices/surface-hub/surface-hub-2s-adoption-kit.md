@@ -23,7 +23,7 @@ Microsoft has developed downloadable materials that you can make available for y
 -  Training guide – Microsoft Teams desktop
 
 ## End user guides
--  Guide Tto Navigation on Surface Hub our
+-  Guide to Navigation on Surface Hub our
 -  Guide to Office 365 on Surface Hub
 -  Guide to Microsoft Whiteboard on Surface Hub
 -  Guide to Microsoft Teams on Surface Hub
