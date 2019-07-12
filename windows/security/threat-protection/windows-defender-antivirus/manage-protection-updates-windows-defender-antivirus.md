@@ -62,7 +62,7 @@ The WSUS, Configuration Manager, and MMPC sources will deliver less frequent upd
 
 > [!IMPORTANT]
 > If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 14 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
-
+>
 > You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
