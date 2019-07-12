@@ -11,8 +11,8 @@ ms.date: 05/21/2019
 
 # ApplicationControl CSP
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike AppLocker CSP, the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
-Existing WDAC policies deployed using AppLocker CSP’s CodeIntegrity node can now be deployed using ApplicationControl CSP URI. Although WDAC policy deployment via AppLocker CSP will continue to be supported, all new feature work will occur in ApplicationControl CSP only.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Existing WDAC policies deployed using AppLocker CSP’s CodeIntegrity node can now be deployed using ApplicationControl CSP URI. Although WDAC policy deployment via AppLocker CSP will continue to be supported, all new feature work will be done in ApplicationControl CSP only.
 
 The ApplicationControl CSP was added in Windows 10, version 1903.
 
@@ -26,12 +26,12 @@ Defines the root node for the ApplicationControl CSP.
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="applicationcontrol-policies"></a>**ApplicationControl/Policies**  
-This node contains all the policies, each identified by their globally unique identifier (GUID).
+An interior node that contains all the policies, each identified by their globally unique identifier (GUID).
 
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="applicationcontrol-policies-policyguid"></a>**ApplicationControl/Policies/_Policy GUID_**  
-The ApplicationControl CSP enforces that the “ID” segment of a given policy URI is the same GUID as the policy ID in the policy blob. Each Policy GUID node contains a Policy node and a corresponding PolicyInfo node.
+The ApplicationControl CSP enforces that the “ID” segment of a given policy URI is the same GUID as the policy ID in the policy blob. Each *Policy GUID* node contains a Policy node and a corresponding PolicyInfo node.
 
 Scope is dynamic. Supported operation is Get.
 
@@ -45,7 +45,7 @@ Value type is b64. Supported value is any well-formed WDAC policy, i.e. the base
 Default value is empty.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo**  
-This node contains the nodes that describe the policy indicated by the GUID.
+An interior node that contains the nodes that describe the policy indicated by the GUID.
 
 Scope is dynamic. Supported operation is Get.
 
@@ -84,8 +84,9 @@ Value type is bool. Supported values are as follows:
 - False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
 
 The following table provides the result of this policy based on different values of IsAuthorized, IsDeployed, and IsEffective nodes:
-|IsAuthorized|IsDeployed|IsEffective|Resultant|
-|------------|----------|-----------|---------|
+
+|IsAuthorized | IsDeployed | IsEffective | Resultant |
+|------------ | ---------- | ----------- | --------- |
 |True|True|True|Policy is currently running and in effect.|
 |True|True|False|Policy requires a reboot to take effect.|
 |True|False|True|Policy requires a reboot to unload from CI.|
@@ -94,7 +95,8 @@ The following table provides the result of this policy based on different values
 |False|True|False|*Not Reachable.|
 |False|False|True|Not Reachable.|
 |False|False|False|*Not Reachable.|
-```*``` denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
+
+`*` denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-status"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status**  
 This node specifies whether the deployment of the policy indicated by the GUID was successful.
@@ -129,10 +131,10 @@ If you are using hybrid MDM management with System Center Configuration Manager 
 functionality to apply the Code Integrity policy.
 
 ### Deploy policies
-To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
+To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
 
 To deploy base policy and supplemental policies:
-- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
+- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
 - Repeat for each base or supplemental policy (with its own GUID and data).
 
 The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
@@ -185,19 +187,20 @@ The following example shows the deployment of two base policies and a supplement
 ### Get policies
 
 Perform a GET using a deployed policy’s GUID to interrogate/inspect the policy itself or information about it.
+
 The following table displays the result of Get operation on different nodes:
 
 |Nodes | Get Results|
 |------------- | ------|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy|raw p7b|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Version|policy version|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsEffective|is the policy in effect|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsDeployed|is the policy on the system|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsAuthorized|is the policy authorized on the system|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Status|was the deployment successful|
-|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/FriendlyName|the friendly name per the policy|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy|raw p7b|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Version|Policy version|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsEffective|Is the policy in effect|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsDeployed|Is the policy on the system|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsAuthorized|Is the policy authorized on the system|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status|Was the deployment successful|
+|./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/FriendlyName|Friendly name per the policy|
 
-**Sample Get command**  
+The following is an example of Get command:  
 ```xml
  <Get>
     <CmdID>1</CmdID>
@@ -215,9 +218,12 @@ To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationCon
 > [!Note]
 >  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** is not sufficient to delete a signed policy.
     
-To delete a signed policy, first replace it with a signed update allowing unsigned policy, then deploy another update with unsigned policy, then perform delete.
+To delete a signed policy:
+1. Replace it with a signed update allowing unsigned policy.
+2. Deploy another update with unsigned policy.
+3. Perform delete.
     
-**Delete a policy**
+The following is an example of Delete command:
 ```xml
    <Delete>
      <CmdID>1</CmdID>
