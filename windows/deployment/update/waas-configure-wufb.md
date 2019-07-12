@@ -220,7 +220,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| BranchReadinessLevel	| REG_DWORD | 16: systems take Feature Updates for the Current Branch (CB)</br>32: systems take Feature Updates for the Current Branch for Business (CBB)</br>Note: Other value or absent: receive all applicable updates (CB) |
+| BranchReadinessLevel	| REG_DWORD | 2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdates | REG_DWORD | 1: defer quality updates</br>Other value or absent: don’t defer quality updates | 
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
 | PauseQualityUpdatesStartDate | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
@@ -234,7 +234,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
-| BranchReadinessLevel | REG_DWORD | 16: systems take Feature Updates for the Current Branch (CB)</br>32: systems take Feature Updates for the Current Branch for Business (CBB)</br>Note: Other value or absent: receive all applicable updates (CB) |
+| BranchReadinessLevel | REG_DWORD |2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
 | PauseQualityUpdatesStartDate | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: defer feature updates by given days |

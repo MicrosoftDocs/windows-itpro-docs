@@ -1,8 +1,8 @@
 ---
 title: Fileless threats
 ms.reviewer: 
-description: Learn about fileless threats, its categories, and how it runs
-keywords: fileless, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP
+description: Learn about the categories of fileless threats and malware that "live off the land"
+keywords: fileless, fileless malware, living off the land, lolbins, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP, next generation protection
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -18,9 +18,9 @@ search.appverid: met150
 
 # Fileless threats
 
-What exactly is a fileless threat? The term "fileless" suggests that a threat that does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no generally accepted definition. The term is used broadly; it's also used to describe malware families that do rely on files to operate.
+What exactly are fileless threats? The term "fileless" suggests that a threat does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no generally accepted definition for fileless malware. The term is used broadly; it's also used to describe malware families that do rely on files to operate.
 
-Given that attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK_Matrix) for functionalities like execution, persistence, or information theft, some parts of the attack chain may be fileless, while others may involve the filesystem in some form or another.
+Given that attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK_Matrix) for functionalities like execution, persistence, or information theft, some parts of the attack chain may be fileless, while others may involve the filesystem in some form.
 
 For clarity, fileless threats are grouped into different categories.
 
