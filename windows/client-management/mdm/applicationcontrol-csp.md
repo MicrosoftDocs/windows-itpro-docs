@@ -213,10 +213,10 @@ The following is an example of Get command:
 ```
 
 ### Delete policies
-To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy**.
+To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy**.
 
 > [!Note]
->  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** is not sufficient to delete a signed policy.
+>  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
     
 To delete a signed policy:
 1. Replace it with a signed update allowing unsigned policy.
