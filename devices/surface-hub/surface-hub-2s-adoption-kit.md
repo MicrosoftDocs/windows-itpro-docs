@@ -22,6 +22,8 @@ Microsoft has developed downloadable materials that you can make available for y
 -  Training guide – help desk
 -  Training guide – Microsoft Teams desktop
 
+[Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
+
 ## End user guides
 -  Guide to Navigation on Surface Hub our
 -  Guide to Office 365 on Surface Hub
@@ -39,3 +41,5 @@ Microsoft has developed downloadable materials that you can make available for y
 - Sign in to view meetings and files
 - Whiteboard advanced
 - Whiteboard tools
+
+[Download all user guides and quick reference cards](http://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip) 

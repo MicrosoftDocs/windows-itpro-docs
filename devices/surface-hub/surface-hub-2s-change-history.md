@@ -16,6 +16,13 @@ ms.localizationpriority: Normal
 
 This topic summarizes new and updated content in the Surface Hub 2S documentation library.
 
+## July 2019
+
+Changes | Description
+|:--- |:--- |
+| Surface Hub 2S Adoption Kit | New |
+
+
 ## June 2019
 
 Changes | Description
