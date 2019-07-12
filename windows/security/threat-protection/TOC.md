@@ -422,7 +422,7 @@
 ##### [Check service health](microsoft-defender-atp/service-status.md)
 
 
-#### [Troubleshoot live response issues]()
+#### [Troubleshoot live response issues](microsoft-defender-atp/troubleshoot-live-response.md)
 ##### [Troubleshoot issues related to live response](microsoft-defender-atp/troubleshoot-live-response.md)
 
 
