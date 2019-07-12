@@ -88,49 +88,51 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     Modify the MBAM Recovery Database to use the full recovery mode.
 
-    `USE master;`
+    ```sql
+    USE master;
 
-    `GO`
+    GO
 
-    `ALTER DATABASE "MBAM Recovery and Hardware"`
+    ALTER DATABASE "MBAM Recovery and Hardware"
 
-    `   SET RECOVERY FULL;`
+       SET RECOVERY FULL;
 
-    `GO`
+    GO
 
     -- Create MBAM Recovery Database Data and MBAM Recovery logical backup devices.
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
-    `EXEC sp_addumpdevice 'disk', 'MBAM Recovery and Hardware Database Data Device',`
+    EXEC sp_addumpdevice 'disk', 'MBAM Recovery and Hardware Database Data Device',
 
-    `'Z:\MBAM Recovery Database Data.bak';`
+    'Z:\MBAM Recovery Database Data.bak';
 
-    `GO`
+    GO
 
     -- Back up the full MBAM Recovery Database.
 
-    `BACKUP DATABASE [MBAM Recovery and Hardware] TO [MBAM Recovery and Hardware Database Data Device];`
+    BACKUP DATABASE [MBAM Recovery and Hardware] TO [MBAM Recovery and Hardware Database Data Device];
 
-    `GO`
+    GO
 
-    `BACKUP CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    BACKUP CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `TO FILE = 'Z:\SQLServerInstanceCertificateFile'`
+    TO FILE = 'Z:\SQLServerInstanceCertificateFile'
 
-    `WITH PRIVATE KEY`
+    WITH PRIVATE KEY
 
-    `(`
+    (
 
-    `    FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',`
+        FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',
 
-    `    ENCRYPTION BY PASSWORD = '$PASSWORD$'`
+        ENCRYPTION BY PASSWORD = '$PASSWORD$'
 
-    `);`
+    );
 
-    `GO`
+    GO
+    ```
 
     **Note**  
     Replace the following values in the example above with those that match your environment:
@@ -183,43 +185,45 @@ To move the Recovery Database from one computer to another (for example, from Se
 
 4.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Restore MBAM Recovery Database. `
+    ```sql
+    -- Restore MBAM Recovery Database. 
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
     -- Drop certificate created by MBAM Setup.
 
-    `DROP CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    DROP CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `GO`
+    GO
 
     --Add certificate
 
-    `CREATE CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    CREATE CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `FROM FILE = 'Z: \SQLServerInstanceCertificateFile'`
+    FROM FILE = 'Z: \SQLServerInstanceCertificateFile'
 
-    `WITH PRIVATE KEY`
+    WITH PRIVATE KEY
 
-    `(`
+    (
 
-    `    FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',`
+        FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',
 
-    `    DECRYPTION BY PASSWORD = '$PASSWORD$'`
+        DECRYPTION BY PASSWORD = '$PASSWORD$'
 
-    `);`
+    );
 
-    `GO`
+    GO
 
     -- Restore the MBAM Recovery Database data and log files.
 
-    `RESTORE DATABASE [MBAM Recovery and Hardware]`
+    RESTORE DATABASE [MBAM Recovery and Hardware]
 
-    `   FROM DISK = 'Z:\MBAM Recovery Database Data.bak'`
+       FROM DISK = 'Z:\MBAM Recovery Database Data.bak'
 
-    `   WITH REPLACE`
+       WITH REPLACE
+    ```
 
     **Note**  
     Replace the following values in the example above with those that match your environment:
@@ -362,35 +366,37 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
 2.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Modify the MBAM Compliance Status Database to use the full recovery model.`
+    ```sql
+    -- Modify the MBAM Compliance Status Database to use the full recovery model.
 
-    `USE master;`
+    USE master;
 
-    `GO`
+    GO
 
-    `ALTER DATABASE "MBAM Compliance Status"`
+    ALTER DATABASE "MBAM Compliance Status"
 
-    `   SET RECOVERY FULL;`
+       SET RECOVERY FULL;
 
-    `GO`
+    GO
 
-    `-- Create MBAM Compliance Status Data logical backup devices.`
+    -- Create MBAM Compliance Status Data logical backup devices.
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
-    `EXEC sp_addumpdevice 'disk', 'MBAM Compliance Status Database Data Device',`
+    EXEC sp_addumpdevice 'disk', 'MBAM Compliance Status Database Data Device',
 
-    `'Z: \MBAM Compliance Status Database Data.bak';`
+    'Z: \MBAM Compliance Status Database Data.bak';
 
-    `GO`
+    GO
 
     -- Back up the full MBAM Recovery database.
 
-    `BACKUP DATABASE [MBAM Compliance Status] TO [MBAM Compliance Status Database Data Device];`
+    BACKUP DATABASE [MBAM Compliance Status] TO [MBAM Compliance Status Database Data Device];
 
-    `GO`
+    GO
+    ```
 
 3.  Run the SQL file by using a Windows PowerShell command line that is similar to the following:
 
@@ -430,19 +436,21 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
 3.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Create MBAM Compliance Status Database Data logical backup devices. `
+    ```sql
+    -- Create MBAM Compliance Status Database Data logical backup devices. 
 
-    `Use master`
+    Use master
 
-    `GO`
+    GO
 
     -- Restore the MBAM Compliance Status database data files.
 
-    `RESTORE DATABASE [MBAM Compliance Status]`
+    RESTORE DATABASE [MBAM Compliance Status]
 
-    `   FROM DISK = 'C:\test\MBAM Compliance Status Database Data.bak'`
+       FROM DISK = 'C:\test\MBAM Compliance Status Database Data.bak'
 
-    `   WITH REPLACE`
+       WITH REPLACE
+    ```
 
 4.  Run the SQL File by using a Windows PowerShell command line that is similar to the following:
 
