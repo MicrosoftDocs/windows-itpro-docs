@@ -33,7 +33,7 @@ You'll have full access to all the powerful capabilities of the platform such as
 
 
 ## Get started with the lab
-You can access the lab from the menu by navigating to **Evaluation and tutorials > Evaluation lab**.
+You can access the lab from the menu. In the navigation menu, select **Evaluation and tutorials > Evaluation lab**.
 
 ![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
 
@@ -43,7 +43,7 @@ It's a good idea to read the guide before starting the evaluation process so tha
 
 
 ## Evaluation setup 
-When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. The machine will be configured with the most up to date version of Windows 10 and Office 2019 Standard. 
+When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. The machine will be configured with the most up to date version of Windows 10 and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
 
 The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
@@ -128,8 +128,18 @@ Get a full overview of the simulation results, all in one place, allowing you to
 
 View the machine details page by selecting the machine from the table. You'll be able to drill down on relevant alerts and investigations by exploring the rich context provided on the attack simulation. 
 
+### Evaluation report
+The lab reports summarize the results of the simulations conducted on the machines. 
 
-### Provide feedback
+At a glance, you'll quickly be able to see:
+- Incidents that were triggered
+- Generated alerts
+- Assessments on exposure level 
+- Threat categories observed
+- Detection sources
+- Automated investigations
+
+## Provide feedback
 Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience and impressions from product capabilities and evaluation results.
 
 Let us know what you think, by selecting **Provide feedback**.
