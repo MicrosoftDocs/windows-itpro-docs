@@ -134,7 +134,7 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
-1. Download the [connectivity verification tool](https://go.microsoft.com/fwlink/p/?linkid=823683) to the PC where Microsoft Defender ATP sensor is running on.
+1. Download the [connectivity verification tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
 2. Extract the contents of WDATPConnectivityAnalyzer on the machine.
 
