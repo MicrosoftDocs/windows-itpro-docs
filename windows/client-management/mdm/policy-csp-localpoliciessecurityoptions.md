@@ -1589,7 +1589,7 @@ GP Info:
 <!--Description-->
 
 > [!WARNING]
-> Starting in the version 1803 of Windows, this policy is deprecated.
+> Starting in Windows 10, version 1803, this policy is deprecated.
 
 Microsoft network server: Amount of idle time required before suspending a session
 
