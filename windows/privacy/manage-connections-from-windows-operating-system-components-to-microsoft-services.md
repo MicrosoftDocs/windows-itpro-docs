@@ -1142,7 +1142,7 @@ To turn off **Let apps access my call history**:
 
 ### <a href="" id="bkmk-priv-email"></a>18.11 Email
 
-In the **Email** area, you can choose which apps have can access and send email.
+In the **Email** area, you can choose which apps have access and can send email.
 
 To turn off **Let apps access and send email**:
 
