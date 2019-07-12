@@ -35,6 +35,8 @@ You'll have full access to all the powerful capabilities of the platform such as
 ## Get started with the lab
 You can access the lab from the menu by navigating to **Evaluation and tutorials > Evaluation lab**.
 
+![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
+
 When you access the evaluation lab for the first time, you'll find an introduction page with a link to the evaluation guide. The guide contains tips and recommendations to keep in mind when evaluating an advanced threat protection product. 
 
 It's a good idea to read the guide before starting the evaluation process so that you can conduct a thorough assessment of the platform.
