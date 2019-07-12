@@ -152,7 +152,7 @@ Resource attributes for file or folder can be changed, for example, using Window
 
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the Security Descriptor Definition Language (SDDL) value for the new resource attributes. See more information in **Resource Attributes\\Original Security Descriptor** field section for this event.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

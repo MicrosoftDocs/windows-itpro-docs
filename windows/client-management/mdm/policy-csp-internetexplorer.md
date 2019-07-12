@@ -13428,7 +13428,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer *
+-   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
 -   GP ADMX file name: *inetres.admx*
@@ -16504,7 +16504,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Zones: Use only machine settings *
+-   GP English name: *Security Zones: Use only machine settings*
 -   GP name: *Security_HKLM_only*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
