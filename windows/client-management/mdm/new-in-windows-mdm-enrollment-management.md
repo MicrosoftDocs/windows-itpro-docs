@@ -141,7 +141,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="applicationstatus-csp.md" data-raw-source="[ApplicationStatus CSP](applicationstatus-csp.md)">ApplicationStatus CSP</a></td>
+<td style="vertical-align:top"><a href="applicationcontrol-csp.md" data-raw-source="[ApplicationControl CSP](applicationcontrol-csp.md)">ApplicationControl CSP</a></td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 </tbody>

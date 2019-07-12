@@ -11,8 +11,8 @@ ms.date: 05/21/2019
 
 # ApplicationControl CSP
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the AppLocker CSP, the ApplicationControl CSP correctly detects the presence of the no-reboot option and consequently does not schedule a reboot.
-Existing WDAC policies which were deployed using the AppLocker CSP’s CodeIntegrity node can be deployed via the ApplicationControl CSP URI. Although WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will occur in the ApplicationControl CSP only.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike AppLocker CSP, the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Existing WDAC policies which were deployed using the AppLocker CSP’s CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will occur in the ApplicationControl CSP only.
 
 The ApplicationControl CSP was added in Windows 10, version 1903.
 
@@ -26,7 +26,7 @@ Defines the root node for the ApplicationControl CSP.
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="applicationcontrol-policies"></a>**ApplicationControl/Policies**  
-This subtree contains all the policies, which are each identified by their GUID.
+This node contains all the policies, each identified by their GUID.
 
 Scope is permanent. Supported operation is Get.
 
@@ -44,9 +44,8 @@ Value type is b64. Supported value is any well-formed WDAC policy, i.e. the base
 
 Default value is empty.
 
-
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo**  
-This subtree has nodes containing information which describes the policy indicated by the GUID.
+This node is the subtree for nodes that describe the policy indicated by the GUID.
 
 Scope is dynamic. Supported operation is Get.
 
@@ -65,17 +64,15 @@ Scope is dynamic. Supported operation is Get.
 Value type is bool. Supported values are as follows:  
 - True — Indicates that the policy is actually loaded by the enforcement engine and is in effect on a system.
 - False — Indicates that the policy is not loaded by the enforcement engine and is not in effect on a system. This is the default.
-<Verify>
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-isdeployed"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsDeployed**  
-This node specifies whether a policy is on the system and is present on the physical machine.
+This node specifies whether a policy is deployed on the system and is present on the physical machine.
 
 Scope is dynamic. Supported operation is Get.
 
 Value type is bool. Supported values are as follows:  
-- True — Indicates that the policy is on the system and is present on the physical machine.
-- False — Indicates that the policy is not on the system and is not present on the physical machine. This is the default.
-<Verify>
+- True — Indicates that the policy is deployed on the system and is present on the physical machine.
+- False — Indicates that the policy is not deployed on the system and is not present on the physical machine. This is the default.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-isauthorized"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsAuthorized**  
 This node specifies whether the policy is authorized to be loaded by the enforcement engine on the system. If not authorized, a policy cannot take effect on the system.
@@ -85,7 +82,6 @@ Scope is dynamic. Supported operation is Get.
 Value type is bool. Supported values are as follows:  
 - True — Indicates that the policy is authorized to be loaded by the enforcement engine on the system.
 - False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
-<Verify>
 
 The following table provides the result of this policy based on different values of IsAuthorized, IsDeployed, and IsEffective nodes:
 |IsAuthorized|IsDeployed|IsEffective|Resultant|
@@ -116,8 +112,8 @@ Value type is char.
 
 ## ApplicationControl CSP usage guidance  
 
-To use this CSP:  
-- Know a generated policy’s GUID, which can be found in the policy xml as ```<PolicyTypeID>```.
+Here are the usage guidance for ApplicationControl CSP:
+- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 - Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
 
@@ -129,92 +125,100 @@ To use this CSP:
     ```
     [Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
     ```
-    If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you use Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.
+> [!NOTE]
+> If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you use Base64 as the data type when using Custom OMA-URI functionality to apply the Code Integrity policy.
 
-- Deploy the policy:
-    - To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 snippet).
+## Deploy policies using ApplicationControl CSP
+To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
 
-    - To deploy base policy and supplemental policies:
-        - Perform an ADD as described above first with the GUID and policy data for the base policy
-        - Repeat for each base or supplemental policy in turn (with its own GUID and data)
+To deploy base policy and supplemental policies:
+- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy
+- Repeat for each base or supplemental policy (with its own GUID and data)
 
-    The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
+The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
 
-    **Example 1: Add first base policy**
-    ```
-    <Add>
-        <CmdID>1</CmdID>
-        <Item>
-            <Target>
-                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base1GUID}/Policy</LocURI>
-            </Target>
-            <Meta>
-                <Format xmlns="syncml:metinf">b64</Format>
-            </Meta>
-            <Data> {Base1Data} </Data>
-        </Item>
-    </Add>
-    ```
-    **Example 2: Add second base policy**
-    ```
-    <Add>
-        <CmdID>1</CmdID>
-        <Item>
-            <Target>
-                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base2GUID}/Policy</LocURI>
-            </Target>
-            <Meta>
-                <Format xmlns="syncml:metinf">b64</Format>
-            </Meta>
+**Example 1: Add first base policy**
+```
+<Add>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base1GUID}/Policy</LocURI>
+        </Target>
+        <Meta>
+             <Format xmlns="syncml:metinf">b64</Format>
+        </Meta>
+        <Data> {Base1Data} </Data>
+    </Item>
+</Add>
+```
+**Example 2: Add second base policy**
+```
+<Add>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Base2GUID}/Policy</LocURI>
+        </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">b64</Format>
+          </Meta>
             <Data> {Base2Data} </Data>
-        </Item>
-    </Add>
-    ```
-    **Example 3: Add supplemental policy**
-    ```
-    <Add>
-        <CmdID>1</CmdID>
+    </Item>
+</Add>
+```
+**Example 3: Add supplemental policy**
+```
+<Add>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Supplemental1GUID}/Policy</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">b64</Format>
+        </Meta>
+            <Data> {Supplemental1Data} </Data>
+    </Item>
+</Add>
+```
+## Get policy
+
+Perform a GET using a deployed policy’s GUID to interrogate/inspect the policy itself or information about it.
+The following table displays the result of Get operation on different nodes:
+
+|Nodes|Get Operation Results|
+|-------------|------|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy|raw p7b|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Version|policy version|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsEffective|is the policy in effect|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsDeployed|is the policy on the system|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsAuthorized|is the policy authorized on the system|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Status|was the deployment successful|
+|./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/FriendlyName|the friendly name per the policy|
+
+**Sample Get command**  
+```
+ <Get>
+    <CmdID>1</CmdID>
         <Item>
             <Target>
-                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{Supplemental1GUID}/Policy</LocURI>
+                <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{PolicyGUID}/Policy</LocURI>
             </Target>
-            <Meta>
-                <Format xmlns="syncml:metinf">b64</Format>
-            </Meta>
-            <Data> {Supplemental1Data} </Data>
         </Item>
-    </Add>
-    ```
-- Perform a GET operation using a deployed policy’s GUID to interrogate/inspect the policy itself or information about it.
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy (raw p7b)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Version (policy version)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsEffective (is the policy in effect)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsDeployed (is the policy on the system)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/IsAuthorized (is the policy authorized on the system)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/Status (was the deployment successful)
-    - ./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/PolicyInfo/FriendlyName (the friendly name per the policy)
+ </Get>
+```
 
-    **Sample Get command**  
-    ```
-    <Get>
-        <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/ApplicationControl/Policies/{PolicyGUID}/Policy</LocURI>
-                </Target>
-            </Item>
-    </Get>
-    ```
-- Delete the policy. 
-  To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy**.
+## Delete the policy
+To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy**.
 
-  > [!Note]
-  >  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** is not sufficient to delete a signed policy.
+> [!Note]
+>  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_PolicyGUID_/Policy** is not sufficient to delete a signed policy.
     
-   To delete a signed policy, first replace it with a signed update allowing unsigned policy, then deploy another update with unsigned policy, then perform delete.
+To delete a signed policy, first replace it with a signed update allowing unsigned policy, then deploy another update with unsigned policy, then perform delete.
     
-   **Delete a policy**
-   ```
+**Delete a policy**
+```
    <Delete>
      <CmdID>1</CmdID>
         <Item>
@@ -223,4 +227,4 @@ To use this CSP:
             </Target>
         </Item>
    </Delete>
-   ```
+```
