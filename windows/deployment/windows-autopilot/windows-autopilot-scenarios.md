@@ -28,11 +28,11 @@ The following Windows Autopilot scenarios are described in this guide:
 
 <table>
 <th>Scenario<th>More information
-<tr><td>Deploy devices that will be set up by a member of the organization and configured for that person<td>[Windows Autopilot user-driven mode](user-driven.md)
-<tr><td>Deploy devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.<td>[Windows Autopilot self-deploying mode](self-deploying.md)
-<tr><td>Re-deploy a device in a business-ready state.<td>[Windows Autopilot Reset](windows-autopilot-reset.md)
-<tr><td>Pre-provision a device with up-to-date applications, policies and settings.<td>[White glove](white-glove.md)
-<tr><td>Deploy Windows 10 on an existing Windows 7 or 8.1 device<td>[Windows Autopilot for existing devices](existing-devices.md)
+<tr><td>Deploy devices that will be set up by a member of the organization and configured for that person<td><a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven.md">Windows Autopilot user-driven mode</a>
+<tr><td>Deploy devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.<td><a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying.md">Windows Autopilot self-deploying mode</a>
+<tr><td>Re-deploy a device in a business-ready state.<td><a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset.md">Windows Autopilot Reset</a>
+<tr><td>Pre-provision a device with up-to-date applications, policies and settings.<td><a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove.md">White glove</a>
+<tr><td>Deploy Windows 10 on an existing Windows 7 or 8.1 device<td><a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices.md">Windows Autopilot for existing devices</a>
 </table>
 
 ## Windows Autopilot capabilities
