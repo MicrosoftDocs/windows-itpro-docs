@@ -47,7 +47,7 @@ The following OS versions are not supported:
 - Windows 8 Pro
 - Windows 8.1 Enterprise
 
-The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our Azure Government environment, there are some capabilities not yet available that we’d like to highlight.  These are the known gaps as of August 2019:
+The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our Azure Government environment, there are some capabilities not yet available that we'd like to highlight.  These are the known gaps as of August 2019:
 
 ## Threat & Vulnerability Management
 Not currently available.
