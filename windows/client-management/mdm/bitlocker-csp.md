@@ -17,7 +17,7 @@ manager: dansimp
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
-> [!Note]  
+> [!NOTE]
 > Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
 > You must send all the settings together in a single SyncML to be effective.
 
@@ -66,7 +66,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -116,7 +116,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -167,7 +167,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
@@ -178,7 +178,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px"> Sample value for this node to enable this policy and set the encryption methods is:</p>
 
-``` syntax
+```xml
  <enabled/><data id="EncryptionMethodWithXtsOsDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsFdvDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsRdvDropDown_Name" value="xx"/>
 ```
 
@@ -193,12 +193,12 @@ The following diagram shows the BitLocker configuration service provider in tree
 - 6 = XTS-AES 128
 - 7 = XTS-AES 256
 
-> [!Note]  
+> [!NOTE]
 > When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
 
 <p style="margin-left: 20px">  If you want to disable this policy use the following SyncML:</p> 
 
-``` syntax
+```xml
                           <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -245,31 +245,31 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.</p>
 
-> [!Note]  
+> [!NOTE]
 > Only one of the additional authentication options can be required at startup, otherwise an error occurs.
 
 <p style="margin-left: 20px">If you want to use BitLocker on a computer without a TPM, set the &quot;ConfigureNonTPMStartupKeyUsage_Name&quot; data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.</p>
 
 <p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.</p>
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10, version 1703 release B, you can use a minimum PIN of 4 digits. SystemDrivesMinimumPINLength policy must be set to allow PINs shorter than 6 digits.
 
 <p style="margin-left: 20px">If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.</p>
 
 <p style="margin-left: 20px">If you disable or do not configure this setting, users can configure only basic options on computers with a TPM.</p>
 
-> [!Note]  
+> [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/><data id="ConfigureNonTPMStartupKeyUsage_Name" value="xx"/><data id="ConfigureTPMStartupKeyUsageDropDown_Name" value="yy"/><data id="ConfigurePINUsageDropDown_Name" value="yy"/><data id="ConfigureTPMPINKeyUsageDropDown_Name" value="yy"/><data id="ConfigureTPMUsageDropDown_Name" value="yy"/>
 ```
 <p style="margin-left: 20px">Data id:</p>
@@ -296,7 +296,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -342,12 +342,12 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.</p>
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits. 
 >
 >In TPM 2.0 if minimum PIN length is set below 6 digits, Windows will attempt to update the TPM lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset. This does not apply to TPM 1.2.
@@ -358,13 +358,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/><data id="MinPINLength" value="xx"/>
 ```
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -411,7 +411,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.
@@ -425,7 +425,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/><data id="PrebootRecoveryInfoDropDown_Name" value="xx"/><data id="RecoveryMessage_Input" value="yy"/><data id="RecoveryUrl_Input" value="zz"/>
 ```
 <p style="margin-left: 20px">The possible values for &#39;xx&#39; are:</p>
@@ -437,12 +437,12 @@ The following diagram shows the BitLocker configuration service provider in tree
 -  'yy' = string of max length 900.
 -  'zz' = string of max length 500.
 
-> [!Note]  
+> [!NOTE]
 > When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                         <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -457,7 +457,7 @@ The following diagram shows the BitLocker configuration service provider in tree
                          </Replace>
 ```
 
-> [!Note]  
+> [!NOTE]
 > Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
@@ -492,7 +492,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This setting is applied when you turn on BitLocker.</p>
@@ -515,7 +515,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 
@@ -542,7 +542,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -589,7 +589,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This setting is applied when you turn on BitLocker.</p>
@@ -614,7 +614,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/><data id="FDVAllowDRA_Name" value="xx"/><data id="FDVRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="FDVRecoveryKeyUsageDropDown_Name" value="yy"/><data id="FDVHideRecoveryPage_Name" value="xx"/><data id="FDVActiveDirectoryBackup_Name" value="xx"/><data id="FDVActiveDirectoryBackupDropDown_Name" value="zz"/><data id="FDVRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 
@@ -640,7 +640,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -687,7 +687,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</p>
@@ -696,13 +696,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
 <enabled/>
 ```
 
 <p style="margin-left: 20px">If you disable or do not configure this setting, all fixed data drives on the computer will be mounted with read and write access. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -749,7 +749,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 
-> [!Tip]  
+> [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.</p>
@@ -764,7 +764,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
-``` syntax
+```xml
  <enabled/><data id="RDVCrossOrg" value="xx"/>
 ```
 
@@ -776,7 +776,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -795,7 +795,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.</p>
 
-> [!Important]  
+> [!IMPORTANT]
 > Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
@@ -827,7 +827,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 -   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
 
-``` syntax
+```xml
 <Replace>
     <CmdID>110</CmdID>
     <Item>
@@ -842,7 +842,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
->[!NOTE]
+> [!NOTE]
 >When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
 >
 >The endpoint for a fixed data drive's backup is chosen in the following order:
@@ -855,7 +855,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
 
-> [!Note]  
+> [!NOTE]
 > This policy is only supported in Azure AD accounts.
 
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
@@ -869,7 +869,7 @@ The expected values for this policy are:
 
 If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
  <Replace>
  <CmdID>111</CmdID>
    <Item>
@@ -887,7 +887,7 @@ If you want to disable this policy use the following SyncML:
 
 The following example is provided to show proper format and should not be taken as a recommendation.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
 

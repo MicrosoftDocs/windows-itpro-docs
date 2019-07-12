@@ -27,7 +27,7 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 >[!IMPORTANT]
->If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Cilent, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Office 365 ProPlus 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## Settings for UWP apps
 
@@ -103,7 +103,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
     
 6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
 
-7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *\<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 
@@ -144,7 +144,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 5. Set a value for **Package Version**.
 
-   > [!TIP]  
+   > [!TIP]
    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 6. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.

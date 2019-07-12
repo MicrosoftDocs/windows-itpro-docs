@@ -4,7 +4,7 @@ description: NodeCache DDF file
 ms.assetid: d7605098-12aa-4423-89ae-59624fa31236
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -21,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

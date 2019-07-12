@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed -->
@@ -40,7 +40,7 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\ 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
 

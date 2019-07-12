@@ -4,7 +4,7 @@ description: CustomDeviceUI CSP
 ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

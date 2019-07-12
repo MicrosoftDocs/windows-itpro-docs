@@ -24,7 +24,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Readiness and Windows upgrades**<br>
->You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/en-us/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+>You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 
 ## Before you begin
@@ -147,7 +147,7 @@ You need to set up your computers for data collection by running the provided Po
 
 **To set up Enterprise Site Discovery**
 
-- Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
@@ -171,13 +171,13 @@ You can determine which zones or domains are used for data collection, using Pow
 
 **To set up data collection using a domain allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
+ - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
  
     >**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
 **To set up data collection using a zone allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
+ - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
  
     >**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 
@@ -447,7 +447,7 @@ After you’ve collected your data, you’ll need to turn Enterprise Site Discov
 
 **To stop collecting data, using PowerShell**
 
--   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1 –IEFeatureOff`.
+-   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1 –IEFeatureOff`.
 
     >**Note**<br>Turning off data collection only disables the Enterprise Site Discovery feature – all data already written to WMI stays on your employee’s computer.
 

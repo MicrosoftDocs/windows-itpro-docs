@@ -27,7 +27,7 @@ ms.date: 05/16/2019
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
-Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+Learn about the network connections that Windows components make to Microsoft in addition to the privacy settings that affect the data which is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
@@ -41,7 +41,7 @@ Applying the Windows Restricted Traffic Limited Functionality Baseline is the sa
 It is recommended that you restart a device after making configuration changes to it.
 Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
-To use Microsoft InTune cloud based device managment for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
+To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
@@ -233,7 +233,7 @@ For more information, see [Automatic Root Certificates Update Configuration](htt
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
-> By not automatically downloading the root certificates, the device might have not be able to connect to some websites.
+> By not automatically downloading the root certificates, the device might have not been able to connect to some websites.
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
@@ -418,7 +418,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
-> The following Group Policies and Registry Keys are for user interactive scenarios rather then the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+> The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -547,14 +547,7 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>12. Microsoft Account
 
-To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
-
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
-
-  -or-
-
-- Create a REG_DWORD registry setting named **NoConnectedUser** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System** with a **value of 3**.
-
+Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 To disable the Microsoft Account Sign-In Assistant:
 
@@ -583,7 +576,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
 | Allow Microsoft Compatibility List                       | Choose whether to use the Microsoft Compatibility List in Microsoft Edge. <br /> **Set to: Disabled**        |
 
-Alternatively, you can configure the these Registry keys as described:
+Alternatively, you can configure the following Registry keys as described:
 
 | Registry Key | Registry path |
 | - | - |
@@ -604,9 +597,9 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. See the [Microsoft Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/bg-p/NetworkingBlog) to learn more.
 
-In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was [http://www.msftncsi.com]().
+In versions of Windows 10 prior to version 1607 and Windows Server 2016, the URL was `http://www.msftncsi.com/ncsi.txt`.
 
 You can turn off NCSI by doing one of the following:
 
@@ -914,7 +907,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
 - Create a new REG_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY_CURRENT_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
-To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
+To turn off **Let apps on my other devices open apps and continue experiences on this device**:
 
 - Turn off the feature in the UI.
 
@@ -1149,7 +1142,7 @@ To turn off **Let apps access my call history**:
 
 ### <a href="" id="bkmk-priv-email"></a>18.11 Email
 
-In the **Email** area, you can choose which apps have can access and send email.
+In the **Email** area, you can choose which apps have access and can send email.
 
 To turn off **Let apps access and send email**:
 
@@ -1412,7 +1405,7 @@ To turn this off:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access diagnostic information about other apps**
 
   -or-
 
@@ -1465,7 +1458,7 @@ To turn this Off in the UI:
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
-In the **Vocie activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
+In the **Voice activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
 
 To turn this Off in the UI:
 
@@ -1596,7 +1589,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 >1. Ensure Windows and Windows Defender are fully up to date.
 >2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to >the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make >the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link >and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
@@ -1671,7 +1664,7 @@ In Group Policy, configure:
 
 -OR-
 
-- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
+- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
    -and-
 

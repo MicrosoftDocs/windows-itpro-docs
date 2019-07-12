@@ -32,7 +32,7 @@ On the desktop, you can create an Active Directory account, such as "enrollment@
 
 On the desktop and mobile devices, you can use an enrollment certificate or enrollment username and password, such as "enroll@contoso.com" and "enrollmentpassword." These credentials are used in the provisioning package, which you can use to enroll multiple devices to the MDM service. Once the devices are joined, many users can use them.
 
->[!NOTE]  
+> [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
 > -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.

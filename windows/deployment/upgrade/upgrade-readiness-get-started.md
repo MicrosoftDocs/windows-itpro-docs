@@ -1,15 +1,15 @@
 ---
 title: Get started with Upgrade Readiness (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Explains how to get started with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
-ms.author: lomayor
+author: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
@@ -26,7 +26,7 @@ You can use Upgrade Readiness to plan and manage your upgrade project end-to-end
 
 Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
-    - [Upgrade Readiness blog](https://aka.ms/blog/WindowsAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
+    - [Upgrade Readiness blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/bg-p/WindowsAnalyticsBlog): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
@@ -47,7 +47,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
-    >[!NOTE] 
+    >[!NOTE]
     > Upgrade Readiness is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 

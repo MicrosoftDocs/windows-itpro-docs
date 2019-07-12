@@ -1,11 +1,11 @@
 ---
 title: About App-V 5.0 SP3
 description: About App-V 5.0 SP3
-author: v-madhi
+author: manikadhiman
 ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -756,7 +756,7 @@ The primary virtual application directory (PVAD) is hidden in App-V 5.0 SP3, but
 <td align="left"><ol>
 <li><p>In the Registry Editor, navigate to: <code>HKLM\SOFTWARE\Microsoft\AppV\Sequencer\Compatibility</code></p>
 <div class="alert">
-<strong>Note</strong><br/><p>If the <code>Compatability</code> subkey doesn’t exist, you must create it.</p>
+<strong>Note</strong><br/><p>If the <code>Compatibility</code> subkey doesn’t exist, you must create it.</p>
 </div>
 <div>
 

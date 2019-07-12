@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Experience
 description: Policy CSP - Experience
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -937,6 +937,7 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> Prior to Windows 10, version 1803, this policy had User scope.
 
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.

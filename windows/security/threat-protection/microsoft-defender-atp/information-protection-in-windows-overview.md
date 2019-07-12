@@ -50,10 +50,10 @@ Sensitive information types in the Office 365 data loss prevention (DLP) impleme
 
 Default sensitive information types include information such as bank account numbers, social security numbers, or national IDs. For more information, see [What the sensitive information type look for](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for). 
 
-Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-custom-sensitive-information-type).
+Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type).
 
 
-When a file is created or edited on a  Windows device, Windows Defender ATP scans the content to evaluate if it contains sensitive information. 
+When a file is created or edited on a  Windows device, Microsoft Defender ATP scans the content to evaluate if it contains sensitive information. 
 
 Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Microsoft Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 

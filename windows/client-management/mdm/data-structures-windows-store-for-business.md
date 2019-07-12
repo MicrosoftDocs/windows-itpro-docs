@@ -7,7 +7,7 @@ ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
 description: 
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -975,7 +975,7 @@ Specifies the properties of the publisher details.
 <tr class="odd">
 <td><p>assignedTo</p></td>
 <td><p>string</p></td>
-<td><p>Format = UPN (user<xref href="domain)" data-throw-if-not-resolved="False" data-raw-source="@domain)"></xref></p></td>
+<td><p>Format = UPN (user@domain)</p></td>
 </tr>
 <tr class="even">
 <td><p>dateAssigned</p></td>
@@ -1078,7 +1078,7 @@ Specifies the properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
-<td><p>collection of <a href="#productarchitecture" data-raw-source="[ProductArchitecture](#productarchitecture)">ProductArchitecture</a></p></td>
+<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
 </tr>
 </tbody>
 </table>

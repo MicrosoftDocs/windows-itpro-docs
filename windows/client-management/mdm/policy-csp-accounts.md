@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Accounts
 description: Policy CSP - Accounts
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -30,10 +30,7 @@ manager: dansimp
   <dd>
     <a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
-</dl>
+ </dl>
 
 
 <hr/>
@@ -197,51 +194,6 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
-
-<!--Policy-->
-<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies a list of the domains that are allowed to sync email on the device.
-
-The data type is a string.
-
-The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
-
-<!--/Description-->
-<!--/Policy-->
 
 <!--/Policies-->
 

@@ -4,7 +4,7 @@ description: ClientCertificateInstall CSP
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

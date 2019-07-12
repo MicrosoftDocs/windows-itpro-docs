@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - LocalPoliciesSecurityOptions
 description: Policy CSP - LocalPoliciesSecurityOptions
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -692,7 +692,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt or sign secure channel data (always)
@@ -762,7 +762,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt secure channel data (when possible)
@@ -829,7 +829,7 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 
-> [!Warning]  
+> [!WARNING]
 > Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Disable machine account password changes
@@ -1567,10 +1567,10 @@ GP Info:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td></td>
 </tr>
@@ -1587,6 +1587,10 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
+
+> [!WARNING]
+> Starting in Windows 10, version 1803, this policy is deprecated.
+
 Microsoft network server: Amount of idle time required before suspending a session
 
 This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
@@ -2637,6 +2641,9 @@ GP Info:
 
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
+
+> [!Warning]  
+> Starting with Windows 10 version 1803, this policy is deprecated.
 
 <!--SupportedSKUs-->
 <table>

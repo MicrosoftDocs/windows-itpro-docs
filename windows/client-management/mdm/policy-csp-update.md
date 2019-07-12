@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -1896,7 +1896,7 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
-> [!Note]  
+> [!NOTE]
 > If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
 
 Value type is integer. Default is 14.
@@ -2722,7 +2722,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2835,7 +2835,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3786,7 +3786,7 @@ Options:
 -  1 – Turn off all notifications, excluding restart warnings
 -  2 – Turn off all notifications, including restart warnings
 
-> [!Important]  
+> [!IMPORTANT]
 > If you choose not to get update notifications and also define other Group policies so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 <!--/Description-->
@@ -3847,7 +3847,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!Important]  
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Mobile.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
@@ -3939,7 +3939,7 @@ To use this setting, you must set two server name values: the server from which 
 
 Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
-> [!Note]  
+> [!NOTE]
 > If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
 > If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.

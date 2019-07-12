@@ -4,7 +4,7 @@ description: Here is the XSD for the application parameters.
 ms.assetid: D393D094-25E5-4E66-A60F-B59CC312BF57
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 Here is the XSD for the application parameters.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Data">

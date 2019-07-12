@@ -10,9 +10,9 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
-manager: dansimp
+author: stephow-MSFT
+ms.author: stephow
+manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
@@ -62,7 +62,13 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 
 The information needed for the following steps can be found using Device Health, which you will first have to set up. Learn more about how you can  [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor).
 
-1. In **Device Health** click the app you want to add to your policy and copy the publisher information.
+1. In **Device Health** click the app you want to add to your policy and copy the **WipAppId**.
+
+    For example, if the app is Google Chrome, the WipAppId is:
+
+    `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
+    
+    In the steps below, you separate the WipAppId by back slashes into the **PUBLISHER**, **PRODUCT NAME**, and **FILE** fields.
 
 2. In Intune, click **App protection policies** and then choose the app policy you want to add an application to.
 
@@ -74,11 +80,35 @@ The information needed for the following steps can be found using Device Health,
 
 5. In **NAME** (optional), type the name of the app, and then in **PUBLISHER** (required), paste the publisher information that you copied in step 1 above.
 
+    For example, if the WipAppId is
+
+    `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
+
+    the text before the first back slash is the publisher:
+
+    `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US`
+
     ![View of Add Apps app info entry boxes](images/wip-learning-app-info.png)
 
 6. Type the name of the product in **PRODUCT NAME** (required)  (this will probably be the same as what you typed for **NAME**).
 
+    For example, if the WipAppId is
+
+    `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
+
+    the text between the first and second back slashes is the product name:
+
+    `GOOGLE CHROME`
+
 7. Copy the name of the executable (for example, snippingtool.exe) and paste it in **FILE** (required).
+
+    For example, if the WipAppId is
+
+    `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
+
+    the text between the second and third back slashes is the file:
+
+    `CHROME.EXE`
 
 8. Type the version number of the app into **MIN VERSION** in Intune (alternately, you can specify the max version, but one or the other is required), and then select the **ACTION**: **Allow** or **Deny**
 

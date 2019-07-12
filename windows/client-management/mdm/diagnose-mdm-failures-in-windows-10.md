@@ -4,7 +4,7 @@ description: To help diagnose enrollment or device management issues in WindowsÂ
 ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -95,7 +95,7 @@ Example: Enable the Debug channel logging
 
 Example: Export the Debug logs
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -192,7 +192,7 @@ You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is
 
 Add a collector node
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -214,7 +214,7 @@ Add a collector node
 
 Add the ETW provider to the trace
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -236,7 +236,7 @@ Add the ETW provider to the trace
 
 Start collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -259,7 +259,7 @@ Start collector trace logging
 
 Stop collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -314,7 +314,7 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 
 Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](diagnosticlog-csp.md), version 1.3, which was added in WindowsÂ 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>

@@ -4,7 +4,7 @@ description: DevDetail CSP
 ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -188,7 +188,7 @@ Value type is string. Supported operation is Get.
 <a href="" id="devicehardwaredata"></a>**Ext/DeviceHardwareData**  
 <p style="margin-left: 20px">Added in Windows 10 version 1703. Returns a base64-encoded string of the hardware parameters of a device.
 
-> [!Note]  
+> [!NOTE]
 > This node contains a raw blob used to identify a device in the cloud. It's not meant to be human readable by design and you cannot parse the content to get any meaningful hardware information.
 
 <p style="margin-left: 20px">Supported operation is Get.

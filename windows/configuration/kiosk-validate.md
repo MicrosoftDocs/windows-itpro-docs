@@ -28,7 +28,7 @@ Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applic
 
 To test the kiosk, sign in with the assigned access user account you specified in the configuration to check out the multi-app experience. 
 
->[!NOTE] 
+>[!NOTE]
 >The kiosk configuration setting will take effect the next time the assigned access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience. 
 
 The following sections explain what to expect on a multi-app kiosk.

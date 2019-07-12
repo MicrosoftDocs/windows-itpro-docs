@@ -179,7 +179,7 @@ Where https://fabrikam.com doesn't use IE8 Enterprise Mode, but https://fabrikam
 <p><b>Example</b>
 <pre class="syntax">
 &lt;docMode&gt;
-  &lt;domain exclude="false"&gt;fakrikam.com
+  &lt;domain exclude="false"&gt;fabrikam.com
     &lt;path docMode="7"&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/docMode&gt;</pre></td>

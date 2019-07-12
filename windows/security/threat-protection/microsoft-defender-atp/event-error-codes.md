@@ -157,7 +157,7 @@ The service could not contact the external processing servers at that URL.</td>
 <td>17</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machines](configure-endpoints.md)">Onboard Windows 10 machines</a>.</td>
 </tr>
@@ -208,7 +208,7 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>28</td>
 <td>Microsoft Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machines](configure-endpoints.md)">Onboard Windows 10 machines</a>.</td>
 </tr>
@@ -216,7 +216,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 <td>29</td>
 <td>Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 </td>
 <td>This event occurs when the system can&#39;t read the offboarding parameters.</td>
-<td>Ensure the machine has Internet access, then run the entire offboarding process again.</td>
+<td>Ensure the machine has Internet access, then run the entire offboarding process again. Ensure the offboarding package has not expired.</td>
 </tr>
 <tr>
 <td>30</td>
@@ -249,7 +249,7 @@ If the identifier does not persist, the same machine might appear twice in the p
 <td>34</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machines](configure-endpoints.md)">Onboard Windows 10 machines</a>.</td>
 </tr>

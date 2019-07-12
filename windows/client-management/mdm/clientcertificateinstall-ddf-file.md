@@ -4,7 +4,7 @@ description: ClientCertificateInstall DDF file
 ms.assetid: 7F65D045-A750-4CDE-A1CE-7D152AA060CA
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -21,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -170,7 +170,7 @@ Supported operations are Get, Add, Replace
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
-CRYPT_DATA_BLOB on MSDN can be found at http://msdn.microsoft.com/library/windows/desktop/aa381414(v=vs.85).aspx
+CRYPT_DATA_BLOB on MSDN can be found at https://msdn.microsoft.com/library/windows/desktop/aa381414(v=vs.85).aspx
 </Description>
                         <DFFormat>
                             <bin />

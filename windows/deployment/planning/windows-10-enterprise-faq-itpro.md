@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author:
+author: greg-lindsay
 ms.date: 08/18/2017
 ms.reviewer: 
 manager: laurawi

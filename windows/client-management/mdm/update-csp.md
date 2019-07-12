@@ -4,7 +4,7 @@ description: Update CSP
 ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -48,9 +48,10 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
 <p style="margin-left: 20px">Sample syncml:
-<p style="margin-left: 20px"><code>
+
+```
 <LocURI>./Vendor/MSFT/Update/ApprovedUpdates/%7ba317dafe-baf4-453f-b232-a7075efae36e%7d</LocURI>
-</code>
+```
 
 <a href="" id="approvedupdates-approved-update-guid-approvedtime"></a>**ApprovedUpdates/*Approved Update Guid*/ApprovedTime**
 <p style="margin-left: 20px">Specifies the time the update gets approved.
@@ -166,7 +167,7 @@ If the conditions are not true, the device will not Roll Back the Latest Quality
 <a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**
 Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machine meets the following conditions:
 
--  Condition 1: Device must be Windows Update for Business Connnected
+-  Condition 1: Device must be Windows Update for Business Connected
 -  Condition 2: Device must be in Paused State
 -  Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
 -  Condition 4: Machine should be within the uninstall period

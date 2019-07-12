@@ -1,21 +1,17 @@
 ---
 title: Policy CSP - Privacy
 description: Policy CSP - Privacy
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/01/2019
+ms.date: 07/09/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Privacy
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
@@ -234,6 +230,12 @@ manager: dansimp
     <a href="#privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a>
   </dd>
   <dd>
+    <a href="#privacy-letappsactivatewithvoice">Privacy/LetAppsActivateWithVoice</a>
+  </dd>
+  <dd>
+    <a href="#privacy-letappsactivatewithvoiceabovelock">Privacy/LetAppsActivateWithVoiceAboveLock</a>
+  </dd>
+  <dd>
     <a href="#privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a>
   </dd>
   <dd>
@@ -318,7 +320,7 @@ manager: dansimp
 <!--Description-->
 Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 
-> [!Note]  
+> [!NOTE]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 
@@ -4089,6 +4091,126 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="privacy-letappsactivatewithvoice"></a>**Privacy/LetAppsActivateWithVoice**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="checkmark mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="checkmark mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies if Windows apps can be activated by voice.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP English name: *Allow voice activation*
+- GP name: *LetAppsActivateWithVoice*
+- GP element: *LetAppsActivateWithVoice_Enum*
+- GP path: *Windows Components/App Privacy*
+- GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) – User in control. Users can decide if Windows apps can be activated by voice using Settings > Privacy options on the device.
+- 1 – Force allow. Windows apps can be activated by voice and users cannot change it.
+- 2 - Force deny. Windows apps cannot be activated by voice and users cannot change it.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-letappsactivatewithvoiceabovelock"></a>**Privacy/LetAppsActivateWithVoiceAboveLock**
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies if Windows apps can be activated by voice while the screen is locked.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP English name: *Allow voice activation above locked screen*
+- GP name: *LetAppsActivateWithVoiceAboveLock*
+- GP element: *LetAppsActivateWithVoiceAboveLock_Enum*
+- GP path: *Windows Components/App Privacy*
+- GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) – User in control. Users can decide if Windows apps can be activated by voice while the screen is locked using Settings > Privacy options on the device.
+- 1 – Force allow. Windows apps can be activated by voice while the screen is locked, and users cannot change it.
+- 2 - Force deny. Windows apps cannot be activated by voice while the screen is locked, and users cannot change it.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
 
 <!--SupportedSKUs-->
@@ -4868,6 +4990,18 @@ ADMX Info:
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLensBusiness-->
 
+<!--StartIoTCore-->
+## <a href="" id="iotcore"></a>Privacy policies supported by Windows 10 IoT Core
+- [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+- [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
+<!--EndIoTCore-->
+
+<!--StartIoTEnterprise-->
+## <a href="" id="iotenterprise"></a>Privacy policies supported by Windows 10 IoT Enterprise
+- [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+- [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
+<!--EndIoTEnterprise-->
+
 <hr/>
 
 Footnotes:
@@ -4877,4 +5011,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.

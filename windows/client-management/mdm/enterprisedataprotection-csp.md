@@ -4,7 +4,7 @@ description: The EnterpriseDataProtection configuration service provider (CSP) i
 ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -71,7 +71,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 <a href="" id="settings-allowuserdecryption"></a>**Settings/AllowUserDecryption**  
 <p style="margin-left: 20px">Allows the user to decrypt files. If this is set to 0 (Not Allowed), then the user will not be able to remove protection from enterprise content through the operating system or the application user experiences.
 
-> [!Important]  
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.
 
 <p style="margin-left: 20px">The following list shows the supported values:

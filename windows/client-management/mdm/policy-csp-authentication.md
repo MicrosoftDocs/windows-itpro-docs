@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Authentication
 description: Policy CSP - Authentication
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -357,6 +357,9 @@ The following list shows the supported values:
 > This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
+
+> [!Important]
+> Pre-configured candidate local accounts are any local accounts (pre-configured or added) in your device.
 
 Value type is integer. Supported values:
 

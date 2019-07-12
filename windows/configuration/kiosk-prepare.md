@@ -71,7 +71,7 @@ In addition to the settings in the table, you may want to set up **automatic log
 
 1. Open Registry Editor (regedit.exe).
 
-   >[!NOTE]  
+   >[!NOTE]
    >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
  
@@ -251,7 +251,7 @@ The following table describes some features that have interoperability issues we
 
 Customers sometimes use virtual machines (VMs) to test configurations before deploying those configurations to physical devices. If you use a VM to test your single-app kiosk configuration, you need to know how to connect to the VM properly.
 
-A single-app kiosk kiosk configuration runs an app above the lockscreen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
+A single-app kiosk configuration runs an app above the lockscreen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
 
 When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
 

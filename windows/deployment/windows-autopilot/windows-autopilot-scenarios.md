@@ -1,16 +1,16 @@
 ---
 title: Windows Autopilot scenarios and capabilities
-ms.reviewer: 
-manager: dansimp
-description: Listing of Autopilot scenarios
+description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.reviewer: mniehaus
+manager: laurawi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: dulcemontemayor
-ms.author: dolmont
+author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -24,16 +24,20 @@ ms.topic: article
 
 Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management).
 
-For details about these scenarios, see these additional topics:
+The following Windows Autopilot scenarios are described in this guide:
 
-- [Windows Autopilot for existing devices](existing-devices.md), to deploy Windows 10 on an existing Windows 7 or 8.1 device.
-- [Windows Autopilot user-driven mode](user-driven.md), for devices that will be set up by a member of the organization and configured for that person.
-- [Windows Autopilot self-deploying mode](self-deploying.md), for devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.
-- [Windows Autopilot Reset](windows-autopilot-reset.md), to re-deploy a device in a business-ready state.
+<table>
+<th>Scenario<th>More information
+<tr><td>Deploy devices that will be set up by a member of the organization and configured for that person<td>[Windows Autopilot user-driven mode](user-driven.md)
+<tr><td>Deploy devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.<td>[Windows Autopilot self-deploying mode](self-deploying.md)
+<tr><td>Re-deploy a device in a business-ready state.<td>[Windows Autopilot Reset](windows-autopilot-reset.md)
+<tr><td>Pre-provision a device with up-to-date applications, policies and settings.<td>[White glove](white-glove.md)
+<tr><td>Deploy Windows 10 on an existing Windows 7 or 8.1 device<td>[Windows Autopilot for existing devices](existing-devices.md)
+</table>
 
-## Capabilities
+## Windows Autopilot capabilities
 
-### Windows Autopilot is self-updating during OOBE:
+### Windows Autopilot is self-updating during OOBE
 
 Starting with the Windows 10, version 1903, Autopilot functional and critical updates will begin downloading automatically during OOBE after a device gets connected to a network and the [critical driver and Windows zero-day patch (ZDP) updates](https://docs.microsoft.com/windows-hardware/customize/desktop/windows-updates-during-oobe) have completed. The user or IT admin cannot opt-out of these Autopilot updates; they are required for Windows Autopilot deployment to operate properly.  Windows will alert the user that the device is checking for, downloading and installing the updates.
 
@@ -61,4 +65,4 @@ With Windows Autopilot, you can configure the BitLocker encryption settings to b
 
 ## Related topics
 
-[Windows Autopilot Enrollment Status page](enrollment-status.md)
+[Windows Autopilot: What's new](windows-autopilot-whats-new.md)

@@ -111,7 +111,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
       </Configuration>
       ```
     
-      >[!NOTE]
+     > [!NOTE]
       >The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To uncomment these lines, remove the ```<! - -``` from the beginning of the line, and the ```-- >``` from the end of the line.
 
       The previous example of an XML configuration file specifies that Office 2016 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office2016 location where Office applications will be saved. Note that the Product ID of the applications will not affect Office's final licensing. You can create Office 2016 App-V packages with various licensing from the same applications by specifying licensing in a later stage. The following table summarizes the XML file's customizable attributes and elements:
@@ -190,7 +190,7 @@ After you download the Office 2016 applications through the Office Deployment To
         
        An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.
         
-       >[!NOTE]
+      > [!NOTE]
        >Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
 2. Use the /packager command to convert the Office applications to an Office 2016 App-V package.
 
@@ -215,7 +215,7 @@ After you download the Office 2016 applications through the Office Deployment To
    * **App-V Packages**—contains an Office 2016 App-V package and two deployment configuration files.
    * **WorkingDir**
 
-     >[!NOTE]
+    > [!NOTE]
      >To troubleshoot any issues, see the log files in the %temp% directory (default).
 3. Verify that the Office 2016 App-V package works correctly:
 
@@ -300,7 +300,7 @@ You can also disable specific applications in your Office App-V package. For exa
 5. Add the Office 2016 App-V Package with the new Deployment Configuration File.
 
     ```XML
-    <Application Id="[{AppVPackageRoot}]\officel6\lync.exe" Enabled="true">
+    <Application Id="[{AppVPackageRoot}]\office16\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2016</Name>
         <Icon />
@@ -340,10 +340,10 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <Arguments />
            <WorkingDirectory />
            <AppuserModelId>Microsoft.Office.MSACCESS.EXE.16</AppUserModelId>
-           <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
+           <AppUserModelExcludeFromShowInNewInstall>true</AppUserModelExcludeFromShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
-           <ApplicationId>[{AppVPackageRoot}]\officel6\MSACCESS.EXE</ApplicationId>
+           <ApplicationId>[{AppVPackageRoot}]\office16\MSACCESS.EXE</ApplicationId>
         </Shortcut>
     ```
 3. Save the Deployment Configuration File.
@@ -359,7 +359,7 @@ To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a 
 
 1. Create a new Office 2016 package through the Office Deployment Tool that uses the most recent Office 2016 application software. The most recent Office 2016 bits can always be obtained through the download stage of creating an Office 2016 App-V Package. The newly created Office 2016 package will have the most recent updates and a new Version ID. All packages created using the Office Deployment Tool have the same lineage.
 
-    >[!NOTE]
+   > [!NOTE]
     >Office App-V packages have two Version IDs:
       >* An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
       >* A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.

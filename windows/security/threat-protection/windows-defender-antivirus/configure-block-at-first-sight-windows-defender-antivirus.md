@@ -65,6 +65,9 @@ Block at first sight requires a number of settings to be configured correctly or
 
    ![Intune config](images/defender/intune-block-at-first-sight.png)
 
+> [!Warning]
+> Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus).
+
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
@@ -135,7 +138,7 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 ### Validate block at first sight is working
 
-You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate).
+You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Disable block at first sight
 

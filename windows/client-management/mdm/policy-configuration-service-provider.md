@@ -4,12 +4,12 @@ description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/01/2019
+ms.date: 07/09/2019
 ---
 
 # Policy CSP
@@ -160,9 +160,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-accounts.md#accounts-allowmicrosoftaccountsigninassistant" id="accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="./policy-csp-accounts.md#accounts-domainnamesforemailsync" id="accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
+  
 </dl>
 
 ### ActiveXControls policies
@@ -1003,6 +1001,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures" id="deviceguard-requireplatformsecurityfeatures">DeviceGuard/RequirePlatformSecurityFeatures</a>
+  </dd>
+</dl>
+
+### DeviceHealthMonitoring policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" id="devicehealthmonitoring-allowdevicehealthmonitoring">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" id="devicehealthmonitoring-configdevicehealthmonitoringscope">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a>
   </dd>
 </dl>
 
@@ -2732,6 +2744,12 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-letappsaccesstrusteddevices-userincontroloftheseapps" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoice" id="privacy-letappsactivatewithvoice">Privacy/LetAppsActivateWithVoice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock" id="privacy-letappsactivatewithvoiceabovelock">Privacy/LetAppsActivateWithVoiceAboveLock</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsgetdiagnosticinfo" id="privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a>
   </dd>
   <dd>
@@ -3381,6 +3399,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-allowset24hourclock" id="timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
   </dd>
 </dl>
 
@@ -5340,6 +5361,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
@@ -5387,6 +5413,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)

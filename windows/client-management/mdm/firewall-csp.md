@@ -1,7 +1,7 @@
 ---
 title: Firewall CSP
 description: Firewall CSP
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -162,7 +162,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 
 Sample syncxml to provision the firewall settings to evaluate
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.1">
 <SyncBody>

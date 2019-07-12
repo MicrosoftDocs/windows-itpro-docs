@@ -90,7 +90,7 @@ It's possible that you might revoke data from an unenrolled device only to later
 
    To start Robocopy in S mode, open Task Manager. Click **File** > **Run new task**, type the command, and click **Create this task with administrative privileges**.
    
-   ![Robocopy in S mode](images\robocopy-s-mode.png)
+   ![Robocopy in S mode](images/robocopy-s-mode.png)
 
    If the employee performed a clean installation and there is no user profile, you need to recover the keys from the System Volume folder in each drive. Type: 
     

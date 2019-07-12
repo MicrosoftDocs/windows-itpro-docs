@@ -64,7 +64,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
 ## Export Start layout and assets
 
-1. Follow the instructions in [Customize and export Start layout](customize-and-export-start-layout.md#bkmkcustomizestartscreen) to customize the Start screen on your test computer.
+1. Follow the instructions in [Customize and export Start layout](customize-and-export-start-layout.md#customize-the-start-screen-on-your-test-computer) to customize the Start screen on your test computer.
 2. Open Windows PowerShell as an administrator and enter the following command:
     
     ```
