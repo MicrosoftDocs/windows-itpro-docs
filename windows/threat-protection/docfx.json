@@ -31,11 +31,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-WindowsIT",
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",
-      "ms.author": "justinha",
       "ms.date": "04/05/2017",
       "_op_documentIdPathDepotMapping": {
         "./": {

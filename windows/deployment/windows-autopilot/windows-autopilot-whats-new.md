@@ -27,7 +27,8 @@ ms.topic: article
 [Windows Autopilot for white glove deployment](white-glove.md) is new in Windows 10, version 1903. See the following video:
 
 <br>
->[!VIDEO https://www.youtube.com/embed/nE5XSOBV0rI]
+
+> [!VIDEO https://www.youtube.com/embed/nE5XSOBV0rI]
 
 Also new in this version of Windows:
 - The Intune enrollment status page (ESP) now tracks Intune Management Extensions.
@@ -40,6 +41,9 @@ Also new in this version of Windows:
 Windows Autopilot [self-deploying mode](self-deploying.md) enables a zero touch device provisioning experience. Simply power on the device, plug it into the Ethernet, and the device is fully configured by Windows Autopilot. This self-deploying capability removes the current need to have an end user interact by pressing the “Next” button during the deployment process. 
 
 You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
+
+>[!NOTE]
+>Window 10, version 1903 or later is required to use self-deploying mode due to issues with TPM device attestation in Windows 10, version 1809.
 
 ## Related topics
 

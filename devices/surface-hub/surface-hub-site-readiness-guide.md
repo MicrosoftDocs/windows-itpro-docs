@@ -89,7 +89,7 @@ The 55” Surface Hub requires two people to safely lift and mount. The 84” Su
 
 ## Mounting and setup
 
-See the [Technical information]() section, or your mounting guide at http://www.microsoft.com/surface/support/surface-hub, for detailed instructions. 
+See your mounting guide at http://www.microsoft.com/surface/support/surface-hub for detailed instructions. 
 
 There are three ways to mount your Surface Hub:
 
@@ -97,6 +97,10 @@ There are three ways to mount your Surface Hub:
 - **Floor support mount**: Supports Surface Hub on the floor while it is permanently anchored to a conference space wall.
 - **Rolling stand**: Supports Surface Hub and lets you move it to other conference locations. For links to guides that provide details about each mounting method, including building requirements, see http://www.microsoft.com/surface/support/surface-hub.
 
+For specifications on available mounts for the original Surface Hub, see the following:
+
+- [Surface Hub Mounts and Stands Datasheet](http://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
+- [Surface Hub Stand and Wall Mount Specifications](http://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
 
 ## The Connect experience
 

@@ -51,7 +51,7 @@ In **ConfigADMXInstalledPolicy**, you provide a policy setting and value for tha
 
 ## ConfigOperations
 
-Use **ConfigOperations** to import an ADXM file or policies from an ADMX file.
+Use **ConfigOperations** to import an ADMX file or policies from an ADMX file.
 
 1. Enter an app name, and then click **Add**. 
 
@@ -72,8 +72,8 @@ Use **ConfigOperations** to import an ADXM file or policies from an ADMX file.
     
 5. Repeat for each ADMX, or set of ADMX policies, that you want to add, and then configure [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) for each one.
 
+<span id="convert"/>
 
-<span id="convert" />
 ## Convert multi-line to single line
 
 Use the following PowerShell cmdlet to remove carriage returns and line feeds from a multi-line file to create a single-line file that you can paste in **AdmxFileUid**.

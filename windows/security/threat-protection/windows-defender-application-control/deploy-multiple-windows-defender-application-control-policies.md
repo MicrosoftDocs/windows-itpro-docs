@@ -75,5 +75,19 @@ Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and re
 
 ### Merging policies
 
-When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID <ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID <ID>.
+When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 
+### Deploying policies
+
+In order to deploy policies using the new multiple policy format you will need to:
+
+1. Ensure policies are copied to the right location
+   - Policies must be copied to this directory: C:\Windows\System32\CodeIntegrity\CiPolicies\Active
+2. Binary policy files must have the correct name which takes the format {PolicyGUID}.cip
+   - Ensure that the name of the binary policy file is exactly the same as the PolicyID in the policy
+   - For example if the policy XML had the ID as <PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID> the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
+3. Reboot the system or use WMI to rebootlessly refresh the policy
+
+```powershell
+Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = 'C:\Windows\System32\CodeIntegrity\CiPolicies\Active\{A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip'}
+```

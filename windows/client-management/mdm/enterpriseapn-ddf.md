@@ -22,13 +22,13 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 The content below are the different versions of the DDF for this CSP.
 
 
--   [EnterpriseAPN CSP version 1.0 DDF](#enterpriseapn-csp-version-1-0-ddf)
--   [EnterpriseAPN CSP version 1.1 DDF](#enterpriseapn-csp-version-1-1-ddf)
--   [EnterpriseAPN CSP version 1.2 DDF](#enterpriseapn-csp-version-1-2-ddf)
+-   [EnterpriseAPN CSP version 1.0 DDF](#enterpriseapn-csp-version-10-ddf)
+-   [EnterpriseAPN CSP version 1.1 DDF](#enterpriseapn-csp-version-11-ddf)
+-   [EnterpriseAPN CSP version 1.2 DDF](#enterpriseapn-csp-version-12-ddf)
 
-### EnterpriseAPN CSP version 1.0 DDF
+### <a id="enterpriseapn-csp-version-1-0-ddf" />EnterpriseAPN CSP version 1.0 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -314,9 +314,9 @@ The content below are the different versions of the DDF for this CSP.
 </MgmtTree>
 ```
 
-### EnterpriseAPN CSP version 1.1 DDF
+### <a id="enterpriseapn-csp-version-1-1-ddf" />EnterpriseAPN CSP version 1.1 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -739,9 +739,9 @@ The content below are the different versions of the DDF for this CSP.
 </MgmtTree>
 ```
 
-### EnterpriseAPN CSP version 1.2 DDF
+### <a id="enterpriseapn-csp-version-1-2-ddf" />EnterpriseAPN CSP version 1.2 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

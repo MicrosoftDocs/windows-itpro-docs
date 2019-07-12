@@ -28,6 +28,9 @@ The Windows Server 2016 Active Directory Federation Server Certificate Registrat
 
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
 
+> [!NOTE]
+> In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the https://enterpriseregistration.windows.net endpoint.
+
 ### Configure the Registration Authority
 
 Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
@@ -36,7 +39,7 @@ Sign-in the AD FS server with *Domain Admin* equivalent credentials.
 2.	Type the following command   
   
     ```PowerShell
-    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
     ```
 
 

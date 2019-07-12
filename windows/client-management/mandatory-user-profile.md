@@ -42,7 +42,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
-| Windows 10, versions 1607, 1703, 1709, 1803, and 1809 |  Windows Server 2016 | v6 |
+| Windows 10, versions 1607, 1703, 1709, 1803, 1809 and 1903 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
 For more information, see [Deploy Roaming User Profiles, Appendix B](https://technet.microsoft.com/library/jj649079.aspx) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
@@ -150,6 +150,8 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 | Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
 | Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
 
+> [!Note]
+> The Group Policy settings above can be applied in Windows 10 Professional edition.
 
 
 

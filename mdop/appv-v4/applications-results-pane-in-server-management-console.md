@@ -36,8 +36,6 @@ Organizes the icons in the **Results** pane.
 <a href="" id="help"></a>**Help**  
 Displays the help system for the Application Virtualization Management Console.
 
-[]()  
-
 Right-click any application in the **Results** pane to display a pop-up menu that contains the following elements.
 
 <a href="" id="move"></a>**Move**  

@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Defender Advanced Threat Protection APIs  
 ms.reviewer: 
-description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
+description: Use the exposed data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,10 +19,9 @@ ms.topic: article
 
 # Use Microsoft Defender ATP APIs
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP on behalf of a user.
 
@@ -30,7 +29,7 @@ If you need programmatic access Microsoft Defender ATP without a user, refer to 
 
 If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
@@ -40,7 +39,7 @@ In general, you’ll need to take the following steps to use the APIs:
 This page explains how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
 
 >[!NOTE]
-> When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
+> When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct Application permission and user permission.
 > If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac.md).
 
 >[!TIP]
@@ -48,65 +47,55 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Create an app
 
-1. Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
+1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
+   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3. In the Create window, enter the following information then click **Create**.
+3. In the registration from, enter the following information then click **Register**.
 
-   ![Image of Create application window](images/nativeapp-create.png)
+   ![Image of Create application window](images/nativeapp-create2.png)
 
-   - **Name:** -Your app name-
-   - **Application type:** Native
-   - **Redirect URI:** `https://127.0.0.1`
+   - **Name:** -Your application name-
+   - **Application type:** Public client
 
+4. Allow your Application to access Microsoft Defender ATP and assign it 'Read alerts' permission:
 
-4. Click **Settings** > **Required permissions** > **Add**.
+	- On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-   ![Image of new app in Azure](images/nativeapp-add-permission.png)
+	- **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-5. Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
-	
-   **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+	![Image of API access and API selection](images/add-permission.png)
 
-   ![Image of API access and API selection](images/webapp-add-permission-2.png)
+	- Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
 
-6. Click **Select permissions** > **Check the desired permissions** > **Select**.
-	
-	>[!IMPORTANT]
-    >You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example.
-	For instance,
+    ![Image of API access and API selection](images/application-permissions-public-client.png)
 
-   - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-   - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+	- **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
 
-      To determine which permission you need, look at the **Permissions** section in the API you are interested to call.
+     For instance,
 
-     ![Image of select permissions](images/nativeapp-select-permissions.png)
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
+   - Click **Grant consent**
 
-7. Click **Done**
+     **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-    ![Image of add permissions completion](images/nativeapp-add-permissions-end.png)
+     ![Image of Grant permissions](images/grant-consent.png)
 
-8. Click **Grant permissions**
+6. Write down your application ID and your tenant ID:
 
-	In order to add the new selected permissions to the app, the Admin's tenant must press on the **Grant permissions** button.
+   - On your application page, go to **Overview** and copy the following:
 
-	If in the future you will want to add more permission to the app, you will need to press on the **Grant permissions** button again so the changes will take effect.
-
-	![Image of Grant permissions](images/webapp-grant-permissions.png)
-
-9. Write down your application ID.
-    
-	![Image of app ID](images/nativeapp-get-appid.png)
+   ![Image of created app id](images/app-and-tenant-ids.png)
 
 
 ## Get an access token
 
-For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 
@@ -156,7 +145,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
 - Validate you get a 'scp' claim with the desired app permissions
-- In the screenshot below you can see a decoded token acquired from the app in the tutorial:
+- In the screen shot below you can see a decoded token acquired from the app in the tutorial:
 
 ![Image of token validation](images/nativeapp-decoded-token.png)
 

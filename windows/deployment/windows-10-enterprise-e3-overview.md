@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -145,7 +145,7 @@ See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Deploy Windows 10 Enterprise features
 
-Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows-10-pro-and-enterprise-editions)?
+Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
 
 The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10 Enterprise edition features.
 

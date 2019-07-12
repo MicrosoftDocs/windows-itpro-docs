@@ -1,8 +1,8 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greglin
 description: Concepts about deploying Windows 10 for M365
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

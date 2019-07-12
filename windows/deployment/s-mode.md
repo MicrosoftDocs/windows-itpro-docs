@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
+author: greg-lindsay
 ms.topic: article
 ---
 
