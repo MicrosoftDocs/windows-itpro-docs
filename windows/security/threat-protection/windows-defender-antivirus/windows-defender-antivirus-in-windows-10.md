@@ -42,7 +42,7 @@ You can configure and manage Windows Defender Antivirus with:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
-Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
+Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
 
 <a id="sysreq"></a>
 ## Minimum system requirements
