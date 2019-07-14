@@ -54,20 +54,14 @@ In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was a
 
 Here is an example:
 
-```syntax
-             <Enforcement>
-
-                <CommandLine>/quiet</CommandLine>
-
-                <TimeOut>5</TimeOut>
-
-                <RetryCount>3</RetryCount>
-
-                <RetryInterval>5</RetryInterval>
-
-                <DownloadFromAad>1</DownloadFromAad>
-
-              </Enforcement>
+```xml
+<Enforcement>
+  <CommandLine>/quiet</CommandLine>
+  <TimeOut>5</TimeOut>
+  <RetryCount>3</RetryCount>
+  <RetryInterval>5</RetryInterval>
+  <DownloadFromAad>1</DownloadFromAad>
+</Enforcement>
 ```
 
 <a href="" id="msi-productid-status"></a>**MSI/*ProductID*/Status**
@@ -112,7 +106,7 @@ Value type is string. Supported operation is Get.
 
 **SyncML to request CSP version information**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Get>
@@ -140,7 +134,7 @@ The following table describes the fields in the previous sample:
 
 **SyncML to perform MSI operations for application uninstall**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Delete>
@@ -168,7 +162,7 @@ The following table describes the fields in the previous sample:
 
 **SyncML to perform MSI operations for application status reporting**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Get>
@@ -196,7 +190,7 @@ The following table describes the fields in the previous sample:
 
 **SyncML to perform MSI install operations for an application targeted to a specific user on the device. The Add command is required to preceed the Exec command.**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Add>
@@ -290,7 +284,7 @@ The following table describes the fields in the previous sample:
 
 **SyncML to perform MSI install operations for an application targeted to all users on the device (per-device installation)**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Add>
@@ -540,7 +534,7 @@ Here's a list of references:
 ## Alert example
 
 
-``` syntax
+```xml
 <Alert>
        <CmdID>4</CmdID>
        <Data>1224</Data>

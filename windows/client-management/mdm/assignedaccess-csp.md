@@ -796,7 +796,7 @@ StatusConfiguration Get
 
 StatusConfiguration Replace On
 
-```syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Replace>
@@ -1219,7 +1219,7 @@ ShellLauncherConfiguration Get
 
 ## AssignedAccessAlert XSD
 
-```syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
