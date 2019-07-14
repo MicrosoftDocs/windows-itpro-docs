@@ -53,11 +53,19 @@ Congratulations!  Setup is complete and you can begin using HoloLens.
 
 ## Explore HoloLens
 
-### Check out on-device settings
+### Check out on-device settings and desktop
+
+HoloLens doesn't have an on-device command line.  With that in mind, the settings section in HoloLens plays an important role in diagnosing problems on-device.  Understanding the information available to HoloLens users will pay dividends when troubleshooting or configuring the device.
+
+Open settings by opening the start menu and clicking on the **Settings** in the top bar.  You can also ask Cortana to open settings.
+
+Follow [this guide](https://docs.microsoft.com/en-us/windows/mixed-reality/navigating-the-windows-mixed-reality-home) to navigate around the HoloLens home.
 
 ### Connect bluetooth devices
 
-### Practice interacting with holograms
+Connecting a bluetooth keyboard makes typing on HoloLens as efficient as a Windows PC.
+
+[Connect a bluetooth keyboard or clicker](https://support.microsoft.com/en-us/help/12636).
 
 ## Next steps
 
