@@ -39,4 +39,4 @@ Password-less phone sign-in simplifies signing-in to your meetings and files on 
 3. If prompted, enter the PIN or biometric ID on your phone to complete sign-in.
 
 ## Learn more
-For more information, see [Password-less phone sign-in with the Microsoft Authenticator app](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-phone-sign-in).
+For more information, see [Password-less phone sign-in with the Microsoft Authenticator app](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-phone-sign-in).

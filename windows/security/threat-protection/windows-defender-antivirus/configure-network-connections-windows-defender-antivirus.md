@@ -81,7 +81,7 @@ See [Manage Windows Defender Antivirus with the mpcmdrun.exe commandline tool](c
 You can download a sample file that Windows Defender Antivirus will detect and block if you are properly connected to the cloud.
 
 Download the file by visiting the following link:
-- http://aka.ms/ioavtest
+- https://aka.ms/ioavtest
 
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
