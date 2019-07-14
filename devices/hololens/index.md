@@ -28,6 +28,7 @@ ms.date: 07/14/2019
 | [Get started with HoloLens](hololens-setup.md) | Set up HoloLens for the first time.  |
 | [Set up HoloLens in the enterprise](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
 | [Install and manage applications on HoloLens](hololens-install-apps.md) |Install and manage important applications on HoloLens at scale.  |
+| [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
 
 ## Quick reference by topic
 
@@ -39,12 +40,11 @@ ms.date: 07/14/2019
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
 | [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
-| [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens |
-| [Install localized version of HoloLens](hololens-install-localized.md) | Install the Chinese or Japanese version of HoloLens  |
+| [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens. |
+| [Install localized version of HoloLens](hololens-install-localized.md) | Configure HoloLens for different locale.  |
 
 ## Related resources
 
-* [Help for using HoloLens](https://support.microsoft.com/products/hololens)
 * [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
 * [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
 * [HoloLens release notes](https://developer.microsoft.com/en-us/windows/mixed-reality/release_notes)
