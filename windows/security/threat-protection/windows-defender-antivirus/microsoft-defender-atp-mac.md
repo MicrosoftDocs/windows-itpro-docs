@@ -64,7 +64,7 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
 
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
+To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
