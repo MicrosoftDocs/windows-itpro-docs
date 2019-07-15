@@ -1,6 +1,6 @@
 ---
 title: Set up a new HoloLens
-description: Unboxing a new HoloLens is exciting.  This guide walks through first time set up.  You'll need a Wi-Fi network and either a Microsoft (MSA) or Azure Active Directory (AAD) account.
+description: This guide walks through first time set up.  You'll need a Wi-Fi network and either a Microsoft (MSA) or Azure Active Directory (AAD) account.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -12,7 +12,7 @@ ms.date: 07/14/2019
 
 # Set up HoloLens for the first time
 
-Unboxing a new HoloLens is exciting.  Follow along to set up a HoloLens for the first time.  At the end of this quickstart, you'll be able to use HoloLens and navigate HoloLens settings on-device.
+Follow along to set up a HoloLens for the first time.  At the end of this quickstart, you'll be able to use HoloLens and navigate HoloLens settings on-device.
 
 This is a high level unboxing guide to become familiar with HoloLens.  
 See [Set up HoloLens in the enterprise](hololens-requirements.md) to configure HoloLens for scale enterprise deployment and ongoing device management.
