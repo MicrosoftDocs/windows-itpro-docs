@@ -172,7 +172,7 @@ Here are the predefined assigned access AppLocker rules for **desktop apps**:
 The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
 
 <span id="apps-sample" />
-<code>xml
+```xml
 &lt;AllAppsList&gt;
         &lt;AllowedApps&gt;
           &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
@@ -184,6 +184,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; rs5:AutoLaunch=&quot;true&quot; rs5:AutoLaunchArguments=&quot;123.txt&quot;/&gt;
         &lt;/AllowedApps&gt;
 &lt;/AllAppsList&gt;</code>
+```
 
 ##### FileExplorerNamespaceRestrictions
 
@@ -217,6 +218,13 @@ The following example shows how to allow user access to the Downloads folder in 
     </Profiles>
 </AssignedAccessConfiguration>
 ```
+FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace http://schemas.microsoft.com/AssignedAccess/201810/config, AllowRemovableDrives and NoRestriction are defined in a new namespace http://schemas.microsoft.com/AssignedAccess/2020/config.
+
+* When FileExplorerNamespaceRestrictions node is not used, or used but left empty, user will not be able to access any folder in common dialog (e.g. Save As in Microsoft Edge browser).
+* When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
+* When AllowRemovableDrives is used, user will be to access removable drives.
+* When NoRestriction is used, no restriction will be applied to the dialog.
+* AllowRemovableDrives and AllowedNamespace:Downloads can be used at the same time.
 
 ##### StartLayout
 
