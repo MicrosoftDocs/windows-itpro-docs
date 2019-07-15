@@ -396,13 +396,7 @@ Below sample shows dedicated profile and global profile mixed usage, aauser woul
 ## [Preview] Folder Access sample xml
 In Windows 10 1809 release, folder access is locked down that when common file dialog is opened, IT Admin can specify if user has access to the Downloads folder, or no access to any folder at all. This restriction has be redesigned for finer granulatity and easier use, available in current Windows 10 Prerelease.
 
-IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all.
-* When v2:FileExplorerNamespaceRestrictions node is not used, or used but left empty, user will not be able to access any folder in common dialog (e.g. Save As in Microsoft Edge browser).
-* When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
-* When v3:AllowRemovableDrives is used, user will be to access removable drives.
-* When v3:NoRestriction is used, no restriction will be applied to the dialog.
-
-Note that Downloads and Removable Drives can be allowed at the same time.
+IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Note that Downloads and Removable Drives can be allowed at the same time.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
