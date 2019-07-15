@@ -11,17 +11,17 @@ ms.date: 05/21/2019
 
 # ApplicationControl CSP
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike [AppLocker CSP](applocker-csp.md), ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
 Existing WDAC policies deployed using AppLocker CSP’s CodeIntegrity node can now be deployed using ApplicationControl CSP URI. Although WDAC policy deployment via AppLocker CSP will continue to be supported, all new feature work will be done in ApplicationControl CSP only.
 
-The ApplicationControl CSP was added in Windows 10, version 1903.
+ApplicationControl CSP was added in Windows 10, version 1903.
 
-The following diagram shows the ApplicationControl CSP in tree format.
+The following diagram shows ApplicationControl CSP in tree format.
 
 ![tree diagram for applicationcontrol csp](images/provisioning-csp-applicationcontrol.png)
 
 <a href="" id="vendor-msft-applicationcontrol"></a>**./Vendor/MSFT/ApplicationControl**  
-Defines the root node for the ApplicationControl CSP.
+Defines the root node for ApplicationControl CSP.
 
 Scope is permanent. Supported operation is Get.
 
@@ -31,7 +31,7 @@ An interior node that contains all the policies, each identified by their global
 Scope is permanent. Supported operation is Get.
 
 <a href="" id="applicationcontrol-policies-policyguid"></a>**ApplicationControl/Policies/_Policy GUID_**  
-The ApplicationControl CSP enforces that the “ID” segment of a given policy URI is the same GUID as the policy ID in the policy blob. Each *Policy GUID* node contains a Policy node and a corresponding PolicyInfo node.
+ApplicationControl CSP enforces that the “ID” segment of a given policy URI is the same GUID as the policy ID in the policy blob. Each *Policy GUID* node contains a Policy node and a corresponding PolicyInfo node.
 
 Scope is dynamic. Supported operation is Get.
 
