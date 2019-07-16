@@ -42,7 +42,7 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use convenience PIN with Azure AD?
-Yes. It is currently possible to set a convience PIN on an Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
+It is currently possible to set a convience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
 
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
