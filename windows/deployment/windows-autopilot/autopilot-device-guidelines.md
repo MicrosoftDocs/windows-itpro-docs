@@ -28,8 +28,8 @@ All devices used with Windows Autopilot should meet the [minimum hardware requir
 
 The following additional best practices ensure that devices can easily be provisioned by organizations as part of the Windows Autopilot deployment process: 
 - Ensure that the TPM 2.0 is enabled and in a good state (not in Reduced Functionality Mode) by default on devices intended for Windows Autopilot self-deploying mode.
-- The OEM provisions unique tuple info (SmbiosSystemManufacturer, SmbiosSystemProductName, SmbiosSystemSerialNumber) or PKID + SmbiosSystemSerialNumber into the [SMBIOS fields](https://docs.microsoft.com/windows-hardware/drivers/bringup/smbios) per Microsoft specification (Manufacturer, Product Name and Serial Number stored in SMBIOS Type 1 04h, Type 1 05h and Type 1 07h).
-- The OEM uploads 4K Hardware Hashes obtained using OA3 Tool RS3+ run in Audit mode on full OS to Microsoft via CBR report prior to shipping devices to an Autopilot customer or channel partner.
+- The OEM provisions unique tuple info (SmbiosSystemManufacturer, SmbiosSystemProductName, SmbiosSystemSerialNumber) into the [SMBIOS fields](https://docs.microsoft.com/windows-hardware/drivers/bringup/smbios) per Microsoft specification (Manufacturer, Product Name and Serial Number stored in SMBIOS Type 1 04h, Type 1 05h and Type 1 07h).
+- The OEM uploads 4K Hardware Hashes that include the Product Key IDs (PKIDs) obtained using OA3 Tool RS3+ run in Audit mode on full OS to Microsoft via CBR report prior to shipping devices to an Autopilot customer or channel partner.
 - As a best practice, Microsoft requires that OEM shipping drivers are published to Windows Update within 30 days of the CBR being submitted, and system firmware and driver updates are published to Windows Update within 14 days
 - The OEM ensures that the PKID provisioned in the SMBIOS is passed on to the channel.
 
