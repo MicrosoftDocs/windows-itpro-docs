@@ -40,7 +40,7 @@ The following table lists management options for each setting.
 
 For Windows 10, the following MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol3BreakAll"]
 > | Setting | MDM Policy | Description |
 > | --- | --- | --- |
 > | 1. Automatic Root Certificates Update | There is intentionally no MDM available for Automatic Root Certificate Update. | This MDM does not exist since it would prevent the operation and management of MDM management of devices.|
