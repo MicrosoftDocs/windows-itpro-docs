@@ -429,7 +429,6 @@
 ####Troubleshoot attack surface reduction
 ##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
 ##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
-##### [Collect diagnostic data for files](windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
  
 #### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
