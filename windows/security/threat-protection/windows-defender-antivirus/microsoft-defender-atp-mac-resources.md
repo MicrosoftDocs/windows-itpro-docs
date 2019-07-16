@@ -116,8 +116,3 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
-
-## Known issues
-
-- Full Microsoft Defender ATP integration is not available yet.
-- Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.

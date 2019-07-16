@@ -196,7 +196,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 
 ### Enterprise management
 
-Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
+Sharing diagnostic data with Microsoft is enabled by default on Windows 10, 1903 and later. Sharing this data provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
 Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, in **Privacy** > **Diagnostics & feedback**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
