@@ -172,7 +172,7 @@ Here are the predefined assigned access AppLocker rules for **desktop apps**:
 The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
 
 <span id="apps-sample" />
-<code>xml
+```xml
 &lt;AllAppsList&gt;
         &lt;AllowedApps&gt;
           &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
@@ -184,6 +184,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; rs5:AutoLaunch=&quot;true&quot; rs5:AutoLaunchArguments=&quot;123.txt&quot;/&gt;
         &lt;/AllowedApps&gt;
 &lt;/AllAppsList&gt;</code>
+```
 
 ##### FileExplorerNamespaceRestrictions
 
@@ -217,6 +218,13 @@ The following example shows how to allow user access to the Downloads folder in 
     </Profiles>
 </AssignedAccessConfiguration>
 ```
+FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace http://schemas.microsoft.com/AssignedAccess/201810/config, AllowRemovableDrives and NoRestriction are defined in a new namespace http://schemas.microsoft.com/AssignedAccess/2020/config.
+
+* When FileExplorerNamespaceRestrictions node is not used, or used but left empty, user will not be able to access any folder in common dialog (e.g. Save As in Microsoft Edge browser).
+* When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
+* When AllowRemovableDrives is used, user will be to access removable drives.
+* When NoRestriction is used, no restriction will be applied to the dialog.
+* AllowRemovableDrives and AllowedNamespace:Downloads can be used at the same time.
 
 ##### StartLayout
 
@@ -400,6 +408,67 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
   >If an Azure AD group is configured with a lockdown profile on a device, a user in the Azure AD group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
 <span id="add-xml" />
+
+#### [Preview] Global Profile
+Global profile is added in curernt Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
+
+Usage is demonstrated below, by using the new xml namespace and specify GlobalProfile from that namespace. When GlobalProfile is configured, a non-admin account logs in, if this user does not have designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, global profile will be applied for the user.
+
+Note:
+1. GlobalProfile can only be multi-app profile
+2. Only one GlobalProfile can be used in one AssignedAccess Configuration Xml
+3. GlobalProfile can be used as the only config, or it can be used among with regular user or group Config.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+>
+    <Profiles>
+        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" v2:AutoLaunch="true" v2:AutoLaunchArguments="123"/>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
+                </AllowedApps>
+            </AllAppsList>
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsLive.calendar" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+                              <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
+                                   "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   see document https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop
+                              -->
+                              <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
+                              <!-- for 3rd party desktop application, place the link file under appropriate folder -->
+                              <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%AppData%\Microsoft\Windows\Start Menu\Programs\MyLOB.lnk" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Configs>
+</AssignedAccessConfiguration>
+```
 
 ### Add XML file to provisioning package
 
