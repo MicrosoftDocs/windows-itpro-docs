@@ -72,7 +72,6 @@ To effectively build queries that span multiple tables, you need to understand t
 | Ipv6Dhcp | string | IPv6 address of DHCP server |
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
 | IsAzureInfoProtectionApplied | boolean | Indicates whether the file is encrypted by Azure Information Protection |
-| IsWindowsInfoProtectionApplied | boolean | Indicates whether Windows Information Protection (WIP) policies apply to the file |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
 | LocalIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
