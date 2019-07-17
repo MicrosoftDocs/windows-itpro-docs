@@ -74,6 +74,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
     * Folder path - wildcard supported
     * IP address
     * URL - wildcard supported
+    * Command line - wildcard supported
 
 3. Select the **Trigerring IOC**.
     
