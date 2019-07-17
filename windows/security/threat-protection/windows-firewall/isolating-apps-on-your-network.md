@@ -93,7 +93,7 @@ All other endpoints that do not meet the previously stated criteria are consider
 
 **To configure a GPO that defines your intranet address space**
 
-1.  Open the Group Policy Management snap-in (gpmc.msc), right click on the Group Policy you want to use to define address space, and select **Edit**.
+1.  Open the Group Policy Management snap-in (gpmc.msc), right click on the Group Policy you want to use to define your address space, and select **Edit**.
 
 2.  From the Group Policy Management Editor, expand **Computer Configuration**, expand **Policies**, expand **Administrative Templates**, expand **Network**, and click **Network Isolation**.
 
