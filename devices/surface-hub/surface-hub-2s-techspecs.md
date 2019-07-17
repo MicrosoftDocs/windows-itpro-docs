@@ -17,6 +17,7 @@ ms.localizationpriority: Normal
 |**Item**|**Details**|
 |:------ |:--------- |
 |**Dimensions**| 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
+|**Shipping dimensions**| 47.64" x 36.89" x 9.92" (1,210 mm x 937 mm x 252 mm)|
 |**Weight**| 61.6 lbs. (28 kg) |
 |**Resolution**| 3840 x 2560 |
 |**Display**| PixelSense Display, 3:2 aspect ratio, 10-bit color, 15.5 mm border, anti-glare, IPS LCD |
@@ -31,6 +32,11 @@ ms.localizationpriority: Normal
 |**Exterior**| Casing: Precision machined aluminum with mineral-composite resin <br> Color: Platinum <br> Physical Buttons: Power, Volume, Source |
 |**What’s in the box**| One Surface Hub 2S <br> One Surface Hub 2 Pen  <br> One Surface Hub 2 Camera <br> 2.5 m AC Power Cable <br> Quick Start Guide |
 |**Warranty**| 1-year limited hardware warranty |
+|**BTU**| 1518 BTU/hr |
+|**Input Voltage**| 50/60Hz 110/230v nominal, 90-265v max |
+|**Input power, operating**| 445 W (495 W Surge Load) |
+|**Input Current**| 5.46 A |
+|**Input Power, standby**| 5 W max  |
 
 > [!NOTE]
 > <sup>1</sup> System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See Surface.com/Storage for more details. <br> <sup>2</sup> Software license required for some features. Sold separately.<br> 
