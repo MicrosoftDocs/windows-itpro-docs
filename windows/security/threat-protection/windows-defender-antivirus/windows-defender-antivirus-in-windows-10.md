@@ -37,10 +37,8 @@ You can configure and manage Windows Defender Antivirus with:
 - Group Policy
 
 >[!TIP]
->You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
->- Cloud-delivered protection
->- Fast learning (including Block at first sight)
->- Potentially unwanted application blocking
+>![List of Windows Defender AV engines](images/nameoffile.png) 
+>[Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/) 
 
 Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
 
@@ -52,6 +50,12 @@ Windows Defender AV has the same hardware requirements as Windows 10. For more i
 -   [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
 Functionality, configuration, and management is largely the same when using Windows Defender AV on Windows Server 2016; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+
+>[!TIP]
+>You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
+>- Cloud-delivered protection
+>- Fast learning (including Block at first sight)
+>- Potentially unwanted application blocking
 
 ## Related topics
 
