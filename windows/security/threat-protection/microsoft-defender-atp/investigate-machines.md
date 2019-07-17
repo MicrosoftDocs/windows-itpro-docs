@@ -109,7 +109,7 @@ To see a full page view of an alert including incident graph and process tree, s
 
 The **Timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine. This can help you correlate any events, files, and IP addresses in relation to the machine.
 
-Timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period. To further control your view, you can filter by event groups or customize the columns.
+The timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period. To further control your view, you can filter by event groups or customize the columns.
 
 >[!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
@@ -131,15 +131,15 @@ Some of the functionality includes:
 - Export detailed machine timeline events
   - Export the machine timeline for the current date or a specified date range up to seven days.
 
-Along with event time and users, one of the main categories on the timeline is "Details". They describe what happened in the events. The list of possible details are:
+Each event includes an **Additional information** section that provides more detail depending on the type of event: 
 
-- Contained by Application Guard
-- Active threat detected - when the detection happened, the threat was executing (i.e. it was running)
-- Remediation unsuccessful - remediation was invoked but failed
-- Remediation successful - the threat was stopped and cleaned up
-- Warning bypassed by user - SmartScreen warning appeared but the user dismissed it
-- Suspicious script detected
-- Alert category (e.g. lateral movement)- if the event is correlated to an alert, the tag will show the alert category
+- Contained by Application Guard - the web browser event was restricted by an isolated container 
+- Active threat detected - the threat detection occurred while the threat is running
+- Remediation unsuccessful - an attempt to remediate the detected threat was invoked but failed
+- Remediation successful - the detected threat was stopped and cleaned
+- Warning bypassed by user - the SmartScreen warning was dismissed and overridden by a user
+- Suspicious script detected - a potentially malicious script was found running
+- The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 
 You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
