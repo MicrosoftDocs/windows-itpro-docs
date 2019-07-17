@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
+manager: laurawi
 ms.collection: M365-modern-desktop
 search.appverid:
 - MET150
