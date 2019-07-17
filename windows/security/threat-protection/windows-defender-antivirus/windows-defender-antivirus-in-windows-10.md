@@ -37,8 +37,9 @@ You can configure and manage Windows Defender Antivirus with:
 - Group Policy
 
 >[!TIP]
->![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png) 
->[Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/) 
+>Windows Defender Antivirus is the next-generation protection component of Microsoft Defender ATP. It uses multiple advanced detection and prevention technologies to deliver portection that is accurate, real-time, and intelligent. 
+>Read more: [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+>![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
 
