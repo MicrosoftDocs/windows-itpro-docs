@@ -1686,7 +1686,7 @@ The Windows Defender Antivirus client attempted to download and install the late
 To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
@@ -2757,7 +2757,7 @@ This error indicates that there might be a problem with your security product.
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender Antivirus"/>Or,
 </li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 </ol>

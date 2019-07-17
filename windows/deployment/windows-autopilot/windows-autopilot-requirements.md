@@ -28,19 +28,19 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
 
 - Windows 10 version 1703 (semi-annual channel) or higher is required. 
 - The following editions are supported:
-    -   Windows 10 Pro
-    -   Windows 10 Pro Education
-    -   Windows 10 Pro for Workstations
-    -   Windows 10 Enterprise
-    -   Windows 10 Education
-    -   Windows 10 Enterprise 2019 LTSC
+  - Windows 10 Pro
+  - Windows 10 Pro Education
+  - Windows 10 Pro for Workstations
+  - Windows 10 Enterprise
+  - Windows 10 Education
+  - Windows 10 Enterprise 2019 LTSC
 
 ## Networking requirements
 
 Windows Autopilot depends on a variety of internet-based services. Access to these services must be provided for Autopilot to function properly. In the simplest case, enabling proper functionality can be achieved by ensuring the following:
 
--   Ensure DNS name resolution for internet DNS names
--   Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP)
+- Ensure DNS name resolution for internet DNS names
+- Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP)
 
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to whitelist access to the required services. For additional details about each of these services and their specific requirements, review the following details:
 
@@ -60,7 +60,7 @@ If the Delivery Optimization Service is inaccessible, the AutoPilot process will
 
 <tr><td><b>Network Time Protocol (NTP) Sync<b><td>When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate. Ensure that UDP port 123 to time.windows.com is accessible.
 <tr><td><b>Domain Name Services (DNS)<b><td>To resolve DNS names for all services, the device communicates with a DNS server, typically provided via DHCP.  This DNS server must be able to resolve internet names.
-<tr><td><b>Diagnostics data<b><td>To enable Windows Analytics and related diagnostics capabilities, see <a href="https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization">Configure Windows diagnostic data in your organization</a>.<br>
+<tr><td><b>Diagnostics data<b><td>Starting in Windows 10, 1903, diagnostic data collection will be enabled by default. To disable Windows Analytics and related diagnostics capabilities, see <a href="https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#manage-enterprise-diagnostic-data-level">Manage enterprise diagnostic data level</a>.<br>
 
 If diagnostic data cannot be sent, the Autopilot process will still continue, but services that depend on diagnostic data, such as Windows Analytics, will not work.
 <tr><td><b>Network Connection Status Indicator (NCSI)<b><td>Windows must be able to tell that the device is able to access the internet. For more information, see <a href="https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints#network-connection-status-indicator-ncsi">Network Connection Status Indicator (NCSI)</a>.

@@ -19,7 +19,7 @@ ms.topic: include
 |          Group Policy           |  MDM  | Registry |            Description            |                 Most restricted                  |
 |---------------------------------|:-----:|:--------:|-----------------------------------|:------------------------------------------------:|
 | Not configured<br>**(default)** | Blank |  Blank   | Users can choose to use Autofill. |                                                  |
-|            Disabled             |   0   |    no    |            Prevented.             | ![Most restricted value](/images/check-gn.png) |
+|            Disabled             |   0   |    no    |            Prevented.             | ![Most restricted value](../images/check-gn.png) |
 |             Enabled             |   1   |   yes    |             Allowed.              |                                                  |
 
 ---

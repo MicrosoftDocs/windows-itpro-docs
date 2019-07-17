@@ -23,7 +23,7 @@ ms.topic: conceptual
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac may lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac is likely to lead to performance problems and unpredictable side effects.
 
 ## What’s new in the latest release
 
@@ -35,7 +35,6 @@ If you have any feedback that you would like to share, submit it by opening Micr
 
 ### Prerequisites
 
-- Microsoft Defender ATP subscription
 - Access to the Microsoft Defender Security Center portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
@@ -43,20 +42,29 @@ If you have any feedback that you would like to share, submit it by opening Micr
 ### System requirements
 
 > [!CAUTION]
-> The three most recent released versions of macOS are supported. Beta versions of macOS are not supported.
+> The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
 
 - Supported macOS versions: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space: 650 MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them:
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-| Service        | Description                          | URL                                                                  |
-| -------------- | ------------------------------------ | -------------------------------------------------------------------- |
-| ATP            | Advanced threat protection service   | [https://x.cp.wd.microsoft.com](https://x.cp.wd.microsoft.com), [https://cdn.x.cp.wd.microsoft.com](https://cdn.x.cp.wd.microsoft.com) |
+| Service location                         | DNS record              |
+| ---------------------------------------- | ----------------------- |
+| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net |
+| European Union                           | europe.x.cp.wd.microsoft.com |
+| United Kingdon                           | unitedkingdom.x.cp.wd.microsoft.com |
+| United States                            | unitedstates.x.cp.wd.microsoft.com |
 
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping]([https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
+Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
+- Web Proxy Auto-discovery Protocol (WPAD)
+- Manual static proxy configuration
+
+If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+
+To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
@@ -100,6 +108,6 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Resources
 
-- For more information about logging, uninstalling, or known issues, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
 
 - [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md)

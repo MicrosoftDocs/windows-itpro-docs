@@ -3,6 +3,7 @@
 ## [Overview](overview.md)
 ### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
+#### [Exposure score](tvm-exposure-score.md)
 #### [Configuration score](configuration-score.md)
 #### [Security recommendation](tvm-security-recommendation.md)
 #### [Remediation](tvm-remediation.md)
@@ -69,9 +70,6 @@
 ###### [Remove file from blocked list](respond-file-alerts.md#remove-file-from-blocked-list)
 ###### [Check activity details in Action center](respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Deep analysis](respond-file-alerts.md#deep-analysis)
-###### [Submit files for analysis](respond-file-alerts.md#submit-files-for-analysis)
-###### [View deep analysis reports](respond-file-alerts.md#view-deep-analysis-reports)
-###### [Troubleshoot deep analysis](respond-file-alerts.md#troubleshoot-deep-analysis)
 
 
 ##### [Investigate entities using Live response](live-response.md)
@@ -355,6 +353,11 @@
 #### Interoperability
 ##### [Partner applications](partner-applications.md)
 
+#### [Manage machine configuration](configure-machines.md)
+##### [Monitor and increase machine onboarding](configure-machines-onboarding.md)
+##### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
+##### [Optimize ASR rule deployment and detections](configure-machines-asr.md)
+
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac.md)
 ###### [Create and manage roles](user-roles.md)
@@ -414,10 +417,14 @@
 ### [Troubleshoot Microsoft Defender ATP service issues](troubleshoot-mdatp.md)
 #### [Check service health](service-status.md)
 
+
+### [Troubleshoot live response issues]()
+#### [Troubleshoot issues related to live response](troubleshoot-live-response.md)
+
 ### Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
-#### [Collect diagnostic data for files](../windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
+#### [Collect diagnostic data for files](../windows-defender-exploit-guard/troubleshoot-np.md)
 
  
 ### [Troubleshoot next generation protection](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)

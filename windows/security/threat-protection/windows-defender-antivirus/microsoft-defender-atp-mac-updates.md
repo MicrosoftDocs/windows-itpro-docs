@@ -53,7 +53,7 @@ The channel determines the type and frequency of updates that are offered throug
 The `Production` channel contains the most stable version of the product.
 
 >[!TIP]
->Microsoft recommends keeping some devices in your enterprise either in `InsiderFast` or `External` in order to preview new features and provide early feedback.
+>In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `InsiderFast` or `External`.
 
 |||
 |:---|:---|

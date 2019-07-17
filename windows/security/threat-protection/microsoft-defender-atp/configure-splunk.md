@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/16/2017
 ---
 
 # Configure Splunk to pull Microsoft Defender ATP alerts
@@ -33,7 +32,7 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP alert
 
 ## Before you begin
 
-- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
+- Install the open source [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/) in Splunk.
 - Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
 
 - Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
@@ -52,7 +51,7 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP alert
 3. Click **REST** under **Local inputs**.
 
    NOTE:
-   This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
+   This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
 
 4. Click **New**.
 
