@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: @mapalko
+author: mapalko
 ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
