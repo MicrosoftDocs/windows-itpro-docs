@@ -131,10 +131,10 @@ Some of the functionality includes:
 - Export detailed machine timeline events
   - Export the machine timeline for the current date or a specified date range up to seven days.
 
-Each event includes an **Additional information** section that provides more detail depending on the type of event: 
+More details about certain events are provided in the **Additional information** section. These details vary depending on the type of event, for example: 
 
-- Contained by Application Guard - the web browser event was restricted by an isolated container 
-- Active threat detected - the threat detection occurred while the threat is running
+- Contained by Application Guard - the web browser event was restricted by an isolated container
+- Active threat detected - the threat detection occurred while the threat was running
 - Remediation unsuccessful - an attempt to remediate the detected threat was invoked but failed
 - Remediation successful - the detected threat was stopped and cleaned
 - Warning bypassed by user - the SmartScreen warning was dismissed and overridden by a user
