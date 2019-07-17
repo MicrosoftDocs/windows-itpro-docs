@@ -51,7 +51,7 @@ In the example image, the total points for the Windows security controls and Off
 You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md).
 
 ## Secure score over time
-You can track the progression of your organizational security posture over time using this tile. It displays the overall score in a historical trend line enabling you to see how taking the recommended actions increase your overall security posture.  The expected updated schedule for the Secure Score is about 24 hours, but in some cases depending of the size of the organization, numbers of computers and other factors, this update can be at least 72 hours.
+You can track the progression of your organizational security posture over time using this tile. It displays the overall score in a historical trend line enabling you to see how taking the recommended actions increase your overall security posture.  The expected update schedule for Secure Score is about 24 hours. In some cases, depending of the size of the organization, number of computers and other factors, this update can take up to 72 hours.
 
 ![Image of the security score over time tile](images/new-ssot.png)
 
