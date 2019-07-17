@@ -6,6 +6,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 author: greg-lindsay
+manager: laurawi
 ms.author: greglin
 ms.topic: article
 ---
