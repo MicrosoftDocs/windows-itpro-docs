@@ -153,34 +153,28 @@ You'll need to create an application and grant it permissions to fetch alerts fr
 
 2. Select **Azure Active Directory** > **App registrations**.
 
-3. Click **New application registration**.
+3. Click **New registration**.
 
 4. Specify the following values:
 
     - Name: \<Tenant_name\> SIEM MSSP Connector (replace Tenant_name with the tenant display name)
-    - Application type: Web app / API
-    - Sign-on URL: `https://SiemMsspConnector`
+    - Supported account types: Account in this organizational directory only 
+    - Redirect URI: Select Web and type `https://<domain_name>/SiemMsspConnector`(replace <domain_name> with the tenant name)
 
-5. Click **Create**. The application is displayed in the list of applications you own.
+5. Click **Register**. The application is displayed in the list of applications you own.
 
-6. Select the application, then click **Settings** > **Properties**.
+6. Select the application, then click **Overview**.
 
-7. Copy the value from the **Application ID** field.
+7. Copy the value from the **Application (client) ID** field to a safe place, you will need this on the next step.
 
-8. Change the value in the **App ID URI** to: `https://<domain_name>/SiemMsspConnector` (replace \<domain_name\> with the tenant name.
+8. Select **Certificate & secrets** in the new application panel.
 
-9. Ensure that the **Multi-tenanted** field is set to **Yes**.
-
-10. In the **Settings** panel, select **Reply URLs** and add the following URL: `https://localhost:44300/wdatpconnector`. 
-
-11. Click **Save**.
-
-12. Select **Keys** and specify the following values:
+9. Click **New client secret**.
 
     - Description: Enter a description for the key.
     - Expires: Select **In 1 year**
 
-13. Click **Save**. Save the value is a safe place, you'll need this 
+10. Click **Add**, copy the value of the client secret to a safe place, you will need this on the next step.
 
 ### Step 2: Get access and refresh tokens from your customer's tenant
 This section guides you on how to use a PowerShell script to get the tokens from your customer's tenant. This script uses the application from the previous step to get the access and refresh tokens using the OAuth Authorization Code Flow.
@@ -249,9 +243,9 @@ After providing your credentials, you'll need to grant consent to the applicatio
 
 6. Enter the following commands: `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - Replace \<client_id\> with the Application ID you got from the previous step.
-    - Replace \<app_key\> with the application key you created from the previous step.
-    - Replace \<customer_tenant_id\> with your customer's tenant ID. 
+    - Replace \<client_id\> with the **Application (client) ID** you got from the previous step.
+    - Replace \<app_key\> with the **Client Secret** you created from the previous step.
+    - Replace \<customer_tenant_id\> with your customer's **Tenant ID**. 
 
 7. You'll be asked to provide your credentials and consent. Ignore the page redirect.
 
