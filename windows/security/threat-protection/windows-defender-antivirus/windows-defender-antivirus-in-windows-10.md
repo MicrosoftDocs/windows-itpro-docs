@@ -39,8 +39,6 @@ You can configure and manage Windows Defender Antivirus with:
 - Windows Management Instrumentation (WMI)
 - Group Policy
 
-Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
-
 <a id="sysreq"></a>
 ## Minimum system requirements
 
