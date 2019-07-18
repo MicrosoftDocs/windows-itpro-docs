@@ -41,6 +41,9 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 
 Both baselines are maintained so that they complement one another and have identical values for shared settings. Deploying both baselines to the same machine will not result in conflicts. Ideally, machines onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls.
 
+>[!NOTE]
+>The Windows Defender ATP security baseline [turns on Windows Hello for Business](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp#windows-hello-for-business). This will require a secondary authentication method that is typically unavailable with RDP and other remote interactive sessions used to access virtual machines (VMs). Before applying the security baseline on VMs, consider modifying the baseline to turn off Windows Hello for Business.  
+
 ## Get permissions to manage security baselines in Intune
 
 By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage security baseline profiles. If you haven’t been assigned either role, work with a Global Administrator or an Intune Service Administrator to [create a custom role in Intune](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role) with full permissions to security baselines and then assign that role to your Azure AD group.
