@@ -124,7 +124,11 @@
 ### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
+### [Microsoft Defender ATP in Azure Government ](microsoft-defender-atp/commercial-gov.md)
 ### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
+
+
+
 
 ### [Evaluate Microsoft Defender ATP]()
 #### [Attack surface reduction and next-generation capability evaluation]()
