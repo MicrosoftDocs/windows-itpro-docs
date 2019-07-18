@@ -76,7 +76,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 7. Select **Enabled** from the **Configuration Model** list.
 8. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
 9. Select the **Update certificates that use certificate templates** check box.
-10.	Click **OK**. Close the **Group Policy Management Editor**.
+10. Click **OK**. Close the **Group Policy Management Editor**.
 
 ## Configure Security in the Windows Hello for Business Group Policy object
 

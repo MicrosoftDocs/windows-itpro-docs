@@ -59,9 +59,9 @@ SDT for Business is supported on Surface 3 and later devices, including:
 
 To create an SDT package that you can distribute to users in your organization:
 
-1.	Sign in to your Surface device using the Administrator account.
-2.	Download SDT Windows Installer Package (.msi) from the [Surface Tools for IT download page](https://www.microsoft.com/download/details.aspx?id=46703) and copy it to a preferred location on your Surface device, such as Desktop.
-3.	The SDT setup wizard appears, as shown in figure 1. Click **Next**. 
+1. Sign in to your Surface device using the Administrator account.
+2. Download SDT Windows Installer Package (.msi) from the [Surface Tools for IT download page](https://www.microsoft.com/download/details.aspx?id=46703) and copy it to a preferred location on your Surface device, such as Desktop.
+3. The SDT setup wizard appears, as shown in figure 1. Click **Next**. 
 
     >[!NOTE]
     >If the setup wizard does not appear, ensure that you are signed into the Administrator account on your computer. 
@@ -72,15 +72,15 @@ To create an SDT package that you can distribute to users in your organization:
 
 4. When the SDT setup wizard appears, click **Next**, accept the End User License Agreement (EULA)
 
-5.	On the Install Options screen, change the default install location if desired. 
-6.	Under Setup Type, select **Advanced**. 
+5. On the Install Options screen, change the default install location if desired. 
+6. Under Setup Type, select **Advanced**. 
 
     >[!NOTE]
     >The standard option allows users to run the diagnostic tool directly on their Surface device provided they are signed into their device using an Administrator account. 
     
      ![Install Options: Advanced](images/sdt-install.png)
 
-7.	Click **Next** and then click **Install**. 
+7. Click **Next** and then click **Install**. 
 
 ## Installing using the command line
 If desired, you can install SDT at a command prompt and set a custom flag to install the tool in admin mode. SDT contains the following install option flags:
@@ -90,7 +90,7 @@ If desired, you can install SDT at a command prompt and set a custom flag to ins
 
 ### To install SDT from the command line:
 
-1.	Open a command prompt and enter:
+1. Open a command prompt and enter:
 
     ```
     msiexec.exe /i <the path of installer> ADMINMODE=1. 
@@ -116,8 +116,8 @@ In addition to the .exe file, SDT installs a JSON file and an admin.dll file (mo
 
 Creating a custom package allows you to target the tool to specific known issues.
 
-1.	Click **Start > Run**, enter **Surface** and then click **Surface Diagnostic Toolkit for Business**. 
-2.	When the tool opens, click **Create Custom Package**, as shown in figure 3.
+1. Click **Start > Run**, enter **Surface** and then click **Surface Diagnostic Toolkit for Business**. 
+2. When the tool opens, click **Create Custom Package**, as shown in figure 3.
 
     ![Create custom package option](images/sdt-3.png)
 

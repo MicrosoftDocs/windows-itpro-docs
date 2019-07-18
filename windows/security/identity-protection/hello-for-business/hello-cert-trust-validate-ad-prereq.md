@@ -44,11 +44,11 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
-1.	Open an elevated command prompt.
-2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
-3.	To update the schema, type ```adprep /forestprep```.
-4.	Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
-5.	Close the Command Prompt and sign-out.
+1. Open an elevated command prompt.
+2. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
+3. To update the schema, type ```adprep /forestprep```.
+4. Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
+5. Close the Command Prompt and sign-out.
 
 ## Create the KeyCredential Admins Security Global Group
 
@@ -56,12 +56,12 @@ The Windows Server 2016 Active Directory Federation Services (AD FS) role regist
 
 Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advance Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **KeyCredential Admins** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advance Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **KeyCredential Admins** in the **Group Name** text box.
+6. Click **OK**.
 
 ## Create the Windows Hello for Business Users Security Global Group
 
@@ -69,12 +69,12 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 Sign into a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide

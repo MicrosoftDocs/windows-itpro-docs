@@ -29,7 +29,7 @@ This page provides detailed steps to troubleshoot live response issues.
 ## File cannot be accessed during live response sessions
 If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, you'll need to use the steps below to address the issue.
 
-1.	Copy the following script code snippet and save it as a PS1 file:
+1. Copy the following script code snippet and save it as a PS1 file:
 
     ```
     $copied_file_path=$args[0] 
@@ -47,10 +47,10 @@ If while trying to take an action during a live response session, you encounter 
     ```
 
 
-2.	Add the script to the live response library.
-3.	Run the script with one parameter: the file path of the file to be copied.
-4.	Navigate to your TEMP folder.
-5.	Run the action you wanted to take on the copied file.
+2. Add the script to the live response library.
+3. Run the script with one parameter: the file path of the file to be copied.
+4. Navigate to your TEMP folder.
+5. Run the action you wanted to take on the copied file.
 
 
 

@@ -45,15 +45,15 @@ By default, the Active Directory Certificate Authority provides and publishes th
 
 Sign-in a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 
-1.	Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
-5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
+1. Open the **Certificate Authority** management console.
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
+4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
+5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
     **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-6.	On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
-7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
-8.	Close the console.
+6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
+7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+8. Close the console.
 
 #### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
@@ -65,15 +65,15 @@ The autoenrollment feature in Windows enables you to effortlessly replace these 
 
 Sign-in a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 
-1.	Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
-4.	Click the **Superseded Templates** tab. Click **Add**.
-5.	From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
-6.	From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
-7.	From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
-8.	Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
-9.	Click **OK** and close the **Certificate Templates** console.
+1. Open the **Certificate Authority** management console.
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
+4. Click the **Superseded Templates** tab. Click **Add**.
+5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
+6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
+7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
+8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
+9. Click **OK** and close the **Certificate Templates** console.
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
@@ -103,11 +103,11 @@ The newly created domain controller authentication certificate template supersed
 
 Sign-in to the certificate authority or management workstation with _Enterprise Admin_ equivalent credentials.
 
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
-5.	Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
+5. Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
 
 ### Section Review
 > [!div class="checklist"]
