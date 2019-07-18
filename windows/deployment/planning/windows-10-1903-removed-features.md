@@ -28,6 +28,9 @@ The following features and functionalities are removed from the installed produc
 |         XDDM-based remote display driver          | Starting with this release the Remote Desktop Services uses a Windows Display Driver Model (WDDM) based Indirect Display Driver (IDD) for a single session remote desktop. The support for Windows 2000 Display Driver Model (XDDM) based remote display drivers will be removed in a future release. Independent Software Vendors that use XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote indirect display driver ISVs can reach out to [rdsdev@microsoft.com](mailto:rdsdev@microsoft.com). |
 | Desktop messaging app doesn't offer messages sync |                                                                                                                          The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message.                                                                                                                          |
 
+> [!NOTE]
+> Android devices with the 'Your Phone' app, can sync text messages over mobile data and MMS.
+
 ## Features we’re no longer developing
 
 We're no longer actively developing these features and may remove them from a future update. Some features have been replaced with other features or functionality, while others are now available from different sources. 
