@@ -9,11 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-<<<<<<< HEAD
-ms.date: 07/05/2019
-=======
 ms.date: 07/09/2019
->>>>>>> master
 ---
 
 # Policy CSP
@@ -2567,6 +2563,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-userincontroloftheseapps" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception"id="privacy-letappsaccessbackgroundspatialperception">Privacy/LetAppsAccessBackgroundSpatialPerception</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
+  </dd>  
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesscalendar" id="privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
@@ -5200,6 +5208,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowCortana](#experience-allowcortana)
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
+-   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
 -   [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
 -   [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
 -   [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)

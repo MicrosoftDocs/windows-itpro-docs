@@ -50,6 +50,18 @@ manager: dansimp
     <a href="#privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a>
   </dd>
   <dd>
+    <a href="#privacy-letappsaccessbackgroundspatialperception">Privacy/LetAppsAccessBackgroundSpatialPerception</a>
+  </dd>
+  <dd>
+    <a href="#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
     <a href="#privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
   <dd>
@@ -859,6 +871,260 @@ ADMX Info:
 -   GP ADMX file name: *AppPrivacy.admx*
 
 <!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-letappsaccessbackgroundspatialperception"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. 
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2.
+
+Specifies whether Windows apps can access the movement of the user's head, hands, motion controllers, and other tracked objects, while the apps are running in the background.
+
+Value type is integer.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info: 
+-	GP English name: Let Windows apps access background spatial perception
+-	GP name: LetAppsAccessBackgroundSpatialPerception
+-	GP element: LetAppsAccessBackgroundSpatialPerception_Enum
+-	GP path: Windows Components/App Privacy
+-	GP ADMX file name: AppPrivacy.admx
+
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – User in control.
+-   1 – Force allow.
+-   2 - Force deny.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. 
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2.
+
+List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+
+Value type is chr.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info: 
+-	GP English name: Let Windows apps access background spatial perception
+-	GP name: LetAppsAccessBackgroundSpatialPerception
+-	GP element: LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List
+-	GP path: Windows Components/App Privacy
+-	GP ADMX file name: AppPrivacy.admx
+
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. 
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2.
+
+List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+
+Value type is chr.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info: 
+-	GP English name: Let Windows apps access background spatial perception
+-	GP name: LetAppsAccessBackgroundSpatialPerception
+-	GP element: LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List
+-	GP path: Windows Components/App Privacy
+-	GP ADMX file name: AppPrivacy.admx
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1903. 
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2.
+
+List of semi-colon delimited Package Family Names of Windows Store Apps. 
+The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+
+Value type is chr.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info: 
+-	GP English name: Let Windows apps access background spatial perception
+-	GP name: LetAppsAccessBackgroundSpatialPerception
+-	GP element: LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List
+-	GP path: Windows Components/App Privacy
+-	GP ADMX file name: AppPrivacy.admx
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -4982,6 +5248,14 @@ ADMX Info:
 ## <a href="" id="hololens2policies"></a>Privacy policies supported by HoloLens 2
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+- [LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
+- [LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
+- [LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
+- [LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
+- [LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception)
+- [LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps)
+- [LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
+- [LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
 - [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
 - [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
 - [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
@@ -4993,13 +5267,11 @@ ADMX Info:
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLensBusiness-->
 
-<<<<<<< HEAD
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by HoloLens (1st gen) Development Edition
 
 - [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
 <!--EndHoloLens-->
-=======
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Privacy policies supported by Windows 10 IoT Core
 - [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
@@ -5011,7 +5283,6 @@ ADMX Info:
 - [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
 - [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 <!--EndIoTEnterprise-->
->>>>>>> master
 
 <hr/>
 
