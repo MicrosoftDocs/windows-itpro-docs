@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: procedural
+ms.topic: article
 ---
 
 # Increase compliance to the Microsoft Defender ATP security baseline
