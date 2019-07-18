@@ -51,13 +51,14 @@ As a cloud service, it is required that computers have access to the internet an
 
 | **Service**| **Description** |**URL** |
 | :--: | :-- | :-- |
-| *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|*.wdcp.microsoft.com  *.wdcpalt.microsoft.com  *.wd.microsoft.com|
-| *Microsoft Update Service (MU)*|	Security intelligence and product updates	|*.update.microsoft.com|
-| *Security intelligence updates Alternate Download Location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	*.download.microsoft.com|
+| *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|\*.wdcp.microsoft.com  \*.wdcpalt.microsoft.com  \*.wd.microsoft.com|
+| *Microsoft Update Service (MU)*|	Security intelligence and product updates	|\*.update.microsoft.com|
+| *Security intelligence updates Alternate Download Location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	\*.download.microsoft.com|
 | *Malware submission storage*|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	| ussus1eastprod.blob.core.windows.net   ussus1westprod.blob.core.windows.net   usseu1northprod.blob.core.windows.net   usseu1westprod.blob.core.windows.net   ussuk1southprod.blob.core.windows.net   ussuk1westprod.blob.core.windows.net   ussas1eastprod.blob.core.windows.net   ussas1southeastprod.blob.core.windows.net   ussau1eastprod.blob.core.windows.net   ussau1southeastprod.blob.core.windows.net |
-| *Certificate Revocation List (CRL)*	|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| http://www.microsoft.com/pkiops/crl/   http://www.microsoft.com/pkiops/certs  http://crl.microsoft.com/pki/crl/products   http://www.microsoft.com/pki/certs |
+| *Certificate Revocation List (CRL)*|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| http://www.microsoft.com/pkiops/crl/   http://www.microsoft.com/pkiops/certs  http://crl.microsoft.com/pki/crl/products   http://www.microsoft.com/pki/certs |
 | *Symbol Store*|Used by Windows Defender Antivirus to restore certain critical files during remediation flows	| https://msdl.microsoft.com/download/symbols |
-| *Universal Telemetry Client*	| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   *vortex-win.data.microsoft.com* settings-win.data.microsoft.com|
+| *Universal Telemetry Client*| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   vortex-win.data.microsoft.com  settings-win.data.microsoft.com|
+
 
 ## Validate connections between your network and the cloud
 
@@ -68,7 +69,7 @@ After whitelisting the URLs listed above, you can test if you are connected to t
 Use the following argument with the Windows Defender Antivirus command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender Antivirus cloud service:
 
 ```DOS
-MpCmdRun -ValidateMapsConnection
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
 > [!NOTE]
@@ -81,7 +82,7 @@ See [Manage Windows Defender Antivirus with the mpcmdrun.exe commandline tool](c
 You can download a sample file that Windows Defender Antivirus will detect and block if you are properly connected to the cloud.
 
 Download the file by visiting the following link:
-- http://aka.ms/ioavtest
+- https://aka.ms/ioavtest
 
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.

@@ -418,7 +418,7 @@
 #### [Check service health](service-status.md)
 
 
-### [Troubleshoot live response issues]()
+### [Troubleshoot live response issues](troubleshoot-live-response.md)
 #### [Troubleshoot issues related to live response](troubleshoot-live-response.md)
 
 ### Troubleshoot attack surface reduction

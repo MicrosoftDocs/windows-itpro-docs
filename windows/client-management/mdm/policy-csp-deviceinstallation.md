@@ -121,7 +121,7 @@ ADMX Info:
 To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. 
 
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -238,7 +238,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. 
 
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -417,7 +417,7 @@ ADMX Info:
 To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
 
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -519,7 +519,7 @@ ADMX Info:
 To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
 
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -626,7 +626,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
 
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>

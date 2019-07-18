@@ -214,7 +214,7 @@ XML files can and should be tested locally on a Hyper-V or other virtual machine
 
 ### Symptom: Start menu no longer works after a PC is refreshed using F12 during start up 
 
-**Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings.	When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
+**Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings. When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
 
 **Cause**: This is a known issue and has been resolved in a cumulative update released August 30th 2018. 
 

@@ -59,7 +59,7 @@ Below are protocol changes for MAM enrollment: 
 
 Here is an example provisioning XML for MAM enrollment.  
 
-``` syntax
+```xml
 <wap-provisioningdoc version="1.1"> 
   <characteristic type="APPLICATION"> 
     <parm name="APPID" value="w7"/> 

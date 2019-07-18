@@ -103,11 +103,11 @@ Machines are considered "well configured" for Windows Defender EG if the followi
 ##### System level protection:
 The following system level configuration settings must be set to **On or Force On**:
 
-1.	Control Flow Guard 
-2.	Data Execution Prevention (DEP)
-3.	Randomize memory allocations (Bottom-up ASLR)
-4.	Validate exception chains (SEHOP)
-5.	Validate heap integrity
+1. Control Flow Guard 
+2. Data Execution Prevention (DEP)
+3. Randomize memory allocations (Bottom-up ASLR)
+4. Validate exception chains (SEHOP)
+5. Validate heap integrity
 
 >[!NOTE]
 >The setting **Force randomization for images (Mandatory ASLR)** is currently excluded from the baseline.

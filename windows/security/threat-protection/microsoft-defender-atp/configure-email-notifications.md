@@ -47,7 +47,7 @@ You can create rules that determine the machines and alert severities to send em
 
 2. Click **Add notification rule**.
 
-3.	Specify the General information:
+3. Specify the General information:
     - **Rule name** - Specify a name for the notification rule.
     - **Include organization name** - Specify the customer name that appears on the email notification.
     - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
@@ -93,9 +93,9 @@ This section lists various issues that you may encounter when using email notifi
 
 **Solution:** Make sure that the notifications are not blocked by email filters:
 
-1.	Check that the Microsoft Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
-2.	Check that your email security product is not blocking the email notifications from Microsoft Defender ATP.
-3.	Check your email application rules that might be catching and moving your Microsoft Defender ATP email notifications.
+1. Check that the Microsoft Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
+2. Check that your email security product is not blocking the email notifications from Microsoft Defender ATP.
+3. Check your email application rules that might be catching and moving your Microsoft Defender ATP email notifications.
 
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)

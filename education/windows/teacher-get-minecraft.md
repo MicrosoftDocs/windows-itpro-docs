@@ -49,9 +49,9 @@ You can purchase individual Minecraft: Education Edition subscriptions for you a
 
 To purchase individual Minecraft: Education Edition subscriptions (i.e. direct purchase):
 
-1.	Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your Office 365 account.
-2.	Click on [Minecraft: Education Edition](https://educationstore.microsoft.com/en-us/store/details/minecraft-education-edition/9nblggh4r2r6) (or use Search the Store to find it)
-3.	Click **Buy**
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your Office 365 account.
+2. Click on [Minecraft: Education Edition](https://educationstore.microsoft.com/en-us/store/details/minecraft-education-edition/9nblggh4r2r6) (or use Search the Store to find it)
+3. Click **Buy**
 
 >[!Note]
 >Administrators can restrict the ability for teachers to purchase applications in the Microsoft Store for Education. If you do not have the ability to Buy, contact your school administration or IT administrator.

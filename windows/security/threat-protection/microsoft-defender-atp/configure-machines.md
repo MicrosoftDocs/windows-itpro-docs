@@ -47,13 +47,13 @@ In doing so, you benefit from:
 
 Machine configuration management works closely with Intune device management to establish the inventory of the machines in your organization and the baseline security configuration. You will be able to track and manage configuration issues on Intune-managed Windows 10 machines.
 
-Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
+Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read [Set up enrollment for Windows devices](https://docs.microsoft.com/intune/windows-enroll).
 
 >[!NOTE]
->To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/en-us/intune/licenses-assign).
+>To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/intune/licenses-assign).
 
 >[!TIP] 
->To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## Known issues and limitations in this preview 
 During preview, you might encounter a few known limitations:

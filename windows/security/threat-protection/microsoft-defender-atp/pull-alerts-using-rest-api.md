@@ -173,7 +173,7 @@ Here is an example return value:
 ### Get access token
 The following code example demonstrates how to obtain an access token and call the Microsoft Defender ATP API.
 
-```syntax
+```csharp
 AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}/oauth2", tenantId));
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
 AuthenticationResult authenticationResult  = context.AcquireToken(resource, clientCredentials);

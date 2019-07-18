@@ -65,11 +65,11 @@ From the overview, create a configuration profile specifically for the deploymen
 
 3. After creating the profile, assign it to all your machines. You can review profiles and their deployment status anytime by accessing **Device configuration > Profiles** on Intune.
 
-   ![Profile assignment screen screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
+   ![Profile assignment screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
    *Assigning the new agent profile to all machines*
 
 >[!TIP]
->To learn more about Intune profiles, read [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-profile-assign).
+>To learn more about Intune profiles, read [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/device-profile-assign).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

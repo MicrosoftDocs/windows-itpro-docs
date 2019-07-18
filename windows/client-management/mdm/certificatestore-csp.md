@@ -360,7 +360,7 @@ Supported operations are Add, Get, and Replace.
 
 Add a root certificate to the MDM server.
 
-``` syntax
+```xml
 <Add>
    <CmdID>1</CmdID>
    <Item>
@@ -379,7 +379,7 @@ Add a root certificate to the MDM server.
 
 Get all installed client certificates.
 
-``` syntax
+```xml
 <Get>
    <CmdID>1</CmdID>
    <Item>
@@ -394,7 +394,7 @@ Get all installed client certificates.
 
 Delete a root certificate.
 
-``` syntax
+```xml
 <Delete>
    <CmdID>1</CmdID>
    <Item>
@@ -409,7 +409,7 @@ Delete a root certificate.
 
 Configure the device to enroll a client certificate through SCEP.
 
-``` syntax
+```xml
 <Atomic>
 <CmdID>100</CmdID>
 <Add>
@@ -588,7 +588,7 @@ Configure the device to enroll a client certificate through SCEP.
 
 Configure the device to automatically renew an MDM client certificate with the specified renew period and retry interval.
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>1</CmdID>
      <Replace>

@@ -28,13 +28,13 @@ Create custom detection rules from [Advanced hunting](overview-hunting.md) queri
 >[!NOTE]
 >To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
-1.	In the navigation pane, select **Advanced hunting**.
+1. In the navigation pane, select **Advanced hunting**.
 
-2.	Select an existing query that you'd like to base the monitor on or create a new query.
+2. Select an existing query that you'd like to base the monitor on or create a new query.
 
-3.	Select **Create detection rule**.
+3. Select **Create detection rule**.
 
-4.	Specify the alert details:
+4. Specify the alert details:
 
     - Alert title
     - Severity
@@ -42,7 +42,7 @@ Create custom detection rules from [Advanced hunting](overview-hunting.md) queri
     - Description
     - Recommended actions
 
-5.	Click **Create**.
+5. Click **Create**.
 
 > [!TIP]
 > TIP #1: Running the query for the first time before saving it can help you find any mistakes or errors and give you a preview of the data you can expect to be returned.<br>

@@ -132,7 +132,7 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 
 ## Examples
 
-``` syntax
+```xml
 <!--
 Copyright (c) Microsoft Corporation.  All rights reserved.
 -->

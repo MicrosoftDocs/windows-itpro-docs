@@ -5456,7 +5456,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 Set the minimum password length to 4 characters.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>
@@ -5478,7 +5478,7 @@ Set the minimum password length to 4 characters.
 
 Do not allow NFC.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>

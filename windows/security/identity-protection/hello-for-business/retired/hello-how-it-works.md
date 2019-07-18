@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: mapalko
 ms.localizationpriority: high
-ms.author: dolmont
+ms.author: mapalko
 ms.date: 10/16/2017
 ms.reviewer: 
 manager: dansimp
@@ -79,14 +79,14 @@ These keys are used to sign requests that are sent to the IDP, requesting access
 
 For example, the authentication process for Azure Active Directory works like this:
 
-1.	The client sends an empty authentication request to the IDP. (This is merely for the handshake process.)
-2.	The IDP returns a challenge, known as a nonce.
-3.	The device signs the nonce with the appropriate private key.
-4.	The device returns the original nonce, the signed nonce, and the ID of the key used to sign the nonce.
-5.	The IDP fetches the public key that the key ID specified, uses it to verify the signature on the nonce, and verifies that the nonce the device returned matches the original.
-6.	If all the checks in step 5 succeed, the IDP returns two data items: a symmetric key, which is encrypted with the device’s public key, and a security token, which is encrypted with the symmetric key.
-7.	The device uses its private key to decrypt the symmetric key, and then uses that symmetric key to decrypt the token.
-8.	The device makes a normal authentication request for the original resource, presenting the token from the IDP as its proof of authentication.
+1. The client sends an empty authentication request to the IDP. (This is merely for the handshake process.)
+2. The IDP returns a challenge, known as a nonce.
+3. The device signs the nonce with the appropriate private key.
+4. The device returns the original nonce, the signed nonce, and the ID of the key used to sign the nonce.
+5. The IDP fetches the public key that the key ID specified, uses it to verify the signature on the nonce, and verifies that the nonce the device returned matches the original.
+6. If all the checks in step 5 succeed, the IDP returns two data items: a symmetric key, which is encrypted with the device’s public key, and a security token, which is encrypted with the symmetric key.
+7. The device uses its private key to decrypt the symmetric key, and then uses that symmetric key to decrypt the token.
+8. The device makes a normal authentication request for the original resource, presenting the token from the IDP as its proof of authentication.
 
 When the IDP validates the signature, it is verifying that the request came from the specified user and device. The private key specific to the device signs the nonce, which allows the IDP to determine the identity of the requesting user and device so that it can apply policies for content access based on user, device type, or both together. For example, an IDP could allow access to one set of resources only from mobile devices and a different set from desktop devices.
 
