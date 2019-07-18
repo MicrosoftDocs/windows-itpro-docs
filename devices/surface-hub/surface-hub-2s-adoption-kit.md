@@ -6,36 +6,45 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/08/2019
 ms.localizationpriority: Normal
 ---
 
- # Surface Hub 2S adoption toolkit
-Microsoft has developed downloadable materials that you can make available for your users to aid in adoption of Surface Hub 2S. 
+# Surface Hub 2S adoption toolkit
+
+Microsoft has developed downloadable materials that you can make available for your users to aid in adoption of Surface Hub 2S.
 
 ## Training guides
--  Surface Hub adoption toolkit
--  Training guide – end user
--  Training guide – power user
--  Training guide – help desk
--  Training guide – Microsoft Teams desktop
+
+- [Surface Hub adoption toolkit](downloads/SurfaceHubAdoptionToolKit.pdf)
+- [Training guide – end user](downloads/TrainingGuide-SurfaceHub2S-EndUser.pdf)
+- [Training guide – power user](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
+- [Training guide – help desk](downloads/TrainingGuide-SurfaceHub2S-HelpDesk.pdf)
+- [Training guide – Microsoft Teams desktop](downloads/Guide-SurfaceHub2S-Teams.pptx)
+
+[Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
 ## End user guides
--  Guide to Navigation on Surface Hub our
--  Guide to Office 365 on Surface Hub
--  Guide to Microsoft Whiteboard on Surface Hub
--  Guide to Microsoft Teams on Surface Hub
 
-##  Quick reference cards
-- Connect your PC 
-- Join a Teams Meeting
-- Manage a Teams meeting
-- Navigation basics
-- Schedule a Teams meeting
-- Start a new Teams meeting
-- Share or send a file
-- Sign in to view meetings and files
-- Whiteboard advanced
-- Whiteboard tools
+- [Guide to Navigation on Surface Hub](downloads/Guide-SurfaceHub2S-Navigation.pptx)
+- [Guide to Office 365 on Surface Hub](downloads/Guide-SurfaceHub2S-Office365.pptx)
+- [Guide to Microsoft Whiteboard on Surface Hub](downloads/Guide-SurfaceHub2S-Whiteboard.pptx)
+- [Guide to Microsoft Teams on Surface Hub](downloads/Guide-SurfaceHub2S-Teams.pptx)
+
+## Quick reference cards
+
+- [Connect your PC](downloads/QRCConnectYourPC.pdf) 
+- [Join a Teams Meeting](downloads/QRCJoinTeamsMeeting.pdf)
+- [Manage a Teams meeting](downloads/QRCManageTeamsMeeting.pdf)
+- [Navigation basics](downloads/QRCNavigationBasics.pdf)
+- [Schedule a Teams meeting](downloads/QRCScheduleTeamsMeeting.pdf)
+- [Start a new Teams meeting](downloads/QRCStartNewTeamsMeeting.pdf)
+- [Share or send a file](downloads/QRCShareSendFile.pdf)
+- [Sign in to view meetings and files](downloads/QRCSignInToViewMeetingsFiles.pdf)
+- [Whiteboard advanced](downloads/QRCWhiteboardAdvanced.pdf)
+- [Whiteboard tools](downloads/QRCWhiteboardTools.pdf)
+
+[Download all user guides and quick reference cards](http://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
