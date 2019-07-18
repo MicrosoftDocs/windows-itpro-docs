@@ -95,7 +95,7 @@ This can only be done in Group Policy.
     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
     **"DisableNotifications"=dword:00000001**
     
-8.   Corresponding registry key  for **Hide not-critical notifications**
+8.  Use the following registry key and DWORD value to **Hide not-critical notifications**
 
      **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
      **"DisableEnhancedNotifications"=dword:00000001**
