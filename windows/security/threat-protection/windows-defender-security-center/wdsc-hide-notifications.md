@@ -56,7 +56,7 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-0. Download the latest Administrative templates for windows 10 v1809 from below Microsoft official site
+1. Download the latest [Administrative Templates (.admx) for Windows 10, v1809](https://www.microsoft.com/download/details.aspx?id=57576).
      **https://www.microsoft.com/en-us/download/details.aspx?id=57576**
 
 
