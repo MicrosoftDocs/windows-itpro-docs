@@ -104,7 +104,7 @@ It is possible to run the ScanState tool while the drive remains encrypted by su
 
 User-group membership is not preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the Config.xml file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
-``` syntax
+```xml
 <Configuration>
 <ProfileControl>
     <localGroups>
@@ -242,7 +242,7 @@ Syntax: &lt;failOnMultipleWinDir&gt;1&lt;/failOnMultipleWinDir&gt; or Syntax: &l
 
 The following XML example illustrates some of the elements discussed earlier in this topic.
 
-``` syntax
+```xml
 <offline>
      <winDir>
           <path>C:\Windows</path> 

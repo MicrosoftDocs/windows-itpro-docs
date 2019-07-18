@@ -90,7 +90,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 2. In an elevated Windows PowerShell prompt (run as Administrator), run the following commands, pressing **Enter** after each command:
 
-   ``` syntax
+   ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 
    Set-Location C:\Setup\Scripts

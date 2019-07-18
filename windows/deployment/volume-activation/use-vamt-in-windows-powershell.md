@@ -36,7 +36,7 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
   cd “C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0”
   ```
 - Import the VAMT PowerShell module. To import the module, type the following at a command prompt:
-  ``` syntax
+  ```powershell
   Import-Module .\VAMT.psd1
   ```
   Where **Import-Module** imports a module only into the current session. To import the module into all sessions, add an **Import-Module** command to a Windows PowerShell profile. For more information about profiles, type `get-help about_profiles`.
