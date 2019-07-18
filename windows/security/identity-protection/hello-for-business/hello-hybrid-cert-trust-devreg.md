@@ -126,7 +126,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
 
    `Import-module activedirectory`  
-   `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
+   `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>"` 
 3. On the pop-up window click **Yes**.
 
 > [!NOTE]
@@ -150,7 +150,7 @@ The above PSH creates the following objects:
 If you plan to use Windows 10 domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
 1.  Open Windows PowerShell and execute the following:
 
-    `PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1" ` 
+    `PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1"` 
 
 > [!NOTE]
 > If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
@@ -165,7 +165,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 3. Run the following PowerShell command 
 
-   `PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred ` 
+   `PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
 
@@ -176,7 +176,7 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
 1.  Open Windows PowerShell and execute the following:  
 
-    `PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name] ` 
+    `PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name]` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format  
 
