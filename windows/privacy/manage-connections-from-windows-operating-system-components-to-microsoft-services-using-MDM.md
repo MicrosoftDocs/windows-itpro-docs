@@ -40,7 +40,6 @@ The following table lists management options for each setting.
 
 For Windows 10, the following MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-> [!div class="mx-tdCol3BreakAll"]
 > | Setting | MDM Policy | Description |
 > | --- | --- | --- |
 > | 1. Automatic Root Certificates Update | There is intentionally no MDM available for Automatic Root Certificate Update. | This MDM does not exist since it would prevent the operation and management of MDM management of devices.|
@@ -117,7 +116,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 > | | [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)| Lets you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)** |
 > | 27. Windows Update | [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) | Control automatic updates. **Set to 5 (five)**|
 > |   27.1 Windows Update Allow Update Service | [Update/AllowUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowupdateservice) | Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**|
-> |   27.2 Windows Update Service URL| [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl) | Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with this Value: 
+> |   27.2 Windows Update Service URL| [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl) | Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with this Value:|
         <Replace>
             <CmdID>$CmdID$</CmdID>
             <Item>
@@ -131,8 +130,6 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
                 <Data>http://abcd-srv:8530</Data>
             </Item>
         </Replace>  
-|
-
 
 ### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
 
