@@ -26,7 +26,7 @@ You can use Upgrade Readiness to plan and manage your upgrade project end-to-end
 
 Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
-    - [Upgrade Readiness blog](https://aka.ms/blog/WindowsAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
+    - [Upgrade Readiness blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/bg-p/WindowsAnalyticsBlog): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
