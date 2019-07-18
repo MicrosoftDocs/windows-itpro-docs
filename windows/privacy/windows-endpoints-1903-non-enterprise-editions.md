@@ -26,10 +26,10 @@ In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1
 
 The following methodology was used to derive the network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
-4.	Compile reports on traffic going to public IP addresses.
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
 6.  All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here. 
 7.  These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.

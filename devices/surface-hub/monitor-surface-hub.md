@@ -95,10 +95,10 @@ This table describes the sample queries in the Surface Hub solution:
 | Hardware   | Error | **Contact Microsoft support**. <br> Indicates impact to core functionality (such as Skype, projection, touch, and internet connectivity). <br> **Note** Some events, including heartbeat, include the device’s serial number that you can use when contacting support.| Triggers when there is an error with any of the following hardware components. <br> **Components that affect Skype**: <br> - Speaker driver <br> - Microphone driver <br> - Camera driver <br> **Components that affect wired and wireless projection**: <br> - Wired touchback driver <br> - Wired ingest driver <br> - Wireless adapter driver <br> - Wi-Fi Direct error <br> **Other components**: <br> - Touch digitizer driver <br> - Network adapter error (not reported to OMS)|
 
 **To set up an alert**
-1.	From the Surface Hub solution, select one of the sample queries.
-2.	Modify the query as desired. See Log Analytics search reference to learn more.
-3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
-4.	Click **Save** to complete the alert rule. It will start running immediately.
+1. From the Surface Hub solution, select one of the sample queries.
+2. Modify the query as desired. See Log Analytics search reference to learn more.
+3. Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
+4. Click **Save** to complete the alert rule. It will start running immediately.
 
 ## Enroll your Surface Hub
 

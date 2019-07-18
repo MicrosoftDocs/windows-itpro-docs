@@ -103,11 +103,11 @@ To add multiple Store apps, click the ellipsis **…**.
 
 If you don't know the Store app publisher or product name, you can find them by following these steps.
 
-1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
+1. Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
-2.	Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
+2. Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 
-3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
+3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
     
     The API runs and opens a text editor with the app details.
 
@@ -131,19 +131,19 @@ If you need to add Windows 10 mobile apps that aren't distributed through the St
 
 >**Note**<br>Your PC and phone must be on the same wireless network.
 
-1.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+1. On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
-2.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+2. In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
 
-3.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+3. Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
 
-4.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+4. In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
 
-6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
+6. On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
 
-7.	Start the app for which you're looking for the publisher and product name values.
+7. Start the app for which you're looking for the publisher and product name values.
 
-8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
+8. Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
@@ -225,13 +225,13 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 #### Create a Packaged App rule for Store apps
 
-1.	Open the Local Security Policy snap-in (SecPol.msc).
+1. Open the Local Security Policy snap-in (SecPol.msc).
     
-2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+2. In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
     ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-1.png)
 
-3.	Right-click in the right-hand blade, and then click **Create New Rule**.
+3. Right-click in the right-hand blade, and then click **Create New Rule**.
 
     The **Create Packaged app Rules** wizard appears.
 
@@ -243,7 +243,7 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
 
-6.	On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
+6. On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
     ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
 
@@ -263,13 +263,13 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
     ![Local security snap-in, showing the new rule](images/wip-applocker-secpol-create.png)
 
-10.	In the left blade, right-click on **AppLocker**, and then click **Export policy**.
+10. In the left blade, right-click on **AppLocker**, and then click **Export policy**.
 
     The **Export policy** box opens, letting you export and save your new policy as XML.
 
     ![Local security snap-in, showing the Export Policy option](images/wip-applocker-secpol-export.png)
 
-11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+11. In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
     The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
@@ -295,7 +295,7 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
         </AppLockerPolicy>
     ```
 
-12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
+12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
 ## Create an Executable rule for unsigned apps
 
@@ -323,17 +323,17 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 9. On the **Name** page, type a name and description for the rule and then click **Create**.
 
-10.	In the left pane, right-click **AppLocker** > **Export policy**.
+10. In the left pane, right-click **AppLocker** > **Export policy**.
 
-11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+11. In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
     The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
-12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
+12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
 **To import a list of protected apps using Microsoft Intune**
 
-1.	In **Protected apps**, click **Import apps**.
+1. In **Protected apps**, click **Import apps**.
 
     ![Import protected apps](images/import-protected-apps.png)
     
@@ -341,22 +341,22 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
     
     ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/wip-azure-import-apps.png)
 
-2.	Browse to your exported AppLocker policy file, and then click **Open**.
+2. Browse to your exported AppLocker policy file, and then click **Open**.
 
     The file imports and the apps are added to your **Protected apps** list.
 
 ### Exempt apps from a WIP policy
 If your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-1.	In **Client apps - App protection policies**, click **Exempt apps**.
+1. In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
 
-2.	In **Exempt apps**, click **Add apps**.
+2. In **Exempt apps**, click **Add apps**.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. 
     
-3.	Fill out the rest of the app info, based on the type of app you’re adding:
+3. Fill out the rest of the app info, based on the type of app you’re adding:
 
     - [Add Recommended apps](#add-recommended-apps)
 
@@ -373,7 +373,7 @@ After you've added the apps you want to protect with WIP, you'll need to apply a
 
 We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
-1.	From the **App protection policy** blade, click the name of your policy, and then click **Required settings**.
+1. From the **App protection policy** blade, click the name of your policy, and then click **Required settings**.
 
     ![Microsoft Intune, Required settings blade showing Windows Information Protection mode](images/wip-azure-required-settings-protection-mode.png)
 
@@ -384,7 +384,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
     |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
     |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
 
-2.	Click **Save**.
+2. Click **Save**.
 
 ## Define your enterprise-managed corporate identity
 Corporate identity, usually expressed as your primary Internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
@@ -554,7 +554,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 >Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
 
 **To upload your DRA certificate**
-1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1. From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
     The **Advanced settings** blade appears.
 

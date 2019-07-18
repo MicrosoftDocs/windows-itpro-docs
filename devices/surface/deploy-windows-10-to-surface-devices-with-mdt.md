@@ -579,10 +579,10 @@ After the task sequence is created it can be modified for increased automation, 
 
 8. On the **Properties** tab of the new **Install Application** step, enter **Install Microsoft Office 2016 Click-to-Run** in the **Name** field.
 9. Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
-10.	Select Office 2016 Click-to-Run from the list of applications, and then click **OK**.
-11.	Repeat Steps 6 through 10 for the Surface app.
-12.	Expand the **Preinstall** folder, and then click the **Enable BitLocker (Offline)** step.
-13.	Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** menu.
+10. Select Office 2016 Click-to-Run from the list of applications, and then click **OK**.
+11. Repeat Steps 6 through 10 for the Surface app.
+12. Expand the **Preinstall** folder, and then click the **Enable BitLocker (Offline)** step.
+13. Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** menu.
 14. On the **Properties** tab of the new **Set Task Sequence Variable** step (as shown in Figure 22), configure the following options:
     * **Name** – Set DriverGroup001
     * **Task Sequence Variable** – DriverGroup001
@@ -592,8 +592,8 @@ After the task sequence is created it can be modified for increased automation, 
 
     *Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence*
 
-15.	Select the **Inject Drivers** step, the next step in the task sequence.
-16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
+15. Select the **Inject Drivers** step, the next step in the task sequence.
+16. On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
     * In the **Choose a selection profile** drop-down menu, select **Nothing**.
     * Click the **Install all drivers from the selection profile** button.
 
@@ -601,7 +601,7 @@ After the task sequence is created it can be modified for increased automation, 
 
     *Figure 23. Configure the deployment task sequence not to choose the drivers to inject into Windows*
 
-17.	Click **OK** to apply changes to the task sequence and close the task sequence properties window.
+17. Click **OK** to apply changes to the task sequence and close the task sequence properties window.
 
 ### Configure deployment share rules
 
