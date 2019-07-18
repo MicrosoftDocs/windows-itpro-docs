@@ -30,7 +30,7 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
-### [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
@@ -48,7 +48,8 @@
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
 
 ## Support
-### [Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
+### [Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)
+### [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
 ### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
 ### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
 ### [Surface Data Eraser](microsoft-surface-data-eraser.md)

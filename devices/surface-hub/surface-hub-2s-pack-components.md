@@ -19,15 +19,9 @@ If you replace your Surface Hub 2S, one of its components, or a related accessor
 >[!IMPORTANT]  
 >When packing your device for shipment, make sure that you use the packaging in which your replacement device arrived.  
 
-This article contains the following procedures:
+## How to pack your Surface Hub 2S 50”
 
-- [How to pack your Surface Hub 2S 55”](#how-to-pack-your-surface-hub-2s-55)  
-- [How to replace and pack your Surface Hub 2S Compute Cartridge](#how-to-replace-and-pack-your-surface-hub-2s-compute-cartridge)  
-- [How to replace your Surface Hub 2S Camera](#how-to-replace-your-surface-hub-2s-camera)  
-
-## How to pack your Surface Hub 2S 55”
-
-Use the following steps to pack your Surface Hub 2S 55" for shipment.
+Use the following steps to pack your Surface Hub 2S 50" for shipment.
 
 ![The Surface Hub unit and mobile stand.](images/surface-hub-2s-repack-1.png)
 

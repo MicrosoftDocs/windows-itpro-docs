@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: procedural
+ms.topic: article
 ---
 
 # Get machines onboarded to Microsoft Defender ATP
@@ -27,6 +27,9 @@ ms.topic: procedural
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Each onboarded machine adds an additional endpoint detection and response (EDR) sensor and increases visibility over breach activity in your network. Onboarding also ensures that a machine can be checked for vulnerable components as well security configuration issues and can receive critical remediation actions during attacks.
+
+>[!NOTE]
+>Before you can track and manage onboarding of machines, [enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management).
 
 ## Discover and track unprotected machines
 

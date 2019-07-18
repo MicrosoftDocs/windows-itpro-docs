@@ -71,6 +71,6 @@ Security controls which don't support an audit mode should be deployed gradually
 
 Security controls which support an audit mode can be deployed using the following methodology:
 
-1. Audit - enable the control in audit mode, and gasther audit data in a centralized location
+1. Audit - enable the control in audit mode, and gather audit data in a centralized location
 2. Review - review the audit data to assess potential impact (both positive and negative) and configure any exemptions from the security control you need to configure
 3. Enforce - deploy the configuration of any exemptions and convert the control to enforce mode

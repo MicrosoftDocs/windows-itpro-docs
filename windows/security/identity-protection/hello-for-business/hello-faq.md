@@ -27,6 +27,9 @@ Windows Hello for Business is the modern, two-factor credential for Windows 10. 
 ## What about convenience PIN?
 Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
+## Can I use Windows Hello for Business key trust and RDP?
+RDP currently does not support key based authentication and does not support self signed certificates. RDP with Windows Hello for Business is currently only supported with certificate based deployments.
+
 ## Can I deploy Windows Hello for Business using System Center Configuration Manager?
 Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no longer be supported after November 2018.
 

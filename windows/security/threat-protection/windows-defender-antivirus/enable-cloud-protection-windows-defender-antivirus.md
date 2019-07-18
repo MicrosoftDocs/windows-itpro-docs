@@ -92,7 +92,7 @@ Use the following cmdlets to enable cloud-delivered protection:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
-Set-MpPreference -SubmitSamplesConsent Always
+Set-MpPreference -SubmitSamplesConsent AlwaysPrompt
 ```
 
 >[!NOTE]

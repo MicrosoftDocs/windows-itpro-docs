@@ -547,14 +547,7 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>12. Microsoft Account
 
-To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
-
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
-
-  -or-
-
-- Create a REG_DWORD registry setting named **NoConnectedUser** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System** with a **value of 3**.
-
+Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 To disable the Microsoft Account Sign-In Assistant:
 
@@ -604,9 +597,9 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](https://techcommunity.microsoft.com/t5/Networking-Blog/bg-p/NetworkingBlog).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. See the [Microsoft Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/bg-p/NetworkingBlog) to learn more.
 
-In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was `http://www.msftncsi.com`.
+In versions of Windows 10 prior to version 1607 and Windows Server 2016, the URL was `http://www.msftncsi.com/ncsi.txt`.
 
 You can turn off NCSI by doing one of the following:
 
@@ -1149,7 +1142,7 @@ To turn off **Let apps access my call history**:
 
 ### <a href="" id="bkmk-priv-email"></a>18.11 Email
 
-In the **Email** area, you can choose which apps have can access and send email.
+In the **Email** area, you can choose which apps have access and can send email.
 
 To turn off **Let apps access and send email**:
 

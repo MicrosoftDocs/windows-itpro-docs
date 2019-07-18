@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/15/2019
+ms.date: 07/01/2019
 ---
 
 # What's new in mobile device enrollment and management
@@ -121,6 +121,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-power.md#power-turnoffhybridsleeppluggedin" data-raw-source="[Power/TurnOffHybridSleepPluggedIn](policy-csp-power.md#power-turnoffhybridsleeppluggedin)">Power/TurnOffHybridSleepPluggedIn</a></li>
 <li><a href="policy-csp-power.md#power-unattendedsleeptimeoutonbattery" data-raw-source="[Power/UnattendedSleepTimeoutOnBattery](policy-csp-power.md#power-unattendedsleeptimeoutonbattery)">Power/UnattendedSleepTimeoutOnBattery</a></li>
 <li><a href="policy-csp-power.md#power-unattendedsleeptimeoutpluggedin" data-raw-source="[Power/UnattendedSleepTimeoutPluggedIn](policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)">Power/UnattendedSleepTimeoutPluggedIn</a></li>
+<li><a href="policy-csp-privacy.md#privacy-letappsactivatewithvoice" data-raw-source="[Privacy/LetAppsActivateWithVoice](policy-csp-privacy.md#privacy-letappsactivatewithvoice)">Privacy/LetAppsActivateWithVoice</a></li>
+<li><a href="policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock" data-raw-source="[Privacy/LetAppsActivateWithVoiceAboveLock](policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock)">Privacy/LetAppsActivateWithVoiceAboveLock</a></li>
 <li><a href="policy-csp-search.md#search-allowfindmyfiles" data-raw-source="[Search/AllowFindMyFiles](policy-csp-search.md#search-allowfindmyfiles)">Search/AllowFindMyFiles</a></li>
 <li><a href="policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation" data-raw-source="[ServiceControlManager/SvchostProcessMitigation](policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)">ServiceControlManager/SvchostProcessMitigation</a></li>
 <li><a href="policy-csp-system.md#system-allowcommercialdatapipeline" data-raw-source="[System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)">System/AllowCommercialDataPipeline</a></li>
@@ -138,6 +140,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr>
 <td style="vertical-align:top"><a href="enrollmentstatustracking-csp.md" data-raw-source="[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)">EnrollmentStatusTracking CSP</a></td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="applicationcontrol-csp.md" data-raw-source="[ApplicationControl CSP](applicationcontrol-csp.md)">ApplicationControl CSP</a></td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
 </td></tr>
 </tbody>
@@ -1885,7 +1891,14 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 |New or updated topic | Description|
 |--- | ---|
+<<<<<<< HEAD
 |[Policy CSP](policy-configuration-service-provider.md)|Added the following list:<br>Policies supported by HoloLens 2|
+=======
+|[ApplicationControl CSP](applicationcontrol-csp.md)|Added new CSP in Windows 10, version 1903.|
+|[Policy CSP - Privacy](policy-csp-privacy.md)|Added the following new policies:<br>LetAppsActivateWithVoice, LetAppsActivateWithVoiceAboveLock|
+|Create a custom configuration service provider|Deleted the following documents from the CSP reference because extensibility via CSPs is not currently supported:<br>Create a custom configuration service provider<br>Design a custom configuration service provider<br>IConfigServiceProvider2<br>IConfigServiceProvider2::ConfigManagerNotification<br>IConfigServiceProvider2::GetNode<br>ICSPNode<br>ICSPNode::Add<br>ICSPNode::Clear<br>ICSPNode::Copy<br>ICSPNode::DeleteChild<br>ICSPNode::DeleteProperty<br>ICSPNode::Execute<br>ICSPNode::GetChildNodeNames<br>ICSPNode::GetProperty<br>ICSPNode::GetPropertyIdentifiers<br>ICSPNode::GetValue<br>ICSPNode::Move<br>ICSPNode::SetProperty<br>ICSPNode::SetValue<br>ICSPNodeTransactioning<br>ICSPValidate<br>Samples for writing a custom configuration service provider|
+
+>>>>>>> master
 
 ### June 2019
 
