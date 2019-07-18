@@ -76,7 +76,6 @@ You can hide all notifications that are sourced from the Windows Security app. T
 This can only be done in Group Policy.
 
 >[!IMPORTANT]
-
 >### Requirements
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
