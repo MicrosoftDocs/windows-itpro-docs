@@ -80,6 +80,9 @@ The key trust type does not require issuing authentication certificates to end u
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
+>[!NOTE]
+>RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this tim
+
 #### Device registration
 
 All devices included in the Windows Hello for Business deployment must go through device registration.  Device registration enables devices to authenticate to identity providers.  For cloud only and hybrid deployment, the identity provider is Azure Active Directory.  For on-premises deployments, the identity provider is the on-premises server running the Windows Server 2016 Active Directory Federation Services (AD FS) role.
