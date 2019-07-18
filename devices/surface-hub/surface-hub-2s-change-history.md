@@ -21,6 +21,7 @@ This topic summarizes new and updated content in the Surface Hub 2S documentatio
 
 Changes | Description
 |:--- |:--- |
+| Reset and recovery for Surface Hub 2S | Added link to Surface recovery website that enables customers to download a recovery image for Surface Hub 2S |
 | Surface Hub 2S tech specs | Updated power consumption data |
 | Surface Hub 2S Adoption Kit | New |
 
