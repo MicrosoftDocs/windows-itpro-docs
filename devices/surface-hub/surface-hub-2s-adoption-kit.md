@@ -6,6 +6,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/08/2019

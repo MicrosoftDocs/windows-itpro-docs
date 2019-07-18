@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: procedural
+ms.topic: article
 ---
 
 # Increase compliance to the Microsoft Defender ATP security baseline
@@ -40,6 +40,9 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 - [Microsoft Defender ATP baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Both baselines are maintained so that they complement one another and have identical values for shared settings. Deploying both baselines to the same machine will not result in conflicts. Ideally, machines onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls.
+
+>[!NOTE]
+>The Windows Defender ATP security baseline [turns on Windows Hello for Business](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp#windows-hello-for-business). This will require a secondary authentication method that is typically unavailable with RDP and other remote interactive sessions used to access virtual machines (VMs). Before applying the security baseline on VMs, consider modifying the baseline to turn off Windows Hello for Business.  
 
 ## Get permissions to manage security baselines in Intune
 
