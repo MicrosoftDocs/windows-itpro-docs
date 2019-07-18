@@ -90,7 +90,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7.  Corresponding registry key  for **Hide all notifications**
+7.  Use the following registry key and DWORD value to **Hide all notifications**.
    
     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
     **"DisableNotifications"=dword:00000001**
