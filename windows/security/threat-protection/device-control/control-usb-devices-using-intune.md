@@ -11,6 +11,7 @@ author: danihalfin
 ms.date: 02/22/2019
 ms.reviewer: 
 manager: dansimp
+audience: ITPro
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
