@@ -448,7 +448,7 @@ Note:
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop
+                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
