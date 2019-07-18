@@ -2,6 +2,9 @@
 title: Config.xml File (Windows 10)
 description: Config.xml File
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,7 +30,7 @@ For more information about using the Config.xml file with other migration files,
 **Note**  
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
- 
+ 
 
 ## In This Topic
 
@@ -107,7 +110,7 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 **Important**  
 The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
- 
+ 
 
 ### <a href="" id="bkmk-fatal"></a>&lt;fatal&gt;
 
@@ -143,7 +146,7 @@ Syntax: `<fatal errorCode="any">`*&lt;pattern&gt;*`</fatal>`
 </tbody>
 </table>
 
- 
+ 
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
@@ -197,14 +200,14 @@ Syntax: `<nonfatal errorCode="any">`*&lt;pattern&gt;*`</nonFatal>`
 </tbody>
 </table>
 
- 
+ 
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
 
 ## <a href="" id="bkmk-registryerror"></a>&lt;registryError&gt;
 
 
-The **&lt;registryError&gt;**element is not required.
+The <strong>&lt;registryError&gt;</strong>element is not required.
 
 -   **Number of occurrences**: Once for each component
 
@@ -236,7 +239,7 @@ Syntax: `<registryError></registryError>`
 </tbody>
 </table>
 
- 
+ 
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
 
@@ -260,7 +263,7 @@ The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links
 **Important**  
 The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file’s location.
 
- 
+ 
 
 ``` syntax
 <Policy>
@@ -355,7 +358,7 @@ This element describes the source and destination groups for a local group membe
 </tbody>
 </table>
 
- 
+ 
 
 The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;** and **&lt;exclude&gt;**. Although both can be children at the same time, only one is required.
 
@@ -380,7 +383,7 @@ Syntax: `<exclude>`` </exclude>`
 
 Refer to the following sample Config.xml file for additional details about items you can choose to exclude from a migration.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Applications/>
@@ -576,9 +579,9 @@ Refer to the following sample Config.xml file for additional details about items
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

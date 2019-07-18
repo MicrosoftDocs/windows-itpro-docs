@@ -2,13 +2,16 @@
 title: Windows 10 Mobile security guide (Windows 10)
 description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: medium
-author: AMeeus
+author: dulcemontemayor
 ms.date: 10/13/2017
 ---
 # Windows 10 Mobile security guide
@@ -275,12 +278,12 @@ You can use DHA with Microsoft Intune (sold separately) or a third-party MDM sol
 The example that follows shows how Windows 10 protective measures integrate and work with Intune and third-party MDM solutions. It demonstrates how the phone security architecture in Windows 10 Mobile can help you monitor and verify compliance and how the security and trust rooted in the device hardware can protect end-to-end corporate resources.
 
 When a user turns a phone on:
-1.	The Secure Boot feature in Windows 10 Mobile helps protect the startup sequence, allows the device to boot into a defined and trusted configuration, and loads a factory-trusted boot loader.
-2.	Windows 10 Mobile Trusted Boot takes control when the Secure Boot process is complete, verifying the digital signature of the Windows kernel and the components that are loaded and executed during the startup process.
-3.	In parallel to steps 1 and 2, the phone’s TPM runs independently in a hardware-protected security zone (isolated from the boot execution path, which monitors boot activities). It creates a protected, tamper-evident audit trail, signed with a secret that only the TPM can access.
-4.	Devices that are DHA-enabled send a copy of this audit trail to the Microsoft Health Attestation service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
-5.	HAS reviews the audit trails, issues an encrypted and signed report, and forwards it to the device.
-6.	From your DHA-enabled MDM solution, you can review the report in a protected, tamper-resistant, and tamper-evident communication channel to assess whether the device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with the organization’s security needs and policies.
+1. The Secure Boot feature in Windows 10 Mobile helps protect the startup sequence, allows the device to boot into a defined and trusted configuration, and loads a factory-trusted boot loader.
+2. Windows 10 Mobile Trusted Boot takes control when the Secure Boot process is complete, verifying the digital signature of the Windows kernel and the components that are loaded and executed during the startup process.
+3. In parallel to steps 1 and 2, the phone’s TPM runs independently in a hardware-protected security zone (isolated from the boot execution path, which monitors boot activities). It creates a protected, tamper-evident audit trail, signed with a secret that only the TPM can access.
+4. Devices that are DHA-enabled send a copy of this audit trail to the Microsoft Health Attestation service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
+5. HAS reviews the audit trails, issues an encrypted and signed report, and forwards it to the device.
+6. From your DHA-enabled MDM solution, you can review the report in a protected, tamper-resistant, and tamper-evident communication channel to assess whether the device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with the organization’s security needs and policies.
 Because this solution can detect and prevent low-level malware that may be extremely difficult to detect any other way, Microsoft recommends that you consider implementing a DHA-enabled MDM system like Intune. It can take advantage of the Windows 10 Mobile cloud-based health attestation server feature to detect and block devices infected with advanced malware.
 
 ### <a href="" id="device-guard"></a>Device Guard

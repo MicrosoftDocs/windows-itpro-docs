@@ -1,8 +1,11 @@
 ---
 title: Sequencer Command-Line Error Codes
 description: Sequencer Command-Line Error Codes
-author: jamiejdt
+author: eavena
 ms.assetid: 3d491314-4923-45fd-9839-c541c5e620bd
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Use the following list to help identify errors that are related to sequencing ap
 **Note**  
 Multiple errors can occur during sequencing, and if this happens, the error code that is displayed might be the sum of two error codes. For example, if the */InstallPath* and */OutputFile* parameters are missing, the App-V Sequencer will return **96**—the sum of the two error codes.
 
- 
+ 
 
 <a href="" id="01"></a>01  
 There is an unspecified error.
@@ -88,9 +91,9 @@ The package name is not specified.
 
 [Sequencer Command-Line Parameters](sequencer-command-line-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: MBAM 1.0 Supported Configurations
 description: MBAM 1.0 Supported Configurations
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 1f5ac58e-6a3f-47df-8a9b-4b57631ab9ee
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,10 +26,10 @@ This topic specifies the necessary requirements to install and run Microsoft Bit
 
 The following table lists the operating systems that are supported for the Microsoft BitLocker Administration and Monitoring Server installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -45,13 +48,13 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2008</p></td>
+<td align="left"><p>Windows Server 2008</p></td>
 <td align="left"><p>Standard, Enterprise, Datacenter, or Web Server</p></td>
 <td align="left"><p>SP2 only</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2008 R2</p></td>
+<td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>Standard, Enterprise, Datacenter, or Web Server</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
@@ -59,20 +62,20 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
 
-**Warning**  
+
+**Warning**  
 There is no support for installing MBAM services, reports, or databases on a domain controller computer.
 
- 
+
 
 ### <a href="" id="server-random-access-memory--ram--requirements-"></a>Server random access memory (RAM) requirements
 
 There are no RAM requirements that are specific to MBAM Server installation.
 
-### <a href="" id="sql-server-database-requirements-"></a>SQL Server Database requirements
+### <a href="" id="sql-server-database-requirements-"></a>SQL Server Database requirements
 
-The following table lists the SQL Server versions that are supported for the MBAM Server feature installation.
+The following table lists the SQL Server versions that are supported for the MBAM Server feature installation.
 
 <table>
 <colgroup>
@@ -94,28 +97,27 @@ The following table lists the SQL Server versions that are supported for the MB
 <tbody>
 <tr class="odd">
 <td align="left"><p>Compliance and Audit Reports</p></td>
-<td align="left"><p>Microsoft SQL Server 2008 </p></td>
+<td align="left"><p>Microsoft SQL Server 2008 </p></td>
 <td align="left"><p>R2, Standard, Enterprise, Datacenter, or Developer Edition</p></td>
 <td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Recovery and Hardware Database</p></td>
-<td align="left"><p>Microsoft SQL Server 2008 </p></td>
+<td align="left"><p>Microsoft SQL Server 2008 </p></td>
 <td align="left"><p>R2, Enterprise, Datacenter, or Developer Edition</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>SQL Server Standard Editions are not supported for MBAM Recovery and Hardware Database Server feature installation.</p>
+<strong>Important</strong><br/><p>SQL Server Standard Editions are not supported for MBAM Recovery and Hardware Database Server feature installation.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Compliance and Audit Database</p></td>
-<td align="left"><p>Microsoft SQL Server 2008 </p></td>
+<td align="left"><p>Microsoft SQL Server 2008 </p></td>
 <td align="left"><p>R2, Standard, Enterprise, Datacenter, or Developer Edition</p></td>
 <td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -123,7 +125,7 @@ The following table lists the SQL Server versions that are supported for the MB
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="---------mbam-client-system-requirements"></a> MBAM Client system requirements
 
@@ -132,10 +134,10 @@ The following table lists the SQL Server versions that are supported for the MB
 
 The following table lists the operating systems that are supported for MBAM Client installation.
 
-**Note**  
+**Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+
 
 <table>
 <colgroup>
@@ -154,13 +156,13 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Enterprise Edition</p></td>
 <td align="left"><p>None, SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Ultimate Edition</p></td>
 <td align="left"><p>None, SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -168,7 +170,7 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="client-ram-requirements-"></a>Client RAM requirements
 
@@ -181,9 +183,9 @@ There are no RAM requirements that are specific to the MBAM Client installation.
 
 [MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md)
 
- 
 
- 
+
+
 
 
 

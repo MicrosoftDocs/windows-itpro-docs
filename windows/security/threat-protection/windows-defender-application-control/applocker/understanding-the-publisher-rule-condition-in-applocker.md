@@ -2,12 +2,14 @@
 title: Understanding the publisher rule condition in AppLocker (Windows 10)
 description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 ms.assetid: df61ed8f-a97e-4644-9d0a-2169f18c1c4f
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -53,7 +55,7 @@ of the publisher condition.
 </tr>
 </tbody>
 </table>
- 
+ 
 Wildcard characters can be used as values in the publisher rule fields according to the following specifications:
 
 -   **Publisher**
@@ -88,7 +90,7 @@ The following table describes how a publisher condition is applied.
 | **Publisher, product name, file name, and file version** | **And above**<br/>The specified version of the named file and any new releases for the product that are signed by the publisher.| 
 | **Publisher, product name, file name, and file version**| **And below**<br/>The specified version of the named file and any older versions for the product that are signed by the publisher.| 
 | **Custom** | You can edit the **Publisher**, **Product name**, **File name**, and **Version** fields to create a custom rule.| 
- 
+ 
 For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
 ## Related topics

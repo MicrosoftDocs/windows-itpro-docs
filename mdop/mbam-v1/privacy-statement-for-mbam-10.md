@@ -1,8 +1,11 @@
 ---
 title: Privacy Statement for MBAM 1.0
 description: Privacy Statement for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: db18cc93-a1c1-44da-a450-a5399a4427b9
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

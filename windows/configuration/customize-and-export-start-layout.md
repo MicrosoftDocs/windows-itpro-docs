@@ -2,12 +2,14 @@
 title: Customize and export Start layout (Windows 10)
 description: The easiest method for creating a customized Start layout is to set up the Start screen and export the layout.
 ms.assetid: CA8DF327-5DD4-452F-9FE5-F17C514B6236
+ms.reviewer: 
+manager: dansimp
 keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/18/2018
@@ -33,7 +35,7 @@ When [a partial Start layout](#configure-a-partial-start-layout) is applied, the
 >[!NOTE]
 >Partial Start layout is only supported on Windows 10, version 1511 and later.
 
- 
+ 
 
 You can deploy the resulting .xml file to devices using one of the following methods:
 
@@ -43,9 +45,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-<span id="bkmkcustomizestartscreen" />
 ## Customize the Start screen on your test computer
-
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
 
@@ -55,7 +55,6 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 2.  Create a new user account that you will use to customize the Start layout.
 
-<a href="" id="bmk-customize-start"></a>
 **To customize Start**
 
 1.  Sign in to your test computer with the user account that you created.
@@ -79,11 +78,9 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 >
 >In earlier versions of Windows 10, no tile would be pinned.
 
-<span id="bmk-exportstartscreenlayout" />
 ## Export the Start layout
 
-
-When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file.
+When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file. Start layout is located by default at C:\Users\username\AppData\Local\Microsoft\Windows\Shell\
 
 >[!IMPORTANT]
 >If you include secondary Microsoft Edge tiles (tiles that link to specific websites in Microsoft Edge), see [Add custom images to Microsoft Edge secondary tiles](start-secondary-tiles.md) for instructions.
@@ -94,7 +91,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
-    `Export-StartLayout –path <path><file name>.xml `
+    `Export-StartLayout –path <path><file name>.xml`
     
     On a device running Windows 10, version 1809, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
 
@@ -155,6 +152,8 @@ When you have the Start layout that you want your users to see, use the [Export-
 >* If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
 >
 >* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
+>
+>* Three additional shortcuts are pinned to the start menu after the export. These are shortcuts to %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs, and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\.
 
 
 ## Configure a partial Start layout
@@ -172,9 +171,9 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 **To configure a partial Start screen layout**
 
-1.  [Customize the Start layout](#bmk-customize-start).
+1.  [Customize the Start layout](#customize-the-start-screen-on-your-test-computer).
 
-2.  [Export the Start layout](#bmk-exportstartscreenlayout).
+2.  [Export the Start layout](#export-the-start-layout).
 3.  Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
     ``` syntax

@@ -1,14 +1,15 @@
 ---
 title: Windows Autopilot and Surface Devices (Surface)
+ms.reviewer: 
+manager: dansimp
 description: Find out about Windows Autopilot deployment options for Surface devices.
 keywords: autopilot, windows 10, surface, deployment
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: brecords
-ms.date: 09/12/2018
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 

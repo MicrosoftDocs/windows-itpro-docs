@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: mjcaparas
 ---
 
 # Windows Defender SmartScreen
@@ -50,12 +53,23 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 ## Viewing Windows Defender SmartScreen anti-phishing events
 When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/scriptcenter/dd565657(v=msdn.10).aspx).
 
+
+## Viewing Windows event logs for SmartScreen
+SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log in Event Viewer.
+
+
+|EventID | Description |
+| :---:         |     :---:      |
+|1000 | Application SmartScreen Event|
+|1001 | Uri SmartScreen Event|
+|1002 | User Decision SmartScreen Event|
+
 ## Related topics
 - [SmartScreen Frequently Asked Questions (FAQ)](https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx)
 
-- [How to recognize phishing email messages, links, or phone calls](https://www.microsoft.com/en-us/safety/online-privacy/phishing-symptoms.aspx)
-
 - [Threat protection](../index.md)
+
+- [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

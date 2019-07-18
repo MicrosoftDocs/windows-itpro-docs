@@ -1,8 +1,11 @@
 ---
 title: Request Restoration of a Deleted GPO
 description: Request Restoration of a Deleted GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: bac5ca3b-be47-49b5-bf1b-96280625fda8
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -33,7 +36,7 @@ A user account with the Editor role or necessary permissions in Advanced Group P
 **Note**  
 If a GPO was deleted from the production environment, restoring it to the archive will not automatically redeploy it to the production environment. To return the GPO to the production environment, deploy the GPO. For information, see [Request Deployment of a GPO](request-deployment-of-a-gpo-agpm40.md).
 
- 
+ 
 
 ### Additional considerations
 
@@ -45,9 +48,9 @@ If a GPO was deleted from the production environment, restoring it to the archiv
 
 -   [Deleting or Restoring a GPO](deleting-or-restoring-a-gpo-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

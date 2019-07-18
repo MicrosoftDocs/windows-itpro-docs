@@ -2,12 +2,14 @@
 title: Maximum password age (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum password age security policy setting.
 ms.assetid: 2d6e70e7-c8b0-44fb-8113-870c6120871d
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -27,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 The **Maximum password age** policy setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If **Maximum password age** is between 1 and 999 days, the minimum password age must be less than the maximum password age. If **Maximum password age** is set to 0, [Minimum password age](minimum-password-age.md) can be any value between 0 and 998 days.
 
 >**Note:**  Setting **Maximum password age** to -1 is equivalent to 0, which means it never expires. Setting it to any other negative number is equivalent to setting it to **Not Defined**.
- 
+ 
 ### Possible values
 
 -   User-specified number of days between 0 and 999
@@ -53,7 +55,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | 42 days| 
 | Member server effective default settings | 42 days| 
 | Effective GPO default settings on client computers| 42 days| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

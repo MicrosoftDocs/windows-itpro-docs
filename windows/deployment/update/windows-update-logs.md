@@ -4,10 +4,12 @@ description: Learn about the Windows Update log files
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: kaushika-msft
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: greg-lindsay
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -61,7 +63,7 @@ The WU engine has different component names. The following are some of the most 
 - DataStore - Caching update data locally 
 - IdleTimer - Tracking active calls, stopping a service 
  
->[!NOTE] 
+>[!NOTE]
 >Many component log messages are invaluable if you are looking for problems in that specific area. However, they can be useless if you don't filter to exclude irrelevant components so that you can focus on what’s important. 
  
 ### Windows Update log structure 

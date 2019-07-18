@@ -1,10 +1,12 @@
 ---
 title: Technical information for 84" Surface Hub  
+ms.reviewer: 
+manager: dansimp
 description: Specifications for the 84" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -77,7 +79,7 @@ USB type A, side I/O | ![](images/usb.png) | Provides 1 USB 3.0 connection for U
 USB type A, bottom I/O with blue insulator | ![](images/usb.png) | Provides USB 3.0 connection.
 3.5mm, bottom I/O | ![](images/analog.png) | Provides analog audio out.
 Display port, bottom I/O | ![](images/dportout.png) | Provides mirrored video out function to another display.
-IEC/EN60320-C13 receptable with hard switch | ![](images/iec.png) | Provides AC input and compliance with EU power requirements.
+IEC/EN60320-C13 receptacle with hard switch | ![](images/iec.png) | Provides AC input and compliance with EU power requirements.
 RJ45, bottom I/O | ![](images/rj45.png) | Connects to Ethernet.
 RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 

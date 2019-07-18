@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ---
 
 # 1102(S): The audit log was cleared.

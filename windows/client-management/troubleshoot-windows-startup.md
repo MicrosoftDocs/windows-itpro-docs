@@ -4,10 +4,12 @@ description: Learn how to troubleshoot Windows start-up issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: kaushika
+ms.author: dansimp
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Advanced troubleshooting for Windows start-up issues

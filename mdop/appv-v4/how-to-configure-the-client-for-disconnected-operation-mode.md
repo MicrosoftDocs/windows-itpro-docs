@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client for Disconnected Operation Mode
 description: How to Configure the Client for Disconnected Operation Mode
-author: jamiejdt
+author: dansimp
 ms.assetid: 3b48464a-b8b4-494b-93e3-9a6d9bd74652
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ The disconnected operation mode enables the Application Virtualization (App-V) D
 **Important**  
 In a large organization where multiple Remote Desktop Session Host (RD°Session Host) servers (formerly Terminal Servers) are linked in a farm to support many users, using a single App-V Management Server to support the farm represents a single point of failure. To provide high availability to support the RD Session Host farm, consider linking two or more App-V Management Servers to use the same database.
 
- 
+ 
 
 **To enable disconnected operation mode**
 
@@ -56,9 +59,9 @@ In a large organization where multiple Remote Desktop Session Host (RD°Session 
 
 [How to Configure the App-V Client Registry Settings by Using the Command Line](how-to-configure-the-app-v-client-registry-settings-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

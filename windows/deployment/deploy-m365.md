@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Concepts about deploying Windows 10 for M365
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -64,7 +67,7 @@ Examples of these two deployment advisors are shown below.
 
 ## M365 Enterprise poster
 
-[![M365 Enterprise poster](images/m365e.png)](http://aka.ms/m365eposter)
+[![M365 Enterprise poster](images/m365e.png)](https://aka.ms/m365eposter)
 
 ## Related Topics
 

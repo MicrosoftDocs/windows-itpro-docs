@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -40,8 +41,8 @@ Prepare the Active Directory Federation Services deployment by installing and up
 ##  Update Windows Server 2016
 
 Sign-in the federation server with _local admin_ equivalent credentials.
-1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please advise the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
+1. Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please advise the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
+2. Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.
@@ -91,15 +92,15 @@ The Active Directory Federation Service (AD FS) role provides the following serv
 Windows Hello for Business depends on proper device registration.  For on-premises deployments, Windows Server 2016 AD FS handles device registration.
 
 Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
-1.	Start **Server Manager**.  Click **Local Server** in the navigation pane.
-2.	Click **Manage** and then click **Add Roles and Features**.
-3.	Click **Next** on the **Before you begin** page.
-4.	On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5.	On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
-6.	On the **Select server roles** page, select **Active Directory Federation Services**.  Click **Next**.
-7.	Click **Next** on the **Select features** page.
-8.	Click **Next** on the **Active Directory Federation Service** page.
-9.	Click **Install** to start the role installation.
+1. Start **Server Manager**.  Click **Local Server** in the navigation pane.
+2. Click **Manage** and then click **Add Roles and Features**.
+3. Click **Next** on the **Before you begin** page.
+4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
+5. On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
+6. On the **Select server roles** page, select **Active Directory Federation Services**.  Click **Next**.
+7. Click **Next** on the **Select features** page.
+8. Click **Next** on the **Active Directory Federation Service** page.
+9. Click **Install** to start the role installation.
 
 ## Review
 
@@ -116,7 +117,7 @@ Before you continue with the deployment, validate your deployment progress by re
 The service account used for the device registration server depends on the domain controllers in the environment.  
 
 >[!NOTE]
->Follow the procedures below based on the domain controllers deployed in your environment.  If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+> Follow the procedures below based on the domain controllers deployed in your environment.  If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
 
 ### Windows Server 2012 or later Domain Controllers
 
@@ -137,20 +138,20 @@ Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key
 #### Create an AD FS Service Account
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-1.	Open **Active Directory Users and Computers**.
-2.	Right-click the **Users** container, Click **New**. Click **User**.
-3.	In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
-4.	Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
-5.	Click **Next** and then click **Finish**.
+1. Open **Active Directory Users and Computers**.
+2. Right-click the **Users** container, Click **New**. Click **User**.
+3. In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
+4. Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
+5. Click **Next** and then click **Finish**.
 
 ## Configure the Active Directory Federation Service Role
 
 >[!IMPORTANT]
->Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+> Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
 
 ### Windows Server 2012 or later Domain Controllers
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008R2-domain-controllers) section.
+Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008-r2-domain-controllers) section.
 
 Sign-in the federation server with _domain administrator_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 
@@ -204,8 +205,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 7. Right-click **Windows Hello for Business Users** group
 8. Click the **Members** tab and click **Add…**
 9. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-10.	Click **OK** to return to **Active Directory Users and Computers**.
-11.	Change to server hosting the AD FS role and restart it.
+10. Click **OK** to return to **Active Directory Users and Computers**.
+11. Change to server hosting the AD FS role and restart it.
 
 ### Configure Permissions for Key Registration
 
@@ -275,7 +276,8 @@ Sign-in a certificate authority or management workstations with _domain administ
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
 6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
-> [!NOTE]
+
+>[!NOTE]
 > The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
 
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
@@ -297,7 +299,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
 8. On the **Security** tab, click **Add**. Type **adfssvc** in the **Enter the object names to select text box** and click **OK**.
 9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
-10.	Close the console.
+10. Close the console.
 
 ### Configure the Windows Hello for Business Authentication Certificate template
 
@@ -313,13 +315,13 @@ Sign-in a certificate authority or management workstations with _domain administ
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
 8. On the **Issuance Requirements** tab, select the T**his number of authorized signatures** check box.  Type **1** in the text box.   
-    * Select **Application policy** from the **Policy type required in signature**.	Select **Certificate Request Agent** from in the **Application policy** list. Select the **Valid existing certificate** option.
+    * Select **Application policy** from the **Policy type required in signature**. Select **Certificate Request Agent** from in the **Application policy** list. Select the **Valid existing certificate** option.
 9. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
-10.	On the **Request Handling** tab, select the **Renew with same key** check box.
-11.	On the **Security** tab, click **Add**. Type **Window Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
-12.	Click the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section, select the **Allow** check box for the **Enroll** permission. Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
-13.	If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they will be superseded by this template for the users that have Enroll permission for this template.
-14.	Click on the **Apply** to save changes and close the console.
+10. On the **Request Handling** tab, select the **Renew with same key** check box.
+11. On the **Security** tab, click **Add**. Type **Window Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
+12. Click the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section, select the **Allow** check box for the **Enroll** permission. Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
+13. If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they will be superseded by this template for the users that have Enroll permission for this template.
+14. Click on the **Apply** to save changes and close the console.
 
 #### Mark the template as the Windows Hello Sign-in template 
 
@@ -345,20 +347,44 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 Sign-in the AD FS server with domain administrator equivalent credentials. 
 
-1.	Open a **Windows PowerShell** prompt.
-2.	Type the following command   
+1. Open a **Windows PowerShell** prompt.
+2. Type the following command   
   
-    ```PowerShell
-    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
-    ```
->[!NOTE]
-> If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
+   ```PowerShell
+   Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+   ```
+   >[!NOTE]
+   > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 
 ### Enrollment Agent Certificate Enrollment
 
 Active Directory Federation Server used for Windows Hello for Business certificate enrollment perform their own certificate lifecycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
+
+### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
+
+>[!TIP] 
+> Make sure to change the $enrollmentService and $configNC variables before running the script.
+
+```Powershell
+# Replace this with your Device Registration Service endpoint
+$enrollmentService = "enterpriseregistration.contoso.com"
+# Replace this with your Active Directory configuration naming context 
+$configNC = "CN=Configuration,DC=corp,DC=contoso,DC=org" 
+ 
+$de = New-Object System.DirectoryServices.DirectoryEntry
+$de.Path = "LDAP://CN=Device Registration Configuration,CN=Services," + $configNC
+
+$deSCP = $de.Children.Add("CN=62a0ff2e-97b9-4513-943f-0d221bd30080", "serviceConnectionPoint")
+$deSCP.Properties["keywords"].Add("enterpriseDrsName:" + $enrollmentService)
+$deSCP.CommitChanges()
+```
+
+>[!NOTE]
+> You can save the modified script in notepad and save them as "add-scpadfs.ps1" and the way to run it is just navigating into the script path folder and running .\add-scpAdfs.ps1.
+>
 
 ## Additional Federation Servers
 
@@ -444,9 +470,9 @@ Sign-in the domain controller or administrative workstation with _Domain Admin_ 
 
 ### Deploy the Intranet Zone Group Policy object
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
-3.	In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
+3. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
 
 ## Review
 

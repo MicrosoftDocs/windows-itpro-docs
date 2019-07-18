@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Wifi
 description: Policy CSP - Wifi
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/14/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Wifi
@@ -379,36 +381,49 @@ Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Wifi policies that can be set using Exchange Active Sync (EAS)  
 
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
-<!--EndEAS-->
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
+  <!--EndEAS-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Wifi policies supported by Windows Holographic
+
+- [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+<!--EndHoloLens-->
+  
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>Wifi policies supported by Windows Holographic for Business
+
+- [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+<!--EndHoloLensBusiness-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Wifi policies supported by IoT Core  
 
--   [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
--   [Wifi/WLANScanMode](#wifi-wlanscanmode)  
-<!--EndIoTCore-->
+- [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
+- [Wifi/WLANScanMode](#wifi-wlanscanmode)  
+  <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Wifi policies supported by Microsoft Surface Hub  
 
--   [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
-<!--EndSurfaceHub-->
+- [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
+  <!--EndSurfaceHub-->
 
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

@@ -2,12 +2,14 @@
 title: System settings Optional subsystems (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the System settings Optional subsystems security policy setting.
 ms.assetid: 5cb6519a-4f84-4b45-8072-e2aa8a72fb78
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -53,7 +55,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | POSIX| 
 | Member Server Effective Default Settings| POSIX| 
 | Client Computer Effective Default Settings | POSIX| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

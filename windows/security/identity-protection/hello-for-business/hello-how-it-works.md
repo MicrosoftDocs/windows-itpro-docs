@@ -13,6 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 05/05/2018
+ms.reviewer: 
 ---
 # How Windows Hello for Business works
 

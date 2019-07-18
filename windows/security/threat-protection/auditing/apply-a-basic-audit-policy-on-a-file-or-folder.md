@@ -2,12 +2,14 @@
 title: Apply a basic audit policy on a file or folder (Windows 10)
 description: You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log.
 ms.assetid: 565E7249-5CD0-4B2E-B2C0-B3A0793A51E2
+ms.reviewer: 
+ms.author: dolmont
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: justinha
+author: Mir0sh
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

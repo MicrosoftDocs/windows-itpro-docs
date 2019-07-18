@@ -1,8 +1,11 @@
 ---
 title: Monitoring Application Virtualization Servers
 description: Monitoring Application Virtualization Servers
-author: jamiejdt
+author: eavena
 ms.assetid: d84355ae-4fe4-41d9-ac3a-3eaa32d9a61f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

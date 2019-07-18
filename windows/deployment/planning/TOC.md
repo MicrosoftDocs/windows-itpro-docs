@@ -5,12 +5,15 @@
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 
 ## Features removed or planned for replacement
+### [Windows 10 features lifecycle](features-lifecycle.md)
+### [Windows 10, version 1903](windows-10-1903-removed-features.md)
 ### [Windows 10, version 1809](windows-10-1809-removed-features.md)
 ### [Windows 10, version 1803](windows-10-1803-removed-features.md)
-### [Windows 10, version 1709](windows-10-fall-creators-deprecation.md)
-### [Windows 10, version 1703](windows-10-creators-update-deprecation.md)
+### [Windows 10, version 1709](windows-10-1709-removed-features.md)
+### [Windows 10, version 1703](windows-10-1703-removed-features.md)
 
-## [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)
+## Application Compatibility Toolkit (ACT)
+### [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)
 ### [SUA User's Guide](sua-users-guide.md)
 #### [Using the SUA Wizard](using-the-sua-wizard.md)
 #### [Using the SUA Tool](using-the-sua-tool.md)
@@ -35,10 +38,3 @@
 ##### [Testing Your Application Mitigation Packages](testing-your-application-mitigation-packages.md)
 #### [Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md)
 ### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
-
-## [Windows To Go: feature overview](windows-to-go-overview.md)
-### [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
-### [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)
-### [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
-### [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
-### [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)

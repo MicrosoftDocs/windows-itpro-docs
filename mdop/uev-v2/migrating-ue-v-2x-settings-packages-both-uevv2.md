@@ -1,8 +1,11 @@
 ---
 title: Migrating UE-V 2.x Settings Packages
 description: Migrating UE-V 2.x Settings Packages
-author: jamiejdt
+author: levinec
 ms.assetid: f79381f4-e142-405c-b728-5c048502aa70
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,7 +40,7 @@ Simply copying the files and folders does not preserve the security settings and
     **Note**  
     To monitor the copy progress, open MySettings.txt with a log viewer such as Trace32.
 
-     
+     
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 
@@ -50,9 +53,9 @@ Simply copying the files and folders does not preserve the security settings and
 
 [Administering UE-V 2.x](administering-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

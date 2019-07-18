@@ -104,7 +104,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -309,22 +309,6 @@
       "docset_name": "windows-hub",
       "build_source_folder": "windows/hub",
       "build_output_subfolder": "windows-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-known-issues",
-      "build_source_folder": "windows/known-issues",
-      "build_output_subfolder": "windows-known-issues",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

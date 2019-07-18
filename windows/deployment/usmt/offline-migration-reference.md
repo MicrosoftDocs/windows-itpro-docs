@@ -2,6 +2,9 @@
 title: Offline Migration Reference (Windows 10)
 description: Offline Migration Reference
 ms.assetid: f347547c-d601-4c3e-8f2d-0138edeacfda
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -89,12 +92,12 @@ The following table defines the supported combination of online and offline oper
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](https://go.microsoft.com/fwlink/p/?LinkId=190314).
 
- 
+ 
 
 ## <a href="" id="bkmk-usergroupmembership"></a>User-Group Membership and Profile Control
 
@@ -156,7 +159,7 @@ An offline migration can either be enabled by using a configuration file on the 
 </tbody>
 </table>
 
- 
+ 
 
 You can use only one of the **/offline**,**/offlineWinDir** , or **/OfflineWinOld** command-line options at a time; USMT does not support using more than one together.
 
@@ -194,7 +197,7 @@ The following system environment variables are necessary in the scenarios outlin
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-offlinexml"></a>Offline.xml Elements
 
@@ -255,9 +258,9 @@ The following XML example illustrates some of the elements discussed earlier in 
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

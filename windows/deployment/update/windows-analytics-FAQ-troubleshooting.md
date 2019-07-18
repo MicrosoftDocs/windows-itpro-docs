@@ -1,13 +1,15 @@
 ---
 title: Frequently asked questions and troubleshooting Windows Analytics
+ms.reviewer: 
+manager: laurawi
 description: Frequently asked questions about Windows Analytics and steps to take when things go wrong
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: greg-lindsay
+ms.author: greg-lindsay
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -57,7 +59,7 @@ Even though devices can take 2-3 days after enrollment to show up due to latency
 
 >[!NOTE]
 > If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
- 
+
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
 1. Download and extract the [Upgrade Readiness Deployment Script](https://www.microsoft.com/download/details.aspx?id=53327). Ensure that the **Pilot/Diagnostics** folder is included.
@@ -84,11 +86,13 @@ If you have devices that appear in other solutions, but not Device Health (the D
 1. Using the Azure portal, remove the Device Health (appears as DeviceHealthProd on some pages) solution from your Log Analytics workspace. After completing this, add the Device Health solution to you workspace again.
 2. Confirm that the devices are running Windows 10.
 3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
-4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+4. Confirm that devices are opted in to send diagnostic data by checking in the registry that **AllowTelemetry** is set to either 2 (Enhanced) or 3 (Full). 
+    - **AllowTelemetry** under **HKLM\Software\Policies\Microsoft\Windows\DataCollection** is the IT policy path.
+    - **AllowTelemetry** under **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is the user preference (Settings app) path. 
+    - IMPORTANT: By convention (and in earlier versions of Windows 10) the IT policy would take precedence over any user preference. Starting with Windows 10, version 1803, the user can lower the device's effective value even when an IT policy is set. This change assists organizations in complying with regional or organizational expectations about user control over privacy settings. For organizations where user control of privacy settings is not required, the previous behavior (IT policy path always wins) can be enabled using the new policy **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in setting user interface**.
 5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-6. Remove the Device Health (appears as DeviceHealthProd on some pages) from your Log Analytics workspace
-7. Wait 48 hours for activity to appear in the reports.
-8. If you need additional troubleshooting, contact Microsoft Support.
+6. Wait 48 hours for activity to appear in the reports.
+7. If you need additional troubleshooting, contact Microsoft Support.
 
 
 ### Device crashes not appearing in Device Health Device Reliability
@@ -109,7 +113,7 @@ If you know that devices are experiencing stop error crashes that do not seem to
 5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
 
    [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
- 
+
    You can use the following Windows PowerShell snippet to summarize recent occurrences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
    ```powershell
@@ -195,6 +199,11 @@ Upgrade Readiness only collects app inventory on devices that are not yet upgrad
 Double-check that IE site discovery opt-in has been configured in the deployment script. (See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.)
 
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
+
+There are two additional configurations to check:
+1. Make sure Flip Ahead with Page Prediction is enabled. It can be configured at Internet Options -> Advanced -> Browsing -> Enable flip ahead with page prediction.
+2. Make sure IE is not running in InPrivate mode. 
+
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
 >[!NOTE]
@@ -205,9 +214,9 @@ Starting with Windows 10, version 1803, the device name is no longer collected b
 
 ### Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results
 This issue affects custom queries of the Device Health data by using the **Logs > Search page** or API. It does not impact any of the built-in tiles or reports of the Device Health solution. The **AbnormalShutdownCount** field of the **DHOSReliability** data table represents abnormal shutdowns other than crashes, such as sudden power loss or holding down the power button.
- 
+
 We have identified an incompatibility between AbnormalShutdownCount and the Limited Enhanced diagnostic data level on Windows 10, versions 1709, 1803, and 1809. Such devices do not send the abnormal shutdown signal to Microsoft. You should not rely on AbnormalShutdownCount in your custom queries unless you use any one of the following workarounds:
- 
+
 
 - Upgrade devices to Windows 10, version 1903 when available. Participants in the Windows Insider program can preview this change using Windows Insider builds.
 - Change the diagnostic data setting from devices running Windows 10, versions 1709, 1803, and 1809 normal Enhanced level instead of Limited Enhanced.
@@ -221,18 +230,18 @@ We have identified an incompatibility between AbnormalShutdownCount and the Limi
 
 If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
-1.  Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
+1. Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
-  ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
+   ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
 
-2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
+2. Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
-  **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
+   **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
 
-  **Windows 10**: Follow the instructions in [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+   **Windows 10**: Follow the instructions in [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
-3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
-4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
+3. If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
+4. **Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
 
 ### Exporting large data sets
 
@@ -242,7 +251,7 @@ Azure Log Analytics is optimized for advanced analytics of large data sets and c
 let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
 let pageSize = 100000;
 let pageNumber = 0;
- 
+
 UAApp
 | where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
 | order by AppName, AppVendor, AppVersion desc
@@ -251,11 +260,12 @@ UAApp
 | take pageSize
 ```
 
- 
+
 
 ## Other common questions
 
 ### What are the requirements and costs for Windows Analytics solutions?
+
 | Windows Analytics solution| Windows license requirements | Windows version requirements | Minimum diagnostic data requirements |
 |----------------------|-----------------------------------|------------------------------|------------------------------|
 | Upgrade Readiness | No additional requirements  |  Windows 7 with Service Pack 1, Windows 8.1, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
@@ -274,7 +284,7 @@ Note that different Azure Log Analytics plans have different data retention peri
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
 System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.
- 
+
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
 - To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.

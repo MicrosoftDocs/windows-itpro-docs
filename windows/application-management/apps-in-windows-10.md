@@ -1,12 +1,14 @@
 ---
 title: Windows 10 - Apps
+ms.reviewer: 
+manager: dansimp
 description: What are Windows, UWP, and Win32 apps
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -153,32 +155,34 @@ System apps are integral to the operating system. Here are the typical system ap
 
 Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
 
-| Name               | Full name                                | 1709 | 1803 | 1809 | Uninstall through UI? |
-|--------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
-| Remote Desktop     | Microsoft.RemoteDesktop                  | x    |      | x    | Yes                  |
-| Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    |      | Yes                  |
-| Eclipse Manager    | 46928bounde.EclipseManager               | x    | x    |      | Yes                  |
-| Pandora            | PandoraMediaInc.29680B314EFC2            | x    | x    |      | Yes                  |
-| Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    |      | Yes                  |
-| Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    |      | Yes                  |
-| Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
-| News               | Microsoft.BingNews                       | x    | x    | x    | Yes                  |
-| Sway	            | Microsoft.Office.Sway                    | x    | x    | x    | Yes                  |
-| Microsoft.Advertising | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.2       | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.3       | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.6       | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.7       |      | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.2.0       | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.1         | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.3         | x    |      |      | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.4         | x    | x    |      | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.6         | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.1.7         | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Runtime.2.0         | x    | x    |      | Yes                  |
-|                    | Microsoft.Services.Store.Engagement      | x    | x    |      | Yes                  |
-|                    | Microsoft.VCLibs.120.00                  | x    | x    |      | Yes                  |
-|                    | Microsoft.VCLibs.140.00                  | x    | x    | x    | Yes                  |
-|                    | Microsoft.VCLibs.120.00.Universal        | x    |      |      | Yes                  |
-|                    | Microsoft.VCLibs.140.00.UWPDesktop       |      | x    |      | Yes                  |
+
+|         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
+|-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
+|    Remote Desktop     |         Microsoft.RemoteDesktop          |  x   |      |  x   |          Yes          |
+|      Code Writer      |     ActiproSoftwareLLC.562882FEEB491     |  x   |  x   |      |          Yes          |
+|    Eclipse Manager    |        46928bounde.EclipseManager        |  x   |  x   |      |          Yes          |
+|        Pandora        |      PandoraMediaInc.29680B314EFC2       |  x   |  x   |      |          Yes          |
+|   Photoshop Express   | AdobeSystemIncorporated. AdobePhotoshop  |  x   |  x   |      |          Yes          |
+|       Duolingo        | D5EA27B7.Duolingo- LearnLanguagesforFree |  x   |  x   |      |          Yes          |
+|  Network Speed Test   |        Microsoft.NetworkSpeedTest        |  x   |  x   |  x   |          Yes          |
+|         News          |            Microsoft.BingNews            |  x   |  x   |  x   |          Yes          |
+|         Sway          |          Microsoft.Office.Sway           |  x   |  x   |  x   |          Yes          |
+| Microsoft.Advertising |        Microsoft.Advertising.Xaml        |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.2    |  x   |  x   |      |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.3    |  x   |  x   |      |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.6    |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.1.7    |      |  x   |  x   |          Yes          |
+|                       |    Microsoft.NET.Native.Framework.2.0    |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.1     |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.3     |  x   |      |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.4     |  x   |  x   |      |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.6     |  x   |  x   |  x   |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.1.7     |  x   |  x   |  x   |          Yes          |
+|                       |     Microsoft.NET.Native.Runtime.2.0     |  x   |  x   |      |          Yes          |
+|                       |   Microsoft.Services.Store.Engagement    |  x   |  x   |      |          Yes          |
+|                       |         Microsoft.VCLibs.120.00          |  x   |  x   |      |          Yes          |
+|                       |         Microsoft.VCLibs.140.00          |  x   |  x   |  x   |          Yes          |
+|                       |    Microsoft.VCLibs.120.00.Universal     |  x   |      |      |          Yes          |
+|                       |    Microsoft.VCLibs.140.00.UWPDesktop    |      |  x   |      |          Yes          |
+
 ---

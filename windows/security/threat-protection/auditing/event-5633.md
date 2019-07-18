@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5633(S, F): A request was made to authenticate to a wired network.
@@ -61,7 +64,6 @@ It typically generates when network adapter connects to new wired network.
  <Data Name="ErrorCode">0x0</Data> 
  </EventData>
 </Event>
-
 ```
 
 ***Required Server Roles:*** None.

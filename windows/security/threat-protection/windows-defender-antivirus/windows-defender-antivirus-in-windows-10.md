@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
-# Windows Defender Antivirus in Windows 10 and Windows Server 2016
+# Windows Defender Antivirus
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
 
@@ -40,23 +42,7 @@ You can configure and manage Windows Defender Antivirus with:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
-## What's new in Windows 10, version 1803
-
-- The [block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
-- The [Virus & threat protection area in the Windows Security app](windows-defender-security-center-antivirus.md) now includes a section for ransomware protection. It includes controlled folder access settings and ransomware recovery settings.
-
-
-## What's new in Windows 10, version 1703
-
-New features for Windows Defender Antivirus in Windows 10, version 1703 include:
-- [Updates to how the block at first sight feature can be configured](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [The ability to specify the level of cloud-protection](specify-cloud-protection-level-windows-defender-antivirus.md)
-- [Windows Defender Antivirus protection in the Windows Security app](windows-defender-security-center-antivirus.md)
-
-We've expanded this documentation library to cover end-to-end deployment, management, and configuration for Windows Defender Antivirus, and we've added some new guides that can help with evaluating and deploying Windows Defender AV in certain scenarios:
-- [Evaluation guide for Windows Defender Antivirus](evaluate-windows-defender-antivirus.md)
-- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure environment](deployment-vdi-windows-defender-antivirus.md)
-
+Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
 
 <a id="sysreq"></a>
 ## Minimum system requirements

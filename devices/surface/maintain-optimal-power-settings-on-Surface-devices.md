@@ -1,16 +1,17 @@
 ---
-title: Maintain optimal power settings 
+title: Best practice power settings for Surface devices
 description: This topic provides best practice recommendations for maintaining optimal power settings and explains how Surface streamlines the power management experience. 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: coveminer
-ms.author: v-jokai
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 01/17/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
-# Maintain optimal power settings on Surface devices
+# Best practice power settings for Surface devices
 
 Surface devices are designed to take advantage of the latest advances in
 mobile device energy consumption to deliver a streamlined experience
@@ -20,9 +21,20 @@ components, momentarily waking up system components to handle background
 tasks -- such as an incoming email or network traffic -- before returning to a
 low power idle state (S0ix).
 
+## Summary of recommendations for IT administrators
+
+To ensure Surface devices across your organization fully benefit from Surface power optimization features:
+
+- Exclude Surface devices from any existing power management policy settings and let the Surface default policy control the power policy and behavior of the device.
+- If you must manage the power profile of devices across your network (such as in highly managed organizations), use the powercfg command tool to export the power profile from the factory image of the Surface device and then import it into the provisioning package for your Surface devices. For more information, refer to [Configure power settings](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
+- Always use the newest available version of the drivers and firmware for your devices and for the version of Windows 10 they're running. For more information, refer to [Deploying the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+- Avoid creating custom power profiles or adjusting advanced power settings not visible in the default UI  (**System** > **Power & sleep**). For more information, refer to User best practices for extended battery life in this document.
+
+## Background
+
 The way Surface implements power management differs significantly from
 the earlier OS standard that gradually reduces and turns off power via a
-series of sleep states (S1, S2, S3).
+series of sleep states; for example, cycling through S1, S2, S3, and so on.
 
 Instead, Surface is imaged with a custom power profile that replaces
 legacy sleep and energy consumption functionality with modern standby
@@ -33,6 +45,11 @@ owner, using algorithms to calculate optimal power requirements. It
 works in conjunction with Windows power manager to allocate or throttle
 only the exact amount of power required for hardware components to
 function.
+
+## Utilizing the custom power profile in Surface
+
+If you go into the power options on a  surface device, you'll see that there's a single power plan available. This is the custom power profile. And if you go to the advanced power settings, you’ll see a much smaller subset of power options compared to a generic PC running Windows 10. Unlike generic devices, Surface has firmware and custom components to manage these power options.
+
 
 ## Modern Standby
 
@@ -76,6 +93,7 @@ experience by delivering a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
 
 ### Simplified power settings user interface
+
 Surface provides a simplified UI in accord with best practice power
 setting recommendations. In general, it's recommended to only adjust settings visible in the default user interface and avoid configuring advanced power settings or Group Policy settings. Using the default screen and sleep timeouts while avoiding maximum
 brightness levels are the most effective ways for users to maintain
@@ -101,7 +119,7 @@ Power slider enables four states as described in the following table:
 
 | Slider mode| Description |
 |---|---|
-| Battery saver| Helps conserve power and prolong battery life when the system is disconnected from a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).|
+| Battery saver| Helps conserve power and prolong battery life when the system is disconnected from a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver).|
 | Recommended | Delivers longer battery life than the default settings in earlier versions of Windows. |
 | Better Performance | Slightly favors performance over battery life, functioning as the default slider mode. |
 | Best Performance | Favors performance over power for workloads requiring maximum performance and responsiveness, regardless of battery power consumption.|
@@ -143,13 +161,14 @@ To learn more, see:
 
 # Learn more 
 
--   [Modern
+- [Modern
     standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
 <!-- -->
 
--   [Customize the Windows performance power
+- [Customize the Windows performance power
     slider](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
--   [Battery
+- [Battery
     saver](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
+- [Deploying the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)

@@ -2,11 +2,13 @@
 title: Hybrid deployment (Surface Hub)
 description: A hybrid deployment requires special processing to set up a device account for your Microsoft Surface Hub.
 ms.assetid: 7BFBB7BE-F587-422E-9CE4-C9DDF829E4F1
+ms.reviewer: 
+manager: dansimp
 keywords: hybrid deployment, device account for Surface Hub, Exchange hosted on-prem, Exchange hosted online
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 08/30/2018
 ms.localizationpriority: medium
@@ -182,20 +184,20 @@ The following table lists the Office 365 plans and Skype for Business options.
 
     Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
     
-    -   Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
+   - Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
     
-    -   Click on **Users and Groups** and then **Add users, reset passwords, and more**.
+   - Click on **Users and Groups** and then **Add users, reset passwords, and more**.
     
-    -   Click the Surface Hub account, and then click the pen icon to edit the account information.
+   - Click the Surface Hub account, and then click the pen icon to edit the account information.
     
-    -   Click **Licenses**.
+   - Click **Licenses**.
     
-    -   In **Assign licenses**, select Skype for Business (Plan 1) or Skype for Business (Plan 2), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 2 license if you want to use Enterprise Voice on your Surface Hub.
+   - In **Assign licenses**, select Skype for Business (Plan 1) or Skype for Business (Plan 2), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 2 license if you want to use Enterprise Voice on your Surface Hub.
     
-    -   Click **Save**.
+   - Click **Save**.
 
-    >[!NOTE]
-    >You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+     >[!NOTE]
+     >You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc.) to sign in to this account.
 

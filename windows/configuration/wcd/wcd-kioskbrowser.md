@@ -4,11 +4,13 @@ description: This section describes the KioskBrowser settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # KioskBrowser (Windows Configuration Designer reference)
@@ -33,12 +35,12 @@ Enable Home Button | Show a Home button in Kiosk Browser. Home will return the b
 Enable Navigation Buttons | Show forward and back buttons in Kiosk Browser.
 Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction.
 
->[!IMPORTANT]
->To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
->
+> [!IMPORTANT]
+> To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
+> 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
->2.	Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
->3.	Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
->4.	Save the XML file.
->5.	Open the project again in Windows Configuration Designer.
->6.	Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
+> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 4. Save the XML file.
+> 5. Open the project again in Windows Configuration Designer.
+> 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.

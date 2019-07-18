@@ -1,11 +1,14 @@
 ---
 title: Upgrade Readiness deployment script (Windows 10)
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Deployment script for Upgrade Readiness.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -144,37 +147,41 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 59 - CleanupOneSettings failed to delete LastPersistedEventTimeOrFirstBoot property at registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\Diagtrack** |The CleanupOneSettings function clears some of the cached values needed by the Appraiser which is the data collector on the monitored device. This helps in the download of the most recent for accurate running of the data collector. Verify that the account has the correct permissions to change or add registry keys. |
 | 60 - CleanupOneSettings failed to delete registry key: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\ Diagnostics\Diagtrack\SettingsRequests** | Verify that the account has the correct permissions to change or add registry keys. |
 | 61 - CleanupOneSettings failed with an exception | CleanupOneSettings failed with an unexpected exception. |
-| 63 - Diagnostic data is disabled for the device | If AllowTelemetry == 0, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. |
+| 62 - AllowTelemetry property value at registry key path **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection** is not of type REG_DWORD. It should be of type REG_DWORD. | Ensure that the **AllowTelemetry** property at path **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection** is a REG_DWORD. |
+| 63 - Diagnostic data is disabled for the device | If AllowTelemetry equals **0**, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. |
+| 64 - AllowTelemetry property value at registry key path **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is not of type REG_DWORD. It should be of type REG_DWORD. | Ensure that the **AllowTelemetry** property at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is a REG_DWORD. |
+| 65 - Diagnostic data is disabled for the device | If AllowTelemetry equals **0**, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**. |
+| 66 - All recent data uploads for the Universal Telemetry Client failed. | Review the UtcConnectionReport in WMI in the namespace **root\cimv2\mdm\dmmap** under the **MDM_Win32CompatibilityAppraiser_UniversalTelemetryClient01** class. Only SYSTEM has access to this class. Use [PSExec](https://docs.microsoft.com/sysinternals/downloads/psexec) to execute your WMI utility as SYSTEM.  |
+| 67 - CheckUtcCsp failed with an exception | There was an error reading the WIM/CIM class **MDM_Win32CompatibilityAppraiser_UniversalTelemetryClient01** in the namespace **root\cimv2\mdm\dmmap**. Review system for WMI errors. |
 
 
 
 
 
 
-
->[!NOTE]
->**Additional steps to follow if you receive exit code 33**
-
->Check the exit code for any of these messages:
->
->- CompatTelRunner.exe exited with last error code: 0x800703F1 
->- CompatTelRunner.exe exited with last error code: 0x80070005 
->- CompatTelRunner.exe exited with last error code: 0x80080005
+> [!NOTE]
+> **Additional steps to follow if you receive exit code 33**
+> 
+> Check the exit code for any of these messages:
+> 
+> - CompatTelRunner.exe exited with last error code: 0x800703F1 
+> - CompatTelRunner.exe exited with last error code: 0x80070005 
+> - CompatTelRunner.exe exited with last error code: 0x80080005
 > 
->
->If the exit code includes any of those messages, then run these commands from an elevated command prompt:
->
->1. Net stop diagtrack
->2. Net stop pcasvc
->3. Net stop dps
->4. Del %windir%\appcompat\programs\amcache.hve
->5. reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v AmiHivePermissionsCorrect /f
->6. reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v LogFlags /t REG_DWORD /d 4 /f
->7. Net start diagtrack
->8. Net start pcasvc
->9. Net start dps
->
->Then run the Enterprise Config script (RunConfig.bat) again. 
->
->If the script still fails, then send mail to **uasupport@microsoft.com** including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
+> 
+> If the exit code includes any of those messages, then run these commands from an elevated command prompt:
+> 
+> 1. Net stop diagtrack
+> 2. Net stop pcasvc
+> 3. Net stop dps
+> 4. Del %windir%\appcompat\programs\amcache.hve
+> 5. reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v AmiHivePermissionsCorrect /f
+> 6. reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v LogFlags /t REG_DWORD /d 4 /f
+> 7. Net start diagtrack
+> 8. Net start pcasvc
+> 9. Net start dps
+> 
+> Then run the Enterprise Config script (RunConfig.bat) again. 
+> 
+> If the script still fails, then send mail to <strong>uasupport@microsoft.com</strong> including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **\<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
 

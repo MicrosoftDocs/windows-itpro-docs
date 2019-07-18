@@ -1,8 +1,11 @@
 ---
 title: How to Manage Applications in the Client Management Console
 description: How to Manage Applications in the Client Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 15cb5133-539b-499d-adca-ed02da20194a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage Windows Defender Antivirus updates and scans for endpoints that are out of date
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
@@ -36,8 +38,8 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 2.  Go to the **Definition updates** section and configure the following settings:
 
-    1.	Set **Force a definition update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
-    2.	For the  **If Configuration Manager is used as a source for definition updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
+    1. Set **Force a definition update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
+    2. For the  **If Configuration Manager is used as a source for definition updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
 
 3. Click **OK**.
 

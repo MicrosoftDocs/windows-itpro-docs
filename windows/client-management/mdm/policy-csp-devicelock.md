@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - DeviceLock
 description: Policy CSP - DeviceLock
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/08/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - DeviceLock
@@ -117,7 +119,7 @@ ms.date: 08/08/2018
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
- 
+ 
 Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
 > [!NOTE]
@@ -174,7 +176,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
- 
+ 
 Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 > [!NOTE]
@@ -357,7 +359,7 @@ Specifies whether device lock is enabled.
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
- 
+ 
 
 
 > [!IMPORTANT]
@@ -881,7 +883,7 @@ The default value is 1. The following list shows the supported values and actual
 <tr class="odd">
 <td style="vertical-align:top"><p>Desktop Microsoft Accounts</p></td>
 <td style="vertical-align:top"><p>1,2</p></td>
-<td style="vertical-align:top"><p2</p></td>
+<td style="vertical-align:top">&lt;p2</p></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>Desktop Domain Accounts</p></td>
@@ -1075,9 +1077,9 @@ If you enable this setting, users will no longer be able to enable or disable lo
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1137,9 +1139,9 @@ If you enable this setting, users will no longer be able to modify slide show se
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
+> 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
+> 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
@@ -1192,7 +1194,7 @@ ADMX Info:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
- 
+ 
 Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 Minimum supported value is 10.
@@ -1205,14 +1207,43 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLens-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololenbusinessspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+<!--EndHoloLensBusiness-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.

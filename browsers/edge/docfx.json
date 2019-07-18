@@ -1,38 +1,47 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/*.md","**/*.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**"],
-          "exclude": ["**/obj/**"]
-        }
+      {
+        "files": [
+            "**/images/**",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.gif"
+          ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
     ],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
-        "ROBOTS": "INDEX, FOLLOW",
-		"ms.technology": "microsoft-edge",
-		"ms.topic": "article",
-		"feedback_system": "GitHub",
-        "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-        "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.microsoft-edge",
-                          "folder_relative_path_in_docset": "./"
-			}
-		}
+      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "ROBOTS": "INDEX, FOLLOW",
+      "ms.technology": "microsoft-edge",
+      "ms.topic": "article",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.microsoft-edge",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
     "dest": "browsers/edge",
-    "markdownEngineName": "dfm"
+    "markdownEngineName": "markdig"
   }
 }

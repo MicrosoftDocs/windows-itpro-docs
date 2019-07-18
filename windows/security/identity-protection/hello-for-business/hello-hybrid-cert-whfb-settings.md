@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure Windows Hello for Business
 
@@ -23,7 +24,7 @@ ms.date: 08/19/2018
 -   Certificate trust
 
  
-You're environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
+Your environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment.  
 
@@ -36,7 +37,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
+> [Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
 
 <br><br>
 
@@ -44,7 +45,7 @@ For the most efficient deployment, configure these technologies in order beginni
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. Configure Windows Hello for Business settings (*You are here*)

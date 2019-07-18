@@ -2,6 +2,9 @@
 title: Audit Other System Events (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Other System Events, which determines whether the operating system audits various system events.
 ms.assetid: 2401e4cc-d94e-41ec-82a7-e10914295f8b
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

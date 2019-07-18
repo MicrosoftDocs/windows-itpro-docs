@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 1.0 Administrator Roles
 description: Planning for MBAM 1.0 Administrator Roles
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 95be0eb4-25e9-43ca-a8e7-27373d35544d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -37,16 +40,16 @@ Administrators in this role have increased access to the Helpdesk features from 
 **Important**  
 To view the reports, an administrative user must be a member of the **MBAM Report Users** security group on the Administration and Monitoring Server, Compliance and Audit Database, and on the server that hosts the Compliance and Reports feature. As a best practice, create a security group in Active Directory with rights on the local **MBAM Report Users** security group on both the Administration and Monitoring Server and on the server that hosts the Compliance and Reports.
 
- 
+ 
 
 ## Related topics
 
 
 [Preparing your Environment for MBAM 1.0](preparing-your-environment-for-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

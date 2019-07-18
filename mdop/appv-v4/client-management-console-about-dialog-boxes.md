@@ -1,8 +1,11 @@
 ---
 title: Client Management Console About Dialog Boxes
 description: Client Management Console About Dialog Boxes
-author: jamiejdt
+author: dansimp
 ms.assetid: eaf4a05e-513d-4eac-a549-76e63a70893d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configuring Hybrid key trust Windows Hello for Business: Active Directory
 
@@ -36,21 +37,21 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 ### Section Review
 
 > [!div class="checklist"]
 > * Create the Windows Hello for Business Users group
-
->[!div class="step-by-step"]
-[< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
-[Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
+> [Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
 
 <br><br>
 
@@ -58,7 +59,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)

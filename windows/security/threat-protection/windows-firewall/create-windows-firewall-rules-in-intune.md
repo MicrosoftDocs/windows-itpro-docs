@@ -2,12 +2,14 @@
 title: Create Windows Firewall rules in Intune (Windows 10)
 description: Explains how to create Windows Firewall rules in Intune
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: tewchen
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,9 +27,7 @@ ms.date: 04/11/2019
 
 To get started, open Device Configuration in Intune, then create a new profile. 
 Choose Windows 10 as the platform, and Endpoint Protection as the profile type. 
-Select Windows Defender Firewall. 
-Add a firewall rule to this new Endpoint Protection profile using the Add button at the bottom of the blade. 
-
+Select Windows Defender Firewall.
 ![Windows Defender Firewall in Intune](images/windows-firewall-intune.png)
 
 >[!IMPORTANT]

@@ -1,8 +1,11 @@
 ---
 title: Define the Project Scope
 description: Define the Project Scope
-author: jamiejdt
+author: dansimp
 ms.assetid: 84637d2a-2e30-417d-b150-dc81f414b3a5
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

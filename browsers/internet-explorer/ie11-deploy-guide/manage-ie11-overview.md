@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the topics in this section to learn about how to auto detect your settings, auto configure your configuration settings, and auto configure your proxy configuration settings for Internet Explorer.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: eb3cce62-fc7b-41e3-97b6-2916b85bcf55
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -31,9 +34,9 @@ Use the topics in this section to learn about how to auto detect your settings, 
 |[Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) |Guidance about how to add, update and lock your auto configuration settings. |
 |[Auto proxy configuration settings for Internet Explorer 11](auto-proxy-configuration-settings-for-ie11.md) |Guidance about how to add, update, and lock your auto-proxy settings. | 
 
- 
+ 
 
- 
+ 
 
 
 

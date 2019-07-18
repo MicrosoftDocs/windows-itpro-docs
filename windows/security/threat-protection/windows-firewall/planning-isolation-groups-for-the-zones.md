@@ -2,12 +2,14 @@
 title: Planning Isolation Groups for the Zones (Windows 10)
 description: Planning Isolation Groups for the Zones
 ms.assetid: be4b662d-c1ce-441e-b462-b140469a5695
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,5 +43,5 @@ Multiple GPOs might be delivered to each group. Which one actually becomes appli
 
 If multiple GPOs are assigned to a group, and similar rules are applied, the rule that most specifically matches the network traffic is the one that is used by the device. For example, if one IPsec rule says to request authentication for all IP traffic, and a second rule from a different GPO says to require authentication for IP traffic to and from a specific IP address, then the second rule takes precedence because it is more specific.
 
-**Next: **[Planning Network Access Groups](planning-network-access-groups.md)
+**Next:** [Planning Network Access Groups](planning-network-access-groups.md)
 

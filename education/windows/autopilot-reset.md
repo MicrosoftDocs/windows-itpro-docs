@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: celested
+author: levinec
+ms.author: ellevin
 ms.date: 06/27/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Reset devices with Autopilot Reset 
@@ -49,12 +51,12 @@ You can set the policy using one of these methods:
 - Set up School PCs app
 
     Autopilot Reset in the Set up School PCs app is available in the latest release of the app. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app. You can check the version several ways:
-    - Reach out to your device manufacturer.
-    - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
-    - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
+  - Reach out to your device manufacturer.
+  - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
+  - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
 
     To use the Autopilot Reset setting in the Set up School PCs app:
-    * When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
+  - When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
 
     ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)
     
@@ -68,14 +70,14 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
     ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
 
     This will open up a custom login screen for Autopilot Reset. The screen serves two purposes:
-    1. Confirm/verify that the end user has the right to trigger Autopilot Reset
-    2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
+   1. Confirm/verify that the end user has the right to trigger Autopilot Reset
+   2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
 
-    ![Custom login screen for Autopilot Reset](images/autopilot-reset-customlogin.png)
+      ![Custom login screen for Autopilot Reset](images/autopilot-reset-customlogin.png)
 
 2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger Autopilot Reset.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
 
     Once Autopilot Reset is triggered, the reset process starts. 

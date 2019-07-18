@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.0 Client Deployment
 description: Planning for MBAM 2.0 Client Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 3a92cf29-092f-4cad-bdfa-d5f6aafe554b
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,7 +26,7 @@ If you deploy MBAM with the Configuration Manager topology, you can use Configur
 **Note**  
 Windows To Go is not supported for integrated Configuration Manager installations of MBAM if you are using Configuration Manager 2007.
 
- 
+ 
 
 ## Deploying the MBAM Client to Enable BitLocker Encryption After Computer Distribution to End Users
 
@@ -35,7 +38,7 @@ When you deploy the MBAM Client after you distribute computers to client compute
 **Note**  
 In this approach, users who have computers with a TPM chip are prompted to activate and initialize the TPM chip if the chip has not been previously activated.
 
- 
+ 
 
 ## Using the MBAM Client to Enable BitLocker Encryption Before Computer Distribution to End Users
 
@@ -47,7 +50,7 @@ If your organization wants to use the TPM chip to encrypt computers, the adminis
 **Note**  
 The TPM protector option requires the administrator to accept the BIOS prompt to activate and initialize the TPM before the computer is delivered to the user.
 
- 
+ 
 
 ## Related topics
 
@@ -56,9 +59,9 @@ The TPM protector option requires the administrator to accept the BIOS prompt to
 
 [Deploying the MBAM 2.0 Client](deploying-the-mbam-20-client-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

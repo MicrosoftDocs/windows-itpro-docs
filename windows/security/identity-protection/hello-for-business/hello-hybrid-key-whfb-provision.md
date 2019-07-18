@@ -14,11 +14,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Hybrid Windows Hello for Business Provisioning
 
 **Applies to**
--   Windows 10, version 1703 or later
+-   Windowsï¿½10, version 1703 or later
 -   Hybrid deployment
 -   Key trust
 

@@ -1,8 +1,11 @@
 ---
 title: AGPM 4.0 SP3
 description: AGPM 4.0 SP3
-author: jamiejdt
+author: mjcaparas
 ms.assetid: cd80eea9-601f-4e45-b89e-c3904addee37
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

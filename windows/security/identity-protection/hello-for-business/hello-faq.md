@@ -14,8 +14,9 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
-# Windows Hello for Business Frequently Ask Questions
+# Windows Hello for Business Frequently Asked Questions
 
 **Applies to**
 -   Windows 10
@@ -27,7 +28,7 @@ Windows Hello for Business is the modern, two-factor credential for Windows 10. 
 Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
 ## Can I deploy Windows Hello for Business using System Center Configuration Manager?
-Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no long be supported after November 2018.
+Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no longer be supported after November 2018.
 
 ## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
 The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
@@ -41,7 +42,7 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use convenience PIN with Azure AD?
-No. If you want to use PIN or biometrics with Azure Active Directory identities on Azure AD registered, Azure AD joined, or hybrid Azure AD joined devices, then you must deploy Windows Hello for Business.
+It is currently possible to set a convience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
 
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
@@ -113,15 +114,19 @@ Windows 10 does not allow the local administrator to enroll biometric gestures(f
 No. If your organization is federated or using on-line services, such as Azure AD Connect, Office 365, or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
 ## Does Windows Hello for Business prevent the use of simple PINs?
-Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
+Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next. The algorithm counts the number of steps required to reach the next digit, overflowing at ten ('zero').
 So, for example:
-* 1111 has a constant delta of 0, so it is not allowed
-* 1234 has a constant delta of 1, so it is not allowed
-* 1357 has a constant delta of 2, so it is not allowed
-* 9630 has a constant delta of -3, so it is not allowed
-* 1231 does not have a constant delta, so it is okay
-* 1593 does not have a constant delta, so it is okay
+* The PIN 1111 has a constant delta of (0,0,0), so it is not allowed
+* The PIN 1234 has a constant delta of (1,1,1), so it is not allowed
+* The PIN 1357 has a constant delta of (2,2,2), so it is not allowed
+* The PIN 9630 has a constant delta of (7,7,7), so it is not allowed
+* The PIN 1593 has a constant delta of (4,4,4), so it is not allowed
+* The PIN 7036 has a constant delta of (3,3,3), so it is not allowed
+* The PIN 1231 does not have a constant delta (1,1,8), so it is allowed
+* The PIN 1872 does not have a constant delta (7,9,5), so it is allowed
 
+This prevents repeating numbers, sequential numbers, and simple patterns.
+It always results in a list of 100 disallowed PINs (independent of the PIN length).
 This algorithm does not apply to alphanumeric PINs.
 
 ## How does PIN caching work with Windows Hello for Business?

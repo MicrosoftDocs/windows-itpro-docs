@@ -2,11 +2,13 @@
 title: CellularSettings CSP
 description: CellularSettings CSP
 ms.assetid: ce8b6f16-37ca-4aaf-98b0-306d12e326df
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 
@@ -51,16 +53,16 @@ The following image shows the CellularSettings CSP in tree format as used by Ope
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 
