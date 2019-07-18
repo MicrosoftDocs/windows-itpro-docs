@@ -7,6 +7,7 @@ ms.sitesec: library
 author: robmazz
 ms.author: robmazz
 audience: Admin
+ms.manager: laurawi
 ms.topic: article
 ms.date: 06/20/2019
 ms.localizationpriority: Normal
@@ -20,6 +21,7 @@ This topic summarizes new and updated content in the Surface Hub 2S documentatio
 
 Changes | Description
 |:--- |:--- |
+| Surface Hub 2S tech specs | Updated power consumption data |
 | Surface Hub 2S Adoption Kit | New |
 
 
