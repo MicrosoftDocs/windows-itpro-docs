@@ -114,15 +114,19 @@ Windows 10 does not allow the local administrator to enroll biometric gestures(f
 No. If your organization is federated or using on-line services, such as Azure AD Connect, Office 365, or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
 ## Does Windows Hello for Business prevent the use of simple PINs?
-Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
+Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next. The algorithm counts the number of steps required to reach the next digit, overflowing at ten ('zero').
 So, for example:
-* 1111 has a constant delta of 0, so it is not allowed
-* 1234 has a constant delta of 1, so it is not allowed
-* 1357 has a constant delta of 2, so it is not allowed
-* 9630 has a constant delta of -3, so it is not allowed
-* 1231 does not have a constant delta, so it is okay
-* 1593 does not have a constant delta, so it is okay
+* The PIN 1111 has a constant delta of (0,0,0), so it is not allowed
+* The PIN 1234 has a constant delta of (1,1,1), so it is not allowed
+* The PIN 1357 has a constant delta of (2,2,2), so it is not allowed
+* The PIN 9630 has a constant delta of (7,7,7), so it is not allowed
+* The PIN 1593 has a constant delta of (4,4,4), so it is not allowed
+* The PIN 7036 has a constant delta of (3,3,3), so it is not allowed
+* The PIN 1231 does not have a constant delta (1,1,8), so it is allowed
+* The PIN 1872 does not have a constant delta (7,9,5), so it is allowed
 
+This prevents repeating numbers, sequential numbers, and simple patterns.
+It always results in a list of 100 disallowed PINs (independent of the PIN length).
 This algorithm does not apply to alphanumeric PINs.
 
 ## How does PIN caching work with Windows Hello for Business?
