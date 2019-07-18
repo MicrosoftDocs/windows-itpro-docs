@@ -65,7 +65,7 @@ From the overview, create a configuration profile specifically for the deploymen
 
 3. After creating the profile, assign it to all your machines. You can review profiles and their deployment status anytime by accessing **Device configuration > Profiles** on Intune.
 
-   ![Profile assignment screen screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
+   ![Profile assignment screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
    *Assigning the new agent profile to all machines*
 
 >[!TIP]
