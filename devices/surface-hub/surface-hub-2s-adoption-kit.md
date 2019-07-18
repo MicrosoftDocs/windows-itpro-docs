@@ -27,6 +27,8 @@ Microsoft has developed downloadable materials that you can make available for y
 
 [Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
+[Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
+
 ## End user guides
 
 - [Guide to Navigation on Surface Hub](downloads/Guide-SurfaceHub2S-Navigation.pptx)
