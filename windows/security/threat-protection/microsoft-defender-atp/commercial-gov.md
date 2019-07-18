@@ -35,7 +35,7 @@ The following OS versions are supported:
 - Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 
 >[!NOTE]
->If patches are not implemented after the machine onboarding, some Microsoft Defender ATP telemetry might be sent to the Microsoft Defender ATP Commercial Cloud.
+>A patch must be deployed before machine onboarding in order to configure Microsoft Defender ATP to the correct environment.
 
 The following OS versions are not supported:
 - Windows Server 2008 R2 SP1
