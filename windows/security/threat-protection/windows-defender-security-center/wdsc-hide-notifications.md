@@ -58,7 +58,6 @@ This can only be done in Group Policy.
 
 1. Download the latest [Administrative Templates (.admx) for Windows 10, v1809](https://www.microsoft.com/download/details.aspx?id=57576).
 
-
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
