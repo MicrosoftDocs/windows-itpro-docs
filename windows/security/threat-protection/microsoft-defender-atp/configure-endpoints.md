@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 machines on Microsoft Defender ATP
+title: Onboarding tools and methods for Windows 10 machines
 description: Onboard Windows 10 machines so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: Onboard Windows 10 machines, group policy, system center configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
@@ -15,10 +15,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 07/12/2018
 ---
 
-# Onboard Windows 10 machines
+# Onboarding tools and methods for Windows 10 machines
 
 **Applies to:**
 
