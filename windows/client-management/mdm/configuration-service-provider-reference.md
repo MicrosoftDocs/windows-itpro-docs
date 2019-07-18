@@ -2714,32 +2714,34 @@ You can download the DDF files for various CSPs from the links below:
 
 The following list shows the CSPs supported in HoloLens devices.
 
-| Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite |
-|--------|--------|------------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
-| [Accounts CSP](accounts-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)
-| [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
-| [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
-| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (runtime provisioning via provisioning packages only; no MDM support)|
-| [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
-| [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-[PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
-| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
-| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [VPN2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
+|--------|--------|------------|--------------|
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png)
+| [Accounts CSP](accounts-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [ApplicationControl CSP](applicationcontrol-csp.md) | | |  ![check mark](images/checkmark.png) |
+| [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
+| [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)| ![check mark](images/checkmark.png) |
+| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (runtime provisioning via provisioning packages only; no MDM support)| ![check mark](images/checkmark.png) |
+| [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  | ![check mark](images/checkmark.png) |
+| [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [NetworkProxy CSP](networkproxy-csp.md) |  |  | ![check mark](images/checkmark.png) |
+| [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+[PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
+| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
+| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [VPN2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
 
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
