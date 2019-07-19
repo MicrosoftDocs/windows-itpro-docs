@@ -228,8 +228,6 @@ If you set this policy to true, Windows requires all users on managed devices to
 
 Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 
-
-
 Supported operations are Add, Get, Delete, and Replace.
 
 *Not supported on Windows Holographic and Windows Holographic for Business.*
@@ -280,8 +278,8 @@ Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
 Value type is integer. 
 
 Valid values:  
-- 0 (default) - disabled
-- 1 - enabled
+- 0 (default) - disabled.
+- 1 - enabled.
 
 ## Examples
 
