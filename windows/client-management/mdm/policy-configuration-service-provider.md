@@ -5182,7 +5182,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 The following list shows the Policies supported in HoloLens devices:
 
 | Policy        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
-|--------|--------|------------|--------------|
+| ----- | -------- | -------- | -------- |
 | [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)      | ![check mark](images/checkmark.png)
 | [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
