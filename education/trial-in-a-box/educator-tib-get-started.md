@@ -78,7 +78,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 4. Select the **Immersive Reader** button.
 
-   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
+   ![Word's Immersive Reader](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
 
@@ -86,7 +86,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
    | Text to Speech | Text Preferences | Grammar Options | Line Focus |
    | :------------: | :--------------: | :-------------: | :--------: |
-   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
+   | ![Word Text to Speech](images/wordonline_tts.png) | ![Word Text Preferences](images/wordonline_text_preferences.png) | ![Word Grammar Options](images/wordonline_grammar_options.png) | ![Word Line Focus](images/wordonline_line_focus.png) |
 
 </br>
 </br>
