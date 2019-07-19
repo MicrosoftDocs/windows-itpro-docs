@@ -22,11 +22,11 @@ ms.date: 5/3/2019
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
--	Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
--	Connecting to email servers to send and receive email.
--	Connecting to the web for every day web browsing.
--	Connecting to the cloud to store and access backups.
--	Using your location to show a weather forecast.
+- Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
+- Connecting to email servers to send and receive email.
+- Connecting to the web for every day web browsing.
+- Connecting to the cloud to store and access backups.
+- Using your location to show a weather forecast.
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 

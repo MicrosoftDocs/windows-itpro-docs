@@ -806,11 +806,11 @@ If the policy is not specified, the behavior will be that no pages are affected.
 
 The format of the PageVisibilityList value is as follows:
 
--   The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
--   There are two variants: one that shows only the given pages and one which hides the given pages.
--   The first variant starts with the string "showonly:" and the second with the string "hide:".
--	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
--   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
+- The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
+- There are two variants: one that shows only the given pages and one which hides the given pages.
+- The first variant starts with the string "showonly:" and the second with the string "hide:".
+- Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
+- Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
 
 The default value for this setting is an empty string, which is interpreted as show everything.
 

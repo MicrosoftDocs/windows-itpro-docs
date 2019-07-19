@@ -19,9 +19,9 @@ Microsoft is dedicated to making its products and services accessible and usable
 This topic helps IT administrators learn about built-in accessibility features, and includes a few recommendations for how to support people in your organization who use these features.
 
 ## General recommendations
--	**Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10. 
--	**Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings. 
--	**Encourage choice** – Allow people in your organization to customize their computers based on their needs. That might mean installing an add-on for their browser, or a non-Microsoft assistive technology.
+- **Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10. 
+- **Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings. 
+- **Encourage choice** – Allow people in your organization to customize their computers based on their needs. That might mean installing an add-on for their browser, or a non-Microsoft assistive technology.
 
 ## Vision
 
