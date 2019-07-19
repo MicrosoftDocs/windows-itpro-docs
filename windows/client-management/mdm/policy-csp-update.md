@@ -1053,7 +1053,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
+Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of Semi-Annual Channel (Targeted) and Semi-Annual Channel have been combined into one Semi-Annual Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1071,8 +1071,8 @@ The following list shows the supported values:
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
--  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
--  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903)
 
 <!--/SupportedValues-->
 <!--/Policy-->
