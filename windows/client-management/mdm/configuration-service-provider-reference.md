@@ -2712,7 +2712,7 @@ You can download the DDF files for various CSPs from the links below:
 ## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
 
 
-The following list shows the CSPs supported in HoloLens devices.
+The following list shows the CSPs supported in HoloLens devices:
 
 | Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
 |--------|--------|------------|--------------|
