@@ -443,8 +443,8 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    * ReAgent.adml
    * ReAgent.dll.mui
 
-   >![Note]  
-   >If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
+   > [!NOTE]
+   > If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
    
 3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
  
