@@ -89,7 +89,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
 
-![Image of test machines](images/eval-machines.png)
+![Image of test machines](images/eval-lab-dashboard.png)
 
 ## Simulate attack scenarios
 Use the test machines to run attack simulations by connecting to them. 
@@ -130,6 +130,8 @@ View the machine details page by selecting the machine from the table. You'll be
 
 ### Evaluation report
 The lab reports summarize the results of the simulations conducted on the machines. 
+
+![Image of the evaluation report](images/eval-report.png)
 
 At a glance, you'll quickly be able to see:
 - Incidents that were triggered
