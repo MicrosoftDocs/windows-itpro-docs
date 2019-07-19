@@ -52,6 +52,9 @@ The trust model determines how you want users to authenticate to the on-premises
 * The certificate-trust model is for enterprise that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. 
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
+>[!NOTE]
+>RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this time.
+
 Following are the various deployment guides included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
 - [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
