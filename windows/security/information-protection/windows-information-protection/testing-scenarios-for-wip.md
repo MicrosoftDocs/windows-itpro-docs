@@ -172,6 +172,17 @@ You can try any of the processes included in these scenarios, but you should foc
             </ul>
         </td>
     </tr>
+    <tr>
+        <td>Stop Google Drive to sync WIP protected files and folders.</td>
+        <td>
+            <ul>
+                <li>In silent configuration add Google Drive in Protected Apps and set it to Deny. This way Google Drive will not sync                       WIP protected files and folders.</li>
+                <li>Google Drive details</li>
+                Publisher=O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US
+                File=GOOGLEDRIVESYNC.EXE
+            </ul>
+        </td>
+    </tr>
 </table>
 
 >[!NOTE]
