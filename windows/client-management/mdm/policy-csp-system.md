@@ -1584,7 +1584,6 @@ The following list shows the supported values:
 <!--StartHoloLens2-->
 ## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
 
-- [System/AllowBuildPreview](#system-allowbuildpreview)
 - [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
 - [System/AllowLocation](#system-allowlocation)
 - [System/AllowStorageCard](#system-allowstoragecard)

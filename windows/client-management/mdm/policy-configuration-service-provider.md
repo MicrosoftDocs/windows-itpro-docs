@@ -5224,7 +5224,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Settings/AllowDateTime](#settings-allowdatetime)
 -   [Settings/AllowVPN](#settings-allowvpn)
 -   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
--   [System/AllowBuildPreview](#system-allowbuildpreview)
 -   [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
 -   [System/AllowLocation](#system-allowlocation)
 -   [System/AllowStorageCard](#system-allowstoragecard)
