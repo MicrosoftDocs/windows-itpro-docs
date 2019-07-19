@@ -228,7 +228,7 @@ The following methodology was used to derive the network endpoints:
 |browser.pipe.aria.microsoft.com|HTTP|Used by OfficeHub to get the metadata of Office apps
 |cdn.onenote.net/livetile/*|HTTPS|Used for OneNote Live Tile
 |cds.p9u4n2q3.hwcdn.net|HTTP|Used by the Highwinds Content Delivery Network to perform Windows updates
-|client-office365-tas.msedge.net/*|HTTPS|Office 365 porta and Office Online
+|client-office365-tas.msedge.net/*|HTTPS|Office 365 portal and Office in a browser
 |ctldl.windowsupdate.com*|HTTP|Used to download certificates that are publicly known to be fraudulent
 |displaycatalog.mp.microsoft.com/*|HTTPS|Microsoft Store
 |dmd.metaservices.microsoft.com*|HTTP|Device Authentication
