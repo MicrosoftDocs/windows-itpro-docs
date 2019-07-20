@@ -40,6 +40,16 @@ The following table lists management options for each setting.
 
 For Windows 10, the following MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
+1. **Automatic Root Certificates Update**
+   1. **MDM Policy:** There is intentionally no MDM available for Automatic Root Certificate Update.
+   1. **Description:** This MDM does not exist since it would prevent the operation and management of MDM management of devices.
+
+1. **Cortana and Search**
+   1. **MDM Policy:** [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)
+   1. **Description:** Choose whether to let Cortana install and run on the device. **Set to 0 (zero)**
+1. (fin)
+
+
 > | Setting | MDM Policy | Description |
 > | --- | --- | --- |
 > | 1. Automatic Root Certificates Update | There is intentionally no MDM available for Automatic Root Certificate Update. | This MDM does not exist since it would prevent the operation and management of MDM management of devices.|
