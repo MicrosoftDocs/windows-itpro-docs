@@ -106,7 +106,8 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]
 > You can also enable Windows Defender Credential Guard by setting the registry entries in the [FirstLogonCommands](https://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
-<span id="hardware-readiness-tool" />
+<span id="hardware-readiness-tool"/>
+
 ### Enable Windows Defender Credential Guard by using the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
