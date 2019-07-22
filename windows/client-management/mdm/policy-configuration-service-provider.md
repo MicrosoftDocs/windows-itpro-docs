@@ -5179,6 +5179,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## <a href="" id="hololens"></a>Policies supported by HoloLens 2
 
 The following table shows the Policies supported in HoloLens 2 devices:
+
 | Policy | HoloLens 2 |
 | -------- | -------- |
 | [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection) | ![check mark](images/checkmark.png)
@@ -5251,6 +5252,7 @@ The following table shows the Policies supported in HoloLens 2 devices:
 <!--StartHoloLens1-->
 ## <a href="" id="hololens"></a>Policies supported by HoloLens (1st gen)
 The following table shows the Policies supported in HoloLens (1st gen) devices:
+
 | Policy | HoloLens (1st gen) Development Edition | HoloLens (1st gen) Commercial Suite |
 | -------- | -------- | -------- |
 | [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)      |
