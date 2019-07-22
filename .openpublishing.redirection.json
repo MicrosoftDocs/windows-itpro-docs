@@ -14163,107 +14163,107 @@
 {
 "source_path": "windows/client-management/mdm/design-a-custom-windows-csp.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/iconfigserviceprovider2.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/iconfigserviceprovider2configmanagernotification.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/iconfigserviceprovider2getnode.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnode.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodeadd.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodeclear.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodecopy.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodedeletechild.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodedeleteproperty.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodeexecute.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodegetchildnodenames.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodegetproperty.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodegetpropertyidentifiers.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodegetvalue.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodemove.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodesetproperty.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodesetvalue.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspnodetransactioning.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/icspvalidate.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/client-management/mdm/samples-for-writing-a-custom-configuration-service-provider.md",
 "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/collect-wip-audit-event-logs.md",
