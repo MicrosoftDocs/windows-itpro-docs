@@ -114,8 +114,8 @@ With that in mind, Windows 10 offers 3 servicing channels. The [Windows Insider 
 
 The concept of servicing channels is new, but organizations can use the same management tools they used to manage updates and upgrades in previous versions of Windows. For more information about the servicing tool options for Windows 10 and their capabilities, see [Servicing tools](#servicing-tools).
 
->[!NOTE]
->Servicing channels are not the only way to separate groups of devices when consuming updates. Each channel can contain subsets of devices, which staggers servicing even further. For information about the servicing strategy and ongoing deployment process for Windows 10, including the role of servicing channels, see [Plan servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md). 
+> [!NOTE]
+> Servicing channels are not the only way to separate groups of devices when consuming updates. Each channel can contain subsets of devices, which staggers servicing even further. For information about the servicing strategy and ongoing deployment process for Windows 10, including the role of servicing channels, see [Plan servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md). 
 
 ### Semi-Annual Channel
 
@@ -137,20 +137,20 @@ Organizations are expected to initiate targeted deployment on Semi-Annual Channe
 
 Specialized systems—such as PCs that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Windows 10 Enterprise LTSB devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSB clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
 
->[!NOTE]
->Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
+> [!NOTE]
+> Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 >
 >Long-term Servicing channel is not intended for deployment on most or all the PCs in an organization; it should be used only for special-purpose devices.  As a general guideline, a PC with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
 > [!NOTE]
->Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information about Windows support for the latest processor and chipsets, see  [Windows Processor Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements).
+> Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information about Windows support for the latest processor and chipsets, see  [Windows Processor Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements).
 
 The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in Windows 10 Enterprise LTSB edition, even if you install by using sideloading.
 
->[!NOTE]
->If an organization has devices currently running Windows 10 Enterprise LTSB that it would like to change to the Semi-Annual Channel, it can make the change without losing user data. Because LTSB is its own SKU, however, an upgrade is required from Windows 10 Enterprise LTSB to Windows 10 Enterprise, which supports the Semi-Annual Channel.
+> [!NOTE]
+> If an organization has devices currently running Windows 10 Enterprise LTSB that it would like to change to the Semi-Annual Channel, it can make the change without losing user data. Because LTSB is its own SKU, however, an upgrade is required from Windows 10 Enterprise LTSB to Windows 10 Enterprise, which supports the Semi-Annual Channel.
 
 ### Windows Insider
 
@@ -158,8 +158,8 @@ For many IT pros, gaining visibility into feature updates early—before they’
 
 Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](waas-windows-insider-for-business.md).
 
->[!NOTE]
->Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
+> [!NOTE]
+> Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
 >
 >The Windows Insider Program isn’t intended to replace Semi-Annual Channel deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
 
@@ -185,8 +185,8 @@ With all these options, which an organization chooses depends on the resources, 
 | WSUS | Yes | Yes | BranchCache or Delivery Optimization | Upstream/downstream server scalability |
 | Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache | Distribution points, multiple deployment options |
 
->[!NOTE]
->Due to [naming changes](#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+> [!NOTE]
+> Due to [naming changes](#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
 
 </br>
 
