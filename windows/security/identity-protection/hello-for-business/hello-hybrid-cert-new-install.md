@@ -66,12 +66,12 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 1. Open an elevated Windows PowerShell prompt.
 2. Use the following command to install the Active Directory Certificate Services role.   
     ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManageTools
+    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
     ```PowerShell
-    Install-AdcsCertificateAuthority
+    Install-AdcsCertificationAuthority
     ```   
     
 ### Configure a Production Public Key Infrastructure
