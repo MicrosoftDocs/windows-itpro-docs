@@ -14,6 +14,9 @@ author: dansimp
 ms.date: 05/17/2018
 ---
 
+> [!NOTE]
+> For WDAC enhancements see [Delivering major enhancements in Windows Defender Application Control with the Windows 10 May 2019 Update](https://www.microsoft.com/security/blog/2019/07/01/). 
+
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
 
 **Applies to:**

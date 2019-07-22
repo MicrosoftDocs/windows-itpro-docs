@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -35,8 +35,8 @@ The Windows Hello for Business Authentication certificate template is configured
 
 Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
 
-1.	Open a **Windows PowerShell** prompt.
-2.	Type the following command   
+1. Open a **Windows PowerShell** prompt.
+2. Type the following command   
   
     ```PowerShell
     Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
@@ -58,8 +58,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 3. Right-click **Windows Hello for Business Users** group
 4. Click the **Members** tab and click **Add**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-6.	Click **OK** to return to **Active Directory Users and Computers**.
-7.	Restart the AD FS server.
+6. Click **OK** to return to **Active Directory Users and Computers**.
+7. Restart the AD FS server.
 
 ### Section Review
 > [!div class="checklist"]

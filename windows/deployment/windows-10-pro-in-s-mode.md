@@ -67,9 +67,9 @@ You'll be prompted to save your files before the switch starts. Follow the promp
 
 Starting with Windows 10, version 1809, if you need to switch multiple devices in your environment from Windows 10 Pro in S mode to Windows 10 Pro, you can use Microsoft Intune or any other supported mobile device management software. You can configure devices to switch out of S mode during OOBE or post-OOBE - this gives you flexibility to manage Windows 10 in S mode devices at any point during the device lifecycle.
 
-1.	Start Microsoft Intune.
-2.	Navigate to **Device configuration > Profiles > Windows 10 and later > Edition upgrade and mode switch**.
-3.	Follow the instructions to complete the switch.
+1. Start Microsoft Intune.
+2. Navigate to **Device configuration > Profiles > Windows 10 and later > Edition upgrade and mode switch**.
+3. Follow the instructions to complete the switch.
 
 
 ## Block users from switching

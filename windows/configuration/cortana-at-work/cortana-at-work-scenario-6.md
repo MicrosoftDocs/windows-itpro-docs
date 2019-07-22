@@ -41,7 +41,7 @@ Cortana automatically finds patterns in your email, suggesting reminders based t
 
 5. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
+6. After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
 
     If the reminder has a specific date or time associated with it, like end of day, Cortana notifies you at the appropriate time and puts the reminder into the Action Center. Also from the Home screen, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
 

@@ -420,7 +420,7 @@ Default value is 0 meaning no keyword.
 
 Get provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -440,7 +440,7 @@ Get provider **Keywords**
 
 Set provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

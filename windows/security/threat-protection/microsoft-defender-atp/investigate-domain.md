@@ -39,17 +39,31 @@ You can see information from the following sections in the URL view:
 - URL in organization
 - Most recent observed machines with URL
 
-## URL Worldwide 
-The URL details, contacts, and nameservers sections display various attributes about the URL. 
+## URL worldwide
 
-## Alerts related to this URL
-The **Alerts related to this URL** section provides a list of alerts that are associated with the URL. 
+The **URL Worldwide** section lists the URL, a link to further details at Whois, the number of related open incidents, and the number of active alerts.
 
-## URL in organization
-The **URL in organization** section provides details on the prevalence of the URL in the organization.
+## Incident
 
-## Most recent observed machinew with URL
-The **Most recent observed machinew with URL** section provides a chronological view on the events and associated alerts that were observed on the URL.
+The **Incident** card displays a bar chart of all active alerts in incidents over the past 180 days.
+
+## Prevalence
+
+The **Prevalence** card provides details on the prevalence of the URL within the organization, over a specified period of time.
+
+Although the default time period is the past 30 days, you can customize the range by selecting the downward-pointing arrow in the corner of the card. The shortest range available is for prevalence over the past day, while the longest range is over the past 6 months.
+
+## Alerts
+
+The **Alerts** tab provides a list of alerts that are associated with the URL. The table shown here is a filtered version of the alerts visible on the Alert queue screen, showing only alerts associated with the domain, their severity, status, the associated incident, classification, investigation state, and more.
+
+The Alerts tab can be adjusted to show more or less information, by selecting **Customize columns** from the action menu above the column headers. The number of items displayed can also be adjusted, by selecting **items per page** on the same menu.
+
+## Observed in organization
+
+The **Observed in organization** tab provides a chronological view on the events and associated alerts that were observed on the URL. This tab includes a timeline and a customizable table listing event details, such as the time, machine, and a brief description of what happened. 
+
+You can view events from different periods of time by entering the dates into the text fields above the table headers. You can also customize the time range by selecting different areas of the timeline.
 
 **Investigate a domain:**
 

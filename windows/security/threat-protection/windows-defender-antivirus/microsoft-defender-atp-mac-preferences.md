@@ -20,6 +20,10 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Mac
 
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
 
@@ -333,8 +337,8 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced earlier.
 
->[!WARNING]
->It is important that you enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences might not be recognized by the product.
+>[!CAUTION]
+>You must enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences will not be recognized by the product.
 
 ### Intune deployment
 
@@ -352,8 +356,8 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
->[!WARNING]
->It is important that you enter the correct custom configuration profile name, otherwise these preferences might not be recognized by the product.
+>[!CAUTION]
+>You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
 
 ## Resources
 

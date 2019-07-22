@@ -44,14 +44,14 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 
 To start a collaboration session:
 
-1.	In the Whiteboard app, tap the **Sign in** button.
-2.	Sign in with your organization ID.
-3.	Tap the **Invite** button next to your name at the top of the app.
-4.	Tap **Start session**. Whiteboard will generate a link that you can share.
+1. In the Whiteboard app, tap the **Sign in** button.
+2. Sign in with your organization ID.
+3. Tap the **Invite** button next to your name at the top of the app.
+4. Tap **Start session**. Whiteboard will generate a link that you can share.
 
     ![screenshot of the link dialog box on whiteboard](images/wb-collab-link.png)
     
-5.	Copy and paste this link into a Skype chat with another Surface Hub
+5. Copy and paste this link into a Skype chat with another Surface Hub
 
 When the other Surface Hub receives the link, the recipient can tap on the link, sign in to Whiteboard, and then begin collaborating. You can copy and paste other content, use smart ink features like Ink to Shape, and co-author together.
 

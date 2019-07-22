@@ -534,7 +534,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot"
+            $v += " Go to https://aka.ms/shubtshoot"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
@@ -978,7 +978,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot for help"
+            $v += " Go to https://aka.ms/shubtshoot for help"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
