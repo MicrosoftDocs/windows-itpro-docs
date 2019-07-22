@@ -48,7 +48,7 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   **Read & Execute.**
     -   **List folder contents.**
     -   **Read.**
-    -   You can additionally select the audit of **Full control**, **Modify** and/or **Write** permissions.  With your desired combination.
+    -   Additionally, you can choose **Full control**, **Modify**, and/or **Write** permissions with your selected audit combination.
     
     
 
