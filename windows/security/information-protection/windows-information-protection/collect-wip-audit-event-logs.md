@@ -160,9 +160,9 @@ Use Windows Event Forwarding to collect and aggregate your WIP audit events. You
 >Windows 10 Mobile requires you to use the [Reporting CSP process](#collect-wip-audit-logs-by-using-the-reporting-configuration-service-provider-csp) instead.
 
 **To view the WIP events in the Event Viewer**
-1.	Open Event Viewer.
+1. Open Event Viewer.
 
-2.	In the console tree under **Application and Services Logs\Microsoft\Windows**, click **EDP-Audit-Regular** and **EDP-Audit-TCB**.
+2. In the console tree under **Application and Services Logs\Microsoft\Windows**, click **EDP-Audit-Regular** and **EDP-Audit-TCB**.
 
 ## Collect WIP audit logs using Azure Monitor
 You can collect audit logs using Azure Monitor. See [Windows event log data sources in Azure Monitor.](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)

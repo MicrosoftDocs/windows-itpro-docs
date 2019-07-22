@@ -16,7 +16,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Windows Defender Antivirus in Windows 10 and Windows Server 2016
+# Windows Defender Antivirus
 
 **Applies to:**
 
@@ -42,8 +42,8 @@ You can configure and manage Windows Defender Antivirus with:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
->[!NOTE]
-For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
+> [!NOTE]
+> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
 
 <a id="sysreq"></a>
 ## Minimum system requirements

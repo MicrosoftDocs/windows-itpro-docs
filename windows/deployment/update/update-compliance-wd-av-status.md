@@ -39,4 +39,4 @@ Because of the way Windows Defender is associated with the rest of Windows devic
 
 ## Related topics
 
-- [Windows Defender Antivirus pre-requisites](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting#confirm-pre-requisites)
+- [Windows Defender Antivirus pre-requisites](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting#confirm-pre-requisites)

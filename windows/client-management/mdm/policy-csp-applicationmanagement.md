@@ -594,7 +594,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task. Example of the declaration here: 
 
-``` syntax
+```xml
 <desktop:Extension Category="windows.startupTask"> 
    <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" /> 
 </desktop:Extension>
@@ -972,7 +972,7 @@ Value type is string.
 <!--Example-->
 Sample SyncML:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1"> 
   <SyncBody> 
     <Add> 
@@ -999,7 +999,7 @@ Sample SyncML:
 ```
 XSD:
 
-``` syntax
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="recurrence" final="restriction">
     <xs:restriction base="xs:string">

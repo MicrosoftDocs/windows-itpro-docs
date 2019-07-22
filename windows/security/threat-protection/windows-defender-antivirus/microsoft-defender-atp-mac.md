@@ -108,6 +108,6 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Resources
 
-- For more information about logging, uninstalling, or known issues, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
 
 - [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md)

@@ -59,43 +59,43 @@ You can set this feature with Intune, Group Policy, or PowerShell.
 
 Open the Intune management portal either by searching for Intune on https://portal.azure.com or going to https://devicemanagement.microsoft.com and logging in.
 
-1.	To create a group with only the devices or users you specify:
-1.	Go to **Groups**. Click **New group**. Use the following values:
-    1.	Group type: **Security**
-    2.	Group name: **VDI test VMs**
-    3.	Group description: *Optional*
-    4.	Membership type: **Assigned**
+1. To create a group with only the devices or users you specify:
+1. Go to **Groups**. Click **New group**. Use the following values:
+    1. Group type: **Security**
+    2. Group name: **VDI test VMs**
+    3. Group description: *Optional*
+    4. Membership type: **Assigned**
     
-1.	Add the devices or users you want to be a part of this test and then click **Create** to save the group. It’s a good idea to create a couple of groups, one with VMs running the latest Insider Preview build and with the shared security intelligence update feature enabled, and another with VMs that are running Windows 10 1809 or earlier versions. This will help when you create dashboards to test the performance changes.
+1. Add the devices or users you want to be a part of this test and then click **Create** to save the group. It’s a good idea to create a couple of groups, one with VMs running the latest Insider Preview build and with the shared security intelligence update feature enabled, and another with VMs that are running Windows 10 1809 or earlier versions. This will help when you create dashboards to test the performance changes.
 
-1.	To create a group that will include any machine in your tenant that is a VM, even when they are newly created:
+1. To create a group that will include any machine in your tenant that is a VM, even when they are newly created:
 
-1.	Go to **Groups**. Click **New group**. Use the following values:
-    1.	Group type: **Security**
-    2.	Group name: **VDI test VMs**
-    3.	Group description: *Optional*
-    4.	Membership type: **Dynamic Device**
-1.	Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**. Click **Add query** and then **Create** to save the group.
-1.	Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one. In this demo I’m going to create a new one by clicking **Create profile**.
-1.	Name it, choose **Windows 10 and later** as the Platform and – most importantly – select **Custom** as the profile type.
-1.	The **Custom OMA-URI Settings** blade is opened automatically. Click **Add** then enter the following values:
-    1.	Name: **VDI shared sig location**
-    1.	Description: *Optional*
-    1.	OMA-URI: **./Vendor/MSFT/Defender/SharedSignatureRoot**
-    1.	Data type: **String**
-    1.	Value: **\\<sharedlocation\>\wdav-update\** (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
-1.	Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. Click **Create** to save the new profile. The profile details page now appears.
-1.	Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
-1.	Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
-1.	The profile will now be deployed to the impacted devices. Note that this may take some time.
+1. Go to **Groups**. Click **New group**. Use the following values:
+    1. Group type: **Security**
+    2. Group name: **VDI test VMs**
+    3. Group description: *Optional*
+    4. Membership type: **Dynamic Device**
+1. Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**. Click **Add query** and then **Create** to save the group.
+1. Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one. In this demo I’m going to create a new one by clicking **Create profile**.
+1. Name it, choose **Windows 10 and later** as the Platform and – most importantly – select **Custom** as the profile type.
+1. The **Custom OMA-URI Settings** blade is opened automatically. Click **Add** then enter the following values:
+    1. Name: **VDI shared sig location**
+    1. Description: *Optional*
+    1. OMA-URI: **./Vendor/MSFT/Defender/SharedSignatureRoot**
+    1. Data type: **String**
+    1. Value: **\\<sharedlocation\>\wdav-update\** (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
+1. Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. Click **Create** to save the new profile. The profile details page now appears.
+1. Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
+1. Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
+1. The profile will now be deployed to the impacted devices. Note that this may take some time.
     
 #### Use Group Policy to enable the shared security intelligence feature:
-1.	On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click Edit.
-1.	In the **Group Policy Management Editor** go to **Computer configuration**.
-1.	Click **Administrative templates**.
-1.	Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**
-1.	Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation\>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
-1.	Deploy the GPO to the VMs you want to test.
+1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click Edit.
+1. In the **Group Policy Management Editor** go to **Computer configuration**.
+1. Click **Administrative templates**.
+1. Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**
+1. Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation\>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
+1. Deploy the GPO to the VMs you want to test.
     
 #### Use PowerShell to enable the shared security intelligence feature:
 Use the following cmdlet to enable the feature. You’ll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
@@ -128,9 +128,9 @@ We suggest starting with once a day – but you should experiment with increasin
 Note that security intelligence packages are typically published once every three to four hours, so setting a frequency shorter than four hours isn’t advised as it will increase the network overhead on your management machine for no benefit.
 
 #### Set a scheduled task to run the powershell script
-1.	On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
-1.	Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Click **New…** Select **Daily** and click **OK**.
-1.	Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter 
+1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
+1. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Click **New…** Select **Daily** and click **OK**.
+1. Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter 
 
     *-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1* 
 
@@ -141,10 +141,10 @@ You can initiate the update manually by right-clicking on the task and clicking 
 
 #### Download and unpackage manually
 If you would prefer to do everything manually, this what you would need to do to replicate the script’s behavior:
-1.	Create a new folder on the system root called *wdav_update* to store intelligence updates, for example, create the folder *c:\wdav_update*
-1.	Create a subfolder under *wdav_update* with a GUID name, such as *{00000000-0000-0000-0000-000000000000}*; for example *c:\wdav_update\{00000000-0000-0000-0000-000000000000}* (note, in the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time)
-1.	Download a security intelligence package from https://www.microsoft.com/en-us/wdsi/definitions  into the GUID folder. The file should be named *mpam-fe.exe*.
-1.	Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example **mpam-fe.exe /X**.
+1. Create a new folder on the system root called *wdav_update* to store intelligence updates, for example, create the folder *c:\wdav_update*
+1. Create a subfolder under *wdav_update* with a GUID name, such as *{00000000-0000-0000-0000-000000000000}*; for example *c:\wdav_update\{00000000-0000-0000-0000-000000000000}* (note, in the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time)
+1. Download a security intelligence package from https://www.microsoft.com/en-us/wdsi/definitions  into the GUID folder. The file should be named *mpam-fe.exe*.
+1. Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example **mpam-fe.exe /X**.
 Note: The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
 
 ### Randomize scheduled scans

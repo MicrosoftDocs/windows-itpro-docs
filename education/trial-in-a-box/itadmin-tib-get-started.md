@@ -257,7 +257,7 @@ Follow these instructions to confirm if you configured your tenant correctly and
     3. If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
 
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
-* [Add more users](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
+* [Add more users](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Microsoft 365 admin center to add more users.
 * Get app updates (including updates for Office 365 for Windows 10 S)
     1. Open the **Start** menu and go to the **Microsoft Store**.
     2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.

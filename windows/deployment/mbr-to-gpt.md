@@ -419,7 +419,7 @@ This issue occurs because in Windows 10, version 1903 and later versions, MBR2GP
 
 To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
 
-1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
+1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
 2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
 
@@ -443,10 +443,10 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    * ReAgent.adml
    * ReAgent.dll.mui
 
-   >![Note]  
-   >If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
+   > [!NOTE]
+   > If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
    
-3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
+3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
  
 
 ## Related topics
