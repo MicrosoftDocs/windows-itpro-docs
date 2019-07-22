@@ -418,6 +418,13 @@
 #### [Interoperability]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
 
+#### [Manage machine configuration]()
+##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
+##### [Monitor and increase machine onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
+##### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
+##### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
+
+
 #### [Role-based access control]()
 ##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ##### [Create and manage roles](microsoft-defender-atp/user-roles.md)
