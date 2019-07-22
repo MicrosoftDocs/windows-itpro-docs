@@ -5175,80 +5175,150 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
-<!--StartHoloLens-->
-## <a href="" id="hololens"></a>Policies supported in HoloLens devices
+<!--StartHoloLens2-->
+## <a href="" id="hololens"></a>Policies supported by HoloLens 2
 
+The following table shows the Policies supported in HoloLens 2 devices:
+| Policy | HoloLens 2 |
+| -------- | -------- |
+| [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection) | ![check mark](images/checkmark.png)
+| [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps) | ![check mark](images/checkmark.png) |
+| [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate) | ![check mark](images/checkmark.png) |
+| [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock) | ![check mark](images/checkmark.png) |
+| [Authentication/AllowFastReconnect](#authentication-allowfastreconnect) | ![check mark](images/checkmark.png) |
+| [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname) | ![check mark](images/checkmark.png) |
+| [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising) | ![cross mark](images/crossmark.png) |
+| [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode) | ![check mark](images/checkmark.png) |
+| [Bluetooth/LocalDeviceName](#bluetooth-localdevicename) | ![check mark](images/checkmark.png) |
+| [Browser/AllowAutofill](#browser-allowautofill) | ![check mark](images/checkmark.png) |
+| [Browser/AllowCookies](#browser-allowcookies) | ![check mark](images/checkmark.png) |
+| [Browser/AllowDoNotTrack](#browser-allowdonottrack) | ![check mark](images/checkmark.png) |
+| [Browser/AllowPasswordManager](#browser-allowpasswordmanager) | ![check mark](images/checkmark.png) |
+| [Browser/AllowPopups](#browser-allowpopups) | ![check mark](images/checkmark.png) |
+| [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar) | ![check mark](images/checkmark.png) |
+| [Browser/AllowSmartScreen](#browser-allowsmartscreen) | ![check mark](images/checkmark.png) |
+| [Connectivity/AllowBluetooth](#connectivity-allowbluetooth) | ![check mark](images/checkmark.png) |
+| [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired) | ![check mark](images/checkmark.png) |
+| [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled) | ![check mark](images/checkmark.png) |
+| [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration) | ![check mark](images/checkmark.png) |
+| [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength) | ![check mark](images/checkmark.png) |
+| [Experience/AllowCortana](#experience-allowcortana) | ![check mark](images/checkmark.png) |
+| [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment) | ![check mark](images/checkmark.png) |
+| [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone) | ![check mark](images/checkmark.png) |
+| [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation) | ![check mark](images/checkmark.png) |
+| [Security/RequireDeviceEncryption](#security-requiredeviceencryption) | ![check mark](images/checkmark.png) |
+| [Settings/AllowDateTime](#settings-allowdatetime) | ![check mark](images/checkmark.png) |
+| [Settings/AllowVPN](#settings-allowvpn) | ![check mark](images/checkmark.png) |
+|    [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate) | ![check mark](images/checkmark.png) |
+| [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline) | ![check mark](images/checkmark.png) |
+| [System/AllowLocation](#system-allowlocation) | ![check mark](images/checkmark.png) |
+| [System/AllowStorageCard](#system-allowstoragecard) | ![check mark](images/checkmark.png) |
+| [System/AllowTelemetry](#system-allowtelemetry) | ![check mark](images/checkmark.png) |
+| [Update/AllowAutoUpdate](#update-allowautoupdate) | ![check mark](images/checkmark.png) |
+| [Update/AllowUpdateService](#update-allowupdateservice) | ![check mark](images/checkmark.png) |
+| [Update/BranchReadinessLevel](#update-branchreadinesslevel) | ![check mark](images/checkmark.png) |
+| [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays) | ![check mark](images/checkmark.png) |
+| [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays) | ![check mark](images/checkmark.png) |
+| [Update/ManagePreviewBuilds](#update-managepreviewbuilds) | ![check mark](images/checkmark.png) |
+| [Update/PauseFeatureUpdates](#update-pausefeatureupdates) | ![check mark](images/checkmark.png) |
+| [Update/PauseQualityUpdates](#update-pausequalityupdates) | ![check mark](images/checkmark.png) |
+| [Update/RequireDeferUpgrade](#update-requiredeferupgrade) | ![cross mark](images/crossmark.png) |
+| [Update/RequireUpdateApproval](#update-requireupdateapproval) | ![cross mark](images/crossmark.png) |
+| [Update/ScheduledInstallDay](#update-scheduledinstallday) | ![check mark](images/checkmark.png) |
+| [Update/ScheduledInstallTime](#update-scheduledinstalltime) | ![check mark](images/checkmark.png) |
+| [Update/UpdateServiceUrl](#update-updateserviceurl) | ![check mark](images/checkmark.png) |
+| [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration) | ![check mark](images/checkmark.png) |
+<!--EndHoloLens2-->
 
-The following list shows the Policies supported in HoloLens devices:
-
-| Policy | HoloLens (1st gen) Development Edition | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
-| -------- | -------- | -------- | -------- |
-| [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)      | ![check mark](images/checkmark.png)
-| [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Authentication/AllowFastReconnect](#authentication-allowfastreconnect) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![cross mark](images/crossmark.png) |
-| [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Bluetooth/LocalDeviceName](#bluetooth-localdevicename) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowAutoFill](#browser-allowautofill) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![cross mark](images/crossmark.png) |
-| [Browser/AllowCookies](#browser-allowcookies) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowDoNotTrack](#browser-allowdonottrack) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowPasswordManager](#browser-allowpasswordmanager) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowPopups](#browser-allowpopups) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Browser/AllowSmartScreen](#browser-allowsmartscreen) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Connectivity/AllowBluetooth](#connectivity-allowbluetooth) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Experience/AllowCortana](#experience-allowcortana) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)| ![check mark](images/checkmark.png) |
-| [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Security/RequireDeviceEncryption](#security-requiredeviceencryption) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Settings/AllowDateTime](#settings-allowdatetime) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Settings/AllowVPN](#settings-allowvpn) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-|    [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline) |![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [System/AllowLocation](#system-allowlocation) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [System/AllowStorageCard](#system-allowstoragecard) |![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [System/AllowTelemetry](#system-allowtelemetry) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Update/AllowAutoUpdate](#update-allowautoupdate) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Update/AllowUpdateService](#update-allowupdateservice) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Update/BranchReadinessLevel](#update-branchreadinesslevel) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/ManagePreviewBuilds](#update-managepreviewbuilds) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/PauseFeatureUpdates](#update-pausefeatureupdates) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/PauseQualityUpdates](#update-pausequalityupdates) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [Update/RequireDeferUpgrade](#update-requiredeferupgrade) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![cross mark](images/crossmark.png) |
-| [Update/RequireUpdateApproval](#update-requireupdateapproval) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![cross mark](images/crossmark.png) |
-| [Update/ScheduledInstallDay](#update-scheduledinstallday) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Update/ScheduledInstallTime](#update-scheduledinstalltime) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Update/UpdateServiceUrl](#update-updateserviceurl) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-<!--EndHoloLens-->
+<!--StartHoloLens1-->
+## <a href="" id="hololens"></a>Policies supported by HoloLens (1st gen)
+The following table shows the Policies supported in HoloLens (1st gen) devices:
+| Policy | HoloLens (1st gen) Development Edition | HoloLens (1st gen) Commercial Suite |
+| -------- | -------- | -------- |
+| [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)      |
+| [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [Authentication/AllowFastReconnect](#authentication-allowfastreconnect) | ![check mark](images/checkmark.png) |  ![check mark](images/checkmark.png) |
+| [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
+| [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Bluetooth/LocalDeviceName](#bluetooth-localdevicename) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowAutofill](#browser-allowautofill) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowCookies](#browser-allowcookies) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowDoNotTrack](#browser-allowdonottrack) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowPasswordManager](#browser-allowpasswordmanager) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowPopups](#browser-allowpopups) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Browser/AllowSmartScreen](#browser-allowsmartscreen) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Connectivity/AllowBluetooth](#connectivity-allowbluetooth) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Experience/AllowCortana](#experience-allowcortana) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Security/RequireDeviceEncryption](#security-requiredeviceencryption) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Settings/AllowDateTime](#settings-allowdatetime) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Settings/AllowVPN](#settings-allowvpn) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+|    [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline) |![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [System/AllowLocation](#system-allowlocation) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [System/AllowStorageCard](#system-allowstoragecard) |![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [System/AllowTelemetry](#system-allowtelemetry) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Update/AllowAutoUpdate](#update-allowautoupdate) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Update/AllowUpdateService](#update-allowupdateservice) |![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Update/BranchReadinessLevel](#update-branchreadinesslevel) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | 
+| [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [Update/ManagePreviewBuilds](#update-managepreviewbuilds) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [Update/PauseFeatureUpdates](#update-pausefeatureupdates) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |
+| [Update/PauseQualityUpdates](#update-pausequalityupdates) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | 
+| [Update/RequireDeferUpgrade](#update-requiredeferupgrade) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Update/RequireUpdateApproval](#update-requireupdateapproval) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [Update/ScheduledInstallDay](#update-scheduledinstallday) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [Update/ScheduledInstallTime](#update-scheduledinstalltime) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+| [Update/UpdateServiceUrl](#update-updateserviceurl) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | 
+| [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
+<!--EndHoloLens1-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
