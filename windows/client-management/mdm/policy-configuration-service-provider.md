@@ -5291,9 +5291,9 @@ The following table shows the Policies supported in HoloLens (1st gen) devices:
 | [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
 | [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
 | [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
-| [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/                  LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/                          LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
+| [Privacy/               LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
 | [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
 | [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
 | [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)|
