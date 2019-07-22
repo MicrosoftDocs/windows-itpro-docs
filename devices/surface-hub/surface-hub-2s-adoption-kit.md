@@ -9,7 +9,7 @@ ms.author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 07/18/2019
 ms.localizationpriority: Normal
 ---
 
@@ -24,6 +24,8 @@ Microsoft has developed downloadable materials that you can make available for y
 - [Training guide – power user](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
 - [Training guide – help desk](downloads/TrainingGuide-SurfaceHub2S-HelpDesk.pdf)
 - [Training guide – Microsoft Teams desktop](downloads/Guide-SurfaceHub2S-Teams.pptx)
+
+[Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
 [Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 

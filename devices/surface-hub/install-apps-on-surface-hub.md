@@ -12,6 +12,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/23/2018
 ms.localizationpriority: medium
+audience: ITPro
 ---
 
 # Install apps on your Microsoft Surface Hub
