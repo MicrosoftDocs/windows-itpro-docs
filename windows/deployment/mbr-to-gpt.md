@@ -427,7 +427,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    
    **Command 1:**
    ```cmd
-   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgnet*.*" "C:\WinPE_Mount\Windows\System32"
+   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgent*.*" "C:\WinPE_Mount\Windows\System32"
    ```
    This command copies three files:
 
@@ -437,7 +437,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    
    **Command 2:**
    ```cmd
-   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\En-Us\ReAgnet*.*" "C:\WinPE_Mount\Windows\System32\En-Us"
+   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\En-Us\ReAgent*.*" "C:\WinPE_Mount\Windows\System32\En-Us"
    ```   
    This command copies two files:
    * ReAgent.adml
