@@ -200,7 +200,8 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 
 For more info on virtualization-based security and Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
-<span id="turn-off-with-hardware-readiness-tool" />
+<span id="turn-off-with-hardware-readiness-tool"/>
+
 #### Disable Windows Defender Credential Guard by using the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 You can also disable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
