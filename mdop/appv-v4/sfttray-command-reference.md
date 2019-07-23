@@ -31,23 +31,23 @@ There is only one Application Virtualization Client Tray instance for each user 
 
 
 
-`     Sfttray.exe /?`
+`Sfttray.exe /?`
 
 ### Command Usage
 
-`     Sfttray.exe [/HIDE | /SHOW]`
+`Sfttray.exe [/HIDE | /SHOW]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] [/EXE alternate-exe] /LAUNCH app [args]`
+`Sfttray.exe [/HIDE | /SHOW] [/QUIET] [/EXE alternate-exe] /LAUNCH app [args]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOAD app [/SFTFILE sft]`
+`Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOAD app [/SFTFILE sft]`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOADALL`
+`Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LOADALL`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /REFRESHALL`
+`Sfttray.exe [/HIDE | /SHOW] [/QUIET] /REFRESHALL`
 
-`     Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LAUNCHRESULT <UNIQUE ID>  /LAUNCH app [args]`
+`Sfttray.exe [/HIDE | /SHOW] [/QUIET] /LAUNCHRESULT <UNIQUE ID>  /LAUNCH app [args]`
 
-`     Sfttray.exe /EXIT`
+`Sfttray.exe /EXIT`
 
 ### Command-Line Switches
 

@@ -273,7 +273,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 Here's an example for setting Windows Hello for Business and setting the PIN policies. It also turns on the use of biometrics and TPM.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
           <SyncBody>
             <Add>

@@ -37,7 +37,7 @@ The following best practices serve as a guideline of query performance best prac
 - When joining between two tables, project only needed columns from both sides of the join.
 
 >[!Tip]
->For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/en-us/azure/kusto/query/best-practices).
+>For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
 ## Query tips and pitfalls
 

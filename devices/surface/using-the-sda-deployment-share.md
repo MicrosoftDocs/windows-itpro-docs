@@ -141,23 +141,23 @@ In the previous example for including drivers for a POS system, you would also n
 
 9. Click the **Task Sequence** tab to view the steps that are included in the new task sequence.
 
-10.	Select the **Windows Update (Pre-Application Installation)** step, and then click **Add**.
+10. Select the **Windows Update (Pre-Application Installation)** step, and then click **Add**.
 
-11.	Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
+11. Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
     ![A new Install Application step for Sample POS App](images/using-sda-newinstall-fig3.png "A new Install Application step for Sample POS App")
   
     *Figure 3. A new Install Application step for Sample POS App*
 
-12.	On the **Properties** tab of the new **Install Application** step, enter **Install - Sample POS App** in the **Name** field, where *Sample POS App* is the name of your app.
+12. On the **Properties** tab of the new **Install Application** step, enter **Install - Sample POS App** in the **Name** field, where *Sample POS App* is the name of your app.
 
-13.	Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
+13. Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
 
-14.	Select your app from the list of applications, and then click **OK**.
+14. Select your app from the list of applications, and then click **OK**.
 
-15.	Click **OK** to close the task sequence properties.
+15. Click **OK** to close the task sequence properties.
 
-16.	Close the Deployment Workbench.
+16. Close the Deployment Workbench.
 
 ## Work with existing deployment shares
 

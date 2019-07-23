@@ -50,7 +50,7 @@ Requirements:
 - Enterprise has MDM service already configured 
 - Enterprise AD must be registered with Azure AD
 
-1.	Run GPEdit.msc
+1. Run GPEdit.msc
 
     Click Start, then in the text box type gpedit. 
 
@@ -62,11 +62,11 @@ Requirements:
 
     ![MDM policies](images/autoenrollment-mdm-policies.png)
 
-4.	Double-click **Auto MDM Enrollment with AAD Token**.
+4. Double-click **Auto MDM Enrollment with AAD Token**.
 
     ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
-5.	Click **Enable**, then click **OK**.
+5. Click **Enable**, then click **OK**.
 
      A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
@@ -76,9 +76,9 @@ Requirements:
 
      ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
 
-6.	To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
+6. To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
 
-7.	Click **Info** to see the MDM enrollment information.
+7. Click **Info** to see the MDM enrollment information.
 
     ![Work School Settings](images/autoenrollment-settings-work-school.png)
 
@@ -91,9 +91,9 @@ Requirements:
 
    ![Task Scheduler search result](images/autoenrollment-task-schedulerapp.png)
 
-2.	Under **Best match**, click **Task Scheduler** to launch it.
+2. Under **Best match**, click **Task Scheduler** to launch it.
 
-3.	In **Task Scheduler Library**, open **Microsoft > Windows** , then click **EnterpriseMgmt**. 
+3. In **Task Scheduler Library**, open **Microsoft > Windows** , then click **EnterpriseMgmt**. 
 
     ![Auto-enrollment scheduled task](images/autoenrollment-scheduled-task.png)
 
@@ -122,11 +122,11 @@ Requirements:
 >   5. Restart the Primary Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
-1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
-2.	Create a Security Group for the PCs.
-3.	Link the GPO.
-4.	Filter using Security Groups.
-5.	Enforce a GPO link.
+1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
+2. Create a Security Group for the PCs.
+3. Link the GPO.
+4. Filter using Security Groups.
+5. Enforce a GPO link.
 
 > [!NOTE]
 > Version 1903 (March 2019) is actually on the Insider program and doesn't yet contain a downloadable version of Templates (version 1903).

@@ -978,12 +978,12 @@ Thisis a lists of attributes that are supported by DHA and can trigger the corre
 Windows 10 mobile has protective measures that work together and integrate with Microsoft Intune or third-party Mobile Device Management (MDM) solutions. IT administrators can monitor and verify compliance to ensure corporate resources are protected end-to–end with the security and trust rooted in the physical hardware of the device.
 
 Here is what occurs when a smartphone is turned on:
-1.	Windows 10 Secure Boot protects the boot sequence, enables the device to boot into a defined and trusted configuration, and loads a factory trusted boot loader.
-2.	Windows 10 Trusted Boot takes control, verifies the digital signature of the Windows kernel, and the components are loaded and executed during the Windows startup process.
-3.	In parallel to Steps 1 and 2, Windows 10 Mobile TPM (Trusted Platform Modules – measured boot) runs independently in a hardware-protected security zone (isolated from boot execution path monitors boot activities) to create an integrity protected and tamper evident audit trail - signed with a secret that is only accessible by TPM.
-4.	Devices managed by a DHA-enabled MDM solution send a copy of this audit trail to Microsoft Health Attestation Service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
-5.	Microsoft HAS reviews the audit trails, issues an encrypted/signed report, and forwards it to the device.
-6.	IT managers can use a DHA-enabled MDM solution to review the report in a protected, tamper-resistant and tamper-evident communication channel. They can assess if a device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with security needs and enterprise policies.
+1. Windows 10 Secure Boot protects the boot sequence, enables the device to boot into a defined and trusted configuration, and loads a factory trusted boot loader.
+2. Windows 10 Trusted Boot takes control, verifies the digital signature of the Windows kernel, and the components are loaded and executed during the Windows startup process.
+3. In parallel to Steps 1 and 2, Windows 10 Mobile TPM (Trusted Platform Modules – measured boot) runs independently in a hardware-protected security zone (isolated from boot execution path monitors boot activities) to create an integrity protected and tamper evident audit trail - signed with a secret that is only accessible by TPM.
+4. Devices managed by a DHA-enabled MDM solution send a copy of this audit trail to Microsoft Health Attestation Service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
+5. Microsoft HAS reviews the audit trails, issues an encrypted/signed report, and forwards it to the device.
+6. IT managers can use a DHA-enabled MDM solution to review the report in a protected, tamper-resistant and tamper-evident communication channel. They can assess if a device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with security needs and enterprise policies.
 
 ### <a href="" id="asset-reporting"></a>Asset reporting
 

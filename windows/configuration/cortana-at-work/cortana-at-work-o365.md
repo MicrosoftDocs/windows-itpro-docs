@@ -45,9 +45,9 @@ You must tell your employees to turn on Cortana before they’ll be able to use 
 
 **To turn on local Cortana with Office 365**
 
-1.	Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
+1. Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
 
-2.	Click on **Connected Services**, click **Office 365**, and then click **Connect**.
+2. Click on **Connected Services**, click **Office 365**, and then click **Connect**.
 
     ![Cotana at work, showing how to turn on the connected services for Office 365](../images/cortana-connect-o365.png)
 
@@ -57,13 +57,13 @@ You must tell your employees to turn on Cortana before they’ll be able to use 
 Cortana can only access data in your Office 365 org when it’s turned on. If you don’t want Cortana to access your corporate data, you can turn it off in the Microsoft 365 admin center.
 
 **To turn off Cortana with Office 365**
-1.	[Sign in to Office 365](https://www.office.com/signin) using your Azure AD account.
+1. [Sign in to Office 365](https://www.office.com/signin) using your Azure AD account.
 
-2.	Go to the [admin center](https://support.office.com/article/Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547).
+2. Go to the [admin center](https://support.office.com/article/Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547).
 
-3.	Expand **Service Settings**, and select **Cortana**.
+3. Expand **Service Settings**, and select **Cortana**.
 
-4.	Click **Cortana** to toggle Cortana off.
+4. Click **Cortana** to toggle Cortana off.
 
     All Office 365 functionality related to Cortana is turned off in your organization and your employees are unable to use her at work.
 

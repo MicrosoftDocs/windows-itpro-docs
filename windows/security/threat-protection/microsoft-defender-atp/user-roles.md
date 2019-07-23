@@ -28,11 +28,11 @@ ms.topic: article
 ## Create roles and assign the role to an Azure Active Directory group
 The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
 
-1.	In the navigation pane, select **Settings > Roles**.
+1. In the navigation pane, select **Settings > Roles**.
 
-2.	Click **Add role**. 
+2. Click **Add role**. 
 
-3.	Enter the role name, description, and permissions you'd like to assign to the role.
+3. Enter the role name, description, and permissions you'd like to assign to the role.
 
 	 - **Role name**
 	 - **Description**
@@ -49,23 +49,23 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
 		  - **Live response capabilities** - Users can take basic or advanced live response commands. <br>
 			- Basic commands allow users to:
-			- Start a live response session
-			- Run read only live response commands on a remote machine 
+			    - Start a live response session
+			    - Run read only live response commands on a remote machine 
 			- Advanced commands allow users to:
-			- Run basic actions
-			- Download a file from the remote machine
-			- View a script from the files library
-			- Run a script on the remote machine from the files library take read and write commands. 
+			    - Run basic actions
+			    - Download a file from the remote machine
+			    - View a script from the files library
+			    - Run a script on the remote machine from the files library take read and write commands. 
 			
 			For more information on the available commands, see [Investigate machines using Live response](live-response.md).
 		  
-4.	Click **Next** to assign the role to an Azure AD group.
+4. Click **Next** to assign the role to an Azure AD group.
 
-5.	Use the filter to select the Azure AD group that you'd like to add to this role.
+5. Use the filter to select the Azure AD group that you'd like to add to this role.
 
-6.	Click **Save and close**.
+6. Click **Save and close**.
 
-7.	Apply the configuration settings.
+7. Apply the configuration settings.
 
 
 After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
@@ -73,19 +73,19 @@ After creating roles, you'll need to create a machine group and provide access t
 
 ## Edit roles
 
-1.	Select the role you'd like to edit.
+1. Select the role you'd like to edit.
 
-2.	Click **Edit**.
+2. Click **Edit**.
 
-3.	Modify the details or the groups that are assigned to the role. 
+3. Modify the details or the groups that are assigned to the role. 
 
-4.	Click **Save and close**.
+4. Click **Save and close**.
 
 ## Delete roles
 
-1.	Select the role you'd like to delete.
+1. Select the role you'd like to delete.
 
-2.	Click the drop-down button and select **Delete role**.
+2. Click the drop-down button and select **Delete role**.
 
 
 ## Related topic

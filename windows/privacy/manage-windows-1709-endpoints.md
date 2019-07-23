@@ -35,10 +35,10 @@ Where applicable, each endpoint covered in this topic includes a link to specifi
 
 We used the following methodology to derive these network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
-4.	Compile reports on traffic going to public IP addresses.
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
 6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
 
