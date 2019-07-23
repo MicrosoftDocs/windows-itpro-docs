@@ -85,8 +85,8 @@ Sign-in to a certificate authority or management workstations with _Enterprise A
 3. In the **Certificate Templates Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
 4. Click the **Superseded Templates** tab. Click **Add**.
 5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
-6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
-7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
+6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **Add**.
+7. From the **Add Superseded Template** dialog, select the **Kerberos Authentication** certificate template and click **Add**. 
 8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
 9. Click **OK** and close the **Certificate Templates** console.
 
