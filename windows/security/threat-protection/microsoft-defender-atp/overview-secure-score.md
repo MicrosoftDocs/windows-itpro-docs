@@ -40,7 +40,7 @@ The **Secure score dashboard** displays a snapshot of:
 ![Secure score dashboard](images/new-secure-score-dashboard.png)
 
 ## Microsoft secure score
-The Microsoft secure score tile is reflective of the sum of all the Windows Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+The Microsoft secure score tile is reflective of the sum of all the Microsoft Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
 ![Image of Microsoft secure score tile](images/mss.png)
 
