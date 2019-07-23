@@ -127,7 +127,7 @@ The administrative features in Windows 10 Enterprise, such as the Microsoft Mana
 
 ### Remote management and monitoring
 
-Surface Hub supports remote management through mobile device management (MDM) solutions such as [Microsoft Intune](https://docs.microsoft.com/en-us/intune/) and monitoring through [Azure Monitor](https://azure.microsoft.com/services/monitor/). 
+Surface Hub supports remote management through mobile device management (MDM) solutions such as [Microsoft Intune](https://docs.microsoft.com/intune/) and monitoring through [Azure Monitor](https://azure.microsoft.com/services/monitor/). 
 
 *Organization policies that this may affect:* <br> Surface Hub doesn't support installing Win32 agents required by most traditional PC management and monitoring tools, such as System Center Operations Manager.
 

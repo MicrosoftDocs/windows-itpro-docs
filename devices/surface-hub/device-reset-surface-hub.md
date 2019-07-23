@@ -44,15 +44,15 @@ If you see a blank screen for long periods of time during the **Reset device** p
 ## Reset a Surface Hub from Settings
 
 **To reset a Surface Hub**
-1.	On your Surface Hub, open **Settings**.
+1. On your Surface Hub, open **Settings**.
 
     ![Image showing Settings app for Surface Hub.](images/sh-settings.png)
 
-2.	Click **Update & Security**.
+2. Click **Update & Security**.
 
     ![Image showing Update & Security group in Settings app for Surface Hub.](images/sh-settings-update-security.png)
 
-3.	Click **Recovery**, and then, under **Reset device**, click **Get started**.
+3. Click **Recovery**, and then, under **Reset device**, click **Get started**.
 
     ![Image showing Reset device option in Settings app for Surface Hub.](images/sh-settings-reset-device.png)
 

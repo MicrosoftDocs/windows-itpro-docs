@@ -113,9 +113,9 @@ You can use the System Information desktop app (MSINFO32) to check if a device h
 
 If kernel DMA protection *not* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
 
-1.	Require a password for BIOS changes 
-2.	Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
-3.	Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
+1. Require a password for BIOS changes 
+2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
+3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
     - Group Policy: [Disable new DMA devices when this computer is locked](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)
