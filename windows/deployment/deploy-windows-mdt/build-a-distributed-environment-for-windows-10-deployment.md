@@ -87,7 +87,7 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT, that can be done by using the DefaultGateway property.
 1. On MDT01, using Notepad, navigate to the **E:\\MDTProduction\\Control** folder and modify the Boostrap.ini file to look like this:
 
-   ``` syntax
+   ```ini
    [Settings]
    Priority=DefaultGateway, Default
    [DefaultGateway]
@@ -153,7 +153,7 @@ When you have multiple deployment servers sharing the same content, you need to 
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
         In this scenario the size of the deployment share is known, but you might need to change the values for your environment. A good rule of thumb is to get the size of the 16 largest files and make sure they fit in the staging area. Here is a Windows PowerShell example that calculates the size of the 16 largest files in the E:\\MDTProduction deployment share:
         
-        ``` syntax
+        ```powershell
         (Get-ChildItem E:\MDTProduction -Recurse | Sort-Object Length -Descending | Select-Object -First 16 | Measure-Object -Property Length -Sum).Sum /1GB
         ```
 

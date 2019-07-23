@@ -34,7 +34,7 @@ When MDT is integrated with Configuration Manager, the task sequence takes addit
 The task sequence uses instructions that allow you to reduce the number of task sequences in Configuration Manager and instead store settings outside the task sequence. Here are a few examples:
 -   The following settings instruct the task sequence to install the HP Hotkeys package, but only if the hardware is a HP EliteBook 8570w. Note that you don't have to add the package to the task sequence.
 
-    ``` syntax
+    ```ini
     [Settings] 
     Priority=Model
     [HP EliteBook 8570w] 
@@ -42,7 +42,7 @@ The task sequence uses instructions that allow you to reduce the number of task 
     ```
 -   The following settings instruct the task sequence to put laptops and desktops in different organizational units (OUs) during deployment, assign different computer names, and finally have the task sequence install the Cisco VPN client, but only if the machine is a laptop.
 
-    ``` syntax
+    ```ini
     [Settings]
     Priority= ByLaptopType, ByDesktopType
     [ByLaptopType]

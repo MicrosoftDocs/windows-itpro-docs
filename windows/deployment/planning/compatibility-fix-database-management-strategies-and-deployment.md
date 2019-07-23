@@ -146,7 +146,7 @@ You must ensure that you call the script at a time when it will receive elevated
 
 The following examples show an installation of a custom compatibility-fix database based on an .msi file.
 
-``` syntax
+```vb
 'InstallSDB.vbs
 Function Install
 Dim WshShell

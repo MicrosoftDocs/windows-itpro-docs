@@ -98,7 +98,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     Although it is not a requirement, it is good practice for &lt;CustomFileName&gt; to match the name of the file. For example, the following is from the MigApp.xml file:
 
-    ``` syntax
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
     ```

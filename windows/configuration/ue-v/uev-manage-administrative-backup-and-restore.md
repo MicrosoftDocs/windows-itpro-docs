@@ -26,7 +26,7 @@ As an administrator of User Experience Virtualization (UE-V), you can restore ap
 
 To restore settings when a user adopts a new device, you can put a settings location template in **backup** or **roam (default)** profile using the Set-UevTemplateProfile PowerShell cmdlet. This lets computer settings sync to the new computer, in addition to user settings. Templates assigned to the backup profile are backed up for that device and configured on a per-device basis. To backup settings for a template, use the following cmdlet in Windows PowerShell:
 
-``` syntax
+```powershell
 Set-UevTemplateProfile -ID <TemplateID> -Profile <backup>
 ```
 
@@ -38,7 +38,7 @@ When replacing a user’s device, UE-V automatically restores settings if the us
 
 You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
-``` syntax
+```powershell
 Restore-UevBackup -ComputerName <Computer name>
 ```
 

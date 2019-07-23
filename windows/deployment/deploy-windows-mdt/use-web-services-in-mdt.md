@@ -92,7 +92,7 @@ Figure 20. The result from the MDT Sample web service.
 After verifying the web service using Internet Explorer, you are ready to do the same test in the MDT simulation environment.
 
 1. On PC0001, edit the CustomSettings.ini file in the **C:\\MDT** folder to look like the following:
-   ``` syntax
+   ```ini
    [Settings]
    Priority=Default, GetComputerName
    [Default]
@@ -108,7 +108,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
 
 2. Save the CustomSettings.ini file.
 3. Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
-   ``` syntax
+   ```powershell
    Set-Location C:\MDT
    .\Gather.ps1
    ```

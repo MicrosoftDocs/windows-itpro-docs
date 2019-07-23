@@ -313,7 +313,7 @@ Troubleshooting Network Unlock issues begins by verifying the environment. Many 
 - Verify the clients were rebooted after applying the policy.
 - Verify the **Network (Certificate Based)** protector is listed on the client. This can be done using either manage-bde or Windows PowerShell cmdlets. For example the following command will list the key protectors currently configured on the C: drive of the lcoal computer:
 
-  ``` syntax
+  ```powershell
   manage-bde –protectors –get C:
   ```
   >**Note:**  Use the output of manage-bde along with the WDS debug log to determine if the proper certificate thumbprint is being used for Network Unlock

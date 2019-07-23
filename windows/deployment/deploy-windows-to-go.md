@@ -106,7 +106,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 2. In the Windows PowerShell session type the following commands to partition a master boot record (MBR) disk for use with a FAT32 system partition and an NTFS-formatted operating system partition. This disk layout can support computers that use either UEFI or BIOS firmware:
 
-    ``` syntax
+    ```powershell
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -161,7 +161,7 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 
 5. Apply SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
 
-    ``` syntax
+    ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
       <settings pass="offlineServicing">
@@ -199,7 +199,7 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 
 7. Create an answer file (unattend.xml) that disables the use of Windows Recovery Environment with Windows To Go. You can use the following code sample to create a new answer file or you can paste it into an existing answer file:
 
-    ``` syntax
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
         <settings pass="oobeSystem">
@@ -312,7 +312,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 4. From the Windows PowerShell command prompt run:
 
-    ``` syntax
+    ```powershell
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -367,7 +367,7 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
 
 7. Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
 
-   ``` syntax
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <unattend xmlns="urn:schemas-microsoft-com:unattend">
        <settings pass="oobeSystem">
@@ -460,7 +460,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     >[!NOTE]
     >If you used the [manual method for creating a workspace](https://go.microsoft.com/fwlink/p/?LinkId=619174) you should have already provisioned the Windows To Go drive. If so, you can continue on to the next step.
 
-   ``` syntax
+   ```powershell
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -506,13 +506,13 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
 
-   ``` syntax
+   ```powershell
    $BitlockerRecoveryProtector = Add-BitLockerKeyProtector W: -RecoveryPasswordProtector
    ```
 
 6. Next, use the following cmdlets to save the recovery key to a file:
 
-   ``` syntax
+   ```powershell
    #The BitLocker Recovery key is essential if for some reason you forget the BitLocker password
    #This recovery key can also be backed up into Active Directory using manage-bde.exe or the
    #PowerShell cmdlet Backup-BitLockerKeyProtector.
@@ -522,7 +522,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 7. Then, use the following cmdlets to add the password as a secure string. If you omit the password the cmdlet will prompt you for the password before continuing the operation:
 
-   ``` syntax
+   ```powershell
    # Create a variable to store the password
    $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force
    Enable-BitLocker W: -PasswordProtector $spwd
@@ -586,7 +586,7 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 3. Configure the PowerShell execution policy. By default PowerShell’s execution policy is set to Restricted; that means that scripts won’t run until you have explicitly given them permission to. To configure PowerShell’s execution policy to allow the script to run, use the following command from an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
 
@@ -601,7 +601,7 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 #### Windows To Go multiple drive provisioning sample script
 
-``` syntax
+```powershell
 <#
 .SYNOPSIS
 Windows To Go multiple drive provisioning sample script.

@@ -170,7 +170,7 @@ If you need to add many applications, you can take advantage of the PowerShell s
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Import the snap-in and create the PSDrive by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     Import-Module "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
     New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "E:\MDTBuildLab"
     ```
@@ -182,7 +182,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 
 
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2005SP1x86"
@@ -196,7 +196,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2005SP1x64"
@@ -210,7 +210,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2008SP1x86"
@@ -224,7 +224,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2008SP1x64"
@@ -238,7 +238,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2010SP1x86"
@@ -252,7 +252,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2010SP1x64"
@@ -266,7 +266,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Upda
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2012Ux86"
@@ -280,7 +280,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Upda
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
-    ``` syntax
+    ```powershell
     $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
     $ApplicationSourcePath = "E:\Downloads\VC++2012Ux64"
@@ -405,7 +405,7 @@ In MDT, there are always two rule files: the CustomSettings.ini file and the Boo
 For that reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. By taking the following steps, you will configure the rules for the MDT Build Lab deployment share:
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Properties**.
 2.  Select the **Rules** tab and modify using the following information:
-    ``` syntax
+    ```ini
     [Settings]
     Priority=Default
     [Default]
@@ -444,7 +444,7 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 
 3.  Click **Edit Bootstrap.ini** and modify using the following information:
 
-    ``` syntax
+    ```ini
     [Settings]
     Priority=Default
     [Default]
@@ -501,7 +501,7 @@ The CustomSettings.ini file is normally stored on the server, in the Deployment 
 
 The Bootstrap.ini file is available via the deployment share's Properties dialog box, or via the E:\\MDTBuildLab\\Control folder on MDT01.
 
-``` syntax
+```ini
 [Settings]
 Priority=Default
 [Default]
@@ -529,7 +529,7 @@ So, what are these settings?
 
 The CustomSettings.ini file, whose content you see on the Rules tab of the deployment share Properties dialog box, contains most of the properties used in the configuration.
 
-``` syntax
+```ini
 [Settings]
 Priority=Default
 [Default]
