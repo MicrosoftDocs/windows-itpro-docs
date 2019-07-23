@@ -49,13 +49,13 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
 		  - **Live response capabilities** - Users can take basic or advanced live response commands. <br>
 			- Basic commands allow users to:
-			- Start a live response session
-			- Run read only live response commands on a remote machine 
+			    - Start a live response session
+			    - Run read only live response commands on a remote machine 
 			- Advanced commands allow users to:
-			- Run basic actions
-			- Download a file from the remote machine
-			- View a script from the files library
-			- Run a script on the remote machine from the files library take read and write commands. 
+			    - Run basic actions
+			    - Download a file from the remote machine
+			    - View a script from the files library
+			    - Run a script on the remote machine from the files library take read and write commands. 
 			
 			For more information on the available commands, see [Investigate machines using Live response](live-response.md).
 		  
