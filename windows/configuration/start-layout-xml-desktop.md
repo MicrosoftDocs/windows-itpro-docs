@@ -53,6 +53,7 @@ The XML schema for `LayoutModification.xml` requires the following order for tag
 1. TopMFUApps
 1. CustomTaskbarLayoutCollection
 1. InkWorkspaceTopApps
+1. StartLayoutCollection
 
 Comments are not supported in the `LayoutModification.xml` file.
 
@@ -66,6 +67,8 @@ Comments are not supported in the `LayoutModification.xml` file.
 >- Do not add multiple rows of comments.
 
 The following table lists the supported elements and attributes for the LayoutModification.xml file.
+> [!NOTE]
+> RequiredStartGroupsCollection and AppendGroup syntax only applies to the special case of the Import-StartLayout method used for building and deploying Windows images.
 
 | Element | Attributes | Description |
 | --- | --- | --- |
