@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+manager: laurawi
 ms.localizationpriority: low
 ms.topic: article
 ---

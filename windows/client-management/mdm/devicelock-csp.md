@@ -126,7 +126,7 @@ Required. This node has the same set of policy nodes as the **ProviderID** node.
 
 Set device lock policies:
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>13</CmdID>
    <Add>

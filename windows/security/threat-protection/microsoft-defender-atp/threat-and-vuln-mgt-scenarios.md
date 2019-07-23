@@ -118,7 +118,7 @@ Security Administrators like you can request for the IT Administrator to remedia
 
 4. Go to the **Remediation** page to view the status of your remediation request.
 
-See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/atp-manage-vulnerabilities) for details.
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
 >If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.

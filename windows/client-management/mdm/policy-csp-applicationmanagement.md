@@ -594,7 +594,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task. Example of the declaration here: 
 
-``` syntax
+```xml
 <desktop:Extension Category="windows.startupTask"> 
    <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" /> 
 </desktop:Extension>
@@ -972,7 +972,7 @@ Value type is string.
 <!--Example-->
 Sample SyncML:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1"> 
   <SyncBody> 
     <Add> 
@@ -999,7 +999,7 @@ Sample SyncML:
 ```
 XSD:
 
-``` syntax
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="recurrence" final="restriction">
     <xs:restriction base="xs:string">
@@ -1042,21 +1042,31 @@ XSD:
 <!--/Policy-->
 
 <!--/Policies-->
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic
 
+<!--StartHoloLens2-->  
+## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-<!--EndHoloLens-->
+
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->  
-## <a href="" id="hololenbusinessspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens (ist gen) Commercial Suite
 
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens (1st gen) Development Edition
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -1067,4 +1077,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.

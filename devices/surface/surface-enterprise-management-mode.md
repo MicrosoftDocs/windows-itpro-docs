@@ -226,8 +226,16 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
+
+
+### Version 2.43.136.0
+* Support to enable/disable simulatenous multithreating 
+* Separate options for WiFi and Bluetooth for some devices 
+* Battery Limit removed for Surface Studio 
+
 ### Version 2.26.136.0
 * Add support to Surface Studio 2
+* Battery Limit feature
 
 ### Version 2.21.136.0
 * Add support to Surface Pro 6

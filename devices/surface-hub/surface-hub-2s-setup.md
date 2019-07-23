@@ -44,7 +44,7 @@ When you first start Surface Hub 2S, the device automatically enters first time 
  
 ## Configuring device admin accounts
 
-You can only set up device admins during first time Setup. For more information, refer to [Surface Hub 2S device affiliation](https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-prepare-environment#device-affiliation).
+You can only set up device admins during first time Setup. For more information, refer to [Surface Hub 2S device affiliation](https://docs.microsoft.com/surface-hub/surface-hub-2s-prepare-environment#device-affiliation).
 
  In the **Setup admins for this device** window, select one of the following options: Active Directory Domain Services, Azure Active Directory, or Local admin.
 
@@ -92,7 +92,7 @@ If you insert a USB thumb drive with a provisioning package into one of the USB 
 
    ![* Choose provisioning package to use*](images/sh2-run13.png) <br>
 
-3. If you created a multiple devices CSV file, you will be able to choose a device configuration. For more information, refer to [Create provisioning packages for Surface Hub 2S](https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-deploy#provisioning-multiple-devices-csv-file).
+3. If you created a multiple devices CSV file, you will be able to choose a device configuration. For more information, refer to [Create provisioning packages for Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-deploy#provisioning-multiple-devices-csv-file).
 
 
     ![* Select a device account and friendly name from your configuration file*](images/sh2-run14.png) <br>

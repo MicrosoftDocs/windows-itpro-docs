@@ -38,6 +38,16 @@ You can configure and manage Windows Defender Antivirus with:
 - Windows Management Instrumentation (WMI)
 - Group Policy
 
+>[!TIP]
+>You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
+>- Cloud-delivered protection
+>- Fast learning (including Block at first sight)
+>- Potentially unwanted application blocking
+
+> [!NOTE]
+> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
+
+=======
 <a id="sysreq"></a>
 ## Minimum system requirements
 

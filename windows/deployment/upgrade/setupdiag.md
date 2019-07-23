@@ -193,71 +193,71 @@ When searching log files, SetupDiag uses a set of rules to match known issues. T
 
 Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term "down-level" refers to the first phase of the upgrade process, which runs under the starting OS.
 
-1.	CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
+1. CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
     - This rule indicates that setup.exe was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
-2.	BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
+2. BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
     - This is a block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
-3.	VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
+3. VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
     - This block happens when the host OS is booted to a VHD image.  Upgrade is not supported when the host OS is booted from a VHD image.
-4.	PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
+4. PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
     - This indicates that the host OS is booted from a Windows To-Go device (USB key).  Upgrade is not supported in the Windows To-Go environment.
-5.	AuditModeHardblock - A03BD71B-487B-4ACA-83A0-735B0F3F1A90
+5. AuditModeHardblock - A03BD71B-487B-4ACA-83A0-735B0F3F1A90
     - This block indicates that the host OS is currently booted into Audit Mode, a special mode for modifying the Windows state.  Upgrade is not supported from this state.
-6.	SafeModeHardblock - 404D9523-B7A8-4203-90AF-5FBB05B6579B
+6. SafeModeHardblock - 404D9523-B7A8-4203-90AF-5FBB05B6579B
     - This block indicates that the host OS is booted to Safe Mode, where upgrade is not supported.
-7.	InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
+7. InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
     - This block is encountered when setup determines the system partition (where the boot loader files are stored) does not have enough space to be serviced with the newer boot files required during the upgrade process.
-8.	CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
+8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
     - This rule indicates there is an application that needs to be uninstalled before setup can continue.
-9.	CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
+9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
     - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat /ignore warning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
-10.	CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
+10. CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
     - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
-11.	HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
+11. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
     - This indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
-12.	HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
+12. HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
     - This rule indicates the host OS and the target OS language editions do not match.
-13.	HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
+13. HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
     - This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled.  This will block the pre-release signed build from booting if installed on the machine.
-14.	DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
+14. DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
     - This failure indicates the system ran out of disk space during the down-level operations of upgrade.
-15.	DiskSpaceFailure - 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191
+15. DiskSpaceFailure - 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191
     - This failure indicates the system drive ran out of available disk space at some point after the first reboot into the upgrade.
-16.	DeviceInstallHang - 37BB1C3A-4D79-40E8-A556-FDA126D40BC6
+16. DeviceInstallHang - 37BB1C3A-4D79-40E8-A556-FDA126D40BC6
     - This failure rule indicates the system hung or bug checked during the device installation phase of upgrade. 
-17.	DebugSetupMemoryDump - C7C63D8A-C5F6-4255-8031-74597773C3C6
+17. DebugSetupMemoryDump - C7C63D8A-C5F6-4255-8031-74597773C3C6
     - This offline only rule indicates a bug check occurred during setup.  If the debugger tools are available on the system, SetupDiag will debug the memory dump and provide details.
-18.	DebugSetupCrash - CEEBA202-6F04-4BC3-84B8-7B99AED924B1
+18. DebugSetupCrash - CEEBA202-6F04-4BC3-84B8-7B99AED924B1
     - This offline only rule indicates that setup itself encountered a failure that resulted in a process memory dump.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details.
-19.	DebugMemoryDump - 505ED489-329A-43F5-B467-FCAAF6A1264C
+19. DebugMemoryDump - 505ED489-329A-43F5-B467-FCAAF6A1264C
     - This offline only rule is for any memory.dmp file that resulted during the setup/upgrade operation.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details.
-20.	BootFailureDetected - 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7
+20. BootFailureDetected - 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7
     - This rule indicates a boot failure occurred during a specific phase of the update.  The rule will indicate the failure code and phase for diagnostic purposes.
-21.	FindDebugInfoFromRollbackLog - 9600EB68-1120-4A87-9FE9-3A4A70ACFC37
+21. FindDebugInfoFromRollbackLog - 9600EB68-1120-4A87-9FE9-3A4A70ACFC37
     - This rule will determine and give details when a bug check occurs during the setup/upgrade process that resulted in a memory dump, but without the requirement of the debugger package being on the executing machine.
-22.	AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
+22. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Finds fatal advanced installer operations that cause setup failures.
-23.	FindMigApplyUnitFailure - A4232E11-4043-4A37-9BF4-5901C46FD781
+23. FindMigApplyUnitFailure - A4232E11-4043-4A37-9BF4-5901C46FD781
     - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in as well as the error code it produced for diagnostic purposes.
-24.	FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
+24. FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
     - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in as well as the error code it produced for diagnostic purposes.
-25.	CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
+25. CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
     - This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes.
-26.	UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
+26. UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
     - Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes.
-27.	WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
+27. WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
     - This rule indicates the update failed to mount a wim file.  It will show the name of the wim file as well as the error message and error code associated with the failure for diagnostic purposes.
-28.	FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
+28. FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
     - Determines if the given setup was a success or not based off the logs.
-29.	FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
+29. FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
     - Gives information about failures surfaced early in the upgrade process by setuphost.exe
-30.	FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
+30. FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
     - Gives failure information surfaced by SetupPlatform, later in the down-level phase.
-31.	FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
+31. FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
     - Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly.
-32.	FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
+32. FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
     - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
-33.	FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
+33. FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
     - Gives last operation, failure phase and error information when a rollback occurs.
 34. AdvancedInstallerGenericFailure – 4019550D-4CAA-45B0-A222-349C48E86F71
     - A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported.
@@ -299,19 +299,19 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
 53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
-54.	PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
+54. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
     - These are for server upgrades only, will output the compliance block and remediation required.
-55.	PreReleaseWimMountDriverFound - 31EC76CC-27EC-4ADC-9869-66AABEDB56F0
+55. PreReleaseWimMountDriverFound - 31EC76CC-27EC-4ADC-9869-66AABEDB56F0
     - Captures failures due to having an unrecognized wimmount.sys driver registered on the system.
-56.	WinSetupBootFilterFailure - C073BFC8-5810-4E19-B53B-4280B79E096C
+56. WinSetupBootFilterFailure - C073BFC8-5810-4E19-B53B-4280B79E096C
     - Detects failures in the kernel mode file operations.
-57.	WimMountDriverIssue - 565B60DD-5403-4797-AE3E-BC5CB972FBAE
+57. WimMountDriverIssue - 565B60DD-5403-4797-AE3E-BC5CB972FBAE
     - Detects failures in WimMount.sys registration on the system.
-58.	DISMImageSessionFailure - 61B7886B-10CD-4C98-A299-B987CB24A11C
+58. DISMImageSessionFailure - 61B7886B-10CD-4C98-A299-B987CB24A11C
     - Captures failure information when DISM fails to start an image session successfully.
-59.	FindEarlyDownlevelError - A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52
+59. FindEarlyDownlevelError - A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52
     - Detects failures in down-level phase before setup platform is invoked.
-60.	FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
+60. FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
     - Captures failure information when setup platform encounters a fatal error.
 
 

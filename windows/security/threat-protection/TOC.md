@@ -3,6 +3,19 @@
 ## [Overview]()
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
+### [Threat & Vulnerability Management]()
+#### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+#### [Configuration score](microsoft-defender-atp/configuration-score.md)
+#### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+#### [Remediation](microsoft-defender-atp/tvm-remediation.md)
+#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
+#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+
+
+
 ### [Attack surface reduction]()
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
@@ -122,6 +135,7 @@
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 ### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+### [Evaluation lab](microsoft-defender-atp/evaluation-lab.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
@@ -436,7 +450,6 @@
 
 #### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 
-### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
