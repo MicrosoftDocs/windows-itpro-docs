@@ -174,7 +174,7 @@ You'll need to create an application and grant it permissions to fetch alerts fr
     - Description: Enter a description for the key.
     - Expires: Select **In 1 year**
 
-10. Click **Add**, copy the value of the client secret to a safe place, you will need this on the next step.
+10. Click **Add**, copy the value of the client secret to a safe place, you will need this in the next step.
 
 ### Step 2: Get access and refresh tokens from your customer's tenant
 This section guides you on how to use a PowerShell script to get the tokens from your customer's tenant. This script uses the application from the previous step to get the access and refresh tokens using the OAuth Authorization Code Flow.
