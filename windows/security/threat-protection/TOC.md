@@ -135,6 +135,7 @@
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 ### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+### [Evaluation lab](microsoft-defender-atp/evaluation-lab.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)

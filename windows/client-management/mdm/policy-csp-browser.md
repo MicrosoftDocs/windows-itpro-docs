@@ -13,10 +13,6 @@ manager: dansimp
 
 # Policy CSP - Browser
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
-
 <hr/>
 
 <!--Policies-->
@@ -3968,28 +3964,40 @@ Most restricted value: 0
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic
-
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-- [Browser/AllowPopups](#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
-- [Browser/AllowCookies](#browser-allowcookies)
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Browser policies supported by Windows Holographic for Business
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Browser policies supported by HoloLens 2
 
 - [Browser/AllowAutofill](#browser-allowautofill)
+- [Browser/AllowCookies](#browser-allowcookies)
 - [Browser/AllowDoNotTrack](#browser-allowdonottrack)
 - [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
 - [Browser/AllowPopups](#browser-allowpopups)
 - [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
 - [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+ <!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Browser policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Browser/AllowAutofill](#browser-allowautofill)
 - [Browser/AllowCookies](#browser-allowcookies)
- <!--EndHoloLensBusiness-->
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Browser policies supported by HoloLens (1st gen) Development Edition
+
+- [Browser/AllowCookies](#browser-allowcookies)
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -4000,3 +4008,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.
