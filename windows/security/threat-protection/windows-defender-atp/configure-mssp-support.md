@@ -165,7 +165,7 @@ You'll need to create an application and grant it permissions to fetch alerts fr
 
 6. Select the application, then click **Overview**.
 
-7. Copy the value from the **Application (client) ID** field to a safe place, you will need this on the next step.
+7. Copy the value from the **Application (client) ID** field to a safe place, you will need this in the next step.
 
 8. Select **Certificate & secrets** in the new application panel.
 
