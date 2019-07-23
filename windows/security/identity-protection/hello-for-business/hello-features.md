@@ -147,7 +147,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 ### On-premises Deployments
 
-** Requirements**
+**Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
 * Reset from settings - Windows 10, version 1703, Professional

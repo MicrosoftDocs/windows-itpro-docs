@@ -156,7 +156,7 @@ This event always generates, regardless of the object’s [SACL](https://msdn.mi
 
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the Security Descriptor Definition Language (SDDL) value for the new Central Policy ID (for the policy that has been applied to the object). See more information in **Central Policy ID\\Original Security Descriptor** field section for this event.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

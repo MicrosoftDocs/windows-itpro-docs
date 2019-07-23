@@ -537,7 +537,7 @@ Added in Windows 10, version 1607. Boolean value that disables the launch of al
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable all apps from Microsoft Store *
+-   GP English name: *Disable all apps from Microsoft Store*
 -   GP name: *DisableStoreApps*
 -   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*

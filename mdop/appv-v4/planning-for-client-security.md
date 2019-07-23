@@ -34,7 +34,7 @@ By default, at installation the App-V client is configured with the minimum perm
 
 By default, the installation of the client registers file type associations (FTAs) for OSD files, which enables users to start applications directly from OSD files instead of the published shortcuts. If a user with local administrator rights receives an OSD file containing malicious code, either in e-mail or downloaded from a Web site, the user can open the OSD file and start the application even if the client has been set to restrict the **Add Application** permission. You can unregister the FTAs for the OSD to reduce this risk. Also, consider blocking this extension in the e-mail system and at the firewall. For more information about configuring Outlook to block extensions, see <https://go.microsoft.com/fwlink/?LinkId=133278>.
 
-**Security Note:  **
+**Security Note:**
 
 Starting with App-V version 4.6, the file type association is no longer created for OSD files during a new installation of the client, although the existing settings will be maintained during an upgrade from version 4.2 or 4.5 of the App-V client. If for any reason it is essential to create the file type association, you can create the following registry keys and set their values as shown:
 
@@ -50,7 +50,7 @@ During installation, you can use the **RequireAuthorizationIfCached** parameter 
 
 Antivirus software running on an App-V Client computer can detect and report an infected file in the virtual environment. However, it cannot disinfect the file. If a virus is detected in the virtual environment, the antivirus software would perform the configured quarantine or repair operation in the cache, not in the actual package. Configure the antivirus software with an exception for the sftfs.fsd file. This file is the cache file that stores packages on the App-V Client.
 
-**Security Note:  **
+**Security Note:**
 
 If a virus is detected in an application or package deployed in the production environment, replace the application or package with a virus-free version.
 
