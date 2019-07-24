@@ -56,7 +56,9 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. Download the latest [Administrative Templates (.admx) for Windows 10, v1809](https://www.microsoft.com/download/details.aspx?id=57576).
+
+2.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -86,7 +88,18 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
+7.  Use the following registry key and DWORD value to **Hide all notifications**.
+   
+    **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+    **"DisableNotifications"=dword:00000001**
+    
+8.  Use the following registry key and DWORD value to **Hide not-critical notifications**
+
+     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+     **"DisableEnhancedNotifications"=dword:00000001**
+
+9. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+
 
 ## Notifications
 
@@ -136,3 +149,4 @@ This can only be done in Group Policy.
 | Dynamic lock on, bluetooth on, but unable to detect device |  |  | No |
 | NoPa or federated no hello |  |  | No |
 | NoPa or federated hello broken |  |  | No |
+
