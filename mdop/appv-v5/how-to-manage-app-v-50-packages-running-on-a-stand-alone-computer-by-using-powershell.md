@@ -58,7 +58,7 @@ Use the following information to add a package to a computer.
 **Important**  
 This example only adds a package. It does not publish the package to the user or the computer.
 
- 
+ 
 
 **Cmdlet**: Add-AppvClientPackage
 
@@ -94,7 +94,7 @@ Use the following information to publish a package that has been added to a spec
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-pub-pkg-a-user-standalone-posh"></a>To publish a package to a specific user
 
@@ -102,7 +102,7 @@ Use the following information to publish a package that has been added to a spec
 **Note**  
 You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
- 
+ 
 
 An administrator can publish a package to a specific user by specifying the optional **–UserSID** parameter with the **Publish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
 
@@ -144,7 +144,7 @@ Use the following information to unpublish a package which has been entitled to 
 **Note**  
 You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
- 
+ 
 
 An administrator can unpublish a package for a specific user by using the optional **–UserSID** parameter with the **Unpublish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
 
@@ -174,7 +174,7 @@ Use the following information to remove a package from the computer.
 **Note**  
 App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://go.microsoft.com/fwlink/?LinkId=324466).
 
- 
+ 
 
 ## <a href="" id="bkmk-admins-pub-pkgs"></a>To enable only administrators to publish or unpublish packages
 
@@ -182,7 +182,7 @@ App-V cmdlets have been assigned to variables for the previous examples for clar
 **Note**  
 **This feature is supported starting in App-V 5.0 SP3.**
 
- 
+ 
 
 Use the following cmdlet and parameter to enable only administrators (not end users) to publish or unpublish packages:
 
@@ -209,7 +209,7 @@ Use the following cmdlet and parameter to enable only administrators (not end us
 </tbody>
 </table>
 
- 
+ 
 
 To use the App-V Management console to set this configuration, see [How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md).
 
@@ -249,7 +249,7 @@ To use the App-V Management console to set this configuration, see [How to Publi
 </tbody>
 </table>
 
- 
+ 
 
 The pending task will run later, according to the following rules:
 
@@ -276,11 +276,11 @@ The pending task will run later, according to the following rules:
 </tbody>
 </table>
 
- 
+ 
 
 For more information about pending tasks, see [About App-V 5.0 SP2](about-app-v-50-sp2.md#bkmk-pkg-upgr-pendg-tasks).
 
-**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
@@ -289,9 +289,9 @@ For more information about pending tasks, see [About App-V 5.0 SP2](about-app-v-
 
 [Administering App-V by Using PowerShell](administering-app-v-by-using-powershell.md)
 
- 
+ 
 
- 
+ 
 
 
 

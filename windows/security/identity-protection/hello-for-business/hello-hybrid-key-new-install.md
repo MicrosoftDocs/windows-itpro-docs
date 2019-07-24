@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -29,14 +29,14 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Azure Active Directory](#azure-active-directory)
-* [Active Directory Federation Services](#active-directory-federation-services)
+* [Multifactor Authentication Services](#multifactor-authentication-services)
 
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md) section to prepare your Windows Hello for Business deployment by configuring directory synchronization.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  
 
-## Active Directory ##   
+## Active Directory
 This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
  
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
@@ -83,7 +83,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
 > * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based URL.
 
-### Section Review ###
+### Section Review
 
 > [!div class="checklist"]
 > *  Minimum Windows Server 2012 Certificate Authority.
@@ -92,7 +92,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > *  Root certificate authority certificate (Azure AD Joined devices).
 > *  Highly available certificate revocation list (Azure AD Joined devices).
   
-## Azure Active Directory ##
+## Azure Active Directory
 You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
 
 The next step of the deployment is to follow the [Creating an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) process to provision an Azure tenant for your organization.
@@ -104,30 +104,31 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 > * Create an Azure Active Directory Tenant.
 > * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
    
-## Multifactor Authentication Services ##
+## Multifactor Authentication Services
 Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA or a third-party MFA adapter
 
 Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.
 
-### Azure Multi-Factor Authentication (MFA) Cloud ###
+### Azure Multi-Factor Authentication (MFA) Cloud
+
 > [!IMPORTANT]
-As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
+> As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
 > * Azure Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
->
+> 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
-#### Azure MFA Provider #### 
+#### Azure MFA Provider 
 If your organization uses Azure MFA on a per-consumption model (no licenses), then review the [Create a Multifactor Authentication Provider](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider) section to create an Azure MFA Authentication provider and associate it with your Azure tenant. 
 
-#### Configure Azure MFA Settings ####
+#### Configure Azure MFA Settings
 Once you have created your Azure MFA authentication provider and associated it with an Azure tenant, you need to configure the multi-factor authentication settings.  Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
-#### Azure MFA User States ####
+#### Azure MFA User States
 After you have completed configuring your Azure MFA settings, you want to review configure [User States](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.
 
-### Azure MFA via ADFS ###
+### Azure MFA via ADFS
 Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.
 
 ### Section Review

@@ -57,7 +57,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
    a. In the navigation pane, select **Settings** > **Offboarding**.
 
@@ -67,7 +67,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
     
    d. Click **Download package**, and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 

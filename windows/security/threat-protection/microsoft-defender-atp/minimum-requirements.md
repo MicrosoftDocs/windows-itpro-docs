@@ -45,6 +45,16 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
 
+## Browser requirements
+Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
+- Microsoft Edge
+- Internet Explorer version 11
+- Google Chrome  
+
+>[!NOTE]
+>While other browsers might work, the mentioned browsers are the ones supported.
+
+
 ## Hardware and software requirements
 ### Supported Windows versions
 - Windows 7 SP1 Enterprise
@@ -57,6 +67,7 @@ For more information about licensing requirements for Microsoft Defender ATP pla
   - Windows 10 Pro
   - Windows 10 Pro Education
 - Windows server
+  - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016, version 1803
@@ -86,24 +97,24 @@ When you run the onboarding wizard for the first time, you must choose where you
 > -   You cannot change your data storage location after the first-time setup.
 > -   Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
-<span id="telemetry-and-diagnostics-settings" />
+
 ### Diagnostic data settings
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
+By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
-1.  Open an elevated command-line prompt on the machine:
+1. Open an elevated command-line prompt on the machine:
 
-  a.  Go to **Start** and type **cmd**.
+   a.  Go to **Start** and type **cmd**.
 
-  b.  Right-click **Command prompt** and select **Run as administrator**.
+   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command, and press **Enter**:
+2. Enter the following command, and press **Enter**:
 
-    ```text
-    sc qc diagtrack
-    ```
+   ```text
+   sc qc diagtrack
+   ```
 
 If the service is enabled, then the result should look like the following screenshot:
 
@@ -143,6 +154,9 @@ The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB t
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md) .
 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+
+
+
 
 
 ## Windows Defender Antivirus configuration requirement

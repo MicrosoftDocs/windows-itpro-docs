@@ -19,10 +19,10 @@ ms.date: 06/16/2016
 
 Use the following procedure to install the database server and management server on different computers. The computer you plan to install the database server on must be running a supported version of Microsoft SQL or the installation will fail.
 
-**Note**  
+**Note**  
 After you complete the deployment, the **Microsoft SQL Server name**, **instance name** and **database name** will be required by the administrator installing the service to be able to connect to these databases.
 
- 
+
 
 **To install the management database and the management server on separate computers**
 
@@ -44,14 +44,16 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 7.  On the next **Create New Management Server Database** page, select **Use a remote computer**, and type the remote machine account using the following format: **Domain\\MachineAccount**.
 
-    **Note**  
+    **Note**  
     If you plan to deploy the management server on the same computer you must select **Use this local computer**.
 
-     
 
-    Specify the user name for the management server **Install Administrator** using the following format: **Domain\\AdministratorLoginName**. Click **Next**.
 
-8.  To start the installation, click **Install**.
+~~~
+Specify the user name for the management server **Install Administrator** using the following format: **Domain\\AdministratorLoginName**. Click **Next**.
+~~~
+
+8. To start the installation, click **Install**.
 
 **To install the reporting database and the reporting server on separate computers**
 
@@ -73,14 +75,16 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 7.  On the next **Create New Reporting Server Database** page, select **Use a remote computer**, and type the remote machine account using the following format: **Domain\\MachineAccount**.
 
-    **Note**  
+    **Note**  
     If you plan to deploy the reporting server on the same computer you must select **Use this local computer**.
 
-     
 
-    Specify the user name for the reporting server **Install Administrator** using the following format: **Domain\\AdministratorLoginName**. Click **Next**.
 
-8.  To start the installation, click **Install**.
+~~~
+Specify the user name for the reporting server **Install Administrator** using the following format: **Domain\\AdministratorLoginName**. Click **Next**.
+~~~
+
+8. To start the installation, click **Install**.
 
 **To install the management and reporting databases using App-V 5.0 database scripts**
 
@@ -98,23 +102,23 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 4.  For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
-    **Note**  
+    **Note**  
     For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using PowerShell](how-to-install-the-app-v-databases-and-convert-the-associated-security-identifiers--by-using-powershell.md).
 
-     
+
 
 5.  Run the scripts on the computer running Microsoft SQL Server.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Deploying App-V 5.0](deploying-app-v-50.md)
 
- 
 
- 
+
+
 
 
 

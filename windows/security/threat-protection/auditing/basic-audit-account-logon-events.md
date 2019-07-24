@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dulcemontemayor
+author: Mir0sh
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,9 +47,9 @@ You can configure this security setting by opening the appropriate policy under 
 | 681          | Logon failure. A domain account logon was attempted. This event is not generated in Windows XP or in the Windows Server 2003 family. |
 | 682          | A user has reconnected to a disconnected terminal server session.                                                                    |
 | 683          | A user disconnected a terminal server session without logging off.                                                                   |
- 
+ 
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+ 
+ 

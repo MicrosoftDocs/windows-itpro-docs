@@ -68,7 +68,7 @@ The following best practices should be considered when sequencing a new applicat
     **Note**  
     If you are running App-V 4.6 SP1 you do not need to sequence to a directory that follows the 8.3 naming convention.
 
-     
+     
 
 -   **Sequence to a unique directory that follows the 8.3 naming convention.**
 
@@ -95,9 +95,9 @@ The following best practices should be considered when sequencing a new applicat
 
 [Planning for Application Virtualization System Deployment](planning-for-application-virtualization-system-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

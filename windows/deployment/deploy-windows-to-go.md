@@ -3,14 +3,14 @@ title: Deploy Windows To Go in your organization (Windows 10)
 description: This topic helps you to deploy Windows To Go in your organization.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -19,7 +19,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](planning/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](planning/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 
@@ -36,7 +36,7 @@ The following is a list of items that you should be aware of before you start th
 
 * When running a Windows To Go workspace, always shutdown the workspace before unplugging the drive.
 
--   System Center 2012 Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. You can download Configuration Manager for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkId=618746). For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=619148).
+* System Center 2012 Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. You can download Configuration Manager for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkId=618746). For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=619148).
 
 * If you are planning on using a USB drive duplicator to duplicate Windows To Go drives, do not configure offline domain join or BitLocker on the drive.
 
@@ -53,8 +53,8 @@ Completing these steps will give you a generic Windows To Go drive that can be d
 
 In this step we are creating the operating system image that will be used on the Windows To Go drives. You can use the Windows To Go Creator Wizard or you can [do this manually](https://go.microsoft.com/fwlink/p/?LinkId=619174) using a combination of Windows PowerShell and command-line tools.
 
->[!WARNING]  
->The preferred method to create a single Windows To Go drive is to use the Windows To Go Creator Wizard included in Windows 10 Enterprise and Windows 10 Education.
+>[!WARNING]
+>The preferred method to create a single Windows To Go drive is to use the Windows To Go Creator Wizard included in Windows 10 Enterprise and Windows 10 Education.
 
 #### To create a Windows To Go workspace with the Windows To Go Creator Wizard
 
@@ -62,21 +62,21 @@ In this step we are creating the operating system image that will be used on the
 
 2. Insert the USB drive that you want to use as your Windows To Go drive into your PC.
 
-3. Verify that the .wim file location (which can be a network share, a DVD , or a USB drive) is accessible and that it contains a valid Windows 10 Enterprise or Windows 10 Education image that has been generalized using sysprep. Many environments can use the same image for both Windows To Go and desktop deployments.
+3. Verify that the .wim file location (which can be a network share, a DVD , or a USB drive) is accessible and that it contains a valid Windows 10 Enterprise or Windows 10 Education image that has been generalized using sysprep. Many environments can use the same image for both Windows To Go and desktop deployments.
 
-    >[!NOTE]  
+    >[!NOTE]
     >For more information about .wim files, see [Windows System Image Manager (Windows SIM) Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=619150). For more information about using sysprep, see [Sysprep Overview](https://go.microsoft.com/fwlink/p/?LinkId=619151).
 
 4. Using Cortana, search for **Windows To Go** and then press **Enter**. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**. The **Windows To Go Creator Wizard** opens.
 
 5. On the **Choose the drive you want to use** page select the drive that represents the USB drive you inserted previously, then click **Next.**
 
-6. On the **Choose a Windows image** page, click **Add Search Location** and then navigate to the .wim file location and click select folder. The wizard will display the installable images present in the folder; select the Windows 10 Enterprise or Windows 10 Education image you wish to use and then click **Next**.
+6. On the **Choose a Windows image** page, click **Add Search Location** and then navigate to the .wim file location and click select folder. The wizard will display the installable images present in the folder; select the Windows 10 Enterprise or Windows 10 Education image you wish to use and then click **Next**.
 
 7.  (Optional) On the **Set a BitLocker password (optional)** page, you can select **Use BitLocker with my Windows To Go Workspace** to encrypt your Windows To Go drive. If you do not wish to encrypt the drive at this time, click **Skip**. If you decide you want to add BitLocker protection later, see [Enable BitLocker protection for your Windows To Go drive](https://go.microsoft.com/fwlink/p/?LinkId=619152) for instructions.
 r
 
-    >[!WARNING]  
+    >[!WARNING]
     >If you plan to use a USB-Duplicator to create multiple Windows To Go drives, do not enable BitLocker. Drives protected with BitLocker should not be duplicated.
 
     If you choose to encrypt the Windows To Go drive now:
@@ -84,13 +84,15 @@ r
     - Type a password that is at least eight characters long and conforms to your organizations password complexity policy. This password will be provided before the operating system is started so any characters you use must be able to be interpreted by the firmware. Some firmware does not support non-ASCII characters.
 
 
-        >[!IMPORTANT]  
-        >The BitLocker recovery password will be saved in the documents library of the computer used to create the workspace automatically. If your organization is using Active Directory Domain Services (AD DS) to store recovery passwords it will also be saved in AD DS under the computer account of the computer used to create the workspace. This password will be used only if you need to recover access to the drive because the BitLocker password specified in the previous step is not available, such as if a password is lost or forgotten. For more information about BitLocker and AD DS, see [Active Directory Domain Services considerations](https://go.microsoft.com/fwlink/p/?LinkId=619157).    
+~~~
+    >[!IMPORTANT]
+    >The BitLocker recovery password will be saved in the documents library of the computer used to create the workspace automatically. If your organization is using Active Directory Domain Services (AD DS) to store recovery passwords it will also be saved in AD DS under the computer account of the computer used to create the workspace. This password will be used only if you need to recover access to the drive because the BitLocker password specified in the previous step is not available, such as if a password is lost or forgotten. For more information about BitLocker and AD DS, see [Active Directory Domain Services considerations](https://go.microsoft.com/fwlink/p/?LinkId=619157).    
+~~~
 
 8. Verify that the USB drive inserted is the one you want to provision for Windows To Go and then click **Create** to start the Windows To Go workspace creation process.
 
-    >[!WARNING]  
-    >The USB drive identified will be reformatted as part of the Windows To Go provisioning process and any data on the drive will be erased.  
+    >[!WARNING]
+    >The USB drive identified will be reformatted as part of the Windows To Go provisioning process and any data on the drive will be erased.  
 
 9. Wait for the creation process to complete, which can take 20 to 30 minutes. A completion page will be displayed that tells you when your Windows To Go workspace is ready to use. From the completion page you can configure the Windows To Go startup options to configure the current computer as a Windows To Go host computer.
 
@@ -98,7 +100,7 @@ Your Windows To Go workspace is now ready to be started. You can now [prepare a 
 
 #### Windows PowerShell equivalent commands
 
-The following Windows PowerShell cmdlet or cmdlets perform the same function as the preceding procedure. Enter each cmdlet on a single line, even though they may appear word-wrapped across several lines here because of formatting constraints. This procedure can only be used on PCs that are running Windows 10. Before starting, ensure that only the USB drive that you want to provision as a Windows To Go drive is connected to the PC.
+The following Windows PowerShell cmdlet or cmdlets perform the same function as the preceding procedure. Enter each cmdlet on a single line, even though they may appear word-wrapped across several lines here because of formatting constraints. This procedure can only be used on PCs that are running Windows 10. Before starting, ensure that only the USB drive that you want to provision as a Windows To Go drive is connected to the PC.
 
 1. Using Cortana, search for **powershell**, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
@@ -140,7 +142,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 3. Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](https://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
 
-    >[!TIP]  
+    >[!TIP]
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
     ``` syntax
@@ -151,9 +153,11 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 4.  Now use the [bcdboot](https://go.microsoft.com/fwlink/p/?LinkId=619163) command line tool to move the necessary boot components to the system partition on the disk. This helps ensure that the boot components, operating system versions, and architectures match. The `/f ALL` parameter indicates that boot components for UEFI and BIOS should be placed on the system partition of the disk. The following example illustrates this step:
 
 
-    ``` syntax
-    W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
-    ```
+~~~
+``` syntax
+W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
+```
+~~~
 
 5. Apply SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
 
@@ -221,7 +225,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
     After the answer file has been saved, copy unattend.xml into the sysprep folder on the Windows To Go drive (for example, W:\\Windows\\System32\\sysprep\)
 
-    >[!IMPORTANT]  
+    >[!IMPORTANT]
     >Setup unattend files are processed based on their location. Setup will place a temporary unattend file into the **%systemroot%\\panther** folder which is the first location that setup will check for installation information. You should make sure that folder does not contain a previous version of an unattend.xml file to ensure that the one you just created is used.
 
     If you do not wish to boot your Windows To Go device on this computer and want to remove it to boot it on another PC, be sure to use the **Safely Remove Hardware and Eject Media** option to safely disconnect the drive before physically removing it from the PC.
@@ -232,21 +236,21 @@ Your Windows To Go workspace is now ready to be started. You can now [prepare a 
 
 ### To prepare a host computer
 
-Computers running Windows 8 and later can be configured as host computers that use Windows To Go automatically whenever a Windows To Go workspace is available at startup. When the Windows To Go startup options are enabled on a host computer, Windows will divert startup to the Windows To Go drive whenever it is attached to the computer. This makes it easy to switch from using the host computer to using the Windows To Go workspace.
+Computers running Windows 8 and later can be configured as host computers that use Windows To Go automatically whenever a Windows To Go workspace is available at startup. When the Windows To Go startup options are enabled on a host computer, Windows will divert startup to the Windows To Go drive whenever it is attached to the computer. This makes it easy to switch from using the host computer to using the Windows To Go workspace.
 
->[!TIP]  
->If you will be using a PC running Windows 7 as your host computer, see [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951) for information to help you prepare the host computer.
+>[!TIP]
+>If you will be using a PC running Windows 7 as your host computer, see [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951) for information to help you prepare the host computer.
 
 
 If you want to use the Windows To Go workspace, simply shut down the computer, plug in the Windows To Go drive, and turn on the computer. To use the host computer, shut down the Windows To Go workspace, unplug the Windows To Go drive, and turn on the computer.
 
-To set the Windows To Go Startup options for host computers running Windows 10:
+To set the Windows To Go Startup options for host computers running Windows 10:
 
 1. Using Cortana, search for **Windows To Go startup options** and then press **Enter**.
 
 2. In the **Windows To Go Startup Options** dialog box, select **Yes**, and then click **Save Changes** to configure the computer to boot from USB
 
-For host computers running Windows 8 or Windows 8.1:
+For host computers running Windows 8 or Windows 8.1:
 
 1. Press **Windows logo key+W**, search for **Windows To Go startup options**, and then press **Enter**.
 
@@ -283,7 +287,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 **Prerequisites for remote access scenario**
 
--   A domain-joined computer running Windows 8 or later and is configured as a Windows To Go host computer
+-   A domain-joined computer running Windows 8 or later and is configured as a Windows To Go host computer
 
 -   A Windows To Go drive that hasn’t been booted or joined to the domain using unattend settings.
 
@@ -299,7 +303,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
     djoin /provision /domain <exampledomain.com> /machine <examplewindowstogo_workspace_name> /certtemplate <WorkstationAuthentication_template> /policynames <DirectAccess Client Policy: {GUID}> /savefile <C:\example\path\domainmetadatafile> /reuse
     ```
 
-    >[!NOTE]  
+    >[!NOTE]
     >The **/certtemplate** parameter supports the use of certificate templates for distributing certificates for DirectAccess, if your organization is not using certificate templates you can omit this parameter. Additionally, if are using djoin.exe with Windows Server 2008-based Domain Controllers, append the /downlevel switch during provisioning. For more information see the [Offline Domain Join Step-by-Step guide](https://go.microsoft.com/fwlink/p/?LinkId=619171).
 
 2. Insert the Windows To Go drive.
@@ -345,66 +349,68 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 5. Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](https://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
 
 
-    >[!TIP]  
-    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
+~~~
+>[!TIP]
+>The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-    ``` syntax
-    #The WIM file must contain a sysprep generalized image.
-    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
-    ```
+``` syntax
+#The WIM file must contain a sysprep generalized image.
+dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
+```
+~~~
 
-6.  After those commands have completed, run the following command:
+6. After those commands have completed, run the following command:
 
-    ``` syntax
-    djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows
-    ```
+   ``` syntax
+   djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows
+   ```
 
-7.  Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
+7. Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
 
-    ``` syntax
-    <?xml version="1.0" encoding="utf-8"?>
-    <unattend xmlns="urn:schemas-microsoft-com:unattend">
-        <settings pass="oobeSystem">
-            <component name="Microsoft-Windows-WinRE-RecoveryAgent"
-              processorArchitecture="x86"
-              publicKeyToken="31bf3856ad364e35" language="neutral"
-              versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <UninstallWindowsRE>true</UninstallWindowsRE>
-               <OOBE>
-                  <HideEULAPage>true</HideEULAPage>
-                  <ProtectYourPC>1</ProtectYourPC>
-                  <NetworkLocation>Work</NetworkLocation>
-                </OOBE>
-             </component>
+   ``` syntax
+   <?xml version="1.0" encoding="utf-8"?>
+   <unattend xmlns="urn:schemas-microsoft-com:unattend">
+       <settings pass="oobeSystem">
            <component name="Microsoft-Windows-WinRE-RecoveryAgent"
-              processorArchitecture="amd64"
-              publicKeyToken="31bf3856ad364e35" language="neutral"
-              versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <UninstallWindowsRE>true</UninstallWindowsRE>
-               <OOBE>
-                  <HideEULAPage>true</HideEULAPage>
-                  <ProtectYourPC>1</ProtectYourPC>
-                  <NetworkLocation>Work</NetworkLocation>
+             processorArchitecture="x86"
+             publicKeyToken="31bf3856ad364e35" language="neutral"
+             versionScope="nonSxS"
+             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <UninstallWindowsRE>true</UninstallWindowsRE>
+              <OOBE>
+                 <HideEULAPage>true</HideEULAPage>
+                 <ProtectYourPC>1</ProtectYourPC>
+                 <NetworkLocation>Work</NetworkLocation>
                </OOBE>
-    </component>
-        </settings>
-    </unattend>
-    ```
+            </component>
+          <component name="Microsoft-Windows-WinRE-RecoveryAgent"
+             processorArchitecture="amd64"
+             publicKeyToken="31bf3856ad364e35" language="neutral"
+             versionScope="nonSxS"
+             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <UninstallWindowsRE>true</UninstallWindowsRE>
+              <OOBE>
+                 <HideEULAPage>true</HideEULAPage>
+                 <ProtectYourPC>1</ProtectYourPC>
+                 <NetworkLocation>Work</NetworkLocation>
+              </OOBE>
+   </component>
+       </settings>
+   </unattend>
+   ```
 
-8.  Safely remove the Windows To Go drive.
+8. Safely remove the Windows To Go drive.
 
-9.  From a host computer, either on or off premises, start the computer and boot the Windows To Go workspace.
+9. From a host computer, either on or off premises, start the computer and boot the Windows To Go workspace.
 
-    * If on premises using a host computer with a direct network connection, sign on using your domain credentials.
+   * If on premises using a host computer with a direct network connection, sign on using your domain credentials.
 
-    * If off premises, join a wired or wireless network with internet access and then sign on again using your domain credentials.
+   * If off premises, join a wired or wireless network with internet access and then sign on again using your domain credentials.
 
-    >[!NOTE]  
-    >Depending on your DirectAccess configuration you might be asked to insert your smart card to log on to the domain.
+   >[!NOTE]
+   >Depending on your DirectAccess configuration you might be asked to insert your smart card to log on to the domain.
 
 You should now be able to access your organization’s network resources and work from your Windows To Go workspace as you would normally work from your standard desktop computer on premises.
 
@@ -416,7 +422,7 @@ Enabling BitLocker on your Windows To Go drive will help ensure that your data i
 
 * A Windows To Go drive that can be successfully provisioned.
 
-* A computer running Windows 8 configured as a Windows To Go host computer
+* A computer running Windows 8 configured as a Windows To Go host computer
 
 * Review the following Group Policy settings for BitLocker Drive Encryption and modify the configuration as necessary:
 
@@ -438,12 +444,12 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 -   If BitLocker protection is enabled during provisioning, the BitLocker recovery keys will be stored under the computer account of the computer used for provisioning the drives. If backing up recovery keys to AD DS is not used, the recovery keys will need to be printed or saved to a file for each drive. The IT administrator must track which keys were assigned to which Windows To Go drive.
 
--   **Warning**  
+-   **Warning**  
     If BitLocker is enabled after distribution, the recovery key will be backed up to AD DS under the computer account of the workspace. If backing up recovery keys to AD DS is not used, they can be printed or saved to a file by the user. If the IT administrator wants a central record of recovery keys, a process by which the user provides the key to the IT department must be put in place.
 
 #### To enable BitLocker during provisioning
 
-1. Start the host computer that is running Windows 8.
+1. Start the host computer that is running Windows 8.
 
 2. Insert your Windows To Go drive.
 
@@ -451,7 +457,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 4. Provision the Windows To Go drive using the following cmdlets:
 
-    >[!NOTE]  
+    >[!NOTE]
     >If you used the [manual method for creating a workspace](https://go.microsoft.com/fwlink/p/?LinkId=619174) you should have already provisioned the Windows To Go drive. If so, you can continue on to the next step.
 
    ``` syntax
@@ -490,7 +496,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](https://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
 
-   >[!TIP]  
+   >[!TIP]
    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
    ``` syntax
@@ -522,15 +528,15 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    Enable-BitLocker W: -PasswordProtector $spwd
    ```
 
-   >[!WARNING]  
+   >[!WARNING]
    >To have BitLocker only encrypt used space on the disk append the parameter `–UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
 
 8. Copy the numerical recovery password and save it to a file in a safe location. The recovery password will be required if the password is lost or forgotten.
 
-   >[!WARNING]  
+   >[!WARNING]
    >If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
 
-   If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
+   If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
 
 9. Safely remove the Windows To Go drive.
 
@@ -555,7 +561,7 @@ The Windows To Go drives are now ready to be distributed to users and are protec
 
 4. Complete the steps in the **BitLocker Setup Wizard** selecting the password protection option.
 
->[!NOTE]  
+>[!NOTE]
 >If you have not configured the Group Policy setting **\\Windows Components\\BitLocker Drive Encryption\\Operating System Drives\\Require additional authentication at startup** to specify **Allow BitLocker without a compatible TPM** you will not be able to enable BitLocker from within the Windows To Go workspace.
 
 ### Advanced deployment sample script
@@ -586,12 +592,12 @@ The sample script creates an unattend file that streamlines the deployment proce
 
     The RemoteSigned execution policy will prevent unsigned scripts from the internet from running on the computer, but will allow locally created scripts to run. For more information on execution policies, see [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/p/?LinkId=619175).
 
-    >[!TIP]  
-    >To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally type the following cmdlet, replacing &lt;cmdlet-name&gt; with the name of the cmdlet you want to see the help for:
-
-    >`Get-Help <cmdlet-name> -Online`
-
-    >This command causes Windows PowerShell to open the online version of the help topic in your default Internet browser.
+   > [!TIP]
+   > To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally type the following cmdlet, replacing &lt;cmdlet-name&gt; with the name of the cmdlet you want to see the help for:
+   > 
+   > `Get-Help <cmdlet-name> -Online`
+   > 
+   > This command causes Windows PowerShell to open the online version of the help topic in your default Internet browser.
 
 #### Windows To Go multiple drive provisioning sample script
 
@@ -994,9 +1000,9 @@ In the PowerShell provisioning script, after the image has been applied, you can
 
 [BitLocker overview](https://go.microsoft.com/fwlink/p/?LinkId=619173)
 
- 
 
- 
+
+
 
 
 

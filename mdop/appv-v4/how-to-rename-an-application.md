@@ -30,16 +30,16 @@ You can rename an application through the Application Virtualization Server Mana
     **Note**  
     You can also highlight the application in the right pane and press **F2**.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Applications in the Server Management Console](how-to-manage-applications-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

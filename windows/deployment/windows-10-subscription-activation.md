@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
+manager: laurawi
 ms.collection: M365-modern-desktop
 search.appverid:
 - MET150
@@ -92,10 +93,10 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 ### Windows 10 Education requirements
 
-1.	Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
-2.	A device with a Windows 10 Pro Education digital license. You can confirm this information in Settings > Update & Security> Activation. 
-3.	The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription. 
-4.	Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
+1. Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
+2. A device with a Windows 10 Pro Education digital license. You can confirm this information in Settings > Update & Security> Activation. 
+3. The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription. 
+4. Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
 >If Windows 10 Pro is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.  
 
@@ -136,8 +137,8 @@ After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
 Note: 
-1.	A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-2.	A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+1. A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+2. A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios
 

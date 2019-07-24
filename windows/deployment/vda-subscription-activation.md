@@ -1,8 +1,8 @@
 ---
 title: Configure VDA for Windows 10 Subscription Activation
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -42,7 +42,7 @@ Deployment instructions are provided for the following scenarios:
 ### Scenario 2
 - The Hyper-V host and the VM are both running Windows 10, version 1803 or later.
 
-    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in iwth a local account or using an Azure Active Directory account.
+    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
 
 ### Scenario 3
 - The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner.
@@ -85,7 +85,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
     3. Right-click the mounted image in file explorer and click **Eject**.
-1. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+16. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 

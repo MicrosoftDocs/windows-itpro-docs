@@ -19,14 +19,14 @@ The BrowserFavorite configuration service provider is used to add and remove URL
 
 > **Note**  BrowserFavorite CSP is only supported in Windows Phone 8.1.
 
- 
+ 
 
 The BrowserFavorite configuration service provider manages only the favorites at the root favorite folder level. It does not manage subfolders under the root favorite folder nor does it manage favorites under a subfolder.
 
 > **Note**  
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_INTERNET\_EXPLORER\_FAVORITES capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 The following diagram shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
@@ -37,7 +37,7 @@ Required. Specifies the user-friendly name of the favorite URL that is displayed
 
 > **Note**  The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " < > |
 
- 
+ 
 
 Adding the same favorite twice adds only one occurrence to the Favorites list. If a favorite is added when another favorite with the same name but a different URL is already in the Favorites list, the existing favorite is replaced with the new favorite.
 
@@ -49,7 +49,7 @@ Optional. Specifies the complete URL for the favorite.
 
 Adding a new browser favorite.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <wap-provisioningdoc>
   <characteristic type="BrowserFavorite">
@@ -98,16 +98,16 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

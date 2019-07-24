@@ -131,7 +131,7 @@ The Permissions.sql script should be updated according to **Step 2** in [KB arti
 **Important**  
 **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
 
- 
+ 
 
 ## Microsoft Visual Studio 2012 not supported
 
@@ -150,7 +150,7 @@ The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO
 ## Intermittent "File Not Found" error when Mounting a Package
 
 
-Occassionally when mounting a package, a "File Not Found" (0x80070002) error is generated. Typically, this occurs when a folder in an App-V package contains many files ( i.e. 20K or more). This can cause streaming to take longer than expected and to time out which generates the "File Not Found" error.
+Occasionally when mounting a package, a "File Not Found" (0x80070002) error is generated. Typically, this occurs when a folder in an App-V package contains many files ( i.e. 20K or more). This can cause streaming to take longer than expected and to time out which generates the "File Not Found" error.
 
 **Workaround**: Starting with HF06, a new registry key has been introduced to enable extending this time-out period.
 
@@ -179,7 +179,7 @@ Occassionally when mounting a package, a "File Not Found" (0x80070002) error is 
 <tr>
 <td align="left">Default</td>
 <td align="left">5<br />
-**Note**: this value is the default if the registry key is not defined or a value <=5 is specified.
+<strong>Note</strong>: this value is the default if the registry key is not defined or a value &lt;=5 is specified.
 </td>
 </tr>
 </tbody>
@@ -195,9 +195,9 @@ Occassionally when mounting a package, a "File Not Found" (0x80070002) error is 
 
 [About App-V 5.1](about-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

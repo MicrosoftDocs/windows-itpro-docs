@@ -4,11 +4,11 @@ description: DiagnosticLog CSP
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -51,7 +51,7 @@ The changes on **State**, **Keywords** and **TraceLevel** takes effect immediate
 
 > **Note**  Microsoft-WindowsPhone-Enterprise-Diagnostics-Provider (GUID - 3da494e4-0fe2-415C-b895-fb5265c5c83b) has the required debug resource files built into Windows OS, which will allow the logs files to be decoded on the remote machine. Any other logs may not have the debug resources required to decode.
 
- 
+ 
 
 ### Channel-based tracing
 
@@ -114,14 +114,14 @@ Interior node to contain dynamic child interior nodes for active providers.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-collectors-collectorname"></a>**EtwLog/Collectors/****_CollectorName_**  
+<a href="" id="etwlog-collectors-collectorname"></a>**EtwLog/Collectors/**<strong>*CollectorName*</strong>  
 Dynamic nodes to represent active collector configuration.
 
 Supported operations are Add, Delete, and Get.
 
 Add a collector
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -143,7 +143,7 @@ Add a collector
 
 Delete a collector
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -174,7 +174,7 @@ The following table represents the possible values:
 | 0     | Stopped     |
 | 1     | Started     |
 
- 
+ 
 
 <a href="" id="etwlog-collectors-collectorname-tracelogfilemode"></a>**EtwLog/Collectors/*CollectorName*/TraceLogFileMode**  
 Specifies the log file logging mode.
@@ -208,7 +208,7 @@ The following table lists the possible values:
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="etwlog-collectors-collectorname-tracecontrol"></a>**EtwLog/Collectors/*CollectorName*/TraceControl**  
 Specifies the logging and report action state.
@@ -222,7 +222,7 @@ The following table lists the possible values:
 | START | Start log tracing. |
 | STOP  | Stop log tracing   |
 
- 
+ 
 
 The supported operation is Execute.
 
@@ -232,7 +232,7 @@ To stop the trace, running an execute command on this node with the value STOP.
 
 Start collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -255,7 +255,7 @@ Start collector trace logging
 
 Stop collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -290,18 +290,18 @@ Interior node to contain dynamic child interior nodes for active providers.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-collectors-collectorname-providers-providerguid"></a>**EtwLog/Collectors/*CollectorName*/Providers/****_ProviderGUID_**  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid"></a>**EtwLog/Collectors/*CollectorName*/Providers/**<strong>*ProviderGUID*</strong>  
 Dynamic nodes to represent active provider configuration per provider GUID.
 
 > **Note**  Microsoft-WindowsPhone-Enterprise-Diagnostics-Provider (GUID - 3da494e4-0fe2-415C-b895-fb5265c5c83b) has the required debug resource files built into Windows OS, which will allow the logs files to be decoded on the remote machine. Any other logs may not have the debug resources required to decode.
 
- 
+ 
 
 Supported operations are Add, Delete, and Get.
 
 Add a provider
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -323,7 +323,7 @@ Add a provider
 
 Delete a provider
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -384,11 +384,11 @@ The following table lists the possible values.
 </tbody>
 </table>
 
- 
+ 
 
 Set provider **TraceLevel**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -420,7 +420,7 @@ Default value is 0 meaning no keyword.
 
 Get provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -440,7 +440,7 @@ Get provider **Keywords**
 
 Set provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -495,11 +495,11 @@ The following table lists the possible values. Default value is TRUE.
 </tbody>
 </table>
 
- 
+ 
 
 Set provider **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -525,14 +525,14 @@ Interior node to contain dynamic child interior nodes for registered channels.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-channels-channelname"></a>**EtwLog/Channels/****_ChannelName_**  
+<a href="" id="etwlog-channels-channelname"></a>**EtwLog/Channels/**<strong>*ChannelName*</strong>  
 Dynamic nodes to represent a registered channel. The node name must be a valid Windows event log channel name, such as "Microsoft-Client-Licensing-Platform%2FAdmin"
 
 Supported operations are Add, Delete, and Get.
 
 Add a channel
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -554,7 +554,7 @@ Add a channel
 
 Delete a channel
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -578,7 +578,7 @@ The supported operation is Execute.
 
 Export channel event data
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -606,7 +606,7 @@ Default value is empty string.
 
 Get channel **Filter**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -655,11 +655,11 @@ The following table lists the possible values.
 </tbody>
 </table>
 
- 
+ 
 
 Get channel **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -678,7 +678,7 @@ Get channel **State**
 
 Set channel **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -707,7 +707,7 @@ Added in version 1.3 of the CSP in Windows 10, version 1607. Triggers the snapp
 
 The supported value is Execute.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -734,7 +734,7 @@ Node to contain child nodes for log file transportation protocols and correspond
 <a href="" id="filedownload-dmchannel"></a>**FileDownload/DMChannel**  
 Node to contain child nodes using DM channel for transport protocol.
 
-<a href="" id="filedownload-dmchannel-filecontext"></a>**FileDownload/DMChannel/****_FileContext_**  
+<a href="" id="filedownload-dmchannel-filecontext"></a>**FileDownload/DMChannel/**<strong>*FileContext*</strong>  
 Dynamic interior nodes that represents per log file context.
 
 <a href="" id="filedownload-dmchannel-filecontext-blocksizekb"></a>**FileDownload/DMChannel/*FileContext*/BlockSizeKB**  
@@ -748,7 +748,7 @@ Supported operations are Get and Replace.
 
 Set **BlockSizeKB**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -771,7 +771,7 @@ Set **BlockSizeKB**
 
 Get **BlockSizeKB**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -797,7 +797,7 @@ The only supported operation is Get.
 
 Get **BlockCount**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -823,7 +823,7 @@ Supported operations are Get and Replace.
 
 Set **BlockIndexToRead** at 0
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -846,7 +846,7 @@ Set **BlockIndexToRead** at 0
 
 Set **BlockIndexToRead** at 1
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -874,7 +874,7 @@ The only supported operation is Get.
 
 Get **BlockData**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -894,7 +894,7 @@ Get **BlockData**
 <a href="" id="filedownload-dmchannel-filecontext-datablocks"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks**  
 Node to transfer the selected log file block to the DM server.
 
-<a href="" id="filedownload-dmchannel-filecontext-datablocks-blocknumber"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks/****_BlockNumber_**  
+<a href="" id="filedownload-dmchannel-filecontext-datablocks-blocknumber"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks/**<strong>*BlockNumber*</strong>  
 The data type is Base64.
 
 The only supported operation is Get.
@@ -911,9 +911,9 @@ The only supported operation is Get.
 7.  Increase **BlockIndexToRead**
 8.  Repeat step 5 to 7 until **BlockIndexToRead == (BlockIndexToRead – 1)**
 
- 
+ 
 
- 
+ 
 
 
 

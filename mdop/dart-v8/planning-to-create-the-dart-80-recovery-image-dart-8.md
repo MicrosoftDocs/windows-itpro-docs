@@ -49,7 +49,7 @@ The following items are required or recommended for creating the DaRT recovery i
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Debugging Tools for your platform</p></td>
-<td align="left"><p>Required when you run the <strong>Crash Analyzer</strong> to determine the cause of a computer failure. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. You can download the Windows Debugging Tools here: [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=99934).</p></td>
+<td align="left"><p>Required when you run the <strong>Crash Analyzer</strong> to determine the cause of a computer failure. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. You can download the Windows Debugging Tools here: <a href="https://go.microsoft.com/fwlink/?LinkId=99934" data-raw-source="[Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=99934)">Download and Install Debugging Tools for Windows</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional: <strong>Defender</strong> definitions</p></td>
@@ -57,21 +57,21 @@ The following items are required or recommended for creating the DaRT recovery i
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional: Windows symbols files for use with <strong>Crash Analyzer</strong></p></td>
-<td align="left"><p>Typically, debugging information is stored in a symbol file that is separate from the program. You must have access to the symbol information when you debug an application that has stopped responding, for example, if it stopped working. For more information, see [Diagnosing System Failures with Crash Analyzer](diagnosing-system-failures-with-crash-analyzer--dart-8.md).</p></td>
+<td align="left"><p>Typically, debugging information is stored in a symbol file that is separate from the program. You must have access to the symbol information when you debug an application that has stopped responding, for example, if it stopped working. For more information, see <a href="diagnosing-system-failures-with-crash-analyzer--dart-8.md" data-raw-source="[Diagnosing System Failures with Crash Analyzer](diagnosing-system-failures-with-crash-analyzer--dart-8.md)">Diagnosing System Failures with Crash Analyzer</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Planning to Deploy DaRT 8.0](planning-to-deploy-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

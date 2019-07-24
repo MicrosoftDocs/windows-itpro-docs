@@ -91,19 +91,19 @@ If the school allows the use of personal or Microsoft account in addition to org
 Skype uses the user’s contact details to deliver important information about the account and it also lets friends find each other on Skype.
 
 To manage and edit your profile in the Skype UWP app, follow these steps:
-1.	In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
-2.	In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
-3.	In the online Skype portal, scroll down to the **Account details** section. In **Settings and preferences**, click **Edit profile**.
+1. In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
+2. In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
+3. In the online Skype portal, scroll down to the **Account details** section. In **Settings and preferences**, click **Edit profile**.
 
-    The profile page includes these sections:
+   The profile page includes these sections:
 
-        * Personal information
-        * Contact details
-        * Profile settings
+       * Personal information
+       * Contact details
+       * Profile settings
 
 4. Review the information in each section and click **Edit profile** in either or both the **Personal information** and **Contact details** sections to change the information being shared. You can also remove the checks in the **Profile settings** section to change settings on discoverability, notifications, and staying in touch.
-5.	If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
-6.	To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
+5. If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
+6. To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
 
    ![Skype profile icon](images/skype_uwp_manageprofilepic.png)
 
@@ -123,10 +123,10 @@ If you want to delete either (or both) the Skype and the Xbox accounts, here’s
 To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
 If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
-1.	Select a help topic (**Account and Password**)
-2.	Select a related problem (**Deleting an account**)
-3.	Click **Next**.
-4.	Select a contact method to get answers to your questions.
+1. Select a help topic (**Account and Password**)
+2. Select a related problem (**Deleting an account**)
+3. Click **Next**.
+4. Select a contact method to get answers to your questions.
 
 
 #### Xbox

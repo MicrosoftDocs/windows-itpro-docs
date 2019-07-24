@@ -4,12 +4,12 @@ description: Learn how to get started using Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 06/20/2018
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 
@@ -22,6 +22,7 @@ Windows Update for Business allows users to control when devices should receive 
 The following policies let you configure when you want a device to see a feature and or quality update from Windows Update. 
 
 ## Policy overview
+
 |Policy name| Description |
 |-|-|
 |Select when Quality Updates are received|Configures when the device should receive quality update. In this policy you can also select a date to pause receiving Quality Updates until. |
@@ -31,9 +32,10 @@ The following policies let you configure when you want a device to see a feature
 ## Suggested configuration for a non-wave deployment
 
 If you don't need a wave deployment and have a small set of devices to manage, we recommend the following configuration:  
+
 |Policy| Location|Suggested configuration |
 |-|-|-|
-|Select when Quality Updates are received |	GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Quality Updates are received|State: Enabled <br>**Defer receiving it for this many days**: 0<br>**Pause Quality Updates**: Blank <br>*Note: use this functionality to prevent the device from receiving a quality update until the time passes|
+|Select when Quality Updates are received | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Quality Updates are received|State: Enabled <br>**Defer receiving it for this many days**: 0<br>**Pause Quality Updates**: Blank <br>*Note: use this functionality to prevent the device from receiving a quality update until the time passes|
 |Select when Preview Builds & feature Updates are received |GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and Feature Updates are received|State: Enabled <br>**Select Windows Readiness Level**: SAC<br>**Defer receiving for this many days**: 0-365<br>**Pause Feature Updates**: Blank <br>*Note: use this functionality to prevent the device from receiving a feature update until the time passes|
 |Do not allow update deferral policies to cause scans against Windows Update|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not allow update deferral policies to cause scans against Windows Update|State: Disabled|
 

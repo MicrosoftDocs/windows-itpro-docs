@@ -1,11 +1,11 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
 description: Enroll a Windows 10 device automatically using Group Policy
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 10/04/2017
 ms.reviewer: 
 manager: dansimp
@@ -21,7 +21,7 @@ Requirements:
 - The enterprise AD must be [registered with Azure Active Directory (Azure AD)](azure-active-directory-integration-with-mdm.md)
 - The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
 
-> [!Tip]  
+> [!TIP]
 > [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 To verify if the device is Azure AD registered, run `dsregcmd /status` from the command line.
@@ -32,7 +32,7 @@ Here is a partial screenshot of the result:
 
 The auto-enrollment relies of the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation. 
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure  Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
@@ -50,7 +50,7 @@ Requirements:
 - Enterprise has MDM service already configured 
 - Enterprise AD must be registered with Azure AD
 
-1.	Run GPEdit.msc
+1. Run GPEdit.msc
 
     Click Start, then in the text box type gpedit. 
 
@@ -62,11 +62,11 @@ Requirements:
 
     ![MDM policies](images/autoenrollment-mdm-policies.png)
 
-4.	Double-click **Auto MDM Enrollment with AAD Token**.
+4. Double-click **Auto MDM Enrollment with AAD Token**.
 
     ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
-5.	Click **Enable**, then click **OK**.
+5. Click **Enable**, then click **OK**.
 
      A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
@@ -76,9 +76,9 @@ Requirements:
 
      ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
 
-6.	To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
+6. To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
 
-7.	Click **Info** to see the MDM enrollment information.
+7. Click **Info** to see the MDM enrollment information.
 
     ![Work School Settings](images/autoenrollment-settings-work-school.png)
 
@@ -91,9 +91,9 @@ Requirements:
 
    ![Task Scheduler search result](images/autoenrollment-task-schedulerapp.png)
 
-2.	Under **Best match**, click **Task Scheduler** to launch it.
+2. Under **Best match**, click **Task Scheduler** to launch it.
 
-3.	In **Task Scheduler Library**, open **Microsoft > Windows** , then click **EnterpriseMgmt**. 
+3. In **Task Scheduler Library**, open **Microsoft > Windows** , then click **EnterpriseMgmt**. 
 
     ![Auto-enrollment scheduled task](images/autoenrollment-scheduled-task.png)
 
@@ -109,7 +109,7 @@ Requirements:
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803 or version 1809. To fix the issue, follow these steps:        
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/en-us/download/details.aspx?id=56880) or  
@@ -122,13 +122,13 @@ Requirements:
 >   5. Restart the Primary Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
-1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
-2.	Create a Security Group for the PCs.
-3.	Link the GPO.
-4.	Filter using Security Groups.
-5.	Enforce a GPO link.
+1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
+2. Create a Security Group for the PCs.
+3. Link the GPO.
+4. Filter using Security Groups.
+5. Enforce a GPO link.
 
->[!NOTE]
+> [!NOTE]
 > Version 1903 (March 2019) is actually on the Insider program and doesn't yet contain a downloadable version of Templates (version 1903).
 
 ### Related topics

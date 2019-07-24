@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Authentication
 description: Policy CSP - Authentication
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
@@ -354,9 +354,12 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
+
+> [!Important]
+> Pre-configured candidate local accounts are any local accounts (pre-configured or added) in your device.
 
 Value type is integer. Supported values:
 
@@ -415,7 +418,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is only in preview mode and therefore not meant or recommended for production purposes.
+> This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
 
@@ -498,19 +501,29 @@ Value type is string.
 <!--/Policy-->
 
 <!--/Policies-->
+
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+  <!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+  <!--EndHoloLensBusiness-->
+
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens (1st gen) Development Edition
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 <!--EndHoloLens-->
 
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
 
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-<!--EndHoloLensBusiness-->
-<hr/>
+  <hr/>
 
 Footnotes:
 

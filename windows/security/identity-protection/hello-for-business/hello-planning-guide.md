@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -79,6 +79,9 @@ A deployment's trust type defines how each Windows Hello for Business client aut
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
+
+>[!NOTE]
+>RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this tim
 
 #### Device registration
 
@@ -153,13 +156,13 @@ If your organization does not have on-premises resources, write **Cloud Only** i
 If your organization is federated with Azure or uses any online service, such as Office365 or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
->[!NOTE]
->If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
->```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
->* If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
->* If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
->    * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
- >   * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
+> [!NOTE]
+> If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
+> ```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
+> * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
+> * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
+>   * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
+>     * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
 
 ### Trust type
 
@@ -247,14 +250,14 @@ If you use modern management for both domain and non-domain joined devices, writ
 Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
->[!NOTE] 
+>[!NOTE]
 >Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 
 * Box **2a** on your planning worksheet read **modern management**. 
     * Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 * Box **1a** on your planning worksheet reads **hybrid**, box **1b** reads **key trust**, and box **2a** reads **GP**.
-    *Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
+    <em>Optionally, you may write **1511 or later</em>* in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 
 Write **1703 or later** in box **3a** on your planning worksheet if any of the following are true.
 * Box **1a** on your planning worksheet reads **on-premises**.  

@@ -36,7 +36,7 @@ The **Query Compatibility Databases** tool provides additional search options. F
 **Important**  
 You must perform your search with the correct version of the Compatibility Administrator tool. If you are searching for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. If you are searching for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
- 
+ 
 
 **To search for previous fixes**
 
@@ -69,9 +69,9 @@ You can export your search results to a text (.txt) file for later review or arc
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

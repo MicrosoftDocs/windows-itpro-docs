@@ -4,11 +4,11 @@ description: DMAcc CSP
 ms.assetid: 43e73d8a-6617-44e7-8459-5c96f4422e63
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -19,7 +19,7 @@ The DMAcc configuration service provider allows an OMA Device Management (DM) ve
 
 > **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
+ 
 
 For the DMAcc CSP, you cannot use the Replace command unless the node already exists.
 
@@ -64,7 +64,7 @@ Interior node for DM server address.
 
 Required.
 
-<a href="" id="appaddr-objectname"></a>**AppAddr/****_ObjectName_**  
+<a href="" id="appaddr-objectname"></a>**AppAddr/**<strong>*ObjectName*</strong>  
 Required. Defines the OMA DM server address. Only one server address can be configured.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1". This is the first DM address encountered in the w7 APPLICATION configuration service provider, other DM accounts are ignored.
@@ -86,7 +86,7 @@ Interior node for port information.
 
 Optional.
 
-<a href="" id="port-objectname"></a>**Port/****_ObjectName_**  
+<a href="" id="port-objectname"></a>**Port/**<strong>*ObjectName*</strong>  
 Required. Only one port number can be configured.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1".
@@ -108,7 +108,7 @@ Value type is string. Supported operations are Add, Get, and Replace.
 <a href="" id="accountuid-appauth"></a>***AccountUID*/AppAuth**  
 Optional. Defines authentication settings.
 
-<a href="" id="appauth-objectname"></a>**AppAuth/****_ObjectName_**  
+<a href="" id="appauth-objectname"></a>**AppAuth/**<strong>*ObjectName*</strong>  
 Required. Defines one set of authentication settings.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
@@ -258,7 +258,7 @@ Stores specifies which certificate stores the DM client will search to find the 
 
 > **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
 
- 
+ 
 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
 
@@ -279,9 +279,9 @@ Supported operations are Add, and Replace.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

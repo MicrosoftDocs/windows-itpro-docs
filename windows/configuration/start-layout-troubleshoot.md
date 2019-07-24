@@ -185,7 +185,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 **Resolution**: This issue was resolved in the June 2017 updates. Please update Windows 10, version 1607 to the latest cumulative or feature updates.
 
->[!Note] 
+>[!NOTE]
 >When the Group Policy is enabled, the desired behavior also needs to be selected. By default, it is set to **None**.
 
 
@@ -214,7 +214,7 @@ XML files can and should be tested locally on a Hyper-V or other virtual machine
 
 ### Symptom: Start menu no longer works after a PC is refreshed using F12 during start up 
 
-**Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings.	When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
+**Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings. When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
 
 **Cause**: This is a known issue and has been resolved in a cumulative update released August 30th 2018. 
 
@@ -289,7 +289,7 @@ Additionally, users may see blank tiles if logon was attempted without network c
 1. The App or Apps work fine when you click on the tiles.
 2. The tiles are blank, have a generic placeholder icon, have the wrong or strange title information.
 3. The app is missing, but listed as installed via Powershell and works if you launch via URI.
-  - Example: `windows-feedback://`
+   - Example: `windows-feedback://`
 4. In some cases, Start can be blank, and Action Center and Cortana do not launch.
 
 >[!Note]

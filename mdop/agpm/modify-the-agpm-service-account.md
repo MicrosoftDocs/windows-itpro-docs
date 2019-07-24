@@ -24,7 +24,7 @@ The archive path and AGPM Service Account are configured during the installation
 **Caution**  
 Do not modify settings for the AGPM Service through **Administrative Tools** and **Services** in the operating system. Doing so can prevent the AGPM Service from starting.
 
- 
+ 
 
 A user account that is a member of the Domain Admins group and has access to the AGPM Server (the computer on which Microsoft Advanced Group Policy Management - Server is installed) is required to complete this procedure.
 
@@ -33,7 +33,7 @@ The AGPM Service Account must have full access to the GPOs that it will manage a
 
 If you will be managing GPOs on multiple domains or if a member server will be the AGPM Server, you should configure a different account as the AGPM Service Account because the Local System account for one domain controller cannot access GPOs on other domains.
 
- 
+ 
 
 **To modify the AGPM Service Account**
 
@@ -57,9 +57,9 @@ If you will be managing GPOs on multiple domains or if a member server will be t
 
 -   [Managing the AGPM Service](managing-the-agpm-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

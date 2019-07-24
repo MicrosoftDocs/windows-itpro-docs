@@ -3,12 +3,12 @@ title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Windows Upgrade and Migration Considerations
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -40,7 +40,7 @@ You can use USMT to automate migration during large deployments of the Windows o
 Whether you are upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:
 
 ### Application compatibility
-For more information about application compatibility in Windows, see the [Application Compatibility Toolkit (ACT)](https://go.microsoft.com/fwlink/p/?LinkId=131349).
+For more information about application compatibility in Windows, see [Use Upgrade Readiness to manage Windows upgrades](https://docs.microsoft.com/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).
 
 ### Multilingual Windows image upgrades
 When performing multilingual Windows upgrades, cross-language upgrades are not supported by USMT. If you are upgrading or migrating an operating system with multiple language packs installed, you can upgrade or migrate only to the system default user interface (UI) language. For example, if English is the default but you have a Spanish language pack installed, you can upgrade or migrate only to English.

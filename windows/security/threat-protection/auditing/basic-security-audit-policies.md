@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dulcemontemayor
+author: Mir0sh
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -46,5 +46,5 @@ If you choose to audit access to objects as part of your audit policy, you must 
 | [Apply a basic audit policy on a file or folder](apply-a-basic-audit-policy-on-a-file-or-folder.md) | You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log. | 
 | [View the security event log](view-the-security-event-log.md) | The security log records each event as defined by the audit policies you set on each object.| 
 | [Basic security audit policy settings](basic-security-audit-policy-settings.md) | Basic security audit policy settings are found under Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy.|
- 
- 
+ 
+ 

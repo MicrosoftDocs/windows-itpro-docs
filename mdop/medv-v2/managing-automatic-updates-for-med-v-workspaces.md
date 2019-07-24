@@ -27,7 +27,7 @@ The MED-V workspace wake-up policy guarantees that the MED-V virtual machine is 
 **Important**  
 The MED-V workspace wake-up policy is optimized for the Microsoft Update infrastructure. If you are using Microsoft System Center Configuration Manager to deploy non-Microsoft updates, we recommend that you also use the System Center Updates Publisher, which takes advantage of the same infrastructure as Microsoft Update and therefore benefits from the MED-V workspace wake-up policy. For more information, see [System Center Updates Publisher](https://go.microsoft.com/fwlink/?LinkId=200035) (https://go.microsoft.com/fwlink/?LinkId=200035).
 
- 
+ 
 
 When you created your MED-V workspace package, you configured when and how it starts, either when the end user logs on (**Fast Start**) or when the end user first opens a published application (**Normal Start**). Or you set the option to let the end user control this setting.
 
@@ -38,7 +38,7 @@ However, for those cases in which **Fast Start** is not specified or the virtual
 **Note**  
 If the end user opens a published application during the update period, the required updates are applied, but MED-V is not automatically hibernated or shut down after the update period ends. Instead, MED-V continues running.
 
- 
+ 
 
 The MED-V workspace wake-up policy includes three main components:
 
@@ -67,7 +67,7 @@ For more information about how to define your MED-V configuration values, see [M
 **Note**  
 A MED-V best practice is to set your wake up interval to match the time when MED-V virtual machines are planned to be updated regularly. In addition, we recommend that you configure these settings to resemble the host computer’s behavior.
 
- 
+ 
 
 ### Reboot Notification Using your ESD System
 
@@ -76,7 +76,7 @@ You can configure your ESD system to notify MED-V whenever a restart is required
 **Important**  
 You must open the event with Modify Only rights and then signal it. If you do not open it with the correct permissions, it does not work.
 
- 
+ 
 
 ``` syntax
 /// <summary>
@@ -97,9 +97,9 @@ When you signal this event, MED-V captures it and informs the virtual machine th
 
 [Managing Software Updates for MED-V Workspaces](managing-software-updates-for-med-v-workspaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

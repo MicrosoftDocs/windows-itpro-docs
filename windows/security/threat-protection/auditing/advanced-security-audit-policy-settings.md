@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dulcemontemayor
+author: Mir0sh
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -59,13 +59,13 @@ The security audit policy settings in this category can be used to monitor chang
 
 Detailed Tracking security policy settings and audit events can be used to monitor the activities of individual applications and users on that computer, and to understand how a computer is being used. This category includes the following subcategories:
 
--   [Audit DPAPI Activity](audit-dpapi-activity.md)
--   [Audit PNP activity](audit-pnp-activity.md)
--   [Audit Process Creation](audit-process-creation.md)
--   [Audit Process Termination](audit-process-termination.md)
--   [Audit RPC Events](audit-rpc-events.md)
--   [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
-> **Note:**  For more information, see [Security Monitoring](https://blogs.technet.microsoft.com/nathangau/2018/01/25/security-monitoring-a-possible-new-way-to-detect-privilege-escalation/)
+- [Audit DPAPI Activity](audit-dpapi-activity.md)
+- [Audit PNP activity](audit-pnp-activity.md)
+- [Audit Process Creation](audit-process-creation.md)
+- [Audit Process Termination](audit-process-termination.md)
+- [Audit RPC Events](audit-rpc-events.md)
+- [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
+  > **Note:**  For more information, see [Security Monitoring](https://blogs.technet.microsoft.com/nathangau/2018/01/25/security-monitoring-a-possible-new-way-to-detect-privilege-escalation/)
 
 ## DS Access
 
@@ -153,7 +153,7 @@ Resource SACLs are also useful for diagnostic scenarios. For example, setting th
 
 > **Note:**  If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object 
 Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
- 
+ 
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
 -   [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md)

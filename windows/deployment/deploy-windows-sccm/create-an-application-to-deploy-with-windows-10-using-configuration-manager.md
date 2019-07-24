@@ -29,7 +29,7 @@ Microsoft System Center 2012 R2 Configuration Manager supports deploying applica
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
->[!NOTE]  
+>[!NOTE]
 >Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
 
 ## Example: Create the Adobe Reader XI application
@@ -97,9 +97,9 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

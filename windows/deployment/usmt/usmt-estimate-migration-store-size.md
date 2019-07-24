@@ -3,12 +3,12 @@ title: Estimate Migration Store Size (Windows 10)
 description: Estimate Migration Store Size
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -86,11 +86,11 @@ The ScanState tool also allows you to estimate disk space requirements based on 
 **Note**  
 To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the **/p** option, without specifying *&lt;path to a file&gt;* is still available in USMT.
 
- 
+ 
 
 The space requirements report provides two elements, &lt;**storeSize**&gt; and &lt;**temporarySpace**&gt;. The &lt;**temporarySpace**&gt; value shows the disk space, in bytes, that USMT uses to operate during the migration—this does not include the minimum 250 MB needed to support USMT. The &lt;**storeSize**&gt; value shows the disk space, in bytes, required to host the migration store contents on both the source and destination computers. The following example shows a report generated using **/p:***&lt;path to a file&gt;*.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <PreMigration>
   <storeSize>
@@ -114,7 +114,7 @@ The amount of space that is required in the store will vary, depending on the lo
 **Note**  
 You can create a space-estimate file (Usmtsize.txt), by using the legacy **/p** command-line option to estimate the size of the store.
 
- 
+ 
 
 When trying to determine how much disk space you will need, consider the following issues:
 
@@ -129,9 +129,9 @@ When trying to determine how much disk space you will need, consider the followi
 
 [Common Migration Scenarios](usmt-common-migration-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

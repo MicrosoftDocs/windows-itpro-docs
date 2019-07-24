@@ -28,7 +28,7 @@ These are the top Microsoft Support solutions for common issues experienced when
 - [Cracked screen and physical damage](https://www.microsoft.com/surface/support/warranty-service-and-recovery/surface-is-damaged)
 
 
-##Device cover or keyboard issues
+## Device cover or keyboard issues
 
 - [Troubleshoot your Surface Type Cover or keyboard](https://www.microsoft.com/surface/support/hardware-and-drivers/troubleshoot-surface-keyboards)
 - [Troubleshoot problems with Surface Keyboard, Surface Ergonomic Keyboard, and Microsoft Modern Keyboard with Fingerprint ID](https://www.microsoft.com/surface/support/touch-mouse-and-search/surface-keyboard-troubleshooting)
@@ -56,10 +56,10 @@ These are the top Microsoft Support solutions for common issues experienced when
 
 
 
- 
+ 
 
 
- 
+ 
 
 
 

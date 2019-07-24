@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Search
 description: Policy CSP - Search
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
@@ -921,17 +921,23 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Search policies supported by HoloLens 2
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Search policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Search policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Search policies supported by HoloLens (1st gen) Development Edition
+
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+<!--EndHoloLens-->
 
 <hr/>
 

@@ -1,7 +1,7 @@
 ---
 title: Configure Conditional Access in Microsoft Defender ATP
-description: 
-keywords: 
+description: Learn about steps that you need to do in Intune, Microsoft Defender Security Center, and Azure to implement Conditional access
+keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Configure Conditional Access in Microsoft Defender ATP
@@ -25,22 +24,29 @@ ms.date: 09/03/2018
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
 ### Before you begin
->[!WARNING] 
+>[!WARNING]
 >It's important to note that Azure AD registered devices is not supported in this scenario.</br>
 >Only Intune enrolled devices are supported.
+
 
 You need to make sure that all your devices are enrolled in Intune. You can use any of the following options to enroll devices in Intune:
 
 
 - IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
-- End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
+- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
+- End-user alternative: For more information on joining an Azure AD domain, see [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan).
 
 
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
 
-> [!NOTE] 
+It's important to note the required roles to access these portals and implement Conditional access:
+- **Microsoft Defender Security Center** - You'll need to sign into the portal with a global administrator role to turn on the integration.
+- **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions. 
+- **Azure AD portal** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
+
+
+> [!NOTE]
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:
@@ -71,10 +77,10 @@ Take the following steps to enable Conditional Access:
 4. In **Platform**, select **Windows 10 and later**.
 5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
 
-  - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
-  - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 

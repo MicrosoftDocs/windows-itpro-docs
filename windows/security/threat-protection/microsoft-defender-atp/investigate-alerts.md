@@ -28,14 +28,13 @@ ms.date: 04/24/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
-Investigate alerts that are affecting your network, understand what they mean, and how to resolve them. 
+Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 
-Click an alert to see the alert details view and the various tiles that provide information about the alert. 
+Click an alert to see the alert details view and the various tiles that provide information about the alert.
 
-You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see [Automated investigations](automated-investigations.md). 
+You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see [Automated investigations](automated-investigations.md).
 
 ![Image of the alert page](images/atp-alert-view.png)
-
 
 The alert context tile shows the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
 
@@ -49,7 +48,7 @@ Alerts attributed to an adversary or actor display a colored tile with the actor
 
 ![A detailed view of an alert when clicked](images/atp-actor-alert.png)
 
-Click on the actor's name to see the threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, their tools, tactics, and processes (TTPs) and areas where they've been observed worldwide. You will also see a set of recommended actions to take.
+Click on the actor's name to see the threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, their tools, tactics, and processes (TTPs), and areas where they've been observed worldwide. You will also see a set of recommended actions to take.
 
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
 
@@ -86,14 +85,14 @@ The **Incident Graph** expansion by destination IP Address, shows the organizati
 You can click the full circles on the incident graph to expand the nodes and view the expansion to other machines where the matching criteria were observed.
 
 ## Artifact timeline
-The **Artifact timeline** feature provides an addition view of the evidence that triggered the alert on the machine, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the machine. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the machine earlier - without triggering an alert.
+The **Artifact timeline** feature provides an additional view of the evidence that triggered the alert on the machine, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the machine. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the machine earlier - without triggering an alert.
 
 ![Image of artifact timeline](images/atp-alert-timeline.png)
 
 Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)

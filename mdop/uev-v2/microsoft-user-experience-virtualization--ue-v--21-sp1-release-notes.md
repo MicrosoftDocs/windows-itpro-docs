@@ -68,7 +68,7 @@ WORKAROUND: The UE-V installer (.msi) has two new command-line parameters that s
 </tbody>
 </table>
 
- 
+ 
 
 ### Registry settings do not synchronize between App-V and native applications on the same computer
 
@@ -136,7 +136,7 @@ WORKAROUND: When migrating from UE-V 1 to UE-V 2 and it is likely you’ll have 
 
 ### UE-V logoff delay
 
-Occassionally on logoff, UE-V takes a long time to sync settings. Typically, this is due to a high latency network or incorrect use of Distrubuted File System (DFS).
+Occasionally on logoff, UE-V takes a long time to sync settings. Typically, this is due to a high latency network or incorrect use of Distrubuted File System (DFS).
 For DFS support, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://support.microsoft.com/kb/2533009) for further details.
 
 WORKAROUND: Starting with HF03, a new registry key has been introduced
@@ -167,76 +167,76 @@ This section contains hotfixes and KB articles for UE-V 2.1 SP1.
 <tr class="odd">
 <td align="left"><p>3018608</p></td>
 <td align="left"><p>UE-V 2.1 - TemplateConsole.exe crashes when UE-V WMI classes are missing</p></td>
-<td align="left"><p>[support.microsoft.com/kb/3018608/EN-US](https://support.microsoft.com/kb/3018608/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/3018608/EN-US" data-raw-source="[support.microsoft.com/kb/3018608/EN-US](https://support.microsoft.com/kb/3018608/EN-US)">support.microsoft.com/kb/3018608/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2903501</p></td>
 <td align="left"><p>UE-V: User Experience Virtualization (UE-V) compatibility with user profiles</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2903501/EN-US](https://support.microsoft.com/kb/2903501/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2903501/EN-US" data-raw-source="[support.microsoft.com/kb/2903501/EN-US](https://support.microsoft.com/kb/2903501/EN-US)">support.microsoft.com/kb/2903501/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2770042</p></td>
 <td align="left"><p>UE-V Registry Settings</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2770042/EN-US](https://support.microsoft.com/kb/2770042/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2770042/EN-US" data-raw-source="[support.microsoft.com/kb/2770042/EN-US](https://support.microsoft.com/kb/2770042/EN-US)">support.microsoft.com/kb/2770042/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2847017</p></td>
 <td align="left"><p>UE-V settings replicated by Internet Explorer</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2847017/EN-US](https://support.microsoft.com/kb/2847017/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2847017/EN-US" data-raw-source="[support.microsoft.com/kb/2847017/EN-US](https://support.microsoft.com/kb/2847017/EN-US)">support.microsoft.com/kb/2847017/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2769631</p></td>
 <td align="left"><p>How to repair a corrupted UE-V install</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2769631/EN-US](https://support.microsoft.com/kb/2769631/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2769631/EN-US" data-raw-source="[support.microsoft.com/kb/2769631/EN-US](https://support.microsoft.com/kb/2769631/EN-US)">support.microsoft.com/kb/2769631/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2850989</p></td>
 <td align="left"><p>Migrating MAPI profiles with Microsoft UE-V is not supported</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2850989/EN-US](https://support.microsoft.com/kb/2850989/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2850989/EN-US" data-raw-source="[support.microsoft.com/kb/2850989/EN-US](https://support.microsoft.com/kb/2850989/EN-US)">support.microsoft.com/kb/2850989/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2769586</p></td>
 <td align="left"><p>UE-V roams empty folders and registry keys</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2769586/EN-US](https://support.microsoft.com/kb/2769586/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2769586/EN-US" data-raw-source="[support.microsoft.com/kb/2769586/EN-US](https://support.microsoft.com/kb/2769586/EN-US)">support.microsoft.com/kb/2769586/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2782997</p></td>
 <td align="left"><p>How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V)</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2782997/EN-US](https://support.microsoft.com/kb/2782997/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2782997/EN-US" data-raw-source="[support.microsoft.com/kb/2782997/EN-US](https://support.microsoft.com/kb/2782997/EN-US)">support.microsoft.com/kb/2782997/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2769570</p></td>
 <td align="left"><p>UE-V does not update the theme on RDS or VDI sessions</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2769570/EN-US](https://support.microsoft.com/kb/2769570/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2769570/EN-US" data-raw-source="[support.microsoft.com/kb/2769570/EN-US](https://support.microsoft.com/kb/2769570/EN-US)">support.microsoft.com/kb/2769570/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2850582</p></td>
 <td align="left"><p>How To Use Microsoft User Experience Virtualization With App-V Applications</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2850582/EN-US](https://support.microsoft.com/kb/2850582/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2850582/EN-US" data-raw-source="[support.microsoft.com/kb/2850582/EN-US](https://support.microsoft.com/kb/2850582/EN-US)">support.microsoft.com/kb/2850582/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3041879</p></td>
 <td align="left"><p>Current file versions for Microsoft User Experience Virtualization</p></td>
-<td align="left"><p>[support.microsoft.com/kb/3041879/EN-US](https://support.microsoft.com/kb/3041879/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/3041879/EN-US" data-raw-source="[support.microsoft.com/kb/3041879/EN-US](https://support.microsoft.com/kb/3041879/EN-US)">support.microsoft.com/kb/3041879/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2843592</p></td>
 <td align="left"><p>Information on User Experience Virtualization and High Availability</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2843592/EN-US](https://support.microsoft.com/kb/2843592/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2843592/EN-US" data-raw-source="[support.microsoft.com/kb/2843592/EN-US](https://support.microsoft.com/kb/2843592/EN-US)">support.microsoft.com/kb/2843592/EN-US</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 
 
 
 
- 
+ 
 
- 
+ 
 
 
 

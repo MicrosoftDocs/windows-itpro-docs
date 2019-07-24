@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -111,6 +111,9 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 Organizations wanting to deploy hybrid certificate trust need their domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
  
 Hybrid certificate trust deployments need the device write back feature.  Authentication to the Windows Server 2016 Active Directory Federation Services needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices.  This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures.  For this reason, Windows Hello for Business deployments need device writeback, which is an Azure Active Directory premium feature.
+
+> [!NOTE]
+> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory, and therefore the device writeback is used to update the msDS-KeyCredentialLink on the computer object.
 
 ### Section Checklist ###
 > [!div class="checklist"]

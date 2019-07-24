@@ -18,10 +18,10 @@ manager: dansimp
 
 **Applies to**
 - Surface Studio
-* Surface Pro 4
-* Surface Book
-* Surface 3
-* Windows 10
+- Surface Pro 4
+- Surface Book
+- Surface 3
+- Windows 10
 
 This article walks you through the recommended process to deploy Windows 10 to Surface devices with Microsoft deployment technologies. The process described in this article yields a complete Windows 10 environment including updated firmware and drivers for your Surface device along with applications like Microsoft Office 365 and the Surface app. When the process is complete, the Surface device will be ready for use by the end user. You can customize this process to include your own applications and configuration to meet the needs of your organization. You can also follow the guidance provided in this article to integrate deployment to Surface devices into existing deployment strategies.
 
@@ -121,13 +121,13 @@ To boot from the network with either your reference virtual machines or your Sur
 
 Windows Deployment Services (WDS) is a Windows Server role. To add the WDS role to a Windows Server 2012 R2 environment, use the Add Roles and Features Wizard, as shown in Figure 1. Start the Add Roles and Features Wizard from the **Manage** button of **Server Manager**. Install both the Deployment Server and Transport Server role services.
 
-![Install the Windows Deployment Services role](images\surface-deploymdt-fig1.png "Install the Windows Deployment Services role")
+![Install the Windows Deployment Services role](images/surface-deploymdt-fig1.png "Install the Windows Deployment Services role")
 
 *Figure 1. Install the Windows Deployment Services server role*
 
 After the WDS role is installed, you need to configure WDS. You can begin the configuration process from the WDS node of Server Manager by right-clicking your server’s name and then clicking **Windows Deployment Services Management Console**. In the **Windows Deployment Services** window, expand the **Servers** node to find your server, right-click your server, and then click **Configure** in the menu to start the Windows Deployment Services Configuration Wizard, as shown in Figure 2.
 
-![Configure PXE response for Windows Deployment Services](images\surface-deploymdt-fig2.png "Configure PXE response for Windows Deployment Services")
+![Configure PXE response for Windows Deployment Services](images/surface-deploymdt-fig2.png "Configure PXE response for Windows Deployment Services")
 
 *Figure 2. Configure PXE response for Windows Deployment Services*
 
@@ -148,7 +148,7 @@ To install Windows ADK, run the Adksetup.exe file that you downloaded from [Down
 
 When you get to the **Select the features you want to install** page, you only need to select the **Deployment Tools** and **Windows Preinstallation Environment (Windows PE)** check boxes to deploy Windows 10 using MDT, as shown in Figure 3. 
 
-![Required options for deployment with MDT](images\surface-deploymdt-fig3.png "Required options for deployment with MDT")
+![Required options for deployment with MDT](images/surface-deploymdt-fig3.png "Required options for deployment with MDT")
 
 *Figure 3. Only Deployment Tools and Windows PE options are required for deployment with MDT*
 
@@ -178,24 +178,24 @@ To create the deployment share, follow these steps:
 
 1. Open the Deployment Workbench from your Start menu or Start screen, as shown in Figure 5.
 
-   ![The MDT Deployment Workbench](images\surface-deploymdt-fig5.png "The MDT Deployment Workbench")
+   ![The MDT Deployment Workbench](images/surface-deploymdt-fig5.png "The MDT Deployment Workbench")
 
    *Figure 5. The MDT Deployment Workbench*
 
 2. Right-click the **Deployment Shares** folder, and then click **New Deployment Share** to start the New Deployment Share Wizard, as shown in Figure 6.
 
-   ![Summary page of the New Deployment Share Wizard](images\surface-deploymdt-fig6.png "Summary page of the New Deployment Share Wizard")
+   ![Summary page of the New Deployment Share Wizard](images/surface-deploymdt-fig6.png "Summary page of the New Deployment Share Wizard")
 
    *Figure 6. The Summary page of the New Deployment Share Wizard*
 
 3. Create a new deployment share with New Deployment Share Wizard with the following steps:
 
-  * **Path** – Specify a local folder where the deployment share will reside, and then click **Next**.
+   * **Path** – Specify a local folder where the deployment share will reside, and then click **Next**.
 
       >[!NOTE]
       >Like the WDS remote installation folder, it is recommended that you put this folder on an NTFS volume that is not your system volume.
 
-  * **Share** – Specify a name for the network share under which the local folder specified on the **Path** page will be shared, and then click **Next**.
+   * **Share** – Specify a name for the network share under which the local folder specified on the **Path** page will be shared, and then click **Next**.
 
       >[!NOTE]
       >The share name cannot contain spaces.
@@ -203,11 +203,11 @@ To create the deployment share, follow these steps:
       >[!NOTE]
       >You can use a Dollar Sign (**$**) to hide your network share so that it will not be displayed when users browse the available network shares on the server in File Explorer.
 
-  * **Descriptive Name** – Enter a descriptive name for the network share (this descriptive name can contain spaces), and then click **Next**. The descriptive name will be the name of the folder as it appears in the Deployment Workbench.
-  * **Options** – You can accept the default options on this page. Click **Next**.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the deployment share.
-  * **Progress** – While the deployment share is being created, a progress bar is displayed on this page to indicate the status of the deployment share creation process.
-  * **Confirmation** – When the deployment share creation process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Deployment Share Wizard.
+   * **Descriptive Name** – Enter a descriptive name for the network share (this descriptive name can contain spaces), and then click **Next**. The descriptive name will be the name of the folder as it appears in the Deployment Workbench.
+   * **Options** – You can accept the default options on this page. Click **Next**.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the deployment share.
+   * **Progress** – While the deployment share is being created, a progress bar is displayed on this page to indicate the status of the deployment share creation process.
+   * **Confirmation** – When the deployment share creation process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Deployment Share Wizard.
 
 4. When the New Deployment Share Wizard is complete, you can expand the Deployment Shares folder to find your newly created deployment share.
 5. You can expand your deployment share, where you will find several folders for the resources, scripts, and components of your MDT deployment environment are stored.
@@ -230,30 +230,30 @@ To import Windows 10 installation files, follow these steps:
 
 1. Right-click the **Operating Systems** folder under your deployment share in the Deployment Workbench, and then click **New Folder** to open the **New Folder** page, as shown in Figure 7.
 
-   ![Create a new folder on the New Folder page](images\surface-deploymdt-fig7.png "Create a new folder on the New Folder page")
+   ![Create a new folder on the New Folder page](images/surface-deploymdt-fig7.png "Create a new folder on the New Folder page")
    
    *Figure 7. Create a new folder on the New Folder page*
 
 2. On the **New Folder** page a series of steps is displayed, as follows:
-  * **General Settings** – Enter a name for the folder in the **Folder Name** field (for example, Windows 10 Enterprise), add any comments you want in the **Comments** field, and then click **Next**.
-  * **Summary** – Review the specified configuration of the new folder on this page, and then click **Next**.
-  * **Progress** – A progress bar will be displayed on this page while the folder is created. This page will likely pass very quickly.
-  * **Confirmation** – When the new folder has been created, a **Confirmation** page displays the success of the operation. Click **Finish** to close the **New Folder** page.
+   * **General Settings** – Enter a name for the folder in the **Folder Name** field (for example, Windows 10 Enterprise), add any comments you want in the **Comments** field, and then click **Next**.
+   * **Summary** – Review the specified configuration of the new folder on this page, and then click **Next**.
+   * **Progress** – A progress bar will be displayed on this page while the folder is created. This page will likely pass very quickly.
+   * **Confirmation** – When the new folder has been created, a **Confirmation** page displays the success of the operation. Click **Finish** to close the **New Folder** page.
 3. Expand the Operating Systems folder to see the newly created folder.
 4. Right-click the newly created folder, and then click **Import Operating System** to launch the Import Operating System Wizard, as shown in Figure 8.
 
-   ![Import source files with the Import Operating System Wizard](images\surface-deploymdt-fig8.png "Import source files with the Import Operating System Wizard")
+   ![Import source files with the Import Operating System Wizard](images/surface-deploymdt-fig8.png "Import source files with the Import Operating System Wizard")
 
    *Figure 8. Import source files with the Import Operating System Wizard*
 
 5. The Import Operating System Wizard walks you through the import of your operating system files, as follows:
-  * **OS Type** – Click **Full Set of Source Files** to specify that you are importing the Windows source files from installation media, and then click **Next**.
-  * **Source** – Click **Browse**, move to and select the folder or drive where your installation files are found, and then click **Next**.
-  * **Destination** – Enter a name for the new folder that will be created to hold the installation files, and then click **Next**.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the installation files are imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the operating system import process completes, the success of the process is displayed on this page. Click **Finish** to complete Import Operating System Wizard.
-6.	Expand the folder you created in Step 1 to see the entry for your newly imported installation files for Windows 10.
+   * **OS Type** – Click **Full Set of Source Files** to specify that you are importing the Windows source files from installation media, and then click **Next**.
+   * **Source** – Click **Browse**, move to and select the folder or drive where your installation files are found, and then click **Next**.
+   * **Destination** – Enter a name for the new folder that will be created to hold the installation files, and then click **Next**.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+   * **Progress** – While the installation files are imported, a progress bar is displayed on this page.
+   * **Confirmation** – When the operating system import process completes, the success of the process is displayed on this page. Click **Finish** to complete Import Operating System Wizard.
+6. Expand the folder you created in Step 1 to see the entry for your newly imported installation files for Windows 10.
 
 Now that you’ve imported the installation files from the installation media, you have the files that MDT needs to create the reference image and you are ready to instruct MDT how to create the reference image to your specifications.
 
@@ -268,35 +268,35 @@ To create the reference image task sequence, follow these steps:
 
 1. Right-click the **Task Sequences** folder under your deployment share in the Deployment Workbench, and then click **New Task Sequence** to start the New Task Sequence Wizard, as shown in Figure 9.
 
-   ![Create new task sequence to deploy and update a Windows 10 reference environment](images\surface-deploymdt-fig9.png "Create new task sequence to deploy and update a Windows 10 reference environment")
+   ![Create new task sequence to deploy and update a Windows 10 reference environment](images/surface-deploymdt-fig9.png "Create new task sequence to deploy and update a Windows 10 reference environment")
 
    *Figure 9. Create a new task sequence to deploy and update a Windows 10 reference environment*
 
 2. The New Task Sequence Wizard presents a series of steps, as follows:
-  * **General Settings** – Enter an identifier for the reference image task sequence in the **Task Sequence ID** field, a name for the reference image task sequence in the **Task Sequence Name** field, and any comments for the reference image task sequence in the **Task Sequence Comments** field, and then click **Next**.
-  >[!NOTE]
-  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
-  * **Select Template** – Select **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
-  * **Select OS** – Navigate to and select the Windows 10 image you imported with the Windows 10 installation files, and then click **Next**.
-  * **Specify Product Key** – Click **Do Not Specify a Product Key at This Time**, and then click **Next**.
-  * **OS Settings** – Enter a name, organization, and home page URL in the **Full Name**, **Organization**, and **Internet Explorer Home Page** fields, and then click **Next**.
-  * **Admin Password** – Click **Use the Specified Local Administrator Password**, enter a password in the provided field, and then click **Next**.
-  >[!NOTE]
-  >During creation of a reference image, any specified Administrator password will be automatically removed when the image is prepared for capture with Sysprep. During reference image creation, a password is not necessary, but is recommended to remain in line with best practices for production deployment environments.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the task sequence.
-  * **Progress** – While the task sequence is created, a progress bar is displayed on this page.
-  * **Confirmation** – When the task sequence creation completes, the success of the process is displayed on this page. Click **Finish** to complete the New Task Sequence Wizard.
-2. Select the **Task Sequences** folder, right-click the new task sequence you created, and then click **Properties**.
-3. Select the **Task Sequence** tab to view the steps that are included in the Standard Client Task Sequence template, as shown in Figure 10.
+   * **General Settings** – Enter an identifier for the reference image task sequence in the **Task Sequence ID** field, a name for the reference image task sequence in the **Task Sequence Name** field, and any comments for the reference image task sequence in the **Task Sequence Comments** field, and then click **Next**.
+     >[!NOTE]
+     >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+   * **Select Template** – Select **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
+   * **Select OS** – Navigate to and select the Windows 10 image you imported with the Windows 10 installation files, and then click **Next**.
+   * **Specify Product Key** – Click **Do Not Specify a Product Key at This Time**, and then click **Next**.
+   * **OS Settings** – Enter a name, organization, and home page URL in the **Full Name**, **Organization**, and **Internet Explorer Home Page** fields, and then click **Next**.
+   * **Admin Password** – Click **Use the Specified Local Administrator Password**, enter a password in the provided field, and then click **Next**.
+     >[!NOTE]
+     >During creation of a reference image, any specified Administrator password will be automatically removed when the image is prepared for capture with Sysprep. During reference image creation, a password is not necessary, but is recommended to remain in line with best practices for production deployment environments.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the task sequence.
+   * **Progress** – While the task sequence is created, a progress bar is displayed on this page.
+   * **Confirmation** – When the task sequence creation completes, the success of the process is displayed on this page. Click **Finish** to complete the New Task Sequence Wizard.
+3. Select the **Task Sequences** folder, right-click the new task sequence you created, and then click **Properties**.
+4. Select the **Task Sequence** tab to view the steps that are included in the Standard Client Task Sequence template, as shown in Figure 10.
 
-   ![Enable Windows Update in the reference image task sequence](images\surface-deploymdt-fig10.png "Enable Windows Update in the reference image task sequence")
+   ![Enable Windows Update in the reference image task sequence](images/surface-deploymdt-fig10.png "Enable Windows Update in the reference image task sequence")
 
    *Figure 10. Enable Windows Update in the reference image task sequence*
 
-4. Select the **Windows Update (Pre-Application Installation)** option, located under the **State Restore** folder.
-5. Click the **Options** tab, and then clear the **Disable This Step** check box.
-6. Repeat Step 4 and Step 5 for the **Windows Update (Post-Application Installation)** option.
-7. Click **OK** to apply changes to the task sequence, and then close the task sequence properties window.
+5. Select the **Windows Update (Pre-Application Installation)** option, located under the **State Restore** folder.
+6. Click the **Options** tab, and then clear the **Disable This Step** check box.
+7. Repeat Step 4 and Step 5 for the **Windows Update (Post-Application Installation)** option.
+8. Click **OK** to apply changes to the task sequence, and then close the task sequence properties window.
 
 ### Generate and import MDT boot media
 
@@ -306,25 +306,25 @@ To update the MDT boot media, follow these steps:
 
 1. Right-click the deployment share in the Deployment Workbench, and then click **Update Deployment Share** to start the Update Deployment Share Wizard, as shown in Figure 11.
 
-   ![Generate boot images with the Update Deployment Share Wizard](images\surface-deploymdt-fig11.png "Generate boot images with the Update Deployment Share Wizard")
+   ![Generate boot images with the Update Deployment Share Wizard](images/surface-deploymdt-fig11.png "Generate boot images with the Update Deployment Share Wizard")
 
    *Figure 11. Generate boot images with the Update Deployment Share Wizard*
 
 2. Use the Update Deployment Share Wizard to create boot images with the following process:
-  * **Options** – Click **Completely Regenerate the Boot Images**, and then click **Next**.
-  >[!NOTE]
-  >Because this is the first time the newly created deployment share has been updated, new boot images will be generated regardless of which option you select on the **Options** page.
-  * **Summary** – Review the specified options on this page before you click **Next** to begin generation of boot images.
-  * **Progress** – While the boot images are being generated, a progress bar is displayed on this page.
-  * **Confirmation** – When the boot images have been generated, the success of the process is displayed on this page. Click **Finish** to complete the Update Deployment Share Wizard.
+   * **Options** – Click **Completely Regenerate the Boot Images**, and then click **Next**.
+     >[!NOTE]
+     >Because this is the first time the newly created deployment share has been updated, new boot images will be generated regardless of which option you select on the **Options** page.
+   * **Summary** – Review the specified options on this page before you click **Next** to begin generation of boot images.
+   * **Progress** – While the boot images are being generated, a progress bar is displayed on this page.
+   * **Confirmation** – When the boot images have been generated, the success of the process is displayed on this page. Click **Finish** to complete the Update Deployment Share Wizard.
 3. Confirm that boot images have been generated by navigating to the deployment share in File Explorer and opening the Boot folder. The following files should be displayed, as shown in Figure 12:
-  * **LiteTouchPE_x86.iso**
-  * **LiteTouchPE_x86.wim**
-  * **LiteTouchPE_x64.iso**
-  * **LiteTouchPE_x64.wim**
+   * **LiteTouchPE_x86.iso**
+   * **LiteTouchPE_x86.wim**
+   * **LiteTouchPE_x64.iso**
+   * **LiteTouchPE_x64.wim**
 
 
-   ![Boot images in the Boot folder after Update Deployment Share Wizard completes](images\surface-deploymdt-fig12.png "Boot images in the Boot folder after Update Deployment Share Wizard completes")
+   ![Boot images in the Boot folder after Update Deployment Share Wizard completes](images/surface-deploymdt-fig12.png "Boot images in the Boot folder after Update Deployment Share Wizard completes")
 
    *Figure 12. Boot images displayed in the Boot folder after completion of the Update Deployment Share Wizard*
 
@@ -334,21 +334,21 @@ To import the MDT boot media into WDS for PXE boot, follow these steps:
 2. Expand **Servers** and your deployment server.
 3. Click the **Boot Images** folder, as shown in Figure 13.
 
-   ![Start the Add Image Wizard from the Boot Images folder](images\surface-deploymdt-fig13.png "Start the Add Image Wizard from the Boot Images folder")
+   ![Start the Add Image Wizard from the Boot Images folder](images/surface-deploymdt-fig13.png "Start the Add Image Wizard from the Boot Images folder")
 
    *Figure 13. Start the Add Image Wizard from the Boot Images folder*
 
 4. Right-click the **Boot Images** folder, and then click **Add Boot Image** to open the Add Image Wizard, as shown in Figure 14.
 
-   ![Import the LiteTouchPE_x86.wim MDT boot image](images\surface-deploymdt-fig14.png "Import the LiteTouchPE_x86.wim MDT boot image")
+   ![Import the LiteTouchPE_x86.wim MDT boot image](images/surface-deploymdt-fig14.png "Import the LiteTouchPE_x86.wim MDT boot image")
 
    *Figure 14. Import the LiteTouchPE_x86.wim MDT boot image*
 
 5. The Add Image Wizard displays a series of steps, as follows:
-  * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, click **LiteTouchPE_x86.wim**, click **Open**, and then click **Next**.
-  * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
-  * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
-  * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
+   * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, click **LiteTouchPE_x86.wim**, click **Open**, and then click **Next**.
+   * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
+   * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
+   * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
 
 >[!NOTE]
 >Only the 32-bit boot image, LiteTouchPE_x86.wim, is required to boot from BIOS devices, including Generation 1 Hyper-V virtual machines like the reference virtual machine.
@@ -379,7 +379,7 @@ Perform the reference image deployment and capture using the following steps:
 
 1. Start your virtual machine and press the F12 key when prompted to boot to the WDS server via PXE, as shown in Figure 15.
 
-   ![Start network boot by pressing the F12 key](images\surface-deploymdt-fig15.png "Start network boot by pressing the F12 key")
+   ![Start network boot by pressing the F12 key](images/surface-deploymdt-fig15.png "Start network boot by pressing the F12 key")
 
    *Figure 15. Start network boot by pressing the F12 key*
 
@@ -387,18 +387,18 @@ Perform the reference image deployment and capture using the following steps:
 3. Enter your MDT username and password, a user with rights to access the MDT deployment share over the network and with rights to write to the Captures folder in the deployment share.
 4. After your credentials are validated, the Windows Deployment Wizard will start and process the boot and deployment share rules.
 5. The Windows Deployment Wizard displays a series of steps, as follows:
-  * **Task Sequence** – Select the task sequence you created for reference image creation (it should be the only task sequence available), and then click **Next**.
-  * **Computer Details** – Leave the default computer name, workgroup name, and the **Join a Workgroup** option selected, and then click **Next**. The computer name and workgroup will be reset when the image is prepared by Sysprep and captured.
-  * **Move Data and Settings** – Leave the default option of **Do Not Move User Data and Settings** selected, and then click **Next**.
-  * **User Data (Restore)** – Leave the default option of **Do Not Restore User Data and Settings** selected, and then click **Next**.
-  * **Locale and Time** – Leave the default options for language and time settings selected. The locale and time settings will be specified during deployment of the image to other devices. Click **Next**.
-  * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
+   * **Task Sequence** – Select the task sequence you created for reference image creation (it should be the only task sequence available), and then click **Next**.
+   * **Computer Details** – Leave the default computer name, workgroup name, and the **Join a Workgroup** option selected, and then click **Next**. The computer name and workgroup will be reset when the image is prepared by Sysprep and captured.
+   * **Move Data and Settings** – Leave the default option of **Do Not Move User Data and Settings** selected, and then click **Next**.
+   * **User Data (Restore)** – Leave the default option of **Do Not Restore User Data and Settings** selected, and then click **Next**.
+   * **Locale and Time** – Leave the default options for language and time settings selected. The locale and time settings will be specified during deployment of the image to other devices. Click **Next**.
+   * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
   
-  ![Capture an image of the reference machine](images\surface-deploymdt-fig16.png "Capture an image of the reference machine")
+   ![Capture an image of the reference machine](images/surface-deploymdt-fig16.png "Capture an image of the reference machine")
     
-  *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
+   *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
 
-  * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
+   * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
 
 6. Your reference task sequence will run with the specified options.
 
@@ -427,14 +427,14 @@ To import the reference image for deployment, use the following steps:
 
 1. Right-click the **Operating Systems** folder under your deployment share in the Deployment Workbench or the folder you created in when you imported Windows 10 installation files, and then click **Import Operating System** to start the Import Operating System Wizard. 
 2. Import the custom image with the Import Operating System Wizard by using the following steps:
-  * **OS Type** – Select Custom Image File to specify that you are importing the Windows source files from installation media, and then click **Next**.
-  * **Image** – Click **Browse**, and then navigate to and select the image file in the **Captures** folder in your deployment share. Select the **Move the Files to the Deployment Share Instead of Copying Them** checkbox if desired. Click **Next**. 
-  * **Setup** – Click **Setup Files are not Neededf**, and then click **Next**.
-  * **Destination** – Enter a name for the new folder that will be created to hold the image file, and then click **Next**.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the image is imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Operating System Wizard.
-3.	Expand the folder in which you imported the image to verify that the import completed successfully.
+   * **OS Type** – Select Custom Image File to specify that you are importing the Windows source files from installation media, and then click **Next**.
+   * **Image** – Click **Browse**, and then navigate to and select the image file in the **Captures** folder in your deployment share. Select the **Move the Files to the Deployment Share Instead of Copying Them** checkbox if desired. Click **Next**. 
+   * **Setup** – Click **Setup Files are not Neededf**, and then click **Next**.
+   * **Destination** – Enter a name for the new folder that will be created to hold the image file, and then click **Next**.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+   * **Progress** – While the image is imported, a progress bar is displayed on this page.
+   * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Operating System Wizard.
+3. Expand the folder in which you imported the image to verify that the import completed successfully.
 
 >[!NOTE]
 >You can import the reference image into the same deployment share that you used to create your reference image, or you could import the reference image into a new deployment share for deployment to your Surface devices. If you chose to create a new deployment share for deployment of your reference image, remember that you still need to import a full set of installation files from installation media.
@@ -458,24 +458,24 @@ To import the Surface drivers (in this example, Surface Pro 4) into MDT, follow 
      * Microsoft Corporation
        * Surface Pro 4
 
-   ![Recommended folder structure for drivers](images\surface-deploymdt-fig17.png "Recommended folder structure for drivers")
+   ![Recommended folder structure for drivers](images/surface-deploymdt-fig17.png "Recommended folder structure for drivers")
 
    *Figure 17. The recommended folder structure for drivers*
 
 4. Right-click the **Surface Pro 4** folder, and then click **Import Drivers** to start the Import Drivers Wizard, as shown in Figure 18.
 
-   ![Progress page during drivers import](images\surface-deploymdt-fig18.png "Progress page during drivers import")
+   ![Progress page during drivers import](images/surface-deploymdt-fig18.png "Progress page during drivers import")
 
    *Figure 18. The Progress page during drivers import*
 
 5. The Import Driver Wizard displays a series of steps, as follows:
-  * **Specify Directory** – Click **Browse** and navigate to the folder where you extracted the Surface Pro 4 firmware and drivers in Step 1.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the drivers are imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Drivers Wizard.
-6.	Click the **Surface Pro 4** folder and verify that the folder now contains the drivers that were imported, as shown in Figure 19.
+   * **Specify Directory** – Click **Browse** and navigate to the folder where you extracted the Surface Pro 4 firmware and drivers in Step 1.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+   * **Progress** – While the drivers are imported, a progress bar is displayed on this page.
+   * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Drivers Wizard.
+6. Click the **Surface Pro 4** folder and verify that the folder now contains the drivers that were imported, as shown in Figure 19.
 
-   ![Drivers for Surface Pro 4 imported and organized in the MDT deployment share](images\surface-deploymdt-fig19.png "Drivers for Surface Pro 4 imported and organized in the MDT deployment share")
+   ![Drivers for Surface Pro 4 imported and organized in the MDT deployment share](images/surface-deploymdt-fig19.png "Drivers for Surface Pro 4 imported and organized in the MDT deployment share")
 
    *Figure 19. Drivers for Surface Pro 4 imported and organized in the MDT deployment share*
 
@@ -493,7 +493,7 @@ After you have downloaded the source files for your version of Office Click-to-R
 
 1. Right-click the existing **Configuration.xml** file, and then click **Edit**.
 2. This action opens the file in Notepad. Replace the existing text with the following:
-  ```
+   ```
    <Configuration> 
    <Add OfficeClientEdition="32">  
     <Product ID="O365ProPlusRetail" >  
@@ -501,7 +501,7 @@ After you have downloaded the source files for your version of Office Click-to-R
     </Product>  
    </Add> 
    <Display Level="None" AcceptEULA="TRUE" /> </Configuration>
-```
+   ```
 
 3. Save the file.
 
@@ -514,22 +514,22 @@ Now that the installation and configuration files are prepared, the application 
 1. Open the Deployment Workbench. 
 2. Expand the deployment share, right-click the **Applications** folder, and then click **New Application** to start the New Application Wizard, as shown in Figure 20.
 
-   ![Enter the command and directory for Office 2016 Click-to-Run](images\surface-deploymdt-fig20.png "Enter the command and directory for Office 2016 Click-to-Run")
+   ![Enter the command and directory for Office 2016 Click-to-Run](images/surface-deploymdt-fig20.png "Enter the command and directory for Office 2016 Click-to-Run")
 
    *Figure 20. Enter the command and directory for Office 2016 Click-to-Run*
 
 3. The New Application Wizard walks you through importing the Office 2016 Click-to-Run files, as follows:
-  * **Application Type** – Click **Application with Source Files**, and then click **Next**.
-  * **Details** – Enter a name for the application (for example, Office 2016 Click-to-Run) in the **Application Name** field. Enter publisher, version, and language information in the **Publisher**, **Version**, and **Language** fields if desired. Click **Next**.
-  * **Source** – Click **Browse** to navigate to and select the folder where you downloaded the Office installation files with the Office Deployment Tool, and then click **Next**.
-  * **Destination** – Enter a name for the folder where the application files will be stored in the **Specify the Name of the Directory that Should Be Created** field or click **Next** to accept the default name.
-  * **Command Details** – Enter the Office Deployment Tool installation command line:
+   * **Application Type** – Click **Application with Source Files**, and then click **Next**.
+   * **Details** – Enter a name for the application (for example, Office 2016 Click-to-Run) in the **Application Name** field. Enter publisher, version, and language information in the **Publisher**, **Version**, and **Language** fields if desired. Click **Next**.
+   * **Source** – Click **Browse** to navigate to and select the folder where you downloaded the Office installation files with the Office Deployment Tool, and then click **Next**.
+   * **Destination** – Enter a name for the folder where the application files will be stored in the **Specify the Name of the Directory that Should Be Created** field or click **Next** to accept the default name.
+   * **Command Details** – Enter the Office Deployment Tool installation command line:
 
      `Setup.exe /configure configuration.xml`
 
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the installation files are imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Application Wizard.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+   * **Progress** – While the installation files are imported, a progress bar is displayed on this page.
+   * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Application Wizard.
 
 4. You should now see the **Office 2016 Click-to-Run** item under the **Applications** folder in the Deployment Workbench.
 
@@ -551,17 +551,17 @@ The next step in the process is to create the deployment task sequence. This tas
 To create the deployment task sequence, follow these steps:
 1. In the Deployment Workbench, under your Deployment Share, right-click the **Task Sequences** folder, and then click **New Task Sequence** to start the New Task Sequence Wizard.
 2. Use these steps to create the deployment task sequence with the New Task Sequence Wizard:
-  * **General Settings** – Enter an identifier for the deployment task sequence in the **Task Sequence ID** field, a name for the deployment task sequence in the **Task Sequence Name** field, and any comments for the deployment task sequence in the **Task Sequence Comments** field, then click **Next**.
-  >[!NOTE]
-  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
-  * **Select Template** – Click **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
-  * **Select OS** – Navigate to and select the reference image that you imported, and then click **Next**.
-  * **Specify Product Key** – Select the product key entry that fits your organization's licensing system. The **Do Not Specify a Product Key at This Time** option can be used for systems that will be activated via Key Management Services (KMS) or Active Directory Based Activation (ADBA). A product key can be specified specifically if your organization uses Multiple Activation Keys (MAK). Click **Next**.
-  * **OS Settings** – Enter a name and organization for registration of Windows, and a home page URL for users when they browse the Internet in the **Full Name**, **Organization**, and **Internet Explorer Home Page** fields, and then click **Next**.
-  * **Admin Password** – Click **Use the Specified Local Administrator Password**, enter a password in the provided field, and then click **Next**.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the task sequence.
-  * **Progress** – While the task sequence is being created, a progress bar is displayed on this page.
-  * **Confirmation** – When the task sequence creation completes, the success of the process is displayed on this page. Click **Finish** to complete the New Task Sequence Wizard.
+   * **General Settings** – Enter an identifier for the deployment task sequence in the **Task Sequence ID** field, a name for the deployment task sequence in the **Task Sequence Name** field, and any comments for the deployment task sequence in the **Task Sequence Comments** field, then click **Next**.
+     >[!NOTE]
+     >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+   * **Select Template** – Click **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
+   * **Select OS** – Navigate to and select the reference image that you imported, and then click **Next**.
+   * **Specify Product Key** – Select the product key entry that fits your organization's licensing system. The **Do Not Specify a Product Key at This Time** option can be used for systems that will be activated via Key Management Services (KMS) or Active Directory Based Activation (ADBA). A product key can be specified specifically if your organization uses Multiple Activation Keys (MAK). Click **Next**.
+   * **OS Settings** – Enter a name and organization for registration of Windows, and a home page URL for users when they browse the Internet in the **Full Name**, **Organization**, and **Internet Explorer Home Page** fields, and then click **Next**.
+   * **Admin Password** – Click **Use the Specified Local Administrator Password**, enter a password in the provided field, and then click **Next**.
+   * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the task sequence.
+   * **Progress** – While the task sequence is being created, a progress bar is displayed on this page.
+   * **Confirmation** – When the task sequence creation completes, the success of the process is displayed on this page. Click **Finish** to complete the New Task Sequence Wizard.
 
 After the task sequence is created it can be modified for increased automation, such as the installation of applications without user interaction, the selection of drivers, and the installation of Windows updates.
 
@@ -573,35 +573,35 @@ After the task sequence is created it can be modified for increased automation, 
 6. Between the two **Windows Update** steps is the **Install Applications** step. Click the **Install Applications** step, and then click **Add**.
 7. Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 21.
 
-   ![A new Install Application step in the deployment task sequence](images\surface-deploymdt-fig21.png "A new Install Application step in the deployment task sequence")
+   ![A new Install Application step in the deployment task sequence](images/surface-deploymdt-fig21.png "A new Install Application step in the deployment task sequence")
 
    *Figure 21. A new Install Application step in the deployment task sequence*
 
 8. On the **Properties** tab of the new **Install Application** step, enter **Install Microsoft Office 2016 Click-to-Run** in the **Name** field.
 9. Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
-10.	Select Office 2016 Click-to-Run from the list of applications, and then click **OK**.
-11.	Repeat Steps 6 through 10 for the Surface app.
-12.	Expand the **Preinstall** folder, and then click the **Enable BitLocker (Offline)** step.
-13.	Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** menu.
+10. Select Office 2016 Click-to-Run from the list of applications, and then click **OK**.
+11. Repeat Steps 6 through 10 for the Surface app.
+12. Expand the **Preinstall** folder, and then click the **Enable BitLocker (Offline)** step.
+13. Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** menu.
 14. On the **Properties** tab of the new **Set Task Sequence Variable** step (as shown in Figure 22), configure the following options:
-  * **Name** – Set DriverGroup001
-  * **Task Sequence Variable** – DriverGroup001
-  * **Value** – Windows 10 x64\%Make%\%Model%
+    * **Name** – Set DriverGroup001
+    * **Task Sequence Variable** – DriverGroup001
+    * **Value** – Windows 10 x64\%Make%\%Model%
 
-   ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-deploymdt-fig22.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
+    ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images/surface-deploymdt-fig22.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
 
-   *Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence*
+    *Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence*
 
-15.	Select the **Inject Drivers** step, the next step in the task sequence.
-16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
-  * In the **Choose a selection profile** drop-down menu, select **Nothing**.
-  * Click the **Install all drivers from the selection profile** button.
+15. Select the **Inject Drivers** step, the next step in the task sequence.
+16. On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
+    * In the **Choose a selection profile** drop-down menu, select **Nothing**.
+    * Click the **Install all drivers from the selection profile** button.
 
-   ![Configure deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Configure deployment task sequence not to choose the drivers to inject into Windows")
+    ![Configure deployment task sequence not to choose the drivers to inject into Windows](images/surface-deploymdt-fig23.png "Configure deployment task sequence not to choose the drivers to inject into Windows")
 
-   *Figure 23. Configure the deployment task sequence not to choose the drivers to inject into Windows*
+    *Figure 23. Configure the deployment task sequence not to choose the drivers to inject into Windows*
 
-17.	Click **OK** to apply changes to the task sequence and close the task sequence properties window.
+17. Click **OK** to apply changes to the task sequence and close the task sequence properties window.
 
 ### Configure deployment share rules
 
@@ -617,20 +617,20 @@ To automate the boot media rules, follow these steps:
 2. Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3. Replace the text of the Bootstrap.ini file with the following text:
 
-  ```
-  [Settings]
-  Priority=Model,Default
+   ```
+   [Settings]
+   Priority=Model,Default
 
-  [Surface Pro 4]
-  DeployRoot=\\STNDeployServer\DeploymentShare$
-  UserDomain=STNDeployServer
-  UserID=MDTUser
-  UserPassword=P@ssw0rd
-  SkipBDDWelcome=YES
+   [Surface Pro 4]
+   DeployRoot=\\STNDeployServer\DeploymentShare$
+   UserDomain=STNDeployServer
+   UserID=MDTUser
+   UserPassword=P@ssw0rd
+   SkipBDDWelcome=YES
 
-  [Surface Pro 4]
-  DeployRoot=\\STNDeployServer\DeploymentShare$
-  ```
+   [Surface Pro 4]
+   DeployRoot=\\STNDeployServer\DeploymentShare$
+   ```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 
@@ -650,7 +650,7 @@ Rules used in the text shown in Step 3 include:
 
 The bulk of the rules used to automate the MDT deployment process are stored in the deployment share rules, or the Customsettings.ini file. In this file you can answer and hide all of the prompts from the Windows Deployment Wizard, which yields a deployment experience that mostly consists of a progress bar that displays the automated actions occurring on the device. The deployment share rules are shown directly in the **Rules** tab of the deployment share properties, as shown in Figure 24.
 
-![Deployment share rules configured for automation of the Windows Deployment Wizard](images\surface-deploymdt-fig24.png "Deployment share rules configured for automation of the Windows Deployment Wizard")
+![Deployment share rules configured for automation of the Windows Deployment Wizard](images/surface-deploymdt-fig24.png "Deployment share rules configured for automation of the Windows Deployment Wizard")
 
 *Figure 24. Deployment share rules configured for automation of the Windows Deployment Wizard*
 
@@ -740,10 +740,10 @@ To update the MDT boot media, follow these steps:
 
 1. Right-click the deployment share in the Deployment Workbench, and then click **Update Deployment Share** to start the Update Deployment Share Wizard.
 2. The Update Deployment Share Wizard displays a series of steps, as follows:
-  * **Options** – Choose between the **Completely Regenerate the Boot Images** or **Optimize the Boot Image Updating Process** options. Completely regenerating the boot images will take more time, but produces boot media that is not fragmented and does not contain out of date components. Optimizing the boot image updating process will proceed more quickly, but may result in longer load times when booting via PXE. Click **Next**.
-  * **Summary** – Review the specified options on this page before you click **Next** to begin the update of boot images.
-  * **Progress** – While the boot images are being updated a progress bar is displayed on this page.
-  * **Confirmation** – When the boot images have been updated, the success of the process is displayed on this page. Click **Finish** to complete the Update Deployment Share Wizard.
+   * **Options** – Choose between the **Completely Regenerate the Boot Images** or **Optimize the Boot Image Updating Process** options. Completely regenerating the boot images will take more time, but produces boot media that is not fragmented and does not contain out of date components. Optimizing the boot image updating process will proceed more quickly, but may result in longer load times when booting via PXE. Click **Next**.
+   * **Summary** – Review the specified options on this page before you click **Next** to begin the update of boot images.
+   * **Progress** – While the boot images are being updated a progress bar is displayed on this page.
+   * **Confirmation** – When the boot images have been updated, the success of the process is displayed on this page. Click **Finish** to complete the Update Deployment Share Wizard.
 
 To import the updated MDT boot media into WDS for PXE boot, follow these steps:
 
@@ -752,17 +752,17 @@ To import the updated MDT boot media into WDS for PXE boot, follow these steps:
 3. Click the **Boot Images** folder.
 4. Right-click the existing MDT boot image, and then click **Replace Image** to open the Replace Boot Image Wizard.
 5. Replace the previously imported MDT boot image with the updated version by using these steps in the Replace Boot Image Wizard:
-  * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, click **LiteTouchPE_x86.wim**, and then click **Open**. Click **Next**.
-  * **Available Images** – Only one image should be listed and selected **LiteTouch Windows PE (x86)**, click **Next**.
-  * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
-  * **Summary** – Review your selections for importing a boot image into WDS, and then click **Next**.
-  * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Replace Boot Image Wizard.
+   * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, click **LiteTouchPE_x86.wim**, and then click **Open**. Click **Next**.
+   * **Available Images** – Only one image should be listed and selected **LiteTouch Windows PE (x86)**, click **Next**.
+   * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
+   * **Summary** – Review your selections for importing a boot image into WDS, and then click **Next**.
+   * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Replace Boot Image Wizard.
 6. Right-click the **Boot Images** folder, and then click **Add Image** to open the Add Image Wizard.
 7. Add the new 64-bit boot image for 64-bit UEFI device compatibility with the Add Image Wizard , as follows:
-  * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, select **LiteTouchPE_x64.wim**, and then click **Open**. Click **Next**.
-  * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
-  * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
-  * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
+   * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, select **LiteTouchPE_x64.wim**, and then click **Open**. Click **Next**.
+   * **Image Metadata** – Enter a name and description for the MDT boot media, or click **Next** to accept the default options.
+   * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
+   * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
 
 >[!NOTE]
 >Although it is a best practice to replace and update the boot images in WDS whenever the MDT deployment share is updated, for deployment to Surface devices the 32-bit boot image, LiteTouchPE_x86.wim, is not required. Only the 64-bit boot image is required for 64-bit UEFI devices.
@@ -774,7 +774,7 @@ With all of the automation provided by the deployment share rules and task seque
 >[!NOTE]
 >For the deployment to require only a single touch, the Surface devices must be connected to a keyboard, connected to the network with a Microsoft Surface USB Ethernet Adapter or Surface Dock, and configured with PXE boot as the first boot option, as shown in Figure 25.
 
-![Set boot priority for PXE boot](images\surface-deploymdt-fig25.png "Set boot priority for PXE boot")
+![Set boot priority for PXE boot](images/surface-deploymdt-fig25.png "Set boot priority for PXE boot")
 
 *Figure 25. Setting boot priority for PXE boot*
 

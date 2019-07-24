@@ -63,7 +63,7 @@ A list of the physical disks that are attached to the computer should be display
   Disk 0    Online         **size*  GB      0 B        *
 ``` 
 
-If the computer uses a Unified Extensible Firmware Interface (UEFI) startup interface, there will be an asterisk (*) in the **GPT**  column.
+If the computer uses a Unified Extensible Firmware Interface (UEFI) startup interface, there will be an asterisk (<em>) in the **GPT</em>*  column.
 
 If the computer uses a basic input/output system (BIOS) interface, there will not be an asterisk in the **Dyn**  column.
 
@@ -94,28 +94,28 @@ Check whether the Boot Configuration Database (BCD) has all the correct entries.
 
 To verify the BCD entries:
 
-1.	Examine the **Windows Boot Manager**  section that has the **{bootmgr}** identifier. Make sure that the **device**  and **path**  entries point to the correct device and boot loader file.
+1. Examine the **Windows Boot Manager**  section that has the **{bootmgr}** identifier. Make sure that the **device**  and **path**  entries point to the correct device and boot loader file.
  
-    An example output if the computer is UEFI-based:
+   An example output if the computer is UEFI-based:
     
-    ```
-    device                  partition=\Device\HarddiskVolume2
-    path                    \EFI\Microsoft\Boot\bootmgfw.efi
-    ```
+   ```
+   device                  partition=\Device\HarddiskVolume2
+   path                    \EFI\Microsoft\Boot\bootmgfw.efi
+   ```
 
-    An example output if the machine is BIOS based:
-    ```
-    Device                partition=C:
-    ```
-    >[!NOTE]
-    >This output may not contain a path.
+   An example output if the machine is BIOS based:
+   ```
+   Device                partition=C:
+   ```
+   >[!NOTE]
+   >This output may not contain a path.
 
-2.	In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
+2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
  
-    >[!NOTE]
-    >If the computer is UEFI-based, the **bootmgr**  and **winload**  entires under **{default}**  will contain an **.efi**  extension.
+   >[!NOTE]
+   >If the computer is UEFI-based, the **bootmgr**  and **winload**  entires under **{default}**  will contain an **.efi**  extension.
 
- ![bcdedit](images/screenshot1.png)
+   ![bcdedit](images/screenshot1.png)
 
 If any of the information is wrong or missing, we recommend that you create a backup of the BCD store. To do this, run `bcdedit /export C:\temp\bcdbackup`. This command creates a backup in **C:\\temp\\** that is named **bcdbackup** . To restore the backup, run `bcdedit /import C:\temp\bcdbackup`. This command overwrites all BCD settings by using the settings in **bcdbackup** .
 
@@ -131,37 +131,37 @@ If the BCD has the correct entries, check whether the **winload** and **bootmgr*
 
 If the files are missing, and you want to rebuild the boot files, follow these steps:
 
-1.	Copy all the contents under the **SYSTEM**  partition to another location. Alternatively, you can use the command prompt to navigate to the OS drive, create a new folder, and then copy all the files and folders from the **SYSTEM**  volume, as follows:
+1. Copy all the contents under the **SYSTEM**  partition to another location. Alternatively, you can use the command prompt to navigate to the OS drive, create a new folder, and then copy all the files and folders from the **SYSTEM**  volume, as follows:
 
 ```
 D:\> Mkdir  BootBackup
 R:\> Copy *.* D:\BootBackup 
 ```
 
-2.	If you are using Windows 10, or if you are troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot**  command to re-create the boot files, as follows:
+2. If you are using Windows 10, or if you are troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot**  command to re-create the boot files, as follows:
 
-    ```cmd
-    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
-    ```
+   ```cmd
+   Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
+   ```
 
-    For example: if we assign the ,System Drive> (WinRE drive) the letter R and the <OSdrive> is the letter D, this command would be the following:
+   For example: if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, this command would be the following:
 
-    ```cmd
-    Bcdboot D:\windows /s R: /f ALL
-    ```
+   ```cmd
+   Bcdboot D:\windows /s R: /f ALL
+   ```
 
-    >[!NOTE]
-    >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
+   >[!NOTE]
+   >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
 
 If you do not have a Windows 10 ISO, you must format the partition and copy **bootmgr**  from another working computer that has a similar Windows build. To do this, follow these steps:
 
-1.	Start **Notepad** .
+1. Start **Notepad** .
 
-2.	Press Ctrl+O.
+2. Press Ctrl+O.
 
-3.	Navigate to the system partition (in this example, it is R).
+3. Navigate to the system partition (in this example, it is R).
 
-4.	Right-click the partition, and then format it.
+4. Right-click the partition, and then format it.
 
 ###  Troubleshooting if this issue occurs after a Windows Update installation
 
@@ -175,31 +175,31 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 ![Dism output](images/pendingupdate.png)
 
-1.	Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
+1. Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
 
     ![Dism output](images/revertpending.png)
 
-2.	Navigate to ***OSdriveLetter* :\Windows\WinSxS** , and then check whether the **pending.xml**  file exists. If it does, rename it to **pending.xml.old**.
+2. Navigate to ***OSdriveLetter* :\Windows\WinSxS** , and then check whether the **pending.xml**  file exists. If it does, rename it to **pending.xml.old**.
 
-3.	To revert the registry changes, type **regedit**  at the command prompt to open **Registry Editor**.
+3. To revert the registry changes, type **regedit**  at the command prompt to open **Registry Editor**.
 
-4.	Select **HKEY_LOCAL_MACHINE**, and then go to **File**  > **Load Hive**.
+4. Select **HKEY_LOCAL_MACHINE**, and then go to **File**  > **Load Hive**.
 
-5.	Navigate to **OSdriveLetter:\Windows\System32\config**, select the file that is named **COMPONENT** (with no extension), and then select **Open**. When you are prompted, enter the name **OfflineComponentHive** for the new hive
+5. Navigate to **OSdriveLetter:\Windows\System32\config**, select the file that is named **COMPONENT** (with no extension), and then select **Open**. When you are prompted, enter the name **OfflineComponentHive** for the new hive
     
     ![Load Hive](images/loadhive.png)
 
-6.	Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
+6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
 
-7.	Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File**  > **Unload hive**.
+7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File**  > **Unload hive**.
 
     ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
 
-8.	Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter* :\Windows\System32\config**, select the file that is named **SYSTEM** (with no extension), and then select **Open** . When you are prompted, enter the name **OfflineSystemHive** for the new hive.
+8. Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter* :\Windows\System32\config**, select the file that is named **SYSTEM** (with no extension), and then select **Open** . When you are prompted, enter the name **OfflineSystemHive** for the new hive.
 
-9.	Expand **HKEY_LOCAL_MACHINE\OfflineSystemHive**, and then select the **Select** key. Check the data for the **Default** value.
+9. Expand **HKEY_LOCAL_MACHINE\OfflineSystemHive**, and then select the **Select** key. Check the data for the **Default** value.
 
-10.	If the data in **HKEY_LOCAL_MACHINE\OfflineSystemHive\Select\Default**  is **1** , expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001**. If it is **2**, expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet002**, and so on.
+10. If the data in **HKEY_LOCAL_MACHINE\OfflineSystemHive\Select\Default**  is **1** , expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001**. If it is **2**, expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet002**, and so on.
 
 11.	 Expand **Control\Session Manager**. Check whether the **PendingFileRenameOperations** key exists. If it does, back up the **SessionManager** key, and then delete the **PendingFileRenameOperations** key.
 
@@ -209,9 +209,9 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 1.	 Follow steps 1-10 in the "Troubleshooting if this issue occurs after an Windows Update installation" section. (Step 11 does not apply to this procedure.)
 
-2.	Expand **Services**.
+2. Expand **Services**.
 
-3.	Make sure that the following registry keys exist under **Services**: 
+3. Make sure that the following registry keys exist under **Services**: 
 
     * ACPI
 
@@ -239,14 +239,14 @@ copy OSdrive:\Windows\System32\config\RegBack\SYSTEM OSdrive:\Windows\System32\c
 
 Check whether there are any non-Microsoft upper and lower filter drivers on the computer and that they do not exist on another, similar working computer. if they do exist, remove the upper and lower filter drivers:
 
-1.  Expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001\Control**.
+1. Expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001\Control**.
 
-2.	Look for any **UpperFilters** or **LowerFilters**  entries.
+2. Look for any **UpperFilters** or **LowerFilters**  entries.
 
-    >[!NOTE]
-    >These filters are mainly related to storage. After you expand the **Control** key in the registry, you can search for **UpperFilters** and **LowerFilters**.
+   >[!NOTE]
+   >These filters are mainly related to storage. After you expand the **Control** key in the registry, you can search for **UpperFilters** and **LowerFilters**.
 
- The following are some of the different registry entries in which you may find these filter drivers. These entries are located under **ControlSet**  and are designated as **Default** :
+   The following are some of the different registry entries in which you may find these filter drivers. These entries are located under **ControlSet**  and are designated as **Default** :
 
 \Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318} 
 

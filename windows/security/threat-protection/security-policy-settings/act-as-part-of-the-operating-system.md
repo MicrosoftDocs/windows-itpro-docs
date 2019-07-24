@@ -53,7 +53,7 @@ The following table lists the actual and effective default policy values for the
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not defined |
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.
@@ -88,4 +88,4 @@ There should be little or no impact because the **Act as part of the operating s
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
+ 

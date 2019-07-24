@@ -78,9 +78,9 @@ Limited BitLocker functionality is available in Safe Mode. BitLocker-protected d
 
 Both fixed and removable data drives can be locked by using the Manage-bde command-line tool and the –lock command.
 
-> [!NOTE]  
+> [!NOTE]
 > Ensure all data is saved to the drive before locking it. Once locked, the drive will become inaccessible.
- 
+ 
 The syntax of this command is:
 
 <code>manage-bde <i>driveletter</i> -lock</code>

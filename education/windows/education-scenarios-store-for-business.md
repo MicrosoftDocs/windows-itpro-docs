@@ -130,7 +130,7 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
+Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
 
 Applies to: IT admins
 
@@ -174,4 +174,4 @@ You can manage your orders through Microsoft Store for Business. For info on ord
 It can take up to 24 hours after a purchase, before a receipt is available on your **Order history page**. 
 
 > [!NOTE]
-For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 
+> For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 

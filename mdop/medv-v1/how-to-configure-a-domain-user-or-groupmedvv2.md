@@ -40,15 +40,17 @@ To allow users to utilize the MED-V workspace, you must first add domain users o
 
     The domain users or groups are added.
 
-    **Note**  
+    **Note**  
     Users from trusted domains should be added manually.
 
-     
 
-    **Warning**  
-    Do not run the management application from a computer that is part of a domain that is not trusted by the domain the server is installed on.
 
-     
+~~~
+**Warning**  
+Do not run the management application from a computer that is part of a domain that is not trusted by the domain the server is installed on.
+~~~
+
+
 
 ## How to Remove a Domain User or Group
 
@@ -112,17 +114,17 @@ Select this check box to enable transferring files between the host and MED-V wo
 
 -   **Workspace to Host**—Enable transferring files from the MED-V workspace to the host.
 
-**Note**  
+**Note**  
 If a user without permissions attempts to transfer files, a window will appear prompting him to enter the credentials of a user with permissions to perform the file transfer.
 
- 
 
-**Important**  
-To support file transfer in Windows XP SP3, you must disable offline file synchronization by editing the registry as follows:
+
+**Important**  
+To support file transfer in Windows XP SP3, you must disable offline file synchronization by editing the registry as follows:
 
 `REG ADD HKLM\software\microsoft\windows\currentversion\netcache /V Enabled /T REG_DWORD /F /D 0`
 
- 
+
 
 Advanced
 
@@ -134,16 +136,16 @@ Enable printing to printers connected to the host
 
 Select this check box to enable users to print from the MED-V workspace using the host printer.
 
-**Note**  
+**Note**  
 The printing is performed by the printers defined on the host.
 
- 
+
 
 Enable access to CD / DVD
 
 Select this check box to allow access to a CD or DVD drive from this MED-V workspace.
 
- 
+
 
 **Multiple Memberships**
 
@@ -162,9 +164,9 @@ Select this check box to allow access to a CD or DVD drive from this MED-V works
 
 [How to Set Advanced File Transfer Options](how-to-set-advanced-file-transfer-options.md)
 
- 
 
- 
+
+
 
 
 

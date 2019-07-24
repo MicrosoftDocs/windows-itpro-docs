@@ -31,7 +31,7 @@ BitLocker helps mitigate unauthorized data access on lost or stolen computers be
 
 - **Encrypting volumes on your computer.** For example, you can turn on BitLocker for your operating system volume, or a volume on a fixed or removable data drive (such as a USB flash drive, SD card, and so on). Turning on BitLocker for your operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
 - **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer’s BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that leverage TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
- 
+ 
 The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 10, Windows 8.1, and Windows 8.
 
 For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803, see [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure). 
@@ -113,9 +113,9 @@ You can use the System Information desktop app (MSINFO32) to check if a device h
 
 If kernel DMA protection *not* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
 
-1.	Require a password for BIOS changes 
-2.	Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
-3.	Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
+1. Require a password for BIOS changes 
+2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
+3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
     - Group Policy: [Disable new DMA devices when this computer is locked](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)

@@ -27,7 +27,7 @@ You can use the following procedures to load or unload an application from the c
 **Note**  
 When you load or unload a package, all the applications in the package are loaded into or removed from cache. When loading a package, if you do not have adequate space in cache to load the applications, increase your cache size. For more information about cache size, see [How to Change the Cache Size and the Drive Letter Designation](how-to-change-the-cache-size-and-the-drive-letter-designation.md).
 
- 
+ 
 
 **To load an App-V application**
 
@@ -49,7 +49,7 @@ You can clear an application from the console directly from the **Results** pane
 **Note**  
 When you clear an application from the console, you can no longer use that application. However, the application remains in cache and is still available to other users on the same system. After a publishing refresh, the cleared applications will again become available to you. If there are multiple applications in a package, the user's settings are not removed until all of the applications are cleared.
 
- 
+ 
 
 **To clear an application from the console**
 
@@ -84,7 +84,7 @@ You can use the following procedure to import an application into the cache dire
     **Note**  
     If you have already configured an import search path or if the SFT file is in the same path as the last successful import, step 2 is not required.
 
-     
+     
 
 ## How to lock or unlock an App-V application
 
@@ -113,7 +113,7 @@ When you delete an application, the selected application will no longer be avail
 
 After a publishing refresh, the deleted applications will again become available to you.
 
- 
+ 
 
 **To delete an application**
 
@@ -231,9 +231,9 @@ You can use the following procedure to delete a file type association. The **Fil
 
 [Application Virtualization Client](application-virtualization-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

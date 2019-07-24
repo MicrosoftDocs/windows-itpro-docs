@@ -57,7 +57,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings| Users| 
 | Member Server Effective Default Settings | Users| 
 | Client Computer Effective Default Settings | Users| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 04/18/2018
 ms.topic: article
 ---
 
@@ -26,7 +25,7 @@ For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, an
 
 >[!NOTE]
 >For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
- 
+ 
 ![figure 1](../images/mdt-08-fig01.png)
 
 Figure 1. The machines used in this topic.
@@ -45,14 +44,14 @@ With Windows 10, there is no hard requirement to create reference images; howev
 
 ### Create the MDT build lab deployment share
 
--   On MDT01, log on as Administrator in the CONTOSO domain using a password of **P@ssw0rd**.
--   Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
--   Use the following settings for the New Deployment Share Wizard:
--   Deployment share path: E:\\MDTBuildLab
--   Share name: MDTBuildLab$
--   Deployment share description: MDT Build Lab
--   &lt;default&gt;
--   Verify that you can access the \\\\MDT01\\MDTBuildLab$ share.
+- On MDT01, log on as Administrator in the CONTOSO domain using a password of <strong>P@ssw0rd</strong>.
+- Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
+- Use the following settings for the New Deployment Share Wizard:
+- Deployment share path: E:\\MDTBuildLab
+- Share name: MDTBuildLab$
+- Deployment share description: MDT Build Lab
+- &lt;default&gt;
+- Verify that you can access the \\\\MDT01\\MDTBuildLab$ share.
 
 ![figure 2](../images/mdt-08-fig02.png)
 
@@ -80,9 +79,9 @@ This section will show you how to populate the MDT deployment share with the Win
 
 MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
 
->[!NOTE]  
+>[!NOTE]
 >Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
- 
+ 
 ### Add Windows 10 Enterprise x64 (full source)
 
 In these steps we assume that you have copied the content of a Windows 10 Enterprise x64 ISO to the **E:\\Downloads\\Windows 10 Enterprise x64** folder.
@@ -120,9 +119,9 @@ By storing configuration items as MDT applications, it is easy to move these obj
 
 In these examples, we assume that you downloaded the software in this list to the E:\\Downloads folder. The first application is added using the UI, but because MDT supports Windows PowerShell, you add the other applications using Windows PowerShell.
 
->[!NOTE]  
+>[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523).
- 
+ 
 ### Create the install: Microsoft Office Professional Plus 2013 x86
 
 You can customize Office 2013. In the volume license versions of Office 2013, there is an Office Customization Tool you can use to customize the Office installation. In these steps we assume you have copied the Office 2013 installation files to the E:\\Downloads\\Office2013 folder.
@@ -138,9 +137,9 @@ You also can customize the Office installation using a Config.xml file. But we r
 
     Figure 5. The Install - Microsoft Office 2013 Pro Plus - x86 application properties.
 
-    >[!NOTE] 
+    >[!NOTE]
     >If you don't see the Office Products tab, verify that you are using a volume license version of Office. If you are deploying Office 365, you need to download the Admin folder from Microsoft.
-     
+     
 3.  In the Office Customization Tool dialog box, select the Create a new Setup customization file for the following product option, select the Microsoft Office Professional Plus 2013 (32-bit) product, and click OK.
 4.  Use the following settings to configure the Office 2013 setup to be fully unattended:
     1.  Install location and organization name
@@ -160,9 +159,9 @@ You also can customize the Office installation using a Config.xml file. But we r
         -   In the **Microsoft Office 2013** node, expand **Privacy**, select **Trust Center**, and enable the Disable Opt-in Wizard on first run setting.
 5.  From the **File** menu, select **Save**, and save the configuration as 0\_Office2013ProPlusx86.msp in the **E:\\MDTBuildLab\\Applications\\Install - Microsoft Office 2013 Pro Plus - x86\\Updates** folder.
 
-    >[!NOTE] 
+    >[!NOTE]
     >The reason for naming the file with a 0 (zero) at the beginning is that the Updates folder also handles Microsoft Office updates,          and they are installed in alphabetical order. The Office 2013 setup works best if the customization file is installed before any updates.
-     
+     
 6.  Close the Office Customization Tool, click Yes in the dialog box, and in the **Install - Microsoft Office 2013 Pro Plus - x86 Properties** window, click **OK**.
 
 ### Connect to the deployment share using Windows PowerShell
@@ -324,14 +323,14 @@ The steps below walk you through the process of editing the Windows 10 referenc
     1.  State Restore. Enable the Windows Update (Pre-Application Installation) action.
         **Note**  
         Enable an action by going to the Options tab and clearing the Disable this step check box.
-         
+         
     2.  State Restore. Enable the Windows Update (Post-Application Installation) action.
     3.  State Restore. Enable the Windows Update (Post-Application Installation) action. State Restore. After the **Tattoo** action, add a new **Group** action with the following setting:
         -   Name: Custom Tasks (Pre-Windows Update)
     4.  State Restore. After Windows Update (Post-Application Installation) action, rename Custom Tasks to Custom Tasks (Post-Windows Update).
         **Note**  
         The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.
-         
+         
     5.  State Restore / Custom Tasks (Pre-Windows Update). Add a new Install Roles and Features action with the following settings:
         1.  Name: Install - Microsoft NET Framework 3.5.1
         2.  Select the operating system for which roles are to be installed: Windows 10
@@ -339,7 +338,7 @@ The steps below walk you through the process of editing the Windows 10 referenc
         
         >[!IMPORTANT]
         >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
-         
+         
         ![figure 7](../images/fig8-cust-tasks.png)
 
         Figure 7. The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
@@ -379,9 +378,9 @@ When using MDT, you don't need to edit the Unattend.xml file very often because 
 >[!WARNING]
 >Do not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml file. These settings are deprecated and can have unintended effects if used.
 
->[!NOTE]  
+>[!NOTE]
 >You also can use the Unattend.xml to enable components in Windows 10, like the Telnet Client or Hyper-V client. Normally we prefer to do this via the **Install Roles and Features** action, or using Deployment Image Servicing and Management (DISM) command-line tools, because then we can add that as an application, being dynamic, having conditions, and so forth. Also, if you are adding packages via Unattend.xml, it is version specific, so Unattend.xml must match the exact version of the operating system you are servicing.
- 
+ 
 Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
 
 1.  Using the Deployment Workbench, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
@@ -460,9 +459,9 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 
     Figure 12. The boot image rules for the MDT Build Lab deployment share.
 
-    >[!NOTE]  
+    >[!NOTE]
     >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation.
-     
+     
 4.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
 5.  In the **Lite Touch Boot Image Settings** area, configure the following settings:
     1.  Image description: MDT Build Lab x86
@@ -473,9 +472,9 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
     2.  ISO file name: MDT Build Lab x64.iso
 8.  Click **OK**.
 
->[!NOTE]  
+>[!NOTE]
 >In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
- 
+ 
 
 ### Update the deployment share
 
@@ -484,9 +483,9 @@ After the deployment share has been configured, it needs to be updated. This is 
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Update Deployment Share**.
 2.  Use the default options for the Update Deployment Share Wizard.
 
->[!NOTE]  
+>[!NOTE]
 >The update process will take 5 to 10 minutes.
- 
+ 
 ### The rules explained
 
 Now that the MDT Build Lab deployment share (the share used to create the reference images) has been configured, it is time to explain the various settings used in the Bootstrap.ini and CustomSettings.ini files.
@@ -495,9 +494,9 @@ The Bootstrap.ini and CustomSettings.ini files work together. The Bootstrap.ini 
 
 The CustomSettings.ini file is normally stored on the server, in the Deployment share\\Control folder, but also can be stored on the media (when using offline media).
 
->[!NOTE]  
+>[!NOTE]
 >The settings, or properties, that are used in the rules (CustomSettings.ini and Bootstrap.ini) are listed in the MDT documentation, in the Microsoft Deployment Toolkit Reference / Properties / Property Definition section.
- 
+ 
 ### The Bootstrap.ini file
 
 The Bootstrap.ini file is available via the deployment share's Properties dialog box, or via the E:\\MDTBuildLab\\Control folder on MDT01.
@@ -518,14 +517,14 @@ So, what are these settings?
 -   **DeployRoot.** This is the location of the deployment share. Normally, this value is set by MDT, but you need to update the DeployRoot value if you move to another server or other share. If you don't specify a value, the Windows Deployment Wizard prompts you for a location.
 -   **UserDomain, UserID, and UserPassword.** These values are used for automatic log on to the deployment share. Again, if they are not specified, the wizard prompts you.
 
-    >[!WARNING]  
+    >[!WARNING]
     >Caution is advised. These values are stored in clear text on the boot image. Use them only for the MDT Build Lab deployment share and not for the MDT Production deployment share that you learn to create in the next topic.
-     
+     
 -   **SkipBDDWelcome.** Even if it is nice to be welcomed every time we start a deployment, we prefer to skip the initial welcome page of the Windows Deployment Wizard.
 
->[!NOTE]  
+>[!NOTE]
 >All properties beginning with "Skip" control only whether to display that pane in the Windows Deployment Wizard. Most of the panes also require you to actually set one or more values.
- 
+ 
 ### The CustomSettings.ini file
 
 The CustomSettings.ini file, whose content you see on the Rules tab of the deployment share Properties dialog box, contains most of the properties used in the configuration.
@@ -572,7 +571,7 @@ SkipFinalSummary=YES
 
     **Note**  
     The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
-     
+     
 -   **JoinWorkgroup.** Configures Windows to join a workgroup.
 -   **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
 -   **FinishAction.** Instructs MDT what to do when the task sequence is complete.
@@ -603,7 +602,7 @@ This steps below outline the process used to boot a virtual machine using an ISO
 
     **Note**  
     Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
-     
+     
 2.  Create a virtual machine with the following settings:
     1.  Name: REFW10X64-001
     2.  Location: C:\\VMs
@@ -615,7 +614,7 @@ This steps below outline the process used to boot a virtual machine using an ISO
 
     **Note**  
     Taking a snapshot is useful if you need to restart the process and want to make sure you can start clean.
-     
+     
 4.  Start the REFW10X64-001 virtual machine. After booting into Windows PE, complete the Windows Deployment Wizard using the following settings:
     1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
     2.  Specify whether to capture an image: Capture an image of this reference computer

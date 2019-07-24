@@ -89,12 +89,12 @@ The following table contains the installation prerequisites for the MBAM Adminis
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 For a list of supported operating systems, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+ 
 
 ### Installation prerequisites for the Compliance and Audit Reports
 
@@ -105,7 +105,7 @@ SSRS must be installed and running during MBAM server installation. SSRS should 
 **Note**  
 For a list of supported operating systems and SQL Server versions, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+ 
 
 ### Installation prerequisites for the Recovery and Hardware Database
 
@@ -116,14 +116,14 @@ SQL Server must have Database Engine Services installed and running during the M
 **Note**  
 For a list of supported operating systems and SQL Server versions, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+ 
 
 The TDE SQL Server feature performs real-time input/output (I/O) encryption and decryption of the data and log files. TDE protects data that is "at rest,” which include the data and the log files. It provides the ability to comply with many laws, regulations, and guidelines that are established in various industries.
 
 **Note**  
 Because TDE performs real-time decryption of database information, the recovery key information will be visible if the account under which you are logged in has permissions to the database when you view the recovery key information SQL tables.
 
- 
+ 
 
 ### Installation prerequisites for the Compliance and Audit Database
 
@@ -134,7 +134,7 @@ SQL Server must have Database Engine Services installed and running during MBAM 
 **Note**  
 For a list of supported operating systems and SQL Server versions, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+ 
 
 ## Installation prerequisites for MBAM Clients
 
@@ -148,7 +148,7 @@ The necessary prerequisites that you must meet before you begin the MBAM Client 
 **Warning**  
 Ensure that the keyboard, mouse, and video are directly connected to the computer, instead of to a keyboard, video, mouse (KVM) switch. A KVM switch can interfere with the ability of the computer to detect the physical presence of hardware.
 
- 
+ 
 
 ## Related topics
 
@@ -157,9 +157,9 @@ Ensure that the keyboard, mouse, and video are directly connected to the compute
 
 [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

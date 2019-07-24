@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -56,7 +55,7 @@ The first three lines of the script make up a header that all UserExit scripts h
 
 **Note**  
 The purpose of this sample is not to recommend that you use the MAC Address as a base for computer naming, but to show you how to take a variable from MDT, pass it to an external script, make some changes to it, and then return the new value to the deployment process.
- 
+ 
 ## Related topics
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)

@@ -62,7 +62,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not applicable| 
 | Member server effective default settings | Not applicable |
 | Effective GPO default settings on client computers | Not applicable| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

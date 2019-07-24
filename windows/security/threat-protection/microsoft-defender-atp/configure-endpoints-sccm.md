@@ -32,7 +32,7 @@ ms.date: 12/11/2018
 
 <span id="sccm1606"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see [Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
@@ -61,7 +61,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
@@ -103,7 +103,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** >  **Offboarding**.
 
@@ -113,9 +113,9 @@ For security reasons, the package used to Offboard machines will expire 30 days 
     
     d. Click **Download package**, and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 

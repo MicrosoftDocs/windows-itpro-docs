@@ -4,11 +4,11 @@ description: SUPL CSP
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/20/2018
 ---
 
@@ -425,7 +425,7 @@ If a mobile operator requires the communication with the H-SLP to take place ove
 
 Adding new configuration information for a H-SLP server for SUPL. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <wap-provisioningdoc>
   <characteristic type="SUPL">
@@ -449,7 +449,7 @@ Adding new configuration information for a H-SLP server for SUPL. Values in ital
 
 Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <wap-provisioningdoc>
   <characteristic type="SUPL">

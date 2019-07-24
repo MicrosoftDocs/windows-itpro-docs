@@ -1,7 +1,7 @@
 ---
-title: Create an app to access Microsoft Defender ATP without a user
+title: Create an Application to access Microsoft Defender ATP without a user
 ms.reviewer: 
-description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
+description: Use the exposed data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,11 +19,9 @@ ms.topic: article
 
 # Create an app to access Microsoft Defender ATP without a user
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This page describes how to create an application to get programmatic access to Microsoft Defender ATP without a user.
 
@@ -31,7 +29,7 @@ If you need programmatic access Microsoft Defender ATP on behalf of a user, see 
 
 If you are not sure which access you need, see [Get started](apis-intro.md).
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate workflows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
@@ -42,87 +40,77 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Create an app
 
-1. Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
+1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
+   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3.	In the Create window, enter the following information then click **Create**.
+3. In the registration form, choose a name for your application and then click **Register**.
 
-    ![Image of Create application window](images/webapp-create.png)
+4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
-    - **Name:** Choose your own name. 
-    - **Application type:** Web app / API
-    - **Redirect URI:** `https://127.0.0.1`
+   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-4.	Click **Settings** > **Required permissions** > **Add**.
+   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-    ![Image of new app in Azure](images/webapp-add-permission.png)
+   ![Image of API access and API selection](images/add-permission.png)
 
-5.	Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
-	
-	**Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-    ![Image of API access and API selection](images/webapp-add-permission-2.png)
+   ![Image of API access and API selection](images/application-permissions.png)
 
-6. Click **Select permissions** > **Check the desired permissions** > **Select**.
-	
-	**Important note**: You need to select the relevant permissions. 'Run advanced queries' is only an example!
+   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
-	For instance,
+     For instance,
 
-	- To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-	- To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
-	- To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-    ![Image of select permissions](images/webapp-select-permission.png)
+5. Click **Grant consent**
 
-7. Click **Done**
+	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-    ![Image of add permissions completion](images/webapp-add-permission-end.png)
+	![Image of Grant permissions](images/grant-consent.png)
 
-8. Click **Grant permissions**
+6. Add a secret to the application.
 
-	In order to add the new selected permissions to the app, the Admin's tenant must press on the **Grant permissions** button.
+	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-	If in the future you will want to add more permission to the app, you will need to press on the **Grant permissions** button again so the changes will take effect.
+    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-	![Image of Grant permissions](images/webapp-grant-permissions.png)
+    ![Image of create app key](images/webapp-create-key2.png)
 
-9. Click **Keys**, type a key name and click **Save**.
+7. Write down your application ID and your tenant ID:
 
-	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
+   - On your application page, go to **Overview** and copy the following:
 
-    ![Image of create app key](images/webapp-create-key.png)
+   ![Image of created app id](images/app-and-tenant-ids.png)
 
-10. Write down your application ID.
-    
-	![Image of created app id](images/webapp-app-id1.png)
+8. **For Microsoft Defender ATP Partners only** - Set your application to be multi-tenanted (available in all tenants after consent)
 
-11. **For Microsoft Defender ATP Partners only** - Set your application to be multi-tenanted
-	
-	This is **required** for 3rd party apps (for example, if you create an application that is intended to run in multiple customers tenant).
+    This is **required** for 3rd party applications (for example, if you create an application that is intended to run in multiple customers tenant).
 
-	This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data)​
+    This is **not required** if you create a service that you want to run in your tenant only (i.e. if you create an application for your own usage that will only interact with your own data)
 
-	Click **Properties** > **Yes** > **Save**.
+    - Go to **Authentication** > Add https://portal.azure.com as **Redirect URI**.
 
-	![Image of multi tenant](images/webapp-edit-multitenant.png)
+    - On the bottom of the page, under **Supported account types**, mark **Accounts in any organizational directory**
 
-	- Application consent for your multi-tenant App:
-	
-	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
+    - Application consent for your multi-tenant Application:
 
-	You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+    You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
 
-	Consent link is of the form: 
+    You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
-	```
-	https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
-	```
+    Consent link is of the form: 
 
-	where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
+    ```
+    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+    ```
+
+    where 00000000-0000-0000-0000-000000000000 should be replaced with your Application ID
 
 
 - **Done!** You have successfully registered an application! 
@@ -130,18 +118,18 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Get an access token examples:
 
-For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using PowerShell
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
- 
+
 $tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your app ID here
-$appSecret = '' ### Paste your app key here
- 
+$appId = '' ### Paste your Application ID here
+$appSecret = '' ### Paste your Application key here
+
 $resourceAppIdUri = 'https://api.securitycenter.windows.com'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
@@ -154,36 +142,35 @@ $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -E
 $token = $authResponse.access_token
 Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
-
 ```
 
 ### Using C#:
 
->The below code was tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
+>The below code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
 
 - Create a new Console Application
 - Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - Add the below using
 
-	```
-	using Microsoft.IdentityModel.Clients.ActiveDirectory;
-	```
+    ```
+    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    ```
 
 - Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)
 
-	```
-	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    ```
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
-	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com";
+    const string authority = "https://login.windows.net";
+    const string wdatpResourceId = "https://api.securitycenter.windows.com";
 
-	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-	string token = authenticationResult.AccessToken;
-	```
+    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
+    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
+    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+    string token = authenticationResult.AccessToken;
+    ```
 
 
 ### Using Python
@@ -196,13 +183,13 @@ Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 > The below procedure supposed Curl for Windows is already installed on your computer
 
 - Open a command window
-- ​Set CLIENT_ID to your Azure application ID
+- Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
 - Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender ATP application
 - Run the below command:
 
 ```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice​/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID​%/oauth2/v2.0/token" -k​
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 You will get an answer of the form:
@@ -216,7 +203,7 @@ You will get an answer of the form:
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below you can see a decoded token acquired from an app with permissions to all of Microsoft Defender ATP's roles:
+- In the screen shot below you can see a decoded token acquired from an Application with permissions to all of Microsoft Defender ATP's roles:
 
 ![Image of token validation](images/webapp-decoded-token.png)
 
@@ -227,17 +214,17 @@ Sanity check to make sure you got a correct token:
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
 - Example of sending a request to get a list of alerts **using C#** 
-	```
-	var httpClient = new HttpClient();
+    ```
+    var httpClient = new HttpClient();
 
-	var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
 
-	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-	var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
-	// Do something useful with the response
-	```
+    // Do something useful with the response
+    ```
 
 ## Related topics
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)

@@ -15,11 +15,27 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## July 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)              | Renamed to reflect focus on deployment guidance for IT professionals. Covers minor changes in Version 2.41.139.0.   |
+
+
+
+## June 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+|[Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)             | New introductory page for the Surface Diagnostic Toolkit for Business.  |
+| [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)               |Updated with summary of recommendations for managing power settings and optimizing battery life.   |
+
+
 ## March 2019
 
-New or changed topic | Description
---- | ---
-[Surface System SKU reference](surface-system-sku-reference.md) | New
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Surface System SKU reference](surface-system-sku-reference.md) | New    |
 
 
 ## February 2019

@@ -4,11 +4,11 @@ description: EnterpriseAssignedAccess DDF
 ms.assetid: 8BD6FB05-E643-4695-99A2-633995884B37
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 
@@ -19,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

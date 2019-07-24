@@ -25,7 +25,7 @@ Troubleshoot issues that might arise as you use Microsoft Defender ATP capabilit
 Topic | Description 
 :---|:---
 Troubleshoot sensor state | Find solutions for issues related to the Microsoft Defender ATP sensor
-Troubleshoot service issues | Fix issues related to the Windows Defender Advanced Threat service
+Troubleshoot service issues | Fix issues related to the Microsoft Defender Advanced Threat service
 Troubleshoot attack surface reduction | Fix issues related to network protection and attack surface reduction rules
 Troubleshoot next generation protection | If you encounter a problem with antivirus, you can search the tables in this topic to find a matching issue and potential solution
 

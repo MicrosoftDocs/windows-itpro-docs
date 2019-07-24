@@ -30,7 +30,7 @@ Use the following procedure to install the reporting server on a standalone comp
 5. On the **Installation location** page, accept the default location and select **Next**.
 6. On the **Configure existing reporting database** page, select **Use a remote SQL Server**, then enter the machine name of the computer running Microsoft SQL Server. For example, you can name your computer **SqlServerMachine**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server instance, select **Use the default instance**. If you're using a custom Microsoft SQL Server instance, select **Use a custom instance**, then enter the name of your custom instance. Specify the **SQL Server Database name** that this reporting server will use; for example, you can name the server **AppvReporting**.
 7. On the **Configure reporting server configuration** page.
 

@@ -379,46 +379,46 @@ The process then configures the client for package or connection group additions
 
 3. Configure the packages by identifying the **Add** or **Update** operations.
 
-    1. The App-V Client utilizes the AppX API from Windows and accesses the appv file from the publishing server.
+   1. The App-V Client utilizes the AppX API from Windows and accesses the appv file from the publishing server.
 
-    2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
+   2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
 
-    3. Completely stream publishing block data defined in the **StreamMap.xml** file. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
+   3. Completely stream publishing block data defined in the **StreamMap.xml** file. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
 
-        - Icons: Targets of extension points.
-        - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
-        - Scripts: Download scripts directory for use throughout the publishing process.
+       - Icons: Targets of extension points.
+       - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
+       - Scripts: Download scripts directory for use throughout the publishing process.
 
-    4. Populate the Package store by doing the following:
+   4. Populate the Package store by doing the following:
 
-        1. Create sparse files on disk that represent the extracted package for any directories listed.
+      1. Create sparse files on disk that represent the extracted package for any directories listed.
 
-        2. Stage top-level files and directories under root.
+      2. Stage top-level files and directories under root.
 
-        All other files are created when the directory is listed as sparse on disk and streamed on demand.
+         All other files are created when the directory is listed as sparse on disk and streamed on demand.
 
-    5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** files from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
+   5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** files from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
 
-    6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
+   6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
 
-    7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
+   7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
 
-    8. Register the package with the App-V Kernel Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
+   8. Register the package with the App-V Kernel Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
 
-    9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
+   9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
 
 4. Configure Connection Groups by adding and enabling or disabling.
 
 5. Remove objects that are not published to the target (user or machine).
 
-    >[!NOTE]
+   > [!NOTE]
     >This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
 
 6. Invoke background load mounting based on client configuration.
 
 7. Packages that already have publishing information for the machine or user are immediately restored.
 
-    >[!NOTE]
+   > [!NOTE]
     >This condition occurs as a product of removal without unpublishing with background addition of the package.
 
 This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
@@ -447,7 +447,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
     2. Store backup information in the user’s registry and roaming profile (Shortcut Backups).
 
-        >[!NOTE]
+       > [!NOTE]
         >This enables restore extension points if the package is unpublished.
 
     3. Run scripts targeted for publishing timing.
@@ -847,12 +847,12 @@ The following example shows the combination of the Manifest, Deployment Configur
      <appv:Shortcut>
           <appv:Fìle>[{Desktop}]\7-Zip\7-Zip File Manager.lnk</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
+          <appv:Icon>[{AppVPackageRoot}]\7zFM.exe.O.ico</appv:Icon>
      </appv:Shortcut>
      <appv:Shortcut>
           <appv:File>[{Common Programs}]\7-Zip\7-Zip File Manager.Ink</appv:File>
           <appv:Target>[{AppVPackageRoot}]\7zFM.exe</appv:Target>
-          <appv:lcon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
+          <appv:Icon>[{AppVPackageRoot)]\7zFM.exe.O.ico</appv: Icon>
      </appv:Shortcut>
 </appv:Extension>
      </Subsystems>

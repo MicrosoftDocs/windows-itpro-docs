@@ -4,11 +4,11 @@ description: NodeCache CSP
 ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -19,7 +19,7 @@ The NodeCache configuration service provider is used to manage the client cache.
 
 NodeCache supports the comparison of hash values instead of actual node values:
 
-``` syntax
+```xml
 <Type xmlns="syncml:metinf">
 application/x-nodemon-sha256
 </type>
@@ -59,7 +59,7 @@ Required. Root node for cached nodes. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-nodes-nodeid"></a>**/Nodes/****_NodeID_**  
+<a href="" id="-nodes-nodeid"></a>**/Nodes/**<strong>*NodeID*</strong>  
 Optional. Information about each cached node is stored under *NodeID* as specified by the server. This value must not contain a comma. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
@@ -76,7 +76,7 @@ Supported operations are Get, Add, and Delete.
 
 Here's an example for setting the ExpectedValue to nonexistent.
 
-``` syntax
+```xml
 <Add>
    <CmdID>10</CmdID>
    <Item>
@@ -146,7 +146,7 @@ Supported operations are Add, Get, and Delete.
 
 Creating settings for node caching:
 
-``` syntax
+```xml
 <Add>
    <CmdID>2</CmdID>
    <Item>
@@ -222,7 +222,7 @@ Creating settings for node caching:
 
 Getting nodes under Provider ID MDMSRV1, cache version, changed nodes, node, expected value:
 
-``` syntax
+```xml
 <Get>
    <CmdID>18</CmdID>
    <Item>
@@ -267,7 +267,7 @@ Getting nodes under Provider ID MDMSRV1, cache version, changed nodes, node, exp
 
 Replacing the cache version, node URI, and expected value:
 
-``` syntax
+```xml
 <Replace>
    <CmdID>2</CmdID>
    <Item>
@@ -299,7 +299,7 @@ Replacing the cache version, node URI, and expected value:
 
 For AutoSetExpectedValue, a Replace operation with empty data will query the ./DevDetail/Ext/Microsoft/DeviceName.
 
-```syntax
+```xml
           <Add>
             <CmdID>2001</CmdID>
             <Item>
@@ -335,12 +335,12 @@ A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/Expect
 
 A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
 
-```syntax
+```xml
 <Nodes><Node Id="10" Uri=""></Node><Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node></Nodes>
 ```
 It represents this:
 
-```syntax
+```xml
 <Nodes>
     <Node Id="10" Uri=""></Node>
     <Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node>
@@ -357,9 +357,9 @@ The value inside of the node tag is the actual value returned by the Uri, which 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,11 @@ description: DiagnosticLog DDF
 ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: EnrollmentStatusTracking CSP
 description: EnrollmentStatusTracking CSP
-ms.author: v-madhi@microsoft.com
+ms.author: dansimp@microsoft.com
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -12,7 +12,7 @@ ms.date: 05/21/2019
 # EnrollmentStatusTracking CSP
 
 
-During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user. For more information on ESP, see [Windows Autopilot Enrollment Status page](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/enrollment-status).
+During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user. For more information on ESP, see [Windows Autopilot Enrollment Status page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status).
 
 ESP uses the EnrollmentStatusTracking CSP along with the DMClient CSP to track the installation of different apps. The EnrollmentStatusTracking CSP tracks Win32 apps installations and DMClient CSP tracks MSI and Universal Windows Platform apps installations. In DMClient CSP, the **FirstSyncStatus/ExpectedMSIAppPackages** and **FirstSyncStatus/ExpectedModernAppPackages** nodes list the apps to track their installation. See [DMClient CSP](dmclient-csp.md) for more information.
 

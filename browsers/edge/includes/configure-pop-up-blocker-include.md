@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Pop-up Blocker -->
@@ -16,11 +16,12 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Not configured |Blank |Blank |Users can choose to use Pop-up Blocker. | |
-|Disabled<br>**(default)** |0 |0 |Turned off. Allow pop-up windows to open. | |
-|Enabled |1 |1 |Turned on. Prevent pop-up windows from opening. |![Most restricted value](../images/check-gn.png) |
+|       Group Policy        |  MDM  | Registry |                   Description                   |                 Most restricted                  |
+|---------------------------|:-----:|:--------:|-------------------------------------------------|:------------------------------------------------:|
+|      Not configured       | Blank |  Blank   |     Users can choose to use Pop-up Blocker.     |                                                  |
+| Disabled<br>**(default)** |   0   |    0     |    Turned off. Allow pop-up windows to open.    |                                                  |
+|          Enabled          |   1   |    1     | Turned on. Prevent pop-up windows from opening. | ![Most restricted value](../images/check-gn.png) |
+
 ---
 
 ### ADMX info and settings

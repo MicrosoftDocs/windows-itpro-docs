@@ -29,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 This policy setting determines whether server operators can use the**at** command to submit jobs. If you enable this policy setting, jobs that are created by server operators by means of the **at** command run in the context of the account that runs the Task Scheduler service. By default, that is the Local System account.
 
 >**Note:**  This security option setting affects only the scheduler tool for the **at** command. It does not affect the Task Scheduler tool.
- 
+ 
 Enabling this policy setting means jobs that are created by server operators through the **at** command will be executed in the context of the account that is running that service—by default, that is the Local System account. This means that server operators can perform tasks that the Local System account is able to do, but server operators would normally not be able to do, such as add their account to the local Administrators group.
 
 The impact of enabling this policy setting should be small for most organizations. Users, including those in the Server Operators group, will still be able to create jobs by using the Task Scheduler Wizard, but those jobs will run in the context of the account that the user authenticates with when setting up the job.
@@ -60,7 +60,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Not defined| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

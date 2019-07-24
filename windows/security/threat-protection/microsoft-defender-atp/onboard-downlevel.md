@@ -57,7 +57,7 @@ The following steps are required to enable this integration:
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
-- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
@@ -70,7 +70,7 @@ Review the following details to verify minimum system requirements:
     >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
     >Don't install .NET framework 4.0.x, since it will negate the above installation.
 
-- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 
 
@@ -92,7 +92,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ### Configure proxy and Internet connectivity settings
  
-- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Microsoft Defender ATP service:
 
 Agent Resource    |    Ports 

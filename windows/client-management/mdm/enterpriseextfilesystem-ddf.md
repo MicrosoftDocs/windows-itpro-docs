@@ -4,11 +4,11 @@ description: EnterpriseExtFileSystem DDF
 ms.assetid: 2D292E4B-15EE-4AEB-8884-6FEE8B92D2D1
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 
@@ -19,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

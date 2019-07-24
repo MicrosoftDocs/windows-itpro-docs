@@ -52,10 +52,10 @@ Following is the policy path for the Terminal Services policy named DisablePassw
 
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Virtual Machine\\Policies\\DisablePasswordSaving
 
-**Note**  
+**Note**  
 The changes that you make to DisablePasswordSaving only affect the RDP prompt to a virtual machine.
 
- 
+
 
 The following table lists the different ways you can configure your settings for credential storing and the effects of the different configurations:
 
@@ -84,35 +84,33 @@ The following table lists the different ways you can configure your settings for
 <td align="left"><p></p></td>
 <td align="left"><p>If the end user does not select the check box, the Remote Desktop Connection (RDC) Client prompt is presented instead of the MED-V prompt, and the check box to accept is cleared. If the end user selects the check box, the RDC Client credential is stored for later use.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>RDC does not validate credentials when the end user enters them. If the end user caches the credentials through the RDC prompt, there is a risk that incorrect credentials might be stored. In this case, the incorrect credentials must be deleted in the Windows Credential Manager.</p>
+<strong>Important</strong><br/><p>RDC does not validate credentials when the end user enters them. If the end user caches the credentials through the RDC prompt, there is a risk that incorrect credentials might be stored. In this case, the incorrect credentials must be deleted in the Windows Credential Manager.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DisablePasswordSaving</p></td>
 <td align="left"><p><strong>Enabled</strong></p></td>
 <td align="left"><div class="alert">
-<strong>Note</strong>  
-<p>This configuration is more secure because it does not allow end user credentials to be cached.</p>
+<strong>Note</strong><br/><p>This configuration is more secure because it does not allow end user credentials to be cached.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 By default, the MED-V installation sets a registry key in the guest to suppress the "password about to expire" prompt. The end user is only prompted for a password change on the host. Credentials that are updated on the host are passed to the guest.
 
-**Caution**  
+**Caution**  
 If you use Group Policy in your environment, know that it can override the registry key causing the password prompts from the guest to reappear.
 
- 
+
 
 ### Security Concerns with Authentication
 
@@ -127,9 +125,9 @@ This same concern exists when MED-V authentication is disabled but the Terminal 
 
 [Security Best Practices for MED-V Operations](security-best-practices-for-med-v-operations.md)
 
- 
 
- 
+
+
 
 
 

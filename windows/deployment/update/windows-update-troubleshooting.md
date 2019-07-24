@@ -4,12 +4,12 @@ description: Learn how to troubleshoot Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: lomayor
+ms.author: greg-lindsay
 ms.date: 09/18/2018
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 
@@ -138,7 +138,7 @@ Or
 DownloadManager [0]12F4.1FE8::09/29/2017-13:45:08.530 [agent]DO job {C6E2F6DC-5B78-4608-B6F1-0678C23614BD} hit a transient error, updateId = 5537BD35-BB74-40B2-A8C3-B696D3C97CBA.201 <NULL>, error = 0x80D0000A 
 ``` 
  
-Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information , see [I need to disable Windows Firewall](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337\(v=ws.10\)) or [Windows Update stuck at 0 percent on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4039473/windows-update-stuck-at-0-percent-on-windows-10-and-windows-server-201).
+Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information, see [I need to disable Windows Firewall](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337(v=ws.10)).
  
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policies to control the behavior of WU service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting polices may lead to unexpected behaviors. 

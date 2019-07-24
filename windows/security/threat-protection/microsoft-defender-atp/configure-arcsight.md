@@ -61,88 +61,87 @@ The following steps assume that you have completed all the required steps in [Be
 1. Install the latest 32-bit Windows FlexConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightFlexConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
 
 2. Follow the installation wizard through the following tasks:
-  - Introduction
-  - Choose Install Folder
-  - Choose Install Set
-  - Choose Shortcut Folder
-  - Pre-Installation Summary
-  - Installing...
+   - Introduction
+   - Choose Install Folder
+   - Choose Install Set
+   - Choose Shortcut Folder
+   - Pre-Installation Summary
+   - Installing...
 
-  You can keep the default values for each of these tasks or modify the selection to suit your requirements.
+   You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
 3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the FlexConnector installation location, for example:
 
-  - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
+   - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
-  - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
+   - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
-  NOTE:
-  You must put the configuration files in this location, where *folder_location* represents the location where you installed the tool.
+   NOTE:
+   You must put the configuration files in this location, where *folder_location* represents the location where you installed the tool.
 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
 5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
 
-6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
+6. Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
-  <table>
-     <tbody style="vertical-align:top;">
-     <tr>
-     <th>Field</th>
-     <th>Value</th>
-     </tr>
-     <tr>
-     <td>Configuration File</td>
-     <td>Type in the name of the client property file. The name must match the file provided in the .zip that you downloaded.
-     For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", you must type "WDATP-Connector" as the name of the client property file.</td>
-     </tr>
-     <td>Events URL</td>
-     <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br>
-  </br>**For US:** https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br> <br> **For UK**:  https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
-     <tr>
-     <td>Authentication Type</td>
-     <td>OAuth 2</td>
-     </tr>
-     <td>OAuth 2 Client Properties file</td>
-     <td>Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.</td>
-     <tr>
-     <td>Refresh Token</td>
-     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory.For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080** A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
-     </td>
-     </tr>
-     </tr>
-     </table>  
-7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
-If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirect_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
+   <table>
+    <tbody style="vertical-align:top;">
+    <tr>
+    <th>Field</th>
+    <th>Value</th>
+    </tr>
+    <tr>
+    <td>Configuration File</td>
+    <td>Type in the name of the client property file. The name must match the file provided in the .zip that you downloaded.
+    For example, if the configuration file in &quot;flexagent&quot; directory is named &quot;WDATP-Connector.jsonparser.properties&quot;, you must type &quot;WDATP-Connector&quot; as the name of the client property file.</td>
+    </tr>
+    <td>Events URL</td>
+    <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> <strong>For EU</strong>:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br>
+   </br><strong>For US:</strong> https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br> <br> <strong>For UK</strong>:  https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
+    <tr>
+    <td>Authentication Type</td>
+    <td>OAuth 2</td>
+    </tr>
+    <td>OAuth 2 Client Properties file</td>
+    <td>Browse to the location of the <em>wdatp-connector.properties</em> file. The name must match the file provided in the .zip that you downloaded.</td>
+    <tr>
+    <td>Refresh Token</td>
+    <td>You can obtain a refresh token in two ways: by generating a refresh token from the <strong>SIEM settings</strong> page or using the restutil tool. <br><br> For more information on generating a refresh token from the <strong>Preferences setup</strong> , see <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)">Enable SIEM integration in Microsoft Defender ATP</a>. </br> </br><strong>Get your refresh token using the restutil tool:</strong> </br> a. Open a command prompt. Navigate to C:\<em>folder_location</em>\current\bin where <em>folder_location</em> represents the location where you installed the tool. </br></br> b. Type: <code>arcsight restutil token -config</code> from the bin directory.For example: <strong>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</strong> A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d. A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the <strong>Refresh Token</strong> field.
+    </td>
+    </tr>
+    </tr>
+    </table><br/>7. A browser window is opened by the connector. Login with your application credentials. After you log in, you&#39;ll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
+   If the <code>redirect_uri</code> is a https URL, you&#39;ll be redirected to a URL on the local host. You&#39;ll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You&#39;ll need to trust this certificate if the redirect_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
-8. Continue with the connector setup by returning to the HP ArcSight Connector Setup window.
+7. Continue with the connector setup by returning to the HP ArcSight Connector Setup window.
 
-9. Select the **ArcSight Manager (encrypted)** as the destination and click **Next**.
+8. Select the **ArcSight Manager (encrypted)** as the destination and click **Next**.
 
-10. Type in the destination IP/hostname in **Manager Hostname** and your credentials in the parameters form. All other values in the form should be retained with the default values. Click **Next**.
+9. Type in the destination IP/hostname in **Manager Hostname** and your credentials in the parameters form. All other values in the form should be retained with the default values. Click **Next**.
 
-11. Type in a name for the connector in the connector details form. All other values in the form are optional and can be left blank. Click **Next**.
+10. Type in a name for the connector in the connector details form. All other values in the form are optional and can be left blank. Click **Next**.
 
-11.	The ESM Manager import certificate window is shown. Select **Import the certificate to connector from destination** and click **Next**. The **Add connector Summary** window is displayed and the certificate is imported.
+11. The ESM Manager import certificate window is shown. Select **Import the certificate to connector from destination** and click **Next**. The **Add connector Summary** window is displayed and the certificate is imported.
 
 12. Verify that the details in the **Add connector Summary** window is correct, then click **Next**.
 
 13. Select **Install as a service** and click **Next**.
 
-14.	Type a name in the **Service Internal Name** field. All other values in the form can be retained with the default values or left blank . Click **Next**.
+14. Type a name in the **Service Internal Name** field. All other values in the form can be retained with the default values or left blank . Click **Next**.
 
-13.	Type in the service parameters and click **Next**. A window with the **Install Service Summary** is shown. Click **Next**.
+15. Type in the service parameters and click **Next**. A window with the **Install Service Summary** is shown. Click **Next**.
 
-14. Finish the installation by selecting **Exit** and **Next**.
+16. Finish the installation by selecting **Exit** and **Next**.
 
 ## Install and configure the HP ArcSight console
 1. Follow the installation wizard through the following tasks:
-  - Introduction
-  - License Agreement
-  - Special Notice
-  - Choose ArcSight installation directory
-  - Choose Shortcut Folder
-  - Pre-Installation Summary
+   - Introduction
+   - License Agreement
+   - Special Notice
+   - Choose ArcSight installation directory
+   - Choose Shortcut Folder
+   - Pre-Installation Summary
 
 2. Click **Install**. After the installation completes, the ArcSight Console Configuration Wizard opens.
 
@@ -177,11 +176,11 @@ Microsoft Defender ATP alerts will appear as discrete events, with "Microsoft”
 **Solution:**
 1. Stop the process by clicking Ctrl + C on the Connector window. Click **Y** when asked "Terminate batch job Y/N?".
 2. Navigate to the folder where you stored the WDATP-connector.properties file and edit it to add the following value:
-`reauthenticate=true`.
+   `reauthenticate=true`.
 
 3. Restart the connector by running the following command: `arcsight.bat connectors`.
 
-  A browser window appears. Allow it to run, it should disappear, and the connector should now be running.
+   A browser window appears. Allow it to run, it should disappear, and the connector should now be running.
 
 > [!NOTE]
 > Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.

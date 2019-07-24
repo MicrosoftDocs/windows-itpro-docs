@@ -4,18 +4,18 @@ description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
-ms.date: 05/01/2019
+author: manikadhiman
+ms.date: 07/18/2019
 ---
 
 # Policy CSP
 
 
-The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
+The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
 
@@ -57,12 +57,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/****_AreaName_**  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>  
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/****_AreaName/PolicyName_**  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
@@ -70,7 +70,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   Separate substring values by the Unicode &\#xF000; in the XML file.
 
 > [!NOTE]
-> A query from a different caller could provide a different value as each caller could have different values for a named policy.
+> A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
@@ -81,12 +81,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/****_AreaName_**  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>  
 <p style="margin-left: 20px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/****_AreaName/PolicyName_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -97,36 +97,36 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/library/cc179097.aspx).
 
-<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+<p style="margin-left: 20px">ADMX files that have been installed by using <strong>ConfigOperations/ADMXInstall</strong> can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy**  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy/_UniqueID_**  
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference/_UniqueID_**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
@@ -160,9 +160,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-accounts.md#accounts-allowmicrosoftaccountsigninassistant" id="accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="./policy-csp-accounts.md#accounts-domainnamesforemailsync" id="accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
+  
 </dl>
 
 ### ActiveXControls policies
@@ -1006,6 +1004,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### DeviceHealthMonitoring policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring" id="devicehealthmonitoring-allowdevicehealthmonitoring">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope" id="devicehealthmonitoring-configdevicehealthmonitoringscope">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a>
+  </dd>
+</dl>
+
 ### DeviceInstallation policies
 
 <dl>
@@ -1403,8 +1415,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload" id="internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
-  </dd>  
-  <dd>
+  </dd><br/>  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
@@ -2553,6 +2564,18 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-userincontroloftheseapps" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception"id="privacy-letappsaccessbackgroundspatialperception">Privacy/LetAppsAccessBackgroundSpatialPerception</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
+  </dd>  
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesscalendar" id="privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
   <dd>
@@ -2731,6 +2754,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesstrusteddevices-userincontroloftheseapps" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoice" id="privacy-letappsactivatewithvoice">Privacy/LetAppsActivateWithVoice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock" id="privacy-letappsactivatewithvoiceabovelock">Privacy/LetAppsActivateWithVoiceAboveLock</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsgetdiagnosticinfo" id="privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a>
@@ -3382,6 +3411,17 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-allowset24hourclock" id="timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+</dl>
+
+### Troubleshooting policies
+
+<dl>
+   <dd>
+    <a href="./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations" id="troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
   </dd>
 </dl>
 
@@ -5013,6 +5053,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](./policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode)
 -   [TextInput/AllowLanguageFeaturesUninstall](./policy-csp-textinput.md#textinput-allowlanguagefeaturesuninstall)
 -   [TextInput/AllowLinguisticDataCollection](./policy-csp-textinput.md#textinput-allowlinguisticdatacollection)
+-   [Troubleshooting/AllowRecommendations](./policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)
 -   [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
 -   [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
 -   [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
@@ -5134,8 +5175,75 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
+## <a href="" id="hololens2policies"></a>Policies supported by HoloLens 2  
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowAutofill](#browser-allowautofill)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
+-   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
+-   [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
+-   [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+-   [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowStorageCard](#system-allowstoragecard)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+-   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+-   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+-   [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
+-   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+-   [Update/PauseQualityUpdates](#update-pausequalityupdates)
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+
+<!--EndHoloLens2-->
+
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Policies supported by Windows Holographic for Business  
+## <a href="" id="hololensbusinessspolicies"></a>Policies supported by HoloLens (1st gen) Commercial Suite  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5184,7 +5292,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
+## <a href="" id="hololenspolicies"></a>Policies supported by HoloLens (1st gen) Development Edition
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
@@ -5332,6 +5440,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
@@ -5379,6 +5492,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+-   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
+-   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
@@ -5389,35 +5507,35 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
--   [Browser/AllowBrowser](#browser-allowbrowser)  
--   [Camera/AllowCamera](#camera-allowcamera)  
--   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
--   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
--   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
--   [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
--   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
--   [Wifi/AllowWiFi](#wifi-allowwifi)  
-<!--EndEAS-->
+- [Browser/AllowBrowser](#browser-allowbrowser)  
+- [Camera/AllowCamera](#camera-allowcamera)  
+- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+- [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+- [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+- [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+- [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+- [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
+- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+- [System/AllowStorageCard](#system-allowstoragecard)  
+- [System/TelemetryProxy](#system-telemetryproxy)  
+- [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+- [Wifi/AllowWiFi](#wifi-allowwifi)  
+  <!--EndEAS-->
 
 ## Examples
 
 Set the minimum password length to 4 characters.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>
@@ -5439,7 +5557,7 @@ Set the minimum password length to 4 characters.
 
 Do not allow NFC.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>

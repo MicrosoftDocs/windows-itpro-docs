@@ -53,8 +53,8 @@ The static proxy is configurable through Group Policy (GP). The group policy can
     - Set it to **Enabled** and select **Disable Authenticated Proxy usage**:
     ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
-    - Configure the proxy:<br>
-      ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
+  - Configure the proxy:<br>
+    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
 
     The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
@@ -81,11 +81,11 @@ Use netsh to configure a system-wide static proxy.
 
     b. Right-click **Command prompt** and select **Run as administrator**.
 
-4. Enter the following command and press **Enter**:
-```
-netsh winhttp set proxy <proxy>:<port>
-```
-For example: netsh winhttp set proxy 10.0.0.6:8080
+2. Enter the following command and press **Enter**:
+   ```
+   netsh winhttp set proxy <proxy>:<port>
+   ```
+   For example: netsh winhttp set proxy 10.0.0.6:8080
 
 To reset the winhttp proxy, enter the following command and press **Enter**
 ```
@@ -134,9 +134,9 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
-1. Download the [connectivity verification tool](https://go.microsoft.com/fwlink/p/?linkid=823683) to the PC where Microsoft Defender ATP sensor is running on.
+1. Download the [connectivity verification tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
-2.  Extract the contents of WDATPConnectivityAnalyzer on the machine.
+2. Extract the contents of WDATPConnectivityAnalyzer on the machine.
 
 3. Open an elevated command-line:
 
@@ -157,21 +157,22 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 5. Extract the *WDATPConnectivityAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
 6. Open *WDATPConnectivityAnalyzer.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
-The tool checks the connectivity of Microsoft Defender ATP service URLs that Microsoft Defender ATP client is configured to interact with. It then prints the results into the *WDATPConnectivityAnalyzer.txt* file for each URL that can potentially be used to communicate with the Microsoft Defender ATP  services. For example:
-  ```text
-  Testing URL : https://xxx.microsoft.com/xxx
-  1 - Default proxy: Succeeded (200)
-  2 - Proxy auto discovery (WPAD): Succeeded (200)
-  3 - Proxy disabled: Succeeded (200)
-  4 - Named proxy: Doesn't exist
-  5 - Command line proxy: Doesn't exist              
-  ```
+   The tool checks the connectivity of Microsoft Defender ATP service URLs that Microsoft Defender ATP client is configured to interact with. It then prints the results into the *WDATPConnectivityAnalyzer.txt* file for each URL that can potentially be used to communicate with the Microsoft Defender ATP  services. For example:
+   ```text
+   Testing URL : https://xxx.microsoft.com/xxx
+   1 - Default proxy: Succeeded (200)
+   2 - Proxy auto discovery (WPAD): Succeeded (200)
+   3 - Proxy disabled: Succeeded (200)
+   4 - Named proxy: Doesn't exist
+   5 - Command line proxy: Doesn't exist              
+   ```
 
 If at least one of the connectivity options returns a (200) status, then the Microsoft Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
+> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
 
 ## Related topics

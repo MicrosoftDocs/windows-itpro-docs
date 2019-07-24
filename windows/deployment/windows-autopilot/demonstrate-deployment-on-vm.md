@@ -1,5 +1,5 @@
 ---
-title: Demonstrate Autopilot deployment on a VM
+title: Demonstrate Autopilot deployment
 ms.reviewer: 
 manager: laurawi
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
@@ -17,13 +17,17 @@ ms.custom: autopilot
 ---
 
 
-# Demonstrate Autopilot deployment on a VM
+# Demonstrate Autopilot deployment
 
 **Applies to**
 
 -   Windows 10
 
-In this topic you'll learn how to set-up a Windows Autopilot deployment for a virtual machine (VM) using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
+
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+
+>Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
 The following video provides an overview of the process:
 
@@ -35,8 +39,8 @@ The following video provides an overview of the process:
 ## Prerequisites
 
 These are the things you'll need to complete this lab:
-<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file), version 1703 or later is required. If you do not already have an ISO to use, a link is provided to download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</td></tr>
-<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed [networking requirements](windows-autopilot-requirements-network.md). Otherwise, just ensure that you have a connection to the Internet.</td></tr>
+<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file), version 1703 or later is required. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.</td></tr>
+<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="windows-autopilot-requirements-network.md" data-raw-source="[networking requirements](windows-autopilot-requirements-network.md)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
 <tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
 <tr><td>A Premium Intune account</td><td>This guide will describe how to obtain a free 30-day trial premium account that can be used to complete the lab.</td></tr></table>
 
@@ -107,7 +111,7 @@ When you are prompted to restart the computer, choose **Yes**. The computer migh
 
    ![hyper-v](../images/svr_mgr2.png)
 
-<P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under **Role Administration Tools\Hyper-V Management Tools**.
+<P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under <strong>Role Administration Tools\Hyper-V Management Tools</strong>.
 
 After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt, or by typing **Hyper-V** in the Start menu search box.
 
@@ -168,7 +172,7 @@ After entering these commands, connect to the VM that you just created and wait 
 See the sample output below. In this sample, the VM is created under the **c:\autopilot** directory and the vmconnect.exe command is used (which is only available on Windows Server). If you installed Hyper-V on Windows 10, use Hyper-V Manager to connect to your VM.
 
 <pre style="overflow-y: visible">
-PS C:\autopilot> dir c:\iso
+PS C:\autopilot&gt; dir c:\iso
 
 
     Directory: C:\iso
@@ -178,24 +182,24 @@ Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        3/12/2019   2:46 PM     4627343360 win10-eval.iso
 
-PS C:\autopilot> (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+PS C:\autopilot&gt; (Get-NetAdapter |?{$<em>.Status -eq &quot;Up&quot; -and !$</em>.Virtual}).Name
 Ethernet
-PS C:\autopilot> New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+PS C:\autopilot&gt; New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$<em>.Status -eq &quot;Up&quot; -and !$</em>.Virtual}).Name
 
 Name              SwitchType NetAdapterInterfaceDescription
 ----              ---------- ------------------------------
 AutopilotExternal External   Intel(R) Ethernet Connection (2) I218-LM
 
-PS C:\autopilot> New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+PS C:\autopilot&gt; New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
 
 Name             State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----             ----- ----------- ----------------- ------   ------             -------
 WindowsAutopilot Off   0           0                 00:00:00 Operating normally 8.0
 
-PS C:\autopilot> Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
-PS C:\autopilot> Start-VM -VMName WindowsAutopilot
-PS C:\autopilot> vmconnect.exe localhost WindowsAutopilot
-PS C:\autopilot> dir
+PS C:\autopilot&gt; Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
+PS C:\autopilot&gt; Start-VM -VMName WindowsAutopilot
+PS C:\autopilot&gt; vmconnect.exe localhost WindowsAutopilot
+PS C:\autopilot&gt; dir
 
     Directory: C:\autopilot
 
@@ -204,7 +208,7 @@ Mode                LastWriteTime         Length Name
 d-----        3/12/2019   3:15 PM                VMData
 d-----        3/12/2019   3:42 PM                VMs
 
-PS C:\autopilot>
+PS C:\autopilot&gt;
 </pre>
 
 ### Install Windows 10
@@ -240,7 +244,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 
 Follow these steps to run the PS script:
 
-1.	Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
+1. Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -390,7 +394,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** in the upper-right-corner of the main page.
 
@@ -458,7 +462,7 @@ Click on **OK** and then click on **Create**.
 
 #### Assign the profile
 
-Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
+Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
 
 To create a Group, open the Azure Portal and select **Azure Active Directory** > **Groups** > **All groups**:
 
@@ -560,7 +564,7 @@ Windows Autopilot will now take over to automatically join your device into Azur
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/en-us/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
+To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
 
 ### Delete (deregister) Autopilot device
 
@@ -603,7 +607,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, scroll down, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
 <pre style="overflow-y: visible">
-C:\>systeminfo
+C:>systeminfo
 
 ...
 Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
@@ -619,7 +623,7 @@ In this example, the computer supports SLAT and Hyper-V.
 You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
 
 <pre style="overflow-y: visible">
-C:\>coreinfo -v
+C:>coreinfo -v
 
 Coreinfo v3.31 - Dump information on system CPU and memory topology
 Copyright (C) 2008-2014 Mark Russinovich
@@ -643,9 +647,9 @@ Note: A 64-bit operating system is required to run Hyper-V.
 
 Before we can pull an application into Intune to make it part of our AP profile, we need to “package” the application for delivery using the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool).  After downloading the tool, gather the following three bits of information to use the tool:
 
-1.	The source folder for your application
-2.	The name of the setup executable file 
-3.	The output folder for the new file
+1. The source folder for your application
+2. The name of the setup executable file 
+3. The output folder for the new file
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 
@@ -754,7 +758,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/en-us/intune/apps-win32-app-management).
+For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
 
 ### Add Office 365
 
@@ -822,7 +826,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add Office to Intune.
 
-For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365).
+For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 

@@ -4,11 +4,11 @@ description: The SurfaceHub configuration service provider (CSP) is used to conf
 ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/28/2017
 ---
 
@@ -36,8 +36,8 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 > [!NOTE]
 > If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
- 
-<p style="margin-left: 20px">Here's a SyncML example.
+ 
+<p style="margin-left: 20px">Here&#39;s a SyncML example.
 
 ``` syntax
  <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -97,37 +97,37 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="deviceaccount-domainname"></a>**DeviceAccount/DomainName**  
 <p style="margin-left: 20px">Domain of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-username"></a>**DeviceAccount/UserName**  
 <p style="margin-left: 20px">Username of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-userprincipalname"></a>**DeviceAccount/UserPrincipalName**  
 <p style="margin-left: 20px">User principal name (UPN) of the device account. To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-sipaddress"></a>**DeviceAccount/SipAddress**  
 <p style="margin-left: 20px">Session Initiation Protocol (SIP) address of the device account. Normally, the device will try to auto-discover the SIP. This field is only required if auto-discovery fails.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-password"></a>**DeviceAccount/Password**  
 <p style="margin-left: 20px">Password for the device account.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace. The operation Get is allowed, but it will always return a blank.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace. The operation Get is allowed, but it will always return a blank.
 
 <a href="" id="deviceaccount-validateandcommit"></a>**DeviceAccount/ValidateAndCommit**  
 <p style="margin-left: 20px">This method validates the data provided and then commits the changes.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Execute.
+<p style="margin-left: 20px">The data type is string. Supported operation is Execute.
 
 <a href="" id="deviceaccount-email"></a>**DeviceAccount/Email**  
 <p style="margin-left: 20px">Email address of the device account.
 
-<p style="margin-left: 20px">The data type is char.
+<p style="margin-left: 20px">The data type is string.
 
 <a href="" id="deviceaccount-passwordrotationenabled"></a>**DeviceAccount/PasswordRotationEnabled**  
 <p style="margin-left: 20px">Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
@@ -137,17 +137,17 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 -   0 - password rotation enabled
 -   1 - disabled
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-exchangeserver"></a>**DeviceAccount/ExchangeServer**  
 <p style="margin-left: 20px">Exchange server of the device account. Normally, the device will try to auto-discover the Exchange server. This field is only required if auto-discovery fails.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-calendarsyncenabled"></a>**DeviceAccount/CalendarSyncEnabled**  
 <p style="margin-left: 20px">Specifies whether calendar sync and other Exchange server services is enabled.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**  
 <p style="margin-left: 20px">If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
@@ -204,7 +204,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
  
-<p style="margin-left: 20px">The data type is int. Supported operation is Get.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
 <p style="margin-left: 20px">Node for maintenance schedule.
@@ -212,12 +212,12 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="maintenancehourssimple-hours-starttime"></a>**MaintenanceHoursSimple/Hours/StartTime**  
 <p style="margin-left: 20px">Specifies the start time for maintenance hours in minutes from midnight. For example, to set a 2:00 am start time, set this value to 120.
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="maintenancehourssimple-hours-duration"></a>**MaintenanceHoursSimple/Hours/Duration**  
 <p style="margin-left: 20px">Specifies the duration of maintenance window in minutes. For example, to set a 3-hour duration, set this value to 180.
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps"></a>**InBoxApps**  
 <p style="margin-left: 20px">Node for the in-box app settings.
@@ -226,9 +226,9 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 <a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see <a href="https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users" data-raw-source="[Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users)">Set up Skype for Business Online</a>.
 
-<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome"></a>**InBoxApps/Welcome**  
 <p style="margin-left: 20px">Node for the welcome screen.
@@ -236,7 +236,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Welcome/AutoWakeScreen**  
 <p style="margin-left: 20px">Automatically turn on the screen using motion sensors.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**  
 <p style="margin-left: 20px">Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
@@ -251,7 +251,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 -   0 - Organizer and time only
 -   1 - Organizer, time, and subject. Subject is hidden in private meetings.
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection"></a>**InBoxApps/WirelessProjection**  
 <p style="margin-left: 20px">Node for the wireless projector app settings.
@@ -259,12 +259,12 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="inboxapps-wirelessprojection-pinrequired"></a>**InBoxApps/WirelessProjection/PINRequired**  
 <p style="margin-left: 20px">Users must enter a PIN to wirelessly project to the device.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-enabled"></a>**InBoxApps/WirelessProjection/Enabled**  
 <p style="margin-left: 20px">Enables wireless projection to the device.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-channel"></a>**InBoxApps/WirelessProjection/Channel**  
 <p style="margin-left: 20px">Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
@@ -290,10 +290,10 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
 
- 
-<p style="margin-left: 20px">The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won't be looking for).
+ 
+<p style="margin-left: 20px">The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won&#39;t be looking for).
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-connect"></a>**InBoxApps/Connect**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Node for the Connect app.
@@ -303,7 +303,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">If this setting is true, the Connect app will be automatically launched. If false, the user will need to launch the Connect app manually from the Hub’s settings.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="properties"></a>**Properties**  
 <p style="margin-left: 20px">Node for the device properties.
@@ -316,7 +316,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="properties-defaultvolume"></a>**Properties/DefaultVolume**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45.
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="properties-screentimeout"></a>**Properties/ScreenTimeout**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the Hub screen turns off. 
@@ -368,7 +368,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="properties-sessiontimeout"></a>**Properties/SessionTimeout**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the session times out. 
@@ -420,7 +420,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="properties-sleeptimeout"></a>**Properties/SleepTimeout**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the Hub enters sleep mode. 
@@ -472,35 +472,35 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 </tbody>
 </table>
 
-<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
 <a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the ability to resume a session when the session times out. 
 
-<p style="margin-left: 20px">If this setting is true, the "Resume Session" feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session" feature was initiated. 
+<p style="margin-left: 20px">If this setting is true, the &quot;Resume Session&quot; feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session&quot; feature was initiated. 
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="properties-allowautoproxyauth"></a>**Properties/AllowAutoProxyAuth**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the device account for proxy authentication.
 
 <p style="margin-left: 20px">If this setting is true, the device account will be used for proxy authentication. If false, a separate account will be used.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="properties-disablesigninsuggestions"></a>**Properties/DisableSigninSuggestions**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. 
 
 <p style="margin-left: 20px">If this setting is true, the sign-in dialog will not be populated. If false, the dialog will auto-populate.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="properties-donotshowmymeetingsandfiles"></a>**Properties/DoNotShowMyMeetingsAndFiles**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable the &quot;My meetings and files&quot; feature in the Start menu, which shows the signed-in user&#39;s meetings and files from Office 365.
 
 <p style="margin-left: 20px">If this setting is true, the “My meetings and files” feature will not be shown. When false, the “My meetings and files” feature will be shown.
 
-<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="momagent"></a>**MOMAgent**  
 <p style="margin-left: 20px">Node for the Microsoft Operations Management Suite.
@@ -515,9 +515,9 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
 
- 
+ 
 
- 
+ 
 
 
 

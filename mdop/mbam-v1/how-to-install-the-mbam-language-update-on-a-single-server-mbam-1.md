@@ -36,7 +36,7 @@ Microsoft BitLocker Administration and Monitoring (MBAM) includes four server ro
     **Important**  
     The MBAM server features must be updated in the following order: Compliance and Audit Reports first, then Administration and Monitoring Server. The Group Policy templates can be updated at any time without concern for sequence.
 
-     
+     
 
 4.  After you upgrade the server database, open the IIS Management Console and review the bindings of the Microsoft BitLocker Administration and Monitoring website.
 
@@ -53,16 +53,16 @@ Microsoft BitLocker Administration and Monitoring (MBAM) includes four server ro
         **Note**  
         The MBAM client opens only if it can communicate with the Recovery and Hardware database.
 
-         
+         
 
 ## Related topics
 
 
 [Deploying the MBAM 1.0 Language Release Update](deploying-the-mbam-10-language-release-update.md)
 
- 
+ 
 
- 
+ 
 
 
 

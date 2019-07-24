@@ -7,11 +7,11 @@ MS-HAID:
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -105,7 +105,7 @@ After the previous package is sent, the unenrollment process begins.
 
 When the server initiates disconnection, all undergoing sessions for the enrollment ID are aborted immediately to avoid deadlocks. The server will not get a response for the unenrollment, instead a generic alert notification is sent with messageid=1.
 
-``` syntax
+```xml
 <Alert>
       <CmdID>4</CmdID>
       <Data>1226</Data>

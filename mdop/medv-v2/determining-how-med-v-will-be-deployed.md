@@ -29,7 +29,7 @@ If you are currently using an electronic software distribution solution, you can
 **Note**  
 Whichever electronic software distribution solution that you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or a later version, see the [Configuration Manager Documentation Library](https://go.microsoft.com/fwlink/?LinkId=66999) in the Microsoft Technical Library (https://go.microsoft.com/fwlink/?LinkId=66999).
 
- 
+ 
 
 You might prefer to install MED-V in a Windows 7 image. Then, after you deploy the Windows 7 images throughout your enterprise, MED-V is ready to be installed when an end user needs it. For more information, see [How to Deploy a MED-V Workspace in a Windows 7 Image](how-to-deploy-a-med-v-workspace-in-a-windows-7-image.md).
 
@@ -40,9 +40,9 @@ You might prefer to install MED-V in a Windows 7 image. Then, after you deploy t
 
 [Planning for MED-V](planning-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

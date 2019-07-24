@@ -31,7 +31,7 @@ This guide explains how credential theft attacks occur and the strategies and co
 - Respond to suspicious activity
 - Recover from a breach
 
-![Security stages](images\security-stages.png)
+![Security stages](images/security-stages.png)
 
 ## Attacks that steal credentials
 

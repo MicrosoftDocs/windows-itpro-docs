@@ -42,7 +42,7 @@ A user account with the Approver or AGPM Administrator (Full Control) role or ne
 **Note**  
 To verify whether the most recent version of a GPO has been deployed, on the **Controlled** tab, double-click the GPO to display its **History**. In the **History** for the GPO, the **State** column indicates whether a GPO has been deployed.
 
- 
+ 
 
 ### Additional considerations
 
@@ -52,9 +52,9 @@ To verify whether the most recent version of a GPO has been deployed, on the **C
 
 -   [Performing Approver Tasks](performing-approver-tasks.md)
 
- 
+ 
 
- 
+ 
 
 
 

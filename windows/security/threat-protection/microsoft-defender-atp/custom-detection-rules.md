@@ -23,14 +23,18 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+Create custom detection rules from [Advanced hunting](overview-hunting.md) queries to automatically check for threat indicators and generate alerts whenever these indicators are found.
 
-1.	In the navigation pane, select **Advanced hunting**.
+>[!NOTE]
+>To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
-2.	Select an existing query that you'd like to base the monitor on or create a new query.
+1. In the navigation pane, select **Advanced hunting**.
 
-3.	Select **Create detection rule**.
+2. Select an existing query that you'd like to base the monitor on or create a new query.
 
-4.	Specify the alert details:
+3. Select **Create detection rule**.
+
+4. Specify the alert details:
 
     - Alert title
     - Severity
@@ -38,7 +42,7 @@ ms.topic: article
     - Description
     - Recommended actions
 
-5.	Click **Create**.
+5. Click **Create**.
 
 > [!TIP]
 > TIP #1: Running the query for the first time before saving it can help you find any mistakes or errors and give you a preview of the data you can expect to be returned.<br>
@@ -48,19 +52,19 @@ ms.topic: article
 ## Manage existing custom detection rules
 View existing rules in your network, see the last results of each rule, navigate to view all alerts that were created by each rule. You can also modify existing rules.
 
-1.	In the navigation pane, select **Settings** > **Custom detections**. You'll see all the detections  created in the system.
+1. In the navigation pane, select **Settings** > **Custom detections**. You'll see all the detections  created in the system.
 
-2.	Select one of the rules to take any of the following actions:
+2. Select one of the rules to take any of the following actions:
    - Open related alerts - See all the alerts that were raised based to this rule
    - Run - Run the selected detection immediately. 
 
    > [!NOTE]
    > The next run for the query will be in 24 hours after the last run.
     
-  - Edit - Modify the settings of the rule.
-  - Modify query - View and edit the query itself. 
-  - Turn off - Stop the query from running.
-  - Delete
+   - Edit - Modify the settings of the rule.
+   - Modify query - View and edit the query itself. 
+   - Turn off - Stop the query from running.
+   - Delete
 
 
 ## Related topic

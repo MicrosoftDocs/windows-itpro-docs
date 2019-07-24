@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -38,7 +38,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
 
 <br><br>
 

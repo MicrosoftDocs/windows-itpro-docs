@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - RestrictedGroups
 description: Policy CSP - RestrictedGroups
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 03/15/2018
 ms.reviewer: 
 manager: dansimp
@@ -76,7 +76,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
 
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of 0 members when applying the policy implies clearing the access group and should be used with caution.
 
-``` syntax
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">  
   <xs:simpleType name="member_name">
     <xs:restriction base="xs:string">

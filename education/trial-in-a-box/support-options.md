@@ -31,14 +31,14 @@ For more information about checking for updates, and how to optionally turn on a
 
 ## 2. Confirm your admin contact information is current
 
-1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
+1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">admin center</a> and sign in with your Office 365 admin credentials.
 2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
 3. Select **Personal info** and then edit **Contact details** to update  your phone, primary email address, and alternate email address. 
 
-  > [!NOTE]
-  > For the alternate email address, make sure you use a different address from your Office 365 email address.
+   > [!NOTE]
+   > For the alternate email address, make sure you use a different address from your Office 365 email address.
 
-  ![Complete your contact details](images/o365_adminaccountinfo.png)
+   ![Complete your contact details](images/o365_adminaccountinfo.png)
 
 4. Click **Save**.
 
@@ -46,15 +46,15 @@ For more information about checking for updates, and how to optionally turn on a
 
 1. Click the **Need help?** button in the lower right-hand corner of the Office 365 console.
 
-  ![Select Need help to get support](images/o365_needhelp.png)
+   ![Select Need help to get support](images/o365_needhelp.png)
 
-  You will see a sidebar window open up on the right-hand side of the screen.
+   You will see a sidebar window open up on the right-hand side of the screen.
 
-  ![Option to have a support representative call you](images/o365_needhelp_callingoption.png)
+   ![Option to have a support representative call you](images/o365_needhelp_callingoption.png)
 
-  If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
+   If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
 
-  ![Track your support tickets](images/o365_needhelp_supporttickets.png)
+   ![Track your support tickets](images/o365_needhelp_supporttickets.png)
 
 2. Click the **question button** ![Question button](images/o365_needhelp_questionbutton.png) in the top navigation of the sidebar window.
 3. In the field below **Need help?**, enter a description of your help request.
@@ -69,7 +69,7 @@ Forget your password? Follow these steps to recover it.
 1. Go to <a href="https://portal.office.com/" target="_blank">https://portal.office.com</a>
 2. Select **Can't access your account** and follow the prompts to get back into your account.
 
-  ![Recover your account](images/officeportal_cantaccessaccount.png)
+   ![Recover your account](images/officeportal_cantaccessaccount.png)
 
 
 

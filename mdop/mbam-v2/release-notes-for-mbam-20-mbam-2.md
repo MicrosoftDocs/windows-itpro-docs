@@ -38,7 +38,7 @@ If you are using the MBAM Stand-alone topology, and you upgrade the server infra
 
 WORKAROUND: After the upgrade, run the following script on the Compliance and Audit Database:
 
-``` syntax
+```sql
 -- =============================================
 -- Script Template
 -- =============================================
@@ -199,96 +199,96 @@ This section contains hotfixes and KB articles for MBAM 2.0.
 <tr class="odd">
 <td align="left"><p>2831166</p></td>
 <td align="left"><p>Installing Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 fails with &quot;System Center CM Objects Already Installed&quot;</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2831166/EN-US](https://support.microsoft.com/kb/2831166/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2831166/EN-US" data-raw-source="[support.microsoft.com/kb/2831166/EN-US](https://support.microsoft.com/kb/2831166/EN-US)">support.microsoft.com/kb/2831166/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2870849</p></td>
 <td align="left"><p>Users cannot retrieve BitLocker Recovery key using MBAM 2.0 Self Service Portal</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870849/EN-US](https://support.microsoft.com/kb/2870849/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2870849/EN-US" data-raw-source="[support.microsoft.com/kb/2870849/EN-US](https://support.microsoft.com/kb/2870849/EN-US)">support.microsoft.com/kb/2870849/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2756402</p></td>
 <td align="left"><p>MBAM client would fail with Event ID 4 and error code 0x8004100E in the Event description</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2756402/EN-US](https://support.microsoft.com/kb/2756402/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2756402/EN-US" data-raw-source="[support.microsoft.com/kb/2756402/EN-US](https://support.microsoft.com/kb/2756402/EN-US)">support.microsoft.com/kb/2756402/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2620287</p></td>
 <td align="left"><p>Error Message “Server Error in ‘/Reports’ Application” When You Click Reports Tab in MBAM</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2620287/EN-US](https://support.microsoft.com/kb/2620287/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2620287/EN-US" data-raw-source="[support.microsoft.com/kb/2620287/EN-US](https://support.microsoft.com/kb/2620287/EN-US)">support.microsoft.com/kb/2620287/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2639518</p></td>
 <td align="left"><p>Error opening Enterprise or Computer Compliance Reports in MBAM</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2639518/EN-US](https://support.microsoft.com/kb/2639518/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2639518/EN-US" data-raw-source="[support.microsoft.com/kb/2639518/EN-US](https://support.microsoft.com/kb/2639518/EN-US)">support.microsoft.com/kb/2639518/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2620269</p></td>
 <td align="left"><p>MBAM Enterprise Reporting Not Getting Updated</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2620269/EN-US](https://support.microsoft.com/kb/2620269/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2620269/EN-US" data-raw-source="[support.microsoft.com/kb/2620269/EN-US](https://support.microsoft.com/kb/2620269/EN-US)">support.microsoft.com/kb/2620269/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2712461</p></td>
 <td align="left"><p>Installing MBAM on a Domain Controller is not supported</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2712461/EN-US](https://support.microsoft.com/kb/2712461/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2712461/EN-US" data-raw-source="[support.microsoft.com/kb/2712461/EN-US](https://support.microsoft.com/kb/2712461/EN-US)">support.microsoft.com/kb/2712461/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2876732</p></td>
 <td align="left"><p>You receive error code 0x80071a90 during Standalone or Configuration Manager Integration setup of MBAM 2.0</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2876732/EN-US](https://support.microsoft.com/kb/2876732/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2876732/EN-US" data-raw-source="[support.microsoft.com/kb/2876732/EN-US](https://support.microsoft.com/kb/2876732/EN-US)">support.microsoft.com/kb/2876732/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2754259</p></td>
 <td align="left"><p>MBAM and Secure Network Communication</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2754259/EN-US](https://support.microsoft.com/kb/2754259/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2754259/EN-US" data-raw-source="[support.microsoft.com/kb/2754259/EN-US](https://support.microsoft.com/kb/2754259/EN-US)">support.microsoft.com/kb/2754259/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2870842</p></td>
 <td align="left"><p>MBAM 2.0 Setup fails during Configuration Manager Integration Scenario with SQL Server 2008</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870842/EN-US](https://support.microsoft.com/kb/2870842/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2870842/EN-US" data-raw-source="[support.microsoft.com/kb/2870842/EN-US](https://support.microsoft.com/kb/2870842/EN-US)">support.microsoft.com/kb/2870842/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2668533</p></td>
 <td align="left"><p>MBAM Setup fails if SQL SSRS is not configured properly</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2668533/EN-US](https://support.microsoft.com/kb/2668533/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2668533/EN-US" data-raw-source="[support.microsoft.com/kb/2668533/EN-US](https://support.microsoft.com/kb/2668533/EN-US)">support.microsoft.com/kb/2668533/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2870847</p></td>
-<td align="left"><p>MBAM 2.0 Setup fails with &quot;Error retrieving Configuration Manager Server role settings for 'Reporting Services Point' role&quot;</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870847/EN-US](https://support.microsoft.com/kb/2870847/EN-US)</p></td>
+<td align="left"><p>MBAM 2.0 Setup fails with &quot;Error retrieving Configuration Manager Server role settings for &#39;Reporting Services Point&#39; role&quot;</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2870847/EN-US" data-raw-source="[support.microsoft.com/kb/2870847/EN-US](https://support.microsoft.com/kb/2870847/EN-US)">support.microsoft.com/kb/2870847/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2870839</p></td>
 <td align="left"><p>MBAM 2.0 Enterprise Reports are not refreshed in MBAM 2.0 Standalone topology due to SQL job CreateCache failure</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870839/EN-US](https://support.microsoft.com/kb/2870839/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2870839/EN-US" data-raw-source="[support.microsoft.com/kb/2870839/EN-US](https://support.microsoft.com/kb/2870839/EN-US)">support.microsoft.com/kb/2870839/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2620269</p></td>
 <td align="left"><p>MBAM Enterprise Reporting Not Getting Updated</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2620269/EN-US](https://support.microsoft.com/kb/2620269/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2620269/EN-US" data-raw-source="[support.microsoft.com/kb/2620269/EN-US](https://support.microsoft.com/kb/2620269/EN-US)">support.microsoft.com/kb/2620269/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2935997</p></td>
 <td align="left"><p>MBAM Supported Computers compliance reporting incorrectly includes unsupported products</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2935997/EN-US](https://support.microsoft.com/kb/2935997/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2935997/EN-US" data-raw-source="[support.microsoft.com/kb/2935997/EN-US](https://support.microsoft.com/kb/2935997/EN-US)">support.microsoft.com/kb/2935997/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2612822</p></td>
 <td align="left"><p>Computer Record is Rejected in MBAM</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2612822/EN-US](https://support.microsoft.com/kb/2612822/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2612822/EN-US" data-raw-source="[support.microsoft.com/kb/2612822/EN-US](https://support.microsoft.com/kb/2612822/EN-US)">support.microsoft.com/kb/2612822/EN-US</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [About MBAM 2.0](about-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

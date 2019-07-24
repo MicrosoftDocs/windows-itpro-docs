@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Do not sync browser settings  -->
@@ -16,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. The “browser” group syncs automatically between user’s devices and lets users to make changes. |
-|Enabled |2 |2 |Prevented/turned off.  The “browser” group does not use the _Sync your Settings_ option. |
+|                Group Policy                 | MDM | Registry |                                                    Description                                                    |
+|---------------------------------------------|:---:|:--------:|-------------------------------------------------------------------------------------------------------------------|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Allowed/turned on. The “browser” group syncs automatically between user’s devices and lets users to make changes. |
+|                   Enabled                   |  2  |    2     |             Prevented/turned off.  The “browser” group does not use the *Sync your Settings* option.              |
+
 ---
 
 

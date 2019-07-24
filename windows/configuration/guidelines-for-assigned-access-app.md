@@ -19,7 +19,7 @@ manager: dansimp
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 
 You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
@@ -76,22 +76,22 @@ Enable Home Button | Show a Home button in Kiosk Browser. Home will return the b
 Enable Navigation Buttons | Show forward and back buttons in Kiosk Browser.
 Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction.
 
->[!IMPORTANT]
->To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
->
+> [!IMPORTANT]
+> To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
+> 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
->2.	Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
->3.	Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
->4.	Save the XML file.
->5.	Open the project again in Windows Configuration Designer.
->6.	Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
- 
-
->[!TIP]
->To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](https://docs.microsoft.com/intune/custom-settings-windows-10) with the following information:
->- OMA-URI: ./Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
->- Data type: Integer
->- Value: 1
+> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 4. Save the XML file.
+> 5. Open the project again in Windows Configuration Designer.
+> 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
+> 
+> 
+> [!TIP]
+> To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](https://docs.microsoft.com/intune/custom-settings-windows-10) with the following information:
+> - OMA-URI: ./Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
+> - Data type: Integer
+> - Value: 1
 
 
 #### Rules for URLs in Kiosk Browser settings
@@ -117,7 +117,7 @@ Additional guidelines for URLs:
 
 The following table describes the results for different combinations of blocked URLs and blocked URL exceptions.
 
-Blocked URL rule |	Block URL exception rule | Result
+Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
 `*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
 `contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
@@ -125,18 +125,19 @@ Blocked URL rule |	Block URL exception rule | Result
 
 The following table gives examples for blocked URLs. 
 
-Entry |	Result
---- | ---
-`contoso.com`	| Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com
-`https://*` | Blocks all HTTPS requests to any domain.
-`mail.contoso.com` |	Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com
-`.contoso.com` |	Blocks contoso.com but not its subdomains, like subdomain.contoso.com.
-`.www.contoso.com` |	Blocks www.contoso.com but not its subdomains.
-`*`	| Blocks all requests except for URLs in the Blocked URL Exceptions list. 
-`*:8080`	| Blocks all requests to port 8080.
-`contoso.com/stuff`	| Blocks all requests to contoso.com/stuff and its subdomains.
-`192.168.1.2`	| Blocks requests to 192.168.1.2.
-`youtube.com/watch?v=V1` | 	Blocks youtube video with id V1.
+
+|          Entry           |                                    Result                                     |
+|--------------------------|-------------------------------------------------------------------------------|
+|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
+|       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+|      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
+|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
+|           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
+|         `*:8080`         |                       Blocks all requests to port 8080.                       |
+|   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
+|      `192.168.1.2`       |                        Blocks requests to 192.168.1.2.                        |
+| `youtube.com/watch?v=V1` |                       Blocks youtube video with id V1.                        |
 
 ### Other browsers
 
@@ -146,7 +147,7 @@ You can create your own web browser Windows app by using the WebView class. Lear
 - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
 - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
 - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
- 
+
 
 
 ## Secure your information
@@ -172,7 +173,7 @@ The above guidelines may help you select or develop an appropriate Windows app f
 
 
 
- 
+
 
 
 

@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -46,15 +46,15 @@ The primary MFA server is also responsible for synchronizing from Active Directo
 The communication between the primary MFA server, secondary MFA servers, User Portal servers, and the client is protected using TLS, which needs a server authentication certificate. 
 
 Sign-in the primary MFA server with _domain admin_ equivalent credentials.
-1.	Start the Local Computer **Certificate Manager** (certlm.msc).
-2.	Expand the **Personal** node in the navigation pane.
-3.	Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
-4.	Click **Next** on the **Before You Begin** page.
-5.	Click **Next** on the **Select Certificate Enrollment Policy** page.
-6.	On the **Request Certificates** page, Select the **Internal Web Server** check box.
-7.	Click the **More information is required to enroll for this certificate. Click here to configure settings** link.
-8.	Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the primary MFA server and then click **Add** (mfa.corp.contoso.com).    Click **Add**. Click **OK** when finished.
-9.	Click **Enroll**.
+1. Start the Local Computer **Certificate Manager** (certlm.msc).
+2. Expand the **Personal** node in the navigation pane.
+3. Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
+4. Click **Next** on the **Before You Begin** page.
+5. Click **Next** on the **Select Certificate Enrollment Policy** page.
+6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
+7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link.
+8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the primary MFA server and then click **Add** (mfa.corp.contoso.com).    Click **Add**. Click **OK** when finished.
+9. Click **Enroll**.
 
 A server authentication certificate should appear in the computer’s Personal certificate store.
 
@@ -86,12 +86,12 @@ Update the server using Windows Update until the server has no required or optio
 The TLS protocol protects all the communication to and from the MFA server. To enable this protection, you must configure the default web site to use the previously enrolled server authentication certificate.
 
 Sign in the primary MFA server with _administrator_ equivalent credentials.
-1.	From **Administrators**, Start the **Internet Information Services (IIS) Manager** console
-2.	In the navigation pane, expand the node with the same name as the local computer.  Expand **Settings** and select **Default Web Site**.
-3.	In the **Actions** pane, click **Bindings**.
-4.	In the **Site Bindings** dialog, Click **Add**.
-5.	In the **Add Site Binding** dialog, select **https** from the **Type** list.  In the **SSL certificate** list, select the certificate with the name that matches the FQDN of the computer.
-6.	Click **OK**.  Click **Close**.  From the **Action** pane, click **Restart**.
+1. From **Administrators**, Start the **Internet Information Services (IIS) Manager** console
+2. In the navigation pane, expand the node with the same name as the local computer.  Expand **Settings** and select **Default Web Site**.
+3. In the **Actions** pane, click **Bindings**.
+4. In the **Site Bindings** dialog, Click **Add**.
+5. In the **Add Site Binding** dialog, select **https** from the **Type** list.  In the **SSL certificate** list, select the certificate with the name that matches the FQDN of the computer.
+6. Click **OK**.  Click **Close**.  From the **Action** pane, click **Restart**.
 
 #### Configure the Web Service’s Security
 
@@ -150,17 +150,17 @@ Internal and external users use the User Portal to manage their multifactor auth
 For external User Portal servers, it is typical to request a server authentication certificate from a public certificate authority.  Contact a public certificate authority for more information on requesting a certificate for public use.  Follow the procedures below to enroll an enterprise certificate on your User Portal server.
 
 Sign-in the User Portal server with _domain admin_ equivalent credentials.
-1.	Start the Local Computer **Certificate Manager** (certlm.msc).
-2.	Expand the **Personal** node in the navigation pane.
-3.	Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
-4.	Click **Next** on the **Before You Begin** page.
-5.	Click **Next** on the **Select Certificate Enrollment Policy** page.
-6.	On the **Request Certificates** page, Select the **Internal Web Server** check box.
-7.	Click the **More information is required to enroll for this certificate. Click here to configure settings** link.
-8.	Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the primary MFA server and then click **Add** (app1.corp.contoso.com).
-9.	Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your User Portal service (mfaweb.corp.contoso.com).
-10.	Click **Add**. Click **OK** when finished.
-11.	Click **Enroll**.
+1. Start the Local Computer **Certificate Manager** (certlm.msc).
+2. Expand the **Personal** node in the navigation pane.
+3. Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
+4. Click **Next** on the **Before You Begin** page.
+5. Click **Next** on the **Select Certificate Enrollment Policy** page.
+6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
+7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link.
+8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the primary MFA server and then click **Add** (app1.corp.contoso.com).
+9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your User Portal service (mfaweb.corp.contoso.com).
+10. Click **Add**. Click **OK** when finished.
+11. Click **Enroll**.
 
 A server authentication certificate should appear in the computer’s Personal certificate store.
 
@@ -174,7 +174,7 @@ Update the server using Windows Update until the server has no required or optio
 
 #### Configure the IIS Server’s Certificate
 
-To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-server’s-certificate) section.
+To do this, please follow the instructions mentioned in the previous [Configure the IIS Server’s Certificate](#configure-the-iis-servers-certificate) section.
 
 #### Create WebServices SDK user account
 
@@ -182,7 +182,7 @@ The User Portal and Mobile Application web services need to communicate with the
 
 1. Open **Active Directory Users and Computers**.
 2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Right-click the **Users** container, select **New**, and select **User**.
-3. In the **New Object – User** dialog box, type **PFWSDK_<computerName>** in the **First name** and **User logon name** boxes, where *<computer>* is the name of the primary MFA server running the Web Services SDK.  Click **Next**.
+3. In the **New Object – User** dialog box, type **PFWSDK_\<computerName>** in the **First name** and **User logon name** boxes, where *\<computer>* is the name of the primary MFA server running the Web Services SDK.  Click **Next**.
 4. Type a strong password and confirm it in the respective boxes.  Clear **User must change password at next logon**. Click **Next**.  Click **Finish** to create the user account.
 
 #### Add the MFA SDK user account to the Phonefactor Admins group
@@ -192,7 +192,7 @@ Adding the WebServices SDK user account to the Phonefactor Admins group provides
 1. Open **Active Directory Users and Computers**.
 2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactors Admin** security group and select Properties.
 3. Click the Members tab.
-4. Click **Add**. Click **Object Types..** Type the PFWSDK_<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
+4. Click **Add**. Click **Object Types..** Type the PFWSDK_\<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
     * The Webservices SDK user account
     *  Group or user account that will manage the User Portal server.
@@ -247,9 +247,9 @@ Sign-in the primary MFA server with MFA _administrator_ equivalent credentials.
 8. Select the appropriate language from the **Phone call language**, **Text message language**, **Mobile app language**, and **OATH token language** lists.
 9. Under default PIN rules, Select the User can change PIN check box to enable users to change their PIN during multi-factor authentication and through the user portal.
 10. Configure the minimum length for the PIN.
-11.	Select the **Prevent weak PINs** check box to reject weak PINs. A weak PIN is any PIN that could be easily guessed by a hacker: 3 sequential digits, 3 repeating digits, or any 4 digit subset of user phone number are not allowed. If you clear this box, then there are no restrictions on PIN format. For example: User tries to reset PIN to 1235 and is rejected because it's a weak PIN. User will be prompted to enter a valid PIN.
-12.	Select the **Expiration days** check box if you want to expire PINs.  If enabled, provide a numeric value representing the number of days the PIN is valid.
-13.	Select the **PIN history** check box if you want to remember previously used PINs for the user. PIN History stores old PINs for each user. Users are not allowed to reset their PIN to any value stored in their PIN History. When cleared, no PIN History is stored. The default value is 5 and range is 1 to 10. 
+11. Select the **Prevent weak PINs** check box to reject weak PINs. A weak PIN is any PIN that could be easily guessed by a hacker: 3 sequential digits, 3 repeating digits, or any 4 digit subset of user phone number are not allowed. If you clear this box, then there are no restrictions on PIN format. For example: User tries to reset PIN to 1235 and is rejected because it's a weak PIN. User will be prompted to enter a valid PIN.
+12. Select the **Expiration days** check box if you want to expire PINs.  If enabled, provide a numeric value representing the number of days the PIN is valid.
+13. Select the **PIN history** check box if you want to remember previously used PINs for the user. PIN History stores old PINs for each user. Users are not allowed to reset their PIN to any value stored in their PIN History. When cleared, no PIN History is stored. The default value is 5 and range is 1 to 10. 
 
 ![Azure MFA Server Company settings configured](images/hello-mfa-company-settings.png)
 
@@ -334,9 +334,9 @@ Sign in the primary MFA server with _MFA administrator_ equivalent credentials.
 7. Select **Selected Security Groups – Recursive** or, select **Security Group** from the **Import** list if you do not plan to nest groups.
 8. Select **Add new users and Update existing users**.
 9. Select **Disable/Remove users no longer a member** and select **Disable** from the list.
-10.	Select the attributes appropriate for your environment for **Import phone** and **Backup**.
-11.	Select **Enabled** and select **Only New Users with Phone Number** from the list.
-12.	Select **Send email** and select **New and Updated Users**.
+10. Select the attributes appropriate for your environment for **Import phone** and **Backup**.
+11. Select **Enabled** and select **Only New Users with Phone Number** from the list.
+12. Select **Send email** and select **New and Updated Users**.
 
 ##### Configure synchronization item defaults
 
@@ -367,12 +367,12 @@ Additional MFA servers provided redundancy of the MFA configuration. The MFA ser
 Follow the same procedures for installing the primary MFA server software for each additional server. Remember that each server must be activated.
 
 Sign in the secondary MFA server with _domain administrator_ equivalent credentials.
-1.	Once the Multi-Factor Authentication Server console starts, you must configure the current server’s replication group membership.  You have the option to join an existing group or create a new group.  When joining an existing group, the server becomes a secondary server in the existing replication group.  When creating a new group, the server becomes the primary server of that replication group.  Click **OK**.   
+1. Once the Multi-Factor Authentication Server console starts, you must configure the current server’s replication group membership.  You have the option to join an existing group or create a new group.  When joining an existing group, the server becomes a secondary server in the existing replication group.  When creating a new group, the server becomes the primary server of that replication group.  Click **OK**.   
     **Note:** Group membership cannot be changed after activation. If a server was joined to the wrong group, it must be activated again to join a different group.  Please contact support for assistance with deactivating and reactivating a server.
-2.	The console asks you if you want to enable replication by running the **Multi-Server Configuration Wizard**. Click **Yes**.
-3.	In the **Multi-Server Configuration Wizard**, leave **Active Directory** selected and clear **Certificates**. Click **Next**.
-4.	On the **Active Directory** page, the wizard determines what configuration is needed to enable replication.  Typically, the wizard recommends adding the computer account for the current server to the **PhoneFactor Admin** group.  Click **Next** to add the computer account to the group.
-5.	On the **Multi-Server Configuration Complete** page, click **Finish** to reboot the computer to update its group membership.
+2. The console asks you if you want to enable replication by running the **Multi-Server Configuration Wizard**. Click **Yes**.
+3. In the **Multi-Server Configuration Wizard**, leave **Active Directory** selected and clear **Certificates**. Click **Next**.
+4. On the **Active Directory** page, the wizard determines what configuration is needed to enable replication.  Typically, the wizard recommends adding the computer account for the current server to the **PhoneFactor Admin** group.  Click **Next** to add the computer account to the group.
+5. On the **Multi-Server Configuration Complete** page, click **Finish** to reboot the computer to update its group membership.
 
 ### Review
 
@@ -412,21 +412,21 @@ Sign in the User Portal server with _local administrator_ equivalent credentials
 ### Edit MFA User Portal config file
 
 Sign in the User Portal server with _local administrator_ equivalent credentials.
-1.	Open Windows Explorer and browse to C:\inetpub\wwwroot\MultiFactorAuth (or appropriate directory based on the virtual directory name) and edit the **web.config** file.
-2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
-3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
-4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“http://localhost:4898/PfWsSdk.asmx”** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
+1. Open Windows Explorer and browse to C:\inetpub\wwwroot\MultiFactorAuth (or appropriate directory based on the virtual directory name) and edit the **web.config** file.
+2. Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
+3. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
+4. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
+5. Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“<http://localhost:4898/PfWsSdk.asmx”>** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. <https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx>). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
 
 ### Create a DNS entry for the User Portal web site
 
 Sign-in the domain controller or administrative workstation with _Domain Admin_ equivalent credentials.
-1.	Open the **DNS Management** console.
-2.	In the navigation pane, expand the domain controller name node and **Forward Lookup Zones**.
-3.	In the navigation pane, select the node that has the name of your internal Active Directory domain name.
-4.	In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
-5.	In the **name** box, type the host name of the User Portal, such as *mfaweb* (this name must match the name of the certificate used to secure communication to the User Portal). In the IP address box, type the load balanced **IP address** of the User Portal. Click **Add Host**. 
-6.	Close the **DNS Management** console.
+1. Open the **DNS Management** console.
+2. In the navigation pane, expand the domain controller name node and **Forward Lookup Zones**.
+3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.
+4. In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
+5. In the **name** box, type the host name of the User Portal, such as *mfaweb* (this name must match the name of the certificate used to secure communication to the User Portal). In the IP address box, type the load balanced **IP address** of the User Portal. Click **Add Host**. 
+6. Close the **DNS Management** console.
 
 ### Review
 
@@ -497,17 +497,17 @@ Follow [Install a standalone instance of the AD FS adapter by using the Web Serv
 ### Edit the MFA AD FS Adapter config file on all ADFS Servers
 
 Sign in the primary AD FS server with _local administrator_ equivalent credentials.
-1.	Open Windows Explorer and browse to **C:\inetpub\wwwroot\MultiFactorAuth** (or appropriate directory based on the virtual directory name) and edit the **MultiFactorAuthenticationAdfsAdapter.config** file.
-2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
-3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
-4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “http://localhost:4898/PfWsSdk.asmx” to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
+1. Open Windows Explorer and browse to **C:\inetpub\wwwroot\MultiFactorAuth** (or appropriate directory based on the virtual directory name) and edit the **MultiFactorAuthenticationAdfsAdapter.config** file.
+2. Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
+3. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
+4. Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
+5. Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “<http://localhost:4898/PfWsSdk.asmx”> to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. <https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx>). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
 
 ### Edit the AD FS Adapter Windows PowerShell cmdlet
 
 Sign in the primary AD FS server with _local administrator_ equivalent credentials.
 
-Edit the **Register-MultiFactorAuthenticationAdfsAdapter.ps1** script adding `-ConfigurationFilePath <path>` to the end of the `Register-AdfsAuthenticationProvider` command where **<path>** is the full path to the **MultiFactorAuthenticationAdfsAdapter.config** file.
+Edit the **Register-MultiFactorAuthenticationAdfsAdapter.ps1** script adding `-ConfigurationFilePath <path>` to the end of the `Register-AdfsAuthenticationProvider` command where **\<path>** is the full path to the **MultiFactorAuthenticationAdfsAdapter.config** file.
 
 ### Run the AD FS Adapter PowerShell cmdlet
 
@@ -533,10 +533,10 @@ Before you continue with the deployment, validate your deployment progress by re
 
 Now, you should test your Azure Multi-Factor Authentication server configuration before proceeding any further in the deployment.  The AD FS and Azure Multi-Factor Authentication server configurations are complete.
 
-1.	In the **Multi-Factor Authentication** server, on the left, click **Users**.
-2.	In the list of users, select a user that is enabled and has a valid phone number to which you have access.
-3.	Click **Test**.
-4.	In the **Test User** dialog, provide the user’s password to authenticate the user to Active Directory.
+1. In the **Multi-Factor Authentication** server, on the left, click **Users**.
+2. In the list of users, select a user that is enabled and has a valid phone number to which you have access.
+3. Click **Test**.
+4. In the **Test User** dialog, provide the user’s password to authenticate the user to Active Directory.
 
 The Multi-Factor Authentication server communicates with the Azure MFA cloud service to perform a second factor authentication for the user.  The Azure MFA cloud service contacts the phone number provided and asks for the user to perform the second factor authentication configured for the user.  Successfully providing the second factor should result in the Multi-factor authentication server showing a success dialog. 
 
