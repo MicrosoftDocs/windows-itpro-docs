@@ -61,8 +61,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **Insider Preview builds** 
    1. **MDM Policy:** [System/AllowBuildPreview](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowbuildpreview). This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. **Set to 0  (zero)**
 
-1. **Internet Explorer** 
-   1. The following Microsoft Internet Explorer MDM policies are available in the [Internet Explorer CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer)
+1. **Internet Explorer** The following Microsoft Internet Explorer MDM policies are available in the [Internet Explorer CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer)
    1. **MDM Policy:** [InternetExplorer/AllowSuggestedSites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-allowsuggestedsites). Recommends websites based on the user’s browsing activity. **Set to Disabled**
    1. **MDM Policy:** [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to Enabled**
    1. **MDM Policy** [InternetExplorer/DisableFlipAheadFeature]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disableflipaheadfeature). Determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website. **Set to Enabled**
