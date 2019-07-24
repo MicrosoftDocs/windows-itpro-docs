@@ -59,7 +59,7 @@ After completing these steps Microsoft Defender ATP will automatically identify 
 
 ## Configure auto labeling
 
-Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
+Windows automatically detects when an Office file, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
 
 Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
 
