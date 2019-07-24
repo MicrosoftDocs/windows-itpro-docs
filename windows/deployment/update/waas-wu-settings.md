@@ -190,47 +190,47 @@ To do this, follow these steps:
 
 3. Add one of the following registry values to configure Automatic Update.
 
-   * NoAutoUpdate (REG_DWORD):
-     
-     * **0**: Automatic Updates is enabled (default).
-    
-     * **1**: Automatic Updates is disabled.
-     
-   * AUOptions (REG_DWORD):
-   
-     * **1**: Keep my computer up to date is disabled in Automatic Updates.
-     
-     * **2**: Notify of download and installation.
-     
-     * **3**: Automatically download and notify of installation.
-     
-     * **4**: Automatically download and scheduled installation.
+    * NoAutoUpdate (REG_DWORD):
+
+      * **0**: Automatic Updates is enabled (default).
+
+      * **1**: Automatic Updates is disabled.
+
+    * AUOptions (REG_DWORD):
+
+      * **1**: Keep my computer up to date is disabled in Automatic Updates.
+
+      * **2**: Notify of download and installation.
+
+      * **3**: Automatically download and notify of installation.
+
+      * **4**: Automatically download and scheduled installation.
 
     * ScheduledInstallDay (REG_DWORD):
-      
+
       * **0**: Every day.
-      
+
       * **1** through **7**: The days of the week from Sunday (1) to Saturday (7).
-      
+
     * ScheduledInstallTime (REG_DWORD):
-    
+
       **n**, where **n** equals the time of day in a 24-hour format (0-23).
-      
+
     * UseWUServer (REG_DWORD)
-    
+
       Set this value to **1** to configure Automatic Updates to use a server that is running Software Update Services instead of Windows Update.
-      
+
     * RescheduleWaitTime (REG_DWORD)
-    
+
       **m**, where **m** equals the time period to wait between the time Automatic Updates starts and the time that it begins installations where the scheduled times have passed. The time is set in minutes from 1 to 60, representing 1 minute to 60 minutes)
-      
+
       > [!NOTE]
       > This setting only affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
-      
+
     * NoAutoRebootWithLoggedOnUsers (REG_DWORD):
-    
+
       **0** (false) or **1** (true). If set to **1**, Automatic Updates does not automatically restart a computer while users are logged on.
-      
+
       > [!NOTE]
       > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
 
