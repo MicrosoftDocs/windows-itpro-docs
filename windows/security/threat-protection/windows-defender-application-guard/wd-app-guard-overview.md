@@ -105,6 +105,13 @@ Application Guard has been created to target several types of systems:
 
 <br>
 
+|        |                                                                                                                                                                                                                                                                              |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Q:** |                                                                                                                Are there differences between using Application Guard on Windows Pro vs Windows Enterprise?                                                          |
+| **A:** | When using Windows Pro and Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard).  |
+
+<br>
+
 ## Related topics
 
 |Topic |Description |
