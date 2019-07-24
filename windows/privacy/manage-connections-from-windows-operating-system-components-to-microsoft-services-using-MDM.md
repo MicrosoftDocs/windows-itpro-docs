@@ -41,13 +41,36 @@ The following table lists management options for each setting.
 For Windows 10, the following MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 1. **Automatic Root Certificates Update**
-   1. **MDM Policy:** There is intentionally no MDM available for Automatic Root Certificate Update.
-   1. **Description:** This MDM does not exist since it would prevent the operation and management of MDM management of devices.
+   1. **MDM Policy:** There is intentionally no MDM available for Automatic Root Certificate Update. This MDM does not exist since it would prevent the operation and management of MDM management of devices.
 
 1. **Cortana and Search**
-   1. **MDM Policy:** [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)
-   1. **Description:** Choose whether to let Cortana install and run on the device. **Set to 0 (zero)**
-1. (fin)
+   1. **MDM Policy:** [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana). Choose whether to let Cortana install and run on the device. **Set to 0 (zero)**
+   1. **MDM Policy:** [Search/AllowSearchToUseLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search#search-allowsearchtouselocation). Choose whether Cortana and Search can provide location-aware search results. **Set to 0 (zero)**
+
+1. **Date & Time**
+   1. **MDM Policy:** [Settings/AllowDateTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowdatetime). Allows the user to change date and time settings.  **Set to 0 (zero)**
+
+1. **Device metadata retrieval** 
+   1. **MDM Policy:** [DeviceInstallation/PreventDeviceMetadataFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork). Choose whether to prevent Windows from retrieving device metadata from the Internet.  **Set to Enabled**
+
+1. **Find My Device ** 
+   1. **MDM Policy:** [Experience/AllowFindMyDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice). This policy turns on Find My Device.  **Set to 0  (zero)**
+
+1. **Font streaming** 
+   1. **MDM Policy:** [System/AllowFontProviders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowfontproviders).  Setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. **Set to 0  (zero)**
+1. **Insider Preview builds** 
+   1. **MDM Policy:** [System/AllowBuildPreview](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowbuildpreview). This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. **Set to 0  (zero)**
+
+1. **Internet Explorer** 
+   1. The following Microsoft Internet Explorer MDM policies are available in the [Internet Explorer CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer)
+   1. **MDM Policy:** [InternetExplorer/AllowSuggestedSites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-allowsuggestedsites). Recommends websites based on the user’s browsing activity. **Set to Disabled**
+   1. **MDM Policy:** [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to Enabled**
+   1. **MDM Policy** [InternetExplorer/DisableFlipAheadFeature]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disableflipaheadfeature). Determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website. **Set to Enabled**
+   1. **MDM Policy** [InternetExplorer/DisableHomePageChange]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablehomepagechange). Determines whether users can change the default Home Page or not. **Set to Enabled**
+   1. **MDM Policy** [InternetExplorer/DisableFirstRunWizard]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablefirstrunwizard) | Prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows. **Set to Enabled**
+
+
+
 
 
 > | Setting | MDM Policy | Description |
