@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - WindowsLogon
 description: Policy CSP - WindowsLogon
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -305,7 +305,7 @@ If you disable or don't configure this policy setting, any user can disconnect t
 
 Here is an example to enable this policy:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Atomic>

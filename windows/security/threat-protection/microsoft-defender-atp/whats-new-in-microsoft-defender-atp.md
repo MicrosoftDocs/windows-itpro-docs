@@ -28,6 +28,12 @@ The following features are generally available (GA) in the latest release of Mic
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
+## June 2019
+
+- [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
+  
+- [Machine health and compliance report](machine-reports.md)  The machine health and compliance report provides high-level information about the devices in your organization.
+
 ## May 2019
 
 - [Threat protection reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
@@ -35,7 +41,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
 
-- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/ti-indicator) <BR> APIs for indicators are now generally available. 
+- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ti-indicator) <BR> APIs for indicators are now generally available. 
 
 
 - [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
@@ -73,8 +79,8 @@ For more information preview features, see [Preview features](https://docs.micro
 Threat Analytics is a set of interactive reports published by the Microsoft Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
 - New in Windows 10 version 1809, there are two new attack surface reduction rules: 
-  -	Block Adobe Reader from creating child processes
-  -	Block Office communication application from creating child processes.
+  - Block Adobe Reader from creating child processes
+  - Block Office communication application from creating child processes.
   
 - [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
@@ -89,8 +95,8 @@ Query data using Advanced hunting in Microsoft Defender ATP.
 
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     New attack surface reduction rules: 
-  -	Use advanced protection against ransomware
-  -	Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+  - Use advanced protection against ransomware
+  - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
   - Block process creations originating from PSExec and WMI commands
   - Block untrusted and unsigned processes that run from USB
   - Block executable content from email client and webmail

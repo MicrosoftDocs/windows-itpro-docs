@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - System
 description: Policy CSP - System
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -444,7 +444,7 @@ This MDM setting corresponds to the EnableFontProviders Group Policy setting. If
 
 This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
 
-> [!Note]  
+> [!NOTE]
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
 <!--/Description-->
@@ -632,7 +632,7 @@ The following list shows the supported values:
 <!--Description-->
 Allow the device to send diagnostic and usage telemetry data, such as Watson. 
 
-For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following tables describe the supported values:
 
@@ -1068,7 +1068,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data *
+-   GP English name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1131,7 +1131,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer. *
+-   GP English name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
@@ -1581,19 +1581,28 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
 
-- [System/AllowTelemetry](#system-allowtelemetry)
+- [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
 - [System/AllowLocation](#system-allowlocation)
-<!--EndHoloLens-->
+- [System/AllowStorageCard](#system-allowstoragecard)
+- [System/AllowTelemetry](#system-allowtelemetry)
+ <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>System policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens (1st gen) Commercial Suite
 
-- [System/AllowTelemetry](#system-allowtelemetry)
 - [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
  <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens (1st gen) Development Edition
+
+- [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
+<!--EndHoloLens-->
 
 <hr/>
 

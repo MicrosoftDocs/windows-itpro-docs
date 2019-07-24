@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 10/16/2017
 ms.topic: article
 ---
 
@@ -95,7 +94,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
 7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to match the following: **Windows 10 Enterprise x64 RTM Custom Image**.
 
->[!NOTE]  
+>[!NOTE]
 >The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
@@ -176,7 +175,7 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
         -   Surface Pro 3
 
 The preceding folder names are selected because they match the actual make and model values that MDT reads from the machines during deployment. You can find out the model values for your machines via the following command in Windows PowerShell:
-``` syntax
+```powershell
 Get-WmiObject -Class:Win32_ComputerSystem
 ```
 Or, you can use this command in a normal command prompt:
@@ -290,7 +289,7 @@ This section will show you how to create the task sequence used to deploy your p
        1.  Choose a selection profile: Nothing
        2.  Install all drivers from the selection profile
 
-           >[!NOTE]  
+           >[!NOTE]
            >The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
              
    3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.
@@ -313,7 +312,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
 2. Right-click the **MDT Production** deployment share and select **Properties**.
 3. Select the **Rules** tab and modify using the following information:
 
-   ``` syntax
+   ```ini
    [Settings]
    Priority=Default
    [Default]
@@ -350,7 +349,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
    ```
 4. Click **Edit Bootstrap.ini** and modify using the following information:
 
-   ``` syntax
+   ```ini
    [Settings]
    Priority=Default
    [Default]
@@ -394,7 +393,7 @@ The rules for the MDT Production deployment share are somewhat different from th
 ### The Bootstrap.ini file
 
 This is the MDT Production Bootstrap.ini without the user credentials (except domain information):
-``` syntax
+```ini
 [Settings]
 Priority=Default
 [Default]
@@ -406,7 +405,7 @@ SkipBDDWelcome=YES
 ### The CustomSettings.ini file
 
 This is the CustomSettings.ini file with the new join domain information:
-``` syntax
+```ini
 [Settings]
 Priority=Default
 [Default]

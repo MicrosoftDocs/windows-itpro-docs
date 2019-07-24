@@ -96,10 +96,6 @@ By default, devices running any of the supported versions of Windows are able to
 
 Every domain controller needs to have the same Administrative Template policy setting, which is located at **Computer Configuration\\Policies\\Administrative Templates\\System\\KDC\\Support Dynamic Access Control and Kerberos armoring**.
 
-### Support for using the Key Distribution Center (KDC) Group Policy setting to enable Dynamic Access Control for a domain.
-
-Every domain controller needs to have the same Administrative Template policy setting, which is located at **Computer Configuration\\Policies\\Administrative Templates\\System\\KDC\\Support Dynamic Access Control and Kerberos armoring**.
-
 ### Support in Active Directory to store user and device claims, resource properties, and central access policy objects.
 
 ### Support for using Group Policy to deploy central access policy objects.

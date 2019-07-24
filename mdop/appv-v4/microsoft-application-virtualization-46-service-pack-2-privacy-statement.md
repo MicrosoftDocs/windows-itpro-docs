@@ -76,7 +76,7 @@ This section is divided into two parts: (1) features in all versions of App-V an
 
 Microsoft Error Reporting provides a service that allows you to report problems you may be having with App-V to Microsoft and to receive information that may help you avoid or solve such problems.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <https://go.microsoft.com/fwlink/?linkid=50293>.
 
@@ -84,13 +84,13 @@ For information about the information collected, processed, or transmitted by Mi
 
 We use the error reporting data to solve customer problems and improve our software and services.
 
-**Choice/Control: **
+**Choice/Control:**
 
 App-V does not change your Microsoft Error Reporting settings. If you previously turned on error reporting, it will send Microsoft the information about the errors you encountered. When Microsoft needs additional data to analyze the problem, you will be prompted to review the data and choose whether or not to send it.  App-V will always respect your Microsoft Error Reporting settings.
 
 **Important Information:**
 
-Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <http://technet.microsoft.com/library/cc709644.aspx>.
+Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <https://technet.microsoft.com/library/cc709644.aspx>.
 
 ### Microsoft Update
 
@@ -98,7 +98,7 @@ Enterprise customers can use Group Policy to configure how Microsoft Error Repor
 
 Microsoft Update is a service that provides Windows updates as well as updates for other Microsoft software, including App-V.  For details about what information is collected, how it is used and how to change your settings, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?linkid=50142>.
 
-**Choice/Control: **
+**Choice/Control:**
 
 If Microsoft Update is not enabled, you can opt-in during setup and subsequent checks for updates will follow the machine-wide schedule. You can update this option from the Microsoft Update Control Panel item.
 
@@ -108,7 +108,7 @@ If Microsoft Update is not enabled, you can opt-in during setup and subsequent c
 
 The product will collect various configuration items, including UserID, MachineID and SecurityGroup details, to be able to enforce settings on managed nodes. The data is stored in the App-V SQL database and transmitted across the App-V server and client components to enforce the configuration on the managed node.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 User and machine information and configuration content
 
@@ -116,7 +116,7 @@ User and machine information and configuration content
 
 The information is used to enforce the application access configuration on the managed nodes within the enterprise. The information does not leave the enterprise.
 
-**Choice/Control: **
+**Choice/Control:**
 
 By default, the product does not have any data. All data is entered and enabled by the admin and can be viewed in the Management console. The feature cannot be disabled as this is the product functionality. To disable this, App-V will need to be uninstalled.
 
@@ -130,7 +130,7 @@ None of this information is sent out of the enterprise.
 
 It captures package history and asset information as part of the package.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 Information about the package and the sequencing environment is collected and stored in the package manifest during sequencing.
 
@@ -138,7 +138,7 @@ Information about the package and the sequencing environment is collected and st
 
 The information will be used by the admin to track the updates done to a package during its lifecycle. It will also be used by software deployment systems to track the package deployments within the organization.
 
-**Choice/Control: **
+**Choice/Control:**
 
 This feature is always enabled and cannot be turned off.
 
@@ -152,7 +152,7 @@ This administrator information will be stored in the package and can be viewed b
 
 The product will collect a variety of reporting data points, including the username, to allow reporting on the usage of the product.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 Information about the machine, package and application usage are collected from every machine that reporting is enabled on.
 
@@ -160,7 +160,7 @@ Information about the machine, package and application usage are collected from 
 
 The information is used to report on application usage within the enterprise. The information does not leave the enterprise.
 
-**Choice/Control: **
+**Choice/Control:**
 
 By default, the product does not have any data. Data is only collected once the reporting feature is enabled on the App-V Client. To disable the collection of reporting data, the reporting feature must be disabled on all clients.
 
@@ -178,7 +178,7 @@ This section addresses specific features available in App-V 4.6 SP1 and later.
 
 The Customer Experience Improvement Program (“CEIP”) collects basic information about your hardware configuration and how you use our software and services in order to identify trends and usage patterns. CEIP also collects the type and number of errors you encounter, software and hardware performance, and the speed of services. We will not collect your name, address, or other contact information.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=52097>.
 
@@ -186,7 +186,7 @@ For more information about the information collected, processed, or transmitted 
 
 We use this information to improve the quality, reliability, and performance of Microsoft software and services.
 
-**Choice/Control: **
+**Choice/Control:**
 
 CEIP is optional and the opt-in status can be updated during install or post install from the GUI.  
 
@@ -196,7 +196,7 @@ CEIP is optional and the opt-in status can be updated during install or post ins
 
 Customers can use Application Package Accelerators to automatically package complex applications without installing the application. The App-V sequencer allows you to create package accelerators for each virtual package. You can then use these package accelerators to automatically re-create the same virtual package in the future. You may also use package accelerators released by Microsoft or other third parties to simplify and automate packaging of complex applications.
 
-**Information Collected, Processed, or Transmitted: **
+**Information Collected, Processed, or Transmitted:**
 
 Application Package Accelerators may contain information such as computer names, user account information, and information about applications included in the Package Accelerator file.
 

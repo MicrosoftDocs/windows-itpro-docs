@@ -26,7 +26,7 @@ For this example, you must initiate variables to be used during the creation pro
 Then create the WDAC policy by scanning the system for installed applications. 
 The policy file is converted to binary format when it gets created so that Windows can interpret it.
 
-> [!Note] 
+> [!NOTE]
 > Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy. 
 
 Each installed software application should be validated as trustworthy before you create a policy. 
@@ -40,11 +40,11 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
 1. Initialize variables that you will use. The following example commands use **InitialScan.xml** and **DeviceGuardPolicy.bin** for the names of the files that will be created:
 
-   ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
+   `$CIPolicyPath=$env:userprofile+"\Desktop\"`
 
-   ` $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
+   `$InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
 
-   ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
+   `$CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
 2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
@@ -70,7 +70,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
 After you complete these steps, the WDAC binary file (DeviceGuardPolicy.bin) and original .xml file (InitialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
 
-> [!Note] 
+> [!NOTE]
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
 
 We recommend that every WDAC policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error messages. For information about how to audit a WDAC policy, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md).

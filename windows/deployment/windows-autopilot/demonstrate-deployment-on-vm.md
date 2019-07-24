@@ -1,5 +1,5 @@
 ---
-title: Demonstrate Autopilot deployment on a VM
+title: Demonstrate Autopilot deployment
 ms.reviewer: 
 manager: laurawi
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
@@ -17,13 +17,17 @@ ms.custom: autopilot
 ---
 
 
-# Demonstrate Autopilot deployment on a VM
+# Demonstrate Autopilot deployment
 
 **Applies to**
 
 -   Windows 10
 
-In this topic you'll learn how to set-up a Windows Autopilot deployment for a virtual machine (VM) using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
+
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
+
+>Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
 The following video provides an overview of the process:
 
@@ -240,7 +244,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 
 Follow these steps to run the PS script:
 
-1.	Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
+1. Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -390,7 +394,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** in the upper-right-corner of the main page.
 
@@ -458,7 +462,7 @@ Click on **OK** and then click on **Create**.
 
 #### Assign the profile
 
-Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
+Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
 
 To create a Group, open the Azure Portal and select **Azure Active Directory** > **Groups** > **All groups**:
 
@@ -560,7 +564,7 @@ Windows Autopilot will now take over to automatically join your device into Azur
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/en-us/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
+To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [here](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
 
 ### Delete (deregister) Autopilot device
 
@@ -643,9 +647,9 @@ Note: A 64-bit operating system is required to run Hyper-V.
 
 Before we can pull an application into Intune to make it part of our AP profile, we need to “package” the application for delivery using the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool).  After downloading the tool, gather the following three bits of information to use the tool:
 
-1.	The source folder for your application
-2.	The name of the setup executable file 
-3.	The output folder for the new file
+1. The source folder for your application
+2. The name of the setup executable file 
+3. The output folder for the new file
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 
@@ -754,7 +758,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/en-us/intune/apps-win32-app-management).
+For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
 
 ### Add Office 365
 
@@ -822,7 +826,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add Office to Intune.
 
-For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365).
+For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 

@@ -33,7 +33,7 @@ Use the following procedure to install the database server and management server
    * If you are using a custom database name, select **Custom configuration** and enter the database name.
 7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
-    >[!NOTE]
+   > [!NOTE]
     >If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: ```Domain\AdministratorLoginName```. After that, select **Next**.
 8. To start the installation, select **Install**.
 
@@ -49,7 +49,7 @@ Use the following procedure to install the database server and management server
    * If you're using a custom database name, select **Custom configuration** and enter the database name.
 7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
-    >[!NOTE]
+   > [!NOTE]
     >If you plan to deploy the reporting server on the same computer you must select **Use this local computer**. Specify the user name for the reporting server **Install Administrator** using the following format: Domain\\AdministratorLoginName. After that, select **Next**.
 8. To start the installation, select **Install**.
 
@@ -68,7 +68,7 @@ Use the following procedure to install the database server and management server
    * The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
 4. For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
-   >[!NOTE]
+  > [!NOTE]
    >For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
 5. Run the scripts on the computer running Microsoft SQL Server.
 

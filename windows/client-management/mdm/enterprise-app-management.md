@@ -4,7 +4,7 @@ description: This topic covers one of the key mobile device management (MDM) fea
 ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -78,7 +78,7 @@ Note that performing a full inventory of a device can be resource intensive on t
 
 Here is an example of a query for all apps on the device.
 
-``` syntax
+```xml
 <!-- Get all apps under AppManagement -->
 <Get>
    <CmdID>1</CmdID>
@@ -92,7 +92,7 @@ Here is an example of a query for all apps on the device.
 
 Here is an example of a query for a specific app for a user.
 
-``` syntax
+```xml
 <!-- Get all information of a specific app for a user -->
 <Get>
    <CmdID>1</CmdID>
@@ -121,7 +121,7 @@ For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](
 
 Here is an example of a query for all app licenses on a device.
 
-``` syntax
+```xml
 <!-- Get all app licenses for the device -->
 <Get>
    <CmdID>1</CmdID>
@@ -135,7 +135,7 @@ Here is an example of a query for all app licenses on a device.
 
 Here is an example of a query for all app licenses for a user.
 
-``` syntax
+```xml
 <!-- Get a specific app license for a user -->
 <Get>
    <CmdID>1</CmdID>
@@ -161,7 +161,7 @@ For more information about the AllowAllTrustedApps policy, see [Policy CSP](poli
 
 Here are some examples.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
   <CmdID>1</CmdID>
@@ -199,7 +199,7 @@ For more information about the AllowDeveloperUnlock policy, see [Policy CSP](pol
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
   <CmdID>1</CmdID>
@@ -244,7 +244,7 @@ Here are the requirements for this scenario:
 
 Here are some examples.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
           <Item>
@@ -281,7 +281,7 @@ In the SyncML, you need to specify the following information in the Exec command
 
 Here is an example of an offline license installation.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
    <Item>
@@ -315,7 +315,7 @@ The Add command for the package family name is required to ensure proper removal
 
 Here is an example of a line-of-business app installation.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -342,7 +342,7 @@ Here is an example of a line-of-business app installation.
 
 Here is an example of an app installation with dependencies.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -376,7 +376,7 @@ Here is an example of an app installation with dependencies.
 
 Here is an example of an app installation with dependencies and optional packages.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -438,7 +438,7 @@ Here is an example of app installation.
 > **Note**  This is only supported in Windows 10 for desktop editions.
 
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -475,7 +475,7 @@ Here is an example of app installation with dependencies.
 > **Note**  This is only supported in Windows 10 for desktop editions.
 
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -526,7 +526,7 @@ When an app is installed successfully, the node is cleaned up and no longer pres
 
 Here is an example of a query for a specific app installation.
 
-``` syntax
+```xml
 <!-- Get all app status under AppInstallation for a specific app-->
 <Get>
    <CmdID>2</CmdID>
@@ -540,7 +540,7 @@ Here is an example of a query for a specific app installation.
 
 Here is an example of a query for all app installations.
 
-``` syntax
+```xml
 <!-- Get all app status under AppInstallation-->
 <Get>
    <CmdID>2</CmdID>
@@ -558,7 +558,7 @@ Application installations can take some time to complete, hence they are done as
 
 Here is an example of an alert.
 
-``` syntax
+```xml
 <Alert>
     <CmdID>4</CmdID>
     <Data>1226</Data>
@@ -594,7 +594,7 @@ To uninstall an app, you delete it under the origin node, package family name, a
 
 Here is an example for uninstalling all versions of an app for a user.
 
-``` syntax
+```xml
 <!-- Uninstall App for a Package Family-->
 <Delete>
    <CmdID>1</CmdID>
@@ -608,7 +608,7 @@ Here is an example for uninstalling all versions of an app for a user.
 
 Here is an example for uninstalling a specific version of the app for a user.
 
-``` syntax
+```xml
 <!-- Uninstall App for a specific package full name-->
 <Delete>
    <CmdID>1</CmdID>
@@ -631,7 +631,7 @@ Removing provisioned app occurs in the device context.
 
 Here is an example for removing a provisioned app from a device.
 
-``` syntax
+```xml
 <!— Remove Provisioned App for a Package Family-->
 <Delete>
    <CmdID>1</CmdID>
@@ -645,7 +645,7 @@ Here is an example for removing a provisioned app from a device.
 
 Here is an example for removing a specific version of a provisioned app from a device:
 
-``` syntax
+```xml
 <!-- Remove Provisioned App for a specific package full name-->
 <Delete>
    <CmdID>1</CmdID>
@@ -663,7 +663,7 @@ You can remove app licenses from a device per app based on the content ID.
 
 Here is an example for removing an app license for a user.
 
-``` syntax
+```xml
 <!-- Remove App License for a User-->
 <Delete>
    <CmdID>1</CmdID>
@@ -677,7 +677,7 @@ Here is an example for removing an app license for a user.
 
 Here is an example for removing an app license for a provisioned package (device context).
 
-``` syntax
+```xml
 <!-- Remove App License for a provisioned package (device) -->
 <Delete>
    <CmdID>1</CmdID>
@@ -697,7 +697,7 @@ For user-based uninstallation, use ./User in the LocURI, and for provisioning, u
 
 Here is an example. There is only one uninstall for hosted and store apps.
 
-``` syntax
+```xml
 <Alert>
     <Data>1226</Data>
     <Item>
@@ -723,7 +723,7 @@ To update an app from Microsoft Store, the device requires contact with the stor
 
 Here is an example of an update scan.
 
-``` syntax
+```xml
 <!— Initiate a update scan for a user-->
 <Exec>
    <CmdID>1</CmdID>
@@ -737,7 +737,7 @@ Here is an example of an update scan.
 
 Here is an example of a status check.
 
-``` syntax
+```xml
 <!— Get last error related to the update scan-->
 <Get>
    <CmdID>1</CmdID>
@@ -766,7 +766,7 @@ Turning off updates only applies to updates from the Microsoft Store at the devi
 
 Here is an example.
 
-``` syntax
+```xml
 <!— Prevent app from being automatically updated-->
 <Replace>
    <CmdID>1</CmdID>
@@ -795,7 +795,7 @@ You can install app on non-system volumes, such as a secondary partition or remo
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>
@@ -832,7 +832,7 @@ The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-se
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>
@@ -873,7 +873,7 @@ The valid values are 0 (off, default value) and 1 (on).
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>

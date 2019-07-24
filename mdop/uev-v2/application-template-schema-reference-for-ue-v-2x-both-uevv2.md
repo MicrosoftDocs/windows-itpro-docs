@@ -240,7 +240,7 @@ Version identifies the version of the settings location template for administrat
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
-``` syntax
+```xml
   <!--
      Version History
 
@@ -279,25 +279,25 @@ Author identifies the creator of the settings location template. Two optional ch
 
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <Architecture>Win64</Architecture>
-      <ProductName> MyApplication </ProductName>
-      <FileDescription>MyApplication.exe</FileDescription>
-      <ProductVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </ProductVersion>
-      <FileVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </FileVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <Architecture>Win64</Architecture>
+  <ProductName> MyApplication </ProductName>
+  <FileDescription>MyApplication.exe</FileDescription>
+  <ProductVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </FileVersion>
+</Process>
 ```
 
 ### Filename
@@ -354,14 +354,14 @@ UE-V does not support ARM processors in this version.
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <ProductName>My Application 6.x by Contoso.com</ProductName>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <ProductName>My Application 6.x by Contoso.com</ProductName>
+  <ProductVersion>
+    <Major Minimum="6" Maximum="6" />
+  </ProductVersion>
+</Process>
 ```
 
 ### FileDescription
@@ -374,23 +374,22 @@ FileDescription is an optional tag that allows for an administrative description
 
 For example, in a suited application, it might be useful to provide reminders about the function of two executables (MyApplication.exe and MyApplicationHelper.exe), as shown here:
 
-``` syntax
+```xml
 <Processes>
-
-   <Process>
-      <Filename>MyApplication.exe</Filename>
-      <FileDescription>My Application Main Engine</ FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
-    <Process>
-      <Filename>MyApplicationHelper.exe</Filename>
-      <FileDescription>My Application Background Process Executable</FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+  <Process>
+    <Filename>MyApplication.exe</Filename>
+    <FileDescription>My Application Main Engine</ FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
+  <Process>
+    <Filename>MyApplicationHelper.exe</Filename>
+    <FileDescription>My Application Background Process Executable</FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
 </Processes>
 ```
 
@@ -408,44 +407,44 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="1" Maximum="1" />
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="1" Maximum="1" />
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 **Example 2:**
 
 File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <FileVersion>
-        <Major Minimum="5" Maximum="5" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="2" Maximum="2" />
-        <Patch Minimum="1000" Maximum="1000" />
-      </FileVersion>
+```xml
+<FileVersion>
+  <Major Minimum="5" Maximum="5" />
+  <Minor Minimum="0" Maximum="0" />
+  <Build Minimum="2" Maximum="2" />
+  <Patch Minimum="1000" Maximum="1000" />
+</FileVersion>
 ```
 
 **Incorrect Example 1 – incomplete range:**
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="2" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="2" />
+</ProductVersion>
 ```
 
 **Incorrect Example 2 – Minor specified without Major element:**
 
 Only the Minor element is present. Major must be included as well.
 
-``` syntax
-      <ProductVersion>
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 ### FileVersion
@@ -462,19 +461,19 @@ Including a FileVersion element for an application allows for more granular fine
 
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
-``` syntax
-      <Process>
-        <Filename>MSACCESS.EXE</Filename>
-        <Architecture>Win32</Architecture>
-        <ProductVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </ProductVersion>
-        <FileVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </FileVersion>
-      </Process>
+```xml
+<Process>
+  <Filename>MSACCESS.EXE</Filename>
+  <Architecture>Win32</Architecture>
+  <ProductVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </FileVersion>
+</Process>
 ```
 
 ### <a href="" id="application21"></a>Application Element
@@ -642,7 +641,7 @@ This element defines the settings for a single application or a suite of applica
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
@@ -1177,16 +1176,16 @@ Version identifies the version of the settings location template for administrat
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
-``` syntax
-  <!--
-     Version History
+```xml
+<!--
+    Version History
 
-     Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
-     Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
-     Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
-     Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
-   -->
-  <Version>4</Version>
+    Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
+    Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
+    Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
+    Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
+  -->
+<Version>4</Version>
 ```
 
 **Important**  
@@ -1216,25 +1215,25 @@ Author identifies the creator of the settings location template. Two optional ch
 
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <Architecture>Win64</Architecture>
-      <ProductName> MyApplication </ProductName>
-      <FileDescription>MyApplication.exe</FileDescription>
-      <ProductVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </ProductVersion>
-      <FileVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </FileVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <Architecture>Win64</Architecture>
+  <ProductName> MyApplication </ProductName>
+  <FileDescription>MyApplication.exe</FileDescription>
+  <ProductVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </FileVersion>
+</Process>
 ```
 
 ### Filename
@@ -1291,14 +1290,14 @@ UE-V does not support ARM processors in this version.
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <ProductName>My Application 6.x by Contoso.com</ProductName>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <ProductName>My Application 6.x by Contoso.com</ProductName>
+  <ProductVersion>
+    <Major Minimum="6" Maximum="6" />
+  </ProductVersion>
+</Process>
 ```
 
 ### FileDescription
@@ -1311,23 +1310,22 @@ FileDescription is an optional tag that allows for an administrative description
 
 For example, in a suited application, it might be useful to provide reminders about the function of two executables (MyApplication.exe and MyApplicationHelper.exe), as shown here:
 
-``` syntax
+```xml
 <Processes>
-
-   <Process>
-      <Filename>MyApplication.exe</Filename>
-      <FileDescription>My Application Main Engine</ FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
-    <Process>
-      <Filename>MyApplicationHelper.exe</Filename>
-      <FileDescription>My Application Background Process Executable</FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+  <Process>
+    <Filename>MyApplication.exe</Filename>
+    <FileDescription>My Application Main Engine</ FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
+  <Process>
+    <Filename>MyApplicationHelper.exe</Filename>
+    <FileDescription>My Application Background Process Executable</FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
 </Processes>
 ```
 
@@ -1345,44 +1343,44 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="1" Maximum="1" />
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="1" Maximum="1" />
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 **Example 2:**
 
 File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <FileVersion>
-        <Major Minimum="5" Maximum="5" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="2" Maximum="2" />
-        <Patch Minimum="1000" Maximum="1000" />
-      </FileVersion>
+```xml
+<FileVersion>
+  <Major Minimum="5" Maximum="5" />
+  <Minor Minimum="0" Maximum="0" />
+  <Build Minimum="2" Maximum="2" />
+  <Patch Minimum="1000" Maximum="1000" />
+</FileVersion>
 ```
 
 **Incorrect Example 1 – incomplete range:**
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="2" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="2" />
+</ProductVersion>
 ```
 
 **Incorrect Example 2 – Minor specified without Major element:**
 
 Only the Minor element is present. Major must be included as well.
 
-``` syntax
-      <ProductVersion>
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 ### FileVersion
@@ -1399,19 +1397,19 @@ Including a FileVersion element for an application allows for more granular fine
 
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
-``` syntax
-      <Process>
-        <Filename>MSACCESS.EXE</Filename>
-        <Architecture>Win32</Architecture>
-        <ProductVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </ProductVersion>
-        <FileVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </FileVersion>
-      </Process>
+```xml
+<Process>
+  <Filename>MSACCESS.EXE</Filename>
+  <Architecture>Win32</Architecture>
+  <ProductVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </FileVersion>
+</Process>
 ```
 
 ### <a href="" id="application"></a>Application Element
@@ -1577,7 +1575,7 @@ This element defines the settings for a single application or a suite of applica
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013/SettingsLocationTemplate"

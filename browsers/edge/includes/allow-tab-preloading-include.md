@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow Microsoft Edge to load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed (aka: AllowStartAndNewTabPagePreload)  -->  
@@ -38,8 +38,8 @@ ms:topic: include
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
-- **Create Value name:** AllowPrelaunch
+- **Path:** HKCU\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader
+- **Create Value name:** AllowTabPreloading
 - **Value type:** REG_DWORD
 - **DWORD Value:** 1
 

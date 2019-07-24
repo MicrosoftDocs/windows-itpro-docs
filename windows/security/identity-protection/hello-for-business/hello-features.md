@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -147,7 +147,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 ### On-premises Deployments
 
-** Requirements**
+**Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
 * Reset from settings - Windows 10, version 1703, Professional

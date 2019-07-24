@@ -3,12 +3,12 @@ title: Conflicts and Precedence (Windows 10)
 description: Conflicts and Precedence
 ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -68,7 +68,7 @@ If you have an &lt;include&gt; rule in one component and a &lt;locationModify&gt
 
 The following .xml file migrates all files from C:\\Userdocs, including .mp3 files, because the &lt;exclude&gt; rule is specified in a separate component.
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/UserDocs">
 <component type="Documents" context="System">
 <displayName>User Documents</displayName>
@@ -102,7 +102,7 @@ The following .xml file migrates all files from C:\\Userdocs, including .mp3 fil
 
 Specifying `migrate="no"` in the Config.xml file is the same as deleting the corresponding component from the migration .xml file. However, if you set `migrate="no"` for My Documents, but you have a rule similar to the one shown below in a migration .xml file (which includes all of the .doc files from My Documents), then only the .doc files will be migrated, and all other files will be excluded.
 
-``` syntax
+```xml
 <include>
    <objectSet>
       <pattern type="File">%CSIDL_PERSONAL%\* [*.doc] </pattern>
@@ -135,7 +135,7 @@ If there are conflicting rules within a component, the most specific rule is app
 
 In the following example, mp3 files will not be excluded from the migration. This is because directory names take precedence over the file extensions.
 
-``` syntax
+```xml
 <include>
      <objectSet>
           <pattern type="File">C:\Data\* [*]</pattern>
@@ -390,7 +390,7 @@ The destination computer contains the following files:
 
 You have a custom .xml file that contains the following code:
 
-``` syntax
+```xml
 <include> 
    <objectSet> 
       <pattern type="File">c:\data\* [*]</pattern> 

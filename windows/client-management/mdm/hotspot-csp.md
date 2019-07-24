@@ -4,7 +4,7 @@ description: HotSpot CSP
 ms.assetid: ec49dec1-fa79-420a-a9a7-e86668b3eebf
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -134,7 +134,7 @@ Changes to this node require a reboot.
 
 For CDMA networks that use a separate Network Access Identity (NAI) for Internet sharing, a new parm, TetheringNAI, has been added in the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) configuration service provider. The following sample demonstrates how to specify the connection.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="CM_CellularEntries">
         <characteristic type="TetheringNAIConn">

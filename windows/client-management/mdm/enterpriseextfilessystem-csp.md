@@ -4,7 +4,7 @@ description: EnterpriseExtFileSystem CSP
 ms.assetid: F773AD72-A800-481A-A9E2-899BA56F4426
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -70,7 +70,7 @@ Supported operations is Get.
 
 The following example shows how to retrieve a file from the device.
 
-``` syntax
+```xml
 <Get>
     <CmdID>2</CmdID>
     <Item>
@@ -83,7 +83,7 @@ The following example shows how to retrieve a file from the device.
 
 The following example shows the file name that is returned in the body of the response syncML code. In this example, the full path of the file on the device is C:/data/test/bin/filename.txt.
 
-``` syntax
+```xml
 <Results>
     <CmdID>3</CmdID>
     <MsgRef>1</MsgRef>
@@ -103,7 +103,7 @@ The following example shows the file name that is returned in the body of the re
 
 The following example shows how to push a file to the device.
 
-``` syntax
+```xml
 <Add>
    <CmdID>2</CmdID>
    <Item>

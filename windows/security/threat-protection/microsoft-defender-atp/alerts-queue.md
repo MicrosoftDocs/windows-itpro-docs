@@ -58,16 +58,43 @@ The Windows Defender AV threat severity represents the absolute severity of the 
 The Microsoft Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the machine but more importantly the potential risk to the organization.
 
 So, for example:
--	The severity of a Microsoft Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
--	An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
--	An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
--	Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
+- The severity of a Microsoft Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
+- An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
+- An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
+- Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
+
+#### Understanding alert categories
+We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will retain the previous category names.
+
+The table below lists the current categories and how they generally map to previous categories. 
+
+| New category | Previous categories | Detected threat activity or component |
+|----------------------|----------------------|-------------|
+| Collection           | - | Locating and collecting data for exfiltration |
+| Command and control  | CommandAndControl | Connecting to attacker-controlled network infrastructure to relay data or receive commands |
+| Credential access    | CredentialTheft | Obtaining valid credentials to extend control over devices and other resources in the network |
+| Defense evasion      | - | Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits |
+| Discovery            | Reconnaissance, WebFingerprinting | Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers |
+| Execution            | Delivery, MalwareDownload | Launching attacker tools and malicious code, including RATs and backdoors |
+| Exfiltration         | Exfiltration | Extracting data from the network to an external, attacker-controlled location |
+| Exploit              | Exploit | Exploit code and possible exploitation activity |
+| Initial access       | SocialEngineering, WebExploit, DocumentExploit | Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails |
+| Lateral movement     | LateralMovement, NetworkPropagation | Moving between devices in the target network to reach critical resources or gain network persistence |
+| Malware              | Malware, Backdoor, Trojan, TrojanDownloader, CredentialStealing, Weaponization, RemoteAccessTool | Backdoors, trojans, and other types of malicious code |
+| Persistence          | Installation, Persistence | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts |
+| Privilege escalation | PrivilegeEscalation | Obtaining higher permission levels for code by running it in the context of a privileged process or account |
+| Ransomware           | Ransomware | Malware that encrypts files and extorts payment to restore access |
+| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypicaly activity that could be malware activity or part of an attack |
+| Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
 
 ### Status
 You can choose to limit the list of alerts based on their status.
 
 ### Investigation state
 Corresponds to the automated investigation state.
+
+### Category
+You can choose to filter the queue to display specific types of malicious activity.
 
 ### Assigned to
 You can choose between showing alerts that are assigned to you or automation.

@@ -104,7 +104,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
      - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data or if the student doesn't use the PC over a prolonged period.
    - **Let guests sign-in to these PCs** allows guests to use student PCs without a school account. If you select this option, a **Guest** account button will be added in the PC's sign-in screen to allow anyone to use the PC.
    - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
-   - **Lock screen background** shows the default backgroudn used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
+   - **Lock screen background** shows the default background used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
 
 7. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
 
@@ -257,7 +257,7 @@ Follow these instructions to confirm if you configured your tenant correctly and
     3. If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
 
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
-* [Add more users](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
+* [Add more users](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Microsoft 365 admin center to add more users.
 * Get app updates (including updates for Office 365 for Windows 10 S)
     1. Open the **Start** menu and go to the **Microsoft Store**.
     2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.

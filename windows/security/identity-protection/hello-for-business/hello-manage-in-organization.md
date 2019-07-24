@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -294,7 +294,7 @@ The following table lists the MDM policy settings that you can configure for Win
 </tr>
 </table>
 
->[!NOTE]  
+>[!NOTE]
 > If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
 

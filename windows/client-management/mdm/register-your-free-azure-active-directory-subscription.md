@@ -4,7 +4,7 @@ description: If you have paid subscriptions to Office 365, Microsoft Dynamics CR
 ms.assetid: 97DCD303-BB11-4AFF-84FE-B7F14CDF64F7
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

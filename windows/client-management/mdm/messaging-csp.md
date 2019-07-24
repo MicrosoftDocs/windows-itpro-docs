@@ -1,7 +1,7 @@
 ---
 title: Messaging CSP
 description: Messaging CSP
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -55,7 +55,7 @@ The following diagram shows the Messaging configuration service provider in tree
 
 **SyncML example**
 
-``` syntax
+```xml
  <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

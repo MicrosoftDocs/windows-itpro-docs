@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -24,7 +23,7 @@ In this topic, you will learn how to configure the MDT rules engine to use a Use
 
 You can call a UserExit by referencing the script in your rules. Then you can configure a property to be set to the result of a function of the VBScript. In this example, we have a VBScript named Setname.vbs (provided in the book sample files, in the UserExit folder).
 
-``` syntax
+```ini
 [Settings]
 Priority=Default
 [Default]
@@ -39,7 +38,7 @@ The UserExit=Setname.vbs calls the script and then assigns the computer name to 
 
 The Setname.vbs script takes the MAC Address passed from the rules. The script then does some string manipulation to add a prefix (PC) and remove the semicolons from the MAC Address.
 
-``` syntax
+```vb
 Function UserExit(sType, sWhen, sDetail, bSkip) 
   UserExit = Success 
 End Function 

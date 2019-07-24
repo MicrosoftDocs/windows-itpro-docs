@@ -3,13 +3,12 @@ title: Custom XML Examples (Windows 10)
 description: Custom XML Examples
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
-ms.date: 04/19/2017
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -37,7 +36,7 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
@@ -135,7 +134,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
  
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
 <component type="Documents" context="User">
@@ -196,7 +195,7 @@ This table describes the behavior in the following example .xml file.
 
  
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
@@ -232,7 +231,7 @@ This table describes the behavior in the following example .xml file.
 
 The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">

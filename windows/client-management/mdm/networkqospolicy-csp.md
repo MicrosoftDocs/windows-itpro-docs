@@ -1,7 +1,7 @@
 ---
 title: NetworkQoSPolicy CSP
 description: he NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -16,13 +16,13 @@ manager: dansimp
 The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. This CSP was added in Windows 10, version 1703.
 
 The following conditions are supported:
--	Network traffic from a specific application name
--	Network traffic from specific source or destination ports
--	Network traffic from a specific IP protocol (TCP, UDP, or both)
+- Network traffic from a specific application name
+- Network traffic from specific source or destination ports
+- Network traffic from a specific IP protocol (TCP, UDP, or both)
  
 The following actions are supported:
--	Layer 2 tagging using a IEEE 802.1p priority value
--	Layer 3 tagging using a differentiated services code point (DSCP) value
+- Layer 2 tagging using a IEEE 802.1p priority value
+- Layer 3 tagging using a differentiated services code point (DSCP) value
 
 > [!NOTE]
 > The NetworkQoSPolicy configuration service provider is supported only in Microsoft Surface Hub.

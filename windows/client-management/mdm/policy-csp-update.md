@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -1053,7 +1053,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
+Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of Semi-Annual Channel (Targeted) and Semi-Annual Channel have been combined into one Semi-Annual Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1071,8 +1071,8 @@ The following list shows the supported values:
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
--  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
--  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903)
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1896,7 +1896,7 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
-> [!Note]  
+> [!NOTE]
 > If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
 
 Value type is integer. Default is 14.
@@ -2722,7 +2722,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2835,7 +2835,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
-Value type is string. Supported operations are Add, Get, Delete, and Replace.
+Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3786,7 +3786,7 @@ Options:
 -  1 – Turn off all notifications, excluding restart warnings
 -  2 – Turn off all notifications, including restart warnings
 
-> [!Important]  
+> [!IMPORTANT]
 > If you choose not to get update notifications and also define other Group policies so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 <!--/Description-->
@@ -3847,7 +3847,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!Important]  
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Mobile.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
@@ -3939,7 +3939,7 @@ To use this setting, you must set two server name values: the server from which 
 
 Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
-> [!Note]  
+> [!NOTE]
 > If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
 > If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
@@ -3958,21 +3958,25 @@ ADMX Info:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+- [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+- [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+- [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
+- [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+- [Update/PauseQualityUpdates](#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Update policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Update/AllowAutoUpdate](#update-allowautoupdate)
 - [Update/AllowUpdateService](#update-allowupdateservice)
@@ -3983,6 +3987,19 @@ ADMX Info:
 - [Update/UpdateServiceUrl](#update-updateserviceurl)
 
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens (1st gen) Development Edition
+
+- [Update/AllowAutoUpdate](#update-allowautoupdate)
+- [Update/AllowUpdateService](#update-allowupdateservice)
+- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+- [Update/RequireUpdateApproval](#update-requireupdateapproval)
+- [Update/ScheduledInstallDay](#update-scheduledinstallday)
+- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+- [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+<!--EndHoloLens-->
 
 <!--StartIoTCore-->
 ## <a href="" id="iotcore"></a>Update policies supported by IoT Core  

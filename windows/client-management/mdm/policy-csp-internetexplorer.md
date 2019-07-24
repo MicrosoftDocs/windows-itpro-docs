@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - InternetExplorer
 description: Policy CSP - InternetExplorer
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -2227,7 +2227,7 @@ Value - A number indicating the zone with which this site should be associated f
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
-> [!Note]  
+> [!NOTE]
 > This policy is a list that contains the site and index value.
 
 The list is a set of pairs of strings. Each string is seperated by F000. Each pair of strings is stored as a registry name and value. The registry name is the site and the value is an index. The index has to be sequential. See an example below.
@@ -2249,7 +2249,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--Example-->
-```syntax
+```xml
   <SyncBody>
       <Replace>
           <CmdID>2</CmdID>
@@ -2850,7 +2850,7 @@ ADMX Info:
 This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
 
 > [!Caution]
-> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
 
 If you disable or do not configure this setting, IE continues to download updated versions of VersionList.XML.
 
@@ -13428,7 +13428,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer *
+-   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
 -   GP ADMX file name: *inetres.admx*
@@ -16504,7 +16504,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Zones: Use only machine settings *
+-   GP English name: *Security Zones: Use only machine settings*
 -   GP name: *Security_HKLM_only*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*

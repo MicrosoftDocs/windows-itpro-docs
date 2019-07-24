@@ -1,7 +1,7 @@
 ---
 title: MultiSIM CSP
 description: MultiSIM CSP allows the enterprise to manage devices with dual SIM single active configuration.
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -74,7 +74,7 @@ Supported operation is Get and Replace. Value type is bool.
 ## Examples
 
 Get modem
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -93,7 +93,7 @@ Get modem
 ```
 
 Get slots
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -112,7 +112,7 @@ Get slots
 ```
 
 Get slot state
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -131,7 +131,7 @@ Get slot state
 ```
 
 Select slot
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

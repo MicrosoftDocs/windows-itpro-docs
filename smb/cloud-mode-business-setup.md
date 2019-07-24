@@ -40,7 +40,7 @@ Go to the <a href="https://business.microsoft.com" target="_blank">Microsoft Bus
 Here's a few things to keep in mind before you get started:
 - You'll need a registered domain to successfully go through the walkthrough.
   - If you already own a domain, you can add this during the Office 365 setup.
-  - If you don't already own a domain, you'll have the option to purchase a domain from the Office 365 admin center. We'll show how to do this as part of the walkthrough.
+  - If you don't already own a domain, you'll have the option to purchase a domain from the Microsoft 365 admin center. We'll show how to do this as part of the walkthrough.
 - You'll need an email address to create your Office 365 tenant.
 - We recommend that you use Internet Explorer for the entire walkthrough. Right click on Internet Explorer and then choose **Start InPrivate Browsing**.
 
@@ -79,22 +79,22 @@ If this is the first time you're setting this up, and you'd like to see how it's
    ![Office 365 portal](images/office365_portal.png)
 
 
-6. Select the **Admin** tile to go to the Office 365 admin center.
+6. Select the **Admin** tile to go to the admin center.
 7. In the admin center, click **Next** to see the highlights and welcome info for the admin center. When you're done, click **Go to setup** to complete the Office 365 setup.
 
    This may take up to a half hour to complete.
   
-   **Figure 3** - Office 365 admin center
+   **Figure 3** - Admin center
 
-   ![Office 365 admin center](images/office365_admin_portal.png)
+   ![Microsoft 365 admin center](images/office365_admin_portal.png)
 
 
-8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a> to add or buy a domain.
+8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a> to add or buy a domain.
    1. Select the **Domains** option.
 
       **Figure 4** - Option to add or buy a domain
 
-      ![Add or buy a domain in Office 365 admin center](images/office365_buy_domain.png)
+      ![Add or buy a domain in admin center](images/office365_buy_domain.png)
     
 
    2. In the **Home > Domains** page, you will see the Microsoft-provided domain, such as *fabrikamdesign.onmicrosoft.com*.
@@ -110,16 +110,16 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
       **Figure 6** - Domains
 
-      ![Verify your domains in Office 365 admin center](images/office365_additional_domain.png)
+      ![Verify your domains in the admin center](images/office365_additional_domain.png)
 
 ### 1.2 Add users and assign product licenses
-Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Office 365 admin center.
+Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Microsoft 365 admin center.
 
 When adding users, you can also assign admin privileges to certain users in your team. You'll also want to assign **Product licenses** to each user so that subscriptions can be assigned to the person.
 
 **To add users and assign product licenses**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Users > Active users**.
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Users > Active users**.
 
    **Figure 7** - Add users
 
@@ -128,7 +128,7 @@ When adding users, you can also assign admin privileges to certain users in your
 2. In the **Home > Active users** page, add users individually or in bulk.
    - To add users one at a time, select **+ Add a user**.
 
-     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the Office 365 admin center* in <a href="https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
+     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the admin center* in <a href="https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
 
      **Figure 8** - Add an individual user
 
@@ -153,7 +153,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
 **To add Microsoft Intune to your tenant**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Billing > Purchase services**.
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Billing > Purchase services**.
 2. In the **Home > Purchase services** screen, search for **Microsoft Intune**. Hover over **Microsoft Intune** to see the options to start a free 30-day trial or to buy now.
 3. Confirm your order to enable access to Microsoft Intune.
 4. In the admin center, the Intune licenses will show as available and ready to be assigned to users. Select **Users > Active users** and then edit the product licenses assigned to the users to turn on **Intune A Direct**.
@@ -176,7 +176,7 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
 **To add Azure AD to your domain**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Admin centers > Azure AD**.
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Admin centers > Azure AD**.
 
    > [!NOTE]
    > You will need Azure AD Premium to configure automatic MDM enrollment with Intune.
@@ -252,7 +252,7 @@ Now that you have Azure AD Premium and have it properly configured, you can conf
 
 You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/" target="_blank">this blog post</a> to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > We will use the classic Azure portal instead of the new portal to configure automatic MDM enrollment with Intune.
 
 **To enable automatic MDM enrollment**
@@ -470,7 +470,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
      **Figure 37** - Confirm that additional apps were deployed to the device
 
-     ![Confirm that additiional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
+     ![Confirm that additional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
 
 ### 3.2 Configure other settings in Intune
 

@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - UserRights
 description: Policy CSP - UserRights
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -20,7 +20,7 @@ User rights are assigned for user accounts or groups. The name of the policy def
 
 Here is an example syncml for setting the user right BackupFilesAndDirectories for Administrators and Authenticated Users groups.
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
 
 <SyncBody>

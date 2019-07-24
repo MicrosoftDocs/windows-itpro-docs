@@ -1,7 +1,7 @@
 ---
 title: Personalization CSP
 description: Personalization CSP
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -71,7 +71,7 @@ The following diagram shows the Personalization configuration service provider i
 
 ## Example SyncML
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

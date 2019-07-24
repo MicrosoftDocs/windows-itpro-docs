@@ -1,6 +1,6 @@
 ---
 title: Manage app orders in Microsoft Store for Business or Microsoft Store for Education (Windows 10)
-description: You can view your order history with Micrsoft Store for Business or Micrsoft Store for Education.
+description: You can view your order history with Microsoft Store for Business or Microsoft Store for Education.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -55,10 +55,10 @@ Refunds work a little differently for free apps, and apps that have a price. In 
 
 Reclaim licenses, and then request a refund. If you haven't assigned licenses, start on step 5.
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
-2.	Click **Manage**, and then choose **Apps & software**.
-3.	Find the app you want to refund, click the ellipses under **Actions**, and then choose **View license details**.
+2. Click **Manage**, and then choose **Apps & software**.
+3. Find the app you want to refund, click the ellipses under **Actions**, and then choose **View license details**.
 4.  Select the people who you want to reclaim license from, click the ellipses under **Actions**, and then choose **Reclaim licenses**.
-5.	Click **Order history**, click the order you want to refund, and click **Refund order**.
+5. Click **Order history**, click the order you want to refund, and click **Refund order**.
 
 For free apps, the app will be removed from your inventory in **Apps & software**.
 

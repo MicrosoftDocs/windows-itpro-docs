@@ -20,7 +20,7 @@ manager: dansimp
 
 **Applies to**
 
-- Windows 10, version 1709 and later
+- Windows 10, version 1809 and above
 
 **Audience**
 
@@ -54,13 +54,13 @@ This can only be done in Group Policy.
 >[!IMPORTANT]
 >### Requirements
 >
->You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+>You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Security > Notifications**.
+5.  Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below the path would       be **Windows components > Windows Defender Security Center > Notifications**
 
 6.  Open the **Hide non-critical notifications** setting and set it to **Enabled**. Click **OK**.
 
@@ -76,14 +76,63 @@ This can only be done in Group Policy.
 >[!IMPORTANT]
 >### Requirements
 >
->You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+>You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Security > Notifications**.
+5.  Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below the path would       be **Windows components > Windows Defender Security Center > Notifications**
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
+
+## Notifications
+
+| Purpose | Notification text | Toast Identifier | Critical? |
+|---------|------------------|-------------|-----------|
+| Network isolation | Your IT administrator has caused Windows Defender to disconnect your device. Contact IT help desk. | SENSE_ISOLATION | Yes |
+| Network isolation customized | _Company name_ has caused Windows Defender to disconnect your device. Contact IT help desk _phone number_, _email address_, _url_. | SENSE_ISOLATION_CUSTOM (body) | Yes |
+| Restricted access | Your IT administrator has caused Windows Defender to limit actions on this device. Some apps may not function as expected. Contact IT help desk. | SENSE_PROCESS_RESTRICTION | Yes |
+| Restricted access customized | _Company_ has caused Windows Defender to limit actions on this device. Some apps may not function as expected. Contact IT help desk. | SENSE_PROCESS_RESTRICTION_CUSTOM (body) | Yes |
+| HVCI, driver compat check fails (upon trying to enable) | There may be an incompatibility on your device. | HVCI_ENABLE_FAILURE | Yes |
+| HVCI, reboot needed to enable | The recent change to your protection settings requires a restart of your device. | HVCI_ENABLE_SUCCESS | Yes |
+| Item skipped in scan, due to exclusion setting, or network scanning disabled by admin | The Windows Defender Antivirus scan skipped an item due to exclusion or network scanning settings. | ITEM_SKIPPED | Yes |
+| Remediation failure | Windows Defender Antivirus couldn’t completely resolve potential threats. | CLEAN_FAILED | Yes |
+| Follow-up action (restart & scan) | Windows Defender Antivirus found _threat_ in _file name_. Please restart and scan your device. Restart and scan | MANUALSTEPS_REQUIRED | Yes |
+| Follow-up action (restart) | Windows Defender Antivirus found _threat_ in _file_. Please restart your device. | WDAV_REBOOT | Yes |
+| Follow-up action (Full scan) | Windows Defender Antivirus found _threat_ in _file_. Please run a full scan of your device. | FULLSCAN_REQUIRED | Yes |
+| Sample submission prompt | Review files that Windows Defender will send to Microsoft. Sending this information can improve how Windows Defender Antivirus helps protect your device. | SAMPLE_SUBMISSION_REQUIRED | Yes |
+| OS support ending warning | Support for your version of Windows is ending. When this support ends, Windows Defender Antivirus won’t be supported, and your device might be at risk. | SUPPORT_ENDING | Yes |
+| OS support ended, device at risk | Support for your version of Windows has ended. Windows Defender Antivirus is no longer supported, and your device might be at risk. | SUPPORT_ENDED _and_ SUPPORT_ENDED_NO_DEFENDER | Yes |
+| Summary notification, items found | Windows Defender Antivirus successfully took action on _n_ threats since your last summary. Your device was scanned _n_ times. | RECAP_FOUND_THREATS_SCANNED | No |
+| Summary notification, items found, no scan count | Windows Defender Antivirus successfully took action on _n_ threats since your last summary. | RECAP_FOUND_THREATS | No |
+| Summary notification, **no** items found, scans performed | Windows Defender Antivirus did not find any threats since your last summary.  Your device was scanned _n_ times. | RECAP_NO THREATS_SCANNED | No |
+| Summary notification, **no** items found, no scans | Windows Defender Antivirus did not find any threats since your last summary. | RECAP_NO_THREATS | No |
+| Scan finished, manual, threats found | Windows Defender Antivirus scanned your device at _timestamp_ on _date_, and took action against threats. | RECENT_SCAN_FOUND_THREATS | No |
+| Scan finished, manual, **no** threats found | Windows Defender Antivirus scanned your device at _timestamp_ on _date_.  No threats were found. | RECENT_SCAN_NO_THREATS | No |
+| Threat found | Windows Defender Antivirus found threats. Get details. | CRITICAL | No |
+| LPS on notification | Windows Defender Antivirus is periodically scanning your device.  You’re also using another antivirus program for active protection. | PERIODIC_SCANNING_ON | No |
+| Long running BaFS | Your IT administrator  requires a security scan of this item.  The scan could take up to _n_ seconds. | BAFS | No |
+| Long running BaFS customized | _Company_ requires a security scan of this item.  The scan could take up to _n_ seconds. | BAFS_DETECTED_CUSTOM (body) | No |
+| Sense detection | This application was removed because it was blocked by your IT security settings | WDAV_SENSE_DETECTED | No |
+| Sense detection customized | This application was removed because it was blocked by your IT security settings | WDAV_SENSE_DETECTED_CUSTOM (body) | No |
+| Ransomware specific detection | Windows Defender Antivirus has detected threats which may include ransomware. | WDAV_RANSOMWARE_DETECTED | No |
+| ASR (HIPS) block | Your IT administrator caused Windows Defender Security Center to block this action. Contact your IT help desk. | HIPS_ASR_BLOCKED | No |
+| ASR (HIPS) block customized | _Company_ caused Windows Defender Security Center to block this action. Contact your IT help desk. | HIPS_ASR_BLOCKED_CUSTOM (body) | No |
+| CFA (FolderGuard) block | Controlled folder access blocked _process_ from making changes to the folder _path_ | FOLDERGUARD_BLOCKED | No |
+| Network protect (HIPS) network block customized | _Company_ caused Windows Defender Security Center to block this network connection. Contact your IT help desk. | HIPS_NETWORK_BLOCKED_CUSTOM (body) | No |
+| Network protection (HIPS) network block | Your IT administrator caused Windows Defender Security Center to block this network connection. Contact your IT help desk. | HIPS_NETWORK_BLOCKED | No |
+| PUA detection, not blocked | Your settings cause the detection of any app that might perform unwanted actions on your computer. | PUA_DETECTED | No |
+| PUA notification | Your IT settings caused Windows Defender Antivirus to block an app that may potentially perform unwanted actions on your device. | PUA_BLOCKED | No |
+| PUA notification, customized | _Company_ caused Windows Defender Antivirus to block an app that may potentially perform unwanted actions on your device. | PUA_BLOCKED_CUSTOM (body) | No |
+| Network isolation ended |  |  | No |
+| Network isolation ended, customized |  |  | No |
+| Restricted access ended |  |  | No |
+| Restricted access ended, customized |  |  | No |
+| Dynamic lock on, but bluetooth off |  |  | No |
+| Dynamic lock on, bluetooth on, but device unpaired |  |  | No |
+| Dynamic lock on, bluetooth on, but unable to detect device |  |  | No |
+| NoPa or federated no hello |  |  | No |
+| NoPa or federated hello broken |  |  | No |

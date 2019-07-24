@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -273,7 +273,7 @@ This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer,
 
 #### Example 2
 This example configures an IpConfig signal type using a dnsSuffix element and a bluetooth signal for phones.  This configuration is wrapped for reading.  Once properly formatted, the entire XML contents must be a single line.  This example implies that either the ipconfig **or** the Bluetooth rule must evaluate to true, for the resulting signal evaluation to be true.
->[!NOTE] 
+>[!NOTE]
 >Separate each rule element using a comma.
 
 ```

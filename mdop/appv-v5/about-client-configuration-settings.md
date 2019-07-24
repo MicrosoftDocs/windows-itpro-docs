@@ -5,7 +5,7 @@ author: manikadhiman
 ms.assetid: cc7ae28c-b2ac-4f68-b992-5ccdbd5316a4
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -303,7 +303,7 @@ The following table displays information about the App-V 5.0 client configuratio
 <td align="left"><p>ROAMINGREGISTRYEXCLUSIONS</p></td>
 <td align="left"><p>Specifies the registry paths that do not roam with a user profile. Example usage: /ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>Integration\RoamingReglstryExclusions</p></td>
+<td align="left"><p>Integration\RoamingRegistryExclusions</p></td>
 <td align="left"><p>Policy value not written (same as Not Configured)</p></td>
 </tr>
 <tr class="even">

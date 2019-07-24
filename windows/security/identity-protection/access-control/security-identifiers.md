@@ -194,9 +194,9 @@ The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SID
 | S-1-5-2 | Network | A group that includes all users who are logged on by means of a network connection. Access tokens for interactive users do not contain the Network SID.|
 | S-1-5-3 | Batch | A group that includes all users who have logged on by means of a batch queue facility, such as task scheduler jobs.| 
 | S-1-5-4 | Interactive| A group that includes all users who log on interactively. A user can start an interactive logon session by logging on directly at the keyboard, by opening a Remote Desktop Services connection from a remote computer, or by using a remote shell such as Telnet. In each case, the user's access token contains the Interactive SID. If the user signs in by using a Remote Desktop Services connection, the user's access token also contains the Remote Interactive Logon SID.| 
-| S-1-5-5- *X *- *Y * | Logon Session| The  *X * and  *Y * values for these SIDs uniquely identify a particular logon session.| 
+| S-1-5-5- *X*-*Y* | Logon Session| The  *X* and  *Y* values for these SIDs uniquely identify a particular logon session.| 
 | S-1-5-6 | Service| A group that includes all security principals that have signed in as a service.|
-| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual account—by default, IUSR_ *ComputerName *, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName * (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS "anonymous" user is a member of Authenticated Users but Anonymous Logon is not.| 
+| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual account—by default, IUSR_ *ComputerName*, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName* (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS "anonymous" user is a member of Authenticated Users but Anonymous Logon is not.| 
 | S-1-5-8| Proxy| Does not currently apply: this SID is not used.| 
 | S-1-5-9 | Enterprise Domain Controllers| A group that includes all domain controllers in a forest of domains.|
 | S-1-5-10 | Self| A placeholder in an ACE for a user, group, or computer object in Active Directory. When you grant permissions to Self, you grant them to the security principal that is represented by the object. During an access check, the operating system replaces the SID for Self with the SID for the security principal that is represented by the object.| 
@@ -282,6 +282,14 @@ The following table describes changes in SID implementation in the Windows opera
 | - | - | - |
 | Most of the operating system files are owned by the TrustedInstaller security identifier (SID)| Windows Server 2008, Windows Vista| The purpose of this change is to prevent a process that is running as an administrator or under the LocalSystem account from automatically replacing the operating system files. |
 | Restricted SID checks are implemented| Windows Server 2008, Windows Vista| When restricting SIDs are present, Windows performs two access checks. The first is the normal access check, and the second is the same access check against the restricting SIDs in the token. Both access checks must pass to allow the process to access the object. |
+
+## Capability SIDs
+
+Capability Security Identifiers (SIDs) are used to uniquely and immutably identify capabilities. Capabilities represent an unforgeable token of authority that grants access to resources (Examples: documents, camera, locations etc...) to Universal Windows Applications. An App that “has” a capability is granted access to the resource the capability is associated with, and one that “does not have” a capability is denied access to the resource.
+
+All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
+
+All Capability SIDs are prefixed by S-1-15-3
 
 ## See also
 

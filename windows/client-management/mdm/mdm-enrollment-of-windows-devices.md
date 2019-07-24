@@ -7,7 +7,7 @@ MS-HAID:
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -228,7 +228,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
    ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4. Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934) . For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+4. Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
 
    ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
@@ -284,8 +284,7 @@ There are a few instances where your device may not be able to connect to work, 
 | We couldn’t auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
  
-
-## Connecting your Windows 10-based device to work using a deep link
+## Connecting your Windows 10-based device to work using a deep link
 
 
 Windows 10-based devices may be connected to work using a deep link. Users will be able to click or open a link in a particular format from anywhere in Windows 10 and be directed to the new enrollment experience.
@@ -364,7 +363,8 @@ Starting in Windows 10, version 1709, clicking the **Info** button will show a l
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
-> [Note] Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
+> [NOTE]
+> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 

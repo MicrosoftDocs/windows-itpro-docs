@@ -5,7 +5,7 @@ author: manikadhiman
 ms.assetid: 8b8db63b-f71c-4ae9-80e7-a6752334e1f6
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -118,8 +118,18 @@ The following table lists the SQL Server versions that are supported for the App
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2016</p></td>
+<td align="left"><p>SP2</p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
@@ -262,8 +272,18 @@ The following table lists the SQL Server versions that are supported for the App
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2016</p></td>
+<td align="left"><p>SP2</p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>SP2</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">

@@ -1,7 +1,7 @@
 ---
 title: Office CSP
 description: The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device. This CSP was added in Windows 10, version 1703.
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -67,7 +67,7 @@ The only supported operation is Get.
 
 Sample SyncML to install Office 365 Business Retail from current channel.
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -89,7 +89,7 @@ Sample SyncML to install Office 365 Business Retail from current channel.
 
 To uninstall the Office 365 from the system:
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -111,7 +111,7 @@ To uninstall the Office 365 from the system:
 
 To get the current status of Office 365 on the device.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>

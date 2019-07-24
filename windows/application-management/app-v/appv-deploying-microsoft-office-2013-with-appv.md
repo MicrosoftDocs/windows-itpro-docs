@@ -110,7 +110,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
         </Configuration>
         ```
 
-        >[!NOTE]
+       > [!NOTE]
         >The configuration XML is a sample XML file. This file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file.
 
         The previous example of an XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications by specifying licensing in a later stage. For more information, see [Customizable attributes and elements of the XML file](#customizable-attributes-and-elements-of-the-xml-file), later in this topic.
@@ -206,7 +206,7 @@ After you download the Office 2013 applications through the Office Deployment To
         
        An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.
         
-       >[!NOTE]
+      > [!NOTE]
        >Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
 2. Use the **/packager** command to convert the Office applications to an Office 2013 App-V package.
 
@@ -231,7 +231,7 @@ After you download the Office 2013 applications through the Office Deployment To
    * **App-V Packages**, which contains an Office 2013 App-V package and two deployment configuration files.<br>
    * **WorkingDir**
     
-     >[!NOTE]
+    > [!NOTE]
      >To troubleshoot any issues, see the log files in the %temp% directory (default).
 3. Verify that the Office 2013 App-V package works correctly:
 
@@ -324,7 +324,7 @@ You may want to disable specific applications in your Office App-V package. For 
         <Description />
       </VisualElements>
     </Application>
-    <Application Id="[{AppVPackageRoot}]\officel5\lync.exe" Enabled="true">
+    <Application Id="[{AppVPackageRoot}]\office15\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2013</Name>
         <Icon />
@@ -362,10 +362,10 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <Arguments />
            <WorkingDirectory />
            <AppuserModelId>Microsoft.Office.MSACCESS.EXE.15</AppUserModelId>
-           <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
+           <AppUserModelExcludeFromShowInNewInstall>true</AppUserModelExcludeFromShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
-           <ApplicationId>[{AppVPackageRoot}]\officel5\MSACCESS.EXE</ApplicationId>
+           <ApplicationId>[{AppVPackageRoot}]\office15\MSACCESS.EXE</ApplicationId>
         </Shortcut>
     ```
 3. Save the Deployment Configuration File.

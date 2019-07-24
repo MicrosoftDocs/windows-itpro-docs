@@ -1,7 +1,7 @@
 ---
 title: Implement server-side support for mobile application management on Windows 
 description: The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP).
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -59,7 +59,7 @@ Below are protocol changes for MAM enrollment: 
 
 Here is an example provisioning XML for MAM enrollment.  
 
-``` syntax
+```xml
 <wap-provisioningdoc version="1.1"> 
   <characteristic type="APPLICATION"> 
     <parm name="APPID" value="w7"/> 

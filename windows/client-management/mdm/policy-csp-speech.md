@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Speech
 description: Policy CSP - Speech
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -87,17 +87,23 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Speech policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Speech policies supported by HoloLens 2
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-<!--EndHoloLens-->
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Speech policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Speech policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Speech policies supported by HoloLens (1st gen) Development Edition
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -108,3 +114,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

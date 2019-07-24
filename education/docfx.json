@@ -14,7 +14,9 @@
     "resource": [
       {
         "files": [
-          "**/images/**"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**"
@@ -22,9 +24,7 @@
       }
     ],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-WindowsIT",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.author": "celested",
       "audience": "windows-education",
       "ms.topic": "article",
       "breadcrumb_path": "/education/breadcrumb/toc.json",

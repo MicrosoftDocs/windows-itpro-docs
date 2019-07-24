@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
-ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -250,7 +249,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 #### To add additional domains and subdomains
 
-1. In the Office 365 admin center, in the list view, click **DOMAINS**.
+1. In the admin center, in the list view, click **DOMAINS**.
 2. In the details pane, above the list of domains, on the menu bar, click **Add domain**.
 3. In the Add a New Domain in Office 365 Wizard, on the **Verify domain wizard** page, click **Let’s get started**.
 4. On the **Verify domain** wizard page, in the **Enter a domain you already own** box, type your domain name, and then click **Next**.
@@ -302,6 +301,7 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 | Disable | `Set-MsolCompanySettings -AllowAdHocSubscriptions $false` |
 
 <p>
+
 ### Enable Azure AD Premium
 
 When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory. Azure AD is the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD–integrated apps. Azure AD is available in Free, Basic, and Premium editions. Azure AD Free, which is included in Office 365 Education, has fewer features than Azure AD Basic, which in turn has fewer features than Azure AD Premium.
@@ -450,6 +450,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 | Windows PowerShell |                                                                          This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).                                                                          |
 
 <p>
+
 ### Create a source file that contains the user and group accounts
 
 After you have selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 6 lists the source file format for the bulk import methods.
@@ -464,6 +465,7 @@ After you have selected your user and group account bulk import method, you’re
 | Windows PowerShell |                               Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).                               |
 
 <p>
+
 ### Import the user accounts into AD DS
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
@@ -488,7 +490,7 @@ You can bulk-import user and group accounts directly into Office 365, reducing t
 
 Now that you have created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
 
-You can use the Office 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
 The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 2. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
 
@@ -575,6 +577,7 @@ After you create the Microsoft Store for Business portal, configure it by using 
 |    Private store     | Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). |
 
 <p>
+
 ### Find, acquire, and distribute apps in the portal
 
 Now that you have created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Microsoft Store for Business.
@@ -583,7 +586,7 @@ Now that you have created your Microsoft Store for Business portal, you’re rea
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business).
 
 ### Summary
 
@@ -1055,6 +1058,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 |      |                Notify the students and faculty about the deployment.                 |
 
 <p>
+
 ### Perform the deployment
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
@@ -1235,8 +1239,8 @@ For more information about how to:
 <td>Create or modify security groups and manage group membership in Office 365.<br/><br/>
 For more information about how to:
 <ul>
-<li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7" data-raw-source="[View, create, and delete Groups in the Office 365 admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7)">View, create, and delete Groups in the Office 365 admin center</a>.</li>
-<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the Office 365 admin center</a>.</li>
+<li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7" data-raw-source="[View, create, and delete Groups in the admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7)">View, create, and delete Groups in the admin center</a>.</li>
+<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the admin center</a>.</li>
 </ul>
 
 </td>
@@ -1268,6 +1272,7 @@ Follow the same steps described in the <a href="#deploy-windows-10-to-devices" d
 </tbody>
 </table>
 <p>
+
 ### Summary
 
 Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By performing these maintenance tasks you help ensure that your school stays secure and is configured as you specified. 
@@ -1278,4 +1283,3 @@ Now, you have identified the tasks you need to perform monthly, at the end of an
 <li><a href="https://go.microsoft.com/fwlink/p/?LinkId=623255" data-raw-source="[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)">Try it out: Windows 10 in the classroom</a></li>
 <li><a href="https://go.microsoft.com/fwlink/p/?LinkId=623249" data-raw-source="[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)">Chromebook migration guide</a></li>
 </ul>
-

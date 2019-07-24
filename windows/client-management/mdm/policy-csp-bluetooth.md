@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Bluetooth
 description: Policy CSP - Bluetooth
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -335,7 +335,7 @@ If this policy is not set or it is deleted, the default local radio name is used
 
 <!--/Scope-->
 <!--Description-->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
+Added in Windows 10, version 1511. Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
 
 The default value is an empty string. For more information, see [ServicesAllowedList usage guide](#servicesallowedlist-usage-guide)
 
@@ -344,30 +344,31 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Bluetooth policies supported by HoloLens 2
+
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+  <!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Bluetooth policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+  <!--EndHoloLensBusiness-->
+
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic
+## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by HoloLens (1st gen) Development Edition
 
 - [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
 - [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
 - [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
 <!--EndHoloLens-->
 
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
-
-- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
-- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
-- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-  <!--EndHoloLensBusiness-->
   <hr/>
 
-Footnotes:
-
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
 
 ## ServicesAllowedList usage guide
 
@@ -481,3 +482,13 @@ Disabling file transfer shall have the following effects
 - Fsquirt shall not allow receiving of files
 - Fsquirt shall display error message informing user of policy preventing file transfer
 - 3rd-party apps shall not be permitted to send or receive files using MSFT Bluetooth API
+
+<hr/>
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

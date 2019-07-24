@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - RemoteAssistance
 description: Policy CSP - RemoteAssistance
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -290,9 +290,9 @@ If you enable this policy setting, you have two ways to allow helpers to provide
 
 To configure the list of helpers, click "Show." In the window that opens, you can enter the names of the helpers. Add each user or group one by one. When you enter the name of the helper user or user groups, use the following format:
 
-<Domain Name>\<User Name> or
+`<Domain Name>\<User Name>` or
 
-<Domain Name>\<Group Name>
+`<Domain Name>\<Group Name>`
 
 If you enable this policy setting, you should also enable firewall exceptions to allow Remote Assistance communications. The firewall exceptions required for Offer (Unsolicited) Remote Assistance depend on the version of Windows you are running.
 

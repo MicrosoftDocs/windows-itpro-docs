@@ -272,7 +272,7 @@ The directory of **C:\\data\\New Folder** contains:
 
 To migrate these files you author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -294,7 +294,7 @@ To migrate these files you author the following migration XML:
 
 However, upon testing the migration you notice that the “New Text Document.txt” file isn’t included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
 
-``` syntax
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -315,13 +315,13 @@ Analysis of this XML section reveals the migunit that was created when the migra
 
 An analysis of the XML elements reference topic reveals that the &lt;pattern&gt; tag needs to be modified as follows:
 
-``` syntax
+```xml
 <pattern type="File">c:\data\* [*]</pattern>
 ```
 
 When the migration is preformed again with the modified tag, the diagnostic log reveals the following:
 
-``` syntax
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -368,7 +368,7 @@ The **C:\\Data\\New Folder\\** contains:
 
 You author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -396,7 +396,7 @@ You author the following migration XML:
 
 However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
 
-``` syntax
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -422,7 +422,7 @@ However, upon testing the migration you notice that all the text files are still
 
 Upon reviewing the diagnostic log, you confirm that the files are still migrating, and that it is a problem with the authored migration XML rule. You author an update to the migration XML script as follows:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -453,7 +453,7 @@ Upon reviewing the diagnostic log, you confirm that the files are still migratin
 
 Your revised migration XML script excludes the files from migrating, as confirmed in the diagnostic log:
 
-``` syntax
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">

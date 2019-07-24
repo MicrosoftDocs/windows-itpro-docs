@@ -1,8 +1,8 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: greg-lindsay
 description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enterprise E3 or E5 Subscription Activation, or for Windows 10 Enterprise E3 in CSP
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -186,7 +186,7 @@ You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &g
 
 If there are any problems with the Windows 10 Enterprise E3 or E5 license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
->[!NOTE] 
+>[!NOTE]
 >If you use slmgr /dli or /dlv commands to retrieve the activation information for the Windows 10 E3 or E5 license, the license information displayed will be the following:
 >Name: Windows(R), Professional edition
 >Description: Windows(R) Operating System, RETAIL channel

@@ -4,7 +4,7 @@ description: PXLOGICAL configuration service provider
 ms.assetid: b5fc84d4-aa32-4edd-95f1-a6a9c0feb459
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

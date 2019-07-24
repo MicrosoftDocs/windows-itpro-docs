@@ -176,6 +176,7 @@ Event ID | Message | Resolution steps
 There are additional components on the machine that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
+
 ### Ensure the diagnostic data service is enabled
 If the machines aren&#39;t reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the machine. The service might have been disabled by other programs or user configuration changes.
 
@@ -295,8 +296,8 @@ You might also need to check the following:
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
-  -	Windows 10 Enterprise E5
-  -	Windows 10 Education E5
+  - Windows 10 Enterprise E5
+  - Windows 10 Education E5
   - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).

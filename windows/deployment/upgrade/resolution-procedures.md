@@ -1,15 +1,15 @@
 ---
 title: Resolution procedures - Windows IT Pro
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: lomayor
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -534,6 +534,12 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 Download and run the media creation tool. See <a href="https://www.microsoft.com/en-us/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/en-us/software-download/windows10)">Download windows 10</a>.
 <br>Attempt to upgrade using .ISO or USB.<br>
 <strong>Note</strong>: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
+</td>
+</tr>
+<tr>
+<td>0x80244018</td>
+<td>Your machine is connected through a proxy server.</td>
+<td>Make sure Automatically Detect Settings is selected in internet options. (Control Panel > Internet Options > Connections > LAN Settings).
 </td>
 </tr>
 <tr>

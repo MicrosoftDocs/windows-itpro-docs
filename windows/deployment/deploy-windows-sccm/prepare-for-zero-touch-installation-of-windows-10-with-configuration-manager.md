@@ -90,7 +90,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 2. In an elevated Windows PowerShell prompt (run as Administrator), run the following commands, pressing **Enter** after each command:
 
-   ``` syntax
+   ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 
    Set-Location C:\Setup\Scripts
@@ -130,7 +130,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 To support the packages you create in this section, the following folder structure should be created on the Configuration Manager primary site server (CM01):
 
->[!NOTE]  
+>[!NOTE]
 >In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
 
 -   E:\\Sources

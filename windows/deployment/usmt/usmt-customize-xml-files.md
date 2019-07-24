@@ -3,12 +3,12 @@ title: Customize USMT XML Files (Windows 10)
 description: Customize USMT XML Files
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.reviewer: 
-manager: dansimp
-ms.author: lomayor
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -89,7 +89,7 @@ In addition, note the following functionality with the Config.xml file:
 
 -   If a parent component is removed from the migration in the Config.xml file by specifying `migrate="no"`, all of its child components will automatically be removed from the migration, even if the child component is set to `migrate="yes"`.
 
--   If you mistakenly have two lines of code for the same component where one line specifies `migrate="no" `and the other line specifies `migrate="yes"`, the component will be migrated.
+-   If you mistakenly have two lines of code for the same component where one line specifies `migrate="no"` and the other line specifies `migrate="yes"`, the component will be migrated.
 
 -   In USMT there are several migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. For more information, see the [Config.xml File](usmt-configxml-file.md) topic.
 

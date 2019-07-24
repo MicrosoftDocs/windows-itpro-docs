@@ -36,3 +36,7 @@ Here are some important terms to consider when using the Windows Defender AV Sta
 
 ## Windows Defender data latency
 Because of the way Windows Defender is associated with the rest of Windows device data, Defender data for new devices might take much longer to appear than other data types. This process could take up to 28 days. 
+
+## Related topics
+
+- [Windows Defender Antivirus pre-requisites](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting#confirm-pre-requisites)

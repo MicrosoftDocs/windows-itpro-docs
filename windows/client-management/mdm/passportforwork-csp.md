@@ -4,7 +4,7 @@ description: The PassportForWork configuration service provider is used to provi
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -273,7 +273,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 Here's an example for setting Windows Hello for Business and setting the PIN policies. It also turns on the use of biometrics and TPM.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
           <SyncBody>
             <Add>

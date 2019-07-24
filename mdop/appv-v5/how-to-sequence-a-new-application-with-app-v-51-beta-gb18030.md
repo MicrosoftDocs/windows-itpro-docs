@@ -71,7 +71,7 @@ ms.date: 06/16/2016
 
 3.  On the **Prepare Computer** page, review the issues that could cause the package creation to fail or could cause the package to contain unnecessary data. You should resolve all potential issues before you continue. After making any corrections, click **Refresh** to display the updated information. After you have resolved all potential issues, click **Next**.
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > If you are required to disable virus scanning software, you should first scan the computer that runs the sequencer in order to ensure that no unwanted or malicious files could be added to the package.
 
 
@@ -102,7 +102,7 @@ If the application does not have an associated installer file and you plan to ru
 
 7. On the **Installation** page, when the sequencer and application installer are ready you can proceed to install the application so that the sequencer can monitor the installation process.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > You should always install applications to a secure location and make sure no other users are logged on to the computer running the sequencer during monitoring.
 
 
@@ -143,7 +143,7 @@ Click **Next**.
 
 13. On the **Target OS** page, specify the operating systems that can run this package. To allow all supported operating systems in your environment to run this package, select **Allow this package to run on any operating system**. To configure this package to run only on specific operating systems, select **Allow this package to run only on the following operating systems** and select the operating systems that can run this package. Click **Next**.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > Make sure that the operating systems you specify here are supported by the application you are sequencing.
 
 
@@ -152,7 +152,7 @@ Click **Next**.
 
    To save the package immediately, select **Save the package now** (default). Add optional **Comments** to be associated with the package. Comments are useful for identifying the program version and other information about the package.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > The system does not support non-printable characters in **Comments** and **Descriptions**.
 
 
@@ -165,7 +165,7 @@ The default **Save Location** is also displayed on this page. To change the defa
 
    The package is now available in the sequencer.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > After you have successfully created a virtual application package, you cannot run the virtual application package on the computer that is running the sequencer.
 
 
@@ -187,7 +187,7 @@ On the computer that runs the sequencer, click **All Programs**, and then Click 
 
 3. On the **Prepare Computer** page, review the issues that might cause the package creation to fail or could cause the package to contain unnecessary data. You should resolve all potential issues before you continue. After making any corrections, click **Refresh** to display the updated information. After you have resolved all potential issues, click **Next**.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > If you are required to disable virus scanning software, you should first scan the computer that runs the sequencer in order to ensure that no unwanted or malicious files could be added to the package.
 
 
@@ -229,7 +229,7 @@ On the computer that runs the sequencer, click **All Programs**, and then Click 
 
     To save the package immediately, select **Save the package now**. Optionally, add a **Description** that will be associated with the package. Descriptions are useful for identifying the version and other information about the package.
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > The system does not support non-printable characters in Comments and Descriptions.
 
 
@@ -246,7 +246,7 @@ The default **Save Location** is also displayed on this page. To change the defa
 
 3. On the **Prepare Computer** page, review the issues that could cause the package creation to fail or could cause the package to contain unnecessary data. You should resolve all potential issues before you continue. After making any corrections, click **Refresh** to display the updated information. After you have resolved all potential issues, click **Next**.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > If you are required to disable virus scanning software, you should first scan the computer that runs the App-V 5.0 Sequencer in order to ensure that no unwanted or malicious files can be added to the package.
 
 
@@ -271,7 +271,7 @@ The default **Save Location** is also displayed on this page. To change the defa
 
     To save the package immediately, select **Save the package now**. Optionally, add a **Description** to be associated with the package. Descriptions are useful for identifying the program version and other information about the package.
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > The system does not support non-printable characters in Comments and Descriptions.
 
 
@@ -284,7 +284,7 @@ The default **Save Location** is also displayed on this page. To change the defa
 
    The package is now available in the sequencer. To edit the package properties, click **Edit \[Package Name\]**.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > After you have successfully created a virtual application package, you cannot run the virtual application package on the computer that is running the sequencer.
 
 

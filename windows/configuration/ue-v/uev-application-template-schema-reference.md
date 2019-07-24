@@ -241,7 +241,7 @@ Version identifies the version of the settings location template for administrat
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
-``` syntax
+```xml
   <!--
      Version History
 
@@ -280,7 +280,7 @@ Author identifies the creator of the settings location template. Two optional ch
 
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
-``` syntax
+```xml
     <Process>
       <Filename>MyApplication.exe</Filename>
       <Architecture>Win64</Architecture>
@@ -355,7 +355,7 @@ UE-V does not support ARM processors in this version.
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
-``` syntax
+```xml
     <Process>
       <Filename>MyApplication.exe</Filename>
       <ProductName>My Application 6.x by Contoso.com</ProductName>
@@ -375,7 +375,7 @@ FileDescription is an optional tag that allows for an administrative description
 
 For example, in a suited application, it might be useful to provide reminders about the function of two executables (MyApplication.exe and MyApplicationHelper.exe), as shown here:
 
-``` syntax
+```xml
 <Processes>
 
    <Process>
@@ -409,7 +409,7 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 Product version: 1.0 specified in the UE-V template generator produces the following XML:
 
-``` syntax
+```xml
       <ProductVersion>
         <Major Minimum="1" Maximum="1" />
         <Minor Minimum="0" Maximum="0" />
@@ -420,7 +420,7 @@ Product version: 1.0 specified in the UE-V template generator produces the follo
 
 File version: 5.0.2.1000 specified in the UE-V template generator produces the following XML:
 
-``` syntax
+```xml
       <FileVersion>
         <Major Minimum="5" Maximum="5" />
         <Minor Minimum="0" Maximum="0" />
@@ -433,7 +433,7 @@ File version: 5.0.2.1000 specified in the UE-V template generator produces the f
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
-``` syntax
+```xml
       <ProductVersion>
         <Major Minimum="2" />
       </ProductVersion>
@@ -443,7 +443,7 @@ Only the Minimum attribute is present. Maximum must be included in a range as we
 
 Only the Minor element is present. Major must be included as well.
 
-``` syntax
+```xml
       <ProductVersion>
         <Minor Minimum="0" Maximum="0" />
       </ProductVersion>
@@ -463,7 +463,7 @@ Including a FileVersion element for an application allows for more granular fine
 
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
-``` syntax
+```xml
       <Process>
         <Filename>MSACCESS.EXE</Filename>
         <Architecture>Win32</Architecture>
@@ -643,7 +643,7 @@ This element defines the settings for a single application or a suite of applica
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"

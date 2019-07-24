@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -43,7 +42,7 @@ When preparing for the computer replace, you need to create a folder in which to
 1. On MDT01, log on as **CONTOSO\\Administrator**.
 
 2. Create and share the **E:\\MigData** folder by running the following three commands in an elevated Windows PowerShell prompt:
-   ``` syntax
+   ```powershell
    New-Item -Path E:\MigData -ItemType directory
    New-SmbShare ?Name MigData$ ?Path E:\MigData 
    -ChangeAccess EVERYONE
@@ -88,7 +87,7 @@ During a computer replace, these are the high-level steps that occur:
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
         
-        >[!NOTE]  
+        >[!NOTE]
         >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
          
     2.  Specify where to save a complete computer backup: Do not back up the existing computer

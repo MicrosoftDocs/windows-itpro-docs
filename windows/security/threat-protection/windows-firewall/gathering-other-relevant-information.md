@@ -82,4 +82,4 @@ Network Monitor includes parsers for the ISAKMP (IKE), AH, and ESP protocols. Ne
 
 Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
 
-**Next: **[Determining the Trusted State of Your Devices](determining-the-trusted-state-of-your-devices.md)
+**Next:** [Determining the Trusted State of Your Devices](determining-the-trusted-state-of-your-devices.md)

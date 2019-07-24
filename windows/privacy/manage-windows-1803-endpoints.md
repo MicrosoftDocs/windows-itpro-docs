@@ -23,11 +23,11 @@ ms.reviewer:
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
--	Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
--	Connecting to email servers to send and receive email.
--	Connecting to the web for every day web browsing.
--	Connecting to the cloud to store and access backups.
--	Using your location to show a weather forecast.
+- Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
+- Connecting to email servers to send and receive email.
+- Connecting to the web for every day web browsing.
+- Connecting to the cloud to store and access backups.
+- Using your location to show a weather forecast.
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
@@ -35,10 +35,10 @@ Where applicable, each endpoint covered in this topic includes a link to specifi
 
 We used the following methodology to derive these network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
-4.	Compile reports on traffic going to public IP addresses.
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
 6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
 
@@ -426,6 +426,10 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 |----------------|----------|------------|
 | svchost | HTTPS   | *.update.microsoft.com |
 | svchost | HTTPS   | *.delivery.mp.microsoft.com  |
+
+These are dependent on enabling:
+- [Device authentication](manage-windows-1803-endpoints.md#device-authentication)
+- [Microsoft account](manage-windows-1803-endpoints.md#microsoft-account)
 
 The following endpoint is used for content regulation.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.

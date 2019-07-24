@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -27,9 +27,6 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 [Hybrid Azure AD joined in Managed environments](#hybrid-azure-ad-joined-in-managed-environments)<br>
 [Hybrid Azure AD joined in Federated environments](#hybrid-azure-ad-joined-in-federated-environments)<br>
 
-
-
-
 ## Azure AD joined in Managed environments
 ![Azure AD joined in Managed environments](images/howitworks/devreg-aadj-managed.png)
 
@@ -44,7 +41,7 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 |G | The application sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data.  Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then writes a device object in Azure Active Directory and sends the device ID and the device certificate to the client.|
 |H |  Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the process continues with MDM enrollment.|
 
-[Return to top](#Windows-Hello-for-Business-and-Device-Registration)
+[Return to top](#windows-hello-for-business-and-device-registration)
 ## Azure AD joined in Federated environments
 ![Azure AD joined in Managed environments](images/howitworks/devreg-aadj-federated.png)
 
@@ -60,7 +57,7 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 |H | The application sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data.  Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then writes a device object in Azure Active Directory and sends the device ID and the device certificate to the client.|
 |I |  Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the process continues with MDM enrollment.|
 
-[Return to top](#Windows-Hello-for-Business-and-Device-Registration)
+[Return to top](#windows-hello-for-business-and-device-registration)
 ## Hybrid Azure AD joined in Managed environments
 ![Hybrid Azure AD joined in Managed environments](images/howitworks/devreg-hybrid-haadj-managed.png)
 
@@ -75,7 +72,7 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 |G | The task sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data.  Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then updates the device object in Azure Active Directory and sends the device ID and the device certificate to the client.|
 |H | Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the task exits.|
 
-[Return to top](#Windows-Hello-for-Business-and-Device-Registration)
+[Return to top](#windows-hello-for-business-and-device-registration)
 ## Hybrid Azure AD joined in Federated environments
 ![Hybrid Azure AD joined in Managed environments](images/howitworks/devreg-hybrid-haadj-federated.png)
 
@@ -89,4 +86,4 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 |F | The task sends a device registration request to Azure DRS that includes the ID token, certificate request, tkpub, and attestation data. Azure DRS validates the ID token, creates a device ID, and creates a certificate based on the included certificate request. Azure DRS then writes a device object in Azure Active Directory and sends the device ID and the device certificate to the client.  Device registration completes by receiving the device ID and the device certificate from Azure DRS.  The device ID is saved for future reference (viewable from dsregcmd.exe /status), and the device certificate is installed in the Personal store of the computer.  With device registration complete, the task exits.|
 |G | If Azure AD Connect device write-back is enabled, Azure AD Connect requests updates from Azure Active Directory at its next synchronization cycle (device write-back is required for hybrid deployment using certificate trust). Azure Active Directory correlates the device object with a matching synchronized computer object. Azure AD Connect receives the device object that includes the object GUID and computer SID and writes the device object to Active Directory.|
 
-[Return to top](#Windows-Hello-for-Business-and-Device-Registration)
+[Return to top](#windows-hello-for-business-and-device-registration)

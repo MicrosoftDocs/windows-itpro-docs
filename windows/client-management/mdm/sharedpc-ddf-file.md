@@ -4,7 +4,7 @@ description: SharedPC DDF file
 ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -21,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the DDF for Windows 10, version 1703.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

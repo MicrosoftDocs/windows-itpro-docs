@@ -77,7 +77,7 @@ Deletes an Application Virtualization Management Server.
 Changes the name of an Application Virtualization Management Server.
 
 <a href="" id="properties"></a>**Properties**  
-Displays the **Propertie**s dialog box for the selected server. The **Properties** dialog box has the following tabs:
+Displays the **Properties** dialog box for the selected server. The **Properties** dialog box has the following tabs:
 
 -   **General**—Enables you to select the provider policy from the **Provider Policies** drop-down list and to enable or disable the server by selecting or clearing the **Enable** check box.
 

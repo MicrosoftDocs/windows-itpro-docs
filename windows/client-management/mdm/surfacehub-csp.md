@@ -4,7 +4,7 @@ description: The SurfaceHub configuration service provider (CSP) is used to conf
 ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

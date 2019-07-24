@@ -14,15 +14,17 @@
     "resource": [
       {
         "files": [
-          "**/images/**"
-        ],
+            "**/images/**",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.gif"
+          ],
         "exclude": [
           "**/obj/**"
         ]
       }
     ],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-WindowsIT",
       "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",

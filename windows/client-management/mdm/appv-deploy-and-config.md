@@ -37,7 +37,7 @@ manager: dansimp
 	  - LastErrorDescription
 	  - SyncStatusDescription
 	  - SyncProgress
-	- Sync
+    - Sync
 	  - PublishXML
   - AppVDynamicPolicy
 
@@ -97,7 +97,7 @@ manager: dansimp
 
 <p>This example shows how to enable App-V on the device.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -117,7 +117,7 @@ manager: dansimp
 
 <p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish).  Allowing package scripts assists in package deployments (add and publish of App-V apps).</p>
 
-``` syntax
+```xml
 <Replace> 
 	<CmdID>$CmdID$</CmdID> 
 	<Item> 
@@ -141,7 +141,7 @@ manager: dansimp
 
 <p>This SyncML example shows how to publish a package globally on an MDM enrolled device for all device users.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -183,7 +183,7 @@ manager: dansimp
 
 <p>This SyncML example shows how to publish a package globally, with a policy that adds two shortcuts for the package, on an MDM enrolled device.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -277,7 +277,7 @@ manager: dansimp
 
 <p>This SyncML example shows how to publish a package for a specific MDM user.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -320,7 +320,7 @@ manager: dansimp
 > [!NOTE]
 > The user connection group has the user-only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -397,7 +397,7 @@ manager: dansimp
 
 <p>This SyncML example shows how to unpublish all global packages on the device by sending an empty package and connection group list in the SyncML.</p>
 
-``` syntax
+```xml
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -433,7 +433,7 @@ manager: dansimp
 
 <p>These SyncML examples return all global, and user-published packages on the device.</p>
 
-``` syntax
+```xml
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -444,7 +444,7 @@ manager: dansimp
 </Get>
 ```
 
-``` syntax
+```xml
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>

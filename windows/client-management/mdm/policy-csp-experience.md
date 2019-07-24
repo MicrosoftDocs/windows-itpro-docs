@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Experience
 description: Policy CSP - Experience
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -937,6 +937,7 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> Prior to Windows 10, version 1803, this policy had User scope.
 
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
@@ -1462,13 +1463,13 @@ _**Sync the browser settings automatically**_
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 _**Turn syncing off by default but don’t disable**_
 
@@ -1549,13 +1550,13 @@ _**Sync the browser settings automatically**_
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1641,17 +1642,24 @@ Supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Experience policies supported by HoloLens 2
 
 - [Experience/AllowCortana](#experience-allowcortana)
-<!--EndHoloLens-->
+- [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Experience policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Experience policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Experience/AllowCortana](#experience-allowcortana)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Experience policies supported by HoloLens (1st gen)  Development Edition
+
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLens-->
 
 <hr/>
 

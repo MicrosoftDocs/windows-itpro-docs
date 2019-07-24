@@ -21,8 +21,8 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 
 Use the following tables for more information about installing the App-V 5.0 server using the command line.
 
->[!NOTE]  
->The information in the following tables can also be accessed using the command line by typing the following command:
+>[!NOTE]
+> The information in the following tables can also be accessed using the command line by typing the following command:
 >```
 > appv\_server\_setup.exe /?
 >```
@@ -657,7 +657,7 @@ Use the following tables for more information about installing the App-V 5.0 ser
     </tr>
     <tr class="odd">
     <td align="left"><p>/EXISTING_ REPORTING _DB_NAME</p></td>
-    <td align="left"><p>Specifies the name of the existing Reporting database that should be used. Takes a string. E.g. /EXISITING_REPORTING_DB_NAME=&quot;AppVReporting&quot;</p></td>
+    <td align="left"><p>Specifies the name of the existing Reporting database that should be used. Takes a string. E.g. /EXISTING_REPORTING_DB_NAME=&quot;AppVReporting&quot;</p></td>
     </tr>
     </tbody>
     </table>
@@ -735,7 +735,7 @@ Use the following tables for more information about installing the App-V 5.0 ser
     </tr>
     <tr class="odd">
     <td align="left"><p>/EXISTING_MANAGEMENT_DB_NAME</p></td>
-    <td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
+    <td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISTING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
     <p></p>
     <p><strong>Got a suggestion for App-V</strong>? Add or vote on suggestions <a href="http://appv.uservoice.com/forums/280448-microsoft-application-virtualization" data-raw-source="[here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization)">here</a>. <strong>Got an App-V issu</strong>e? Use the <a href="https://social.technet.microsoft.com/Forums/home?forum=mdopappv" data-raw-source="[App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv)">App-V TechNet Forum</a>.</p></td>
 </tr>

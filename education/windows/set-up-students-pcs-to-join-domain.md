@@ -28,7 +28,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
 1. In the **Account Management** step:
 
-    > [!WARNING]  
+    > [!WARNING] 
     > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
     >   - Use a least-privileged domain account to join the device to the domain.
     >   - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.

@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- Configure collection of browsing data for Microsoft 365 Analytics -->  

@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - SmartScreen
 description: Policy CSP - SmartScreen
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -72,6 +72,9 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+
+> [!Note]
+> This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.
 
 <!--/Description-->
 <!--ADMXMapped-->

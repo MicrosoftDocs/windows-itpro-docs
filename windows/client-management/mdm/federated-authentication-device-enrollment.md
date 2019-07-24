@@ -4,7 +4,7 @@ description: This section provides an example of the mobile device enrollment pr
 ms.assetid: 049ECA6E-1AF5-4CB2-8F1C-A5F22D722DAA
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -92,7 +92,7 @@ https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
 
 The following example shows the discovery service request.
 
-``` syntax
+```xml
     <?xml version="1.0"?>
     <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:s="http://www.w3.org/2003/05/soap-envelope">
@@ -198,7 +198,7 @@ The server has to send a POST to a redirect URL of the form ms-app://string (the
 
 The following example shows a response received from the discovery web service which requires authentication via WAB.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing">
       <s:Header>
@@ -252,7 +252,7 @@ wsse:BinarySecurityToken/attributes/EncodingType: The &lt;wsse:BinarySecurityTok
 
 The following is an enrollment policy request example with a received security token as client credential.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -305,7 +305,7 @@ MS-XCEP supports very flexible enrollment policies using various Complex Types a
 
 The following snippet shows the policy web service response.
 
-``` syntax
+```xml
       <s:Envelope
          xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
          xmlns:s="http://www.w3.org/2003/05/soap-envelope"
@@ -399,7 +399,7 @@ The RST may also specify a number of AdditionalContext items, such as DeviceType
 
 The following example shows the enrollment web service request for federated authentication.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -505,7 +505,7 @@ Here is a sample RSTR message and a sample of OMA client provisioning XML within
 
 The following example shows the enrollment web service response.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
        xmlns:a="http://www.w3.org/2005/08/addressing" 
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">

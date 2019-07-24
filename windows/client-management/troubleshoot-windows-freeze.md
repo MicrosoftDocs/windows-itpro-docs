@@ -16,7 +16,7 @@ ms.author: dansimp
 
 This article describes how to troubleshoot freeze issues on Windows-based computers and servers. It also provides methods for collecting data that will help administrators or software developers diagnose, identify, and fix these issues. 
 
-> [!Note] 
+> [!NOTE]
 > The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. 
 
 ## Identify the problem  
@@ -76,14 +76,14 @@ To collect data for a server freeze, check the following table, and use one or m
 
 ### Method 1: Memory dump 
 
-> [!Note] 
+> [!NOTE]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.   
 
 A complete memory dump file records all the contents of system memory when the computer stops unexpectedly. A complete memory dump file may contain data from processes that were running when the memory dump file was collected.   
 
 If the computer is no longer frozen and now is running in a good state, use the following steps to enable memory dump so that you can collect memory dump when the freeze issue occurs again. If the virtual machine is still running in a frozen state, use the following steps to enable and collect memory dump.   
 
-> [!Note] 
+> [!NOTE]
 > If you have a restart feature that is enabled on the computer, such as the Automatic System Restart (ASR) feature in Compaq computers, disable it. This setting is usually found in the BIOS. With this feature enabled, if the BIOS doesn't detect a heartbeat from the operating system, it will restart the computer. The restart can interrupt the dump process.   
 
 
@@ -97,7 +97,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
    3.  In the **Write Debugging Information** section, select **Complete Memory Dump**. 
 
-       > [!Note]     
+       > [!NOTE]
        > For Windows versions that are earlier than Windows 8 or Windows Server 2012, the Complete Memory Dump type isn't available in the GUI. You have to change it in Registry Editor. To do this, change the value of the following **CrashDumpEnabled** registry entry to **1** (REG_DWORD):
        >**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled**   
 
@@ -129,14 +129,14 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 3. On some physical computers, you may generate a nonmakeable interruption (NMI) from the Web Interface feature (such as DRAC, iLo, and RSA). However, by default, this setting will stop the system without creating a memory dump.   
 
-   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
+   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
 
-   > [!Note] 
+   > [!NOTE]
    > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).   
 
 4. When the computer exhibits the problem, hold down the right **Ctrl** key, and press the **Scroll Lock** key two times to generate a memory dump file.   
 
-   > [!Note] 
+   > [!NOTE]
    > By default, the dump file is located in the following path:<br /> 
    > %SystemRoot%\MEMORY.DMP 
 
@@ -145,8 +145,8 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. 
 
--	[Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
--	[Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+- [Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
+- [Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
 Learn how to use Dumpchk.exe to check your dump files: 
 
@@ -187,24 +187,24 @@ The Performance Monitor log is located in the path: C:\PERFLOGS
 
 #### Use memory dump to collect data for the physical computer that's running in a frozen state 
 
-> [!Warning] 
+> [!WARNING]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.   
 
 If the physical computer is still running in a frozen state, follow these steps to enable and collect memory dump: 
 
 
 1. Make sure that the computer is set up to get a complete memory dump file and that you can access it through the network. To do this, follow these steps:   
-   > [!Note] 
+   > [!NOTE]
    > If it isn't possible to access the affected computer through the network, try to generate a memory dump file through NMI interruption. The result of the action may not collect a memory dump file if some of the following settings aren't qualified.   
 
    1. Try to access the desktop of the computer by any means.   
 
-      > [!Note] 
+      > [!NOTE]
       > In case accessing the operating system isn't possible, try to access Registry Editor on the computer remotely in order to check the type of memory dump file and page file with which the computer is currently configured.   
 
    2. From a remote computer that is preferably in the same network and subnet, go to **Registry Editor** \> **Connect Network Registry**. Then, connect to the concerned computer, and verify the following settings: 
 
-      * ` `*HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
+      * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
 
          Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
 
@@ -218,7 +218,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
         If the page file is customized, the size will be reflected in the registry, such as ‘?:\pagefile.sys 1024 1124’ where 1024 is the initial size and 1124 is the max size.   
 
-        > [!Note] 
+        > [!NOTE]
         > If the size isn't reflected in the Registry, try to access an Administrative share where the page file is located (such as \\\\**ServerName**\C$). 
 
    3. Make sure that there's a paging file (pagefile.sys) on the system drive of the computer, and it's at least 100 MB over the installed RAM. 
@@ -244,7 +244,7 @@ If the physical computer is still running in a frozen state, follow these steps 
    4.  Restart the computer. 
 
 3. When the computer exhibits the problem, hold down the right **CTRL** key, and press the **Scroll Lock** key two times to generate a memory dump.  
-   > [!Note] 
+   > [!NOTE]
    > By default, the dump file is located in the path: %SystemRoot%\MEMORY.DMP 
 
 ### Use Pool Monitor to collect data for the physical computer that is no longer frozen 
@@ -267,7 +267,7 @@ To debug the virtual machines on Hyper-V, run the following cmdlet in Windows Po
 Debug-VM -Name "VM Name" -InjectNonMaskableInterrupt -ComputerName Hostname  
 ``` 
 
-> [!Note] 
+> [!NOTE]
 > This method is applicable only to Windows 8, Windows Server 2012, and later versions of Windows virtual machines. For the earlier versions of Windows, see methods 1 through 4 that are described earlier in this section.  
 
 #### VMware 

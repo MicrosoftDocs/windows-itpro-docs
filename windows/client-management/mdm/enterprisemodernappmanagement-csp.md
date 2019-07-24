@@ -4,7 +4,7 @@ description: EnterpriseModernAppManagement CSP
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -52,7 +52,7 @@ Supported operation is Get.
 
 Here's an example of AppInventoryResults operation.
 
-``` syntax
+```xml
 <Get>
    <CmdID>11</CmdID>
    <Item>
@@ -100,7 +100,7 @@ Supported operation is Get and Replace.
 
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
 
-``` syntax
+```xml
 <Replace>
    <CmdID>10</CmdID>
    <Item>
@@ -167,7 +167,7 @@ Supported operations are Get and Delete.
 <a href="" id="appmanagement-releasemanagement"></a>**AppManagement/AppStore/ReleaseManagement**  
 Added in Windows 10, version 1809. Interior node for the managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
 
-> [!Note]  
+> [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
 
 <a href="" id="appmanagement-releasemanagement-releasemanagementkey"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_**  
@@ -208,7 +208,7 @@ Supported operations are Get and Delete.
 
 Here's an example for uninstalling an app:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
         <!-- Uninstall app -->
@@ -345,7 +345,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 The following example sets the value for the 'Server'
 
-``` syntax
+```xml
 <!— Configure app settings -->
 <Add>
    <CmdID>0</CmdID>
@@ -363,7 +363,7 @@ The following example sets the value for the 'Server'
 
 The following example gets all managed app settings for a specific app.
 
-``` syntax
+```xml
 <!—Get app settings -->
 <Get>
    <CmdID>0</CmdID>
@@ -583,7 +583,7 @@ For examples of how to use this CSP to for reporting apps inventory, installatio
 
 Query the device for a specific app subcategory, such as nonStore apps.
 
-``` syntax
+```xml
 <Get>
   <CmdID>1</CmdID>
   <Item>
@@ -598,8 +598,7 @@ The result contains a list of apps, such as \<Data>App1/App2/App\</Data\>.
 
 Subsequent query for a specific app for its properties.
 
-``` syntax
-
+```xml
 <Get>
    <CmdID>1</CmdID>
    <Item>
