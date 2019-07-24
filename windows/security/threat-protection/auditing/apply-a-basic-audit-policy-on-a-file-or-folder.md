@@ -38,7 +38,7 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   To audit all events, click **All.**
 6.  In the **Applies to** box, click the object or objects that the audit of events will apply to. It can be to:
     -   **This folder only**
-    -   **This folder, subfolders and files.**
+    -   **This folder, subfolders and files**
     -   **This folder and subfolders.**
     -   **This folder and files.**
     -   **Subfolders and files only.**
