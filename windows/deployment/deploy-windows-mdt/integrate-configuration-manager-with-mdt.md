@@ -27,9 +27,8 @@ MDT is a free, supported download from Microsoft that adds approximately 280 enh
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
 
->[!Note]
->Microsoft Deployment Toolkit requires [Windows PowerShell 2.0 Engine](https://docs.microsoft.com/powershell/scripting/install/installing-the-windows-powershell-2.0-engine) to be installed on the server.
-
+> [!Note]
+> Microsoft Deployment Toolkit requires you to install [Windows PowerShell 2.0 Engine](https://docs.microsoft.com/powershell/scripting/install/installing-the-windows-powershell-2.0-engine) on your server.
 
 ### MDT enables dynamic deployment
 
