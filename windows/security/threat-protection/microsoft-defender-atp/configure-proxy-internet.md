@@ -180,15 +180,15 @@ Microsoft Defender ATP supports network connection monitoring from different lev
 The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value. Microsoft Defender ATP supports advanced HTTP level sensor.
 By enabling this sensor, Microsoft Defender ATP will expose a new type of events that surfaces the real target domain names. <br><br>
 
-**Investigation Impact**
+**Investigation Impact**<br>
 In machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
 ![Image of network events on machine's timeline](images/atp-proxy-investigation.png)<br>
 
 Additional events triggered by the Network Protection layer are now available to surface the real domain names even behind a proxy. <br>
 Event's information:
-![Image of single network event](images/atp-proxy-investigation-event.png) <br>
+![Image of single network event](images/atp-proxy-investigation-event.png)<br>
 
-Advanced Hunting <br>
+**Advanced Hunting**<br>
 All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnecionSuccess’ action type.<br>
 Using this simple query will show you all the relevant events:
 
@@ -206,8 +206,8 @@ NetworkCommunicationEvents
 | take 10
 ```
 
-**How to enable the advanced network connection sensor**
-Monitoring network connection behind forward proxy is possible due to additional Network Events that originate from Network Protection. To see them in machine’s timeline you need to turn Network Protection on at least in audit mode. <br><br>
+**How to enable the advanced network connection sensor**<br>
+Monitoring network connection behind forward proxy is possible due to additional Network Events that originate from Network Protection. To see them in machine’s timeline you need to turn Network Protection on at least in audit mode. <br>
 
 Network protection is a feature in Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  Its behavior can be controlled by the following options: Block and Audit. <br>
 If you turn this policy on in "Block" mode, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.<br>
