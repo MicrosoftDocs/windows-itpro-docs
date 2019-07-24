@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for US Government CCC High customers 
+title: Microsoft Defender ATP for US Government GCC High customers 
 description: Learn about the requirements and the available Microsoft Defender ATP capabilities for US Government CCC High customers
 keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP for US Government CCC High customers
+# Microsoft Defender ATP for US Government GCC High customers
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for US Government GCC High customers, built in the US Azure Government environment, uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial.
 
-This offering is currently available to US Office 365 GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for this offering.
+This offering is currently available to US Office 365 GCC High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for this offering.
 
 
 ## Endpoint versions
