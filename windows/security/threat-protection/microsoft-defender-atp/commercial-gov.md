@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP in Azure Government
-description: Learn about the requirements and the available Microsoft Defender ATP capabilities in Azure Government
-keywords: government, requirements, capabilities, azure, defender, defender atp, mdatp
+title: Microsoft Defender ATP for US Government CCC High customers 
+description: Learn about the requirements and the available Microsoft Defender ATP capabilities for US Government CCC High customers
+keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP for US Government customers
+# Microsoft Defender ATP for US Government CCC High customers
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for US Government customers uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for US Government GCC High customers, built in the US Azure Government environment, uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial.
 
-This offering is currently available to US Office 365 GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for Office 365 GCC High customers. 
+This offering is currently available to US Office 365 GCC High customers and  is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for this offering.
 
 
 ## Endpoint versions
@@ -50,8 +50,7 @@ The following OS versions are not supported:
 - Windows 8.1 Enterprise
 - macOS
 
-The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our Azure Government environment, there are some capabilities not yet available that we'd like to highlight.  These are the known gaps as of August 2019:
-
+The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our  Office 365 GCC High customers, there are some capabilities not yet available that we'd like to highlight.  These are the known gaps for US GCC High customers as of August 2019:
 ## Threat & Vulnerability Management
 Not currently available.
 
@@ -64,7 +63,7 @@ The following capabilities are not currently available:
 
 
 ## Management and APIs
-The following capabilities are not available:
+The following capabilities are not currently available:
 
 - Threat protection report
 - Machine health and compliance report
