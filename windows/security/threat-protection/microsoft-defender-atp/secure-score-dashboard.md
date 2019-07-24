@@ -20,6 +20,9 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>[!NOTE]
+>  Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization
@@ -281,6 +284,16 @@ For more information, see [Manage Windows Defender Credential Guard](https://doc
 
 ## Related topics
 - [Overview of Secure score](overview-secure-score.md)
+- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
+- [Configuration score](configuration-score.md)
+- [Security recommendations](tvm-security-recommendation.md)
+- [Remediation](tvm-remediation.md)
+- [Software inventory](tvm-software-inventory.md)
+- [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
+
 
 
 
