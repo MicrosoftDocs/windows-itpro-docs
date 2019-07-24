@@ -68,7 +68,7 @@ Comments are not supported in the `LayoutModification.xml` file.
 
 The following table lists the supported elements and attributes for the LayoutModification.xml file.
 > [!NOTE]
-> RequiredStartGroupsCollection and AppendGroup syntax only applies to the special case of the Import-StartLayout method used for building and deploying Windows images.
+> RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images.
 
 | Element | Attributes | Description |
 | --- | --- | --- |
