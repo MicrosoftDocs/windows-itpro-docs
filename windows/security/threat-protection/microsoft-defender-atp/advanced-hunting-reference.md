@@ -30,9 +30,7 @@ ms.date: 07/24/2019
 
 The advanced hunting schema comprise multiple tables that provide either event information or information about certain entities.
 
-To effectively build queries that span multiple tables, you need to understand the columns, or fields, in the Advanced hunting schema. The following reference lists all tables used by Advanced hunting. It also links to pages describing the tables' contents, including official column names.
-
- all the available columns, along with their data types and descriptions. This information is also available in the schema representation in the Advanced hunting screen.
+To effectively build queries that span multiple tables, you need to understand the columns, or fields, in the Advanced hunting schema. The following reference lists all tables used by Advanced hunting. It also links to pages describing the tables' contents, including official column names. This information is also available in the schema representation in the Advanced hunting screen.
 
 | Table name | Description |
 |------------|-------------|
