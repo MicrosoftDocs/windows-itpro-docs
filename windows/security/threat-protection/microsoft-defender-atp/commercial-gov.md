@@ -50,7 +50,8 @@ The following OS versions are not supported:
 - Windows 8.1 Enterprise
 - macOS
 
-The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering.  While our goal is to deliver all commercial features and functionality to our  Office 365 GCC High customers, there are some capabilities not yet available that we'd like to highlight.  These are the known gaps for US GCC High customers as of August 2019:
+The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government (GCC High) customers, there are some capabilities not yet available that we'd like to highlight. These are the known gaps as of August 2019:
+
 ## Threat & Vulnerability Management
 Not currently available.
 
