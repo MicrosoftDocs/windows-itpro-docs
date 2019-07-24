@@ -45,7 +45,7 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   **Subfolders only**
     -   **Files only.**
 7.  By default, the selected **Basic Permissions** to audit are the following:
-    -   **Read & Execute.**
+    -   **Read and execute**
     -   **List folder contents**
     -   **Read**
     -   Additionally, you can choose **Full control**, **Modify**, and/or **Write** permissions with your selected audit combination.
