@@ -1,8 +1,11 @@
 ---
 title: Delegate Management of a Controlled GPO
 description: Delegate Management of a Controlled GPO
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 509b02e7-ce0b-4919-b58a-c3a33051152e
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -31,14 +34,14 @@ A user account with the AGPM Administrator (Full Control) role, the user account
         **Note**  
         If a user or group inherits domain-wide access, the **Remove** button is unavailable. You can modify domain-wide access on the **Domain Delegation** tab.
 
-         
+         
 
     3.  To modify the roles and permissions delegated to a user or group, click the **Advanced** button. In the **Permissions** dialog box, select the user or group, select the check box for each role to be assigned to that user or group, and then click **OK**.
 
         **Note**  
         Editor and Approver include Reviewer permissions.
 
-         
+         
 
 ### Additional considerations
 
@@ -52,9 +55,9 @@ A user account with the AGPM Administrator (Full Control) role, the user account
 
 -   [Creating, Controlling, or Importing a GPO](creating-controlling-or-importing-a-gpo-editor-agpm30ops.md)
 
- 
+ 
 
- 
+ 
 
 
 

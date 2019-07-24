@@ -1,8 +1,11 @@
 ---
 title: How to Use the Self-Service Portal to Regain Access to a Computer
 description: How to Use the Self-Service Portal to Regain Access to a Computer
-author: jamiejdt
+author: msfttracyp
 ms.assetid: bcf095de-0237-4bb0-b450-da8fb6d6f3d0
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,12 +22,12 @@ If end users get locked out of Windows by BitLocker because they forgot their pa
 **Note**  
 If the IT administrator configured an IIS Session State time-out, a message is displayed 60 seconds prior to the time-out.
 
- 
+ 
 
 **Note**  
 These instructions are written for and from the perspective of end users.
 
- 
+ 
 
 **To use the Self-Service Portal to regain access to a computer**
 
@@ -33,7 +36,7 @@ These instructions are written for and from the perspective of end users.
     **Note**  
     If the first eight digits match multiple keys, a message displays that requires you to enter all 32 digits of the recovery key ID.
 
-     
+     
 
 2.  In the **Reason** field, select a reason for your request for the recovery key.
 
@@ -46,9 +49,9 @@ These instructions are written for and from the perspective of end users.
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

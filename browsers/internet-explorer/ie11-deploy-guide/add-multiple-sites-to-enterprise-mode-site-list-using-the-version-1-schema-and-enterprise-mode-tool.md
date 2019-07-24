@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the Bulk add from file area of the Enterprise Mode Site List Manager.
-author: shortpatti
+author: dansimp
 ms.prod: ie11
 ms.assetid: 20aF07c4-051a-451f-9c46-5a052d9Ae27c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -44,11 +47,11 @@ You can create and use a custom XML file with the Enterprise Mode Site List Mana
 
 Each XML file must include:
 
--   **Version number.** This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser.
+- **Version number.** This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser.
 
--   **&lt;emie&gt; tag.** This tag specifies the domains and domain paths that must be rendered using IE7 Enterprise Mode, IE8 Enterprise Mode, or the default IE11 browser environment.<p>**Important**<br>If you decide a site requires IE7 Enterprise Mode, you must add `forceCompatView=”true”` to your XML file. That code tells Enterprise Mode to check for a `DOCTYPE` tag on the specified webpage. If there is, the site renders using Windows Internet Explorer 7. If there’s no tag, the site renders using Microsoft Internet Explorer 5.
+- **&lt;emie&gt; tag.** This tag specifies the domains and domain paths that must be rendered using IE7 Enterprise Mode, IE8 Enterprise Mode, or the default IE11 browser environment.<p>**Important**<br>If you decide a site requires IE7 Enterprise Mode, you must add `forceCompatView=”true”` to your XML file. That code tells Enterprise Mode to check for a `DOCTYPE` tag on the specified webpage. If there is, the site renders using Windows Internet Explorer 7. If there’s no tag, the site renders using Microsoft Internet Explorer 5.
 
--   **&lt;docMode&gt; tag.**This tag specifies the domains and domain paths that need either to appear using the specific doc mode you assigned to the site. Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual. For more specific info about using document modes, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
+- <strong>&lt;docMode&gt; tag.</strong>This tag specifies the domains and domain paths that need either to appear using the specific doc mode you assigned to the site. Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual. For more specific info about using document modes, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 
 ### Enterprise Mode v.1 XML schema example
 The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
@@ -101,9 +104,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 ## Related topics
 - [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
- 
+ 
 
- 
+ 
 
 
 

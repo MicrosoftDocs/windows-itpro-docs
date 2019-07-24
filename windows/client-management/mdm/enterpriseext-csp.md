@@ -2,11 +2,13 @@
 title: EnterpriseExt CSP
 description: EnterpriseExt CSP
 ms.assetid: ACA5CD79-BBD5-4DD1-86DA-0285B93982BD
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -36,7 +38,7 @@ Any string value as the device ID. This value appears in **Settings** > **About*
 
 Here's an example for getting custom data.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -63,7 +65,7 @@ Any string value that is associated with the device.
 
 Here's an example for setting custom data.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -104,7 +106,7 @@ The supported operations are Get and Replace.
 
 Here's an example for getting the current default value.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -123,7 +125,7 @@ Here's an example for getting the current default value.
 
 Here's an example for setting the default value to medium.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -152,7 +154,7 @@ The supported operations are Get and Replace.
 
 Here's an example for setting the maximum auto-brightness to medium.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -182,7 +184,7 @@ LED state. The valid values are:
 
 Example: LED On
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -214,7 +216,7 @@ Example: LED On
 
 Example: LED Off
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -240,7 +242,7 @@ Intensity of the LED brightness. You can set the value between 1 - 100.
 
 Example: LED blink
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>

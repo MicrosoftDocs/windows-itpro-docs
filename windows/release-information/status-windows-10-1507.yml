@@ -1,0 +1,91 @@
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows 10, version 1507
+metadata:
+  document_id: 
+  title: Windows 10, version 1507
+  description: View announcements and review known issues and fixes for Windows 10 version 1507
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues for Windows 10, version 1507. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      
+      " 
+
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    
+    - href: https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update/#1P75kJB6T5OhySyo.97
+      html: Get the update >
+      image: 
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Windows 10, version 1903 rollout begins
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
+      html: Read about the latest enhancements > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: What’s new in Windows Update for Business
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
+      html: Get an overview > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: What’s new for businesses and IT pros in Windows 10
+- items:
+  - type: markdown
+    text: "
+      <div align='right' style='font-size:0.87rem'><a class='is-size-7' href='https://docs.microsoft.com/windows/release-information/windows-message-center'>See all messages ></a></div>
+      "
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Known issues
+- items:
+  - type: markdown
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
+      <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='323msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\".<br><br><a href = '#323msgdesc'>See details ></a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480962' target='_blank'>KB4480962</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
+      <tr><td><div id='526msg'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><br>When trying to expand, view or create Custom Views in Event Viewer, you may receive an error and the app may stop responding or close.<br><br><a href = '#526msgdesc'>See details ></a></td><td>OS Build 10240.18244<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503291' target='_blank'>KB4503291</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4507458' target='_blank'>KB4507458</a></td><td>July 09, 2019 <br>10:00 AM PT</td></tr>
+      </table>
+      "
+
+- title: Issue details
+- items:
+  - type: markdown
+    text: "
+        <div>
+        </div> 
+      "
+- title: June 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='526msgdesc'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><div>When trying to expand, view, or create&nbsp;<strong>Custom Views&nbsp;</strong>in Event Viewer, you may receive the error, \"MMC has detected an error in a snap-in and will unload it.\" and the app may stop responding or close. You may also receive the same error when using&nbsp;<strong>Filter Current Log</strong>&nbsp;in the&nbsp;<strong>Action&nbsp;</strong>menu with built-in views or logs. Built-in views and other features of Event Viewer should work as expected.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10 Enterprise LTSC 2015; Windows 8.1; Windows 7 SP1</li><li>Server: Windows Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href='https://support.microsoft.com/help/4507458' target='_blank'>KB4507458</a>.</div><br><a href ='#526msg'>Back to top</a></td><td>OS Build 10240.18244<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503291' target='_blank'>KB4503291</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4507458' target='_blank'>KB4507458</a></td><td>Resolved:<br>July 09, 2019 <br>10:00 AM PT<br><br>Opened:<br>June 12, 2019 <br>11:11 AM PT</td></tr>
+      </table>
+      "
+
+- title: January 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='323msgdesc'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><div>Certain operations, such as <strong>rename</strong>, that you perform on files or folders that are on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\". This occurs when you perform the operation on a CSV owner node from a process that doesn’t have administrator privilege.</div><div><br></div><div><strong>Affected platforms:</strong>&nbsp;</div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 10 Enterprise LTSB 2015; Windows 8.1</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Workaround: </strong>Do one of the following:&nbsp;</div><ul><li>Perform the operation from a process that has administrator privilege.&nbsp;</li><li>Perform the operation from a node that doesn’t have CSV ownership.&nbsp;</li></ul><div></div><div><strong>Next steps: </strong>Microsoft is working on a resolution and will provide an update in an upcoming release.</div><br><a href ='#323msg'>Back to top</a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480962' target='_blank'>KB4480962</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>April 25, 2019 <br>02:00 PM PT<br><br>Opened:<br>January 08, 2019 <br>10:00 AM PT</td></tr>
+      </table>
+      "

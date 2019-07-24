@@ -1,12 +1,15 @@
 ---
 title: Planning for High Availability with App-V Server
 description: Planning for High Availability with App-V Server
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Planning for high availability with App-V Server
@@ -84,8 +87,8 @@ Use the following steps to modify the connection string to include ```failover p
 2. Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.
 3. Modify the **MANAGEMENT\_SQL\_CONNECTION\_STRING** value with the ```failover partner = <server2>``` value.
 4. Restart management service using the IIS console.
- >[!NOTE]
- >Database Mirroring is on the list of [deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>) due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
+  > [!NOTE]
+   >Database Mirroring is on the list of [deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>) due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
 
 Click any of the following links for more information:
 

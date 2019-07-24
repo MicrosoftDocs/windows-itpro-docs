@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -40,8 +41,8 @@ Prepare the Active Directory Federation Services deployment by installing and up
 ##  Update Windows Server 2016
 
 Sign-in the federation server with _local admin_ equivalent credentials.
-1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
+1. Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
+2. Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.
@@ -90,15 +91,15 @@ The Active Directory Federation Service (AD FS) role provides the following serv
 Windows Hello for Business depends on proper device registration.  For on-premises key trust deployments, Windows Server 2016 AD FS handles device and key registration.
 
 Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
-1.	Start **Server Manager**.  Click **Local Server** in the navigation pane.
-2.	Click **Manage** and then click **Add Roles and Features**.
-3.	Click **Next** on the **Before you begin** page.
-4.	On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5.	On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
-6.	On the **Select server roles** page, select **Active Directory Federation Services**.  Click **Next**.
-7.	Click **Next** on the **Select features** page.
-8.	Click **Next** on the **Active Directory Federation Service** page.
-9.	Click **Install** to start the role installation.
+1. Start **Server Manager**.  Click **Local Server** in the navigation pane.
+2. Click **Manage** and then click **Add Roles and Features**.
+3. Click **Next** on the **Before you begin** page.
+4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
+5. On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
+6. On the **Select server roles** page, select **Active Directory Federation Services**.  Click **Next**.
+7. Click **Next** on the **Select features** page.
+8. Click **Next** on the **Active Directory Federation Service** page.
+9. Click **Install** to start the role installation.
 
 ## Review
 
@@ -136,11 +137,11 @@ Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key
 #### Create an AD FS Service Account
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-1.	Open **Active Directory Users and Computers**.
-2.	Right-click the **Users** container, Click **New**. Click **User**.
-3.	In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
-4.	Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
-5.	Click **Next** and then click **Finish**.
+1. Open **Active Directory Users and Computers**.
+2. Right-click the **Users** container, Click **New**. Click **User**.
+3. In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
+4. Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
+5. Click **Next** and then click **Finish**.
 
 ## Configure the Active Directory Federation Service Role
 
@@ -149,7 +150,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 ### Windows Server 2016, 2012 R2 or later Domain Controllers
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008R2-domain-controllers) section.
+Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008-r2-domain-controllers) section.
 
 Sign-in the federation server with _Domain Admin_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 1. Start **Server Manager**.
@@ -164,8 +165,8 @@ Sign-in the federation server with _Domain Admin_ equivalent credentials. These 
 8. On the **Specify Service Account** page, select **Create a Group Managed Service Account**.  In the **Account Name** box, type **adfssvc**.
 9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
 10. On the **Review Options** page, click **Next**.
-11.	On the **Pre-requisite Checks** page, click **Configure**.
-12.	When the process completes, click **Close**.
+11. On the **Pre-requisite Checks** page, click **Configure**.
+12. When the process completes, click **Close**.
 
 ### Windows Server 2008 or 2008 R2 Domain Controllers
 
@@ -183,11 +184,11 @@ Sign-in the federation server with _Domain Admin_ equivalent credentials.  These
 7. Type the Federation Service Display Name in the text box. This is the name users see when signing in. Click **Next**.
 8. On the **Specify Service Account** page, Select **Use an existing domain user account or group Managed Service Account** and click **Select**.   
     * In the **Select User or Service Account** dialog box, type the name of the previously created AD FS service account (example adfssvc) and click **OK**. Type the password for the AD FS service account and click **Next**.
-9.	On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
-10.	On the **Review Options** page, click **Next**.
-11.	On the **Pre-requisite Checks** page, click **Configure**.
-12.	When the process completes, click **Close**.
-13.	Do not restart the AD FS server. You will do this later.
+9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
+10. On the **Review Options** page, click **Next**.
+11. On the **Pre-requisite Checks** page, click **Configure**.
+12. When the process completes, click **Close**.
+13. Do not restart the AD FS server. You will do this later.
 
 
 ### Add the AD FS Service account to the KeyAdmins group
@@ -318,9 +319,9 @@ Sign-in the domain controller or administrative workstation with _Domain Admin_ 
 
 ### Deploy the Intranet Zone Group Policy object
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
-3.	In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
+3. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
 
 ## Review
 

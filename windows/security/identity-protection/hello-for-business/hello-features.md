@@ -2,14 +2,15 @@
 title: Windows Hello for Business Features
 description: Windows Hello for Business Features 
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
+ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, PIN Reset, Dynamic Lock, Multifactor Unlock, Forgot PIN, Privileged credentials
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -128,15 +129,15 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account. 
 2. You need your tenant ID to complete the following task.  You can discovery your tenant ID viewing the **Properties** of your Azure Active Directory from the Azure Portal.  You can also use the following command in a command Window on any Azure AD joined or hybrid Azure AD joined computer.</br>
-```
-dsregcmd /status | findstr -snip "tenantid"
-```
+   ```
+   dsregcmd /status | findstr -snip "tenantid"
+   ```
 3. Navigate to the Microsoft Intune blade. Click **Device configuration**. Click **Profiles**. Click **Create profile**.
 4. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Custom** from the **Profile type** list.
 5. In the **Custom OMA-URI Settings** blade, Click **Add**.
 6. In the **Add Row** blade, type **PIN Reset Settings** in the **Name** field. In the **OMA-URI** field, type **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery** where <b>*tenant ID*</b> is your Azure Active Directory tenant ID from step 2.
 7. Select **Boolean** from the **Data type** list and select **True** from the **Value** list.
-8. Click **OK** to save the row configuration. Click **OK** to close the **Custom OMA-URI Settings blade.  Click **Create** to save the profile.
+8. Click **OK** to save the row configuration. Click **OK** to close the <strong>Custom OMA-URI Settings blade.  Click **Create</strong> to save the profile.
  
 ##### Assign the PIN Reset Device configuration profile using Microsoft Intune
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account. 
@@ -146,7 +147,7 @@ dsregcmd /status | findstr -snip "tenantid"
 
 ### On-premises Deployments
 
-** Requirements**
+**Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
 * Reset from settings - Windows 10, version 1703, Professional

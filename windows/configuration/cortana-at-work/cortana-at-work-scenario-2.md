@@ -4,10 +4,12 @@ description: A test scenario about how to perform a quick search with Cortana at
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 2 - Perform a quick search with Cortana at work
@@ -36,6 +38,6 @@ This process helps you to use Cortana at work and voice commands to perform a qu
 
 1. Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box).
 
-2.	Say *What's the weather in Chicago?* Cortana tells you and shows you the current weather in Chicago.
+2. Say *What's the weather in Chicago?* Cortana tells you and shows you the current weather in Chicago.
 
     ![Cortana at work, showing the current weather in Chicago, IL](../images/cortana-chicago-weather.png)

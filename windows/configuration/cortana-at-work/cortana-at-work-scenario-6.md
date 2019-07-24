@@ -4,10 +4,12 @@ description: A test scenario about how to use Cortana with the Suggested reminde
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
@@ -39,7 +41,7 @@ Cortana automatically finds patterns in your email, suggesting reminders based t
 
 5. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
+6. After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
 
     If the reminder has a specific date or time associated with it, like end of day, Cortana notifies you at the appropriate time and puts the reminder into the Action Center. Also from the Home screen, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
 

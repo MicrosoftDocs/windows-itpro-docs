@@ -1,8 +1,11 @@
 ---
 title: How to Rename an Application Group
 description: How to Rename an Application Group
-author: jamiejdt
+author: eavena
 ms.assetid: 4dfd3336-ea9a-4a56-91e1-7e9d742c7b9a
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -76,7 +76,7 @@
 ###[New group policy settings for Internet Explorer 11](ie11-deploy-guide/new-group-policy-settings-for-ie11.md)
 ###[Set the default browser using Group Policy](ie11-deploy-guide/set-the-default-browser-using-group-policy.md)
 ###[ActiveX installation using group policy](ie11-deploy-guide/activex-installation-using-group-policy.md)
-###[Group Policy and compatibility with Internet Explorer 11](ie11-deploy-guide/group-policy-compatability-with-ie11.md)
+###[Group Policy and compatibility with Internet Explorer 11](ie11-deploy-guide/group-policy-compatibility-with-ie11.md)
 ###[Group policy preferences and Internet Explorer 11](ie11-deploy-guide/group-policy-preferences-and-ie11.md)
 ###[Administrative templates and Internet Explorer 11](ie11-deploy-guide/administrative-templates-and-ie11.md)
 ###[Enable and disable add-ons using administrative templates and group policy](ie11-deploy-guide/enable-and-disable-add-ons-using-administrative-templates-and-group-policy.md)

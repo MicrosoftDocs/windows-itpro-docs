@@ -1,4 +1,4 @@
-﻿---
+---
 title: Certificate Requirements and Enumeration (Windows 10)
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.prod: w10
@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
+ms.reviewer: 
 ---
 
 # Certificate Requirements and Enumeration
@@ -33,7 +34,7 @@ When a smart card is inserted, the following steps are performed.
 
 4.  The name of the container is retrieved by using the PP\_CONTAINER parameter with CryptGetProvParam.
 
-5.  Using the context acquired in Step 3, the CSP is queried for the PP\_USER\_CERTSTORE parameter (added in Windows Vista). For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
+5.  Using the context acquired in Step 3, the CSP is queried for the PP\_USER\_CERTSTORE parameter (added in Windows Vista). For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
 
 6.  If the operation in Step 5 fails, the default container context from Step 3 is queried for the AT\_KEYEXCHANGE key.
 
@@ -53,7 +54,7 @@ When a smart card is inserted, the following steps are performed.
 
     Any certificate that meets these requirements is displayed to the user with the certificate's UPN (or e-mail address or subject, depending on the presence of the certificate extensions).
 
-    > **Note**&nbsp;&nbsp;These requirements are the same as those in Windows Server 2003, but they are performed before the user enters the PIN. You can override many of them by using Group Policy settings.
+    > **Note**&nbsp;&nbsp;These requirements are the same as those in Windows Server 2003, but they are performed before the user enters the PIN. You can override many of them by using Group Policy settings.
 
 9.  The process then chooses a certificate, and the PIN is entered.
 
@@ -63,7 +64,7 @@ When a smart card is inserted, the following steps are performed.
 
 ## About Certificate support for compatibility
 
-Although versions of Windows earlier than Windows Vista include support for smart cards, the types of certificates that smart cards can contain are limited. The limitations are:
+Although versions of Windows earlier than Windows Vista include support for smart cards, the types of certificates that smart cards can contain are limited. The limitations are:
 
 -   Each certificate must have a user principal name (UPN) and the smart card sign-in object identifier (also known as OID) in the enhanced key usage (EKU) attribute field. There is a Group Policy setting, Allow ECC certificates to be used for logon and authentication, to make the EKU optional.
 
@@ -94,45 +95,45 @@ The following diagram illustrates how smart card sign-in works in the supported 
 
 Following are the steps that are performed during a smart card sign-in:
 
-1.  Winlogon requests the sign-in UI credential information.
+1. Winlogon requests the sign-in UI credential information.
 
-2.  Asynchronously, smart card resource manager starts, and the smart card credential provider does the following:
+2. Asynchronously, smart card resource manager starts, and the smart card credential provider does the following:
 
-    1.  Gets credential information (a list of known credentials, or if no credentials exist, the smart card reader information that Windows detected).
+   1.  Gets credential information (a list of known credentials, or if no credentials exist, the smart card reader information that Windows detected).
 
-    2.  Gets a list of smart card readers (by using the WinSCard API) and the list of smart cards inserted in each of them.
+   2.  Gets a list of smart card readers (by using the WinSCard API) and the list of smart cards inserted in each of them.
 
-    3.  Enumerates each card to verify that a sign-in certificate that is controlled by Group Policy is present. If the certificate is present, the smart card credential provider copies it into a temporary, secure cache on the computer or terminal.
+   3.  Enumerates each card to verify that a sign-in certificate that is controlled by Group Policy is present. If the certificate is present, the smart card credential provider copies it into a temporary, secure cache on the computer or terminal.
 
-    > **Note**&nbsp;&nbsp;Smartcard cache entries are created for certificates with a subject name or with a subject key identifier. If the certificate has a subject name, it is stored with an index that is based on the subject name and certificate issuer. If another certificate with the same subject name and certificate issuer is used, it will replace the existing cached entry. A change in this behavior after Windows Vista, allows for the condition when the certificate does not have a subject name, the cache is created with an index that is based on the subject key identifier and certificate issuer. If another certificate has the same the subject key identifier and certificate issuer, the cache entry is replaced. When certificates have neither a subject name nor subject key identifier, a cached entry is not created.
+   > **Note**&nbsp;&nbsp;Smartcard cache entries are created for certificates with a subject name or with a subject key identifier. If the certificate has a subject name, it is stored with an index that is based on the subject name and certificate issuer. If another certificate with the same subject name and certificate issuer is used, it will replace the existing cached entry. A change in this behavior after Windows Vista, allows for the condition when the certificate does not have a subject name, the cache is created with an index that is based on the subject key identifier and certificate issuer. If another certificate has the same the subject key identifier and certificate issuer, the cache entry is replaced. When certificates have neither a subject name nor subject key identifier, a cached entry is not created.
 
-    4.  Notifies the sign-in UI that it has new credentials.
+   4. Notifies the sign-in UI that it has new credentials.
 
-3.  The sign-in UI requests the new credentials from the smart card credential provider. As a response, the smart card credential provider provides each sign-in certificate to the sign-in UI, and corresponding sign-in tiles are displayed. The user selects a smart card-based sign-in certificate tile, and Windows displays a PIN dialog box.
+3. The sign-in UI requests the new credentials from the smart card credential provider. As a response, the smart card credential provider provides each sign-in certificate to the sign-in UI, and corresponding sign-in tiles are displayed. The user selects a smart card-based sign-in certificate tile, and Windows displays a PIN dialog box.
 
-4.  The user enters the PIN, and then presses ENTER. The smart card credential provider encrypts the PIN.
+4. The user enters the PIN, and then presses ENTER. The smart card credential provider encrypts the PIN.
 
-5.  The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB\_CERTIFICATE\_LOGON structure. The main contents of the KERB\_CERTIFICATE\_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain is not in the same forest because it enables a certificate to be mapped to multiple user accounts.
+5. The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB\_CERTIFICATE\_LOGON structure. The main contents of the KERB\_CERTIFICATE\_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain is not in the same forest because it enables a certificate to be mapped to multiple user accounts.
 
-6.  The credential provider wraps the data (such as the encrypted PIN, container name, reader name, and card key specification) and sends it back to LogonUI.
+6. The credential provider wraps the data (such as the encrypted PIN, container name, reader name, and card key specification) and sends it back to LogonUI.
 
-7.  Winlogon presents the data from LogonUI to the LSA with the user information in LSALogonUser.
+7. Winlogon presents the data from LogonUI to the LSA with the user information in LSALogonUser.
 
-8.  LSA calls the Kerberos authentication package (Kerberos SSP) to create a Kerberos authentication service request (KRB\_AS\_REQ), which containing a preauthenticator (as specified in RFC 4556: [Public Key Cryptography for Initial Authentication in Kerberos (PKINIT)](http://www.ietf.org/rfc/rfc4556.txt)).
+8. LSA calls the Kerberos authentication package (Kerberos SSP) to create a Kerberos authentication service request (KRB\_AS\_REQ), which containing a preauthenticator (as specified in RFC 4556: [Public Key Cryptography for Initial Authentication in Kerberos (PKINIT)](http://www.ietf.org/rfc/rfc4556.txt)).
 
-    If the authentication is performed by using a certificate that uses a digital signature, the preauthentication data consists of the user's public certificate and the certificate that is digitally signed with the corresponding private key.<br>If the authentication is performed by using a certificate that uses key encipherment, the preauthentication data consists of the user's public certificate and the certificate that is encrypted with the corresponding private key.
+   If the authentication is performed by using a certificate that uses a digital signature, the preauthentication data consists of the user's public certificate and the certificate that is digitally signed with the corresponding private key.<br>If the authentication is performed by using a certificate that uses key encipherment, the preauthentication data consists of the user's public certificate and the certificate that is encrypted with the corresponding private key.
 
-9.  To sign the request digitally (as per RFC 4556), a call is made to the corresponding CSP for a private key operation. Because the private key in this case is stored in a smart card, the smart card subsystem is called, and the necessary operation is completed. The result is sent back to the Kerberos security support provider (SSP).
+9. To sign the request digitally (as per RFC 4556), a call is made to the corresponding CSP for a private key operation. Because the private key in this case is stored in a smart card, the smart card subsystem is called, and the necessary operation is completed. The result is sent back to the Kerberos security support provider (SSP).
 
-10.  The Kerberos SSP sends an authentication request for a ticket-granting-ticket (TGT) (per RFC 4556) to the Key Distribution Center (KDC) service that runs on a domain controller.
+10. The Kerberos SSP sends an authentication request for a ticket-granting-ticket (TGT) (per RFC 4556) to the Key Distribution Center (KDC) service that runs on a domain controller.
 
-11.  The KDC finds the user's account object in Active Directory Domain Services (AD DS), as detailed in [Client certificate requirements and mappings](#client-certificate-requirements-and-mappings), and uses the user's certificate to verify the signature.
+11. The KDC finds the user's account object in Active Directory Domain Services (AD DS), as detailed in [Client certificate requirements and mappings](#client-certificate-requirements-and-mappings), and uses the user's certificate to verify the signature.
 
-12.  The KDC validates the user's certificate (time, path, and revocation status) to ensure that the certificate is from a trusted source. The KDC uses CryptoAPI to build a certification path from the user's certificate to a root certification authority (CA) certificate that resides in the root store on the domain controller. The KDC then uses CryptoAPI to verify the digital signature on the signed authenticator that was included in the preauthentication data fields. The domain controller verifies the signature and uses the public key from the user's certificate to prove that the request originated from the owner of the private key that corresponds to the public key. The KDC also verifies that the issuer is trusted and appears in the NTAUTH certificate store.
+12. The KDC validates the user's certificate (time, path, and revocation status) to ensure that the certificate is from a trusted source. The KDC uses CryptoAPI to build a certification path from the user's certificate to a root certification authority (CA) certificate that resides in the root store on the domain controller. The KDC then uses CryptoAPI to verify the digital signature on the signed authenticator that was included in the preauthentication data fields. The domain controller verifies the signature and uses the public key from the user's certificate to prove that the request originated from the owner of the private key that corresponds to the public key. The KDC also verifies that the issuer is trusted and appears in the NTAUTH certificate store.
 
-13.  The KDC service retrieves user account information from AD DS. The KDC constructs a TGT, which is based on the user account information that it retrieves from AD DS. The TGT’s authorization data fields include the user's security identifier (SID), the SIDs for universal and global domain groups to which the user belongs, and (in a multidomain environment) the SIDs for any universal groups of which the user is a member.
+13. The KDC service retrieves user account information from AD DS. The KDC constructs a TGT, which is based on the user account information that it retrieves from AD DS. The TGT’s authorization data fields include the user's security identifier (SID), the SIDs for universal and global domain groups to which the user belongs, and (in a multidomain environment) the SIDs for any universal groups of which the user is a member.
 
-14.  The domain controller returns the TGT to the client as part of the KRB\_AS\_REP response.
+14. The domain controller returns the TGT to the client as part of the KRB\_AS\_REP response.
 
     > **Note**&nbsp;&nbsp;The KRB\_AS\_REP packet consists of:
     >- Privilege attribute certificate (PAC)
@@ -143,21 +144,21 @@ Following are the steps that are performed during a smart card sign-in:
 
     TGT is encrypted with the master key of the KDC, and the session key is encrypted with a temporary key. This temporary key is derived based on RFC 4556. Using CryptoAPI, the temporary key is decrypted. As part of the decryption process, if the private key is on a smart card, a call is made to the smart card subsystem by using the specified CSP to extract the certificate corresponding to the user's public key. (Programmatic calls for the certificate include CryptAcquireContext, CryptSetProvParam with the PIN, CryptgetUserKey, and CryptGetKeyParam.) After the temporary key is obtained, the Kerberos SSP decrypts the session key.
 
-15.  The client validates the reply from the KDC (time, path, and revocation status). It first verifies the KDC's signature by the construction of a certification path from the KDC's certificate to a trusted root CA, and then it uses the KDC's public key to verify the reply signature.
+15. The client validates the reply from the KDC (time, path, and revocation status). It first verifies the KDC's signature by the construction of a certification path from the KDC's certificate to a trusted root CA, and then it uses the KDC's public key to verify the reply signature.
 
-16.  Now that a TGT has been obtained, the client obtains a service ticket, which is used to sign in to the local computer.
+16. Now that a TGT has been obtained, the client obtains a service ticket, which is used to sign in to the local computer.
 
-17.  With success, LSA stores the tickets and returns a success message to LSALogonUser. After this success message is issued, user profile for the device is selected and set, Group Policy refresh is instantiated, and other actions are performed.
+17. With success, LSA stores the tickets and returns a success message to LSALogonUser. After this success message is issued, user profile for the device is selected and set, Group Policy refresh is instantiated, and other actions are performed.
 
-18.  After the user profile is loaded, the Certification Propagation Service (CertPropSvc) detects this event, reads the certificates from the smart card (including the root certificates), and then populates them into the user's certificate store (MYSTORE).
+18. After the user profile is loaded, the Certification Propagation Service (CertPropSvc) detects this event, reads the certificates from the smart card (including the root certificates), and then populates them into the user's certificate store (MYSTORE).
 
-19.  CSP to smart card resource manager communication happens on the LRPC Channel.
+19. CSP to smart card resource manager communication happens on the LRPC Channel.
 
-20.  On successful authentication, certificates are propagated to the user's store asynchronously by the Certificate Propagation Service (CertPropSvc).
+20. On successful authentication, certificates are propagated to the user's store asynchronously by the Certificate Propagation Service (CertPropSvc).
 
-21.  When the card is removed, certificates in the temporary secure cache store are removed. The Certificates are no longer available for sign-in, but they remain in the user's certificate store.
+21. When the card is removed, certificates in the temporary secure cache store are removed. The Certificates are no longer available for sign-in, but they remain in the user's certificate store.
 
-> **Note**&nbsp;&nbsp;A SID is created for each user or group at the time a user account or a group account is created within the local security accounts database or within AD DS. The SID never changes, even if the user or group account is renamed.
+> **Note**&nbsp;&nbsp;A SID is created for each user or group at the time a user account or a group account is created within the local security accounts database or within AD DS. The SID never changes, even if the user or group account is renamed.
 
 For more information about the Kerberos protocol, see [Microsoft Kerberos](https://msdn.microsoft.com/library/windows/desktop/aa378747(v=vs.85).aspx).
 
@@ -183,18 +184,19 @@ Certificate requirements are listed by versions of the Windows operating system.
 
 The smart card certificate has specific format requirements when it is used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
-| **Component**     | **Requirements for Windows 8.1, Windows 8, Windows 7, and Windows Vista**          | **Requirements for Windows XP**  |
-|--------------------------------------|--------------------------------|------|
-| CRL distribution point location      | Not required              | The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=http://server1.contoso.com/CertEnroll/caname.crl                   |
-| Key usage         | Digital signature         | Digital signature                |
-| Basic constraints | Not required              | \[Subject Type=End Entity, Path Length Constraint=None\] (Optional)    |
-| Enhanced key usage (EKU)             | The smart card sign-in object identifier is not required.<br><br>**Note**&nbsp;&nbsp;If an EKU is present, it must contain the smart card sign-in EKU. Certificates with no EKU can be used for sign-in. | -   Client Authentication (1.3.6.1.5.5.7.3.2)<br>The client authentication object identifier is required only if a certificate is used for SSL authentication.<br><br>- Smart Card Sign-in (1.3.6.1.4.1.311.20.2.2)   |
-| Subject alternative name             | E-mail ID is not required for smart card sign-in.               | Other Name: Principal Name=(UPN), for example:<br>UPN=user1@contoso.com<br>The UPN OtherName object identifier is 1.3.6.1.4.1.311.20.2.3.<br>The UPN OtherName value must be an ASN1-encoded UTF8 string.                |
-| Subject           | Not required              | Distinguished name of user. This field is a mandatory extension, but the population of this field is optional.                  |
-| Key exchange (AT\_KEYEXCHANGE field) | Not required for smart card sign-in certificates if a Group Policy setting is enabled. (By default, Group Policy settings are not enabled.) | Not required  |
-| CRL               | Not required              | Not required  |
-| UPN               | Not required              | Not required  |
-| Notes             | You can enable any certificate to be visible for the smart card credential provider.                  | There are two predefined types of private keys. These keys are Signature Only (AT\_SIGNATURE) and Key Exchange (AT\_KEYEXCHANGE). Smart card sign-in certificates must have a Key Exchange (AT\_KEYEXCHANGE) private key type. |
+
+|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, and Windows Vista**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=<http://server1.contoso.com/CertEnroll/caname.crl>             |
+|              Key usage               |                                                                                            Digital signature                                                                                             |                                                                                                       Digital signature                                                                                                        |
+|          Basic constraints           |                                                                                               Not required                                                                                               |                                                                              \[Subject Type=End Entity, Path Length Constraint=None\] (Optional)                                                                               |
+|       Enhanced key usage (EKU)       | The smart card sign-in object identifier is not required.<br><br>**Note**&nbsp;&nbsp;If an EKU is present, it must contain the smart card sign-in EKU. Certificates with no EKU can be used for sign-in. |      -   Client Authentication (1.3.6.1.5.5.7.3.2)<br>The client authentication object identifier is required only if a certificate is used for SSL authentication.<br><br>- Smart Card Sign-in (1.3.6.1.4.1.311.20.2.2)       |
+|       Subject alternative name       |                                                                            E-mail ID is not required for smart card sign-in.                                                                             |           Other Name: Principal Name=(UPN), for example:<br>UPN=user1@contoso.com<br>The UPN OtherName object identifier is 1.3.6.1.4.1.311.20.2.3.<br>The UPN OtherName value must be an ASN1-encoded UTF8 string.            |
+|               Subject                |                                                                                               Not required                                                                                               |                                                         Distinguished name of user. This field is a mandatory extension, but the population of this field is optional.                                                         |
+| Key exchange (AT\_KEYEXCHANGE field) |                               Not required for smart card sign-in certificates if a Group Policy setting is enabled. (By default, Group Policy settings are not enabled.)                                |                                                                                                          Not required                                                                                                          |
+|                 CRL                  |                                                                                               Not required                                                                                               |                                                                                                          Not required                                                                                                          |
+|                 UPN                  |                                                                                               Not required                                                                                               |                                                                                                          Not required                                                                                                          |
+|                Notes                 |                                                           You can enable any certificate to be visible for the smart card credential provider.                                                           | There are two predefined types of private keys. These keys are Signature Only (AT\_SIGNATURE) and Key Exchange (AT\_KEYEXCHANGE). Smart card sign-in certificates must have a Key Exchange (AT\_KEYEXCHANGE) private key type. |
 
 ### Client certificate mappings
 
@@ -268,7 +270,7 @@ For example, if Certificate1 has CN=CNName1, Certificate2 has CN=User1, and Cert
 
 ## Smart card sign-in across forests
 
-For account mapping to work across forests, particularly in cases where there is not enough information available on the certificate, the user might enter a hint in the form of a user name, such as *domain\\user*, or a fully qualified UPN such as *user@contoso.com*.
+For account mapping to work across forests, particularly in cases where there is not enough information available on the certificate, the user might enter a hint in the form of a user name, such as *domain\\user*, or a fully qualified UPN such as <em>user@contoso.com</em>.
 
 > **Note**&nbsp;&nbsp;For the hint field to appear during smart card sign-in, the **Allow user name hint** Group Policy setting (**X509HintsNeeded** registry key) must be enabled on the client.
 
@@ -284,19 +286,19 @@ Windows client computers attempt to request the OCSP responses and use them in t
 
 For sign-in to work in a smart card-based domain, the smart card certificate must meet the following conditions:
 
--   The KDC root certificate on the smart card must have an HTTP CRL distribution point listed in its certificate.
+- The KDC root certificate on the smart card must have an HTTP CRL distribution point listed in its certificate.
 
--   The smart card sign-in certificate must have the HTTP CRL distribution point listed in its certificate.
+- The smart card sign-in certificate must have the HTTP CRL distribution point listed in its certificate.
 
--   The CRL distribution point must have a valid CRL published and a delta CRL, if applicable, even if the CRL distribution point is empty.
+- The CRL distribution point must have a valid CRL published and a delta CRL, if applicable, even if the CRL distribution point is empty.
 
--   The smart card certificate must contain one of the following:
+- The smart card certificate must contain one of the following:
 
-    -   A subject field that contains the DNS domain name in the distinguished name. If it does not, resolution to an appropriate domain fails, so Remote Desktop Services and the domain sign-in with the smart card fail.
+  - A subject field that contains the DNS domain name in the distinguished name. If it does not, resolution to an appropriate domain fails, so Remote Desktop Services and the domain sign-in with the smart card fail.
 
-    -   A UPN where the domain name resolves to the actual domain. For example, if the domain name is Engineering.Corp.Contoso, the UPN is username@engineering.corp.contoso.com. If any part of the domain name is omitted, the Kerberos client cannot find the appropriate domain.
+  - A UPN where the domain name resolves to the actual domain. For example, if the domain name is Engineering.Corp.Contoso, the UPN is username@engineering.corp.contoso.com. If any part of the domain name is omitted, the Kerberos client cannot find the appropriate domain.
 
-Although the HTTP CRL distribution points are on by default in Windows Server 2008, subsequent versions of the Windows Server operating system do not include HTTP CRL distribution points. To allow smart card sign-in to a domain in these versions, do the following:
+Although the HTTP CRL distribution points are on by default in Windows Server 2008, subsequent versions of the Windows Server operating system do not include HTTP CRL distribution points. To allow smart card sign-in to a domain in these versions, do the following:
 
 1.  Enable HTTP CRL distribution points on the CA.
 

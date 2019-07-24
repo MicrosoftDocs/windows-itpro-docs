@@ -2,11 +2,13 @@
 title: Get product details
 description: The Get product details operation retrieves the product information from the Micosoft Store for Business for a specific application.
 ms.assetid: BC432EBA-CE5E-43BD-BD54-942774767286
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

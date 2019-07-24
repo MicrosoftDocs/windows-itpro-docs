@@ -2,13 +2,14 @@
 title: BitLocker overview and requirements FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -39,9 +40,9 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 For requirements, see [System requirements](bitlocker-overview.md#system-requirements).
 
-> [!NOTE]  
+> [!NOTE]
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
- 
+ 
 ## Why are two partitions required? Why does the system drive have to be so large?
 
 Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.
@@ -49,6 +50,11 @@ Two partitions are required to run BitLocker because pre-startup authentication 
 ## Which Trusted Platform Modules (TPMs) does BitLocker support?
 
 BitLocker supports TPM version 1.2 or higher. BitLocker support for TPM 2.0 requires Unified Extensible Firmware Interface (UEFI) for the device. 
+
+> [!NOTE]
+> TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
+
+> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
 ## How can I tell if a TPM is on my computer?
 

@@ -1,8 +1,11 @@
 ---
 title: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
 description: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
-author: jamiejdt
+author: levinec
 ms.assetid: c8989b01-1769-4e69-82b1-4aadb261d2d5
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,10 +23,10 @@ You can use WMI and PowerShell to manage Microsoft User Experience Virtualizatio
 
 1.  Stage the UE-V installer file in an accessible network share.
 
-    **Note**  
+    **Note**  
     Use AgentSetup.exe to deploy both 32-bit and 64-bit versions of the UE-V Agent. Windows Installer Files versions, AgentSetupx86.msi and AgentSetupx64.msi, are available for each architecture. To uninstall the UE-V Agent at a later time using the installation file, you must use the same file type.
 
-     
+
 
 2.  Use one of the following PowerShell commands to install the agent.
 
@@ -149,7 +152,7 @@ You can use WMI and PowerShell to manage Microsoft User Experience Virtualizatio
     </tbody>
     </table>
 
-     
+
 
 **How to export UE-V package settings and repair UE-V templates with PowerShell**
 
@@ -182,7 +185,7 @@ You can use WMI and PowerShell to manage Microsoft User Experience Virtualizatio
     </tbody>
     </table>
 
-     
+
 
 **How to configure the UE-V Agent with WMI**
 
@@ -262,13 +265,15 @@ You can use WMI and PowerShell to manage Microsoft User Experience Virtualizatio
     </tbody>
     </table>
 
-     
 
-    Upon configuration of the UE-V Agent with WMI and PowerShell, the defined configuration is stored in the registry in the following locations:
 
-    `\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent\Configuration`
+~~~
+Upon configuration of the UE-V Agent with WMI and PowerShell, the defined configuration is stored in the registry in the following locations:
 
-    `\HKEY_CURRENT_USER\SOFTWARE\Microsoft\UEV\Agent\Configuration`
+`\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent\Configuration`
+
+`\HKEY_CURRENT_USER\SOFTWARE\Microsoft\UEV\Agent\Configuration`
+~~~
 
 ## Related topics
 
@@ -277,9 +282,9 @@ You can use WMI and PowerShell to manage Microsoft User Experience Virtualizatio
 
 [Operations for UE-V 1.0](operations-for-ue-v-10.md)
 
- 
 
- 
+
+
 
 
 

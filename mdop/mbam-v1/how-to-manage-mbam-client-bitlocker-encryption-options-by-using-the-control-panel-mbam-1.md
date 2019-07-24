@@ -1,8 +1,11 @@
 ---
 title: How to Manage MBAM Client BitLocker Encryption Options by Using the Control Panel
 description: How to Manage MBAM Client BitLocker Encryption Options by Using the Control Panel
-author: jamiejdt
+author: msfttracyp
 ms.assetid: c08077e1-5529-468f-9370-c3b33fc258f3
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,7 +22,7 @@ A Microsoft BitLocker Administration and Monitoring (MBAM) control panel applica
 **Note**  
 For the BitLocker client, the Admin and Operational log files are located in Event Viewer, under **Application and Services Logs** / **Microsoft** / **Windows** / **BitLockerManagement**.
 
- 
+ 
 
 **To use the MBAM Client Control Panel**
 
@@ -38,9 +41,9 @@ For the BitLocker client, the Admin and Operational log files are located in Eve
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

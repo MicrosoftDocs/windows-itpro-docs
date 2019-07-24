@@ -1,4 +1,4 @@
-﻿---
+---
 title: Network access - Restrict clients allowed to make remote calls to SAM
 description: Security policy setting that controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database.
 ms.prod: w10
@@ -7,8 +7,11 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 ms.date: 09/17/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
@@ -70,9 +73,9 @@ This is the only option to configure this setting by using a user interface (UI)
 On computers that run earlier versions of Windows, you need to edit the registry setting directly or use Group Policy Preferences. 
 To avoid setting it manually in this case, you can configure the GPO itself on a computer that runs Windows Server 2016 or Windows 10, version 1607 or later and have it apply to all computers within the scope of the GPO because the same registry key exists on every computer after the corresponding KB is installed. 
 
-> [!NOTE] 
+> [!NOTE]
 > This policy is implemented similarly to other "Network access" policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. 
-
+> 
 > For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
 
 ## Default values
@@ -108,11 +111,11 @@ Audit only mode configures the SAMRPC protocol to do the access check against th
 ### Related events
 
 There are corresponding events that indicate when remote calls to the SAM are restricted, what accounts attempted to read from the SAM database, and more. The following workflow is recommended to identify applications that may be affected by restricting remote calls to SAM:
-1.	Dump event logs to a common share. 
-2.	Parse them with the [Events 16962 - 16969 Reader](https://gallery.technet.microsoft.com/Events-16962-16969-Reader-2eae5f1d) script. 
-3.	Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM.
-4.	Identify which security contexts are enumerating users or groups in the SAM database. 
-5.	Prioritize the callers, determine if they should be allowed or not, then include the allowed callers in the SDDL string.
+1. Dump event logs to a common share. 
+2. Parse them with the [Events 16962 - 16969 Reader](https://gallery.technet.microsoft.com/Events-16962-16969-Reader-2eae5f1d) script. 
+3. Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM.
+4. Identify which security contexts are enumerating users or groups in the SAM database. 
+5. Prioritize the callers, determine if they should be allowed or not, then include the allowed callers in the SDDL string.
 
 |Event ID|Event Message Text|Explanation |
 |---|---|---|
@@ -149,9 +152,9 @@ This section describes how an attacker might exploit a feature or its configurat
 ### Vulnerability	
 The SAMRPC protocol has a default security posture that makes it possible for low-privileged attackers to query a machine on the network for data that is critical to their further hacking and penetration plans. <br><br>
 The following example illustrates how an attacker might exploit remote SAM enumeration:
-1.	A low-privileged attacker gains a foothold on a network.
-2.	The attacker then queries all machines on the network to determine which ones have a highly privileged domain user configured as a local administrator on that machine. 
-3.	If the attacker can then find any other vulnerability on that machine that allows taking it over, the attacker can then squat on the machine waiting for the high-privileged user to logon and then steal or impersonate those credentials.
+1. A low-privileged attacker gains a foothold on a network.
+2. The attacker then queries all machines on the network to determine which ones have a highly privileged domain user configured as a local administrator on that machine. 
+3. If the attacker can then find any other vulnerability on that machine that allows taking it over, the attacker can then squat on the machine waiting for the high-privileged user to logon and then steal or impersonate those credentials.
 
 ### Countermeasure
 You can mitigate this vulnerability by enabling the **Network access: Restrict clients allowed to make remote calls** to SAM security policy setting and configuring the SDDL for only those accounts that are explicitly allowed access.

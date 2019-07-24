@@ -4,14 +4,15 @@ description: This section describes the HotSpot settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 12/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # HotSpot (Windows Configuration Designer reference)
 
-Do not use. Enterprise admins who want to configure settings for mobile hotspots should use [Policies > Wifi](#wcd-policies.md#wifi). Mobile operators should use the [Country and Operator Settings Asset (COSA) format](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/cosa-overview).
-
+Do not use. Enterprise admins who want to configure settings for mobile hotspots should use [Policies > Wifi](wcd-policies.md#wifi). Mobile operators should use the [Country and Operator Settings Asset (COSA) format](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/cosa-overview).

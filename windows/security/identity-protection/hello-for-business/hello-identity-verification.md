@@ -2,14 +2,15 @@
 title: Windows Hello for Business (Windows 10)
 description: Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. 
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
+ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -25,7 +26,7 @@ Windows Hello addresses the following problems with passwords:
 -   Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 -   Server breaches can expose symmetric network credentials (passwords).
 -   Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
--   Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
+-   Users can inadvertently expose their passwords due to [phishing attacks](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
 
 >[!div class="mx-tdBreakAll"]
 >| | | |
@@ -50,7 +51,7 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).</br>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later | Windows 10, version 1511 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema |
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level| Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
-| Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
+| Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
 | N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) (hybrid Azure AD joined clients),<br> and</br>Windows Server 2012 or later Network Device Enrollment Service (Azure AD joined) | N/A | Windows Server 2012 or later Network Device Enrollment Service |
 | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter |
@@ -67,8 +68,11 @@ The table shows the minimum requirements for each deployment.
 | Windows 10, version 1703 or later | Windows 10, version 1703 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema|
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
-| Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
+| Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
 | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) |
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
+
+>[!IMPORTANT]
+> For Windows Hello for Business deployment, if you have several domains, at least one Windows Server Domain Controller 2016 is required for each domain. For more information, see the [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).

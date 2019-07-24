@@ -2,12 +2,14 @@
 title: Network security Allow PKU2U authentication requests to this computer to use online identities (Windows 10)
 description: Describes the best practices, location, and values for the Network Security Allow PKU2U authentication requests to this computer to use online identities security policy setting.
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -29,7 +31,7 @@ Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Su
 When devices are configured to accept authentication requests by using online IDs, Negoexts.dll calls the PKU2U SSP on the computer that is used to log on. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer computers. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
 >**Note:**  The ability to link online IDs can be performed by anyone with an account that has standard user’s credentials through **Credential Manager**.
- 
+ 
 This policy is not configured by default on domain-joined devices. This would disallow the online identities to be able to authenticate to the domain-joined computers in Windows 7 and later.
 
 ### Possible values
@@ -64,7 +66,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings | Disabled| 
 | Member server effective default settings | Disabled| 
 | Effective GPO default settings on client computers | Disabled| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

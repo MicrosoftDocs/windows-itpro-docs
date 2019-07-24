@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5151(-): A more restrictive Windows Filtering Platform filter has blocked a packet.
@@ -49,7 +52,7 @@ There is no example of this event in this document.
 >
 > *Layer Name:%9*
 >
-> *Layer Run-Time ID:%10 *
+> *Layer Run-Time ID:%10*
 
 ***Required Server Roles:*** None.
 

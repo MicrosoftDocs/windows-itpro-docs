@@ -2,11 +2,14 @@
 title: Join Windows 10 Mobile to Azure Active Directory (Windows 10)
 description: Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE).
 ms.assetid: 955DD9EC-3519-4752-827E-79CEB1EC8D6B
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/21/2017
 ms.topic: article

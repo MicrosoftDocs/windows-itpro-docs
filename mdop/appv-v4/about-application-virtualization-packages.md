@@ -1,8 +1,11 @@
 ---
 title: About Application Virtualization Packages
 description: About Application Virtualization Packages
-author: jamiejdt
+author: dansimp
 ms.assetid: 69bd35c1-7af3-43db-931b-3074780aa926
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

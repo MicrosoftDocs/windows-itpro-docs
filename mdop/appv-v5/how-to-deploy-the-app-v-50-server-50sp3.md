@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the App-V 5.0 Server
 description: How to Deploy the App-V 5.0 Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 4f8f16af-7d74-42b4-84b8-b04ce668225d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,126 +33,126 @@ Use the following procedure to install the App-V 5.0 server. For information abo
 
 **To install the App-V 5.0 server**
 
-1.  Copy the App-V 5.0 server installation files to the computer on which you want to install it.
+1. Copy the App-V 5.0 server installation files to the computer on which you want to install it.
 
-2.  Start the App-V 5.0 server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
+2. Start the App-V 5.0 server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
 
-3.  Review and accept the license terms, and choose whether to enable Microsoft updates.
+3. Review and accept the license terms, and choose whether to enable Microsoft updates.
 
-4.  On the **Feature Selection** page, select all of the following components.
+4. On the **Feature Selection** page, select all of the following components.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Component</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Management server</p></td>
-    <td align="left"><p>Provides overall management functionality for the App-V infrastructure.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Management database</p></td>
-    <td align="left"><p>Facilitates database predeployments for App-V management.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Publishing server</p></td>
-    <td align="left"><p>Provides hosting and streaming functionality for virtual applications.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Reporting server</p></td>
-    <td align="left"><p>Provides App-V 5.0 reporting services.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Reporting database</p></td>
-    <td align="left"><p>Facilitates database predeployments for App-V reporting.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Component</th>
+   <th align="left">Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p>Management server</p></td>
+   <td align="left"><p>Provides overall management functionality for the App-V infrastructure.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>Management database</p></td>
+   <td align="left"><p>Facilitates database predeployments for App-V management.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>Publishing server</p></td>
+   <td align="left"><p>Provides hosting and streaming functionality for virtual applications.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>Reporting server</p></td>
+   <td align="left"><p>Provides App-V 5.0 reporting services.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p>Reporting database</p></td>
+   <td align="left"><p>Facilitates database predeployments for App-V reporting.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-5.  On the **Installation Location** page, accept the default location where the selected components will be installed, or change the location by typing a new path on the **Installation Location** line.
+5. On the **Installation Location** page, accept the default location where the selected components will be installed, or change the location by typing a new path on the **Installation Location** line.
 
-6.  On the initial **Create New Management Database** page, configure the **Microsoft SQL Server instance** and **Management Server database** by selecting the appropriate option below.
+6. On the initial **Create New Management Database** page, configure the **Microsoft SQL Server instance** and **Management Server database** by selecting the appropriate option below.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Method</th>
-    <th align="left">What you need to do</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>You are using a custom Microsoft SQL Server instance.</p></td>
-    <td align="left"><p>Select <strong>Use the custom instance</strong>, and type the name of the instance.</p>
-    <p>Use the format <strong>INSTANCENAME</strong>. The assumed installation location is the local computer.</p>
-    <p>Not supported: A server name using the format <strong>ServerName</strong>\<strong>INSTANCE</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>You are using a custom database name.</p></td>
-    <td align="left"><p>Select <strong>Custom configuration</strong> and type the database name.</p>
-    <p>The database name must be unique, or the installation will fail.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Method</th>
+   <th align="left">What you need to do</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p>You are using a custom Microsoft SQL Server instance.</p></td>
+   <td align="left"><p>Select <strong>Use the custom instance</strong>, and type the name of the instance.</p>
+   <p>Use the format <strong>INSTANCENAME</strong>. The assumed installation location is the local computer.</p>
+   <p>Not supported: A server name using the format <strong>ServerName</strong>&lt;strong&gt;INSTANCE</strong>.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>You are using a custom database name.</p></td>
+   <td align="left"><p>Select <strong>Custom configuration</strong> and type the database name.</p>
+   <p>The database name must be unique, or the installation will fail.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-7.  On the **Configure** page, accept the default value **Use this local computer**.
+7. On the **Configure** page, accept the default value **Use this local computer**.
 
-    **Note**  
-    If you are installing the Management server and Management database side by side, some options on this page are not available. In this case, the appropriate options are selected by default and cannot be changed.
+   **Note**  
+   If you are installing the Management server and Management database side by side, some options on this page are not available. In this case, the appropriate options are selected by default and cannot be changed.
 
-     
+     
 
-8.  On the initial **Create New Reporting Database** page, configure the **Microsoft SQL Server instance** and **Reporting Server database** by selecting the appropriate option below.
+8. On the initial **Create New Reporting Database** page, configure the **Microsoft SQL Server instance** and **Reporting Server database** by selecting the appropriate option below.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Method</th>
-    <th align="left">What you need to do</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>You are using a custom Microsoft SQL Server instance.</p></td>
-    <td align="left"><p>Select <strong>Use the custom instance</strong>, and type the name of the instance.</p>
-    <p>Use the format <strong>INSTANCENAME</strong>. The assumed installation location is the local computer.</p>
-    <p>Not supported: A server name using the format <strong>ServerName</strong>\<strong>INSTANCE</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>You are using a custom database name.</p></td>
-    <td align="left"><p>Select <strong>Custom configuration</strong> and type the database name.</p>
-    <p>The database name must be unique, or the installation will fail.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Method</th>
+   <th align="left">What you need to do</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p>You are using a custom Microsoft SQL Server instance.</p></td>
+   <td align="left"><p>Select <strong>Use the custom instance</strong>, and type the name of the instance.</p>
+   <p>Use the format <strong>INSTANCENAME</strong>. The assumed installation location is the local computer.</p>
+   <p>Not supported: A server name using the format <strong>ServerName</strong>&lt;strong&gt;INSTANCE</strong>.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p>You are using a custom database name.</p></td>
+   <td align="left"><p>Select <strong>Custom configuration</strong> and type the database name.</p>
+   <p>The database name must be unique, or the installation will fail.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-9.  On the **Configure** page, accept the default value: **Use this local computer**.
+9. On the **Configure** page, accept the default value: **Use this local computer**.
 
-    **Note**  
-    If you are installing the Management server and Management database side by side, some options on this page are not available. In this case, the appropriate options are selected by default and cannot be changed.
+   **Note**  
+   If you are installing the Management server and Management database side by side, some options on this page are not available. In this case, the appropriate options are selected by default and cannot be changed.
 
-     
+     
 
 10. On the **Configure** (Management Server Configuration) page, specify the following:
 
@@ -182,7 +185,7 @@ Use the following procedure to install the App-V 5.0 server. For information abo
     </tbody>
     </table>
 
-     
+     
 
 11. On the **Configure** **Publishing Server Configuration** page, specify the following:
 
@@ -200,7 +203,7 @@ Use the following procedure to install the App-V 5.0 server. For information abo
     <tbody>
     <tr class="odd">
     <td align="left"><p>Specify the URL for the management service.</p></td>
-    <td align="left"><p>Example: http://localhost:12345</p></td>
+    <td align="left"><p>Example: <a href="http://localhost:12345" data-raw-source="http://localhost:12345">http://localhost:12345</a></p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><strong>Website name</strong>: Specify the custom name that will be used to run the publishing service.</p></td>
@@ -214,7 +217,7 @@ Use the following procedure to install the App-V 5.0 server. For information abo
     </tbody>
     </table>
 
-     
+     
 
 12. On the **Reporting Server** page, specify the following:
 
@@ -242,7 +245,7 @@ Use the following procedure to install the App-V 5.0 server. For information abo
     </tbody>
     </table>
 
-     
+     
 
 13. To start the installation, click **Install** on the **Ready** page, and then click **Close** on the **Finished** page.
 
@@ -252,7 +255,7 @@ Use the following procedure to install the App-V 5.0 server. For information abo
 
     Example: **http://localhost:12345/console.html**. If the installation succeeded, the App-V Management console is displayed with no errors.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
@@ -267,9 +270,9 @@ Use the following procedure to install the App-V 5.0 server. For information abo
 
 [How to Enable Reporting on the App-V 5.0 Client by Using PowerShell](how-to-enable-reporting-on-the-app-v-50-client-by-using-powershell.md)
 
- 
+ 
 
- 
+ 
 
 
 

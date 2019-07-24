@@ -1,8 +1,11 @@
 ---
 title: Preparing your Environment for MBAM 2.5
 description: Preparing your Environment for MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 7552ba08-9dbf-40cd-8920-203d733fd242
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

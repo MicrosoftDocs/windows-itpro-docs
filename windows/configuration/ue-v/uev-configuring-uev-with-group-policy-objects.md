@@ -1,12 +1,15 @@
 ---
 title: Configuring UE-V with Group Policy Objects
 description: Configuring UE-V with Group Policy Objects
-author: MaggiePucciEvans
+author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: trudyha
 ms.topic: article
 ---
 
@@ -69,13 +72,13 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>Settings storage path</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This Group Policy setting configures where the user settings are to be stored.</p></td>
-<td align="left"><p>Enter a Universal Naming Convention (UNC) path and variables such as \\Server\SettingsShare\%username%.</p></td>
+<td align="left"><p>Enter a Universal Naming Convention (UNC) path and variables such as \Server\SettingsShare%username%.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings template catalog path</p></td>
 <td align="left"><p>Computers Only</p></td>
 <td align="left"><p>This Group Policy setting configures where custom settings location templates are stored. This policy setting also configures whether the catalog is to be used to replace the default Microsoft templates that are installed with the UE-V service.</p></td>
-<td align="left"><p>Enter a Universal Naming Convention (UNC) path such as \\Server\TemplateShare or a folder location on the computer.</p>
+<td align="left"><p>Enter a Universal Naming Convention (UNC) path such as \Server\TemplateShare or a folder location on the computer.</p>
 <p>Select the check box to replace the default Microsoft templates.</p></td>
 </tr>
 <tr class="odd">
@@ -106,23 +109,23 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>Use User Experience Virtualization (UE-V)</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This Group Policy setting lets you enable or disable User Experience Virtualization (UE-V).</p></td>
-<td align="left"><p>This setting only has an effect for UE-V 2.x and earlier. For UE-V in Windows 10, version 1607, use the **Enable UE-V** setting.</p></td>
+<td align="left"><p>This setting only has an effect for UE-V 2.x and earlier. For UE-V in Windows 10, version 1607, use the <strong>Enable UE-V</strong> setting.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enable UE-V</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. Reboot is needed for enable to take effect.</p></td>
-<td align="left"><p>This setting only has an effect for UE-V in Windows 10, version 1607. For UE-V 2.x and earlier, choose the **Use User Experience Virtualization (UE-V)** setting.</p></td>
+<td align="left"><p>This setting only has an effect for UE-V in Windows 10, version 1607. For UE-V 2.x and earlier, choose the <strong>Use User Experience Virtualization (UE-V)</strong> setting.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 In addition, Group Policy settings are available for many desktop applications and Windows apps. You can use these settings to enable or disable settings synchronization for specific applications.
 
- 
+ 
 
 **Windows App Group Policy settings**
 
@@ -163,7 +166,7 @@ In addition, Group Policy settings are available for many desktop applications a
 </tbody>
 </table>
 
- 
+ 
 
 For more information about synchronizing Windows apps, see [Windows App List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 

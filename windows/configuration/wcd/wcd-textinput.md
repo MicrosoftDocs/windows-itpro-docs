@@ -4,11 +4,13 @@ description: This section describes the TextInput settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/15/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TextInput (Windows Configuration Designer reference)
@@ -39,7 +41,7 @@ PreEnabledKeyboard must be entered once for each keyboard you want to pre-enable
 
 The following table shows the values that you can use for the Locale code.Locale value part of the setting name.
 
->[!NOTE]  
+>[!NOTE]
 >The keyboards for some locales require additional language model files: am-ET, bn-IN, gu-IN, hi-IN, ja-JP, kn-IN, ko-KR, ml-IN, mr-IN, my-MM, or-IN, pa-IN, si-LK, ta-IN, te-IN, zh-TW, zh-CN, and zh-HK. 
 
 

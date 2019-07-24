@@ -4,10 +4,12 @@ description: WSUS allows companies to defer, selectively approve, choose when de
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -48,11 +50,11 @@ With Windows 10, quality updates will be larger than traditional Windows Updates
  
  **To configure WSUS to download Express Update Files**
  
-1.	Open the WSUS Administration Console.
+1. Open the WSUS Administration Console.
  
-2.	In the navigation pane, go to *Your_Server*\\**Options**.
+2. In the navigation pane, go to *Your_Server*\\**Options**.
 
-3.	In the **Options** section, click **Update Files and Languages**.
+3. In the **Options** section, click **Update Files and Languages**.
 
     ![Example of UI](images/waas-wsus-fig1.png)
     
@@ -69,41 +71,41 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 **To configure the Configure Automatic Updates and Intranet Microsoft Update Service Location Group Policy settings for your environment**
 
-1.	Open GPMC.
+1. Open GPMC.
 
-2.	Expand Forest\Domains\\*Your_Domain*. 
+2. Expand Forest\Domains\\*Your_Domain*. 
 
-3.	Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
+3. Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
 
-    ![Example of UI](images/waas-wsus-fig3.png) 
+   ![Example of UI](images/waas-wsus-fig3.png) 
     
-    >[!NOTE]
-    >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
+   >[!NOTE]
+   >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
     
-4.	In the **New GPO** dialog box, name the new GPO **WSUS – Auto Updates and Intranet Update Service Location**.
+4. In the **New GPO** dialog box, name the new GPO **WSUS – Auto Updates and Intranet Update Service Location**.
 
-5.	Right-click the **WSUS – Auto Updates and Intranet Update Service Location** GPO, and then click **Edit**.
+5. Right-click the **WSUS – Auto Updates and Intranet Update Service Location** GPO, and then click **Edit**.
 
-6.	In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
+6. In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
 
-7.	Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
+7. Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
 
-    ![Example of UI](images/waas-wsus-fig4.png)
+   ![Example of UI](images/waas-wsus-fig4.png)
     
-8.  In the **Configure Automatic Updates** dialog box, select **Enable**.
+8. In the **Configure Automatic Updates** dialog box, select **Enable**.
 
-9.	Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
+9. Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
 
-    ![Example of UI](images/waas-wsus-fig5.png)
+   ![Example of UI](images/waas-wsus-fig5.png)
     
-    >[!NOTE]
-    ?There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
+   > [!NOTE]
+   > ?There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
     
-9. Right-click the **Specify intranet Microsoft update service location** setting, and then click **Edit**. 
+10. Right-click the **Specify intranet Microsoft update service location** setting, and then click **Edit**. 
 
-9. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
+11. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
 
-12.	Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type **http://Your_WSUS_Server_FQDN:PortNumber**, and then click **OK**.
+12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type <strong>http://Your_WSUS_Server_FQDN:PortNumber</strong>, and then click **OK**.
 
     >[!NOTE]
     >The URL `http://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
@@ -124,15 +126,15 @@ You can use computer groups to target a subset of devices that have specific qua
 
 **To create computer groups in the WSUS Administration Console**
 
-1.	Open the WSUS Administration Console. 
+1. Open the WSUS Administration Console. 
 
-2.	Go to *Server_Name*\Computers\All Computers, and then click **Add Computer Group**. 
+2. Go to *Server_Name*\Computers\All Computers, and then click **Add Computer Group**. 
 
     ![Example of UI](images/waas-wsus-fig7.png)
     
 3. Type **Ring 2 Pilot Business Users** for the name, and then click **Add**.
 
-4.	Repeat these steps for the **Ring 3 Broad IT** and **Ring 4 Broad Business Users** groups. When you’re finished, there should be three deployment ring groups.
+4. Repeat these steps for the **Ring 3 Broad IT** and **Ring 4 Broad Business Users** groups. When you’re finished, there should be three deployment ring groups.
 
 Now that the groups have been created, add the computers to the computer groups that align with the desired deployment rings. You can do this through [Group Policy](#wsus-gp) or manually by using the [WSUS Administration Console](#wsus-admin).
 
@@ -149,15 +151,15 @@ When new computers communicate with WSUS, they appear in the **Unassigned Comput
 
 **To assign computers manually**
 
-1.	In the WSUS Administration Console, go to *Server_Name*\Computers\All Computers\Unassigned Computers.
+1. In the WSUS Administration Console, go to *Server_Name*\Computers\All Computers\Unassigned Computers.
 
     Here, you see the new computers that have received the GPO you created in the previous section and started communicating with WSUS. This example has only two computers; depending on how broadly you deployed your policy, you will likely have many computers here.
 
-2.	Select both computers, right-click the selection, and then click **Change Membership**.
+2. Select both computers, right-click the selection, and then click **Change Membership**.
 
     ![Example of UI](images/waas-wsus-fig8.png)
 
-3.	In the **Set Computer Group Membership** dialog box, select the **Ring 2 Pilot Business Users** deployment ring, and then click **OK**.
+3. In the **Set Computer Group Membership** dialog box, select the **Ring 2 Pilot Business Users** deployment ring, and then click **OK**.
 
     Because they were assigned to a group, the computers are no longer in the **Unassigned Computers** group. If you select the **Ring 2 Pilot Business Users** computer group, you will see both computers there.
 
@@ -175,7 +177,7 @@ Another way to add multiple computers to a deployment ring in the WSUS Administr
 
     ![Example of UI](images/waas-wsus-fig9.png)
     
-4.	Select the **Ring 3 Broad IT** deployment ring, and then click **OK**.
+4. Select the **Ring 3 Broad IT** deployment ring, and then click **OK**.
 
 You can now see these computers in the **Ring 3 Broad IT** computer group.
 
@@ -187,11 +189,11 @@ The WSUS Administration Console provides a friendly interface from which you can
 
 **To configure WSUS to allow client-side targeting from Group Policy**
 
-1.	Open the WSUS Administration Console, and go to *Server_Name*\Options, and then click **Computers**.
+1. Open the WSUS Administration Console, and go to *Server_Name*\Options, and then click **Computers**.
 
      ![Example of UI](images/waas-wsus-fig10.png)
      
-2.	In the **Computers** dialog box, select **Use Group Policy or registry settings on computers**, and then click **OK**.
+2. In the **Computers** dialog box, select **Use Group Policy or registry settings on computers**, and then click **OK**.
 
     >[!NOTE]
     >This option is exclusively either-or. When you enable WSUS to use Group Policy for group assignment, you can no longer manually add computers through the WSUS Administration Console until you change the option back. 
@@ -203,39 +205,39 @@ Now that WSUS is ready for client-side targeting, complete the following steps t
 >[!TIP]
 >When using client-side targeting, consider giving security groups the same names as your deployment rings. Doing so simplifies the policy-creation process and helps ensure that you don’t add computers to the incorrect rings.
 
-1.	Open GPMC.
+1. Open GPMC.
 
-2.	Expand Forest\Domains\\*Your_Domain*.
+2. Expand Forest\Domains\\*Your_Domain*.
 
-3.	Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
+3. Right-click *Your_Domain*, and then click **Create a GPO in this domain, and Link it here**.
 
-4.	In the **New GPO** dialog box, type **WSUS – Client Targeting – Ring 4 Broad Business Users** for the name of the new GPO.
+4. In the **New GPO** dialog box, type **WSUS – Client Targeting – Ring 4 Broad Business Users** for the name of the new GPO.
 
-5.	Right-click the **WSUS – Client Targeting – Ring 4 Broad Business Users** GPO, and then click **Edit**.
+5. Right-click the **WSUS – Client Targeting – Ring 4 Broad Business Users** GPO, and then click **Edit**.
 
     ![Example of UI](images/waas-wsus-fig11.png)
     
-6.	In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
+6. In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
 
-7.	Right-click **Enable client-side targeting**, and then click **Edit**.
+7. Right-click **Enable client-side targeting**, and then click **Edit**.
 
-8.	In the **Enable client-side targeting** dialog box, select **Enable**.
+8. In the **Enable client-side targeting** dialog box, select **Enable**.
 
-9.	In the **Target group name for this computer** box, type **Ring 4 Broad Business Users**. This is the name of the deployment ring in WSUS to which these computers will be added.
+9. In the **Target group name for this computer** box, type **Ring 4 Broad Business Users**. This is the name of the deployment ring in WSUS to which these computers will be added.
 
     ![Example of UI](images/waas-wsus-fig12.png)
 
-10.	Close the Group Policy Management Editor.
+10. Close the Group Policy Management Editor.
 
 Now you’re ready to deploy this GPO to the correct computer security group for the **Ring 4 Broad Business Users** deployment ring. 
 
 **To scope the GPO to a group**
 
-1.	In GPMC, select the **WSUS – Client Targeting – Ring 4 Broad Business Users** policy.
+1. In GPMC, select the **WSUS – Client Targeting – Ring 4 Broad Business Users** policy.
 
-2.	Click the **Scope** tab.
+2. Click the **Scope** tab.
 
-3.	Under **Security Filtering**, remove the default **AUTHENTICATED USERS** security group, and then add the **Ring 4 Broad Business Users** group.
+3. Under **Security Filtering**, remove the default **AUTHENTICATED USERS** security group, and then add the **Ring 4 Broad Business Users** group.
 
     ![Example of UI](images/waas-wsus-fig13.png)
     
@@ -246,33 +248,33 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they’re available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it.
+>WSUS respects the client’s servicing branch. If you approve a feature update while it is still Current Branch (CB), WSUS will install the update only on PCs that are in the CB servicing branch. When Microsoft releases the build for Current Branch for Business (CBB), the PCs in the CBB servicing branch will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
 
 **To configure an Automatic Approval rule for Windows 10 feature updates and approve them for the Ring 3 Broad IT deployment ring**
 
-1.	In the WSUS Administration Console, go to Update Services\\*Server_Name*\Options, and then select **Automatic Approvals**.
+1. In the WSUS Administration Console, go to Update Services\\*Server_Name*\Options, and then select **Automatic Approvals**.
 
-2.	On the **Update Rules** tab, click **New Rule**.
+2. On the **Update Rules** tab, click **New Rule**.
 
-3.	In the **Add Rule** dialog box, select the **When an update is in a specific classification**, **When an update is in a specific product**, and **Set a deadline for the approval** check boxes.
+3. In the **Add Rule** dialog box, select the **When an update is in a specific classification**, **When an update is in a specific product**, and **Set a deadline for the approval** check boxes.
 
      ![Example of UI](images/waas-wsus-fig14.png)
      
-4.	In the **Edit the properties** area, select **any classification**. Clear everything except **Upgrades**, and then click **OK**.
+4. In the **Edit the properties** area, select **any classification**. Clear everything except **Upgrades**, and then click **OK**.
 
-5.	In the **Edit the properties area**, click the **any product** link. Clear all check boxes except **Windows 10**, and then click **OK**.
+5. In the **Edit the properties area**, click the **any product** link. Clear all check boxes except **Windows 10**, and then click **OK**.
 
     Windows 10 is under All Products\Microsoft\Windows.
     
-6.	In the **Edit the properties** area, click the **all computers** link. Clear all the computer group check boxes except **Ring 3 Broad IT**, and then click **OK**.
+6. In the **Edit the properties** area, click the **all computers** link. Clear all the computer group check boxes except **Ring 3 Broad IT**, and then click **OK**.
 
-7.	Leave the deadline set for **7 days after the approval at 3:00 AM**.
+7. Leave the deadline set for **7 days after the approval at 3:00 AM**.
 
-8.	In the **Step 3: Specify a name** box, type **Windows 10 Upgrade Auto-approval for Ring 3 Broad IT**, and then click **OK**.
+8. In the **Step 3: Specify a name** box, type **Windows 10 Upgrade Auto-approval for Ring 3 Broad IT**, and then click **OK**.
 
     ![Example of UI](images/waas-wsus-fig15.png)
     
-9.	In the **Automatic Approvals** dialog box, click **OK**.
+9. In the **Automatic Approvals** dialog box, click **OK**.
 
     >[!NOTE]
     >WSUS does not honor any existing month/week/day deferral settings for CB or CBB. That said, if you’re using Windows Update for Business for a computer for which WSUS is also managing updates, when WSUS approves the update, it will be installed on the computer regardless of whether you configured Group Policy to wait.
@@ -287,41 +289,41 @@ You can manually approve updates and set deadlines for installation within the W
 
 1.	 In the WSUS Administration Console, go to Update Services\\*Server_Name*\Updates. In the **Action** pane, click **New Update View**.
 
-2.	In the **Add Update View** dialog box, select **Updates are in a specific classification** and **Updates are for a specific product**.
+2. In the **Add Update View** dialog box, select **Updates are in a specific classification** and **Updates are for a specific product**.
 
-3.	Under **Step 2: Edit the properties**, click **any classification**. Clear all check boxes except **Upgrades**, and then click **OK**.
+3. Under **Step 2: Edit the properties**, click **any classification**. Clear all check boxes except **Upgrades**, and then click **OK**.
 
-4.	Under **Step 2: Edit the properties**, click **any product**. Clear all check boxes except **Windows 10**, and then click **OK**.
+4. Under **Step 2: Edit the properties**, click **any product**. Clear all check boxes except **Windows 10**, and then click **OK**.
 
     Windows 10 is under All Products\Microsoft\Windows.
     
-5.	In the **Step 3: Specify a name** box, type **All Windows 10 Upgrades**, and then click **OK**.
+5. In the **Step 3: Specify a name** box, type **All Windows 10 Upgrades**, and then click **OK**.
 
      ![Example of UI](images/waas-wsus-fig16.png)
 
 Now that you have the All Windows 10 Upgrades view, complete the following steps to manually approve an update for the **Ring 4 Broad Business Users** deployment ring:
 
-1.	In the WSUS Administration Console, go to Update Services\\*Server_Name*\Updates\All Windows 10 Upgrades.
+1. In the WSUS Administration Console, go to Update Services\\*Server_Name*\Updates\All Windows 10 Upgrades.
 
-2.	Right-click the feature update you want to deploy, and then click **Approve**.
+2. Right-click the feature update you want to deploy, and then click **Approve**.
 
       ![Example of UI](images/waas-wsus-fig17.png)  
       
-3.	In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, select **Approved for Install**.
+3. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, select **Approved for Install**.
 
       ![Example of UI](images/waas-wsus-fig18.png) 
       
-4.	In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, click **Deadline**, click **One Week**, and then click **OK**. 
+4. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, click **Deadline**, click **One Week**, and then click **OK**. 
 
       ![Example of UI](images/waas-wsus-fig19.png) 
       
-5.	If the **Microsoft Software License Terms** dialog box opens, click **Accept**.
+5. If the **Microsoft Software License Terms** dialog box opens, click **Accept**.
 
     If the deployment is successful, you should receive a successful progress report.
     
     ![Example of UI](images/waas-wsus-fig20.png) 
 
-6.	In the **Approval Progress** dialog box, click **Close**.
+6. In the **Approval Progress** dialog box, click **Close**.
 
 </br>
 

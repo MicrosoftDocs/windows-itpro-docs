@@ -1,8 +1,11 @@
 ---
 title: Create New Package Wizard (AppV 4.6 SP1)
 description: Create New Package Wizard (AppV 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: 1f73d044-b364-4c95-8ae1-daedd316d87e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

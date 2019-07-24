@@ -1,8 +1,11 @@
 ---
 title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-author: jamiejdt
+author: msfttracyp
 ms.assetid: c77e6662-7a18-4da1-8da8-b58068b65fa1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +33,7 @@ Use the following procedure to view and configure default package extensions.
 
 5.  To edit other application extensions, modify the configuration file and click **Import and Overwrite this Configuration**. Select the modified file and click **Open**. In the dialog box, click **Overwrite** to complete the process.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

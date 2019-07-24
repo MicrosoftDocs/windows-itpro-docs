@@ -1,8 +1,11 @@
 ---
 title: Security Considerations for UE-V 2.x
 description: Security Considerations for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 9d5c3cae-9fcb-4dea-bd67-741b3dea63be
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +25,7 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 **Important**  
 When you create the settings storage share, limit the share access to users who require access.
 
- 
+ 
 
 Because settings packages might contain personal information, you should take care to protect them as well as possible. In general, do the following:
 
@@ -55,7 +58,7 @@ Because settings packages might contain personal information, you should take ca
         | Everyone | No permissions |
         | Domain computers | Read permission Levels |
         | Administrators | Read/write permission levels |
-         
+         
     4.  Set the following NTFS permissions for the settings template catalog folder.
 
         | User account | Recommended permissions | Apply to |
@@ -110,7 +113,7 @@ Additional security can be configured when a Windows Server is used for the sett
 
 When this configuration setting is in place, the UE-V Agent verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V Agent does not grant access to the folder.
 
- 
+ 
 
 If you must create folders for the users, ensure that you have the correct permissions set.
 
@@ -130,9 +133,9 @@ If you redirect UE-V settings to a user’s home directory or a custom Active Di
 
 [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

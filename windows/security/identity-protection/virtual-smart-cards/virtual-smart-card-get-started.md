@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
+ms.reviewer: 
 ---
 
 # Get Started with Virtual Smart Cards: Walkthrough Guide
@@ -57,65 +58,65 @@ On your domain server, you need to create a template for the certificate that yo
 
 ### To create the certificate template
 
-1.  On your server, open the Microsoft Management Console (MMC). One way to do this is to type **mmc.exe** from the **Start** menu, right-click **mmc.exe**, and click **Run as administrator**.
+1. On your server, open the Microsoft Management Console (MMC). One way to do this is to type **mmc.exe** from the **Start** menu, right-click **mmc.exe**, and click **Run as administrator**.
 
-2.  Click **File**, and then click **Add/Remove Snap-in**.
+2. Click **File**, and then click **Add/Remove Snap-in**.
 
-    ![Add or remove snap-in](images/vsc-02-mmc-add-snap-in.png)
+   ![Add or remove snap-in](images/vsc-02-mmc-add-snap-in.png)
 
-3.  In the available snap-ins list, click **Certificate Templates**, and then click **Add**.
+3. In the available snap-ins list, click **Certificate Templates**, and then click **Add**.
 
-    ![Add Certificate Templates snap-in](images/vsc-03-add-certificate-templates-snap-in.png)
+   ![Add Certificate Templates snap-in](images/vsc-03-add-certificate-templates-snap-in.png)
 
-4.  Certificate Templates is now located under **Console Root** in the MMC. Double-click it to view all the available certificate templates.
+4. Certificate Templates is now located under **Console Root** in the MMC. Double-click it to view all the available certificate templates.
 
-5.  Right-click the **Smartcard Logon** template, and click **Duplicate Template**.
+5. Right-click the **Smartcard Logon** template, and click **Duplicate Template**.
 
-    ![Duplicating the Smartcard Logon template](images/vsc-04-right-click-smartcard-logon-template.png)
+   ![Duplicating the Smartcard Logon template](images/vsc-04-right-click-smartcard-logon-template.png)
 
-6.  On the **Compatibility** tab, under **Certification Authority**, review the selection, and change it if needed.
+6. On the **Compatibility** tab, under **Certification Authority**, review the selection, and change it if needed.
 
-    ![Compatibility tab, certification authority setting](images/vsc-05-certificate-template-compatibility.png)
+   ![Compatibility tab, certification authority setting](images/vsc-05-certificate-template-compatibility.png)
 
-7.  On the **General** tab:
+7. On the **General** tab:
 
-    1.  Specify a name, such as **TPM Virtual Smart Card Logon**.
+   1.  Specify a name, such as **TPM Virtual Smart Card Logon**.
 
-    2.  Set the validity period to the desired value.
+   2.  Set the validity period to the desired value.
 
-8.  On the **Request Handling** tab:
+8. On the **Request Handling** tab:
 
-    1.  Set the **Purpose** to **Signature and smartcard logon**.
+   1.  Set the **Purpose** to **Signature and smartcard logon**.
 
-    2.  Click **Prompt the user during enrollment**.
+   2.  Click **Prompt the user during enrollment**.
 
-9.  On the **Cryptography** tab:
+9. On the **Cryptography** tab:
 
-    1.  Set the minimum key size to 2048.
+   1.  Set the minimum key size to 2048.
 
-    2.  Click **Requests must use one of the following providers**, and then select **Microsoft Base Smart Card Crypto Provider**.
+   2.  Click **Requests must use one of the following providers**, and then select **Microsoft Base Smart Card Crypto Provider**.
 
-10.  On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated users** group, and then select **Enroll** permissions for them.
+10. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated users** group, and then select **Enroll** permissions for them.
 
-11.  Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
+11. Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
 
-12.  Select **File**, then click **Add/Remove Snap-in** to add the Certification Authority snap-in to your MMC console. When asked which computer you want to manage, select the computer on which the CA is located, probably **Local Computer**.
+12. Select **File**, then click **Add/Remove Snap-in** to add the Certification Authority snap-in to your MMC console. When asked which computer you want to manage, select the computer on which the CA is located, probably **Local Computer**.
 
     ![Add Certification Authority snap-in](images/vsc-06-add-certification-authority-snap-in.png)
 
-13.  In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list.
+13. In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list.
 
-14.  Right-click **Certificate Templates**, click **New**, and then click **Certificate Template to Issue**.
+14. Right-click **Certificate Templates**, click **New**, and then click **Certificate Template to Issue**.
 
     ![Right-click menu for Certificate Templates](images/vsc-07-right-click-certificate-templates.png)
 
-15.  From the list, select the new template that you just created (**TPM Virtual Smart Card Logon**), and then click **OK**.
+15. From the list, select the new template that you just created (**TPM Virtual Smart Card Logon**), and then click **OK**.
 
     > **Note**&nbsp;&nbsp;It can take some time for your template to replicate to all servers and become available in this list.
 
     ![Selecting a certificate template](images/vsc-08-enable-certificate-template.png)
 
-16.  After the template replicates, in the MMC, right-click in the Certification Authority list, click **All Tasks**, and then click **Stop Service**. Then, right-click the name of the CA again, click **All Tasks**, and then click **Start Service**.
+16. After the template replicates, in the MMC, right-click in the Certification Authority list, click **All Tasks**, and then click **Stop Service**. Then, right-click the name of the CA again, click **All Tasks**, and then click **Start Service**.
 
     ![Stopping and starting the service](images/vsc-09-stop-service-start-service.png)
 

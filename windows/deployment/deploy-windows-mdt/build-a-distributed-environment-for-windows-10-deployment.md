@@ -2,6 +2,9 @@
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
 description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: replication, replicate, deploy, configure, remote
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -32,7 +34,7 @@ Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be do
 
 **Note**  
 Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
- 
+ 
 ### Linked deployment shares in MDT
 
 LDS is a built-in feature in MDT for replicating content. However, LDS works best with strong connections such as LAN connections with low latency. For most WAN links, DFS-R is the better option.
@@ -83,75 +85,75 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 ### Configure the deployment share
 
 When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT, that can be done by using the DefaultGateway property.
-1.  On MDT01, using Notepad, navigate to the **E:\\MDTProduction\\Control** folder and modify the Boostrap.ini file to look like this:
+1. On MDT01, using Notepad, navigate to the **E:\\MDTProduction\\Control** folder and modify the Boostrap.ini file to look like this:
 
-    ``` syntax
-    [Settings]
-    Priority=DefaultGateway, Default
-    [DefaultGateway]
-    192.168.1.1=NewYork
-    192.168.2.1=Stockholm
-    [NewYork]
-    DeployRoot=\\MDT01\MDTProduction$
-    [Stockholm]
-    DeployRoot=\\MDT02\MDTProduction$
-    [Default]
-    UserDomain=CONTOSO
-    UserID=MDT_BA
-    SkipBDDWelcome=YES
-    ```
-    **Note**  
-    The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
-     
-2.  Save the Bootstrap.ini file.
-3.  Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**.
+   ```ini
+   [Settings]
+   Priority=DefaultGateway, Default
+   [DefaultGateway]
+   192.168.1.1=NewYork
+   192.168.2.1=Stockholm
+   [NewYork]
+   DeployRoot=\\MDT01\MDTProduction$
+   [Stockholm]
+   DeployRoot=\\MDT02\MDTProduction$
+   [Default]
+   UserDomain=CONTOSO
+   UserID=MDT_BA
+   SkipBDDWelcome=YES
+   ```
+   **Note**  
+   The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
+     
+2. Save the Bootstrap.ini file.
+3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**.
 
-    ![figure 4](../images/mdt-10-fig04.png)
+   ![figure 4](../images/mdt-10-fig04.png)
 
-    Figure 4. Updating the MDT Production deployment share.
+   Figure 4. Updating the MDT Production deployment share.
 
-4.  Use the default settings for the Update Deployment Share Wizard.
-5.  After the update is complete, use the Windows Deployment Services console. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
+4. Use the default settings for the Update Deployment Share Wizard.
+5. After the update is complete, use the Windows Deployment Services console. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
 
-    ![figure 5](../images/mdt-10-fig05.png)
+   ![figure 5](../images/mdt-10-fig05.png)
 
-    Figure 5. Replacing the updated boot image in WDS.
+   Figure 5. Replacing the updated boot image in WDS.
 
-6.  Browse and select the **E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
-## <a href="" id="sec03"></a>Replicate the content
-Once the MDT01 and MDT02 servers are prepared, you are ready to configure the actual replication.
-### Create the replication group
-1.  On MDT01, using DFS Management, right-click **Replication**, and select **New Replication Group**.
-2.  On the **Replication Group Type** page, select **Multipurpose replication group**, and click **Next**.
-3.  On the **Name and Domain** page, assign the **MDTProduction** name, and click **Next**.
-4.  On the **Replication Group Members** page, click **Add**, add **MDT01** and **MDT02**, and then click **Next**.
+6. Browse and select the **E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
+   ## <a href="" id="sec03"></a>Replicate the content
+   Once the MDT01 and MDT02 servers are prepared, you are ready to configure the actual replication.
+   ### Create the replication group
+7. On MDT01, using DFS Management, right-click **Replication**, and select **New Replication Group**.
+8. On the **Replication Group Type** page, select **Multipurpose replication group**, and click **Next**.
+9. On the **Name and Domain** page, assign the **MDTProduction** name, and click **Next**.
+10. On the **Replication Group Members** page, click **Add**, add **MDT01** and **MDT02**, and then click **Next**.
 
     ![figure 6](../images/mdt-10-fig06.png)
 
     Figure 6. Adding the Replication Group Members.
 
-5.  On the **Topology Selection** page, select the **Full mesh** option and click **Next**.
-6.  On the **Replication Group Schedule and Bandwidth** page, accept the default settings and click **Next**.
-7.  On the **Primary Member** page, select **MDT01** and click **Next**.
-8.  On the **Folders to Replicate** page, click **Add**, type in **E:\\MDTProduction** as the folder to replicate, click **OK**, and then click **Next**.
-9.  On the **Local Path of MDTProduction** on the **Other Members** page, select **MDT02**, and click **Edit**.
-10. On the **Edit** page, select the **Enabled** option, type in **E:\\MDTProduction** as the local path of folder, select the **Make the selected replicated folder on this member read-only** check box, click **OK**, and then click **Next**.
+11. On the **Topology Selection** page, select the **Full mesh** option and click **Next**.
+12. On the **Replication Group Schedule and Bandwidth** page, accept the default settings and click **Next**.
+13. On the **Primary Member** page, select **MDT01** and click **Next**.
+14. On the **Folders to Replicate** page, click **Add**, type in **E:\\MDTProduction** as the folder to replicate, click **OK**, and then click **Next**.
+15. On the **Local Path of MDTProduction** on the **Other Members** page, select **MDT02**, and click **Edit**.
+16. On the **Edit** page, select the **Enabled** option, type in **E:\\MDTProduction** as the local path of folder, select the **Make the selected replicated folder on this member read-only** check box, click **OK**, and then click **Next**.
 
     ![figure 7](../images/mdt-10-fig07.png)
 
     Figure 7. Configure the MDT02 member.
 
-11. On the **Review Settings and Create Replication Group** page, click **Create**.
-12. On the **Confirmation** page, click **Close**.
-### Configure replicated folders
-1.  On MDT01, using DFS Management, expand **Replication** and then select **MDTProduction**.
-2.  In the middle pane, right-click the **MDT01** member and select **Properties**.
-3.  On the **MDT01 (MDTProduction) Properties** page, configure the following and then click **OK**:
+17. On the **Review Settings and Create Replication Group** page, click **Create**.
+18. On the **Confirmation** page, click **Close**.
+    ### Configure replicated folders
+19. On MDT01, using DFS Management, expand **Replication** and then select **MDTProduction**.
+20. In the middle pane, right-click the **MDT01** member and select **Properties**.
+21. On the **MDT01 (MDTProduction) Properties** page, configure the following and then click **OK**:
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
         In this scenario the size of the deployment share is known, but you might need to change the values for your environment. A good rule of thumb is to get the size of the 16 largest files and make sure they fit in the staging area. Here is a Windows PowerShell example that calculates the size of the 16 largest files in the E:\\MDTProduction deployment share:
         
-        ``` syntax
+        ```powershell
         (Get-ChildItem E:\MDTProduction -Recurse | Sort-Object Length -Descending | Select-Object -First 16 | Measure-Object -Property Length -Sum).Sum /1GB
         ```
 
@@ -159,14 +161,14 @@ Once the MDT01 and MDT02 servers are prepared, you are ready to configure the ac
 
     Figure 8. Configure the Staging settings.
 
-4.  In the middle pane, right-click the **MDT02** member and select **Properties**.
-5.  On the **MDT02 (MDTProduction) Properties** page, configure the following and then click **OK**:
+22. In the middle pane, right-click the **MDT02** member and select **Properties**.
+23. On the **MDT02 (MDTProduction) Properties** page, configure the following and then click **OK**:
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
 
 **Note**  
 It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
- 
+ 
 ### Verify replication
 1.  On MDT02, wait until you start to see content appear in the **E:\\MDTProduction** folder.
 2.  Using DFS Management, expand **Replication**, right-click **MDTProduction**, and select **Create Diagnostics Report**.
@@ -222,5 +224,5 @@ Now you should have a solution ready for deploying the Windows 10 client to the
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
 [Configure MDT settings](configure-mdt-settings.md)
- 
- 
+ 
+ 

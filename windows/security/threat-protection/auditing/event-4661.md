@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4661(S, F): A handle to an object was requested.
@@ -71,7 +74,6 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
  <Data Name="ProcessName">{bf967a90-0de6-11d0-a285-00aa003049e2} %%5400 {ccc2dc7d-a6ad-4a7a-8846-c04e3cc53501}</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** For an Active Directory object, the domain controller role is required. For a SAM object, there is no required role.
@@ -133,15 +135,15 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
     -   SAM\_SERVER - distinguished name of the accessed object.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4662](event-4662.md): An operation was performed on an object.” This parameter might not be captured in the event, and in that case appears as “0x0”.

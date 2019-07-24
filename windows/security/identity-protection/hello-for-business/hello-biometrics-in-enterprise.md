@@ -2,14 +2,15 @@
 title: Windows Hello biometrics in the enterprise (Windows 10)
 description: Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
 ms.assetid: d3f27d94-2226-4547-86c0-65c84d6df8Bc
+ms.reviewer: 
 keywords: Windows Hello, enterprise biometrics
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -29,7 +30,7 @@ Windows Hello is the biometric authentication feature that helps strengthen auth
 
 Because we realize your employees are going to want to use this new technology in your enterprise, we’ve been actively working with the device manufacturers to create strict design and performance recommendations that help to ensure that you can more confidently introduce Windows Hello biometrics into your organization.
 
-##How does Windows Hello work?
+## How does Windows Hello work?
 Windows Hello lets your employees use fingerprint or facial recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Windows Hello credentials.
 
 The Windows Hello authenticator works to authenticate and allow employees onto your enterprise network. Authentication doesn’t roam among devices, isn’t shared with a server, and can’t easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
@@ -71,7 +72,7 @@ To allow fingerprint matching, you must have devices with fingerprint sensors an
 ### Facial recognition sensors
 To allow facial recognition, you must have devices with integrated special infrared (IR) sensors and software. Facial recognition sensors use special cameras that see in IR light, letting them tell the difference between a photo and a living person while scanning an employee’s facial features. These sensors, like the fingerprint sensors, must also include anti-spoofing measures (required) and a way to configure them (optional).
 
--   False Accept Rate (FAR): &lt;0.001
+-   False Accept Rate (FAR): &lt;0.001%
 
 -   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 
@@ -87,9 +88,9 @@ To allow facial recognition, you must have devices with integrated special infra
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 
- 
+ 
 
- 
+ 
 
 
 

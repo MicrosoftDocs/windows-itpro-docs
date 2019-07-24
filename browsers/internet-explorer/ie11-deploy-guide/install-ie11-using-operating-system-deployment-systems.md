@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using Microsoft Deployment Toolkit (MDT) and your Windows images.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: e16f9144-170c-4964-a62d-0d1a16f4cd1f
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Install Internet Explorer 11 (IE11) using Microsoft Deployment Toolkit (MDT) and your Windows images (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Server to be Trusted for Delegation
 description: How to Configure the Server to be Trusted for Delegation
-author: jamiejdt
+author: dansimp
 ms.assetid: d8d11588-17c0-4bcb-a7e6-86b5e4ba7e1c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ When you install the Microsoft Application Virtualization (App-V) Management Ser
 **Note**  
 If you install the App-V Management Server software on a single server and place the data store on a separate server, there is one situation in which you must still configure the server to be trusted for delegation even though the Management Web Service and Management Console are on the same server. This situation occurs if you need to connect to the Management Web Service in the console by using the **Use Alternate Credentials** option.
 
- 
+ 
 
 The type of delegation that you can use depends on the Domain Functional Level that you have configured in your Active Directory Domain Services (AD DS) infrastructure. The following table lists the types of delegation that can be configured for each Domain Functional Level for App-V. Detailed instructions follow the table.
 
@@ -54,7 +57,7 @@ The type of delegation that you can use depends on the Domain Functional Level t
 </tbody>
 </table>
 
- 
+ 
 
 ¹ Not recommended.
 
@@ -123,9 +126,9 @@ If you are running the Management Web Service on an IIS 7 server, you must compl
 
 3.  Type **appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication -useAppPoolCredentials:true**, and then press ENTER.
 
- 
+ 
 
- 
+ 
 
 
 
