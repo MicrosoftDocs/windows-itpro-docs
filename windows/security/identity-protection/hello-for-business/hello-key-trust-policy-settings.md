@@ -32,7 +32,7 @@ On-premises certificate-based deployments of Windows Hello for Business needs on
 
 ## Enable Windows Hello for Business Group Policy
 
-The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should be attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.  
+The Group Policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. It can be configured for computers or users. 
 
 If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business. For these settings to be configured using GPO, you need to download and install the latest Administrative Templates (.admx) for Windows 10. 
 
