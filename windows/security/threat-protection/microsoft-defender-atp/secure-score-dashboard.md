@@ -8,12 +8,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.topic: conceptual
 ---
 
 # Configure the security controls in Secure score
