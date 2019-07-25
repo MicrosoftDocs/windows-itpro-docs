@@ -501,18 +501,28 @@ Value type is string.
 <!--/Policy-->
 
 <!--/Policies-->
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
+
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-<!--EndHoloLens-->
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+  <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
   <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens (1st gen) Development Edition
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+<!--EndHoloLens-->
+
+
   <hr/>
 
 Footnotes:

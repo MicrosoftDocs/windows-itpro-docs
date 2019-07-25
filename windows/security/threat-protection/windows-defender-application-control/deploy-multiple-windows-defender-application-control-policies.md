@@ -22,12 +22,12 @@ ms.date: 05/17/2019
 
 The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios:
 
-1.	Enforce and Audit Side-by-Side
+1. Enforce and Audit Side-by-Side
     - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side-by-side with an existing enforcement-mode base policy
-2.	Multiple Base Policies
+2. Multiple Base Policies
     - Users can enforce two or more base policies simultaneously in order to allow simpler policy targeting for policies with different scope/intent
     - If two base policies exist on a device, an application has to be allowed by both to run
-3.	Supplemental Policies
+3. Supplemental Policies
     - Users can deploy one or more supplemental policies to expand a base policy
     - A supplemental policy expands a single base policy, and multiple supplemental policies can expand the same base policy
     - For supplemental policies, applications that are allowed by either the base policy or its supplemental policy/policies are allowed to run
@@ -85,7 +85,7 @@ In order to deploy policies using the new multiple policy format you will need t
    - Policies must be copied to this directory: C:\Windows\System32\CodeIntegrity\CiPolicies\Active
 2. Binary policy files must have the correct name which takes the format {PolicyGUID}.cip
    - Ensure that the name of the binary policy file is exactly the same as the PolicyID in the policy
-   - For example if the policy XML had the ID as <PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID> the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
+   - For example if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>` the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
 3. Reboot the system or use WMI to rebootlessly refresh the policy
 
 ```powershell

@@ -10,7 +10,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dulcemontemayor
+author: Mir0sh
 ms.date: 04/19/2017
 ---
 
@@ -39,5 +39,6 @@ Audit Security State Change contains Windows startup, recovery, and shutdown eve
 
 -   [4621](event-4621.md)(S): Administrator recovered system from CrashOnAuditFail.
 
->**Note**&nbsp;&nbsp;Event **4609(S): Windows is shutting down** currently doesn’t generate. It is a defined event, but it is never invoked by the operating system.
+>[!NOTE]
+>Event **4609(S): Windows is shutting down** doesn't currently generate. It is a defined event, but it is never invoked by the operating system.
 

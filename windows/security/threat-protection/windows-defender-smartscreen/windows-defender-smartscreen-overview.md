@@ -57,6 +57,8 @@ When Windows Defender SmartScreen warns or blocks an employee from a website, it
 ## Viewing Windows event logs for SmartScreen
 SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log in Event Viewer.
 
+> [!NOTE]
+> For information on how to use the Event Viewer, see [Windows Event Viewer](https://docs.microsoft.com/host-integration-server/core/windows-event-viewer1).
 
 |EventID | Description |
 | :---:         |     :---:      |

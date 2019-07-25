@@ -83,6 +83,7 @@
 #### [Monitoring Web Service Request Performance Counters](monitoring-web-service-request-performance-counters.md)
 ### [Using Windows PowerShell to Administer MBAM 2.5](using-windows-powershell-to-administer-mbam-25.md)
 ## [Troubleshooting MBAM 2.5](troubleshooting-mbam-25.md)
+## [Applying hotfixes on MBAM 2.5 SP1](apply-hotfix-for-mbam-25-sp1.md)
 ## [Technical Reference for MBAM 2.5](technical-reference-for-mbam-25.md)
 ### [Client Event Logs](client-event-logs.md)
 ### [Server Event Logs](server-event-logs.md)

@@ -1,7 +1,7 @@
 ---
 title: Configure Conditional Access in Microsoft Defender ATP
-description: 
-keywords: 
+description: Learn about steps that you need to do in Intune, Microsoft Defender Security Center, and Azure to implement Conditional access
+keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/03/2018
 ---
 
 # Configure Conditional Access in Microsoft Defender ATP
@@ -29,16 +28,23 @@ This section guides you through all the steps you need to take to properly imple
 >It's important to note that Azure AD registered devices is not supported in this scenario.</br>
 >Only Intune enrolled devices are supported.
 
+
 You need to make sure that all your devices are enrolled in Intune. You can use any of the following options to enroll devices in Intune:
 
 
 - IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
-- End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
+- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
+- End-user alternative: For more information on joining an Azure AD domain, see [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan).
 
 
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
+
+It's important to note the required roles to access these portals and implement Conditional access:
+- **Microsoft Defender Security Center** - You'll need to sign into the portal with a global administrator role to turn on the integration.
+- **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions. 
+- **Azure AD portal** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
+
 
 > [!NOTE]
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.

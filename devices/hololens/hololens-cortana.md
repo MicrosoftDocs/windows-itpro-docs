@@ -31,13 +31,13 @@ Here are some things you can try saying (remember to say "Hey Cortana" first):
 - Restart.
 - Go to sleep.
 - Mute.
-- Launch <app name>.
-- Move <app name> here (gaze at the spot you want the app to move to).
+- Launch `<app name>`.
+- Move `<app name>` here (gaze at the spot you want the app to move to).
 - Go to Start.
 - Take a picture.
 - Start recording. (Starts recording a video.)
 - Stop recording. (Stops recording a video.)
-- Call <contact>. (Requires Skype.)
+- Call `<contact>`. (Requires Skype.)
 - What time is it?
 - Show me the latest NBA scores. 
 - How much battery do I have left?

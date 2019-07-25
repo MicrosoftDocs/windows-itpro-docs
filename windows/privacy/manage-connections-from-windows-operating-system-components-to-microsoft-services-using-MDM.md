@@ -86,11 +86,6 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 
    1. **MDM Policy:** [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether SmartScreen is turned on or off.  **Set to 0  (zero)**
 
-
-
-
-
-
 > | Setting | MDM Policy | Description |
 > | --- | --- | --- |
 > | 1. Automatic Root Certificates Update | There is intentionally no MDM available for Automatic Root Certificate Update. | This MDM does not exist since it would prevent the operation and management of MDM management of devices.|

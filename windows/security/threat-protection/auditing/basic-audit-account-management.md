@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dulcemontemayor
+author: Mir0sh
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

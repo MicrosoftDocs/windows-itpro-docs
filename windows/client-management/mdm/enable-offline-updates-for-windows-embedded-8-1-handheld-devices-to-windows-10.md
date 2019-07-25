@@ -275,7 +275,7 @@ After the installation of updates is completed, the IT Admin can use the DURepor
 <a href="" id="example-script"></a>
 ## Example PowerShell script
 
-``` syntax
+```powershell
 param (
 # [Parameter (Mandatory=$true, HelpMessage="Input File")]
         [String]$inputFile,

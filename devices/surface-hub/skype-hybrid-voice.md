@@ -80,14 +80,14 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
    Set-Mailbox surfacehub2@adatum.com -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
    ```
     
-10.	Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties can be set in [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md). The following cmdlets provide an example of setting Exchange properties.
+10. Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties can be set in [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md). The following cmdlets provide an example of setting Exchange properties.
 
     ```
     Set-CalendarProcessing surfacehub2@adatum.com -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing surfacehub2@adatum.com -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
-11.	Enable the mailbox as a meeting device in Skype for Business Online. Run the following cmdlet which enables the account as a meeting device. 
+11. Enable the mailbox as a meeting device in Skype for Business Online. Run the following cmdlet which enables the account as a meeting device. 
 
     ```
     Get-CsTenant | select registrarpool

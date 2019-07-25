@@ -240,7 +240,7 @@ Specifies the type of connection being referenced. The following list describes 
 
 Adding an application-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
 
    <characteristic type="CM_CellularEntries">
@@ -285,7 +285,7 @@ Adding an application-based mapping policy. In this example, the ConnectionId fo
 
 Adding a host-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
 
    <characteristic type="CM_CellularEntries">
@@ -334,7 +334,7 @@ Adding a host-based mapping policy. In this example, the ConnectionId for type C
 
 Adding an application-based mapping policy:
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Atomic>
@@ -401,7 +401,7 @@ Adding an application-based mapping policy:
 
 Adding a host-based mapping policy:
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Atomic>
