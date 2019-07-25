@@ -26,11 +26,9 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-## Table description
+AlertEvents is a table in the Advanced hunting schema. It contains information about alerts on Microsoft Defender Security Center. You can use the reference below to construct queries that return information from this table.
 
-AlertEvents is a table in the Advanced hunting schema, which contains information about events on Microsoft Defender Security Center. You can use the reference below to construct queries that return information from this table.
-
-## Advanced hunting column reference
+For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -45,7 +43,7 @@ AlertEvents is a table in the Advanced hunting schema, which contains informatio
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | RemoteIP | string | IP address that was being connected to |
-|ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
 | Table | string | Table that contains the details of the event |
 
 ## Related topics
