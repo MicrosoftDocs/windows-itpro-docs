@@ -46,7 +46,10 @@ Both baselines are maintained so that they complement one another and have ident
 
 ## Get permissions to manage security baselines in Intune
 
-By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage security baseline profiles. If you haven’t been assigned either role, work with a Global Administrator or an Intune Service Administrator to [create a custom role in Intune](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role) with full permissions to security baselines and then assign that role to your Azure AD group.
+By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage security baseline profiles. If you haven’t been assigned either role, work with a Global Administrator or an Intune Service Administrator to [create and assign a custom role in Intune](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role) with:
+
+* Read permissions to the organization
+* Full permissions to security baselines
 
 ![Security baseline permissions on Intune](images/secconmgmt_baseline_permissions.png)
 
@@ -104,7 +107,7 @@ Machine configuration management monitors baseline compliance only of Windows 10
    *Saving and deploying the security baseline profile on Intune*
 
 >[!TIP]
->To learn more about Intune security baselines and assigning them, read [Create a Windows 10 security baseline in Intune](https://docs.microsoft.com/intune/security-baselines).
+>Security baselines on Intune provide a convenient way to comprehensively secure and protect your machines. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
