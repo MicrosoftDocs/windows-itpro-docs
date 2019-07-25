@@ -44,7 +44,7 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 
 ## Preparation
 
-Devices slated for WG provisioning are registered for Autopilot via the normal registration process. 
+Devices slated for white glove provisioning are registered for Autopilot via the normal registration process. 
 
 To be ready to try out Windows Autopilot for white glove deployment, ensure that you can first successfully use existing Windows Autopilot user-driven scenarios:
 
