@@ -63,65 +63,6 @@ ms.prod: w10
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-scd" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-office365.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>1. M365 EDU deployment</h3>
-                                                    <p>Get started by creating your Office 365 tenant, setting up a cloud infrastructure for your school, and creating, managing, and syncing user accounts.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-sdm" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-usb.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>2. Device Management</h3>
-                                                    <p>Improve student learning outcomes through connected classrooms and engaging new technologies with streamlined device management.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/deploy/post-deployment-next-steps" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-ms-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>3. Post Deployment Next Steps</h3>
-                                                    <p>Migrate to Sharepoint Server Hybrid or Sharepoint Online, and Exchange Server Hybrid or Exchange Online. Configure settings in your Admin portals.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
