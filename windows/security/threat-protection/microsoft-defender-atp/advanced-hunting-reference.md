@@ -28,9 +28,11 @@ ms.date: 07/24/2019
 
 ## Advanced hunting table reference
 
-The advanced hunting schema comprise multiple tables that provide either event information or information about certain entities.
+The Advanced hunting schema is made up of multiple tables, which provide either event information or information about certain entities. Table and column names are used for calling information about specific events or entities in queries.
 
-To effectively build queries that span multiple tables, you need to understand the columns, or fields, in the Advanced hunting schema. The following reference lists all tables used by Advanced hunting. It also links to pages describing the tables' contents, including official column names. This information is also available in the schema representation in the Advanced hunting screen.
+The following reference lists all the tables in the Advanced hunting schema. Each table name links to a page describing the column names for that table.
+
+Table and column names are also listed within the Security center, in the schema representation on the Advanced hunting screen.
 
 | Table name | Description |
 |------------|-------------|
@@ -46,8 +48,6 @@ To effectively build queries that span multiple tables, you need to understand t
 | **[MiscEvents]()** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **[SoftwareVulnerabilityInfo]()** | Information about software in use, including version information as well as known vulnerabilities |
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)
-
 ## Related topics
 - [Query data using Advanced hunting](advanced-hunting.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
+- [Best practices for Advanced hunting query-writing](advanced-hunting-best-practices.md)
