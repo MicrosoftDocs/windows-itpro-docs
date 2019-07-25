@@ -107,7 +107,7 @@ Machine configuration management monitors baseline compliance only of Windows 10
    *Saving and deploying the security baseline profile on Intune*
 
 >[!TIP]
->To learn more about Intune security baselines and assigning them, read [Create a Windows 10 security baseline in Intune](https://docs.microsoft.com/intune/security-baselines).
+>Security baselines on Intune provide a convenient way to comprehensively secure and protect your machines. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
