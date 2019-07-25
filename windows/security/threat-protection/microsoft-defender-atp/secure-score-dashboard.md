@@ -27,7 +27,7 @@ ms.topic: conceptual
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for your Endpoint detection and response tool.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later.
@@ -46,7 +46,7 @@ You can take the following actions to increase the overall security score of you
 For more  information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md). 
 
 ### Microsoft Defender Antivirus (Microsoft Defender AV) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Microsoft Defender AV is fulfilled.
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender AV.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later. 
@@ -77,7 +77,7 @@ For more information, see [Configure Microsoft Defender Antivirus](../windows-de
 
 
 ### OS security updates optimization
-This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
+This tile shows you the number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later.
@@ -85,13 +85,13 @@ This tile shows you the exact number of machines that require the latest securit
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/help/4027322/windows-windows-update-troubleshooter).
 
 
 ### Microsoft Defender Exploit Guard (Microsoft Defender EG) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on machines so that the minimum baseline configuration setting for Microsoft Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Microsoft Defender EG events on the Microsoft Defender ATP Machine timeline. 
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on machines to meet the minimum baseline configuration setting for Microsoft Defender EG. When endpoints are configured according to the baseline the Microsoft Defender EG events shows on the Microsoft Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
@@ -153,7 +153,7 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Microsoft Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
 ### Microsoft Defender Application Guard (Microsoft Defender AG) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Microsoft Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Microsoft Defender AG events on the Microsoft Defender ATP Machine timeline. 
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender AG. When endpoints are configured according to the baseline, Microsoft Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
@@ -180,7 +180,7 @@ For more information, see [Microsoft Defender Application Guard overview](../win
 
 
 ### Microsoft Defender SmartScreen optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Microsoft Defender SmartScreen is fulfilled.
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender SmartScreen.
 
 >[!WARNING]
 > Data collected by Microsoft Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
@@ -206,7 +206,7 @@ For more information, see [Microsoft Defender SmartScreen](../windows-defender-s
 
 
 ### Microsoft Defender Firewall optimization
-For a machine to be considered "well configured", Microsoft Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Microsoft Defender Firewall is fulfilled. 
+A well-configured machine must have Microsoft Defender Firewall turned on and enabled for all profiles so that inbound connections are blocked by default. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender Firewall. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
@@ -232,12 +232,12 @@ You can take the following actions to increase the overall security score of you
 - Secure public profile
 - Verify secure configuration of third-party firewall
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Microsoft Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### BitLocker optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for BitLocker. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1803 or later.
@@ -254,18 +254,18 @@ You can take the following actions to increase the overall security score of you
 - Resume protection on all drives
 - Ensure drive compatibility
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 ### Microsoft Defender Credential Guard optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Microsoft Defender Credential Guard is fulfilled.
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender Credential Guard.
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later. 
 
 #### Minimum baseline configuration setting for Microsoft Defender Credential Guard:
-Machines are considered "well configured" for Microsoft Defender Credential Guard if the following requirements are met:
+Well-configured machines for Microsoft Defender Credential Guard meets the following requirements:
 
 - Hardware and software prerequisites are met
 - Microsoft Defender Credential Guard is turned on compatible machines
@@ -277,7 +277,7 @@ You can take the following actions to increase the overall security score of you
 - Ensure hardware and software prerequisites are met
 - Turn on Credential Guard 
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Manage Microsoft Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
