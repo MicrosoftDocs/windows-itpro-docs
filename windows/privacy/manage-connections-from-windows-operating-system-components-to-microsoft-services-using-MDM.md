@@ -68,6 +68,25 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. **MDM Policy** [InternetExplorer/DisableHomePageChange]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablehomepagechange). Determines whether users can change the default Home Page or not. **Set to Enabled**
    1. **MDM Policy** [InternetExplorer/DisableFirstRunWizard]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablefirstrunwizard) | Prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows. **Set to Enabled**
 
+1. **Live Tiles**
+   1. **MDM Policy:** [Notifications/DisallowTileNotification](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Set to Enabled**
+
+1. **Mail synchronization**
+   1. **MDM Policy:** [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services. **Set to 0 (zero)**
+
+1. **Microsoft Account**
+   1. **MDM Policy:** [Accounts/AllowMicrosoftAccountSignInAssistant](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountsigninassistant). Disable the Microsoft Account Sign-In Assistant. **Set to 0 (zero)**
+
+1. **Microsoft Edge** The following Microsoft Edge MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/available-policies).
+   1. **MDM Policy:** [Browser/AllowAutoFill](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowautofill). Choose whether employees can use autofill on websites. **Set to 0 (zero)**
+   1. **MDM Policy:** [Browser/AllowDoNotTrack](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowdonottrack). Choose whether employees can send Do Not Track headers. **Set to 0 (zero)**
+   1. **MDM Policy:** [Browser/AllowMicrosoftCompatbilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist). Specify the Microsoft compatibility list in Microsoft Edge. **Set to 0 (zero)**
+   1. **MDM Policy:** [Browser/AllowPasswordManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager). Choose whether employees can save passwords locally on their devices. **Set to 0 (zero)**
+   1. **MDM Policy:** [Browser/AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar). Choose whether the Address Bar shows search suggestions. **Set to 0  (zero)**
+
+   1. **MDM Policy:** [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether SmartScreen is turned on or off.  **Set to 0  (zero)**
+
+
 
 
 
