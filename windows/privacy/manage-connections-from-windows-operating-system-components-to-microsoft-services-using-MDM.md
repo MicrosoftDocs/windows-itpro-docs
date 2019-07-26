@@ -69,7 +69,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. MDM Policy: [InternetExplorer/DisableFirstRunWizard]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablefirstrunwizard). Prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows. **Set to Enabled**
 
 1. **Live Tiles**
-   1. MDM Policy: [Notifications/DisallowTileNotification](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Set to Enabled**
+   1. MDM Policy: [Notifications/DisallowTileNotification](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
 
 1. **Mail synchronization**
    1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services. **Set to 0 (zero)**
@@ -95,7 +95,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **OneDrive**
    1. MDM Policy: [DisableOneDriveFileSync](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync). Allows IT Admins to prevent apps and features from working with files on OneDrive. **Set to 1 (one)** 
    1. Ingest the ADMX - To get the latest OneDrive ADMX file you need an up-to-date Windows 10 client. The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (e.g. "18.162.0812.0001"). There is a folder named "adm" which contains the admx and adml policy definition files. 
-   1. MDM Policy: Prevent Network Traffic before User SignIn. PreventNetworkTrafficPreUserSignIn. The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn
+   1. MDM Policy: Prevent Network Traffic before User SignIn. PreventNetworkTrafficPreUserSignIn. The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn, String, \<enabled/>
 
 1. **Privacy settings** Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
    1. General - [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection). This policy setting controls the ability to send inking and typing data to Microsoft. **Set to 0 (zero)**
@@ -103,7 +103,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. Camera - [Camera/AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera#camera-allowcamera). Disables or enables the camera. **Set to 0  (zero)**
    1. Microphone - [Privacy/LetAppsAccessMicrophone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone). Specifies whether Windows apps can access the microphone. **Set to 2 (two)**
    1. Notifications - [Privacy/LetAppsAccessNotifications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessnotifications). Specifies whether Windows apps can access notifications. **Set to 2 (two)**
-   1. Notifications - [Settings/AllowOnlineTips]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowonlinetips). Enables or disables the retrieval of online tips and help for the Settings app. **Set to Disabled**
+   1. Notifications - [Settings/AllowOnlineTips]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowonlinetips). Enables or disables the retrieval of online tips and help for the Settings app. **Integer value 0**
    1. Speech, Inking, & Typing - [Privacy/AllowInputPersonalization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization). This policy specifies whether users on the device have the option to enable online speech recognition. **Set to 0 (zero)**
    1. Speech, Inking, & Typing - [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection). This policy setting controls the ability to send inking and typing data to Microsoft  **Set to 0 (zero)**
    1. Account info - [Privacy/LetAppsAccessAccountInfo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessaccountinfo). Specifies whether Windows apps can access account information. **Set to 2 (two)**
