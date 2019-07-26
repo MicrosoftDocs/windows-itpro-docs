@@ -28,7 +28,7 @@ ms.date: 07/24/2019
 
 The MachineNetworkInfo table in the Advanced hunting schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

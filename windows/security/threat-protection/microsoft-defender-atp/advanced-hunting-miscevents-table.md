@@ -28,7 +28,7 @@ ms.date: 07/24/2019
 
 The MiscEvents table in the Advanced hunting schema contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

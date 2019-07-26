@@ -38,7 +38,7 @@ For information on other tables in the Advanced hunting schema, see  [the Advanc
 | ActionType | string | Type of activity that triggered the event |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FolderPath | string | Folder containing the file that the recorded action was applied to |
-| SHA1 | string SHA-1 of the file that the recorded action was applied to |
+| SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
 | FileOriginUrl | string | URL where the file was downloaded from |
