@@ -129,7 +129,7 @@
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
-### [Microsoft Defender ATP for US Government customers](microsoft-defender-atp/commercial-gov.md)
+### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 
 ## [Get started]()
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)

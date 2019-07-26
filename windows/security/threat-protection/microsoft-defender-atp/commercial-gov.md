@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for US Government GCC High customers, built in the US Azure Government environment, uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial.
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for US Government Community Cloud High (GCC High) customers, built in the US Azure Government environment, uses the same underlying technologies as Microsoft Defender ATP in Azure Commercial.
 
 This offering is currently available to US Office 365 GCC High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for this offering.
 
