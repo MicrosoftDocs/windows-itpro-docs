@@ -161,14 +161,24 @@
 ### [Configure attack surface reduction]()
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 
+### [Configure and manage capabilities](microsoft-defender-atp/onboard.md)
+#### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+##### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
+###### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
+###### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
+###### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
+###### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
+##### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
+##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+##### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
+##### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
+
 #### [Hardware-based isolation]()
 ##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
 ##### [Application isolation]()
 ###### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md)
-
-#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+###### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 
 #### [Device control]()
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)

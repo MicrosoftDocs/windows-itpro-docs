@@ -21,6 +21,9 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>[!NOTE]
+>  Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+
 The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
 >[!IMPORTANT]
@@ -37,11 +40,11 @@ The **Secure score dashboard** displays a snapshot of:
 ![Secure score dashboard](images/new-secure-score-dashboard.png)
 
 ## Microsoft secure score
-The Microsoft secure score tile is reflective of the sum of all the Windows Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+The Microsoft secure score tile is reflective of the sum of all the Microsoft Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
 ![Image of Microsoft secure score tile](images/mss.png)
 
-Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Microsoft Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 The Office 365 Secure Score looks at your settings and activities and compares them to a baseline established by Microsoft. For more information, see [Introducing the Office 365 Secure Score](https://support.office.com/article/introducing-the-office-365-secure-score-c9e7160f-2c34-4bd0-a548-5ddcc862eaef#howtoaccess).
 
@@ -77,5 +80,14 @@ Within the tile, you can click on each control to see the recommended optimizati
 Clicking the link under the **Misconfigured machines** column opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice.
 
 ## Related topic
+- [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
+- [Configuration score](configuration-score.md)
+- [Security recommendations](tvm-security-recommendation.md)
+- [Remediation](tvm-remediation.md)
+- [Software inventory](tvm-software-inventory.md)
+- [Weaknesses](tvm-weaknesses.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Threat analytics](threat-analytics.md)
 
