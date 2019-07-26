@@ -114,7 +114,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/en-us/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![Admintemplates](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/admintemplates.png)
+![Admintemplates](windows-defender-antivirus/images/admintemplates.png)
 
 >[!Note]
 >Using Intune, you can apply device configuration policies to AAD user and/or device groups.
