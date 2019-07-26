@@ -103,7 +103,6 @@ The following table lists management options for each setting, beginning with Wi
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [23. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[24.1 Windows Defender Smartscreen](#bkmk-defender-smartscreen) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -129,7 +128,6 @@ See the following table for a summary of the management settings for Windows Ser
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [18. Settings > Privacy](#bkmk-settingssection) | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
