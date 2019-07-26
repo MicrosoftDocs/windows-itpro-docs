@@ -36,18 +36,19 @@ Table and column names are also listed within the Security center, in the schema
 
 | Table name | Description |
 |------------|-------------|
-| **[AlertEvents]()** | Alerts on Microsoft Defender Security Center |
-| **[MachineInfo]()** | Machine information, including OS information |
-| **[MachineNetworkInfo]()** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
-| **[ProcessCreationEvents]()** | Process creation and related events |
-| **[NetworkCommunicationEvents]()** | Network connection and related events |
-| **[FileCreationEvents]()** | File creation, modification, and other file system events |
-| **[RegistryEvents]()** | Creation and modification of registry entries |
-| **[LogonEvents]()** | Sign-ins and other authentication events |
-| **[ImageLoadEvents]()** | DLL loading events |
-| **[MiscEvents]()** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
-| **[SoftwareVulnerabilityInfo]()** | Information about software in use, including version information as well as known vulnerabilities |
+| **[AlertEvents](advanced-hunting-alertevents-table.md)** | Alerts on Microsoft Defender Security Center |
+| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | Machine information, including OS information |
+| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
+| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | Process creation and related events |
+| **[NetworkCommunicationEvents](advanced-hunting-networkcommunication-table.md)** | Network connection and related events |
+| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | File creation, modification, and other file system events |
+| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | Creation and modification of registry entries |
+| **[LogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
+| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL loading events |
+| **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
+| **[SoftwareVulnerabilityInfo](advanced-hunting-softwarevulnerabilityinfo-table.md)** | Information about software in use, including version information as well as known vulnerabilities |
 
 ## Related topics
+
 - [Query data using Advanced hunting](advanced-hunting.md)
 - [Best practices for Advanced hunting query-writing](advanced-hunting-best-practices.md)
