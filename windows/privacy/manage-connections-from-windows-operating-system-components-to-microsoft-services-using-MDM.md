@@ -53,7 +53,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **Device metadata retrieval** 
    1. MDM Policy: [DeviceInstallation/PreventDeviceMetadataFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork). Choose whether to prevent Windows from retrieving device metadata from the Internet.  **Set to Enabled**
 
-1. **Find My Device ** 
+1. **Find My Device** 
    1. MDM Policy: [Experience/AllowFindMyDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice). This policy turns on Find My Device.  **Set to 0  (zero)**
 
 1. **Font streaming** 
@@ -122,28 +122,29 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. Motion - [Privacy/LetAppsAccessMotion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmotion). Specifies whether Windows apps can access motion data. **Set to 2 (two)**
    1. Tasks - [Privacy/LetAppsAccessTasks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesstasks). Turn off the ability to choose which apps have access to tasks. **Set to 2 (two)**
    1. App Diagnostics - [Privacy/LetAppsGetDiagnosticInfo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsgetdiagnosticinfo). Force allow, force deny or give user control of apps that can get diagnostic information about other running apps. **Set to 2 (two)** 
-1. Software Protection Platform - [Licensing/DisallowKMSClientOnlineAVSValidation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-licensing#licensing-disallowkmsclientonlineavsvalidation). Opt out of sending KMS client activation data to Microsoft automatically. **Set to 1 (one)**
-1. Storage Health - [Storage/AllowDiskHealthModelUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-allowdiskhealthmodelupdates). Allows disk health model updates. **Set to 0 (zero)** 
-1. Sync your settings - [Experience/AllowSyncMySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings). Control whether your settings are synchronized. **Set to 0 (zero)** 
-1. Teredo - No MDM needed. Teredo is **Off by default**. Delivery Optimization (DO) can turn on Teredo, but DO itself is turned Off via MDM. 
-1. Wi-Fi Sense - No MDM needed. Wi-Fi Sense is no longer available from Windows 10 version 1803 and newer. 
-1. Windows Defender
+1. **Software Protection Platform** - [Licensing/DisallowKMSClientOnlineAVSValidation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-licensing#licensing-disallowkmsclientonlineavsvalidation). Opt out of sending KMS client activation data to Microsoft automatically. **Set to 1 (one)**
+1. **Storage Health** - [Storage/AllowDiskHealthModelUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-allowdiskhealthmodelupdates). Allows disk health model updates. **Set to 0 (zero)** 
+1. **Sync your settings** - [Experience/AllowSyncMySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings). Control whether your settings are synchronized. **Set to 0 (zero)** 
+1. **Teredo** - No MDM needed. Teredo is **Off by default**. Delivery Optimization (DO) can turn on Teredo, but DO itself is turned Off via MDM. 
+1. **Wi-Fi Sense** - No MDM needed. Wi-Fi Sense is no longer available from Windows 10 version 1803 and newer. 
+1. **Windows Defender**
    1. [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection). Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
    1. [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent). Stop sending file samples back to Microsoft. **Set to 2 (two)**
    1. Windows Defender Smartscreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender Smartscreen. **Set to 0 (zero)**
    1. Windows Defender Smartscreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
    1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
-1. Windows Spotlight - [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**
-1. Microsoft Store
+1. **Windows Spotlight** - [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**
+1. **Microsoft Store**
    1. [ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps). Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)**
    1. [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate). Specifies whether automatic update of apps from Microsoft Store are allowed. **Set to 0 (zero)**
-1 Apps for websites - [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers). This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
-1. Windows Update Delivery Optimization - The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+1 **Apps for websites** - [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers). This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
+1. **Windows Update Delivery Optimization** - The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
    1. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode). Let’s you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)**
-1. Windows Update
+1. **Windows Update**
    1. [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Control automatic updates. **Set to 5 (five)**
    1. Windows Update Allow Update Service - [Update/AllowUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
-   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with this Value:<Replace> <CmdID>$CmdID$</CmdID> <Item> <Meta> <Format>chr</Format> <Type>text/plain</Type> </Meta> <Target> <LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI> </Target> <Data>http://abcd-srv:8530</Data> </Item> </Replace>
+   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value next to item "a" below: 
+      1. \<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>
 
 ### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
 
