@@ -1,6 +1,6 @@
 ---
 title: MiscEvents
-description: Learn about Advanced hunting table MiscEvents, such as column names, data types, and description
+description: MiscEvents table in the advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, miscEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-MiscEvents is a table in the Advanced hunting schema. It contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. You can use the reference below to construct queries that return information from this table.
+The MiscEvents table in the Advanced hunting schema contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 
@@ -81,6 +81,7 @@ For information on other tables in the Advanced hunting schema, see our [Advance
 
 ## Related topics
 
+- [Advanced hunting overview](overview-hunting.md)
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)

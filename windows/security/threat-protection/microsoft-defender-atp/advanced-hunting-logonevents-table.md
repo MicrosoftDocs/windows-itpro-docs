@@ -1,6 +1,6 @@
 ---
 title: LogonEvents
-description: Learn about Advanced hunting table LogonEvents, such as column names, data types, and description
+description: LogonEvents table in the Advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, logonevents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-LogonEvents is a table in the Advanced hunting schema. It contains information about user logons and other authentication events. You can use the reference below to construct queries that return information from this table.
+The LogonEvents table in the Advanced hunting schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 
@@ -68,6 +68,7 @@ For information on other tables in the Advanced hunting schema, see our [Advance
 
 ## Related topics
 
+- [Advanced hunting overview](overview-hunting.md)
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)

@@ -1,6 +1,6 @@
 ---
 title: FileCreationEvents
-description: Learn about Advanced hunting table FileCreationEvents, such as column names, data types, and description
+description: FileCreationEvents table in the Advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, filecreationevents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-FileCreationEvents is a table in the Advanced hunting schema. It contains information about file creation, modification, and other file system events. You can use the reference below to construct queries that return information from this table.
+The FileCreationEvents table in the Advanced hunting schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 
@@ -63,11 +63,11 @@ For information on other tables in the Advanced hunting schema, see our [Advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | SensitivityLabel | string | Label applied to an email, file, or other content to classify it for information protection |
 | SensitivitySubLabel | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |
-| IsWindowsInfoProtectionApplied | N/A | N/A |
 | IsAzureInfoProtectionApplied | boolean | Indicates whether the file is encrypted by Azure Information Protection |
 
 ## Related topics
 
+- [Advanced hunting overview](overview-hunting.md)
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)

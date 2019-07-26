@@ -1,6 +1,6 @@
 ---
-title: Advanced hunting reference in Microsoft Defender ATP
-description: Learn about Advanced hunting table reference such as column name, data type, and description
+title: Advanced hunting schema reference
+description: Learn about the tables in the advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,7 +28,7 @@ ms.date: 07/24/2019
 
 ## Advanced hunting table reference
 
-The Advanced hunting schema is made up of multiple tables, which provide either event information or information about certain entities. Table and column names are used for calling information about specific events or entities in queries.
+The Advanced hunting schema is made up of multiple tables that provide either event information, or information about certain entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 The following reference lists all the tables in the Advanced hunting schema. Each table name links to a page describing the column names for that table.
 
