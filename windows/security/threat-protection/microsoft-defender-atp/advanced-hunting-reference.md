@@ -40,7 +40,7 @@ Table and column names are also listed within the Security center, in the schema
 | **[MachineInfo](advanced-hunting-machineinfo-table.md)** | Machine information, including OS information |
 | **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
 | **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | Process creation and related events |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunication-table.md)** | Network connection and related events |
+| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | Network connection and related events |
 | **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | File creation, modification, and other file system events |
 | **[RegistryEvents](advanced-hunting-registryevents-table.md)** | Creation and modification of registry entries |
 | **[LogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
