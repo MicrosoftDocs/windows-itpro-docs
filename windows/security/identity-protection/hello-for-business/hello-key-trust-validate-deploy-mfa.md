@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Validate and Deploy Multifactor Authentication Services (MFA)
+# Validate and Deploy Multi-factor Authentication (MFA)
 
 **Applies to**
 
