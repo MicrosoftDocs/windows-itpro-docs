@@ -24,12 +24,15 @@ Summary of steps to enable a policy:
 - Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
 - Create the data payload for the SyncML.
 
-See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) for a walk-through using Intune.
+See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX-Backed policies using Microsoft Intune](https://blogs.technet.microsoft.com/senthilkumar/2018/05/21/intune-deploying-admx-backed-policies-using-microsoft-intune/) for a walk-through using Intune.
 
 >[!TIP]
 >Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](https://docs.microsoft.com/intune/administrative-templates-windows)
 
 ## Enable a policy
+
+> [!NOTE]
+> See [Understanding ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/understanding-admx-backed-policies).
 
 1.  Find the policy from the list [ADMX-backed policies](policy-configuration-service-provider.md#admx-backed-policies). You need the following information listed in the policy description.  
     - GP English name
