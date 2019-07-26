@@ -46,7 +46,6 @@ Table and column names are also listed within the Security center, in the schema
 | **[LogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
 | **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL loading events |
 | **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
-| **[SoftwareVulnerabilityInfo](advanced-hunting-softwarevulnerabilityinfo-table.md)** | Information about software in use, including version information as well as known vulnerabilities |
 
 ## Related topics
 

@@ -1,6 +1,6 @@
 ---
-title: NetworkCommunicationEvents
-description: NetworkCommunicationEvents table in the Advanced hunting schema
+title: NetworkCommunicationEvents table in the Advanced hunting schema
+description: Learn about the NetworkCommunicationEvents table in the Advanced hunting schema, such as column names, data types, and descriptions
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, networkcommunicationevents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The NetworkCommunicationEvents table in the Advanced hunting schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
+The NetworkCommunicationEvents table in the Advanced hunting schema contains information about network connections and related events. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 

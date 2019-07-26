@@ -1,6 +1,6 @@
 ---
-title: MachineInfo
-description: MachineInfo table in the Advanced hunting schema
+title: MachineInfo table in the Advanced hunting schema
+description: Learn about the MachineInfo table in the Advanced hunting schema, such as column names, data types, and descriptions
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, machineinfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The MachineInfo table in the Advanced hunting schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
+The MachineInfo table in the Advanced hunting schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see our [Advanced hunting reference](advanced-hunting-reference.md) page.
 
