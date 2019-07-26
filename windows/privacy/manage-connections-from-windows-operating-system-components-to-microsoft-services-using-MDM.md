@@ -95,7 +95,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **OneDrive**
    1. MDM Policy: [DisableOneDriveFileSync](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync). Allows IT Admins to prevent apps and features from working with files on OneDrive. **Set to 1 (one)** 
    1. Ingest the ADMX - To get the latest OneDrive ADMX file you need an up-to-date Windows 10 client. The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (e.g. "18.162.0812.0001"). There is a folder named "adm" which contains the admx and adml policy definition files. 
-   1. MDM Policy: Prevent Network Traffic before User SignIn. PreventNetworkTrafficPreUserSignIn. The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn, **String, \<enabled/>**
+   1. MDM Policy: Prevent Network Traffic before User SignIn. **PreventNetworkTrafficPreUserSignIn**. The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn, **String, \<enabled/>**
 
 1. **Privacy settings** Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
    1. General - [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection). This policy setting controls the ability to send inking and typing data to Microsoft. **Set to 0 (zero)**
