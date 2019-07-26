@@ -106,9 +106,9 @@ The following table lists management options for each setting, beginning with Wi
 | &nbsp;&nbsp;&nbsp;&nbsp;[24.1 Windows Defender Smartscreen](#bkmk-defender-smartscreen) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| [28. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -134,8 +134,8 @@ See the following table for a summary of the management settings for Windows Ser
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 ### Settings for Windows Server 2016 Server Core
 
@@ -150,7 +150,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [19. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Windows Defender](#bkmk-defender) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [29. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 ### Settings for Windows Server 2016 Nano Server
 
@@ -161,7 +161,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) |
+| [29. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) |
 
 ### Settings for Windows Server 2019
 
@@ -218,9 +218,9 @@ See the following table for a summary of the management settings for Windows Ser
 | &nbsp;&nbsp;&nbsp;&nbsp;[24.1 Windows Defender Smartscreen](#bkmk-defender-smartscreen) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |
-| [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |
+| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 ## How to configure each setting
 
@@ -1783,7 +1783,7 @@ On Windows Server 2016, this will block Microsoft Store calls from Universal Win
 
 - Create a new REG_DWORD registry setting named **AutoDownload** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 2 (two).
 
-### <a href="" id="bkmk-apps-for-websites"></a>26.1 Apps for websites
+### <a href="" id="bkmk-apps-for-websites"></a>27. Apps for websites
 
 You can turn off apps for websites, preventing customers who visit websites that are registered with their associated app from directly launching the app.
 
@@ -1793,7 +1793,7 @@ You can turn off apps for websites, preventing customers who visit websites that
 
 - Create a new REG_DWORD registry setting named **EnableAppUriHandlers** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
-### <a href="" id="bkmk-updates"></a>27. Windows Update Delivery Optimization
+### <a href="" id="bkmk-updates"></a>28. Windows Update Delivery Optimization
 
 Windows Update Delivery Optimization lets you get Windows updates and Microsoft Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
@@ -1803,13 +1803,13 @@ Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
 In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (100), as described below.
 
-### <a href="" id="bkmk-wudo-ui"></a>27.1 Settings &gt; Update & security
+### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
 You can set up Delivery Optimization from the **Settings** UI.
 
 - Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
-### <a href="" id="bkmk-wudo-gp"></a>27.2 Delivery Optimization Group Policies
+### <a href="" id="bkmk-wudo-gp"></a>28.2 Delivery Optimization Group Policies
 
 You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
 
@@ -1821,7 +1821,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
-### <a href="" id="bkmk-wudo-mdm"></a>27.3 Delivery Optimization
+### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
 - **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Bypass"** to prevent traffic.
 
@@ -1832,7 +1832,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
-### <a href="" id="bkmk-wu"></a>28. Windows Update
+### <a href="" id="bkmk-wu"></a>29. Windows Update
 
 You can turn off Windows Update by setting the following registry entries:
 
