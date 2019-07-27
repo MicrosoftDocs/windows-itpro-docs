@@ -1,7 +1,7 @@
 ---
 title: Application Virtualization 4
 description: Application Virtualization 4
-author: jamiejdt
+author: dansimp
 ms.assetid: 9da557bc-f433-47d3-8af7-68ec4ff9bd3f
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
