@@ -438,8 +438,14 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-#### [Interoperability]()
+#### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
+##### [Connected applications](microsoft-defender-atp/connected-applications.md)
+##### [API explorer](microsoft-defender-atp/api-explorer.md)
+##### [API usage overview](microsoft-defender-atp/)
+
+
+
 
 #### [Manage machine configuration]()
 ##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
