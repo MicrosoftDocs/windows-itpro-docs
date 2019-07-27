@@ -32,7 +32,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/images/MSC17_cloud_012_merged.png" alt="" />
+                                                        <img src="images/MSC17_cloud_012_merged.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -51,7 +51,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/images/MSC17_cloud_005.png" alt="" />
+                                                        <img src="images/MSC17_cloud_005.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
